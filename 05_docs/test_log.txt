@@ -561,3 +561,9 @@ D/SD013.DAT SHA256: B22A427AAB24A1EA65FD2A53675A63F093213277D8BCBF213BADF05E444E
 ZIP SHA256: 05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458
 내부 파일: COMM.IMG, 1/S1011.DAT, 1/S1013.DAT, 1/S1021.DAT, 1/S1022.DAT, 1/S1023.DAT, 1/S1041.DAT, 1/S1051.DAT, 1/S1061.DAT, 1/S1071.DAT, 1/S1072.DAT, D/SD012.DAT, D/SD013.DAT 총 13개.
 주의: 이 ZIP은 문서/리포트 파일을 포함하지 않는 patch-only ZIP이며, story_bulk3_plus_d_house_patch_only.zip과 파일 내용 및 SHA256이 동일하다.
+2026-07-09
+작업: AGENTS.md Git rules update
+수정 파일: AGENTS.md, 05_docs/changelog.txt, 05_docs/codex_notes.txt
+테스트 방법: 문서 규칙 변경만 수행. 실행 테스트 없음.
+결과: Codex may commit/push without asking each time when a checkpoint is useful. Protected file classes remain excluded by rule and .gitignore.
+남은 문제: 없음.

@@ -106,19 +106,35 @@ ROM, ISO, 바이너리 수정 전에는 반드시 백업 또는 복사본을 만
 
 # Git 규칙
 
-사용자 승인 없이
-- Commit 금지
-- Push 금지
-- 브랜치 삭제 금지
-- 히스토리 변경 금지
+Codex는 사용자가 별도로 승인하지 않아도 필요하다고 판단하는 시점에 commit/push 할 수 있다.
 
-작업 완료 후에는
-- 변경 파일
-- 생성 파일
-- 테스트 방법
-- 남은 문제
+자동 commit/push 가능한 경우:
+- 작업 규칙, 인수인계 문서, changelog, test_log, codex_notes 업데이트
+- 스크립트, 매니페스트, 분석 CSV/MD 변경
+- 회귀 방지용 기준점 저장
+- 새 세션 또는 재설치 대비 복구 지점 저장
+- 사용자가 명시적으로 "진행", "해줘", "관리해줘"라고 한 작업의 완료 저장
 
-를 보고한 뒤 사용자 승인을 기다린다.
+자동 commit/push 전에는 반드시 확인한다.
+- git status 확인
+- git diff 또는 staged diff 확인
+- 원본/대용량/저작권 위험 파일 포함 여부 확인
+- 필요한 경우 .gitignore 보강
+
+절대 commit/push 하지 않는 것:
+- 00_original/
+- 03_output/
+- 99_backup/
+- ex/
+- 06_tools/
+- 원본 ROM/ISO/BIN/CUE/CHD
+- DAT/IMG/XA/STR/EXE/SND 같은 게임 추출 파일
+- patch-only ZIP, FULL_ARC ZIP, 패키징 산출물
+- .gitignore에서 제외한 파일
+
+브랜치 삭제와 히스토리 변경은 사용자가 명시적으로 요청하지 않으면 하지 않는다.
+
+commit/push 후에는 커밋 해시, 변경 파일, 남은 문제를 사용자에게 보고한다.
 
 ---
 

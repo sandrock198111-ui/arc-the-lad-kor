@@ -139,3 +139,6 @@
 - 화면과 가장 강하게 맞는 원문 패턴은 원본 1/S1041.DAT 0x48498 계열이지만, story_bulk3_plus_d_house_patch_only.zip 내부의 1/S1041.DAT에서는 이미 제거되어 있었다.
 - 적용/패키징 누락 가능성을 줄이기 위해 동일 내용 재전달 ZIP story_bulk3_plus_d_house_repack_verify_patch_only.zip을 생성했다.
 - ZIP SHA256은 기존 D-house ZIP과 같은 05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458이다.
+2026-07-09
+- AGENTS.md Git rules updated: Codex may commit/push without asking each time when it judges the checkpoint is useful.
+- Safety condition retained: original game data, generated outputs, patch ZIPs, extracted binaries, tools, and .gitignore-excluded files must not be committed.

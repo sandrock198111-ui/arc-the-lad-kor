@@ -64,3 +64,4 @@ Git/project management notes
 - GitHub origin is https://github.com/sandrock198111-ui/arc-the-lad-kor.git.
 - The remote main branch existed on 2026-07-09 and contained README.md.
 - Original game data, extracted game files, generated patch ZIPs, full image outputs, and third-party tool binaries must not be committed.
+- On 2026-07-09, AGENTS.md Git rules were updated so Codex may commit/push without asking each time when a checkpoint is useful, while still protecting ignored/original/generated game files.
