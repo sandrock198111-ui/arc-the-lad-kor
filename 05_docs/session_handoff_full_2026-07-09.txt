@@ -1,0 +1,230 @@
+Arc the Lad 1 JP Korean Patch - Full Session Handoff
+Date: 2026-07-09
+Workspace: E:\korean
+
+Read This First In A New Session
+- This is not a verbatim chat transcript. It is a full operational handoff of the current state, decisions, failures, and next safe steps.
+- Also read:
+  - 05_docs/bible_current.txt
+  - 05_docs/changelog.txt
+  - 05_docs/test_log.txt
+  - 05_docs/session_context_2026-07-09.txt
+- Warning: some existing docs display with broken encoding in PowerShell, but they still contain important file names, offsets, hashes, and decisions.
+- If there is a conflict between this handoff and older test logs, prefer the newest dated entry unless the user says otherwise.
+
+User Requirement Summary
+- User wants patch-only replacement files/ZIPs, not full packaged CUE/BIN unless explicitly requested.
+- User will do packaging manually.
+- Output ZIP must contain only game replacement files. Do not include BUILD_REPORT.txt, TEST_INFO.txt, docs, manifests, or analysis files.
+- User is extremely concerned about regression and wasted repeated verification. Do not restart from old assumptions.
+- Always identify the active baseline before making a patch.
+- Always explain what file will be changed, why, and what the risk is before editing.
+
+Mandatory Project Rules From AGENTS/User
+- Before any work, read:
+  1. 05_docs/bible_current.txt
+  2. 05_docs/changelog.txt
+  3. 05_docs/test_log.txt
+- Do not modify original ROM files in 00_original.
+- Use Windows DuckStation for user-side testing.
+- Create test/output files under 03_output.
+- Record work and failures in 05_docs/test_log.txt.
+- Update 05_docs/bible_current.txt after important changes.
+- Do not use English-version structure.
+- Do not return to 8x8 Hangul forced insertion.
+- Do not overwrite known-good successful UI/story results.
+- Do not overwrite unverified pointers/sectors/compressed blocks by guess.
+- Do not make broad whole-DAT patches.
+- Do not patch visible pointer-looking blocks unless the screen/file/block relationship is confirmed.
+
+Core Technical Lessons
+- Japanese original uses 12x12-ish CJK output. Korean output through the Japanese rendering path is possible.
+- COMM.IMG contains shared font/UI graphics. Changing shared slots can corrupt names, menus, battle UI, numbers, and other Japanese text.
+- Safe current text style is constrained to existing block lengths.
+- Remaining space should not be filled with 0x00, because that can act as terminator/control and break script flow.
+- Existing successful approach uses safe filler/blank display slot behavior, with high-slot glyphs that were verified.
+- E0-FF must not be used as general Hangul single-byte codes. Earlier tests caused missing glyphs/progression problems.
+- Low slots 0x08-0x64 caused mixed Japanese/Hangul glyph leakage in later screens. Treat this as failed unless a new controlled proof is made.
+- UI/menu/battle text cannot be solved by just changing COMM.IMG; UI text source bytes need separate identification.
+
+Stable Baselines
+- Do not treat story_test_18 as the full current baseline.
+- story_test_18 is stable only for S1011/S1071 early work.
+- Full current progression baseline is:
+  - 03_output/story_progress_bulk3_all_1_gamefiles_only
+- This folder contains 11 game files:
+  - COMM.IMG
+  - 1/S1011.DAT
+  - 1/S1013.DAT
+  - 1/S1021.DAT
+  - 1/S1022.DAT
+  - 1/S1023.DAT
+  - 1/S1041.DAT
+  - 1/S1051.DAT
+  - 1/S1061.DAT
+  - 1/S1071.DAT
+  - 1/S1072.DAT
+- Bulk3 known hashes:
+  - COMM.IMG SHA256: 6F16605DB5A65A3D27430DF55B3BE273DD075F36ED1ACD581660D782C3CB74B9
+  - 1/S1072.DAT SHA256: F03E67F9E5A00709CF6D06874B6F0B655FCEDCFA50155A6CE3C83874F5B84993
+- A safe high-slot rollback ZIP exists:
+  - 03_output/story_bulk3_s1072_room_highslot_patch_only.zip
+  - SHA256: E318C56C507A6B23AE5EA8999213EFBDF302B9D69BC9BA0F9DF35A3999F430EC
+  - It is the same content as story_progress_bulk3_all_1_gamefiles_only.
+
+Successful/Useful Historical Milestones
+- story_test_07:
+  - S1071 stable early font/text behavior.
+  - Good 12px 1-bit Gulim-like glyph readability.
+- story_test_11:
+  - D4/D8/DC were accepted as safe additional high-slot-ish single-byte text codes for 마/을/로.
+- story_test_12:
+  - Stable extra font baseline preserving story_test_07 behavior while keeping 마/을/로 glyphs available.
+- story_test_13-18:
+  - S1011 incremental block validation.
+  - story_test_17 failed because block 8 started at 0x47B40 instead of actual 0x47B3E.
+  - story_test_18 fixed that and passed S1011 9-block validation.
+- story_progress_bulk3_all_1:
+  - Not just story_test_18. It includes expanded progression files S1013/S1021/S1022/S1023/S1041/S1051/S1061/S1072 etc.
+  - This is the active broad baseline.
+
+Failed/Discarded Branches
+- story_test_08, 09, 10:
+  - 2-byte locator/grid attempts failed. Title/logo or names stayed Japanese/corrupted.
+- story_test_19:
+  - Low-slot probe on S1013. It did not match actual next screen flow and should not be adopted as progression patch.
+- story_test_20-25:
+  - S1072 experiments failed or diverged.
+  - Even safe-boundary attempts did not solve the actual user-observed S1072 screen.
+  - Important decision: story_test_19-25 S1072 series must not be used as distribution/base output.
+- story_bulk3_plus_s1072_room_patch_only.zip:
+  - Failed due to mixed Korean/Japanese glyphs caused by low-slot glyph interaction.
+  - SHA256: FAD4C4F0EC2E952CAA30296DC3C89342E18B4448AF5BD70F4806984FBF36CC70
+  - Do not use as base.
+- Packaging to CUE/BIN failed for user's immediate workflow, so current mode returned to patch-only ZIPs.
+
+Current Latest Patch: D-House
+- User saw house/interior dialogue still mixed after bulk3. Examples included mother/Ark lines with Japanese fragments.
+- Initial assumption that 1/S1013.DAT alone controlled the room was wrong.
+- Search found the same mother-pattern blocks in D/SD012.DAT and D/SD013.DAT.
+- D-house manifest created:
+  - 01_work/story_d_house_highslot_manifest.csv
+- Build used:
+  - 02_scripts/build_story_from_manifest.py
+  - Base ZIP: 03_output/story_progress_bulk3_all_1_patch_only.zip
+  - Manifest: 01_work/story_d_house_highslot_manifest.csv
+  - Output with report: 01_work/story_d_house_highslot_build_with_report.zip
+  - --no-render-low-glyphs
+- Final patch-only ZIP:
+  - 03_output/story_bulk3_plus_d_house_patch_only.zip
+  - SHA256: 05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458
+- Repack verify ZIP with identical content:
+  - 03_output/story_bulk3_plus_d_house_repack_verify_patch_only.zip
+  - SHA256: 05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458
+- These ZIPs contain exactly 13 game files:
+  - COMM.IMG
+  - 1/S1011.DAT
+  - 1/S1013.DAT
+  - 1/S1021.DAT
+  - 1/S1022.DAT
+  - 1/S1023.DAT
+  - 1/S1041.DAT
+  - 1/S1051.DAT
+  - 1/S1061.DAT
+  - 1/S1071.DAT
+  - 1/S1072.DAT
+  - D/SD012.DAT
+  - D/SD013.DAT
+- No docs/reports inside.
+
+D-House Patch Blocks
+- D/SD012.DAT:
+  - 0x478B8: 아크|조심하라
+  - 0x4791A: 예
+  - 0x47954: 아크|마을로 가라
+- D/SD013.DAT:
+  - 0x4789C: 아크|조심하라
+  - 0x47902: 예
+  - 0x4793A: 아크|가라
+  - 0x47976: 아크|조심하라
+  - 0x47A2C: 아크|마을로 가라
+- Hashes:
+  - D/SD012.DAT SHA256: 8759EFD336CB76BD1D500753E791CE73765C4F01772E616B9C0EA380BA031E95
+  - D/SD013.DAT SHA256: B22A427AAB24A1EA65FD2A53675A63F093213277D8BCBF213BADF05E444E32E3
+- Verified absent after patch:
+  - 42 31 4E 81
+  - 42 31 4E 81 31 5F 34 25
+
+Important Clarification About Last Screenshot
+- User posted Ark portrait screenshot with text like:
+  - 올さんのかた...
+  - この中にあるのは...
+  - 돌かっているんだけど
+- Assistant initially treated this as possibly latest ZIP output, then verified ZIP contents.
+- User clarified:
+  - "이건 아까거 검증화면이야"
+- Meaning: do not treat that screenshot as proof that latest D-house repack still fails.
+- It was from an earlier verification screen.
+
+Analysis Of That Older Ark Portrait Screenshot
+- Strongest raw match in original work files:
+  - 1/S1041.DAT at 0x48498
+  - Pattern: 42 31 4E 28 4D 4F 1C 61 2F 87 23 86 32 1F 37
+- In latest D-house ZIPs:
+  - 1/S1041.DAT no longer contains that original pattern.
+  - 1/S1041.DAT 0x48498 is already changed to:
+    - 98 A0 E6 01 90 94 9C...
+- Therefore if that exact screen appears after testing latest ZIP, first suspect packaging/application omission:
+  - 1/S1041.DAT not copied into package.
+  - Old S1041.DAT remained in packaged image.
+  - User tested stale image.
+- Do not create a new patch solely from that older screenshot.
+
+Files/Tools To Know
+- Main candidate CSV:
+  - 01_work/analysis/dialog_block_candidates.csv
+- Useful manifests:
+  - 05_docs/story_patch_manifest.csv
+  - 05_docs/story_patch_manifest_progress_safe.csv
+  - 01_work/story_d_house_highslot_manifest.csv
+- Important build script:
+  - 02_scripts/build_story_from_manifest.py
+- Packaging helper:
+  - 02_scripts/package_patch_to_cue.py
+- Explicit Python path:
+  - C:\Users\thf\AppData\Local\Programs\Python\Python312\python.exe
+- mkpsxiso:
+  - 06_tools/mkpsxiso/mkpsxiso-2.30-win64/mkpsxiso.exe
+
+What To Do In A New Session
+1. Read the mandatory docs and this handoff.
+2. Confirm active output requested by the user.
+3. If user asks to continue testing D-house:
+   - Make sure they used one of:
+     - story_bulk3_plus_d_house_patch_only.zip
+     - story_bulk3_plus_d_house_repack_verify_patch_only.zip
+   - Confirm all 13 files were included when packaging.
+   - Especially confirm 1/S1041.DAT, D/SD012.DAT, D/SD013.DAT.
+4. If new screenshot shows mixed text:
+   - Do not guess.
+   - Search exact raw pattern across the latest packaged files and broader DAT set.
+   - Identify actual file/block first.
+   - Patch only confirmed block with high-slot-safe text.
+5. If S1072 comes up again:
+   - Do not reuse story_test_19-25.
+   - Do not use low slots.
+   - Re-identify actual file/block/script source.
+
+Do Not Do
+- Do not say "then it is just story_test_18" as the current baseline.
+- Do not discard bulk3 because 19-25 failed.
+- Do not use story_bulk3_plus_s1072_room_patch_only as base.
+- Do not include docs in patch ZIP.
+- Do not make another CUE/BIN unless user explicitly asks.
+- Do not patch original ROM or 00_original directly.
+- Do not assume D/SD012 and D/SD013 are the only room files forever; they were only the confirmed D-house fix so far.
+
+Current Best Answer To User's Concern
+- The earlier session_context_2026-07-09.txt was an operational context, not a full verbatim chat log.
+- This file is the fuller handoff meant to prevent a new session from repeating the same mistakes.
+- The docs are usable but have broken-encoding sections; this handoff should be read with them to avoid misreading the state.

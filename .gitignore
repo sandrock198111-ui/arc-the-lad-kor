@@ -1,0 +1,55 @@
+# Local/original game data. Never commit these.
+00_original/
+ex/
+99_backup/
+
+# Extracted work trees and packaged image workspaces are too large and may
+# contain original game assets.
+01_work/*
+!01_work/analysis/
+!01_work/analysis/*.csv
+!01_work/analysis/*.md
+!01_work/*.csv
+
+# Generated patch/output files. Recreate these from scripts/manifests.
+03_output/
+04_screenshots/
+
+# Local third-party tools and extracted binaries.
+06_tools/
+
+# Game/media/binary artifacts.
+*.zip
+*.7z
+*.rar
+*.bin
+*.cue
+*.iso
+*.chd
+*.dat
+*.DAT
+*.img
+*.IMG
+*.xa
+*.XA
+*.str
+*.STR
+*.exe
+*.EXE
+*.snd
+*.SND
+
+# Python/cache/editor noise.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# OS/editor files.
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/

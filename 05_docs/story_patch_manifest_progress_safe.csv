@@ -1,0 +1,11 @@
+enabled,file,payload_start,text,notes
+1,1/S1072.DAT,0x478CC,촌장|아크|마을로 가라,progress-safe high-slot only
+1,1/S1072.DAT,0x47932,촌장|아크|조심하거라,progress-safe high-slot only
+1,1/S1072.DAT,0x47996,촌장|아크,progress-safe high-slot only
+1,1/S1072.DAT,0x479F4,촌장|조심하거라,progress-safe high-slot only
+1,1/S1072.DAT,0x47A30,예,progress-safe high-slot only
+1,1/S1072.DAT,0x47A68,촌장|가라,progress-safe high-slot only
+1,1/S1072.DAT,0x47AA8,아크|마을로 가라,progress-safe high-slot only
+1,1/S1072.DAT,0x47B0E,촌장|마을로 가라,progress-safe high-slot only
+1,1/S1072.DAT,0x47B94,아크|조심하라|마을로 가라,progress-safe high-slot only
+1,1/S1072.DAT,0x47C24,아크|조심하라|마을로 가라,progress-safe high-slot only

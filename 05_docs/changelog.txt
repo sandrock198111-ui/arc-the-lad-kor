@@ -1,0 +1,141 @@
+2026-07-06
+- ex/1.zip과 ex/2.zip을 원본 arc.zip과 바이너리 비교했다.
+- ex/1.zip은 COMM.IMG와 S1071.DAT만 변경된 제한 패치임을 확인했다.
+- ex/2.zip은 COMM.IMG와 S1011/S1021/S1071/S1072.DAT만 실제 변경됐고, 나머지 DAT는 원본 복구 파일임을 확인했다.
+- story_test_01은 ex/2.zip의 폰트와 S1071.DAT만 사용하여 초반 신전 입구 검수용으로 분리한다.
+- S1071.DAT 0x4795B의 의심스러운 0x04를 원본 종료값 0x00으로 복원한다.
+- 03_output/story_test_01_patch_only.zip 생성 및 바이너리 검증 완료.
+- 출력 ZIP SHA256: 520983006EFEB541677740A5D5CC81D4682FAFFDB6DD454D796451B24B590D62
+- COMM.IMG는 ex/2.zip과 동일하고 S1071.DAT는 0x4795B 한 바이트만 다름을 확인했다.
+- story_test_01 DuckStation 검수 실패: 의미 없는 한글 잡문자와 다른 장면의 일본어 글리프 오염 확인.
+- story_test_02는 원본 COMM.IMG/S1071.DAT에서 고정 문자표로 다시 생성했다.
+- 네 대사 블록 밖의 DAT 변경이 없고 네 종료값 0x00이 모두 보존됨을 검증했다.
+- 24개 글리프 셀과 blank cell 0의 배치 검증을 완료했다.
+- story_test_02 출력 SHA256: D4389C5EB507CCAEC58629AFD87F756B0C6ECB024794A223F8E1F721064CB43C
+- story_test_02 DuckStation 검수에서 고정 문자표 연결과 네 블록 진행은 성공했다.
+- ex/1에서 가져온 글리프는 여러 글자가 오인될 정도로 품질이 낮아 폐기 대상으로 판정했다.
+- story_test_03은 DAT를 유지하고 COMM.IMG의 24개 글리프만 굴림 12px 1비트로 재생성했다.
+- story_test_03 출력 SHA256: E57798F547897AE8AD7332DD81C3A0A0272C24065E115E6F2A0CE534F7816BD7
+- story_test_03 DuckStation 검수: 네 대사와 굴림 1비트 글꼴 성공, 메뉴/UI 저번호 슬롯 충돌 확인.
+- story_test_03 성공본을 99_backup/story_test_03_font_success.zip으로 보존했다.
+- story_test_04에서 filler/한글을 cell 38-62의 높은 코드 구간으로 이동했다.
+- 원본 cell 0-37 보존과 네 DAT 블록 이외 무변경을 검증했다.
+- story_test_04 출력 SHA256: A001AE02B71A8785B3DF28D38D0D9FFE48AFE9A4B3A874102FB698169B48A4F6
+- story_test_04 DuckStation 검수 실패: E0/E4 글자 누락, FC 출력 뒤 이벤트 중단.
+- story_test_05는 cell 25-49 안에서 문자와 filler를 재배치하고 E0-FF를 제외했다.
+- 원본 cell 0-24 보존, 네 DAT 블록 외 무변경을 검증했다.
+- story_test_05 출력 SHA256: 72FAD387151F6D6F8D788AB25424B9AF4E8546707CC42D2F65C47D08E4DD0073
+- story_test_05 DuckStation 검수에서 test04의 진행 중단 해결을 확인했다.
+- story_test_05 성공본을 99_backup/story_test_05_progress_success.zip으로 보존했다.
+- story_test_06에 촌/장 두 글리프와 첫/세 번째 블록의 촌장 이름줄을 추가했다.
+- test05 대비 변경이 폰트 cell 50-51과 두 DAT 블록에만 있음을 검증했다.
+- story_test_06 출력 SHA256: EAC88E54C9AD9054AC5D825900C9AD1D9DC97D5C585EBED371A73EC67BB332FC
+- story_test_06 DuckStation 검수에서 촌장 이름줄 표시 성공.
+- story_test_06 성공본을 99_backup/story_test_06_names_success.zip으로 보존했다.
+- story_test_07에서 0x9C를 문장 내부 공백으로 사용해 두 문장의 띄어쓰기를 적용했다.
+- COMM.IMG는 test06과 동일하고 DAT 차이는 첫/세 번째 블록뿐임을 검증했다.
+- story_test_07 출력 SHA256: 2A09829F936BD6BF6D4EB8D9A614656B3E993ECE93B7F86B71D8637488E63125
+- story_test_07 DuckStation 검수 성공. S1071 안정 기준으로 확정했다.
+- story_test_07 성공본을 99_backup/story_test_07_stable.zip으로 보존했다.
+- 1바이트 안전 슬롯의 남은 용량이 약 3글자라 2바이트 글리프 확장이 필요함을 확인했다.
+- story_test_08에서 DD 0B / D4 25의 두 가지 글리프 위치 공식을 동시에 검사하는 locator를 제작했다.
+- story_test_08 출력 SHA256: 102974492865E758521D2AFE2815F9234A08B5F106BD9FBA3EB723EEE6766BBC
+- story_test_08 DuckStation 결과 원본 村長 유지: map A/B 실패.
+- 두 번째 바이트도 하위 2비트를 제외하는 map C 공식을 도출했다.
+- story_test_09에서 DD 0B와 D4 25의 map C 위치 두 곳만 촌/장으로 교체했다.
+- story_test_09 출력 SHA256: D2644D371B415239C283A90E4778C575A499B903EEA656FE72745CE3883C8877
+- story_test_09 DuckStation 결과 원본 村長 유지: map C 실패.
+- story_test_10에서 2바이트를 64x64 행/열로 보는 네 보정 조합을 한 번에 검사하도록 구성했다.
+- story_test_10 출력 SHA256: 3BCDBC9AB0C4423CEA3917B15ABEE1ED8C144EE8EBC7EE0A0E4F9E7DBC246322
+- 2026-07-07: story_test_10 result checked again; title screen/logo corruption confirmed in DuckStation.
+- 2026-07-07: The 2-byte locator guess is rejected for now. Keep story_test_07 as the stable baseline.
+- story_test_11은 story_test_07 안정본에서 D4/D8/DC 남은 1바이트 슬롯만 검사하도록 구성했다.
+- story_test_11 변경: COMM.IMG cell 52-54에 마/을/로 추가, S1071 두 번째 블록만 "마을로 / 가라"로 변경.
+- story_test_11 출력 SHA256: 88BCDE15A1803B569BDE3130525DE9F62BD24B03AB1C2F13F40BC85B24BF4A60
+- story_test_11 DuckStation 검수 성공: 타이틀/첫 대사/두 번째 대사/세 번째 대사/진행 모두 정상.
+- story_test_11 성공본을 99_backup/story_test_11_remaining_slots_success.zip으로 보존했다.
+- D4=마, D8=을, DC=로를 현재 안전 1바이트 슬롯으로 확정했다.
+- story_test_12는 story_test_11 성공본의 COMM.IMG를 유지하고 S1071.DAT를 story_test_07 안정 대사로 복원했다.
+- story_test_12 정적 검증: S1071.DAT는 story_test_07과 완전 동일, COMM.IMG는 마/을/로 글리프 추가분만 다름.
+- story_test_12 출력 SHA256: A746D25902C235C107B65E9B7FBAE673F3F73205F0DD95A0EAD8B73775F5B370
+- story_test_12 DuckStation 검수 성공: story_test_07과 같은 화면/진행을 유지하고 추가 글리프 마/을/로를 보유한 기준본으로 확정했다.
+- story_test_13은 story_test_12 기준으로 S1011 첫 블록 0x478AA-0x478CC만 "아크여 / 마을로 가라"로 변경했다.
+- story_test_13 정적 검증: COMM.IMG와 S1071.DAT는 story_test_12와 동일, S1011.DAT 변경은 첫 블록 35바이트뿐이다.
+- story_test_13 출력 SHA256: 2518D065D106CDD43FCD3900242EB1DA4D1552BB67D0624E573D938C65CD30EF
+- story_test_13 DuckStation 검수 성공: S1011 첫 블록에 "아크여 / 마을로 가라" 정상 표시, 다음 블록은 원본 일본어로 이어짐.
+- story_test_13 성공본을 99_backup/story_test_13_s1011_first_block_success.zip으로 보존했다.
+- story_test_14는 story_test_13 기준으로 S1011 두 번째 블록 0x47902-0x47918을 "이 뒤로 / 가라"로 추가 변경했다.
+- story_test_14 정적 검증: COMM.IMG와 S1071.DAT는 story_test_13과 동일, S1011.DAT는 첫/두 번째 블록만 변경됐다.
+- story_test_14 출력 SHA256: D7A1A14BBE2138F0FD335FE2A093A6E42135448CEA2D6317FE38486AE932AB4B
+- story_test_14 DuckStation 검수 성공: 두 번째 블록 "이 뒤로 / 가라" 정상 표시 및 진행 확인.
+- story_test_14 성공본을 99_backup/story_test_14_s1011_two_blocks_success.zip으로 보존했다.
+- story_test_15는 story_test_14 기준으로 S1011 세 번째 블록 0x47954-0x47968을 "조심하라"로 추가 변경했다.
+- story_test_15 정적 검증: COMM.IMG와 S1071.DAT는 story_test_14와 동일, S1011.DAT는 첫/두/세 번째 블록만 변경됐다.
+- story_test_15 출력 SHA256: B882A51DCB3E73172D0A07860DA2F098C35E156770366B01A93956B6F8B2404E
+- story_test_15 DuckStation 검수 성공: 세 번째 블록 "조심하라" 정상 표시 및 진행 확인.
+- story_test_15 성공본을 99_backup/story_test_15_s1011_three_blocks_success.zip으로 보존했다.
+- story_test_16은 story_test_15 기준으로 S1011 네 번째 블록 0x4799E-0x479C7을 "아크 / 돌아올 때까지 / 기다리겠다"로 추가 변경했다.
+- story_test_16 정적 검증: COMM.IMG와 S1071.DAT는 story_test_15와 동일, S1011.DAT는 첫 네 블록만 변경됐다.
+- story_test_16 출력 SHA256: 814A872839B7F7D6B16E4537595742C1BA9F585290003526533534B4B11E5994
+- story_test_16 DuckStation 검수 성공: 네 번째 블록 "아크 / 돌아올 때까지 / 기다리겠다" 정상 표시 및 진행 확인.
+- story_test_16 성공본을 99_backup/story_test_16_s1011_four_blocks_success.zip으로 보존했다.
+- story_test_17은 story_test_16 기준으로 S1011의 확인된 텍스트 블록 9개를 한 번에 패치하는 배치 검증판으로 제작했다.
+- story_test_17 정적 검증: COMM.IMG와 S1071.DAT는 story_test_16과 동일, S1011.DAT는 9개 텍스트 블록만 변경됐다.
+- story_test_17 출력 SHA256: B622294AC659493E4FBE6C88E9360D4E0B713AF5C9F6AE3B093E35F86C723D9A
+- story_test_17 DuckStation 검수에서 8번째 블록 앞에 원본 일본어 "よく"가 남아 표시되는 문제 확인. 원인은 블록 시작을 0x47B40으로 잡아 실제 텍스트 시작 0x47B3E의 앞 2바이트를 남긴 것.
+- story_test_18은 story_test_17의 8번째 블록 시작점을 0x47B3E로 보정해 다시 제작했다.
+- story_test_18 출력 SHA256: 492C1F206F91532EFA7DFC5E9E39A5F4902B745043C979475B9AA3894BCE5204
+2026-07-07
+- story_test_18 DuckStation 검수 성공: test17의 "よく 촌장" 혼합 문제가 해결됐고 이후 진행도 정상이다.
+- 성공본을 99_backup/story_test_18_s1011_nine_blocks_fix_block8_success.zip에 보존했다.
+- 이 시점부터 S1011은 1대사 단위 검증을 종료하고, 파일/경계/새 글자/종료값 중심의 묶음 검증 단계로 전환한다.
+2026-07-07
+- story_test_19 생성: S1013 첫 블록에 낮은 코드 슬롯 0x08-0x18을 사용해 "고마워 / 누구냐" 임시 검증문을 삽입했다.
+- 목적은 번역 확정이 아니라 추가 한글 글자 슬롯 확보 검증이다.
+- 출력: 03_output/story_test_19_low_slot_probe_s1013_patch_only.zip
+- SHA256: C150C8222E95D3DF045A25FE41E7D6EB79043F14C17935FD4FB7D99EE48D4AC9
+2026-07-07
+- story_test_19 관찰 결과, 실제 다음 화면은 S1013이 아니라 S1072였다. 따라서 test19는 실제 진행 위치 패치로 채택하지 않는다.
+- story_test_20 생성: story_test_18 성공본을 베이스로 1/S1072.DAT 첫 실제 화면 2개 블록을 패치했다.
+- S1013 변경은 포함하지 않았다.
+- 출력: 03_output/story_test_20_s1072_first_blocks_patch_only.zip
+- SHA256: 14DF784904927DD5214A0A9C65E1B3D886567474763AE08B998C30076738B025
+2026-07-07
+- story_test_20 관찰 결과, S1072의 앞쪽 표시 블록 0x478CC/0x47932가 남아 있어 일본어/한글 혼합이 심하게 발생했다.
+- 낮은 슬롯 확장 후에는 같은 시퀀스의 미번역 일본어 블록을 남기면 안 된다는 기준을 추가한다.
+- story_test_21 생성: story_test_18 성공본을 베이스로 S1072 표시 블록 7개를 묶어서 패치했다.
+- 출력: 03_output/story_test_21_s1072_visible_batch_patch_only.zip
+- SHA256: 8AF42D0C093E08DE5860F51A1E92A9A694028571488D4330A09B16538DB87EE5
+2026-07-07
+- story_test_21 관찰 결과, S1072 신전 내려온 뒤 대부분은 변환됐지만 portrait가 붙은 0x47C24 근처 블록 하나가 혼합 출력됐다.
+- story_test_22 생성: story_test_21을 베이스로 S1072 0x47C24-0x47C5A 블록을 추가 패치했다.
+- 집안/내부 혼합은 별도 파일/별도 시퀀스로 보고 다음 단계에서 분리 처리한다.
+- 출력: 03_output/story_test_22_s1072_add_kukuru_block_patch_only.zip
+- SHA256: C02E8B6822011720C4F39816223E46FE692B87D502F7B074E409C3453B21BC56
+2026-07-07
+- story_test_22 재검수에서 portrait 혼합 블록이 여전히 보이고, 다음 대사가 비정상적으로 빠르게 넘어가는 증상이 보고됐다.
+- S1072 일부 블록에서 첫 00 00 경계 뒤 제어부까지 건드린 가능성을 확인했다.
+- story_test_23 생성: story_test_18 성공본과 원본 S1072를 베이스로, 각 S1072 블록을 첫 00 00 경계 전까지만 덮도록 재작성했다.
+- 출력: 03_output/story_test_23_s1072_safe_boundaries_patch_only.zip
+- SHA256: 944CD6D2B26E8C812D6679680643495CB438BF4AAFD85A562D3B207443F179DD
+2026-07-08
+- story_bulk3_plus_s1072_room_patch_only.zip 생성.
+- 기준은 story_test_18이 아니라 story_progress_bulk3_all_1이며, 19-25 실패 분기는 배포 기준에서 제외.
+- 출력 ZIP에는 게임 교체 파일 11개만 포함하고 문서/리포트 파일은 제외.
+- S1072는 story_patch_manifest.csv의 10개 블록을 벌크3 기준으로 재적용.
+
+2026-07-08
+- story_bulk3_plus_s1072_room_patch_only.zip 사용자 화면에서 한글/일본어 글리프 혼합 확인. 폐기.
+- 낮은 슬롯 글리프를 쓰지 않는 안전판 story_bulk3_s1072_room_highslot_patch_only.zip 생성.
+- 해당 안전판은 story_progress_bulk3_all_1_gamefiles_only와 파일 해시가 동일하며, plus 회귀를 되돌리는 기준 파일로 사용.
+
+2026-07-08
+- 집 내부 어머니 대화 잔여 일본어가 1/S1013.DAT가 아니라 D/SD012.DAT, D/SD013.DAT 쪽에도 존재함을 확인.
+- D/SD012.DAT, D/SD013.DAT의 "母さん" 계열 시작 패턴을 high-slot 문장으로 교체한 story_bulk3_plus_d_house_patch_only.zip 생성.
+- 낮은 슬롯 글자는 사용하지 않음. 출력 ZIP에는 게임 파일만 포함.
+
+2026-07-08
+- 방안 Ark portrait 잔여 원문 스크린샷을 재분석했다.
+- 화면과 가장 강하게 맞는 원문 패턴은 원본 1/S1041.DAT 0x48498 계열이지만, story_bulk3_plus_d_house_patch_only.zip 내부의 1/S1041.DAT에서는 이미 제거되어 있었다.
+- 적용/패키징 누락 가능성을 줄이기 위해 동일 내용 재전달 ZIP story_bulk3_plus_d_house_repack_verify_patch_only.zip을 생성했다.
+- ZIP SHA256은 기존 D-house ZIP과 같은 05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458이다.

@@ -1,0 +1,9 @@
+enabled,file,payload_start,text,notes
+1,D/SD012.DAT,0x478B8,아크|조심하라,house D table mother line high-slot only
+1,D/SD012.DAT,0x4791A,예,house D table short response high-slot only
+1,D/SD012.DAT,0x47954,아크|마을로 가라,house D table mother line high-slot only
+1,D/SD013.DAT,0x4789C,아크|조심하라,house D table mother line high-slot only
+1,D/SD013.DAT,0x47902,예,house D table short response high-slot only
+1,D/SD013.DAT,0x4793A,아크|가라,house D table short mother line high-slot only
+1,D/SD013.DAT,0x47976,아크|조심하라,house D table mother line high-slot only
+1,D/SD013.DAT,0x47A2C,아크|마을로 가라,house D table trailing block high-slot only

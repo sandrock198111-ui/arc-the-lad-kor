@@ -1,0 +1,153 @@
+Arc the Lad 1 JP Korean Patch - Current Chat Context
+Date: 2026-07-09
+Workspace: E:\korean
+
+Purpose
+- This file preserves the current conversation context so work can resume after Windows/VSCode/Codex changes.
+- Read this together with:
+  - 05_docs/bible_current.txt
+  - 05_docs/changelog.txt
+  - 05_docs/test_log.txt
+
+Required Workflow
+- Before any future task, read bible_current.txt first, then changelog.txt and test_log.txt.
+- Do not modify 00_original directly.
+- Output patch/test files under 03_output.
+- For binary/ROM edits, work from a copy or existing patch build, never the original ROM.
+- Do not regress to English-version structure.
+- Do not use the failed 8x8 Hangul insertion approach.
+- Do not overwrite known-good successful patch results.
+- Before editing, state target file, reason, and risk.
+- Record failures and decisions in 05_docs/test_log.txt.
+- Important changes must also update 05_docs/bible_current.txt.
+
+Current Stable Baseline
+- The broad working baseline is NOT story_test_18 alone.
+- story_test_18 is only S1011/S1071 stable.
+- The current broader baseline is:
+  - 03_output/story_progress_bulk3_all_1_gamefiles_only
+- That baseline contains 11 game files:
+  - COMM.IMG
+  - 1/S1011.DAT
+  - 1/S1013.DAT
+  - 1/S1021.DAT
+  - 1/S1022.DAT
+  - 1/S1023.DAT
+  - 1/S1041.DAT
+  - 1/S1051.DAT
+  - 1/S1061.DAT
+  - 1/S1071.DAT
+  - 1/S1072.DAT
+- Bulk3 S1072.DAT SHA256:
+  - F03E67F9E5A00709CF6D06874B6F0B655FCEDCFA50155A6CE3C83874F5B84993
+- Bulk3 COMM.IMG SHA256:
+  - 6F16605DB5A65A3D27430DF55B3BE273DD075F36ED1ACD581660D782C3CB74B9
+
+Important Failed Branches
+- story_test_19-25 S1072 experiments failed or diverged and must not be used as a distribution base.
+- story_bulk3_plus_s1072_room_patch_only.zip failed due to low-slot glyph/Japanese glyph mixing.
+- Do not reintroduce 0x08-0x64 low-slot Hangul glyph use without a separate controlled proof.
+- S1072 must not be advanced by guessing offsets one by one. Re-identify the actual screen/file/block first.
+
+Latest Delivered Patch-Only ZIPs
+- Safe rollback/high-slot baseline:
+  - 03_output/story_bulk3_s1072_room_highslot_patch_only.zip
+  - SHA256: E318C56C507A6B23AE5EA8999213EFBDF302B9D69BC9BA0F9DF35A3999F430EC
+  - Same content as story_progress_bulk3_all_1_gamefiles_only.
+- D-house patch:
+  - 03_output/story_bulk3_plus_d_house_patch_only.zip
+  - SHA256: 05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458
+  - Contains 13 game files only:
+    - COMM.IMG
+    - 1/S1011.DAT
+    - 1/S1013.DAT
+    - 1/S1021.DAT
+    - 1/S1022.DAT
+    - 1/S1023.DAT
+    - 1/S1041.DAT
+    - 1/S1051.DAT
+    - 1/S1061.DAT
+    - 1/S1071.DAT
+    - 1/S1072.DAT
+    - D/SD012.DAT
+    - D/SD013.DAT
+  - No BUILD_REPORT, TEST_INFO, docs, or non-game files inside.
+- Repack/verify copy of the same D-house patch:
+  - 03_output/story_bulk3_plus_d_house_repack_verify_patch_only.zip
+  - SHA256: 05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458
+  - Same content and hash as story_bulk3_plus_d_house_patch_only.zip.
+
+D-House Patch Details
+- Reason:
+  - User saw house/interior Japanese mixed lines remaining after bulk3.
+  - 1/S1013.DAT in bulk3 already had the matching mother pattern removed.
+  - Search found the same pattern in D/SD012.DAT and D/SD013.DAT.
+- Manifest created:
+  - 01_work/story_d_house_highslot_manifest.csv
+- Patched blocks:
+  - D/SD012.DAT 0x478B8: 아크|조심하라
+  - D/SD012.DAT 0x4791A: 예
+  - D/SD012.DAT 0x47954: 아크|마을로 가라
+  - D/SD013.DAT 0x4789C: 아크|조심하라
+  - D/SD013.DAT 0x47902: 예
+  - D/SD013.DAT 0x4793A: 아크|가라
+  - D/SD013.DAT 0x47976: 아크|조심하라
+  - D/SD013.DAT 0x47A2C: 아크|마을로 가라
+- Patched file hashes:
+  - D/SD012.DAT SHA256: 8759EFD336CB76BD1D500753E791CE73765C4F01772E616B9C0EA380BA031E95
+  - D/SD013.DAT SHA256: B22A427AAB24A1EA65FD2A53675A63F093213277D8BCBF213BADF05E444E32E3
+- Verification:
+  - Patched D/SD012.DAT and D/SD013.DAT no longer contain:
+    - 42 31 4E 81
+    - 42 31 4E 81 31 5F 34 25
+
+Latest User Clarification
+- The screenshot with Ark portrait and text like:
+  - 올さんのかた...
+  - この中にあるのは...
+  - 돌かっているんだけど
+  was not a new test of the latest repack; the user clarified:
+  - "이건 아까거 검증화면이야"
+- Therefore do not assume the current latest ZIP still produces that screen.
+- The next meaningful action is to test the latest 13-file D-house ZIP/repack, or wait for a new screenshot made from that ZIP.
+
+Analysis of That Older Ark Portrait Screenshot
+- The strongest matching raw pattern was original 1/S1041.DAT 0x48498:
+  - 42 31 4E 28 4D 4F 1C 61 2F 87 23 86 32 1F 37
+- In story_bulk3_plus_d_house_patch_only.zip and story_bulk3_plus_d_house_repack_verify_patch_only.zip:
+  - 1/S1041.DAT does not contain that original pattern.
+  - 1/S1041.DAT at 0x48498 is already:
+    - 98 A0 E6 01 90 94 9C...
+- So if that same screen appears after testing the latest ZIP, first suspect packaging/application omission of 1/S1041.DAT or stale game files.
+
+Packaging Notes
+- User will do packaging manually.
+- Assistant should output patch-only ZIP files only when asked for output.
+- Patch-only ZIPs should contain only replacement game files, no docs/reports.
+- User may keep ZIP and cut/move folder for packaging.
+
+Environment Notes
+- Windows environment.
+- Python Store alias may be wrong; use explicit Python path:
+  - C:\Users\thf\AppData\Local\Programs\Python\Python312\python.exe
+- Pillow and scripts were verified after reinstall.
+- DuckStation installed, but user usually tests manually.
+- Relevant scripts:
+  - 02_scripts/build_story_from_manifest.py
+  - 02_scripts/package_patch_to_cue.py
+- mkpsxiso tool:
+  - 06_tools/mkpsxiso/mkpsxiso-2.30-win64/mkpsxiso.exe
+
+Current Emotional/Project Context
+- User is frustrated because many days of prior verification seemed to regress.
+- Be direct and careful.
+- Do not restart from story_test_18 as if bulk3 never existed.
+- Do not discard bulk3 1-3/19-23 context blindly; 19-25 S1072 experiments are failed, but bulk3 progression baseline remains important.
+- Before making new patches, identify the exact file/block called by the screen.
+
+Next Recommended Step
+- If user tests the latest ZIP and provides a new screenshot:
+  1. Confirm it was built from story_bulk3_plus_d_house_repack_verify_patch_only.zip or story_bulk3_plus_d_house_patch_only.zip.
+  2. Check whether all 13 files were included in packaging, especially 1/S1041.DAT, D/SD012.DAT, D/SD013.DAT.
+  3. If Japanese/mixed text remains, search raw patterns in the exact 13-file output and broader DAT set.
+  4. Patch only confirmed file/block with high-slot-safe text.

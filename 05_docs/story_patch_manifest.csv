@@ -1,0 +1,11 @@
+enabled,file,payload_start,text,notes
+1,1/S1072.DAT,0x478CC,촌장|신의피를이은자|결계가사라진다,S1072 safe batch 1 concise for auto scene
+1,1/S1072.DAT,0x47932,촌장|말괄량덕분에|사라진다,S1072 safe batch 2 concise for auto scene
+1,1/S1072.DAT,0x47996,촌장|신의피다,S1072 safe batch 3 concise for auto scene
+1,1/S1072.DAT,0x479F4,촌장|덕분이다,S1072 safe batch 4 concise for auto scene
+1,1/S1072.DAT,0x47A30,예,S1072 short block added after mixed-text report
+1,1/S1072.DAT,0x47A68,촌장|가라,S1072 safe batch 5
+1,1/S1072.DAT,0x47AA8,아크|결계가사라진다|마을로가라,S1072 voice/mixed block added after user report concise
+1,1/S1072.DAT,0x47B0E,촌장|결계사라진다|마을로가라,S1072 safe batch 6
+1,1/S1072.DAT,0x47B94,아크|조심하라|마을로가라,S1072 safe batch 7
+1,1/S1072.DAT,0x47C24,아크|조심하라|마을로가라,S1072 safe batch 8

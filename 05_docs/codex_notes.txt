@@ -1,0 +1,66 @@
+Arc the Lad 1 Korean patch - confirmed Codex notes
+Date: 2026-07-09
+
+Confirmed baselines
+- The broad active baseline is 03_output/story_progress_bulk3_all_1_gamefiles_only.
+- story_test_18 is stable only for earlier S1011/S1071 work. It is not the full current baseline.
+- story_progress_bulk3_all_1_gamefiles_only contains 11 game replacement files:
+  COMM.IMG,
+  1/S1011.DAT,
+  1/S1013.DAT,
+  1/S1021.DAT,
+  1/S1022.DAT,
+  1/S1023.DAT,
+  1/S1041.DAT,
+  1/S1051.DAT,
+  1/S1061.DAT,
+  1/S1071.DAT,
+  1/S1072.DAT.
+- Bulk3 COMM.IMG SHA256:
+  6F16605DB5A65A3D27430DF55B3BE273DD075F36ED1ACD581660D782C3CB74B9
+- Bulk3 1/S1072.DAT SHA256:
+  F03E67F9E5A00709CF6D06874B6F0B655FCEDCFA50155A6CE3C83874F5B84993
+
+Latest valid patch-only output
+- Latest D-house patch-only ZIP:
+  03_output/story_bulk3_plus_d_house_patch_only.zip
+- Repack verify ZIP:
+  03_output/story_bulk3_plus_d_house_repack_verify_patch_only.zip
+- Both D-house ZIPs have SHA256:
+  05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458
+- The D-house ZIP contains exactly 13 game files and no reports/docs:
+  COMM.IMG,
+  1/S1011.DAT,
+  1/S1013.DAT,
+  1/S1021.DAT,
+  1/S1022.DAT,
+  1/S1023.DAT,
+  1/S1041.DAT,
+  1/S1051.DAT,
+  1/S1061.DAT,
+  1/S1071.DAT,
+  1/S1072.DAT,
+  D/SD012.DAT,
+  D/SD013.DAT.
+- Patched D/SD012.DAT SHA256:
+  8759EFD336CB76BD1D500753E791CE73765C4F01772E616B9C0EA380BA031E95
+- Patched D/SD013.DAT SHA256:
+  B22A427AAB24A1EA65FD2A53675A63F093213277D8BCBF213BADF05E444E32E3
+
+Failed branches not to reuse as a base
+- story_test_08, story_test_09, and story_test_10 2-byte locator/grid attempts failed.
+- story_test_19 was a low-slot S1013 probe and is not an actual progression patch.
+- story_test_20 through story_test_25 S1072 experiments failed or diverged.
+- story_bulk3_plus_s1072_room_patch_only.zip failed because low-slot glyph use produced mixed Japanese/Korean output.
+
+Rules confirmed by testing
+- Do not use 0x08-0x64 low-slot Hangul glyphs as a distribution approach without a separate controlled proof.
+- Do not use E0-FF as general Hangul single-byte codes.
+- Do not fill remaining text block space with 0x00.
+- Do not patch visible pointer-looking or control-looking blocks by guess.
+- Before any new mixed-text fix, identify the actual file and block used by that screen.
+
+Git/project management notes
+- GitHub origin is https://github.com/sandrock198111-ui/arc-the-lad-kor.git.
+- The remote main branch existed on 2026-07-09 and contained README.md.
+- Original game data, extracted game files, generated patch ZIPs, full image outputs, and third-party tool binaries must not be committed.
