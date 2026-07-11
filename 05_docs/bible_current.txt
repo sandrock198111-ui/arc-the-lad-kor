@@ -972,3 +972,9 @@ story_test_23 S1072 안전 경계 기준
 - Slot 1 RAM contains the new D/SD011 bytes at `0x47A20` and `0x47C5A` exactly as delivered. Slots 2-3 contain every previously analyzed S1041 dialogue payload in its patched form.
 - Therefore, Japanese text still visible in these states is not caused by the latest ZIP being absent or by a stale save state. It comes from an unclassified dialogue representation in the loaded scene data.
 - Further edits must locate the active display command/text buffer rather than add more 17/19-marker candidates.
+
+2026-07-12 live slot-1 extended block:
+- A direct scan of still-original marker variants found one additional D/SD011 live body at `0x47D58-0x47D70` after the extended form `17 00 00 00`.
+- The writable payload has 25 bytes, starts at `0x47D58`, and ends before the preserved `00 00` boundary at `0x47D71`.
+- Current cumulative patch-only output: `03_output/story_house_sd011_live_slots_1_to_4_patch_only.zip`.
+- ZIP has 16 game replacement files, no build report, and SHA256 `996EDC1FAFC71E156B0A1F44A793AA12B3DBEB2592A38A4EC1F39B7B52240151`.

@@ -711,3 +711,8 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Slot 1: D/SD011 has patched bytes at `0x47A20` (`98 A0 E6 01 A4 A8 AC B0 94 ...`) and `0x47C5A` (`98 A0 E6 01 D4 D8 DC ...`) exactly matching the ZIP.
 - Slots 2-3: all 29 previously analyzed S1041 payloads in the loaded script window matched their patched ZIP form.
 - Result: the persistent Japanese display is not a packaging failure or an old state RAM image. The visible text uses an unclassified dialogue/display format. No new patch was made.
+2026-07-12 - live slot-1 extended D/SD011 block
+- Test method: scanned original marker variants that remained unchanged in the latest ZIP after verifying the new slot-1 RAM image.
+- Source: `D/SD011.DAT` extended form `17 00 00 00 <payload> 00 00`; payload `0x47D58-0x47D70`, boundary `0x47D71`.
+- Change: inserted stable high-slot Korean `아크|조심하거라` in the 25-byte payload and preserved the `00 00` boundary.
+- Result: new ZIP retains 16 game replacement files, contains no build report, and differs from the prior ZIP only in `D/SD011.DAT`. SHA256 `996EDC1FAFC71E156B0A1F44A793AA12B3DBEB2592A38A4EC1F39B7B52240151`.

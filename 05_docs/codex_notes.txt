@@ -174,3 +174,8 @@ Refreshed save-state patch presence - 2026-07-12
 - A newer slot 1 confirms the D/SD011 patch is active in emulated RAM, including the two newly added payloads at `0x47A20` and `0x47C5A`.
 - Newer slots 2 and 3 confirm all 29 analyzed S1041 payloads are active in emulated RAM.
 - Do not diagnose the remaining Japanese display as failed ZIP extraction, failed mkpsxiso inclusion, or stale save-state data. The next analysis target is the scene's unclassified display command/text representation.
+
+Live slot-1 D/SD011 extended variant - 2026-07-12
+- An extended dialogue form can appear as `... 17 00 00 00 <payload> 00 00` without the nearby high-confidence header required by `analyze_dialog_blocks.py`.
+- Exact post-patch slot-1 source: D/SD011 payload `0x47D58-0x47D70`; preserve prefix `00 00` and the first boundary at `0x47D71`.
+- When the immediately following dialogue block is already patched, validate this block's boundary only. Do not compare a long following control window against the original source because it legitimately includes the next patched payload.
