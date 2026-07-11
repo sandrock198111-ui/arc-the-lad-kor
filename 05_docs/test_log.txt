@@ -567,3 +567,12 @@ ZIP SHA256: 05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458
 테스트 방법: 문서 규칙 변경만 수행. 실행 테스트 없음.
 결과: Codex may commit/push without asking each time when a checkpoint is useful. Protected file classes remain excluded by rule and .gitignore.
 남은 문제: 없음.
+
+2026-07-11
+작업: UI 원본 경로 정적 분석 및 Python 실행 환경 복구
+수정 파일: 05_docs/ui_analysis_2026-07-11.md, 05_docs/test_log.txt, 05_docs/codex_notes.txt, 05_docs/changelog.txt
+분석 대상: 00_original/arc.zip에서 읽기 전용으로 추출한 COMM.DAT, COMM.IMG, PSX.EXE 분석 사본
+테스트 방법: analyze_dialog_blocks.py의 COMM.DAT 단독 스캔, 과거 UI locator 코드열 6개 원형 검색, 02_scripts compileall
+결과: COMM.DAT 대사 후보 0개. 관찰된 UI 코드열은 COMM.DAT/COMM.IMG/PSX.EXE에 원형 그대로 존재하지 않음. Python 3.12.10 및 Pillow 12.3.0 복구 후 02_scripts compileall 통과.
+판정: UI 관찰 코드는 원문 바이트 시그니처가 아니라 렌더링 결과로 취급. UI는 실제 테이블/스크립트 출처를 식별하기 전 수정 금지.
+게임 데이터 변경: 없음. 원본 ZIP, 기준 패치, patch-only ZIP 변경 없음.

@@ -65,3 +65,10 @@ Git/project management notes
 - The remote main branch existed on 2026-07-09 and contained README.md.
 - Original game data, extracted game files, generated patch ZIPs, full image outputs, and third-party tool binaries must not be committed.
 - On 2026-07-09, AGENTS.md Git rules were updated so Codex may commit/push without asking each time when a checkpoint is useful, while still protecting ignored/original/generated game files.
+
+UI source analysis - 2026-07-11
+- Read-only copies of original COMM.DAT, COMM.IMG, and PSX.EXE were extracted for analysis under 01_work/analysis/ui_sources. The original archive was not modified.
+- analyze_dialog_blocks.py finds zero dialogue-block candidates in COMM.DAT. The story 17 00/19 00 candidate format must not be assumed for UI text.
+- The six earlier UI locator code sequences were not found verbatim in COMM.DAT, COMM.IMG, or PSX.EXE. They are rendered display observations, not direct byte patterns for patching.
+- UI/menu text source requires a separate table/script trace before any binary modification.
+- Python 3.12.10 and Pillow 12.3.0 are available for the current Windows user; 02_scripts compileall passed.

@@ -142,3 +142,8 @@
 2026-07-09
 - AGENTS.md Git rules updated: Codex may commit/push without asking each time when it judges the checkpoint is useful.
 - Safety condition retained: original game data, generated outputs, patch ZIPs, extracted binaries, tools, and .gitignore-excluded files must not be committed.
+
+2026-07-11
+- Added `05_docs/ui_analysis_2026-07-11.md` with the first static UI source analysis result.
+- Restored the current-user Python 3.12.10 and Pillow 12.3.0 environment; all `02_scripts` compile successfully.
+- No game binary, baseline patch, or patch-only ZIP was changed.
