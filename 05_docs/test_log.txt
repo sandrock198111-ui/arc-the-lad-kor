@@ -637,3 +637,20 @@ ZIP 내부: COMM.IMG, 1\S1041.DAT 두 파일만.
 출력: 03_output/story_house_dialogue_all_s1041_patch_only.zip
 출력 SHA256: 259E76890D25C4634D3389349C73E849B7F5DB5FCC01BC0A9133CE7FF8718B3B
 테스트: 사용자 원본 XML 패키징 후 스크린샷의 집안 대화 흐름 전체에서 일본어 잔여 없이 한글 압축 대사가 진행되는지 확인.
+
+2026-07-11
+작업: 최신 집안 패치가 화면에 반영되지 않는 원인 확정
+검증: 실제 패키징 폴더 E:/arc/out/1/S1041.DAT SHA256은 FC2CC7117082BC8805BE14B1E2A86BD839B198BB25074BB59DB4B106C02CFDE8로 최신 패치 파일과 일치. 0x48498도 98 A0 E6 01 D4 D8 DC 9C 90 94로 패치됨.
+검증: 새 E:/arc/build/arc1.bin 내부에서 원본 문장 패턴 42 31 4E 28 4D 4F 1C 61 2F 87 23 86 32 1F 37은 0회, 패치 패턴은 존재.
+검증: DuckStation 설정 SaveStateOnExit=true. 자동 재개 파일 HASH-DBF40602AD5CFDFC_resume.sav 생성 시각은 15:42로, 새 arc1.bin 생성 시각 16:34보다 이전.
+초기 판정: 이전 자동 재개 세이브스테이트가 옛 RAM/스크립트 상태를 복원했을 가능성을 제기함.
+정정: 사용자가 build 폴더의 새 CUE/BIN만 사용하고 완전 부팅으로 검수했음을 확인. 자동 재개 원인 판정은 취소한다. S1041은 디스크에 적용됐지만 해당 화면의 실제 호출 파일이 아니었던 것으로 재판정.
+
+2026-07-11
+작업: 집안 연속 9화면의 실제 후보를 D/SD011.DAT 9블록으로 재분리
+근거: 사용자 제공 화면 수 9개와 D/SD011.DAT의 미번역 대사 후보 수 9개가 일치. S1041 전체 패치가 새 부팅에서 화면을 바꾸지 못했으므로 S1041 호출 가정을 폐기.
+변경: D/SD011.DAT의 0x47900, 0x47958, 0x479E0, 0x47A66, 0x47AB8, 0x47B14, 0x47BAE, 0x47C0E, 0x47D78 총 9블록을 high-slot 압축 대사로 교체.
+검증: 9개 시작 위치 모두 98 A0 확인. 각 첫 00 00 경계 보존. D/SD011.DAT SHA256 9CDD6C82777A00BE5CB1466AF6DDFE461467F9FFC97D49304C92FC1EC856EE4F.
+출력: 03_output/story_house_sd011_all_dialogue_patch_only.zip
+출력 SHA256: ED4282E1C86D725A337CC152D5CAD9700C0CCC3FC35102AF5D3E1460C0E793D4
+ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.

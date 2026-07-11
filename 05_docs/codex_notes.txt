@@ -113,3 +113,15 @@ S1041 house dialogue batch - 2026-07-11
 - `story_house_dialogue_all_s1041_patch_only.zip` retains the 14-file house extension and replaces all 19 analyzed S1041 dialogue candidates with high-slot-only compressed Korean text.
 - Every candidate start was verified to begin with `98 A0` and every original first `00 00` boundary was verified intact inside the final ZIP.
 - ZIP SHA256: `259E76890D25C4634D3389349C73E849B7F5DB5FCC01BC0A9133CE7FF8718B3B`.
+
+DuckStation stale resume diagnosis - 2026-07-11 (retracted)
+- `E:/arc/out/1/S1041.DAT` exactly matches the latest patched S1041 hash and contains patched bytes at `0x48498`.
+- The newly built `E:/arc/build/arc1.bin` contains zero occurrences of the original screenshot byte pattern and does contain the patched patterns.
+- DuckStation had `SaveStateOnExit = true`, but the user confirmed testing only the newly built CUE/BIN with a full boot. Therefore stale resume was not the cause and this diagnosis is retracted.
+- Since patched S1041 bytes were present in both `out` and the new BIN but the screen remained unchanged, S1041 is not the runtime source for that displayed sequence.
+
+D/SD011 house dialogue batch - 2026-07-11
+- The nine supplied house screenshots align with the nine unpatched D/SD011 dialogue candidates.
+- `story_house_sd011_all_dialogue_patch_only.zip` replaces all nine candidates using high-slot-only compressed text while preserving all first `00 00` boundaries.
+- Patched D/SD011 SHA256: `9CDD6C82777A00BE5CB1466AF6DDFE461467F9FFC97D49304C92FC1EC856EE4F`.
+- ZIP SHA256: `ED4282E1C86D725A337CC152D5CAD9700C0CCC3FC35102AF5D3E1460C0E793D4`.

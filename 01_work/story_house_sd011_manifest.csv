@@ -1,2 +1,10 @@
 enabled,file,payload_start,text,notes
-1,D/SD011.DAT,0x47900,아크|조심하라,house dialogue controlled extension block 1 high-slot-only
+1,D/SD011.DAT,0x47900,아크|조심하라,house dialogue block 1 high-slot-only
+1,D/SD011.DAT,0x47958,아크|여기까지다,house dialogue block 2 high-slot-only
+1,D/SD011.DAT,0x479E0,아크|가라,house dialogue block 3 high-slot-only
+1,D/SD011.DAT,0x47A66,아크|뒤는 혼자 가라,house dialogue block 4 high-slot-only
+1,D/SD011.DAT,0x47AB8,아크|마을로 돌아가라,house dialogue block 5 high-slot-only
+1,D/SD011.DAT,0x47B14,아크|혼자 가라,house dialogue block 6 high-slot-only
+1,D/SD011.DAT,0x47BAE,아크|조심하거라,house dialogue block 7 high-slot-only
+1,D/SD011.DAT,0x47C0E,아크|마을로 가라,house dialogue block 8 high-slot-only
+1,D/SD011.DAT,0x47D78,아크|가라,house dialogue block 9 high-slot-only
