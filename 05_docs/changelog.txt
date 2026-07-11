@@ -153,3 +153,4 @@
 - User rejected the archived 2026-07-08 D-house ZIP as a discarded file. It is no longer a delivery candidate; no replacement patch has been released yet.
 - Created `story_s1041_ark_mother_new_patch_only.zip`: a new two-file controlled patch for the uniquely confirmed S1041 Ark portrait dialogue block.
 - Created `story_house_sd011_extend_patch_only.zip`: a 14-file house-candidate extension that adds one high-confidence D/SD011 dialogue block while preserving existing patch payloads.
+- Created `story_house_dialogue_all_s1041_patch_only.zip`: a 14-file house-dialogue batch replacing all 19 confirmed S1041 portrait-dialogue candidates with high-slot Korean text.

@@ -107,3 +107,9 @@ House candidate extension - 2026-07-11
 - Payload `98 A0 E6 01 A4 A8 AC 94` uses 8 of 27 bytes and preserves the `00 00` boundary at `0x4791B` and its following control bytes.
 - The file-to-current-screen relation is not yet runtime-confirmed; do not use this result as proof of a particular screenshot's source.
 - ZIP SHA256: `399818F25CF4F15A8959BC66D8AF81DF17B79E2617B2326CF9FC1E169A2C9973`.
+
+S1041 house dialogue batch - 2026-07-11
+- User supplied nine screenshots from one continuous mother/Ark portrait dialogue sequence. `1/S1041.DAT` is the confirmed source file for this sequence.
+- `story_house_dialogue_all_s1041_patch_only.zip` retains the 14-file house extension and replaces all 19 analyzed S1041 dialogue candidates with high-slot-only compressed Korean text.
+- Every candidate start was verified to begin with `98 A0` and every original first `00 00` boundary was verified intact inside the final ZIP.
+- ZIP SHA256: `259E76890D25C4634D3389349C73E849B7F5DB5FCC01BC0A9133CE7FF8718B3B`.
