@@ -162,3 +162,10 @@ Live S1031 duplicate-body proof - 2026-07-11
 - A body may be duplicated between source DATs. The blocked-screen body matched S1021 original, but S1021 was already patched in `out`; the built BIN retained the unpatched copy from S1031.
 - When an exact RAM body maps to an already patched file, search the current `out` tree and the built BIN for duplicate bodies before selecting the patch file.
 - The actual current blocking copy is S1031 `0x4787A`, with extended prefix bytes before `17 00 00 00`.
+
+DuckStation save-state source mapping - 2026-07-12
+- DuckStation `.sav` files carry a Zstandard state frame. In the analyzed slots, the decompressed state stores PS1 RAM at state offset `0x1262`; `PSX.EXE` begins at PS1 RAM offset `0x11B000`.
+- Slots 2-4 have an exact loaded-file fingerprint for `D/SD011.DAT` with `file 0x47800 -> PS1 RAM 0x117000`.
+- Exact live raw dialogue payloads in slots 2-4: D/SD011 `0x47A20-0x47A31` and `0x47C5A-0x47C94`. These were absent from the previous cumulative patch.
+- Slots 5-6 fingerprint as `1/S1041.DAT`, but every previously analyzed dialogue payload is already patched in saved RAM; do not infer a new S1041 target from the file fingerprint alone.
+- Slot 7 fingerprints as `1/S1051.DAT`; no current-text payload has yet been isolated, so do not patch S1051 by candidate count or proximity.

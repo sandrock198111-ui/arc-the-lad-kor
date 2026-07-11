@@ -959,3 +959,10 @@ story_test_23 S1072 안전 경계 기준
 - Block shape: `... 80 01 17 00 00 00 <payload> 00 00`; writable payload is `0x4787A-0x47882`, and the first boundary is `0x47883`.
 - Current cumulative patch-only output: `03_output/story_house_live_s1031_blocking_dialogue_patch_only.zip`.
 - ZIP has 16 game replacement files, no build report, and SHA256 `B76526B8498E06BC82F656186FE6566BED38DE8268686C875DE1E3F041D4E969`.
+
+2026-07-12 DuckStation save-state follow-up:
+- Slots 2-7 were decompressed from DuckStation Zstandard save states and their PS1 RAM was located by the loaded `PSX.EXE` image.
+- Slots 2-4 load `D/SD011.DAT`; two dialogue payloads were still byte-for-byte original in both live RAM and the previous cumulative ZIP: `0x47A20-0x47A31` and `0x47C5A-0x47C94`.
+- Slots 5-6 load `1/S1041.DAT`, but all previously analyzed dialogue candidates are already patched in their saved RAM. Slot 7 loads `1/S1051.DAT`; it needs a separate current-text-buffer proof before any edit.
+- Current cumulative patch-only output: `03_output/story_house_sd011_live_slots_2_to_4_patch_only.zip`.
+- ZIP has 16 game replacement files, no build report, and SHA256 `BED865D4587EE2A1D8A64414DCC4CDA608C63B06234D4165752329FD3C90F820`.

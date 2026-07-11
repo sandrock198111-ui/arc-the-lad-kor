@@ -700,3 +700,9 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Modified: payload `0x4787A-0x47882`; preserved prefix `00 00`, boundary `0x47883`, and the following 16 control bytes.
 - Archive verification: 16 game replacement files, no build report.
 - SHA256: `B76526B8498E06BC82F656186FE6566BED38DE8268686C875DE1E3F041D4E969`.
+2026-07-12 - DuckStation slots 2-7 targeted follow-up
+- Test method: decompressed DuckStation slots 2-7, located PS1 RAM from the `PSX.EXE` fingerprint, and compared loaded script bytes against original DATs and the latest 16-file patch-only ZIP.
+- Result: slots 2-4 loaded `D/SD011.DAT`; live RAM exactly matched original payloads `0x47A20-0x47A31` and `0x47C5A-0x47C94`. The prior ZIP retained both as original Japanese.
+- Change: patched only those two payloads using existing stable high-slot Korean glyphs. Their `00 00` boundaries at `0x47A32` and `0x47C95`, plus the following 16 control bytes, were verified unchanged.
+- Result: output ZIP has 16 game replacement files and no build report. `D/SD011.DAT` changed 77 bytes only; ZIP SHA256 `BED865D4587EE2A1D8A64414DCC4CDA608C63B06234D4165752329FD3C90F820`.
+- Remaining: slots 5-6 load S1041 and slot 7 loads S1051, but the saved RAM did not isolate an unpatched current-text payload. No speculative edit was made.

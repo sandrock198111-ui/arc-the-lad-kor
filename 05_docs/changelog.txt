@@ -182,3 +182,7 @@
 2026-07-11
 - Added live-confirmed `1/S1031.DAT:0x4787A` after finding the same original body in the built BIN and identifying S1031 as its unpatched copy.
 - Built `story_house_live_s1031_blocking_dialogue_patch_only.zip`.
+2026-07-12
+- Decompressed DuckStation save-state slots 2-7 and identified the loaded source files from PS1 RAM fingerprints.
+- Added two live-confirmed remaining `D/SD011.DAT` payloads at `0x47A20` and `0x47C5A` to the cumulative patch-only ZIP.
+- Built `story_house_sd011_live_slots_2_to_4_patch_only.zip`; only `D/SD011.DAT` differs from the prior cumulative ZIP.
