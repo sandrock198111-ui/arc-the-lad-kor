@@ -952,3 +952,10 @@ story_test_23 S1072 안전 경계 기준
 - Block shape: `29 00 01 00 7F 00 07 00 04 00 12 03 17 00 00 00 <payload> 00 00`; the writable payload is `0x47B60-0x47B7C` and the first boundary is `0x47B7D`.
 - Current cumulative patch-only output: `03_output/story_house_live_sd011_extended_dialogue_patch_only.zip`.
 - ZIP has 15 game replacement files, no build report, and SHA256 `AD87882881108519EA649F7F98298A4EC468D7F9ED0135DEC98504B51D2B06B0`.
+
+2026-07-11 live S1031 blocking-dialogue correction:
+- The current blocked-screen body was initially matched to S1021 because the byte sequence is duplicated. Image-wide verification showed S1021 was already patched in `out`, while the built BIN still contained one original sequence.
+- Searching `out` found the live copy in `1/S1031.DAT` at `0x4787A`; S1031 was absent from all earlier cumulative patch ZIPs.
+- Block shape: `... 80 01 17 00 00 00 <payload> 00 00`; writable payload is `0x4787A-0x47882`, and the first boundary is `0x47883`.
+- Current cumulative patch-only output: `03_output/story_house_live_s1031_blocking_dialogue_patch_only.zip`.
+- ZIP has 16 game replacement files, no build report, and SHA256 `B76526B8498E06BC82F656186FE6566BED38DE8268686C875DE1E3F041D4E969`.

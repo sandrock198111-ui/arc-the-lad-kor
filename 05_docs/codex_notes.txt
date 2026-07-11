@@ -157,3 +157,8 @@ Live D/SD011 extended-prefix proof - 2026-07-11
 - Changed-text buffer at PS1 RAM `0x116B60` matched D/SD011 `0x47B60` exactly for 29 bytes.
 - This block uses an extended pre-marker sequence before `17 00 00 00`; candidate scanners that only require a nearby `29 ... 7F` header will miss it.
 - Never infer the runtime file from candidate counts or short six-byte matches. Require an exact current-screen payload match before releasing a patch.
+
+Live S1031 duplicate-body proof - 2026-07-11
+- A body may be duplicated between source DATs. The blocked-screen body matched S1021 original, but S1021 was already patched in `out`; the built BIN retained the unpatched copy from S1031.
+- When an exact RAM body maps to an already patched file, search the current `out` tree and the built BIN for duplicate bodies before selecting the patch file.
+- The actual current blocking copy is S1031 `0x4787A`, with extended prefix bytes before `17 00 00 00`.

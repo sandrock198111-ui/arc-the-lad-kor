@@ -179,3 +179,6 @@
 - Retracted D/SD031 as the source of the target portrait screen.
 - Patched the live-RAM-confirmed extended-prefix block `D/SD011.DAT:0x47B60`.
 - Built `story_house_live_sd011_extended_dialogue_patch_only.zip`.
+2026-07-11
+- Added live-confirmed `1/S1031.DAT:0x4787A` after finding the same original body in the built BIN and identifying S1031 as its unpatched copy.
+- Built `story_house_live_s1031_blocking_dialogue_patch_only.zip`.

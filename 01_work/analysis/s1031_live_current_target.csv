@@ -1,0 +1,2 @@
+file,marker_offset,body_start,payload_start,end_exclusive,double_zero,marker,length,payload_capacity,linebreaks,header29_offset,confidence,prefix_kind,preserved_prefix_hex,control_after_hex,preview_hex
+1/S1031.DAT,0x47876,0x47878,0x4787A,0x47883,0x47883,0x17,11,9,0,0x47870,high,control_0000_extended,00 00,00 00 00 21 00 00 00 01 00 78 00 1B 00 01 00 00,DD 0E 3A 2D DF 61 DF 61 37

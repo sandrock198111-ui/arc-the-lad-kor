@@ -694,3 +694,9 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Modified: payload `0x47B60-0x47B7C`; preserved prefix `00 00`, boundary `0x47B7D`, and 16-byte following control sequence.
 - Archive verification: 15 game replacement files, no build report.
 - SHA256: `AD87882881108519EA649F7F98298A4EC468D7F9ED0135DEC98504B51D2B06B0`.
+2026-07-11 - live S1031 blocking dialogue
+- Evidence: first paused-screen RAM contained original body `DD 0E 3A 2D DF 61 DF 61 37`; current out S1021 was already patched but the built BIN still contained one original copy.
+- Source resolution: the unpatched live copy is `1/S1031.DAT:0x4787A`, not S1021. S1031 had not been included in earlier patch-only ZIPs.
+- Modified: payload `0x4787A-0x47882`; preserved prefix `00 00`, boundary `0x47883`, and the following 16 control bytes.
+- Archive verification: 16 game replacement files, no build report.
+- SHA256: `B76526B8498E06BC82F656186FE6566BED38DE8268686C875DE1E3F041D4E969`.
