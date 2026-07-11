@@ -169,3 +169,8 @@ DuckStation save-state source mapping - 2026-07-12
 - Exact live raw dialogue payloads in slots 2-4: D/SD011 `0x47A20-0x47A31` and `0x47C5A-0x47C94`. These were absent from the previous cumulative patch.
 - Slots 5-6 fingerprint as `1/S1041.DAT`, but every previously analyzed dialogue payload is already patched in saved RAM; do not infer a new S1041 target from the file fingerprint alone.
 - Slot 7 fingerprints as `1/S1051.DAT`; no current-text payload has yet been isolated, so do not patch S1051 by candidate count or proximity.
+
+Refreshed save-state patch presence - 2026-07-12
+- A newer slot 1 confirms the D/SD011 patch is active in emulated RAM, including the two newly added payloads at `0x47A20` and `0x47C5A`.
+- Newer slots 2 and 3 confirm all 29 analyzed S1041 payloads are active in emulated RAM.
+- Do not diagnose the remaining Japanese display as failed ZIP extraction, failed mkpsxiso inclusion, or stale save-state data. The next analysis target is the scene's unclassified display command/text representation.

@@ -186,3 +186,6 @@
 - Decompressed DuckStation save-state slots 2-7 and identified the loaded source files from PS1 RAM fingerprints.
 - Added two live-confirmed remaining `D/SD011.DAT` payloads at `0x47A20` and `0x47C5A` to the cumulative patch-only ZIP.
 - Built `story_house_sd011_live_slots_2_to_4_patch_only.zip`; only `D/SD011.DAT` differs from the prior cumulative ZIP.
+2026-07-12
+- Rechecked newly saved DuckStation slots 1-3 against the latest patch-only ZIP.
+- Confirmed all delivered D/SD011 and analyzed S1041 payloads are already present in the states; made no speculative binary edit.

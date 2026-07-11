@@ -966,3 +966,9 @@ story_test_23 S1072 안전 경계 기준
 - Slots 5-6 load `1/S1041.DAT`, but all previously analyzed dialogue candidates are already patched in their saved RAM. Slot 7 loads `1/S1051.DAT`; it needs a separate current-text-buffer proof before any edit.
 - Current cumulative patch-only output: `03_output/story_house_sd011_live_slots_2_to_4_patch_only.zip`.
 - ZIP has 16 game replacement files, no build report, and SHA256 `BED865D4587EE2A1D8A64414DCC4CDA608C63B06234D4165752329FD3C90F820`.
+
+2026-07-12 refreshed-slot verification:
+- The user re-saved slots 1-3 after applying the latest ZIP. Slot 1 loads D/SD011 and slots 2-3 load S1041.
+- Slot 1 RAM contains the new D/SD011 bytes at `0x47A20` and `0x47C5A` exactly as delivered. Slots 2-3 contain every previously analyzed S1041 dialogue payload in its patched form.
+- Therefore, Japanese text still visible in these states is not caused by the latest ZIP being absent or by a stale save state. It comes from an unclassified dialogue representation in the loaded scene data.
+- Further edits must locate the active display command/text buffer rather than add more 17/19-marker candidates.
