@@ -146,3 +146,8 @@ S1022 snow-sequence follow-up - 2026-07-11
 - After S1021 is exhausted, the same automatic sequence continues in S1022. The four S1022 `control_0000` candidates at `0x4789A, 0x479A2, 0x47A06, 0x47C0E` were previously unpatched.
 - DuckStation process restarts change its host address layout. Locate the actual PS1 RAM region by finding the active `PSX.EXE` code at RAM offset `0x11B000`; do not reuse a stale host address.
 - High-slot-only builds do not render fonts. `build_story_from_manifest.py` imports Pillow only when low-slot font rendering is actually invoked.
+
+D/SD031 prefixed dialogue form - 2026-07-11
+- Do not treat the count of unpatched candidates in a neighboring S file as source proof. The four-block S1022 inference did not affect the target screens.
+- D/SD031 contains high-header dialogue bodies shaped `29 00 00 00 7F 00 17 00 03/04 00 <visible text> 00 00`.
+- The `03 00` and `04 00` bytes are display prefixes and must be preserved; payload begins two bytes after the marker body start.

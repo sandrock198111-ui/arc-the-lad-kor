@@ -171,3 +171,7 @@
 - Added the four missed S1022 snow-sequence `control_0000` dialogue blocks.
 - Made Pillow loading lazy in `build_story_from_manifest.py` so high-slot-only patch builds do not require font-rendering dependencies.
 - Built `story_house_s1021_s1022_complete_dialogue_patch_only.zip`.
+2026-07-11
+- Retracted S1022 as the source of the four still-untranslated snow portrait screens.
+- Added a targeted D/SD031 manifest and analysis input for four `03 00`/`04 00` prefix dialogue bodies found in live RAM.
+- Built `story_house_d_sd031_snow_dialogue_patch_only.zip`.

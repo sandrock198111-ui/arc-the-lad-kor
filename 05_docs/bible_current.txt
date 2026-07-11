@@ -938,3 +938,10 @@ story_test_23 S1072 안전 경계 기준
 - The four supplied remaining snow screenshots align with the four unpatched `control_0000` candidates in `1/S1022.DAT`: `0x4789A, 0x479A2, 0x47A06, 0x47C0E`.
 - Current cumulative patch-only output: `03_output/story_house_s1021_s1022_complete_dialogue_patch_only.zip`.
 - ZIP has 14 game replacement files, no build report, and SHA256 `4DC24F0E7AC78C650AEB8203424E03B35E4ED87F50D60C07DBD1F80CAD008245`.
+
+2026-07-11 D/SD031 snow portrait correction:
+- The S1022 four-block patch did not change the supplied screens and is retracted as a runtime-source claim.
+- Live DuckStation RAM contained repeated exact original D/SD031 dialogue payloads. D/SD031 uses high-header dialogue bodies with `03 00` and `04 00` prefixes, a form omitted by the prior candidate scan.
+- Added four targeted D/SD031 payloads at `0x459FE, 0x45A66, 0x45AAA, 0x46190`, preserving each prefix and first `00 00` boundary.
+- Current cumulative patch-only output: `03_output/story_house_d_sd031_snow_dialogue_patch_only.zip`.
+- ZIP has 15 game replacement files, no build report, and SHA256 `5606849A32B142B6136351749DE3F01D466C55AD19325BAAFC19C712B3E53972`.

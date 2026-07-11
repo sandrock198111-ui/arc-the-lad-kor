@@ -680,3 +680,10 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Modified: `1/S1022.DAT` payloads `0x4789A, 0x479A2, 0x47A06, 0x47C0E`.
 - Build verification: four payload starts are Korean `98 A0`; four original `00 00` boundaries are preserved; final ZIP has 14 game replacement files and no build report.
 - SHA256: `4DC24F0E7AC78C650AEB8203424E03B35E4ED87F50D60C07DBD1F80CAD008245`.
+2026-07-11 - D/SD031 snow portrait correction
+- Result: the S1022 patch did not alter the four supplied screens; S1022 runtime-source inference was wrong.
+- Method: with DuckStation paused, reidentified PS1 RAM from PSX.EXE and scanned original dialogue payload fragments against RAM.
+- Evidence: unpatched D/SD031 payloads were repeatedly found in live RAM. The file contains `03 00` and `04 00` prefixed dialogue bodies missed by the prior scan rule.
+- Modified: D/SD031 payloads `0x459FE, 0x45A66, 0x45AAA, 0x46190`; preserved all target prefixes and first `00 00` boundaries.
+- Archive verification: 15 game replacement files, no build report.
+- SHA256: `5606849A32B142B6136351749DE3F01D466C55AD19325BAAFC19C712B3E53972`.
