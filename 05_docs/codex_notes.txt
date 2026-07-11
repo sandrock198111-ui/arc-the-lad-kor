@@ -132,3 +132,8 @@ S1021 live-runtime proof and control_0000 format - 2026-07-11
 - Recognize `control_0000` only when marker `0x17` is adjacent to a high-confidence `29 ... 7F` header (`header29 == marker_offset - 6`). This avoids broad speculative parsing.
 - The nine continuous house blocks begin at `0x4807A, 0x480D6, 0x48148, 0x48196, 0x481F0, 0x482A8, 0x48360, 0x483C6, 0x48496`.
 - S1041 and SD011 were patched and present in fresh builds but did not alter the screen; they must not be described as runtime-confirmed sources for this sequence.
+
+S1041 missing control_0000 batch - 2026-07-11
+- The first S1041 batch predated `control_0000` recognition, so it patched normal candidates but left ten valid S1041 dialogue payloads untouched.
+- Confirmed original bytes remained in the active output at `0x4794A, 0x47A12, 0x47C86, 0x47CD2, 0x47DD2, 0x47E22, 0x48008, 0x48142, 0x4827A, 0x483D2`.
+- Patch-only ZIP construction must exclude `BUILD_REPORT.txt`. Reports belong only under the temporary work directory; copying a base archive must skip old reports too.

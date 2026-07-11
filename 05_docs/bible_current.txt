@@ -918,3 +918,10 @@ story_test_23 S1072 안전 경계 기준
 - The target sequence is nine consecutive `control_0000` blocks in `1/S1021.DAT`, payload starts `0x4807A, 0x480D6, 0x48148, 0x48196, 0x481F0, 0x482A8, 0x48360, 0x483C6, 0x48496`.
 - Current test patch: `03_output/story_house_s1021_control0000_dialogue_patch_only.zip`.
 - ZIP SHA256: `52AB0E19842EC6BA717C31D06389B9A87C7A8FFD4638377A32F94DBBBC25C155`.
+
+2026-07-11 S1041 missing control_0000 dialogue completion:
+- The newly supplied house-exit and snow-sequence screenshots match the previously unpatched `control_0000` blocks in `1/S1041.DAT`.
+- Added only the ten missed S1041 blocks at `0x4794A, 0x47A12, 0x47C86, 0x47CD2, 0x47DD2, 0x47E22, 0x48008, 0x48142, 0x4827A, 0x483D2`.
+- Current cumulative patch-only output: `03_output/story_house_s1021_s1041_complete_dialogue_patch_only.zip`.
+- The ZIP contains 14 game replacement files and no build report or packaging output.
+- ZIP SHA256: `4E886782B611C8E466C86AA2065C6F63DA9C7A6B143C2CB06AA08CED4BB6B286`.

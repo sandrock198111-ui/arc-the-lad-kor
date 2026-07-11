@@ -661,3 +661,10 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Build verification: final ZIP has 15 entries; all nine target payloads start with high-slot Korean bytes; every original `00 00` boundary remains intact.
 - Packaging/game result: pending user mkpsxiso test.
 - SHA256: `52AB0E19842EC6BA717C31D06389B9A87C7A8FFD4638377A32F94DBBBC25C155`.
+2026-07-11 - S1041 missing control_0000 completion
+- Modified: ten missed `1/S1041.DAT` dialogue payloads in the cumulative patch ZIP.
+- Basis: `E:/arc/out/1/S1041.DAT` retained the ten `control_0000` payloads as original Japanese while earlier S1041 candidates were already patched.
+- Build verification: every target begins with stable high-slot Korean bytes and preserves its original first `00 00` boundary.
+- Archive verification: final ZIP contains exactly 14 game replacement files and no `BUILD_REPORT.txt`.
+- Packaging/game result: pending user original-XML packaging test.
+- SHA256: `4E886782B611C8E466C86AA2065C6F63DA9C7A6B143C2CB06AA08CED4BB6B286`.

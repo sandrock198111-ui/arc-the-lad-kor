@@ -160,3 +160,7 @@
 - Extended `analyze_dialog_blocks.py` to recognize high-confidence `17 00 00 00` dialogue blocks while preserving their `00 00` prefix.
 - Added `story_house_s1021_control0000_manifest.csv` for the nine live-RAM-confirmed S1021 house dialogue blocks.
 - Built patch-only `story_house_s1021_control0000_dialogue_patch_only.zip` from the latest cumulative 14-file patch.
+2026-07-11
+- Added the ten missed S1041 `control_0000` dialogue blocks to the cumulative house/snow patch.
+- Updated `build_story_from_manifest.py` so `BUILD_REPORT.txt` remains work metadata and is excluded from patch-only ZIPs.
+- Built `story_house_s1021_s1041_complete_dialogue_patch_only.zip` with 14 replacement files only.

@@ -315,6 +315,9 @@ def build(args: argparse.Namespace) -> None:
         with zipfile.ZipFile(args.output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as out_zip:
             copied = set()
             for info in base_zip.infolist():
+                # Reports are build metadata, never game replacement payloads.
+                if info.filename == "BUILD_REPORT.txt":
+                    continue
                 if info.filename in modified:
                     out_zip.writestr(info.filename, bytes(modified[info.filename]))
                     copied.add(info.filename)
@@ -323,7 +326,6 @@ def build(args: argparse.Namespace) -> None:
             for file, data in sorted(modified.items()):
                 if file not in copied:
                     out_zip.writestr(file, bytes(data))
-            out_zip.write(args.work / "BUILD_REPORT.txt", "BUILD_REPORT.txt")
 
     print(f"wrote {args.output}")
     print(f"sha256={digest_bytes(args.output.read_bytes())}")

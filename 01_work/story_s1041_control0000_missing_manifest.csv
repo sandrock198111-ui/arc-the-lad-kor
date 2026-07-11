@@ -1,0 +1,11 @@
+enabled,file,payload_start,text,notes
+1,1/S1041.DAT,0x4794A,아크|마,missing portrait control_0000 block 1 high-slot-only
+1,1/S1041.DAT,0x47A12,아크|조심,missing portrait control_0000 block 2 high-slot-only
+1,1/S1041.DAT,0x47C86,아크|조심하라,missing portrait control_0000 block 3 high-slot-only
+1,1/S1041.DAT,0x47CD2,아크|가라,missing portrait control_0000 block 4 high-slot-only
+1,1/S1041.DAT,0x47DD2,아크,missing portrait control_0000 block 5 high-slot-only
+1,1/S1041.DAT,0x47E22,아크|마을,missing portrait control_0000 block 6 high-slot-only
+1,1/S1041.DAT,0x48008,아크|돌아가라,missing portrait control_0000 block 7 high-slot-only
+1,1/S1041.DAT,0x48142,아크,missing portrait control_0000 block 8 high-slot-only
+1,1/S1041.DAT,0x4827A,가라,missing portrait control_0000 block 9 high-slot-only
+1,1/S1041.DAT,0x483D2,아크|조심하라,missing portrait control_0000 block 10 high-slot-only
