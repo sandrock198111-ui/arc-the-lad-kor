@@ -151,3 +151,9 @@ D/SD031 prefixed dialogue form - 2026-07-11
 - Do not treat the count of unpatched candidates in a neighboring S file as source proof. The four-block S1022 inference did not affect the target screens.
 - D/SD031 contains high-header dialogue bodies shaped `29 00 00 00 7F 00 17 00 03/04 00 <visible text> 00 00`.
 - The `03 00` and `04 00` bytes are display prefixes and must be preserved; payload begins two bytes after the marker body start.
+
+Live D/SD011 extended-prefix proof - 2026-07-11
+- The active portrait buffer can be isolated by comparing paused same-background RAM snapshots, even when animation creates many unrelated changed ranges.
+- Changed-text buffer at PS1 RAM `0x116B60` matched D/SD011 `0x47B60` exactly for 29 bytes.
+- This block uses an extended pre-marker sequence before `17 00 00 00`; candidate scanners that only require a nearby `29 ... 7F` header will miss it.
+- Never infer the runtime file from candidate counts or short six-byte matches. Require an exact current-screen payload match before releasing a patch.

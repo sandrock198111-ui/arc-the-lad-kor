@@ -1,0 +1,2 @@
+file,marker_offset,body_start,payload_start,end_exclusive,double_zero,marker,length,payload_capacity,linebreaks,header29_offset,confidence,prefix_kind,preserved_prefix_hex,control_after_hex,preview_hex
+D/SD011.DAT,0x47B5C,0x47B5E,0x47B60,0x47B7D,0x47B7D,0x17,31,29,2,0x47B50,high,control_0000_extended,00 00,00 00 00 07 00 00 00 D9 02 07 00 03 00 E3 02 21,41 1C 1F 1B 27 45 2F DD BC 59 3D 37 E4 1F E6 01 AD 2A 45 49 21 44 21 40 22 3D 37 E4 33

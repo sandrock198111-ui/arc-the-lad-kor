@@ -175,3 +175,7 @@
 - Retracted S1022 as the source of the four still-untranslated snow portrait screens.
 - Added a targeted D/SD031 manifest and analysis input for four `03 00`/`04 00` prefix dialogue bodies found in live RAM.
 - Built `story_house_d_sd031_snow_dialogue_patch_only.zip`.
+2026-07-11
+- Retracted D/SD031 as the source of the target portrait screen.
+- Patched the live-RAM-confirmed extended-prefix block `D/SD011.DAT:0x47B60`.
+- Built `story_house_live_sd011_extended_dialogue_patch_only.zip`.

@@ -945,3 +945,10 @@ story_test_23 S1072 안전 경계 기준
 - Added four targeted D/SD031 payloads at `0x459FE, 0x45A66, 0x45AAA, 0x46190`, preserving each prefix and first `00 00` boundary.
 - Current cumulative patch-only output: `03_output/story_house_d_sd031_snow_dialogue_patch_only.zip`.
 - ZIP has 15 game replacement files, no build report, and SHA256 `5606849A32B142B6136351749DE3F01D466C55AD19325BAAFC19C712B3E53972`.
+
+2026-07-11 live D/SD011 extended-prefix correction:
+- The D/SD031 patch did not alter the target screen and is retracted as a runtime-source claim.
+- Two same-background RAM snapshots exposed the actual changing Japanese text buffer. Its 29-byte body matched `D/SD011.DAT` exactly at `0x47B60`.
+- Block shape: `29 00 01 00 7F 00 07 00 04 00 12 03 17 00 00 00 <payload> 00 00`; the writable payload is `0x47B60-0x47B7C` and the first boundary is `0x47B7D`.
+- Current cumulative patch-only output: `03_output/story_house_live_sd011_extended_dialogue_patch_only.zip`.
+- ZIP has 15 game replacement files, no build report, and SHA256 `AD87882881108519EA649F7F98298A4EC468D7F9ED0135DEC98504B51D2B06B0`.
