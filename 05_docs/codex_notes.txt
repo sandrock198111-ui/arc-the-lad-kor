@@ -100,3 +100,10 @@ S1041 controlled patch - 2026-07-11
 - Payload is `98 A0 E6 01 A4 A8 AC 94` for `아크|조심하라`; 8 of 15 available payload bytes are used.
 - The first `00 00` boundary at `0x484A7` and the following control bytes were verified unchanged.
 - ZIP SHA256: `3D1C4AC81D236EE5F996879B0335151F25EB2B42970A88FFF8E4F63D22A74AFC`.
+
+House candidate extension - 2026-07-11
+- `story_house_sd011_extend_patch_only.zip` preserves the prior 13-file house candidate payload and adds `D/SD011.DAT` only, for 14 replacement files total.
+- The new block is `D/SD011.DAT` at `0x47900`, a high-confidence candidate with preserved `01 00` prefix before the writable payload.
+- Payload `98 A0 E6 01 A4 A8 AC 94` uses 8 of 27 bytes and preserves the `00 00` boundary at `0x4791B` and its following control bytes.
+- The file-to-current-screen relation is not yet runtime-confirmed; do not use this result as proof of a particular screenshot's source.
+- ZIP SHA256: `399818F25CF4F15A8959BC66D8AF81DF17B79E2617B2326CF9FC1E169A2C9973`.

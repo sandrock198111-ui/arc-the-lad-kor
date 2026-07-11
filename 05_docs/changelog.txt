@@ -152,3 +152,4 @@
 - Reclassified and removed the temporary CUE/BIN build after reviewing the original XML's required disc metadata. Delivery remains patch-only ZIPs; user packaging uses the original XML workflow.
 - User rejected the archived 2026-07-08 D-house ZIP as a discarded file. It is no longer a delivery candidate; no replacement patch has been released yet.
 - Created `story_s1041_ark_mother_new_patch_only.zip`: a new two-file controlled patch for the uniquely confirmed S1041 Ark portrait dialogue block.
+- Created `story_house_sd011_extend_patch_only.zip`: a 14-file house-candidate extension that adds one high-confidence D/SD011 dialogue block while preserving existing patch payloads.

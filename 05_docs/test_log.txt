@@ -619,3 +619,12 @@ CUE SHA256: 5AE351492EE1577852E7734BB82A7102D038C311887EEE778199DA7E7506D5CF
 출력 SHA256: 3D1C4AC81D236EE5F996879B0335151F25EB2B42970A88FFF8E4F63D22A74AFC
 ZIP 내부: COMM.IMG, 1\S1041.DAT 두 파일만.
 테스트: 사용자 원본 XML 패키징 후 해당 집 내부 Ark portrait 화면에서 "아크 / 조심하라"가 출력되는지 확인. 세이브스테이트 대신 콜드 부팅과 메모리카드 세이브 사용.
+
+2026-07-11
+작업: 집안 후보 D/SD011.DAT 첫 대사 블록 확장
+기준: story_bulk3_plus_d_house_patch_only.zip의 13파일 구성 유지 후 D/SD011.DAT 하나 추가.
+변경: D/SD011.DAT 0x47900-0x47907 = 98 A0 E6 01 A4 A8 AC 94 (아크|조심하라).
+검증: 분석 CSV high-confidence, payload 8/27 bytes. 0x4791B의 00 00 경계와 뒤 16바이트 제어부 보존. 최종 ZIP 파일 수 14개, 문서/리포트 파일 없음.
+출력: 03_output/story_house_sd011_extend_patch_only.zip
+출력 SHA256: 399818F25CF4F15A8959BC66D8AF81DF17B79E2617B2326CF9FC1E169A2C9973
+주의: D/SD011.DAT가 현재 화면의 실제 호출 파일인지는 DuckStation 실기 확인이 필요하므로, 집안 후보 확장 검증판으로 기록.
