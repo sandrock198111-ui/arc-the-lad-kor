@@ -601,4 +601,21 @@ CUE SHA256: 5AE351492EE1577852E7734BB82A7102D038C311887EEE778199DA7E7506D5CF
 분석: 원본 XML은 xa_edc, creation_date, default_attributes, XA/STR mixed 타입과 xa_attrib, dummy sector 등 디스크 메타데이터를 보존한다. 자동 package_patch_to_cue.py 생성 XML은 이 값을 완전 보존하지 못한다.
 판정: 자동 CUE/BIN 생성은 게임이 깨질 수 있으므로 배포/검수 기준으로 사용 금지. 사용자가 기존 XML 기반으로 직접 패키징한다.
 조치: Codex가 2026-07-11에 생성한 arc_the_lad_kor_2026-07-11_verified.cue/bin, 동일 내용 재압축 ZIP, 임시 package 작업 폴더를 삭제.
-현재 전달물: 03_output/story_bulk3_plus_d_house_patch_only.zip만 사용. SHA256 05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458.
+현재 전달물: 없음. 기존 D-house ZIP은 아래 사용자 폐기 판정으로 재배포 금지.
+
+2026-07-11
+작업: 사용자 폐기 판정 반영 및 Ark portrait 원문 재검색
+사용자 판정: story_bulk3_plus_d_house_patch_only.zip은 2026-07-08에 이미 폐기한 파일이므로 다시 전달하거나 기준으로 사용하지 않는다.
+분석: 스크린샷 원문 바이트 42 31 4E 28 4D 4F 1C 61 2F 87 23 86 32 1F 37을 원본 추출 DAT 전체에서 검색.
+결과: 1/S1041.DAT 0x48498 한 곳에서만 발견.
+판정: 다음 패치는 이 단일 확인 위치를 출발점으로 새로 만들며, 폐기된 D-house ZIP 또는 그 재압축본을 사용하지 않는다.
+
+2026-07-11
+작업: S1041 Ark portrait 화면 새 최소 patch-only 생성
+기준: 원본 1/S1041.DAT, story_test_18 검증 COMM.IMG. 폐기된 D-house ZIP 및 재압축본 미사용.
+변경: 1/S1041.DAT 0x48498-0x4849F에 98 A0 E6 01 A4 A8 AC 94 삽입 (아크|조심하라).
+검증: 분석 CSV high-confidence 블록, payload 8/15 bytes. 0x484A7의 00 00 종료 경계 및 16바이트 제어부 보존.
+출력: 03_output/story_s1041_ark_mother_new_patch_only.zip
+출력 SHA256: 3D1C4AC81D236EE5F996879B0335151F25EB2B42970A88FFF8E4F63D22A74AFC
+ZIP 내부: COMM.IMG, 1\S1041.DAT 두 파일만.
+테스트: 사용자 원본 XML 패키징 후 해당 집 내부 Ark portrait 화면에서 "아크 / 조심하라"가 출력되는지 확인. 세이브스테이트 대신 콜드 부팅과 메모리카드 세이브 사용.

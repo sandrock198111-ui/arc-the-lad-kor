@@ -21,14 +21,11 @@ Confirmed baselines
 - Bulk3 1/S1072.DAT SHA256:
   F03E67F9E5A00709CF6D06874B6F0B655FCEDCFA50155A6CE3C83874F5B84993
 
-Latest valid patch-only output
-- Latest D-house patch-only ZIP:
-  03_output/story_bulk3_plus_d_house_patch_only.zip
-- Repack verify ZIP:
-  03_output/story_bulk3_plus_d_house_repack_verify_patch_only.zip
-- Both D-house ZIPs have SHA256:
+Archived D-house patch-only output
+- `story_bulk3_plus_d_house_patch_only.zip` and its identical repack verify ZIP are archived/failed candidates. The user explicitly rejected them on 2026-07-11; do not use or redistribute them.
+- Both archived ZIPs have SHA256:
   05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458
-- The D-house ZIP contains exactly 13 game files and no reports/docs:
+- The archived D-house ZIP contains exactly 13 game files and no reports/docs:
   COMM.IMG,
   1/S1011.DAT,
   1/S1013.DAT,
@@ -42,9 +39,9 @@ Latest valid patch-only output
   1/S1072.DAT,
   D/SD012.DAT,
   D/SD013.DAT.
-- Patched D/SD012.DAT SHA256:
+- Archived D/SD012.DAT SHA256:
   8759EFD336CB76BD1D500753E791CE73765C4F01772E616B9C0EA380BA031E95
-- Patched D/SD013.DAT SHA256:
+- Archived D/SD013.DAT SHA256:
   B22A427AAB24A1EA65FD2A53675A63F093213277D8BCBF213BADF05E444E32E3
 
 Failed branches not to reuse as a base
@@ -90,4 +87,16 @@ Packaging policy correction - 2026-07-11
 - The user-provided original mkpsxiso XML preserves disc-specific metadata: `xa_edc`, `creation_date`, `default_attributes`, XA/STR `mixed` types and attributes, and trailing dummy sectors.
 - `package_patch_to_cue.py` does not preserve all of that metadata. Its generated CUE/BIN must not be used as a delivery or validation baseline, even if replacement payloads were copied correctly.
 - Codex must provide patch-only ZIPs only. The user will package through the original XML workflow and test in DuckStation.
-- The temporary `arc_the_lad_kor_2026-07-11_verified.cue/bin` and redundant repacked ZIP were deleted. The current patch-only delivery is `03_output/story_bulk3_plus_d_house_patch_only.zip`.
+- The temporary `arc_the_lad_kor_2026-07-11_verified.cue/bin` and redundant repacked ZIP were deleted. No current patch-only delivery is declared until a new, separately verified patch is built.
+
+User rejection and screen source confirmation - 2026-07-11
+- The user explicitly rejected the 2026-07-08 D-house ZIP as a long-discarded file. It must not be offered again.
+- The screenshot text pattern `42 31 4E 28 4D 4F 1C 61 2F 87 23 86 32 1F 37` occurs exactly once in the extracted original DAT set: `1/S1041.DAT` at `0x48498`.
+- A new patch for that screen must be a new branch with an actual runtime verification path, not a repack of the archived payload.
+
+S1041 controlled patch - 2026-07-11
+- `story_s1041_ark_mother_new_patch_only.zip` is a new two-file patch-only test, not a repack of archived D-house output.
+- It uses the unique confirmed source `1/S1041.DAT` at `0x48498` and the already verified story_test_18 COMM.IMG.
+- Payload is `98 A0 E6 01 A4 A8 AC 94` for `아크|조심하라`; 8 of 15 available payload bytes are used.
+- The first `00 00` boundary at `0x484A7` and the following control bytes were verified unchanged.
+- ZIP SHA256: `3D1C4AC81D236EE5F996879B0335151F25EB2B42970A88FFF8E4F63D22A74AFC`.
