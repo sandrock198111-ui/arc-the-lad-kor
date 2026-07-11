@@ -595,3 +595,10 @@ ZIP SHA256: 05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458
 BIN SHA256: 0A78608D91DFB93C8667DD4518A1B2B807C6ED32C7573D88075831789D4913B1
 CUE SHA256: 5AE351492EE1577852E7734BB82A7102D038C311887EEE778199DA7E7506D5CF
 실기 검증: DuckStation에서 새 CUE를 콜드 부팅하고 메모리카드 세이브를 불러 해당 집 장면을 확인해야 함. 세이브스테이트 로드는 사용하지 않음.
+
+2026-07-11
+작업: 사용자 제공 mkpsxiso XML 재검토 및 패키징 산출물 폐기
+분석: 원본 XML은 xa_edc, creation_date, default_attributes, XA/STR mixed 타입과 xa_attrib, dummy sector 등 디스크 메타데이터를 보존한다. 자동 package_patch_to_cue.py 생성 XML은 이 값을 완전 보존하지 못한다.
+판정: 자동 CUE/BIN 생성은 게임이 깨질 수 있으므로 배포/검수 기준으로 사용 금지. 사용자가 기존 XML 기반으로 직접 패키징한다.
+조치: Codex가 2026-07-11에 생성한 arc_the_lad_kor_2026-07-11_verified.cue/bin, 동일 내용 재압축 ZIP, 임시 package 작업 폴더를 삭제.
+현재 전달물: 03_output/story_bulk3_plus_d_house_patch_only.zip만 사용. SHA256 05B21B7C09983A7EEB9CE7F17E3525221CB07592633639E0DD9E2FFB9D866458.

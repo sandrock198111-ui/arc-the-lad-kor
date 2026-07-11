@@ -149,3 +149,4 @@
 - No game binary, baseline patch, or patch-only ZIP was changed.
 - Generated the verified 13-file distribution ZIP `03_output/arc_the_lad_kor_2026-07-11_patch_only.zip` from the latest D-house baseline.
 - Built `arc_the_lad_kor_2026-07-11_verified.cue/bin` from that 13-file ZIP and verified the packaged file payloads before emulator testing.
+- Reclassified and removed the temporary CUE/BIN build after reviewing the original XML's required disc metadata. Delivery remains patch-only ZIPs; user packaging uses the original XML workflow.

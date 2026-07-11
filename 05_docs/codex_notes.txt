@@ -85,3 +85,9 @@ Verified disc image - 2026-07-11
 - BIN SHA256: `0A78608D91DFB93C8667DD4518A1B2B807C6ED32C7573D88075831789D4913B1`.
 - CUE SHA256: `5AE351492EE1577852E7734BB82A7102D038C311887EEE778199DA7E7506D5CF`.
 - This confirms input file inclusion only; DuckStation cold-boot verification remains required for runtime behavior.
+
+Packaging policy correction - 2026-07-11
+- The user-provided original mkpsxiso XML preserves disc-specific metadata: `xa_edc`, `creation_date`, `default_attributes`, XA/STR `mixed` types and attributes, and trailing dummy sectors.
+- `package_patch_to_cue.py` does not preserve all of that metadata. Its generated CUE/BIN must not be used as a delivery or validation baseline, even if replacement payloads were copied correctly.
+- Codex must provide patch-only ZIPs only. The user will package through the original XML workflow and test in DuckStation.
+- The temporary `arc_the_lad_kor_2026-07-11_verified.cue/bin` and redundant repacked ZIP were deleted. The current patch-only delivery is `03_output/story_bulk3_plus_d_house_patch_only.zip`.
