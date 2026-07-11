@@ -978,3 +978,8 @@ story_test_23 S1072 안전 경계 기준
 - The writable payload has 25 bytes, starts at `0x47D58`, and ends before the preserved `00 00` boundary at `0x47D71`.
 - Current cumulative patch-only output: `03_output/story_house_sd011_live_slots_1_to_4_patch_only.zip`.
 - ZIP has 16 game replacement files, no build report, and SHA256 `996EDC1FAFC71E156B0A1F44A793AA12B3DBEB2592A38A4EC1F39B7B52240151`.
+
+2026-07-12 GDB tracing rule:
+- DuckStation pauses emulation when a GDB client attaches. Do not reconnect for individual commands.
+- The project now has `02_scripts/duckstation_gdb_watch.py` for the required persistent-session pattern: set a write watchpoint, continue over the same connection, capture the stop state, then resume before disconnecting.
+- A target save state must be loaded and visually confirmed before the one GDB attachment. Use save-state/RAM comparison for non-pausing discovery; use GDB only to trace the writer once the destination buffer is known.

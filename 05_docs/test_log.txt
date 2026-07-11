@@ -716,3 +716,8 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Source: `D/SD011.DAT` extended form `17 00 00 00 <payload> 00 00`; payload `0x47D58-0x47D70`, boundary `0x47D71`.
 - Change: inserted stable high-slot Korean `아크|조심하거라` in the 25-byte payload and preserved the `00 00` boundary.
 - Result: new ZIP retains 16 game replacement files, contains no build report, and differs from the prior ZIP only in `D/SD011.DAT`. SHA256 `996EDC1FAFC71E156B0A1F44A793AA12B3DBEB2592A38A4EC1F39B7B52240151`.
+2026-07-12 - GDB trace preparation
+- DuckStation local GDB server was confirmed to listen on `127.0.0.1:2345` when enabled.
+- Confirmed behavior: a GDB client connection stops emulation immediately. Reconnecting for each command repeatedly stops the game and is invalid for live trace work.
+- Added and compiled `duckstation_gdb_watch.py`. It keeps one socket open from watchpoint setup through stop capture, then sends a final continue packet before closing.
+- The temporary GDB setting was returned to disabled after the protocol probe. Do not attach a GDB client before the user has loaded the target state normally.

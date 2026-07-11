@@ -192,3 +192,6 @@
 2026-07-12
 - Added the live slot-1 D/SD011 extended-form payload at `0x47D58` after confirming it remained original in the post-patch save state.
 - Built `story_house_sd011_live_slots_1_to_4_patch_only.zip`.
+2026-07-12
+- Added `02_scripts/duckstation_gdb_watch.py`, a one-connection GDB watchpoint client for future live dialogue-source tracing.
+- The script configures a watchpoint, resumes on the same socket, records the stop state, and sends a final resume packet before it disconnects.
