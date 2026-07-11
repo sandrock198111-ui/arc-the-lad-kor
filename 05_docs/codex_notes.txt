@@ -78,3 +78,10 @@ Patch packaging verification - 2026-07-11
 - ZIP SHA256: `16DE31CB3E406A946670AB5BCF71362BF1256A00E052A2E999F4E440945C5A07`.
 - Its `1/S1041.DAT` has `98 A0 E6 01 90 94 9C ...` at 0x48498, not the original `42 31 4E ...` pattern linked to the older mixed-text screenshot.
 - A screen showing `올さん...` after packaging therefore proves a missing/stale `1/S1041.DAT` in the built image, not a new failure of this ZIP's payload.
+
+Verified disc image - 2026-07-11
+- `03_output/arc_the_lad_kor_2026-07-11_verified.cue` and `.bin` were built from the verified 13-file ZIP with mkpsxiso.
+- The package work tree contains matching payload hashes for COMM.IMG, 1/S1041.DAT, D/SD012.DAT, and D/SD013.DAT.
+- BIN SHA256: `0A78608D91DFB93C8667DD4518A1B2B807C6ED32C7573D88075831789D4913B1`.
+- CUE SHA256: `5AE351492EE1577852E7734BB82A7102D038C311887EEE778199DA7E7506D5CF`.
+- This confirms input file inclusion only; DuckStation cold-boot verification remains required for runtime behavior.
