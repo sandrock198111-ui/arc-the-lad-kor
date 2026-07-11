@@ -72,3 +72,9 @@ UI source analysis - 2026-07-11
 - The six earlier UI locator code sequences were not found verbatim in COMM.DAT, COMM.IMG, or PSX.EXE. They are rendered display observations, not direct byte patterns for patching.
 - UI/menu text source requires a separate table/script trace before any binary modification.
 - Python 3.12.10 and Pillow 12.3.0 are available for the current Windows user; 02_scripts compileall passed.
+
+Patch packaging verification - 2026-07-11
+- `03_output/arc_the_lad_kor_2026-07-11_patch_only.zip` contains exactly the latest 13 replacement game files and no docs/reports.
+- ZIP SHA256: `16DE31CB3E406A946670AB5BCF71362BF1256A00E052A2E999F4E440945C5A07`.
+- Its `1/S1041.DAT` has `98 A0 E6 01 90 94 9C ...` at 0x48498, not the original `42 31 4E ...` pattern linked to the older mixed-text screenshot.
+- A screen showing `올さん...` after packaging therefore proves a missing/stale `1/S1041.DAT` in the built image, not a new failure of this ZIP's payload.
