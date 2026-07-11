@@ -141,3 +141,8 @@ S1041 missing control_0000 batch - 2026-07-11
 S1021 remaining control_0000 blocks - 2026-07-11
 - Live RAM during the untranslated mother dialogue matched `E:/arc/out/1/S1021.DAT` over the checked S1021 text range, including the prior nine patched blocks.
 - Do not infer that the whole continuous story sequence is covered just because one run of adjacent blocks is patched. S1021 contains ten additional `control_0000` dialogue blocks at `0x479AA, 0x47B34, 0x47BD8, 0x47D46, 0x48A4E, 0x48AC6, 0x48B14, 0x48C34, 0x48C88, 0x48CF8`.
+
+S1022 snow-sequence follow-up - 2026-07-11
+- After S1021 is exhausted, the same automatic sequence continues in S1022. The four S1022 `control_0000` candidates at `0x4789A, 0x479A2, 0x47A06, 0x47C0E` were previously unpatched.
+- DuckStation process restarts change its host address layout. Locate the actual PS1 RAM region by finding the active `PSX.EXE` code at RAM offset `0x11B000`; do not reuse a stale host address.
+- High-slot-only builds do not render fonts. `build_story_from_manifest.py` imports Pillow only when low-slot font rendering is actually invoked.

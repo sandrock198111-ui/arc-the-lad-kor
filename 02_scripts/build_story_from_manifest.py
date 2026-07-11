@@ -8,7 +8,6 @@ import zipfile
 from dataclasses import dataclass
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -198,6 +197,8 @@ def apply_patch_row(data: bytearray, row: PatchRow, block: BlockInfo, payload: b
 
 
 def render_glyph(char: str) -> Image.Image:
+    from PIL import Image, ImageDraw, ImageFont
+
     font = ImageFont.truetype(str(FONT_PATH), size=FONT_SIZE)
     canvas = Image.new("L", (24, 24), 0)
     draw = ImageDraw.Draw(canvas)

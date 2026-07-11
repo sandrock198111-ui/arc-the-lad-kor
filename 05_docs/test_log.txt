@@ -674,3 +674,9 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Cause: ten valid S1021 control_0000 blocks were still original and were outside the earlier nine-block run.
 - Build verification: all ten starts contain stable Korean bytes; all ten original `00 00` boundaries remain intact; final ZIP has 14 game files and no build report.
 - SHA256: `793A39FB422E2C0F51429808E1F2613EEFCEF457A64FB07FF9ECB4DE0703AD30`.
+2026-07-11 - S1022 snow sequence completion
+- Trigger: user paused DuckStation on remaining automatic snow dialogue screens.
+- Source identification: active emulator was restarted, so the PS1 RAM address was found by locating `PSX.EXE` at offset `0x11B000`; S1022 has exactly four remaining analyzed control_0000 blocks matching the supplied four-screen sequence.
+- Modified: `1/S1022.DAT` payloads `0x4789A, 0x479A2, 0x47A06, 0x47C0E`.
+- Build verification: four payload starts are Korean `98 A0`; four original `00 00` boundaries are preserved; final ZIP has 14 game replacement files and no build report.
+- SHA256: `4DC24F0E7AC78C650AEB8203424E03B35E4ED87F50D60C07DBD1F80CAD008245`.

@@ -167,3 +167,7 @@
 2026-07-11
 - Added the ten remaining S1021 `control_0000` house/snow dialogue blocks after confirming the active RAM matched the patched S1021 file.
 - Built cumulative patch-only `story_house_s1021_all_control0000_dialogue_patch_only.zip`.
+2026-07-11
+- Added the four missed S1022 snow-sequence `control_0000` dialogue blocks.
+- Made Pillow loading lazy in `build_story_from_manifest.py` so high-slot-only patch builds do not require font-rendering dependencies.
+- Built `story_house_s1021_s1022_complete_dialogue_patch_only.zip`.

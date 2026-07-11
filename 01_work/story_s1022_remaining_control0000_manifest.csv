@@ -1,0 +1,5 @@
+enabled,file,payload_start,text,notes
+1,1/S1022.DAT,0x4789A,아크|조심하라,snow sequence missed control_0000 block 1 high-slot-only
+1,1/S1022.DAT,0x479A2,아크|마을로 돌아가라,snow sequence missed control_0000 block 2 high-slot-only
+1,1/S1022.DAT,0x47A06,아크|여기까지다,snow sequence missed control_0000 block 3 high-slot-only
+1,1/S1022.DAT,0x47C0E,아크|가라,snow sequence missed control_0000 block 4 high-slot-only
