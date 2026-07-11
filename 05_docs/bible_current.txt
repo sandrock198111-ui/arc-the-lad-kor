@@ -925,3 +925,10 @@ story_test_23 S1072 안전 경계 기준
 - Current cumulative patch-only output: `03_output/story_house_s1021_s1041_complete_dialogue_patch_only.zip`.
 - The ZIP contains 14 game replacement files and no build report or packaging output.
 - ZIP SHA256: `4E886782B611C8E466C86AA2065C6F63DA9C7A6B143C2CB06AA08CED4BB6B286`.
+
+2026-07-11 S1021 remaining control_0000 completion:
+- While the user displayed the still-untranslated mother dialogue, live DuckStation RAM matched the patched `E:/arc/out/1/S1021.DAT` across the checked text region.
+- The failure was not packaging. The earlier S1021 patch covered one nine-block run but left ten other valid `control_0000` blocks original.
+- Added the remaining S1021 blocks at `0x479AA, 0x47B34, 0x47BD8, 0x47D46, 0x48A4E, 0x48AC6, 0x48B14, 0x48C34, 0x48C88, 0x48CF8`.
+- Current cumulative patch-only output: `03_output/story_house_s1021_all_control0000_dialogue_patch_only.zip`.
+- ZIP SHA256: `793A39FB422E2C0F51429808E1F2613EEFCEF457A64FB07FF9ECB4DE0703AD30`.

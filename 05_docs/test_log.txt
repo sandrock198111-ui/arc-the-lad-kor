@@ -668,3 +668,9 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Archive verification: final ZIP contains exactly 14 game replacement files and no `BUILD_REPORT.txt`.
 - Packaging/game result: pending user original-XML packaging test.
 - SHA256: `4E886782B611C8E466C86AA2065C6F63DA9C7A6B143C2CB06AA08CED4BB6B286`.
+2026-07-11 - S1021 remaining control_0000 completion
+- Trigger: user showed untranslated mother dialogue while DuckStation was running.
+- Method: compared the active RAM region against original and output S1021 data; the tested range matched output S1021 completely.
+- Cause: ten valid S1021 control_0000 blocks were still original and were outside the earlier nine-block run.
+- Build verification: all ten starts contain stable Korean bytes; all ten original `00 00` boundaries remain intact; final ZIP has 14 game files and no build report.
+- SHA256: `793A39FB422E2C0F51429808E1F2613EEFCEF457A64FB07FF9ECB4DE0703AD30`.

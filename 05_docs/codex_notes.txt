@@ -137,3 +137,7 @@ S1041 missing control_0000 batch - 2026-07-11
 - The first S1041 batch predated `control_0000` recognition, so it patched normal candidates but left ten valid S1041 dialogue payloads untouched.
 - Confirmed original bytes remained in the active output at `0x4794A, 0x47A12, 0x47C86, 0x47CD2, 0x47DD2, 0x47E22, 0x48008, 0x48142, 0x4827A, 0x483D2`.
 - Patch-only ZIP construction must exclude `BUILD_REPORT.txt`. Reports belong only under the temporary work directory; copying a base archive must skip old reports too.
+
+S1021 remaining control_0000 blocks - 2026-07-11
+- Live RAM during the untranslated mother dialogue matched `E:/arc/out/1/S1021.DAT` over the checked S1021 text range, including the prior nine patched blocks.
+- Do not infer that the whole continuous story sequence is covered just because one run of adjacent blocks is patched. S1021 contains ten additional `control_0000` dialogue blocks at `0x479AA, 0x47B34, 0x47BD8, 0x47D46, 0x48A4E, 0x48AC6, 0x48B14, 0x48C34, 0x48C88, 0x48CF8`.
