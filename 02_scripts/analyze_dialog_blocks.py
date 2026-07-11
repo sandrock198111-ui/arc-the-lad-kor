@@ -70,14 +70,32 @@ def find_header29(data: bytes, marker_offset: int) -> int | None:
     return None
 
 
-def split_payload_start(body: bytes, body_start: int) -> tuple[int, str, str]:
+def split_payload_start(
+    data: bytes,
+    body_start: int,
+    marker: int,
+    marker_offset: int,
+    header29: int | None,
+) -> tuple[int, str, str]:
     # Observed in S1011 and several one-line portrait blocks:
     #   17/19 00 01 00 <visible text> 00 00 ...
     # The 01 00 prefix behaves like an internal display/control prefix and was
     # not overwritten by the successful S1011 patches. Speaker-name bytes such
     # as DD 0B D4 25 are visible text and must stay inside the payload region.
-    if body.startswith(b"\x01\x00"):
-        return body_start + 2, "control_0100", body[:2].hex(" ")
+    prefix = data[body_start:body_start + 2]
+    if prefix == b"\x01\x00":
+        return body_start + 2, "control_0100", prefix.hex(" ")
+    # S1021 uses a second confirmed form for auto/portrait dialogue:
+    #   29 00 00 00 7F 00 17 00 00 00 <visible text> 00 00
+    # The first 00 00 belongs to the display command and must be preserved.
+    # Restrict this rule to an immediately adjacent high-confidence header so
+    # genuinely empty bodies do not become false-positive text blocks.
+    if (
+        prefix == b"\x00\x00"
+        and marker == 0x17
+        and header29 == marker_offset - 6
+    ):
+        return body_start + 2, "control_0000", prefix.hex(" ")
     return body_start, "none", ""
 
 
@@ -93,17 +111,23 @@ def scan_file(path: Path) -> list[Candidate]:
         body_start = marker_offset + 2
         if body_start in seen_starts:
             continue
-        double_zero = first_double_zero(data, body_start)
+        header29 = find_header29(data, marker_offset)
+        payload_start, prefix_kind, preserved_prefix_hex = split_payload_start(
+            data,
+            body_start,
+            marker,
+            marker_offset,
+            header29,
+        )
+        double_zero = first_double_zero(data, payload_start)
         if double_zero is None:
             continue
         length = double_zero - body_start
         if not (4 <= length <= 0x100):
             continue
-        body = data[body_start:double_zero]
+        body = data[payload_start:double_zero]
         if not has_text_shape(body):
             continue
-        payload_start, prefix_kind, preserved_prefix_hex = split_payload_start(body, body_start)
-        header29 = find_header29(data, marker_offset)
         linebreaks = body.count(b"\xE6\x01")
         confidence = "high" if header29 is not None else "medium"
         if linebreaks >= 1:

@@ -654,3 +654,10 @@ ZIP 내부: COMM.IMG, 1\S1041.DAT 두 파일만.
 출력: 03_output/story_house_sd011_all_dialogue_patch_only.zip
 출력 SHA256: ED4282E1C86D725A337CC152D5CAD9700C0CCC3FC35102AF5D3E1460C0E793D4
 ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
+2026-07-11 - S1021 house dialogue patch-only build
+- Modified: `1/S1021.DAT` inside the cumulative patch ZIP; analyzer and manifest sources.
+- Method: matched live DuckStation PS1 RAM to DAT fingerprints and then byte-compared the active RAM window against `1/S1021.DAT`.
+- Result: 305115/305152 bytes matched (99.9879%), proving S1021 is active for the scene.
+- Build verification: final ZIP has 15 entries; all nine target payloads start with high-slot Korean bytes; every original `00 00` boundary remains intact.
+- Packaging/game result: pending user mkpsxiso test.
+- SHA256: `52AB0E19842EC6BA717C31D06389B9A87C7A8FFD4638377A32F94DBBBC25C155`.

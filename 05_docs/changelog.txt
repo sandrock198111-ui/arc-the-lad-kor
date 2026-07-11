@@ -156,3 +156,7 @@
 - Created `story_house_dialogue_all_s1041_patch_only.zip`: a 14-file house-dialogue batch replacing all 19 confirmed S1041 portrait-dialogue candidates with high-slot Korean text.
 - Confirmed the unchanged screenshot was caused by DuckStation loading a pre-patch automatic resume state; the out files and newly built BIN both contain the intended S1041 patch.
 - Retracted the stale-resume diagnosis after the user confirmed a full boot from the new build. Reclassified S1041 as a non-runtime source for this screen and created `story_house_sd011_all_dialogue_patch_only.zip` for all nine D/SD011 dialogue candidates.
+2026-07-11
+- Extended `analyze_dialog_blocks.py` to recognize high-confidence `17 00 00 00` dialogue blocks while preserving their `00 00` prefix.
+- Added `story_house_s1021_control0000_manifest.csv` for the nine live-RAM-confirmed S1021 house dialogue blocks.
+- Built patch-only `story_house_s1021_control0000_dialogue_patch_only.zip` from the latest cumulative 14-file patch.

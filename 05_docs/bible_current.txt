@@ -911,3 +911,10 @@ story_test_23 S1072 안전 경계 기준
 - 사용자 스크린샷 9개와 D/SD011.DAT의 미번역 대사 후보 9개가 일치해 SD011 전체 후보를 새 검증 대상으로 채택했다.
 - 출력: 03_output/story_house_sd011_all_dialogue_patch_only.zip
 - D/SD011.DAT 9블록 전체 high-slot 교체, 각 00 00 경계와 제어부 보존 확인.
+2026-07-11 S1021 live-runtime house dialogue correction:
+- DuckStation PS1 RAM was compared directly with extracted DAT files during the reported house scene.
+- Active RAM matched `1/S1021.DAT` for 305115/305152 bytes (99.9879%); the file-to-RAM offset relation was `RAM = file + 0xCF000`.
+- The unchanged screen was therefore not a user build or boot problem. The earlier S1041 and SD011 runtime-source assumptions were wrong.
+- The target sequence is nine consecutive `control_0000` blocks in `1/S1021.DAT`, payload starts `0x4807A, 0x480D6, 0x48148, 0x48196, 0x481F0, 0x482A8, 0x48360, 0x483C6, 0x48496`.
+- Current test patch: `03_output/story_house_s1021_control0000_dialogue_patch_only.zip`.
+- ZIP SHA256: `52AB0E19842EC6BA717C31D06389B9A87C7A8FFD4638377A32F94DBBBC25C155`.

@@ -125,3 +125,10 @@ D/SD011 house dialogue batch - 2026-07-11
 - `story_house_sd011_all_dialogue_patch_only.zip` replaces all nine candidates using high-slot-only compressed text while preserving all first `00 00` boundaries.
 - Patched D/SD011 SHA256: `9CDD6C82777A00BE5CB1466AF6DDFE461467F9FFC97D49304C92FC1EC856EE4F`.
 - ZIP SHA256: `ED4282E1C86D725A337CC152D5CAD9700C0CCC3FC35102AF5D3E1460C0E793D4`.
+S1021 live-runtime proof and control_0000 format - 2026-07-11
+- During the house scene, DuckStation mapped PS1 RAM matched `1/S1021.DAT` at relation `RAM offset = file offset + 0xCF000`.
+- Exact comparison was 305115/305152 bytes (99.9879%); four small runtime-mutated ranges account for the difference.
+- Existing scanning missed blocks shaped `29 00 00 00 7F 00 17 00 00 00 <visible text> 00 00` because it treated the prefix `00 00` as the end boundary.
+- Recognize `control_0000` only when marker `0x17` is adjacent to a high-confidence `29 ... 7F` header (`header29 == marker_offset - 6`). This avoids broad speculative parsing.
+- The nine continuous house blocks begin at `0x4807A, 0x480D6, 0x48148, 0x48196, 0x481F0, 0x482A8, 0x48360, 0x483C6, 0x48496`.
+- S1041 and SD011 were patched and present in fresh builds but did not alter the screen; they must not be described as runtime-confirmed sources for this sequence.
