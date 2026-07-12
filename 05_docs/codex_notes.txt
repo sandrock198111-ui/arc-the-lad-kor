@@ -208,3 +208,19 @@ S1041 static-path rejection - 2026-07-12
 - `1/S1041.IMG` uses the `pBAV` PS1 VAB header and stores audio-bank data, not graphical texture or a scene-local font.
 - S1041's remaining text-like terminated byte runs were checked against the active patched file. Every actual dialogue run in the portrait range is already patched; no extra static payload exists for the two remaining screens.
 - Do not modify S1041.IMG or add S1041 DAT candidates without a new source proof.
+
+S1041 valid three-byte dialogue bodies - 2026-07-12
+- Valid dialogue payloads can be only 3 bytes long. Do not impose a minimum body length above 3 when a `17 00 00 00` marker, a terminating `00 00`, a runtime RAM match, and a matching screen transition are all present.
+- Confirmed payloads: `1/S1041.DAT:0x47EA4-0x47EA6` for `誰？`, and `1/S1041.DAT:0x480C0-0x480C2` for `なぜ？`.
+- Both original bodies end in byte `0x3C`, which is the verified question-mark glyph in this dialogue path and can be preserved in Korean replacements.
+- Save-state thumbnails are the first Zstandard frame and decode as 256x192 BGRA. The last Zstandard frame is the full emulator state.
+
+Scene-transition card confirmation - 2026-07-12
+- Fresh DuckStation slot 9 thumbnail displays `それから数日後` ("Several days later"). It is a scene-transition card, not portrait dialogue or battle UI.
+- Slot 9 RAM does not contain the current `1/S1051.DAT` dialogue candidates at the normal `file + 0xCF800` mapping. Do not patch S1051 based on this card.
+- Continue to the first following story dialogue and capture a new state before selecting a game-file source.
+
+S2011 city-scene batch - 2026-07-12
+- Latest city slots are ordered as slot 10, then slots 1-6. They correspond to a seven-screen city dialogue sequence; slots 7, 8, and 9 are separate guard and throne-room scenes.
+- The city batch targets seven bounded `21/S2011.DAT` bodies at `0x4791A`, `0x47AAA`, `0x47AF6`, `0x47BAC`, `0x47C0C`, `0x47C68`, and `0x47CC0`.
+- Short payloads remain valid targets when their expected source bytes and the first following `00 00` boundary are verified. Do not impose a minimum text length.

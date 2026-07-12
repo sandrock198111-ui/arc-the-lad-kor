@@ -998,3 +998,10 @@ story_test_23 S1072 안전 경계 기준
 - `1/S1041.IMG` begins with `pBAV` and is a PS1 VAB sound bank, not scene graphics or a font texture. It cannot overlay `COMM.IMG` glyph tiles.
 - A full S1041 scan for unmodified text-like `00 00`-terminated payloads found no additional valid dialogue body. The known text candidates from `0x4794A` through `0x48498` are already patched.
 - Do not build an S1041.IMG or additional S1041.DAT patch for the two remaining screens. Their source remains outside the currently identified static story payloads.
+
+2026-07-12 S1041 short-question completion:
+- Fresh before/after states identify two previously omitted 3-byte `17 00 00 00` payloads in loaded S1041 RAM: file `0x47EA4` (`誰？`) and `0x480C0` (`なぜ？`).
+- The prior analyzer excluded these bodies because they were only 3 bytes long. They are valid dialogue payloads with preserved `00 00` boundaries.
+- Current cumulative patch-only output: `03_output/story_s1041_short_questions_patch_only.zip`.
+- The ZIP contains 16 replacement game files, no build report, and differs from the prior cumulative ZIP only in 5 bytes of `1/S1041.DAT`.
+- SHA256: `20B1AC49EF84777861723F75F9E03DB7B6B6E172023744D4BEB0C5C84AF15FBA`.

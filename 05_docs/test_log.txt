@@ -739,3 +739,20 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - `1/S1041.IMG` header is `pBAV` (PS1 VAB sound bank), so it is not a scene image or font-overlay source.
 - A whole-file scan of original versus patched S1041 text-like terminated runs found all valid dialogue bodies already modified between `0x4794A` and `0x48498`; no new unpatched candidate was found.
 - Result: no patch ZIP was created. This closes the S1041 DAT/IMG static path for the two remaining screens.
+2026-07-12 - S1041 three-byte question blocks
+- Fresh slot 7 captures the preceding Korean `아크` line; fresh slot 6 captures the following Japanese `誰？` line. Their script pointers move from `0x80116E6F` to `0x80116EA7`.
+- Whole-RAM dialogue scanning found two unpatched S1041 bodies at RAM `0x1176A4` and `0x1178C0`, mapping by `RAM = file + 0xCF800` to file offsets `0x47EA4` and `0x480C0`.
+- Patched `0x47EA4` from `DD D3 3C` to `98 A0 3C` (`아크?`) and `0x480C0` from `1D A7 3C` to `C8 3C 9C` (`예?`). Both following `00 00` boundaries were preserved.
+- Verification: 16 ZIP entries, no build report, only `1/S1041.DAT` changed, and exactly 5 bytes differ from the previous cumulative ZIP.
+- Output SHA256: `20B1AC49EF84777861723F75F9E03DB7B6B6E172023744D4BEB0C5C84AF15FBA`.
+
+2026-07-12 - Slot 9 scene-transition inspection
+- Method: extracted the first Zstandard frame from the newest DuckStation state and inspected the 256x192 BGRA thumbnail; decompressed the final state frame and compared the normal S1051 candidate RAM addresses.
+- Result: thumbnail reads `それから数日後` ("Several days later"), a transition card rather than dialogue. The S1051 candidate payloads were not loaded at the normal mapping.
+- Action: no game file modified and no patch ZIP created. Next target is the first story dialogue after the card.
+
+2026-07-12 - S2011 city dialogue patch build
+- User-confirmed city sequence uses slot 10 followed by slots 1-6. Slots 7, 8, and 9 are separate guard and throne-room scenes.
+- Modified file: `21/S2011.DAT` at payloads `0x4791A`, `0x47AAA`, `0x47AF6`, `0x47BAC`, `0x47C0C`, `0x47C68`, and `0x47CC0`.
+- Static verification: all seven expected originals matched, each first `00 00` boundary stayed intact, and the output ZIP contains 17 game files without `BUILD_REPORT.txt`.
+- Runtime status: pending user packaging and DuckStation verification from the city scene.

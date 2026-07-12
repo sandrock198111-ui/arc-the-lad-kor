@@ -198,3 +198,11 @@
 2026-07-12
 - Extended `duckstation_gdb_watch.py` with accepted-value filtering, multiple-hit tracing, immediate per-hit JSON persistence, and stop-aware final resume behavior.
 - No game file or patch-only ZIP was changed during this trace attempt.
+2026-07-12
+- Extracted DuckStation save-state thumbnails and confirmed the two remaining screens are `誰？` and `なぜ？`.
+- Added the omitted 3-byte S1041 payloads at `0x47EA4` and `0x480C0` using stable high-slot Korean plus the existing question-mark byte.
+- Built `story_s1041_short_questions_patch_only.zip` from the latest 16-file cumulative baseline.
+
+2026-07-12
+- Added seven bounded replacements in `21/S2011.DAT` to `story_s2011_city_dialogue_patch_only.zip`.
+- Output has 17 game files, no report file, and SHA256 `8EA1EA6A64D1CD561E77A7C408FA7E59F5816F8EBC9D7AF1B0D6B2C6DC9681AE`.

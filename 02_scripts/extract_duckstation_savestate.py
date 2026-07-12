@@ -5,12 +5,20 @@ import ctypes
 from pathlib import Path
 
 
-def decompress(source: Path) -> bytes:
+def decompress(source: Path, frame: str = "last") -> bytes:
     raw = source.read_bytes()
-    frame_offset = raw.rfind(b"\x28\xb5\x2f\xfd")
-    if frame_offset < 0:
+    magic = b"\x28\xb5\x2f\xfd"
+    offsets: list[int] = []
+    offset = raw.find(magic)
+    while offset >= 0:
+        offsets.append(offset)
+        offset = raw.find(magic, offset + 1)
+    if not offsets:
         raise RuntimeError("DuckStation save state has no Zstandard frame")
-    compressed = raw[frame_offset:]
+    index = 0 if frame == "first" else len(offsets) - 1
+    frame_offset = offsets[index]
+    frame_end = offsets[index + 1] if index + 1 < len(offsets) else len(raw)
+    compressed = raw[frame_offset:frame_end]
     try:
         import zstandard
     except ModuleNotFoundError:
@@ -61,10 +69,11 @@ def main() -> None:
     )
     parser.add_argument("source", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument("--frame", choices=("first", "last"), default="last")
     args = parser.parse_args()
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_bytes(decompress(args.source))
+    args.output.write_bytes(decompress(args.source, args.frame))
     print(f"wrote {args.output}")
 
 
