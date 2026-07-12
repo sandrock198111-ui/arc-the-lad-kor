@@ -993,3 +993,8 @@ story_test_23 S1072 안전 경계 기준
 - Fresh user slots 4 and 5 reproduce the first and second remaining untranslated portrait screens. Their PS1 RAM pointers are `0x80116EA7` and `0x801170C3` respectively.
 - Both states retain the delivered Korean S1041 data. The known original byte body for the first screen does not occur anywhere in either decompressed state, not only outside PS1 RAM.
 - Do not make another S1041 DAT patch from these screens. The next source-analysis target is the scene font/renderer path, including `COMM.IMG` and `1/S1041.IMG`.
+
+2026-07-12 S1041 image-file correction:
+- `1/S1041.IMG` begins with `pBAV` and is a PS1 VAB sound bank, not scene graphics or a font texture. It cannot overlay `COMM.IMG` glyph tiles.
+- A full S1041 scan for unmodified text-like `00 00`-terminated payloads found no additional valid dialogue body. The known text candidates from `0x4794A` through `0x48498` are already patched.
+- Do not build an S1041.IMG or additional S1041.DAT patch for the two remaining screens. Their source remains outside the currently identified static story payloads.

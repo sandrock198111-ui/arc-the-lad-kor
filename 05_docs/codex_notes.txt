@@ -203,3 +203,8 @@ Slots 4/5 state comparison - 2026-07-12
 - State decompression must begin at the final Zstandard frame in a DuckStation `.sav`; an earlier frame contains auxiliary data. The decompressed PS1 RAM still begins at state offset `0x1262`.
 - The known original S1041 body for the first screen is absent from the complete decompressed state files. The visible Japanese is not an unpatched raw-text copy in PS1 RAM or another saved-state component.
 - Do not add S1041 candidates from marker proximity. Investigate the scene font/renderer data path next.
+
+S1041 static-path rejection - 2026-07-12
+- `1/S1041.IMG` uses the `pBAV` PS1 VAB header and stores audio-bank data, not graphical texture or a scene-local font.
+- S1041's remaining text-like terminated byte runs were checked against the active patched file. Every actual dialogue run in the portrait range is already patched; no extra static payload exists for the two remaining screens.
+- Do not modify S1041.IMG or add S1041 DAT candidates without a new source proof.

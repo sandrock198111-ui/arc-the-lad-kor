@@ -735,3 +735,7 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - PS1 RAM at state offset `0x1262` records script-pointer values `0x80116EA7` (slot 4) and `0x801170C3` (slot 5).
 - Their common meaningful changes are at render/tile ranges around `0x1AE000` and `0x1B1000`; no unpatched S1041 body was found in RAM or in the full decompressed states.
 - Result: no patch ZIP was created. The evidence rules out another speculative S1041 payload edit.
+2026-07-12 - S1041 static renderer-path rejection
+- `1/S1041.IMG` header is `pBAV` (PS1 VAB sound bank), so it is not a scene image or font-overlay source.
+- A whole-file scan of original versus patched S1041 text-like terminated runs found all valid dialogue bodies already modified between `0x4794A` and `0x48498`; no new unpatched candidate was found.
+- Result: no patch ZIP was created. This closes the S1041 DAT/IMG static path for the two remaining screens.
