@@ -192,3 +192,8 @@ Slot-2 live script pointer trace - 2026-07-12
 - The first trace JSON did not record the watched value, so that stop cannot be classified as the desired script-pointer update. Filter accepted values, but persist every rejected hit immediately so an interrupted transition does not discard evidence.
 - `duckstation_gdb_watch.py` now records each hit before continuing and tracks whether emulation is stopped before sending its final resume packet.
 - The second filtered trace reached an automatic battle transition without an accepted value. It does not identify a new patch source and must not be used to justify a game-file edit.
+
+Final portrait-background boundary - 2026-07-12
+- The final observed untranslated portrait line transitions directly into automatic battle.
+- The final persistent trace recorded a zero write at the watched script-pointer field. Its per-hit snapshot at `0x80117000` contains the patched S1041 dialogue data rather than a remaining original body.
+- Treat the following battle command/status labels as UI/battle text, not evidence for another S1041 or story DAT patch.

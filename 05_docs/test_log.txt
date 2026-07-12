@@ -726,3 +726,7 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - The first persistent watchpoint stop was recorded in `01_work/analysis/gdb_slot2_script_pointer_hit.json`, but that tracer version did not record the watched value. The stop cannot be classified as the target script-pointer update.
 - A filtered second trace remained connected through the last dialogue and automatic battle transition, but produced no accepted hit output. The trace was stopped and no GDB connection remained.
 - Updated watcher compiles successfully with Python 3.14. No game binary or patch ZIP was modified.
+2026-07-12 - final portrait-background trace boundary
+- User confirmed the target background's final untranslated line advances directly into automatic battle.
+- Persistent trace output `gdb_slot2_actual_transition.json` recorded one watchpoint stop with value `0x00000000`. Its snapshot from `0x80117000` contains the patched S1041 dialogue blocks, including the end-of-sequence blocks.
+- Result: no additional story DAT patch was made. Further work moves to the separate battle/UI text path.

@@ -984,3 +984,7 @@ story_test_23 S1072 안전 경계 기준
 - The project now has `02_scripts/duckstation_gdb_watch.py` for the required persistent-session pattern: set a write watchpoint, continue over the same connection, capture the stop state, then resume before disconnecting.
 - A target save state must be loaded and visually confirmed before the one GDB attachment. Use save-state/RAM comparison for non-pausing discovery; use GDB only to trace the writer once the destination buffer is known.
 - The watcher now saves every hit immediately, including registers, watched value, and an optional memory snapshot. It sends a final continue only when the emulator is actually stopped.
+
+2026-07-12 house/snow story boundary:
+- The final untranslated portrait-background line was traced at the end of the story sequence. Its first script-pointer watchpoint hit wrote `0x00000000`; the captured S1041 script snapshot already contained the delivered Korean payloads through the sequence end.
+- No additional S1041 or story DAT edit is justified by this result. The subsequent automatic battle and its labels are a separate UI/battle-text task.
