@@ -66,6 +66,27 @@ def read_memory(client: RspClient, address: int, size: int) -> bytes:
     return b"".join(chunks)
 
 
+def write_trace(
+    output: Path,
+    *,
+    watch_address: int,
+    watch_size: int,
+    snapshot_address: int | None,
+    status: str,
+    hits: list[dict[str, object]],
+) -> None:
+    result = {
+        "status": status,
+        "watch_address": f"0x{watch_address:08X}",
+        "watch_size": watch_size,
+        "hits": hits,
+        "snapshot_address": (
+            f"0x{snapshot_address:08X}" if snapshot_address is not None else None
+        ),
+    }
+    output.write_text(json.dumps(result, indent=2) + "\n", encoding="ascii")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="One persistent DuckStation GDB watchpoint session."
@@ -74,6 +95,9 @@ def main() -> None:
     parser.add_argument("--watch-size", default=1, type=lambda value: int(value, 0))
     parser.add_argument("--snapshot-address", type=lambda value: int(value, 0))
     parser.add_argument("--snapshot-size", default=0x80, type=lambda value: int(value, 0))
+    parser.add_argument("--accept-value-min", type=lambda value: int(value, 0))
+    parser.add_argument("--accept-value-max", type=lambda value: int(value, 0))
+    parser.add_argument("--max-hits", default=32, type=int)
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", default=2345, type=int)
     parser.add_argument("--output", required=True, type=Path)
@@ -81,6 +105,7 @@ def main() -> None:
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     client = RspClient(args.host, args.port)
+    emulation_stopped = True
     try:
         # DuckStation stops when this single client connects. Configure first, then resume.
         watch_response = client.request(
@@ -89,33 +114,77 @@ def main() -> None:
         if watch_response != "OK":
             raise RuntimeError(f"watchpoint setup failed: {watch_response!r}")
 
-        stop_reason = client.continue_until_stop()
-        registers = client.request("g")
-        snapshot = b""
-        if args.snapshot_address is not None:
-            snapshot = read_memory(client, args.snapshot_address, args.snapshot_size)
+        hits: list[dict[str, object]] = []
+        accepted = False
+        watch_value = 0
+        for hit_number in range(1, args.max_hits + 1):
+            emulation_stopped = False
+            stop_reason = client.continue_until_stop()
+            emulation_stopped = True
+            registers = client.request("g")
+            watch_bytes = read_memory(client, args.watch_address, args.watch_size)
+            watch_value = int.from_bytes(watch_bytes[:4], "little")
+            snapshot = b""
+            if args.snapshot_address is not None:
+                snapshot = read_memory(
+                    client, args.snapshot_address, args.snapshot_size
+                )
+            hits.append(
+                {
+                    "hit": hit_number,
+                    "stop_reason": stop_reason,
+                    "watch_value": f"0x{watch_value:08X}",
+                    "registers_hex": registers,
+                    "snapshot_hex": snapshot.hex(" "),
+                }
+            )
+            write_trace(
+                args.output,
+                watch_address=args.watch_address,
+                watch_size=args.watch_size,
+                snapshot_address=args.snapshot_address,
+                status="tracing",
+                hits=hits,
+            )
+            print(
+                f"watchpoint hit {hit_number}: {stop_reason} "
+                f"value=0x{watch_value:08X}",
+                flush=True,
+            )
 
-        result = {
-            "watch_address": f"0x{args.watch_address:08X}",
-            "watch_size": args.watch_size,
-            "stop_reason": stop_reason,
-            "registers_hex": registers,
-            "snapshot_address": (
-                f"0x{args.snapshot_address:08X}"
-                if args.snapshot_address is not None
-                else None
-            ),
-            "snapshot_hex": snapshot.hex(" "),
-        }
-        args.output.write_text(json.dumps(result, indent=2) + "\n", encoding="ascii")
+            if args.accept_value_min is None:
+                accepted = True
+            elif (
+                args.accept_value_max is not None
+                and args.accept_value_min <= watch_value < args.accept_value_max
+            ):
+                accepted = True
+            if accepted:
+                break
+
+        if not accepted:
+            raise RuntimeError(
+                f"no accepted watch value after {args.max_hits} hits; "
+                f"last=0x{watch_value:08X}"
+            )
+
+        write_trace(
+            args.output,
+            watch_address=args.watch_address,
+            watch_size=args.watch_size,
+            snapshot_address=args.snapshot_address,
+            status="accepted",
+            hits=hits,
+        )
         print(f"watchpoint hit: {stop_reason}")
         print(f"wrote {args.output}")
     finally:
         # Never leave the user's emulator halted after a trace attempt.
-        try:
-            client.resume()
-        except (OSError, RuntimeError, socket.timeout):
-            pass
+        if emulation_stopped:
+            try:
+                client.resume()
+            except (OSError, RuntimeError, socket.timeout):
+                pass
         client.close()
 
 

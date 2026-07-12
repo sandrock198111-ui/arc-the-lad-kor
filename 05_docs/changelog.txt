@@ -195,3 +195,6 @@
 2026-07-12
 - Added `02_scripts/duckstation_gdb_watch.py`, a one-connection GDB watchpoint client for future live dialogue-source tracing.
 - The script configures a watchpoint, resumes on the same socket, records the stop state, and sends a final resume packet before it disconnects.
+2026-07-12
+- Extended `duckstation_gdb_watch.py` with accepted-value filtering, multiple-hit tracing, immediate per-hit JSON persistence, and stop-aware final resume behavior.
+- No game file or patch-only ZIP was changed during this trace attempt.

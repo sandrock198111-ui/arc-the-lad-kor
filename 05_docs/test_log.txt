@@ -721,3 +721,8 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Confirmed behavior: a GDB client connection stops emulation immediately. Reconnecting for each command repeatedly stops the game and is invalid for live trace work.
 - Added and compiled `duckstation_gdb_watch.py`. It keeps one socket open from watchpoint setup through stop capture, then sends a final continue packet before closing.
 - The temporary GDB setting was returned to disabled after the protocol probe. Do not attach a GDB client before the user has loaded the target state normally.
+2026-07-12 - slot-2 live pointer transition and persistent GDB trace
+- Non-pausing RAM captures confirmed the scene pointer at PS1 RAM `0x1FA558` changed from `0x80116EA7` to `0x801170C3` only when the next dialogue actually appeared; the first button press did not change it.
+- The first persistent watchpoint stop was recorded in `01_work/analysis/gdb_slot2_script_pointer_hit.json`, but that tracer version did not record the watched value. The stop cannot be classified as the target script-pointer update.
+- A filtered second trace remained connected through the last dialogue and automatic battle transition, but produced no accepted hit output. The trace was stopped and no GDB connection remained.
+- Updated watcher compiles successfully with Python 3.14. No game binary or patch ZIP was modified.

@@ -185,3 +185,10 @@ DuckStation GDB protocol behavior - 2026-07-12
 - Client attachment stops emulation. A live trace must use one persistent RSP socket: configure watchpoint, continue, capture stop state, continue again, then disconnect.
 - Do not use one shell command per GDB request. Each new connection creates another stop event.
 - Load and visually confirm the target save state before attaching the persistent client. Normal RAM observation should use save-state extraction or a non-pausing process/shared-memory reader; reserve GDB for the one write-watchpoint trace.
+
+Slot-2 live script pointer trace - 2026-07-12
+- In the active DuckStation process, PS1 RAM `0x1FA558` held `0x80116EA7` on the first untranslated slot-2 line and `0x801170C3` on the next line, matching the values stored in slots 2 and 3.
+- A display-completion button press can change rendering memory without advancing this pointer. Wait for the visible sentence to change before classifying a before/after pair as a script transition.
+- The first trace JSON did not record the watched value, so that stop cannot be classified as the desired script-pointer update. Filter accepted values, but persist every rejected hit immediately so an interrupted transition does not discard evidence.
+- `duckstation_gdb_watch.py` now records each hit before continuing and tracks whether emulation is stopped before sending its final resume packet.
+- The second filtered trace reached an automatic battle transition without an accepted value. It does not identify a new patch source and must not be used to justify a game-file edit.

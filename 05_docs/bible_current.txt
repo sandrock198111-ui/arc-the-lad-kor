@@ -983,3 +983,4 @@ story_test_23 S1072 안전 경계 기준
 - DuckStation pauses emulation when a GDB client attaches. Do not reconnect for individual commands.
 - The project now has `02_scripts/duckstation_gdb_watch.py` for the required persistent-session pattern: set a write watchpoint, continue over the same connection, capture the stop state, then resume before disconnecting.
 - A target save state must be loaded and visually confirmed before the one GDB attachment. Use save-state/RAM comparison for non-pausing discovery; use GDB only to trace the writer once the destination buffer is known.
+- The watcher now saves every hit immediately, including registers, watched value, and an optional memory snapshot. It sends a final continue only when the emulator is actually stopped.
