@@ -730,3 +730,8 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - User confirmed the target background's final untranslated line advances directly into automatic battle.
 - Persistent trace output `gdb_slot2_actual_transition.json` recorded one watchpoint stop with value `0x00000000`. Its snapshot from `0x80117000` contains the patched S1041 dialogue blocks, including the end-of-sequence blocks.
 - Result: no additional story DAT patch was made. Further work moves to the separate battle/UI text path.
+2026-07-12 - slots 4 and 5 native-state comparison
+- User saved the two remaining portrait screens as slots 4 and 5; both were decompressed from the final Zstandard frame only.
+- PS1 RAM at state offset `0x1262` records script-pointer values `0x80116EA7` (slot 4) and `0x801170C3` (slot 5).
+- Their common meaningful changes are at render/tile ranges around `0x1AE000` and `0x1B1000`; no unpatched S1041 body was found in RAM or in the full decompressed states.
+- Result: no patch ZIP was created. The evidence rules out another speculative S1041 payload edit.

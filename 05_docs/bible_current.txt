@@ -988,3 +988,8 @@ story_test_23 S1072 안전 경계 기준
 2026-07-12 house/snow story boundary:
 - The final untranslated portrait-background line was traced at the end of the story sequence. Its first script-pointer watchpoint hit wrote `0x00000000`; the captured S1041 script snapshot already contained the delivered Korean payloads through the sequence end.
 - No additional S1041 or story DAT edit is justified by this result. The subsequent automatic battle and its labels are a separate UI/battle-text task.
+
+2026-07-12 saved-state confirmation for two remaining portrait screens:
+- Fresh user slots 4 and 5 reproduce the first and second remaining untranslated portrait screens. Their PS1 RAM pointers are `0x80116EA7` and `0x801170C3` respectively.
+- Both states retain the delivered Korean S1041 data. The known original byte body for the first screen does not occur anywhere in either decompressed state, not only outside PS1 RAM.
+- Do not make another S1041 DAT patch from these screens. The next source-analysis target is the scene font/renderer path, including `COMM.IMG` and `1/S1041.IMG`.

@@ -197,3 +197,9 @@ Final portrait-background boundary - 2026-07-12
 - The final observed untranslated portrait line transitions directly into automatic battle.
 - The final persistent trace recorded a zero write at the watched script-pointer field. Its per-hit snapshot at `0x80117000` contains the patched S1041 dialogue data rather than a remaining original body.
 - Treat the following battle command/status labels as UI/battle text, not evidence for another S1041 or story DAT patch.
+
+Slots 4/5 state comparison - 2026-07-12
+- Fresh slots 4 and 5 reproduce the two remaining untranslated portrait screens with pointers `0x80116EA7` and `0x801170C3`.
+- State decompression must begin at the final Zstandard frame in a DuckStation `.sav`; an earlier frame contains auxiliary data. The decompressed PS1 RAM still begins at state offset `0x1262`.
+- The known original S1041 body for the first screen is absent from the complete decompressed state files. The visible Japanese is not an unpatched raw-text copy in PS1 RAM or another saved-state component.
+- Do not add S1041 candidates from marker proximity. Investigate the scene font/renderer data path next.
