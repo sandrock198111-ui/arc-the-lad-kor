@@ -756,3 +756,10 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Modified file: `21/S2011.DAT` at payloads `0x4791A`, `0x47AAA`, `0x47AF6`, `0x47BAC`, `0x47C0C`, `0x47C68`, and `0x47CC0`.
 - Static verification: all seven expected originals matched, each first `00 00` boundary stayed intact, and the output ZIP contains 17 game files without `BUILD_REPORT.txt`.
 - Runtime status: pending user packaging and DuckStation verification from the city scene.
+
+2026-07-13 - S2051 throne-room mapping patch build
+- Source proof: ten saved throne-room states use the ordered `22/S2051.DAT` dialogue sequence. The first three screen blocks were correlated to `0x478A6`, `0x4792C`, and `0x4799C`; the remaining saved screens continue through `0x47BD2` in the same sequence.
+- Modified file: `22/S2051.DAT` only, using source bytes read from `00_original/arc.zip`.
+- Static verification: all ten expected original bodies matched, all ten immediate `00 00` boundaries were retained, and the ZIP contains exactly one game file with no report or packaging artifact.
+- Output: `03_output/story_s2051_throne_mapping_patch_only.zip`, SHA256 `B78DF9375CF8FFA16FF5C63B46D848461E6DA0281759190093DBF298A8DB7993`.
+- Runtime status: pending user packaging and DuckStation verification. The current stable font table cannot express a natural full Korean translation for this dialogue; the included Korean is a bounded scene-mapping payload, not final prose.

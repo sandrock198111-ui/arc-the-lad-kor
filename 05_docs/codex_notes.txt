@@ -224,3 +224,9 @@ S2011 city-scene batch - 2026-07-12
 - Latest city slots are ordered as slot 10, then slots 1-6. They correspond to a seven-screen city dialogue sequence; slots 7, 8, and 9 are separate guard and throne-room scenes.
 - The city batch targets seven bounded `21/S2011.DAT` bodies at `0x4791A`, `0x47AAA`, `0x47AF6`, `0x47BAC`, `0x47C0C`, `0x47C68`, and `0x47CC0`.
 - Short payloads remain valid targets when their expected source bytes and the first following `00 00` boundary are verified. Do not impose a minimum text length.
+
+S2051 throne-room state mapping - 2026-07-13
+- The ten latest throne-room save states form an ordered `22/S2051.DAT` dialogue sequence. The first three displayed screens map to payload starts `0x478A6`, `0x4792C`, and `0x4799C`; the next seven bounded bodies continue at `0x479EC`, `0x47A28`, `0x47A7C`, `0x47AD0`, `0x47B22`, `0x47B7E`, and `0x47BD2`.
+- `0x4799C` is a valid `control_0000` form. Its leading `00 00` belongs to the display command and must remain outside the payload.
+- The patch is intentionally incremental: it contains only `22/S2051.DAT`, so it can be overlaid onto the user's already validated working tree without replacing unrelated files.
+- Current stable Korean glyph coverage is insufficient for a natural full translation of this sequence. Do not call the mapping payload final translation prose.

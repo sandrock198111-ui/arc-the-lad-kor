@@ -206,3 +206,7 @@
 2026-07-12
 - Added seven bounded replacements in `21/S2011.DAT` to `story_s2011_city_dialogue_patch_only.zip`.
 - Output has 17 game files, no report file, and SHA256 `8EA1EA6A64D1CD561E77A7C408FA7E59F5816F8EBC9D7AF1B0D6B2C6DC9681AE`.
+
+2026-07-13
+- Added `02_scripts/build_story_s2051_throne_mapping.py`.
+- Built the incremental patch-only `story_s2051_throne_mapping_patch_only.zip`; it contains only `22/S2051.DAT` and ten bounded throne-room dialogue replacements.
