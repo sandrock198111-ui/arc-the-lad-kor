@@ -212,3 +212,8 @@
 - Rebuilt the S2051 output as `story_s2051_throne_merged_patch_only.zip` after identifying that the first output had overwritten prior S2051 replacements with original data. The corrected ZIP preserves the prior S2051 payload outside the new ten bounded replacements.
 - Rebuilt the user-facing output as the 29-file cumulative `story_s2051_throne_full_patch_only.zip`, combining all current accepted story patch files with the corrected S2051 payload.
 - Added the latest-state-backed `22/S2054.DAT` throne-room payload to the 30-file cumulative `story_throne_s2054_full_patch_only.zip`.
+
+2026-07-13
+- Added `02_scripts/map_savestate_script.py` to map DuckStation save states to the DAT script block actually loaded in PS1 RAM.
+- Verified the current event-return sequence as `22/S2053.DAT -> F/SF091.DAT -> F/SF0B1.DAT` with exact 1792-byte window matches.
+- Retracted the earlier S2054 source selection for the post-event target; no game data or patch archive was changed in this analysis step.

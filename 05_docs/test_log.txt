@@ -776,3 +776,13 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Added `22/S2054.DAT` only to the existing 29-file cumulative archive. Six bounded payloads were replaced at `0x4792E`, `0x47970`, `0x479DE`, `0x47A44`, `0x47A86`, and `0x47AD6`.
 - Static verification: 30 unique game files, no report entry, and every S2054 first `00 00` boundary remained unchanged.
 - Output: `03_output/story_throne_s2054_full_patch_only.zip`, SHA256 `B717161D17355646DD6D60BCF6D113A4658905B27E1D87359D47061B96777D36`.
+
+2026-07-13 - Event-return A/B/C exact source mapping
+- Input: fresh slots 1-5, ordered as pre-event final dialogue, three event states, and post-event first dialogue.
+- Method: extracted PS1 RAM from each final DuckStation Zstandard frame and compared RAM `0x117000-0x1176FF` against every DAT at file `0x47800-0x47EFF`.
+- Result: slot 1 = `22/S2053.DAT`, slots 2-4 = `F/SF091.DAT`, and slot 5 = `F/SF0B1.DAT`; every match is exactly 1792/1792 bytes.
+- Regression test: the same analyzer mapped all ten states in `pair_slots_2026-07-12` to five baseline DAT files at 100% for every state.
+- Raw-RAM test: a non-pausing 2 MiB capture mapped to `F/SF0B1.DAT` at 1792/1792 bytes, confirming the analyzer accepts both decompressed states and direct RAM dumps.
+- Added and compiled `02_scripts/map_savestate_script.py`. Its slot-5 output contains 17 bounded dialogue payloads and excludes two non-text command false positives.
+- No game DAT, patch-only ZIP, BIN, CUE, or `00_original` file was modified.
+- The earlier S2054 runtime-source selection is rejected for this target. No patch based on that selection should be reused.

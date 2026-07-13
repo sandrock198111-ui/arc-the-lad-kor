@@ -240,3 +240,12 @@ Patch delivery policy - 2026-07-13
 Latest throne-room source refinement - 2026-07-13
 - Fresh slots 1-3 and resume state show the current blue throne-room sequence. Their file-load fingerprint identifies `22/S2054.DAT` as the strongest distinct current scene source; S2051 must not be used as a substitute for this set.
 - The S2054 scene has six bounded visible-dialogue bodies at `0x4792E`, `0x47970`, `0x479DE`, `0x47A44`, `0x47A86`, and `0x47AD6`.
+
+Event-return exact source mapping - 2026-07-13
+- The preceding S2054 runtime-source claim is retracted. It was based on a weak fingerprint and produced a patch that did not alter the user's target screen.
+- Fresh A/B/C states are ordered as slot 1 = final pre-event dialogue, slots 2-4 = event dialogue, and slot 5 = first post-event return dialogue.
+- The loaded script window is PS1 RAM `0x117000-0x1176FF`, corresponding to DAT file offsets `0x47800-0x47EFF` with delta `0xCF800`.
+- Exact 1792/1792-byte matches identify slot 1 as `22/S2053.DAT`, slots 2-4 as `F/SF091.DAT`, and slot 5 as `F/SF0B1.DAT`.
+- The slot-5 window contains 17 bounded dialogue payloads. Each maps directly to `F/SF0B1.DAT` by `file_offset = ram_offset - 0xCF800`.
+- A separate ten-state historical set maps exactly against the baseline extraction as `SF0D1, SF0D1, S2053, S2053, SF091, SF091, SF0B1, SF0B1, S2081, S2081` in slot-number order.
+- `02_scripts/map_savestate_script.py` automates this mapping and emits ranked source matches plus all bounded dialogue offsets. Prefer this method over visual-background or pointer-value file guesses.

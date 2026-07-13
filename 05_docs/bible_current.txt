@@ -1005,3 +1005,9 @@ story_test_23 S1072 안전 경계 기준
 - Current cumulative patch-only output: `03_output/story_s1041_short_questions_patch_only.zip`.
 - The ZIP contains 16 replacement game files, no build report, and differs from the prior cumulative ZIP only in 5 bytes of `1/S1041.DAT`.
 - SHA256: `20B1AC49EF84777861723F75F9E03DB7B6B6E172023744D4BEB0C5C84AF15FBA`.
+
+2026-07-13 event-return source rule:
+- For the current A/B/C sequence, the active scene file is identified by an exact loaded-window comparison, not by visual background or script-pointer numeric value.
+- Mapping: pre-event slot 1 = `22/S2053.DAT`; event slots 2-4 = `F/SF091.DAT`; post-event slot 5 = `F/SF0B1.DAT`.
+- File `0x47800` maps to PS1 RAM `0x117000` with delta `0xCF800`; the verified comparison span is `0x700` bytes.
+- Use `02_scripts/map_savestate_script.py` for future story-state batches. The earlier S2054 target claim for this return scene is invalid and must not be used.
