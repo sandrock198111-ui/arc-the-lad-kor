@@ -236,3 +236,7 @@ Patch delivery policy - 2026-07-13
 - User-facing patch artifacts must always be full cumulative patch-only ZIPs containing every currently accepted replacement game file.
 - Never ask the user to layer a newly delivered one-file incremental ZIP over an older ZIP. Build the complete cumulative archive and verify every intended game-file entry is present exactly once.
 - The current cumulative delivery is `story_s2051_throne_full_patch_only.zip`: 24 files from the slots baseline plus five later reed/underground files, for 29 game files total.
+
+Latest throne-room source refinement - 2026-07-13
+- Fresh slots 1-3 and resume state show the current blue throne-room sequence. Their file-load fingerprint identifies `22/S2054.DAT` as the strongest distinct current scene source; S2051 must not be used as a substitute for this set.
+- The S2054 scene has six bounded visible-dialogue bodies at `0x4792E`, `0x47970`, `0x479DE`, `0x47A44`, `0x47A86`, and `0x47AD6`.

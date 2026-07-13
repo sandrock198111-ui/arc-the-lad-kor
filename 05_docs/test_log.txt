@@ -770,3 +770,9 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Base: 24 files from `story_slots_1_to_10_dialogue_patch_only.zip`; added five later scene files from `story_reed_king_flashback_underground_patch_only.zip`; overlaid the corrected `22/S2051.DAT`.
 - Static verification: 29 unique game-file entries, no `BUILD_REPORT.txt`; all five reed/underground files and the city, forest, and S2052/S2057 files are present.
 - Output: `03_output/story_s2051_throne_full_patch_only.zip`, SHA256 `0AEEB6359853C185CE8A81E7CC846051D1328071FF41BF72DA52D195E37167D5`.
+
+2026-07-13 - Latest throne-room S2054 cumulative build
+- Fresh DuckStation states 1-3 and resume state were extracted after full access was enabled. Their active throne-room fingerprint raises `22/S2054.DAT` above the previously guessed S2051 sequence.
+- Added `22/S2054.DAT` only to the existing 29-file cumulative archive. Six bounded payloads were replaced at `0x4792E`, `0x47970`, `0x479DE`, `0x47A44`, `0x47A86`, and `0x47AD6`.
+- Static verification: 30 unique game files, no report entry, and every S2054 first `00 00` boundary remained unchanged.
+- Output: `03_output/story_throne_s2054_full_patch_only.zip`, SHA256 `B717161D17355646DD6D60BCF6D113A4658905B27E1D87359D47061B96777D36`.
