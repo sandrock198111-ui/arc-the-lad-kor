@@ -228,5 +228,11 @@ S2011 city-scene batch - 2026-07-12
 S2051 throne-room state mapping - 2026-07-13
 - The ten latest throne-room save states form an ordered `22/S2051.DAT` dialogue sequence. The first three displayed screens map to payload starts `0x478A6`, `0x4792C`, and `0x4799C`; the next seven bounded bodies continue at `0x479EC`, `0x47A28`, `0x47A7C`, `0x47AD0`, `0x47B22`, `0x47B7E`, and `0x47BD2`.
 - `0x4799C` is a valid `control_0000` form. Its leading `00 00` belongs to the display command and must remain outside the payload.
-- The patch is intentionally incremental: it contains only `22/S2051.DAT`, so it can be overlaid onto the user's already validated working tree without replacing unrelated files.
+- Do not rebuild an incremental file from the original when the same DAT already has accepted replacements. Start from the latest accepted version of that exact DAT, then overlay only the newly confirmed blocks. Rebuilding `S2051` from the original rolled back the later ten dialogue blocks and was rejected.
+- The corrected ZIP starts from `story_slots_1_to_10_dialogue_patch_only.zip`'s `22/S2051.DAT`, overlays only the first ten confirmed blocks, and retains the later ten bodies byte-for-byte.
 - Current stable Korean glyph coverage is insufficient for a natural full translation of this sequence. Do not call the mapping payload final translation prose.
+
+Patch delivery policy - 2026-07-13
+- User-facing patch artifacts must always be full cumulative patch-only ZIPs containing every currently accepted replacement game file.
+- Never ask the user to layer a newly delivered one-file incremental ZIP over an older ZIP. Build the complete cumulative archive and verify every intended game-file entry is present exactly once.
+- The current cumulative delivery is `story_s2051_throne_full_patch_only.zip`: 24 files from the slots baseline plus five later reed/underground files, for 29 game files total.

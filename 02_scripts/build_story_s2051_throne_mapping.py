@@ -7,8 +7,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ORIGINAL_ARCHIVE = ROOT / "00_original" / "arc.zip"
-OUTPUT = ROOT / "03_output" / "story_s2051_throne_mapping_patch_only.zip"
+PRIOR_PATCH = ROOT / "03_output" / "story_slots_1_to_10_dialogue_patch_only.zip"
+ADDITIONAL_PATCH = ROOT / "03_output" / "story_reed_king_flashback_underground_patch_only.zip"
+OUTPUT = ROOT / "03_output" / "story_s2051_throne_full_patch_only.zip"
 TARGET = "22/S2051.DAT"
 FILLER = 0x9C
 LINEBREAK = b"\xE6\x01"
@@ -50,16 +51,30 @@ def encode(text: str, charmap: dict[str, int]) -> bytes:
 
 def main() -> None:
     charmap = load_charmap()
-    with zipfile.ZipFile(ORIGINAL_ARCHIVE) as original:
-        data = bytearray(original.read(TARGET))
+    # Start from the latest cumulative payload, not the original archive.
+    # This preserves all accepted S2051 replacements outside the new range.
+    with zipfile.ZipFile(PRIOR_PATCH) as prior:
+        files = {
+            info.filename: prior.read(info.filename)
+            for info in prior.infolist()
+            if info.filename != "BUILD_REPORT.txt"
+        }
+    with zipfile.ZipFile(ADDITIONAL_PATCH) as additional:
+        # This later delivery branched before PRIOR_PATCH. Only add the five
+        # scene files absent from the cumulative base.
+        for info in additional.infolist():
+            if info.filename != "BUILD_REPORT.txt" and info.filename not in files:
+                files[info.filename] = additional.read(info.filename)
+
+    data = bytearray(files[TARGET])
 
     report: list[str] = []
     for offset, expected_hex, text in PATCHES:
         expected = bytes.fromhex(expected_hex)
         end = offset + len(expected)
         payload = encode(text, charmap)
-        if data[offset:end] != expected:
-            raise SystemExit(f"{TARGET} 0x{offset:X}: original bytes do not match")
+        # A prior replacement may already occupy this body.  The immutable
+        # control boundary is the structural guard for this overlay build.
         if data[end:end + 2] != b"\x00\x00":
             raise SystemExit(f"{TARGET} 0x{offset:X}: missing 00 00 boundary")
         if len(payload) > len(expected):
@@ -70,11 +85,16 @@ def main() -> None:
             raise SystemExit(f"{TARGET} 0x{offset:X}: boundary changed")
         report.append(f"0x{offset:X}: {text} ({len(payload)}/{len(expected)})")
 
+    files[TARGET] = bytes(data)
     with zipfile.ZipFile(OUTPUT, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as output:
-        output.writestr(TARGET, data)
+        for name in sorted(files):
+            output.writestr(name, files[name])
 
     with zipfile.ZipFile(OUTPUT) as output:
-        if output.namelist() != [TARGET] or output.read(TARGET) != data:
+        names = output.namelist()
+        if len(names) != len(set(names)) or "BUILD_REPORT.txt" in names:
+            raise SystemExit("ZIP has duplicate or report entries")
+        if len(names) != len(files) or output.read(TARGET) != data:
             raise SystemExit("ZIP verification failed")
 
     print("\n".join(report))

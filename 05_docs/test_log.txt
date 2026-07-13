@@ -759,7 +759,14 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 
 2026-07-13 - S2051 throne-room mapping patch build
 - Source proof: ten saved throne-room states use the ordered `22/S2051.DAT` dialogue sequence. The first three screen blocks were correlated to `0x478A6`, `0x4792C`, and `0x4799C`; the remaining saved screens continue through `0x47BD2` in the same sequence.
-- Modified file: `22/S2051.DAT` only, using source bytes read from `00_original/arc.zip`.
-- Static verification: all ten expected original bodies matched, all ten immediate `00 00` boundaries were retained, and the ZIP contains exactly one game file with no report or packaging artifact.
-- Output: `03_output/story_s2051_throne_mapping_patch_only.zip`, SHA256 `B78DF9375CF8FFA16FF5C63B46D848461E6DA0281759190093DBF298A8DB7993`.
+- Initial output error: `story_s2051_throne_mapping_patch_only.zip` rebuilt S2051 from the original and rolled back ten existing S2051 dialogue replacements outside the new range. It is rejected and must not be used.
+- Corrected source: the active `22/S2051.DAT` payload from `story_slots_1_to_10_dialogue_patch_only.zip`, which preserves the earlier twenty bounded replacements.
+- Static verification: all ten new bodies changed from that prior payload, all ten immediate `00 00` boundaries were retained, and all ten later bodies at `0x47C38` through `0x47F86` are byte-identical to the prior payload.
+- Corrected output: `03_output/story_s2051_throne_merged_patch_only.zip`, SHA256 `9C8A2F2A6B06E08B41946A3DE1A7C2A796E94739A1BBC0E074E73BDD46E79C46`.
 - Runtime status: pending user packaging and DuckStation verification. The current stable font table cannot express a natural full Korean translation for this dialogue; the included Korean is a bounded scene-mapping payload, not final prose.
+
+2026-07-13 - Full cumulative delivery rebuild
+- User-facing delivery policy changed: provide one full cumulative patch-only ZIP, never a single-file incremental ZIP.
+- Base: 24 files from `story_slots_1_to_10_dialogue_patch_only.zip`; added five later scene files from `story_reed_king_flashback_underground_patch_only.zip`; overlaid the corrected `22/S2051.DAT`.
+- Static verification: 29 unique game-file entries, no `BUILD_REPORT.txt`; all five reed/underground files and the city, forest, and S2052/S2057 files are present.
+- Output: `03_output/story_s2051_throne_full_patch_only.zip`, SHA256 `0AEEB6359853C185CE8A81E7CC846051D1328071FF41BF72DA52D195E37167D5`.

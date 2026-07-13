@@ -209,4 +209,5 @@
 
 2026-07-13
 - Added `02_scripts/build_story_s2051_throne_mapping.py`.
-- Built the incremental patch-only `story_s2051_throne_mapping_patch_only.zip`; it contains only `22/S2051.DAT` and ten bounded throne-room dialogue replacements.
+- Rebuilt the S2051 output as `story_s2051_throne_merged_patch_only.zip` after identifying that the first output had overwritten prior S2051 replacements with original data. The corrected ZIP preserves the prior S2051 payload outside the new ten bounded replacements.
+- Rebuilt the user-facing output as the 29-file cumulative `story_s2051_throne_full_patch_only.zip`, combining all current accepted story patch files with the corrected S2051 payload.
