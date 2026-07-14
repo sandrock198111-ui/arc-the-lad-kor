@@ -1,0 +1,262 @@
+char,code_hex,slot_note
+…,E008,unused extended story code
+것,E013,unused extended story code
+게,E014,unused extended story code
+겨,E016,unused extended story code
+군,E0C5,unused extended story code; reassigned after cumulative zero-use proof
+공,E0C6,unused extended story code; moved out of confirmed cursor rectangle
+과,E0C7,unused extended story code; moved out of confirmed cursor rectangle
+괴,E0C8,unused extended story code; moved out of confirmed cursor rectangle
+구,E024,unused extended story code
+국,E026,unused extended story code
+궤,E028,unused extended story code
+그,E029,unused extended story code
+긴,E02A,unused extended story code
+께,E02B,unused extended story code
+남,E02C,unused extended story code
+냐,E02E,unused extended story code
+너,E032,unused extended story code
+넣,E033,unused extended story code
+누,E034,unused extended story code
+니,E035,unused extended story code
+대,E036,unused extended story code
+스,E039,unused extended story code; reassigned after cumulative zero-use proof
+들,E03B,unused extended story code
+딸,E0B7,unused extended story code; moved out of battle cursor cells
+떠,E0B8,unused extended story code; moved out of battle cursor cells
+떻,E0B9,unused extended story code; moved out of battle cursor cells
+람,E0BA,unused extended story code; moved out of battle cursor cells
+래,E0BB,unused extended story code; moved out of battle cursor cells
+런,E0BC,unused extended story code; moved out of battle cursor cells
+루,E044,unused extended story code
+류,E045,unused extended story code
+르,E046,unused extended story code
+린,E048,unused extended story code
+만,E049,unused extended story code
+망,E04A,unused extended story code
+맡,E04B,unused extended story code
+면,E04C,unused extended story code
+멸,E04D,unused extended story code
+명,E04E,unused extended story code
+물,E04F,unused extended story code
+미,E050,unused extended story code
+밀,E051,unused extended story code
+본,E052,unused extended story code
+비,E053,unused extended story code
+빌,E054,unused extended story code
+산,E055,unused extended story code
+상,E056,unused extended story code
+서,E057,unused extended story code
+선,E058,unused extended story code
+설,E059,unused extended story code
+성,E05A,unused extended story code
+세,E05B,unused extended story code
+속,E05C,unused extended story code
+손,E05D,unused extended story code
+숲,E05E,unused extended story code
+습,E05F,unused extended story code
+시,E061,unused extended story code
+오,E062,unused extended story code
+온,E063,unused extended story code
+와,E064,unused extended story code
+왕,E065,unused extended story code
+요,E066,unused extended story code
+용,E067,unused extended story code
+우,E068,unused extended story code
+위,E069,unused extended story code
+인,E06A,unused extended story code
+일,E06B,unused extended story code
+입,E0C9,unused extended story code; moved out of confirmed cursor rectangle
+있,E0CA,unused extended story code; moved out of confirmed cursor rectangle
+저,E0CB,unused extended story code; moved out of confirmed cursor rectangle
+전,E0CC,unused extended story code; moved out of confirmed cursor rectangle
+족,E0CD,unused extended story code; moved out of confirmed cursor rectangle
+좋,E0CE,unused extended story code; moved out of confirmed cursor rectangle
+주,E0CF,unused extended story code; moved out of confirmed cursor rectangle
+준,E0D0,unused extended story code; moved out of confirmed cursor rectangle
+증,E0D1,unused extended story code; moved out of confirmed cursor rectangle
+집,E0D2,unused extended story code; moved out of confirmed cursor rectangle
+쳐,E0D3,unused extended story code; moved out of confirmed cursor rectangle
+케,E078,unused extended story code
+켜,E079,unused extended story code
+쿠,E07A,unused extended story code
+키,E07C,unused extended story code
+타,E07D,unused extended story code
+토,E07E,unused extended story code
+트,E082,unused extended story code
+폐,E083,unused extended story code
+한,E084,unused extended story code
+함,E085,unused extended story code
+합,E086,unused extended story code
+항,E087,unused extended story code
+해,E088,unused extended story code
+행,E08B,unused extended story code
+형,E08D,unused extended story code
+힘,E08E,unused extended story code
+메,E08F,unused extended story code; reassigned after cumulative zero-use proof
+이,E0BD,unused extended story code; moved out of battle cursor cells
+말,E0BE,unused extended story code; moved out of battle cursor cells
+은,E0BF,unused extended story code; moved out of battle cursor cells
+가,E0C0,unused extended story code; moved out of battle cursor cells
+다,E0C1,unused extended story code; moved out of battle cursor cells
+는,E0C2,unused extended story code; moved out of battle cursor cells
+신,E0C3,unused extended story code; moved out of battle cursor cells
+하,E0C4,unused extended story code; moved out of battle cursor cells
+리,E098,unused extended story code; replaces unverified legacy mapping
+나,E099,unused extended story code; replaces unverified legacy mapping
+계,E09A,unused extended story code; replaces unverified legacy mapping
+의,E09B,unused extended story code; replaces unverified legacy mapping
+아,E09C,unused extended story code; replaces unverified legacy mapping
+크,E09D,unused extended story code; replaces unverified legacy mapping
+마,E09E,unused extended story code; replaces unverified legacy mapping
+에,E09F,unused extended story code; replaces unverified legacy mapping
+어,E0A0,unused extended story code; replaces unverified legacy mapping
+디,E0A1,unused extended story code; replaces unverified legacy mapping
+지,E0A2,unused extended story code; replaces unverified legacy mapping
+을,E0A3,unused extended story code; replaces unverified legacy mapping
+조,E0A4,unused extended story code; replaces unverified legacy mapping
+사,E0A5,unused extended story code; replaces unverified legacy mapping
+라,E0A6,unused extended story code; replaces unverified legacy mapping
+도,E0A7,unused extended story code; replaces unverified legacy mapping
+겠,E0A8,unused extended story code; replaces unverified legacy mapping
+킨,E0A9,unused extended story code; replaces unverified legacy mapping
+제,E0AA,unused extended story code; replaces unverified legacy mapping
+를,E0AB,unused extended story code; replaces unverified legacy mapping
+기,E0AC,unused extended story code; replaces unverified legacy mapping
+유,E0AD,unused extended story code
+언,E0AE,unused extended story code
+른,E0AF,unused extended story code
+치,E0B0,unused extended story code
+얻,E0B1,unused extended story code
+법,E0B3,unused extended story code
+걸,E0B4,unused extended story code
+할,E0B5,unused extended story code
+답,E0D4,unused extended story code; bulk batch S4041
+돌,E0D5,unused extended story code; bulk batch S4041
+로,E0D6,unused extended story code; bulk batch S4041
+뭐,E0D7,unused extended story code; bulk batch S4041
+뭔,E0D8,unused extended story code; bulk batch S4041
+소,E0D9,unused extended story code; bulk batch S4041
+야,E0DA,unused extended story code; bulk batch S4041
+억,E0DB,unused extended story code; bulk batch S4041
+여,E0DC,unused extended story code; bulk batch S4041
+으,E0DF,unused extended story code; bulk batch S4041
+자,E0E0,unused extended story code; bulk batch S4041
+장,E0E1,unused extended story code; bulk batch S4041
+찾,E0E2,unused extended story code; bulk batch S4041
+쳤,E0E3,unused extended story code; bulk batch S4041
+편,E0E4,unused extended story code; bulk batch S4041
+휴,E0E5,unused extended story code; bulk batch S4041
+절,E0E6,unused extended story code; bulk batch S3031
+무,E0E7,unused extended story code; bulk batch S3031
+험,E0E8,unused extended story code; bulk batch S3031
+안,E0E9,unused extended story code; bulk batch S3031
+정,E0EB,unused extended story code; bulk batch S3031
+령,E0EE,unused extended story code; bulk batch S3031
+투,E0EF,unused extended story code; bulk batch S3031
+없,E0F1,unused extended story code; bulk batch S3031
+관,E0F3,unused extended story code; bulk batch S3031
+못,E0F5,unused extended story code; bulk batch S3031
+간,E0F7,unused extended story code; bulk batch S3031
+두,E0F8,unused extended story code; bulk batch S3031
+싸,E0FB,unused extended story code; bulk batch S3031
+승,E0FF,unused parsed-dialogue code; bulk batch S2041
+원,E0FE,unused parsed-dialogue code; bulk batch S2041
+님,E0FD,unused parsed-dialogue code; bulk batch S2041
+출,E0FC,unused parsed-dialogue code; bulk batch S2041
+발,E0FA,unused parsed-dialogue code; bulk batch S2041
+뒤,E0F9,unused parsed-dialogue code; bulk batch S2041
+허,E0F6,unused parsed-dialogue code; bulk batch S2041
+갑,E0F4,unused parsed-dialogue code; bulk batch S2041
+강,E0F2,unused parsed-dialogue code; bulk batch S2041
+됐,E0F0,unused parsed-dialogue code; bulk batch S2041
+몰,E0ED,unused parsed-dialogue code; bulk batch S2041
+릴,E0EC,unused parsed-dialogue code; bulk batch S2041
+슨,E0EA,unused parsed-dialogue code; bulk batch S2041
+뭘,E0DE,unused parsed-dialogue code; bulk batch S2041
+맞,E0DD,unused parsed-dialogue code; bulk batch S2041
+택,E0B6,unused parsed-dialogue code; bulk batch S2041
+열,E0B2,unused parsed-dialogue code; bulk batch S2041
+넘,E097,unused parsed-dialogue code; bulk batch S2041
+차,E096,unused parsed-dialogue code; bulk batch S2041
+례,E095,unused parsed-dialogue code; bulk batch S2041
+동,E094,unused parsed-dialogue code; bulk batch S2041
+보,E093,unused parsed-dialogue code; bulk batch S2041
+작,E092,unused parsed-dialogue code; bulk batch S2041
+분,E091,unused parsed-dialogue code; bulk batch S2041
+체,E090,unused parsed-dialogue code; bulk batch S2041
+력,E08C,unused parsed-dialogue code; bulk batch S2041
+반,E08A,unused parsed-dialogue code; bulk batch S2041
+경,E089,unused parsed-dialogue code; bulk batch S2041
+같,E081,unused parsed-dialogue code; bulk batch S2041
+활,E080,unused parsed-dialogue code; bulk batch S2041
+고,E07F,unused parsed-dialogue code; bulk batch S2041
+곳,E07B,unused parsed-dialogue code; bulk batch S2041
+.,E060,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+?,E047,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+각,E043,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+갈,E042,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+건,E041,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+격,E040,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+괜,E03F,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+끼,E03E,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+난,E03D,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+노,E03C,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+느,E03A,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+늪,E038,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+단,E037,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+데,E031,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+돼,E030,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+되,E02F,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+듯,E02D,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+뜨,E027,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+러,E025,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+렇,E017,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+려,E015,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+륭,E012,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+모,E011,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+받,E010,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+방,E00F,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+병,E00E,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+봐,E00D,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+뵙,E00C,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+부,E00B,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+불,E00A,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+빼,E009,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+뿐,E007,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+살,E006,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+생,E004,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+셋,E003,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+쓰,E002,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+앗,E000,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+았,DFFF,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+애,DFFE,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+었,DFFD,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+엔,DFFC,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+역,DFFB,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+운,DFFA,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+울,DFF9,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+음,DFF8,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+응,DFF7,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+임,DFF6,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+잖,DFF5,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+잡,DFF4,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+쟁,DFF3,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+적,DFF2,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+졌,DFF1,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+죠,DFF0,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+줘,DFEF,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+쯤,DFEE,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+찮,DFED,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+첩,DFEC,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+초,DFEB,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+친,DFEA,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+카,DFE9,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+터,DFE8,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+했,DFE7,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+훌,DFE6,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+희,DFE5,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+히,DFE4,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+!,DFE3,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+",",DFE2,unused parsed-dialogue code; bulk batch S3011 S3022 SC011
+놀,DFE1,unused parsed-dialogue code; bulk batch S3011 S3022 SC011

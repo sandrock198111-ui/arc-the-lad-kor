@@ -786,3 +786,75 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Added and compiled `02_scripts/map_savestate_script.py`. Its slot-5 output contains 17 bounded dialogue payloads and excludes two non-text command false positives.
 - No game DAT, patch-only ZIP, BIN, CUE, or `00_original` file was modified.
 - The earlier S2054 runtime-source selection is rejected for this target. No patch based on that selection should be reused.
+
+2026-07-13 - SF0B1 return-scene translation build
+- Modified files in the patch: `F/SF0B1.DAT` and `COMM.IMG`; cumulative output retains the other accepted game files.
+- Method: verified all 17 expected Japanese source byte ranges and their following `00 00` boundaries, encoded the Korean manifest, and filled only the remaining bytes inside each original body.
+- Font test: rendered 94 Korean glyphs into unused `E0 xx` codes and verified every target bitmap; changes outside each glyph's assigned 1bpp plane were rejected.
+- Cumulative test: 30 unique ZIP entries, no build report, and every base entry except `COMM.IMG` is byte-identical. `F/SF0B1.DAT` is the newly added scene file.
+- Result: static PASS. Output SHA256 `583BD257085D6F9651E14931E799867D6C92804A9BCE30A384B5560052E9020B`.
+- Runtime status: pending fresh package/build verification of the return scene.
+
+2026-07-13 - SF0B1 first runtime result and verified-glyph rebuild
+- User runtime result: the target return scene changed correctly, Korean extension glyphs rendered, dialogue control flow remained intact, and some characters still appeared as Japanese.
+- Cause: thirty characters in the translation used pre-existing charmap entries whose actual glyph planes had never been verified.
+- Fix: reassigned those characters to unused `E0 xx` codes, rendered their exact planes, and made the extended table override legacy mappings for this builder.
+- Static result: PASS; 17/17 bodies fit and decode to the manifest, all visible characters use the extended table, 132 glyph bitmaps match, and no unrelated plane or cumulative game file changed.
+- Output: `03_output/story_sf0b1_return_full_korean_patch_only.zip`, SHA256 `403118BAEEFCFD4D683CC4E94596AF1956EAFD59F0873DA36C31A99A62A01B9F`.
+- Runtime status: Japanese-free rebuild pending user packaging and scene verification.
+
+2026-07-13 - Enemy-turn cursor collision analysis and rebuild
+- Inputs: current DuckStation slots 1-4, captured at different enemy-turn cursor positions/animation phases.
+- Runtime observation: the Japanese-free SF0B1 dialogue build renders every tested line correctly; the enemy-turn cursor displays glyph fragments while moving.
+- State analysis: the four final state frames are 3,833,253 bytes; PS1 VRAM begins at state offset `0x202000`. Patched COMM rows match VRAM at 2048-byte stride.
+- GPU-command evidence: the cursor animation includes a 16x16 textured rectangle sampling `UV=(32,160)` and a later animation row. This maps to COMM font columns 9 and 10.
+- Fix: moved all fourteen extended mappings from columns 9/10 and rejected those columns in future builds.
+- Static result: PASS; 30 unique files, 17/17 dialogues, 132 glyphs, zero legacy text codes, unrelated cumulative files unchanged, and every pixel in reserved columns 9/10 equals the accepted base.
+- Output SHA256: `9285DE86BFA3F3834935D6A579A7925697056CF05200405EF5D0CC294E20A525`.
+- Runtime status: cursor-safe rebuild pending packaging and enemy-turn verification.
+
+2026-07-13 - Enemy-turn cursor retry and corrected source rectangle
+- Runtime result for `story_sf0b1_return_cursor_safe_full_patch_only.zip`: FAIL; the cursor artifact remained unchanged.
+- Cause: the earlier UV-to-COMM conversion used the wrong texture-page origin. Columns 9/10 were not the artifact source.
+- Inputs: four fresh slots saved at 22:16-22:17 during different cursor positions.
+- Method: reconstructed wrapped native framebuffers from serialized VRAM, aligned the four 32x32 cursor sprites, and ranked all COMM candidate rectangles by their shared 4bpp index/color pattern.
+- Result: `x=0, y=128` is the unique best 32x32 match. Its mapped glyphs include the visible `고` and `과` fragments.
+- Fix: moved fifteen mappings from rows 11-13 / columns 0-2 to unused row-14 cells; future builds reject all nine confirmed cursor cells.
+- Static result: PASS; the full logical rectangle `x=0..31, y=128..159` equals the accepted COMM base, with 17 dialogues, 132 glyphs, and 30 unique cumulative files preserved.
+- Output SHA256: `95178073FC93F88F9BE058439FED476DF918B74F667E6E5C232D3DBDB70D042D`.
+- Runtime status: corrected cursor build pending packaging and enemy-turn verification.
+
+2026-07-13 - First corpus-driven bulk translation build
+- Target: five high-confidence bodies in `4/S4041.DAT` at `0x47950`, `0x479A4`, `0x479F4`, `0x47A3E`, and `0x47AA4`.
+- Base: runtime-accepted `story_sf0b1_return_cursor_fixed_full_patch_only.zip` with 30 files.
+- Font: added sixteen two-byte glyph codes selected from story-wide zero-use codes; rejected `E0DD` and `E0DE` after the safety scan found existing story occurrences.
+- Static verification: PASS. The ZIP has 31 unique files; every base file except `COMM.IMG` is byte-identical; translated payloads round-trip to the manifest; all first `00 00` boundaries remain unchanged; all sixteen glyph planes match rendered targets; and COMM logical cursor rectangle `x=0..31, y=128..159` is byte-identical to the accepted base.
+- Output: `03_output/story_bulk_s4041_cursor_fixed_full_patch_only.zip`, size 2,279,807 bytes, SHA256 `60D6B3D0C62A9AF6B0B5D998E5D6E09DAD1F89ED64E806A3E1558AFA47544D65`.
+- Runtime status: pending user packaging and S4041 scene verification.
+
+2026-07-13 - Current post-throne S3031 bulk translation
+- Source mapping: latest `HASH-39247B554F59E6EC_resume.sav` matched `31/S3031.DAT` at 1792/1792 bytes using `map_savestate_script.py`.
+- Target: all 27 high-confidence bounded S3031 dialogue bodies from `0x47A4C` through `0x4845E`.
+- Font allocation: used thirteen story-wide zero-use codes and reassigned `E0C5`, `E039`, and `E08F` only after proving each has zero occurrences in every DAT inside the 31-file cumulative base. Other apparent reclaim candidates were rejected because cumulative DAT occurrences existed.
+- Static verification: PASS. 32 unique files; all prior non-font files byte-identical; 27 translations round-trip exactly; 161 glyph planes match; every first `00 00` boundary remains intact; confirmed COMM cursor rectangle is unchanged.
+- Output: `03_output/story_bulk_s3031_s4041_cursor_fixed_full_patch_only.zip`, size 2,348,769 bytes, SHA256 `86D094CD3C1496031456F8C1E181379DA9B706A2386481687B270A67BB83A27D`.
+- Runtime status: pending packaging and verification from the current post-throne scene.
+
+2026-07-13 - Fresh slots 1-7 S2041 airship sequence
+- Source mapping: every fresh slot from 1 through 7 matched `21/S2041.DAT` at 1792/1792 bytes. The older resume-state S3031 mapping is not the current slot sequence.
+- Screens: slots 1-3 are crew dialogue; slot 4 is the confidence choice; slot 5 is the wait response; slot 6 leads to help; slot 7 is the follow-up help-topic choice. The first confidence option departs by airship.
+- Target: 21 bounded S2041 blocks from `0x47FF8` through `0x4880A`, including both `E5 04` three-option menus.
+- Font allocation: 32 E0 codes unused by all 5,348 parsed original dialogue candidates and outside the confirmed cursor rectangle. Total verified map size is 193 glyphs.
+- Static verification: PASS. 33 unique files; all prior non-font files byte-identical; 21 blocks round-trip; each menu retains three `E5 04` markers; 193 glyph planes match; all boundaries and cursor bytes are unchanged.
+- Output: `03_output/story_bulk_s2041_s3031_s4041_cursor_fixed_full_patch_only.zip`, size 2,491,828 bytes, SHA256 `1C707AC8DC246B146BDF7F26B4DD14694D4F33A1A9FF817E42DB952364A21BDC`.
+- Runtime status: pending packaging and fresh-slot verification.
+
+2026-07-14 - S3011/S3022/SC011 bulk progression build
+- State-source test: slot 1 matched `31/S3011.DAT`, slots 2-3 matched `31/S3022.DAT`, and resume matched `C1/SC011.DAT`, each at 1792/1792 bytes.
+- Scope: one S3011 body, 36 S3022 bodies, and eight SC011 bodies. Leading `02 00`, `03 00`, `05 00`, and `07 00` speaker selectors were kept outside the replacement ranges where present.
+- Failed build checks: several draft translations exceeded their bounded capacities and were rejected before output/charmap mutation. A later draft ZIP was rejected after the report exposed two unquoted CSV comma fields; it was overwritten after quoting and full-text capacity checks.
+- Final static verification: PASS. The output has 36 unique files; all 33 prior non-font files are byte-identical; every target file equals an independent reconstruction from its original plus the manifest; no target byte changed outside its declared ranges; all first `00 00` boundaries remain intact; all choice-marker counts match.
+- Font verification: 68 new codes are absent from every parsed original dialogue body and outside the permanent cursor cells. All 261 extended glyph planes reconstruct the output `COMM.IMG`; logical cursor rectangle `x=0..31, y=128..159` is unchanged.
+- Changed bytes: `31/S3011.DAT` 42, `31/S3022.DAT` 1032, `C1/SC011.DAT` 191.
+- Output: `03_output/story_bulk_s3011_s3022_sc011_s2041_s3031_s4041_cursor_fixed_full_patch_only.zip`, size 2,781,440 bytes, SHA256 `6A2550AC302945B9A9DF1DD08E0B5D6F64192109DE0926E0140585953AA495A9`.
+- Runtime status: pending user packaging and scene verification.

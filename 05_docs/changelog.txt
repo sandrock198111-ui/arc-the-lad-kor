@@ -217,3 +217,52 @@
 - Added `02_scripts/map_savestate_script.py` to map DuckStation save states to the DAT script block actually loaded in PS1 RAM.
 - Verified the current event-return sequence as `22/S2053.DAT -> F/SF091.DAT -> F/SF0B1.DAT` with exact 1792-byte window matches.
 - Retracted the earlier S2054 source selection for the post-event target; no game data or patch archive was changed in this analysis step.
+
+2026-07-13
+- Added `05_docs/story_sf0b1_return_translation.csv` with 17 translated post-event throne-room dialogue bodies.
+- Added `05_docs/korean_charmap_extended.csv` with 94 Korean glyphs assigned to unused `E0 xx` story codes.
+- Added `02_scripts/build_story_sf0b1_return_full.py`, which patches `F/SF0B1.DAT`, writes isolated font bitplanes in `COMM.IMG`, and preserves the accepted cumulative baseline.
+- Built the 30-file cumulative `story_sf0b1_return_full_patch_only.zip` from `story_s2051_throne_full_patch_only.zip`.
+
+2026-07-13
+- Recorded the first SF0B1 runtime result: correct scene and working extended Korean glyphs, with Japanese remnants caused by legacy charmap entries.
+- Reassigned the thirty legacy characters used by this scene to verified unused extended codes and added eight characters required by the shortened final prose.
+- Shortened bounded translations without changing the scene's story meaning so every all-extended payload fits its original byte capacity.
+- Built `story_sf0b1_return_full_korean_patch_only.zip` with 132 verified extended glyphs and no legacy text codes in the 17 translated bodies.
+
+2026-07-13
+- Analyzed four enemy-turn DuckStation states and located serialized PS1 VRAM at state offset `0x202000`.
+- Confirmed `COMM.IMG` rows appear in VRAM at 2048-byte stride and that the cursor animation samples the extended-font region around `UV=(32,160)`.
+- Reserved font columns 9 and 10, relocated fourteen extended characters, and added a build-time rejection for future cursor-column assignments.
+- Built `story_sf0b1_return_cursor_safe_full_patch_only.zip`; the reserved cursor columns now match the accepted base COMM data exactly.
+
+2026-07-13
+- Retracted the incorrect cursor column-9/10 mapping after the first cursor-safe build failed runtime verification.
+- Reconstructed four fresh save-state framebuffers at native 320x240 resolution and aligned their 32x32 cursor sprites.
+- Matched the cursor index pattern to COMM rectangle `x=0..31, y=128..159`, relocated fifteen conflicting glyphs, and changed the build guard to reserve rows 11-13 / columns 0-2.
+- Built `story_sf0b1_return_cursor_fixed_full_patch_only.zip` and verified the entire cursor source rectangle against the accepted COMM baseline.
+
+2026-07-13
+- Added `02_scripts/extract_story_corpus.py` and `05_docs/japanese_charmap_manual.csv` for repeatable high-confidence story-corpus extraction from the original DAT/COMM data.
+- Added `05_docs/story_s4041_bulk_translation.csv` with five natural Korean translations for `4/S4041.DAT`.
+- Added sixteen unused, cursor-safe codes to `05_docs/korean_charmap_extended.csv` and added `02_scripts/build_story_s4041_bulk.py`.
+- Built the 31-file cumulative `story_bulk_s4041_cursor_fixed_full_patch_only.zip` from the accepted cursor-fixed baseline.
+
+2026-07-13
+- Mapped the current post-throne DuckStation resume state exactly to `31/S3031.DAT` and corrected the earlier user-facing scene-location assumption for S4041.
+- Added `05_docs/story_s3031_bulk_translation.csv` with all 27 high-confidence S3031 dialogue bodies and `02_scripts/build_story_s3031_bulk.py`.
+- Expanded the verified table to 161 characters. Three mappings were reassigned only after proving their codes occur zero times in the complete 31-file cumulative DAT set.
+- Built `story_bulk_s3031_s4041_cursor_fixed_full_patch_only.zip` with 32 cumulative game files.
+
+2026-07-13
+- Mapped fresh slots 1-7 to `21/S2041.DAT` at 100% and identified the complete airship crew dialogue/choice sequence.
+- Added `05_docs/story_s2041_bulk_translation.csv` with 21 dialogue and menu blocks, including both three-way choices and branch responses.
+- Added 32 parsed-corpus-unused E0 glyph mappings and `02_scripts/build_story_s2041_bulk.py`.
+- Built the 33-file cumulative `story_bulk_s2041_s3031_s4041_cursor_fixed_full_patch_only.zip`.
+
+2026-07-14
+- Mapped the latest slot 1, slots 2-3, and resume states to `31/S3011.DAT`, `31/S3022.DAT`, and `C1/SC011.DAT` with exact 1792-byte matches.
+- Added `05_docs/story_s3011_s3022_sc011_bulk_translation.csv` with 45 confirmed bounded dialogue/menu replacements.
+- Added `02_scripts/build_story_s3011_s3022_sc011_bulk.py` and `02_scripts/verify_story_s3011_s3022_sc011_bulk.py` for deterministic cumulative construction and independent reconstruction checks.
+- Added 68 parsed-dialogue-unused, cursor-safe glyph mappings, raising `korean_charmap_extended.csv` to 261 entries.
+- Built the 36-file cumulative `story_bulk_s3011_s3022_sc011_s2041_s3031_s4041_cursor_fixed_full_patch_only.zip`.

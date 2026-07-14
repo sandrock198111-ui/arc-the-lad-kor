@@ -1,0 +1,6 @@
+offset,expected_hex,text
+0x47950,2e 2e 2a 24 b7 3a 2d 1c 87 de 0f 23 dd be 1b 21 3f 29 1f 89 c2 35 37,여기가 편지 속 장소야
+0x479A4,d2 3e 24 38 26 45 20 32 4b 48 29 1f 3d 37,휴 지쳤어
+0x479F4,2e 32 28 6e 20 1e 33 3c,뭐지
+0x47A3E,de 59 de 8c 23 6e 20 3f 22 6a 37,뭔가 있다
+0x47AA4,94 23 dd b9 39 1e dd f5 de fa 2f de 79 51 1e 7e e6 01 e6 01 41 1c 61 2f 38 29 21 be 2a dd e2 23 2e 1f 46 3d 37 e4 79 e4 3d e4 3d,돌의 기억을 찾는 자여|그 힘으로 답하라

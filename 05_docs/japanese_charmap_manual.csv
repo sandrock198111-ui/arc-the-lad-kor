@@ -1,0 +1,41 @@
+code_hex,char,evidence
+1B,い,visual atlas and 残した/ください context
+1C,の,exact-near atlas and repeated grammar context
+1D,な,visual atlas and なのだ context
+1E,し,visual atlas and 残した context
+1F,た,visual atlas and 残した context
+20,か,visual atlas
+21,て,visual atlas and ください context
+22,る,visual atlas and 滅亡する context
+23,に,visual atlas and 2人に同行 context
+24,、,visual atlas and sentence context
+26,う,visual atlas and という context
+27,ま,visual atlas
+28,は,visual atlas
+29,つ,visual atlas and になって context
+2A,が,visual atlas and repeated grammar context
+2B,す,exact bitmap and repeated grammar context
+2C,・,exact bitmap
+2D,ん,visual atlas
+2E,こ,nearest bitmap and visual atlas
+2F,を,visual atlas and repeated grammar context
+30,で,visual atlas
+31,ー,visual atlas
+32,れ,visual atlas
+33,ら,visual atlas
+35,だ,visual atlas and なのだ context
+36,と,visual atlas and という context
+37,。,visual atlas and sentence boundaries
+38,も,visual atlas and 私も context
+39,り,visual atlas
+3A,さ,visual atlas and させてください context
+3C,？,visual atlas and dialogue context
+3D,よ,exact bitmap
+3E,く,exact bitmap and ください context
+3F,あ,visual atlas
+40,や,visual atlas
+41,そ,visual atlas and その時 context
+43,わ,visual atlas
+4A,じ,visual atlas
+4B,ち,visual atlas
+4C,ね,visual atlas

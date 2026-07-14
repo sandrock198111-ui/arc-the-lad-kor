@@ -1011,3 +1011,64 @@ story_test_23 S1072 안전 경계 기준
 - Mapping: pre-event slot 1 = `22/S2053.DAT`; event slots 2-4 = `F/SF091.DAT`; post-event slot 5 = `F/SF0B1.DAT`.
 - File `0x47800` maps to PS1 RAM `0x117000` with delta `0xCF800`; the verified comparison span is `0x700` bytes.
 - Use `02_scripts/map_savestate_script.py` for future story-state batches. The earlier S2054 target claim for this return scene is invalid and must not be used.
+
+2026-07-13 SF0B1 return-scene translation:
+- The post-event return scene is `F/SF0B1.DAT`; all 17 bounded dialogue bodies are translated in the current build.
+- The PSX decoder uses one-byte codes below `0xDD` and two-byte codes `0xDD-0xE0`. For two-byte codes, glyph index is `(first - 0xDD) * 255 + second + 0xDB`.
+- `COMM.IMG` packs four independent 1bpp glyph planes into each 4-bit pixel. A Korean glyph edit must change only its selected plane.
+- Current cumulative patch-only output: `03_output/story_sf0b1_return_full_patch_only.zip`.
+- ZIP has 30 unique game files. Static verification passed for 17 dialogues, 94 extended Korean glyphs, neighboring bitplane preservation, and unchanged cumulative files.
+- SHA256: `583BD257085D6F9651E14931E799867D6C92804A9BCE30A384B5560052E9020B`.
+- Runtime scene verification is pending a fresh package/build test.
+
+2026-07-13 SF0B1 verified-glyph rebuild:
+- The first runtime test proved the scene source, control flow, and extended bitplane writer, but exposed Japanese glyphs from thirty unverified legacy Korean mappings.
+- All Hangul and punctuation used by the 17 SF0B1 translations now use the verified extended table. The scene contains zero legacy text codes.
+- Current cumulative output: `03_output/story_sf0b1_return_full_korean_patch_only.zip`.
+- Static verification: 30 unique files, 17 bounded dialogues, 132 extended glyphs, neighboring planes preserved, and unrelated cumulative files unchanged.
+- SHA256: `403118BAEEFCFD4D683CC4E94596AF1956EAFD59F0873DA36C31A99A62A01B9F`.
+- Runtime verification of the Japanese-free rebuild is pending.
+
+2026-07-13 battle-cursor-safe glyph allocation:
+- Runtime verification confirmed all 17 SF0B1 dialogues render in Korean. The remaining defect was a moving enemy-turn cursor showing glyph fragments.
+- DuckStation slots 1-4 show the cursor's textured-rectangle animation reading the shared COMM texture around `UV=(32,160)` and a later animation row.
+- In the verified COMM-to-VRAM layout, that UV strip overlaps font columns 9 and 10. These columns are now permanently reserved from extended glyph allocation.
+- Fourteen mapped characters were moved to unused non-cursor cells; the vacated cursor columns are byte-identical to the accepted cumulative base.
+- Current output: `03_output/story_sf0b1_return_cursor_safe_full_patch_only.zip`, SHA256 `9285DE86BFA3F3834935D6A579A7925697056CF05200405EF5D0CC294E20A525`.
+- Runtime cursor verification is pending.
+
+2026-07-13 battle-cursor collision correction v2:
+- The first cursor-safe build still showed the same artifact. Its column-9/10 exclusion was based on an incorrect texture-page origin and is retracted.
+- Four fresh states were reconstructed as native 320x240 framebuffers. Their aligned 32x32 cursor sprites were matched against every candidate COMM index pattern.
+- The unique high-confidence source is `COMM.IMG` logical rectangle `x=0..31, y=128..159`. The visible `고/과` fragments agree with mappings inside that rectangle.
+- Reserved cells are now rows 11-13, columns 0-2. Fifteen mappings were relocated to unused cells in row 14.
+- Current output: `03_output/story_sf0b1_return_cursor_fixed_full_patch_only.zip`, SHA256 `95178073FC93F88F9BE058439FED476DF918B74F667E6E5C232D3DBDB70D042D`.
+- Static verification proves the complete 32x32 cursor source rectangle equals the accepted pre-extension COMM base. Runtime verification is pending.
+
+2026-07-13 first corpus-driven bulk translation batch:
+- The accepted cursor-fixed 30-file ZIP remains the cumulative base. The first structure-driven batch adds only `4/S4041.DAT` and updates `COMM.IMG` with sixteen verified extended glyph planes.
+- Five high-confidence S4041 dialogue bodies were translated without save-state-per-line mapping: `0x47950`, `0x479A4`, `0x479F4`, `0x47A3E`, and `0x47AA4`.
+- Current cumulative output: `03_output/story_bulk_s4041_cursor_fixed_full_patch_only.zip`.
+- The ZIP has 31 unique game files and SHA256 `60D6B3D0C62A9AF6B0B5D998E5D6E09DAD1F89ED64E806A3E1558AFA47544D65`.
+- Independent static verification passed for cumulative-file preservation, source boundaries, translation round-trip decoding, all sixteen new glyph planes, and the confirmed battle-cursor rectangle. Runtime verification is pending.
+
+2026-07-13 current post-throne progression batch:
+- The latest DuckStation `resume.sav` maps exactly to `31/S3031.DAT` at 1792/1792 bytes. This is the user's current untranslated scene after the throne-room progression.
+- All 27 high-confidence bounded dialogue bodies in S3031 are translated in the cumulative build. The earlier S4041 batch is retained but belongs to a later letter/stone-inscription scene, not this immediate progression point.
+- Current cumulative output: `03_output/story_bulk_s3031_s4041_cursor_fixed_full_patch_only.zip`.
+- The ZIP has 32 unique game files and SHA256 `86D094CD3C1496031456F8C1E181379DA9B706A2386481687B270A67BB83A27D`.
+- Independent static verification passed for 27 dialogue round trips, 161 extended glyph planes, all boundaries, cumulative-file preservation, and the confirmed cursor rectangle. Runtime verification is pending.
+
+2026-07-13 current airship-choice scene correction and batch:
+- Fresh DuckStation slots 1-7 all map exactly to `21/S2041.DAT` at 1792/1792 bytes. They supersede the stale `resume.sav` for identifying the user's current progression point.
+- Slot order: 1-3 airship crew dialogue, 4 first three-way choice, 5 second-choice response, 6 third-choice response, and 7 the follow-up three-way help choice. Choosing the first option proceeds to airship departure.
+- Current cumulative output: `03_output/story_bulk_s2041_s3031_s4041_cursor_fixed_full_patch_only.zip`.
+- The ZIP has 33 unique game files and SHA256 `1C707AC8DC246B146BDF7F26B4DD14694D4F33A1A9FF817E42DB952364A21BDC`.
+- All 21 S2041 dialogue/choice blocks in the current sequence are translated. Independent static verification passed for three choice markers per menu, round-trip decoding, 193 glyph planes, cumulative-file preservation, and the confirmed cursor rectangle. Runtime verification is pending.
+
+2026-07-14 S3011/S3022/SC011 bulk progression batch:
+- Fresh state mapping is exact at 1792/1792 bytes: slot 1 = `31/S3011.DAT`, slots 2-3 = `31/S3022.DAT`, and resume = `C1/SC011.DAT`.
+- The cumulative build adds one confirmed S3011 arrival dialogue, all 36 high-confidence S3022 dialogue/choice bodies, and eight high-confidence SC011 battle-entry bodies. Medium-confidence binary false positives were not modified.
+- Current cumulative output: `03_output/story_bulk_s3011_s3022_sc011_s2041_s3031_s4041_cursor_fixed_full_patch_only.zip`.
+- The ZIP has 36 unique game files and SHA256 `6A2550AC302945B9A9DF1DD08E0B5D6F64192109DE0926E0140585953AA495A9`.
+- Independent static verification passed for exact full-file reconstruction, 45 bounded payloads, preserved speaker selectors and choice controls, 261 glyph planes, unchanged prior non-font files, and the confirmed battle-cursor rectangle. Runtime verification is pending user packaging.

@@ -249,3 +249,66 @@ Event-return exact source mapping - 2026-07-13
 - The slot-5 window contains 17 bounded dialogue payloads. Each maps directly to `F/SF0B1.DAT` by `file_offset = ram_offset - 0xCF800`.
 - A separate ten-state historical set maps exactly against the baseline extraction as `SF0D1, SF0D1, S2053, S2053, SF091, SF091, SF0B1, SF0B1, S2081, S2081` in slot-number order.
 - `02_scripts/map_savestate_script.py` automates this mapping and emits ranked source matches plus all bounded dialogue offsets. Prefer this method over visual-background or pointer-value file guesses.
+
+PSX dialogue glyph decoder and COMM bitplanes - 2026-07-13
+- The verified decoder routine is around PSX address `0x8016B3C0`. A byte below `0xDD` consumes one byte and maps to glyph index `byte - 1`.
+- Prefixes `0xDD-0xE0` consume a second byte and map to glyph index `(first - 0xDD) * 255 + second + 0xDB`.
+- The renderer around `0x8016B518` maps an index with `row, rem = divmod(index, 84)` and `column, plane = divmod(rem, 4)`.
+- Each `COMM.IMG` pixel nibble contains four independent 1bpp glyph planes. Writing nibble value `0xF` corrupts three neighboring glyphs and explains the failed earlier two-byte font experiments.
+- Correct font writing sets or clears only `1 << plane` while preserving the other three bits.
+- Ninety-four `E0 xx` codes selected by `korean_charmap_extended.csv` do not occur in the baseline story DAT script regions at and after file offset `0x45000`.
+- `build_story_sf0b1_return_full.py` verifies source bytes, boundaries, code non-use, glyph plane isolation, and cumulative-file preservation before producing the ZIP.
+
+Legacy charmap rejection - 2026-07-13
+- A character name in `korean_charmap.csv` is not proof that the real decoder/COMM plane displays that Hangul character.
+- The first SF0B1 runtime build mixed correct extended Hangul with Japanese because thirty scene characters still used unverified legacy mappings.
+- For natural story translation, prefer verified extended mappings. A builder may override a legacy mapping only when the replacement extended code is confirmed unused and its exact bitplane is rendered and checked.
+- The SF0B1 verified-glyph rebuild uses 132 extended mappings and zero legacy mappings for every visible character in its seventeen dialogue bodies.
+
+Battle cursor / COMM texture collision - 2026-07-13
+- DuckStation's final decompressed state frame stores PS1 VRAM at state offset `0x202000` for the current build. VRAM is 1024x512 16bpp and occupies `0x100000` bytes.
+- `COMM.IMG` is uploaded as 896 bytes per source row into VRAM rows with 2048-byte stride; the observed first-row placement is state offset `0x202058`.
+- Enemy-turn cursor commands sample a 16x16 shared texture around `UV=(32,160)` and another animation row. With the current COMM placement, the corrupted strip corresponds to font columns 9 and 10.
+- A code being unused in story DAT files does not prove its glyph cell is safe: non-text battle graphics can sample the same COMM texture cells directly by UV.
+- Extended font allocator rule: never assign a glyph to columns 9 or 10. The SF0B1 builder enforces this through `CURSOR_RESERVED_COLUMNS`.
+- Fourteen mappings formerly in these columns were moved. The cursor columns in the rebuilt COMM are verified byte-for-byte against the accepted pre-extension cumulative base.
+
+Battle cursor source correction - 2026-07-13
+- The prior column-9/10 cursor claim is false and must not guide future allocation. It came from converting packet UV without the correct texture-page origin.
+- PS1 display starts at VRAM x=748 and wraps after x=1023; reconstruct a native 320x240 framebuffer from x=748..1023 followed by x=0..43.
+- Four aligned native cursor captures identify a 32x32 sprite. Exhaustive COMM index-pattern matching gives logical rectangle `x=0..31, y=128..159` as the unique strong source.
+- This rectangle intersects glyph cells `(rows 11,12,13) x (columns 0,1,2)`. These nine cells are permanently unavailable for extended Hangul.
+- The corrupt screenshot visibly contains `고` and `과`; both were mapped inside the confirmed rectangle before relocation, independently validating the match.
+- The corrected build restores every nibble in the full cursor rectangle from the accepted cumulative COMM base and relocates all fifteen mapped glyphs outside it.
+
+Story corpus extraction - 2026-07-13
+- `02_scripts/extract_story_corpus.py` raster-matches original COMM bitplanes against MS Gothic, then applies only manually confirmed overrides from `05_docs/japanese_charmap_manual.csv`.
+- Only DAT offsets at or after `0x45000` are eligible. The `high` class contains 2,612 bounded dialogue candidates in the current baseline and closely matches the earlier structural count; `medium` candidates include false positives and must not be bulk-patched.
+- Nearest-raster `<N:...>` output is a reading hint, not a confirmed character. It may assist translation but cannot establish a patch address or glyph mapping by itself.
+- A first file-level batch translated all five high-confidence bodies in `4/S4041.DAT` without per-line save-state mapping, demonstrating the intended structure-first workflow.
+
+Extended-code allocation update - 2026-07-13
+- New two-byte codes must be counted across every baseline story DAT from offset `0x45000`, not assumed unused because adjacent codes are free.
+- `E0DD` occurs in `6/S6021.DAT` and `7/S7024.DAT`; `E0DE` also occurs in baseline story data. They were rejected for S4041 allocation.
+- S4041 uses sixteen verified zero-use codes from `E0D4-E0E5`, skipping occupied codes. All assigned cells are outside the permanent cursor reservation `(rows 11-13) x (columns 0-2)`.
+
+Post-throne S3031 mapping and batch - 2026-07-13
+- The latest resume state after the throne-room progression maps exactly to `31/S3031.DAT` at 1792/1792 bytes. `4/S4041.DAT` is a later scene whose Japanese text mentions a father's letter and a stone inscription; it must not be presented as the immediate post-throne scene.
+- S3031 has 27 high-confidence bounded dialogue bodies in the active sequence and all are included in the current cumulative batch.
+- A charmap entry unused by the newest manifests is not automatically reclaimable. Its two-byte code must also occur zero times in every DAT in the current cumulative ZIP.
+- Only `E0C5`, `E039`, and `E08F` passed that cumulative zero-use test and were reassigned. The final build has 161 verified mappings and preserves the confirmed cursor texture rectangle.
+
+S2041 airship dialogue and choice structure - 2026-07-13
+- Fresh slots 1-7 all load `21/S2041.DAT`; use them instead of the stale resume state to identify the current post-throne progression.
+- S2041 choice items are embedded in bounded text bodies with `E5 04` before each option and `E6 01` between lines. Preserve all three menu markers and the final line separator when translating.
+- Current sequence uses 21 bounded blocks from `0x47FF8` through `0x4880A`. The earlier `0x47EFE` energy-gate choice is unrelated to the current airship sequence and was not modified.
+- Raw two-byte occurrence scanning across an entire DAT counts commands and binary data as glyphs and is too restrictive for later allocation. For S2041, a code is eligible only if absent from all 5,348 structurally parsed dialogue bodies, absent from existing mappings, and outside the confirmed cursor cells.
+- This parsed-corpus rule leaves 266 candidate codes before the S2041 allocation. Thirty-two high-index E0 codes were assigned, raising the verified Korean map to 193 characters without entering DD-DF decoder ranges.
+
+S3011/S3022/SC011 state mapping and control preservation - 2026-07-14
+- Exact loaded-window mapping identifies latest slot 1 as `31/S3011.DAT`, slots 2-3 as `31/S3022.DAT`, and resume as `C1/SC011.DAT`. Visual background alone is not used for source selection.
+- `31/S3011.DAT` has one confirmed high-confidence dialogue body at `0x47FEE`; its medium candidates are binary false positives and must not be bulk-patched.
+- `31/S3022.DAT` has 36 confirmed high-confidence bodies from `0x47CBA` through `0x48AE4`. `C1/SC011.DAT` contributes seven battle-entry choice bodies and one short battle line.
+- Some structurally valid bodies begin after an embedded two-byte speaker selector. Preserve the selectors and patch after them: S3022 `03 00` cases use adjusted starts `0x47D08`, `0x47D54`, `0x4866A`, and `0x48708`; SC011 adjusted starts include `0x46EAA`, `0x46FD8`, `0x47034`, and `0x48DEA`.
+- CSV translation cells containing literal commas must be quoted. The build report must be reviewed for the complete intended text, not only a successful process exit.
+- The current batch uses 68 additional codes absent from all structurally parsed original dialogue bodies and outside cursor cells. The verified extended map now contains 261 characters.
