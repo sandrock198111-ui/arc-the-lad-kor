@@ -1,0 +1,6 @@
+glyph_width=12
+space_glyph_index=0x9B
+space_advance=6
+font_changed=false
+new_code_cave=false
+sha256=508FCD26D7D758FFF12CF3B63001A799E4D0AEDB507EBE5F335AB20CEE2A1F10

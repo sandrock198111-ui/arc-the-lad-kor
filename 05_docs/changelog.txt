@@ -330,3 +330,6 @@
 - Rejected the v0.7 per-character wrapper after runtime failed to enter normal emulation and remained at game 0 FPS.
 - Added `build_story_intro_dialogue_width11_v08.py`, which uses only existing dialogue-state reset delay slots and introduces no new executable wrapper.
 - Built the cumulative 11-pixel dialogue-width isolation trial `story_intro_dialogue_width11_v08_cumulative_patch_only.zip`, SHA256 `04A6162400C02F1BEC2397A28F284552EC1EA836BF135278976BDBDBCD359763`.
+- Rejected v0.8 after runtime showed only a subtle spacing change and clipped the right edge of wide Hangul glyphs.
+- Added `build_story_intro_halfwidth_space_v09.py`; it retains the accepted v0.6 font and 12-pixel glyph width while reducing only space index `0x9B` to a 6-pixel X advance.
+- Built `story_intro_halfwidth_space_v09_cumulative_patch_only.zip`, SHA256 `508FCD26D7D758FFF12CF3B63001A799E4D0AEDB507EBE5F335AB20CEE2A1F10`.

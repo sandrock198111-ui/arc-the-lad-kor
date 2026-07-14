@@ -975,3 +975,13 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Independent MIPS disassembly: PASS. All four reset calls retain their original target, each delay slot loads 11, and the reset return delay slot stores only dialogue width.
 - Reproducibility: PASS. Builds separated by three seconds produced SHA256 `04A6162400C02F1BEC2397A28F284552EC1EA836BF135278976BDBDBCD359763`.
 - Runtime status: pending confirmation of normal boot, dialogue display, 11-pixel spacing, event continuation, and unchanged UI/cursor.
+
+2026-07-14 - Dialogue width v0.8 runtime rejection / half-width-space v0.9
+- v0.8 runtime: PARTIAL/REJECTED. It booted and dialogue progressed, proving the minimal state patch safe, but the 1-pixel spacing reduction was difficult to notice and wide glyphs such as `하` were visibly clipped. The font/width edits are rejected.
+- Screenshot diagnosis: `약` itself remained visible in the new external line. The later `속 지킬 거야?` is an old inline tail whose first glyph location had been replaced by `E2 nn`; multiple expanded entries retain similar tails. This is a separate completion-skip defect.
+- v0.9 input: accepted v0.6, not v0.8. `COMM.IMG` is byte-identical to v0.6 and all normal glyphs retain 12-pixel sprite width and X advance.
+- v0.9 patch: original `nop` at `0x8016B524` holds decoded space index `0x9B`; the existing X-advance tail at `0x8016B63C-0x8016B65C` selects 6 only for that index and otherwise uses state width 12.
+- No new function, JAL target, code cave, stack frame, font rewrite, or story-data change is introduced. Against v0.6 only `PSX.EXE` differs.
+- Independent MIPS disassembly: PASS. Space comparison, branch delay, normal/space advance merge, X store, glyph-count increment, and return path are correct.
+- Reproducibility: PASS. Builds separated by three seconds produced SHA256 `508FCD26D7D758FFF12CF3B63001A799E4D0AEDB507EBE5F335AB20CEE2A1F10`.
+- Runtime status: pending normal boot, visibly narrower spaces, full glyph strokes, wrapping, UI, and battle-cursor confirmation.
