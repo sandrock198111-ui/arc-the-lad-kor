@@ -907,3 +907,11 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Reproducibility: PASS. Consecutive builds produced SHA256 `A45B8891D01DE74A2D978252E8A5FC3461E36C981CBBE8F859842A9214B43DE9`.
 - Cursor regression: PASS. The complete logical source rectangle `x=0..31, y=128..159` is byte-identical to the v3 base.
 - Runtime status: pending user packaging and verification of four-row auto-wrap, name-on-first-line layout, and next-dialogue progression.
+
+2026-07-14 - Intro E2 expanded v0.1 runtime rejection / v0.2 correction
+- v0.1 runtime result: FAIL. After an E2 secondary string returned, `9C` padding in the original inline body was interpreted as visible spaces and produced repeated blank dialogue pages.
+- v0.2 correction: all 13 original bodies now begin with `E2 nn 00 00`; every remaining byte in each bounded body is zero. Secondary text slots and translations are unchanged.
+- Independent static result: PASS. Immediate inline termination 13/13, external slot payloads 13/13, changed cumulative entries exactly `1/S1011.DAT`, `1/S1071.DAT`, and `COMM.IMG`.
+- Reproducibility: PASS. Two consecutive builds produced SHA256 `FFED77C7F4879276D6B050679F931201BE8293E1C173A3E508B62DA47D9A375E`.
+- Cursor regression: PASS. Logical rectangle `x=0..31, y=128..159` remains byte-identical to the v3 base.
+- Runtime status: pending packaging and confirmation that the blank pages are gone.

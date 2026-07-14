@@ -352,3 +352,8 @@ External Korean story-guide policy - 2026-07-14
 - `story_reference_naver_1_21.csv` records the 21-post Arc the Lad story-guide sequence supplied by the user.
 - Japanese game text is the primary semantic source. The guide supplies scene order, emotional continuity, relationships, and Korean speech-level context.
 - Shortening for the game window may remove repetition but must not reverse agency, causality, obligation, or emotional intent. In S1011, Palencia Castle sends an escort for Kukuru; she is not ordering someone to collect her.
+
+E2 inline return termination - 2026-07-14
+- E2 renders a zero-terminated secondary string and then resumes parsing immediately after the two-byte inline E2 command.
+- Never pad the rest of an E2 replacement body with visible glyph `9C`. Those spaces continue through the renderer and can create blank rows or entire blank dialogue pages.
+- Accepted replacement layout is `E2 nn 00 00`, with the rest of the old bounded body zeroed. The secondary bank contains the visible text and its own zero terminator.

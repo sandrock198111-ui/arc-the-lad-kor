@@ -301,3 +301,8 @@
 - Kept short speaker names on the first dialogue line and removed secondary-string line controls so the renderer can auto-wrap across the full window.
 - Corrected new-glyph cursor exclusion to use exact rectangle overlap with `x=0..31, y=128..159`, including the lower four pixels of glyph row 10.
 - Built `story_intro_e2_expanded_v01_cumulative_patch_only.zip`, SHA256 `A45B8891D01DE74A2D978252E8A5FC3461E36C981CBBE8F859842A9214B43DE9`.
+
+2026-07-14
+- Rejected intro E2 expanded v0.1 after runtime showed repeated blank dialogue windows.
+- Corrected `build_story_intro_e2_expanded.py` to terminate each inline body immediately after its E2 command instead of filling the remainder with visible spaces.
+- Built `story_intro_e2_expanded_v02_cumulative_patch_only.zip`, SHA256 `FFED77C7F4879276D6B050679F931201BE8293E1C173A3E508B62DA47D9A375E`.

@@ -22,8 +22,8 @@ BASE_HASH = "FA84E7A9169C481BFBBD5B18F5285EA132598E2137B84F261935EB1B5AC26416"
 MANIFEST = ROOT / "05_docs/story_intro_e2_expanded_translation.csv"
 EXTENDED = ROOT / "05_docs/korean_charmap_extended.csv"
 CORPUS = ROOT / "01_work/analysis/story_corpus/story_corpus.csv"
-OUTPUT = ROOT / "03_output/story_intro_e2_expanded_v01_cumulative_patch_only.zip"
-REPORT = ROOT / "01_work/analysis/story_intro_e2_expanded_v01_report.txt"
+OUTPUT = ROOT / "03_output/story_intro_e2_expanded_v02_cumulative_patch_only.zip"
+REPORT = ROOT / "01_work/analysis/story_intro_e2_expanded_v02_report.txt"
 
 PSX_TARGET = "PSX.EXE"
 TARGET_COUNTS = {"1/S1071.DAT": 4, "1/S1011.DAT": 9}
@@ -167,7 +167,10 @@ def main() -> None:
         slot_offset = SLOT_BASE + slot * SLOT_SIZE
         targets[name][slot_offset:slot_offset + SLOT_SIZE] = b"\x00" * SLOT_SIZE
         targets[name][slot_offset:slot_offset + len(payload)] = payload
-        targets[name][offset:end] = bytes((FILLER,)) * capacity
+        # E2 renders the secondary string and then resumes this inline body.
+        # Terminate immediately after the command; visible-space padding would
+        # be parsed as extra blank dialogue rows/pages after every E2 string.
+        targets[name][offset:end] = b"\x00" * capacity
         targets[name][offset:offset + 2] = bytes((0xE2, CUSTOM_DISK_FIRST + slot))
         report_lines.append(
             f"{name} 0x{offset:X} slot={slot} command=E2 {CUSTOM_DISK_FIRST + slot:02X} "

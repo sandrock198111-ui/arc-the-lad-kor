@@ -1100,3 +1100,9 @@ story_test_23 S1072 안전 경계 기준
 - Japanese originals remain the semantic authority. Naver story guides 1-21 are indexed in `05_docs/story_reference_naver_1_21.csv` and are used only for scene order, emotional context, and speech-level reference.
 - Current cumulative output: `03_output/story_intro_e2_expanded_v01_cumulative_patch_only.zip`, SHA256 `A45B8891D01DE74A2D978252E8A5FC3461E36C981CBBE8F859842A9214B43DE9`.
 - Static verification passed for all 13 E2 commands and external strings, deterministic rebuilds, 39 unique files, cumulative-file preservation, and the full confirmed battle-cursor texture rectangle. Runtime verification of four-row wrapping is pending.
+
+2026-07-14 intro E2 expanded v0.2 blank-page correction:
+- Runtime rejected v0.1 because the inline body after each E2 command was padded with visible space glyph `9C`. E2 returns to the inline body, so the padding generated repeated blank dialogue rows/pages.
+- v0.2 writes `E2 nn 00 00` and zeroes the remainder of each original bounded body. All 13 secondary strings are unchanged.
+- Current cumulative output: `03_output/story_intro_e2_expanded_v02_cumulative_patch_only.zip`, SHA256 `FFED77C7F4879276D6B050679F931201BE8293E1C173A3E508B62DA47D9A375E`.
+- Independent static verification passed for 13/13 immediate inline terminators, 13/13 external strings, deterministic rebuilds, cumulative-file preservation, and the cursor rectangle. Runtime verification is pending.
