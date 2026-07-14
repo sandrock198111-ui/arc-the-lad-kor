@@ -22,8 +22,8 @@ BASE_HASH = "FA84E7A9169C481BFBBD5B18F5285EA132598E2137B84F261935EB1B5AC26416"
 MANIFEST = ROOT / "05_docs/story_intro_e2_expanded_translation.csv"
 EXTENDED = ROOT / "05_docs/korean_charmap_extended.csv"
 CORPUS = ROOT / "01_work/analysis/story_corpus/story_corpus.csv"
-OUTPUT = ROOT / "03_output/story_intro_e2_expanded_v02_cumulative_patch_only.zip"
-REPORT = ROOT / "01_work/analysis/story_intro_e2_expanded_v02_report.txt"
+OUTPUT = ROOT / "03_output/story_intro_e2_expanded_v03_cumulative_patch_only.zip"
+REPORT = ROOT / "01_work/analysis/story_intro_e2_expanded_v03_report.txt"
 
 PSX_TARGET = "PSX.EXE"
 TARGET_COUNTS = {"1/S1071.DAT": 4, "1/S1011.DAT": 9}
@@ -33,6 +33,10 @@ SLOT_COUNT = 16
 CUSTOM_DISK_FIRST = 0x81
 HANDLER_CALL_OFFSET = 0x51484
 HANDLER_JAL = 0x0C063F34
+LOAD_ADDRESS = 0x8011B000
+HANDLER_ADDRESS = 0x8018FCD0
+HANDLER_LIMIT = 0x8018FDC5
+LOOKUP_ADDRESS = 0x8015EA44
 
 
 def rows(path: Path) -> list[dict[str, str]]:
@@ -42,6 +46,50 @@ def rows(path: Path) -> list[dict[str, str]]:
 
 def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest().upper()
+
+
+def file_offset(address: int) -> int:
+    return address - LOAD_ADDRESS + 0x800
+
+
+def jump(address: int) -> int:
+    return 0x08000000 | ((address >> 2) & 0x03FFFFFF)
+
+
+def old_handler() -> bytes:
+    return struct.pack(
+        "<13I",
+        0x308800FF, 0x2D090080, 0x15200008, 0x2D090090,
+        0x11200006, 0x2508FF80, 0x000811C0, 0x3C098011,
+        0x00491021, 0x03E00008, 0x00000000,
+        jump(LOOKUP_ADDRESS), 0x00000000,
+    )
+
+
+def skip_handler() -> bytes:
+    # Custom slot byte 0 stores the number of inline bytes to skip after E2.
+    # s0 is the live text state at this call site; s0+0x14 is its inline pointer.
+    return struct.pack(
+        "<18I",
+        0x308800FF,              # andi  t0,a0,00FF
+        0x2D090080,              # sltiu t1,t0,0080
+        0x1520000D,              # bne   t1,zero,normal
+        0x2D090090,              # sltiu t1,t0,0090 (delay)
+        0x1120000B,              # beq   t1,zero,normal
+        0x2508FF80,              # addiu t0,t0,-0080 (delay)
+        0x000811C0,              # sll   v0,t0,7
+        0x3C098011,              # lui   t1,8011
+        0x00491021,              # addu  v0,v0,t1 (slot base)
+        0x904A0000,              # lbu   t2,0(v0) (inline skip length)
+        0x8E0B0014,              # lw    t3,14(s0)
+        0x016A5821,              # addu  t3,t3,t2
+        0xAE0B0014,              # sw    t3,14(s0)
+        0x24420001,              # addiu v0,v0,1 (visible text)
+        0x03E00008,              # jr    ra
+        0x00000000,              # nop
+        jump(LOOKUP_ADDRESS),    # normal: original E2 lookup
+        0x00000000,              # nop
+    )
 
 
 def cursor_code(code: bytes) -> bool:
@@ -127,8 +175,21 @@ def main() -> None:
         files = {item.filename: archive.read(item.filename) for item in archive.infolist()}
     if len(files) != 39 or set(TARGET_COUNTS) - files.keys():
         raise SystemExit("unexpected v3 cumulative file set")
-    if struct.unpack_from("<I", files[PSX_TARGET], HANDLER_CALL_OFFSET)[0] != HANDLER_JAL:
+    psx = bytearray(files[PSX_TARGET])
+    if struct.unpack_from("<I", psx, HANDLER_CALL_OFFSET)[0] != HANDLER_JAL:
         raise SystemExit("dedicated E2 handler call is missing")
+    handler_offset = file_offset(HANDLER_ADDRESS)
+    handler_size = HANDLER_LIMIT - HANDLER_ADDRESS
+    if psx[handler_offset:handler_offset + len(old_handler())] != old_handler():
+        raise SystemExit("v3 E2 handler bytes differ")
+    if any(psx[handler_offset + len(old_handler()):handler_offset + handler_size]):
+        raise SystemExit("v3 E2 handler cave tail is not empty")
+    replacement_handler = skip_handler()
+    if len(replacement_handler) > handler_size:
+        raise SystemExit("skip-aware E2 handler exceeds cave")
+    psx[handler_offset:handler_offset + handler_size] = b"\x00" * handler_size
+    psx[handler_offset:handler_offset + len(replacement_handler)] = replacement_handler
+    files[PSX_TARGET] = bytes(psx)
 
     base_font = files[FONT_TARGET]
     font = bytearray(base_font)
@@ -159,22 +220,21 @@ def main() -> None:
         if targets[name][end:end + 2] != b"\x00\x00":
             raise SystemExit(f"missing dialogue boundary: {name} 0x{offset:X}")
         payload = encode(item["text"], mapping)
-        if len(payload) + 1 > SLOT_SIZE:
-            raise SystemExit(f"E2 slot overflow: {name} slot {slot} {len(payload) + 1}/{SLOT_SIZE}")
+        if len(payload) + 2 > SLOT_SIZE:
+            raise SystemExit(f"E2 slot overflow: {name} slot {slot} {len(payload) + 2}/{SLOT_SIZE}")
         if contains_control(payload):
             raise SystemExit(f"secondary string contains a control byte: {name} slot {slot}")
 
         slot_offset = SLOT_BASE + slot * SLOT_SIZE
         targets[name][slot_offset:slot_offset + SLOT_SIZE] = b"\x00" * SLOT_SIZE
-        targets[name][slot_offset:slot_offset + len(payload)] = payload
-        # E2 renders the secondary string and then resumes this inline body.
-        # Terminate immediately after the command; visible-space padding would
-        # be parsed as extra blank dialogue rows/pages after every E2 string.
-        targets[name][offset:end] = b"\x00" * capacity
+        targets[name][slot_offset] = capacity - 2
+        targets[name][slot_offset + 1:slot_offset + 1 + len(payload)] = payload
+        # Preserve the original bounded-body end. The skip-aware E2 handler
+        # advances s0+0x14 from offset+2 to this original end before returning.
         targets[name][offset:offset + 2] = bytes((0xE2, CUSTOM_DISK_FIRST + slot))
         report_lines.append(
             f"{name} 0x{offset:X} slot={slot} command=E2 {CUSTOM_DISK_FIRST + slot:02X} "
-            f"bytes={len(payload) + 1}/{SLOT_SIZE} text={item['text']}"
+            f"skip={capacity - 2} bytes={len(payload) + 2}/{SLOT_SIZE} text={item['text']}"
         )
 
     files.update({name: bytes(data) for name, data in targets.items()})
@@ -193,7 +253,7 @@ def main() -> None:
         for name in before.namelist():
             if before.read(name) != after.read(name):
                 changed.append(name)
-        expected_changed = {FONT_TARGET, *TARGET_COUNTS}
+        expected_changed = {PSX_TARGET, FONT_TARGET, *TARGET_COUNTS}
         if set(changed) != expected_changed:
             raise SystemExit(f"unexpected cumulative changes: {changed}")
 

@@ -1,0 +1,17 @@
+1/S1071.DAT 0x478D6 slot=0 command=E2 81 skip=37 bytes=57/128 text=촌장: 자, 이 문 너머에는 너희 일족만 들어갈 수 있다.
+1/S1071.DAT 0x47932 slot=1 command=E2 82 skip=39 bytes=75/128 text=약속대로 이 마을에서 내보내 주는 거야? 정말 나를 자유롭게 해 주는 거야?
+1/S1071.DAT 0x4798E slot=2 command=E2 83 skip=53 bytes=76/128 text=촌장: 물론이지. 하지만 먼저 시온산 정상에 있는 봉인의 불꽃을 꺼야 한다.
+1/S1071.DAT 0x479FA slot=3 command=E2 84 skip=4 bytes=13/128 text=알고 있어.
+1/S1011.DAT 0x478AA slot=0 command=E2 81 skip=33 bytes=58/128 text=3천 년 동안 타오르고 있는 정령의 산, 시온의 불꽃...
+1/S1011.DAT 0x47902 slot=1 command=E2 82 skip=21 bytes=47/128 text=대체 이 불꽃에는 무슨 의미가 있는 걸까...?
+1/S1011.DAT 0x47954 slot=2 command=E2 83 skip=19 bytes=46/128 text=아니, 지금 그걸 생각하고 있을 때가 아니야!
+1/S1011.DAT 0x4799E slot=3 command=E2 84 skip=40 bytes=83/128 text=해가 바뀌면 팔렌시아 성에서 나를 데리러 올 거야. 그게 우리 일족의 규율이니까...
+1/S1011.DAT 0x479FC slot=4 command=E2 85 skip=34 bytes=60/128 text=그리고 신의 피를 잇는 일족의 딸로서 왕자와 결혼해야만 해.
+1/S1011.DAT 0x47A54 slot=5 command=E2 86 skip=10 bytes=23/128 text=그런 건 절대로 싫어.
+1/S1011.DAT 0x47AD2 slot=6 command=E2 87 skip=24 bytes=40/128 text=후... 아무 일도 일어나지 않았잖아.
+1/S1011.DAT 0x47B3E slot=7 command=E2 88 skip=47 bytes=70/128 text=잘도 시온의 불꽃을 껐구나! 3천 년 동안 나를 봉인해 온 불꽃을...
+1/S1011.DAT 0x47BB2 slot=8 command=E2 89 skip=3 bytes=14/128 text=뭐지...?
+batch_glyphs=9
+new_glyphs_added=0
+changed_files=1/S1011.DAT,1/S1071.DAT,COMM.IMG,PSX.EXE
+sha256=437BBF577E6B37F34E57D4BD9AD385DD45098D105969CE67C833158CDF7CB0FE

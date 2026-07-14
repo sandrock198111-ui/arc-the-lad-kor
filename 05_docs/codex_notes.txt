@@ -356,4 +356,7 @@ External Korean story-guide policy - 2026-07-14
 E2 inline return termination - 2026-07-14
 - E2 renders a zero-terminated secondary string and then resumes parsing immediately after the two-byte inline E2 command.
 - Never pad the rest of an E2 replacement body with visible glyph `9C`. Those spaces continue through the renderer and can create blank rows or entire blank dialogue pages.
-- Accepted replacement layout is `E2 nn 00 00`, with the rest of the old bounded body zeroed. The secondary bank contains the visible text and its own zero terminator.
+- Rejected v0.2 layout: `E2 nn 00 00` at the body start. It terminates at the wrong script address and can skip the remaining event.
+- At the E2 lookup call, `s0+0x14` holds the inline pointer already advanced past `E2 nn`. A custom handler may safely add the remaining original body length before returning.
+- Accepted v0.3 slot layout for runtime testing: byte 0 is `original_capacity - 2`; bytes 1 onward are the visible zero-terminated string. The handler advances `s0+0x14` by byte 0 and returns `slot_base + 1`.
+- Preserve the original bytes after inline `E2 nn` and the original `00 00` boundary. The handler skips them without rendering, maintaining the event parser's expected continuation address.

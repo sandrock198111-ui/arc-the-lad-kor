@@ -915,3 +915,12 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Reproducibility: PASS. Two consecutive builds produced SHA256 `FFED77C7F4879276D6B050679F931201BE8293E1C173A3E508B62DA47D9A375E`.
 - Cursor regression: PASS. Logical rectangle `x=0..31, y=128..159` remains byte-identical to the v3 base.
 - Runtime status: pending packaging and confirmation that the blank pages are gone.
+
+2026-07-14 - Intro E2 expanded v0.2 runtime rejection / v0.3 correction
+- v0.2 runtime result: FAIL. The immediate `00 00` stopped parsing at offset+2 instead of the original bounded-body end; the event stream consequently skipped to the world map.
+- EXE analysis: E2 advances the inline pointer by two bytes before calling the lookup handler. At that call site `s0+0x14` is the live inline pointer.
+- v0.3 handler: custom slots store `capacity-2` in byte 0. The handler loads that byte, advances `s0+0x14`, and returns visible text at slot byte 1. Normal E2 IDs still jump to the original lookup at `0x8015EA44`.
+- Independent MIPS disassembly: PASS. The 18-instruction handler at `0x8018FCD0` contains the expected range checks, metadata load, pointer update, visible-text adjustment, and original-lookup fallback.
+- Static result: PASS. Original end pointer 13/13, external strings 13/13, original body tails and boundaries preserved, cursor rectangle unchanged.
+- Reproducibility: PASS. Two builds produced SHA256 `437BBF577E6B37F34E57D4BD9AD385DD45098D105969CE67C833158CDF7CB0FE`.
+- Runtime status: pending confirmation of dialogue display, no blank pages, and normal continuation after the mountaintop scene.

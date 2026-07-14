@@ -306,3 +306,9 @@
 - Rejected intro E2 expanded v0.1 after runtime showed repeated blank dialogue windows.
 - Corrected `build_story_intro_e2_expanded.py` to terminate each inline body immediately after its E2 command instead of filling the remainder with visible spaces.
 - Built `story_intro_e2_expanded_v02_cumulative_patch_only.zip`, SHA256 `FFED77C7F4879276D6B050679F931201BE8293E1C173A3E508B62DA47D9A375E`.
+
+2026-07-14
+- Rejected intro E2 expanded v0.2 after its early inline terminator skipped the rest of the mountaintop scene and returned to the world map.
+- Extended the dedicated E2 handler to read a per-slot inline-skip byte and advance `s0+0x14` to each dialogue's original end before rendering the external string.
+- Preserved all original body tails and `00 00` boundaries while bypassing their visible-space padding.
+- Built `story_intro_e2_expanded_v03_cumulative_patch_only.zip`, SHA256 `437BBF577E6B37F34E57D4BD9AD385DD45098D105969CE67C833158CDF7CB0FE`.

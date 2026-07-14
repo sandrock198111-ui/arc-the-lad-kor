@@ -1106,3 +1106,10 @@ story_test_23 S1072 안전 경계 기준
 - v0.2 writes `E2 nn 00 00` and zeroes the remainder of each original bounded body. All 13 secondary strings are unchanged.
 - Current cumulative output: `03_output/story_intro_e2_expanded_v02_cumulative_patch_only.zip`, SHA256 `FFED77C7F4879276D6B050679F931201BE8293E1C173A3E508B62DA47D9A375E`.
 - Independent static verification passed for 13/13 immediate inline terminators, 13/13 external strings, deterministic rebuilds, cumulative-file preservation, and the cursor rectangle. Runtime verification is pending.
+
+2026-07-14 intro E2 expanded v0.3 original-end pointer preservation:
+- Runtime rejected v0.2: placing `00 00` immediately after E2 ended the text at the wrong script address and skipped the remainder of the scene, returning directly to the world map.
+- The custom E2 slot now begins with one metadata byte containing `original_capacity - 2`. The handler advances live inline pointer `s0+0x14` by that amount, then returns the visible string at slot byte 1.
+- This preserves every original bounded-body end and its existing `00 00` boundary without parsing the old filler bytes.
+- Current cumulative output: `03_output/story_intro_e2_expanded_v03_cumulative_patch_only.zip`, SHA256 `437BBF577E6B37F34E57D4BD9AD385DD45098D105969CE67C833158CDF7CB0FE`.
+- Independent MIPS disassembly and arithmetic verification passed for 13/13 original end pointers and 13/13 external strings. Runtime verification is pending.
