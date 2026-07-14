@@ -326,3 +326,7 @@
 - Built `story_intro_e2_expanded_v05_cumulative_patch_only.zip`, SHA256 `2BEEBDC203F92AD882DE1A9511F343FE7494E2EBAAD83BBADE9171E8B810B49F`.
 - Corrected the expanded E2 lookup and completion handlers to add the missing RAM-bank displacement `0x4000`; both now address scene slots at `0x80114000 + slot * 0x80`.
 - Built `story_intro_e2_expanded_v06_cumulative_patch_only.zip`, SHA256 `D849F637D7F1C0E5B6E170BBE3CB6ACB47E48FC045C9E0A702B60CAF26991FF5`.
+- Accepted v0.6 after runtime showed expanded S1071/S1011 text, five-row automatic wrapping, and normal scene continuation.
+- Rejected the v0.7 per-character wrapper after runtime failed to enter normal emulation and remained at game 0 FPS.
+- Added `build_story_intro_dialogue_width11_v08.py`, which uses only existing dialogue-state reset delay slots and introduces no new executable wrapper.
+- Built the cumulative 11-pixel dialogue-width isolation trial `story_intro_dialogue_width11_v08_cumulative_patch_only.zip`, SHA256 `04A6162400C02F1BEC2397A28F284552EC1EA836BF135278976BDBDBCD359763`.

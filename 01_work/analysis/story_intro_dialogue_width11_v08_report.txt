@@ -1,0 +1,6 @@
+dialogue_glyph_width=11
+dialogue_space_width=11
+narrowed_mapped_glyphs=229
+method=dialogue_state_reset_delay_slots
+patched_reset_calls=0x80163CD0,0x801640EC,0x80164BC8,0x8016C374
+sha256=04A6162400C02F1BEC2397A28F284552EC1EA836BF135278976BDBDBCD359763

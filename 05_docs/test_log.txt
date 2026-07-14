@@ -951,3 +951,27 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Regression comparison: PASS. Against v0.5, only `PSX.EXE` differs; all 38 other cumulative entries, including both story DAT files and `COMM.IMG`, are byte-identical.
 - Reproducibility: PASS. Two builds produced SHA256 `D849F637D7F1C0E5B6E170BBE3CB6ACB47E48FC045C9E0A702B60CAF26991FF5`.
 - Runtime status: pending packaging and confirmation of the first village-chief expanded line plus normal advancement.
+
+2026-07-14 - Intro E2 expanded v0.6 runtime acceptance
+- Runtime result: PASS. The first village-chief line rendered its full expanded Korean text instead of falling through to the old inline tail.
+- The remaining S1071 expanded lines and the following S1011 mountaintop line also rendered. Automatic wrapping displayed up to five rows, and dialogue/event progression continued normally.
+- Remaining issue: the 12-pixel fixed-width layout leaves excessive visual spacing between narrow Hangul glyphs and gives a full-cell width to ordinary spaces.
+
+2026-07-14 - Dialogue spacing v0.7 static trial
+- Renderer proof: `0x8016B518` stores state byte `+0x0D` as sprite width and advances X by state bytes `+0x0D + +0x0F`. The automatic-wrap path at `0x8016BA18-0x8016BA3C` uses the same sum.
+- Scope: only dialogue inline draw call `0x8016BB8C` and E2-secondary draw call `0x8016BDA0` redirect to wrapper `0x8018FD60`. Other UI/text calls remain unchanged.
+- Trial layout: mapped glyphs use width/advance 11; space glyph index `0x9B` uses width/advance 6. The wrapper restores state width 11 after every space so the next automatic-wrap check remains consistent.
+- Font fit: PASS. All 407 non-space mapped code planes end at or before source column 10; 229 planes required repositioning or one-pixel narrowing. Neighboring bitplanes are preserved.
+- Regression: PASS. Against v0.6 only `PSX.EXE` and `COMM.IMG` differ; the confirmed battle-cursor rectangle is byte-identical.
+- Independent MIPS disassembly: PASS. Both redirected calls, the space branch, original glyph-draw call, state restoration, return address, and cave boundaries are correct.
+- Reproducibility: PASS after preserving base ZIP metadata. Builds separated by three seconds produced SHA256 `CB21AC6B1BEA333F04A8B52B1433B67DCF1E55B2B00F19EABCF98B21A0D4876F`.
+- Runtime result: FAIL. The patched EXE and wrapper were present in the built BIN and in all live PS1 RAM mirrors, but DuckStation remained at game 0 FPS and normal emulation did not proceed. The new wrapper/cave method is rejected.
+
+2026-07-14 - Dialogue width v0.8 minimal isolation trial
+- Base: accepted cumulative v0.6; v0.7 is not used as an input.
+- Scope: the four callers of dialogue reset `0x8016C4D8` have previously empty delay slots changed to `ori v0,zero,11`. The reset function's previously empty return delay slot stores `v0` at dialogue state `0x801F1DB4 + 0x0D`.
+- No new JAL target, code cave, stack frame, per-character branch, draw-call change, or UI-state initializer is introduced. Space remains the same 11-pixel width as other dialogue glyphs for this isolation test.
+- Font fit: PASS. All mapped non-space planes end at or before source column 10; neighboring planes and the battle-cursor rectangle are preserved.
+- Independent MIPS disassembly: PASS. All four reset calls retain their original target, each delay slot loads 11, and the reset return delay slot stores only dialogue width.
+- Reproducibility: PASS. Builds separated by three seconds produced SHA256 `04A6162400C02F1BEC2397A28F284552EC1EA836BF135278976BDBDBCD359763`.
+- Runtime status: pending confirmation of normal boot, dialogue display, 11-pixel spacing, event continuation, and unchanged UI/cursor.

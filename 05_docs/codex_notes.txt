@@ -367,3 +367,13 @@ E2 inline return termination - 2026-07-14
 - Live S1071 mapping proof: file offset `0x45000` is present at PS1 RAM offset `0x14000`, and patched inline offset `0x478D6` is present at RAM offset `0x168D6`; both share the confirmed file-to-RAM delta `+0xCF000`.
 - Rejected v0.5 address calculation: `0x80110000 + slot * 0x80`. It omitted the bank displacement `0x4000`, so custom slot 0 resolved to zero-filled RAM and completion metadata also read as zero.
 - Correct custom E2 slot formula is `0x80114000 + slot * 0x80` for both the lookup return pointer and byte-`0x7F` completion metadata lookup. A handler change is incomplete unless both calculations are updated together.
+
+Dialogue glyph spacing structure - 2026-07-14
+- `0x8016B518` is the common glyph sprite builder. Text-state byte `+0x0D` becomes sprite width, byte `+0x0E` becomes height, byte `+0x0F` is extra horizontal spacing, and current X at `+0x06` advances by `+0x0D + +0x0F`.
+- Automatic horizontal wrapping at `0x8016BA18-0x8016BA3C` compares the current relative X plus the same width/spacing sum against state limit `+0x22`.
+- Dialogue inline glyphs enter the builder at call `0x8016BB8C`; E2 secondary glyphs enter at `0x8016BDA0`. Redirecting only these calls permits dialogue-specific spacing without changing unrelated UI callers.
+- Space code `0x9C` decodes to glyph index `0x9B`. A dialogue wrapper can select a 6-pixel blank sprite for this index and 11 pixels for other dialogue glyphs.
+- Reducing advance alone is unsafe: 76 of the 356 measured Hangul glyphs occupy 11 or 12 source columns. Their mapped font planes must be shifted or narrowed into the selected source width before runtime use.
+- v0.7 narrows only mapped bitplanes and preserves every neighboring plane plus the confirmed battle-cursor rectangle. Runtime legibility remains a required acceptance test.
+- Rejected v0.7 runtime: redirecting the two per-character draw calls to a new wrapper at `0x8018FD60` left DuckStation at game 0 FPS. The EXE and wrapper were confirmed in both BIN and live RAM, so this wrapper/cave approach must not be reused without a separate root-cause proof.
+- Safer dialogue-only width point: global dialogue state `0x801F1DB4` is initialized through `0x8016B134` and reset through `0x8016C4D8`. Four reset calls have empty delay slots, and the reset return delay slot is also empty. Passing width in `v0` and storing it to state byte `+0x0D` changes dialogue width without touching common glyph draw calls or unrelated text-state initializers.

@@ -1,0 +1,5 @@
+dialogue_glyph_width=11
+dialogue_space_width=6
+narrowed_mapped_glyphs=229
+patched_calls=0x8016BB8C,0x8016BDA0
+sha256=CB21AC6B1BEA333F04A8B52B1433B67DCF1E55B2B00F19EABCF98B21A0D4876F
