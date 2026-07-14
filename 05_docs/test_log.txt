@@ -871,3 +871,10 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Result: PASS. Changed entries are exactly `1/S1071.DAT`, `1/S1011.DAT`, and `COMM.IMG`; all other entries are byte-identical.
 - Output: `story_intro_stable_v01_cumulative_patch_only.zip`, SHA256 `4C313D3408D78249BA06F712A5BABFA68647FAB1D21AB33EA40D465F4B7F0298`.
 - Runtime status: pending new-boot verification. Other early probe files remain outside this stabilization scope.
+
+2026-07-14 - Intro v0.1 runtime result and E2 FF long-text proof
+- Runtime result for v0.1: FAIL. `피` and `결` visibly rendered as non-Hangul; audit found six manifest syllables using legacy mappings (`거/결/때/촌/피/혼`).
+- Proof target: S1011 `0x479FC`, original capacity 36 bytes. Inline replacement is `E2 FF`; external Korean text is 71 bytes plus terminator.
+- EXE checks: original SHA256 verified; original E2 lookup prologue verified; selected `0x801A86F0` tail region was all zero; patched hook disassembles to compare internal index `FE`, return custom pointer for that index, and resume `0x8015EA4C` otherwise.
+- Static result: PASS. 39 unique ZIP entries, 13 bounded intro payloads, cursor rectangle preserved, external text terminated, hook and cave bytes verified.
+- Output SHA256: `D9A1ED41CA127931572754FFABC3456331E2696F437F63294F015AF3F968975A`. Runtime result pending.

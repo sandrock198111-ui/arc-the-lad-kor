@@ -276,3 +276,8 @@
 - Added `story_intro_s1071_s1011_stable_translation.csv` and `build_story_intro_stable.py`.
 - Replaced 13 confirmed intro structural-probe bodies in S1071/S1011 with natural context-aware Korean.
 - Added 20 cursor-safe glyph mappings and built `story_intro_stable_v01_cumulative_patch_only.zip`.
+
+2026-07-14
+- Rejected intro stable v0.1 after runtime exposed six legacy Hangul mappings.
+- Added seven verified extended Hangul mappings and `build_story_intro_e2ff_longtext_proof.py`.
+- Built a 39-file proof that replaces S1011 `0x479FC` with `E2 FF` and stores its 71-byte Korean text in a guarded PSX.EXE tail cave.

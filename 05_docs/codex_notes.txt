@@ -326,3 +326,10 @@ Intro prose stabilization - 2026-07-14
 - Stabilization must replace probe prose from decoded original data while retaining the already verified offsets, capacities, selectors, filler method, and cumulative file set.
 - The Korean blog story is a secondary scene/tone reference only; do not copy its prose or use it to establish binary addresses.
 - S1013, S1021, and other early cumulative files still require the same probe-prose audit before the patch can be called an early-game stable release.
+
+E2 secondary-string mechanism - 2026-07-14
+- Text control `E2 nn` stores `nn-1` as an index, calls `0x8015EA44`, renders the returned zero-terminated secondary string, and then resumes the inline text pointer.
+- Existing E2 indices are character/monster name lookups and must not be reassigned. The proof intercepts only internal index `FE`, encoded on disk as `E2 FF`, which is absent from the parsed original story corpus.
+- `0x8015EA44` is hooked with a two-instruction jump to `0x801A86F0`. The wrapper returns `0x801A8720` only for `FE`; all other values reconstruct the original table base and jump back to `0x8015EA4C`.
+- The final loaded PSX.EXE tail `0x801A86F0-0x801A87FF` is a 272-byte zero region in the original file. It is sufficient for the 48-byte proof wrapper and one 71-byte string, but runtime must prove it is not overwritten or used dynamically.
+- If runtime succeeds, E2 FF proves long text is possible, but a scalable release still needs a multi-ID external bank or a dedicated new control opcode rather than one hardcoded string.

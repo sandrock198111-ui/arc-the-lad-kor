@@ -1084,3 +1084,9 @@ story_test_23 S1072 안전 경계 기준
 - Current output: `03_output/story_intro_stable_v01_cumulative_patch_only.zip`, SHA256 `4C313D3408D78249BA06F712A5BABFA68647FAB1D21AB33EA40D465F4B7F0298`.
 - Exactly `1/S1071.DAT`, `1/S1011.DAT`, and `COMM.IMG` differ from the preceding 38-file cumulative base. All other files are byte-identical. Runtime verification is pending.
 - Other early files still contain structural-probe prose and are not yet stable translation.
+
+2026-07-14 intro v0.1 runtime rejection and E2 FF long-text proof:
+- Runtime rejected `story_intro_stable_v01_cumulative_patch_only.zip`: six Hangul syllables (`거/결/때/촌/피/혼`) used unverified legacy one-byte mappings, producing Japanese or symbol glyphs. v0.1 is not an accepted stable release.
+- The renderer's existing `E2` command inserts a secondary zero-terminated string and then returns to the inline body. A proof reserves disk command `E2 FF`, observed internally as index `FE` after the engine decrements its argument.
+- `PSX.EXE` now hooks only lookup index `FE`; all other name lookups resume the original function. The hook and a 71-byte three-line Korean string fit in the loaded zero tail at `0x801A86F0-0x801A87FF`.
+- Proof output: `03_output/story_intro_longtext_e2ff_proof_patch_only.zip`, SHA256 `D9A1ED41CA127931572754FFABC3456331E2696F437F63294F015AF3F968975A`. Runtime verification is required before this mechanism is accepted.
