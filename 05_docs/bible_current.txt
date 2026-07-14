@@ -1120,3 +1120,10 @@ story_test_23 S1072 안전 경계 기준
 - The handler reads `slot_base + 0x7F`, advances `s0+0x14` to the original body end, and returns the unchanged aligned slot base.
 - Current cumulative output: `03_output/story_intro_e2_expanded_v04_cumulative_patch_only.zip`, SHA256 `57EE2A984AA1985A3A6C734A0792CB4A0C1427DE5302B606177F0A890C9FC1EC`.
 - Static verification passed for aligned text pointers 13/13, original end pointers 13/13, MIPS handler disassembly, deterministic builds, and cursor preservation. Runtime verification is pending.
+
+2026-07-14 intro E2 expanded v0.5 deferred completion skip:
+- Runtime rejected v0.4: all expanded dialogues remained empty while unmodified following scenes and progression were normal.
+- EXE control flow proves `0x8016BBA4` checks the inline pointer in the same update immediately after E2 lookup. Advancing it to `00 00` during lookup clears the text state before the secondary string can render.
+- v0.5 restores the exact v3 lookup handler. The original completion jump at `0x8016BDC0` now calls a helper only after the secondary pointer reaches its terminator; the helper then applies slot byte `0x7F` to `s0+0x14` and resumes `0x8016BE44`.
+- Current cumulative output: `03_output/story_intro_e2_expanded_v05_cumulative_patch_only.zip`, SHA256 `2BEEBDC203F92AD882DE1A9511F343FE7494E2EBAAD83BBADE9171E8B810B49F`.
+- Independent disassembly passed for restored v3 lookup, deferred completion helper, original end pointers 13/13, deterministic builds, and cursor preservation. Runtime verification is pending.

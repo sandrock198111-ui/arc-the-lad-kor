@@ -362,3 +362,5 @@ E2 inline return termination - 2026-07-14
 - Preserve the original bytes after inline `E2 nn` and the original `00 00` boundary. The handler skips them without rendering, maintaining the event parser's expected continuation address.
 - Rejected v0.3 detail: placing metadata at slot byte 0 and returning `slot_base + 1` caused every expanded string to render empty even though event progression was correct.
 - Keep the visible secondary string at the 128-byte-aligned slot base proven by v3 runtime. Store non-rendered metadata at slot byte `0x7F`, after the string terminator, and return the unmodified slot base.
+- Rejected v0.4 detail: even with an aligned returned pointer, modifying `s0+0x14` inside the E2 lookup handler makes `0x8016BBA4` see inline `00 00` in the same update and clear state at `0x8016BBCC` before secondary rendering.
+- Inline skipping must be deferred until the E2 secondary pointer itself reaches zero. The verified completion branch is `0x8016BDC0`; after applying the skip, resume the original state-setting path at `0x8016BE44`.

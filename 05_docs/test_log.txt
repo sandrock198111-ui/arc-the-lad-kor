@@ -933,3 +933,12 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - MIPS disassembly: PASS. Handler loads `lbu t2,0x7F(v0)`, updates `s0+0x14`, and returns the aligned `v0` without an address increment.
 - Reproducibility: PASS. SHA256 `57EE2A984AA1985A3A6C734A0792CB4A0C1427DE5302B606177F0A890C9FC1EC`.
 - Runtime status: pending confirmation that expanded text is visible and the scene continues without blank pages.
+
+2026-07-14 - Intro E2 expanded v0.4 runtime rejection / v0.5 deferred skip
+- v0.4 runtime result: FAIL. All expanded dialogues remained empty; following unmodified scenes and event progression were normal.
+- Root cause: after processing a control, `0x8016BBA4` immediately reads `s0+0x14`. Lookup-time skipping moved it to `00 00`, causing `0x8016BBCC` to clear text state before the external pointer was rendered.
+- v0.5 restores the byte-identical v3 lookup handler at `0x8018FCD0` and patches completion jump `0x8016BDC0` to helper `0x8018FD20`.
+- The helper runs only when `s0+0x18` points to the secondary terminator. It checks the preceding inline E2 disk ID, loads slot metadata at `+0x7F`, advances `s0+0x14`, and resumes original completion target `0x8016BE44`.
+- Independent disassembly: PASS. v3 lookup restored, completion deferred, custom-ID range guarded, original end pointer 13/13, external payload 13/13.
+- Reproducibility: PASS. SHA256 `2BEEBDC203F92AD882DE1A9511F343FE7494E2EBAAD83BBADE9171E8B810B49F`.
+- Runtime status: pending confirmation of visible expanded text, no blank pages, and normal scene continuation.

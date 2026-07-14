@@ -318,3 +318,9 @@
 - Moved per-slot skip metadata from byte 0 to byte `0x7F` and restored visible strings to the aligned slot base proven by v3 runtime.
 - Updated the custom E2 handler to read metadata at `slot_base + 0x7F` without offsetting the returned text pointer.
 - Built `story_intro_e2_expanded_v04_cumulative_patch_only.zip`, SHA256 `57EE2A984AA1985A3A6C734A0792CB4A0C1427DE5302B606177F0A890C9FC1EC`.
+
+2026-07-14
+- Rejected intro E2 expanded v0.4 after runtime again showed empty expanded dialogues.
+- Confirmed from EXE control flow that changing `s0+0x14` during E2 lookup terminates the text state before secondary rendering begins.
+- Restored the runtime-proven v3 lookup handler and patched E2's completed-secondary path at `0x8016BDC0` to apply inline skipping only after the external string terminates.
+- Built `story_intro_e2_expanded_v05_cumulative_patch_only.zip`, SHA256 `2BEEBDC203F92AD882DE1A9511F343FE7494E2EBAAD83BBADE9171E8B810B49F`.

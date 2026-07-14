@@ -22,8 +22,8 @@ BASE_HASH = "FA84E7A9169C481BFBBD5B18F5285EA132598E2137B84F261935EB1B5AC26416"
 MANIFEST = ROOT / "05_docs/story_intro_e2_expanded_translation.csv"
 EXTENDED = ROOT / "05_docs/korean_charmap_extended.csv"
 CORPUS = ROOT / "01_work/analysis/story_corpus/story_corpus.csv"
-OUTPUT = ROOT / "03_output/story_intro_e2_expanded_v04_cumulative_patch_only.zip"
-REPORT = ROOT / "01_work/analysis/story_intro_e2_expanded_v04_report.txt"
+OUTPUT = ROOT / "03_output/story_intro_e2_expanded_v05_cumulative_patch_only.zip"
+REPORT = ROOT / "01_work/analysis/story_intro_e2_expanded_v05_report.txt"
 
 PSX_TARGET = "PSX.EXE"
 TARGET_COUNTS = {"1/S1071.DAT": 4, "1/S1011.DAT": 9}
@@ -37,6 +37,9 @@ LOAD_ADDRESS = 0x8011B000
 HANDLER_ADDRESS = 0x8018FCD0
 HANDLER_LIMIT = 0x8018FDC5
 LOOKUP_ADDRESS = 0x8015EA44
+E2_COMPLETION_ADDRESS = 0x8016BDC0
+E2_COMPLETION_TARGET = 0x8016BE44
+COMPLETION_HELPER_ADDRESS = 0x8018FD20
 
 
 def rows(path: Path) -> list[dict[str, str]]:
@@ -66,28 +69,25 @@ def old_handler() -> bytes:
     )
 
 
-def skip_handler() -> bytes:
-    # Custom slot byte 0x7F stores the number of inline bytes to skip after E2.
-    # Visible text stays at the aligned slot base proven by the v3 runtime test.
-    # s0 is the live text state at this call site; s0+0x14 is its inline pointer.
+def completion_handler() -> bytes:
+    # This runs only after the secondary string pointer reaches its terminator.
+    # The byte before s0+0x14 is the E2 disk ID because inline parsing paused
+    # immediately after E2 nn while the secondary string was displayed.
     return struct.pack(
-        "<17I",
-        0x308800FF,              # andi  t0,a0,00FF
-        0x2D090080,              # sltiu t1,t0,0080
-        0x1520000C,              # bne   t1,zero,normal
-        0x2D090090,              # sltiu t1,t0,0090 (delay)
-        0x1120000A,              # beq   t1,zero,normal
-        0x2508FF80,              # addiu t0,t0,-0080 (delay)
-        0x000811C0,              # sll   v0,t0,7
-        0x3C098011,              # lui   t1,8011
-        0x00491021,              # addu  v0,v0,t1 (slot base)
-        0x904A007F,              # lbu   t2,7F(v0) (inline skip length)
-        0x8E0B0014,              # lw    t3,14(s0)
-        0x016A5821,              # addu  t3,t3,t2
-        0xAE0B0014,              # sw    t3,14(s0)
-        0x03E00008,              # jr    ra
-        0x00000000,              # nop
-        jump(LOOKUP_ADDRESS),    # normal: original E2 lookup
+        "<14I",
+        0x8E080014,                    # lw    t0,14(s0)
+        0x9109FFFF,                    # lbu   t1,-1(t0) (disk E2 ID)
+        0x2529FF7F,                    # addiu t1,t1,-0081
+        0x2D2A0010,                    # sltiu t2,t1,0010
+        0x11400006,                    # beq   t2,zero,done
+        0x000949C0,                    # sll   t1,t1,7 (delay)
+        0x3C0A8011,                    # lui   t2,8011
+        0x012A4821,                    # addu  t1,t1,t2 (slot base)
+        0x912A007F,                    # lbu   t2,7F(t1) (inline skip)
+        0x010A4021,                    # addu  t0,t0,t2
+        0xAE080014,                    # sw    t0,14(s0)
+        0x34020001,                    # done: ori v0,zero,1
+        jump(E2_COMPLETION_TARGET),    # resume original completion path
         0x00000000,              # nop
     )
 
@@ -184,11 +184,19 @@ def main() -> None:
         raise SystemExit("v3 E2 handler bytes differ")
     if any(psx[handler_offset + len(old_handler()):handler_offset + handler_size]):
         raise SystemExit("v3 E2 handler cave tail is not empty")
-    replacement_handler = skip_handler()
-    if len(replacement_handler) > handler_size:
-        raise SystemExit("skip-aware E2 handler exceeds cave")
+    completion_offset = file_offset(E2_COMPLETION_ADDRESS)
+    if struct.unpack_from("<I", psx, completion_offset)[0] != jump(E2_COMPLETION_TARGET):
+        raise SystemExit("original E2 completion jump differs")
+    if struct.unpack_from("<I", psx, completion_offset + 4)[0] != 0:
+        raise SystemExit("original E2 completion delay slot differs")
+    helper = completion_handler()
+    helper_offset = file_offset(COMPLETION_HELPER_ADDRESS)
+    if helper_offset < handler_offset + len(old_handler()) or helper_offset + len(helper) > handler_offset + handler_size:
+        raise SystemExit("completion helper does not fit handler cave")
     psx[handler_offset:handler_offset + handler_size] = b"\x00" * handler_size
-    psx[handler_offset:handler_offset + len(replacement_handler)] = replacement_handler
+    psx[handler_offset:handler_offset + len(old_handler())] = old_handler()
+    psx[helper_offset:helper_offset + len(helper)] = helper
+    struct.pack_into("<I", psx, completion_offset, jump(COMPLETION_HELPER_ADDRESS))
     files[PSX_TARGET] = bytes(psx)
 
     base_font = files[FONT_TARGET]
