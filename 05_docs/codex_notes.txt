@@ -312,3 +312,10 @@ S3011/S3022/SC011 state mapping and control preservation - 2026-07-14
 - Some structurally valid bodies begin after an embedded two-byte speaker selector. Preserve the selectors and patch after them: S3022 `03 00` cases use adjusted starts `0x47D08`, `0x47D54`, `0x4866A`, and `0x48708`; SC011 adjusted starts include `0x46EAA`, `0x46FD8`, `0x47034`, and `0x48DEA`.
 - CSV translation cells containing literal commas must be quoted. The build report must be reviewed for the complete intended text, not only a successful process exit.
 - The current batch uses 68 additional codes absent from all structurally parsed original dialogue bodies and outside cursor cells. The verified extended map now contains 261 characters.
+
+Japanese decoder and S3023/S3024 batch - 2026-07-14
+- Manual mappings may be one-byte codes below DD or two-byte DD-E0 codes; two-byte glyph index is `(first-DD)*255 + second + DB`.
+- The interpreter treats bytes below E1 as glyphs and E1+ as controls. E1-E8 are unavailable without a separately verified parser hook.
+- Confirmed speaker selectors are `01/02/03/04/05/07 00`; decoding strips them while patching preserves them.
+- Exact high-confidence occurrence coverage is 97.64%, with 1,348/2,650 fully exact rows.
+- The S3023/S3024 batch raises the verified Korean map to 318 characters using parsed-dialogue-unused, cursor-safe codes.

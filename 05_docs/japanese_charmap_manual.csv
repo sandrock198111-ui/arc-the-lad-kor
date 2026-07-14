@@ -39,3 +39,134 @@ code_hex,char,evidence
 4A,じ,visual atlas
 4B,ち,visual atlas
 4C,ね,visual atlas
+25, ,repeated speaker-name separator and sentence context
+34,ン,モンスター and proper-name context
+3B,お,お前 and おまち context
+42,ア,スメリア context
+44,き,準備ができたら context
+45,つ,気をつける context
+46,え,お前 context
+47,ス,スメリア and モンスター context
+48,ゃ,じゃま context
+49,け,声をかける context
+4E,ク,ククル context
+51,め,はじめ context
+53,ル,ククル context
+54,ど,どう and どこ context
+55,ろ,だろう context
+58,ば,聞いてれば context
+59,せ,まかせて and 話させて context
+5A,へ,森へ context
+5F,モ,モンスター context
+62,タ,モンスター context
+6A,ぞ,sentence-ending ぞ context
+6B,リ,スメリア context
+6C,チ,チョピン name context
+6D,み,みたい and みた context
+71,ウ,katakana name context
+73,ょ,だいじょうぶ context
+75,っ,やっぱり context
+78,メ,スメリア context
+79,ご,ご案内 context
+7A,こ,いうこと context
+7C,ナ,ナンバー context
+82,ッ,katakana small-tsu context
+88,聞,聞く context
+8C,す,です and ます context
+8D,員,乗員 context
+8E,一,一度 context
+8F,オ,katakana context
+90,地,地名 and 地面 context
+95,ト,katakana context
+9F,思,思う context
+A1,っ,small-tsu context
+A3,パ,スパイ context
+A6,フ,katakana context
+A7,ぜ,sentence-ending ぜ context
+AF,バ,ナンバー context
+B2,分,自分 context
+B5,む,うむ context
+B7,父,father context
+BB,ヤ,ヤグン context
+C9,フ,katakana context
+CA,ぶ,だいじょうぶ context
+D1,ニ,katakana context
+D4,長,隊長 and 村長 context
+D5,勝,勝つ context
+D8,ム,katakana context
+DD 0D,供,子供 context
+DD 0E,母,母さん context
+DD 10,森,forest context
+DD 23,エ,katakana context
+DD 33,使,使者 context
+DD 35,ベ,katakana context
+DD 39,ウ,katakana context
+DD 3A,ミ,katakana context
+DD 47,勇,勇者 context
+DD 9C,族,種族 context
+DD 9D,跡,遺跡 context
+DD DE,経,経験 context
+DF 61,・,repeated Japanese middle-dot punctuation
+02,！,sentence-ending exclamation context
+09,（,furigana opening parenthesis context
+0A,）,furigana closing parenthesis context
+11,0,3000-year numeric context
+12,1,numeric and soldier-number context
+13,2,numeric and soldier-number context
+14,3,numeric context
+15,4,numeric context
+57,ラ,katakana word context
+60,シ,パレンシア context
+67,ダ,ダメージ context
+69,ョ,チョピン context
+72,ピ,チョピン context
+77,サ,アクセサリー context
+7D,ひ,ひく and ひろう context
+7F,ジ,ダメージ context
+81,デ,アークデーモン and アンデル context
+8A,へ,directional particle context
+8B,臣,大臣 context
+97,ふ,ふぶき and ふつう context
+99,び,再び and 滅びる context
+9C,げ,あげる and 投げる context
+A2,ロ,katakana item-name context
+AB,ュ,ヨシュア and トッシュ context
+B4,ベ,レベル context
+BC,カ,カード and カーソル context
+DB,テ,アイテム context
+D7,ポ,ポルタ name context
+D9,戻,return context
+DD 05,ほ,ほしい context
+DD 0F,封,封印 context
+DD 14,ヨ,ヨシュア and ヨッパライ context
+DD 44,印,封印 context
+DD 4D,ゲ,ゲーム context
+DD 4F,ぬ,おぬし context
+DD 56,カ,ニカラス context
+DD 60,セ,アクセサリー context
+DD 6C,悪,悪い context
+DD 72,飛,飛行船 context
+DD 7D,ぎ,過ぎる and かぎる context
+DD 8E,急,急ぐ context
+DD 9A,対,絶対 context
+DD A0,ワ,katakana context
+DD AF,恐,恐ろしい context
+DD B3,引,引く context
+DD B4,ベ,レベル context
+DD B8,旅,journey context
+DD BE,書,古文書 context
+DD C5,帰,帰る context
+DD D1,弟,younger-brother context
+DD D8,親,親父 and 親分 context
+DD DA,商,商売 context
+DD E2,意,意味 context
+DD F9,づ,近づく context
+DE 06,弾,projectile context
+DE 07,探,探す context
+DE 0A,選,選ぶ context
+DE 1D,違,違い context
+DE 33,丈,大丈夫 context
+DE 4D,ソ,カーソル context
+DE 6C,初,初めて context
+DE CA,置,置く context
+DF 01,ツ,ヤツ context

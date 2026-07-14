@@ -194,9 +194,12 @@ def build_glyph_map() -> tuple[
     with MANUAL_CHARMAP.open(encoding="utf-8-sig", newline="") as handle:
         for row in csv.DictReader(handle):
             code = bytes.fromhex(row["code_hex"])
-            if len(code) != 1 or code[0] >= 0xDD:
-                raise SystemExit(f"manual Japanese code must be one byte: {row['code_hex']}")
-            index = code[0] - 1
+            if len(code) == 1 and 0x01 <= code[0] < 0xDD:
+                index = code[0] - 1
+            elif len(code) == 2 and 0xDD <= code[0] <= 0xE0:
+                index = (code[0] - 0xDD) * 255 + code[1] + 0xDB
+            else:
+                raise SystemExit(f"invalid manual Japanese code: {row['code_hex']}")
             selected[index] = row["char"]
             ambiguity[index] = 1
             row_by_index[index]["selected"] = row["char"]
@@ -229,7 +232,14 @@ def payload_start(
 ) -> tuple[int, str]:
     start = marker_offset + 2
     prefix = data[start : start + 2]
-    if prefix in (b"\x01\x00", b"\x03\x00", b"\x04\x00"):
+    if prefix in (
+        b"\x01\x00",
+        b"\x02\x00",
+        b"\x03\x00",
+        b"\x04\x00",
+        b"\x05\x00",
+        b"\x07\x00",
+    ):
         return start + 2, f"control_{prefix.hex()}"
     if prefix == b"\x00\x00" and marker == 0x17 and header29 == marker_offset - 6:
         return start + 2, "control_0000"

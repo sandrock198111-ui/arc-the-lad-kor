@@ -858,3 +858,9 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Changed bytes: `31/S3011.DAT` 42, `31/S3022.DAT` 1032, `C1/SC011.DAT` 191.
 - Output: `03_output/story_bulk_s3011_s3022_sc011_s2041_s3031_s4041_cursor_fixed_full_patch_only.zip`, size 2,781,440 bytes, SHA256 `6A2550AC302945B9A9DF1DD08E0B5D6F64192109DE0926E0140585953AA495A9`.
 - Runtime status: pending user packaging and scene verification.
+
+2026-07-14 - S3023/S3024 corpus bulk build
+- Scope: 17 fully decoded S3023 bodies, 57 fully decoded S3024 bodies, and 57 new `COMM.IMG` glyph planes.
+- Checks: source hashes, `00 00` boundaries, capacities, unique ZIP entries, cumulative non-font identity, parsed-code non-use, and cursor rectangle.
+- Result: PASS; 74 payloads and 38 unique files. Unresolved Japanese rows were not modified.
+- Output SHA256: `E776E53C920C1455C5971FFC6A85D18AFAF1DFE47E5EEE6A8BD672CE2F421A92`. Runtime verification pending.
