@@ -877,4 +877,14 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Proof target: S1011 `0x479FC`, original capacity 36 bytes. Inline replacement is `E2 FF`; external Korean text is 71 bytes plus terminator.
 - EXE checks: original SHA256 verified; original E2 lookup prologue verified; selected `0x801A86F0` tail region was all zero; patched hook disassembles to compare internal index `FE`, return custom pointer for that index, and resume `0x8015EA4C` otherwise.
 - Static result: PASS. 39 unique ZIP entries, 13 bounded intro payloads, cursor rectangle preserved, external text terminated, hook and cave bytes verified.
-- Output SHA256: `D9A1ED41CA127931572754FFABC3456331E2696F437F63294F015AF3F968975A`. Runtime result pending.
+- Output SHA256: `D9A1ED41CA127931572754FFABC3456331E2696F437F63294F015AF3F968975A`.
+- Runtime result: FAIL. The line immediately before the proof displayed, but advancing stopped execution. Live process-memory inspection found the patched jump at `0x8015EA44` while the entire wrapper at `0x801A86F0` was zero. The selected tail is runtime-initialized storage and cannot hold executable proof code.
+
+2026-07-14 - E2 pointer-table long-text proof v2
+- Input: rejected E2 FF proof for its already corrected intro text/font, plus the original hash-verified `PSX.EXE`.
+- S1011 mapping observed live: file `0x479FC` was present at RAM `0x801169FC`, establishing a `-0x31000` overlay delta. The 71-byte terminated text is stored in the verified zero window at file `0x47700`, corresponding to RAM `0x80116700`.
+- Inline command: `E2 6C`, which selects internal name index 107. Original table pointer `0x8019C340` is temporarily replaced with `0x80116700`.
+- Static result: PASS. The original E2 lookup prologue is restored; `PSX.EXE` differs from the original in only three byte positions belonging to one pointer value; the ZIP has 39 unique entries; only `PSX.EXE` and `1/S1011.DAT` differ from the rejected proof.
+- Output: `story_intro_longtext_e2_pointer_proof_v2_patch_only.zip`, SHA256 `C45EB983E310541AD148076E359166CE02729D65EB8F53E0DA6D24B27845FF2C`.
+- Reproducibility: PASS. Two consecutive builds with fixed ZIP metadata produced the same SHA256.
+- Runtime status: pending. Name index 107 is borrowed only for this proof and must not be retained in a stable release.

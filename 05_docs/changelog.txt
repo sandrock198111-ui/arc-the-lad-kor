@@ -281,3 +281,9 @@
 - Rejected intro stable v0.1 after runtime exposed six legacy Hangul mappings.
 - Added seven verified extended Hangul mappings and `build_story_intro_e2ff_longtext_proof.py`.
 - Built a 39-file proof that replaces S1011 `0x479FC` with `E2 FF` and stores its 71-byte Korean text in a guarded PSX.EXE tail cave.
+
+2026-07-14
+- Runtime rejected the E2 FF tail-cave proof: the hook survived, but `0x801A86F0-0x801A871F` was zeroed before the target command executed.
+- Added `build_story_intro_e2_pointer_proof_v2.py`.
+- Built a replacement proof that restores the original lookup function, stores the long text at S1011 `0x47700`, and redirects temporary E2 name index 107 to RAM `0x80116700`.
+- Output SHA256: `C45EB983E310541AD148076E359166CE02729D65EB8F53E0DA6D24B27845FF2C` (deterministic ZIP metadata).
