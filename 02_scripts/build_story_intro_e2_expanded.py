@@ -22,8 +22,8 @@ BASE_HASH = "FA84E7A9169C481BFBBD5B18F5285EA132598E2137B84F261935EB1B5AC26416"
 MANIFEST = ROOT / "05_docs/story_intro_e2_expanded_translation.csv"
 EXTENDED = ROOT / "05_docs/korean_charmap_extended.csv"
 CORPUS = ROOT / "01_work/analysis/story_corpus/story_corpus.csv"
-OUTPUT = ROOT / "03_output/story_intro_e2_expanded_v03_cumulative_patch_only.zip"
-REPORT = ROOT / "01_work/analysis/story_intro_e2_expanded_v03_report.txt"
+OUTPUT = ROOT / "03_output/story_intro_e2_expanded_v04_cumulative_patch_only.zip"
+REPORT = ROOT / "01_work/analysis/story_intro_e2_expanded_v04_report.txt"
 
 PSX_TARGET = "PSX.EXE"
 TARGET_COUNTS = {"1/S1071.DAT": 4, "1/S1011.DAT": 9}
@@ -67,24 +67,24 @@ def old_handler() -> bytes:
 
 
 def skip_handler() -> bytes:
-    # Custom slot byte 0 stores the number of inline bytes to skip after E2.
+    # Custom slot byte 0x7F stores the number of inline bytes to skip after E2.
+    # Visible text stays at the aligned slot base proven by the v3 runtime test.
     # s0 is the live text state at this call site; s0+0x14 is its inline pointer.
     return struct.pack(
-        "<18I",
+        "<17I",
         0x308800FF,              # andi  t0,a0,00FF
         0x2D090080,              # sltiu t1,t0,0080
-        0x1520000D,              # bne   t1,zero,normal
+        0x1520000C,              # bne   t1,zero,normal
         0x2D090090,              # sltiu t1,t0,0090 (delay)
-        0x1120000B,              # beq   t1,zero,normal
+        0x1120000A,              # beq   t1,zero,normal
         0x2508FF80,              # addiu t0,t0,-0080 (delay)
         0x000811C0,              # sll   v0,t0,7
         0x3C098011,              # lui   t1,8011
         0x00491021,              # addu  v0,v0,t1 (slot base)
-        0x904A0000,              # lbu   t2,0(v0) (inline skip length)
+        0x904A007F,              # lbu   t2,7F(v0) (inline skip length)
         0x8E0B0014,              # lw    t3,14(s0)
         0x016A5821,              # addu  t3,t3,t2
         0xAE0B0014,              # sw    t3,14(s0)
-        0x24420001,              # addiu v0,v0,1 (visible text)
         0x03E00008,              # jr    ra
         0x00000000,              # nop
         jump(LOOKUP_ADDRESS),    # normal: original E2 lookup
@@ -227,8 +227,8 @@ def main() -> None:
 
         slot_offset = SLOT_BASE + slot * SLOT_SIZE
         targets[name][slot_offset:slot_offset + SLOT_SIZE] = b"\x00" * SLOT_SIZE
-        targets[name][slot_offset] = capacity - 2
-        targets[name][slot_offset + 1:slot_offset + 1 + len(payload)] = payload
+        targets[name][slot_offset:slot_offset + len(payload)] = payload
+        targets[name][slot_offset + SLOT_SIZE - 1] = capacity - 2
         # Preserve the original bounded-body end. The skip-aware E2 handler
         # advances s0+0x14 from offset+2 to this original end before returning.
         targets[name][offset:offset + 2] = bytes((0xE2, CUSTOM_DISK_FIRST + slot))

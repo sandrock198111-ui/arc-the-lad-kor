@@ -312,3 +312,9 @@
 - Extended the dedicated E2 handler to read a per-slot inline-skip byte and advance `s0+0x14` to each dialogue's original end before rendering the external string.
 - Preserved all original body tails and `00 00` boundaries while bypassing their visible-space padding.
 - Built `story_intro_e2_expanded_v03_cumulative_patch_only.zip`, SHA256 `437BBF577E6B37F34E57D4BD9AD385DD45098D105969CE67C833158CDF7CB0FE`.
+
+2026-07-14
+- Rejected intro E2 expanded v0.3 after all thirteen expanded strings rendered as empty windows while event progression remained correct.
+- Moved per-slot skip metadata from byte 0 to byte `0x7F` and restored visible strings to the aligned slot base proven by v3 runtime.
+- Updated the custom E2 handler to read metadata at `slot_base + 0x7F` without offsetting the returned text pointer.
+- Built `story_intro_e2_expanded_v04_cumulative_patch_only.zip`, SHA256 `57EE2A984AA1985A3A6C734A0792CB4A0C1427DE5302B606177F0A890C9FC1EC`.

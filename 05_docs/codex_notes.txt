@@ -360,3 +360,5 @@ E2 inline return termination - 2026-07-14
 - At the E2 lookup call, `s0+0x14` holds the inline pointer already advanced past `E2 nn`. A custom handler may safely add the remaining original body length before returning.
 - Accepted v0.3 slot layout for runtime testing: byte 0 is `original_capacity - 2`; bytes 1 onward are the visible zero-terminated string. The handler advances `s0+0x14` by byte 0 and returns `slot_base + 1`.
 - Preserve the original bytes after inline `E2 nn` and the original `00 00` boundary. The handler skips them without rendering, maintaining the event parser's expected continuation address.
+- Rejected v0.3 detail: placing metadata at slot byte 0 and returning `slot_base + 1` caused every expanded string to render empty even though event progression was correct.
+- Keep the visible secondary string at the 128-byte-aligned slot base proven by v3 runtime. Store non-rendered metadata at slot byte `0x7F`, after the string terminator, and return the unmodified slot base.

@@ -1113,3 +1113,10 @@ story_test_23 S1072 안전 경계 기준
 - This preserves every original bounded-body end and its existing `00 00` boundary without parsing the old filler bytes.
 - Current cumulative output: `03_output/story_intro_e2_expanded_v03_cumulative_patch_only.zip`, SHA256 `437BBF577E6B37F34E57D4BD9AD385DD45098D105969CE67C833158CDF7CB0FE`.
 - Independent MIPS disassembly and arithmetic verification passed for 13/13 original end pointers and 13/13 external strings. Runtime verification is pending.
+
+2026-07-14 intro E2 expanded v0.4 aligned text pointer correction:
+- Runtime rejected v0.3: event progression was restored, but all thirteen E2-expanded dialogues rendered as empty windows. Unmodified following scenes remained normal.
+- v0.3 had moved the visible string pointer from the v3-proven aligned slot base to `slot_base + 1`. v0.4 restores visible text to the aligned slot base and stores inline-skip metadata at unused slot byte `0x7F`.
+- The handler reads `slot_base + 0x7F`, advances `s0+0x14` to the original body end, and returns the unchanged aligned slot base.
+- Current cumulative output: `03_output/story_intro_e2_expanded_v04_cumulative_patch_only.zip`, SHA256 `57EE2A984AA1985A3A6C734A0792CB4A0C1427DE5302B606177F0A890C9FC1EC`.
+- Static verification passed for aligned text pointers 13/13, original end pointers 13/13, MIPS handler disassembly, deterministic builds, and cursor preservation. Runtime verification is pending.

@@ -924,3 +924,12 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Static result: PASS. Original end pointer 13/13, external strings 13/13, original body tails and boundaries preserved, cursor rectangle unchanged.
 - Reproducibility: PASS. Two builds produced SHA256 `437BBF577E6B37F34E57D4BD9AD385DD45098D105969CE67C833158CDF7CB0FE`.
 - Runtime status: pending confirmation of dialogue display, no blank pages, and normal continuation after the mountaintop scene.
+
+2026-07-14 - Intro E2 expanded v0.3 runtime rejection / v0.4 correction
+- v0.3 runtime result: FAIL. All patched village-chief and mountaintop dialogues were empty; the following unmodified scene rendered normally and event progression no longer jumped.
+- Isolation: the event-pointer skip logic is effective, while returning `slot_base + 1` is incompatible with the proven secondary-text path.
+- v0.4 slot layout: visible zero-terminated text begins at aligned slot byte 0; skip metadata is stored at byte `0x7F`, beyond every visible string terminator.
+- Independent static result: PASS. Aligned text pointer 13/13, original end pointer 13/13, external payload 13/13, body tails and boundaries preserved.
+- MIPS disassembly: PASS. Handler loads `lbu t2,0x7F(v0)`, updates `s0+0x14`, and returns the aligned `v0` without an address increment.
+- Reproducibility: PASS. SHA256 `57EE2A984AA1985A3A6C734A0792CB4A0C1427DE5302B606177F0A890C9FC1EC`.
+- Runtime status: pending confirmation that expanded text is visible and the scene continues without blank pages.
