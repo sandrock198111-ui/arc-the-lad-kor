@@ -287,3 +287,9 @@
 - Added `build_story_intro_e2_pointer_proof_v2.py`.
 - Built a replacement proof that restores the original lookup function, stores the long text at S1011 `0x47700`, and redirects temporary E2 name index 107 to RAM `0x80116700`.
 - Output SHA256: `C45EB983E310541AD148076E359166CE02729D65EB8F53E0DA6D24B27845FF2C` (deterministic ZIP metadata).
+
+2026-07-14
+- Runtime confirmed v2 could display the 71-byte secondary string and auto-wrap it to three lines. Embedded `E6 01` bytes appeared as visible garbage rather than line breaks.
+- Added `build_story_intro_e2_bank_proof_v3.py` with sixteen dedicated 128-byte E2 slots and no borrowed name pointers.
+- v3 hooks only the text interpreter call at `0x8016BC84`; all direct character/monster lookup calls retain the original path.
+- Built `story_intro_longtext_e2_bank_proof_v3_patch_only.zip`, SHA256 `FA84E7A9169C481BFBBD5B18F5285EA132598E2137B84F261935EB1B5AC26416`.

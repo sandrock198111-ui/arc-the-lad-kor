@@ -888,3 +888,12 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Output: `story_intro_longtext_e2_pointer_proof_v2_patch_only.zip`, SHA256 `C45EB983E310541AD148076E359166CE02729D65EB8F53E0DA6D24B27845FF2C`.
 - Reproducibility: PASS. Two consecutive builds with fixed ZIP metadata produced the same SHA256.
 - Runtime status: pending. Name index 107 is borrowed only for this proof and must not be retained in a stable release.
+- Runtime result: PARTIAL PASS. The complete long sentence displayed and auto-wrapped across three lines without stopping. Both embedded `E6 01` pairs rendered as visible non-Hangul symbols, so secondary strings must not contain inline control bytes.
+
+2026-07-14 - Dedicated E2 scene-bank proof v3
+- Scope: replace the borrowed-name v2 mechanism with sixteen text-only custom IDs. Internal IDs `80-8F` are selected by disk commands `E2 81-E2 90`; none occurs in the parsed original dialogue corpus.
+- Handler: the E2 call at `0x8016BC84` is redirected to a 52-byte handler at `0x8018FCD0`. Custom IDs return `0x80110000 + index * 128`; every other E2 ID tail-jumps to the original `0x8015EA44` lookup. Direct name lookup call sites are unchanged.
+- S1011 proof: `E2 81` points to file `0x45000` / RAM `0x80114000`. The 69-byte sentence contains no `E1-E8` controls and relies on renderer auto-wrap. The obsolete v2 storage at `0x47700` is cleared.
+- Static result: PASS. Original name lookup prologue retained; only `PSX.EXE` and `1/S1011.DAT` differ from v2; 39 unique ZIP entries; two consecutive builds have identical SHA256.
+- Output: `story_intro_longtext_e2_bank_proof_v3_patch_only.zip`, SHA256 `FA84E7A9169C481BFBBD5B18F5285EA132598E2137B84F261935EB1B5AC26416`.
+- Runtime status: pending. Do not begin early-game bulk expansion until handler persistence and next-line return are confirmed.

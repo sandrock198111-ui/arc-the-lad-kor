@@ -334,3 +334,7 @@ E2 secondary-string mechanism - 2026-07-14
 - Live S1011 mapping at the failed target is exact: file `0x479FC` appears at RAM `0x801169FC`, a delta of `-0x31000`. Therefore file `0x47700` maps to RAM `0x80116700` while S1011 is loaded.
 - Proof v2 uses the unmodified lookup function and temporarily rewrites pointer-table index 107 from `0x8019C340` to `0x80116700`; disk command `E2 6C` selects that index. This is a runtime proof only because index 107 is a real name-table entry.
 - If v2 succeeds, it proves secondary strings can exceed inline capacity. A scalable release still requires dedicated IDs or a separate bank that does not borrow character/monster name entries.
+- v2 runtime displayed the complete 71-byte string, so E2 secondary text can exceed the original inline block. `E6 01` is not interpreted inside a secondary string; it becomes visible garbage. Use spaces and automatic wrapping only.
+- v3 redirects only the JAL at `0x8016BC84`, not the shared lookup function. Internal E2 IDs `80-8F` map to sixteen 128-byte slots by `0x80110000 + index * 0x80`; normal E2 IDs tail-call `0x8015EA44`.
+- The v3 handler occupies 52 original-zero bytes at `0x8018FCD0`. Runtime must prove this region survives initialization before it is accepted.
+- In S1011, custom ID `80` (`E2 81` on disk) maps to RAM `0x80114000`, corresponding to file offset `0x45000` under the confirmed `+0xCF000` scene mapping.
