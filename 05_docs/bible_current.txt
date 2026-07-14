@@ -1093,3 +1093,10 @@ story_test_23 S1072 안전 경계 기준
 - Proof v2 output: `03_output/story_intro_longtext_e2_pointer_proof_v2_patch_only.zip`, SHA256 `C45EB983E310541AD148076E359166CE02729D65EB8F53E0DA6D24B27845FF2C`. Runtime displayed the full 71-byte text and auto-wrapped it to three lines. The embedded `E6 01` pairs rendered as visible garbage, proving secondary strings do not parse inline line-break controls.
 - Proof v3 removes `E6 01`, hooks only the E2 call at `0x8016BC84`, and reserves internal IDs `80-8F` as sixteen 128-byte scene-bank slots. Direct character/monster name lookups remain untouched.
 - Proof v3 output: `03_output/story_intro_longtext_e2_bank_proof_v3_patch_only.zip`, SHA256 `FA84E7A9169C481BFBBD5B18F5285EA132598E2137B84F261935EB1B5AC26416`. Runtime verification is pending before early-game bulk expansion.
+
+2026-07-14 intro E2 expanded v0.1:
+- Runtime verification accepted the v3 dedicated E2 bank: the long secondary string displayed without garbage or a progression stop, and the following dialogue continued normally.
+- The four confirmed `1/S1071.DAT` bodies and nine confirmed `1/S1011.DAT` bodies now use dedicated 128-byte E2 slots. Speaker names are kept on the first content line where present, allowing the dialogue window's full four-row layout to be tested.
+- Japanese originals remain the semantic authority. Naver story guides 1-21 are indexed in `05_docs/story_reference_naver_1_21.csv` and are used only for scene order, emotional context, and speech-level reference.
+- Current cumulative output: `03_output/story_intro_e2_expanded_v01_cumulative_patch_only.zip`, SHA256 `A45B8891D01DE74A2D978252E8A5FC3461E36C981CBBE8F859842A9214B43DE9`.
+- Static verification passed for all 13 E2 commands and external strings, deterministic rebuilds, 39 unique files, cumulative-file preservation, and the full confirmed battle-cursor texture rectangle. Runtime verification of four-row wrapping is pending.

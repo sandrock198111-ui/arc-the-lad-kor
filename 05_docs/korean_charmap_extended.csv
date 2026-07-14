@@ -344,3 +344,12 @@ char,code_hex,slot_note
 촌,DF83,E2 FF long-text proof; replaces legacy Hangul
 피,DF82,E2 FF long-text proof; replaces legacy Hangul
 혼,DF81,E2 FF long-text proof; replaces legacy Hangul
+:,DF80,intro E2 expanded v0.1
+규,DF7F,intro E2 expanded v0.1
+금,DF7E,intro E2 expanded v0.1
+뀌,DF7D,intro E2 expanded v0.1
+머,DF7C,intro E2 expanded v0.1
+문,DF7B,intro E2 expanded v0.1
+바,DF6E,intro E2 expanded v0.1
+율,DF6D,intro E2 expanded v0.1
+후,DF6C,intro E2 expanded v0.1

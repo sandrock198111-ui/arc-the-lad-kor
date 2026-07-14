@@ -338,3 +338,17 @@ E2 secondary-string mechanism - 2026-07-14
 - v3 redirects only the JAL at `0x8016BC84`, not the shared lookup function. Internal E2 IDs `80-8F` map to sixteen 128-byte slots by `0x80110000 + index * 0x80`; normal E2 IDs tail-call `0x8015EA44`.
 - The v3 handler occupies 52 original-zero bytes at `0x8018FCD0`. Runtime must prove this region survives initialization before it is accepted.
 - In S1011, custom ID `80` (`E2 81` on disk) maps to RAM `0x80114000`, corresponding to file offset `0x45000` under the confirmed `+0xCF000` scene mapping.
+- Runtime accepted the v3 handler: the external string rendered without garbage and advancing resumed normal dialogue execution. The dedicated IDs are therefore the accepted basis for intro expansion.
+- Each scene file owns its own sixteen slots at file offsets `0x45000 + slot * 0x80`; the same E2 ID can safely refer to different text after a scene overlay changes.
+- Secondary strings do not interpret `E6 01`. Keep speaker labels and prose in a single control-free string and rely on automatic wrapping. A label such as `촌장:` can share the first row with dialogue instead of consuming a row through an explicit line break.
+- Control validation must parse DD-E0 two-byte glyphs before testing for E1+ commands. A second byte such as `E2` is glyph data, not a control byte.
+
+Exact battle-cursor exclusion for future glyph allocation - 2026-07-14
+- The confirmed cursor source rectangle is `x=0..31, y=128..159` in logical COMM coordinates.
+- Coarse cell reservation `(rows 11-13) x (columns 0-2)` is incomplete because 12-pixel glyph row 10 spans `y=120..131` and overlaps the cursor's first four rows.
+- New allocators must reject a glyph when its 12x12 rectangle intersects the cursor rectangle. This excludes the intersecting portion of row 10 as well as rows 11-13; pixel-rectangle overlap is authoritative.
+
+External Korean story-guide policy - 2026-07-14
+- `story_reference_naver_1_21.csv` records the 21-post Arc the Lad story-guide sequence supplied by the user.
+- Japanese game text is the primary semantic source. The guide supplies scene order, emotional continuity, relationships, and Korean speech-level context.
+- Shortening for the game window may remove repetition but must not reverse agency, causality, obligation, or emotional intent. In S1011, Palencia Castle sends an escort for Kukuru; she is not ordering someone to collect her.

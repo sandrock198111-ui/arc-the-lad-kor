@@ -897,3 +897,13 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Static result: PASS. Original name lookup prologue retained; only `PSX.EXE` and `1/S1011.DAT` differ from v2; 39 unique ZIP entries; two consecutive builds have identical SHA256.
 - Output: `story_intro_longtext_e2_bank_proof_v3_patch_only.zip`, SHA256 `FA84E7A9169C481BFBBD5B18F5285EA132598E2137B84F261935EB1B5AC26416`.
 - Runtime status: pending. Do not begin early-game bulk expansion until handler persistence and next-line return are confirmed.
+
+2026-07-14 - Intro E2 expanded v0.1
+- Prior runtime result: PASS. The v3 dedicated E2 string displayed fully without visible control bytes, and advancing continued to the next dialogue.
+- Scope: four `1/S1071.DAT` dialogue bodies and nine `1/S1011.DAT` dialogue bodies, each redirected to a dedicated 128-byte scene-bank slot.
+- Translation check: Japanese originals were compared with Naver story guide part 1. The guide was used for context and speech level, not copied as patch text. The Palencia line now states that an escort will come from the castle, preserving the original direction of action.
+- Build guards caught and corrected three issues before release: an EXE file-offset conversion error, coarse cursor-cell exclusion that missed glyph row 10, and a validator that mistook a two-byte glyph's second byte for a control code.
+- Independent static result: PASS. All 13 inline commands, slot payloads, terminators, padding bytes, and boundaries match the manifest. Changed cumulative entries are exactly `1/S1011.DAT`, `1/S1071.DAT`, and `COMM.IMG`.
+- Reproducibility: PASS. Consecutive builds produced SHA256 `A45B8891D01DE74A2D978252E8A5FC3461E36C981CBBE8F859842A9214B43DE9`.
+- Cursor regression: PASS. The complete logical source rectangle `x=0..31, y=128..159` is byte-identical to the v3 base.
+- Runtime status: pending user packaging and verification of four-row auto-wrap, name-on-first-line layout, and next-dialogue progression.
