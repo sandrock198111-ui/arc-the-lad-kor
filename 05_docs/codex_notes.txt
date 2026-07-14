@@ -319,3 +319,10 @@ Japanese decoder and S3023/S3024 batch - 2026-07-14
 - Confirmed speaker selectors are `01/02/03/04/05/07 00`; decoding strips them while patching preserves them.
 - Exact high-confidence occurrence coverage is 97.64%, with 1,348/2,650 fully exact rows.
 - The S3023/S3024 batch raises the verified Korean map to 318 characters using parsed-dialogue-unused, cursor-safe codes.
+
+Intro prose stabilization - 2026-07-14
+- The current cumulative S1071/S1011 payloads were old structure probes, not translation: they repeatedly displayed `아크|마을로 가라` regardless of the original line.
+- Original corpus proves S1071 is Kukuru's village-gate conversation before entering Mount Cion and S1011 is her mountaintop monologue plus the voice released by extinguishing the sealing flame.
+- Stabilization must replace probe prose from decoded original data while retaining the already verified offsets, capacities, selectors, filler method, and cumulative file set.
+- The Korean blog story is a secondary scene/tone reference only; do not copy its prose or use it to establish binary addresses.
+- S1013, S1021, and other early cumulative files still require the same probe-prose audit before the patch can be called an early-game stable release.

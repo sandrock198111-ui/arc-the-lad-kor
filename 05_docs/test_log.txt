@@ -864,3 +864,10 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Checks: source hashes, `00 00` boundaries, capacities, unique ZIP entries, cumulative non-font identity, parsed-code non-use, and cursor rectangle.
 - Result: PASS; 74 payloads and 38 unique files. Unresolved Japanese rows were not modified.
 - Output SHA256: `E776E53C920C1455C5971FFC6A85D18AFAF1DFE47E5EEE6A8BD672CE2F421A92`. Runtime verification pending.
+
+2026-07-14 - Intro stabilization v0.1
+- Scope: four bounded S1071 bodies and nine bounded S1011 bodies, replacing repeated structural-probe prose.
+- Checks: 13 payload capacities and boundaries, 38 unique ZIP entries, cursor rectangle, and full-entry SHA256 comparison against the prior cumulative ZIP.
+- Result: PASS. Changed entries are exactly `1/S1071.DAT`, `1/S1011.DAT`, and `COMM.IMG`; all other entries are byte-identical.
+- Output: `story_intro_stable_v01_cumulative_patch_only.zip`, SHA256 `4C313D3408D78249BA06F712A5BABFA68647FAB1D21AB33EA40D465F4B7F0298`.
+- Runtime status: pending new-boot verification. Other early probe files remain outside this stabilization scope.

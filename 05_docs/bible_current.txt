@@ -1078,3 +1078,9 @@ story_test_23 S1072 안전 경계 기준
 - Added 17 fully decoded S3023 bodies and 57 fully decoded S3024 bodies; unresolved rows remain unchanged.
 - Current output: `03_output/story_bulk_s3011_s3022_s3023_s3024_sc011_s2041_s3031_s4041_cursor_fixed_full_patch_only.zip`.
 - Static verification passed for 38 unique files, cumulative non-font identity, bounded payloads, 318 glyph planes, and the cursor rectangle. SHA256: `E776E53C920C1455C5971FFC6A85D18AFAF1DFE47E5EEE6A8BD672CE2F421A92`.
+
+2026-07-14 intro stabilization v0.1:
+- Replaced the structural-probe phrases in all four confirmed `1/S1071.DAT` intro bodies and all nine confirmed `1/S1011.DAT` mountaintop bodies with context-aware Korean based on the decoded Japanese. The external Korean story post was used only to confirm scene flow and tone.
+- Current output: `03_output/story_intro_stable_v01_cumulative_patch_only.zip`, SHA256 `4C313D3408D78249BA06F712A5BABFA68647FAB1D21AB33EA40D465F4B7F0298`.
+- Exactly `1/S1071.DAT`, `1/S1011.DAT`, and `COMM.IMG` differ from the preceding 38-file cumulative base. All other files are byte-identical. Runtime verification is pending.
+- Other early files still contain structural-probe prose and are not yet stable translation.
