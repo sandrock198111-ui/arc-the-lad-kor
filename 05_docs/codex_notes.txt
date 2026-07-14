@@ -364,3 +364,6 @@ E2 inline return termination - 2026-07-14
 - Keep the visible secondary string at the 128-byte-aligned slot base proven by v3 runtime. Store non-rendered metadata at slot byte `0x7F`, after the string terminator, and return the unmodified slot base.
 - Rejected v0.4 detail: even with an aligned returned pointer, modifying `s0+0x14` inside the E2 lookup handler makes `0x8016BBA4` see inline `00 00` in the same update and clear state at `0x8016BBCC` before secondary rendering.
 - Inline skipping must be deferred until the E2 secondary pointer itself reaches zero. The verified completion branch is `0x8016BDC0`; after applying the skip, resume the original state-setting path at `0x8016BE44`.
+- Live S1071 mapping proof: file offset `0x45000` is present at PS1 RAM offset `0x14000`, and patched inline offset `0x478D6` is present at RAM offset `0x168D6`; both share the confirmed file-to-RAM delta `+0xCF000`.
+- Rejected v0.5 address calculation: `0x80110000 + slot * 0x80`. It omitted the bank displacement `0x4000`, so custom slot 0 resolved to zero-filled RAM and completion metadata also read as zero.
+- Correct custom E2 slot formula is `0x80114000 + slot * 0x80` for both the lookup return pointer and byte-`0x7F` completion metadata lookup. A handler change is incomplete unless both calculations are updated together.

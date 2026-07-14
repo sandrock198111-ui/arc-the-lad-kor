@@ -942,3 +942,12 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Independent disassembly: PASS. v3 lookup restored, completion deferred, custom-ID range guarded, original end pointer 13/13, external payload 13/13.
 - Reproducibility: PASS. SHA256 `2BEEBDC203F92AD882DE1A9511F343FE7494E2EBAAD83BBADE9171E8B810B49F`.
 - Runtime status: pending confirmation of visible expanded text, no blank pages, and normal scene continuation.
+
+2026-07-14 - Intro E2 expanded v0.5 runtime rejection / v0.6 RAM-bank correction
+- v0.5 runtime result: FAIL. At the first S1071 village-chief line, only the first preserved inline-tail glyph appeared before the old shortened text continued.
+- Live read-only process scan: PASS. Six PS1 RAM mirrors contained the patched inline command at RAM offset `0x168D6` and the exact S1071 external slot payload at offset `0x14000`. The complete 2 MB mirrors were readable without GDB or emulator control.
+- Root cause: both handlers formed `0x80110000 + slot * 0x80`, while file offset `0x45000` was actually loaded at `0x80114000`. The incorrect lookup returned zero-filled RAM; the incorrect completion lookup also read zero skip metadata.
+- v0.6 correction: both handlers add `0x4000` before slot addressing. Independent MIPS disassembly confirms lookup base `0x80114000`, completion metadata base `0x80114000`, valid custom-ID branches, and original fallback/return targets.
+- Regression comparison: PASS. Against v0.5, only `PSX.EXE` differs; all 38 other cumulative entries, including both story DAT files and `COMM.IMG`, are byte-identical.
+- Reproducibility: PASS. Two builds produced SHA256 `D849F637D7F1C0E5B6E170BBE3CB6ACB47E48FC045C9E0A702B60CAF26991FF5`.
+- Runtime status: pending packaging and confirmation of the first village-chief expanded line plus normal advancement.

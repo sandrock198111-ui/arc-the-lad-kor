@@ -22,8 +22,8 @@ BASE_HASH = "FA84E7A9169C481BFBBD5B18F5285EA132598E2137B84F261935EB1B5AC26416"
 MANIFEST = ROOT / "05_docs/story_intro_e2_expanded_translation.csv"
 EXTENDED = ROOT / "05_docs/korean_charmap_extended.csv"
 CORPUS = ROOT / "01_work/analysis/story_corpus/story_corpus.csv"
-OUTPUT = ROOT / "03_output/story_intro_e2_expanded_v05_cumulative_patch_only.zip"
-REPORT = ROOT / "01_work/analysis/story_intro_e2_expanded_v05_report.txt"
+OUTPUT = ROOT / "03_output/story_intro_e2_expanded_v06_cumulative_patch_only.zip"
+REPORT = ROOT / "01_work/analysis/story_intro_e2_expanded_v06_report.txt"
 
 PSX_TARGET = "PSX.EXE"
 TARGET_COUNTS = {"1/S1071.DAT": 4, "1/S1011.DAT": 9}
@@ -69,19 +69,32 @@ def old_handler() -> bytes:
     )
 
 
+def corrected_handler() -> bytes:
+    # Scene file 0x45000 is loaded at 0x80114000. The v3 handler omitted the
+    # low 0x4000 portion and accidentally returned pointers into 0x80110000.
+    return struct.pack(
+        "<14I",
+        0x308800FF, 0x2D090080, 0x15200009, 0x2D090090,
+        0x11200007, 0x2508FF80, 0x000811C0, 0x3C098011,
+        0x25294000, 0x00491021, 0x03E00008, 0x00000000,
+        jump(LOOKUP_ADDRESS), 0x00000000,
+    )
+
+
 def completion_handler() -> bytes:
     # This runs only after the secondary string pointer reaches its terminator.
     # The byte before s0+0x14 is the E2 disk ID because inline parsing paused
     # immediately after E2 nn while the secondary string was displayed.
     return struct.pack(
-        "<14I",
+        "<15I",
         0x8E080014,                    # lw    t0,14(s0)
         0x9109FFFF,                    # lbu   t1,-1(t0) (disk E2 ID)
         0x2529FF7F,                    # addiu t1,t1,-0081
         0x2D2A0010,                    # sltiu t2,t1,0010
-        0x11400006,                    # beq   t2,zero,done
+        0x11400007,                    # beq   t2,zero,done
         0x000949C0,                    # sll   t1,t1,7 (delay)
         0x3C0A8011,                    # lui   t2,8011
+        0x254A4000,                    # addiu t2,t2,4000 (RAM bank base)
         0x012A4821,                    # addu  t1,t1,t2 (slot base)
         0x912A007F,                    # lbu   t2,7F(t1) (inline skip)
         0x010A4021,                    # addu  t0,t0,t2
@@ -190,11 +203,12 @@ def main() -> None:
     if struct.unpack_from("<I", psx, completion_offset + 4)[0] != 0:
         raise SystemExit("original E2 completion delay slot differs")
     helper = completion_handler()
+    handler = corrected_handler()
     helper_offset = file_offset(COMPLETION_HELPER_ADDRESS)
-    if helper_offset < handler_offset + len(old_handler()) or helper_offset + len(helper) > handler_offset + handler_size:
+    if helper_offset < handler_offset + len(handler) or helper_offset + len(helper) > handler_offset + handler_size:
         raise SystemExit("completion helper does not fit handler cave")
     psx[handler_offset:handler_offset + handler_size] = b"\x00" * handler_size
-    psx[handler_offset:handler_offset + len(old_handler())] = old_handler()
+    psx[handler_offset:handler_offset + len(handler)] = handler
     psx[helper_offset:helper_offset + len(helper)] = helper
     struct.pack_into("<I", psx, completion_offset, jump(COMPLETION_HELPER_ADDRESS))
     files[PSX_TARGET] = bytes(psx)

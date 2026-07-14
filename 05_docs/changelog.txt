@@ -324,3 +324,5 @@
 - Confirmed from EXE control flow that changing `s0+0x14` during E2 lookup terminates the text state before secondary rendering begins.
 - Restored the runtime-proven v3 lookup handler and patched E2's completed-secondary path at `0x8016BDC0` to apply inline skipping only after the external string terminates.
 - Built `story_intro_e2_expanded_v05_cumulative_patch_only.zip`, SHA256 `2BEEBDC203F92AD882DE1A9511F343FE7494E2EBAAD83BBADE9171E8B810B49F`.
+- Corrected the expanded E2 lookup and completion handlers to add the missing RAM-bank displacement `0x4000`; both now address scene slots at `0x80114000 + slot * 0x80`.
+- Built `story_intro_e2_expanded_v06_cumulative_patch_only.zip`, SHA256 `D849F637D7F1C0E5B6E170BBE3CB6ACB47E48FC045C9E0A702B60CAF26991FF5`.
