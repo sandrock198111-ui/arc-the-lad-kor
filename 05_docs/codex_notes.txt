@@ -384,5 +384,11 @@ Dialogue glyph spacing structure - 2026-07-14
 
 DuckStation stale GDB pause correction - 2026-07-15
 - A GDB client can leave a DuckStation process paused after disconnecting; an empty current connection list does not prove that the process resumed.
-- The affected process displayed a partially rendered title frame at game 0 FPS while video remained 60 FPS. A complete process exit and fresh launch of the same v0.9 CUE produced a correct title at game/video 60 FPS and normal opening progression.
+- A complete process exit and fresh launch is necessary but not sufficient: v0.9 played the opening normally and still failed only after Start entered the title-menu glyph path.
 - Runtime patch acceptance tests must use a newly launched DuckStation process that has never accepted a GDB client. GDB-enabled or previously attached processes are trace-only and must not be reused for boot acceptance.
+
+R3000 text-renderer load-delay rule - 2026-07-15
+- PS1 load results cannot be consumed by the immediately following instruction. Branch-delay-slot loads need an independent instruction at both the fall-through and taken destinations before their destination register is used.
+- Rejected v0.9 loaded current X into `v0` at `0x8016B644` and consumed it at the taken target `0x8016B64C`, corrupting normal glyph rendering and stopping the title menu after Start.
+- v0.10 moves the independent glyph-count load to `0x8016B64C` and consumes X at `0x8016B650`. Static disassembly reviews must check R3000 data hazards, not only branch targets and instruction meaning.
+- Renderer acceptance requires pressing Start and entering the title menu; passive opening/title playback does not exercise every common glyph path.

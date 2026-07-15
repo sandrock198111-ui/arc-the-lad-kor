@@ -989,6 +989,14 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 2026-07-15 - Half-width-space v0.9 fresh-process boot correction
 - Initial observation: the long-lived DuckStation process showed a partially rendered title frame and `game 0 FPS / video 60 FPS`. `E:\arc\out\PSX.EXE` exactly matched the v0.9 ZIP, and port 2345 had only a listening GDB server with no current client.
 - Control: fully closed DuckStation, then launched `E:\arc\arc1.cue` in a new process without a GDB client.
-- Result: PASS for boot and progression. The title rendered normally at `game 60 FPS / video 60 FPS`, and the opening sequence continued afterward at its normal 15 FPS presentation rate.
-- Conclusion: the initial 0 FPS frame was stale emulator pause state left by earlier GDB attachment, not evidence that v0.9 crashed. Do not classify runtime code from a DuckStation process that has previously accepted a GDB client.
-- Remaining v0.9 checks: visually confirm 6-pixel spaces in dialogue, intact 12-pixel Hangul strokes, wrapping, UI, and battle cursor.
+- Result before input: the title rendered at `game 60 FPS / video 60 FPS`, and the opening sequence continued at its normal 15 FPS presentation rate.
+- Result after Start: FAIL. The title-menu renderer produced large blue rectangles and stopped at `game 0 FPS / video 60 FPS` in the fresh no-GDB process.
+- Root cause: v0.9 placed `lhu v0,6(a2)` in the branch delay slot and used `v0` immediately at the taken target. This violates the R3000 one-instruction load delay on the normal-glyph path.
+
+2026-07-15 - Half-width-space v0.10 load-delay correction
+- Base: accepted cumulative v0.6; v0.9 is not used as an input.
+- Scope: `COMM.IMG` and all story files are unchanged. Only `PSX.EXE` differs from v0.6.
+- Fix: branch target `0x8016B64C` now loads the glyph count, providing an independent instruction between `lhu v0,6(a2)` and `addu v0,v0,v1`. The count load also has two independent instructions before its own use.
+- Independent MIPS disassembly: PASS. Space index comparison, branch delay, both load-delay separations, X store, count increment, and return path are correct.
+- Reproducibility: PASS. Two builds produced SHA256 `D11C4C629C4718414D45C8AC000EF61965EC9B4309BC24AD74BD995CCE247335`.
+- Runtime status: pending fresh-process Start-menu, dialogue spacing, wrapping, UI, and battle-cursor verification.

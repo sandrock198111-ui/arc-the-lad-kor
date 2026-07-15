@@ -1,0 +1,7 @@
+glyph_width=12
+space_glyph_index=0x9B
+space_advance=6
+font_changed=false
+r3000_load_delay_safe=true
+new_code_cave=false
+sha256=D11C4C629C4718414D45C8AC000EF61965EC9B4309BC24AD74BD995CCE247335

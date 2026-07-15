@@ -335,6 +335,8 @@
 - Built `story_intro_halfwidth_space_v09_cumulative_patch_only.zip`, SHA256 `508FCD26D7D758FFF12CF3B63001A799E4D0AEDB507EBE5F335AB20CEE2A1F10`.
 
 2026-07-15
-- Reclassified the earlier v0.9 title-screen 0 FPS result as a stale DuckStation/GDB pause, not a patch regression.
-- Freshly launched the same v0.9 CUE without a GDB client; the title rendered correctly at 60 FPS and the opening sequence continued normally.
+- Freshly launched the same v0.9 CUE without a GDB client; the opening and static title rendered, but this was not a sufficient runtime acceptance test.
+- Rejected v0.9 after pressing Start caused blue title-menu rectangles and game 0 FPS in the fresh no-GDB process.
+- Identified and corrected an R3000 load-delay violation in the non-space X-advance branch.
+- Added `build_story_intro_halfwidth_space_v10.py` and built `story_intro_halfwidth_space_v10_cumulative_patch_only.zip`, SHA256 `D11C4C629C4718414D45C8AC000EF61965EC9B4309BC24AD74BD995CCE247335`.
 - Reclassified the v0.7 wrapper 0 FPS result as inconclusive because it was measured in the same GDB-affected process; no wrapper code was restored.
