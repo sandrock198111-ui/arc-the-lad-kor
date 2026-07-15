@@ -1137,3 +1137,9 @@ story_test_23 S1072 안전 경계 기준
 - Half-width-space v0.10 retains the v0.9 behavior but schedules `lhu a0,0A(a2)` between the X load and first `v0` use. Output: `03_output/story_intro_halfwidth_space_v10_cumulative_patch_only.zip`, SHA256 `D11C4C629C4718414D45C8AC000EF61965EC9B4309BC24AD74BD995CCE247335`. Static and reproducibility tests pass; runtime Start-menu and dialogue acceptance are pending.
 - Expanded lines still resume portions of the overwritten inline body in multiple S1071 entries. For example, the external sentence ending in `주는 거야?` is followed by old tail `속 지킬 거야?`; `약` was not a missing glyph because its original location was replaced by `E2 nn`. Treat all such tails as one deferred-completion skip defect.
 - E2 skip v0.11 is runtime accepted. It fixes three R3000 load-delay violations in the deferred-completion helper at `0x8018FD20`, retains v0.10 spacing and all story/font data, and changes only `PSX.EXE`. The residual `속 지킬 거야?` tail disappeared and progression remained normal. Output: `03_output/story_intro_e2_skip_v11_cumulative_patch_only.zip`, SHA256 `84490A7196300C903A8B1E21A408556A10D79E0406534B921557B6D75D6A88AB`. This is the new cumulative base for bulk work.
+
+2026-07-15 punctuation baseline v0.12:
+- Comma `,` (`DFE2`) and period `.` (`E060`) are distinct codes. Japanese middle-dot codes remain separate and were not changed.
+- Their two-pixel glyph planes were shifted down four pixels to the dialogue baseline. No dialogue bytes, executable code, neighboring font planes, or battle-cursor pixels changed.
+- Current cumulative output: `03_output/story_punctuation_v12_cumulative_patch_only.zip`, SHA256 `4CE0465201FE204A542413271C2FDC1C52E7F7DC793224F9D533B855A2D4CDFB`.
+- Static and deterministic-build verification passed. Runtime punctuation appearance is pending user verification.

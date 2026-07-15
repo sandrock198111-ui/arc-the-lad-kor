@@ -343,3 +343,8 @@
 - Found three R3000 load-delay violations in the E2 deferred inline-skip helper; these prevented slot skip metadata from being applied and exposed original tails such as `속 지킬 거야?`.
 - Added `build_story_intro_e2_skip_v11.py` and built `story_intro_e2_skip_v11_cumulative_patch_only.zip`, SHA256 `84490A7196300C903A8B1E21A408556A10D79E0406534B921557B6D75D6A88AB`.
 - Accepted v0.11 after runtime confirmed the residual inline tail disappeared and dialogue progression remained correct; promoted it as the cumulative base for bulk patching.
+
+2026-07-15
+- Added `build_story_punctuation_v12.py` to correct the vertical placement of comma `DFE2` and period `E060` without changing their character codes.
+- Updated the shared glyph renderer so future font rebuilds retain the same punctuation baseline.
+- Built `story_punctuation_v12_cumulative_patch_only.zip`, SHA256 `4CE0465201FE204A542413271C2FDC1C52E7F7DC793224F9D533B855A2D4CDFB`.

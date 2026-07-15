@@ -72,9 +72,14 @@ def render_glyph(char: str) -> Image.Image:
     x = (24 - (bbox[2] - bbox[0])) // 2 - bbox[0]
     y = (24 - (bbox[3] - bbox[1])) // 2 - bbox[1]
     draw.text((x, y), char, fill=255, font=font)
-    return canvas.crop((6, 6, 18, 18)).point(
+    glyph = canvas.crop((6, 6, 18, 18)).point(
         lambda value: 255 if value >= 192 else 0, mode="1"
     )
+    if char in {",", "."}:
+        shifted = Image.new("1", (12, 12), 0)
+        shifted.paste(glyph, (0, 4))
+        return shifted
+    return glyph
 
 
 def get_pixel(data: bytearray, x: int, y: int) -> int:

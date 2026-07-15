@@ -398,3 +398,8 @@ E2 completion helper load-delay correction - 2026-07-15
 - The v0.6-v0.10 completion helper at `0x8018FD20` violated R3000 load delay after `lw t0,14(s0)`, `lbu t1,-1(t0)`, and `lbu t2,7F(t1)`. All three loads require a separating instruction before their result is consumed.
 - v0.11 adds the three delay spacers without changing lookup addressing, per-slot metadata, story files, font data, or the accepted v0.10 spacing logic.
 - Runtime accepted v0.11: deferred inline skipping removed the residual tail without damaging the expanded line or the following event. Use v0.11 as the cumulative input for subsequent bulk patches.
+
+Punctuation code and baseline - 2026-07-15
+- Korean comma `,` uses two-byte code `DFE2`; period `.` uses `E060`. They are not the Japanese middle dot, which has separate original mappings.
+- The old shared glyph renderer vertically centered punctuation inside a 12x12 cell, making comma and period resemble centered dots in-game.
+- v0.12 preserves the code stream and moves only those two glyph planes down four pixels. Future font generation must keep this punctuation baseline special case.

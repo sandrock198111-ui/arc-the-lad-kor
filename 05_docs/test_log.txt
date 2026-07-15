@@ -1011,3 +1011,11 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Reproducibility: PASS. Two builds produced SHA256 `84490A7196300C903A8B1E21A408556A10D79E0406534B921557B6D75D6A88AB`.
 - Runtime status: pending confirmation that `속 지킬 거야?` and other residual inline tails disappear without skipping the next event.
 - Runtime result: PASS. The residual `속 지킬 거야?` tail disappeared, the intended expanded Korean line remained intact, and subsequent dialogue progression was normal.
+
+2026-07-15 - Punctuation baseline v0.12
+- Base: runtime-accepted v0.11, SHA256 `84490A7196300C903A8B1E21A408556A10D79E0406534B921557B6D75D6A88AB`.
+- Scope: only comma plane `DFE2` and period plane `E060` in `COMM.IMG` were shifted down four pixels. Japanese middle-dot mappings were not modified.
+- Pixel preservation: PASS. Each punctuation plane retained both source pixels, every neighboring bitplane was preserved, and the confirmed battle-cursor rectangle was unchanged.
+- Cumulative regression: PASS. All 38 non-font entries are byte-identical to v0.11.
+- Reproducibility: PASS. Repeated builds produced SHA256 `4CE0465201FE204A542413271C2FDC1C52E7F7DC793224F9D533B855A2D4CDFB`.
+- Runtime status: pending visual confirmation of comma and period placement in dialogue.

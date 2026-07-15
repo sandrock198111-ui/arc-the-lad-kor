@@ -1,0 +1,9 @@
+base=v0.11
+comma_code=DFE2
+period_code=E060
+vertical_shift=4
+comma_pixels=2
+period_pixels=2
+neighbor_planes_preserved=true
+battle_cursor_preserved=true
+sha256=4CE0465201FE204A542413271C2FDC1C52E7F7DC793224F9D533B855A2D4CDFB
