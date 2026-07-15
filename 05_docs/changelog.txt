@@ -348,3 +348,9 @@
 - Added `build_story_punctuation_v12.py` to correct the vertical placement of comma `DFE2` and period `E060` without changing their character codes.
 - Updated the shared glyph renderer so future font rebuilds retain the same punctuation baseline.
 - Built `story_punctuation_v12_cumulative_patch_only.zip`, SHA256 `4CE0465201FE204A542413271C2FDC1C52E7F7DC793224F9D533B855A2D4CDFB`.
+
+2026-07-15
+- Added `story_s1072_e2_translation.csv` with contextual translations for all ten high-confidence S1072 dialogue bodies.
+- Added `build_story_s1072_e2_v13.py`; it assigns E2 slots `0x81-0x8A`, preserves inline return offsets, allocates 13 safe glyphs, and checks cursor preservation.
+- Removed the old temporary S1072 lines such as `촌장 / 가라` from the cumulative output.
+- Built `story_s1072_e2_v13_cumulative_patch_only.zip`, SHA256 `4E413AB2874F4773F431EDA592625241BC4BEE50280D78EFD563B334A426F8AE`.

@@ -403,3 +403,9 @@ Punctuation code and baseline - 2026-07-15
 - Korean comma `,` uses two-byte code `DFE2`; period `.` uses `E060`. They are not the Japanese middle dot, which has separate original mappings.
 - The old shared glyph renderer vertically centered punctuation inside a 12x12 cell, making comma and period resemble centered dots in-game.
 - v0.12 preserves the code stream and moves only those two glyph planes down four pixels. Future font generation must keep this punctuation baseline special case.
+
+S1072 E2 expansion - 2026-07-15
+- S1072 contains ten high-confidence dialogue bodies at payload offsets `0x478CC`, `0x47932`, `0x47996`, `0x479F4`, `0x47A30`, `0x47A68`, `0x47AA8`, `0x47B0E`, `0x47B94`, and `0x47C24`.
+- The previous cumulative file still held early structure probes such as `촌장 / 가라`; those were not finished translations.
+- S1072's sixteen 128-byte external-bank slots at file offset `0x45000` were all empty. v0.13 safely uses slots 0-9 and E2 disk IDs `0x81-0x8A`.
+- Every S1072 replacement uses the runtime-accepted deferred completion helper and stores `original capacity - 2` at slot byte `0x7F`.

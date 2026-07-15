@@ -1143,3 +1143,10 @@ story_test_23 S1072 안전 경계 기준
 - Their two-pixel glyph planes were shifted down four pixels to the dialogue baseline. No dialogue bytes, executable code, neighboring font planes, or battle-cursor pixels changed.
 - Current cumulative output: `03_output/story_punctuation_v12_cumulative_patch_only.zip`, SHA256 `4CE0465201FE204A542413271C2FDC1C52E7F7DC793224F9D533B855A2D4CDFB`.
 - Static and deterministic-build verification passed. Runtime punctuation appearance is pending user verification.
+
+2026-07-15 S1072 full E2 expansion v0.13:
+- Replaced all ten old S1072 structure-probe lines, including the visible `촌장 / 가라`, with contextual Korean translations based on the Japanese originals.
+- All ten bodies use the accepted E2 external-bank mechanism in slots `0x81-0x8A`; original body-end pointers are preserved through byte-`0x7F` skip metadata.
+- Added 13 required Hangul glyphs while preserving the confirmed battle-cursor rectangle.
+- Current cumulative output: `03_output/story_s1072_e2_v13_cumulative_patch_only.zip`, SHA256 `4E413AB2874F4773F431EDA592625241BC4BEE50280D78EFD563B334A426F8AE`.
+- Static and deterministic-build verification passed. Runtime verification of the full S1072 scene is pending.

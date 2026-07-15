@@ -1019,3 +1019,12 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Cumulative regression: PASS. All 38 non-font entries are byte-identical to v0.11.
 - Reproducibility: PASS. Repeated builds produced SHA256 `4CE0465201FE204A542413271C2FDC1C52E7F7DC793224F9D533B855A2D4CDFB`.
 - Runtime status: pending visual confirmation of comma and period placement in dialogue.
+
+2026-07-15 - S1072 full E2 expansion v0.13
+- Input: punctuation v0.12 cumulative patch.
+- Manifest: 10/10 S1072 high-confidence bodies translated; all encoded payloads fit the 127-byte E2 text area.
+- E2 structure: PASS. Commands `E2 81` through `E2 8A`, ten zero-terminated secondary strings, and ten `capacity - 2` metadata bytes were verified.
+- Glyph allocation: PASS. Thirteen new Hangul glyphs use unparsed, unoccupied codes outside the exact cursor rectangle.
+- Regression: PASS. Against v0.12 only `1/S1072.DAT` and `COMM.IMG` differ; all other 37 entries are byte-identical.
+- Reproducibility: PASS. Repeated builds produced SHA256 `4E413AB2874F4773F431EDA592625241BC4BEE50280D78EFD563B334A426F8AE`.
+- Runtime status: pending confirmation that the full village-return scene displays expanded Korean and continues normally.
