@@ -333,3 +333,8 @@
 - Rejected v0.8 after runtime showed only a subtle spacing change and clipped the right edge of wide Hangul glyphs.
 - Added `build_story_intro_halfwidth_space_v09.py`; it retains the accepted v0.6 font and 12-pixel glyph width while reducing only space index `0x9B` to a 6-pixel X advance.
 - Built `story_intro_halfwidth_space_v09_cumulative_patch_only.zip`, SHA256 `508FCD26D7D758FFF12CF3B63001A799E4D0AEDB507EBE5F335AB20CEE2A1F10`.
+
+2026-07-15
+- Reclassified the earlier v0.9 title-screen 0 FPS result as a stale DuckStation/GDB pause, not a patch regression.
+- Freshly launched the same v0.9 CUE without a GDB client; the title rendered correctly at 60 FPS and the opening sequence continued normally.
+- Reclassified the v0.7 wrapper 0 FPS result as inconclusive because it was measured in the same GDB-affected process; no wrapper code was restored.

@@ -985,3 +985,10 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Independent MIPS disassembly: PASS. Space comparison, branch delay, normal/space advance merge, X store, glyph-count increment, and return path are correct.
 - Reproducibility: PASS. Builds separated by three seconds produced SHA256 `508FCD26D7D758FFF12CF3B63001A799E4D0AEDB507EBE5F335AB20CEE2A1F10`.
 - Runtime status: pending normal boot, visibly narrower spaces, full glyph strokes, wrapping, UI, and battle-cursor confirmation.
+
+2026-07-15 - Half-width-space v0.9 fresh-process boot correction
+- Initial observation: the long-lived DuckStation process showed a partially rendered title frame and `game 0 FPS / video 60 FPS`. `E:\arc\out\PSX.EXE` exactly matched the v0.9 ZIP, and port 2345 had only a listening GDB server with no current client.
+- Control: fully closed DuckStation, then launched `E:\arc\arc1.cue` in a new process without a GDB client.
+- Result: PASS for boot and progression. The title rendered normally at `game 60 FPS / video 60 FPS`, and the opening sequence continued afterward at its normal 15 FPS presentation rate.
+- Conclusion: the initial 0 FPS frame was stale emulator pause state left by earlier GDB attachment, not evidence that v0.9 crashed. Do not classify runtime code from a DuckStation process that has previously accepted a GDB client.
+- Remaining v0.9 checks: visually confirm 6-pixel spaces in dialogue, intact 12-pixel Hangul strokes, wrapping, UI, and battle cursor.
