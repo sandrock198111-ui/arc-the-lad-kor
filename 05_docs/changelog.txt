@@ -342,3 +342,4 @@
 - Reclassified the v0.7 wrapper 0 FPS result as inconclusive because it was measured in the same GDB-affected process; no wrapper code was restored.
 - Found three R3000 load-delay violations in the E2 deferred inline-skip helper; these prevented slot skip metadata from being applied and exposed original tails such as `속 지킬 거야?`.
 - Added `build_story_intro_e2_skip_v11.py` and built `story_intro_e2_skip_v11_cumulative_patch_only.zip`, SHA256 `84490A7196300C903A8B1E21A408556A10D79E0406534B921557B6D75D6A88AB`.
+- Accepted v0.11 after runtime confirmed the residual inline tail disappeared and dialogue progression remained correct; promoted it as the cumulative base for bulk patching.

@@ -397,3 +397,4 @@ E2 completion helper load-delay correction - 2026-07-15
 - The residual `속 지킬 거야?` is not a missing `약` glyph. The first `약` in `약속대로` proves the glyph, while the later original `약` byte position was replaced by `E2 82`; failure to apply the remaining 39-byte skip exposed the tail from its second glyph.
 - The v0.6-v0.10 completion helper at `0x8018FD20` violated R3000 load delay after `lw t0,14(s0)`, `lbu t1,-1(t0)`, and `lbu t2,7F(t1)`. All three loads require a separating instruction before their result is consumed.
 - v0.11 adds the three delay spacers without changing lookup addressing, per-slot metadata, story files, font data, or the accepted v0.10 spacing logic.
+- Runtime accepted v0.11: deferred inline skipping removed the residual tail without damaging the expanded line or the following event. Use v0.11 as the cumulative input for subsequent bulk patches.

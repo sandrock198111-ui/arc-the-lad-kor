@@ -1010,3 +1010,4 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Independent MIPS disassembly and cave-bound check: PASS. Corrected helper is 72 bytes and remains inside the verified cave.
 - Reproducibility: PASS. Two builds produced SHA256 `84490A7196300C903A8B1E21A408556A10D79E0406534B921557B6D75D6A88AB`.
 - Runtime status: pending confirmation that `속 지킬 거야?` and other residual inline tails disappear without skipping the next event.
+- Runtime result: PASS. The residual `속 지킬 거야?` tail disappeared, the intended expanded Korean line remained intact, and subsequent dialogue progression was normal.
