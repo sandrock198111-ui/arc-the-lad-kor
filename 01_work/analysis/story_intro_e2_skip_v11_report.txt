@@ -1,0 +1,7 @@
+base=v0.10
+e2_inline_skip_load_delay_safe=true
+helper_address=0x8018FD20
+helper_size=72
+story_files_changed=false
+font_changed=false
+sha256=84490A7196300C903A8B1E21A408556A10D79E0406534B921557B6D75D6A88AB

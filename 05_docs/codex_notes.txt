@@ -392,3 +392,8 @@ R3000 text-renderer load-delay rule - 2026-07-15
 - Rejected v0.9 loaded current X into `v0` at `0x8016B644` and consumed it at the taken target `0x8016B64C`, corrupting normal glyph rendering and stopping the title menu after Start.
 - v0.10 moves the independent glyph-count load to `0x8016B64C` and consumes X at `0x8016B650`. Static disassembly reviews must check R3000 data hazards, not only branch targets and instruction meaning.
 - Renderer acceptance requires pressing Start and entering the title menu; passive opening/title playback does not exercise every common glyph path.
+
+E2 completion helper load-delay correction - 2026-07-15
+- The residual `속 지킬 거야?` is not a missing `약` glyph. The first `약` in `약속대로` proves the glyph, while the later original `약` byte position was replaced by `E2 82`; failure to apply the remaining 39-byte skip exposed the tail from its second glyph.
+- The v0.6-v0.10 completion helper at `0x8018FD20` violated R3000 load delay after `lw t0,14(s0)`, `lbu t1,-1(t0)`, and `lbu t2,7F(t1)`. All three loads require a separating instruction before their result is consumed.
+- v0.11 adds the three delay spacers without changing lookup addressing, per-slot metadata, story files, font data, or the accepted v0.10 spacing logic.

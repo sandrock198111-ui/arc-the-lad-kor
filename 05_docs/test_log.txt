@@ -1000,3 +1000,13 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Independent MIPS disassembly: PASS. Space index comparison, branch delay, both load-delay separations, X store, count increment, and return path are correct.
 - Reproducibility: PASS. Two builds produced SHA256 `D11C4C629C4718414D45C8AC000EF61965EC9B4309BC24AD74BD995CCE247335`.
 - Runtime status: pending fresh-process Start-menu, dialogue spacing, wrapping, UI, and battle-cursor verification.
+
+2026-07-15 - E2 deferred inline-skip v0.11
+- Screenshot confirmation: the first `약속대로` rendered correctly, but a second residual sentence began as `속 지킬 거야?`. This proves the `약` glyph exists; the original first glyph was replaced by inline `E2 82` while the unskipped remainder resumed afterward.
+- Root cause: the completion helper consumed `t0` immediately after `lw`, `t1` immediately after `lbu`, and `t2` immediately after `lbu`, violating the R3000 load delay three times.
+- Fix: inserted one independent `nop` after each load and adjusted the completion branch to the relocated `done` label.
+- Static data check: S1071 entry `0x47932` uses `E2 82`; slot 1 metadata is 39, exactly `capacity - 2`; the 73-byte external text is zero-terminated before metadata.
+- Regression: PASS. Against v0.10, only `PSX.EXE` differs; story files, `COMM.IMG`, 12-pixel glyphs, and 6-pixel space behavior are unchanged.
+- Independent MIPS disassembly and cave-bound check: PASS. Corrected helper is 72 bytes and remains inside the verified cave.
+- Reproducibility: PASS. Two builds produced SHA256 `84490A7196300C903A8B1E21A408556A10D79E0406534B921557B6D75D6A88AB`.
+- Runtime status: pending confirmation that `속 지킬 거야?` and other residual inline tails disappear without skipping the next event.
