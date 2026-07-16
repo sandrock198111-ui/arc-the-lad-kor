@@ -1,0 +1,12 @@
+Story choice row alignment v0.23
+base_sha256=C5005057BF77F51912A93E5FB4C4EA3F1368BD2CDA6C5A02BF32E55F531254C4
+external_choice_prompts=133
+single_text_rows=118
+two_text_rows=15
+e2_slots_written=148
+option_regions_byte_identical=true
+source_e5_geometry_preserved=true
+source_e6_geometry_preserved=true
+outside_declared_changes=0
+zip_entries=77
+sha256=E0A6C6EF167CFDDDA375FCE2B336A2CEAE478499DDDEB371668E2B99672C3C89

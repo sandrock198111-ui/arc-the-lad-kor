@@ -1213,3 +1213,10 @@ story_test_23 S1072 안전 경계 기준
 - The broken Choppin menu at `21/S2042.DAT 0x47FF0` now has the same proven hybrid layout as `31/S3012.DAT 0x47FF0`: E5 positions 27/38 and E6 positions 5/25/36.
 - Added two live-identified ordinary dialogues: the S2013 king-expectation guard line and the S3011 Smaria delegation escort line.
 - Candidate output: `03_output/story_dialogue_choice_structure_v22_cumulative_patch_only.zip`, SHA256 `C5005057BF77F51912A93E5FB4C4EA3F1368BD2CDA6C5A02BF32E55F531254C4`. Static isolation and deterministic rebuild checks pass; runtime menu cursor/branch verification remains pending.
+
+2026-07-17 choice-row alignment candidate v0.23:
+- Runtime rejects v0.22 for externally rendered choice prompts. The prompt completion metadata skipped the original E6 controls, so prompt/options were drawn in upper rows while the triangular cursor moved through separate blank rows.
+- v0.23 repairs all 133 affected external prompts, not only the visible Choppin scene. It rewrites 118 one-text-row prompts so completion resumes at the original E6 and splits fifteen two-text-row prompts into one E2 call per source row.
+- The Choppin body now executes `E2, E6, E2, E6, E5 option 1, E6, E5 option 2`; both copies in S2042 and S3012 use this structure.
+- All option-region bytes remain identical to v0.22, all source E5/E6 positions remain exact, and independent checks report zero invalid completion targets or out-of-range changes.
+- Candidate output: `03_output/story_choice_row_alignment_v23_cumulative_patch_only.zip`, SHA256 `E0A6C6EF167CFDDDA375FCE2B336A2CEAE478499DDDEB371668E2B99672C3C89`. Runtime cursor/text-row verification is pending.

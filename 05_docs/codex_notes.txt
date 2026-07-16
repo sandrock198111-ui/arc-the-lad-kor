@@ -485,3 +485,10 @@ Choice geometry and full E5 classification - 2026-07-17
 - `21/S2042.DAT 0x47FF0` and verified `31/S3012.DAT 0x47FF0` now share E5 positions 27/38 and E6 positions 5/25/36.
 - The whole corpus contains 358 E5 candidates: 265 real high-confidence choices and 93 medium-confidence false positives from repeated binary/external tables. The 93 false positives must not be translated or structurally rewritten.
 - When validating a choice batch, compare parsed E5 and E6 `(offset,value)` pairs against the clean source, not merely marker counts or values. Also verify every external slot tail and reject any byte change outside declared body/slot ranges.
+
+External choice prompt row rule - 2026-07-17
+- Source-exact E5/E6 byte positions alone do not preserve visible choice rows when a preceding custom E2 command skips over the E6 controls. The text renderer's current row and the menu cursor's parsed row then diverge.
+- Never set a choice-prompt E2 completion skip to `first_e5 - 2` when the skipped prompt contains E6. That bypasses the line breaks and draws options above their selectable cursor rows.
+- E2 secondary strings do not interpret E6, so an external multiline prompt must use one E2 call per non-empty source text row. Each slot's skip metadata ends immediately before that row's original E6; the inline parser then executes the E6 before the next E2 or E5.
+- For a one-text-row prompt followed by E6, keep one E2 command but shorten its metadata to `row_end - row_start - 2`, ensuring completion resumes at E6.
+- Validate every repaired choice by requiring the option region from first E5 onward to remain byte-identical, source E5/E6 `(offset,value)` pairs to remain exact, and every custom E2 completion address to equal the next source E6 position.

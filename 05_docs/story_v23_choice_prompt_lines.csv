@@ -1,0 +1,16 @@
+file,offset,lines,source_note
+21/S2042.DAT,0x47FF0,초핀:|더 도와드릴까요?,Choppin help prompt
+31/S3012.DAT,0x47FF0,초핀:|더 도와드릴까요?,duplicate Choppin help prompt
+31/S3022.DAT,0x48822,병사:|출발하시겠습니까?,departure confirmation
+4/S4033.DAT,0x47CDC,다음 정령은 그레이시누로|부르겠습니까?,spirit gate confirmation
+4/S4034.DAT,0x47D30,다음 정령은 카델로|부르겠습니까?,spirit gate confirmation
+4/S4035.DAT,0x47D30,다음 정령은 아리바로|부르겠습니까?,spirit gate confirmation
+4/S4036.DAT,0x47CDC,마지막 정령은 스메리아로|부르겠습니까?,spirit gate confirmation
+7/S7021.DAT,0x48D26,대회 위원:|출전하시겠습니까?,tournament confirmation
+7/S7022.DAT,0x489B6,대회 위원:|1회전 준비됐습니까?,tournament confirmation
+7/S7023.DAT,0x48A4E,대회 위원:|2회전 준비됐습니까?,tournament confirmation
+7/S7024.DAT,0x48AAE,대회 위원:|준결승 준비됐습니까?,tournament confirmation
+7/S7025.DAT,0x48AC2,대회 위원:|결승 준비됐습니까?,tournament confirmation
+7/S7026.DAT,0x48D28,대회 위원:|오브전 준비됐습니까?,tournament confirmation
+7/S7028.DAT,0x48028,대회 위원:|출전하시겠습니까?,tournament confirmation
+7/S7028.DAT,0x48B70,대회 위원:|정말 출전하시겠습니까?,tournament confirmation

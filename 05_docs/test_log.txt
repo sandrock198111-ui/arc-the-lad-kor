@@ -1140,3 +1140,14 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Font/cursor: PASS. No glyphs are added and the battle cursor is byte-identical to v0.21.
 - Syntax/ZIP/reproducibility: PASS. Builder compiles, ZIP readback succeeds, and repeated builds produce SHA256 `C5005057BF77F51912A93E5FB4C4EA3F1368BD2CDA6C5A02BF32E55F531254C4`.
 - Runtime status: pending user packaging. Verify the Choppin two-option menu cursor and both branches first, then representative multi-option menus and the two added guard dialogues.
+
+2026-07-17 - Choice-row alignment v0.23
+- Runtime rejection evidence: v0.22 Choppin and battle/general confirmation menus draw prompt and option text in upper rows while the triangular cursor moves through two blank lower rows.
+- Root cause: PASS. Custom prompt E2 metadata skipped from the command to the first E5 marker, bypassing every original E6 row control. E2 secondary strings cannot interpret embedded E6 controls.
+- Scope: PASS. Detected 133/265 choices beginning with a custom E2 prompt and containing source E6 controls before the first E5.
+- Repair: PASS statically. 118 prompts use one E2 call that resumes at the following E6; fifteen prompts use two E2 calls separated by the two original E6 controls.
+- Choppin duplicates: PASS statically. S2042 and S3012 `0x47FF0` both execute `E2/E6/E2/E6/E5/E6/E5` with source-exact marker positions.
+- Options and branches: PASS statically. Every byte from the first E5 through the body end is identical to v0.22.
+- E2 slots: PASS. 148 rewritten slots have zero tails and exact per-row skip metadata; all 133 completion paths resume at their expected E6 controls.
+- Isolation/reproducibility: PASS. No changes occur outside declared prompt regions and slots; repeated builds produce SHA256 `E0A6C6EF167CFDDDA375FCE2B336A2CEAE478499DDDEB371668E2B99672C3C89`.
+- Runtime status: pending user packaging and confirmation that option text now occupies the same rows as the triangular cursor.
