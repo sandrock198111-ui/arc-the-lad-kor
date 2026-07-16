@@ -409,3 +409,18 @@ S1072 E2 expansion - 2026-07-15
 - The previous cumulative file still held early structure probes such as `촌장 / 가라`; those were not finished translations.
 - S1072's sixteen 128-byte external-bank slots at file offset `0x45000` were all empty. v0.13 safely uses slots 0-9 and E2 disk IDs `0x81-0x8A`.
 - Every S1072 replacement uses the runtime-accepted deferred completion helper and stores `original capacity - 2` at slot byte `0x7F`.
+
+Expanded E2 slot map - 2026-07-16
+- Scene files reserve `0x45000-0x477FF` before dialogue bodies beginning near `0x47800`, allowing at most 79 complete 128-byte external slots.
+- Original parsed dialogue uses E2 disk ID `A9`; custom IDs therefore use `81-A8` for slots 0-39 and `AA-D0` for slots 40-78.
+- Lookup receives the decremented internal ID. Low slots map `internal - 0x80`; high slots map `internal - 0x81`. Completion reads the disk ID and maps `disk - 0x81` or `disk - 0x82` respectively.
+- Some scene files use parts of the nominal bank for original data. Allocation must test each 128-byte slot in the actual cumulative file and use only fully zero slots.
+
+Glyph-index collision rule - 2026-07-16
+- `glyph_index()` advances prefixes by 255 while the second byte has 256 values. Boundary pairs such as `DEFF/DF00` and `DFFF/E000` therefore refer to the same physical glyph plane despite having different byte codes.
+- Future allocators must reject both occupied byte codes and occupied physical glyph indices. Candidate lists must also deduplicate indices internally.
+- v0.15 remaps `향` from colliding `DF00` to `DEF8` and `았` from colliding `DFFF` to `DEF7`; three existing `DFFF` payload occurrences are migrated exactly and `앗` remains at `E000`.
+
+House-to-throne corpus coverage - 2026-07-16
+- The continuous target contains 185 high-confidence bodies in 14 files: SD011 10, S1041 31, SD012 3, SD013 6, S1061 25, S2061 17, S2011 7, S2021 12, S2031 1, S2033 11, S2051 22, S2052 21, S2053 9, and S2057 10.
+- All are represented in `story_house_to_throne_e2_translation.csv` and use control-free E2 strings with automatic wrapping.

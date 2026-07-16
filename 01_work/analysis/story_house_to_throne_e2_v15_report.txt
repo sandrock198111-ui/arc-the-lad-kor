@@ -1,0 +1,193 @@
+D/SD011.DAT 0x47900 slot=0 command=E2 81 skip=25 bytes=44/127 text=불꽃이 꺼진 뒤 산속에서 대체 무슨 일이...
+D/SD011.DAT 0x47958 slot=1 command=E2 82 skip=22 bytes=40/127 text=내가 벌인 일이니 내 손으로 해결해야 해.
+D/SD011.DAT 0x479E0 slot=2 command=E2 83 skip=10 bytes=29/127 text=누구야...? 여긴 왜 왔지?
+D/SD011.DAT 0x47A20 slot=3 command=E2 84 skip=16 bytes=29/127 text=난 아크야. 너야말로 누구지?
+D/SD011.DAT 0x47A66 slot=4 command=E2 85 skip=27 bytes=43/127 text=난 시온산의 봉인을 지키는 일족, 쿠쿠루야.
+D/SD011.DAT 0x47AB8 slot=5 command=E2 86 skip=37 bytes=58/127 text=하지만 그 운명에 얽매이기 싫어서 봉인의 불꽃을 꺼 버렸어.
+D/SD011.DAT 0x47B14 slot=6 command=E2 87 skip=38 bytes=68/127 text=그러자 갑자기 산이 날뛰기 시작했어. 그래서 불을 다시 붙이려고...
+D/SD011.DAT 0x47BAE slot=7 command=E2 88 skip=41 bytes=72/127 text=안 돼! 산에서 무서운 목소리가 들렸어. 불꽃을 꺼서 무언가 깨어난 거야.
+D/SD011.DAT 0x47C0E slot=8 command=E2 89 skip=21 bytes=46/127 text=내가 저지른 일 때문에 네가 위험해질 거야...
+D/SD011.DAT 0x47C5A slot=9 command=E2 8A skip=57 bytes=75/127 text=산에 괴물이 있다면 십 년 전 아버지를 죽인 놈일 거야. 누가 말려도 난 간다.
+1/S1041.DAT 0x4794A slot=0 command=E2 81 skip=5 bytes=8/127 text=...!
+1/S1041.DAT 0x479BA slot=1 command=E2 82 skip=34 bytes=44/127 text=아크 데몬: 네가 봉인을 풀어 버린 용사인가?
+1/S1041.DAT 0x47A12 slot=2 command=E2 83 skip=16 bytes=29/127 text=네가 아버지를 죽인 놈이구나!
+1/S1041.DAT 0x47A56 slot=3 command=E2 84 skip=51 bytes=67/127 text=아크 데몬: 무슨 소린지 모르겠군. 난 봉인을 푼 용사를 죽이고...
+1/S1041.DAT 0x47ABE slot=4 command=E2 85 skip=32 bytes=42/127 text=아크 데몬: 삼천 년의 저주를 끊어 내겠다!
+1/S1041.DAT 0x47B12 slot=5 command=E2 86 skip=17 bytes=22/127 text=아크 데몬: 각오해라!
+1/S1041.DAT 0x47BB8 slot=6 command=E2 87 skip=47 bytes=64/127 text=아크 데몬: 아니야! 이런 놈이 아니다! 날 깨운 자는 어디 있지?
+1/S1041.DAT 0x47C86 slot=7 command=E2 88 skip=21 bytes=27/127 text=이런 곳에서 죽는 건가...
+1/S1041.DAT 0x47CD2 slot=8 command=E2 89 skip=8 bytes=10/127 text=제길...
+1/S1041.DAT 0x47DD2 slot=9 command=E2 8A skip=4 bytes=11/127 text=뭐, 뭐지?
+1/S1041.DAT 0x47E22 slot=10 command=E2 8B skip=9 bytes=17/127 text=힘이 솟아오른다!
+1/S1041.DAT 0x47E68 slot=11 command=E2 8C skip=5 bytes=12/127 text=일어나세요.
+1/S1041.DAT 0x47EA4 slot=12 command=E2 8D skip=1 bytes=8/127 text=누구지?
+1/S1041.DAT 0x47EE2 slot=13 command=E2 8E skip=24 bytes=41/127 text=산의 정령: 저는 이 산의 정령입니다...
+1/S1041.DAT 0x47F2E slot=14 command=E2 8F skip=51 bytes=69/127 text=산의 정령: 저는 줄곧 이곳에서 성궤를 봉인하는 불꽃을 지켜 왔습니다.
+1/S1041.DAT 0x47F9E slot=15 command=E2 90 skip=51 bytes=71/127 text=산의 정령: 산 정상의 사당에 불을 붙이세요. 그러면 마물은 사라집니다.
+1/S1041.DAT 0x48008 slot=16 command=E2 91 skip=19 bytes=32/127 text=알겠어. 불을 붙이면 되는 거지?
+1/S1041.DAT 0x48058 slot=17 command=E2 92 skip=42 bytes=74/127 text=산의 정령: 그렇습니다. 하지만 당신은 언젠가 다시 불을 끄러 오게 됩니다.
+1/S1041.DAT 0x480C0 slot=18 command=E2 93 skip=1 bytes=6/127 text=왜지?
+1/S1041.DAT 0x480F6 slot=19 command=E2 94 skip=21 bytes=47/127 text=산의 정령: 그것이 당신의 운명이기 때문입니다.
+1/S1041.DAT 0x48142 slot=20 command=E2 95 skip=2 bytes=6/127 text=운명?
+1/S1041.DAT 0x48178 slot=21 command=E2 96 skip=38 bytes=53/127 text=산의 정령: 인류는 지금 멸망을 향해 치닫고 있습니다.
+1/S1041.DAT 0x481D2 slot=22 command=E2 97 skip=32 bytes=60/127 text=산의 정령: 당신은 그 멸망을 막을 운명을 짊어지고 있습니다.
+1/S1041.DAT 0x48226 slot=23 command=E2 98 skip=30 bytes=45/127 text=산의 정령: 성궤의 힘을 손에 넣음으로써...
+1/S1041.DAT 0x4827A slot=24 command=E2 99 skip=5 bytes=19/127 text=인류가 멸망한다고?
+1/S1041.DAT 0x482BC slot=25 command=E2 9A skip=53 bytes=73/127 text=산의 정령: 당신의 아버지는 멸망을 막기 위해 우리 정령들과 약속했습니다.
+1/S1041.DAT 0x48326 slot=26 command=E2 9B skip=22 bytes=50/127 text=산의 정령: 그리고 마침내 당신이 이곳에 왔습니다.
+1/S1041.DAT 0x48378 slot=27 command=E2 9C skip=36 bytes=64/127 text=산의 정령: 약속에 따라 마물과 싸울 힘을 당신에게 드리겠습니다.
+1/S1041.DAT 0x483D2 slot=28 command=E2 9D skip=26 bytes=48/127 text=갑자기 그런 말을 해도 무슨 뜻인지 모르겠어...
+1/S1041.DAT 0x48428 slot=29 command=E2 9E skip=26 bytes=53/127 text=산의 정령: 때가 되면 알게 될 겁니다. 부탁드립니다.
+1/S1041.DAT 0x48498 slot=30 command=E2 9F skip=13 bytes=32/127 text=아크는 정령의 힘을 손에 넣었다.
+D/SD012.DAT 0x478B8 slot=0 command=E2 81 skip=37 bytes=45/127 text=아크 데몬: 네가 봉인의 불꽃을 꺼 준 자인가?
+D/SD012.DAT 0x4791A slot=1 command=E2 82 skip=5 bytes=6/127 text=...
+D/SD012.DAT 0x47954 slot=2 command=E2 83 skip=47 bytes=78/127 text=아크 데몬: 감사하고 싶지만, 널 죽이지 않고서는 자유로워질 수 없어서 말이지.
+D/SD013.DAT 0x4789C slot=0 command=E2 81 skip=34 bytes=53/127 text=아크 데몬: 삼천 년 동안 쌓인 내 분노를 받고 죽어라!
+D/SD013.DAT 0x47902 slot=1 command=E2 82 skip=3 bytes=6/127 text=꺄악!
+D/SD013.DAT 0x4793A slot=2 command=E2 83 skip=15 bytes=20/127 text=아크 데몬: 뭐지!?
+D/SD013.DAT 0x47976 slot=3 command=E2 84 skip=25 bytes=34/127 text=아크 데몬: 누가 다시 불꽃을...
+D/SD013.DAT 0x47A0E slot=4 command=E2 85 skip=24 bytes=20/127 text=그리고 며칠 뒤...
+D/SD013.DAT 0x47A2C slot=5 command=E2 86 skip=47 bytes=59/127 text=소문은 팔렌시아 왕도까지 퍼졌고, 아크는 성으로 불려 갔다.
+1/S1061.DAT 0x478A4 slot=0 command=E2 81 skip=8 bytes=20/127 text=이제 여기까지면 돼.
+1/S1061.DAT 0x47904 slot=1 command=E2 82 skip=43 bytes=60/127 text=쿠쿠루: 그 뒤에 우리 일족의 계율이라는 고문서를 읽어 봤어.
+1/S1061.DAT 0x47966 slot=2 command=E2 83 skip=15 bytes=42/127 text=쿠쿠루: 거기에는 이렇게 쓰여 있었어...
+1/S1061.DAT 0x479AA slot=3 command=E2 84 skip=52 bytes=96/127 text=쿠쿠루: 스메리아는 조화의 힘으로 움직이는 나라. 와이트 가문은 조화를 잇는 실을 자아내는 가문.
+1/S1061.DAT 0x47A12 slot=4 command=E2 85 skip=57 bytes=93/127 text=쿠쿠루: 와이트 가문의 딸은 용사를 받치는 씨실. 세상이 기울 때 불꽃 같은 날실이 나타나리니,
+1/S1061.DAT 0x47A80 slot=5 command=E2 86 skip=21 bytes=43/127 text=쿠쿠루: 그를 섬겨 세상을 바른길로 이끌라.
+1/S1061.DAT 0x47ACC slot=6 command=E2 87 skip=43 bytes=66/127 text=쿠쿠루: 세상이 끝나려 할 때 나타날 용사를 도우라는 뜻인 것 같아.
+1/S1061.DAT 0x47B40 slot=7 command=E2 88 skip=10 bytes=26/127 text=쿠쿠루: 굉장한 이야기지?
+1/S1061.DAT 0x47B94 slot=8 command=E2 89 skip=38 bytes=62/127 text=아크: 그날 만난 정령도 인류의 멸망과 내 운명을 말했지만...
+1/S1061.DAT 0x47BF0 slot=9 command=E2 8A skip=23 bytes=44/127 text=아크: 그런 것보다 난 아버지를 만나고 싶어.
+1/S1061.DAT 0x47C3E slot=10 command=E2 8B skip=41 bytes=66/127 text=아크: 난 마을을 떠날 거야. 팔렌시아성에 가면 뭔가 알 수 있겠지.
+1/S1061.DAT 0x47CC0 slot=11 command=E2 8C skip=13 bytes=24/127 text=쿠쿠루: 아크, 나...
+1/S1061.DAT 0x47D04 slot=12 command=E2 8D skip=17 bytes=32/127 text=쿠쿠루: 나도 네 뒤를 따라갈게.
+1/S1061.DAT 0x47D52 slot=13 command=E2 8E skip=6 bytes=19/127 text=아크: 쿠쿠루...
+1/S1061.DAT 0x47DA0 slot=14 command=E2 8F skip=22 bytes=39/127 text=쿠쿠루: 널 좋아해서 그러는 건 아니야.
+1/S1061.DAT 0x47DEC slot=15 command=E2 90 skip=34 bytes=68/127 text=쿠쿠루: 하지만 알 수 있어. 넌 날실이고, 내가 따라가야 할 길이야.
+1/S1061.DAT 0x47E44 slot=16 command=E2 91 skip=1 bytes=11/127 text=아크: 길?
+1/S1061.DAT 0x47E7C slot=17 command=E2 92 skip=4 bytes=20/127 text=쿠쿠루: 그래, 길.
+1/S1061.DAT 0x47EB6 slot=18 command=E2 93 skip=21 bytes=44/127 text=쿠쿠루: 네가 나아가는 곳에 길이 생길 거야.
+1/S1061.DAT 0x47F02 slot=19 command=E2 94 skip=29 bytes=56/127 text=쿠쿠루: 그 길이 어디로 이어지는지는 나도 모르지만...
+1/S1061.DAT 0x47F56 slot=20 command=E2 95 skip=22 bytes=39/127 text=쿠쿠루: 난 그 길을 걷게 될 것만 같아.
+1/S1061.DAT 0x47FA2 slot=21 command=E2 96 skip=39 bytes=63/127 text=쿠쿠루: 고문서에는 일족에게 전해지는 신비한 힘도 적혀 있었어.
+1/S1061.DAT 0x48000 slot=22 command=E2 97 skip=41 bytes=68/127 text=쿠쿠루: 지금은 함께 못 가지만, 반드시 그 힘을 얻어서 널 따라갈게.
+1/S1061.DAT 0x48076 slot=23 command=E2 98 skip=22 bytes=39/127 text=아크: 알겠어. 그럼 난 이만 갈게...
+1/S1061.DAT 0x480C8 slot=24 command=E2 99 skip=8 bytes=26/127 text=쿠쿠루: 아크, 몸조심해.
+23/S2061.DAT 0x4853A slot=0 command=E2 81 skip=42 bytes=50/127 text=이상하네... 마물 토벌대는 대체 어디로 간 거지?
+23/S2061.DAT 0x48618 slot=1 command=E2 82 skip=23 bytes=40/127 text=제발 목숨만은 살려 주세요. 부탁입니다!
+23/S2061.DAT 0x48666 slot=2 command=E2 83 skip=38 bytes=44/127 text=살려 줘... 살려 줘... 죽고 싶지 않아!
+23/S2061.DAT 0x48700 slot=3 command=E2 84 skip=21 bytes=33/127 text=뭐야. 난 또 마물인 줄 알았잖아.
+23/S2061.DAT 0x4874C slot=4 command=E2 85 skip=25 bytes=42/127 text=대원들이 아무리 기다려도 돌아오지 않았어.
+23/S2061.DAT 0x4879C slot=5 command=E2 86 skip=38 bytes=61/127 text=마물에게 당한 게 틀림없다고 생각해서 혼자 숨어 있었는데...
+23/S2061.DAT 0x487F8 slot=6 command=E2 87 skip=10 bytes=17/127 text=한심한 병사로군.
+23/S2061.DAT 0x4883E slot=7 command=E2 88 skip=5 bytes=18/127 text=포코: 난 포코야.
+23/S2061.DAT 0x4887A slot=8 command=E2 89 skip=52 bytes=85/127 text=포코: 애초에 군인은 체질이 아니야. 싸우는 것보다 악기를 연주하는 게 훨씬 즐거운걸.
+23/S2061.DAT 0x488E4 slot=9 command=E2 8A skip=57 bytes=70/127 text=아크: 난 토우빌에서 온 아크야. 왕의 명령으로 마물 토벌을 돕게 됐어.
+23/S2061.DAT 0x48954 slot=10 command=E2 8B skip=28 bytes=43/127 text=포코: 마물이 나타나기 전에 어서 도망치자.
+23/S2061.DAT 0x489EE slot=11 command=E2 8C skip=19 bytes=34/127 text=좀비: 아직 살아남은 자가 있었나!
+23/S2061.DAT 0x48A44 slot=12 command=E2 8D skip=20 bytes=37/127 text=포코: 으악, 나타났어! 어떡하지!?
+23/S2061.DAT 0x48A8E slot=13 command=E2 8E skip=19 bytes=40/127 text=아크: 시끄러워! 싸우는 수밖에 없잖아!
+23/S2061.DAT 0x48AD8 slot=14 command=E2 8F skip=30 bytes=50/127 text=포코: 싸우라니, 난 군악대라 무기도 없단 말이야!
+23/S2061.DAT 0x48B2C slot=15 command=E2 90 skip=10 bytes=25/127 text=아크: 그럼 악기로 싸워!
+23/S2061.DAT 0x48B6C slot=16 command=E2 91 skip=2 bytes=13/127 text=아크: 간다!
+21/S2011.DAT 0x4791A slot=0 command=E2 81 skip=15 bytes=27/127 text=여기가 팔렌시아성인가...
+21/S2011.DAT 0x47AAA slot=1 command=E2 82 skip=13 bytes=28/127 text=뭐지? 전쟁이라도 시작되나?
+21/S2011.DAT 0x47AF6 slot=2 command=E2 83 skip=14 bytes=18/127 text=이봐! 기다려 줘!
+21/S2011.DAT 0x47BAC slot=3 command=E2 84 skip=42 bytes=74/127 text=병사: 꼬마야, 팔렌시아성에는 무슨 일이지? 여긴 아이들 놀이터가 아니다!
+21/S2011.DAT 0x47C0C slot=4 command=E2 85 skip=40 bytes=72/127 text=아크: 놀러 온 게 아니야. 난 토우빌에서 온 아크고, 국왕께서 부르셨어.
+21/S2011.DAT 0x47C68 slot=5 command=E2 86 skip=35 bytes=48/127 text=병사: 토우빌의 아크라고? 이런 어린애였나...
+21/S2011.DAT 0x47CC0 slot=6 command=E2 87 skip=20 bytes=40/127 text=병사: 이야기는 들었다. 들어가도 좋다.
+21/S2021.DAT 0x4857C slot=24 command=E2 99 skip=23 bytes=39/127 text=어째서 도시 한복판에 마물이 있는 거지?
+21/S2021.DAT 0x4860E slot=25 command=E2 9A skip=25 bytes=46/127 text=큰일이야! 여자아이가 마물에게 공격받고 있어!
+21/S2021.DAT 0x48666 slot=26 command=E2 9B skip=2 bytes=15/127 text=아크: 쿠쿠루!
+21/S2021.DAT 0x486B0 slot=27 command=E2 9C skip=10 bytes=39/127 text=쿠쿠루: 아크, 이게 어떻게 된 일이야?
+21/S2021.DAT 0x486FC slot=28 command=E2 9D skip=44 bytes=75/127 text=아크: 우리가 쓰러뜨린 마물이 복수하러 온 거야. 지금 구해 줄 테니 기다려!
+21/S2021.DAT 0x48830 slot=29 command=E2 9E skip=9 bytes=24/127 text=아크: 쿠쿠루, 괜찮아?
+21/S2021.DAT 0x48870 slot=30 command=E2 9F skip=15 bytes=30/127 text=쿠쿠루: 나도 제법 잘 싸우지?
+21/S2021.DAT 0x488FE slot=31 command=E2 A0 skip=6 bytes=19/127 text=아크: 쿠쿠루...
+21/S2021.DAT 0x4893A slot=32 command=E2 A1 skip=45 bytes=67/127 text=쿠쿠루: 약속대로 힘을 얻어 왔는데, 갑자기 너무 많이 썼나 봐...
+21/S2021.DAT 0x4899E slot=33 command=E2 A2 skip=21 bytes=35/127 text=쿠쿠루: 괜찮아. 조금만 쉬면...
+21/S2021.DAT 0x489EA slot=34 command=E2 A3 skip=5 bytes=18/127 text=아크: 말하지 마.
+21/S2021.DAT 0x48A26 slot=35 command=E2 A4 skip=6 bytes=21/127 text=아크: 쉬게 해야 해.
+21/S2031.DAT 0x47932 slot=0 command=E2 81 skip=21 bytes=37/127 text=대신: 토우빌의 아크여, 들어오너라.
+21/S2033.DAT 0x47936 slot=0 command=E2 81 skip=11 bytes=41/127 text=쿠쿠루: 반역자라는 게 아까 그 사람인가?
+21/S2033.DAT 0x47978 slot=1 command=E2 82 skip=2 bytes=15/127 text=아크: 아마도.
+21/S2033.DAT 0x479B0 slot=2 command=E2 83 skip=5 bytes=22/127 text=쿠쿠루: 마음에 걸려.
+21/S2033.DAT 0x479EC slot=3 command=E2 84 skip=1 bytes=13/127 text=아크: 뭐가?
+21/S2033.DAT 0x47A24 slot=4 command=E2 85 skip=13 bytes=38/127 text=쿠쿠루: 그런 사람처럼 보이지 않았어.
+21/S2033.DAT 0x47A68 slot=5 command=E2 86 skip=12 bytes=32/127 text=아크: 저 대신도 뭔가 수상하고.
+21/S2033.DAT 0x47AAA slot=6 command=E2 87 skip=13 bytes=43/127 text=쿠쿠루: 포코, 지하 감옥이 어디인지 알아?
+21/S2033.DAT 0x47AEE slot=7 command=E2 88 skip=15 bytes=31/127 text=포코: 응, 알고는 있지만...
+21/S2033.DAT 0x47B34 slot=8 command=E2 89 skip=4 bytes=22/127 text=아크: 그럼 결정됐네.
+21/S2033.DAT 0x47B6E slot=9 command=E2 8A skip=8 bytes=25/127 text=쿠쿠루: 자, 안내해 줘.
+21/S2033.DAT 0x47BAC slot=10 command=E2 8B skip=9 bytes=29/127 text=포코: 이래도 되는 걸까...
+22/S2051.DAT 0x478A6 slot=0 command=E2 81 skip=13 bytes=22/127 text=국왕: 네가 아크인가?
+22/S2051.DAT 0x478F0 slot=1 command=E2 82 skip=1 bytes=11/127 text=아크: 예.
+22/S2051.DAT 0x4792C slot=2 command=E2 83 skip=51 bytes=67/127 text=국왕: 시온산에서의 활약은 들었다. 신기한 힘을 지녔다고 하더구나.
+22/S2051.DAT 0x4799C slot=3 command=E2 84 skip=21 bytes=40/127 text=아크: 산의 정령에게서 힘을 받았습니다.
+22/S2051.DAT 0x479EC slot=4 command=E2 85 skip=8 bytes=19/127 text=국왕: 정령에게서?
+22/S2051.DAT 0x47A28 slot=5 command=E2 86 skip=23 bytes=41/127 text=국왕: 그래서 정령이 네게 뭐라고 하더냐?
+22/S2051.DAT 0x47A7C slot=6 command=E2 87 skip=25 bytes=45/127 text=아크: 정령은 인류가 멸망할 거라고 했습니다.
+22/S2051.DAT 0x47AD0 slot=7 command=E2 88 skip=24 bytes=43/127 text=국왕: 인류가 멸망한다고... 그것은...
+22/S2051.DAT 0x47B22 slot=8 command=E2 89 skip=33 bytes=63/127 text=안델: 아크라고 했나? 함부로 그런 말을 입에 담아서는 안 된다.
+22/S2051.DAT 0x47B7E slot=9 command=E2 8A skip=25 bytes=54/127 text=안델: 폐하, 이런 어린아이의 말을 믿으시려는 겁니까?
+22/S2051.DAT 0x47BD2 slot=10 command=E2 8B skip=49 bytes=77/127 text=국왕: 세상이 멸망한다... 황태자였던 형이 사라질 때도 그런 말을 했지...
+22/S2051.DAT 0x47C38 slot=11 command=E2 8C skip=50 bytes=75/127 text=국왕: 아크여, 부탁이 있다. 우리 왕국에 전해지는 성궤에 관한 일이다...
+22/S2051.DAT 0x47CA4 slot=12 command=E2 8D skip=48 bytes=77/127 text=안델: 이자가 전설의 용사라고 정해진 것도 아닙니다. 아직 이른 이야기입니다.
+22/S2051.DAT 0x47D0E slot=13 command=E2 8E skip=14 bytes=35/127 text=국왕: 그렇다면 어찌하면 좋겠는가?
+22/S2051.DAT 0x47D50 slot=14 command=E2 8F skip=11 bytes=27/127 text=안델: 제게 맡겨 주십시오.
+22/S2051.DAT 0x47D9C slot=15 command=E2 90 skip=47 bytes=63/127 text=안델: 아크, 네가 정말 정령의 힘을 받은 자인지 시험해 보겠다.
+22/S2051.DAT 0x47E00 slot=16 command=E2 91 skip=32 bytes=61/127 text=안델: 이곳에서 북쪽으로 가면 니르바나 평원이라는 곳이 있다.
+22/S2051.DAT 0x47E54 slot=17 command=E2 92 skip=25 bytes=38/127 text=안델: 그곳의 마물을 토벌하고 오너라.
+22/S2051.DAT 0x47EA2 slot=18 command=E2 93 skip=31 bytes=31/127 text=안델: 토벌대는 이미 출발했다.
+22/S2051.DAT 0x47EF6 slot=19 command=E2 94 skip=30 bytes=54/127 text=안델: 서둘러 가서 그들 앞에서 네 힘을 증명해 보아라.
+22/S2051.DAT 0x47F4A slot=20 command=E2 95 skip=1 bytes=19/127 text=아크: 알겠습니다.
+22/S2051.DAT 0x47F86 slot=21 command=E2 96 skip=12 bytes=17/127 text=국왕: 기대하마.
+22/S2052.DAT 0x47908 slot=0 command=E2 81 skip=37 bytes=61/127 text=아크: 니르바나 평원의 마물 토벌 결과를 보고드리러 왔습니다.
+22/S2052.DAT 0x47962 slot=1 command=E2 82 skip=21 bytes=45/127 text=안델: 어째서 토벌대 병사들은 보이지 않느냐?
+22/S2052.DAT 0x479BC slot=2 command=E2 83 skip=37 bytes=40/127 text=포코: 그 일은 제가... 그러니까...
+22/S2052.DAT 0x47A16 slot=3 command=E2 84 skip=8 bytes=18/127 text=안델: 넌 누구냐?
+22/S2052.DAT 0x47A5A slot=4 command=E2 85 skip=17 bytes=36/127 text=포코: 예, 토벌대 소속 포코입니다.
+22/S2052.DAT 0x47AA0 slot=5 command=E2 86 skip=7 bytes=13/127 text=안델: 네가?
+22/S2052.DAT 0x47ADE slot=6 command=E2 87 skip=41 bytes=51/127 text=포코: 예... 저를 제외한 토벌대는 전멸했습니다.
+22/S2052.DAT 0x47B42 slot=7 command=E2 88 skip=13 bytes=28/127 text=국왕: 뭐라고? 전멸했다고!
+22/S2052.DAT 0x47B8A slot=8 command=E2 89 skip=44 bytes=64/127 text=안델: 거짓말 마라. 그들은 국왕을 지키는 군 최고의 병사들이다.
+22/S2052.DAT 0x47BEA slot=9 command=E2 8A skip=31 bytes=45/127 text=안델: 그렇다면 너희는 도망쳐 돌아온 것이냐?
+22/S2052.DAT 0x47C40 slot=10 command=E2 8B skip=22 bytes=41/127 text=아크: 아닙니다. 명령대로 토벌했습니다.
+22/S2052.DAT 0x47C8C slot=11 command=E2 8C skip=26 bytes=54/127 text=아크: 하지만 그곳의 마물은 끝없이 나타나고 있습니다.
+22/S2052.DAT 0x47CE0 slot=12 command=E2 8D skip=11 bytes=26/127 text=국왕: 끝없이 나타난다고!
+22/S2052.DAT 0x47D26 slot=13 command=E2 8E skip=51 bytes=65/127 text=안델: 너희 같은 아이들이 토벌대를 전멸시킨 마물을 쓰러뜨렸다고?
+22/S2052.DAT 0x47D9C slot=14 command=E2 8F skip=55 bytes=82/127 text=병사: 보고드립니다! 마물들이 팔렌시아성으로 진격 중입니다. 곧 성에 도달합니다!
+22/S2052.DAT 0x47E0E slot=15 command=E2 90 skip=9 bytes=24/127 text=국왕: 벌써 코앞이라고!
+22/S2052.DAT 0x47E52 slot=16 command=E2 91 skip=13 bytes=36/127 text=안델: 병사들은 무엇을 하고 있느냐!
+22/S2052.DAT 0x47E94 slot=17 command=E2 92 skip=24 bytes=38/127 text=병사: 전혀 상대가 되지 않습니다...
+22/S2052.DAT 0x47EE8 slot=18 command=E2 93 skip=27 bytes=55/127 text=아크: 제 말이 거짓인지 아닌지 직접 보여 드리겠습니다.
+22/S2052.DAT 0x47F40 slot=19 command=E2 94 skip=4 bytes=20/127 text=아크: 가자, 포코!
+22/S2052.DAT 0x47FA0 slot=20 command=E2 95 skip=12 bytes=27/127 text=국왕: 직접 보여 주겠다고!
+22/S2053.DAT 0x478CE slot=0 command=E2 81 skip=23 bytes=40/127 text=국왕: 마물들을 훌륭히 물리쳐 주었구나.
+22/S2053.DAT 0x47928 slot=1 command=E2 82 skip=17 bytes=43/127 text=아크: 이제 저희의 힘을 믿어 주시겠습니까?
+22/S2053.DAT 0x4797A slot=2 command=E2 83 skip=12 bytes=24/127 text=안델: 믿어 주겠냐고!?
+22/S2053.DAT 0x479BA slot=3 command=E2 84 skip=30 bytes=53/127 text=안델: 네가 지금 누구에게 그런 말투를 쓰는지 아느냐!
+22/S2053.DAT 0x47A1E slot=4 command=E2 85 skip=13 bytes=24/127 text=국왕: 그만하게, 안델!
+22/S2053.DAT 0x47A60 slot=5 command=E2 86 skip=38 bytes=67/127 text=국왕: 괜찮지 않은가. 틀림없이 이들의 힘으로 우리가 구원받았으니.
+22/S2053.DAT 0x47AC0 slot=6 command=E2 87 skip=20 bytes=40/127 text=국왕: 쓸데없는 의심을 해서 미안하구나.
+22/S2053.DAT 0x47B0E slot=7 command=E2 88 skip=55 bytes=64/127 text=국왕: 그러면 아까 말하려던 성궤를 네가 찾아 주었으면 한다...
+22/S2053.DAT 0x47B80 slot=8 command=E2 89 skip=42 bytes=63/127 text=국왕: 그 전에 이 나라의 전설과 내 형에 관해 이야기해야겠구나.
+22/S2057.DAT 0x478F0 slot=0 command=E2 81 skip=15 bytes=31/127 text=국왕: 오대 정령의 돌이라...
+22/S2057.DAT 0x4793C slot=1 command=E2 82 skip=24 bytes=44/127 text=아크: 아마 세계 곳곳에 흩어져 있을 겁니다.
+22/S2057.DAT 0x4798E slot=2 command=E2 83 skip=31 bytes=54/127 text=국왕: 좋다. 앞으로 내 비행선을 자유롭게 사용하거라.
+22/S2057.DAT 0x479E2 slot=3 command=E2 84 skip=20 bytes=33/127 text=국왕: 그리고 이것도 가져가거라.
+22/S2057.DAT 0x47A30 slot=4 command=E2 85 skip=16 bytes=26/127 text=황금사자북을 손에 넣었다.
+22/S2057.DAT 0x47A7C slot=5 command=E2 86 skip=6 bytes=27/127 text=아크: 이 북은 무엇입니까?
+22/S2057.DAT 0x47ABC slot=6 command=E2 87 skip=42 bytes=70/127 text=국왕: 성에 전해지는 신비한 힘을 지닌 북이다. 언젠가 도움이 될 게다.
+22/S2057.DAT 0x47B28 slot=7 command=E2 88 skip=12 bytes=24/127 text=아크: 가, 감사합니다.
+22/S2057.DAT 0x47B6E slot=8 command=E2 89 skip=24 bytes=48/127 text=국왕: 한시라도 빨리 다섯 돌을 모아 돌아오너라.
+22/S2057.DAT 0x47BC2 slot=9 command=E2 8A skip=1 bytes=11/127 text=아크: 예.
+dialogues=185
+files=14
+batch_glyphs=373
+new_glyphs=97
+glyph_index_collisions_fixed=DEFF/DF00,DFFF/E000
+battle_cursor_preserved=true
+other_files_preserved=true
+sha256=196AB88F3AAF7956D5194723498D791267662D405075880121276E4ABDAAAD68

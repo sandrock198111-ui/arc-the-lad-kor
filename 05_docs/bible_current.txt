@@ -1150,3 +1150,11 @@ story_test_23 S1072 안전 경계 기준
 - Added 13 required Hangul glyphs while preserving the confirmed battle-cursor rectangle.
 - Current cumulative output: `03_output/story_s1072_e2_v13_cumulative_patch_only.zip`, SHA256 `4E413AB2874F4773F431EDA592625241BC4BEE50280D78EFD563B334A426F8AE`.
 - Static and deterministic-build verification passed. Runtime verification of the full S1072 scene is pending.
+
+2026-07-16 house-to-throne full E2 candidate v0.15:
+- Scope is one continuous progression range: house (`SD011/S1041/SD012/SD013`), forest and field battle (`S1061/S2061`), city (`S2011/S2021`), palace guard (`S2031/S2033`), and throne room (`S2051/S2052/S2053/S2057`).
+- All 185 high-confidence dialogue bodies in these 14 files were translated from the Japanese corpus and moved to E2 secondary strings. Old structural probes such as `아크/가라` are no longer used in this range.
+- The E2 bank supports 79 slots per file using disk IDs `81-A8` and `AA-D0`; original ID `A9` remains untouched. Forty-eight of the 185 lines exercise IDs above the old 16-slot range.
+- The batch uses 373 verified glyphs. All displayed planes match the renderer, exact cursor pixels are preserved, and the `DEFF/DF00` plus `DFFF/E000` glyph-index collisions were removed.
+- Candidate output: `03_output/story_house_to_throne_e2_v15_cumulative_patch_only.zip`, SHA256 `196AB88F3AAF7956D5194723498D791267662D405075880121276E4ABDAAAD68`.
+- Static structure, deterministic rebuild, payload, metadata, font, and cumulative-file checks pass. Runtime progression verification is still required before promotion to an accepted base.

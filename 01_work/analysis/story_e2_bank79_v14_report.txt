@@ -1,0 +1,8 @@
+base=v0.13
+custom_disk_ids=81-A8,AA-D0
+custom_slots=79
+reserved_original_id=A9
+lookup_handler_size=84
+completion_handler_size=108
+repaired_glyphs=괄,덕,량
+sha256=992885C8BF7EC05CAAE38E91A42E866AAF166179548CBD400086F6548FBFE779

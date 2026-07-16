@@ -1028,3 +1028,19 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Regression: PASS. Against v0.12 only `1/S1072.DAT` and `COMM.IMG` differ; all other 37 entries are byte-identical.
 - Reproducibility: PASS. Repeated builds produced SHA256 `4E413AB2874F4773F431EDA592625241BC4BEE50280D78EFD563B334A426F8AE`.
 - Runtime status: pending confirmation that the full village-return scene displays expanded Korean and continues normally.
+
+2026-07-16 - E2 bank79 infrastructure v0.14
+- Extended custom disk IDs from `81-90` to `81-A8, AA-D0`, yielding 79 slots that fit exactly before the normal dialogue area.
+- Original parsed corpus uses E2 `A9`, so that ID is deliberately routed to the original lookup and excluded from custom completion handling.
+- Independent MIPS disassembly: PASS. Lookup and completion branches, R3000 load delays, bank base `0x80114000`, slot multiplication, metadata load, and original continuation target are correct.
+- Exhaustive ID arithmetic: PASS for all 256 byte values; exactly 79 IDs map to slots 0-78 and lookup/completion calculations agree.
+- Reproducibility: PASS. Repeated builds produced SHA256 `992885C8BF7EC05CAAE38E91A42E866AAF166179548CBD400086F6548FBFE779`.
+
+2026-07-16 - House-to-throne E2 v0.15
+- Manifest coverage: PASS. Exactly 185/185 high-confidence corpus bodies across the 14 target files are present once.
+- E2 payloads: PASS. All 185 commands, unique per-file slots, zero terminators, and `capacity - 2` skip metadata bytes match the manifest exactly.
+- Extended range: PASS. Forty-eight lines use E2 disk IDs above `90`; no line uses reserved ID `A9`.
+- Font: PASS. All 373 required characters match their expected 12x12 planes; the full extended map has zero glyph-index collisions and the battle-cursor rectangle is byte-identical to v0.14.
+- Regression: PASS. The ZIP contains 39 game files and no reports or packaging files. Against v0.13, only the 14 target DATs, three exact glyph-code migration DATs, `COMM.IMG`, and `PSX.EXE` differ.
+- Reproducibility: PASS. Repeated builds produced SHA256 `196AB88F3AAF7956D5194723498D791267662D405075880121276E4ABDAAAD68`.
+- Runtime status: pending fresh-boot progression from the first house dialogue through the final throne-room dialogue.

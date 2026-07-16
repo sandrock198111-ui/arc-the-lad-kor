@@ -354,3 +354,10 @@
 - Added `build_story_s1072_e2_v13.py`; it assigns E2 slots `0x81-0x8A`, preserves inline return offsets, allocates 13 safe glyphs, and checks cursor preservation.
 - Removed the old temporary S1072 lines such as `촌장 / 가라` from the cumulative output.
 - Built `story_s1072_e2_v13_cumulative_patch_only.zip`, SHA256 `4E413AB2874F4773F431EDA592625241BC4BEE50280D78EFD563B334A426F8AE`.
+
+2026-07-16
+- Added `build_story_e2_bank79_v14.py`, expanding the per-scene E2 external bank from 16 to 79 slots while reserving original E2 ID `A9`.
+- Repaired the missing low-slot planes for `괄`, `덕`, and `량` exposed by the S1072 runtime screenshot.
+- Added `story_house_to_throne_e2_translation.csv` with all 185 high-confidence dialogue bodies across 14 house-to-throne scene files.
+- Added `build_story_house_to_throne_e2_v15.py`; it selects only empty per-file slots, allocates parsed-dialogue-safe glyphs, migrates colliding glyph indices, and verifies every external payload.
+- Built `story_house_to_throne_e2_v15_cumulative_patch_only.zip`, SHA256 `196AB88F3AAF7956D5194723498D791267662D405075880121276E4ABDAAAD68`.
