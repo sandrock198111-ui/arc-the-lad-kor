@@ -1,0 +1,64 @@
+F/SF0B1.DAT 0x478C4 mode=e2 slot=0 command=E2 81 skip=40 bytes=66/127 text=국왕: 그때 형님이 남기신 것은, 인류가 멸망할 것이라는 말이었다.
+F/SF0B1.DAT 0x47926 mode=e2 slot=1 command=E2 82 skip=24 bytes=44/127 text=대신: 폐하께서까지 그런 말씀을 하시면...
+F/SF0B1.DAT 0x47978 mode=e2 slot=2 command=E2 83 skip=55 bytes=91/127 text=국왕: 마물들이 날뛰고 이상한 일들이 이어지는 지금, 형님의 말씀과 그 전설이 떠오르는구나.
+F/SF0B1.DAT 0x479E4 mode=e2 slot=3 command=E2 84 skip=45 bytes=59/127 text=국왕: 아크여, 포코와 함께 밀마나의 토요케 숲으로 가거라.
+F/SF0B1.DAT 0x47A46 mode=e2 slot=4 command=E2 85 skip=41 bytes=82/127 text=국왕: 그곳에서 형님이 무엇을 보았는지, 성궤는 이 나라 어디에 있는지 알아보아라.
+F/SF0B1.DAT 0x47AA4 mode=e2 slot=5 command=E2 86 skip=21 bytes=65/127 text=국왕: 그리고 성궤를 어떻게 손에 넣을 수 있는지도 조사해 오너라.
+F/SF0B1.DAT 0x47AFC mode=e2 slot=6 command=E2 87 skip=17 bytes=51/127 text=쿠쿠루: 폐하, 저도 두 사람과 동행하게 해 주세요.
+F/SF0B1.DAT 0x47B5A mode=e2 slot=7 command=E2 88 skip=8 bytes=24/127 text=국왕: 그대는 누구인가?
+F/SF0B1.DAT 0x47B9E mode=e2 slot=8 command=E2 89 skip=29 bytes=69/127 text=쿠쿠루: 성지 시온산을 대대로 지켜 온 가문의 딸, 쿠쿠루라고 합니다.
+F/SF0B1.DAT 0x47BF6 mode=e2 slot=9 command=E2 8A skip=27 bytes=45/127 text=국왕: 그대가 토우빌의 와이트 가문 딸이로군.
+F/SF0B1.DAT 0x47C4E mode=e2 slot=10 command=E2 8B skip=18 bytes=46/127 text=쿠쿠루: 제 힘은 왕가만을 위한 것이 아닙니다.
+F/SF0B1.DAT 0x47C96 mode=e2 slot=11 command=E2 8C skip=36 bytes=82/127 text=쿠쿠루: 용사와 힘을 합쳐 인류의 미래를 열기 위한 힘이라고 고문서에서 배웠습니다.
+F/SF0B1.DAT 0x47CF0 mode=e2 slot=12 command=E2 8D skip=13 bytes=43/127 text=쿠쿠루: 제가 그 사실을 증명하고 싶습니다.
+F/SF0B1.DAT 0x47D32 mode=e2 slot=13 command=E2 8E skip=20 bytes=32/127 text=대신: 너 같은 어린 계집이...
+F/SF0B1.DAT 0x47D80 mode=e2 slot=14 command=E2 8F skip=45 bytes=69/127 text=국왕: 좋다. 세 사람이 함께 가거라. 공항에 비행선을 준비해 두었다.
+F/SF0B1.DAT 0x47DE2 mode=e2 slot=15 command=E2 90 skip=12 bytes=24/127 text=국왕: 기대하고 있겠다.
+F/SF0B1.DAT 0x47E3C mode=e2 slot=16 command=E2 91 skip=7 bytes=20/127 text=아크: 맡겨 주세요.
+21/S2041.DAT 0x47EFE mode=choice bytes=42/48 text=지도를 열까요?|연다|열지 않는다
+21/S2041.DAT 0x47FF8 mode=e2 slot=0 command=E2 81 skip=33 bytes=57/127 text=승무원: 아크 님이시군요. 이제 밀마나로 출발하겠습니다.
+21/S2041.DAT 0x4804E mode=e2 slot=1 command=E2 82 skip=49 bytes=82/127 text=승무원: 밀마나에 들어간 뒤에는 군 본부의 허가 없이는 다른 나라로 갈 수 없습니다.
+21/S2041.DAT 0x480B4 mode=e2 slot=2 command=E2 83 skip=39 bytes=69/127 text=승무원: 밀마나를 휩쓰는 마물은 우리나라의 마물보다 강하다고 합니다.
+21/S2041.DAT 0x48118 mode=e2 slot=3 command=E2 84 skip=14 bytes=26/127 text=승무원: 자신 있으십니까?
+21/S2041.DAT 0x48160 mode=choice bytes=43/44 text=물론이지!|조금 불안해|싸울 줄 몰라
+21/S2041.DAT 0x481CC mode=e2 slot=4 command=E2 85 skip=15 bytes=29/127 text=승무원: 그럼 탑승해 주세요.
+21/S2041.DAT 0x482C2 mode=e2 slot=5 command=E2 86 skip=22 bytes=44/127 text=승무원: 자신이 생길 때까지 기다리겠습니다.
+21/S2041.DAT 0x4834C mode=e2 slot=6 command=E2 87 skip=22 bytes=53/127 text=승무원: 아무리 그래도 너무 자신 없는 것 아닌가...
+21/S2041.DAT 0x48398 mode=e2 slot=7 command=E2 88 skip=8 bytes=26/127 text=아크: 응? 무슨 말 했어?
+21/S2041.DAT 0x483D4 mode=e2 slot=8 command=E2 89 skip=20 bytes=39/127 text=승무원: 아뇨... 아무것도 아닙니다.
+21/S2041.DAT 0x48440 mode=e2 slot=9 command=E2 8A skip=14 bytes=33/127 text=승무원: 무엇을 알고 싶으십니까?
+21/S2041.DAT 0x48488 mode=choice bytes=40/45 text=강해지는 방법|전투 요령|그만둘래
+21/S2041.DAT 0x484FE mode=e2 slot=10 command=E2 8B skip=33 bytes=65/127 text=승무원: 어느 나라든 언제든 마물과 싸울 수 있는 장소가 있습니다.
+21/S2041.DAT 0x48554 mode=e2 slot=11 command=E2 8C skip=29 bytes=58/127 text=승무원: 그곳에서 여러 번 싸우면 계속 강해질 수 있습니다.
+21/S2041.DAT 0x485A6 mode=e2 slot=12 command=E2 8D skip=63 bytes=104/127 text=승무원: 그곳의 마물은 이야기가 진행되어도 강해지지 않으니, 수련할 사람의 수준에 맞춰 장소를 고르세요.
+21/S2041.DAT 0x4861A mode=e2 slot=13 command=E2 8E skip=42 bytes=66/127 text=승무원: 이런 장소는 게임이 끝날 때까지 모두 열 곳 이상 생깁니다.
+21/S2041.DAT 0x48684 mode=e2 slot=14 command=E2 8F skip=44 bytes=67/127 text=승무원: 자기 차례에 두 버튼을 동시에 누르면 자유 커서로 바뀝니다.
+21/S2041.DAT 0x486E4 mode=e2 slot=15 command=E2 90 skip=45 bytes=70/127 text=승무원: 자유 커서로 마물의 위치와 지형을 살핀 뒤 작전을 세워 보세요.
+21/S2041.DAT 0x48746 mode=e2 slot=16 command=E2 91 skip=63 bytes=88/127 text=승무원: 분열하는 마물은 체력이 절반으로 줄지만, 쓰러뜨렸을 때 얻는 경험치는 같습니다.
+21/S2041.DAT 0x487BA mode=e2 slot=17 command=E2 92 skip=23 bytes=35/127 text=승무원: 이 점을 잘 활용해 보세요.
+21/S2041.DAT 0x4880A mode=e2 slot=18 command=E2 93 skip=41 bytes=57/127 text=승무원: 그럼 밀마나로 출발하겠습니다. 자신 있으십니까?
+31/S3012.DAT 0x47F50 mode=e2 slot=0 command=E2 81 skip=37 bytes=58/127 text=초핀: 국왕의 명을 마치시면 곧 출발하겠습니다. 힘내세요.
+31/S3012.DAT 0x47FAC mode=e2 slot=1 command=E2 82 skip=9 bytes=21/127 text=아크: ...알았어.
+31/S3012.DAT 0x47FF0 mode=hybrid_choice slot=2 command=E2 83 skip=25 bytes=39/127 text=초핀: 제가 도와드릴 일이 더 있을까요?|괜찮아|하나만 더
+31/S3012.DAT 0x48064 mode=e2 slot=3 command=E2 84 skip=17 bytes=31/127 text=초핀: 그럼 조심히 다녀오세요.
+31/S3012.DAT 0x480D4 mode=e2 slot=4 command=E2 85 skip=15 bytes=29/127 text=초핀: 무엇을 알고 싶으세요?
+31/S3012.DAT 0x4811E mode=choice bytes=40/45 text=강해지는 방법|전투 요령|그만둘래
+31/S3012.DAT 0x48194 mode=e2 slot=5 command=E2 86 skip=34 bytes=63/127 text=초핀: 어느 나라든 언제든 마물과 싸울 수 있는 장소가 있습니다.
+31/S3012.DAT 0x481EA mode=e2 slot=6 command=E2 87 skip=30 bytes=56/127 text=초핀: 그곳에서 여러 번 싸우면 계속 강해질 수 있습니다.
+31/S3012.DAT 0x4823C mode=e2 slot=7 command=E2 88 skip=64 bytes=102/127 text=초핀: 그곳의 마물은 이야기가 진행되어도 강해지지 않으니, 수련할 사람의 수준에 맞춰 장소를 고르세요.
+31/S3012.DAT 0x482B0 mode=e2 slot=8 command=E2 89 skip=43 bytes=64/127 text=초핀: 이런 장소는 게임이 끝날 때까지 모두 열 곳 이상 생깁니다.
+31/S3012.DAT 0x4831C mode=e2 slot=9 command=E2 8A skip=45 bytes=65/127 text=초핀: 자기 차례에 두 버튼을 동시에 누르면 자유 커서로 바뀝니다.
+31/S3012.DAT 0x4837E mode=e2 slot=10 command=E2 8B skip=46 bytes=68/127 text=초핀: 자유 커서로 마물의 위치와 지형을 살핀 뒤 작전을 세워 보세요.
+31/S3012.DAT 0x483E0 mode=e2 slot=11 command=E2 8C skip=64 bytes=86/127 text=초핀: 분열하는 마물은 체력이 절반으로 줄지만, 쓰러뜨렸을 때 얻는 경험치는 같습니다.
+31/S3012.DAT 0x48454 mode=e2 slot=12 command=E2 8D skip=24 bytes=33/127 text=초핀: 이 점을 잘 활용해 보세요.
+dialogues=53
+e2=48
+choice=4
+hybrid_choice=1
+new_glyphs=7
+sf0b1_naturalized=true
+s2041_complete=true
+s3012_complete=true
+battle_cursor_preserved=true
+other_files_preserved=true
+sha256=3263B9269EA7582E7F4C165D46B7EFB63FD112808250686BAAFCD8DBF1C06588

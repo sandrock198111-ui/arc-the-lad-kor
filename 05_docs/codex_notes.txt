@@ -439,3 +439,10 @@ Short-body and return-scene completion rule - 2026-07-16
 - The throne-room event split remains exact: pre-event `22/S2053.DAT`, cave/legend event `F/SF091.DAT`, post-event return `F/SF0B1.DAT`. v0.17 translates SF091 and preserves S2053/SF0B1 byte-for-byte.
 - `1/S1051.DAT` medium candidates are binary-like false positives, and the D/SD031 target claim was retracted. Their historical placeholder edits are removed by restoring the complete working originals.
 - Future batch completion requires both manifest/corpus coverage and an active-body scan for historical replacement prefixes. Raw placeholder bytes after a leading E2 command are inactive skipped tails and must not be mistaken for displayed text.
+
+Legacy fixed-capacity audit and hybrid choice rule - 2026-07-16
+- v0.17's included high-confidence corpus contained 338 E2 bodies, 192 changed inline bodies, and 66 bodies still equal to the original. A translated-looking screen is not proof that its surrounding file uses E2 or has complete coverage.
+- `F/SF0B1.DAT`, `21/S2041.DAT`, `31/S3011/S3022/S3023/S3024/S3031`, `4/S4041`, and `C1/SC011` retained pre-E2 fixed-capacity translations in v0.17. These must be audited for compressed tone before whole-game completion is claimed.
+- Latest slot 1 maps exactly to `31/S3012.DAT`, not `S2041`. S3012 was absent from v0.17 and its Japanese help menu therefore could not be affected by earlier S2041 work.
+- A dialogue body may combine prose and `E5` choices. For `S3012 0x47FF0`, E2 replaces only the prompt, slot metadata skips from the two-byte E2 command to the first original `E5 03`, and option text remains inline inside its original segment capacities. Do not use `capacity - 2` metadata for this hybrid form because that would skip the choices.
+- After v0.18 the whole high-confidence corpus remains incomplete: 387 E2, 158 translated inline, 65 original in included files, and 2,040 source bodies outside the cumulative ZIP. Treat these counts as the work queue, not as runtime validation.

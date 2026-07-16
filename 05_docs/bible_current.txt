@@ -1173,3 +1173,12 @@ story_test_23 S1072 안전 경계 기준
 - The already verified pre-cave `S2053` and post-cave throne-room `SF0B1` files are byte-identical to v0.16.
 - Candidate output: `03_output/story_verified_returns_e2_v17_cumulative_patch_only.zip`, SHA256 `0CC3244DDE10CD8267248E984151DFA89BA788FCDE7C7A39C38B82E9A5E5CCDD`.
 - Static validation passes for 39 unique game files, 34 E2 slots and metadata records, one exact short restore, two restored speculative files, zero active historical auto-probes, exact cursor preservation, and deterministic rebuilds. Runtime packaging verification remains pending.
+
+2026-07-16 legacy-tone and S3012 completion candidate v0.18:
+- Runtime slot 1 maps exactly to `31/S3012.DAT`; this file was absent from v0.17 and contained fourteen untranslated high-confidence bodies, including the visible Choppin help menu.
+- The post-cave throne return `F/SF0B1.DAT` still used seventeen pre-E2 fixed-capacity translations. Several lines were over-compressed, and the Arc/Poco instruction incorrectly named Kukuru. All seventeen are now rewritten from the Japanese source and use E2 strings.
+- `21/S2041.DAT` had nineteen old inline prose bodies, two old inline choices, and one untranslated choice. Nineteen prose bodies now use E2; all three choices preserve their original `E5`/line-break structures inline.
+- `31/S3012.DAT` adds twelve normal E2 bodies, one inline choice, and one hybrid E2-prompt/inline-choice body. The hybrid metadata skips only the original prompt and resumes at the first `E5 03` marker.
+- Candidate output: `03_output/story_legacy_tone_e2_v18_cumulative_patch_only.zip`, SHA256 `3263B9269EA7582E7F4C165D46B7EFB63FD112808250686BAAFCD8DBF1C06588`.
+- Static validation passes for 53/53 target corpus bodies, 48 normal E2 entries, four inline choices, one hybrid choice, exact dialogue boundaries, exact cursor preservation, and forty unique replacement files. Runtime packaging verification remains pending.
+- Whole-game completion is not yet claimed. The high-confidence corpus audit after v0.18 reports 387 E2 bodies, 158 translated inline bodies, 65 original bodies in included files, and 2,040 bodies whose source files are not yet in the cumulative ZIP.

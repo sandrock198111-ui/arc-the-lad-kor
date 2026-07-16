@@ -1,0 +1,65 @@
+[
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-112DD4E8341F03C8_1.sav",
+    "best_match": {
+      "file": "31/S3012.DAT",
+      "equal_bytes": 1792,
+      "compared_bytes": 1792,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "31/S3012.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/31/S3012.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "21/S2042.DAT",
+        "equal_bytes": 1787,
+        "compared_bytes": 1792,
+        "ratio": 0.9972098214285714
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/21/S2042.DAT",
+        "equal_bytes": 1787,
+        "compared_bytes": 1792,
+        "ratio": 0.9972098214285714
+      },
+      {
+        "file": "21/S2044.DAT",
+        "equal_bytes": 1784,
+        "compared_bytes": 1792,
+        "ratio": 0.9955357142857143
+      }
+    ],
+    "dialogues": [
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x117538",
+        "ram_payload_start": "0x11753C",
+        "file_payload_start": "0x47D3C",
+        "end_exclusive": "0x47D44",
+        "length": 8,
+        "prefix_kind": "control_0100",
+        "payload_hex": "4d 37 34 2f 3c 33 43 1f"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1175AE",
+        "ram_payload_start": "0x1175B2",
+        "file_payload_start": "0x47DB2",
+        "end_exclusive": "0x47DBA",
+        "length": 8,
+        "prefix_kind": "control_0100",
+        "payload_hex": "3d 36 2b 2f 48 30 5d 34"
+      }
+    ]
+  }
+]

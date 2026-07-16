@@ -1,0 +1,3 @@
+state,source_file,match_ratio,marker,ram_marker_offset,ram_payload_start,file_payload_start,end_exclusive,length,prefix_kind,payload_hex
+HASH-112DD4E8341F03C8_1.sav,31/S3012.DAT,1.000000,0x17,0x117538,0x11753C,0x47D3C,0x47D44,8,control_0100,4d 37 34 2f 3c 33 43 1f
+HASH-112DD4E8341F03C8_1.sav,31/S3012.DAT,1.000000,0x17,0x1175AE,0x1175B2,0x47DB2,0x47DBA,8,control_0100,3d 36 2b 2f 48 30 5d 34

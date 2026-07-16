@@ -1069,3 +1069,16 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Font: PASS. Added safe glyphs `샅` and `옛`; no occupied physical glyph index or cursor rectangle is reused.
 - Reproducibility: PASS. Consecutive builds produced SHA256 `0CC3244DDE10CD8267248E984151DFA89BA788FCDE7C7A39C38B82E9A5E5CCDD`.
 - Runtime status: pending user packaging and checks of house return, reed aftermath/cutscene, cave event, and post-cave throne-room continuation.
+
+2026-07-16 - Legacy tone and S3012 completion E2 v0.18
+- Input: v0.17 cumulative ZIP, SHA256 `0CC3244DDE10CD8267248E984151DFA89BA788FCDE7C7A39C38B82E9A5E5CCDD`.
+- State mapping: PASS. `HASH-112DD4E8341F03C8_1.sav` matches `31/S3012.DAT` at 1792/1792 bytes; the visible Japanese Choppin choice is `S3012 0x47FF0`.
+- Manifest coverage: PASS. Exactly 53/53 high-confidence bodies are represented: SF0B1 17, S2041 22, S3012 14.
+- Structure: PASS. Forty-eight ordinary E2 bodies, four inline choice bodies, and one hybrid E2-prompt/inline-choice body retain their original `00 00` boundaries.
+- Hybrid choice: PASS. `S3012 0x47FF0` uses E2 command `E2 83`, retains two `E5 03` markers, skips only the 25-byte original prompt tail, and preserves the following boundary.
+- Regression: PASS. Against v0.17, only `SF0B1`, `S2041`, and `COMM.IMG` change; `S3012` is the sole new replacement file. The ZIP contains forty unique entries.
+- Font: PASS. Seven safe glyphs were added without changing the confirmed battle-cursor rectangle.
+- Corpus audit: 387 E2, 158 translated inline, 65 original in included files, 2,040 not yet included. Whole-game translation is therefore not complete.
+- Reproducibility: PASS. A fixed ZIP timestamp for the newly added S3012 entry yields identical consecutive builds.
+- Output SHA256: `3263B9269EA7582E7F4C165D46B7EFB63FD112808250686BAAFCD8DBF1C06588`.
+- Runtime status: pending user packaging and verification of the throne-return conversation, pre-flight choices, and slot-1 Choppin menu.

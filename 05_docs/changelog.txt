@@ -373,3 +373,9 @@
 - Added `build_story_verified_returns_e2_v17.py`; it supports partial-file exception manifests, restores retracted speculative files, and rejects active historical auto-placeholder bodies across the cumulative DAT set.
 - Replaced 34 missed bodies through E2, restored the one-byte S2061 exclamation, and preserved the accepted `S2053/SF0B1` event-return files byte-for-byte.
 - Added two safe glyphs and built `story_verified_returns_e2_v17_cumulative_patch_only.zip`, SHA256 `0CC3244DDE10CD8267248E984151DFA89BA788FCDE7C7A39C38B82E9A5E5CCDD`.
+
+2026-07-16
+- Mapped the latest slot 1 exactly to `31/S3012.DAT` and confirmed that its fourteen high-confidence Choppin/help bodies were absent from the cumulative patch.
+- Added `story_legacy_tone_e2_v18_translation.csv` with 53 entries covering naturalized `SF0B1`, complete `S2041`, and complete `S3012` dialogue.
+- Added `build_story_legacy_tone_e2_v18.py`; it supports ordinary E2 strings, control-preserving inline choices, and a hybrid E2 prompt that resumes at the original choice marker.
+- Added seven safe glyphs and built `story_legacy_tone_e2_v18_cumulative_patch_only.zip`, SHA256 `3263B9269EA7582E7F4C165D46B7EFB63FD112808250686BAAFCD8DBF1C06588`.
