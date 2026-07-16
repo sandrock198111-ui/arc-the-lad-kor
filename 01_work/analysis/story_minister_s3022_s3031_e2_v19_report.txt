@@ -1,0 +1,94 @@
+22/S2051.DAT 0x47B22 mode=replace_e2 slot=8 command=E2 89 skip=33 bytes=63/127 text=대신: 아크라고 했나? 함부로 그런 말을 입에 담아서는 안 된다.
+22/S2051.DAT 0x47B7E mode=replace_e2 slot=9 command=E2 8A skip=25 bytes=54/127 text=대신: 폐하, 이런 어린아이의 말을 믿으시려는 겁니까?
+22/S2051.DAT 0x47CA4 mode=replace_e2 slot=12 command=E2 8D skip=48 bytes=77/127 text=대신: 이자가 전설의 용사라고 정해진 것도 아닙니다. 아직 이른 이야기입니다.
+22/S2051.DAT 0x47D50 mode=replace_e2 slot=14 command=E2 8F skip=11 bytes=27/127 text=대신: 제게 맡겨 주십시오.
+22/S2051.DAT 0x47D9C mode=replace_e2 slot=15 command=E2 90 skip=47 bytes=63/127 text=대신: 아크, 네가 정말 정령의 힘을 받은 자인지 시험해 보겠다.
+22/S2051.DAT 0x47E00 mode=replace_e2 slot=16 command=E2 91 skip=32 bytes=61/127 text=대신: 이곳에서 북쪽으로 가면 니르바나 평원이라는 곳이 있다.
+22/S2051.DAT 0x47E54 mode=replace_e2 slot=17 command=E2 92 skip=25 bytes=38/127 text=대신: 그곳의 마물을 토벌하고 오너라.
+22/S2051.DAT 0x47EA2 mode=replace_e2 slot=18 command=E2 93 skip=31 bytes=31/127 text=대신: 토벌대는 이미 출발했다.
+22/S2051.DAT 0x47EF6 mode=replace_e2 slot=19 command=E2 94 skip=30 bytes=54/127 text=대신: 서둘러 가서 그들 앞에서 네 힘을 증명해 보아라.
+22/S2052.DAT 0x47962 mode=replace_e2 slot=1 command=E2 82 skip=21 bytes=45/127 text=대신: 어째서 토벌대 병사들은 보이지 않느냐?
+22/S2052.DAT 0x47A16 mode=replace_e2 slot=3 command=E2 84 skip=8 bytes=18/127 text=대신: 넌 누구냐?
+22/S2052.DAT 0x47AA0 mode=replace_e2 slot=5 command=E2 86 skip=7 bytes=13/127 text=대신: 네가?
+22/S2052.DAT 0x47B8A mode=replace_e2 slot=8 command=E2 89 skip=44 bytes=64/127 text=대신: 거짓말 마라. 그들은 국왕을 지키는 군 최고의 병사들이다.
+22/S2052.DAT 0x47BEA mode=replace_e2 slot=9 command=E2 8A skip=31 bytes=45/127 text=대신: 그렇다면 너희는 도망쳐 돌아온 것이냐?
+22/S2052.DAT 0x47D26 mode=replace_e2 slot=13 command=E2 8E skip=51 bytes=65/127 text=대신: 너희 같은 아이들이 토벌대를 전멸시킨 마물을 쓰러뜨렸다고?
+22/S2052.DAT 0x47E52 mode=replace_e2 slot=16 command=E2 91 skip=13 bytes=36/127 text=대신: 병사들은 무엇을 하고 있느냐!
+22/S2053.DAT 0x4797A mode=replace_e2 slot=2 command=E2 83 skip=12 bytes=24/127 text=대신: 믿어 주겠냐고!?
+22/S2053.DAT 0x479BA mode=replace_e2 slot=3 command=E2 84 skip=30 bytes=53/127 text=대신: 네가 지금 누구에게 그런 말투를 쓰는지 아느냐!
+21/S2012.DAT 0x478A6 mode=new_e2 slot=0 command=E2 81 skip=19 bytes=39/127 text=병사: 국왕의 명을 마친 뒤 돌아오시오.
+21/S2012.DAT 0x478F0 mode=new_e2 slot=1 command=E2 82 skip=2 bytes=6/127 text=...
+31/S3022.DAT 0x47CBA mode=rebuild_e2 slot=0 command=E2 81 skip=16 bytes=33/127 text=쿠쿠루: 우리 셋만으로 괜찮겠지?
+31/S3022.DAT 0x47D06 mode=rebuild_e2 slot=1 command=E2 82 skip=20 bytes=35/127 text=니카라스 숲에는 안 가도 되는 걸까?
+31/S3022.DAT 0x47D52 mode=rebuild_e2 slot=2 command=E2 83 skip=10 bytes=24/127 text=우리 셋만으로 괜찮을까?
+31/S3022.DAT 0x47D96 mode=rebuild_e2 slot=3 command=E2 84 skip=46 bytes=66/127 text=병사: 너희 같은 애들이 마물을 쓰러뜨리겠다고? 건방진 소리 마라.
+31/S3022.DAT 0x47DF8 mode=rebuild_e2 slot=4 command=E2 85 skip=33 bytes=69/127 text=병사: 그런 일은 우리 군인에게 맡기고, 너희는 조용히 명령이나 따라.
+31/S3022.DAT 0x47E54 mode=rebuild_e2 slot=5 command=E2 86 skip=36 bytes=74/127 text=병사: 야군 장군님은 이 나라 제일의 장군이다. 거역하면 호되게 당할 거다.
+31/S3022.DAT 0x47EB2 mode=rebuild_e2 slot=6 command=E2 87 skip=48 bytes=64/127 text=병사: 루와간 숲과 센바라 늪으로 간다고? 그곳의 마물은 강하다.
+31/S3022.DAT 0x47F16 mode=rebuild_e2 slot=7 command=E2 88 skip=33 bytes=54/127 text=병사: 먼저 니카라스 숲에서 힘을 시험해 보는 게 어때?
+31/S3022.DAT 0x47F72 mode=rebuild_e2 slot=8 command=E2 89 skip=45 bytes=80/127 text=병사: 야군 장군님이 로마리아에서 부임한 뒤로 마물이 마을을 습격하지 않게 됐지.
+31/S3022.DAT 0x47FD4 mode=rebuild_e2 slot=9 command=E2 8A skip=54 bytes=86/127 text=병사: 역시 우리 대장군님이셔! 하지만 장군님이 마물과 싸우는 건 한 번도 못 봤군...
+31/S3022.DAT 0x48044 mode=rebuild_e2 slot=10 command=E2 8B skip=38 bytes=59/127 text=병사: 비켜라, 비켜! 여긴 아이들이 돌아다닐 곳이 아니다.
+31/S3022.DAT 0x480A4 mode=rebuild_e2 slot=11 command=E2 8C skip=30 bytes=59/127 text=병사: 아무래도 첩자가 숨어든 모양이야. 조심해야겠어...
+31/S3022.DAT 0x4811A mode=rebuild_e2 slot=12 command=E2 8D skip=32 bytes=55/127 text=노인: 전쟁이 끝났나 했더니, 이번에는 마물이라니...
+31/S3022.DAT 0x4816E mode=rebuild_e2 slot=13 command=E2 8E skip=31 bytes=47/127 text=노인: 대체 언제쯤 마음 편히 살 수 있을까...
+31/S3022.DAT 0x481CC mode=rebuild_e2 slot=14 command=E2 8F skip=25 bytes=53/127 text=아이: 할아버지, 저도 그 사람과 이야기하게 해 줘요.
+31/S3022.DAT 0x4821A mode=rebuild_e2 slot=15 command=E2 90 skip=25 bytes=44/127 text=노인: 모르는 사람에게 가까이 가면 안 된다.
+31/S3022.DAT 0x4826A mode=rebuild_e2 slot=16 command=E2 91 skip=9 bytes=26/127 text=아이: 위험하지 않다니까.
+31/S3022.DAT 0x482B4 mode=rebuild_e2 slot=17 command=E2 92 skip=36 bytes=47/127 text=남자: 마물과 싸우려고 만든 임시군일 텐데...
+31/S3022.DAT 0x4830C mode=rebuild_e2 slot=18 command=E2 93 skip=50 bytes=74/127 text=남자: 나라를 빼앗긴 것 같은 기분이 드는군... 나만 그렇게 느끼는 건가?
+31/S3022.DAT 0x48378 mode=rebuild_e2 slot=19 command=E2 94 skip=20 bytes=47/127 text=남자: 제가 여기 있다는 건 비밀로 해 주십시오.
+31/S3022.DAT 0x4855A mode=rebuild_e2 slot=20 command=E2 95 skip=41 bytes=61/127 text=병사: 준비되시면 말씀해 주십시오. 출구에서 기다리겠습니다.
+31/S3022.DAT 0x485D6 mode=rebuild_e2 slot=21 command=E2 96 skip=8 bytes=23/127 text=쿠쿠루: 정말 화가 나!
+31/S3022.DAT 0x48614 mode=rebuild_e2 slot=22 command=E2 97 skip=32 bytes=64/127 text=쿠쿠루: 처음부터 우리가 마물과 싸울 수 없다고 생각한 모양이야.
+31/S3022.DAT 0x4866A mode=rebuild_e2 slot=23 command=E2 98 skip=6 bytes=30/127 text=포코: 그래서 어떻게 할 거야?
+31/S3022.DAT 0x486A6 mode=rebuild_e2 slot=24 command=E2 99 skip=44 bytes=101/127 text=아크: 우리가 직접 마물을 쓰러뜨려 보여 주는 수밖에 없어. 그래야 장군도 우릴 아이로 보지 못할 거야.
+31/S3022.DAT 0x48708 mode=rebuild_e2 slot=25 command=E2 9A skip=27 bytes=48/127 text=포코: 어떤 마물인지도 모르는데... 괜찮을까?
+31/S3022.DAT 0x4875A mode=rebuild_e2 slot=26 command=E2 9B skip=24 bytes=63/127 text=아크: 그렇게 큰소리쳤으니 해내는 수밖에 없어. 가자, 쿠쿠루.
+31/S3022.DAT 0x487AE mode=rebuild_e2 slot=27 command=E2 9C skip=2 bytes=15/127 text=쿠쿠루: 그래.
+31/S3022.DAT 0x48882 mode=rebuild_e2 slot=28 command=E2 9D skip=21 bytes=35/127 text=병사: 준비되시면 말씀해 주십시오.
+31/S3022.DAT 0x488E4 mode=rebuild_e2 slot=29 command=E2 9E skip=14 bytes=28/127 text=병사: 그럼 출발하겠습니다.
+31/S3022.DAT 0x489C4 mode=rebuild_e2 slot=30 command=E2 9F skip=24 bytes=43/127 text=쿠쿠루: 넌 안 와도 돼. 여기서 자고 있어.
+31/S3022.DAT 0x48A12 mode=rebuild_e2 slot=31 command=E2 A0 skip=7 bytes=20/127 text=쿠쿠루: 자, 가자.
+31/S3022.DAT 0x48A50 mode=rebuild_e2 slot=32 command=E2 A1 skip=10 bytes=31/127 text=쿠쿠루: 이렇게 해도 괜찮을까?
+31/S3022.DAT 0x48A90 mode=rebuild_e2 slot=33 command=E2 A2 skip=29 bytes=54/127 text=쿠쿠루: 우리 힘으로 마물을 쓰러뜨려야 의미가 있잖아?
+31/S3022.DAT 0x48AE4 mode=rebuild_e2 slot=34 command=E2 A3 skip=11 bytes=20/127 text=아크: 그래. 가자.
+31/S3031.DAT 0x47A4C mode=rebuild_e2 slot=0 command=E2 81 skip=22 bytes=45/127 text=병사: 스메리아에서 온 사신을 모셔 왔습니다.
+31/S3031.DAT 0x47AB0 mode=rebuild_e2 slot=1 command=E2 82 skip=38 bytes=54/127 text=야군: 이런 아이들을 상대하라니, 나도 우습게 보였군.
+31/S3031.DAT 0x47B9C mode=rebuild_e2 slot=2 command=E2 83 skip=12 bytes=35/127 text=아크: 스메리아에서 온 아크입니다.
+31/S3031.DAT 0x47BDC mode=rebuild_e2 slot=3 command=E2 84 skip=47 bytes=76/127 text=야군: 나는 밀마나군 본부의 야군 장군이다. 토요케 숲으로 가고 싶다고 했나?
+31/S3031.DAT 0x47C40 mode=rebuild_e2 slot=4 command=E2 85 skip=36 bytes=60/127 text=야군: 하지만 그곳은 아이들이 갈 곳이 아니다. 너무 위험해.
+31/S3031.DAT 0x47C98 mode=rebuild_e2 slot=5 command=E2 86 skip=48 bytes=63/127 text=야군: 일부러 여기까지 온 수고는 알겠지만, 돌아가 주어야겠군.
+31/S3031.DAT 0x47D12 mode=rebuild_e2 slot=6 command=E2 87 skip=17 bytes=44/127 text=쿠쿠루: 잠시만요, 말씀이 너무 심하잖아요.
+31/S3031.DAT 0x47D5A mode=rebuild_e2 slot=7 command=E2 88 skip=28 bytes=79/127 text=쿠쿠루: 아이라고 무시하지 마세요. 저희는 스메리아 국왕의 명을 받고 왔다고요.
+31/S3031.DAT 0x47DAC mode=rebuild_e2 slot=8 command=E2 89 skip=22 bytes=68/127 text=쿠쿠루: 그렇다면 사신으로서 제대로 예우해 주셔야 하는 것 아닌가요?
+31/S3031.DAT 0x47E08 mode=rebuild_e2 slot=9 command=E2 8A skip=23 bytes=31/127 text=야군: 이거 실례했군, 아가씨.
+31/S3031.DAT 0x47E54 mode=rebuild_e2 slot=10 command=E2 8B skip=53 bytes=71/127 text=야군: 다만 정령의 나라에서 신비한 힘을 지닌 전사들이 온다고 들었거든.
+31/S3031.DAT 0x47EBE mode=rebuild_e2 slot=11 command=E2 8C skip=39 bytes=60/127 text=야군: 게다가 지금 숲은 마물로 가득해 매우 위험한 곳이라네.
+31/S3031.DAT 0x47F1A mode=rebuild_e2 slot=12 command=E2 8D skip=43 bytes=63/127 text=야군: 사신이 목숨이라도 잃는다면 스메리아 국왕께 면목이 없지.
+31/S3031.DAT 0x47F8C mode=rebuild_e2 slot=13 command=E2 8E skip=13 bytes=17/127 text=야군: 하하하하!
+31/S3031.DAT 0x47FDE mode=rebuild_e2 slot=14 command=E2 8F skip=37 bytes=82/127 text=아크: 방금 말한 신비한 힘을 지닌 전사가 바로 우리입니다. 나이는 상관없잖습니까?
+31/S3031.DAT 0x4803A mode=rebuild_e2 slot=15 command=E2 90 skip=39 bytes=62/127 text=쿠쿠루: 맞아요. 당신처럼 배 나온 장군보다 훨씬 잘 싸울걸요!
+31/S3031.DAT 0x480B0 mode=rebuild_e2 slot=16 command=E2 91 skip=38 bytes=46/127 text=야군: 좋다. 그렇다면 너희 힘을 보여 주도록.
+31/S3031.DAT 0x4810A mode=rebuild_e2 slot=17 command=E2 92 skip=28 bytes=46/127 text=야군: 요즘 이 주변에도 마물이 나타나고 있다.
+31/S3031.DAT 0x4815A mode=rebuild_e2 slot=18 command=E2 93 skip=40 bytes=46/127 text=야군: 그 힘으로 마물을 쓰러뜨려 보도록 해라.
+31/S3031.DAT 0x481B6 mode=rebuild_e2 slot=19 command=E2 94 skip=43 bytes=68/127 text=야군: 이 주변의 마물도 쓰러뜨리지 못한다면 숲에는 갈 수 없을 테니.
+31/S3031.DAT 0x48246 mode=rebuild_e2 slot=20 command=E2 95 skip=40 bytes=61/127 text=야군: 이들이 전장을 보고 싶다는군. 네가 동행해 안내하도록.
+31/S3031.DAT 0x482A2 mode=rebuild_e2 slot=21 command=E2 96 skip=35 bytes=63/127 text=야군: 만에 하나라도 일이 생기면 큰일이다. 각별히 보호하도록.
+31/S3031.DAT 0x48308 mode=rebuild_e2 slot=22 command=E2 97 skip=47 bytes=58/127 text=야군: 루와간 숲과 센바라 늪, 두 곳으로 안내하게 하겠다.
+31/S3031.DAT 0x4836C mode=rebuild_e2 slot=23 command=E2 98 skip=28 bytes=41/127 text=야군: 우선 그곳의 마물들과 싸워 보도록.
+31/S3031.DAT 0x483BC mode=rebuild_e2 slot=24 command=E2 99 skip=31 bytes=38/127 text=야군: 그럼 훌륭한 전과를 기대하겠다.
+31/S3031.DAT 0x4841E mode=rebuild_e2 slot=25 command=E2 9A skip=11 bytes=24/127 text=야군: 이분들을 모셔라.
+31/S3031.DAT 0x4845E mode=rebuild_e2 slot=26 command=E2 9B skip=6 bytes=11/127 text=병사: 예!
+dialogues=82
+replace_e2=18
+new_e2=2
+rebuild_e2=62
+new_glyphs=10
+minister_speaker_labels_preserved=true
+s2012_complete=true
+s3022_choice_preserved=true
+s3022_s3031_legacy_inline_removed=true
+battle_cursor_preserved=true
+other_files_preserved=true
+sha256=5558DAE42D6EBD0CED2DA238512F30EE451007E731F7E9B4A5CC5E591A77A171

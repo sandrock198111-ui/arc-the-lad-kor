@@ -1082,3 +1082,15 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Reproducibility: PASS. A fixed ZIP timestamp for the newly added S3012 entry yields identical consecutive builds.
 - Output SHA256: `3263B9269EA7582E7F4C165D46B7EFB63FD112808250686BAAFCD8DBF1C06588`.
 - Runtime status: pending user packaging and verification of the throne-return conversation, pre-flight choices, and slot-1 Choppin menu.
+
+2026-07-16 - Minister labels and S3022/S3031 E2 v0.19
+- Input: v0.18 cumulative ZIP, SHA256 `3263B9269EA7582E7F4C165D46B7EFB63FD112808250686BAAFCD8DBF1C06588`.
+- Runtime evidence: the general-room screenshots show old fixed-capacity S3031 text (`아이라 하지 마`, `제대로 대해`, `미안합니다`), proving that this scene had not been upgraded to E2.
+- Slot-1 mapping: the latest state ranks `31/S3022.DAT` at 1573/1792 bytes against the clean source; the nonmatching portion is expected from the active cumulative patch. The visible truncated `래도 돼?` corresponds to the historical inline row aimed two bytes before the exact corpus payload `0x48A50`.
+- Source-label audit: PASS. S2031, SF0B1, S2051-S2053, S2081, and S2082 use original speaker label `大臣`; `アンデル` is used as a personal name in dialogue. The abandoned all-`안델:` v0.19 draft was never built or released.
+- Coverage: PASS. 82 rows total: 18 existing E2 label replacements, 2 new S2012 E2 bodies, 35 rebuilt S3022 E2 bodies, and 27 rebuilt S3031 E2 bodies.
+- Rebuild isolation: PASS. S3022/S3031 were restored from clean originals. Every changed byte lies inside an E2 command, the external slot bank, or the byte-identical S3022 choice range.
+- Choice preservation: PASS. S3022 `0x48822` capacity 33 is byte-identical to v0.18.
+- Font/cursor: PASS. Ten safe glyphs were added; the confirmed battle-cursor texture bytes are unchanged.
+- Reproducibility: PASS. Two consecutive builds produced SHA256 `5558DAE42D6EBD0CED2DA238512F30EE451007E731F7E9B4A5CC5E591A77A171`.
+- Runtime status: pending user packaging and verification of slot-1 portrait/text, the S3031 general-room sequence, and the S2012 guard response.

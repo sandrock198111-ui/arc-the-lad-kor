@@ -446,3 +446,10 @@ Legacy fixed-capacity audit and hybrid choice rule - 2026-07-16
 - Latest slot 1 maps exactly to `31/S3012.DAT`, not `S2041`. S3012 was absent from v0.17 and its Japanese help menu therefore could not be affected by earlier S2041 work.
 - A dialogue body may combine prose and `E5` choices. For `S3012 0x47FF0`, E2 replaces only the prompt, slot metadata skips from the two-byte E2 command to the first original `E5 03`, and option text remains inline inside its original segment capacities. Do not use `capacity - 2` metadata for this hybrid form because that would skip the choices.
 - After v0.18 the whole high-confidence corpus remains incomplete: 387 E2, 158 translated inline, 65 original in included files, and 2,040 source bodies outside the cumulative ZIP. Treat these counts as the work queue, not as runtime validation.
+
+Minister title/name rule and legacy-offset repair - 2026-07-16
+- `大臣` and `アンデル` refer to the same character but are not interchangeable labels. Preserve `大臣` as Korean speaker label `대신:`; use `안델` only when the Japanese text uses the personal name, and `안델 대신` for `アンデル大臣`.
+- The v0.15 S2051-S2053 translations incorrectly changed original `大臣` speaker labels to `안델:`. v0.19 corrects those eighteen external strings without changing E2 commands, slot IDs, or skip metadata.
+- Historical `story_s3011_s3022_sc011_bulk_translation.csv` contains several payload offsets that differ by two bytes from the final high-confidence corpus, including `S3022 0x48A4E` versus exact payload start `0x48A50`. Fixed-capacity replacement at the stale offset can overwrite prefix/control bytes and produce truncated text or portrait/tile corruption.
+- When upgrading a legacy inline file with stale offsets, do not layer E2 over the modified file. Reconstruct the target from the clean original, reinsert every verified body at exact corpus starts, and explicitly preserve any interactive choice ranges.
+- v0.19 applies this clean rebuild to S3022 and S3031. Its builder permits differences only in external slot banks, two-byte E2 commands, and the verified S3022 choice range.

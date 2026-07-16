@@ -1182,3 +1182,13 @@ story_test_23 S1072 안전 경계 기준
 - Candidate output: `03_output/story_legacy_tone_e2_v18_cumulative_patch_only.zip`, SHA256 `3263B9269EA7582E7F4C165D46B7EFB63FD112808250686BAAFCD8DBF1C06588`.
 - Static validation passes for 53/53 target corpus bodies, 48 normal E2 entries, four inline choices, one hybrid choice, exact dialogue boundaries, exact cursor preservation, and forty unique replacement files. Runtime packaging verification remains pending.
 - Whole-game completion is not yet claimed. The high-confidence corpus audit after v0.18 reports 387 E2 bodies, 158 translated inline bodies, 65 original bodies in included files, and 2,040 bodies whose source files are not yet in the cumulative ZIP.
+
+2026-07-16 minister labels and S3022/S3031 E2 candidate v0.19:
+- The original script deliberately uses `大臣` as the speaker label and `アンデル` as the character's personal name inside dialogue. Korean therefore keeps `대신:` for speaker labels, `안델` for the name, and `안델 대신` where both are required.
+- Corrected eighteen v0.15 speaker labels in `S2051/S2052/S2053` from `안델:` back to `대신:`. Dialogue such as `그만하게, 안델!` remains unchanged.
+- Added the omitted `S2012` guard response and its following ellipsis through two E2 slots.
+- The newest slot-1 state identifies the broken legacy scene as `31/S3022.DAT`; the visible `이래도 돼?` corresponds to the old misaligned inline replacement around original payload `0x48A50`.
+- Rebuilt `S3022` from clean original data and moved all 35 ordinary high-confidence bodies to E2. Its verified `E5 04` departure choice remains byte-identical to v0.18.
+- Rebuilt all 27 high-confidence `S3031` general-room bodies as contextual E2 dialogue, replacing the compressed pre-E2 lines shown in runtime screenshots.
+- Candidate output: `03_output/story_minister_s3022_s3031_e2_v19_cumulative_patch_only.zip`, SHA256 `5558DAE42D6EBD0CED2DA238512F30EE451007E731F7E9B4A5CC5E591A77A171`.
+- Static checks pass for 82 manifest rows, deterministic rebuilds, exact battle-cursor preservation, and zero changes outside E2 commands/external slots/the preserved S3022 choice in the two rebuilt files. Runtime verification is pending.

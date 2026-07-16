@@ -379,3 +379,9 @@
 - Added `story_legacy_tone_e2_v18_translation.csv` with 53 entries covering naturalized `SF0B1`, complete `S2041`, and complete `S3012` dialogue.
 - Added `build_story_legacy_tone_e2_v18.py`; it supports ordinary E2 strings, control-preserving inline choices, and a hybrid E2 prompt that resumes at the original choice marker.
 - Added seven safe glyphs and built `story_legacy_tone_e2_v18_cumulative_patch_only.zip`, SHA256 `3263B9269EA7582E7F4C165D46B7EFB63FD112808250686BAAFCD8DBF1C06588`.
+
+2026-07-16
+- Corrected the character-label policy after source review: `大臣` remains `대신:` while personal-name references `アンデル` remain `안델`.
+- Added `story_minister_s3022_s3031_e2_v19_translation.csv` with eighteen corrected minister labels, two omitted S2012 lines, 35 rebuilt S3022 E2 lines, and 27 rebuilt S3031 E2 lines.
+- Added `build_story_minister_s3022_s3031_e2_v19.py`; it restores S3022/S3031 from clean originals before E2 insertion, preserves the S3022 choice bytes, and rejects any out-of-range control/portrait changes.
+- Added ten safe glyphs and built `story_minister_s3022_s3031_e2_v19_cumulative_patch_only.zip`, SHA256 `5558DAE42D6EBD0CED2DA238512F30EE451007E731F7E9B4A5CC5E591A77A171`.
