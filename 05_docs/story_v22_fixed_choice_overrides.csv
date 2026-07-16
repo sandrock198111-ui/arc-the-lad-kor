@@ -1,0 +1,16 @@
+file,offset,option_index,text,reason
+6/S6054.DAT,0x450F6,3,아라,original option cell is 5 bytes and file has no free E2 slots
+6/S6054.DAT,0x451F4,1,아,original option cell is 3 bytes and file has no free E2 slots
+6/S6054.DAT,0x451F4,2,쿠,original option cell is 3 bytes and file has no free E2 slots
+6/S6054.DAT,0x453E6,4,고,original option cell is 3 bytes and file has no free E2 slots
+6/S6054.DAT,0x454DC,4,고,original option cell is 3 bytes and file has no free E2 slots
+6/S6054.DAT,0x455E0,1,유,original option cell is 2 bytes and file has no free E2 slots
+6/S6054.DAT,0x455E0,2,무,original option cell is 2 bytes and file has no free E2 slots
+6/S6054.DAT,0x458CE,4,붙음,original option cell is 4 bytes and file has no free E2 slots
+6/S6054.DAT,0x459CA,1,금,original option cell is 3 bytes and file has no free E2 slots
+C2/SC0B6.DAT,0x464F8,3,약화,original option cell is 8 bytes and file has no free E2 slots
+C2/SC0B6.DAT,0x46884,1,힘열매,original option cell is 8 bytes and file has no free E2 slots
+C2/SC0B6.DAT,0x46884,2,파로,original option cell is 7 bytes and file has no free E2 slots
+C2/SC0B6.DAT,0x46F98,2,헤모방지,original option cell is 10 bytes and file has no free E2 slots
+C2/SC0B6.DAT,0x46F98,4,선글라,original option cell is 7 bytes and file has no free E2 slots
+C2/SC0B6.DAT,0x47838,1,신비갑,original option cell is 7 bytes and file has no free E2 slots

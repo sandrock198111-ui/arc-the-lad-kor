@@ -399,3 +399,10 @@
 - Added `build_story_all_choices_v21.py`; it preserves eight verified choices, rewrites 257 choices, restores eight incorrect E5 marker types, and validates every original boundary and marker sequence.
 - Added 35 previously absent choice-bearing files to the cumulative replacement set without modifying bytes outside verified choice ranges.
 - Built `story_all_choices_v21_cumulative_patch_only.zip`, SHA256 `A050991D8D4400081689A6F72F730E2221AE328DF74D7D971B9CC5EAFA1D4C4E`.
+
+2026-07-17
+- Added `story_v22_dialogue_translation.csv` for the live-identified S2013 and S3011 ordinary dialogues.
+- Added `story_v22_fixed_choice_overrides.csv` for fifteen compact option labels in the two files without verified free E2 slots.
+- Added `build_story_dialogue_choice_structure_v22.py`; it audits all 358 E5 candidates, excludes 93 binary false positives, and restores original E5/E6 positions in 243 of 265 real choice bodies while retaining Korean text.
+- Added deterministic choice audit/report outputs. Independent byte-range verification found zero changes outside declared choice bodies, allocated E2 slots, and the two dialogue commands.
+- Built `story_dialogue_choice_structure_v22_cumulative_patch_only.zip`, SHA256 `C5005057BF77F51912A93E5FB4C4EA3F1368BD2CDA6C5A02BF32E55F531254C4`.

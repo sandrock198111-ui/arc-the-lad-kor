@@ -1,0 +1,245 @@
+Story dialogue and choice structure v0.22
+base_sha256=A050991D8D4400081689A6F72F730E2221AE328DF74D7D971B9CC5EAFA1D4C4E
+e5_candidates_total=358
+real_high_confidence_choices=265
+medium_binary_false_positives=93
+choice_geometry_repaired=243
+choice_geometry_preserved=22
+external_prompts=132
+external_options=88
+inline_options=550
+ordinary_dialogues_added=2
+external_allocations=222
+new_glyphs=0
+original_e5_positions_preserved_for_v22_rewrites=true
+original_e6_positions_preserved_for_v22_rewrites=true
+accepted_legacy_marker_layouts=7
+accepted_legacy_e6_layouts=7
+battle_cursor_preserved=true
+changed_files=21/S2013.DAT,21/S2042.DAT,21/S2045.DAT,31/S3011.DAT,31/S3013.DAT,31/S3014.DAT,31/S3022.DAT,31/S3023.DAT,31/S3024.DAT,4/S4033.DAT,4/S4034.DAT,4/S4035.DAT,4/S4036.DAT,5/S5013.DAT,6/S6014.DAT,6/S6054.DAT,7/S7012.DAT,7/S7021.DAT,7/S7022.DAT,7/S7023.DAT,7/S7024.DAT,7/S7025.DAT,7/S7026.DAT,7/S7028.DAT,8/S8013.DAT,B/SB071.DAT,C1/SC011.DAT,C1/SC021.DAT,C1/SC031.DAT,C1/SC041.DAT,C1/SC051.DAT,C1/SC061.DAT,C1/SC081.DAT,C1/SC091.DAT,C2/SC0A1.DAT,C2/SC0B6.DAT
+zip_entries=77
+sha256=C5005057BF77F51912A93E5FB4C4EA3F1368BD2CDA6C5A02BF32E55F531254C4
+
+Allocations:
+21/S2042.DAT 0x47FF0 prompt slot=0 command=E2 81 skip=25 bytes=24 text=초핀: 더 도와드릴까요?
+21/S2045.DAT 0x4834A:2 option slot=0 command=E2 81 skip=4 bytes=11 text=유용한 정보
+21/S2045.DAT 0x48972:2 option slot=1 command=E2 82 skip=8 bytes=13 text=밀마나의 이후
+21/S2045.DAT 0x48972:3 option slot=2 command=E2 83 skip=8 bytes=11 text=라마다 수행
+21/S2045.DAT 0x48F18:3 option slot=3 command=E2 84 skip=8 bytes=11 text=정령수 정보
+21/S2045.DAT 0x48F94:1 option slot=4 command=E2 85 skip=5 bytes=9 text=포코 악기
+21/S2045.DAT 0x48F94:2 option slot=5 command=E2 86 skip=2 bytes=6 text=투기장
+21/S2045.DAT 0x4907E:1 option slot=6 command=E2 87 skip=5 bytes=9 text=포코 악기
+21/S2045.DAT 0x4907E:2 option slot=7 command=E2 88 skip=2 bytes=6 text=투기장
+21/S2045.DAT 0x490F0:1 option slot=8 command=E2 89 skip=7 bytes=11 text=라마다 수행
+31/S3013.DAT 0x47FF6:1 option slot=0 command=E2 81 skip=3 bytes=8 text=물론이야
+31/S3013.DAT 0x48236:3 option slot=1 command=E2 82 skip=6 bytes=9 text=다른 정보
+31/S3014.DAT 0x4736E:2 option slot=0 command=E2 81 skip=4 bytes=11 text=유용한 정보
+31/S3014.DAT 0x47996:2 option slot=1 command=E2 82 skip=8 bytes=13 text=밀마나의 이후
+31/S3014.DAT 0x47996:3 option slot=2 command=E2 83 skip=8 bytes=11 text=라마다 수행
+31/S3014.DAT 0x47F3C:3 option slot=3 command=E2 84 skip=8 bytes=11 text=정령수 정보
+31/S3014.DAT 0x47FB8:1 option slot=4 command=E2 85 skip=5 bytes=9 text=포코 악기
+31/S3014.DAT 0x47FB8:2 option slot=5 command=E2 86 skip=2 bytes=6 text=투기장
+31/S3014.DAT 0x480A2:1 option slot=6 command=E2 87 skip=5 bytes=9 text=포코 악기
+31/S3014.DAT 0x480A2:2 option slot=7 command=E2 88 skip=2 bytes=6 text=투기장
+31/S3014.DAT 0x48114:1 option slot=8 command=E2 89 skip=7 bytes=11 text=라마다 수행
+31/S3022.DAT 0x48822 prompt slot=35 command=E2 A4 skip=14 bytes=12 text=출발할까요?
+31/S3023.DAT 0x4870A:1 option slot=0 command=E2 81 skip=3 bytes=6 text=나간다
+31/S3024.DAT 0x47802:1 option slot=0 command=E2 81 skip=3 bytes=6 text=나간다
+31/S3024.DAT 0x47F68:1 option slot=1 command=E2 82 skip=1 bytes=4 text=아크
+31/S3024.DAT 0x47F68:2 option slot=2 command=E2 83 skip=1 bytes=6 text=쿠쿠루
+31/S3024.DAT 0x47FD2:3 option slot=3 command=E2 84 skip=3 bytes=6 text=아르마
+4/S4033.DAT 0x47CDC prompt slot=0 command=E2 81 skip=24 bytes=19 text=그레이시누 정령문?
+4/S4033.DAT 0x47CDC:1 option slot=1 command=E2 82 skip=0 bytes=4 text=읽기
+4/S4034.DAT 0x47D30 prompt slot=0 command=E2 81 skip=22 bytes=13 text=카델 정령문?
+4/S4034.DAT 0x47D30:1 option slot=1 command=E2 82 skip=0 bytes=4 text=읽기
+4/S4035.DAT 0x47D30 prompt slot=0 command=E2 81 skip=23 bytes=15 text=아리바 정령문?
+4/S4035.DAT 0x47D30:1 option slot=1 command=E2 82 skip=0 bytes=4 text=읽기
+4/S4036.DAT 0x47CDC prompt slot=0 command=E2 81 skip=22 bytes=17 text=스메리아 정령문?
+4/S4036.DAT 0x47CDC:1 option slot=1 command=E2 82 skip=0 bytes=4 text=읽기
+5/S5013.DAT 0x48336:2 option slot=0 command=E2 81 skip=4 bytes=11 text=유용한 정보
+5/S5013.DAT 0x4895E:2 option slot=1 command=E2 82 skip=8 bytes=13 text=밀마나의 이후
+5/S5013.DAT 0x4895E:3 option slot=2 command=E2 83 skip=8 bytes=11 text=라마다 수행
+5/S5013.DAT 0x48F04:3 option slot=3 command=E2 84 skip=8 bytes=11 text=정령수 정보
+5/S5013.DAT 0x48F80:1 option slot=4 command=E2 85 skip=5 bytes=9 text=포코 악기
+5/S5013.DAT 0x48F80:2 option slot=5 command=E2 86 skip=2 bytes=6 text=투기장
+5/S5013.DAT 0x4906A:1 option slot=6 command=E2 87 skip=5 bytes=9 text=포코 악기
+5/S5013.DAT 0x4906A:2 option slot=7 command=E2 88 skip=2 bytes=6 text=투기장
+5/S5013.DAT 0x490DC:1 option slot=8 command=E2 89 skip=7 bytes=11 text=라마다 수행
+6/S6014.DAT 0x482E2:2 option slot=0 command=E2 81 skip=4 bytes=11 text=유용한 정보
+6/S6014.DAT 0x4890A:2 option slot=1 command=E2 82 skip=8 bytes=13 text=밀마나의 이후
+6/S6014.DAT 0x4890A:3 option slot=2 command=E2 83 skip=8 bytes=11 text=라마다 수행
+6/S6014.DAT 0x48EB0:3 option slot=3 command=E2 84 skip=8 bytes=11 text=정령수 정보
+6/S6014.DAT 0x48F2C:1 option slot=4 command=E2 85 skip=5 bytes=9 text=포코 악기
+6/S6014.DAT 0x48F2C:2 option slot=5 command=E2 86 skip=2 bytes=6 text=투기장
+6/S6014.DAT 0x49016:1 option slot=6 command=E2 87 skip=5 bytes=9 text=포코 악기
+6/S6014.DAT 0x49016:2 option slot=7 command=E2 88 skip=2 bytes=6 text=투기장
+6/S6014.DAT 0x49088:1 option slot=8 command=E2 89 skip=7 bytes=11 text=라마다 수행
+7/S7012.DAT 0x47DDA:2 option slot=0 command=E2 81 skip=4 bytes=11 text=유용한 정보
+7/S7012.DAT 0x48402:2 option slot=1 command=E2 82 skip=8 bytes=13 text=밀마나의 이후
+7/S7012.DAT 0x48402:3 option slot=2 command=E2 83 skip=8 bytes=11 text=라마다 수행
+7/S7012.DAT 0x489A8:3 option slot=3 command=E2 84 skip=8 bytes=11 text=정령수 정보
+7/S7012.DAT 0x48A24:1 option slot=4 command=E2 85 skip=5 bytes=9 text=포코 악기
+7/S7012.DAT 0x48A24:2 option slot=5 command=E2 86 skip=2 bytes=6 text=투기장
+7/S7012.DAT 0x48B0E:1 option slot=6 command=E2 87 skip=5 bytes=9 text=포코 악기
+7/S7012.DAT 0x48B0E:2 option slot=7 command=E2 88 skip=2 bytes=6 text=투기장
+7/S7012.DAT 0x48B80:1 option slot=8 command=E2 89 skip=7 bytes=11 text=라마다 수행
+7/S7021.DAT 0x47D58 prompt slot=0 command=E2 81 skip=9 bytes=6 text=변경?
+7/S7021.DAT 0x47E66 prompt slot=1 command=E2 82 skip=9 bytes=6 text=변경?
+7/S7021.DAT 0x47F74 prompt slot=2 command=E2 83 skip=9 bytes=6 text=변경?
+7/S7021.DAT 0x48082 prompt slot=3 command=E2 84 skip=9 bytes=6 text=변경?
+7/S7021.DAT 0x48190 prompt slot=4 command=E2 85 skip=9 bytes=6 text=변경?
+7/S7021.DAT 0x4829E prompt slot=5 command=E2 86 skip=9 bytes=6 text=변경?
+7/S7021.DAT 0x483AC prompt slot=6 command=E2 87 skip=9 bytes=6 text=변경?
+7/S7021.DAT 0x48D26 prompt slot=7 command=E2 88 skip=17 bytes=12 text=출전할까요?
+7/S7021.DAT 0x48EA4:1 option slot=8 command=E2 89 skip=1 bytes=4 text=아크
+7/S7021.DAT 0x48EA4:2 option slot=9 command=E2 8A skip=1 bytes=6 text=쿠쿠루
+7/S7021.DAT 0x4908E:1 option slot=10 command=E2 8B skip=0 bytes=4 text=포코
+7/S7021.DAT 0x4916C:2 option slot=11 command=E2 8C skip=3 bytes=6 text=아니오
+7/S7021.DAT 0x4921C:4 option slot=12 command=E2 8D skip=3 bytes=6 text=나간다
+7/S7021.DAT 0x4929E:2 option slot=13 command=E2 8E skip=2 bytes=6 text=아니오
+7/S7022.DAT 0x47FCE prompt slot=0 command=E2 81 skip=9 bytes=6 text=변경?
+7/S7022.DAT 0x480DC prompt slot=1 command=E2 82 skip=7 bytes=6 text=변경?
+7/S7022.DAT 0x481E8 prompt slot=2 command=E2 83 skip=5 bytes=6 text=변경?
+7/S7022.DAT 0x482F2 prompt slot=3 command=E2 84 skip=5 bytes=6 text=변경?
+7/S7022.DAT 0x483FC prompt slot=4 command=E2 85 skip=5 bytes=6 text=변경?
+7/S7022.DAT 0x48506 prompt slot=5 command=E2 86 skip=5 bytes=6 text=변경?
+7/S7022.DAT 0x48610 prompt slot=6 command=E2 87 skip=10 bytes=6 text=변경?
+7/S7022.DAT 0x489B6 prompt slot=7 command=E2 88 skip=22 bytes=12 text=1회전 준비?
+7/S7022.DAT 0x489B6:2 option slot=8 command=E2 89 skip=2 bytes=10 text=아직입니다
+7/S7022.DAT 0x49196 prompt slot=9 command=E2 8A skip=16 bytes=10 text=처음부터?
+7/S7023.DAT 0x47D58 prompt slot=0 command=E2 81 skip=9 bytes=6 text=변경?
+7/S7023.DAT 0x47E66 prompt slot=1 command=E2 82 skip=7 bytes=6 text=변경?
+7/S7023.DAT 0x47F72 prompt slot=2 command=E2 83 skip=9 bytes=6 text=변경?
+7/S7023.DAT 0x48080 prompt slot=3 command=E2 84 skip=7 bytes=6 text=변경?
+7/S7023.DAT 0x4818C prompt slot=4 command=E2 85 skip=4 bytes=6 text=변경?
+7/S7023.DAT 0x48296 prompt slot=5 command=E2 86 skip=5 bytes=6 text=변경?
+7/S7023.DAT 0x483A0 prompt slot=6 command=E2 87 skip=9 bytes=6 text=변경?
+7/S7023.DAT 0x48A4E prompt slot=7 command=E2 88 skip=22 bytes=12 text=2회전 준비?
+7/S7023.DAT 0x48A4E:2 option slot=8 command=E2 89 skip=2 bytes=10 text=아직입니다
+7/S7023.DAT 0x491C6 prompt slot=9 command=E2 8A skip=16 bytes=10 text=처음부터?
+7/S7023.DAT 0x4922C prompt slot=10 command=E2 8B skip=24 bytes=11 text=1회전부터?
+7/S7024.DAT 0x47D58 prompt slot=0 command=E2 81 skip=9 bytes=6 text=변경?
+7/S7024.DAT 0x47E66 prompt slot=1 command=E2 82 skip=7 bytes=6 text=변경?
+7/S7024.DAT 0x47F72 prompt slot=2 command=E2 83 skip=5 bytes=6 text=변경?
+7/S7024.DAT 0x4807C prompt slot=3 command=E2 84 skip=5 bytes=6 text=변경?
+7/S7024.DAT 0x48186 prompt slot=4 command=E2 85 skip=10 bytes=6 text=변경?
+7/S7024.DAT 0x48296 prompt slot=5 command=E2 86 skip=5 bytes=6 text=변경?
+7/S7024.DAT 0x483A0 prompt slot=6 command=E2 87 skip=10 bytes=6 text=변경?
+7/S7024.DAT 0x48AAE prompt slot=7 command=E2 88 skip=23 bytes=13 text=준결승 준비?
+7/S7024.DAT 0x48AAE:2 option slot=8 command=E2 89 skip=2 bytes=10 text=아직입니다
+7/S7024.DAT 0x4922A prompt slot=9 command=E2 8A skip=16 bytes=10 text=처음부터?
+7/S7024.DAT 0x49290 prompt slot=10 command=E2 8B skip=24 bytes=11 text=1회전부터?
+7/S7025.DAT 0x47FDC prompt slot=0 command=E2 81 skip=9 bytes=6 text=변경?
+7/S7025.DAT 0x480EA prompt slot=1 command=E2 82 skip=6 bytes=6 text=변경?
+7/S7025.DAT 0x481F6 prompt slot=2 command=E2 83 skip=8 bytes=6 text=변경?
+7/S7025.DAT 0x48304 prompt slot=3 command=E2 84 skip=3 bytes=6 text=변경?
+7/S7025.DAT 0x4840C prompt slot=4 command=E2 85 skip=10 bytes=6 text=변경?
+7/S7025.DAT 0x4851C prompt slot=5 command=E2 86 skip=2 bytes=6 text=변경?
+7/S7025.DAT 0x48624 prompt slot=6 command=E2 87 skip=10 bytes=6 text=변경?
+7/S7025.DAT 0x48AC2 prompt slot=7 command=E2 88 skip=21 bytes=11 text=결승 준비?
+7/S7025.DAT 0x48AC2:2 option slot=8 command=E2 89 skip=2 bytes=10 text=아직입니다
+7/S7025.DAT 0x4923A prompt slot=9 command=E2 8A skip=16 bytes=10 text=처음부터?
+7/S7025.DAT 0x492A0 prompt slot=10 command=E2 8B skip=24 bytes=11 text=1회전부터?
+7/S7026.DAT 0x48006 prompt slot=0 command=E2 81 skip=6 bytes=6 text=변경?
+7/S7026.DAT 0x48112 prompt slot=1 command=E2 82 skip=6 bytes=6 text=변경?
+7/S7026.DAT 0x4821E prompt slot=2 command=E2 83 skip=10 bytes=6 text=변경?
+7/S7026.DAT 0x4832E prompt slot=3 command=E2 84 skip=9 bytes=6 text=변경?
+7/S7026.DAT 0x4843C prompt slot=4 command=E2 85 skip=7 bytes=6 text=변경?
+7/S7026.DAT 0x48548 prompt slot=5 command=E2 86 skip=3 bytes=6 text=변경?
+7/S7026.DAT 0x48650 prompt slot=6 command=E2 87 skip=10 bytes=6 text=변경?
+7/S7026.DAT 0x48D28 prompt slot=7 command=E2 88 skip=27 bytes=13 text=오브전 준비?
+7/S7026.DAT 0x48D28:2 option slot=8 command=E2 89 skip=2 bytes=10 text=아직입니다
+7/S7026.DAT 0x494A6 prompt slot=9 command=E2 8A skip=16 bytes=10 text=처음부터?
+7/S7026.DAT 0x4950C prompt slot=10 command=E2 8B skip=24 bytes=11 text=1회전부터?
+7/S7028.DAT 0x46D58 prompt slot=0 command=E2 81 skip=9 bytes=6 text=변경?
+7/S7028.DAT 0x46E66 prompt slot=1 command=E2 82 skip=7 bytes=6 text=변경?
+7/S7028.DAT 0x46F72 prompt slot=2 command=E2 83 skip=6 bytes=6 text=변경?
+7/S7028.DAT 0x4707E prompt slot=3 command=E2 84 skip=10 bytes=6 text=변경?
+7/S7028.DAT 0x4718E prompt slot=4 command=E2 85 skip=10 bytes=6 text=변경?
+7/S7028.DAT 0x4729E prompt slot=5 command=E2 86 skip=2 bytes=6 text=변경?
+7/S7028.DAT 0x473A6 prompt slot=6 command=E2 87 skip=7 bytes=6 text=변경?
+7/S7028.DAT 0x48028 prompt slot=7 command=E2 88 skip=17 bytes=12 text=출전할까요?
+7/S7028.DAT 0x482EE:1 option slot=8 command=E2 89 skip=1 bytes=4 text=아크
+7/S7028.DAT 0x482EE:2 option slot=9 command=E2 8A skip=1 bytes=6 text=쿠쿠루
+7/S7028.DAT 0x484D8:1 option slot=10 command=E2 8B skip=0 bytes=4 text=포코
+7/S7028.DAT 0x485B6:2 option slot=11 command=E2 8C skip=3 bytes=6 text=아니오
+7/S7028.DAT 0x48666:4 option slot=12 command=E2 8D skip=3 bytes=6 text=나간다
+7/S7028.DAT 0x486E8:2 option slot=13 command=E2 8E skip=2 bytes=6 text=아니오
+7/S7028.DAT 0x48B70 prompt slot=14 command=E2 8F skip=19 bytes=13 text=정말 할까요?
+8/S8013.DAT 0x47996:3 option slot=0 command=E2 81 skip=8 bytes=11 text=정령수 정보
+8/S8013.DAT 0x47A12:1 option slot=1 command=E2 82 skip=5 bytes=9 text=포코 악기
+8/S8013.DAT 0x47A12:2 option slot=2 command=E2 83 skip=2 bytes=6 text=투기장
+8/S8013.DAT 0x47AFC:1 option slot=3 command=E2 84 skip=5 bytes=9 text=포코 악기
+8/S8013.DAT 0x47AFC:2 option slot=4 command=E2 85 skip=2 bytes=6 text=투기장
+8/S8013.DAT 0x47B6E:1 option slot=5 command=E2 86 skip=7 bytes=11 text=라마다 수행
+B/SB071.DAT 0x47EA6 prompt slot=0 command=E2 81 skip=10 bytes=10 text=괜찮을까?
+C1/SC011.DAT 0x46DE6 prompt slot=0 command=E2 81 skip=11 bytes=6 text=전투?
+C1/SC011.DAT 0x46E48 prompt slot=1 command=E2 82 skip=11 bytes=6 text=전투?
+C1/SC011.DAT 0x46EAA prompt slot=2 command=E2 83 skip=12 bytes=6 text=전투?
+C1/SC011.DAT 0x46F0E prompt slot=3 command=E2 84 skip=14 bytes=6 text=전투?
+C1/SC011.DAT 0x46F74 prompt slot=4 command=E2 85 skip=12 bytes=6 text=전투?
+C1/SC011.DAT 0x46FD8 prompt slot=5 command=E2 86 skip=4 bytes=6 text=전투?
+C1/SC011.DAT 0x47034 prompt slot=6 command=E2 87 skip=7 bytes=6 text=할까?
+C1/SC011.DAT 0x47034:1 option slot=7 command=E2 88 skip=0 bytes=4 text=한다
+C1/SC021.DAT 0x46DE6 prompt slot=0 command=E2 81 skip=11 bytes=6 text=전투?
+C1/SC021.DAT 0x46E48 prompt slot=1 command=E2 82 skip=11 bytes=6 text=전투?
+C1/SC021.DAT 0x46EAA prompt slot=2 command=E2 83 skip=12 bytes=6 text=전투?
+C1/SC021.DAT 0x46F0E prompt slot=3 command=E2 84 skip=14 bytes=6 text=전투?
+C1/SC021.DAT 0x46F74 prompt slot=4 command=E2 85 skip=12 bytes=6 text=전투?
+C1/SC021.DAT 0x46FD8 prompt slot=5 command=E2 86 skip=4 bytes=6 text=전투?
+C1/SC021.DAT 0x47034 prompt slot=6 command=E2 87 skip=7 bytes=6 text=할까?
+C1/SC021.DAT 0x47034:1 option slot=7 command=E2 88 skip=0 bytes=4 text=한다
+C1/SC031.DAT 0x46DE6 prompt slot=0 command=E2 81 skip=11 bytes=6 text=전투?
+C1/SC031.DAT 0x46E48 prompt slot=1 command=E2 82 skip=11 bytes=6 text=전투?
+C1/SC031.DAT 0x46EAA prompt slot=2 command=E2 83 skip=12 bytes=6 text=전투?
+C1/SC031.DAT 0x46F0E prompt slot=3 command=E2 84 skip=14 bytes=6 text=전투?
+C1/SC031.DAT 0x46F74 prompt slot=4 command=E2 85 skip=12 bytes=6 text=전투?
+C1/SC031.DAT 0x46FD8 prompt slot=5 command=E2 86 skip=4 bytes=6 text=전투?
+C1/SC031.DAT 0x47034 prompt slot=6 command=E2 87 skip=7 bytes=6 text=할까?
+C1/SC031.DAT 0x47034:1 option slot=7 command=E2 88 skip=0 bytes=4 text=한다
+C1/SC041.DAT 0x46DE6 prompt slot=29 command=E2 9E skip=11 bytes=6 text=전투?
+C1/SC041.DAT 0x46E48 prompt slot=30 command=E2 9F skip=11 bytes=6 text=전투?
+C1/SC041.DAT 0x46EAA prompt slot=31 command=E2 A0 skip=12 bytes=6 text=전투?
+C1/SC041.DAT 0x46F0E prompt slot=32 command=E2 A1 skip=14 bytes=6 text=전투?
+C1/SC041.DAT 0x46F74 prompt slot=33 command=E2 A2 skip=12 bytes=6 text=전투?
+C1/SC041.DAT 0x46FD8 prompt slot=34 command=E2 A3 skip=4 bytes=6 text=전투?
+C1/SC041.DAT 0x47034 prompt slot=35 command=E2 A4 skip=7 bytes=6 text=할까?
+C1/SC041.DAT 0x47034:1 option slot=36 command=E2 A5 skip=0 bytes=4 text=한다
+C1/SC051.DAT 0x46DE6 prompt slot=0 command=E2 81 skip=11 bytes=6 text=전투?
+C1/SC051.DAT 0x46E48 prompt slot=1 command=E2 82 skip=11 bytes=6 text=전투?
+C1/SC051.DAT 0x46EAA prompt slot=2 command=E2 83 skip=12 bytes=6 text=전투?
+C1/SC051.DAT 0x46F0E prompt slot=3 command=E2 84 skip=14 bytes=6 text=전투?
+C1/SC051.DAT 0x46F74 prompt slot=4 command=E2 85 skip=12 bytes=6 text=전투?
+C1/SC051.DAT 0x46FD8 prompt slot=5 command=E2 86 skip=4 bytes=6 text=전투?
+C1/SC051.DAT 0x47034 prompt slot=6 command=E2 87 skip=7 bytes=6 text=할까?
+C1/SC051.DAT 0x47034:1 option slot=7 command=E2 88 skip=0 bytes=4 text=한다
+C1/SC061.DAT 0x46DE6 prompt slot=5 command=E2 86 skip=11 bytes=6 text=전투?
+C1/SC061.DAT 0x46E48 prompt slot=6 command=E2 87 skip=11 bytes=6 text=전투?
+C1/SC061.DAT 0x46EAA prompt slot=7 command=E2 88 skip=12 bytes=6 text=전투?
+C1/SC061.DAT 0x46F0E prompt slot=8 command=E2 89 skip=14 bytes=6 text=전투?
+C1/SC061.DAT 0x46F74 prompt slot=9 command=E2 8A skip=12 bytes=6 text=전투?
+C1/SC061.DAT 0x46FD8 prompt slot=10 command=E2 8B skip=4 bytes=6 text=전투?
+C1/SC061.DAT 0x47034 prompt slot=11 command=E2 8C skip=7 bytes=6 text=할까?
+C1/SC061.DAT 0x47034:1 option slot=12 command=E2 8D skip=0 bytes=4 text=한다
+C1/SC081.DAT 0x46DE6 prompt slot=7 command=E2 88 skip=11 bytes=6 text=전투?
+C1/SC081.DAT 0x46E48 prompt slot=8 command=E2 89 skip=11 bytes=6 text=전투?
+C1/SC081.DAT 0x46F70 prompt slot=9 command=E2 8A skip=12 bytes=6 text=전투?
+C1/SC081.DAT 0x46FD4 prompt slot=10 command=E2 8B skip=4 bytes=6 text=전투?
+C1/SC081.DAT 0x47030 prompt slot=11 command=E2 8C skip=4 bytes=4 text=갈까
+C1/SC081.DAT 0x47030:1 option slot=12 command=E2 8D skip=0 bytes=4 text=간다
+C1/SC091.DAT 0x46DE6 prompt slot=0 command=E2 81 skip=7 bytes=10 text=준비됐나?
+C1/SC091.DAT 0x46E44 prompt slot=1 command=E2 82 skip=6 bytes=9 text=맡겨 두게
+C1/SC091.DAT 0x46F04 prompt slot=2 command=E2 83 skip=7 bytes=6 text=전투?
+C1/SC091.DAT 0x46FC0 prompt slot=3 command=E2 84 skip=4 bytes=6 text=전투?
+C1/SC091.DAT 0x4701C prompt slot=4 command=E2 85 skip=12 bytes=6 text=할까?
+C1/SC091.DAT 0x4701C:1 option slot=5 command=E2 86 skip=0 bytes=4 text=한다
+C2/SC0A1.DAT 0x46DE6 prompt slot=0 command=E2 81 skip=11 bytes=6 text=전투?
+C2/SC0A1.DAT 0x46E48 prompt slot=1 command=E2 82 skip=5 bytes=6 text=전투?
+C2/SC0A1.DAT 0x46EA4 prompt slot=2 command=E2 83 skip=4 bytes=6 text=전투?
+C2/SC0A1.DAT 0x46F00 prompt slot=3 command=E2 84 skip=14 bytes=6 text=전투?
+C2/SC0A1.DAT 0x46F66 prompt slot=4 command=E2 85 skip=12 bytes=6 text=전투?
+C2/SC0A1.DAT 0x46FCA prompt slot=5 command=E2 86 skip=4 bytes=6 text=전투?
+C2/SC0A1.DAT 0x47026 prompt slot=6 command=E2 87 skip=7 bytes=6 text=할까?
+C2/SC0A1.DAT 0x47026:1 option slot=7 command=E2 88 skip=0 bytes=4 text=한다
+21/S2013.DAT 0x478C6 dialogue slot=0 command=E2 81 skip=38 bytes=70 text=병사: 국왕 폐하께서 기대하고 계신다. 좋은 결과를 가지고 돌아오도록.
+31/S3011.DAT 0x47FEE dialogue slot=0 command=E2 81 skip=40 bytes=75 text=병사: 스메리아에서 오신 사절단을 맞이합니다. 군 본부까지 안내하겠습니다.

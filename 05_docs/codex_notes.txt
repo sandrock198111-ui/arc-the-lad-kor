@@ -477,3 +477,11 @@ Whole-game choice coverage - 2026-07-16
 - Korean choice payloads remain inline and use the original body boundaries. Prompts and options are laid out vertically with no more than four visible rows.
 - Fixed-capacity quiz menus in `6/S6054.DAT` cannot accept full long-form Korean names. Use the reviewed short labels in the v0.21 manifest; do not allocate unverified one-byte Hangul aliases or overwrite shared low-code glyphs.
 - Original digits use one-byte codes `0x11-0x1A`. Reusing those codes in numeric Korean choices saves capacity without changing the shared font.
+
+Choice geometry and full E5 classification - 2026-07-17
+- Preserving only the E5 marker values and order is insufficient. The raw byte positions of every E5 and E6 control are part of the menu geometry and can determine cursor placement and branch behavior.
+- v0.21 moved E5/E6 positions in 243 real choices while reflowing Korean text. The visible Choppin blank-option regression at `21/S2042.DAT 0x47FF0` is explained by E5 positions moving from source 27/38 to 26/36.
+- The safe reconstruction model is source geometry plus Korean text: begin with the clean original body, keep every E5/E6 at its original raw offset, place fitting options inline, and use external E2 strings only where the original segment has room for the two-byte command.
+- `21/S2042.DAT 0x47FF0` and verified `31/S3012.DAT 0x47FF0` now share E5 positions 27/38 and E6 positions 5/25/36.
+- The whole corpus contains 358 E5 candidates: 265 real high-confidence choices and 93 medium-confidence false positives from repeated binary/external tables. The 93 false positives must not be translated or structurally rewritten.
+- When validating a choice batch, compare parsed E5 and E6 `(offset,value)` pairs against the clean source, not merely marker counts or values. Also verify every external slot tail and reject any byte change outside declared body/slot ranges.

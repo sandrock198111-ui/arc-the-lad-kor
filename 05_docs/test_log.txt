@@ -1128,3 +1128,15 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - ZIP readback: PASS. 76 unique cumulative entries are sorted and read back byte-identically.
 - Reproducibility: PASS. Consecutive builds produced SHA256 `A050991D8D4400081689A6F72F730E2221AE328DF74D7D971B9CC5EAFA1D4C4E`.
 - Runtime status: pending verification of representative two-, three-, and four-option menus and their branch destinations.
+
+2026-07-17 - Dialogue and choice-geometry repair v0.22
+- Input: v0.21 cumulative ZIP, SHA256 `A050991D8D4400081689A6F72F730E2221AE328DF74D7D971B9CC5EAFA1D4C4E`.
+- E5 census: PASS. 358 total candidates classify as 265 real high-confidence choices and 93 medium-confidence binary false positives.
+- Geometry audit: PASS. 243 bodies are reconstructed with source-exact E5/E6 positions; 22 accepted bodies are preserved. Audit failures: zero.
+- Choppin regression: PASS statically. `21/S2042.DAT 0x47FF0` now matches the proven `31/S3012.DAT` hybrid geometry: E5 27/38 and E6 5/25/36.
+- External slots: PASS. 222 allocations have zero-filled tails, correct terminators, and matching skip metadata.
+- Isolation: PASS. Independent comparison reports zero changed bytes outside the 243 repaired bodies, 222 allocated 128-byte slots, and two ordinary-dialogue E2 commands.
+- Ordinary dialogues: PASS statically. S2013 `0x478C6` and S3011 `0x47FEE` use valid E2 commands and retain their `00 00` boundaries.
+- Font/cursor: PASS. No glyphs are added and the battle cursor is byte-identical to v0.21.
+- Syntax/ZIP/reproducibility: PASS. Builder compiles, ZIP readback succeeds, and repeated builds produce SHA256 `C5005057BF77F51912A93E5FB4C4EA3F1368BD2CDA6C5A02BF32E55F531254C4`.
+- Runtime status: pending user packaging. Verify the Choppin two-option menu cursor and both branches first, then representative multi-option menus and the two added guard dialogues.

@@ -1206,3 +1206,10 @@ story_test_23 S1072 안전 경계 기준
 - Every rebuilt menu uses at most four visible rows, contains no Japanese text in its Korean translation field, fits its original capacity, and preserves the original marker sequence and `00 00` boundary.
 - No new glyph slot is allocated. Existing safe Korean glyphs and the original one-byte digit codes are used.
 - Candidate output: `03_output/story_all_choices_v21_cumulative_patch_only.zip`, SHA256 `A050991D8D4400081689A6F72F730E2221AE328DF74D7D971B9CC5EAFA1D4C4E`. Runtime choice-cursor and branch verification is pending.
+
+2026-07-17 dialogue and choice-geometry repair candidate v0.22:
+- A complete E5 scan classifies 358 candidates as 265 real high-confidence choices and 93 medium-confidence binary false positives. The false positives are not rewritten.
+- v0.21 preserved marker values but moved the raw E5/E6 positions in 243 real choice bodies. v0.22 reconstructs those bodies from the clean source, restores the original E5/E6 geometry, and keeps the Korean prompt/options through inline text or verified E2 slots.
+- The broken Choppin menu at `21/S2042.DAT 0x47FF0` now has the same proven hybrid layout as `31/S3012.DAT 0x47FF0`: E5 positions 27/38 and E6 positions 5/25/36.
+- Added two live-identified ordinary dialogues: the S2013 king-expectation guard line and the S3011 Smaria delegation escort line.
+- Candidate output: `03_output/story_dialogue_choice_structure_v22_cumulative_patch_only.zip`, SHA256 `C5005057BF77F51912A93E5FB4C4EA3F1368BD2CDA6C5A02BF32E55F531254C4`. Static isolation and deterministic rebuild checks pass; runtime menu cursor/branch verification remains pending.
