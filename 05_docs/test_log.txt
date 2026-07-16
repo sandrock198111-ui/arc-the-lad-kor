@@ -1094,3 +1094,9 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Font/cursor: PASS. Ten safe glyphs were added; the confirmed battle-cursor texture bytes are unchanged.
 - Reproducibility: PASS. Two consecutive builds produced SHA256 `5558DAE42D6EBD0CED2DA238512F30EE451007E731F7E9B4A5CC5E591A77A171`.
 - Runtime status: pending user packaging and verification of slot-1 portrait/text, the S3031 general-room sequence, and the S2012 guard response.
+
+2026-07-16 - Live S2013 scene identification
+- Method: captured all three DuckStation PS1 RAM candidates without GDB and ranked their `0x117000-0x1176FF` script windows against both clean `01_work` DATs and `E:/arc/out`.
+- Active mirrors: two live mirrors match `21/S2013.DAT` at 1792/1792 bytes. The third `S2061` mirror is a serialized/stale state copy and is not the displayed scene.
+- Visual confirmation: DuckStation shows `王はお前に期待しておられる。良い結果を持ち帰るのだぞ。`, exactly S2013 payload `0x478C6`.
+- Patch status: `E:/arc/out/21/S2013.DAT` is SHA256-identical to the clean original and S2013 is absent from v0.19. The apparent Korean `대대:` is original speaker label `兵士` rendered through overwritten shared glyph slots, not translated text.

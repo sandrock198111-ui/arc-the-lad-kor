@@ -453,3 +453,8 @@ Minister title/name rule and legacy-offset repair - 2026-07-16
 - Historical `story_s3011_s3022_sc011_bulk_translation.csv` contains several payload offsets that differ by two bytes from the final high-confidence corpus, including `S3022 0x48A4E` versus exact payload start `0x48A50`. Fixed-capacity replacement at the stale offset can overwrite prefix/control bytes and produce truncated text or portrait/tile corruption.
 - When upgrading a legacy inline file with stale offsets, do not layer E2 over the modified file. Reconstruct the target from the clean original, reinsert every verified body at exact corpus starts, and explicitly preserve any interactive choice ranges.
 - v0.19 applies this clean rebuild to S3022 and S3031. Its builder permits differences only in external slot banks, two-byte E2 commands, and the verified S3022 choice range.
+
+Live S2013 identification - 2026-07-16
+- Current active DuckStation RAM mirrors match `21/S2013.DAT` exactly at the 1792-byte script window; the displayed first body is file payload `0x478C6`.
+- S2013 is not included in v0.19 and `E:/arc/out/21/S2013.DAT` remains byte-identical to the clean original.
+- Japanese speaker glyphs can resemble arbitrary Korean after COMM font expansion. In this scene the visible `대대:` is the original `兵士`, so visual Korean-looking syllables alone must not be classified as translated payloads.
