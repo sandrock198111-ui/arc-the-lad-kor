@@ -1165,3 +1165,11 @@ story_test_23 S1072 안전 경계 기준
 - The visible S1021 `0x481F0` probe is now the contextual line about discovering why Arc's father disappeared; S1022 `0x479A2` is now the departure explanation about going to Palencia after the king's summons.
 - Candidate output: `03_output/story_intro_complete_e2_v16_cumulative_patch_only.zip`, SHA256 `61D58B4640BC03C581AEF9785EA95B87BA183568835FB2D4F62A695F3A23F762`.
 - Static checks pass for 103/103 corpus coverage, 100 unique E2 slots, three preserved choice structures, 314 rendered characters, zero glyph-index collisions, exact cursor preservation, zero old structural-probe phrases in the four corrected files, and deterministic rebuilds. Runtime verification is pending.
+
+2026-07-16 verified short/return coverage candidate v0.17:
+- Fresh slots map exactly to the missed sources: slot 1 uses `D/SD011.DAT`, slot 2 uses `1/S1051.DAT`, and slot 4 uses `23/S2061.DAT`. The visible one-character `가` at S2061 `0x485DC` replaced an original one-byte `!`; it is restored because a two-byte E2 command cannot fit that body safely.
+- Added 34 E2 translations: four live-confirmed house-return exceptions, three reed-battle aftermath lines in `SF0D1`, eleven cave-event lines in `SF091`, and sixteen post-battle cutscene lines in `S2081/S2082`.
+- `S1051` and `SD031` are restored to their working originals. Their cumulative differences came only from historical speculative auto-placeholders whose runtime-source claims were retracted.
+- The already verified pre-cave `S2053` and post-cave throne-room `SF0B1` files are byte-identical to v0.16.
+- Candidate output: `03_output/story_verified_returns_e2_v17_cumulative_patch_only.zip`, SHA256 `0CC3244DDE10CD8267248E984151DFA89BA788FCDE7C7A39C38B82E9A5E5CCDD`.
+- Static validation passes for 39 unique game files, 34 E2 slots and metadata records, one exact short restore, two restored speculative files, zero active historical auto-probes, exact cursor preservation, and deterministic rebuilds. Runtime packaging verification remains pending.

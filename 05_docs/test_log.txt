@@ -1056,3 +1056,16 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Probe scan: PASS. Exact old `아크 / 마을로 가라`, `아크 / 마을로 돌아가라`, and `아크 / 가라` sequences are absent from the four corrected script regions.
 - Reproducibility: PASS. Consecutive builds produced SHA256 `61D58B4640BC03C581AEF9785EA95B87BA183568835FB2D4F62A695F3A23F762`.
 - Runtime status: pending user packaging and fresh verification of the previously failing house/snow sequence and menu choices.
+
+2026-07-16 - Verified short and return scenes E2 v0.17
+- Input: v0.16 cumulative ZIP, SHA256 `61D58B4640BC03C581AEF9785EA95B87BA183568835FB2D4F62A695F3A23F762`.
+- State mapping: PASS. Latest slot 1 maps to `D/SD011`, slot 2 to `S1051`, slot 3 to `S3041`, and slot 4 to `S2061`; slot 4's active script copy contains the modified one-byte body at file `0x485DC`.
+- Source check: PASS. S2061 `0x485DC` is original byte `02` (`!`), not Japanese prose meaning "go". It is restored instead of being expanded across its immediate `00 00` boundary.
+- Coverage: PASS. 35 manifest rows: 4 house-return exceptions, 1 one-byte reed reaction, 3 reed aftermath lines, 11 cave-event lines, and 16 post-battle cutscene lines.
+- E2 structure: PASS. All 34 commands, external payloads, zero terminators, original boundaries, and `capacity - 2` metadata bytes match the manifest.
+- Retraction cleanup: PASS. Output `S1051` and `SD031` are byte-identical to working originals; no accepted translation is represented by their removed speculative differences.
+- Regression: PASS. `S2053` and `SF0B1` remain byte-identical to v0.16. Exactly ten files change, the ZIP has 39 unique entries, and the confirmed battle-cursor pixels are unchanged.
+- Probe scan: PASS. No structurally active dialogue body in the cumulative DAT set begins with a historical auto-placeholder pattern.
+- Font: PASS. Added safe glyphs `샅` and `옛`; no occupied physical glyph index or cursor rectangle is reused.
+- Reproducibility: PASS. Consecutive builds produced SHA256 `0CC3244DDE10CD8267248E984151DFA89BA788FCDE7C7A39C38B82E9A5E5CCDD`.
+- Runtime status: pending user packaging and checks of house return, reed aftermath/cutscene, cave event, and post-cave throne-room continuation.

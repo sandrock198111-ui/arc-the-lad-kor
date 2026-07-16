@@ -430,3 +430,12 @@ Early bulk placeholder coverage correction - 2026-07-16
 - Those four files contain 103 high-confidence corpus bodies: 9, 50, 12, and 32 respectively. Runtime screenshots can therefore show old probes even when every v0.15 manifest row is correct.
 - S1023 choice bodies at `0x47952`, `0x47AB0`, and `0x47B30` contain `E5 03` markers. Do not route these bodies through the control-free E2 renderer; reconstruct them inline while preserving marker and line-break counts.
 - v0.16 replaces 100 normal bodies through E2 and three choice bodies inline. Exact old-probe scanning is now a required batch validation, in addition to manifest coverage.
+
+Short-body and return-scene completion rule - 2026-07-16
+- High-confidence corpus coverage is not a completion criterion by itself. Valid one-byte and extended-prefix bodies can be omitted by the standard parser, and historical auto-placeholder files can survive outside the newest manifest.
+- Latest slot 4 maps to `23/S2061.DAT`; RAM `0x117DDC` maps to file `0x485DC`. The original body is exactly one byte `02`, the verified Japanese exclamation glyph. The old bulk patch changed it to low-code `90` (`가`).
+- A one-byte body cannot contain the two-byte `E2 nn` command without overwriting its first `00 00` boundary. Restore the original punctuation unless a separately proven pointer relocation is implemented.
+- Reed-battle aftermath uses `F/SF0D1.DAT`. The following antagonist cutscenes use `23/S2081.DAT` and `23/S2082.DAT`; they were absent from the 14-file v0.15 range despite being present as old placeholder files in the cumulative ZIP.
+- The throne-room event split remains exact: pre-event `22/S2053.DAT`, cave/legend event `F/SF091.DAT`, post-event return `F/SF0B1.DAT`. v0.17 translates SF091 and preserves S2053/SF0B1 byte-for-byte.
+- `1/S1051.DAT` medium candidates are binary-like false positives, and the D/SD031 target claim was retracted. Their historical placeholder edits are removed by restoring the complete working originals.
+- Future batch completion requires both manifest/corpus coverage and an active-body scan for historical replacement prefixes. Raw placeholder bytes after a leading E2 command are inactive skipped tails and must not be mistaken for displayed text.
