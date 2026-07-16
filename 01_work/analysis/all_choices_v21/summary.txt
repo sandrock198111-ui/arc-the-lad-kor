@@ -1,0 +1,9 @@
+All choice body audit v0.21
+patch=03_output/story_choice_layout_v20_cumulative_patch_only.zip
+patch_sha256=213717051809418251E5765D3BC72983990ADEE7A147F004FE4E7F2276C14AF4
+choice_bodies=265
+choice_files=42
+currently_changed=16
+currently_original=249
+marker_mismatch=8
+marker_types={'E5_03': 674, 'E5_04': 15}

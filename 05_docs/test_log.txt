@@ -1116,3 +1116,15 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - ZIP readback: PASS. All 41 entries match the generated in-memory payloads.
 - Output SHA256: `213717051809418251E5765D3BC72983990ADEE7A147F004FE4E7F2276C14AF4`.
 - Runtime status: pending verification of selection cursor movement and menu progression.
+
+2026-07-16 - All-choice cumulative v0.21
+- Input: v0.20 cumulative ZIP, SHA256 `213717051809418251E5765D3BC72983990ADEE7A147F004FE4E7F2276C14AF4`.
+- Exhaustive scope: PASS. Manifest keys exactly equal all 265 high-confidence corpus bodies containing E5 controls across 42 files.
+- Translation coverage: PASS. 265/265 result bodies differ from their Japanese originals; Korean translation fields contain zero Japanese characters.
+- Controls: PASS. All 689 original E5 marker bytes are preserved in their original sequence. The eight historical `E5 03` to `E5 04` changes in S3022/SC011 are restored.
+- Capacity: PASS. All 257 rebuilt bodies fit their original fixed capacities with zero overflow; visible layout uses at most four rows.
+- Isolation: PASS. Each target file differs from the v0.20 input only inside declared choice ranges. All other cumulative files remain byte-identical.
+- Font/cursor: PASS. No new glyphs are allocated and the confirmed battle-cursor rectangle is unchanged.
+- ZIP readback: PASS. 76 unique cumulative entries are sorted and read back byte-identically.
+- Reproducibility: PASS. Consecutive builds produced SHA256 `A050991D8D4400081689A6F72F730E2221AE328DF74D7D971B9CC5EAFA1D4C4E`.
+- Runtime status: pending verification of representative two-, three-, and four-option menus and their branch destinations.

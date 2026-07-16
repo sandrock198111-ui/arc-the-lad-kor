@@ -392,3 +392,10 @@
 - Added `story_choice_layout_v20_translation.csv` and `build_story_choice_layout_v20.py`.
 - Reflowed the two S1023 help menus into one-column choices and shortened the S3012 Choppin prompt without modifying its option bytes.
 - Built `story_choice_layout_v20_cumulative_patch_only.zip`, SHA256 `213717051809418251E5765D3BC72983990ADEE7A147F004FE4E7F2276C14AF4`.
+
+2026-07-16
+- Added `audit_choice_bodies_v21.py`, identifying all 265 high-confidence E5 choice bodies across 42 files.
+- Added `plan_all_choice_translations_v21.py` and the complete `story_all_choices_v21_translation.csv` manifest.
+- Added `build_story_all_choices_v21.py`; it preserves eight verified choices, rewrites 257 choices, restores eight incorrect E5 marker types, and validates every original boundary and marker sequence.
+- Added 35 previously absent choice-bearing files to the cumulative replacement set without modifying bytes outside verified choice ranges.
+- Built `story_all_choices_v21_cumulative_patch_only.zip`, SHA256 `A050991D8D4400081689A6F72F730E2221AE328DF74D7D971B9CC5EAFA1D4C4E`.

@@ -1199,3 +1199,10 @@ story_test_23 S1072 안전 경계 기준
 - Twelve remaining files need either an extended text bank or control-preserving inline choices because their remaining body count exceeds their currently empty E2 slots.
 - v0.20 changes only `1/S1023.DAT` and `31/S3012.DAT`: both S1023 help pages become one-column choices while preserving E5 order, and the S3012 prompt becomes `초핀: 더 도와드릴까요?` without changing its two option byte ranges.
 - Candidate output: `03_output/story_choice_layout_v20_cumulative_patch_only.zip`, SHA256 `213717051809418251E5765D3BC72983990ADEE7A147F004FE4E7F2276C14AF4`. Runtime cursor/layout verification is pending.
+
+2026-07-16 all-choice cumulative candidate v0.21:
+- Exhaustive E5 audit found 265 high-confidence choice bodies in 42 files: 674 `E5 03` markers and 15 `E5 04` markers.
+- v0.20 had only 16 changed choice bodies. Eight were already valid and are preserved; 249 original bodies plus eight bodies with incorrect marker types are rebuilt, for 265/265 translated choices.
+- Every rebuilt menu uses at most four visible rows, contains no Japanese text in its Korean translation field, fits its original capacity, and preserves the original marker sequence and `00 00` boundary.
+- No new glyph slot is allocated. Existing safe Korean glyphs and the original one-byte digit codes are used.
+- Candidate output: `03_output/story_all_choices_v21_cumulative_patch_only.zip`, SHA256 `A050991D8D4400081689A6F72F730E2221AE328DF74D7D971B9CC5EAFA1D4C4E`. Runtime choice-cursor and branch verification is pending.
