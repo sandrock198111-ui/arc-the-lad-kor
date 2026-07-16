@@ -1153,8 +1153,15 @@ story_test_23 S1072 안전 경계 기준
 
 2026-07-16 house-to-throne full E2 candidate v0.15:
 - Scope is one continuous progression range: house (`SD011/S1041/SD012/SD013`), forest and field battle (`S1061/S2061`), city (`S2011/S2021`), palace guard (`S2031/S2033`), and throne room (`S2051/S2052/S2053/S2057`).
-- All 185 high-confidence dialogue bodies in these 14 files were translated from the Japanese corpus and moved to E2 secondary strings. Old structural probes such as `아크/가라` are no longer used in this range.
+- All 185 high-confidence dialogue bodies in these 14 files were translated from the Japanese corpus and moved to E2 secondary strings. This statement applies only to those 14 files; v0.15 did not replace earlier bulk placeholders in S1013/S1021/S1022/S1023.
 - The E2 bank supports 79 slots per file using disk IDs `81-A8` and `AA-D0`; original ID `A9` remains untouched. Forty-eight of the 185 lines exercise IDs above the old 16-slot range.
 - The batch uses 373 verified glyphs. All displayed planes match the renderer, exact cursor pixels are preserved, and the `DEFF/DF00` plus `DFFF/E000` glyph-index collisions were removed.
 - Candidate output: `03_output/story_house_to_throne_e2_v15_cumulative_patch_only.zip`, SHA256 `196AB88F3AAF7956D5194723498D791267662D405075880121276E4ABDAAAD68`.
 - Static structure, deterministic rebuild, payload, metadata, font, and cumulative-file checks pass. Runtime progression verification is still required before promotion to an accepted base.
+
+2026-07-16 intro placeholder completion candidate v0.16:
+- Runtime screenshots proved v0.15's scope was incomplete: old `아크 / 마을로 가라` and `아크 / 마을로 돌아가라` probes remained in `S1013/S1021/S1022/S1023` from the early auto-placeholder bulk.
+- Added all 103 high-confidence corpus bodies from those four files: 100 ordinary bodies use E2 secondary strings and three S1023 menus retain their original `E5 03` choice-marker counts and line-break counts inline.
+- The visible S1021 `0x481F0` probe is now the contextual line about discovering why Arc's father disappeared; S1022 `0x479A2` is now the departure explanation about going to Palencia after the king's summons.
+- Candidate output: `03_output/story_intro_complete_e2_v16_cumulative_patch_only.zip`, SHA256 `61D58B4640BC03C581AEF9785EA95B87BA183568835FB2D4F62A695F3A23F762`.
+- Static checks pass for 103/103 corpus coverage, 100 unique E2 slots, three preserved choice structures, 314 rendered characters, zero glyph-index collisions, exact cursor preservation, zero old structural-probe phrases in the four corrected files, and deterministic rebuilds. Runtime verification is pending.

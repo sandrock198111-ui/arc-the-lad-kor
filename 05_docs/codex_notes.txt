@@ -424,3 +424,9 @@ Glyph-index collision rule - 2026-07-16
 House-to-throne corpus coverage - 2026-07-16
 - The continuous target contains 185 high-confidence bodies in 14 files: SD011 10, S1041 31, SD012 3, SD013 6, S1061 25, S2061 17, S2011 7, S2021 12, S2031 1, S2033 11, S2051 22, S2052 21, S2053 9, and S2057 10.
 - All are represented in `story_house_to_throne_e2_translation.csv` and use control-free E2 strings with automatic wrapping.
+
+Early bulk placeholder coverage correction - 2026-07-16
+- Scene-range labels must be verified against every file changed by the historical auto-placeholder bulk. The v0.15 14-file manifest did not include `S1013/S1021/S1022/S1023`, which still held visible structural probes.
+- Those four files contain 103 high-confidence corpus bodies: 9, 50, 12, and 32 respectively. Runtime screenshots can therefore show old probes even when every v0.15 manifest row is correct.
+- S1023 choice bodies at `0x47952`, `0x47AB0`, and `0x47B30` contain `E5 03` markers. Do not route these bodies through the control-free E2 renderer; reconstruct them inline while preserving marker and line-break counts.
+- v0.16 replaces 100 normal bodies through E2 and three choice bodies inline. Exact old-probe scanning is now a required batch validation, in addition to manifest coverage.

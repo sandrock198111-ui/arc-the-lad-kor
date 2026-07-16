@@ -1,0 +1,113 @@
+1/S1013.DAT 0x478EA mode=e2 slot=0 command=E2 81 skip=34 bytes=50/127 text=모든 것은 시온산의 불꽃을 껐던 그날부터 시작됐어.
+1/S1013.DAT 0x47948 mode=e2 slot=1 command=E2 82 skip=32 bytes=51/127 text=그래서 이 불꽃을 다시 끄면 모든 게 끝날 것만 같아.
+1/S1013.DAT 0x479AC mode=e2 slot=2 command=E2 83 skip=8 bytes=12/127 text=쿠쿠루...
+1/S1013.DAT 0x47A1C mode=e2 slot=3 command=E2 84 skip=12 bytes=29/127 text=너와 헤어지고 싶지 않아...
+1/S1013.DAT 0x47A90 mode=e2 slot=4 command=E2 85 skip=6 bytes=17/127 text=쿠쿠루, 부탁해.
+1/S1013.DAT 0x47B2E mode=e2 slot=5 command=E2 86 skip=43 bytes=63/127 text=아크 데몬: 이번에야말로 성궤의 봉인을 풀 생각이구나, 용사여!
+1/S1013.DAT 0x47B8E mode=e2 slot=6 command=E2 87 skip=53 bytes=73/127 text=아크 데몬: 네놈을 내 손으로 죽여야만 삼천 년의 저주에서 벗어날 수 있다.
+1/S1013.DAT 0x47BF8 mode=e2 slot=7 command=E2 88 skip=32 bytes=43/127 text=아크 데몬: 성궤는 사르바시오 폭포에 있다.
+1/S1013.DAT 0x47C4C mode=e2 slot=8 command=E2 89 skip=26 bytes=34/127 text=아크 데몬: 그곳에서 결판을 내자.
+1/S1021.DAT 0x4785C mode=e2 slot=0 command=E2 81 skip=24 bytes=31/127 text=아이템이 있다. 약초를 찾았다.
+1/S1021.DAT 0x478AC mode=e2 slot=1 command=E2 82 skip=16 bytes=28/127 text=여기 있던 것은 이미 주웠다.
+1/S1021.DAT 0x47914 mode=e2 slot=2 command=E2 83 skip=21 bytes=29/127 text=아이템이 있다. 돌을 찾았다.
+1/S1021.DAT 0x47962 mode=e2 slot=3 command=E2 84 skip=17 bytes=28/127 text=여기 있던 돌은 이미 주웠다.
+1/S1021.DAT 0x479AA mode=e2 slot=4 command=E2 85 skip=35 bytes=44/127 text=이걸 던지면 웬만한 적은 쓰러뜨릴 수 있겠어.
+1/S1021.DAT 0x47A26 mode=e2 slot=5 command=E2 86 skip=9 bytes=13/127 text=어머니: 아!
+1/S1021.DAT 0x47A82 mode=e2 slot=6 command=E2 87 skip=28 bytes=36/127 text=아이템이 있다. 마법 카드를 찾았다.
+1/S1021.DAT 0x47AD6 mode=e2 slot=7 command=E2 88 skip=40 bytes=49/127 text=어머니: 그걸 가져가도 별로 좋은 일은 없을 텐데.
+1/S1021.DAT 0x47B34 mode=e2 slot=8 command=E2 89 skip=22 bytes=34/127 text=그렇진 않을 거야. 그럼 가져갈게.
+1/S1021.DAT 0x47B7E mode=e2 slot=9 command=E2 8A skip=36 bytes=44/127 text=어머니: 모처럼 준 거니까 꼭 장비해서 쓰렴.
+1/S1021.DAT 0x47BD8 mode=e2 slot=10 command=E2 8B skip=4 bytes=8/127 text=알았어.
+1/S1021.DAT 0x47C38 mode=e2 slot=11 command=E2 8C skip=18 bytes=36/127 text=아버지의 유품인 갑옷과 검을 찾았다.
+1/S1021.DAT 0x47CDE mode=e2 slot=12 command=E2 8D skip=36 bytes=51/127 text=어머니: 아버지의 갑옷과 검은 안쪽 방 상자에 있어.
+1/S1021.DAT 0x47D46 mode=e2 slot=13 command=E2 8E skip=16 bytes=24/127 text=엄마, 걱정하지 마...
+1/S1021.DAT 0x47D8A mode=e2 slot=14 command=E2 8F skip=34 bytes=37/127 text=어머니: 아크... 이것도 가져가렴.
+1/S1021.DAT 0x47DE4 mode=e2 slot=15 command=E2 90 skip=19 bytes=24/127 text=카이저 글러브를 받았다.
+1/S1021.DAT 0x47E30 mode=e2 slot=16 command=E2 91 skip=17 bytes=20/127 text=부활의 약을 받았다.
+1/S1021.DAT 0x47E7A mode=e2 slot=17 command=E2 92 skip=17 bytes=20/127 text=회복 열매를 받았다.
+1/S1021.DAT 0x47EC8 mode=e2 slot=18 command=E2 93 skip=12 bytes=15/127 text=성수를 받았다.
+1/S1021.DAT 0x47F0E mode=e2 slot=19 command=E2 94 skip=19 bytes=19/127 text=어머니: 아크...
+1/S1021.DAT 0x4807A mode=e2 slot=20 command=E2 95 skip=38 bytes=51/127 text=아버지의 갑옷과 검이 여기 있는 건 알고 있지만...
+1/S1021.DAT 0x480D6 mode=e2 slot=21 command=E2 96 skip=16 bytes=26/127 text=자물쇠가 잠겨 있다니...
+1/S1021.DAT 0x48148 mode=e2 slot=22 command=E2 97 skip=3 bytes=8/127 text=...!
+1/S1021.DAT 0x48196 mode=e2 slot=23 command=E2 98 skip=36 bytes=43/127 text=엄마, 그날 밤도 오늘처럼 눈보라가 심했지?
+1/S1021.DAT 0x481F0 mode=e2 slot=24 command=E2 99 skip=43 bytes=73/127 text=오늘 밤 산에 가면 아버지가 우리를 두고 사라진 이유를 알 수 있을 것 같아.
+1/S1021.DAT 0x48250 mode=e2 slot=25 command=E2 9A skip=33 bytes=37/127 text=어머니: 네 아버지는... 죽었단다.
+1/S1021.DAT 0x482A8 mode=e2 slot=26 command=E2 9B skip=43 bytes=67/127 text=아버지가 죽었다니 거짓말이야! 그렇게 강한 분이 쉽게 죽을 리 없어.
+1/S1021.DAT 0x48308 mode=e2 slot=27 command=E2 9C skip=33 bytes=45/127 text=어머니: 산에는 분명 무서운 괴물이 있어...
+1/S1021.DAT 0x48360 mode=e2 slot=28 command=E2 9D skip=48 bytes=45/127 text=괴물이 아버지를 죽였다면 내가 원수를 갚겠어!
+1/S1021.DAT 0x483C6 mode=e2 slot=29 command=E2 9E skip=30 bytes=41/127 text=엄마... 내 눈으로 직접 확인하고 싶어.
+1/S1021.DAT 0x48420 mode=e2 slot=30 command=E2 9F skip=15 bytes=19/127 text=어머니: 아크...
+1/S1021.DAT 0x48496 mode=e2 slot=31 command=E2 A0 skip=7 bytes=10/127 text=엄마...
+1/S1021.DAT 0x48512 mode=e2 slot=32 command=E2 A1 skip=40 bytes=61/127 text=어머니: 그이가 떠난 지 십 년... 결국 그이 말대로 됐구나.
+1/S1021.DAT 0x485E8 mode=e2 slot=33 command=E2 A2 skip=31 bytes=38/127 text=어머니: 여보... 정말 가야만 해요?
+1/S1021.DAT 0x4863C mode=e2 slot=34 command=E2 A3 skip=41 bytes=60/127 text=아버지: 이해해 줘, 포르타. 이 세계의 운명이 걸린 일이야.
+1/S1021.DAT 0x4869A mode=e2 slot=35 command=E2 A4 skip=42 bytes=65/127 text=어머니: 왜 당신이어야 해요...? 나와 아크는 어떻게 하라고요?
+1/S1021.DAT 0x486F8 mode=e2 slot=36 command=E2 A5 skip=34 bytes=44/127 text=아버지: 미안하오. 하지만 내가 아니면...
+1/S1021.DAT 0x4874E mode=e2 slot=37 command=E2 A6 skip=32 bytes=52/127 text=어머니: 싫어요! 난 평범한 행복만 있으면 돼요...
+1/S1021.DAT 0x487A2 mode=e2 slot=38 command=E2 A7 skip=65 bytes=88/127 text=아버지: 십 년 뒤 오늘, 봉인이 풀리고 산이 다시 날뛸 거다. 그때 아크는 산으로 향한다.
+1/S1021.DAT 0x48818 mode=e2 slot=39 command=E2 A8 skip=14 bytes=26/127 text=어머니: 산이 날뛴다고요?
+1/S1021.DAT 0x4885A mode=e2 slot=40 command=E2 AA skip=34 bytes=38/127 text=아버지: 봉인됐던 괴물이 나타날 거다.
+1/S1021.DAT 0x488B0 mode=e2 slot=41 command=E2 AB skip=36 bytes=63/127 text=어머니: 그런 곳에 아크를 보내다니... 그만하세요! 전부 다!
+1/S1021.DAT 0x48908 mode=e2 slot=42 command=E2 AC skip=39 bytes=58/127 text=아버지: 포르타... 그날까지 우리 아이 아크를 부탁하오!
+1/S1021.DAT 0x48A4E mode=e2 slot=43 command=E2 AD skip=19 bytes=30/127 text=아버지의 유품을 장비해야겠어.
+1/S1021.DAT 0x48AC6 mode=e2 slot=44 command=E2 AE skip=24 bytes=42/127 text=아버지의 유품은 안쪽 방 상자에 있을 거야.
+1/S1021.DAT 0x48B14 mode=e2 slot=45 command=E2 AF skip=39 bytes=66/127 text=말을 걸거나 물건을 찾을 때는 가까이 다가가 결정 버튼을 누르면 돼.
+1/S1021.DAT 0x48C34 mode=e2 slot=46 command=E2 B0 skip=20 bytes=34/127 text=이번만큼은 내 힘으로 해내고 싶어.
+1/S1021.DAT 0x48C88 mode=e2 slot=47 command=E2 B1 skip=12 bytes=30/127 text=엄마에게 한마디 하고 가야 해.
+1/S1021.DAT 0x48CF8 mode=e2 slot=48 command=E2 B2 skip=39 bytes=66/127 text=말을 걸거나 물건을 찾을 때는 가까이 다가가 결정 버튼을 누르면 돼.
+1/S1021.DAT 0x48DA6 mode=e2 slot=49 command=E2 B3 skip=26 bytes=42/127 text=어머니: 요슈아, 아크를 지켜 주세요...
+1/S1022.DAT 0x4789A mode=e2 slot=0 command=E2 81 skip=13 bytes=22/127 text=그럼 엄마, 다녀올게.
+1/S1022.DAT 0x478DC mode=e2 slot=1 command=E2 82 skip=14 bytes=15/127 text=어머니: ...
+1/S1022.DAT 0x47940 mode=e2 slot=2 command=E2 83 skip=22 bytes=27/127 text=어머니: 너도 떠나는 거니?
+1/S1022.DAT 0x479A2 mode=e2 slot=3 command=E2 84 skip=45 bytes=57/127 text=별일 아니야. 왕의 부름을 받아 팔렌시아로 가는 것뿐이야.
+1/S1022.DAT 0x47A06 mode=e2 slot=4 command=E2 85 skip=26 bytes=38/127 text=병사가 되면 엄마도 편히 지낼 수 있어.
+1/S1022.DAT 0x47A62 mode=e2 slot=5 command=E2 86 skip=44 bytes=46/127 text=어머니: 몸조심하렴. 힘들면 언제든 돌아오고.
+1/S1022.DAT 0x47ACA mode=e2 slot=6 command=E2 87 skip=34 bytes=37/127 text=어머니: 아크... 이것도 가져가렴.
+1/S1022.DAT 0x47B24 mode=e2 slot=7 command=E2 88 skip=20 bytes=24/127 text=질풍의 반다나를 받았다.
+1/S1022.DAT 0x47B70 mode=e2 slot=8 command=E2 89 skip=15 bytes=20/127 text=부활의 약을 받았다.
+1/S1022.DAT 0x47BB8 mode=e2 slot=9 command=E2 8A skip=10 bytes=15/127 text=성수를 받았다.
+1/S1022.DAT 0x47C0E mode=e2 slot=10 command=E2 8B skip=18 bytes=25/127 text=응. 그렇게 걱정하지 마.
+1/S1022.DAT 0x47C68 mode=e2 slot=11 command=E2 8C skip=15 bytes=19/127 text=어머니: 아크...
+1/S1023.DAT 0x478BC mode=e2 slot=0 command=E2 81 skip=23 bytes=33/127 text=어머니: 지치면 언제든 돌아오렴.
+1/S1023.DAT 0x4790C mode=e2 slot=1 command=E2 82 skip=12 bytes=15/127 text=약초를 받았다.
+1/S1023.DAT 0x47952 mode=choice markers=2 bytes=45/47 text=어머니:|편지를 읽을까?|아니오|읽는다
+1/S1023.DAT 0x479C0 mode=e2 slot=2 command=E2 83 skip=20 bytes=26/127 text=어머니: 무리하지 말거라.
+1/S1023.DAT 0x47A40 mode=e2 slot=3 command=E2 84 skip=53 bytes=88/127 text=아버지의 편지: 네 여행에 도움이 되길 바라며 쓴다. 목숨을 소중히 여기고 끝까지 싸워라.
+1/S1023.DAT 0x47AB0 mode=choice markers=4 bytes=52/55 text=강해지는 법|작전 세우기|피해 줄이기 1|다음
+1/S1023.DAT 0x47B30 mode=choice markers=3 bytes=40/40 text=피해 줄이기 2|전투 요령|그만 읽기
+1/S1023.DAT 0x47BA0 mode=e2 slot=4 command=E2 85 skip=25 bytes=48/127 text=어느 나라든 언제나 괴물이 출몰하는 장소가 있다.
+1/S1023.DAT 0x47BEE mode=e2 slot=5 command=E2 86 skip=25 bytes=42/127 text=그곳에서 거듭 싸우면 계속 강해질 수 있다.
+1/S1023.DAT 0x47C3C mode=e2 slot=6 command=E2 87 skip=59 bytes=86/127 text=그 장소의 괴물은 진행해도 바뀌지 않는다. 원하는 수련 수준에 맞춰 장소를 고르면 된다.
+1/S1023.DAT 0x47CB8 mode=e2 slot=7 command=E2 88 skip=34 bytes=53/127 text=숲이나 동굴에서는 뜻밖의 방향에서 적이 덮칠 수 있다.
+1/S1023.DAT 0x47D0E mode=e2 slot=8 command=E2 89 skip=36 bytes=52/127 text=자기 차례에 두 버튼을 함께 눌러 자유 커서로 바꿔라.
+1/S1023.DAT 0x47D66 mode=e2 slot=9 command=E2 8A skip=35 bytes=53/127 text=자유 커서로 적의 위치와 지형을 살피고 작전을 세워라.
+1/S1023.DAT 0x47DCA mode=e2 slot=10 command=E2 8B skip=33 bytes=47/127 text=적을 공격하면 반격을 받아 피해를 입을 수 있다.
+1/S1023.DAT 0x47E20 mode=e2 slot=11 command=E2 8C skip=36 bytes=50/127 text=반격을 피하려면 적의 옆이나 뒤로 돌아가 공격해라.
+1/S1023.DAT 0x47E78 mode=e2 slot=12 command=E2 8D skip=46 bytes=57/127 text=공격받을 때는 정면을 향하도록 하면 적에게 반격하기 쉽다.
+1/S1023.DAT 0x47EDA mode=e2 slot=13 command=E2 8E skip=23 bytes=38/127 text=전투에서는 이런 작은 차이가 중요하다.
+1/S1023.DAT 0x47F32 mode=e2 slot=14 command=E2 8F skip=37 bytes=54/127 text=마법이나 아이템을 던지는 공격은 절대 반격받지 않는다.
+1/S1023.DAT 0x47F8C mode=e2 slot=15 command=E2 90 skip=31 bytes=46/127 text=다만 적에게 피해를 주는 아이템은 한정돼 있다.
+1/S1023.DAT 0x47FE0 mode=e2 slot=16 command=E2 91 skip=21 bytes=30/127 text=우선은 돌을 던지는 것이 좋다.
+1/S1023.DAT 0x48036 mode=e2 slot=17 command=E2 92 skip=49 bytes=73/127 text=분열하는 괴물은 체력이 절반이 되지만 쓰러뜨릴 때 얻는 경험치는 그대로다.
+1/S1023.DAT 0x4809C mode=e2 slot=18 command=E2 93 skip=14 bytes=21/127 text=이 점을 잘 이용해라.
+1/S1023.DAT 0x48142 mode=e2 slot=19 command=E2 94 skip=11 bytes=19/127 text=엄마, 약초 좀 줘.
+1/S1023.DAT 0x48182 mode=e2 slot=20 command=E2 95 skip=38 bytes=57/127 text=어머니: 아크, 잘 들으렴. 집에는 이제 약초가 없어...
+1/S1023.DAT 0x481DC mode=e2 slot=21 command=E2 96 skip=23 bytes=37/127 text=어머니: 네 힘으로 어떻게든 해 보렴.
+1/S1023.DAT 0x48232 mode=e2 slot=22 command=E2 97 skip=3 bytes=12/127 text=......
+1/S1023.DAT 0x48306 mode=e2 slot=23 command=E2 98 skip=26 bytes=42/127 text=어머니: 정말 너한테는 못 당하겠구나...
+1/S1023.DAT 0x48358 mode=e2 slot=24 command=E2 99 skip=14 bytes=20/127 text=힘의 열매를 받았다.
+1/S1023.DAT 0x4839E mode=e2 slot=25 command=E2 9A skip=13 bytes=22/127 text=파로의 열매를 받았다.
+1/S1023.DAT 0x483E4 mode=e2 slot=26 command=E2 9B skip=17 bytes=27/127 text=생명의 나무 열매를 받았다.
+1/S1023.DAT 0x484C6 mode=e2 slot=27 command=E2 9C skip=23 bytes=38/127 text=어머니: 이제 정말 아무것도 없어...
+1/S1023.DAT 0x4853C mode=e2 slot=28 command=E2 9D skip=29 bytes=44/127 text=어머니: 예전엔 저런 아이가 아니었는데...
+dialogues=103
+e2=100
+choices=3
+files=4
+new_glyphs=45
+old_structural_probes=0
+choice_markers_preserved=true
+battle_cursor_preserved=true
+other_files_preserved=true
+sha256=61D58B4640BC03C581AEF9785EA95B87BA183568835FB2D4F62A695F3A23F762

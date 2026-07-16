@@ -1043,4 +1043,16 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Font: PASS. All 373 required characters match their expected 12x12 planes; the full extended map has zero glyph-index collisions and the battle-cursor rectangle is byte-identical to v0.14.
 - Regression: PASS. The ZIP contains 39 game files and no reports or packaging files. Against v0.13, only the 14 target DATs, three exact glyph-code migration DATs, `COMM.IMG`, and `PSX.EXE` differ.
 - Reproducibility: PASS. Repeated builds produced SHA256 `196AB88F3AAF7956D5194723498D791267662D405075880121276E4ABDAAAD68`.
-- Runtime status: pending fresh-boot progression from the first house dialogue through the final throne-room dialogue.
+- Runtime status: screenshots rejected the claimed full-range coverage. `S1013/S1021/S1022/S1023` still contained old auto-placeholder prose because they were outside the 14-file manifest.
+
+2026-07-16 - Intro placeholder completion E2 v0.16
+- Input: v0.15 cumulative ZIP, SHA256 `196AB88F3AAF7956D5194723498D791267662D405075880121276E4ABDAAAD68`.
+- Screenshot diagnosis: `아크 / 마을로 돌아가라` was found as an actual low-slot placeholder at S1021 `0x481F0` and S1022 `0x479A2`; dozens of related `아크 / 마을로 가라` probes remained in four omitted files.
+- Manifest coverage: PASS. Exactly 103/103 high-confidence corpus bodies are present: S1013 9, S1021 50, S1022 12, S1023 32.
+- E2 payloads: PASS. One hundred commands, unique per-file slots, zero terminators, and `capacity - 2` metadata bytes match the manifest. Forty-seven commands use IDs above `90`; none uses reserved `A9`.
+- Choice preservation: PASS. S1023 offsets `0x47952`, `0x47AB0`, and `0x47B30` retain original choice-marker counts 2/4/3 and line-break counts 3/2/1.
+- Font: PASS. All 314 required characters render exactly, 45 new safe glyphs were allocated, the global extended map has zero physical-index collisions, and the battle-cursor rectangle is unchanged.
+- Regression: PASS. Against v0.15 only `S1013/S1021/S1022/S1023/COMM.IMG` differ; all other cumulative files are byte-identical. The ZIP has 39 unique game entries.
+- Probe scan: PASS. Exact old `아크 / 마을로 가라`, `아크 / 마을로 돌아가라`, and `아크 / 가라` sequences are absent from the four corrected script regions.
+- Reproducibility: PASS. Consecutive builds produced SHA256 `61D58B4640BC03C581AEF9785EA95B87BA183568835FB2D4F62A695F3A23F762`.
+- Runtime status: pending user packaging and fresh verification of the previously failing house/snow sequence and menu choices.
