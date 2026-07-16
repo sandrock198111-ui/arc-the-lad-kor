@@ -1192,3 +1192,10 @@ story_test_23 S1072 안전 경계 기준
 - Rebuilt all 27 high-confidence `S3031` general-room bodies as contextual E2 dialogue, replacing the compressed pre-E2 lines shown in runtime screenshots.
 - Candidate output: `03_output/story_minister_s3022_s3031_e2_v19_cumulative_patch_only.zip`, SHA256 `5558DAE42D6EBD0CED2DA238512F30EE451007E731F7E9B4A5CC5E591A77A171`.
 - Static checks pass for 82 manifest rows, deterministic rebuilds, exact battle-cursor preservation, and zero changes outside E2 commands/external slots/the preserved S3022 choice in the two rebuilt files. Runtime verification is pending.
+
+2026-07-16 full story audit and choice-layout candidate v0.20:
+- `audit_all_story_files_v20.py` inventories all 647 extracted game DAT files and classifies all 2,650 high-confidence corpus bodies against the v0.19 cumulative patch.
+- Exact coverage is 450 valid E2 bodies, one hybrid E2 body, 96 changed inline bodies, and 2,103 bodies still identical to the Japanese originals. Only 27 of 161 high-confidence files are fully covered; 134 files remain in the translation queue.
+- Twelve remaining files need either an extended text bank or control-preserving inline choices because their remaining body count exceeds their currently empty E2 slots.
+- v0.20 changes only `1/S1023.DAT` and `31/S3012.DAT`: both S1023 help pages become one-column choices while preserving E5 order, and the S3012 prompt becomes `초핀: 더 도와드릴까요?` without changing its two option byte ranges.
+- Candidate output: `03_output/story_choice_layout_v20_cumulative_patch_only.zip`, SHA256 `213717051809418251E5765D3BC72983990ADEE7A147F004FE4E7F2276C14AF4`. Runtime cursor/layout verification is pending.

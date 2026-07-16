@@ -1100,3 +1100,19 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Active mirrors: two live mirrors match `21/S2013.DAT` at 1792/1792 bytes. The third `S2061` mirror is a serialized/stale state copy and is not the displayed scene.
 - Visual confirmation: DuckStation shows `王はお前に期待しておられる。良い結果を持ち帰るのだぞ。`, exactly S2013 payload `0x478C6`.
 - Patch status: `E:/arc/out/21/S2013.DAT` is SHA256-identical to the clean original and S2013 is absent from v0.19. The apparent Korean `대대:` is original speaker label `兵士` rendered through overwritten shared glyph slots, not translated text.
+
+2026-07-16 - Full story audit v0.20
+- Input: v0.19 cumulative ZIP, SHA256 `5558DAE42D6EBD0CED2DA238512F30EE451007E731F7E9B4A5CC5E591A77A171`.
+- Inventory: PASS. Audited 647 extracted game DAT files, 232 corpus-bearing files, 161 high-confidence files, 5,701 corpus bodies, and 2,650 high-confidence bodies.
+- Classification: PASS. 450 valid E2, one hybrid E2, 96 changed inline, and 2,103 original bodies sum exactly to 2,650.
+- Coverage: 27 files fully covered; 134 files retain original high-confidence bodies. Twelve files need bank extension or control-preserving inline handling.
+- Manifest audit: seven historical rows do not match an exact current corpus payload offset and must not be reused without reconstruction.
+
+2026-07-16 - Choice layout v0.20
+- Input: v0.19 cumulative ZIP, SHA256 `5558DAE42D6EBD0CED2DA238512F30EE451007E731F7E9B4A5CC5E591A77A171`.
+- Scope isolation: PASS. Only `1/S1023.DAT` and `31/S3012.DAT` differ; all 41 cumulative ZIP entries and their order are preserved.
+- S1023 controls: PASS. First page retains four E5 markers and gains three line breaks; second page retains three E5 markers and gains two line breaks. Payloads fit 52/55 and 40/40 bytes.
+- S3012 hybrid: PASS. E2 slot and skip metadata remain valid; bytes from the first E5 marker through both options are byte-identical to v0.19.
+- ZIP readback: PASS. All 41 entries match the generated in-memory payloads.
+- Output SHA256: `213717051809418251E5765D3BC72983990ADEE7A147F004FE4E7F2276C14AF4`.
+- Runtime status: pending verification of selection cursor movement and menu progression.

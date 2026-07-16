@@ -1,0 +1,8 @@
+1/S1023.DAT 0x47AB0 vertical markers=4 breaks=3 bytes=52/55 text=강해지는 법|작전 세우기|피해 감소 1|다음
+1/S1023.DAT 0x47B30 vertical markers=3 breaks=2 bytes=40/40 text=피해 감소 2|전투 요령|그만 읽기
+31/S3012.DAT 0x47FF0 hybrid slot=2 skip=25 bytes=24/127 text=초핀: 더 도와드릴까요?
+base_entries_preserved=41
+changed_files=1/S1023.DAT,31/S3012.DAT
+choice_marker_order_preserved=true
+s3012_option_bytes_preserved=true
+sha256=213717051809418251E5765D3BC72983990ADEE7A147F004FE4E7F2276C14AF4

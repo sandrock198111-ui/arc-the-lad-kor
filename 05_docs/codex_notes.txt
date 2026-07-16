@@ -458,3 +458,14 @@ Live S2013 identification - 2026-07-16
 - Current active DuckStation RAM mirrors match `21/S2013.DAT` exactly at the 1792-byte script window; the displayed first body is file payload `0x478C6`.
 - S2013 is not included in v0.19 and `E:/arc/out/21/S2013.DAT` remains byte-identical to the clean original.
 - Japanese speaker glyphs can resemble arbitrary Korean after COMM font expansion. In this scene the visible `대대:` is the original `兵士`, so visual Korean-looking syllables alone must not be classified as translated payloads.
+
+Full story audit rule - 2026-07-16
+- Whole-game coverage must be measured against every high-confidence corpus body in every extracted DAT, not against only files already present in the cumulative ZIP.
+- The v0.19 exact baseline is 450 valid E2 bodies, one hybrid E2 body, 96 changed inline bodies, and 2,103 bodies equal to the Japanese originals.
+- Files present in a patch ZIP can still be unchanged carry-forward entries. `S1051` and `SD031` are intentional original restores, not translated coverage.
+- Historical manifest offsets that do not exactly match a current corpus payload start are stale evidence. Rebuild from clean originals before applying those rows.
+
+Choice layout rule - 2026-07-16
+- `E5 03` marks each selectable item; `E6 01` controls visual line placement. Marker count and order determine choice behavior, while line breaks can be changed independently for Korean layout.
+- S1023 originally puts `다음` and `전투 요령` in a second column by omitting a line break. v0.20 preserves all markers but inserts line breaks so every Korean option occupies its own row.
+- S3012 `0x47FF0` is a hybrid body: only the prompt is external E2 text. The two inline option ranges and their E5 markers must remain byte-identical when changing the prompt.

@@ -1,0 +1,52 @@
+Full story file audit v0.20
+patch=03_output/story_minister_s3022_s3031_e2_v19_cumulative_patch_only.zip
+patch_sha256=5558DAE42D6EBD0CED2DA238512F30EE451007E731F7E9B4A5CC5E591A77A171
+work_files_inventory=1659
+work_game_candidates=1182
+dat_files=647
+dat_files_with_corpus=232
+dat_files_with_high_confidence=161
+patch_entries=41
+patch_dat_entries=39
+changed_dat_files=37
+unchanged_dat_entries_in_patch=2
+corpus_bodies=5701
+high_confidence_bodies=2650
+high_e2_hybrid_or_metadata_mismatch=1
+high_e2_valid=450
+high_inline_changed=96
+high_original=2103
+files_fully_covered=27
+files_with_remaining_bodies=134
+files_needing_bank_extension_or_inline_choices=12
+translation_manifests=15
+manifest_rows=686
+manifest_rows_without_exact_corpus=7
+manifest_rows_with_conflicting_text=262
+
+Files needing bank extension or inline choices:
+21/S2045.DAT remaining=78 free=48 high=78
+31/S3014.DAT remaining=79 free=16 high=79
+31/S3024.DAT remaining=69 free=16 high=69
+32/S3051.DAT remaining=3 free=1 high=3
+5/S5013.DAT remaining=79 free=48 high=79
+6/S6014.DAT remaining=70 free=48 high=70
+6/S6054.DAT remaining=80 free=0 high=80
+7/S7012.DAT remaining=63 free=48 high=63
+7/S7027.DAT remaining=27 free=26 high=27
+7/S7028.DAT remaining=50 free=48 high=50
+C2/SC0B6.DAT remaining=116 free=0 high=116
+D/SD031.DAT remaining=44 free=16 high=44
+
+Unchanged DAT entries carried in patch ZIP:
+1/S1051.DAT
+D/SD031.DAT
+
+Manifest rows without exact corpus offset:
+story_s3011_s3022_sc011_bulk_translation.csv:4 31/S3022.DAT 0x47D08 nearest=0x47D06 delta=-2
+story_s3011_s3022_sc011_bulk_translation.csv:5 31/S3022.DAT 0x47D54 nearest=0x47D52 delta=-2
+story_s3011_s3022_sc011_bulk_translation.csv:36 31/S3022.DAT 0x48A4E nearest=0x48A50 delta=2
+story_verified_returns_e2_translation.csv:2 1/S1031.DAT 0x4787A nearest=0x4782A delta=-80
+story_verified_returns_e2_translation.csv:3 D/SD011.DAT 0x47B60 nearest=0x47B14 delta=-76
+story_verified_returns_e2_translation.csv:4 D/SD011.DAT 0x47D58 nearest=0x47D78 delta=32
+story_verified_returns_e2_translation.csv:6 23/S2061.DAT 0x485DC nearest=0x48618 delta=60

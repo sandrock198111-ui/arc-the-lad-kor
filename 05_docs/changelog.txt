@@ -385,3 +385,10 @@
 - Added `story_minister_s3022_s3031_e2_v19_translation.csv` with eighteen corrected minister labels, two omitted S2012 lines, 35 rebuilt S3022 E2 lines, and 27 rebuilt S3031 E2 lines.
 - Added `build_story_minister_s3022_s3031_e2_v19.py`; it restores S3022/S3031 from clean originals before E2 insertion, preserves the S3022 choice bytes, and rejects any out-of-range control/portrait changes.
 - Added ten safe glyphs and built `story_minister_s3022_s3031_e2_v19_cumulative_patch_only.zip`, SHA256 `5558DAE42D6EBD0CED2DA238512F30EE451007E731F7E9B4A5CC5E591A77A171`.
+
+2026-07-16
+- Added `audit_all_story_files_v20.py` and deterministic CSV reports covering every extracted game file and every high-confidence story body.
+- Corrected the earlier incomplete-coverage estimate: 2,103 high-confidence bodies in 134 files remain identical to their Japanese originals after v0.19.
+- Added `story_choice_layout_v20_translation.csv` and `build_story_choice_layout_v20.py`.
+- Reflowed the two S1023 help menus into one-column choices and shortened the S3012 Choppin prompt without modifying its option bytes.
+- Built `story_choice_layout_v20_cumulative_patch_only.zip`, SHA256 `213717051809418251E5765D3BC72983990ADEE7A147F004FE4E7F2276C14AF4`.

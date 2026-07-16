@@ -1,0 +1,4 @@
+file,offset,capacity,mode,text
+1/S1023.DAT,0x47AB0,55,choice_vertical,강해지는 법|작전 세우기|피해 감소 1|다음
+1/S1023.DAT,0x47B30,40,choice_vertical,피해 감소 2|전투 요령|그만 읽기
+31/S3012.DAT,0x47FF0,53,hybrid_prompt,초핀: 더 도와드릴까요?
