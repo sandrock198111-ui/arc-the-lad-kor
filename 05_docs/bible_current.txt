@@ -1286,3 +1286,10 @@ story_test_23 S1072 안전 경계 기준
 - Confirmed non-story coverage is 486/503 UI-table records, 33/33 system records, 6/7 world-name records, 63/63 battle-choice bodies, and 24/24 battle-tutorial rows. The eighteen confirmed Japanese residual entries are seventeen existing proper-name rows plus the separate `아리바샤` world-name row; all are caused by eight unavailable glyphs.
 - File inventory covers 81 resources: 17 non-story executable/UI resources audited, 60 story/event DAT members explicitly excluded from this non-story pass, and four common binary/audio resources classified. Direct decoder hits in `COMM.DAT` and `S000.DAT` are unverified binary candidates and are not counted as confirmed Japanese text.
 - Candidate output: `03_output/ui_safe_v33_cumulative_patch_only.zip`, SHA256 `76C0F4E8B50CA03ACC9B2A50AD5359050DE98DC29D0D3DB25F464ED96F54DFAF`. Independent static audit and deterministic rebuild pass; runtime verification remains required.
+
+2026-07-17 confirmation spacing and compact-LV candidate v0.34:
+- v0.34 supersedes v0.33 for the reported presentation defects. The shared confirmation row now uses six spaces in `예      아니요`, moving `아니요` two cells farther from the selector.
+- The battle field-help at pointer `0x8235C` now reads `결정 : 돌아가기`. It deliberately remains a text fallback: the original `E7 02/E7 03` icon rectangles overlap 32 active Korean glyph planes and cannot be restored in place without a regression.
+- The shared one-cell code `0x6C` now uses a 30-pixel bitmap with a heavier L and a separated pointed V. The change still touches only one verified physical bitplane and therefore applies to both equipment `LV +1` help and battle `LV1` labels.
+- Independent readback passes for 503/503 UI records, 33/33 system strings, and 13/13 battle-help pointers. Relative to v0.33, only `PSX.EXE` and `COMM.IMG` change; every other ZIP member is byte-identical.
+- Candidate output: `03_output/ui_safe_v34_cumulative_patch_only.zip`, SHA256 `1B49FAA19018A3C06238F4371BCB3A81A4AF9B672837368EA6A6CA492ACBD622`. Two consecutive builds are deterministic; runtime verification of confirmation spacing and both LV uses remains required.

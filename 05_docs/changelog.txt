@@ -478,3 +478,10 @@
 - Added `audit_ui_safe_v33.py` and `audit_nonstory_japanese_v33.py` with 503-record UI readback, system/help/world pointer checks, all-file classification, and a separate confirmed-residual report.
 - Confirmed eighteen Japanese residual entries, all proper-name copies requiring unavailable glyphs; broad direct decoder hits are recorded as unverified binary candidates rather than text failures.
 - Built `ui_safe_v33_cumulative_patch_only.zip`, SHA256 `76C0F4E8B50CA03ACC9B2A50AD5359050DE98DC29D0D3DB25F464ED96F54DFAF`.
+
+2026-07-17
+- Added `build_ui_safe_v34.py` and `audit_ui_safe_v34.py` for the reported confirmation-spacing, bottom-help, and compact-LV presentation defects.
+- Increased the shared `예/아니요` gap from four to six spaces and changed the iconless bottom help from `결정, 돌아가기` to `결정 : 돌아가기`.
+- Rebuilt the shared low-code `0x6C` bitmap as a heavier 30-pixel LV while preserving its neighboring three bitplanes.
+- Confirmed that restoring `E7 02/E7 03` in place would overwrite active Korean glyph planes; kept the safe text fallback pending a separately verified icon-texture relocation.
+- Built `ui_safe_v34_cumulative_patch_only.zip`, SHA256 `1B49FAA19018A3C06238F4371BCB3A81A4AF9B672837368EA6A6CA492ACBD622`.

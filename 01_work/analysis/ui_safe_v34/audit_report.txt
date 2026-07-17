@@ -1,0 +1,12 @@
+UI safe v0.34 independent audit
+pointer_payload_readback=503/503
+system_text_pointer_readback=33/33
+battle_help_pointer_readback=13/13
+bottom_help=결정 : 돌아가기
+button_icon_controls=0
+confirmation_spacing=6_spaces
+lv_bitmap_pixels=30
+lv_change_scope=single_physical_bitplane
+other_zip_members_byte_identical_to_v33=true
+changes_outside_declared_ranges=false
+result=PASS

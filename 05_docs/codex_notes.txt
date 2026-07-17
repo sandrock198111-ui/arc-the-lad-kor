@@ -593,3 +593,14 @@ Separate world-name table and non-story audit boundary - 2026-07-17
 - In addition to the 30-entry region table, `PSX.EXE` contains a seven-entry world-name table at pointer words `0x81EE8-0x81F00`, originally targeting `0x81EB0-0x81EE0`.
 - Six safe names are `스메리아`, `밀마나`, `그레이시누`, `아라라토스`, `카델`, and `지크라프섬`. `아리바샤` is preserved until `샤` has a verified glyph.
 - The custom low-byte decoder produces thousands of Japanese-looking strings from arbitrary instructions/data. Only known pointer tables and verified text-pool ranges are high-confidence executable text. Direct hits in `COMM.DAT` and `S000.DAT` must remain unverified unless a runtime pointer or loader proves them.
+
+E7 icon texture collision proof - 2026-07-17
+- The E7 icon builder is at RAM `0x8016B668`. Its source table is at `PSX.EXE 0x80210`; icon ID 2 uses U `0x82`, icon ID 3 uses U `0x92`, and both use fixed V `0x82` with a 12x12 rectangle.
+- In logical `COMM.IMG` coordinates, the two original source rectangles are `x=130..141, y=130..141` and `x=146..157, y=130..141`. They cross font rows 10-11 and columns 10-13, covering 32 independent glyph bitplanes.
+- In the v0.33 cumulative COMM, only 17/144 and 23/144 pixels in those rectangles still match the original. Restoring the original rectangles in place would damage active Korean glyphs and is rejected.
+- Exact duplicate icon images still exist at logical coordinates `(114,354)` and `(162,354)`, but they are on a different texture-page region. Do not redirect to them without a verified per-icon texture-page or renderer change.
+- The original bottom source decodes as `E7 02で決定、E7 03でキャンセルします`; the second action is cancel/back, not status display. Until the icon source is safely relocated, use the explicit text fallback `결정 : 돌아가기`.
+
+v0.34 shared confirmation and LV presentation - 2026-07-17
+- Four spaces were insufficient between the shared `예` and `아니요`; six spaces are the current candidate and move the negative option two cells farther right without changing cursor coordinates.
+- The low-code `0x6C` plane is shared by equipment `LV +1` and battle `LV1`. v0.34 uses a heavier 30-pixel L/V bitmap while preserving every neighboring plane.

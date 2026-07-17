@@ -1285,3 +1285,12 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Decoder limitation: `COMM.DAT` has 751 and `S000.DAT` has 53 broad direct-decoder candidates, but the low-byte decoder also maps arbitrary binary to Japanese-like output. These remain unverified candidates and are not counted as text.
 - Reproducibility: PASS. Two consecutive builds produced SHA256 `76C0F4E8B50CA03ACC9B2A50AD5359050DE98DC29D0D3DB25F464ED96F54DFAF`.
 - Runtime status: pending user packaging and visual verification of yes/no cursor spacing, all battle-help phases, LV appearance, `LV 1 상승`, and world names.
+
+2026-07-17 - v0.34 confirmation spacing and compact-LV repair
+- User runtime findings on v0.33: the selector still touched `아니요`, the one-cell `LV1` prefix remained hard to read, and the bottom help showed plain `결정, 돌아가기` with no controller icons.
+- Icon-source analysis: `E7 02` samples original COMM rectangle `(130,130)-(141,141)` and `E7 03` samples `(146,130)-(157,141)`. In v0.33 only 17/144 and 23/144 source pixels remain identical because the rectangles overlap 32 active Korean glyph planes.
+- Repair scope: shared confirmation text at pointer `0x82AC0`, bottom help at `0x8235C`, and the single `COMM.IMG` physical plane for code `0x6C`.
+- Independent audit: PASS. UI pointer payloads 503/503, system strings 33/33, battle-help pointers 13/13, six-space confirmation, no E7 control bytes, and LV change limited to one physical bitplane.
+- Isolation: PASS. Relative to v0.33, only `PSX.EXE` and `COMM.IMG` differ; all other cumulative members are byte-identical and executable differences stay inside declared pools/pointers.
+- Reproducibility: PASS. Two consecutive builds produced SHA256 `1B49FAA19018A3C06238F4371BCB3A81A4AF9B672837368EA6A6CA492ACBD622`.
+- Runtime status: pending user packaging and checks of `예/아니요`, equipment `LV +1`, battle `LV1`, and bottom `결정 : 돌아가기`.
