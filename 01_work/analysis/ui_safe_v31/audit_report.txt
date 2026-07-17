@@ -1,0 +1,12 @@
+UI safe v0.31 independent audit
+pointer_payload_readback=503/503
+single_line_skill_help=12/12
+system_text_pointer_readback=21/21
+bottom_icon_controls_removed=true
+battle_choice_bodies=63/63
+battle_choice_files=9/9
+battle_E5_geometry_preserved=true
+battle_E6_geometry_preserved=true
+comm_img_byte_identical_to_v30=true
+changes_outside_declared_ranges=false
+result=PASS

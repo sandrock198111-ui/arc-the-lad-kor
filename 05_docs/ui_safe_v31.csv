@@ -1,0 +1,504 @@
+﻿table_key,index,japanese,status,korean_target,missing_glyphs,encoded_bytes,encoded_hex,pointer_offset,string_offset
+equipment_name,0,炎の守り,guide_safe_override,불꽃 방어,,9,E0 0A DF 99 9C E0 0F E0 A0,0x804A4,0x80224
+equipment_name,1,氷の守り,guide_safe_override,차가운 바람 방어,,16,E0 96 E0 C0 DF FA 9C DF 6E E0 BA 9C E0 0F E0 A0,0x804A8,0x8022E
+equipment_name,2,アンチへモジー,guide_safe_override,헤모지 방지,,11,DF 9D E0 11 E0 A2 9C E0 0F E0 A2,0x804AC,0x8023F
+equipment_name,3,いやしのお守り,translated_existing_bank,치유의 부적,,11,E0 B0 E0 AD E0 9B 9C E0 0B DF F2,0x804B0,0x8024B
+equipment_name,4,きぬのおび,guide_safe_override,비단 허리 장식,,14,E0 53 E0 37 9C E0 F6 E0 98 9C E0 E1 DF B5,0x804B4,0x80257
+equipment_name,5,魔法のカート,translated_existing_bank,마법 카드,,9,E0 9E E0 B3 9C DF E9 DF 41,0x804B8,0x80266
+equipment_name,6,スリー<N:フ:11><N:リ:12>スカート,translated_existing_bank,수면 방지 카드,,14,DF B7 E0 4C 9C E0 0F E0 A2 9C DF E9 DF 41,0x804BC,0x80270
+equipment_name,7,パワーアーム,guide_safe_override,강화 팔,,7,E0 F2 DE FE 9C DF 8B,0x804C0,0x8027F
+equipment_name,8,カ<N:｣:11><N:ザ:8>ー<N:ク:12>ローフ,translated_existing_bank,카이저 글러브,,13,DF E9 E0 BD E0 CB 9C DE F2 E0 25 DE E1,0x804C4,0x80287
+equipment_name,9,幻のこて,guide_safe_override,신기한 장갑,,11,E0 C3 E0 AC E0 84 9C E0 E1 E0 F4,0x804C8,0x80295
+equipment_name,10,サン<N:ク:12>ラス,translated_existing_bank,선글라스,,8,E0 58 DE F2 E0 A6 E0 39,0x804CC,0x802A1
+equipment_name,11,当て方の絵巻,translated_existing_bank,명중의 두루마리,,15,E0 4E DF A9 E0 9B 9C E0 F8 E0 44 E0 9E E0 98,0x804D0,0x802AA
+equipment_name,12,ぶん投げの絵巻,guide_safe_override,던지기 두루마리,,15,DF 69 E0 A2 E0 AC 9C E0 F8 E0 44 E0 9E E0 98,0x804D4,0x802BA
+equipment_name,13,神のこぶし,translated_existing_bank,신의 주먹,,9,E0 C3 E0 9B 9C E0 CF DF CF,0x804D8,0x802CA
+equipment_name,14,バ<N:｣:11>オ<N:リ:12>ット<N:リ:12>ーサー,guide_safe_override,보라 레이저,,11,E0 93 E0 A6 9C DF D2 E0 BD E0 CB,0x804DC,0x802D4
+equipment_name,15,<N:ネ:13>ック<N:リ:12>ス,translated_existing_bank,목걸이,,6,DF 63 E0 B4 E0 BD,0x804E0,0x802E0
+equipment_name,16,じ<N:ぃ:20>す,guide_safe_override,기도 구슬,,9,E0 AC E0 A7 9C E0 24 DF B6,0x804E4,0x802E7
+equipment_name,17,長老のはちまき,guide_safe_override,장로 허리 장식,,14,E0 E1 E0 D6 9C E0 F6 E0 98 9C E0 E1 DF B5,0x804E8,0x802F1
+equipment_name,18,しつ<N:ぷ:23>うのバンダナ,translated_existing_bank,질풍의 반다나,,13,DF A7 DE C9 E0 9B 9C E0 8A E0 C1 E0 99,0x804EC,0x80300
+equipment_name,19,<N:ハ:12><N:｣:11>パーフーツ,guide_safe_override,하이퍼 신발,,11,E0 C4 E0 BD DF 04 9C E0 C3 E0 FA,0x804F0,0x8030E
+equipment_name,20,まにあわせのくつ,translated_existing_bank,임시 신발,,9,DF F6 E0 61 9C E0 C3 E0 FA,0x804F4,0x8031A
+equipment_name,21,フ<N:リ:12>ス<N:リ:12>ット,translated_existing_bank,팔찌 1,,6,DF 8B DF 0D 9C 12,0x804F8,0x80324
+equipment_name,22,フ<N:リ:12>ス<N:リ:12>ット,translated_existing_bank,팔찌 2,,6,DF 8B DF 0D 9C 13,0x804FC,0x8032B
+equipment_name,23,技のフ<N:リ:12>ス<N:リ:12>ット,guide_safe_override,마력 팔찌,,9,E0 9E E0 8C 9C DF 8B DF 0D,0x80500,0x80332
+equipment_name,24,女神のいのり,translated_existing_bank,여신의 기도,,11,E0 DC E0 C3 E0 9B 9C E0 AC E0 A7,0x80504,0x8033C
+equipment_name,25,パワーリスト,translated_existing_bank,파워 리스트,,11,DF A0 DF AE 9C E0 98 E0 39 E0 82,0x80508,0x80348
+equipment_name,26,デ<N:ｲ:6>ールの<N:牙:4>,translated_existing_bank,데일의 이빨,,11,E0 31 E0 6B E0 9B 9C E0 BD DF 2F,0x8050C,0x80354
+equipment_name,27,幻獣の<N:牙:4>,guide_safe_override,마수의 이빨,,11,E0 9E DF B7 E0 9B 9C E0 BD DF 2F,0x80510,0x80360
+equipment_name,28,しおかぜの調ベ,guide_safe_override,바다 바람의 노래,,16,DF 6E E0 C1 9C DF 6E E0 BA E0 9B 9C E0 3C E0 BB,0x80514,0x8036C
+equipment_name,29,<N:貝:2>がら,guide_safe_override,조가비,,6,E0 A4 E0 C0 E0 53,0x80518,0x8037D
+equipment_name,30,一角獣の角,guide_safe_override,일각수 장식,,11,E0 6B E0 43 DF B7 9C E0 E1 DF B5,0x8051C,0x80384
+equipment_name,31,<N:悲:5>劇のめがね,guide_safe_override,비애의 안경,,11,E0 53 DF FE E0 9B 9C E0 E9 E0 89,0x80520,0x80390
+equipment_name,32,鏡,translated_existing_bank,거울,,4,DF 87 DF F9,0x80524,0x8039C
+equipment_name,33,古代の<N:ｴ:24>びわ,translated_existing_bank,고대의 반지,,11,E0 7F E0 36 E0 9B 9C E0 8A E0 A2,0x80528,0x803A1
+equipment_name,34,幻の<N:ｴ:24>びわ,guide_safe_override,신기한 반지,,11,E0 C3 E0 AC E0 84 9C E0 8A E0 A2,0x8052C,0x803AD
+equipment_name,35,魔導の<N:ｴ:24>びわ,translated_existing_bank,마도의 반지,,11,E0 9E E0 A7 E0 9B 9C E0 8A E0 A2,0x80530,0x803B9
+equipment_name,36,おもちゃの<N:ｴ:24>びわ,translated_existing_bank,장난감 반지,,11,E0 E1 E0 3D E0 01 9C E0 8A E0 A2,0x80534,0x803C5
+equipment_name,37,<N:毒:1>よけの<N:ｴ:24>びわ,guide_safe_override,몸 이상 방지 반지,,17,DF 36 9C E0 BD E0 56 9C E0 0F E0 A2 9C E0 8A E0 A2,0x80538,0x803D1
+equipment_name,38,幻の盾,guide_safe_override,신기한 막이,,11,E0 C3 E0 AC E0 84 9C DF 39 E0 BD,0x8053C,0x803E3
+equipment_name,39,戦士の守り,guide_safe_override,전사 방어,,9,E0 CC E0 A5 9C E0 0F E0 A0,0x80540,0x803EF
+equipment_name,40,長老の盾,guide_safe_override,장로 막이,,9,E0 E1 E0 D6 9C DF 39 E0 BD,0x80544,0x803F9
+equipment_name,41,強力な<N:杖:1>,guide_safe_override,강한 마법봉,,11,E0 F2 E0 84 9C E0 9E E0 B3 DF 93,0x80548,0x80403
+equipment_name,42,じごくのスニー<N:フ:11>,translated_existing_bank,지옥의 스누프,,13,E0 A2 DF 19 E0 9B 9C E0 39 E0 34 DF 9F,0x8054C,0x8040F
+equipment_name,43,王様の像,translated_existing_bank,왕의 상,,7,E0 65 E0 9B 9C E0 56,0x80550,0x8041D
+equipment_name,44,たかの像,translated_existing_bank,매의 상,,7,DF 38 E0 9B 9C E0 56,0x80554,0x80425
+equipment_name,45,まがいの像,guide_safe_override,모조상,,6,E0 11 E0 A4 E0 56,0x80558,0x8042D
+equipment_name,46,たん剣,translated_existing_bank,단검,,4,E0 37 DE F3,0x8055C,0x80434
+equipment_name,47,幻の剣,guide_safe_override,신기한 검,,9,E0 C3 E0 AC E0 84 9C DE F3,0x80560,0x80439
+equipment_name,48,<N:リ:12><N:｣:11>ラのかみか<N:ざ:2>り,translated_existing_bank,리라의 머리장식,,15,E0 98 E0 A6 E0 9B 9C DF 7C E0 98 E0 E1 DF B5,0x80564,0x80443
+equipment_name,49,乱れる宝石,guide_safe_override,요동치는 돌,,11,E0 66 E0 94 E0 B0 E0 C2 9C E0 D5,0x80568,0x80453
+equipment_name,50,アーマーストーン,guide_safe_override,갑옷 돌,,7,E0 F4 DE D8 9C E0 D5,0x8056C,0x8045F
+equipment_name,51,ロマンシン<N:ク:12>ストーン,guide_safe_override,연인의 돌 1,,11,DF 1C E0 6A E0 9B 9C E0 D5 9C 12,0x80570,0x80467
+equipment_name,52,ロマンシン<N:ク:12>ストーン,guide_safe_override,연인의 돌 2,,11,DF 1C E0 6A E0 9B 9C E0 D5 9C 13,0x80574,0x80473
+equipment_name,53,ロマンシン<N:ク:12>ストーン,guide_safe_override,연인의 돌 3,,11,DF 1C E0 6A E0 9B 9C E0 D5 9C 14,0x80578,0x8047F
+equipment_name,54,ロマンシン<N:ク:12>ストーン,guide_safe_override,연인의 돌 4,,11,DF 1C E0 6A E0 9B 9C E0 D5 9C 15,0x8057C,0x8048B
+equipment_name,55,太陽の<N:げ:26>うし,translated_existing_bank,태양의 거울,,11,DF 08 DD CF E0 9B 9C DF 87 DF F9,0x80580,0x80497
+equipment_name,56,おし花の本,guide_safe_override,꽃 도감,,7,DF 99 9C E0 A7 E0 01,0x80584,0x805A4
+equipment_name,57,クラウ<N:ｲ:6>スの本,guide_safe_override,크라우스 도감,,13,E0 9D E0 A6 E0 68 E0 39 9C E0 A7 E0 01,0x80588,0x805AC
+equipment_name,58,音楽集,translated_existing_bank,음악집,,6,DF F8 DF 1F E0 D2,0x8058C,0x805BA
+equipment_name,59,ラークの紋章,translated_existing_bank,라크의 문장,,11,E0 A6 E0 9D E0 9B 9C DF 7B E0 E1,0x80590,0x805C1
+equipment_name,60,<N:ｴ:24>かりの紋章,translated_existing_bank,유카리의 문장,,13,E0 AD DF E9 E0 98 E0 9B 9C DF 7B E0 E1,0x80594,0x805CD
+equipment_name,61,フ<N:リ:12><N:｣:11>の紋章,translated_existing_bank,포니의 문장,,11,DF 02 E0 35 E0 9B 9C DF 7B E0 E1,0x80598,0x805DB
+equipment_name,62,勇者の証,guide_safe_override,용자의 증거,,11,E0 67 E0 E0 E0 9B 9C E0 D1 DF 87,0x8059C,0x805E7
+equipment_name,63,？？？？？,translated_existing_bank,?????,,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x805A0,0x805F3
+equipment_description,0,炎系の攻撃に強くなります,guide_safe_override,불 공격에 강함,,14,E0 0A 9C E0 C6 E0 40 E0 9F 9C E0 F2 E0 85,0x80A94,0x805FE
+equipment_description,1,水系の攻撃に強くなります,guide_safe_override,물 공격에 강함,,14,E0 4F 9C E0 C6 E0 40 E0 9F 9C E0 F2 E0 85,0x80A98,0x8060D
+equipment_description,2,<N:ｌ:5>へモジーへを回避します,guide_safe_override,헤모지 상태 방지,,16,DF 9D E0 11 E0 A2 9C E0 56 DF 08 9C E0 0F E0 A2,0x80A9C,0x8061C
+equipment_description,3,自分の<N:Π:10><N:Ｐ:10>の回復量が大きくなります,guide_safe_override,체력 회복량 증가,,15,E0 90 E0 8C 9C DE C7 DF 33 40 9C E0 D1 E0 C0,0x80AA0,0x8062D
+equipment_description,4,戦闘で入る経験値が2倍になります,guide_safe_override,전투 경험치 2배,,15,E0 CC E0 EF 9C E0 89 E0 E8 E0 B0 9C 13 DF BD,0x80AA4,0x8063D
+equipment_description,5,魔力が10<N:X:20>上昇します,guide_safe_override,마력 10% 상승,,13,E0 9E E0 8C 9C 12 11 07 9C E0 56 E0 FF,0x80AA8,0x8064D
+equipment_description,6,<N:ｌ:5><N:眠:5>りへを回避します,guide_safe_override,수면 상태 방지,,14,DF B7 E0 4C 9C E0 56 DF 08 9C E0 0F E0 A2,0x80AAC,0x8065B
+equipment_description,7,防御力が30<N:X:20>上昇します（チョン<N:力:5>ラ）,guide_safe_override,촌가라 방어력 30% 상승,,22,DF 83 E0 C0 E0 A6 9C E0 0F E0 A0 E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80AB0,0x8066A
+equipment_description,8,<N:ｌ:5>投げるへが<N:リ:12>ベル1になります,guide_safe_override,던지기 LV +1,,11,DF 69 E0 A2 E0 AC 9C 6C 9C 0C 12,0x80AB4,0x80681
+equipment_description,9,攻撃力が<N:ｃ:12>0<N:X:20>上昇します,guide_safe_override,공격력 50% 상승,,15,E0 C6 E0 40 E0 8C 9C 16 11 07 9C E0 56 E0 FF,0x80AB8,0x8068D
+equipment_description,10,<N:ｌ:5>暗闇へを回避します,guide_safe_override,실명 방지,,9,DF 26 E0 4E 9C E0 0F E0 A2,0x80ABC,0x8069D
+equipment_description,11,攻撃が<N:非:1>常に当たりやすくなります,guide_safe_override,명중 크게 상승,,14,E0 4E DF A9 9C E0 9D E0 14 9C E0 56 E0 FF,0x80AC0,0x806A7
+equipment_description,12,<N:ｌ:5>投げるへが<N:ｌ:5>ぶん投げるへになります,guide_safe_override,던지기 강화,,11,DF 69 E0 A2 E0 AC 9C E0 F2 DE FE,0x80AC4,0x806B6
+equipment_description,13,攻撃が特定の敵に強くなります,guide_safe_override,일부 적에게 강함,,16,E0 6B E0 0B 9C DF F2 E0 9F E0 14 9C E0 F2 E0 85,0x80AC8,0x806C2
+equipment_description,14,攻撃が必す当たるようになります,guide_safe_override,공격이 반드시 명중,,18,E0 C6 E0 40 E0 BD 9C E0 8A DF 41 E0 61 9C E0 4E DF A9,0x80ACC,0x806D3
+equipment_description,15,<N:リ:12>ベルアッ<N:フ:11>時に<N:Π:10><N:Ｐ:10>の伸びが大きくなります,guide_safe_override,성장 시 최대 체력 증가량 상승,,28,E0 5A E0 E1 9C E0 61 9C DF A4 E0 36 9C E0 90 E0 8C 9C E0 D1 E0 C0 40 9C E0 56 E0 FF,0x80AD0,0x806E6
+equipment_description,16,魔力が30<N:X:20>上昇します （<N:ニ:13>ーゲン）,guide_safe_override,마법사 마력 30% 상승,,20,E0 9E E0 B3 E0 A5 9C E0 9E E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80AD4,0x80703
+equipment_description,17,攻撃が当たりやすくなります,guide_safe_override,명중 상승,,9,E0 4E DF A9 9C E0 56 E0 FF,0x80AD8,0x80718
+equipment_description,18,すばやさが10<N:X:20>上昇します,guide_safe_override,민첩 10% 상승,,13,DF BE DF EC 9C 12 11 07 9C E0 56 E0 FF,0x80ADC,0x80722
+equipment_description,19,すばやさが30<N:X:20>上昇します,guide_safe_override,민첩 30% 상승,,13,DF BE DF EC 9C 14 11 07 9C E0 56 E0 FF,0x80AE0,0x80730
+equipment_description,20,<N:ｌ:5>ジャン<N:フ:11>へが<N:リ:12>ベル1になります,guide_safe_override,점프 LV +1,,9,DE D2 DF 9F 9C 6C 9C 0C 12,0x80AE4,0x8073E
+equipment_description,21,反撃しやすくなります,guide_safe_override,반격 상승,,9,E0 8A E0 40 9C E0 56 E0 FF,0x80AE8,0x80748
+equipment_description,22,<N:ｌ:5>受け取るへが<N:リ:12>ベル1になります,guide_safe_override,받기 LV +1,,9,E0 10 E0 AC 9C 6C 9C 0C 12,0x80AEC,0x80752
+equipment_description,23,<N:ｌ:5>受け取るへが<N:ｌ:5>投げ返すへになります,guide_safe_override,받기가 되던지기로 변화,,22,E0 10 E0 AC E0 C0 9C E0 2F DF 69 E0 A2 E0 AC E0 D6 9C DE 3C DE FE,0x80AF0,0x8075C
+equipment_description,24,半分の<N:∪:20><N:Ｐ:10>で能力を使用できます,guide_safe_override,소비 마력 절반,,14,E0 D9 E0 53 9C E0 9E E0 8C 9C E0 E6 E0 8A,0x80AF4,0x80773
+equipment_description,25,攻撃力が30<N:X:20>上昇します,guide_safe_override,공격력 30% 상승,,15,E0 C6 E0 40 E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80AF8,0x80782
+equipment_description,26,反撃ダメージが大きくなります（<N:｣:11>ー<N:力:5>）,guide_safe_override,이가 반격 피해 증가,,19,E0 BD E0 C0 9C E0 8A E0 40 9C DF 82 E0 88 9C E0 D1 E0 C0,0x80AFC,0x80792
+equipment_description,27,効果はわかつていません,guide_safe_override,작용 불명,,9,E0 92 E0 67 9C E0 0A E0 4E,0x80B00,0x807A6
+equipment_description,28,行動する度まわりの<N:午:15>ャラを回復します（ククル）,guide_safe_override,쿠쿠루 행동 시 주변 아군 회복,,29,E0 7A E0 7A E0 44 9C E0 8B E0 94 9C E0 61 9C E0 CF DE 3C 9C E0 9C E0 C5 9C DE C7 DF 33,0x80B04,0x807B0
+equipment_description,29,敵がア<N:｣:11>テムを落としやすくなります,guide_safe_override,물건 입수율 상승,,16,E0 4F E0 41 9C E0 C9 DF B7 DF 6D 9C E0 56 E0 FF,0x80B08,0x807CE
+equipment_description,30,敵を倒すとほ<N:げ:26>ア<N:｣:11>テムが出ます,guide_safe_override,좋은 물건 입수,,14,E0 CE E0 BF 9C E0 4F E0 41 9C E0 C9 DF B7,0x80B0C,0x807DF
+equipment_description,31,効果はわかつていません,guide_safe_override,작용 불명,,9,E0 92 E0 67 9C E0 0A E0 4E,0x80B10,0x807A6
+equipment_description,32,<N:ｌ:5>石化へを回避します,guide_safe_override,돌 상태 방지,,12,E0 D5 9C E0 56 DF 08 9C E0 0F E0 A2,0x80B14,0x807EE
+equipment_description,33,効果はわかつていません （アーク）,guide_safe_override,아크 전용 작용 불명,,19,E0 9C E0 9D 9C E0 CC E0 67 9C E0 92 E0 67 9C E0 0A E0 4E,0x80B18,0x807FB
+equipment_description,34,魔力が<N:ｃ:12>0<N:X:20>上昇します,guide_safe_override,마력 50% 상승,,13,E0 9E E0 8C 9C 16 11 07 9C E0 56 E0 FF,0x80B1C,0x8080F
+equipment_description,35,魔力が30<N:X:20>上昇します,guide_safe_override,마력 30% 상승,,13,E0 9E E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80B20,0x8081D
+equipment_description,36,<N:ｌ:5>向き直りの笛への効果が<N:∪:20><N:∧:11><N:Ｐ:10>全体（ポニ）,guide_safe_override,방향잡이 피리가 전체에 적용,,27,E0 0F DE F8 DF F4 E0 BD 9C DF 82 E0 98 E0 C0 9C E0 CC E0 90 E0 9F 9C DF F2 E0 67,0x80B24,0x8082B
+equipment_description,37,<N:ｌ:5><N:毒:1>へを回避します,guide_safe_override,해로운 기운 방지,,16,E0 88 E0 D6 DF FA 9C E0 AC DF FA 9C E0 0F E0 A2,0x80B28,0x80847
+equipment_description,38,防御力が<N:ｃ:12>0<N:X:20>上昇します,guide_safe_override,방어력 50% 상승,,15,E0 0F E0 A0 E0 8C 9C 16 11 07 9C E0 56 E0 FF,0x80B2C,0x80858
+equipment_description,39,防御力が30<N:X:20>上昇します,guide_safe_override,방어력 30% 상승,,15,E0 0F E0 A0 E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80B30,0x80868
+equipment_description,40,防御しやすくなります,guide_safe_override,방어율 상승,,11,E0 0F E0 A0 DF 6D 9C E0 56 E0 FF,0x80B34,0x80878
+equipment_description,41,攻撃力が<N:７:11>0<N:X:20>上昇します（<N:ニ:13>ーゲン）,guide_safe_override,마법사 공격력 70% 상승,,22,E0 9E E0 B3 E0 A5 9C E0 C6 E0 40 E0 8C 9C 18 11 07 9C E0 56 E0 FF,0x80B38,0x80884
+equipment_description,42,<N:ｌ:5>心<N:眼:3>法への<N:乾:16>囲が広くなります（<N:｣:11>ー<N:力:5>）,guide_safe_override,심안법 범위 확대,,16,DF 25 E0 E9 E0 B3 9C DE E4 E0 69 9C DE C8 E0 36,0x80B3C,0x8089B
+equipment_description,43,召喚<N:午:15>ャラの経験値が自分に入ります（チョン<N:力:5>ラ）,guide_safe_override,마물 경험치가 촌가라에게,,24,E0 9E E0 4F 9C E0 89 E0 E8 E0 B0 E0 C0 9C DF 83 E0 C0 E0 A6 E0 9F E0 14,0x80B40,0x808AC
+equipment_description,44,<N:ｌ:5>沈黙へを回避します,guide_safe_override,마법 봉인 상태 방지,,19,E0 9E E0 B3 9C DF 93 E0 6A 9C E0 56 DF 08 9C E0 0F E0 A2,0x80B44,0x808C5
+equipment_description,45,攻撃を避けやすくなります,guide_safe_override,회피율 상승,,11,DE C7 DF 82 DF 6D 9C E0 56 E0 FF,0x80B48,0x808D9
+equipment_description,46,攻撃力が10<N:X:20>上昇します,guide_safe_override,공격력 10% 상승,,15,E0 C6 E0 40 E0 8C 9C 12 11 07 9C E0 56 E0 FF,0x80B4C,0x808E5
+equipment_description,47,<N:与:3>えるダメージの当たりはすれが大きくなります,guide_safe_override,공격 피해 편차 증가,,19,E0 C6 E0 40 9C DF 82 E0 88 9C E0 E4 E0 96 9C E0 D1 E0 C0,0x80B50,0x808F5
+equipment_description,48,復活魔法で<N:Π:10><N:Ｐ:10>最大で復活します（ククル）,guide_safe_override,쿠쿠루 부활 시 최대 체력 회복,,29,E0 7A E0 7A E0 44 9C E0 0B E0 80 9C E0 61 9C DF A4 E0 36 9C E0 90 E0 8C 9C DE C7 DF 33,0x80B54,0x80909
+equipment_description,49,当たりはすれが大きくなります,guide_safe_override,피해 편차 증가,,14,DF 82 E0 88 9C E0 E4 E0 96 9C E0 D1 E0 C0,0x80B58,0x80927
+equipment_description,50,防御力が10<N:X:20>上昇します,guide_safe_override,방어력 10% 상승,,15,E0 0F E0 A0 E0 8C 9C 12 11 07 9C E0 56 E0 FF,0x80B5C,0x80936
+equipment_description,51,効果はわかつていません,guide_safe_override,작용 불명,,9,E0 92 E0 67 9C E0 0A E0 4E,0x80B60,0x807A6
+equipment_description,52,効果はわかつていません,guide_safe_override,작용 불명,,9,E0 92 E0 67 9C E0 0A E0 4E,0x80B64,0x807A6
+equipment_description,53,効果はわかつていません,guide_safe_override,작용 불명,,9,E0 92 E0 67 9C E0 0A E0 4E,0x80B68,0x807A6
+equipment_description,54,効果はわかつていません,guide_safe_override,작용 불명,,9,E0 92 E0 67 9C E0 0A E0 4E,0x80B6C,0x807A6
+equipment_description,55,行動するたびに<N:Π:10><N:Ｐ:10>が回復します,guide_safe_override,매 행동 체력 회복,,17,DF 38 9C E0 8B E0 94 9C E0 90 E0 8C 9C DE C7 DF 33,0x80B70,0x80946
+equipment_description,56,攻撃が<N:非:1>常に当たりやすくなります（トッシュ）,guide_safe_override,토슈 명중 크게 상승,,19,E0 7E DE DD 9C E0 4E DF A9 9C E0 9D E0 14 9C E0 56 E0 FF,0x80B74,0x80958
+equipment_description,57,全ステータスしょう害を回避します,guide_safe_override,모든 이상 상태 방지,,19,E0 11 DF D4 9C E0 BD E0 56 9C E0 56 DF 08 9C E0 0F E0 A2,0x80B78,0x8096C
+equipment_description,58,魔力が30<N:X:20>上昇します （ポニ）,guide_safe_override,포코 마력 30% 상승,,18,DF 02 DF A3 9C E0 9E E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80B7C,0x80980
+equipment_description,59,<N:ｌ:5>マ<N:ヒ:5>へを回避します,guide_safe_override,마비 상태 방지,,14,E0 9E E0 53 9C E0 56 DF 08 9C E0 0F E0 A2,0x80B80,0x80993
+equipment_description,60,桜花雷爆斬でマ<N:ヒ:5>させることができます（トッシュ）,guide_safe_override,토슈 비기에 마비 부여,,21,E0 7E DE DD 9C E0 53 E0 AC E0 9F 9C E0 9E E0 53 9C E0 0B E0 DC,0x80B84,0x809A2
+equipment_description,61,攻撃が特定の敵に強くなります,guide_safe_override,일부 적에게 강함,,16,E0 6B E0 0B 9C DF F2 E0 9F E0 14 9C E0 F2 E0 85,0x80B88,0x806C2
+equipment_description,62,行動するごとに<N:∪:20><N:Ｐ:10>が回復します（アーク）,guide_safe_override,아크 매 행동 마력 회복,,22,E0 9C E0 9D 9C DF 38 9C E0 8B E0 94 9C E0 9E E0 8C 9C DE C7 DF 33,0x80B8C,0x809B8
+equipment_description,63,？？？？？,guide_safe_override,?????,,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80B90,0x805F3
+consumable_name,0,ねばねば,guide_safe_override,거미줄,,6,DF 87 E0 50 DF AA,0x80C9C,0x809CF
+consumable_name,1,やる気<N:г:23>リー,guide_safe_override,기운 음식,,9,E0 AC DF FA 9C DF F8 DF B5,0x80CA0,0x809D6
+consumable_name,2,みなぎる果実,translated_existing_bank,넘치는 열매,,11,E0 97 E0 B0 E0 C2 9C E0 B2 DF 38,0x80CA4,0x809E0
+consumable_name,3,回復果物,translated_existing_bank,회복 열매,,9,DE C7 DF 33 9C E0 B2 DF 38,0x80CA8,0x809EC
+consumable_name,4,しびれるりんご,translated_existing_bank,마비 사과,,9,E0 9E E0 53 9C E0 A5 E0 C7,0x80CAC,0x809F6
+consumable_name,5,石,translated_existing_bank,돌,,2,E0 D5,0x80CB0,0x80A00
+consumable_name,6,<N:リ:12>ニの草,translated_existing_bank,레코의 풀,,9,DF D2 DF A3 E0 9B 9C DF 8A,0x80CB4,0x80A03
+consumable_name,7,薬草,translated_existing_bank,약초,,4,DF B1 DF EB,0x80CB8,0x80A0D
+consumable_name,8,<N:毒:1>薬,guide_safe_override,위험한 풀,,9,E0 69 E0 E8 E0 84 9C DF 8A,0x80CBC,0x80A12
+consumable_name,9,ルウの薬,translated_existing_bank,루우의 약,,9,E0 44 E0 68 E0 9B 9C DF B1,0x80CC0,0x80A1C
+consumable_name,10,すばやさの薬,translated_existing_bank,민첩의 약,,9,DF BE DF EC E0 9B 9C DF B1,0x80CC4,0x80A26
+consumable_name,11,小さい爆弾,guide_safe_override,작은 폭발 구슬,,14,E0 92 E0 BF 9C DE CB E0 FA 9C E0 24 DF B6,0x80CC8,0x80A30
+consumable_name,12,大きい爆弾,guide_safe_override,큰 폭발 구슬,,12,DF 0A 9C DE CB E0 FA 9C E0 24 DF B6,0x80CCC,0x80A3F
+consumable_name,13,万能薬,guide_safe_override,만병약,,6,E0 49 E0 0E DF B1,0x80CD0,0x80A4C
+consumable_name,14,聖水,translated_existing_bank,성수,,4,E0 5A DF B7,0x80CD4,0x80A53
+consumable_name,15,復活の薬,translated_existing_bank,부활약,,6,E0 0B E0 80 DF B1,0x80CD8,0x80A58
+consumable_name,16,攻撃瓶,translated_existing_bank,공격 항아리,,11,E0 C6 E0 40 9C E0 87 E0 9C E0 98,0x80CDC,0x80A5F
+consumable_name,17,<N:眠:5>り玉,translated_existing_bank,수면 구슬,,9,DF B7 E0 4C 9C E0 24 DF B6,0x80CE0,0x80A6B
+consumable_name,18,弱りの玉,translated_existing_bank,약화 구슬,,9,DF B1 DE FE 9C E0 24 DF B6,0x80CE4,0x80A75
+consumable_name,19,ちからの実,translated_existing_bank,힘의 열매,,9,E0 8E E0 9B 9C E0 B2 DF 38,0x80CE8,0x80A7F
+consumable_name,20,パロの実,translated_existing_bank,파로의 열매,,11,DF A0 E0 D6 E0 9B 9C E0 B2 DF 38,0x80CEC,0x80B94
+consumable_name,21,いのちの木の実,translated_existing_bank,생명의 열매,,11,E0 04 E0 4E E0 9B 9C E0 B2 DF 38,0x80CF0,0x80BA0
+consumable_name,22,魔力の葉,guide_safe_override,마력의 풀,,9,E0 9E E0 8C E0 9B 9C DF 8A,0x80CF4,0x80A89
+consumable_name,23,魔力の泉,guide_safe_override,마력의 물,,9,E0 9E E0 8C E0 9B 9C E0 4F,0x80CF8,0x80BAC
+consumable_name,24,目つぶしの草,translated_existing_bank,눈가림 풀,,9,DF 6A E0 C0 DF 3A 9C DF 8A,0x80CFC,0x80BB6
+consumable_name,25,苦い葉,guide_safe_override,쓴 풀,,5,DE DC 9C DF 8A,0x80D00,0x80BC0
+consumable_name,26,石解け<N:ハ:12>リ,guide_safe_override,몸 마비 회복침,,14,DF 36 9C E0 9E E0 53 9C DE C7 DF 33 DF 5A,0x80D04,0x80BC6
+consumable_name,27,痛烈な<N:ハ:12>リ,guide_safe_override,마법 봉인 회복침,,16,E0 9E E0 B3 9C DF 93 E0 6A 9C DE C7 DF 33 DF 5A,0x80D08,0x80BD5
+consumable_name,28,召喚のつ<N:げ:26>,guide_safe_override,마물 항아리,,11,E0 9E E0 4F 9C E0 87 E0 9C E0 98,0x80D0C,0x80BE6
+consumable_name,29,？？？？？,translated_existing_bank,?????,,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80D10,0x805F3
+consumable_name,30,？？？？？,translated_existing_bank,?????,,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80D14,0x805F3
+consumable_name,31,？？？？？,translated_existing_bank,?????,,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80D18,0x805F3
+consumable_description,0,一時的にすばやさを下げます,translated_existing_bank,민첩 일시 감소,,14,DF BE DF EC 9C E0 6B E0 61 9C E0 01 E0 D9,0x80F14,0x80BF2
+consumable_description,1,<N:ｌ:5>へモジーへを元に戻します,translated_existing_bank,헤모지 회복,,11,DF 9D E0 11 E0 A2 9C DE C7 DF 33,0x80F18,0x80C01
+consumable_description,2,<N:リ:12>ベルアッ<N:フ:11>します,guide_safe_override,단계 1 상승,,11,E0 37 E0 9A 9C 12 9C E0 56 E0 FF,0x80F1C,0x80C0D
+consumable_description,3,<N:Π:10><N:Ｐ:10>が<N:ｃ:9>0ポ<N:｣:11>ント回復します,translated_existing_bank,체력 60 회복,,12,E0 90 E0 8C 9C 17 11 9C DE C7 DF 33,0x80F20,0x80C19
+consumable_description,4,しびれて動けなくなります,translated_existing_bank,마비 부여,,9,E0 9E E0 53 9C E0 0B E0 DC,0x80F24,0x80C26
+consumable_description,5,ぶつけてダメージを<N:与:3>えます,translated_existing_bank,던져서 피해,,11,DF 69 DF 14 E0 57 9C DF 82 E0 88,0x80F28,0x80C30
+consumable_description,6,防御力が上がります,translated_existing_bank,방어력 상승,,11,E0 0F E0 A0 E0 8C 9C E0 56 E0 FF,0x80F2C,0x80C3C
+consumable_description,7,<N:Π:10><N:Ｐ:10>が20ポ<N:｣:11>ント回復します,translated_existing_bank,체력 20 회복,,12,E0 90 E0 8C 9C 13 11 9C DE C7 DF 33,0x80F30,0x80C48
+consumable_description,8,<N:毒:1>を<N:振:2>りまきます,guide_safe_override,해로운 기운 부여,,16,E0 88 E0 D6 DF FA 9C E0 AC DF FA 9C E0 0B E0 DC,0x80F34,0x80C55
+consumable_description,9,しびれを取りのぞきます,translated_existing_bank,마비 회복,,9,E0 9E E0 53 9C DE C7 DF 33,0x80F38,0x80C66
+consumable_description,10,一時的にすばやさを上げます,translated_existing_bank,민첩 일시 상승,,14,DF BE DF EC 9C E0 6B E0 61 9C E0 56 E0 FF,0x80F3C,0x80C70
+consumable_description,11,爆発します,translated_existing_bank,폭발 피해,,9,DE CB E0 FA 9C DF 82 E0 88,0x80F40,0x80C7F
+consumable_description,12,爆発します,translated_existing_bank,큰 폭발 피해,,12,DF 0A 9C DE CB E0 FA 9C DF 82 E0 88,0x80F44,0x80C89
+consumable_description,13,ほとんどのステータス傷害を回復します,translated_existing_bank,대부분의 상태 이상 회복,,23,E0 36 E0 0B E0 91 E0 9B 9C E0 56 DF 08 9C E0 BD E0 56 9C DE C7 DF 33,0x80F48,0x80D1C
+consumable_description,14,<N:毒:1>を取りのぞきます,guide_safe_override,해로운 기운 회복,,16,E0 88 E0 D6 DF FA 9C E0 AC DF FA 9C DE C7 DF 33,0x80F4C,0x80D34
+consumable_description,15,戦闘不能<N:午:15>ャラクタを復活させます,translated_existing_bank,쓰러진 대상 부활,,16,E0 02 E0 25 DF 10 9C E0 36 E0 56 9C E0 0B E0 80,0x80F50,0x80D45
+consumable_description,16,一時的に攻撃力を上げます,translated_existing_bank,공격력 일시 상승,,16,E0 C6 E0 40 E0 8C 9C E0 6B E0 61 9C E0 56 E0 FF,0x80F54,0x80D56
+consumable_description,17,<N:眠:5>らせます,translated_existing_bank,수면 부여,,9,DF B7 E0 4C 9C E0 0B E0 DC,0x80F58,0x80D67
+consumable_description,18,一時的に攻撃力・防御力を下げます,translated_existing_bank,공격 방어 일시 감소,,19,E0 C6 E0 40 9C E0 0F E0 A0 9C E0 6B E0 61 9C E0 01 E0 D9,0x80F5C,0x80D71
+consumable_description,19,攻撃力が上がります,translated_existing_bank,공격력 상승,,11,E0 C6 E0 40 E0 8C 9C E0 56 E0 FF,0x80F60,0x80D85
+consumable_description,20,すばやさが上がります,translated_existing_bank,민첩 상승,,9,DF BE DF EC 9C E0 56 E0 FF,0x80F64,0x80D91
+consumable_description,21,<N:Π:10><N:Ｐ:10>の最大値が2ポ<N:｣:11>ント上がります,translated_existing_bank,최대 체력 2 상승,,16,DF A4 E0 36 9C E0 90 E0 8C 9C 13 9C E0 56 E0 FF,0x80F68,0x80D9B
+consumable_description,22,魔力が上がります,translated_existing_bank,마력 상승,,9,E0 9E E0 8C 9C E0 56 E0 FF,0x80F6C,0x80DAC
+consumable_description,23,<N:∪:20><N:Ｐ:10>の最大値が2ポ<N:｣:11>ント上がります,translated_existing_bank,최대 마력 2 상승,,16,DF A4 E0 36 9C E0 9E E0 8C 9C 13 9C E0 56 E0 FF,0x80F70,0x80DB6
+consumable_description,24,<N:振:2>りまくと、目が見えなくなります,guide_safe_override,명중 감소,,9,E0 4E DF A9 9C E0 01 E0 D9,0x80F74,0x80DC7
+consumable_description,25,一時的に防御力を上げます,translated_existing_bank,방어력 일시 상승,,16,E0 0F E0 A0 E0 8C 9C E0 6B E0 61 9C E0 56 E0 FF,0x80F78,0x80DD1
+consumable_description,26,石化から元に戻ります,guide_safe_override,몸 마비 회복,,12,DF 36 9C E0 9E E0 53 9C DE C7 DF 33,0x80F7C,0x80DE2
+consumable_description,27,封じられた魔法が使えるようになります,guide_safe_override,마법 봉인 회복,,14,E0 9E E0 B3 9C DF 93 E0 6A 9C DE C7 DF 33,0x80F80,0x80DEF
+consumable_description,28,チョン<N:力:5>ラがモンスターを召喚するのに使います,guide_safe_override,촌가라의 마물 부르기,,20,DF 83 E0 C0 E0 A6 E0 9B 9C E0 9E E0 4F 9C E0 0B E0 46 E0 AC,0x80F84,0x80DFE
+consumable_description,29,？？？？？,translated_existing_bank,?????,,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80F88,0x805F3
+consumable_description,30,？？？？？,translated_existing_bank,?????,,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80F8C,0x805F3
+consumable_description,31,？？？？？,translated_existing_bank,?????,,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80F90,0x805F3
+skill_name,0,,translated_existing_bank,,,0,,0x811C0,0x804A3
+skill_name,1,バーン<N:ク:12>ラウント,guide_safe_override,번 그라운드,,11,DE E5 9C E0 29 E0 A6 DF FA DF 41,0x811C4,0x80E13
+skill_name,2,トータル<N:ヒ:5>ーリン<N:ク:12>,guide_safe_override,전체 회복,,9,E0 CC E0 90 9C DE C7 DF 33,0x811C8,0x80E1F
+skill_name,3,ゲ<N:｣:11>ルフラッシュ,guide_safe_override,게일 플래시,,11,E0 14 E0 6B 9C DF 9E E0 BB E0 61,0x811CC,0x80E29
+skill_name,4,スロウエ<N:ネ:13>ミー,guide_safe_override,슬로우 에너미,,13,DF B6 E0 D6 E0 68 9C E0 9F E0 32 E0 50,0x811D0,0x80E35
+skill_name,5,メテオフ<N:｣:13>ール,guide_safe_override,별 내리기,,9,DE E2 9C DF 97 E0 98 E0 AC,0x811D4,0x80E43
+skill_name,6,<N:午:15>ュア,guide_safe_override,회복,,4,DE C7 DF 33,0x811D8,0x80C96
+skill_name,7,デポ<N:｣:11><N:ス:15>ン,guide_safe_override,해로운 기운 제거,,16,E0 88 E0 D6 DF FA 9C E0 AC DF FA 9C E0 AA DF 87,0x811DC,0x80E4D
+skill_name,8,サ<N:｣:11><N:リ:12>ント,guide_safe_override,사일런트,,8,E0 A5 E0 6B E0 BC E0 82,0x811E0,0x80E5E
+skill_name,9,リフ<N:リ:12>ッシュ,guide_safe_override,리프레시,,8,E0 98 DF 9F DF D2 E0 61,0x811E4,0x80E67
+skill_name,10,天のさばき,guide_safe_override,하늘의 심판,,11,E0 C4 DF D7 E0 9B 9C DF 25 DF 05,0x811E8,0x80E70
+skill_name,11,リ<N:ザ:8><N:リ:12>クション,guide_safe_override,부활,,4,E0 0B E0 80,0x811EC,0x80E7C
+skill_name,12,デ<N:ｲ:6>バ<N:｣:11>ト,guide_safe_override,디바이드,,8,E0 A1 DF 6E E0 BD DF 41,0x811F0,0x80E81
+skill_name,13,桜花雷爆斬,guide_safe_override,토슈 비기,,9,E0 7E DE DD 9C E0 53 E0 AC,0x811F4,0x80E8A
+skill_name,14,呪縛剣,guide_safe_override,봉인검,,6,DF 93 E0 6A DE F3,0x811F8,0x80E94
+skill_name,15,<N:真:2><N:空:2>斬,guide_safe_override,진공검,,6,DF 10 E0 C6 DE F3,0x811FC,0x80E9B
+skill_name,16,<N:虎:5><N:影:1>斬,guide_safe_override,그림자검,,8,E0 29 DF 3A E0 E0 DE F3,0x81200,0x80EA2
+skill_name,17,戦の小太鼓,guide_safe_override,전투 큰 북,,10,E0 CC E0 EF 9C DF 0A 9C DF 31,0x81204,0x80EAB
+skill_name,18,荒獅子太鼓,guide_safe_override,황사자태고,,10,DE FC E0 A5 E0 E0 DF 08 E0 7F,0x81208,0x80EB6
+skill_name,19,気合いラッパ,guide_safe_override,기합 나팔,,9,E0 AC E0 86 9C E0 99 DF 8B,0x8120C,0x80EC1
+skill_name,20,へろへろラッパ,guide_safe_override,비틀비틀 나팔,,13,E0 53 DF 06 E0 53 DF 06 9C E0 99 DF 8B,0x81210,0x80ECB
+skill_name,21,いやしのたてごと,guide_safe_override,치유의 하프,,11,E0 B0 E0 AD E0 9B 9C E0 C4 DF 9F,0x81214,0x80ED9
+skill_name,22,のろまのベース,guide_safe_override,느림의 연주,,11,E0 3A DF 3A E0 9B 9C DF 1C E0 CF,0x81218,0x80EE5
+skill_name,23,い<N:駄:2>天のオカリナ,guide_safe_override,위타천 오카리나,,15,E0 69 E0 7D DF 8C 9C E0 62 DF E9 E0 98 E0 99,0x8121C,0x80EF1
+skill_name,24,向き直りの笛,guide_safe_override,방향잡이 피리,,13,E0 0F DE F8 DF F4 E0 BD 9C DF 82 E0 98,0x81220,0x80F01
+skill_name,25,エクス<N:フ:11>ロージョン,guide_safe_override,대폭발,,6,E0 36 DE CB E0 FA,0x81224,0x80F94
+skill_name,26,トリーム<N:メ:6>ック,guide_safe_override,드림 노크,,9,DF 41 DF 3A 9C E0 3C E0 9D,0x81228,0x80F9B
+skill_name,27,ダ<N:｣:11>ヤモントダスト,guide_safe_override,다이아몬드 더스트,,17,E0 C1 E0 BD E0 9C DF 37 DF 41 9C DF D5 E0 39 E0 82,0x8122C,0x80FA5
+skill_name,28,ウ<N:｣:11>ントスラッシャー,guide_safe_override,바람 검,,7,DF 6E E0 BA 9C DE F3,0x81230,0x80FB7
+skill_name,29,<N:ヒ:5>ートウ<N:｣:13>ール,guide_safe_override,불의 장막,,9,E0 0A E0 9B 9C E0 E1 DF 39,0x81234,0x80FBF
+skill_name,30,サンダーストーム,guide_safe_override,전기 폭풍,,9,E0 CC E0 AC 9C DE CB DE C9,0x81238,0x80FC9
+skill_name,31,テ<N:リ:12>ポート,guide_safe_override,공간 이동,,9,E0 C6 E0 F7 9C E0 BD E0 94,0x8123C,0x80FD3
+skill_name,32,心<N:眼:3>法,guide_safe_override,심안법,,6,DF 25 E0 E9 E0 B3,0x81240,0x80FDD
+skill_name,33,<N:退:3>魔光弾,guide_safe_override,악령 광선,,9,DF 1F E0 EE 9C DF DD E0 58,0x81244,0x80FE4
+skill_name,34,旋風撃蹴,guide_safe_override,회오리 차기,,11,DE C7 E0 62 E0 98 9C E0 96 E0 AC,0x81248,0x80FEE
+skill_name,35,流星爆,guide_safe_override,유성폭,,6,E0 AD E0 5A DE CB,0x8124C,0x80FFA
+skill_name,36,鬼神流<N:影:1><N:波:1>,guide_safe_override,유령 파동,,9,E0 AD E0 EE 9C DF A0 E0 94,0x81250,0x81001
+skill_name,37,滅掌烈破,guide_safe_override,멸장열파,,8,E0 4D E0 E1 E0 B2 DF A0,0x81254,0x8100B
+skill_name,38,<N:ゲ:16>ラック,guide_safe_override,회복 마물,,9,DE C7 DF 33 9C E0 9E E0 4F,0x81258,0x81014
+skill_name,39,モフリー,guide_safe_override,모프리,,6,E0 11 DF 9F E0 98,0x8125C,0x8101E
+skill_name,40,フウジン,guide_safe_override,후우진,,6,DF 6C E0 68 DF 10,0x81260,0x81025
+skill_name,41,ラ<N:｣:11>ジン,guide_safe_override,라이진,,6,E0 A6 E0 BD DF 10,0x81264,0x8102C
+skill_name,42,へモジー,guide_safe_override,헤모지,,6,DF 9D E0 11 E0 A2,0x81268,0x81033
+skill_name,43,オトン,guide_safe_override,강화 마물,,9,E0 F2 DE FE 9C E0 9E E0 4F,0x8126C,0x8103A
+skill_name,44,調ベる,guide_safe_override,조사,,4,E0 A4 E0 A5,0x81270,0x80F0F
+skill_name,45,ちょこ,guide_safe_override,초코,,4,DF EB DF A3,0x81274,0x81044
+skill_name,46,回復,translated_existing_bank,회복,,4,DE C7 DF 33,0x81278,0x80C96
+skill_name,47,<N:ｴ:24>か造り,translated_existing_bank,다리 만들기,,11,E0 C1 E0 98 9C E0 49 E0 3B E0 AC,0x8127C,0x81049
+skill_name,48,風雷破,guide_safe_override,바람 전기,,9,DF 6E E0 BA 9C E0 CC E0 AC,0x81280,0x81055
+skill_name,49,風雷破,guide_safe_override,바람 전기,,9,DF 6E E0 BA 9C E0 CC E0 AC,0x81284,0x81055
+skill_name,50,乗り移り,guide_safe_override,몸 가져오기,,11,DF 36 9C E0 C0 DF 14 E0 62 E0 AC,0x81288,0x8105F
+skill_name,51,バク<N:リ:12>ツ手裏剣,guide_safe_override,폭발 수리검,,11,DE CB E0 FA 9C DF B7 E0 98 DE F3,0x8128C,0x8106B
+skill_name,52,自爆,translated_existing_bank,자폭,,4,E0 E0 DE CB,0x81290,0x81077
+skill_name,53,ジ<N:ニ:13>クへの階段,translated_existing_bank,지옥으로 가는 계단,,18,E0 A2 DF 19 E0 DF E0 D6 9C E0 C0 E0 C2 9C E0 9A E0 37,0x81294,0x8107C
+skill_name,54,4方向,translated_existing_bank,사방 공격,,9,E0 A5 E0 0F 9C E0 C6 E0 40,0x81298,0x8108F
+skill_name,55,炎雷崩,guide_safe_override,불과 전기,,9,E0 0A E0 C7 9C E0 CC E0 AC,0x8129C,0x81099
+skill_name,56,ダスト・ルー<N:｣:11>ン,guide_safe_override,먼지 마법진,,11,DF C2 E0 A2 9C E0 9E E0 B3 DF 10,0x812A0,0x810A3
+skill_name,57,ヨミのつばさ,guide_safe_override,요미의 바람,,11,E0 66 E0 50 E0 9B 9C DF 6E E0 BA,0x812A4,0x810AF
+skill_name,58,やる気なし,guide_safe_override,기운 없음,,9,E0 AC DF FA 9C E0 F1 DF F8,0x812A8,0x810BB
+skill_description,0,,translated_existing_bank,,,0,,0x81708,0x804A3
+skill_description,1,ようがんを発生させ敵にダメージを<N:与:3>えます,guide_safe_override,불바다로 주변 적 공격,,21,E0 0A DF 6E E0 C1 E0 D6 9C E0 CF DE 3C 9C DF F2 9C E0 C6 E0 40,0x8170C,0x810C5
+skill_description,2,ステ<N:｣:11>タス傷害と体力を回復します,guide_safe_override,이상 상태와 체력 회복,,21,E0 BD E0 56 9C E0 56 DF 08 E0 64 9C E0 90 E0 8C 9C DE C7 DF 33,0x81710,0x810DB
+skill_description,3,いくうかんからの攻撃で敵にダメージを<N:与:3>えます,guide_safe_override,이공간 공격으로 적 피해,,23,E0 BD E0 C6 E0 F7 9C E0 C6 E0 40 E0 DF E0 D6 9C DF F2 9C DF 82 E0 88,0x81714,0x810F1
+skill_description,4,敵の素早さを下げます,guide_safe_override,일정 범위 적 민첩 감소,,22,E0 6B E0 EB 9C DE E4 E0 69 9C DF F2 9C DF BE DF EC 9C E0 01 E0 D9,0x81718,0x81109
+skill_description,5,いんせきが落下しまわりの敵にダメージを<N:与:3>えます,guide_safe_override,별을 내려 주변 적 공격,,22,DE E2 E0 A3 9C DF 97 E0 15 9C E0 CF DE 3C 9C DF F2 9C E0 C6 E0 40,0x8171C,0x81120
+skill_description,6,体力を回復します,guide_safe_override,주변 아군 체력 회복,,19,E0 CF DE 3C 9C E0 9C E0 C5 9C E0 90 E0 8C 9C DE C7 DF 33,0x81720,0x81137
+skill_description,7,<N:毒:1>を消しさります,guide_safe_override,해로운 기운 제거,,16,E0 88 E0 D6 DF FA 9C E0 AC DF FA 9C E0 AA DF 87,0x81724,0x80E4D
+skill_description,8,敵の魔法を封じ込めます,guide_safe_override,적의 마법 봉인,,14,DF F2 E0 9B 9C E0 9E E0 B3 9C DF 93 E0 6A,0x81728,0x8114B
+skill_description,9,ステ<N:｣:11>タス傷害を回復します,guide_safe_override,아군의 이상 상태 회복,,21,E0 9C E0 C5 E0 9B 9C E0 BD E0 56 9C E0 56 DF 08 9C DE C7 DF 33,0x8172C,0x8115A
+skill_description,10,天使が画面外に飛んでいき<N:リ:12>ー<N:ザ:8>ーで攻撃します,guide_safe_override,천사의 광선 공격,,16,DF 8C E0 A5 E0 9B 9C DF DD E0 58 9C E0 C6 E0 40,0x81730,0x81170
+skill_description,11,戦闘不能になつた味方を呼び戻せます,guide_safe_override,쓰러진 아군 부활,,16,E0 02 E0 25 DF 10 9C E0 9C E0 C5 9C E0 0B E0 80,0x81734,0x81181
+skill_description,12,敵の体力をすいとり味方に分け<N:与:3>えます,guide_safe_override,적 체력 줄여 아군 회복,,22,DF F2 9C E0 90 E0 8C 9C DF AA E0 DC 9C E0 9C E0 C5 9C DE C7 DF 33,0x81738,0x81192
+skill_description,13,敵一体に必殺の剣で斬りつけます,guide_safe_override,적 하나에 강한 검격,,19,DF F2 9C E0 C4 E0 99 E0 9F 9C E0 F2 E0 84 9C DE F3 E0 40,0x8173C,0x811A9
+skill_description,14,敵をマ<N:ヒ:5>させます,guide_safe_override,적 하나를 마비로 변화,,21,DF F2 9C E0 C4 E0 99 E0 AB 9C E0 9E E0 53 E0 D6 9C DE 3C DE FE,0x81740,0x812AC
+skill_description,15,2ます先の敵を斬りつけます,guide_safe_override,전방의 적 공격,,14,E0 CC E0 0F E0 9B 9C DF F2 9C E0 C6 E0 40,0x81744,0x812C2
+skill_description,16,敵に向かつて走り込んで斬りつけます,guide_safe_override,달려가며 적 공격,,16,DF D6 E0 15 E0 C0 DF BF 9C DF F2 9C E0 C6 E0 40,0x81748,0x812D1
+skill_description,17,味方の攻撃力を上げます,guide_safe_override,범위 아군 공격력 상승,,21,DE E4 E0 69 9C E0 9C E0 C5 9C E0 C6 E0 40 E0 8C 9C E0 56 E0 FF,0x8174C,0x812E2
+skill_description,18,<N:波:1>動<N:リ:12>ー<N:ザ:8>ー弾を撃ちます,guide_safe_override,파동 광선으로 적 공격,,21,DF A0 E0 94 9C DF DD E0 58 E0 DF E0 D6 9C DF F2 9C E0 C6 E0 40,0x81750,0x812F8
+skill_description,19,<N:遠:1>くの敵を気合で攻撃します,guide_safe_override,먼 적을 소리로 공격,,19,DF C2 9C DF F2 E0 A3 9C E0 D9 E0 98 E0 D6 9C E0 C6 E0 40,0x81754,0x8130E
+skill_description,20,一度にたくさんの爆弾を撃ちます,guide_safe_override,다수의 폭발 구슬 발사,,21,E0 C1 DF B7 E0 9B 9C DE CB E0 FA 9C E0 24 DF B6 9C E0 FA E0 A5,0x81758,0x81322
+skill_description,21,味方の体力を回復します,guide_safe_override,주변 아군 체력 회복,,19,E0 CF DE 3C 9C E0 9C E0 C5 9C E0 90 E0 8C 9C DE C7 DF 33,0x8175C,0x81137
+skill_description,22,敵のすばやさを下げます,guide_safe_override,일정 범위 적 민첩 감소,,22,E0 6B E0 EB 9C DE E4 E0 69 9C DF F2 9C DF BE DF EC 9C E0 01 E0 D9,0x81760,0x81109
+skill_description,23,味方のすばやさを上げます,guide_safe_override,주변 아군 민첩 상승,,19,E0 CF DE 3C 9C E0 9C E0 C5 9C DF BE DF EC 9C E0 56 E0 FF,0x81764,0x81338
+skill_description,24,全員がポニと同じ方向に向きを変えます,guide_safe_override,아군 방향을 포코로 변경,,23,E0 9C E0 C5 9C E0 0F DE F8 E0 A3 9C DF 02 DF A3 E0 D6 9C DE 3C E0 89,0x81768,0x8134C
+skill_description,25,すごい炎で敵をつつみこみダメージを<N:与:3>えます,guide_safe_override,큰 불꽃으로 범위 공격,,21,DF 0A 9C E0 0A DF 99 E0 DF E0 D6 9C DE E4 E0 69 9C E0 C6 E0 40,0x8176C,0x81364
+skill_description,26,敵を<N:眠:5>らせます,guide_safe_override,범위 적을 잠들게 함,,19,DE E4 E0 69 9C DF F2 E0 A3 9C DE D4 E0 3B E0 14 9C E0 85,0x81770,0x8137A
+skill_description,27,すごいふぶきを起こして敵にダメージを<N:与:3>えます,guide_safe_override,눈보라로 주변 적 공격,,21,DF 6A E0 93 E0 A6 E0 D6 9C E0 CF DE 3C 9C DF F2 9C E0 C6 E0 40,0x81774,0x8138E
+skill_description,28,すごい風を起こして敵にダメージを<N:与:3>えます,guide_safe_override,돌풍으로 주변 적 공격,,21,E0 D5 DE C9 E0 DF E0 D6 9C E0 CF DE 3C 9C DF F2 9C E0 C6 E0 40,0x81778,0x813A4
+skill_description,29,炎のかたまりを作りだします,guide_safe_override,불꽃 장막 생성,,14,E0 0A DF 99 9C E0 E1 DF 39 9C E0 04 E0 5A,0x8177C,0x813BA
+skill_description,30,すごい雷を落として敵にダメージを<N:与:3>えます,guide_safe_override,전기로 범위 적에게 피해,,23,E0 CC E0 AC E0 D6 9C DE E4 E0 69 9C DF F2 E0 9F E0 14 9C DF 82 E0 88,0x81780,0x813C9
+skill_description,31,まわりの味方を連れてテ<N:リ:12>ポートします,guide_safe_override,주변 아군과 공간 이동,,21,E0 CF DE 3C 9C E0 9C E0 C5 E0 C7 9C E0 C6 E0 F7 9C E0 BD E0 94,0x81784,0x813E1
+skill_description,32,敵<N:午:15>ャラクタをロックします,guide_safe_override,적 하나 고정,,12,DF F2 9C E0 C4 E0 99 9C E0 7F E0 EB,0x81788,0x813F7
+skill_description,33,心<N:眼:3>法でロックした敵に対して光弾を撃ち込みます,guide_safe_override,고정한 적에게 광선 발사,,23,E0 7F E0 EB E0 84 9C DF F2 E0 9F E0 14 9C DF DD E0 58 9C E0 FA E0 A5,0x8178C,0x81404
+skill_description,34,自分のまわりにいる敵<N:午:15>ャラクタを攻撃します,guide_safe_override,주변 적을 회전하며 공격,,23,E0 CF DE 3C 9C DF F2 E0 A3 9C DE C7 E0 CC E0 C4 DF BF 9C E0 C6 E0 40,0x81790,0x8141C
+skill_description,35,たつまきで敵をすいあげて地上にたたき落とします,guide_safe_override,회오리로 올려 내리침,,20,DE C7 E0 62 E0 98 E0 D6 9C DE D9 E0 15 9C DF 97 E0 98 DF 5A,0x81794,0x81434
+skill_description,36,自分の残像を敵に向かつてぶつけます,guide_safe_override,분신을 날려 공격,,16,E0 91 E0 C3 E0 A3 9C DF 98 E0 15 9C E0 C6 E0 40,0x81798,0x81449
+skill_description,37,自分よりある程度弱い敵を消し去ります,guide_safe_override,자신보다 약한 적을 소멸,,23,E0 E0 E0 C3 E0 93 E0 C1 9C DF B1 E0 84 9C DF F2 E0 A3 9C E0 D9 E0 4D,0x8179C,0x8145A
+skill_description,38,<N:ｌ:5><N:ゲ:16>ラックへを召喚します,guide_safe_override,회복 마물로 체력 회복,,21,DE C7 DF 33 9C E0 9E E0 4F E0 D6 9C E0 90 E0 8C 9C DE C7 DF 33,0x817A0,0x81472
+skill_description,39,<N:ｌ:5>モフリーへを召喚します,guide_safe_override,모프리를 불러 길 생성,,21,E0 11 DF 9F E0 98 E0 AB 9C E0 0A E0 25 9C DF 6B 9C E0 04 E0 5A,0x817A4,0x81488
+skill_description,40,<N:ｌ:5>フウジンへを召喚します,guide_safe_override,후우진을 부름,,13,DF 6C E0 68 DF 10 E0 A3 9C E0 0B DE E6,0x817A8,0x8149E
+skill_description,41,<N:ｌ:5>ラ<N:｣:11>ジンへを召喚します,guide_safe_override,라이진을 부름,,13,E0 A6 E0 BD DF 10 E0 A3 9C E0 0B DE E6,0x817AC,0x814AC
+skill_description,42,<N:ｌ:5>へモジーへを召喚します,guide_safe_override,헤모지를 불러 적을 변화,,23,DF 9D E0 11 E0 A2 E0 AB 9C E0 0A E0 25 9C DF F2 E0 A3 9C DE 3C DE FE,0x817B0,0x814BA
+skill_description,43,<N:ｌ:5>オトンへを召喚します,guide_safe_override,강한 마물로 힘 상승,,19,E0 F2 E0 84 9C E0 9E E0 4F E0 D6 9C E0 8E 9C E0 56 E0 FF,0x817B4,0x814D2
+skill_description,44,モンスターを調ベます,guide_safe_override,마물의 힘 조사,,14,E0 9E E0 4F E0 9B 9C E0 8E 9C E0 A4 E0 A5,0x817B8,0x814E6
+skill_description,45,<N:ｌ:5>ちょこへを召喚します,guide_safe_override,초코를 부름,,11,DF EB DF A3 E0 AB 9C E0 0B DE E6,0x817BC,0x814F5
+skill_description,46,味方を回復します,guide_safe_override,아군 체력 회복,,14,E0 9C E0 C5 9C E0 90 E0 8C 9C DE C7 DF 33,0x817C0,0x81501
+skill_description,47,行けないところに<N:ｴ:24>かを造ります,guide_safe_override,못 가는 곳에 길 생성,,20,E0 F5 9C E0 C0 E0 C2 9C E0 7B E0 9F 9C DF 6B 9C E0 04 E0 5A,0x817C4,0x81510
+skill_description,48,ラ<N:｣:11>ジンとの合体魔法,guide_safe_override,라이진 합체 마법,,16,E0 A6 E0 BD DF 10 9C E0 86 E0 90 9C E0 9E E0 B3,0x817C8,0x81525
+skill_description,49,フウジンとの合体魔法,guide_safe_override,후우진 합체 마법,,16,DF 6C E0 68 DF 10 9C E0 86 E0 90 9C E0 9E E0 B3,0x817CC,0x81536
+skill_description,50,敵に乗り移れます,guide_safe_override,적의 몸으로 이동,,16,DF F2 E0 9B 9C DF 36 E0 DF E0 D6 9C E0 BD E0 94,0x817D0,0x81547
+skill_description,51,まわりに手裏剣をばらまきます,guide_safe_override,주변에 수리검 난사,,18,E0 CF DE 3C E0 9F 9C DF B7 E0 98 DE F3 9C E0 3D E0 A5,0x817D4,0x81558
+skill_description,52,自爆します,guide_safe_override,자폭 공격,,9,E0 E0 DE CB 9C E0 C6 E0 40,0x817D8,0x8156B
+skill_description,53,かまフーメランで敵を攻撃します,guide_safe_override,큰 무기를 던져 공격,,19,DF 0A 9C E0 E7 E0 AC E0 AB 9C DF 69 DF 14 9C E0 C6 E0 40,0x817DC,0x81575
+skill_description,54,まわりの敵にダメージを<N:与:3>えます,guide_safe_override,주변 적에게 피해,,16,E0 CF DE 3C 9C DF F2 E0 9F E0 14 9C DF 82 E0 88,0x817E0,0x81589
+skill_description,55,まわりの敵にダメージを<N:与:3>えます,guide_safe_override,주변 적에게 피해,,16,E0 CF DE 3C 9C DF F2 E0 9F E0 14 9C DF 82 E0 88,0x817E4,0x81589
+skill_description,56,直せん上の敵をなぎはらいます,guide_safe_override,직선상의 적 공격,,16,DF 11 E0 58 E0 56 E0 9B 9C DF F2 9C E0 C6 E0 40,0x817E8,0x8159A
+skill_description,57,つばさをはためかせ風でダメージを<N:与:3>えます,guide_safe_override,바람으로 적에게 피해,,20,DF 6E E0 BA E0 DF E0 D6 9C DF F2 E0 9F E0 14 9C DF 82 E0 88,0x817EC,0x815AB
+skill_description,58,敵をへモジーにします,guide_safe_override,적을 헤모지 상태로 변화,,23,DF F2 E0 A3 9C DF 9D E0 11 E0 A2 9C E0 56 DF 08 E0 D6 9C DE 3C DE FE,0x817F0,0x815C0
+character_name,0,アーク,translated_existing_bank,아크,,4,E0 9C E0 9D,0x81B4C,0x815D8
+character_name,1,ククル,translated_existing_bank,쿠쿠루,,6,E0 7A E0 7A E0 44,0x81B50,0x815DD
+character_name,2,トッシュ,translated_existing_bank,토슈,,4,E0 7E DE DD,0x81B54,0x815E4
+character_name,3,ポニ,translated_existing_bank,포코,,4,DF 02 DF A3,0x81B58,0x815E9
+character_name,4,<N:ニ:13>ーゲン,translated_existing_bank,이가,,4,E0 BD E0 C0,0x81B5C,0x815EE
+character_name,5,<N:｣:11>ー<N:力:5>,preserved_v25_missing_glyph,고겐,겐,4,65 31 DD 02,0x81B60,0x815F3
+character_name,6,マーシャル,preserved_v25_missing_glyph,마샬,샬,5,64 31 60 D6 53,0x81B64,0x815F8
+character_name,7,チョン<N:力:5>ラ,translated_existing_bank,촌가라,,6,DF 83 E0 C0 E0 A6,0x81B68,0x815FE
+character_name,8,,translated_existing_bank,,,0,,0x81B6C,0x804A3
+character_name,9,,translated_existing_bank,,,0,,0x81B70,0x804A3
+character_name,10,,translated_existing_bank,,,0,,0x81B74,0x804A3
+character_name,11,ス<N:ゲ:16>ルトン,guide_safe_override,죽은 병사,,9,DF 13 E0 BF 9C E0 0E E0 A5,0x81B78,0x81605
+character_name,12,<N:ニ:13>ースト,translated_existing_bank,고스트,,6,E0 7F E0 39 E0 82,0x81B7C,0x8160F
+character_name,13,<N:ゾ:12>ン<N:ビ:5>,translated_existing_bank,좀비,,4,DF AB E0 53,0x81B80,0x81616
+character_name,14,<N:ク:12>リーンスラ<N:｣:11>ム,translated_existing_bank,그린 슬라임,,11,E0 29 E0 48 9C DF B6 E0 A6 DF F6,0x81B84,0x8161B
+character_name,15,カンジャ,translated_existing_bank,간자,,4,E0 F7 E0 E0,0x81B88,0x81627
+character_name,16,メ<N:｣:11>ジ,translated_existing_bank,메이지,,6,E0 8F E0 BD E0 A2,0x81B8C,0x8162C
+character_name,17,フ<N:=:12><N:｣:11>ター,translated_existing_bank,파이터,,6,DF A0 E0 BD DF E8,0x81B90,0x81633
+character_name,18,破戒僧,translated_existing_bank,파계승,,6,DF A0 E0 9A E0 FF,0x81B94,0x8163A
+character_name,19,ジャ<N:｣:11>アントバット,translated_existing_bank,자이언트 배트,,13,E0 E0 E0 BD E0 AE E0 82 9C DF BD E0 82,0x81B98,0x81641
+character_name,20,トールマスター,translated_existing_bank,돌 마스터,,9,E0 D5 9C E0 9E E0 39 DF E8,0x81B9C,0x8164F
+character_name,21,死神,translated_existing_bank,사신,,4,E0 A5 E0 C3,0x81BA0,0x81659
+character_name,22,エ<N:リ:12>メンタル,guide_safe_override,정령,,4,E0 EB E0 EE,0x81BA4,0x8165E
+character_name,23,妖樹,translated_existing_bank,요수,,4,E0 66 DF B7,0x81BA8,0x81663
+character_name,24,フ<N:=:12>ンタ<N:ス:15>ム,guide_safe_override,유령,,4,E0 AD E0 EE,0x81BAC,0x81668
+character_name,25,シート<N:リ:12><N:｣:11>ク,translated_existing_bank,시드레이크,,10,E0 61 DF 41 DF D2 E0 BD E0 9D,0x81BB0,0x8166D
+character_name,26,マ<N:｣:11>テ<N:ｲ:6>フラ<N:｣:11>,guide_safe_override,거대 파리,,9,DF 87 E0 36 9C DF A0 E0 98,0x81BB4,0x81678
+character_name,27,<N:午:15>ラートッ<N:ク:12>,translated_existing_bank,킬러 도그,,9,DF 88 E0 25 9C E0 A7 E0 29,0x81BB8,0x81682
+character_name,28,<N:リ:12>ットス<N:ゲ:16>ルトン,guide_safe_override,빨간 죽은 병사,,14,DF 2F E0 F7 9C DF 13 E0 BF 9C E0 0E E0 A5,0x81BBC,0x8168C
+character_name,29,フラックスカル,guide_safe_override,검은 죽은 병사,,14,DE F3 E0 BF 9C DF 13 E0 BF 9C E0 0E E0 A5,0x81BC0,0x8169B
+character_name,30,<N:リ:12><N:｣:11>ス,translated_existing_bank,레이스,,6,DF D2 E0 BD E0 39,0x81BC4,0x816AA
+character_name,31,<N:ク:12>ール,translated_existing_bank,구울,,4,E0 24 DF F9,0x81BC8,0x816B1
+character_name,32,フリージー,translated_existing_bank,프리지,,6,DF 9F E0 98 E0 A2,0x81BCC,0x816B6
+character_name,33,アシットスラ<N:｣:11>ム,translated_existing_bank,애시드 슬라임,,13,DF FE E0 61 DF 41 9C DF B6 E0 A6 DF F6,0x81BD0,0x816BD
+character_name,34,アサッシン,translated_existing_bank,어새신,,6,E0 A0 DF 92 E0 C3,0x81BD4,0x816CB
+character_name,35,スーパーシ<N:メ:6><N:ビ:5>,translated_existing_bank,슈퍼 좀비,,9,DE DD DF 04 9C DF AB E0 53,0x81BD8,0x816D2
+character_name,36,ウ<N:｣:11>ッチクラフト,translated_existing_bank,위치 크래프트,,13,E0 69 E0 B0 9C E0 9D E0 BB DF 9F E0 82,0x81BDC,0x816DC
+character_name,37,ソーサラー,translated_existing_bank,소서러,,6,E0 D9 E0 57 E0 25,0x81BE0,0x816EA
+character_name,38,<N:ネ:13>クロマンサー,guide_safe_override,사령 마법사,,11,E0 A5 E0 EE 9C E0 9E E0 B3 E0 A5,0x81BE4,0x816F1
+character_name,39,ウ<N:ｲ:6><N:ザ:8>ート,translated_existing_bank,위저드,,6,E0 69 E0 CB DF 41,0x81BE8,0x816FD
+character_name,40,闇法師,guide_safe_override,어두운 법사,,11,E0 A0 E0 F8 DF FA 9C E0 B3 E0 A5,0x81BEC,0x817F4
+character_name,41,修験者,translated_existing_bank,수행자,,6,DF B7 E0 8B E0 E0,0x81BF0,0x81800
+character_name,42,下法師,translated_existing_bank,하법사,,6,E0 C4 E0 B3 E0 A5,0x81BF4,0x81807
+character_name,43,<N:ネ:13><N:ビ:5>ュラス,guide_safe_override,연무 괴물,,9,DF 1C E0 E7 9C E0 C8 E0 4F,0x81BF8,0x8180E
+character_name,44,道化師,translated_existing_bank,광대,,4,DF DD E0 36,0x81BFC,0x81818
+character_name,45,デス<N:ハ:12>ウント,translated_existing_bank,데스 하운드,,11,E0 31 E0 39 9C E0 C4 DF FA DF 41,0x81C00,0x8181D
+character_name,46,デス,translated_existing_bank,데스,,4,E0 31 E0 39,0x81C04,0x81829
+character_name,47,ウ<N:=:12>ンパ<N:｣:11>アバット,translated_existing_bank,뱀파이어 배트,,13,DF BC DF A0 E0 BD E0 A0 9C DF BD E0 82,0x81C08,0x8182E
+character_name,48,ソートマン,guide_safe_override,검사,,4,DE F3 E0 A5,0x81C0C,0x8183C
+character_name,49,ナ<N:｣:11>トマスター,translated_existing_bank,나이트 마스터,,13,E0 99 E0 BD E0 82 9C E0 9E E0 39 DF E8,0x81C10,0x81841
+character_name,50,<N:ク:12><N:リ:12>ートナ<N:｣:11>ト,translated_existing_bank,그레이트 나이트,,15,E0 29 DF D2 E0 BD E0 82 9C E0 99 E0 BD E0 82,0x81C14,0x8184F
+character_name,51,ポ<N:｣:11><N:ス:15>ンスモッ<N:ク:12>,guide_safe_override,해로운 연기,,11,E0 88 E0 D6 DF FA 9C DF 1C E0 AC,0x81C18,0x8185F
+character_name,52,メデューサリ<N:ザ:8>ート,translated_existing_bank,메두사 리자드,,13,E0 8F E0 F8 E0 A5 9C E0 98 E0 E0 DF 41,0x81C1C,0x8186B
+character_name,53,トラ<N:ニ:13>ンフラ<N:｣:11>,guide_safe_override,왕잠자리,,8,E0 65 DE D4 E0 E0 E0 98,0x81C20,0x81879
+character_name,54,マントラッ<N:フ:11>,guide_safe_override,식인 식물,,9,DF B5 E0 6A 9C DF B5 E0 4F,0x81C24,0x81882
+character_name,55,デスフ<N:リ:12><N:｣:11>ム,translated_existing_bank,데스 플레임,,11,E0 31 E0 39 9C DF 9E DF D2 DF F6,0x81C28,0x8188C
+character_name,56,エ<N:リ:12>メンタルマスター,guide_safe_override,정령 지배자,,11,E0 EB E0 EE 9C E0 A2 DF BD E0 E0,0x81C2C,0x81898
+character_name,57,<N:｣:11>ー<N:力:5>,translated_existing_bank,이가,,4,E0 BD E0 C0,0x81C30,0x815EE
+character_name,58,,translated_existing_bank,,,0,,0x81C34,0x804A3
+character_name,59,野生へモジー,translated_existing_bank,야생 헤모지,,11,E0 DA E0 04 9C DF 9D E0 11 E0 A2,0x81C38,0x818A4
+character_name,60,<N:リ:12>ッサーデーモン,translated_existing_bank,레서 데몬,,9,DF D2 E0 57 9C E0 31 DF 37,0x81C3C,0x818B0
+character_name,61,<N:ク:12><N:リ:12>ーターデーモン,translated_existing_bank,그레이터 데몬,,13,E0 29 DF D2 E0 BD DF E8 9C E0 31 DF 37,0x81C40,0x818BA
+character_name,62,スタン<N:ニ:13>ー<N:リ:12>ム,guide_safe_override,바위 거인,,9,DF 6E E0 69 9C DF 87 E0 6A,0x81C44,0x818C8
+character_name,63,ワ<N:｣:11>バーン,translated_existing_bank,와이번,,6,E0 64 E0 BD DE E5,0x81C48,0x818D2
+character_name,64,マットバトラー,translated_existing_bank,매드 배틀러,,11,DF 38 DF 41 9C DF BD DF 06 E0 25,0x81C4C,0x818D9
+character_name,65,アークデーモン,translated_existing_bank,아크 데몬,,9,E0 9C E0 9D 9C E0 31 DF 37,0x81C50,0x818E5
+character_name,66,フ<N:=:12><N:｣:11>ア<N:ニ:13>ー<N:リ:12>ム,guide_safe_override,불의 거인,,9,E0 0A E0 9B 9C DF 87 E0 6A,0x81C54,0x818EF
+character_name,67,カッパートラ<N:ニ:13>ン,guide_safe_override,구리 용,,7,E0 24 E0 98 9C E0 67,0x81C58,0x818F9
+character_name,68,<N:ク:12><N:リ:12>ートサー<N:へ:4>ント,guide_safe_override,거대 뱀,,7,DF 87 E0 36 9C DF BC,0x81C5C,0x81901
+character_name,69,修行僧,translated_existing_bank,수행승,,6,DF B7 E0 8B E0 FF,0x81C60,0x81909
+character_name,70,ラマダ大僧正,translated_existing_bank,라마다 대승정,,13,E0 A6 E0 9E E0 C1 9C E0 36 E0 FF E0 EB,0x81C64,0x81910
+character_name,71,<N:ク:12>ラ・アピス,translated_existing_bank,그라 아비스,,11,E0 29 E0 A6 9C E0 9C E0 53 E0 39,0x81C68,0x8191E
+character_name,72,ニ・アピス,translated_existing_bank,니 아비스,,9,E0 35 9C E0 9C E0 53 E0 39,0x81C6C,0x8192A
+character_name,73,ラリュウ<N:午:15>,translated_existing_bank,라류우키,,8,E0 A6 E0 45 E0 68 E0 7C,0x81C70,0x81934
+character_name,74,<N:ヒ:5>ョウエン<N:午:15>,guide_safe_override,불 도깨비,,9,E0 0A 9C E0 A7 DF 58 E0 53,0x81C74,0x8193D
+character_name,75,ムル・アピス,translated_existing_bank,무르 아비스,,11,E0 E7 E0 46 9C E0 9C E0 53 E0 39,0x81C78,0x81947
+character_name,76,ラ・アピス,translated_existing_bank,라 아비스,,9,E0 A6 9C E0 9C E0 53 E0 39,0x81C7C,0x81953
+character_name,77,ちょこ,translated_existing_bank,초코,,4,DF EB DF A3,0x81C80,0x81044
+character_name,78,たからばこ,translated_existing_bank,보물상자,,8,E0 93 E0 4F E0 56 E0 E0,0x81C84,0x8195D
+character_name,79,たからばこ,translated_existing_bank,보물상자,,8,E0 93 E0 4F E0 56 E0 E0,0x81C88,0x8195D
+character_name,80,<N:ゲ:16>ラック,preserved_v25_missing_glyph,케락,락,5,DD 6D 57 82 4E,0x81C8C,0x81966
+character_name,81,,translated_existing_bank,,,0,,0x81C90,0x804A3
+character_name,82,モフリー,translated_existing_bank,모프리,,6,E0 11 DF 9F E0 98,0x81C94,0x8101E
+character_name,83,フウジン,translated_existing_bank,후우진,,6,DF 6C E0 68 DF 10,0x81C98,0x81025
+character_name,84,ラ<N:｣:11>ジン,translated_existing_bank,라이진,,6,E0 A6 E0 BD DF 10,0x81C9C,0x8102C
+character_name,85,オトン,preserved_v25_missing_glyph,오톤,톤,3,8F 95 34,0x81CA0,0x81704
+character_name,86,ちょこ,translated_existing_bank,초코,,4,DF EB DF A3,0x81CA4,0x81044
+character_name,87,へモジー,translated_existing_bank,헤모지,,6,DF 9D E0 11 E0 A2,0x81CA8,0x81033
+character_name,88,炎,translated_existing_bank,불꽃,,4,E0 0A DF 99,0x81CAC,0x8196C
+character_name,89,,translated_existing_bank,,,0,,0x81CB0,0x804A3
+character_name,90,,translated_existing_bank,,,0,,0x81CB4,0x804A3
+character_name,91,,translated_existing_bank,,,0,,0x81CB8,0x804A3
+character_name,92,,translated_existing_bank,,,0,,0x81CBC,0x804A3
+character_name,93,,translated_existing_bank,,,0,,0x81CC0,0x804A3
+character_name,94,,translated_existing_bank,,,0,,0x81CC4,0x804A3
+character_name,95,,translated_existing_bank,,,0,,0x81CC8,0x804A3
+character_name,96,,translated_existing_bank,,,0,,0x81CCC,0x804A3
+character_name,97,,translated_existing_bank,,,0,,0x81CD0,0x804A3
+character_name,98,,translated_existing_bank,,,0,,0x81CD4,0x804A3
+character_name,99,,translated_existing_bank,,,0,,0x81CD8,0x804A3
+character_name,100,ダークアーク,translated_existing_bank,다크 아크,,9,E0 C1 E0 9D 9C E0 9C E0 9D,0x81CDC,0x81971
+character_name,101,ダークククル,translated_existing_bank,다크 쿠쿠루,,11,E0 C1 E0 9D 9C E0 7A E0 7A E0 44,0x81CE0,0x8197B
+character_name,102,ダークトッシュ,translated_existing_bank,다크 토슈,,9,E0 C1 E0 9D 9C E0 7E DE DD,0x81CE4,0x81987
+character_name,103,ダークポニ,translated_existing_bank,다크 포코,,9,E0 C1 E0 9D 9C DF 02 DF A3,0x81CE8,0x81991
+character_name,104,ダーク<N:ニ:13>ーゲン,translated_existing_bank,다크 이가,,9,E0 C1 E0 9D 9C E0 BD E0 C0,0x81CEC,0x8199B
+character_name,105,ダーク<N:｣:11>ー<N:力:5>,preserved_v25_missing_glyph,다크 고겐,겐,7,67 31 4E 65 31 DD 02,0x81CF0,0x819A5
+character_name,106,ダークマーシャル,preserved_v25_missing_glyph,다크 마샬,샬,8,67 31 4E 64 31 60 D6 53,0x81CF4,0x819AD
+character_name,107,ダークチョン<N:力:5>ラ,translated_existing_bank,다크 촌가라,,11,E0 C1 E0 9D 9C DF 83 E0 C0 E0 A6,0x81CF8,0x819B6
+region_name,0,スメリア<N:空:2>港,translated_existing_bank,스메리아 공항,,13,E0 39 E0 8F E0 98 E0 9C 9C E0 C6 E0 87,0x81E38,0x819C2
+region_name,1,トウウ<N:ｲ:6>ル,translated_existing_bank,토우빌,,6,E0 7E E0 68 E0 54,0x81E3C,0x819D0
+region_name,2,パ<N:リ:12>ンシア城,translated_existing_bank,팔렌시아 성,,11,DF 8B DF 95 E0 61 E0 9C 9C E0 5A,0x81E40,0x819D7
+region_name,3,オルカスの丘,translated_existing_bank,올카스 언덕,,10,DE D9 DF E9 E0 39 9C E0 AE 44,0x81E44,0x819E3
+region_name,4,封印の滝,translated_existing_bank,봉인의 폭포,,11,DF 93 E0 6A E0 9B 9C DE CB DF 02,0x81E48,0x819EE
+region_name,5,ニル<N:卞:16>平原,translated_existing_bank,니르 평원,,9,E0 35 E0 46 9C DF 03 E0 FE,0x81E4C,0x819FA
+region_name,6,カラ<N:力:5>ン平野,translated_existing_bank,카라간 평야,,11,DF E9 E0 A6 E0 F7 9C DF 03 E0 DA,0x81E50,0x81A04
+region_name,7,ク<N:｣:11>ナの丘,translated_existing_bank,쿠나 언덕,,8,E0 7A E0 99 9C E0 AE 44,0x81E54,0x81A10
+region_name,8,ミルマーナ<N:空:2>港,translated_existing_bank,밀마나 공항,,11,E0 51 E0 9E E0 99 9C E0 C6 E0 87,0x81E58,0x81A19
+region_name,9,首都の軍本部,translated_existing_bank,수도 군본부,,11,DF B7 E0 A7 9C E0 C5 E0 52 E0 0B,0x81E5C,0x81A25
+region_name,10,トヨー<N:ゲ:16>の森,translated_existing_bank,토요케 숲,,9,E0 7E E0 66 E0 78 9C E0 5E,0x81E60,0x81A31
+region_name,11,ルワジの森,translated_existing_bank,루와지 숲,,9,E0 44 E0 64 E0 A2 9C E0 5E,0x81E64,0x81A3B
+region_name,12,カカラスの森,translated_existing_bank,카카라스 숲,,11,DF E9 DF E9 E0 A6 E0 39 9C E0 5E,0x81E68,0x81A45
+region_name,13,センバラの沼,translated_existing_bank,센바라 늘,,9,DE 34 DF 6E E0 A6 9C DF D7,0x81E6C,0x81A51
+region_name,14,<N:ク:12><N:リ:12><N:｣:11>シーヌ<N:空:2>港,translated_existing_bank,그레이시누 공항,,15,E0 29 DF D2 E0 BD E0 61 E0 34 9C E0 C6 E0 87,0x81E70,0x81A5B
+region_name,15,ラマダ寺,translated_existing_bank,라마다사,,8,E0 A6 E0 9E E0 C1 E0 A5,0x81E74,0x81A6B
+region_name,16,ラマダ山,translated_existing_bank,라마다산,,8,E0 A6 E0 9E E0 C1 E0 55,0x81E78,0x81A74
+region_name,17,アララトス<N:空:2>港,translated_existing_bank,아라라토스 공항,,15,E0 9C E0 A6 E0 A6 E0 7E E0 39 9C E0 C6 E0 87,0x81E7C,0x81A7D
+region_name,18,チョン<N:力:5>ラの店,translated_existing_bank,촌가라의 가게,,13,DF 83 E0 C0 E0 A6 E0 9B 9C E0 C0 E0 14,0x81E80,0x81A8D
+region_name,19,遺跡ダンジョン,translated_existing_bank,유적 던전,,9,E0 AD DF F2 9C DF 69 E0 CC,0x81E84,0x81A9B
+region_name,20,ア<N:г:23>ンダ高地,translated_existing_bank,아제다 고지,,11,E0 9C E0 AA E0 C1 9C E0 7F E0 A2,0x81E88,0x81AA5
+region_name,21,アリバーシャ<N:空:2>港,preserved_v25_missing_glyph,아리바샤 공항,샤,10,42 6B AF 31 60 D6 DD 18 DD 4A,0x81E8C,0x81AB1
+region_name,22,サリュ族の村,translated_existing_bank,사류족 마을,,11,E0 A5 E0 45 E0 CD 9C E0 9E E0 A3,0x81E90,0x81ABC
+region_name,23,水の神殿,translated_existing_bank,물의 신전,,9,E0 4F E0 9B 9C E0 C3 E0 CC,0x81E94,0x81AC8
+region_name,24,<N:リ:12><N:｣:11>デン遺跡,preserved_v25_missing_glyph,리덴 유적,덴,8,6F 65 81 34 DD 8F DD 9D,0x81E98,0x81AD2
+region_name,25,サラ砂漠,translated_existing_bank,사라 사막,,9,E0 A5 E0 A6 9C E0 A5 DF 39,0x81E9C,0x81ADB
+region_name,26,<N:｣:11>シュマのいわ場,preserved_v25_missing_glyph,라슈마 암장,암,8,65 60 AB 64 1C 1B 43 89,0x81EA0,0x81AE5
+region_name,27,カーデル<N:空:2>港,translated_existing_bank,카델 공항,,9,DF E9 DF 68 9C E0 C6 E0 87,0x81EA4,0x81AEE
+region_name,28,闘技場,translated_existing_bank,투기장,,6,E0 EF E0 AC E0 E1,0x81EA8,0x81AF8
+region_name,29,クラフ島,preserved_v25_missing_glyph,클라프섬,클,5,4E 57 A6 DE 05,0x81EAC,0x81AFF
+location_name,0,,translated_existing_bank,,,0,,0x82170,0x804A3
+location_name,1,山頂の社,translated_existing_bank,산정의 사당,,11,E0 55 E0 EB E0 9B 9C E0 A5 DF 47,0x82174,0x81B05
+location_name,2,アークの家,translated_existing_bank,아크의 집,,9,E0 9C E0 9D E0 9B 9C E0 D2,0x82178,0x81B11
+location_name,3,精霊の山,translated_existing_bank,정령의 산,,9,E0 EB E0 EE E0 9B 9C E0 55,0x8217C,0x81B1B
+location_name,4,村の門,translated_existing_bank,마을 입구,,9,E0 9E E0 A3 9C E0 C9 E0 24,0x82180,0x81B25
+location_name,5,精霊の山,translated_existing_bank,정령의 산,,9,E0 EB E0 EE E0 9B 9C E0 55,0x82184,0x81B1B
+location_name,6,パ<N:リ:12>ンシア城,translated_existing_bank,팔렌시아 성,,11,DF 8B DF 95 E0 61 E0 9C 9C E0 5A,0x82188,0x819D7
+location_name,7,謁見の聞,guide_safe_override,왕의 방,,7,E0 65 E0 9B 9C E0 0F,0x8218C,0x81B2F
+location_name,8,スメリア<N:空:2>港,translated_existing_bank,스메리아 공항,,13,E0 39 E0 8F E0 98 E0 9C 9C E0 C6 E0 87,0x82190,0x819C2
+location_name,9,パ<N:リ:12>ンシアを見おろす丘,translated_existing_bank,팔렌시아 전망대,,15,DF 8B DF 95 E0 61 E0 9C 9C E0 CC E0 4A E0 36,0x82194,0x81B37
+location_name,10,大臣の部屋,translated_existing_bank,대신의 방,,9,E0 36 E0 C3 E0 9B 9C E0 0F,0x82198,0x81CFC
+location_name,11,ミルマーナ<N:空:2>港,translated_existing_bank,밀마나 공항,,11,E0 51 E0 9E E0 99 9C E0 C6 E0 87,0x8219C,0x81A19
+location_name,12,ミルマーナ軍本部,translated_existing_bank,밀마나 군본부,,13,E0 51 E0 9E E0 99 9C E0 C5 E0 52 E0 0B,0x821A0,0x81D06
+location_name,13,将軍の部屋,translated_existing_bank,장군의 방,,9,E0 E1 E0 C5 E0 9B 9C E0 0F,0x821A4,0x81D14
+location_name,14,トヨー<N:ゲ:16>の森,translated_existing_bank,토요케 숲,,9,E0 7E E0 66 E0 78 9C E0 5E,0x821A8,0x81A31
+location_name,15,パ<N:リ:12>ンシア城地下倉庫,guide_safe_override,팔렌시아 지하 보관소,,20,DF 8B DF 95 E0 61 E0 9C 9C E0 A2 E0 C4 9C E0 93 E0 F3 E0 D9,0x821AC,0x81D1E
+location_name,16,パ<N:リ:12>ンシア城地下<N:牢:2>,translated_existing_bank,팔렌시아 지하감옥,,17,DF 8B DF 95 E0 61 E0 9C 9C E0 A2 E0 C4 E0 01 DF 19,0x821B0,0x81D33
+location_name,17,オルカスの丘,translated_existing_bank,올카스 언덕,,10,DE D9 DF E9 E0 39 9C E0 AE 44,0x821B4,0x819E3
+location_name,18,幻界,guide_safe_override,이계,,4,E0 BD E0 9A,0x821B8,0x81B47
+location_name,19,アララトス<N:空:2>港,translated_existing_bank,아라라토스 공항,,15,E0 9C E0 A6 E0 A6 E0 7E E0 39 9C E0 C6 E0 87,0x821BC,0x81A7D
+location_name,20,チョン<N:力:5>ラの店,translated_existing_bank,촌가라의 가게,,13,DF 83 E0 C0 E0 A6 E0 9B 9C E0 C0 E0 14,0x821C0,0x81A8D
+location_name,21,ア<N:г:23>ンダ高地洞<N:窟:10>,translated_existing_bank,아제다 고지 동굴,,16,E0 9C E0 AA E0 C1 9C E0 7F E0 A2 9C E0 94 DF DC,0x821C4,0x81D45
+location_name,22,ア<N:г:23>ンダ高地外,translated_existing_bank,아제다 고지 외부,,16,E0 9C E0 AA E0 C1 9C E0 7F E0 A2 9C DF 5E E0 0B,0x821C8,0x81D56
+location_name,23,遺跡ダンジョン,translated_existing_bank,유적 던전,,9,E0 AD DF F2 9C DF 69 E0 CC,0x821CC,0x81A9B
+location_name,24,<N:ク:12><N:リ:12><N:｣:11>シーヌ<N:空:2>港,translated_existing_bank,그레이시누 공항,,15,E0 29 DF D2 E0 BD E0 61 E0 34 9C E0 C6 E0 87,0x821D0,0x81A5B
+location_name,25,ラマダ寺道場,translated_existing_bank,라마다사 도장,,13,E0 A6 E0 9E E0 C1 E0 A5 9C E0 A7 E0 E1,0x821D4,0x81D67
+location_name,26,ラマダ寺僧正の部屋,translated_existing_bank,라마다사 승정의 방,,18,E0 A6 E0 9E E0 C1 E0 A5 9C E0 FF E0 EB E0 9B 9C E0 0F,0x821D8,0x81D75
+location_name,27,ラマダ山頂,translated_existing_bank,라마다산 정상,,13,E0 A6 E0 9E E0 C1 E0 55 9C E0 EB E0 56,0x821DC,0x81D88
+location_name,28,ラマダ寺,translated_existing_bank,라마다사,,8,E0 A6 E0 9E E0 C1 E0 A5,0x821E0,0x81A6B
+location_name,29,カーデル<N:空:2>港,translated_existing_bank,카델 공항,,9,DF E9 DF 68 9C E0 C6 E0 87,0x821E4,0x81AEE
+location_name,30,ニロシアムひかえ室,preserved_v25_missing_glyph,니로시암 대기실,암,10,D1 A2 60 42 D8 7D 20 46 DE DF,0x821E8,0x81D96
+location_name,31,ニロシアムぶたい,preserved_v25_missing_glyph,니로시암 무대,암,8,D1 A2 60 42 D8 CA 1F 1B,0x821EC,0x81DA1
+location_name,32,アリバーシャ<N:空:2>港,preserved_v25_missing_glyph,아리바샤 공항,샤,10,42 6B AF 31 60 D6 DD 18 DD 4A,0x821F0,0x81AB1
+location_name,33,サリュ族の村,translated_existing_bank,사류족 마을,,11,E0 A5 E0 45 E0 CD 9C E0 9E E0 A3,0x821F4,0x81ABC
+location_name,34,水の神殿,translated_existing_bank,물의 신전,,9,E0 4F E0 9B 9C E0 C3 E0 CC,0x821F8,0x81AC8
+location_name,35,地下エ<N:リ:12>ベータ,guide_safe_override,지하 승강기,,11,E0 A2 E0 C4 9C E0 FF E0 F2 E0 AC,0x821FC,0x81DAA
+location_name,36,地下バ<N:｣:11>オ<N:研:23><N:究:1>室,translated_existing_bank,지하 바이오 연구실,,18,E0 A2 E0 C4 9C DF 6E E0 BD E0 62 9C DF 1C E0 24 DF 26,0x82200,0x81DB6
+location_name,37,パ<N:リ:12>ンシア<N:街:4>頭,translated_existing_bank,팔렌시아 시가지,,15,DF 8B DF 95 E0 61 E0 9C 9C E0 61 E0 C0 E0 A2,0x82204,0x81DC9
+location_name,38,聖柩封印の滝外,translated_existing_bank,성관 봉인의 폭포 외부,,21,E0 5A E0 F3 9C DF 93 E0 6A E0 9B 9C DE CB DF 02 9C DF 5E E0 0B,0x82208,0x81DD9
+location_name,39,聖柩封印の滝内,translated_existing_bank,성관 봉인의 폭포 내부,,21,E0 5A E0 F3 9C DF 93 E0 6A E0 9B 9C DE CB DF 02 9C DF 97 E0 0B,0x8220C,0x81DEF
+location_name,40,トウウ<N:ｲ:6>ルがん<N:ヘ:5>き,guide_safe_override,토우빌 바위산,,13,E0 7E E0 68 E0 54 9C DF 6E E0 69 E0 55,0x82210,0x81E05
+location_name,41,うみベの飛<N:空:2>挺,translated_existing_bank,해변의 비행선,,13,E0 88 DE 3C E0 9B 9C E0 53 E0 8B E0 58,0x82214,0x81E13
+location_name,42,ニル<N:卞:16>平原,translated_existing_bank,니르 평원,,9,E0 35 E0 46 9C DF 03 E0 FE,0x82218,0x819FA
+location_name,43,カラ<N:力:5>ン平野,translated_existing_bank,카라간 평야,,11,DF E9 E0 A6 E0 F7 9C DF 03 E0 DA,0x8221C,0x81A04
+location_name,44,ク<N:｣:11>ナの丘,translated_existing_bank,쿠나 언덕,,8,E0 7A E0 99 9C E0 AE 44,0x82220,0x81A10
+location_name,45,ルワジの森,translated_existing_bank,루와지 숲,,9,E0 44 E0 64 E0 A2 9C E0 5E,0x82224,0x81A3B
+location_name,46,カカラスの森,translated_existing_bank,카카라스 숲,,11,DF E9 DF E9 E0 A6 E0 39 9C E0 5E,0x82228,0x81A45
+location_name,47,センバラの沼,translated_existing_bank,센바라 늘,,9,DE 34 DF 6E E0 A6 9C DF D7,0x8222C,0x81A51
+location_name,48,<N:リ:12><N:｣:11>デン遺跡,preserved_v25_missing_glyph,리덴 유적,덴,8,6F 65 81 34 DD 8F DD 9D,0x82230,0x81AD2
+location_name,49,サラ砂漠,translated_existing_bank,사라 사막,,9,E0 A5 E0 A6 9C E0 A5 DF 39,0x82234,0x81ADB
+location_name,50,<N:｣:11>シュマのいわ場,preserved_v25_missing_glyph,라슈마 암장,암,8,65 60 AB 64 1C 1B 43 89,0x82238,0x81AE5
+location_name,51,ニロシアム闘技場,preserved_v25_missing_glyph,니로시암 투기장,암,9,D1 A2 60 42 D8 93 DD 4C 89,0x8223C,0x81E21
+location_name,52,ラマダ寺道場,translated_existing_bank,라마다사 도장,,13,E0 A6 E0 9E E0 C1 E0 A5 9C E0 A7 E0 E1,0x82240,0x81D67
+location_name,53,クラーフ島<N:空:2>港,preserved_v25_missing_glyph,클라프섬 공항,클,10,4E 57 31 A6 DE 05 DD 18 DD 4A,0x82244,0x81E2B
+location_name,54,クラーフとう最上階,guide_safe_override,탑 꼭대기,,9,DE 94 9C DE F1 E0 36 E0 AC,0x82248,0x81F04

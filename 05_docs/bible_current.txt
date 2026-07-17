@@ -1262,3 +1262,11 @@ story_test_23 S1072 안전 경계 기준
 - The missed Choppin battle-status tutorial is duplicated in six files: `S2045`, `S3014`, `S5013`, `S6014`, `S7012`, and `S8013`. All six now use four E2 strings while preserving every original E6 row control.
 - Independent audit passes for 503/503 UI pointers, three LV descriptions, twelve balanced help records, 24/24 tutorial E2 rows, 18/18 E6 controls, deterministic rebuilding, and no changes outside declared executable/body/slot ranges.
 - Candidate output: `03_output/ui_safe_v30_cumulative_patch_only.zip`, SHA256 `3361FD182D86C5B2B8719DD468F996B23874BC8265ABBC0819B4E2B1F11D8C92`. Runtime verification remains required.
+
+2026-07-17 system-screen and battle-choice repair candidate v0.31:
+- Runtime rejects v0.30's deliberate thirteen-cell padding. The spaces remain visibly wide and still produce awkward wrapping, so v0.31 replaces all twelve affected skill descriptions with natural single-line text of at most thirteen displayed cells.
+- Twenty-one `PSX.EXE` system strings now cover the load/save messages, shared `예/아니요`, save confirmation, pre-battle equipment confirmation, generic confirmation, and the field help line. The former controller-icon controls in the bottom help are removed and replaced by `확인: 결정, 뒤로: 돌아가기`.
+- Sixty-three battle confirmations in nine `C1/SC*.DAT` and `C2/SC0A1.DAT` files now display `전투를 시작할까? / 싸운다 / 돌아간다`. Prompt and option text use verified E2 slots while every original E5/E6 position remains exact.
+- Existing memory-card slot labels are stored inside the save data and are not migrated by the patch. Previously created slots can therefore retain Japanese place names; newly saved metadata must be checked separately at runtime.
+- Independent audit passes for 503/503 UI pointers, 12/12 one-line skill helps, 21/21 system pointers, 63/63 battle choices, exact E5/E6 geometry, unchanged v0.30 `COMM.IMG`, and zero changes outside declared ranges.
+- Candidate output: `03_output/ui_safe_v31_cumulative_patch_only.zip`, SHA256 `C693D30862AE9681EB2B4F492BBECA3BFE17FF396EF88B132A4035FD7F7384F5`. Runtime verification of the six reported screens remains required.

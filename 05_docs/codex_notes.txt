@@ -552,3 +552,19 @@ DuckStation fallback HASH identity - 2026-07-17
 - The current `E:/arc/out` filesystem has no `SYSTEM.CNF`. DuckStation therefore records this rebuilt disc under fallback `HASH-*` identities rather than a stable serial-based identity.
 - Local `playtime.dat` and savestate filenames confirm many separate `HASH-*` entries. UI builds change `PSX.EXE`, so their fallback identity and accumulated playtime entry can change; earlier story-only DAT builds commonly retained the same executable identity.
 - This playtime split is not evidence of save-data or gameplay corruption. Do not add a guessed `SYSTEM.CNF` or alter disc layout merely to stabilize the identifier; that requires a separately verified packaging/XML change.
+
+PSX.EXE save/load and shared confirmation strings - 2026-07-17
+- The load/save screen strings are pointer-based, not fixed unmovable text. Confirmed source pointer words include `0x780E8-0x780F8`, `0x781B8-0x781D0`, `0x78220-0x7822C`, `0x8235C`, and `0x82AC0-0x82ACC`.
+- The matching Japanese source pools are `0x7809C-0x780DB`, `0x78100-0x781B7`, `0x781D4-0x7821F`, `0x822AC-0x822C3`, and `0x82A88-0x82ABF`. Runtime pointers use `0x8011A800 + file_offset`.
+- The field help at source `0x822AC` contains `E7 02` and `E7 03` controller-icon controls. Under the expanded shared font those controls can show corrupted glyphs. Replacing the entire pointed string with ordinary Korean text removes the controls without touching icon textures or renderer code.
+- Save slot place names visible in an existing memory card are save-data payload, not the live executable location-name pointer table. A patch does not retroactively translate those stored labels; verify a newly written save before classifying the live location table as failed.
+
+Battle confirmation E2 option rule - 2026-07-17
+- The common C1/C2 battle-confirmation family contains exactly 63 choice bodies: seven in each of `SC011`, `SC021`, `SC031`, `SC041`, `SC051`, `SC061`, `SC081`, `SC091`, and `SC0A1`.
+- Every body has two option text spans with source capacities 2 and 7 bytes. The first span cannot hold a natural Korean affirmative inline, but each span can hold a two-byte E2 redirect.
+- Within one file, all affirmative spans use skip 0 and all decline spans use skip 5, so one `싸운다` slot and one `돌아간다` slot can be shared by all seven bodies. Prompt slots remain per-body because their completion skips differ.
+- Preserve the source E5/E6 positions exactly. Only replace the first two bytes of each text span with E2 and store the source-span remainder in the external slot's final skip byte.
+
+Direct skill-help padding rejection - 2026-07-17
+- v0.30 proved that padding a thirteen-cell first phrase with visible spaces is not acceptable. The renderer shows the spaces as a large gap, so static row-length arithmetic alone does not predict a balanced visual result.
+- Use a natural single-line phrase of at most thirteen displayed cells for this help path. Do not reintroduce deliberate trailing or internal padding as a line-break mechanism.

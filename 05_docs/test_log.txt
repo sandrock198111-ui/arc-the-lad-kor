@@ -1247,3 +1247,19 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Cumulative isolation: PASS. Relative to v0.29, only `PSX.EXE` and the six declared DAT files differ; `COMM.IMG` is byte-identical.
 - Pointer readback: PASS, 503/503. Reproducibility: PASS, two builds with SHA256 `3361FD182D86C5B2B8719DD468F996B23874BC8265ABBC0819B4E2B1F11D8C92`.
 - Runtime status: pending checks of balanced skill rows, three LV help strings, all four tutorial rows, character sprites, battle entry, and battle start.
+
+2026-07-17 - v0.30 runtime layout rejection
+- Skill-help padding: FAIL. Deliberate spaces were rendered as a large visible gap, and `불바다로 범위 / 적에게 피해` still wrapped awkwardly.
+- Bottom system help: FAIL. The tested field-help line remained Japanese and displayed corrupted controller-icon glyphs; the previously repaired Choppin tutorial was a different string path.
+- Save/load and confirmation screens: FAIL coverage. Load instructions, save confirmation, and pre-battle equipment confirmation remained Japanese.
+- Battle confirmation wording: FAIL quality. `전투? / 예 / 그만` preserved cursor operation but was too short and unnatural.
+- Conclusion: keep v0.30 as a historical cumulative artifact only; do not use its padded skill wording as the active candidate.
+
+2026-07-17 - System-screen and battle-choice candidate v0.31
+- Skill help: PASS statically. All twelve reported descriptions are natural one-line strings of at most thirteen displayed cells and contain no deliberate double-space padding.
+- System strings: PASS. All 21 relocated `PSX.EXE` pointers read back the exact Korean payload. The bottom help contains no E7 controller-icon control bytes.
+- Battle choices: PASS. All 63 bodies in nine files display the new prompt/options through E2 slots; every source E5/E6 `(offset,value)` pair remains exact.
+- UI tables: PASS, 503/503 pointer payloads. `COMM.IMG` is byte-identical to v0.30.
+- Isolation: PASS. Relative to v0.30, changed members are only `PSX.EXE` and the nine declared battle-choice DAT files. Executable differences are confined to confirmed UI pools/tables, system pools, and 21 pointer words.
+- Reproducibility: PASS. Two consecutive builds produced SHA256 `C693D30862AE9681EB2B4F492BBECA3BFE17FF396EF88B132A4035FD7F7384F5`.
+- Runtime status: pending user packaging and checks of the six reported screens. Existing memory-card slot labels are not migrated and may remain Japanese until a new save is written.

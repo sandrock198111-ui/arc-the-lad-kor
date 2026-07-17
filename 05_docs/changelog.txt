@@ -457,3 +457,10 @@
 - Added `build_ui_safe_v30.py`; it translates four preserved tutorial rows in each of six duplicated scene files through verified empty E2 slots and retains all eighteen original E6 controls.
 - Added `audit_ui_safe_v30.py` for independent executable-pointer, help-layout, duplicate-tutorial, byte-range, and cumulative-member verification.
 - Built runtime-pending `ui_safe_v30_cumulative_patch_only.zip`, SHA256 `3361FD182D86C5B2B8719DD468F996B23874BC8265ABBC0819B4E2B1F11D8C92`.
+
+2026-07-17
+- Runtime rejected the v0.30 padded skill-help layout because the inserted spaces rendered as a large visible gap and did not produce a natural balanced line.
+- Added `ui_safe_v31_overrides.py` and restored twelve affected skill descriptions to natural single-line wording of at most thirteen displayed cells.
+- Added `build_ui_safe_v31.py`; it relocates 21 save/load and shared system strings through confirmed `PSX.EXE` pointers and repairs 63 battle-confirmation choices in nine files with shared E2 option slots.
+- Added `audit_ui_safe_v31.py` plus system and battle-choice manifests. Independent checks preserve all source E5/E6 positions, remove the broken bottom-help E7 icon controls, and reject changes outside declared ranges.
+- Built `ui_safe_v31_cumulative_patch_only.zip`, SHA256 `C693D30862AE9681EB2B4F492BBECA3BFE17FF396EF88B132A4035FD7F7384F5`.
