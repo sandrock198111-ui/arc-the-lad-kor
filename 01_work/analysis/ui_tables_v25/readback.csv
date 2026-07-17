@@ -1,0 +1,33 @@
+﻿index,status,korean_name,name_offset,name_bytes,name_hex,korean_description,description_offset,description_bytes,description_hex
+0,translated,둔화제,0x80B94,6,DF 96 DE FE E0 AA,민첩 일시 감소,0x80D1C,14,DF BE DF EC 9C E0 6B E0 61 9C E0 01 E0 D9
+1,translated,기력제,0x80B9C,6,E0 AC E0 8C E0 AA,헤모지 회복,0x80D2C,11,DF 9D E0 11 E0 A2 9C DE C7 DF 33
+2,translated,활력제,0x80BA4,6,E0 80 E0 8C E0 AA,단계 1 상승,0x80D38,11,E0 37 E0 9A 9C 12 9C E0 56 E0 FF
+3,translated,회복제,0x80BAC,6,DE C7 DF 33 E0 AA,체력 60 회복,0x80D44,12,E0 90 E0 8C 9C 17 11 9C DE C7 DF 33
+4,translated,마비옥,0x80BB4,6,E0 9E E0 53 DF 19,마비 부여,0x80D54,9,E0 9E E0 53 9C E0 0B E0 DC
+5,translated,돌,0x80BBC,2,E0 D5,던져서 피해,0x80D60,11,DF 69 DF 14 E0 57 9C DF 82 E0 88
+6,translated,레코풀,0x80BC0,6,DF D2 DF A3 DF 8A,방어력 상승,0x80D6C,11,E0 0F E0 A0 E0 8C 9C E0 56 E0 FF
+7,translated,약초,0x80BC8,4,DF B1 DF EB,체력 20 회복,0x80D78,12,E0 90 E0 8C 9C 13 11 9C DE C7 DF 33
+8,translated,위험풀,0x80BD0,6,E0 69 E0 E8 DF 8A,지속 피해 부여,0x80D88,14,E0 A2 E0 5C 9C DF 82 E0 88 9C E0 0B E0 DC
+9,translated,루우약,0x80BD8,6,E0 44 E0 68 DF B1,마비 회복,0x80D98,9,E0 9E E0 53 9C DE C7 DF 33
+10,translated,민첩약,0x80BE0,6,DF BE DF EC DF B1,민첩 일시 상승,0x80DA4,14,DF BE DF EC 9C E0 6B E0 61 9C E0 56 E0 FF
+11,translated,소폭약,0x80BE8,6,E0 D9 DE CB DF B1,던져서 피해,0x80DB4,11,DF 69 DF 14 E0 57 9C DF 82 E0 88
+12,translated,큰폭약,0x80BF0,6,DF 0A DE CB DF B1,던져서 피해,0x80DC0,11,DF 69 DF 14 E0 57 9C DF 82 E0 88
+13,translated,만병약,0x80BF8,6,E0 49 E0 0E DF B1,상태 이상 회복,0x80DCC,14,E0 56 DF 08 9C E0 BD E0 56 9C DE C7 DF 33
+14,translated,성수,0x80C00,4,E0 5A DF B7,지속 피해 해제,0x80DDC,14,E0 A2 E0 5C 9C DF 82 E0 88 9C E0 88 E0 AA
+15,translated,부활약,0x80C08,6,E0 0B E0 80 DF B1,쓰러진 대상 부활,0x80DEC,16,E0 02 E0 25 DF 10 9C E0 36 E0 56 9C E0 0B E0 80
+16,translated,공격약,0x80C10,6,E0 C6 E0 40 DF B1,공격력 일시 상승,0x80E00,16,E0 C6 E0 40 E0 8C 9C E0 6B E0 61 9C E0 56 E0 FF
+17,translated,수면옥,0x80C18,6,DF B7 E0 4C DF 19,수면 부여,0x80E14,9,DF B7 E0 4C 9C E0 0B E0 DC
+18,translated,약화옥,0x80C20,6,DF B1 DE FE DF 19,공격 방어 일시 감소,0x80E20,19,E0 C6 E0 40 9C E0 0F E0 A0 9C E0 6B E0 61 9C E0 01 E0 D9
+19,translated,힘열매,0x80C28,6,E0 8E E0 B2 DF 38,공격력 상승,0x80E34,11,E0 C6 E0 40 E0 8C 9C E0 56 E0 FF
+20,translated,파로열매,0x80C30,8,DF A0 E0 D6 E0 B2 DF 38,민첩 상승,0x80E40,9,DF BE DF EC 9C E0 56 E0 FF
+21,translated,생명열매,0x80C3C,8,E0 04 E0 4E E0 B2 DF 38,최대 체력 2 상승,0x80E4C,16,DF A4 E0 36 9C E0 90 E0 8C 9C 13 9C E0 56 E0 FF
+22,translated,마력초,0x80C48,6,E0 9E E0 8C DF EB,마력 상승,0x80E60,9,E0 9E E0 8C 9C E0 56 E0 FF
+23,translated,마력수,0x80C50,6,E0 9E E0 8C DF B7,최대 마력 2 상승,0x80E6C,16,DF A4 E0 36 9C E0 9E E0 8C 9C 13 9C E0 56 E0 FF
+24,translated,눈가림,0x80C58,6,DF 6A E0 C0 DF 3A,명중 감소,0x80E80,9,E0 4E DF A9 9C E0 01 E0 D9
+25,translated,쓴풀,0x80C60,4,DE DC DF 8A,방어력 일시 상승,0x80E8C,16,E0 0F E0 A0 E0 8C 9C E0 6B E0 61 9C E0 56 E0 FF
+26,translated,돌해제침,0x80C68,8,E0 D5 E0 88 E0 AA DF 5A,돌 상태 회복,0x80EA0,12,E0 D5 9C E0 56 DF 08 9C DE C7 DF 33
+27,translated,봉인침,0x80C74,6,DF 93 E0 6A DF 5A,봉인 상태 회복,0x80EB0,14,DF 93 E0 6A 9C E0 56 DF 08 9C DE C7 DF 33
+28,translated,부름병,0x80C7C,6,E0 0B DE E6 E0 0E,몬스터 부름에 사용,0x80EC0,18,DF 37 E0 39 DF E8 9C E0 0B DE E6 E0 9F 9C E0 A5 E0 67
+29,reserved_original,,0x80C84,5,3C 3C 3C 3C 3C,,0x80ED4,5,3C 3C 3C 3C 3C
+30,reserved_original,,0x80C8C,5,3C 3C 3C 3C 3C,,0x80EDC,5,3C 3C 3C 3C 3C
+31,reserved_original,,0x80C94,5,3C 3C 3C 3C 3C,,0x80EE4,5,3C 3C 3C 3C 3C

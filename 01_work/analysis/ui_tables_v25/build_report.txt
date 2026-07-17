@@ -1,0 +1,11 @@
+UI consumables v0.25
+Base ZIP SHA256: E5755DB4B0C911D406F1D03F752C5241A4681176D7C8FBBC759AA9CE08E0B3E8
+Translated records: 29/29 active consumables
+Reserved records preserved: 3/3
+Name block: 0x80B94-0x80C9B, free aligned bytes: 0
+Description block: 0x80D1C-0x80F13, free aligned bytes: 40
+Name targets: 0x80B94-0x80C94
+Description targets: 0x80D1C-0x80EE4
+Changed members: PSX.EXE
+Changed PSX.EXE bytes: 739
+Output ZIP SHA256: 2808FD4A0CA191F01BB368AC3915DA27FD5CCA37B801308D3EEA5ACDBC3164C1

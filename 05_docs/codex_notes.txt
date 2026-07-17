@@ -501,3 +501,10 @@ PSX.EXE UI pointer tables - 2026-07-17
 - Consumable index 7 is `薬草`. Its name slot is file `0x80BCC` (8 bytes), description slot is `0x80D88` (20 bytes), name pointer is `0x80CB8`, and description pointer is `0x80F30`.
 - The v0.24 probe deliberately changes only those two string slots and does not reuse the rejected executable tail cave.
 - Runtime confirms that the consumable-name table feeds the battle item palette and the matching description table feeds the L1 help window. Index 7 renders `약초` and `체력 20 회복` correctly, so direct in-slot Korean replacement is accepted when capacity permits.
+
+Consumable table repacking - 2026-07-17
+- The complete consumable-name block is file `0x80B94-0x80C9B`; its 32-pointer table is `0x80C9C-0x80D1B`. The complete description block is `0x80D1C-0x80F13`; its pointer table is `0x80F14-0x80F93`.
+- Repacking strings on four-byte boundaries inside those original blocks avoids the rejected executable tail cave and does not require a file-size or load-size change.
+- Runtime pointers are `0x8011A800 + file_offset`. Every rebuilt pointer must remain inside its matching block, and every target must read back as the expected zero-terminated payload.
+- The name block is exactly full after v0.25 while the description block retains 40 aligned bytes. Future consumable wording changes must preserve the aggregate name capacity or shorten another name by the same aligned amount.
+- Reserved consumable indices 29-31 remain three separate pointers with their original `？？？？？` payloads; do not merge them merely to recover space without a separate runtime proof.

@@ -1164,3 +1164,13 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Runtime name: PASS. The battle item palette displays `약초` with quantity `04` and no adjacent UI corruption.
 - Runtime description: PASS. Pressing L1 on the item displays `체력 20 회복` in the help window with correct Korean glyphs and digits.
 - Runtime status: accepted as the first item-table baseline.
+
+2026-07-17 - Full consumable item batch v0.25
+- Input: accepted item v0.24 cumulative ZIP, SHA256 `E5755DB4B0C911D406F1D03F752C5241A4681176D7C8FBBC759AA9CE08E0B3E8`.
+- Coverage: PASS. Korean names and descriptions exist for all 29 active consumable records; reserved indices 29-31 retain their original raw strings.
+- Name block: PASS. All 32 strings fit `0x80B94-0x80C9B` with original four-byte alignment; all 32 pointers at `0x80C9C` are unique, ordered, in range, and read back exactly.
+- Description block: PASS. All 32 strings fit `0x80D1C-0x80F13` with 40 aligned bytes remaining; all 32 pointers at `0x80F14` are unique, ordered, in range, and read back exactly.
+- Isolation: PASS. Only `PSX.EXE` differs from v0.24. All 76 other ZIP members, including `COMM.IMG`, are byte-identical. All 739 changed executable bytes are inside the two string blocks and two pointer tables.
+- Font: PASS statically. All 83 mapped Hangul glyphs used by the batch match the current `COMM.IMG` planes with zero differing pixels; no new glyph is allocated.
+- Reproducibility: PASS. Consecutive builds produced SHA256 `2808FD4A0CA191F01BB368AC3915DA27FD5CCA37B801308D3EEA5ACDBC3164C1`.
+- Runtime status: pending representative checks of a healing item, status item, stat item, and summoning item with L1 help.
