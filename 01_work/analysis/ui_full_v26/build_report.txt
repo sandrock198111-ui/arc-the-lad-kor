@@ -1,0 +1,17 @@
+UI full v0.26 cumulative patch
+base_zip_sha256=2808FD4A0CA191F01BB368AC3915DA27FD5CCA37B801308D3EEA5ACDBC3164C1
+output_zip_sha256=F31C5BABEE7011A2E9A8B168A971C80E5D8C376F655436ED1E6EBCB67E028549
+translated_records=503/503
+ui_only_glyphs=389
+ui_glyph_index_range=1240-1629
+deduplicated_strings=429
+global_pool_capacity=6136
+global_pool_free_bytes=778
+psx_exe_changed_bytes=6725
+comm_img_changed_bytes=4884
+comm_img_changed_nibbles=7971
+battle_cursor_preserved=true
+story_glyph_planes_preserved=true
+e2_code_caves_preserved=true
+unrelated_zip_members_preserved=true
+changed_members=COMM.IMG,PSX.EXE

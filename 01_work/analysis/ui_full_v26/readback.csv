@@ -1,0 +1,504 @@
+﻿table_key,index,pointer_offset,string_offset,encoded_bytes,encoded_hex,korean
+equipment_name,0,0x804A4,0x80224,11,E1 A2 E1 26 E2 02 9C E1 BF E2 78,불꽃의 수호
+equipment_name,1,0x804A8,0x80230,11,E1 DE E2 01 E2 02 9C E1 BF E2 78,얼음의 수호
+equipment_name,2,0x804AC,0x8023C,11,E1 D2 E2 59 9C E2 76 E1 81 E2 1E,안티 헤모지
+equipment_name,3,0x804B0,0x80248,11,E2 37 E1 FA E2 02 9C E1 9F E2 0F,치유의 부적
+equipment_name,4,0x804B4,0x80254,11,E1 A7 E1 3A 9C E2 74 E1 6E E1 52,비단 허리띠
+equipment_name,5,0x804B8,0x80260,9,E1 72 E1 96 9C E2 39 E1 4B,마법 카드
+equipment_name,6,0x804BC,0x8026A,14,E1 BF E1 7E 9C E1 90 E2 1E 9C E2 39 E1 4B,수면 방지 카드
+equipment_name,7,0x804C0,0x80279,7,E2 5A E1 F5 9C E1 D4,파워 암
+equipment_name,8,0x804C4,0x80281,13,E2 39 E2 03 E2 0E 9C E1 23 E1 5B E1 A5,카이저 글러브
+equipment_name,9,0x804C8,0x8028F,11,E2 7B E1 AF E2 02 9C E2 0D E1 09,환상의 장갑
+equipment_name,10,0x804CC,0x8029B,8,E1 B7 E1 23 E1 53 E1 C4,선글라스
+equipment_name,11,0x804D0,0x802A4,15,E1 80 E2 1B E2 02 9C E1 49 E1 69 E1 72 E1 6E,명중의 두루마리
+equipment_name,12,0x804D4,0x802B4,15,E2 55 E2 2C E2 02 9C E1 49 E1 69 E1 72 E1 6E,투척의 두루마리
+equipment_name,13,0x804D8,0x802C4,9,E1 C9 E2 02 9C E2 1A E1 79,신의 주먹
+equipment_name,14,0x804DC,0x802CE,15,E1 8B E2 03 E1 EB E1 61 9C E1 5D E2 03 E2 0E,바이올렛 레이저
+equipment_name,15,0x804E0,0x802DE,6,E1 82 E1 0E E2 03,목걸이
+equipment_name,16,0x804E4,0x802E5,4,E1 E7 E2 1A,염주
+equipment_name,17,0x804E8,0x802EA,13,E2 0D E1 66 E2 02 9C E1 78 E1 6E E1 52,장로의 머리띠
+equipment_name,18,0x804EC,0x802F8,13,E2 21 E2 68 E2 02 9C E1 8D E1 39 E1 28,질풍의 반다나
+equipment_name,19,0x804F0,0x80306,11,E2 6D E2 03 E2 5F 9C E1 9F E2 35,하이퍼 부츠
+equipment_name,20,0x804F4,0x80312,9,E2 07 E1 C7 9C E1 C9 E1 8F,임시 신발
+equipment_name,21,0x804F8,0x8031C,6,E2 5B E2 25 9C 12,팔찌 1
+equipment_name,22,0x804FC,0x80323,6,E2 5B E2 25 9C 13,팔찌 2
+equipment_name,23,0x80500,0x8032A,11,E1 24 E1 C1 E2 02 9C E2 5B E2 25,기술의 팔찌
+equipment_name,24,0x80504,0x80336,11,E1 E4 E1 C9 E2 02 9C E1 24 E1 44,여신의 기도
+equipment_name,25,0x80508,0x80342,11,E2 5A E1 F5 9C E1 6E E1 C4 E2 56,파워 리스트
+equipment_name,26,0x8050C,0x8034E,11,E1 41 E2 06 E2 02 9C E2 03 E1 AA,데일의 이빨
+equipment_name,27,0x80510,0x8035A,11,E2 7B E1 BF E2 02 9C E2 03 E1 AA,환수의 이빨
+equipment_name,28,0x80514,0x80366,15,E1 8B E1 3B E1 8B E1 55 E2 02 9C E1 B7 E1 FB,바닷바람의 선율
+equipment_name,29,0x80518,0x80376,10,E2 17 E1 0B E1 25 E1 41 E1 24,조개껍데기
+equipment_name,30,0x8051C,0x80381,11,E1 FA E1 38 E2 3F E2 02 9C E1 AB,유니콘의 뿔
+equipment_name,31,0x80520,0x8038D,11,E1 A7 E1 22 E2 02 9C E1 D2 E1 13,비극의 안경
+equipment_name,32,0x80524,0x80399,4,E1 0D E1 F4,거울
+equipment_name,33,0x80528,0x8039E,11,E1 15 E1 3D E2 02 9C E1 8D E2 1E,고대의 반지
+equipment_name,34,0x8052C,0x803AA,11,E2 7B E1 AF E2 02 9C E1 8D E2 1E,환상의 반지
+equipment_name,35,0x80530,0x803B6,11,E1 72 E1 44 E2 02 9C E1 8D E2 1E,마도의 반지
+equipment_name,36,0x80534,0x803C2,11,E2 0D E1 29 E1 08 9C E1 8D E2 1E,장난감 반지
+equipment_name,37,0x80538,0x803CE,11,E1 45 E1 73 E2 03 9C E1 8D E2 1E,독막이 반지
+equipment_name,38,0x8053C,0x803DA,11,E2 7B E1 AF E2 02 9C E1 90 E2 5D,환상의 방패
+equipment_name,39,0x80540,0x803E6,11,E2 10 E1 AC E2 02 9C E1 BF E2 78,전사의 수호
+equipment_name,40,0x80544,0x803F2,11,E2 0D E1 66 E2 02 9C E1 90 E2 5D,장로의 방패
+equipment_name,41,0x80548,0x803FE,13,E1 0A E1 63 E2 6E 9C E2 1E E2 5C E2 03,강력한 지팡이
+equipment_name,42,0x8054C,0x8040C,13,E2 1E E1 EA E2 02 9C E1 C4 E1 33 E2 69,지옥의 스누프
+equipment_name,43,0x80550,0x8041A,7,E1 ED E2 02 9C E1 AF,왕의 상
+equipment_name,44,0x80554,0x80422,7,E1 76 E2 02 9C E1 AF,매의 상
+equipment_name,45,0x80558,0x8042A,7,E1 05 E2 24 9C E1 AF,가짜 상
+equipment_name,46,0x8055C,0x80432,4,E1 3A E1 0F,단검
+equipment_name,47,0x80560,0x80437,9,E2 7B E1 AF E2 02 9C E1 0F,환상의 검
+equipment_name,48,0x80564,0x80441,15,E1 6E E1 53 E2 02 9C E1 78 E1 6E E2 0D E1 C8,리라의 머리장식
+equipment_name,49,0x80568,0x80451,13,E1 EF E1 47 E2 37 E1 35 9C E1 9B E1 B6,요동치는 보석
+equipment_name,50,0x8056C,0x8045F,9,E1 D0 E1 78 9C E1 C4 E2 52,아머 스톤
+equipment_name,51,0x80570,0x80469,11,E1 66 E1 77 E1 CC 9C E1 C4 E2 52,로맨싱 스톤
+equipment_name,52,0x80574,0x80469,11,E1 66 E1 77 E1 CC 9C E1 C4 E2 52,로맨싱 스톤
+equipment_name,53,0x80578,0x80469,11,E1 66 E1 77 E1 CC 9C E1 C4 E2 52,로맨싱 스톤
+equipment_name,54,0x8057C,0x80469,11,E1 66 E1 77 E1 CC 9C E1 C4 E2 52,로맨싱 스톤
+equipment_name,55,0x80580,0x80475,11,E2 4B E1 DB E2 02 9C E1 0D E1 F4,태양의 거울
+equipment_name,56,0x80584,0x80481,7,E1 D5 E2 79 9C E2 2A,압화 책
+equipment_name,57,0x80588,0x80489,13,E2 44 E1 53 E1 F2 E1 C4 E2 02 9C E2 2A,클라우스의 책
+equipment_name,58,0x8058C,0x80497,6,E2 01 E1 D1 E2 22,음악집
+equipment_name,59,0x80590,0x805A4,11,E1 53 E2 42 E2 02 9C E1 86 E2 0D,라크의 문장
+equipment_name,60,0x80594,0x805B0,13,E1 FA E2 39 E1 6E E2 02 9C E1 86 E2 0D,유카리의 문장
+equipment_name,61,0x80598,0x805BE,11,E2 63 E1 38 E2 02 9C E1 86 E2 0D,포니의 문장
+equipment_name,62,0x8059C,0x805CA,11,E1 F1 E2 0A E2 02 9C E2 1D E2 66,용자의 증표
+equipment_name,63,0x805A0,0x805D6,10,E1 02 E1 02 E1 02 E1 02 E1 02,?????
+equipment_description,0,0x80A94,0x805E1,19,E2 79 E1 E7 9C E1 19 E1 12 9C E2 6B E2 71 9C E1 08 E1 BD,화염 공격 피해 감소
+equipment_description,1,0x80A98,0x805F5,19,E1 2D E1 24 9C E1 19 E1 12 9C E2 6B E2 71 9C E1 08 E1 BD,냉기 공격 피해 감소
+equipment_description,2,0x80A9C,0x80609,11,E2 76 E1 81 E2 1E 9C E1 90 E2 1E,헤모지 방지
+equipment_description,3,0x80AA0,0x80615,14,E2 7E E1 9C 9C E2 80 E1 1A 9C E2 1D E1 05,회복 효과 증가
+equipment_description,4,0x80AA4,0x80624,15,E2 7F E1 4C 9C E1 13 E2 75 E2 37 9C 13 E1 91,획득 경험치 2배
+equipment_description,5,0x80AA8,0x80634,14,E1 72 E1 63 9C 12 11 E1 01 9C E1 AF E1 C6,마력 10% 상승
+equipment_description,6,0x80AAC,0x80643,9,E1 BF E1 7E 9C E1 90 E2 1E,수면 방지
+equipment_description,7,0x80AB0,0x8064D,23,E2 31 E1 05 E1 53 9C E1 90 E1 DC E1 63 9C 14 11 E1 01 9C E1 AF E1 C6,촌가라 방어력 30% 상승
+equipment_description,8,0x80AB4,0x80665,13,E1 40 E2 1E E1 24 9C E1 5D E1 98 9C 12,던지기 레벨 1
+equipment_description,9,0x80AB8,0x80673,16,E1 19 E1 12 E1 63 9C 16 11 E1 01 9C E1 AF E1 C6,공격력 50% 상승
+equipment_description,10,0x80ABC,0x80684,9,E1 D4 E2 82 9C E1 90 E2 1E,암흑 방지
+equipment_description,11,0x80AC0,0x8068E,11,E1 80 E2 1B E1 6C 9C E1 AF E1 C6,명중률 상승
+equipment_description,12,0x80AC4,0x8069A,27,E1 40 E2 1E E1 24 E1 05 9C E1 0A E1 63 9C E2 55 E2 2C E1 FC E1 66 9C E1 9A E2 79,던지기가 강력 투척으로 변화
+equipment_description,13,0x80AC8,0x806B6,21,E2 57 E2 13 9C E2 0F E1 E1 E1 10 9C E2 33 E1 05 9C E2 6B E2 71,특정 적에게 추가 피해
+equipment_description,14,0x80ACC,0x806CC,18,E1 19 E1 12 E2 03 9C E1 8D E1 4B E1 C7 9C E1 80 E2 1B,공격이 반드시 명중
+equipment_description,15,0x80AD0,0x806DF,31,E1 5D E1 98 E1 DF 9C E1 C7 9C E2 32 E1 3D 9C E2 2F E1 63 9C E2 1D E1 05 E1 5A 9C E1 AF E1 C6,레벨업 시 최대 체력 증가량 상승
+equipment_description,16,0x80AD4,0x806FF,19,E1 15 E1 11 9C E1 72 E1 63 9C 14 11 E1 01 9C E1 AF E1 C6,고겐 마력 30% 상승
+equipment_description,17,0x80AD8,0x8068E,11,E1 80 E2 1B E1 6C 9C E1 AF E1 C6,명중률 상승
+equipment_description,18,0x80ADC,0x80713,14,E1 89 E2 2E 9C 12 11 E1 01 9C E1 AF E1 C6,민첩 10% 상승
+equipment_description,19,0x80AE0,0x80722,14,E1 89 E2 2E 9C 14 11 E1 01 9C E1 AF E1 C6,민첩 30% 상승
+equipment_description,20,0x80AE4,0x80731,11,E2 12 E2 69 9C E1 5D E1 98 9C 12,점프 레벨 1
+equipment_description,21,0x80AE8,0x8073D,11,E1 8D E1 12 E1 6C 9C E1 AF E1 C6,반격률 상승
+equipment_description,22,0x80AEC,0x80749,11,E1 8E E1 24 9C E1 5D E1 98 9C 12,받기 레벨 1
+equipment_description,23,0x80AF0,0x80755,22,E1 8E E1 24 E1 05 9C E1 48 E1 40 E2 1E E1 24 E1 66 9C E1 9A E2 79,받기가 되던지기로 변화
+equipment_description,24,0x80AF4,0x8076C,19,E1 37 E1 63 9C E1 03 E1 04 9C E1 BD E1 A7 9C E2 11 E1 8D,능력 MP 소비 절반
+equipment_description,25,0x80AF8,0x80780,16,E1 19 E1 12 E1 63 9C 14 11 E1 01 9C E1 AF E1 C6,공격력 30% 상승
+equipment_description,26,0x80AFC,0x80791,19,E2 03 E1 05 9C E1 8D E1 12 9C E2 6B E2 71 9C E2 1D E1 05,이가 반격 피해 증가
+equipment_description,27,0x80B00,0x807A5,9,E2 80 E1 1A 9C E1 A2 E1 80,효과 불명
+equipment_description,28,0x80B04,0x807AF,29,E2 40 E2 40 E1 69 9C E2 72 E1 47 9C E1 C7 9C E2 1A E1 9A 9C E1 D0 E1 1E 9C E2 7E E1 9C,쿠쿠루 행동 시 주변 아군 회복
+equipment_description,29,0x80B08,0x807CD,18,E1 D0 E2 03 E2 50 9C E1 4B E1 67 E1 6C 9C E1 AF E1 C6,아이템 드롭률 상승
+equipment_description,30,0x80B0C,0x807E0,27,E2 0F 9C E2 2B E2 37 9C E1 C7 9C E2 84 E1 20 9C E1 D0 E2 03 E2 50 9C E2 7F E1 4C,적 처치 시 희귀 아이템 획득
+equipment_description,31,0x80B10,0x807A5,9,E2 80 E1 1A 9C E1 A2 E1 80,효과 불명
+equipment_description,32,0x80B14,0x807FC,9,E1 B6 E2 79 9C E1 90 E2 1E,석화 방지
+equipment_description,33,0x80B18,0x80806,19,E1 D0 E2 42 9C E2 10 E1 F1 9C E2 80 E1 1A 9C E1 A2 E1 80,아크 전용 효과 불명
+equipment_description,34,0x80B1C,0x8081A,14,E1 72 E1 63 9C 16 11 E1 01 9C E1 AF E1 C6,마력 50% 상승
+equipment_description,35,0x80B20,0x80829,14,E1 72 E1 63 9C 14 11 E1 01 9C E1 AF E1 C6,마력 30% 상승
+equipment_description,36,0x80B24,0x80838,30,E2 63 E2 3E E2 02 9C E1 90 E2 73 9C E2 10 E2 7B 9C E2 80 E1 1A E1 05 9C E2 10 E2 2F E2 79,포코의 방향 전환 효과가 전체화
+equipment_description,37,0x80B28,0x80857,7,E1 45 9C E1 90 E2 1E,독 방지
+equipment_description,38,0x80B2C,0x8085F,16,E1 90 E1 DC E1 63 9C 16 11 E1 01 9C E1 AF E1 C6,방어력 50% 상승
+equipment_description,39,0x80B30,0x80870,16,E1 90 E1 DC E1 63 9C 14 11 E1 01 9C E1 AF E1 C6,방어력 30% 상승
+equipment_description,40,0x80B34,0x80881,11,E1 90 E1 DC E1 FB 9C E1 AF E1 C6,방어율 상승
+equipment_description,41,0x80B38,0x8088D,21,E1 15 E1 11 9C E1 19 E1 12 E1 63 9C 18 11 E1 01 9C E1 AF E1 C6,고겐 공격력 70% 상승
+equipment_description,42,0x80B3C,0x808A3,21,E2 03 E1 05 9C E1 CB E1 D2 E1 96 9C E1 95 E1 F8 9C E2 7A E2 0D,이가 심안법 범위 확장
+equipment_description,43,0x80B40,0x808B9,27,E2 31 E1 05 E1 53 E1 05 9C E1 BD E2 7B E1 BF 9C E1 13 E2 75 E2 37 9C E2 7F E1 4C,촌가라가 소환수 경험치 획득
+equipment_description,44,0x80B44,0x808D5,9,E2 38 E1 85 9C E1 90 E2 1E,침묵 방지
+equipment_description,45,0x80B48,0x808DF,11,E2 7E E2 6B E1 FB 9C E1 AF E1 C6,회피율 상승
+equipment_description,46,0x80B4C,0x808EB,16,E1 19 E1 12 E1 63 9C 12 11 E1 01 9C E1 AF E1 C6,공격력 10% 상승
+equipment_description,47,0x80B50,0x808FC,14,E2 6B E2 71 9C E2 61 E2 27 9C E2 1D E1 05,피해 편차 증가
+equipment_description,48,0x80B54,0x8090B,29,E2 40 E2 40 E1 69 9C E1 9F E2 7C 9C E1 C7 9C E2 32 E1 3D 9C E2 2F E1 63 9C E2 7E E1 9C,쿠쿠루 부활 시 최대 체력 회복
+equipment_description,49,0x80B58,0x808FC,14,E2 6B E2 71 9C E2 61 E2 27 9C E2 1D E1 05,피해 편차 증가
+equipment_description,50,0x80B5C,0x80929,16,E1 90 E1 DC E1 63 9C 12 11 E1 01 9C E1 AF E1 C6,방어력 10% 상승
+equipment_description,51,0x80B60,0x807A5,9,E2 80 E1 1A 9C E1 A2 E1 80,효과 불명
+equipment_description,52,0x80B64,0x807A5,9,E2 80 E1 1A 9C E1 A2 E1 80,효과 불명
+equipment_description,53,0x80B68,0x807A5,9,E2 80 E1 1A 9C E1 A2 E1 80,효과 불명
+equipment_description,54,0x80B6C,0x807A5,9,E2 80 E1 1A 9C E1 A2 E1 80,효과 불명
+equipment_description,55,0x80B70,0x8093A,17,E1 76 9C E2 72 E1 47 9C E2 2F E1 63 9C E2 7E E1 9C,매 행동 체력 회복
+equipment_description,56,0x80B74,0x8094C,21,E2 51 E1 C3 9C E1 19 E1 12 9C E1 80 E2 1B E1 6C 9C E1 AF E1 C6,토슈 공격 명중률 상승
+equipment_description,57,0x80B78,0x80962,19,E1 81 E1 4D 9C E1 AF E2 4B 9C E2 03 E1 AF 9C E1 90 E2 1E,모든 상태 이상 방지
+equipment_description,58,0x80B7C,0x80976,19,E2 63 E2 3E 9C E1 72 E1 63 9C 14 11 E1 01 9C E1 AF E1 C6,포코 마력 30% 상승
+equipment_description,59,0x80B80,0x8098A,9,E1 72 E1 A7 9C E1 90 E2 1E,마비 방지
+equipment_description,60,0x80B84,0x80994,27,E2 51 E1 C3 9C E1 D8 E2 79 E1 32 E2 64 E2 28 E1 E1 9C E1 72 E1 A7 9C E1 9F E1 E4,토슈 앵화뇌폭참에 마비 부여
+equipment_description,61,0x80B88,0x806B6,21,E2 57 E2 13 9C E2 0F E1 E1 E1 10 9C E2 33 E1 05 9C E2 6B E2 71,특정 적에게 추가 피해
+equipment_description,62,0x80B8C,0x809B0,22,E1 D0 E2 42 9C E1 76 9C E2 72 E1 47 9C E1 03 E1 04 9C E2 7E E1 9C,아크 매 행동 MP 회복
+equipment_description,63,0x80B90,0x805D6,10,E1 02 E1 02 E1 02 E1 02 E1 02,?????
+consumable_name,0,0x80C9C,0x809C7,6,E1 27 E1 27 E2 03,끈끈이
+consumable_name,1,0x80CA0,0x809CE,9,E2 02 E1 F0 9C E2 15 E1 6E,의욕 젤리
+consumable_name,2,0x80CA4,0x809D8,11,E1 2F E2 37 E1 35 9C E1 E6 E1 76,넘치는 열매
+consumable_name,3,0x80CA8,0x809E4,9,E2 7E E1 9C 9C E1 E6 E1 76,회복 열매
+consumable_name,4,0x80CAC,0x809EE,9,E1 72 E1 A7 9C E1 AC E1 1A,마비 사과
+consumable_name,5,0x80CB0,0x8049E,2,E1 46,돌
+consumable_name,6,0x80CB4,0x809F8,9,E1 5D E2 3E E2 02 9C E2 67,레코의 풀
+consumable_name,7,0x80CB8,0x80A02,4,E1 DA E2 30,약초
+consumable_name,8,0x80CBC,0x80A07,4,E1 45 E2 30,독초
+consumable_name,9,0x80CC0,0x80A0C,9,E1 69 E1 F2 E2 02 9C E1 DA,루우의 약
+consumable_name,10,0x80CC4,0x80A16,9,E1 89 E2 2E E2 02 9C E1 DA,민첩의 약
+consumable_name,11,0x80CC8,0x80A20,9,E2 0B E1 FD 9C E2 64 E2 48,작은 폭탄
+consumable_name,12,0x80CCC,0x80A2A,7,E2 43 9C E2 64 E2 48,큰 폭탄
+consumable_name,13,0x80CD0,0x80A32,6,E1 74 E1 37 E1 DA,만능약
+consumable_name,14,0x80CD4,0x80A39,4,E1 B9 E1 BF,성수
+consumable_name,15,0x80CD8,0x80A3E,6,E1 9F E2 7C E1 DA,부활약
+consumable_name,16,0x80CDC,0x80A45,11,E1 19 E1 12 9C E2 70 E1 D0 E1 6E,공격 항아리
+consumable_name,17,0x80CE0,0x80A51,9,E1 BF E1 7E 9C E1 1D E1 C5,수면 구슬
+consumable_name,18,0x80CE4,0x80A5B,9,E1 DA E2 79 9C E1 1D E1 C5,약화 구슬
+consumable_name,19,0x80CE8,0x80A65,9,E2 87 E2 02 9C E1 E6 E1 76,힘의 열매
+consumable_name,20,0x80CEC,0x80A6F,11,E2 5A E1 66 E2 02 9C E1 E6 E1 76,파로의 열매
+consumable_name,21,0x80CF0,0x80A7B,11,E1 B2 E1 80 E2 02 9C E1 E6 E1 76,생명의 열매
+consumable_name,22,0x80CF4,0x80A87,9,E1 72 E1 63 E2 02 9C E2 09,마력의 잎
+consumable_name,23,0x80CF8,0x80B94,9,E1 72 E1 63 E2 02 9C E1 B1,마력의 샘
+consumable_name,24,0x80CFC,0x80B9E,9,E1 34 E1 05 E1 70 9C E2 67,눈가림 풀
+consumable_name,25,0x80D00,0x80BA8,5,E1 CF 9C E2 09,쓴 잎
+consumable_name,26,0x80D04,0x80BAE,11,E1 B6 E2 79 9C E2 71 E2 14 E2 38,석화 해제침
+consumable_name,27,0x80D08,0x80BBA,11,E2 38 E1 85 9C E2 71 E2 14 E2 38,침묵 해제침
+consumable_name,28,0x80D0C,0x80BC6,11,E1 BD E2 7B 9C E2 70 E1 D0 E1 6E,소환 항아리
+consumable_name,29,0x80D10,0x805D6,10,E1 02 E1 02 E1 02 E1 02 E1 02,?????
+consumable_name,30,0x80D14,0x805D6,10,E1 02 E1 02 E1 02 E1 02 E1 02,?????
+consumable_name,31,0x80D18,0x805D6,10,E1 02 E1 02 E1 02 E1 02 E1 02,?????
+consumable_description,0,0x80F14,0x80BD2,14,E1 89 E2 2E 9C E2 06 E1 C7 9C E1 08 E1 BD,민첩 일시 감소
+consumable_description,1,0x80F18,0x80BE1,11,E2 76 E1 81 E2 1E 9C E2 7E E1 9C,헤모지 회복
+consumable_description,2,0x80F1C,0x80BED,11,E1 5D E1 98 9C 12 9C E1 AF E1 C6,레벨 1 상승
+consumable_description,3,0x80F20,0x80BF9,12,E2 2F E1 63 9C 17 11 9C E2 7E E1 9C,체력 60 회복
+consumable_description,4,0x80F24,0x80C06,9,E1 72 E1 A7 9C E1 9F E1 E4,마비 부여
+consumable_description,5,0x80F28,0x80C10,11,E1 40 E2 16 E1 B5 9C E2 6B E2 71,던져서 피해
+consumable_description,6,0x80F2C,0x80C1C,11,E1 90 E1 DC E1 63 9C E1 AF E1 C6,방어력 상승
+consumable_description,7,0x80F30,0x80C28,12,E2 2F E1 63 9C 13 11 9C E2 7E E1 9C,체력 20 회복
+consumable_description,8,0x80F34,0x80C35,7,E1 45 9C E1 9F E1 E4,독 부여
+consumable_description,9,0x80F38,0x80C3D,9,E1 72 E1 A7 9C E2 7E E1 9C,마비 회복
+consumable_description,10,0x80F3C,0x80C47,14,E1 89 E2 2E 9C E2 06 E1 C7 9C E1 AF E1 C6,민첩 일시 상승
+consumable_description,11,0x80F40,0x80C56,9,E2 64 E1 8F 9C E2 6B E2 71,폭발 피해
+consumable_description,12,0x80F44,0x80C60,12,E2 43 9C E2 64 E1 8F 9C E2 6B E2 71,큰 폭발 피해
+consumable_description,13,0x80F48,0x80C6D,23,E1 3D E1 9F E1 A1 E2 02 9C E1 AF E2 4B 9C E2 03 E1 AF 9C E2 7E E1 9C,대부분의 상태 이상 회복
+consumable_description,14,0x80F4C,0x80C85,7,E1 45 9C E2 7E E1 9C,독 회복
+consumable_description,15,0x80F50,0x80D1C,16,E1 CE E1 5B E2 20 9C E1 3D E1 AF 9C E1 9F E2 7C,쓰러진 대상 부활
+consumable_description,16,0x80F54,0x80D2D,16,E1 19 E1 12 E1 63 9C E2 06 E1 C7 9C E1 AF E1 C6,공격력 일시 상승
+consumable_description,17,0x80F58,0x80C8D,9,E1 BF E1 7E 9C E1 9F E1 E4,수면 부여
+consumable_description,18,0x80F5C,0x80D3E,19,E1 19 E1 12 9C E1 90 E1 DC 9C E2 06 E1 C7 9C E1 08 E1 BD,공격 방어 일시 감소
+consumable_description,19,0x80F60,0x80D52,11,E1 19 E1 12 E1 63 9C E1 AF E1 C6,공격력 상승
+consumable_description,20,0x80F64,0x80D5E,9,E1 89 E2 2E 9C E1 AF E1 C6,민첩 상승
+consumable_description,21,0x80F68,0x80D68,16,E2 32 E1 3D 9C E2 2F E1 63 9C 13 9C E1 AF E1 C6,최대 체력 2 상승
+consumable_description,22,0x80F6C,0x80D79,9,E1 72 E1 63 9C E1 AF E1 C6,마력 상승
+consumable_description,23,0x80F70,0x80D83,16,E2 32 E1 3D 9C E1 72 E1 63 9C 13 9C E1 AF E1 C6,최대 마력 2 상승
+consumable_description,24,0x80F74,0x80D94,11,E1 80 E2 1B E1 6C 9C E1 08 E1 BD,명중률 감소
+consumable_description,25,0x80F78,0x80DA0,16,E1 90 E1 DC E1 63 9C E2 06 E1 C7 9C E1 AF E1 C6,방어력 일시 상승
+consumable_description,26,0x80F7C,0x80DB1,9,E1 B6 E2 79 9C E2 7E E1 9C,석화 회복
+consumable_description,27,0x80F80,0x80DBB,9,E2 38 E1 85 9C E2 7E E1 9C,침묵 회복
+consumable_description,28,0x80F84,0x80DC5,20,E2 31 E1 05 E1 53 E2 02 9C E1 83 E1 C4 E2 4C 9C E1 BD E2 7B,촌가라의 몬스터 소환
+consumable_description,29,0x80F88,0x805D6,10,E1 02 E1 02 E1 02 E1 02 E1 02,?????
+consumable_description,30,0x80F8C,0x805D6,10,E1 02 E1 02 E1 02 E1 02 E1 02,?????
+consumable_description,31,0x80F90,0x805D6,10,E1 02 E1 02 E1 02 E1 02 E1 02,?????
+skill_name,0,0x811C0,0x804A1,0,,
+skill_name,1,0x811C4,0x80DDA,11,E1 93 9C E1 21 E1 53 E1 F3 E1 4B,번 그라운드
+skill_name,2,0x811C8,0x80DE6,9,E2 51 E2 49 9C E2 86 E1 71,토탈 힐링
+skill_name,3,0x811CC,0x80DF0,11,E1 10 E2 06 9C E2 6A E1 57 E1 C7,게일 플래시
+skill_name,4,0x811D0,0x80DFC,13,E1 C5 E1 66 E1 F2 9C E1 E1 E1 2E E1 88,슬로우 에너미
+skill_name,5,0x811D4,0x80E0A,9,E1 7B E2 4E E1 E9 9C E2 65,메테오 폴
+skill_name,6,0x811D8,0x80C97,4,E2 41 E1 DC,큐어
+skill_name,7,0x811DC,0x80E14,8,E1 50 E2 63 E2 03 E2 1C,디포이즌
+skill_name,8,0x811E0,0x80E1D,8,E1 AC E2 06 E1 5C E2 56,사일런트
+skill_name,9,0x811E4,0x80E26,8,E1 6E E2 69 E1 5D E1 C7,리프레시
+skill_name,10,0x811E8,0x80E2F,4,E2 2D E1 94,천벌
+skill_name,11,0x811EC,0x80E34,8,E1 6E E2 0E E1 5E E1 BC,리저렉션
+skill_name,12,0x811F0,0x80E3D,8,E1 50 E1 8B E2 03 E1 4B,디바이드
+skill_name,13,0x811F4,0x80E46,10,E1 D8 E2 79 E1 32 E2 64 E2 28,앵화뇌폭참
+skill_name,14,0x811F8,0x80E51,6,E2 1A E1 8C E1 0F,주박검
+skill_name,15,0x811FC,0x80E58,6,E2 20 E1 19 E2 28,진공참
+skill_name,16,0x81200,0x80E5F,6,E2 78 E1 E8 E2 28,호영참
+skill_name,17,0x81204,0x80E66,9,E2 10 E2 55 E2 02 9C E1 A0,전투의 북
+skill_name,18,0x81208,0x80E70,9,E2 7D E1 AC E2 0A 9C E1 A0,황사자 북
+skill_name,19,0x8120C,0x80E7A,9,E1 24 E2 6F 9C E1 28 E2 5B,기합 나팔
+skill_name,20,0x81210,0x80E84,9,E2 49 E2 20 9C E1 28 E2 5B,탈진 나팔
+skill_name,21,0x81214,0x80E8E,11,E2 37 E1 FA E2 02 9C E2 6D E2 69,치유의 하프
+skill_name,22,0x81218,0x80E9A,11,E1 4A E2 79 9C E1 97 E2 03 E1 C4,둔화 베이스
+skill_name,23,0x8121C,0x80EA6,15,E1 F8 E2 47 E2 2D 9C E1 E9 E2 39 E1 6E E1 28,위타천 오카리나
+skill_name,24,0x81220,0x80EB6,13,E1 90 E2 73 E2 10 E2 7B 9C E2 6B E1 6E,방향전환 피리
+skill_name,25,0x81224,0x80EC4,10,E2 04 E1 C4 E2 6A E1 66 E2 10,익스플로전
+skill_name,26,0x81228,0x80ECF,9,E1 4B E1 70 9C E1 31 E2 42,드림 노크
+skill_name,27,0x8122C,0x80ED9,17,E1 39 E2 03 E1 D0 E1 83 E1 4B 9C E1 3E E1 C4 E2 56,다이아몬드 더스트
+skill_name,28,0x81230,0x80EEB,11,E1 F9 E1 4B 9C E1 C5 E1 57 E1 BB,윈드 슬래셔
+skill_name,29,0x81234,0x80EF7,7,E2 85 E2 56 9C E1 F7,히트 월
+skill_name,30,0x81238,0x80EFF,9,E1 CD E1 3E 9C E1 C4 E2 53,썬더 스톰
+skill_name,31,0x8123C,0x80F09,8,E2 4F E1 5D E2 63 E2 56,텔레포트
+skill_name,32,0x81240,0x80F94,6,E1 CB E1 D2 E1 96,심안법
+skill_name,33,0x81244,0x80F9B,8,E2 54 E1 72 E1 1C E2 48,퇴마광탄
+skill_name,34,0x81248,0x80FA4,8,E1 B7 E2 68 E1 12 E2 34,선풍격축
+skill_name,35,0x8124C,0x80FAD,6,E1 FA E1 B9 E2 64,유성폭
+skill_name,36,0x81250,0x80FB4,10,E1 20 E1 C9 E1 6B E1 E8 E2 5A,귀신류영파
+skill_name,37,0x81254,0x80FBF,8,E1 7F E2 0D E1 E6 E2 5A,멸장열파
+skill_name,38,0x81258,0x80FC8,4,E2 3C E1 54,케락
+skill_name,39,0x8125C,0x80FCD,6,E1 81 E2 69 E1 6E,모프리
+skill_name,40,0x81260,0x80FD4,6,E2 81 E1 F2 E2 20,후우진
+skill_name,41,0x81264,0x80FDB,6,E1 53 E2 03 E2 20,라이진
+skill_name,42,0x81268,0x80FE2,6,E2 76 E1 81 E2 1E,헤모지
+skill_name,43,0x8126C,0x80FE9,4,E1 E9 E2 52,오톤
+skill_name,44,0x81270,0x80FEE,4,E2 17 E1 AC,조사
+skill_name,45,0x81274,0x80FF3,4,E2 30 E2 3E,초코
+skill_name,46,0x81278,0x80FF8,4,E2 7E E1 9C,회복
+skill_name,47,0x8127C,0x80FFD,11,E1 39 E1 6E 9C E1 74 E1 4E E1 24,다리 만들기
+skill_name,48,0x81280,0x81009,6,E2 68 E1 68 E2 5A,풍뢰파
+skill_name,49,0x81284,0x81009,6,E2 68 E1 68 E2 5A,풍뢰파
+skill_name,50,0x81288,0x81010,4,E1 A9 E2 02,빙의
+skill_name,51,0x8128C,0x81015,11,E2 64 E1 64 9C E1 BF E1 6E E1 0F,폭렬 수리검
+skill_name,52,0x81290,0x81021,4,E2 0A E2 64,자폭
+skill_name,53,0x81294,0x81026,18,E2 1E E1 EA E1 FC E1 66 9C E1 05 E1 35 9C E1 14 E1 3A,지옥으로 가는 계단
+skill_name,54,0x81298,0x81039,9,E1 AC E1 90 9C E1 19 E1 12,사방 공격
+skill_name,55,0x8129C,0x81043,6,E1 E7 E1 68 E1 A3,염뢰붕
+skill_name,56,0x812A0,0x8104A,9,E1 3E E1 C4 E2 56 9C E1 6A,더스트 룬
+skill_name,57,0x812A4,0x81054,11,E1 EF E1 88 E2 02 9C E1 2A E1 0B,요미의 날개
+skill_name,58,0x812A8,0x81060,9,E2 02 E1 F0 9C E1 E0 E2 01,의욕 없음
+skill_description,0,0x81708,0x804A1,0,,
+skill_description,1,0x8170C,0x8106A,20,E1 F1 E1 D4 E1 FC E1 66 9C E2 0F E1 E1 E1 10 9C E2 6B E2 71,용암으로 적에게 피해
+skill_description,2,0x81710,0x8107F,21,E1 AF E2 4B 9C E2 03 E1 AF E1 1A 9C E2 2F E1 63 9C E2 7E E1 9C,상태 이상과 체력 회복
+skill_description,3,0x81714,0x81095,20,E2 03 E1 19 E1 06 9C E1 19 E1 12 E1 FC E1 66 9C E2 6B E2 71,이공간 공격으로 피해
+skill_description,4,0x81718,0x810AA,12,E2 0F 9C E1 89 E2 2E 9C E1 08 E1 BD,적 민첩 감소
+skill_description,5,0x8171C,0x810B7,21,E1 F3 E1 B6 E1 FC E1 66 9C E2 1A E1 9A 9C E2 0F 9C E2 6B E2 71,운석으로 주변 적 피해
+skill_description,6,0x81720,0x810CD,9,E2 2F E1 63 9C E2 7E E1 9C,체력 회복
+skill_description,7,0x81724,0x810D7,7,E1 45 9C E2 71 E2 14,독 해제
+skill_description,8,0x81728,0x810DF,14,E2 0F E2 02 9C E1 72 E1 96 9C E1 9E E2 05,적의 마법 봉인
+skill_description,9,0x8172C,0x810EE,14,E1 AF E2 4B 9C E2 03 E1 AF 9C E2 7E E1 9C,상태 이상 회복
+skill_description,10,0x81730,0x810FD,16,E2 2D E1 AC E2 02 9C E1 1C E1 B7 9C E1 19 E1 12,천사의 광선 공격
+skill_description,11,0x81734,0x8110E,16,E1 CE E1 5B E2 20 9C E1 D0 E1 1E 9C E1 9F E2 7C,쓰러진 아군 부활
+skill_description,12,0x81738,0x8111F,26,E2 0F 9C E2 2F E1 63 E1 FE 9C E2 83 E1 BF E2 71 9C E1 D0 E1 1E 9C E2 7E E1 9C,적 체력을 흡수해 아군 회복
+skill_description,13,0x8173C,0x8113A,16,E2 0F 9C E2 6D E1 28 E1 E1 9C E2 6C E1 AE E1 0F,적 하나에 필살검
+skill_description,14,0x81740,0x8114B,16,E2 0F E1 E1 E1 10 9C E1 72 E1 A7 9C E1 9F E1 E4,적에게 마비 부여
+skill_description,15,0x81744,0x8115C,18,E1 49 9C E2 3A 9C E1 D6 E2 02 9C E2 0F 9C E1 19 E1 12,두 칸 앞의 적 공격
+skill_description,16,0x81748,0x8116F,16,E1 46 E2 20 E2 6D E1 7D 9C E2 0F 9C E1 19 E1 12,돌진하며 적 공격
+skill_description,17,0x8174C,0x81180,16,E1 D0 E1 1E 9C E1 19 E1 12 E1 63 9C E1 AF E1 C6,아군 공격력 상승
+skill_description,18,0x81750,0x81191,14,E2 5A E1 47 9C E1 1C E1 B7 9C E1 8F E1 AC,파동 광선 발사
+skill_description,19,0x81754,0x811A0,21,E1 7A 9C E2 0F E1 FE 9C E1 24 E2 6F E1 FC E1 66 9C E1 19 E1 12,먼 적을 기합으로 공격
+skill_description,20,0x81758,0x812AC,16,E2 64 E2 48 E1 FE 9C E1 E5 E1 BE 9C E1 8F E1 AC,폭탄을 연속 발사
+skill_description,21,0x8175C,0x812BD,14,E1 D0 E1 1E 9C E2 2F E1 63 9C E2 7E E1 9C,아군 체력 회복
+skill_description,22,0x81760,0x810AA,12,E2 0F 9C E1 89 E2 2E 9C E1 08 E1 BD,적 민첩 감소
+skill_description,23,0x81764,0x812CC,14,E1 D0 E1 1E 9C E1 89 E2 2E 9C E1 AF E1 C6,아군 민첩 상승
+skill_description,24,0x81768,0x812DB,25,E2 10 E1 F6 E2 03 9C E2 63 E1 38 9C E1 90 E2 73 E1 FC E1 66 9C E2 10 E2 7B,전원이 포니 방향으로 전환
+skill_description,25,0x8176C,0x812F5,20,E1 0D E1 3D E2 6E 9C E1 A2 E1 26 E1 FC E1 66 9C E2 6B E2 71,거대한 불꽃으로 피해
+skill_description,26,0x81770,0x8130A,16,E2 0F E1 E1 E1 10 9C E1 BF E1 7E 9C E1 9F E1 E4,적에게 수면 부여
+skill_description,27,0x81774,0x8131B,20,E1 34 E1 9B E1 53 E1 66 9C E2 0F E1 E1 E1 10 9C E2 6B E2 71,눈보라로 적에게 피해
+skill_description,28,0x81778,0x81330,20,E1 0A E2 68 E1 FC E1 66 9C E2 0F E1 E1 E1 10 9C E2 6B E2 71,강풍으로 적에게 피해
+skill_description,29,0x8177C,0x81345,14,E1 A2 E1 26 9C E2 0D E1 99 9C E1 B2 E1 B9,불꽃 장벽 생성
+skill_description,30,0x81780,0x81354,18,E1 93 E1 0B E1 66 9C E2 0F E1 E1 E1 10 9C E2 6B E2 71,번개로 적에게 피해
+skill_description,31,0x81784,0x81367,20,E2 1A E1 9A 9C E1 D0 E1 1E E1 1A 9C E1 C0 E1 06 E2 03 E1 47,주변 아군과 순간이동
+skill_description,32,0x81788,0x8137C,12,E2 0F 9C E2 6D E1 28 9C E1 15 E2 13,적 하나 고정
+skill_description,33,0x8178C,0x81389,23,E1 15 E2 13 E2 6E 9C E2 0F E1 E1 E1 10 9C E1 1C E2 48 9C E1 8F E1 AC,고정한 적에게 광탄 발사
+skill_description,34,0x81790,0x813A1,12,E2 1A E1 9A 9C E2 0F 9C E1 19 E1 12,주변 적 공격
+skill_description,35,0x81794,0x813AE,22,E2 7E E1 E9 E1 6E E1 66 9C E1 51 E1 F5 9C E1 2C E1 6E E2 26 E2 01,회오리로 띄워 내리찍음
+skill_description,36,0x81798,0x813C5,16,E2 0C E1 AF E1 FE 9C E1 2A E1 62 9C E1 19 E1 12,잔상을 날려 공격
+skill_description,37,0x8179C,0x813D6,14,E1 DA E2 6E 9C E2 0F E1 FE 9C E1 BD E1 7F,약한 적을 소멸
+skill_description,38,0x817A0,0x811B6,9,E2 3C E1 54 9C E1 BD E2 7B,케락 소환
+skill_description,39,0x817A4,0x813E5,11,E1 81 E2 69 E1 6E 9C E1 BD E2 7B,모프리 소환
+skill_description,40,0x817A8,0x813F1,11,E2 81 E1 F2 E2 20 9C E1 BD E2 7B,후우진 소환
+skill_description,41,0x817AC,0x813FD,11,E1 53 E2 03 E2 20 9C E1 BD E2 7B,라이진 소환
+skill_description,42,0x817B0,0x81409,11,E2 76 E1 81 E2 1E 9C E1 BD E2 7B,헤모지 소환
+skill_description,43,0x817B4,0x81415,9,E1 E9 E2 52 9C E1 BD E2 7B,오톤 소환
+skill_description,44,0x817B8,0x8141F,16,E1 83 E1 C4 E2 4C 9C E2 13 E1 9B 9C E2 17 E1 AC,몬스터 정보 조사
+skill_description,45,0x817BC,0x81430,9,E2 30 E2 3E 9C E1 BD E2 7B,초코 소환
+skill_description,46,0x817C0,0x8143A,9,E1 D0 E1 1E 9C E2 7E E1 9C,아군 회복
+skill_description,47,0x817C4,0x81444,25,E1 07 9C E1 BF 9C E1 E0 E1 35 9C E1 18 E1 E1 9C E1 39 E1 6E 9C E1 B2 E1 B9,갈 수 없는 곳에 다리 생성
+skill_description,48,0x817C8,0x8145E,18,E1 53 E2 03 E2 20 E1 1A 9C E2 6F E2 2F 9C E1 72 E1 96,라이진과 합체 마법
+skill_description,49,0x817CC,0x81471,18,E2 81 E1 F2 E2 20 E1 1A 9C E2 6F E2 2F 9C E1 72 E1 96,후우진과 합체 마법
+skill_description,50,0x817D0,0x81484,11,E2 0F E1 E1 E1 10 9C E1 A9 E2 02,적에게 빙의
+skill_description,51,0x817D4,0x81490,18,E2 1A E1 9A E1 E1 9C E1 BF E1 6E E1 0F 9C E1 29 E1 AC,주변에 수리검 난사
+skill_description,52,0x817D8,0x814A3,9,E2 0A E2 64 9C E1 19 E1 12,자폭 공격
+skill_description,53,0x817DC,0x814AD,18,E1 2B 9C E1 9F E1 7B E1 56 E1 FC E1 66 9C E1 19 E1 12,낫 부메랑으로 공격
+skill_description,54,0x817E0,0x814C0,16,E2 1A E1 9A 9C E2 0F E1 E1 E1 10 9C E2 6B E2 71,주변 적에게 피해
+skill_description,55,0x817E4,0x814C0,16,E2 1A E1 9A 9C E2 0F E1 E1 E1 10 9C E2 6B E2 71,주변 적에게 피해
+skill_description,56,0x817E8,0x814D1,16,E2 1F E1 B7 E1 AF E2 02 9C E2 0F 9C E1 19 E1 12,직선상의 적 공격
+skill_description,57,0x817EC,0x814E2,20,E1 2A E1 0C E2 23 E1 FC E1 66 9C E1 8B E1 55 9C E2 6B E2 71,날갯짓으로 바람 피해
+skill_description,58,0x817F0,0x814F7,23,E2 0F E1 FE 9C E2 76 E1 81 E2 1E 9C E1 AF E2 4B E1 66 9C E1 74 E1 4F,적을 헤모지 상태로 만듦
+character_name,0,0x81B4C,0x8150F,4,E1 D0 E2 42,아크
+character_name,1,0x81B50,0x81514,6,E2 40 E2 40 E1 69,쿠쿠루
+character_name,2,0x81B54,0x8151B,4,E2 51 E1 C3,토슈
+character_name,3,0x81B58,0x81520,4,E2 63 E2 3E,포코
+character_name,4,0x81B5C,0x81525,4,E2 03 E1 05,이가
+character_name,5,0x81B60,0x8152A,4,E1 15 E1 11,고겐
+character_name,6,0x81B64,0x8152F,4,E1 72 E1 B4,마샬
+character_name,7,0x81B68,0x81534,6,E2 31 E1 05 E1 53,촌가라
+character_name,8,0x81B6C,0x804A1,0,,
+character_name,9,0x81B70,0x804A1,0,,
+character_name,10,0x81B74,0x804A1,0,,
+character_name,11,0x81B78,0x8153B,8,E1 C4 E2 3D E1 5D E2 52,스켈레톤
+character_name,12,0x81B7C,0x81544,6,E1 15 E1 C4 E2 56,고스트
+character_name,13,0x81B80,0x8154B,4,E2 19 E1 A7,좀비
+character_name,14,0x81B84,0x81550,11,E1 21 E1 6F 9C E1 C5 E1 53 E2 07,그린 슬라임
+character_name,15,0x81B88,0x8155C,4,E1 06 E2 0A,간자
+character_name,16,0x81B8C,0x81561,6,E1 7B E2 03 E2 1E,메이지
+character_name,17,0x81B90,0x81568,6,E2 5A E2 03 E2 4C,파이터
+character_name,18,0x81B94,0x8156F,6,E2 5A E1 14 E1 C6,파계승
+character_name,19,0x81B98,0x81576,13,E2 0A E2 03 E1 DD E2 56 9C E1 91 E2 56,자이언트 배트
+character_name,20,0x81B9C,0x81584,9,E1 46 9C E1 72 E1 C4 E2 4C,돌 마스터
+character_name,21,0x81BA0,0x8158E,4,E1 AC E1 C9,사신
+character_name,22,0x81BA4,0x81593,8,E1 E3 E1 6E E1 7C E2 49,엘리멘탈
+character_name,23,0x81BA8,0x8159C,4,E1 EF E1 BF,요수
+character_name,24,0x81BAC,0x815A1,4,E2 5E E2 4D,팬텀
+character_name,25,0x81BB0,0x815A6,10,E1 C7 E1 4B E1 5D E2 03 E2 42,시드레이크
+character_name,26,0x81BB4,0x815B1,13,E1 72 E2 03 E2 59 9C E2 6A E1 53 E2 03,마이티 플라이
+character_name,27,0x81BB8,0x815BF,9,E2 46 E1 5B 9C E1 44 E1 21,킬러 도그
+character_name,28,0x81BBC,0x815C9,13,E1 5D E1 4B 9C E1 C4 E2 3D E1 5D E2 52,레드 스켈레톤
+character_name,29,0x81BC0,0x815D7,9,E1 A6 E1 58 9C E1 C4 E2 3B,블랙 스컬
+character_name,30,0x81BC4,0x815E1,6,E1 5D E2 03 E1 C4,레이스
+character_name,31,0x81BC8,0x815E8,4,E1 1D E1 F4,구울
+character_name,32,0x81BCC,0x815ED,6,E2 69 E1 6E E2 1E,프리지
+character_name,33,0x81BD0,0x815F4,13,E1 D7 E1 C7 E1 4B 9C E1 C5 E1 53 E2 07,애시드 슬라임
+character_name,34,0x81BD4,0x81602,6,E1 DC E1 B0 E1 C9,어새신
+character_name,35,0x81BD8,0x81609,9,E1 C3 E2 5F 9C E2 19 E1 A7,슈퍼 좀비
+character_name,36,0x81BDC,0x81613,13,E1 F8 E2 37 9C E2 42 E1 57 E2 69 E2 56,위치 크래프트
+character_name,37,0x81BE0,0x81621,6,E1 BD E1 B5 E1 5B,소서러
+character_name,38,0x81BE4,0x81628,10,E1 30 E2 42 E1 66 E1 77 E1 B5,네크로맨서
+character_name,39,0x81BE8,0x81633,6,E1 F8 E2 0E E1 4B,위저드
+character_name,40,0x81BEC,0x8163A,6,E1 D4 E1 96 E1 AC,암법사
+character_name,41,0x81BF0,0x81641,6,E1 BF E2 72 E2 0A,수행자
+character_name,42,0x81BF4,0x81648,6,E2 6D E1 96 E1 AC,하법사
+character_name,43,0x81BF8,0x8164F,8,E1 30 E1 A4 E1 5B E1 C4,네뷰러스
+character_name,44,0x81BFC,0x81658,4,E1 1C E1 3D,광대
+character_name,45,0x81C00,0x8165D,11,E1 41 E1 C4 9C E2 6D E1 F3 E1 4B,데스 하운드
+character_name,46,0x81C04,0x81669,4,E1 41 E1 C4,데스
+character_name,47,0x81C08,0x8166E,13,E1 92 E2 5A E2 03 E1 DC 9C E1 91 E2 56,뱀파이어 배트
+character_name,48,0x81C0C,0x8167C,6,E1 BD E1 4B E1 77,소드맨
+character_name,49,0x81C10,0x81683,13,E1 28 E2 03 E2 56 9C E1 72 E1 C4 E2 4C,나이트 마스터
+character_name,50,0x81C14,0x81691,15,E1 21 E1 5D E2 03 E2 56 9C E1 28 E2 03 E2 56,그레이트 나이트
+character_name,51,0x81C18,0x816A1,13,E2 63 E2 03 E2 1C 9C E1 C4 E1 81 E1 21,포이즌 스모그
+character_name,52,0x81C1C,0x816AF,13,E1 7B E1 49 E1 AC 9C E1 6E E2 0A E1 4B,메두사 리자드
+character_name,53,0x81C20,0x816BD,13,E1 4B E1 57 E1 16 9C E2 6A E1 53 E2 03,드래곤 플라이
+character_name,54,0x81C24,0x816CB,6,E1 77 E2 56 E1 59,맨트랩
+character_name,55,0x81C28,0x816D2,11,E1 41 E1 C4 9C E2 6A E1 5D E2 07,데스 플레임
+character_name,56,0x81C2C,0x816DE,15,E1 E3 E1 6E E1 7C E2 49 9C E1 72 E1 C4 E2 4C,엘리멘탈 마스터
+character_name,57,0x81C30,0x81525,4,E2 03 E1 05,이가
+character_name,58,0x81C34,0x804A1,0,,
+character_name,59,0x81C38,0x816EE,11,E1 D9 E1 B2 9C E2 76 E1 81 E2 1E,야생 헤모지
+character_name,60,0x81C3C,0x816FA,9,E1 5D E1 B5 9C E1 41 E1 83,레서 데몬
+character_name,61,0x81C40,0x817F4,13,E1 21 E1 5D E2 03 E2 4C 9C E1 41 E1 83,그레이터 데몬
+character_name,62,0x81C44,0x81802,9,E1 C4 E2 52 9C E1 17 E1 60,스톤 골렘
+character_name,63,0x81C48,0x8180C,6,E1 EC E2 03 E1 93,와이번
+character_name,64,0x81C4C,0x81813,11,E1 76 E1 4B 9C E1 91 E2 58 E1 5B,매드 배틀러
+character_name,65,0x81C50,0x8181F,9,E1 D0 E2 42 9C E1 41 E1 83,아크 데몬
+character_name,66,0x81C54,0x81829,11,E2 5A E2 03 E1 DC 9C E1 17 E1 60,파이어 골렘
+character_name,67,0x81C58,0x81835,11,E2 3E E2 5F 9C E1 4B E1 57 E1 16,코퍼 드래곤
+character_name,68,0x81C5C,0x81841,15,E1 21 E1 5D E2 03 E2 56 9C E1 B5 E2 60 E2 56,그레이트 서펀트
+character_name,69,0x81C60,0x81851,6,E1 BF E2 72 E1 C6,수행승
+character_name,70,0x81C64,0x81858,13,E1 53 E1 72 E1 39 9C E1 3D E1 C6 E2 13,라마다 대승정
+character_name,71,0x81C68,0x81866,11,E1 21 E1 53 9C E1 D0 E1 A7 E1 C4,그라 아비스
+character_name,72,0x81C6C,0x81872,9,E1 38 9C E1 D0 E1 A7 E1 C4,니 아비스
+character_name,73,0x81C70,0x8187C,8,E1 53 E1 6B E1 F2 E2 45,라류우키
+character_name,74,0x81C74,0x81885,6,E2 80 E1 E2 E2 45,효엔키
+character_name,75,0x81C78,0x8188C,11,E1 84 E1 6D 9C E1 D0 E1 A7 E1 C4,무르 아비스
+character_name,76,0x81C7C,0x81898,9,E1 53 9C E1 D0 E1 A7 E1 C4,라 아비스
+character_name,77,0x81C80,0x80FF3,4,E2 30 E2 3E,초코
+character_name,78,0x81C84,0x818A2,8,E1 9B E1 87 E1 AF E2 0A,보물상자
+character_name,79,0x81C88,0x818A2,8,E1 9B E1 87 E1 AF E2 0A,보물상자
+character_name,80,0x81C8C,0x80FC8,4,E2 3C E1 54,케락
+character_name,81,0x81C90,0x804A1,0,,
+character_name,82,0x81C94,0x80FCD,6,E1 81 E2 69 E1 6E,모프리
+character_name,83,0x81C98,0x80FD4,6,E2 81 E1 F2 E2 20,후우진
+character_name,84,0x81C9C,0x80FDB,6,E1 53 E2 03 E2 20,라이진
+character_name,85,0x81CA0,0x80FE9,4,E1 E9 E2 52,오톤
+character_name,86,0x81CA4,0x80FF3,4,E2 30 E2 3E,초코
+character_name,87,0x81CA8,0x80FE2,6,E2 76 E1 81 E2 1E,헤모지
+character_name,88,0x81CAC,0x818AB,4,E1 A2 E1 26,불꽃
+character_name,89,0x81CB0,0x804A1,0,,
+character_name,90,0x81CB4,0x804A1,0,,
+character_name,91,0x81CB8,0x804A1,0,,
+character_name,92,0x81CBC,0x804A1,0,,
+character_name,93,0x81CC0,0x804A1,0,,
+character_name,94,0x81CC4,0x804A1,0,,
+character_name,95,0x81CC8,0x804A1,0,,
+character_name,96,0x81CCC,0x804A1,0,,
+character_name,97,0x81CD0,0x804A1,0,,
+character_name,98,0x81CD4,0x804A1,0,,
+character_name,99,0x81CD8,0x804A1,0,,
+character_name,100,0x81CDC,0x818B0,9,E1 39 E2 42 9C E1 D0 E2 42,다크 아크
+character_name,101,0x81CE0,0x818BA,11,E1 39 E2 42 9C E2 40 E2 40 E1 69,다크 쿠쿠루
+character_name,102,0x81CE4,0x818C6,9,E1 39 E2 42 9C E2 51 E1 C3,다크 토슈
+character_name,103,0x81CE8,0x818D0,9,E1 39 E2 42 9C E2 63 E2 3E,다크 포코
+character_name,104,0x81CEC,0x818DA,9,E1 39 E2 42 9C E2 03 E1 05,다크 이가
+character_name,105,0x81CF0,0x818E4,9,E1 39 E2 42 9C E1 15 E1 11,다크 고겐
+character_name,106,0x81CF4,0x818EE,9,E1 39 E2 42 9C E1 72 E1 B4,다크 마샬
+character_name,107,0x81CF8,0x818F8,11,E1 39 E2 42 9C E2 31 E1 05 E1 53,다크 촌가라
+region_name,0,0x81E38,0x81904,13,E1 C4 E1 7B E1 6E E1 D0 9C E1 19 E2 70,스메리아 공항
+region_name,1,0x81E3C,0x81912,6,E2 51 E1 F2 E1 A8,토우빌
+region_name,2,0x81E40,0x81919,11,E2 5B E1 5F E1 C7 E1 D0 9C E1 B9,팔렌시아 성
+region_name,3,0x81E44,0x81925,11,E1 EB E2 39 E1 C4 9C E1 DD E1 3F,올카스 언덕
+region_name,4,0x81E48,0x81931,11,E1 9E E2 05 E2 02 9C E2 64 E2 63,봉인의 폭포
+region_name,5,0x81E4C,0x8193D,9,E1 38 E1 6D 9C E2 62 E1 F6,니르 평원
+region_name,6,0x81E50,0x81947,11,E2 39 E1 53 E1 06 9C E2 62 E1 D9,카라간 평야
+region_name,7,0x81E54,0x81953,9,E2 40 E1 28 9C E1 DD E1 3F,쿠나 언덕
+region_name,8,0x81E58,0x8195D,11,E1 8A E1 72 E1 28 9C E1 19 E2 70,밀마나 공항
+region_name,9,0x81E5C,0x81969,11,E1 BF E1 44 9C E1 1E E1 9D E1 9F,수도 군본부
+region_name,10,0x81E60,0x81975,9,E2 51 E1 EF E2 3C 9C E1 C2,토요케 숲
+region_name,11,0x81E64,0x8197F,9,E1 69 E1 EC E2 1E 9C E1 C2,루와지 숲
+region_name,12,0x81E68,0x81989,11,E2 39 E2 39 E1 53 E1 C4 9C E1 C2,카카라스 숲
+region_name,13,0x81E6C,0x81995,9,E1 BA E1 8B E1 53 9C E1 36,센바라 늘
+region_name,14,0x81E70,0x8199F,15,E1 21 E1 5D E2 03 E1 C7 E1 33 9C E1 19 E2 70,그레이시누 공항
+region_name,15,0x81E74,0x819AF,8,E1 53 E1 72 E1 39 E1 AC,라마다사
+region_name,16,0x81E78,0x819B8,8,E1 53 E1 72 E1 39 E1 AD,라마다산
+region_name,17,0x81E7C,0x819C1,15,E1 D0 E1 53 E1 53 E2 51 E1 C4 9C E1 19 E2 70,아라라토스 공항
+region_name,18,0x81E80,0x819D1,13,E2 31 E1 05 E1 53 E2 02 9C E1 05 E1 10,촌가라의 가게
+region_name,19,0x81E84,0x819DF,9,E1 FA E2 0F 9C E1 40 E2 10,유적 던전
+region_name,20,0x81E88,0x819E9,11,E1 D0 E2 14 E1 39 9C E1 15 E2 1E,아제다 고지
+region_name,21,0x81E8C,0x819F5,13,E1 D0 E1 6E E1 8B E1 B3 9C E1 19 E2 70,아리바샤 공항
+region_name,22,0x81E90,0x81A03,11,E1 AC E1 6B E2 18 9C E1 72 E1 FE,사류족 마을
+region_name,23,0x81E94,0x81A0F,9,E1 87 E2 02 9C E1 C9 E2 10,물의 신전
+region_name,24,0x81E98,0x81A19,9,E1 6E E1 42 9C E1 FA E2 0F,리덴 유적
+region_name,25,0x81E9C,0x81A23,9,E1 AC E1 53 9C E1 AC E1 73,사라 사막
+region_name,26,0x81EA0,0x81A2D,11,E1 53 E1 C3 E1 72 9C E1 D4 E2 0D,라슈마 암장
+region_name,27,0x81EA4,0x81A39,9,E2 39 E1 43 9C E1 19 E2 70,카델 공항
+region_name,28,0x81EA8,0x81A43,6,E2 55 E1 24 E2 0D,투기장
+region_name,29,0x81EAC,0x81A4A,8,E2 44 E1 53 E2 69 E1 B8,클라프섬
+location_name,0,0x82170,0x804A1,0,,
+location_name,1,0x82174,0x81A53,11,E1 AD E2 13 E2 02 9C E1 AC E1 3C,산정의 사당
+location_name,2,0x82178,0x81A5F,9,E1 D0 E2 42 E2 02 9C E2 22,아크의 집
+location_name,3,0x8217C,0x81A69,9,E2 13 E1 65 E2 02 9C E1 AD,정령의 산
+location_name,4,0x82180,0x81A73,9,E1 72 E1 FE 9C E2 08 E1 1D,마을 입구
+location_name,5,0x82184,0x81A69,9,E2 13 E1 65 E2 02 9C E1 AD,정령의 산
+location_name,6,0x82188,0x81919,11,E2 5B E1 5F E1 C7 E1 D0 9C E1 B9,팔렌시아 성
+location_name,7,0x8218C,0x81A7D,6,E1 D3 E2 77 E1 CA,알현실
+location_name,8,0x82190,0x81904,13,E1 C4 E1 7B E1 6E E1 D0 9C E1 19 E2 70,스메리아 공항
+location_name,9,0x82194,0x81A84,15,E2 5B E1 5F E1 C7 E1 D0 9C E2 10 E1 75 E1 3D,팔렌시아 전망대
+location_name,10,0x82198,0x81A94,9,E1 3D E1 C9 E2 02 9C E1 90,대신의 방
+location_name,11,0x8219C,0x8195D,11,E1 8A E1 72 E1 28 9C E1 19 E2 70,밀마나 공항
+location_name,12,0x821A0,0x81A9E,13,E1 8A E1 72 E1 28 9C E1 1E E1 9D E1 9F,밀마나 군본부
+location_name,13,0x821A4,0x81AAC,9,E2 0D E1 1E E2 02 9C E1 90,장군의 방
+location_name,14,0x821A8,0x81975,9,E2 51 E1 EF E2 3C 9C E1 C2,토요케 숲
+location_name,15,0x821AC,0x81AB6,17,E2 5B E1 5F E1 C7 E1 D0 9C E2 1E E2 6D E2 29 E1 15,팔렌시아 지하창고
+location_name,16,0x821B0,0x81AC8,17,E2 5B E1 5F E1 C7 E1 D0 9C E2 1E E2 6D E1 08 E1 EA,팔렌시아 지하감옥
+location_name,17,0x821B4,0x81925,11,E1 EB E2 39 E1 C4 9C E1 DD E1 3F,올카스 언덕
+location_name,18,0x821B8,0x81ADA,4,E2 7B E1 14,환계
+location_name,19,0x821BC,0x819C1,15,E1 D0 E1 53 E1 53 E2 51 E1 C4 9C E1 19 E2 70,아라라토스 공항
+location_name,20,0x821C0,0x819D1,13,E2 31 E1 05 E1 53 E2 02 9C E1 05 E1 10,촌가라의 가게
+location_name,21,0x821C4,0x81ADF,16,E1 D0 E2 14 E1 39 9C E1 15 E2 1E 9C E1 47 E1 1F,아제다 고지 동굴
+location_name,22,0x821C8,0x81AF0,16,E1 D0 E2 14 E1 39 9C E1 15 E2 1E 9C E1 EE E1 9F,아제다 고지 외부
+location_name,23,0x821CC,0x819DF,9,E1 FA E2 0F 9C E1 40 E2 10,유적 던전
+location_name,24,0x821D0,0x8199F,15,E1 21 E1 5D E2 03 E1 C7 E1 33 9C E1 19 E2 70,그레이시누 공항
+location_name,25,0x821D4,0x81B01,13,E1 53 E1 72 E1 39 E1 AC 9C E1 44 E2 0D,라마다사 도장
+location_name,26,0x821D8,0x81B0F,18,E1 53 E1 72 E1 39 E1 AC 9C E1 C6 E2 13 E2 02 9C E1 90,라마다사 승정의 방
+location_name,27,0x821DC,0x81B22,13,E1 53 E1 72 E1 39 E1 AD 9C E2 13 E1 AF,라마다산 정상
+location_name,28,0x821E0,0x819AF,8,E1 53 E1 72 E1 39 E1 AC,라마다사
+location_name,29,0x821E4,0x81A39,9,E2 39 E1 43 9C E1 19 E2 70,카델 공항
+location_name,30,0x821E8,0x81B30,15,E1 38 E1 66 E1 C7 E1 D4 9C E1 3D E1 24 E1 CA,니로시암 대기실
+location_name,31,0x821EC,0x81CFC,13,E1 38 E1 66 E1 C7 E1 D4 9C E1 84 E1 3D,니로시암 무대
+location_name,32,0x821F0,0x819F5,13,E1 D0 E1 6E E1 8B E1 B3 9C E1 19 E2 70,아리바샤 공항
+location_name,33,0x821F4,0x81A03,11,E1 AC E1 6B E2 18 9C E1 72 E1 FE,사류족 마을
+location_name,34,0x821F8,0x81A0F,9,E1 87 E2 02 9C E1 C9 E2 10,물의 신전
+location_name,35,0x821FC,0x81D0A,15,E2 1E E2 6D 9C E1 E3 E1 6E E1 97 E2 03 E2 4C,지하 엘리베이터
+location_name,36,0x82200,0x81D1A,18,E2 1E E2 6D 9C E1 8B E2 03 E1 E9 9C E1 E5 E1 1D E1 CA,지하 바이오 연구실
+location_name,37,0x82204,0x81D2D,15,E2 5B E1 5F E1 C7 E1 D0 9C E1 C7 E1 05 E2 1E,팔렌시아 시가지
+location_name,38,0x82208,0x81D3D,21,E1 B9 E1 1B 9C E1 9E E2 05 E2 02 9C E2 64 E2 63 9C E1 EE E1 9F,성관 봉인의 폭포 외부
+location_name,39,0x8220C,0x81D53,21,E1 B9 E1 1B 9C E1 9E E2 05 E2 02 9C E2 64 E2 63 9C E1 2C E1 9F,성관 봉인의 폭포 내부
+location_name,40,0x82210,0x81B40,11,E2 51 E1 F2 E1 A8 9C E1 D4 E1 99,토우빌 암벽
+location_name,41,0x82214,0x81D69,13,E2 71 E1 9A E2 02 9C E1 A7 E2 72 E1 B7,해변의 비행선
+location_name,42,0x82218,0x8193D,9,E1 38 E1 6D 9C E2 62 E1 F6,니르 평원
+location_name,43,0x8221C,0x81947,11,E2 39 E1 53 E1 06 9C E2 62 E1 D9,카라간 평야
+location_name,44,0x82220,0x81953,9,E2 40 E1 28 9C E1 DD E1 3F,쿠나 언덕
+location_name,45,0x82224,0x8197F,9,E1 69 E1 EC E2 1E 9C E1 C2,루와지 숲
+location_name,46,0x82228,0x81989,11,E2 39 E2 39 E1 53 E1 C4 9C E1 C2,카카라스 숲
+location_name,47,0x8222C,0x81995,9,E1 BA E1 8B E1 53 9C E1 36,센바라 늘
+location_name,48,0x82230,0x81A19,9,E1 6E E1 42 9C E1 FA E2 0F,리덴 유적
+location_name,49,0x82234,0x81A23,9,E1 AC E1 53 9C E1 AC E1 73,사라 사막
+location_name,50,0x82238,0x81A2D,11,E1 53 E1 C3 E1 72 9C E1 D4 E2 0D,라슈마 암장
+location_name,51,0x8223C,0x81D77,15,E1 38 E1 66 E1 C7 E1 D4 9C E2 55 E1 24 E2 0D,니로시암 투기장
+location_name,52,0x82240,0x81B01,13,E1 53 E1 72 E1 39 E1 AC 9C E1 44 E2 0D,라마다사 도장
+location_name,53,0x82244,0x81D87,13,E2 44 E1 53 E2 69 E1 B8 9C E1 19 E2 70,클라프섬 공항
+location_name,54,0x82248,0x81D95,15,E2 44 E1 53 E2 69 E2 4A 9C E2 32 E1 AF E2 36,클라프탑 최상층

@@ -428,3 +428,9 @@
 2026-07-17
 - Added `extract_singlefile_guide_images.py` for reproducible extraction and indexing of embedded scan images from locally saved SingleFile walkthrough pages.
 - Marked `05_docs/공략/` as local-only third-party reference material; no saved HTML or extracted scan image is tracked by Git.
+
+2026-07-17
+- Added `ui_full_v26_data.py` and generated `ui_full_v26.csv`, covering all 503 records from the nine confirmed executable UI tables with project-reviewed Korean terminology and the local walkthrough as a wording reference.
+- Added `build_ui_full_v26.py`; it allocates 389 UI-only glyphs in physical indices `1240-1629`, repacks all nine string regions as one deduplicated pool, and rewrites all 503 pointers.
+- Added `audit_ui_full_v26.py` for independent pointer, manifest, executable-range, font-plane, cursor, and unrelated-member verification.
+- Built `ui_full_v26_cumulative_patch_only.zip`, SHA256 `F31C5BABEE7011A2E9A8B168A971C80E5D8C376F655436ED1E6EBCB67E028549`.

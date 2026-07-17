@@ -1188,3 +1188,16 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Recovery: PASS. The embedded Game Magazine walkthrough scans cover printed pages 88-97. Lower-resolution duplicates and Naver UI resources are distinguishable by dimensions and source mapping.
 - Reference tables: PASS visually. Printed page 91 contains the consumable item list and status table; printed page 97 contains the 64-entry accessory list and monster table.
 - Scope: reference-only. No game binary, patch manifest, translation, or packaged output changed in this test.
+
+2026-07-17 - Full UI-table and isolated glyph-bank candidate v0.26
+- Input: consumable v0.25 cumulative ZIP, SHA256 `2808FD4A0CA191F01BB368AC3915DA27FD5CCA37B801308D3EEA5ACDBC3164C1`.
+- Coverage: PASS. Translation and readback manifests contain exactly 503/503 records across all nine audited tables; Japanese/Korean blank-slot parity has zero mismatches.
+- Pointer readback: PASS. Every rewritten pointer resolves into one of the nine original string regions and returns the exact expected zero-terminated byte sequence.
+- Pool capacity: PASS. Tight packing and exact-payload deduplication store 429 unique strings in 6,136 bytes with 778 bytes free.
+- UI glyph bank: PASS. 389 unique characters use E1-E8 codes with physical indices `1240-1629`; no code contains a zero terminator or duplicate-boundary `FF` byte.
+- Collision audit: PASS. UI byte codes and physical indices are one-to-one; all existing DD-E0 story glyph planes `0-1239` are byte-identical.
+- Font isolation: PASS. `COMM.IMG` changes 4,884 bytes/7,971 nibbles only inside the allocated UI bitplanes; the battle cursor rectangle is byte-identical.
+- Executable isolation: PASS. All 6,725 changed `PSX.EXE` bytes are inside the nine declared string regions and nine pointer tables. Existing E2 code caves are outside and remain byte-identical.
+- ZIP isolation: PASS. Only `COMM.IMG` and `PSX.EXE` differ; all other 75 members are byte-identical and member order is preserved.
+- Reproducibility: PASS. Consecutive builds produced SHA256 `F31C5BABEE7011A2E9A8B168A971C80E5D8C376F655436ED1E6EBCB67E028549`.
+- Runtime status: pending representative verification of equipment/accessory names and help, skills and help, status/character names, region names, and location names.

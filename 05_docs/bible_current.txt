@@ -1226,3 +1226,11 @@ story_test_23 S1072 안전 경계 기준
 - The probe changes only the two existing zero-terminated string slots in `PSX.EXE`; pointers, story DAT files, `COMM.IMG`, choice geometry, E2 handlers, and battle-cursor data remain unchanged.
 - Accepted output: `03_output/ui_item_herb_probe_v24_cumulative_patch_only.zip`, SHA256 `E5755DB4B0C911D406F1D03F752C5241A4681176D7C8FBBC759AA9CE08E0B3E8`.
 - This validates direct in-slot Korean replacement for table records whose encoded text plus terminator fits the confirmed slot. Longer entries still require table repacking or separately proven pointer relocation.
+
+2026-07-17 full UI-table and isolated glyph-bank candidate v0.26:
+- Built all 503 audited `PSX.EXE` UI records: 64 equipment names and descriptions, 32 consumable names and descriptions, 59 skill names and descriptions, 108 character/monster names, 30 region names, and 55 location names.
+- UI text uses a new direct-renderer-only E1-E8 glyph bank. The 389 allocated physical glyph indices are `1240-1629`, immediately after the preserved DD-E0 story bank `0-1239`.
+- All nine original string regions are treated as one tight-packed, deduplicated pool. The pool stores 429 unique strings, uses 5,358 of 6,136 bytes, and retains 778 bytes without an executable tail cave or file-size change.
+- Independent verification passes for 503/503 pointer and manifest readbacks, unique physical glyph indices, forbidden `00/FF` code exclusion, exact story-plane and battle-cursor preservation, and byte-identical unrelated ZIP members.
+- Candidate output: `03_output/ui_full_v26_cumulative_patch_only.zip`, SHA256 `F31C5BABEE7011A2E9A8B168A971C80E5D8C376F655436ED1E6EBCB67E028549`.
+- Runtime verification remains required for representative equipment, skill, character/status, region, and location screens before v0.26 can be promoted as the accepted whole-UI baseline.

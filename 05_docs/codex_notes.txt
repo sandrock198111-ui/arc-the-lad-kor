@@ -514,3 +514,11 @@ Local Korean walkthrough reference - 2026-07-17
 - Printed page 91 is the primary Korean naming/effect reference for 28 ordinary consumables. It omits the event-use `召喚のつぼ`, so retain the executable text and other verified sources for that record.
 - Printed page 97 is the primary Korean naming/effect reference for all 64 accessories. The existing `PSX.EXE` pointer-table extraction remains authoritative for row order and runtime effects.
 - Treat the walkthrough as a natural Korean terminology reference, not as binary truth. When a printed effect conflicts with the executable (for example `魔力の泉`), prefer the executable's verified value and use the guide only for wording.
+
+UI-only extended glyph bank - 2026-07-17
+- The shared glyph decoder at RAM `0x8016B3C0` accepts any first byte at or above `0xDD` and computes `(first - 0xDD) * 255 + second + 0xDB`. The old Python DD-E0 limit is a project safety rule, not the machine decoder's full range.
+- The dialogue parser at `0x8016BB48` treats E1-E8 as controls, so E1-E8 must never be inserted into story DAT dialogue. Direct UI rendering at `0x8016B288` reaches the glyph decoder without that dialogue-control dispatch and can use E1-E8 safely for the confirmed executable tables.
+- `COMM.IMG` physically contains 42 rows x 21 columns x 4 bitplanes. Existing story mappings occupy physical indices through 1239 (`E0FF`); v0.26 begins at E1/01, physical index 1240, and therefore does not overwrite any DD-E0 plane.
+- Do not allocate second byte `00`, because executable UI strings are zero terminated. Do not allocate second byte `FF`, because the 255-stride decoder aliases it with the next prefix's `00` physical index.
+- The nine UI string regions total 6,136 bytes. Pointers may target any zero-terminated string inside these loaded executable regions, so tight packing and exact-payload deduplication can treat them as one global pool without changing file size or using the rejected executable tail cave.
+- v0.26 stores 503 records as 429 unique payloads with 778 bytes free and 389 UI-only glyphs at indices 1240-1629. Future wording edits must rebuild the complete pool and rerun both the builder and independent collision audit.

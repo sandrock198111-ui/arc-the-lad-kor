@@ -1,0 +1,15 @@
+UI full v0.26 independent collision audit
+output_zip_sha256=F31C5BABEE7011A2E9A8B168A971C80E5D8C376F655436ED1E6EBCB67E028549
+zip_members=77
+pointer_readback=503/503
+manifest_readback=503/503
+ui_code_count=389
+ui_physical_index_range=1240-1629
+ui_code_00_ff_free=true
+ui_physical_indices_unique=true
+story_glyph_planes_0_1239_preserved=true
+battle_cursor_preserved=true
+psx_exe_changed_bytes=6725
+comm_img_changed_bytes=4884
+comm_img_changed_nibbles=7971
+unrelated_zip_members_preserved=true
