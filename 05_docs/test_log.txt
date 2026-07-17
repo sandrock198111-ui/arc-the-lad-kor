@@ -1161,4 +1161,6 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Capacity: PASS. `약초` uses 5/8 bytes including terminator; `체력 20 회복` uses 13/20 bytes including terminator.
 - Font: PASS statically. Current `COMM.IMG` glyph planes for `약` (`DFB1`) and `초` (`DFEB`) match the expected 12x12 bitmaps with zero differing pixels.
 - Reproducibility: PASS. Consecutive builds produced SHA256 `E5755DB4B0C911D406F1D03F752C5241A4681176D7C8FBBC759AA9CE08E0B3E8`.
-- Runtime status: pending packaging and item-menu verification of both name and description.
+- Runtime name: PASS. The battle item palette displays `약초` with quantity `04` and no adjacent UI corruption.
+- Runtime description: PASS. Pressing L1 on the item displays `체력 20 회복` in the help window with correct Korean glyphs and digits.
+- Runtime status: accepted as the first item-table baseline.

@@ -499,4 +499,5 @@ PSX.EXE UI pointer tables - 2026-07-17
 - These tables point to zero-terminated strings inside the same executable. Story v0.23 leaves the complete table/string area `0x80224-0x821FF` byte-identical to the clean extracted executable.
 - Per-entry slots are usually only 4-12 bytes for names and 8-32 bytes for descriptions. Direct replacement is valid only when the Korean encoded string plus its zero terminator fits the confirmed slot; otherwise repack the complete table or relocate strings through verified pointers.
 - Consumable index 7 is `薬草`. Its name slot is file `0x80BCC` (8 bytes), description slot is `0x80D88` (20 bytes), name pointer is `0x80CB8`, and description pointer is `0x80F30`.
-- The v0.24 probe deliberately changes only those two string slots and does not reuse the rejected executable tail cave. Runtime verification is still required before treating this as a successful UI baseline.
+- The v0.24 probe deliberately changes only those two string slots and does not reuse the rejected executable tail cave.
+- Runtime confirms that the consumable-name table feeds the battle item palette and the matching description table feeds the L1 help window. Index 7 renders `약초` and `체력 20 회복` correctly, so direct in-slot Korean replacement is accepted when capacity permits.

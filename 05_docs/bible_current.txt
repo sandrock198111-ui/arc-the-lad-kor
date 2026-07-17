@@ -1220,3 +1220,9 @@ story_test_23 S1072 안전 경계 기준
 - The Choppin body now executes `E2, E6, E2, E6, E5 option 1, E6, E5 option 2`; both copies in S2042 and S3012 use this structure.
 - All option-region bytes remain identical to v0.22, all source E5/E6 positions remain exact, and independent checks report zero invalid completion targets or out-of-range changes.
 - Candidate output: `03_output/story_choice_row_alignment_v23_cumulative_patch_only.zip`, SHA256 `E0A6C6EF167CFDDDA375FCE2B336A2CEAE478499DDDEB371668E2B99672C3C89`. Runtime cursor/text-row verification is pending.
+
+2026-07-17 PSX.EXE item-table runtime baseline v0.24:
+- The consumable-item name and description pointer tables are confirmed at runtime. Consumable index 7 displays Korean name `약초` in the battle item palette and Korean L1 help text `체력 20 회복`.
+- The probe changes only the two existing zero-terminated string slots in `PSX.EXE`; pointers, story DAT files, `COMM.IMG`, choice geometry, E2 handlers, and battle-cursor data remain unchanged.
+- Accepted output: `03_output/ui_item_herb_probe_v24_cumulative_patch_only.zip`, SHA256 `E5755DB4B0C911D406F1D03F752C5241A4681176D7C8FBBC759AA9CE08E0B3E8`.
+- This validates direct in-slot Korean replacement for table records whose encoded text plus terminator fits the confirmed slot. Longer entries still require table repacking or separately proven pointer relocation.

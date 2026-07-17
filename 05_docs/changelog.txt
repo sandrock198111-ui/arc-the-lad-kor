@@ -418,3 +418,4 @@
 - Added `audit_psx_ui_tables.py` and extracted 503 confirmed `PSX.EXE` pointer-table entries covering equipment, consumables, skills, character/monster names, regions, and locations.
 - Added `ui_item_probe_v24.csv` and `build_ui_item_probe_v24.py` for a two-field consumable-item probe based on the unchanged story v0.23 baseline.
 - Built runtime-pending `ui_item_herb_probe_v24_cumulative_patch_only.zip`, changing only the `PSX.EXE` name and description slots for consumable index 7. SHA256: `E5755DB4B0C911D406F1D03F752C5241A4681176D7C8FBBC759AA9CE08E0B3E8`.
+- Runtime accepted v0.24: the battle item palette displays `약초`, and L1 help displays `체력 20 회복` with correct font, spacing, and digits.
