@@ -1174,3 +1174,10 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Font: PASS statically. All 83 mapped Hangul glyphs used by the batch match the current `COMM.IMG` planes with zero differing pixels; no new glyph is allocated.
 - Reproducibility: PASS. Consecutive builds produced SHA256 `2808FD4A0CA191F01BB368AC3915DA27FD5CCA37B801308D3EEA5ACDBC3164C1`.
 - Runtime status: pending representative checks of a healing item, status item, stat item, and summoning item with L1 help.
+
+2026-07-17 - Consumable v0.25 partial runtime verification and system-help glyph regression
+- Runtime consumables: PASS for all five consumable items currently available to the user. Each tested item displayed its Korean name and L1 description without reported corruption.
+- Coverage limit: this is a five-item representative runtime check, not proof that all 29 active consumable records have been exercised in game.
+- Separate UI regression: FAIL. The field/battle system-help line shown after the item checks contains mixed Korean-looking glyphs and Japanese text instead of its intact original instruction.
+- Classification: the broken line is not a consumable name or consumable description record. It belongs to a separate system-help/UI string path and must be repaired independently from the accepted consumable pointer tables.
+- Packaging conclusion: retain v0.25 as the consumable-table candidate; do not claim whole-UI completion until the system-help strings and their shared glyph usage are audited.
