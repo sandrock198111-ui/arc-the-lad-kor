@@ -1,0 +1,82 @@
+﻿source,file,bytes,scope,method,result
+v33_patch_zip,1/S1011.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,1/S1013.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,1/S1021.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,1/S1022.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,1/S1023.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,1/S1031.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,1/S1041.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,1/S1051.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,1/S1061.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,1/S1071.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,1/S1072.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,21/S2011.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,21/S2012.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,21/S2013.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,21/S2021.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,21/S2031.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,21/S2033.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,21/S2041.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,21/S2042.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,21/S2045.DAT,305152,battle_tutorial_ui,24-row tutorial E2/E6 control-preservation readback,audited
+v33_patch_zip,22/S2046.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,22/S2051.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,22/S2052.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,22/S2053.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,22/S2057.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,23/S2061.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,23/S2081.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,23/S2082.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,31/S3011.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,31/S3012.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,31/S3013.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,31/S3014.DAT,305152,battle_tutorial_ui,24-row tutorial E2/E6 control-preservation readback,audited
+v33_patch_zip,31/S3022.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,31/S3023.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,31/S3024.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,31/S3031.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,4/S4033.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,4/S4034.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,4/S4035.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,4/S4036.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,4/S4041.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,5/S5012.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,5/S5013.DAT,305152,battle_tutorial_ui,24-row tutorial E2/E6 control-preservation readback,audited
+v33_patch_zip,6/S6013.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,6/S6014.DAT,305152,battle_tutorial_ui,24-row tutorial E2/E6 control-preservation readback,audited
+v33_patch_zip,6/S6054.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,7/S7011.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,7/S7012.DAT,305152,battle_tutorial_ui,24-row tutorial E2/E6 control-preservation readback,audited
+v33_patch_zip,7/S7021.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,7/S7022.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,7/S7023.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,7/S7024.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,7/S7025.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,7/S7026.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,7/S7028.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,8/S8012.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,8/S8013.DAT,305152,battle_tutorial_ui,24-row tutorial E2/E6 control-preservation readback,audited
+v33_patch_zip,B/SB071.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,C1/SC011.DAT,305152,battle_choice_ui,63-record battle-choice manifest readback,audited
+v33_patch_zip,C1/SC021.DAT,305152,battle_choice_ui,63-record battle-choice manifest readback,audited
+v33_patch_zip,C1/SC031.DAT,305152,battle_choice_ui,63-record battle-choice manifest readback,audited
+v33_patch_zip,C1/SC041.DAT,305152,battle_choice_ui,63-record battle-choice manifest readback,audited
+v33_patch_zip,C1/SC051.DAT,305152,battle_choice_ui,63-record battle-choice manifest readback,audited
+v33_patch_zip,C1/SC061.DAT,305152,battle_choice_ui,63-record battle-choice manifest readback,audited
+v33_patch_zip,C1/SC081.DAT,305152,battle_choice_ui,63-record battle-choice manifest readback,audited
+v33_patch_zip,C1/SC091.DAT,305152,battle_choice_ui,63-record battle-choice manifest readback,audited
+v33_patch_zip,C2/SC0A1.DAT,305152,battle_choice_ui,63-record battle-choice manifest readback,audited
+v33_patch_zip,C2/SC0B6.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,COMM.IMG,458752,shared_font_and_graphics,declared LV bitplane delta and texture-preservation audit,audited_binary
+v33_patch_zip,D/SD011.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,D/SD012.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,D/SD013.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,D/SD031.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,F/SF091.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,F/SF0B1.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,F/SF0D1.DAT,305152,story_or_event_script,excluded by non-story audit request,excluded
+v33_patch_zip,PSX.EXE,581632,nonstory_text,503 UI + 33 system + 7 world-name pointer tables,audited
+original_core_resource,COMM.DAT,737280,common_binary_data,direct decoder scan; no confirmed text table,unverified_candidates_only
+original_core_resource,S000.DAT,305152,system_scene_binary,direct decoder scan; no confirmed text table,unverified_candidates_only
+original_core_resource,COMM.SND,354304,pBAV_audio_bank,binary signature classification,not_text
+original_core_resource,S000.IMG,323584,pBAV_audio_bank,binary signature classification,not_text

@@ -578,3 +578,18 @@ Compact LV bitmap shape - 2026-07-17
 - Both equipment help text containing the `LV` token and the battle skill-level prefix use the same one-byte code `0x6C` and therefore the same single physical bitplane.
 - The v0.29-v0.31 bitmap drew the V with a thick closed bottom, making it look like U and making `LV1` resemble a broken first character.
 - A safe correction changes only the same `0x6C` plane. Use separated upper stems and a one-pixel lower point for V; verify both equipment help and battle HUD because one bitmap controls both screens.
+
+Complete battle-help pointer family - 2026-07-17
+- The battle-help pointer words are the thirteen consecutive entries `0x82348-0x82378`. Their original source bank is `0x8224C-0x82347`.
+- Runtime showed that E7 button controls render as corrupt icons under the accepted shared font. v0.33 therefore uses ordinary Korean for all thirteen messages and no E1-E8 control bytes in this family.
+- Confirmed meanings include target change, attack/connect, end action/status, skill selection, return, decision/return, next target, surrounding or facing-direction skill use, empty-position selection, person selection, and battle start.
+
+Safe-bank capacity and exact level wording - 2026-07-17
+- The intended overflowing-fruit effect is level +1, not stage +1. The accepted safe bank lacks `벨`, and the v0.32 cumulative payload has no globally unused mapped code sequence that can be reassigned without risk.
+- Use `LV 1 상승` as the exact safe fallback. Do not use `단계 1 상승` because it changes the game-system meaning.
+- The confirmed proper-name residuals require eight unavailable syllables: `겐`, `샬`, `락`, `톤`, `샤`, `덴`, `암`, and `클`. Do not invent alternate names merely to remove Japanese text.
+
+Separate world-name table and non-story audit boundary - 2026-07-17
+- In addition to the 30-entry region table, `PSX.EXE` contains a seven-entry world-name table at pointer words `0x81EE8-0x81F00`, originally targeting `0x81EB0-0x81EE0`.
+- Six safe names are `스메리아`, `밀마나`, `그레이시누`, `아라라토스`, `카델`, and `지크라프섬`. `아리바샤` is preserved until `샤` has a verified glyph.
+- The custom low-byte decoder produces thousands of Japanese-looking strings from arbitrary instructions/data. Only known pointer tables and verified text-pool ranges are high-confidence executable text. Direct hits in `COMM.DAT` and `S000.DAT` must remain unverified unless a runtime pointer or loader proves them.

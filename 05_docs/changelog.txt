@@ -471,3 +471,10 @@
 - Rebuilt the shared one-cell `LV` bitmap with a pointed V, fixing both equipment descriptions and the battle skill-level prefix.
 - Added `build_ui_safe_v32.py`, `audit_ui_safe_v32.py`, and v0.32 manifests/audit reports.
 - Built `ui_safe_v32_cumulative_patch_only.zip`, SHA256 `5046186DB1EE07C576D8F868D4D8F921A8F94762E87739ACF55308048AD0DE37`.
+
+2026-07-17
+- Added `build_ui_safe_v33.py`; translated all thirteen battle-help pointers with plain Korean text, widened the shared yes/no spacing, corrected the overflowing-fruit effect to `LV 1 상승`, and refined the single-plane LV bitmap.
+- Found a separate seven-entry world-name table and translated six safe-bank names. Preserved only `アリバーシャ` because the required `샤` glyph is unavailable.
+- Added `audit_ui_safe_v33.py` and `audit_nonstory_japanese_v33.py` with 503-record UI readback, system/help/world pointer checks, all-file classification, and a separate confirmed-residual report.
+- Confirmed eighteen Japanese residual entries, all proper-name copies requiring unavailable glyphs; broad direct decoder hits are recorded as unverified binary candidates rather than text failures.
+- Built `ui_safe_v33_cumulative_patch_only.zip`, SHA256 `76C0F4E8B50CA03ACC9B2A50AD5359050DE98DC29D0D3DB25F464ED96F54DFAF`.

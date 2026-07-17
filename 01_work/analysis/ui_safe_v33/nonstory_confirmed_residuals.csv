@@ -1,0 +1,19 @@
+﻿source,table_key,index,pointer_offset,japanese,korean_target,missing_glyphs,reason
+ui_manifest,character_name,5,0x81B60,<N:｣:11>ー<N:力:5>,고겐,겐,verified_glyph_missing
+ui_manifest,character_name,6,0x81B64,マーシャル,마샬,샬,verified_glyph_missing
+ui_manifest,character_name,80,0x81C8C,<N:ゲ:16>ラック,케락,락,verified_glyph_missing
+ui_manifest,character_name,85,0x81CA0,オトン,오톤,톤,verified_glyph_missing
+ui_manifest,character_name,105,0x81CF0,ダーク<N:｣:11>ー<N:力:5>,다크 고겐,겐,verified_glyph_missing
+ui_manifest,character_name,106,0x81CF4,ダークマーシャル,다크 마샬,샬,verified_glyph_missing
+ui_manifest,region_name,21,0x81E8C,アリバーシャ<N:空:2>港,아리바샤 공항,샤,verified_glyph_missing
+ui_manifest,region_name,24,0x81E98,<N:リ:12><N:｣:11>デン遺跡,리덴 유적,덴,verified_glyph_missing
+ui_manifest,region_name,26,0x81EA0,<N:｣:11>シュマのいわ場,라슈마 암장,암,verified_glyph_missing
+ui_manifest,region_name,29,0x81EAC,クラフ島,클라프섬,클,verified_glyph_missing
+ui_manifest,location_name,30,0x821E8,ニロシアムひかえ室,니로시암 대기실,암,verified_glyph_missing
+ui_manifest,location_name,31,0x821EC,ニロシアムぶたい,니로시암 무대,암,verified_glyph_missing
+ui_manifest,location_name,32,0x821F0,アリバーシャ<N:空:2>港,아리바샤 공항,샤,verified_glyph_missing
+ui_manifest,location_name,48,0x82230,<N:リ:12><N:｣:11>デン遺跡,리덴 유적,덴,verified_glyph_missing
+ui_manifest,location_name,50,0x82238,<N:｣:11>シュマのいわ場,라슈마 암장,암,verified_glyph_missing
+ui_manifest,location_name,51,0x8223C,ニロシアム闘技場,니로시암 투기장,암,verified_glyph_missing
+ui_manifest,location_name,53,0x82244,クラーフ島<N:空:2>港,클라프섬 공항,클,verified_glyph_missing
+world_name_table,world_name,4,0x81EF8,アリバーシャ,아리바샤,샤,verified_glyph_missing

@@ -1274,3 +1274,14 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Isolation: PASS. Relative to v0.31, only `COMM.IMG` and `PSX.EXE` change; all battle/story members are byte-identical and executable changes remain inside declared system pools/pointers.
 - Reproducibility: PASS, SHA256 `5046186DB1EE07C576D8F868D4D8F921A8F94762E87739ACF55308048AD0DE37`.
 - Runtime status: pending user packaging and visual verification of the button icons, target help, equipment LV, and battle skill LV.
+
+2026-07-17 - Complete non-story audit and v0.33 safe repair
+- Build/readback: PASS. All 503 UI-table records, 33 system strings, one relocated item effect, thirteen battle-help pointers, and six translated world-name pointers read back exactly.
+- World-name preservation: PASS. The seventh world name, `アリバーシャ`, remains at its original pointer and payload because `샤` has no verified safe glyph.
+- Font isolation: PASS. `COMM.IMG` changes only the declared `0x6C` physical bitplane; the new LV ligature contains 23 pixels and all neighboring planes remain exact.
+- Battle/story isolation: PASS. Relative to v0.32, all battle and story DAT members are byte-identical; only `PSX.EXE` and `COMM.IMG` change.
+- Non-story coverage: PASS. The file inventory contains 81 records: 17 audited non-story/UI resources, 60 explicitly excluded story/event DAT members, and four common binary/audio resources. Battle-choice coverage is 63 records and battle-tutorial coverage is 24 rows.
+- Residual Japanese audit: 18 confirmed entries. Seventeen are existing UI proper-name records and one is the separate world-name record; no unclassified residual pointer remains inside the verified executable text pools.
+- Decoder limitation: `COMM.DAT` has 751 and `S000.DAT` has 53 broad direct-decoder candidates, but the low-byte decoder also maps arbitrary binary to Japanese-like output. These remain unverified candidates and are not counted as text.
+- Reproducibility: PASS. Two consecutive builds produced SHA256 `76C0F4E8B50CA03ACC9B2A50AD5359050DE98DC29D0D3DB25F464ED96F54DFAF`.
+- Runtime status: pending user packaging and visual verification of yes/no cursor spacing, all battle-help phases, LV appearance, `LV 1 상승`, and world names.
