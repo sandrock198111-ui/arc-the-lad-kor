@@ -445,3 +445,9 @@
 - Added `build_ui_safe_v28.py`, `audit_ui_safe_v28.py`, `ui_safe_v28.csv`, and `ui_skill_guide_reference_v28.csv`.
 - Increased Korean UI coverage to 486/503 records while keeping `COMM.IMG` byte-identical to v0.25 and changing only `PSX.EXE`.
 - Built runtime-pending `ui_safe_v28_cumulative_patch_only.zip`, SHA256 `0FCDF709F6125AF083167F67EA998C4BA7B2FD5D774EE4417677DFE934825828`.
+
+2026-07-17
+- Added `ui_safe_v29_overrides.py` with reviewed accessory effects and one-line skill-help wording, including `던지기 +1`, `점프 +1`, and `받기 +1`.
+- Added `build_ui_safe_v29.py`; it retains the safe v0.28 executable-table model and changes only the legacy `0x6C` physical bitplane to render the skill level prefix as `LV`.
+- Added `audit_ui_safe_v29.py` for independent pointer, override, ZIP, help-length, and font-bitplane verification.
+- Built runtime-pending `ui_safe_v29_cumulative_patch_only.zip`, SHA256 `4575B705E966001F096E05B5C3F97D7BE49A05D7BAB14ACE67ED26EC6C917F2A`.

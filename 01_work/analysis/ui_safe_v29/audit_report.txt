@@ -1,0 +1,10 @@
+UI safe v0.29 independent audit
+pointer_payload_readback=503/503
+override_readback=253/253
+zip_member_order_preserved=true
+changed_members=COMM.IMG,PSX.EXE
+comm_img_changed_bytes=49
+comm_img_changed_nibbles=57
+comm_img_change_scope=single_LV_bitplane
+skill_description_max_chars=14
+result=PASS

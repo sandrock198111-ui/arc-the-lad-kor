@@ -535,3 +535,9 @@ Guide-based skill wording - 2026-07-17
 - Enemy-only skills at indices 46-58 are not covered by the printed player-skill tables; translate those from the executable literal instead of claiming guide provenance.
 - Safe-glyph wording may replace an unavailable syllable without changing the effect. For example, `용암` cannot be encoded because `암` is absent, so Burn Ground uses `불바다로 일정 범위 적에게 피해`; `베이스` cannot be encoded because `베` is absent, so the Slowness Bass label uses `느림의 연주` while its description remains `일정 범위 적 민첩 감소`.
 - v0.28 proves that 486/503 UI records fit the accepted DD-E0 bank with 599 bytes of pooled string capacity remaining. The remaining seventeen Japanese records are proper-name spellings, not skills or effects.
+
+Legacy low-code skill-level label - 2026-07-17
+- The broken bottom-left skill label `기1` comes from one-byte code `0x6C`. In the original Japanese table that code is `チ`; the old Korean low-code map had reused it for `기`.
+- v0.29 changes only the code `0x6C` physical bitplane to a compact `LV`, producing the intended level prefix without allocating E1-E8 texture space.
+- The full story-body audit finds 22 patched-body occurrences of byte `0x6C`: twelve are unreachable tails behind valid E2 redirects, while ten are original or binary bodies. Active translated E2 payloads do not depend on the old `기` bitmap.
+- This is still a shared low-code replacement. Any untranslated original UI or body that intentionally renders Japanese `チ` through the same plane will display `LV` instead, so runtime verification remains required and v0.28 must remain available as the rollback baseline.

@@ -1248,3 +1248,10 @@ story_test_23 S1072 안전 경계 기준
 - Player skill names and descriptions use the locally saved Game Magazine walkthrough tables on printed pages 92-95 as the Korean terminology/effect reference, while `PSX.EXE` remains authoritative for actual effects and row order.
 - Seventeen records remain Japanese because their proper names require unavailable safe glyphs: Gogen, Marshall, Kerak, Oton, and eleven region/location copies. No skill name or skill description remains Japanese.
 - Candidate output: `03_output/ui_safe_v28_cumulative_patch_only.zip`, SHA256 `0FCDF709F6125AF083167F67EA998C4BA7B2FD5D774EE4417677DFE934825828`. Static audit passes; runtime skill/item/accessory and battle-entry verification is pending.
+
+2026-07-17 safe UI help and level-label repair candidate v0.29:
+- v0.28 remains the accepted rollback baseline. v0.29 is a cumulative candidate and does not replace that baseline until runtime verification.
+- Reviewed 64 accessory descriptions and shortened affected skill help lines to the verified 14-character single-line budget. In particular, `던지기 단계 1` is corrected to `던지기 +1`.
+- The legacy one-byte code `0x6C`, which rendered as the broken `기` in the skill-level label, now draws a compact `LV` bitmap. Only its physical bitplane changes; the other three shared planes in the same tile remain exact.
+- Independent audit passes for 503/503 pointer payloads, 253/253 overrides, deterministic rebuilds, unchanged ZIP order, and changes limited to `PSX.EXE` plus the declared 49-byte `COMM.IMG` bitplane repair.
+- Candidate output: `03_output/ui_safe_v29_cumulative_patch_only.zip`, SHA256 `4575B705E966001F096E05B5C3F97D7BE49A05D7BAB14ACE67ED26EC6C917F2A`. Runtime checks of `LV1`, accessory help, character sprites, and battle start are pending.

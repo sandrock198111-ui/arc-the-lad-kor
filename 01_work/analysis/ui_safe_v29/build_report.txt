@@ -1,0 +1,23 @@
+UI safe v0.29 cumulative help-and-label repair
+base_zip_sha256=2808FD4A0CA191F01BB368AC3915DA27FD5CCA37B801308D3EEA5ACDBC3164C1
+output_zip_sha256=4575B705E966001F096E05B5C3F97D7BE49A05D7BAB14ACE67ED26EC6C917F2A
+translated_existing_bank=486
+guide_safe_overrides=253
+preserved_v25_missing_glyph=17
+total_records=503
+deduplicated_strings=433
+global_pool_free_bytes=581
+psx_exe_changed_bytes=6719
+skill_reference_pages=92,93,94,95
+comm_img_byte_identical_to_v25=false
+battle_cursor_and_sprite_texture_source_preserved=true
+e1_e8_ui_codes_added=false
+unrelated_zip_members_preserved=true
+changed_members=PSX.EXE,COMM.IMG
+comm_img_changed_bytes=49
+comm_img_changed_nibbles=57
+skill_level_label=LV
+skill_level_label_code=0x6C
+skill_level_label_scope=single_physical_bitplane
+low_6c_e2_redirect_tail_hits=12
+low_6c_original_or_binary_hits=10
