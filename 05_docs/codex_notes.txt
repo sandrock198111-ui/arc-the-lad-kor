@@ -492,3 +492,11 @@ External choice prompt row rule - 2026-07-17
 - E2 secondary strings do not interpret E6, so an external multiline prompt must use one E2 call per non-empty source text row. Each slot's skip metadata ends immediately before that row's original E6; the inline parser then executes the E6 before the next E2 or E5.
 - For a one-text-row prompt followed by E6, keep one E2 command but shorten its metadata to `row_end - row_start - 2`, ensuring completion resumes at E6.
 - Validate every repaired choice by requiring the option region from first E5 onward to remain byte-identical, source E5/E6 `(offset,value)` pairs to remain exact, and every custom E2 completion address to equal the next source E6 position.
+
+PSX.EXE UI pointer tables - 2026-07-17
+- The PS-X EXE payload starts at file offset `0x800`, loads at `0x8011B000`, and file offsets map to RAM with base `0x8011A800`.
+- Nine confirmed pointer tables cover 503 UI records: equipment names `0x804A4` (64), equipment descriptions `0x80A94` (64), consumable names `0x80C9C` (32), consumable descriptions `0x80F14` (32), skill names `0x811C0` (59), skill descriptions `0x81708` (59), character/monster names `0x81B4C` (108), region names `0x81E38` (30), and location names `0x82170` (55).
+- These tables point to zero-terminated strings inside the same executable. Story v0.23 leaves the complete table/string area `0x80224-0x821FF` byte-identical to the clean extracted executable.
+- Per-entry slots are usually only 4-12 bytes for names and 8-32 bytes for descriptions. Direct replacement is valid only when the Korean encoded string plus its zero terminator fits the confirmed slot; otherwise repack the complete table or relocate strings through verified pointers.
+- Consumable index 7 is `薬草`. Its name slot is file `0x80BCC` (8 bytes), description slot is `0x80D88` (20 bytes), name pointer is `0x80CB8`, and description pointer is `0x80F30`.
+- The v0.24 probe deliberately changes only those two string slots and does not reuse the rejected executable tail cave. Runtime verification is still required before treating this as a successful UI baseline.

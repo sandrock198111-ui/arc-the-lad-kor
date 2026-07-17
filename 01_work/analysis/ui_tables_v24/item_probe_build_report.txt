@@ -1,0 +1,8 @@
+UI item probe v0.24
+Base ZIP SHA256: E0A6C6EF167CFDDDA375FCE2B336A2CEAE478499DDDEB371668E2B99672C3C89
+Scope: PSX.EXE consumable item index 7 only
+consumable_name[7] 0x80BCC 薬草 -> 약초 (5/8 bytes including terminator)
+consumable_description[7] 0x80D88 ＨＰが20ポイント回復します -> 체력 20 회복 (13/20 bytes including terminator)
+Changed members: PSX.EXE
+Changed PSX.EXE bytes: 19
+Output ZIP SHA256: E5755DB4B0C911D406F1D03F752C5241A4681176D7C8FBBC759AA9CE08E0B3E8

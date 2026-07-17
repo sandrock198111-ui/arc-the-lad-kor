@@ -1151,3 +1151,14 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - E2 slots: PASS. 148 rewritten slots have zero tails and exact per-row skip metadata; all 133 completion paths resume at their expected E6 controls.
 - Isolation/reproducibility: PASS. No changes occur outside declared prompt regions and slots; repeated builds produce SHA256 `E0A6C6EF167CFDDDA375FCE2B336A2CEAE478499DDDEB371668E2B99672C3C89`.
 - Runtime status: pending user packaging and confirmation that option text now occupies the same rows as the triangular cursor.
+
+2026-07-17 - PSX.EXE item-table audit and herb probe v0.24
+- Input: story v0.23 cumulative ZIP, SHA256 `E0A6C6EF167CFDDDA375FCE2B336A2CEAE478499DDDEB371668E2B99672C3C89`.
+- Pointer-table audit: PASS. Extracted 503 entries from nine contiguous tables: 64 equipment names, 64 equipment descriptions, 32 consumable names, 32 consumable descriptions, 59 skill names, 59 skill descriptions, 108 character/monster names, 30 region names, and 55 location names.
+- Baseline isolation: PASS. The complete `0x80224-0x821FF` table area is byte-identical between the clean extracted `PSX.EXE` and story v0.23.
+- Probe scope: PASS. Only `PSX.EXE` differs from v0.23; all other 76 ZIP members are byte-identical.
+- Byte ranges: PASS. Differences are confined to consumable index 7 name slot `0x80BCC-0x80BD3` and description slot `0x80D88-0x80D9B`; pointer values are unchanged.
+- Capacity: PASS. `약초` uses 5/8 bytes including terminator; `체력 20 회복` uses 13/20 bytes including terminator.
+- Font: PASS statically. Current `COMM.IMG` glyph planes for `약` (`DFB1`) and `초` (`DFEB`) match the expected 12x12 bitmaps with zero differing pixels.
+- Reproducibility: PASS. Consecutive builds produced SHA256 `E5755DB4B0C911D406F1D03F752C5241A4681176D7C8FBBC759AA9CE08E0B3E8`.
+- Runtime status: pending packaging and item-menu verification of both name and description.

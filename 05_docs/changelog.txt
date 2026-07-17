@@ -413,3 +413,8 @@
 - Added `build_story_choice_row_alignment_v23.py`; it repairs all 133 affected external prompts by ending each E2 skip immediately before the original E6 and uses one E2 slot per non-empty source row.
 - Verified 133/133 prompt structures, 148 E2 slots, byte-identical option regions, source-exact E5/E6 geometry, deterministic rebuilds, and zero changes outside declared prompt/slot ranges.
 - Built `story_choice_row_alignment_v23_cumulative_patch_only.zip`, SHA256 `E0A6C6EF167CFDDDA375FCE2B336A2CEAE478499DDDEB371668E2B99672C3C89`.
+
+2026-07-17
+- Added `audit_psx_ui_tables.py` and extracted 503 confirmed `PSX.EXE` pointer-table entries covering equipment, consumables, skills, character/monster names, regions, and locations.
+- Added `ui_item_probe_v24.csv` and `build_ui_item_probe_v24.py` for a two-field consumable-item probe based on the unchanged story v0.23 baseline.
+- Built runtime-pending `ui_item_herb_probe_v24_cumulative_patch_only.zip`, changing only the `PSX.EXE` name and description slots for consumable index 7. SHA256: `E5755DB4B0C911D406F1D03F752C5241A4681176D7C8FBBC759AA9CE08E0B3E8`.
