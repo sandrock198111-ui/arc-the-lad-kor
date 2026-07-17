@@ -18,6 +18,9 @@ ex/
 # Local third-party tools and extracted binaries.
 06_tools/
 
+# Locally saved third-party walkthrough pages and extracted scan images.
+05_docs/공략/
+
 # Game/media/binary artifacts.
 *.zip
 *.7z

@@ -508,3 +508,9 @@ Consumable table repacking - 2026-07-17
 - Runtime pointers are `0x8011A800 + file_offset`. Every rebuilt pointer must remain inside its matching block, and every target must read back as the expected zero-terminated payload.
 - The name block is exactly full after v0.25 while the description block retains 40 aligned bytes. Future consumable wording changes must preserve the aggregate name capacity or shorten another name by the same aligned amount.
 - Reserved consumable indices 29-31 remain three separate pointers with their original `？？？？？` payloads; do not merge them merely to recover space without a separate runtime proof.
+
+Local Korean walkthrough reference - 2026-07-17
+- The ten SingleFile HTML pages in local-only `05_docs/공략/` embed readable Game Magazine scans for printed pages 88-97. Use `02_scripts/extract_singlefile_guide_images.py` to recreate the local image index under `01_work/analysis/guide_scan/`.
+- Printed page 91 is the primary Korean naming/effect reference for 28 ordinary consumables. It omits the event-use `召喚のつぼ`, so retain the executable text and other verified sources for that record.
+- Printed page 97 is the primary Korean naming/effect reference for all 64 accessories. The existing `PSX.EXE` pointer-table extraction remains authoritative for row order and runtime effects.
+- Treat the walkthrough as a natural Korean terminology reference, not as binary truth. When a printed effect conflicts with the executable (for example `魔力の泉`), prefer the executable's verified value and use the guide only for wording.

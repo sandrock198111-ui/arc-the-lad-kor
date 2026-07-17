@@ -424,3 +424,7 @@
 - Added `ui_consumables_v25.csv` with Korean names and L1 help text for all 29 active consumables while preserving the three original reserved records.
 - Added `build_ui_consumables_v25.py`; it repacks the complete consumable name and description blocks at four-byte boundaries and rewrites all 64 matching pointers without using external executable space.
 - Built runtime-pending `ui_consumables_v25_cumulative_patch_only.zip`, changing only the four declared `PSX.EXE` string/pointer ranges. SHA256: `2808FD4A0CA191F01BB368AC3915DA27FD5CCA37B801308D3EEA5ACDBC3164C1`.
+
+2026-07-17
+- Added `extract_singlefile_guide_images.py` for reproducible extraction and indexing of embedded scan images from locally saved SingleFile walkthrough pages.
+- Marked `05_docs/공략/` as local-only third-party reference material; no saved HTML or extracted scan image is tracked by Git.

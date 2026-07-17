@@ -1181,3 +1181,10 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Separate UI regression: FAIL. The field/battle system-help line shown after the item checks contains mixed Korean-looking glyphs and Japanese text instead of its intact original instruction.
 - Classification: the broken line is not a consumable name or consumable description record. It belongs to a separate system-help/UI string path and must be repaired independently from the accepted consumable pointer tables.
 - Packaging conclusion: retain v0.25 as the consumable-table candidate; do not claim whole-UI completion until the system-help strings and their shared glyph usage are audited.
+
+2026-07-17 - Local SingleFile walkthrough extraction
+- Input: ten locally saved Naver SingleFile HTML pages under `05_docs/공략/`.
+- Parser: PASS. `extract_singlefile_guide_images.py` compiled and processed all ten pages without modifying the source HTML.
+- Recovery: PASS. The embedded Game Magazine walkthrough scans cover printed pages 88-97. Lower-resolution duplicates and Naver UI resources are distinguishable by dimensions and source mapping.
+- Reference tables: PASS visually. Printed page 91 contains the consumable item list and status table; printed page 97 contains the 64-entry accessory list and monster table.
+- Scope: reference-only. No game binary, patch manifest, translation, or packaged output changed in this test.
