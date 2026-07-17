@@ -434,3 +434,8 @@
 - Added `build_ui_full_v26.py`; it allocates 389 UI-only glyphs in physical indices `1240-1629`, repacks all nine string regions as one deduplicated pool, and rewrites all 503 pointers.
 - Added `audit_ui_full_v26.py` for independent pointer, manifest, executable-range, font-plane, cursor, and unrelated-member verification.
 - Built `ui_full_v26_cumulative_patch_only.zip`, SHA256 `F31C5BABEE7011A2E9A8B168A971C80E5D8C376F655436ED1E6EBCB67E028549`.
+
+2026-07-17
+- Rejected v0.26 after runtime showed character-sprite corruption, an empty accessory list, severe battle-entry delay, and a battle-start lock.
+- Added `build_ui_safe_v27.py` and `ui_safe_v27.csv`; the hotfix uses only existing DD-E0 glyph mappings, translates 305 safe records, and preserves v0.25 payloads for 198 records requiring unavailable UI-safe glyphs.
+- Built `ui_safe_v27_cumulative_patch_only.zip`, SHA256 `443731B3EA5281121F0993A323B5D340C4777BECD888337A398E12DB25F500D3`.

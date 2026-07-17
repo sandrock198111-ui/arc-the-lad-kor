@@ -1234,3 +1234,10 @@ story_test_23 S1072 안전 경계 기준
 - Independent verification passes for 503/503 pointer and manifest readbacks, unique physical glyph indices, forbidden `00/FF` code exclusion, exact story-plane and battle-cursor preservation, and byte-identical unrelated ZIP members.
 - Candidate output: `03_output/ui_full_v26_cumulative_patch_only.zip`, SHA256 `F31C5BABEE7011A2E9A8B168A971C80E5D8C376F655436ED1E6EBCB67E028549`.
 - Runtime verification remains required for representative equipment, skill, character/status, region, and location screens before v0.26 can be promoted as the accepted whole-UI baseline.
+
+2026-07-17 v0.26 runtime rejection and safe UI hotfix v0.27:
+- Runtime rejects v0.26. Although map/location text rendered, character sprites gained white fragments, the accessory list was empty, battle entry became several times slower, and battle could not start.
+- The E1-E8 decoder path was real, but physical `COMM.IMG` indices `1240-1629` are not an isolated font bank. They overlap battle/character graphic data, so static glyph-plane isolation was not sufficient proof of runtime safety.
+- v0.27 returns to the v0.25 `COMM.IMG` byte-for-byte and adds no E1-E8 UI codes. It applies 305/503 UI records that can use the already accepted DD-E0 mappings and preserves the v0.25 payload for the remaining 198 records.
+- Safe candidate output: `03_output/ui_safe_v27_cumulative_patch_only.zip`, SHA256 `443731B3EA5281121F0993A323B5D340C4777BECD888337A398E12DB25F500D3`.
+- Static checks pass for 503/503 pointer readbacks, zero unsafe translated prefixes, exact v0.25 font/sprite source preservation, only-PSX.EXE modification, and deterministic rebuilds. Runtime battle-start and accessory-screen verification is required.

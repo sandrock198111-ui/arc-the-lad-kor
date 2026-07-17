@@ -1,0 +1,14 @@
+UI safe v0.27 cumulative hotfix
+base_zip_sha256=2808FD4A0CA191F01BB368AC3915DA27FD5CCA37B801308D3EEA5ACDBC3164C1
+output_zip_sha256=443731B3EA5281121F0993A323B5D340C4777BECD888337A398E12DB25F500D3
+translated_existing_bank=305
+preserved_v25_missing_glyph=198
+total_records=503
+deduplicated_strings=430
+global_pool_free_bytes=933
+psx_exe_changed_bytes=6644
+comm_img_byte_identical_to_v25=true
+battle_cursor_and_sprite_texture_source_preserved=true
+e1_e8_ui_codes_added=false
+unrelated_zip_members_preserved=true
+changed_members=PSX.EXE

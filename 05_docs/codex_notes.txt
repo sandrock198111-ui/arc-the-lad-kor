@@ -522,3 +522,9 @@ UI-only extended glyph bank - 2026-07-17
 - Do not allocate second byte `00`, because executable UI strings are zero terminated. Do not allocate second byte `FF`, because the 255-stride decoder aliases it with the next prefix's `00` physical index.
 - The nine UI string regions total 6,136 bytes. Pointers may target any zero-terminated string inside these loaded executable regions, so tight packing and exact-payload deduplication can treat them as one global pool without changing file size or using the rejected executable tail cave.
 - v0.26 stores 503 records as 429 unique payloads with 778 bytes free and 389 UI-only glyphs at indices 1240-1629. Future wording edits must rebuild the complete pool and rerun both the builder and independent collision audit.
+
+E1-E8 UI bank runtime rejection - 2026-07-17
+- The v0.26 conclusion that physical indices above 1239 were safe font storage was false. `COMM.IMG` is a shared texture source, and indices `1240-1629` overlap character/battle graphics even though they do not overlap the known story glyph planes or the previously isolated cursor rectangle.
+- Runtime symptoms are authoritative: white fragments under character sprites, empty accessory contents, slow battle transition, and battle-start lock. Do not reuse E1-E8 or physical indices above 1239 as a font bank without a separately relocated texture and renderer proof.
+- Static preservation of known glyph planes and one cursor rectangle does not prove preservation of every sprite/texture consumer. Future font expansion must compare or trace the complete texture layout, not only glyph-index arithmetic.
+- v0.27 is the safe fallback model: keep v0.25 `COMM.IMG` byte-identical, use only DD-E0 mappings whose encoded UI strings contain no zero byte, and preserve the base payload whenever the desired Korean needs an unavailable safe glyph.

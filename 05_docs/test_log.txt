@@ -1201,3 +1201,19 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - ZIP isolation: PASS. Only `COMM.IMG` and `PSX.EXE` differ; all other 75 members are byte-identical and member order is preserved.
 - Reproducibility: PASS. Consecutive builds produced SHA256 `F31C5BABEE7011A2E9A8B168A971C80E5D8C376F655436ED1E6EBCB67E028549`.
 - Runtime status: pending representative verification of equipment/accessory names and help, skills and help, status/character names, region names, and location names.
+
+2026-07-17 - v0.26 runtime rejection
+- Map/location names: PASS for the tested map screen.
+- Character graphics: FAIL. White glyph-like fragments appeared below multiple battle sprites.
+- Accessory screen: FAIL. The item list area was empty.
+- Battle transition: FAIL. Entry took several times longer than normal and battle could not start.
+- Conclusion: reject v0.26. Physical indices `1240-1629` overlap non-font graphics despite passing the prior bitplane and cursor checks.
+
+2026-07-17 - Safe UI hotfix v0.27 static verification
+- Input: v0.25 cumulative ZIP, SHA256 `2808FD4A0CA191F01BB368AC3915DA27FD5CCA37B801308D3EEA5ACDBC3164C1`.
+- Coverage: PASS. All 503 pointers read back exactly; 305 records use reviewed Korean encoded only with existing DD-E0 mappings, and 198 records preserve their v0.25 payload.
+- Font/sprite source: PASS. `COMM.IMG` is byte-identical to v0.25; no E1-E8 UI mapping or new physical glyph plane is added.
+- Parser safety: PASS. All 305 translated payloads parse without zero bytes, truncated pairs, or E1-E8 first-byte prefixes.
+- Isolation: PASS. Only `PSX.EXE` differs; all other 76 ZIP members are byte-identical to v0.25.
+- Reproducibility: PASS. Consecutive builds produced SHA256 `443731B3EA5281121F0993A323B5D340C4777BECD888337A398E12DB25F500D3`.
+- Runtime status: pending immediate accessory-list, character-sprite, battle-entry, and battle-start checks.
