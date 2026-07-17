@@ -528,3 +528,10 @@ E1-E8 UI bank runtime rejection - 2026-07-17
 - Runtime symptoms are authoritative: white fragments under character sprites, empty accessory contents, slow battle transition, and battle-start lock. Do not reuse E1-E8 or physical indices above 1239 as a font bank without a separately relocated texture and renderer proof.
 - Static preservation of known glyph planes and one cursor rectangle does not prove preservation of every sprite/texture consumer. Future font expansion must compare or trace the complete texture layout, not only glyph-index arithmetic.
 - v0.27 is the safe fallback model: keep v0.25 `COMM.IMG` byte-identical, use only DD-E0 mappings whose encoded UI strings contain no zero byte, and preserve the base payload whenever the desired Korean needs an unavailable safe glyph.
+
+Guide-based skill wording - 2026-07-17
+- The local Game Magazine scans list player skills by character: Arc and Poco on printed page 92, Kukuru and Gogen on page 93, Tosh on page 94, and Iga plus Chongara's summons on page 95.
+- Use those tables for natural Korean skill terminology and effect emphasis, but keep the `PSX.EXE` Japanese row order and literal effect as authority when the guide is abbreviated or conflicts.
+- Enemy-only skills at indices 46-58 are not covered by the printed player-skill tables; translate those from the executable literal instead of claiming guide provenance.
+- Safe-glyph wording may replace an unavailable syllable without changing the effect. For example, `용암` cannot be encoded because `암` is absent, so Burn Ground uses `불바다로 일정 범위 적에게 피해`; `베이스` cannot be encoded because `베` is absent, so the Slowness Bass label uses `느림의 연주` while its description remains `일정 범위 적 민첩 감소`.
+- v0.28 proves that 486/503 UI records fit the accepted DD-E0 bank with 599 bytes of pooled string capacity remaining. The remaining seventeen Japanese records are proper-name spellings, not skills or effects.

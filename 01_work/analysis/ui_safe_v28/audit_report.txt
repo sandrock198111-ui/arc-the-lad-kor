@@ -1,0 +1,11 @@
+UI safe v0.28 independent audit
+pointer_payload_readback=503/503
+translated_existing_bank=486
+preserved_v25_missing_glyph=17
+guide_player_skill_rows=90/90
+zip_member_order_preserved=true
+changed_members=PSX.EXE
+comm_img_byte_identical_to_v25=true
+translated_payload_zero_bytes=false
+translated_payload_e1_e8_prefixes=false
+result=PASS

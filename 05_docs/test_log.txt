@@ -1217,3 +1217,14 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Isolation: PASS. Only `PSX.EXE` differs; all other 76 ZIP members are byte-identical to v0.25.
 - Reproducibility: PASS. Consecutive builds produced SHA256 `443731B3EA5281121F0993A323B5D340C4777BECD888337A398E12DB25F500D3`.
 - Runtime status: pending immediate accessory-list, character-sprite, battle-entry, and battle-start checks.
+
+2026-07-17 - Safe UI expansion v0.28 static verification
+- Input: v0.25 cumulative ZIP, SHA256 `2808FD4A0CA191F01BB368AC3915DA27FD5CCA37B801308D3EEA5ACDBC3164C1`.
+- Coverage: PASS. 486/503 records encode in the accepted DD-E0 bank; only 17 proper-name records preserve their v0.25 Japanese payloads. Skill names and descriptions have no preserved Japanese records.
+- Guide provenance: PASS. All 90 player-skill rows (45 names and 45 descriptions) reference the Game Magazine tables on printed pages 92-95. Enemy-only skills absent from the guide retain executable-literal effect wording.
+- Pointer readback: PASS, 503/503 exact payloads.
+- Parser safety: PASS. Translated payloads contain no embedded zero and use no E1-E8 first-byte prefix or one-byte control.
+- Isolation: PASS. Only `PSX.EXE` differs; `COMM.IMG` and all other 76 members are byte-identical to v0.25, with ZIP member order preserved.
+- Capacity: PASS. 426 deduplicated strings leave 599 bytes free in the verified nine-region pool.
+- Reproducibility: PASS. Consecutive builds produced SHA256 `0FCDF709F6125AF083167F67EA998C4BA7B2FD5D774EE4417677DFE934825828`.
+- Runtime status: pending checks of `번 그라운드` help, `느림의 연주`, accessory contents, character sprites, battle entry, and battle start.

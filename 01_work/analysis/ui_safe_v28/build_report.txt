@@ -1,0 +1,16 @@
+UI safe v0.28 cumulative guide-reviewed batch
+base_zip_sha256=2808FD4A0CA191F01BB368AC3915DA27FD5CCA37B801308D3EEA5ACDBC3164C1
+output_zip_sha256=0FCDF709F6125AF083167F67EA998C4BA7B2FD5D774EE4417677DFE934825828
+translated_existing_bank=486
+guide_safe_overrides=237
+preserved_v25_missing_glyph=17
+total_records=503
+deduplicated_strings=426
+global_pool_free_bytes=599
+psx_exe_changed_bytes=6730
+skill_reference_pages=92,93,94,95
+comm_img_byte_identical_to_v25=true
+battle_cursor_and_sprite_texture_source_preserved=true
+e1_e8_ui_codes_added=false
+unrelated_zip_members_preserved=true
+changed_members=PSX.EXE
