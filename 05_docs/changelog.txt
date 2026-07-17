@@ -451,3 +451,9 @@
 - Added `build_ui_safe_v29.py`; it retains the safe v0.28 executable-table model and changes only the legacy `0x6C` physical bitplane to render the skill level prefix as `LV`.
 - Added `audit_ui_safe_v29.py` for independent pointer, override, ZIP, help-length, and font-bitplane verification.
 - Built runtime-pending `ui_safe_v29_cumulative_patch_only.zip`, SHA256 `4575B705E966001F096E05B5C3F97D7BE49A05D7BAB14ACE67ED26EC6C917F2A`.
+
+2026-07-17
+- Added `ui_safe_v30_overrides.py` with deliberate thirteen-cell help wrapping and three `LV +1` equipment descriptions.
+- Added `build_ui_safe_v30.py`; it translates four preserved tutorial rows in each of six duplicated scene files through verified empty E2 slots and retains all eighteen original E6 controls.
+- Added `audit_ui_safe_v30.py` for independent executable-pointer, help-layout, duplicate-tutorial, byte-range, and cumulative-member verification.
+- Built runtime-pending `ui_safe_v30_cumulative_patch_only.zip`, SHA256 `3361FD182D86C5B2B8719DD468F996B23874BC8265ABBC0819B4E2B1F11D8C92`.

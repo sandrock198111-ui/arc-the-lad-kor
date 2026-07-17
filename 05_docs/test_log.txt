@@ -1238,3 +1238,12 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - ZIP isolation: PASS. Member order is unchanged; only `COMM.IMG` and `PSX.EXE` differ from the base cumulative ZIP.
 - Reproducibility: PASS. Two consecutive builds produced SHA256 `4575B705E966001F096E05B5C3F97D7BE49A05D7BAB14ACE67ED26EC6C917F2A`.
 - Runtime status: pending verification that the former `기1` label displays as `LV1`, accessory help displays naturally, character sprites remain intact, and battle entry/start do not regress.
+
+2026-07-17 - Balanced skill help and repeated tutorial candidate v0.30
+- Skill-help layout: PASS. Twelve descriptions intentionally fill the first thirteen-cell row with semantic text plus trailing spaces; none leaves a one-syllable orphan row.
+- Equipment level help: PASS. `던지기 LV +1`, `점프 LV +1`, and `받기 LV +1` encode with the verified low-code LV ligature and no new physical glyph allocation.
+- Duplicate tutorial coverage: PASS. Exact source bytes were found and replaced in six files at `S2045 0x4922E`, `S3014 0x48252`, `S5013 0x4921A`, `S6014 0x491C6`, `S7012 0x48CBE`, and `S8013 0x47CAC`.
+- Tutorial structure: PASS. 24/24 text rows use separate E2 slots; all 18 original `E6 01` row controls remain exact. Every DAT difference is inside a two-byte row command or its declared empty 128-byte slot.
+- Cumulative isolation: PASS. Relative to v0.29, only `PSX.EXE` and the six declared DAT files differ; `COMM.IMG` is byte-identical.
+- Pointer readback: PASS, 503/503. Reproducibility: PASS, two builds with SHA256 `3361FD182D86C5B2B8719DD468F996B23874BC8265ABBC0819B4E2B1F11D8C92`.
+- Runtime status: pending checks of balanced skill rows, three LV help strings, all four tutorial rows, character sprites, battle entry, and battle start.

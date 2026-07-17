@@ -1,0 +1,10 @@
+UI safe v0.30 independent audit
+pointer_payload_readback=503/503
+equipment_LV_descriptions=3/3
+balanced_skill_help=12/12
+tutorial_duplicate_files=6/6
+tutorial_E2_rows=24/24
+tutorial_E6_controls=18/18
+comm_img_byte_identical_to_v29=true
+changes_outside_declared_ranges=false
+result=PASS

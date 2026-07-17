@@ -1,0 +1,119 @@
+﻿index,record_type,japanese,korean,reference,basis
+0,skill_name,,,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+1,skill_name,バーン<N:ク:12>ラウント,번 그라운드,Game Magazine p.92 (아크),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+2,skill_name,トータル<N:ヒ:5>ーリン<N:ク:12>,전체 회복,Game Magazine p.92 (아크),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+3,skill_name,ゲ<N:｣:11>ルフラッシュ,게일 플래시,Game Magazine p.92 (아크),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+4,skill_name,スロウエ<N:ネ:13>ミー,슬로우 에너미,Game Magazine p.92 (아크),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+5,skill_name,メテオフ<N:｣:13>ール,별 내리기,Game Magazine p.92 (아크),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+6,skill_name,<N:午:15>ュア,회복,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+7,skill_name,デポ<N:｣:11><N:ス:15>ン,해로운 기운 제거,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+8,skill_name,サ<N:｣:11><N:リ:12>ント,사일런트,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+9,skill_name,リフ<N:リ:12>ッシュ,리프레시,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+10,skill_name,天のさばき,하늘의 심판,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+11,skill_name,リ<N:ザ:8><N:リ:12>クション,부활,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+12,skill_name,デ<N:ｲ:6>バ<N:｣:11>ト,디바이드,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+13,skill_name,桜花雷爆斬,토슈 비기,Game Magazine p.94 (토슈),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+14,skill_name,呪縛剣,봉인검,Game Magazine p.94 (토슈),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+15,skill_name,<N:真:2><N:空:2>斬,진공검,Game Magazine p.94 (토슈),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+16,skill_name,<N:虎:5><N:影:1>斬,그림자검,Game Magazine p.94 (토슈),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+17,skill_name,戦の小太鼓,전투 큰 북,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+18,skill_name,荒獅子太鼓,황사자태고,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+19,skill_name,気合いラッパ,기합 나팔,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+20,skill_name,へろへろラッパ,비틀비틀 나팔,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+21,skill_name,いやしのたてごと,치유의 하프,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+22,skill_name,のろまのベース,느림의 연주,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+23,skill_name,い<N:駄:2>天のオカリナ,위타천 오카리나,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+24,skill_name,向き直りの笛,방향잡이 피리,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+25,skill_name,エクス<N:フ:11>ロージョン,대폭발,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+26,skill_name,トリーム<N:メ:6>ック,드림 노크,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+27,skill_name,ダ<N:｣:11>ヤモントダスト,다이아몬드 더스트,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+28,skill_name,ウ<N:｣:11>ントスラッシャー,바람 검,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+29,skill_name,<N:ヒ:5>ートウ<N:｣:13>ール,불의 장막,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+30,skill_name,サンダーストーム,전기 폭풍,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+31,skill_name,テ<N:リ:12>ポート,공간 이동,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+32,skill_name,心<N:眼:3>法,심안법,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+33,skill_name,<N:退:3>魔光弾,악령 광선,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+34,skill_name,旋風撃蹴,회오리 차기,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+35,skill_name,流星爆,유성폭,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+36,skill_name,鬼神流<N:影:1><N:波:1>,유령 파동,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+37,skill_name,滅掌烈破,멸장열파,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+38,skill_name,<N:ゲ:16>ラック,회복 마물,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+39,skill_name,モフリー,모프리,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+40,skill_name,フウジン,후우진,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+41,skill_name,ラ<N:｣:11>ジン,라이진,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+42,skill_name,へモジー,헤모지,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+43,skill_name,オトン,강화 마물,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+44,skill_name,調ベる,조사,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+45,skill_name,ちょこ,초코,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+46,skill_name,回復,회복,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+47,skill_name,<N:ｴ:24>か造り,다리 만들기,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+48,skill_name,風雷破,바람 전기,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+49,skill_name,風雷破,바람 전기,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+50,skill_name,乗り移り,몸 가져오기,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+51,skill_name,バク<N:リ:12>ツ手裏剣,폭발 수리검,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+52,skill_name,自爆,자폭,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+53,skill_name,ジ<N:ニ:13>クへの階段,지옥으로 가는 계단,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+54,skill_name,4方向,사방 공격,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+55,skill_name,炎雷崩,불과 전기,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+56,skill_name,ダスト・ルー<N:｣:11>ン,먼지 마법진,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+57,skill_name,ヨミのつばさ,요미의 바람,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+58,skill_name,やる気なし,기운 없음,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+0,skill_description,,,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+1,skill_description,ようがんを発生させ敵にダメージを<N:与:3>えます,불바다로 범위      적에게 피해,Game Magazine p.92 (아크),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+2,skill_description,ステ<N:｣:11>タス傷害と体力を回復します,이상 상태와 체력 회복,Game Magazine p.92 (아크),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+3,skill_description,いくうかんからの攻撃で敵にダメージを<N:与:3>えます,이공간 공격으로 적 피해,Game Magazine p.92 (아크),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+4,skill_description,敵の素早さを下げます,일정 범위 적 민첩 감소,Game Magazine p.92 (아크),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+5,skill_description,いんせきが落下しまわりの敵にダメージを<N:与:3>えます,별을 내려 주변 적 공격,Game Magazine p.92 (아크),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+6,skill_description,体力を回復します,일정 범위 아군     체력 회복,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+7,skill_description,<N:毒:1>を消しさります,해로운 기운 제거,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+8,skill_description,敵の魔法を封じ込めます,적의 마법 봉인,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+9,skill_description,ステ<N:｣:11>タス傷害を回復します,아군의 이상 상태 회복,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+10,skill_description,天使が画面外に飛んでいき<N:リ:12>ー<N:ザ:8>ーで攻撃します,천사의 광선 공격,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+11,skill_description,戦闘不能になつた味方を呼び戻せます,쓰러진 아군 부활,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+12,skill_description,敵の体力をすいとり味方に分け<N:与:3>えます,적 체력을 줄여     아군 회복,Game Magazine p.93 (쿠쿠루),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+13,skill_description,敵一体に必殺の剣で斬りつけます,적 하나에 강한 검격,Game Magazine p.94 (토슈),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+14,skill_description,敵をマ<N:ヒ:5>させます,적 하나를 마비로 변화,Game Magazine p.94 (토슈),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+15,skill_description,2ます先の敵を斬りつけます,전방의 적 공격,Game Magazine p.94 (토슈),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+16,skill_description,敵に向かつて走り込んで斬りつけます,달려가며 적 공격,Game Magazine p.94 (토슈),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+17,skill_description,味方の攻撃力を上げます,범위 아군 공격력 상승,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+18,skill_description,<N:波:1>動<N:リ:12>ー<N:ザ:8>ー弾を撃ちます,파동 광선으로 적 공격,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+19,skill_description,<N:遠:1>くの敵を気合で攻撃します,먼 적을 소리로 공격,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+20,skill_description,一度にたくさんの爆弾を撃ちます,다수의 폭발 구슬 발사,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+21,skill_description,味方の体力を回復します,일정 범위 아군     체력 회복,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+22,skill_description,敵のすばやさを下げます,일정 범위 적 민첩 감소,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+23,skill_description,味方のすばやさを上げます,일정 범위 아군     민첩 상승,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+24,skill_description,全員がポニと同じ方向に向きを変えます,아군 방향을       포코처럼 변화,Game Magazine p.92 (포코),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+25,skill_description,すごい炎で敵をつつみこみダメージを<N:与:3>えます,큰 불꽃으로       범위 적 피해,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+26,skill_description,敵を<N:眠:5>らせます,일정 범위 적을     잠들게 함,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+27,skill_description,すごいふぶきを起こして敵にダメージを<N:与:3>えます,눈보라로 범위      적에게 피해,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+28,skill_description,すごい風を起こして敵にダメージを<N:与:3>えます,돌풍으로 범위      적에게 피해,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+29,skill_description,炎のかたまりを作りだします,불꽃 장막 생성,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+30,skill_description,すごい雷を落として敵にダメージを<N:与:3>えます,전기로 범위 적에게 피해,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+31,skill_description,まわりの味方を連れてテ<N:リ:12>ポートします,주변 아군과 공간 이동,Game Magazine p.93 (고겐),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+32,skill_description,敵<N:午:15>ャラクタをロックします,적 하나 고정,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+33,skill_description,心<N:眼:3>法でロックした敵に対して光弾を撃ち込みます,고정한 적에게 광선 발사,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+34,skill_description,自分のまわりにいる敵<N:午:15>ャラクタを攻撃します,주변 적을 회전하며 공격,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+35,skill_description,たつまきで敵をすいあげて地上にたたき落とします,회오리로 올려 내리침,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+36,skill_description,自分の残像を敵に向かつてぶつけます,분신을 날려 공격,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+37,skill_description,自分よりある程度弱い敵を消し去ります,자신보다 약한 적을 소멸,Game Magazine p.95 (이가),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+38,skill_description,<N:ｌ:5><N:ゲ:16>ラックへを召喚します,회복 마물로 체력 회복,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+39,skill_description,<N:ｌ:5>モフリーへを召喚します,모프리를 불러 길 생성,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+40,skill_description,<N:ｌ:5>フウジンへを召喚します,후우진을 부름,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+41,skill_description,<N:ｌ:5>ラ<N:｣:11>ジンへを召喚します,라이진을 부름,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+42,skill_description,<N:ｌ:5>へモジーへを召喚します,헤모지를 불러 적을 변화,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+43,skill_description,<N:ｌ:5>オトンへを召喚します,강화 마물을       불러 힘 상승,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+44,skill_description,モンスターを調ベます,마물의 힘 조사,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+45,skill_description,<N:ｌ:5>ちょこへを召喚します,초코를 부름,Game Magazine p.95 (총가라 소환수),공략본의 한국어 명칭/효과와 PSX.EXE 원문을 함께 반영
+46,skill_description,味方を回復します,아군 체력 회복,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+47,skill_description,行けないところに<N:ｴ:24>かを造ります,갈 수 없는 곳에    길 생성,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+48,skill_description,ラ<N:｣:11>ジンとの合体魔法,라이진 합체 마법,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+49,skill_description,フウジンとの合体魔法,후우진 합체 마법,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+50,skill_description,敵に乗り移れます,적의 몸으로 이동,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+51,skill_description,まわりに手裏剣をばらまきます,주변에 수리검 난사,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+52,skill_description,自爆します,자폭 공격,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+53,skill_description,かまフーメランで敵を攻撃します,큰 무기를 던져 공격,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+54,skill_description,まわりの敵にダメージを<N:与:3>えます,주변 적에게 피해,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+55,skill_description,まわりの敵にダメージを<N:与:3>えます,주변 적에게 피해,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+56,skill_description,直せん上の敵をなぎはらいます,직선상의 적 공격,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+57,skill_description,つばさをはためかせ風でダメージを<N:与:3>えます,바람으로 적에게 피해,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영
+58,skill_description,敵をへモジーにします,적을 헤모지 상태로 변화,PSX.EXE 일본어 원문,공략본에 없는 적 전용 기술로 PSX.EXE 원문 효과를 반영

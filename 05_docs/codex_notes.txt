@@ -541,3 +541,14 @@ Legacy low-code skill-level label - 2026-07-17
 - v0.29 changes only the code `0x6C` physical bitplane to a compact `LV`, producing the intended level prefix without allocating E1-E8 texture space.
 - The full story-body audit finds 22 patched-body occurrences of byte `0x6C`: twelve are unreachable tails behind valid E2 redirects, while ten are original or binary bodies. Active translated E2 payloads do not depend on the old `기` bitmap.
 - This is still a shared low-code replacement. Any untranslated original UI or body that intentionally renders Japanese `チ` through the same plane will display `LV` instead, so runtime verification remains required and v0.28 must remain available as the rollback baseline.
+
+Direct skill-help wrapping and duplicated tutorial - 2026-07-17
+- Runtime proves the battle skill-help box wraps after thirteen displayed cells, not fourteen Korean syllables. A fourteen-cell string therefore produces a thirteen-plus-one orphan layout.
+- This direct UI path has no verified explicit newline control. The safe v0.30 method pads a reviewed first phrase to exactly thirteen cells, causing the next semantic phrase to begin at the second-row origin.
+- The Choppin status tutorial is duplicated byte-for-byte in six scene DAT files. Its 50-byte body has four text rows of lengths 5/14/12/13 separated by three `E6 01` controls.
+- Preserve the E6 controls. Replace each text row with its own E2 command and set the slot skip to that row's original capacity minus two, so control returns immediately before the following E6.
+
+DuckStation fallback HASH identity - 2026-07-17
+- The current `E:/arc/out` filesystem has no `SYSTEM.CNF`. DuckStation therefore records this rebuilt disc under fallback `HASH-*` identities rather than a stable serial-based identity.
+- Local `playtime.dat` and savestate filenames confirm many separate `HASH-*` entries. UI builds change `PSX.EXE`, so their fallback identity and accumulated playtime entry can change; earlier story-only DAT builds commonly retained the same executable identity.
+- This playtime split is not evidence of save-data or gameplay corruption. Do not add a guessed `SYSTEM.CNF` or alter disc layout merely to stabilize the identifier; that requires a separately verified packaging/XML change.
