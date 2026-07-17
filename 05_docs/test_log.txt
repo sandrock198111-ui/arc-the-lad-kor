@@ -1263,3 +1263,14 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Isolation: PASS. Relative to v0.30, changed members are only `PSX.EXE` and the nine declared battle-choice DAT files. Executable differences are confined to confirmed UI pools/tables, system pools, and 21 pointer words.
 - Reproducibility: PASS. Two consecutive builds produced SHA256 `C693D30862AE9681EB2B4F492BBECA3BFE17FF396EF88B132A4035FD7F7384F5`.
 - Runtime status: pending user packaging and checks of the six reported screens. Existing memory-card slot labels are not migrated and may remain Japanese until a new save is written.
+
+2026-07-17 - v0.31 runtime follow-up and v0.32 repair
+- Equipment LV: FAIL visual quality. The compact V in the shared `0x6C` glyph looks U-shaped.
+- Battle skill LV: FAIL visual quality. The same shared glyph produces the strange first symbol before level 1.
+- Field button help: PARTIAL. Korean renders, but v0.31 removed two valid button icons and mistranslated the second action as back instead of status display.
+- Target-selection help: FAIL coverage. The next phase at pointer `0x82360` remains Japanese.
+- v0.32 LV audit: PASS. Only the `0x6C` physical bitplane changes; the new 32-pixel bitmap has a pointed V and every neighboring plane remains exact.
+- v0.32 system audit: PASS, 22/22 pointer payloads. The decision/status payload contains exactly one `E7 02` and one `E7 03`; the following target help reads back as `다음 대상을 선택합니다`.
+- Isolation: PASS. Relative to v0.31, only `COMM.IMG` and `PSX.EXE` change; all battle/story members are byte-identical and executable changes remain inside declared system pools/pointers.
+- Reproducibility: PASS, SHA256 `5046186DB1EE07C576D8F868D4D8F921A8F94762E87739ACF55308048AD0DE37`.
+- Runtime status: pending user packaging and visual verification of the button icons, target help, equipment LV, and battle skill LV.

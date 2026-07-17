@@ -1270,3 +1270,10 @@ story_test_23 S1072 안전 경계 기준
 - Existing memory-card slot labels are stored inside the save data and are not migrated by the patch. Previously created slots can therefore retain Japanese place names; newly saved metadata must be checked separately at runtime.
 - Independent audit passes for 503/503 UI pointers, 12/12 one-line skill helps, 21/21 system pointers, 63/63 battle choices, exact E5/E6 geometry, unchanged v0.30 `COMM.IMG`, and zero changes outside declared ranges.
 - Candidate output: `03_output/ui_safe_v31_cumulative_patch_only.zip`, SHA256 `C693D30862AE9681EB2B4F492BBECA3BFE17FF396EF88B132A4035FD7F7384F5`. Runtime verification of the six reported screens remains required.
+
+2026-07-17 button-help, target-help, and LV repair candidate v0.32:
+- Runtime accepts the v0.31 Korean field-help path but shows that its wording was semantically wrong: the original `E7 02/E7 03` controls are valid decision/status button icons, not broken text to remove. v0.32 restores both icons and translates the functions as decision and status check.
+- The following target-selection phase uses a separate pointer at `PSX.EXE 0x82360`, originally targeting `0x822C4`. It now displays `다음 대상을 선택합니다` through the confirmed system-string pool.
+- The shared one-cell `0x6C` LV bitmap used by both equipment help and battle skill level had a thick U-shaped V. v0.32 replaces only that physical bitplane with a pointed, open V while preserving all neighboring planes.
+- Relative to v0.31, only `PSX.EXE` and `COMM.IMG` change. All story and battle DAT members remain byte-identical.
+- Candidate output: `03_output/ui_safe_v32_cumulative_patch_only.zip`, SHA256 `5046186DB1EE07C576D8F868D4D8F921A8F94762E87739ACF55308048AD0DE37`. Independent static audit passes; runtime checks of the two button icons, next-target help, and both LV uses remain required.

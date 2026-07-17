@@ -568,3 +568,13 @@ Battle confirmation E2 option rule - 2026-07-17
 Direct skill-help padding rejection - 2026-07-17
 - v0.30 proved that padding a thirteen-cell first phrase with visible spaces is not acceptable. The renderer shows the spaces as a large gap, so static row-length arithmetic alone does not predict a balanced visual result.
 - Use a natural single-line phrase of at most thirteen displayed cells for this help path. Do not reintroduce deliberate trailing or internal padding as a line-break mechanism.
+
+Field-help icon controls and target-selection pointer - 2026-07-17
+- Runtime corrects the v0.31 interpretation of `E7 02` and `E7 03`: they are valid decision and status-display button icons. Do not delete these controls merely because the small icons initially look unfamiliar.
+- The source help at `0x822AC`, pointer word `0x8235C`, means decision plus status display. `뒤로: 돌아가기` was a translation error and must not be reused.
+- The immediately following phase is a separate source string at `0x822C4`, pointer word `0x82360`. It is the target-selection instruction and must be patched separately from the button-help string.
+
+Compact LV bitmap shape - 2026-07-17
+- Both equipment help text containing the `LV` token and the battle skill-level prefix use the same one-byte code `0x6C` and therefore the same single physical bitplane.
+- The v0.29-v0.31 bitmap drew the V with a thick closed bottom, making it look like U and making `LV1` resemble a broken first character.
+- A safe correction changes only the same `0x6C` plane. Use separated upper stems and a one-pixel lower point for V; verify both equipment help and battle HUD because one bitmap controls both screens.

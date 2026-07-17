@@ -464,3 +464,10 @@
 - Added `build_ui_safe_v31.py`; it relocates 21 save/load and shared system strings through confirmed `PSX.EXE` pointers and repairs 63 battle-confirmation choices in nine files with shared E2 option slots.
 - Added `audit_ui_safe_v31.py` plus system and battle-choice manifests. Independent checks preserve all source E5/E6 positions, remove the broken bottom-help E7 icon controls, and reject changes outside declared ranges.
 - Built `ui_safe_v31_cumulative_patch_only.zip`, SHA256 `C693D30862AE9681EB2B4F492BBECA3BFE17FF396EF88B132A4035FD7F7384F5`.
+
+2026-07-17
+- Corrected the v0.31 field-help interpretation: restored the original `E7 02/E7 03` decision/status button icons and replaced the incorrect back-function wording with status-check wording.
+- Added the missed target-selection help pointer at `0x82360` and translated it as `다음 대상을 선택합니다`.
+- Rebuilt the shared one-cell `LV` bitmap with a pointed V, fixing both equipment descriptions and the battle skill-level prefix.
+- Added `build_ui_safe_v32.py`, `audit_ui_safe_v32.py`, and v0.32 manifests/audit reports.
+- Built `ui_safe_v32_cumulative_patch_only.zip`, SHA256 `5046186DB1EE07C576D8F868D4D8F921A8F94762E87739ACF55308048AD0DE37`.

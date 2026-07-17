@@ -1,0 +1,10 @@
+UI safe v0.32 independent audit
+pointer_payload_readback=503/503
+system_text_pointer_readback=22/22
+decision_status_button_icons=2/2
+target_selection_help=translated
+lv_bitmap_pixels=32
+lv_change_scope=single_physical_bitplane
+battle_and_story_members_byte_identical_to_v31=true
+changes_outside_declared_ranges=false
+result=PASS
