@@ -1293,3 +1293,115 @@ story_test_23 S1072 안전 경계 기준
 - The shared one-cell code `0x6C` now uses a 30-pixel bitmap with a heavier L and a separated pointed V. The change still touches only one verified physical bitplane and therefore applies to both equipment `LV +1` help and battle `LV1` labels.
 - Independent readback passes for 503/503 UI records, 33/33 system strings, and 13/13 battle-help pointers. Relative to v0.33, only `PSX.EXE` and `COMM.IMG` change; every other ZIP member is byte-identical.
 - Candidate output: `03_output/ui_safe_v34_cumulative_patch_only.zip`, SHA256 `1B49FAA19018A3C06238F4371BCB3A81A4AF9B672837368EA6A6CA492ACBD622`. Two consecutive builds are deterministic; runtime verification of confirmation spacing and both LV uses remains required.
+
+2026-07-18 non-story cumulative repair v0.36:
+- v0.36 retains the v0.35 non-story pointer coverage of 123/123 records while reverting the rejected thin-LV experiment. `COMM.IMG` is byte-identical to v0.34, SHA256 `FB6D4027023C6A75A1561D72507C52656472B4F31E1EB92B73965CA3B51543EA`.
+- The item-acquisition suffix at pointer `0x82474` is `를 손에 넣었습니다.`. The item name is emitted separately, so the intended runtime sentence is `약초를 손에 넣었습니다.` without the broken opening quote.
+- Candidate output: `03_output/ui_safe_v36_cumulative_patch_only.zip`, SHA256 `B88FCA6C706E59F779197F23B4DCE45C1C0C87AF1274E9B4B316B3D4751276D3`.
+
+2026-07-18 confirmation-box geometry candidate v0.37:
+- Runtime showed that the first triangular selector sits outside the shared save/load confirmation box. The selector X coordinate is tied to the option row; moving it alone would overlap `예`.
+- The shared renderer at RAM `0x80160B8C` now widens the box by 24 pixels while compensating the prompt X offset by 12 pixels. Prompt text, option text, and selector absolute positions remain unchanged; the box extends 12 pixels to each side and contains the selector.
+- Relative to the hash-locked v0.36 base, only `PSX.EXE` changes and only file offsets `0x463D8` and `0x46428` differ, one byte each. All DAT members and `COMM.IMG` are byte-identical.
+- The longest shared prompt produces a 256-pixel box, within the 320-pixel screen. The v0.34 compact `LV` bitmap remains exact.
+- Candidate output: `03_output/ui_safe_v37_cumulative_patch_only.zip`, SHA256 `0583FEED2266C883B413260114F331D73FAC12AE1C9A17EB123D559D9EB29AA1`. Runtime verification of all shared save/load/pre-battle confirmation boxes remains pending.
+
+2026-07-18 relocated button-icon and thin-LV candidate v0.38:
+- v0.38 is a direct hash-locked patch over v0.37. It keeps the accepted v0.37 confirmation geometry and changes only `PSX.EXE` and `COMM.IMG`.
+- The user-preferred v0.35 23-pixel `LV` bitmap replaces the v0.34 heavy bitmap. Only the physical plane for one-byte code `0x6C` changes; all three neighboring planes remain exact.
+- Original `E7 02/E7 03` icon pixels are copied from verified duplicates at `(114,354)` and `(162,354)` into same-page rectangles `(0,130)` and `(12,130)`. The destination covers 24 unassigned glyph codes and has zero uses in 4,653 current active payloads.
+- The E7 U table now selects `0x00/0x0C` while retaining V `0x82`, width 12, height 12, and the original renderer. Bottom help reads `{결정버튼}결정 {취소버튼}돌아가기`.
+- Candidate output: `03_output/ui_safe_v38_cumulative_patch_only.zip`, SHA256 `D66E6F4F780E3096B604C7699E3E7EB00392EE7C0C4FA457AEDE3F61EEFD45D9`. Deterministic builds and independent static audit pass; runtime verification of both icons and both `LV` uses remains required.
+
+2026-07-18 focused icon and battle-HUD repair candidate v0.39:
+- v0.38 runtime accepts the relocated X/back icon, confirmation geometry, item-help `LV`, and Korean battle help. The remaining defects are E7_02 at U=0 and the battle skill HUD label row.
+- E7_02 is moved to verified unassigned same-page U=0x18 at `(24,130)`. The failed `(0,130)` experiment is restored from v0.37, while the working E7_03 X at `(12,130)` is preserved byte-for-byte.
+- Five battle-HUD pointers at `PSX.EXE 0x823AC-0x823BC` still targeted `0x82390-0x823A0`, which v0.35 had reclaimed for Korean strings. v0.39 moves those labels to zero cave `0x820A8-0x820BB` and emits compact `LV`, an empty legacy V tail, the original auxiliary label, `M`, and `P`.
+- The accepted v0.38 `0x6C` LV plane, working X icon, field-help payload, target-selection help, confirmation geometry, story files, and every unrelated ZIP member are preserved.
+- Candidate output: `03_output/ui_safe_v39_cumulative_patch_only.zip`, SHA256 `0778FE435820409F190579D179F8B36FFFCEB02B5F2004FC1E3ACE58741D5DC3`. Independent static audit passes; runtime verification of the circle icon and battle HUD row remains required.
+
+2026-07-18 v0.39 glyph-expansion rollback baseline:
+- The user designates v0.39 as the functional rollback point for future independent UI/battle glyph-storage experiments. It is not a release-complete build.
+- Frozen backup: `99_backup/baselines/ui_safe_v39_fallback_2026-07-18/ui_safe_v39_cumulative_patch_only.zip`, SHA256 `0778FE435820409F190579D179F8B36FFFCEB02B5F2004FC1E3ACE58741D5DC3`.
+- Runtime-accepted parts include progression, confirmation-box geometry, the item-help compact `LV`, the E7_03 X/back icon, and the existing cumulative translated payloads.
+- Known rollback-baseline defects are: malformed battle-HUD `LV`, corrupt E7_02 circle/confirm icon, a dark unexpected mark inside the battle cursor, and one Japanese body at `31/S3023.DAT 0x47E4C`.
+- Future storage-expansion work must start from an exact copy of this hash-locked artifact and must never overwrite the frozen backup.
+
+2026-07-18 v0.40 sparse UI glyph-store runtime probe:
+- v0.39 remains the accepted rollback baseline. v0.40 is an experimental patch-only probe and must not replace v0.39 until runtime verification passes.
+- Analysis of 55 DuckStation savestates identified 159 `COMM.IMG` 12x12 cells that remain zero in both the v0.39 source and every sampled runtime VRAM image. The E1-E8 direct decoder can safely address 384 independent bitplanes in those sparse cells.
+- v0.40 relocates 278 Hangul UI glyphs to this verified sparse bank while preserving the existing one-byte `덕` and `량` glyphs to avoid changing string lengths. It leaves 106 verified E1-E8 planes unused for later repairs.
+- All UI pointer tables and encoded string lengths remain unchanged. The v0.39 compact-LV plane, E7 icon regions, battle-cursor region, HUD special payloads, 17 intentionally preserved Japanese rows, and every unrelated ZIP member are byte-identical.
+- Probe output: `03_output/ui_glyph_store_v40_sparse_probe_patch_only.zip`, SHA256 `C6D50D2252C52B26499F4C1BC26544E14DE99881ACA31E76FC3EC2BA5A6A1B43`. Independent static audit and deterministic rebuild pass; runtime status is `UNVERIFIED_PROBE`.
+
+2026-07-18 v0.40 runtime rejection and v0.41 repair direction:
+- DuckStation slots 1-3 show corrupted accessory text, an empty skill label, and colored block corruption in skill help. Slot 4 cannot progress. v0.40 is rejected and must not be used as a gameplay build.
+- The sparse `COMM.IMG` cells themselves are valid: all selected cells in slots 1-4 match the v0.40 source byte-for-byte in runtime VRAM. The failure is in the string-code namespace.
+- The dynamic UI text loop at RAM `0x8016BB38-0x8016BBA0` intercepts bytes `E1-E8` as control commands before calling the common glyph decoder. v0.40 used `E1/E2` as glyph prefixes, so glyph bytes were executed as color, wait, and flow controls.
+- A viable v0.41 design must retain the verified sparse physical cells but use unused `E9/EA` glyph prefixes, patch both dynamic-parser classifiers, and remap `E9/EA` through a physical-index lookup table. Do not attempt to make `E1/E2` dual-purpose.
+- The loaded zero cave at `PSX.EXE 0x8CC60-0x8D05F` is 1024 bytes, has no direct word references, and is sufficient for parser stubs, decoder remapping, and a 278-entry 16-bit lookup table. v0.39 remains the accepted rollback baseline.
+
+v0.41 E9/EA sparse UI glyph candidate - 2026-07-18
+- v0.39 remains the frozen runtime rollback baseline. v0.41 is an unverified runtime candidate and does not replace it yet.
+- v0.41 preserves the existing story E2 command mechanism and every story archive member byte-for-byte.
+- Dynamic UI bytes E1-E8 remain controls. New virtual glyph codes use E9 01-FE and EA 01-18 only.
+- Parser hooks at 0x8016BB48 and 0x8016BB74 route E9/EA to the glyph decoder. The common decoder hook at 0x8016B3D4 maps them through a 278-entry 16-bit sparse physical-index table.
+- The 1,024-byte loaded cave at 0x801A7460 uses 748 bytes and leaves 276 bytes zero. The lookup table begins at 0x801A7520.
+- Independent static audit passes for 278/278 lookup entries, 459 changed UI strings, unchanged lengths and pointer tables, all v0.39 canaries, and 2,857 existing story bodies with no E9/EA at a character boundary.
+- Candidate: `03_output/ui_glyph_store_v41_e9ea_probe_patch_only.zip`, SHA256 `D5AC9441CB479F1B0B28B1732C97F52CCD284A8E73BE487AA16E41D9CC37BD78`.
+
+v0.41 runtime acceptance - 2026-07-18
+- Runtime verification confirms that the E9/EA UI glyph-store extension works without the v0.40 parser corruption or progression stop.
+- Extended skill text renders normally and UI selection/transition continues. This promotes v0.41 to the accepted UI glyph-store infrastructure baseline.
+- This acceptance does not mark the whole UI patch complete. The malformed HUD LV, affected button-icon glyphs, and battle target cursor artifact inherited from v0.39 remain open defects.
+- Preserve both baselines: v0.41 for continued UI work and frozen v0.39 for emergency rollback. The existing story E2 expansion remains unchanged.
+- Frozen v0.41 copy: `99_backup/baselines/ui_glyph_store_v41_runtime_success_2026-07-18/`.
+
+v0.42 guide terminology and inherited-defect repair candidate - 2026-07-18
+- The accepted runtime baseline remains frozen v0.41 until v0.42 finishes runtime verification.
+- v0.42 keeps the accepted E9/EA sparse glyph-store hooks and the existing story E2 expansion byte-identical.
+- All 503 UI-table records were repacked from the natural v0.26/reference terminology instead of the abbreviated v0.39 wording. The accepted level wording remains `레벨 업!!`, `레벨이 올랐다`, and `던지기/점프/받기 레벨 +1`.
+- The malformed compact HUD LV was replaced with separate sparse L and V glyphs. Existing M and P labels remain unchanged.
+- Confirm/cancel icon pixels were restored from v0.37 and relocated to U=180/192, V=228. A per-icon E7 V-coordinate hook applies the new row only to icon IDs 2 and 3.
+- The battle cursor rectangle x=0..35, y=128..159 was restored pixel-exactly from v0.37 to remove the inherited v0.39 artifact.
+- Independent static audit passes: 503/503 pointer and string readbacks, 409/409 glyph readbacks, 278/278 v0.41 assignments preserved, exact icon and HUD canaries, byte-identical story members, and deterministic rebuild.
+- Candidate: `03_output/ui_guide_terms_v42_v39_repairs_cumulative_patch_only.zip`, SHA256 `0CEF485BD82D2C7C72EA4F0326D804AC07282773731CD02AF1D6DA83FCFD5EFC`.
+- Runtime verification remains required for terminology display, HUD LV, confirm/cancel icons, battle cursor, and normal selection/progression.
+
+v0.42 runtime rejection and v0.43 common-UI recovery candidate - 2026-07-18
+- Runtime screenshots reject v0.42 as a gameplay candidate: map/world labels and several common system strings are blank or malformed, the load list is damaged, the separate sparse HUD L/V path does not render correctly, and the configuration screen overflows.
+- Root cause for the common-text failures is v0.42 clearing all nine shared native UI string pools while repacking the 503 audited table records. Seventy-one inherited pointers were not migrated.
+- v0.43 preserves all 503 accepted v0.42 table pointers/payloads and every story member. It restores 69 inherited common/system pointers, handles the one shared v0.42 table pointer as authoritative, and repairs the five HUD pointers separately with the accepted compact v0.39 payloads.
+- The overlong configuration label is reduced only from `촌가라의 몬스터 도감 열기` to `몬스터 도감`, using the existing v0.42 E9/EA map without adding a glyph.
+- Candidate: `03_output/ui_runtime_repairs_v43_cumulative_patch_only.zip`, SHA256 `ACA90EA9529C4D0000D68DC1563F5290DF8C1ABA68AB5E881FBCA103047CAF56`.
+- Static and deterministic audits pass. Runtime status is `UNVERIFIED_CANDIDATE`; accepted rollback remains frozen v0.41.
+
+v0.44 targeted HUD/E7 repair candidate - 2026-07-19
+- v0.44 is built from the exact v0.43 ZIP SHA256 `ACA90EA9529C4D0000D68DC1563F5290DF8C1ABA68AB5E881FBCA103047CAF56` and changes only `PSX.EXE` (8 bytes). `COMM.IMG`, every story member, and every other ZIP member remain byte-identical.
+- The active battle-skill HUD reads one combined two-glyph `LV` payload from its first pointer. v0.44 restores `L` and `V` as separate E9/EA glyph codes in that payload and moves only the unused second HUD pointer to adjacent zero-filled storage.
+- Runtime packet analysis confirms that E7 controls `02` and `03` select table indices 1 and 2. v0.44 routes those entries to the already-clean decision and X icon cells at U=192/180, V=228; unrelated E7 entries keep their original row.
+- Candidate: `03_output/ui_hud_e7_v44_cumulative_patch_only.zip`, SHA256 `B54EB0DD526CB0DDE09A68ABB188AD92151BFF3E49767294B0D52E6815EE664A`.
+- Independent static and deterministic audits pass. Runtime verification is still required for battle HUD `LV1` and both bottom-guide icons. v0.43 remains the immediate rollback artifact for this targeted change.
+
+v0.72 rejection and v0.73 dual-page renderer candidate - 2026-07-22
+- Reject v0.72. Moving high-row common glyph planes into apparently empty low-page `COMM.IMG` cells overwrote texture data used by battle sprites; runtime showed Hangul fragments over multiple characters.
+- Preserve v0.71 as the immediate rollback baseline. The user's available item-name screens did not show new corruption, but that does not offset the battle-sprite regression.
+- v0.73 starts from exact v0.71 and leaves `COMM.IMG` plus all DAT members byte-identical. It changes only `PSX.EXE`.
+- The common text renderer now separates low-page and high-page glyphs and inserts a y=256 draw-mode packet instead of relocating texture cells. Fifty-seven live high-page mappings are handled; row 21 has zero mappings.
+- Candidate: `03_output/ui_hud_e7_v73_dual_tpage_renderer_patch_only.zip`, SHA256 `70C3CA41D994589DFFD41859C198F0EF371F7A93E71C8196932297A67A4CAA23`.
+- Static readback, deterministic rebuild, archive isolation, and R3000 load-delay audit pass. Runtime verification remains pending.
+
+v0.73 runtime rejection and v0.74 execution-recovery candidate - 2026-07-22
+- Reject v0.73 as a gameplay build. DuckStation slot 1 captured PC `0x8016B60C` with RA `0x8016B5E0`, proving that the glyph flag hook overwrote the leaf function's caller return address and looped back into the same function.
+- v0.74 changes only the two MIPS control-transfer words responsible for that loop. The hook now uses a non-linking jump to `0x801A2094`, and the helper jumps directly to the displaced-code continuation at `0x8016B5E0` without modifying RA.
+- `COMM.IMG`, every DAT member, story data, item strings, icon routes, glyph pixels, and the rest of the v0.73 dual-page renderer remain byte-identical.
+- Candidate: `03_output/ui_hud_e7_v74_leaf_ra_trampoline_fix_patch_only.zip`, SHA256 `514DFAE1513AB783D2E689AAC2CA710ECDAFBF6E0D8C937C1953199BBB51D6CD`.
+- Static readback and deterministic rebuild pass. Runtime verification is pending; v0.71 remains the immediate accepted rollback baseline until v0.74 boots and progresses normally.
+
+v85 P6 high-RAM bootstrap candidate - 2026-07-28
+- Reject v84. DuckStation slots 1 and 2 prove that `0x801A86E8-0x801A87FF` is live runtime BSS even when startup clearing is skipped there; the helper and sidecar are overwritten before or during use.
+- v85 restores the complete original BSS clear range. Before clearing, a 56-byte entry bootstrap copies the 276-byte P6 helper/sidecar image from its temporary EXE tail source to `0x801FE3C4-0x801FE4D7`.
+- The relocated image begins exactly at the original BSS end. Across 97 valid DuckStation CPU snapshots, the lowest observed stack pointer is `0x801FFE78`, leaving 6,560 bytes between the relocated image and the lowest observed stack.
+- The PS-X EXE size, load range, entry address, and all 77 non-EXE archive members remain unchanged. Relative to v84, only 57 `PSX.EXE` bytes differ.
+- Candidate: `03_output/ui_hud_e7_v85_p6_highram_bootstrap_patch_only.zip`, SHA256 `D7D028F83E42EA54922A853250976ADFDE06BE1A3D36DE809E05B4733AC35582`.
+- Syntax, deterministic rebuild, ZIP isolation, MIPS readback, startup copy/clear modeling, original-BSS preservation, and stack-margin audits pass. Runtime verification is still `PENDING`; this is not yet an accepted gameplay baseline.

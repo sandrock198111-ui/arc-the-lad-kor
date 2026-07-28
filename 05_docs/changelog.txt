@@ -485,3 +485,136 @@
 - Rebuilt the shared low-code `0x6C` bitmap as a heavier 30-pixel LV while preserving its neighboring three bitplanes.
 - Confirmed that restoring `E7 02/E7 03` in place would overwrite active Korean glyph planes; kept the safe text fallback pending a separately verified icon-texture relocation.
 - Built `ui_safe_v34_cumulative_patch_only.zip`, SHA256 `1B49FAA19018A3C06238F4371BCB3A81A4AF9B672837368EA6A6CA492ACBD622`.
+
+2026-07-18
+- Added `build_ui_safe_v36.py`; retained the v0.35 non-story coverage, restored the runtime-accepted v0.34 compact LV font byte-for-byte, and changed the acquisition suffix to formal Korean without the broken quote glyph.
+- Built `ui_safe_v36_cumulative_patch_only.zip`, SHA256 `B88FCA6C706E59F779197F23B4DCE45C1C0C87AF1274E9B4B316B3D4751276D3`.
+- Added `build_ui_safe_v37.py` as a hash-locked two-byte geometry patch over v0.36. It widens shared confirmation boxes by 24 pixels and preserves the absolute positions of all prompt, option, and cursor content.
+- Copied the unchanged v0.36 manifests to v0.37 names for traceability and wrote `01_work/analysis/ui_safe_v37/build_report.txt`.
+- Built `ui_safe_v37_cumulative_patch_only.zip`, SHA256 `0583FEED2266C883B413260114F331D73FAC12AE1C9A17EB123D559D9EB29AA1`.
+
+2026-07-18
+- Added `build_ui_safe_v38.py` and `audit_ui_safe_v38.py` as direct hash-locked v0.37 repair tools.
+- Restored the user-requested v0.35 thin pointed `LV` bitmap while preserving all neighboring physical font planes.
+- Relocated verified duplicate `E7 02/E7 03` button images into two same-page, charmap-unassigned 12x12 cells and redirected only their U table entries.
+- Restored icon-bearing field help as `{결정버튼}결정 {취소버튼}돌아가기` without restoring the damaged original icon rectangles.
+- Built `ui_safe_v38_cumulative_patch_only.zip`, SHA256 `D66E6F4F780E3096B604C7699E3E7EB00392EE7C0C4FA457AEDE3F61EEFD45D9`.
+
+2026-07-18
+- Added `build_ui_safe_v39.py` and `audit_ui_safe_v39.py` for the two remaining v0.38 runtime defects.
+- Relocated only E7_02 from U=0 to same-page U=0x18 and restored the abandoned U=0 rectangle; preserved E7_03 X exactly.
+- Repaired the five battle-HUD label pointers at `0x823AC-0x823BC` by moving their payloads to zero pool `0x820A8-0x820BB`.
+- Built `ui_safe_v39_cumulative_patch_only.zip`, SHA256 `0778FE435820409F190579D179F8B36FFFCEB02B5F2004FC1E3ACE58741D5DC3`.
+- Independent audit confines all changes to two icon rectangles, one icon U byte, five pointer words, and the new 20-byte HUD pool.
+
+2026-07-18
+- Froze `ui_safe_v39_cumulative_patch_only.zip` as the fallback baseline for independent UI/battle glyph-storage expansion.
+- Added `99_backup/baselines/ui_safe_v39_fallback_2026-07-18/` with the hash-locked artifact, v0.39 builders, manifests, audit reports, and `BASELINE_MANIFEST.txt`.
+- Recorded three visual defects that remain in the fallback baseline: battle-HUD `LV`, E7_02 circle/confirm icon, and the battle-cursor dark mark.
+- Recorded the untranslated high-confidence body at `31/S3023.DAT 0x47E4C`; the DAT member is present in v0.39, but this body remained original.
+
+2026-07-18
+- Added `analyze_psyq_obj_symbols.py` as a read-only Psy-Q object-analysis helper used during loader investigation.
+- Added `build_ui_glyph_store_v40.py` and `audit_ui_glyph_store_v40.py` for a sparse independent UI glyph-storage probe based on the frozen v0.39 artifact.
+- Compared `COMM.IMG` with VRAM from 55 DuckStation savestates and selected 159 cells that remained zero in every sample. Allocated 278 current Hangul UI glyphs through 384 E1-E8-addressable sparse planes, leaving 106 planes free.
+- Preserved all pointer tables and string lengths and limited changed ZIP members to `COMM.IMG` and `PSX.EXE`. The v0.39 LV plane, icon regions, cursor region, HUD payloads, Japanese-preserved rows, story files, and unrelated members remain unchanged.
+- Added `ui_glyph_store_v40_probe.csv`, `ui_glyph_store_v40_map.csv`, build report, and independent readback report.
+- Built `ui_glyph_store_v40_sparse_probe_patch_only.zip`, SHA256 `C6D50D2252C52B26499F4C1BC26544E14DE99881ACA31E76FC3EC2BA5A6A1B43`. Runtime verification is pending; v0.39 remains the rollback baseline.
+
+2026-07-18
+- Rejected v0.40 after runtime checks in DuckStation slots 1-4 showed corrupted or blank UI text and a progression stop.
+- Confirmed that the v0.40 sparse COMM cells are loaded correctly and remain byte-identical between the patch and runtime VRAM. The defect is not a glyph-storage collision.
+- Disassembled the dynamic UI parser and confirmed that it treats `E1-E8` as commands before glyph decoding. Recorded the v0.41 direction: unused `E9/EA` prefixes plus parser hooks and a sparse physical-index lookup table.
+- Kept the frozen v0.39 artifact unchanged as the only accepted rollback baseline.
+
+2026-07-18 v0.41 E9/EA sparse UI glyph runtime candidate:
+- Added `build_ui_glyph_store_v41.py` and `audit_ui_glyph_store_v41.py`.
+- Rebuilt from the frozen v0.39 ZIP, not from rejected v0.40.
+- Reused the 278 runtime-sampled sparse physical glyph planes while replacing the colliding E1/E2 virtual codes with E9/EA.
+- Added two dynamic-parser classifier hooks, one common-decoder hook, and a 278-entry physical-index lookup table in the loaded executable cave.
+- Generated `ui_glyph_store_v41_e9ea_probe_patch_only.zip`, SHA256 `D5AC9441CB479F1B0B28B1732C97F52CCD284A8E73BE487AA16E41D9CC37BD78`.
+- Static and deterministic audits pass. Runtime verification is pending; v0.39 remains the rollback baseline.
+
+2026-07-18 v0.41 runtime acceptance:
+- Confirmed normal rendering of extended Korean skill text and uninterrupted UI selection/progression.
+- Confirmed that v0.40 symptoms (colored fragments, blank labels, malformed blocks, and progression stop) no longer occur.
+- Promoted v0.41 as the accepted UI glyph-store infrastructure baseline and preserved a frozen copy under `99_backup/baselines/ui_glyph_store_v41_runtime_success_2026-07-18/`.
+- Kept inherited v0.39 HUD LV, button-icon, and battle-cursor defects open for targeted repair; no patch binary was changed during this promotion.
+
+2026-07-18 v0.42 guide terminology and v0.39 inherited-defect repairs:
+- Added `02_scripts/build_ui_guide_repairs_v42.py` and `02_scripts/audit_ui_guide_repairs_v42.py`.
+- Rebuilt from accepted v0.41 and retained its E9/EA parser hooks, sparse glyph assignments, and byte-identical story E2 data.
+- Repacked all 503 UI-table records using the v0.26/reference terminology, replacing the abbreviated v0.39 UI wording while preserving the accepted level-up phrases.
+- Added 131 sparse glyphs, including separate L and V HUD glyphs, for 409 total lookup entries. The table ends at 0x801A7852 with 14 loaded-cave bytes free.
+- Restored confirm/cancel icon pixels from v0.37, moved them to U=180/192, V=228, and added an E7 icon-ID V-coordinate hook at 0x8019C934.
+- Restored the battle cursor rectangle from v0.37, removing the v0.38/v0.39 cursor pollution.
+- Generated `05_docs/ui_full_v42.csv`, `05_docs/ui_glyph_store_v42_map.csv`, `05_docs/ui_items_equipment_skills_v42_review.csv`, and `05_docs/ui_skill_guide_reference_v42.csv`.
+- Generated `03_output/ui_guide_terms_v42_v39_repairs_cumulative_patch_only.zip`, SHA256 `0CEF485BD82D2C7C72EA4F0326D804AC07282773731CD02AF1D6DA83FCFD5EFC`.
+- Static, independent, and deterministic audits pass. Runtime verification is pending; frozen v0.41 remains the rollback baseline.
+
+2026-07-18 v0.43 common UI runtime-repair candidate:
+- Added `02_scripts/build_ui_runtime_repairs_v43.py`.
+- Rebuilt from hash-locked v0.42 while keeping 503/503 audited table records and all 76 non-PSX ZIP members byte-identical.
+- Restored 69 common/system pointer payloads erased or orphaned by v0.42 pool repacking.
+- Restored the five battle-HUD pointer payloads to the accepted compact v0.39 layout.
+- Re-encoded the configuration label at pointer `0x825D8` as `몬스터 도감` to prevent right-column overlap.
+- Generated `05_docs/ui_runtime_repairs_v43.csv` and `01_work/analysis/ui_runtime_repairs_v43/` readback/allocation/regression reports.
+- Built `03_output/ui_runtime_repairs_v43_cumulative_patch_only.zip`, SHA256 `ACA90EA9529C4D0000D68DC1563F5290DF8C1ABA68AB5E881FBCA103047CAF56`.
+- Runtime verification is pending; v0.42 is rejected and frozen v0.41 remains the accepted rollback baseline.
+
+2026-07-19 v0.44 battle HUD LV and E7 icon routing repair:
+- Added `02_scripts/build_ui_hud_e7_v44.py`, which requires the exact v0.43 input ZIP and verifies all expected source bytes before editing.
+- Replaced the malformed one-cell HUD LV payload with the existing E9/EA `L` and `V` glyph pair and repointed only the unused second HUD pointer to adjacent zero storage.
+- Corrected the E7 routing assumption: control bytes `E7 02` and `E7 03` use table indices 1 and 2. Routed those entries to U=192 and U=180 and changed the V-coordinate hook to apply V=228 to those two indices only.
+- Kept `COMM.IMG` byte-identical because v0.43 already contains verified clean decision and X pixels at the destination cells.
+- Added state-packet evidence under `01_work/analysis/ui_hud_e7_v44_all_states/` and exact diff/build audits under `01_work/analysis/ui_hud_e7_v44/`.
+- Built `03_output/ui_hud_e7_v44_cumulative_patch_only.zip`, SHA256 `B54EB0DD526CB0DDE09A68ABB188AD92151BFF3E49767294B0D52E6815EE664A`.
+
+2026-07-22 v0.70 item-name leaf and battle ring-help candidate:
+- Added `02_scripts/build_ui_hud_e7_v70_leaf_names_ring_menu.py` and rebuilt from the exact v0.69 patch-only archive.
+- Changed the two item-name occurrences for `마력의 잎` and `쓴 잎` from the broken `EA 66` route to v0.69's dedicated manual leaf glyph `E9 75`.
+- Replaced the malformed battle help label with `명령 링 열기`. The 23-byte payload plus terminator fits the reserved 32-byte slot with 8 bytes free.
+- Kept `COMM.IMG` and all DAT members byte-identical to v0.69; only `PSX.EXE` changed at verified offsets.
+- Built `03_output/ui_hud_e7_v70_leaf_names_ring_menu_patch_only.zip`, SHA256 `5E6D34D1B016AEAD61806B654F15E3E25E672945F43838FA3D09E16023D6EAB5`.
+- Static readback passed. Runtime verification remains pending, so v0.69 is still the runtime rollback baseline.
+
+2026-07-22 v0.71 font-matched leaf and compact ring-help candidate:
+- Added `02_scripts/build_ui_hud_e7_v71_leaf_font_ring_help.py` and rebuilt from the exact v0.70 archive.
+- Replaced only the dedicated `E9 75` leaf bitplane at physical index 1356 with the same Gulim 12px, threshold-192, 1-bit renderer used by the established Korean glyph pipeline.
+- Removed the awkward `명령` prefix and changed the battle guide to `링 열기`.
+- Kept all DAT members byte-identical. Only `COMM.IMG` and `PSX.EXE` differ from v0.70.
+- Built `03_output/ui_hud_e7_v71_leaf_font_ring_help_patch_only.zip`, SHA256 `C9FE5D3F3521748CDD53A43A7A47895CC1747928D2804A9502D877B4D47A250D`.
+- Static and deterministic readback passed. Runtime verification remains pending.
+
+2026-07-22 v0.72 rejection and v0.73 common-text dual-page renderer:
+- Rejected v0.72 after runtime showed Korean glyph fragments overwriting battle-character sprites. The low-page relocation approach must not be reused.
+- Added `02_scripts/build_ui_hud_e7_v73_dual_tpage_renderer.py`, based on exact v0.71 SHA256 `C9FE5D3F3521748CDD53A43A7A47895CC1747928D2804A9502D877B4D47A250D`.
+- Reserved one glyph packet per common-text state, marked existing row-22+ glyphs in metadata, and rendered common text in low/high texture-page passes.
+- Added explicit R3000 load-delay slots throughout the injected renderer.
+- Built `03_output/ui_hud_e7_v73_dual_tpage_renderer_patch_only.zip`, SHA256 `70C3CA41D994589DFFD41859C198F0EF371F7A93E71C8196932297A67A4CAA23`.
+- Only `PSX.EXE` changes from v0.71. `COMM.IMG`, all DAT files, story data, item names, icons, and existing glyph pixels remain byte-identical.
+
+2026-07-22 v0.73 runtime rejection and v0.74 leaf-RA trampoline fix:
+- Analyzed DuckStation slot 1 and confirmed an execution loop inside the common glyph builder: PC `0x8016B60C`, RA `0x8016B5E0`.
+- Added `02_scripts/build_ui_hud_e7_v74_leaf_ra_trampoline_fix.py`.
+- Replaced the v0.73 glyph-flag `JAL` with a non-linking `J`, and replaced the helper's `JR RA` with a direct `J` to the original continuation.
+- Built `03_output/ui_hud_e7_v74_leaf_ra_trampoline_fix_patch_only.zip`, SHA256 `514DFAE1513AB783D2E689AAC2CA710ECDAFBF6E0D8C937C1953199BBB51D6CD`.
+- Only `PSX.EXE` changes from v0.73, at five bytes contained in two instruction words. `COMM.IMG` and all DAT members remain byte-identical.
+
+2026-07-28 v83 runtime rejection and v84 startup-clear boundary fix:
+- Rejected v83 after DuckStation slot 1 proved that startup had zeroed the P6 glyph and marker helpers at `0x801A86EC` and `0x801A8788`.
+- The captured CPU PC/next-PC values were `0x801A8730` and `0x801A8734`, inside the erased helper, confirming the exact reason progression stopped.
+- Added `02_scripts/build_ui_hud_e7_v84_p6_sidecar_bss_boundary_fix.py`.
+- Moved the startup BSS clear boundary from `0x801A86E8` to the loaded executable end at `0x801A8800`, preserving the complete v83 helper and 12-byte sidecar region.
+- Built `03_output/ui_hud_e7_v84_p6_sidecar_bss_boundary_fix_patch_only.zip`, SHA256 `69B696B338A5C2F7727FE3F939CB7EF20D6320F2527227202CD17D4F70C28594`.
+- Relative to v83, only `PSX.EXE` changes: two bytes at file offsets `0x5AFC0-0x5AFC1`. The other 77 archive members are byte-identical.
+- Static readback passed. Runtime verification must use a cold boot because the v83 slot embeds the erased executable RAM.
+
+2026-07-28 v84 runtime rejection and v85 high-RAM bootstrap candidate:
+- Rejected v84 after two DuckStation states showed that the preserved EXE tail is subsequently used as live BSS and overwrites the P6 helper/sidecar.
+- Added `02_scripts/build_ui_hud_e7_v85_p6_highram_bootstrap.py`.
+- Rebuilt the P6 glyph helper, marker helper, and sidecar for `0x801FE3C4-0x801FE4D7`.
+- Replaced the original 56-byte startup clear loop with a same-size bootstrap that copies the 276-byte image to high RAM, then clears the complete original BSS range and resumes the byte-identical original stack setup.
+- Kept the PS-X EXE size and load layout fixed. Relative to v84, only 57 `PSX.EXE` bytes change; all 77 other ZIP members are byte-identical.
+- Built `03_output/ui_hud_e7_v85_p6_highram_bootstrap_patch_only.zip`, SHA256 `D7D028F83E42EA54922A853250976ADFDE06BE1A3D36DE809E05B4733AC35582`.
+- Static audits and a second deterministic build pass. Runtime verification remains pending.

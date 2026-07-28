@@ -1294,3 +1294,193 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - Isolation: PASS. Relative to v0.33, only `PSX.EXE` and `COMM.IMG` differ; all other cumulative members are byte-identical and executable differences stay inside declared pools/pointers.
 - Reproducibility: PASS. Two consecutive builds produced SHA256 `1B49FAA19018A3C06238F4371BCB3A81A4AF9B672837368EA6A6CA492ACBD622`.
 - Runtime status: pending user packaging and checks of `예/아니요`, equipment `LV +1`, battle `LV1`, and bottom `결정 : 돌아가기`.
+
+2026-07-18 - v0.36 non-story regression repair
+- Font rollback: PASS. `COMM.IMG` is byte-identical to v0.34, SHA256 `FB6D4027023C6A75A1561D72507C52656472B4F31E1EB92B73965CA3B51543EA`; the rejected v0.35 thin-LV change is absent.
+- Acquisition payload: PASS. Pointer `0x82474` resolves to the exact encoded suffix `를 손에 넣었습니다.` with no zero byte inside the payload.
+- Story isolation: PASS. All DAT members remain unchanged by the v0.36 repair.
+- Output: `03_output/ui_safe_v36_cumulative_patch_only.zip`, SHA256 `B88FCA6C706E59F779197F23B4DCE45C1C0C87AF1274E9B4B316B3D4751276D3`.
+
+2026-07-18 - v0.37 confirmation-box geometry repair
+- First rebuild attempt: REJECTED before release. Rebuilding the cumulative executable changed 385 `PSX.EXE` bytes because string-pool allocation order differed. The output was overwritten and is not a valid artifact.
+- Corrected method: PASS. The builder hash-locks the v0.36 ZIP/PSX/COMM inputs and patches the existing `PSX.EXE` directly.
+- MIPS readback: PASS. `0x463D8` disassembles as `addiu s5, v1, 0x28`; `0x46428` disassembles as `addiu a0, s2, 0x14`.
+- Binary isolation: PASS. Relative to v0.36, changed member is only `PSX.EXE`; changed bytes are exactly `0x463D8` and `0x46428`. All DAT members and `COMM.IMG` are byte-identical.
+- Geometry bound: PASS. The maximum shared confirmation-box width is 256 pixels on a 320-pixel screen. Prompt, option, and cursor absolute positions are algebraically unchanged while the box extends 12 pixels per side.
+- Output: `03_output/ui_safe_v37_cumulative_patch_only.zip`, SHA256 `0583FEED2266C883B413260114F331D73FAC12AE1C9A17EB123D559D9EB29AA1`.
+- Runtime status: pending packaging and visual checks of save, load, and pre-battle confirmations. The triangle should be inside the widened box and the v0.34 LV should remain unchanged.
+
+2026-07-18 - v0.38 relocated button icons and thin-LV repair
+- First build attempt: binary construction and isolation checks passed, but audit CSV writing failed because two audit row types had different columns. The artifact was overwritten and not released.
+- Corrected build: PASS. Two consecutive builds produced SHA256 `D66E6F4F780E3096B604C7699E3E7EB00392EE7C0C4FA457AEDE3F61EEFD45D9`.
+- Independent audit: PASS. Changed members are exactly `COMM.IMG` and `PSX.EXE`; v0.37 confirmation instructions at `0x463D8/0x46428` remain exact.
+- LV isolation: PASS. The v0.35 23-pixel bitmap changes nine pixels/eight bytes in only the `0x6C` plane; neighboring planes are unchanged.
+- Icon relocation: PASS. Both 12x12 destinations equal their verified duplicate sources. Their 24 overlapped glyph codes are absent from both Korean charmaps and occur zero times in 4,653 active story/UI payloads.
+- E7 readback: PASS. Table entries use U `0x00/0x0C`, width 12 and fixed V `0x82`; pointer `0x8235C` resolves to one `E7 02`, one `E7 03`, and Korean action labels.
+- Runtime status: pending user packaging. Verify battle `LV1`, equipment `LV +1`, and bottom button icons/action labels.
+
+2026-07-18 - v0.39 focused circle-icon and battle-HUD repair
+- Target: `ui_safe_v39_cumulative_patch_only.zip`.
+- Method: hash-lock v0.38, compile and run `build_ui_safe_v39.py`, then run separately implemented `audit_ui_safe_v39.py`.
+- Result: PASS. ZIP SHA256 `0778FE435820409F190579D179F8B36FFFCEB02B5F2004FC1E3ACE58741D5DC3`; changed members are exactly `COMM.IMG` and `PSX.EXE`.
+- Scope: `PSX.EXE` has 19 changed bytes, all inside E7_02 U, five battle-HUD pointer words, and the new HUD pool. `COMM.IMG` has 128 changed packed bytes, all inside restored `(0,130)` and new circle `(24,130)` rectangles.
+- Regression checks: working E7_03 X, accepted item-help `LV` plane, field-help payload, target-selection help, original M/P/auxiliary planes, ZIP member order, and all unrelated members are byte-identical to v0.38.
+- Runtime pending: verify E7_02 circle rendering and a normal `LV1 MP04`-style battle skill row without corrupt Korean fragments.
+
+2026-07-18 - v0.39 fallback-baseline freeze
+- Source artifact: `03_output/ui_safe_v39_cumulative_patch_only.zip`.
+- Backup artifact: `99_backup/baselines/ui_safe_v39_fallback_2026-07-18/ui_safe_v39_cumulative_patch_only.zip`.
+- Hash verification: PASS. Source and backup SHA256 are both `0778FE435820409F190579D179F8B36FFFCEB02B5F2004FC1E3ACE58741D5DC3`.
+- User runtime status: progression works; confirmation geometry, item-help `LV`, and E7_03 X/back icon are accepted.
+- User runtime defects: battle-HUD `LV` malformed; E7_02 circle/confirm icon corrupt; battle cursor contains an unexpected dark mark.
+- Story audit: `31/S3023.DAT 0x47E4C` is present in the cumulative ZIP but remains `original` in `story_body_audit.csv`; the visible Japanese line is therefore a translation-coverage omission, not a packaging rollback.
+- Result: ACCEPTED AS ROLLBACK BASELINE ONLY. Do not promote as a release-complete build.
+
+2026-07-18 - v0.40 sparse UI glyph-store probe
+- Base: frozen v0.39 ZIP SHA256 `0778FE435820409F190579D179F8B36FFFCEB02B5F2004FC1E3ACE58741D5DC3`.
+- Runtime-space survey: PASS. Scanned 55 DuckStation savestates and found 159 selected 12x12 cells that are zero in v0.39 `COMM.IMG` and all sampled VRAM images.
+- Capacity: PASS. The E1-E8 decoder reaches 384 independent sparse bitplanes; 278 Hangul glyphs are allocated and 106 verified planes remain free. Legacy one-byte `덕` and `량` remain unchanged.
+- Pointer and payload audit: PASS. All UI pointer words and encoded string lengths are unchanged; 459 existing UI strings are recoded in place.
+- Isolation: PASS. Changed ZIP members are exactly `COMM.IMG` and `PSX.EXE`. The v0.39 LV plane, E7 icon regions, battle-cursor region, HUD special payloads, 17 Japanese-preserved rows, story members, and unrelated members remain byte-identical.
+- Independent audit: PASS. `audit_ui_glyph_store_v40.py` verifies 278 map entries, declared sparse destinations, unchanged protected regions, and output hash.
+- Baseline regression: PASS. `audit_ui_safe_v39.py` still passes with the original v0.39 SHA256.
+- Reproducibility: PASS. A clean second build produced ZIP SHA256 `C6D50D2252C52B26499F4C1BC26544E14DE99881ACA31E76FC3EC2BA5A6A1B43` again.
+- Output: `03_output/ui_glyph_store_v40_sparse_probe_patch_only.zip`.
+- Runtime status: `UNVERIFIED_PROBE`. Do not promote over v0.39 until cold-boot checks confirm UI text, character sprites, battle entry, icons, cursor, and HUD rendering.
+
+2026-07-18 - v0.40 runtime rejection and state analysis
+- States: `HASH-13A17A7785A48DA_1.sav` through `_4.sav`.
+- Slot 1: FAIL. Accessory name/help renders colored fragments and blocks.
+- Slot 2: FAIL. Skill label bubble is blank.
+- Slot 3: FAIL. Skill description contains colored block corruption.
+- Slot 4: FAIL. The game cannot progress from the saved state.
+- VRAM readback: PASS for storage only. Every selected sparse cell in all four states equals the v0.40 `COMM.IMG` bytes exactly; no runtime upload overwrote the new bank.
+- Decoder analysis: FAIL for code namespace. The common decoder accepts high prefixes, but the dynamic text loop checks for `>= E1` first and dispatches `E1-E8` as control commands. v0.40's 202 `E1` mappings and 76 `E2` mappings therefore cannot render safely in this path.
+- Feasibility check: PASS. No current UI payload begins a character at `E9` or `EA`. Loaded cave `PSX.EXE 0x8CC60-0x8D05F` is all zero, 1024 bytes long, and has no direct pointer-word references.
+- Result: REJECT v0.40. Preserve it only as an analysis artifact. Build v0.41 from frozen v0.39 using `E9/EA`, parser classification hooks, and an explicit sparse-index table.
+
+2026-07-18 - v0.41 E9/EA sparse UI glyph candidate
+- Modified files: generated `COMM.IMG` sparse planes and `PSX.EXE` UI strings/hooks/cave in the cumulative patch ZIP; all story and other members unchanged.
+- Build input: frozen v0.39 ZIP SHA256 `0778FE435820409F190579D179F8B36FFFCEB02B5F2004FC1E3ACE58741D5DC3`.
+- Build test: `python 02_scripts/build_ui_glyph_store_v41.py` twice.
+- Determinism result: PASS, both outputs SHA256 `D5AC9441CB479F1B0B28B1732C97F52CCD284A8E73BE487AA16E41D9CC37BD78`.
+- Independent audit: PASS for ZIP order, changed members, 278 virtual codes, 278 lookup entries, 459 string readbacks, unchanged pointer tables and lengths, exact MIPS hook targets, zero cave tail, and changes restricted to declared ranges.
+- Regression audit: PASS for v0.39 LV/icon/HUD/cursor canaries and byte-identical story members.
+- Story namespace audit: PASS, 2,857 included audited story bodies contain zero E9/EA bytes at character boundaries; existing E2 dialogue is not redirected.
+- Runtime result: PENDING. Verify accessory name/help, skill label/help, normal UI progression, and the former slot-4 stop from a freshly entered screen.
+
+2026-07-18 - v0.41 E9/EA runtime verification
+- Test method: built the patch CUE from the v0.41 patch-only ZIP, entered battle UI, displayed an extended Korean skill description, moved through selection states, and continued gameplay.
+- Glyph-store result: PASS. `범위 아군 공격력 상승` renders as normal Korean text without colored fragments or blank glyphs.
+- Parser/progression result: PASS. UI input and transitions continue without the v0.40 slot-4 stop.
+- Regression classification: the malformed HUD LV, damaged button icon, and battle target cursor artifact are visible but match known inherited v0.39 defects rather than v0.41 E9/EA failures.
+- Final result: ACCEPT v0.41 as the UI glyph-store infrastructure baseline. Keep v0.39 as emergency rollback and repair inherited defects separately.
+- Evidence: `04_screenshots/ui_glyph_store_v41_runtime_success_skill.png` and `04_screenshots/ui_glyph_store_v41_inherited_v39_cursor_defect.png`.
+
+2026-07-18 - v0.42 guide terminology and inherited-defect repair candidate
+- Base: accepted `ui_glyph_store_v41_e9ea_probe_patch_only.zip`, SHA256 `D5AC9441CB479F1B0B28B1732C97F52CCD284A8E73BE487AA16E41D9CC37BD78`.
+- Build test: `python 02_scripts/build_ui_guide_repairs_v42.py`.
+- Syntax tests: PASS for both v0.42 builder and independent auditor with `python -m py_compile`.
+- Independent audit: PASS for 503/503 UI pointer readbacks, 503/503 string readbacks, 409/409 glyph readbacks, and 278/278 preserved v0.41 glyph assignments.
+- Regression audit: PASS. Only `COMM.IMG` and `PSX.EXE` differ; all story/DAT members and the existing story E2 mechanism remain byte-identical.
+- Defect canaries: PASS for separate HUD L/V glyphs, exact confirm/cancel icon pixels, per-icon E7 V-coordinate hook, and the v0.37-exact battle cursor rectangle.
+- Terminology scan: PASS. Zero Japanese/kana/CJK residuals were found in the 503 Korean target fields. Accepted `레벨 업!!`, `레벨이 올랐다`, and three `레벨 +1` equipment descriptions read back exactly.
+- Determinism test: PASS. Rebuild SHA256 remained `0CEF485BD82D2C7C72EA4F0326D804AC07282773731CD02AF1D6DA83FCFD5EFC`.
+- Output member hashes: PSX.EXE `24C004F8718AAF3A2AA760E58D42E4991724DD43A3E9BF572064F357EDF3CCD1`; COMM.IMG `AEFEE1EDD4FB2B00DF1533C745C0E8AE3A78A96D5CD0C7302F65B2456E8626F6`.
+- Runtime result: PENDING. Verify natural item/equipment/skill terms, HUD `LV1`, confirm/cancel icons, battle cursor, and uninterrupted UI selection/progression.
+
+2026-07-18 - v0.43 common UI recovery static verification
+- Base: v0.42 ZIP SHA256 `0CEF485BD82D2C7C72EA4F0326D804AC07282773731CD02AF1D6DA83FCFD5EFC`.
+- Syntax: PASS, `python -m py_compile 02_scripts/build_ui_runtime_repairs_v43.py`.
+- Determinism: PASS, two consecutive builds produced SHA256 `ACA90EA9529C4D0000D68DC1563F5290DF8C1ABA68AB5E881FBCA103047CAF56`.
+- ZIP isolation: PASS, only `PSX.EXE` changes; the other 76 members, including every story DAT and `COMM.IMG`, are byte-identical to v0.42.
+- UI-table regression: PASS, 503/503 v0.42 table pointers and payloads are exact.
+- Common/system readback: PASS, 168/168 manifest records are exact after 70 documented repoints.
+- World-name repair: PASS for four formerly orphaned pointers; the remaining names were already exact.
+- HUD repair: PASS for 5/5 pointer targets and fixed payloads.
+- Configuration compact label: PASS, `0x825D8` reads back as `몬스터 도감` through the existing E9/EA mapping.
+- Runtime result: PENDING. Cold-boot checks must cover the world map, load list, configuration screen, battle HUD, icons, cursor, and ordinary story progression.
+
+2026-07-19 - v0.44 targeted battle HUD/E7 static verification
+- Base: v0.43 ZIP SHA256 `ACA90EA9529C4D0000D68DC1563F5290DF8C1ABA68AB5E881FBCA103047CAF56`.
+- Savestate analysis: PASS. Parsed 88 states, 11,094 GPU packets, and 623 visible rows. The target bottom guide uses E7 table indices 1/2 and packets U=192/180, V=228 after correction.
+- Build test: PASS. `python 02_scripts/build_ui_hud_e7_v44.py` produced deterministic ZIP SHA256 `B54EB0DD526CB0DDE09A68ABB188AD92151BFF3E49767294B0D52E6815EE664A`.
+- ZIP isolation: PASS. Only `PSX.EXE` differs from v0.43; `COMM.IMG` and all other members are byte-identical.
+- Exact-diff audit: PASS. Exactly 8 PSX bytes differ at `0x80212`, `0x80216`, `0x82134`, `0x82154-0x82157`, and `0x823B0`.
+- HUD readback: PASS. Pointer 1 decodes to E9/EA `L`,`V`; the remaining M/P and numeric HUD strings are unchanged.
+- MIPS readback: PASS. The E7 hook selects V=228 for indices 1/2 and V=130 for unrelated entries.
+- Runtime result: PENDING. Verify `LV1 MP04` in a battle skill panel and verify that the left decision icon and right X icon both render normally in the bottom guide.
+
+2026-07-22 - v0.70 item-name leaf and battle ring-help static verification
+- Base: v0.69 ZIP SHA256 `1EF230C7DD36717B0EC6C42F172C98F35D6093C5B417B2041821A07590D8DDE4`.
+- Syntax: PASS, `python -m py_compile 02_scripts/build_ui_hud_e7_v70_leaf_names_ring_menu.py`.
+- Build/readback: PASS, output SHA256 `5E6D34D1B016AEAD61806B654F15E3E25E672945F43838FA3D09E16023D6EAB5`.
+- ZIP isolation: PASS. Only `PSX.EXE` differs; `COMM.IMG` and every DAT member are byte-identical to v0.69.
+- Item-name repair: PASS. `PSX.EXE 0x80A81` and `0x80A91` now contain `E9 75`; `EA 66` has zero remaining occurrences and `E9 75` has four total occurrences.
+- Battle-help repair: PASS. Pointer `0x8234C` still targets `0x82780`; the new 23-byte `명령 링 열기` payload is NUL-terminated inside its 32-byte slot with 8 bytes free.
+- Exact-diff scope: PASS. Fifteen PSX bytes differ and every difference is inside the two approved item-code pairs or the existing battle-help slot.
+- Runtime result: PENDING. Verify `마력의 잎 01`, `쓴 잎`, their acquisition messages, and the battle guide `명령 링 열기`. Also confirm v0.69 icons, options, skills, and progression remain unchanged.
+
+2026-07-22 - v0.70 runtime review and v0.71 static verification
+- v0.70 runtime item routing: PASS. `마력의 잎` now uses the dedicated `E9 75` glyph rather than the old broken `EA 66` route.
+- v0.70 leaf appearance: FAIL. The v0.69 manually drawn bitmap is visibly thicker and less legible than the surrounding Korean font.
+- v0.70 battle wording: FAIL for naturalness. `명령 링 열기` fits safely but is awkward in context.
+- v0.71 syntax/build: PASS. Output SHA256 `C9FE5D3F3521748CDD53A43A7A47895CC1747928D2804A9502D877B4D47A250D`; a second build produced the same hash.
+- v0.71 ZIP isolation: PASS. Only `COMM.IMG` and `PSX.EXE` differ from v0.70; every DAT member is byte-identical.
+- v0.71 leaf bitmap: PASS static readback. Only plane 0 at physical index 1356 is rewritten, and the other three shared bitplanes are preserved for every pixel.
+- v0.71 battle help: PASS static readback. `링 열기` occupies 18 bytes plus NUL in the existing 32-byte slot, leaving 13 bytes free.
+- Runtime result: PENDING. Verify the final glyph in `마력의 잎 01` and the battle guide `링 열기`; then verify icons and item acquisition text remain unchanged.
+
+2026-07-22 - v0.72 runtime rejection and v0.73 static verification
+- v0.72 runtime result: FAIL. Battle characters displayed large Hangul fragments over their sprites. The user reported no obvious corruption among currently owned item names, localizing the regression to shared texture-cell overwrite rather than item strings.
+- v0.73 syntax/build: PASS. Output SHA256 `70C3CA41D994589DFFD41859C198F0EF371F7A93E71C8196932297A67A4CAA23`; a second build produced the same hash.
+- ZIP isolation: PASS. Only `PSX.EXE` differs from v0.71; `COMM.IMG` and all DAT members are byte-identical.
+- Lookup audit: PASS. 409 records, 57 high-page mappings, and zero boundary-row-21 mappings.
+- Injected-code audit: PASS. Cave use is 548/644 bytes, all three hooks read back exactly, and no R3000 load-to-immediate-use hazard remains.
+- Runtime result: PENDING. Verify the same battle scene first for sprite integrity, then item names, one high-page Korean glyph, bottom icons, and ordinary progression.
+
+2026-07-22 - v0.73 runtime rejection and v0.74 static verification
+- v0.73 runtime result: FAIL. Slot 1 did not progress after loading.
+- Savestate CPU evidence: PASS. PC is `0x8016B60C` inside the leaf glyph builder and RA is `0x8016B5E0`, the instruction immediately after the v0.73 `JAL` hook. This proves an infinite self-return loop rather than a packaging or stale-state issue.
+- Syntax: PASS, `python -m py_compile 02_scripts/build_ui_hud_e7_v74_leaf_ra_trampoline_fix.py`.
+- Build/readback: PASS. Output SHA256 `514DFAE1513AB783D2E689AAC2CA710ECDAFBF6E0D8C937C1953199BBB51D6CD`.
+- Deterministic rebuild: PASS. Two consecutive builds produced the same SHA256.
+- ZIP isolation: PASS. Only `PSX.EXE` differs from v0.73; `COMM.IMG` and every DAT member are byte-identical.
+- Exact-diff scope: PASS. Five PSX bytes differ, all inside the hook word at file offset `0x50DD8` and helper-return word at `0x878A8`.
+- MIPS readback: PASS. `0x8016B5D8` is `j 0x801A2094`; helper tail is `j 0x8016B5E0`; neither instruction writes RA.
+- Runtime result: PENDING. Cold-boot v0.74 without loading the v0.73 slot and verify immediate input/progression before checking dual-page text rendering. Slot 1 restores the rejected v0.73 executable RAM and will recreate the loop even when the disc contains v0.74.
+
+2026-07-28 - v83 external-sidecar P6 renderer static verification
+- Direction: v81/v82 glyph-record marker schemes are rejected. v83 does not reuse record byte `0x2B`, `0x32`, or any other game-owned glyph-record byte.
+- Base: runtime-proven P6 location from v80 ZIP SHA256 `039A1BD2F5441940B57EAE9D46A809F04F3BC98CD958C427759FA8732FC6975B`.
+- Syntax/build: PASS. `python 02_scripts/build_ui_hud_e7_v83_p6_sidecar_renderer.py` produced SHA256 `CFC4B7791E3A4341D6DD39B7BE3EC8A1BBC471E31C62AD08F80CF8D0EA51D84D`.
+- Architecture: executable-side text-state pointer plus a 64-bit P6 glyph bitmap; game glyph records remain unchanged.
+- MIPS readback: PASS. The glyph-builder hook uses non-linking `J`; renderer pass selection calls the sidecar marker helper; mismatched glyphs branch to `0x801A2280`; original tpage byte is not masked.
+- ZIP isolation: PASS. Unrelated v80 members are byte-identical. `COMM.IMG` is exactly the v81 P6 test image, and `31/S3032.DAT` differs from the Japanese source only in the 20-byte test sentence.
+- PSX diff scope: PASS. All 503 changed bytes are inside the two hooks and approved executable caves.
+- Diagnostic limit: one active text state and at most 64 glyphs.
+- Runtime result: PENDING. Verify the red transition, P6 test line, line advance, and the following ordinary line.
+
+2026-07-28 - v83 runtime rejection and v84 static verification
+- Runtime input: DuckStation slot `HASH-FD57765860D7D8B9_1.sav`, SHA256 `10FD1262157360A4C100CF48E94E617858EC8C315DBF9D02AAD884D6FBDC94C5`.
+- Savestate identification: PASS. PS1 RAM begins at decompressed offset `0x1A62`; v83 renderer, entry point, and hooks all match the archive.
+- Failure localization: PASS. Runtime RAM contains zeros across the glyph helper at `0x801A86EC`, marker helper at `0x801A8788`, and sidecar tail. Captured PC/next-PC are `0x801A8730`/`0x801A8734`, inside the erased helper.
+- Startup audit: PASS. The executable clears BSS from `0x801A86E8`, while v83 placed executable helpers inside `0x801A86EC-0x801A87F3`.
+- v83 runtime result: FAIL. The helper placement overlaps the startup clear range.
+- v84 syntax/build/readback: PASS. Output SHA256 `69B696B338A5C2F7727FE3F939CB7EF20D6320F2527227202CD17D4F70C28594`.
+- Boundary proof: PASS. The new clear start is `0x801A8800`, exactly after the helper and 12-byte sidecar region and equal to the PS-X EXE loaded end.
+- Isolation: PASS. Only `PSX.EXE` differs from v83, at two bytes (`0x5AFC0-0x5AFC1`); all other 77 members are byte-identical.
+- Runtime result: PENDING. Do not load the rejected v83 slot for this check because it restores erased helper code and a PC already inside that helper.
+
+2026-07-28 - v84 runtime rejection and v85 high-RAM bootstrap static verification
+- v84 runtime result: FAIL. The user's cold-boot/build process is accepted as correct; slots 1 and 2 contain the expected v84 startup patch and hook bytes.
+- Failure localization: PASS. Slot 1 stopped with EPC `0x801A8780`, Cause `0x00000428` (Reserved Instruction), and runtime word `0x0000003A` where helper code had been loaded. Slot 2 also captures execution around the altered helper. The EXE tail is live BSS, not a persistent code cave.
+- State survey: PASS. Parsed 98 decompressed DuckStation states, obtaining 97 valid stack pointers. The lowest observed SP is `0x801FFE78`; one rejected v84 exception state was excluded as invalid CPU context.
+- Syntax: PASS, `python -m py_compile 02_scripts/build_ui_hud_e7_v85_p6_highram_bootstrap.py`.
+- Build/readback: PASS. Output ZIP SHA256 `D7D028F83E42EA54922A853250976ADFDE06BE1A3D36DE809E05B4733AC35582`; output `PSX.EXE` SHA256 `EB8BA30FE0E921D0A88B99E0EE5EA2CB81992F01A2A897969B9DE88253E8AD39`.
+- Deterministic rebuild: PASS. Two consecutive builds produced the same ZIP SHA256.
+- ZIP isolation: PASS. The 78-member set is unchanged; only `PSX.EXE` differs from v84, by 57 bytes. The EXE remains 581,632 bytes.
+- Bootstrap audit: PASS. Initial SP is supplied by the EXE header as `0x801FFFF0`; the bootstrap copies 276 bytes to `0x801FE3C4`, clears the complete original BSS through that address, restores `v0=4`, and reaches the unchanged original stack setup.
+- MIPS readback: PASS. The glyph hook targets `0x801FE3C4`, marker call targets `0x801FE460`, and renderer reads sidecar `0x801FE4CC`.
+- Stack-margin audit: PASS against observed states. The relocated image ends at `0x801FE4D8`, leaving 6,560 bytes to the lowest observed SP.
+- Runtime result: PENDING. Verify the two prior freeze points first; static evidence does not promote v85 to an accepted gameplay build.
