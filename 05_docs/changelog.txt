@@ -618,3 +618,40 @@
 - Kept the PS-X EXE size and load layout fixed. Relative to v84, only 57 `PSX.EXE` bytes change; all 77 other ZIP members are byte-identical.
 - Built `03_output/ui_hud_e7_v85_p6_highram_bootstrap_patch_only.zip`, SHA256 `D7D028F83E42EA54922A853250976ADFDE06BE1A3D36DE809E05B4733AC35582`.
 - Static audits and a second deterministic build pass. Runtime verification remains pending.
+
+2026-07-28 v86 P6 glyph repack and savestate slots 1-6 patch:
+- Added `02_scripts/build_ui_hud_e7_v86_p6_repack_slots_1_to_6.py`.
+- Repacked 57 active high-row UI glyph planes into verified blank P6 row-24 planes and narrowed the P6 classifier from rows 24-31 to row 24.
+- Added three E2 dialogue replacements identified by slots 1-3 in `31/S3032.DAT` and `32/S3051.DAT`.
+- Built `03_output/ui_hud_e7_v86_p6_glyph_repack_slots_1_to_6_patch_only.zip`, SHA256 `41D7A246196D5D985B60C93A84E6D6D11E154F0C0D34EE2AED5BFD11C995678F`.
+- Static verification passed. Runtime verification for slots 1-6 remains pending.
+
+2026-07-29 v87 P6 helper heap-reservation repair:
+- Added `02_scripts/build_ui_hud_e7_v87_p6_heap_reserved.py`.
+- Confirmed from slots 1-4 that `InitHeap` used `0x801FE3C8` as its heap start and overwrote the relocated helper's second instruction.
+- Changed the startup heap boundary from `0x801FE3C4` to `0x801FE4D8`, reserving the complete 276-byte P6 helper/sidecar image.
+- Built `03_output/ui_hud_e7_v87_p6_heap_reserved_patch_only.zip`, SHA256 `36F578524C94771E88B96C1E90963FDC6AF6C3E1B77ECC4291D5642EBA75DC90`.
+- Relative to v86, only two bytes in `PSX.EXE` change. Runtime verification is pending.
+
+2026-07-29 v88 P6 state-persistence and S3032 slots 3-4 candidate:
+- Added `02_scripts/build_ui_hud_e7_v88_p6_state_persistence_slots_3_to_6.py`.
+- Rejected v87 as a complete symptom fix: it repaired the heap collision, but its single P6 sidecar was still cleared whenever an unrelated non-P6 UI string was parsed.
+- Changed the helper so non-P6 strings leave the active P6 pointer and bitmap intact; actual P6 strings still refresh the sidecar, and the existing pointer-equality guards remain active.
+- Added the two omitted S3032 dialogue blocks identified by current savestate slots 3 and 4.
+- Built `03_output/ui_hud_e7_v88_p6_state_persistence_slots_3_to_6_patch_only.zip`, SHA256 `CB89BF7A66CE1C176D44FD8E49772F4D94A8A4A688C11A95E207F3F89D802FAC`.
+- Relative to v87, only `PSX.EXE` and `31/S3032.DAT` change. `COMM.IMG`, `32/S3051.DAT`, and every other archive member remain byte-identical. Runtime verification is pending.
+
+2026-07-29 v89 S3032 story-safe book glyph repair:
+- Added `02_scripts/build_ui_hud_e7_v89_story_safe_book_glyph.py`.
+- Confirmed that v88 slot 3 stopped at `책` because the story E2 payload contained UI-only virtual code `EA 6F`.
+- Reassigned unused story code `E0 2D` from zero-use `듯` to `책` and replaced the single unsafe code in S3032 E2 slot 2.
+- Built `03_output/ui_hud_e7_v89_story_safe_book_glyph_patch_only.zip`, SHA256 `4A379BF0AA02D60E89C30E1BD26E9E884DF60AD0F9EF6FBB33537A9B396C9678`.
+- Relative to v88, `COMM.IMG` changes by 36 bytes inside one glyph plane and `31/S3032.DAT` changes by exactly two bytes at `0x45124-0x45125`. `PSX.EXE` and every other member are preserved.
+
+2026-07-29 v90 E2 control-boundary and P6 lifetime candidate:
+- Added `02_scripts/build_ui_hud_e7_v90_e2_control_and_p6_lifetime_fix.py`.
+- Removed two visible `E6 01` pairs from the S3032 E2 secondary string at file offset `0x45100`; this parser treats those bytes as visible glyphs rather than line breaks.
+- Updated the high-RAM P6 helper so unrelated text objects preserve pending P6 state, while a new non-P6 string on the same text object clears only the stale active pointer.
+- Built `03_output/ui_hud_e7_v90_e2_control_p6_lifetime_fix_patch_only.zip`, SHA256 `496A5F8FB72F342B656D6CDA13819C196D64D27C23BCE35EB511BCECB67C0739`.
+- Relative to v89, only `PSX.EXE` and `31/S3032.DAT` change. `COMM.IMG` and every other archive member remain byte-identical.
+- Static and deterministic verification passed. Runtime verification is pending, so v90 is not yet the accepted baseline.

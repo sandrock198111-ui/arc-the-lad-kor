@@ -1405,3 +1405,33 @@ v85 P6 high-RAM bootstrap candidate - 2026-07-28
 - The PS-X EXE size, load range, entry address, and all 77 non-EXE archive members remain unchanged. Relative to v84, only 57 `PSX.EXE` bytes differ.
 - Candidate: `03_output/ui_hud_e7_v85_p6_highram_bootstrap_patch_only.zip`, SHA256 `D7D028F83E42EA54922A853250976ADFDE06BE1A3D36DE809E05B4733AC35582`.
 - Syntax, deterministic rebuild, ZIP isolation, MIPS readback, startup copy/clear modeling, original-BSS preservation, and stack-margin audits pass. Runtime verification is still `PENDING`; this is not yet an accepted gameplay baseline.
+
+v86 P6 glyph repack and slots 1-6 candidate - 2026-07-28
+- The user confirmed that v85 no longer freezes at the previous runtime stop points. v85 remains the immediate runtime-proven rollback baseline.
+- v86 keeps the v85 high-RAM bootstrap and moves all 57 active physical-row 31/32/33/38/39 UI glyph planes into 15 blank cells on P6 physical row 24. No low-page sprite cell is reused.
+- The glyph helper now classifies only physical row 24 as P6. Every low-row mapping, existing control icon route, and existing archive member outside the explicit scope remains unchanged.
+- Savestate slots 1-3 identified three untranslated blocks. They are patched through existing E2 slots in `31/S3032.DAT` and `32/S3051.DAT`.
+- Candidate: `03_output/ui_hud_e7_v86_p6_glyph_repack_slots_1_to_6_patch_only.zip`, SHA256 `41D7A246196D5D985B60C93A84E6D6D11E154F0C0D34EE2AED5BFD11C995678F`.
+- Static lookup, P6 bitmap, E2 payload, ZIP-member isolation, and ZIP readback checks pass. Runtime verification is pending.
+
+v87 P6 helper heap-reservation candidate - 2026-07-29
+- Reject v86 as a runtime candidate for slots 1-4. The relocated P6 image and lookup data are correct, but the second helper instruction at `0x801FE3C8` is zeroed in every inspected state.
+- Startup calls BIOS A(39h) `InitHeap` with heap start `0x801FE3C8`, four bytes after the old BSS boundary `0x801FE3C4`. This places the helper on the heap header.
+- v87 moves the heap boundary to `0x801FE4D8`, immediately after the 276-byte helper/sidecar image. The actual heap now begins at `0x801FE4DC`, preserving the original upper heap boundary.
+- Only `PSX.EXE` changes from v86, at two bytes in the startup `addiu a0,a0,imm` instruction. All glyph data, UI mappings, dialogue patches, story E2 data, and other archive members remain byte-identical.
+- Candidate: `03_output/ui_hud_e7_v87_p6_heap_reserved_patch_only.zip`, SHA256 `36F578524C94771E88B96C1E90963FDC6AF6C3E1B77ECC4291D5642EBA75DC90`.
+- Static and deterministic verification pass. Runtime verification is `PENDING`; slots 5-6 are intentionally deferred.
+
+v88 P6 state-persistence and S3032 slots 3-4 candidate - 2026-07-29
+- v87 is not accepted as a complete symptom fix. It protects the helper from the heap, but unrelated non-P6 UI parsing still clears its single pending P6 bitmap.
+- v88 preserves pending P6 state across non-P6 strings and keeps the existing pointer-equality guards. It also patches the two S3032 dialogue blocks omitted from slots 3 and 4.
+- Candidate: `03_output/ui_hud_e7_v88_p6_state_persistence_slots_3_to_6_patch_only.zip`, SHA256 `CB89BF7A66CE1C176D44FD8E49772F4D94A8A4A688C11A95E207F3F89D802FAC`.
+- Static verification and archive isolation pass. Only `PSX.EXE` and `31/S3032.DAT` differ from v87; runtime verification is `PENDING`.
+
+v89 S3032 story-safe book glyph candidate - 2026-07-29
+- Reject v88 as a complete dialogue candidate. Runtime slots 1-2 remained successful, but slot 3 stopped immediately before `책`.
+- The affected E2 payload encoded `책` as UI virtual code `EA 6F`. The S3032 story parser does not accept the UI E9/EA virtual namespace, so this was both the malformed-text boundary and the progression stop.
+- `야군` is intentional: it transliterates the Japanese proper name `ヤクン`. The repaired line remains `야군 / 만일 무슨 일이 생겨도 / 저희는 책임질 수 없습니다.`.
+- v89 assigns `책` to story code `E0 2D`, whose former `듯` mapping has zero uses in all audited DAT story regions, and changes only that two-byte code in the affected E2 slot.
+- Candidate: `03_output/ui_hud_e7_v89_story_safe_book_glyph_patch_only.zip`, SHA256 `4A379BF0AA02D60E89C30E1BD26E9E884DF60AD0F9EF6FBB33537A9B396C9678`.
+- Relative to v88, only `COMM.IMG` and `31/S3032.DAT` change. `PSX.EXE`, successful S3032 slots 0-1, and the following S3032 slot 3 are byte-identical. Runtime verification is `PENDING`.

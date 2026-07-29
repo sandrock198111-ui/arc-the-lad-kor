@@ -758,3 +758,44 @@ P6 high-RAM bootstrap relocation - 2026-07-28
 - The entry bootstrap occupies exactly `0x801757BC-0x801757F3`. It calls BIOS A(2Ah) `memcpy`, which returns the destination in `v0`, uses that value as the BSS clear endpoint, restores `v0=4`, and leaves the original code from `0x801757F4` onward byte-identical.
 - `0x801757B4` is a live JAL target and must not be overwritten while expanding the bootstrap backward.
 - v85 does not grow `PSX.EXE` or alter ISO layout. Its runtime status remains unverified until both v84 freeze points progress normally.
+
+P6 row-24 glyph repack - 2026-07-28
+- The v85 lookup contains 57 active high-row mappings on physical rows 31, 32, 33, 38, and 39.
+- P6 absolute texture area x=1576..1755, y=288..299 contains fifteen completely blank 12x12 cells across four bitplanes, enough for all 57 mappings.
+- Repack destinations are physical indices 2016..2072, all on physical row 24. The helper must classify row 24 only (`sltiu` span 1), not rows 24..31.
+- Copy each source bitplane independently and preserve the other three destination bitplanes. Treating the whole 4-bit cell as one glyph incorrectly flags later planes in the same cell as occupied.
+- Do not reuse apparently blank low-page cells. v72 proved that they overlap battle sprites.
+- `32/S3051.DAT` is absent from the 78-member v85 ZIP. The current work copy at `01_work/32/S3051.DAT` is SHA256 `A6DC6BD40F49526C39EE20D9C1990DA45860190F31F5E938E6039AFCF7C4BB1A` and must be added as a new cumulative patch member when patching that scene.
+
+P6 high-RAM helper and InitHeap collision - 2026-07-29
+- Placing persistent code immediately at the original BSS end is not sufficient. Startup uses that same boundary to initialize the heap.
+- At `0x80175810`, `addiu a0,a0,-0x1c3c` forms `0x801FE3C4`. The delay-slot instruction at `0x8017584C` adds four, so BIOS A(39h) `InitHeap` receives `0x801FE3C8`.
+- v85/v86 placed the helper at `0x801FE3C4`; therefore the heap header overwrote its second instruction at `0x801FE3C8`. Slots 1-4 all contain zero there while the source helper and surrounding P6 data remain valid.
+- Reserve the whole helper image by changing the boundary to `0x801FE4D8`, its exclusive end. This makes the actual heap start `0x801FE4DC` and reduces heap size by exactly `0x114`, without moving its upper boundary.
+- Do not solve this by moving the helper into the old EXE-tail BSS, low-page texture cells, or observed stack space. Those approaches were already rejected.
+
+Current DuckStation savestate RAM layout - 2026-07-29
+- Do not use the older hard-coded decompressed offset `0x1262` for current states.
+- Pure 2 MiB PS1 RAM begins at decompressed offset `0x1A62` in the inspected current states. This was cross-checked with multiple live PSX RAM signatures.
+- State-analysis scripts must discover or validate the RAM boundary from signatures before reading pointers or sidecars.
+
+P6 sidecar lifetime across interleaved UI strings - 2026-07-29
+- v87 fixed the InitHeap collision but did not fix P6 state lifetime.
+- The helper had one active pointer/bitmap sidecar and cleared it whenever any new text state was parsed. A non-P6 UI string appearing between P6 parsing and rendering therefore erased the pending P6 bitmap.
+- In the inspected item state, the sidecar retained active pointer `0x801F031C` but its bitmap words were zero. This matches the observed fallback to malformed P0 glyphs for the P6-only item characters.
+- Non-P6 parsing must not clear pending P6 state. Only an actual P6 string may refresh the sidecar; renderer and marker pointer-equality guards must remain enabled.
+
+Story and UI glyph namespaces must remain separate - 2026-07-29
+- The S3032 story E2 encoder must use only the story charmap and normal/DD-E0 story glyph codes.
+- Do not fall back to `ui_glyph_store_v42_map.csv` while encoding story text. UI virtual codes in the E9/EA namespace are not valid story glyphs and can be interpreted as controls.
+- v88 encoded `책` as UI code `EA 6F`; runtime stopped exactly at that boundary after displaying `저희는`.
+- Story code `E0 2D`, formerly assigned to `듯`, has zero occurrences in all audited DAT story regions and is locally reassigned to `책` in v89.
+- `야군` is the correct Korean transcription of character name `ヤクン`; it is not a corrupted form of `장군`.
+
+E2 secondary-string controls and P6 state lifetime - 2026-07-29
+- In the S3032 E2 secondary-string parser, byte pair `E6 01` is rendered as visible glyph data. It must not be used as a line-break control in this field.
+- Slot 5 captured sidecar bytes `B4 1D 1F 80 12 00 00 00 00 00 00 00` at physical RAM `0x1FE4CC`. The active pointer is `0x801F1DB4`, bitmap bit `0x12` remains set, and the same text object's current glyph index is zero.
+- This proves the expanded P6 store is present and readable, but the single active record can become stale when the same text object starts a new non-P6 ring string.
+- Correct lifetime rule: preserve P6 state for unrelated text objects; preserve it while the same P6 string advances; clear only the active pointer when the same object starts a non-P6 string at glyph index zero.
+- v90 implements that rule in glyph helper `0x801FE3C4-0x801FE473`. The compact marker helper occupies `0x801FE474-0x801FE4CB`, and the sidecar remains at `0x801FE4CC`.
+- These addresses fit the existing high-RAM reservation and do not change the `0x114` bootstrap copy size, heap boundary, asset placement, `COMM.IMG`, or ISO layout.

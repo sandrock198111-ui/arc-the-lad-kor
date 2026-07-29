@@ -1484,3 +1484,59 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - MIPS readback: PASS. The glyph hook targets `0x801FE3C4`, marker call targets `0x801FE460`, and renderer reads sidecar `0x801FE4CC`.
 - Stack-margin audit: PASS against observed states. The relocated image ends at `0x801FE4D8`, leaving 6,560 bytes to the lowest observed SP.
 - Runtime result: PENDING. Verify the two prior freeze points first; static evidence does not promote v85 to an accepted gameplay build.
+
+2026-07-28 - v86 P6 glyph repack and slots 1-6 static verification
+- Base hash: PASS, v85 SHA256 `D7D028F83E42EA54922A853250976ADFDE06BE1A3D36DE809E05B4733AC35582`.
+- Build/readback: PASS. Output SHA256 `41D7A246196D5D985B60C93A84E6D6D11E154F0C0D34EE2AED5BFD11C995678F`; 79 unique ZIP members.
+- Glyph inventory: PASS. Exactly 57 live mappings from rows 31, 32, 33, 38, and 39 were copied to P6 row 24.
+- Destination safety: PASS. Fifteen P6 destination cells were blank before writing; neighboring bitplanes were preserved.
+- PSX scope: PASS. Changes are confined to 57 lookup entries and the P6 classifier immediate.
+- Dialogue scope: PASS. Three source byte sequences and boundaries matched exactly; E2 commands, payloads, and return skips read back correctly.
+- Archive isolation: PASS. Existing changed members are only `PSX.EXE`, `COMM.IMG`, and `31/S3032.DAT`; `32/S3051.DAT` is the sole added member.
+
+2026-07-29 - v86 slots 1-4 failure analysis and v87 static verification
+- Savestate RAM location: PASS. Pure PS1 RAM begins at decompressed offset `0x1A62` in all inspected states.
+- P6 source data: PASS. Relocated bitmap data and the virtual-to-physical lookup table match the v86 archive.
+- Helper integrity: FAIL in v86. Expected word `0x2463E4CC` at `0x801FE3C8` is `0x00000000` in slots 1-4.
+- Startup disassembly: PASS. `0x80175810` forms boundary `0x801FE3C4`, `0x8017584C` adds four, and `0x801758D8` dispatches BIOS A(39h) `InitHeap`; the resulting heap start is `0x801FE3C8`.
+- v87 syntax: PASS, `python -m py_compile 02_scripts/build_ui_hud_e7_v87_p6_heap_reserved.py`.
+- v87 build/readback: PASS. ZIP SHA256 `36F578524C94771E88B96C1E90963FDC6AF6C3E1B77ECC4291D5642EBA75DC90`; `PSX.EXE` SHA256 `A5859BF199D8E6063046D87A143A21C55474C3C393059F32AC8D3FDE56CB2AA8`.
+- Isolation: PASS. All 78 non-EXE members are byte-identical to v86; `PSX.EXE` has exactly two changed bytes at file offsets `0x5B010-0x5B011`.
+- MIPS readback: PASS. Startup word is `0x2484E4D8`; actual heap start becomes `0x801FE4DC`.
+
+2026-07-29 - v87 runtime symptom review and v88 static verification
+- User runtime review: FAIL as a complete fix. Slots 3-4 remained Japanese and slots 5-6 retained the same malformed item glyph symptoms.
+- Savestate layout correction: PASS. Current DuckStation states place pure PS1 RAM at decompressed offset `0x1A62`; the older fixed `0x1262` assumption is invalid for these states.
+- Scene mapping: PASS. Slots 1-4 map to `31/S3032.DAT`; slots 5-6 map to `32/S3051.DAT`.
+- Dialogue identification: PASS. The omitted Japanese blocks begin at S3032 offsets `0x47A40` and `0x47AA2`, each with capacity 34.
+- P6 diagnosis: PASS. The v87 sidecar at `0x801FE4CC` has active pointer `0x801F031C` but zero bitmap words, while the helper resets that sidecar for every parsed text state, including non-P6 UI strings.
+- v88 syntax/build/readback: PASS. ZIP SHA256 `CB89BF7A66CE1C176D44FD8E49772F4D94A8A4A688C11A95E207F3F89D802FAC`; `PSX.EXE` SHA256 `28C5974568666C34904682A0E1009570C46730027CB228CD655C4A4BF67BA6D3`.
+- Archive isolation: PASS. Exactly `PSX.EXE` and `31/S3032.DAT` differ from v87. `COMM.IMG`, `32/S3051.DAT`, and all other members are byte-identical.
+- EXE scope: PASS. Exactly 46 bytes change, all inside helper file range `0x8DEEC-0x8DF87`; the v87 heap-reservation instruction `0x2484E4D8` is preserved.
+- S3032 scope: PASS. Existing E2 slots at `0x47994` and `0x479EE` are preserved; new slots are installed at `0x47A40` and `0x47AA2`.
+- ZIP integrity: PASS (`python -m zipfile -t`).
+- Runtime result: PENDING. Check slots 1-2 for regression, slots 3-4 for Korean dialogue, slot 5 for the small-bomb item name, and slot 6 for the magic-leaf item name.
+
+2026-07-29 - v88 slot 3 failure analysis and v89 static verification
+- v88 runtime result: FAIL for slot 3 progression. The translated line rendered through `저희는` and stopped before `책`; slots 1-2 retained their prior successful Korean output.
+- Payload audit: PASS. The next encoded pair is `EA 6F`, which came from the UI glyph map because `책` was absent from the story charmap.
+- Namespace audit: FAIL for v88, PASS for v89. UI E9/EA virtual glyph codes must not be emitted into S3032 story payloads. v89 uses story-safe `E0 2D`.
+- Replacement safety: PASS. `E0 2D` formerly maps to `듯`, and its occurrence count is zero across all audited DAT story regions before v89.
+- v89 syntax/build/readback: PASS. ZIP SHA256 `4A379BF0AA02D60E89C30E1BD26E9E884DF60AD0F9EF6FBB33537A9B396C9678`; 79 members; ZIP integrity test passes.
+- Archive isolation: PASS. Exactly `COMM.IMG` and `31/S3032.DAT` differ from v88; `PSX.EXE` is byte-identical.
+- Glyph scope: PASS. All 36 changed `COMM.IMG` bytes are confined to the `E0 2D` glyph plane, and its 12x12 bitmap matches the accepted Gulim renderer pixel-for-pixel.
+- S3032 scope: PASS. Exactly two bytes change at `0x45124-0x45125`; slots 0, 1, and 3 remain byte-identical.
+- Runtime result: PENDING. Verify that slot 3 displays `책임질 수 없습니다.` and advances to the next dialogue.
+
+- Runtime result: PENDING. Verify via a v87 cold boot because an older DuckStation savestate restores the older executable RAM.
+- Runtime result: PENDING. Verify slots 1-3 dialogue and slots 4-6 `테`, `폴`, `잎`, and `탄` rendering.
+
+2026-07-29 - v90 E2 control-boundary and P6 lifetime static verification
+- Base verification: PASS. The builder accepts only v89 ZIP SHA256 `4A379BF0AA02D60E89C30E1BD26E9E884DF60AD0F9EF6FBB33537A9B396C9678`.
+- Syntax: PASS, `python -m py_compile 02_scripts/build_ui_hud_e7_v90_e2_control_and_p6_lifetime_fix.py`.
+- Build/readback: PASS. Output ZIP SHA256 `496A5F8FB72F342B656D6CDA13819C196D64D27C23BCE35EB511BCECB67C0739`; PSX SHA256 `F30ACD4B203CAAB8CBE7EE9C3213871F6D7617FE253799A649A9077714D33B80`; S3032 SHA256 `A5831D9EC5C1E0708F4D3F77DD3BE57378E09CF8DE75E530975253823241F156`.
+- Deterministic rebuild: PASS. A second build produced the same ZIP and member hashes.
+- Archive isolation: PASS. Member order and sizes are unchanged; only `PSX.EXE` (191 changed bytes) and `31/S3032.DAT` (47 changed bytes) differ from v89.
+- S3032 scope: PASS. The edit is confined to E2 slot 2 at `0x45100`; slots 0, 1, and 3 are byte-identical. The old payload contained two `E6 01` pairs and the new payload contains none.
+- MIPS readback: PASS. Glyph helper is `0x801FE3C4-0x801FE473`; marker helper is `0x801FE474-0x801FE4CB`; sidecar begins at `0x801FE4CC`. Branch targets and R3000 load-delay spacing are valid.
+- Runtime result: PENDING. Verify the corrected S3032 line, then open/close the skill ring from slot 5 and confirm normal progression. Accepted UI, icons, and prior story scenes must remain unchanged.
