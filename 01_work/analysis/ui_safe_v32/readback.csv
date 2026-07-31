@@ -68,27 +68,27 @@ equipment_description,1,水系の攻撃に強くなります,guide_safe_override
 equipment_description,2,<N:ｌ:5>へモジーへを回避します,guide_safe_override,헤모지 상태 방지,,16,DF 9D E0 11 E0 A2 9C E0 56 DF 08 9C E0 0F E0 A2,0x80A9C,0x8061C
 equipment_description,3,自分の<N:Π:10><N:Ｐ:10>の回復量が大きくなります,guide_safe_override,체력 회복량 증가,,15,E0 90 E0 8C 9C DE C7 DF 33 40 9C E0 D1 E0 C0,0x80AA0,0x8062D
 equipment_description,4,戦闘で入る経験値が2倍になります,guide_safe_override,전투 경험치 2배,,15,E0 CC E0 EF 9C E0 89 E0 E8 E0 B0 9C 13 DF BD,0x80AA4,0x8063D
-equipment_description,5,魔力が10<N:X:20>上昇します,guide_safe_override,마력 10% 상승,,13,E0 9E E0 8C 9C 12 11 07 9C E0 56 E0 FF,0x80AA8,0x8064D
+equipment_description,5,魔力が10<N:X:20>上昇します,guide_safe_override,마력 10% 상승,,13,E0 9E E0 8C 9C 12 11 06 9C E0 56 E0 FF,0x80AA8,0x8064D
 equipment_description,6,<N:ｌ:5><N:眠:5>りへを回避します,guide_safe_override,수면 상태 방지,,14,DF B7 E0 4C 9C E0 56 DF 08 9C E0 0F E0 A2,0x80AAC,0x8065B
-equipment_description,7,防御力が30<N:X:20>上昇します（チョン<N:力:5>ラ）,guide_safe_override,촌가라 방어력 30% 상승,,22,DF 83 E0 C0 E0 A6 9C E0 0F E0 A0 E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80AB0,0x8066A
+equipment_description,7,防御力が30<N:X:20>上昇します（チョン<N:力:5>ラ）,guide_safe_override,촌가라 방어력 30% 상승,,22,DF 83 E0 C0 E0 A6 9C E0 0F E0 A0 E0 8C 9C 14 11 06 9C E0 56 E0 FF,0x80AB0,0x8066A
 equipment_description,8,<N:ｌ:5>投げるへが<N:リ:12>ベル1になります,guide_safe_override,던지기 LV +1,,11,DF 69 E0 A2 E0 AC 9C 6C 9C 0C 12,0x80AB4,0x80681
-equipment_description,9,攻撃力が<N:ｃ:12>0<N:X:20>上昇します,guide_safe_override,공격력 50% 상승,,15,E0 C6 E0 40 E0 8C 9C 16 11 07 9C E0 56 E0 FF,0x80AB8,0x8068D
+equipment_description,9,攻撃力が<N:ｃ:12>0<N:X:20>上昇します,guide_safe_override,공격력 50% 상승,,15,E0 C6 E0 40 E0 8C 9C 16 11 06 9C E0 56 E0 FF,0x80AB8,0x8068D
 equipment_description,10,<N:ｌ:5>暗闇へを回避します,guide_safe_override,실명 방지,,9,DF 26 E0 4E 9C E0 0F E0 A2,0x80ABC,0x8069D
 equipment_description,11,攻撃が<N:非:1>常に当たりやすくなります,guide_safe_override,명중 크게 상승,,14,E0 4E DF A9 9C E0 9D E0 14 9C E0 56 E0 FF,0x80AC0,0x806A7
 equipment_description,12,<N:ｌ:5>投げるへが<N:ｌ:5>ぶん投げるへになります,guide_safe_override,던지기 강화,,11,DF 69 E0 A2 E0 AC 9C E0 F2 DE FE,0x80AC4,0x806B6
 equipment_description,13,攻撃が特定の敵に強くなります,guide_safe_override,일부 적에게 강함,,16,E0 6B E0 0B 9C DF F2 E0 9F E0 14 9C E0 F2 E0 85,0x80AC8,0x806C2
 equipment_description,14,攻撃が必す当たるようになります,guide_safe_override,공격이 반드시 명중,,18,E0 C6 E0 40 E0 BD 9C E0 8A DF 41 E0 61 9C E0 4E DF A9,0x80ACC,0x806D3
 equipment_description,15,<N:リ:12>ベルアッ<N:フ:11>時に<N:Π:10><N:Ｐ:10>の伸びが大きくなります,guide_safe_override,성장 시 최대 체력 증가량 상승,,28,E0 5A E0 E1 9C E0 61 9C DF A4 E0 36 9C E0 90 E0 8C 9C E0 D1 E0 C0 40 9C E0 56 E0 FF,0x80AD0,0x806E6
-equipment_description,16,魔力が30<N:X:20>上昇します （<N:ニ:13>ーゲン）,guide_safe_override,마법사 마력 30% 상승,,20,E0 9E E0 B3 E0 A5 9C E0 9E E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80AD4,0x80703
+equipment_description,16,魔力が30<N:X:20>上昇します （<N:ニ:13>ーゲン）,guide_safe_override,마법사 마력 30% 상승,,20,E0 9E E0 B3 E0 A5 9C E0 9E E0 8C 9C 14 11 06 9C E0 56 E0 FF,0x80AD4,0x80703
 equipment_description,17,攻撃が当たりやすくなります,guide_safe_override,명중 상승,,9,E0 4E DF A9 9C E0 56 E0 FF,0x80AD8,0x80718
-equipment_description,18,すばやさが10<N:X:20>上昇します,guide_safe_override,민첩 10% 상승,,13,DF BE DF EC 9C 12 11 07 9C E0 56 E0 FF,0x80ADC,0x80722
-equipment_description,19,すばやさが30<N:X:20>上昇します,guide_safe_override,민첩 30% 상승,,13,DF BE DF EC 9C 14 11 07 9C E0 56 E0 FF,0x80AE0,0x80730
+equipment_description,18,すばやさが10<N:X:20>上昇します,guide_safe_override,민첩 10% 상승,,13,DF BE DF EC 9C 12 11 06 9C E0 56 E0 FF,0x80ADC,0x80722
+equipment_description,19,すばやさが30<N:X:20>上昇します,guide_safe_override,민첩 30% 상승,,13,DF BE DF EC 9C 14 11 06 9C E0 56 E0 FF,0x80AE0,0x80730
 equipment_description,20,<N:ｌ:5>ジャン<N:フ:11>へが<N:リ:12>ベル1になります,guide_safe_override,점프 LV +1,,9,DE D2 DF 9F 9C 6C 9C 0C 12,0x80AE4,0x8073E
 equipment_description,21,反撃しやすくなります,guide_safe_override,반격 상승,,9,E0 8A E0 40 9C E0 56 E0 FF,0x80AE8,0x80748
 equipment_description,22,<N:ｌ:5>受け取るへが<N:リ:12>ベル1になります,guide_safe_override,받기 LV +1,,9,E0 10 E0 AC 9C 6C 9C 0C 12,0x80AEC,0x80752
 equipment_description,23,<N:ｌ:5>受け取るへが<N:ｌ:5>投げ返すへになります,guide_safe_override,받기가 되던지기로 변화,,22,E0 10 E0 AC E0 C0 9C E0 2F DF 69 E0 A2 E0 AC E0 D6 9C DE 3C DE FE,0x80AF0,0x8075C
 equipment_description,24,半分の<N:∪:20><N:Ｐ:10>で能力を使用できます,guide_safe_override,소비 마력 절반,,14,E0 D9 E0 53 9C E0 9E E0 8C 9C E0 E6 E0 8A,0x80AF4,0x80773
-equipment_description,25,攻撃力が30<N:X:20>上昇します,guide_safe_override,공격력 30% 상승,,15,E0 C6 E0 40 E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80AF8,0x80782
+equipment_description,25,攻撃力が30<N:X:20>上昇します,guide_safe_override,공격력 30% 상승,,15,E0 C6 E0 40 E0 8C 9C 14 11 06 9C E0 56 E0 FF,0x80AF8,0x80782
 equipment_description,26,反撃ダメージが大きくなります（<N:｣:11>ー<N:力:5>）,guide_safe_override,이가 반격 피해 증가,,19,E0 BD E0 C0 9C E0 8A E0 40 9C DF 82 E0 88 9C E0 D1 E0 C0,0x80AFC,0x80792
 equipment_description,27,効果はわかつていません,guide_safe_override,작용 불명,,9,E0 92 E0 67 9C E0 0A E0 4E,0x80B00,0x807A6
 equipment_description,28,行動する度まわりの<N:午:15>ャラを回復します（ククル）,guide_safe_override,쿠쿠루 행동 시 주변 아군 회복,,29,E0 7A E0 7A E0 44 9C E0 8B E0 94 9C E0 61 9C E0 CF DE 3C 9C E0 9C E0 C5 9C DE C7 DF 33,0x80B04,0x807B0
@@ -97,23 +97,23 @@ equipment_description,30,敵を倒すとほ<N:げ:26>ア<N:｣:11>テムが出�
 equipment_description,31,効果はわかつていません,guide_safe_override,작용 불명,,9,E0 92 E0 67 9C E0 0A E0 4E,0x80B10,0x807A6
 equipment_description,32,<N:ｌ:5>石化へを回避します,guide_safe_override,돌 상태 방지,,12,E0 D5 9C E0 56 DF 08 9C E0 0F E0 A2,0x80B14,0x807EE
 equipment_description,33,効果はわかつていません （アーク）,guide_safe_override,아크 전용 작용 불명,,19,E0 9C E0 9D 9C E0 CC E0 67 9C E0 92 E0 67 9C E0 0A E0 4E,0x80B18,0x807FB
-equipment_description,34,魔力が<N:ｃ:12>0<N:X:20>上昇します,guide_safe_override,마력 50% 상승,,13,E0 9E E0 8C 9C 16 11 07 9C E0 56 E0 FF,0x80B1C,0x8080F
-equipment_description,35,魔力が30<N:X:20>上昇します,guide_safe_override,마력 30% 상승,,13,E0 9E E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80B20,0x8081D
+equipment_description,34,魔力が<N:ｃ:12>0<N:X:20>上昇します,guide_safe_override,마력 50% 상승,,13,E0 9E E0 8C 9C 16 11 06 9C E0 56 E0 FF,0x80B1C,0x8080F
+equipment_description,35,魔力が30<N:X:20>上昇します,guide_safe_override,마력 30% 상승,,13,E0 9E E0 8C 9C 14 11 06 9C E0 56 E0 FF,0x80B20,0x8081D
 equipment_description,36,<N:ｌ:5>向き直りの笛への効果が<N:∪:20><N:∧:11><N:Ｐ:10>全体（ポニ）,guide_safe_override,방향잡이 피리가 전체에 적용,,27,E0 0F DE F8 DF F4 E0 BD 9C DF 82 E0 98 E0 C0 9C E0 CC E0 90 E0 9F 9C DF F2 E0 67,0x80B24,0x8082B
 equipment_description,37,<N:ｌ:5><N:毒:1>へを回避します,guide_safe_override,해로운 기운 방지,,16,E0 88 E0 D6 DF FA 9C E0 AC DF FA 9C E0 0F E0 A2,0x80B28,0x80847
-equipment_description,38,防御力が<N:ｃ:12>0<N:X:20>上昇します,guide_safe_override,방어력 50% 상승,,15,E0 0F E0 A0 E0 8C 9C 16 11 07 9C E0 56 E0 FF,0x80B2C,0x80858
-equipment_description,39,防御力が30<N:X:20>上昇します,guide_safe_override,방어력 30% 상승,,15,E0 0F E0 A0 E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80B30,0x80868
+equipment_description,38,防御力が<N:ｃ:12>0<N:X:20>上昇します,guide_safe_override,방어력 50% 상승,,15,E0 0F E0 A0 E0 8C 9C 16 11 06 9C E0 56 E0 FF,0x80B2C,0x80858
+equipment_description,39,防御力が30<N:X:20>上昇します,guide_safe_override,방어력 30% 상승,,15,E0 0F E0 A0 E0 8C 9C 14 11 06 9C E0 56 E0 FF,0x80B30,0x80868
 equipment_description,40,防御しやすくなります,guide_safe_override,방어율 상승,,11,E0 0F E0 A0 DF 6D 9C E0 56 E0 FF,0x80B34,0x80878
-equipment_description,41,攻撃力が<N:７:11>0<N:X:20>上昇します（<N:ニ:13>ーゲン）,guide_safe_override,마법사 공격력 70% 상승,,22,E0 9E E0 B3 E0 A5 9C E0 C6 E0 40 E0 8C 9C 18 11 07 9C E0 56 E0 FF,0x80B38,0x80884
+equipment_description,41,攻撃力が<N:７:11>0<N:X:20>上昇します（<N:ニ:13>ーゲン）,guide_safe_override,마법사 공격력 70% 상승,,22,E0 9E E0 B3 E0 A5 9C E0 C6 E0 40 E0 8C 9C 18 11 06 9C E0 56 E0 FF,0x80B38,0x80884
 equipment_description,42,<N:ｌ:5>心<N:眼:3>法への<N:乾:16>囲が広くなります（<N:｣:11>ー<N:力:5>）,guide_safe_override,심안법 범위 확대,,16,DF 25 E0 E9 E0 B3 9C DE E4 E0 69 9C DE C8 E0 36,0x80B3C,0x8089B
 equipment_description,43,召喚<N:午:15>ャラの経験値が自分に入ります（チョン<N:力:5>ラ）,guide_safe_override,마물 경험치가 촌가라에게,,24,E0 9E E0 4F 9C E0 89 E0 E8 E0 B0 E0 C0 9C DF 83 E0 C0 E0 A6 E0 9F E0 14,0x80B40,0x808AC
 equipment_description,44,<N:ｌ:5>沈黙へを回避します,guide_safe_override,마법 봉인 상태 방지,,19,E0 9E E0 B3 9C DF 93 E0 6A 9C E0 56 DF 08 9C E0 0F E0 A2,0x80B44,0x808C5
 equipment_description,45,攻撃を避けやすくなります,guide_safe_override,회피율 상승,,11,DE C7 DF 82 DF 6D 9C E0 56 E0 FF,0x80B48,0x808D9
-equipment_description,46,攻撃力が10<N:X:20>上昇します,guide_safe_override,공격력 10% 상승,,15,E0 C6 E0 40 E0 8C 9C 12 11 07 9C E0 56 E0 FF,0x80B4C,0x808E5
+equipment_description,46,攻撃力が10<N:X:20>上昇します,guide_safe_override,공격력 10% 상승,,15,E0 C6 E0 40 E0 8C 9C 12 11 06 9C E0 56 E0 FF,0x80B4C,0x808E5
 equipment_description,47,<N:与:3>えるダメージの当たりはすれが大きくなります,guide_safe_override,공격 피해 편차 증가,,19,E0 C6 E0 40 9C DF 82 E0 88 9C E0 E4 E0 96 9C E0 D1 E0 C0,0x80B50,0x808F5
 equipment_description,48,復活魔法で<N:Π:10><N:Ｐ:10>最大で復活します（ククル）,guide_safe_override,쿠쿠루 부활 시 최대 체력 회복,,29,E0 7A E0 7A E0 44 9C E0 0B E0 80 9C E0 61 9C DF A4 E0 36 9C E0 90 E0 8C 9C DE C7 DF 33,0x80B54,0x80909
 equipment_description,49,当たりはすれが大きくなります,guide_safe_override,피해 편차 증가,,14,DF 82 E0 88 9C E0 E4 E0 96 9C E0 D1 E0 C0,0x80B58,0x80927
-equipment_description,50,防御力が10<N:X:20>上昇します,guide_safe_override,방어력 10% 상승,,15,E0 0F E0 A0 E0 8C 9C 12 11 07 9C E0 56 E0 FF,0x80B5C,0x80936
+equipment_description,50,防御力が10<N:X:20>上昇します,guide_safe_override,방어력 10% 상승,,15,E0 0F E0 A0 E0 8C 9C 12 11 06 9C E0 56 E0 FF,0x80B5C,0x80936
 equipment_description,51,効果はわかつていません,guide_safe_override,작용 불명,,9,E0 92 E0 67 9C E0 0A E0 4E,0x80B60,0x807A6
 equipment_description,52,効果はわかつていません,guide_safe_override,작용 불명,,9,E0 92 E0 67 9C E0 0A E0 4E,0x80B64,0x807A6
 equipment_description,53,効果はわかつていません,guide_safe_override,작용 불명,,9,E0 92 E0 67 9C E0 0A E0 4E,0x80B68,0x807A6
@@ -121,7 +121,7 @@ equipment_description,54,効果はわかつていません,guide_safe_override,�
 equipment_description,55,行動するたびに<N:Π:10><N:Ｐ:10>が回復します,guide_safe_override,매 행동 체력 회복,,17,DF 38 9C E0 8B E0 94 9C E0 90 E0 8C 9C DE C7 DF 33,0x80B70,0x80946
 equipment_description,56,攻撃が<N:非:1>常に当たりやすくなります（トッシュ）,guide_safe_override,토슈 명중 크게 상승,,19,E0 7E DE DD 9C E0 4E DF A9 9C E0 9D E0 14 9C E0 56 E0 FF,0x80B74,0x80958
 equipment_description,57,全ステータスしょう害を回避します,guide_safe_override,모든 이상 상태 방지,,19,E0 11 DF D4 9C E0 BD E0 56 9C E0 56 DF 08 9C E0 0F E0 A2,0x80B78,0x8096C
-equipment_description,58,魔力が30<N:X:20>上昇します （ポニ）,guide_safe_override,포코 마력 30% 상승,,18,DF 02 DF A3 9C E0 9E E0 8C 9C 14 11 07 9C E0 56 E0 FF,0x80B7C,0x80980
+equipment_description,58,魔力が30<N:X:20>上昇します （ポニ）,guide_safe_override,포코 마력 30% 상승,,18,DF 02 DF A3 9C E0 9E E0 8C 9C 14 11 06 9C E0 56 E0 FF,0x80B7C,0x80980
 equipment_description,59,<N:ｌ:5>マ<N:ヒ:5>へを回避します,guide_safe_override,마비 상태 방지,,14,E0 9E E0 53 9C E0 56 DF 08 9C E0 0F E0 A2,0x80B80,0x80993
 equipment_description,60,桜花雷爆斬でマ<N:ヒ:5>させることができます（トッシュ）,guide_safe_override,토슈 비기에 마비 부여,,21,E0 7E DE DD 9C E0 53 E0 AC E0 9F 9C E0 9E E0 53 9C E0 0B E0 DC,0x80B84,0x809A2
 equipment_description,61,攻撃が特定の敵に強くなります,guide_safe_override,일부 적에게 강함,,16,E0 6B E0 0B 9C DF F2 E0 9F E0 14 9C E0 F2 E0 85,0x80B88,0x806C2

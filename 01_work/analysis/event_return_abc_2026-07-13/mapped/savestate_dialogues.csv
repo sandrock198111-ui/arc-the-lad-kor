@@ -1,0 +1,57 @@
+state,source_file,match_ratio,marker,ram_marker_offset,ram_payload_start,file_payload_start,end_exclusive,length,prefix_kind,payload_hex
+slot1.state.bin,22/S2053.DAT,1.000000,0x19,0x1170CC,0x1170CE,0x478CE,0x478E7,25,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot1.state.bin,22/S2053.DAT,1.000000,0x17,0x117124,0x117128,0x47928,0x4793B,19,control_0000,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot1.state.bin,22/S2053.DAT,1.000000,0x19,0x117178,0x11717A,0x4797A,0x47988,14,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c
+slot1.state.bin,22/S2053.DAT,1.000000,0x19,0x1171B8,0x1171BA,0x479BA,0x479DA,32,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot1.state.bin,22/S2053.DAT,1.000000,0x19,0x11721C,0x11721E,0x47A1E,0x47A2D,15,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot1.state.bin,22/S2053.DAT,1.000000,0x19,0x11725E,0x117260,0x47A60,0x47A88,40,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot1.state.bin,22/S2053.DAT,1.000000,0x19,0x1172BE,0x1172C0,0x47AC0,0x47AD6,22,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot1.state.bin,22/S2053.DAT,1.000000,0x19,0x11730C,0x11730E,0x47B0E,0x47B47,57,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot1.state.bin,22/S2053.DAT,1.000000,0x19,0x11737E,0x117380,0x47B80,0x47BAC,44,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot2.state.bin,F/SF091.DAT,1.000000,0x19,0x11707E,0x117080,0x47880,0x478BE,62,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot2.state.bin,F/SF091.DAT,1.000000,0x19,0x117126,0x117128,0x47928,0x47952,42,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot2.state.bin,F/SF091.DAT,1.000000,0x19,0x117182,0x117184,0x47984,0x479A6,34,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot2.state.bin,F/SF091.DAT,1.000000,0x19,0x1171D6,0x1171D8,0x479D8,0x479F9,33,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot2.state.bin,F/SF091.DAT,1.000000,0x19,0x11722A,0x11722C,0x47A2C,0x47A60,52,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot2.state.bin,F/SF091.DAT,1.000000,0x19,0x117290,0x117292,0x47A92,0x47ABD,43,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot2.state.bin,F/SF091.DAT,1.000000,0x19,0x1172EE,0x1172F0,0x47AF0,0x47B1F,47,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot2.state.bin,F/SF091.DAT,1.000000,0x19,0x117350,0x117352,0x47B52,0x47B7D,43,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot2.state.bin,F/SF091.DAT,1.000000,0x19,0x1173AE,0x1173B0,0x47BB0,0x47BDC,44,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot2.state.bin,F/SF091.DAT,1.000000,0x19,0x11740C,0x11740E,0x47C0E,0x47C30,34,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot3.state.bin,F/SF091.DAT,1.000000,0x19,0x11707E,0x117080,0x47880,0x478BE,62,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot3.state.bin,F/SF091.DAT,1.000000,0x19,0x117126,0x117128,0x47928,0x47952,42,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot3.state.bin,F/SF091.DAT,1.000000,0x19,0x117182,0x117184,0x47984,0x479A6,34,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot3.state.bin,F/SF091.DAT,1.000000,0x19,0x1171D6,0x1171D8,0x479D8,0x479F9,33,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot3.state.bin,F/SF091.DAT,1.000000,0x19,0x11722A,0x11722C,0x47A2C,0x47A60,52,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot3.state.bin,F/SF091.DAT,1.000000,0x19,0x117290,0x117292,0x47A92,0x47ABD,43,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot3.state.bin,F/SF091.DAT,1.000000,0x19,0x1172EE,0x1172F0,0x47AF0,0x47B1F,47,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot3.state.bin,F/SF091.DAT,1.000000,0x19,0x117350,0x117352,0x47B52,0x47B7D,43,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot3.state.bin,F/SF091.DAT,1.000000,0x19,0x1173AE,0x1173B0,0x47BB0,0x47BDC,44,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot3.state.bin,F/SF091.DAT,1.000000,0x19,0x11740C,0x11740E,0x47C0E,0x47C30,34,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot4.state.bin,F/SF091.DAT,1.000000,0x19,0x11707E,0x117080,0x47880,0x478BE,62,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot4.state.bin,F/SF091.DAT,1.000000,0x19,0x117126,0x117128,0x47928,0x47952,42,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot4.state.bin,F/SF091.DAT,1.000000,0x19,0x117182,0x117184,0x47984,0x479A6,34,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot4.state.bin,F/SF091.DAT,1.000000,0x19,0x1171D6,0x1171D8,0x479D8,0x479F9,33,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot4.state.bin,F/SF091.DAT,1.000000,0x19,0x11722A,0x11722C,0x47A2C,0x47A60,52,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot4.state.bin,F/SF091.DAT,1.000000,0x19,0x117290,0x117292,0x47A92,0x47ABD,43,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot4.state.bin,F/SF091.DAT,1.000000,0x19,0x1172EE,0x1172F0,0x47AF0,0x47B1F,47,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot4.state.bin,F/SF091.DAT,1.000000,0x19,0x117350,0x117352,0x47B52,0x47B7D,43,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot4.state.bin,F/SF091.DAT,1.000000,0x19,0x1173AE,0x1173B0,0x47BB0,0x47BDC,44,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot4.state.bin,F/SF091.DAT,1.000000,0x19,0x11740C,0x11740E,0x47C0E,0x47C30,34,none,98 a0 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x19,0x1170C2,0x1170C4,0x478C4,0x478EE,42,none,5e 5d 25 e6 01 41 1c cf 24 dd 4b 1c dd ab 1e 1f 1c 2a e6 01 5b 52 dd a3 2a dd 40 dd 95 2b 22 5a 36 1b 26 91 dd 61 1d 1c 35 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x19,0x117124,0x117126,0x47926,0x47940,26,none,50 8b 25 e6 01 5d 27 30 41 1c 3d 26 1d 7a 2f 38 26 3a 32 21 28 df 61 df 61 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x19,0x117176,0x117178,0x47978,0x479B1,57,none,5e 5d 25 e6 01 5f 34 47 62 31 2a 3f 58 32 24 de fd de 68 1d 2e 36 2a dd 9b 3e c8 23 1d 29 21 dd 4b 1c 91 dd 61 36 24 2e 1c dd 07 dd ec 2a 9f 1b dd c4 2e 3a 32 22 1c 35 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x19,0x1171E2,0x1171E4,0x479E4,0x47A13,47,none,5e 5d 25 e6 01 42 31 4e 3d 24 d7 d1 36 97 1f 39 30 dd 3a 53 64 31 7c 1c e6 01 5c dd 14 31 dd 6d 1c dd 10 23 74 44 dd 4b 2a 6e 2f a0 1f 20 24
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x19,0x117244,0x117246,0x47A46,0x47A71,43,none,5e 5d 25 e6 01 41 1e 21 5b cd dd 1a 5a 2a 2e 1c 5e 1c 54 2e 23 3f 22 1c 20 54 26 2b 32 58 87 23 86 32 22 2e 36 2a 30 44 22 1c 20
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x19,0x1172A2,0x1172A4,0x47AA4,0x47ABB,23,none,5e 5d 25 e6 01 41 32 2f dd 86 dd 35 21 44 21 dd 24 1e 1b 1c 4a 48 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x17,0x1172F8,0x1172FC,0x47AFC,0x47B0F,19,control_0100,5d cb 24 85 38 13 52 23 dd 82 74 3a 59 21 3e 35 3a 1b 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x19,0x117358,0x11735A,0x47B5A,0x47B64,10,none,5e 5d 25 e6 01 3b 27 46 28 3c
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x17,0x11739A,0x11739E,0x47B9E,0x47BBD,31,control_0100,cd 90 60 8f 34 9b 2f dd a8 dd 06 dd 1e 22 8e dd 9c 1c de 01 30 4e 4e 53 36 38 26 1e 27 2b 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x19,0x1173F4,0x1173F6,0x47BF6,0x47C13,29,none,5e 5d 25 e6 01 3b 27 46 2a 24 5c 71 dd 39 dd 03 53 1c dd a0 65 5c dd 5e 1c de 01 20 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x17,0x11744A,0x11744E,0x47C4E,0x47C62,20,control_0100,85 1c 61 28 24 5d dd 5e 35 49 1c 1f 51 1c 38 1c 30 28 1d 3e
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x17,0x117492,0x117496,0x47C96,0x47CBC,38,control_0100,dd 47 7e 36 61 2f dd ac 43 59 52 1c dd 93 9a 2f 45 3e 22 1f 51 1c 38 1c 36 dd 69 de 58 dd be 30 c6 39 27 1e 1f 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x17,0x1174EC,0x1174F0,0x47CF0,0x47CFF,15,control_0100,41 1c 7a 2f de 0c dd 92 1e 1f 1b 1c 30 2b 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x19,0x117530,0x117532,0x47D32,0x47D48,22,none,50 8b 25 e6 01 3b 27 46 1c 3d 26 1d dd 88 de 01 2a df 61 df 61 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x19,0x11757E,0x117580,0x47D80,0x47DAF,47,none,5e 5d 25 e6 01 3d 20 55 26 37 e4 1f e6 01 14 52 30 dd 04 3e 2a 3d 1b 37 e6 01 dd 18 dd 4a 23 dd 72 74 de 0b 2f dd 3e dd e2 3a 59 21 3f 22 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x19,0x1175E0,0x1175E2,0x47DE2,0x47DF0,14,none,5e 5d 25 e6 01 de 17 98 1e 21 3b 22 6a 37
+slot5.state.bin,F/SF0B1.DAT,1.000000,0x17,0x117638,0x11763C,0x47E3C,0x47E45,9,control_0000,27 20 59 21 3e 35 3a 1b 37

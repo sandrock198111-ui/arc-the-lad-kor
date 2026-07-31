@@ -1,0 +1,40 @@
+Arc the Lad Korean patch v95 build report
+
+base_v93=ui_hud_e7_v93_s3032_speaker_separator_patch_only.zip
+base_v93_sha256=7BCA52B59459F4F71A178D1D0A22454661AD358952C5E11B5EC06B614E038845
+reference=ui_hud_e7_v74_leaf_ra_trampoline_fix_patch_only.zip  (last build that reserved the slot)
+output=ui_hud_e7_v95_tpage_slot_reservation_patch_only.zip
+output_sha256=2646E40C0543EBA95684767D97221FF01573FC9CDE0D4F981749A4B11F54AA8F
+psx_sha256=18124B10517055C5ADF707F54D23B1237F3B178361D8C27A9AEE45087E943542
+
+changed_members: PSX.EXE only
+changed_bytes: 19 in 6 words
+
+word changes (each verified byte-identical to v74):
+- 0x8016B148 / file 0x50948: AE260000 -> 0C068820   init hook   : sw a2,0x0(s1) -> jal 0x801A2080
+- 0x8016B14C / file 0x5094C: A6240004 -> 00000000   init hook   : sh a0,0x4(s1) -> nop (delay slot)
+- 0x801A2080 / file 0x87880: 00000000 -> AE260000   helper[0]   : sw a2,0x0(s1)   (displaced)
+- 0x801A2084 / file 0x87884: 00000000 -> 2484FFFF   helper[1]   : addiu a0,a0,-1  (RESERVE ONE SLOT)
+- 0x801A2088 / file 0x87888: 00000000 -> A6240004   helper[2]   : sh a0,0x4(s1)   (displaced, reduced)
+- 0x801A208C / file 0x8788C: 00000000 -> 03E00008   helper[3]   : jr ra
+
+invariants held:
+- 0x801A2090 == 0x00000000   jr-ra delay slot must stay nop
+- 0x8016B138 == 0xAFBF0020   enclosing function saves RA, so JAL is safe here
+- 0x8016B520 == 0x84C20004   glyph builder still reads the limit at object+0x04
+- 0x8016B528 == 0x00A2102A   glyph builder still gates on count < limit
+- 0x801A214C == 0x86420004   renderer still places the tpage prim at base+52*limit
+- 0x801A2204 == 0x90620029   classifier still reads V at packet 0x29 (not the height byte)
+- 0x8016B764 == 0x080688A8   injected renderer entry retained
+- 0x8016B5D8 == 0x0807F8F1   glyph-builder P6 hook retained
+
+why this is the first build with both halves correct:
+  v73/v74  reserved the slot, but flagged P6 in packet byte 0x2B, the sprite
+           height field, producing 140-pixel-tall sprites.
+  v91-v93  read V at packet 0x29 so the height is intact, but lost the slot
+           reservation, so the tpage primitive landed out of bounds.
+  v95      keeps the v92 classifier and restores the v74 reservation.
+
+static_verification=PASS
+runtime_verification=PENDING
+rollback baseline=99_backup/baselines/ui_hud_e7_v94_runtime_success_2026-07-31

@@ -1,0 +1,54 @@
+Arc the Lad Korean patch v98 build report
+
+base_v97=ui_hud_e7_v97_high_tpage_measured_patch_only.zip
+base_v97_sha256=5DCD2E995D1BB4F1100489405DD7350F3492E35A686498A55FEE644742E1D6D4
+original_reference=ui_hud_e7_v71_leaf_font_ring_help_patch_only.zip
+output=ui_hud_e7_v98_restore_object_capacity_patch_only.zip
+output_sha256=526232330287EEF6AA66A1020B2C0E472DA936CABD90DD55FFA9A31F2ADB36B3
+psx_sha256=84B51CF0AB2E959B7A1A51F9BC91DD4E9F4B6923272452C50A7AE296DDE76033
+
+changed_members: PSX.EXE only
+changed_bytes: 25 in 8 words
+
+word changes:
+- 0x8016B148 / file 0x50948: 0C068820 -> AE260000   initializer: jal 0x801A2080 -> sw a2,0x0(s1)   (hook removed)  [restores the original game code]
+- 0x8016B14C / file 0x5094C: 00000000 -> A6240004   initializer: nop           -> sh a0,0x4(s1)   (true limit stored again)  [restores the original game code]
+- 0x801A2080 / file 0x87880: AE260000 -> 00000000   helper word 0 cleared  [restores the original game code]
+- 0x801A2084 / file 0x87884: 2484FFFF -> 00000000   helper word 1 cleared (the -1)  [restores the original game code]
+- 0x801A2088 / file 0x87888: A6240004 -> 00000000   helper word 2 cleared  [restores the original game code]
+- 0x801A208C / file 0x8788C: 03E00008 -> 00000000   helper word 3 cleared  [restores the original game code]
+- 0x801A2150 / file 0x87950: 00000000 -> 8E510000   driver: nop           -> lw s1,0x0(s2)   (fills the lh load-delay slot)
+- 0x801A2168 / file 0x87968: 8E510000 -> 2463FFCC   driver: lw s1,0x0(s2) -> addiu v1,v1,-52 (52*limit becomes 52*(limit-1))
+
+effect: the text-object initializer at 0x8016B148 is byte-identical to the
+original game again, so every object keeps its full glyph capacity. The driver
+now derives the high-page tpage address from limit-1 itself, landing on the same
+final slot as before.
+
+common-path footprint after this build:
+  0x8016B148  initializer      REMOVED  (was the only change that cost capacity)
+  0x8016B764  renderer entry   retained
+  0x8016B5D8  glyph builder    retained (applies U += 40 for row-24 cells only)
+
+residual risk: if a string ever fills all `limit` slots the tpage primitive shares
+the last slot with a glyph and that glyph draws wrong. Cosmetic, object-local, and
+not the out-of-bounds write that used to freeze the game. Longest measured
+translated string is 58 slots against a 128-slot dialogue object.
+
+invariants held:
+- 0x801A214C == 0x86420004   driver still reads the limit at object+0x04
+- 0x801A2154 == 0x00021840   52*limit chain intact: sll v1,v0,1
+- 0x801A2164 == 0x00031880   52*limit chain intact: sll v1,v1,2
+- 0x801A216C == 0x00000000   load-delay nop before addu s1,s1,v1
+- 0x801A2170 == 0x02238821   addu s1,s1,v1
+- 0x801A2174 == 0x02348821   addu s1,s1,s4
+- 0x801A2194 == 0x34E7001B   v97 high-page tpage (tx=11 | ty) retained
+- 0x801A2204 == 0x90620029   v92 classifier retained (V at packet 0x29)
+- 0x8016B520 == 0x84C20004   glyph builder still reads the limit
+- 0x8016B528 == 0x00A2102A   glyph builder still gates on count < limit
+- 0x8016B764 == 0x080688A8   injected renderer entry retained
+- 0x8016B5D8 == 0x0807F8F1   glyph-builder hook retained (U += 40)
+
+static_verification=PASS
+runtime_verification=PENDING
+rollback baseline=99_backup/baselines/ui_hud_e7_v97_runtime_success_2026-07-31

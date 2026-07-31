@@ -1,7 +1,7 @@
 # Dialogue block candidate summary
 
-- Total candidates: 6908
-- High-confidence candidates: 5853
+- Total candidates: 7103
+- High-confidence candidates: 6044
 
 ## Top files
 
@@ -34,10 +34,13 @@
 | `story_progress_bulk/1/S1021.DAT` | 47 |
 | `story_progress_bulk2/1/S1021.DAT` | 47 |
 | `story_progress_bulk3_all_1/1/S1021.DAT` | 47 |
+| `story_house_s1021_all_control0000_build/1/S1021.DAT` | 46 |
+| `story_house_s1021_control0000_build/1/S1021.DAT` | 46 |
 | `7/S7028.DAT` | 41 |
 | `D/SD031.DAT` | 41 |
 | `package_story_test_23_s1072_safe_boundaries/files/7/S7028.DAT` | 41 |
 | `package_story_test_23_s1072_safe_boundaries/files/D/SD031.DAT` | 41 |
+| `story_house_d_sd031_snow_build/D/SD031.DAT` | 41 |
 | `7/S7026.DAT` | 40 |
 | `F/SF041.DAT` | 40 |
 | `package_story_test_23_s1072_safe_boundaries/files/7/S7026.DAT` | 40 |
@@ -84,9 +87,6 @@
 | `story_progress_bulk3_all_1/1/S1041.DAT` | 29 |
 | `7/S7027.DAT` | 28 |
 | `package_story_test_23_s1072_safe_boundaries/files/7/S7027.DAT` | 28 |
-| `story_s1041_build/1/S1041.DAT` | 28 |
-| `story_s1041_final_patch_files/1/S1041.DAT` | 28 |
-| `story_house_s1041_all_build/1/S1041.DAT` | 27 |
 
 ## Notes
 

@@ -1,0 +1,21 @@
+Arc the Lad Korean patch v91 build report
+
+base_v90=ui_hud_e7_v90_e2_control_p6_lifetime_fix_patch_only.zip
+base_v90_sha256=496A5F8FB72F342B656D6CDA13819C196D64D27C23BCE35EB511BCECB67C0739
+stable_v89=ui_hud_e7_v89_story_safe_book_glyph_patch_only.zip
+stable_v89_sha256=4A379BF0AA02D60E89C30E1BD26E9E884DF60AD0F9EF6FBB33537A9B396C9678
+output=ui_hud_e7_v91_v89_lifetime_yagun_slot_fix_patch_only.zip
+output_sha256=60F0D550ECE295DA771440526E7B3B251F113A32DCA25CC8381DB442B9D80027
+
+changed_members:
+- PSX.EXE: restored byte-for-byte from v89
+- 31/S3032.DAT: only 0x45100-0x4517F rewritten
+
+target_text=야군 / 만일 무슨 일이 생겨도 / 그때는 저희도 관여할 수 없습니다.
+payload_length=63
+payload_hex=E0 DA E0 C5 E6 01 E0 49 E0 6B 9C E0 E7 E0 EA 9C E0 6B E0 BD 9C E0 04 E0 16 E0 A7 E6 01 E0 29 DF 85 E0 C2 9C E0 CB DF E5 E0 A7 9C E0 F3 E0 DC E0 B5 9C DF B7 9C E0 F1 E0 5F E0 35 E0 C1 E0 60
+psx_sha256=28C5974568666C34904682A0E1009570C46730027CB228CD655C4A4BF67BA6D3
+s3032_sha256=728ECF70E9C0F44A20824D9A3142E6420DFB927D622E613879D671952FB7BB1E
+
+static_verification=PASS
+runtime_verification=PENDING

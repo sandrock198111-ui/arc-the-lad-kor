@@ -1,0 +1,30 @@
+UI guide terms v0.42 with v0.39 inherited-defect repairs
+base_zip_sha256=D5AC9441CB479F1B0B28B1732C97F52CCD284A8E73BE487AA16E41D9CC37BD78
+output_zip_sha256=0CEF485BD82D2C7C72EA4F0326D804AC07282773731CD02AF1D6DA83FCFD5EFC
+output_psx_sha256=24C004F8718AAF3A2AA760E58D42E4991724DD43A3E9BF572064F357EDF3CCD1
+output_comm_sha256=AEFEE1EDD4FB2B00DF1533C745C0E8AE3A78A96D5CD0C7302F65B2456E8626F6
+base_runtime_status=USER_ACCEPTED_V41
+story_e2_members_unchanged=true
+dynamic_control_prefixes_e1_e8_preserved=true
+virtual_glyph_prefixes=E9,EA
+lookup_entries=409
+preserved_v41_glyphs=278
+new_sparse_glyphs=131
+lookup_table=0x801A7520
+lookup_size=818
+cave_free_bytes=14
+translated_ui_records=503
+unique_ui_payloads=429
+ui_pool_free_bytes=733
+ui_pool_segment_free=2,0,4,0,2,2,2,161,560
+guide_level_overrides=equipment_description[8,20,22]
+system_level_wording_preserved=레벨 업!!|레벨이 올랐다
+battle_hud_lv=separate L and V sparse glyphs
+battle_cursor=v37 exact rectangle restored
+confirm_cancel_icons=relocated to U=180/192,V=228
+e7_v_stub=0x8019C934,size=32
+changed_psx_bytes=6144
+changed_comm_bytes=1848
+changed_comm_nibbles=3033
+changed_members=COMM.IMG,PSX.EXE
+runtime_status=UNVERIFIED_CANDIDATE

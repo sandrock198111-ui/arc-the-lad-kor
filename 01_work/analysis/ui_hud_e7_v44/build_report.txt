@@ -1,0 +1,17 @@
+version=v0.44
+base_zip=E:\korean\03_output\ui_runtime_repairs_v43_cumulative_patch_only.zip
+base_zip_sha256=ACA90EA9529C4D0000D68DC1563F5290DF8C1ABA68AB5E881FBCA103047CAF56
+output_zip=E:\korean\03_output\ui_hud_e7_v44_cumulative_patch_only.zip
+output_zip_sha256=B54EB0DD526CB0DDE09A68ABB188AD92151BFF3E49767294B0D52E6815EE664A
+output_psx_sha256=672CF62F4FA285B6D91AAD612FB3C3CD90879BBAF5E6DC5676D8E445CF1B11FD
+comm_sha256=AEFEE1EDD4FB2B00DF1533C745C0E8AE3A78A96D5CD0C7302F65B2456E8626F6
+changed_members=PSX.EXE
+changed_psx_bytes=8
+hud_lv=EA 9A EA 9B 00 via pointer 1
+hud_pointer_2=relocated empty string at 0x82168
+e7_02=U192,V228 decision icon
+e7_03=U180,V228 back icon
+e7_next=U12,V130 restored
+comm_img=byte-identical to v0.43
+deterministic_build=PASS
+runtime_status=PENDING_USER_PACKAGE_TEST

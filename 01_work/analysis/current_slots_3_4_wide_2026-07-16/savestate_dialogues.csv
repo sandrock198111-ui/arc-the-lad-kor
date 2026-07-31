@@ -1,0 +1,5 @@
+state,source_file,match_ratio,marker,ram_marker_offset,ram_payload_start,file_payload_start,end_exclusive,length,prefix_kind,payload_hex
+HASH-112DD4E8341F03C8_4.sav,23/S2061.DAT,0.922852,0x17,0x117D36,0x117D3A,0x4853A,0x48566,44,control_0000,e2 81 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+HASH-112DD4E8341F03C8_4.sav,23/S2061.DAT,0.922852,0x17,0x1180E0,0x1180E4,0x488E4,0x4891F,59,control_0000,e2 8a e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+HASH-112DD4E8341F03C8_4.sav,23/S2061.DAT,0.922852,0x19,0x1181EC,0x1181EE,0x489EE,0x48A03,21,none,e2 8c e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c
+HASH-112DD4E8341F03C8_4.sav,23/S2061.DAT,0.922852,0x17,0x11828A,0x11828E,0x48A8E,0x48AA3,21,control_0000,e2 8e e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c

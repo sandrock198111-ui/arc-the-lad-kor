@@ -1,0 +1,20 @@
+ui_hud_e7_v84 P6 sidecar BSS-boundary fix
+base=E:\korean\03_output\ui_hud_e7_v83_p6_sidecar_renderer_test_patch_only.zip
+base_sha256=CFC4B7791E3A4341D6DD39B7BE3EC8A1BBC471E31C62AD08F80CF8D0EA51D84D
+base_psx_sha256=BE241B18DAD853D3970C0877760E9FCFA1EADBEC125349EFE3391A637E289968
+output=E:\korean\03_output\ui_hud_e7_v84_p6_sidecar_bss_boundary_fix_patch_only.zip
+output_sha256=69B696B338A5C2F7727FE3F939CB7EF20D6320F2527227202CD17D4F70C28594
+startup_instruction=0x801757C0
+old_clear_start=0x801A86E8
+new_clear_start=0x801A8800
+glyph_helper=0x801A86EC
+marker_helper=0x801A8788
+marker_end=0x801A87E4
+sidecar=0x801A87F4-0x801A8800
+changed_psx_offsets=0x5AFC0,0x5AFC1
+changed_members=PSX.EXE
+all_other_v83_members_byte_identical=YES
+v83_helpers_readback=PASS
+bss_boundary_proof=PASS
+zip_readback=PASS
+runtime_verification=PENDING

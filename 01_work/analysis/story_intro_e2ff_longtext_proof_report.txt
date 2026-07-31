@@ -1,0 +1,17 @@
+1/S1071.DAT 0x478D6 inline=32/39 촌장|성스러운 일족만 들어간다.
+1/S1071.DAT 0x47932 inline=36/41 약속 지킬 거야?|정말 자유인 거야?
+1/S1071.DAT 0x4798E inline=48/55 촌장|물론이지.|먼저 시온산 봉인의 불을 꺼라.
+1/S1071.DAT 0x479FA inline=4/6 알아
+1/S1011.DAT 0x478AA inline=33/35 3천 년째 타는|시온의 불꽃...
+1/S1011.DAT 0x47902 inline=21/23 불꽃의 의미는...?
+1/S1011.DAT 0x47954 inline=19/21 신경 쓸 때가 아냐!
+1/S1011.DAT 0x4799E inline=42/42 새해엔 팔렌시아 성에서|날 데리러 와...
+1/S1011.DAT 0x479FC inline=2/36 그리고 신의 피를 잇는|일족의 딸이라는 이유로|왕자와 결혼해야 해...
+1/S1011.DAT 0x47A54 inline=11/12 절대 싫어.
+1/S1011.DAT 0x47AD2 inline=18/26 아무 일도 없잖아.
+1/S1011.DAT 0x47B3E inline=48/49 시온의 불을 껐구나!|3천 년간 날 가둔 불...
+1/S1011.DAT 0x47BB2 inline=4/5 뭐?
+external_text_bytes=71
+new_glyphs=0
+psx_sha256=7DB76EF3E8B41360A28D692D7EB56FC65F02275F34E6B3A8D71B64243347CD92
+zip_sha256=D9A1ED41CA127931572754FFABC3456331E2696F437F63294F015AF3F968975A

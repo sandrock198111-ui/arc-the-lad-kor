@@ -1,0 +1,32 @@
+Arc the Lad Korean patch v94 build report  (DIAGNOSTIC, not a release)
+
+base_v93=ui_hud_e7_v93_s3032_speaker_separator_patch_only.zip
+base_v93_sha256=7BCA52B59459F4F71A178D1D0A22454661AD358952C5E11B5EC06B614E038845
+original_reference=ui_hud_e7_v71_leaf_font_ring_help_patch_only.zip  (last build before the dual-tpage renderer)
+output=ui_hud_e7_v94_p6_path_disable_probe_patch_only.zip
+output_sha256=68B59D5BE63D87DB46678CC92D99A377B14E749ABE0ABB71663C2859B8C5EEF4
+psx_sha256=1FA2E2D117D4D9A2CE9D0AA82D626D51DCDEFEEA5A8D025E8E98252F49AA93F2
+
+changed_members: PSX.EXE only
+changed_bytes: 11 in 3 words
+
+restored to the exact v71 originals:
+- 0x8016B764 / file 0x50F64: 080688A8 -> 27BDFFD0   renderer entry: j 0x801A22A0 -> addiu sp,sp,-48
+- 0x8016B768 / file 0x50F68: 00000000 -> AFBF002C   renderer entry: nop            -> sw ra,0x2C(sp)
+- 0x8016B5D8 / file 0x50DD8: 0807F8F1 -> 90C2000E   glyph builder: j 0x801FE3C4    -> lbu v0,0xE(a2)
+
+effect: the game uses its own single-pass text renderer again. The injected
+driver, two-pass loop, marker helper, sidecar and the P6 hook in the common
+glyph builder all become unreachable. The injected code, the high-RAM helper
+image, the entry bootstrap and the row-24 lookup remain in the archive but are
+no longer used.
+
+expected regression (not under test): the 56 row-24 glyph codes render as
+garbage because the lookup still points at the high texture page.
+
+question under test: does the item name still freeze?
+  freeze gone     -> fault is inside the injected rendering path
+  freeze persists -> injected path is innocent; look elsewhere
+
+static_verification=PASS
+runtime_verification=PENDING

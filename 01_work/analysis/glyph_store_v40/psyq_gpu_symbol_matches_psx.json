@@ -1,0 +1,54 @@
+{
+  "object": "E:\\korean\\06_tools\\psyq_sdk_analysis\\extracted\\objects_psx\\SYS.OBJ",
+  "executable": "E:\\korean\\01_work\\analysis\\glyph_store_v40\\PSX.EXE",
+  "symbols": {
+    "LoadImage": {
+      "section": 61442,
+      "object_offset": 1576,
+      "size": 96,
+      "masked_bytes": 20,
+      "file_offsets": [],
+      "addresses": []
+    },
+    "LoadImage2": {
+      "section": 61442,
+      "object_offset": 10952,
+      "size": 236,
+      "masked_bytes": 84,
+      "file_offsets": [],
+      "addresses": []
+    },
+    "DrawSync": {
+      "section": 61442,
+      "object_offset": 892,
+      "size": 388,
+      "masked_bytes": 88,
+      "file_offsets": [],
+      "addresses": []
+    },
+    "MoveImage": {
+      "section": 61442,
+      "object_offset": 1768,
+      "size": 184,
+      "masked_bytes": 32,
+      "file_offsets": [],
+      "addresses": []
+    },
+    "ClearImage": {
+      "section": 61442,
+      "object_offset": 1280,
+      "size": 144,
+      "masked_bytes": 20,
+      "file_offsets": [],
+      "addresses": []
+    },
+    "StoreImage": {
+      "section": 61442,
+      "object_offset": 1672,
+      "size": 96,
+      "masked_bytes": 20,
+      "file_offsets": [],
+      "addresses": []
+    }
+  }
+}

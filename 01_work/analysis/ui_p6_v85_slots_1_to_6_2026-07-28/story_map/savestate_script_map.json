@@ -1,0 +1,182 @@
+[
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-FE27CFD4E73EF39_1.sav",
+    "best_match": {
+      "file": "6/S6054.DAT",
+      "equal_bytes": 1786,
+      "compared_bytes": 1792,
+      "ratio": 0.9966517857142857
+    },
+    "top_matches": [
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "21/S2012.DAT",
+        "equal_bytes": 1655,
+        "compared_bytes": 1792,
+        "ratio": 0.9235491071428571
+      },
+      {
+        "file": "1/S1031.DAT",
+        "equal_bytes": 1641,
+        "compared_bytes": 1792,
+        "ratio": 0.9157366071428571
+      },
+      {
+        "file": "D/SD012.DAT",
+        "equal_bytes": 1549,
+        "compared_bytes": 1792,
+        "ratio": 0.8643973214285714
+      },
+      {
+        "file": "F/SF0D1.DAT",
+        "equal_bytes": 1545,
+        "compared_bytes": 1792,
+        "ratio": 0.8621651785714286
+      },
+      {
+        "file": "23/S2081.DAT",
+        "equal_bytes": 1353,
+        "compared_bytes": 1792,
+        "ratio": 0.7550223214285714
+      },
+      {
+        "file": "4/S4041.DAT",
+        "equal_bytes": 1345,
+        "compared_bytes": 1792,
+        "ratio": 0.7505580357142857
+      },
+      {
+        "file": "23/S2082.DAT",
+        "equal_bytes": 1307,
+        "compared_bytes": 1792,
+        "ratio": 0.7293526785714286
+      }
+    ],
+    "dialogues": []
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-FE27CFD4E73EF39_2.sav",
+    "best_match": {
+      "file": "6/S6054.DAT",
+      "equal_bytes": 1786,
+      "compared_bytes": 1792,
+      "ratio": 0.9966517857142857
+    },
+    "top_matches": [
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "21/S2012.DAT",
+        "equal_bytes": 1655,
+        "compared_bytes": 1792,
+        "ratio": 0.9235491071428571
+      },
+      {
+        "file": "1/S1031.DAT",
+        "equal_bytes": 1641,
+        "compared_bytes": 1792,
+        "ratio": 0.9157366071428571
+      },
+      {
+        "file": "D/SD012.DAT",
+        "equal_bytes": 1549,
+        "compared_bytes": 1792,
+        "ratio": 0.8643973214285714
+      },
+      {
+        "file": "F/SF0D1.DAT",
+        "equal_bytes": 1545,
+        "compared_bytes": 1792,
+        "ratio": 0.8621651785714286
+      },
+      {
+        "file": "23/S2081.DAT",
+        "equal_bytes": 1353,
+        "compared_bytes": 1792,
+        "ratio": 0.7550223214285714
+      },
+      {
+        "file": "4/S4041.DAT",
+        "equal_bytes": 1345,
+        "compared_bytes": 1792,
+        "ratio": 0.7505580357142857
+      },
+      {
+        "file": "23/S2082.DAT",
+        "equal_bytes": 1307,
+        "compared_bytes": 1792,
+        "ratio": 0.7293526785714286
+      }
+    ],
+    "dialogues": []
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-FE27CFD4E73EF39_3.sav",
+    "best_match": {
+      "file": "21/S2021.DAT",
+      "equal_bytes": 1792,
+      "compared_bytes": 1792,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "21/S2021.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 892,
+        "compared_bytes": 1792,
+        "ratio": 0.49776785714285715
+      },
+      {
+        "file": "1/S1031.DAT",
+        "equal_bytes": 864,
+        "compared_bytes": 1792,
+        "ratio": 0.48214285714285715
+      },
+      {
+        "file": "21/S2012.DAT",
+        "equal_bytes": 864,
+        "compared_bytes": 1792,
+        "ratio": 0.48214285714285715
+      },
+      {
+        "file": "F/SF0D1.DAT",
+        "equal_bytes": 833,
+        "compared_bytes": 1792,
+        "ratio": 0.46484375
+      },
+      {
+        "file": "D/SD012.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "1/S1051.DAT",
+        "equal_bytes": 805,
+        "compared_bytes": 1792,
+        "ratio": 0.44921875
+      },
+      {
+        "file": "23/S2061.DAT",
+        "equal_bytes": 797,
+        "compared_bytes": 1792,
+        "ratio": 0.4447544642857143
+      }
+    ],
+    "dialogues": []
+  }
+]

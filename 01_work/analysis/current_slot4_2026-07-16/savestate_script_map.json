@@ -1,0 +1,74 @@
+[
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-112DD4E8341F03C8_4.sav",
+    "best_match": {
+      "file": "23/S2061.DAT",
+      "equal_bytes": 1792,
+      "compared_bytes": 1792,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "23/S2061.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "7/S7027.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/23/S2061.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/7/S7027.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "31/S3041.DAT",
+        "equal_bytes": 894,
+        "compared_bytes": 1792,
+        "ratio": 0.49888392857142855
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 894,
+        "compared_bytes": 1792,
+        "ratio": 0.49888392857142855
+      },
+      {
+        "file": "B/SB031.DAT",
+        "equal_bytes": 894,
+        "compared_bytes": 1792,
+        "ratio": 0.49888392857142855
+      },
+      {
+        "file": "B/SB061.DAT",
+        "equal_bytes": 894,
+        "compared_bytes": 1792,
+        "ratio": 0.49888392857142855
+      },
+      {
+        "file": "C1/SC071.DAT",
+        "equal_bytes": 894,
+        "compared_bytes": 1792,
+        "ratio": 0.49888392857142855
+      },
+      {
+        "file": "C1/SC072.DAT",
+        "equal_bytes": 894,
+        "compared_bytes": 1792,
+        "ratio": 0.49888392857142855
+      }
+    ],
+    "dialogues": []
+  }
+]

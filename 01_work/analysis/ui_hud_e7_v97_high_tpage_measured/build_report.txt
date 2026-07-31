@@ -1,0 +1,37 @@
+Arc the Lad Korean patch v97 build report
+
+base_v96=ui_hud_e7_v96_high_tpage_x_fix_patch_only.zip
+base_v96_sha256=149622DBF9227EE3B8433C3AC8AB1F3E3A61A9558F2FFD9787187A2CED072650
+output=ui_hud_e7_v97_high_tpage_measured_patch_only.zip
+output_sha256=5DCD2E995D1BB4F1100489405DD7350F3492E35A686498A55FEE644742E1D6D4
+psx_sha256=8A243772504686621DBEE31D1D360F203D16F586D0F1AC807A3381144E59ED77
+
+changed_members: PSX.EXE only
+changed_bytes: 1 in 1 word
+- 0x801A2194 / file 0x87994: 34E70016 -> 34E7001B   ori a3,a3,0x001B
+
+measured at build time from COMM.IMG (not taken from notes):
+  strip geometry     : 512 rows x 896 bytes, left edge VRAM x4bpp 1280
+  atlas row 24 y     : 288..299
+  P6 glyph pixels at : x4bpp 2856..3033  (178 px, 14 cells)
+  texture page       : 11  (starts at x4bpp 2816)
+  U offset           : 40  == the helper's addiu a3,a3,40
+  tpage immediate    : tx 11 | ty bit 0x10 = 0x1B
+
+why v96 was wrong: codex_notes records the P6 area as x=1576..1755 and calls it
+absolute, but those are strip-relative. 1576 + 1280 = 2856, the measured start.
+v96 therefore selected texture page 6 instead of 11.
+
+invariants held:
+- 0x801A2190 == 0x30E7FFE0   andi keeps abr and colour depth from the base tpage
+- 0x801A218C == 0x94E72FFC   base tpage still loaded from 0x801F2FFC
+- 0x801A8738 == 0x24E70028   helper still applies U += 40
+- 0x8016B148 == 0x0C068820   v95 slot reservation retained
+- 0x801A2084 == 0x2484FFFF   v95 limit-1 retained
+- 0x801A2204 == 0x90620029   v92 classifier retained (V at packet 0x29)
+- 0x8016B764 == 0x080688A8   injected renderer entry retained
+- 0x8016B5D8 == 0x0807F8F1   glyph-builder hook retained
+
+static_verification=PASS
+runtime_verification=PENDING
+rollback baseline=99_backup/baselines/ui_hud_e7_v94_runtime_success_2026-07-31

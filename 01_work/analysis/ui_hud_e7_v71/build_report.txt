@@ -1,0 +1,16 @@
+ui_hud_e7_v71 build report
+base=E:\korean\03_output\ui_hud_e7_v70_leaf_names_ring_menu_patch_only.zip
+base_sha256=5E6D34D1B016AEAD61806B654F15E3E25E672945F43838FA3D09E16023D6EAB5
+output=E:\korean\03_output\ui_hud_e7_v71_leaf_font_ring_help_patch_only.zip
+output_sha256=C9FE5D3F3521748CDD53A43A7A47895CC1747928D2804A9502D877B4D47A250D
+changed_members=PSX.EXE,COMM.IMG
+unchanged_members=all DAT members
+leaf_virtual_code=E9 75
+leaf_physical_index=1356
+leaf_position=row16,column3,plane0
+leaf_renderer=Gulim 12px threshold192
+help_payload_bytes=18
+help_slot_bytes=32
+help_free_bytes=13
+static_readback=PASS
+runtime_verification=PENDING

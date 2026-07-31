@@ -728,7 +728,7 @@ v0.73 leaf-function RA failure - 2026-07-22
 - The common glyph builder at `0x8016B518` is a leaf function and does not save RA. Never insert `JAL` into this function unless the original caller RA is explicitly preserved.
 - v0.73 hooked `0x8016B5D8` with `JAL 0x801A2094`. The helper returned to `0x8016B5E0`, but the glyph builder later executed its original `JR RA` with RA still equal to `0x8016B5E0`, creating an infinite loop through its own tail.
 - DuckStation slot `HASH-DF8E4CEB26B8ECFB_1.sav` proves the failure: PC `0x8016B60C`, RA `0x8016B5E0`. The injected cave and all three v0.73 hooks are present intact in RAM, so this is not stale media or cave overwrite.
-- For this savestate format, PS1 RAM begins at decompressed-state offset `0x1A62`; the older `0x1262` assumption is wrong for this file. Confirm the offset by matching several independent PSX.EXE signatures before using it on another state format.
+- The earlier `0x1A62` RAM-start claim for this state family was later disproved by an exact PSX.EXE payload-signature audit. For the latest inspected states, PS1 RAM begins at `0x10CA62`. Always rediscover or validate the boundary per state format.
 - The safe trampoline is `J 0x801A2094` at the hook and `J 0x8016B5E0` at the helper tail. Plain `J` preserves the caller RA while retaining the displaced `LBU` and high-page flag logic.
 - v0.74 applies only those two instruction-word repairs over exact v0.73. Runtime acceptance is still required; retain v0.71 as rollback.
 - Do not use the captured v0.73 slot as a direct v0.74 runtime test. DuckStation savestates restore executable RAM, so loading that slot restores the bad v0.73 hook and helper even from a v0.74 disc. Use a cold boot/memory-card route or create a separately repaired savestate copy.
@@ -775,8 +775,8 @@ P6 high-RAM helper and InitHeap collision - 2026-07-29
 - Do not solve this by moving the helper into the old EXE-tail BSS, low-page texture cells, or observed stack space. Those approaches were already rejected.
 
 Current DuckStation savestate RAM layout - 2026-07-29
-- Do not use the older hard-coded decompressed offset `0x1262` for current states.
-- Pure 2 MiB PS1 RAM begins at decompressed offset `0x1A62` in the inspected current states. This was cross-checked with multiple live PSX RAM signatures.
+- Do not use the older hard-coded decompressed offsets `0x1262` or `0x1A62` for the latest inspected states.
+- Pure 2 MiB PS1 RAM begins at decompressed offset `0x10CA62`. The exact PSX.EXE payload beginning at file offset `0x800` appears at state offset `0x11CA62`, corresponding to load address `0x00010000`.
 - State-analysis scripts must discover or validate the RAM boundary from signatures before reading pointers or sidecars.
 
 P6 sidecar lifetime across interleaved UI strings - 2026-07-29
@@ -789,13 +789,111 @@ Story and UI glyph namespaces must remain separate - 2026-07-29
 - The S3032 story E2 encoder must use only the story charmap and normal/DD-E0 story glyph codes.
 - Do not fall back to `ui_glyph_store_v42_map.csv` while encoding story text. UI virtual codes in the E9/EA namespace are not valid story glyphs and can be interpreted as controls.
 - v88 encoded `책` as UI code `EA 6F`; runtime stopped exactly at that boundary after displaying `저희는`.
-- Story code `E0 2D`, formerly assigned to `듯`, has zero occurrences in all audited DAT story regions and is locally reassigned to `책` in v89.
+- Story code `E0 2D` renders as `듯` in the current runtime. The v89 attempt to reuse it as `책` did not provide a safe runtime glyph and caused `책임질` to display as `듯임질`. Do not use `E0 2D` for `책`.
 - `야군` is the correct Korean transcription of character name `ヤクン`; it is not a corrupted form of `장군`.
 
-E2 secondary-string controls and P6 state lifetime - 2026-07-29
-- In the S3032 E2 secondary-string parser, byte pair `E6 01` is rendered as visible glyph data. It must not be used as a line-break control in this field.
-- Slot 5 captured sidecar bytes `B4 1D 1F 80 12 00 00 00 00 00 00 00` at physical RAM `0x1FE4CC`. The active pointer is `0x801F1DB4`, bitmap bit `0x12` remains set, and the same text object's current glyph index is zero.
-- This proves the expanded P6 store is present and readable, but the single active record can become stale when the same text object starts a new non-P6 ring string.
-- Correct lifetime rule: preserve P6 state for unrelated text objects; preserve it while the same P6 string advances; clear only the active pointer when the same object starts a non-P6 string at glyph index zero.
-- v90 implements that rule in glyph helper `0x801FE3C4-0x801FE473`. The compact marker helper occupies `0x801FE474-0x801FE4CB`, and the sidecar remains at `0x801FE4CC`.
-- These addresses fit the existing high-RAM reservation and do not change the `0x114` bootstrap copy size, heap boundary, asset placement, `COMM.IMG`, or ISO layout.
+S3032 E2 slot mapping and v90 rejection - 2026-07-29
+- For the loaded S3032 block, `RAM offset = DAT file offset - 0x3C000`.
+- File calls `0x47994`, `0x479EE`, and `0x47A40` reference E2 IDs 81, 82, and 83. Their 128-byte slots are `0x45080`, `0x45100`, and `0x45180`, mapping to RAM `0x9080`, `0x9100`, and `0x9180`.
+- SUPERSEDED 2026-07-31 by "S3032 dialogue separators and the S2021 reference convention". `E6 01` is NOT a line break in these payloads; runtime screenshots show it rendering as a garbled glyph. Do not reintroduce it.
+- The v90 same-object/non-P6 sidecar clear was also wrong. Item-name rendering reuses the same object; clearing at index zero removed a valid pending bitmap and produced a blank item-name window followed by a freeze.
+- Latest slot 5 showed pointer `0x801F1DB4`, bitmap `0x10`, index zero under v90; the corresponding v89 state retained bitmap `0x12`. Restore the v89 helper before further lifetime experiments.
+- v91 therefore restores v89 `PSX.EXE` and changes only S3032 E2 slot 2. Do not promote it until runtime verifies both item selection and dialogue advancement.
+
+P6 pass classification must be per packet, not global state - 2026-07-31
+- The glyph packet array is a 52-byte-stride array shared by the common glyph builder at `0x8016B518` and the E7 icon builder at `0x8016B668`. Both write U at `+0x28`, V at `+0x29`, W at `+0x2A`, H at `+0x2B`, X at `+0x2C`, Y at `+0x2E`, and CLUT at `+0x30`. Bytes `+0x32` and `+0x33` are spare.
+- Each packet also carries two 20-byte `SPRT` primitives at `+0x00` and `+0x14`; the driver selects one with `s4 = framebuffer_parity * 20`.
+- `SPRT` has no tpage field. High-page selection is a GPU state change: the driver at `0x801A2188` reads the base tpage from `0x801F2FFC`, masks with `0xFFE0`, sets bit `0x10` (ty=256), and builds a `DR_TPAGE`. Rendering is therefore two passes over the same array, and the marker value is only a pass discriminator, not a tpage value.
+- The v83-v91 marker helper returned 0 whenever its single stored text-state pointer differed from the caller's. With several concurrent text objects, every glyph of a non-active object was classified low-page and drawn from the wrong texture page. This is the mechanism behind the malformed item-name glyphs.
+- Do not try to fix this by changing when the sidecar is cleared. v88 (never clear) and v90 (clear on same object) both failed because one global slot cannot describe N concurrent text objects.
+- The classification input is already per glyph. `0x8016B5A8` stores `V = row * 12` with `sb`, so row 24 truncates to 32, and `24*12 - 256 = 32` is simultaneously the correct within-high-page V. Among valid rows 0-42, only row 24 yields V == 32.
+- v92 therefore tests `packet[0x29] == 32` inline and uses pass tags 0 and 1 instead of 0 and `0x80`, which avoids a shift instruction and keeps the loop body at its original addresses.
+- Do not generalize this to `V % 12 != 0`. E7 icons use V = 130, which is not a multiple of 12 and would be misclassified as high page. Exact comparison against 32 is safe because 130 and 228 are both different from 32.
+- The `U += 40` applied by the glyph helper is required for P6 cells and must be preserved by any replacement.
+- To exceed row 24's 84 P6 slots, do not add more rows to an equality test. Have the builder write a flag into spare packet byte `+0x32` and have the renderer read that instead; this stays stateless and works for any row.
+
+S3032 dialogue separators and the S2021 reference convention - 2026-07-31
+- The working reference for a Korean dialogue payload is `21/S2021.DAT` at `0x45E00`: `E0 9C E0 9D DF 80 9C E0 68 ...` decoding to `아크: 우리가 ...`.
+- That proven payload contains no `E6 01` anywhere. The speaker separator is the ordinary colon glyph `DF 80` followed by space `9C`, and line breaks are produced by the game's automatic word wrap, not by any control code.
+- The four S3032 E2 dialogue blocks at `0x45000`, `0x45080`, `0x45100`, and `0x45180` each carried two `E6 01` codes. Runtime screenshots of blocks 1-3 show a garbled glyph at exactly those positions while every Korean syllable around them renders correctly and the scene advances normally.
+- `E6 01` does appear in the original Japanese script region, for example at `0x47998`. Copying it into a Korean E2 payload is invalid; it resolves to no valid glyph there.
+- The earlier claim that removing `E6 01` in v90 concatenated the lines is not supported. The lines were already continuous, and the "still malformed" v90 observation was made on blocks 1-2, which v90 never modified. v90 changed block 3 only.
+- Diagnostic rule: before judging a dialogue repair, confirm that the on-screen text is the block that was actually edited. Blocks 1-3 all begin with `야군` and are easy to confuse.
+- Dialogue windows come in three kinds: named speaker, speakerless, and portrait-plus-name. Only a named-speaker block takes the `DF 80 9C` colon separator. Block 4 of S3032 is speakerless, so both of its separators become plain spaces.
+- The trailing byte of each 128-byte block is not a hard capacity limit. Block 3 measures 35 parser units against a trailing byte of `0x20` (32) and still renders correctly at runtime. Do not treat that byte as an allocation bound.
+- Colon `DF 80` originates from the accepted `intro E2 expanded v0.1` work, so it is a runtime-proven story glyph rather than a new assignment.
+
+Injected renderer entry point and the common-path violation - 2026-07-31
+- The original game text renderer begins at `0x8016B764`. v73 replaced its first two instructions with `j 0x801A22A0`, which is the entry of the injected two-pass driver.
+- v70, v71 and v72 hold the untouched originals: `0x8016B764 = 27BDFFD0` (`addiu sp,sp,-48`), `0x8016B768 = AFBF002C` (`sw ra,0x2C(sp)`), and `0x8016B5D8 = 90C2000E` (`lbu v0,0xE(a2)`). The whole injected region `0x801A20B0-0x801A22E0` is zero in those builds.
+- Restoring those three words is the complete off-switch for the P6 rendering path. The injected driver, two-pass loop, marker helper and sidecar all become unreachable.
+- The P6 glyph hook at `0x8016B5D8` sits 192 bytes inside the COMMON glyph sprite builder `0x8016B518`, which has five call sites and serves dialogue, item names, load/save screens, HUD and the E7 icon builder alike. The E7 icon builder writes the same 52-byte packets with the same U/V fields.
+- This violates the design principle recorded when the separate storage was approved: only E2 expanded dialogue may use the new renderer, and the common text objects, sizes, terminators, pointers and rendering code must not be modified. Item names are not E2 dialogue yet they use 56 row-24 glyph codes, so they pass through the hooked common builder.
+- This also explains the historical symptom migration, where repairing dialogue progress broke the transition screen and repairing that broke the load screen.
+- v74 classified P6 membership by setting bit `0x80` inside packet byte `0x2B`, which is the sprite HEIGHT field. The renderer copies that byte straight into the SPRT height, so a flagged glyph asked the GPU for a 140-pixel-tall sprite. Do not reuse packet `0x2B` for flags.
+
+P6 storage location is already runtime-validated - 2026-07-31
+- The v78/v79/v80 probe series wrote distinguishable test patterns into three candidate VRAM regions and checked them on real hardware paths.
+- P3-H contaminated the top of the load screen and P5-C contaminated the Sony screen; both are rejected.
+- P6-D passed the Sony screen, title, load screen, field, menus, dialogue, battle and the red ARC transition with no contamination.
+- Therefore the question of whether a separate glyph store is possible is already answered yes. The unresolved part is the rendering plumbing, not the storage.
+- Do not treat glyph-store expansion or the P6 location as candidates for abandonment. The safe low-page area (rows 14-20) holds about 348 glyphs and is full, current translated text already needs 643 distinct syllables, and an unabridged script will need far more.
+
+Item-name freeze is not an E6 misparse - 2026-07-31
+- All 503 UI and item strings listed in `05_docs/ui_full_v42.csv` were decoded end to end. They contain zero control bytes in the `0xE2-0xE8` range and zero codes that index past the 409-entry lookup table.
+- The same scan found 128 high-page glyph occurrences across 56 distinct virtual codes, and every one resolves to physical row 24. A `V == 32` test therefore covers exactly the P6 set in the current build.
+- `05_docs/ui_glyph_store_v42_map.csv` is stale. It still records rows 32, 38 and 39 for 잎 책 탄 테 폴; the live EXE lookup was repacked to row 24 by v86.
+
+COMM.IMG is a raw VRAM strip - measured 2026-07-31
+- `COMM.IMG` is 458,752 bytes = 512 rows of 896 bytes, i.e. a 448 x 512 16bpp VRAM strip covering VRAM x4bpp 1280..3070, which is texture pages 5 through 11.
+- Matching COMM.IMG content against a savestate gives `state_offset = 0x202058 + (o // 896) * 2048 + (o % 896)`. COMM rows map 1:1 onto VRAM rows; three independent probes matched exactly.
+- The strip's left edge is VRAM x4bpp 1280, the tpage 5 boundary. Confirmed by decoding a live packet: the U=180 V=180 cell at x = 1280 + 180, y = 180 contains a clean 12x12 Hangul bitmap.
+- Each 4bpp nibble holds four independent 1-bit glyphs. To inspect a glyph, isolate one bitplane; ORing all four looks like noise and will be mistaken for corruption.
+
+The recorded P6 coordinates are strip-relative, not absolute - 2026-07-31
+- `codex_notes` records the P6 area as "absolute texture area x=1576..1755". Those numbers are relative to the COMM.IMG strip, not absolute VRAM.
+- Measured by diffing v85 against the current COMM.IMG, the v86 repack wrote the 57 glyphs at y = 288..298, x4bpp 2856..3033, and the destination was blank beforehand. 1576 + 1280 = 2856.
+- x4bpp 2856 lies in texture page 11, which starts at 2816. 2856 - 2816 = 40, exactly the `addiu a3,a3,40` the glyph helper applies at `0x801FE410`. The U correction and the page number are two views of the same offset.
+- Therefore the high-page tpage immediate is tx 11 plus the ty bit: `(base & 0xFFE0) | 0x1B`. v96 used `0x16` (tx 6) because it read the recorded numbers as absolute, and the sampler landed on unrelated texture data.
+- Always measure a VRAM destination from the archives. A recorded coordinate whose frame of reference is not stated must be re-derived before it is used in a hook.
+
+High-page tpage arithmetic - 2026-07-31
+- For 4bpp, texture page N begins at VRAM x4bpp N*256. The tpage word holds tx in bits 0-3, ty in bit 4, abr in bits 5-6 and colour depth in bits 7-8.
+- `andi a3,a3,0xFFE0` clears tx as well as ty. Preserving abr and colour depth while replacing both tx and ty is intentional, but the replacement must supply tx, not only the ty bit.
+- The base tpage at `0x801F2FFC` is `0x0005` in 107 of 108 inspected savestates, so low-page glyphs live in page 5 and P6 in page 11. P6 pixels sit at a fixed VRAM location, so the high-page tx must be a constant and must not be derived as base+1.
+
+Text-object struct is exactly 68 bytes with no spare room - 2026-07-31
+- The initializer at `0x8016B134` takes a0 = slot limit, a1 = object address, a2 = packet base. It has 29 call sites but only four distinct object addresses: `0x801EFFBC` (limit 32), `0x801F1DB4` (16), `0x801F9D44` (128, one caller uses 64) and `0x801F9D88`.
+- `0x801F9D44` and `0x801F9D88` are 68 bytes apart, so the struct is exactly 68 bytes.
+- The initializer fills header fields `0x00-0x10`, then the loop at `0x8016B178` starts at s0 = 44 and steps by 12 while s0 < 68, building two 12-byte low-page `DR_TPAGE` primitives at `+44` and `+56`. Bytes 0..67 are therefore fully used.
+- Conclusion: the two existing tpage slots are already committed to the low page, and the struct cannot hold two more for the high page. Do not plan on extending it.
+- Memory layout per text object is `[packet array of limit*52 bytes][68-byte header]`, verified three times: `0x801EFC9C + 32*52 = 0x801F031C`, `0x801F0798 + 32*52 = 0x801F0E18`, `0x801F1A74 + 16*52 = 0x801F1DB4`. This is why writing at `base + 52*limit` landed exactly on the next object's header and froze the game.
+
+Reserve the tpage slot in the renderer, not in the initializer - 2026-07-31
+- v95 reserved the final packet slot by hooking the initializer and storing `limit - 1`. Correct, but global: every text object loses one glyph slot, so a string that exactly fills its buffer loses its last character.
+- v98 moves the subtraction into the injected driver instead. The initializer is byte-identical to the original game again, and the driver computes `base + 52*(limit-1) + parity*20` itself. Both land on the same final slot.
+- The driver rewrite is two words. The packet-base load moves up into the load-delay slot after `lh v0,0x4(s2)`, freeing its old slot for `addiu v1,v1,-52`:
+    `0x801A2150` nop -> `lw s1,0x0(s2)`
+    `0x801A2168` `lw s1,0x0(s2)` -> `addiu v1,v1,-52`
+- Residual risk is now cosmetic and object-local: if a string fills all `limit` slots, the tpage shares the last slot with a glyph and that glyph draws wrong. It is no longer an out-of-bounds write.
+- Longest translated string measured across `05_docs` is 58 slots, against a 128-slot dialogue object.
+
+Terminology reference and its limits - 2026-07-31
+- The scanned guidebook under `05_docs/참고사항/공략본/` is GAME MAGAZINE pp.88-96. Page 4 lists items and status effects, page 10 accessories and monsters, pages 5-8 the per-character skill tables, page 3 the stat names, pages 1-2 places and characters.
+- Pages 4 and 10 print the Japanese original beside each Korean term, so those two tables are usable as a verified bilingual glossary. The skill tables on pages 5-8 do not, and they mostly transliterate the kanji instead of translating it.
+- Reliability by category: items, accessories, stats, status effects and places are strong; character names are weaker because the guidebook uses non-standard transliteration; skill names are the weakest.
+- Do not treat the guidebook as an authority. It is a 1990s magazine translation and it misreads the source in places. Confirmed misreadings: `幻のこて` rendered as 손끝 when 小手 is a forearm guard, `目つぶしの草` rendered as 모래 풀 when 目つぶし means blinding, `いやしのたてごと` rendered as 거문고 when 竪琴 is a harp, `荒獅子太鼓` rendered as 태고 when 太鼓 is simply a drum.
+- Ruling order for terminology: source accuracy first, then consistency for proper nouns already used across the script, then common Korean JRPG usage when both readings are accurate.
+- Glyph availability is not a reason to choose a word. Adopting every guidebook term would cost 13 new glyphs against 27 free slots on atlas row 24. Choose the wording on merit and add the glyph if the build reports it missing.
+- The full decision record with per-term rulings is `05_docs/terminology_decisions.csv`, generated by `02_scripts/build_reference_glossary.py`. 134 terms: 29 already agree, 13 keep the current patch wording, 4 adopt the guidebook, 88 are guidebook-only terms not yet in the UI table.
+- The four adopted from the guidebook are pure de-abbreviations that need no new glyphs: `回復果物` 회복 과실, `すばやさの薬` 민첩성의 약, `復活の薬` 부활의 약, `いのちの木の実` 생명나무의 열매.
+
+Pending terminology change, deferred until regression testing completes - 2026-07-31
+- Five UI strings are agreed but intentionally NOT applied yet. They wait until v98 has been checked over a wide play range, so that a terminology build does not add a variable on top of an only partly verified renderer.
+- `回復果物` 회복 열매 -> 회복 과실
+- `みなぎる果実` 넘치는 열매 -> 넘치는 과실
+- `すばやさの薬` 민첩의 약 -> 민첩성의 약
+- `復活の薬` 부활약 -> 부활의 약
+- `いのちの木の実` 생명의 열매 -> 생명나무의 열매
+- None of these need a new glyph, so the change is string replacement inside `PSX.EXE` only.
+- Rule established while deciding them: the original distinguishes 果実/果物 from 実, and the translation now follows it. 果実/果物 -> 과실, 実 -> 열매, 葉 -> 잎, 泉 -> 샘. A full scan of the UI table found only these two entries had flattened the distinction; every 実, 葉 and 泉 entry was already correct.

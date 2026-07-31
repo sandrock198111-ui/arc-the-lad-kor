@@ -655,3 +655,71 @@
 - Built `03_output/ui_hud_e7_v90_e2_control_p6_lifetime_fix_patch_only.zip`, SHA256 `496A5F8FB72F342B656D6CDA13819C196D64D27C23BCE35EB511BCECB67C0739`.
 - Relative to v89, only `PSX.EXE` and `31/S3032.DAT` change. `COMM.IMG` and every other archive member remain byte-identical.
 - Static and deterministic verification passed. Runtime verification is pending, so v90 is not yet the accepted baseline.
+
+2026-07-29 v91 v89 lifetime restore and Yagun slot repair candidate:
+- Rejected v90 after runtime testing: selecting the previously malformed item produced a blank name window and froze the game, while the Yagun office line still rendered malformed text.
+- Added `02_scripts/build_ui_hud_e7_v91_v89_lifetime_yagun_slot_fix.py`.
+- Restored `PSX.EXE` byte-for-byte from v89, removing the v90 same-object/non-P6 sidecar clear that erased a valid pending item-name bitmap.
+- Rebuilt only S3032 E2 slot 2 at `0x45100-0x4517F`, preserving its `E6 01` line breaks and replacing the collided `책임질` wording with `그때는 저희도 관여할 수 없습니다.`.
+- Built `03_output/ui_hud_e7_v91_v89_lifetime_yagun_slot_fix_patch_only.zip`, SHA256 `60F0D550ECE295DA771440526E7B3B251F113A32DCA25CC8381DB442B9D80027`.
+- Relative to v90, only `PSX.EXE` and `31/S3032.DAT` change. Static, deterministic, member-order, and ZIP-integrity verification passed. Runtime verification is pending, so v91 is not yet the accepted baseline.
+
+2026-07-31 v92 stateless P6 pass classifier candidate:
+- Added `02_scripts/build_ui_hud_e7_v92_stateless_p6_pass_classifier.py`, which requires the exact v91 input ZIP and verifies eight invariant words plus five source words before editing.
+- Diagnosed the recurring malformed high-page glyphs as a data-structure defect: the P6 marker helper keys its bitmap to one global text-state pointer, so glyphs belonging to any second concurrent text object were classified low-page and rendered from the wrong texture page.
+- Replaced the helper call at `0x801A2204` with an inline per-packet test `packet[0x29] == 32`, which is exactly equivalent to the helper's `row == 24` classification because the builder stores `V = row * 12` with `sb` and only row 24 truncates to 32.
+- Changed the pass-1 tag at `0x801A2140` from `0x80` to `1` so the comparison needs no shift. This keeps `addu a1,v1,s4` at `0x801A2218` as the branch delay slot and leaves the entire loop body at its original addresses.
+- Deliberately retained the glyph-builder hook, the 276-byte high-RAM helper image, the entry bootstrap, and the InitHeap reservation. The helper still applies `U += 40` for P6 cells; only its sidecar writes become unread.
+- Built `03_output/ui_hud_e7_v92_stateless_p6_pass_classifier_patch_only.zip`, SHA256 `19768F72D6EC84016787909BA982C2D5E3014AD14770B0771BEB7446D9F0040D`.
+- Relative to v91, only `PSX.EXE` changes, by exactly 15 bytes in five words. All 78 other archive members are byte-identical.
+- Static, deterministic, disassembly-readback, member-order, and ZIP-integrity verification passed. Runtime verification is pending, so v92 is not yet the accepted baseline.
+
+2026-07-31 v93 S3032 speaker-separator repair:
+- Added `02_scripts/build_ui_hud_e7_v93_s3032_speaker_separator.py`, which requires the exact v92 input ZIP and asserts the `21/S2021.DAT` reference payload before editing.
+- Identified the garbled glyph in the Yagun office dialogue as the `E6 01` code embedded in all four S3032 E2 blocks. The runtime-proven convention in `21/S2021.DAT` at `0x45E00` uses colon `DF 80` plus space `9C` and contains no `E6 01`.
+- Replaced the separator after each speaker name with `DF 80 9C` and every remaining separator with `9C`. Block 4 is a speakerless window, so both of its separators became spaces.
+- Performed surgical byte replacement only. No character was re-encoded, and each block's trailing byte was preserved exactly.
+- Corrected the superseded `codex_notes.txt` claim that `E6 01` is a required line break in these payloads.
+- Built `03_output/ui_hud_e7_v93_s3032_speaker_separator_patch_only.zip`, SHA256 `7BCA52B59459F4F71A178D1D0A22454661AD358952C5E11B5EC06B614E038845`.
+- Relative to v92, only `31/S3032.DAT` changes, by 100 bytes confined to the four dialogue blocks. Runtime verification is pending.
+
+2026-07-31 v94 P6 rendering-path disable probe (diagnostic):
+- Added `02_scripts/build_ui_hud_e7_v94_p6_path_disable_probe.py`, which requires the exact v93 input ZIP and validates every restored word against the v71 archive before writing.
+- Located the injected renderer entry: v73 replaced the original prologue of `0x8016B764` with `j 0x801A22A0`. Restoring `0x8016B764`, `0x8016B768` and the glyph-builder hook at `0x8016B5D8` to their exact v71 values is the complete off-switch for the P6 path.
+- Established that the P6 hook sits inside the COMMON glyph builder `0x8016B518`, which has five call sites and is shared by dialogue, item names, load/save screens, HUD and E7 icons. This violates the design principle under which the separate storage was approved.
+- Built `03_output/ui_hud_e7_v94_p6_path_disable_probe_patch_only.zip`, SHA256 `68B59D5BE63D87DB46678CC92D99A377B14E749ABE0ABB71663C2859B8C5EEF4`.
+- Relative to v93 only `PSX.EXE` changes, by 11 bytes in three words. The injected code, high-RAM helper, entry bootstrap and row-24 lookup remain but are unreachable.
+- This is a diagnostic, not a release candidate. Row-24 glyphs are expected to render as garbage.
+
+2026-07-31 v94 runtime acceptance and v95 slot-reservation candidate:
+- v94 runtime result: PASS. Cold boot showed the corrected Yagun dialogue with the `야군 : ` separator and no freeze on the item name. Row-24 glyphs render as garbage, which was the expected and accepted diagnostic regression.
+- Promoted v94 to the accepted rollback baseline and froze a copy under `99_backup/baselines/ui_hud_e7_v94_runtime_success_2026-07-31/`. This also confirms the v93 `E6 01` separator repair, since v94 carries that S3032 data.
+- Identified the item-name freeze: the injected driver places its high-page DR_TPAGE at `packet_base + 52*limit + parity*20`, one slot past the packet array. v73/v74 reserved that slot by storing `limit - 1` from a hook at `0x8016B148`; v76 removed the hook and every later build with the renderer writes out of bounds.
+- Added `02_scripts/build_ui_hud_e7_v95_tpage_slot_reservation.py`, which requires the exact v93 input ZIP, validates every new word against the v74 archive, checks that the enclosing function saves RA before inserting a `JAL`, and scans the caller for any later read of the clobbered `a0`.
+- Built `03_output/ui_hud_e7_v95_tpage_slot_reservation_patch_only.zip`, SHA256 `2646E40C0543EBA95684767D97221FF01573FC9CDE0D4F981749A4B11F54AA8F`.
+- Relative to v93 only `PSX.EXE` changes, by 19 bytes in six words. Runtime verification is pending.
+
+2026-07-31 v96 rejection and v97 measured high-page tpage:
+- v96 runtime result: FAIL. Item and skill names still rendered as garbage, though the freeze stayed fixed and dialogue remained correct.
+- Cause: v96 set the high-page texture page to 6, taken from the `codex_notes` line "absolute texture area x=1576..1755". Those coordinates are relative to the COMM.IMG strip, not absolute VRAM.
+- Established the COMM.IMG to VRAM mapping by content matching against a savestate: 512 rows of 896 bytes, left edge at VRAM x4bpp 1280, rows 1:1 with VRAM rows.
+- Measured the real P6 destination by diffing v85 against the current COMM.IMG: y 288..298, x4bpp 2856..3033, blank before the v86 repack. Isolating the bitplanes shows clean 12x12 Hangul.
+- x4bpp 2856 is in texture page 11 (base 2816), and 2856 - 2816 = 40, matching the glyph helper's `addiu a3,a3,40` exactly.
+- Added `02_scripts/build_ui_hud_e7_v97_high_tpage_measured.py`. It measures the P6 extent from COMM.IMG at build time, derives the texture page from it, refuses to build unless the derived U offset equals the helper's +40, and only then writes the instruction.
+- Built `03_output/ui_hud_e7_v97_high_tpage_measured_patch_only.zip`, SHA256 `5DCD2E995D1BB4F1100489405DD7350F3492E35A686498A55FEE644742E1D6D4`.
+- Relative to v96 only `PSX.EXE` changes, by one byte: `ori a3,a3,0x0016` becomes `ori a3,a3,0x001B`.
+
+2026-07-31 v97 runtime acceptance and v98 capacity restoration:
+- v97 runtime result: PASS on every checkpoint. Item name, skill name, the S3032 Yagun dialogue, the load/save screen, menus, battle and the red ARC transition all correct, with no freeze. This is the first build in which the expanded glyph store is actually read and displayed.
+- Promoted v97 to the accepted baseline and froze a copy under `99_backup/baselines/ui_hud_e7_v97_runtime_success_2026-07-31/`. v94 is retained as the fallback for shutting the P6 path off.
+- Investigated whether the high-page tpage primitive could live inside the text-object struct. It cannot: the structs are exactly 68 bytes apart and the initializer already fills 0..67, including two low-page tpage slots at +44 and +56.
+- Added `02_scripts/build_ui_hud_e7_v98_restore_object_capacity.py`. It restores the initializer at `0x8016B148` to byte-identical original game code, clears the injected helper, and moves the reservation into the driver as `base + 52*(limit-1)`.
+- Built `03_output/ui_hud_e7_v98_restore_object_capacity_patch_only.zip`, SHA256 `526232330287EEF6AA66A1020B2C0E472DA936CABD90DD55FFA9A31F2ADB36B3`.
+- Relative to v97 only `PSX.EXE` changes, by 25 bytes in eight words. Every text object regains its full glyph capacity, and one of the three common-path hooks is gone.
+
+2026-07-31 terminology reference and decision record:
+- Read the scanned guidebook in `05_docs/참고사항/공략본/` (GAME MAGAZINE pp.88-96) and extracted its item, accessory, skill, summon, stat, status, character and place tables.
+- Added `02_scripts/build_reference_glossary.py`, which holds the extracted terms, cross-checks them against `ui_full_v42.csv` and the glyph store, applies the agreed ruling order and writes `05_docs/terminology_decisions.csv`.
+- Result over 134 terms: 29 already agree with the patch, 13 keep the current wording, 4 adopt the guidebook, 88 are guidebook-only terms not yet present in the UI table.
+- Established that the guidebook is a reference rather than an authority. It is strong for items, accessories, stats and places, weak for skill names where it transliterates kanji, and demonstrably wrong in four places.
+- Recorded that glyph availability must not drive word choice. Every remaining decision costs at most 7 new glyphs against 27 free slots.

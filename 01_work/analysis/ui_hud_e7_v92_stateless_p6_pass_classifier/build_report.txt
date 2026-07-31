@@ -1,0 +1,37 @@
+Arc the Lad Korean patch v92 build report
+
+base_v91=ui_hud_e7_v91_v89_lifetime_yagun_slot_fix_patch_only.zip
+base_v91_sha256=60F0D550ECE295DA771440526E7B3B251F113A32DCA25CC8381DB442B9D80027
+output=ui_hud_e7_v92_stateless_p6_pass_classifier_patch_only.zip
+output_sha256=19768F72D6EC84016787909BA982C2D5E3014AD14770B0771BEB7446D9F0040D
+psx_sha256=B54F99454C564326042F04FDC64CD8D8604E3893D51BD106EF19C7F8FC379CDF
+
+changed_members: PSX.EXE only
+changed_bytes: 15 in 5 words
+
+word changes:
+- RAM 0x801A2204 / file 0x87A04: 0C07F918 -> 90620029   jal 0x801FE460      -> lbu v0,0x29(v1)
+- RAM 0x801A220C / file 0x87A0C: 1455001C -> 2442FFE0   bne v0,s5,0x801A2280 -> addiu v0,v0,-32
+- RAM 0x801A2210 / file 0x87A10: 00000000 -> 2C420001   nop                 -> sltiu v0,v0,1
+- RAM 0x801A2214 / file 0x87A14: 00000000 -> 1455001A   nop                 -> bne v0,s5,0x801A2280
+- RAM 0x801A2140 / file 0x87940: 34150080 -> 34150001   ori s5,zero,0x80    -> ori s5,zero,0x01
+
+invariants held:
+- RAM 0x801A2208 == 0x00000000   load-delay nop between lbu and addiu
+- RAM 0x801A2218 == 0x00742821   addu a1,v1,s4 becomes the bne delay slot
+- RAM 0x801A221C == 0x9462002C   loop body still starts here (no shift)
+- RAM 0x801A2280 == 0x8642000A   branch target unchanged
+- RAM 0x801A210C == 0x0000A821   pass-0 tag still s5 = 0
+- RAM 0x8016B5A8 == 0xA0A20029   builder still stores V with sb at packet 0x29
+- RAM 0x8016B5D8 == 0x0807F8F1   glyph-builder hook retained (keeps U += 40)
+- RAM 0x801A8788 == 0x3C028020   marker helper image retained but unread
+
+mechanism: pass membership is now computed per packet as (packet[0x29] == 32),
+which is true only for physical row 24 (24*12 = 288, truncated by sb to 32,
+and 288 - 256 = 32 is the correct within-high-page V). The global sidecar is
+no longer read, so concurrent text objects can no longer lose their P6 flags.
+E7 icons share this packet array and use V = 130 / 228, neither of which is 32,
+so they stay in the low-page pass.
+
+static_verification=PASS
+runtime_verification=PENDING

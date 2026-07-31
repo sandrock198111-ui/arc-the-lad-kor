@@ -1,0 +1,137 @@
+801A2080  sw       $a2, ($s1)
+801A2084  addiu    $a0, $a0, -1
+801A2088  sh       $a0, 4($s1)
+801A208C  jr       $ra
+801A2090  nop      
+801A2094  lbu      $v0, 0xe($a2)
+801A2098  sltiu    $v1, $t0, 0x16
+801A209C  bnez     $v1, 0x801a20a8
+801A20A0  nop      
+801A20A4  ori      $v0, $v0, 0x80
+801A20A8  jr       $ra
+801A20AC  nop      
+801A20B0  addiu    $sp, $sp, -0x50
+801A20B4  sw       $ra, 0x4c($sp)
+801A20B8  sw       $s7, 0x48($sp)
+801A20BC  sw       $s6, 0x44($sp)
+801A20C0  sw       $s5, 0x40($sp)
+801A20C4  sw       $s4, 0x3c($sp)
+801A20C8  sw       $s3, 0x38($sp)
+801A20CC  sw       $s2, 0x34($sp)
+801A20D0  sw       $s1, 0x30($sp)
+801A20D4  sw       $s0, 0x2c($sp)
+801A20D8  move     $s2, $a0
+801A20DC  move     $s7, $a1
+801A20E0  lui      $s6, 0x801f
+801A20E4  lw       $s6, 0x12ec($s6)
+801A20E8  nop      
+801A20EC  lhu      $v0, 0x870($s6)
+801A20F0  nop      
+801A20F4  sll      $s4, $v0, 2
+801A20F8  addu     $s4, $s4, $v0
+801A20FC  sll      $s4, $s4, 2
+801A2100  sll      $v0, $s7, 2
+801A2104  addiu    $s3, $v0, 0x70
+801A2108  addu     $s3, $s3, $s6
+801A210C  move     $s5, $zero
+801A2110  jal      0x801a21dc
+801A2114  nop      
+801A2118  lhu      $v0, 0x870($s6)
+801A211C  nop      
+801A2120  sll      $a1, $v0, 1
+801A2124  addu     $a1, $a1, $v0
+801A2128  sll      $a1, $a1, 2
+801A212C  addiu    $a1, $a1, 0x2c
+801A2130  addu     $a1, $a1, $s2
+801A2134  move     $a0, $s3
+801A2138  jal      0x80178f84
+801A213C  nop      
+801A2140  ori      $s5, $zero, 0x80
+801A2144  jal      0x801a21dc
+801A2148  nop      
+801A214C  lh       $v0, 4($s2)
+801A2150  nop      
+801A2154  sll      $v1, $v0, 1
+801A2158  addu     $v1, $v1, $v0
+801A215C  sll      $v1, $v1, 2
+801A2160  addu     $v1, $v1, $v0
+801A2164  sll      $v1, $v1, 2
+801A2168  lw       $s1, ($s2)
+801A216C  nop      
+801A2170  addu     $s1, $s1, $v1
+801A2174  addu     $s1, $s1, $s4
+801A2178  sw       $zero, 0x10($sp)
+801A217C  move     $a0, $s1
+801A2180  move     $a1, $zero
+801A2184  move     $a2, $zero
+801A2188  lui      $a3, 0x801f
+801A218C  lhu      $a3, 0x2ffc($a3)
+801A2190  nop      
+801A2194  ori      $a3, $a3, 0x10
+801A2198  jal      0x80177484
+801A219C  nop      
+801A21A0  move     $a0, $s3
+801A21A4  move     $a1, $s1
+801A21A8  jal      0x80178f84
+801A21AC  nop      
+801A21B0  lw       $ra, 0x4c($sp)
+801A21B4  lw       $s7, 0x48($sp)
+801A21B8  lw       $s6, 0x44($sp)
+801A21BC  lw       $s5, 0x40($sp)
+801A21C0  lw       $s4, 0x3c($sp)
+801A21C4  lw       $s3, 0x38($sp)
+801A21C8  lw       $s2, 0x34($sp)
+801A21CC  lw       $s1, 0x30($sp)
+801A21D0  lw       $s0, 0x2c($sp)
+801A21D4  jr       $ra
+801A21D8  addiu    $sp, $sp, 0x50
+801A21DC  sw       $ra, 0x28($sp)
+801A21E0  move     $s0, $zero
+801A21E4  move     $s1, $zero
+801A21E8  lh       $v0, 0xa($s2)
+801A21EC  nop      
+801A21F0  blez     $v0, 0x801a2294
+801A21F4  nop      
+801A21F8  lw       $v1, ($s2)
+801A21FC  nop      
+801A2200  addu     $v1, $v1, $s1
+801A2204  lbu      $v0, 0x2b($v1)
+801A2208  nop      
+801A220C  andi     $t0, $v0, 0x80
+801A2210  bne      $t0, $s5, 0x801a2280
+801A2214  nop      
+801A2218  addu     $a1, $v1, $s4
+801A221C  lhu      $v0, 0x2c($v1)
+801A2220  nop      
+801A2224  sh       $v0, 8($a1)
+801A2228  lhu      $v0, 0x2e($v1)
+801A222C  nop      
+801A2230  sh       $v0, 0xa($a1)
+801A2234  lbu      $v0, 0x28($v1)
+801A2238  nop      
+801A223C  sb       $v0, 0xc($a1)
+801A2240  lbu      $v0, 0x29($v1)
+801A2244  nop      
+801A2248  sb       $v0, 0xd($a1)
+801A224C  lbu      $v0, 0x2a($v1)
+801A2250  nop      
+801A2254  sh       $v0, 0x10($a1)
+801A2258  lbu      $v0, 0x2b($v1)
+801A225C  nop      
+801A2260  andi     $v0, $v0, 0x7f
+801A2264  sh       $v0, 0x12($a1)
+801A2268  lhu      $v0, 0x30($v1)
+801A226C  nop      
+801A2270  sh       $v0, 0xe($a1)
+801A2274  move     $a0, $s3
+801A2278  jal      0x80178f84
+801A227C  nop      
+801A2280  lh       $v0, 0xa($s2)
+801A2284  addiu    $s0, $s0, 1
+801A2288  slt      $v0, $s0, $v0
+801A228C  bnez     $v0, 0x801a21f8
+801A2290  addiu    $s1, $s1, 0x34
+801A2294  lw       $ra, 0x28($sp)
+801A2298  nop      
+801A229C  jr       $ra
+801A22A0  nop      

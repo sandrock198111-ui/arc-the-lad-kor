@@ -1,0 +1,6 @@
+﻿pointer_offset,string_offset,label,payload_hex,status
+0x823AC,0x82154,L,EA 9A 00 00,separate_sparse_glyph_labels
+0x823B0,0x82158,V,EA 9B 00 00,separate_sparse_glyph_labels
+0x823B4,0x8215C,original auxiliary,DD B2 00 00,separate_sparse_glyph_labels
+0x823B8,0x82160,M,01 DE 4F 00,separate_sparse_glyph_labels
+0x823BC,0x82164,P,DD 90 00 00,separate_sparse_glyph_labels

@@ -1,0 +1,242 @@
+[
+  {
+    "state": "01_work\\analysis\\ui_hud_e7_v91_latest_states\\slot1.bin",
+    "best_match": {
+      "file": "31/S3041.DAT",
+      "equal_bytes": 1786,
+      "compared_bytes": 1792,
+      "ratio": 0.9966517857142857
+    },
+    "top_matches": [
+      {
+        "file": "31/S3041.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "B/SB031.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "B/SB061.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "C1/SC071.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "C1/SC072.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "MAP/SMAP.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "analysis/glyph_store_v40/6/S6054.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      }
+    ],
+    "dialogues": []
+  },
+  {
+    "state": "01_work\\analysis\\ui_hud_e7_v91_latest_states\\slot2.bin",
+    "best_match": {
+      "file": "31/S3041.DAT",
+      "equal_bytes": 1786,
+      "compared_bytes": 1792,
+      "ratio": 0.9966517857142857
+    },
+    "top_matches": [
+      {
+        "file": "31/S3041.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "B/SB031.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "B/SB061.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "C1/SC071.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "C1/SC072.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "MAP/SMAP.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "analysis/glyph_store_v40/6/S6054.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      }
+    ],
+    "dialogues": []
+  },
+  {
+    "state": "01_work\\analysis\\ui_hud_e7_v91_latest_states\\slot3.bin",
+    "best_match": {
+      "file": "31/S3041.DAT",
+      "equal_bytes": 1786,
+      "compared_bytes": 1792,
+      "ratio": 0.9966517857142857
+    },
+    "top_matches": [
+      {
+        "file": "31/S3041.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "B/SB031.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "B/SB061.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "C1/SC071.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "C1/SC072.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "MAP/SMAP.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "analysis/glyph_store_v40/6/S6054.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      }
+    ],
+    "dialogues": []
+  },
+  {
+    "state": "01_work\\analysis\\ui_hud_e7_v91_latest_states\\slot4.bin",
+    "best_match": {
+      "file": "31/S3041.DAT",
+      "equal_bytes": 1786,
+      "compared_bytes": 1792,
+      "ratio": 0.9966517857142857
+    },
+    "top_matches": [
+      {
+        "file": "31/S3041.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "B/SB031.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "B/SB061.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "C1/SC071.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "C1/SC072.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "MAP/SMAP.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      },
+      {
+        "file": "analysis/glyph_store_v40/6/S6054.DAT",
+        "equal_bytes": 1786,
+        "compared_bytes": 1792,
+        "ratio": 0.9966517857142857
+      }
+    ],
+    "dialogues": []
+  }
+]

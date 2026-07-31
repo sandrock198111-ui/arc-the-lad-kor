@@ -1,0 +1,38 @@
+Arc the Lad Korean patch v96 build report
+
+base_v95=ui_hud_e7_v95_tpage_slot_reservation_patch_only.zip
+base_v95_sha256=2646E40C0543EBA95684767D97221FF01573FC9CDE0D4F981749A4B11F54AA8F
+output=ui_hud_e7_v96_high_tpage_x_fix_patch_only.zip
+output_sha256=149622DBF9227EE3B8433C3AC8AB1F3E3A61A9558F2FFD9787187A2CED072650
+psx_sha256=F13B7046AD6AE28AC05886A1E3B44C254CA9A26396C3F3B69E71CBA2E59F1CD5
+
+changed_members: PSX.EXE only
+changed_bytes: 1 in 1 word
+
+- 0x801A2194 / file 0x87994: 34E70010 -> 34E70016   ori a3,a3,0x0010 -> ori a3,a3,0x0016  (tx=6, ty=256)
+
+geometry:
+  texture page 6 starts at VRAM x = 1536 (4bpp pixels)
+  the glyph helper already adds 40 to U for row-24 cells
+  1536 + 40 = 1576, and the 15 cells span 1576..1755
+  ty bit gives y = 256, and V = 32 for row 24, so y = 288..299
+  this matches the documented P6 pixel area exactly
+
+before this fix the andi cleared the texture-page X, so the sampler read
+x = 0 + U, y = 256 + V, which is inside the display framebuffer.
+
+invariants held:
+- 0x801A2188 == 0x3C07801F   base tpage load, high half
+- 0x801A218C == 0x94E72FFC   base tpage load from 0x801F2FFC
+- 0x801A2190 == 0x30E7FFE0   andi keeps abr and colour depth from the base
+- 0x801A2198 == 0x0C05DD21   DR_TPAGE constructor call
+- 0x8016B148 == 0x0C068820   v95 slot reservation retained
+- 0x801A2084 == 0x2484FFFF   v95 limit-1 retained
+- 0x801A2204 == 0x90620029   v92 classifier retained (V at packet 0x29)
+- 0x801A214C == 0x86420004   tpage primitive still placed at base+52*limit
+- 0x8016B764 == 0x080688A8   injected renderer entry retained
+- 0x8016B5D8 == 0x0807F8F1   glyph-builder hook retained (applies U += 40)
+
+static_verification=PASS
+runtime_verification=PENDING
+rollback baseline=99_backup/baselines/ui_hud_e7_v94_runtime_success_2026-07-31

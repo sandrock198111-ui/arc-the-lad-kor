@@ -1,0 +1,24 @@
+ui_hud_e7_v89 story-safe book glyph repair
+base=E:\korean\03_output\ui_hud_e7_v88_p6_state_persistence_slots_3_to_6_patch_only.zip
+base_zip_sha256=CB89BF7A66CE1C176D44FD8E49772F4D94A8A4A688C11A95E207F3F89D802FAC
+output=E:\korean\03_output\ui_hud_e7_v89_story_safe_book_glyph_patch_only.zip
+output_zip_sha256=4A379BF0AA02D60E89C30E1BD26E9E884DF60AD0F9EF6FBB33537A9B396C9678
+output_comm_sha256=AFBC4A0DCD7C63C98AB352964F988607A695D182EE2B148F570A902355C260B2
+output_s3032_sha256=0CD41D2A434C325737C0D2DEE753BA7134B9A872C7A34E0C21A7D558A50498D1
+target_member=31/S3032.DAT
+target_slot=2
+target_slot_offset=0x45100
+bad_ui_code=EA 6F
+book_story_code=E0 2D
+reassigned_from=듯
+glyph_row=12
+glyph_column=5
+glyph_plane=1
+comm_changed_bytes=36
+s3032_changed_offsets=0x45124,0x45125
+dialogue=야군 / 만일 무슨 일이 생겨도 / 저희는 책임질 수 없습니다.
+preserved_s3032_slots=0,1,3
+psx_exe_changed=NO
+changed_members=COMM.IMG,31/S3032.DAT
+iso_built=NO
+runtime_status=PENDING_USER_TEST

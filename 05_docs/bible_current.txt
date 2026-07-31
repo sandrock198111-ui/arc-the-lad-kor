@@ -1435,3 +1435,31 @@ v89 S3032 story-safe book glyph candidate - 2026-07-29
 - v89 assigns `책` to story code `E0 2D`, whose former `듯` mapping has zero uses in all audited DAT story regions, and changes only that two-byte code in the affected E2 slot.
 - Candidate: `03_output/ui_hud_e7_v89_story_safe_book_glyph_patch_only.zip`, SHA256 `4A379BF0AA02D60E89C30E1BD26E9E884DF60AD0F9EF6FBB33537A9B396C9678`.
 - Relative to v88, only `COMM.IMG` and `31/S3032.DAT` change. `PSX.EXE`, successful S3032 slots 0-1, and the following S3032 slot 3 are byte-identical. Runtime verification is `PENDING`.
+
+v92 stateless P6 pass classifier candidate - 2026-07-31
+- Root cause of the recurring malformed high-page glyphs is the P6 sidecar data structure, not its RAM placement or clear timing.
+- The marker helper at `0x801FE460` returns 0 whenever its single stored text-state pointer differs from the caller's. The game runs several concurrent text objects (dialogue, item-name window, HUD), so every glyph of a non-active object was classified low-page and drawn from the wrong texture page.
+- This is why v88 (never clear) and v90 (clear on same object) both failed. One global slot cannot describe N concurrent text objects, so either policy is wrong for some object.
+- The classification input is already present per glyph. The builder at `0x8016B5A8` stores `V = row * 12` with `sb` into packet byte `0x29`. Row 24 truncates to 32, and `24*12 - 256 = 32` is also the correct within-high-page offset, so V passes through the renderer unchanged and correct.
+- Among valid rows 0-42 only row 24 produces V == 32, so `packet[0x29] == 32` is exactly equivalent to the helper's `row == 24` test while requiring no state.
+- v92 computes pass membership inline at `0x801A2204` and changes the pass-1 tag from `0x80` to `1`, which keeps the loop body at its original addresses. Five words change; the loop body does not shift.
+- The glyph-builder hook, high-RAM helper image, entry bootstrap, and InitHeap reservation are intentionally retained. The helper still applies the required `U += 40` for P6 cells; only its sidecar writes become unread. v92 is therefore a single-variable experiment over v91.
+- E7 icons share this packet array and stride. Their V values 130 and 228 are not 32, so they remain in the low-page pass.
+- Candidate: `03_output/ui_hud_e7_v92_stateless_p6_pass_classifier_patch_only.zip`, SHA256 `19768F72D6EC84016787909BA982C2D5E3014AD14770B0771BEB7446D9F0040D`.
+- Limitation: the test recognizes row 24 only. Expanding P6 beyond row 24's 84 slots requires a general classifier; the packet has two spare bytes at `0x32-0x33` that can carry a builder-written flag for that case.
+- Relative to v91 only `PSX.EXE` changes, by 15 bytes. Runtime verification is `PENDING`.
+
+v94 accepted rollback baseline - 2026-07-31
+- Runtime verified on a cold boot: the S3032 Yagun dialogue renders correctly including the `야군 : ` separator, and the item name no longer freezes.
+- This is the first build since v0.41 with a runtime-verified renderer together with the full accumulated translation data. Frozen at `99_backup/baselines/ui_hud_e7_v94_runtime_success_2026-07-31/`.
+- v94 restores three words to their exact v71 values so the game uses its own single-pass renderer: `0x8016B5D8` `lbu v0,0xE(a2)`, `0x8016B764` `addiu sp,sp,-48`, `0x8016B768` `sw ra,0x2C(sp)`.
+- Known limitation: no high-page glyph support, so the 56 row-24 codes render as garbage. v94 is a safe fallback, not the finished target.
+- SHA256 `68B59D5BE63D87DB46678CC92D99A377B14E749ABE0ABB71663C2859B8C5EEF4`.
+
+v95 tpage slot-reservation candidate - 2026-07-31
+- Root cause of the item-name freeze is established. The injected driver writes its high-page DR_TPAGE at `packet_base + 52*limit + parity*20`, which is one slot past the array because the glyph builder accepts glyphs while `count < limit`.
+- v73 and v74 hooked the text-object initializer at `0x8016B148` and stored `limit - 1`, reserving that final slot. v76 removed the hook as if the decrement were a bug, and every later build that keeps the renderer writes out of bounds.
+- v95 restores the reservation byte-for-byte from v74 on top of v93 and keeps the v92 stateless `V == 32` classifier.
+- This is the first build with both halves correct. v73/v74 reserved the slot but flagged P6 in packet byte `0x2B`, the sprite height field. v91 to v93 kept the height intact but lost the reservation.
+- Candidate: `03_output/ui_hud_e7_v95_tpage_slot_reservation_patch_only.zip`, SHA256 `2646E40C0543EBA95684767D97221FF01573FC9CDE0D4F981749A4B11F54AA8F`.
+- Relative to v93 only `PSX.EXE` changes, by 19 bytes in six words. Runtime verification is `PENDING`; roll back to v94 if it regresses.

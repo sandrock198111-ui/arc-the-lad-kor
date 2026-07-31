@@ -1,0 +1,1058 @@
+[
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-29EFD29BD74A5AE5_1.sav",
+    "best_match": {
+      "file": "analysis/ui_p6_v85_slots_1_to_6_2026-07-28/v85_files/31/S3032.DAT",
+      "equal_bytes": 1788,
+      "compared_bytes": 1792,
+      "ratio": 0.9977678571428571
+    },
+    "top_matches": [
+      {
+        "file": "analysis/ui_p6_v85_slots_1_to_6_2026-07-28/v85_files/31/S3032.DAT",
+        "equal_bytes": 1788,
+        "compared_bytes": 1792,
+        "ratio": 0.9977678571428571
+      },
+      {
+        "file": "31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/source_jp/31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v81/31/S3032.DAT",
+        "equal_bytes": 1521,
+        "compared_bytes": 1792,
+        "ratio": 0.8487723214285714
+      },
+      {
+        "file": "D/SD051.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "D/SD061.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD051.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD061.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "D/SD041.DAT",
+        "equal_bytes": 819,
+        "compared_bytes": 1792,
+        "ratio": 0.45703125
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD041.DAT",
+        "equal_bytes": 819,
+        "compared_bytes": 1792,
+        "ratio": 0.45703125
+      },
+      {
+        "file": "5/S5051.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "F/SF071.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/5/S5051.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/F/SF071.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      }
+    ],
+    "dialogues": [
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117192",
+        "ram_payload_start": "0x117194",
+        "file_payload_start": "0x47994",
+        "end_exclusive": "0x479BC",
+        "length": 40,
+        "prefix_kind": "none",
+        "payload_hex": "e2 81 34 25 e6 01 43 20 39 27 1e 1f 37 e6 01 dd 10 27 30 1c de 22 de 0e 1c dd 43 de 0e 2f dd b0 dd e1 1e 27 1e 73 26 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1171EC",
+        "ram_payload_start": "0x1171EE",
+        "file_payload_start": "0x479EE",
+        "end_exclusive": "0x47A0E",
+        "length": 32,
+        "prefix_kind": "none",
+        "payload_hex": "e2 82 34 25 e6 01 1f 35 1e 24 3f 41 2e 28 e6 01 be dd 06 30 38 87 2f 40 1b 21 1b 22 89 c2 35 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11723E",
+        "ram_payload_start": "0x117240",
+        "file_payload_start": "0x47A40",
+        "end_exclusive": "0x47A62",
+        "length": 34,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 38 1e 38 1c 7a 2a 3f 29 21 38 e6 01 be dd 06 28 df 2c de c2 2f 38 4b 27 59 2d 6a 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11729E",
+        "ram_payload_start": "0x1172A2",
+        "file_payload_start": "0x47AA2",
+        "end_exclusive": "0x47AC4",
+        "length": 34,
+        "prefix_kind": "control_0000",
+        "payload_hex": "43 20 29 21 1b 27 2b 37 e6 01 41 1c cf 28 24 47 78 6b 42 5d 23 28 e6 01 41 26 dd 07 46 21 70 3a 1b 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1172F4",
+        "ram_payload_start": "0x1172F8",
+        "file_payload_start": "0x47AF8",
+        "end_exclusive": "0x47AFC",
+        "length": 4,
+        "prefix_kind": "control_0000",
+        "payload_hex": "4a 48 a1 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117360",
+        "ram_payload_start": "0x117362",
+        "file_payload_start": "0x47B62",
+        "end_exclusive": "0x47B87",
+        "length": 37,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 96 dd 0d 35 36 9f 29 21 1b 1f 2a e6 01 54 26 40 33 dd 07 dd ec 1c dd 47 7e 20 38 1e 32 2d 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1173B8",
+        "ram_payload_start": "0x1173BA",
+        "file_payload_start": "0x47BBA",
+        "end_exclusive": "0x47BD6",
+        "length": 28,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 c8 1c 26 4b 23 dd 5b de 27 1e 1f dd 05 26 2a 3d 3a 41 26 35 1d 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11743A",
+        "ram_payload_start": "0x11743C",
+        "file_payload_start": "0x47C3C",
+        "end_exclusive": "0x47C4F",
+        "length": 19,
+        "prefix_kind": "none",
+        "payload_hex": "5f 34 47 62 31 25 e6 01 85 23 3b 27 20 59 3e 35 3a 1b 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11748C",
+        "ram_payload_start": "0x11748E",
+        "file_payload_start": "0x47C8E",
+        "end_exclusive": "0x47CAA",
+        "length": 28,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 3d 1e 24 3b ae 2a 40 45 33 2f dd 10 27 30 dd e3 dd 81 1e 21 40 32"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1174DA",
+        "ram_payload_start": "0x1174DC",
+        "file_payload_start": "0x47CDC",
+        "end_exclusive": "0x47CEF",
+        "length": 19,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 41 1e 21 dd 10 30 dd 5b de 27 1e 55 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11752C",
+        "ram_payload_start": "0x11752E",
+        "file_payload_start": "0x47D2E",
+        "end_exclusive": "0x47D3E",
+        "length": 16,
+        "prefix_kind": "none",
+        "payload_hex": "5f 34 47 62 31 25 e6 01 de 0d c6 1e 27 1e 1f 37"
+      }
+    ]
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-29EFD29BD74A5AE5_2.sav",
+    "best_match": {
+      "file": "analysis/ui_p6_v85_slots_1_to_6_2026-07-28/v85_files/31/S3032.DAT",
+      "equal_bytes": 1788,
+      "compared_bytes": 1792,
+      "ratio": 0.9977678571428571
+    },
+    "top_matches": [
+      {
+        "file": "analysis/ui_p6_v85_slots_1_to_6_2026-07-28/v85_files/31/S3032.DAT",
+        "equal_bytes": 1788,
+        "compared_bytes": 1792,
+        "ratio": 0.9977678571428571
+      },
+      {
+        "file": "31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/source_jp/31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v81/31/S3032.DAT",
+        "equal_bytes": 1521,
+        "compared_bytes": 1792,
+        "ratio": 0.8487723214285714
+      },
+      {
+        "file": "D/SD051.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "D/SD061.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD051.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD061.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "D/SD041.DAT",
+        "equal_bytes": 819,
+        "compared_bytes": 1792,
+        "ratio": 0.45703125
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD041.DAT",
+        "equal_bytes": 819,
+        "compared_bytes": 1792,
+        "ratio": 0.45703125
+      },
+      {
+        "file": "5/S5051.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "F/SF071.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/5/S5051.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/F/SF071.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      }
+    ],
+    "dialogues": [
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117192",
+        "ram_payload_start": "0x117194",
+        "file_payload_start": "0x47994",
+        "end_exclusive": "0x479BC",
+        "length": 40,
+        "prefix_kind": "none",
+        "payload_hex": "e2 81 34 25 e6 01 43 20 39 27 1e 1f 37 e6 01 dd 10 27 30 1c de 22 de 0e 1c dd 43 de 0e 2f dd b0 dd e1 1e 27 1e 73 26 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1171EC",
+        "ram_payload_start": "0x1171EE",
+        "file_payload_start": "0x479EE",
+        "end_exclusive": "0x47A0E",
+        "length": 32,
+        "prefix_kind": "none",
+        "payload_hex": "e2 82 34 25 e6 01 1f 35 1e 24 3f 41 2e 28 e6 01 be dd 06 30 38 87 2f 40 1b 21 1b 22 89 c2 35 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11723E",
+        "ram_payload_start": "0x117240",
+        "file_payload_start": "0x47A40",
+        "end_exclusive": "0x47A62",
+        "length": 34,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 38 1e 38 1c 7a 2a 3f 29 21 38 e6 01 be dd 06 28 df 2c de c2 2f 38 4b 27 59 2d 6a 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11729E",
+        "ram_payload_start": "0x1172A2",
+        "file_payload_start": "0x47AA2",
+        "end_exclusive": "0x47AC4",
+        "length": 34,
+        "prefix_kind": "control_0000",
+        "payload_hex": "43 20 29 21 1b 27 2b 37 e6 01 41 1c cf 28 24 47 78 6b 42 5d 23 28 e6 01 41 26 dd 07 46 21 70 3a 1b 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1172F4",
+        "ram_payload_start": "0x1172F8",
+        "file_payload_start": "0x47AF8",
+        "end_exclusive": "0x47AFC",
+        "length": 4,
+        "prefix_kind": "control_0000",
+        "payload_hex": "4a 48 a1 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117360",
+        "ram_payload_start": "0x117362",
+        "file_payload_start": "0x47B62",
+        "end_exclusive": "0x47B87",
+        "length": 37,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 96 dd 0d 35 36 9f 29 21 1b 1f 2a e6 01 54 26 40 33 dd 07 dd ec 1c dd 47 7e 20 38 1e 32 2d 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1173B8",
+        "ram_payload_start": "0x1173BA",
+        "file_payload_start": "0x47BBA",
+        "end_exclusive": "0x47BD6",
+        "length": 28,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 c8 1c 26 4b 23 dd 5b de 27 1e 1f dd 05 26 2a 3d 3a 41 26 35 1d 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11743A",
+        "ram_payload_start": "0x11743C",
+        "file_payload_start": "0x47C3C",
+        "end_exclusive": "0x47C4F",
+        "length": 19,
+        "prefix_kind": "none",
+        "payload_hex": "5f 34 47 62 31 25 e6 01 85 23 3b 27 20 59 3e 35 3a 1b 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11748C",
+        "ram_payload_start": "0x11748E",
+        "file_payload_start": "0x47C8E",
+        "end_exclusive": "0x47CAA",
+        "length": 28,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 3d 1e 24 3b ae 2a 40 45 33 2f dd 10 27 30 dd e3 dd 81 1e 21 40 32"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1174DA",
+        "ram_payload_start": "0x1174DC",
+        "file_payload_start": "0x47CDC",
+        "end_exclusive": "0x47CEF",
+        "length": 19,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 41 1e 21 dd 10 30 dd 5b de 27 1e 55 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11752C",
+        "ram_payload_start": "0x11752E",
+        "file_payload_start": "0x47D2E",
+        "end_exclusive": "0x47D3E",
+        "length": 16,
+        "prefix_kind": "none",
+        "payload_hex": "5f 34 47 62 31 25 e6 01 de 0d c6 1e 27 1e 1f 37"
+      }
+    ]
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-29EFD29BD74A5AE5_3.sav",
+    "best_match": {
+      "file": "analysis/ui_p6_v85_slots_1_to_6_2026-07-28/v85_files/31/S3032.DAT",
+      "equal_bytes": 1788,
+      "compared_bytes": 1792,
+      "ratio": 0.9977678571428571
+    },
+    "top_matches": [
+      {
+        "file": "analysis/ui_p6_v85_slots_1_to_6_2026-07-28/v85_files/31/S3032.DAT",
+        "equal_bytes": 1788,
+        "compared_bytes": 1792,
+        "ratio": 0.9977678571428571
+      },
+      {
+        "file": "31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/source_jp/31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v81/31/S3032.DAT",
+        "equal_bytes": 1521,
+        "compared_bytes": 1792,
+        "ratio": 0.8487723214285714
+      },
+      {
+        "file": "D/SD051.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "D/SD061.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD051.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD061.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "D/SD041.DAT",
+        "equal_bytes": 819,
+        "compared_bytes": 1792,
+        "ratio": 0.45703125
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD041.DAT",
+        "equal_bytes": 819,
+        "compared_bytes": 1792,
+        "ratio": 0.45703125
+      },
+      {
+        "file": "5/S5051.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "F/SF071.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/5/S5051.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/F/SF071.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      }
+    ],
+    "dialogues": [
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117192",
+        "ram_payload_start": "0x117194",
+        "file_payload_start": "0x47994",
+        "end_exclusive": "0x479BC",
+        "length": 40,
+        "prefix_kind": "none",
+        "payload_hex": "e2 81 34 25 e6 01 43 20 39 27 1e 1f 37 e6 01 dd 10 27 30 1c de 22 de 0e 1c dd 43 de 0e 2f dd b0 dd e1 1e 27 1e 73 26 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1171EC",
+        "ram_payload_start": "0x1171EE",
+        "file_payload_start": "0x479EE",
+        "end_exclusive": "0x47A0E",
+        "length": 32,
+        "prefix_kind": "none",
+        "payload_hex": "e2 82 34 25 e6 01 1f 35 1e 24 3f 41 2e 28 e6 01 be dd 06 30 38 87 2f 40 1b 21 1b 22 89 c2 35 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11723E",
+        "ram_payload_start": "0x117240",
+        "file_payload_start": "0x47A40",
+        "end_exclusive": "0x47A62",
+        "length": 34,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 38 1e 38 1c 7a 2a 3f 29 21 38 e6 01 be dd 06 28 df 2c de c2 2f 38 4b 27 59 2d 6a 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11729E",
+        "ram_payload_start": "0x1172A2",
+        "file_payload_start": "0x47AA2",
+        "end_exclusive": "0x47AC4",
+        "length": 34,
+        "prefix_kind": "control_0000",
+        "payload_hex": "43 20 29 21 1b 27 2b 37 e6 01 41 1c cf 28 24 47 78 6b 42 5d 23 28 e6 01 41 26 dd 07 46 21 70 3a 1b 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1172F4",
+        "ram_payload_start": "0x1172F8",
+        "file_payload_start": "0x47AF8",
+        "end_exclusive": "0x47AFC",
+        "length": 4,
+        "prefix_kind": "control_0000",
+        "payload_hex": "4a 48 a1 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117360",
+        "ram_payload_start": "0x117362",
+        "file_payload_start": "0x47B62",
+        "end_exclusive": "0x47B87",
+        "length": 37,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 96 dd 0d 35 36 9f 29 21 1b 1f 2a e6 01 54 26 40 33 dd 07 dd ec 1c dd 47 7e 20 38 1e 32 2d 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1173B8",
+        "ram_payload_start": "0x1173BA",
+        "file_payload_start": "0x47BBA",
+        "end_exclusive": "0x47BD6",
+        "length": 28,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 c8 1c 26 4b 23 dd 5b de 27 1e 1f dd 05 26 2a 3d 3a 41 26 35 1d 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11743A",
+        "ram_payload_start": "0x11743C",
+        "file_payload_start": "0x47C3C",
+        "end_exclusive": "0x47C4F",
+        "length": 19,
+        "prefix_kind": "none",
+        "payload_hex": "5f 34 47 62 31 25 e6 01 85 23 3b 27 20 59 3e 35 3a 1b 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11748C",
+        "ram_payload_start": "0x11748E",
+        "file_payload_start": "0x47C8E",
+        "end_exclusive": "0x47CAA",
+        "length": 28,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 3d 1e 24 3b ae 2a 40 45 33 2f dd 10 27 30 dd e3 dd 81 1e 21 40 32"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1174DA",
+        "ram_payload_start": "0x1174DC",
+        "file_payload_start": "0x47CDC",
+        "end_exclusive": "0x47CEF",
+        "length": 19,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 41 1e 21 dd 10 30 dd 5b de 27 1e 55 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11752C",
+        "ram_payload_start": "0x11752E",
+        "file_payload_start": "0x47D2E",
+        "end_exclusive": "0x47D3E",
+        "length": 16,
+        "prefix_kind": "none",
+        "payload_hex": "5f 34 47 62 31 25 e6 01 de 0d c6 1e 27 1e 1f 37"
+      }
+    ]
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-29EFD29BD74A5AE5_4.sav",
+    "best_match": {
+      "file": "analysis/ui_p6_v85_slots_1_to_6_2026-07-28/v85_files/31/S3032.DAT",
+      "equal_bytes": 1788,
+      "compared_bytes": 1792,
+      "ratio": 0.9977678571428571
+    },
+    "top_matches": [
+      {
+        "file": "analysis/ui_p6_v85_slots_1_to_6_2026-07-28/v85_files/31/S3032.DAT",
+        "equal_bytes": 1788,
+        "compared_bytes": 1792,
+        "ratio": 0.9977678571428571
+      },
+      {
+        "file": "31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/source_jp/31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/31/S3032.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v81/31/S3032.DAT",
+        "equal_bytes": 1521,
+        "compared_bytes": 1792,
+        "ratio": 0.8487723214285714
+      },
+      {
+        "file": "D/SD051.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "D/SD061.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD051.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD061.DAT",
+        "equal_bytes": 820,
+        "compared_bytes": 1792,
+        "ratio": 0.4575892857142857
+      },
+      {
+        "file": "D/SD041.DAT",
+        "equal_bytes": 819,
+        "compared_bytes": 1792,
+        "ratio": 0.45703125
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD041.DAT",
+        "equal_bytes": 819,
+        "compared_bytes": 1792,
+        "ratio": 0.45703125
+      },
+      {
+        "file": "5/S5051.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "F/SF071.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/5/S5051.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/F/SF071.DAT",
+        "equal_bytes": 818,
+        "compared_bytes": 1792,
+        "ratio": 0.4564732142857143
+      }
+    ],
+    "dialogues": [
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117192",
+        "ram_payload_start": "0x117194",
+        "file_payload_start": "0x47994",
+        "end_exclusive": "0x479BC",
+        "length": 40,
+        "prefix_kind": "none",
+        "payload_hex": "e2 81 34 25 e6 01 43 20 39 27 1e 1f 37 e6 01 dd 10 27 30 1c de 22 de 0e 1c dd 43 de 0e 2f dd b0 dd e1 1e 27 1e 73 26 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1171EC",
+        "ram_payload_start": "0x1171EE",
+        "file_payload_start": "0x479EE",
+        "end_exclusive": "0x47A0E",
+        "length": 32,
+        "prefix_kind": "none",
+        "payload_hex": "e2 82 34 25 e6 01 1f 35 1e 24 3f 41 2e 28 e6 01 be dd 06 30 38 87 2f 40 1b 21 1b 22 89 c2 35 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11723E",
+        "ram_payload_start": "0x117240",
+        "file_payload_start": "0x47A40",
+        "end_exclusive": "0x47A62",
+        "length": 34,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 38 1e 38 1c 7a 2a 3f 29 21 38 e6 01 be dd 06 28 df 2c de c2 2f 38 4b 27 59 2d 6a 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11729E",
+        "ram_payload_start": "0x1172A2",
+        "file_payload_start": "0x47AA2",
+        "end_exclusive": "0x47AC4",
+        "length": 34,
+        "prefix_kind": "control_0000",
+        "payload_hex": "43 20 29 21 1b 27 2b 37 e6 01 41 1c cf 28 24 47 78 6b 42 5d 23 28 e6 01 41 26 dd 07 46 21 70 3a 1b 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1172F4",
+        "ram_payload_start": "0x1172F8",
+        "file_payload_start": "0x47AF8",
+        "end_exclusive": "0x47AFC",
+        "length": 4,
+        "prefix_kind": "control_0000",
+        "payload_hex": "4a 48 a1 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117360",
+        "ram_payload_start": "0x117362",
+        "file_payload_start": "0x47B62",
+        "end_exclusive": "0x47B87",
+        "length": 37,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 96 dd 0d 35 36 9f 29 21 1b 1f 2a e6 01 54 26 40 33 dd 07 dd ec 1c dd 47 7e 20 38 1e 32 2d 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1173B8",
+        "ram_payload_start": "0x1173BA",
+        "file_payload_start": "0x47BBA",
+        "end_exclusive": "0x47BD6",
+        "length": 28,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 c8 1c 26 4b 23 dd 5b de 27 1e 1f dd 05 26 2a 3d 3a 41 26 35 1d 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11743A",
+        "ram_payload_start": "0x11743C",
+        "file_payload_start": "0x47C3C",
+        "end_exclusive": "0x47C4F",
+        "length": 19,
+        "prefix_kind": "none",
+        "payload_hex": "5f 34 47 62 31 25 e6 01 85 23 3b 27 20 59 3e 35 3a 1b 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11748C",
+        "ram_payload_start": "0x11748E",
+        "file_payload_start": "0x47C8E",
+        "end_exclusive": "0x47CAA",
+        "length": 28,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 3d 1e 24 3b ae 2a 40 45 33 2f dd 10 27 30 dd e3 dd 81 1e 21 40 32"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1174DA",
+        "ram_payload_start": "0x1174DC",
+        "file_payload_start": "0x47CDC",
+        "end_exclusive": "0x47CEF",
+        "length": 19,
+        "prefix_kind": "none",
+        "payload_hex": "bb 80 34 25 e6 01 41 1e 21 dd 10 30 dd 5b de 27 1e 55 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11752C",
+        "ram_payload_start": "0x11752E",
+        "file_payload_start": "0x47D2E",
+        "end_exclusive": "0x47D3E",
+        "length": 16,
+        "prefix_kind": "none",
+        "payload_hex": "5f 34 47 62 31 25 e6 01 de 0d c6 1e 27 1e 1f 37"
+      }
+    ]
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-29EFD29BD74A5AE5_5.sav",
+    "best_match": {
+      "file": "32/S3051.DAT",
+      "equal_bytes": 1792,
+      "compared_bytes": 1792,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "32/S3051.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/32/S3051.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "31/S3041.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "B/SB031.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "B/SB061.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "C1/SC071.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "C1/SC072.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "MAP/SMAP.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/glyph_store_v40/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v78/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v79/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v80/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v81/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/ui_p6_v85_slots_1_to_6_2026-07-28/v85_files/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      }
+    ],
+    "dialogues": []
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-29EFD29BD74A5AE5_6.sav",
+    "best_match": {
+      "file": "32/S3051.DAT",
+      "equal_bytes": 1792,
+      "compared_bytes": 1792,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "32/S3051.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/32/S3051.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "31/S3041.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "B/SB031.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "B/SB061.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "C1/SC071.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "C1/SC072.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "MAP/SMAP.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/glyph_store_v40/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v78/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v79/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v80/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/p6_web_method_2026-07-28/v81/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      },
+      {
+        "file": "analysis/ui_p6_v85_slots_1_to_6_2026-07-28/v85_files/6/S6054.DAT",
+        "equal_bytes": 911,
+        "compared_bytes": 1792,
+        "ratio": 0.5083705357142857
+      }
+    ],
+    "dialogues": []
+  }
+]

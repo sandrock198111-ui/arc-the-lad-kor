@@ -1,0 +1,805 @@
+﻿file,offset,japanese,encoded_bytes,raw_hex,classification
+COMM.DAT,0xA78,た風た風,4,1F C1 1F C1,unverified_direct_candidate
+COMM.DAT,0xA80,た風た風,4,1F C1 1F C1,unverified_direct_candidate
+COMM.DAT,0xA88,た風た風,4,1F C1 1F C1,unverified_direct_candidate
+COMM.DAT,0xA90,た風た風,4,1F C1 1F C1,unverified_direct_candidate
+COMM.DAT,0xA9C,た風た風た風た風,8,1F C1 1F C1 1F C1 1F C1,unverified_direct_candidate
+COMM.DAT,0xAAC,た風た風た風た風,8,1F C1 1F C1 1F C1 1F C1,unverified_direct_candidate
+COMM.DAT,0xAC4,た風た風た風た風た風た風た風た風,16,1F C1 1F C1 1F C1 1F C1 1F C1 1F C1 1F C1 1F C1,unverified_direct_candidate
+COMM.DAT,0xB96,て<N:≠:16>たナたナたナたナたナたナたナたナ<CTRL:EA>,19,21 04 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C EA,unverified_direct_candidate
+COMM.DAT,0x2606,かかかやてナつごれ発<N:ｌ:5>サま,13,20 20 20 40 21 7C 29 79 32 76 5B 77 27,unverified_direct_candidate
+COMM.DAT,0x2670,ウ4戻がち,5,71 15 D9 2A 4B,unverified_direct_candidate
+COMM.DAT,0x459A,たナたナ力,5,1F 7C 1F 7C 61,unverified_direct_candidate
+COMM.DAT,0x45BA,たナたナ力,5,1F 7C 1F 7C 61,unverified_direct_candidate
+COMM.DAT,0x50B0,地聞備本カ目者前ニ 参メサオオ手<CTRL:F7>聞手私聞ャャマ撃人行思風。,31,90 D3 C5 92 BC AC 7E AE D1 E0 F2 A5 78 77 8F 8F 87 F7 88 87 85 88 D6 D6 64 B1 52 74 9F C1 37,unverified_direct_candidate
+COMM.DAT,0x5F15,？僧き（め前王れ兵父ピトジ<N:＄:1>,14,3C 84 44 09 51 AE 5D 32 66 B7 72 5C 7F 05,unverified_direct_candidate
+COMM.DAT,0x5F34,な行な行な行な行な行な行会男<N:７:11>ュ勝ロょ回で子聖員臣場な行,28,1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 7B B3 18 AB D5 A2 73 9E 30 96 CD 8D 8B 89 1D 74,unverified_direct_candidate
+COMM.DAT,0x5F54,な行な行な行な行な行な行<N:７:11>ュ勝ロょ回で子聖員臣場聖員な行,28,1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 18 AB D5 A2 73 9E 30 96 CD 8D 8B 89 CD 8D 1D 74,unverified_direct_candidate
+COMM.DAT,0x5F72,て<N:≠:16>な行な行な行な行な行な行勝ロょ回で子聖員臣場聖員<N:．:2>本な行,30,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 D5 A2 73 9E 30 96 CD 8D 8B 89 CD 8D 0F 92 1D 74,unverified_direct_candidate
+COMM.DAT,0x5F92,て<N:≠:16>な行な行な行な行な行な行ょ回で子聖員臣場聖員<N:．:2>本め来な行,30,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 73 9E 30 96 CD 8D 8B 89 CD 8D 0F 92 51 9A 1D 74,unverified_direct_candidate
+COMM.DAT,0x5FB2,て<N:≠:16>な行な行な行な行な行な行で子聖員臣場聖員<N:．:2>本で子石回な行,30,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 30 96 CD 8D 8B 89 CD 8D 0F 92 30 96 94 9E 1D 74,unverified_direct_candidate
+COMM.DAT,0x5FD2,て<N:≠:16>な行な行な行な行な行な行聖員臣場聖員<N:．:2>本で子ょ回ャフな行,30,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 CD 8D 8B 89 CD 8D 0F 92 30 96 73 9E D6 A6 1D 74,unverified_direct_candidate
+COMM.DAT,0x5FF2,て<N:≠:16>な行な行な行な行な行な行臣場聖員<N:．:2>本で子ょ回勝ロ<N:７:11>ュな行,30,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 8B 89 CD 8D 0F 92 30 96 73 9E D5 A2 18 AB 1D 74,unverified_direct_candidate
+COMM.DAT,0x6012,て<N:≠:16>な行な行な行な行な行な行聖員<N:．:2>本で子ょ回勝ロ<N:７:11>ュ会男な行,30,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 CD 8D 0F 92 30 96 73 9E D5 A2 18 AB 7B B3 1D 74,unverified_direct_candidate
+COMM.DAT,0x6032,て<N:≠:16>な行な行な行な行な行な行な行な行な行な行な行な行な行な行,30,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74,unverified_direct_candidate
+COMM.DAT,0x6052,て<N:≠:16>な行な行な行な行な行な行な行な行な行な行な行な行な行な行,30,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74,unverified_direct_candidate
+COMM.DAT,0x6F66,て<N:≠:16>な行な行な行な行な行な行な行て,17,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 21,unverified_direct_candidate
+COMM.DAT,0x6F86,て<N:≠:16>な行な行な行な行な行な行な行て,17,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 21,unverified_direct_candidate
+COMM.DAT,0x6FA6,て<N:≠:16>な行な行な行な行な行な行な行て,17,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 21,unverified_direct_candidate
+COMM.DAT,0x6FC6,て<N:≠:16>な行な行な行な行な行な行な行て,17,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 21,unverified_direct_candidate
+COMM.DAT,0x6FE6,て<N:≠:16>な行な行な行な行な行な行な行て,17,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 21,unverified_direct_candidate
+COMM.DAT,0x7006,て<N:≠:16>な行な行な行な行な行な行な行た1ぜはねよ0人役兵ナジ<CTRL:FF>ジ,30,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1F 12 A7 28 4C 3D 11 52 B6 66 7C 7F FF 7F,unverified_direct_candidate
+COMM.DAT,0x7026,て<N:≠:16>な行な行な行な行な行な行な行な行な行な行な行な行<CTRL:FF>ジな行,30,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 FF 7F 1D 74,unverified_direct_candidate
+COMM.DAT,0x7046,て<N:≠:16>な行な行な行な行な行な行な行な行な行な行な行な行な,27,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D,unverified_direct_candidate
+COMM.DAT,0x7066,て<N:≠:16>な行な行な行な行な行な行な行,16,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74,unverified_direct_candidate
+COMM.DAT,0x8804,様ポウ加ぶュっ話ュ所役見軍テ<CTRL:E6>,15,CB D7 71 AA CA AB A1 B0 AB C2 B6 A0 BA DB E6,unverified_direct_candidate
+COMM.DAT,0x8F35,？僧き（め前王れ兵父ピトジ<N:＄:1>,14,3C 84 44 09 51 AE 5D 32 66 B7 72 5C 7F 05,unverified_direct_candidate
+COMM.DAT,0xB237,れるる話,4,32 22 22 B0,unverified_direct_candidate
+COMM.DAT,0xBFF2,て<N:≠:16>たナたナたナたナたナたナたナ,16,21 04 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C,unverified_direct_candidate
+COMM.DAT,0xC012,て<N:≠:16>しメしメしメしメしメしメしメ,16,21 04 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78,unverified_direct_candidate
+COMM.DAT,0xC026,ー（む4さう炎とモち,10,31 09 B5 15 3A 26 BF 36 5F 4B,unverified_direct_candidate
+COMM.DAT,0xC032,て<N:≠:16>しメしメしメしメしメしメしメ,16,21 04 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78,unverified_direct_candidate
+COMM.DAT,0xC048,ー（む4さう炎と,8,31 09 B5 15 3A 26 BF 36,unverified_direct_candidate
+COMM.DAT,0xC052,て<N:≠:16>しメしメしメしメしメしメしメ,16,21 04 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78,unverified_direct_candidate
+COMM.DAT,0xC06A,ー（む4さう,6,31 09 B5 15 3A 26,unverified_direct_candidate
+COMM.DAT,0xC072,て<N:≠:16>しメしメしメしメしメしメしメ,16,21 04 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78,unverified_direct_candidate
+COMM.DAT,0xC0B2,て<N:≠:16>しメしメしメしメしメしメしメ,16,21 04 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78,unverified_direct_candidate
+COMM.DAT,0xC0C6,場’，4撃 だれ年ア,10,89 08 0D 15 B1 25 35 32 DA 42,unverified_direct_candidate
+COMM.DAT,0xC0D2,て<N:≠:16>しメしメしメしメしメしメしメ,16,21 04 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78,unverified_direct_candidate
+COMM.DAT,0xC0E8,場’，4撃 だれ,8,89 08 0D 15 B1 25 35 32,unverified_direct_candidate
+COMM.DAT,0xC0F2,て<N:≠:16>しメしメしメしメしメしメしメ,16,21 04 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78,unverified_direct_candidate
+COMM.DAT,0xC132,て<N:≠:16>しメしメしメしメしメしメしメしメしメしメしメしメしメ<CTRL:FF>ジ,30,21 04 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 FF 7F,unverified_direct_candidate
+COMM.DAT,0xC162,しメしメしメしメしメしメ<CTRL:FF>ジ,14,1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 FF 7F,unverified_direct_candidate
+COMM.DAT,0xC172,て<N:≠:16>しメしメしメしメしメしメしメしメしメしメしメしメしメ<CTRL:FF>ジ,30,21 04 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 FF 7F,unverified_direct_candidate
+COMM.DAT,0xC192,て<N:≠:16>しメしメしメしメしメしメしメしメしメしメしメしメしメ<CTRL:FF>ジ,30,21 04 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 FF 7F,unverified_direct_candidate
+COMM.DAT,0xC1B2,て<N:≠:16>しメしメしメしメしメしメしメしメしメしメしメしメしメ<CTRL:FF>ジ,30,21 04 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 1E 78 FF 7F,unverified_direct_candidate
+COMM.DAT,0xD543,ヤ軍軍年お首て,8,BB BA BA DA 3B DE DD 21,unverified_direct_candidate
+COMM.DAT,0xE282,て<N:≠:16>な行な行な行な行な行な行な行な行な行な行な行な行な行な行そ,31,21 04 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 1D 74 41,unverified_direct_candidate
+COMM.DAT,0xE2E3,か今今今か ,6,20 C8 C8 C8 20 01,unverified_direct_candidate
+COMM.DAT,0xE30B,か今今今か”,6,20 C8 C8 C8 20 03,unverified_direct_candidate
+COMM.DAT,0xE563,か今今今かな,6,20 C8 C8 C8 20 1D,unverified_direct_candidate
+COMM.DAT,0xE663,か今今今かは,6,20 C8 C8 C8 20 28,unverified_direct_candidate
+COMM.DAT,0xE6A3,か今今今かす,6,20 C8 C8 C8 20 2B,unverified_direct_candidate
+COMM.DAT,0xE7A3,か今今今かと,6,20 C8 C8 C8 20 36,unverified_direct_candidate
+COMM.DAT,0xE7E3,か今今今かり,6,20 C8 C8 C8 20 39,unverified_direct_candidate
+COMM.DAT,0xE8E3,か今今今かき,6,20 C8 C8 C8 20 44,unverified_direct_candidate
+COMM.DAT,0xE923,か今今今かス,6,20 C8 C8 C8 20 47,unverified_direct_candidate
+COMM.DAT,0xEA23,か今今今か人,6,20 C8 C8 C8 20 52,unverified_direct_candidate
+COMM.DAT,0xEB6B,か今今今かシ,6,20 C8 C8 C8 20 60,unverified_direct_candidate
+COMM.DAT,0xEBAB,か今今今か戦,6,20 C8 C8 C8 20 63,unverified_direct_candidate
+COMM.DAT,0xECAB,か今今今か何,6,20 C8 C8 C8 20 6E,unverified_direct_candidate
+COMM.DAT,0xF786,様風<N:＄:1>参ッ石ッ石そす,10,CB C1 05 A5 82 94 82 94 41 8C,unverified_direct_candidate
+COMM.DAT,0x10042,たナたナたナたナたナたナたナたナ,16,1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C,unverified_direct_candidate
+COMM.DAT,0x10082,老は命・地だどくこな勝 軍れリそ撃王出何場のちん0アたナへリ,30,A8 28 CC 2C 90 35 54 3E 2E 1D D5 25 BA 32 6B 41 B1 5D 56 6E 89 1C 4B 2D 11 42 1F 7C 5A 6B,unverified_direct_candidate
+COMM.DAT,0x100C2,たナたナたナたナたナたナたナたナ,16,1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C,unverified_direct_candidate
+COMM.DAT,0x100D4,俺聞加自目のバ3分<N:ﾉ:6>ばリたナたナたナたナたナたナたナたナたナたナたナたナたナたナたナたナパ,45,AD 88 AA A4 AC 1C AF 14 B2 10 58 6B 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C A3,unverified_direct_candidate
+COMM.DAT,0x1028D,ジ命ニ敵時ニ 2 我あ,12,7F CC D1 BD CF D1 DF CF 13 25 BE 3F,unverified_direct_candidate
+COMM.DAT,0x1090E,発<N:ク:12>敵場大ン地加’下が,11,76 80 BD 89 50 34 90 AA 08 70 2A,unverified_direct_candidate
+COMM.DAT,0x10932,備発どで聞 フょ,8,C5 76 54 30 88 01 C9 73,unverified_direct_candidate
+COMM.DAT,0x10F42,0つ達場聞,5,11 45 83 89 88,unverified_direct_candidate
+COMM.DAT,0x10F9C,0び来0”0聞下決シもか0びへか<N:．:2>シ”気追,22,11 99 9A 11 03 11 88 70 9D 60 38 20 11 99 8A 20 0F 60 03 A9 DE 60,unverified_direct_candidate
+COMM.DAT,0x11ABA,待か！シサめわ,7,98 20 02 60 77 51 43,unverified_direct_candidate
+COMM.DAT,0x11AEE,ろ発ろ0ウっサ長か<N:X:20>下,11,55 76 55 11 71 75 77 D4 20 06 70,unverified_direct_candidate
+COMM.DAT,0x1234A,時命敵時不,6,CF CC BD CF DD 71,unverified_direct_candidate
+COMM.DAT,0x124FC,ふいむ兵そ,5,97 1B B5 66 41,unverified_direct_candidate
+COMM.DAT,0x1265A,ろ発発発サ出ジ00（,10,55 76 76 76 77 56 7F 11 11 09,unverified_direct_candidate
+COMM.DAT,0x12949,士 ど4シピ”）思にた員<N:＄:1>思大,15,68 01 54 15 60 72 03 0A 9F 23 1F 8D 05 9F 50,unverified_direct_candidate
+COMM.DAT,0x13A41,サ入場見<N:＄:1>兵父っろラや<N:＄:1>か！ウるデサ,18,77 86 89 A0 05 66 B7 75 55 57 40 05 20 02 71 22 81 77,unverified_direct_candidate
+COMM.DAT,0x14012,バ待と力らめ下か<N:ｌ:6>者,10,AF 98 36 61 33 51 70 20 0C 7E,unverified_direct_candidate
+COMM.DAT,0x14C35,聞聞攻 メ,5,88 88 D0 25 78,unverified_direct_candidate
+COMM.DAT,0x155AA,会ナリむむはヤる（世 言へむ<N:ﾉ:6>,15,7B 7C 6B B5 B5 28 BB 22 09 CE 01 91 5A B5 10,unverified_direct_candidate
+COMM.DAT,0x15AD1,待ウっ待手’兵令<N:ъ:14>大兵0る地4,16,98 71 75 98 87 08 66 DE 52 1A 50 66 11 22 90 15,unverified_direct_candidate
+COMM.DAT,0x15E7C,・サっ ろ,5,2C 77 75 01 55,unverified_direct_candidate
+COMM.DAT,0x162EF,デび加時テ時<N:ク:12>,7,81 99 AA CF DB CF 80,unverified_direct_candidate
+COMM.DAT,0x162FB,0出私待ぞサ倍風命いカ<CTRL:FF>,13,11 56 85 98 6A 77 DF 17 C1 CC 1B BC FF,unverified_direct_candidate
+COMM.DAT,0x16364,聞せ炎兵サ0役のい<N:ク:12>！ー階思,15,88 59 BF 66 77 11 B6 1C 1B 80 02 31 DD B2 9F,unverified_direct_candidate
+COMM.DAT,0x1659C,4ろ る聞（備,7,15 55 25 22 88 09 C5,unverified_direct_candidate
+COMM.DAT,0x16758,んやデ気せ私そ！見炎場私<N:｣:11>0発ダ一3,18,2D 40 81 A9 59 85 41 02 A0 BF 89 85 65 11 76 67 8E 14,unverified_direct_candidate
+COMM.DAT,0x172F7,大”ト我長で地0っ力4や。,13,50 03 95 BE D4 30 90 11 75 61 15 40 37,unverified_direct_candidate
+COMM.DAT,0x173D8,地場ろモ’,5,90 89 55 5F 08,unverified_direct_candidate
+COMM.DAT,0x173DE,言へ場し方見ロ下炎下,10,91 8A 89 1E C4 A0 A2 70 BF 70,unverified_direct_candidate
+COMM.DAT,0x17D14,つれる支,5,29 32 22 DE 10,unverified_direct_candidate
+COMM.DAT,0x18894,聞加）者山戻，<N:ク:12>”ナかウ力大 待’回デン発出サ出国<N:＄:1> ,27,88 AA 0A 7E 9B D9 0D 80 03 7C 20 71 61 50 01 98 08 9E 81 34 76 56 77 56 5E 05 01,unverified_direct_candidate
+COMM.DAT,0x191BC,あ兵ササ出聞気は,8,3F 66 77 77 56 88 A9 28,unverified_direct_candidate
+COMM.DAT,0x193AD,気<CTRL:F6>男参場私 0発ダ聞よれ来’サ,17,A9 F6 B3 A5 89 85 DF 65 11 76 67 88 3D 32 9A 08 77,unverified_direct_candidate
+COMM.DAT,0x19AD0,ろ0めいふ,5,55 11 51 1B 97,unverified_direct_candidate
+COMM.DAT,0x19D0F,び4デ！ご私,6,99 15 81 02 79 85,unverified_direct_candidate
+COMM.DAT,0x1AA6F,聞霊め聞気聞へ 攻,9,88 4F 51 88 A9 D3 8A 01 D0,unverified_direct_candidate
+COMM.DAT,0x1ABDC,王ダク3兵40”,8,5D 67 4E 14 66 15 11 03,unverified_direct_candidate
+COMM.DAT,0x1AD3D,シダサジ兵ササえ101,11,60 67 77 7F 66 77 77 46 12 11 12,unverified_direct_candidate
+COMM.DAT,0x1B6EE,シ出聞聞ージれら撃0発ササ人<N:≠:16>父 <N:ｌ:5>む地,20,60 56 88 88 31 7F 32 33 B1 11 76 77 77 52 04 B7 01 5B B5 90,unverified_direct_candidate
+COMM.DAT,0x1C4DF,びび0”男き父,7,99 99 11 03 B3 44 B7,unverified_direct_candidate
+COMM.DAT,0x1C63B,大ろ ジ下下,6,50 55 01 7F 70 70,unverified_direct_candidate
+COMM.DAT,0x1C7CB,えてろ4！ 本員てバ,11,46 21 55 15 02 E0 33 92 8D 21 AF,unverified_direct_candidate
+COMM.DAT,0x1C810,ウ前0気来,5,71 AE 11 A9 9A,unverified_direct_candidate
+COMM.DAT,0x1C8A6,シダ発見,4,60 67 76 A0,unverified_direct_candidate
+COMM.DAT,0x1CB2B,デ聞デ場,4,81 88 81 89,unverified_direct_candidate
+COMM.DAT,0x1ECDF,かシき他,5,20 60 44 DE 08,unverified_direct_candidate
+COMM.DAT,0x1ECF1,のシき他,5,1C 60 44 DE 08,unverified_direct_candidate
+COMM.DAT,0x1F426,つ見入自正老’俺入石今待が決<CTRL:E5>げま参’トつっぜ自今老（俺じ撃たナたナたナたナたナたナたナたナたナたナたナたナたナたナたナたナパ,63,45 A0 86 A4 C7 A8 08 AD 86 94 C8 98 2A 9D E5 9C 27 A5 08 95 29 A1 A7 A4 C8 A8 09 AD 4A B1 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C A3,unverified_direct_candidate
+COMM.DAT,0x1FA54,大ろおろナバ<N:ﾉ:6>の大ろ時”す,13,50 55 3B 55 7C AF 10 1C 50 55 CF 03 2B,unverified_direct_candidate
+COMM.DAT,0x1FC85,ウ4兵出 を,6,71 15 66 56 01 2F,unverified_direct_candidate
+COMM.DAT,0x203F6,兵出者役大<N:X:20>兵ダ大,9,66 56 7E B6 50 06 66 67 50,unverified_direct_candidate
+COMM.DAT,0x2107A,命男動<N:ｌ:6>たが下ゃ,8,CC B3 DC 0C 1F 2A 70 48,unverified_direct_candidate
+COMM.DAT,0x21424,ろのじ年地で<N:．:2>水炎,9,55 1C 4A DA 90 30 0F B8 BF,unverified_direct_candidate
+COMM.DAT,0x21BB4,命ラろ兵出れわジ<CTRL:FF>ンタダ待,13,CC 57 55 66 56 32 43 7F FF 34 62 67 98,unverified_direct_candidate
+COMM.DAT,0x22686,大参テ加加や,6,50 A5 DB AA AA 40,unverified_direct_candidate
+COMM.DAT,0x22848,発バ様ぶで,5,76 AF CB CA 30,unverified_direct_candidate
+COMM.DAT,0x22C6F,命動そ<N:ｃ:9>時攻伐近,10,CC DC 41 17 CF D0 DD CD DE 44,unverified_direct_candidate
+COMM.DAT,0x22EC8,シラ発サか,5,60 57 76 77 20,unverified_direct_candidate
+COMM.DAT,0x22F4C,わ画”ろ4風動シ,9,43 DE 7F 03 55 15 C1 DC 60,unverified_direct_candidate
+COMM.DAT,0x2308F,サ出シ兵ラ気ろ<N:ク:12>”で,10,77 56 60 66 57 A9 55 80 03 30,unverified_direct_candidate
+COMM.DAT,0x23989,こつ4力めごで兵（,9,2E 45 15 61 51 79 30 66 09,unverified_direct_candidate
+COMM.DAT,0x243B5,後の風カ,4,C3 1C C1 BC,unverified_direct_candidate
+COMM.DAT,0x249F2,下聖れにフシ,6,70 CD 32 23 A6 60,unverified_direct_candidate
+COMM.DAT,0x24F06,パカた風,4,A3 BC 1F C1,unverified_direct_candidate
+COMM.DAT,0x2515C,の風00 命会,7,1C C1 11 11 01 CC 7B,unverified_direct_candidate
+COMM.DAT,0x2525F,命兵ろ0 で,6,CC 66 55 11 25 30,unverified_direct_candidate
+COMM.DAT,0x25B16,下出へ地,4,70 56 5A 90,unverified_direct_candidate
+COMM.DAT,0x26080,ろ備ャ命精や世炎動命聖トろ兵<N:ク:12>！,16,55 C5 D6 CC 4D 40 CE BF DC CC CD 5C 55 66 80 02,unverified_direct_candidate
+COMM.DAT,0x261B8,ろ私すか命炎命000風待下”命ヤ聞・シ！待思’下！聞動<N:ﾉ:6>,28,55 85 2B 20 CC BF CC 11 11 11 C1 98 70 03 CC BB 88 2C 60 02 98 9F 08 70 02 88 DC 10,unverified_direct_candidate
+COMM.DAT,0x26280,・兵兵0風0,7,DF 61 66 66 11 C1 11,unverified_direct_candidate
+COMM.DAT,0x26D20,方1ジアき1方マ,8,C4 12 7F 42 44 12 C4 64,unverified_direct_candidate
+COMM.DAT,0x26DDA,兵<N:リ:12>発っ出すで,7,66 6F 76 75 56 2B 30,unverified_direct_candidate
+COMM.DAT,0x26E9A,<CTRL:FB>攻 ！兵るらに0思ろ4め出ろ話きで,19,FB D0 E0 1F 02 66 22 33 23 11 9F 55 15 51 56 55 B0 44 30,unverified_direct_candidate
+COMM.DAT,0x27C14,ろ我<N:ﾉ:6> ろろ発備参て,10,55 BE 10 01 55 55 76 C5 A5 21,unverified_direct_candidate
+COMM.DAT,0x28047,メ来0ダシれ<N:＆:4>下ゃち20ニ話,14,78 9A 11 67 60 32 07 70 48 4B 13 11 D1 B0,unverified_direct_candidate
+COMM.DAT,0x28345,<N:ﾉ:6>炎動・後らに命,8,10 BF DC 2C C3 33 23 CC,unverified_direct_candidate
+COMM.DAT,0x2856A,戦00ろっダ決,7,63 11 11 55 75 67 9D,unverified_direct_candidate
+COMM.DAT,0x29075,兵兵出備父発ジサ下”,10,66 66 56 C5 B7 76 7F 77 70 03,unverified_direct_candidate
+COMM.DAT,0x29913,<N:＄:1>ろ出モ発役テれきま,10,05 55 56 5F 76 B6 DB 32 44 27,unverified_direct_candidate
+COMM.DAT,0x2A2DD,大 すサ兵出4か！ば兵入下！命<N:ﾉ:6>’か,18,50 01 8C 77 66 56 15 20 02 58 66 86 70 02 CC 10 08 20,unverified_direct_candidate
+COMM.DAT,0x2A43B,で0大父出る4で”大るで 出敵ろ<N:ﾉ:6>,17,30 11 50 B7 56 22 15 30 03 50 22 30 01 56 BD 55 10,unverified_direct_candidate
+COMM.DAT,0x2A975,時ろ発出出フ2見,8,CF 55 76 56 56 A6 13 A0,unverified_direct_candidate
+COMM.DAT,0x2AC8C,パ地たー,4,A3 90 1F 31,unverified_direct_candidate
+COMM.DAT,0x2BBC5,命で 聞の ,6,CC 30 01 88 1C 01,unverified_direct_candidate
+COMM.DAT,0x2BDC0,”ょご <CTRL:EA>臣石皇のめ4後であマ,16,03 73 79 01 EA 8B 94 DE E7 1C 51 15 C3 30 3F 64,unverified_direct_candidate
+COMM.DAT,0x2BEB9, 攻待きジ 老,8,E0 EE D0 98 44 7F 01 A8,unverified_direct_candidate
+COMM.DAT,0x2BF5F,<N:７:11>、聞にメま聞にメま聞にメま聞に,16,18 24 88 23 78 27 88 23 78 27 88 23 78 27 88 23,unverified_direct_candidate
+COMM.DAT,0x2DC72,”こ ”ど ”こ ）シ,11,03 2E 01 03 54 01 03 7A 01 0A 60,unverified_direct_candidate
+COMM.DAT,0x2EF9B,3タか備ではよへけ命ろこタ言ピ3ジカジ<CTRL:FF>ジたナャ3炎<N:３:14>思い,29,14 62 20 C5 30 28 3D 8A 49 CC 55 2E 62 91 72 14 7F BC 7F FF 7F 1F 7C D6 14 BF 19 9F 1B,unverified_direct_candidate
+COMM.DAT,0x2F01B,3タか備ではよへけ命ろこタ言ピ3ジカジ<CTRL:FF>ジたナャ3炎<N:３:14>思い,29,14 62 20 C5 30 28 3D 8A 49 CC 55 2E 62 91 72 14 7F BC 7F FF 7F 1F 7C D6 14 BF 19 9F 1B,unverified_direct_candidate
+COMM.DAT,0x2F574,0れわ<N:ク:12>かに広きンアに1,13,11 32 43 80 20 23 DF 43 44 34 42 23 12,unverified_direct_candidate
+COMM.DAT,0x2F636,話い <N:ﾉ:6>のウ発出者ょるーる れわン精<N:ﾉ:6>霊れ0撃撃あるり,27,B0 1B 01 10 1C 71 76 56 7E 73 22 31 22 01 32 43 34 4D 10 4F 32 11 B1 B1 3F 22 39,unverified_direct_candidate
+COMM.DAT,0x2F759,め3あ聞気場聞 る精ど4,12,51 14 3F 88 A9 89 88 01 22 4D 54 15,unverified_direct_candidate
+COMM.DAT,0x2F766,思00聞び聞1,7,9F 11 11 88 99 88 12,unverified_direct_candidate
+COMM.DAT,0x2F8B0,ッしマラ発サ兵時,8,82 1E 64 57 76 77 66 CF,unverified_direct_candidate
+COMM.DAT,0x2F958,パ聖か達者う言”山か聞を<N:＄:1>か士精’し,18,A3 CD 20 83 7E 26 91 03 9B 20 88 2F 05 20 68 4D 08 1E,unverified_direct_candidate
+COMM.DAT,0x30089,撃ヤ人マた”,6,B1 BB 52 64 1F 03,unverified_direct_candidate
+COMM.DAT,0x3045A,パ目たあ,4,A3 AC 1F 3F,unverified_direct_candidate
+COMM.DAT,0x30FA0,パすた敵,4,A3 8C 1F BD,unverified_direct_candidate
+COMM.DAT,0x31133,，れ れるきるわ謁,10,0D 32 25 32 22 44 22 43 DF 54,unverified_direct_candidate
+COMM.DAT,0x3142E,話い聞われンわるに<N:７:11> よル何,14,B0 1B 88 43 32 34 43 22 23 18 01 3D 53 6E,unverified_direct_candidate
+COMM.DAT,0x3166C,臣達待にて,5,8B 83 98 23 21,unverified_direct_candidate
+COMM.DAT,0x31672,命れやデ,4,CC 32 40 81,unverified_direct_candidate
+COMM.DAT,0x31694,ちか腐て場気来みン,10,4B 20 DF 12 21 89 A9 9A 6D 34,unverified_direct_candidate
+COMM.DAT,0x32182,0ヤで<N:＄:1>び達来聞オ 本戦思,13,11 BB 30 05 99 83 9A 88 8F 01 92 63 9F,unverified_direct_candidate
+COMM.DAT,0x321F2,つシ炎サダ発サダ4大）<N:｣:11>何地 ,15,29 60 BF 77 67 76 77 67 15 50 0A 65 6E 90 01,unverified_direct_candidate
+COMM.DAT,0x3299F,決てよサジふめ兵出4え”国<N:≠:16>あれ2 ,18,9D 21 3D 77 7F 97 51 66 56 15 46 03 5E 04 3F 32 13 01,unverified_direct_candidate
+COMM.DAT,0x32D28,わらンポにヤ0人,8,43 33 34 D7 23 BB 11 52,unverified_direct_candidate
+COMM.DAT,0x32D71,るら、れ士,5,22 33 24 32 68,unverified_direct_candidate
+COMM.DAT,0x333AB,かれにか<N:≠:16>てる死て,10,20 32 23 20 04 21 22 DD 22 21,unverified_direct_candidate
+COMM.DAT,0x33404,め サるるにか！るれるモ3父<CTRL:F3>てきを れ所聖,22,51 01 77 22 22 23 20 02 22 32 22 5F 14 B7 F3 21 44 2F 01 32 C2 CD,unverified_direct_candidate
+COMM.DAT,0x33616,ュはれ下,4,AB 28 32 70,unverified_direct_candidate
+COMM.DAT,0x337F8,ジ発ササダ4ろ発や知回た,12,7F 76 77 77 67 15 55 76 40 C6 9E 1F,unverified_direct_candidate
+COMM.DAT,0x33805,力00発シ参り,7,61 11 11 76 60 A5 39,unverified_direct_candidate
+COMM.DAT,0x342AD,炎めサ出発サ出た”’ジ,11,BF 51 77 56 76 77 56 1F 03 08 7F,unverified_direct_candidate
+COMM.DAT,0x34391,様カめ”ろ兵ク,7,CB BC 51 03 55 66 4E,unverified_direct_candidate
+COMM.DAT,0x34A09,ー打らろど命動40霊ジ1れあわる撃命チ3<CTRL:F7>かれ2で,26,31 DF 24 33 55 54 CC DC 15 11 4F 7F 12 32 3F 43 22 B1 CC 6C 14 F7 20 32 13 30,unverified_direct_candidate
+COMM.DAT,0x34BF2,方命カヤオ,5,C4 CC BC BB 8F,unverified_direct_candidate
+COMM.DAT,0x34C0A,にれンわら様れる<N:ぇ:2>,9,23 32 34 43 33 CB 32 22 C0,unverified_direct_candidate
+COMM.DAT,0x34C22,れにれリ0て僧,7,32 23 32 6B 11 21 84,unverified_direct_candidate
+COMM.DAT,0x34D17,る人ら撃い風、力,8,22 52 33 B1 1B C1 24 61,unverified_direct_candidate
+COMM.DAT,0x35434,ラだルろ<CTRL:F7>だル出な。 れるきあるわど,18,57 35 53 55 F7 35 53 56 1D 37 25 32 22 44 3F 22 43 54,unverified_direct_candidate
+COMM.DAT,0x354EA,<N:ﾉ:6>めわらまるわ霊,8,10 51 43 33 27 22 43 4F,unverified_direct_candidate
+COMM.DAT,0x3581E,攻30001本国つ我デ,11,D0 14 11 11 11 12 92 5E 45 BE 81,unverified_direct_candidate
+COMM.DAT,0x35864,0らら父ニ，る  ら1た0れ工らにてれジ,21,11 33 33 B7 D1 0D 22 01 01 33 12 1F 11 32 DF 44 33 23 21 32 7F,unverified_direct_candidate
+COMM.DAT,0x35A3C,め出聞0戦2,6,51 56 88 11 63 13,unverified_direct_candidate
+COMM.DAT,0x360A6,パげた精,4,A3 9C 1F 4D,unverified_direct_candidate
+COMM.DAT,0x363C7,<N:ク:12>！か・デ めク 撃・人に）,14,80 02 20 2C 81 01 51 4E 01 B1 2C 52 23 0A,unverified_direct_candidate
+COMM.DAT,0x36695,かれく地,4,20 32 3E 90,unverified_direct_candidate
+COMM.DAT,0x3679B,る1で会かてヤ0ヤ世ピ達ら人デ！ ロカー 言ン<N:ク:12>（国,26,22 12 30 7B 20 21 BB 11 BB CE 72 83 33 52 81 02 01 A2 BC 31 01 91 34 80 09 5E,unverified_direct_candidate
+COMM.DAT,0x36911,や”む大ク,5,40 03 B5 50 4E,unverified_direct_candidate
+COMM.DAT,0x370B8,話い聞われン戻る <N:ﾉ:6>ジ！,12,B0 1B 88 43 32 34 D9 22 01 10 7F 02,unverified_direct_candidate
+COMM.DAT,0x37388,デびむか行れ”パかデっ,11,81 99 B5 20 74 32 03 A3 20 81 A1,unverified_direct_candidate
+COMM.DAT,0x37CC4,ジろ出4撃のわる,8,7F 55 56 15 B1 1C 43 22,unverified_direct_candidate
+COMM.DAT,0x38210,かは撃ら4）発恐4,10,20 28 B1 33 15 0A 76 DD AF 15,unverified_direct_candidate
+COMM.DAT,0x38616,，れ れるジきるわど,10,0D 32 25 32 22 7F 44 22 43 54,unverified_direct_candidate
+COMM.DAT,0x38916,気ベヤュき者リ”0自ベヤじ待サめ炎地気加0ヤち3！ベ様石メすや,31,A9 B4 BB AB 44 7E 6B 03 11 A4 B4 BB 4A 98 77 51 BF 90 A9 AA 11 BB 4B 14 02 B4 CB 94 78 8C 40,unverified_direct_candidate
+COMM.DAT,0x38A8E,3言ちジわ山そヤヤちびひ<N:ﾉ:6><CTRL:FF>下ゃ上ヤ<N:ｃ:12>ヤヤいど石！手でち3わ聞来 デ見,35,14 91 4B 7F 43 9B 41 BB BB 4B 99 7D 10 FF 70 48 B9 BB 16 BB BB 1B 54 94 02 87 30 4B 14 43 88 9A 01 81 A0,unverified_direct_candidate
+COMM.DAT,0x38AF1,炎え0ーお0ベリ,8,BF 46 11 31 3B 11 B4 6B,unverified_direct_candidate
+COMM.DAT,0x38AFA,加さみ0やわ,6,AA 3A 6D 11 40 43,unverified_direct_candidate
+COMM.DAT,0x38C70,<CTRL:FF>手びじヤヤ撃いそ時0ベい撃,14,FF 87 99 4A BB BB B1 1B 41 CF 11 B4 1B B1,unverified_direct_candidate
+COMM.DAT,0x38F01,<CTRL:FF>メ老来気3けききあ石ヤ<N:３:14>父石来とャごめジびきき0老待（で））て,32,FF 78 A8 9A A9 14 49 44 44 3F 94 BB 19 B7 94 9A 36 D6 79 51 7F 99 44 44 11 A8 98 09 30 0A 0A 21,unverified_direct_candidate
+COMM.DAT,0x39263,れれ風何,4,32 32 C1 6E,unverified_direct_candidate
+COMM.DAT,0x39995,’メへ”びび加加ジび（,11,08 78 8A 03 99 99 AA AA 7F 99 09,unverified_direct_candidate
+COMM.DAT,0x39A30,ご発下ニ,4,79 76 70 D1,unverified_direct_candidate
+COMM.DAT,0x39FA5,カの撃1風命の。,8,BC 1C B1 12 C1 CC 1C 37,unverified_direct_candidate
+COMM.DAT,0x3AB35,れにポれ0て僧,7,32 23 D7 32 11 21 84,unverified_direct_candidate
+COMM.DAT,0x3AB89,れるン0撃よ命<N:ク:12>”わら様命さ,14,32 22 34 11 B1 3D CC 80 03 43 33 CB CC 3A,unverified_direct_candidate
+COMM.DAT,0x3ABAB,てわる3救,6,21 43 22 14 DE 16,unverified_direct_candidate
+COMM.DAT,0x3ABB2,撃カヤ命父に,6,B1 BC BB CC B7 23,unverified_direct_candidate
+COMM.DAT,0x3AC4E,下聞聞メッ,5,70 88 88 78 82,unverified_direct_candidate
+COMM.DAT,0x3B38A,パすたっ,4,A3 8C 1F A1,unverified_direct_candidate
+COMM.DAT,0x3B880,かンせれデ,5,20 34 59 32 81,unverified_direct_candidate
+COMM.DAT,0x3C3F9,トめダ<CTRL:E7>発ジろ軍てゃ,10,5C 51 67 E7 76 7F 55 BA 21 48,unverified_direct_candidate
+COMM.DAT,0x3C404,様命めバめめ出ろ上めい<N:ク:12>”カ正0ろめの,19,CB CC 51 AF 51 51 56 55 B9 51 1B 80 03 BC C7 11 55 51 1C,unverified_direct_candidate
+COMM.DAT,0x3C6ED,兵出今3撃す,6,66 56 C8 14 B1 8C,unverified_direct_candidate
+COMM.DAT,0x3CAD5,あえ攻ろ発聞サ出1,9,3F 46 D0 55 76 D3 77 56 12,unverified_direct_candidate
+COMM.DAT,0x3D1BD,力ジ力ラ0力00ヤた,10,61 7F 61 57 11 61 11 11 BB 1F,unverified_direct_candidate
+COMM.DAT,0x3D28E,カ00に3王1地1わに,11,BC 11 11 23 14 5D 12 90 12 43 23,unverified_direct_candidate
+COMM.DAT,0x3D3EE,1てるらナデ,6,12 21 22 33 7C 81,unverified_direct_candidate
+COMM.DAT,0x3D47B,力カ トた,5,61 BC 01 95 1F,unverified_direct_candidate
+COMM.DAT,0x3D7FF,も上霊ン，ウ<N:≠:16>てわ男れ,11,38 B9 4F 34 0D 71 04 21 43 B3 32,unverified_direct_candidate
+COMM.DAT,0x3DDDF,か4のメ人,5,20 15 1C 78 52,unverified_direct_candidate
+COMM.DAT,0x3DE41,え力かれカシ,6,46 61 20 32 BC 60,unverified_direct_candidate
+COMM.DAT,0x3DF18,時た様命い導び,8,CF 1F CB CC 1B DE 03 99,unverified_direct_candidate
+COMM.DAT,0x3DF6F,0撃の炎ニんわき0い,10,11 B1 1C BF D1 2D 43 44 11 1B,unverified_direct_candidate
+COMM.DAT,0x3E050,て見でーポらき1れ シり,12,21 A0 30 31 D7 33 44 12 32 01 60 39,unverified_direct_candidate
+COMM.DAT,0x3E877,山っ出た,4,9B 75 56 1F,unverified_direct_candidate
+COMM.DAT,0x3E976,めめ出一風,5,51 51 56 8E C1,unverified_direct_candidate
+COMM.DAT,0x3EADF,ウダっモう,5,71 67 75 5F 26,unverified_direct_candidate
+COMM.DAT,0x3EB63,ウっラてモ3下 子 ラ ,12,71 75 57 21 5F 14 70 01 96 01 57 01,unverified_direct_candidate
+COMM.DAT,0x3EB76,会っ戦。シ0めよ,8,7B A1 63 37 60 11 51 3D,unverified_direct_candidate
+COMM.DAT,0x3F2D7,てわらめ力ジろ出ジ知命命命は1<CTRL:F7>メ,17,21 43 33 51 61 7F 55 56 7F C6 CC CC CC 28 12 F7 78,unverified_direct_candidate
+COMM.DAT,0x3F437,0戻い様じモ”0ヤ参”,11,11 D9 1B CB 4A 5F 03 11 BB A5 03,unverified_direct_candidate
+COMM.DAT,0x3F7E7,話テはメ出も<N:ﾉ:6>ば,8,B0 DB 28 78 56 38 10 58,unverified_direct_candidate
+COMM.DAT,0x3FCF2,臣まパすた ,6,8B 27 A3 8C 1F 01,unverified_direct_candidate
+COMM.DAT,0x40410,か）ら<N:ﾉ:6>ピサ兵精気我た！ろ,13,20 0A 33 10 72 77 66 4D A9 BE 1F 02 55,unverified_direct_candidate
+COMM.DAT,0x4048D,えか）かだ,5,46 20 0A 20 35,unverified_direct_candidate
+COMM.DAT,0x40E3F,らる。0ろージつ風いか）ー,13,33 22 37 11 55 31 7F 45 C1 1B 20 0A 31,unverified_direct_candidate
+COMM.DAT,0x45B1A,今・みだれえりラねつ<CTRL:ED>りバクどじ年アマな<N:‐:2>じをー4といおげサ,30,C8 2C 6D 35 32 46 39 57 4C 29 ED 39 AF 4E 54 4A DA 42 64 1D 0E 4A 2F 31 15 36 1B 3B 9C 77,unverified_direct_candidate
+COMM.DAT,0x45B3A,タか備ではよへけ命ろこタ言ピ3ジ言<N:｣:11>2国待ピ<N:X:20>3勝も 敵ジ,30,62 20 C5 30 28 3D 8A 49 CC 55 2E 62 91 72 14 7F 91 65 13 5E 98 72 06 14 D5 38 DF 6D BD 7F,unverified_direct_candidate
+COMM.DAT,0x46428,入兵兵び<CTRL:F7>ひジか（発サごダ,13,86 66 66 99 F7 7D 7F 20 09 76 77 79 67,unverified_direct_candidate
+COMM.DAT,0x46826,大<N:ｌ:6>ダ兵か4敵ろ話’ろ0め入シ！4ぶっ発聞<N:ぇ:2> め男,25,50 0C 67 66 20 15 BD 55 B0 08 55 11 51 86 60 02 15 CA A1 76 88 C0 01 51 B3,unverified_direct_candidate
+COMM.DAT,0x46F2C,大命か <N:景:1>結壺,10,50 CC 20 01 DE EE DE 77 DF 05,unverified_direct_candidate
+COMM.DAT,0x470D2,か！さ見0ウか”0め4話,12,20 02 3A A0 11 71 20 03 11 51 15 B0,unverified_direct_candidate
+COMM.DAT,0x475EA,攻て1・れ炎らに所る1めジ0,14,D0 21 12 2C 32 BF 33 23 C2 22 12 51 7F 11,unverified_direct_candidate
+COMM.DAT,0x47AE0,士兵ろ<CTRL:FB>棒敵”命チ今兵チ炎発発ョ命員待た  聖思,26,68 66 55 FB DF 0E BD 03 CC 6C C8 66 6C BF 76 76 69 CC 8D 98 1F 01 E0 BD CD 9F,unverified_direct_candidate
+COMM.DAT,0x48037,ダろむ加リ・,6,67 55 B5 AA 6B 2C,unverified_direct_candidate
+COMM.DAT,0x480D7,大テ参ぞで1,6,50 DB A5 6A 30 12,unverified_direct_candidate
+COMM.DAT,0x488DA,っバ加命び命や<N:＄:1>出見,10,A1 AF AA CC 99 CC 40 05 56 A0,unverified_direct_candidate
+COMM.DAT,0x48F7E,シ ジサあ今,6,60 01 7F 77 3F C8,unverified_direct_candidate
+COMM.DAT,0x49427,<CTRL:EE>ひ兵軍てろろ国じれ,10,EE 7D 66 BA 21 55 55 5E 4A 32,unverified_direct_candidate
+COMM.DAT,0x49D35,0  っチ炎出ろ兵ろ発ダシで,14,11 01 01 A1 6C BF 56 55 66 55 76 67 60 30,unverified_direct_candidate
+COMM.DAT,0x4ACB8,炎0て分御加ー,8,BF 11 21 B2 DD AD AA 31,unverified_direct_candidate
+COMM.DAT,0x4AD46,めろ兵子ッ,5,51 55 66 96 82,unverified_direct_candidate
+COMM.DAT,0x4B435,士ッシサジな目後,8,68 82 60 77 7F 1D AC C3,unverified_direct_candidate
+COMM.DAT,0x4B5DC,今 パすた ,6,C8 25 A3 8C 1F 01,unverified_direct_candidate
+COMM.DAT,0x4B79D,発あサごダ,5,76 3F 77 79 67,unverified_direct_candidate
+COMM.DAT,0x4B8DE,らわモらわにき敵ン”戦ジ聞、人時,16,33 43 5F 33 43 23 44 BD 34 03 63 7F 88 24 52 CF,unverified_direct_candidate
+COMM.DAT,0x4BF6D,にスサきききむ き戦<CTRL:E7>”望,15,23 47 77 44 44 44 B5 E0 33 44 63 E7 03 DD 50,unverified_direct_candidate
+COMM.DAT,0x4C012,どつろウ,4,54 45 55 71,unverified_direct_candidate
+COMM.DAT,0x4C813,にマらび気気つ,7,23 64 33 99 A9 A9 45,unverified_direct_candidate
+COMM.DAT,0x4CD9F,め出炎風0家トみ,9,51 56 BF C1 11 DD 5E 5C 6D,unverified_direct_candidate
+COMM.DAT,0x4D094,動上山の炎 <N:ﾉ:6>年俺,9,DC B9 9B 1C BF 01 10 DA AD,unverified_direct_candidate
+COMM.DAT,0x4D4DE,め聞聞待し,5,51 88 88 98 1E,unverified_direct_candidate
+COMM.DAT,0x4D733,話加闘0サモで力,8,B0 AA 93 11 77 5F 30 61,unverified_direct_candidate
+COMM.DAT,0x4D75A,発<N:＆:4>大自から達し,8,76 07 50 A4 20 33 83 1E,unverified_direct_candidate
+COMM.DAT,0x4D8D8,ろ発モっュは,6,55 76 5F A1 AB 28,unverified_direct_candidate
+COMM.DAT,0x4D966,オル聖1大  僧,9,8F 53 CD 12 50 E0 FB 01 84,unverified_direct_candidate
+COMM.DAT,0x4DA0C,兵後シ出。,5,66 C3 60 56 37,unverified_direct_candidate
+COMM.DAT,0x4E19D,？の  気<N:｣:11>ウ父出ろョ炎3大ろデ,16,3C 1C 01 01 A9 65 71 B7 56 55 69 BF 14 50 55 81,unverified_direct_candidate
+COMM.DAT,0x4E785,命炎ね炎シろ待 パひ！ ,12,CC BF 4C BF 60 55 98 25 A3 7D 02 01,unverified_direct_candidate
+COMM.DAT,0x4ED5F,シ<N:ｃ:12>っ力出だる炎サ<N:｣:11>ダろろ兵後力ダ風ろ,19,60 16 A1 61 56 35 22 BF 77 65 67 55 55 66 C3 61 67 C1 55,unverified_direct_candidate
+COMM.DAT,0x4F089,下ダ0会るめね2てるウ,11,70 67 11 7B 22 51 4C 13 21 22 71,unverified_direct_candidate
+COMM.DAT,0x4F678,見軍回モを,5,A0 BA 9E 5F 2F,unverified_direct_candidate
+COMM.DAT,0x4FA64,年従後た  命光か,11,DA DE DC C3 1F 01 01 CC DD 0C 20,unverified_direct_candidate
+COMM.DAT,0x5007A,らび気気,4,33 99 A9 A9,unverified_direct_candidate
+COMM.DAT,0x5008D,ウポサ正の<CTRL:F2>かぶウう,10,71 D7 77 C7 1C F2 20 CA 71 26,unverified_direct_candidate
+COMM.DAT,0x50185,ろっ ーシラ発分や軍ピ,11,55 75 01 31 60 57 76 B2 40 BA 72,unverified_direct_candidate
+COMM.DAT,0x50238,加精ぶ、，軍バな軍攻,10,AA 4D CA 24 0D BA AF 1D BA D0,unverified_direct_candidate
+COMM.DAT,0x5033C, 自攻ヤ，会,7,E0 C4 A4 D0 BB 0D 7B,unverified_direct_candidate
+COMM.DAT,0x508BA,話びびび,4,B0 99 99 99,unverified_direct_candidate
+COMM.DAT,0x50C39,<N:ぇ:2>，来待0戻軍回まで,10,C0 0D 9A 98 11 D9 BA 9E 27 30,unverified_direct_candidate
+COMM.DAT,0x50CCA,所<N:ク:12> 手つ大つ待お ！ひ<CTRL:FB>勝目のウサダ兵時！手,23,C2 80 01 87 45 50 45 98 3B 01 02 7D FB D5 AC 1C 71 77 67 66 CF 02 87,unverified_direct_candidate
+COMM.DAT,0x51102,<CTRL:FF>炎ュ加来な（霊俺来命命  時ッ,16,FF BF AB AA 9A 1D 09 4F AD 9A CC CC 01 25 CF 82,unverified_direct_candidate
+COMM.DAT,0x51648,004った加聞バ加ウジ<N:ｃ:12>何どろご,16,11 11 15 75 1F AA 88 AF AA 71 7F 16 6E 54 55 79,unverified_direct_candidate
+COMM.DAT,0x5168C,大発ジダ<N:ｃ:12>0てれめろこ,11,50 76 7F 67 16 11 21 32 51 55 2E,unverified_direct_candidate
+COMM.DAT,0x51698,我ら 4ろフデ聞に,9,BE 33 01 15 55 A6 81 88 23,unverified_direct_candidate
+COMM.DAT,0x517F5,下出<N:｣:11>命支 屋力命下わ,13,70 56 65 CC DE 10 01 DE 1C 61 CC 70 43,unverified_direct_candidate
+COMM.DAT,0x51CF8,パ待いデ,4,A3 98 1B 81,unverified_direct_candidate
+COMM.DAT,0x51DE0,地ごび待！一,6,90 79 99 98 02 8E,unverified_direct_candidate
+COMM.DAT,0x52074,れ思軍軍軍加び,7,32 9F BA BA BA AA 99,unverified_direct_candidate
+COMM.DAT,0x521EA,加ジど（下達れ,7,AA 7F 54 09 70 83 32,unverified_direct_candidate
+COMM.DAT,0x5236C,3ニ出世か霊 大ン下<N:ク:12>,11,14 D1 56 CE 20 4F 01 50 34 70 80,unverified_direct_candidate
+COMM.DAT,0x523B2,一前石らラ発ウ,7,8E AE 94 33 57 76 71,unverified_direct_candidate
+COMM.DAT,0x5260C,僧ま一0ら撃軍来<N:ク:12>,9,84 27 8E 11 33 B1 BA 9A 80,unverified_direct_candidate
+COMM.DAT,0x5286F,ュ加ュ<N:*:7>霊す前”知ポん0 04兵達,17,AB AA AB 0B 4F 2B AE 03 C6 D7 2D 11 01 11 15 66 83,unverified_direct_candidate
+COMM.DAT,0x529C7,1び思びび,5,12 99 9F 99 99,unverified_direct_candidate
+COMM.DAT,0x52C0E,め撃でめか,5,51 B1 30 51 20,unverified_direct_candidate
+COMM.DAT,0x52C35,兵サナデ  ま,7,66 77 7C 81 01 01 27,unverified_direct_candidate
+COMM.DAT,0x52C3D,発出わたタ<N:ﾉ:6>人ウだダデ,11,76 56 43 1F 62 10 52 71 35 67 81,unverified_direct_candidate
+COMM.DAT,0x52C97,ろウ0ピだ兵兵我役,9,55 71 11 72 35 66 66 BE B6,unverified_direct_candidate
+COMM.DAT,0x52E11,下タ・0サ4父2,8,70 62 2C 11 77 15 B7 13,unverified_direct_candidate
+COMM.DAT,0x52F98,おろシサ聞聞サ’分<N:ク:12>”軍ジ4,14,3B 55 60 77 88 88 77 08 B2 80 03 BA 7F 15,unverified_direct_candidate
+COMM.DAT,0x53077,下ちモしに,5,70 4B 5F 1E 23,unverified_direct_candidate
+COMM.DAT,0x539A4,会回メジ,4,7B 9E 78 7F,unverified_direct_candidate
+COMM.DAT,0x53A55,軍ょ炎発僧<CTRL:EB>本今見動紙（ナ （へ,17,BA 73 BF 76 84 EB 92 C8 A0 DC DE 0F 09 7C 01 09 5A,unverified_direct_candidate
+COMM.DAT,0x54249,るわにごっ我ン<N:ク:12>,8,22 43 23 79 75 BE 34 80,unverified_direct_candidate
+COMM.DAT,0x54539,見敵 サ臣方）下来？き聖<N:≠:16>備,14,A0 BD 01 77 8B C4 0A 70 9A 3C 44 CD 04 C5,unverified_direct_candidate
+COMM.DAT,0x5527C,話ヤ加来 2軍 来の霊0 ！,14,B0 BB AA 9A 01 13 BA 25 9A 1C 4F 11 01 02,unverified_direct_candidate
+COMM.DAT,0x55547,っサ兵ろ攻,5,A1 77 66 55 D0,unverified_direct_candidate
+COMM.DAT,0x583CB,”か ！ね ！か ！ね ！か ！ね ！発,20,03 20 01 02 4C 01 02 20 01 02 4C 01 02 20 01 02 4C 01 02 76,unverified_direct_candidate
+COMM.DAT,0x58542,”る ！ク ！る ！ク ！る ！ク ！自,20,03 22 01 02 4E 01 02 22 01 02 4E 01 02 22 01 02 4E 01 02 A4,unverified_direct_candidate
+COMM.DAT,0x5B524,臣聞あ聞びび聞老来<N:ク:12>,10,8B 88 3F 88 99 99 88 A8 9A 80,unverified_direct_candidate
+COMM.DAT,0x5B8F8,加加，でび思び気加0 正む見見 見<N:ｃ:12>,18,AA AA 0D 30 99 9F 99 A9 AA 11 01 C7 B5 A0 A0 25 A0 16,unverified_direct_candidate
+COMM.DAT,0x5BC69,や）下！出下,6,40 0A 70 02 56 70,unverified_direct_candidate
+COMM.DAT,0x5BE0C,っサ出大,4,75 77 56 50,unverified_direct_candidate
+COMM.DAT,0x5BEC1,か聞め出地 さや”山や,11,20 88 51 56 90 01 3A 40 03 9B 40,unverified_direct_candidate
+COMM.DAT,0x5C025,時地老気来,5,CF 90 A8 A9 9A,unverified_direct_candidate
+COMM.DAT,0x5C075,老オ地！ジ地場へ来,9,A8 8F 90 02 7F 90 89 8A 9A,unverified_direct_candidate
+COMM.DAT,0x5C7FB,聞今みサ我ピや発様動老）地”王勝<N:｣:11><N:ﾉ:6>か出か,21,88 C8 6D 77 BE 72 40 76 CB DC A8 0A 90 03 5D D5 65 10 20 56 20,unverified_direct_candidate
+COMM.DAT,0x5C921,や<N:＄:1>っラ発むヤ待ナ見”で,12,40 05 75 57 76 B5 BB 98 7C A0 03 30,unverified_direct_candidate
+COMM.DAT,0x5CA08,来びサ聞聞,5,9A 99 77 88 88,unverified_direct_candidate
+COMM.DAT,0x5CA6E,デ一地<N:＆:4>待び場ひか地（下！,13,81 8E 90 07 98 99 89 7D 20 90 09 70 02,unverified_direct_candidate
+COMM.DAT,0x5CAA6,び来聞待場ぜ聞（,8,99 9A 88 98 89 A7 88 09,unverified_direct_candidate
+COMM.DAT,0x5CADC,へび<CTRL:F7>聞場場下3気加び気ジ思待聞来聞）,19,8A 99 F7 88 89 89 70 14 A9 AA 99 A9 7F 9F 98 88 9A 88 0A,unverified_direct_candidate
+COMM.DAT,0x5CB40,め1気待下 や （地る,11,51 12 A9 98 70 01 40 01 09 90 22,unverified_direct_candidate
+COMM.DAT,0x5CB57,地気へひ加な,6,90 A9 8A 7D AA 1D,unverified_direct_candidate
+COMM.DAT,0x5D0D6,大（身ヤ様，下,8,50 09 DD D7 BB CB 0D 70,unverified_direct_candidate
+COMM.DAT,0x5D0F7,かのンテと人下,7,20 1C 34 DB 36 52 70,unverified_direct_candidate
+COMM.DAT,0x5D394,0撃炎ヤい風員聞0ーにどベ大<N:ｌ:6>下,16,11 B1 BF BB 1B C1 8D 88 11 31 23 54 B4 50 0C 70,unverified_direct_candidate
+COMM.DAT,0x5D530,か！撃い<N:腹:1>力0聞来く,11,20 02 B1 1B DF 11 61 11 88 9A 3E,unverified_direct_candidate
+COMM.DAT,0x5D575,ば0デ場あ加へ来聞 ,10,58 11 81 89 3F AA 8A 9A 88 01,unverified_direct_candidate
+COMM.DAT,0x5D5F3,場国れ地’’大 て<N:ﾉ:6>ポ大ろろ大）,16,89 5E 32 90 08 08 50 01 21 10 D7 50 55 55 50 0A,unverified_direct_candidate
+COMM.DAT,0x5D699,場び気待待下<N:≠:16>ダ前下,10,89 99 A9 98 98 70 04 67 AE 70,unverified_direct_candidate
+COMM.DAT,0x5D755,来へ気思待,5,9A 8A A9 9F 98,unverified_direct_candidate
+COMM.DAT,0x5DE3C,か！リヤいシ,6,20 02 6B BB 1B 60,unverified_direct_candidate
+COMM.DAT,0x5DFAF,で！リダ見で発聖命<N:ぇ:2>1見0大,14,30 02 6B 67 A0 30 76 CD CC C0 12 A0 11 50,unverified_direct_candidate
+COMM.DAT,0x5DFBE,シ っヤテヤすシ,8,60 01 75 BB DB BB 8C 60,unverified_direct_candidate
+COMM.DAT,0x5E002,気場水シ,4,A9 89 B8 60,unverified_direct_candidate
+COMM.DAT,0x5E010,大！ジ兵敵炎大,7,50 02 7F 66 BD BF 50,unverified_direct_candidate
+COMM.DAT,0x5E097,でる発ろ兵ラポ4ヤデ撃,11,30 22 76 55 66 57 D7 15 BB 81 B1,unverified_direct_candidate
+COMM.DAT,0x5E145,ろ出俺出大 気加大0びで,12,55 56 AD 56 50 01 A9 AA 50 11 99 30,unverified_direct_candidate
+COMM.DAT,0x5E255,ラフバ場<N:ク:12>”め世攻,9,57 A6 AF 89 80 03 51 CE D0,unverified_direct_candidate
+COMM.DAT,0x5E472,聞老来<CTRL:FB>聞）で ジ出手場聞<N:・:11>聞気思聞オ力,21,88 A8 9A FB 88 0A 30 01 7F 56 87 89 88 DF 98 88 A9 9F 88 8F 61,unverified_direct_candidate
+COMM.DAT,0x5EB86,ジ兵た待サ,5,7F 66 1F 98 77,unverified_direct_candidate
+COMM.DAT,0x5EDF3,か界か聖よ,6,20 DD 12 20 CD 3D,unverified_direct_candidate
+COMM.DAT,0x5F067,霊門聖動命い0風0ニ<CTRL:F7>風伐タ カヤ会発ジ出出発ラヤ臣,28,4F DD FF CD DC CC 1B 11 C1 11 D1 F7 C1 DD CD 62 01 BC BB 7B 76 7F 56 56 76 57 BB 8B,unverified_direct_candidate
+COMM.DAT,0x5F0C0,婚わ聖テ聖一,7,DF 40 43 CD DB CD 8E,unverified_direct_candidate
+COMM.DAT,0x5F228,出地！命ヤ霊<N:ﾉ:6>びび思加場場待 たら我,18,56 90 02 CC BB 4F 10 99 99 9F AA 89 89 98 01 1F 33 BE,unverified_direct_candidate
+COMM.DAT,0x5F93B,待老見る,4,98 A8 A0 22,unverified_direct_candidate
+COMM.DAT,0x5FB0F,0  ジ力0加加こき’ベ”一分,15,11 01 01 7F 61 11 AA AA 7A 44 08 B4 03 8E B2,unverified_direct_candidate
+COMM.DAT,0x5FC03,話様カナ,4,B0 CB BC 7C,unverified_direct_candidate
+COMM.DAT,0x5FC8D,出兵ろダ参ろン（ ！本,12,56 66 55 67 A5 55 34 09 DF D4 02 92,unverified_direct_candidate
+COMM.DAT,0x5FCB0,下ポ動会ヤヤ？,7,70 D7 DC 7B BB BB 3C,unverified_direct_candidate
+COMM.DAT,0x5FD31,言）ぶ！加 で炎自加204ー,14,91 0A CA 02 AA 01 30 BF A4 AA 13 11 15 31,unverified_direct_candidate
+COMM.DAT,0x5FE15,気炎じ2気せ石来<N:ク:12>,9,A9 BF 4A 13 A9 59 94 9A 80,unverified_direct_candidate
+COMM.DAT,0x60005,じ気加0じ僧よ加人,9,4A A9 AA 11 4A 84 3D AA 52,unverified_direct_candidate
+COMM.DAT,0x60068,ャ山や勝ね話,6,D6 9B 40 D5 4C B0,unverified_direct_candidate
+COMM.DAT,0x600B3,や2分い撃命バ聞場聞び・,12,40 13 B2 1B B1 CC AF 88 89 88 99 2C,unverified_direct_candidate
+COMM.DAT,0x60118,でに分水撃ヤデあ待聞ムカヤす・ 俺,17,30 23 B2 B8 B1 BB 81 3F 98 88 D8 BC BB 8C 2C 01 AD,unverified_direct_candidate
+COMM.DAT,0x60356,を気加場気つ）<N:ﾉ:6>戻 し,11,2F A9 AA 89 A9 29 0A 10 D9 01 1E,unverified_direct_candidate
+COMM.DAT,0x6041D,地聞気び待聞場力場何ら<N:ъ:14>そぶ下ー,16,90 88 A9 99 98 88 89 61 89 6E 33 1A 41 CA 70 31,unverified_direct_candidate
+COMM.DAT,0x60451,下来カ 役師ダろ分力デ<N:７:11>ゃ<N:＄:1>見前ぜ0来聞びす2地,25,70 9A BC 01 B6 DE 11 67 55 B2 61 81 18 48 05 A0 AE A7 11 9A 88 99 2B 13 90,unverified_direct_candidate
+COMM.DAT,0x60493,後でびど,4,C3 30 99 54,unverified_direct_candidate
+COMM.DAT,0x60537,ぜ場気会どサ ,7,A7 89 A9 7B 54 77 01,unverified_direct_candidate
+COMM.DAT,0x607C1,1き待会ロ地でモきえ加ご下えけびテベパ<N:ク:12>,20,12 44 98 7B A2 90 30 5F 44 46 AA 79 70 46 49 99 DB B4 A3 80,unverified_direct_candidate
+COMM.DAT,0x607EB,サナわ<CTRL:E5>ラ）<N:ﾉ:6>来みめねそっサダダ自場聞ぞ’人聞地気！た場,28,77 7C 43 E5 57 0A 10 9A 6D 51 4C 41 75 77 67 67 A4 89 88 6A 08 52 88 90 A9 02 1F 89,unverified_direct_candidate
+COMM.DAT,0x60FC3,待びびふ加場0霊,8,98 99 99 97 AA 89 11 4F,unverified_direct_candidate
+COMM.DAT,0x610BA,出むヤひ,4,56 B5 BB 7D,unverified_direct_candidate
+COMM.DAT,0x610BF,むデ<N:ク:12>！攻っ 攻命俺,10,B5 81 80 02 D0 75 01 D0 CC AD,unverified_direct_candidate
+COMM.DAT,0x61468,下炎うわわわ戦ダ見きシ敵3思,14,70 BF 26 43 43 43 63 67 A0 44 60 BD 14 9F,unverified_direct_candidate
+COMM.DAT,0x616D1,命所シデ,4,CC C2 60 81,unverified_direct_candidate
+COMM.DAT,0x6175B,様命らにれ王2き,8,CB CC 33 23 32 5D 13 44,unverified_direct_candidate
+COMM.DAT,0x618A1,気び聞本 加なへ<N:ク:12>,10,A9 99 88 92 E0 98 AA 1D 8A 80,unverified_direct_candidate
+COMM.DAT,0x61931,んテるるシでデ気ル,9,2D DB 22 22 60 30 81 A9 53,unverified_direct_candidate
+COMM.DAT,0x61948,戦炎<N:ク:12>気加聞聞待デ,9,63 BF 80 A9 AA 88 88 98 81,unverified_direct_candidate
+COMM.DAT,0x61A40,オデ待加場見,6,8F 81 98 AA 89 A0,unverified_direct_candidate
+COMM.DAT,0x62246,こ2わリ<N:リ:12>でろむヤ水ジ,11,7A 13 43 6B 6F 30 55 B5 BB B8 7F,unverified_direct_candidate
+COMM.DAT,0x623F8,聞へ気びか,5,88 8A A9 99 20,unverified_direct_candidate
+COMM.DAT,0x623FE,0<N:腹:1>て200ー デびサ場場聞た,16,11 DF 11 21 13 11 11 31 01 81 99 77 89 89 88 1F,unverified_direct_candidate
+COMM.DAT,0x6240F,へめ出<N:ク:12>”父気気場,9,8A 51 56 80 03 B7 A9 A9 89,unverified_direct_candidate
+COMM.DAT,0x6247C,びめ兵っ発<N:ﾉ:6>1来将男,11,99 51 66 75 76 10 12 9A DD 89 B3,unverified_direct_candidate
+COMM.DAT,0x62542,で場ヤ臣<N:ク:12> 場まかデ,10,30 89 BB 8B 80 01 89 27 20 81,unverified_direct_candidate
+COMM.DAT,0x62645,言らシ出た頼<N:ク:12>,8,91 33 60 56 1F DD 91 80,unverified_direct_candidate
+COMM.DAT,0x62DE9,カび水タろ発 ジタ出っ様命聖<N:ｌ:6>思1せ）こ,20,BC 99 B8 62 55 76 25 7F 62 56 75 CB CC CD 0C 9F 12 59 0A 7A,unverified_direct_candidate
+COMM.DAT,0x62ECF,場手場ご（地”,7,89 87 89 79 09 90 03,unverified_direct_candidate
+COMM.DAT,0x62FA8,ダ時ろ知族聞ラ,8,67 CF 55 C6 DD 9C D3 57,unverified_direct_candidate
+COMM.DAT,0x630FD,撃ヤ臣0力出シ,7,B1 BB 8B 11 61 56 60,unverified_direct_candidate
+COMM.DAT,0x63105,ヤ様げー,4,BB CB 9C 31,unverified_direct_candidate
+COMM.DAT,0x6310A,見メサび<N:ﾉ:6>サ炎地加）見気） ー<N:ﾉ:6>っ気軍シメ,21,A0 78 77 99 10 77 BF 90 AA 0A A0 A9 0A 01 31 10 75 A9 BA 60 78,unverified_direct_candidate
+COMM.DAT,0x63160,ょ待場ウ兵ろ<N:リ:12>兵ヤヤのー,12,73 98 89 71 66 55 6F 66 BB BB 1C 31,unverified_direct_candidate
+COMM.DAT,0x63389,加気気加加闘来待<N:ﾉ:6>本や,11,AA A9 A9 AA AA 93 9A 98 10 92 40,unverified_direct_candidate
+COMM.DAT,0x63B34,老わ水ヤ<CTRL:FD>リは！知恐来場,13,A8 43 B8 BB FD 6B 28 02 C6 DD AF 9A 89,unverified_direct_candidate
+COMM.DAT,0x63ED8,ろ兵サ場ヤ臣<N:．:2>！バ加加士！ご待デ,16,55 66 77 89 BB 8B 0F 02 AF AA AA 68 02 79 98 81,unverified_direct_candidate
+COMM.DAT,0x64372,，つ 自ヤ見正,7,0D 29 01 A4 BB A0 C7,unverified_direct_candidate
+COMM.DAT,0x64426,2<N:ぇ:2>テカリれスベ,8,13 C0 DB BC 6B 32 47 B4,unverified_direct_candidate
+COMM.DAT,0x648D5,<N:ﾉ:6>出フ回へ0高命聖ね,11,10 56 A6 9E 5A 11 DD DD CC CD 4C,unverified_direct_candidate
+COMM.DAT,0x64C0C,地トぞラ<N:嗅:18>ラろ役争,11,90 5C 6A 57 DF 57 57 55 B6 DD 54,unverified_direct_candidate
+COMM.DAT,0x64DC2,話け！バ聞士出トジ,9,B0 49 02 AF 88 68 56 95 7F,unverified_direct_candidate
+COMM.DAT,0x64F11,下待回ー,4,70 98 9E 31,unverified_direct_candidate
+COMM.DAT,0x65095,攻ーサメ,4,D0 31 77 78,unverified_direct_candidate
+COMM.DAT,0x6548D,っ’力”わジバを動渡闘<N:ﾉ:6>ろ地て 士僧も回 を,23,75 08 61 03 43 7F AF 2F DC DD BC 93 10 55 90 21 01 68 84 38 9E 01 2F,unverified_direct_candidate
+COMM.DAT,0x655C5,発炎命動モ臣び加び所テで<N:ク:12>っ,14,76 BF CC DC 5F 8B 99 AA 99 C2 DB 30 80 A1,unverified_direct_candidate
+COMM.DAT,0x65AB8,ョか聞び）出<CTRL:FC>おれ！風力聞た,14,69 20 88 99 0A 56 FC 3B 32 02 C1 61 88 1F,unverified_direct_candidate
+COMM.DAT,0x6621B,れサ  出様テ様前,10,32 77 25 DF 62 56 CB DB CB AE,unverified_direct_candidate
+COMM.DAT,0x663AB,<N:t:5>ろ0今デ炎老来加場ヤれジ ,15,DF 60 55 11 C8 81 BF A8 9A AA 89 BB 32 7F 01,unverified_direct_candidate
+COMM.DAT,0x66F3E,待炎来年人め発ろ本,9,98 BF 9A DA 52 51 76 55 92,unverified_direct_candidate
+COMM.DAT,0x6739E,見へ炎気気,5,A0 8A BF A9 A9,unverified_direct_candidate
+COMM.DAT,0x69628,”う ！ね ”兵 ”こ ”フ ”ア,17,03 26 01 02 4C 01 03 66 01 03 7A 01 03 A6 01 03 42,unverified_direct_candidate
+COMM.DAT,0x6A806,タか備ではよへけ命ろこタ言ピ3ジたナたナたぶ勝老軍老思老<CTRL:FF>ジ,30,62 20 C5 30 28 3D 8A 49 CC 55 2E 62 91 72 14 7F 1F 7C 1F 7C 1F CA D5 A8 BA A8 9F A8 FF 7F,unverified_direct_candidate
+COMM.DAT,0x6A846,たナたナたナたナたナたナたナたナたナ気、すか<N:リ:12>のピのろ<N:７:11>ば<N:７:11>パ,31,1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C 1F 7C A9 24 8C 20 6F 1C 72 1C 55 18 58 18 A3,unverified_direct_candidate
+COMM.DAT,0x6A8EC,軍軍た加カ0っ,7,BA BA 1F AA BC 11 A1,unverified_direct_candidate
+COMM.DAT,0x6AB4D,れきら撃,4,32 44 33 B1,unverified_direct_candidate
+COMM.DAT,0x6ABF1,シ40ー てら動撃,9,60 15 11 31 01 21 33 DC B1,unverified_direct_candidate
+COMM.DAT,0x6ACE0,アの<N:ﾉ:6>る思るュいね、正,11,42 1C 10 22 9F 22 AB 1B 4C 24 C7,unverified_direct_candidate
+COMM.DAT,0x6AF13,下メヤウ聞る,6,70 78 BB 71 88 22,unverified_direct_candidate
+COMM.DAT,0x6B2A6,2っいい大,5,13 A1 1B 1B 50,unverified_direct_candidate
+COMM.DAT,0x6B88F,手てフ手オ,5,87 21 A6 87 8F,unverified_direct_candidate
+COMM.DAT,0x6BC73,てるるわらオ,6,21 22 22 43 33 8F,unverified_direct_candidate
+COMM.DAT,0x6C003,ヤい）加ひ,5,BB 1B 0A AA 7D,unverified_direct_candidate
+COMM.DAT,0x6C030,パ目た敵,4,A3 AC 1F BD,unverified_direct_candidate
+COMM.DAT,0x6C352,かン前， にるわ”,9,20 34 AE 0D 01 23 22 43 03,unverified_direct_candidate
+COMM.DAT,0x6CD29,にて思らにる！風0,9,23 21 9F 33 23 22 02 C1 11,unverified_direct_candidate
+COMM.DAT,0x6CE3F,ン0ーわ査,6,34 11 31 43 DF 3F,unverified_direct_candidate
+COMM.DAT,0x6D62B,我攻）シ士,5,BE D0 0A 60 68,unverified_direct_candidate
+COMM.DAT,0x6D8D6,サるき！聖 るてア後,10,77 22 44 02 CD 01 22 21 42 C3,unverified_direct_candidate
+COMM.DAT,0x6D975,れクら0ン霊,6,32 4E 33 11 34 4F,unverified_direct_candidate
+COMM.DAT,0x6D9A9,や軍でデ,4,40 BA 30 81,unverified_direct_candidate
+COMM.DAT,0x6DE5D,大2そ0炎 攻森0ろか”大行,15,50 13 41 11 BF 01 D0 DD 10 11 55 20 03 50 74,unverified_direct_candidate
+COMM.DAT,0x6EC7A,ウう30いシ,6,71 26 14 11 1B 60,unverified_direct_candidate
+COMM.DAT,0x6ED9B,聖アシ”できっ,7,CD 42 60 03 30 44 A1,unverified_direct_candidate
+COMM.DAT,0x6F3E0,パ不こ敵1め時僧サ<N:｣:11>オ,12,A3 DD 71 7A BD 12 51 CF 84 77 65 8F,unverified_direct_candidate
+COMM.DAT,0x6F70C,パ聞たよ,4,A3 88 1F 3D,unverified_direct_candidate
+COMM.DAT,0x6FB0F,れるれ会らて軍,7,32 22 32 7B 33 21 BA,unverified_direct_candidate
+COMM.DAT,0x6FE2E,待びメバ手<CTRL:F9>思メ地マ,10,98 99 78 AF 87 F9 9F 78 90 64,unverified_direct_candidate
+COMM.DAT,0x70362,パげたひ,4,A3 9C 1F 7D,unverified_direct_candidate
+COMM.DAT,0x706F7,攻ササ待聞こて力にわ敵かモ1っ0,16,D0 77 77 98 88 2E 21 61 23 43 BD 20 5F 12 A1 11,unverified_direct_candidate
+COMM.DAT,0x709D8,地場<CTRL:FF>手メご待思けン1オてにン！男”,18,90 89 FF 87 78 79 98 9F 49 34 12 8F 21 23 34 02 B3 03,unverified_direct_candidate
+COMM.DAT,0x70D8F,下らシモに1ャ,7,70 33 60 5F 23 12 D6,unverified_direct_candidate
+COMM.DAT,0x7109C,や分 き父,6,40 B2 E0 43 44 B7,unverified_direct_candidate
+COMM.DAT,0x719C1,かわ<N:ぃ:20>2、るンる地！れら軍や3ら力ににられ下！わおれら下 でわにる,34,20 43 DE 20 13 24 22 34 22 90 02 32 33 BA 40 14 33 61 23 23 33 32 70 02 43 3B 32 33 70 01 30 43 23 22,unverified_direct_candidate
+COMM.DAT,0x71A00,やき20ーす,6,40 44 13 11 31 2B,unverified_direct_candidate
+COMM.DAT,0x71AD9,にシでに1を0て分炎地,11,23 60 30 23 12 2F 11 21 B2 BF 90,unverified_direct_candidate
+COMM.DAT,0x722DA,のアらンン10ーモにデム,12,1C 42 33 34 34 12 11 31 5F 23 81 D8,unverified_direct_candidate
+COMM.DAT,0x724C8,パカた風,4,A3 BC 1F C1,unverified_direct_candidate
+COMM.DAT,0x72820,かーきにらて。,7,20 31 44 23 33 21 37,unverified_direct_candidate
+COMM.DAT,0x72B08,場ピ”ひ聞手場<N:干:21>ジびメ場決きわ<CTRL:F4>ジ、てれれ1ウ,24,89 72 03 7D 88 87 89 DF FF 7F 99 78 89 9D 44 43 F4 7F 24 21 32 32 12 71,unverified_direct_candidate
+COMM.DAT,0x73254,パすたウ,4,A3 8C 1F 71,unverified_direct_candidate
+COMM.DAT,0x7353B,れら2で2にる備るか 0<N:ぇ:2>4ピ,15,32 33 13 30 13 23 22 C5 22 20 01 11 C0 15 72,unverified_direct_candidate
+COMM.DAT,0x7370D,るめ戦で炎に10て分炎地,12,22 51 63 30 BF 23 12 11 21 B2 BF 90,unverified_direct_candidate
+COMM.DAT,0x73868,ににで達聞聞モ<N:ﾉ:6>わ沼聞手びメ一！に、<N:ｌ:5>手サ見,23,23 23 30 83 88 88 5F 10 43 DF 34 88 87 99 78 8E 02 23 24 5B 87 77 A0,unverified_direct_candidate
+COMM.DAT,0x739A9,聞びメ分老<N:ﾉ:6>（下サい）び,12,88 99 78 B2 A8 10 09 70 77 1B 0A 99,unverified_direct_candidate
+COMM.DAT,0x74349,場オ場サまれ風,7,89 8F 89 77 27 32 C1,unverified_direct_candidate
+COMM.DAT,0x743A7,ふ聞まま自,5,97 88 27 27 A4,unverified_direct_candidate
+COMM.DAT,0x743FE,ごび手攻,4,79 99 87 D0,unverified_direct_candidate
+COMM.DAT,0x7447A,場精2ど行サ聞メ敵サ ,11,89 4D 13 54 74 77 88 78 BD 77 01,unverified_direct_candidate
+COMM.DAT,0x749C6,パ老たデ,4,A3 A8 1F 81,unverified_direct_candidate
+COMM.DAT,0x76011,ウろシ思へ地<N:X:20>サジ,9,71 55 60 9F 5A 90 06 77 7F,unverified_direct_candidate
+COMM.DAT,0x7630D,ジぶ軍ババ<CTRL:FB>ュてクアラ話弱ジ,15,7F CA BA AF AF FB AB 21 4E 42 57 B0 DD ED 7F,unverified_direct_candidate
+COMM.DAT,0x7666A,るヤ、0前！命,7,22 BB 24 11 AE 02 CC,unverified_direct_candidate
+COMM.DAT,0x766FD,らアにる後おジ後撃軍に10れ,14,33 42 23 22 C3 3B 7F C3 B1 BA 23 12 11 32,unverified_direct_candidate
+COMM.DAT,0x76B06,時ュカるにサ0 0,9,CF AB BC 22 23 77 11 01 11,unverified_direct_candidate
+COMM.DAT,0x76F66,アジ、れる手もれ！る,10,42 7F 24 32 22 87 38 32 02 22,unverified_direct_candidate
+COMM.DAT,0x77040,ンるる命し,5,34 22 22 CC 1E,unverified_direct_candidate
+COMM.DAT,0x77128,メ地メごびび絵<N:＆:4> 国4メびびび勝者じ,20,78 90 78 79 99 99 DE F7 07 E0 EE 5E 15 78 99 99 99 D5 7E 4A,unverified_direct_candidate
+COMM.DAT,0x77225,大<N:＄:1>話わごサひ ャ,9,50 05 B0 43 79 77 7D 01 D6,unverified_direct_candidate
+COMM.DAT,0x7722F,場ごウにに思！<CTRL:E5>サわーウ聞,13,89 79 71 23 23 9F 02 E5 77 43 31 71 88,unverified_direct_candidate
+COMM.DAT,0x77373, ヤ母スる,7,E0 BB BB DD 0E 47 22,unverified_direct_candidate
+COMM.DAT,0x77EA9,炎るるれきンに思る話（カ所あ<N:ク:12>,15,BF 22 22 32 44 34 23 9F 22 B0 09 BC C2 3F 80,unverified_direct_candidate
+COMM.DAT,0x78110,見ヤカ炎炎バカ,7,A0 BB BC BF BF AF BC,unverified_direct_candidate
+COMM.DAT,0x7924E,シ兵つむ,4,60 66 45 B5,unverified_direct_candidate
+COMM.DAT,0x7926E,トそ地ア後,5,95 41 90 42 C3,unverified_direct_candidate
+COMM.DAT,0x7976A,！でだアナ,5,02 30 35 42 7C,unverified_direct_candidate
+COMM.DAT,0x79790,い軍時ュ,4,1B BA CF AB,unverified_direct_candidate
+COMM.DAT,0x798C9,しるテンき国,6,1E 22 DB 34 44 5E,unverified_direct_candidate
+COMM.DAT,0x79950,あにらららアヤにーく10てる<CTRL:ED>,15,3F 23 33 33 33 42 BB 23 31 3E 12 11 21 22 ED,unverified_direct_candidate
+COMM.DAT,0x79A40,か0 アン！し,7,20 11 25 42 34 02 1E,unverified_direct_candidate
+COMM.DAT,0x79C7E,パ老たウ,4,A3 A8 1F 71,unverified_direct_candidate
+COMM.DAT,0x79F2C,大0国地4れるわン撃！2で<N:≠:16>戦るる攻1ふ,20,50 11 5E 90 15 32 22 43 34 B1 02 13 30 04 63 22 22 D0 12 97,unverified_direct_candidate
+COMM.DAT,0x7A0C5,ごでにわタ,5,79 30 23 43 62,unverified_direct_candidate
+COMM.DAT,0x7A11B,我下 アン待場,7,BE 70 01 42 34 98 89,unverified_direct_candidate
+COMM.DAT,0x7A39E,ニ涙メ待ごサク<N:≠:16>そ,10,D1 DE 87 78 98 79 77 4E 04 41,unverified_direct_candidate
+COMM.DAT,0x7A5CA,話軍目目バ風だぶ地,9,B0 BA AC AC AF C1 35 CA 90,unverified_direct_candidate
+COMM.DAT,0x7A9CA,カ目目カ,4,BC AC AC BC,unverified_direct_candidate
+COMM.DAT,0x7C01A,どにアに言に山<N:ﾉ:6>ンろジ,11,54 23 42 23 91 23 9B 10 34 55 7F,unverified_direct_candidate
+COMM.DAT,0x7C04F,るにらッ,4,22 23 33 82,unverified_direct_candidate
+COMM.DAT,0x7C060,1る敵0か れ人04パ,11,12 22 BD 11 20 01 32 52 11 15 A3,unverified_direct_candidate
+COMM.DAT,0x7C06C,ぎ我<CTRL:EE>にでわンれらリ,11,DD 7D BE EE 23 30 43 34 32 33 6B,unverified_direct_candidate
+COMM.DAT,0x7C747,ひてラ攻めらるーれ<N:ク:12>,10,7D 21 57 D0 51 33 22 31 32 80,unverified_direct_candidate
+COMM.DAT,0x8101C,下，で，ラわ、ル0ョ0を,12,70 0D 30 0D 57 43 24 53 11 69 11 2F,unverified_direct_candidate
+COMM.DAT,0x811D3,シめ発モヤヤヤいトか,10,60 51 76 5F BB BB BB 1B 5C 20,unverified_direct_candidate
+COMM.DAT,0x811FA,兵 ダ<N:＄:1>発く サダ下！発サジ見,16,66 E0 07 67 05 76 3E 01 77 67 70 02 76 77 7F A0,unverified_direct_candidate
+COMM.DAT,0x812BF,っ出ラシ,4,75 56 57 60,unverified_direct_candidate
+COMM.DAT,0x81423,敵扱出<CTRL:FE>し”出発父様0様ト時ろ私ろ発単デ,22,BD DF 5C 56 FE 1E 03 56 76 B7 CB 11 CB 5C CF 55 85 55 76 DF 21 81,unverified_direct_candidate
+COMM.DAT,0x8144D,聞聞下”ばひばシ,8,88 88 70 03 58 7D 58 60,unverified_direct_candidate
+COMM.DAT,0x822E1,る<N:＆:4>場待正気加来デ,9,22 07 89 98 C7 A9 AA 9A 81,unverified_direct_candidate
+COMM.DAT,0x82365,場ふ聞待気るは待<N:ﾉ:6>,9,89 97 88 98 A9 22 28 98 10,unverified_direct_candidate
+COMM.DAT,0x823CE,ジー0あに僧場待、,9,7F 31 11 3F 23 84 89 98 24,unverified_direct_candidate
+COMM.DAT,0x82473,聞ッ バ来,5,88 82 01 AF 9A,unverified_direct_candidate
+COMM.DAT,0x82479,下”デフ聞所て0,8,70 03 81 C9 88 C2 21 11,unverified_direct_candidate
+COMM.DAT,0x82521,入待風”か地 シ,8,86 98 C1 03 20 90 01 60,unverified_direct_candidate
+COMM.DAT,0x82552,出ろろ子達れ端2れ010,13,56 55 55 96 83 32 DF 20 13 32 11 12 11,unverified_direct_candidate
+COMM.DAT,0x827BB,動<CTRL:FF>聖ヤてシ 前かつ動敵カ地”出0に<N:ぇ:2>炎聖ヤヤる1めむ,27,DC FF CD BB 21 60 01 AE 20 45 DC BD BC 90 03 56 11 23 C0 BF CD BB BB 22 12 51 B5,unverified_direct_candidate
+COMM.DAT,0x827D7,兵よサ0 にばろ聞時,10,66 3D 77 11 01 23 58 55 88 CF,unverified_direct_candidate
+COMM.DAT,0x827FA,に大ろひデや’テ<N:`:22>時デシ,13,23 50 55 7D 81 40 08 DB DF FD CF 81 60,unverified_direct_candidate
+COMM.DAT,0x8299D,やど0”サ下’大よ兵あ，,12,40 54 11 03 77 70 08 50 3D 66 3F 0D,unverified_direct_candidate
+COMM.DAT,0x83FA0,聖げ加へ場気知力行発チ,11,CD 9C AA 8A 89 A9 C6 61 74 76 6C,unverified_direct_candidate
+COMM.DAT,0x84675,地ばむ1ん<CTRL:FF>やンて我び知4正3れ2われそれーン1？,25,90 58 B5 12 2D FF 40 34 21 BE 99 C6 15 C7 14 32 13 43 32 41 32 31 34 12 3C,unverified_direct_candidate
+COMM.DAT,0x84ABA,攻，闘分命後な聞ャ攻上<CTRL:E8>,12,D0 0D 93 B2 CC C3 1D D3 D6 D0 B9 E8,unverified_direct_candidate
+COMM.DAT,0x85837,話動聞攻）ょ前,7,B0 DC D3 D0 0A 73 AE,unverified_direct_candidate
+COMM.DAT,0x85CA7,れきッるら,5,32 44 82 22 33,unverified_direct_candidate
+COMM.DAT,0x86606,シ40来聞今出<N:＄:1>兵発ッろ発,13,60 15 11 9A 88 C8 56 05 66 76 82 55 76,unverified_direct_candidate
+COMM.DAT,0x890A6,参 <N:‐:2>員所ヤ員ヤカ,9,A5 01 0E 8D C2 BB 8D BB BC,unverified_direct_candidate
+COMM.DAT,0x89118, デび聞ッ場聞デわ<CTRL:FF>デ,12,E0 9A 81 99 88 82 89 88 81 43 FF 81,unverified_direct_candidate
+COMM.DAT,0x8E677,の今わ時,4,1C C8 43 CF,unverified_direct_candidate
+COMM.DAT,0x8F218, ろろ人や,6,E0 0F 55 55 52 40,unverified_direct_candidate
+COMM.DAT,0x8F315,かをッろ私 あ,7,20 2F 82 55 85 25 3F,unverified_direct_candidate
+COMM.DAT,0x8F608,勝一 っ水ウ,6,D5 8E 25 75 B8 71,unverified_direct_candidate
+COMM.DAT,0x8F7C8,っせう地,4,75 59 26 90,unverified_direct_candidate
+COMM.DAT,0x8FC50,（っ地所地,5,09 A1 90 C2 90,unverified_direct_candidate
+COMM.DAT,0x8FD9D,や達でょ,4,40 83 30 73,unverified_direct_candidate
+COMM.DAT,0x91345,発出ダ<CTRL:FF>っ発発出僧す,10,76 56 67 FF 75 76 76 56 84 2B,unverified_direct_candidate
+COMM.DAT,0x914D5,ろつっ兵話,5,55 45 75 66 B0,unverified_direct_candidate
+COMM.DAT,0x91619,話命す面はは炎聞動こ’聞我で 命<N:牙:4>,19,B0 CC 8C DE 8C 28 28 BF 88 DC 2E 08 88 BE 30 01 CC DE B0,unverified_direct_candidate
+COMM.DAT,0x9162D,達るわれ話,5,83 22 43 32 B0,unverified_direct_candidate
+COMM.DAT,0x9192C,<N:ぇ:2>下 へに炎聞へわサえ命か,13,C0 70 01 8A 23 BF 88 8A 43 77 46 CC 20,unverified_direct_candidate
+COMM.DAT,0x91BBB,聞ゃで<N:≠:16>ンジ聞水動,9,88 48 30 04 34 7F 88 B8 DC,unverified_direct_candidate
+COMM.DAT,0x91C61,0でッアわ私気<CTRL:FF>うわも員ムす員,15,11 30 82 42 43 85 A9 FF 26 43 38 8D D8 8C 8D,unverified_direct_candidate
+COMM.DAT,0x9248C,は下”ウ何下,6,28 70 03 71 6E 70,unverified_direct_candidate
+COMM.DAT,0x924F0,ム聞れ下”力前下,8,D8 88 32 70 03 61 AE 70,unverified_direct_candidate
+COMM.DAT,0x92FE6,オッッ時’あル時バ聞臣はム<N:ク:12>,14,8F 82 82 CF 08 3F 53 CF AF 88 8B 28 D8 80,unverified_direct_candidate
+COMM.DAT,0x930AE,オ聞急ら,5,8F 88 DD 8E 33,unverified_direct_candidate
+COMM.DAT,0x9372A,命バかわルン下<N:ﾉ:6>行下,10,CC AF 20 43 53 34 70 10 74 70,unverified_direct_candidate
+COMM.DAT,0x938A0,アわろふ0ダサ”,8,42 43 55 97 11 67 77 03,unverified_direct_candidate
+COMM.DAT,0x93A1E,アらに力つマ時力3兵どで,12,42 33 23 61 45 64 CF 61 14 66 54 30,unverified_direct_candidate
+COMM.DAT,0x93A85,も<CTRL:FF>ンにめれルそピろ戻にで,13,38 FF 34 23 51 32 53 41 72 55 D9 23 30,unverified_direct_candidate
+COMM.DAT,0x93AFC,び父加軍ヤ ,6,99 B7 AA BA BB 01,unverified_direct_candidate
+COMM.DAT,0x93C37,攻命話！私,5,D0 CC B0 02 85,unverified_direct_candidate
+COMM.DAT,0x942F3,わ勝わ地,4,43 D5 43 90,unverified_direct_candidate
+COMM.DAT,0x943A0,オシ力で,4,8F 60 61 30,unverified_direct_candidate
+COMM.DAT,0x944B8,つ’聞聞，で,6,45 08 D3 88 0D 30,unverified_direct_candidate
+COMM.DAT,0x944FB,会ム’で きにルわで,10,7B D8 08 30 01 44 23 53 43 30,unverified_direct_candidate
+COMM.DAT,0x94539,び加軍ヤ ,5,99 AA BA BB 01,unverified_direct_candidate
+COMM.DAT,0x94616,様で <N:■:40>ンシ  し員手1こ’ん1言ー王,20,CB 30 01 E0 06 34 60 01 01 1E 8D 87 12 2E 08 2D 12 91 31 5D,unverified_direct_candidate
+COMM.DAT,0x94E04,”者らッゃ人ア思ラとつつら,13,03 7E 33 82 48 52 42 9F 57 36 45 45 33,unverified_direct_candidate
+COMM.DAT,0x94E8C,聞ッ聞ゃゃ炎出わつ出わ<N:｣:11>力2ムジ聞今聞れンれろ<CTRL:F1>”ぜか聞も下！で,32,88 82 88 48 48 BF 56 43 45 56 43 65 61 13 D8 7F 88 C8 88 32 34 32 55 F1 03 A7 20 88 38 70 02 30,unverified_direct_candidate
+COMM.DAT,0x94EBE,ッモ！えわアだ父もれ！1！気テ,15,82 5F 02 46 43 42 35 B7 38 32 02 12 02 A9 DB,unverified_direct_candidate
+COMM.DAT,0x94EE3,れわ<CTRL:F7>ン？もーマ聞動聞れリ、は0,16,32 43 F7 34 3C 38 31 64 88 DC 88 32 6B 24 28 11,unverified_direct_candidate
+COMM.DAT,0x94F5A,山我を<N:≠:16>ッす達動員か”び父加軍ヤ ,17,9B BE 2F 04 82 8C 83 DC 8D 20 03 99 B7 AA BA BB 01,unverified_direct_candidate
+COMM.DAT,0x94FAD,バを”ポ今聖ッで,8,AF 2F 03 D7 C8 CD 82 30,unverified_direct_candidate
+COMM.DAT,0x95205,あ団らヤ,5,3F DE 99 33 BB,unverified_direct_candidate
+COMM.DAT,0x972D5,ュュッげ来！げび今げ<CTRL:F8>’デすす,15,AB AB 82 9C 9A 02 9C 99 C8 9C F8 08 81 8C 8C,unverified_direct_candidate
+COMM.DAT,0x97797,る聞聞よ（,5,22 88 88 3D 09,unverified_direct_candidate
+COMM.DAT,0x97D56,回らきろ俺カンッ’<N:ク:12>聞’,12,9E 33 44 55 AD BC 34 82 08 80 88 08,unverified_direct_candidate
+COMM.DAT,0x98857,いヤュジぶわ<N:｣:11>兵つ,9,1B BB AB 7F CA 43 65 66 45,unverified_direct_candidate
+COMM.DAT,0x98AA8,は聞ポ発聞<N:．:13>今すす員ひ,12,28 88 D7 76 88 DF 88 C8 8C 8C 8D 7D,unverified_direct_candidate
+COMM.DAT,0x98C28,下本ららどン者で<CTRL:FD>は,10,70 92 33 33 54 34 7E 30 FD 28,unverified_direct_candidate
+COMM.DAT,0x98EE8,<CTRL:FF>ダ兵つンらマ出つ男ら”ど私ジ,15,FF 67 66 45 34 33 64 56 45 B3 33 03 54 85 7F,unverified_direct_candidate
+COMM.DAT,0x9910E,<N:ク:12>はもメでめ，るで勝ルデッ聞う達4す,18,80 28 38 78 30 51 0D 22 30 D5 53 81 82 88 26 83 15 8C,unverified_direct_candidate
+COMM.DAT,0x9A0DE,パ動たよ,4,A3 DC 1F 3D,unverified_direct_candidate
+COMM.DAT,0x9A4CA,パフト聞リスデ石かマ，,11,A3 C9 5C 88 6B 47 81 94 20 64 0D,unverified_direct_candidate
+COMM.DAT,0x9A672,はッれで場,5,28 82 32 30 89,unverified_direct_candidate
+COMM.DAT,0x9A678,でモつどき達聞攻”聞<N:ク:12>,11,30 5F 45 54 44 83 88 D0 03 88 80,unverified_direct_candidate
+COMM.DAT,0x9A7CD,兵私聞き僧負フに,9,66 85 88 44 84 DD CB A6 23,unverified_direct_candidate
+COMM.DAT,0x9A930,ぜい0ジ0ュフば入ラ私方炎風,14,A7 1B 11 7F 11 AB C9 58 86 57 85 C4 BF C1,unverified_direct_candidate
+COMM.DAT,0x9A9C2,石<N:＆:4>世せと方敵は,8,94 07 CE 59 36 C4 BD 28,unverified_direct_candidate
+COMM.DAT,0x9AACA,今攻軍 見男るで<N:＄:1>石風闘命自石方<N:ク:12>,18,C8 D0 BA E0 7B A0 B3 22 30 05 94 C1 93 CC A4 94 C4 80,unverified_direct_candidate
+COMM.DAT,0x9ABEE,わウっ者ムかマはアト軍後<CTRL:F9>見炎<N:ｃ:9>ッ聞ー聞もデ1で氷ウウえ！<N:ク:12>,31,43 71 75 7E D8 20 64 28 42 95 BA C3 F9 A0 BF 17 82 88 31 88 38 81 12 30 DF 14 71 71 46 02 80,unverified_direct_candidate
+COMM.DAT,0x9AC34,人力敵ダ<N:ク:12> 聞今すれっ,11,52 61 BD 67 80 01 88 C8 8C 32 75,unverified_direct_candidate
+COMM.DAT,0x9ACF1,ルえそ沼る聞ッれジ,10,53 46 41 DF 34 22 88 82 32 7F,unverified_direct_candidate
+COMM.DAT,0x9AFD6,命聞聞今すメ ,7,CC 88 88 C8 8C 78 01,unverified_direct_candidate
+COMM.DAT,0x9B2C3,っバっサ備び勝大軍<N:ク:12>,10,75 AF 75 77 C5 99 D5 50 BA 80,unverified_direct_candidate
+COMM.DAT,0x9B39C,軍加炎ぶらきき達,8,BA AA BF CA 33 44 44 83,unverified_direct_candidate
+COMM.DAT,0x9B3DC,わわン<CTRL:F7>達命来まや気上フ・ラわきン<N:ク:12>,18,43 43 34 F7 83 CC 9A 27 40 A9 B9 C9 2C 57 43 44 34 80,unverified_direct_candidate
+COMM.DAT,0x9B4D5,3！待来す聞<CTRL:FB>今命ば力目す聞げ軍ひぶフ,19,14 02 98 9A 8C 88 FB C8 CC 58 61 AC 8C 88 9C BA 7D CA A6,unverified_direct_candidate
+COMM.DAT,0x9B56C,す命今今待<N:ｌ:5>力聞ひはト,11,8C CC C8 C8 98 5B 61 88 7D 28 5C,unverified_direct_candidate
+COMM.DAT,0x9B5CA,び待ぶ聞ょサばでち老フ臣っ命の僧で,17,99 98 CA 88 73 77 58 30 4B A8 C9 8B A1 CC 1C 84 30,unverified_direct_candidate
+COMM.DAT,0x9B7DF,かる”るはめい大）石撃3正石分トてタ<N:≠:16>デ,20,20 22 03 22 28 51 1B 50 0A 94 B1 14 C7 94 B2 5C 21 62 04 81,unverified_direct_candidate
+COMM.DAT,0x9B91F,闘ょす石撃3フら！ゃー今ン<N:ク:12>,14,93 73 8C 94 B1 14 C9 33 02 48 31 C8 34 80,unverified_direct_candidate
+COMM.DAT,0x9BBC5,敵ア方かそッはン達か！ど,12,BD 42 C4 20 41 82 28 34 83 20 02 54,unverified_direct_candidate
+COMM.DAT,0x9BD21,い撃来すび聞 ,7,1B B1 9A 8C 99 88 01,unverified_direct_candidate
+COMM.DAT,0x9BE88,軍加 デ”かポルつ聞1,11,BA AA 01 81 03 20 D7 53 45 88 12,unverified_direct_candidate
+COMM.DAT,0x9C578,加来今もナ,5,AA 9A C8 38 7C,unverified_direct_candidate
+COMM.DAT,0x9CA63,て気回目す自ふへ ,9,21 A9 9E AC 8C A4 97 5A 01,unverified_direct_candidate
+COMM.DAT,0x9CA6D,ラん<N:．:2>テ 話てば男4聞つ分,14,57 2D 0F DB E0 9A B0 21 58 B3 15 88 45 B2,unverified_direct_candidate
+COMM.DAT,0x9EA3A,はど自おきらバッッへ今様ですジ<N:．:2>,16,28 54 A4 3B 44 33 AF 82 82 8A C8 CB 30 8C 7F 0F,unverified_direct_candidate
+COMM.DAT,0x9EAAF,聞待聞ッ1,5,88 98 88 82 12,unverified_direct_candidate
+COMM.DAT,0x9EAED,聞場待聞待軍ジ’,8,88 89 98 88 98 BA 7F 08,unverified_direct_candidate
+COMM.DAT,0x9EBFA,霊れ命発戦,5,4F 32 CC 76 63,unverified_direct_candidate
+COMM.DAT,0x9F38F,ゃっ出達僧う<CTRL:FB>はわ言,10,48 75 56 83 84 26 FB 28 43 91,unverified_direct_candidate
+COMM.DAT,0x9F43C,上見 はシか（目げぶマ決かナ,14,B9 A0 01 28 60 20 09 AC 9C CA 64 9D 20 7C,unverified_direct_candidate
+COMM.DAT,0x9F4C3,ア聞ばメ<CTRL:FF>デ手るゃはわ入<N:ｃ:9>サメは戦王か戦サだ思,23,42 88 58 78 FF 81 87 22 48 28 43 86 17 77 78 28 63 5D 20 63 77 35 9F,unverified_direct_candidate
+COMM.DAT,0x9F601,もメジ出ば入今へびへ老 <CTRL:FF>出ば,15,38 78 7F 56 58 86 C8 8A 99 8A A8 01 FF 56 58,unverified_direct_candidate
+COMM.DAT,0x9FF23,こ気軍っち,5,2E A9 BA A1 4B,unverified_direct_candidate
+COMM.DAT,0x9FFF5,<CTRL:FE>ジ）サダつお軍上軍ジ軍撃ヤらど発ダ1,19,FE 7F 0A 77 67 45 3B BA B9 BA 7F BA B1 BB 33 54 76 67 12,unverified_direct_candidate
+COMM.DAT,0xA00C5,フ老気水発ダジ風げげ聞,11,C9 A8 A9 B8 76 67 7F C1 9C 9C 88,unverified_direct_candidate
+COMM.DAT,0xA03A9,上聞や地地,5,B9 88 40 90 90,unverified_direct_candidate
+COMM.DAT,0xA03D8,発つ！め今聞,6,76 45 02 51 C8 88,unverified_direct_candidate
+COMM.DAT,0xA0F28,大臣兵参聞ジ兵つわン今場<N:*:7>ジ3行 （3,19,50 8B 66 A5 88 7F 66 45 43 34 C8 89 0B 7F 14 74 01 09 14,unverified_direct_candidate
+COMM.DAT,0xA11E7, <N:ъ:14>動ぎ聖我めびカ（軍山目,14,01 1A DC DD 7D CD BE 51 99 BC 09 BA 9B AC,unverified_direct_candidate
+COMM.DAT,0xA1296,デ’ュあ面,6,81 08 AB 3F DE 8C,unverified_direct_candidate
+COMM.DAT,0xA12F8,話<CTRL:F7>地）地子目かア発僧ぶ,12,B0 F7 90 0A 90 96 AC 20 42 76 84 CA,unverified_direct_candidate
+COMM.DAT,0xA1B93, ！軍っふュ,6,01 02 BA 75 97 AB,unverified_direct_candidate
+COMM.DAT,0xA1C0B,かッ今サ！ 場,8,20 82 C8 77 02 DF C8 89,unverified_direct_candidate
+COMM.DAT,0xA1D50,ジはわ入,4,7F 28 43 86,unverified_direct_candidate
+COMM.DAT,0xA1E06,シ発出男はは聞炎もばす今ろ兵上でサ<CTRL:FF>0ス軍軍いヤ0っ<N:ぺ:22>フ<N:ｃ:9>0ダジ、えにジ士えら軍<N:ъ:14>ぶ見ピ,45,60 76 56 B3 28 28 88 BF 38 58 8C C8 55 66 B9 30 77 FF 11 47 BA BA 1B BB 11 A1 DF BB C9 17 11 67 7F 24 46 23 7F 68 46 33 BA 1A CA A0 72,unverified_direct_candidate
+COMM.DAT,0xA1F2B,ウンュ気げー,6,71 34 AB A9 9C 31,unverified_direct_candidate
+COMM.DAT,0xA1F41,で出ダ出らお聞僧2<N:ﾉ:6>ももっ下,14,30 56 67 56 33 3B 88 84 13 10 38 38 75 70,unverified_direct_candidate
+COMM.DAT,0xA20EB,今びフ<N:．:13>場待待すジ,10,C8 99 C9 DF 88 89 98 98 8C 7F,unverified_direct_candidate
+COMM.DAT,0xA2120,<N:ﾉ:6>ジサフマ出私へ,8,10 7F 77 A6 64 56 85 8A,unverified_direct_candidate
+COMM.DAT,0xA21C1,待<N:ぇ:2>ぶ！聞るッ聞炎らら聞今今’地,16,98 C0 CA 02 88 22 82 88 BF 33 33 88 C8 C8 08 90,unverified_direct_candidate
+COMM.DAT,0xA2240,かッゃ<CTRL:F9>ダ者<N:．:2>シ！もに聞げ軍思加すど発と来マお,23,20 82 48 F9 67 7E 0F 60 02 38 23 88 9C BA 9F AA 8C 54 76 36 9A 64 3B,unverified_direct_candidate
+COMM.DAT,0xA22F1,今び敵げ王,5,C8 99 BD 9C 5D,unverified_direct_candidate
+COMM.DAT,0xA252C,パげたひ,4,A3 9C 1F 7D,unverified_direct_candidate
+COMM.DAT,0xA2772,発ダつらはも思4ラばもわュ,13,76 67 45 33 28 38 9F 15 57 58 38 43 AB,unverified_direct_candidate
+COMM.DAT,0xA2832,でっダサえ分<CTRL:FF>はッ3僧ラ水ア発正ダサだて 石,22,30 75 67 77 46 B2 FF 28 82 14 84 57 B8 42 76 C7 67 77 35 21 01 94,unverified_direct_candidate
+COMM.DAT,0xA2AD0,で水おきに石,6,30 B8 3B 44 23 94,unverified_direct_candidate
+COMM.DAT,0xA2CB4,炎かもメ出ば入方,8,BF 20 38 78 56 58 86 C4,unverified_direct_candidate
+COMM.DAT,0xA2CBD,へ者チ 出ば発もは,9,8A 7E 6C 01 56 58 76 38 28,unverified_direct_candidate
+COMM.DAT,0xA2D23,はに何ー,4,28 23 6E 31,unverified_direct_candidate
+COMM.DAT,0xA2D28,今上来と,4,C8 B9 9A 36,unverified_direct_candidate
+COMM.DAT,0xA2D2D,ゃきせル2ば僧2,8,48 44 59 53 13 58 84 13,unverified_direct_candidate
+COMM.DAT,0xA303A,0我来テ上年,6,11 BE 9A DB B9 DA,unverified_direct_candidate
+COMM.DAT,0xA34D9,げ目加老<CTRL:FF>れら様気気す聞,12,9C AC AA A8 FF 32 33 CB A9 A9 8C 88,unverified_direct_candidate
+COMM.DAT,0xA389C,僧聞バ命場気来ロ,8,84 88 AF CC 89 A9 9A A2,unverified_direct_candidate
+COMM.DAT,0xA3B58,は、ピれ達出 メナ <N:≠:16> も場,14,28 24 72 32 83 56 01 78 7C 01 04 01 38 89,unverified_direct_candidate
+COMM.DAT,0xA3B67,聞加加に,4,88 AA AA 23,unverified_direct_candidate
+COMM.DAT,0xA3BA8,老 待待っび,6,A8 01 98 98 A1 99,unverified_direct_candidate
+COMM.DAT,0xA3C3E,0我サ来上年,6,11 BE 77 9A B9 DA,unverified_direct_candidate
+COMM.DAT,0xA415F,に場はアサ力フ<CTRL:F9>上国 ,11,23 89 28 42 77 61 C9 F9 B9 5E 01,unverified_direct_candidate
+COMM.DAT,0xA4220,デ<N:X:20>らッはテらもッや。今，,13,81 06 33 82 28 DB 33 38 82 40 37 C8 0D,unverified_direct_candidate
+COMM.DAT,0xA4450,兵大’で<CTRL:FF>きも僧も気ル発出ニン<N:ク:12>）シへ一かど会,23,66 50 08 30 FF 44 38 84 38 A9 53 76 56 D1 34 80 0A 60 8A 8E 20 54 7B,unverified_direct_candidate
+COMM.DAT,0xA44EB,がはれ大シ待今,7,2A 28 32 50 60 98 C8,unverified_direct_candidate
+COMM.DAT,0xA450F,’（スン聞サ待場’勝とてピデを,15,08 09 47 34 88 77 98 89 08 D5 36 21 72 81 2F,unverified_direct_candidate
+COMM.DAT,0xA4697,<N:‐:2>，デ’オ下わろつ思今げす命’チ（ ,18,0E 0D 81 08 8F 70 43 55 45 9F C8 9C 8C CC 08 6C 09 01,unverified_direct_candidate
+COMM.DAT,0xA46E0,命びげバ場撃’,7,CC 99 9C AF 89 B1 08,unverified_direct_candidate
+COMM.DAT,0xA49CB,び言て知,4,99 91 21 C6,unverified_direct_candidate
+COMM.DAT,0xA6425,つ出つわ達わ本ア<CTRL:EF>大兵とるか,14,45 56 45 43 83 43 92 42 EF 50 66 36 22 20,unverified_direct_candidate
+COMM.DAT,0xA6699,ヤつる<N:*:7> ルつ聞び,9,BB 45 22 0B 01 53 45 88 99,unverified_direct_candidate
+COMM.DAT,0xA66FC,人思兵出兵出にラ下大,10,52 9F 66 56 66 56 23 57 70 50,unverified_direct_candidate
+COMM.DAT,0xA6707,タ<CTRL:F7>人ッ聞 ！もッはう場う前2す,16,62 F7 52 82 88 01 02 38 82 28 26 89 26 AE 13 8C,unverified_direct_candidate
+COMM.DAT,0xA6786,タ！にッれ・か詳戦ダろンを1わど炎つ聞きろ僧だ0ょル ンどつにな<N:ﾉ:6>ろン<CTRL:FB>ゃ兵,40,62 02 23 82 32 2C 20 DF 33 63 67 55 34 2F 12 43 54 BF 45 88 44 55 84 35 11 73 53 DF 66 34 54 45 23 1D 10 55 34 FB 48 66,unverified_direct_candidate
+COMM.DAT,0xA67C8,らにはャかてン,7,33 23 28 D6 20 21 34,unverified_direct_candidate
+COMM.DAT,0xA67D0,聞っれ地,4,D3 75 32 90,unverified_direct_candidate
+COMM.DAT,0xA67D5,はるルる’お、？下つ話,11,28 22 53 22 08 3B 24 3C 70 45 B0,unverified_direct_candidate
+COMM.DAT,0xA67FC,タス出マつ<N:ぇ:2>,6,62 47 56 64 45 C0,unverified_direct_candidate
+COMM.DAT,0xA6821,もろへ行ふもわやれる人私<N:ク:12>話,14,38 55 5A 74 97 38 43 40 32 22 52 85 80 B0,unverified_direct_candidate
+COMM.DAT,0xA6893,れ地自<CTRL:EF>もと僧わが はきにをゃ戦達,17,32 90 A4 EF 38 36 84 43 2A 01 28 44 23 2F 48 63 83,unverified_direct_candidate
+COMM.DAT,0xA6A2C, ，パ目た風,6,01 0D A3 AC 1F C1,unverified_direct_candidate
+COMM.DAT,0xA6D17,下）れか ろ思,7,70 0A 32 20 01 55 9F,unverified_direct_candidate
+COMM.DAT,0xA6D8C,はろえしーッ,6,28 55 46 1E 31 82,unverified_direct_candidate
+COMM.DAT,0xA6E1D,地”も 時る,6,90 03 38 25 CF 22,unverified_direct_candidate
+COMM.DAT,0xA6E73,かナ回で ！もッ聞る！地,12,20 7C 9E 30 01 02 38 82 88 22 02 90,unverified_direct_candidate
+COMM.DAT,0xA6ECD,わ、ジッるはわつ達ル私ッ<CTRL:EF>聞’はッそ,18,43 24 7F 82 22 28 43 45 83 53 85 82 EF 88 08 28 82 41,unverified_direct_candidate
+COMM.DAT,0xA6EFD,でン達聞は国ウ ッ’も’<CTRL:FE>アッ下！あ達聞,20,30 34 83 88 28 5E 71 01 82 08 38 08 FE 42 82 70 02 3F 83 88,unverified_direct_candidate
+COMM.DAT,0xA704C,わに聞攻,4,43 23 88 D0,unverified_direct_candidate
+COMM.DAT,0xA729A,地 らど草 兵ラ達地”ど<N:＄:1>,15,90 01 33 54 DD 65 E0 F2 66 57 83 90 03 54 05,unverified_direct_candidate
+COMM.DAT,0xA73F4,や兵つ動っ風地！れき<N:＄:1>者所聞ッく地,17,40 66 45 DC A1 C1 90 02 32 44 05 7E C2 88 82 3E 90,unverified_direct_candidate
+COMM.DAT,0xA77EA,わ誤ルきッばシ1やっ<N:ｌ:5>つる地！らゃや”ど<N:ﾉ:6>”ぜどンは下！見,30,43 DF 45 53 44 82 58 60 12 40 75 5B 45 22 90 02 33 48 40 03 54 10 03 A7 54 34 28 70 02 A0,unverified_direct_candidate
+COMM.DAT,0xA7878,でマえ僧<CTRL:FF>聞ルつわき達もど過 でろ、聞地,21,30 64 46 84 FF 88 53 45 43 44 83 38 54 DE 80 01 30 55 24 88 90,unverified_direct_candidate
+COMM.DAT,0xA794A,はろ炎つろ に,7,28 55 BF 45 55 25 23,unverified_direct_candidate
+COMM.DAT,0xA79C0,はーるかッり<N:ﾉ:6>兵ジだどき僧わつら<N:ク:12>,17,28 31 22 20 82 39 10 66 7F 35 54 44 84 43 45 33 80,unverified_direct_candidate
+COMM.DAT,0xA7A17,聞や ピ ルどろッ時れらッらテ,15,88 40 01 72 01 53 54 55 82 CF 32 33 82 33 DB,unverified_direct_candidate
+COMM.DAT,0xA7A77,思きもらる聞攻！そ 、あわンもきにる下！地,21,9F 44 38 33 22 88 D0 02 41 01 24 3F 43 34 38 44 23 22 70 02 90,unverified_direct_candidate
+COMM.DAT,0xA8080,パ目た風,4,A3 AC 1F C1,unverified_direct_candidate
+COMM.DAT,0xA84B0,わ達士戦私<N:げ:26>ダ聖れ下,10,43 83 68 63 85 D2 67 CD 32 70,unverified_direct_candidate
+COMM.DAT,0xA8CC0,れ”デき聞聞はにひれ力1<N:ク:12>聞,14,32 03 81 44 88 88 28 23 7D 32 61 12 80 88,unverified_direct_candidate
+COMM.DAT,0xA8D11, ！者っ<N:＄:1>士ダ私もど兵ロ戦炎<N:ク:12>はッ聞はる聞,21,25 02 7E A1 05 68 67 85 38 54 66 A2 63 BF 80 28 82 88 28 22 88,unverified_direct_candidate
+COMM.DAT,0xA8E0B,人ろつろ 達<CTRL:F1>ど年3”ど国で兵ダ<N:リ:12>るできウンシ’た！オ,27,52 55 45 55 25 83 F1 54 DA 14 03 54 5E 30 66 67 6F 22 30 44 71 34 60 08 1F 02 8F,unverified_direct_candidate
+COMM.DAT,0xA8E4F,もウ<N:ﾉ:6>れ山わき人2ア出シ（れ！わたッは聞るッを<N:≠:16>か,25,38 71 10 32 9B 43 44 52 13 42 56 60 09 32 02 43 1F 82 28 88 22 82 2F 04 20,unverified_direct_candidate
+COMM.DAT,0xA8E6A,てラルつ”大4ア攻,9,21 57 53 45 03 50 15 42 D0,unverified_direct_candidate
+COMM.DAT,0xA8F64,は命命デ気す,6,28 CC CC 81 A9 8C,unverified_direct_candidate
+COMM.DAT,0xA9191,シ発出ら今得以支<N:≠:16>て,13,60 76 56 33 C8 DD A7 DE FE DE 10 04 21,unverified_direct_candidate
+COMM.DAT,0xA94A0,な”士ょメ達よ,7,1D 03 68 73 78 83 3D,unverified_direct_candidate
+COMM.DAT,0xA953E,聞はる<N:７:11>デど！婚めてデ今に,14,88 28 22 18 81 54 02 DF 40 51 21 81 C8 23,unverified_direct_candidate
+COMM.DAT,0xA99EA,マサ世テ,4,64 77 CE DB,unverified_direct_candidate
+COMM.DAT,0xAB2C8,か！動<CTRL:FF>はンわど発0ダフナル,14,20 02 DC FF 28 34 43 54 76 11 67 C9 7C 53,unverified_direct_candidate
+COMM.DAT,0xAB6DA,<N:［:23>ス大員動聖炎待する本聞れた,15,E0 21 47 50 8D DC CD BF 98 2B 22 92 88 32 1F,unverified_direct_candidate
+COMM.DAT,0xAB84C,地父る聞,4,90 B7 22 88,unverified_direct_candidate
+COMM.DAT,0xAB8A6,はちわ僧て<N:＆:4>もる,8,28 4B 43 84 21 07 38 22,unverified_direct_candidate
+COMM.DAT,0xAB8C5,もわ達メ我フへ！ウ（,10,38 43 83 78 BE C9 8A 02 71 09,unverified_direct_candidate
+COMM.DAT,0xABC46,バとッ聞員地,6,AF 36 82 88 8D 90,unverified_direct_candidate
+COMM.DAT,0xABC8F,動・下 炎聞聞だ出出！地 す<CTRL:E1>聞下,17,DC 2C 70 01 BF 88 88 35 56 56 02 90 01 8C E1 88 70,unverified_direct_candidate
+COMM.DAT,0xABDA3,達手手だ！下 ムや,9,83 87 87 35 02 70 01 D8 40,unverified_direct_candidate
+COMM.DAT,0xABE9F,思水’ゃ石聞オタ下！に手老僧っ<N:ﾉ:6> 地,18,9F B8 08 48 94 88 8F 62 70 02 23 87 A8 84 A1 10 01 90,unverified_direct_candidate
+COMM.DAT,0xAC1FD,ア<CTRL:F5>ムテ山聞の炎す待動へ動と,14,42 F5 D8 DB 9B 88 1C BF 8C 98 DC 8A DC 36,unverified_direct_candidate
+COMM.DAT,0xAC27F,か士聞僧ア私<CTRL:FF>入入兵ばア私デ待,15,20 68 88 84 42 85 FF 86 86 66 58 42 85 81 98,unverified_direct_candidate
+COMM.DAT,0xAC314,ー地聞ピ,4,31 90 88 72,unverified_direct_candidate
+COMM.DAT,0xAC4DF,ゃゃ会シ聞達達はデ聞）,11,48 48 7B 60 88 83 83 28 81 88 0A,unverified_direct_candidate
+COMM.DAT,0xAC5ED,地入ニ（ナた,6,90 86 D1 09 7C 1F,unverified_direct_candidate
+COMM.DAT,0xACA65,デか2ょ人一ーまえにへかて<N:ﾉ:6>1聞大,17,81 20 13 73 52 8E 31 27 46 23 8A 20 21 10 12 88 50,unverified_direct_candidate
+COMM.DAT,0xACA7C,ン面動員ー兵山ンデ水,11,34 DE 8C DC 8D 31 66 9B 34 81 B8,unverified_direct_candidate
+COMM.DAT,0xACAC1,動員お地,4,DC 8D 3B 90,unverified_direct_candidate
+COMM.DAT,0xACBB5,ま老聞ら下！ータ聞で,10,27 A8 88 33 70 02 31 62 88 30,unverified_direct_candidate
+COMM.DAT,0xACC39,たぶもッ待,5,1F CA 38 82 98,unverified_direct_candidate
+COMM.DAT,0xACFFA,パ目たな,4,A3 AC 1F 1D,unverified_direct_candidate
+COMM.DAT,0xAD348,員ひ水か”聞は<N:｣:11>と聞た,11,8D 7D B8 20 03 88 28 65 36 88 1F,unverified_direct_candidate
+COMM.DAT,0xAD508,老てら？士ー聞前,8,A8 21 33 3C 68 31 88 AE,unverified_direct_candidate
+COMM.DAT,0xAD56C,ねへ動す今命す敵,8,4C 8A DC 8C C8 CC 8C BD,unverified_direct_candidate
+COMM.DAT,0xAD93B,聞員るニ,4,88 8D 22 D1,unverified_direct_candidate
+COMM.DAT,0xADD2F,ン見 場フポ待げ今か,10,34 A0 01 89 C9 D7 98 9C C8 20,unverified_direct_candidate
+COMM.DAT,0xADD3A,たや”今場 後方聞気地<N:X:20>ル兵ジろ僧動<CTRL:FE>都待言,24,1F 40 03 C8 89 DF C8 C3 C4 88 A9 90 06 53 66 7F 55 84 DC FE DE 98 98 91,unverified_direct_candidate
+COMM.DAT,0xADD91,聞へ下 か,5,88 8A 70 01 20,unverified_direct_candidate
+COMM.DAT,0xADE6F,<N:ぇ:2> 現ら、地”命記聖地 す地（,18,C0 DF DC DD 8C 33 24 90 03 CC DD F5 CD 90 01 8C 90 09,unverified_direct_candidate
+COMM.DAT,0xADF52,ー見”今こや,6,31 A0 03 C8 7A 40,unverified_direct_candidate
+COMM.DAT,0xADF81,老へ聞地”達ム待ベ地 こ 達<N:ク:12> ア達地 ,20,A8 8A 88 90 03 83 D8 98 B4 90 01 7A 01 83 80 01 42 83 90 01,unverified_direct_candidate
+COMM.DAT,0xADFA8,待失水山臣,6,98 DD DC B8 9B 8B,unverified_direct_candidate
+COMM.DAT,0xAE083,大 動聖今剣が時き、へ食<N:ﾉ:6>話”本聞国参,21,50 01 DC CD C8 DD 8D 2A CF 44 24 8A DD 30 10 B0 03 92 88 5E A5,unverified_direct_candidate
+COMM.DAT,0xAE101,目ヤ撃自大,5,AC BB B1 A4 50,unverified_direct_candidate
+COMM.DAT,0xAE123,命例0から動ダ世す聞も,12,CC DE 51 11 20 33 DC 67 CE 8C 88 38,unverified_direct_candidate
+COMM.DAT,0xAE13B,動命やで<N:ﾉ:6> 老場っ老所 委ょねへ動ト,19,DC CC 40 30 10 01 A8 89 75 A8 C2 01 DD 13 73 4C 8A DC 5C,unverified_direct_candidate
+COMM.DAT,0xAE152,で<N:ﾉ:6>命命命ばか目僧にゃ来霊,13,30 10 CC CC CC 58 20 AC 84 23 48 9A 4F,unverified_direct_candidate
+COMM.DAT,0xAE1F5,聞ア聞だーデ,6,88 42 88 35 31 81,unverified_direct_candidate
+COMM.DAT,0xAE910,聞つあらだママルルで2や,12,88 29 3F 33 35 64 64 53 53 30 13 40,unverified_direct_candidate
+COMM.DAT,0xAE9AC,気ルンマつ炎っぜ様裏支！れヤッ聞 ,19,A9 53 34 64 45 BF 75 A7 CB DD FE DE 10 02 32 BB 82 88 01,unverified_direct_candidate
+COMM.DAT,0xAEAC3,<CTRL:F7>今命聞モ1聞ば僧今ウ死で）,15,F7 C8 CC 88 5F 12 88 58 84 C8 71 DD 22 30 0A,unverified_direct_candidate
+COMM.DAT,0xAEB3B,ッ聞今剣話,6,82 88 C8 DD 8D B0,unverified_direct_candidate
+COMM.DAT,0xAEBFB,所聞す目自加闘<N:．:13>すゃろ、め,14,C2 88 8C AC A4 AA 93 DF 88 8C 48 55 24 51,unverified_direct_candidate
+COMM.DAT,0xAEC1A,員聞今霊,4,8D 88 C8 4F,unverified_direct_candidate
+COMM.DAT,0xAEC76,ムポもど 霊 らめ,9,D8 D7 38 54 25 4F 01 33 51,unverified_direct_candidate
+COMM.DAT,0xAEEA0,<N:ク:12>ポは僧’そ私聞地,9,80 D7 28 84 08 41 85 88 90,unverified_direct_candidate
+COMM.DAT,0xAEEDA,れ、下 わ僧シ4れ数で,12,32 24 70 01 43 84 60 15 32 DE D7 30,unverified_direct_candidate
+COMM.DAT,0xAEEE7,はわ僧シ4はきフ手,9,28 43 84 60 15 28 44 A6 87,unverified_direct_candidate
+COMM.DAT,0xAF4AD, 聞達ラ、地,6,25 88 83 57 24 90,unverified_direct_candidate
+COMM.DAT,0xAFB63,今待聞ッ聞待者下 聞,10,C8 98 88 82 88 98 7E 70 01 88,unverified_direct_candidate
+COMM.DAT,0xAFD7D,す上来軍場命者<CTRL:E5>かは,10,8C B9 9A BA 89 CC 7E E5 20 28,unverified_direct_candidate
+COMM.DAT,0xAFEAB,か’ゃに場,5,20 08 48 23 89,unverified_direct_candidate
+COMM.DAT,0xB07F9,フ気ュュ,4,C9 A9 AB AB,unverified_direct_candidate
+COMM.DAT,0xB0916,かモだまれわつ炎,8,20 5F 35 27 32 43 45 BF,unverified_direct_candidate
+COMM.DAT,0xB0F46,マえは力<N:ｌ:5>つ思ら軍1さュ,12,64 46 28 61 5B 45 9F 33 BA 12 3A AB,unverified_direct_candidate
+COMM.DAT,0xB0F7C,でルえれラ加戻た太いヤュか’聞ラ世！<CTRL:E7>び軍撃し4<N:ﾉ:6>,26,30 53 46 32 57 AA D9 1F DD A9 1B BB AB 20 08 D3 57 CE 02 E7 99 BA B1 1E 15 10,unverified_direct_candidate
+COMM.DAT,0xB1315,つ<N:｣:11>ム命ど会出方に,9,45 65 D8 CC 54 7B 56 C4 23,unverified_direct_candidate
+COMM.DAT,0xB1364,大達出今今<CTRL:F7>わつすに,10,50 83 56 C8 C8 F7 43 45 8C 23,unverified_direct_candidate
+COMM.DAT,0xB16F4, 命大 ど大,7,E0 DE CC 50 01 54 50,unverified_direct_candidate
+COMM.DAT,0xB1798,聞場我シ,4,88 89 BE 60,unverified_direct_candidate
+COMM.DAT,0xB19BE,炎かわ達員ッ聞  ば<CTRL:FA>出,12,BF 20 43 83 8D 82 88 01 01 58 FA 56,unverified_direct_candidate
+COMM.DAT,0xB1C67,か参かシ（つ”ら時動世す今参<N:ﾉ:6>一,16,20 A5 20 60 09 45 03 33 CF DC CE 8C C8 A5 10 8E,unverified_direct_candidate
+COMM.DAT,0xB1CF8,自聞聞見 <CTRL:FF>か士行ス戦る待’ジ聞場れ聞とーまか！時達<N:ｃ:12>にムバ！れ,32,A4 88 88 A0 01 FF 20 68 74 47 63 22 98 08 7F 88 89 32 88 36 31 27 20 02 CF 83 16 23 D8 AF 02 32,unverified_direct_candidate
+COMM.DAT,0xB1D2C,でももか,4,30 38 38 20,unverified_direct_candidate
+COMM.DAT,0xB1D6E,ジ場今達ど発士今,8,7F 89 C8 83 54 76 68 C8,unverified_direct_candidate
+S000.DAT,0x10D8,か て る に 、   う ま ”,17,20 01 21 01 22 01 23 01 24 01 25 01 26 01 27 01 03,unverified_direct_candidate
+S000.DAT,0x1108,や そ ア わ き つ え ス 、,17,40 01 41 01 42 01 43 01 44 01 45 01 46 01 47 01 24,unverified_direct_candidate
+S000.DAT,0x1138,シ 力 タ 戦 マ <N:｣:11> 兵 ダ 戦,17,60 01 61 01 62 01 63 01 64 01 65 01 66 01 67 01 63,unverified_direct_candidate
+S000.DAT,0x1168,<N:ク:12> デ ッ 達 僧 私 入 手 、,17,80 01 81 01 82 01 83 01 84 01 85 01 86 01 87 01 24,unverified_direct_candidate
+S000.DAT,0x1198,見 っ ロ パ 自 参 フ ぜ わ,17,A0 01 A1 01 A2 01 A3 01 A4 01 A5 01 A6 01 A7 01 43,unverified_direct_candidate
+S000.DAT,0x1CE1,やタ’かやタ’ややタ’シやタ’<N:ク:12>やタ’見やタ’<N:ぇ:2>やタ’ タ’,31,40 62 08 20 40 62 08 40 40 62 08 60 40 62 08 80 40 62 08 A0 40 62 08 C0 40 62 08 E0 40 62 08,unverified_direct_candidate
+S000.DAT,0x1D61,シタ’かシタ’やシタ’シシタ’<N:ク:12>シタ’見シタ’<N:ぇ:2>シタ’ タ’,31,60 62 08 20 60 62 08 40 60 62 08 60 60 62 08 80 60 62 08 A0 60 62 08 C0 60 62 08 E0 60 62 08,unverified_direct_candidate
+S000.DAT,0x1E61,見タ’か見タ’や見タ’シ見タ’<N:ク:12>見タ’見見タ’<N:ぇ:2>見タ’ タ’,31,A0 62 08 20 A0 62 08 40 A0 62 08 60 A0 62 08 80 A0 62 08 A0 A0 62 08 C0 A0 62 08 E0 A0 62 08,unverified_direct_candidate
+S000.DAT,0xFA86,ジトわ達<N:ク:12>わ兵だ僧,9,7F 5C 43 83 80 43 66 35 84,unverified_direct_candidate
+S000.DAT,0x101A1,手手た入,4,87 87 1F 86,unverified_direct_candidate
+S000.DAT,0x10559,地ばゃ僧は！<CTRL:F0>もふは聞デ地話,14,90 58 48 84 28 02 F0 38 97 28 88 81 90 B0,unverified_direct_candidate
+S000.DAT,0x10E54,す聞今命く”,6,8C 88 C8 CC 3E 03,unverified_direct_candidate
+S000.DAT,0x10FD1,  れろだ思攻<N:ク:12>ろろ”下私地,14,01 01 32 55 35 9F D0 80 55 55 03 70 85 90,unverified_direct_candidate
+S000.DAT,0x114AA,パ目たな,4,A3 AC 1F 1D,unverified_direct_candidate
+S000.DAT,0x11A8F,<N:ｃ:9>動戦す聞僧や’今ピて,11,17 DC 63 8C 88 84 40 08 C8 72 21,unverified_direct_candidate
+S000.DAT,0x11AB6,力<N:＆:4>ゃゃ私モ私もき達,10,61 07 48 48 85 5F 85 38 44 83,unverified_direct_candidate
+S000.DAT,0x11AC1,て）僧相所て,7,21 0A 84 DE 09 C2 21,unverified_direct_candidate
+S000.DAT,0x12106,どアた地 場わ僧ま場発勝<N:ﾉ:6>！地,15,54 42 1F 90 01 89 43 84 27 89 76 D5 10 02 90,unverified_direct_candidate
+S000.DAT,0x125C1,庫で攻えに達か,8,DE 3F 30 D0 46 23 83 20,unverified_direct_candidate
+S000.DAT,0x125FD,動ジ聖入達聞今命聞<N:ﾉ:6>,10,DC 7F CD 86 83 88 C8 CC 88 10,unverified_direct_candidate
+S000.DAT,0x130E1,大も私<CTRL:FF>士動れわどろつ聞バばすとメち力聖せ,21,50 38 85 FF 68 DC 32 43 54 55 45 D3 AF 58 8C 36 78 4B 61 CD 59,unverified_direct_candidate
+S000.DAT,0x132EA,ルタ今や,4,53 62 C8 40,unverified_direct_candidate
+S000.DAT,0x13303,北待っク<N:ｌ:5>長ゃでウ聞きもか，ね,16,DF 0C 98 A1 4E 5B D4 48 30 71 D3 44 38 20 0D 4C,unverified_direct_candidate
+S000.DAT,0x13938,か命動テ弱王,7,20 CC DC DB DD ED 5D,unverified_direct_candidate
+S000.DAT,0x14565,れどあだムはどろ”く！ ,12,32 54 3F 35 D8 28 54 55 03 3E 02 01,unverified_direct_candidate
+S000.DAT,0x14CE9,かききか’ ,6,20 44 44 20 08 25,unverified_direct_candidate
+S000.DAT,0x1518C,4え聞めえ助,7,15 46 88 51 46 DD 31,unverified_direct_candidate
+S000.DAT,0x15EBF,し方てた地 場思わ僧場発勝<N:ﾉ:6>！地,16,1E C4 21 1F 90 01 89 9F 43 84 89 76 D5 10 02 90,unverified_direct_candidate
+S000.DAT,0x16018,<N:ぇ:2>隊面？地！は方動地,12,C0 DD 77 DE 8C 3C 90 02 28 C4 DC 90,unverified_direct_candidate
+S000.DAT,0x1626E,ゃ私私炎私,5,48 85 85 BF 85,unverified_direct_candidate
+S000.DAT,0x167EA,<CTRL:FF>んてうとも達ばらジ戦もだもううてそ,18,FF 2D 21 26 36 38 83 58 33 7F 63 38 35 38 26 26 21 41,unverified_direct_candidate
+S000.DAT,0x16A2B,人オうッ動世か,7,52 8F 26 82 DC CE 20,unverified_direct_candidate
+S000.DAT,0x16B3E,聞もきる,4,88 38 44 22,unverified_direct_candidate
+S000.DAT,0x1700B,にか 者オ,5,23 20 01 7E 8F,unverified_direct_candidate
+S000.DAT,0x17018,れ会僧ムや,5,32 7B 84 D8 40,unverified_direct_candidate
+S000.DAT,0x17399,わ出<N:リ:12>達れッ命ア3、アし,12,43 56 6F 83 32 82 CC 42 14 24 42 1E,unverified_direct_candidate
+S000.DAT,0x175C9,大’た ヤウダ人。<N:ぇ:2>ど発0,13,50 08 1F 01 BB 71 67 52 37 C0 54 76 11,unverified_direct_candidate
+S000.DAT,0x1792A,時モらす聞き達時れ兵ろ方知か聞タで僧よムー,21,CF 5F 33 8C 88 44 83 CF 32 66 55 C4 C6 20 D3 62 30 84 3D D8 31,unverified_direct_candidate
+S000.DAT,0x17A39,で 入ひ動で,6,30 25 86 7D DC 30,unverified_direct_candidate
+S000.DAT,0x17D0A,？ど達は共し3,8,3C 54 83 28 DD C3 1E 14,unverified_direct_candidate
+S000.DAT,0x17D41,も出”今我,5,38 56 03 C8 BE,unverified_direct_candidate
+S000.DAT,0x17D7A,ポ聞もきる,5,D7 88 38 44 22,unverified_direct_candidate
+S000.DAT,0x18144,売動聖聖 1,7,DD CE DC CD CD 01 12,unverified_direct_candidate
+S000.DAT,0x18336,<N:*:7>ヤヤ見話会上ヤ分,9,0B BB BB A0 B0 7B B9 BB B2,unverified_direct_candidate
+S000.DAT,0x18BF0,今動た話,4,C8 DC 1F B0,unverified_direct_candidate
+S000.DAT,0x18D25,モ、よ今ジ,5,5F 24 3D C8 7F,unverified_direct_candidate
+S000.DAT,0x191C3,売山動聖 1,7,DD CE 9B DC CD 01 12,unverified_direct_candidate
+S000.DAT,0x194F8,聖もラ）や（あュ,8,CD 38 57 0A 40 09 3F AB,unverified_direct_candidate
+S000.DAT,0x197EE,サ敵（ッっこ ヤ<N:*:7>ヤ者,11,77 BD 09 82 A1 7A 01 BB 0B BB 7E,unverified_direct_candidate
+S000.DAT,0x19D78,からら達で時,6,20 33 33 83 30 CF,unverified_direct_candidate
+S000.DAT,0x19E26,こ老れ聞,4,2E A8 32 88,unverified_direct_candidate
+S000.DAT,0x1A41B,な0思てれ人わン,8,1D 11 9F 21 32 52 43 34,unverified_direct_candidate
+S000.DAT,0x1AA7F,あでデ聖す,5,3F 30 81 CD 8C,unverified_direct_candidate

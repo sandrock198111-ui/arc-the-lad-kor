@@ -1,0 +1,13 @@
+UI safe v0.39 cumulative circle-icon and battle-HUD repair
+base_zip_sha256=D66E6F4F780E3096B604C7699E3E7EB00392EE7C0C4FA457AEDE3F61EEFD45D9
+output_zip_sha256=0778FE435820409F190579D179F8B36FFFCEB02B5F2004FC1E3ACE58741D5DC3
+psx_sha256=D074E2D8D773528D7AB0BEF2F0AA55D43CF73DE6D30F552989F31E4377981FBF
+comm_sha256=CC06EE234F61416FE4C52829F54E078E33D83BD9DFD243B3D39C35C5667F0388
+changed_members=COMM.IMG,PSX.EXE
+psx_changed_bytes=19
+comm_changed_bytes=128
+circle_icon=E7_02 U=0x18 destination=(24,130)
+cross_icon=E7_03 preserved byte-identical
+battle_hud=LV combined label plus original M/P labels
+v38_help_payload=preserved
+v38_lv_plane=preserved

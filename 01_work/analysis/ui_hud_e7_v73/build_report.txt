@@ -1,0 +1,21 @@
+ui_hud_e7_v73 dual-tpage renderer build report
+base=E:\korean\03_output\ui_hud_e7_v71_leaf_font_ring_help_patch_only.zip
+base_sha256=C9FE5D3F3521748CDD53A43A7A47895CC1747928D2804A9502D877B4D47A250D
+output=E:\korean\03_output\ui_hud_e7_v73_dual_tpage_renderer_patch_only.zip
+output_sha256=70C3CA41D994589DFFD41859C198F0EF371F7A93E71C8196932297A67A4CAA23
+changed_members=PSX.EXE
+unchanged_members=COMM.IMG and all DAT members
+lookup_records=409
+high_page_records=57
+boundary_row_21_records=0
+reserve_helper=0x801A2080
+flag_helper=0x801A2094
+renderer=0x801A20B0
+draw_pass=0x801A21DC
+cave_used_bytes=548
+cave_free_bytes=96
+changed_psx_bytes=359
+reserved_slots_per_text_state=1
+static_readback=PASS
+runtime_verification=PENDING
+v72_status=REJECTED_SPRITE_TEXTURE_OVERWRITE

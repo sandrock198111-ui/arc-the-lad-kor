@@ -1,0 +1,5 @@
+﻿icon_id,destination_x,destination_y,font_rows,font_column,overlapped_codes,assigned_codes,status,source_x,source_y,width,height,pixel_sha256
+2,0,130,"10,11",0,DF6F DF70 DF71 DF72 DFC3 DFC4 DFC5 DFC6,0,safe_unassigned_glyph_planes,,,,,
+3,12,130,"10,11",1,DF73 DF74 DF75 DF76 DFC7 DFC8 DFC9 DFCA,0,safe_unassigned_glyph_planes,,,,,
+2,0,130,,,,,relocated_same_texture_page,114,354,12,12,29BF889D6DD22F8AC7653C26FFAF2D0A9F3DFFF69DA19DFECB7C9E9BC04E1E6A
+3,12,130,,,,,relocated_same_texture_page,162,354,12,12,446E7623096428D2E98B055ADF2825269AC074562F55EFCCB63011FF653940FF

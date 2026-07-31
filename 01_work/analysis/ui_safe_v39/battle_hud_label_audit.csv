@@ -1,0 +1,6 @@
+﻿pointer_offset,old_source,new_source,label,payload_hex,status
+0x823AC,0x82390,0x820A8,LV,6C 00 00 00,repointed_safe_pool
+0x823B0,0x82394,0x820AC,empty V tail,00 00 00 00,repointed_safe_pool
+0x823B4,0x82398,0x820B0,original auxiliary,DD B2 00 00,repointed_safe_pool
+0x823B8,0x8239C,0x820B4,M,01 DE 4F 00,repointed_safe_pool
+0x823BC,0x823A0,0x820B8,P,DD 90 00 00,repointed_safe_pool

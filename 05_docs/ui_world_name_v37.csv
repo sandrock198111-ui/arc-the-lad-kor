@@ -1,0 +1,8 @@
+﻿index,pointer_offset,source_offset,new_offset,japanese,status,korean_target,missing_glyphs,encoded_bytes,encoded_hex
+0,0x81EE8,0x81EB0,0x82083,スメリア,translated_existing_bank,스메리아,,8,E0 39 E0 8F E0 98 E0 9C
+1,0x81EEC,0x81EB8,0x781B1,ミルマーナ,translated_existing_bank,밀마나,,6,E0 51 E0 9E E0 99
+2,0x81EF0,0x81EC0,0x8204F,グレイシーヌ,translated_existing_bank,그레이시누,,10,E0 29 DF D2 E0 BD E0 61 E0 34
+3,0x81EF4,0x81EC8,0x8205A,アララトス,translated_existing_bank,아라라토스,,10,E0 9C E0 A6 E0 A6 E0 7E E0 39
+4,0x81EF8,0x81ED0,0x81ED0,アリバーシャ,preserved_missing_glyph,아리바샤,샤,6,42 6B AF 31 60 D6
+5,0x81EFC,0x81ED8,0x82AB9,カーデル,translated_existing_bank,카델,,4,DF E9 DF 68
+6,0x81F00,0x81EE0,0x82065,ジークラフ島,translated_existing_bank,지크라프섬,,10,E0 A2 E0 9D E0 A6 DF 9F DF 2D

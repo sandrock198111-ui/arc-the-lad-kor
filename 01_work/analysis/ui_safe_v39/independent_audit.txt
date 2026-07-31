@@ -1,0 +1,16 @@
+UI safe v0.39 independent audit
+zip_sha256=0778FE435820409F190579D179F8B36FFFCEB02B5F2004FC1E3ACE58741D5DC3
+psx_sha256=D074E2D8D773528D7AB0BEF2F0AA55D43CF73DE6D30F552989F31E4377981FBF
+comm_sha256=CC06EE234F61416FE4C52829F54E078E33D83BD9DFD243B3D39C35C5667F0388
+changed_members=COMM.IMG,PSX.EXE
+psx_changed_bytes=19
+comm_changed_bytes=128
+circle_icon=verified_duplicate_relocated_to_u_0x18
+cross_icon=preserved
+battle_hud_pointers=5/5_safe_pool
+battle_hud_labels=LV_empty_aux_M_P
+item_lv_plane=preserved
+field_help_payload=preserved
+target_help=preserved
+changes_outside_declared_ranges=false
+result=PASS

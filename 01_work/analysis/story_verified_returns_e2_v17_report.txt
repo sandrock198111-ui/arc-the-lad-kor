@@ -1,0 +1,46 @@
+1/S1031.DAT 0x4787A scene=house_return mode=e2 slot=0 command=E2 81 skip=7 bytes=10/127 text=엄마...
+D/SD011.DAT 0x47B60 scene=house_return mode=e2 slot=10 command=E2 8B skip=27 bytes=36/127 text=그 불을 줘. 내가 다시 붙이고 올게.
+D/SD011.DAT 0x47D58 scene=house_return mode=e2 slot=11 command=E2 8C skip=23 bytes=38/127 text=걱정 마. 불은 내가 다시 붙이고 올게.
+D/SD011.DAT 0x47D78 scene=house_return mode=e2 slot=12 command=E2 8D skip=6 bytes=10/127 text=아크...
+23/S2061.DAT 0x485DC mode=restore bytes=02 text=!
+F/SF0D1.DAT 0x4788C scene=reed_aftermath mode=e2 slot=0 command=E2 81 skip=10 bytes=15/127 text=하면 잘하잖아.
+F/SF0D1.DAT 0x478DA scene=reed_aftermath mode=e2 slot=1 command=E2 82 skip=35 bytes=47/127 text=아크는 신기해. 너와 있으면 힘이 솟는 것 같아.
+F/SF0D1.DAT 0x4793C scene=reed_aftermath mode=e2 slot=2 command=E2 83 skip=24 bytes=41/127 text=아무튼 성으로 돌아가 국왕께 보고해야 해.
+F/SF091.DAT 0x47880 scene=cave_event mode=e2 slot=0 command=E2 81 skip=60 bytes=71/127 text=이 나라 왕가에는 옛날 스메리아에 전해진 성궤의 전설이 대대로 이어진다.
+F/SF091.DAT 0x478F0 scene=cave_event mode=e2 slot=1 command=E2 82 skip=4 bytes=15/127 text=전설에 따르면,
+F/SF091.DAT 0x47928 scene=cave_event mode=e2 slot=2 command=E2 83 skip=40 bytes=60/127 text=옛날 인간의 왕이 오만해져 천계로 올라 신마저 지배하려 했고,
+F/SF091.DAT 0x47984 scene=cave_event mode=e2 slot=3 command=E2 84 skip=32 bytes=47/127 text=신의 노여움을 사 인류는 한 번 멸망했다고 한다.
+F/SF091.DAT 0x479D8 scene=cave_event mode=e2 slot=4 command=E2 85 skip=31 bytes=42/127 text=그때 세상의 끝을 전해 들은 소수의 사람들이
+F/SF091.DAT 0x47A2C scene=cave_event mode=e2 slot=5 command=E2 86 skip=50 bytes=65/127 text=인류의 유산을 성궤에 담아 신이 정한 곳 스메리아로 떠났다고 한다.
+F/SF091.DAT 0x47A92 scene=cave_event mode=e2 slot=6 command=E2 87 skip=41 bytes=44/127 text=그리고 인류가 다시 멸망의 위기에 처했을 때,
+F/SF091.DAT 0x47AF0 scene=cave_event mode=e2 slot=7 command=E2 88 skip=45 bytes=57/127 text=용자가 봉인을 풀어 성궤가 유일한 구원이 되리라 전해진다.
+F/SF091.DAT 0x47B52 scene=cave_event mode=e2 slot=8 command=E2 89 skip=41 bytes=56/127 text=아무도 그 전설을 믿지 않았지만, 내 형님은 믿고 계셨다.
+F/SF091.DAT 0x47BB0 scene=cave_event mode=e2 slot=9 command=E2 8A skip=42 bytes=49/127 text=형님은 이십 년 전 전쟁을 막으려 밀마나로 떠났고,
+F/SF091.DAT 0x47C0E scene=cave_event mode=e2 slot=10 command=E2 8B skip=32 bytes=35/127 text=토요케 숲에서 사라지고 말았다...
+23/S2081.DAT 0x47890 scene=post_battle_cutscene mode=e2 slot=0 command=E2 81 skip=44 bytes=75/127 text=대신: 스메리아 왕은 토우빌의 아크라는 소년에게 성궤를 찾게 할 생각입니다.
+23/S2081.DAT 0x478F0 scene=post_battle_cutscene mode=e2 slot=1 command=E2 82 skip=40 bytes=45/127 text=거울: 네 수작이 용자를 깨워 버린 것 아니냐?
+23/S2081.DAT 0x4794C scene=post_battle_cutscene mode=e2 slot=2 command=E2 83 skip=25 bytes=45/127 text=대신: 아직 그자가 용자라고 정해진 것은...
+23/S2081.DAT 0x4799A scene=post_battle_cutscene mode=e2 slot=3 command=E2 84 skip=20 bytes=40/127 text=대신: 그자는 밀마나로 향하고 있습니다.
+23/S2081.DAT 0x479E2 scene=post_battle_cutscene mode=e2 slot=4 command=E2 85 skip=24 bytes=55/127 text=거울: 좋다. 야군 장군에게 그자의 힘을 시험하게 하라.
+23/S2081.DAT 0x47A2E scene=post_battle_cutscene mode=e2 slot=5 command=E2 86 skip=37 bytes=38/127 text=거울: 그자가 용자라면 대비는 있겠지?
+23/S2081.DAT 0x47A88 scene=post_battle_cutscene mode=e2 slot=6 command=E2 87 skip=17 bytes=31/127 text=대신: 예, 생각해 두었습니다.
+23/S2082.DAT 0x47890 scene=post_battle_cutscene mode=e2 slot=0 command=E2 81 skip=27 bytes=39/127 text=대신: 아크가 밀마나에서 돌아왔습니다.
+23/S2082.DAT 0x478E0 scene=post_battle_cutscene mode=e2 slot=1 command=E2 82 skip=17 bytes=29/127 text=거울: 야군 장군에게 들었다.
+23/S2082.DAT 0x47926 scene=post_battle_cutscene mode=e2 slot=2 command=E2 83 skip=23 bytes=47/127 text=대신: 그자의 정령력은 계속 성장하고 있습니다.
+23/S2082.DAT 0x47972 scene=post_battle_cutscene mode=e2 slot=3 command=E2 84 skip=30 bytes=49/127 text=거울: 알겠다. 아크에 관해 장군들에게 알리겠다.
+23/S2082.DAT 0x479C4 scene=post_battle_cutscene mode=e2 slot=4 command=E2 85 skip=29 bytes=50/127 text=거울: 성궤를 우매한 인간들에게 넘겨서는 안 된다.
+23/S2082.DAT 0x47A16 scene=post_battle_cutscene mode=e2 slot=5 command=E2 86 skip=11 bytes=19/127 text=대신: 알겠습니다.
+23/S2082.DAT 0x47A56 scene=post_battle_cutscene mode=e2 slot=6 command=E2 87 skip=48 bytes=65/127 text=대신: 먼저 아버지의 전갈이 오는 토우빌을 샅샅이 조사하겠습니다.
+23/S2082.DAT 0x47ABA scene=post_battle_cutscene mode=e2 slot=7 command=E2 88 skip=18 bytes=31/127 text=거울: 좋은 보고를 기다리겠다.
+23/S2082.DAT 0x47B00 scene=post_battle_cutscene mode=e2 slot=8 command=E2 89 skip=6 bytes=11/127 text=대신: 예!
+dialogues=35
+e2=34
+short_restore=1
+new_glyphs=2
+restored_files=1/S1051.DAT,D/SD031.DAT
+active_structural_probes=0
+post_cave_sf0b1_preserved=true
+pre_cave_s2053_preserved=true
+battle_cursor_preserved=true
+other_files_preserved=true
+sha256=0CC3244DDE10CD8267248E984151DFA89BA788FCDE7C7A39C38B82E9A5E5CCDD

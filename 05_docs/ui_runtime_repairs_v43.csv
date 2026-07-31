@@ -1,0 +1,71 @@
+﻿category,pointer_offset,korean,old_target,new_target,encoded_bytes,encoded_hex,action
+system,0x780E8,처음부터,0x8207A,0x81E2F,8,DF 0C DF F8 E0 0B DF E8,allocate_and_repoint
+system,0x780EC,저장 데이터가 없습니다,0x81F9D,0x81DE0,22,E0 CB E0 E1 9C E0 31 E0 BD DF E8 E0 C0 9C E0 F1 E0 5F E0 35 E0 C1,allocate_and_repoint
+system,0x780F4,그대로 계속하기,0x82025,0x81F38,15,E0 29 E0 36 E0 D6 9C E0 9A E0 5C E0 C4 E0 AC,allocate_and_repoint
+system,0x780F8,데이터가 손상되었습니다,0x81F85,0x81DB1,23,E0 31 E0 BD DF E8 E0 C0 9C E0 5D E0 56 E0 2F DF FD E0 5F E0 35 E0 C1,allocate_and_repoint
+system,0x82AC4,저장하시겠습니까?,0x81FCB,0x81E0A,18,E0 CB E0 E1 E0 C4 E0 61 E0 A8 E0 5F E0 35 DF 59 E0 47,allocate_and_repoint
+system,0x82ACC,진행하시겠습니까?,0x81FDE,0x81DF7,18,DF 10 E0 8B E0 C4 E0 61 E0 A8 E0 5F E0 35 DF 59 E0 47,allocate_and_repoint
+system,0x82348,대상 변경,0x82070,0x8205D,9,E0 36 E0 56 9C DE 3C E0 89,allocate_and_repoint
+system,0x8234C,"공격, 연결 열기",0x82003,0x81F27,16,E0 C6 E0 40 DF E2 9C DF 1C DF 86 9C E0 B2 E0 AC,allocate_and_repoint
+system,0x82358,돌아갑니다,0x82044,0x82034,10,E0 D5 E0 9C E0 F4 E0 35 E0 C1,allocate_and_repoint
+system,0x8235C,{결정버튼}결정 {취소버튼}돌아가기,0x82094,0x81F04,17,E7 02 DF 86 E0 EB 9C E7 03 E0 D5 E0 9C E0 C0 E0 AC,allocate_and_repoint
+system,0x82360,다음 대상을 선택합니다,0x81FB4,0x81DC9,22,E0 C1 DF F8 9C E0 36 E0 56 E0 A3 9C E0 58 E0 B6 E0 86 E0 35 E0 C1,allocate_and_repoint
+system,0x8236C,비어 있는 곳을 선택하세요,0x81F6B,0x81D97,25,E0 53 E0 A0 9C E0 CA E0 C2 9C E0 7B E0 A3 9C E0 58 E0 B6 E0 C4 E0 5B E0 66,allocate_and_repoint
+system,0x82374,인물을 선택하세요,0x81FF1,0x81E1D,17,E0 6A E0 4F E0 A3 9C E0 58 E0 B6 E0 C4 E0 5B E0 66,allocate_and_repoint
+system,0x82AC0,예      아니요,0x82035,0x81F58,14,DF 1A 9C 9C 9C 9C 9C 9C E0 9C E0 35 E0 66,allocate_and_repoint
+system,0x81EE8,스메리아,0x82083,0x820AC,8,E0 39 E0 8F E0 98 E0 9C,allocate_and_repoint
+system,0x81EF0,그레이시누,0x8204F,0x82008,10,E0 29 DF D2 E0 BD E0 61 E0 34,allocate_and_repoint
+system,0x81EF4,아라라토스,0x8205A,0x82013,10,E0 9C E0 A6 E0 A6 E0 7E E0 39,allocate_and_repoint
+system,0x81F00,지크라프섬,0x82065,0x8201E,10,E0 A2 E0 9D E0 A6 DF 9F DF 2D,allocate_and_repoint
+nonstory_system,0x825D8,몬스터 도감,0x82478,0x81FF1,11,E9 61 E9 90 E9 F3 9C E9 36 E9 04,allocate_and_repoint
+nonstory_system,0x82944,사일런트,0x80E5E,0x820D0,8,E0 A5 E0 6B E0 BC E0 82,allocate_and_repoint
+nonstory_system,0x82954,자폭,0x81077,0x82113,4,E0 E0 DE CB,allocate_and_repoint
+nonstory_system,0x82958,드림 노크,0x80F9B,0x82049,9,DF 41 DF 3A 9C E0 3C E0 9D,allocate_and_repoint
+nonstory_system,0x8295C,대폭발,0x80F94,0x820F6,6,E0 36 DE CB E0 FA,allocate_and_repoint
+nonstory_system,0x82960,바람 검,0x80FB7,0x820D9,7,DF 6E E0 BA 9C DE F3,allocate_and_repoint
+nonstory_system,0x82964,전기 폭풍,0x80FC9,0x82099,9,E0 CC E0 AC 9C DE CB DE C9,allocate_and_repoint
+nonstory_system,0x8296C,해로운 기운 제거,0x80E4D,0x81F16,16,E0 88 E0 D6 DF FA 9C E0 AC DF FA 9C E0 AA DF 87,allocate_and_repoint
+nonstory_system,0x82970,하늘의 심판,0x80E70,0x81FE5,11,E0 C4 DF D7 E0 9B 9C DF 25 DF 05,allocate_and_repoint
+nonstory_system,0x82974,부활,0x80E7C,0x82109,4,E0 0B E0 80,allocate_and_repoint
+nonstory_system,0x82978,디바이드,0x80E81,0x820C7,8,E0 A1 DF 6E E0 BD DF 41,allocate_and_repoint
+nonstory_system,0x82980,회복,0x80C96,0x82104,4,DE C7 DF 33,allocate_and_repoint
+nonstory_system,0x829C4,헤모지,0x81033,0x820EF,6,DF 9D E0 11 E0 A2,allocate_and_repoint
+nonstory_system,0x829E4,번 그라운드,0x80E13,0x81F9D,11,DE E5 9C E0 29 E0 A6 DF FA DF 41,allocate_and_repoint
+nonstory_system,0x829E8,전체 회복,0x80E1F,0x8208F,9,E0 CC E0 90 9C DE C7 DF 33,allocate_and_repoint
+nonstory_system,0x829EC,게일 플래시,0x80E29,0x81FB5,11,E0 14 E0 6B 9C DF 9E E0 BB E0 61,allocate_and_repoint
+nonstory_system,0x829F0,슬로우 에너미,0x80E35,0x81F67,13,DF B6 E0 D6 E0 68 9C E0 9F E0 32 E0 50,allocate_and_repoint
+nonstory_system,0x829F4,별 내리기,0x80E43,0x8203F,9,DE E2 9C DF 97 E0 98 E0 AC,allocate_and_repoint
+nonstory_system,0x829F8,회복,0x80C96,0x82104,4,DE C7 DF 33,allocate_and_repoint
+nonstory_system,0x829FC,해로운 기운 제거,0x80E4D,0x81F16,16,E0 88 E0 D6 DF FA 9C E0 AC DF FA 9C E0 AA DF 87,allocate_and_repoint
+nonstory_system,0x82A00,사일런트,0x80E5E,0x820D0,8,E0 A5 E0 6B E0 BC E0 82,allocate_and_repoint
+nonstory_system,0x82A04,리프레시,0x80E67,0x820BE,8,E0 98 DF 9F DF D2 E0 61,allocate_and_repoint
+nonstory_system,0x82A08,하늘의 심판,0x80E70,0x81FE5,11,E0 C4 DF D7 E0 9B 9C DF 25 DF 05,allocate_and_repoint
+nonstory_system,0x82A0C,부활,0x80E7C,0x82109,4,E0 0B E0 80,allocate_and_repoint
+nonstory_system,0x82A10,디바이드,0x80E81,0x820C7,8,E0 A1 DF 6E E0 BD DF 41,allocate_and_repoint
+nonstory_system,0x82A14,토슈 비기,0x80E8A,0x82067,9,E0 7E DE DD 9C E0 53 E0 AC,allocate_and_repoint
+nonstory_system,0x82A18,봉인검,0x80E94,0x820E8,6,DF 93 E0 6A DE F3,allocate_and_repoint
+nonstory_system,0x82A1C,진공검,0x80E9B,0x820E1,6,DF 10 E0 C6 DE F3,allocate_and_repoint
+nonstory_system,0x82A20,그림자검,0x80EA2,0x820A3,8,E0 29 DF 3A E0 E0 DE F3,allocate_and_repoint
+nonstory_system,0x82A24,전투 큰 북,0x80EAB,0x82029,10,E0 CC E0 EF 9C DF 0A 9C DF 31,allocate_and_repoint
+nonstory_system,0x82A28,황사자태고,0x80EB6,0x81FFD,10,DE FC E0 A5 E0 E0 DF 08 E0 7F,allocate_and_repoint
+nonstory_system,0x82A2C,기합 나팔,0x80EC1,0x8207B,9,E0 AC E0 86 9C E0 99 DF 8B,allocate_and_repoint
+nonstory_system,0x82A30,비틀비틀 나팔,0x80ECB,0x81F83,13,E0 53 DF 06 E0 53 DF 06 9C E0 99 DF 8B,allocate_and_repoint
+nonstory_system,0x82A34,치유의 하프,0x80ED9,0x81FCD,11,E0 B0 E0 AD E0 9B 9C E0 C4 DF 9F,allocate_and_repoint
+nonstory_system,0x82A38,느림의 연주,0x80EE5,0x81FC1,11,E0 3A DF 3A E0 9B 9C DF 1C E0 CF,allocate_and_repoint
+nonstory_system,0x82A3C,위타천 오카리나,0x80EF1,0x81F48,15,E0 69 E0 7D DF 8C 9C E0 62 DF E9 E0 98 E0 99,allocate_and_repoint
+nonstory_system,0x82A40,방향잡이 피리,0x80F01,0x81F75,13,E0 0F DE F8 DF F4 E0 BD 9C DF 82 E0 98,allocate_and_repoint
+nonstory_system,0x82A44,대폭발,0x80F94,0x820F6,6,E0 36 DE CB E0 FA,allocate_and_repoint
+nonstory_system,0x82A48,드림 노크,0x80F9B,0x82049,9,DF 41 DF 3A 9C E0 3C E0 9D,allocate_and_repoint
+nonstory_system,0x82A4C,다이아몬드 더스트,0x80FA5,0x82618,17,E0 C1 E0 BD E0 9C DF 37 DF 41 9C DF D5 E0 39 E0 82,repoint_existing
+nonstory_system,0x82A50,바람 검,0x80FB7,0x820D9,7,DF 6E E0 BA 9C DE F3,allocate_and_repoint
+nonstory_system,0x82A54,전기 폭풍,0x80FC9,0x82099,9,E0 CC E0 AC 9C DE CB DE C9,allocate_and_repoint
+nonstory_system,0x82A58,회오리 차기,0x80FEE,0x81F91,11,DE C7 E0 62 E0 98 9C E0 96 E0 AC,allocate_and_repoint
+nonstory_system,0x82A5C,유성폭,0x80FFA,0x820FD,6,E0 AD E0 5A DE CB,allocate_and_repoint
+nonstory_system,0x82A60,유령 파동,0x81001,0x82085,9,E0 AD E0 EE 9C DF A0 E0 94,allocate_and_repoint
+nonstory_system,0x82A64,멸장열파,0x8100B,0x820B5,8,E0 4D E0 E1 E0 B2 DF A0,allocate_and_repoint
+nonstory_system,0x82A70,조사,0x80F0F,0x8210E,4,E0 A4 E0 A5,allocate_and_repoint
+nonstory_system,0x82A74,회복,0x80C96,0x82104,4,DE C7 DF 33,allocate_and_repoint
+nonstory_system,0x82A78,다리 만들기,0x81049,0x81FD9,11,E0 C1 E0 98 9C E0 49 E0 3B E0 AC,allocate_and_repoint
+nonstory_system,0x82A7C,바람 전기,0x81055,0x82053,9,DF 6E E0 BA 9C E0 CC E0 AC,allocate_and_repoint
+nonstory_system,0x82A80,몸 가져오기,0x8105F,0x81FA9,11,DF 36 9C E0 C0 DF 14 E0 62 E0 AC,allocate_and_repoint
+nonstory_system,0x82A84,기운 없음,0x810BB,0x82071,9,E0 AC DF FA 9C E0 F1 DF F8,allocate_and_repoint

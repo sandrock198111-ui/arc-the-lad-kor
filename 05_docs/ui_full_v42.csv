@@ -1,0 +1,504 @@
+﻿table_key,index,japanese,korean,encoded_bytes,encoded_hex,pointer_offset,string_offset,source
+equipment_name,0,炎の守り,불꽃의 수호,11,E9 7E E9 1F E9 BD 9C E9 8D EA 8F,0x804A4,0x80224,project_translation+local_guide_reference
+equipment_name,1,氷の守り,얼음의 수호,11,EA 5C E9 BC E9 BD 9C E9 8D EA 8F,0x804A8,0x80230,project_translation+local_guide_reference
+equipment_name,2,アンチへモジー,안티 헤모지,11,E9 9C EA 86 9C EA 11 E9 5F E9 D9,0x804AC,0x8023C,project_translation+local_guide_reference
+equipment_name,3,いやしのお守り,치유의 부적,11,E9 E6 E9 B7 E9 BD 9C E9 7B E9 C9,0x804B0,0x80248,project_translation+local_guide_reference
+equipment_name,4,きぬのおび,비단 허리띠,11,E9 80 E9 2E 9C EA 0F E9 4F EA 2F,0x804B4,0x80254,project_translation+local_guide_reference
+equipment_name,5,魔法のカート,마법 카드,9,E9 52 E9 73 9C E9 E8 E9 3B,0x804B8,0x80260,project_translation+local_guide_reference
+equipment_name,6,スリー<N:フ:11><N:リ:12>スカート,수면 방지 카드,14,E9 8D E9 5C 9C E9 6E E9 D9 9C E9 E8 E9 3B,0x804BC,0x8026A,project_translation+local_guide_reference
+equipment_name,7,パワーアーム,파워 암,7,E9 F8 E9 B4 9C EA 58,0x804C0,0x80279,project_translation+local_guide_reference
+equipment_name,8,カ<N:｣:11><N:ザ:8>ー<N:ク:12>ローフ,카이저 글러브,13,E9 E8 E9 BE E9 C8 9C E9 1A E9 42 E9 7F,0x804C4,0x80281,project_translation+local_guide_reference
+equipment_name,9,幻のこて,환상의 장갑,11,EA 90 E9 85 E9 BD 9C E9 C7 E9 05,0x804C8,0x8028F,project_translation+local_guide_reference
+equipment_name,10,サン<N:ク:12>ラス,선글라스,8,E9 89 E9 1A E9 3F E9 90,0x804CC,0x8029B,project_translation+local_guide_reference
+equipment_name,11,当て方の絵巻,명중의 두루마리,15,E9 5E E9 D7 E9 BD 9C E9 3A E9 4A E9 52 E9 4F,0x804D0,0x802A4,project_translation+local_guide_reference
+equipment_name,12,ぶん投げの絵巻,투척의 두루마리,15,E9 F5 EA 71 E9 BD 9C E9 3A E9 4A E9 52 E9 4F,0x804D4,0x802B4,project_translation+local_guide_reference
+equipment_name,13,神のこぶし,신의 주먹,9,E9 95 E9 BD 9C E9 D4 E9 58,0x804D8,0x802C4,project_translation+local_guide_reference
+equipment_name,14,バ<N:｣:11>オ<N:リ:12>ット<N:リ:12>ーサー,바이올렛 레이저,15,E9 6A E9 BE E9 AA EA 36 9C E9 44 E9 BE E9 C8,0x804DC,0x802CE,project_translation+local_guide_reference
+equipment_name,15,<N:ネ:13>ック<N:リ:12>ス,목걸이,6,E9 60 E9 09 E9 BE,0x804E0,0x802DE,project_translation+local_guide_reference
+equipment_name,16,じ<N:ぃ:20>す,염주,4,EA 60 E9 D4,0x804E4,0x802E5,project_translation+local_guide_reference
+equipment_name,17,長老のはちまき,장로의 머리띠,13,E9 C7 E9 49 E9 BD 9C E9 57 E9 4F EA 2F,0x804E8,0x802EA,project_translation+local_guide_reference
+equipment_name,18,しつ<N:ぷ:23>うのバンダナ,질풍의 반다나,13,E9 DC EA 03 E9 BD 9C E9 6B E9 2D E9 20,0x804EC,0x802F8,project_translation+local_guide_reference
+equipment_name,19,<N:ハ:12><N:｣:11>パーフーツ,하이퍼 부츠,11,EA 07 E9 BE E9 FB 9C E9 7B EA 74,0x804F0,0x80306,project_translation+local_guide_reference
+equipment_name,20,まにあわせのくつ,임시 신발,9,E9 C1 E9 93 9C E9 95 E9 6D,0x804F4,0x80312,project_translation+local_guide_reference
+equipment_name,21,フ<N:リ:12>ス<N:リ:12>ット,팔찌 1,6,E9 FA E9 DE 9C 12,0x804F8,0x8031C,project_translation+local_guide_reference
+equipment_name,22,フ<N:リ:12>ス<N:リ:12>ット,팔찌 2,6,E9 FA E9 DE 9C 13,0x804FC,0x80323,project_translation+local_guide_reference
+equipment_name,23,技のフ<N:リ:12>ス<N:リ:12>ット,기술의 팔찌,11,E9 1B EA 54 E9 BD 9C E9 FA E9 DE,0x80500,0x8032A,project_translation+local_guide_reference
+equipment_name,24,女神のいのり,여신의 기도,11,E9 A5 E9 95 E9 BD 9C E9 1B E9 36,0x80504,0x80336,project_translation+local_guide_reference
+equipment_name,25,パワーリスト,파워 리스트,11,E9 F8 E9 B4 9C E9 4F E9 90 E9 F6,0x80508,0x80342,project_translation+local_guide_reference
+equipment_name,26,デ<N:ｲ:6>ールの<N:牙:4>,데일의 이빨,11,E9 34 E9 C0 E9 BD 9C E9 BE E9 82,0x8050C,0x8034E,project_translation+local_guide_reference
+equipment_name,27,幻獣の<N:牙:4>,환수의 이빨,11,EA 90 E9 8D E9 BD 9C E9 BE E9 82,0x80510,0x8035A,project_translation+local_guide_reference
+equipment_name,28,しおかぜの調ベ,바닷바람의 선율,15,E9 6A EA 28 E9 6A E9 40 E9 BD 9C E9 89 E9 B8,0x80514,0x80366,project_translation+local_guide_reference
+equipment_name,29,<N:貝:2>がら,조개껍데기,10,E9 D0 EA 1A EA 21 E9 34 E9 1B,0x80518,0x80376,project_translation+local_guide_reference
+equipment_name,30,一角獣の角,유니콘의 뿔,11,E9 B7 E9 2C EA 79 E9 BD 9C EA 49,0x8051C,0x80381,project_translation+local_guide_reference
+equipment_name,31,<N:悲:5>劇のめがね,비극의 안경,11,E9 80 EA 20 E9 BD 9C E9 9C E9 0D,0x80520,0x8038D,project_translation+local_guide_reference
+equipment_name,32,鏡,거울,4,E9 07 E9 B3,0x80524,0x80399,project_translation+local_guide_reference
+equipment_name,33,古代の<N:ｴ:24>びわ,고대의 반지,11,E9 0F E9 31 E9 BD 9C E9 6B E9 D9,0x80528,0x8039E,project_translation+local_guide_reference
+equipment_name,34,幻の<N:ｴ:24>びわ,환상의 반지,11,EA 90 E9 85 E9 BD 9C E9 6B E9 D9,0x8052C,0x803AA,project_translation+local_guide_reference
+equipment_name,35,魔導の<N:ｴ:24>びわ,마도의 반지,11,E9 52 E9 36 E9 BD 9C E9 6B E9 D9,0x80530,0x803B6,project_translation+local_guide_reference
+equipment_name,36,おもちゃの<N:ｴ:24>びわ,장난감 반지,11,E9 C7 E9 21 E9 04 9C E9 6B E9 D9,0x80534,0x803C2,project_translation+local_guide_reference
+equipment_name,37,<N:毒:1>よけの<N:ｴ:24>びわ,독막이 반지,11,EA 2A E9 53 E9 BE 9C E9 6B E9 D9,0x80538,0x803CE,project_translation+local_guide_reference
+equipment_name,38,幻の盾,환상의 방패,11,EA 90 E9 85 E9 BD 9C E9 6E EA 88,0x8053C,0x803DA,project_translation+local_guide_reference
+equipment_name,39,戦士の守り,전사의 수호,11,E9 CA E9 83 E9 BD 9C E9 8D EA 8F,0x80540,0x803E6,project_translation+local_guide_reference
+equipment_name,40,長老の盾,장로의 방패,11,E9 C7 E9 49 E9 BD 9C E9 6E EA 88,0x80544,0x803F2,project_translation+local_guide_reference
+equipment_name,41,強力な<N:杖:1>,강력한 지팡이,13,E9 06 E9 47 EA 08 9C E9 D9 EA 87 E9 BE,0x80548,0x803FE,project_translation+local_guide_reference
+equipment_name,42,じごくのスニー<N:フ:11>,지옥의 스누프,13,E9 D9 E9 A9 E9 BD 9C E9 90 E9 27 EA 04,0x8054C,0x8040C,project_translation+local_guide_reference
+equipment_name,43,王様の像,왕의 상,7,E9 AD E9 BD 9C E9 85,0x80550,0x8041A,project_translation+local_guide_reference
+equipment_name,44,たかの像,매의 상,7,E9 56 E9 BD 9C E9 85,0x80554,0x80422,project_translation+local_guide_reference
+equipment_name,45,まがいの像,가짜 상,7,E9 01 EA 6B 9C E9 85,0x80558,0x8042A,project_translation+local_guide_reference
+equipment_name,46,たん剣,단검,4,E9 2E E9 0A,0x8055C,0x80432,project_translation+local_guide_reference
+equipment_name,47,幻の剣,환상의 검,9,EA 90 E9 85 E9 BD 9C E9 0A,0x80560,0x80437,project_translation+local_guide_reference
+equipment_name,48,<N:リ:12><N:｣:11>ラのかみか<N:ざ:2>り,리라의 머리장식,15,E9 4F E9 3F E9 BD 9C E9 57 E9 4F E9 C7 E9 94,0x80564,0x80441,project_translation+local_guide_reference
+equipment_name,49,乱れる宝石,요동치는 보석,13,E9 AF E9 38 E9 E6 E9 2A 9C E9 77 EA 4E,0x80568,0x80451,project_translation+local_guide_reference
+equipment_name,50,アーマーストーン,아머 스톤,9,E9 9A E9 57 9C E9 90 EA 82,0x8056C,0x8045F,project_translation+local_guide_reference
+equipment_name,51,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,11,E9 49 EA 3D EA 55 9C E9 90 EA 82,0x80570,0x80469,project_translation+local_guide_reference
+equipment_name,52,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,11,E9 49 EA 3D EA 55 9C E9 90 EA 82,0x80574,0x80469,project_translation+local_guide_reference
+equipment_name,53,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,11,E9 49 EA 3D EA 55 9C E9 90 EA 82,0x80578,0x80469,project_translation+local_guide_reference
+equipment_name,54,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,11,E9 49 EA 3D EA 55 9C E9 90 EA 82,0x8057C,0x80469,project_translation+local_guide_reference
+equipment_name,55,太陽の<N:げ:26>うし,태양의 거울,11,E9 F2 E9 A0 E9 BD 9C E9 07 E9 B3,0x80580,0x80475,project_translation+local_guide_reference
+equipment_name,56,おし花の本,압화 책,7,EA 59 EA 12 9C EA 6F,0x80584,0x80481,project_translation+local_guide_reference
+equipment_name,57,クラウ<N:ｲ:6>スの本,클라우스의 책,13,EA 7B E9 3F E9 B1 E9 90 E9 BD 9C EA 6F,0x80588,0x80489,project_translation+local_guide_reference
+equipment_name,58,音楽集,음악집,6,E9 BC E9 9B E9 DD,0x8058C,0x80497,project_translation+local_guide_reference
+equipment_name,59,ラークの紋章,라크의 문장,11,E9 3F E9 EC E9 BD 9C E9 65 E9 C7,0x80590,0x805A4,project_translation+local_guide_reference
+equipment_name,60,<N:ｴ:24>かりの紋章,유카리의 문장,13,E9 B7 E9 E8 E9 4F E9 BD 9C E9 65 E9 C7,0x80594,0x805B0,project_translation+local_guide_reference
+equipment_name,61,フ<N:リ:12><N:｣:11>の紋章,포니의 문장,11,E9 FE E9 2C E9 BD 9C E9 65 E9 C7,0x80598,0x805BE,project_translation+local_guide_reference
+equipment_name,62,勇者の証,용자의 증표,11,E9 B0 E9 C3 E9 BD 9C E9 D8 EA 8C,0x8059C,0x805CA,project_translation+local_guide_reference
+equipment_name,63,？？？？？,?????,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x805A0,0x805D6,project_translation+local_guide_reference
+equipment_description,0,炎系の攻撃に強くなります,화염 공격 피해 감소,19,EA 12 EA 60 9C E9 11 E9 0C 9C EA 06 EA 0C 9C E9 04 E9 8C,0x80A94,0x805E1,project_translation+local_guide_reference
+equipment_description,1,水系の攻撃に強くなります,냉기 공격 피해 감소,19,EA 24 E9 1B 9C E9 11 E9 0C 9C EA 06 EA 0C 9C E9 04 E9 8C,0x80A98,0x805F5,project_translation+local_guide_reference
+equipment_description,2,<N:ｌ:5>へモジーへを回避します,헤모지 방지,11,EA 11 E9 5F E9 D9 9C E9 6E E9 D9,0x80A9C,0x80609,project_translation+local_guide_reference
+equipment_description,3,自分の<N:Π:10><N:Ｐ:10>の回復量が大きくなります,회복 효과 증가,14,EA 16 E9 78 9C EA 92 E9 12 9C E9 D8 E9 01,0x80AA0,0x80615,project_translation+local_guide_reference
+equipment_description,4,戦闘で入る経験値が2倍になります,획득 경험치 2배,15,EA 91 EA 2C 9C E9 0D EA 10 E9 E6 9C 13 E9 6F,0x80AA4,0x80624,project_translation+local_guide_reference
+equipment_description,5,魔力が10<N:X:20>上昇します,마력 10% 상승,13,E9 52 E9 47 9C 12 11 06 9C E9 85 E9 92,0x80AA8,0x80634,project_translation+local_guide_reference
+equipment_description,6,<N:ｌ:5><N:眠:5>りへを回避します,수면 방지,9,E9 8D E9 5C 9C E9 6E E9 D9,0x80AAC,0x80642,project_translation+local_guide_reference
+equipment_description,7,防御力が30<N:X:20>上昇します（チョン<N:力:5>ラ）,촌가라 방어력 30% 상승,22,E9 E4 E9 01 E9 3F 9C E9 6E E9 A1 E9 47 9C 14 11 06 9C E9 85 E9 92,0x80AB0,0x8064C,project_translation+local_guide_reference
+equipment_description,8,<N:ｌ:5>投げるへが<N:リ:12>ベル1になります,던지기 레벨 +1,14,E9 33 E9 D9 E9 1B 9C E9 44 EA 43 9C 0C 12,0x80AB4,0x80663,project_translation+local_guide_reference
+equipment_description,9,攻撃力が<N:ｃ:12>0<N:X:20>上昇します,공격력 50% 상승,15,E9 11 E9 0C E9 47 9C 16 11 06 9C E9 85 E9 92,0x80AB8,0x80672,project_translation+local_guide_reference
+equipment_description,10,<N:ｌ:5>暗闇へを回避します,암흑 방지,9,EA 58 EA 93 9C E9 6E E9 D9,0x80ABC,0x80682,project_translation+local_guide_reference
+equipment_description,11,攻撃が<N:非:1>常に当たりやすくなります,명중률 상승,11,E9 5E E9 D7 EA 3B 9C E9 85 E9 92,0x80AC0,0x8068C,project_translation+local_guide_reference
+equipment_description,12,<N:ｌ:5>投げるへが<N:ｌ:5>ぶん投げるへになります,던지기가 강력 투척으로 변화,27,E9 33 E9 D9 E9 1B E9 01 9C E9 06 E9 47 9C E9 F5 EA 71 E9 B9 E9 49 9C E9 74 EA 12,0x80AC4,0x80698,project_translation+local_guide_reference
+equipment_description,13,攻撃が特定の敵に強くなります,특정 적에게 추가 피해,21,EA 85 E9 CD 9C E9 C9 E9 A4 E9 0B 9C EA 72 E9 01 9C EA 06 EA 0C,0x80AC8,0x806B4,project_translation+local_guide_reference
+equipment_description,14,攻撃が必す当たるようになります,공격이 반드시 명중,18,E9 11 E9 0C E9 BE 9C E9 6B E9 3B E9 93 9C E9 5E E9 D7,0x80ACC,0x806CA,project_translation+local_guide_reference
+equipment_description,15,<N:リ:12>ベルアッ<N:フ:11>時に<N:Π:10><N:Ｐ:10>の伸びが大きくなります,레벨업 시 최대 체력 증가량 상승,30,E9 44 EA 43 EA 5D 9C E9 93 9C E9 E5 E9 31 9C E9 E2 E9 47 9C E9 D8 E9 01 40 9C E9 85 E9 92,0x80AD0,0x806DD,project_translation+local_guide_reference
+equipment_description,16,魔力が30<N:X:20>上昇します （<N:ニ:13>ーゲン）,고겐 마력 30% 상승,18,E9 0F EA 1C 9C E9 52 E9 47 9C 14 11 06 9C E9 85 E9 92,0x80AD4,0x806FC,project_translation+local_guide_reference
+equipment_description,17,攻撃が当たりやすくなります,명중률 상승,11,E9 5E E9 D7 EA 3B 9C E9 85 E9 92,0x80AD8,0x8068C,project_translation+local_guide_reference
+equipment_description,18,すばやさが10<N:X:20>上昇します,민첩 10% 상승,13,E9 68 E9 E1 9C 12 11 06 9C E9 85 E9 92,0x80ADC,0x8070F,project_translation+local_guide_reference
+equipment_description,19,すばやさが30<N:X:20>上昇します,민첩 30% 상승,13,E9 68 E9 E1 9C 14 11 06 9C E9 85 E9 92,0x80AE0,0x8071D,project_translation+local_guide_reference
+equipment_description,20,<N:ｌ:5>ジャン<N:フ:11>へが<N:リ:12>ベル1になります,점프 레벨 +1,12,E9 CC EA 04 9C E9 44 EA 43 9C 0C 12,0x80AE4,0x8072B,project_translation+local_guide_reference
+equipment_description,21,反撃しやすくなります,반격률 상승,11,E9 6B E9 0C EA 3B 9C E9 85 E9 92,0x80AE8,0x80738,project_translation+local_guide_reference
+equipment_description,22,<N:ｌ:5>受け取るへが<N:リ:12>ベル1になります,받기 레벨 +1,12,E9 6C E9 1B 9C E9 44 EA 43 9C 0C 12,0x80AEC,0x80744,project_translation+local_guide_reference
+equipment_description,23,<N:ｌ:5>受け取るへが<N:ｌ:5>投げ返すへになります,받기가 되던지기로 변화,22,E9 6C E9 1B E9 01 9C E9 39 E9 33 E9 D9 E9 1B E9 49 9C E9 74 EA 12,0x80AF0,0x80751,project_translation+local_guide_reference
+equipment_description,24,半分の<N:∪:20><N:Ｐ:10>で能力を使用できます,능력 MP 소비 절반,19,EA 27 E9 47 9C EA 98 EA 99 9C E9 8C E9 80 9C E9 CB E9 6B,0x80AF4,0x80768,project_translation+local_guide_reference
+equipment_description,25,攻撃力が30<N:X:20>上昇します,공격력 30% 상승,15,E9 11 E9 0C E9 47 9C 14 11 06 9C E9 85 E9 92,0x80AF8,0x8077C,project_translation+local_guide_reference
+equipment_description,26,反撃ダメージが大きくなります（<N:｣:11>ー<N:力:5>）,이가 반격 피해 증가,19,E9 BE E9 01 9C E9 6B E9 0C 9C EA 06 EA 0C 9C E9 D8 E9 01,0x80AFC,0x8078C,project_translation+local_guide_reference
+equipment_description,27,効果はわかつていません,효과 불명,9,EA 92 E9 12 9C E9 7E E9 5E,0x80B00,0x807A0,project_translation+local_guide_reference
+equipment_description,28,行動する度まわりの<N:午:15>ャラを回復します（ククル）,쿠쿠루 행동 시 주변 아군 회복,29,E9 EB E9 EB E9 4A 9C EA 0D E9 38 9C E9 93 9C E9 D4 E9 74 9C E9 9A E9 17 9C EA 16 E9 78,0x80B04,0x807AA,project_translation+local_guide_reference
+equipment_description,29,敵がア<N:｣:11>テムを落としやすくなります,아이템 드롭률 상승,18,E9 9A E9 BE EA 81 9C E9 3B EA 38 EA 3B 9C E9 85 E9 92,0x80B08,0x807C8,project_translation+local_guide_reference
+equipment_description,30,敵を倒すとほ<N:げ:26>ア<N:｣:11>テムが出ます,적 처치 시 희귀 아이템 획득,27,E9 C9 9C EA 70 E9 E6 9C E9 93 9C EA 95 EA 1F 9C E9 9A E9 BE EA 81 9C EA 91 EA 2C,0x80B0C,0x807DB,project_translation+local_guide_reference
+equipment_description,31,効果はわかつていません,효과 불명,9,EA 92 E9 12 9C E9 7E E9 5E,0x80B10,0x807A0,project_translation+local_guide_reference
+equipment_description,32,<N:ｌ:5>石化へを回避します,석화 방지,9,EA 4E EA 12 9C E9 6E E9 D9,0x80B14,0x807F7,project_translation+local_guide_reference
+equipment_description,33,効果はわかつていません （アーク）,아크 전용 효과 불명,19,E9 9A E9 EC 9C E9 CA E9 B0 9C EA 92 E9 12 9C E9 7E E9 5E,0x80B18,0x80801,project_translation+local_guide_reference
+equipment_description,34,魔力が<N:ｃ:12>0<N:X:20>上昇します,마력 50% 상승,13,E9 52 E9 47 9C 16 11 06 9C E9 85 E9 92,0x80B1C,0x80815,project_translation+local_guide_reference
+equipment_description,35,魔力が30<N:X:20>上昇します,마력 30% 상승,13,E9 52 E9 47 9C 14 11 06 9C E9 85 E9 92,0x80B20,0x80823,project_translation+local_guide_reference
+equipment_description,36,<N:ｌ:5>向き直りの笛への効果が<N:∪:20><N:∧:11><N:Ｐ:10>全体（ポニ）,포코의 방향 전환 효과가 전체화,30,E9 FE E9 EA E9 BD 9C E9 6E EA 0E 9C E9 CA EA 90 9C EA 92 E9 12 E9 01 9C E9 CA E9 E2 EA 12,0x80B24,0x80831,project_translation+local_guide_reference
+equipment_description,37,<N:ｌ:5><N:毒:1>へを回避します,독 방지,7,EA 2A 9C E9 6E E9 D9,0x80B28,0x80850,project_translation+local_guide_reference
+equipment_description,38,防御力が<N:ｃ:12>0<N:X:20>上昇します,방어력 50% 상승,15,E9 6E E9 A1 E9 47 9C 16 11 06 9C E9 85 E9 92,0x80B2C,0x80858,project_translation+local_guide_reference
+equipment_description,39,防御力が30<N:X:20>上昇します,방어력 30% 상승,15,E9 6E E9 A1 E9 47 9C 14 11 06 9C E9 85 E9 92,0x80B30,0x80868,project_translation+local_guide_reference
+equipment_description,40,防御しやすくなります,방어율 상승,11,E9 6E E9 A1 E9 B8 9C E9 85 E9 92,0x80B34,0x80878,project_translation+local_guide_reference
+equipment_description,41,攻撃力が<N:７:11>0<N:X:20>上昇します（<N:ニ:13>ーゲン）,고겐 공격력 70% 상승,20,E9 0F EA 1C 9C E9 11 E9 0C E9 47 9C 18 11 06 9C E9 85 E9 92,0x80B38,0x80884,project_translation+local_guide_reference
+equipment_description,42,<N:ｌ:5>心<N:眼:3>法への<N:乾:16>囲が広くなります（<N:｣:11>ー<N:力:5>）,이가 심안법 범위 확장,21,E9 BE E9 01 9C E9 97 E9 9C E9 73 9C E9 72 E9 B6 9C EA 13 E9 C7,0x80B3C,0x80899,project_translation+local_guide_reference
+equipment_description,43,召喚<N:午:15>ャラの経験値が自分に入ります（チョン<N:力:5>ラ）,촌가라가 소환수 경험치 획득,27,E9 E4 E9 01 E9 3F E9 01 9C E9 8C EA 90 E9 8D 9C E9 0D EA 10 E9 E6 9C EA 91 EA 2C,0x80B40,0x808AF,project_translation+local_guide_reference
+equipment_description,44,<N:ｌ:5>沈黙へを回避します,침묵 방지,9,E9 E7 EA 3F 9C E9 6E E9 D9,0x80B44,0x808CB,project_translation+local_guide_reference
+equipment_description,45,攻撃を避けやすくなります,회피율 상승,11,EA 16 EA 06 E9 B8 9C E9 85 E9 92,0x80B48,0x808D5,project_translation+local_guide_reference
+equipment_description,46,攻撃力が10<N:X:20>上昇します,공격력 10% 상승,15,E9 11 E9 0C E9 47 9C 12 11 06 9C E9 85 E9 92,0x80B4C,0x808E1,project_translation+local_guide_reference
+equipment_description,47,<N:与:3>えるダメージの当たりはすれが大きくなります,피해 편차 증가,14,EA 06 EA 0C 9C E9 FC E9 DF 9C E9 D8 E9 01,0x80B50,0x808F1,project_translation+local_guide_reference
+equipment_description,48,復活魔法で<N:Π:10><N:Ｐ:10>最大で復活します（ククル）,쿠쿠루 부활 시 최대 체력 회복,29,E9 EB E9 EB E9 4A 9C E9 7B EA 14 9C E9 93 9C E9 E5 E9 31 9C E9 E2 E9 47 9C EA 16 E9 78,0x80B54,0x80900,project_translation+local_guide_reference
+equipment_description,49,当たりはすれが大きくなります,피해 편차 증가,14,EA 06 EA 0C 9C E9 FC E9 DF 9C E9 D8 E9 01,0x80B58,0x808F1,project_translation+local_guide_reference
+equipment_description,50,防御力が10<N:X:20>上昇します,방어력 10% 상승,15,E9 6E E9 A1 E9 47 9C 12 11 06 9C E9 85 E9 92,0x80B5C,0x8091E,project_translation+local_guide_reference
+equipment_description,51,効果はわかつていません,효과 불명,9,EA 92 E9 12 9C E9 7E E9 5E,0x80B60,0x807A0,project_translation+local_guide_reference
+equipment_description,52,効果はわかつていません,효과 불명,9,EA 92 E9 12 9C E9 7E E9 5E,0x80B64,0x807A0,project_translation+local_guide_reference
+equipment_description,53,効果はわかつていません,효과 불명,9,EA 92 E9 12 9C E9 7E E9 5E,0x80B68,0x807A0,project_translation+local_guide_reference
+equipment_description,54,効果はわかつていません,효과 불명,9,EA 92 E9 12 9C E9 7E E9 5E,0x80B6C,0x807A0,project_translation+local_guide_reference
+equipment_description,55,行動するたびに<N:Π:10><N:Ｐ:10>が回復します,매 행동 체력 회복,17,E9 56 9C EA 0D E9 38 9C E9 E2 E9 47 9C EA 16 E9 78,0x80B70,0x8092E,project_translation+local_guide_reference
+equipment_description,56,攻撃が<N:非:1>常に当たりやすくなります（トッシュ）,토슈 공격 명중률 상승,21,E9 F4 E9 8F 9C E9 11 E9 0C 9C E9 5E E9 D7 EA 3B 9C E9 85 E9 92,0x80B74,0x80940,project_translation+local_guide_reference
+equipment_description,57,全ステータスしょう害を回避します,모든 상태 이상 방지,19,E9 5F E9 3C 9C E9 85 E9 F2 9C E9 BE E9 85 9C E9 6E E9 D9,0x80B78,0x80956,project_translation+local_guide_reference
+equipment_description,58,魔力が30<N:X:20>上昇します （ポニ）,포코 마력 30% 상승,18,E9 FE E9 EA 9C E9 52 E9 47 9C 14 11 06 9C E9 85 E9 92,0x80B7C,0x8096A,project_translation+local_guide_reference
+equipment_description,59,<N:ｌ:5>マ<N:ヒ:5>へを回避します,마비 방지,9,E9 52 E9 80 9C E9 6E E9 D9,0x80B80,0x8097D,project_translation+local_guide_reference
+equipment_description,60,桜花雷爆斬でマ<N:ヒ:5>させることができます（トッシュ）,토슈 앵화뇌폭참에 마비 부여,27,E9 F4 E9 8F 9C EA 5B EA 12 EA 26 EA 01 EA 6D E9 A4 9C E9 52 E9 80 9C E9 7B E9 A5,0x80B84,0x80987,project_translation+local_guide_reference
+equipment_description,61,攻撃が特定の敵に強くなります,특정 적에게 추가 피해,21,EA 85 E9 CD 9C E9 C9 E9 A4 E9 0B 9C EA 72 E9 01 9C EA 06 EA 0C,0x80B88,0x806B4,project_translation+local_guide_reference
+equipment_description,62,行動するごとに<N:∪:20><N:Ｐ:10>が回復します（アーク）,아크 매 행동 MP 회복,22,E9 9A E9 EC 9C E9 56 9C EA 0D E9 38 9C EA 98 EA 99 9C EA 16 E9 78,0x80B8C,0x809A3,project_translation+local_guide_reference
+equipment_description,63,？？？？？,?????,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80B90,0x805D6,project_translation+local_guide_reference
+consumable_name,0,ねばねば,끈끈이,6,EA 22 EA 22 E9 BE,0x80C9C,0x809BA,project_translation+local_guide_reference
+consumable_name,1,やる気<N:г:23>リー,의욕 젤리,9,E9 BD EA 62 9C EA 68 E9 4F,0x80CA0,0x809C1,project_translation+local_guide_reference
+consumable_name,2,みなぎる果実,넘치는 열매,11,E9 25 E9 E6 E9 2A 9C E9 A7 E9 56,0x80CA4,0x809CB,project_translation+local_guide_reference
+consumable_name,3,回復果物,회복 열매,9,EA 16 E9 78 9C E9 A7 E9 56,0x80CA8,0x809D7,project_translation+local_guide_reference
+consumable_name,4,しびれるりんご,마비 사과,9,E9 52 E9 80 9C E9 83 E9 12,0x80CAC,0x809E1,project_translation+local_guide_reference
+consumable_name,5,石,돌,2,E9 37,0x80CB0,0x8049E,project_translation+local_guide_reference
+consumable_name,6,<N:リ:12>ニの草,레코의 풀,9,E9 44 E9 EA E9 BD 9C EA 02,0x80CB4,0x809EB,project_translation+local_guide_reference
+consumable_name,7,薬草,약초,4,E9 9F E9 E3,0x80CB8,0x809F5,project_translation+local_guide_reference
+consumable_name,8,<N:毒:1>薬,독초,4,EA 2A E9 E3,0x80CBC,0x809FA,project_translation+local_guide_reference
+consumable_name,9,ルウの薬,루우의 약,9,E9 4A E9 B1 E9 BD 9C E9 9F,0x80CC0,0x809FF,project_translation+local_guide_reference
+consumable_name,10,すばやさの薬,민첩의 약,9,E9 68 E9 E1 E9 BD 9C E9 9F,0x80CC4,0x80A09,project_translation+local_guide_reference
+consumable_name,11,小さい爆弾,작은 폭탄,9,E9 C4 E9 BA 9C EA 01 EA 7C,0x80CC8,0x80A13,project_translation+local_guide_reference
+consumable_name,12,大きい爆弾,큰 폭탄,7,E9 ED 9C EA 01 EA 7C,0x80CCC,0x80A1D,project_translation+local_guide_reference
+consumable_name,13,万能薬,만능약,6,E9 54 EA 27 E9 9F,0x80CD0,0x80A25,project_translation+local_guide_reference
+consumable_name,14,聖水,성수,4,E9 8A E9 8D,0x80CD4,0x80A2C,project_translation+local_guide_reference
+consumable_name,15,復活の薬,부활약,6,E9 7B EA 14 E9 9F,0x80CD8,0x80A31,project_translation+local_guide_reference
+consumable_name,16,攻撃瓶,공격 항아리,11,E9 11 E9 0C 9C EA 0B E9 9A E9 4F,0x80CDC,0x80A38,project_translation+local_guide_reference
+consumable_name,17,<N:眠:5>り玉,수면 구슬,9,E9 8D E9 5C 9C E9 16 E9 91,0x80CE0,0x80A44,project_translation+local_guide_reference
+consumable_name,18,弱りの玉,약화 구슬,9,E9 9F EA 12 9C E9 16 E9 91,0x80CE4,0x80A4E,project_translation+local_guide_reference
+consumable_name,19,ちからの実,힘의 열매,9,EA 18 E9 BD 9C E9 A7 E9 56,0x80CE8,0x80A58,project_translation+local_guide_reference
+consumable_name,20,パロの実,파로의 열매,11,E9 F8 E9 49 E9 BD 9C E9 A7 E9 56,0x80CEC,0x80A62,project_translation+local_guide_reference
+consumable_name,21,いのちの木の実,생명의 열매,11,E9 87 E9 5E E9 BD 9C E9 A7 E9 56,0x80CF0,0x80A6E,project_translation+local_guide_reference
+consumable_name,22,魔力の葉,마력의 잎,9,E9 52 E9 47 E9 BD 9C EA 66,0x80CF4,0x80A7A,project_translation+local_guide_reference
+consumable_name,23,魔力の泉,마력의 샘,9,E9 52 E9 47 E9 BD 9C EA 4B,0x80CF8,0x80A84,project_translation+local_guide_reference
+consumable_name,24,目つぶしの草,눈가림 풀,9,E9 28 E9 01 E9 51 9C EA 02,0x80CFC,0x80B94,project_translation+local_guide_reference
+consumable_name,25,苦い葉,쓴 잎,5,E9 99 9C EA 66,0x80D00,0x80A8E,project_translation+local_guide_reference
+consumable_name,26,石解け<N:ハ:12>リ,석화 해제침,11,EA 4E EA 12 9C EA 0C E9 CE E9 E7,0x80D04,0x80B9E,project_translation+local_guide_reference
+consumable_name,27,痛烈な<N:ハ:12>リ,침묵 해제침,11,E9 E7 EA 3F 9C EA 0C E9 CE E9 E7,0x80D08,0x80BAA,project_translation+local_guide_reference
+consumable_name,28,召喚のつ<N:げ:26>,소환 항아리,11,E9 8C EA 90 9C EA 0B E9 9A E9 4F,0x80D0C,0x80BB6,project_translation+local_guide_reference
+consumable_name,29,？？？？？,?????,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80D10,0x805D6,project_translation+local_guide_reference
+consumable_name,30,？？？？？,?????,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80D14,0x805D6,project_translation+local_guide_reference
+consumable_name,31,？？？？？,?????,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80D18,0x805D6,project_translation+local_guide_reference
+consumable_description,0,一時的にすばやさを下げます,민첩 일시 감소,14,E9 68 E9 E1 9C E9 C0 E9 93 9C E9 04 E9 8C,0x80F14,0x80BC2,project_translation+local_guide_reference
+consumable_description,1,<N:ｌ:5>へモジーへを元に戻します,헤모지 회복,11,EA 11 E9 5F E9 D9 9C EA 16 E9 78,0x80F18,0x80BD1,project_translation+local_guide_reference
+consumable_description,2,<N:リ:12>ベルアッ<N:フ:11>します,레벨 1 상승,11,E9 44 EA 43 9C 12 9C E9 85 E9 92,0x80F1C,0x80BDD,project_translation+local_guide_reference
+consumable_description,3,<N:Π:10><N:Ｐ:10>が<N:ｃ:9>0ポ<N:｣:11>ント回復します,체력 60 회복,12,E9 E2 E9 47 9C 17 11 9C EA 16 E9 78,0x80F20,0x80BE9,project_translation+local_guide_reference
+consumable_description,4,しびれて動けなくなります,마비 부여,9,E9 52 E9 80 9C E9 7B E9 A5,0x80F24,0x80BF6,project_translation+local_guide_reference
+consumable_description,5,ぶつけてダメージを<N:与:3>えます,던져서 피해,11,E9 33 E9 CF E9 88 9C EA 06 EA 0C,0x80F28,0x80C00,project_translation+local_guide_reference
+consumable_description,6,防御力が上がります,방어력 상승,11,E9 6E E9 A1 E9 47 9C E9 85 E9 92,0x80F2C,0x80C0C,project_translation+local_guide_reference
+consumable_description,7,<N:Π:10><N:Ｐ:10>が20ポ<N:｣:11>ント回復します,체력 20 회복,12,E9 E2 E9 47 9C 13 11 9C EA 16 E9 78,0x80F30,0x80C18,project_translation+local_guide_reference
+consumable_description,8,<N:毒:1>を<N:振:2>りまきます,독 부여,7,EA 2A 9C E9 7B E9 A5,0x80F34,0x80C25,project_translation+local_guide_reference
+consumable_description,9,しびれを取りのぞきます,마비 회복,9,E9 52 E9 80 9C EA 16 E9 78,0x80F38,0x80C2D,project_translation+local_guide_reference
+consumable_description,10,一時的にすばやさを上げます,민첩 일시 상승,14,E9 68 E9 E1 9C E9 C0 E9 93 9C E9 85 E9 92,0x80F3C,0x80C37,project_translation+local_guide_reference
+consumable_description,11,爆発します,폭발 피해,9,EA 01 E9 6D 9C EA 06 EA 0C,0x80F40,0x80C46,project_translation+local_guide_reference
+consumable_description,12,爆発します,큰 폭발 피해,12,E9 ED 9C EA 01 E9 6D 9C EA 06 EA 0C,0x80F44,0x80C50,project_translation+local_guide_reference
+consumable_description,13,ほとんどのステータス傷害を回復します,대부분의 상태 이상 회복,23,E9 31 E9 7B E9 7D E9 BD 9C E9 85 E9 F2 9C E9 BE E9 85 9C EA 16 E9 78,0x80F48,0x80C5D,project_translation+local_guide_reference
+consumable_description,14,<N:毒:1>を取りのぞきます,독 회복,7,EA 2A 9C EA 16 E9 78,0x80F4C,0x80C75,project_translation+local_guide_reference
+consumable_description,15,戦闘不能<N:午:15>ャラクタを復活させます,쓰러진 대상 부활,16,E9 98 E9 42 E9 DB 9C E9 31 E9 85 9C E9 7B EA 14,0x80F50,0x80C7D,project_translation+local_guide_reference
+consumable_description,16,一時的に攻撃力を上げます,공격력 일시 상승,16,E9 11 E9 0C E9 47 9C E9 C0 E9 93 9C E9 85 E9 92,0x80F54,0x80D1C,project_translation+local_guide_reference
+consumable_description,17,<N:眠:5>らせます,수면 부여,9,E9 8D E9 5C 9C E9 7B E9 A5,0x80F58,0x80C8E,project_translation+local_guide_reference
+consumable_description,18,一時的に攻撃力・防御力を下げます,공격 방어 일시 감소,19,E9 11 E9 0C 9C E9 6E E9 A1 9C E9 C0 E9 93 9C E9 04 E9 8C,0x80F5C,0x80D2D,project_translation+local_guide_reference
+consumable_description,19,攻撃力が上がります,공격력 상승,11,E9 11 E9 0C E9 47 9C E9 85 E9 92,0x80F60,0x80D41,project_translation+local_guide_reference
+consumable_description,20,すばやさが上がります,민첩 상승,9,E9 68 E9 E1 9C E9 85 E9 92,0x80F64,0x80D4D,project_translation+local_guide_reference
+consumable_description,21,<N:Π:10><N:Ｐ:10>の最大値が2ポ<N:｣:11>ント上がります,최대 체력 2 상승,16,E9 E5 E9 31 9C E9 E2 E9 47 9C 13 9C E9 85 E9 92,0x80F68,0x80D57,project_translation+local_guide_reference
+consumable_description,22,魔力が上がります,마력 상승,9,E9 52 E9 47 9C E9 85 E9 92,0x80F6C,0x80D68,project_translation+local_guide_reference
+consumable_description,23,<N:∪:20><N:Ｐ:10>の最大値が2ポ<N:｣:11>ント上がります,최대 마력 2 상승,16,E9 E5 E9 31 9C E9 52 E9 47 9C 13 9C E9 85 E9 92,0x80F70,0x80D72,project_translation+local_guide_reference
+consumable_description,24,<N:振:2>りまくと、目が見えなくなります,명중률 감소,11,E9 5E E9 D7 EA 3B 9C E9 04 E9 8C,0x80F74,0x80D83,project_translation+local_guide_reference
+consumable_description,25,一時的に防御力を上げます,방어력 일시 상승,16,E9 6E E9 A1 E9 47 9C E9 C0 E9 93 9C E9 85 E9 92,0x80F78,0x80D8F,project_translation+local_guide_reference
+consumable_description,26,石化から元に戻ります,석화 회복,9,EA 4E EA 12 9C EA 16 E9 78,0x80F7C,0x80DA0,project_translation+local_guide_reference
+consumable_description,27,封じられた魔法が使えるようになります,침묵 회복,9,E9 E7 EA 3F 9C EA 16 E9 78,0x80F80,0x80DAA,project_translation+local_guide_reference
+consumable_description,28,チョン<N:力:5>ラがモンスターを召喚するのに使います,촌가라의 몬스터 소환,20,E9 E4 E9 01 E9 3F E9 BD 9C E9 61 E9 90 E9 F3 9C E9 8C EA 90,0x80F84,0x80DB4,project_translation+local_guide_reference
+consumable_description,29,？？？？？,?????,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80F88,0x805D6,project_translation+local_guide_reference
+consumable_description,30,？？？？？,?????,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80F8C,0x805D6,project_translation+local_guide_reference
+consumable_description,31,？？？？？,?????,10,E0 47 E0 47 E0 47 E0 47 E0 47,0x80F90,0x805D6,project_translation+local_guide_reference
+skill_name,0,,,0,,0x811C0,0x804A1,project_translation+local_guide_reference
+skill_name,1,バーン<N:ク:12>ラウント,번 그라운드,11,E9 71 9C E9 19 E9 3F E9 B2 E9 3B,0x811C4,0x80DC9,project_translation+local_guide_reference
+skill_name,2,トータル<N:ヒ:5>ーリン<N:ク:12>,토탈 힐링,9,E9 F4 EA 7D 9C EA 97 EA 3C,0x811C8,0x80DD5,project_translation+local_guide_reference
+skill_name,3,ゲ<N:｣:11>ルフラッシュ,게일 플래시,11,E9 0B E9 C0 9C EA 05 E9 41 E9 93,0x811CC,0x80DDF,project_translation+local_guide_reference
+skill_name,4,スロウエ<N:ネ:13>ミー,슬로우 에너미,13,E9 91 E9 49 E9 B1 9C E9 A4 E9 24 E9 67,0x811D0,0x80DEB,project_translation+local_guide_reference
+skill_name,5,メテオフ<N:｣:13>ール,메테오 폴,9,E9 5A EA 7F E9 A8 9C EA 8B,0x811D4,0x80DF9,project_translation+local_guide_reference
+skill_name,6,<N:午:15>ュア,큐어,4,EA 7A E9 A1,0x811D8,0x80E03,project_translation+local_guide_reference
+skill_name,7,デポ<N:｣:11><N:ス:15>ン,디포이즌,8,E9 3E E9 FE E9 BE EA 69,0x811DC,0x80E08,project_translation+local_guide_reference
+skill_name,8,サ<N:｣:11><N:リ:12>ント,사일런트,8,E9 83 E9 C0 E9 43 E9 F6,0x811E0,0x80E11,project_translation+local_guide_reference
+skill_name,9,リフ<N:リ:12>ッシュ,리프레시,8,E9 4F EA 04 E9 44 E9 93,0x811E4,0x80E1A,project_translation+local_guide_reference
+skill_name,10,天のさばき,천벌,4,E9 E0 EA 41,0x811E8,0x80E23,project_translation+local_guide_reference
+skill_name,11,リ<N:ザ:8><N:リ:12>クション,리저렉션,8,E9 4F E9 C8 EA 34 EA 51,0x811EC,0x80E28,project_translation+local_guide_reference
+skill_name,12,デ<N:ｲ:6>バ<N:｣:11>ト,디바이드,8,E9 3E E9 6A E9 BE E9 3B,0x811F0,0x80E31,project_translation+local_guide_reference
+skill_name,13,桜花雷爆斬,앵화뇌폭참,10,EA 5B EA 12 EA 26 EA 01 EA 6D,0x811F4,0x80E3A,project_translation+local_guide_reference
+skill_name,14,呪縛剣,주박검,6,E9 D4 EA 40 E9 0A,0x811F8,0x80E45,project_translation+local_guide_reference
+skill_name,15,<N:真:2><N:空:2>斬,진공참,6,E9 DB E9 11 EA 6D,0x811FC,0x80E4C,project_translation+local_guide_reference
+skill_name,16,<N:虎:5><N:影:1>斬,호영참,6,EA 8F EA 61 EA 6D,0x81200,0x80E53,project_translation+local_guide_reference
+skill_name,17,戦の小太鼓,전투의 북,9,E9 CA E9 F5 E9 BD 9C E9 7C,0x81204,0x80E5A,project_translation+local_guide_reference
+skill_name,18,荒獅子太鼓,황사자 북,9,EA 15 E9 83 E9 C3 9C E9 7C,0x81208,0x80E64,project_translation+local_guide_reference
+skill_name,19,気合いラッパ,기합 나팔,9,E9 1B EA 0A 9C E9 20 E9 FA,0x8120C,0x80E6E,project_translation+local_guide_reference
+skill_name,20,へろへろラッパ,탈진 나팔,9,EA 7D E9 DB 9C E9 20 E9 FA,0x81210,0x80E78,project_translation+local_guide_reference
+skill_name,21,いやしのたてごと,치유의 하프,11,E9 E6 E9 B7 E9 BD 9C EA 07 EA 04,0x81214,0x80E82,project_translation+local_guide_reference
+skill_name,22,のろまのベース,둔화 베이스,11,EA 2B EA 12 9C EA 42 E9 BE E9 90,0x81218,0x80E8E,project_translation+local_guide_reference
+skill_name,23,い<N:駄:2>天のオカリナ,위타천 오카리나,15,E9 B6 E9 F0 E9 E0 9C E9 A8 E9 E8 E9 4F E9 20,0x8121C,0x80E9A,project_translation+local_guide_reference
+skill_name,24,向き直りの笛,방향전환 피리,13,E9 6E EA 0E E9 CA EA 90 9C EA 06 E9 4F,0x81220,0x80EAA,project_translation+local_guide_reference
+skill_name,25,エクス<N:フ:11>ロージョン,익스플로전,10,EA 65 E9 90 EA 05 E9 49 E9 CA,0x81224,0x80EB8,project_translation+local_guide_reference
+skill_name,26,トリーム<N:メ:6>ック,드림 노크,9,E9 3B E9 51 9C E9 26 E9 EC,0x81228,0x80EC3,project_translation+local_guide_reference
+skill_name,27,ダ<N:｣:11>ヤモントダスト,다이아몬드 더스트,17,E9 2D E9 BE E9 9A E9 61 E9 3B 9C E9 32 E9 90 E9 F6,0x8122C,0x80ECD,project_translation+local_guide_reference
+skill_name,28,ウ<N:｣:11>ントスラッシャー,윈드 슬래셔,11,EA 64 E9 3B 9C E9 91 E9 41 EA 50,0x81230,0x80EDF,project_translation+local_guide_reference
+skill_name,29,<N:ヒ:5>ートウ<N:｣:13>ール,히트 월,7,EA 96 E9 F6 9C EA 63,0x81234,0x80EEB,project_translation+local_guide_reference
+skill_name,30,サンダーストーム,썬더 스톰,9,EA 56 E9 32 9C E9 90 EA 83,0x81238,0x80EF3,project_translation+local_guide_reference
+skill_name,31,テ<N:リ:12>ポート,텔레포트,8,EA 80 E9 44 E9 FE E9 F6,0x8123C,0x80EFD,project_translation+local_guide_reference
+skill_name,32,心<N:眼:3>法,심안법,6,E9 97 E9 9C E9 73,0x81240,0x80F06,project_translation+local_guide_reference
+skill_name,33,<N:退:3>魔光弾,퇴마광탄,8,EA 84 E9 52 E9 14 EA 7C,0x81244,0x80F94,project_translation+local_guide_reference
+skill_name,34,旋風撃蹴,선풍격축,8,E9 89 EA 03 E9 0C EA 73,0x81248,0x80F9D,project_translation+local_guide_reference
+skill_name,35,流星爆,유성폭,6,E9 B7 E9 8A EA 01,0x8124C,0x80F0D,project_translation+local_guide_reference
+skill_name,36,鬼神流<N:影:1><N:波:1>,귀신류영파,10,EA 1F E9 95 E9 4B EA 61 E9 F8,0x81250,0x80FA6,project_translation+local_guide_reference
+skill_name,37,滅掌烈破,멸장열파,8,E9 5D E9 C7 E9 A7 E9 F8,0x81254,0x80FB1,project_translation+local_guide_reference
+skill_name,38,<N:ゲ:16>ラック,케락,4,E9 E9 EA 30,0x81258,0x80FBA,project_translation+local_guide_reference
+skill_name,39,モフリー,모프리,6,E9 5F EA 04 E9 4F,0x8125C,0x80FBF,project_translation+local_guide_reference
+skill_name,40,フウジン,후우진,6,EA 17 E9 B1 E9 DB,0x81260,0x80FC6,project_translation+local_guide_reference
+skill_name,41,ラ<N:｣:11>ジン,라이진,6,E9 3F E9 BE E9 DB,0x81264,0x80FCD,project_translation+local_guide_reference
+skill_name,42,へモジー,헤모지,6,EA 11 E9 5F E9 D9,0x81268,0x80FD4,project_translation+local_guide_reference
+skill_name,43,オトン,오톤,4,E9 A8 EA 82,0x8126C,0x80FDB,project_translation+local_guide_reference
+skill_name,44,調ベる,조사,4,E9 D0 E9 83,0x81270,0x80FE0,project_translation+local_guide_reference
+skill_name,45,ちょこ,초코,4,E9 E3 E9 EA,0x81274,0x80FE5,project_translation+local_guide_reference
+skill_name,46,回復,회복,4,EA 16 E9 78,0x81278,0x80FEA,project_translation+local_guide_reference
+skill_name,47,<N:ｴ:24>か造り,다리 만들기,11,E9 2D E9 4F 9C E9 54 E9 3D E9 1B,0x8127C,0x80FEF,project_translation+local_guide_reference
+skill_name,48,風雷破,풍뢰파,6,EA 03 EA 39 E9 F8,0x81280,0x80FFB,project_translation+local_guide_reference
+skill_name,49,風雷破,풍뢰파,6,EA 03 EA 39 E9 F8,0x81284,0x80FFB,project_translation+local_guide_reference
+skill_name,50,乗り移り,빙의,4,EA 48 E9 BD,0x81288,0x81002,project_translation+local_guide_reference
+skill_name,51,バク<N:リ:12>ツ手裏剣,폭렬 수리검,11,EA 01 EA 37 9C E9 8D E9 4F E9 0A,0x8128C,0x81007,project_translation+local_guide_reference
+skill_name,52,自爆,자폭,4,E9 C3 EA 01,0x81290,0x81013,project_translation+local_guide_reference
+skill_name,53,ジ<N:ニ:13>クへの階段,지옥으로 가는 계단,18,E9 D9 E9 A9 E9 B9 E9 49 9C E9 01 E9 2A 9C E9 0E E9 2E,0x81294,0x81018,project_translation+local_guide_reference
+skill_name,54,4方向,사방 공격,9,E9 83 E9 6E 9C E9 11 E9 0C,0x81298,0x8102B,project_translation+local_guide_reference
+skill_name,55,炎雷崩,염뢰붕,6,EA 60 EA 39 EA 45,0x8129C,0x81035,project_translation+local_guide_reference
+skill_name,56,ダスト・ルー<N:｣:11>ン,더스트 룬,9,E9 32 E9 90 E9 F6 9C EA 3A,0x812A0,0x8103C,project_translation+local_guide_reference
+skill_name,57,ヨミのつばさ,요미의 날개,11,E9 AF E9 67 E9 BD 9C E9 22 EA 1A,0x812A4,0x81046,project_translation+local_guide_reference
+skill_name,58,やる気なし,의욕 없음,9,E9 BD EA 62 9C E9 A3 E9 BC,0x812A8,0x81052,project_translation+local_guide_reference
+skill_description,0,,,0,,0x81708,0x804A1,project_translation+local_guide_reference
+skill_description,1,ようがんを発生させ敵にダメージを<N:与:3>えます,용암으로 적에게 피해,20,E9 B0 EA 58 E9 B9 E9 49 9C E9 C9 E9 A4 E9 0B 9C EA 06 EA 0C,0x8170C,0x8105C,project_translation+local_guide_reference
+skill_description,2,ステ<N:｣:11>タス傷害と体力を回復します,상태 이상과 체력 회복,21,E9 85 E9 F2 9C E9 BE E9 85 E9 12 9C E9 E2 E9 47 9C EA 16 E9 78,0x81710,0x81071,project_translation+local_guide_reference
+skill_description,3,いくうかんからの攻撃で敵にダメージを<N:与:3>えます,이공간 공격으로 피해,20,E9 BE E9 11 E9 03 9C E9 11 E9 0C E9 B9 E9 49 9C EA 06 EA 0C,0x81714,0x81087,project_translation+local_guide_reference
+skill_description,4,敵の素早さを下げます,적 민첩 감소,12,E9 C9 9C E9 68 E9 E1 9C E9 04 E9 8C,0x81718,0x8109C,project_translation+local_guide_reference
+skill_description,5,いんせきが落下しまわりの敵にダメージを<N:与:3>えます,운석으로 주변 적 피해,21,E9 B2 EA 4E E9 B9 E9 49 9C E9 D4 E9 74 9C E9 C9 9C EA 06 EA 0C,0x8171C,0x810A9,project_translation+local_guide_reference
+skill_description,6,体力を回復します,체력 회복,9,E9 E2 E9 47 9C EA 16 E9 78,0x81720,0x810BF,project_translation+local_guide_reference
+skill_description,7,<N:毒:1>を消しさります,독 해제,7,EA 2A 9C EA 0C E9 CE,0x81724,0x810C9,project_translation+local_guide_reference
+skill_description,8,敵の魔法を封じ込めます,적의 마법 봉인,14,E9 C9 E9 BD 9C E9 52 E9 73 9C E9 7A E9 BF,0x81728,0x810D1,project_translation+local_guide_reference
+skill_description,9,ステ<N:｣:11>タス傷害を回復します,상태 이상 회복,14,E9 85 E9 F2 9C E9 BE E9 85 9C EA 16 E9 78,0x8172C,0x810E0,project_translation+local_guide_reference
+skill_description,10,天使が画面外に飛んでいき<N:リ:12>ー<N:ザ:8>ーで攻撃します,천사의 광선 공격,16,E9 E0 E9 83 E9 BD 9C E9 14 E9 89 9C E9 11 E9 0C,0x81730,0x810EF,project_translation+local_guide_reference
+skill_description,11,戦闘不能になつた味方を呼び戻せます,쓰러진 아군 부활,16,E9 98 E9 42 E9 DB 9C E9 9A E9 17 9C E9 7B EA 14,0x81734,0x81100,project_translation+local_guide_reference
+skill_description,12,敵の体力をすいとり味方に分け<N:与:3>えます,적 체력을 흡수해 아군 회복,26,E9 C9 9C E9 E2 E9 47 E9 BB 9C EA 94 E9 8D EA 0C 9C E9 9A E9 17 9C EA 16 E9 78,0x81738,0x81111,project_translation+local_guide_reference
+skill_description,13,敵一体に必殺の剣で斬りつけます,적 하나에 필살검,16,E9 C9 9C EA 07 E9 20 E9 A4 9C EA 8D EA 4A E9 0A,0x8173C,0x8112C,project_translation+local_guide_reference
+skill_description,14,敵をマ<N:ヒ:5>させます,적에게 마비 부여,16,E9 C9 E9 A4 E9 0B 9C E9 52 E9 80 9C E9 7B E9 A5,0x81740,0x8113D,project_translation+local_guide_reference
+skill_description,15,2ます先の敵を斬りつけます,두 칸 앞의 적 공격,18,E9 3A 9C EA 76 9C EA 5A E9 BD 9C E9 C9 9C E9 11 E9 0C,0x81744,0x8114E,project_translation+local_guide_reference
+skill_description,16,敵に向かつて走り込んで斬りつけます,돌진하며 적 공격,16,E9 37 E9 DB EA 07 E9 5B 9C E9 C9 9C E9 11 E9 0C,0x81748,0x81161,project_translation+local_guide_reference
+skill_description,17,味方の攻撃力を上げます,아군 공격력 상승,16,E9 9A E9 17 9C E9 11 E9 0C E9 47 9C E9 85 E9 92,0x8174C,0x81172,project_translation+local_guide_reference
+skill_description,18,<N:波:1>動<N:リ:12>ー<N:ザ:8>ー弾を撃ちます,파동 광선 발사,14,E9 F8 E9 38 9C E9 14 E9 89 9C E9 6D E9 83,0x81750,0x81183,project_translation+local_guide_reference
+skill_description,19,<N:遠:1>くの敵を気合で攻撃します,먼 적을 기합으로 공격,21,E9 59 9C E9 C9 E9 BB 9C E9 1B EA 0A E9 B9 E9 49 9C E9 11 E9 0C,0x81754,0x81192,project_translation+local_guide_reference
+skill_description,20,一度にたくさんの爆弾を撃ちます,폭탄을 연속 발사,16,EA 01 EA 7C E9 BB 9C E9 A6 EA 52 9C E9 6D E9 83,0x81758,0x811A8,project_translation+local_guide_reference
+skill_description,21,味方の体力を回復します,아군 체력 회복,14,E9 9A E9 17 9C E9 E2 E9 47 9C EA 16 E9 78,0x8175C,0x812AC,project_translation+local_guide_reference
+skill_description,22,敵のすばやさを下げます,적 민첩 감소,12,E9 C9 9C E9 68 E9 E1 9C E9 04 E9 8C,0x81760,0x8109C,project_translation+local_guide_reference
+skill_description,23,味方のすばやさを上げます,아군 민첩 상승,14,E9 9A E9 17 9C E9 68 E9 E1 9C E9 85 E9 92,0x81764,0x812BB,project_translation+local_guide_reference
+skill_description,24,全員がポニと同じ方向に向きを変えます,전원이 포니 방향으로 전환,25,E9 CA E9 B5 E9 BE 9C E9 FE E9 2C 9C E9 6E EA 0E E9 B9 E9 49 9C E9 CA EA 90,0x81768,0x812CA,project_translation+local_guide_reference
+skill_description,25,すごい炎で敵をつつみこみダメージを<N:与:3>えます,거대한 불꽃으로 피해,20,E9 07 E9 31 EA 08 9C E9 7E E9 1F E9 B9 E9 49 9C EA 06 EA 0C,0x8176C,0x812E4,project_translation+local_guide_reference
+skill_description,26,敵を<N:眠:5>らせます,적에게 수면 부여,16,E9 C9 E9 A4 E9 0B 9C E9 8D E9 5C 9C E9 7B E9 A5,0x81770,0x812F9,project_translation+local_guide_reference
+skill_description,27,すごいふぶきを起こして敵にダメージを<N:与:3>えます,눈보라로 적에게 피해,20,E9 28 E9 77 E9 3F E9 49 9C E9 C9 E9 A4 E9 0B 9C EA 06 EA 0C,0x81774,0x8130A,project_translation+local_guide_reference
+skill_description,28,すごい風を起こして敵にダメージを<N:与:3>えます,강풍으로 적에게 피해,20,E9 06 EA 03 E9 B9 E9 49 9C E9 C9 E9 A4 E9 0B 9C EA 06 EA 0C,0x81778,0x8131F,project_translation+local_guide_reference
+skill_description,29,炎のかたまりを作りだします,불꽃 장벽 생성,14,E9 7E E9 1F 9C E9 C7 EA 44 9C E9 87 E9 8A,0x8177C,0x81334,project_translation+local_guide_reference
+skill_description,30,すごい雷を落として敵にダメージを<N:与:3>えます,번개로 적에게 피해,18,E9 71 EA 1A E9 49 9C E9 C9 E9 A4 E9 0B 9C EA 06 EA 0C,0x81780,0x81343,project_translation+local_guide_reference
+skill_description,31,まわりの味方を連れてテ<N:リ:12>ポートします,주변 아군과 순간이동,20,E9 D4 E9 74 9C E9 9A E9 17 E9 12 9C EA 53 E9 03 E9 BE E9 38,0x81784,0x81356,project_translation+local_guide_reference
+skill_description,32,敵<N:午:15>ャラクタをロックします,적 하나 고정,12,E9 C9 9C EA 07 E9 20 9C E9 0F E9 CD,0x81788,0x8136B,project_translation+local_guide_reference
+skill_description,33,心<N:眼:3>法でロックした敵に対して光弾を撃ち込みます,고정한 적에게 광탄 발사,23,E9 0F E9 CD EA 08 9C E9 C9 E9 A4 E9 0B 9C E9 14 EA 7C 9C E9 6D E9 83,0x8178C,0x81378,project_translation+local_guide_reference
+skill_description,34,自分のまわりにいる敵<N:午:15>ャラクタを攻撃します,주변 적 공격,12,E9 D4 E9 74 9C E9 C9 9C E9 11 E9 0C,0x81790,0x81390,project_translation+local_guide_reference
+skill_description,35,たつまきで敵をすいあげて地上にたたき落とします,회오리로 띄워 내리찍음,22,EA 16 E9 A8 E9 4F E9 49 9C EA 2E E9 B4 9C E9 23 E9 4F EA 6C E9 BC,0x81794,0x8139D,project_translation+local_guide_reference
+skill_description,36,自分の残像を敵に向かつてぶつけます,잔상을 날려 공격,16,EA 67 E9 85 E9 BB 9C E9 22 E9 46 9C E9 11 E9 0C,0x81798,0x813B4,project_translation+local_guide_reference
+skill_description,37,自分よりある程度弱い敵を消し去ります,약한 적을 소멸,14,E9 9F EA 08 9C E9 C9 E9 BB 9C E9 8C E9 5D,0x8179C,0x813C5,project_translation+local_guide_reference
+skill_description,38,<N:ｌ:5><N:ゲ:16>ラックへを召喚します,케락 소환,9,E9 E9 EA 30 9C E9 8C EA 90,0x817A0,0x813D4,project_translation+local_guide_reference
+skill_description,39,<N:ｌ:5>モフリーへを召喚します,모프리 소환,11,E9 5F EA 04 E9 4F 9C E9 8C EA 90,0x817A4,0x813DE,project_translation+local_guide_reference
+skill_description,40,<N:ｌ:5>フウジンへを召喚します,후우진 소환,11,EA 17 E9 B1 E9 DB 9C E9 8C EA 90,0x817A8,0x813EA,project_translation+local_guide_reference
+skill_description,41,<N:ｌ:5>ラ<N:｣:11>ジンへを召喚します,라이진 소환,11,E9 3F E9 BE E9 DB 9C E9 8C EA 90,0x817AC,0x813F6,project_translation+local_guide_reference
+skill_description,42,<N:ｌ:5>へモジーへを召喚します,헤모지 소환,11,EA 11 E9 5F E9 D9 9C E9 8C EA 90,0x817B0,0x81402,project_translation+local_guide_reference
+skill_description,43,<N:ｌ:5>オトンへを召喚します,오톤 소환,9,E9 A8 EA 82 9C E9 8C EA 90,0x817B4,0x8140E,project_translation+local_guide_reference
+skill_description,44,モンスターを調ベます,몬스터 정보 조사,16,E9 61 E9 90 E9 F3 9C E9 CD E9 77 9C E9 D0 E9 83,0x817B8,0x81418,project_translation+local_guide_reference
+skill_description,45,<N:ｌ:5>ちょこへを召喚します,초코 소환,9,E9 E3 E9 EA 9C E9 8C EA 90,0x817BC,0x81429,project_translation+local_guide_reference
+skill_description,46,味方を回復します,아군 회복,9,E9 9A E9 17 9C EA 16 E9 78,0x817C0,0x81433,project_translation+local_guide_reference
+skill_description,47,行けないところに<N:ｴ:24>かを造ります,갈 수 없는 곳에 다리 생성,25,EA 19 9C E9 8D 9C E9 A3 E9 2A 9C E9 10 E9 A4 9C E9 2D E9 4F 9C E9 87 E9 8A,0x817C4,0x8143D,project_translation+local_guide_reference
+skill_description,48,ラ<N:｣:11>ジンとの合体魔法,라이진과 합체 마법,18,E9 3F E9 BE E9 DB E9 12 9C EA 0A E9 E2 9C E9 52 E9 73,0x817C8,0x81457,project_translation+local_guide_reference
+skill_description,49,フウジンとの合体魔法,후우진과 합체 마법,18,EA 17 E9 B1 E9 DB E9 12 9C EA 0A E9 E2 9C E9 52 E9 73,0x817CC,0x8146A,project_translation+local_guide_reference
+skill_description,50,敵に乗り移れます,적에게 빙의,11,E9 C9 E9 A4 E9 0B 9C EA 48 E9 BD,0x817D0,0x8147D,project_translation+local_guide_reference
+skill_description,51,まわりに手裏剣をばらまきます,주변에 수리검 난사,18,E9 D4 E9 74 E9 A4 9C E9 8D E9 4F E9 0A 9C E9 21 E9 83,0x817D4,0x81489,project_translation+local_guide_reference
+skill_description,52,自爆します,자폭 공격,9,E9 C3 EA 01 9C E9 11 E9 0C,0x817D8,0x8149C,project_translation+local_guide_reference
+skill_description,53,かまフーメランで敵を攻撃します,낫 부메랑으로 공격,18,EA 23 9C E9 7B E9 5A EA 31 E9 B9 E9 49 9C E9 11 E9 0C,0x817DC,0x814A6,project_translation+local_guide_reference
+skill_description,54,まわりの敵にダメージを<N:与:3>えます,주변 적에게 피해,16,E9 D4 E9 74 9C E9 C9 E9 A4 E9 0B 9C EA 06 EA 0C,0x817E0,0x814B9,project_translation+local_guide_reference
+skill_description,55,まわりの敵にダメージを<N:与:3>えます,주변 적에게 피해,16,E9 D4 E9 74 9C E9 C9 E9 A4 E9 0B 9C EA 06 EA 0C,0x817E4,0x814B9,project_translation+local_guide_reference
+skill_description,56,直せん上の敵をなぎはらいます,직선상의 적 공격,16,E9 DA E9 89 E9 85 E9 BD 9C E9 C9 9C E9 11 E9 0C,0x817E8,0x814CA,project_translation+local_guide_reference
+skill_description,57,つばさをはためかせ風でダメージを<N:与:3>えます,날갯짓으로 바람 피해,20,E9 22 EA 1B EA 6A E9 B9 E9 49 9C E9 6A E9 40 9C EA 06 EA 0C,0x817EC,0x814DB,project_translation+local_guide_reference
+skill_description,58,敵をへモジーにします,적을 헤모지 상태로 만듦,23,E9 C9 E9 BB 9C EA 11 E9 5F E9 D9 9C E9 85 E9 F2 E9 49 9C E9 54 EA 2D,0x817F0,0x814F0,project_translation+local_guide_reference
+character_name,0,アーク,아크,4,E9 9A E9 EC,0x81B4C,0x811B9,project_translation+local_guide_reference
+character_name,1,ククル,쿠쿠루,6,E9 EB E9 EB E9 4A,0x81B50,0x81508,project_translation+local_guide_reference
+character_name,2,トッシュ,토슈,4,E9 F4 E9 8F,0x81B54,0x8150F,project_translation+local_guide_reference
+character_name,3,ポニ,포코,4,E9 FE E9 EA,0x81B58,0x81514,project_translation+local_guide_reference
+character_name,4,<N:ニ:13>ーゲン,이가,4,E9 BE E9 01,0x81B5C,0x81519,project_translation+local_guide_reference
+character_name,5,<N:｣:11>ー<N:力:5>,고겐,4,E9 0F EA 1C,0x81B60,0x8151E,project_translation+local_guide_reference
+character_name,6,マーシャル,마샬,4,E9 52 EA 4D,0x81B64,0x81523,project_translation+local_guide_reference
+character_name,7,チョン<N:力:5>ラ,촌가라,6,E9 E4 E9 01 E9 3F,0x81B68,0x81528,project_translation+local_guide_reference
+character_name,8,,,0,,0x81B6C,0x804A1,project_translation+local_guide_reference
+character_name,9,,,0,,0x81B70,0x804A1,project_translation+local_guide_reference
+character_name,10,,,0,,0x81B74,0x804A1,project_translation+local_guide_reference
+character_name,11,ス<N:ゲ:16>ルトン,스켈레톤,8,E9 90 EA 78 E9 44 EA 82,0x81B78,0x8152F,project_translation+local_guide_reference
+character_name,12,<N:ニ:13>ースト,고스트,6,E9 0F E9 90 E9 F6,0x81B7C,0x81538,project_translation+local_guide_reference
+character_name,13,<N:ゾ:12>ン<N:ビ:5>,좀비,4,E9 D2 E9 80,0x81B80,0x8153F,project_translation+local_guide_reference
+character_name,14,<N:ク:12>リーンスラ<N:｣:11>ム,그린 슬라임,11,E9 19 E9 50 9C E9 91 E9 3F E9 C1,0x81B84,0x81544,project_translation+local_guide_reference
+character_name,15,カンジャ,간자,4,E9 03 E9 C3,0x81B88,0x81550,project_translation+local_guide_reference
+character_name,16,メ<N:｣:11>ジ,메이지,6,E9 5A E9 BE E9 D9,0x81B8C,0x81555,project_translation+local_guide_reference
+character_name,17,フ<N:=:12><N:｣:11>ター,파이터,6,E9 F8 E9 BE E9 F3,0x81B90,0x8155C,project_translation+local_guide_reference
+character_name,18,破戒僧,파계승,6,E9 F8 E9 0E E9 92,0x81B94,0x81563,project_translation+local_guide_reference
+character_name,19,ジャ<N:｣:11>アントバット,자이언트 배트,13,E9 C3 E9 BE E9 A2 E9 F6 9C E9 6F E9 F6,0x81B98,0x8156A,project_translation+local_guide_reference
+character_name,20,トールマスター,돌 마스터,9,E9 37 9C E9 52 E9 90 E9 F3,0x81B9C,0x81578,project_translation+local_guide_reference
+character_name,21,死神,사신,4,E9 83 E9 95,0x81BA0,0x81582,project_translation+local_guide_reference
+character_name,22,エ<N:リ:12>メンタル,엘리멘탈,8,EA 5F E9 4F EA 3E EA 7D,0x81BA4,0x81587,project_translation+local_guide_reference
+character_name,23,妖樹,요수,4,E9 AF E9 8D,0x81BA8,0x81590,project_translation+local_guide_reference
+character_name,24,フ<N:=:12>ンタ<N:ス:15>ム,팬텀,4,EA 89 EA 7E,0x81BAC,0x81595,project_translation+local_guide_reference
+character_name,25,シート<N:リ:12><N:｣:11>ク,시드레이크,10,E9 93 E9 3B E9 44 E9 BE E9 EC,0x81BB0,0x8159A,project_translation+local_guide_reference
+character_name,26,マ<N:｣:11>テ<N:ｲ:6>フラ<N:｣:11>,마이티 플라이,13,E9 52 E9 BE EA 86 9C EA 05 E9 3F E9 BE,0x81BB4,0x815A5,project_translation+local_guide_reference
+character_name,27,<N:午:15>ラートッ<N:ク:12>,킬러 도그,9,E9 EF E9 42 9C E9 36 E9 19,0x81BB8,0x815B3,project_translation+local_guide_reference
+character_name,28,<N:リ:12>ットス<N:ゲ:16>ルトン,레드 스켈레톤,13,E9 44 E9 3B 9C E9 90 EA 78 E9 44 EA 82,0x81BBC,0x815BD,project_translation+local_guide_reference
+character_name,29,フラックスカル,블랙 스컬,9,EA 47 EA 32 9C E9 90 EA 77,0x81BC0,0x815CB,project_translation+local_guide_reference
+character_name,30,<N:リ:12><N:｣:11>ス,레이스,6,E9 44 E9 BE E9 90,0x81BC4,0x815D5,project_translation+local_guide_reference
+character_name,31,<N:ク:12>ール,구울,4,E9 16 E9 B3,0x81BC8,0x815DC,project_translation+local_guide_reference
+character_name,32,フリージー,프리지,6,EA 04 E9 4F E9 D9,0x81BCC,0x815E1,project_translation+local_guide_reference
+character_name,33,アシットスラ<N:｣:11>ム,애시드 슬라임,13,E9 9D E9 93 E9 3B 9C E9 91 E9 3F E9 C1,0x81BD0,0x815E8,project_translation+local_guide_reference
+character_name,34,アサッシン,어새신,6,E9 A1 E9 86 E9 95,0x81BD4,0x815F6,project_translation+local_guide_reference
+character_name,35,スーパーシ<N:メ:6><N:ビ:5>,슈퍼 좀비,9,E9 8F E9 FB 9C E9 D2 E9 80,0x81BD8,0x815FD,project_translation+local_guide_reference
+character_name,36,ウ<N:｣:11>ッチクラフト,위치 크래프트,13,E9 B6 E9 E6 9C E9 EC E9 41 EA 04 E9 F6,0x81BDC,0x81607,project_translation+local_guide_reference
+character_name,37,ソーサラー,소서러,6,E9 8C E9 88 E9 42,0x81BE0,0x81615,project_translation+local_guide_reference
+character_name,38,<N:ネ:13>クロマンサー,네크로맨서,10,EA 25 E9 EC E9 49 EA 3D E9 88,0x81BE4,0x8161C,project_translation+local_guide_reference
+character_name,39,ウ<N:ｲ:6><N:ザ:8>ート,위저드,6,E9 B6 E9 C8 E9 3B,0x81BE8,0x81627,project_translation+local_guide_reference
+character_name,40,闇法師,암법사,6,EA 58 E9 73 E9 83,0x81BEC,0x8162E,project_translation+local_guide_reference
+character_name,41,修験者,수행자,6,E9 8D EA 0D E9 C3,0x81BF0,0x81635,project_translation+local_guide_reference
+character_name,42,下法師,하법사,6,EA 07 E9 73 E9 83,0x81BF4,0x8163C,project_translation+local_guide_reference
+character_name,43,<N:ネ:13><N:ビ:5>ュラス,네뷰러스,8,EA 25 EA 46 E9 42 E9 90,0x81BF8,0x81643,project_translation+local_guide_reference
+character_name,44,道化師,광대,4,E9 14 E9 31,0x81BFC,0x8164C,project_translation+local_guide_reference
+character_name,45,デス<N:ハ:12>ウント,데스 하운드,11,E9 34 E9 90 9C EA 07 E9 B2 E9 3B,0x81C00,0x81651,project_translation+local_guide_reference
+character_name,46,デス,데스,4,E9 34 E9 90,0x81C04,0x8165D,project_translation+local_guide_reference
+character_name,47,ウ<N:=:12>ンパ<N:｣:11>アバット,뱀파이어 배트,13,E9 70 E9 F8 E9 BE E9 A1 9C E9 6F E9 F6,0x81C08,0x81662,project_translation+local_guide_reference
+character_name,48,ソートマン,소드맨,6,E9 8C E9 3B EA 3D,0x81C0C,0x81670,project_translation+local_guide_reference
+character_name,49,ナ<N:｣:11>トマスター,나이트 마스터,13,E9 20 E9 BE E9 F6 9C E9 52 E9 90 E9 F3,0x81C10,0x81677,project_translation+local_guide_reference
+character_name,50,<N:ク:12><N:リ:12>ートナ<N:｣:11>ト,그레이트 나이트,15,E9 19 E9 44 E9 BE E9 F6 9C E9 20 E9 BE E9 F6,0x81C14,0x81685,project_translation+local_guide_reference
+character_name,51,ポ<N:｣:11><N:ス:15>ンスモッ<N:ク:12>,포이즌 스모그,13,E9 FE E9 BE EA 69 9C E9 90 E9 5F E9 19,0x81C18,0x81695,project_translation+local_guide_reference
+character_name,52,メデューサリ<N:ザ:8>ート,메두사 리자드,13,E9 5A E9 3A E9 83 9C E9 4F E9 C3 E9 3B,0x81C1C,0x816A3,project_translation+local_guide_reference
+character_name,53,トラ<N:ニ:13>ンフラ<N:｣:11>,드래곤 플라이,13,E9 3B E9 41 EA 1D 9C EA 05 E9 3F E9 BE,0x81C20,0x816B1,project_translation+local_guide_reference
+character_name,54,マントラッ<N:フ:11>,맨트랩,6,EA 3D E9 F6 EA 33,0x81C24,0x816BF,project_translation+local_guide_reference
+character_name,55,デスフ<N:リ:12><N:｣:11>ム,데스 플레임,11,E9 34 E9 90 9C EA 05 E9 44 E9 C1,0x81C28,0x816C6,project_translation+local_guide_reference
+character_name,56,エ<N:リ:12>メンタルマスター,엘리멘탈 마스터,15,EA 5F E9 4F EA 3E EA 7D 9C E9 52 E9 90 E9 F3,0x81C2C,0x816D2,project_translation+local_guide_reference
+character_name,57,<N:｣:11>ー<N:力:5>,이가,4,E9 BE E9 01,0x81C30,0x81519,project_translation+local_guide_reference
+character_name,58,,,0,,0x81C34,0x804A1,project_translation+local_guide_reference
+character_name,59,野生へモジー,야생 헤모지,11,E9 9E E9 87 9C EA 11 E9 5F E9 D9,0x81C38,0x816E2,project_translation+local_guide_reference
+character_name,60,<N:リ:12>ッサーデーモン,레서 데몬,9,E9 44 E9 88 9C E9 34 E9 61,0x81C3C,0x816EE,project_translation+local_guide_reference
+character_name,61,<N:ク:12><N:リ:12>ーターデーモン,그레이터 데몬,13,E9 19 E9 44 E9 BE E9 F3 9C E9 34 E9 61,0x81C40,0x816F8,project_translation+local_guide_reference
+character_name,62,スタン<N:ニ:13>ー<N:リ:12>ム,스톤 골렘,9,E9 90 EA 82 9C EA 1E EA 35,0x81C44,0x817F4,project_translation+local_guide_reference
+character_name,63,ワ<N:｣:11>バーン,와이번,6,E9 AC E9 BE E9 71,0x81C48,0x817FE,project_translation+local_guide_reference
+character_name,64,マットバトラー,매드 배틀러,11,E9 56 E9 3B 9C E9 6F E9 F7 E9 42,0x81C4C,0x81805,project_translation+local_guide_reference
+character_name,65,アークデーモン,아크 데몬,9,E9 9A E9 EC 9C E9 34 E9 61,0x81C50,0x81811,project_translation+local_guide_reference
+character_name,66,フ<N:=:12><N:｣:11>ア<N:ニ:13>ー<N:リ:12>ム,파이어 골렘,11,E9 F8 E9 BE E9 A1 9C EA 1E EA 35,0x81C54,0x8181B,project_translation+local_guide_reference
+character_name,67,カッパートラ<N:ニ:13>ン,코퍼 드래곤,11,E9 EA E9 FB 9C E9 3B E9 41 EA 1D,0x81C58,0x81827,project_translation+local_guide_reference
+character_name,68,<N:ク:12><N:リ:12>ートサー<N:へ:4>ント,그레이트 서펀트,15,E9 19 E9 44 E9 BE E9 F6 9C E9 88 EA 8A E9 F6,0x81C5C,0x81833,project_translation+local_guide_reference
+character_name,69,修行僧,수행승,6,E9 8D EA 0D E9 92,0x81C60,0x81843,project_translation+local_guide_reference
+character_name,70,ラマダ大僧正,라마다 대승정,13,E9 3F E9 52 E9 2D 9C E9 31 E9 92 E9 CD,0x81C64,0x8184A,project_translation+local_guide_reference
+character_name,71,<N:ク:12>ラ・アピス,그라 아비스,11,E9 19 E9 3F 9C E9 9A E9 80 E9 90,0x81C68,0x81858,project_translation+local_guide_reference
+character_name,72,ニ・アピス,니 아비스,9,E9 2C 9C E9 9A E9 80 E9 90,0x81C6C,0x81864,project_translation+local_guide_reference
+character_name,73,ラリュウ<N:午:15>,라류우키,8,E9 3F E9 4B E9 B1 E9 EE,0x81C70,0x8186E,project_translation+local_guide_reference
+character_name,74,<N:ヒ:5>ョウエン<N:午:15>,효엔키,6,EA 92 EA 5E E9 EE,0x81C74,0x81877,project_translation+local_guide_reference
+character_name,75,ムル・アピス,무르 아비스,11,E9 64 E9 4C 9C E9 9A E9 80 E9 90,0x81C78,0x8187E,project_translation+local_guide_reference
+character_name,76,ラ・アピス,라 아비스,9,E9 3F 9C E9 9A E9 80 E9 90,0x81C7C,0x8188A,project_translation+local_guide_reference
+character_name,77,ちょこ,초코,4,E9 E3 E9 EA,0x81C80,0x80FE5,project_translation+local_guide_reference
+character_name,78,たからばこ,보물상자,8,E9 77 E9 66 E9 85 E9 C3,0x81C84,0x81894,project_translation+local_guide_reference
+character_name,79,たからばこ,보물상자,8,E9 77 E9 66 E9 85 E9 C3,0x81C88,0x81894,project_translation+local_guide_reference
+character_name,80,<N:ゲ:16>ラック,케락,4,E9 E9 EA 30,0x81C8C,0x80FBA,project_translation+local_guide_reference
+character_name,81,,,0,,0x81C90,0x804A1,project_translation+local_guide_reference
+character_name,82,モフリー,모프리,6,E9 5F EA 04 E9 4F,0x81C94,0x80FBF,project_translation+local_guide_reference
+character_name,83,フウジン,후우진,6,EA 17 E9 B1 E9 DB,0x81C98,0x80FC6,project_translation+local_guide_reference
+character_name,84,ラ<N:｣:11>ジン,라이진,6,E9 3F E9 BE E9 DB,0x81C9C,0x80FCD,project_translation+local_guide_reference
+character_name,85,オトン,오톤,4,E9 A8 EA 82,0x81CA0,0x80FDB,project_translation+local_guide_reference
+character_name,86,ちょこ,초코,4,E9 E3 E9 EA,0x81CA4,0x80FE5,project_translation+local_guide_reference
+character_name,87,へモジー,헤모지,6,EA 11 E9 5F E9 D9,0x81CA8,0x80FD4,project_translation+local_guide_reference
+character_name,88,炎,불꽃,4,E9 7E E9 1F,0x81CAC,0x8189D,project_translation+local_guide_reference
+character_name,89,,,0,,0x81CB0,0x804A1,project_translation+local_guide_reference
+character_name,90,,,0,,0x81CB4,0x804A1,project_translation+local_guide_reference
+character_name,91,,,0,,0x81CB8,0x804A1,project_translation+local_guide_reference
+character_name,92,,,0,,0x81CBC,0x804A1,project_translation+local_guide_reference
+character_name,93,,,0,,0x81CC0,0x804A1,project_translation+local_guide_reference
+character_name,94,,,0,,0x81CC4,0x804A1,project_translation+local_guide_reference
+character_name,95,,,0,,0x81CC8,0x804A1,project_translation+local_guide_reference
+character_name,96,,,0,,0x81CCC,0x804A1,project_translation+local_guide_reference
+character_name,97,,,0,,0x81CD0,0x804A1,project_translation+local_guide_reference
+character_name,98,,,0,,0x81CD4,0x804A1,project_translation+local_guide_reference
+character_name,99,,,0,,0x81CD8,0x804A1,project_translation+local_guide_reference
+character_name,100,ダークアーク,다크 아크,9,E9 2D E9 EC 9C E9 9A E9 EC,0x81CDC,0x818A2,project_translation+local_guide_reference
+character_name,101,ダークククル,다크 쿠쿠루,11,E9 2D E9 EC 9C E9 EB E9 EB E9 4A,0x81CE0,0x818AC,project_translation+local_guide_reference
+character_name,102,ダークトッシュ,다크 토슈,9,E9 2D E9 EC 9C E9 F4 E9 8F,0x81CE4,0x818B8,project_translation+local_guide_reference
+character_name,103,ダークポニ,다크 포코,9,E9 2D E9 EC 9C E9 FE E9 EA,0x81CE8,0x818C2,project_translation+local_guide_reference
+character_name,104,ダーク<N:ニ:13>ーゲン,다크 이가,9,E9 2D E9 EC 9C E9 BE E9 01,0x81CEC,0x818CC,project_translation+local_guide_reference
+character_name,105,ダーク<N:｣:11>ー<N:力:5>,다크 고겐,9,E9 2D E9 EC 9C E9 0F EA 1C,0x81CF0,0x818D6,project_translation+local_guide_reference
+character_name,106,ダークマーシャル,다크 마샬,9,E9 2D E9 EC 9C E9 52 EA 4D,0x81CF4,0x818E0,project_translation+local_guide_reference
+character_name,107,ダークチョン<N:力:5>ラ,다크 촌가라,11,E9 2D E9 EC 9C E9 E4 E9 01 E9 3F,0x81CF8,0x818EA,project_translation+local_guide_reference
+region_name,0,スメリア<N:空:2>港,스메리아 공항,13,E9 90 E9 5A E9 4F E9 9A 9C E9 11 EA 0B,0x81E38,0x818F6,project_translation+local_guide_reference
+region_name,1,トウウ<N:ｲ:6>ル,토우빌,6,E9 F4 E9 B1 E9 81,0x81E3C,0x81904,project_translation+local_guide_reference
+region_name,2,パ<N:リ:12>ンシア城,팔렌시아 성,11,E9 FA E9 45 E9 93 E9 9A 9C E9 8A,0x81E40,0x8190B,project_translation+local_guide_reference
+region_name,3,オルカスの丘,올카스 언덕,10,E9 AA E9 E8 E9 90 9C E9 A2 44,0x81E44,0x81917,project_translation+local_guide_reference
+region_name,4,封印の滝,봉인의 폭포,11,E9 7A E9 BF E9 BD 9C EA 01 E9 FE,0x81E48,0x81922,project_translation+local_guide_reference
+region_name,5,ニル<N:卞:16>平原,니르 평원,9,E9 2C E9 4C 9C E9 FD E9 B5,0x81E4C,0x8192E,project_translation+local_guide_reference
+region_name,6,カラ<N:力:5>ン平野,카라간 평야,11,E9 E8 E9 3F E9 03 9C E9 FD E9 9E,0x81E50,0x81938,project_translation+local_guide_reference
+region_name,7,ク<N:｣:11>ナの丘,쿠나 언덕,8,E9 EB E9 20 9C E9 A2 44,0x81E54,0x81944,project_translation+local_guide_reference
+region_name,8,ミルマーナ<N:空:2>港,밀마나 공항,11,E9 69 E9 52 E9 20 9C E9 11 EA 0B,0x81E58,0x8194D,project_translation+local_guide_reference
+region_name,9,首都の軍本部,수도 군본부,11,E9 8D E9 36 9C E9 17 E9 79 E9 7B,0x81E5C,0x81959,project_translation+local_guide_reference
+region_name,10,トヨー<N:ゲ:16>の森,토요케 숲,9,E9 F4 E9 AF E9 E9 9C E9 8E,0x81E60,0x81965,project_translation+local_guide_reference
+region_name,11,ルワジの森,루와지 숲,9,E9 4A E9 AC E9 D9 9C E9 8E,0x81E64,0x8196F,project_translation+local_guide_reference
+region_name,12,カカラスの森,카카라스 숲,11,E9 E8 E9 E8 E9 3F E9 90 9C E9 8E,0x81E68,0x81979,project_translation+local_guide_reference
+region_name,13,センバラの沼,센바라 늘,9,E9 8B E9 6A E9 3F 9C E9 2B,0x81E6C,0x81985,project_translation+local_guide_reference
+region_name,14,<N:ク:12><N:リ:12><N:｣:11>シーヌ<N:空:2>港,그레이시누 공항,15,E9 19 E9 44 E9 BE E9 93 E9 27 9C E9 11 EA 0B,0x81E70,0x8198F,project_translation+local_guide_reference
+region_name,15,ラマダ寺,라마다사,8,E9 3F E9 52 E9 2D E9 83,0x81E74,0x8199F,project_translation+local_guide_reference
+region_name,16,ラマダ山,라마다산,8,E9 3F E9 52 E9 2D E9 84,0x81E78,0x819A8,project_translation+local_guide_reference
+region_name,17,アララトス<N:空:2>港,아라라토스 공항,15,E9 9A E9 3F E9 3F E9 F4 E9 90 9C E9 11 EA 0B,0x81E7C,0x819B1,project_translation+local_guide_reference
+region_name,18,チョン<N:力:5>ラの店,촌가라의 가게,13,E9 E4 E9 01 E9 3F E9 BD 9C E9 01 E9 0B,0x81E80,0x819C1,project_translation+local_guide_reference
+region_name,19,遺跡ダンジョン,유적 던전,9,E9 B7 E9 C9 9C E9 33 E9 CA,0x81E84,0x819CF,project_translation+local_guide_reference
+region_name,20,ア<N:г:23>ンダ高地,아제다 고지,11,E9 9A E9 CE E9 2D 9C E9 0F E9 D9,0x81E88,0x819D9,project_translation+local_guide_reference
+region_name,21,アリバーシャ<N:空:2>港,아리바샤 공항,13,E9 9A E9 4F E9 6A EA 4C 9C E9 11 EA 0B,0x81E8C,0x819E5,project_translation+local_guide_reference
+region_name,22,サリュ族の村,사류족 마을,11,E9 83 E9 4B E9 D1 9C E9 52 E9 BB,0x81E90,0x819F3,project_translation+local_guide_reference
+region_name,23,水の神殿,물의 신전,9,E9 66 E9 BD 9C E9 95 E9 CA,0x81E94,0x819FF,project_translation+local_guide_reference
+region_name,24,<N:リ:12><N:｣:11>デン遺跡,리덴 유적,9,E9 4F EA 29 9C E9 B7 E9 C9,0x81E98,0x81A09,project_translation+local_guide_reference
+region_name,25,サラ砂漠,사라 사막,9,E9 83 E9 3F 9C E9 83 E9 53,0x81E9C,0x81A13,project_translation+local_guide_reference
+region_name,26,<N:｣:11>シュマのいわ場,라슈마 암장,11,E9 3F E9 8F E9 52 9C EA 58 E9 C7,0x81EA0,0x81A1D,project_translation+local_guide_reference
+region_name,27,カーデル<N:空:2>港,카델 공항,9,E9 E8 E9 35 9C E9 11 EA 0B,0x81EA4,0x81A29,project_translation+local_guide_reference
+region_name,28,闘技場,투기장,6,E9 F5 E9 1B E9 C7,0x81EA8,0x81A33,project_translation+local_guide_reference
+region_name,29,クラフ島,클라프섬,8,EA 7B E9 3F EA 04 EA 4F,0x81EAC,0x81A3A,project_translation+local_guide_reference
+location_name,0,,,0,,0x82170,0x804A1,project_translation+local_guide_reference
+location_name,1,山頂の社,산정의 사당,11,E9 84 E9 CD E9 BD 9C E9 83 E9 30,0x82174,0x81A43,project_translation+local_guide_reference
+location_name,2,アークの家,아크의 집,9,E9 9A E9 EC E9 BD 9C E9 DD,0x82178,0x81A4F,project_translation+local_guide_reference
+location_name,3,精霊の山,정령의 산,9,E9 CD E9 48 E9 BD 9C E9 84,0x8217C,0x81A59,project_translation+local_guide_reference
+location_name,4,村の門,마을 입구,9,E9 52 E9 BB 9C E9 C2 E9 16,0x82180,0x81A63,project_translation+local_guide_reference
+location_name,5,精霊の山,정령의 산,9,E9 CD E9 48 E9 BD 9C E9 84,0x82184,0x81A59,project_translation+local_guide_reference
+location_name,6,パ<N:リ:12>ンシア城,팔렌시아 성,11,E9 FA E9 45 E9 93 E9 9A 9C E9 8A,0x82188,0x8190B,project_translation+local_guide_reference
+location_name,7,謁見の聞,알현실,6,EA 57 EA 8E E9 96,0x8218C,0x81A6D,project_translation+local_guide_reference
+location_name,8,スメリア<N:空:2>港,스메리아 공항,13,E9 90 E9 5A E9 4F E9 9A 9C E9 11 EA 0B,0x82190,0x818F6,project_translation+local_guide_reference
+location_name,9,パ<N:リ:12>ンシアを見おろす丘,팔렌시아 전망대,15,E9 FA E9 45 E9 93 E9 9A 9C E9 CA E9 55 E9 31,0x82194,0x81A74,project_translation+local_guide_reference
+location_name,10,大臣の部屋,대신의 방,9,E9 31 E9 95 E9 BD 9C E9 6E,0x82198,0x81A84,project_translation+local_guide_reference
+location_name,11,ミルマーナ<N:空:2>港,밀마나 공항,11,E9 69 E9 52 E9 20 9C E9 11 EA 0B,0x8219C,0x8194D,project_translation+local_guide_reference
+location_name,12,ミルマーナ軍本部,밀마나 군본부,13,E9 69 E9 52 E9 20 9C E9 17 E9 79 E9 7B,0x821A0,0x81A8E,project_translation+local_guide_reference
+location_name,13,将軍の部屋,장군의 방,9,E9 C7 E9 17 E9 BD 9C E9 6E,0x821A4,0x81A9C,project_translation+local_guide_reference
+location_name,14,トヨー<N:ゲ:16>の森,토요케 숲,9,E9 F4 E9 AF E9 E9 9C E9 8E,0x821A8,0x81965,project_translation+local_guide_reference
+location_name,15,パ<N:リ:12>ンシア城地下倉庫,팔렌시아 지하창고,17,E9 FA E9 45 E9 93 E9 9A 9C E9 D9 EA 07 EA 6E E9 0F,0x821AC,0x81AA6,project_translation+local_guide_reference
+location_name,16,パ<N:リ:12>ンシア城地下<N:牢:2>,팔렌시아 지하감옥,17,E9 FA E9 45 E9 93 E9 9A 9C E9 D9 EA 07 E9 04 E9 A9,0x821B0,0x81AB8,project_translation+local_guide_reference
+location_name,17,オルカスの丘,올카스 언덕,10,E9 AA E9 E8 E9 90 9C E9 A2 44,0x821B4,0x81917,project_translation+local_guide_reference
+location_name,18,幻界,환계,4,EA 90 E9 0E,0x821B8,0x81ACA,project_translation+local_guide_reference
+location_name,19,アララトス<N:空:2>港,아라라토스 공항,15,E9 9A E9 3F E9 3F E9 F4 E9 90 9C E9 11 EA 0B,0x821BC,0x819B1,project_translation+local_guide_reference
+location_name,20,チョン<N:力:5>ラの店,촌가라의 가게,13,E9 E4 E9 01 E9 3F E9 BD 9C E9 01 E9 0B,0x821C0,0x819C1,project_translation+local_guide_reference
+location_name,21,ア<N:г:23>ンダ高地洞<N:窟:10>,아제다 고지 동굴,16,E9 9A E9 CE E9 2D 9C E9 0F E9 D9 9C E9 38 E9 18,0x821C4,0x81ACF,project_translation+local_guide_reference
+location_name,22,ア<N:г:23>ンダ高地外,아제다 고지 외부,16,E9 9A E9 CE E9 2D 9C E9 0F E9 D9 9C E9 AE E9 7B,0x821C8,0x81AE0,project_translation+local_guide_reference
+location_name,23,遺跡ダンジョン,유적 던전,9,E9 B7 E9 C9 9C E9 33 E9 CA,0x821CC,0x819CF,project_translation+local_guide_reference
+location_name,24,<N:ク:12><N:リ:12><N:｣:11>シーヌ<N:空:2>港,그레이시누 공항,15,E9 19 E9 44 E9 BE E9 93 E9 27 9C E9 11 EA 0B,0x821D0,0x8198F,project_translation+local_guide_reference
+location_name,25,ラマダ寺道場,라마다사 도장,13,E9 3F E9 52 E9 2D E9 83 9C E9 36 E9 C7,0x821D4,0x81AF1,project_translation+local_guide_reference
+location_name,26,ラマダ寺僧正の部屋,라마다사 승정의 방,18,E9 3F E9 52 E9 2D E9 83 9C E9 92 E9 CD E9 BD 9C E9 6E,0x821D8,0x81AFF,project_translation+local_guide_reference
+location_name,27,ラマダ山頂,라마다산 정상,13,E9 3F E9 52 E9 2D E9 84 9C E9 CD E9 85,0x821DC,0x81B12,project_translation+local_guide_reference
+location_name,28,ラマダ寺,라마다사,8,E9 3F E9 52 E9 2D E9 83,0x821E0,0x8199F,project_translation+local_guide_reference
+location_name,29,カーデル<N:空:2>港,카델 공항,9,E9 E8 E9 35 9C E9 11 EA 0B,0x821E4,0x81A29,project_translation+local_guide_reference
+location_name,30,ニロシアムひかえ室,니로시암 대기실,15,E9 2C E9 49 E9 93 EA 58 9C E9 31 E9 1B E9 96,0x821E8,0x81B20,project_translation+local_guide_reference
+location_name,31,ニロシアムぶたい,니로시암 무대,13,E9 2C E9 49 E9 93 EA 58 9C E9 64 E9 31,0x821EC,0x81B30,project_translation+local_guide_reference
+location_name,32,アリバーシャ<N:空:2>港,아리바샤 공항,13,E9 9A E9 4F E9 6A EA 4C 9C E9 11 EA 0B,0x821F0,0x819E5,project_translation+local_guide_reference
+location_name,33,サリュ族の村,사류족 마을,11,E9 83 E9 4B E9 D1 9C E9 52 E9 BB,0x821F4,0x819F3,project_translation+local_guide_reference
+location_name,34,水の神殿,물의 신전,9,E9 66 E9 BD 9C E9 95 E9 CA,0x821F8,0x819FF,project_translation+local_guide_reference
+location_name,35,地下エ<N:リ:12>ベータ,지하 엘리베이터,15,E9 D9 EA 07 9C EA 5F E9 4F EA 42 E9 BE E9 F3,0x821FC,0x81CFC,project_translation+local_guide_reference
+location_name,36,地下バ<N:｣:11>オ<N:研:23><N:究:1>室,지하 바이오 연구실,18,E9 D9 EA 07 9C E9 6A E9 BE E9 A8 9C E9 A6 E9 16 E9 96,0x82200,0x81D0C,project_translation+local_guide_reference
+location_name,37,パ<N:リ:12>ンシア<N:街:4>頭,팔렌시아 시가지,15,E9 FA E9 45 E9 93 E9 9A 9C E9 93 E9 01 E9 D9,0x82204,0x81D1F,project_translation+local_guide_reference
+location_name,38,聖柩封印の滝外,성관 봉인의 폭포 외부,21,E9 8A E9 13 9C E9 7A E9 BF E9 BD 9C EA 01 E9 FE 9C E9 AE E9 7B,0x82208,0x81D2F,project_translation+local_guide_reference
+location_name,39,聖柩封印の滝内,성관 봉인의 폭포 내부,21,E9 8A E9 13 9C E9 7A E9 BF E9 BD 9C EA 01 E9 FE 9C E9 23 E9 7B,0x8220C,0x81D45,project_translation+local_guide_reference
+location_name,40,トウウ<N:ｲ:6>ルがん<N:ヘ:5>き,토우빌 암벽,11,E9 F4 E9 B1 E9 81 9C EA 58 EA 44,0x82210,0x81B3E,project_translation+local_guide_reference
+location_name,41,うみベの飛<N:空:2>挺,해변의 비행선,13,EA 0C E9 74 E9 BD 9C E9 80 EA 0D E9 89,0x82214,0x81D5B,project_translation+local_guide_reference
+location_name,42,ニル<N:卞:16>平原,니르 평원,9,E9 2C E9 4C 9C E9 FD E9 B5,0x82218,0x8192E,project_translation+local_guide_reference
+location_name,43,カラ<N:力:5>ン平野,카라간 평야,11,E9 E8 E9 3F E9 03 9C E9 FD E9 9E,0x8221C,0x81938,project_translation+local_guide_reference
+location_name,44,ク<N:｣:11>ナの丘,쿠나 언덕,8,E9 EB E9 20 9C E9 A2 44,0x82220,0x81944,project_translation+local_guide_reference
+location_name,45,ルワジの森,루와지 숲,9,E9 4A E9 AC E9 D9 9C E9 8E,0x82224,0x8196F,project_translation+local_guide_reference
+location_name,46,カカラスの森,카카라스 숲,11,E9 E8 E9 E8 E9 3F E9 90 9C E9 8E,0x82228,0x81979,project_translation+local_guide_reference
+location_name,47,センバラの沼,센바라 늘,9,E9 8B E9 6A E9 3F 9C E9 2B,0x8222C,0x81985,project_translation+local_guide_reference
+location_name,48,<N:リ:12><N:｣:11>デン遺跡,리덴 유적,9,E9 4F EA 29 9C E9 B7 E9 C9,0x82230,0x81A09,project_translation+local_guide_reference
+location_name,49,サラ砂漠,사라 사막,9,E9 83 E9 3F 9C E9 83 E9 53,0x82234,0x81A13,project_translation+local_guide_reference
+location_name,50,<N:｣:11>シュマのいわ場,라슈마 암장,11,E9 3F E9 8F E9 52 9C EA 58 E9 C7,0x82238,0x81A1D,project_translation+local_guide_reference
+location_name,51,ニロシアム闘技場,니로시암 투기장,15,E9 2C E9 49 E9 93 EA 58 9C E9 F5 E9 1B E9 C7,0x8223C,0x81D69,project_translation+local_guide_reference
+location_name,52,ラマダ寺道場,라마다사 도장,13,E9 3F E9 52 E9 2D E9 83 9C E9 36 E9 C7,0x82240,0x81AF1,project_translation+local_guide_reference
+location_name,53,クラーフ島<N:空:2>港,클라프섬 공항,13,EA 7B E9 3F EA 04 EA 4F 9C E9 11 EA 0B,0x82244,0x81D79,project_translation+local_guide_reference
+location_name,54,クラーフとう最上階,클라프탑 최상층,15,EA 7B E9 3F EA 04 E9 F1 9C E9 E5 E9 85 EA 75,0x82248,0x81D87,project_translation+local_guide_reference

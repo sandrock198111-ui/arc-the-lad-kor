@@ -1,0 +1,31 @@
+ui_hud_e7_v86 P6 glyph repack + savestate slots 1-6 report
+base=E:\korean\03_output\ui_hud_e7_v85_p6_highram_bootstrap_patch_only.zip
+base_sha256=D7D028F83E42EA54922A853250976ADFDE06BE1A3D36DE809E05B4733AC35582
+output=E:\korean\03_output\ui_hud_e7_v86_p6_glyph_repack_slots_1_to_6_patch_only.zip
+output_sha256=41D7A246196D5D985B60C93A84E6D6D11E154F0C0D34EE2AED5BFD11C995678F
+changed_v85_members=PSX.EXE,COMM.IMG,31/S3032.DAT
+added_member=32/S3051.DAT
+unchanged_v85_members=75
+repacked_glyphs=57
+source_rows=31,32,33,38,39
+destination_row=24
+destination_p6_cells=15
+p6_classifier=rows24..31 -> row24 only
+psx_changed_bytes=115
+comm_changed_bytes=701
+static_lookup_readback=PASS
+static_p6_bitmap_readback=PASS
+neighboring_archive_members=PASS
+dialogue_E2_readback=PASS
+runtime_verification=PENDING
+
+dialogues:
+- 31/S3032.DAT 0x47994 slot=0 E2=81 text=야군 / 알겠습니다. / 숲으로 가는 열차 탑승을 허가하겠습니다.
+- 31/S3032.DAT 0x479EE slot=1 E2=82 text=야군 / 다만, 그곳은 / 우리도 애를 먹는 곳입니다.
+- 32/S3051.DAT 0x48E70 slot=63 E2=C1 text=이곳에서 / 사라졌는데...
+
+known_slot_4_to_6_targets:
+- 테 (EA 7F)
+- 폴 (EA 8B)
+- 잎 (EA 66)
+- 탄 (EA 7C)

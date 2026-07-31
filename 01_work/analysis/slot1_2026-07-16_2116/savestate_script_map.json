@@ -1,0 +1,74 @@
+[
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-112DD4E8341F03C8_1.sav",
+    "best_match": {
+      "file": "31/S3022.DAT",
+      "equal_bytes": 1573,
+      "compared_bytes": 1792,
+      "ratio": 0.8777901785714286
+    },
+    "top_matches": [
+      {
+        "file": "31/S3022.DAT",
+        "equal_bytes": 1573,
+        "compared_bytes": 1792,
+        "ratio": 0.8777901785714286
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/31/S3022.DAT",
+        "equal_bytes": 1573,
+        "compared_bytes": 1792,
+        "ratio": 0.8777901785714286
+      },
+      {
+        "file": "5/S5051.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "D/SD041.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "D/SD051.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "D/SD061.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "F/SF071.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/5/S5051.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD041.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/D/SD051.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      }
+    ],
+    "dialogues": []
+  }
+]

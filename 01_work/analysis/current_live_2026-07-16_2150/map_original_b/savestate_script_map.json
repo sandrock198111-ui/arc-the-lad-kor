@@ -1,0 +1,225 @@
+[
+  {
+    "state": "01_work\\analysis\\current_live_2026-07-16_2150\\ram_b.bin",
+    "best_match": {
+      "file": "21/S2013.DAT",
+      "equal_bytes": 1792,
+      "compared_bytes": 1792,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "21/S2013.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/21/S2013.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "5/S5051.DAT",
+        "equal_bytes": 833,
+        "compared_bytes": 1792,
+        "ratio": 0.46484375
+      },
+      {
+        "file": "D/SD051.DAT",
+        "equal_bytes": 833,
+        "compared_bytes": 1792,
+        "ratio": 0.46484375
+      },
+      {
+        "file": "D/SD061.DAT",
+        "equal_bytes": 833,
+        "compared_bytes": 1792,
+        "ratio": 0.46484375
+      }
+    ],
+    "dialogues": [
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1170C4",
+        "ram_payload_start": "0x1170C6",
+        "file_payload_start": "0x478C6",
+        "end_exclusive": "0x478EE",
+        "length": 40,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 5d 28 3b ae 23 de 17 98 1e 21 3b 33 32 22 37 e6 01 dd fd 1b de 77 dd 1f 2f dd 09 4b dd c5 22 1c 35 6a 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11711E",
+        "ram_payload_start": "0x117122",
+        "file_payload_start": "0x47922",
+        "end_exclusive": "0x47925",
+        "length": 3,
+        "prefix_kind": "control_0000",
+        "payload_hex": "2c 2c 2c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1172A8",
+        "ram_payload_start": "0x1172AA",
+        "file_payload_start": "0x47AAA",
+        "end_exclusive": "0x47AB5",
+        "length": 11,
+        "prefix_kind": "none",
+        "payload_hex": "1d 2d 35 36 24 2e 1c 40 55 26 02"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1172E6",
+        "ram_payload_start": "0x1172E8",
+        "file_payload_start": "0x47AE8",
+        "end_exclusive": "0x47AF7",
+        "length": 15,
+        "prefix_kind": "none",
+        "payload_hex": "3b 32 38 dd 64 23 86 32 55 29 21 2d 35 3d 02"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117328",
+        "ram_payload_start": "0x11732A",
+        "file_payload_start": "0x47B2A",
+        "end_exclusive": "0x47B40",
+        "length": 22,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 26 22 3a 1b 02 e6 01 3f 29 4b 23 1b 29 21 55 02 02"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117368",
+        "ram_payload_start": "0x11736A",
+        "file_payload_start": "0x47B6A",
+        "end_exclusive": "0x47B7F",
+        "length": 21,
+        "prefix_kind": "none",
+        "payload_hex": "3b 32 28 e4 3d e4 3d e4 3d bb 64 5f 5c 35 a1 02 02 e4 3d e4 3d"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117398",
+        "ram_payload_start": "0x11739A",
+        "file_payload_start": "0x47B9A",
+        "end_exclusive": "0x47BAF",
+        "length": 21,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 2e 33 02 e6 01 40 51 55 24 40 51 1d 1b 20 02 02"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1173D8",
+        "ram_payload_start": "0x1173DA",
+        "file_payload_start": "0x47BDA",
+        "end_exclusive": "0x47BEA",
+        "length": 16,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 3a 29 3a 36 54 49 55 02 02 e4 1f"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1173FE",
+        "ram_payload_start": "0x117400",
+        "file_payload_start": "0x47C00",
+        "end_exclusive": "0x47C13",
+        "length": 19,
+        "prefix_kind": "none",
+        "payload_hex": "3b 24 e4 1f 36 2c e4 1f 36 2c e4 1f 36 2c e4 1f 36 e4 3d"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117432",
+        "ram_payload_start": "0x117434",
+        "file_payload_start": "0x47C34",
+        "end_exclusive": "0x47C3D",
+        "length": 9,
+        "prefix_kind": "none",
+        "payload_hex": "26 9c c0 46 46 46 c0 46 46"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11747C",
+        "ram_payload_start": "0x117480",
+        "file_payload_start": "0x47C80",
+        "end_exclusive": "0x47C89",
+        "length": 9,
+        "prefix_kind": "control_0000",
+        "payload_hex": "54 26 1e 1f 2d 30 2b 20 3c"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11751C",
+        "ram_payload_start": "0x117520",
+        "file_payload_start": "0x47D20",
+        "end_exclusive": "0x47D26",
+        "length": 6,
+        "prefix_kind": "control_0100",
+        "payload_hex": "50 de 33 de 29 3c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11755C",
+        "ram_payload_start": "0x11755E",
+        "file_payload_start": "0x47D5E",
+        "end_exclusive": "0x47D6C",
+        "length": 14,
+        "prefix_kind": "none",
+        "payload_hex": "dd c6 dd 23 4b 48 2d 20 43 1b 1b 1c dd 45"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11759C",
+        "ram_payload_start": "0x11759E",
+        "file_payload_start": "0x47D9E",
+        "end_exclusive": "0x47DAE",
+        "length": 16,
+        "prefix_kind": "none",
+        "payload_hex": "43 1e 36 8e de a2 23 1b 29 75 1b 54 26 4a 48 02"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117606",
+        "ram_payload_start": "0x117608",
+        "file_payload_start": "0x47E08",
+        "end_exclusive": "0x47E1A",
+        "length": 18,
+        "prefix_kind": "none",
+        "payload_hex": "44 3e 1c dd 45 e6 01 3d 1b 2a 3a 51 4b 27 29 1f 43 1b"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11764A",
+        "ram_payload_start": "0x11764C",
+        "file_payload_start": "0x47E4C",
+        "end_exclusive": "0x47E68",
+        "length": 28,
+        "prefix_kind": "none",
+        "payload_hex": "dd c6 dd 23 4b 48 2d e6 01 3f 2d 1f 24 5c 82 60 ab 36 1b 1b d5 dd cb 2a 30 44 22 1d"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117698",
+        "ram_payload_start": "0x11769A",
+        "file_payload_start": "0x47E9A",
+        "end_exclusive": "0x47EB3",
+        "length": 25,
+        "prefix_kind": "none",
+        "payload_hex": "67 71 34 62 71 34 23 9a 22 2e 36 2a 3f 29 1f 33 e6 01 3f 43 59 21 40 22 a7"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1176E4",
+        "ram_payload_start": "0x1176E6",
+        "file_payload_start": "0x47EE6",
+        "end_exclusive": "0x47EF2",
+        "length": 12,
+        "prefix_kind": "none",
+        "payload_hex": "3a 31 21 24 26 4b 23 dd c5 22 20 02"
+      }
+    ]
+  }
+]

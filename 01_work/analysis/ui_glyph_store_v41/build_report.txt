@@ -1,0 +1,27 @@
+UI glyph store v0.41 E9/EA runtime probe
+base_zip_sha256=0778FE435820409F190579D179F8B36FFFCEB02B5F2004FC1E3ACE58741D5DC3
+output_zip_sha256=D5AC9441CB479F1B0B28B1732C97F52CCD284A8E73BE487AA16E41D9CC37BD78
+output_psx_sha256=C82EBFC4E2E9A1B3FCD8A3DF37D66BFCD6FE628C5257F0EF8BDDAAA7E3264B5E
+output_comm_sha256=32E43ED674DF30D745F3DE889493A5917F937CB5013B745ED24B455ECE231733
+story_e2_members_unchanged=true
+dynamic_control_prefixes_e1_e8_preserved=true
+virtual_glyph_prefixes=E9,EA
+allocated_hangul_glyphs=278
+preserved_legacy_one_byte_hangul=덕량
+changed_ui_strings=459
+comm_changed_bytes=3313
+comm_changed_nibbles=5307
+preclass_stub=0x801A7460,size=44
+mainclass_stub=0x801A748C,size=44
+decoder_stub=0x801A74B8,size=104
+lookup_table=0x801A7520,size=556
+cave_used_bytes=748
+cave_free_bytes=276
+pointer_tables_unchanged=true
+string_lengths_unchanged=true
+v39_lv_plane_unchanged=true
+v39_icon_regions_unchanged=true
+battle_cursor_region_unchanged=true
+hud_special_payloads_unchanged=true
+changed_members=COMM.IMG,PSX.EXE
+runtime_status=UNVERIFIED_PROBE

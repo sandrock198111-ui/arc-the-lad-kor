@@ -1,0 +1,17 @@
+ui_hud_e7_v74 leaf RA trampoline fix build report
+base=E:\korean\03_output\ui_hud_e7_v73_dual_tpage_renderer_patch_only.zip
+base_sha256=70C3CA41D994589DFFD41859C198F0EF371F7A93E71C8196932297A67A4CAA23
+output=E:\korean\03_output\ui_hud_e7_v74_leaf_ra_trampoline_fix_patch_only.zip
+output_sha256=514DFAE1513AB783D2E689AAC2CA710ECDAFBF6E0D8C937C1953199BBB51D6CD
+changed_members=PSX.EXE
+unchanged_members=COMM.IMG and all DAT members
+slot1_pc=0x8016B60C
+slot1_ra=0x8016B5E0
+diagnosis=JAL overwrote RA in a leaf glyph-builder function
+hook=J 0x801A2094
+helper_return=J 0x8016B5E0
+changed_psx_bytes=5
+change_scope=two MIPS instruction words only
+static_readback=PASS
+runtime_verification=PENDING
+v73_status=REJECTED_INFINITE_RETURN_LOOP

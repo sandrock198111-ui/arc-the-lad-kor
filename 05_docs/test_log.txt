@@ -1506,7 +1506,7 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 
 2026-07-29 - v87 runtime symptom review and v88 static verification
 - User runtime review: FAIL as a complete fix. Slots 3-4 remained Japanese and slots 5-6 retained the same malformed item glyph symptoms.
-- Savestate layout correction: PASS. Current DuckStation states place pure PS1 RAM at decompressed offset `0x1A62`; the older fixed `0x1262` assumption is invalid for these states.
+- Savestate layout correction: SUPERSEDED. A later exact PSX.EXE payload-signature audit established `0x10CA62` as the RAM start for the latest inspected states; `0x1A62` and `0x1262` are invalid for those files.
 - Scene mapping: PASS. Slots 1-4 map to `31/S3032.DAT`; slots 5-6 map to `32/S3051.DAT`.
 - Dialogue identification: PASS. The omitted Japanese blocks begin at S3032 offsets `0x47A40` and `0x47AA2`, each with capacity 34.
 - P6 diagnosis: PASS. The v87 sidecar at `0x801FE4CC` has active pointer `0x801F031C` but zero bitmap words, while the helper resets that sidecar for every parsed text state, including non-P6 UI strings.
@@ -1540,3 +1540,131 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 - S3032 scope: PASS. The edit is confined to E2 slot 2 at `0x45100`; slots 0, 1, and 3 are byte-identical. The old payload contained two `E6 01` pairs and the new payload contains none.
 - MIPS readback: PASS. Glyph helper is `0x801FE3C4-0x801FE473`; marker helper is `0x801FE474-0x801FE4CB`; sidecar begins at `0x801FE4CC`. Branch targets and R3000 load-delay spacing are valid.
 - Runtime result: PENDING. Verify the corrected S3032 line, then open/close the skill ring from slot 5 and confirm normal progression. Accepted UI, icons, and prior story scenes must remain unchanged.
+
+2026-07-29 - v90 runtime rejection and v91 static verification
+- v90 runtime result: FAIL. Moving the cursor onto the previously malformed item produced a blank item-name window and froze the game. The Yagun office line also retained malformed output.
+- Savestate RAM boundary: PASS. The exact `PSX.EXE` payload beginning at file offset `0x800` appears at decompressed-state offset `0x11CA62`; therefore pure PS1 RAM begins at `0x10CA62`.
+- S3032 mapping: PASS. For the loaded block, `RAM offset = DAT file offset - 0x3C000`. Calls at file offsets `0x47994`, `0x479EE`, and `0x47A40` reference E2 IDs 81, 82, and 83; their slots are at `0x45080`, `0x45100`, and `0x45180`.
+- Dialogue diagnosis: PASS. `E6 01` is required as a line break in this E2 payload. Removing it in v90 concatenated the lines. Story code `E0 2D` renders as `듯` in the current runtime, so the attempted `책임질` text became `듯임질`.
+- Item freeze diagnosis: PASS. In latest slot 5 the v90 sidecar at `0x801F1DB4` held bitmap `0x10` at glyph index zero, while the prior v89 state held `0x12`. The v90 same-object/non-P6 branch erased bit `0x02` during item-name reuse.
+- v91 syntax/build/readback: PASS. ZIP SHA256 `60F0D550ECE295DA771440526E7B3B251F113A32DCA25CC8381DB442B9D80027`; 79 members; ZIP integrity passes.
+- Archive isolation: PASS. Relative to v90, exactly `PSX.EXE` and `31/S3032.DAT` differ. `PSX.EXE` is restored byte-for-byte to v89, and only S3032 E2 slot 2 is rewritten.
+- Runtime result: PENDING. In slots 1-4 verify the repaired three-line Yagun sentence and normal advancement. In slot 5 move the cursor onto the formerly blank item and verify that its name appears and the game does not freeze.
+
+2026-07-31 - v92 stateless P6 pass classifier static verification
+- Base verification: PASS. The builder accepts only v91 ZIP SHA256 `60F0D550ECE295DA771440526E7B3B251F113A32DCA25CC8381DB442B9D80027`.
+- Syntax: PASS, `python -m py_compile 02_scripts/build_ui_hud_e7_v92_stateless_p6_pass_classifier.py`.
+- EXE load mapping: PASS. Header is `PS-X EXE`, `t_addr` is `0x8011B000` at file offset `0x800`, so `file = ram - 0x8011A800`.
+- Build/readback: PASS. Output ZIP SHA256 `19768F72D6EC84016787909BA982C2D5E3014AD14770B0771BEB7446D9F0040D`.
+- Deterministic rebuild: PASS. A second build produced the same ZIP SHA256.
+- Archive isolation: PASS. 79 members, order unchanged, only `PSX.EXE` differs from v91.
+- Diff scope: PASS. Exactly 15 bytes change, all inside the five approved words at file `0x87940`, `0x87A04`, `0x87A0C`, `0x87A10`, `0x87A14`.
+- Disassembly readback: PASS. `0x801A2204` is `lbu v0,0x29(v1)`, `0x801A220C` is `addiu v0,v0,-32`, `0x801A2210` is `sltiu v0,v0,1`, `0x801A2214` is `bne v0,s5,0x801A2280`, and `0x801A2140` is `ori s5,zero,0x0001`.
+- R3000 hazard audit: PASS. One delay slot separates the `lbu` at `0x801A2204` from its use at `0x801A220C`. `v1` is an ALU result from `0x801A2200` and needs no spacing.
+- Body-shift audit: PASS. `0x801A2218` still holds `addu a1,v1,s4` (now the branch delay slot) and `0x801A221C` still holds `lhu v0,0x2C(v1)`. The branch target `0x801A2280` is unchanged.
+- Classifier truth table: PASS. Across valid physical rows 0-42 the test `V == 32` selects row 24 only, with zero misclassifications. Rows 22, 23, 25, 31, 32, 33, 38, and 39 hold no active glyph after the v86 repack.
+- E7 icon safety: PASS. Icons share this packet array and stride; their V values 130 and 228 are not 32, so they stay in the low-page pass.
+- Savestate usage: NONE. All of the above was established from `PSX.EXE` disassembly and archive bytes only.
+- Runtime result: PENDING. Cold-boot required. Verify in this order: (1) the previously malformed item name renders correctly and does not freeze, (2) dialogue that already worked has not regressed, (3) bottom-guide icons and battle cursor are unchanged.
+
+2026-07-31 - v93 S3032 speaker-separator static verification
+- Base verification: PASS. The builder accepts only v92 ZIP SHA256 `19768F72D6EC84016787909BA982C2D5E3014AD14770B0771BEB7446D9F0040D`.
+- Syntax: PASS, `python -m py_compile 02_scripts/build_ui_hud_e7_v93_s3032_speaker_separator.py`.
+- Reference assertion: PASS. `21/S2021.DAT` at `0x45E00` is `E0 9C E0 9D DF 80 9C E0 68`, decoding to `아크: 우...`, and its payload contains no `E6 01`.
+- Build/readback: PASS. Output ZIP SHA256 `7BCA52B59459F4F71A178D1D0A22454661AD358952C5E11B5EC06B614E038845`.
+- Deterministic rebuild: PASS. A second build produced the same ZIP SHA256.
+- Archive isolation: PASS. 79 members, order unchanged, only `31/S3032.DAT` differs from v92.
+- Diff scope: PASS. 100 changed bytes, all inside `0x45000-0x452FF`. Every byte before and after the four blocks is identical.
+- Separator audit: PASS. Zero `E6 01` occurrences remain in any of the four blocks.
+- Trailing-byte audit: PASS. Block trailing bytes remain `0x26`, `0x1E`, `0x20`, `0x20`.
+- Decoded readback: PASS.
+    block1 `야군: 알겠습니다. 숲으로 가는 열차 탑승을 허가하겠습니다.` (60 bytes)
+    block2 `야군: 다만, 그곳은 우리도 애를 먹는 곳입니다.` (48 bytes)
+    block3 `야군: 만일 무슨 일이 생겨도 그때는 저희도 관여할 수 없습니다.` (63 bytes)
+    block4 `알고 있습니다. 그때는 스메리아 국왕께 그렇게 전해 주십시오.` (61 bytes)
+- Savestate usage: NONE. Diagnosis came from user runtime screenshots plus archive bytes.
+- Runtime result: PENDING. Verify the Yagun office conversation shows `야군 : ` with no garbled glyph, and that block 4 reads cleanly with no speaker prefix.
+
+2026-07-31 - v94 P6 rendering-path disable probe static verification
+- Base verification: PASS. The builder accepts only v93 ZIP SHA256 `7BCA52B59459F4F71A178D1D0A22454661AD358952C5E11B5EC06B614E038845`.
+- Syntax: PASS, `python -m py_compile 02_scripts/build_ui_hud_e7_v94_p6_path_disable_probe.py`.
+- Original-reference audit: PASS. All three restored words equal the corresponding words in `ui_hud_e7_v71_leaf_font_ring_help_patch_only.zip`, the last build before the dual-texture-page renderer existed.
+    `0x8016B5D8` `0807F8F1` -> `90C2000E`  `lbu v0,0xE(a2)`
+    `0x8016B764` `080688A8` -> `27BDFFD0`  `addiu sp,sp,-48`
+    `0x8016B768` `00000000` -> `AFBF002C`  `sw ra,0x2C(sp)`
+- Build/readback: PASS. Output ZIP SHA256 `68B59D5BE63D87DB46678CC92D99A377B14E749ABE0ABB71663C2859B8C5EEF4`.
+- Deterministic rebuild: PASS. A second build produced the same ZIP SHA256.
+- Archive isolation: PASS. 79 members, order unchanged, only `PSX.EXE` differs from v93.
+- Diff scope: PASS. Exactly 11 bytes change, all inside the three approved words.
+- Scope guards: PASS. The injected classifier at `0x801A2204`, the pass tag at `0x801A2140`, the entry bootstrap at `0x801757BC` and the glyph lookup at `0x801A7520` are unchanged.
+- Prior-build survey: PASS. v70, v71 and v72 all hold the same three original words and have a zero-filled injected region `0x801A20B0-0x801A22E0`, confirming the renderer was introduced by v73.
+- Savestate usage: NONE for the build. Savestate work informed the diagnosis only.
+- Expected regression, not under test: the 56 row-24 glyph codes render as garbage because their lookup entries still point at the high texture page.
+- Runtime result: PENDING. Cold boot required. The single question is whether the item name still freezes.
+    freeze gone     -> the fault is inside the injected rendering path
+    freeze persists -> the injected path is innocent; investigate data or memory layout
+
+2026-07-31 - v94 runtime acceptance
+- Method: cold boot from a freshly patched image, entered from the memory card.
+- Dialogue: PASS. The S3032 Yagun scene shows `야군 : 다만, 그곳은 우리도 애를 먹는 곳입니다.` with no garbled separator. This confirms the v93 `E6 01` removal.
+- Item name: PASS for progression. The name renders as garbage but the game does NOT freeze.
+- Conclusion: the fault is inside the injected rendering path introduced by v73.
+- v94 promoted to accepted rollback baseline and frozen under `99_backup/baselines/`.
+
+2026-07-31 - v95 slot-reservation static verification
+- Base verification: PASS. The builder accepts only v93 ZIP SHA256 `7BCA52B59459F4F71A178D1D0A22454661AD358952C5E11B5EC06B614E038845`.
+- Syntax: PASS, `python -m py_compile 02_scripts/build_ui_hud_e7_v95_tpage_slot_reservation.py`.
+- Reference audit: PASS. All six written words are byte-identical to the same addresses in v74, the last build that reserved the slot.
+- RA-safety audit: PASS. The enclosing function starts at `0x8016B134` and saves RA at `0x8016B138` (`sw ra,0x20(sp)`), so inserting `JAL` at `0x8016B148` cannot destroy the caller's RA. This was the v73 failure mode and is explicitly excluded here.
+- Register-hazard audit: PASS. The helper clobbers `a0`; the caller does not read `a0` again before redefining it.
+- Cave audit: PASS. `0x801A2080-0x801A2093` was entirely zero in v93 and the `jr ra` delay slot remains `nop`.
+- Arithmetic proof: PASS. With `limit = max - 1` the builder fills slots `0..max-2`, and the renderer's `base + 52*limit` lands on slot `max-1`, the reserved empty slot. `parity*20 + 8` bytes fit inside the 52-byte slot for either buffer half.
+- Scope guards: PASS. Renderer entry `0x8016B764`, glyph hook `0x8016B5D8`, classifier `0x801A2204` (reads V at packet `0x29`, not the height byte), builder limit compare `0x8016B520`/`0x8016B528`, and the renderer's `lh v0,0x4(s2)` are all unchanged.
+- Build/readback: PASS. Output ZIP SHA256 `2646E40C0543EBA95684767D97221FF01573FC9CDE0D4F981749A4B11F54AA8F`.
+- Deterministic rebuild: PASS. A second build produced the same ZIP SHA256.
+- Archive isolation: PASS. 79 members, order unchanged, only `PSX.EXE` differs from v93, by 19 bytes in the six approved words.
+- Savestate usage: NONE.
+- Runtime result: PENDING. Cold boot required. Check in order: (1) the item name renders and the game does not freeze, (2) the Yagun dialogue still reads correctly, (3) the load/save screen, menus, battle and the red ARC transition show no regression. Roll back to the frozen v94 if anything regresses.
+
+2026-07-31 - v96 runtime rejection and v97 static verification
+- v96 runtime result: FAIL for glyph appearance, PASS for stability. Item names and skill names still rendered as garbage; no freeze, and the Yagun dialogue and the battle prompt line stayed correct.
+- COMM.IMG to VRAM mapping: PASS. Content matching against `HASH-1820FA8E2030B89F_1.sav` gives `state = 0x202058 + (o // 896) * 2048 + (o % 896)`, verified on three separate probes at COMM offsets 0x0, 0x313E and 0xA128 with zero error.
+- Strip origin: PASS. With the left edge at VRAM x4bpp 1280, the live packet U=180 V=180 decodes to a clean 12x12 Hangul bitmap at x=1460, y=180.
+- P6 location: PASS by measurement. Diffing the v85 COMM.IMG against the current one shows the repack wrote y 288..298, x4bpp 2856..3033, over a region that was entirely blank. Bitplane isolation confirms Hangul glyphs.
+- Page arithmetic: PASS. 2856 lies in texture page 11 (base 2816) and the remainder 40 equals the glyph helper's `addiu a3,a3,40` at `0x801FE410`.
+- v96 diagnosis: CONFIRMED. tx 6 points at x4bpp 1536..1755, which holds unrelated texture data. The recorded "absolute" coordinates were strip-relative; 1576 + 1280 = 2856.
+- v97 syntax: PASS, `python -m py_compile 02_scripts/build_ui_hud_e7_v97_high_tpage_measured.py`.
+- v97 build-time measurement: PASS. The builder independently reported P6 pixels at x4bpp 2856..3033, texture page 11, U offset 40, and derived the immediate 0x1B.
+- Build/readback: PASS. Output ZIP SHA256 `5DCD2E995D1BB4F1100489405DD7350F3492E35A686498A55FEE644742E1D6D4`.
+- Deterministic rebuild: PASS. A second build produced the same ZIP SHA256.
+- Archive isolation: PASS. 79 members, order unchanged, only `PSX.EXE` differs from v96, by exactly one byte.
+- Scope guards: PASS. The v95 slot reservation, the v92 classifier, the renderer entry, the glyph hook and the helper's U correction are all unchanged.
+- Runtime result: PENDING. Cold boot. Check the item name, the skill name, the Yagun dialogue, then the load/save screen, menus, battle and the red ARC transition. Roll back to the frozen v94 if anything regresses.
+
+2026-07-31 - v97 runtime acceptance
+- Method: cold boot from a freshly patched image, entered from the memory card.
+- Item name: PASS. Renders correctly, no freeze.
+- Skill name: PASS. Renders correctly.
+- S3032 Yagun dialogue: PASS, including the `야군 : ` separator.
+- Load/save screen, menus, battle, red ARC transition: PASS, no regression.
+- Significance: first build in which the expanded glyph store is actually read and displayed. Promoted to accepted baseline and frozen.
+
+2026-07-31 - v98 capacity-restoration static verification
+- Base verification: PASS. The builder accepts only v97 ZIP SHA256 `5DCD2E995D1BB4F1100489405DD7350F3492E35A686498A55FEE644742E1D6D4`.
+- Syntax: PASS, `python -m py_compile 02_scripts/build_ui_hud_e7_v98_restore_object_capacity.py`.
+- Struct-size measurement: PASS. 29 initializer call sites resolve to four objects; `0x801F9D44` and `0x801F9D88` are 68 bytes apart, and the initializer's tpage loop runs s0 = 44, 56 and stops at 68. No spare room exists.
+- Original-code restoration: PASS. `0x8016B148` and `0x8016B14C` are byte-identical to v71, and the injected helper at `0x801A2080-0x801A208C` reads back as all zero.
+- Driver readback: PASS.
+    `0x801A214C` `lh v0,0x4(s2)`
+    `0x801A2150` `lw s1,0x0(s2)`     (moved up into the load-delay slot)
+    `0x801A2154..0x801A2164`          52*limit chain unchanged
+    `0x801A2168` `addiu v1,v1,-52`
+    `0x801A216C` `nop`, `0x801A2170` `addu s1,s1,v1`, `0x801A2174` `addu s1,s1,s4`
+- R3000 hazard audit: PASS. `lh v0` is consumed two instructions later, `lw s1` is consumed eight instructions later, and the load-delay nop before `addu s1,s1,v1` is intact.
+- Address audit: PASS for every object size. The tpage primitive occupies bytes 780-807 of an 832-byte array at limit 16, 1612-1639 of 1664 at limit 32, 3276-3303 of 3328 at limit 64, and 6604-6631 of 6656 at limit 128. All inside.
+- Capacity audit: PASS. Usable glyph slots go from `limit - 1` back to `limit`.
+- Scope guards: PASS. The v97 tpage immediate `0x34E7001B`, the v92 classifier, the glyph-builder limit compare, the renderer entry and the glyph hook are unchanged.
+- Build/readback: PASS. Output ZIP SHA256 `526232330287EEF6AA66A1020B2C0E472DA936CABD90DD55FFA9A31F2ADB36B3`.
+- Deterministic rebuild: PASS. A second build produced the same ZIP SHA256.
+- Archive isolation: PASS. 79 members, order unchanged, only `PSX.EXE` differs from v97, by 25 bytes in the eight approved words.
+- Runtime result: PENDING. Cold boot. Re-run every v97 checkpoint, then look for any long line that previously lost its last character. Roll back to the frozen v97 if anything regresses.

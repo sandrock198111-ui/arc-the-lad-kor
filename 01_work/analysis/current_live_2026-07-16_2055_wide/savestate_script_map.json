@@ -1,0 +1,86 @@
+[
+  {
+    "state": "01_work\\analysis\\current_live_2026-07-16_2055\\ram.bin",
+    "best_match": {
+      "file": "1/S1011.DAT",
+      "equal_bytes": 4096,
+      "compared_bytes": 4096,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "1/S1011.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      },
+      {
+        "file": "1/S1012.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      },
+      {
+        "file": "1/S1013.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      },
+      {
+        "file": "1/S1022.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      },
+      {
+        "file": "1/S1031.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      },
+      {
+        "file": "1/S1032.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      },
+      {
+        "file": "1/S1071.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      },
+      {
+        "file": "1/S1072.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      },
+      {
+        "file": "21/S2011.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      },
+      {
+        "file": "21/S2012.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      },
+      {
+        "file": "21/S2031.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      },
+      {
+        "file": "21/S2032.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 4096,
+        "ratio": 1.0
+      }
+    ],
+    "dialogues": []
+  }
+]

@@ -1,0 +1,18 @@
+ui_hud_e7_v72 build report
+base=E:\korean\03_output\ui_hud_e7_v71_leaf_font_ring_help_patch_only.zip
+base_sha256=C9FE5D3F3521748CDD53A43A7A47895CC1747928D2804A9502D877B4D47A250D
+output=E:\korean\03_output\ui_hud_e7_v72_low_page_glyph_relocation_patch_only.zip
+output_sha256=F9A0E9F9DDCFEE1B8FBDAA139805444DC73BC618BC6B4306D9E922FEDBC34AAC
+changed_members=PSX.EXE,COMM.IMG
+unchanged_members=all DAT members
+lookup_offset=0x8CD20
+relocated_glyphs=55
+source_rows=31,32,33,38,39
+destination_rows=11,12,17,18,19,20
+excluded_high_codes=EA 66 (dedicated leaf), EA 9A/EA 9B (unused L/V)
+icon_tables=unchanged
+code_hooks=unchanged
+static_lookup_readback=PASS
+static_glyph_plane_readback=PASS
+neighboring_bitplane_preservation=PASS
+runtime_verification=PENDING

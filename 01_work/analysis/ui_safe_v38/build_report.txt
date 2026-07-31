@@ -1,0 +1,19 @@
+UI safe v0.38 cumulative LV and button-icon repair
+base=v0.37 hash-locked cumulative ZIP
+base_zip_sha256=0583FEED2266C883B413260114F331D73FAC12AE1C9A17EB123D559D9EB29AA1
+changed_members=COMM.IMG,PSX.EXE
+lv_bitmap_pixels=23
+lv_changed_bytes=8
+lv_changed_pixels=9
+lv_neighbor_planes_changed=0
+button_icon_ids=E7_02,E7_03
+button_icon_destination_u=0x00,0x0C
+button_icon_destination_v=0x82
+button_icon_destination_assigned_glyphs=0
+button_help={결정버튼}결정 {취소버튼}돌아가기
+button_help_pointer=0x8235C->0x82094
+psx_changed_bytes=20
+comm_changed_pixels=246
+comm_img_sha256=882B2C4A900AAA4D1D92143C7187D4E99C9A40F76FE910486CC105FA6EBE1FAC
+psx_exe_sha256=2FCBA5A1737A59FAA570F04B05668945FA67508B1A61EB549C755BCB9EF131C9
+output_zip_sha256=D66E6F4F780E3096B604C7699E3E7EB00392EE7C0C4FA457AEDE3F61EEFD45D9

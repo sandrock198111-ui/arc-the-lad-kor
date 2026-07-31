@@ -1,0 +1,365 @@
+[
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-39247B554F59E6EC_resume.sav",
+    "best_match": {
+      "file": "C1/SC011.DAT",
+      "equal_bytes": 1792,
+      "compared_bytes": 1792,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "C1/SC011.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "C1/SC021.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "C1/SC031.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "C1/SC041.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "C1/SC051.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "C1/SC061.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/C1/SC011.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/C1/SC021.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      }
+    ],
+    "dialogues": []
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-39247B554F59E6EC_1.sav",
+    "best_match": {
+      "file": "31/S3011.DAT",
+      "equal_bytes": 1792,
+      "compared_bytes": 1792,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "31/S3011.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/31/S3011.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "31/S3012.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/31/S3012.DAT",
+        "equal_bytes": 1768,
+        "compared_bytes": 1792,
+        "ratio": 0.9866071428571429
+      },
+      {
+        "file": "21/S2042.DAT",
+        "equal_bytes": 1767,
+        "compared_bytes": 1792,
+        "ratio": 0.9860491071428571
+      },
+      {
+        "file": "21/S2043.DAT",
+        "equal_bytes": 1767,
+        "compared_bytes": 1792,
+        "ratio": 0.9860491071428571
+      },
+      {
+        "file": "21/S2044.DAT",
+        "equal_bytes": 1767,
+        "compared_bytes": 1792,
+        "ratio": 0.9860491071428571
+      },
+      {
+        "file": "31/S3013.DAT",
+        "equal_bytes": 1767,
+        "compared_bytes": 1792,
+        "ratio": 0.9860491071428571
+      }
+    ],
+    "dialogues": [
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x117538",
+        "ram_payload_start": "0x11753C",
+        "file_payload_start": "0x47D3C",
+        "end_exclusive": "0x47D44",
+        "length": 8,
+        "prefix_kind": "control_0100",
+        "payload_hex": "4d 37 34 2f 3c 33 43 1f"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1175AE",
+        "ram_payload_start": "0x1175B2",
+        "file_payload_start": "0x47DB2",
+        "end_exclusive": "0x47DBA",
+        "length": 8,
+        "prefix_kind": "control_0100",
+        "payload_hex": "3d 36 2b 2f 48 30 5d 34"
+      }
+    ]
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-39247B554F59E6EC_2.sav",
+    "best_match": {
+      "file": "31/S3022.DAT",
+      "equal_bytes": 1792,
+      "compared_bytes": 1792,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "31/S3022.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/31/S3022.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "5/S5051.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "D/SD041.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "D/SD051.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "D/SD061.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "F/SF071.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/5/S5051.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      }
+    ],
+    "dialogues": [
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1174B6",
+        "ram_payload_start": "0x1174BA",
+        "file_payload_start": "0x47CBA",
+        "end_exclusive": "0x47CCC",
+        "length": 18,
+        "prefix_kind": "control_0100",
+        "payload_hex": "85 1f 4b 14 52 30 38 e6 01 35 1b 4a 73 26 ca 3d 4c 3c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117594",
+        "ram_payload_start": "0x117596",
+        "file_payload_start": "0x47D96",
+        "end_exclusive": "0x47DC6",
+        "length": 48,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 3b 27 46 dd 16 2a 24 5f 34 47 62 31 2f dd 83 2b 1d 54 36 e6 01 dd 1c dd e2 a9 09 1d 27 1b 44 0a 2f 91 29 21 22 dd 02 dd 4e 20 3c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1175F6",
+        "ram_payload_start": "0x1175F8",
+        "file_payload_start": "0x47DF8",
+        "end_exclusive": "0x47E1B",
+        "length": 35,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 ad 83 ba 52 23 27 20 59 21 24 35 27 29 21 91 26 7a 2f e6 01 d3 1b 21 32 58 1b 1b 2d 35 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117652",
+        "ram_payload_start": "0x117654",
+        "file_payload_start": "0x47E54",
+        "end_exclusive": "0x47E7A",
+        "length": 38,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 bb 80 34 cb 28 24 2e 1c 5e 1c 7c 34 af 31 12 35 37 e6 01 3a 20 33 26 36 de 30 1b ac 23 3f 26 6a 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1176B0",
+        "ram_payload_start": "0x1176B2",
+        "file_payload_start": "0x47EB2",
+        "end_exclusive": "0x47EE4",
+        "length": 50,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 5b 53 dd a0 7f 1c dd 10 5a 36 5b dd 60 34 af 57 1c df 34 5a 23 e6 01 1b 3e 1c 20 37 e6 01 3f 41 2e 1c 5f 34 47 62 31 28 dd 19 1b 6a 37"
+      }
+    ]
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-39247B554F59E6EC_3.sav",
+    "best_match": {
+      "file": "31/S3022.DAT",
+      "equal_bytes": 1792,
+      "compared_bytes": 1792,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "31/S3022.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/31/S3022.DAT",
+        "equal_bytes": 1792,
+        "compared_bytes": 1792,
+        "ratio": 1.0
+      },
+      {
+        "file": "5/S5051.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "D/SD041.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "D/SD051.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "D/SD061.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "F/SF071.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/5/S5051.DAT",
+        "equal_bytes": 832,
+        "compared_bytes": 1792,
+        "ratio": 0.4642857142857143
+      }
+    ],
+    "dialogues": [
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1174B6",
+        "ram_payload_start": "0x1174BA",
+        "file_payload_start": "0x47CBA",
+        "end_exclusive": "0x47CCC",
+        "length": 18,
+        "prefix_kind": "control_0100",
+        "payload_hex": "85 1f 4b 14 52 30 38 e6 01 35 1b 4a 73 26 ca 3d 4c 3c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117594",
+        "ram_payload_start": "0x117596",
+        "file_payload_start": "0x47D96",
+        "end_exclusive": "0x47DC6",
+        "length": 48,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 3b 27 46 dd 16 2a 24 5f 34 47 62 31 2f dd 83 2b 1d 54 36 e6 01 dd 1c dd e2 a9 09 1d 27 1b 44 0a 2f 91 29 21 22 dd 02 dd 4e 20 3c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1175F6",
+        "ram_payload_start": "0x1175F8",
+        "file_payload_start": "0x47DF8",
+        "end_exclusive": "0x47E1B",
+        "length": 35,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 ad 83 ba 52 23 27 20 59 21 24 35 27 29 21 91 26 7a 2f e6 01 d3 1b 21 32 58 1b 1b 2d 35 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117652",
+        "ram_payload_start": "0x117654",
+        "file_payload_start": "0x47E54",
+        "end_exclusive": "0x47E7A",
+        "length": 38,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 bb 80 34 cb 28 24 2e 1c 5e 1c 7c 34 af 31 12 35 37 e6 01 3a 20 33 26 36 de 30 1b ac 23 3f 26 6a 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1176B0",
+        "ram_payload_start": "0x1176B2",
+        "file_payload_start": "0x47EB2",
+        "end_exclusive": "0x47EE4",
+        "length": 50,
+        "prefix_kind": "none",
+        "payload_hex": "66 68 25 e6 01 5b 53 dd a0 7f 1c dd 10 5a 36 5b dd 60 34 af 57 1c df 34 5a 23 e6 01 1b 3e 1c 20 37 e6 01 3f 41 2e 1c 5f 34 47 62 31 28 dd 19 1b 6a 37"
+      }
+    ]
+  }
+]

@@ -1,0 +1,163 @@
+[
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-112DD4E8341F03C8_3.sav",
+    "best_match": {
+      "file": "31/S3041.DAT",
+      "equal_bytes": 6144,
+      "compared_bytes": 6144,
+      "ratio": 1.0
+    },
+    "top_matches": [
+      {
+        "file": "31/S3041.DAT",
+        "equal_bytes": 6144,
+        "compared_bytes": 6144,
+        "ratio": 1.0
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 6144,
+        "compared_bytes": 6144,
+        "ratio": 1.0
+      },
+      {
+        "file": "B/SB031.DAT",
+        "equal_bytes": 6144,
+        "compared_bytes": 6144,
+        "ratio": 1.0
+      },
+      {
+        "file": "B/SB061.DAT",
+        "equal_bytes": 6144,
+        "compared_bytes": 6144,
+        "ratio": 1.0
+      },
+      {
+        "file": "C1/SC071.DAT",
+        "equal_bytes": 6144,
+        "compared_bytes": 6144,
+        "ratio": 1.0
+      },
+      {
+        "file": "C1/SC072.DAT",
+        "equal_bytes": 6144,
+        "compared_bytes": 6144,
+        "ratio": 1.0
+      },
+      {
+        "file": "MAP/SMAP.DAT",
+        "equal_bytes": 6144,
+        "compared_bytes": 6144,
+        "ratio": 1.0
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/31/S3041.DAT",
+        "equal_bytes": 6144,
+        "compared_bytes": 6144,
+        "ratio": 1.0
+      }
+    ],
+    "dialogues": []
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-112DD4E8341F03C8_4.sav",
+    "best_match": {
+      "file": "23/S2061.DAT",
+      "equal_bytes": 5670,
+      "compared_bytes": 6144,
+      "ratio": 0.9228515625
+    },
+    "top_matches": [
+      {
+        "file": "23/S2061.DAT",
+        "equal_bytes": 5670,
+        "compared_bytes": 6144,
+        "ratio": 0.9228515625
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/23/S2061.DAT",
+        "equal_bytes": 5670,
+        "compared_bytes": 6144,
+        "ratio": 0.9228515625
+      },
+      {
+        "file": "7/S7027.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 6144,
+        "ratio": 0.6666666666666666
+      },
+      {
+        "file": "package_story_test_23_s1072_safe_boundaries/files/7/S7027.DAT",
+        "equal_bytes": 4096,
+        "compared_bytes": 6144,
+        "ratio": 0.6666666666666666
+      },
+      {
+        "file": "31/S3041.DAT",
+        "equal_bytes": 3452,
+        "compared_bytes": 6144,
+        "ratio": 0.5618489583333334
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 3452,
+        "compared_bytes": 6144,
+        "ratio": 0.5618489583333334
+      },
+      {
+        "file": "B/SB031.DAT",
+        "equal_bytes": 3452,
+        "compared_bytes": 6144,
+        "ratio": 0.5618489583333334
+      },
+      {
+        "file": "B/SB061.DAT",
+        "equal_bytes": 3452,
+        "compared_bytes": 6144,
+        "ratio": 0.5618489583333334
+      }
+    ],
+    "dialogues": [
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x117D36",
+        "ram_payload_start": "0x117D3A",
+        "file_payload_start": "0x4853A",
+        "end_exclusive": "0x48566",
+        "length": 44,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 81 e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1180E0",
+        "ram_payload_start": "0x1180E4",
+        "file_payload_start": "0x488E4",
+        "end_exclusive": "0x4891F",
+        "length": 59,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 8a e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1181EC",
+        "ram_payload_start": "0x1181EE",
+        "file_payload_start": "0x489EE",
+        "end_exclusive": "0x48A03",
+        "length": 21,
+        "prefix_kind": "none",
+        "payload_hex": "e2 8c e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11828A",
+        "ram_payload_start": "0x11828E",
+        "file_payload_start": "0x48A8E",
+        "end_exclusive": "0x48AA3",
+        "length": 21,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 8e e6 01 90 8c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      }
+    ]
+  }
+]

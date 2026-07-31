@@ -1,0 +1,20 @@
+UI guide terms v0.42 independent audit: PASS
+output_zip_sha256=0CEF485BD82D2C7C72EA4F0326D804AC07282773731CD02AF1D6DA83FCFD5EFC
+output_psx_sha256=24C004F8718AAF3A2AA760E58D42E4991724DD43A3E9BF572064F357EDF3CCD1
+output_comm_sha256=AEFEE1EDD4FB2B00DF1533C745C0E8AE3A78A96D5CD0C7302F65B2456E8626F6
+changed_members=COMM.IMG,PSX.EXE
+unrelated_members_byte_identical=true
+story_e2_members_byte_identical=true
+ui_pointer_readbacks=503/503
+ui_string_readbacks=503/503
+unique_ui_payloads=429
+glyph_readbacks=409/409
+v41_glyph_assignments_preserved=278/278
+new_sparse_glyphs=131
+battle_cursor_v37_exact=true
+confirm_cancel_icons_exact=true
+battle_hud_separate_lv_exact=true
+accepted_level_wording_exact=true
+changed_psx_bytes=6144
+changed_comm_bytes=1848
+changed_comm_nibbles=3033

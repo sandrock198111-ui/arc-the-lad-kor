@@ -1,0 +1,17 @@
+UI glyph store v0.41 independent audit
+output_zip_sha256=D5AC9441CB479F1B0B28B1732C97F52CCD284A8E73BE487AA16E41D9CC37BD78
+output_psx_sha256=C82EBFC4E2E9A1B3FCD8A3DF37D66BFCD6FE628C5257F0EF8BDDAAA7E3264B5E
+output_comm_sha256=32E43ED674DF30D745F3DE889493A5917F937CB5013B745ED24B455ECE231733
+changed_members=COMM.IMG,PSX.EXE
+mapped_glyphs=278
+changed_ui_strings=459
+lookup_table_readback=278/278
+classifier_semantics=E1-E8_controls_E9-EA_glyphs
+story_boundaries_without_e9_ea=2857
+story_members_unchanged=true
+pointer_tables_unchanged=true
+string_lengths_unchanged=true
+v39_canaries_unchanged=true
+changes_outside_declared_ranges=false
+result=PASS
+runtime_status=UNVERIFIED_PROBE

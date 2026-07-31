@@ -1,0 +1,124 @@
+﻿pointer_offset,source_offset,new_offset,japanese,korean,status,encoded_bytes,encoded_hex
+0x823A4,0x8237C,0x8271E,ステージクリア,승리!,translated_new_pool,6,E0 FF E0 98 DF E3
+0x823A8,0x82384,0x82672,ゲームオーバー,게임 오버,translated_new_pool,9,E0 14 DF F6 9C E0 62 DF BB
+0x823D8,0x823C0,0x826EC,<N:ｌ:5>石化へ,돌 상태,translated_new_pool,7,E0 D5 9C E0 56 DF 08
+0x823DC,0x823C8,0x8272A,<N:ｌ:5>マ<N:ヒ:5>へ,마비,translated_new_pool,4,E0 9E E0 53
+0x823E0,0x823D0,0x82739,<N:ｌ:5><N:眠:5>りへ,수면,translated_new_pool,4,DF B7 E0 4C
+0x82444,0x823E4,0x823E4,データのセーフ・ロート,데이터 저장 불러오기,translated_new_pool,20,E0 31 E0 BD DF E8 9C E0 CB E0 E1 9C E0 0A E0 25 E0 62 E0 AC
+0x82448,0x823F4,0x825B1,データのセーフ,데이터 저장,translated_new_pool,11,E0 31 E0 BD DF E8 9C E0 CB E0 E1
+0x8244C,0x82400,0x8242F,データのロート,데이터 불러오기,translated_new_pool,15,E0 31 E0 BD DF E8 9C E0 0A E0 25 E0 62 E0 AC
+0x82450,0x82408,0x8241D,カートを選んで下さい,카드를 선택하세요,translated_new_pool,17,DF E9 DF 41 E0 AB 9C E0 58 E0 B6 E0 C4 E0 5B E0 66
+0x82454,0x82414,0x82709,カート1,카드 1,translated_new_pool,6,DF E9 DF 41 9C 12
+0x82458,0x8241C,0x82717,カート2,카드 2,translated_new_pool,6,DF E9 DF 41 9C 13
+0x8245C,0x82424,0x82618,フ<N:=:12><N:｣:11>ルを選んで下さい,파일을 선택하세요,translated_new_pool,17,DF A0 E0 6B E0 A3 9C E0 58 E0 B6 E0 C4 E0 5B E0 66
+0x82460,0x82434,0x823C0,メモリーカートがありません,메모리 카드가 없습니다,translated_new_pool,22,E0 8F E0 11 E0 98 9C DF E9 DF 41 E0 C0 9C E0 F1 E0 5F E0 35 E0 C1
+0x82474,0x82468,0x8240B,へを手に入れた,」를 손에 넣었다.,translated_new_pool,17,5A E0 AB 9C E0 5D E0 9F 9C E0 33 DF FD E0 C1 E0 60
+0x82498,0x82478,0x8237C,ステージ内で得た経験値,스테이지에서 얻은 경험치,translated_new_pool,24,E0 39 DF 07 E0 BD E0 A2 E0 9F E0 57 9C E0 B1 E0 BF 9C E0 89 E0 E8 E0 B0
+0x8249C,0x8248C,0x8255C,倒した敵の数,격파한 적 수,translated_new_pool,12,E0 40 DF A0 E0 84 9C DF F2 9C DF B7
+0x82518,0x824A0,0x824E8,<N:リ:12>ベルアッ<N:フ:11>！！,LV 상승!!,translated_new_pool,10,6C 9C E0 56 E0 FF DF E3 DF E3
+0x8251C,0x824AC,0x824C4,最大<N:ヒ:5>ットポ<N:｣:11>ント,최대 체력이,translated_new_pool,11,DF A4 E0 36 9C E0 90 E0 8C E0 BD
+0x82520,0x824B8,0x824D0,最大マジックポ<N:｣:11>ント,최대 마력이,translated_new_pool,11,DF A4 E0 36 9C E0 9E E0 8C E0 BD
+0x82524,0x824C4,0x826C9,攻撃力,공격력이,translated_new_pool,8,E0 C6 E0 40 E0 8C E0 BD
+0x82528,0x824C8,0x826B7,防御力,방어력이,translated_new_pool,8,E0 0F E0 A0 E0 8C E0 BD
+0x8252C,0x824D0,0x826F4,魔力,마력이,translated_new_pool,6,E0 9E E0 8C E0 BD
+0x82530,0x824D4,0x826AE,すばやさ,민첩성이,translated_new_pool,8,DF BE DF EC E0 5A E0 BD
+0x82538,0x824E0,0x8272F,上がつた,상승,translated_new_pool,4,E0 56 E0 FF
+0x8253C,0x824E8,0x82748,ジャン<N:フ:11>,점프,translated_new_pool,4,DE D2 DF 9F
+0x82540,0x824F0,0x826FB,投げ,던지기,translated_new_pool,6,DF 69 E0 A2 E0 AC
+0x82544,0x824F4,0x82743,受け,받기,translated_new_pool,4,E0 10 E0 AC
+0x82548,0x824F8,0x82725,反撃,반격,translated_new_pool,4,E0 8A E0 40
+0x8254C,0x824FC,0x82702,<N:リ:12>ベルが上がつた,LV 상승,translated_new_pool,6,6C 9C E0 56 E0 FF
+0x82554,0x8250C,0x82575,へをお<N:げ:26>えた,를 배웠다.,translated_new_pool,11,E0 AB 9C DF BD DE D6 E0 C1 E0 60
+0x825C8,0x8255C,0x824A0,サウント出力,사운드 출력,translated_new_pool,11,E0 A5 DF FA DF 41 9C E0 FC E0 8C
+0x825CC,0x82564,0x825A5,パットななめ入力,대각선 입력,translated_new_pool,11,E0 36 E0 43 E0 58 9C E0 C9 E0 8C
+0x825D0,0x82570,0x82395,<N:午:15>ャンセルかくにん,돌아가기 확인,translated_new_pool,13,E0 D5 E0 9C E0 C0 E0 AC 9C DE C8 E0 6A
+0x825D4,0x8257C,0x824DC,へル<N:フ:11>ウ<N:｣:11>ントウ,도움말 보기,translated_new_pool,11,E0 A7 DF 17 E0 BE 9C E0 93 E0 AC
+0x825D8,0x82588,0x82478,チョン<N:力:5>ラのモンスターすかんを<N:閂:11>く,촌가라의 몬스터 도감 열기,translated_new_pool,25,DF 83 E0 C0 E0 A6 E0 9B 9C DF 37 E0 39 DF E8 9C E0 A7 E0 01 9C E0 B2 E0 AC
+0x825DC,0x8259C,0x826DB,ステ<N:リ:12>オ,스테레오,translated_new_pool,8,E0 39 DF 07 DF D2 E0 62
+0x825E0,0x825A4,0x8273E,モ<N:メ:6>ラル,모노,translated_new_pool,4,E0 11 E0 3C
+0x825E4,0x825AC,0x82752,ふつう,일반,translated_new_pool,4,E0 6B E0 8A
+0x825E8,0x825B0,0x8243F,よくする,사용,translated_new_pool,4,E0 A5 E0 67
+0x825EC,0x825B8,0x825BD,しない,사용 안 함,translated_new_pool,10,E0 A5 E0 67 9C E0 E9 9C E0 85
+0x8262C,0x82618,0x82654,対戦せいせき,대전 성적,translated_new_pool,9,E0 36 E0 CC 9C E0 5A DF F2
+0x82638,0x82628,0x8275C,能力,기량,translated_new_pool,3,E0 AC 40
+0x8293C,0x82640,0x824F3,マ<N:ヒ:5>攻撃,마비 공격,translated_new_pool,9,E0 9E E0 53 9C E0 C6 E0 40
+0x82940,0x82648,0x824AC,頭なげ,머리 던지기,translated_new_pool,11,DF 7C E0 98 9C DF 69 E0 A2 E0 AC
+0x82944,0x82650,0x80E5E,サ<N:｣:11><N:リ:12>ント,사일런트,reused_verified_ui_translation,8,E0 A5 E0 6B E0 BC E0 82
+0x82948,0x82658,0x82569,<N:毒:1>攻撃,해로운 공격,translated_new_pool,11,E0 88 E0 D6 DF FA 9C E0 C6 E0 40
+0x8294C,0x82660,0x82492,ぶんれつ,분열,translated_new_pool,4,E0 91 E0 B2
+0x82950,0x82668,0x82581,ばくれつ手裏剣,폭발 수리검,translated_new_pool,11,DE CB E0 FA 9C DF B7 E0 98 DE F3
+0x82954,0x82674,0x81077,自爆,자폭,reused_verified_ui_translation,4,E0 E0 DE CB
+0x82958,0x82678,0x80F9B,トリーム<N:メ:6>ック,드림 노크,reused_verified_ui_translation,9,DF 41 DF 3A 9C E0 3C E0 9D
+0x8295C,0x82684,0x80F94,エクス<N:フ:11>ロージョン,대폭발,reused_verified_ui_translation,6,E0 36 DE CB E0 FA
+0x82960,0x82690,0x80FB7,ウ<N:｣:11>ントスラッシャー,바람 검,reused_verified_ui_translation,7,DF 6E E0 BA 9C DE F3
+0x82964,0x8269C,0x80FC9,サンダーストーム,전기 폭풍,reused_verified_ui_translation,9,E0 CC E0 AC 9C DE CB DE C9
+0x82968,0x826A8,0x823F9,ダ<N:｣:11>アモントダスト,다이아몬드 더스트,translated_new_pool,17,E0 C1 E0 BD E0 9C DF 37 DF 41 9C DF D5 E0 39 E0 82
+0x8296C,0x826B4,0x80E4D,デポ<N:｣:11><N:ス:15>ン,해로운 기운 제거,reused_verified_ui_translation,16,E0 88 E0 D6 DF FA 9C E0 AC DF FA 9C E0 AA DF 87
+0x82970,0x826BC,0x80E70,天のさばき,하늘의 심판,reused_verified_ui_translation,11,E0 C4 DF D7 E0 9B 9C DF 25 DF 05
+0x82974,0x826C4,0x80E7C,リ<N:ザ:8><N:リ:12>クション,부활,reused_verified_ui_translation,4,E0 0B E0 80
+0x82978,0x826D0,0x80E81,デ<N:ｲ:6>バ<N:｣:11>ト,디바이드,reused_verified_ui_translation,8,E0 A1 DF 6E E0 BD DF 41
+0x8297C,0x826D8,0x826D2,<N:振:2>りおろし,내려치기,translated_new_pool,8,DF 97 E0 15 E0 B0 E0 AC
+0x82980,0x826E0,0x80C96,<N:午:15>ュア,회복,reused_verified_ui_translation,4,DE C7 DF 33
+0x82984,0x826E8,0x82710,つつみこみ,감싸기,translated_new_pool,6,E0 01 E0 FB E0 AC
+0x82988,0x826F0,0x82599,<N:毒:1>のきり,해로운 기운,translated_new_pool,11,E0 88 E0 D6 DF FA 9C E0 AC DF FA
+0x8298C,0x826F8,0x826E4,き<N:ぃ:20>うけつ,피 빨기,translated_new_pool,7,DF 82 9C DF 2F E0 AC
+0x82990,0x82700,0x82511,ちょうおんっ,초음파,translated_new_pool,6,DF EB DF F8 DF A0
+0x82994,0x82708,0x826EC,石化,돌 상태,translated_new_pool,7,E0 D5 9C E0 56 DF 08
+0x82998,0x8270C,0x8269A,し<N:ぃ:20>うい攻撃,주위 공격,translated_new_pool,9,E0 CF E0 69 9C E0 C6 E0 40
+0x829A0,0x82718,0x8274D,たたきつけ,강타,translated_new_pool,4,E0 F2 E0 7D
+0x829A4,0x82720,0x82468,かふん攻撃,꽃가루 공격,translated_new_pool,11,DF 99 E0 C0 E0 44 9C E0 C6 E0 40
+0x829A8,0x82728,0x826A4,たねとばし,씨 날리기,translated_new_pool,9,DF 21 9C DF 98 E0 98 E0 AC
+0x829AC,0x82730,0x82686,くろの雷,검은 전기,translated_new_pool,9,DE F3 E0 BF 9C E0 CC E0 AC
+0x829B0,0x82738,0x824B8,じごくへの階段,지옥의 계단,translated_new_pool,11,E0 A2 DF 19 E0 9B 9C E0 9A E0 37
+0x829B4,0x82744,0x824FD,死のふち,죽음의 문,translated_new_pool,9,DF 13 DF F8 E0 9B 9C DF 7B
+0x829B8,0x8274C,0x82757,合体,합체,translated_new_pool,4,E0 86 E0 90
+0x829BC,0x82754,0x8267C,暗闇,시야 차단,translated_new_pool,9,E0 61 E0 DA 9C E0 96 E0 37
+0x829C0,0x8275C,0x8264A,人形らんぶ,인형 난무,translated_new_pool,9,E0 6A E0 8D 9C E0 3D E0 E7
+0x829C4,0x82764,0x81033,へモジー,헤모지,reused_verified_ui_translation,6,DF 9D E0 11 E0 A2
+0x829C8,0x8276C,0x82507,雷しんは,전기 파동,translated_new_pool,9,E0 CC E0 AC 9C DF A0 E0 94
+0x829CC,0x82774,0x8265E,炎しんは,불꽃 파동,translated_new_pool,9,E0 0A DF 99 9C DF A0 E0 94
+0x829D0,0x8277C,0x82640,よみのつばさ,황천 비행,translated_new_pool,9,DE FC DF 8C 9C E0 53 E0 8B
+0x829D4,0x82784,0x82668,<N:波:1>黙,마법 봉인,translated_new_pool,9,E0 9E E0 B3 9C DF 93 E0 6A
+0x829D8,0x8278C,0x82690,デス<N:卞:16>ール,죽음 회복,translated_new_pool,9,DF 13 DF F8 9C DE C7 DF 33
+0x829DC,0x82794,0x8258D,ダストルー<N:｣:11>ン,더스트 문양,translated_new_pool,11,DF D5 E0 39 E0 82 9C DF 7B DD CF
+0x829E0,0x8279C,0x82734,かみつき,물기,translated_new_pool,4,E0 4F E0 AC
+0x829E4,0x827A4,0x80E13,バーン<N:ク:12>ラウント,번 그라운드,reused_verified_ui_translation,11,DE E5 9C E0 29 E0 A6 DF FA DF 41
+0x829E8,0x827B0,0x80E1F,トータル<N:ヒ:5>ーリン<N:ク:12>,전체 회복,reused_verified_ui_translation,9,E0 CC E0 90 9C DE C7 DF 33
+0x829EC,0x827BC,0x80E29,ゲ<N:｣:11>ルフラッシュ,게일 플래시,reused_verified_ui_translation,11,E0 14 E0 6B 9C DF 9E E0 BB E0 61
+0x829F0,0x827C8,0x80E35,スロウエ<N:ネ:13>ミー,슬로우 에너미,reused_verified_ui_translation,13,DF B6 E0 D6 E0 68 9C E0 9F E0 32 E0 50
+0x829F4,0x827D4,0x80E43,メテオフ<N:｣:13>ール,별 내리기,reused_verified_ui_translation,9,DE E2 9C DF 97 E0 98 E0 AC
+0x829F8,0x827E0,0x80C96,<N:午:15>ュア,회복,reused_verified_ui_translation,4,DE C7 DF 33
+0x829FC,0x827E8,0x80E4D,デポ<N:｣:11><N:ス:15>ン,해로운 기운 제거,reused_verified_ui_translation,16,E0 88 E0 D6 DF FA 9C E0 AC DF FA 9C E0 AA DF 87
+0x82A00,0x827F0,0x80E5E,サ<N:｣:11><N:リ:12>ント,사일런트,reused_verified_ui_translation,8,E0 A5 E0 6B E0 BC E0 82
+0x82A04,0x827F8,0x80E67,リフ<N:リ:12>ッシュ,리프레시,reused_verified_ui_translation,8,E0 98 DF 9F DF D2 E0 61
+0x82A08,0x82800,0x80E70,天のさばき,하늘의 심판,reused_verified_ui_translation,11,E0 C4 DF D7 E0 9B 9C DF 25 DF 05
+0x82A0C,0x82808,0x80E7C,リ<N:ザ:8><N:リ:12>クション,부활,reused_verified_ui_translation,4,E0 0B E0 80
+0x82A10,0x82814,0x80E81,デ<N:ｲ:6>バ<N:｣:11>ト,디바이드,reused_verified_ui_translation,8,E0 A1 DF 6E E0 BD DF 41
+0x82A14,0x8281C,0x80E8A,桜花雷爆斬,토슈 비기,reused_verified_ui_translation,9,E0 7E DE DD 9C E0 53 E0 AC
+0x82A18,0x82828,0x80E94,呪縛剣,봉인검,reused_verified_ui_translation,6,DF 93 E0 6A DE F3
+0x82A1C,0x82830,0x80E9B,<N:真:2><N:空:2>斬,진공검,reused_verified_ui_translation,6,DF 10 E0 C6 DE F3
+0x82A20,0x82838,0x80EA2,<N:虎:5><N:影:1>斬,그림자검,reused_verified_ui_translation,8,E0 29 DF 3A E0 E0 DE F3
+0x82A24,0x82840,0x80EAB,戦の小太鼓,전투 큰 북,reused_verified_ui_translation,10,E0 CC E0 EF 9C DF 0A 9C DF 31
+0x82A28,0x8284C,0x80EB6,荒獅子太鼓,황사자태고,reused_verified_ui_translation,10,DE FC E0 A5 E0 E0 DF 08 E0 7F
+0x82A2C,0x82858,0x80EC1,気合いラッパ,기합 나팔,reused_verified_ui_translation,9,E0 AC E0 86 9C E0 99 DF 8B
+0x82A30,0x82860,0x80ECB,へろへろラッパ,비틀비틀 나팔,reused_verified_ui_translation,13,E0 53 DF 06 E0 53 DF 06 9C E0 99 DF 8B
+0x82A34,0x82868,0x80ED9,いやしのたてごと,치유의 하프,reused_verified_ui_translation,11,E0 B0 E0 AD E0 9B 9C E0 C4 DF 9F
+0x82A38,0x82874,0x80EE5,のろまのベース,느림의 연주,reused_verified_ui_translation,11,E0 3A DF 3A E0 9B 9C DF 1C E0 CF
+0x82A3C,0x82880,0x80EF1,い<N:駄:2>天のオカリナ,위타천 오카리나,reused_verified_ui_translation,15,E0 69 E0 7D DF 8C 9C E0 62 DF E9 E0 98 E0 99
+0x82A40,0x8288C,0x80F01,向き直りの笛,방향잡이 피리,reused_verified_ui_translation,13,E0 0F DE F8 DF F4 E0 BD 9C DF 82 E0 98
+0x82A44,0x82898,0x80F94,エクス<N:フ:11>ロージョン,대폭발,reused_verified_ui_translation,6,E0 36 DE CB E0 FA
+0x82A48,0x828A4,0x80F9B,トリーム<N:メ:6>ック,드림 노크,reused_verified_ui_translation,9,DF 41 DF 3A 9C E0 3C E0 9D
+0x82A4C,0x828B0,0x80FA5,ダ<N:｣:11>ヤモントダスト,다이아몬드 더스트,reused_verified_ui_translation,17,E0 C1 E0 BD E0 9C DF 37 DF 41 9C DF D5 E0 39 E0 82
+0x82A50,0x828BC,0x80FB7,ウ<N:｣:11>ントスラッシャー,바람 검,reused_verified_ui_translation,7,DF 6E E0 BA 9C DE F3
+0x82A54,0x828C8,0x80FC9,サンダーストーム,전기 폭풍,reused_verified_ui_translation,9,E0 CC E0 AC 9C DE CB DE C9
+0x82A58,0x828D4,0x80FEE,旋風撃蹴,회오리 차기,reused_verified_ui_translation,11,DE C7 E0 62 E0 98 9C E0 96 E0 AC
+0x82A5C,0x828DC,0x80FFA,流星爆,유성폭,reused_verified_ui_translation,6,E0 AD E0 5A DE CB
+0x82A60,0x828E4,0x81001,鬼神流<N:影:1><N:波:1>,유령 파동,reused_verified_ui_translation,9,E0 AD E0 EE 9C DF A0 E0 94
+0x82A64,0x828F0,0x8100B,滅掌烈破,멸장열파,reused_verified_ui_translation,8,E0 4D E0 E1 E0 B2 DF A0
+0x82A6C,0x82904,0x826C0,召喚,불러내기,translated_new_pool,8,E0 0A E0 25 DF 97 E0 AC
+0x82A70,0x8290C,0x80F0F,調ベる,조사,reused_verified_ui_translation,4,E0 A4 E0 A5
+0x82A74,0x82914,0x80C96,回復,회복,reused_verified_ui_translation,4,DE C7 DF 33
+0x82A78,0x82918,0x81049,<N:ｴ:24>か造り,다리 만들기,reused_verified_ui_translation,11,E0 C1 E0 98 9C E0 49 E0 3B E0 AC
+0x82A7C,0x82920,0x81055,風雷破,바람 전기,reused_verified_ui_translation,9,DF 6E E0 BA 9C E0 CC E0 AC
+0x82A80,0x82928,0x8105F,乗り移り,몸 가져오기,reused_verified_ui_translation,11,DF 36 9C E0 C0 DF 14 E0 62 E0 AC
+0x82A84,0x82930,0x810BB,やる気なし,기운 없음,reused_verified_ui_translation,9,E0 AC DF FA 9C E0 F1 DF F8

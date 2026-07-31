@@ -1,0 +1,12 @@
+PASS
+output=E:\korean\03_output\story_bulk_s3011_s3022_sc011_s2041_s3031_s4041_cursor_fixed_full_patch_only.zip
+sha256=6A2550AC302945B9A9DF1DD08E0B5D6F64192109DE0926E0140585953AA495A9
+entries=36
+manifest_blocks=45
+batch_glyphs=68
+extended_glyphs=261
+cursor_rectangle=unchanged
+base_nonfont_files=unchanged
+changed_bytes[31/S3011.DAT]=42
+changed_bytes[31/S3022.DAT]=1032
+changed_bytes[C1/SC011.DAT]=191

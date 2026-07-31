@@ -6,10 +6,24 @@ ex/
 # Extracted work trees and packaged image workspaces are too large and may
 # contain original game assets.
 01_work/*
-!01_work/analysis/
-!01_work/analysis/*.csv
-!01_work/analysis/*.md
 !01_work/*.csv
+!01_work/analysis/
+
+# Inside 01_work/analysis only text-based records are tracked. Screenshots,
+# VRAM dumps and raw frame captures stay local; they are large and add nothing
+# that the reports do not already state.
+01_work/analysis/**/*.png
+01_work/analysis/**/*.jpg
+01_work/analysis/**/*.jpeg
+01_work/analysis/**/*.bmp
+01_work/analysis/**/*.pbm
+01_work/analysis/**/*.bgra
+01_work/analysis/**/*.raw
+01_work/analysis/**/*.sav
+
+# Scanned pages of a commercial game magazine. Never publish these.
+# The extracted terminology lives in 05_docs/terminology_decisions.csv instead.
+01_work/analysis/guide_scan/
 
 # Generated patch/output files. Recreate these from scripts/manifests.
 03_output/
@@ -19,7 +33,10 @@ ex/
 06_tools/
 
 # Locally saved third-party walkthrough pages and extracted scan images.
+# These are scans of a commercial game magazine and must never be published.
+# The extracted terminology lives in 05_docs/terminology_decisions.csv instead.
 05_docs/공략/
+05_docs/참고사항/
 
 # Game/media/binary artifacts.
 *.zip

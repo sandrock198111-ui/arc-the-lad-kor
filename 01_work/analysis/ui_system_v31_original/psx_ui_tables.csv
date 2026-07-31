@@ -1,0 +1,504 @@
+﻿table_key,table_label,index,pointer_offset,string_offset,encoded_length,slot_size,free_bytes_in_slot,japanese
+equipment_name,장비 이름,0,0x804A4,0x80224,5,8,2,炎の守り
+equipment_name,장비 이름,1,0x804A8,0x8022C,6,8,1,氷の守り
+equipment_name,장비 이름,2,0x804AC,0x80234,8,12,3,アンチへモジー
+equipment_name,장비 이름,3,0x804B0,0x80240,8,12,3,いやしのお守り
+equipment_name,장비 이름,4,0x804B4,0x8024C,6,8,1,きぬのおび
+equipment_name,장비 이름,5,0x804B8,0x80254,8,12,3,魔法のカート
+equipment_name,장비 이름,6,0x804BC,0x80260,10,12,1,スリー<N:フ:11><N:リ:12>スカート
+equipment_name,장비 이름,7,0x804C0,0x8026C,7,8,0,パワーアーム
+equipment_name,장비 이름,8,0x804C4,0x80274,9,12,2,カ<N:｣:11><N:ザ:8>ー<N:ク:12>ローフ
+equipment_name,장비 이름,9,0x804C8,0x80280,5,8,2,幻のこて
+equipment_name,장비 이름,10,0x804CC,0x80288,5,8,2,サン<N:ク:12>ラス
+equipment_name,장비 이름,11,0x804D0,0x80290,9,12,2,当て方の絵巻
+equipment_name,장비 이름,12,0x804D4,0x8029C,10,12,1,ぶん投げの絵巻
+equipment_name,장비 이름,13,0x804D8,0x802A8,6,8,1,神のこぶし
+equipment_name,장비 이름,14,0x804DC,0x802B0,10,12,1,バ<N:｣:11>オ<N:リ:12>ット<N:リ:12>ーサー
+equipment_name,장비 이름,15,0x804E0,0x802BC,6,8,1,<N:ネ:13>ック<N:リ:12>ス
+equipment_name,장비 이름,16,0x804E4,0x802C4,4,8,3,じ<N:ぃ:20>す
+equipment_name,장비 이름,17,0x804E8,0x802CC,7,8,0,長老のはちまき
+equipment_name,장비 이름,18,0x804EC,0x802D4,10,12,1,しつ<N:ぷ:23>うのバンダナ
+equipment_name,장비 이름,19,0x804F0,0x802E0,9,12,2,<N:ハ:12><N:｣:11>パーフーツ
+equipment_name,장비 이름,20,0x804F4,0x802EC,8,12,3,まにあわせのくつ
+equipment_name,장비 이름,21,0x804F8,0x802F8,6,8,1,フ<N:リ:12>ス<N:リ:12>ット
+equipment_name,장비 이름,22,0x804FC,0x80300,6,8,1,フ<N:リ:12>ス<N:リ:12>ット
+equipment_name,장비 이름,23,0x80500,0x80308,9,12,2,技のフ<N:リ:12>ス<N:リ:12>ット
+equipment_name,장비 이름,24,0x80504,0x80314,8,12,3,女神のいのり
+equipment_name,장비 이름,25,0x80508,0x80320,7,8,0,パワーリスト
+equipment_name,장비 이름,26,0x8050C,0x80328,8,12,3,デ<N:ｲ:6>ールの<N:牙:4>
+equipment_name,장비 이름,27,0x80510,0x80334,7,8,0,幻獣の<N:牙:4>
+equipment_name,장비 이름,28,0x80514,0x8033C,9,12,2,しおかぜの調ベ
+equipment_name,장비 이름,29,0x80518,0x80348,4,8,3,<N:貝:2>がら
+equipment_name,장비 이름,30,0x8051C,0x80350,8,12,3,一角獣の角
+equipment_name,장비 이름,31,0x80520,0x8035C,8,12,3,<N:悲:5>劇のめがね
+equipment_name,장비 이름,32,0x80524,0x80368,2,4,1,鏡
+equipment_name,장비 이름,33,0x80528,0x8036C,9,12,2,古代の<N:ｴ:24>びわ
+equipment_name,장비 이름,34,0x8052C,0x80378,7,8,0,幻の<N:ｴ:24>びわ
+equipment_name,장비 이름,35,0x80530,0x80380,9,12,2,魔導の<N:ｴ:24>びわ
+equipment_name,장비 이름,36,0x80534,0x8038C,9,12,2,おもちゃの<N:ｴ:24>びわ
+equipment_name,장비 이름,37,0x80538,0x80398,9,12,2,<N:毒:1>よけの<N:ｴ:24>びわ
+equipment_name,장비 이름,38,0x8053C,0x803A4,5,8,2,幻の盾
+equipment_name,장비 이름,39,0x80540,0x803AC,6,8,1,戦士の守り
+equipment_name,장비 이름,40,0x80544,0x803B4,5,8,2,長老の盾
+equipment_name,장비 이름,41,0x80548,0x803BC,6,8,1,強力な<N:杖:1>
+equipment_name,장비 이름,42,0x8054C,0x803C4,9,12,2,じごくのスニー<N:フ:11>
+equipment_name,장비 이름,43,0x80550,0x803D0,5,8,2,王様の像
+equipment_name,장비 이름,44,0x80554,0x803D8,5,8,2,たかの像
+equipment_name,장비 이름,45,0x80558,0x803E0,6,8,1,まがいの像
+equipment_name,장비 이름,46,0x8055C,0x803E8,4,8,3,たん剣
+equipment_name,장비 이름,47,0x80560,0x803F0,5,8,2,幻の剣
+equipment_name,장비 이름,48,0x80564,0x803F8,10,12,1,<N:リ:12><N:｣:11>ラのかみか<N:ざ:2>り
+equipment_name,장비 이름,49,0x80568,0x80404,7,8,0,乱れる宝石
+equipment_name,장비 이름,50,0x8056C,0x8040C,8,12,3,アーマーストーン
+equipment_name,장비 이름,51,0x80570,0x80418,10,12,1,ロマンシン<N:ク:12>ストーン
+equipment_name,장비 이름,52,0x80574,0x80424,10,12,1,ロマンシン<N:ク:12>ストーン
+equipment_name,장비 이름,53,0x80578,0x80430,10,12,1,ロマンシン<N:ク:12>ストーン
+equipment_name,장비 이름,54,0x8057C,0x8043C,10,12,1,ロマンシン<N:ク:12>ストーン
+equipment_name,장비 이름,55,0x80580,0x80448,8,12,3,太陽の<N:げ:26>うし
+equipment_name,장비 이름,56,0x80584,0x80454,6,8,1,おし花の本
+equipment_name,장비 이름,57,0x80588,0x8045C,9,12,2,クラウ<N:ｲ:6>スの本
+equipment_name,장비 이름,58,0x8058C,0x80468,6,8,1,音楽集
+equipment_name,장비 이름,59,0x80590,0x80470,8,12,3,ラークの紋章
+equipment_name,장비 이름,60,0x80594,0x8047C,9,12,2,<N:ｴ:24>かりの紋章
+equipment_name,장비 이름,61,0x80598,0x80488,8,12,3,フ<N:リ:12><N:｣:11>の紋章
+equipment_name,장비 이름,62,0x8059C,0x80494,6,8,1,勇者の証
+equipment_name,장비 이름,63,0x805A0,0x8049C,5,8,2,？？？？？
+equipment_description,장비 설명,0,0x80A94,0x805A4,14,16,1,炎系の攻撃に強くなります
+equipment_description,장비 설명,1,0x80A98,0x805B4,14,16,1,水系の攻撃に強くなります
+equipment_description,장비 설명,2,0x80A9C,0x805C4,14,16,1,<N:ｌ:5>へモジーへを回避します
+equipment_description,장비 설명,3,0x80AA0,0x805D4,21,24,2,自分の<N:Π:10><N:Ｐ:10>の回復量が大きくなります
+equipment_description,장비 설명,4,0x80AA4,0x805EC,20,24,3,戦闘で入る経験値が2倍になります
+equipment_description,장비 설명,5,0x80AA8,0x80604,13,16,2,魔力が10<N:X:20>上昇します
+equipment_description,장비 설명,6,0x80AAC,0x80614,12,16,3,<N:ｌ:5><N:眠:5>りへを回避します
+equipment_description,장비 설명,7,0x80AB0,0x80624,23,24,0,防御力が30<N:X:20>上昇します（チョン<N:力:5>ラ）
+equipment_description,장비 설명,8,0x80AB4,0x8063C,17,20,2,<N:ｌ:5>投げるへが<N:リ:12>ベル1になります
+equipment_description,장비 설명,9,0x80AB8,0x80650,13,16,2,攻撃力が<N:ｃ:12>0<N:X:20>上昇します
+equipment_description,장비 설명,10,0x80ABC,0x80660,13,16,2,<N:ｌ:5>暗闇へを回避します
+equipment_description,장비 설명,11,0x80AC0,0x80670,19,20,0,攻撃が<N:非:1>常に当たりやすくなります
+equipment_description,장비 설명,12,0x80AC4,0x80684,20,24,3,<N:ｌ:5>投げるへが<N:ｌ:5>ぶん投げるへになります
+equipment_description,장비 설명,13,0x80AC8,0x8069C,17,20,2,攻撃が特定の敵に強くなります
+equipment_description,장비 설명,14,0x80ACC,0x806B0,17,20,2,攻撃が必す当たるようになります
+equipment_description,장비 설명,15,0x80AD0,0x806C4,26,28,1,<N:リ:12>ベルアッ<N:フ:11>時に<N:Π:10><N:Ｐ:10>の伸びが大きくなります
+equipment_description,장비 설명,16,0x80AD4,0x806E0,22,24,1,魔力が30<N:X:20>上昇します （<N:ニ:13>ーゲン）
+equipment_description,장비 설명,17,0x80AD8,0x806F8,14,16,1,攻撃が当たりやすくなります
+equipment_description,장비 설명,18,0x80ADC,0x80708,14,16,1,すばやさが10<N:X:20>上昇します
+equipment_description,장비 설명,19,0x80AE0,0x80718,14,16,1,すばやさが30<N:X:20>上昇します
+equipment_description,장비 설명,20,0x80AE4,0x80728,18,20,1,<N:ｌ:5>ジャン<N:フ:11>へが<N:リ:12>ベル1になります
+equipment_description,장비 설명,21,0x80AE8,0x8073C,11,12,0,反撃しやすくなります
+equipment_description,장비 설명,22,0x80AEC,0x80748,19,20,0,<N:ｌ:5>受け取るへが<N:リ:12>ベル1になります
+equipment_description,장비 설명,23,0x80AF0,0x8075C,22,24,1,<N:ｌ:5>受け取るへが<N:ｌ:5>投げ返すへになります
+equipment_description,장비 설명,24,0x80AF4,0x80774,21,24,2,半分の<N:∪:20><N:Ｐ:10>で能力を使用できます
+equipment_description,장비 설명,25,0x80AF8,0x8078C,13,16,2,攻撃力が30<N:X:20>上昇します
+equipment_description,장비 설명,26,0x80AFC,0x8079C,21,24,2,反撃ダメージが大きくなります（<N:｣:11>ー<N:力:5>）
+equipment_description,장비 설명,27,0x80B00,0x807B4,13,16,2,効果はわかつていません
+equipment_description,장비 설명,28,0x80B04,0x807C4,26,28,1,行動する度まわりの<N:午:15>ャラを回復します（ククル）
+equipment_description,장비 설명,29,0x80B08,0x807E0,18,20,1,敵がア<N:｣:11>テムを落としやすくなります
+equipment_description,장비 설명,30,0x80B0C,0x807F4,17,20,2,敵を倒すとほ<N:げ:26>ア<N:｣:11>テムが出ます
+equipment_description,장비 설명,31,0x80B10,0x80808,13,16,2,効果はわかつていません
+equipment_description,장비 설명,32,0x80B14,0x80818,12,16,3,<N:ｌ:5>石化へを回避します
+equipment_description,장비 설명,33,0x80B18,0x80828,19,20,0,効果はわかつていません （アーク）
+equipment_description,장비 설명,34,0x80B1C,0x8083C,13,16,2,魔力が<N:ｃ:12>0<N:X:20>上昇します
+equipment_description,장비 설명,35,0x80B20,0x8084C,13,16,2,魔力が30<N:X:20>上昇します
+equipment_description,장비 설명,36,0x80B24,0x8085C,31,32,0,<N:ｌ:5>向き直りの笛への効果が<N:∪:20><N:∧:11><N:Ｐ:10>全体（ポニ）
+equipment_description,장비 설명,37,0x80B28,0x8087C,11,12,0,<N:ｌ:5><N:毒:1>へを回避します
+equipment_description,장비 설명,38,0x80B2C,0x80888,15,16,0,防御力が<N:ｃ:12>0<N:X:20>上昇します
+equipment_description,장비 설명,39,0x80B30,0x80898,15,16,0,防御力が30<N:X:20>上昇します
+equipment_description,장비 설명,40,0x80B34,0x808A8,12,16,3,防御しやすくなります
+equipment_description,장비 설명,41,0x80B38,0x808B8,21,24,2,攻撃力が<N:７:11>0<N:X:20>上昇します（<N:ニ:13>ーゲン）
+equipment_description,장비 설명,42,0x80B3C,0x808D0,27,28,0,<N:ｌ:5>心<N:眼:3>法への<N:乾:16>囲が広くなります（<N:｣:11>ー<N:力:5>）
+equipment_description,장비 설명,43,0x80B40,0x808EC,31,32,0,召喚<N:午:15>ャラの経験値が自分に入ります（チョン<N:力:5>ラ）
+equipment_description,장비 설명,44,0x80B44,0x8090C,13,16,2,<N:ｌ:5>沈黙へを回避します
+equipment_description,장비 설명,45,0x80B48,0x8091C,13,16,2,攻撃を避けやすくなります
+equipment_description,장비 설명,46,0x80B4C,0x8092C,13,16,2,攻撃力が10<N:X:20>上昇します
+equipment_description,장비 설명,47,0x80B50,0x8093C,24,28,3,<N:与:3>えるダメージの当たりはすれが大きくなります
+equipment_description,장비 설명,48,0x80B54,0x80958,29,32,2,復活魔法で<N:Π:10><N:Ｐ:10>最大で復活します（ククル）
+equipment_description,장비 설명,49,0x80B58,0x80978,15,16,0,当たりはすれが大きくなります
+equipment_description,장비 설명,50,0x80B5C,0x80988,15,16,0,防御力が10<N:X:20>上昇します
+equipment_description,장비 설명,51,0x80B60,0x80998,13,16,2,効果はわかつていません
+equipment_description,장비 설명,52,0x80B64,0x809A8,13,16,2,効果はわかつていません
+equipment_description,장비 설명,53,0x80B68,0x809B8,13,16,2,効果はわかつていません
+equipment_description,장비 설명,54,0x80B6C,0x809C8,13,16,2,効果はわかつていません
+equipment_description,장비 설명,55,0x80B70,0x809D8,18,20,1,行動するたびに<N:Π:10><N:Ｐ:10>が回復します
+equipment_description,장비 설명,56,0x80B74,0x809EC,25,28,2,攻撃が<N:非:1>常に当たりやすくなります（トッシュ）
+equipment_description,장비 설명,57,0x80B78,0x80A08,19,20,0,全ステータスしょう害を回避します
+equipment_description,장비 설명,58,0x80B7C,0x80A1C,18,20,1,魔力が30<N:X:20>上昇します （ポニ）
+equipment_description,장비 설명,59,0x80B80,0x80A30,12,16,3,<N:ｌ:5>マ<N:ヒ:5>へを回避します
+equipment_description,장비 설명,60,0x80B84,0x80A40,30,32,1,桜花雷爆斬でマ<N:ヒ:5>させることができます（トッシュ）
+equipment_description,장비 설명,61,0x80B88,0x80A60,17,20,2,攻撃が特定の敵に強くなります
+equipment_description,장비 설명,62,0x80B8C,0x80A74,23,24,0,行動するごとに<N:∪:20><N:Ｐ:10>が回復します（アーク）
+equipment_description,장비 설명,63,0x80B90,0x80A8C,5,8,2,？？？？？
+consumable_name,소비 아이템 이름,0,0x80C9C,0x80B94,4,8,3,ねばねば
+consumable_name,소비 아이템 이름,1,0x80CA0,0x80B9C,7,8,0,やる気<N:г:23>リー
+consumable_name,소비 아이템 이름,2,0x80CA4,0x80BA4,9,12,2,みなぎる果実
+consumable_name,소비 아이템 이름,3,0x80CA8,0x80BB0,7,8,0,回復果物
+consumable_name,소비 아이템 이름,4,0x80CAC,0x80BB8,7,8,0,しびれるりんご
+consumable_name,소비 아이템 이름,5,0x80CB0,0x80BC0,1,4,2,石
+consumable_name,소비 아이템 이름,6,0x80CB4,0x80BC4,5,8,2,<N:リ:12>ニの草
+consumable_name,소비 아이템 이름,7,0x80CB8,0x80BCC,4,8,3,薬草
+consumable_name,소비 아이템 이름,8,0x80CBC,0x80BD4,4,8,3,<N:毒:1>薬
+consumable_name,소비 아이템 이름,9,0x80CC0,0x80BDC,5,8,2,ルウの薬
+consumable_name,소비 아이템 이름,10,0x80CC4,0x80BE4,7,8,0,すばやさの薬
+consumable_name,소비 아이템 이름,11,0x80CC8,0x80BEC,8,12,3,小さい爆弾
+consumable_name,소비 아이템 이름,12,0x80CCC,0x80BF8,7,8,0,大きい爆弾
+consumable_name,소비 아이템 이름,13,0x80CD0,0x80C00,6,8,1,万能薬
+consumable_name,소비 아이템 이름,14,0x80CD4,0x80C08,2,4,1,聖水
+consumable_name,소비 아이템 이름,15,0x80CD8,0x80C0C,7,8,0,復活の薬
+consumable_name,소비 아이템 이름,16,0x80CDC,0x80C14,4,8,3,攻撃瓶
+consumable_name,소비 아이템 이름,17,0x80CE0,0x80C1C,5,8,2,<N:眠:5>り玉
+consumable_name,소비 아이템 이름,18,0x80CE4,0x80C24,6,8,1,弱りの玉
+consumable_name,소비 아이템 이름,19,0x80CE8,0x80C2C,6,8,1,ちからの実
+consumable_name,소비 아이템 이름,20,0x80CEC,0x80C34,5,8,2,パロの実
+consumable_name,소비 아이템 이름,21,0x80CF0,0x80C3C,9,12,2,いのちの木の実
+consumable_name,소비 아이템 이름,22,0x80CF4,0x80C48,6,8,1,魔力の葉
+consumable_name,소비 아이템 이름,23,0x80CF8,0x80C50,6,8,1,魔力の泉
+consumable_name,소비 아이템 이름,24,0x80CFC,0x80C58,7,8,0,目つぶしの草
+consumable_name,소비 아이템 이름,25,0x80D00,0x80C60,5,8,2,苦い葉
+consumable_name,소비 아이템 이름,26,0x80D04,0x80C68,7,8,0,石解け<N:ハ:12>リ
+consumable_name,소비 아이템 이름,27,0x80D08,0x80C70,8,12,3,痛烈な<N:ハ:12>リ
+consumable_name,소비 아이템 이름,28,0x80D0C,0x80C7C,7,8,0,召喚のつ<N:げ:26>
+consumable_name,소비 아이템 이름,29,0x80D10,0x80C84,5,8,2,？？？？？
+consumable_name,소비 아이템 이름,30,0x80D14,0x80C8C,5,8,2,？？？？？
+consumable_name,소비 아이템 이름,31,0x80D18,0x80C94,5,8,2,？？？？？
+consumable_description,소비 아이템 설명,0,0x80F14,0x80D1C,14,16,1,一時的にすばやさを下げます
+consumable_description,소비 아이템 설명,1,0x80F18,0x80D2C,15,16,0,<N:ｌ:5>へモジーへを元に戻します
+consumable_description,소비 아이템 설명,2,0x80F1C,0x80D3C,11,12,0,<N:リ:12>ベルアッ<N:フ:11>します
+consumable_description,소비 아이템 설명,3,0x80F20,0x80D48,17,20,2,<N:Π:10><N:Ｐ:10>が<N:ｃ:9>0ポ<N:｣:11>ント回復します
+consumable_description,소비 아이템 설명,4,0x80F24,0x80D5C,12,16,3,しびれて動けなくなります
+consumable_description,소비 아이템 설명,5,0x80F28,0x80D6C,14,16,1,ぶつけてダメージを<N:与:3>えます
+consumable_description,소비 아이템 설명,6,0x80F2C,0x80D7C,11,12,0,防御力が上がります
+consumable_description,소비 아이템 설명,7,0x80F30,0x80D88,17,20,2,<N:Π:10><N:Ｐ:10>が20ポ<N:｣:11>ント回復します
+consumable_description,소비 아이템 설명,8,0x80F34,0x80D9C,10,12,1,<N:毒:1>を<N:振:2>りまきます
+consumable_description,소비 아이템 설명,9,0x80F38,0x80DA8,12,16,3,しびれを取りのぞきます
+consumable_description,소비 아이템 설명,10,0x80F3C,0x80DB8,14,16,1,一時的にすばやさを上げます
+consumable_description,소비 아이템 설명,11,0x80F40,0x80DC8,6,8,1,爆発します
+consumable_description,소비 아이템 설명,12,0x80F44,0x80DD0,6,8,1,爆発します
+consumable_description,소비 아이템 설명,13,0x80F48,0x80DD8,22,24,1,ほとんどのステータス傷害を回復します
+consumable_description,소비 아이템 설명,14,0x80F4C,0x80DF0,11,12,0,<N:毒:1>を取りのぞきます
+consumable_description,소비 아이템 설명,15,0x80F50,0x80DFC,21,24,2,戦闘不能<N:午:15>ャラクタを復活させます
+consumable_description,소비 아이템 설명,16,0x80F54,0x80E14,13,16,2,一時的に攻撃力を上げます
+consumable_description,소비 아이템 설명,17,0x80F58,0x80E24,6,8,1,<N:眠:5>らせます
+consumable_description,소비 아이템 설명,18,0x80F5C,0x80E2C,19,20,0,一時的に攻撃力・防御力を下げます
+consumable_description,소비 아이템 설명,19,0x80F60,0x80E40,9,12,2,攻撃力が上がります
+consumable_description,소비 아이템 설명,20,0x80F64,0x80E4C,10,12,1,すばやさが上がります
+consumable_description,소비 아이템 설명,21,0x80F68,0x80E58,21,24,2,<N:Π:10><N:Ｐ:10>の最大値が2ポ<N:｣:11>ント上がります
+consumable_description,소비 아이템 설명,22,0x80F6C,0x80E70,9,12,2,魔力が上がります
+consumable_description,소비 아이템 설명,23,0x80F70,0x80E7C,21,24,2,<N:∪:20><N:Ｐ:10>の最大値が2ポ<N:｣:11>ント上がります
+consumable_description,소비 아이템 설명,24,0x80F74,0x80E94,17,20,2,<N:振:2>りまくと、目が見えなくなります
+consumable_description,소비 아이템 설명,25,0x80F78,0x80EA8,15,16,0,一時的に防御力を上げます
+consumable_description,소비 아이템 설명,26,0x80F7C,0x80EB8,12,16,3,石化から元に戻ります
+consumable_description,소비 아이템 설명,27,0x80F80,0x80EC8,22,24,1,封じられた魔法が使えるようになります
+consumable_description,소비 아이템 설명,28,0x80F84,0x80EE0,26,28,1,チョン<N:力:5>ラがモンスターを召喚するのに使います
+consumable_description,소비 아이템 설명,29,0x80F88,0x80EFC,5,8,2,？？？？？
+consumable_description,소비 아이템 설명,30,0x80F8C,0x80F04,5,8,2,？？？？？
+consumable_description,소비 아이템 설명,31,0x80F90,0x80F0C,5,8,2,？？？？？
+skill_name,기술 이름,0,0x811C0,0x80F94,0,4,3,
+skill_name,기술 이름,1,0x811C4,0x80F98,8,12,3,バーン<N:ク:12>ラウント
+skill_name,기술 이름,2,0x811C8,0x80FA4,10,12,1,トータル<N:ヒ:5>ーリン<N:ク:12>
+skill_name,기술 이름,3,0x811CC,0x80FB0,9,12,2,ゲ<N:｣:11>ルフラッシュ
+skill_name,기술 이름,4,0x811D0,0x80FBC,10,12,1,スロウエ<N:ネ:13>ミー
+skill_name,기술 이름,5,0x811D4,0x80FC8,8,12,3,メテオフ<N:｣:13>ール
+skill_name,기술 이름,6,0x811D8,0x80FD4,4,8,3,<N:午:15>ュア
+skill_name,기술 이름,7,0x811DC,0x80FDC,6,8,1,デポ<N:｣:11><N:ス:15>ン
+skill_name,기술 이름,8,0x811E0,0x80FE4,5,8,2,サ<N:｣:11><N:リ:12>ント
+skill_name,기술 이름,9,0x811E4,0x80FEC,6,8,1,リフ<N:リ:12>ッシュ
+skill_name,기술 이름,10,0x811E8,0x80FF4,6,8,1,天のさばき
+skill_name,기술 이름,11,0x811EC,0x80FFC,8,12,3,リ<N:ザ:8><N:リ:12>クション
+skill_name,기술 이름,12,0x811F0,0x81008,6,8,1,デ<N:ｲ:6>バ<N:｣:11>ト
+skill_name,기술 이름,13,0x811F4,0x81010,10,12,1,桜花雷爆斬
+skill_name,기술 이름,14,0x811F8,0x8101C,6,8,1,呪縛剣
+skill_name,기술 이름,15,0x811FC,0x81024,6,8,1,<N:真:2><N:空:2>斬
+skill_name,기술 이름,16,0x81200,0x8102C,6,8,1,<N:虎:5><N:影:1>斬
+skill_name,기술 이름,17,0x81204,0x81034,8,12,3,戦の小太鼓
+skill_name,기술 이름,18,0x81208,0x81040,9,12,2,荒獅子太鼓
+skill_name,기술 이름,19,0x8120C,0x8104C,7,8,0,気合いラッパ
+skill_name,기술 이름,20,0x81210,0x81054,7,8,0,へろへろラッパ
+skill_name,기술 이름,21,0x81214,0x8105C,8,12,3,いやしのたてごと
+skill_name,기술 이름,22,0x81218,0x81068,8,12,3,のろまのベース
+skill_name,기술 이름,23,0x8121C,0x81074,10,12,1,い<N:駄:2>天のオカリナ
+skill_name,기술 이름,24,0x81220,0x81080,9,12,2,向き直りの笛
+skill_name,기술 이름,25,0x81224,0x8108C,11,12,0,エクス<N:フ:11>ロージョン
+skill_name,기술 이름,26,0x81228,0x81098,8,12,3,トリーム<N:メ:6>ック
+skill_name,기술 이름,27,0x8122C,0x810A4,9,12,2,ダ<N:｣:11>ヤモントダスト
+skill_name,기술 이름,28,0x81230,0x810B0,10,12,1,ウ<N:｣:11>ントスラッシャー
+skill_name,기술 이름,29,0x81234,0x810BC,9,12,2,<N:ヒ:5>ートウ<N:｣:13>ール
+skill_name,기술 이름,30,0x81238,0x810C8,8,12,3,サンダーストーム
+skill_name,기술 이름,31,0x8123C,0x810D4,5,8,2,テ<N:リ:12>ポート
+skill_name,기술 이름,32,0x81240,0x810DC,6,8,1,心<N:眼:3>法
+skill_name,기술 이름,33,0x81244,0x810E4,8,12,3,<N:退:3>魔光弾
+skill_name,기술 이름,34,0x81248,0x810F0,6,8,1,旋風撃蹴
+skill_name,기술 이름,35,0x8124C,0x810F8,6,8,1,流星爆
+skill_name,기술 이름,36,0x81250,0x81100,10,12,1,鬼神流<N:影:1><N:波:1>
+skill_name,기술 이름,37,0x81254,0x8110C,8,12,3,滅掌烈破
+skill_name,기술 이름,38,0x81258,0x81118,5,8,2,<N:ゲ:16>ラック
+skill_name,기술 이름,39,0x8125C,0x81120,4,8,3,モフリー
+skill_name,기술 이름,40,0x81260,0x81128,4,8,3,フウジン
+skill_name,기술 이름,41,0x81264,0x81130,4,8,3,ラ<N:｣:11>ジン
+skill_name,기술 이름,42,0x81268,0x81138,5,8,2,へモジー
+skill_name,기술 이름,43,0x8126C,0x81140,3,4,0,オトン
+skill_name,기술 이름,44,0x81270,0x81144,5,8,2,調ベる
+skill_name,기술 이름,45,0x81274,0x8114C,3,4,0,ちょこ
+skill_name,기술 이름,46,0x81278,0x81150,3,4,0,回復
+skill_name,기술 이름,47,0x8127C,0x81154,6,8,1,<N:ｴ:24>か造り
+skill_name,기술 이름,48,0x81280,0x8115C,5,8,2,風雷破
+skill_name,기술 이름,49,0x81284,0x81164,5,8,2,風雷破
+skill_name,기술 이름,50,0x81288,0x8116C,6,8,1,乗り移り
+skill_name,기술 이름,51,0x8128C,0x81174,10,12,1,バク<N:リ:12>ツ手裏剣
+skill_name,기술 이름,52,0x81290,0x81180,3,4,0,自爆
+skill_name,기술 이름,53,0x81294,0x81184,10,12,1,ジ<N:ニ:13>クへの階段
+skill_name,기술 이름,54,0x81298,0x81190,4,8,3,4方向
+skill_name,기술 이름,55,0x8129C,0x81198,5,8,2,炎雷崩
+skill_name,기술 이름,56,0x812A0,0x811A0,8,12,3,ダスト・ルー<N:｣:11>ン
+skill_name,기술 이름,57,0x812A4,0x811AC,8,12,3,ヨミのつばさ
+skill_name,기술 이름,58,0x812A8,0x811B8,5,8,2,やる気なし
+skill_description,기술 설명,0,0x81708,0x812AC,0,4,3,
+skill_description,기술 설명,1,0x8170C,0x812B0,22,24,1,ようがんを発生させ敵にダメージを<N:与:3>えます
+skill_description,기술 설명,2,0x81710,0x812C8,20,24,3,ステ<N:｣:11>タス傷害と体力を回復します
+skill_description,기술 설명,3,0x81714,0x812E0,23,24,0,いくうかんからの攻撃で敵にダメージを<N:与:3>えます
+skill_description,기술 설명,4,0x81718,0x812F8,12,16,3,敵の素早さを下げます
+skill_description,기술 설명,5,0x8171C,0x81308,25,28,2,いんせきが落下しまわりの敵にダメージを<N:与:3>えます
+skill_description,기술 설명,6,0x81720,0x81324,10,12,1,体力を回復します
+skill_description,기술 설명,7,0x81724,0x81330,10,12,1,<N:毒:1>を消しさります
+skill_description,기술 설명,8,0x81728,0x8133C,15,16,0,敵の魔法を封じ込めます
+skill_description,기술 설명,9,0x8172C,0x8134C,16,20,3,ステ<N:｣:11>タス傷害を回復します
+skill_description,기술 설명,10,0x81730,0x81360,29,32,2,天使が画面外に飛んでいき<N:リ:12>ー<N:ザ:8>ーで攻撃します
+skill_description,기술 설명,11,0x81734,0x81380,21,24,2,戦闘不能になつた味方を呼び戻せます
+skill_description,기술 설명,12,0x81738,0x81398,21,24,2,敵の体力をすいとり味方に分け<N:与:3>えます
+skill_description,기술 설명,13,0x8173C,0x813B0,20,24,3,敵一体に必殺の剣で斬りつけます
+skill_description,기술 설명,14,0x81740,0x813C8,9,12,2,敵をマ<N:ヒ:5>させます
+skill_description,기술 설명,15,0x81744,0x813D4,15,16,0,2ます先の敵を斬りつけます
+skill_description,기술 설명,16,0x81748,0x813E4,21,24,2,敵に向かつて走り込んで斬りつけます
+skill_description,기술 설명,17,0x8174C,0x813FC,12,16,3,味方の攻撃力を上げます
+skill_description,기술 설명,18,0x81750,0x8140C,15,16,0,<N:波:1>動<N:リ:12>ー<N:ザ:8>ー弾を撃ちます
+skill_description,기술 설명,19,0x81754,0x8141C,15,16,0,<N:遠:1>くの敵を気合で攻撃します
+skill_description,기술 설명,20,0x81758,0x8142C,18,20,1,一度にたくさんの爆弾を撃ちます
+skill_description,기술 설명,21,0x8175C,0x81440,14,16,1,味方の体力を回復します
+skill_description,기술 설명,22,0x81760,0x81450,11,12,0,敵のすばやさを下げます
+skill_description,기술 설명,23,0x81764,0x8145C,13,16,2,味方のすばやさを上げます
+skill_description,기술 설명,24,0x81768,0x8146C,23,24,0,全員がポニと同じ方向に向きを変えます
+skill_description,기술 설명,25,0x8176C,0x81484,22,24,1,すごい炎で敵をつつみこみダメージを<N:与:3>えます
+skill_description,기술 설명,26,0x81770,0x8149C,8,12,3,敵を<N:眠:5>らせます
+skill_description,기술 설명,27,0x81774,0x814A8,24,28,3,すごいふぶきを起こして敵にダメージを<N:与:3>えます
+skill_description,기술 설명,28,0x81778,0x814C4,22,24,1,すごい風を起こして敵にダメージを<N:与:3>えます
+skill_description,기술 설명,29,0x8177C,0x814DC,14,16,1,炎のかたまりを作りだします
+skill_description,기술 설명,30,0x81780,0x814EC,23,24,0,すごい雷を落として敵にダメージを<N:与:3>えます
+skill_description,기술 설명,31,0x81784,0x81504,20,24,3,まわりの味方を連れてテ<N:リ:12>ポートします
+skill_description,기술 설명,32,0x81788,0x8151C,14,16,1,敵<N:午:15>ャラクタをロックします
+skill_description,기술 설명,33,0x8178C,0x8152C,30,32,1,心<N:眼:3>法でロックした敵に対して光弾を撃ち込みます
+skill_description,기술 설명,34,0x81790,0x8154C,22,24,1,自分のまわりにいる敵<N:午:15>ャラクタを攻撃します
+skill_description,기술 설명,35,0x81794,0x81564,24,28,3,たつまきで敵をすいあげて地上にたたき落とします
+skill_description,기술 설명,36,0x81798,0x81580,20,24,3,自分の残像を敵に向かつてぶつけます
+skill_description,기술 설명,37,0x8179C,0x81598,23,24,0,自分よりある程度弱い敵を消し去ります
+skill_description,기술 설명,38,0x817A0,0x815B0,15,16,0,<N:ｌ:5><N:ゲ:16>ラックへを召喚します
+skill_description,기술 설명,39,0x817A4,0x815C0,14,16,1,<N:ｌ:5>モフリーへを召喚します
+skill_description,기술 설명,40,0x817A8,0x815D0,14,16,1,<N:ｌ:5>フウジンへを召喚します
+skill_description,기술 설명,41,0x817AC,0x815E0,14,16,1,<N:ｌ:5>ラ<N:｣:11>ジンへを召喚します
+skill_description,기술 설명,42,0x817B0,0x815F0,15,16,0,<N:ｌ:5>へモジーへを召喚します
+skill_description,기술 설명,43,0x817B4,0x81600,13,16,2,<N:ｌ:5>オトンへを召喚します
+skill_description,기술 설명,44,0x817B8,0x81610,12,16,3,モンスターを調ベます
+skill_description,기술 설명,45,0x817BC,0x81620,13,16,2,<N:ｌ:5>ちょこへを召喚します
+skill_description,기술 설명,46,0x817C0,0x81630,10,12,1,味方を回復します
+skill_description,기술 설명,47,0x817C4,0x8163C,17,20,2,行けないところに<N:ｴ:24>かを造ります
+skill_description,기술 설명,48,0x817C8,0x81650,14,16,1,ラ<N:｣:11>ジンとの合体魔法
+skill_description,기술 설명,49,0x817CC,0x81660,14,16,1,フウジンとの合体魔法
+skill_description,기술 설명,50,0x817D0,0x81670,10,12,1,敵に乗り移れます
+skill_description,기술 설명,51,0x817D4,0x8167C,16,20,3,まわりに手裏剣をばらまきます
+skill_description,기술 설명,52,0x817D8,0x81690,6,8,1,自爆します
+skill_description,기술 설명,53,0x817DC,0x81698,15,16,0,かまフーメランで敵を攻撃します
+skill_description,기술 설명,54,0x817E0,0x816A8,16,20,3,まわりの敵にダメージを<N:与:3>えます
+skill_description,기술 설명,55,0x817E4,0x816BC,16,20,3,まわりの敵にダメージを<N:与:3>えます
+skill_description,기술 설명,56,0x817E8,0x816D0,16,20,3,直せん上の敵をなぎはらいます
+skill_description,기술 설명,57,0x817EC,0x816E4,21,24,2,つばさをはためかせ風でダメージを<N:与:3>えます
+skill_description,기술 설명,58,0x817F0,0x816FC,11,12,0,敵をへモジーにします
+character_name,인물·몬스터 이름,0,0x81B4C,0x817F4,3,4,0,アーク
+character_name,인물·몬스터 이름,1,0x81B50,0x817F8,3,4,0,ククル
+character_name,인물·몬스터 이름,2,0x81B54,0x817FC,4,8,3,トッシュ
+character_name,인물·몬스터 이름,3,0x81B58,0x81804,2,4,1,ポニ
+character_name,인물·몬스터 이름,4,0x81B5C,0x81808,6,8,1,<N:ニ:13>ーゲン
+character_name,인물·몬스터 이름,5,0x81B60,0x81810,4,8,3,<N:｣:11>ー<N:力:5>
+character_name,인물·몬스터 이름,6,0x81B64,0x81818,5,8,2,マーシャル
+character_name,인물·몬스터 이름,7,0x81B68,0x81820,6,8,1,チョン<N:力:5>ラ
+character_name,인물·몬스터 이름,8,0x81B6C,0x81828,0,4,3,
+character_name,인물·몬스터 이름,9,0x81B70,0x8182C,0,4,3,
+character_name,인물·몬스터 이름,10,0x81B74,0x81830,0,4,3,
+character_name,인물·몬스터 이름,11,0x81B78,0x81834,6,8,1,ス<N:ゲ:16>ルトン
+character_name,인물·몬스터 이름,12,0x81B7C,0x8183C,5,8,2,<N:ニ:13>ースト
+character_name,인물·몬스터 이름,13,0x81B80,0x81844,5,8,2,<N:ゾ:12>ン<N:ビ:5>
+character_name,인물·몬스터 이름,14,0x81B84,0x8184C,8,12,3,<N:ク:12>リーンスラ<N:｣:11>ム
+character_name,인물·몬스터 이름,15,0x81B88,0x81858,5,8,2,カンジャ
+character_name,인물·몬스터 이름,16,0x81B8C,0x81860,3,4,0,メ<N:｣:11>ジ
+character_name,인물·몬스터 이름,17,0x81B90,0x81864,6,8,1,フ<N:=:12><N:｣:11>ター
+character_name,인물·몬스터 이름,18,0x81B94,0x8186C,5,8,2,破戒僧
+character_name,인물·몬스터 이름,19,0x81B98,0x81874,9,12,2,ジャ<N:｣:11>アントバット
+character_name,인물·몬스터 이름,20,0x81B9C,0x81880,7,8,0,トールマスター
+character_name,인물·몬스터 이름,21,0x81BA0,0x81888,4,8,3,死神
+character_name,인물·몬스터 이름,22,0x81BA4,0x81890,7,8,0,エ<N:リ:12>メンタル
+character_name,인물·몬스터 이름,23,0x81BA8,0x81898,4,8,3,妖樹
+character_name,인물·몬스터 이름,24,0x81BAC,0x818A0,8,12,3,フ<N:=:12>ンタ<N:ス:15>ム
+character_name,인물·몬스터 이름,25,0x81BB0,0x818AC,6,8,1,シート<N:リ:12><N:｣:11>ク
+character_name,인물·몬스터 이름,26,0x81BB4,0x818B4,8,12,3,マ<N:｣:11>テ<N:ｲ:6>フラ<N:｣:11>
+character_name,인물·몬스터 이름,27,0x81BB8,0x818C0,7,8,0,<N:午:15>ラートッ<N:ク:12>
+character_name,인물·몬스터 이름,28,0x81BBC,0x818C8,9,12,2,<N:リ:12>ットス<N:ゲ:16>ルトン
+character_name,인물·몬스터 이름,29,0x81BC0,0x818D4,7,8,0,フラックスカル
+character_name,인물·몬스터 이름,30,0x81BC4,0x818DC,3,4,0,<N:リ:12><N:｣:11>ス
+character_name,인물·몬스터 이름,31,0x81BC8,0x818E0,3,4,0,<N:ク:12>ール
+character_name,인물·몬스터 이름,32,0x81BCC,0x818E4,5,8,2,フリージー
+character_name,인물·몬스터 이름,33,0x81BD0,0x818EC,8,12,3,アシットスラ<N:｣:11>ム
+character_name,인물·몬스터 이름,34,0x81BD4,0x818F8,5,8,2,アサッシン
+character_name,인물·몬스터 이름,35,0x81BD8,0x81900,9,12,2,スーパーシ<N:メ:6><N:ビ:5>
+character_name,인물·몬스터 이름,36,0x81BDC,0x8190C,8,12,3,ウ<N:｣:11>ッチクラフト
+character_name,인물·몬스터 이름,37,0x81BE0,0x81918,6,8,1,ソーサラー
+character_name,인물·몬스터 이름,38,0x81BE4,0x81920,8,12,3,<N:ネ:13>クロマンサー
+character_name,인물·몬스터 이름,39,0x81BE8,0x8192C,7,8,0,ウ<N:ｲ:6><N:ザ:8>ート
+character_name,인물·몬스터 이름,40,0x81BEC,0x81934,6,8,1,闇法師
+character_name,인물·몬스터 이름,41,0x81BF0,0x8193C,5,8,2,修験者
+character_name,인물·몬스터 이름,42,0x81BF4,0x81944,5,8,2,下法師
+character_name,인물·몬스터 이름,43,0x81BF8,0x8194C,7,8,0,<N:ネ:13><N:ビ:5>ュラス
+character_name,인물·몬스터 이름,44,0x81BFC,0x81954,6,8,1,道化師
+character_name,인물·몬스터 이름,45,0x81C00,0x8195C,7,8,0,デス<N:ハ:12>ウント
+character_name,인물·몬스터 이름,46,0x81C04,0x81964,2,4,1,デス
+character_name,인물·몬스터 이름,47,0x81C08,0x81968,11,12,0,ウ<N:=:12>ンパ<N:｣:11>アバット
+character_name,인물·몬스터 이름,48,0x81C0C,0x81974,6,8,1,ソートマン
+character_name,인물·몬스터 이름,49,0x81C10,0x8197C,7,8,0,ナ<N:｣:11>トマスター
+character_name,인물·몬스터 이름,50,0x81C14,0x81984,7,8,0,<N:ク:12><N:リ:12>ートナ<N:｣:11>ト
+character_name,인물·몬스터 이름,51,0x81C18,0x8198C,9,12,2,ポ<N:｣:11><N:ス:15>ンスモッ<N:ク:12>
+character_name,인물·몬스터 이름,52,0x81C1C,0x81998,10,12,1,メデューサリ<N:ザ:8>ート
+character_name,인물·몬스터 이름,53,0x81C20,0x819A4,8,12,3,トラ<N:ニ:13>ンフラ<N:｣:11>
+character_name,인물·몬스터 이름,54,0x81C24,0x819B0,7,8,0,マントラッ<N:フ:11>
+character_name,인물·몬스터 이름,55,0x81C28,0x819B8,6,8,1,デスフ<N:リ:12><N:｣:11>ム
+character_name,인물·몬스터 이름,56,0x81C2C,0x819C0,11,12,0,エ<N:リ:12>メンタルマスター
+character_name,인물·몬스터 이름,57,0x81C30,0x819CC,4,8,3,<N:｣:11>ー<N:力:5>
+character_name,인물·몬스터 이름,58,0x81C34,0x819D4,0,4,3,
+character_name,인물·몬스터 이름,59,0x81C38,0x819D8,9,12,2,野生へモジー
+character_name,인물·몬스터 이름,60,0x81C3C,0x819E4,8,12,3,<N:リ:12>ッサーデーモン
+character_name,인물·몬스터 이름,61,0x81C40,0x819F0,9,12,2,<N:ク:12><N:リ:12>ーターデーモン
+character_name,인물·몬스터 이름,62,0x81C44,0x819FC,8,12,3,スタン<N:ニ:13>ー<N:リ:12>ム
+character_name,인물·몬스터 이름,63,0x81C48,0x81A08,6,8,1,ワ<N:｣:11>バーン
+character_name,인물·몬스터 이름,64,0x81C4C,0x81A10,7,8,0,マットバトラー
+character_name,인물·몬스터 이름,65,0x81C50,0x81A18,7,8,0,アークデーモン
+character_name,인물·몬스터 이름,66,0x81C54,0x81A20,10,12,1,フ<N:=:12><N:｣:11>ア<N:ニ:13>ー<N:リ:12>ム
+character_name,인물·몬스터 이름,67,0x81C58,0x81A2C,9,12,2,カッパートラ<N:ニ:13>ン
+character_name,인물·몬스터 이름,68,0x81C5C,0x81A38,10,12,1,<N:ク:12><N:リ:12>ートサー<N:へ:4>ント
+character_name,인물·몬스터 이름,69,0x81C60,0x81A44,4,8,3,修行僧
+character_name,인물·몬스터 이름,70,0x81C64,0x81A4C,6,8,1,ラマダ大僧正
+character_name,인물·몬스터 이름,71,0x81C68,0x81A54,6,8,1,<N:ク:12>ラ・アピス
+character_name,인물·몬스터 이름,72,0x81C6C,0x81A5C,5,8,2,ニ・アピス
+character_name,인물·몬스터 이름,73,0x81C70,0x81A64,6,8,1,ラリュウ<N:午:15>
+character_name,인물·몬스터 이름,74,0x81C74,0x81A6C,9,12,2,<N:ヒ:5>ョウエン<N:午:15>
+character_name,인물·몬스터 이름,75,0x81C78,0x81A78,6,8,1,ムル・アピス
+character_name,인물·몬스터 이름,76,0x81C7C,0x81A80,5,8,2,ラ・アピス
+character_name,인물·몬스터 이름,77,0x81C80,0x81A88,3,4,0,ちょこ
+character_name,인물·몬스터 이름,78,0x81C84,0x81A8C,5,8,2,たからばこ
+character_name,인물·몬스터 이름,79,0x81C88,0x81A94,5,8,2,たからばこ
+character_name,인물·몬스터 이름,80,0x81C8C,0x81A9C,5,8,2,<N:ゲ:16>ラック
+character_name,인물·몬스터 이름,81,0x81C90,0x81AA4,0,4,3,
+character_name,인물·몬스터 이름,82,0x81C94,0x81AA8,4,8,3,モフリー
+character_name,인물·몬스터 이름,83,0x81C98,0x81AB0,4,8,3,フウジン
+character_name,인물·몬스터 이름,84,0x81C9C,0x81AB8,4,8,3,ラ<N:｣:11>ジン
+character_name,인물·몬스터 이름,85,0x81CA0,0x81AC0,3,4,0,オトン
+character_name,인물·몬스터 이름,86,0x81CA4,0x81AC4,3,4,0,ちょこ
+character_name,인물·몬스터 이름,87,0x81CA8,0x81AC8,5,8,2,へモジー
+character_name,인물·몬스터 이름,88,0x81CAC,0x81AD0,1,4,2,炎
+character_name,인물·몬스터 이름,89,0x81CB0,0x81AD4,0,4,3,
+character_name,인물·몬스터 이름,90,0x81CB4,0x81AD8,0,4,3,
+character_name,인물·몬스터 이름,91,0x81CB8,0x81ADC,0,4,3,
+character_name,인물·몬스터 이름,92,0x81CBC,0x81AE0,0,4,3,
+character_name,인물·몬스터 이름,93,0x81CC0,0x81AE4,0,4,3,
+character_name,인물·몬스터 이름,94,0x81CC4,0x81AE8,0,4,3,
+character_name,인물·몬스터 이름,95,0x81CC8,0x81AEC,0,4,3,
+character_name,인물·몬스터 이름,96,0x81CCC,0x81AF0,0,4,3,
+character_name,인물·몬스터 이름,97,0x81CD0,0x81AF4,0,4,3,
+character_name,인물·몬스터 이름,98,0x81CD4,0x81AF8,0,4,3,
+character_name,인물·몬스터 이름,99,0x81CD8,0x81AFC,0,4,3,
+character_name,인물·몬스터 이름,100,0x81CDC,0x81B00,6,8,1,ダークアーク
+character_name,인물·몬스터 이름,101,0x81CE0,0x81B08,6,8,1,ダークククル
+character_name,인물·몬스터 이름,102,0x81CE4,0x81B10,7,8,0,ダークトッシュ
+character_name,인물·몬스터 이름,103,0x81CE8,0x81B18,5,8,2,ダークポニ
+character_name,인물·몬스터 이름,104,0x81CEC,0x81B20,9,12,2,ダーク<N:ニ:13>ーゲン
+character_name,인물·몬스터 이름,105,0x81CF0,0x81B2C,7,8,0,ダーク<N:｣:11>ー<N:力:5>
+character_name,인물·몬스터 이름,106,0x81CF4,0x81B34,8,12,3,ダークマーシャル
+character_name,인물·몬스터 이름,107,0x81CF8,0x81B40,9,12,2,ダークチョン<N:力:5>ラ
+region_name,지역 이름,0,0x81E38,0x81CFC,8,12,3,スメリア<N:空:2>港
+region_name,지역 이름,1,0x81E3C,0x81D08,7,8,0,トウウ<N:ｲ:6>ル
+region_name,지역 이름,2,0x81E40,0x81D10,7,8,0,パ<N:リ:12>ンシア城
+region_name,지역 이름,3,0x81E44,0x81D18,8,12,3,オルカスの丘
+region_name,지역 이름,4,0x81E48,0x81D24,7,8,0,封印の滝
+region_name,지역 이름,5,0x81E4C,0x81D2C,8,12,3,ニル<N:卞:16>平原
+region_name,지역 이름,6,0x81E50,0x81D38,9,12,2,カラ<N:力:5>ン平野
+region_name,지역 이름,7,0x81E54,0x81D44,6,8,1,ク<N:｣:11>ナの丘
+region_name,지역 이름,8,0x81E58,0x81D4C,10,12,1,ミルマーナ<N:空:2>港
+region_name,지역 이름,9,0x81E5C,0x81D58,9,12,2,首都の軍本部
+region_name,지역 이름,10,0x81E60,0x81D64,9,12,2,トヨー<N:ゲ:16>の森
+region_name,지역 이름,11,0x81E64,0x81D70,7,8,0,ルワジの森
+region_name,지역 이름,12,0x81E68,0x81D78,8,12,3,カカラスの森
+region_name,지역 이름,13,0x81E6C,0x81D84,8,12,3,センバラの沼
+region_name,지역 이름,14,0x81E70,0x81D90,11,12,0,<N:ク:12><N:リ:12><N:｣:11>シーヌ<N:空:2>港
+region_name,지역 이름,15,0x81E74,0x81D9C,5,8,2,ラマダ寺
+region_name,지역 이름,16,0x81E78,0x81DA4,4,8,3,ラマダ山
+region_name,지역 이름,17,0x81E7C,0x81DAC,9,12,2,アララトス<N:空:2>港
+region_name,지역 이름,18,0x81E80,0x81DB8,9,12,2,チョン<N:力:5>ラの店
+region_name,지역 이름,19,0x81E84,0x81DC4,9,12,2,遺跡ダンジョン
+region_name,지역 이름,20,0x81E88,0x81DD0,8,12,3,ア<N:г:23>ンダ高地
+region_name,지역 이름,21,0x81E8C,0x81DDC,10,12,1,アリバーシャ<N:空:2>港
+region_name,지역 이름,22,0x81E90,0x81DE8,8,12,3,サリュ族の村
+region_name,지역 이름,23,0x81E94,0x81DF4,6,8,1,水の神殿
+region_name,지역 이름,24,0x81E98,0x81DFC,8,12,3,<N:リ:12><N:｣:11>デン遺跡
+region_name,지역 이름,25,0x81E9C,0x81E08,6,8,1,サラ砂漠
+region_name,지역 이름,26,0x81EA0,0x81E10,8,12,3,<N:｣:11>シュマのいわ場
+region_name,지역 이름,27,0x81EA4,0x81E1C,9,12,2,カーデル<N:空:2>港
+region_name,지역 이름,28,0x81EA8,0x81E28,4,8,3,闘技場
+region_name,지역 이름,29,0x81EAC,0x81E30,5,8,2,クラフ島
+location_name,장소 이름,0,0x82170,0x81F04,0,4,3,
+location_name,장소 이름,1,0x82174,0x81F08,6,8,1,山頂の社
+location_name,장소 이름,2,0x82178,0x81F10,6,8,1,アークの家
+location_name,장소 이름,3,0x8217C,0x81F18,4,8,3,精霊の山
+location_name,장소 이름,4,0x82180,0x81F20,5,8,2,村の門
+location_name,장소 이름,5,0x82184,0x81F28,4,8,3,精霊の山
+location_name,장소 이름,6,0x82188,0x81F30,7,8,0,パ<N:リ:12>ンシア城
+location_name,장소 이름,7,0x8218C,0x81F38,5,8,2,謁見の聞
+location_name,장소 이름,8,0x82190,0x81F40,8,12,3,スメリア<N:空:2>港
+location_name,장소 이름,9,0x82194,0x81F4C,12,16,3,パ<N:リ:12>ンシアを見おろす丘
+location_name,장소 이름,10,0x82198,0x81F5C,7,8,0,大臣の部屋
+location_name,장소 이름,11,0x8219C,0x81F64,10,12,1,ミルマーナ<N:空:2>港
+location_name,장소 이름,12,0x821A0,0x81F70,10,12,1,ミルマーナ軍本部
+location_name,장소 이름,13,0x821A4,0x81F7C,8,12,3,将軍の部屋
+location_name,장소 이름,14,0x821A8,0x81F88,9,12,2,トヨー<N:ゲ:16>の森
+location_name,장소 이름,15,0x821AC,0x81F94,13,16,2,パ<N:リ:12>ンシア城地下倉庫
+location_name,장소 이름,16,0x821B0,0x81FA4,11,12,0,パ<N:リ:12>ンシア城地下<N:牢:2>
+location_name,장소 이름,17,0x821B4,0x81FB0,8,12,3,オルカスの丘
+location_name,장소 이름,18,0x821B8,0x81FBC,4,8,3,幻界
+location_name,장소 이름,19,0x821BC,0x81FC4,9,12,2,アララトス<N:空:2>港
+location_name,장소 이름,20,0x821C0,0x81FD0,9,12,2,チョン<N:力:5>ラの店
+location_name,장소 이름,21,0x821C4,0x81FDC,12,16,3,ア<N:г:23>ンダ高地洞<N:窟:10>
+location_name,장소 이름,22,0x821C8,0x81FEC,10,12,1,ア<N:г:23>ンダ高地外
+location_name,장소 이름,23,0x821CC,0x81FF8,9,12,2,遺跡ダンジョン
+location_name,장소 이름,24,0x821D0,0x82004,11,12,0,<N:ク:12><N:リ:12><N:｣:11>シーヌ<N:空:2>港
+location_name,장소 이름,25,0x821D4,0x82010,8,12,3,ラマダ寺道場
+location_name,장소 이름,26,0x821D8,0x8201C,12,16,3,ラマダ寺僧正の部屋
+location_name,장소 이름,27,0x821DC,0x8202C,6,8,1,ラマダ山頂
+location_name,장소 이름,28,0x821E0,0x82034,5,8,2,ラマダ寺
+location_name,장소 이름,29,0x821E4,0x8203C,9,12,2,カーデル<N:空:2>港
+location_name,장소 이름,30,0x821E8,0x82048,10,12,1,ニロシアムひかえ室
+location_name,장소 이름,31,0x821EC,0x82054,8,12,3,ニロシアムぶたい
+location_name,장소 이름,32,0x821F0,0x82060,10,12,1,アリバーシャ<N:空:2>港
+location_name,장소 이름,33,0x821F4,0x8206C,8,12,3,サリュ族の村
+location_name,장소 이름,34,0x821F8,0x82078,6,8,1,水の神殿
+location_name,장소 이름,35,0x821FC,0x82080,9,12,2,地下エ<N:リ:12>ベータ
+location_name,장소 이름,36,0x82200,0x8208C,11,12,0,地下バ<N:｣:11>オ<N:研:23><N:究:1>室
+location_name,장소 이름,37,0x82204,0x82098,9,12,2,パ<N:リ:12>ンシア<N:街:4>頭
+location_name,장소 이름,38,0x82208,0x820A4,12,16,3,聖柩封印の滝外
+location_name,장소 이름,39,0x8220C,0x820B4,12,16,3,聖柩封印の滝内
+location_name,장소 이름,40,0x82210,0x820C4,12,16,3,トウウ<N:ｲ:6>ルがん<N:ヘ:5>き
+location_name,장소 이름,41,0x82214,0x820D4,11,12,0,うみベの飛<N:空:2>挺
+location_name,장소 이름,42,0x82218,0x820E0,8,12,3,ニル<N:卞:16>平原
+location_name,장소 이름,43,0x8221C,0x820EC,9,12,2,カラ<N:力:5>ン平野
+location_name,장소 이름,44,0x82220,0x820F8,6,8,1,ク<N:｣:11>ナの丘
+location_name,장소 이름,45,0x82224,0x82100,7,8,0,ルワジの森
+location_name,장소 이름,46,0x82228,0x82108,8,12,3,カカラスの森
+location_name,장소 이름,47,0x8222C,0x82114,8,12,3,センバラの沼
+location_name,장소 이름,48,0x82230,0x82120,8,12,3,<N:リ:12><N:｣:11>デン遺跡
+location_name,장소 이름,49,0x82234,0x8212C,6,8,1,サラ砂漠
+location_name,장소 이름,50,0x82238,0x82134,8,12,3,<N:｣:11>シュマのいわ場
+location_name,장소 이름,51,0x8223C,0x82140,9,12,2,ニロシアム闘技場
+location_name,장소 이름,52,0x82240,0x8214C,8,12,3,ラマダ寺道場
+location_name,장소 이름,53,0x82244,0x82158,10,12,1,クラーフ島<N:空:2>港
+location_name,장소 이름,54,0x82248,0x82164,11,12,0,クラーフとう最上階

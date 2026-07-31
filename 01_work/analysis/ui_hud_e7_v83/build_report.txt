@@ -1,0 +1,20 @@
+ui_hud_e7_v83 P6 sidecar renderer diagnostic
+base=E:\korean\ex\코덱스\ui_hud_e7_v80_p6_only_vram_probe_patch_only.zip
+base_sha256=039A1BD2F5441940B57EAE9D46A809F04F3BC98CD958C427759FA8732FC6975B
+output=E:\korean\03_output\ui_hud_e7_v83_p6_sidecar_renderer_test_patch_only.zip
+output_sha256=CFC4B7791E3A4341D6DD39B7BE3EC8A1BBC471E31C62AD08F80CF8D0EA51D84D
+architecture=text-state pointer + 64-bit external glyph bitmap
+glyph_record_marker=NONE
+glyph_helper=0x801A86EC
+marker_helper=0x801A8788
+sidecar=0x801A87F4
+renderer=0x801A20B0
+renderer_entry=0x801A22A0
+changed_psx_bytes=503
+changed_members=PSX.EXE, COMM.IMG, 31/S3032.DAT
+S3032_scope=first test sentence only
+record_0x2b_unchanged=YES
+record_0x32_unchanged=YES
+static_readback=PASS
+runtime_verification=PENDING
+diagnostic_limit=one active text state, 64 glyphs

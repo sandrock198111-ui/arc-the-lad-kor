@@ -1,0 +1,135 @@
+﻿category,japanese,guidebook,current_patch,decision,final,new_glyphs_needed,reason,note,page
+item,ねばねば,끈끈이,끈끈이,already_matches,끈끈이,,,민첩성 저하,4
+item,やる気ゼリー,원기 젤리,,not_in_patch,원기 젤리,,현재 UI 테이블에 해당 문자열 없음,헤모지 회복,4
+item,みなぎる果実,충만 과실,넘치는 열매,hybrid,넘치는 과실,,"과실 구분은 채택, 형용사는 みなぎる에 더 가까운 '넘치는' 유지",레벨 상승,4
+item,回復果物,회복 과실,회복 열매,adopt_guide,회복 과실,,果物은 과실. 새 글리프 불필요,HP 60 회복,4
+item,しびれるりんご,마비 사과,마비 사과,already_matches,마비 사과,,,,4
+item,石,돌,돌,already_matches,돌,,,던져서 타격,4
+item,レコの草,레코의 풀,,not_in_patch,레코의 풀,,현재 UI 테이블에 해당 문자열 없음,방어력 상승,4
+item,薬草,약초,약초,already_matches,약초,,,HP 20 회복,4
+item,毒薬,독약,,not_in_patch,독약,,현재 UI 테이블에 해당 문자열 없음,,4
+item,ルヴの薬,루우의 약,,not_in_patch,루우의 약,,현재 UI 테이블에 해당 문자열 없음,마비 회복,4
+item,すばやさの薬,민첩성의 약,민첩의 약,adopt_guide,민첩성의 약,,공략본이 더 구체적이고 새 글리프 불필요,,4
+item,小さい爆弾,작은 폭탄,작은 폭탄,already_matches,작은 폭탄,,,,4
+item,大きい爆弾,큰 폭탄,큰 폭탄,already_matches,큰 폭탄,,,,4
+item,万能薬,만능약,만능약,already_matches,만능약,,,석화 외 모든 이상 회복,4
+item,聖水,성수,성수,already_matches,성수,,,독 해독,4
+item,復活の薬,부활의 약,부활약,adopt_guide,부활의 약,,축약형보다 원문에 충실하고 새 글리프 불필요,전투불능 부활,4
+item,攻撃瓶,공격 항아리,공격 항아리,already_matches,공격 항아리,,,,4
+item,眠りの玉,잠드는 구슬,,not_in_patch,잠드는 구슬,,현재 UI 테이블에 해당 문자열 없음,,4
+item,弱り玉,약함의 구슬,,not_in_patch,약함의 구슬,,현재 UI 테이블에 해당 문자열 없음,,4
+item,ちからの実,힘의 열매,힘의 열매,already_matches,힘의 열매,,,,4
+item,パロの実,파로의 열매,파로의 열매,already_matches,파로의 열매,,,,4
+item,いのちの木の実,생명나무의 열매,생명의 열매,adopt_guide,생명나무의 열매,,공략본이 더 구체적이고 새 글리프 불필요,HP 최대치 상승,4
+item,魔力の葉,마력의 잎,마력의 잎,already_matches,마력의 잎,,,마력 상승,4
+item,魔力の泉,마력의 샘,마력의 샘,already_matches,마력의 샘,,,MP 최대치 상승,4
+item,目つぶしの草,모래 풀,눈가림 풀,keep_current,눈가림 풀,,目つぶし는 눈을 멀게 함. '눈가림'이 원문에 충실,명중률 저하,4
+item,若い葉,젊음의 잎,,not_in_patch,젊음의 잎,젊,현재 UI 테이블에 해당 문자열 없음,,4
+item,石解けハリ,석해 침,,not_in_patch,석해 침,,현재 UI 테이블에 해당 문자열 없음,STONED 회복,4
+item,痛烈なハリ,통렬한 침,,not_in_patch,통렬한 침,통,현재 UI 테이블에 해당 문자열 없음,SILENCE 회복,4
+accessory,炎の守り,불꽃의 수호,불꽃의 수호,already_matches,불꽃의 수호,,,,10
+accessory,氷の守り,얼음의 수호,얼음의 수호,already_matches,얼음의 수호,,,,10
+accessory,アンチヘモジー,안티헤모지,,not_in_patch,안티헤모지,,현재 UI 테이블에 해당 문자열 없음,,10
+accessory,いやしの守り,치료의 수호,,not_in_patch,치료의 수호,료,현재 UI 테이블에 해당 문자열 없음,,10
+accessory,魔法のカード,마법의 카드,,not_in_patch,마법의 카드,,현재 UI 테이블에 해당 문자열 없음,마력 10%,10
+accessory,スリープレスカード,슬리프리스 카드,,not_in_patch,슬리프리스 카드,,현재 UI 테이블에 해당 문자열 없음,,10
+accessory,パワーアーム,파워 암,파워 암,already_matches,파워 암,,,,10
+accessory,ガイガーグローブ,가이거 글로브,,not_in_patch,가이거 글로브,,현재 UI 테이블에 해당 문자열 없음,,10
+accessory,幻のこて,환상의 손끝,환상의 장갑,keep_current,환상의 장갑,,こて(小手)는 팔뚝·손목 보호구. 공략본의 '손끝'은 오독,공격력 50%,10
+accessory,サングラス,선글래스,,not_in_patch,선글래스,,현재 UI 테이블에 해당 문자열 없음,DARKNESS 방지,10
+accessory,ネックレス,네클리스,,not_in_patch,네클리스,,현재 UI 테이블에 해당 문자열 없음,,10
+accessory,ハイパーブーツ,하이퍼 부츠,,not_in_patch,하이퍼 부츠,,현재 UI 테이블에 해당 문자열 없음,,10
+accessory,パワーリスト,파워 리스트,파워 리스트,already_matches,파워 리스트,,,,10
+accessory,一角獣の角,일각수의 뿔,유니콘의 뿔,keep_current,유니콘의 뿔,,둘 다 정확. '유니콘'이 한국 JRPG 관용,,10
+accessory,鏡,거울,거울,already_matches,거울,,,STONED 방지,10
+accessory,古代のゆびわ,고대의 반지,,not_in_patch,고대의 반지,,현재 UI 테이블에 해당 문자열 없음,,10
+accessory,幻のゆびわ,환상의 반지,,not_in_patch,환상의 반지,,현재 UI 테이블에 해당 문자열 없음,마력 50%,10
+accessory,おもちゃのゆびわ,장난감 반지,,not_in_patch,장난감 반지,,현재 UI 테이블에 해당 문자열 없음,,10
+accessory,幻の盾,환상의 방패,환상의 방패,already_matches,환상의 방패,,,,10
+accessory,戦士の守り,전사의 수호,전사의 수호,already_matches,전사의 수호,,,,10
+accessory,勇者の盾,용사의 방패,,not_in_patch,용사의 방패,,현재 UI 테이블에 해당 문자열 없음,,10
+accessory,乱れる宝石,광란의 보석,요동치는 보석,keep_current,요동치는 보석,,'요동치는'이 乱れる에 충실하고 글리프도 불필요,,10
+accessory,アーマーストーン,아머 스톤,아머 스톤,already_matches,아머 스톤,,,,10
+accessory,太陽のぼうし,태양의 모자,,not_in_patch,태양의 모자,,현재 UI 테이블에 해당 문자열 없음,,10
+accessory,おし花の本,압화 책,압화 책,already_matches,압화 책,,,,10
+accessory,音楽集,음악집,음악집,already_matches,음악집,,,,10
+accessory,勇者の証,용자의 증표,용자의 증표,already_matches,용자의 증표,,,,10
+skill_arc,バーングラウンド,뱅 그라운드,,not_in_patch,뱅 그라운드,뱅,현재 UI 테이블에 해당 문자열 없음,공격 MP 4/8/16,5
+skill_arc,ゲイルフラッシュ,게일 플래시,,not_in_patch,게일 플래시,,현재 UI 테이블에 해당 문자열 없음,공격 MP 12/16/24,5
+skill_arc,メテオフォル,메테오 폴,,not_in_patch,메테오 폴,,현재 UI 테이블에 해당 문자열 없음,공격 MP 9/14/21,5
+skill_arc,トータルヒーリング,토탈 힐링,,not_in_patch,토탈 힐링,,현재 UI 테이블에 해당 문자열 없음,회복 MP 7/10/15,5
+skill_arc,スローエネミー,슬로우 에네미,,not_in_patch,슬로우 에네미,,현재 UI 테이블에 해당 문자열 없음,보조 MP 6/9/14,5
+skill_poco,荒獅子太鼓,황사자태고,황사자 북,keep_current,황사자 북,,太鼓는 북. '태고'는 한국어로 통용되지 않음,공격 MP 8/12/16,5
+skill_poco,へろへろのラッパ,비틀비틀 나팔,,not_in_patch,비틀비틀 나팔,,현재 UI 테이블에 해당 문자열 없음,공격 MP 12/16/24,5
+skill_poco,気合いラッパ,기합 나팔,기합 나팔,already_matches,기합 나팔,,,공격 MP 8/12/18,5
+skill_poco,いやしのたてごと,치료 거문고,치유의 하프,keep_current,치유의 하프,,たてごと(竪琴)는 하프. 공략본의 '거문고'가 오히려 의역,보조 MP 3/5/8,5
+skill_poco,のろまのベース,둔한 베이스,둔화 베이스,keep_current,둔화 베이스,,のろま(둔함)의 의미를 '둔화'로 유지,보조 MP 7/11/17,5
+skill_poco,韋駄天のオカリナ,위타천 오카리나,,not_in_patch,위타천 오카리나,,현재 UI 테이블에 해당 문자열 없음,보조 MP 4/6/9,5
+skill_poco,方向の笛,방향잡이 피리,,not_in_patch,방향잡이 피리,,현재 UI 테이블에 해당 문자열 없음,보조 MP 10/14/18,5
+skill_poco,戦の小太鼓,전투 큰 북,전투의 북,keep_current,전투의 북,,小太鼓는 작은 북. '전투의 북'으로 통일,보조 MP 3/5/8,5
+skill_kukuru,天のさばき,하늘의 심판,천벌,keep_current,천벌,,스킬명은 UI 폭 제약이 있어 짧은 '천벌' 유지,공격 MP 9/14/21,6
+skill_kukuru,デバイド,디바이드,,not_in_patch,디바이드,,현재 UI 테이블에 해당 문자열 없음,공격/회복 MP 14/21/32,6
+skill_kukuru,キュア,큐어,,not_in_patch,큐어,,현재 UI 테이블에 해당 문자열 없음,회복 MP 4/8/12,6
+skill_kukuru,デポイズン,디포이즌,,not_in_patch,디포이즌,,현재 UI 테이블에 해당 문자열 없음,회복 MP 3/5/8,6
+skill_kukuru,リフレッシュ,리프레시,,not_in_patch,리프레시,,현재 UI 테이블에 해당 문자열 없음,회복 MP 8/12/18,6
+skill_kukuru,リザレクション,리서렉션,,not_in_patch,리서렉션,,현재 UI 테이블에 해당 문자열 없음,회복 MP 12/18/27,6
+skill_kukuru,サイレント,사일렌트,,not_in_patch,사일렌트,,현재 UI 테이블에 해당 문자열 없음,보조 MP 6/9/14,6
+skill_gogen,エクスプロージョン,익스플로전,,not_in_patch,익스플로전,,현재 UI 테이블에 해당 문자열 없음,MP 10/16/22,6
+skill_gogen,ドリームノック,드림 노크,,not_in_patch,드림 노크,,현재 UI 테이블에 해당 문자열 없음,공격 MP 6/10/16,6
+skill_gogen,ダイアモンドダスト,다이아몬드 더스트,,not_in_patch,다이아몬드 더스트,,현재 UI 테이블에 해당 문자열 없음,공격 MP 14/20/26,6
+skill_gogen,ウインドスラッシャー,윈드 슬래셔,,not_in_patch,윈드 슬래셔,,현재 UI 테이블에 해당 문자열 없음,보조 MP 16/24/32,6
+skill_gogen,ヒートウォール,히트 월,,not_in_patch,히트 월,,현재 UI 테이블에 해당 문자열 없음,공격 MP 13/20/30,6
+skill_gogen,サンダーストーム,썬더 스톰,썬더 스톰,already_matches,썬더 스톰,,,공격 MP 18/28/38,6
+skill_gogen,テレポート,텔리포트,,not_in_patch,텔리포트,,현재 UI 테이블에 해당 문자열 없음,보조 MP 10/15/23,6
+skill_tosh,呪縛剣,주박검,주박검,already_matches,주박검,,,공격 MP 5/8/12,7
+skill_tosh,眞空斬,진공참,,not_in_patch,진공참,,현재 UI 테이블에 해당 문자열 없음,공격 MP 16/18/20,7
+skill_tosh,虎影斬,호영참,,not_in_patch,호영참,,현재 UI 테이블에 해당 문자열 없음,공격 MP 20/24/28,7
+skill_tosh,櫻花雷暴斬,벚꽃뇌폭참,,not_in_patch,벚꽃뇌폭참,벚,현재 UI 테이블에 해당 문자열 없음,공격 MP 24/32/40,7
+skill_iga,心眼法,심안법,,not_in_patch,심안법,,현재 UI 테이블에 해당 문자열 없음,공격 MP 2/4/6,8
+skill_iga,退魔光弾,퇴마광탄,,not_in_patch,퇴마광탄,,현재 UI 테이블에 해당 문자열 없음,공격 MP 6/9/14,8
+skill_iga,旋風撃,선풍격축,,not_in_patch,선풍격축,,현재 UI 테이블에 해당 문자열 없음,공격 MP 8/12/18,8
+skill_iga,流星爆,유성폭,유성폭,already_matches,유성폭,,,공격 MP 9/14/21,8
+skill_iga,鬼陣流影波,귀신류영파,,not_in_patch,귀신류영파,,현재 UI 테이블에 해당 문자열 없음,공격 MP 11/17/26,8
+skill_iga,滅拳烈波,멸장렬파,,not_in_patch,멸장렬파,,현재 UI 테이블에 해당 문자열 없음,공격 MP 13/20/30,8
+summon,調べる,조사,,not_in_patch,조사,,현재 UI 테이블에 해당 문자열 없음,MP 1,8
+summon,ケラック,케라크,,not_in_patch,케라크,,현재 UI 테이블에 해당 문자열 없음,MP 4,8
+summon,モフリ,모프리,,not_in_patch,모프리,,현재 UI 테이블에 해당 문자열 없음,MP 8,8
+summon,ヘモジ,헤모지,,not_in_patch,헤모지,,현재 UI 테이블에 해당 문자열 없음,MP 14,8
+summon,オドン,오돈,,not_in_patch,오돈,돈,현재 UI 테이블에 해당 문자열 없음,MP 18,8
+summon,フウジン/ライジン,후우진/라이진,,not_in_patch,후우진/라이진,,현재 UI 테이블에 해당 문자열 없음,MP 30,8
+summon,ちょこ,쵸꼬,초코,keep_current,초코,,'초코'가 한국어 표기로 자연스러움,유적 던전 최하층,8
+status,SLEEP,SLEEP,,not_in_patch,SLEEP,,현재 UI 테이블에 해당 문자열 없음,,4
+status,DARKNESS,DARKNESS,,not_in_patch,DARKNESS,,현재 UI 테이블에 해당 문자열 없음,,4
+status,SILENCE,SILENCE,,not_in_patch,SILENCE,,현재 UI 테이블에 해당 문자열 없음,,4
+status,POISONED,POISONED,,not_in_patch,POISONED,,현재 UI 테이블에 해당 문자열 없음,,4
+status,HEMOZEE,HEMOZEE,,not_in_patch,HEMOZEE,,현재 UI 테이블에 해당 문자열 없음,,4
+status,PARALYZED,PARALYZED,,not_in_patch,PARALYZED,,현재 UI 테이블에 해당 문자열 없음,,4
+status,STONED,STONED,,not_in_patch,STONED,,현재 UI 테이블에 해당 문자열 없음,,4
+stat,レベル,레벨,,not_in_patch,레벨,,현재 UI 테이블에 해당 문자열 없음,,3
+stat,移動力,이동력,,not_in_patch,이동력,,현재 UI 테이블에 해당 문자열 없음,,3
+stat,攻撃力,공격력,,not_in_patch,공격력,,현재 UI 테이블에 해당 문자열 없음,,3
+stat,魔力,마력,,not_in_patch,마력,,현재 UI 테이블에 해당 문자열 없음,,3
+stat,防御力,방어력,,not_in_patch,방어력,,현재 UI 테이블에 해당 문자열 없음,,3
+stat,敏捷性,민첩성,,not_in_patch,민첩성,,현재 UI 테이블에 해당 문자열 없음,,3
+stat,経験値,경험치,,not_in_patch,경험치,,현재 UI 테이블에 해당 문자열 없음,,3
+stat,ジャンプレベル,점프 레벨,,not_in_patch,점프 레벨,,현재 UI 테이블에 해당 문자열 없음,,3
+stat,投げレベル,던지기 레벨,,not_in_patch,던지기 레벨,,현재 UI 테이블에 해당 문자열 없음,,3
+stat,反撃レベル,반격 레벨,,not_in_patch,반격 레벨,,현재 UI 테이블에 해당 문자열 없음,,3
+stat,受けレベル,받기 레벨,,not_in_patch,받기 레벨,,현재 UI 테이블에 해당 문자열 없음,,3
+character,アーク,아크,아크,already_matches,아크,,,"15세, 토우빌 출신",2
+character,ククル,쿠쿠르,쿠쿠루,keep_current,쿠쿠루,,외래어 표기법 ル→루. 이미 대사 전체에 사용됨,"17세, 정령 산 신관 가문",2
+character,チョンガラ,총가라,,not_in_patch,총가라,총,현재 UI 테이블에 해당 문자열 없음,45세 골동품상,2
+character,ポコ,포코,,not_in_patch,포코,,현재 UI 테이블에 해당 문자열 없음,"15세, 파렌시아 군",2
+character,トッシュ,토쉬,토슈,keep_current,토슈,,외래어 표기법 シュ→슈. 이미 대사 전체에 사용됨,"28세, 의적단 두목",2
+character,ゴーゲン,고겐,,not_in_patch,고겐,,현재 UI 테이블에 해당 문자열 없음,고대 7현자,2
+character,イーガ,이가,,not_in_patch,이가,,현재 UI 테이블에 해당 문자열 없음,38세 권법가,2
+place,スメリア,스메리아,,not_in_patch,스메리아,,현재 UI 테이블에 해당 문자열 없음,,1
+place,ミルマーナ,미르마나,,not_in_patch,미르마나,,현재 UI 테이블에 해당 문자열 없음,,1
+place,アララトス,아라라토스,,not_in_patch,아라라토스,,현재 UI 테이블에 해당 문자열 없음,,1
+place,グレイシス,그레이시스,,not_in_patch,그레이시스,,현재 UI 테이블에 해당 문자열 없음,,1
+place,ニーデル,니델,,not_in_patch,니델,,현재 UI 테이블에 해당 문자열 없음,,1
+place,アリバサ,아리바사,,not_in_patch,아리바사,,현재 UI 테이블에 해당 문자열 없음,공략본 본문은 아리바샤,1
+place,トウビル,토우빌,,not_in_patch,토우빌,,현재 UI 테이블에 해당 문자열 없음,,2
+place,パレンシア,파렌시아,,not_in_patch,파렌시아,,현재 UI 테이블에 해당 문자열 없음,,4
+place,ラマダ,라마다,,not_in_patch,라마다,,현재 UI 테이블에 해당 문자열 없음,,9
+place,ロマリア,로마리아,,not_in_patch,로마리아,,현재 UI 테이블에 해당 문자열 없음,,9
