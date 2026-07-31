@@ -897,3 +897,31 @@ Pending terminology change, deferred until regression testing completes - 2026-0
 - `いのちの木の実` 생명의 열매 -> 생명나무의 열매
 - None of these need a new glyph, so the change is string replacement inside `PSX.EXE` only.
 - Rule established while deciding them: the original distinguishes 果実/果物 from 実, and the translation now follows it. 果実/果物 -> 과실, 実 -> 열매, 葉 -> 잎, 泉 -> 샘. A full scan of the UI table found only these two entries had flattened the distinction; every 実, 葉 and 泉 entry was already correct.
+
+LoadImage: available, and where it can be called - 2026-07-31
+- Psy-Q `LoadImage` is linked at `0x80177E4C`. It takes a0 = RECT (short x, y, w, h in 16-bit units) and a1 = source pointer, and clamps to the 1024x512 VRAM bounds.
+- It waits for the GPU itself: the loop at `0x80177FC4-0x80177FF0` spins on `GPUSTAT & 0x04000000` with a timeout call to `0x80178CCC`. Callers do not need their own synchronisation, but they must not call it while the GPU is busy.
+- v99 hooked the text-render entry `0x8016B764` and deadlocked. The savestate showed `s6 = 0x80177E4C`, `ra = 0x80177FD0` and `s2 = 0x04000000`: the CPU sat in LoadImage's own wait loop while the frame it was blocking could never finish, so sprites stopped being drawn. Never call LoadImage from the render path.
+- v100 hooked the frame loop instead and runs normally. The usable point is `0x8011C4AC`, the `jal 0x8011C814` that performs the frame swap. `0x8011C49C` calls the GPU driver's sync entry with a0 = 0 immediately before it, so the GPU is idle between the two.
+- `0x8011C814` is the frame swap and the only writer of the buffer parity at render-context `+0x870`; roughly sixty other sites only read it. `0x801F12EC` holds the render-context pointer.
+
+VRAM stability is not the same as invisibility - 2026-07-31
+- The v100 probe wrote to VRAM x=208..223, y=468..479 (16-bit units), chosen because it never changed in any savestate. It is visible on the title screen, which uses a taller display area than later screens.
+- A block being constant across savestates says nothing about whether it is displayed. Check the display area separately before assuming a scratch region is invisible.
+- The corruption is harmless here and is in fact the visual confirmation that the transfer happened.
+
+Heap is too small to host the glyph source - 2026-07-31
+- Startup forms the heap start at `0x80175810` as `0x801FE4D8`, adds four, and passes it to `InitHeap` with size = initial SP minus `[0x801A7284]` minus that start.
+- That leaves roughly 6-7 KB of heap between the reserved P6 helper and the stack. Taking 1 KB more is risky and 17 KB is impossible.
+- A glyph source of that size has to live in the BSS region instead. `0x801CDE00-0x801D5BFF` (31.5 KB) never changed in any savestate, but it sits inside the startup BSS clear, so the bootstrap would have to clear around it rather than through it.
+- Caveat on that measurement: the savestates represent only about 17 distinct loaded scenes, not 120 independent samples, so "never changed" is much weaker evidence than the file count suggests.
+
+The BSS clear must stop at the relocated helper, not past it - 2026-07-31
+- The original v85 bootstrap ended its clear loop at the BIOS memcpy return value, which is the destination pointer 0x801FE3C4. The relocated P6 helper therefore sat immediately above the cleared range and survived.
+- 0x801FE4D8 is the helper's END and the v87 heap boundary. Using it as the clear endpoint zeroes the helper that was just copied. The first v101 build did exactly that; the savestate showed 0x801FE3C4 reading 00000000 instead of 2507FFE8, so the glyph hook ran into empty memory.
+- Rule: the clear endpoint is HELPER_DST, never HELPER_DST + HELPER_N.
+- `02_scripts/build_ui_hud_e7_v101_glyph_ram_upload.py` now refuses to build if the helper, the glyph block or the bootstrap overlaps any clear range, and checks that the two ranges plus the skipped block still cover the original span exactly.
+
+Build a patch on the version that carries the code it depends on - 2026-07-31
+- The first v101 was built on v98, which has neither the frame-boundary stub nor the hook that calls it; those arrived in v100. Only two words of a stub that did not exist were patched, so LoadImage was never called at all.
+- v101 is now built on v100 and asserts that the stub prologue, its LoadImage call, its frame-swap tail call and the hook at 0x8011C4AC are all present before touching anything.

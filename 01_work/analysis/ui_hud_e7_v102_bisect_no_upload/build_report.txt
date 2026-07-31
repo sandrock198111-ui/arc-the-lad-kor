@@ -1,0 +1,28 @@
+Arc the Lad Korean patch v102 build report  (BISECTION)
+
+base_v101=ui_hud_e7_v101_glyph_ram_upload_patch_only.zip
+base_v101_sha256=3DC4A81533311800D2A9848479A75255E76F501047C10BCFE4518F0E26A178EC
+output=ui_hud_e7_v102_bisect_no_upload_patch_only.zip
+output_sha256=2C03C6DC6A29F6D893D1E12AAC76F6CE6DEE6B422CAA91F8B0A365C25BD7883A
+psx_sha256=72CCCB9440C9B62480616785957FC0E3E890D26D05D295E4761467207059DEBA
+
+changed_members: PSX.EXE only
+changed_bytes: 4  (one word)
+0x801A208C: jal 0x80177E4C -> nop
+
+everything else is byte-identical to v101: the two-range bootstrap still runs,
+the glyph block is still relocated to 0x801CDE00, the stub is still hooked into
+the frame swap. Only the transfer itself is gone.
+
+  runs normally -> the bootstrap is fine, the per-frame transfer hangs
+  still hangs   -> the transfer is innocent, the bootstrap hangs
+
+measured from the v101 savestates, for reference:
+  P6 helper at 0x801FE3C4        correct
+  glyph copy at 0x801CDE00       1026/1080 bytes match the source
+  VRAM at the P6 rectangle       1026/1080, so the upload does reach VRAM
+  the 54 differing bytes repeat every ten bytes within each 90-byte row
+
+static_verification=PASS
+runtime_verification=PENDING
+rollback baseline=99_backup/baselines/ui_hud_e7_v98_runtime_success_2026-07-31

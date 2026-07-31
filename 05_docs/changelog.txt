@@ -723,3 +723,65 @@
 - Result over 134 terms: 29 already agree with the patch, 13 keep the current wording, 4 adopt the guidebook, 88 are guidebook-only terms not yet present in the UI table.
 - Established that the guidebook is a reference rather than an authority. It is strong for items, accessories, stats and places, weak for skill names where it transliterates kanji, and demonstrably wrong in four places.
 - Recorded that glyph availability must not drive word choice. Every remaining decision costs at most 7 new glyphs against 27 free slots.
+
+2026-07-31 v99 rejection and v100 frame-boundary probe (both diagnostic):
+- Added `02_scripts/build_ui_hud_e7_v99_loadimage_probe.py`. It hooked the text-render entry and called `LoadImage` with a small harmless rectangle.
+- v99 runtime result: FAIL. Sprites vanished and progress stopped. The savestate showed the CPU inside LoadImage's GPU wait loop (`ra = 0x80177FD0`, `s6 = 0x80177E4C`, `s2 = 0x04000000`): calling it mid-frame deadlocks, because the frame it blocks is what would free the GPU.
+- Added `02_scripts/build_ui_hud_e7_v100_loadimage_frameboundary.py`, built from v98 rather than v99 so the failed hook is not carried. It replaces the frame-swap call at `0x8011C4AC` with a stub that runs `LoadImage` first, at the point where the GPU is idle.
+- v100 runtime result: PASS. The game runs normally. A small block of corruption appears on the title screen at the transfer destination, which confirms the transfer occurred; later screens do not display that area.
+- This resolves the main unknown for plan D-lite: a CPU-to-VRAM transfer is possible once per frame at the frame boundary.
+- Built `03_output/ui_hud_e7_v100_loadimage_frameboundary_patch_only.zip`, SHA256 `B0B94915DC89AFA259834A0B5EC32840130108AE1084A4DA02140FCC215AFBAF`. Relative to v98 only `PSX.EXE` changes, by 53 bytes.
+
+2026-07-31 v101 glyph RAM upload (first build rejected, rebuilt):
+- Added `02_scripts/build_ui_hud_e7_v101_glyph_ram_upload.py`. It appends the 1080-byte P6 glyph block to `PSX.EXE`, replaces the entry bootstrap with a routine at `0x80193B44` that relocates both the P6 helper and the glyph block before clearing BSS around them, and retargets the v100 stub to upload from `0x801CDE00` to the real P6 rectangle.
+- First build rejected. Two defects: the clear loop ended at `0x801FE4D8` and so erased the P6 helper it had just copied, and the build was based on v98, which lacks the v100 stub and hook, so `LoadImage` was never called.
+- Both fixed. The clear now ends at `0x801FE3C4`, the base is v100, and the builder refuses to proceed if any relocated block overlaps a clear range or if the clear coverage no longer matches the original span.
+- `PSX.EXE` grows from 581,632 to 583,680 bytes, so the ISO must be rebuilt with mkpsxiso.
+- Rebuilt output SHA256 `3DC4A81533311800D2A9848479A75255E76F501047C10BCFE4518F0E26A178EC`. Runtime verification pending.
+
+2026-08-01 v101/v102 rejection and the search for a glyph home:
+- v101 runtime result: FAIL. The screen advanced but the game stopped progressing, without crashing.
+- Added `02_scripts/build_ui_hud_e7_v102_bisect_no_upload.py`, which is v101 with the `jal LoadImage` replaced by a `nop`, to separate the transfer from everything else the build changed.
+- v102 runtime result: FAIL, identically. The transfer is not the cause. Two suspects remain: the write to `0x801CDE00`, and the replacement bootstrap with its split BSS clear.
+- Re-examined `0x801CDE00`. It is not free: 54 bytes inside it are rewritten periodically, with the same values in both savestates checked. It had been accepted on the grounds that it was zero in every savestate, which is the same reasoning that had already failed once.
+- Established the process rule that follows from it: "unchanged across savestates" means the game may only be reading the region, not that it is unused, and the savestates cover about 17 distinct loaded scenes rather than 120 independent ones.
+- Searched the loaded executable image instead of BSS. A dead-code scan reported 126.7 KB of uncalled functions with a 25,896-byte contiguous stretch at `0x801A22D8`, of which `0x801A23D8..0x801A73D7` never changed across 133 savestates.
+- Rejected it before writing anything. Back-tracing found 84 lui-formed addresses landing inside, and the contents are smoothly increasing 16-bit tables. It is read-only data the game depends on; the scan had misread a data region as uncalled code because it has no function prologue.
+
+2026-08-01 v103 heap-reserved glyph store:
+- Changed approach from finding unused memory to reserving memory. The startup calls `InitHeap(0x801FE4DC, size)`; raising that address means the allocator is told the space is not available, which is a contract rather than an observation. v87 already reserves 276 bytes this way and has held.
+- Measured the heap across 133 savestates to confirm the game still has room: nothing below `0x801FFA60` is ever written, and no block inside the proposed reservation is ever non-zero. Reserving 1076 bytes at the bottom leaves over 5 KB of untouched heap.
+- Found that the existing bootstrap already does the required work. It copies the 276-byte P6 helper from `0x801A86EC` to `0x801FE3C4` and only then clears BSS, `0x801A86EC + 276` is exactly the end of the loaded image, and the copy destination is exactly where the clear stops.
+- Therefore appending the glyph block to `PSX.EXE` places it immediately after the helper source, and widening the single memcpy from 276 to 1356 bytes carries both across in one call to a destination the clear cannot reach. The appended source is zeroed afterwards, which is harmless.
+- The BSS clear is byte-for-byte identical to v100's, and no replacement bootstrap is needed. Both of v101's surviving suspects are gone.
+- Added `02_scripts/build_ui_hud_e7_v103_heap_reserved_glyphs.py`, built on v100. Relative to v100 it changes six words and appends one 2048-byte sector: memcpy length at `0x801757CC`, heap base at `0x80175810`, the stub's source register at `0x801A2084`/`0x801A2090`, and the rectangle at `0x801A22E4`.
+- The v100 scratch rectangle is replaced by the real P6 rectangle (x 714, y 288, w 45, h 12), so the corruption seen on the post-BIOS screen should disappear; it was this stub writing the executable's first bytes into a visible part of the framebuffer.
+- Verified by disassembling the built archive and walking the startup as the CPU runs it: copy source ends at `0x801A8C38` inside the image, glyphs land at `0x801FE4D8..0x801FE90F`, the new heap starts at `0x801FE910`, and the bytes the stub uploads match the COMM.IMG P6 block.
+- Built `03_output/ui_hud_e7_v103_heap_reserved_glyphs_patch_only.zip`, SHA256 `9EE40993E72962F26DAFBD61CA565D4646E247D9990B79EF5122776838584FD3`. `PSX.EXE` is 583,680 bytes, so the ISO must be rebuilt with mkpsxiso. Runtime verification pending.
+
+2026-08-01 v103 runtime result and the actual cause of v101, v102 and v103:
+- v103 runtime result: FAIL, breaking and stopping right after BIOS.
+- The savestate cleared the patch itself. All four edited startup words were the v103 values, the P6 helper had relocated correctly, the 1080-byte glyph block was byte-identical to the COMM.IMG source at `0x801FE4D8`, and VRAM rows 288..299 columns 714..758 held the atlas and nothing outside them did. The reservation, the copy and the per-frame upload all worked.
+- The heap change was also cleared, and turned out to be inert. The original arithmetic computes a negative heap size (`InitHeap(0x801FE4DC, -25816)`), so this game effectively never allocates. Moving the boundary changed nothing either way.
+- That left the only remaining difference from v100: the file size. `PSX.EXE` contains no `COMM.IMG` or `COMM.DAT` string and no `cdrom` string, but it does contain their sector numbers -- 307, 667 and 891 -- in a table at `0x80191154`. 500 of the disc's 507 file sector numbers appear in the executable.
+- `PSX.EXE` is the first file on the disc, occupying sectors 23..306, and COMM.DAT begins at 307 with no gap. Growing the executable by one sector therefore moves every other file by one.
+- Confirmed against the image the failure was captured on: all 506 data files had shifted by exactly one sector, COMM.DAT to 308, COMM.IMG to 668, COMM.SND to 892, while the executable content itself matched the v103 build.
+- This is the shared cause of v101, v102 and v103, which are exactly the three builds that changed the file size; v98 and v100 did not and both passed. The replacement bootstrap, the split BSS clear and the write to `0x801CDE00` were never the problem. The v102 bisection was read too narrowly at the time: it ruled out the transfer but left both the destination and the file size standing, and only the destination was pursued.
+- Added `02_scripts/verify_iso_layout.py`, which compares a built image against the untouched original and fails if any data file changed sector number or if `PSX.EXE`'s content does not match the intended build. A layout error is otherwise silent until the game reads something.
+
+2026-08-01 v104 disc layout, so the executable can grow:
+- Considered and rejected patching the sector numbers: 1073 word-aligned words in the executable equal some file's sector number against only 507 files, they sit in at least two differently strided tables, and seven files after `PSX.EXE` have no sector number in the executable at all. A single miss would surface as a wrong scene load much later.
+- Considered and rejected keeping the size and splitting the upload: the largest zero run in the image below the BSS clear is 128 bytes, 327 bytes in total.
+- Considered and rejected a VRAM master copy refreshed with a VRAM-to-VRAM blit: no 45x12 area anywhere in the COMM.IMG strip is identical across all 134 savestates, so there is nowhere stable to keep it.
+- Considered and rejected overwriting an uncalled function: the six candidates of sufficient size are all real code with real prologues, and "no direct caller" is weaker evidence than it looks.
+- Chose to change the disc instead of the executable. Added `02_scripts/build_iso_layout_v104_exe_at_end.py`, which writes `E:\arc\arc1_v104.xml`: a 284-sector dummy holds open the slot `PSX.EXE` used to occupy, so COMM.DAT still starts at 307 and nothing else moves, and `PSX.EXE` is placed at the end of the disc where it may be any size.
+- This touches no game code, and its failure mode is immediate and total rather than a subtle late corruption. It also removes the size ceiling permanently, which the remaining glyph rows will need: the full script projects to roughly 947 distinct syllables, about seven more atlas rows.
+- `PSX.EXE` itself is unchanged from v103; only the disc layout differs.
+- v104 layout verified against the built image: all 506 data files kept their sector number, COMM.DAT/COMM.IMG/COMM.SND are at 307/667/891 as the executable expects, and `PSX.EXE` sits at LBA 268481 with content matching the v103 build. `verify_iso_layout.py` reports PASS.
+- The game boots and runs. This is the first build in which plan D-lite is actually live: the glyph block is re-uploaded to the P6 rectangle once per frame from reserved RAM.
+- Note for rebuilds: DuckStation names memory cards after the image file, so building to a new filename presents an empty card. The existing card is `memcards/arc1_1.mcd`; keeping the output name stable avoids it.
+- v104 runtime result: PASS on every checkpoint. The post-BIOS corruption is gone, expanded glyphs display correctly, and they remain correct across repeated scene changes. Plan D-lite works.
+- The last one is the result that matters. Until now the game reused the P6 area of VRAM and item names decayed as play went on; the per-frame upload undoes that before each frame is drawn.
+- Promoted to the accepted baseline and frozen under `99_backup/baselines/ui_hud_e7_v104_runtime_success_2026-08-01/`, which holds the patch archive, the build report and `arc1_v104.xml`. A build is now two parts and both are required. v98 remains the fallback, but it needs the original `arc1.xml` layout.
+- Verified the renamed working image: `E:\arc\arc1.bin` is the v104 layout and passes `verify_iso_layout.py`, so the existing memory card `arc1_1.mcd` attaches again.
+- The executable size ceiling is gone. The full script projects to roughly 947 distinct syllables against 57 in the store today, about seven more atlas rows, and appending them no longer disturbs the disc.

@@ -1,0 +1,74 @@
+Arc the Lad Korean patch v101 build report
+
+base_v98=ui_hud_e7_v100_loadimage_frameboundary_patch_only.zip
+output=ui_hud_e7_v101_glyph_ram_upload_patch_only.zip
+output_sha256=3DC4A81533311800D2A9848479A75255E76F501047C10BCFE4518F0E26A178EC
+psx_sha256=1FA47E0CA86520A50A877BB6A01742B1569F79BB9BC946B00D0A2C427BF11ED9
+
+PSX.EXE 581632 -> 583680 bytes (t_size 0x8D800 -> 0x8E000)
+*** the ISO must be rebuilt with mkpsxiso; replacing the file in place is not enough ***
+
+glyph block: COMM.IMG y 288..299, x4bpp 2856..3035  (1080 bytes)
+  appended at 0x801A8800, copied at boot to 0x801CDE00
+VRAM rectangle: x=714 y=288 w=45 h=12 (16-bit units)  -> x4bpp 2856..3035
+
+entry 0x801757BC: j 0x80193B44    (was the inline v85 bootstrap)
+bootstrap 0x80193B44..0x80193BBF  (124 of 128 verified-free bytes)
+
+bootstrap listing:
+  0x80193B44  3C04801F  lui   a0,hi(helper dst)
+  0x80193B48  3484E3C4  ori   a0,a0,lo
+  0x80193B4C  3C05801A  lui   a1,hi(helper src)
+  0x80193B50  34A586EC  ori   a1,a1,lo
+  0x80193B54  24060114  addiu a2,zero,276
+  0x80193B58  0C000028  jal   BIOS memcpy
+  0x80193B5C  2409002A  addiu t1,zero,42       ; A(2Ah)
+  0x80193B60  3C04801C  lui   a0,hi(glyph dst)
+  0x80193B64  3484DE00  ori   a0,a0,lo
+  0x80193B68  3C05801A  lui   a1,hi(glyph src)
+  0x80193B6C  34A58800  ori   a1,a1,lo
+  0x80193B70  24060438  addiu a2,zero,1080
+  0x80193B74  0C000028  jal   BIOS memcpy
+  0x80193B78  2409002A  addiu t1,zero,42
+  0x80193B7C  3C03801A  lui   v1,hi(clear start)
+  0x80193B80  346386E8  ori   v1,v1,lo
+  0x80193B84  3C08801C  lui   t0,hi(glyph dst)
+  0x80193B88  3508DE00  ori   t0,t0,lo
+  0x80193B8C  24630004  addiu v1,v1,4          ; loop 1
+  0x80193B90  1468FFFE  bne   v1,t0,-2
+  0x80193B94  AC60FFFC  sw    zero,-4(v1)      ; delay slot
+  0x80193B98  3C03801C  lui   v1,hi(after block)
+  0x80193B9C  3463E238  ori   v1,v1,lo
+  0x80193BA0  3C08801F  lui   t0,hi(clear end)
+  0x80193BA4  3508E3C4  ori   t0,t0,lo
+  0x80193BA8  24630004  addiu v1,v1,4          ; loop 2
+  0x80193BAC  1468FFFE  bne   v1,t0,-2
+  0x80193BB0  AC60FFFC  sw    zero,-4(v1)      ; delay slot
+  0x80193BB4  24020004  addiu v0,zero,4        ; original code expects v0=4
+  0x80193BB8  0805D5FD  j     0x801757F4
+  0x80193BBC  00000000  nop
+
+BSS is cleared as [0x801A86E8, 0x801CDE00) and [0x801CE238, 0x801FE3C4),
+so the glyph copy survives startup. The bootstrap itself sits below the clear
+start and therefore cannot erase itself while running.
+
+invariants held:
+- 0x8016B764 == 0x080688A8   render-path hook as in v98
+- 0x801A2194 == 0x34E7001B   v97 high-page tpage
+- 0x801A2204 == 0x90620029   v92 classifier
+- 0x801A2168 == 0x2463FFCC   v98 slot reservation
+- 0x8016B148 == 0xAE260000   initializer is original game code
+- 0x80177E4C == 0x27BDFFD0   LoadImage prologue
+- 0x8011C49C == 0x0C05DAEA   GPU sync call before the hook
+- 0x8011C4AC == 0x0C06881D   v100 frame-swap hook calls the stub
+- 0x801A2074 == 0x27BDFFE0   v100 stub prologue
+- 0x801A208C == 0x0C05DF93   v100 stub calls LoadImage
+- 0x801A2098 == 0x0C047205   v100 stub tail-calls the frame swap
+
+expected result: item and skill names render correctly and stay correct, and the
+scratch corruption from v100 is gone because the transfer now targets P6.
+if it fails, the new bootstrap is the prime suspect.
+
+static_verification=PASS
+runtime_verification=PENDING
+rollback baseline=99_backup/baselines/ui_hud_e7_v98_runtime_success_2026-07-31

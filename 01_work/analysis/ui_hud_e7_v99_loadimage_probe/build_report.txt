@@ -1,0 +1,47 @@
+Arc the Lad Korean patch v99 build report  (DIAGNOSTIC PROBE, not a release)
+
+base_v98=ui_hud_e7_v98_restore_object_capacity_patch_only.zip
+base_v98_sha256=526232330287EEF6AA66A1020B2C0E472DA936CABD90DD55FFA9A31F2ADB36B3
+output=ui_hud_e7_v99_loadimage_probe_patch_only.zip
+output_sha256=DBFA45B544259C519F648B2D5C748AB2C04836A0C7A09F252DD2426A7848CE18
+psx_sha256=C0C1548DA3ACCD3F7E788C23027656340FE79979B510810B5CAD55BA80E2E942
+
+changed_members: PSX.EXE only
+changed_bytes: 54
+
+hook  0x8016B764: j 0x801A22A0 -> j 0x801A2074
+stub  0x801A2074..0x801A20AF   (was free cave)
+rect  0x801A22E4: x=208 y=468 w=16 h=12  (16-bit units)
+source 0x8011B000  (384 bytes transferred)
+
+stub listing:
+  0x801A2074  27BDFFE0  addiu sp,sp,-32
+  0x801A2078  AFBF0010  sw    ra,0x10(sp)
+  0x801A207C  AFA40014  sw    a0,0x14(sp)
+  0x801A2080  AFA50018  sw    a1,0x18(sp)
+  0x801A2084  3C04801A  lui   a0,0x801A
+  0x801A2088  3C058011  lui   a1,0x8011
+  0x801A208C  348422E4  ori   a0,a0,0x22E4      ; a0 = RECT
+  0x801A2090  0C05DF93  jal   0x80177E4C      ; LoadImage
+  0x801A2094  34A5B000  ori   a1,a1,0xB000      ; delay slot: a1 = source
+  0x801A2098  8FBF0010  lw    ra,0x10(sp)
+  0x801A209C  8FA40014  lw    a0,0x14(sp)
+  0x801A20A0  8FA50018  lw    a1,0x18(sp)
+  0x801A20A4  27BD0020  addiu sp,sp,32
+  0x801A20A8  080688A8  j     0x801A22A0      ; original trampoline
+  0x801A20AC  00000000  nop
+
+register safety: a0 and a1 are saved and restored because both the trampoline
+and the original renderer at 0x8016B764 consume them (a0 = text object,
+a1 = buffer index). ra is saved because the stub calls LoadImage.
+
+the destination is off-screen and was byte-identical in every savestate, so a
+successful transfer is invisible and a failed one damages nothing visible.
+
+question under test: does the game still run normally?
+  yes -> LoadImage is callable here; proceed to a real glyph upload
+  no  -> the transfer cannot happen at this point; change hook site or defer
+
+static_verification=PASS
+runtime_verification=PENDING
+rollback baseline=99_backup/baselines/ui_hud_e7_v98_runtime_success_2026-07-31

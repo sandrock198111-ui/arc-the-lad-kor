@@ -1,0 +1,54 @@
+Arc the Lad Korean patch v100 build report  (DIAGNOSTIC PROBE)
+
+base_v98=ui_hud_e7_v98_restore_object_capacity_patch_only.zip
+base_v98_sha256=526232330287EEF6AA66A1020B2C0E472DA936CABD90DD55FFA9A31F2ADB36B3
+output=ui_hud_e7_v100_loadimage_frameboundary_patch_only.zip
+output_sha256=B0B94915DC89AFA259834A0B5EC32840130108AE1084A4DA02140FCC215AFBAF
+psx_sha256=D8D2D48D08CE18473BE27815EF0D431C9E9FD577EC3039BEC5BD763F22A09A9B
+
+changed_members: PSX.EXE only
+changed_bytes: 53
+
+hook 0x8011C4AC: jal 0x8011C814 -> jal 0x801A2074
+stub 0x801A2074..0x801A20AF
+rect 0x801A22E4: x=208 y=468 w=16 h=12  (384 bytes)
+source 0x8011B000
+
+why here: 0x8011C49C calls the GPU driver's sync entry with a0 = 0 immediately
+before this point, so the GPU is idle between that call and the frame swap.
+v99 hooked the render path instead and deadlocked inside LoadImage waiting on
+GPUSTAT & 0x04000000 while the frame it was blocking could never complete.
+
+stub listing:
+  0x801A2074  27BDFFE0  addiu sp,sp,-32
+  0x801A2078  AFBF0010  sw    ra,0x10(sp)
+  0x801A207C  AFA40014  sw    a0,0x14(sp)     ; render context, needed by the swap
+  0x801A2080  3C04801A  lui   a0,0x801A
+  0x801A2084  3C058011  lui   a1,0x8011
+  0x801A2088  348422E4  ori   a0,a0,0x22E4    ; a0 = RECT
+  0x801A208C  0C05DF93  jal   0x80177E4C     ; LoadImage, GPU is idle here
+  0x801A2090  34A5B000  ori   a1,a1,0xB000    ; delay slot: a1 = source
+  0x801A2094  8FA40014  lw    a0,0x14(sp)     ; restore render context
+  0x801A2098  0C047205  jal   0x8011C814     ; the original frame swap
+  0x801A209C  00000000  nop
+  0x801A20A0  8FBF0010  lw    ra,0x10(sp)
+  0x801A20A4  27BD0020  addiu sp,sp,32
+  0x801A20A8  03E00008  jr    ra
+  0x801A20AC  00000000  nop
+
+invariants held:
+- 0x8016B764 == 0x080688A8   render-path hook left exactly as v98 has it
+- 0x801A22A0 == 0x3C028020   trampoline untouched
+- 0x801A2194 == 0x34E7001B   v97 high-page tpage preserved
+- 0x801A2204 == 0x90620029   v92 classifier preserved
+- 0x801A2168 == 0x2463FFCC   v98 slot reservation preserved
+- 0x8016B148 == 0xAE260000   initializer still original game code
+- 0x80177E4C == 0x27BDFFD0   LoadImage prologue as expected
+- 0x8011C49C == 0x0C05DAEA   the sync call right before our hook
+- 0x8011C4A8 == 0x8C8412EC   a0 is loaded with the render context before the hook
+- 0x8011C4B0 == 0x00000000   hook delay slot is a nop
+
+question under test: does the game still run normally?
+static_verification=PASS
+runtime_verification=PENDING
+rollback baseline=99_backup/baselines/ui_hud_e7_v98_runtime_success_2026-07-31

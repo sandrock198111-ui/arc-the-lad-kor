@@ -1,0 +1,32 @@
+v103 heap-reserved glyph store, re-uploaded at the frame boundary
+
+base    ui_hud_e7_v100_loadimage_frameboundary_patch_only.zip
+        sha256 B0B94915DC89AFA259834A0B5EC32840130108AE1084A4DA02140FCC215AFBAF
+output  ui_hud_e7_v103_heap_reserved_glyphs_patch_only.zip
+        sha256 9EE40993E72962F26DAFBD61CA565D4646E247D9990B79EF5122776838584FD3
+PSX.EXE 583680 bytes, t_size 0x8E000 (was 581632 / 0x8D800)
+
+glyph block
+  COMM.IMG source   4bpp x 2856..3035, y 288..299
+  LoadImage rect    x 714, y 288, w 45, h 12 (16-bit units)
+  size              1080 bytes
+  appended at       0x801A8800, 968 bytes of padding
+  copied to         0x801FE4D8..0x801FE90F
+
+reservation
+  one memcpy now moves 1356 bytes from 0x801A86EC to 0x801FE3C4
+  BSS clear unchanged: 0x801A86E8..0x801FE3C4
+  InitHeap base 0x801FE4DC -> 0x801FE910 (1076 bytes reserved)
+  lowest heap address written in 133 savestates: 0x801FFA60
+
+words changed
+  0x801757CC  2406054C  memcpy length 276 -> 1356: helper and glyphs in one call
+  0x80175810  2484E90C  heap base 0x801FE4DC -> 0x801FE910
+  0x801A2084  3C05801F  stub source, high half
+  0x801A2090  34A5E4D8  stub source, low half (delay slot)
+  0x801A22E4  012002CA  rect x/y
+  0x801A22E8  000C002D  rect w/h
+
+rollback: 99_backup/baselines/ui_hud_e7_v98_runtime_success_2026-07-31/
+
+PSX.EXE changed size; rebuild the ISO with mkpsxiso rather than replacing the file in place.
