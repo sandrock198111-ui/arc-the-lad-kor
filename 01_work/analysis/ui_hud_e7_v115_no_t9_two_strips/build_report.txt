@@ -1,0 +1,33 @@
+v115 two strips with a no-t9 classifier
+
+base    ui_hud_e7_v112_two_strips_resident_patch_only.zip
+output  ui_hud_e7_v115_no_t9_two_strips_patch_only.zip
+sha256  506806E97A34083A451D05210A5A71559476AA0F02EC5F9AB988CE34B0898D26
+PSX.EXE 583680 bytes, unchanged; v104 disc layout still applies
+
+unchanged from v112:
+  two 13-column strips, 104 glyph slots
+  strip A (961,480), strip B (961,500), tpage 0x1F
+  both LoadImage calls, lookup remap, rectangles and glyph pixels
+
+changed:
+  classifier uses v0+t8 only and accepts exactly V=224 or V=244
+  t9 is never written
+  classifier 36 -> 40 bytes
+  frame routine moves 0x801FEC4C -> 0x801FEC50
+  heap starts at 0x801FEC90 (3536 bytes clear)
+
+classifier:
+  0x801FEC28  90620029  lbu   v0,0x29(v1)
+  0x801FEC2C  00000000  nop                       ; load delay
+  0x801FEC30  2458FF20  addiu t8,v0,-224
+  0x801FEC34  13000004  beq   t8,zero,match
+  0x801FEC38  2458FF0C  addiu t8,v0,-244         ; delay slot
+  0x801FEC3C  2F020001  sltiu v0,t8,1             ; V == 244
+  0x801FEC40  03E00008  jr    ra
+  0x801FEC44  00000000  nop
+  0x801FEC48  03E00008  match: jr ra
+  0x801FEC4C  34020001  ori   v0,zero,1           ; delay slot
+
+runtime status: pending
+rollback: v103 + arc1_v104.xml
