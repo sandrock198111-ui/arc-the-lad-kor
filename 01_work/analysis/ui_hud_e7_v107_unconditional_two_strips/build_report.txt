@@ -1,0 +1,55 @@
+v107 unconditional two-strip upload, and no glyphs at the old location
+
+base    ui_hud_e7_v106_two_strips_patch_only.zip
+output  ui_hud_e7_v107_unconditional_two_strips_patch_only.zip
+        sha256 2BE491F12BCF9DC6BA7C4B73D817F2DA981203E92902E6CC10B9D47CF7463982
+PSX.EXE 585728 bytes, unchanged in size
+COMM.IMG 458752 bytes, unchanged in size; 701 non-zero bytes cleared from the old glyph rectangle
+
+why the old rectangle is cleared
+  the original COMM.IMG is all zeros at 4bpp x 2856..3035, y 288..299
+  the game uploads COMM.IMG itself, so it painted the glyphs there regardless
+  of what the patch did, which is what the skill range overlay was showing
+
+why the countdown is gone
+  it existed so v105 could return a rectangle it shared with the game
+  the new location has no savestate with a non-zero pixel in it, so there is
+  nothing to share and nothing to return
+
+reserved RAM
+  0x801FE3C4  helper          276
+  0x801FE4D8  glyph strip A   936
+  0x801FE880  glyph strip B   936
+  0x801FEC28  classifier       36
+  0x801FEC4C  frame routine    64
+  0x801FEC8C  heap starts here (3540 bytes clear of heap the game uses)
+  one memcpy moves 2248 bytes
+
+words changed
+  0x801757CC  240608C8  memcpy length -> 2248
+  0x80175810  2484EC88  heap base -> 0x801FEC8C
+  0x801A2198  0C05DD21  tpage call restored to the real DR_TPAGE constructor
+  0x801A2204  0C07FB0A  classifier -> 0x801FEC28
+  0x801A208C  0C07FB13  frame routine -> 0x801FEC4C, unconditional upload
+
+frame routine at 0x801FEC4C
+  0x801FEC4C  27BDFFE8  addiu sp,sp,-24
+  0x801FEC50  AFBF0014  sw    ra,0x14(sp)
+  0x801FEC54  3C04801A  lui   a0,hi(rect A)
+  0x801FEC58  348422E4  ori   a0,a0,lo
+  0x801FEC5C  3C05801F  lui   a1,hi(glyphs A)
+  0x801FEC60  0C05DF93  jal   LoadImage
+  0x801FEC64  34A5E4D8  ori   a1,a1,lo   ; delay slot
+  0x801FEC68  3C04801A  lui   a0,hi(rect B)
+  0x801FEC6C  348422EC  ori   a0,a0,lo
+  0x801FEC70  3C05801F  lui   a1,hi(glyphs B)
+  0x801FEC74  0C05DF93  jal   LoadImage
+  0x801FEC78  34A5E880  ori   a1,a1,lo   ; delay slot
+  0x801FEC7C  8FBF0014  lw    ra,0x14(sp)
+  0x801FEC80  27BD0018  addiu sp,sp,24
+  0x801FEC84  03E00008  jr    ra
+  0x801FEC88  00000000  nop
+
+rollback: 99_backup/baselines/ui_hud_e7_v104_runtime_success_2026-08-01/
+
+Rebuild with arc1_v104.xml and run 02_scripts/verify_iso_layout.py first.

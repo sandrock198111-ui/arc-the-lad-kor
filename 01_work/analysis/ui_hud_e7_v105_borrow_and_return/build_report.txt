@@ -1,0 +1,83 @@
+v105 borrow the P6 rectangle while text is on screen, and return it after
+
+base    ui_hud_e7_v103_heap_reserved_glyphs_patch_only.zip
+        sha256 9EE40993E72962F26DAFBD61CA565D4646E247D9990B79EF5122776838584FD3
+output  ui_hud_e7_v105_borrow_and_return_patch_only.zip
+        sha256 25ED1A9D23C69519A279A2989F166BA5C3E373333494630CBB520D0BCF1265A5
+PSX.EXE 583680 bytes, unchanged in size, so the v104 disc layout still applies
+
+reserved RAM after the startup copy
+  0x801FE3C4  P6 helper          276 bytes
+  0x801FE4D8  glyph strip       1080
+  0x801FE910  countdown shim      16
+  0x801FE920  frame routine      176
+  0x801FE9D0  state                8  (copied as zeros)
+  0x801FE9D8  backup buffer     1080  (written at runtime)
+  0x801FEE10  heap starts here
+  one memcpy moves 1556 bytes from 0x801A86EC
+  lowest heap address seen written in 133 savestates: 0x801FFA60
+
+words changed
+  0x801757CC  24060614  memcpy length 1356 -> 1556, carrying the code and state
+  0x80175810  2484EE0C  heap base -> 0x801FEE10, above the backup buffer
+  0x801A2198  0C07FA44  the per-frame text tpage call now arms the countdown first
+  0x801A208C  0C07FA48  the frame-boundary stub now runs borrow/return instead of a bare upload
+
+countdown shim @ 0x801FE910
+  0x801FE910  3C018020  lui   at,0x8020
+  0x801FE914  24080008  addiu t0,zero,8
+  0x801FE918  0805DD21  j     0x80177484      ; tail call
+  0x801FE91C  AC28E9D0  sw    t0,-5680(at)  ; delay slot, -> 0x801FE9D0
+
+frame routine @ 0x801FE920
+  0x801FE920  27BDFFE8  addiu sp,sp,-24
+  0x801FE924  AFBF0014  sw    ra,0x14(sp)
+  0x801FE928  AFB00010  sw    s0,0x10(sp)
+  0x801FE92C  3C10801F  lui   s0,hi(state)
+  0x801FE930  3610E9D0  ori   s0,s0,lo(state)
+  0x801FE934  8E080000  lw    t0,0x0(s0)      ; countdown
+  0x801FE938  00000000  nop
+  0x801FE93C  11000015  beq   t0,zero,release
+  0x801FE940  00000000  nop
+  0x801FE944  2508FFFF  addiu t0,t0,-1
+  0x801FE948  AE080000  sw    t0,0x0(s0)
+  0x801FE94C  8E090004  lw    t1,0x4(s0)     ; borrowed?
+  0x801FE950  00000000  nop
+  0x801FE954  15200008  bne   t1,zero,upload
+  0x801FE958  00000000  nop
+  0x801FE95C  3C04801A  lui   a0,hi(rect)
+  0x801FE960  348422E4  ori   a0,a0,lo(rect)
+  0x801FE964  3C05801F  lui   a1,hi(backup)
+  0x801FE968  0C05E03F  jal   StoreImage     ; save the game's pixels
+  0x801FE96C  34A5E9D8  ori   a1,a1,lo(backup)
+  0x801FE970  24090001  addiu t1,zero,1
+  0x801FE974  AE090004  sw    t1,0x4(s0)     ; borrowed
+  0x801FE978  3C04801A  upload: lui a0,hi(rect)
+  0x801FE97C  348422E4  ori   a0,a0,lo(rect)
+  0x801FE980  3C05801F  lui   a1,hi(glyphs)
+  0x801FE984  0C05DF93  jal   LoadImage      ; put the glyphs up
+  0x801FE988  34A5E4D8  ori   a1,a1,lo(glyphs)
+  0x801FE98C  1000000B  beq   zero,zero,done
+  0x801FE990  00000000  nop
+  0x801FE994  8E090004  release: lw t1,0x4(s0)
+  0x801FE998  00000000  nop
+  0x801FE99C  11200007  beq   t1,zero,done
+  0x801FE9A0  00000000  nop
+  0x801FE9A4  AE000004  sw    zero,0x4(s0)  ; no longer borrowed
+  0x801FE9A8  3C04801A  lui   a0,hi(rect)
+  0x801FE9AC  348422E4  ori   a0,a0,lo(rect)
+  0x801FE9B0  3C05801F  lui   a1,hi(backup)
+  0x801FE9B4  0C05DF93  jal   LoadImage      ; give the area back
+  0x801FE9B8  34A5E9D8  ori   a1,a1,lo(backup)
+  0x801FE9BC  8FBF0014  done: lw ra,0x14(sp)
+  0x801FE9C0  8FB00010  lw    s0,0x10(sp)
+  0x801FE9C4  27BD0018  addiu sp,sp,24
+  0x801FE9C8  03E00008  jr    ra
+  0x801FE9CC  00000000  nop
+
+the glyphs stay up for 8 frames after the last text draw
+
+rollback: 99_backup/baselines/ui_hud_e7_v104_runtime_success_2026-08-01/
+
+PSX.EXE is the same size as v103, so rebuild with arc1_v104.xml and run
+02_scripts/verify_iso_layout.py before playing.

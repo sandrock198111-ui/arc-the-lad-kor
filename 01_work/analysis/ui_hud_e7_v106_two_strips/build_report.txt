@@ -1,0 +1,74 @@
+v106 two glyph strips in VRAM the game never draws into
+
+base    ui_hud_e7_v105_borrow_and_return_patch_only.zip
+output  ui_hud_e7_v106_two_strips_patch_only.zip
+        sha256 312DCBE1BD0A0EA4D11CFEBC23E91F69D1AADFCEDD2429AC86D10303B751B523
+PSX.EXE 585728 bytes (grew 2048); PSX.EXE is last on the disc under the v104 layout, so nothing else moves
+
+VRAM
+  tpage 0x1F, page 15,1   x 961..999   U offset 4
+  strip A  y 480..491   V=224   row 40
+  strip B  y 500..511   V=244   row 63
+  13 columns each, 104 glyph slots, 57 in use
+
+reserved RAM
+  0x801FE3C4  helper          276
+  0x801FE4D8  glyph strip A   936
+  0x801FE880  glyph strip B   936
+  0x801FEC28  countdown shim   16
+  0x801FEC38  classifier       36
+  0x801FEC5C  frame routine   236
+  0x801FED48  state             8
+  0x801FED50  backup A        936
+  0x801FF0F8  backup B        936
+  0x801FF4A0  heap starts here (1472 bytes clear of heap the game uses)
+  one memcpy moves 2444 bytes
+
+lookup table: 57 entries moved off row 24
+
+words changed
+  0x801757CC  2406098C  memcpy length -> 2444
+  0x80175810  2484F49C  heap base -> 0x801FF4A0
+  0x801A2194  34E7001F  tpage 0x1B -> 0x1F, page 15,1
+  0x801A2198  0C07FB0A  countdown shim, relocated
+  0x801A2204  0C07FB0E  classifier moved into a subroutine
+  0x801A2208  00742821  its delay slot, hoisted from +20
+  0x801A220C  00000000  was the inline compare
+  0x801A2210  00000000  was the inline test
+  0x801A2218  00000000  the branch delay slot, a1 is already set
+  0x801A208C  0C07FB17  frame routine, relocated
+  0x801A22E4  01E003C1  strip A rect x=961 y=480
+  0x801A22E8  000C0027  strip A rect w=39 h=12
+  0x801A22EC  01F403C1  strip B rect x=961 y=500
+  0x801A22F0  000C0027  strip B rect w=39 h=12
+
+helper, rewritten at 0x801FE3C4
+  0x801FE3C4  2507FFD8  addiu a3,t0,-40
+  0x801FE3C8  2CE70001  sltiu a3,a3,1
+  0x801FE3CC  14E00004  bne   a3,zero,add
+  0x801FE3D0  2507FFC1  addiu a3,t0,-63   ; delay slot
+  0x801FE3D4  2CE70001  sltiu a3,a3,1
+  0x801FE3D8  10E00005  beq   a3,zero,out
+  0x801FE3DC  00000000  nop
+  0x801FE3E0  90A70028  add: lbu a3,0x28(a1)   ; U
+  0x801FE3E4  00000000  nop
+  0x801FE3E8  24E70004  addiu a3,a3,4
+  0x801FE3EC  A0A70028  sb    a3,0x28(a1)
+  0x801FE3F0  90C2000E  out: lbu v0,0xE(a2)
+  0x801FE3F4  0805AD78  j     0x8016B5E0
+  0x801FE3F8  00000000  nop
+
+classifier at 0x801FEC38
+  0x801FEC38  90620029  lbu   v0,0x29(v1)    ; V
+  0x801FEC3C  00000000  nop
+  0x801FEC40  2448FF20  addiu t0,v0,-224
+  0x801FEC44  2D080001  sltiu t0,t0,1
+  0x801FEC48  2449FF0C  addiu t1,v0,-244
+  0x801FEC4C  2D290001  sltiu t1,t1,1
+  0x801FEC50  01091025  or    v0,t0,t1
+  0x801FEC54  03E00008  jr    ra
+  0x801FEC58  00000000  nop
+
+rollback: 99_backup/baselines/ui_hud_e7_v104_runtime_success_2026-08-01/
+
+Rebuild with arc1_v104.xml and run 02_scripts/verify_iso_layout.py before playing.

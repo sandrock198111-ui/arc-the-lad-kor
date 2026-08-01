@@ -1,0 +1,25 @@
+v109 restore the battle range overlay's texture
+
+base    ui_hud_e7_v103_heap_reserved_glyphs_patch_only.zip
+output  ui_hud_e7_v109_restore_range_overlay_patch_only.zip
+        sha256 C7976E965EC3BF3F30A2D6EE8EC8DC76EA59E316E6C5BD5D8FE85F2E35D4DC5D
+neither file changes size, so the v104 disc layout still applies
+
+what was wrong
+  the range overlay samples texture page 5,0 at VRAM x 328..336, y 128..160
+  the original COMM.IMG holds a hollow rectangular frame there
+  the Hangul font replacement wrote glyphs over it
+
+restored: base-atlas rows 10..13, columns 2..5  (16 cells, 640 bytes)
+
+glyphs moved out of the way
+  table slot  42: 944 -> 2073   row 11 col 5 plane 0 -> row 24 col 14 plane 1   46 pixels
+  table slot  46: 943 -> 2074   row 11 col 4 plane 3 -> row 24 col 14 plane 2   49 pixels
+
+the P6 strip is safe for them: it is blank in the original COMM.IMG, which is
+the property the base atlas turned out not to have.
+
+rollback: 99_backup/baselines/ui_hud_e7_v104_runtime_success_2026-08-01/
+
+Rebuild with arc1_v104.xml, then run:
+  python 02_scripts/verify_iso_layout.py E:\arc\arc1_v104.bin ui_hud_e7_v109_restore_range_overlay_patch_only.zip

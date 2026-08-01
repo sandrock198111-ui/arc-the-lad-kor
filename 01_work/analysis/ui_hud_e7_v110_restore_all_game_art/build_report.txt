@@ -1,0 +1,29 @@
+v110 restore every piece of game artwork the font replacement overwrote
+
+base    ui_hud_e7_v109_restore_range_overlay_patch_only.zip
+output  ui_hud_e7_v110_restore_all_game_art_patch_only.zip
+        sha256 6C621CACC76F224F3E349C3A8ECAD58D6B068B52EB8A91CF77E440BCFCF28F35
+neither file changes size, so the v104 disc layout still applies
+
+cells restored : 120
+bytes restored : 6939
+glyphs moved   : 3
+
+a cell counted as damaged when a byte the patch changed was non-zero in the
+original: that is artwork, not empty space. after this build no such byte
+remains anywhere in COMM.IMG.
+
+glyphs moved, and where to
+  row  1 col 14 -> row  9 col 18   table slots [0]   VRAM x 374..376, y 108..119
+  row  2 col  1 -> row  9 col 19   table slots [6]   VRAM x 377..379, y 108..119
+  row 11 col 15 -> row  9 col 20   table slots [3]   VRAM x 380..382, y 108..119
+
+homes were chosen by the only property that has held up: entirely blank in the
+original COMM.IMG. being unreferenced by the lookup table proves nothing -- the
+range overlay's cells were unreferenced and the game was drawing them.
+
+rollback: 99_backup/baselines/ui_hud_e7_v104_runtime_success_2026-08-01/
+
+Rebuild with arc1_v104.xml, then run:
+  python 02_scripts/verify_iso_layout.py E:\arc\arc1_v104.bin ui_hud_e7_v110_restore_all_game_art_patch_only.zip
+  python 02_scripts/audit_overwritten_game_art.py ui_hud_e7_v110_restore_all_game_art_patch_only.zip

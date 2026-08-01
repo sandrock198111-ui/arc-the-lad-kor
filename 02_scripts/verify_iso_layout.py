@@ -4,7 +4,10 @@ The game reads its data by sector, so a layout change is silent until the game r
 something. Comparing the new image against the untouched original catches it in a few
 seconds instead of costing a play session.
 
-    python 02_scripts/verify_iso_layout.py E:\\arc\\arc1.bin
+    python 02_scripts/verify_iso_layout.py E:\\arc\\arc1_v104.bin [patch.zip]
+
+The patch archive defaults to the current build; pass one explicitly when testing a
+different build, or every file will be reported stale.
 """
 from __future__ import annotations
 
@@ -15,7 +18,7 @@ import zipfile
 from pathlib import Path
 
 ORIGINAL = Path(r"E:\arc\원본\arc1.bin")
-PATCH = Path(r"E:\korean\03_output/ui_hud_e7_v103_heap_reserved_glyphs_patch_only.zip")
+PATCH = Path(r"E:\korean\03_output/ui_hud_e7_v107_unconditional_two_strips_patch_only.zip")
 RAW = 2352
 
 
@@ -85,6 +88,14 @@ def main() -> None:
     built = Path(sys.argv[1])
     if not built.exists():
         raise SystemExit(f"no such image: {built}")
+    global PATCH
+    if len(sys.argv) > 2:
+        PATCH = Path(sys.argv[2])
+        if not PATCH.exists():
+            PATCH = Path(r"E:\korean\03_output") / sys.argv[2]
+        if not PATCH.exists():
+            raise SystemExit(f"no such patch archive: {sys.argv[2]}")
+    print(f"patch    {PATCH.name}\n")
 
     old = read_iso(ORIGINAL)
     new = read_iso(built)
@@ -120,20 +131,39 @@ def main() -> None:
                   f"  (executable expects {old[name][0]})")
             ok &= same
 
-    if "PSX.EXE" in new:
-        lba, size = new["PSX.EXE"]
-        print(f"\n  PSX.EXE at LBA {lba} (was {old['PSX.EXE'][0]}), {size} bytes")
-        with zipfile.ZipFile(PATCH) as z:
-            want = z.read("PSX.EXE")
+    # Every file the patch replaces, not just the executable. Checking only PSX.EXE
+    # let an image built from a stale COMM.IMG report PASS, which cost a play session.
+    print()
+    with zipfile.ZipFile(PATCH) as z:
+        members = {i.filename: z.read(i.filename) for i in z.infolist()
+                   if not i.is_dir()}
+    print(f"  comparing {len(members)} patched files against the image")
+    stale = []
+    for name in sorted(members):
+        if name not in new:
+            ok = False
+            print(f"FAIL  {name} is in the patch but not on the disc")
+            continue
+        lba, size = new[name]
         got = extract(built, lba, size)
-        match = got == want
-        print(f"{'pass' if match else 'FAIL'}  PSX.EXE content matches "
+        if got != members[name]:
+            stale.append(name)
+            ok = False
+            print(f"FAIL  {name} on the disc is not the patched version")
+            print(f"        disc  {size:>9} bytes  sha256 "
+                  f"{hashlib.sha256(got).hexdigest().upper()[:32]}")
+            print(f"        patch {len(members[name]):>9} bytes  sha256 "
+                  f"{hashlib.sha256(members[name]).hexdigest().upper()[:32]}")
+    if not stale:
+        print(f"pass  all {len(members)} patched files on the disc match "
               f"{PATCH.name}")
-        if not match:
-            print(f"        built  sha256 {hashlib.sha256(got).hexdigest().upper()}")
-            print(f"        wanted sha256 {hashlib.sha256(want).hexdigest().upper()}")
-            print(f"        built {size} bytes, wanted {len(want)}")
-        ok &= match
+    else:
+        print(f"\n  {len(stale)} file(s) came from an older build. Copy the patch "
+              f"archive's\n  contents into the mkpsxiso source folder and rebuild.")
+
+    if "PSX.EXE" in new:
+        print(f"\n  PSX.EXE at LBA {new['PSX.EXE'][0]} "
+              f"(was {old['PSX.EXE'][0]}), {new['PSX.EXE'][1]} bytes")
     else:
         ok = False
         print("FAIL  no PSX.EXE in the built image")
