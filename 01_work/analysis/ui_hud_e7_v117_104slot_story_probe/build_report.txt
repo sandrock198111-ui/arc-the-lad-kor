@@ -1,0 +1,34 @@
+v117 104-slot story-path coverage probe
+
+base    ui_hud_e7_v116_direct_stateless_renderer_patch_only.zip
+output  ui_hud_e7_v117_104slot_story_probe_patch_only.zip
+sha256  BC6BA6AD5B898A3E69AA23242643C3B969489497FA8BD0E5190CB262A14BDBD2
+
+coverage:
+  resident slots: 104/104, every target bitmap nonblank
+  strip A: 52/52; pages 1-2
+  strip B: 52/52; pages 3-4
+  retained existing P6 virtual codes: 57
+  added ordinary virtual codes for empty-slot coverage: 47
+  early E2 secondary pages: 4 x 26 E9/EA glyphs
+
+changed members:
+  PSX.EXE: lookup table plus the two resident strip source blocks only
+  1/S1011.DAT: external slots 0-3 only; inline E2 commands and skip tails preserved
+  COMM.IMG: byte-identical to v116
+  canonical translation CSVs: not modified
+
+PSX changed bytes: 1508
+S1011 changed bytes: 241
+slot tails preserved: 21 15 13 28
+reference CSV: E:\korean\01_work\analysis\ui_hud_e7_v117_104slot_story_probe\reference.csv
+reference PNG: E:\korean\01_work\analysis\ui_hud_e7_v117_104slot_story_probe\reference.png
+static verification: PASS
+runtime verification: PENDING
+
+runtime procedure:
+  cold boot and start a new game / reach the first S1011 sequence
+  capture four consecutive test messages
+  compare pages 1-4 with reference.png
+  advance past page 4 and confirm the scene continues
+  the known v103 skill-range cursor regression is outside this probe

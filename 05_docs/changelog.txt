@@ -894,3 +894,13 @@
 - Found the remaining stateful dependency: the common renderer still jumped to the old sidecar trampoline at `0x801A22A0`. Its three sidecar words are zero in the v115 state, so it always selected the original low-page renderer and never emitted the high-page DR_TPAGE.
 - Added `02_scripts/build_ui_hud_e7_v116_direct_stateless_renderer.py`. It changes only the renderer hook at `0x8016B764`, from `j 0x801A22A0` to `j 0x801A20B0`, entering the existing stateless two-pass driver directly.
 - Built `03_output/ui_hud_e7_v116_direct_stateless_renderer_patch_only.zip`, SHA256 `DC59B6211598508211BF201DDBAECF8C51386379F665D9B303C4C6301A09AC34`. PSX.EXE size and all other archive members are unchanged from v115. Static verification passes; runtime verification is pending. The separate v103-based skill-range cursor regression remains present.
+2026-08-02 - v116 targeted runtime acceptance
+- User cold-boot verification passed for the v116 target: `잎` rendered and the game progressed normally. This accepts the direct stateless renderer entry for the expanded-glyph path.
+- The separate skill-range cross cursor regression remains unresolved and is not included in this acceptance.
+2026-08-02 - v117 full 104-slot story-path coverage probe (runtime pending)
+- Added `02_scripts/build_ui_hud_e7_v117_104slot_story_probe.py`, based on the accepted v116 archive by exact SHA-256.
+- Filled all 104 resident high-page positions: 52 in strip A and 52 in strip B. The 57 virtual codes already using the strips were retained; 47 ordinary E9/EA codes were copied in only to exercise the previously blank positions.
+- Replaced only the first four external secondary-text slots in `1/S1011.DAT` with four 26-glyph diagnostic pages. No canonical translation CSV or COMM.IMG content was changed.
+- Built `03_output/ui_hud_e7_v117_104slot_story_probe_patch_only.zip`, SHA-256 `BC6BA6AD5B898A3E69AA23242643C3B969489497FA8BD0E5190CB262A14BDBD2`.
+- Independent archive audit passed: 79 members in the same order; only `PSX.EXE` and `1/S1011.DAT` differ; sizes are unchanged; all 104 targets are unique; slot tails `21 15 13 28` are preserved.
+- Runtime status is pending. v116 remains the accepted baseline and `bible_current.txt` is not promoted.
