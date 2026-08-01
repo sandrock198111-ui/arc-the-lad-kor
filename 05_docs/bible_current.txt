@@ -1475,3 +1475,7 @@ Reviewed script translation batch 20260801-001 - 2026-08-01
 - The batch moves the canonical table from 1,959 to 1,992 non-empty Korean cells. The same target rule now measures 3,183 blank rows, and 55 of the 88 strict high-confidence rows remain for later reviewed batches.
 - `02_scripts/apply_reviewed_translation_batch.py` requires an exact `(source file, offset, Japanese source)` match, refuses marker-bearing/blank sources and existing Korean cells, and logs the before/after SHA-256 values in `05_docs/translation_batch_log.csv`. A repeated application of batch 001 correctly fails before writing.
 - No original disc, game output, backup, ZIP, or emulator was touched. No new proper noun was created; existing `대회 위원`, `출전자`, `투기장`, `록토르`, `라마다사`, and `버스터` spellings were retained.
+Reviewed script translation batch 20260801-002 - 2026-08-01
+- Added 19 source-verified lines from the return-to-mountain sequence (`D/SD014`, `D/SD015`, `D/SD021`, and `D/SD071`). No line with an unresolved glyph, named-byte marker, or unclassified control sequence was included.
+- The canonical table now contains 2,011 non-empty Korean cells. The user-specified blank-target rule now measures 3,164 rows; the strict high-confidence queue is 36 rows.
+- Batch review files encode embedded Japanese line breaks as literal `\n`. The apply tool decodes only that notation and otherwise requires the Japanese source to be byte-for-byte equal to the canonical cell.

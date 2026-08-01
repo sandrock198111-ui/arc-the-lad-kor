@@ -958,3 +958,7 @@ Translation batch identity rule - 2026-08-01
 - `script_translated_full.csv` contains twelve duplicate `(source file, offset)` pairs in `COMM.DAT`; they are parser-generated non-dialogue candidates. A location alone is therefore not a stable mutation key.
 - `apply_reviewed_translation_batch.py` uses the exact triple `(source file, normalized offset, Japanese source)` and requires it to match exactly one canonical row. It rejects blank sources, `<G:` sources, existing Korean text, duplicate batch triples, and a reused batch id before writing.
 - Batch 20260801-001 was compared against frozen commit `67078e4`: exactly 33 canonical rows changed, all only in `korean` and provenance. This is the required verification pattern for every later translation batch.
+Reviewed-batch newline notation - 2026-08-01
+- Literal newlines in a quoted review CSV make a speaker label ending in a source-space look like a Git trailing-whitespace error. Review batches therefore represent embedded source line breaks as the two characters `\n`.
+- `apply_reviewed_translation_batch.py` rejects physical CR/LF in the review-source field, decodes only literal `\n`, and compares the resulting source triple exactly. This preserves source spaces while keeping the review file one record per physical CSV line.
+- Batch 20260801-002 changed exactly 19 canonical rows relative to commit `1fe4f69`; no pre-existing Korean or source cell changed.

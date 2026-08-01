@@ -7325,13 +7325,13 @@ D/SD013.DAT,0x47A2C,"
 D/SD013.DAT,0x49BFA,？0.1<CTRL:00>？//2<CTRL:00><CTRL:FE>,,
 D/SD013.DAT,0x49C12,？2/3<CTRL:00>？002<CTRL:00><CTRL:FE>,,
 D/SD013.DAT,0x49C2A,？415<CTRL:00>？112<CTRL:00><CTRL:FE>,,
-D/SD014.DAT,0x4794C,ここから先は俺達しか入れない。ククル、行こう。,,
-D/SD014.DAT,0x479BE,みんな、待つてて。,,
-D/SD014.DAT,0x479FC,心配だなっ・・。,,
+D/SD014.DAT,0x4794C,ここから先は俺達しか入れない。ククル、行こう。,"여기서부터는 우리만 들어갈 수 있어. 쿠쿠루, 가자.",new
+D/SD014.DAT,0x479BE,みんな、待つてて。,"다들, 기다려 줘.",new
+D/SD014.DAT,0x479FC,心配だなっ・・。,걱정이네...,new
 D/SD014.DAT,0x47A3C,"何かあつたら
-みんな助けに来てくれるでしょ？",,
+みんな助けに来てくれるでしょ？",무슨 일이라도 생기면 다들 도와주러 와 줄 거잖아?,new
 D/SD014.DAT,0x47A8E,ちげえねえや。,,
-D/SD014.DAT,0x47AD2,行つてくる。,,
+D/SD014.DAT,0x47AD2,行つてくる。,다녀올게.,new
 D/SD014.DAT,0x47DB4,<CTRL:FE><CTRL:FF>/,,
 D/SD014.DAT,0x47DD8,<CTRL:FE><CTRL:FF>/,,
 D/SD014.DAT,0x47DFC,<CTRL:FE><CTRL:FF>/,,
@@ -7343,28 +7343,28 @@ D/SD014.DAT,0x47F52,<CTRL:FE><CTRL:FF>/,,
 D/SD014.DAT,0x49BFA,？0.1<CTRL:00>？//2<CTRL:00><CTRL:FE>,,
 D/SD014.DAT,0x49C12,？2/3<CTRL:00>？002<CTRL:00><CTRL:FE>,,
 D/SD014.DAT,0x49C2A,？415<CTRL:00>？112<CTRL:00><CTRL:FE>,,
-D/SD015.DAT,0x4791C,封印の炎が消えた！,,
-D/SD015.DAT,0x4795C,奴等が心配だぜ。,,
-D/SD015.DAT,0x4799C,急いで助けに行かなくつちゃ！,,
+D/SD015.DAT,0x4791C,封印の炎が消えた！,봉인의 불꽃이 꺼졌어!,new
+D/SD015.DAT,0x4795C,奴等が心配だぜ。,그 녀석들이 걱정돼.,new
+D/SD015.DAT,0x4799C,急いで助けに行かなくつちゃ！,서둘러 구하러 가야 해!,new
 D/SD015.DAT,0x47A5E,わしらもいくぞい。,,
-D/SD015.DAT,0x47A9C,承知。,,
+D/SD015.DAT,0x47A9C,承知。,알겠습니다.,new
 D/SD015.DAT,0x47B44,さて、わしも行くかの<G:306>。,,
 D/SD015.DAT,0x49BFA,？0.1<CTRL:00>？//2<CTRL:00><CTRL:FE>,,
 D/SD015.DAT,0x49C12,？2/3<CTRL:00>？002<CTRL:00><CTRL:FE>,,
 D/SD015.DAT,0x49C2A,？415<CTRL:00>？112<CTRL:00><CTRL:FE>,,
-D/SD021.DAT,0x479AC,封印を解きにいくぞ。,,
+D/SD021.DAT,0x479AC,封印を解きにいくぞ。,봉인을 풀러 가자!,new
 D/SD021.DAT,0x479EE,"自分の生まれた村に入るのに
-こんな話になるなんてね。",,
+こんな話になるなんてね。",내가 태어난 마을에 들어가는데 이런 일이 벌어질 줄이야.,new
 D/SD021.DAT,0x47A40,"もう僕たちだけのもんだいじゃ
-なくなつてると思うんだ。",,
+なくなつてると思うんだ。",이제 우리들만의 문제가 아니게 된 것 같아.,new
 D/SD021.DAT,0x47AA0,"お前がそんなこ言うように
-なるたっな。",,
-D/SD021.DAT,0x47AF6,デへへ・・。,,
-D/SD021.DAT,0x47B42,避けて通れぬ道もある。,,
+なるたっな。",네가 그런 말을 하게 될 줄이야.,new
+D/SD021.DAT,0x47AF6,デへへ・・。,데헤헤...,new
+D/SD021.DAT,0x47B42,避けて通れぬ道もある。,피해 갈 수 없는 길도 있다.,new
 D/SD021.DAT,0x47B8E,"いつっしのこを言うように
 なつてきたわい。",,
 D/SD021.DAT,0x47BDE,ふふつふふつふふつ。,,
-D/SD021.DAT,0x47E0A,もうここに戻つても何もないなっ・・。,,
+D/SD021.DAT,0x47E0A,もうここに戻つても何もないなっ・・。,이제 여기로 돌아와도 아무것도 없겠네...,new
 D/SD031.DAT,0x45924,"みかけによらす強いの<G:306>。
 おまえたち。",,
 D/SD031.DAT,0x4596E,さつきのモンスターに<G:619>らえられていたおじいさんだ。,,
@@ -7450,14 +7450,14 @@ D/SD071.DAT,0x47DF8,"す<CTRL:00>""<CTRL:00>う<CTRL:00> <CTRL:00>ま",,
 D/SD071.DAT,0x47EF4,"す<CTRL:00>""<CTRL:00>う<CTRL:00> <CTRL:00>ま",,
 D/SD071.DAT,0x48220,"す<CTRL:00>""<CTRL:00>う<CTRL:00> <CTRL:00>ま",,
 D/SD071.DAT,0x48620,"くそ、山にも
-モンスターがあふれてる。",,
+モンスターがあふれてる。","젠장, 산에도 몬스터가 넘쳐나고 있어.",new
 D/SD071.DAT,0x48668,"モンスターは
-精霊力の強い所に集まるのよ。",,
+精霊力の強い所に集まるのよ。",몬스터는 정령력이 강한 곳에 모이는 거야.,new
 D/SD071.DAT,0x486B4,"早く<G:90>聖柩<G:89>の所へ
 行かなくちゃならないのに・・。",,
 D/SD071.DAT,0x48782,"来てやつたぜ。<CTRL:E4>よ
 約束通りな！",,
-D/SD071.DAT,0x487CA,二人とも大丈夫？,,
+D/SD071.DAT,0x487CA,二人とも大丈夫？,둘 다 괜찮아?,new
 D/SD071.DAT,0x488AA,"早く山を下りよう。
 <G:90>聖柩<G:89>はサルバシオの<G:523>だ！",,
 D/SD071.DAT,0x499AE,"<CTRL:FF><CTRL:FF>れ<CTRL:00>！<CTRL:00>0<CTRL:00><CTRL:FF><CTRL:FF>れ<CTRL:00>$<CTRL:00>3<CTRL:00>""<CTRL:00>れ<CTRL:00>'<CTRL:00>-<CTRL:00>！<CTRL:00>れ<CTRL:00>0<CTRL:00>/<CTRL:00>.<CTRL:00>れ<CTRL:00>,<CTRL:00>&<CTRL:00><CTRL:FF><CTRL:FF>ま<CTRL:00>（<CTRL:00>）<CTRL:00>'<CTRL:00>ま<CTRL:00>+<CTRL:00>2<CTRL:00><CTRL:FF><CTRL:FF>ま<CTRL:00>1<CTRL:00>*<CTRL:00>%<CTRL:00>だ<CTRL:00>！<CTRL:00>6<CTRL:00><CTRL:FF><CTRL:FF>だ<CTRL:00>#<CTRL:00>-<CTRL:00><CTRL:FF><CTRL:FF>だ<CTRL:00>2<CTRL:00>5<CTRL:00>0<CTRL:00>だ<CTRL:00>！<CTRL:00>&<CTRL:00><CTRL:FF><CTRL:FF><CTRL:FF><CTRL:FF>",,

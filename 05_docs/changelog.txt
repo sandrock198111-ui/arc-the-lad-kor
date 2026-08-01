@@ -871,3 +871,7 @@
 - Added `02_scripts/apply_reviewed_translation_batch.py`, `01_work/translation_batch_20260801_001.csv`, and `05_docs/translation_batch_log.csv`.
 - The application tool is source-keyed, refuses pre-existing Korean text and `<G:` sources, and records both canonical CSV hashes for reproducibility.
 - No existing Korean cell or Japanese source cell was edited; no original/game-output/backup/ZIP file or emulator was touched.
+2026-08-01 - Reviewed script translation batch 20260801-002
+- Added 19 reviewed, source-verified Korean dialogue translations in `D/SD014.DAT`, `D/SD015.DAT`, `D/SD021.DAT`, and `D/SD071.DAT`.
+- Added `01_work/translation_batch_20260801_002.csv` and appended its measured hashes to `05_docs/translation_batch_log.csv`.
+- No existing Korean cell or Japanese source cell was edited; no original/game-output/backup/ZIP file or emulator was touched.
