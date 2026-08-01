@@ -965,3 +965,16 @@ Reviewed-batch newline notation - 2026-08-01
 Reviewed batch 20260801-003 - 2026-08-01
 - The strict high-confidence screen allowed only 13 fully decoded `B/SB021`/`B/SB022` rows. Nearby rows with `<N:...>` markers were deliberately left blank even where surrounding context suggests their meaning.
 - Relative to commit `2786d57`, batch 003 changed exactly 13 canonical rows and only their Korean/provenance fields.
+
+Runtime text-token widths and CTRL00 false positives - 2026-08-01
+- The original-disc `PSX.EXE` and `01_work/PSX.EXE` are byte-identical (SHA-256 `947ebf893f2d46207ec7e32ca514e4ea670e0bed34ef2144b5f7fb0fdd15bc67`). The parser evidence is therefore from the requested original executable, not a patched build.
+- At `0x8016BB48`, bytes at or above E1 enter control preprocessing. `0x8016BBFC` reads the opcode, `0x8016BC08` reads its following argument, `0x8016BD40` returns token width 2, and `0x8016BC28` advances the stream by 2. `0x8016BBB4` terminates on a token-boundary zero.
+- Established widths: `01..DC` one-byte glyphs; `DD..E0` two-byte glyphs; `E1..FF` two-byte opcode/argument pairs. Never decode `E6 00` as separate `<CTRL:E6>` and `<CTRL:00>` tokens.
+- Confirmed visible controls remain `E6 01` newline and `E4 1F` page break. Other E1..FF pairs are width-confirmed but meaning-unconfirmed and must remain `<CTRL:XX:YY>`.
+- The old parser searched for the first literal `00 00` without respecting token width. It could stop on the argument byte of `E6 00`, and it emitted every other zero as a standalone control. It also treated arbitrary aligned `17`/`19` values in numeric/layout data as record starts.
+- Old corpus measurements at baseline `291ba49`: 5,795 rows, 5,783 unique locations, 3,027 CTRL00 rows in 179 files, 3,005 runtime-width-invalid affected rows, 2,392 mostly zero-high 16-bit rows, and 1,750 overlapping affected candidates. Ninety-six affected files also contain normal dialogue, so file identity alone cannot classify a row.
+- Corrected corpus: 2,878 unique rows; 0 CTRL00; 713 rows retain 2,057 unclassified control pairs of 41 types. Their meanings were not guessed.
+- The old table duplicated twelve locations in total because COMM.DAT was scanned both in the normal DAT list and by an explicit append. Four duplicated rows were complete plain text. The duplicate append is removed.
+- Existing Korean is transferred only by exact `(source file, offset)`. All 2,024 non-empty Korean/provenance pairs survive unchanged; 528 of their Japanese display cells changed due correct token pairing and the prior atlas-map repair.
+- `02_scripts/verify_ctrl00_parser_fix.py` pins the before state to commit `291ba49` and aborts if any accepted count, raw-byte match, translation preservation check, or representative sample changes.
+- Remaining boundary: the `17/19` scanner is still a heuristic and is not proof that all game text formats are decoded. The purpose of this correction is only to reject impossible token streams and preserve real control pairs.

@@ -879,3 +879,12 @@
 - Added 13 reviewed, source-verified Korean dialogue translations in `B/SB021.DAT` and `B/SB022.DAT`.
 - Added `01_work/translation_batch_20260801_003.csv` and appended its measured hashes to `05_docs/translation_batch_log.csv`.
 - No existing Korean cell or Japanese source cell was edited; no original/game-output/backup/ZIP file or emulator was touched.
+
+2026-08-01 CTRL00 parser-width correction
+- Corrected `02_scripts/measure_full_script_requirements.py` so record ends are found only on runtime token boundaries and `E1..FF` controls consume their argument byte.
+- Applied the same token-width rule to `02_scripts/extract_story_corpus.py` to prevent the legacy analysis path from recreating split controls.
+- Removed the duplicate COMM.DAT target append; COMM.DAT remains scanned once as one of the 256 DAT files.
+- Restored 67 manual/exact Japanese atlas mappings erased as a side effect of the earlier broad-ASCII audit; no mapping was inferred and unresolved indices 89/90 remain blank.
+- Regenerated `script_original_full.csv`, `script_translated_full.csv`, `script_translation_reconciliation.csv`, and `syllable_requirement.csv`. Rows changed 5,795 -> 2,878; `<CTRL:00>` rows 3,027 -> 0; all 2,024 existing Korean/provenance cells were preserved exactly.
+- Added read-only audit/probe/verification tools and generated `ctrl00_parser_audit.md` plus the full 179-file distribution CSV.
+- No original disc, `03_output`, `99_backup`, ZIP, or emulator was touched.

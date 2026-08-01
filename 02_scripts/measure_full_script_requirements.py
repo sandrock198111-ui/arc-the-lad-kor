@@ -1,8 +1,9 @@
 """Extract the original Arc the Lad 1 text corpus and measure translated glyph needs.
 
-This is read-only with respect to the BIN.  The DAT parser is deliberately the
-already-established 17/19 dialogue record grammar; unclassified binary bytes are
-not presented as strings or translated.
+This is read-only with respect to the BIN.  The DAT parser follows the measured
+runtime token widths: 01..DC are one-byte glyphs, DD..E0 are two-byte glyphs,
+and E1..FF are two-byte opcode/argument pairs.  Unknown controls are preserved
+reversibly instead of being guessed or silently translated.
 """
 from __future__ import annotations
 
@@ -19,13 +20,6 @@ RAW = 2352
 START = 0x45000
 MAX_BODY = 0x180
 LINEBREAK, PAGEBREAK = b"\xE6\x01", b"\xE4\x1F"
-OFFSET_ONLY_FILES = {
-    "story_s2041_bulk_translation.csv": "21/S2041.DAT",
-    "story_s3031_bulk_translation.csv": "31/S3031.DAT",
-    "story_s4041_bulk_translation.csv": "4/S4041.DAT",
-    "story_sf0b1_return_translation.csv": "F/SF0B1.DAT",
-}
-
 
 def sector(raw, lba: int) -> bytes:
     raw.seek(lba * RAW)
@@ -92,19 +86,59 @@ def find_header(data: bytes, marker: int) -> int | None:
     return None
 
 
-def decode(body: bytes, chars: dict[int, str]) -> tuple[str, int]:
-    out, unknown, p = [], 0, 0
+def token_end(data: bytes, begin: int) -> int | None:
+    """Return the established 00 00 boundary using runtime token widths."""
+    p = begin
+    limit = min(len(data) - 1, begin + MAX_BODY)
+    while p < limit:
+        first = data[p]
+        if first == 0:
+            return p if data[p + 1] == 0 else None
+        if first < 0xDD:
+            p += 1
+            continue
+        if p + 1 >= limit:
+            return None
+        # DD..E0 are two-byte glyphs; E1..FF are opcode+argument pairs.
+        p += 2
+    return None
+
+
+def decode(body: bytes, chars: dict[int, str]) -> tuple[str, int, int, int]:
+    out: list[str] = []
+    glyphs = mapped = unknown = p = 0
     while p < len(body):
-        pair = body[p:p+2]
-        if pair == LINEBREAK: out.append("\n"); p += 2; continue
-        if pair == PAGEBREAK: out.append("\f"); p += 2; continue
-        b = body[p]
-        if 1 <= b < 0xDD: idx, p = b-1, p+1
-        elif 0xDD <= b <= 0xE0 and p+1 < len(body): idx, p = (b-0xDD)*255+body[p+1]+0xDB, p+2
-        else: out.append(f"<CTRL:{b:02X}>"); unknown += 1; p += 1; continue
-        if idx in chars: out.append(chars[idx])
-        else: out.append(f"<G:{idx}>"); unknown += 1
-    return "".join(out), unknown
+        first = body[p]
+        if first == 0:
+            raise ValueError("standalone 00 reached inside a bounded text body")
+        if first < 0xDD:
+            idx = first - 1
+            p += 1
+            glyphs += 1
+            if idx in chars:
+                out.append(chars[idx]); mapped += 1
+            else:
+                out.append(f"<G:{idx}>"); unknown += 1
+            continue
+        if p + 1 >= len(body):
+            raise ValueError(f"truncated two-byte token {first:02X}")
+        second = body[p + 1]
+        p += 2
+        if first <= 0xE0:
+            idx = (first - 0xDD) * 255 + second + 0xDB
+            glyphs += 1
+            if idx in chars:
+                out.append(chars[idx]); mapped += 1
+            else:
+                out.append(f"<G:{idx}>"); unknown += 1
+        elif (first, second) == (0xE6, 0x01):
+            out.append("\n")
+        elif (first, second) == (0xE4, 0x1F):
+            out.append("\f")
+        else:
+            out.append(f"<CTRL:{first:02X}:{second:02X}>")
+            unknown += 1
+    return "".join(out), glyphs, mapped, unknown
 
 
 def records(name: str, data: bytes, chars: dict[int, str]) -> list[dict[str, str]]:
@@ -115,32 +149,31 @@ def records(name: str, data: bytes, chars: dict[int, str]) -> list[dict[str, str
         header = find_header(data, mark); begin = mark+2; prefix = data[begin:begin+2]
         if prefix in (b"\x01\0", b"\x02\0", b"\x03\0", b"\x04\0", b"\x05\0", b"\x07\0") or (prefix == b"\0\0" and marker == 0x17 and header == mark-6): begin += 2
         if begin in seen: continue
-        end = next((p for p in range(begin, min(len(data)-1, begin+MAX_BODY)) if data[p:p+2] == b"\0\0"), None)
+        end = token_end(data, begin)
         if end is None or not 3 <= end-begin <= 0x100: continue
-        raw = data[begin:end]; text, unknown = decode(raw, chars)
-        glyphs = len(text) - text.count("\n") - text.count("\f")
+        raw = data[begin:end]; text, glyphs, mapped, unknown = decode(raw, chars)
         # This keeps the established corpus's acceptance rule; strings with unknown
         # characters are retained but visibly flagged rather than guessed.
-        if glyphs == 0 or (glyphs-unknown)/glyphs < .45 and header is None and LINEBREAK not in raw and PAGEBREAK not in raw: continue
+        if glyphs == 0 or mapped/glyphs < .45 and header is None and LINEBREAK not in raw and PAGEBREAK not in raw: continue
         seen.add(begin)
         out.append({"source file":name, "byte offset":f"0x{begin:X}", "length":str(len(raw)), "raw bytes as hex":raw.hex(" ").upper(), "decoded Japanese":text})
     return out
 
 
-def translations() -> dict[tuple[str, int], list[str]]:
-    found: dict[tuple[str, int], list[str]] = {}
-    for path in DOCS.glob("*translation*.csv"):
-        with path.open(encoding="utf-8-sig", newline="") as f:
-            for row in csv.DictReader(f):
-                file = (row.get("file") or OFFSET_ONLY_FILES.get(path.name) or "").replace("\\", "/")
-                offset, text = row.get("offset", ""), row.get("text", "")
-                if not file or not offset or not text: continue
-                try: key = file, int(offset, 0)
-                except ValueError: continue
-                # Keep each distinct source rendition; duplicate manifest rows do
-                # not create artificial coverage.
-                found.setdefault(key, [])
-                if text not in found[key]: found[key].append(text)
+def canonical_translations() -> dict[tuple[str, int], tuple[str, str]]:
+    """Load the current reviewed Korean cells without re-importing old batches."""
+    path = DOCS / "script_translated_full.csv"
+    if not path.exists():
+        return {}
+    found: dict[tuple[str, int], tuple[str, str]] = {}
+    label = "source of the translation (existing / new)"
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        for row in csv.DictReader(handle):
+            key = row["source file"], int(row["offset"], 0)
+            value = row["korean"], row.get(label, "")
+            if key in found and found[key] != value:
+                raise SystemExit(f"conflicting canonical translation at {key}")
+            found[key] = value
     return found
 
 
@@ -152,22 +185,20 @@ def main() -> None:
     work_comm = ROOT / "01_work/COMM.IMG"
     if hashlib.sha256(read_file(BIN, listing["COMM.IMG"])).digest() != hashlib.sha256(work_comm.read_bytes()).digest():
         raise SystemExit("01_work/COMM.IMG does not match the original disc; rebuild the glyph map first")
-    targets = [n for n in sorted(listing) if n.upper().endswith(".DAT")] + (["COMM.DAT"] if "COMM.DAT" in listing else [])
+    targets = [n for n in sorted(listing) if n.upper().endswith(".DAT")]
     # COMM.DAT is deliberately scanned with the same grammar. Its pointer/table
     # formats require separate reverse engineering; no unverified direct scan is
     # called "all text" here.
+    prior = canonical_translations()
     original = [r for n in targets for r in records(n, read_file(BIN, listing[n]), chars)]
     with (DOCS/"script_original_full.csv").open("w", encoding="utf-8-sig", newline="") as f:
         w=csv.DictWriter(f, fieldnames=["source file","byte offset","length","raw bytes as hex","decoded Japanese"]); w.writeheader(); w.writerows(original)
-    old = translations(); translated = 0; result=[]
+    translated = 0; result=[]
     for r in original:
-        choices=old.get((r["source file"], int(r["byte offset"],0)), [])
-        korean = choices[0] if len(choices)==1 else ""
-        status = "existing" if len(choices)==1 else ("untranslated" if not choices else "conflicting existing")
-        translated += status == "existing"
-        # The requested source column remains restricted to actual translations;
-        # blank Korean cells must not be labelled as a "new" translation.
-        result.append({"source file":r["source file"],"offset":r["byte offset"],"japanese":r["decoded Japanese"],"korean":korean,"source of the translation (existing / new)":"existing" if status == "existing" else "", "_status": status})
+        korean, provenance = prior.get((r["source file"], int(r["byte offset"],0)), ("", ""))
+        translated += bool(korean)
+        status = "translated" if korean else "untranslated"
+        result.append({"source file":r["source file"],"offset":r["byte offset"],"japanese":r["decoded Japanese"],"korean":korean,"source of the translation (existing / new)":provenance if korean else "", "_status": status})
     with (DOCS/"script_translated_full.csv").open("w",encoding="utf-8-sig",newline="") as f:
         fields=["source file", "offset", "japanese", "korean", "source of the translation (existing / new)"]
         w=csv.DictWriter(f,fieldnames=fields, extrasaction="ignore"); w.writeheader(); w.writerows(result)
@@ -175,21 +206,19 @@ def main() -> None:
         fields=["source file", "offset", "japanese", "translation status", "existing translations"]
         w=csv.DictWriter(f, fieldnames=fields); w.writeheader()
         for row in result:
-            key=(row["source file"], int(row["offset"], 0))
-            choices=old.get(key, [])
-            w.writerow({"source file": row["source file"], "offset": row["offset"], "japanese": row["japanese"], "translation status": row["_status"], "existing translations": " | ".join(choices)})
+            w.writerow({"source file": row["source file"], "offset": row["offset"], "japanese": row["japanese"], "translation status": row["_status"], "existing translations": row["korean"]})
     maps=set()
     for p in (DOCS/"korean_charmap.csv", DOCS/"korean_charmap_extended.csv"):
         with p.open(encoding="utf-8-sig",newline="") as f: maps|={r["char"] for r in csv.DictReader(f)}
     allfreq=Counter(ch for r in result for ch in r["korean"] if "가" <= ch <= "힣")
-    existingfreq=Counter(ch for r in result if r["_status"] == "existing" for ch in r["korean"] if "가" <= ch <= "힣")
+    translatedfreq=Counter(ch for r in result if r["_status"] == "translated" for ch in r["korean"] if "가" <= ch <= "힣")
     with (DOCS/"syllable_requirement.csv").open("w",encoding="utf-8-sig",newline="") as f:
         w=csv.DictWriter(f,fieldnames=["syllable","frequency","has existing glyph"]); w.writeheader()
         for ch,n in allfreq.most_common(): w.writerow({"syllable":ch,"frequency":n,"has existing glyph":int(ch in maps)})
     print(f"bin_sha256={hashlib.sha256(BIN.read_bytes()).hexdigest()}")
-    print(f"dat_files={len(targets)-1} parsed_strings={len(original)} total_decoded_characters={sum(len(r['decoded Japanese']) for r in original)}")
-    print(f"existing_translated={translated} untranslated={len(original)-translated}")
+    print(f"dat_files={len(targets)} parsed_strings={len(original)} total_decoded_characters={sum(len(r['decoded Japanese']) for r in original)}")
+    print(f"translated={translated} untranslated={len(original)-translated}")
     print(f"all_korean_distinct={len(allfreq)} mapped={sum(c in maps for c in allfreq)} new={sum(c not in maps for c in allfreq)}")
-    print(f"existing_korean_distinct={len(existingfreq)} mapped={sum(c in maps for c in existingfreq)} new={sum(c not in maps for c in existingfreq)}")
+    print(f"translated_korean_distinct={len(translatedfreq)} mapped={sum(c in maps for c in translatedfreq)} new={sum(c not in maps for c in translatedfreq)}")
 
 if __name__ == "__main__": main()

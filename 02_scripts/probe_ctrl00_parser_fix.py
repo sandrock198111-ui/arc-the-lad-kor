@@ -7,10 +7,14 @@ the established 00 00 record boundary.
 from __future__ import annotations
 
 import csv
+import io
+import subprocess
 from collections import Counter
 
 import measure_full_script_requirements as base
 
+
+BASELINE_REF = "291ba49"
 
 def token_end(data: bytes, begin: int) -> int | None:
     offset = begin
@@ -28,8 +32,10 @@ def token_end(data: bytes, begin: int) -> int | None:
     return None
 
 
-def decode(body: bytes, chars: dict[int, str]) -> tuple[str, int]:
+def decode(body: bytes, chars: dict[int, str]) -> tuple[str, int, int, int]:
     output: list[str] = []
+    glyphs = 0
+    mapped = 0
     unknown = 0
     offset = 0
     while offset < len(body):
@@ -37,8 +43,10 @@ def decode(body: bytes, chars: dict[int, str]) -> tuple[str, int]:
         if first < 0xDD:
             index = first - 1
             offset += 1
+            glyphs += 1
             if index in chars:
                 output.append(chars[index])
+                mapped += 1
             else:
                 output.append(f"<G:{index}>")
                 unknown += 1
@@ -51,8 +59,10 @@ def decode(body: bytes, chars: dict[int, str]) -> tuple[str, int]:
         offset += 2
         if first <= 0xE0:
             index = (first - 0xDD) * 255 + second + 0xDB
+            glyphs += 1
             if index in chars:
                 output.append(chars[index])
+                mapped += 1
             else:
                 output.append(f"<G:{index}>")
                 unknown += 1
@@ -63,7 +73,7 @@ def decode(body: bytes, chars: dict[int, str]) -> tuple[str, int]:
         else:
             output.append(f"<CTRL:{first:02X}:{second:02X}>")
             unknown += 1
-    return "".join(output), unknown
+    return "".join(output), glyphs, mapped, unknown
 
 
 def records(name: str, data: bytes, chars: dict[int, str]) -> list[dict[str, str]]:
@@ -86,12 +96,11 @@ def records(name: str, data: bytes, chars: dict[int, str]) -> list[dict[str, str
         if end is None or not 3 <= end - begin <= 0x100:
             continue
         raw = data[begin:end]
-        text, unknown = decode(raw, chars)
-        glyphs = len(text) - text.count("\n") - text.count("\f")
+        text, glyphs, mapped, unknown = decode(raw, chars)
         if glyphs == 0:
             continue
         if (
-            (glyphs - unknown) / glyphs < 0.45
+            mapped / glyphs < 0.45
             and header is None
             and base.LINEBREAK not in raw
             and base.PAGEBREAK not in raw
@@ -115,10 +124,13 @@ def key(row: dict[str, str]) -> tuple[str, str, str]:
 
 
 def main() -> None:
-    with base.SOURCE.open(encoding="utf-8-sig", newline="") if False else open(
-        base.DOCS / "script_original_full.csv", encoding="utf-8-sig", newline=""
-    ) as handle:
-        before = list(csv.DictReader(handle))
+    data = subprocess.check_output(
+        ["git", "show", f"{BASELINE_REF}:05_docs/script_original_full.csv"],
+        cwd=base.ROOT,
+    )
+    before = list(
+        csv.DictReader(io.StringIO(data.decode("utf-8-sig"), newline=""))
+    )
     listing = base.iso_files(base.BIN)
     chars = base.glyph_map()
     targets = [name for name in sorted(listing) if name.upper().endswith(".DAT")]

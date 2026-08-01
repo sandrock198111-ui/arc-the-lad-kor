@@ -219,11 +219,20 @@ def find_header29(data: bytes, marker_offset: int) -> int | None:
     return None
 
 
-def first_double_zero(data: bytes, start: int) -> int | None:
+def token_end(data: bytes, start: int) -> int | None:
+    """Find a terminator only at a measured runtime-token boundary."""
+    offset = start
     limit = min(len(data) - 1, start + MAX_BODY)
-    for offset in range(start, limit):
-        if data[offset : offset + 2] == b"\x00\x00":
-            return offset
+    while offset < limit:
+        first = data[offset]
+        if first == 0:
+            return offset if data[offset + 1] == 0 else None
+        if first < 0xDD:
+            offset += 1
+        else:
+            if offset + 1 >= limit:
+                return None
+            offset += 2
     return None
 
 
@@ -274,11 +283,14 @@ def decode_body(
             index = (first - 0xDD) * 255 + second + 0xDB
             raw = body[offset : offset + 2]
             offset += 2
-        else:
-            output.append(f"<CTRL:{first:02X}>")
+        elif first >= 0xE1 and offset + 1 < len(body):
+            second = body[offset + 1]
+            output.append(f"<CTRL:{first:02X}:{second:02X}>")
             unknown += 1
-            offset += 1
+            offset += 2
             continue
+        else:
+            raise ValueError(f"invalid token boundary at body offset {offset}: {first:02X}")
         glyphs += 1
         if index in glyph_map:
             output.append(glyph_map[index])
@@ -312,7 +324,7 @@ def scan_file(
         start, prefix_kind = payload_start(data, marker_offset, marker, header29)
         if start in seen:
             continue
-        end = first_double_zero(data, start)
+        end = token_end(data, start)
         if end is None or not (3 <= end - start <= 0x100):
             continue
         body = data[start:end]
@@ -403,7 +415,7 @@ def main() -> None:
             "- This command only reads original DAT/COMM data and writes analysis files.",
             "- `<G:...>` marks a glyph without an exact bitmap match.",
             "- `<N:char:distance:code>` is a visual hint, not a confirmed character.",
-            "- `<CTRL:...>` marks an unclassified control byte.",
+            "- `<CTRL:XX:YY>` preserves an unclassified two-byte control pair.",
             "- Ambiguous exact matches are counted separately for later language-model review.",
         ]
     )

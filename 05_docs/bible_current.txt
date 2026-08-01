@@ -1482,3 +1482,13 @@ Reviewed script translation batch 20260801-002 - 2026-08-01
 Reviewed script translation batch 20260801-003 - 2026-08-01
 - Added 13 source-verified lines from the holy-casket and final-spirit sequence (`B/SB021` and `B/SB022`). The batch preserves established `성궤`, `인간`, and elemental-spirit spellings and adds no proper noun.
 - The canonical table now contains 2,024 non-empty Korean cells. The user-specified blank-target rule now measures 3,151 rows; the strict high-confidence queue is 23 rows.
+
+CTRL00 parser correction accepted - 2026-08-01
+- `05_docs/script_original_full.csv` is now generated with the original runtime token widths: `01..DC` one-byte glyph, `DD..E0` two-byte glyph, `E1..FF` two-byte opcode/argument pair, and token-boundary `00` terminator.
+- The former 5,795-row table contained 3,027 `<CTRL:00>` rows in 179 files. The corrected table has 2,878 unique file/offset rows and zero `<CTRL:00>` rows. CSV raw bytes match the original disc at every retained row.
+- This was not one hidden 16-bit text encoding. Of the 3,027 affected rows, 3,005 violate the measured runtime token widths; 2,392 have a mostly zero-high-byte 16-bit numeric shape and 1,750 overlap another false candidate. The broad `17/19` scan was admitting numeric/layout data.
+- Real two-byte controls are not deleted. Confirmed `E6 01` and `E4 1F` retain their newline/page treatment; every other pair is preserved reversibly as `<CTRL:XX:YY>` until its meaning is proven.
+- The current canonical table retains all 2,024 Korean cells and provenance values exactly. No translation was written or judged in this correction.
+- Complete source rows (no `<G:...>` and no `<CTRL:...>`) are 1,852/2,878. Immediate untranslated plain-text targets are 122. The four-count reduction from 1,856 and 126 is only removal of duplicated COMM.DAT rows, not a unique source loss.
+- The Japanese map regeneration restored 67 older manual/exact atlas mappings that the broad-ASCII repair had accidentally blanked; all repaired-source occurrences agreed and indices 89/90 remain unresolved.
+- Full evidence and the 179-file distribution are `05_docs/ctrl00_parser_audit.md` and `05_docs/ctrl00_file_distribution.csv`.

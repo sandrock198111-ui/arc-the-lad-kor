@@ -25,75 +25,75 @@
 23,7,"ascii rule: original COMM.IMG audit, index = code - 32"
 24,8,"ascii rule: original COMM.IMG audit, index = code - 32"
 25,9,"ascii rule: original COMM.IMG audit, index = code - 32"
-26,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-27,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-28,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-29,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-30,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-31,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-32,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-33,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-34,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-35,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-36,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-37,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-38,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-39,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-40,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-41,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-42,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-43,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-44,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-45,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-46,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-47,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-48,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-49,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-50,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-51,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-52,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-53,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-54,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-55,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-56,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-57,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-58,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-59,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-60,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-61,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-62,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-63,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-64,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-65,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-66,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-67,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-68,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-69,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-70,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-71,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-72,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-73,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-74,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-75,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-76,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-77,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-78,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-79,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-80,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-81,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-82,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-83,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-84,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-85,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-86,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-87,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-88,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+26,い,"restored manual atlas mapping; repaired source occurrences=3049, conflicts=0"
+27,の,"restored manual atlas mapping; repaired source occurrences=2591, conflicts=0"
+28,な,"restored manual atlas mapping; repaired source occurrences=1802, conflicts=0"
+29,し,"restored manual atlas mapping; repaired source occurrences=2214, conflicts=0"
+30,た,"restored manual atlas mapping; repaired source occurrences=1543, conflicts=0"
+31,か,"restored manual atlas mapping; repaired source occurrences=3010, conflicts=0"
+32,て,"restored manual atlas mapping; repaired source occurrences=1757, conflicts=0"
+33,る,"restored manual atlas mapping; repaired source occurrences=2392, conflicts=0"
+34,に,"restored manual atlas mapping; repaired source occurrences=2156, conflicts=0"
+35,、,"restored manual atlas mapping; repaired source occurrences=1148, conflicts=0"
+36, ,"restored manual atlas mapping; repaired source occurrences=2629, conflicts=0"
+37,う,"restored manual atlas mapping; repaired source occurrences=3739, conflicts=0"
+38,ま,"restored manual atlas mapping; repaired source occurrences=2501, conflicts=0"
+39,は,"restored manual atlas mapping; repaired source occurrences=2145, conflicts=0"
+40,つ,"restored manual atlas mapping; repaired source occurrences=1337, conflicts=0"
+41,が,"restored manual atlas mapping; repaired source occurrences=5191, conflicts=0"
+42,す,"restored manual atlas mapping; repaired source occurrences=3047, conflicts=0"
+43,・,"restored manual atlas mapping; repaired source occurrences=248, conflicts=0"
+44,ん,"restored manual atlas mapping; repaired source occurrences=1251, conflicts=0"
+45,こ,"restored manual atlas mapping; repaired source occurrences=869, conflicts=0"
+46,を,"restored manual atlas mapping; repaired source occurrences=1170, conflicts=0"
+47,で,"restored manual atlas mapping; repaired source occurrences=1105, conflicts=0"
+48,ー,"restored manual atlas mapping; repaired source occurrences=1030, conflicts=0"
+49,れ,"restored manual atlas mapping; repaired source occurrences=943, conflicts=0"
+50,ら,"restored manual atlas mapping; repaired source occurrences=926, conflicts=0"
+51,ン,"restored manual atlas mapping; repaired source occurrences=971, conflicts=0"
+52,だ,"restored manual atlas mapping; repaired source occurrences=634, conflicts=0"
+53,と,"restored manual atlas mapping; repaired source occurrences=801, conflicts=0"
+54,。,"restored manual atlas mapping; repaired source occurrences=2274, conflicts=0"
+55,も,"restored manual atlas mapping; repaired source occurrences=746, conflicts=0"
+56,り,"restored manual atlas mapping; repaired source occurrences=778, conflicts=0"
+57,さ,"restored manual atlas mapping; repaired source occurrences=575, conflicts=0"
+58,お,"restored manual atlas mapping; repaired source occurrences=566, conflicts=0"
+59,？,"restored manual atlas mapping; repaired source occurrences=576, conflicts=0"
+60,よ,"restored manual atlas mapping; repaired source occurrences=996, conflicts=0"
+61,く,"restored manual atlas mapping; repaired source occurrences=536, conflicts=0"
+62,あ,"restored manual atlas mapping; repaired source occurrences=521, conflicts=0"
+63,や,"restored manual atlas mapping; repaired source occurrences=549, conflicts=0"
+64,そ,"restored manual atlas mapping; repaired source occurrences=417, conflicts=0"
+65,ア,"restored manual atlas mapping; repaired source occurrences=450, conflicts=0"
+66,わ,"restored manual atlas mapping; repaired source occurrences=423, conflicts=0"
+67,き,"restored manual atlas mapping; repaired source occurrences=411, conflicts=0"
+68,つ,"restored manual atlas mapping; repaired source occurrences=332, conflicts=0"
+69,え,"restored manual atlas mapping; repaired source occurrences=353, conflicts=0"
+70,ス,"restored manual atlas mapping; repaired source occurrences=353, conflicts=0"
+71,ゃ,"restored manual atlas mapping; repaired source occurrences=403, conflicts=0"
+72,け,"restored manual atlas mapping; repaired source occurrences=333, conflicts=0"
+73,じ,"restored manual atlas mapping; repaired source occurrences=359, conflicts=0"
+74,ち,"restored manual atlas mapping; repaired source occurrences=333, conflicts=0"
+75,ね,"restored manual atlas mapping; repaired source occurrences=373, conflicts=0"
+76,精,"restored exact atlas mapping; repaired source occurrences=287, conflicts=0"
+77,ク,"restored manual atlas mapping; repaired source occurrences=296, conflicts=0"
+78,霊,"restored exact atlas mapping; repaired source occurrences=321, conflicts=0"
+79,大,"restored exact atlas mapping; repaired source occurrences=290, conflicts=0"
+80,め,"restored manual atlas mapping; repaired source occurrences=290, conflicts=0"
+81,人,"restored exact atlas mapping; repaired source occurrences=220, conflicts=0"
+82,ル,"restored manual atlas mapping; repaired source occurrences=860, conflicts=0"
+83,ど,"restored manual atlas mapping; repaired source occurrences=397, conflicts=0"
+84,ろ,"restored manual atlas mapping; repaired source occurrences=348, conflicts=0"
+85,出,"restored exact atlas mapping; repaired source occurrences=305, conflicts=0"
+86,ラ,"restored manual atlas mapping; repaired source occurrences=216, conflicts=0"
+87,ば,"restored manual atlas mapping; repaired source occurrences=207, conflicts=0"
+88,せ,"restored manual atlas mapping; repaired source occurrences=176, conflicts=0"
 89,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
 90,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-91,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-92,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-93,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
-94,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+91,ト,"restored exact atlas mapping; repaired source occurrences=227, conflicts=0"
+92,王,"restored exact atlas mapping; repaired source occurrences=173, conflicts=0"
+93,国,"restored exact atlas mapping; repaired source occurrences=160, conflicts=0"
+94,モ,"restored manual atlas mapping; repaired source occurrences=173, conflicts=0"
 95,シ,anchor: appears in a completely decoded corpus string
 96,力,anchor: appears in a completely decoded corpus string
 97,タ,anchor: appears in a completely decoded corpus string
