@@ -1,0 +1,125 @@
+v111 restore the overwritten artwork that costs no glyphs
+
+base    ui_hud_e7_v103_heap_reserved_glyphs_patch_only.zip   (v103, not v109 or v110)
+output  ui_hud_e7_v111_restore_unoccupied_art_patch_only.zip
+        sha256 0D6B9DBF190B7884FD177FDFD3411B025315C61B0CDDFA9F4AC3ADB2EE5B24C1
+PSX.EXE is untouched; COMM.IMG keeps its size, so the v104 layout applies
+
+cells with destroyed artwork : 126
+  restored, no glyph on them : 27  (1588 bytes)
+  left alone, a glyph is there: 99
+
+occupancy is computed from the character maps, not the lookup table:
+  single byte b < 221         index = b - 1
+  two bytes, lead 0xDD..0xE8  index = (lead - 221) * 255 + trail + 219
+  two bytes, lead 0xE9/0xEA   index = table[(lead - 0xE9) * 254 + trail - 1]
+only the last consults the table, which is what v109 and v110 got wrong.
+
+cells left alone, and what lives on them
+  row  0 col 14  괄
+  row  0 col 15  량
+  row  0 col 16  덕
+  row  1 col 14  (lookup table only)
+  row  1 col 17   
+  row  2 col  1  (lookup table only)
+  row  2 col 12  호
+  row  3 col  9  즘
+  row  3 col 14  잃
+  row  5 col  1  양
+  row  5 col 20  셔
+  row  6 col  5  센
+  row  6 col  7  변
+  row  6 col 14  떤
+  row  6 col 15  득
+  row  7 col  3  휩닐
+  row  7 col  4  핀
+  row  7 col  8  탑
+  row  7 col 10  씀
+  row  7 col 12  뇨
+  row  7 col 16  뀝
+  row  7 col 17  옛깁
+  row  7 col 19  샅
+  row  8 col  0  풍확회
+  row  8 col  1  템튼폭품
+  row  8 col  2  춰커큼텐
+  row  8 col  3  웬잠점
+  row  8 col  4  올옷웠
+  row  8 col  5  슈쓴엄옆
+  row  8 col  6  브쇠쉽
+  row  8 col  7  번범벗별
+  row  8 col  8  뛸련렴름
+  row  8 col  9  눌덮듭뛴
+  row  8 col 10  꼭꿔낼녀
+  row  8 col 11  갚걱검글
+  row  8 col 12  았향1
+  row  8 col 13  황훨흩
+  row  8 col 14  포푼혀화
+  row  8 col 15  틀판퍼평
+  row  8 col 16  큰탁태테
+  row  8 col 17  짓찌처칠
+  row  8 col 18  진즐직짊
+  row  8 col 19  읽접져죽
+  row  8 col 20  예옥왜움
+  row  9 col  0  얽엇연였
+  row  9 col  1  썼씨씬악
+  row  9 col  2  심실싶쌓
+  row  9 col  3  솟숨쉬
+  row  9 col  4  삼섬섯셨
+  row  9 col  5  봤북붙빨
+  row  9 col  6  몸믿밖복
+  row  9 col  7  림막매몬
+  row  9 col  8  뛰뜻럼
+  row  9 col  9  드둘따떡
+  row  9 col 10  돕된될됩
+  row  9 col 11  닫담당
+  row  9 col 12  녔놈닌닙
+  row  9 col 13  끝났넌널
+  row  9 col 14  꼬끄끊끌
+  row  9 col 15  까침깨꺄
+  row  9 col 16  외걷곧굉
+  row  9 col 17  밤뿍갔
+  row 10 col  3  금뀌머문
+  row 10 col  4  피혼:규
+  row 10 col  5  결때촌잇
+  row 10 col  6  거풀꺼킬
+  row 10 col  7  앞째천팔
+  row 10 col  8  새싫쓸알
+  row 10 col  9  둔렌롭봉
+  row 10 col 10  껐꽃날내
+  row 10 col 11  플헤흥3
+  row 10 col 12  털텅파프
+  row 10 col 13  쪽쭐최코
+  row 10 col 14  줄중줬질
+  row 10 col 15  워잘젠좀
+  row 10 col 16  않약엘왔
+  row 10 col 17  슬식십써
+  row 10 col 18  벌섞송수
+  row 10 col 19  민배뱀버
+  row 10 col 20  먼멋멘며
+  row 11 col  5  꾸네년늘
+  row 11 col  7  ,놀02
+  row 11 col  8  훌희히!
+  row 11 col  9  친카터했
+  row 11 col 10  쯤찮첩초
+  row 11 col 11  적졌죠줘
+  row 11 col 12  임잖잡쟁
+  row 11 col 13  운울음응
+  row 11 col 14  애었엔역
+  row 11 col 15  셋쓰앗감
+  row 11 col 16  뿐살생
+  row 11 col 17  …부불빼
+  row 11 col 18  방병봐뵙
+  row 11 col 19  것륭모받
+  row 11 col 20  게겨렇려
+  row 12 col  5  남냐되듯
+  row 12 col  7  누니대단
+  row 13 col  5  트폐같활
+  row 13 col  7  해행반경
+
+the battle range overlay is still broken. its rectangle is rows 10..13,
+columns 2..5, and 48 characters live there; restoring it would erase them.
+
+rollback: 99_backup/baselines/ui_hud_e7_v104_runtime_success_2026-08-01/
+
+Rebuild with arc1_v104.xml, then run:
+  python 02_scripts/verify_iso_layout.py E:\arc\arc1_v104.bin ui_hud_e7_v111_restore_unoccupied_art_patch_only.zip

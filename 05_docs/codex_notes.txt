@@ -925,3 +925,31 @@ The BSS clear must stop at the relocated helper, not past it - 2026-07-31
 Build a patch on the version that carries the code it depends on - 2026-07-31
 - The first v101 was built on v98, which has neither the frame-boundary stub nor the hook that calls it; those arrived in v100. Only two words of a stub that did not exist were patched, so LoadImage was never called at all.
 - v101 is now built on v100 and asserts that the stub prologue, its LoadImage call, its frame-swap tail call and the hook at 0x8011C4AC are all present before touching anything.
+Measured original-disc script extraction boundary - 2026-08-01
+- `E:\arc\원본\arc1.bin` SHA-256 is `16c62b4485bf29b97bc6090c58490cee718647624c3f4687b0aa4cdebae97c1a`.
+- Its ISO9660 directory contains 256 `.DAT` files. The established `17/19` dialogue marker parser identifies 5,795 records across them and COMM.DAT (24 COMM.DAT records) when applied read-only to the original disc.
+- The original disc's COMM.IMG SHA-256 equals `01_work/COMM.IMG`, so the current atlas-derived Japanese glyph map is based on the requested disc image.
+- The parser/dictionary does NOT fully decode this corpus: 4,376 records include unresolved glyph or control markers. Do not claim that `05_docs/script_original_full.csv` is a complete Japanese transcription, and do not translate unresolved entries by inference.
+- Existing `*translation*.csv` reconciliation at exact `(file, offset)` finds 655 unambiguous existing translations, 143 offsets with conflicting existing texts, and 4,997 without a translation. The 488 syllables in the generated requirement CSV are therefore only the unambiguous existing-translation subset, not a full-script requirement.
+
+Original Japanese font-index mapping evidence boundary - 2026-08-01
+- `05_docs/japanese_font_index_map.csv` has a row for every index 0..1239. Only 560 indices are `anchor`: each occurs in at least one source record that decodes with no unresolved glyph or control marker. No conflicting character was found among these anchors.
+- No additional index was accepted from corpus inference or an external Japanese script in this pass. The public GameFAQs transcript located during research is English, so it cannot by itself prove a Japanese character at an encoded index.
+- `E6 01` is a confirmed source-dialogue line break. `E4 1F` occurs at the end of repeated item-acquisition notices and is the parser's confirmed page/end break. Other `E4 xx` sequences remain unclassified control/escape candidates; do not split them into `E4` plus a glyph or assign them a visible character without format evidence.
+
+Japanese font corpus propagation - 2026-08-01
+- 106 additional index mappings were established only where a repeated normal-dialogue context or a fully constrained Japanese word fixed one character. They are tagged `corpus` with the actual context in `05_docs/japanese_font_index_map.csv`.
+- Result: anchors=560, corpus=106, reference=0, unresolved=574; completely decoded extracted rows=1,843/5,795.
+- High-frequency unresolved indices 2, 3, 4, 6, 7, 14, 15, and 25 occur chiefly in parser candidates containing `00`/`FF` controls. They are not admissible corpus evidence until that record format is identified.
+
+Rejected broad ASCII glyph rule - corrected 2026-08-01
+- The earlier claim that atlas indices 0..94 equal ASCII code minus 32 was false. It extrapolated ten visual samples without checking the rest of the atlas, so the apparent 5,368-row decode count is invalid and must not be used for translation coverage or glyph-capacity planning.
+- Direct extraction from the original disc's COMM.IMG (LBA 667; 12x12 4bpp plane per index) establishes the rule for indices 0..25. Index 0 is a blank ASCII space; 1..25 are `!` through `9`; 26..94 are Japanese/non-ASCII shapes. The evidence for every tested index is `05_docs/ascii_glyph_rule_audit.csv` and `01_work/analysis/ascii_glyph_audit/`.
+- `script_original_full.csv` was first added in `2109797`, so no earlier CSV exists to restore. The repair instead proves every correction against the retained raw bytes: a raw index in 26..94 is changed only when its displayed token is exactly the unsupported ASCII candidate. It never assigns a Japanese character by inference: the token becomes `<G:n>`.
+- The only actual substitutions are index 89 (256 occurrences) and index 90 (306 occurrences): 562 glyph positions in 277 source rows. The corpus now has 5,175/5,795 rows without `<G:`; 107 unresolved glyph indices occur 1,425 times. Rows with unresolved control markers remain a separate issue.
+- Existing Korean text is restored exactly from task-start `32389d2`; no Korean wording is written or judged. The correction restores 111 cells that the mistaken index-0 repair had cleared, then clears 76 cells whose source row is genuinely restored to `<G:89>` or `<G:90>`. `apply_ascii_glyph_rule.py` now accepts only 0..25 and rejects the broad range so a future run cannot recreate the corruption.
+
+Translation integrity repair - 2026-08-01
+- `script_translated_full.csv` had 301 rows with a `<G:` marker in its Japanese cell and a non-empty Korean cell. These cells and their provenance labels were cleared, as a partial source string is not a translation target.
+- `apply_script_translation_batch.py` is now safe to resume: completed `new` rows must match exactly, `existing` rows cannot be overwritten, and any planned row with `<G:` aborts. A rerun therefore only applies newly added, reviewed dictionary entries.
+- After 34 additional reviewed dialogue lines, the canonical translated CSV contains 354 retained existing rows and 67 new rows. It remains incomplete and must not yet be used as the finished glyph-requirement measurement.

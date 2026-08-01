@@ -1463,3 +1463,8 @@ v95 tpage slot-reservation candidate - 2026-07-31
 - This is the first build with both halves correct. v73/v74 reserved the slot but flagged P6 in packet byte `0x2B`, the sprite height field. v91 to v93 kept the height intact but lost the reservation.
 - Candidate: `03_output/ui_hud_e7_v95_tpage_slot_reservation_patch_only.zip`, SHA256 `2646E40C0543EBA95684767D97221FF01573FC9CDE0D4F981749A4B11F54AA8F`.
 - Relative to v93 only `PSX.EXE` changes, by 19 bytes in six words. Runtime verification is `PENDING`; roll back to v94 if it regresses.
+
+Source-corpus integrity status (2026-08-01):
+- The original Japanese glyph rule is verified only for indices 0..25: `index = ASCII code - 32`. Index 0 is the blank ASCII space; 1..25 are `!` through `9`.
+- Indices 26..94 remain unresolved unless separately proven. The broad 0..94 expansion was repaired against each row's retained raw bytes: only indices 89 and 90 had actually been substituted, in 277 rows / 562 glyph positions. They are now `<G:89>` or `<G:90>`; no Japanese character was inferred.
+- Current measured source status: 5,175/5,795 rows with no unresolved glyph marker; 107 unresolved glyph indices occur 1,425 times. Of the task-start Korean text, 111 cells wrongly cleared by the intermediate repair were restored exactly and 76 cells on genuinely restored source rows were cleared. The current table has 1,959 non-empty Korean cells. This corpus is not a complete Japanese transcription and must not be used as a finished translation/glyph-capacity total.

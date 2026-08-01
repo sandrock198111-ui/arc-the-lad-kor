@@ -25,6 +25,10 @@ ex/
 # The extracted terminology lives in 05_docs/terminology_decisions.csv instead.
 01_work/analysis/guide_scan/
 
+# The original-font bitplane contact sheet/bitmap table is reproducible from
+# the local original disc and must not be committed as extracted game art.
+01_work/analysis/ascii_glyph_audit/
+
 # Generated patch/output files. Recreate these from scripts/manifests.
 03_output/
 04_screenshots/
@@ -73,3 +77,6 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 .vscode/
+
+# Local Codex desktop preferences are machine-specific.
+.claude/settings.local.json

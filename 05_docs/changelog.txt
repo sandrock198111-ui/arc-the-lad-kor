@@ -833,3 +833,35 @@
 - Built `03_output/ui_hud_e7_v110_restore_all_game_art_patch_only.zip`, SHA256 `6C621CACC76F224F3E349C3A8ECAD58D6B068B52EB8A91CF77E440BCFCF28F35`. 120 cells and 6,939 bytes restored, 3 glyphs moved to rows 9 columns 18..20. Neither file changes size.
 - Re-audited: 8,114 bytes still differ from the original and every one of them was zero there. No game artwork remains overwritten. Runtime verification pending.
 - Standing rule from here on: run the audit before accepting any build that touches COMM.IMG. Glyph placement must be checked against the original file, never against free space in the lookup table.
+2026-08-01 - Measured-script corpus attempt (incomplete; no game asset changed)
+- Added `02_scripts/measure_full_script_requirements.py`, which reads `E:\arc\원본\arc1.bin` through ISO9660 without writing to it and emits reproducible source/reconciliation/glyph CSVs.
+- Generated `script_original_full.csv`, `script_translation_reconciliation.csv`, `script_translated_full.csv`, and `syllable_requirement.csv` under `05_docs`.
+- This is not a completed full-script translation or final glyph requirement: 4,376/5,795 extracted records retain undecoded glyph/control markers and 5,140 records have no unambiguous existing translation.
+
+2026-08-01 - Original Japanese font-index anchor table (no translation work)
+- Added `02_scripts/build_japanese_font_index_map.py` and generated `05_docs/japanese_font_index_map.csv`.
+- The table contains all 1,240 index positions. 560 are anchored by complete source rows; 680 remain explicitly unresolved. No corpus or external-reference mapping was accepted without unambiguous proof.
+- Regenerated `script_original_full.csv` using only the reviewed anchor table. Its complete-decode count remains 1,419/5,795; this establishes no unsupported characters.
+
+2026-08-01 - Japanese font-index corpus propagation
+- Added 106 `corpus` mappings to `japanese_font_index_map.csv` through repeated or uniquely constrained decoded Japanese contexts; retained 560 anchors and accepted no reference mapping.
+- Regenerated `script_original_full.csv` read-only from the original disc. Complete rows rose from 1,419 to 1,843; unresolved indices are 574/1,240.
+- The builder preserves corpus provenance on subsequent passes rather than relabelling it as an anchor.
+
+2026-08-01 - Full-script translation start, reviewed dialogue batch 1
+- Restored the ASCII font rule to the source corpus, then added 33 manually reviewed ordinary-dialogue translations without changing any existing translation.
+- Added `02_scripts/apply_script_translation_batch.py`, which refuses to overwrite existing entries and regenerates the whole-corpus syllable report.
+- The full script remains incomplete: 1,604 readable dialogue candidates are still untranslated, 361 rows have unresolved glyphs, and 3,142 rows contain controls or are non-dialogue/parser candidates.
+- Corrected the batch's `トッシュ` spelling to the binding decision `토슈` and regenerated the syllable report.
+
+2026-08-01 - Translation corpus integrity repair and reviewed batches 2–3
+- Cleared Korean text and translation-source labels from all 301 rows whose `japanese` cell still contains `<G:`; no Korean remains on a marker-bearing row.
+- Made `02_scripts/apply_script_translation_batch.py` idempotent: it clears this violation before applying a batch, rejects unresolved source rows, and refuses to change either existing translations or completed new translations.
+- Added 34 manually reviewed dialogue translations (four White-family introduction lines and thirty Ramada-monk quiz/reward lines) and regenerated `syllable_requirement.csv`.
+
+2026-08-01 - ASCII glyph-rule scope repair (source data only)
+- Read the original disc's COMM.IMG at LBA 667, one 12x12 bitplane per index, and recorded the per-index evidence in `05_docs/ascii_glyph_rule_audit.csv` with the raw bitmaps under `01_work/analysis/ascii_glyph_audit/`.
+- The formula `glyph index = ASCII code - 32` is verified only for indices 0..25. Index 0 is the blank ASCII space; indices 26..94 are Japanese/non-ASCII shapes and are explicitly unresolved by this rule.
+- Repaired only raw-byte positions where a rejected-range glyph had actually become its ASCII candidate: 277 source rows / 562 glyph occurrences, indices 89 and 90. Each is now `<G:n>`; no Japanese character was guessed.
+- Restored 111 Korean cells exactly from the task-start table after the mistaken index-0 clear. Cleared 76 Korean cells whose source row was genuinely restored to `<G:89>` or `<G:90>`. Raw/token alignment failures were zero.
+- Updated `apply_ascii_glyph_rule.py` so a future run cannot reapply the rejected 0..94 rule. No game image, output archive, backup, ZIP, or emulator was touched.

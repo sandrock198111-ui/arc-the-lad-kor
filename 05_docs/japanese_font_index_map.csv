@@ -1,99 +1,99 @@
 ﻿glyph index,character,how it was established
-0, ,ascii rule: index = code - 32
-1,!,ascii rule: index = code - 32
-2,"""",ascii rule: index = code - 32
-3,#,ascii rule: index = code - 32
-4,$,ascii rule: index = code - 32
-5,%,ascii rule: index = code - 32
-6,&,ascii rule: index = code - 32
-7,',ascii rule: index = code - 32
-8,(,ascii rule: index = code - 32
-9,),ascii rule: index = code - 32
-10,*,ascii rule: index = code - 32
-11,+,ascii rule: index = code - 32
-12,",",ascii rule: index = code - 32
-13,-,ascii rule: index = code - 32
-14,.,ascii rule: index = code - 32
-15,/,ascii rule: index = code - 32
-16,0,ascii rule: index = code - 32
-17,1,ascii rule: index = code - 32
-18,2,ascii rule: index = code - 32
-19,3,ascii rule: index = code - 32
-20,4,ascii rule: index = code - 32
-21,5,ascii rule: index = code - 32
-22,6,ascii rule: index = code - 32
-23,7,ascii rule: index = code - 32
-24,8,ascii rule: index = code - 32
-25,9,ascii rule: index = code - 32
-26,:,ascii rule: index = code - 32
-27,;,ascii rule: index = code - 32
-28,<,ascii rule: index = code - 32
-29,=,ascii rule: index = code - 32
-30,>,ascii rule: index = code - 32
-31,?,ascii rule: index = code - 32
-32,@,ascii rule: index = code - 32
-33,A,ascii rule: index = code - 32
-34,B,ascii rule: index = code - 32
-35,C,ascii rule: index = code - 32
-36,D,ascii rule: index = code - 32
-37,E,ascii rule: index = code - 32
-38,F,ascii rule: index = code - 32
-39,G,ascii rule: index = code - 32
-40,H,ascii rule: index = code - 32
-41,I,ascii rule: index = code - 32
-42,J,ascii rule: index = code - 32
-43,K,ascii rule: index = code - 32
-44,L,ascii rule: index = code - 32
-45,M,ascii rule: index = code - 32
-46,N,ascii rule: index = code - 32
-47,O,ascii rule: index = code - 32
-48,P,ascii rule: index = code - 32
-49,Q,ascii rule: index = code - 32
-50,R,ascii rule: index = code - 32
-51,S,ascii rule: index = code - 32
-52,T,ascii rule: index = code - 32
-53,U,ascii rule: index = code - 32
-54,V,ascii rule: index = code - 32
-55,W,ascii rule: index = code - 32
-56,X,ascii rule: index = code - 32
-57,Y,ascii rule: index = code - 32
-58,Z,ascii rule: index = code - 32
-59,[,ascii rule: index = code - 32
-60,\,ascii rule: index = code - 32
-61,],ascii rule: index = code - 32
-62,^,ascii rule: index = code - 32
-63,_,ascii rule: index = code - 32
-64,`,ascii rule: index = code - 32
-65,a,ascii rule: index = code - 32
-66,b,ascii rule: index = code - 32
-67,c,ascii rule: index = code - 32
-68,d,ascii rule: index = code - 32
-69,e,ascii rule: index = code - 32
-70,f,ascii rule: index = code - 32
-71,g,ascii rule: index = code - 32
-72,h,ascii rule: index = code - 32
-73,i,ascii rule: index = code - 32
-74,j,ascii rule: index = code - 32
-75,k,ascii rule: index = code - 32
-76,l,ascii rule: index = code - 32
-77,m,ascii rule: index = code - 32
-78,n,ascii rule: index = code - 32
-79,o,ascii rule: index = code - 32
-80,p,ascii rule: index = code - 32
-81,q,ascii rule: index = code - 32
-82,r,ascii rule: index = code - 32
-83,s,ascii rule: index = code - 32
-84,t,ascii rule: index = code - 32
-85,u,ascii rule: index = code - 32
-86,v,ascii rule: index = code - 32
-87,w,ascii rule: index = code - 32
-88,x,ascii rule: index = code - 32
-89,y,ascii rule: index = code - 32
-90,z,ascii rule: index = code - 32
-91,{,ascii rule: index = code - 32
-92,|,ascii rule: index = code - 32
-93,},ascii rule: index = code - 32
-94,~,ascii rule: index = code - 32
+0, ,"ascii rule: original COMM.IMG audit, index = code - 32"
+1,!,"ascii rule: original COMM.IMG audit, index = code - 32"
+2,"""","ascii rule: original COMM.IMG audit, index = code - 32"
+3,#,"ascii rule: original COMM.IMG audit, index = code - 32"
+4,$,"ascii rule: original COMM.IMG audit, index = code - 32"
+5,%,"ascii rule: original COMM.IMG audit, index = code - 32"
+6,&,"ascii rule: original COMM.IMG audit, index = code - 32"
+7,',"ascii rule: original COMM.IMG audit, index = code - 32"
+8,(,"ascii rule: original COMM.IMG audit, index = code - 32"
+9,),"ascii rule: original COMM.IMG audit, index = code - 32"
+10,*,"ascii rule: original COMM.IMG audit, index = code - 32"
+11,+,"ascii rule: original COMM.IMG audit, index = code - 32"
+12,",","ascii rule: original COMM.IMG audit, index = code - 32"
+13,-,"ascii rule: original COMM.IMG audit, index = code - 32"
+14,.,"ascii rule: original COMM.IMG audit, index = code - 32"
+15,/,"ascii rule: original COMM.IMG audit, index = code - 32"
+16,0,"ascii rule: original COMM.IMG audit, index = code - 32"
+17,1,"ascii rule: original COMM.IMG audit, index = code - 32"
+18,2,"ascii rule: original COMM.IMG audit, index = code - 32"
+19,3,"ascii rule: original COMM.IMG audit, index = code - 32"
+20,4,"ascii rule: original COMM.IMG audit, index = code - 32"
+21,5,"ascii rule: original COMM.IMG audit, index = code - 32"
+22,6,"ascii rule: original COMM.IMG audit, index = code - 32"
+23,7,"ascii rule: original COMM.IMG audit, index = code - 32"
+24,8,"ascii rule: original COMM.IMG audit, index = code - 32"
+25,9,"ascii rule: original COMM.IMG audit, index = code - 32"
+26,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+27,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+28,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+29,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+30,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+31,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+32,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+33,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+34,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+35,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+36,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+37,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+38,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+39,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+40,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+41,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+42,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+43,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+44,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+45,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+46,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+47,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+48,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+49,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+50,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+51,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+52,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+53,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+54,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+55,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+56,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+57,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+58,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+59,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+60,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+61,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+62,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+63,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+64,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+65,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+66,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+67,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+68,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+69,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+70,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+71,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+72,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+73,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+74,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+75,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+76,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+77,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+78,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+79,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+80,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+81,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+82,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+83,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+84,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+85,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+86,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+87,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+88,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+89,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+90,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+91,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+92,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+93,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
+94,,original COMM.IMG audit: Japanese/non-ASCII; ASCII rule rejected
 95,シ,anchor: appears in a completely decoded corpus string
 96,力,anchor: appears in a completely decoded corpus string
 97,タ,anchor: appears in a completely decoded corpus string
