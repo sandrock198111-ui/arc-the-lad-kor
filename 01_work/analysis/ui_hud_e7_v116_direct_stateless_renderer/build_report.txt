@@ -1,0 +1,29 @@
+v116 direct stateless renderer entry
+
+base    ui_hud_e7_v115_no_t9_two_strips_patch_only.zip
+output  ui_hud_e7_v116_direct_stateless_renderer_patch_only.zip
+sha256  DC59B6211598508211BF201DDBAECF8C51386379F665D9B303C4C6301A09AC34
+PSX.EXE 583680 bytes, unchanged
+
+state evidence:
+  EA66 ('잎') lookup = physical index 3367 (row 40, col 1, plane 3)
+  two item-name packets exist at U=16, V=224, plane 3
+  strip A is uploaded, but no high-page DR_TPAGE exists
+  old sidecar words are all zero, so the old entry gate always falls back
+
+single word change:
+  0x8016B764: 080688A8 -> 0806882C
+  j 0x801A22A0 -> j 0x801A20B0
+
+changed bytes: 1; all inside that one word
+all other ZIP members: byte-identical to v115
+static verification: PASS
+runtime verification: PENDING
+
+runtime target after a cold boot:
+  item name '마력의 잎' renders its final glyph
+  ordinary dialogue/UI remains unchanged and progresses
+  a new savestate contains DR_TPAGE E100001F for the item-name object
+
+known separate issue: v103-based COMM.IMG still has the skill-range cursor regression
+rollback: v115 for this single change; v104 remains the accepted game baseline

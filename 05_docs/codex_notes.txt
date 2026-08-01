@@ -978,3 +978,10 @@ Runtime text-token widths and CTRL00 false positives - 2026-08-01
 - Existing Korean is transferred only by exact `(source file, offset)`. All 2,024 non-empty Korean/provenance pairs survive unchanged; 528 of their Japanese display cells changed due correct token pairing and the prior atlas-map repair.
 - `02_scripts/verify_ctrl00_parser_fix.py` pins the before state to commit `291ba49` and aborts if any accepted count, raw-byte match, translation preservation check, or representative sample changes.
 - Remaining boundary: the `17/19` scanner is still a heuristic and is not proof that all game text formats are decoded. The purpose of this correction is only to reject impossible token streams and preserve real control pairs.
+
+The stateless classifier still had a stateful renderer-entry gate - 2026-08-01
+- v92 made pass selection stateless per packet, but it did not remove the earlier object-level sidecar trampoline. `0x8016B764` continued to jump to `0x801A22A0`; only a successful sidecar pointer/bitmap test there reaches the two-pass driver at `0x801A20B0`.
+- The latest v115 state contains zero at all three relocated sidecar words. It therefore always takes the original-renderer fallback, even though the later packet classifier itself is stateless.
+- The same state proves that physical glyph 3367 is not rejected: EA66 resolves to 3367 and the builder emits two item-name sprite packets with U=16, V=224 and plane 3. The missing artifact is the high-page `E100001F` DR_TPAGE primitive, not the glyph packet.
+- The E9/EA decoder directly loads the selected lookup entry, and the common glyph builder divides that value by 84 without comparing it against a global table maximum. Do not infer an index ceiling from the largest unrelated value stored elsewhere in the lookup table.
+- v108e retained a helper that could populate the old sidecar, while the rewritten two-strip helper no longer does. This explains why the same EA66-to-3367 mapping could render in v108e but not in v112/v115. v116 bypasses only the stale entry gate by changing `0x8016B764` from `j 0x801A22A0` to `j 0x801A20B0`.

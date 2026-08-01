@@ -888,3 +888,9 @@
 - Regenerated `script_original_full.csv`, `script_translated_full.csv`, `script_translation_reconciliation.csv`, and `syllable_requirement.csv`. Rows changed 5,795 -> 2,878; `<CTRL:00>` rows 3,027 -> 0; all 2,024 existing Korean/provenance cells were preserved exactly.
 - Added read-only audit/probe/verification tools and generated `ctrl00_parser_audit.md` plus the full 179-file distribution CSV.
 - No original disc, `03_output`, `99_backup`, ZIP, or emulator was touched.
+
+2026-08-01 - v116 direct stateless-renderer entry candidate
+- Rejected the v115 savestate diagnosis that glyph indices above an unknown global maximum are discarded. The state contains two actual EA66 sprite packets at U=16/V=224, and the E9/EA decoder directly indexes one lookup entry without consulting the table's unrelated maximum value.
+- Found the remaining stateful dependency: the common renderer still jumped to the old sidecar trampoline at `0x801A22A0`. Its three sidecar words are zero in the v115 state, so it always selected the original low-page renderer and never emitted the high-page DR_TPAGE.
+- Added `02_scripts/build_ui_hud_e7_v116_direct_stateless_renderer.py`. It changes only the renderer hook at `0x8016B764`, from `j 0x801A22A0` to `j 0x801A20B0`, entering the existing stateless two-pass driver directly.
+- Built `03_output/ui_hud_e7_v116_direct_stateless_renderer_patch_only.zip`, SHA256 `DC59B6211598508211BF201DDBAECF8C51386379F665D9B303C4C6301A09AC34`. PSX.EXE size and all other archive members are unchanged from v115. Static verification passes; runtime verification is pending. The separate v103-based skill-range cursor regression remains present.
