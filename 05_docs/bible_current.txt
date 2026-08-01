@@ -1479,3 +1479,6 @@ Reviewed script translation batch 20260801-002 - 2026-08-01
 - Added 19 source-verified lines from the return-to-mountain sequence (`D/SD014`, `D/SD015`, `D/SD021`, and `D/SD071`). No line with an unresolved glyph, named-byte marker, or unclassified control sequence was included.
 - The canonical table now contains 2,011 non-empty Korean cells. The user-specified blank-target rule now measures 3,164 rows; the strict high-confidence queue is 36 rows.
 - Batch review files encode embedded Japanese line breaks as literal `\n`. The apply tool decodes only that notation and otherwise requires the Japanese source to be byte-for-byte equal to the canonical cell.
+Reviewed script translation batch 20260801-003 - 2026-08-01
+- Added 13 source-verified lines from the holy-casket and final-spirit sequence (`B/SB021` and `B/SB022`). The batch preserves established `성궤`, `인간`, and elemental-spirit spellings and adds no proper noun.
+- The canonical table now contains 2,024 non-empty Korean cells. The user-specified blank-target rule now measures 3,151 rows; the strict high-confidence queue is 23 rows.

@@ -962,3 +962,6 @@ Reviewed-batch newline notation - 2026-08-01
 - Literal newlines in a quoted review CSV make a speaker label ending in a source-space look like a Git trailing-whitespace error. Review batches therefore represent embedded source line breaks as the two characters `\n`.
 - `apply_reviewed_translation_batch.py` rejects physical CR/LF in the review-source field, decodes only literal `\n`, and compares the resulting source triple exactly. This preserves source spaces while keeping the review file one record per physical CSV line.
 - Batch 20260801-002 changed exactly 19 canonical rows relative to commit `1fe4f69`; no pre-existing Korean or source cell changed.
+Reviewed batch 20260801-003 - 2026-08-01
+- The strict high-confidence screen allowed only 13 fully decoded `B/SB021`/`B/SB022` rows. Nearby rows with `<N:...>` markers were deliberately left blank even where surrounding context suggests their meaning.
+- Relative to commit `2786d57`, batch 003 changed exactly 13 canonical rows and only their Korean/provenance fields.

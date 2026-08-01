@@ -1,3 +1,4 @@
 ﻿batch_id,applied_at_utc,rows_applied,canonical_sha256_before,canonical_sha256_after,selection_basis,new_proper_nouns
 20260801-001,2026-08-01T12:03:28Z,33,3bc00341b0faa27a8fbbdbad61101b47da4af325dbdedeade11cee7c18ee6ac8,584f13b79042b0751ace491fe5597b8ef382e75fea63f24a6a8544d604755bca,high-confidence fully decoded tournament dialogue; exact source-key verification,none
 20260801-002,2026-08-01T12:18:21+00:00,19,584f13b79042b0751ace491fe5597b8ef382e75fea63f24a6a8544d604755bca,104327d5a6810b3582e048ab1df12176eee987d95c2d02a3b7167eb37d2f7fe7,high-confidence source-verified return-to-mountain dialogue; exact source-key verification,none
+20260801-003,2026-08-01T12:23:00+00:00,13,104327d5a6810b3582e048ab1df12176eee987d95c2d02a3b7167eb37d2f7fe7,96f3f6924385bc72570229be3b399eb3cacb54d20d694e90cfd69bcab57ea1db,strict high-confidence holy-casket and spirit dialogue; exact source-key verification,none
