@@ -1,0 +1,1241 @@
+﻿glyph index,character,how it was established
+0, ,ascii rule: index = code - 32
+1,!,ascii rule: index = code - 32
+2,"""",ascii rule: index = code - 32
+3,#,ascii rule: index = code - 32
+4,$,ascii rule: index = code - 32
+5,%,ascii rule: index = code - 32
+6,&,ascii rule: index = code - 32
+7,',ascii rule: index = code - 32
+8,(,ascii rule: index = code - 32
+9,),ascii rule: index = code - 32
+10,*,ascii rule: index = code - 32
+11,+,ascii rule: index = code - 32
+12,",",ascii rule: index = code - 32
+13,-,ascii rule: index = code - 32
+14,.,ascii rule: index = code - 32
+15,/,ascii rule: index = code - 32
+16,0,ascii rule: index = code - 32
+17,1,ascii rule: index = code - 32
+18,2,ascii rule: index = code - 32
+19,3,ascii rule: index = code - 32
+20,4,ascii rule: index = code - 32
+21,5,ascii rule: index = code - 32
+22,6,ascii rule: index = code - 32
+23,7,ascii rule: index = code - 32
+24,8,ascii rule: index = code - 32
+25,9,ascii rule: index = code - 32
+26,:,ascii rule: index = code - 32
+27,;,ascii rule: index = code - 32
+28,<,ascii rule: index = code - 32
+29,=,ascii rule: index = code - 32
+30,>,ascii rule: index = code - 32
+31,?,ascii rule: index = code - 32
+32,@,ascii rule: index = code - 32
+33,A,ascii rule: index = code - 32
+34,B,ascii rule: index = code - 32
+35,C,ascii rule: index = code - 32
+36,D,ascii rule: index = code - 32
+37,E,ascii rule: index = code - 32
+38,F,ascii rule: index = code - 32
+39,G,ascii rule: index = code - 32
+40,H,ascii rule: index = code - 32
+41,I,ascii rule: index = code - 32
+42,J,ascii rule: index = code - 32
+43,K,ascii rule: index = code - 32
+44,L,ascii rule: index = code - 32
+45,M,ascii rule: index = code - 32
+46,N,ascii rule: index = code - 32
+47,O,ascii rule: index = code - 32
+48,P,ascii rule: index = code - 32
+49,Q,ascii rule: index = code - 32
+50,R,ascii rule: index = code - 32
+51,S,ascii rule: index = code - 32
+52,T,ascii rule: index = code - 32
+53,U,ascii rule: index = code - 32
+54,V,ascii rule: index = code - 32
+55,W,ascii rule: index = code - 32
+56,X,ascii rule: index = code - 32
+57,Y,ascii rule: index = code - 32
+58,Z,ascii rule: index = code - 32
+59,[,ascii rule: index = code - 32
+60,\,ascii rule: index = code - 32
+61,],ascii rule: index = code - 32
+62,^,ascii rule: index = code - 32
+63,_,ascii rule: index = code - 32
+64,`,ascii rule: index = code - 32
+65,a,ascii rule: index = code - 32
+66,b,ascii rule: index = code - 32
+67,c,ascii rule: index = code - 32
+68,d,ascii rule: index = code - 32
+69,e,ascii rule: index = code - 32
+70,f,ascii rule: index = code - 32
+71,g,ascii rule: index = code - 32
+72,h,ascii rule: index = code - 32
+73,i,ascii rule: index = code - 32
+74,j,ascii rule: index = code - 32
+75,k,ascii rule: index = code - 32
+76,l,ascii rule: index = code - 32
+77,m,ascii rule: index = code - 32
+78,n,ascii rule: index = code - 32
+79,o,ascii rule: index = code - 32
+80,p,ascii rule: index = code - 32
+81,q,ascii rule: index = code - 32
+82,r,ascii rule: index = code - 32
+83,s,ascii rule: index = code - 32
+84,t,ascii rule: index = code - 32
+85,u,ascii rule: index = code - 32
+86,v,ascii rule: index = code - 32
+87,w,ascii rule: index = code - 32
+88,x,ascii rule: index = code - 32
+89,y,ascii rule: index = code - 32
+90,z,ascii rule: index = code - 32
+91,{,ascii rule: index = code - 32
+92,|,ascii rule: index = code - 32
+93,},ascii rule: index = code - 32
+94,~,ascii rule: index = code - 32
+95,シ,anchor: appears in a completely decoded corpus string
+96,力,anchor: appears in a completely decoded corpus string
+97,タ,anchor: appears in a completely decoded corpus string
+98,戦,anchor: appears in a completely decoded corpus string
+99,マ,anchor: appears in a completely decoded corpus string
+100,イ,corpus: independent contexts ヨッパライ / スパイ
+101,兵,anchor: appears in a completely decoded corpus string
+102,ダ,anchor: appears in a completely decoded corpus string
+103,士,anchor: appears in a completely decoded corpus string
+104,ョ,anchor: appears in a completely decoded corpus string
+105,ぞ,anchor: appears in a completely decoded corpus string
+106,リ,anchor: appears in a completely decoded corpus string
+107,チ,anchor: appears in a completely decoded corpus string
+108,み,anchor: appears in a completely decoded corpus string
+109,何,anchor: appears in a completely decoded corpus string
+110,レ,corpus: independent contexts パレンシア城 / パレンシアの都
+111,下,anchor: appears in a completely decoded corpus string
+112,ウ,anchor: appears in a completely decoded corpus string
+113,ピ,anchor: appears in a completely decoded corpus string
+114,ょ,anchor: appears in a completely decoded corpus string
+115,行,anchor: appears in a completely decoded corpus string
+116,っ,anchor: appears in a completely decoded corpus string
+117,発,anchor: appears in a completely decoded corpus string
+118,サ,anchor: appears in a completely decoded corpus string
+119,メ,anchor: appears in a completely decoded corpus string
+120,ご,anchor: appears in a completely decoded corpus string
+121,こ,anchor: appears in a completely decoded corpus string
+122,会,anchor: appears in a completely decoded corpus string
+123,ナ,anchor: appears in a completely decoded corpus string
+124,ひ,anchor: appears in a completely decoded corpus string
+125,者,anchor: appears in a completely decoded corpus string
+126,ジ,anchor: appears in a completely decoded corpus string
+127,グ,corpus: independent contexts ヤグン将軍 / ヤグンつて将軍
+128,デ,anchor: appears in a completely decoded corpus string
+129,ッ,anchor: appears in a completely decoded corpus string
+130,達,anchor: appears in a completely decoded corpus string
+131,僧,anchor: appears in a completely decoded corpus string
+132,私,anchor: appears in a completely decoded corpus string
+133,入,anchor: appears in a completely decoded corpus string
+134,手,anchor: appears in a completely decoded corpus string
+135,聞,anchor: appears in a completely decoded corpus string
+136,場,anchor: appears in a completely decoded corpus string
+137,へ,anchor: appears in a completely decoded corpus string
+138,臣,anchor: appears in a completely decoded corpus string
+139,す,anchor: appears in a completely decoded corpus string
+140,員,anchor: appears in a completely decoded corpus string
+141,一,anchor: appears in a completely decoded corpus string
+142,オ,anchor: appears in a completely decoded corpus string
+143,地,anchor: appears in a completely decoded corpus string
+144,言,anchor: appears in a completely decoded corpus string
+145,本,anchor: appears in a completely decoded corpus string
+146,闘,anchor: appears in a completely decoded corpus string
+147,石,anchor: appears in a completely decoded corpus string
+148,ト,anchor: appears in a completely decoded corpus string
+149,子,anchor: appears in a completely decoded corpus string
+150,ふ,anchor: appears in a completely decoded corpus string
+151,待,anchor: appears in a completely decoded corpus string
+152,び,anchor: appears in a completely decoded corpus string
+153,来,anchor: appears in a completely decoded corpus string
+154,山,anchor: appears in a completely decoded corpus string
+155,げ,anchor: appears in a completely decoded corpus string
+156,決,anchor: appears in a completely decoded corpus string
+157,回,anchor: appears in a completely decoded corpus string
+158,思,anchor: appears in a completely decoded corpus string
+159,見,anchor: appears in a completely decoded corpus string
+160,っ,anchor: appears in a completely decoded corpus string
+161,ロ,anchor: appears in a completely decoded corpus string
+162,パ,anchor: appears in a completely decoded corpus string
+163,自,anchor: appears in a completely decoded corpus string
+164,参,anchor: appears in a completely decoded corpus string
+165,フ,anchor: appears in a completely decoded corpus string
+166,ぜ,anchor: appears in a completely decoded corpus string
+167,老,anchor: appears in a completely decoded corpus string
+168,気,anchor: appears in a completely decoded corpus string
+169,加,anchor: appears in a completely decoded corpus string
+170,ュ,anchor: appears in a completely decoded corpus string
+171,目,anchor: appears in a completely decoded corpus string
+172,俺,anchor: appears in a completely decoded corpus string
+173,前,anchor: appears in a completely decoded corpus string
+174,バ,anchor: appears in a completely decoded corpus string
+175,話,anchor: appears in a completely decoded corpus string
+176,撃,anchor: appears in a completely decoded corpus string
+177,分,anchor: appears in a completely decoded corpus string
+178,男,anchor: appears in a completely decoded corpus string
+179,ベ,anchor: appears in a completely decoded corpus string
+180,む,anchor: appears in a completely decoded corpus string
+181,役,anchor: appears in a completely decoded corpus string
+182,父,anchor: appears in a completely decoded corpus string
+183,水,anchor: appears in a completely decoded corpus string
+184,上,anchor: appears in a completely decoded corpus string
+185,軍,anchor: appears in a completely decoded corpus string
+186,ヤ,anchor: appears in a completely decoded corpus string
+187,カ,anchor: appears in a completely decoded corpus string
+188,敵,anchor: appears in a completely decoded corpus string
+189,我,anchor: appears in a completely decoded corpus string
+190,炎,anchor: appears in a completely decoded corpus string
+191,え,corpus: independent contexts うげええ / 終つてねえぞ / だらしないねえ
+192,風,anchor: appears in a completely decoded corpus string
+193,所,anchor: appears in a completely decoded corpus string
+194,後,anchor: appears in a completely decoded corpus string
+195,方,anchor: appears in a completely decoded corpus string
+196,備,anchor: appears in a completely decoded corpus string
+197,知,anchor: appears in a completely decoded corpus string
+198,正,anchor: appears in a completely decoded corpus string
+199,今,anchor: appears in a completely decoded corpus string
+200,フ,anchor: appears in a completely decoded corpus string
+201,ぶ,anchor: appears in a completely decoded corpus string
+202,様,anchor: appears in a completely decoded corpus string
+203,命,anchor: appears in a completely decoded corpus string
+204,聖,anchor: appears in a completely decoded corpus string
+205,世,anchor: appears in a completely decoded corpus string
+206,時,anchor: appears in a completely decoded corpus string
+207,攻,anchor: appears in a completely decoded corpus string
+208,ニ,anchor: appears in a completely decoded corpus string
+209,ぼ,corpus: independent contexts 僕ら / 落ちこぼれ / 僕を
+210,聞,anchor: appears in a completely decoded corpus string
+211,長,anchor: appears in a completely decoded corpus string
+212,勝,anchor: appears in a completely decoded corpus string
+213,ャ,anchor: appears in a completely decoded corpus string
+214,ポ,anchor: appears in a completely decoded corpus string
+215,ム,anchor: appears in a completely decoded corpus string
+216,戻,anchor: appears in a completely decoded corpus string
+217,年,anchor: appears in a completely decoded corpus string
+218,テ,corpus: independent contexts アイテム / アイテム投げ
+219,動,anchor: appears in a completely decoded corpus string
+220,向,anchor: appears in a completely decoded corpus string
+221,ガ,corpus: independent contexts チョンガラ / トン・ガバ
+222,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+223,ゆ,corpus: independent contexts ゆつくり / ゆるす / ゆたかな
+224,ほ,anchor: appears in a completely decoded corpus string
+225,々,corpus: independent contexts 我々 / 方々
+226,伝,anchor: appears in a completely decoded corpus string
+227,全,anchor: appears in a completely decoded corpus string
+228,持,anchor: appears in a completely decoded corpus string
+229,火,anchor: appears in a completely decoded corpus string
+230,村,anchor: appears in a completely decoded corpus string
+231,光,anchor: appears in a completely decoded corpus string
+232,供,anchor: appears in a completely decoded corpus string
+233,母,anchor: appears in a completely decoded corpus string
+234,封,anchor: appears in a completely decoded corpus string
+235,森,anchor: appears in a completely decoded corpus string
+236,心,anchor: appears in a completely decoded corpus string
+237,界,anchor: appears in a completely decoded corpus string
+238,委,anchor: appears in a completely decoded corpus string
+239,ヨ,anchor: appears in a completely decoded corpus string
+240,変,anchor: appears in a completely decoded corpus string
+241,等,anchor: appears in a completely decoded corpus string
+242,城,anchor: appears in a completely decoded corpus string
+243,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+244,強,anchor: appears in a completely decoded corpus string
+245,柩,anchor: appears in a completely decoded corpus string
+246,魔,anchor: appears in a completely decoded corpus string
+247,生,anchor: appears in a completely decoded corpus string
+248,整,anchor: appears in a completely decoded corpus string
+249,守,anchor: appears in a completely decoded corpus string
+250,果,anchor: appears in a completely decoded corpus string
+251,度,anchor: appears in a completely decoded corpus string
+252,早,anchor: appears in a completely decoded corpus string
+253,死,anchor: appears in a completely decoded corpus string
+254,エ,anchor: appears in a completely decoded corpus string
+255,欲,anchor: appears in a completely decoded corpus string
+256,部,anchor: appears in a completely decoded corpus string
+257,天,anchor: appears in a completely decoded corpus string
+258,信,anchor: appears in a completely decoded corpus string
+259,消,anchor: appears in a completely decoded corpus string
+260,取,anchor: appears in a completely decoded corpus string
+261,次,anchor: appears in a completely decoded corpus string
+262,最,anchor: appears in a completely decoded corpus string
+263,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+264,体,anchor: appears in a completely decoded corpus string
+265,声,anchor: appears in a completely decoded corpus string
+266,神,anchor: appears in a completely decoded corpus string
+267,食,anchor: appears in a completely decoded corpus string
+268,助,anchor: appears in a completely decoded corpus string
+269,準,anchor: appears in a completely decoded corpus string
+270,使,anchor: appears in a completely decoded corpus string
+271,解,anchor: appears in a completely decoded corpus string
+272,ベ,anchor: appears in a completely decoded corpus string
+273,立,anchor: appears in a completely decoded corpus string
+274,運,anchor: appears in a completely decoded corpus string
+275,安,anchor: appears in a completely decoded corpus string
+276,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+277,ミ,anchor: appears in a completely decoded corpus string
+278,へ,anchor: appears in a completely decoded corpus string
+279,ゴ,corpus: independent contexts ゴーゲンさん / ゴーゲン様
+280,ざ,corpus: independent contexts 罪人（ざいにん） / ございます
+281,用,anchor: appears in a completely decoded corpus string
+282,与,corpus: independent contexts 力を与えます / ダメージを与える
+283,滅,anchor: appears in a completely decoded corpus string
+284,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+285,当,anchor: appears in a completely decoded corpus string
+286,乗,anchor: appears in a completely decoded corpus string
+287,印,anchor: appears in a completely decoded corpus string
+288,ふ,corpus: independent contexts きくのふり / ふつふつ
+289,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+290,勇,anchor: appears in a completely decoded corpus string
+291,忘,corpus: independent contexts 忘れない / 忘れた / 存在を忘れ
+292,物,anchor: appears in a completely decoded corpus string
+293,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+294,兄,anchor: appears in a completely decoded corpus string
+295,技,anchor: appears in a completely decoded corpus string
+296,ゲ,anchor: appears in a completely decoded corpus string
+297,キ,corpus: independent contexts ガキか
+298,ぬ,anchor: appears in a completely decoded corpus string
+299,望,anchor: appears in a completely decoded corpus string
+300,法,anchor: appears in a completely decoded corpus string
+301,道,anchor: appears in a completely decoded corpus string
+302,的,anchor: appears in a completely decoded corpus string
+303,争,anchor: appears in a completely decoded corpus string
+304,プ,corpus: independent contexts マップ
+305,カ,anchor: appears in a completely decoded corpus string
+306,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+307,薬,anchor: appears in a completely decoded corpus string
+308,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+309,集,anchor: appears in a completely decoded corpus string
+310,始,anchor: appears in a completely decoded corpus string
+311,切,corpus: independent contexts たたき切る / ぶつた切つて
+312,込,anchor: appears in a completely decoded corpus string
+313,家,anchor: appears in a completely decoded corpus string
+314,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+315,セ,anchor: appears in a completely decoded corpus string
+316,葉,anchor: appears in a completely decoded corpus string
+317,破,anchor: appears in a completely decoded corpus string
+318,奴,anchor: appears in a completely decoded corpus string
+319,中,anchor: appears in a completely decoded corpus string
+320,草,anchor: appears in a completely decoded corpus string
+321,先,anchor: appears in a completely decoded corpus string
+322,住,anchor: appears in a completely decoded corpus string
+323,受,anchor: appears in a completely decoded corpus string
+324,古,anchor: appears in a completely decoded corpus string
+325,教,anchor: appears in a completely decoded corpus string
+326,外,anchor: appears in a completely decoded corpus string
+327,悪,anchor: appears in a completely decoded corpus string
+328,ケ,corpus: independent contexts トヨーケの森
+329,礼,anchor: appears in a completely decoded corpus string
+330,無,anchor: appears in a completely decoded corpus string
+331,民,anchor: appears in a completely decoded corpus string
+332,不,anchor: appears in a completely decoded corpus string
+333,飛,anchor: appears in a completely decoded corpus string
+334,彼,anchor: appears in a completely decoded corpus string
+335,日,anchor: appears in a completely decoded corpus string
+336,通,anchor: appears in a completely decoded corpus string
+337,奪,anchor: appears in a completely decoded corpus string
+338,隊,anchor: appears in a completely decoded corpus string
+339,召,anchor: appears in a completely decoded corpus string
+340,終,anchor: appears in a completely decoded corpus string
+341,殺,anchor: appears in a completely decoded corpus string
+342,喚,anchor: appears in a completely decoded corpus string
+343,化,anchor: appears in a completely decoded corpus string
+344,ぎ,anchor: appears in a completely decoded corpus string
+345,約,anchor: appears in a completely decoded corpus string
+346,配,anchor: appears in a completely decoded corpus string
+347,能,anchor: appears in a completely decoded corpus string
+348,内,anchor: appears in a completely decoded corpus string
+349,同,anchor: appears in a completely decoded corpus string
+350,倒,anchor: appears in a completely decoded corpus string
+351,殿,anchor: appears in a completely decoded corpus string
+352,直,anchor: appears in a completely decoded corpus string
+353,調,anchor: appears in a completely decoded corpus string
+354,束,anchor: appears in a completely decoded corpus string
+355,小,anchor: appears in a completely decoded corpus string
+356,将,anchor: appears in a completely decoded corpus string
+357,告,anchor: appears in a completely decoded corpus string
+358,考,anchor: appears in a completely decoded corpus string
+359,現,anchor: appears in a completely decoded corpus string
+360,剣,anchor: appears in a completely decoded corpus string
+361,急,anchor: appears in a completely decoded corpus string
+362,遺,anchor: appears in a completely decoded corpus string
+363,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+364,頼,anchor: appears in a completely decoded corpus string
+365,明,anchor: appears in a completely decoded corpus string
+366,未,anchor: appears in a completely decoded corpus string
+367,味,anchor: appears in a completely decoded corpus string
+368,亡,anchor: appears in a completely decoded corpus string
+369,避,anchor: appears in a completely decoded corpus string
+370,定,anchor: appears in a completely decoded corpus string
+371,挑,anchor: appears in a completely decoded corpus string
+372,仲,anchor: appears in a completely decoded corpus string
+373,対,anchor: appears in a completely decoded corpus string
+374,続,anchor: appears in a completely decoded corpus string
+375,族,anchor: appears in a completely decoded corpus string
+376,跡,anchor: appears in a completely decoded corpus string
+377,寺,anchor: appears in a completely decoded corpus string
+378,壊,anchor: appears in a completely decoded corpus string
+379,ワ,corpus: independent contexts パレンシアタワー
+380,ボ,corpus: independent contexts シンボル / ボリューム
+381,ハ,corpus: independent contexts ハンサム
+382,類,anchor: appears in a completely decoded corpus string
+383,落,anchor: appears in a completely decoded corpus string
+384,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+385,防,corpus: independent contexts 滅亡を防ぐ
+386,得,anchor: appears in a completely decoded corpus string
+387,代,anchor: appears in a completely decoded corpus string
+388,太,anchor: appears in a completely decoded corpus string
+389,切,anchor: appears in a completely decoded corpus string
+390,残,anchor: appears in a completely decoded corpus string
+391,合,anchor: appears in a completely decoded corpus string
+392,ご,corpus: independent contexts ご案内する
+393,鏡,anchor: appears in a completely decoded corpus string
+394,恐,anchor: appears in a completely decoded corpus string
+395,許,anchor: appears in a completely decoded corpus string
+396,か,corpus: independent contexts かかわらない / かかる
+397,階,corpus: independent contexts 地下牢はこの下の階
+398,引,anchor: appears in a completely decoded corpus string
+399,ベ,corpus: independent contexts レベル
+400,キ,corpus: independent contexts キャッキャッ
+401,ベ,corpus: independent contexts カベが / カベを
+402,ぐ,corpus: independent contexts すぐ / ぐつ
+403,旅,anchor: appears in a completely decoded corpus string
+404,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+405,悲,corpus: independent contexts 悲しいこと / 大変悲しいお知らせ
+406,討,anchor: appears in a completely decoded corpus string
+407,渡,anchor: appears in a completely decoded corpus string
+408,進,anchor: appears in a completely decoded corpus string
+409,書,anchor: appears in a completely decoded corpus string
+410,修,anchor: appears in a completely decoded corpus string
+411,荒,anchor: appears in a completely decoded corpus string
+412,効,anchor: appears in a completely decoded corpus string
+413,呼,anchor: appears in a completely decoded corpus string
+414,共,anchor: appears in a completely decoded corpus string
+415,起,anchor: appears in a completely decoded corpus string
+416,帰,anchor: appears in a completely decoded corpus string
+417,リ,corpus: independent contexts リエちゃん
+418,ヌ,corpus: independent contexts グレイシーヌ / フヌケ
+419,ザ,corpus: independent contexts アークザラッド
+420,宝,anchor: appears in a completely decoded corpus string
+421,報,anchor: appears in a completely decoded corpus string
+422,負,anchor: appears in a completely decoded corpus string
+423,必,anchor: appears in a completely decoded corpus string
+424,伐,anchor: appears in a completely decoded corpus string
+425,売,anchor: appears in a completely decoded corpus string
+426,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+427,逃,anchor: appears in a completely decoded corpus string
+428,弟,anchor: appears in a completely decoded corpus string
+429,値,anchor: appears in a completely decoded corpus string
+430,誰,anchor: appears in a completely decoded corpus string
+431,多,anchor: appears in a completely decoded corpus string
+432,造,anchor: appears in a completely decoded corpus string
+433,然,anchor: appears in a completely decoded corpus string
+434,身,anchor: appears in a completely decoded corpus string
+435,親,anchor: appears in a completely decoded corpus string
+436,少,anchor: appears in a completely decoded corpus string
+437,商,anchor: appears in a completely decoded corpus string
+438,主,anchor: appears in a completely decoded corpus string
+439,失,anchor: appears in a completely decoded corpus string
+440,高,anchor: appears in a completely decoded corpus string
+441,経,anchor: appears in a completely decoded corpus string
+442,楽,anchor: appears in a completely decoded corpus string
+443,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+444,可,anchor: appears in a completely decoded corpus string
+445,意,anchor: appears in a completely decoded corpus string
+446,案,anchor: appears in a completely decoded corpus string
+447,連,anchor: appears in a completely decoded corpus string
+448,理,anchor: appears in a completely decoded corpus string
+449,由,anchor: appears in a completely decoded corpus string
+450,野,anchor: appears in a completely decoded corpus string
+451,僕,anchor: appears in a completely decoded corpus string
+452,別,anchor: appears in a completely decoded corpus string
+453,頂,anchor: appears in a completely decoded corpus string
+454,着,anchor: appears in a completely decoded corpus string
+455,説,anchor: appears in a completely decoded corpus string
+456,弱,anchor: appears in a completely decoded corpus string
+457,治,anchor: appears in a completely decoded corpus string
+458,作,anchor: appears in a completely decoded corpus string
+459,再,anchor: appears in a completely decoded corpus string
+460,鼓,anchor: appears in a completely decoded corpus string
+461,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+462,苦,corpus: independent contexts 悲しみ、苦しみ
+463,議,corpus: independent contexts 不思議な力 / 不思議な力をもつ太鼓
+464,記,anchor: appears in a completely decoded corpus string
+465,為,anchor: appears in a completely decoded corpus string
+466,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+467,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+468,づ,anchor: appears in a completely decoded corpus string
+469,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+470,郎,anchor: appears in a completely decoded corpus string
+471,練,anchor: appears in a completely decoded corpus string
+472,良,anchor: appears in a completely decoded corpus string
+473,裏,anchor: appears in a completely decoded corpus string
+474,先,corpus: independent contexts この先から
+475,娘,corpus: independent contexts 小娘
+476,反,anchor: appears in a completely decoded corpus string
+477,導,anchor: appears in a completely decoded corpus string
+478,投,anchor: appears in a completely decoded corpus string
+479,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+480,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+481,探,anchor: appears in a completely decoded corpus string
+482,他,anchor: appears in a completely decoded corpus string
+483,相,anchor: appears in a completely decoded corpus string
+484,選,anchor: appears in a completely decoded corpus string
+485,船,corpus: independent contexts 飛行船
+486,証,anchor: appears in a completely decoded corpus string
+487,承,anchor: appears in a completely decoded corpus string
+488,車,anchor: appears in a completely decoded corpus string
+489,紙,anchor: appears in a completely decoded corpus string
+490,支,anchor: appears in a completely decoded corpus string
+491,師,anchor: appears in a completely decoded corpus string
+492,骨,anchor: appears in a completely decoded corpus string
+493,口,corpus: independent contexts 出口 / 入り口
+494,拳,anchor: appears in a completely decoded corpus string
+495,劇,corpus: independent contexts 悲劇
+496,救,anchor: appears in a completely decoded corpus string
+497,期,anchor: appears in a completely decoded corpus string
+498,危,anchor: appears in a completely decoded corpus string
+499,確,anchor: appears in a completely decoded corpus string
+500,改,anchor: appears in a completely decoded corpus string
+501,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+502,屋,anchor: appears in a completely decoded corpus string
+503,違,anchor: appears in a completely decoded corpus string
+504,ビ,corpus: independent contexts サービス
+505,供,corpus: independent contexts 子供
+506,ゅ,corpus: independent contexts 基本中の基本
+507,牢,corpus: independent contexts 牢屋 / 地下牢 / 牢をやぶり
+508,列,anchor: appears in a completely decoded corpus string
+509,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+510,流,corpus: independent contexts 涙を流した
+511,夜,corpus: independent contexts 今夜 / あの夜会つた
+512,名,anchor: appears in a completely decoded corpus string
+513,動,corpus: independent contexts 始動した / 始動しろ
+514,武,corpus: independent contexts 武器 / 武闘大会
+515,夫,anchor: appears in a completely decoded corpus string
+516,付,anchor: appears in a completely decoded corpus string
+517,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+518,番,anchor: appears in a completely decoded corpus string
+519,漠,anchor: appears in a completely decoded corpus string
+520,典,anchor: appears in a completely decoded corpus string
+521,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+522,ひ,corpus: independent contexts ひどい目
+523,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+524,倉,anchor: appears in a completely decoded corpus string
+525,丈,anchor: appears in a completely decoded corpus string
+526,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+527,呪,anchor: appears in a completely decoded corpus string
+528,邪,corpus: independent contexts 邪魔 / 邪悪
+529,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+530,試,anchor: appears in a completely decoded corpus string
+531,姿,anchor: appears in a completely decoded corpus string
+532,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+533,産,anchor: appears in a completely decoded corpus string
+534,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+535,砂,anchor: appears in a completely decoded corpus string
+536,魂,anchor: appears in a completely decoded corpus string
+537,庫,anchor: appears in a completely decoded corpus string
+538,険,anchor: appears in a completely decoded corpus string
+539,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+540,形,anchor: appears in a completely decoded corpus string
+541,君,anchor: appears in a completely decoded corpus string
+542,近,anchor: appears in a completely decoded corpus string
+543,去,anchor: appears in a completely decoded corpus string
+544,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+545,貴,anchor: appears in a completely decoded corpus string
+546,感,corpus: independent contexts 力を感じる
+547,活,anchor: appears in a completely decoded corpus string
+548,学,anchor: appears in a completely decoded corpus string
+549,応,anchor: appears in a completely decoded corpus string
+550,遠,corpus: independent contexts 遠いところ
+551,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+552,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+553,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+554,労,corpus: independent contexts ご苦労
+555,例,anchor: appears in a completely decoded corpus string
+556,令,corpus: independent contexts ご命令どおり
+557,臨,anchor: appears in a completely decoded corpus string
+558,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+559,要,anchor: appears in a completely decoded corpus string
+560,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+561,返,anchor: appears in a completely decoded corpus string
+562,文,anchor: appears in a completely decoded corpus string
+563,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+564,底,corpus: independent contexts 底力
+565,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+566,頭,anchor: appears in a completely decoded corpus string
+567,怒,corpus: independent contexts 神の怒り
+568,帰,corpus: independent contexts 帰つてこれなく / 天界に帰り
+569,店,anchor: appears in a completely decoded corpus string
+570,追,anchor: appears in a completely decoded corpus string
+571,段,anchor: appears in a completely decoded corpus string
+572,鍛,anchor: appears in a completely decoded corpus string
+573,退,corpus: independent contexts 退治 / モンスター退治
+574,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+575,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+576,走,anchor: appears in a completely decoded corpus string
+577,専,corpus: independent contexts 国王専用飛行船
+578,常,anchor: appears in a completely decoded corpus string
+579,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+580,傷,anchor: appears in a completely decoded corpus string
+581,女,anchor: appears in a completely decoded corpus string
+582,初,anchor: appears in a completely decoded corpus string
+583,宿,anchor: appears in a completely decoded corpus string
+584,獣,corpus: independent contexts 召喚獣
+585,示,corpus: independent contexts 示すもの
+586,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+587,指,anchor: appears in a completely decoded corpus string
+588,罪,anchor: appears in a completely decoded corpus string
+589,幸,anchor: appears in a completely decoded corpus string
+590,元,anchor: appears in a completely decoded corpus string
+591,験,anchor: appears in a completely decoded corpus string
+592,血,anchor: appears in a completely decoded corpus string
+593,結,anchor: appears in a completely decoded corpus string
+594,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+595,認,corpus: independent contexts 認めし者
+596,器,anchor: appears in a completely decoded corpus string
+597,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+598,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+599,街,corpus: independent contexts 街の中 / 街を作り
+600,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+601,画,anchor: appears in a completely decoded corpus string
+602,過,anchor: appears in a completely decoded corpus string
+603,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+604,愛,anchor: appears in a completely decoded corpus string
+605,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+606,和,corpus: independent contexts 調和のとれた国
+607,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+608,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+609,涙,anchor: appears in a completely decoded corpus string
+610,連,corpus: independent contexts 連れずついて来て
+611,利,anchor: appears in a completely decoded corpus string
+612,遊,corpus: independent contexts 子供の遊び場 / もて遊び
+613,言,corpus: independent contexts 何言つてんだ
+614,面,anchor: appears in a completely decoded corpus string
+615,謀,anchor: appears in a completely decoded corpus string
+616,暴,anchor: appears in a completely decoded corpus string
+617,放,anchor: appears in a completely decoded corpus string
+618,崩,anchor: appears in a completely decoded corpus string
+619,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+620,標,corpus: independent contexts 道標（みちしるべ）
+621,匠,corpus: independent contexts 師匠
+622,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+623,突,corpus: independent contexts 突き進む / 強行突破
+624,特,anchor: appears in a completely decoded corpus string
+625,東,anchor: appears in a completely decoded corpus string
+626,都,anchor: appears in a completely decoded corpus string
+627,団,anchor: appears in a completely decoded corpus string
+628,損,anchor: appears in a completely decoded corpus string
+629,足,anchor: appears in a completely decoded corpus string
+630,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+631,昔,anchor: appears in a completely decoded corpus string
+632,成,anchor: appears in a completely decoded corpus string
+633,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+634,深,corpus: independent contexts 地下深く
+635,嬢,anchor: appears in a completely decoded corpus string
+636,緒,anchor: appears in a completely decoded corpus string
+637,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+638,謝,corpus: independent contexts 感謝しなくちゃ
+639,社,anchor: appears in a completely decoded corpus string
+640,耳,anchor: appears in a completely decoded corpus string
+641,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+642,止,anchor: appears in a completely decoded corpus string
+643,在,anchor: appears in a completely decoded corpus string
+644,建,corpus: independent contexts 建物
+645,警,corpus: independent contexts 警告
+646,計,anchor: appears in a completely decoded corpus string
+647,継,anchor: appears in a completely decoded corpus string
+648,使,corpus: independent contexts 動力石を使つて
+649,機,anchor: appears in a completely decoded corpus string
+650,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+651,位,anchor: appears in a completely decoded corpus string
+652,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+653,暗,anchor: appears in a completely decoded corpus string
+654,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+655,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+656,い,corpus: independent contexts やさしいのう / そうかい / 来たんかい
+657,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+658,理,corpus: independent contexts 理解を得る
+659,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+660,訳,anchor: appears in a completely decoded corpus string
+661,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+662,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+663,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+664,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+665,富,anchor: appears in a completely decoded corpus string
+666,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+667,燃,anchor: appears in a completely decoded corpus string
+668,任,anchor: appears in a completely decoded corpus string
+669,難,anchor: appears in a completely decoded corpus string
+670,届,corpus: independent contexts 手紙が届く
+671,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+672,土,anchor: appears in a completely decoded corpus string
+673,負,corpus: independent contexts お主達に負けてみよう
+674,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+675,築,anchor: appears in a completely decoded corpus string
+676,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+677,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+678,替,anchor: appears in a completely decoded corpus string
+679,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+680,存,anchor: appears in a completely decoded corpus string
+681,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+682,掃,anchor: appears in a completely decoded corpus string
+683,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+684,層,corpus: independent contexts 階層が深い
+685,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+686,絶,corpus: independent contexts 絶望 / 絶対
+687,設,anchor: appears in a completely decoded corpus string
+688,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+689,数,anchor: appears in a completely decoded corpus string
+690,申,corpus: independent contexts アークと申したな / 申し訳が立たない
+691,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+692,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+693,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+694,従,anchor: appears in a completely decoded corpus string
+695,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+696,借,anchor: appears in a completely decoded corpus string
+697,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+698,執,corpus: independent contexts 執着した心
+699,察,anchor: appears in a completely decoded corpus string
+700,済,anchor: appears in a completely decoded corpus string
+701,採,corpus: independent contexts 採掘場 / 採掘
+702,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+703,頃,anchor: appears in a completely decoded corpus string
+704,刻,anchor: appears in a completely decoded corpus string
+705,皇,anchor: appears in a completely decoded corpus string
+706,好,anchor: appears in a completely decoded corpus string
+707,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+708,源,anchor: appears in a completely decoded corpus string
+709,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+710,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+711,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+712,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+713,玉,anchor: appears in a completely decoded corpus string
+714,及,anchor: appears in a completely decoded corpus string
+715,休,anchor: appears in a completely decoded corpus string
+716,丘,anchor: appears in a completely decoded corpus string
+717,逆,anchor: appears in a completely decoded corpus string
+718,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+719,希,anchor: appears in a completely decoded corpus string
+720,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+721,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+722,怪,corpus: independent contexts 怪しいと思う / 何か怪しい
+723,音,anchor: appears in a completely decoded corpus string
+724,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+725,営,anchor: appears in a completely decoded corpus string
+726,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+727,異,anchor: appears in a completely decoded corpus string
+728,以,anchor: appears in a completely decoded corpus string
+729,ホ,corpus: independent contexts ホント助かつた
+730,ツ,anchor: appears in a completely decoded corpus string
+731,ゾ,corpus: independent contexts ゾンビ
+732,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+733,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+734,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+735,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+736,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+737,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+738,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+739,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+740,万,anchor: appears in a completely decoded corpus string
+741,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+742,冒,anchor: appears in a completely decoded corpus string
+743,棒,anchor: appears in a completely decoded corpus string
+744,豊,anchor: appears in a completely decoded corpus string
+745,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+746,腹,corpus: independent contexts 腹が出た将軍
+747,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+748,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+749,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+750,欲,corpus: independent contexts 欲しさゆえ
+751,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+752,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+753,馬,corpus: independent contexts じゃじゃ馬娘
+754,二,anchor: appears in a completely decoded corpus string
+755,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+756,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+757,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+758,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+759,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+760,虫,anchor: appears in a completely decoded corpus string
+761,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+762,単,anchor: appears in a completely decoded corpus string
+763,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+764,状,corpus: independent contexts 状態の続いている
+765,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+766,孫,anchor: appears in a completely decoded corpus string
+767,つ,corpus: independent contexts あと一つ
+768,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+769,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+770,組,anchor: appears in a completely decoded corpus string
+771,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+772,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+773,責,corpus: independent contexts 責任をもちません
+774,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+775,西,anchor: appears in a completely decoded corpus string
+776,遂,anchor: appears in a completely decoded corpus string
+777,吹,anchor: appears in a completely decoded corpus string
+778,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+779,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+780,詳,anchor: appears in a completely decoded corpus string
+781,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+782,除,corpus: independent contexts 大掃除
+783,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+784,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+785,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+786,識,corpus: independent contexts 意識を取り戻した
+787,芽,corpus: independent contexts 芽が立たず
+788,志,corpus: independent contexts 意志
+789,仕,anchor: appears in a completely decoded corpus string
+790,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+791,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+792,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+793,婚,corpus: independent contexts 結婚させられる
+794,困,anchor: appears in a completely decoded corpus string
+795,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+796,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+797,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+798,誤,anchor: appears in a completely decoded corpus string
+799,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+800,刑,anchor: appears in a completely decoded corpus string
+801,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+802,区,anchor: appears in a completely decoded corpus string
+803,金,anchor: appears in a completely decoded corpus string
+804,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+805,居,anchor: appears in a completely decoded corpus string
+806,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+807,喜,anchor: appears in a completely decoded corpus string
+808,簡,anchor: appears in a completely decoded corpus string
+809,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+810,械,corpus: independent contexts 機械を動かす
+811,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+812,価,corpus: independent contexts 価値もない
+813,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+814,栄,corpus: independent contexts 文明を築き栄える
+815,映,anchor: appears in a completely decoded corpus string
+816,敵,corpus: independent contexts 敵のスメリアの戦士
+817,嘘,anchor: appears in a completely decoded corpus string
+818,飲,anchor: appears in a completely decoded corpus string
+819,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+820,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+821,扱,anchor: appears in a completely decoded corpus string
+822,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+823,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+824,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+825,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+826,・,anchor: appears in a completely decoded corpus string
+827,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+828,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+829,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+830,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+831,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+832,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+833,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+834,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+835,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+836,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+837,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+838,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+839,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+840,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+841,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+842,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+843,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+844,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+845,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+846,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+847,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+848,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+849,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+850,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+851,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+852,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+853,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+854,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+855,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+856,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+857,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+858,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+859,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+860,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+861,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+862,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+863,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+864,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+865,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+866,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+867,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+868,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+869,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+870,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+871,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+872,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+873,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+874,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+875,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+876,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+877,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+878,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+879,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+880,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+881,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+882,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+883,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+884,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+885,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+886,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+887,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+888,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+889,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+890,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+891,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+892,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+893,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+894,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+895,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+896,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+897,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+898,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+899,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+900,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+901,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+902,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+903,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+904,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+905,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+906,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+907,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+908,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+909,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+910,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+911,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+912,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+913,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+914,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+915,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+916,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+917,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+918,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+919,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+920,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+921,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+922,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+923,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+924,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+925,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+926,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+927,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+928,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+929,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+930,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+931,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+932,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+933,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+934,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+935,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+936,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+937,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+938,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+939,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+940,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+941,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+942,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+943,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+944,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+945,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+946,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+947,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+948,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+949,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+950,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+951,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+952,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+953,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+954,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+955,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+956,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+957,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+958,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+959,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+960,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+961,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+962,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+963,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+964,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+965,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+966,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+967,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+968,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+969,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+970,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+971,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+972,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+973,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+974,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+975,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+976,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+977,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+978,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+979,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+980,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+981,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+982,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+983,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+984,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+985,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+986,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+987,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+988,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+989,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+990,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+991,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+992,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+993,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+994,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+995,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+996,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+997,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+998,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+999,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1000,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1001,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1002,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1003,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1004,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1005,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1006,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1007,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1008,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1009,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1010,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1011,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1012,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1013,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1014,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1015,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1016,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1017,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1018,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1019,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1020,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1021,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1022,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1023,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1024,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1025,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1026,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1027,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1028,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1029,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1030,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1031,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1032,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1033,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1034,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1035,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1036,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1037,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1038,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1039,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1040,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1041,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1042,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1043,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1044,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1045,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1046,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1047,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1048,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1049,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1050,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1051,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1052,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1053,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1054,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1055,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1056,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1057,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1058,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1059,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1060,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1061,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1062,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1063,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1064,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1065,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1066,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1067,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1068,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1069,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1070,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1071,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1072,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1073,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1074,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1075,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1076,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1077,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1078,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1079,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1080,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1081,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1082,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1083,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1084,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1085,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1086,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1087,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1088,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1089,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1090,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1091,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1092,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1093,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1094,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1095,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1096,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1097,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1098,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1099,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1100,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1101,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1102,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1103,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1104,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1105,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1106,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1107,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1108,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1109,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1110,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1111,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1112,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1113,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1114,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1115,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1116,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1117,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1118,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1119,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1120,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1121,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1122,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1123,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1124,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1125,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1126,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1127,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1128,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1129,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1130,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1131,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1132,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1133,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1134,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1135,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1136,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1137,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1138,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1139,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1140,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1141,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1142,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1143,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1144,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1145,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1146,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1147,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1148,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1149,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1150,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1151,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1152,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1153,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1154,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1155,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1156,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1157,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1158,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1159,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1160,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1161,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1162,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1163,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1164,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1165,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1166,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1167,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1168,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1169,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1170,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1171,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1172,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1173,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1174,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1175,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1176,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1177,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1178,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1179,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1180,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1181,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1182,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1183,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1184,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1185,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1186,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1187,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1188,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1189,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1190,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1191,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1192,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1193,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1194,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1195,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1196,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1197,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1198,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1199,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1200,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1201,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1202,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1203,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1204,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1205,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1206,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1207,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1208,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1209,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1210,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1211,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1212,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1213,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1214,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1215,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1216,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1217,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1218,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1219,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1220,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1221,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1222,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1223,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1224,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1225,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1226,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1227,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1228,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1229,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1230,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1231,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1232,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1233,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1234,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1235,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1236,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1237,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1238,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+1239,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
