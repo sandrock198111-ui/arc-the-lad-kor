@@ -865,3 +865,9 @@
 - Repaired only raw-byte positions where a rejected-range glyph had actually become its ASCII candidate: 277 source rows / 562 glyph occurrences, indices 89 and 90. Each is now `<G:n>`; no Japanese character was guessed.
 - Restored 111 Korean cells exactly from the task-start table after the mistaken index-0 clear. Cleared 76 Korean cells whose source row was genuinely restored to `<G:89>` or `<G:90>`. Raw/token alignment failures were zero.
 - Updated `apply_ascii_glyph_rule.py` so a future run cannot reapply the rejected 0..94 rule. No game image, output archive, backup, ZIP, or emulator was touched.
+
+2026-08-01 - Reviewed script translation batch 20260801-001
+- Added 33 reviewed, source-verified Korean dialogue translations in `7/S7021.DAT` through `7/S7026.DAT` to `05_docs/script_translated_full.csv`.
+- Added `02_scripts/apply_reviewed_translation_batch.py`, `01_work/translation_batch_20260801_001.csv`, and `05_docs/translation_batch_log.csv`.
+- The application tool is source-keyed, refuses pre-existing Korean text and `<G:` sources, and records both canonical CSV hashes for reproducibility.
+- No existing Korean cell or Japanese source cell was edited; no original/game-output/backup/ZIP file or emulator was touched.

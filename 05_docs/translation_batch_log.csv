@@ -1,0 +1,2 @@
+﻿batch_id,applied_at_utc,rows_applied,canonical_sha256_before,canonical_sha256_after,selection_basis,new_proper_nouns
+20260801-001,2026-08-01T12:03:28Z,33,3bc00341b0faa27a8fbbdbad61101b47da4af325dbdedeade11cee7c18ee6ac8,584f13b79042b0751ace491fe5597b8ef382e75fea63f24a6a8544d604755bca,high-confidence fully decoded tournament dialogue; exact source-key verification,none

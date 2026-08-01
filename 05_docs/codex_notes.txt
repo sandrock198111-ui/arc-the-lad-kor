@@ -953,3 +953,8 @@ Translation integrity repair - 2026-08-01
 - `script_translated_full.csv` had 301 rows with a `<G:` marker in its Japanese cell and a non-empty Korean cell. These cells and their provenance labels were cleared, as a partial source string is not a translation target.
 - `apply_script_translation_batch.py` is now safe to resume: completed `new` rows must match exactly, `existing` rows cannot be overwritten, and any planned row with `<G:` aborts. A rerun therefore only applies newly added, reviewed dictionary entries.
 - After 34 additional reviewed dialogue lines, the canonical translated CSV contains 354 retained existing rows and 67 new rows. It remains incomplete and must not yet be used as the finished glyph-requirement measurement.
+
+Translation batch identity rule - 2026-08-01
+- `script_translated_full.csv` contains twelve duplicate `(source file, offset)` pairs in `COMM.DAT`; they are parser-generated non-dialogue candidates. A location alone is therefore not a stable mutation key.
+- `apply_reviewed_translation_batch.py` uses the exact triple `(source file, normalized offset, Japanese source)` and requires it to match exactly one canonical row. It rejects blank sources, `<G:` sources, existing Korean text, duplicate batch triples, and a reused batch id before writing.
+- Batch 20260801-001 was compared against frozen commit `67078e4`: exactly 33 canonical rows changed, all only in `korean` and provenance. This is the required verification pattern for every later translation batch.
