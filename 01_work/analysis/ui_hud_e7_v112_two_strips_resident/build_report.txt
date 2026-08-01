@@ -1,0 +1,51 @@
+v112 two glyph strips resident at once
+
+base    ui_hud_e7_v103_heap_reserved_glyphs_patch_only.zip
+output  ui_hud_e7_v112_two_strips_resident_patch_only.zip
+        sha256 8DB471C1DFF49DF05443A942EA814DADB79344F5A4841C655131A2A801584866
+PSX.EXE 583680 bytes, unchanged; v104 disc layout still applies
+
+tpage 0x1F (page 15,1)  x 961..999  U offset 4
+  strip A  y 480..491  V=224  row 40
+  strip B  y 500..511  V=244  row 63
+  13 columns each, 104 slots, 57 in use
+
+reserved RAM
+  0x801FE3C4 helper     276
+  0x801FE4D8 strip A    936
+  0x801FE880 strip B    936
+  0x801FEC28 classify    36
+  0x801FEC4C frame       64
+  0x801FEC8C heap starts here (3540 bytes clear of heap the game uses)
+  one memcpy moves 2248 bytes
+
+words changed
+  0x801757CC  240608C8  memcpy length -> 2248
+  0x80175810  2484EC88  heap base -> 0x801FEC8C
+  0x801A2194  34E7001F  tpage 0x1B -> 0x1F
+  0x801A2204  0C07FB0A  classifier -> 0x801FEC28
+  0x801A2208  00742821  its delay slot, hoisted from +0x14
+  0x801A220C  00000000  was the inline compare
+  0x801A2210  00000000  was the inline test
+  0x801A2218  00000000  branch delay slot, a1 already set
+  0x801A208C  0C07FB13  frame routine -> 0x801FEC4C
+  0x801A22E4  01E003C1  rect A x=961 y=480
+  0x801A22E8  000C0027  rect A 39x12
+  0x801A22EC  01F403C1  rect B x=961 y=500
+  0x801A22F0  000C0027  rect B 39x12
+
+classifier at 0x801FEC28  (t8/t9, not t0/t1 as in v106)
+  0x801FEC28  90620029  lbu   v0,0x29(v1)     ; V
+  0x801FEC2C  00000000  nop
+  0x801FEC30  2458FF20  addiu t8,v0,-224
+  0x801FEC34  2F180001  sltiu t8,t8,1
+  0x801FEC38  2459FF0C  addiu t9,v0,-244
+  0x801FEC3C  2F390001  sltiu t9,t9,1
+  0x801FEC40  03191025  or    v0,t8,t9
+  0x801FEC44  03E00008  jr    ra
+  0x801FEC48  00000000  nop
+
+rollback: v103 + arc1_v104.xml
+
+Rebuild with arc1_v104.xml, then run:
+  python 02_scripts/verify_iso_layout.py E:\arc\arc1_v104.bin ui_hud_e7_v112_two_strips_resident_patch_only.zip
