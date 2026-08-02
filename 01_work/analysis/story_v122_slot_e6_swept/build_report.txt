@@ -1,0 +1,42 @@
+v122 sweep E6 out of the external slots
+
+base    ui_hud_e7_v119_strip_c_patch_only.zip
+output  story_v122_slot_e6_swept_patch_only.zip
+        sha256 B090EF58D8CF3B80053DF20689F116B38178963E2A228FC07629436E1E7F5C08
+
+slots repaired      38
+line breaks removed 54
+files changed       16
+
+worst files:
+    8  6/S6054.DAT
+    6  31/S3014.DAT
+    5  C2/SC0B6.DAT
+    4  D/SD031.DAT
+    3  31/S3024.DAT
+    2  7/S7028.DAT
+    1  5/S5013.DAT
+    1  C1/SC011.DAT
+    1  C1/SC021.DAT
+    1  C1/SC031.DAT
+    1  C1/SC041.DAT
+    1  C1/SC051.DAT
+
+why
+  E6 01 is a break the inline parser executes. A secondary string is not parsed
+  that way, so an E6 inside a slot is drawn instead of obeyed and shows up as one
+  squashed glyph mid-sentence. Recorded 2026-07-15; the rule stopped new ones but
+  never removed these.
+
+verified
+  base archive digest matches the accepted v119 build
+  each slot's byte 0x7F, the completion skip, is unchanged
+  no byte changed outside the slot banks, in any file
+  PSX.EXE and COMM.IMG are byte-identical to v119
+  no slot in the output contains E6 before its terminator
+  the archive reads back exactly as written
+
+NOT verified here, needs a cold boot:
+  that the repaired lines read correctly and wrap where the renderer chooses
+
+rollback: v119, which this build does not modify

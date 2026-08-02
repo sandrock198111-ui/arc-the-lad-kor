@@ -1074,3 +1074,9 @@ Put rules in the builder, not only in this file - 2026-08-02
 - A rule kept only as prose depends on someone reading it at the right moment, and reading it far enough. Both failed here, twice each.
 - Where a rule can be checked mechanically, the builder should check it and refuse. `cell_is_occupied` in the v118 builder now makes the blank-plane mistake unbuildable; the E6 guard in `plan_bulk_insertion.py` does the same for the skip rule. Prefer adding a guard over adding a paragraph.
 - A guard is also self-documenting at the moment it matters: it fails with the reason, at the point of the mistake, instead of waiting for a screenshot.
+
+A rule stops new defects; it does not remove old ones - 2026-08-02
+- `E6 01` inside an E2 secondary string is drawn rather than obeyed and shows as one squashed glyph mid-sentence. That was established 2026-07-15 and every builder since has honoured it.
+- The archive still carried 38 slots holding 54 of them, written before the rule existed. They were still on screen in v119. The user found one in `32/S3051.DAT` slot 63, between the fourth and fifth syllables of a sentence, and recognised it as a defect that had already cost a lot of work.
+- When a rule is added, sweep the data that was written without it. A guard protects the future; the past needs a migration. `02_scripts/build_story_v122_strip_e6_from_slots.py` is that sweep.
+- Writing the sweep hit the trap the rule warns about in its own right: scanning for the byte 0xE6 rather than for the token `E6 01` found 24 false positives, because 0xE6 also occurs as the second byte of a two-byte glyph. Walk the stream -- 0x01..0xDC one byte, 0xDD.. two bytes -- and judge a byte only at a token boundary.
