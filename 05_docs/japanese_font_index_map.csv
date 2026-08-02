@@ -221,7 +221,7 @@
 219,動,anchor: appears in a completely decoded corpus string
 220,向,anchor: appears in a completely decoded corpus string
 221,ガ,corpus: independent contexts チョンガラ / トン・ガバ
-222,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+222,ィ,visual reading corrected by script context (12px kana/kanji confusion)
 223,ゆ,corpus: independent contexts ゆつくり / ゆるす / ゆたかな
 224,ほ,anchor: appears in a completely decoded corpus string
 225,々,corpus: independent contexts 我々 / 方々
@@ -242,7 +242,7 @@
 240,変,anchor: appears in a completely decoded corpus string
 241,等,anchor: appears in a completely decoded corpus string
 242,城,anchor: appears in a completely decoded corpus string
-243,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+243,空,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 244,強,anchor: appears in a completely decoded corpus string
 245,柩,anchor: appears in a completely decoded corpus string
 246,魔,anchor: appears in a completely decoded corpus string
@@ -262,7 +262,7 @@
 260,取,anchor: appears in a completely decoded corpus string
 261,次,anchor: appears in a completely decoded corpus string
 262,最,anchor: appears in a completely decoded corpus string
-263,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+263,復,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 264,体,anchor: appears in a completely decoded corpus string
 265,声,anchor: appears in a completely decoded corpus string
 266,神,anchor: appears in a completely decoded corpus string
@@ -275,7 +275,7 @@
 273,立,anchor: appears in a completely decoded corpus string
 274,運,anchor: appears in a completely decoded corpus string
 275,安,anchor: appears in a completely decoded corpus string
-276,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+276,ヴ,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 277,ミ,anchor: appears in a completely decoded corpus string
 278,へ,anchor: appears in a completely decoded corpus string
 279,ゴ,corpus: independent contexts ゴーゲンさん / ゴーゲン様
@@ -283,7 +283,7 @@
 281,用,anchor: appears in a completely decoded corpus string
 282,与,corpus: independent contexts 力を与えます / ダメージを与える
 283,滅,anchor: appears in a completely decoded corpus string
-284,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+284,爆,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 285,当,anchor: appears in a completely decoded corpus string
 286,乗,anchor: appears in a completely decoded corpus string
 287,印,anchor: appears in a completely decoded corpus string
@@ -292,7 +292,7 @@
 290,勇,anchor: appears in a completely decoded corpus string
 291,忘,corpus: independent contexts 忘れない / 忘れた / 存在を忘れ
 292,物,anchor: appears in a completely decoded corpus string
-293,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+293,港,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 294,兄,anchor: appears in a completely decoded corpus string
 295,技,anchor: appears in a completely decoded corpus string
 296,ゲ,anchor: appears in a completely decoded corpus string
@@ -305,7 +305,7 @@
 303,争,anchor: appears in a completely decoded corpus string
 304,プ,corpus: independent contexts マップ
 305,カ,anchor: appears in a completely decoded corpus string
-306,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+306,う,visual reading corrected by script context (12px kana/kanji confusion)
 307,薬,anchor: appears in a completely decoded corpus string
 308,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 309,集,anchor: appears in a completely decoded corpus string
@@ -313,7 +313,7 @@
 311,切,corpus: independent contexts たたき切る / ぶつた切つて
 312,込,anchor: appears in a completely decoded corpus string
 313,家,anchor: appears in a completely decoded corpus string
-314,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+314,ノ,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 315,セ,anchor: appears in a completely decoded corpus string
 316,葉,anchor: appears in a completely decoded corpus string
 317,破,anchor: appears in a completely decoded corpus string
@@ -362,7 +362,7 @@
 360,剣,anchor: appears in a completely decoded corpus string
 361,急,anchor: appears in a completely decoded corpus string
 362,遺,anchor: appears in a completely decoded corpus string
-363,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+363,P,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 364,頼,anchor: appears in a completely decoded corpus string
 365,明,anchor: appears in a completely decoded corpus string
 366,未,anchor: appears in a completely decoded corpus string
@@ -383,7 +383,7 @@
 381,ハ,corpus: independent contexts ハンサム
 382,類,anchor: appears in a completely decoded corpus string
 383,落,anchor: appears in a completely decoded corpus string
-384,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+384,雷,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 385,防,corpus: independent contexts 滅亡を防ぐ
 386,得,anchor: appears in a completely decoded corpus string
 387,代,anchor: appears in a completely decoded corpus string
@@ -403,7 +403,7 @@
 401,ベ,corpus: independent contexts カベが / カベを
 402,ぐ,corpus: independent contexts すぐ / ぐつ
 403,旅,anchor: appears in a completely decoded corpus string
-404,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+404,眠,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 405,悲,corpus: independent contexts 悲しいこと / 大変悲しいお知らせ
 406,討,anchor: appears in a completely decoded corpus string
 407,渡,anchor: appears in a completely decoded corpus string
@@ -442,7 +442,7 @@
 440,高,anchor: appears in a completely decoded corpus string
 441,経,anchor: appears in a completely decoded corpus string
 442,楽,anchor: appears in a completely decoded corpus string
-443,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+443,開,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 444,可,anchor: appears in a completely decoded corpus string
 445,意,anchor: appears in a completely decoded corpus string
 446,案,anchor: appears in a completely decoded corpus string
@@ -460,15 +460,15 @@
 458,作,anchor: appears in a completely decoded corpus string
 459,再,anchor: appears in a completely decoded corpus string
 460,鼓,anchor: appears in a completely decoded corpus string
-461,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+461,幻,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 462,苦,corpus: independent contexts 悲しみ、苦しみ
 463,議,corpus: independent contexts 不思議な力 / 不思議な力をもつ太鼓
 464,記,anchor: appears in a completely decoded corpus string
 465,為,anchor: appears in a completely decoded corpus string
-466,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-467,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+466,ペ,visual reading corrected by script context (12px kana/kanji confusion)
+467,ゼ,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 468,づ,anchor: appears in a completely decoded corpus string
-469,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+469,H,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 470,郎,anchor: appears in a completely decoded corpus string
 471,練,anchor: appears in a completely decoded corpus string
 472,良,anchor: appears in a completely decoded corpus string
@@ -478,8 +478,8 @@
 476,反,anchor: appears in a completely decoded corpus string
 477,導,anchor: appears in a completely decoded corpus string
 478,投,anchor: appears in a completely decoded corpus string
-479,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-480,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+479,島,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+480,弾,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 481,探,anchor: appears in a completely decoded corpus string
 482,他,anchor: appears in a completely decoded corpus string
 483,相,anchor: appears in a completely decoded corpus string
@@ -508,7 +508,7 @@
 506,ゅ,corpus: independent contexts 基本中の基本
 507,牢,corpus: independent contexts 牢屋 / 地下牢 / 牢をやぶり
 508,列,anchor: appears in a completely decoded corpus string
-509,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+509,歴,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 510,流,corpus: independent contexts 涙を流した
 511,夜,corpus: independent contexts 今夜 / あの夜会つた
 512,名,anchor: appears in a completely decoded corpus string
@@ -516,53 +516,53 @@
 514,武,corpus: independent contexts 武器 / 武闘大会
 515,夫,anchor: appears in a completely decoded corpus string
 516,付,anchor: appears in a completely decoded corpus string
-517,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+517,品,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 518,番,anchor: appears in a completely decoded corpus string
 519,漠,anchor: appears in a completely decoded corpus string
 520,典,anchor: appears in a completely decoded corpus string
-521,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+521,笛,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 522,ひ,corpus: independent contexts ひどい目
-523,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+523,滝,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 524,倉,anchor: appears in a completely decoded corpus string
 525,丈,anchor: appears in a completely decoded corpus string
 526,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 527,呪,anchor: appears in a completely decoded corpus string
 528,邪,corpus: independent contexts 邪魔 / 邪悪
-529,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+529,実,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 530,試,anchor: appears in a completely decoded corpus string
 531,姿,anchor: appears in a completely decoded corpus string
-532,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+532,史,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 533,産,anchor: appears in a completely decoded corpus string
 534,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 535,砂,anchor: appears in a completely decoded corpus string
 536,魂,anchor: appears in a completely decoded corpus string
 537,庫,anchor: appears in a completely decoded corpus string
 538,険,anchor: appears in a completely decoded corpus string
-539,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+539,研,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 540,形,anchor: appears in a completely decoded corpus string
 541,君,anchor: appears in a completely decoded corpus string
 542,近,anchor: appears in a completely decoded corpus string
 543,去,anchor: appears in a completely decoded corpus string
-544,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+544,究,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 545,貴,anchor: appears in a completely decoded corpus string
 546,感,corpus: independent contexts 力を感じる
 547,活,anchor: appears in a completely decoded corpus string
 548,学,anchor: appears in a completely decoded corpus string
 549,応,anchor: appears in a completely decoded corpus string
 550,遠,corpus: independent contexts 遠いところ
-551,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-552,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-553,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+551,ソ,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+552,ァ,visual reading corrected by script context (12px kana/kanji confusion)
+553,M,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 554,労,corpus: independent contexts ご苦労
 555,例,anchor: appears in a completely decoded corpus string
 556,令,corpus: independent contexts ご命令どおり
 557,臨,anchor: appears in a completely decoded corpus string
-558,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+558,乱,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 559,要,anchor: appears in a completely decoded corpus string
 560,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 561,返,anchor: appears in a completely decoded corpus string
 562,文,anchor: appears in a completely decoded corpus string
-563,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+563,表,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 564,底,corpus: independent contexts 底力
 565,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 566,頭,anchor: appears in a completely decoded corpus string
@@ -573,19 +573,19 @@
 571,段,anchor: appears in a completely decoded corpus string
 572,鍛,anchor: appears in a completely decoded corpus string
 573,退,corpus: independent contexts 退治 / モンスター退治
-574,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-575,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+574,像,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+575,送,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 576,走,anchor: appears in a completely decoded corpus string
 577,専,corpus: independent contexts 国王専用飛行船
 578,常,anchor: appears in a completely decoded corpus string
-579,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+579,賞,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 580,傷,anchor: appears in a completely decoded corpus string
 581,女,anchor: appears in a completely decoded corpus string
 582,初,anchor: appears in a completely decoded corpus string
 583,宿,anchor: appears in a completely decoded corpus string
 584,獣,corpus: independent contexts 召喚獣
 585,示,corpus: independent contexts 示すもの
-586,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+586,糸,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 587,指,anchor: appears in a completely decoded corpus string
 588,罪,anchor: appears in a completely decoded corpus string
 589,幸,anchor: appears in a completely decoded corpus string
@@ -593,21 +593,21 @@
 591,験,anchor: appears in a completely decoded corpus string
 592,血,anchor: appears in a completely decoded corpus string
 593,結,anchor: appears in a completely decoded corpus string
-594,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+594,係,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 595,認,corpus: independent contexts 認めし者
 596,器,anchor: appears in a completely decoded corpus string
-597,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-598,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+597,眼,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+598,角,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 599,街,corpus: independent contexts 街の中 / 街を作り
 600,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 601,画,anchor: appears in a completely decoded corpus string
 602,過,anchor: appears in a completely decoded corpus string
 603,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 604,愛,anchor: appears in a completely decoded corpus string
-605,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+605,A,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 606,和,corpus: independent contexts 調和のとれた国
 607,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-608,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+608,冷,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 609,涙,anchor: appears in a completely decoded corpus string
 610,連,corpus: independent contexts 連れずついて来て
 611,利,anchor: appears in a completely decoded corpus string
@@ -618,7 +618,7 @@
 616,暴,anchor: appears in a completely decoded corpus string
 617,放,anchor: appears in a completely decoded corpus string
 618,崩,anchor: appears in a completely decoded corpus string
-619,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+619,捕,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 620,標,corpus: independent contexts 道標（みちしるべ）
 621,匠,corpus: independent contexts 師匠
 622,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
@@ -632,7 +632,7 @@
 630,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 631,昔,anchor: appears in a completely decoded corpus string
 632,成,anchor: appears in a completely decoded corpus string
-633,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+633,真,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 634,深,corpus: independent contexts 地下深く
 635,嬢,anchor: appears in a completely decoded corpus string
 636,緒,anchor: appears in a completely decoded corpus string
@@ -640,7 +640,7 @@
 638,謝,corpus: independent contexts 感謝しなくちゃ
 639,社,anchor: appears in a completely decoded corpus string
 640,耳,anchor: appears in a completely decoded corpus string
-641,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+641,獅,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 642,止,anchor: appears in a completely decoded corpus string
 643,在,anchor: appears in a completely decoded corpus string
 644,建,corpus: independent contexts 建物
@@ -649,42 +649,42 @@
 647,継,anchor: appears in a completely decoded corpus string
 648,使,corpus: independent contexts 動力石を使つて
 649,機,anchor: appears in a completely decoded corpus string
-650,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+650,牙,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 651,位,anchor: appears in a completely decoded corpus string
 652,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 653,暗,anchor: appears in a completely decoded corpus string
-654,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-655,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+654,オ,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+655,ぷ,visual reading corrected by script context (12px kana/kanji confusion)
 656,い,corpus: independent contexts やさしいのう / そうかい / 来たんかい
 657,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 658,理,corpus: independent contexts 理解を得る
 659,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 660,訳,anchor: appears in a completely decoded corpus string
-661,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-662,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-663,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-664,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+661,爺,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+662,毎,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+663,歩,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+664,平,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 665,富,anchor: appears in a completely decoded corpus string
 666,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 667,燃,anchor: appears in a completely decoded corpus string
 668,任,anchor: appears in a completely decoded corpus string
 669,難,anchor: appears in a completely decoded corpus string
 670,届,corpus: independent contexts 手紙が届く
-671,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+671,働,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 672,土,anchor: appears in a completely decoded corpus string
 673,負,corpus: independent contexts お主達に負けてみよう
 674,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 675,築,anchor: appears in a completely decoded corpus string
-676,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-677,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+676,置,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+677,嘆,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 678,替,anchor: appears in a completely decoded corpus string
 679,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 680,存,anchor: appears in a completely decoded corpus string
-681,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+681,賊,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 682,掃,anchor: appears in a completely decoded corpus string
-683,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+683,捜,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 684,層,corpus: independent contexts 階層が深い
-685,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+685,素,visual reading corrected by script context (12px kana/kanji confusion)
 686,絶,corpus: independent contexts 絶望 / 絶対
 687,設,anchor: appears in a completely decoded corpus string
 688,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
@@ -692,24 +692,24 @@
 690,申,corpus: independent contexts アークと申したな / 申し訳が立たない
 691,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 692,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-693,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+693,盾,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 694,従,anchor: appears in a completely decoded corpus string
-695,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+695,首,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 696,借,anchor: appears in a completely decoded corpus string
 697,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 698,執,corpus: independent contexts 執着した心
 699,察,anchor: appears in a completely decoded corpus string
 700,済,anchor: appears in a completely decoded corpus string
 701,採,corpus: independent contexts 採掘場 / 採掘
-702,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+702,混,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 703,頃,anchor: appears in a completely decoded corpus string
 704,刻,anchor: appears in a completely decoded corpus string
 705,皇,anchor: appears in a completely decoded corpus string
 706,好,anchor: appears in a completely decoded corpus string
 707,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 708,源,anchor: appears in a completely decoded corpus string
-709,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-710,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+709,原,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+710,権,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 711,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 712,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 713,玉,anchor: appears in a completely decoded corpus string
@@ -723,7 +723,7 @@
 721,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 722,怪,corpus: independent contexts 怪しいと思う / 何か怪しい
 723,音,anchor: appears in a completely decoded corpus string
-724,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+724,憶,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 725,営,anchor: appears in a completely decoded corpus string
 726,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 727,異,anchor: appears in a completely decoded corpus string
@@ -731,30 +731,30 @@
 729,ホ,corpus: independent contexts ホント助かつた
 730,ツ,anchor: appears in a completely decoded corpus string
 731,ゾ,corpus: independent contexts ゾンビ
-732,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+732,R,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 733,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 734,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 735,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 736,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-737,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-738,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-739,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+737,妖,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+738,優,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+739,木,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 740,万,anchor: appears in a completely decoded corpus string
-741,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+741,北,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 742,冒,anchor: appears in a completely decoded corpus string
 743,棒,anchor: appears in a completely decoded corpus string
 744,豊,anchor: appears in a completely decoded corpus string
 745,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 746,腹,corpus: independent contexts 腹が出た将軍
 747,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-748,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-749,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+748,怖,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+749,氷,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 750,欲,corpus: independent contexts 欲しさゆえ
-751,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-752,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+751,半,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+752,倍,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 753,馬,corpus: independent contexts じゃじゃ馬娘
 754,二,anchor: appears in a completely decoded corpus string
-755,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+755,洞,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 756,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 757,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 758,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
@@ -762,55 +762,55 @@
 760,虫,anchor: appears in a completely decoded corpus string
 761,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 762,単,anchor: appears in a completely decoded corpus string
-763,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+763,脱,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 764,状,corpus: independent contexts 状態の続いている
-765,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+765,打,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 766,孫,anchor: appears in a completely decoded corpus string
 767,つ,corpus: independent contexts あと一つ
-768,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-769,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+768,装,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+769,想,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 770,組,anchor: appears in a completely decoded corpus string
-771,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-772,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+771,祖,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+772,泉,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 773,責,corpus: independent contexts 責任をもちません
-774,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+774,静,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 775,西,anchor: appears in a completely decoded corpus string
 776,遂,anchor: appears in a completely decoded corpus string
 777,吹,anchor: appears in a completely decoded corpus string
 778,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 779,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 780,詳,anchor: appears in a completely decoded corpus string
-781,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+781,沼,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 782,除,corpus: independent contexts 大掃除
-783,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-784,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-785,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+783,処,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+784,樹,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+785,授,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 786,識,corpus: independent contexts 意識を取り戻した
 787,芽,corpus: independent contexts 芽が立たず
 788,志,corpus: independent contexts 意志
 789,仕,anchor: appears in a completely decoded corpus string
-790,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-791,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-792,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+790,索,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+791,細,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+792,査,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 793,婚,corpus: independent contexts 結婚させられる
 794,困,anchor: appears in a completely decoded corpus string
-795,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-796,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-797,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+795,豪,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+796,広,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
+797,工,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 798,誤,anchor: appears in a completely decoded corpus string
-799,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+799,厳,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 800,刑,anchor: appears in a completely decoded corpus string
-801,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+801,窟,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 802,区,anchor: appears in a completely decoded corpus string
 803,金,anchor: appears in a completely decoded corpus string
-804,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+804,業,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 805,居,anchor: appears in a completely decoded corpus string
 806,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 807,喜,anchor: appears in a completely decoded corpus string
 808,簡,anchor: appears in a completely decoded corpus string
-809,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+809,貝,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 810,械,corpus: independent contexts 機械を動かす
-811,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+811,戒,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 812,価,corpus: independent contexts 価値もない
 813,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 814,栄,corpus: independent contexts 文明を築き栄える
@@ -819,12 +819,12 @@
 817,嘘,anchor: appears in a completely decoded corpus string
 818,飲,anchor: appears in a completely decoded corpus string
 819,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-820,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+820,囲,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 821,扱,anchor: appears in a completely decoded corpus string
-822,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+822,ェ,visual reading corrected by script context (12px kana/kanji confusion)
 823,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 824,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
-825,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
+825,L,"visual reading of original COMM.IMG 12x12 bitmap (contact sheet, extraction verified against 17/18 known glyphs)"
 826,・,anchor: appears in a completely decoded corpus string
 827,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
 828,,"unresolved: no clean-string, corpus, or unambiguous external-Japanese-script proof"
