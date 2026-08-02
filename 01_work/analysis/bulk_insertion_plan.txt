@@ -1,29 +1,28 @@
-bulk insertion plan, against v119
+bulk insertion plan, against v122
 
 translated lines            2650
   planned inline            366
-  planned via an E2 slot    548
-  need a small trim         76
-  blocked                   1660
+  planned via an E2 slot    1800
+  need a small trim         380
+  blocked                   104
 
 files touched               160
-  already in the v119 zip   75
+  already in the base zip   75
   taken from the original   85   <- these become new archive members
 
 slot pressure, worst files (used / free before this plan):
-   22 /  79   22/S2046.DAT
-   79 /  79   D/SD031.DAT
-   47 /  79   E5/SE05A.DAT
-   17 /  79   4/S4033.DAT
-   17 /  79   4/S4034.DAT
-   17 /  79   4/S4035.DAT
-   17 /  79   4/S4036.DAT
-   62 /  79   7/S7028.DAT
-   13 /  79   4/S4031.DAT
-   12 /  79   5/S5021.DAT
+   47 /  79   22/S2046.DAT
+   38 /  79   F/SF041.DAT
+   79 /  79   21/S2045.DAT
+   79 /  79   5/S5013.DAT
+   79 /  79   6/S6014.DAT
+   79 /  79   7/S7012.DAT
+   71 /  79   31/S3022.DAT
+   34 /  79   32/S3061.DAT
+   34 /  79   4/S4031.DAT
+   34 /  79   5/S5021.DAT
 
 blocked, by reason:
-   1557  body contains an E6 line break
      47  body mixes prose with E5 choices
      15  no code for 량
      14  no code for 덕
@@ -44,64 +43,77 @@ blocked, by reason:
 。
       1  no code for 
 <>CELRT。
+      1  165 bytes exceeds a slot's 127
       1  no code for ‘’
 
 first 25 blocked lines:
-  1/S1011.DAT 0x478AA  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1011.DAT 0x47902  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1011.DAT 0x47954  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1011.DAT 0x4799E  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1011.DAT 0x479FC  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1011.DAT 0x47AD2  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1011.DAT 0x47B3E  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1013.DAT 0x478EA  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1013.DAT 0x47948  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1013.DAT 0x47B2E  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1013.DAT 0x47B8E  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1013.DAT 0x47BF8  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1013.DAT 0x47C4C  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x4785C  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x47914  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x479AA  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x47A26  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x47A82  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x47AD6  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x47B34  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x47B7E  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x47CDE  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x4807A  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x48196  body contains an E6 line break; a capacity-2 skip would bypass it
-  1/S1021.DAT 0x481F0  body contains an E6 line break; a capacity-2 skip would bypass it
+  1/S1023.DAT 0x47952  body mixes prose with E5 choices; capacity-2 metadata would swallow them
+  1/S1023.DAT 0x479C0  body mixes prose with E5 choices; capacity-2 metadata would swallow them
+  1/S1023.DAT 0x47AB0  body mixes prose with E5 choices; capacity-2 metadata would swallow them
+  1/S1023.DAT 0x47B30  no code for 
+<>CELRT
+  1/S1023.DAT 0x47D0E  no code for LR
+  1/S1023.DAT 0x48036  no code for HP
+  1/S1072.DAT 0x47932  no code for 괄덕량
+  21/S2013.DAT 0x47BDA  no code for 
+！
+  21/S2034.DAT 0x47994  no code for 덕
+  21/S2041.DAT 0x47EFE  no code for AMP
+  21/S2041.DAT 0x48160  no code for 
+<>CELRT·。！
+  21/S2041.DAT 0x483D4  no code for 
+。
+  21/S2041.DAT 0x48488  no code for 
+<>CELRT
+  21/S2041.DAT 0x48684  no code for LR
+  21/S2041.DAT 0x48746  no code for HP
+  21/S2042.DAT 0x4831C  no code for LR
+  21/S2042.DAT 0x483E0  no code for HP
+  21/S2044.DAT 0x47FB8  no code for 
+<>CELRT。
+  21/S2044.DAT 0x48268  body mixes prose with E5 choices; capacity-2 metadata would swallow them
+  21/S2045.DAT 0x47F94  no code for LR
+  21/S2045.DAT 0x4800E  no code for MP
+  21/S2045.DAT 0x48F18  body mixes prose with E5 choices; capacity-2 metadata would swallow them
+  21/S2045.DAT 0x4907E  body mixes prose with E5 choices; capacity-2 metadata would swallow them
+  21/S2045.DAT 0x4916A  no code for 덕
+  21/S2045.DAT 0x496A6  165 bytes exceeds a slot's 127
 
 characters with no code: 22 distinct
   Rx18 Lx18 량x16 덕x15 Px12 x11 
 x11 <x10 Cx10 Tx10 Ex10 >x10 Mx7 Hx5 。x5 ！x3 x3 ·x2 괄x1 Ax1 ‘x1 ’x1
 
-lines whose file ran out of slots: 76 across 4 files.
+lines whose file ran out of slots: 380 across 11 files.
 These are not blocked. Each needs its encoding shortened by the bytes shown,
 after which it fits in place and costs no slot at all.
 
-  median deficit 9 bytes, worst 36
+  median deficit 10 bytes, worst 42
   files, and how many lines each needs trimmed:
-     53  C2/SC0B6.DAT
-     14  D/SD031.DAT
-      7  6/S6054.DAT
-      2  31/S3014.DAT
+     92  C2/SC0B6.DAT
+     69  6/S6054.DAT
+     59  31/S3014.DAT
+     28  D/SD031.DAT
+     27  5/S5013.DAT
+     26  31/S3024.DAT
+     25  21/S2045.DAT
+     21  6/S6014.DAT
+     16  7/S7012.DAT
+     14  1/S1021.DAT
 
   smallest deficits first, the cheapest edits:
+    +  1  1/S1021.DAT 0x47A26  어머니: 아!
+    +  1  1/S1021.DAT 0x47BD8  알았어.
+    +  1  1/S1021.DAT 0x4885A  아버지: 봉인됐던 괴물이 나타날 거다.
+    +  1  31/S3024.DAT 0x46966  아이|앗! 뱀파이어 배트 버스터다.
+    +  1  31/S3024.DAT 0x46A5C  아이|앗! 데스 플레임 버스터다.
+    +  1  31/S3024.DAT 0x46B50  아이|앗! 광대 버스터 형이다.
+    +  1  31/S3024.DAT 0x46C42  아이|앗! 애시드 슬라임 버스터다.
+    +  1  31/S3024.DAT 0x46D38  아이|앗! 엘리멘털 마스터 버스터다.
+    +  2  1/S1021.DAT 0x47D46  엄마, 걱정하지 마...
+    +  2  1/S1021.DAT 0x485E8  어머니: 여보... 정말 가야만 해요?
+    +  2  21/S2045.DAT 0x48E78  제자들아....
     +  2  31/S3014.DAT 0x47E9C  제자들아....
-    +  3  D/SD031.DAT 0x45A66  다시 나타났다고...
-    +  3  D/SD031.DAT 0x45B96  후후후후후후후후후후후후후.
-    +  4  31/S3014.DAT 0x475E8  말해 주는군.
-    +  4  D/SD031.DAT 0x45AFE  그럼 당신이...?
-    +  5  6/S6054.DAT 0x45DEA  돌을 받았습니다.
-    +  5  D/SD031.DAT 0x45CF4  5대 정령?
-    +  6  6/S6054.DAT 0x45BAA  고대의 반지를 받았습니다.
-    +  6  C2/SC0B6.DAT 0x4660A  큰 폭탄을 손에 넣었다.
-    +  6  C2/SC0B6.DAT 0x47A5A  큰 폭탄을 손에 넣었다.
-    +  6  D/SD031.DAT 0x4605A  비행선이 필요하겠군.
-    +  6  D/SD031.DAT 0x46190  이 바보 놈!!
 
 verdict
-  914 of 2650 lines have a place to go.
+  2166 of 2650 lines have a place to go.
   Nothing here is written. The builder consumes 05_docs\bulk_insertion_manifest.csv.

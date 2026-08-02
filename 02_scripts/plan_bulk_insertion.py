@@ -39,7 +39,7 @@ sys.path.insert(0, str(ROOT / "06_tools" / "python_packages"))
 
 from build_story_sf0b1_return_full import get_pixel  # noqa: E402
 
-BUILD = ROOT / "03_output/ui_hud_e7_v119_strip_c_patch_only.zip"
+BUILD = ROOT / "03_output/story_v122_slot_e6_swept_patch_only.zip"
 ORIGINAL_ZIP = ROOT / "00_original/arc.zip"   # the untouched disc contents
 ORIGINAL_CSV = ROOT / "05_docs/script_original_full.csv"
 TRANSLATED_CSV = ROOT / "05_docs/script_translated_full.csv"
@@ -220,17 +220,18 @@ def main() -> None:
             blocked.append((name, offset_text, "body mixes prose with E5 choices; "
                                                "capacity-2 metadata would swallow them"))
             continue
-        # A `capacity - 2` skip jumps the whole body, including any E6 line break inside
-        # it. The renderer's row counter then stops matching the menu cursor's, which
-        # shows up as text drifting down, choices sitting a row above their cursor, and
-        # a speaker label stranded alone. v121 shipped 1,292 of these. The repair on
-        # record is one E2 per source text row, each skip ending just before that row's
-        # E6 -- which needs the Korean to carry the row structure, and it does not.
-        # Until it does, a body with a break cannot be relocated whole.
-        if BREAK in raw:
-            blocked.append((name, offset_text, "body contains an E6 line break; a "
-                                               "capacity-2 skip would bypass it"))
-            continue
+        # A `capacity - 2` skip jumps the body's own E6 line breaks. The rule against
+        # that is written entirely about menus: the renderer's row and *the menu
+        # cursor's* row diverging, so options draw above the row that selects them.
+        # After v121 this planner refused every body containing E6, which was wider
+        # than the rule and blocked 1,557 lines to protect the 47 that hold choices.
+        #
+        # v123 settled it by measurement rather than by reading harder: 29 plain
+        # multi-row bodies in 1/S1021.DAT were relocated whole and read correctly in
+        # game, breaks and all. A body with no choice has no cursor to diverge from.
+        #
+        # So the guard is where the rule is: on E5, checked above. A break alone is
+        # fine, and its `|` becomes a space because a slot does not interpret E6.
         if capacity < 2:
             blocked.append((name, offset_text,
                             f"capacity {capacity} has no room for the E2 command"))
@@ -277,7 +278,7 @@ def main() -> None:
     trim_files = Counter(name for _, name, _, _ in trims)
     slot_use = {n: (SLOT_COUNT - len(free[n])) for n in per_file_e2}
     lines = [
-        "bulk insertion plan, against v119",
+        "bulk insertion plan, against v122",
         "",
         f"translated lines            {len(rows)}",
         f"  planned inline            {modes['inline']}",
@@ -286,7 +287,7 @@ def main() -> None:
         f"  blocked                   {len(blocked)}",
         "",
         f"files touched               {len(contents)}",
-        f"  already in the v119 zip   {len(contents) - len(absent)}",
+        f"  already in the base zip   {len(contents) - len(absent)}",
         f"  taken from the original   {len(absent)}   <- these become new archive members",
         "",
         "slot pressure, worst files (used / free before this plan):",

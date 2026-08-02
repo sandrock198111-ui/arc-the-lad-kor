@@ -1,0 +1,49 @@
+v124 bulk story insertion
+
+base    story_v122_slot_e6_swept_patch_only.zip
+output  story_bulk_v124_patch_only.zip
+        sha256 656E7BBB9CF15110B0BF3F9E2400F6F77B354D331C482800A0F828CBA8DCBB5F
+members 164  (79 from v122 + 85 new)
+
+lines written              2166
+  in place                 366
+  through an E2 slot       1800
+files changed from v122    74
+files added                85
+
+external slots consumed, worst files:
+   47  22/S2046.DAT
+   38  F/SF041.DAT
+   35  21/S2045.DAT
+   35  5/S5013.DAT
+   35  6/S6014.DAT
+   35  7/S7012.DAT
+   34  31/S3022.DAT
+   34  4/S4031.DAT
+   34  5/S5021.DAT
+   34  32/S3061.DAT
+
+verified
+  base archive digest matches v122, which swept E6 out of the slots
+  every body's original bytes match the script table, read from 00_original/arc.zip
+  every e2 body ends at a 00 00 boundary and its slot was empty before writing
+  every slot's disk id agrees with the manifest and with the 81-A8 / AA-D0 map
+  no byte changed outside the declared bodies and slots, in any file
+  PSX.EXE and COMM.IMG are byte-identical to v119, carried through v122
+  the archive reads back exactly as written
+
+NOT verified here, needs a cold boot:
+  that the inserted text renders and that scenes advance
+  that no E2 skip leaves a tail of the old line on screen
+
+left out of this build, by the planner's count:
+  380 lines whose file ran out of slots; each needs a small trim, median 10 bytes
+  47 bodies that mix prose with E5 choices, which need the row-by-row repair
+  57 lines containing characters with no code
+
+v121 did this and broke the menus. The difference is the guard: it is on E5 now,
+where the rule actually is, and v123 showed in game that a plain multi-row body
+survives being relocated whole.
+
+rebuild with arc1_v104.xml, then run verify_iso_layout.py
+rollback: v122, which this build does not modify
