@@ -63,12 +63,50 @@ REWRITES = [
     ("31/S3031.DAT", "0x4810A",
      "야군: 최근에는 이 근처에도 몬스터가 나타납니다.",
      "야군: 최근에는 이 근처에도 몬스터가 나타나오."),
+
+    # The menu offers 150, 200 and 250 men. The 5 was dropped from two of them.
+    ("6/S6054.DAT", "0x454DC", "|10|200|20|고민", "|150|200|250|고민"),
+
+    # 그만두 is not an imperative; やめろ、やめないか is two of them.
+    ("21/S2013.DAT", "0x47B9A",
+     ("병사: 이봐! 그만두, 그만두지 못해!!",
+      "병사: 이봐! 그만두, 그만두지 못해！！"),
+     "병사: 이봐! 그만둬, 그만두지 못하겠나!!"),
 ]
 
 # (japanese must contain, japanese must NOT contain, before, after)
 SUBSTITUTIONS = [
     ("兄", "兄貴", "형님", "형"),
-    ("勇者", None, "용사", "용자"),
+
+    # Numbers. These are not slips of the pen: the source table was decoded wrongly
+    # until it was regenerated today, and 150 -> 10 and 250 -> 20 show a digit being
+    # dropped rather than a figure being misjudged. Each guide line is duplicated
+    # across six or seven scene files, so one entry repairs all of them.
+    ("召喚獣は全部で6", None, "전부 합쳐 둘까지", "전부 합쳐 여섯까지"),
+    # Digits, not 여덟 and 일곱: 덟 and 곱 have no glyph and the table is full. The
+    # Japanese writes these as digits too, so nothing is lost. Each pair below accepts
+    # either the original wording or the interim one, so a rerun lands in one place.
+    ("楽器は、全部で8つ", None, "전부 여섯 개", "전부 8개"),
+    ("楽器は、全部で8つ", None, "전부 여덟 개", "전부 8개"),
+    # 兵隊 is Poco himself becoming a strong soldier, not a unit.
+    ("楽器は、全部で8つ", None, "상당히 강한 부대가 될 수 있겠군요",
+     "상당히 강한 병사가 될 수 있겠군요"),
+    ("7人の戦士", None, "네 명의 전사", "7인의 전사"),
+    ("7人の戦士", None, "일곱 전사", "7인의 전사"),
+    ("7人そろ", None, "전사 네 명이", "전사 7명이"),
+    ("7人そろ", None, "전사 일곱 명이", "전사 7명이"),
+    ("6度目の挑戦", None, "두 번째 도전", "여섯 번째 도전"),
+    ("7度目の挑戦", None, "네 번째 도전", "7번째 도전"),
+    ("7度目の挑戦", None, "일곱 번째 도전", "7번째 도전"),
+    ("8度目の挑戦", None, "여섯 번째 도전", "8번째 도전"),
+    ("8度目の挑戦", None, "여덟 번째 도전", "8번째 도전"),
+    ("80回目の勝利", None, "60번째 승리", "80번째 승리"),
+    ("160回目の勝利", None, "120번째 승리", "160번째 승리"),
+
+    # 勇者 -> 용사, the ordinary Korean word for this in JRPG. It also means the UI
+    # has to follow: it ships 용자 today, and a split between the item window and the
+    # dialogue would be worse than either choice.
+    ("勇者", None, "용자", "용사"),
     # スメリア and ミルマーナ take the guidebook's straight transliteration. パレンシア
     # and チョンガラ do not: there the guidebook stands alone against both this
     # translation and an independent one, so 팔렌시아 and 촌가라 stay.
@@ -77,7 +115,18 @@ SUBSTITUTIONS = [
     # 始動 is "commence", not a machine starting. All four occurrences sit immediately
     # before a battle.
     ("始動", None, "시동", "시작"),
+
+    # The source has モンスター 138 times and 魔物 not once, so 마물 is the
+    # translator's invention and the two read as different creatures.
+    ("モンスター", None, "마물", "몬스터"),
+    # 僧 alone is not a Korean word for a monk.
+    ("ラマダ僧", None, "라마다 승:", "라마다 승려:"),
+    ("アークデーモン", None, "아크데몬", "아크 데몬"),
 ]
+
+# Applied to every Korean cell: Japanese typography that came across with the text.
+PUNCTUATION = [("・・・", "..."), ("・・", ".."), ("··。", "..."), ("··", ".."),
+               ("。", "."), ("！", "!"), ("？", "?"), ("，", ","), ("、", ",")]
 
 
 SPEAKER_GAP = re.compile(r"^([^:：|]{1,10}): (?=\S)")
@@ -150,16 +199,18 @@ def main() -> None:
         if skipped:
             log.append(f"    {skipped} line(s) deliberately left alone")
 
-    log += ["", "  speaker label: dropping the space after the colon"]
-    tightened = 0
+    log += ["", "  Japanese typography -> Korean"]
+    punct = 0
     for row in rows:
         korean = row.get("korean") or ""
-        fixed = tighten_speaker(korean)
+        fixed = korean
+        for before, after in PUNCTUATION:
+            fixed = fixed.replace(before, after)
         if fixed != korean:
             row["korean"] = fixed
-            tightened += 1
-    changed += tightened
-    log.append(f"    {tightened} line(s) tightened")
+            punct += 1
+    changed += punct
+    log.append(f"    {punct} line(s) cleaned")
 
     if not changed:
         log.append("")

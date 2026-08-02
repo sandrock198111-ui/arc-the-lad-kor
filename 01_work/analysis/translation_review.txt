@@ -3,7 +3,7 @@ translation review export
 lines exported            2650
   with a speaker label    1181
   without                 1469
-distinct speakers         67
+distinct speakers         66
 speakers mixing register  21   <- worth reading first
 
 Register is guessed from the sentence ending. It is a flag, not a verdict:
@@ -17,7 +17,7 @@ speakers whose lines disagree, most lines first:
   대신             40 lines   polite   8  plain  32
   병사             37 lines   polite  12  plain  25
   아나운서           33 lines   polite  30  plain   3
-  라마다 승          30 lines   polite  23  plain   7
+  라마다 승려         31 lines   polite  23  plain   8
   승무원            27 lines   polite  20  plain   7
   야군             20 lines   polite  11  plain   9
   아크             18 lines   polite   7  plain  11

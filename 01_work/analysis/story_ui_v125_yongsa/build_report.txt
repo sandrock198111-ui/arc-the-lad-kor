@@ -1,0 +1,20 @@
+v125 the item window says 용사
+
+base    story_bulk_v124_patch_only.zip
+output  story_ui_v125_yongsa_patch_only.zip
+        sha256 DAD65768EB981BB73F4F95C997A75CCB13CDF778445C0AF27A2C3D2CC391841A
+
+changed PSX.EXE 0x805CC..0x805CD, two bytes
+  E9 C3 -> E0 A5     자 -> 사, in `용자의 증표` at 0x805CA
+
+verified
+  index 1149 reads back as 사 from the font in this build
+  the executable holds exactly one 용자, so no other string is touched
+  exactly two bytes differ, and the string keeps its length, so the UI
+  pointer table and every other slot are untouched
+  COMM.IMG and every DAT member are byte-identical to the base
+
+NOT verified here: that the equipment window shows it. Look at 용사의 증표
+in the item list.
+
+rollback: the base archive, which this build does not modify

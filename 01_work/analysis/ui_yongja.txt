@@ -1,0 +1,2 @@
+ui_full_v42.csv  equipment_name | 62 | 勇者の証 | 용자의 증표 | 11 | E9 B0 E9 C3 E9 BD 9C E9 D8 EA 8C | 0x8059C | 0x805CA | project_translation+local_guide_referenc
+ui_items_equipment_skills_v42_review.csv  equipment_name | 62 | 勇者の証 | 용자의 증표 | guide_term_restored_v42 | 11 | E9 B0 E9 C3 E9 BD 9C E9 D8 EA 8C | 0x8059C | 0x805CA

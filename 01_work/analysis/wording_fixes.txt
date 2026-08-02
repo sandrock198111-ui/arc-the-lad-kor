@@ -6,13 +6,55 @@ wording fixes applied
   already done   31/S3032.DAT 0x479EE
   already done   31/S3032.DAT 0x47A40
   already done   31/S3031.DAT 0x4810A
+  already done   6/S6054.DAT 0x454DC
+  already done   21/S2013.DAT 0x47B9A
 
   형님 -> 형   where the Japanese has 兄 but not 兄貴
-    kept       F/SF081.DAT 0x47888  부하:형님은 정말 강하시네요. 제가 다 자랑스럽습니다.
-    kept       F/SF081.DAT 0x47996  부하:형님, 저는 여기서 보는 팔렌시아가 제일 좋습니다.
+    kept       F/SF081.DAT 0x47888  부하: 형님은 정말 강하시네요. 제가 다 자랑스럽습니다.
+    kept       F/SF081.DAT 0x47996  부하: 형님, 저는 여기서 보는 팔렌시아가 제일 좋습니다.
     2 line(s) deliberately left alone
 
-  용사 -> 용자   where the Japanese has 勇者
+  전부 합쳐 둘까지 -> 전부 합쳐 여섯까지   where the Japanese has 召喚獣は全部で6
+
+  전부 여섯 개 -> 전부 8개   where the Japanese has 楽器は、全部で8つ
+
+  전부 여덟 개 -> 전부 8개   where the Japanese has 楽器は、全部で8つ
+    changed    21/S2045.DAT 0x493D4  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
+    changed    31/S3014.DAT 0x483F8  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
+    changed    5/S5013.DAT 0x493C0  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
+    changed    6/S6014.DAT 0x4936C  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
+    changed    7/S7012.DAT 0x48E64  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
+    changed    8/S8013.DAT 0x47E52  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
+
+  상당히 강한 부대가 될 수 있겠군요 -> 상당히 강한 병사가 될 수 있겠군요   where the Japanese has 楽器は、全部で8つ
+
+  네 명의 전사 -> 7인의 전사   where the Japanese has 7人の戦士
+
+  일곱 전사 -> 7인의 전사   where the Japanese has 7人の戦士
+    changed    4/S4034.DAT 0x47DE2  아크야, 땅의 정령에게서 돌을 받은 모양이구나. 그렇다면 7인의 전사도 모였겠지
+
+  전사 네 명이 -> 전사 7명이   where the Japanese has 7人そろ
+
+  전사 일곱 명이 -> 전사 7명이   where the Japanese has 7人そろ
+    changed    6/S6013.DAT 0x480E0  마침내 영혼으로 이어진 전사 7명이 모였다는 말이지.
+
+  두 번째 도전 -> 여섯 번째 도전   where the Japanese has 6度目の挑戦
+
+  네 번째 도전 -> 7번째 도전   where the Japanese has 7度目の挑戦
+
+  일곱 번째 도전 -> 7번째 도전   where the Japanese has 7度目の挑戦
+    changed    6/S6054.DAT 0x46778  라마다 승려: 7번째 도전이시군요. 슬슬 힘들어지셨겠지만, 힘내시는군요.
+
+  여섯 번째 도전 -> 8번째 도전   where the Japanese has 8度目の挑戦
+
+  여덟 번째 도전 -> 8번째 도전   where the Japanese has 8度目の挑戦
+    changed    6/S6054.DAT 0x46828  라마다 승려: 8번째 도전이시군요. 그러면 이 정도는 어떻겠습니까?
+
+  60번째 승리 -> 80번째 승리   where the Japanese has 80回目の勝利
+
+  120번째 승리 -> 160번째 승리   where the Japanese has 160回目の勝利
+
+  용자 -> 용사   where the Japanese has 勇者
 
   수메리아 -> 스메리아   where the Japanese has スメリア
 
@@ -20,11 +62,15 @@ wording fixes applied
 
   시동 -> 시작   where the Japanese has 始動
 
-  speaker label: dropping the space after the colon
-    0 line(s) tightened
+  마물 -> 몬스터   where the Japanese has モンスター
 
-nothing to do; every edit was already applied
+  라마다 승: -> 라마다 승려:   where the Japanese has ラマダ僧
 
-cells changed          0
+  아크데몬 -> 아크 데몬   where the Japanese has アークデーモン
+
+  Japanese typography -> Korean
+    0 line(s) cleaned
+
+cells changed          10
 rows with Korean       2650   (must stay 2650)
 backup                 script_translated_full.csv.bak
