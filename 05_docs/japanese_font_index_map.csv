@@ -207,7 +207,7 @@
 205,世,anchor: appears in a completely decoded corpus string
 206,時,anchor: appears in a completely decoded corpus string
 207,攻,anchor: appears in a completely decoded corpus string
-208,ニ,anchor: appears in a completely decoded corpus string
+208,コ,"corrected: bitmap is an open-left bracket (コ), not two horizontal strokes (ニ); confirmed by ポコ and アイコン in context"
 209,ぼ,corpus: independent contexts 僕ら / 落ちこぼれ / 僕を
 210,聞,anchor: appears in a completely decoded corpus string
 211,長,anchor: appears in a completely decoded corpus string
