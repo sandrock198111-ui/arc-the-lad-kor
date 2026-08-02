@@ -1042,3 +1042,20 @@ Insertion capacity is a separate problem from the glyph store - 2026-08-02
 - Against 79 slots: 151 of the 152 affected files fit. One does not -- C2/SC0B6.DAT needs 98 slots for 1,059 bytes, so about 19 of its lines have to lose roughly 11 bytes each to stay inline. That is the entire remaining editorial burden.
 - Bytes were never close: the hungriest file needs 1,439 of the 10,112 a full bank holds.
 - CORRECTION. The first version of this note said 16 slots and concluded that 48 files were beyond reach, implying 2,279 lines would need trimming. That was wrong. The 16 figure came from the v117/v120 probe constants, which allocate only the first few slots, and from a superseded test_log entry. The expansion to 79 was already recorded in this file. Read forward from a mechanism's first appearance to its latest revision before quoting a capacity.
+
+E2 external slot mechanism, consolidated - 2026-08-02
+- Assembled from notes scattered across codex_notes, test_log and changelog because quoting a partial version of this produced a wrong capacity claim twice in one session. Read this entry, not the older fragments.
+
+- Layout. A scene file reserves 0x45000..0x477FF, ahead of dialogue bodies that begin near 0x47800. That is 79 complete 128-byte slots. Slot n is at file offset 0x45000 + n * 0x80. The file-to-RAM delta is +0xCF000, so slot 0 is RAM 0x80114000; the address formula is 0x80114000 + slot * 0x80, and the earlier 0x80110000 + slot * 0x80 was wrong because it omitted the 0x4000 bank displacement.
+
+- Disk IDs. 81-A8 select slots 0..39 and AA-D0 select slots 40..78. **A9 is reserved: the original parsed dialogue already uses it.** So the 80 IDs in 81..D0 yield 79 slots, not 80. This is the one that goes missing from the expansion.
+- The lookup receives the decremented internal ID. Low slots map internal - 0x80, high slots map internal - 0x81; completion maps disk - 0x81 or disk - 0x82. The one-step shift across A9 must be applied in both the lookup and the completion path, or the slot resolves one place off.
+
+- Per-slot cost. Byte 0x7F of each slot holds the completion metadata, `original capacity - 2`, and the text is zero-terminated before it. Usable text is therefore under 128 bytes per slot, not 128.
+
+- What cannot go in a slot. `E6 01` is not interpreted inside a secondary string and renders as visible garbage; use spaces and let the renderer wrap. The four S3032 blocks at 0x45000..0x45180 each carried two `E6 01` and showed a garbled glyph at exactly those positions.
+- A body that mixes prose with `E5` choices must not use `capacity - 2` metadata, because that skip would swallow the choices. For S3012 0x47FF0, E2 replaces only the prompt and the option text stays inline within its original capacity.
+
+- Allocation is per file, not global. Some scene files use part of the nominal bank for real data, so a builder must test each 128-byte slot in the actual cumulative file and take only fully zero ones. S1072's sixteen were empty; that is a measurement of one file, not a rule.
+
+- Separately, the battle-icon work removed capacity of a different kind. Relocating the E7 confirm/cancel icons consumed two charmap-unassigned 12x12 font cells, and the recorded canaries that later builds must not disturb are the v0.39 0x6C LV plane, the E7 icon rectangles, the battle-cursor region, five HUD special payloads, 17 Japanese-preserved rows, and all story members. E7 icons sit at V=130 and, after relocation, IDs 2 and 3 at U=180/192 with V=228. Any classifier that tests V by exact value must avoid 130 and 228; a `V % 12` test would misclassify them.
