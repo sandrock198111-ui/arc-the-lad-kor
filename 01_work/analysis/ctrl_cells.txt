@@ -1,0 +1,8 @@
+1/S1023.DAT 0x47B30  ctrl=['0xa']  '<CTRL:E5>"피해 줄이기 2<CTRL:E5>"전투 요령\n<CTRL:E5>"그만 읽기'
+21/S2013.DAT 0x47BDA  ctrl=['0xa']  '병사 \n어서 비켜라！！'
+21/S2041.DAT 0x48160  ctrl=['0xa', '0xa']  '<CTRL:E5>#물론이야！\n<CTRL:E5>#조금 자신이 없어··。\n<CTRL:E5>#아'
+21/S2041.DAT 0x483D4  ctrl=['0xa', '0xc', '0xc', '0xc']  '승무원 \n아뇨\x0c…\x0c…\x0c아무것도 아닙니다。'
+21/S2041.DAT 0x48488  ctrl=['0xa', '0xa']  '<CTRL:E5>#강해지는 방법\n<CTRL:E5>#전투 요령\n<CTRL:E5>#그만'
+21/S2044.DAT 0x47FB8  ctrl=['0xa', '0xa']  '초핀 \n국왕께 말씀은 들었습니다。\n<CTRL:E4>저는 초핀입니다。'
+6/S6022.DAT 0x47A9C  ctrl=['0xa']  '동료에게 피해를\n줄 수 있는 모양이야.'
+6/S6022.DAT 0x47AC4  ctrl=['0xa']  '어쨌든 인간 병기로서\n두려움의 대상이라는 이야기야.'

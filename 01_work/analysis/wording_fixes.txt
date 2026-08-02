@@ -1,19 +1,30 @@
 wording fixes applied
 
   already done   22/S2055.DAT 0x478F0
+  already done   32/S3061.DAT 0x481DE
+  already done   32/S3062.DAT 0x47D3A
+  already done   31/S3032.DAT 0x479EE
+  already done   31/S3032.DAT 0x47A40
+  already done   31/S3031.DAT 0x4810A
 
   형님 -> 형   where the Japanese has 兄 but not 兄貴
-    kept       F/SF081.DAT 0x47888  부하: 형님은 정말 강하시네요. 제가 다 자랑스럽습니다.
-    kept       F/SF081.DAT 0x47996  부하: 형님, 저는 여기서 보는 팔렌시아가 제일 좋습니다.
+    kept       F/SF081.DAT 0x47888  부하:형님은 정말 강하시네요. 제가 다 자랑스럽습니다.
+    kept       F/SF081.DAT 0x47996  부하:형님, 저는 여기서 보는 팔렌시아가 제일 좋습니다.
     2 line(s) deliberately left alone
 
   용사 -> 용자   where the Japanese has 勇者
 
   수메리아 -> 스메리아   where the Japanese has スメリア
-    changed    8/S8012.DAT 0x481B0  물의 돌... 정령의 나라 스메리아 땅의 성 아래에 탄식하는 불의 힘.
 
   밀마나 -> 미르마나   where the Japanese has ミルマーナ
 
-cells changed          1
+  시동 -> 시작   where the Japanese has 始動
+
+  speaker label: dropping the space after the colon
+    0 line(s) tightened
+
+nothing to do; every edit was already applied
+
+cells changed          0
 rows with Korean       2650   (must stay 2650)
 backup                 script_translated_full.csv.bak

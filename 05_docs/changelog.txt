@@ -998,3 +998,10 @@
 - Added `02_scripts/build_reference_comparison.py`, pairing our lines with the blog retelling the user supplied by character-bigram overlap. Result: 21 confident pairs, 345 loose, 2,284 with none.
 - That is a finding, not a failure of the matcher. The reference is a retelling, not a parallel translation, so it cannot serve as a line-by-line check. Its value was terminology, which it settled: it agrees with us on 팔렌시아 and 촌가라 and on every character name, and never names スメリア or ミルマーナ at all.
 - Rebuilt v124: SHA-256 `E6EB17126A0A452D1D74EBADDAAD4875A399697A0CEFCB93499C9FBBD12E14FB`.
+
+2026-08-02 - wording pass two, and the speaker label tightened
+- 始動 -> 시작 in four lines. It is "commence", not a machine starting; all four sit immediately before a battle.
+- The Bemi spirit's line drops one 당신. The Japanese repeats あなた for emphasis and Korean does not need it, and しなくてはならない was spelled out as a calque.
+- Yagun: only the flat 반말 among his lines to Arc's party was changed, to 하오체 so it matches the line beside it. His 하오체 and his blunt orders to his own soldiers are the character and stay. The first attempt flattened all three to 합쇼체 and the user rejected it.
+- Speaker labels lose the space after the colon, 1,191 lines. The colon's ink sits dead centre of its 12-pixel cell, so it already carries five blank columns to its right; the text space added twelve more. This is text only, no font change, and it returns 1,191 bytes to the lines that are over budget. Inline placements rose from 366 to 373 as a result.
+- Rebuilt v124: SHA-256 `C5BF2EE6D6C339D27A394A28C396728FE6C5A1B461C57429E025E8F2A17CD699`, 2,168 lines placed.

@@ -1,9 +1,9 @@
 bulk insertion plan, against v122
 
 translated lines            2650
-  planned inline            366
-  planned via an E2 slot    1800
-  need a small trim         380
+  planned inline            373
+  planned via an E2 slot    1795
+  need a small trim         378
   blocked                   104
 
 files touched               160
@@ -11,8 +11,8 @@ files touched               160
   taken from the original   85   <- these become new archive members
 
 slot pressure, worst files (used / free before this plan):
-   47 /  79   22/S2046.DAT
-   38 /  79   F/SF041.DAT
+   46 /  79   22/S2046.DAT
+   37 /  79   F/SF041.DAT
    79 /  79   21/S2045.DAT
    79 /  79   5/S5013.DAT
    79 /  79   6/S6014.DAT
@@ -43,7 +43,7 @@ blocked, by reason:
 。
       1  no code for 
 <>CELRT。
-      1  165 bytes exceeds a slot's 127
+      1  164 bytes exceeds a slot's 127
       1  no code for ‘’
 
 first 25 blocked lines:
@@ -77,17 +77,17 @@ first 25 blocked lines:
   21/S2045.DAT 0x48F18  body mixes prose with E5 choices; capacity-2 metadata would swallow them
   21/S2045.DAT 0x4907E  body mixes prose with E5 choices; capacity-2 metadata would swallow them
   21/S2045.DAT 0x4916A  no code for 덕
-  21/S2045.DAT 0x496A6  165 bytes exceeds a slot's 127
+  21/S2045.DAT 0x496A6  164 bytes exceeds a slot's 127
 
 characters with no code: 22 distinct
   Rx18 Lx18 량x16 덕x15 Px12 x11 
 x11 <x10 Cx10 Tx10 Ex10 >x10 Mx7 Hx5 。x5 ！x3 x3 ·x2 괄x1 Ax1 ‘x1 ’x1
 
-lines whose file ran out of slots: 380 across 11 files.
+lines whose file ran out of slots: 378 across 11 files.
 These are not blocked. Each needs its encoding shortened by the bytes shown,
 after which it fits in place and costs no slot at all.
 
-  median deficit 10 bytes, worst 42
+  median deficit 10 bytes, worst 41
   files, and how many lines each needs trimmed:
      92  C2/SC0B6.DAT
      69  6/S6054.DAT
@@ -98,22 +98,22 @@ after which it fits in place and costs no slot at all.
      25  21/S2045.DAT
      21  6/S6014.DAT
      16  7/S7012.DAT
-     14  1/S1021.DAT
+     12  1/S1021.DAT
 
   smallest deficits first, the cheapest edits:
-    +  1  1/S1021.DAT 0x47A26  어머니: 아!
     +  1  1/S1021.DAT 0x47BD8  알았어.
-    +  1  1/S1021.DAT 0x4885A  아버지: 봉인됐던 괴물이 나타날 거다.
+    +  1  1/S1021.DAT 0x485E8  어머니:여보... 정말 가야만 해요?
     +  1  31/S3024.DAT 0x46966  아이|앗! 뱀파이어 배트 버스터다.
     +  1  31/S3024.DAT 0x46A5C  아이|앗! 데스 플레임 버스터다.
     +  1  31/S3024.DAT 0x46B50  아이|앗! 광대 버스터 형이다.
     +  1  31/S3024.DAT 0x46C42  아이|앗! 애시드 슬라임 버스터다.
     +  1  31/S3024.DAT 0x46D38  아이|앗! 엘리멘털 마스터 버스터다.
     +  2  1/S1021.DAT 0x47D46  엄마, 걱정하지 마...
-    +  2  1/S1021.DAT 0x485E8  어머니: 여보... 정말 가야만 해요?
     +  2  21/S2045.DAT 0x48E78  제자들아....
     +  2  31/S3014.DAT 0x47E9C  제자들아....
+    +  2  31/S3024.DAT 0x46096  병사|20년 전|스메리아와 전쟁
+    +  2  31/S3024.DAT 0x4677C  아이|앗! 프리지 버스터 형이다.
 
 verdict
-  2166 of 2650 lines have a place to go.
+  2168 of 2650 lines have a place to go.
   Nothing here is written. The builder consumes 05_docs\bulk_insertion_manifest.csv.

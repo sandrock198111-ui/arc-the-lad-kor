@@ -19,7 +19,7 @@ speakers whose lines disagree, most lines first:
   아나운서           33 lines   polite  30  plain   3
   라마다 승          30 lines   polite  23  plain   7
   승무원            27 lines   polite  20  plain   7
-  야군             21 lines   polite  11  plain  10
+  야군             20 lines   polite  11  plain   9
   아크             18 lines   polite   7  plain  11
   어머니            17 lines   polite   5  plain  12
   사류족 남자         17 lines   polite   8  plain   9
