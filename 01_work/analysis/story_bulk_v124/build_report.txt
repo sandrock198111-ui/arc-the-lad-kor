@@ -2,12 +2,12 @@ v124 bulk story insertion
 
 base    story_v122_slot_e6_swept_patch_only.zip
 output  story_bulk_v124_patch_only.zip
-        sha256 00C51999FCF7767A3D2C9F3E69D81473FA0CFC1C1D78A4D14FD6FF8DDCB87E0D
+        sha256 D02E3459157272AD1F3B32A85048BCA6C99DF955EF224B418661F1C08FED9222
 members 164  (79 from v122 + 85 new)
 
-lines written              2166
-  in place                 366
-  through an E2 slot       1800
+lines written              2167
+  in place                 365
+  through an E2 slot       1802
 files changed from v122    74
 files added                85
 

@@ -1023,3 +1023,11 @@
 - Applied the rename to 53 lines. Also corrected 록토르 -> 로크톨 and 땅의 정령 -> 대지의 정령 where the review flagged them.
 - Rebuilt: `story_bulk_v124_patch_only.zip` SHA-256 `00C51999FCF7767A3D2C9F3E69D81473FA0CFC1C1D78A4D14FD6FF8DDCB87E0D`, `story_ui_v125_yongsa_patch_only.zip` SHA-256 `DD9C97105E49F114682292D38178371E85860FF442249907CAD7EA6471ABF5C4`. Ship v125.
 - Still open from the review: 136 menu strings, 57 terminology lines now largely resolved, and the E5 choice bodies which cannot be inserted until the row-by-row repair is built.
+
+2026-08-02 - the rest of the reader's review, judged item by item
+- Read all 75 non-menu suggestions against the Japanese rather than accepting or rejecting the batch. 27 taken, 2 refused.
+- Two the automated scans had missed, both real: `F/SF021.DAT 0x4813E` says 600年 and the Korean said 이백 년, which the number audit could not see because it compares digits and 이백 is neither; and `B/SB041.DAT 0x47AAA` had lost everything but its first syllable, `さっ、それぞれの役目を果たすのだ` reduced to `자`.
+- Taken: 무엇이 -> 무엇을 where the Japanese is 何が知りたい, which takes が in Japanese and 을 in Korean; 록토르 -> 로크톨; 땅의 정령 -> 대지의 정령; 팔렌시아성 -> 팔렌시아 성; 오대 -> 5대, matching the digit in 5大精霊; 군 오피스 -> 군 본부; もう一度 as 다시 한 번 rather than 언젠가; の です carrying no 때문에; 그만두 -> 그만둬; 에리어 MAP -> 에어리어 맵; and the child's ぼく restored in 나, 이제 지쳤어.
+- Refused, with reasons: 우리나라 -> 우리 나라, because 우리나라 is one word in standard Korean; and 그레이시누 -> 그레이시느, because グレイシーヌ ends in ヌ. The 에게 -> 에 in that same line was taken: に marks where the spirit is.
+- 136 of the 211 untouched suggestions are menu strings inside E5 choice bodies, which cannot be inserted until the row-by-row repair exists. They are not lost, only blocked.
+- Rebuilt: `story_bulk_v124_patch_only.zip` SHA-256 `D02E3459157272AD1F3B32A85048BCA6C99DF955EF224B418661F1C08FED9222`, `story_ui_v125_yongsa_patch_only.zip` SHA-256 `52453B5AC209F2A562A0075A35BB84D14891C060DFA484B9747C4BDEC685FF9F`. Ship v125.

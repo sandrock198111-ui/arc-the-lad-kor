@@ -42,12 +42,18 @@ REWRITES = [
 
     # The Japanese repeats あなた for emphasis; Korean does not need the first one,
     # and しなくてはならない reads as a calque spelled out in full.
+    # The speaker was renamed by the 恵 correction after this rewrite was written, so
+    # both spellings are accepted and the result carries the corrected one.
     ("32/S3061.DAT", "0x481DE",
-     "베미의 정령: 당신이 무엇을 하지 않으면 안 되는지는 당신이 정할 일입니다.",
-     "베미의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다."),
+     ("베미의 정령: 당신이 무엇을 하지 않으면 안 되는지는 당신이 정할 일입니다.",
+      "은혜의 정령: 당신이 무엇을 하지 않으면 안 되는지는 당신이 정할 일입니다.",
+      "베미의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다."),
+     "은혜의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다."),
     ("32/S3062.DAT", "0x47D3A",
-     "베미의 정령: 당신이 무엇을 하지 않으면 안 되는지는 당신이 정할 일입니다.",
-     "베미의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다."),
+     ("베미의 정령: 당신이 무엇을 하지 않으면 안 되는지는 당신이 정할 일입니다.",
+      "은혜의 정령: 당신이 무엇을 하지 않으면 안 되는지는 당신이 정할 일입니다.",
+      "베미의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다."),
+     "은혜의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다."),
 
     # Yagun speaks politely to Arc's party, bluntly to his own soldiers, and in 하오체
     # when he is being a general at them. The 하오체 lines are the character and stay.
@@ -66,6 +72,37 @@ REWRITES = [
 
     # The menu offers 150, 200 and 250 men. The 5 was dropped from two of them.
     ("6/S6054.DAT", "0x454DC", "|10|200|20|고민", "|150|200|250|고민"),
+
+    # 600, not 200. My own number scan missed it: it compares digits and 이백 is
+    # neither a digit nor in the native-numeral list.
+    ("F/SF021.DAT", "0x4813E",
+     "바람의 정령: 그렇다. 봉인된 이백 년 동안 줄곧 인간들이 서로 죽이는 가운데서 오가고 있었지.",
+     "바람의 정령: 그렇다. 봉인된 600년 동안 줄곧 인간들이 서로 죽이는 가운데서 오가고 있었지."),
+
+    # The whole sentence was lost; only its first syllable survived.
+    ("B/SB041.DAT", "0x47AAA", "자", "자, 각자 맡은 역할을 다하도록 해라."),
+
+    # ぼく is the child speaking of himself, which 휴 throws away.
+    ("4/S4041.DAT", "0x479A4", "휴 지쳤어", "나, 이제 지쳤어."),
+
+    # に marks where the spirit is, not who it goes to. The name keeps its ヌ: 누.
+    ("4/S4033.DAT", "0x47CDC",
+     "다음 정령은 그레이시누에게. 읽으시겠습니까?|읽는다|읽지 않는다",
+     "다음 정령은 그레이시누에 있다. 읽으시겠습니까?|읽는다|읽지 않는다"),
+
+    # もう一度 is "once more", not "some day".
+    ("1/S1041.DAT", "0x48058",
+     "산의 정령: 그렇습니다. 하지만 당신은 언젠가 다시 불을 끄러 오게 됩니다.",
+     "산의 정령: 그렇습니다. 하지만 당신은 다시 한 번 불을 끄러 오게 됩니다."),
+    ("1/S1041.DAT", "0x480F6",
+     "산의 정령: 그것이 당신의 운명이기 때문입니다.",
+     "산의 정령: 그것이 당신의 운명입니다."),
+
+    ("21/S2041.DAT", "0x47EFE",
+     "에리어 MAP을 열까요?|연다|열지 않는다",
+     "에어리어 맵을 열까요?|연다|열지 않는다"),
+
+    ("B/SB072.DAT", "0x481FE", "다들 그만두!", "다들 그만둬!"),
 
     # 그만두 is not an imperative; やめろ、やめないか is two of them.
     ("21/S2013.DAT", "0x47B9A",
@@ -127,6 +164,16 @@ SUBSTITUTIONS = [
     # a spirit of blessing, and 베미 was never a name.
     ("恵みの精霊", None, "베미의 정령", "은혜의 정령"),
     ("恵みの精霊", None, "베미의정령", "은혜의 정령"),
+
+    # From a reader's full review, the items that hold up against the source.
+    # 何が知りたい takes が in Japanese and 을 in Korean; 무엇이 is ungrammatical here.
+    ("何が知りたい", None, "무엇이 알고", "무엇을 알고"),
+    ("ロクトル", None, "록토르", "로크톨"),
+    ("地の精霊", None, "땅의 정령", "대지의 정령"),
+    ("パレンシア城", None, "팔렌시아성", "팔렌시아 성"),
+    ("5大精霊", None, "오대 정령", "5대 정령"),
+    # 軍オフィス is a military headquarters; 오피스 reads as a modern office block.
+    ("軍オフィス", None, "군 오피스", "군 본부"),
 ]
 
 # Applied to every Korean cell: Japanese typography that came across with the text.

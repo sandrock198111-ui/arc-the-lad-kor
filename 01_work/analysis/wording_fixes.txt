@@ -7,6 +7,30 @@ wording fixes applied
   already done   31/S3032.DAT 0x47A40
   already done   31/S3031.DAT 0x4810A
   already done   6/S6054.DAT 0x454DC
+  reworded       F/SF021.DAT 0x4813E
+    from  바람의 정령: 그렇다. 봉인된 이백 년 동안 줄곧 인간들이 서로 죽이는 가운데서 오가고 있었지.
+    to    바람의 정령: 그렇다. 봉인된 600년 동안 줄곧 인간들이 서로 죽이는 가운데서 오가고 있었지.
+  reworded       B/SB041.DAT 0x47AAA
+    from  자
+    to    자, 각자 맡은 역할을 다하도록 해라.
+  reworded       4/S4041.DAT 0x479A4
+    from  휴 지쳤어
+    to    나, 이제 지쳤어.
+  reworded       4/S4033.DAT 0x47CDC
+    from  다음 정령은 그레이시누에게. 읽으시겠습니까?|읽는다|읽지 않는다
+    to    다음 정령은 그레이시누에 있다. 읽으시겠습니까?|읽는다|읽지 않는다
+  reworded       1/S1041.DAT 0x48058
+    from  산의 정령: 그렇습니다. 하지만 당신은 언젠가 다시 불을 끄러 오게 됩니다.
+    to    산의 정령: 그렇습니다. 하지만 당신은 다시 한 번 불을 끄러 오게 됩니다.
+  reworded       1/S1041.DAT 0x480F6
+    from  산의 정령: 그것이 당신의 운명이기 때문입니다.
+    to    산의 정령: 그것이 당신의 운명입니다.
+  reworded       21/S2041.DAT 0x47EFE
+    from  에리어 MAP을 열까요?|연다|열지 않는다
+    to    에어리어 맵을 열까요?|연다|열지 않는다
+  reworded       B/SB072.DAT 0x481FE
+    from  다들 그만두!
+    to    다들 그만둬!
   already done   21/S2013.DAT 0x47B9A
 
   형님 -> 형   where the Japanese has 兄 but not 兄貴
@@ -59,60 +83,42 @@ wording fixes applied
   아크데몬 -> 아크 데몬   where the Japanese has アークデーモン
 
   베미의 정령 -> 은혜의 정령   where the Japanese has 恵みの精霊
-    changed    21/S2045.DAT 0x48C0A  초핀: 토요케 숲의 은혜의 정령을 기억하십니까?
-    changed    31/S3014.DAT 0x47C2E  초핀: 토요케 숲의 은혜의 정령을 기억하십니까?
-    changed    32/S3061.DAT 0x47A9C  은혜의 정령: 기다리고 있었습니다, 아크.
-    changed    32/S3061.DAT 0x47B1C  은혜의 정령: 그래요. 20년 전 당신의 아버지를 도와준 뒤로 줄곧 이 날을 기
-    changed    32/S3061.DAT 0x47CB0  은혜의 정령: 요슈아는 이 나라에서 다음 국왕이 될 사람이라는 이유로 하마터면 
-    changed    32/S3061.DAT 0x47D12  은혜의 정령: 심한 상처를 입고 이 숲으로 도망쳐 온 그를 내가 도와주었어요.
-    changed    32/S3061.DAT 0x47D6C  은혜의 정령: 그런데 의식을 되찾은 요슈아의 입에서 나온 것은 죽음을 바라는 말
-    changed    32/S3061.DAT 0x47DDA  은혜의 정령: 그는 인간들끼리의 싸움에 지쳐 있었어요.
-    changed    32/S3061.DAT 0x47E2E  은혜의 정령: 그리고 그로 인해 이 세계가 파괴되어 가는 것에 절망하고 있었지요
-    changed    32/S3061.DAT 0x47EEE  은혜의 정령: 인간은 스스로를 이 세계의 지배자라고 믿고 있습니다.
-    changed    32/S3061.DAT 0x47F46  은혜의 정령: 이 세계에 태어나 문명을 세워 번영하는 것을 당연한 일이라고 생각
-    changed    32/S3061.DAT 0x47FAC  은혜의 정령: 그리고 세계를 자신들의 욕망대로 파괴하기 시작했습니다.
-    changed    32/S3061.DAT 0x48074  은혜의 정령: 요슈아도 같은 말을 했어요. 그래서 나는 그에게 마지막 희망과 시
-    changed    32/S3061.DAT 0x480EC  은혜의 정령: 인간의 미래를 없애지 않기 위해서요.
-    changed    32/S3061.DAT 0x48136  은혜의 정령: 그리고 그는 그 벽을 당신에게 맡기고 싸우고 있습니다.
-    changed    32/S3061.DAT 0x481DE  은혜의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다.
-    changed    32/S3061.DAT 0x48236  은혜의 정령: 당신이 무엇을 보고 어떻게 행동하느냐가 인류의 운명을 바꾸는 겁니
-    changed    32/S3061.DAT 0x48292  은혜의 정령: 이것을 받으세요. 당신에게 전해 주었으면 한다며 요슈아가 맡긴 것
-    changed    32/S3061.DAT 0x48396  은혜의 정령: 당신의 아버지가 길잡이를 보여 줄 겁니다.
-    changed    32/S3062.DAT 0x47D3A  은혜의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다.
-    changed    32/S3062.DAT 0x47D92  은혜의 정령: 당신이 무엇을 보고 어떻게 행동하는지가 인류의 운명을 바꾸는 것입
-    changed    32/S3062.DAT 0x47DEE  은혜의 정령: 이제부터 일어나는 일을 보고, 듣고, 생각해서 행동하는 것입니다.
-    changed    32/S3063.DAT 0x47D2A  은혜의 정령: 빛의 정령은 다섯 대정령 가운데서도 가장 인간을 이해하는 정령입니
-    changed    32/S3063.DAT 0x47E38  은혜의 정령: 그의 말을 잘 되새기고 행동하도록 하세요.
-    changed    32/S3063.DAT 0x47E94  은혜의 정령: 자, 그레이시느로 향하세요.
-    changed    32/S3064.DAT 0x47D2A  은혜의 정령: 모든 것은 자기들만의 것이라는 마음이,
-    changed    32/S3064.DAT 0x47D7E  은혜의 정령: 마침내 싸움으로 인한 빼앗음을 낳습니다.
-    changed    32/S3064.DAT 0x47DCE  은혜의 정령: 땅의 정령의 말을 잊지 마세요.
-    changed    32/S3065.DAT 0x47D2A  은혜의 정령: 해도 비도, 그리고 바람도 모두 이유가 있어서 지금과 같이 있는 
-    changed    32/S3065.DAT 0x47D92  은혜의 정령: 사람에게 편리해도 모든 생물에게 들어맞는 것은 아닙니다. 바람의 
-    changed    32/S3066.DAT 0x47D2A  은혜의 정령: 이 숲도 아리바샤의 사막도, 한 번 무너진 자연의 조화는 부술 때
-    changed    32/S3066.DAT 0x47DA2  은혜의 정령: 그리고 그 사람의 아이는 긴 시간을 거쳐 그 죄의 무게를 알게 됩
-    changed    32/S3066.DAT 0x47E02  은혜의 정령: 하지만 그래서는 이미 때가 지난 것입니다.
-    changed    32/S3066.DAT 0x47E4A  은혜의 정령: 아리바샤의 메마른 땅과 물의 정령의 말을 마음에 새겨 두세요.
-    changed    32/S3067.DAT 0x47D2A  은혜의 정령: 살아 있는 모든 것은 에릴베를 자기 안에 지니고 있습니다.
-    changed    32/S3067.DAT 0x47D86  은혜의 정령: 하지만 사람은 때로 자연에게서, 때로 사람에게서도 빼앗아 자기 에
-    changed    32/S3067.DAT 0x47DF2  은혜의 정령: 에릴베는 이 세계를 돌고 있습니다.
-    changed    32/S3067.DAT 0x47E46  은혜의 정령: 누구 한 사람만이 빼앗아 혼자 가져서는 안 됩니다.
-    changed    32/S3067.DAT 0x47E9C  은혜의 정령: 불의 정령의 모습에 눈물을 흘린 당신들이라면 알 수 있을 겁니다.
-    changed    32/S3068.DAT 0x47E20  은혜의 정령: 지금까지 내 말에 귀를 기울여 주셨습니다.
-    changed    32/S3068.DAT 0x47E76  은혜의 정령: 당신들이라면 인간을 이끌 수 있겠지요.
-    changed    32/S3068.DAT 0x47EE8  은혜의 정령: 자, 나의 선물입니다.
-    changed    32/S3068.DAT 0x47F3A  은혜의 정령: 이제 당신들에게 할 말은 없습니다.
-    changed    32/S3068.DAT 0x47F86  은혜의 정령: 몸소 몸으로 알게 된 경험을 살려 올바른 길을 찾아 나아가세요.
-    changed    32/S3068.DAT 0x47FE8  은혜의 정령: 나는 언제나 보고 있습니다.
-    changed    5/S5013.DAT 0x48BF6  초핀: 토요케 숲의 은혜의 정령을 기억하십니까?
-    changed    6/S6014.DAT 0x48BA2  초핀: 토요케 숲의 은혜의 정령을 기억하십니까?
-    changed    7/S7012.DAT 0x4869A  초핀: 토요케 숲의 은혜의 정령을 기억하십니까?
 
   베미의정령 -> 은혜의 정령   where the Japanese has 恵みの精霊
+
+  무엇이 알고 -> 무엇을 알고   where the Japanese has 何が知りたい
+    changed    21/S2041.DAT 0x48440  승무원: 무엇을 알고 싶으십니까?
+    changed    21/S2042.DAT 0x480D4  초핀: 무엇을 알고 싶으십니까?
+    changed    21/S2045.DAT 0x47ED2  초핀: 무엇을 알고 싶으십니까?
+    changed    21/S2045.DAT 0x48300  초핀: 무엇을 알고 싶으십니까?
+    changed    31/S3013.DAT 0x481EE  승무원: 무엇을 알고 싶으십니까?
+    changed    7/S7012.DAT 0x47D90  초핀: 무엇을 알고 싶으십니까?
+
+  록토르 -> 로크톨   where the Japanese has ロクトル
+
+  땅의 정령 -> 대지의 정령   where the Japanese has 地の精霊
+    changed    4/S4034.DAT 0x47DE2  아크야, 대지의 정령에게서 돌을 받은 모양이구나. 그렇다면 7인의 전사도 모였겠
+    changed    6/S6041.DAT 0x4882E  대지의 정령: 그것을 모양만 따라 하며 계승하니 이렇게 되어 버린 게다.
+    changed    6/S6041.DAT 0x488A2  당신은 대지의 정령?
+    changed    6/S6041.DAT 0x489C2  대지의 정령: 너희 인간만을 위한 것은 아무것도 없다.
+    changed    6/S6041.DAT 0x48A16  대지의 정령: 있는 것은 이 세상에 사는 모든 것이 함께 나누는 것뿐이다.
+    changed    6/S6041.DAT 0x48B6C  대지의 정령: 우리는 언제나 지켜보고 있다.
+
+  팔렌시아성 -> 팔렌시아 성   where the Japanese has パレンシア城
+    changed    1/S1061.DAT 0x47C3E  아크: 난 마을을 떠날 거야. 팔렌시아 성에 가면 뭔가 알 수 있겠지.
+    changed    21/S2011.DAT 0x4791A  여기가 팔렌시아 성인가...
+    changed    21/S2011.DAT 0x47BAC  병사: 꼬마야, 팔렌시아 성에는 무슨 일이지? 여긴 아이들 놀이터가 아니다!
+    changed    22/S2052.DAT 0x47D9C  병사: 보고드립니다! 몬스터들이 팔렌시아 성으로 진격 중입니다. 곧 성에 도달합
+
+  오대 정령 -> 5대 정령   where the Japanese has 5大精霊
+    changed    22/S2057.DAT 0x478F0  국왕: 5대 정령의 돌이라...
+
+  군 오피스 -> 군 본부   where the Japanese has 軍オフィス
+    changed    6/S6054.DAT 0x45580  라마다 승려: 수도의 군 본부에는 사실 지하 50층 던전이...
 
   Japanese typography -> Korean
     0 line(s) cleaned
 
-cells changed          48
+cells changed          26
 rows with Korean       2650   (must stay 2650)
 backup                 script_translated_full.csv.bak

@@ -3,7 +3,7 @@ translation review export
 lines exported            2650
   with a speaker label    1181
   without                 1469
-distinct speakers         65
+distinct speakers         64
 speakers mixing register  21   <- worth reading first
 
 Register is guessed from the sentence ending. It is a flag, not a verdict:
