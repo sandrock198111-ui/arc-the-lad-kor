@@ -2,7 +2,7 @@ v124 bulk story insertion
 
 base    story_v122_slot_e6_swept_patch_only.zip
 output  story_bulk_v124_patch_only.zip
-        sha256 F80EFCD7AC7B37180604502612CB0E8292A64B9A0AF2705A1069A6B6CFD76765
+        sha256 E6EB17126A0A452D1D74EBADDAAD4875A399697A0CEFCB93499C9FBBD12E14FB
 members 164  (79 from v122 + 85 new)
 
 lines written              2166

@@ -18,8 +18,14 @@ run that no longer matches stops rather than guessing. Nothing is replaced globa
 from __future__ import annotations
 
 import csv
+import re
 import shutil
 from pathlib import Path
+
+# A slow-reveal line interleaves control codes inside a word, so the Japanese reads
+# `スメ<CTRL:E4:15>リ<CTRL:E4:15>ア`. Matching on the raw cell misses those, which is
+# how one 수메리아 survived a substitution that caught the other 48.
+CTRL = re.compile(r"<(?:CTRL|G):[^>]*>")
 
 ROOT = Path(__file__).resolve().parents[1]
 TABLE = ROOT / "05_docs/script_translated_full.csv"
@@ -36,6 +42,11 @@ REWRITES = [
 SUBSTITUTIONS = [
     ("兄", "兄貴", "형님", "형"),
     ("勇者", None, "용사", "용자"),
+    # スメリア and ミルマーナ take the guidebook's straight transliteration. パレンシア
+    # and チョンガラ do not: there the guidebook stands alone against both this
+    # translation and an independent one, so 팔렌시아 and 촌가라 stay.
+    ("スメリア", None, "수메리아", "스메리아"),
+    ("ミルマーナ", None, "밀마나", "미르마나"),
 ]
 
 
@@ -69,7 +80,7 @@ def main() -> None:
                     + (f" but not {forbids}" if forbids else "")]
         skipped = 0
         for row in rows:
-            japanese = row.get("japanese") or ""
+            japanese = CTRL.sub("", row.get("japanese") or "")
             korean = row.get("korean") or ""
             if needs not in japanese or before not in korean:
                 continue

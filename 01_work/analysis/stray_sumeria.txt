@@ -1,0 +1,3 @@
+8/S8012.DAT 0x481B0
+  JP: 水の石  / <CTRL:E4:3D>・・・精<CTRL:E4:15>霊<CTRL:E4:15>の<CTRL:E4:3D>国スメ<CTRL:E4:15>リ<CTRL:E4:15>アの<CTRL:E4:3D>・地の / <CTRL:E4:3D>・城<CTRL:E4:15>の<CTRL:E4:3D>下<CTRL:E4:15>に<CTRL:E4:15>嘆き<CTRL:E4:15>し<CTRL:E4:3D>・<CTRL:E4:15>火の<CTRL:E4:3D>力<CTRL:E4:3D>。
+  KR: 물의 돌... 정령의 나라 수메리아 땅의 성 아래에 탄식하는 불의 힘.

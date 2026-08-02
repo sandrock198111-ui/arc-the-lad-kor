@@ -1,0 +1,16 @@
+term counts in the reference:
+  스메리아     0
+  수메리아     0
+  스멜리아     0
+  스메리      0
+  수멜       0
+  실버노아     3
+  미르마나     0
+  밀마나      0
+  미르마      0
+  밀마       0
+  메리아      0
+  왕국       1
+
+words appearing before 왕국:
+  몬스터들의      1

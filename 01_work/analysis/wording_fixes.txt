@@ -1,33 +1,19 @@
 wording fixes applied
 
-  reworded       22/S2055.DAT 0x478F0
-    from  국왕: 그러면 형이 네 아버지라고 정령이 말한 것이로군?
-    to    국왕: 그러면 형이 네 아비라고, 정령이 말했다는 것이냐?
+  already done   22/S2055.DAT 0x478F0
 
   형님 -> 형   where the Japanese has 兄 but not 兄貴
     kept       F/SF081.DAT 0x47888  부하: 형님은 정말 강하시네요. 제가 다 자랑스럽습니다.
     kept       F/SF081.DAT 0x47996  부하: 형님, 저는 여기서 보는 팔렌시아가 제일 좋습니다.
-    changed    F/SF091.DAT 0x47B52  아무도 그 전설을 믿지 않았지만, 내 형은 믿고 계셨다.
-    changed    F/SF091.DAT 0x47BB0  형은 이십 년 전 전쟁을 막으려 밀마나로 떠났고,
-    changed    F/SF0B1.DAT 0x47978  국왕: 몬스터가 날뛰고 이상한 일이 계속되는 지금에 와서 형의 말과 이 전설이 
-    changed    F/SF0B1.DAT 0x479E4  국왕: 아크여, 포코와 둘이 밀마나의 토요케 숲에 가서 형이 무엇을 보았는지,
     2 line(s) deliberately left alone
 
   용사 -> 용자   where the Japanese has 勇者
-    changed    1/S1013.DAT 0x47B2E  아크데몬: 이번에야말로 성궤의 봉인을 풀 생각인가 보군, 용자여!
-    changed    1/S1041.DAT 0x479BA  아크 데몬: 네가 봉인을 풀어 버린 용자인가?
-    changed    1/S1041.DAT 0x47A56  아크 데몬: 무슨 소린지 모르겠군. 난 봉인을 푼 용자를 죽이고...
-    changed    1/S1061.DAT 0x47ACC  쿠쿠루: 세상이 끝나려 할 때 나타날 용자를 도우라는 뜻인 것 같아.
-    changed    22/S2051.DAT 0x47CA4  대신: 이 자가 전설의 용자라고 정해진 것도 아닙니다. 아직 그 이야기는 이르다
-    changed    22/S2055.DAT 0x47B58  국왕: 이것은 틀림없이 수메리아 왕가에 전해지는 용자의 증표.
-    changed    23/S2081.DAT 0x478F0  거울: 네 잔꾀가 용자를 깨워 버린 것은 아니냐?
-    changed    31/S3032.DAT 0x47B62  야군: 아이인 줄 알았는데, 아무래도 전설의 용자일지도 모르겠군.
-    changed    32/S3061.DAT 0x48302  용자의 증표를 손에 넣었다.
-    changed    7/S7031.DAT 0x478B8  로크톨: 축하합니다, 당신이 진정한 용자입니다. 자, 상품인 바람의 오브를 드리
-    changed    B/SB022.DAT 0x47B0C  아크는 용자의 힘을 손에 넣었다.
-    changed    B/SB041.DAT 0x47B22  쿠쿠루는 닫히는 토우빌로 들어가 용자 아크를 떠받치는 것이다.
-    changed    B/SB072.DAT 0x482CC  대신: 용자라 해도 어머니의 목숨은 소중하겠지.
 
-cells changed          18
+  수메리아 -> 스메리아   where the Japanese has スメリア
+    changed    8/S8012.DAT 0x481B0  물의 돌... 정령의 나라 스메리아 땅의 성 아래에 탄식하는 불의 힘.
+
+  밀마나 -> 미르마나   where the Japanese has ミルマーナ
+
+cells changed          1
 rows with Korean       2650   (must stay 2650)
 backup                 script_translated_full.csv.bak

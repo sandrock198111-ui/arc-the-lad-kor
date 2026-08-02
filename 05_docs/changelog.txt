@@ -990,3 +990,11 @@
 - One line reworded at the user's wording: `22/S2055.DAT 0x478F0`, where the comma now falls where と closes the quoted clause and 것이냐 carries the confirmation that のだな asks for.
 - Rebuilt v124: SHA-256 `F80EFCD7AC7B37180604502612CB0E8292A64B9A0AF2705A1069A6B6CFD76765`. Same 2,166 lines placed; the edits changed no line's insertion mode.
 - Still undecided: the four place and character spellings (スメリア, ミルマーナ, パレンシア, チョンガラ), which the user is checking against another guide.
+
+2026-08-02 - place-name decisions, and what the reference translation is good for
+- スメリア -> 스메리아 and ミルマーナ -> 미르마나, the guidebook's straight transliterations. パレンシア and チョンガラ keep 팔렌시아 and 촌가라: there the guidebook stands alone against both this translation and an independent one, so it is the outlier.
+- 67 cells changed, then one more. That last one is worth recording: a slow-reveal line writes the Japanese as `スメ<CTRL:E4:15>リ<CTRL:E4:15>ア`, control codes interleaved inside the word, so matching on the raw cell missed it while catching the other 48. `apply_decided_wording_fixes.py` now strips `<CTRL:...>` and `<G:...>` before matching.
+- All five terms are now unified: 스메리아 50, 미르마나 24, 팔렌시아 21, 촌가라 8, 용자 18, and none of their alternatives remain.
+- Added `02_scripts/build_reference_comparison.py`, pairing our lines with the blog retelling the user supplied by character-bigram overlap. Result: 21 confident pairs, 345 loose, 2,284 with none.
+- That is a finding, not a failure of the matcher. The reference is a retelling, not a parallel translation, so it cannot serve as a line-by-line check. Its value was terminology, which it settled: it agrees with us on 팔렌시아 and 촌가라 and on every character name, and never names スメリア or ミルマーナ at all.
+- Rebuilt v124: SHA-256 `E6EB17126A0A452D1D74EBADDAAD4875A399697A0CEFCB93499C9FBBD12E14FB`.

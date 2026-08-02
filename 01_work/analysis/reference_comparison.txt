@@ -1,0 +1,17 @@
+our translation against the reference retelling
+
+our lines            2650
+reference lines      1265   (episodes 1-21)
+
+confident pair       21   score >= 0.45
+loose pair           345   score 0.2 to 0.45
+no counterpart       2284
+
+A confident pair is the same line in both translations, so any difference is a
+wording choice. A loose one may be the same moment phrased differently, or the
+reference summarising several game lines at once. No counterpart usually means
+the scene is outside episodes 1-21.
+
+Sort by score, descending, to read the pairs that are really comparable first.
+
+-> 05_docs\review_against_reference.csv
