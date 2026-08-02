@@ -39,11 +39,18 @@ RAM_TO_FILE = 0x8011A800
 LOOKUP_SRC, LOOKUP_N = 0x801A8FD4, 508      # the table's image in the executable tail
 FIRST_SLOT, SLOT_COUNT = 456, 52
 ROW_C, IPR = 53, 84
+GA_SRC, GB_SRC = 0x801A8800, 0x801A8BA8
+STRIP_BYTES, STRIP_ROW_BYTES = 936, 78
+CACHE = Path(
+    r"C:\Users\ADMINI~1\AppData\Local\Temp\claude\E--korean"
+    r"\328ae25b-6478-4de1-a913-c780c9b01e72\scratchpad\hangul_bitmaps.pkl"
+)
 
+ROW_A, ROW_B = 40, 63
 SLOT_BASE, SLOT_SIZE = 0x45000, 0x80
-PAGE_SLOTS = (0, 1)
-INLINE = (0x478AA, 0x47902)
-INLINE_COMMANDS = (b"\xE2\x81", b"\xE2\x82")
+PAGE_SLOTS = (0, 1, 2)
+INLINE = (0x478AA, 0x47902, 0x47954)
+INLINE_COMMANDS = (b"\xE2\x81", b"\xE2\x82", b"\xE2\x83")
 PER_PAGE = 26
 
 
@@ -66,6 +73,32 @@ def virtual_code(slot: int) -> bytes:
     if lead not in (0xE9, 0xEA) or not 1 <= trail <= 254:
         raise SystemExit(f"slot {slot} has no code")
     return bytes((lead, trail))
+
+
+def read_back(exe: bytes, lut, slots: list[int]) -> dict[int, str]:
+    """Name the control syllables by reading their pixels, not by trusting a map.
+
+    The strips are the only record of what is actually stored; the CSV maps have been
+    wrong before. Each slot's 12x12 bitplane is looked up in the rendered-glyph table.
+    """
+    import pickle
+    shapes: dict[tuple[int, ...], str] = pickle.loads(CACHE.read_bytes())
+    out: dict[int, str] = {}
+    for slot in slots:
+        index = lut[slot]
+        base = GA_SRC if index < ROW_B * IPR else GB_SRC
+        local = index - (ROW_A if index < ROW_B * IPR else ROW_B) * IPR
+        strip = exe[base - RAM_TO_FILE:base - RAM_TO_FILE + STRIP_BYTES]
+        column, plane = divmod(local, 4)
+        bit = 1 << plane
+        bits = []
+        for y in range(12):
+            for x in range(12):
+                px = column * 12 + x
+                byte = strip[y * STRIP_ROW_BYTES + px // 2]
+                bits.append(1 if (byte & 0x0F if px % 2 == 0 else byte >> 4) & bit else 0)
+        out[slot] = shapes.get(tuple(bits), "?")
+    return out
 
 
 def main() -> None:
@@ -98,6 +131,25 @@ def main() -> None:
             raise SystemExit(f"slot {slot} code {code.hex().upper()} != {row['code_hex']}")
         codes.append(code)
 
+    # A third page of strips A and B, as a control.  Their 104 slots were verified in
+    # game on v116, but v119 rewrote the classifier and the frame routine, so the code
+    # serving them is not the code that was tested.  Ordinary menu text does not settle
+    # it: those strings use DD..E0 physical codes and never reach the strips at all.
+    # Thirteen from each strip on one page makes a single run decide all three.
+    # Only slots whose glyph can be named by reading its pixels: a control the user
+    # cannot check against a known syllable is not a control.
+    control: list[int] = []
+    control_chars: dict[int, str] = {}
+    for row in (ROW_A, ROW_B):
+        pool = [s for s, i in enumerate(lut) if row * IPR <= i < row * IPR + 52]
+        named = read_back(exe, lut, pool)
+        picked = [s for s in pool if named[s] != "?"][:PER_PAGE // 2]
+        if len(picked) < PER_PAGE // 2:
+            raise SystemExit(f"row {row} has only {len(picked)} readable control slots")
+        control += picked
+        control_chars |= {s: named[s] for s in picked}
+    control_codes = [virtual_code(s) for s in control]
+
     story = bytearray(members[STORY])
     old_story = bytes(story)
     tails: list[int] = []
@@ -106,7 +158,8 @@ def main() -> None:
             raise SystemExit(f"the early E2 command at 0x{inline:X} is not {command.hex()}")
         start = SLOT_BASE + slot * SLOT_SIZE
         tails.append(story[start + SLOT_SIZE - 1])
-        payload = b"".join(codes[page * PER_PAGE:(page + 1) * PER_PAGE])
+        chosen = control_codes if page == 2 else codes[page * PER_PAGE:(page + 1) * PER_PAGE]
+        payload = b"".join(chosen)
         if len(payload) != PER_PAGE * 2:
             raise SystemExit(f"page {page + 1} is not {PER_PAGE} codes")
         story[start:start + SLOT_SIZE] = b"\x00" * SLOT_SIZE
@@ -148,32 +201,44 @@ def main() -> None:
         f"and only inside external slots {', '.join(map(str, PAGE_SLOTS))}.",
         "",
         "what to look at, on a cold boot, in the first S1011 scene:",
-        f"  page 1   the {PER_PAGE} syllables below, in this order",
-        f"  page 2   the remaining {PER_PAGE}",
+        "  pages 1 and 2   the 52 new strip C syllables",
+        "  page 3          a control drawn from strips A and B",
         "",
-        "Each is one lookup slot in strip C. A wrong or blank glyph names its slot by",
-        "position, so note where it falls rather than what it looks like.",
+        "Each glyph is one lookup slot. A wrong or blank one names its slot by position,",
+        "so note where it falls rather than what it looks like.",
         "",
-        "page 1",
+        "Page 3 is the part that is easy to skip and should not be. Strips A and B were",
+        "verified in game on v116, but v119 rewrote the classifier and the frame routine,",
+        "so the code serving them today is not the code that was tested. Ordinary menu",
+        "text does not settle it -- those strings use DD..E0 physical codes and never",
+        "reach a strip at all. If page 3 is right, all three strips are proven together.",
+        "",
     ]
-    for page in range(2):
-        if page:
-            lines += ["", "page 2"]
-        row = plan[page * PER_PAGE:(page + 1) * PER_PAGE]
-        lines.append("  " + " ".join(r["char"] for r in row))
-        lines.append("  " + " ".join(r["code_hex"] for r in row[:13]))
-        lines.append("  " + " ".join(r["code_hex"] for r in row[13:]))
+    pages = [
+        ("page 1  strip C, slots 456..481",
+         [(r["char"], r["code_hex"]) for r in plan[:PER_PAGE]]),
+        ("page 2  strip C, slots 482..507",
+         [(r["char"], r["code_hex"]) for r in plan[PER_PAGE:]]),
+        ("page 3  control: 13 from strip A, then 13 from strip B",
+         [(control_chars[s], c.hex().upper()) for s, c in zip(control, control_codes)]),
+    ]
+    for title, entries in pages:
+        lines += ["", title,
+                  "  " + " ".join(ch for ch, _ in entries),
+                  "  " + " ".join(code for _, code in entries[:13]),
+                  "  " + " ".join(code for _, code in entries[13:])]
     lines += [
         "",
         "verified statically",
         "  base archive digest matches v119",
         f"  all {SLOT_COUNT} lookup slots resolve into strip C row {ROW_C}, in plan order",
         "  each code round-trips through the decoder's own arithmetic",
-        f"  only {STORY} differs from v119, only in the two external slots, and the",
+        f"  only {STORY} differs from v119, only in external slots"
+        f" {', '.join(map(str, PAGE_SLOTS))}, and the",
         "  inline E2 commands and slot tails are preserved",
         "",
         "if every glyph is right",
-        "  strip C is fully proven and v119 is the build to accept, not this one.",
+        "  all three strips are proven and v119 is the build to accept, not this one.",
         "  This probe exists only to look at; it overwrites real story text.",
         "",
         "rollback: v119 unchanged, or v118 if the strip itself is at fault",

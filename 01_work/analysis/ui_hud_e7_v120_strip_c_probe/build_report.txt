@@ -2,36 +2,48 @@ v120 strip C probe -- no code changes, story text only
 
 base    ui_hud_e7_v119_strip_c_patch_only.zip
 output  ui_hud_e7_v120_strip_c_probe_patch_only.zip
-        sha256 55733F6658393683E3A031F4FCCE268F46F556692BDB8AC7AE4BFE5DFE40A57F
+        sha256 8641E3EED1847EFE9C2A6A6D4E13E63A26AA3FCAA114C5C5FE3195A4E82049BC
 PSX.EXE and COMM.IMG are byte-identical to v119. Only 1/S1011.DAT differs,
-and only inside external slots 0, 1.
+and only inside external slots 0, 1, 2.
 
 what to look at, on a cold boot, in the first S1011 scene:
-  page 1   the 26 syllables below, in this order
-  page 2   the remaining 26
+  pages 1 and 2   the 52 new strip C syllables
+  page 3          a control drawn from strips A and B
 
-Each is one lookup slot in strip C. A wrong or blank glyph names its slot by
-position, so note where it falls rather than what it looks like.
+Each glyph is one lookup slot. A wrong or blank one names its slot by position,
+so note where it falls rather than what it looks like.
 
-page 1
+Page 3 is the part that is easy to skip and should not be. Strips A and B were
+verified in game on v116, but v119 rewrote the classifier and the frame routine,
+so the code serving them today is not the code that was tested. Ordinary menu
+text does not settle it -- those strings use DD..E0 physical codes and never
+reach a strip at all. If page 3 is right, all three strips are proven together.
+
+
+page 1  strip C, slots 456..481
   콜 혜 힌 떨 취 교 껴 끔 럽 릿 맙 썩 즉 값 겼 긋 꾀 듯 랜 엑 엽 옮 존 챔 탐 탱
   EACB EACC EACD EACE EACF EAD0 EAD1 EAD2 EAD3 EAD4 EAD5 EAD6 EAD7
   EAD8 EAD9 EADA EADB EADC EADD EADE EADF EAE0 EAE1 EAE2 EAE3 EAE4
 
-page 2
+page 2  strip C, slots 482..507
   흘 끓 덤 맵 멍 앙 큭 캬 왠 갖 깊 념 꿀 뼈 낸 몇 릅 꽤 둬 똑 렁 완 쩔 쩜 컷 픈
   EAE5 EAE6 EAE7 EAE8 EAE9 EAEA EAEB EAEC EAED EAEE EAEF EAF0 EAF1
   EAF2 EAF3 EAF4 EAF5 EAF6 EAF7 EAF8 EAF9 EAFA EAFB EAFC EAFD EAFE
+
+page 3  control: 13 from strip A, then 13 from strip B
+  엘 염 영 욕 월 윈 익 잎 잔 젤 짓 짜 찍 히 힐 앗 빛 페 료 견 땅 듣 볼 잊 톨 놓
+  EA5F EA60 EA61 EA62 EA63 EA64 EA65 EA66 EA67 EA68 EA6A EA6B EA6C
+  EA96 EA97 EA9C EA9D EA9E EA9F EAA0 EAA1 EAA2 EAA3 EAA4 EAA5 EAA6
 
 verified statically
   base archive digest matches v119
   all 52 lookup slots resolve into strip C row 53, in plan order
   each code round-trips through the decoder's own arithmetic
-  only 1/S1011.DAT differs from v119, only in the two external slots, and the
+  only 1/S1011.DAT differs from v119, only in external slots 0, 1, 2, and the
   inline E2 commands and slot tails are preserved
 
 if every glyph is right
-  strip C is fully proven and v119 is the build to accept, not this one.
+  all three strips are proven and v119 is the build to accept, not this one.
   This probe exists only to look at; it overwrites real story text.
 
 rollback: v119 unchanged, or v118 if the strip itself is at fault
