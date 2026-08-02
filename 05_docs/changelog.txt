@@ -942,3 +942,10 @@
 - Built `03_output/ui_hud_e7_v120_strip_c_probe_patch_only.zip`, SHA-256 `55733F6658393683E3A031F4FCCE268F46F556692BDB8AC7AE4BFE5DFE40A57F`.
 - Purpose: close the one link no save state has shown, that a strip C code draws its own syllable. Everything earlier in the chain is already measured from the user's v119 save state -- the reserved-RAM copy reaches VRAM intact at x 961..999 y 380..391, all 52 entries resolve to row 53, and existing text still renders correctly with the rewritten classifier and frame routine.
 - If both pages read correctly, v119 is the build to accept. v120 overwrites real story text and must not ship.
+
+2026-08-02 - v119 runtime acceptance
+- User cold-boot test of the v120 probe. All three pages read correctly: 52 strip C syllables across pages 1 and 2, and 26 strip A/B control syllables on page 3.
+- This accepts v119. Strip C is proven, and so is the rewritten classifier and frame routine serving strips A and B.
+- The START icon is correct again, confirming that removing the font-page plane write fixed it.
+- `bible_current.txt` promoted to v119. v116 remains the fallback.
+- Two findings recorded, neither caused by this work: the skill-range overlay regression from v103 is still present, and `큐` (index 1338) is stored as a hand-drawn glyph rather than a gulim render.

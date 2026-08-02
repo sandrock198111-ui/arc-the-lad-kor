@@ -1492,3 +1492,14 @@ CTRL00 parser correction accepted - 2026-08-01
 - Complete source rows (no `<G:...>` and no `<CTRL:...>`) are 1,852/2,878. Immediate untranslated plain-text targets are 122. The four-count reduction from 1,856 and 126 is only removal of duplicated COMM.DAT rows, not a unique source loss.
 - The Japanese map regeneration restored 67 older manual/exact atlas mappings that the broad-ASCII repair had accidentally blanked; all repaired-source occurrences agreed and indices 89/90 remain unresolved.
 - Full evidence and the 179-file distribution are `05_docs/ctrl00_parser_audit.md` and `05_docs/ctrl00_file_distribution.csv`.
+
+v119 accepted baseline - 2026-08-02
+- Runtime verified on a cold boot with the v120 probe. All three resident glyph strips draw correctly.
+- Page 1, strip C slots 456..481: 콜 혜 힌 떨 취 교 껴 끔 럽 릿 맙 썩 즉 값 겼 긋 꾀 듯 랜 엑 엽 옮 존 챔 탐 탱. All 26 correct.
+- Page 2, strip C slots 482..507: 흘 끓 덤 맵 멍 앙 큭 캬 왠 갖 깊 념 꿀 뼈 낸 몇 릅 꽤 둬 똑 렁 완 쩔 쩜 컷 픈. All 26 correct.
+- Page 3, control from strips A and B: 엘 염 영 욕 월 윈 익 잎 잔 젤 짓 짜 찍 히 힐 앗 빛 페 료 견 땅 듣 볼 잊 톨 놓. All 26 correct. This is what matters most: v119 rewrote the classifier and the frame routine, so the code serving strips A and B is not the code that was verified on v116, and ordinary menu text could not settle it because those strings use DD..E0 physical codes that never reach a strip.
+- The START button icon renders as it does on v116, confirming the font-page correction.
+- Ship `03_output/ui_hud_e7_v119_strip_c_patch_only.zip`, SHA-256 `7EFBE624E56433C28295FB51FB56611ABDB06A54678D0D4EFB9FEC9E740F5722`, with `arc1_v104.xml`. v120 is a look-at build only: it overwrites real story text in `1/S1011.DAT` and must not ship.
+- Drawable supply is 721 syllables across three strips and the font page. The committed corpus has no missing syllable. 45 remain missing only if every abbreviation is undone.
+- Known, unrelated, and still open: the skill-range overlay draws game icons in place of some range tiles. This is the v103-based regression recorded since v104 and is present on v116 as well; it is not caused by v118 or v119.
+- Known cosmetic: `큐` at index 1338 is the one Korean syllable in the build whose pixels are not a gulim render. It is hand-drawn and visibly lighter than its neighbours.
