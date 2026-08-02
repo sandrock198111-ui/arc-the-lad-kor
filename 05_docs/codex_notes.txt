@@ -1068,3 +1068,9 @@ v121 bulk insertion regressed the row geometry - 2026-08-02
 - That repair cannot be applied mechanically to this corpus. Of the 1,292 affected bodies only 14 have a `|` count in the Korean matching the source E6 count; 1,278 disagree, and 1,277 of those are Korean with no `|` at all against a source of one to six rows. The translation was written as flowing sentences, so the row structure it must be poured back into no longer exists in it.
 - The 508 bodies with no E6 in the source were always safe and are the only part of v121 that can be kept as built.
 - Separately: untranslated Japanese still on screen is not a font fault. The font keeps 17 Japanese rows by design, and any body not yet replaced renders from them. The reported line, `32/S3051.DAT 0x48D62`, is translated in the table but was one of the 484 the planner left out.
+
+Put rules in the builder, not only in this file - 2026-08-02
+- Four regressions in one session repeated something already written down: the blank-plane trap (v109, v111, then v118 and the START icon), the E2 slot count, the E6 skip rule, and the instruction to find the first build that shows a symptom before theorising. In every case the answer was in the documents and the build was made first.
+- A rule kept only as prose depends on someone reading it at the right moment, and reading it far enough. Both failed here, twice each.
+- Where a rule can be checked mechanically, the builder should check it and refuse. `cell_is_occupied` in the v118 builder now makes the blank-plane mistake unbuildable; the E6 guard in `plan_bulk_insertion.py` does the same for the skip rule. Prefer adding a guard over adding a paragraph.
+- A guard is also self-documenting at the moment it matters: it fails with the reason, at the point of the mistake, instead of waiting for a screenshot.

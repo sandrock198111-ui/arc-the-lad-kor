@@ -61,6 +61,7 @@ SLOT_TEXT_MAX = SLOT_SIZE - 1           # byte 0x7F is the completion metadata
 FILLER = 0x9C                           # the space glyph, and the safe pad
 LINEBREAK = b"\xE6\x01"
 CHOICE = 0xE5
+BREAK = 0xE6            # a line break the E2 skip would swallow
 
 
 def disk_id(slot: int) -> int:
@@ -218,6 +219,17 @@ def main() -> None:
         if CHOICE in raw:
             blocked.append((name, offset_text, "body mixes prose with E5 choices; "
                                                "capacity-2 metadata would swallow them"))
+            continue
+        # A `capacity - 2` skip jumps the whole body, including any E6 line break inside
+        # it. The renderer's row counter then stops matching the menu cursor's, which
+        # shows up as text drifting down, choices sitting a row above their cursor, and
+        # a speaker label stranded alone. v121 shipped 1,292 of these. The repair on
+        # record is one E2 per source text row, each skip ending just before that row's
+        # E6 -- which needs the Korean to carry the row structure, and it does not.
+        # Until it does, a body with a break cannot be relocated whole.
+        if BREAK in raw:
+            blocked.append((name, offset_text, "body contains an E6 line break; a "
+                                               "capacity-2 skip would bypass it"))
             continue
         if capacity < 2:
             blocked.append((name, offset_text,
