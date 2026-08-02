@@ -40,7 +40,7 @@ sys.path.insert(0, str(ROOT / "06_tools" / "python_packages"))
 from build_story_sf0b1_return_full import get_pixel  # noqa: E402
 
 BUILD = ROOT / "03_output/ui_hud_e7_v119_strip_c_patch_only.zip"
-WORK = ROOT / "01_work"
+ORIGINAL_ZIP = ROOT / "00_original/arc.zip"   # the untouched disc contents
 ORIGINAL_CSV = ROOT / "05_docs/script_original_full.csv"
 TRANSLATED_CSV = ROOT / "05_docs/script_translated_full.csv"
 MANIFEST = ROOT / "05_docs/bulk_insertion_manifest.csv"
@@ -163,17 +163,21 @@ def main() -> None:
         rows = [r for r in csv.DictReader(handle)
                 if any("\uac00" <= c <= "\ud7a3" for c in (r.get("korean") or ""))]
 
-    # file content: the archive's copy where it has one, the work tree otherwise
+    # File content: the patch archive's copy where it has one, so earlier scene work
+    # and the slots it already consumed are respected; the untouched disc otherwise.
+    # 01_work is deliberately not used -- it is a working tree, not a known state.
     contents: dict[str, bytes] = {}
     absent: list[str] = []
-    for name in sorted({r["source file"] for r in rows}):
-        if name in cached:
-            contents[name] = cached[name]
-        elif (WORK / name).exists():
-            contents[name] = (WORK / name).read_bytes()
-            absent.append(name)
-        else:
-            raise SystemExit(f"no source for {name}")
+    with zipfile.ZipFile(ORIGINAL_ZIP) as pristine:
+        available = set(pristine.namelist())
+        for name in sorted({r["source file"] for r in rows}):
+            if name in cached:
+                contents[name] = cached[name]
+            elif name in available:
+                contents[name] = pristine.read(name)
+                absent.append(name)
+            else:
+                raise SystemExit(f"{name} is in neither the build nor the original disc")
 
     free: dict[str, list[int]] = {
         name: [s for s in range(SLOT_COUNT)
@@ -271,7 +275,7 @@ def main() -> None:
         "",
         f"files touched               {len(contents)}",
         f"  already in the v119 zip   {len(contents) - len(absent)}",
-        f"  taken from 01_work        {len(absent)}   <- these become new archive members",
+        f"  taken from the original   {len(absent)}   <- these become new archive members",
         "",
         "slot pressure, worst files (used / free before this plan):",
         *(f"  {slot_use[n]:>3} / {slot_use[n] + len(free[n]):>3}   {n}"

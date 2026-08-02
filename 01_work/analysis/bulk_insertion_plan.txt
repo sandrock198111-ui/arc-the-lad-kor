@@ -8,7 +8,7 @@ translated lines            2650
 
 files touched               160
   already in the v119 zip   75
-  taken from 01_work        85   <- these become new archive members
+  taken from the original   85   <- these become new archive members
 
 slot pressure, worst files (used / free before this plan):
    47 /  79   22/S2046.DAT

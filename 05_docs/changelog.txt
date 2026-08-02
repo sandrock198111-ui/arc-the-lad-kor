@@ -957,3 +957,13 @@
 - The 104 blocked are 47 bodies that mix prose with E5 choices, which cannot take `capacity - 2` metadata because the skip would swallow the choices, and 57 lines containing characters with no code, mostly Latin runs like HP, MP, LR and some mojibake in the translation table.
 - The encoder is read out of the built archive. Punctuation and Latin cannot be named that way because the rendered-glyph table only holds Hangul, so those come from the charmaps but are accepted only after resolving the declared code through the decoder's arithmetic and confirming the cell it lands on is non-blank in this build.
 - The translation touches 160 files; only 75 are in the v119 archive. The remaining 85 come from `01_work` and would become new archive members.
+
+2026-08-02 - v121 bulk story insertion
+- Added `02_scripts/build_story_bulk_v121.py`. It applies the planner's manifest and nothing else: PSX.EXE and COMM.IMG are byte-identical to v119, verified.
+- Wrote 2,166 translated lines in one build: 366 in place and 1,800 through E2 external slots. 74 files changed from v119 and 85 new members were added from `00_original/arc.zip`, giving 164 members in total.
+- Built `03_output/story_bulk_v121_patch_only.zip`, SHA-256 `E2F60152F858D45BB95AB456B8CC37501ACAAC126E6E1F905A4601EA76A5121E`.
+- Every body's original bytes were proved against the script table read from the untouched disc archive before being written to. Every e2 body ends at a 00 00 boundary, its slot was empty, and its disk id agrees with the 81-A8 / AA-D0 map. No byte changed outside the declared bodies and slots in any file.
+- The e2 write touches only the body's first two bytes. The rest of the old body is left alone on purpose: `capacity - 2` at slot byte 0x7F makes the renderer skip it, and omitting that skip is what once left the tail of an old line on screen.
+- Left out: 380 lines whose file ran out of slots, each needing a small trim (median 10 bytes); 47 bodies mixing prose with E5 choices; 57 lines with characters that have no code.
+- Runtime verification is pending. v119 is unchanged and remains the accepted baseline.
+- Note for the disc build: the archive now has 164 members rather than 79, so `build_iso_layout_v104_exe_at_end.py` must place all of them.
