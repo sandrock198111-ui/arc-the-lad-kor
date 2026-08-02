@@ -935,3 +935,10 @@
 - Rebuilt both archives. v118 SHA-256 `71559A8FC99D52A76F3524DA37927879B2A6C77ACF241591A10D887CAE2B8DC5`; v119 SHA-256 `7EFBE624E56433C28295FB51FB56611ABDB06A54678D0D4EFB9FEC9E740F5722`. Both rebuild deterministically.
 - The syllable that lost its slot returns automatically: v119 picks its 52 targets from what is still missing, so it now takes a strip C slot instead.
 - Updated `99_backup/baselines/ui_hud_e7_v118_static_verified_2026-08-02/`.
+
+2026-08-02 - v120 strip C probe (look-at build, not a release)
+- Added `02_scripts/build_ui_hud_e7_v120_strip_c_probe.py`, based on the v119 archive by exact SHA-256. No code changes at all: PSX.EXE and COMM.IMG are byte-identical to v119.
+- Replaces the first two early external E2 strings in `1/S1011.DAT` with the 52 strip C codes, 26 to a page, the same method v117 used for strips A and B. Inline E2 commands and slot tails are preserved.
+- Built `03_output/ui_hud_e7_v120_strip_c_probe_patch_only.zip`, SHA-256 `55733F6658393683E3A031F4FCCE268F46F556692BDB8AC7AE4BFE5DFE40A57F`.
+- Purpose: close the one link no save state has shown, that a strip C code draws its own syllable. Everything earlier in the chain is already measured from the user's v119 save state -- the reserved-RAM copy reaches VRAM intact at x 961..999 y 380..391, all 52 entries resolve to row 53, and existing text still renders correctly with the rewritten classifier and frame routine.
+- If both pages read correctly, v119 is the build to accept. v120 overwrites real story text and must not ship.
