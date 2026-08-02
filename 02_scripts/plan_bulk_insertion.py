@@ -64,6 +64,24 @@ CHOICE = 0xE5
 BREAK = 0xE6            # a line break the E2 skip would swallow
 
 
+def tokens(text: bytes):
+    """Walk the byte stream the way the runtime does: 0x01..0xDC one byte, 0xDD.. two.
+
+    A control byte is only a control at a token boundary. 0xE5 and 0xE6 also occur as
+    the second byte of a two-byte glyph, and counting those as markers is a documented
+    way to misjudge a body -- it cost a build once already.
+    """
+    i = 0
+    while i < len(text):
+        width = 1 if text[i] < 0xDD else 2
+        yield text[i:i + width]
+        i += width
+
+
+def has_marker(raw: bytes, lead: int) -> bool:
+    return any(len(tok) == 2 and tok[0] == lead for tok in tokens(raw))
+
+
 def disk_id(slot: int) -> int:
     """81-A8 for slots 0..39, AA-D0 for 40..78. A9 belongs to original dialogue."""
     if not 0 <= slot < SLOT_COUNT:
@@ -216,7 +234,7 @@ def main() -> None:
             continue
 
         # it has to move. every rule below has already cost a build.
-        if CHOICE in raw:
+        if has_marker(raw, CHOICE):
             blocked.append((name, offset_text, "body mixes prose with E5 choices; "
                                                "capacity-2 metadata would swallow them"))
             continue

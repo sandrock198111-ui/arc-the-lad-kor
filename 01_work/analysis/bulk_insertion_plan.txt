@@ -2,9 +2,9 @@ bulk insertion plan, against v122
 
 translated lines            2650
   planned inline            365
-  planned via an E2 slot    1802
+  planned via an E2 slot    1813
   need a small trim         380
-  blocked                   103
+  blocked                   92
 
 files touched               160
   already in the base zip   75
@@ -12,18 +12,18 @@ files touched               160
 
 slot pressure, worst files (used / free before this plan):
    47 /  79   22/S2046.DAT
-   38 /  79   F/SF041.DAT
+   39 /  79   F/SF041.DAT
    79 /  79   21/S2045.DAT
+   35 /  79   32/S3061.DAT
    79 /  79   5/S5013.DAT
    79 /  79   6/S6014.DAT
    79 /  79   7/S7012.DAT
    71 /  79   31/S3022.DAT
-   34 /  79   32/S3061.DAT
    34 /  79   4/S4031.DAT
    34 /  79   5/S5021.DAT
 
 blocked, by reason:
-     47  body mixes prose with E5 choices
+     36  body mixes prose with E5 choices
      15  no code for 량
      14  no code for 덕
       8  no code for LR
@@ -41,7 +41,6 @@ blocked, by reason:
 
 first 25 blocked lines:
   1/S1023.DAT 0x47952  body mixes prose with E5 choices; capacity-2 metadata would swallow them
-  1/S1023.DAT 0x479C0  body mixes prose with E5 choices; capacity-2 metadata would swallow them
   1/S1023.DAT 0x47AB0  body mixes prose with E5 choices; capacity-2 metadata would swallow them
   1/S1023.DAT 0x47B30  no code for 
 <>CELRT
@@ -63,7 +62,6 @@ first 25 blocked lines:
   21/S2042.DAT 0x483E0  no code for HP
   21/S2044.DAT 0x47FB8  no code for 
 <>CELRT
-  21/S2044.DAT 0x48268  body mixes prose with E5 choices; capacity-2 metadata would swallow them
   21/S2045.DAT 0x47F94  no code for LR
   21/S2045.DAT 0x4800E  no code for MP
   21/S2045.DAT 0x48F18  body mixes prose with E5 choices; capacity-2 metadata would swallow them
@@ -71,6 +69,8 @@ first 25 blocked lines:
   21/S2045.DAT 0x4916A  no code for 덕
   21/S2045.DAT 0x496A6  165 bytes exceeds a slot's 127
   22/S2056.DAT 0x47B4A  no code for 덕
+  31/S3012.DAT 0x47FF0  body mixes prose with E5 choices; capacity-2 metadata would swallow them
+  31/S3012.DAT 0x4811E  body mixes prose with E5 choices; capacity-2 metadata would swallow them
 
 characters with no code: 17 distinct
   Rx18 Lx18 량x16 덕x15 
@@ -108,5 +108,5 @@ after which it fits in place and costs no slot at all.
     +  2  31/S3014.DAT 0x47E9C  제자들아....
 
 verdict
-  2167 of 2650 lines have a place to go.
+  2178 of 2650 lines have a place to go.
   Nothing here is written. The builder consumes 05_docs\bulk_insertion_manifest.csv.

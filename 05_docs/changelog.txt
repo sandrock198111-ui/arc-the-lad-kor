@@ -1031,3 +1031,11 @@
 - Refused, with reasons: 우리나라 -> 우리 나라, because 우리나라 is one word in standard Korean; and 그레이시누 -> 그레이시느, because グレイシーヌ ends in ヌ. The 에게 -> 에 in that same line was taken: に marks where the spirit is.
 - 136 of the 211 untouched suggestions are menu strings inside E5 choice bodies, which cannot be inserted until the row-by-row repair exists. They are not lost, only blocked.
 - Rebuilt: `story_bulk_v124_patch_only.zip` SHA-256 `D02E3459157272AD1F3B32A85048BCA6C99DF955EF224B418661F1C08FED9222`, `story_ui_v125_yongsa_patch_only.zip` SHA-256 `52453B5AC209F2A562A0075A35BB84D14891C060DFA484B9747C4BDEC685FF9F`. Ship v125.
+
+2026-08-02 - a local page for editing the translation
+- Added `02_scripts/review_server.py`. `python 02_scripts/review_server.py` opens a browser on all 2,650 lines: Japanese above, Korean in an editable box, and the byte budget beside it.
+- The budget is the point. A line is written back into the bytes the Japanese occupied; if it no longer fits it must take an external slot, and a file has 79. The count updates as you type, from the same character-to-code table the builder reads out of the built archive, so an edit that will not fit says so before it is saved.
+- Filters: by file, free text over Korean and Japanese, and by state -- edited, over budget, needs a slot, mixed register, choice body.
+- Saving writes only the Korean column and keeps the previous file as `script_translated_full.csv.gui.bak`. The file, offset and Japanese are what the builder keys on and are never written.
+- Fixed the same token-boundary trap that cost v122 a build: both this and `plan_bulk_insertion.py` were testing for 0xE5 as a raw byte, which also matches the second byte of a two-byte glyph. `has_marker` now walks the stream. 12 bodies were being refused for choices they do not contain; blocked lines fall from 104 to 92 and 13 more reach a slot.
+- Rebuilt: `story_bulk_v124_patch_only.zip` SHA-256 `E7CB4C8E0D4F0EAF0BF5A11BC90A9F0F8B4A5A8DBBA9AC7F1CD3F3F32E39B0F1` is superseded; see the report for the current digest. Ship v125.
