@@ -949,3 +949,11 @@
 - The START icon is correct again, confirming that removing the font-page plane write fixed it.
 - `bible_current.txt` promoted to v119. v116 remains the fallback.
 - Two findings recorded, neither caused by this work: the skill-range overlay regression from v103 is still present, and `큐` (index 1338) is stored as a hand-drawn glyph rather than a gulim render.
+
+2026-08-02 - bulk insertion planner
+- Added `02_scripts/plan_bulk_insertion.py`. It decides, for all 2,650 translated lines at once, whether each goes in place or moves to an E2 external slot, and writes `05_docs/bulk_insertion_manifest.csv` plus `01_work/analysis/bulk_insertion_plan.txt`. It writes no game data.
+- Result: 366 lines fit in place, 1,800 get a slot, 380 need a small trim, 104 are blocked. 2,166 of 2,650 have a place to go with no editing at all.
+- The 380 are not blocked work. Their files ran out of slots, so slots went to the lines that overflow most and these are left with a measured deficit: median 10 bytes, worst 42, across 11 files. C2/SC0B6.DAT accounts for 92 of them.
+- The 104 blocked are 47 bodies that mix prose with E5 choices, which cannot take `capacity - 2` metadata because the skip would swallow the choices, and 57 lines containing characters with no code, mostly Latin runs like HP, MP, LR and some mojibake in the translation table.
+- The encoder is read out of the built archive. Punctuation and Latin cannot be named that way because the rendered-glyph table only holds Hangul, so those come from the charmaps but are accepted only after resolving the declared code through the decoder's arithmetic and confirming the cell it lands on is non-blank in this build.
+- The translation touches 160 files; only 75 are in the v119 archive. The remaining 85 come from `01_work` and would become new archive members.
