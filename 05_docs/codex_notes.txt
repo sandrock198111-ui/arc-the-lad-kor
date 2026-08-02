@@ -992,3 +992,34 @@ Full 104-slot resident-store probe boundary - 2026-08-02
 - v117 copies the current bitmap of each selected virtual character into exactly one resident position and rewrites that character's lookup entry to the copied position. It includes every one of the 57 pre-existing P6 users before adding 47 ordinary users, so no existing user is left pointing at overwritten test data.
 - Test pages 1-2 cover all 52 positions in strip A; pages 3-4 cover all 52 positions in strip B. `01_work/analysis/ui_hud_e7_v117_104slot_story_probe/reference.png` is the visual answer sheet and `reference.csv` records every virtual code, source index and target index.
 - This is a diagnostic build, not a translation build. It intentionally replaces the first four S1011 external messages and must not become the accepted baseline until all four pages match and the scene advances after page 4.
+
+VRAM texture page 15,1 occupancy - 2026-08-02
+- Measured over 99 save states. The game draws into exactly two blocks inside the page: y 268..287 across nearly the full width, and y 300..319 at x 960..999. Together 1207 halfwords.
+- y 256..267 and y 320..479 are free in every state surveyed. The resident strips occupy y 480..491 and y 500..511.
+- Nine save states are not enough to survey this page. Nine v118 states alone show it entirely free; the 88 older states are what reveal the two blocks. Any future free-space claim must state how many states it rests on.
+
+Save state VRAM location - 2026-08-02
+- The location of VRAM inside a save state cannot be found from the file's internal structure. An even-byte error is a pure horizontal shift of the whole image, and scoring alignment against texture page boundaries yields six candidates exactly one page (64 halfwords) apart.
+- New format (`.sav`): accept only the (RAM base, VRAM base) pair for which the resident strips in reserved RAM equal, row for row, the VRAM rectangles they are uploaded to. Measured VRAM = GPU section + 689, RAM = Bus section + 64.
+- Old format (`.state.bin`): no strips exist. Match hundreds of texture samples taken from an already-anchored VRAM; only one offset produces exact 16-byte matches. Measured VRAM = GPU section + 696.
+- DuckStation `.sav` is a `DUCCT` header followed by a zstd frame at the offset stored at 0xC4, with the screenshot appended after the frame. Python 3.14's standard `compression.zstd` reads it. `02_scripts/extract_savestate_vram.py` does this.
+
+Glyph strip placement rules - 2026-08-02
+- The renderer emits one DR_TPAGE per text object at `0x801A2188..0x801A2198`, but U is written per glyph by the helper into packet byte `0x28`, and V per glyph as `(row * 12) & 0xFF`. A strip anywhere inside the page the objects already select therefore costs only one more row test in the helper, one more V test in the classifier, and one more LoadImage in the frame routine. A strip outside that page would need a tpage primitive per glyph.
+- V must be a multiple of 4 and must avoid the 24 values the base rows produce: the multiples of 12 from 0 to 252, plus 8 and 20. The family V = 4 (mod 12) is clear, and its spacing of 12 matches the strip height so bands do not overlap.
+- At x 960 the U offset is 0, so a band holds up to 21 columns (252 of the page's 256 pixels), which is 84 glyphs.
+- Reserved RAM, not VRAM, is the binding limit: 18 bytes per glyph, 2520 bytes available above the v118 heap base, so at most 140 further glyphs without moving the heap again.
+
+E9/EA lookup table - 2026-08-02
+- The decoder at `0x801A74B8` computes `slot = 254 * (lead - 0xE9) + trail - 1` and indexes the table with no bounds check, so slots up to 507 are reachable.
+- The table cannot grow at `0x801A7520`: the original executable's zero run ends at `0x801A7860` and real game data follows. Moving it costs two words, the `lui`/`ori` pair at `0x801A74E4` and `0x801A74E8`.
+- Confirmed at runtime: a table appended to the reserved block, sourced from a sector appended to PSX.EXE, is carried intact by the boot memcpy. The appended sector only has to survive from the BIOS load until heap initialisation; it must not be used as the table's home, because that address range is live RAM once the game runs.
+
+E9/EA lookup table is full - 2026-08-02
+- v119 consumed slots 456..507. The decoder computes `254 * (lead - 0xE9) + trail - 1`, so 507 is the highest slot it can produce and the table is now completely allocated.
+- A fourth strip therefore cannot be reached by adding a virtual code. Storage would exist but nothing could address it.
+- The way out, if it is ever needed: roughly 300 syllables are stored twice, once at a physical code and once at a virtual E9/EA code pointing at a different index. Those virtual slots are redundant as long as the encoder emits the physical code for that syllable, so they can be repointed. That is an encoder and charmap change, not a renderer change, and it must be verified per syllable before any slot is reused.
+
+Reserved-RAM routines have slack - 2026-08-02
+- The helper allocated at `0x801FE3C4` is 276 bytes but v112 only used 56 of them, so extending its row tests costs nothing. v119's version is 68 bytes.
+- The classifier and the frame routine sit at the end of the block, so growing them only shifts what v118 appended behind them. Strips A and B are ahead of them and keep their addresses through any such change.

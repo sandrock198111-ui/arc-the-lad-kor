@@ -1,0 +1,105 @@
+free space inside texture page 15,1 (halfword x 960..1023, y 256..511)
+
+states surveyed: 9
+  HASH-340476B50F5F94CD_1.sav
+  HASH-340476B50F5F94CD_2.sav
+  HASH-340476B50F5F94CD_3.sav
+  HASH-340476B50F5F94CD_4.sav
+  HASH-340476B50F5F94CD_5.sav
+  HASH-340476B50F5F94CD_6.sav
+  HASH-340476B50F5F94CD_7.sav
+  HASH-340476B50F5F94CD_8.sav
+  HASH-340476B50F5F94CD_resume.sav
+
+A halfword counts as used if ANY state has it non-zero. The two resident strips
+are excluded -- they are ours. Everything else here is the game's.
+
+halfwords in the page   16384
+used by the game        0
+  (with our strips)     833
+
+candidate strip positions -- a band 12 rows tall, y = 256 + a multiple of 4,
+listing runs of free halfwords at least one glyph column (3 halfwords) wide:
+
+  y 256  V=  0   x 960..1023 (21 cols)
+  y 260  V=  4   x 960..1023 (21 cols)
+  y 264  V=  8   x 960..1023 (21 cols)
+  y 268  V= 12   x 960..1023 (21 cols)
+  y 272  V= 16   x 960..1023 (21 cols)
+  y 276  V= 20   x 960..1023 (21 cols)
+  y 280  V= 24   x 960..1023 (21 cols)
+  y 284  V= 28   x 960..1023 (21 cols)
+  y 288  V= 32   x 960..1023 (21 cols)
+  y 292  V= 36   x 960..1023 (21 cols)
+  y 296  V= 40   x 960..1023 (21 cols)
+  y 300  V= 44   x 960..1023 (21 cols)
+  y 304  V= 48   x 960..1023 (21 cols)
+  y 308  V= 52   x 960..1023 (21 cols)
+  y 312  V= 56   x 960..1023 (21 cols)
+  y 316  V= 60   x 960..1023 (21 cols)
+  y 320  V= 64   x 960..1023 (21 cols)
+  y 324  V= 68   x 960..1023 (21 cols)
+  y 328  V= 72   x 960..1023 (21 cols)
+  y 332  V= 76   x 960..1023 (21 cols)
+  y 336  V= 80   x 960..1023 (21 cols)
+  y 340  V= 84   x 960..1023 (21 cols)
+  y 344  V= 88   x 960..1023 (21 cols)
+  y 348  V= 92   x 960..1023 (21 cols)
+  y 352  V= 96   x 960..1023 (21 cols)
+  y 356  V=100   x 960..1023 (21 cols)
+  y 360  V=104   x 960..1023 (21 cols)
+  y 364  V=108   x 960..1023 (21 cols)
+  y 368  V=112   x 960..1023 (21 cols)
+  y 372  V=116   x 960..1023 (21 cols)
+  y 376  V=120   x 960..1023 (21 cols)
+  y 380  V=124   x 960..1023 (21 cols)
+  y 384  V=128   x 960..1023 (21 cols)
+  y 388  V=132   x 960..1023 (21 cols)
+  y 392  V=136   x 960..1023 (21 cols)
+  y 396  V=140   x 960..1023 (21 cols)
+  y 400  V=144   x 960..1023 (21 cols)
+  y 404  V=148   x 960..1023 (21 cols)
+  y 408  V=152   x 960..1023 (21 cols)
+  y 412  V=156   x 960..1023 (21 cols)
+  y 416  V=160   x 960..1023 (21 cols)
+  y 420  V=164   x 960..1023 (21 cols)
+  y 424  V=168   x 960..1023 (21 cols)
+  y 428  V=172   x 960..1023 (21 cols)
+  y 432  V=176   x 960..1023 (21 cols)
+  y 436  V=180   x 960..1023 (21 cols)
+  y 440  V=184   x 960..1023 (21 cols)
+  y 444  V=188   x 960..1023 (21 cols)
+  y 448  V=192   x 960..1023 (21 cols)
+  y 452  V=196   x 960..1023 (21 cols)
+  y 456  V=200   x 960..1023 (21 cols)
+  y 460  V=204   x 960..1023 (21 cols)
+  y 464  V=208   x 960..1023 (21 cols)
+  y 468  V=212   x 960..1023 (21 cols)
+  y 472  V=216   x 960..1023 (21 cols)
+  y 476  V=220   x 960..1023 (21 cols)
+  y 480  V=224   x 960..1023 (21 cols)
+  y 484  V=228   x 960..1023 (21 cols)
+  y 488  V=232   x 960..1023 (21 cols)
+  y 492  V=236   x 960..1023 (21 cols)
+  y 496  V=240   x 960..1023 (21 cols)
+  y 500  V=244   x 960..1023 (21 cols)
+
+widest single positions, most columns first:
+  21 columns =  84 glyphs   x 960  y 500  V=244
+  21 columns =  84 glyphs   x 960  y 496  V=240
+  21 columns =  84 glyphs   x 960  y 492  V=236
+  21 columns =  84 glyphs   x 960  y 488  V=232
+  21 columns =  84 glyphs   x 960  y 484  V=228
+  21 columns =  84 glyphs   x 960  y 480  V=224
+  21 columns =  84 glyphs   x 960  y 476  V=220
+  21 columns =  84 glyphs   x 960  y 472  V=216
+  21 columns =  84 glyphs   x 960  y 468  V=212
+  21 columns =  84 glyphs   x 960  y 464  V=208
+  21 columns =  84 glyphs   x 960  y 460  V=204
+  21 columns =  84 glyphs   x 960  y 456  V=200
+
+Overlapping bands are listed separately; picking one at y removes the bands
+from y-8 to y+8 as options. Choose non-overlapping y values.
+
+Caveat worth keeping: this is what these states show, not what the game can do.
+A rectangle free here can still be drawn into by a scene nobody captured.

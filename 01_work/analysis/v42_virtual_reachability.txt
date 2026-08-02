@@ -1,0 +1,121 @@
+base            : ui_hud_e7_v116_direct_stateless_renderer_patch_only.zip
+v42 rows        : 409
+charmap chars   : 533
+v42-only chars  : 109
+
+  drawn_and_correct            97
+  drawn_but_mismatched         11
+  blank                         1
+  lut_disagrees                64
+  physical_code_addressable   107
+
+per character:
+  개  slot=279  virtual=EA 1A  physical=E2 A1  index=1655  row=19 col=14 plane=3  bitmap=match  lut=ok  phys_addressable=yes
+  갯  slot=280  virtual=EA 1B  physical=E2 AA  index=1664  row=19 col=17 plane=0  bitmap=MISMATCH  lut=-> 1282  phys_addressable=yes
+  겐  slot=281  virtual=EA 1C  physical=E2 AB  index=1665  row=19 col=17 plane=1  bitmap=MISMATCH  lut=-> 1286  phys_addressable=yes
+  곤  slot=282  virtual=EA 1D  physical=E2 AC  index=1666  row=19 col=17 plane=2  bitmap=MISMATCH  lut=-> 1300  phys_addressable=yes
+  골  slot=283  virtual=EA 1E  physical=E2 AD  index=1667  row=19 col=17 plane=3  bitmap=MISMATCH  lut=-> 1311  phys_addressable=yes
+  귀  slot=284  virtual=EA 1F  physical=E2 AE  index=1668  row=19 col=18 plane=0  bitmap=MISMATCH  lut=-> 1240  phys_addressable=yes
+  극  slot=285  virtual=EA 20  physical=E2 AF  index=1669  row=19 col=18 plane=1  bitmap=MISMATCH  lut=-> 1241  phys_addressable=yes
+  껍  slot=286  virtual=EA 21  physical=E2 B0  index=1670  row=19 col=18 plane=2  bitmap=MISMATCH  lut=-> 1242  phys_addressable=yes
+  끈  slot=287  virtual=EA 22  physical=E2 B1  index=1671  row=19 col=18 plane=3  bitmap=BLANK  lut=-> 1243  phys_addressable=yes
+  낫  slot=288  virtual=EA 23  physical=E2 B2  index=1672  row=19 col=19 plane=0  bitmap=MISMATCH  lut=-> 1244  phys_addressable=yes
+  냉  slot=289  virtual=EA 24  physical=E2 B3  index=1673  row=19 col=19 plane=1  bitmap=MISMATCH  lut=-> 1245  phys_addressable=yes
+  뇌  slot=291  virtual=EA 26  physical=E2 B5  index=1675  row=19 col=19 plane=3  bitmap=MISMATCH  lut=-> 1247  phys_addressable=yes
+  능  slot=292  virtual=EA 27  physical=E2 B6  index=1676  row=19 col=20 plane=0  bitmap=match  lut=ok  phys_addressable=yes
+  닷  slot=293  virtual=EA 28  physical=E2 B7  index=1677  row=19 col=20 plane=1  bitmap=match  lut=ok  phys_addressable=yes
+  덴  slot=294  virtual=EA 29  physical=E2 B8  index=1678  row=19 col=20 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  독  slot=295  virtual=EA 2A  physical=E2 B9  index=1679  row=19 col=20 plane=3  bitmap=match  lut=ok  phys_addressable=yes
+  듦  slot=298  virtual=EA 2D  physical=E2 DC  index=1714  row=20 col= 8 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  띄  slot=299  virtual=EA 2E  physical=E2 DD  index=1715  row=20 col= 8 plane=3  bitmap=match  lut=ok  phys_addressable=yes
+  띠  slot=300  virtual=EA 2F  physical=E2 DE  index=1716  row=20 col= 9 plane=0  bitmap=match  lut=ok  phys_addressable=yes
+  락  slot=301  virtual=EA 30  physical=E2 DF  index=1717  row=20 col= 9 plane=1  bitmap=match  lut=ok  phys_addressable=yes
+  랑  slot=302  virtual=EA 31  physical=E2 E0  index=1718  row=20 col= 9 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  랙  slot=303  virtual=EA 32  physical=E2 E1  index=1719  row=20 col= 9 plane=3  bitmap=match  lut=ok  phys_addressable=yes
+  랩  slot=304  virtual=EA 33  physical=E2 E2  index=1720  row=20 col=10 plane=0  bitmap=match  lut=ok  phys_addressable=yes
+  렉  slot=305  virtual=EA 34  physical=E2 E3  index=1721  row=20 col=10 plane=1  bitmap=match  lut=ok  phys_addressable=yes
+  렘  slot=306  virtual=EA 35  physical=E2 E4  index=1722  row=20 col=10 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  렛  slot=307  virtual=EA 36  physical=E2 E5  index=1723  row=20 col=10 plane=3  bitmap=match  lut=ok  phys_addressable=yes
+  렬  slot=308  virtual=EA 37  physical=E2 E6  index=1724  row=20 col=11 plane=0  bitmap=match  lut=ok  phys_addressable=yes
+  뢰  slot=310  virtual=EA 39  physical=E2 E8  index=1726  row=20 col=11 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  룬  slot=311  virtual=EA 3A  physical=E2 E9  index=1727  row=20 col=11 plane=3  bitmap=match  lut=ok  phys_addressable=yes
+  률  slot=312  virtual=EA 3B  physical=E2 EA  index=1728  row=20 col=12 plane=0  bitmap=match  lut=ok  phys_addressable=yes
+  링  slot=313  virtual=EA 3C  physical=E2 EB  index=1729  row=20 col=12 plane=1  bitmap=match  lut=ok  phys_addressable=yes
+  맨  slot=314  virtual=EA 3D  physical=E2 EC  index=1730  row=20 col=12 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  묵  slot=316  virtual=EA 3F  physical=E2 EE  index=1732  row=20 col=13 plane=0  bitmap=match  lut=ok  phys_addressable=yes
+  박  slot=317  virtual=EA 40  physical=E2 EF  index=1733  row=20 col=13 plane=1  bitmap=match  lut=ok  phys_addressable=yes
+  베  slot=319  virtual=EA 42  physical=E2 F1  index=1735  row=20 col=13 plane=3  bitmap=match  lut=ok  phys_addressable=yes
+  벨  slot=320  virtual=EA 43  physical=E2 F2  index=1736  row=20 col=14 plane=0  bitmap=match  lut=ok  phys_addressable=yes
+  벽  slot=321  virtual=EA 44  physical=E2 F3  index=1737  row=20 col=14 plane=1  bitmap=match  lut=ok  phys_addressable=yes
+  붕  slot=322  virtual=EA 45  physical=E2 F4  index=1738  row=20 col=14 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  뷰  slot=323  virtual=EA 46  physical=E2 F5  index=1739  row=20 col=14 plane=3  bitmap=match  lut=ok  phys_addressable=yes
+  블  slot=324  virtual=EA 47  physical=E2 F6  index=1740  row=20 col=15 plane=0  bitmap=match  lut=ok  phys_addressable=yes
+  빙  slot=325  virtual=EA 48  physical=E2 F7  index=1741  row=20 col=15 plane=1  bitmap=match  lut=ok  phys_addressable=yes
+  뿔  slot=326  virtual=EA 49  physical=E2 F8  index=1742  row=20 col=15 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  샘  slot=328  virtual=EA 4B  physical=E2 FA  index=1744  row=20 col=16 plane=0  bitmap=match  lut=ok  phys_addressable=yes
+  샤  slot=329  virtual=EA 4C  physical=E2 FB  index=1745  row=20 col=16 plane=1  bitmap=match  lut=ok  phys_addressable=yes
+  샬  slot=330  virtual=EA 4D  physical=E2 FC  index=1746  row=20 col=16 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  석  slot=331  virtual=EA 4E  physical=E2 FD  index=1747  row=20 col=16 plane=3  bitmap=match  lut=ok  phys_addressable=yes
+  션  slot=334  virtual=EA 51  physical=E3 01  index=1750  row=20 col=17 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  순  slot=336  virtual=EA 53  physical=E3 03  index=1752  row=20 col=18 plane=0  bitmap=match  lut=ok  phys_addressable=yes
+  술  slot=337  virtual=EA 54  physical=E3 04  index=1753  row=20 col=18 plane=1  bitmap=match  lut=ok  phys_addressable=yes
+  싱  slot=338  virtual=EA 55  physical=E3 05  index=1754  row=20 col=18 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  썬  slot=339  virtual=EA 56  physical=E3 06  index=1755  row=20 col=18 plane=3  bitmap=match  lut=ok  phys_addressable=yes
+  암  slot=341  virtual=EA 58  physical=E3 08  index=1757  row=20 col=19 plane=1  bitmap=match  lut=ok  phys_addressable=yes
+  압  slot=342  virtual=EA 59  physical=E3 09  index=1758  row=20 col=19 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  앵  slot=344  virtual=EA 5B  physical=E3 0B  index=1760  row=20 col=20 plane=0  bitmap=match  lut=ok  phys_addressable=yes
+  얼  slot=345  virtual=EA 5C  physical=E3 0C  index=1761  row=20 col=20 plane=1  bitmap=match  lut=ok  phys_addressable=yes
+  업  slot=346  virtual=EA 5D  physical=E3 0D  index=1762  row=20 col=20 plane=2  bitmap=match  lut=ok  phys_addressable=yes
+  염  slot=349  virtual=EA 60  physical=E6 AB  index=2685  row=31 col=20 plane=1  bitmap=match  lut=-> 3361  phys_addressable=yes
+  영  slot=350  virtual=EA 61  physical=E6 AC  index=2686  row=31 col=20 plane=2  bitmap=match  lut=-> 3362  phys_addressable=yes
+  욕  slot=351  virtual=EA 62  physical=E6 AD  index=2687  row=31 col=20 plane=3  bitmap=match  lut=-> 3363  phys_addressable=yes
+  월  slot=352  virtual=EA 63  physical=E6 FE  index=2768  row=32 col=20 plane=0  bitmap=match  lut=-> 3364  phys_addressable=yes
+  윈  slot=353  virtual=EA 64  physical=E7 00  index=2769  row=32 col=20 plane=1  bitmap=match  lut=-> 3365  phys_addressable=no
+  익  slot=354  virtual=EA 65  physical=E7 01  index=2770  row=32 col=20 plane=2  bitmap=match  lut=-> 3366  phys_addressable=yes
+  잎  slot=355  virtual=EA 66  physical=E7 02  index=2771  row=32 col=20 plane=3  bitmap=match  lut=-> 3367  phys_addressable=yes
+  잔  slot=356  virtual=EA 67  physical=E7 53  index=2852  row=33 col=20 plane=0  bitmap=match  lut=-> 3368  phys_addressable=yes
+  젤  slot=357  virtual=EA 68  physical=E7 54  index=2853  row=33 col=20 plane=1  bitmap=match  lut=-> 3369  phys_addressable=yes
+  즌  slot=358  virtual=EA 69  physical=E7 55  index=2854  row=33 col=20 plane=2  bitmap=match  lut=-> 1410  phys_addressable=yes
+  짜  slot=360  virtual=EA 6B  physical=E8 EC  index=3260  row=38 col=17 plane=0  bitmap=match  lut=-> 3371  phys_addressable=yes
+  찍  slot=361  virtual=EA 6C  physical=E8 ED  index=3261  row=38 col=17 plane=1  bitmap=match  lut=-> 3372  phys_addressable=yes
+  참  slot=362  virtual=EA 6D  physical=E8 EE  index=3262  row=38 col=17 plane=2  bitmap=match  lut=-> 3373  phys_addressable=yes
+  창  slot=363  virtual=EA 6E  physical=E8 EF  index=3263  row=38 col=17 plane=3  bitmap=match  lut=-> 3374  phys_addressable=yes
+  책  slot=364  virtual=EA 6F  physical=E8 F0  index=3264  row=38 col=18 plane=0  bitmap=match  lut=-> 3375  phys_addressable=yes
+  척  slot=366  virtual=EA 71  physical=E8 F2  index=3266  row=38 col=18 plane=2  bitmap=match  lut=-> 3377  phys_addressable=yes
+  추  slot=367  virtual=EA 72  physical=E8 F3  index=3267  row=38 col=18 plane=3  bitmap=match  lut=-> 3378  phys_addressable=yes
+  축  slot=368  virtual=EA 73  physical=E8 F4  index=3268  row=38 col=19 plane=0  bitmap=match  lut=-> 3379  phys_addressable=yes
+  츠  slot=369  virtual=EA 74  physical=E8 F5  index=3269  row=38 col=19 plane=1  bitmap=match  lut=-> 3380  phys_addressable=yes
+  층  slot=370  virtual=EA 75  physical=E8 F6  index=3270  row=38 col=19 plane=2  bitmap=match  lut=-> 3381  phys_addressable=yes
+  칸  slot=371  virtual=EA 76  physical=E8 F7  index=3271  row=38 col=19 plane=3  bitmap=match  lut=-> 3382  phys_addressable=yes
+  컬  slot=372  virtual=EA 77  physical=E8 F8  index=3272  row=38 col=20 plane=0  bitmap=match  lut=-> 3383  phys_addressable=yes
+  켈  slot=373  virtual=EA 78  physical=E8 F9  index=3273  row=38 col=20 plane=1  bitmap=match  lut=-> 3384  phys_addressable=yes
+  콘  slot=374  virtual=EA 79  physical=E8 FA  index=3274  row=38 col=20 plane=2  bitmap=match  lut=-> 3385  phys_addressable=yes
+  큐  slot=375  virtual=EA 7A  physical=E8 FB  index=3275  row=38 col=20 plane=3  bitmap=MISMATCH  lut=-> 1338  phys_addressable=yes
+  클  slot=376  virtual=EA 7B  physical=E8 FC  index=3276  row=39 col= 0 plane=0  bitmap=match  lut=-> 3386  phys_addressable=yes
+  탄  slot=377  virtual=EA 7C  physical=E8 FD  index=3277  row=39 col= 0 plane=1  bitmap=match  lut=-> 3387  phys_addressable=yes
+  탈  slot=378  virtual=EA 7D  physical=E8 FE  index=3278  row=39 col= 0 plane=2  bitmap=match  lut=-> 3388  phys_addressable=yes
+  텀  slot=379  virtual=EA 7E  physical=E9 00  index=3279  row=39 col= 0 plane=3  bitmap=match  lut=-> 3389  phys_addressable=no
+  텔  slot=381  virtual=EA 80  physical=E9 02  index=3281  row=39 col= 1 plane=1  bitmap=match  lut=-> 3391  phys_addressable=yes
+  톤  slot=383  virtual=EA 82  physical=E9 04  index=3283  row=39 col= 1 plane=3  bitmap=match  lut=-> 3393  phys_addressable=yes
+  톰  slot=384  virtual=EA 83  physical=E9 05  index=3284  row=39 col= 2 plane=0  bitmap=match  lut=-> 3394  phys_addressable=yes
+  퇴  slot=385  virtual=EA 84  physical=E9 06  index=3285  row=39 col= 2 plane=1  bitmap=match  lut=-> 3395  phys_addressable=yes
+  특  slot=386  virtual=EA 85  physical=E9 07  index=3286  row=39 col= 2 plane=2  bitmap=match  lut=-> 3396  phys_addressable=yes
+  티  slot=387  virtual=EA 86  physical=E9 08  index=3287  row=39 col= 2 plane=3  bitmap=match  lut=-> 3397  phys_addressable=yes
+  팡  slot=388  virtual=EA 87  physical=E9 09  index=3288  row=39 col= 3 plane=0  bitmap=match  lut=-> 3398  phys_addressable=yes
+  패  slot=389  virtual=EA 88  physical=E9 0A  index=3289  row=39 col= 3 plane=1  bitmap=match  lut=-> 3399  phys_addressable=yes
+  팬  slot=390  virtual=EA 89  physical=E9 0B  index=3290  row=39 col= 3 plane=2  bitmap=match  lut=-> 3400  phys_addressable=yes
+  펀  slot=391  virtual=EA 8A  physical=E9 0C  index=3291  row=39 col= 3 plane=3  bitmap=match  lut=-> 3401  phys_addressable=yes
+  폴  slot=392  virtual=EA 8B  physical=E9 0D  index=3292  row=39 col= 4 plane=0  bitmap=match  lut=-> 3402  phys_addressable=yes
+  표  slot=393  virtual=EA 8C  physical=E9 0E  index=3293  row=39 col= 4 plane=1  bitmap=match  lut=-> 3403  phys_addressable=yes
+  필  slot=394  virtual=EA 8D  physical=E9 0F  index=3294  row=39 col= 4 plane=2  bitmap=match  lut=-> 3404  phys_addressable=yes
+  현  slot=395  virtual=EA 8E  physical=E9 10  index=3295  row=39 col= 4 plane=3  bitmap=match  lut=-> 1313  phys_addressable=yes
+  환  slot=397  virtual=EA 90  physical=E9 12  index=3297  row=39 col= 5 plane=1  bitmap=match  lut=-> 3406  phys_addressable=yes
+  획  slot=398  virtual=EA 91  physical=E9 13  index=3298  row=39 col= 5 plane=2  bitmap=match  lut=-> 3407  phys_addressable=yes
+  효  slot=399  virtual=EA 92  physical=E9 14  index=3299  row=39 col= 5 plane=3  bitmap=match  lut=-> 3408  phys_addressable=yes
+  흑  slot=400  virtual=EA 93  physical=E9 15  index=3300  row=39 col= 6 plane=0  bitmap=match  lut=-> 3409  phys_addressable=yes
+  흡  slot=401  virtual=EA 94  physical=E9 16  index=3301  row=39 col= 6 plane=1  bitmap=match  lut=-> 3410  phys_addressable=yes
+  힐  slot=404  virtual=EA 97  physical=E9 19  index=3304  row=39 col= 7 plane=0  bitmap=match  lut=-> 5293  phys_addressable=yes
+  M  slot=405  virtual=EA 98  physical=E9 1A  index=3305  row=39 col= 7 plane=1  bitmap=match  lut=-> 5294  phys_addressable=yes
+  P  slot=406  virtual=EA 99  physical=E9 1B  index=3306  row=39 col= 7 plane=2  bitmap=match  lut=-> 5295  phys_addressable=yes
+  L  slot=407  virtual=EA 9A  physical=E9 1C  index=3307  row=39 col= 7 plane=3  bitmap=match  lut=-> 1317  phys_addressable=yes
+  V  slot=408  virtual=EA 9B  physical=E9 1D  index=3308  row=39 col= 8 plane=0  bitmap=match  lut=-> 5296  phys_addressable=yes

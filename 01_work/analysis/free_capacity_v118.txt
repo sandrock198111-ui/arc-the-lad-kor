@@ -1,0 +1,16 @@
+base                            : ui_hud_e7_v116_direct_stateless_renderer_patch_only.zip
+
+rows 0..23 of the font page:
+  planes holding a glyph        : 1927
+  blank, but original game art  : 80
+  blank, but cursor reservation : 8
+  blank and safe, code reaches  : 1  (1 cells)
+  blank and safe, no code yet   : 0
+
+resident strip A free slots     : 0 / 52
+resident strip B free slots     : 47 / 52
+
+TOTAL FREE, USABLE TODAY        : 48
+
+free planes in safe font-page cells:
+  row 19 col 18  V=228  planes [3]  indices [1671]

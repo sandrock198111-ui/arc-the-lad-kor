@@ -1,0 +1,12 @@
+base            : ui_hud_e7_v116_direct_stateless_renderer_patch_only.zip
+missing          : 79 syllables, 573 occurrences
+slots available  : 48
+assigned         : 48
+still missing    : 31 syllables, 75 occurrences
+
+by storage kind:
+  strip_b       47
+  font_page      1
+
+left for the third strip (rarest tail):
+  혜x5 힌x5 떨x4 취x4 교x3 껴x3 끔x3 럽x3 릿x3 맙x3 썩x3 즉x3 값x2 겼x2 긋x2 꾀x2 듯x2 랜x2 엑x2 엽x2 옮x2 존x2 챔x2 탐x2 탱x2 흘x2 끓x1 덤x1 맵x1 앙x1 큭x1

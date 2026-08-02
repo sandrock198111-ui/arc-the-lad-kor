@@ -1,0 +1,111 @@
+v119 third resident glyph strip
+
+base    ui_hud_e7_v118_strip_b_fill_patch_only.zip
+output  ui_hud_e7_v119_strip_c_patch_only.zip
+        sha256 770E42E6A19CDACF8BF21B8483401673C7451CD67F0BE04023EBB2A8DD50EFE8
+PSX.EXE 585728 bytes, unchanged; COMM.IMG unchanged
+
+strip C   x 961  y 380  V=124  row 53  13 columns  indices 4452..4503
+          tpage untouched; it is inside page 15,1 like strips A and B
+          y 380..391 is free in all 99 surveyed save states
+
+reserved RAM
+  0x801FE3C4 helper          276   row tests 2 -> 3
+  0x801FE4D8 strip A         936   address unchanged
+  0x801FE880 strip B         936   address unchanged
+  0x801FEC28 classifier       48   V tests 2 -> 3
+  0x801FEC58 frame routine    84   LoadImage 2 -> 3
+  0x801FECAC lookup table   1016   moved from 0x801FEC90
+  0x801FF0A4 strip C         936
+  0x801FF44C heap starts here (1556 bytes clear of heap the game uses)
+  one memcpy moves 4232 bytes, was 3268
+
+words changed
+  0x801A22F4  017C03C1  strip C rect x=961 y=380
+  0x801A22F8  000C0027  w=39 h=12
+  0x801A208C  0C07FB16  frame routine -> 0x801FEC58
+  0x801A74E4  3C09801F  lui t1,0x801F
+  0x801A74E8  3529ECAC  ori t1,t1,0xECAC
+  0x801757CC  24061088  memcpy -> 4232
+  0x80175810  2484F448  heap -> 0x801FF44C
+  0x801A2204  unchanged; the classifier did not move
+
+syllables added   52
+  needed by the committed corpus     32
+  needed only if abbreviations are undone  20
+
+verified
+  base archive digest matches v118
+  every assumed word was read back before anything was written
+  456 inherited lookup entries survive unchanged at the new address
+  strips A and B are byte-identical and still at their old addresses
+  the lui/ori pair builds the table address; the memcpy spans the block; the heap follows it
+  all 52 codes resolve to their own index and read their own glyph back
+  no byte outside the block's source and the seven approved words differs from v118
+  the executable did not change size
+
+NOT verified here, needs a cold boot:
+  that strip C reaches VRAM and its glyphs draw
+  that strips A and B still draw with the classifier and frame routine rewritten
+
+still missing after v119, committed corpus (0): 
+still missing if abbreviations are undone (45): 햐흐갇겉굳깃깔낄낌냅높둑뒷럴륨맹멈묻뭉뭡뭣뱅삶색숴슴앉얌욱잣짐짖짝채쳇춤캔컨탓툼팀핫햇횡흉
+
+characters added, most frequent first:
+  혜  EACB  slot 456  index  4452  committed x5  pre x5
+  힌  EACC  slot 457  index  4453  committed x5  pre x5
+  떨  EACD  slot 458  index  4454  committed x4  pre x4
+  취  EACE  slot 459  index  4455  committed x4  pre x3
+  교  EACF  slot 460  index  4456  committed x3  pre x3
+  껴  EAD0  slot 461  index  4457  committed x3  pre x3
+  끔  EAD1  slot 462  index  4458  committed x3  pre x3
+  럽  EAD2  slot 463  index  4459  committed x3  pre x3
+  릿  EAD3  slot 464  index  4460  committed x3  pre x3
+  맙  EAD4  slot 465  index  4461  committed x3  pre x3
+  썩  EAD5  slot 466  index  4462  committed x3  pre x3
+  즉  EAD6  slot 467  index  4463  committed x3  pre x3
+  값  EAD7  slot 468  index  4464  committed x2  pre x2
+  겼  EAD8  slot 469  index  4465  committed x2  pre x2
+  긋  EAD9  slot 470  index  4466  committed x2  pre x2
+  꾀  EADA  slot 471  index  4467  committed x2  pre x2
+  듯  EADB  slot 472  index  4468  committed x2  pre x3
+  랜  EADC  slot 473  index  4469  committed x2  pre x2
+  엑  EADD  slot 474  index  4470  committed x2  pre x2
+  엽  EADE  slot 475  index  4471  committed x2  pre x2
+  옮  EADF  slot 476  index  4472  committed x2  pre x2
+  존  EAE0  slot 477  index  4473  committed x2  pre x2
+  챔  EAE1  slot 478  index  4474  committed x2  pre x2
+  탐  EAE2  slot 479  index  4475  committed x2  pre x2
+  탱  EAE3  slot 480  index  4476  committed x2  pre x2
+  흘  EAE4  slot 481  index  4477  committed x2  pre x2
+  끓  EAE5  slot 482  index  4478  committed x1  pre x1
+  덤  EAE6  slot 483  index  4479  committed x1  pre x1
+  맵  EAE7  slot 484  index  4480  committed x1  pre x1
+  멍  EAE8  slot 485  index  4481  committed x1  pre x1
+  앙  EAE9  slot 486  index  4482  committed x1  pre x1
+  큭  EAEA  slot 487  index  4483  committed x1  pre x1
+  캬  EAEB  slot 488  index  4484  committed x0  pre x25
+  왠  EAEC  slot 489  index  4485  committed x0  pre x11
+  갖  EAED  slot 490  index  4486  committed x0  pre x9
+  깊  EAEE  slot 491  index  4487  committed x0  pre x8
+  념  EAEF  slot 492  index  4488  committed x0  pre x8
+  꿀  EAF0  slot 493  index  4489  committed x0  pre x6
+  뼈  EAF1  slot 494  index  4490  committed x0  pre x5
+  낸  EAF2  slot 495  index  4491  committed x0  pre x4
+  몇  EAF3  slot 496  index  4492  committed x0  pre x4
+  릅  EAF4  slot 497  index  4493  committed x0  pre x3
+  꽤  EAF5  slot 498  index  4494  committed x0  pre x2
+  둬  EAF6  slot 499  index  4495  committed x0  pre x2
+  똑  EAF7  slot 500  index  4496  committed x0  pre x2
+  렁  EAF8  slot 501  index  4497  committed x0  pre x2
+  완  EAF9  slot 502  index  4498  committed x0  pre x2
+  쩔  EAFA  slot 503  index  4499  committed x0  pre x2
+  쩜  EAFB  slot 504  index  4500  committed x0  pre x2
+  컷  EAFC  slot 505  index  4501  committed x0  pre x2
+  픈  EAFD  slot 506  index  4502  committed x0  pre x2
+  핑  EAFE  slot 507  index  4503  committed x0  pre x2
+
+plan 05_docs\v119_slot_assignment.csv
+encoder map 05_docs\korean_charmap_virtual_v119.csv
+
+rebuild with arc1_v104.xml, then run verify_iso_layout.py

@@ -904,3 +904,25 @@
 - Built `03_output/ui_hud_e7_v117_104slot_story_probe_patch_only.zip`, SHA-256 `BC6BA6AD5B898A3E69AA23242643C3B969489497FA8BD0E5190CB262A14BDBD2`.
 - Independent archive audit passed: 79 members in the same order; only `PSX.EXE` and `1/S1011.DAT` differ; sizes are unchanged; all 104 targets are unique; slot tails `21 15 13 28` are preserved.
 - Runtime status is pending. v116 remains the accepted baseline and `bible_current.txt` is not promoted.
+
+2026-08-02 - v118 strip B fill and lookup-table relocation
+- Added `02_scripts/build_ui_hud_e7_v118_strip_b_fill.py`, based on the accepted v116 archive by exact SHA-256. No renderer code is changed.
+- Filled the 47 strip B slots that were being uploaded empty every frame, plus the last safe blank font-page plane, with 48 new syllables. Drawable supply moves from 622 to 670.
+- The E9/EA lookup table moved from `0x801A7520` (409 entries, inside the executable image) to `0x801FEC90` (508 entries, appended to the reserved block). It could not grow in place: the original executable's zero run ends at `0x801A7860` with real game data after it, leaving room for 416 entries against the 456 needed.
+- Four words changed: `0x801A74E4` `lui t1,0x801F`; `0x801A74E8` `ori t1,t1,0xEC90`; `0x801757CC` reserved-block memcpy 2252 -> 3268; `0x80175810` heap base `0x801FEC90` -> `0x801FF088`. Header `t_size` grew by one sector so the BIOS carries the table's source image at `0x801A8FB8`.
+- 508 entries rather than 456 because the decoder at `0x801A74B8` has no bounds check and can compute any slot up to 507. Unused slots point at the blank space glyph.
+- Built `03_output/ui_hud_e7_v118_strip_b_fill_patch_only.zip`, SHA-256 `7A772F56C8674AA09219EF3460B1EC9EB3A771B23D7F5B8EA4FB42583BDD7D3E`. PSX.EXE 583680 -> 585728 bytes; COMM.IMG 31 bytes changed.
+- Added `02_scripts/extract_savestate_vram.py` and `02_scripts/audit_vram_page15_free_space.py`.
+- Froze `99_backup/baselines/ui_hud_e7_v116_runtime_success_2026-08-02/` (accepted) and `99_backup/baselines/ui_hud_e7_v118_static_verified_2026-08-02/` (rollback point).
+- `bible_current.txt` is not promoted. v116 remains the accepted baseline.
+
+2026-08-02 - v119 third resident glyph strip
+- Added `02_scripts/build_ui_hud_e7_v119_strip_c.py`, based on the v118 archive by exact SHA-256.
+- Strip C: x 961, y 380, V=124, row 53, 13 columns, indices 4452..4503. It sits inside texture page 15,1 like strips A and B, so the tpage word at `0x801A2194` is untouched. y 320..479 is free in all 99 surveyed save states; y 380 is the middle of that gap, 61 rows below the occupied block and 77 above strip A.
+- Extended three routines in reserved RAM rather than adding new ones: the helper's row tests 2 -> 3 (it had 220 spare bytes), the classifier's V tests 2 -> 3 (36 -> 48 bytes), and the frame routine's LoadImage calls 2 -> 3 (64 -> 84 bytes). Strips A and B keep their addresses; the lookup table moves behind the grown routines to `0x801FECAC`.
+- Reserved block 3268 -> 4232 bytes, heap base `0x801FF44C`, 1556 bytes clear of heap the game uses. PSX.EXE does not grow: v118's appended sector still has room. COMM.IMG is unchanged.
+- Seven words changed: `0x801A22F4`/`0x801A22F8` strip C rect; `0x801A208C` frame routine call; `0x801A74E4`/`0x801A74E8` lookup lui/ori; `0x801757CC` memcpy length; `0x80175810` heap base. The classifier did not move, so its call at `0x801A2204` is unchanged.
+- 52 syllables added: 32 the committed corpus needs and 20 needed only if the abbreviations are undone. The committed corpus now has no missing syllable at all.
+- Built `03_output/ui_hud_e7_v119_strip_c_patch_only.zip`, SHA-256 `770E42E6A19CDACF8BF21B8483401673C7451CD67F0BE04023EBB2A8DD50EFE8`.
+- The E9/EA lookup table is now full: slots 456..507 are the last ones the decoder can compute. A fourth strip cannot be addressed by a new virtual code and would need redundant slots to be reclaimed first.
+- `bible_current.txt` is not promoted. v116 remains the accepted baseline; runtime verification of v119 is pending.

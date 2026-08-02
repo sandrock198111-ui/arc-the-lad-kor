@@ -1,0 +1,23 @@
+base                              : ui_hud_e7_v116_direct_stateless_renderer_patch_only.zip
+
+syllables the build can draw      : 622
+
+UI text already shipping          : 436 syllables
+story corpus, as committed        : 642 syllables
+story corpus, abbreviations undone: 715 syllables
+
+MISSING, as committed             : 80
+MISSING, abbreviations undone     : 145
+
+drawn but no longer used anywhere : 8   <- recyclable slots
+
+free slots measured in v116        : 48  (47 strip B + 1 font page)
+
+missing, as committed:
+  값견겸겼교권근급긋깐껴꾀끓끔낙낳냈놓덤듣듯등딘땅떨란랜럽료릭릿맙맵멍므백볼빛빠쁘쁜셈슷썩앗앙액엑엽옮잊재존죄즉쨌쩌착찬챔철청취칭캐콜큭탐탱턴톨통페햣혀혜횟훗흘힌
+
+missing, abbreviations undone:
+  갇값갖겉견겸겼교굳권근급긋깃깊깐깔껴꽤꾀꿀끓끔낄낌낙낳낸냅냈념높놓덤둑둬뒷듣듯등딘땅떨똑란랜럴럽렁료륨릅릭릿맙맵맹멈멍몇묻뭉뭡뭣므백뱅볼빛빠뼈쁘쁜삶색셈숴슴슷썩앉앗앙액얌엑엽옮완왠욱잊잣재존죄즉짐짖짝쨌쩌쩔쩜착찬채챔철청쳇춤취칭캐캔캬컨컷콜큭탐탓탱턴톨통툼팀페픈핑핫햇햐햣혀혜횟횡훗흉흐흘힌
+
+recyclable (drawn, unused by story or UI):
+  걷뀝넌듬뵙뿍샅죠

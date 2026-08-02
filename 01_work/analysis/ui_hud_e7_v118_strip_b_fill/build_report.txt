@@ -1,0 +1,97 @@
+v118 fill strip B and the last free font-page plane
+
+base    ui_hud_e7_v116_direct_stateless_renderer_patch_only.zip
+output  ui_hud_e7_v118_strip_b_fill_patch_only.zip
+        sha256 7A772F56C8674AA09219EF3460B1EC9EB3A771B23D7F5B8EA4FB42583BDD7D3E
+PSX.EXE 585728 bytes (grew 2048); last file under the v104 layout, nothing moves
+COMM.IMG 31 bytes changed
+
+syllables added   48  (47 strip B, 1 font page)
+
+lookup table
+  was     0x801A7520  409 entries, in the executable image
+  now     0x801FEC90  508 entries, appended to the reserved block
+  source  0x801A8FB8..0x801A93B0, copied by the boot memcpy
+  entries 409..455 are new; the rest read back as the blank space glyph so no computable slot is undefined
+
+reserved RAM
+  0x801FE3C4 block          2252
+  0x801FEC90 lookup table   1016
+  0x801FF088 heap starts here (2520 bytes clear of heap the game uses)
+
+words changed
+  0x801A74E4  3C09801F  lui t1,0x801F
+  0x801A74E8  3529EC90  ori t1,t1,0xEC90
+  0x801757CC  24060CC4  memcpy length -> 3268
+  0x80175810  2484F084  heap base -> 0x801FF088
+  header 0x1C    0008E800  t_size, so the loader copies the new sector
+
+verified
+  base archive digest matches v116
+  every assumption above was read out of v116 before anything was written
+  409 inherited lookup entries survive unchanged at the new address
+  the rebuilt lui/ori really build the table address, in t1, as lui/ori
+  the memcpy spans exactly the reserved block plus the table, and the heap follows it
+  all 48 codes resolve to their own index and read their own glyph back
+  no byte outside strip B, the four words, the header and the new tail differs from v116
+
+NOT verified here, needs a cold boot on hardware or emulator:
+  that the grown sector survives from the BIOS EXE load until heap initialisation
+  runtime confirmation that all 48 syllables render
+
+characters added, most frequent first:
+  앗  EA9C  index  5297  strip_b
+  빛  EA9D  index  5298  strip_b
+  페  EA9E  index  5299  strip_b
+  료  EA9F  index  5300  strip_b
+  견  EAA0  index  5301  strip_b
+  땅  EAA1  index  5302  strip_b
+  듣  EAA2  index  5303  strip_b
+  볼  EAA3  index  5304  strip_b
+  잊  EAA4  index  5305  strip_b
+  톨  EAA5  index  5306  strip_b
+  놓  EAA6  index  5307  strip_b
+  낙  EAA7  index  5308  strip_b
+  딘  EAA8  index  5309  strip_b
+  찬  EAA9  index  5310  strip_b
+  통  EAAA  index  5311  strip_b
+  빠  EAAB  index  5312  strip_b
+  액  EAAC  index  5313  strip_b
+  턴  EAAD  index  5314  strip_b
+  급  EAAE  index  5315  strip_b
+  란  EAAF  index  5316  strip_b
+  므  EAB0  index  5317  strip_b
+  혀  EAB1  index  5318  strip_b
+  횟  EAB2  index  5319  strip_b
+  낳  EAB3  index  5320  strip_b
+  냈  EAB4  index  5321  strip_b
+  쁜  EAB5  index  5322  strip_b
+  햣  EAB6  index  5323  strip_b
+  훗  EAB7  index  5324  strip_b
+  겸  EAB8  index  5325  strip_b
+  깐  EAB9  index  5326  strip_b
+  등  EABA  index  5327  strip_b
+  셈  EABB  index  5328  strip_b
+  쨌  EABC  index  5329  strip_b
+  캐  EABD  index  5330  strip_b
+  근  EABE  index  5331  strip_b
+  죄  EABF  index  5332  strip_b
+  칭  EAC0  index  5333  strip_b
+  권  EAC1  index  5334  strip_b
+  릭  EAC2  index  5335  strip_b
+  백  EAC3  index  5336  strip_b
+  쁘  EAC4  index  5337  strip_b
+  슷  EAC5  index  5338  strip_b
+  재  EAC6  index  5339  strip_b
+  쩌  EAC7  index  5340  strip_b
+  착  EAC8  index  5341  strip_b
+  철  EAC9  index  5342  strip_b
+  청  EACA  index  5343  strip_b
+  콜  E2B1  index  1671  font_page
+
+encoder map  05_docs\korean_charmap_virtual_v118.csv
+  The 47 strip B codes are lookup-relative.  Story builders derive a COMM.IMG cell
+  from a code with (lead - 0xDD) * 255 + trail + 0xDB, which is meaningless for lead
+  0xE9/0xEA, so these rows must never reach write_glyph_plane.  They are encode-only.
+
+rebuild with arc1_v104.xml, then run verify_iso_layout.py
