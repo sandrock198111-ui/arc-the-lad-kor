@@ -1038,4 +1038,5 @@
 - Filters: by file, free text over Korean and Japanese, and by state -- edited, over budget, needs a slot, mixed register, choice body.
 - Saving writes only the Korean column and keeps the previous file as `script_translated_full.csv.gui.bak`. The file, offset and Japanese are what the builder keys on and are never written.
 - Fixed the same token-boundary trap that cost v122 a build: both this and `plan_bulk_insertion.py` were testing for 0xE5 as a raw byte, which also matches the second byte of a two-byte glyph. `has_marker` now walks the stream. 12 bodies were being refused for choices they do not contain; blocked lines fall from 104 to 92 and 13 more reach a slot.
-- Rebuilt: `story_bulk_v124_patch_only.zip` SHA-256 `E7CB4C8E0D4F0EAF0BF5A11BC90A9F0F8B4A5A8DBBA9AC7F1CD3F3F32E39B0F1` is superseded; see the report for the current digest. Ship v125.
+- The builders had to follow: `build_story_bulk_v124.py` still refused on the raw byte and rejected a body the planner had just allowed, which stopped the build. Both it and the v123 probe now use `has_marker` too.
+- Rebuilt: `story_bulk_v124_patch_only.zip` SHA-256 `7E1430EA0142D5B8CCAD3401CEE20D0E4F0011626A5D6862E5F875C70C4B5D5D`, 2,178 lines placed; `story_ui_v125_yongsa_patch_only.zip` SHA-256 `816686FEC2B33ED746C6BAC2E0AE9601E3B2B280C5C8F1125E65A58CBC488101`. Ship v125.

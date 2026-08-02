@@ -35,7 +35,7 @@ sys.path.insert(0, str(ROOT / "06_tools" / "python_packages"))
 
 from plan_bulk_insertion import (  # noqa: E402
     CHOICE, FILLER, LINEBREAK, SLOT_BASE, SLOT_SIZE, SLOT_TEXT_MAX,
-    build_encoder, disk_id, encode,
+    build_encoder, disk_id, encode, has_marker,
 )
 
 BASE_ZIP = ROOT / "03_output/story_v122_slot_e6_swept_patch_only.zip"
@@ -133,7 +133,7 @@ def main() -> None:
 
             if item["mode"] != "e2":
                 raise SystemExit(f"{name} {item['offset']}: unknown mode {item['mode']}")
-            if CHOICE in raw:
+            if has_marker(raw, CHOICE):
                 raise SystemExit(f"{name} {item['offset']}: E5 body must not take e2")
             if original[offset + capacity:offset + capacity + 2] != bytes(2):
                 raise SystemExit(f"{name} {item['offset']}: body has no 00 00 boundary")
