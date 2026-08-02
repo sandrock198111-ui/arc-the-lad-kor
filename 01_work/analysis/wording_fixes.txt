@@ -7,30 +7,14 @@ wording fixes applied
   already done   31/S3032.DAT 0x47A40
   already done   31/S3031.DAT 0x4810A
   already done   6/S6054.DAT 0x454DC
-  reworded       F/SF021.DAT 0x4813E
-    from  바람의 정령: 그렇다. 봉인된 이백 년 동안 줄곧 인간들이 서로 죽이는 가운데서 오가고 있었지.
-    to    바람의 정령: 그렇다. 봉인된 600년 동안 줄곧 인간들이 서로 죽이는 가운데서 오가고 있었지.
-  reworded       B/SB041.DAT 0x47AAA
-    from  자
-    to    자, 각자 맡은 역할을 다하도록 해라.
-  reworded       4/S4041.DAT 0x479A4
-    from  휴 지쳤어
-    to    나, 이제 지쳤어.
-  reworded       4/S4033.DAT 0x47CDC
-    from  다음 정령은 그레이시누에게. 읽으시겠습니까?|읽는다|읽지 않는다
-    to    다음 정령은 그레이시누에 있다. 읽으시겠습니까?|읽는다|읽지 않는다
-  reworded       1/S1041.DAT 0x48058
-    from  산의 정령: 그렇습니다. 하지만 당신은 언젠가 다시 불을 끄러 오게 됩니다.
-    to    산의 정령: 그렇습니다. 하지만 당신은 다시 한 번 불을 끄러 오게 됩니다.
-  reworded       1/S1041.DAT 0x480F6
-    from  산의 정령: 그것이 당신의 운명이기 때문입니다.
-    to    산의 정령: 그것이 당신의 운명입니다.
-  reworded       21/S2041.DAT 0x47EFE
-    from  에리어 MAP을 열까요?|연다|열지 않는다
-    to    에어리어 맵을 열까요?|연다|열지 않는다
-  reworded       B/SB072.DAT 0x481FE
-    from  다들 그만두!
-    to    다들 그만둬!
+  already done   F/SF021.DAT 0x4813E
+  already done   B/SB041.DAT 0x47AAA
+  already done   4/S4041.DAT 0x479A4
+  already done   4/S4033.DAT 0x47CDC
+  already done   1/S1041.DAT 0x48058
+  already done   1/S1041.DAT 0x480F6
+  already done   21/S2041.DAT 0x47EFE
+  already done   B/SB072.DAT 0x481FE
   already done   21/S2013.DAT 0x47B9A
 
   형님 -> 형   where the Japanese has 兄 but not 兄貴
@@ -87,38 +71,26 @@ wording fixes applied
   베미의정령 -> 은혜의 정령   where the Japanese has 恵みの精霊
 
   무엇이 알고 -> 무엇을 알고   where the Japanese has 何が知りたい
-    changed    21/S2041.DAT 0x48440  승무원: 무엇을 알고 싶으십니까?
-    changed    21/S2042.DAT 0x480D4  초핀: 무엇을 알고 싶으십니까?
-    changed    21/S2045.DAT 0x47ED2  초핀: 무엇을 알고 싶으십니까?
-    changed    21/S2045.DAT 0x48300  초핀: 무엇을 알고 싶으십니까?
-    changed    31/S3013.DAT 0x481EE  승무원: 무엇을 알고 싶으십니까?
-    changed    7/S7012.DAT 0x47D90  초핀: 무엇을 알고 싶으십니까?
 
-  록토르 -> 로크톨   where the Japanese has ロクトル
+  록토르 -> 로크톨   where the Japanese has ロクトール
+    changed    4/S4034.DAT 0x47FD8  그리고 대회 주최자 로크톨에게는 조심하도록 해.
+    changed    7/S7021.DAT 0x49316  안내 방송: 곧 대회 주최자이신 로크톨 님의 인사말이 시작됩니다.
+    changed    7/S7027.DAT 0x485DC  로크톨: 정말 강하셨군요.
 
   땅의 정령 -> 대지의 정령   where the Japanese has 地の精霊
-    changed    4/S4034.DAT 0x47DE2  아크야, 대지의 정령에게서 돌을 받은 모양이구나. 그렇다면 7인의 전사도 모였겠
-    changed    6/S6041.DAT 0x4882E  대지의 정령: 그것을 모양만 따라 하며 계승하니 이렇게 되어 버린 게다.
-    changed    6/S6041.DAT 0x488A2  당신은 대지의 정령?
-    changed    6/S6041.DAT 0x489C2  대지의 정령: 너희 인간만을 위한 것은 아무것도 없다.
-    changed    6/S6041.DAT 0x48A16  대지의 정령: 있는 것은 이 세상에 사는 모든 것이 함께 나누는 것뿐이다.
-    changed    6/S6041.DAT 0x48B6C  대지의 정령: 우리는 언제나 지켜보고 있다.
+
+  땅의 정령 -> 대지의 정령   where the Japanese has 土の精霊
+    changed    32/S3064.DAT 0x47DCE  은혜의 정령: 대지의 정령의 말을 잊지 마세요.
 
   팔렌시아성 -> 팔렌시아 성   where the Japanese has パレンシア城
-    changed    1/S1061.DAT 0x47C3E  아크: 난 마을을 떠날 거야. 팔렌시아 성에 가면 뭔가 알 수 있겠지.
-    changed    21/S2011.DAT 0x4791A  여기가 팔렌시아 성인가...
-    changed    21/S2011.DAT 0x47BAC  병사: 꼬마야, 팔렌시아 성에는 무슨 일이지? 여긴 아이들 놀이터가 아니다!
-    changed    22/S2052.DAT 0x47D9C  병사: 보고드립니다! 몬스터들이 팔렌시아 성으로 진격 중입니다. 곧 성에 도달합
 
   오대 정령 -> 5대 정령   where the Japanese has 5大精霊
-    changed    22/S2057.DAT 0x478F0  국왕: 5대 정령의 돌이라...
 
   군 오피스 -> 군 본부   where the Japanese has 軍オフィス
-    changed    6/S6054.DAT 0x45580  라마다 승려: 수도의 군 본부에는 사실 지하 50층 던전이...
 
   Japanese typography -> Korean
     0 line(s) cleaned
 
-cells changed          26
+cells changed          4
 rows with Korean       2650   (must stay 2650)
 backup                 script_translated_full.csv.bak

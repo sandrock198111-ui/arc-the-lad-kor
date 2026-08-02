@@ -1,25 +1,18 @@
-terminology decisions the translation contradicts (regenerated source)
-
-entries with a decision: 132
-terms contradicted somewhere: 17
-lines listed: 144
-
-count / lines containing the term:
-
-   44 /  50   スメリア -> 스메리아   [place]
-   25 /  25   ミルマーナ -> 미르마나   [place]
-   23 / 121   アーク -> 아크   [character]
-   21 /  21   パレンシア -> 파렌시아   [place]
-    9 /   9   チョンガラ -> 총가라   [character]
-    4 /   4   いのちの木の実 -> 생명나무의 열매   [item]
-    3 /  19   レベル -> 레벨   [stat]
-    3 /   3   幻のこて -> 환상의 장갑   [accessory]
-    3 /   3   サングラス -> 선글래스   [accessory]
-    2 /   2   勇者の証 -> 용자의 증표   [accessory]
-    1 /  17   アララトス -> 아라라토스   [place]
-    1 /   1   荒獅子太鼓 -> 황사자 북   [skill_poco]
-    1 /   1   回復果物 -> 회복 과실   [item]
-    1 /   1   乱れる宝石 -> 요동치는 보석   [accessory]
-    1 /   1   一角獣の角 -> 유니콘의 뿔   [accessory]
-    1 /   1   ケラック -> 케라크   [summon]
-    1 /   1   ねばねば -> 끈끈이   [item]
+terms contradicted: 17, lines: 77
+   23/121  アーク -> 아크
+   21/ 21  パレンシア -> 파렌시아
+    9/  9  チョンガラ -> 총가라
+    4/  4  いのちの木の実 -> 생명나무의 열매
+    3/ 19  レベル -> 레벨
+    3/  3  幻のこて -> 환상의 장갑
+    3/  3  サングラス -> 선글래스
+    2/  2  勇者の証 -> 용자의 증표
+    1/ 50  スメリア -> 스메리아
+    1/ 25  ミルマーナ -> 미르마나
+    1/ 17  アララトス -> 아라라토스
+    1/  1  荒獅子太鼓 -> 황사자 북
+    1/  1  回復果物 -> 회복 과실
+    1/  1  乱れる宝石 -> 요동치는 보석
+    1/  1  一角獣の角 -> 유니콘의 뿔
+    1/  1  ケラック -> 케라크
+    1/  1  ねばねば -> 끈끈이

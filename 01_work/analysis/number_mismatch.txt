@@ -1,9 +1,9 @@
 lines whose Korean does not carry a number its Japanese states
 
 translated lines        2650
-flagged                 60
+flagged                 57
   Korean states some other number instead   14   <- read these first
-  Korean states no number at all            46
+  Korean states no number at all            43
 
 The second group is often fine: a count can be rephrased, or carried by a word
 this does not recognise. The first group is where a wrong figure hides, because
@@ -24,7 +24,7 @@ worst: Japanese says one thing, Korean says another
   21/S2014.DAT 0x47C66   JP 1          KR 3
       병사: 아, 저자는 시내의 경호원일세.
   32/S3063.DAT 0x47D2A   JP 1 5        KR 5
-      베미의 정령: 빛의 정령은 다섯 대정령 가운데서도 가장 인간을 이해하는 정령입니다.
+      은혜의 정령: 빛의 정령은 다섯 대정령 가운데서도 가장 인간을 이해하는 정령입니다.
   4/S4011.DAT 0x48FC2   JP 1          KR 2
       일단 감사는 해 두지.
   5/S5021.DAT 0x47A04   JP 3000       KR 1 3

@@ -2,7 +2,7 @@ v125 the item window says 용사
 
 base    story_bulk_v124_patch_only.zip
 output  story_ui_v125_yongsa_patch_only.zip
-        sha256 52453B5AC209F2A562A0075A35BB84D14891C060DFA484B9747C4BDEC685FF9F
+        sha256 F8CBBADCB7886358F32738BCCEB86F4ADF229339F4FD23B4C8C30A3C4E50C7C3
 
 changed PSX.EXE 0x805CC..0x805CD, two bytes
   E9 C3 -> E0 A5     자 -> 사, in `용자의 증표` at 0x805CA

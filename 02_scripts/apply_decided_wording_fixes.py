@@ -168,8 +168,11 @@ SUBSTITUTIONS = [
     # From a reader's full review, the items that hold up against the source.
     # 何が知りたい takes が in Japanese and 을 in Korean; 무엇이 is ungrammatical here.
     ("何が知りたい", None, "무엇이 알고", "무엇을 알고"),
-    ("ロクトル", None, "록토르", "로크톨"),
+    # The name is written ロクトール with the long mark; a key without it misses it.
+    ("ロクトール", None, "록토르", "로크톨"),
+    # The game writes this spirit both 地の精霊 and 土の精霊; one name in Korean.
     ("地の精霊", None, "땅의 정령", "대지의 정령"),
+    ("土の精霊", None, "땅의 정령", "대지의 정령"),
     ("パレンシア城", None, "팔렌시아성", "팔렌시아 성"),
     ("5大精霊", None, "오대 정령", "5대 정령"),
     # 軍オフィス is a military headquarters; 오피스 reads as a modern office block.
