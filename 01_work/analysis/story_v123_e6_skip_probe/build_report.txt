@@ -1,0 +1,65 @@
+v123 probe: may a plain dialogue body be relocated whole?
+
+base    story_v122_slot_e6_swept_patch_only.zip
+output  story_v123_e6_skip_probe_patch_only.zip
+        sha256 3540433BFA98DFF58C623F79C475F70C5C0869B4E569E6E3D933DE0A87B01CA5
+changed 1/S1021.DAT only. PSX.EXE, COMM.IMG and every other file are v122's.
+
+bodies relocated   29
+slots used         29 of the 29 that were free
+source rows spanned 81
+
+Each body carries a line break the skip jumps over -- the exact thing v121 did
+1,292 times. None of them contains a choice, which is the half of the rule that
+is actually about menus.
+
+what to read in game
+  the early house scene in 1/S1021.DAT, from the first line onward
+  a line drifting down its window, or a sentence starting on the wrong row,
+  is the failure. Ordinary reading with the renderer choosing its own wraps
+  is the pass.
+
+what the answer decides
+  pass  the guard narrows to bodies with choices; 1,510 of the 1,557 it now
+        refuses become insertable with no editing at all
+  fail  the documented repair is required: one E2 per source text row, each
+        skip ending just before that row's E6
+
+verified
+  base archive digest matches v122
+  every body's original bytes match the script table read from the disc archive
+  every body ends at a 00 00 boundary and every slot was empty before writing
+  no byte changed outside the bodies and slots, and no other member changed
+
+rollback: v122
+
+bodies written:
+  0x4785C  slot 50  E2 B4  skip  24  2 rows   39B  아이템이 있습니다. 약초를 발견했습니다.
+  0x47914  slot 51  E2 B5  skip  21  2 rows   37B  아이템이 있습니다. 돌을 발견했습니다.
+  0x479AA  slot 52  E2 B6  skip  35  3 rows   43B  이걸 던지면 웬만한 적은 쓰러뜨릴 수 있겠어.
+  0x47A26  slot 53  E2 B7  skip   9  2 rows   12B  어머니: 아!
+  0x47A82  slot 54  E2 B8  skip  28  2 rows   46B  아이템이 있습니다. 마법의 카트를 발견했습니다.
+  0x47AD6  slot 55  E2 B9  skip  40  4 rows   48B  어머니: 그걸 가져가도 별로 좋은 일은 없을 텐데.
+  0x47B34  slot 56  E2 BA  skip  22  2 rows   32B  그렇진 않을 거야. 그럼 가져갈게.
+  0x47B7E  slot 57  E2 BB  skip  36  3 rows   43B  어머니: 모처럼 준 거니까 꼭 장비해서 쓰렴.
+  0x47CDE  slot 58  E2 BC  skip  36  3 rows   50B  어머니: 아버지의 갑옷과 검은 안쪽 방 상자에 있어.
+  0x47D8A  slot 59  E2 BD  skip  34  3 rows   33B  어머니: 아크... 이것도 가져가렴.
+  0x47F0E  slot 60  E2 BE  skip  19  2 rows   16B  어머니: 아크...
+  0x4807A  slot 61  E2 BF  skip  38  3 rows   48B  아버지의 갑옷과 검이 여기 있는 건 알고 있지만...
+  0x48196  slot 62  E2 C0  skip  36  3 rows   42B  엄마, 그날 밤도 오늘처럼 눈보라가 심했지?
+  0x481F0  slot 63  E2 C1  skip  43  3 rows   72B  오늘 밤 산에 가면 아버지가 우리를 두고 사라진 이유를 알 수 있을 것 
+  0x48250  slot 64  E2 C2  skip  33  3 rows   33B  어머니: 네 아버지는... 죽었단다.
+  0x482A8  slot 65  E2 C3  skip  43  2 rows   65B  아버지가 죽었다니 거짓말이야! 그렇게 강한 분이 쉽게 죽을 리 없어.
+  0x48308  slot 66  E2 C4  skip  33  3 rows   42B  어머니: 산에는 분명 무서운 괴물이 있어...
+  0x48360  slot 67  E2 C5  skip  48  3 rows   44B  괴물이 아버지를 죽였다면 내가 원수를 갚겠어!
+  0x483C6  slot 68  E2 C6  skip  30  3 rows   37B  엄마... 내 눈으로 직접 확인하고 싶어.
+  0x48420  slot 69  E2 C7  skip  15  2 rows   16B  어머니: 아크...
+  0x48512  slot 70  E2 C8  skip  40  3 rows   57B  어머니: 그이가 떠난 지 십 년... 결국 그이 말대로 됐구나.
+  0x485E8  slot 71  E2 C9  skip  31  3 rows   35B  어머니: 여보... 정말 가야만 해요?
+  0x4863C  slot 72  E2 CA  skip  41  4 rows   57B  아버지: 이해해 줘, 포르타. 이 세계의 운명이 걸린 일이야.
+  0x4869A  slot 73  E2 CB  skip  42  3 rows   62B  어머니: 왜 당신이어야 해요...? 나와 아크는 어떻게 하라고요?
+  0x486F8  slot 74  E2 CC  skip  34  3 rows   40B  아버지: 미안하오. 하지만 내가 아니면...
+  0x4874E  slot 75  E2 CD  skip  32  3 rows   48B  어머니: 싫어요! 난 평범한 행복만 있으면 돼요...
+  0x487A2  slot 76  E2 CE  skip  65  4 rows   85B  아버지: 십 년 뒤 오늘, 봉인이 풀리고 산이 다시 날뛸 거다. 그때 아
+  0x48818  slot 77  E2 CF  skip  14  2 rows   26B  어머니: 산이 날뛴다고요?
+  0x4885A  slot 78  E2 D0  skip  34  3 rows   37B  아버지: 봉인됐던 괴물이 나타날 거다.

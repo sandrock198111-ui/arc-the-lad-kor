@@ -1,0 +1,1 @@
+index 208 -> {'glyph index': '208', 'character': 'コ', 'how it was established': 'corrected: bitmap is an open-left bracket (コ), not two horizontal strokes (ニ); confirmed by ポコ and アイコン in context'}

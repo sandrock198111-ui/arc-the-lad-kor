@@ -967,3 +967,10 @@
 - Left out: 380 lines whose file ran out of slots, each needing a small trim (median 10 bytes); 47 bodies mixing prose with E5 choices; 57 lines with characters that have no code.
 - Runtime verification is pending. v119 is unchanged and remains the accepted baseline.
 - Note for the disc build: the archive now has 164 members rather than 79, so `build_iso_layout_v104_exe_at_end.py` must place all of them.
+
+2026-08-02 - regenerated the script tables from the corrected font map
+- `05_docs/script_original_full.csv` still carried decoded Japanese produced before glyph index 208 was corrected from ニ to コ. The map has held the correction for some time; the table was never rebuilt against it.
+- Reran `02_scripts/measure_full_script_requirements.py`. 396 of 2,878 rows had their decoded Japanese change. `ポニ` went from 27 occurrences to 0 and `ポコ` from 0 to 27, which is the visible half of it.
+- Raw bytes changed in zero rows, so the same disc content is being read; only its reading changed. All 2,650 Korean cells survived, none lost.
+- This had to come before any wording work: 14% of the Japanese the translator and the reviewer see was wrong, and correcting a translation against a wrong source is work done twice.
+- The terminology audit in `01_work/analysis/terminology_violations.csv` was measured against the old table and should be rerun.

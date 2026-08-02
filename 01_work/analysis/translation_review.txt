@@ -1,0 +1,40 @@
+translation review export
+
+lines exported            2650
+  with a speaker label    1181
+  without                 1469
+distinct speakers         67
+speakers mixing register  21   <- worth reading first
+
+Register is guessed from the sentence ending. It is a flag, not a verdict:
+a character may change register on purpose, and only a reader can tell that
+from a slip.
+
+speakers whose lines disagree, most lines first:
+  초핀            288 lines   polite 192  plain  96
+  대회 위원          45 lines   polite  37  plain   8
+  베미의 정령         41 lines   polite  26  plain  15
+  대신             40 lines   polite   8  plain  32
+  병사             37 lines   polite  12  plain  25
+  아나운서           33 lines   polite  30  plain   3
+  라마다 승          30 lines   polite  23  plain   7
+  승무원            27 lines   polite  20  plain   7
+  야군             21 lines   polite  11  plain  10
+  아크             18 lines   polite   7  plain  11
+  어머니            17 lines   polite   5  plain  12
+  사류족 남자         17 lines   polite   8  plain   9
+  병사1            13 lines   polite   1  plain  12
+  산의 정령          11 lines   polite   6  plain   5
+  로크톨             9 lines   polite   5  plain   4
+  포코              7 lines   polite   1  plain   6
+  남자              6 lines   polite   4  plain   2
+  안델 대신           5 lines   polite   3  plain   2
+  장로              5 lines   polite   2  plain   3
+  제자              4 lines   polite   3  plain   1
+  승정              3 lines   polite   1  plain   2
+
+story order   05_docs\review_translation_by_story.csv
+by speaker    05_docs\review_translation_by_speaker.csv
+
+Both files carry the same rows and the same columns; only the order differs.
+Edit `05_docs/script_translated_full.csv`, not these -- they are exports.

@@ -1,0 +1,5 @@
+lines whose Japanese contains 兄 : 16
+  형님     6
+  형이     4
+  형      4
+  형의     2

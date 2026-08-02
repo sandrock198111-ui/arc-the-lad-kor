@@ -1,0 +1,29 @@
+terminology decisions not followed by the translation
+
+entries with a decision: 132
+entries the translation contradicts somewhere: 11
+
+count / lines containing the term:
+
+   44 /  50   スメリア -> 스메리아   [place]
+        e.g. 1/S1061.DAT 0x479AA : 수메리아는 조화의 힘으로 일하는 나라. 화이트 가문은 조화를 이루기 위한 실을 짜는 가문.
+   25 /  25   ミルマーナ -> 미르마나   [place]
+        e.g. 21/S2041.DAT 0x47FF8 : 승무원: 아크 님이시군요. 이제 밀마나로 출발하겠습니다만,
+   23 / 121   アーク -> 아크   [character]
+        e.g. 1/S1021.DAT 0x47A26 : 어머니: 아!
+   21 /  21   パレンシア -> 파렌시아   [place]
+        e.g. 1/S1011.DAT 0x4799E : 해가 바뀌면 팔렌시아 성에서 마중이 올 거야. 그게 우리 일족의 규율이야...
+    9 /   9   チョンガラ -> 총가라   [character]
+        e.g. 22/S2046.DAT 0x480B0 : 자자, 이 촌가라 님에게 맡기거라.
+    3 /  19   レベル -> 레벨   [stat]
+        e.g. 1/S1023.DAT 0x47C3C : 그 장소의 괴물은 진행해도 바뀌지 않는다. 원하는 수련 수준에 맞춰 장소를 고르면 된다.
+    3 /   3   サングラス -> 선글래스   [accessory]
+        e.g. C2/SC0B6.DAT 0x46F98 : |슬리플리스 카트|안티헤모지|거울|선글라스
+    2 /   2   勇者の証 -> 용자의 증표   [accessory]
+        e.g. 22/S2055.DAT 0x47B58 : 국왕: 이것은 틀림없이 수메리아 왕가에 전해지는 용사의 증표.
+    1 /  17   アララトス -> 아라라토스   [place]
+        e.g. 6/S6054.DAT 0x450F6 : |밀마|스메|아라라|카델
+    1 /   1   ケラック -> 케라크   [summon]
+        e.g. 4/S4036.DAT 0x48422 : 케락은 언제나 꺼내 두고 레벨 업시키는 편이 좋아.
+    1 /   1   ねばねば -> 끈끈이   [item]
+        e.g. 6/S6054.DAT 0x458CE : |대단함|고장|찌그러진|달라붙음
