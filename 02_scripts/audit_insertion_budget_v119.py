@@ -183,18 +183,28 @@ def main() -> None:
     per_file: Counter = Counter()
     for delta, src, *_ in overflow:
         per_file[src] += delta
-    ESCAPE = 16 * 0x80          # sixteen E2 external slots of 128 bytes, per file
-    absorbable = sum(1 for f, n in per_file.items() if n <= ESCAPE)
+    # 79 slots, not 16. A scene file reserves 0x45000..0x477FF before its dialogue
+    # bodies near 0x47800, which is 79 complete 128-byte slots. Disk IDs 81-A8 cover
+    # slots 0..39 and AA-D0 cover 40..78; A9 is taken by original dialogue.
+    # Some files use part of the bank for real data, so allocation must test each
+    # slot in the actual file and take only fully zero ones.
+    SLOTS_PER_FILE = 79
+    ESCAPE = SLOTS_PER_FILE * 0x80
+    lines_per_file: Counter = Counter(src for _, src, *_ in overflow)
+    absorbable = sum(1 for f, n in lines_per_file.items() if n <= SLOTS_PER_FILE)
     lines += [
         "the escape hatch, and whether it is enough",
         "",
         "A line that does not fit can be moved into an E2 external slot instead of being",
-        f"written in place. There are 16 such slots of {0x80} bytes in a file, {ESCAPE} bytes,",
-        "and the v120 probe used three of them, so the mechanism is proven.",
+        f"written in place. A file has {SLOTS_PER_FILE} slots of {0x80} bytes, {ESCAPE} bytes",
+        "in total. The mechanism is in production use, not a proposal: 387 bodies",
+        "already ship through it.",
         "",
         f"  files with overflow              {len(per_file)}",
-        f"  within one file's slot capacity  {absorbable}",
-        f"  beyond it                        {len(per_file) - absorbable}",
+        f"  fit in that file's slots         {absorbable}",
+        f"  need more slots than exist       {len(per_file) - absorbable}",
+        f"  most bytes any one file needs    {max(per_file.values())}"
+        f" against {ESCAPE} available",
         "",
         "worst files, by total bytes that must go somewhere:",
         *(f"  {n:>6}  {f}" for f, n in per_file.most_common(12)),

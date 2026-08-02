@@ -20,12 +20,14 @@ x11 <x10 Cx10 Tx10 Ex10 >x10 Mx7 Hx5 。x5 ！x3 x3 ·x2 …x2 괄x1 Ax1 ‘x1 
 the escape hatch, and whether it is enough
 
 A line that does not fit can be moved into an E2 external slot instead of being
-written in place. There are 16 such slots of 128 bytes in a file, 2048 bytes,
-and the v120 probe used three of them, so the mechanism is proven.
+written in place. A file has 79 slots of 128 bytes, 10112 bytes
+in total. The mechanism is in production use, not a proposal: 387 bodies
+already ship through it.
 
   files with overflow              152
-  within one file's slot capacity  152
-  beyond it                        0
+  fit in that file's slots         151
+  need more slots than exist       1
+  most bytes any one file needs    1439 against 10112 available
 
 worst files, by total bytes that must go somewhere:
     1439  5/S5013.DAT
