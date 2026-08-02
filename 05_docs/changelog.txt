@@ -982,3 +982,11 @@
 - Added `02_scripts/build_story_bulk_v124.py`, the same applier as v121 but based on v122 so the swept slots are kept. Built `03_output/story_bulk_v124_patch_only.zip`, SHA-256 `656E7BBB9CF15110B0BF3F9E2400F6F77B354D331C482800A0F828CBA8DCBB5F`.
 - 2,166 lines written: 366 in place and 1,800 through E2 slots. 164 members, 85 of them new files taken from `00_original/arc.zip`. PSX.EXE and COMM.IMG are byte-identical to v119.
 - Still out: 380 lines whose file ran out of slots, 47 choice bodies needing the row-by-row repair, 57 lines with characters that have no code.
+
+2026-08-02 - decided wording fixes, and v124 rebuilt
+- Added `02_scripts/apply_decided_wording_fixes.py`. Each edit names its file, offset and the text it expects to find, so a rerun on changed data stops instead of guessing. 18 cells changed; all 2,650 Korean rows survive.
+- 兄 -> 형 in the four lines that still said 형님. The two `兄貴` lines, a subordinate addressing his boss, were deliberately left as 형님: a blanket substitution would have broken them, and 兄貴 is a different word.
+- 勇者 -> 용자 in 13 story lines. The shipping UI uses 용자 25 times and 용사 never, and the terminology table records `勇者の証` as already matching the patch, so the story had drifted, not the table. The user caught this; my earlier recommendation to keep 용사 was taste over the project's own record and was wrong.
+- One line reworded at the user's wording: `22/S2055.DAT 0x478F0`, where the comma now falls where と closes the quoted clause and 것이냐 carries the confirmation that のだな asks for.
+- Rebuilt v124: SHA-256 `F80EFCD7AC7B37180604502612CB0E8292A64B9A0AF2705A1069A6B6CFD76765`. Same 2,166 lines placed; the edits changed no line's insertion mode.
+- Still undecided: the four place and character spellings (スメリア, ミルマーナ, パレンシア, チョンガラ), which the user is checking against another guide.

@@ -1,0 +1,11 @@
+terminology rows for 勇者:
+  {'category': 'accessory', 'japanese': '勇者の盾', 'guidebook': '용사의 방패', 'current_patch': '', 'decision': 'not_in_patch', 'final': '용사의 방패', 'new_glyphs_needed': '', 'reason': '현재 UI 테이블에 해당 문자열 없음', 'note': '', 'page': '10'}
+  {'category': 'accessory', 'japanese': '勇者の証', 'guidebook': '용자의 증표', 'current_patch': '용자의 증표', 'decision': 'already_matches', 'final': '용자의 증표', 'new_glyphs_needed': '', 'reason': '', 'note': '', 'page': '10'}
+
+story lines whose Japanese contains 勇者: 18
+  용사           13
+  용자           5
+
+across all UI tables (raw text count):
+  용자     25
+  용사     0
