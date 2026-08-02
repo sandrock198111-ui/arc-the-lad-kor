@@ -122,6 +122,11 @@ SUBSTITUTIONS = [
     # 僧 alone is not a Korean word for a monk.
     ("ラマダ僧", None, "라마다 승:", "라마다 승려:"),
     ("アークデーモン", None, "아크데몬", "아크 데몬"),
+    # Glyph index 179 was mapped to the katakana ベ on a guess from context. Its bitmap
+    # is a 53-pixel kanji with a 心 radical: it is 恵. So the spirit is 恵みの精霊,
+    # a spirit of blessing, and 베미 was never a name.
+    ("恵みの精霊", None, "베미의 정령", "은혜의 정령"),
+    ("恵みの精霊", None, "베미의정령", "은혜의 정령"),
 ]
 
 # Applied to every Korean cell: Japanese typography that came across with the text.

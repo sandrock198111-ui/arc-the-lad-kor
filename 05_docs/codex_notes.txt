@@ -1080,3 +1080,10 @@ A rule stops new defects; it does not remove old ones - 2026-08-02
 - The archive still carried 38 slots holding 54 of them, written before the rule existed. They were still on screen in v119. The user found one in `32/S3051.DAT` slot 63, between the fourth and fifth syllables of a sentence, and recognised it as a defect that had already cost a lot of work.
 - When a rule is added, sweep the data that was written without it. A guard protects the future; the past needs a migration. `02_scripts/build_story_v122_strip_e6_from_slots.py` is that sweep.
 - Writing the sweep hit the trap the rule warns about in its own right: scanning for the byte 0xE6 rather than for the token `E6 01` found 24 false positives, because 0xE6 also occurs as the second byte of a two-byte glyph. Walk the stream -- 0x01..0xDC one byte, 0xDD.. two bytes -- and judge a byte only at a token boundary.
+
+Glyph index 179 was ベ on a guess; it is 恵 - 2026-08-02
+- The map recorded 179 as the katakana ベ, established as "anchor: appears in a completely decoded corpus string" -- inferred from context, never checked against the glyph.
+- Its bitmap is 53 pixels with a 心 radical under a boxed upper half. ベ is two strokes and would be three or four pixels. The cell is 恵.
+- So `ベみの精霊` was `恵みの精霊`, a spirit of blessing, and 베미 was never a name. 57 lines carried it; 53 now read 은혜의 정령.
+- This is the third map entry found wrong this way, after 208 (ニ for コ). The pattern is the same: an entry justified by context rather than by pixels. Treat "established from context" as provisional and check the bitmap before trusting any name built on it.
+- A reader's review caught this one. The reasoning that found it needs no Japanese: `ベみ` mixes katakana and hiragana inside one word, which real Japanese does not do. A mixed-script word in the decoded corpus is a signal that a glyph is misread.

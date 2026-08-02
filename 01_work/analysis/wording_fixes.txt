@@ -19,36 +19,26 @@ wording fixes applied
   전부 여섯 개 -> 전부 8개   where the Japanese has 楽器は、全部で8つ
 
   전부 여덟 개 -> 전부 8개   where the Japanese has 楽器は、全部で8つ
-    changed    21/S2045.DAT 0x493D4  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
-    changed    31/S3014.DAT 0x483F8  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
-    changed    5/S5013.DAT 0x493C0  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
-    changed    6/S6014.DAT 0x4936C  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
-    changed    7/S7012.DAT 0x48E64  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
-    changed    8/S8013.DAT 0x47E52  초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병
 
   상당히 강한 부대가 될 수 있겠군요 -> 상당히 강한 병사가 될 수 있겠군요   where the Japanese has 楽器は、全部で8つ
 
   네 명의 전사 -> 7인의 전사   where the Japanese has 7人の戦士
 
   일곱 전사 -> 7인의 전사   where the Japanese has 7人の戦士
-    changed    4/S4034.DAT 0x47DE2  아크야, 땅의 정령에게서 돌을 받은 모양이구나. 그렇다면 7인의 전사도 모였겠지
 
   전사 네 명이 -> 전사 7명이   where the Japanese has 7人そろ
 
   전사 일곱 명이 -> 전사 7명이   where the Japanese has 7人そろ
-    changed    6/S6013.DAT 0x480E0  마침내 영혼으로 이어진 전사 7명이 모였다는 말이지.
 
   두 번째 도전 -> 여섯 번째 도전   where the Japanese has 6度目の挑戦
 
   네 번째 도전 -> 7번째 도전   where the Japanese has 7度目の挑戦
 
   일곱 번째 도전 -> 7번째 도전   where the Japanese has 7度目の挑戦
-    changed    6/S6054.DAT 0x46778  라마다 승려: 7번째 도전이시군요. 슬슬 힘들어지셨겠지만, 힘내시는군요.
 
   여섯 번째 도전 -> 8번째 도전   where the Japanese has 8度目の挑戦
 
   여덟 번째 도전 -> 8번째 도전   where the Japanese has 8度目の挑戦
-    changed    6/S6054.DAT 0x46828  라마다 승려: 8번째 도전이시군요. 그러면 이 정도는 어떻겠습니까?
 
   60번째 승리 -> 80번째 승리   where the Japanese has 80回目の勝利
 
@@ -68,9 +58,61 @@ wording fixes applied
 
   아크데몬 -> 아크 데몬   where the Japanese has アークデーモン
 
+  베미의 정령 -> 은혜의 정령   where the Japanese has 恵みの精霊
+    changed    21/S2045.DAT 0x48C0A  초핀: 토요케 숲의 은혜의 정령을 기억하십니까?
+    changed    31/S3014.DAT 0x47C2E  초핀: 토요케 숲의 은혜의 정령을 기억하십니까?
+    changed    32/S3061.DAT 0x47A9C  은혜의 정령: 기다리고 있었습니다, 아크.
+    changed    32/S3061.DAT 0x47B1C  은혜의 정령: 그래요. 20년 전 당신의 아버지를 도와준 뒤로 줄곧 이 날을 기
+    changed    32/S3061.DAT 0x47CB0  은혜의 정령: 요슈아는 이 나라에서 다음 국왕이 될 사람이라는 이유로 하마터면 
+    changed    32/S3061.DAT 0x47D12  은혜의 정령: 심한 상처를 입고 이 숲으로 도망쳐 온 그를 내가 도와주었어요.
+    changed    32/S3061.DAT 0x47D6C  은혜의 정령: 그런데 의식을 되찾은 요슈아의 입에서 나온 것은 죽음을 바라는 말
+    changed    32/S3061.DAT 0x47DDA  은혜의 정령: 그는 인간들끼리의 싸움에 지쳐 있었어요.
+    changed    32/S3061.DAT 0x47E2E  은혜의 정령: 그리고 그로 인해 이 세계가 파괴되어 가는 것에 절망하고 있었지요
+    changed    32/S3061.DAT 0x47EEE  은혜의 정령: 인간은 스스로를 이 세계의 지배자라고 믿고 있습니다.
+    changed    32/S3061.DAT 0x47F46  은혜의 정령: 이 세계에 태어나 문명을 세워 번영하는 것을 당연한 일이라고 생각
+    changed    32/S3061.DAT 0x47FAC  은혜의 정령: 그리고 세계를 자신들의 욕망대로 파괴하기 시작했습니다.
+    changed    32/S3061.DAT 0x48074  은혜의 정령: 요슈아도 같은 말을 했어요. 그래서 나는 그에게 마지막 희망과 시
+    changed    32/S3061.DAT 0x480EC  은혜의 정령: 인간의 미래를 없애지 않기 위해서요.
+    changed    32/S3061.DAT 0x48136  은혜의 정령: 그리고 그는 그 벽을 당신에게 맡기고 싸우고 있습니다.
+    changed    32/S3061.DAT 0x481DE  은혜의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다.
+    changed    32/S3061.DAT 0x48236  은혜의 정령: 당신이 무엇을 보고 어떻게 행동하느냐가 인류의 운명을 바꾸는 겁니
+    changed    32/S3061.DAT 0x48292  은혜의 정령: 이것을 받으세요. 당신에게 전해 주었으면 한다며 요슈아가 맡긴 것
+    changed    32/S3061.DAT 0x48396  은혜의 정령: 당신의 아버지가 길잡이를 보여 줄 겁니다.
+    changed    32/S3062.DAT 0x47D3A  은혜의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다.
+    changed    32/S3062.DAT 0x47D92  은혜의 정령: 당신이 무엇을 보고 어떻게 행동하는지가 인류의 운명을 바꾸는 것입
+    changed    32/S3062.DAT 0x47DEE  은혜의 정령: 이제부터 일어나는 일을 보고, 듣고, 생각해서 행동하는 것입니다.
+    changed    32/S3063.DAT 0x47D2A  은혜의 정령: 빛의 정령은 다섯 대정령 가운데서도 가장 인간을 이해하는 정령입니
+    changed    32/S3063.DAT 0x47E38  은혜의 정령: 그의 말을 잘 되새기고 행동하도록 하세요.
+    changed    32/S3063.DAT 0x47E94  은혜의 정령: 자, 그레이시느로 향하세요.
+    changed    32/S3064.DAT 0x47D2A  은혜의 정령: 모든 것은 자기들만의 것이라는 마음이,
+    changed    32/S3064.DAT 0x47D7E  은혜의 정령: 마침내 싸움으로 인한 빼앗음을 낳습니다.
+    changed    32/S3064.DAT 0x47DCE  은혜의 정령: 땅의 정령의 말을 잊지 마세요.
+    changed    32/S3065.DAT 0x47D2A  은혜의 정령: 해도 비도, 그리고 바람도 모두 이유가 있어서 지금과 같이 있는 
+    changed    32/S3065.DAT 0x47D92  은혜의 정령: 사람에게 편리해도 모든 생물에게 들어맞는 것은 아닙니다. 바람의 
+    changed    32/S3066.DAT 0x47D2A  은혜의 정령: 이 숲도 아리바샤의 사막도, 한 번 무너진 자연의 조화는 부술 때
+    changed    32/S3066.DAT 0x47DA2  은혜의 정령: 그리고 그 사람의 아이는 긴 시간을 거쳐 그 죄의 무게를 알게 됩
+    changed    32/S3066.DAT 0x47E02  은혜의 정령: 하지만 그래서는 이미 때가 지난 것입니다.
+    changed    32/S3066.DAT 0x47E4A  은혜의 정령: 아리바샤의 메마른 땅과 물의 정령의 말을 마음에 새겨 두세요.
+    changed    32/S3067.DAT 0x47D2A  은혜의 정령: 살아 있는 모든 것은 에릴베를 자기 안에 지니고 있습니다.
+    changed    32/S3067.DAT 0x47D86  은혜의 정령: 하지만 사람은 때로 자연에게서, 때로 사람에게서도 빼앗아 자기 에
+    changed    32/S3067.DAT 0x47DF2  은혜의 정령: 에릴베는 이 세계를 돌고 있습니다.
+    changed    32/S3067.DAT 0x47E46  은혜의 정령: 누구 한 사람만이 빼앗아 혼자 가져서는 안 됩니다.
+    changed    32/S3067.DAT 0x47E9C  은혜의 정령: 불의 정령의 모습에 눈물을 흘린 당신들이라면 알 수 있을 겁니다.
+    changed    32/S3068.DAT 0x47E20  은혜의 정령: 지금까지 내 말에 귀를 기울여 주셨습니다.
+    changed    32/S3068.DAT 0x47E76  은혜의 정령: 당신들이라면 인간을 이끌 수 있겠지요.
+    changed    32/S3068.DAT 0x47EE8  은혜의 정령: 자, 나의 선물입니다.
+    changed    32/S3068.DAT 0x47F3A  은혜의 정령: 이제 당신들에게 할 말은 없습니다.
+    changed    32/S3068.DAT 0x47F86  은혜의 정령: 몸소 몸으로 알게 된 경험을 살려 올바른 길을 찾아 나아가세요.
+    changed    32/S3068.DAT 0x47FE8  은혜의 정령: 나는 언제나 보고 있습니다.
+    changed    5/S5013.DAT 0x48BF6  초핀: 토요케 숲의 은혜의 정령을 기억하십니까?
+    changed    6/S6014.DAT 0x48BA2  초핀: 토요케 숲의 은혜의 정령을 기억하십니까?
+    changed    7/S7012.DAT 0x4869A  초핀: 토요케 숲의 은혜의 정령을 기억하십니까?
+
+  베미의정령 -> 은혜의 정령   where the Japanese has 恵みの精霊
+
   Japanese typography -> Korean
     0 line(s) cleaned
 
-cells changed          10
+cells changed          48
 rows with Korean       2650   (must stay 2650)
 backup                 script_translated_full.csv.bak

@@ -1,0 +1,6 @@
+ベみ 포함 행: 57
+  21/S2045.DAT 0x48C0A   앞 20자: チョピン 
+トヨーケの森のベみの精霊を
+
+  ベ 바이트 B4 6D -> 글리프 인덱스 179
+  지도: {'glyph index': '179', 'character': 'ベ', 'how it was established': 'anchor: appears in a completely decoded corpus string'}

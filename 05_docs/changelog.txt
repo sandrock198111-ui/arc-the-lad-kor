@@ -1016,3 +1016,10 @@
 - Digits, not 여덟 and 일곱: 덟 and 곱 have no glyph and the lookup table is full. The Japanese writes them as digits too. Writing them out first cost 10 lines their placement, which is how it was caught.
 - The colon-tightening from earlier was reverted. It returned 1,191 bytes but moved only 7 lines off slots, and the visible change was one 12-pixel gap the user could not see.
 - Builds: `story_bulk_v124_patch_only.zip` SHA-256 `5D249BDDF7F90E1178CEF686677C705B5166E138151E6DE33304EDB837AE132B`; `story_ui_v125_yongsa_patch_only.zip` SHA-256 `DAD65768EB981BB73F4F95C997A75CCB13CDF778445C0AF27A2C3D2CC391841A`. Ship v125.
+
+2026-08-02 - the Bemi spirit is the spirit of blessing
+- A reader's full review supplied 328 suggestions. Against the current table: 79 already match, 38 were fixed differently here, 211 are untouched, and 136 of those 211 are menu strings.
+- The largest single item was 베미의 정령 -> 은혜의 정령, 37 lines. It is not a wording preference: glyph index 179 was mapped to ベ from context and its bitmap is plainly 恵. Corrected the map, regenerated the script tables, and the decoded Japanese now reads 恵み 57 times and ベみ never.
+- Applied the rename to 53 lines. Also corrected 록토르 -> 로크톨 and 땅의 정령 -> 대지의 정령 where the review flagged them.
+- Rebuilt: `story_bulk_v124_patch_only.zip` SHA-256 `00C51999FCF7767A3D2C9F3E69D81473FA0CFC1C1D78A4D14FD6FF8DDCB87E0D`, `story_ui_v125_yongsa_patch_only.zip` SHA-256 `DD9C97105E49F114682292D38178371E85860FF442249907CAD7EA6471ABF5C4`. Ship v125.
+- Still open from the review: 136 menu strings, 57 terminology lines now largely resolved, and the E5 choice bodies which cannot be inserted until the row-by-row repair is built.

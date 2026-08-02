@@ -1,4 +1,4 @@
-﻿glyph index,character,how it was established
+glyph index,character,how it was established
 0, ,"ascii rule: original COMM.IMG audit, index = code - 32"
 1,!,"ascii rule: original COMM.IMG audit, index = code - 32"
 2,"""","ascii rule: original COMM.IMG audit, index = code - 32"
@@ -178,7 +178,7 @@
 176,撃,anchor: appears in a completely decoded corpus string
 177,分,anchor: appears in a completely decoded corpus string
 178,男,anchor: appears in a completely decoded corpus string
-179,ベ,anchor: appears in a completely decoded corpus string
+179,恵,"corrected: the bitmap is a 53-pixel kanji with a 心 radical, not the two-stroke katakana ベ. The old anchor was inferred from context in a decoded string, never checked against the glyph. Confirmed by 恵みの精霊 reading as a phrase where ベみ did not."
 180,む,anchor: appears in a completely decoded corpus string
 181,役,anchor: appears in a completely decoded corpus string
 182,父,anchor: appears in a completely decoded corpus string
