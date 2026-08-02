@@ -56,7 +56,7 @@ sys.path.insert(0, str(ROOT / "06_tools" / "python_packages"))
 from build_story_sf0b1_return_full import get_pixel, render_glyph  # noqa: E402
 
 BASE_ZIP = ROOT / "03_output/ui_hud_e7_v118_strip_b_fill_patch_only.zip"
-BASE_SHA = "7A772F56C8674AA09219EF3460B1EC9EB3A771B23D7F5B8EA4FB42583BDD7D3E"
+BASE_SHA = "71559A8FC99D52A76F3524DA37927879B2A6C77ACF241591A10D887CAE2B8DC5"
 OUTPUT = ROOT / "03_output/ui_hud_e7_v119_strip_c_patch_only.zip"
 PLAN_CSV = ROOT / "05_docs/v119_slot_assignment.csv"
 CHARMAP = ROOT / "05_docs/korean_charmap_virtual_v119.csv"

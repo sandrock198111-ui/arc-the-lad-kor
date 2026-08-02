@@ -46,4 +46,3 @@ char,code_hex,storage,physical_index,note
 착,EAC8,strip_b,5341,"lookup-relative code, encode only"
 철,EAC9,strip_b,5342,"lookup-relative code, encode only"
 청,EACA,strip_b,5343,"lookup-relative code, encode only"
-콜,E2B1,font_page,1671,physical code

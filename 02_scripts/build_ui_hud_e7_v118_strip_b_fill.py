@@ -1,11 +1,17 @@
-"""v118: add 48 syllables without touching a line of renderer code.
+"""v118: add 47 syllables without touching a line of renderer code.
 
 Storage the shipping renderer already reaches, and nothing else:
 
   strip B slots 5..51   47  uploaded from reserved RAM every frame, classifier
                             already answers to its V=244; five slots are in use
-  index 1671             1  row 19 col 18 plane 3 -- the one blank plane left in
-                            a cell the original COMM.IMG never draws into
+
+COMM.IMG is not touched at all.  The first version of this build also wrote one
+syllable into what looked like a free plane in the font page -- index 1671, row 19
+column 18, plane 3.  Plane 3 was indeed empty there, but the cell was not: it holds
+the START button icon in the other three planes.  A 4bpp pixel indexes a CLUT with
+all four planes at once, so setting plane 3 shifted every pixel of that icon to a
+different colour and visibly corrupted it in game.  An empty plane is not free
+space; only an empty cell is.  `cell_is_occupied` now enforces that.
 
 Strip B's free slots need lookup entries and all 409 existing ones point at real
 glyphs, so the table has to grow.  The decoder at 0x801A74B8 computes
@@ -145,6 +151,19 @@ def comm_plane_bitmap(font: bytes | bytearray, index: int) -> tuple[int, ...]:
     )
 
 
+def cell_is_occupied(font: bytes | bytearray, index: int) -> tuple[int, ...]:
+    """Every pixel of the whole 12x12 cell, all four planes together.
+
+    Non-zero anywhere means the cell is drawing something, whatever plane it uses.
+    """
+    row, remainder = divmod(index, IPR)
+    column = remainder // PLANES
+    return tuple(
+        get_pixel(font, column * CELL + x, row * CELL + y)
+        for y in range(CELL) for x in range(CELL)
+    )
+
+
 def write_comm_plane(font: bytearray, index: int, bits: tuple[int, ...]) -> None:
     row, remainder = divmod(index, IPR)
     column, plane = divmod(remainder, PLANES)
@@ -235,6 +254,15 @@ def main() -> None:
         elif row["kind"] == "font_page":
             if any(comm_plane_bitmap(font, index)):
                 raise SystemExit(f"{char}: COMM.IMG index {index} is already occupied")
+            # An empty plane is not an empty cell.  A 4bpp pixel indexes a CLUT with
+            # all four planes at once, so writing into a spare plane of a cell that
+            # still holds art shifts every one of its pixels to a different colour.
+            # v109 and v111 broke glyphs this way; v118 broke the START icon this way,
+            # by checking only the plane it was about to write.
+            if any(cell_is_occupied(font, index)):
+                raise SystemExit(
+                    f"{char}: COMM.IMG index {index} is in a cell that still holds art. "
+                    f"A blank plane there is not free space.")
             write_comm_plane(font, index, bits)
         else:
             raise SystemExit(f"{char}: unknown storage kind {row['kind']!r}")
@@ -316,7 +344,7 @@ def main() -> None:
             ])
 
     lines = [
-        "v118 fill strip B and the last free font-page plane",
+        "v118 fill the empty strip B slots",
         "",
         f"base    {BASE_ZIP.name}",
         f"output  {OUTPUT.name}",

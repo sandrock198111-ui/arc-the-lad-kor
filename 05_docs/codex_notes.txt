@@ -1023,3 +1023,13 @@ E9/EA lookup table is full - 2026-08-02
 Reserved-RAM routines have slack - 2026-08-02
 - The helper allocated at `0x801FE3C4` is 276 bytes but v112 only used 56 of them, so extending its row tests costs nothing. v119's version is 68 bytes.
 - The classifier and the frame routine sit at the end of the block, so growing them only shifts what v118 appended behind them. Strips A and B are ahead of them and keep their addresses through any such change.
+
+Font-page free space: an empty plane is not an empty cell - 2026-08-02
+- COMM.IMG stores four glyphs per 12x12 cell, one per bitplane, but the GPU reads a 4bpp pixel as one CLUT index built from all four planes at once. Writing a glyph into a spare plane of a cell that still holds art does not add a glyph beside it; it recolours the art.
+- Font-page index 1671 (row 19, column 18) looked free because plane 3 was clear across the whole cell. It holds the START button icon in planes 0..2. v118 wrote there and the icon changed colour in game.
+- Any check for a free font-page slot must test the whole cell across all four planes, never the target plane alone. `cell_is_occupied` in `build_ui_hud_e7_v118_strip_b_fill.py` does this.
+- This is the third time the project has made this mistake: v109 and v111 broke glyphs the same way. Treat the 77 "blank planes in cells that still hold art" as permanently unavailable.
+
+Diagnosing a visual regression: get the build boundary first - 2026-08-02
+- When the START icon was reported, I reasoned from the newest change (v119's third strip and its new classifier V) and built a detailed and wrong theory around it. The user then compared v116 against v118 and the real boundary was immediately obvious.
+- Establishing which build first shows a symptom costs one comparison and removes whole branches of speculation. Do it before analysing mechanism.

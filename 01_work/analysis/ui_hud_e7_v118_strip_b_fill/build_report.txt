@@ -1,12 +1,12 @@
-v118 fill strip B and the last free font-page plane
+v118 fill the empty strip B slots
 
 base    ui_hud_e7_v116_direct_stateless_renderer_patch_only.zip
 output  ui_hud_e7_v118_strip_b_fill_patch_only.zip
-        sha256 7A772F56C8674AA09219EF3460B1EC9EB3A771B23D7F5B8EA4FB42583BDD7D3E
+        sha256 71559A8FC99D52A76F3524DA37927879B2A6C77ACF241591A10D887CAE2B8DC5
 PSX.EXE 585728 bytes (grew 2048); last file under the v104 layout, nothing moves
-COMM.IMG 31 bytes changed
+COMM.IMG 0 bytes changed
 
-syllables added   48  (47 strip B, 1 font page)
+syllables added   47  (47 strip B, 0 font page)
 
 lookup table
   was     0x801A7520  409 entries, in the executable image
@@ -32,7 +32,7 @@ verified
   409 inherited lookup entries survive unchanged at the new address
   the rebuilt lui/ori really build the table address, in t1, as lui/ori
   the memcpy spans exactly the reserved block plus the table, and the heap follows it
-  all 48 codes resolve to their own index and read their own glyph back
+  all 47 codes resolve to their own index and read their own glyph back
   no byte outside strip B, the four words, the header and the new tail differs from v116
 
 NOT verified here, needs a cold boot on hardware or emulator:
@@ -87,7 +87,6 @@ characters added, most frequent first:
   착  EAC8  index  5341  strip_b
   철  EAC9  index  5342  strip_b
   청  EACA  index  5343  strip_b
-  콜  E2B1  index  1671  font_page
 
 encoder map  05_docs\korean_charmap_virtual_v118.csv
   The 47 strip B codes are lookup-relative.  Story builders derive a COMM.IMG cell

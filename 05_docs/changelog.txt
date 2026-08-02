@@ -926,3 +926,12 @@
 - Built `03_output/ui_hud_e7_v119_strip_c_patch_only.zip`, SHA-256 `770E42E6A19CDACF8BF21B8483401673C7451CD67F0BE04023EBB2A8DD50EFE8`.
 - The E9/EA lookup table is now full: slots 456..507 are the last ones the decoder can compute. A fourth strip cannot be addressed by a new virtual code and would need redundant slots to be reclaimed first.
 - `bible_current.txt` is not promoted. v116 remains the accepted baseline; runtime verification of v119 is pending.
+
+2026-08-02 - v118/v119 corrected: the font-page write is removed
+- The user reported that the START button icon changed shape, and identified v118 as the build that did it: v116 draws it correctly.
+- Cause: v118 wrote one syllable into font-page index 1671, row 19 column 18 plane 3. Plane 3 was empty there, but the cell was not -- it holds the START icon in the other three planes. A 4bpp pixel indexes a CLUT with all four planes at once, so setting plane 3 moved every pixel of that icon to a different colour index.
+- The builder's check only looked at the plane it was about to write. It now also requires the whole 12x12 cell to be blank across all four planes (`cell_is_occupied`).
+- Dropped the assignment from `05_docs/v118_slot_assignment.csv`. v118 now adds 47 syllables instead of 48 and leaves COMM.IMG byte-identical to v116, verified.
+- Rebuilt both archives. v118 SHA-256 `71559A8FC99D52A76F3524DA37927879B2A6C77ACF241591A10D887CAE2B8DC5`; v119 SHA-256 `7EFBE624E56433C28295FB51FB56611ABDB06A54678D0D4EFB9FEC9E740F5722`. Both rebuild deterministically.
+- The syllable that lost its slot returns automatically: v119 picks its 52 targets from what is still missing, so it now takes a strip C slot instead.
+- Updated `99_backup/baselines/ui_hud_e7_v118_static_verified_2026-08-02/`.
