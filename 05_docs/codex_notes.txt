@@ -1087,3 +1087,9 @@ Glyph index 179 was ベ on a guess; it is 恵 - 2026-08-02
 - So `ベみの精霊` was `恵みの精霊`, a spirit of blessing, and 베미 was never a name. 57 lines carried it; 53 now read 은혜의 정령.
 - This is the third map entry found wrong this way, after 208 (ニ for コ). The pattern is the same: an entry justified by context rather than by pixels. Treat "established from context" as provisional and check the bitmap before trusting any name built on it.
 - A reader's review caught this one. The reasoning that found it needs no Japanese: `ベみ` mixes katakana and hiragana inside one word, which real Japanese does not do. A mixed-script word in the decoded corpus is a signal that a glyph is misread.
+
+Verifying a build somebody else made - 2026-08-04
+- Check the claim against the artifact, not against the report. Two claims in the v127/v128 reports did not survive that: the rect table appears to hold only three strips because the fourth rect lives in reserved RAM at 0x801FF834, and the classifier at 0x801FEC28 still tests three V values because the live one was relocated to 0x801FE420. Both looked like failures until the call sites were followed.
+- Follow the call site before concluding a routine is stale. `0x801A2204` names the classifier and `0x8016B5D8` the helper; a copy left at an old address proves nothing either way.
+- The v128 builder finds E5 and E6 by scanning raw bytes rather than walking tokens. Re-checked all 63 bodies both ways and they agreed, so nothing is wrong in this build, but the same shortcut has cost this project three builds elsewhere. Harden it before the next body set.
+- 못 lives at physical E0 F5 / index 1229 and always did. Index 1338 holds the superseded hand-drawn 큐, and lookup slot 98 still points there. Do not repeat the claim that 못 and 큐 share 1338.
