@@ -1,0 +1,56 @@
+Arc the Lad Koreanization Bible Addendum
+2026-08-04 — v128 global battle-choice coverage
+
+Observed regression
+- v127 repaired the battle confirmation visible in supplied savestate slot 7.
+- That state maps to C1/SC051.DAT.
+- Other battle-enabled regions still displayed the older short text:
+  "전투? / 예 / 그만".
+- Cause: the v127 builder hardcoded only C1/SC051.DAT even though the established
+  v0.31 documentation had already proven 63 equivalent choice bodies in nine files.
+
+Established scope
+- C1/SC011.DAT
+- C1/SC021.DAT
+- C1/SC031.DAT
+- C1/SC041.DAT
+- C1/SC051.DAT
+- C1/SC061.DAT
+- C1/SC081.DAT
+- C1/SC091.DAT
+- C2/SC0A1.DAT
+- Seven battle confirmations per file, 63 total.
+
+Accepted wording
+- Prompt: 전투를 시작하시겠습니까?
+- Accept: 시작한다
+- Decline: 돌아간다
+
+Structural rule
+- Never replace a choice body with plain text lines.
+- Start from the untouched Japanese body.
+- Preserve both E5 commands and all E6 commands at their original offsets and values.
+- Replace only:
+  1. the first two bytes with an E2 prompt reference,
+  2. the two-byte first-option span after the first E5,
+  3. the two-byte second-option span after the second E5.
+- The second option retains five original tail bytes, so its E2 slot metadata must
+  skip exactly 5.
+- Prompt skip metadata must be derived from each body's original first E6 position;
+  it is not a universal constant.
+
+v128 result
+- C1/SC051.DAT remains byte-identical to the user-tested v127 repair.
+- The same repair is applied to the remaining 56 choice bodies in eight files.
+- Static audit: 63/63 bodies, exact original E5/E6 geometry.
+- PSX.EXE and COMM.IMG unchanged.
+- No DAT changes size.
+- Output SHA256:
+  E41FDD3A7FEB4B8874E1D05D9C9B77E74928F3CA527C71288F5516CD63CBA200
+
+Runtime verification still required
+- Cold boot v128.
+- Enter any battle-enabled area other than the SC051 region.
+- Confirm the three strings display correctly.
+- Move the cursor through both options and confirm that it does not overlap text.
+- Select both options on separate attempts and verify battle entry/cancel behavior.

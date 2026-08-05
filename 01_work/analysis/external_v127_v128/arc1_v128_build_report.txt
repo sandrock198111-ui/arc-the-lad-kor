@@ -1,0 +1,58 @@
+Arc the Lad 1 Korean patch v128
+All battle-confirmation coverage repair
+
+Base
+  arc1_v127_slots_1_to_7_fixes_patch_only.zip
+  SHA256 1299675CD36485D17AE9348A735CFABB1C163EE5EDF814661AC4845EE9E848BA
+
+Output
+  arc1_v128_all_battle_choices_patch_only.zip
+  SHA256 E41FDD3A7FEB4B8874E1D05D9C9B77E74928F3CA527C71288F5516CD63CBA200
+
+Reason for v128
+  v127 repaired only the runtime state supplied for C1/SC051.DAT.
+  The project documents already identified 63 equivalent battle confirmations
+  across nine files. The other eight files still contained the older short
+  translation such as "전투? / 예 / 그만".
+
+Final displayed text
+  전투를 시작하시겠습니까?
+  시작한다
+  돌아간다
+
+Coverage
+  63/63 choice bodies
+  9/9 battle DAT files
+
+Files
+  C1/SC011.DAT: 7 entries, accept slot 10, decline slot 11, prompt slots 12-18, changed bytes 278
+  C1/SC021.DAT: 7 entries, accept slot 10, decline slot 11, prompt slots 12-18, changed bytes 387
+  C1/SC031.DAT: 7 entries, accept slot 10, decline slot 11, prompt slots 12-18, changed bytes 387
+  C1/SC041.DAT: 7 entries, accept slot 39, decline slot 40, prompt slots 41-47, changed bytes 387
+  C1/SC051.DAT: 7 entries, preserved byte-for-byte from runtime-tested v127
+  C1/SC061.DAT: 7 entries, accept slot 15, decline slot 16, prompt slots 17-23, changed bytes 387
+  C1/SC081.DAT: 7 entries, accept slot 17, decline slot 18, prompt slots 19-25, changed bytes 373
+  C1/SC091.DAT: 7 entries, accept slot 10, decline slot 11, prompt slots 12-18, changed bytes 362
+  C2/SC0A1.DAT: 7 entries, accept slot 10, decline slot 11, prompt slots 12-18, changed bytes 371
+
+Safety and verification
+  - C1/SC051.DAT is byte-identical to v127.
+  - The remaining eight battle DATs are the only changed archive members.
+  - Every choice body is rebuilt from the untouched Japanese arc.zip body.
+  - Every original E5 selection marker remains at the exact original offset/value.
+  - Every original E6 row marker remains at the exact original offset/value.
+  - Prompt and both options use E2 slots.
+  - Prompt skip metadata is calculated independently for each original body.
+  - "시작한다" uses skip 0.
+  - "돌아간다" uses skip 5 to pass the preserved original option tail.
+  - No member changes size.
+  - PSX.EXE and COMM.IMG are byte-identical to v127.
+  - ZIP member order and metadata are preserved.
+  - ZIP readback matches the in-memory build.
+  - A second independent execution produced the same SHA256.
+
+Runtime status
+  - v127: user confirmed the separated 큐 glyph and repaired cross-shaped skill range.
+  - v127 SC051 battle choice: user confirmed the repair was limited to that region.
+  - v128 global battle choices: runtime verification pending in at least one other
+    battle-enabled region.

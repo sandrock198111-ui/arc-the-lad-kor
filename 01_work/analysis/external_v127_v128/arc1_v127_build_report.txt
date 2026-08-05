@@ -1,0 +1,61 @@
+Arc the Lad 1 Korean patch v127 - slots 1..7 combined repair
+
+base    arc1_v126_wording_patch_only.zip
+        sha256 C6152A6FEBAF1DD69398013A58A45E25F880ADBC150256EB9821CA3C42700195
+output  arc1_v127_slots_1_to_7_fixes_patch_only.zip
+        sha256 1299675CD36485D17AE9348A735CFABB1C163EE5EDF814661AC4845EE9E848BA
+
+result
+  slot 1  untranslated soldier line -> 병사: 여기부터는 몬스터가 나오는 위험한 곳입니다.
+  slot 2  큐 no longer shares the old/light physical glyph; it has its own corrected resident glyph
+  slot 3  skill-range cross artwork restored; 46 Korean glyph planes formerly occupying it moved
+          to a fourth resident strip and remapped in the decoder
+  slot 4  은혜의 정령: 자, 토우빌로 향하십시오.
+  slot 5  만능약을 손에 넣었다. left unchanged; 70 translated acquisition messages use the same
+          narration pattern `...을/를 손에 넣었다.`
+  slot 6  노인: 몬스터가 나타난 뒤로는 군에서 식량을 사야 한다네.
+  slot 7  seven battle-entry choices -> 전투를 시작하시겠습니까? / 시작한다 / 돌아간다
+          original E5/E6 positions restored exactly, so cursor rows stay tied to the original geometry
+
+changed archive members
+  31/S3024.DAT     changed bytes    57, size 305152
+  C1/SC051.DAT     changed bytes   387, size 305152
+  COMM.IMG         changed bytes   640, size 458752
+  PSX.EXE          changed bytes  2355, size 585728 -> 587776
+  32/S3051.DAT     changed bytes   128, size 305152
+  32/S3062.DAT     changed bytes     7, size 305152
+
+resident glyph repair
+  existing strips A/B/C remain byte-identical
+  strip D: VRAM page 15,1, x=961, y=368, 13 columns, 52 physical slots
+           physical row 52, V=112; 47 slots used (46 relocated glyphs + corrected 큐)
+  strip D reserved RAM 0x801FF44C..0x801FF7F3
+  direct-glyph remap table 0x801FF7F4..0x801FF833
+  new four-upload frame routine 0x801FF83C..0x801FF8A3
+  heap base 0x801FF44C -> 0x801FF8B0; 432 bytes remain before the conservative 0x801FFA60 boundary
+  PSX.EXE grows by one 2048-byte sector and t_size is updated; use the v104 disc layout/XML
+
+verification
+  base digest matched
+  output ZIP read back byte-for-byte and member order is unchanged
+  only the six listed members changed
+  all members except PSX.EXE retain their size; PSX.EXE 585728 -> 587776
+  the 16 skill-range cells match original arc.zip byte-for-byte
+  all 46 active Korean glyph planes from those cells read back identically from strip D
+  every remapped physical index resolves to its assigned strip-D slot
+  all current virtual lookup entries that still name the old rectangle are covered by the remapper
+  큐 lookup alone changes from physical 1338 to strip-D physical 4414; 못 remains at 1338
+  helper recognizes rows 40/63/53/52; classifier recognizes V 224/244/124/112
+  base rows and known icon V values 130/228 are not classified as resident strips
+  R3000 load-delay NOP is present after the remap-table LBU
+  slot 5 is byte-identical to v126
+  seven choice bodies retain every original E5 and E6 position
+  no byte changed outside declared regions
+
+runtime status
+  Static verification passed. DuckStation runtime verification is still required.
+  Build with arc1_v104.xml, cold boot, then load the seven supplied save slots.
+  Save-state loading is for reaching the test screen; verify the final release once again from a cold boot.
+
+rollback
+  arc1_v126_wording_patch_only.zip

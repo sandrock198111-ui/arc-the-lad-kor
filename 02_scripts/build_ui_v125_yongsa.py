@@ -28,8 +28,18 @@ sys.path.insert(0, str(ROOT / "06_tools" / "python_packages"))
 
 from plan_bulk_insertion import bitmap  # noqa: E402
 
-BASE_ZIP = ROOT / "03_output/story_bulk_v124_patch_only.zip"
-OUTPUT = ROOT / "03_output/story_ui_v125_yongsa_patch_only.zip"
+def newest(stem: str) -> Path:
+    """The most recent build of a stage. Outputs carry their digest in the name, so
+    a rebuild never overwrites its predecessor and the chain has to be resolved."""
+    found = sorted((ROOT / "03_output").glob(f"{stem}_*.zip"),
+                   key=lambda p: p.stat().st_mtime)
+    if not found:
+        raise SystemExit(f"no {stem}_*.zip in 03_output; build that stage first")
+    return found[-1]
+
+
+BASE_ZIP = newest("story_v124_bulk")
+OUT_DIR, OUT_STEM = ROOT / "03_output", "story_v125_ship"
 ANALYSIS = ROOT / "01_work/analysis/story_ui_v125_yongsa"
 CACHE = Path(
     r"C:\Users\ADMINI~1\AppData\Local\Temp\claude\E--korean"
@@ -81,7 +91,8 @@ def main() -> None:
         raise SystemExit("the executable changed length")
 
     members["PSX.EXE"] = bytes(exe)
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT = OUT_DIR / f"{OUT_STEM}_building.zip"
     with ZipFile(OUTPUT, "w", zipfile.ZIP_DEFLATED) as archive:
         for info in infos:
             archive.writestr(clone(info), members[info.filename])
@@ -93,12 +104,20 @@ def main() -> None:
     if differing != ["PSX.EXE"]:
         raise SystemExit(f"members changed: {differing}")
 
+    stamp = digest(OUTPUT.read_bytes())
+    final = OUT_DIR / f"{OUT_STEM}_{stamp[:8]}.zip"
+    OUTPUT.replace(final)
+    OUTPUT = final
+    (OUT_DIR / "LATEST.txt").write_text(
+        f"ship this one\n  file    {final.name}\n  sha256  {stamp}\n",
+        encoding="utf-8")
+
     lines = [
         "v125 the item window says 용사",
         "",
         f"base    {BASE_ZIP.name}",
         f"output  {OUTPUT.name}",
-        f"        sha256 {digest(OUTPUT.read_bytes())}",
+        f"        sha256 {stamp}",
         "",
         f"changed PSX.EXE 0x{at + 2:X}..0x{at + 3:X}, two bytes",
         f"  E9 C3 -> E0 A5     자 -> 사, in `용자의 증표` at 0x{at:X}",

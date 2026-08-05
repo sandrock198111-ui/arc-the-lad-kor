@@ -1,8 +1,8 @@
 v125 the item window says 용사
 
-base    story_bulk_v124_patch_only.zip
-output  story_ui_v125_yongsa_patch_only.zip
-        sha256 816686FEC2B33ED746C6BAC2E0AE9601E3B2B280C5C8F1125E65A58CBC488101
+base    story_v124_bulk_8FF53C65.zip
+output  story_v125_ship_9FB173A2.zip
+        sha256 9FB173A2AEDBD674F0581FC62B5CBCD236B9ECF8F4FE6DEA78DAE4B83C9D5576
 
 changed PSX.EXE 0x805CC..0x805CD, two bytes
   E9 C3 -> E0 A5     자 -> 사, in `용자의 증표` at 0x805CA

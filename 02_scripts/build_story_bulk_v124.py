@@ -43,7 +43,7 @@ BASE_SHA = "B090EF58D8CF3B80053DF20689F116B38178963E2A228FC07629436E1E7F5C08"
 ORIGINAL_ZIP = ROOT / "00_original/arc.zip"
 MANIFEST = ROOT / "05_docs/bulk_insertion_manifest.csv"
 ORIGINAL_CSV = ROOT / "05_docs/script_original_full.csv"
-OUTPUT = ROOT / "03_output/story_bulk_v124_patch_only.zip"
+OUT_DIR, OUT_STEM = ROOT / "03_output", "story_v124_bulk"
 ANALYSIS = ROOT / "01_work/analysis/story_bulk_v124"
 
 PSX, COMM = "PSX.EXE", "COMM.IMG"
@@ -168,7 +168,8 @@ def main() -> None:
     if out[PSX] != base[PSX] or out[COMM] != base[COMM]:
         raise SystemExit("the executable or the font changed; this build must not touch them")
 
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT = OUT_DIR / f"{OUT_STEM}_building.zip"
     with ZipFile(OUTPUT, "w", zipfile.ZIP_DEFLATED) as archive:
         for info in base_infos:
             archive.writestr(clone(info), out[info.filename])
@@ -181,12 +182,20 @@ def main() -> None:
         raise SystemExit("the archive did not read back as written")
     changed_from_base = sorted(n for n in base if rebuilt[n] != base[n])
 
+    stamp = digest(OUTPUT.read_bytes())
+    final = OUT_DIR / f"{OUT_STEM}_{stamp[:8]}.zip"
+    OUTPUT.replace(final)
+    OUTPUT = final
+    (OUT_DIR / "LATEST.txt").write_text(
+        f"{OUT_STEM}\n  file    {final.name}\n  sha256  {stamp}\n",
+        encoding="utf-8")
+
     lines = [
         "v124 bulk story insertion",
         "",
         f"base    {BASE_ZIP.name}",
         f"output  {OUTPUT.name}",
-        f"        sha256 {digest(OUTPUT.read_bytes())}",
+        f"        sha256 {stamp}",
         f"members {len(rebuilt)}  ({len(base_infos)} from v122 + {len(added)} new)",
         "",
         f"lines written              {modes['inline'] + modes['e2']}",
