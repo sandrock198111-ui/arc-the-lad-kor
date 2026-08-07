@@ -19,6 +19,12 @@ and never run again on the next build. Run this instead, before burning a play s
                   not come back. This froze two save states.
   choice markers  Every E5 and E6 must sit at the byte offset the original put it, or
                   the menu cursor lands on a different row from the option text.
+  choice width    A row holds 228px and options share rows. In a paragraph an over-long
+                  row just wraps; in a menu the wrapped part lands on the cursor or on
+                  the next option. Two rows regressed this way when the choices were
+                  re-applied and were only found from a screenshot. A row is measured as
+                  drawn: a span beginning with E2 draws its slot and the rest of the span
+                  is skipped, so measuring the bytes between line breaks under-reads it.
   choice E2       A span too small for its Korean holds a two-byte E2 and the text
                   lives in a slot. That is correct and documented; what is checked is
                   that the slot exists and ends.
@@ -95,6 +101,48 @@ def slot_of(disk: int) -> int:
 # 05_docs/japanese_charmap_manual.csv; 0x8299C is monster skill name [2], one byte BF,
 # with nothing around it to narrow it down.
 KNOWN_BURIED = {0x82634, 0x8299C}
+
+
+def drawn_rows(payload: bytes, data: bytes) -> list[list[bytes]]:
+    """The rows a choice body actually draws.
+
+    A span that begins with E2 draws the slot instead, and the rest of that span is
+    skipped -- so its bytes contribute nothing to the row's width while the slot's do.
+    Splitting on line breaks alone reads 204px where the game draws 258px.
+    """
+    out: list[list[bytes]] = []
+    row: list[bytes] = []
+    at_start, skipping = True, False
+    for token in tokens(payload):
+        if len(token) == 1 and token[0] == 0:
+            break
+        if token == LINEBREAK:
+            out.append(row)
+            row, at_start, skipping = [], True, False
+            continue
+        if token[0] == CHOICE:
+            row.append(token)
+            at_start, skipping = True, False
+            continue
+        if at_start and len(token) == 2 and token[0] == 0xE2:
+            slot = slot_of(token[1])
+            if 0 <= slot < SLOT_COUNT:
+                seg = data[SLOT_BASE + slot * SLOT_SIZE:SLOT_BASE + (slot + 1) * SLOT_SIZE]
+                if 0 in seg:
+                    row.extend(tokens(seg[:seg.index(0)]))
+            at_start, skipping = False, True
+            continue
+        at_start = False
+        if not skipping:
+            row.append(token)
+    out.append(row)
+    return out
+
+
+def row_width(row: list[bytes]) -> int:
+    while row and len(row[-1]) == 1 and row[-1][0] == 0x9C:
+        row = row[:-1]
+    return sum(advance(t) for t in row)
 
 
 def buried_pointers(exe: bytes, pure: bytes) -> list[str]:
@@ -196,6 +244,22 @@ def main() -> None:
                 counts["선택지"] += 1
                 if markers(here) != markers(raw):
                     fail["선택지 마커가 원판과 다른 위치"].append(f"{name} 0x{offset:X}")
+                # Comparing widths against the original is not enough: the row holding
+                # 적에게 피해를 입지 않으려면 was 258px against a Japanese row of 288px, so
+                # that comparison called it fine while the game wrapped 다음 페이지 onto
+                # the margin. Asking whether the row draws Hangul is not enough either --
+                # some Japanese cells share a picture with a syllable. What separates them
+                # is whether the row's bytes were rewritten at all: the 69 rows still over
+                # 228px are untranslated and byte-identical to the disc.
+                theirs = drawn_rows(raw, pure)
+                for index, mine in enumerate(drawn_rows(here, data)):
+                    width = row_width(mine)
+                    if width <= ROW_PIXELS:
+                        continue
+                    if index < len(theirs) and mine == theirs[index]:
+                        continue
+                    fail["선택지 줄이 창을 넘음 (커서·다음 칸과 겹침)"].append(
+                        f"{name} 0x{offset:X} 줄{index} {width}px")
                 # An E2 inside a choice body is how a span too small for its Korean is
                 # served: two bytes in the span, the text in a slot. What must not
                 # happen is that it points nowhere, or that the markers move -- the
