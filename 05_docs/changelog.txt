@@ -1107,3 +1107,14 @@
 - Shortening was needed for far fewer lines than it first appeared. 212 lines were blocked for want of a slot, but a line that fits in place needs no slot, so freeing one frees it for another: only 186 lines across five files had to move, 102 of them short by one or two bytes. 99 were fixed by closing a space and one by dropping a full stop; exclamation and question marks were left alone because they carry tone.
 - Ship 03_output/arc1_v142_choices_final_66219F2E.zip, SHA-256 66219F2E159F685318A4557B41C98DD1384857768CCC0682E288C15FAC150D59. Rollback: v141.
 - Dialogue 2,505/2,847 = 87% (story 87%, battle 35% to 89%). UI, items and skills 97%. check_build.py passes.
+
+2026-08-08 - v143 미르마나, v144 실행파일 포인터 복구
+- v143: 세이브 화면의 나라 이름이 밀마나로 남아 있었다. 이 이름은 대본이 아니라 PSX.EXE에 있어서 CSV를 고쳐도 바뀌지 않는다. 포인터 표를 전부 훑어 그 이름을 담은 문자열이 정확히 셋임을 확인하고(0x781B1 세이브 화면, 0x8194D 미르마나 공항, 0x81A8E 미르마나 군본부) 예약 블록 뒤 빈 자리로 옮긴 뒤 포인터 넷을 다시 썼다. 세 글자가 네 글자가 되니 제자리에서는 늘릴 수 없다. SHA-256 2FA1F1300CF9DC47B6B46E07BDE49EE207D66989EE5536CA6B397981D60E1036.
+- 바이트로 찾으면 하나도 못 찾는다. 같은 음절에 철자가 여럿이다. 마는 v138 이후 한 바이트 0xD4, 옛 넓은 범위로 0xE0 0x9E, 조회표로 0xE9 0x52. 세이브 화면 문자열은 넓은 범위로, 지명 둘은 조회표로 적혀 있어서 교체본도 각자 쓰던 공간으로 만들었다.
+- v144: '2음의 문번 그라운드를 배웠다'의 원인은 추출되지 않은 문자열이었다. 이 메시지는 조각 셋을 잇는다. 여는 「(0x82550), 스킬 이름, 닫는 」를 배웠다(0x82554). 여는 조각은 추출된 적이 없어 번역도 이전도 되지 않았고 포인터가 원본 주소 0x82508을 그대로 들고 있는데, 재배치가 0x82507에 죽음의 문을 놓아 그 자리를 덮었다. 포인터는 죽의 둘째 바이트부터 읽어 다른 글자 하나를 그리고 음의 문이 따라온다. 게다가 닫는 조각은 번역되면서 원문 」をおぼえた의 」가 빠져 있었다.
+- 같은 틀인 아이템 획득 메시지가 멀쩡해서 추측 없이 증명됐다. 0x82470이 살아 있는 0x5B를, 0x82474가 」를 손에 넣었습니다를 가리킨다. v144는 스킬 메시지에 그와 같은 괄호를 주고, 같은 바이트인지가 아니라 같은 그림인지 비트맵으로 대조했다. 결과는 「번 그라운드」를 배웠다.
+- 같은 원인으로 셋을 더 고쳤다. 能力(0x82638)은 아이템 메시지 닫는 조각 세 바이트 앞에 놓여 종결자가 없어 '기량」를 손에 넣었습니다'로 읽혔다. 철자도 기량에서 능력으로 바로잡았다 -- 能力은 그대로 능력이고 기량은 의역이었다. 0x82558은 」の로, 옆 조각들이 공격력이·방어력이·민첩성이· 상승이라 「이름」의 …가 상승 문장을 만든다. 0x82630은 勝, 대전 성적 화면 옆자리라 승.
+- 실행파일 UI 문자열은 0xE2 선두로 적지 않는다. 0xE2는 대사에서 슬롯 리다이렉트이고, UI 풀 전체에서 0xE0 선두 566회, 조회표 2,139회인데 0xE2는 한 번도 없다. 능은 코드가 0xE2 0xB6과 0xEA 0x27 둘뿐이라 이번에 실제로 걸렸다. 조회표 쪽을 썼다.
+- 0x82634와 0x8299C는 고치지 않았다. 무슨 글자였는지 모른다. 0x82634는 勝과 能力 사이라 敗일 가능성이 크지만 DD CB가 문자표에 없고, 0x8299C는 몬스터 기술 이름표 [2]의 한 바이트 BF로 좁힐 근거가 없다. 추측으로 포인터를 고치지 않는다.
+- check_build.py에 실행파일 포인터 검사를 넣었다. 원본에서 문자열 첫 바이트를 가리키던 포인터가 지금 다른 문자열 한가운데를 가리키면 실패한다. 아는 둘은 KNOWN_BURIED에 두어 새로 생기는 것만 막는다.
+- 배포본 03_output/arc1_v144_learn_message_85E0E463.zip, SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FBDB0DDA0D04D492B. 되돌리기: v143.

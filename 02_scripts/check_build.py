@@ -22,6 +22,11 @@ and never run again on the next build. Run this instead, before burning a play s
   choice E2       A span too small for its Korean holds a two-byte E2 and the text
                   lives in a slot. That is correct and documented; what is checked is
                   that the slot exists and ends.
+  exe pointers    A UI string the extractor never saw was never relocated either, so its
+                  pointer still holds the original address -- and the repack has since
+                  put somebody else's Korean there. The pointer then starts in the middle
+                  of a glyph. That is what drew `2음의 문번 그라운드를 배웠다`: the 「 that
+                  opens the message had been buried under 죽음의 문.
 
 A failure prints the file and offset, so it can be looked at directly rather than
 hunted for in game.
@@ -84,6 +89,61 @@ def slot_of(disk: int) -> int:
     return disk - 0x81 if disk < 0xA9 else disk - 0x82
 
 
+# Two fragments are buried and cannot be dug out, because what they said is not known.
+# They are listed rather than failed, so that a new one still fails. 0x82634 sits between
+# 勝 and 能力 on the versus-record screen and is probably 敗, but DD CB is not in
+# 05_docs/japanese_charmap_manual.csv; 0x8299C is monster skill name [2], one byte BF,
+# with nothing around it to narrow it down.
+KNOWN_BURIED = {0x82634, 0x8299C}
+
+
+def buried_pointers(exe: bytes, pure: bytes) -> list[str]:
+    """Pointers that began a string on the original disc and now land inside one.
+
+    A string starts right after a terminator, so a target whose preceding byte is not
+    zero begins in the middle of somebody else's text. That test alone is too loud --
+    plenty of strings are preceded by binary rather than by another string, and those
+    read perfectly well. What makes a hit real is that the run it landed in is itself
+    something a pointer points at: two live strings claiming the same bytes, one of
+    which was laid down over the other during the repack.
+    """
+    def targets(data: bytes) -> dict[int, list[int]]:
+        low, high = RAM_TO_FILE, RAM_TO_FILE + len(data)
+        out: dict[int, list[int]] = defaultdict(list)
+        for at in range(0, len(data) - 4, 4):
+            value = struct.unpack_from("<I", data, at)[0]
+            if low <= value < high and 0 < value - low < len(data):
+                out[value - low].append(at)
+        return out
+
+    def run_start(data: bytes, at: int) -> int:
+        while at > 0 and data[at - 1]:
+            at -= 1
+        return at
+
+    here, before = targets(exe), targets(pure)
+    live = {s for s in here if s and exe[s - 1] == 0}
+    out = []
+    for start, ats in sorted(before.items()):
+        if not start or pure[start - 1] != 0:
+            continue
+        if not 1 <= len(pure[start:start + 64].split(b"\0")[0]) <= 40:
+            continue
+        for at in ats:
+            if at >= len(exe) - 4:
+                continue
+            value = struct.unpack_from("<I", exe, at)[0]
+            if not (RAM_TO_FILE <= value < RAM_TO_FILE + len(exe)):
+                continue
+            now = value - RAM_TO_FILE
+            if now == 0 or exe[now - 1] == 0:
+                continue
+            covering = run_start(exe, now)
+            if covering in live and at not in KNOWN_BURIED:
+                out.append(f"포인터 0x{at:X} -> 0x{now:X}, 0x{covering:X} 문자열 한가운데")
+    return out
+
+
 def main() -> None:
     path = Path(sys.argv[1]) if len(sys.argv) > 1 else newest()
     with zipfile.ZipFile(path) as archive:
@@ -113,6 +173,12 @@ def main() -> None:
 
     fail: dict[str, list[str]] = defaultdict(list)
     counts = defaultdict(int)
+
+    if "PSX.EXE" in original:
+        fail["실행파일 포인터가 다른 문자열 한가운데를 가리킴"] += buried_pointers(
+            exe, original["PSX.EXE"])
+        if not fail["실행파일 포인터가 다른 문자열 한가운데를 가리킴"]:
+            del fail["실행파일 포인터가 다른 문자열 한가운데를 가리킴"]
 
     for name, items in bodies.items():
         if name not in blob or name not in original:

@@ -1779,3 +1779,17 @@ ZIP 구성: 기존 14파일 유지, 문서/리포트 없음.
 2026-08-07 | the 185 overflowing UI strings, retracted | Re-measured through the pointer table | WRONG. The pool was repacked long ago with new_offset tracked in ui_system_v39.csv, so comparing bytes at original offsets compares unrelated strings. Walking the pointers, 27 look like overruns and all 27 are byte-identical to the original disc -- binary tables, not text. Nothing was broken and nothing needed fixing.
 
 2026-08-07 | the 199 untranslated lines are not text | Read them | They decode as noise such as 精。ンを？らわた. The extractor caught binary and external tables, which the 2026-07-16 note already recorded as 93 medium-confidence false positives. Translating them would overwrite data the game reads. They must stay as they are, and the 87% dialogue figure is against a denominator that includes them.
+
+2026-08-08 | v143 미르마나 | 포인터 표로 세 문자열을 찾아 옮기고 다시 가리킴 | PASS. check_build.py 통과. 바뀐 바이트 48개가 전부 예약 블록 뒤 빈 자리와 포인터 안. PSX.EXE 크기 그대로, v142와 다른 멤버는 PSX.EXE 뿐. SHA-256 2FA1F1300CF9DC47B6B46E07BDE49EE207D66989EE5536CA6B397981D60E1036. 에뮬레이터 확인은 안 함.
+
+2026-08-08 | v144 실행파일 포인터 다섯 곳 | 최종본에서 픽셀을 뽑아 읽음 | PASS.
+- 스킬 습득: 「 번 (공백) 그 라 운 드 」 를 (공백) 배 웠 다 . = 「번 그라운드」를 배웠다.
+- 세이브 화면: 미 르 마 나
+- 0x82638: 능 력, 뒤에 종결자
+- 0x82558 + 공격력이 + 상승: 」 의 공 격 력 이 (공백) 상 승
+- 0x82630: 승
+check_build.py 통과. SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FBDB0DDA0D04D492B. 에뮬레이터 확인은 안 함 -- 스킬을 배우고 메시지를 읽어야 한다.
+
+2026-08-08 | UI 이전 목록 전수 대조 | ui_*_v39.csv 169행을 빌드와 맞춰봄 | 종결자 없는 것 둘만 실제 문제였다. 能力과 'empty V tail'인데 뒤엣것은 그 뒤로 다시 옮겨진 낡은 행이다. '바이트가 다름' 75곳과 '포인터가 new_offset을 안 가리킴' 12곳은 v39 이후 재배치된 낡은 기록이라 검사 기준으로 쓸 수 없다. 목록은 이력이지 현재 상태가 아니다.
+
+2026-08-08 | 검사기가 제 실수를 잡음 | v144 첫 빌드 | v143이 쓴 마지막 문자열의 종결자 위에 새 글자를 얹었다. 빈 자리를 뒤에서부터 0을 건너뛰며 찾으면 종결자 자체에 서게 된다. 마지막 비영 바이트 + 2로 고쳤다. 새로 넣은 포인터 검사가 바로 이걸 잡아냈다.

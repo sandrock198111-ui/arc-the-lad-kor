@@ -1525,3 +1525,9 @@ v142 current ship candidate - 2026-08-07
 - The build chain from the original disc: v129 remap coverage, v130 to v136 text, v137 choices by geometry, v138 one-byte font, v139 and v141 text with short codes, v140 and v142 choices. Each builder is in 02_scripts and states its base digest.
 - Tools: check_build.py is the release gate. review_editor.py edits every line with the live budgets and a disc column decoded from the newest build. review_not_applied.py lists only what is not in the game. find_line.py finds a line from a fragment of what was on screen -- the fastest path from a player report to the CSV row.
 - Still open: 84 lines needing more than two bytes trimmed, 44 choice spans short of a slot, 93 choice bodies whose source is not dialogue, and 199 extractor false positives that must never be translated.
+
+v144 current ship candidate - 2026-08-08
+- 03_output/arc1_v144_learn_message_85E0E463.zip, SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FBDB0DDA0D04D492B. arc1_v104.xml로 다시 굽고 이미지 이름은 arc1.bin. 되돌리기: v143.
+- v142 위에 둘. v143이 세이브 화면과 지명의 밀마나를 미르마나로, v144가 실행파일 포인터 다섯 곳을 복구했다. 대사 2,505/2,847 = 87%, UI·아이템·기술 97%는 그대로.
+- python 02_scripts/check_build.py 통과. 이번에 실행파일 포인터 검사가 추가됐다 -- 원본에서 문자열 첫 바이트를 가리키던 포인터가 지금 남의 문자열 한가운데를 가리키면 실패한다.
+- 아직 열린 것: 0x82634(勝과 能力 사이, 아마 敗)와 0x8299C(몬스터 기술 이름표 [2])는 원문을 몰라 남겨 뒀고 check_build.py의 KNOWN_BURIED에 적혀 있다. 그 밖에 두 바이트 넘게 줄여야 하는 84줄, 슬롯이 모자란 선택지 44칸, 출처가 대사가 아닌 선택지 본문 93개, 그리고 절대 번역하면 안 되는 추출기 오검출 199줄.
