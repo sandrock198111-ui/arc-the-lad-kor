@@ -1,0 +1,30 @@
+v132 R and 씩, in the slots strip D already had
+
+base    arc1_v131_full_code_space_049E9A2B.zip
+output  arc1_v132_r_and_ssik_099D6D90.zip
+        sha256 099D6D90884FD6D2571154942379270DEF8AAFAA9197C7B0C6C98C9CEE992681
+PSX.EXE 587776 bytes, unchanged; every other member byte-identical to v131
+
+placed
+  R  -> strip D slot 49, remap entry 32, reachable as index 1016
+  씩  -> strip D slot 50, remap entry 33, reachable as index 1017
+
+bytes changed  36, all inside strip D and the 64-byte remap table
+
+verified
+  base digest matches v131
+  neither index is resolved by any token, in the original script or in this
+    build, so nothing was already relying on them
+  both remap entries read 0xFF and both strip D slots were empty before writing
+  R's bitmap is the original disc's own cell at index 732, not a redrawing
+  씩 reads back as 씩 through the glyph table after the write
+  both indices resolve through the remap to the bitmap that was written
+  no byte changed outside strip D and the remap table; PSX.EXE keeps its size
+  only PSX.EXE differs from v131
+
+one strip D slot is still free (51), and 14 remap entries still read 0xFF.
+
+NOT verified here: a cold boot. Read a line with LR 버튼 in it, look for 씩,
+and check the skill-range cross is still whole.
+
+rollback: v131

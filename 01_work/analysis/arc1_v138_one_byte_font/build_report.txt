@@ -1,0 +1,116 @@
+v138 one-byte codes for the commonest syllables
+
+base    arc1_v137_choices_by_geometry_D6AAA475.zip
+output  arc1_v138_one_byte_font_375BCC7F.zip
+        sha256 375BCC7F0D43447D88404D626ADB2ED24353851A381845C4FE6A77D915B39088
+only COMM.IMG differs from v137; PSX.EXE and every DAT are untouched
+
+one-byte codes            220
+  used by a UI string     75
+  used by drawn Korean    101
+  ASCII, digits, marks    26
+  free after all that     86
+
+syllables moved into them 86
+  they are 47% of every Korean character in the script
+
+verified
+  base digest matches v137
+  every code written reads back as the syllable intended
+  no other font cell changed, and COMM.IMG keeps its size
+  only COMM.IMG differs from v137
+
+NOT verified here: a cold boot. These cells held Japanese kana, so any line
+still in Japanese gets worse, and that is expected -- 123 of them were already
+overwritten. What to look at is Korean spacing: 괄, 량 and 덕 have been in low
+cells for a while and render at full width, which is why this is safe.
+
+rollback: v137
+
+codes assigned:
+  45  니  901회
+  46  에  769회
+  4D  의  730회
+  4E  어  609회
+  4F  그  606회
+  51  고  583회
+  52  나  556회
+  53  있  540회
+  56  은  501회
+  59  서  475회
+  5D  시  426회
+  5E  도  418회
+  5F  정  416회
+  61  습  408회
+  65  를  385회
+  66  게  376회
+  68  만  371회
+  6A  사  368회
+  6E  초  347회
+  6F  스  336회
+  71  핀  328회
+  74  해  324회
+  75  오  317회
+  76  수  317회
+  77  대  316회
+  79  야  296회
+  7A  으  272회
+  7B  것  270회
+  7C  들  269회
+  7E  면  254회
+  81  령  248회
+  82  전  248회
+  83  인  234회
+  85  한  234회
+  86  신  233회
+  87  주  233회
+  88  우  221회
+  8A  보  203회
+  8B  요  203회
+  8D  터  199회
+  8E  승  196회
+  91  었  192회
+  92  말  188회
+  93  려  186회
+  94  내  181회
+  96  무  180회
+  97  십  177회
+  98  모  169회
+  99  르  162회
+  9A  경  160회
+  9B  군  160회
+  9D  일  156회
+  9F  힘  153회
+  A1  없  148회
+  A2  입  145회
+  A3  러  144회
+  A5  왕  144회
+  A7  구  141회
+  A8  버  140회
+  AA  물  136회
+  AB  몬  127회
+  AD  데  126회
+  AE  않  126회
+  B2  부  125회
+  B3  병  125회
+  B4  제  123회
+  B5  원  119회
+  B6  회  118회
+  B7  와  117회
+  BB  위  116회
+  BE  네  115회
+  BF  분  115회
+  C1  출  114회
+  C2  되  111회
+  C3  손  110회
+  C5  할  110회
+  C6  음  109회
+  C8  넣  108회
+  CB  유  107회
+  CD  상  107회
+  D1  토  107회
+  D2  변  106회
+  D3  세  105회
+  D9  안  105회
+  DA  운  104회
+  DB  너  103회

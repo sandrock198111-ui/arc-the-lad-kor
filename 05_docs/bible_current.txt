@@ -1503,3 +1503,25 @@ v119 accepted baseline - 2026-08-02
 - Drawable supply is 721 syllables across three strips and the font page. The committed corpus has no missing syllable. 45 remain missing only if every abbreviation is undone.
 - Known, unrelated, and still open: the skill-range overlay draws game icons in place of some range tiles. This is the v103-based regression recorded since v104 and is present on v116 as well; it is not caused by v118 or v119.
 - Known cosmetic: `큐` at index 1338 is the one Korean syllable in the build whose pixels are not a gulim render. It is hand-drawn and visibly lighter than its neighbours.
+
+v129 current ship candidate - 2026-08-05
+- `03_output/arc1_v129_remap_coverage_430F1CFD.zip`, SHA-256 `430F1CFDF91E6C58AEF937C5FBD5099B4CEAF745783EBCD207DF0337AE72B289`, built on v128. Rebuild with `arc1_v104.xml`, keep the image named `arc1.bin`.
+- It is v128 plus 53 bytes: 러 and 뜨 in strip D slots 47 and 48, and remap entries 37 and 39 pointing at them. Nothing else in the archive differs.
+- The four resident strips are now A row 40 V=224 y=480, B row 63 V=244 y=500, C row 53 V=124 y=380, D row 52 V=112 y=368, all at x=961 on texture page 15,1. Strips A, B and C are full at 52 of 52 slots; strip D holds 49 with slots 49, 50 and 51 free.
+- Strip D is addressed through the 64-byte remap table at `0x801FF7F4` (file `0x8F31C`), which covers the 16 skill-range cells at COMM.IMG rows 10..13, columns 2..5. Entry index is `(row-10)*16 + (col-2)*4 + plane`; a value of 0xFF means "draw the cell as it stands" and any other value `s` becomes physical index `4368 + s`.
+- NOT yet verified on a cold boot: look for 러 in ordinary dialogue (그러면, 데리러) and 뜨 in 쓰러뜨리다, and confirm the skill-range cross is still whole.
+
+v130 current ship candidate - 2026-08-05
+- `03_output/arc1_v130_text_reinsert_1BB69ED1.zip`, SHA-256 `1BB69ED14771C40B433A1269239BB04EBCA5B2CA9C297BA2088090387E7A18B3`, built on v129. Rebuild with `arc1_v104.xml`, keep the image named `arc1.bin`.
+- PSX.EXE and COMM.IMG are v129's, byte for byte. Only DAT text changed, in 97 files, with no size change anywhere.
+- The font is reachable only on rows 0..20 plus the four strip rows 40, 52, 53 and 63. Rows 21..39 exist in COMM.IMG and are drawn from the wrong texture page, because the page is chosen per glyph by the classifier and the classifier only tests the four strip V values. `drawable()` in `plan_bulk_insertion.py` is the guard; do not hand out a code that fails it.
+- An external slot holds at most 126 bytes of text. Byte 0x7F is the completion metadata and the terminator has to fit before it.
+- A file does not have 79 free slots. 1,492 slots across the disc hold the game's own data and must never be written. Slots that were empty on the original disc and are no longer referenced may be reclaimed.
+- NOT yet verified on a cold boot: the 25 previously smeared characters, the edited lines, and the ship scene in `21/S2041.DAT`.
+
+v142 current ship candidate - 2026-08-07
+- 03_output/arc1_v142_choices_final_66219F2E.zip, SHA-256 66219F2E159F685318A4557B41C98DD1384857768CCC0682E288C15FAC150D59. Rebuild with arc1_v104.xml, keep the image named arc1.bin. Rollback: v141.
+- Dialogue 2,505/2,847 = 87%; UI, items and skills 97%. python 02_scripts/check_build.py passes, which means no known cause of a freeze, a blank line or a smeared glyph is present.
+- The build chain from the original disc: v129 remap coverage, v130 to v136 text, v137 choices by geometry, v138 one-byte font, v139 and v141 text with short codes, v140 and v142 choices. Each builder is in 02_scripts and states its base digest.
+- Tools: check_build.py is the release gate. review_editor.py edits every line with the live budgets and a disc column decoded from the newest build. review_not_applied.py lists only what is not in the game. find_line.py finds a line from a fragment of what was on screen -- the fastest path from a player report to the CSV row.
+- Still open: 84 lines needing more than two bytes trimmed, 44 choice spans short of a slot, 93 choice bodies whose source is not dialogue, and 199 extractor false positives that must never be translated.

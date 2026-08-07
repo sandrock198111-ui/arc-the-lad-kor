@@ -1,0 +1,67 @@
+row col pl  index  v126 glyph   ink  remap
+ 10   2  0    848  -         ink  FF
+ 10   2  1    849  -         ink  FF
+ 10   2  2    850  -         ink  FF
+ 10   2  3    851  -         ink  FF
+ 10   3  0    852  문         ink  slot 0
+ 10   3  1    853  머         ink  slot 1
+ 10   3  2    854  뀌         ink  slot 2
+ 10   3  3    855  금         ink  slot 3
+ 10   4  0    856  규         ink  slot 4
+ 10   4  1    857  -         ink  slot 5
+ 10   4  2    858  혼         ink  slot 6
+ 10   4  3    859  피         ink  slot 7
+ 10   5  0    860  촌         ink  slot 8
+ 10   5  1    861  잇         ink  slot 9
+ 10   5  2    862  때         ink  slot 10
+ 10   5  3    863  결         ink  slot 11
+ 11   2  0    932  -         ink  FF
+ 11   2  1    933  -         ink  FF
+ 11   2  2    934  -         ink  FF
+ 11   2  3    935  -         ink  FF
+ 11   3  0    936  먹         ink  slot 12
+ 11   3  1    937  립         ink  slot 13
+ 11   3  2    938  론         ink  slot 14
+ 11   3  3    939  레         ink  slot 15
+ 11   4  0    940  또         ink  slot 16
+ 11   4  1    941  든         ink  slot 17
+ 11   4  2    942  더         ink  slot 18
+ 11   4  3    943  달         ink  slot 19
+ 11   5  0    944  늘         ink  slot 20
+ 11   5  1    945  년         ink  slot 21
+ 11   5  2    946  네         ink  slot 22
+ 11   5  3    947  꾸         ink  slot 23
+ 12   2  0   1016  -         ink  FF
+ 12   2  1   1017  -         ink  FF
+ 12   2  2   1018  -         ink  FF
+ 12   2  3   1019  -         ink  FF
+ 12   3  0   1020  구         ink  slot 24
+ 12   3  1   1021  러         ink  slot 47
+ 12   3  2   1022  국         ink  slot 25
+ 12   3  3   1023  뜨         ink  slot 48
+ 12   4  0   1024  궤         ink  slot 26
+ 12   4  1   1025  그         ink  slot 27
+ 12   4  2   1026  긴         ink  slot 28
+ 12   4  3   1027  께         ink  slot 29
+ 12   5  0   1028  남         ink  slot 30
+ 12   5  1   1029  책         ink  slot 31
+ 12   5  2   1030  냐         ink  slot 32
+ 12   5  3   1031  되         ink  slot 33
+ 13   2  0   1100  -         ink  FF
+ 13   2  1   1101  -         ink  FF
+ 13   2  2   1102  -         ink  FF
+ 13   2  3   1103  -         ink  FF
+ 13   3  0   1104  케         ink  slot 34
+ 13   3  1   1105  켜         ink  slot 35
+ 13   3  2   1106  쿠         ink  slot 36
+ 13   3  3   1107  곳         ink  slot 37
+ 13   4  0   1108  키         ink  slot 38
+ 13   4  1   1109  타         ink  slot 39
+ 13   4  2   1110  토         ink  slot 40
+ 13   4  3   1111  고         ink  slot 41
+ 13   5  0   1112  활         ink  slot 42
+ 13   5  1   1113  같         ink  slot 43
+ 13   5  2   1114  트         ink  slot 44
+ 13   5  3   1115  폐         ink  slot 45
+
+planes that name a character: 47   of those still FF: 0

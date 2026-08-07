@@ -1098,3 +1098,71 @@ Relocation needs a coverage check, not a read-back check - 2026-08-04
 - When glyphs are moved out of a region so the region can be restored, verifying that the moved ones read back at their new address proves nothing about the ones that were missed. Enumerate the region first, then require every live plane in it to have a destination.
 - v127 moved 46 planes out of the skill-range cells and left 러 and 뜨 behind. Both had ink in v126, both are common, and 뜨 had no second home, so it became undrawable. 534 occurrences in the shipped archive.
 - The check that finds this: for each plane in the region, does the v126 bitmap name a character, and does the remap table give it a destination? A character on one side and FF on the other is the defect.
+
+The strip D remap ABI, and how to add to it - 2026-08-05
+- The remap table at `0x801FF7F4` is 64 bytes, one per plane of the 16 restored skill-range cells, indexed `(row-10)*16 + (col-2)*4 + plane`. 0xFF means leave the cell alone; anything else is a strip D slot.
+- The lookup at `0x801FE4A4` returns `slot + 4368`. 4368 is 52*84, so the slot is simply re-expressed as row 52 of the font page and every downstream U/V calculation is the ordinary one. There is no per-strip special case to update when adding a glyph.
+- A strip is 936 bytes, 78 per row, which is 156 4bpp pixels: 13 columns of 12, so 52 slots as `col*4 + plane`. The rects confirm it -- strip D's is (961, 368, 39, 12) and 39 halfwords is those same 156 pixels. Column 12 is real and strips A, B and C all use it.
+- So adding a glyph to a strip is two writes: the 12x12 plane into a free slot, and the slot number into the table. Take the bitmap from the last build that still held it rather than re-rendering, so the diff stays provably minimal.
+
+The font spans two texture pages, and only the classifier can cross - 2026-08-05
+- The font sits at VRAM page x=5 and runs from y=0 to y=467, so font rows 0..21 are on texture page (5,0) and rows 22..39 are on (5,1). V is `(row*12) & 0xFF` and is correct for both halves; what distinguishes them is the texture page, and the texture page is chosen per glyph by the classifier.
+- The classifier only recognises the four resident strips by their V values. It has no test for "ordinary font row on the second page", so every non-strip glyph on rows 22..39 draws from page (5,0) at the same U and V: right position on screen, wrong twelve rows of pixels. On screen it reads as one character vertically smeared into its neighbour.
+- This is why the V selection rule for a new strip says to avoid 8 and 20: those are rows 22 and 23, the first two rows of the second page.
+- The encoder must never hand out a physical code whose row is 22..39 unless that row is a strip. Prefer the strip code; every one of the 25 characters that had this problem already had a correct twin in strip A. Put the check in `build_encoder`, not in a comment.
+- How to prove a glyph defect of this shape in one step: take the 12x12 ink mask off the framebuffer and search the whole VRAM for it. One exact hit gives the page, U and V the renderer actually used, and comparing that against the glyph's real location says whether the fault is U, V, the page, or the data.
+
+An external slot holds 126 bytes of text, not 127 - 2026-08-05
+- The slot is 128 bytes: text, a 0x00 terminator, then the `capacity - 2` completion-skip metadata in byte 0x7F. A 127-byte payload leaves no room for the terminator, and the metadata write then lands on byte 127 anyway, so the string never ends and the renderer walks into the next slot. It hangs.
+- `SLOT_TEXT_MAX` must be 126. It was 127 and seven slots shipped without a terminator.
+- The guard to add is not on the payload length but on the result: after writing a slot, require a 0x00 in bytes 0..126. Length arithmetic is what got this wrong in the first place.
+
+An E2 slot inherits the original line's window, and cannot grow it - 2026-08-06
+- The dialogue window is 21 cells wide, and how many rows it has is decided by the line breaks in the ORIGINAL body, not by the replacement text. A slot whose Korean needs more rows than the original had draws until the window is full and then stops; the game does not recover.
+- So the budget for an E2 line is `(original E6 01 count + 1) * 21` cells, counting every glyph and every space as one cell. Check it in the builder and show it in the editor; it is a harder limit than the 126-byte slot size and it bites first.
+- E6 inside a slot is drawn, not interpreted, so line breaks cannot be used to control the wrap. Shortening the text is the only lever.
+- Save state 6 froze on `21/S2041.DAT 0x485A6`: three rows of window, 66 cells of Korean, 63 cells drawn.
+
+Do not write Korean into a font cell that already has ink - 2026-08-06
+- 398 original glyph planes were overwritten across the project's history. The original script still points at 115 of them 334 times, and 46 of those uses are in Japanese lines nobody has translated, so they draw a Korean syllable mid-sentence today.
+- The two the user noticed are L at index 825 and R at index 732, the button labels in `LRボタン`. They cannot be written back into the Korean text either, because the codes now draw Korean.
+- `cell_is_occupied` exists in the v118 builder and looks at all four planes of a cell. The rule it encodes was never applied to the font page as a whole. Before writing any font cell, require the plane to be empty on the ORIGINAL disc, not merely empty in the current build.
+
+Measure the wrap, do not count characters - 2026-08-06
+- A row is 228 pixels. A full-width glyph advances 12 and the space 0x9C advances 6, so a line with many spaces fits more than a character count suggests. Both numbers came off the framebuffer of save states, not from reading the code.
+- The window is `max(original rows, 3)` rows tall. It is never shorter than the Japanese needed and never shorter than three.
+- Counting tokens as uniform cells produced 196 false warnings against 9 real ones. When a user says a line looked fine in game, that is data: check the model before defending it.
+
+The code space is one continuous index, and all of it is glyphs - 2026-08-06
+- `index = code - 1` for a one-byte code 0x01..0xDC. The two-byte range picks up exactly where that ends: `(lead - 0xDD) * 255 + trail + 0xDB`, so `DD 01` is 220 and the one-byte range stops at 219. E9/EA go through the lookup table. There is no separate ASCII region and no reason to hardcode one.
+- 118 of the 220 one-byte codes hold Korean. The encoder ignored them for the whole project because someone once wrote `{chr(i + 32): bytes((i + 1,)) for i in range(26)}` and nobody enumerated the rest. 괄, 량 and 덕 were being reported impossible while the game drew them.
+- Identify a glyph by its picture, never by a name in a table. For anything the Hangul render table cannot name -- Latin, punctuation, icons -- take the cell off the ORIGINAL disc and look for that exact 12x12 in the build. A letter that was overwritten then fails to resolve on its own, with no special case and no guess.
+- When the user says the game draws something the tool calls impossible, the tool is wrong. That has now happened three times in one session: the row budget, the H and P of HP, and 괄 량 덕.
+
+Place and country names live in PSX.EXE, not in the script - 2026-08-06
+- The save/load screen draws a country name from a pointer pair at file 0x81EE8 and 0x81EEC: 스메리아 at 0x820AC and 밀마나 at 0x781B1. Neither is in any DAT and neither is in the memory card, so renaming a country in the CSV can never change that screen.
+- Two more strings carry the same name: 0x8194D `밀마나 공항` and 0x81A8E `밀마나 군본부`, in the place-name table that runs from about 0x818A2 to 0x81B40. Every entry there is 0x00-terminated and reached through a pointer.
+- Because they are pointer-referenced, a longer name does not have to fit in place: move the string to free space and rewrite the one pointer. 밀마나 is three syllables and 미르마나 is four, so each of the three strings grows by two bytes and cannot be edited where it stands.
+- Search for a name by walking tokens, not by matching the encoder's preferred bytes. The same syllable has several codes -- these tables use E9 lookup codes where the encoder would emit E0 -- and a byte search finds one table and misses the others. Require the match to begin just after a 0x00 or a mid-token alignment will invent hits.
+
+Choice bodies: geometry first, redirect second - 2026-08-07
+- Keep every E5 and E6 at the byte offset the original put it. Compare by offset, not token by token: Korean and Japanese use different token widths so the two streams fall out of step and a marker lines up against a glyph.
+- A span too small for its Korean does not need the Korean shortened. Put E2 plus the disk id at the span start, fill the rest of the span with the space glyph, and set the slot metadata to span length minus two so completion resumes at that span's own marker. A span never contains an E6, so the rule against skipping a line break does not apply.
+- E2 is a glyph lead as well as a command. E2 EB is 링, E2 DE is 띠. A phrase carrying one goes to a slot even if it would have fitted inline, because inside a body the renderer cannot tell them apart. Inside a slot it can: controls are not interpreted there.
+- The CSV writes menu options with a bar; the disc writes them with a line break and a choice marker. Comparing without normalising that reported 201 lines as missing while the game was drawing them.
+- A bar count that is one short is almost always the speaker: the original keeps 초핀 on its own row and the CSV wrote the speaker and the question as one phrase. One leading bar too many is the other habit. Those two rules realign 109 of 124.
+
+One-byte codes are the cheapest capacity in the project - 2026-08-07
+- index = code - 1 for 0x01..0xDC, and the two-byte range continues at 220, so the space is continuous. A syllable in a low cell costs one byte instead of two.
+- Which cells are free is measured over rendered text only: pointer-referenced UI strings, inline bodies, and slot contents. Never count the Japanese tail an E2 body skips -- that says 217 of 220 are locked and kills the idea. Counted properly, 86 were free.
+- Cost: those cells held Japanese kana, so untranslated lines get worse. They were already bad; 123 had been overwritten before this.
+- Effect: slot demand 2,252 to 1,591, lines placed in situ 148 to 925, battle dialogue 35% to 89%.
+
+Do not translate the 199 untranslated lines - 2026-08-07
+- They decode as noise. The extractor caught binary and external tables; the 2026-07-16 note called them 93 medium-confidence false positives and the count has grown with the corpus.
+- Writing Korean into them overwrites data the game reads. Leave them.
+
+When a line is blocked for want of a slot, do not shorten it - 2026-08-07
+- Shorten whichever line in that file is cheapest to shorten. A line that fits where the Japanese sat needs no slot, so each one moved frees a slot for another.
+- 212 blocked lines needed only 186 moves, across five files: C2/SC0B6, 6/S6054, 31/S3014, D/SD031, 32/S3051. Half were short by one or two bytes.
+- Close a space before dropping punctuation, and never drop the exclamation or question mark -- they carry tone. Dropping a full stop is usually invisible.

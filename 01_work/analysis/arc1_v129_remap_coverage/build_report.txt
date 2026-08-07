@@ -1,0 +1,47 @@
+v129 the two glyphs v127's remap left behind
+
+base    arc1_v128_all_battle_choices_patch_only.zip
+output  arc1_v129_remap_coverage_430F1CFD.zip
+        sha256 430F1CFDF91E6C58AEF937C5FBD5099B4CEAF745783EBCD207DF0337AE72B289
+PSX.EXE 587776 bytes, unchanged; every other member byte-identical to v128
+
+placed
+  index  1021  러  -> strip D slot 47, remap entry 37
+  index  1023  뜨  -> strip D slot 48, remap entry 39
+
+bytes changed  53, all inside strip D and the 64-byte remap table
+
+why they were missing
+  v127 restored the skill-range artwork and moved 46 of the 48 Korean planes
+  that had been living in those cells into strip D. 러 and 뜨 kept their FF
+  entries, so their codes E0 25 and E0 27 -- 436 and 98 uses in the shipped
+  archive -- resolved to artwork. 뜨 had no second home and could not be drawn
+  anywhere in v128.
+
+checked separately, because slot 48 is the first use of strip D's 13th column
+  the remap lookup at 0x801FE4A4 ends `addiu v0,t1,4368`; 4368 = 52*84, so a slot
+    becomes row 52, column slot/4, plane slot%4 under the ordinary index arithmetic
+    and column 12 needs no special case anywhere
+  the strip D rect at 0x801FF834 is (961, 368, 39, 12); 39 halfwords is 156 4bpp
+    pixels, exactly 13 columns, so column 12 is uploaded and fills the last 12
+  strips A, B and C each use 52 of 52 slots, so column 12 already draws every frame
+    in the accepted builds
+
+coverage table: coverage.txt in this directory, all 64 planes
+  47 planes name a character and all 47 now have a destination
+  the 16 still FF are column 2's four planes in each of the four rows: ink, no character
+  index 857 is mapped to slot 5 but is not a Hangul render; v127 relocated a symbol
+
+verified
+  base digest matches v128 and v126's digest matches, since the glyphs come
+    from the last build that still held them
+  both target slots were empty and both remap entries were FF before writing
+  every plane of the restored region that names a character now has a slot
+  every mapped entry's slot holds exactly that plane's v126 bitmap
+  no byte changed outside strip D and the remap table; PSX.EXE keeps its size
+  only PSX.EXE differs from v128; the archive reads back as written
+
+NOT verified here: a cold boot. Look for 러 in ordinary dialogue -- 그러면,
+데리러 -- and 뜨 in 쓰러뜨리다, and check the skill-range cross is still whole.
+
+rollback: v128

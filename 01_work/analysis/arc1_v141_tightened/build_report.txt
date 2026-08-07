@@ -1,0 +1,436 @@
+v141 the script after tightening
+
+base    arc1_v138_one_byte_font_375BCC7F.zip
+output  arc1_v141_tightened_3ACBA9A1.zip
+        sha256 3ACBA9A16A7300E1C96E61E9433728C071F794EF862F7CA295EA21864094D715
+members 164; PSX.EXE and COMM.IMG byte-identical to v138
+
+lines written            2280
+  in place               915
+  through an E2 slot     1365
+files changed            160
+lines left alone         384
+
+dead slots reclaimed     140 in 160 files
+  earlier builds filled slots and later stopped pointing at them, and the
+  allocator counts any non-empty slot as taken. 1,492 slots hold the game's own
+  data and were left alone; only slots empty on the original disc were cleared.
+     15  8/S8013.DAT
+     11  C1/SC011.DAT
+     11  C1/SC021.DAT
+     11  C1/SC031.DAT
+     11  C1/SC041.DAT
+     11  C1/SC051.DAT
+
+smeared codes repaired in place  0
+  bodies this build could not rewrite still held them; the strip A twin is the
+  same two bytes, so they were swapped where they stand.
+
+why lines were left alone (their v129 bytes are untouched):
+    264  E5 choice body, owned by the row-by-row repair
+    120  file ran out of external slots
+
+verified
+  base digest matches v138
+  every body's original bytes match the script table read from 00_original/arc.zip
+  every E5 choice body was skipped, so v128's battle choices are intact
+  a body that already had a slot keeps it, so no E2 marker is stranded
+  every slot in the finished archive has a 0x00 in bytes 0..126
+  no glyph code in any rewritten body or slot resolves to an index the
+    classifier cannot reach -- this is the smear, checked on the output
+  no byte changed outside the declared bodies and slots, in any file
+  PSX.EXE and COMM.IMG unchanged; the archive reads back as written
+
+NOT verified here, needs a cold boot:
+  that 짜, 잔, 층 and the rest of the 25 now read correctly
+  that the ship scene in 21/S2041.DAT no longer freezes
+  that 쓰러뜨린 몬스터가 reads 가 in 21/S2021.DAT
+
+rebuild with arc1_v104.xml, then run verify_iso_layout.py
+rollback: v138
+
+lines left alone, in full:
+  1/S1023.DAT 0x47952  E5 choice body, owned by the row-by-row repair
+  1/S1023.DAT 0x47AB0  E5 choice body, owned by the row-by-row repair
+  1/S1023.DAT 0x47B30  E5 choice body, owned by the row-by-row repair
+  21/S2041.DAT 0x47EFE  E5 choice body, owned by the row-by-row repair
+  21/S2041.DAT 0x48160  E5 choice body, owned by the row-by-row repair
+  21/S2041.DAT 0x48488  E5 choice body, owned by the row-by-row repair
+  21/S2042.DAT 0x47FF0  E5 choice body, owned by the row-by-row repair
+  21/S2042.DAT 0x4811E  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x4758E  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x47914  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x47C32  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x47CDA  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x47F1C  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x4834A  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x483B6  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x48972  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x48F18  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x48F94  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x49006  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x4907E  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x490F0  E5 choice body, owned by the row-by-row repair
+  21/S2045.DAT 0x48926  file ran out of external slots
+  21/S2045.DAT 0x48B10  file ran out of external slots
+  21/S2045.DAT 0x48BC0  file ran out of external slots
+  21/S2045.DAT 0x48D6E  file ran out of external slots
+  21/S2045.DAT 0x48EC0  file ran out of external slots
+  21/S2045.DAT 0x4916A  file ran out of external slots
+  22/S2046.DAT 0x49102  E5 choice body, owned by the row-by-row repair
+  31/S3012.DAT 0x47FF0  E5 choice body, owned by the row-by-row repair
+  31/S3012.DAT 0x4811E  E5 choice body, owned by the row-by-row repair
+  31/S3013.DAT 0x47FF6  E5 choice body, owned by the row-by-row repair
+  31/S3013.DAT 0x48236  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x4658E  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x4691A  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x46C48  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x46CF0  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x46F3C  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x4736E  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x473DA  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x47996  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x47F3C  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x47FB8  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x4802A  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x480A2  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x48114  E5 choice body, owned by the row-by-row repair
+  31/S3014.DAT 0x46FB4  file ran out of external slots
+  31/S3014.DAT 0x47108  file ran out of external slots
+  31/S3014.DAT 0x47232  file ran out of external slots
+  31/S3014.DAT 0x472A2  file ran out of external slots
+  31/S3014.DAT 0x47324  file ran out of external slots
+  31/S3014.DAT 0x4745A  file ran out of external slots
+  31/S3014.DAT 0x4752A  file ran out of external slots
+  31/S3014.DAT 0x4758C  file ran out of external slots
+  31/S3014.DAT 0x4762E  file ran out of external slots
+  31/S3014.DAT 0x477D6  file ran out of external slots
+  31/S3014.DAT 0x4788A  file ran out of external slots
+  31/S3014.DAT 0x4794A  file ran out of external slots
+  31/S3014.DAT 0x47A78  file ran out of external slots
+  31/S3014.DAT 0x47ADE  file ran out of external slots
+  31/S3014.DAT 0x47CD6  file ran out of external slots
+  31/S3014.DAT 0x47D42  file ran out of external slots
+  31/S3014.DAT 0x47D92  file ran out of external slots
+  31/S3014.DAT 0x47EE4  file ran out of external slots
+  31/S3014.DAT 0x4818E  file ran out of external slots
+  31/S3014.DAT 0x481F2  file ran out of external slots
+  31/S3014.DAT 0x482B6  file ran out of external slots
+  31/S3014.DAT 0x48320  file ran out of external slots
+  31/S3014.DAT 0x483F8  file ran out of external slots
+  31/S3014.DAT 0x487A8  file ran out of external slots
+  31/S3022.DAT 0x48822  E5 choice body, owned by the row-by-row repair
+  31/S3023.DAT 0x4870A  E5 choice body, owned by the row-by-row repair
+  31/S3024.DAT 0x47802  E5 choice body, owned by the row-by-row repair
+  31/S3024.DAT 0x47F68  E5 choice body, owned by the row-by-row repair
+  31/S3024.DAT 0x47FD2  E5 choice body, owned by the row-by-row repair
+  31/S3024.DAT 0x48052  E5 choice body, owned by the row-by-row repair
+  4/S4033.DAT 0x47CDC  E5 choice body, owned by the row-by-row repair
+  4/S4033.DAT 0x485C8  E5 choice body, owned by the row-by-row repair
+  4/S4034.DAT 0x47D30  E5 choice body, owned by the row-by-row repair
+  4/S4035.DAT 0x47D30  E5 choice body, owned by the row-by-row repair
+  4/S4036.DAT 0x47CDC  E5 choice body, owned by the row-by-row repair
+  5/S5012.DAT 0x4800C  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x47580  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x478FE  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x47C16  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x47CBE  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x47F08  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x48336  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x483A2  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x4895E  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x48F04  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x48F80  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x48FF2  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x4906A  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x490DC  E5 choice body, owned by the row-by-row repair
+  5/S5013.DAT 0x47F80  file ran out of external slots
+  5/S5013.DAT 0x48912  file ran out of external slots
+  5/S5013.DAT 0x489E2  file ran out of external slots
+  5/S5013.DAT 0x48BAC  file ran out of external slots
+  5/S5013.DAT 0x48D5A  file ran out of external slots
+  5/S5013.DAT 0x48EAC  file ran out of external slots
+  5/S5013.DAT 0x49156  file ran out of external slots
+  6/S6013.DAT 0x48030  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x47638  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x4794A  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x479F2  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x47EEA  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x482E2  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x4834E  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x4890A  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x48EB0  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x48F2C  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x48F9E  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x49016  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x49088  E5 choice body, owned by the row-by-row repair
+  6/S6014.DAT 0x48B58  file ran out of external slots
+  6/S6014.DAT 0x48D06  file ran out of external slots
+  6/S6014.DAT 0x48E58  file ran out of external slots
+  6/S6014.DAT 0x49102  file ran out of external slots
+  6/S6054.DAT 0x45002  E5 choice body, owned by the row-by-row repair
+  6/S6054.DAT 0x450F6  E5 choice body, owned by the row-by-row repair
+  6/S6054.DAT 0x451F4  E5 choice body, owned by the row-by-row repair
+  6/S6054.DAT 0x452F2  E5 choice body, owned by the row-by-row repair
+  6/S6054.DAT 0x453E6  E5 choice body, owned by the row-by-row repair
+  6/S6054.DAT 0x454DC  E5 choice body, owned by the row-by-row repair
+  6/S6054.DAT 0x455E0  E5 choice body, owned by the row-by-row repair
+  6/S6054.DAT 0x456DA  E5 choice body, owned by the row-by-row repair
+  6/S6054.DAT 0x458CE  E5 choice body, owned by the row-by-row repair
+  6/S6054.DAT 0x459CA  E5 choice body, owned by the row-by-row repair
+  6/S6054.DAT 0x4506E  file ran out of external slots
+  6/S6054.DAT 0x450AC  file ran out of external slots
+  6/S6054.DAT 0x45160  file ran out of external slots
+  6/S6054.DAT 0x4519E  file ran out of external slots
+  6/S6054.DAT 0x4525C  file ran out of external slots
+  6/S6054.DAT 0x4529A  file ran out of external slots
+  6/S6054.DAT 0x4535A  file ran out of external slots
+  6/S6054.DAT 0x45398  file ran out of external slots
+  6/S6054.DAT 0x4544A  file ran out of external slots
+  6/S6054.DAT 0x4548E  file ran out of external slots
+  6/S6054.DAT 0x45542  file ran out of external slots
+  6/S6054.DAT 0x45580  file ran out of external slots
+  6/S6054.DAT 0x45648  file ran out of external slots
+  6/S6054.DAT 0x45686  file ran out of external slots
+  6/S6054.DAT 0x4573A  file ran out of external slots
+  6/S6054.DAT 0x45778  file ran out of external slots
+  6/S6054.DAT 0x45836  file ran out of external slots
+  6/S6054.DAT 0x45874  file ran out of external slots
+  6/S6054.DAT 0x45940  file ran out of external slots
+  6/S6054.DAT 0x4597E  file ran out of external slots
+  6/S6054.DAT 0x45A38  file ran out of external slots
+  6/S6054.DAT 0x45A80  file ran out of external slots
+  6/S6054.DAT 0x45AC8  file ran out of external slots
+  6/S6054.DAT 0x45B2C  file ran out of external slots
+  6/S6054.DAT 0x45BF4  file ran out of external slots
+  6/S6054.DAT 0x45C42  file ran out of external slots
+  6/S6054.DAT 0x45CA6  file ran out of external slots
+  6/S6054.DAT 0x45D02  file ran out of external slots
+  6/S6054.DAT 0x45D52  file ran out of external slots
+  6/S6054.DAT 0x45DA0  file ran out of external slots
+  6/S6054.DAT 0x45E2E  file ran out of external slots
+  6/S6054.DAT 0x45F00  file ran out of external slots
+  6/S6054.DAT 0x45FDC  file ran out of external slots
+  6/S6054.DAT 0x460DE  file ran out of external slots
+  6/S6054.DAT 0x461E2  file ran out of external slots
+  6/S6054.DAT 0x4623C  file ran out of external slots
+  6/S6054.DAT 0x462E4  file ran out of external slots
+  6/S6054.DAT 0x46394  file ran out of external slots
+  6/S6054.DAT 0x46440  file ran out of external slots
+  6/S6054.DAT 0x464EC  file ran out of external slots
+  6/S6054.DAT 0x46598  file ran out of external slots
+  6/S6054.DAT 0x4663E  file ran out of external slots
+  6/S6054.DAT 0x466E2  file ran out of external slots
+  6/S6054.DAT 0x46778  file ran out of external slots
+  6/S6054.DAT 0x46828  file ran out of external slots
+  6/S6054.DAT 0x46980  file ran out of external slots
+  6/S6054.DAT 0x46A2E  file ran out of external slots
+  6/S6054.DAT 0x46AD6  file ran out of external slots
+  7/S7011.DAT 0x48036  E5 choice body, owned by the row-by-row repair
+  7/S7012.DAT 0x47A74  E5 choice body, owned by the row-by-row repair
+  7/S7012.DAT 0x47B1C  E5 choice body, owned by the row-by-row repair
+  7/S7012.DAT 0x47DDA  E5 choice body, owned by the row-by-row repair
+  7/S7012.DAT 0x47E46  E5 choice body, owned by the row-by-row repair
+  7/S7012.DAT 0x48402  E5 choice body, owned by the row-by-row repair
+  7/S7012.DAT 0x489A8  E5 choice body, owned by the row-by-row repair
+  7/S7012.DAT 0x48A24  E5 choice body, owned by the row-by-row repair
+  7/S7012.DAT 0x48A96  E5 choice body, owned by the row-by-row repair
+  7/S7012.DAT 0x48B0E  E5 choice body, owned by the row-by-row repair
+  7/S7012.DAT 0x48B80  E5 choice body, owned by the row-by-row repair
+  7/S7012.DAT 0x487FE  file ran out of external slots
+  7/S7012.DAT 0x48950  file ran out of external slots
+  7/S7012.DAT 0x48BFA  file ran out of external slots
+  7/S7021.DAT 0x47D58  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x47E66  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x47F74  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x48082  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x48190  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x4829E  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x483AC  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x48D26  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x48EA4  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x48F16  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x48F82  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x48FEE  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x4908E  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x49102  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x4916C  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x491D0  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x4921C  E5 choice body, owned by the row-by-row repair
+  7/S7021.DAT 0x4929E  E5 choice body, owned by the row-by-row repair
+  7/S7022.DAT 0x47FCE  E5 choice body, owned by the row-by-row repair
+  7/S7022.DAT 0x480DC  E5 choice body, owned by the row-by-row repair
+  7/S7022.DAT 0x481E8  E5 choice body, owned by the row-by-row repair
+  7/S7022.DAT 0x482F2  E5 choice body, owned by the row-by-row repair
+  7/S7022.DAT 0x483FC  E5 choice body, owned by the row-by-row repair
+  7/S7022.DAT 0x48506  E5 choice body, owned by the row-by-row repair
+  7/S7022.DAT 0x48610  E5 choice body, owned by the row-by-row repair
+  7/S7022.DAT 0x489B6  E5 choice body, owned by the row-by-row repair
+  7/S7022.DAT 0x49196  E5 choice body, owned by the row-by-row repair
+  7/S7023.DAT 0x47D58  E5 choice body, owned by the row-by-row repair
+  7/S7023.DAT 0x47E66  E5 choice body, owned by the row-by-row repair
+  7/S7023.DAT 0x47F72  E5 choice body, owned by the row-by-row repair
+  7/S7023.DAT 0x48080  E5 choice body, owned by the row-by-row repair
+  7/S7023.DAT 0x4818C  E5 choice body, owned by the row-by-row repair
+  7/S7023.DAT 0x48296  E5 choice body, owned by the row-by-row repair
+  7/S7023.DAT 0x483A0  E5 choice body, owned by the row-by-row repair
+  7/S7023.DAT 0x48A4E  E5 choice body, owned by the row-by-row repair
+  7/S7023.DAT 0x491C6  E5 choice body, owned by the row-by-row repair
+  7/S7023.DAT 0x4922C  E5 choice body, owned by the row-by-row repair
+  7/S7024.DAT 0x47D58  E5 choice body, owned by the row-by-row repair
+  7/S7024.DAT 0x47E66  E5 choice body, owned by the row-by-row repair
+  7/S7024.DAT 0x47F72  E5 choice body, owned by the row-by-row repair
+  7/S7024.DAT 0x4807C  E5 choice body, owned by the row-by-row repair
+  7/S7024.DAT 0x48186  E5 choice body, owned by the row-by-row repair
+  7/S7024.DAT 0x48296  E5 choice body, owned by the row-by-row repair
+  7/S7024.DAT 0x483A0  E5 choice body, owned by the row-by-row repair
+  7/S7024.DAT 0x48AAE  E5 choice body, owned by the row-by-row repair
+  7/S7024.DAT 0x4922A  E5 choice body, owned by the row-by-row repair
+  7/S7024.DAT 0x49290  E5 choice body, owned by the row-by-row repair
+  7/S7025.DAT 0x47FDC  E5 choice body, owned by the row-by-row repair
+  7/S7025.DAT 0x480EA  E5 choice body, owned by the row-by-row repair
+  7/S7025.DAT 0x481F6  E5 choice body, owned by the row-by-row repair
+  7/S7025.DAT 0x48304  E5 choice body, owned by the row-by-row repair
+  7/S7025.DAT 0x4840C  E5 choice body, owned by the row-by-row repair
+  7/S7025.DAT 0x4851C  E5 choice body, owned by the row-by-row repair
+  7/S7025.DAT 0x48624  E5 choice body, owned by the row-by-row repair
+  7/S7025.DAT 0x48AC2  E5 choice body, owned by the row-by-row repair
+  7/S7025.DAT 0x4923A  E5 choice body, owned by the row-by-row repair
+  7/S7025.DAT 0x492A0  E5 choice body, owned by the row-by-row repair
+  7/S7026.DAT 0x48006  E5 choice body, owned by the row-by-row repair
+  7/S7026.DAT 0x48112  E5 choice body, owned by the row-by-row repair
+  7/S7026.DAT 0x4821E  E5 choice body, owned by the row-by-row repair
+  7/S7026.DAT 0x4832E  E5 choice body, owned by the row-by-row repair
+  7/S7026.DAT 0x4843C  E5 choice body, owned by the row-by-row repair
+  7/S7026.DAT 0x48548  E5 choice body, owned by the row-by-row repair
+  7/S7026.DAT 0x48650  E5 choice body, owned by the row-by-row repair
+  7/S7026.DAT 0x48D28  E5 choice body, owned by the row-by-row repair
+  7/S7026.DAT 0x494A6  E5 choice body, owned by the row-by-row repair
+  7/S7026.DAT 0x4950C  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x46D58  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x46E66  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x46F72  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x4707E  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x4718E  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x4729E  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x473A6  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x48028  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x482EE  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x48360  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x483CC  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x48438  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x484D8  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x4854C  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x485B6  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x4861A  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x48666  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x486E8  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x48AB8  E5 choice body, owned by the row-by-row repair
+  7/S7028.DAT 0x48B70  E5 choice body, owned by the row-by-row repair
+  8/S8012.DAT 0x48020  E5 choice body, owned by the row-by-row repair
+  8/S8013.DAT 0x476B6  E5 choice body, owned by the row-by-row repair
+  8/S8013.DAT 0x47996  E5 choice body, owned by the row-by-row repair
+  8/S8013.DAT 0x47A12  E5 choice body, owned by the row-by-row repair
+  8/S8013.DAT 0x47A84  E5 choice body, owned by the row-by-row repair
+  8/S8013.DAT 0x47AFC  E5 choice body, owned by the row-by-row repair
+  8/S8013.DAT 0x47B6E  E5 choice body, owned by the row-by-row repair
+  B/SB071.DAT 0x47EA6  E5 choice body, owned by the row-by-row repair
+  C1/SC011.DAT 0x46DE6  E5 choice body, owned by the row-by-row repair
+  C1/SC011.DAT 0x46E48  E5 choice body, owned by the row-by-row repair
+  C1/SC011.DAT 0x46EAA  E5 choice body, owned by the row-by-row repair
+  C1/SC011.DAT 0x46F0E  E5 choice body, owned by the row-by-row repair
+  C1/SC011.DAT 0x46F74  E5 choice body, owned by the row-by-row repair
+  C1/SC011.DAT 0x46FD8  E5 choice body, owned by the row-by-row repair
+  C1/SC011.DAT 0x47034  E5 choice body, owned by the row-by-row repair
+  C1/SC021.DAT 0x46DE6  E5 choice body, owned by the row-by-row repair
+  C1/SC021.DAT 0x46E48  E5 choice body, owned by the row-by-row repair
+  C1/SC021.DAT 0x46EAA  E5 choice body, owned by the row-by-row repair
+  C1/SC021.DAT 0x46F0E  E5 choice body, owned by the row-by-row repair
+  C1/SC021.DAT 0x46F74  E5 choice body, owned by the row-by-row repair
+  C1/SC021.DAT 0x46FD8  E5 choice body, owned by the row-by-row repair
+  C1/SC021.DAT 0x47034  E5 choice body, owned by the row-by-row repair
+  C1/SC031.DAT 0x46DE6  E5 choice body, owned by the row-by-row repair
+  C1/SC031.DAT 0x46E48  E5 choice body, owned by the row-by-row repair
+  C1/SC031.DAT 0x46EAA  E5 choice body, owned by the row-by-row repair
+  C1/SC031.DAT 0x46F0E  E5 choice body, owned by the row-by-row repair
+  C1/SC031.DAT 0x46F74  E5 choice body, owned by the row-by-row repair
+  C1/SC031.DAT 0x46FD8  E5 choice body, owned by the row-by-row repair
+  C1/SC031.DAT 0x47034  E5 choice body, owned by the row-by-row repair
+  C1/SC041.DAT 0x46DE6  E5 choice body, owned by the row-by-row repair
+  C1/SC041.DAT 0x46E48  E5 choice body, owned by the row-by-row repair
+  C1/SC041.DAT 0x46EAA  E5 choice body, owned by the row-by-row repair
+  C1/SC041.DAT 0x46F0E  E5 choice body, owned by the row-by-row repair
+  C1/SC041.DAT 0x46F74  E5 choice body, owned by the row-by-row repair
+  C1/SC041.DAT 0x46FD8  E5 choice body, owned by the row-by-row repair
+  C1/SC041.DAT 0x47034  E5 choice body, owned by the row-by-row repair
+  C1/SC051.DAT 0x46DE6  E5 choice body, owned by the row-by-row repair
+  C1/SC051.DAT 0x46E48  E5 choice body, owned by the row-by-row repair
+  C1/SC051.DAT 0x46EAA  E5 choice body, owned by the row-by-row repair
+  C1/SC051.DAT 0x46F0E  E5 choice body, owned by the row-by-row repair
+  C1/SC051.DAT 0x46F74  E5 choice body, owned by the row-by-row repair
+  C1/SC051.DAT 0x46FD8  E5 choice body, owned by the row-by-row repair
+  C1/SC051.DAT 0x47034  E5 choice body, owned by the row-by-row repair
+  C1/SC061.DAT 0x46DE6  E5 choice body, owned by the row-by-row repair
+  C1/SC061.DAT 0x46E48  E5 choice body, owned by the row-by-row repair
+  C1/SC061.DAT 0x46EAA  E5 choice body, owned by the row-by-row repair
+  C1/SC061.DAT 0x46F0E  E5 choice body, owned by the row-by-row repair
+  C1/SC061.DAT 0x46F74  E5 choice body, owned by the row-by-row repair
+  C1/SC061.DAT 0x46FD8  E5 choice body, owned by the row-by-row repair
+  C1/SC061.DAT 0x47034  E5 choice body, owned by the row-by-row repair
+  C1/SC081.DAT 0x46DE6  E5 choice body, owned by the row-by-row repair
+  C1/SC081.DAT 0x46E48  E5 choice body, owned by the row-by-row repair
+  C1/SC081.DAT 0x46EAA  E5 choice body, owned by the row-by-row repair
+  C1/SC081.DAT 0x46F0C  E5 choice body, owned by the row-by-row repair
+  C1/SC081.DAT 0x46F70  E5 choice body, owned by the row-by-row repair
+  C1/SC081.DAT 0x46FD4  E5 choice body, owned by the row-by-row repair
+  C1/SC081.DAT 0x47030  E5 choice body, owned by the row-by-row repair
+  C1/SC091.DAT 0x46DE6  E5 choice body, owned by the row-by-row repair
+  C1/SC091.DAT 0x46E44  E5 choice body, owned by the row-by-row repair
+  C1/SC091.DAT 0x46EA2  E5 choice body, owned by the row-by-row repair
+  C1/SC091.DAT 0x46F04  E5 choice body, owned by the row-by-row repair
+  C1/SC091.DAT 0x46F62  E5 choice body, owned by the row-by-row repair
+  C1/SC091.DAT 0x46FC0  E5 choice body, owned by the row-by-row repair
+  C1/SC091.DAT 0x4701C  E5 choice body, owned by the row-by-row repair
+  C2/SC0A1.DAT 0x46DE6  E5 choice body, owned by the row-by-row repair
+  C2/SC0A1.DAT 0x46E48  E5 choice body, owned by the row-by-row repair
+  C2/SC0A1.DAT 0x46EA4  E5 choice body, owned by the row-by-row repair
+  C2/SC0A1.DAT 0x46F00  E5 choice body, owned by the row-by-row repair
+  C2/SC0A1.DAT 0x46F66  E5 choice body, owned by the row-by-row repair
+  C2/SC0A1.DAT 0x46FCA  E5 choice body, owned by the row-by-row repair
+  C2/SC0A1.DAT 0x47026  E5 choice body, owned by the row-by-row repair
+  C2/SC0B6.DAT 0x464F8  E5 choice body, owned by the row-by-row repair
+  C2/SC0B6.DAT 0x46884  E5 choice body, owned by the row-by-row repair
+  C2/SC0B6.DAT 0x46C0A  E5 choice body, owned by the row-by-row repair
+  C2/SC0B6.DAT 0x46F98  E5 choice body, owned by the row-by-row repair
+  C2/SC0B6.DAT 0x4731A  E5 choice body, owned by the row-by-row repair
+  C2/SC0B6.DAT 0x474B2  E5 choice body, owned by the row-by-row repair
+  C2/SC0B6.DAT 0x47838  E5 choice body, owned by the row-by-row repair
+  C2/SC0B6.DAT 0x479C6  E5 choice body, owned by the row-by-row repair
+  C2/SC0B6.DAT 0x45CD4  file ran out of external slots
+  C2/SC0B6.DAT 0x463DC  file ran out of external slots
+  C2/SC0B6.DAT 0x466A0  file ran out of external slots
+  C2/SC0B6.DAT 0x46990  file ran out of external slots
+  C2/SC0B6.DAT 0x46A24  file ran out of external slots
+  C2/SC0B6.DAT 0x46D1A  file ran out of external slots
+  C2/SC0B6.DAT 0x476F0  file ran out of external slots
+  C2/SC0B6.DAT 0x4787C  file ran out of external slots
+  C2/SC0B6.DAT 0x47AA0  file ran out of external slots
+  C2/SC0B6.DAT 0x47B72  file ran out of external slots
+  C2/SC0B6.DAT 0x47BB6  file ran out of external slots
+  C2/SC0B6.DAT 0x47C8A  file ran out of external slots
+  C2/SC0B6.DAT 0x47F4E  file ran out of external slots
+  C2/SC0B6.DAT 0x47F92  file ran out of external slots
+  C2/SC0B6.DAT 0x47FD6  file ran out of external slots
+  D/SD031.DAT 0x459BC  file ran out of external slots
+  D/SD031.DAT 0x45AFE  file ran out of external slots
+  D/SD031.DAT 0x45B96  file ran out of external slots
+  D/SD031.DAT 0x45CF4  file ran out of external slots
+  D/SD031.DAT 0x45F8E  file ran out of external slots
+  D/SD031.DAT 0x45FDA  file ran out of external slots
+  D/SD031.DAT 0x46018  file ran out of external slots
+  D/SD031.DAT 0x46190  file ran out of external slots
+  D/SD031.DAT 0x46226  file ran out of external slots
+  D/SD031.DAT 0x462BC  file ran out of external slots
+  D/SD031.DAT 0x4699E  file ran out of external slots
+  D/SD031.DAT 0x46A2A  file ran out of external slots
+  D/SD031.DAT 0x46A88  file ran out of external slots

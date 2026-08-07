@@ -54,10 +54,20 @@ RAM_TO_FILE = 0x8011A800
 LOOKUP_SRC, LOOKUP_N = 0x801A8FD4, 508
 IPR, PLANES, CELL = 84, 4, 12
 STRIP_ROW_BYTES, STRIP_BYTES = 78, 936
-STRIPS = {40: 0x801A8800, 63: 0x801A8BA8, 53: 0x801A93CC}
+STRIPS = {40: 0x801A8800, 63: 0x801A8BA8, 53: 0x801A93CC, 52: 0x801A9774}
+STRIP_D_ROW = 52
+
+# v127 gave the 16 skill-range cells back to the artwork and moved the Korean glyphs
+# that lived in them into strip D, leaving this table to redirect each plane.
+REMAP_SRC = 0x801A9B1C
+REMAP_ROWS, REMAP_COLS = range(10, 14), range(2, 6)
 
 SLOT_BASE, SLOT_SIZE, SLOT_COUNT = 0x45000, 0x80, 79
-SLOT_TEXT_MAX = SLOT_SIZE - 1           # byte 0x7F is the completion metadata
+# 128 bytes: text, a 0x00 terminator, then the completion metadata in byte 0x7F. A
+# 127-byte payload fills 0..126 and the metadata write then lands on 127 anyway, so
+# the string never ends and the renderer walks into the next slot. It hangs; seven
+# slots shipped that way. The last byte a payload may occupy is 125.
+SLOT_TEXT_MAX = SLOT_SIZE - 2
 FILLER = 0x9C                           # the space glyph, and the safe pad
 LINEBREAK = b"\xE6\x01"
 CHOICE = 0xE5
@@ -89,19 +99,58 @@ def disk_id(slot: int) -> int:
     return slot + 0x81 if slot < 40 else slot + 0x82
 
 
+def strip_bits(exe: bytes, src: int, slot: int) -> tuple[int, ...]:
+    strip = exe[src - RAM_TO_FILE:][:STRIP_BYTES]
+    column, plane = divmod(slot, PLANES)
+    bit = 1 << plane
+    out = []
+    for y in range(CELL):
+        for x in range(CELL):
+            px = column * CELL + x
+            byte = strip[y * STRIP_ROW_BYTES + px // 2]
+            out.append(1 if (byte & 0x0F if px % 2 == 0 else byte >> 4) & bit else 0)
+    return tuple(out)
+
+
+def remap_slot(exe: bytes, index: int) -> int | None:
+    """The strip D slot this index draws from, or None if it draws from the font.
+
+    Reading the font for one of the restored skill-range planes returns artwork, not
+    the glyph that used to be there, so the table has to be consulted before the font.
+    """
+    row, remainder = divmod(index, IPR)
+    column, plane = divmod(remainder, PLANES)
+    if row not in REMAP_ROWS or column not in REMAP_COLS:
+        return None
+    entry = exe[REMAP_SRC - RAM_TO_FILE + (row - 10) * 16 + (column - 2) * 4 + plane]
+    return None if entry == 0xFF else entry
+
+
+def drawable(exe: bytes, index: int) -> bool:
+    """Whether the renderer can actually put this index on screen.
+
+    The font occupies VRAM y 0..467 on one page column, which spans two texture pages
+    vertically.  V is `(row * 12) & 0xFF` and is right for both halves; what separates
+    them is the texture page, and the page is chosen per glyph by the classifier, which
+    only knows the four strip V values.  An ordinary row on the second page therefore
+    samples the first page at the same U and V and draws twelve rows of some other
+    cell -- correct position, wrong pixels, which reads in game as one character
+    smeared vertically into its neighbour.  Row 21 straddles the boundary and wraps,
+    so it is no better.  25 characters shipped this way in v129.
+    """
+    if remap_slot(exe, index) is not None:
+        return True
+    row = index // IPR
+    return row in STRIPS or (row + 1) * CELL <= 256
+
+
 def bitmap(exe: bytes, font: bytes, index: int) -> tuple[int, ...] | None:
     row = index // IPR
+    slot = remap_slot(exe, index)
+    if slot is not None:
+        return strip_bits(exe, STRIPS[STRIP_D_ROW], slot)
     if row in STRIPS and index - row * IPR < 52:
-        strip = exe[STRIPS[row] - RAM_TO_FILE:][:STRIP_BYTES]
-        column, plane = divmod(index - row * IPR, PLANES)
-        bit = 1 << plane
-        out = []
-        for y in range(CELL):
-            for x in range(CELL):
-                px = column * CELL + x
-                byte = strip[y * STRIP_ROW_BYTES + px // 2]
-                out.append(1 if (byte & 0x0F if px % 2 == 0 else byte >> 4) & bit else 0)
-        return tuple(out)
+        return strip_bits(exe, STRIPS[row], index - row * IPR)
     if row >= 512 // CELL:
         return None
     column, plane = divmod(index - row * IPR, PLANES)
@@ -110,21 +159,74 @@ def bitmap(exe: bytes, font: bytes, index: int) -> tuple[int, ...] | None:
                  for y in range(CELL) for x in range(CELL))
 
 
+# Where each Latin capital sits in the ORIGINAL disc's font. Found by aligning the
+# original script's own bytes against its own decoded text -- these are the only ASCII
+# letters it uses -- and confirmed by reading the cells: unmistakable H, L, M, P, R.
+LATIN_ON_THE_ORIGINAL = {"H": 469, "L": 825, "M": 553, "P": 363, "R": 732}
+_original_font: list[bytes] = []
+
+
+def original_cell(index: int) -> tuple[int, ...] | None:
+    """A 12x12 cell as the untouched disc drew it, for use as a reference picture."""
+    if not _original_font:
+        with zipfile.ZipFile(ORIGINAL_ZIP) as archive:
+            _original_font.append(archive.read("COMM.IMG"))
+    row, remainder = divmod(index, IPR)
+    column, plane = divmod(remainder, PLANES)
+    bit = 1 << plane
+    return tuple(1 if get_pixel(_original_font[0], column * CELL + x, row * CELL + y) & bit
+                 else 0 for y in range(CELL) for x in range(CELL))
+
+
 def build_encoder(exe: bytes, font: bytes) -> dict[str, bytes]:
-    """char -> code, read out of the built archive rather than any CSV."""
+    """char -> code, read out of the built archive rather than any CSV.
+
+    Every code form lands in one continuous index space and the arithmetic is the
+    decoder's own. A one-byte code 0x01..0xDC is index `code - 1`. The two-byte range
+    continues exactly where that ends -- `DD 01` is index 220, and the one-byte range
+    stops at 219 -- as `(lead - 0xDD) * 255 + trail + 0xDB`. E9/EA go through the
+    lookup table. So the honest way to build this table is to enumerate all three,
+    resolve each to an index, read the 12x12 cell back out of the build and name it.
+
+    The one-byte half of that space was never looked at. The table was hardcoded to 26
+    ASCII codes and the other 194 were invisible, though 118 of them hold Korean --
+    괄, 량 and 덕 among them, which the editor called impossible while the game drew
+    them on screen. The mapping is confirmed twice over: against the original script's
+    own decoded text it agrees on all 18 ASCII codes that appear there, and the three
+    Korean ones read back as their gulim renders at exactly `code - 1`.
+
+    Two-byte codes are assigned first and one-byte codes only fill what is left. A
+    character that already has a code keeps it: the same syllable can sit in several
+    cells, the renderer's advance is a property of the cell, and swapping a working
+    line onto a different cell to save a byte is not a trade this build should make
+    silently.
+    """
     lut = struct.unpack_from(f"<{LOOKUP_N}H", exe, LOOKUP_SRC - RAM_TO_FILE)
     shapes: dict[tuple[int, ...], str] = pickle.loads(CACHE.read_bytes())
-    codes: dict[int, bytes] = {}
+    wide: dict[int, bytes] = {}
     for lead in range(0xDD, 0xE9):
         for trail in range(0x01, 0xFF):
-            codes.setdefault((lead - 0xDD) * 255 + trail + 0xDB, bytes((lead, trail)))
+            wide.setdefault((lead - 0xDD) * 255 + trail + 0xDB, bytes((lead, trail)))
     for slot, index in enumerate(lut):
-        codes.setdefault(index, bytes((0xE9 + slot // 254, slot % 254 + 1)))
+        wide.setdefault(index, bytes((0xE9 + slot // 254, slot % 254 + 1)))
+    narrow = {code - 1: bytes((code,)) for code in range(0x01, 0xDD)}
+
+    # Short codes first. A one-byte code costs half what a two-byte one does, and v138
+    # moved the commonest syllables into the low cells precisely so this preference has
+    # something to find. Codes 1..26 are set before the sweep and keep the digits and
+    # punctuation the UI depends on.
     table: dict[str, bytes] = {chr(i + 32): bytes((i + 1,)) for i in range(26)}
-    for index, code in sorted(codes.items()):
-        bits = bitmap(exe, font, index)
-        if bits and any(bits) and (char := shapes.get(bits)):
-            table.setdefault(char, code)
+    by_bits: dict[tuple[int, ...], bytes] = {}
+    for codes in (narrow, wide):
+        for index, code in sorted(codes.items()):
+            if not drawable(exe, index):
+                continue    # lower index wins below, and the broken twin sorts first
+            bits = bitmap(exe, font, index)
+            if not bits or not any(bits):
+                continue
+            by_bits.setdefault(bits, code)
+            if char := shapes.get(bits):
+                table.setdefault(char, code)
 
     # Punctuation and Latin cannot be named this way: the rendered-glyph table only
     # holds Hangul, so a colon and a question mark read back as unknown even though
@@ -146,8 +248,32 @@ def build_encoder(exe: bytes, font: bytes) -> dict[str, bytes]:
                     continue
                 index = (lead - 0xDD) * 255 + trail + 0xDB
                 bits = bitmap(exe, font, index)
-                if bits and any(bits):
+                if bits and any(bits) and drawable(exe, index):
                     table[char] = bytes((lead, trail))
+
+    # The Latin capitals. The rendered-glyph table names only Hangul, so these were
+    # invisible and every line with HP, MP or LR was refused for no reason. Naming them
+    # by hand would be another guess, and guesses about glyphs have cost this project
+    # several builds, so each one is taken as a picture off the ORIGINAL disc and looked
+    # for in this build. Where it turns up, that is the code; a letter whose cell was
+    # overwritten simply does not resolve, which is the right answer and needs no
+    # special case. R is in exactly that state -- the original draws it at index 732 and
+    # a Korean syllable now sits there -- so R stays unwritable until it is restored.
+    for char, source in LATIN_ON_THE_ORIGINAL.items():
+        want = original_cell(source)
+        if char not in table and want and any(want) and (code := by_bits.get(want)):
+            table[char] = code
+
+    # The corner brackets, for wrapping an item name: 「비단 띠」. Unlike the Latin
+    # capitals these are not named anywhere -- the original script never uses them in a
+    # line that decodes cleanly -- so they are identified by shape, which is
+    # unambiguous: 0x5B is a bar along the top with the stroke dropping from its left
+    # end, 0x5A its 180-degree rotation. They run the full height of the cell rather
+    # than the upper quarter a Japanese font would use, so they read as tall brackets.
+    for char, code in {"「": b"\x5B", "」": b"\x5A"}.items():
+        bits = bitmap(exe, font, code[0] - 1)
+        if char not in table and bits and any(bits) and drawable(exe, code[0] - 1):
+            table[char] = code
     return table
 
 

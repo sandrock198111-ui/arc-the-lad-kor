@@ -80,3 +80,7 @@ Desktop.ini
 
 # Local Codex desktop preferences are machine-specific.
 .claude/settings.local.json
+
+# Working backups the editors and builders leave behind. The CSV is a megabyte
+# and there are a dozen copies; the history in git is the record that matters.
+05_docs/*.bak
