@@ -151,6 +151,8 @@ def carry_memory_card(stem: str) -> str | None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("patch_zip", type=Path)
+    parser.add_argument("--name", default=None,
+                        help="disc file stem, e.g. TEST2. Default: the first free TEST name")
     args = parser.parse_args()
     patch_zip = args.patch_zip.resolve()
     if not patch_zip.exists():
@@ -160,7 +162,14 @@ def main() -> None:
 
     ensure_tree()
     restored, applied = restore_and_apply(patch_zip)
-    binary, cue, stem = free_name()
+    if args.name:
+        stem = args.name
+        binary, cue = BIN.with_name(f"{stem}.bin"), CUE.with_name(f"{stem}.cue")
+        for stale in (binary, cue):
+            if stale.exists():
+                stale.unlink()
+    else:
+        binary, cue, stem = free_name()
     xml_path = WORK / f"{stem}.xml"
     lba_path = WORK / f"{stem}_lba.txt"
     write_xml(xml_path, binary, cue)

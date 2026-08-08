@@ -53,10 +53,15 @@ def clone(info: ZipInfo) -> ZipInfo:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--font", choices=("v151", "original"), default="v151",
-                        help="v151 keeps the 543 Hangul cells; original removes them")
+    parser.add_argument("--font", choices=("v151", "original", "blank140"), default="v151",
+                        help="v151 keeps every cell; original removes them all; "
+                             "blank140 restores only the 140 cells the disc left empty")
     parser.add_argument("--strips", default="",
                         help="comma separated subset of A,B,C to blank (default none)")
+    parser.add_argument("--revert-rows", default="",
+                        help="e.g. 0-7: put those atlas rows back to the original disc, "
+                             "for bisecting the cells that were not blank to begin with")
+    parser.add_argument("--tag", default="", help="extra label for the output name")
     args = parser.parse_args()
     wanted = [s.strip().upper() for s in args.strips.split(",") if s.strip()]
     for name in wanted:
@@ -71,6 +76,28 @@ def main() -> None:
     if args.font == "original":
         with ZipFile(PRISTINE) as pristine:
             members["COMM.IMG"] = pristine.read("COMM.IMG")
+    elif args.font == "blank140":
+        with ZipFile(ROOT / "03_output/DIAG_blank_all_filled_cells.zip") as blanked:
+            members["COMM.IMG"] = blanked.read("COMM.IMG")
+
+    reverted = 0
+    if args.revert_rows:
+        lo, _, hi = args.revert_rows.partition("-")
+        lo, hi = int(lo), int(hi or lo)
+        with ZipFile(PRISTINE) as pristine:
+            original = pristine.read("COMM.IMG")
+        font = bytearray(members["COMM.IMG"])
+        stride = 1792 // 2
+        for row in range(lo, hi + 1):
+            for col in range(21):
+                touched = False
+                for dy in range(12):
+                    at = (row * 12 + dy) * stride + (col * 12) // 2
+                    if font[at:at + 6] != original[at:at + 6]:
+                        touched = True
+                    font[at:at + 6] = original[at:at + 6]
+                reverted += touched
+        members["COMM.IMG"] = bytes(font)
 
     exe = bytearray(members["PSX.EXE"])
     cleared = 0
@@ -87,7 +114,12 @@ def main() -> None:
         if len(data) != sizes[name]:
             raise SystemExit(f"{name} changed size")
 
-    tag = f"font{'ORIG' if args.font == 'original' else 'V151'}_strips{''.join(wanted) or 'KEPT'}"
+    label = {"original": "ORIG", "blank140": "BLANK140", "v151": "V151"}[args.font]
+    tag = f"font{label}_strips{''.join(wanted) or 'KEPT'}"
+    if args.revert_rows:
+        tag += f"_rows{args.revert_rows}"
+    if args.tag:
+        tag += f"_{args.tag}"
     out = ROOT / "03_output" / f"DIAG_{tag}.zip"
     with ZipFile(out, "w", zipfile.ZIP_DEFLATED) as archive:
         for info in infos:
@@ -96,12 +128,16 @@ def main() -> None:
     print("진단용 빌드 (배포 금지)")
     print(f"  output  {out.name}")
     print(f"  sha256  {hashlib.sha256(out.read_bytes()).hexdigest().upper()}")
-    print(f"  COMM.IMG  {'원본 (한글 칸 543개 없음)' if args.font == 'original' else 'v151 그대로'}")
+    print("  COMM.IMG  " + {"original": "통째 원본",
+                            "blank140": "원본이 비워 뒀던 140칸만 되돌림",
+                            "v151": "v151 그대로"}[args.font])
     if wanted:
         rows = ", ".join(f"{n}(y {STRIPS[n][1]})" for n in wanted)
         print(f"  비운 스트립  {rows} -- 픽셀 {cleared}바이트")
     else:
         print("  스트립  셋 다 그대로")
+    if args.revert_rows:
+        print(f"  원본으로 되돌린 칸  아틀라스 행 {args.revert_rows} 안에서 {reverted}칸")
 
 
 if __name__ == "__main__":
