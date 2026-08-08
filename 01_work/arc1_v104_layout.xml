@@ -1,0 +1,568 @@
+<iso_project image_name="mkpsxiso.bin" cue_sheet="mkpsxiso.cue">
+    <track type="data" xa_edc="false" new_type="false">
+        <identifiers system="PLAYSTATION" application="PLAYSTATION" creation_date="1995052420065100+36"/>
+        <license file="out/license_data.dat"/>
+        <default_attributes gmt_offs="36" xa_attrib="16" xa_perm="1365" xa_gid="0" xa_uid="0"/>
+        <directory_tree>
+            <dummy sectors="284" type="0"/>
+            <file name="COMM.DAT" source="out/COMM.DAT" type="data"/>
+            <file name="COMM.IMG" source="out/COMM.IMG" type="data"/>
+            <file name="COMM.SND" source="out/COMM.SND" type="data"/>
+            <file name="S000.DAT" source="out/S000.DAT" type="data"/>
+            <file name="S000.IMG" source="out/S000.IMG" type="data"/>
+            <dir name="1" source="out/1">
+                <file name="S1011.DAT" source="out/1/S1011.DAT" type="data"/>
+                <file name="S1011.IMG" source="out/1/S1011.IMG" type="data"/>
+                <file name="S1012.DAT" source="out/1/S1012.DAT" type="data"/>
+                <file name="S1012.IMG" source="out/1/S1012.IMG" type="data"/>
+                <file name="S1013.DAT" source="out/1/S1013.DAT" type="data"/>
+                <file name="S1013.IMG" source="out/1/S1013.IMG" type="data"/>
+                <file name="S1021.DAT" source="out/1/S1021.DAT" type="data"/>
+                <file name="S1021.IMG" source="out/1/S1021.IMG" type="data"/>
+                <file name="S1022.DAT" source="out/1/S1022.DAT" type="data"/>
+                <file name="S1022.IMG" source="out/1/S1022.IMG" type="data"/>
+                <file name="S1023.DAT" source="out/1/S1023.DAT" type="data"/>
+                <file name="S1023.IMG" source="out/1/S1023.IMG" type="data"/>
+                <file name="S1031.DAT" source="out/1/S1031.DAT" type="data"/>
+                <file name="S1031.IMG" source="out/1/S1031.IMG" type="data"/>
+                <file name="S1032.DAT" source="out/1/S1032.DAT" type="data"/>
+                <file name="S1032.IMG" source="out/1/S1032.IMG" type="data"/>
+                <file name="S1041.DAT" source="out/1/S1041.DAT" type="data"/>
+                <file name="S1041.IMG" source="out/1/S1041.IMG" type="data"/>
+                <file name="S1051.DAT" source="out/1/S1051.DAT" type="data"/>
+                <file name="S1051.IMG" source="out/1/S1051.IMG" type="data"/>
+                <file name="S1061.DAT" source="out/1/S1061.DAT" type="data"/>
+                <file name="S1061.IMG" source="out/1/S1061.IMG" type="data"/>
+                <file name="S1071.DAT" source="out/1/S1071.DAT" type="data"/>
+                <file name="S1071.IMG" source="out/1/S1071.IMG" type="data"/>
+                <file name="S1072.DAT" source="out/1/S1072.DAT" type="data"/>
+                <file name="S1072.IMG" source="out/1/S1072.IMG" type="data"/>
+            </dir>
+            <dir name="21" source="out/21">
+                <file name="S2011.DAT" source="out/21/S2011.DAT" type="data"/>
+                <file name="S2011.IMG" source="out/21/S2011.IMG" type="data"/>
+                <file name="S2012.DAT" source="out/21/S2012.DAT" type="data"/>
+                <file name="S2012.IMG" source="out/21/S2012.IMG" type="data"/>
+                <file name="S2013.DAT" source="out/21/S2013.DAT" type="data"/>
+                <file name="S2013.IMG" source="out/21/S2013.IMG" type="data"/>
+                <file name="S2014.DAT" source="out/21/S2014.DAT" type="data"/>
+                <file name="S2014.IMG" source="out/21/S2014.IMG" type="data"/>
+                <file name="S2021.DAT" source="out/21/S2021.DAT" type="data"/>
+                <file name="S2021.IMG" source="out/21/S2021.IMG" type="data"/>
+                <file name="S2022.DAT" source="out/21/S2022.DAT" type="data"/>
+                <file name="S2022.IMG" source="out/21/S2022.IMG" type="data"/>
+                <file name="S2031.DAT" source="out/21/S2031.DAT" type="data"/>
+                <file name="S2031.IMG" source="out/21/S2031.IMG" type="data"/>
+                <file name="S2032.DAT" source="out/21/S2032.DAT" type="data"/>
+                <file name="S2032.IMG" source="out/21/S2032.IMG" type="data"/>
+                <file name="S2033.DAT" source="out/21/S2033.DAT" type="data"/>
+                <file name="S2033.IMG" source="out/21/S2033.IMG" type="data"/>
+                <file name="S2034.DAT" source="out/21/S2034.DAT" type="data"/>
+                <file name="S2034.IMG" source="out/21/S2034.IMG" type="data"/>
+                <file name="S2041.DAT" source="out/21/S2041.DAT" type="data"/>
+                <file name="S2041.IMG" source="out/21/S2041.IMG" type="data"/>
+                <file name="S2042.DAT" source="out/21/S2042.DAT" type="data"/>
+                <file name="S2042.IMG" source="out/21/S2042.IMG" type="data"/>
+                <file name="S2043.DAT" source="out/21/S2043.DAT" type="data"/>
+                <file name="S2043.IMG" source="out/21/S2043.IMG" type="data"/>
+                <file name="S2044.DAT" source="out/21/S2044.DAT" type="data"/>
+                <file name="S2044.IMG" source="out/21/S2044.IMG" type="data"/>
+                <file name="S2045.DAT" source="out/21/S2045.DAT" type="data"/>
+                <file name="S2045.IMG" source="out/21/S2045.IMG" type="data"/>
+            </dir>
+            <dir name="22" source="out/22">
+                <file name="S2046.DAT" source="out/22/S2046.DAT" type="data"/>
+                <file name="S2046.IMG" source="out/22/S2046.IMG" type="data"/>
+                <file name="S2047.DAT" source="out/22/S2047.DAT" type="data"/>
+                <file name="S2047.IMG" source="out/22/S2047.IMG" type="data"/>
+                <file name="S2051.DAT" source="out/22/S2051.DAT" type="data"/>
+                <file name="S2051.IMG" source="out/22/S2051.IMG" type="data"/>
+                <file name="S2052.DAT" source="out/22/S2052.DAT" type="data"/>
+                <file name="S2052.IMG" source="out/22/S2052.IMG" type="data"/>
+                <file name="S2053.DAT" source="out/22/S2053.DAT" type="data"/>
+                <file name="S2053.IMG" source="out/22/S2053.IMG" type="data"/>
+                <file name="S2054.DAT" source="out/22/S2054.DAT" type="data"/>
+                <file name="S2054.IMG" source="out/22/S2054.IMG" type="data"/>
+                <file name="S2055.DAT" source="out/22/S2055.DAT" type="data"/>
+                <file name="S2055.IMG" source="out/22/S2055.IMG" type="data"/>
+                <file name="S2056.DAT" source="out/22/S2056.DAT" type="data"/>
+                <file name="S2056.IMG" source="out/22/S2056.IMG" type="data"/>
+                <file name="S2057.DAT" source="out/22/S2057.DAT" type="data"/>
+                <file name="S2057.IMG" source="out/22/S2057.IMG" type="data"/>
+                <file name="S2058.DAT" source="out/22/S2058.DAT" type="data"/>
+                <file name="S2058.IMG" source="out/22/S2058.IMG" type="data"/>
+                <file name="S2059.DAT" source="out/22/S2059.DAT" type="data"/>
+                <file name="S2059.IMG" source="out/22/S2059.IMG" type="data"/>
+                <file name="S205A.DAT" source="out/22/S205A.DAT" type="data"/>
+                <file name="S205A.IMG" source="out/22/S205A.IMG" type="data"/>
+                <file name="S205B.DAT" source="out/22/S205B.DAT" type="data"/>
+                <file name="S205B.IMG" source="out/22/S205B.IMG" type="data"/>
+                <file name="S205C.DAT" source="out/22/S205C.DAT" type="data"/>
+                <file name="S205C.IMG" source="out/22/S205C.IMG" type="data"/>
+            </dir>
+            <dir name="23" source="out/23">
+                <file name="S2061.DAT" source="out/23/S2061.DAT" type="data"/>
+                <file name="S2061.IMG" source="out/23/S2061.IMG" type="data"/>
+                <file name="S2071.DAT" source="out/23/S2071.DAT" type="data"/>
+                <file name="S2071.IMG" source="out/23/S2071.IMG" type="data"/>
+                <file name="S2081.DAT" source="out/23/S2081.DAT" type="data"/>
+                <file name="S2081.IMG" source="out/23/S2081.IMG" type="data"/>
+                <file name="S2082.DAT" source="out/23/S2082.DAT" type="data"/>
+                <file name="S2082.IMG" source="out/23/S2082.IMG" type="data"/>
+            </dir>
+            <dir name="31" source="out/31">
+                <file name="S3011.DAT" source="out/31/S3011.DAT" type="data"/>
+                <file name="S3011.IMG" source="out/31/S3011.IMG" type="data"/>
+                <file name="S3012.DAT" source="out/31/S3012.DAT" type="data"/>
+                <file name="S3012.IMG" source="out/31/S3012.IMG" type="data"/>
+                <file name="S3013.DAT" source="out/31/S3013.DAT" type="data"/>
+                <file name="S3013.IMG" source="out/31/S3013.IMG" type="data"/>
+                <file name="S3014.DAT" source="out/31/S3014.DAT" type="data"/>
+                <file name="S3014.IMG" source="out/31/S3014.IMG" type="data"/>
+                <file name="S3021.DAT" source="out/31/S3021.DAT" type="data"/>
+                <file name="S3021.IMG" source="out/31/S3021.IMG" type="data"/>
+                <file name="S3022.DAT" source="out/31/S3022.DAT" type="data"/>
+                <file name="S3022.IMG" source="out/31/S3022.IMG" type="data"/>
+                <file name="S3023.DAT" source="out/31/S3023.DAT" type="data"/>
+                <file name="S3023.IMG" source="out/31/S3023.IMG" type="data"/>
+                <file name="S3024.DAT" source="out/31/S3024.DAT" type="data"/>
+                <file name="S3024.IMG" source="out/31/S3024.IMG" type="data"/>
+                <file name="S3031.DAT" source="out/31/S3031.DAT" type="data"/>
+                <file name="S3031.IMG" source="out/31/S3031.IMG" type="data"/>
+                <file name="S3032.DAT" source="out/31/S3032.DAT" type="data"/>
+                <file name="S3032.IMG" source="out/31/S3032.IMG" type="data"/>
+                <file name="S3041.DAT" source="out/31/S3041.DAT" type="data"/>
+                <file name="S3041.IMG" source="out/31/S3041.IMG" type="data"/>
+            </dir>
+            <dir name="32" source="out/32">
+                <file name="S3051.DAT" source="out/32/S3051.DAT" type="data"/>
+                <file name="S3051.IMG" source="out/32/S3051.IMG" type="data"/>
+                <file name="S3061.DAT" source="out/32/S3061.DAT" type="data"/>
+                <file name="S3061.IMG" source="out/32/S3061.IMG" type="data"/>
+                <file name="S3062.DAT" source="out/32/S3062.DAT" type="data"/>
+                <file name="S3062.IMG" source="out/32/S3062.IMG" type="data"/>
+                <file name="S3063.DAT" source="out/32/S3063.DAT" type="data"/>
+                <file name="S3063.IMG" source="out/32/S3063.IMG" type="data"/>
+                <file name="S3064.DAT" source="out/32/S3064.DAT" type="data"/>
+                <file name="S3064.IMG" source="out/32/S3064.IMG" type="data"/>
+                <file name="S3065.DAT" source="out/32/S3065.DAT" type="data"/>
+                <file name="S3065.IMG" source="out/32/S3065.IMG" type="data"/>
+                <file name="S3066.DAT" source="out/32/S3066.DAT" type="data"/>
+                <file name="S3066.IMG" source="out/32/S3066.IMG" type="data"/>
+                <file name="S3067.DAT" source="out/32/S3067.DAT" type="data"/>
+                <file name="S3067.IMG" source="out/32/S3067.IMG" type="data"/>
+                <file name="S3068.DAT" source="out/32/S3068.DAT" type="data"/>
+                <file name="S3068.IMG" source="out/32/S3068.IMG" type="data"/>
+            </dir>
+            <dir name="4" source="out/4">
+                <file name="S4011.DAT" source="out/4/S4011.DAT" type="data"/>
+                <file name="S4011.IMG" source="out/4/S4011.IMG" type="data"/>
+                <file name="S4012.DAT" source="out/4/S4012.DAT" type="data"/>
+                <file name="S4012.IMG" source="out/4/S4012.IMG" type="data"/>
+                <file name="S4013.DAT" source="out/4/S4013.DAT" type="data"/>
+                <file name="S4013.IMG" source="out/4/S4013.IMG" type="data"/>
+                <file name="S4021.DAT" source="out/4/S4021.DAT" type="data"/>
+                <file name="S4021.IMG" source="out/4/S4021.IMG" type="data"/>
+                <file name="S4022.DAT" source="out/4/S4022.DAT" type="data"/>
+                <file name="S4022.IMG" source="out/4/S4022.IMG" type="data"/>
+                <file name="S4031.DAT" source="out/4/S4031.DAT" type="data"/>
+                <file name="S4031.IMG" source="out/4/S4031.IMG" type="data"/>
+                <file name="S4032.DAT" source="out/4/S4032.DAT" type="data"/>
+                <file name="S4032.IMG" source="out/4/S4032.IMG" type="data"/>
+                <file name="S4033.DAT" source="out/4/S4033.DAT" type="data"/>
+                <file name="S4033.IMG" source="out/4/S4033.IMG" type="data"/>
+                <file name="S4034.DAT" source="out/4/S4034.DAT" type="data"/>
+                <file name="S4034.IMG" source="out/4/S4034.IMG" type="data"/>
+                <file name="S4035.DAT" source="out/4/S4035.DAT" type="data"/>
+                <file name="S4035.IMG" source="out/4/S4035.IMG" type="data"/>
+                <file name="S4036.DAT" source="out/4/S4036.DAT" type="data"/>
+                <file name="S4036.IMG" source="out/4/S4036.IMG" type="data"/>
+                <file name="S4041.DAT" source="out/4/S4041.DAT" type="data"/>
+                <file name="S4041.IMG" source="out/4/S4041.IMG" type="data"/>
+                <file name="S4051.DAT" source="out/4/S4051.DAT" type="data"/>
+                <file name="S4051.IMG" source="out/4/S4051.IMG" type="data"/>
+                <file name="S4061.DAT" source="out/4/S4061.DAT" type="data"/>
+                <file name="S4061.IMG" source="out/4/S4061.IMG" type="data"/>
+                <file name="S4062.DAT" source="out/4/S4062.DAT" type="data"/>
+                <file name="S4062.IMG" source="out/4/S4062.IMG" type="data"/>
+            </dir>
+            <dir name="5" source="out/5">
+                <file name="S5011.DAT" source="out/5/S5011.DAT" type="data"/>
+                <file name="S5011.IMG" source="out/5/S5011.IMG" type="data"/>
+                <file name="S5012.DAT" source="out/5/S5012.DAT" type="data"/>
+                <file name="S5012.IMG" source="out/5/S5012.IMG" type="data"/>
+                <file name="S5013.DAT" source="out/5/S5013.DAT" type="data"/>
+                <file name="S5013.IMG" source="out/5/S5013.IMG" type="data"/>
+                <file name="S5021.DAT" source="out/5/S5021.DAT" type="data"/>
+                <file name="S5021.IMG" source="out/5/S5021.IMG" type="data"/>
+                <file name="S5022.DAT" source="out/5/S5022.DAT" type="data"/>
+                <file name="S5022.IMG" source="out/5/S5022.IMG" type="data"/>
+                <file name="S5023.DAT" source="out/5/S5023.DAT" type="data"/>
+                <file name="S5023.IMG" source="out/5/S5023.IMG" type="data"/>
+                <file name="S5024.DAT" source="out/5/S5024.DAT" type="data"/>
+                <file name="S5024.IMG" source="out/5/S5024.IMG" type="data"/>
+                <file name="S5025.DAT" source="out/5/S5025.DAT" type="data"/>
+                <file name="S5025.IMG" source="out/5/S5025.IMG" type="data"/>
+                <file name="S5026.DAT" source="out/5/S5026.DAT" type="data"/>
+                <file name="S5026.IMG" source="out/5/S5026.IMG" type="data"/>
+                <file name="S5031.DAT" source="out/5/S5031.DAT" type="data"/>
+                <file name="S5031.IMG" source="out/5/S5031.IMG" type="data"/>
+                <file name="S5032.DAT" source="out/5/S5032.DAT" type="data"/>
+                <file name="S5032.IMG" source="out/5/S5032.IMG" type="data"/>
+                <file name="S5041.DAT" source="out/5/S5041.DAT" type="data"/>
+                <file name="S5041.IMG" source="out/5/S5041.IMG" type="data"/>
+                <file name="S5051.DAT" source="out/5/S5051.DAT" type="data"/>
+                <file name="S5051.IMG" source="out/5/S5051.IMG" type="data"/>
+                <file name="S5052.DAT" source="out/5/S5052.DAT" type="data"/>
+                <file name="S5052.IMG" source="out/5/S5052.IMG" type="data"/>
+            </dir>
+            <dir name="6" source="out/6">
+                <file name="S6011.DAT" source="out/6/S6011.DAT" type="data"/>
+                <file name="S6011.IMG" source="out/6/S6011.IMG" type="data"/>
+                <file name="S6012.DAT" source="out/6/S6012.DAT" type="data"/>
+                <file name="S6012.IMG" source="out/6/S6012.IMG" type="data"/>
+                <file name="S6013.DAT" source="out/6/S6013.DAT" type="data"/>
+                <file name="S6013.IMG" source="out/6/S6013.IMG" type="data"/>
+                <file name="S6014.DAT" source="out/6/S6014.DAT" type="data"/>
+                <file name="S6014.IMG" source="out/6/S6014.IMG" type="data"/>
+                <file name="S6021.DAT" source="out/6/S6021.DAT" type="data"/>
+                <file name="S6021.IMG" source="out/6/S6021.IMG" type="data"/>
+                <file name="S6022.DAT" source="out/6/S6022.DAT" type="data"/>
+                <file name="S6022.IMG" source="out/6/S6022.IMG" type="data"/>
+                <file name="S6031.DAT" source="out/6/S6031.DAT" type="data"/>
+                <file name="S6031.IMG" source="out/6/S6031.IMG" type="data"/>
+                <file name="S6032.DAT" source="out/6/S6032.DAT" type="data"/>
+                <file name="S6032.IMG" source="out/6/S6032.IMG" type="data"/>
+                <file name="S6041.DAT" source="out/6/S6041.DAT" type="data"/>
+                <file name="S6041.IMG" source="out/6/S6041.IMG" type="data"/>
+                <file name="S6051.DAT" source="out/6/S6051.DAT" type="data"/>
+                <file name="S6051.IMG" source="out/6/S6051.IMG" type="data"/>
+                <file name="S6052.DAT" source="out/6/S6052.DAT" type="data"/>
+                <file name="S6052.IMG" source="out/6/S6052.IMG" type="data"/>
+                <file name="S6053.DAT" source="out/6/S6053.DAT" type="data"/>
+                <file name="S6053.IMG" source="out/6/S6053.IMG" type="data"/>
+                <file name="S6054.DAT" source="out/6/S6054.DAT" type="data"/>
+                <file name="S6054.IMG" source="out/6/S6054.IMG" type="data"/>
+            </dir>
+            <dir name="7" source="out/7">
+                <file name="S7011.DAT" source="out/7/S7011.DAT" type="data"/>
+                <file name="S7011.IMG" source="out/7/S7011.IMG" type="data"/>
+                <file name="S7012.DAT" source="out/7/S7012.DAT" type="data"/>
+                <file name="S7012.IMG" source="out/7/S7012.IMG" type="data"/>
+                <file name="S7021.DAT" source="out/7/S7021.DAT" type="data"/>
+                <file name="S7021.IMG" source="out/7/S7021.IMG" type="data"/>
+                <file name="S7022.DAT" source="out/7/S7022.DAT" type="data"/>
+                <file name="S7022.IMG" source="out/7/S7022.IMG" type="data"/>
+                <file name="S7023.DAT" source="out/7/S7023.DAT" type="data"/>
+                <file name="S7023.IMG" source="out/7/S7023.IMG" type="data"/>
+                <file name="S7024.DAT" source="out/7/S7024.DAT" type="data"/>
+                <file name="S7024.IMG" source="out/7/S7024.IMG" type="data"/>
+                <file name="S7025.DAT" source="out/7/S7025.DAT" type="data"/>
+                <file name="S7025.IMG" source="out/7/S7025.IMG" type="data"/>
+                <file name="S7026.DAT" source="out/7/S7026.DAT" type="data"/>
+                <file name="S7026.IMG" source="out/7/S7026.IMG" type="data"/>
+                <file name="S7027.DAT" source="out/7/S7027.DAT" type="data"/>
+                <file name="S7027.IMG" source="out/7/S7027.IMG" type="data"/>
+                <file name="S7028.DAT" source="out/7/S7028.DAT" type="data"/>
+                <file name="S7028.IMG" source="out/7/S7028.IMG" type="data"/>
+                <file name="S7031.DAT" source="out/7/S7031.DAT" type="data"/>
+                <file name="S7031.IMG" source="out/7/S7031.IMG" type="data"/>
+                <file name="S7032.DAT" source="out/7/S7032.DAT" type="data"/>
+                <file name="S7032.IMG" source="out/7/S7032.IMG" type="data"/>
+            </dir>
+            <dir name="8" source="out/8">
+                <file name="S8011.DAT" source="out/8/S8011.DAT" type="data"/>
+                <file name="S8011.IMG" source="out/8/S8011.IMG" type="data"/>
+                <file name="S8012.DAT" source="out/8/S8012.DAT" type="data"/>
+                <file name="S8012.IMG" source="out/8/S8012.IMG" type="data"/>
+                <file name="S8013.DAT" source="out/8/S8013.DAT" type="data"/>
+                <file name="S8013.IMG" source="out/8/S8013.IMG" type="data"/>
+                <file name="S8021.DAT" source="out/8/S8021.DAT" type="data"/>
+                <file name="S8021.IMG" source="out/8/S8021.IMG" type="data"/>
+                <file name="S8031.DAT" source="out/8/S8031.DAT" type="data"/>
+                <file name="S8031.IMG" source="out/8/S8031.IMG" type="data"/>
+                <file name="S8041.DAT" source="out/8/S8041.DAT" type="data"/>
+                <file name="S8041.IMG" source="out/8/S8041.IMG" type="data"/>
+                <file name="S8051.DAT" source="out/8/S8051.DAT" type="data"/>
+                <file name="S8051.IMG" source="out/8/S8051.IMG" type="data"/>
+                <file name="S8061.DAT" source="out/8/S8061.DAT" type="data"/>
+                <file name="S8061.IMG" source="out/8/S8061.IMG" type="data"/>
+                <file name="S8062.DAT" source="out/8/S8062.DAT" type="data"/>
+                <file name="S8062.IMG" source="out/8/S8062.IMG" type="data"/>
+            </dir>
+            <dir name="9" source="out/9">
+                <file name="S9011.DAT" source="out/9/S9011.DAT" type="data"/>
+                <file name="S9011.IMG" source="out/9/S9011.IMG" type="data"/>
+                <file name="S9012.DAT" source="out/9/S9012.DAT" type="data"/>
+                <file name="S9012.IMG" source="out/9/S9012.IMG" type="data"/>
+                <file name="S9013.DAT" source="out/9/S9013.DAT" type="data"/>
+                <file name="S9013.IMG" source="out/9/S9013.IMG" type="data"/>
+                <file name="S9021.DAT" source="out/9/S9021.DAT" type="data"/>
+                <file name="S9021.IMG" source="out/9/S9021.IMG" type="data"/>
+                <file name="S9031.DAT" source="out/9/S9031.DAT" type="data"/>
+                <file name="S9031.IMG" source="out/9/S9031.IMG" type="data"/>
+                <file name="S9041.DAT" source="out/9/S9041.DAT" type="data"/>
+                <file name="S9051.DAT" source="out/9/S9051.DAT" type="data"/>
+                <file name="S9051.IMG" source="out/9/S9051.IMG" type="data"/>
+            </dir>
+            <dir name="B" source="out/B">
+                <file name="SB011.DAT" source="out/B/SB011.DAT" type="data"/>
+                <file name="SB011.IMG" source="out/B/SB011.IMG" type="data"/>
+                <file name="SB021.DAT" source="out/B/SB021.DAT" type="data"/>
+                <file name="SB021.IMG" source="out/B/SB021.IMG" type="data"/>
+                <file name="SB022.DAT" source="out/B/SB022.DAT" type="data"/>
+                <file name="SB022.IMG" source="out/B/SB022.IMG" type="data"/>
+                <file name="SB031.DAT" source="out/B/SB031.DAT" type="data"/>
+                <file name="SB041.DAT" source="out/B/SB041.DAT" type="data"/>
+                <file name="SB041.IMG" source="out/B/SB041.IMG" type="data"/>
+                <file name="SB051.DAT" source="out/B/SB051.DAT" type="data"/>
+                <file name="SB051.IMG" source="out/B/SB051.IMG" type="data"/>
+                <file name="SB061.DAT" source="out/B/SB061.DAT" type="data"/>
+                <file name="SB071.DAT" source="out/B/SB071.DAT" type="data"/>
+                <file name="SB071.IMG" source="out/B/SB071.IMG" type="data"/>
+                <file name="SB072.DAT" source="out/B/SB072.DAT" type="data"/>
+                <file name="SB072.IMG" source="out/B/SB072.IMG" type="data"/>
+                <file name="SB081.DAT" source="out/B/SB081.DAT" type="data"/>
+                <file name="SB081.IMG" source="out/B/SB081.IMG" type="data"/>
+            </dir>
+            <dir name="C1" source="out/C1">
+                <file name="SC011.DAT" source="out/C1/SC011.DAT" type="data"/>
+                <file name="SC011.IMG" source="out/C1/SC011.IMG" type="data"/>
+                <file name="SC021.DAT" source="out/C1/SC021.DAT" type="data"/>
+                <file name="SC021.IMG" source="out/C1/SC021.IMG" type="data"/>
+                <file name="SC031.DAT" source="out/C1/SC031.DAT" type="data"/>
+                <file name="SC031.IMG" source="out/C1/SC031.IMG" type="data"/>
+                <file name="SC041.DAT" source="out/C1/SC041.DAT" type="data"/>
+                <file name="SC041.IMG" source="out/C1/SC041.IMG" type="data"/>
+                <file name="SC051.DAT" source="out/C1/SC051.DAT" type="data"/>
+                <file name="SC051.IMG" source="out/C1/SC051.IMG" type="data"/>
+                <file name="SC061.DAT" source="out/C1/SC061.DAT" type="data"/>
+                <file name="SC061.IMG" source="out/C1/SC061.IMG" type="data"/>
+                <file name="SC071.DAT" source="out/C1/SC071.DAT" type="data"/>
+                <file name="SC072.DAT" source="out/C1/SC072.DAT" type="data"/>
+                <file name="SC081.DAT" source="out/C1/SC081.DAT" type="data"/>
+                <file name="SC081.IMG" source="out/C1/SC081.IMG" type="data"/>
+                <file name="SC091.DAT" source="out/C1/SC091.DAT" type="data"/>
+                <file name="SC091.IMG" source="out/C1/SC091.IMG" type="data"/>
+            </dir>
+            <dir name="C2" source="out/C2">
+                <file name="SC0A1.DAT" source="out/C2/SC0A1.DAT" type="data"/>
+                <file name="SC0A1.IMG" source="out/C2/SC0A1.IMG" type="data"/>
+                <file name="SC0B1.DAT" source="out/C2/SC0B1.DAT" type="data"/>
+                <file name="SC0B1.IMG" source="out/C2/SC0B1.IMG" type="data"/>
+                <file name="SC0B2.DAT" source="out/C2/SC0B2.DAT" type="data"/>
+                <file name="SC0B2.IMG" source="out/C2/SC0B2.IMG" type="data"/>
+                <file name="SC0B3.DAT" source="out/C2/SC0B3.DAT" type="data"/>
+                <file name="SC0B3.IMG" source="out/C2/SC0B3.IMG" type="data"/>
+                <file name="SC0B4.DAT" source="out/C2/SC0B4.DAT" type="data"/>
+                <file name="SC0B4.IMG" source="out/C2/SC0B4.IMG" type="data"/>
+                <file name="SC0B5.DAT" source="out/C2/SC0B5.DAT" type="data"/>
+                <file name="SC0B5.IMG" source="out/C2/SC0B5.IMG" type="data"/>
+                <file name="SC0B6.DAT" source="out/C2/SC0B6.DAT" type="data"/>
+                <file name="SC0B6.IMG" source="out/C2/SC0B6.IMG" type="data"/>
+                <file name="SC0C1.DAT" source="out/C2/SC0C1.DAT" type="data"/>
+                <file name="SC0C1.IMG" source="out/C2/SC0C1.IMG" type="data"/>
+            </dir>
+            <dir name="D" source="out/D">
+                <file name="SD011.DAT" source="out/D/SD011.DAT" type="data"/>
+                <file name="SD011.IMG" source="out/D/SD011.IMG" type="data"/>
+                <file name="SD012.DAT" source="out/D/SD012.DAT" type="data"/>
+                <file name="SD012.IMG" source="out/D/SD012.IMG" type="data"/>
+                <file name="SD013.DAT" source="out/D/SD013.DAT" type="data"/>
+                <file name="SD013.IMG" source="out/D/SD013.IMG" type="data"/>
+                <file name="SD014.DAT" source="out/D/SD014.DAT" type="data"/>
+                <file name="SD014.IMG" source="out/D/SD014.IMG" type="data"/>
+                <file name="SD015.DAT" source="out/D/SD015.DAT" type="data"/>
+                <file name="SD015.IMG" source="out/D/SD015.IMG" type="data"/>
+                <file name="SD021.DAT" source="out/D/SD021.DAT" type="data"/>
+                <file name="SD021.IMG" source="out/D/SD021.IMG" type="data"/>
+                <file name="SD031.DAT" source="out/D/SD031.DAT" type="data"/>
+                <file name="SD031.IMG" source="out/D/SD031.IMG" type="data"/>
+                <file name="SD041.DAT" source="out/D/SD041.DAT" type="data"/>
+                <file name="SD041.IMG" source="out/D/SD041.IMG" type="data"/>
+                <file name="SD051.DAT" source="out/D/SD051.DAT" type="data"/>
+                <file name="SD061.DAT" source="out/D/SD061.DAT" type="data"/>
+                <file name="SD071.DAT" source="out/D/SD071.DAT" type="data"/>
+                <file name="SD071.IMG" source="out/D/SD071.IMG" type="data"/>
+            </dir>
+            <dir name="E1" source="out/E1">
+                <file name="SE01.IMG" source="out/E1/SE01.IMG" type="data"/>
+                <file name="SE011.DAT" source="out/E1/SE011.DAT" type="data"/>
+                <file name="SE012.DAT" source="out/E1/SE012.DAT" type="data"/>
+                <file name="SE013.DAT" source="out/E1/SE013.DAT" type="data"/>
+                <file name="SE014.DAT" source="out/E1/SE014.DAT" type="data"/>
+                <file name="SE015.DAT" source="out/E1/SE015.DAT" type="data"/>
+                <file name="SE016.DAT" source="out/E1/SE016.DAT" type="data"/>
+                <file name="SE017.DAT" source="out/E1/SE017.DAT" type="data"/>
+                <file name="SE018.DAT" source="out/E1/SE018.DAT" type="data"/>
+                <file name="SE019.DAT" source="out/E1/SE019.DAT" type="data"/>
+                <file name="SE01A.DAT" source="out/E1/SE01A.DAT" type="data"/>
+            </dir>
+            <dir name="E2" source="out/E2">
+                <file name="SE02.IMG" source="out/E2/SE02.IMG" type="data"/>
+                <file name="SE021.DAT" source="out/E2/SE021.DAT" type="data"/>
+                <file name="SE022.DAT" source="out/E2/SE022.DAT" type="data"/>
+                <file name="SE023.DAT" source="out/E2/SE023.DAT" type="data"/>
+                <file name="SE024.DAT" source="out/E2/SE024.DAT" type="data"/>
+                <file name="SE025.DAT" source="out/E2/SE025.DAT" type="data"/>
+                <file name="SE026.DAT" source="out/E2/SE026.DAT" type="data"/>
+                <file name="SE027.DAT" source="out/E2/SE027.DAT" type="data"/>
+                <file name="SE028.DAT" source="out/E2/SE028.DAT" type="data"/>
+                <file name="SE029.DAT" source="out/E2/SE029.DAT" type="data"/>
+                <file name="SE02A.DAT" source="out/E2/SE02A.DAT" type="data"/>
+            </dir>
+            <dir name="E3" source="out/E3">
+                <file name="SE03.IMG" source="out/E3/SE03.IMG" type="data"/>
+                <file name="SE031.DAT" source="out/E3/SE031.DAT" type="data"/>
+                <file name="SE032.DAT" source="out/E3/SE032.DAT" type="data"/>
+                <file name="SE033.DAT" source="out/E3/SE033.DAT" type="data"/>
+                <file name="SE034.DAT" source="out/E3/SE034.DAT" type="data"/>
+                <file name="SE035.DAT" source="out/E3/SE035.DAT" type="data"/>
+                <file name="SE036.DAT" source="out/E3/SE036.DAT" type="data"/>
+                <file name="SE037.DAT" source="out/E3/SE037.DAT" type="data"/>
+                <file name="SE038.DAT" source="out/E3/SE038.DAT" type="data"/>
+                <file name="SE039.DAT" source="out/E3/SE039.DAT" type="data"/>
+                <file name="SE03A.DAT" source="out/E3/SE03A.DAT" type="data"/>
+            </dir>
+            <dir name="E4" source="out/E4">
+                <file name="SE04.IMG" source="out/E4/SE04.IMG" type="data"/>
+                <file name="SE041.DAT" source="out/E4/SE041.DAT" type="data"/>
+                <file name="SE042.DAT" source="out/E4/SE042.DAT" type="data"/>
+                <file name="SE043.DAT" source="out/E4/SE043.DAT" type="data"/>
+                <file name="SE044.DAT" source="out/E4/SE044.DAT" type="data"/>
+                <file name="SE045.DAT" source="out/E4/SE045.DAT" type="data"/>
+                <file name="SE046.DAT" source="out/E4/SE046.DAT" type="data"/>
+                <file name="SE047.DAT" source="out/E4/SE047.DAT" type="data"/>
+                <file name="SE048.DAT" source="out/E4/SE048.DAT" type="data"/>
+                <file name="SE049.DAT" source="out/E4/SE049.DAT" type="data"/>
+                <file name="SE04A.DAT" source="out/E4/SE04A.DAT" type="data"/>
+            </dir>
+            <dir name="E5" source="out/E5">
+                <file name="SE05.IMG" source="out/E5/SE05.IMG" type="data"/>
+                <file name="SE051.DAT" source="out/E5/SE051.DAT" type="data"/>
+                <file name="SE052.DAT" source="out/E5/SE052.DAT" type="data"/>
+                <file name="SE053.DAT" source="out/E5/SE053.DAT" type="data"/>
+                <file name="SE054.DAT" source="out/E5/SE054.DAT" type="data"/>
+                <file name="SE055.DAT" source="out/E5/SE055.DAT" type="data"/>
+                <file name="SE056.DAT" source="out/E5/SE056.DAT" type="data"/>
+                <file name="SE057.DAT" source="out/E5/SE057.DAT" type="data"/>
+                <file name="SE058.DAT" source="out/E5/SE058.DAT" type="data"/>
+                <file name="SE059.DAT" source="out/E5/SE059.DAT" type="data"/>
+                <file name="SE05A.DAT" source="out/E5/SE05A.DAT" type="data"/>
+            </dir>
+            <dir name="F" source="out/F">
+                <file name="SF011.DAT" source="out/F/SF011.DAT" type="data"/>
+                <file name="SF011.IMG" source="out/F/SF011.IMG" type="data"/>
+                <file name="SF021.DAT" source="out/F/SF021.DAT" type="data"/>
+                <file name="SF021.IMG" source="out/F/SF021.IMG" type="data"/>
+                <file name="SF031.DAT" source="out/F/SF031.DAT" type="data"/>
+                <file name="SF031.IMG" source="out/F/SF031.IMG" type="data"/>
+                <file name="SF041.DAT" source="out/F/SF041.DAT" type="data"/>
+                <file name="SF041.IMG" source="out/F/SF041.IMG" type="data"/>
+                <file name="SF051.DAT" source="out/F/SF051.DAT" type="data"/>
+                <file name="SF051.IMG" source="out/F/SF051.IMG" type="data"/>
+                <file name="SF061.DAT" source="out/F/SF061.DAT" type="data"/>
+                <file name="SF061.IMG" source="out/F/SF061.IMG" type="data"/>
+                <file name="SF071.DAT" source="out/F/SF071.DAT" type="data"/>
+                <file name="SF071.IMG" source="out/F/SF071.IMG" type="data"/>
+                <file name="SF081.DAT" source="out/F/SF081.DAT" type="data"/>
+                <file name="SF081.IMG" source="out/F/SF081.IMG" type="data"/>
+                <file name="SF091.DAT" source="out/F/SF091.DAT" type="data"/>
+                <file name="SF091.IMG" source="out/F/SF091.IMG" type="data"/>
+                <file name="SF0A1.DAT" source="out/F/SF0A1.DAT" type="data"/>
+                <file name="SF0A1.IMG" source="out/F/SF0A1.IMG" type="data"/>
+                <file name="SF0B1.DAT" source="out/F/SF0B1.DAT" type="data"/>
+                <file name="SF0B1.IMG" source="out/F/SF0B1.IMG" type="data"/>
+                <file name="SF0C1.DAT" source="out/F/SF0C1.DAT" type="data"/>
+                <file name="SF0C1.IMG" source="out/F/SF0C1.IMG" type="data"/>
+                <file name="SF0D1.DAT" source="out/F/SF0D1.DAT" type="data"/>
+                <file name="SF0D1.IMG" source="out/F/SF0D1.IMG" type="data"/>
+                <file name="SF0E1.DAT" source="out/F/SF0E1.DAT" type="data"/>
+                <file name="SF0E1.IMG" source="out/F/SF0E1.IMG" type="data"/>
+                <file name="SF0F1.DAT" source="out/F/SF0F1.DAT" type="data"/>
+                <file name="SF0F1.IMG" source="out/F/SF0F1.IMG" type="data"/>
+                <file name="SF0H1.IMG" source="out/F/SF0H1.IMG" type="data"/>
+            </dir>
+            <dir name="MAP" source="out/MAP">
+                <file name="AREA0BG.DAT" source="out/MAP/AREA0BG.DAT" type="data"/>
+                <file name="AREA0MAP.DAT" source="out/MAP/AREA0MAP.DAT" type="data"/>
+                <file name="AREA1BG.DAT" source="out/MAP/AREA1BG.DAT" type="data"/>
+                <file name="AREA1MAP.DAT" source="out/MAP/AREA1MAP.DAT" type="data"/>
+                <file name="AREA2BG.DAT" source="out/MAP/AREA2BG.DAT" type="data"/>
+                <file name="AREA2MAP.DAT" source="out/MAP/AREA2MAP.DAT" type="data"/>
+                <file name="AREA3BG.DAT" source="out/MAP/AREA3BG.DAT" type="data"/>
+                <file name="AREA3MAP.DAT" source="out/MAP/AREA3MAP.DAT" type="data"/>
+                <file name="AREA4BG.DAT" source="out/MAP/AREA4BG.DAT" type="data"/>
+                <file name="AREA4MAP.DAT" source="out/MAP/AREA4MAP.DAT" type="data"/>
+                <file name="AREA5MAP.DAT" source="out/MAP/AREA5MAP.DAT" type="data"/>
+                <file name="AREA6MAP.DAT" source="out/MAP/AREA6MAP.DAT" type="data"/>
+                <file name="SMAP.DAT" source="out/MAP/SMAP.DAT" type="data"/>
+                <file name="WORLDMAP.DAT" source="out/MAP/WORLDMAP.DAT" type="data"/>
+            </dir>
+            <dir name="XA" source="out/XA">
+                <file name="ARC1.XA" source="out/XA/ARC1.XA" type="mixed"/>
+                <file name="ARC2.XA" source="out/XA/ARC2.XA" type="mixed"/>
+                <file name="ARC3.XA" source="out/XA/ARC3.XA" type="mixed"/>
+                <file name="ARC4.XA" source="out/XA/ARC4.XA" type="mixed"/>
+                <file name="ARC5.XA" source="out/XA/ARC5.XA" type="mixed"/>
+                <file name="ARC6.XA" source="out/XA/ARC6.XA" type="mixed"/>
+                <file name="CHONG1.XA" source="out/XA/CHONG1.XA" type="mixed"/>
+                <file name="CHONG2.XA" source="out/XA/CHONG2.XA" type="mixed"/>
+                <file name="CHONG3.XA" source="out/XA/CHONG3.XA" type="mixed"/>
+                <file name="CHONG4.XA" source="out/XA/CHONG4.XA" type="mixed"/>
+                <file name="CHONG5.XA" source="out/XA/CHONG5.XA" type="mixed"/>
+                <file name="CHONG6.XA" source="out/XA/CHONG6.XA" type="mixed"/>
+                <file name="GORGEN1.XA" source="out/XA/GORGEN1.XA" type="mixed"/>
+                <file name="GORGEN2.XA" source="out/XA/GORGEN2.XA" type="mixed"/>
+                <file name="GORGEN3.XA" source="out/XA/GORGEN3.XA" type="mixed"/>
+                <file name="GORGEN4.XA" source="out/XA/GORGEN4.XA" type="mixed"/>
+                <file name="GORGEN5.XA" source="out/XA/GORGEN5.XA" type="mixed"/>
+                <file name="GORGEN6.XA" source="out/XA/GORGEN6.XA" type="mixed"/>
+                <file name="GORGEN7.XA" source="out/XA/GORGEN7.XA" type="mixed"/>
+                <file name="IGA1.XA" source="out/XA/IGA1.XA" type="mixed"/>
+                <file name="IGA2.XA" source="out/XA/IGA2.XA" type="mixed"/>
+                <file name="IGA3.XA" source="out/XA/IGA3.XA" type="mixed"/>
+                <file name="IGA4.XA" source="out/XA/IGA4.XA" type="mixed"/>
+                <file name="IGA5.XA" source="out/XA/IGA5.XA" type="mixed"/>
+                <file name="KUKURU1.XA" source="out/XA/KUKURU1.XA" type="mixed"/>
+                <file name="KUKURU2.XA" source="out/XA/KUKURU2.XA" type="mixed"/>
+                <file name="KUKURU3.XA" source="out/XA/KUKURU3.XA" type="mixed"/>
+                <file name="KUKURU4.XA" source="out/XA/KUKURU4.XA" type="mixed"/>
+                <file name="KUKURU5.XA" source="out/XA/KUKURU5.XA" type="mixed"/>
+                <file name="KUKURU6.XA" source="out/XA/KUKURU6.XA" type="mixed"/>
+                <file name="KUKURU7.XA" source="out/XA/KUKURU7.XA" type="mixed"/>
+                <file name="POKO1.XA" source="out/XA/POKO1.XA" type="mixed"/>
+                <file name="POKO2.XA" source="out/XA/POKO2.XA" type="mixed"/>
+                <file name="POKO3.XA" source="out/XA/POKO3.XA" type="mixed"/>
+                <file name="POKO4.XA" source="out/XA/POKO4.XA" type="mixed"/>
+                <file name="POKO5.XA" source="out/XA/POKO5.XA" type="mixed"/>
+                <file name="POKO6.XA" source="out/XA/POKO6.XA" type="mixed"/>
+                <file name="POKO7.XA" source="out/XA/POKO7.XA" type="mixed"/>
+                <file name="TOSH1.XA" source="out/XA/TOSH1.XA" type="mixed"/>
+                <file name="TOSH2.XA" source="out/XA/TOSH2.XA" type="mixed"/>
+                <file name="TOSH3.XA" source="out/XA/TOSH3.XA" type="mixed"/>
+                <file name="TOSH4.XA" source="out/XA/TOSH4.XA" type="mixed"/>
+                <file name="TOSH5.XA" source="out/XA/TOSH5.XA" type="mixed"/>
+                <file name="TOSH6.XA" source="out/XA/TOSH6.XA" type="mixed"/>
+                <file name="XEVENT1.XA" source="out/XA/XEVENT1.XA" type="mixed"/>
+                <file name="XEVENT2.XA" source="out/XA/XEVENT2.XA" type="mixed"/>
+                <file name="XEVENT3.XA" source="out/XA/XEVENT3.XA" type="mixed"/>
+                <file name="XEVENT4.XA" source="out/XA/XEVENT4.XA" type="mixed"/>
+                <file name="XEVENT5.XA" source="out/XA/XEVENT5.XA" type="mixed"/>
+                <file name="XXBGM.XA" source="out/XA/XXBGM.XA" type="mixed"/>
+            </dir>
+            <dir name="XMV" source="out/XMV">
+                <file name="OPEN.STR" source="out/XMV/OPEN.STR" type="mixed" xa_attrib="56"/>
+                <file name="S304.STR" source="out/XMV/S304.STR" type="mixed" xa_attrib="56"/>
+                <file name="S904.STR" source="out/XMV/S904.STR" type="mixed" xa_attrib="56"/>
+                <file name="SB03.STR" source="out/XMV/SB03.STR" type="mixed" xa_attrib="56"/>
+                <file name="SC071.STR" source="out/XMV/SC071.STR" type="data"/>
+                <file name="SC072.STR" source="out/XMV/SC072.STR" type="data"/>
+                <file name="YEND.STR" source="out/XMV/YEND.STR" type="mixed" xa_attrib="56"/>
+                <file name="YONE.STR" source="out/XMV/YONE.STR" type="mixed" xa_attrib="56"/>
+            </dir>
+            <file name="PSX.EXE" source="out/PSX.EXE" type="data"/>
+            <dummy sectors="150" type="0"/>
+        </directory_tree>
+    </track>
+</iso_project>

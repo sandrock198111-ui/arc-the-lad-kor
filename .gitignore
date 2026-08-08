@@ -88,3 +88,4 @@ Desktop.ini
 # The original disc layout XML. File names and sizes only, no game data, and
 # 02_scripts/package_pristine_control.py cannot run without it.
 !01_work/arc1_original_layout.xml
+!01_work/arc1_v104_layout.xml
