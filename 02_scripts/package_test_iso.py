@@ -45,6 +45,7 @@ FILES = WORK / "files"
 STATE = WORK / "applied.json"
 BIN = ROOT / "03_output/TEST.bin"
 CUE = ROOT / "03_output/TEST.cue"
+MEMCARDS = Path.home() / "AppData/Local/DuckStation/memcards"
 
 
 def digest(path: Path) -> str:
@@ -100,16 +101,51 @@ def restore_and_apply(patch_zip: Path) -> tuple[int, int]:
     return restored, len(current)
 
 
-def write_xml(xml_path: Path) -> None:
+def write_xml(xml_path: Path, binary: Path, cue: Path) -> None:
     text = REF_XML.read_text(encoding="utf-8")
     base = FILES.as_posix()
     text = re.sub(r'source="out/([^"]*)"', lambda m: f'source="{base}/{m.group(1)}"', text)
     text = re.sub(r'file="out/([^"]*)"', lambda m: f'file="{base}/{m.group(1)}"', text)
-    text = text.replace('image_name="mkpsxiso.bin"', f'image_name="{BIN.as_posix()}"')
-    text = text.replace('cue_sheet="mkpsxiso.cue"', f'cue_sheet="{CUE.as_posix()}"')
+    text = text.replace('image_name="mkpsxiso.bin"', f'image_name="{binary.as_posix()}"')
+    text = text.replace('cue_sheet="mkpsxiso.cue"', f'cue_sheet="{cue.as_posix()}"')
     if "out/" in text:
         raise SystemExit("a source path was left pointing at out/")
     xml_path.write_text(text, encoding="utf-8")
+
+
+def free_name() -> tuple[Path, Path, str]:
+    """TEST.bin, unless DuckStation still has it open -- then TEST2, TEST3, ...
+
+    Overwriting is blocked while the emulator holds the image, and waiting for the
+    user to close it costs a round trip.  The memory card follows the disc name, so
+    each new name gets a copy of the card and the saves stay put.
+    """
+    stem = "TEST"
+    for suffix in ("", *(str(n) for n in range(2, 60))):
+        binary, cue = BIN.with_name(f"TEST{suffix}.bin"), CUE.with_name(f"TEST{suffix}.cue")
+        if not binary.exists():
+            return binary, cue, f"TEST{suffix}"
+        try:
+            binary.unlink()
+            if cue.exists():
+                cue.unlink()
+            return binary, cue, f"TEST{suffix}"
+        except PermissionError:
+            stem = f"TEST{suffix}"
+            continue
+    raise SystemExit(f"no free name after {stem}")
+
+
+def carry_memory_card(stem: str) -> str | None:
+    """The per-game card is named after the disc, so a new name starts empty."""
+    target = MEMCARDS / f"{stem}_1.mcd"
+    if target.exists() or not MEMCARDS.is_dir():
+        return None
+    sources = sorted(MEMCARDS.glob("*_1.mcd"), key=lambda p: p.stat().st_mtime, reverse=True)
+    if not sources:
+        return None
+    shutil.copyfile(sources[0], target)
+    return f"{sources[0].name} -> {target.name}"
 
 
 def main() -> None:
@@ -124,12 +160,11 @@ def main() -> None:
 
     ensure_tree()
     restored, applied = restore_and_apply(patch_zip)
-    xml_path = WORK / "TEST.xml"
-    lba_path = WORK / "TEST_lba.txt"
-    write_xml(xml_path)
-    for stale in (BIN, CUE):
-        if stale.exists():
-            stale.unlink()
+    binary, cue, stem = free_name()
+    xml_path = WORK / f"{stem}.xml"
+    lba_path = WORK / f"{stem}_lba.txt"
+    write_xml(xml_path, binary, cue)
+    card = carry_memory_card(stem)
 
     subprocess.run(
         [str(MKPSXISO), "-y", "-q", "-lba", str(lba_path), str(xml_path)],
@@ -141,11 +176,12 @@ def main() -> None:
     print("시험용 디스크를 새로 구웠다")
     print(f"  들어간 것  {patch_zip.name}")
     print(f"             원본으로 되돌린 파일 {restored}개, 패치 파일 {applied}개")
-    print(f"  cue        {CUE}")
-    print(f"  sha256     {digest(BIN)}")
+    print(f"  cue        {cue}")
+    print(f"  sha256     {digest(binary)}")
+    if card:
+        print(f"  메모리카드 {card}")
     print()
-    print("  DuckStation에서 03_output/TEST.cue 를 다시 열면 된다.")
-    print("  메모리카드는 TEST_1.mcd 하나로 고정이라 세이브는 그대로 있다.")
+    print(f"  DuckStation에서 03_output/{cue.name} 를 열면 된다. 세이브는 그대로 있다.")
 
 
 if __name__ == "__main__":
