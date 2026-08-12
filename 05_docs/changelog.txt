@@ -1453,3 +1453,7 @@
 - 초판 사용자도 받을 수 있도록 초판 기준 패치를 따로 만들었다. xdelta는 목표 파일을 그대로 복원하므로 어느 원본에서 시작하든 결과물은 동일하다. 초판 패치는 344,894바이트이며 적용 결과가 `V197.bin`과 SHA-256까지 일치함을 확인했다.
 - 초판 SHA-1 `08439ECBC6AC70C59DAE637B4E1291DA48729413`, MD5 `13223EBD9B33C48AA0620E5863DE071F`다.
 - 배포 꾸러미를 다시 묶었다. `03_output/ArcTheLad1_Korean_v197_xdelta.zip`, SHA-256 `75ECF85C5FDE2111F4332F58EFD4FED46D73335B6693A08E7683EA845D0FE734`, 624,156바이트다. 패치 둘, `arc1_kor.cue`, `읽어주세요.md`가 들어 있다.
+- 사용자가 Rev 1 원본에 초판용 패치를 적용해 `target window checksum mismatch`를 겪었다. 원인은 파일 이름이다. Rev 1용을 `arc1_kor_v197.xdelta`로, 초판용을 `arc1_kor_v197_rev0.xdelta`로 지어 놓아 어느 쪽이 어느 판인지 이름만 보고는 알 수 없었다.
+- Rev 1용을 `arc1_kor_v197_rev1.xdelta`로 바꿔 두 이름이 대칭이 되게 했다. 안내문 표에도 굵게 표시하고, `checksum mismatch`가 뜨면 다른 쪽 패치로 바꿔 보라는 안내를 넣었다.
+- 이름 변경 후 다시 검증했다. rev1 패치를 Rev 1 원본에 적용한 결과가 `V197.bin`과 SHA-256까지 일치한다.
+- 최종 배포 꾸러미는 `03_output/ArcTheLad1_Korean_v197_xdelta.zip`, SHA-256 `4E6A4B4BBFC172C0FA8B67F1F3162578C220D3031239DF2A3E3B7F10F7F84D92`다.
