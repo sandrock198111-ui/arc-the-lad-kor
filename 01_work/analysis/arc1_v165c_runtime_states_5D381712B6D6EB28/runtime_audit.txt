@@ -1,0 +1,79 @@
+v165c eight-state runtime audit
+patch=arc1_v165c_failclosed_24slot_cache_checkpoint_fix_D1ADC357.zip
+patch_sha256=D1ADC3570E8690CAE66CCDD54ED1686DA081D1E0A908B3E3BB6B7083ECE8F618
+savestates=HASH-5D381712B6D6EB28_1..8.sav
+
+slot1
+  code_ok=True failures=none
+  owners=18/24 active=0x00000000 next=18
+  cache_packets=13 unique_slots=12 blank_slots=none wrong_nonblank=none
+  matched_objects=0 stale_packets=0
+  cache_nontext=0 static_nontext_collisions=0
+
+slot2
+  code_ok=True failures=none
+  owners=24/24 active=0x00000000 next=8
+  cache_packets=2 unique_slots=2 blank_slots=[22] wrong_nonblank=none
+  matched_objects=1 stale_packets=4
+  cache_nontext=0 static_nontext_collisions=0
+
+slot3
+  code_ok=True failures=none
+  owners=24/24 active=0x00000000 next=1
+  cache_packets=6 unique_slots=5 blank_slots=none wrong_nonblank=none
+  matched_objects=0 stale_packets=0
+  cache_nontext=0 static_nontext_collisions=0
+
+slot4
+  code_ok=True failures=none
+  owners=24/24 active=0x00000000 next=6
+  cache_packets=0 unique_slots=0 blank_slots=none wrong_nonblank=none
+  matched_objects=1 stale_packets=1
+  cache_nontext=0 static_nontext_collisions=0
+
+slot5
+  code_ok=True failures=none
+  owners=24/24 active=0x00000000 next=8
+  cache_packets=0 unique_slots=0 blank_slots=none wrong_nonblank=none
+  matched_objects=1 stale_packets=3
+  cache_nontext=0 static_nontext_collisions=0
+
+slot6
+  code_ok=True failures=none
+  owners=24/24 active=0x00000000 next=11
+  cache_packets=0 unique_slots=0 blank_slots=none wrong_nonblank=none
+  matched_objects=0 stale_packets=0
+  cache_nontext=0 static_nontext_collisions=0
+
+slot7
+  code_ok=True failures=none
+  owners=24/24 active=0x00000000 next=2
+  cache_packets=5 unique_slots=5 blank_slots=[16, 17] wrong_nonblank=none
+  matched_objects=1 stale_packets=0
+  cache_nontext=0 static_nontext_collisions=0
+
+slot8
+  code_ok=True failures=none
+  owners=24/24 active=0x00000000 next=10
+  cache_packets=16 unique_slots=11 blank_slots=[10, 11] wrong_nonblank=none
+  matched_objects=1 stale_packets=3
+  cache_nontext=0 static_nontext_collisions=0
+
+aggregate
+  valid_lineage=8
+  active_cache_packets=42
+  active_unique_slot_checks=35
+  active_slot_shape_matches=30
+  active_slot_blank_planes=5
+  active_slot_wrong_nonblank_planes=0
+  matched_text_objects=5
+  stale_text_objects=4
+  stale_text_packets=11
+  cache_nontext_packets=0
+  static_nontext_collision_packets=0
+
+measured conclusion
+  v165c lineage and resident code are present in all eight states.
+  No sampled non-text packet reads the six cache cells or remaining 119 static cells.
+  Live text packets reference blanked cache planes and slots whose owners changed.
+  The cache must rebuild every owned plane in an active cell and retain final-OT slots.

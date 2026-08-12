@@ -1,0 +1,25 @@
+v186 runtime text and choice fixes
+base=arc1_v185_acquisition_closing_bracket_fix.zip
+base_sha256=AAC5C9F6396925FBBA5E6DCF129E97C2D3C197DE164B0A86CA53027133C11A32
+output=arc1_v186_runtime_text_choice_fixes_0D144525.zip
+output_sha256=0D144525001BA1FE6284DE7D823D6C68FEC26AC733B51D69E9AFB9A679B67BB5
+
+runtime-proven writes
+  PSX.EXE 0x80DC9: stale v184 virtual codes -> v183 working 번 그라운드
+  1/S1031.DAT slot 0: old pre-cache bytes -> current-code 엄마...
+  D/SD011.DAT slot 10: empty -> 그 불을 줘. 내가 다시 붙이고 올게.
+  1/S1023.DAT slot 0: 읽어 볼래? -> 읽어볼래? (234px -> 228px)
+  1/S1023.DAT slot 2: stale 다음 페이지 -> current-code 다음
+
+choice_bodies=357
+choice_marker_geometry=357/357 PASS
+translated_choice_overflow=2 -> 0
+known_unresolved_noise_overflow=46 (unchanged by policy)
+
+decoder 0x801FF30C / 568 bytes
+frame routine 0x801FF634 / 636 bytes
+changed_members=1/S1023.DAT,1/S1031.DAT,D/SD011.DAT,PSX.EXE
+member_sizes=unchanged
+runtime_decode_readback=PASS
+cold_boot=NOT RUN (user test required)
+rollback=v185

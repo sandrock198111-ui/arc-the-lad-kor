@@ -1,0 +1,45 @@
+diff --git a/02_scripts/build_arc1_v156_dynamic_cache.py b/02_scripts/build_arc1_v156_dynamic_cache.py
+--- a/02_scripts/build_arc1_v156_dynamic_cache.py
++++ b/02_scripts/build_arc1_v156_dynamic_cache.py
+@@ -33,4 +33,4 @@
+ from audit_dynamic_cache_requirements import (  # noqa: E402
+-    BUILD as BASE_ZIP, BUILD_SHA as BASE_SHA, ORIGINAL, bitmap, glyph_index,
++    BUILD as BASE_ZIP, BUILD_SHA as BASE_SHA, ORIGINAL, active_slots, bitmap, glyph_index,
+     read_lut, source_ranges,
+@@ -488,4 +488,5 @@
+     # Rewrite only bounded text regions, preserving every token width.
+     items = source_ranges()
++    assigned_slots = active_slots(base_members, items)
+ 
+     def rewrite(payload: bytes) -> tuple[bytes, int]:
+@@ -524,15 +525,15 @@
+-        covered: set[int] = set()
+-        for offset, size in ranges:
+-            covered.update(range(offset, offset + size))
+-        if len(data) >= SLOT_BASE + SLOT_COUNT * SLOT_SIZE:
+-            for slot in range(SLOT_COUNT):
+-                at = SLOT_BASE + slot * SLOT_SIZE
+-                if any(pos in covered for pos in range(at, at + SLOT_SIZE)):
+-                    continue
+-                block = bytes(data[at:at + SLOT_SIZE])
+-                if 0 not in block[:SLOT_SIZE - 1]:
+-                    continue
+-                end = block.index(0)
+-                payload, count = rewrite(block[:end])
+-                data[at:at + end] = payload
+-                rewrite_hits += count
++        for slot in assigned_slots.get(name, ()):
++            at = SLOT_BASE + slot * SLOT_SIZE
++            if any(offset < at + SLOT_SIZE and offset + size > at
++                   for offset, size in ranges):
++                raise SystemExit(f"active slot overlaps a body: {name}:{slot}")
++            block = bytes(data[at:at + SLOT_SIZE])
++            if 0 not in block[:SLOT_SIZE - 1]:
++                raise SystemExit(f"active slot has no terminator: {name}:{slot}")
++            end = block.index(0)
++            if not end:
++                raise SystemExit(f"active slot is empty: {name}:{slot}")
++            payload, count = rewrite(block[:end])
++            data[at:at + end] = payload
++            rewrite_hits += count
+         members[name] = bytes(data)

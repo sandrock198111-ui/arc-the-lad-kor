@@ -1,0 +1,148 @@
+v163 ten-state runtime audit
+build=arc1_v163_text_clut_classifier_773E3B82.zip
+build_sha256=773E3B82B58FBE9C836C96F34EA03C122847EC8BBD691AE4FDCFBA00D778FE63
+
+slot1.state.bin
+  v163_classifier_live=True
+  cache_owners=0:택(52)
+  active=0x00000000 next_slot=1
+  shadow_equals_VRAM=5/5
+  text_objects=1 dynamic_packet_metadata=1 slots=[0]
+  page15_tpages=4 traced_text_packets=2
+  cache_overlap_nontext_packets=0
+  cache_overlap_other_packets=0
+  page15_textured_polygons=0 live_by_DMA_ref=0
+  cache_overlap_polygons=0 live_by_DMA_ref=0
+  gpu_context=0x801AEBA8 parity=1 selected_OT_packets=615
+  selected_OT_cache_overlaps=1 nontext=0
+
+slot2.state.bin
+  v163_classifier_live=True
+  cache_owners=0:택(52)
+  active=0x00000000 next_slot=1
+  shadow_equals_VRAM=5/5
+  text_objects=1 dynamic_packet_metadata=0 slots=[]
+  page15_tpages=6 traced_text_packets=0
+  cache_overlap_nontext_packets=0
+  cache_overlap_other_packets=0
+  page15_textured_polygons=0 live_by_DMA_ref=0
+  cache_overlap_polygons=0 live_by_DMA_ref=0
+  gpu_context=0x801AE1E4 parity=0 selected_OT_packets=689
+  selected_OT_cache_overlaps=0 nontext=0
+
+slot3.state.bin
+  v163_classifier_live=True
+  cache_owners=0:택(52)
+  active=0x00000000 next_slot=1
+  shadow_equals_VRAM=5/5
+  text_objects=1 dynamic_packet_metadata=0 slots=[]
+  page15_tpages=6 traced_text_packets=0
+  cache_overlap_nontext_packets=0
+  cache_overlap_other_packets=0
+  page15_textured_polygons=0 live_by_DMA_ref=0
+  cache_overlap_polygons=0 live_by_DMA_ref=0
+  gpu_context=0x801AEBA8 parity=1 selected_OT_packets=690
+  selected_OT_cache_overlaps=0 nontext=0
+
+slot4.state.bin
+  v163_classifier_live=True
+  cache_owners=0:택(52)
+  active=0x00000000 next_slot=1
+  shadow_equals_VRAM=5/5
+  text_objects=1 dynamic_packet_metadata=0 slots=[]
+  page15_tpages=6 traced_text_packets=0
+  cache_overlap_nontext_packets=0
+  cache_overlap_other_packets=0
+  page15_textured_polygons=0 live_by_DMA_ref=0
+  cache_overlap_polygons=0 live_by_DMA_ref=0
+  gpu_context=0x801AE1E4 parity=0 selected_OT_packets=699
+  selected_OT_cache_overlaps=0 nontext=0
+
+slot5.state.bin
+  v163_classifier_live=True
+  cache_owners=0:택(52)
+  active=0x00000000 next_slot=1
+  shadow_equals_VRAM=5/5
+  text_objects=1 dynamic_packet_metadata=0 slots=[]
+  page15_tpages=6 traced_text_packets=0
+  cache_overlap_nontext_packets=0
+  cache_overlap_other_packets=0
+  page15_textured_polygons=0 live_by_DMA_ref=0
+  cache_overlap_polygons=0 live_by_DMA_ref=0
+  gpu_context=0x801AEBA8 parity=1 selected_OT_packets=719
+  selected_OT_cache_overlaps=0 nontext=0
+
+slot6.state.bin
+  v163_classifier_live=True
+  cache_owners=0:택(52) 1:허(34)
+  active=0x00000000 next_slot=2
+  shadow_equals_VRAM=5/5
+  text_objects=1 dynamic_packet_metadata=0 slots=[]
+  page15_tpages=6 traced_text_packets=0
+  cache_overlap_nontext_packets=0
+  cache_overlap_other_packets=0
+  page15_textured_polygons=0 live_by_DMA_ref=0
+  cache_overlap_polygons=0 live_by_DMA_ref=0
+  gpu_context=0x801AE1E4 parity=0 selected_OT_packets=727
+  selected_OT_cache_overlaps=0 nontext=0
+
+slot7.state.bin
+  v163_classifier_live=True
+  cache_owners=0:택(52) 1:끈(29) 2:잎(23) 3:암(51)
+  active=0x00000000 next_slot=4
+  shadow_equals_VRAM=5/5
+  text_objects=3 dynamic_packet_metadata=2 slots=[2, 3]
+  page15_tpages=10 traced_text_packets=2
+  cache_overlap_nontext_packets=0
+  cache_overlap_other_packets=0
+  page15_textured_polygons=0 live_by_DMA_ref=0
+  cache_overlap_polygons=0 live_by_DMA_ref=0
+  gpu_context=0x801AEBA8 parity=1 selected_OT_packets=794
+  selected_OT_cache_overlaps=1 nontext=0
+
+slot8.state.bin
+  v163_classifier_live=True
+  cache_owners=0:택(52) 1:끈(29) 2:잎(23) 3:암(51)
+  active=0x00000000 next_slot=4
+  shadow_equals_VRAM=5/5
+  text_objects=3 dynamic_packet_metadata=2 slots=[0, 3]
+  page15_tpages=10 traced_text_packets=4
+  cache_overlap_nontext_packets=0
+  cache_overlap_other_packets=0
+  page15_textured_polygons=0 live_by_DMA_ref=0
+  cache_overlap_polygons=0 live_by_DMA_ref=0
+  gpu_context=0x801AEBA8 parity=1 selected_OT_packets=845
+  selected_OT_cache_overlaps=2 nontext=0
+
+slot9.state.bin
+  v163_classifier_live=True
+  cache_owners=0:택(52) 1:끈(29) 2:잎(23) 3:암(51) 4:폴(183)
+  active=0x00000000 next_slot=5
+  shadow_equals_VRAM=5/5
+  text_objects=3 dynamic_packet_metadata=1 slots=[3]
+  page15_tpages=10 traced_text_packets=2
+  cache_overlap_nontext_packets=0
+  cache_overlap_other_packets=0
+  page15_textured_polygons=0 live_by_DMA_ref=0
+  cache_overlap_polygons=0 live_by_DMA_ref=0
+  gpu_context=0x801AEBA8 parity=1 selected_OT_packets=792
+  selected_OT_cache_overlaps=0 nontext=0
+
+slot10.state.bin
+  v163_classifier_live=True
+  cache_owners=0:택(52) 1:끈(29) 2:잎(23) 3:암(51) 4:폴(183)
+  active=0x00000000 next_slot=5
+  shadow_equals_VRAM=5/5
+  text_objects=3 dynamic_packet_metadata=0 slots=[]
+  page15_tpages=10 traced_text_packets=4
+  cache_overlap_nontext_packets=0
+  cache_overlap_other_packets=0
+  page15_textured_polygons=0 live_by_DMA_ref=0
+  cache_overlap_polygons=0 live_by_DMA_ref=0
+  gpu_context=0x801AEBA8 parity=1 selected_OT_packets=819
+  selected_OT_cache_overlaps=0 nontext=0
+
+aggregate
+  dynamic_packet_metadata=6
+  cache_overlap_nontext_packets=0
+  montage=screenshots_montage.png

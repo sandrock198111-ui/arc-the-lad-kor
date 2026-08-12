@@ -1,0 +1,24 @@
+diff --git a/02_scripts/build_arc1_v159_dynamic_cache.py b/02_scripts/build_arc1_v159_dynamic_cache.py
+--- a/02_scripts/build_arc1_v159_dynamic_cache.py
++++ b/02_scripts/build_arc1_v159_dynamic_cache.py
+@@ -1 +1 @@
+-"""v158: replace four fixed VRAM strips with a 20-slot on-demand glyph cache.
++"""v159: replace four fixed VRAM strips with a 20-slot on-demand glyph cache.
+@@ -50,2 +50,2 @@
+-OUT_STEM = "arc1_v158_dynamic_cache"
+-ANALYSIS = ROOT / "01_work/analysis/arc1_v158_dynamic_cache"
++OUT_STEM = "arc1_v159_dynamic_cache"
++ANALYSIS = ROOT / "01_work/analysis/arc1_v159_dynamic_cache"
+@@ -573,5 +573,8 @@
+-    active = owners + CACHE_N * 2
++    # active is read with lw/sw.  R3000 word accesses must be 4-byte aligned.
++    active = (owners + CACHE_N * 2 + 3) & ~3
+     next_slot = active + 4
+     rect = next_slot + 4
+     scratch = rect + 8
++    if cache_index_ram & 1 or owners & 1 or active & 3 or rect & 1 or scratch & 1:
++        raise SystemExit("resident cache state is not naturally aligned")
+     decoder = (scratch + 72 + 3) & ~3
+@@ -696 +699 @@
+-        "v158 on-demand 20-slot completed-glyph cache",
++        "v159 on-demand 20-slot completed-glyph cache",

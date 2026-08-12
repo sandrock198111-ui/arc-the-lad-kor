@@ -1,0 +1,22 @@
+v172 E9/EA lookup-width repair
+
+base=arc1_v171_native_ui_assets_28slot_cache_18E5C2DC.zip
+base_sha256=18E5C2DC2B84ECCD9A91E742983996EAB35E28F20BA86EB2A0124F497424E8AC
+output=arc1_v172_lookup_width_fix_109252A0.zip
+sha256=109252A0BB30A7A262AA7D713521F94C21BB7C25B582A85658E2F7F4D87CF695
+changed_members=PSX.EXE
+changed_other_members=0
+runtime_word=0x801FF318
+source_file_offset=0x8EE40
+before=0x00000000 NOP
+after=0x34190002 ori t9,zero,2
+lookup_token_advance=2 bytes
+resident_size=unchanged 5356/5356
+decoder 0x801FF30C / 568 bytes
+frame routine 0x801FF634 / 636 bytes
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+runtime=PENDING user cold boot
+rollback=v170
+v171=REJECTED boot stops after BIOS

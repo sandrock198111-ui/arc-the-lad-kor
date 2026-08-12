@@ -1,0 +1,39 @@
+﻿slot,scene,order,address,screen_x,screen_y,kind,tpage,u,v,width,height,clut,physical_index,labels,cache_slot,cache_owner,live_nonzero_nibbles,v170_nonzero_nibbles,v151_nonzero_nibbles,original_nonzero_nibbles,live_selected_pixels,v170_selected_pixels,v151_selected_pixels,original_selected_pixels,v170_shape,v151_shape,original_shape,live_equals_v170,v170_equals_v151,v170_equals_original,lost_from_v151,blank_live_font_plane
+3,dialogue: missing question mark,669,0x801BF140,124,64,SPRT,0x0005,132,144,12,12,0x7FC3,1055,?,,,0,0,78,0,0,0,13,0,,,,1,0,1,1,1
+3,dialogue: missing question mark,679,0x801BEDCC,124,50,SPRT,0x0005,132,144,12,12,0x7FC3,1055,?,,,0,0,78,0,0,0,13,0,,,,1,0,1,1,1
+4,battle dialogue,683,0x801BED10,118,50,SPRT,0x0005,108,144,12,12,0x7FC3,1047,,,,0,0,78,0,0,0,43,0,,괜,,1,0,1,1,1
+4,battle dialogue,686,0x801BEC74,238,36,SPRT,0x0005,132,144,12,12,0x7FC3,1055,?,,,0,0,78,0,0,0,13,0,,,,1,0,1,1,1
+5,battle help icons A,688,0x801F08B0,72,214,SPRT,0x0005,204,228,12,12,0x7AC1,,,,,0,0,112,0,,,,,,,,1,0,1,1,0
+6,battle help icons B,690,0x801F0918,92,214,SPRT,0x0005,216,228,20,12,0x7AC1,,,,,0,0,240,0,,,,,,,,1,0,1,1,0
+6,battle help icons B,695,0x801F07AC,18,214,SPRT,0x0005,180,228,12,12,0x7AC1,,,,,0,0,112,0,,,,,,,,1,0,1,1,0
+9,battle configuration text,676,0x801BF348,256,146,SPRT,0x0005,192,156,12,12,0x7FC0,1156,,,,0,0,77,0,0,0,27,0,,기,,1,0,1,1,1
+9,battle configuration text,677,0x801BF314,244,146,SPRT,0x0005,108,156,12,12,0x7FC3,1131,,,,0,0,86,0,0,0,37,0,,보,,1,0,1,1,1
+9,battle configuration text,679,0x801BF2AC,226,146,SPRT,0x0005,120,168,12,12,0x7FC1,1217,,,,0,0,78,0,0,0,36,0,,안,,1,0,1,1,1
+9,battle configuration text,680,0x801BF278,178,146,SPRT,0x0005,192,156,12,12,0x7FC0,1156,,,,0,0,77,0,0,0,27,0,,기,,1,0,1,1,1
+9,battle configuration text,681,0x801BF244,166,146,SPRT,0x0005,108,156,12,12,0x7FC3,1131,,,,0,0,86,0,0,0,37,0,,보,,1,0,1,1,1
+9,battle configuration text,682,0x801BF210,100,146,SPRT,0x0005,192,156,12,12,0x7FC0,1156,,,,0,0,77,0,0,0,27,0,,기,,1,0,1,1,1
+9,battle configuration text,683,0x801BF1DC,88,146,SPRT,0x0005,108,156,12,12,0x7FC3,1131,,,,0,0,86,0,0,0,37,0,,보,,1,0,1,1,1
+9,battle configuration text,685,0x801BF174,70,146,SPRT,0x0005,240,156,12,12,0x7FC2,1174,,,,0,0,75,0,0,0,51,0,,말,,1,0,1,1,1
+9,battle configuration text,687,0x801BF10C,46,146,SPRT,0x0005,168,156,12,12,0x7FC3,1151,,,,0,0,66,0,0,0,33,0,,도,,1,0,1,1,1
+9,battle configuration text,688,0x801BF0D8,250,130,SPRT,0x0005,72,156,12,12,0x7FC1,1117,,,,0,0,48,0,0,0,46,0,,함,,1,0,1,1,1
+9,battle configuration text,689,0x801BF0A4,238,130,SPRT,0x0005,240,144,12,12,0x7FC2,1090,,,,0,0,73,0,0,0,34,0,,인,,1,0,1,1,1
+9,battle configuration text,691,0x801BF03C,202,130,SPRT,0x0005,72,156,12,12,0x7FC1,1117,,,,0,0,48,0,0,0,46,0,,함,,1,0,1,1,1
+9,battle configuration text,692,0x801BF008,190,130,SPRT,0x0005,120,168,12,12,0x7FC1,1217,,,,0,0,78,0,0,0,36,0,,안,,1,0,1,1,1
+9,battle configuration text,693,0x801BEFD4,178,130,SPRT,0x0005,240,144,12,12,0x7FC2,1090,,,,0,0,73,0,0,0,34,0,,인,,1,0,1,1,1
+9,battle configuration text,695,0x801BEF6C,112,130,SPRT,0x0005,240,144,12,12,0x7FC2,1090,,,,0,0,73,0,0,0,34,0,,인,,1,0,1,1,1
+9,battle configuration text,698,0x801BEED0,82,130,SPRT,0x0005,192,156,12,12,0x7FC0,1156,,,,0,0,77,0,0,0,27,0,,기,,1,0,1,1,1
+9,battle configuration text,699,0x801BEE9C,70,130,SPRT,0x0005,0,168,12,12,0x7FC0,1176,,,,0,0,67,0,0,0,29,0,,가,,1,0,1,1,1
+9,battle configuration text,700,0x801BEE68,58,130,SPRT,0x0005,144,156,12,12,0x7FC0,1140,,,,0,0,68,0,0,0,37,0,,아,,1,0,1,1,1
+9,battle configuration text,701,0x801BEE34,46,130,SPRT,0x0005,60,168,12,12,0x7FC1,1197,,,,0,0,84,0,0,0,54,0,,돌,,1,0,1,1,1
+9,battle configuration text,702,0x801BEDCC,226,114,SPRT,0x0005,144,168,12,12,0x7FC2,1226,,,,0,0,78,0,0,0,37,0,,강,,1,0,1,1,1
+9,battle configuration text,704,0x801BED64,166,114,SPRT,0x0005,240,144,12,12,0x7FC3,1091,,,,0,0,73,0,0,0,45,0,,일,,1,0,1,1,1
+9,battle configuration text,705,0x801BED30,100,114,SPRT,0x0005,96,156,12,12,0x7FC0,1124,,,,0,0,81,0,0,0,40,0,,력,,1,0,1,1,1
+9,battle configuration text,706,0x801BECFC,88,114,SPRT,0x0005,24,168,12,12,0x7FC1,1185,,,,0,0,70,0,0,0,41,0,,입,,1,0,1,1,1
+9,battle configuration text,708,0x801BEC94,70,114,SPRT,0x0005,192,144,12,12,0x7FC0,1072,,,,0,0,68,0,0,0,31,0,,선,,1,0,1,1,1
+9,battle configuration text,709,0x801BEC60,58,114,SPRT,0x0005,120,144,12,12,0x7FC3,1051,,,,0,0,71,0,0,0,32,0,,각,,1,0,1,1,1
+9,battle configuration text,710,0x801BEBF8,238,98,SPRT,0x0005,108,144,12,12,0x7FC0,1044,,,,0,0,78,0,0,0,26,0,,노,,1,0,1,1,1
+9,battle configuration text,712,0x801BEB90,202,98,SPRT,0x0005,216,144,12,12,0x7FC2,1082,,,,0,0,68,0,0,0,29,0,,오,,1,0,1,1,1
+9,battle configuration text,715,0x801BEAF4,166,98,SPRT,0x0005,96,144,12,12,0x7FC1,1041,,,,0,0,77,0,0,0,21,0,,스,,1,0,1,1,1
+9,battle configuration text,716,0x801BEAC0,100,98,SPRT,0x0005,96,156,12,12,0x7FC0,1124,,,,0,0,81,0,0,0,40,0,,력,,1,0,1,1,1
+9,battle configuration text,717,0x801BEA8C,88,98,SPRT,0x0005,180,168,12,12,0x7FC0,1236,,,,0,0,85,0,0,0,53,0,,출,,1,0,1,1,1
+9,battle configuration text,720,0x801BE9BC,46,98,SPRT,0x0005,168,156,12,12,0x7FC1,1149,,,,0,0,66,0,0,0,28,0,,사,,1,0,1,1,1

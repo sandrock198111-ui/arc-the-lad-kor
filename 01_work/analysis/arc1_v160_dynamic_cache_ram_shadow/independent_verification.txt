@@ -1,0 +1,15 @@
+v160 independent static verification: PASS
+archive_sha256=53521478B42D9684B8111F883E905ED45D498484C9087BD330AC4B21F0987F2E
+archive_members=164
+assignment_spellings_checked=808
+Hangul_occurrences_compared=64866
+protected_virtual_occurrences_compared=8
+control_tokens_preserved=4881
+protected_UI_relocations_checked=5
+max_dynamic_sources_in_one_unit=4
+max_dynamic_unit=body:21/S2045.DAT:0x47F94
+cache_plane_source_pairs_simulated=4140
+changed_text_members=159
+changed_text_bytes=17835
+changed_EXE_bytes=15974
+runtime_verification=PENDING

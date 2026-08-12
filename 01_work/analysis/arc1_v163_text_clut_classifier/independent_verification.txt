@@ -1,0 +1,17 @@
+v163 independent static/control verification: PASS
+archive=arc1_v163_text_clut_classifier_773E3B82.zip
+archive_sha256=773E3B82B58FBE9C836C96F34EA03C122847EC8BBD691AE4FDCFBA00D778FE63
+archive_members=164
+changed_EXE_bytes=19
+changed_non_EXE_members=0
+classifier_bytes=36
+font_CLUT_table=7FC0 7FC1 7FC2 7FC3 7FC4 7FC5 7FC6 7FC7 7FC8 7FC9 7FCA 7FCB 7FCC 7FCD 7FCE 7FCF
+font_CLUT_table_matching_states=6/6
+predicate_accept_boundaries=16/16
+predicate_reject_boundaries=35/35
+v162_live_high_page_packets_old_rule=10
+v162_live_high_page_packets_new_rule=8
+proven_false_sprite_packets_rejected=2
+rejected_false_CLUTs=0010 0010
+all_v162_bytes_outside_classifier=byte_identical
+runtime_verification=PENDING user cold boot

@@ -1,0 +1,5 @@
+﻿runtime_address,before,after,reason
+0x801A74B8,0x0807FC18,0x0807FCA5,decoder jump
+0x8016B5D8,0x0807FCF9,0x0807FD68,U helper jump
+0x801A2204,0x0C07FD04,0x0C07FD73,text classifier call
+0x8011C860,0x0C07FC68,0x0C07FD7C,pre-DrawOT cache wrapper

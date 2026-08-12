@@ -1,0 +1,14 @@
+dynamic-cache individual-plane budget
+unique_hangul_shapes=700
+strong_existing_shapes=275
+reusable_individual_planes=20
+cells_containing_candidates=17
+candidate_planes_per_cell=1:14cells, 2:3cells
+static_new_shapes_if_all_candidates_used=20
+dynamic_source_shapes=405
+dynamic_source_bytes_1bpp=7290
+dynamic_shapes_by_frequency=
+  간 용 건 두 합 곳 알 치 저 께 람 런 메 명 법 강 든 님 미 언 방 투 피 코 행 약 력 동 생 카 희 단 떻 산 반 혜 노 찾 렇 머 결 루 금 잘 선 같 망 작 키 누 속 온 히 난 냐 워 쪽 참 험 뭐 날 본 각 중 타 괴 레 환 론 류 트 형 줄 걸 궤 놈 팔 녀 빌 편 겐 늘 울 준 왔 족 표 못 역 열 파 숲 째 톤 돼 체 개 년 배 석 앗 느 맡 얻 더 봉 살 슨 연 켜 갈 겨 둔 식 몰 톨 프 릴 문 잖 차 렌 질 먼 멸 맞 빛 탄 능 린 써 앞 임 헤 긴 디 른 벌 함 뿐 관 됐 떠 욕 절 졌 집 넘 베 갑 겁 맨 술 잊 천 뜨 였 꾸 뭔 벨 셋 싱 줘 쳐 케 틀 항 설 영 침 클 견 볼 빼 응 증 최 축 놓 료 송 슬 애 엔 옛 듣 또 탈 혀 효 듯 통 립 빠 새 쟁 극 밀 풀 꺼 란 샤 억 잎 착 허 혼 귀 끈 낙 땅 먹 외 젠 찬 책 층 턴 특 페 플 광 달 셈 쓸 필 횟 겸 근 깐 껏 낳 놀 링 씩 암 재 좀 첩 택 훗 굴 띠 락 랑 뭘 박 엘 익 죄 퍼 햣 뀌 끼 답 딘 례 륭 므 벽 쁜 싫 쨌 쩌 쯤 창 친 칭 콘 킬 퇴 획 훌 곤 끔 독 딸 롭 멘 썩 얼 업 철 청 쳤 캐 킨 흥 늪 률 밤 백 쁘 션 잔 즉 티 교 권 급 껴 꾀 떨 럽 릭 맙 순 슷 액 염 짜 챔 취 콜 탱 힌 긋 껐 덴 둬 멋 묵 샘 엑 엽 옮 줬 츠 켈 탐 텅 패 폐 값 겼 골 깁 냈 뇌 랜 렘 뢰 맵 뱀 붕 빙 뿔 샬 섞 씬 앵 월 잇 존 죠 즌 척 털 흘 갯 규 껍 끓 낫 냉 념 닷 덤 듦 등 똑 띄 랙 랩 렉 렛 렬 룬 몇 뷰 블 썬 압 앙 왠 윈 젤 즐 쭐 찍 추 칸 컬 큭 텀 텔 톰 팡 팬 펀 폴 현 흑 흡 힐
+
+Counts exclude every bounded current text token, not Hangul alone.
+Runtime safety of candidate planes is not claimed by this audit.

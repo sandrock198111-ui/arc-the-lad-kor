@@ -1,0 +1,18 @@
+diff --git a/02_scripts/build_arc1_v155_dynamic_cache.py b/02_scripts/build_arc1_v155_dynamic_cache.py
+--- a/02_scripts/build_arc1_v155_dynamic_cache.py
++++ b/02_scripts/build_arc1_v155_dynamic_cache.py
+@@ -399,4 +399,4 @@
+-    for path in (ASSIGNMENTS, CACHE_SLOTS, PLANNED_LOOKUP,
++    for path in (ASSIGNMENTS, CACHE_SLOTS, PROTECTED_RELOCATIONS, PLANNED_LOOKUP,
+                  PLANNED_DICTIONARY, PLANNED_GLYPHS):
+         if not path.exists():
+             raise SystemExit(f"missing plan artifact: {path}")
+@@ -417,6 +417,8 @@
+     with ASSIGNMENTS.open(encoding="utf-8-sig", newline="") as handle:
+         assignment_rows = list(csv.DictReader(handle))
+     with CACHE_SLOTS.open(encoding="utf-8-sig", newline="") as handle:
+         cache_rows = list(csv.DictReader(handle))
++    with PROTECTED_RELOCATIONS.open(encoding="utf-8-sig", newline="") as handle:
++        relocation_rows = list(csv.DictReader(handle))
+     if len(cache_rows) != CACHE_N:
+         raise SystemExit(f"cache plan has {len(cache_rows)} slots")

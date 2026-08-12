@@ -1,0 +1,32 @@
+v192 all choice-speaker rows merged with cursor geometry preserved
+base=arc1_v191_yagun_choice_local_fixes_682EC28A.zip
+base_sha256=682EC28A565FAD7E66C4D70A79D66B6F63C227FA079047C9903CB1B808325690
+geometry_base=arc1_v190_dynamic_owner_repair_4AC51D4F.zip
+geometry_sha256=4AC51D4F38F38B65782DBD5AAE5A7DA03369A57D6E7DBF3F437E4EDB29556619
+output=arc1_v192_choice_speaker_rows_899DDD9A.zip
+sha256=899DDD9A4D22B80AD9229605461C25ABA0FE79FAC6B1533D2A9AE1ABC5B22A35
+choice_bodies_checked=357
+speaker_prompt_candidates=12/12
+speaker_prompts_changed=12
+sentence_wrap_prompts_preserved=4/4
+other_choices_unchanged=341/341
+choice_E5_E6_geometry=v190 exact 357/357 PASS
+target_option_tails=v190 byte-identical 12/12 PASS
+target_layout=prompt|blank|option1|option2 12/12 PASS
+target_prompt_width_max_px=228
+PSX.EXE=v191 byte-identical PASS
+COMM.IMG=v191 byte-identical PASS
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+resident_used=5356/5356
+resident_free=0
+heap_boundary=0x801FF8B0 unchanged
+startup_copy=5356 unchanged
+changed_members=1/S1023.DAT,21/S2042.DAT,31/S3012.DAT,31/S3022.DAT,7/S7021.DAT,7/S7022.DAT,7/S7023.DAT,7/S7024.DAT,7/S7025.DAT,7/S7026.DAT,7/S7028.DAT
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+rollback=v190 for choice layout; v191 for Yagun wording

@@ -1,0 +1,40 @@
+v151 dynamic-cache requirement audit
+build=arc1_v151_free_the_sprite_cell_A4358FEE.zip
+build_sha256=A4358FEE5FEA4964C9DD376B630894EB5EC133EFEEDD9E5E85BBC5FDD8CA1A46
+unique_rendered_hangul_indices=1098
+all_current_text_indices=1719
+unique_rendered_hangul_shapes=699
+location_COMM.IMG=915
+location_strip_A=52
+location_strip_B=48
+location_strip_C=36
+location_strip_D_remap=47
+comm_img_indices_blank_on_original=511
+text_units_measured=6418
+max_distinct_hangul_in_one_unit=52
+top_working_sets=
+   52  exe:0x82938
+   49  exe:0x81B4C
+   48  exe:0x7AC38
+   42  exe:0x7AEE9
+   42  exe:0x7A900
+   42  exe:0x79EB5
+   40  slot:31/S3012.DAT:14
+   40  slot:21/S2042.DAT:2
+   40  slot:21/S2041.DAT:19
+   40  exe:0x811C0
+   40  exe:0x79E36
+   39  slot:F/SF021.DAT:1
+   39  slot:6/S6022.DAT:0
+   39  exe:0x804A4
+   38  slot:F/SF0E1.DAT:0
+   38  slot:8/S8013.DAT:15
+   38  slot:7/S7012.DAT:25
+   38  slot:6/S6014.DAT:25
+   38  slot:5/S5013.DAT:27
+   38  slot:32/S3066.DAT:0
+whole_cell_candidates=0
+whole_cell_candidates_all_4_original_text=0
+candidate_glyph_planes=0
+
+candidate is static evidence only; runtime coexistence remains pending

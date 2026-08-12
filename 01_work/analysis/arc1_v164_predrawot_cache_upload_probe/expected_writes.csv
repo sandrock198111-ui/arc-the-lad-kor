@@ -1,0 +1,4 @@
+﻿runtime_address,file_offset,resident,before,after,reason
+0x8011C4AC,0x1CAC,0,0x0C07FC68,0x0C047205,restore early stock-frame call
+0x8011C860,0x2060,0,0x0C05DB87,0x0C07FC68,invoke cache wrapper immediately before DrawOT
+0x801FF3AC,0x8EED4,1,0x0C047205,0x0C05DB87,wrapper preserves displaced DrawOT call

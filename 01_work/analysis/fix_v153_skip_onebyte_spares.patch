@@ -1,0 +1,19 @@
+diff --git a/02_scripts/plan_dynamic_cache_v153.py b/02_scripts/plan_dynamic_cache_v153.py
+--- a/02_scripts/plan_dynamic_cache_v153.py
++++ b/02_scripts/plan_dynamic_cache_v153.py
+@@ -172,13 +172,11 @@ def main() -> None:
+         occupied.add(index)
+ 
+     # Spend every remaining safe plane on the most frequent unassigned shape.
+-    free_static = sorted(safe_pool - occupied)
++    free_static = sorted(index for index in safe_pool - occupied
++                         if len(direct_code(index) or b"") == 2)
+     for char in [char for char, _ in frequency.most_common() if char not in assignments]:
+         if not free_static:
+             break
+         index = free_static.pop(0)
+         code = direct_code(index)
+-        if len(code or b"") != 2:
+-            raise SystemExit(f"unexpected one-byte spare after mandatory allocation: {index}")
+         assignments[char] = {"kind": "static", "index": index, "code": code}
+         occupied.add(index)

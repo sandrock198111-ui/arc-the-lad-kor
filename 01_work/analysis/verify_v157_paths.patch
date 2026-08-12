@@ -1,0 +1,15 @@
+diff --git a/02_scripts/verify_arc1_v156_dynamic_cache.py b/02_scripts/verify_arc1_v156_dynamic_cache.py
+--- a/02_scripts/verify_arc1_v156_dynamic_cache.py
++++ b/02_scripts/verify_arc1_v156_dynamic_cache.py
+@@ -28,8 +28,8 @@
+ 
+ BASE = ROOT / "03_output/arc1_v151_free_the_sprite_cell_A4358FEE.zip"
+-BUILD = ROOT / "03_output/arc1_v156_dynamic_cache_D5FB1ADC.zip"
+-BUILD_SHA = "D5FB1ADC09631E7B939014D1EAF16531D688656368F5C8EBD854A519B4CD3468"
++BUILD = ROOT / "03_output/arc1_v157_dynamic_cache_26B2B680.zip"
++BUILD_SHA = "26B2B680F3D071ADF17506A1B15884324A48A68EA63A9F464D502A60F882C299"
+ ORIGINAL = ROOT / "00_original/arc.zip"
+ ASSIGNMENTS = ROOT / "01_work/analysis/dynamic_cache_v153_widthsafe/glyph_assignments.csv"
+-REPORT = ROOT / "01_work/analysis/arc1_v156_dynamic_cache/independent_verification.txt"
++REPORT = ROOT / "01_work/analysis/arc1_v157_dynamic_cache/independent_verification.txt"
+ 

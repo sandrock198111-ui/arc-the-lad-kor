@@ -1,0 +1,78 @@
+v151 dynamic-cache capacity simulation
+unique_hangul_shapes=700
+tier2_represented=380
+tier2_spare_planes=103
+text_units=7425
+
+cache_slots=16
+  static_shapes=467
+  dynamic_source_shapes=233
+  dynamic_raw_bytes=4194
+  max_dynamic_in_one_unit=5
+  one_byte_dynamic_shapes=0
+  row_dictionary_bytes=3084
+  row_dictionary_entries=144
+  row_dictionary_escapes=0
+  zlib_reference_bytes=1647
+  top_dynamic_working_sets=5:slot:9/S9051.DAT:2, 5:slot:8/S8013.DAT:16, 5:slot:7/S7032.DAT:0, 5:slot:7/S7023.DAT:0, 5:slot:7/S7012.DAT:27
+
+cache_slots=20
+  static_shapes=463
+  dynamic_source_shapes=237
+  dynamic_raw_bytes=4266
+  max_dynamic_in_one_unit=5
+  one_byte_dynamic_shapes=0
+  row_dictionary_bytes=3132
+  row_dictionary_entries=144
+  row_dictionary_escapes=0
+  zlib_reference_bytes=1665
+  top_dynamic_working_sets=5:slot:9/S9051.DAT:2, 5:slot:8/S8013.DAT:16, 5:slot:7/S7032.DAT:0, 5:slot:7/S7023.DAT:0, 5:slot:7/S7012.DAT:27
+
+cache_slots=24
+  static_shapes=459
+  dynamic_source_shapes=241
+  dynamic_raw_bytes=4338
+  max_dynamic_in_one_unit=5
+  one_byte_dynamic_shapes=0
+  row_dictionary_bytes=3182
+  row_dictionary_entries=145
+  row_dictionary_escapes=0
+  zlib_reference_bytes=1687
+  top_dynamic_working_sets=5:slot:9/S9051.DAT:2, 5:slot:8/S8013.DAT:16, 5:slot:7/S7032.DAT:0, 5:slot:7/S7023.DAT:0, 5:slot:7/S7012.DAT:27
+
+cache_slots=32
+  static_shapes=451
+  dynamic_source_shapes=249
+  dynamic_raw_bytes=4482
+  max_dynamic_in_one_unit=6
+  one_byte_dynamic_shapes=0
+  row_dictionary_bytes=3278
+  row_dictionary_entries=145
+  row_dictionary_escapes=0
+  zlib_reference_bytes=1733
+  top_dynamic_working_sets=6:body:21/S2045.DAT:0x496A6, 5:slot:9/S9051.DAT:2, 5:slot:8/S8013.DAT:16, 5:slot:7/S7032.DAT:0, 5:slot:7/S7023.DAT:0
+
+cache_slots=48
+  static_shapes=435
+  dynamic_source_shapes=265
+  dynamic_raw_bytes=4770
+  max_dynamic_in_one_unit=6
+  one_byte_dynamic_shapes=0
+  row_dictionary_bytes=3476
+  row_dictionary_entries=148
+  row_dictionary_escapes=0
+  zlib_reference_bytes=1817
+  top_dynamic_working_sets=6:slot:4/S4036.DAT:11, 6:body:21/S2045.DAT:0x496A6, 5:slot:9/S9051.DAT:2, 5:slot:8/S8021.DAT:5, 5:slot:8/S8013.DAT:16
+
+cache_slots=64
+  static_shapes=419
+  dynamic_source_shapes=281
+  dynamic_raw_bytes=5058
+  max_dynamic_in_one_unit=8
+  one_byte_dynamic_shapes=0
+  row_dictionary_bytes=3674
+  row_dictionary_entries=151
+  row_dictionary_escapes=0
+  zlib_reference_bytes=1903
+  top_dynamic_working_sets=8:slot:7/S7032.DAT:0, 8:body:7/S7032.DAT:0x479EC, 7:slot:4/S4036.DAT:11, 7:slot:32/S3061.DAT:2, 7:slot:21/S2044.DAT:0
+

@@ -1,0 +1,13 @@
+diff --git a/02_scripts/verify_arc1_v156_dynamic_cache.py b/02_scripts/verify_arc1_v156_dynamic_cache.py
+--- a/02_scripts/verify_arc1_v156_dynamic_cache.py
++++ b/02_scripts/verify_arc1_v156_dynamic_cache.py
+@@ -15,7 +15,7 @@
+ 
+ from audit_dynamic_cache_requirements import (  # noqa: E402
+-    CACHE, bitmap, glyph_index, read_lut, source_ranges, text_units,
++    CACHE, active_slots, bitmap, glyph_index, read_lut, source_ranges, text_units,
+ )
+-from build_arc1_v156_dynamic_cache import (  # noqa: E402
++from build_arc1_v157_dynamic_cache import (  # noqa: E402
+     CACHE_N, CACHE_SLOTS, CELL, COMM, COPY_N, DECODER_ENTRY, FRAME_HOOK,
+     FRAMESWAP, GLYPH_PACKET_HOOK, HEAP_BASE, IPR, LOADIMAGE, LOOKUP_N,

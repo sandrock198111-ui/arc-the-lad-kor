@@ -1,0 +1,16 @@
+v162 independent static verification: PASS
+archive=arc1_v162_strip_a_dynamic_cache_1759E571.zip
+archive_sha256=1759E57185F8EF16D8A5421EE122FB14F158939736D2C70AC728A1D8B2EEC056
+archive_members=164
+changed_EXE_bytes=427
+changed_non_EXE_members=0
+dynamic_sources=207
+cache_slots=20
+exact_source_slot_pairs=4140
+old_writer_control_failures=207/207
+lookup_table=byte_identical_to_v161
+bounded_text_and_all_DAT=byte_identical_to_v161
+v151_stateless_renderer=byte_identical
+strip_A_prefix_geometry=x961..975,y480..491,tpage_0x1F,U4..63,V224
+v161_control_states_strip_A_nonzero=0/1080_halfwords
+runtime_verification=PENDING user cold boot

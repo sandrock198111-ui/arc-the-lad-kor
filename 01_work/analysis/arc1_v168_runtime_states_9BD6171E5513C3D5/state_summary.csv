@@ -1,0 +1,8 @@
+﻿slot,savestate,lineage_ok,lineage_failures,owners_used,active_slots,active_mask,next_slot,selected_ot_mask,item_description_mask,expected_protection_union,active_missing_current_union,matched_text_objects,stale_text_objects,stale_text_packets
+1,HASH-9BD6171E5513C3D5_1.sav,0,frame item_guard,18,12,0x03FE15,18,0x03FE15,0x03E014,0x03FE15,0x000000,0,0,0
+2,HASH-9BD6171E5513C3D5_2.sav,0,frame item_guard,24,22,0xFE7FFF,14,0xFE7FFF,0x3C0000,0xFE7FFF,0x000000,1,1,4
+3,HASH-9BD6171E5513C3D5_3.sav,0,frame item_guard,24,8,0x900FC0,12,0x900FC0,0x000480,0x900FC0,0x000000,0,0,0
+4,HASH-9BD6171E5513C3D5_4.sav,0,frame item_guard,24,5,0x80000F,4,0x80000F,0x800008,0x80000F,0x000000,0,0,0
+5,HASH-9BD6171E5513C3D5_5.sav,0,frame item_guard,24,4,0x000461,1,0x000461,0x0000E0,0x0004E1,0x000080,1,1,3
+6,HASH-9BD6171E5513C3D5_6.sav,0,frame item_guard,24,2,0x000402,4,0x000402,0x2000CC,0x2004CE,0x2000CC,0,0,0
+7,HASH-9BD6171E5513C3D5_7.sav,0,frame item_guard,24,0,0x000000,3,0x000000,0x000000,0x000000,0x000000,2,0,0

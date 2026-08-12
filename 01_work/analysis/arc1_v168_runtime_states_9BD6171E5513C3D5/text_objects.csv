@@ -1,0 +1,5 @@
+﻿state,header,item_description,count,dynamic_mask,expected_text,current_owner_text,stale_count,stale
+slot2,0x801F031C,1,5,0x3C0000,장군의<s:155>방,하그전<s:155>시,4,i0:장(33)->하(29) i1:군(28)->그(4) i2:의(2)->전(23) i4:방(48)->시(8)
+slot5,0x801F031C,1,5,0x0000E0,토탈<s:155>힐링,마력<s:155>상승,3,i0:토(34)->마(37) i1:탈(176)->력(49) i3:힐(344)->상(32)
+slot7,0x801F031C,1,0,0x000000,,,0,
+slot7,0x801F1DB4,0,0,0x000000,,,0,

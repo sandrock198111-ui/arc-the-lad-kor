@@ -1,0 +1,63 @@
+diff --git a/02_scripts/plan_dynamic_cache_v153_widthsafe.py b/02_scripts/plan_dynamic_cache_v153_widthsafe.py
+--- a/02_scripts/plan_dynamic_cache_v153_widthsafe.py
++++ b/02_scripts/plan_dynamic_cache_v153_widthsafe.py
+@@ -30,6 +30,7 @@ GLYPH_ROWS = OUT / "dynamic_glyph_rows.bin"
+ REPORT = OUT / "plan_report.txt"
+ CACHE_N = 20
+ RESIDENT_BUDGET = 5356
++RUNTIME_LOOKUP_N = 409
+ 
+ 
+ def main() -> None:
+@@ -158,9 +159,12 @@ def main() -> None:
+     # Allocate two-byte aliases.  Existing same-character slots win.  All bounded
+     # non-Hangul slots are protected, and every remaining Hangul slot is reusable.
++    protected_high = sorted(slot for slot in protected_virtual if slot >= RUNTIME_LOOKUP_N)
++    if protected_high:
++        raise SystemExit(f"non-Hangul text needs lookup slots beyond 408: {protected_high}")
+     slots_by_char: dict[str, list[int]] = defaultdict(list)
+     reusable = []
+     for slot, char in sorted(current_slot_char.items()):
+-        if slot not in protected_virtual:
++        if slot < RUNTIME_LOOKUP_N and slot not in protected_virtual:
+             slots_by_char[char].append(slot)
+             reusable.append(slot)
+     used_slots: set[int] = set()
+@@ -192,9 +196,9 @@ def main() -> None:
+ 
+     # Rebuild lookup aliases.  Every known Hangul slot follows the character's new
+     # static home or dynamic source.  Protected non-Hangul slots remain byte-identical.
+-    new_lut = list(lut)
++    new_lut = list(lut[:RUNTIME_LOOKUP_N])
+     for slot, char in current_slot_char.items():
+-        if slot in protected_virtual or char not in frequency:
++        if slot >= RUNTIME_LOOKUP_N or slot in protected_virtual or char not in frequency:
+             continue
+         new_lut[slot] = (physical[char] if char in physical else 0x8000 | source_id[char])
+     for char, slot in canonical_slot.items():
+@@ -222,7 +226,7 @@ def main() -> None:
+     row_id = {value: i for i, value in enumerate(row_patterns)}
+     dictionary_blob = b"".join(struct.pack("<H", value) for value in row_patterns)
+     glyph_blob = bytes(row_id[row] for char in dynamic for row in row_values(char_bits[char]))
+-    lookup_blob = struct.pack(f"<{LOOKUP_N}H", *new_lut)
++    lookup_blob = struct.pack(f"<{RUNTIME_LOOKUP_N}H", *new_lut)
+ 
+     dynamic_set = set(dynamic)
+     working = sorted(((len(chars & dynamic_set), label) for label, chars in units),
+@@ -259,7 +263,7 @@ def main() -> None:
+     GLYPH_ROWS.write_bytes(glyph_blob)
+ 
+     # Metadata estimate: owners u16, slot indices u16, active+next, RECT, 72-byte cell.
+-    data_bytes = len(lookup_blob) + len(dictionary_blob) + len(glyph_blob)
++    data_bytes = len(dictionary_blob) + len(glyph_blob)
+     metadata_bytes = CACHE_N * 2 + CACHE_N * 2 + 8 + 8 + 72
+     lines = [
+         "v153 width-safe dynamic-cache assignment",
+@@ -279,6 +283,7 @@ def main() -> None:
+         f"safe_direct_pool={len(safe_pool)}",
+         f"row_dictionary_entries={len(row_patterns)}",
+         f"row_dictionary_bytes={len(dictionary_blob)}",
++        f"runtime_lookup_entries={RUNTIME_LOOKUP_N}",
+         f"dynamic_glyph_rows_bytes={len(glyph_blob)}",
+         f"lookup_bytes={len(lookup_blob)}",
+         f"resident_data_bytes_before_code={data_bytes + metadata_bytes}",

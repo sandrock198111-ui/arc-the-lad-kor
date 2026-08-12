@@ -1,0 +1,21 @@
+v170 blank-space-filler independent verification
+
+patch=arc1_v170_restore_blank_space_filler_F8A67A67.zip
+sha256=F8A67A674A8E17F18C50DB7408FB3DCFD494FD9760C665D429CC11D36D9EF81B
+changed_members=COMM.IMG
+changed_COMM_bytes=26
+physical_index=155
+row=1 column=17 plane=3
+untouched_pixels=29
+v169_pixels=29
+v151_pixels=0
+v170_pixels=0
+
+member_order=PASS
+member_lengths=PASS
+PSX_and_all_DAT_byte_identical=PASS
+diff_confined_to_one_plane=PASS
+only_set_bits_cleared=PASS
+v151_control_reproduced=PASS
+result=PASS_STATIC
+runtime=PENDING user cold boot

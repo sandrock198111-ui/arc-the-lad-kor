@@ -1,0 +1,88 @@
+v162 runtime audit
+build=arc1_v162_strip_a_dynamic_cache_1759E571.zip
+build_sha256=1759E57185F8EF16D8A5421EE122FB14F158939736D2C70AC728A1D8B2EEC056
+
+slot1.state.bin
+  code_failures=none
+  cache_table=3360..3379 ok=True
+  active=0x00000000 next=1 rect=(961, 480, 3, 12)
+  owners=slot0=택:52:diff40
+  owner_plane_mismatches=1/1
+  RAM_shadow_equals_VRAM=5/5
+  nonzero_cache_cells=5/5
+  E100001F_words=5 addresses=0x8010FFD9,0x801C038C,0x801C03A0,0x801F02EC,0x801F0300
+  font_CLUT_table=7FC0 7FC1 7FC2 7FC3 7FC4 7FC5 7FC6 7FC7 7FC8 7FC9 7FCA 7FCB 7FCC 7FCD 7FCE 7FCF
+  linked_high_page_packets=U4:V224:CLUT7FC0:links2
+  row40_packet_candidates=2 addresses=0x801EFEA4,0x801EFEB8
+  row40_packet_groups=U4:CLUT7FC0:palette_nonzero8/16:packets2
+
+slot2.state.bin
+  code_failures=none
+  cache_table=3360..3379 ok=True
+  active=0x00000000 next=1 rect=(961, 480, 3, 12)
+  owners=slot0=택:52:diff40
+  owner_plane_mismatches=1/1
+  RAM_shadow_equals_VRAM=5/5
+  nonzero_cache_cells=5/5
+  E100001F_words=8 addresses=0x801BF68C,0x801BF6A0,0x801C038C,0x801C03A0,0x801F02EC,0x801F0300,0x801F0DE8,0x801F0DFC
+  font_CLUT_table=7FC0 7FC1 7FC2 7FC3 7FC4 7FC5 7FC6 7FC7 7FC8 7FC9 7FCA 7FCB 7FCC 7FCD 7FCE 7FCF
+  linked_high_page_packets=none
+  row40_packet_candidates=0 addresses=none
+  row40_packet_groups=none
+
+slot3.state.bin
+  code_failures=none
+  cache_table=3360..3379 ok=True
+  active=0x00000000 next=1 rect=(961, 480, 3, 12)
+  owners=slot0=택:52:diff40
+  owner_plane_mismatches=1/1
+  RAM_shadow_equals_VRAM=5/5
+  nonzero_cache_cells=5/5
+  E100001F_words=8 addresses=0x801BF68C,0x801BF6A0,0x801C038C,0x801C03A0,0x801F02EC,0x801F0300,0x801F0DE8,0x801F0DFC
+  font_CLUT_table=7FC0 7FC1 7FC2 7FC3 7FC4 7FC5 7FC6 7FC7 7FC8 7FC9 7FCA 7FCB 7FCC 7FCD 7FCE 7FCF
+  linked_high_page_packets=none
+  row40_packet_candidates=0 addresses=none
+  row40_packet_groups=none
+
+slot4.state.bin
+  code_failures=none
+  cache_table=3360..3379 ok=True
+  active=0x00000000 next=4 rect=(961, 480, 3, 12)
+  owners=slot0=택:52:diff40 slot1=잎:23:diff40 slot2=끈:29:diff35 slot3=독:87:diff40
+  owner_plane_mismatches=4/4
+  RAM_shadow_equals_VRAM=5/5
+  nonzero_cache_cells=5/5
+  E100001F_words=10 addresses=0x801BF68C,0x801BF6A0,0x801C038C,0x801C03A0,0x801F02EC,0x801F0300,0x801F0DE8,0x801F0DFC,0x801F1D84,0x801F1D98
+  font_CLUT_table=7FC0 7FC1 7FC2 7FC3 7FC4 7FC5 7FC6 7FC7 7FC8 7FC9 7FCA 7FCB 7FCC 7FCD 7FCE 7FCF
+  linked_high_page_packets=U4:V224:CLUT0010:links2 U4:V224:CLUT7FC1:links2
+  row40_packet_candidates=4 addresses=0x801F0798,0x801F07AC,0x801F1B44,0x801F1B58
+  row40_packet_groups=U4:CLUT0010:palette_nonzero0/16:packets2 U4:CLUT7FC1:palette_nonzero8/16:packets2
+
+slot5.state.bin
+  code_failures=none
+  cache_table=3360..3379 ok=True
+  active=0x00000000 next=6 rect=(964, 480, 3, 12)
+  owners=slot0=택:52:diff40 slot1=잎:23:diff40 slot2=끈:29:diff35 slot3=독:87:diff40 slot4=쓴:104:diff31 slot5=률:98:diff56
+  owner_plane_mismatches=6/6
+  RAM_shadow_equals_VRAM=5/5
+  nonzero_cache_cells=5/5
+  E100001F_words=10 addresses=0x801BF68C,0x801BF6A0,0x801C038C,0x801C03A0,0x801F02EC,0x801F0300,0x801F0DE8,0x801F0DFC,0x801F1D84,0x801F1D98
+  font_CLUT_table=7FC0 7FC1 7FC2 7FC3 7FC4 7FC5 7FC6 7FC7 7FC8 7FC9 7FCA 7FCB 7FCC 7FCD 7FCE 7FCF
+  linked_high_page_packets=U4:V224:CLUT7FC1:links2
+  row40_packet_candidates=2 addresses=0x801F0798,0x801F07AC
+  row40_packet_groups=U4:CLUT7FC1:palette_nonzero8/16:packets2
+
+slot6.state.bin
+  code_failures=none
+  cache_table=3360..3379 ok=True
+  active=0x00000000 next=6 rect=(961, 480, 3, 12)
+  owners=slot0=택:52:diff40 slot1=잎:23:diff40 slot2=끈:29:diff35 slot3=독:87:diff40 slot4=쓴:104:diff31 slot5=률:98:diff56
+  owner_plane_mismatches=6/6
+  RAM_shadow_equals_VRAM=5/5
+  nonzero_cache_cells=5/5
+  E100001F_words=10 addresses=0x801BF68C,0x801BF6A0,0x801C038C,0x801C03A0,0x801F02EC,0x801F0300,0x801F0DE8,0x801F0DFC,0x801F1D84,0x801F1D98
+  font_CLUT_table=7FC0 7FC1 7FC2 7FC3 7FC4 7FC5 7FC6 7FC7 7FC8 7FC9 7FCA 7FCB 7FCC 7FCD 7FCE 7FCF
+  linked_high_page_packets=U4:V224:CLUT7FC1:links2
+  row40_packet_candidates=2 addresses=0x801F0798,0x801F07AC
+  row40_packet_groups=U4:CLUT7FC1:palette_nonzero8/16:packets2
+

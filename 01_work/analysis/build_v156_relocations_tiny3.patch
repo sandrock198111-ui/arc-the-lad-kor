@@ -1,0 +1,35 @@
+diff --git a/02_scripts/build_arc1_v155_dynamic_cache.py b/02_scripts/build_arc1_v155_dynamic_cache.py
+--- a/02_scripts/build_arc1_v155_dynamic_cache.py
++++ b/02_scripts/build_arc1_v155_dynamic_cache.py
+@@ -449,6 +449,21 @@
+     for char, index in static_index.items():
+         bits = bits_by_char.get(char)
+         if bits is None or not any(bits):
+             raise SystemExit(f"missing bitmap for {char!r}")
+         put_plane(font, index, bits)
++
++    relocation_bits: dict[int, tuple[int, ...]] = {}
++    relocation_destinations: set[int] = set()
++    static_destinations = set(static_index.values())
++    for relocation in relocation_rows:
++        slot = int(relocation["virtual_slot"])
++        source_index = int(relocation["source_index"])
++        destination_index = int(relocation["destination_index"])
++        if destination_index in static_destinations or destination_index in cache_indices:
++            raise SystemExit(f"protected relocation {slot} overlaps another glyph")
++        bits = bitmap(base_exe, base_font, source_index)
++        if not bits or not any(bits) or destination_index in relocation_destinations:
++            raise SystemExit(f"invalid protected relocation for virtual slot {slot}")
++        put_plane(font, destination_index, bits)
++        relocation_destinations.add(destination_index)
++        relocation_bits[destination_index] = bits
+     if any(font[y * 0x380 + 126:(y + 1) * 0x380]
+@@ -457,4 +472,8 @@
+     for char, index in static_index.items():
+         if shapes.get(plain_bitmap(font, index)) != char:
+             raise SystemExit(f"static glyph readback failed: {char!r} at {index}")
++
++    for destination_index, bits in relocation_bits.items():
++        if plain_bitmap(font, destination_index) != bits:
++            raise SystemExit(f"protected glyph readback failed at {destination_index}")
+     for index in cache_indices:

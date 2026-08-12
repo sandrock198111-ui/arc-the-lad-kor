@@ -1,0 +1,41 @@
+v190 dynamic-only glyph owner repair
+base=arc1_v189_dialogue_timing_choice_rows_DA219F8F.zip
+base_sha256=DA219F8F46C5E3C537C5B8D4928EB4FAA5D0009CA6C916B772C94D423A3F67B6
+output=arc1_v190_dynamic_owner_repair_4AC51D4F.zip
+sha256=4AC51D4F38F38B65782DBD5AAE5A7DA03369A57D6E7DBF3F437E4EDB29556619
+COMM.IMG=byte-identical to v189 PASS
+existing_lookup_entries=409/409 preserved
+lookup_entries=413; new codes EA9C..EA9F
+dynamic_sources=466; old sources 462/462 preserved
+Huffman_readback=466/466 PASS
+cache_slots=28
+bounded_max_simultaneous_dynamic=26
+owner_records=83
+owner_actual_byte_replacements=76
+choice_bodies_checked=357
+choice_E5_E6_geometry=unchanged PASS
+changed_members=1/S1023.DAT,21/S2022.DAT,21/S2041.DAT,21/S2042.DAT,21/S2045.DAT,22/S2055.DAT,23/S2071.DAT,31/S3012.DAT,31/S3013.DAT,31/S3014.DAT,31/S3022.DAT,5/S5013.DAT,6/S6014.DAT,7/S7012.DAT,7/S7021.DAT,7/S7028.DAT,8/S8013.DAT,C1/SC011.DAT,C1/SC021.DAT,C1/SC031.DAT,C1/SC051.DAT,C1/SC061.DAT,C1/SC081.DAT,C2/SC0A1.DAT,PSX.EXE
+resident_data_bytes=3972
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+resident_used=5356/5356
+resident_free=0
+heap_boundary=0x801FF8B0 unchanged
+startup_copy=5356 unchanged
+decoder=0x801FF348/568 bytes
+decoder_r3000_load_delay=PASS
+decoder_branch_delay=PASS
+huffman=0x801FF580/232 bytes
+huffman_r3000_load_delay=PASS
+huffman_branch_delay=PASS
+frame=0x801FF668/584 bytes
+frame_r3000_load_delay=PASS
+frame_branch_delay=PASS
+capstone_disassembly=PASS
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+rollback=v189

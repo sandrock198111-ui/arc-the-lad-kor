@@ -1,0 +1,15 @@
+v161 independent bounded-text verification
+
+archive_sha256=B2EA377E1E43C1954F42A63F375B8D7B5997A6B736988C315B4C06C76A5F44E3
+archive_members=164
+changed_members_from_v160=PSX.EXE
+pointer_records=543
+unique_string_spans=469
+proven_string_bytes=5798
+v160_damaged_pointer_records=543
+v161_damaged_pointer_records=0
+PSX_bytes_changed_from_v160=7509
+nontext_pool_equals_v151=PASS
+proven_text_equals_v160=PASS
+outside_pool_equals_v160=PASS
+result=PASS

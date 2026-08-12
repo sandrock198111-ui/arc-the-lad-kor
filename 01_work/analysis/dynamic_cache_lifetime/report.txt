@@ -1,0 +1,29 @@
+Dynamic cache lifetime audit
+build=arc1_v163_text_clut_classifier_773E3B82.zip
+build_sha256=773E3B82B58FBE9C836C96F34EA03C122847EC8BBD691AE4FDCFBA00D778FE63
+cache_rect_16bit=x961..975,y480..491
+frame_sync_word=0x0C05DAEA
+frame_hook_word=0x0C07FC68
+frame_call_order=PASS
+frame_calls=0x801FF38C->0x80177E4C 0x801FF3AC->0x8011C814
+stock_frame_calls=0x8011C820->0x8011CB48 0x8011C828->0x801299F8 0x8011C830->0x80182ADC 0x8011C850->0x80176F94 0x8011C858->0x80176E74 0x8011C860->0x80176E1C
+savestates_read=280
+savestates_failed=0
+lineages=other_or_unknown:129 stock:133 v162_superseded:7 v163:11
+active_cache_text_reads=4
+active_cache_nontext_reads=0
+active_cache_write_conflicts=0
+superseded_or_unknown_nontext_reads=1
+release_verdict=HOLD
+
+Unresolved:
+- game update 0x801299F8 runs after upload and before DrawOT; descendants are unbounded
+- MoveImage symbol/call graph is not independently resolved for this executable
+- 280 snapshots are regression coverage, not full-game ownership proof
+
+A non-zero conflict rejects the rectangle. Zero sampled conflicts do not
+certify it while the unresolved transfer paths remain.
+Recommended next isolation: hook 0x8011C860 and upload immediately before
+DrawOT, after game update and display-environment setup. Runtime safety of
+LoadImage at that later boundary still requires a dedicated cold-boot probe.
+details=E:\korean\01_work\analysis\dynamic_cache_lifetime\state_consumers.csv

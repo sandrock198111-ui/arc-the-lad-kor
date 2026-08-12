@@ -1,0 +1,10 @@
+﻿slot,scene,lineage_ok,lineage_failures,sprite_packets,lost_from_v151_packets,blank_live_font_packets
+1,load menu: missing L,1,,63,0,12
+2,dialogue: missing colon,1,,38,0,10
+3,dialogue: missing question mark,1,,39,2,12
+4,battle dialogue,1,,27,2,9
+5,battle help icons A,1,,26,1,6
+6,battle help icons B,1,,29,2,7
+7,damage overlay A,1,,0,0,0
+8,damage overlay B,1,,0,0,0
+9,battle configuration text,1,,49,31,37

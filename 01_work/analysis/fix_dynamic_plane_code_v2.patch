@@ -1,0 +1,17 @@
+diff --git a/02_scripts/audit_dynamic_cache_plane_budget.py b/02_scripts/audit_dynamic_cache_plane_budget.py
+--- a/02_scripts/audit_dynamic_cache_plane_budget.py
++++ b/02_scripts/audit_dynamic_cache_plane_budget.py
+@@ -81,11 +81,8 @@ def main() -> None:
+         if index < 220:
+             code = bytes((index + 1,))
+         else:
+-            lead_offset, trail0 = divmod(index - 0xDC, 255)
+-            lead, trail = 0xDD + lead_offset, trail0
+-            if trail == 0:
+-                lead -= 1
+-                trail = 0xFF
++            lead_offset, trail0 = divmod(index - 0xDC, 255)
++            lead, trail = 0xDD + lead_offset, trail0 + 1
+             if not (0xDD <= lead <= 0xE8 and 1 <= trail <= 0xFE) or lead == 0xE2:
+                 continue
+             code = bytes((lead, trail))

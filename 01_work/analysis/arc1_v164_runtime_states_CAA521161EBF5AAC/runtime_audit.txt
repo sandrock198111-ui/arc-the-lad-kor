@@ -1,0 +1,117 @@
+v164 eight-state runtime audit
+build=arc1_v164_predrawot_cache_upload_probe_4E714493.zip
+build_sha256=4E71449316530FF19F44F9C98E9DE62780EBE079548A12E25E7A30F0E80ED33C
+savestate_pattern=HASH-CAA521161EBF5AAC_*.sav
+
+slot1  HASH-CAA521161EBF5AAC_1.sav
+  lineage=v164 v164_code_ok=True failures=none
+  call_words=0x0C047205 0x0C07FC68 0x0C05DB87
+  owners=0:택(52)
+  active=0x00000000 next_slot=1
+  RAM_shadow_equals_VRAM=5/5
+  owner_glyph_shapes=1/1 mismatches=0
+  text_objects=1 matched=0 dynamic_packets=1
+  stale_objects=0 stale_packets=0
+  active_OT_packets=614 cache_text=1 cache_nontext=0
+  static_COMM_nontext_collisions=0
+
+slot2  HASH-CAA521161EBF5AAC_2.sav
+  lineage=v164 v164_code_ok=True failures=none
+  call_words=0x0C047205 0x0C07FC68 0x0C05DB87
+  owners=0:택(52)
+  active=0x00000000 next_slot=1
+  RAM_shadow_equals_VRAM=5/5
+  owner_glyph_shapes=1/1 mismatches=0
+  text_objects=1 matched=0 dynamic_packets=0
+  stale_objects=0 stale_packets=0
+  active_OT_packets=698 cache_text=0 cache_nontext=0
+  static_COMM_nontext_collisions=33
+
+slot3  HASH-CAA521161EBF5AAC_3.sav
+  lineage=v164 v164_code_ok=True failures=none
+  call_words=0x0C047205 0x0C07FC68 0x0C05DB87
+  owners=0:택(52)
+  active=0x00000000 next_slot=1
+  RAM_shadow_equals_VRAM=5/5
+  owner_glyph_shapes=1/1 mismatches=0
+  text_objects=2 matched=0 dynamic_packets=0
+  stale_objects=0 stale_packets=0
+  active_OT_packets=714 cache_text=0 cache_nontext=0
+  static_COMM_nontext_collisions=0
+
+slot4  HASH-CAA521161EBF5AAC_4.sav
+  lineage=v164 v164_code_ok=True failures=none
+  call_words=0x0C047205 0x0C07FC68 0x0C05DB87
+  owners=0:택(52) 1:끈(29) 2:독(87)
+  active=0x00000000 next_slot=3
+  RAM_shadow_equals_VRAM=5/5
+  owner_glyph_shapes=3/3 mismatches=0
+  text_objects=3 matched=0 dynamic_packets=0
+  stale_objects=0 stale_packets=0
+  active_OT_packets=734 cache_text=0 cache_nontext=0
+  static_COMM_nontext_collisions=6
+
+slot5  HASH-CAA521161EBF5AAC_5.sav
+  lineage=v164 v164_code_ok=True failures=none
+  call_words=0x0C047205 0x0C07FC68 0x0C05DB87
+  owners=0:택(52) 1:끈(29) 2:독(87) 3:잎(23)
+  active=0x00000000 next_slot=4
+  RAM_shadow_equals_VRAM=5/5
+  owner_glyph_shapes=4/4 mismatches=0
+  text_objects=3 matched=0 dynamic_packets=0
+  stale_objects=0 stale_packets=0
+  active_OT_packets=733 cache_text=0 cache_nontext=0
+  static_COMM_nontext_collisions=4
+
+slot6  HASH-CAA521161EBF5AAC_6.sav
+  lineage=v164 v164_code_ok=True failures=none
+  call_words=0x0C047205 0x0C07FC68 0x0C05DB87
+  owners=0:택(52) 1:끈(29) 2:독(87) 3:잎(23) 4:묵(133) 5:쓴(104) 6:률(98)
+  active=0x00000000 next_slot=7
+  RAM_shadow_equals_VRAM=5/5
+  owner_glyph_shapes=7/7 mismatches=0
+  text_objects=3 matched=0 dynamic_packets=0
+  stale_objects=0 stale_packets=0
+  active_OT_packets=731 cache_text=0 cache_nontext=0
+  static_COMM_nontext_collisions=1
+
+slot7  HASH-CAA521161EBF5AAC_7.sav
+  lineage=v164 v164_code_ok=True failures=none
+  call_words=0x0C047205 0x0C07FC68 0x0C05DB87
+  owners=0:택(52) 1:끈(29) 2:독(87) 3:잎(23) 4:묵(133) 5:쓴(104) 6:률(98)
+  active=0x00000000 next_slot=7
+  RAM_shadow_equals_VRAM=5/5
+  owner_glyph_shapes=7/7 mismatches=0
+  text_objects=3 matched=0 dynamic_packets=1
+  stale_objects=0 stale_packets=0
+  active_OT_packets=686 cache_text=0 cache_nontext=0
+  static_COMM_nontext_collisions=1
+
+slot8  HASH-CAA521161EBF5AAC_8.sav
+  lineage=v164 v164_code_ok=True failures=none
+  call_words=0x0C047205 0x0C07FC68 0x0C05DB87
+  owners=0:택(52) 1:끈(29) 2:독(87) 3:잎(23) 4:묵(133) 5:쓴(104) 6:률(98)
+  active=0x00000000 next_slot=7
+  RAM_shadow_equals_VRAM=5/5
+  owner_glyph_shapes=7/7 mismatches=0
+  text_objects=3 matched=0 dynamic_packets=1
+  stale_objects=0 stale_packets=0
+  active_OT_packets=725 cache_text=1 cache_nontext=0
+  static_COMM_nontext_collisions=0
+
+aggregate
+  lineage=v164:8
+  matched_objects=0
+  stale_objects=0
+  stale_packets=0
+  dynamic_packets=3
+  active_ot_text_overlaps=2
+  active_ot_nontext_overlaps=0
+  static_nontext_collision_packets=45
+  owner_plane_mismatches=0
+
+Interpretation rules
+  code failure => stale/wrong build; do not infer cache behavior
+  shadow != VRAM => cache destination was overwritten or upload had not completed
+  nontext OT overlap => cache destination/classifier still catches game artwork
+  stale packet => persistent text points at a slot now owned by another glyph

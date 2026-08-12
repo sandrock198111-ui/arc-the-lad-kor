@@ -1,0 +1,24 @@
+v164 pre-DrawOT cache-upload diagnostic
+
+base=arc1_v163_text_clut_classifier_773E3B82.zip
+base_sha256=773E3B82B58FBE9C836C96F34EA03C122847EC8BBD691AE4FDCFBA00D778FE63
+output=arc1_v164_predrawot_cache_upload_probe_4E714493.zip
+sha256=4E71449316530FF19F44F9C98E9DE62780EBE079548A12E25E7A30F0E80ED33C
+archive_members=164
+PSX.EXE_bytes=587776
+changed_EXE_bytes=9
+changed_non_EXE_members=0
+
+early_hook=0x8011C4AC: cache_wrapper -> stock_frame
+late_hook=0x8011C860: DrawOT -> cache_wrapper
+wrapper_tail=0x801FF3AC: stock_frame -> DrawOT
+call_order=GPU sync -> stock frame/update/display setup -> cache LoadImage -> DrawOT
+cache_geometry_and_data=byte_identical_to_v163
+text_CLUT_classifier=byte_identical_to_v163
+COMM.IMG_and_all_non_EXE_members=byte_identical_to_v163
+frame routine 0x801FF1A0 / 580 bytes
+
+static_verification=PENDING separate verifier
+runtime_verification=PENDING user cold boot
+classification=diagnostic_only_not_release
+rollback=v163

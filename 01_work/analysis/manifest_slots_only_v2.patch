@@ -1,0 +1,55 @@
+diff --git a/02_scripts/audit_dynamic_cache_requirements.py b/02_scripts/audit_dynamic_cache_requirements.py
+--- a/02_scripts/audit_dynamic_cache_requirements.py
++++ b/02_scripts/audit_dynamic_cache_requirements.py
+@@ -28,3 +28,4 @@
+ ORIGINAL = ROOT / "00_original/arc.zip"
+ ORIGINAL_CSV = ROOT / "05_docs/script_original_full.csv"
++INSERTION_MANIFEST = ROOT / "05_docs/bulk_insertion_manifest.csv"
+ OUT = ROOT / "01_work/analysis/dynamic_cache_design"
+@@ -63,6 +64,20 @@
+             raw = bytes.fromhex(row["raw bytes as hex"].replace(" ", ""))
+             result.append((row["source file"], int(row[key], 0), len(raw)))
+     return result
+ 
+ 
++def active_slots() -> dict[str, tuple[int, ...]]:
++    """Return only slots explicitly assigned by the insertion manifest."""
++    by_file: dict[str, set[int]] = defaultdict(set)
++    with INSERTION_MANIFEST.open(encoding="utf-8-sig", newline="") as handle:
++        for row in csv.DictReader(handle):
++            if row["mode"] != "e2":
++                continue
++            name, slot = row["file"], int(row["slot"])
++            if slot in by_file[name]:
++                raise ValueError(f"duplicate assigned slot: {name}:{slot}")
++            by_file[name].add(slot)
++    return {name: tuple(sorted(slots)) for name, slots in by_file.items()}
++
++
+ def text_units(members: dict[str, bytes], ranges: list[tuple[str, int, int]]):
+@@ -74,16 +89,15 @@
+-    seen: set[str] = set()
+-    for name, _, _ in ranges:
+-        if name in seen or name not in members:
+-            continue
+-        seen.add(name)
++    for name, slots in active_slots().items():
++        if name not in members:
++            raise ValueError(f"assigned-slot file missing: {name}")
+         data = members[name]
+         if len(data) < SLOT_BASE + SLOT_COUNT * SLOT_SIZE:
+-            continue
+-        for slot in range(SLOT_COUNT):
++            raise ValueError(f"assigned-slot bank missing: {name}")
++        for slot in slots:
+             at = SLOT_BASE + slot * SLOT_SIZE
+             block = data[at:at + SLOT_SIZE]
+             if 0 not in block[:SLOT_SIZE - 1]:
+-                continue
++                raise ValueError(f"assigned slot has no terminator: {name}:{slot}")
+             end = block.index(0)
+-            if end:
+-                yield f"slot:{name}:{slot}", block[:end]
++            if not end:
++                raise ValueError(f"assigned slot is empty: {name}:{slot}")
++            yield f"slot:{name}:{slot}", block[:end]

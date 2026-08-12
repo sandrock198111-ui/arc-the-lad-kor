@@ -1,0 +1,44 @@
+v165 fail-closed 24-slot dynamic-cache plan
+
+base=arc1_v164_predrawot_cache_upload_probe_4E714493.zip
+base_sha256=4E71449316530FF19F44F9C98E9DE62780EBE079548A12E25E7A30F0E80ED33C
+all_sources=370
+restored_static_hangul_sources=162
+existing_dynamic_sources=207
+protected_dynamic_sources=1
+protected_virtual_slot=405
+protected_virtual_occurrences=2
+restored_physical_cells=50
+direct_one_byte_sources=39
+direct_index_ranges=40
+cache_slots=24
+cache_physical_cells=6
+bounded_max_simultaneous_dynamic=23
+
+huffman_row_symbols=162
+huffman_max_code_bits=12
+huffman_encoded_bits=23331
+huffman_bitstream_bytes=2917
+huffman_rows_bytes=324
+huffman_counts_bytes=12
+checkpoint_group=4
+checkpoint_count=93
+checkpoint_bytes=186
+conflict_range_bytes=160
+nibble_expand_bytes=32
+compressed_source_and_mapping_bytes=3632
+huffman_source_readback=370/370 PASS
+lookup_entries=409 unchanged
+text_token_width_changes=0 by design
+
+resident_data_and_state_before_code=3792
+resident_budget=5356
+bytes_left_for_all_resident_code=1564
+cell_backing=one 72-byte rebuild scratch, not 6 persistent cells
+decoded_glyph_scratch=24
+
+top_bounded_working_sets=23:slot:8/S8013.DAT:12 | 23:slot:7/S7025.DAT:12 | 23:slot:7/S7012.DAT:17 | 23:slot:6/S6014.DAT:17 | 23:slot:5/S5013.DAT:17 | 23:slot:21/S2045.DAT:18 | 22:slot:8/S8041.DAT:0 | 22:slot:5/S5041.DAT:0 | 22:slot:5/S5021.DAT:0 | 22:body:1/S1071.DAT:0x4798E
+
+analysis_only=PASS
+patch_built=NO
+next_gate=generate and disassemble decoder/frame/Huffman routines inside remaining bytes

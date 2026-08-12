@@ -1,0 +1,44 @@
+v171 UI-asset recovery and dynamic-source repack plan
+
+base=arc1_v170_restore_blank_space_filler_F8A67A67.zip
+base_sha256=F8A67A674A8E17F18C50DB7408FB3DCFD494FD9760C665D429CC11D36D9EF81B
+native_UI_cells_to_restore=26
+newly_displaced_Hangul_sources=92
+combined_direct_dynamic_sources=254
+existing_dynamic_sources=207
+protected_virtual_sources=1
+dynamic_sources_total=462
+direct_ranges=48
+direct_range_max_length=39
+direct_range_bytes=96
+direct_range_readback=254/254 PASS
+
+lookup_entries=409
+lookup_bits_per_entry=11
+lookup_bytes=563
+lookup_max_value=2047
+lookup_roundtrip=409/409 PASS
+
+huffman_sources=462
+huffman_encoded_rows_per_source=11
+omitted_row_11_blank=462/462 PASS
+huffman_row_symbols=168
+huffman_max_code_bits=13
+huffman_encoded_bits=27771
+huffman_bitstream_bytes=3472
+huffman_rows_bytes=336
+huffman_counts_bytes=13
+checkpoint_group=16
+checkpoint_count=29
+checkpoint_bytes=58
+huffman_source_readback=462/462 PASS
+
+bounded_max_simultaneous_dynamic=26
+cache_slots=28
+cache_physical_cells=7
+seventh_cell_x979..981_y480..491_nonzero=0/206 stock+v163 states
+runtime_observed_max_is_not_used_as_storage_capacity
+text_token_width_changes=0 by design
+analysis_only=PASS
+patch_built=NO
+top_bounded_working_sets=26:slot:21/S2041.DAT:19 | 24:slot:8/S8041.DAT:0 | 24:slot:8/S8013.DAT:12 | 24:slot:8/S8011.DAT:0 | 24:slot:7/S7025.DAT:12 | 24:slot:7/S7012.DAT:17 | 24:slot:6/S6022.DAT:0 | 24:slot:6/S6014.DAT:17 | 24:slot:5/S5021.DAT:0 | 24:slot:5/S5013.DAT:17

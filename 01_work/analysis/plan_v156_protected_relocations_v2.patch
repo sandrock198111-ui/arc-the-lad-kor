@@ -1,0 +1,59 @@
+diff --git a/02_scripts/plan_dynamic_cache_v153_widthsafe.py b/02_scripts/plan_dynamic_cache_v153_widthsafe.py
+--- a/02_scripts/plan_dynamic_cache_v153_widthsafe.py
++++ b/02_scripts/plan_dynamic_cache_v153_widthsafe.py
+@@ -23,4 +23,5 @@
+ OUT = ROOT / "01_work/analysis/dynamic_cache_v153_widthsafe"
+ ASSIGNMENTS = OUT / "glyph_assignments.csv"
+ CACHE_SLOTS = OUT / "cache_slots.csv"
++PROTECTED_RELOCATIONS = OUT / "protected_virtual_relocations.csv"
+ LOOKUP = OUT / "lookup_table.bin"
+@@ -158,6 +159,27 @@
+     # Allocate two-byte aliases.  Existing same-character slots win.  All bounded
+     # non-Hangul slots are protected, and every remaining Hangul slot is reusable.
+     protected_high = sorted(slot for slot in protected_virtual if slot >= RUNTIME_LOOKUP_N)
+     if protected_high:
+         raise SystemExit(f"non-Hangul text needs lookup slots beyond 408: {protected_high}")
++
++    # Three live UI glyphs in v151 still point into the removed high-page strips.
++    # Relocate those exact completed bitmaps to unused low-page planes.  Protected
++    # entries already in the low page stay byte-identical.
++    free_protected = sorted(
++        safe_pool - occupied,
++        key=lambda index: (len(direct_code(index) or b"") != 2, index),
++    )
++    protected_relocations = []
++    for slot in sorted(protected_virtual):
++        source_index = lut[slot]
++        if source_index < IPR * (256 // CELL):
++            continue
++        bits = bitmap(exe, font, source_index)
++        if not bits or not any(bits):
++            raise SystemExit(f"protected slot {slot} has no relocatable bitmap")
++        if not free_protected:
++            raise SystemExit("no low-page plane remains for protected UI glyphs")
++        destination_index = free_protected.pop(0)
++        occupied.add(destination_index)
++        protected_relocations.append((slot, source_index, destination_index))
+     slots_by_char: dict[str, list[int]] = defaultdict(list)
+@@ -198,3 +220,5 @@
+     # static home or dynamic source.  Protected non-Hangul slots remain byte-identical.
+     new_lut = list(lut[:RUNTIME_LOOKUP_N])
++    for slot, _, destination_index in protected_relocations:
++        new_lut[slot] = destination_index
+     for slot, char in current_slot_char.items():
+@@ -258,3 +282,10 @@
+             writer.writerow({"cache_slot": slot, "physical_index": index, "row": row,
+                              "column": column, "plane": plane})
++    fields = ["virtual_slot", "source_index", "destination_index"]
++    with PROTECTED_RELOCATIONS.open("w", encoding="utf-8-sig", newline="") as handle:
++        writer = csv.DictWriter(handle, fieldnames=fields)
++        writer.writeheader()
++        for slot, source_index, destination_index in protected_relocations:
++            writer.writerow({"virtual_slot": slot, "source_index": source_index,
++                             "destination_index": destination_index})
+     LOOKUP.write_bytes(lookup_blob)
+@@ -280,3 +311,4 @@
+         f"protected_nonhangul_indices={len(protected_indices)}",
+         f"protected_nonhangul_virtual_slots={len(protected_virtual)}",
++        f"protected_highpage_relocations={len(protected_relocations)}",
+         f"safe_direct_pool={len(safe_pool)}",

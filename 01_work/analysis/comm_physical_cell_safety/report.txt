@@ -1,0 +1,22 @@
+COMM.IMG physical-cell safety audit
+original_bounded_text_units=3421
+current_bounded_text_units=4747
+savestates_read=289
+savestates_failed=0
+physical_cells=441
+candidate_font_only_unbounded_consumers=172
+insufficient_partial_font_evidence=15
+rejected_known_nontext=82
+unknown_no_text_evidence=172
+candidate_cells=172
+release_approved_cells=0
+v163_static_cells=169
+v163_static_cells_not_release_approved=169
+
+Decision: HOLD. Candidate means all four planes were observed as bounded
+original text and no sampled conflict was found. It is not ownership proof.
+The approved row,col file therefore contains only its header.
+
+detail=E:\korean\01_work\analysis\comm_physical_cell_safety\cells.csv
+candidates=E:\korean\01_work\analysis\comm_physical_cell_safety\font_only_cell_candidates.csv
+approved=E:\korean\01_work\analysis\comm_physical_cell_safety\font_only_cells.csv

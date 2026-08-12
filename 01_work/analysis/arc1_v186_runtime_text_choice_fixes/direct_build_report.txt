@@ -1,0 +1,31 @@
+arc1 v186 direct BIN/CUE build report
+date=2026-08-11
+
+patch_zip=E:\korean\03_output\arc1_v186_runtime_text_choice_fixes_0D144525.zip
+patch_zip_sha256=0D144525001BA1FE6284DE7D823D6C68FEC26AC733B51D69E9AFB9A679B67BB5
+
+bin=E:\arc\arc1_v186_runtime_text_choice_fixes_0D144525.bin
+bin_size=632495136
+bin_sha256=D71DF68319960CDAEA3F866B7B16C88EEAC343A1959FF6CE2851F856D3E2111E
+cue=E:\arc\arc1_v186_runtime_text_choice_fixes_0D144525.cue
+cue_sha256=576FBC207E4C5AD199A87C61527CFE9C93FF0D7CAB40C30896C773CD820C09BE
+
+layout=E:\arc\arc1_v104.xml
+files=507
+data_file_lba_preserved=506/506
+COMM.DAT_lba=307
+COMM.IMG_lba=667
+COMM.SND_lba=891
+patch_member_match=164/164
+PSX.EXE_lba=268481
+verify_iso_layout=PASS - safe to run
+
+memory_card_source=C:\Users\Administrator\AppData\Local\DuckStation\memcards\arc1_v185_acquisition_closing_bracket_fix_1.mcd
+memory_card_destination=C:\Users\Administrator\AppData\Local\DuckStation\memcards\arc1_v186_runtime_text_choice_fixes_0D144525_1.mcd
+memory_card_sha256=EB69B11E5555CB8C90C60D6B77A780D51DE3F8A8646C3CACB27E4DE1B686B66B
+memory_card_copy=PASS
+
+emulator=NOT RUN
+runtime_status=PENDING USER COLD-BOOT TEST
+old_savestates=DO NOT COPY; they restore v185 RAM and executable code
+

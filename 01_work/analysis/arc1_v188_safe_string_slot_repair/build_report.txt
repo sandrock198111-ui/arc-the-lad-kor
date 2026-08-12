@@ -1,0 +1,18 @@
+v188 safe string-slot repair
+base=arc1_v187_control_skill_choice_repair_292BF4BE.zip
+base_sha256=292BF4BE4283A121A9435D58781F89FB7E6847262A4660F3C8E7424CF4B1ABE8
+output=arc1_v188_safe_string_slot_repair_5A999CAC.zip
+output_sha256=5A999CACB3FBDD65CAC7CC93099B494D69F3F2F9BF5D41C576392C87AA7D2383
+
+root_cause=v187 text occupied jump delay slot at 0x8019D0CC
+delay_slot=0x8019D0CC NOP restored byte-identical to v186
+skill_closer_slot=0x8248B..0x82497
+fusion_slot=0x8243A..0x82443
+unsafe_pool=0x828CC..0x828DB restored to zero
+decoder 0x801FF30C / 568 bytes
+frame routine 0x801FF634 / 636 bytes
+changed_from_v187=PSX.EXE
+changed_from_v186=1/S1023.DAT,D/SD011.DAT,PSX.EXE
+v187_SD011_and_S1023=byte-identical
+cold_boot=NOT RUN (user test required)
+rollback=v186

@@ -1,0 +1,37 @@
+diff --git a/02_scripts/build_arc1_v155_dynamic_cache.py b/02_scripts/build_arc1_v155_dynamic_cache.py
+--- a/02_scripts/build_arc1_v155_dynamic_cache.py
++++ b/02_scripts/build_arc1_v155_dynamic_cache.py
+@@ -1,3 +1,3 @@
+-"""v155: replace four fixed VRAM strips with a 20-slot on-demand glyph cache.
++"""v156: replace four fixed VRAM strips with a 20-slot on-demand glyph cache.
+ 
+ The cache uses exact completed 12x12 bitmaps.  It is not a compositional font.  Every
+@@ -41,10 +41,11 @@
+ PLAN = ROOT / "01_work/analysis/dynamic_cache_v153_widthsafe"
+ ASSIGNMENTS = PLAN / "glyph_assignments.csv"
+ CACHE_SLOTS = PLAN / "cache_slots.csv"
++PROTECTED_RELOCATIONS = PLAN / "protected_virtual_relocations.csv"
+ PLANNED_LOOKUP = PLAN / "lookup_table.bin"
+ PLANNED_DICTIONARY = PLAN / "row_dictionary.bin"
+ PLANNED_GLYPHS = PLAN / "dynamic_glyph_rows.bin"
+ 
+ OUT_DIR = ROOT / "03_output"
+-OUT_STEM = "arc1_v155_dynamic_cache"
+-ANALYSIS = ROOT / "01_work/analysis/arc1_v155_dynamic_cache"
++OUT_STEM = "arc1_v156_dynamic_cache"
++ANALYSIS = ROOT / "01_work/analysis/arc1_v156_dynamic_cache"
+@@ -398,4 +399,5 @@
+-    for path in (ASSIGNMENTS, CACHE_SLOTS, PLANNED_LOOKUP,
++    for path in (ASSIGNMENTS, CACHE_SLOTS, PROTECTED_RELOCATIONS, PLANNED_LOOKUP,
+                  PLANNED_DICTIONARY, PLANNED_GLYPHS):
+         if not path.exists():
+             raise SystemExit(f"missing plan artifact: {path}")
+@@ -416,7 +418,9 @@
+     with ASSIGNMENTS.open(encoding="utf-8-sig", newline="") as handle:
+         assignment_rows = list(csv.DictReader(handle))
+     with CACHE_SLOTS.open(encoding="utf-8-sig", newline="") as handle:
+         cache_rows = list(csv.DictReader(handle))
++    with PROTECTED_RELOCATIONS.open(encoding="utf-8-sig", newline="") as handle:
++        relocation_rows = list(csv.DictReader(handle))
+     if len(cache_rows) != CACHE_N:
+         raise SystemExit(f"cache plan has {len(cache_rows)} slots")

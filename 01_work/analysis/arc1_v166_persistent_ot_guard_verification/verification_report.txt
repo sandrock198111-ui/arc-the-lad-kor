@@ -1,0 +1,33 @@
+v166 persistent-OT guard independent assembled-code verification
+
+patch=arc1_v166_persistent_ot_guard_fullcell_8EB4F3A4.zip
+sha256=8EB4F3A4F9031455D07F285456CF0859B6CD848399FB53E55E10FF9D8E2BD930
+changed_members=PSX.EXE only PASS
+COMM.IMG_and_translation_members=v165c byte-identical PASS
+frame_bytes=680/704
+resident_free_bytes=24
+assembled_Huffman_sources=370/370 PASS
+assembled_Huffman_total_steps=1337815
+assembled_Huffman_max_steps=6796
+direct_codes_checked=3268 PASS
+lookup_entries_checked=409 dynamic=276 PASS
+classifier_cases=76 PASS
+full_active_upload_cells=6/6 PASS
+full_owned_plane_reconstruction=24/24 PASS
+partial_active_cells=3/3 with 12/12 owned planes PASS
+final_OT_live_slot_scan=PASS
+near_miss_packet_filter=PASS
+actual_user_state_OT_masks=8/8 PASS
+actual_OT_packet_range=610..767
+actual_OT_scanner_max_steps=15473
+idle_persistent_slot_retention=PASS
+next_frame_eviction_guard=PASS
+DrawOT_call_and_argument=PASS
+callee_saved_registers=PASS
+full_frame_steps=105790
+partial_frame_steps=51503
+idle_frame_steps=268
+unaligned_runtime_accesses=0
+
+static_verification=PASS
+runtime_verification=PENDING user cold boot

@@ -1,0 +1,27 @@
+﻿row,col,displaced_hangul_planes,reason
+10,6,0 1 2 3,native_UI_asset
+10,7,0 1 2 3,native_UI_asset
+10,8,0 1 2 3,native_UI_asset
+10,11,1 2 3,native_UI_asset
+10,19,0 1 2 3,native_UI_asset
+10,20,0 1 2 3,native_UI_asset
+11,7,0 1 2,native_UI_asset
+11,8,1 2,native_UI_asset
+11,11,0 1 2 3,native_UI_asset
+11,12,0 1 2,native_UI_asset
+11,18,0 1 2,native_UI_asset
+11,19,0 1 2,native_UI_asset
+11,20,0 1 2,native_UI_asset
+17,0,1 2 3,native_UI_asset
+17,1,0 1 2 3,native_UI_asset
+17,2,0 1 2,native_UI_asset
+17,3,0 1 2 3,native_UI_asset
+17,4,0 1 3,native_UI_asset
+17,5,0 1 2 3,native_UI_asset
+17,6,0 1 2 3,native_UI_asset
+17,7,1 2 3,native_UI_asset
+17,8,0 1 2 3,native_UI_asset
+17,9,0 1 2 3,native_UI_asset
+17,10,0 1 2 3,native_UI_asset
+17,11,0 1 2 3,native_UI_asset
+17,12,0 1 2 3,native_UI_asset

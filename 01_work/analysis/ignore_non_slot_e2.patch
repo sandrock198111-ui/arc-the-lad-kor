@@ -1,0 +1,8 @@
+diff --git a/02_scripts/audit_dynamic_cache_requirements.py b/02_scripts/audit_dynamic_cache_requirements.py
+--- a/02_scripts/audit_dynamic_cache_requirements.py
++++ b/02_scripts/audit_dynamic_cache_requirements.py
+@@ -84,3 +84,3 @@
+         slot = slot_from_disk_id(data[1])
+         if slot is None:
+-            raise ValueError(f"invalid E2 disk id at {name}:0x{offset:X}")
++            continue

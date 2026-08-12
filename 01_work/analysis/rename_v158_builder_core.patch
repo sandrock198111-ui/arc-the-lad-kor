@@ -1,0 +1,17 @@
+diff --git a/02_scripts/build_arc1_v157_dynamic_cache.py b/02_scripts/build_arc1_v157_dynamic_cache.py
+--- a/02_scripts/build_arc1_v157_dynamic_cache.py
++++ b/02_scripts/build_arc1_v157_dynamic_cache.py
+@@ -48,5 +48,5 @@
+ 
+ OUT_DIR = ROOT / "03_output"
+-OUT_STEM = "arc1_v157_dynamic_cache"
+-ANALYSIS = ROOT / "01_work/analysis/arc1_v157_dynamic_cache"
++OUT_STEM = "arc1_v158_dynamic_cache"
++ANALYSIS = ROOT / "01_work/analysis/arc1_v158_dynamic_cache"
+ REPORT = ANALYSIS / "build_report.txt"
+@@ -695,4 +695,4 @@
+     lines = [
+-        "v157 on-demand 20-slot completed-glyph cache",
++        "v158 on-demand 20-slot completed-glyph cache",
+         "",
+         f"base    {BASE_ZIP.name}",

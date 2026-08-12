@@ -1,0 +1,10 @@
+dynamic-cache one-byte width budget
+one_byte_hangul_shapes=115
+tier2_one_byte_pool=135
+one_byte_shapes_already_safe=115
+one_byte_shapes_needing_move=0
+unused_one_byte_pool=0
+assignment_possible=1
+spare_after_assignment=0
+
+No token is rewritten here; this is a capacity proof only.

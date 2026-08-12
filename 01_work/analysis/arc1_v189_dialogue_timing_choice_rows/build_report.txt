@@ -1,0 +1,37 @@
+v189 dialogue timing and choice-row repair
+base=arc1_v188_safe_string_slot_repair_5A999CAC.zip
+base_sha256=5A999CACB3FBDD65CAC7CC93099B494D69F3F2F9BF5D41C576392C87AA7D2383
+output=arc1_v189_dialogue_timing_choice_rows_DA219F8F.zip
+output_sha256=DA219F8F46C5E3C537C5B8D4928EB4FAA5D0009CA6C916B772C94D423A3F67B6
+
+dynamic_cache=byte-identical to v188 (PSX.EXE and COMM.IMG unchanged)
+decoder 0x801FF30C / 568 bytes
+frame routine 0x801FF634 / 636 bytes
+
+D/SD011.DAT
+  slot 12: 안심해. -> 걱정 마.
+  completion: 4 -> 4
+
+1/S1072.DAT
+  0x47996: v188 Korean bytes -> external slot 2; original E4 79 restored
+  slot 2 completion=19; resume=0x479AB
+  0x479F4: v188 Korean bytes -> external slot 3; original E4 5B restored
+  slot 3 completion=14; resume=0x47A04
+
+1/S1023.DAT
+  0x47AB0: filler at +44 -> E6 01; 다음 moves to row 4
+  0x47B30: filler at +18 -> E6 01; 전투 요령 moves to row 2
+  page1 widths=[72, 102, 96, 36]
+  page2 widths=[96, 66, 66]
+  choice_bodies_checked=357; declared_E6_additions=2
+  E5 marker offsets and counts unchanged
+
+changed_members=1/S1023.DAT,1/S1072.DAT,D/SD011.DAT
+cold_boot_image=E:\arc\arc1_v189_dialogue_timing_choice_rows_DA219F8F.bin
+bin_sha256=BD5F0F2DDA092D3D03494B1F87C1DC38EBD98EE2F7B4429576F10FF885BC3EED
+cue_sha256=6E3753528F1061EE06C42AE5622C5EAF1B9A01D0D0C54A0A186E1C0A1DEDFA75
+iso_layout=PASS (506/506 data LBA; 164/164 patch members)
+memory_card=arc1_v189_dialogue_timing_choice_rows_DA219F8F_1.mcd
+memory_card_sha256=5886E2A0EC829C0DF799092507D5FAE17EC459700744780EEF20194646E02E7C
+cold_boot=NOT RUN (user test required)
+rollback=v188

@@ -1,0 +1,17 @@
+diff --git a/02_scripts/build_arc1_v153_dynamic_cache.py b/02_scripts/build_arc1_v153_dynamic_cache.py
+--- a/02_scripts/build_arc1_v153_dynamic_cache.py
++++ b/02_scripts/build_arc1_v153_dynamic_cache.py
+@@ -596 +596 @@ def main() -> None:
+-            return bitmap(base_exe, bytes(font), index)
++            return plain_bitmap(font, index)
+@@ -611,3 +611,3 @@ def main() -> None:
+-            return bitmap(base_exe, bytes(font), entry)
++            return plain_bitmap(font, entry)
+         index = glyph_index(token, ())
+-        return bitmap(base_exe, bytes(font), index) if index is not None else None
++        return plain_bitmap(font, index) if index is not None and index < 21 * IPR else None
+@@ -655,3 +655,2 @@ def main() -> None:
+     changed_members = sorted(name for name in members
+-                             if name not in {PSX, COMM} and members[name] !=
+-                             ZipFile(BASE_ZIP).read(name))
++                             if name not in {PSX, COMM} and members[name] != base_members[name])

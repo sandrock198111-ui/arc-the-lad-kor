@@ -1,0 +1,27 @@
+v177  ○ 아이콘 복구
+base    arc1_v176_control_code_dispatch.zip
+control arc1_v151_free_the_sprite_cell_A4358FEE.zip
+output  arc1_v177_restore_circle_icon.zip
+sha256  CBB56B4D9D154BFC4A0A181A1F423A53376D82497FEECF767629A1C9561D5F27
+
+동일함을 먼저 확인한 코드 경로
+  0x8011B644  제어코드 분기표 E2~E8      28B   stock/v151/v170/v171/v176 동일
+  0x8019AA10  아이콘 U 표                18B   동일
+  0x8019D000  V 결정 스텁                72B   동일
+  0x8016B690  U 기록부                   64B   동일
+
+아이콘 표기 (파서가 인자에서 1을 뺀다: 0x8016BC10 addiu v0,v0,255)
+  E7 02 -> id1 -> U=192 폭12  ○
+  E7 03 -> id2 -> U=180 폭12  □
+  E7 05 -> id4 -> U=204 폭12  ×
+  E7 08 -> id7 -> U=216 폭20  START
+
+바뀐 것
+  포인터 파일0x08234C -> 0x8019CC78  ea 66 -> e7 02
+  포인터 파일0x08235C -> 0x8019C704  ea 66 -> e7 02
+
+검증
+  문자열 슬롯 5,320개 아이콘 구성 v151과 차이   0
+  문자열 풀 RAM 포인터 4,093개 중 범위 밖        0
+  PSX.EXE 크기 변화                              없음
+  바뀐 바이트                                    4

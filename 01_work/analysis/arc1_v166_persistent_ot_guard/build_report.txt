@@ -1,0 +1,26 @@
+v166 persistent-OT cache guard and complete-cell reconstruction
+
+base=arc1_v165c_failclosed_24slot_cache_checkpoint_fix_D1ADC357.zip
+base_sha256=D1ADC3570E8690CAE66CCDD54ED1686DA081D1E0A908B3E3BB6B7083ECE8F618
+output=arc1_v166_persistent_ot_guard_fullcell_8EB4F3A4.zip
+sha256=8EB4F3A4F9031455D07F285456CF0859B6CD848399FB53E55E10FF9D8E2BD930
+changed_members=PSX.EXE only
+COMM.IMG_and_all_translation_members=byte-identical_to_v165c
+frame_address=0x801FF5F0
+frame_bytes=680
+frame_capacity=704
+resident_free_bytes=24
+frame=0x801FF5F0/680 bytes
+frame_r3000_load_delay=PASS
+frame_branch_delay=PASS
+resident_reservation=5356 unchanged
+heap_boundary=0x801FF8B0 unchanged
+cache_destination=x961..978,y480..491 unchanged
+cache_policy=all owned planes rebuilt for each active cell
+persistent_policy=final OT cache sprites protected into next frame
+OT_walk_limit=4096
+OT_filter=DMA4 SPRT U(mod12)=4 V224 CLUT7FC0..7FCF
+25th_current-frame_miss=fail-closed behavior unchanged
+archive_roundtrip=PASS
+capstone_disassembly=PASS
+runtime_verification=PENDING

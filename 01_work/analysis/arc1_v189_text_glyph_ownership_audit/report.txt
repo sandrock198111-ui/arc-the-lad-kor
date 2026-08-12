@@ -1,0 +1,13 @@
+v189 text/glyph ownership audit
+base=arc1_v189_dialogue_timing_choice_rows_DA219F8F.zip
+base_sha256=DA219F8F46C5E3C537C5B8D4928EB4FAA5D0009CA6C916B772C94D423A3F67B6
+story_rows_considered=2679
+pointer_owners_considered=644
+legacy_codes_identified_by_bitmap=256
+repair_records=83
+status_counts={'blocked': 18, 'needs_R_cell': 6, 'repair': 59}
+owner_counts={'story': 75, 'ui': 8}
+skipped_unaligned_owners=195
+R_safe_candidate_planes=264
+arbitrary_DAT_scan=0
+emulator_run=0

@@ -1,0 +1,26 @@
+v190 dynamic-only owner repair plan
+base=arc1_v189_dialogue_timing_choice_rows_DA219F8F.zip
+base_sha256=DA219F8F46C5E3C537C5B8D4928EB4FAA5D0009CA6C916B772C94D423A3F67B6
+COMM_IMG_changes=0 by design
+old_sources=462
+new_sources=466
+new_source_codes=R:EA 9C 큐:EA 9D 페:EA 9E …:EA 9F
+lookup_entries=413
+lookup_bytes=568
+old_lookup_entries_preserved=409/409 PASS
+huffman_row_symbols=171
+huffman_rows_bytes=342
+huffman_counts_bytes=13
+huffman_checkpoint_bytes=60
+huffman_bitstream_bytes=3510
+huffman_readback=466/466 PASS
+owner_repairs=83
+owner_actual_byte_replacements=76
+owner_character_counts={'…': 10, '페': 7, '큐': 1, 'R': 6, '론': 7, '이': 14, '싸': 8, '법': 1, '몰': 1, '라': 1, '언': 1, '슨': 1, '떻': 1, '강': 1, '발': 2, '루': 2, '로': 2, '치': 1, '설': 1, '괜': 7, '간': 1, '거': 3, 'M': 2, 'P': 2}
+choice_bodies_checked=357
+choice_E5_E6_geometry=unchanged PASS
+bounded_max_simultaneous_dynamic=26
+cache_slots=28
+top_bounded_working_sets=26:slot:21/S2041.DAT:19 | 24:slot:8/S8041.DAT:0 | 24:slot:8/S8013.DAT:12 | 24:slot:8/S8011.DAT:0 | 24:slot:7/S7025.DAT:12 | 24:slot:7/S7012.DAT:17 | 24:slot:6/S6022.DAT:0 | 24:slot:6/S6014.DAT:17 | 24:slot:5/S5021.DAT:0 | 24:slot:5/S5013.DAT:17
+analysis_only=PASS
+patch_built=NO

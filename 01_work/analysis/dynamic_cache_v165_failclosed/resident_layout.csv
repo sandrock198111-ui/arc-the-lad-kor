@@ -1,0 +1,13 @@
+﻿name,runtime_address,size,alignment
+huffman_rows,0x801FE3C4,324,2
+huffman_counts,0x801FE508,12,1
+conflict_ranges,0x801FE514,160,4
+source_checkpoints,0x801FE5B4,186,2
+source_bitstream,0x801FE66E,2917,1
+nibble_expand,0x801FF1D4,32,2
+owners,0x801FF1F4,48,2
+active_mask,0x801FF224,4,4
+next_slot,0x801FF228,4,4
+upload_rect,0x801FF22C,8,2
+cell_scratch,0x801FF234,72,4
+decoded_glyph_rows,0x801FF27C,24,2

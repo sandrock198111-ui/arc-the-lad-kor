@@ -1,0 +1,43 @@
+arc1_v172_lookup_width_fix_109252A0 independent UI-asset/cache verification
+
+patch=arc1_v172_lookup_width_fix_109252A0.zip
+sha256=109252A0BB30A7A262AA7D713521F94C21BB7C25B582A85658E2F7F4D87CF695
+changed_members=PSX.EXE COMM.IMG
+changed_other_members=0
+archive_member_order=PASS
+archive_member_lengths=PASS
+
+native_UI_cells=26/26 PASS
+intentional_original_blank_cells=7/7 exact PASS
+button_bank_cells=5/5 v151-exact PASS
+punctuation_planes=4/4 v151-exact PASS
+blank_space_plane=PASS
+system_semantic_strings=123/123 PASS
+external_system_fragments=16/16 byte-exact PASS
+embedded_pointer_words=2/2 byte-exact PASS
+original_RAM_pointers=4093/4093 valid PASS
+
+dynamic_sources=462/462 PASS
+source_kinds=existing_dynamic:207 existing_restored_static_conflict:162 protected_virtual:1 ui_asset_displaced_static:92
+assembled_Huffman_total_steps=5330836
+assembled_Huffman_max_steps=24676
+direct_routes_checked=3268
+direct_dynamic_routes=254/254 PASS
+lookup_routes_checked=409
+lookup_dynamic_entries=304
+cache_fill=28/28 PASS
+29th_miss_fail_closed=PASS
+post_frame_replacement=PASS
+full_cache_uploads=7 complete cells PASS
+partial_cache_uploads=x961,x964,x979 PASS
+full_frame_interpreter_steps=305700
+partial_frame_interpreter_steps=112126
+callee_saved_registers_and_SP=PASS
+DrawOT_displaced_call=PASS
+decoder_nonlinking_J_return=PASS
+resident_alignment_branches_delays=PASS
+resident_used=5356/5356 exact
+
+result=PASS_STATIC_AND_SYNTHETIC_R3000
+runtime=PENDING user cold boot
+promotion_to_bible=NO until runtime verification

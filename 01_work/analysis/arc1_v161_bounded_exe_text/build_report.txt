@@ -1,0 +1,18 @@
+v161 bounded PSX.EXE text recoding
+
+base=arc1_v160_dynamic_cache_ram_shadow_53521478.zip
+output=arc1_v161_bounded_exe_text_B2EA377E.zip
+sha256=B2EA377E1E43C1954F42A63F375B8D7B5997A6B736988C315B4C06C76A5F44E3
+pointer_records=543
+unique_string_spans=469
+proven_string_bytes=5798
+v160_damaged_pointer_records=543
+v161_damaged_pointer_records=0
+retained_intentional_text_diff_bytes=2841
+restored_nontext_diff_bytes=7509
+PSX_bytes_changed_from_v160=7509
+all_nontext_pool_bytes_equal_v151=PASS
+all_proven_string_bytes_equal_v160=PASS
+all_other_patch_members_equal_v160=PASS
+runtime=PENDING
+rollback=v151

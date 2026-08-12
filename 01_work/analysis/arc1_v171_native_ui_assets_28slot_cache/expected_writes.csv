@@ -1,0 +1,5 @@
+﻿runtime_address,after,reason
+0x801A74B8,0x0807FCC3,dynamic decoder
+0x8016B5D8,0x08068818,row40 U helper
+0x801A2204,0x0C068821,row40 text classifier
+0x8011C860,0x0C07FD8D,pre-DrawOT 28-slot wrapper

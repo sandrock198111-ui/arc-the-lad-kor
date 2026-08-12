@@ -1,0 +1,8 @@
+diff --git a/02_scripts/build_arc1_v153_dynamic_cache.py b/02_scripts/build_arc1_v153_dynamic_cache.py
+--- a/02_scripts/build_arc1_v153_dynamic_cache.py
++++ b/02_scripts/build_arc1_v153_dynamic_cache.py
+@@ -571,3 +571,3 @@
+     heap_imm = heap_ins & 0xFFFF
+     heap_imm = heap_imm - 0x10000 if heap_imm & 0x8000 else heap_imm
+-    if 0x80200000 + heap_imm + 4 != HEAP_BASE:
++    if 0x80200000 + heap_imm != HEAP_BASE:

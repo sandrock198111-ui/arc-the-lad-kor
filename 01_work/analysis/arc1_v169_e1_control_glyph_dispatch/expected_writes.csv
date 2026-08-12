@@ -1,0 +1,6 @@
+﻿member,offset_or_ram,length,purpose
+PSX.EXE,0x801A7460,8,first parser trampoline
+PSX.EXE,0x801A748C,8,second parser trampoline
+PSX.EXE,0x801FF82C,128,reclaimed item guard -> parser dispatcher
+PSX.EXE,0x801FF7DC,8,remove old item-guard call
+4/S4011.DAT,0x485F6,2,restore native E1 01

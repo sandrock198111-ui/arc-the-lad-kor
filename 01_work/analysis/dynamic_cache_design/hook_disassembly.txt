@@ -1,0 +1,471 @@
+build=arc1_v151_free_the_sprite_cell_A4358FEE.zip
+sha256=A4358FEE5FEA4964C9DD376B630894EB5EC133EFEEDD9E5E85BBC5FDD8CA1A46
+
+--- common glyph decoder and packet builder: 0x8016B380..0x8016B620 ---
+8016B380  lbu      $v0, ($s0)
+8016B384  nop      
+8016B388  bnez     $v0, 0x8016b36c
+8016B38C  addiu    $a0, $v0, -0x20
+8016B390  sw       $s1, 0x10($sp)
+8016B394  ori      $a0, $zero, 0xc
+8016B398  ori      $a1, $zero, 0xc
+8016B39C  move     $a2, $zero
+8016B3A0  jal      0x8016b4b0
+8016B3A4  ori      $a3, $zero, 2
+8016B3A8  lw       $ra, 0x24($sp)
+8016B3AC  lw       $s2, 0x20($sp)
+8016B3B0  lw       $s1, 0x1c($sp)
+8016B3B4  lw       $s0, 0x18($sp)
+8016B3B8  jr       $ra
+8016B3BC  addiu    $sp, $sp, 0x28
+8016B3C0  move     $a2, $a0
+8016B3C4  lw       $a1, ($a2)
+8016B3C8  nop      
+8016B3CC  lbu      $v1, ($a1)
+8016B3D0  nop      
+8016B3D4  j        0x801a74b8
+8016B3D8  nop      
+8016B3DC  nop      
+8016B3E0  addiu    $v1, $v1, -1
+8016B3E4  addiu    $v0, $a1, 1
+8016B3E8  j        0x8016b410
+8016B3EC  sw       $v0, ($a2)
+8016B3F0  addiu    $v1, $v1, -0xdd
+8016B3F4  sll      $v0, $v1, 8
+8016B3F8  lbu      $a0, 1($a1)
+8016B3FC  subu     $v0, $v0, $v1
+8016B400  addiu    $v1, $a1, 2
+8016B404  sw       $v1, ($a2)
+8016B408  addu     $v0, $v0, $a0
+8016B40C  addiu    $v1, $v0, 0xdb
+8016B410  j        0x801fe458
+8016B414  move     $v0, $v1
+8016B418  sh       $a0, 6($a2)
+8016B41C  jr       $ra
+8016B420  sh       $a1, 8($a2)
+8016B424  lhu      $v0, 6($a2)
+8016B428  lhu      $v1, 8($a2)
+8016B42C  addu     $v0, $v0, $a0
+8016B430  sh       $v0, 6($a2)
+8016B434  addu     $v1, $v1, $a1
+8016B438  jr       $ra
+8016B43C  sh       $v1, 8($a2)
+8016B440  lh       $v0, 0xa($a2)
+8016B444  addiu    $sp, $sp, -8
+8016B448  blez     $v0, 0x8016b4a0
+8016B44C  move     $t0, $zero
+8016B450  move     $a3, $zero
+8016B454  lw       $v1, ($a2)
+8016B458  nop      
+8016B45C  addu     $v1, $a3, $v1
+8016B460  lhu      $v0, 0x2c($v1)
+8016B464  nop      
+8016B468  addu     $v0, $v0, $a0
+8016B46C  sh       $v0, 0x2c($v1)
+8016B470  lw       $v1, ($a2)
+8016B474  nop      
+8016B478  addu     $v1, $a3, $v1
+8016B47C  lhu      $v0, 0x2e($v1)
+8016B480  nop      
+8016B484  addu     $v0, $v0, $a1
+8016B488  sh       $v0, 0x2e($v1)
+8016B48C  lh       $v0, 0xa($a2)
+8016B490  addiu    $t0, $t0, 1
+8016B494  slt      $v0, $t0, $v0
+8016B498  bnez     $v0, 0x8016b454
+8016B49C  addiu    $a3, $a3, 0x34
+8016B4A0  jr       $ra
+8016B4A4  addiu    $sp, $sp, 8
+8016B4A8  jr       $ra
+8016B4AC  sb       $a0, 0xc($a1)
+8016B4B0  lw       $v0, 0x10($sp)
+8016B4B4  nop      
+8016B4B8  sb       $a0, 0xd($v0)
+8016B4BC  sb       $a1, 0xe($v0)
+8016B4C0  sb       $a2, 0xf($v0)
+8016B4C4  jr       $ra
+8016B4C8  sb       $a3, 0x10($v0)
+8016B4CC  lbu      $v0, ($a0)
+8016B4D0  nop      
+8016B4D4  beqz     $v0, 0x8016b508
+8016B4D8  move     $v1, $zero
+8016B4DC  lbu      $v0, ($a0)
+8016B4E0  nop      
+8016B4E4  sltiu    $v0, $v0, 0xdd
+8016B4E8  bnez     $v0, 0x8016b4f4
+8016B4EC  addiu    $v1, $v1, 1
+8016B4F0  addiu    $a0, $a0, 1
+8016B4F4  addiu    $a0, $a0, 1
+8016B4F8  lbu      $v0, ($a0)
+8016B4FC  nop      
+8016B500  bnez     $v0, 0x8016b4e0
+8016B504  nop      
+8016B508  jr       $ra
+8016B50C  move     $v0, $v1
+8016B510  jr       $ra
+8016B514  sh       $zero, 0xa($a0)
+8016B518  move     $a2, $a1
+8016B51C  lh       $a1, 0xa($a2)
+8016B520  lh       $v0, 4($a2)
+8016B524  ori      $t1, $zero, 0x9b
+8016B528  slt      $v0, $a1, $v0
+8016B52C  beqz     $v0, 0x8016b660
+8016B530  ori      $v0, $zero, 0x54
+8016B534  div      $zero, $a0, $v0
+8016B538  bnez     $v0, 0x8016b544
+8016B53C  nop      
+8016B540  break    7
+8016B544  addiu    $at, $zero, -1
+8016B548  bne      $v0, $at, 0x8016b55c
+8016B54C  lui      $at, 0x8000
+8016B550  bne      $a0, $at, 0x8016b55c
+8016B554  nop      
+8016B558  break    6
+8016B55C  mflo     $t0
+8016B560  mfhi     $a3
+8016B564  sll      $v0, $a1, 1
+8016B568  addu     $v0, $v0, $a1
+8016B56C  sll      $v0, $v0, 2
+8016B570  lw       $v1, ($a2)
+8016B574  addu     $v0, $v0, $a1
+8016B578  sll      $v0, $v0, 2
+8016B57C  bgez     $a3, 0x8016b588
+8016B580  addu     $a1, $v0, $v1
+8016B584  addiu    $a3, $a3, 3
+8016B588  sra      $v1, $a3, 2
+8016B58C  sll      $v0, $v1, 1
+8016B590  addu     $v0, $v0, $v1
+8016B594  sll      $v0, $v0, 2
+8016B598  sb       $v0, 0x28($a1)
+8016B59C  sll      $v0, $t0, 1
+8016B5A0  addu     $v0, $v0, $t0
+8016B5A4  sll      $v0, $v0, 2
+8016B5A8  sb       $v0, 0x29($a1)
+8016B5AC  lbu      $v1, 0xd($a2)
+8016B5B0  ori      $v0, $zero, 6
+8016B5B4  bne      $v1, $v0, 0x8016b5cc
+8016B5B8  nop      
+8016B5BC  lbu      $v0, 0x28($a1)
+8016B5C0  nop      
+8016B5C4  addiu    $v0, $v0, 4
+8016B5C8  sb       $v0, 0x28($a1)
+8016B5CC  lbu      $v0, 0xd($a2)
+8016B5D0  nop      
+8016B5D4  sb       $v0, 0x2a($a1)
+8016B5D8  j        0x801fe3c4
+8016B5DC  nop      
+8016B5E0  sb       $v0, 0x2b($a1)
+8016B5E4  lhu      $v0, 6($a2)
+8016B5E8  nop      
+8016B5EC  sh       $v0, 0x2c($a1)
+8016B5F0  lhu      $v0, 8($a2)
+8016B5F4  nop      
+8016B5F8  sh       $v0, 0x2e($a1)
+8016B5FC  lbu      $v0, 0xc($a2)
+8016B600  bgez     $a0, 0x8016b60c
+8016B604  move     $v1, $a0
+8016B608  addiu    $v1, $a0, 3
+8016B60C  sra      $v1, $v1, 2
+8016B610  sll      $v1, $v1, 2
+8016B614  subu     $v1, $a0, $v1
+8016B618  sll      $v0, $v0, 2
+8016B61C  addu     $v0, $v0, $v1
+
+--- E9/EA lookup decoder: 0x801A7480..0x801A7560 ---
+801A7480  nop      
+801A7484  j        0x8016bb6c
+801A7488  nop      
+801A748C  addiu    $t0, $v0, -0xe9
+801A7490  sltiu    $t0, $t0, 2
+801A7494  bnez     $t0, 0x801a74b0
+801A7498  nop      
+801A749C  sltiu    $v0, $v0, 0xe1
+801A74A0  bnez     $v0, 0x801a74b0
+801A74A4  nop      
+801A74A8  j        0x8016bb9c
+801A74AC  nop      
+801A74B0  j        0x8016bb80
+801A74B4  nop      
+801A74B8  addiu    $t0, $v1, -0xe9
+801A74BC  sltiu    $t1, $t0, 2
+801A74C0  beqz     $t1, 0x801a7504
+801A74C4  nop      
+801A74C8  lbu      $t1, 1($a1)
+801A74CC  sll      $t2, $t0, 8
+801A74D0  subu     $t2, $t2, $t0
+801A74D4  subu     $t2, $t2, $t0
+801A74D8  addu     $t2, $t2, $t1
+801A74DC  addiu    $t2, $t2, -1
+801A74E0  sll      $t2, $t2, 1
+801A74E4  lui      $t1, 0x801f
+801A74E8  ori      $t1, $t1, 0xecac
+801A74EC  addu     $t1, $t1, $t2
+801A74F0  lhu      $v1, ($t1)
+801A74F4  addiu    $v0, $a1, 2
+801A74F8  sw       $v0, ($a2)
+801A74FC  j        0x8016b410
+801A7500  nop      
+801A7504  sltiu    $v0, $v1, 0xdd
+801A7508  beqz     $v0, 0x801a7518
+801A750C  nop      
+801A7510  j        0x8016b3e0
+801A7514  nop      
+801A7518  j        0x8016b3f0
+801A751C  nop      
+
+--- current two-pass text renderer: 0x801A20B0..0x801A2304 ---
+801A20B0  addiu    $sp, $sp, -0x50
+801A20B4  sw       $ra, 0x4c($sp)
+801A20B8  sw       $s7, 0x48($sp)
+801A20BC  sw       $s6, 0x44($sp)
+801A20C0  sw       $s5, 0x40($sp)
+801A20C4  sw       $s4, 0x3c($sp)
+801A20C8  sw       $s3, 0x38($sp)
+801A20CC  sw       $s2, 0x34($sp)
+801A20D0  sw       $s1, 0x30($sp)
+801A20D4  sw       $s0, 0x2c($sp)
+801A20D8  move     $s2, $a0
+801A20DC  move     $s7, $a1
+801A20E0  lui      $s6, 0x801f
+801A20E4  lw       $s6, 0x12ec($s6)
+801A20E8  nop      
+801A20EC  lhu      $v0, 0x870($s6)
+801A20F0  nop      
+801A20F4  sll      $s4, $v0, 2
+801A20F8  addu     $s4, $s4, $v0
+801A20FC  sll      $s4, $s4, 2
+801A2100  sll      $v0, $s7, 2
+801A2104  addiu    $s3, $v0, 0x70
+801A2108  addu     $s3, $s3, $s6
+801A210C  move     $s5, $zero
+801A2110  jal      0x801a21dc
+801A2114  nop      
+801A2118  lhu      $v0, 0x870($s6)
+801A211C  nop      
+801A2120  sll      $a1, $v0, 1
+801A2124  addu     $a1, $a1, $v0
+801A2128  sll      $a1, $a1, 2
+801A212C  addiu    $a1, $a1, 0x2c
+801A2130  addu     $a1, $a1, $s2
+801A2134  move     $a0, $s3
+801A2138  jal      0x80178f84
+801A213C  nop      
+801A2140  ori      $s5, $zero, 1
+801A2144  jal      0x801a21dc
+801A2148  nop      
+801A214C  lh       $v0, 4($s2)
+801A2150  lw       $s1, ($s2)
+801A2154  sll      $v1, $v0, 1
+801A2158  addu     $v1, $v1, $v0
+801A215C  sll      $v1, $v1, 2
+801A2160  addu     $v1, $v1, $v0
+801A2164  sll      $v1, $v1, 2
+801A2168  addiu    $v1, $v1, -0x34
+801A216C  nop      
+801A2170  addu     $s1, $s1, $v1
+801A2174  addu     $s1, $s1, $s4
+801A2178  sw       $zero, 0x10($sp)
+801A217C  move     $a0, $s1
+801A2180  move     $a1, $zero
+801A2184  move     $a2, $zero
+801A2188  lui      $a3, 0x801f
+801A218C  lhu      $a3, 0x2ffc($a3)
+801A2190  andi     $a3, $a3, 0xffe0
+801A2194  ori      $a3, $a3, 0x1f
+801A2198  jal      0x80177484
+801A219C  nop      
+801A21A0  move     $a0, $s3
+801A21A4  move     $a1, $s1
+801A21A8  jal      0x80178f84
+801A21AC  nop      
+801A21B0  lw       $ra, 0x4c($sp)
+801A21B4  lw       $s7, 0x48($sp)
+801A21B8  lw       $s6, 0x44($sp)
+801A21BC  lw       $s5, 0x40($sp)
+801A21C0  lw       $s4, 0x3c($sp)
+801A21C4  lw       $s3, 0x38($sp)
+801A21C8  lw       $s2, 0x34($sp)
+801A21CC  lw       $s1, 0x30($sp)
+801A21D0  lw       $s0, 0x2c($sp)
+801A21D4  jr       $ra
+801A21D8  addiu    $sp, $sp, 0x50
+801A21DC  sw       $ra, 0x28($sp)
+801A21E0  move     $s0, $zero
+801A21E4  move     $s1, $zero
+801A21E8  lh       $v0, 0xa($s2)
+801A21EC  nop      
+801A21F0  blez     $v0, 0x801a2294
+801A21F4  nop      
+801A21F8  lw       $v1, ($s2)
+801A21FC  nop      
+801A2200  addu     $v1, $v1, $s1
+801A2204  jal      0x801fe420
+801A2208  addu     $a1, $v1, $s4
+801A220C  nop      
+801A2210  nop      
+801A2214  bne      $v0, $s5, 0x801a2280
+801A2218  nop      
+801A221C  lhu      $v0, 0x2c($v1)
+801A2220  nop      
+801A2224  sh       $v0, 8($a1)
+801A2228  lhu      $v0, 0x2e($v1)
+801A222C  nop      
+801A2230  sh       $v0, 0xa($a1)
+801A2234  lbu      $v0, 0x28($v1)
+801A2238  nop      
+801A223C  sb       $v0, 0xc($a1)
+801A2240  lbu      $v0, 0x29($v1)
+801A2244  nop      
+801A2248  sb       $v0, 0xd($a1)
+801A224C  lbu      $v0, 0x2a($v1)
+801A2250  nop      
+801A2254  sh       $v0, 0x10($a1)
+801A2258  lbu      $v0, 0x2b($v1)
+801A225C  nop      
+801A2260  nop      
+801A2264  sh       $v0, 0x12($a1)
+801A2268  lhu      $v0, 0x30($v1)
+801A226C  nop      
+801A2270  sh       $v0, 0xe($a1)
+801A2274  move     $a0, $s3
+801A2278  jal      0x80178f84
+801A227C  nop      
+801A2280  lh       $v0, 0xa($s2)
+801A2284  addiu    $s0, $s0, 1
+801A2288  slt      $v0, $s0, $v0
+801A228C  bnez     $v0, 0x801a21f8
+801A2290  addiu    $s1, $s1, 0x34
+801A2294  lw       $ra, 0x28($sp)
+801A2298  nop      
+801A229C  jr       $ra
+801A22A0  lui      $v0, 0x8020
+801A22A4  addiu    $v0, $v0, -0x1b34
+801A22A8  lw       $v1, ($v0)
+801A22AC  nop      
+801A22B0  bne      $v1, $a0, 0x801a22d8
+801A22B4  nop      
+801A22B8  lw       $v1, 4($v0)
+801A22BC  lw       $v0, 8($v0)
+801A22C0  nop      
+801A22C4  or       $v1, $v1, $v0
+801A22C8  beqz     $v1, 0x801a22d8
+801A22CC  nop      
+801A22D0  j        0x801a20b0
+801A22D4  nop      
+801A22D8  addiu    $sp, $sp, -0x30
+801A22DC  j        0x8016b76c
+801A22E0  sw       $ra, 0x2c($sp)
+
+--- resident helper source: 0x801A86EC..0x801A8800 ---
+801A86EC  addiu    $a3, $t0, -0x28
+801A86F0  sltiu    $a3, $a3, 1
+801A86F4  bnez     $a3, 0x801a872c
+801A86F8  nop      
+801A86FC  addiu    $a3, $t0, -0x3f
+801A8700  sltiu    $a3, $a3, 1
+801A8704  bnez     $a3, 0x801a872c
+801A8708  nop      
+801A870C  addiu    $a3, $t0, -0x35
+801A8710  sltiu    $a3, $a3, 1
+801A8714  bnez     $a3, 0x801a872c
+801A8718  nop      
+801A871C  addiu    $a3, $t0, -0x34
+801A8720  sltiu    $a3, $a3, 1
+801A8724  beqz     $a3, 0x801a873c
+801A8728  nop      
+801A872C  lbu      $a3, 0x28($a1)
+801A8730  nop      
+801A8734  addiu    $a3, $a3, 4
+801A8738  sb       $a3, 0x28($a1)
+801A873C  lbu      $v0, 0xe($a2)
+801A8740  j        0x8016b5e0
+801A8744  nop      
+801A8748  lbu      $v0, 0x29($v1)
+801A874C  nop      
+801A8750  addiu    $t8, $v0, -0xe0
+801A8754  beqz     $t8, 0x801a8778
+801A8758  addiu    $t8, $v0, -0xf4
+801A875C  beqz     $t8, 0x801a8778
+801A8760  addiu    $t8, $v0, -0x7c
+801A8764  beqz     $t8, 0x801a8778
+801A8768  addiu    $t8, $v0, -0x70
+801A876C  sltiu    $v0, $t8, 1
+801A8770  jr       $ra
+801A8774  nop      
+801A8778  jr       $ra
+801A877C  ori      $v0, $zero, 1
+801A8780  move     $t2, $v0
+801A8784  addiu    $t0, $v0, -0x350
+801A8788  sltiu    $t1, $t0, 0x10
+801A878C  bnez     $t1, 0x801a87cc
+801A8790  nop      
+801A8794  addiu    $t0, $v0, -0x3a4
+801A8798  sltiu    $t1, $t0, 0x10
+801A879C  bnez     $t1, 0x801a87cc
+801A87A0  addiu    $t0, $t0, 0x10
+801A87A4  addiu    $t0, $v0, -0x3f8
+801A87A8  sltiu    $t1, $t0, 0x10
+801A87AC  bnez     $t1, 0x801a87cc
+801A87B0  addiu    $t0, $t0, 0x20
+801A87B4  addiu    $t0, $v0, -0x44c
+801A87B8  sltiu    $t1, $t0, 0x10
+801A87BC  bnez     $t1, 0x801a87cc
+801A87C0  addiu    $t0, $t0, 0x30
+801A87C4  jr       $ra
+801A87C8  move     $v0, $t2
+801A87CC  lui      $t1, 0x801f
+801A87D0  ori      $t1, $t1, 0xf7f4
+801A87D4  addu     $t1, $t1, $t0
+801A87D8  lbu      $t1, ($t1)
+801A87DC  nop      
+801A87E0  sltiu    $t0, $t1, 0xff
+801A87E4  beqz     $t0, 0x801a87f4
+801A87E8  addiu    $v0, $t1, 0x1110
+801A87EC  jr       $ra
+801A87F0  nop      
+801A87F4  jr       $ra
+801A87F8  move     $v0, $t2
+801A87FC  nop      
+
+--- resident classifier source: 0x801A8F50..0x801A8FD4 ---
+801A8F50  lbu      $v0, 0x29($v1)
+801A8F54  nop      
+801A8F58  addiu    $t8, $v0, -0xe0
+801A8F5C  beqz     $t8, 0x801a8f78
+801A8F60  addiu    $t8, $v0, -0xf4
+801A8F64  beqz     $t8, 0x801a8f78
+801A8F68  addiu    $t8, $v0, -0x7c
+801A8F6C  sltiu    $v0, $t8, 1
+801A8F70  jr       $ra
+801A8F74  nop      
+801A8F78  jr       $ra
+801A8F7C  ori      $v0, $zero, 1
+801A8F80  addiu    $sp, $sp, -0x18
+801A8F84  sw       $ra, 0x14($sp)
+801A8F88  lui      $a0, 0x801a
+801A8F8C  ori      $a0, $a0, 0x22e4
+801A8F90  lui      $a1, 0x801f
+801A8F94  jal      0x80177e4c
+801A8F98  ori      $a1, $a1, 0xe4d8
+801A8F9C  lui      $a0, 0x801a
+801A8FA0  ori      $a0, $a0, 0x22ec
+801A8FA4  lui      $a1, 0x801f
+801A8FA8  jal      0x80177e4c
+801A8FAC  ori      $a1, $a1, 0xe880
+801A8FB0  lui      $a0, 0x801a
+801A8FB4  ori      $a0, $a0, 0x22f4
+801A8FB8  lui      $a1, 0x801f
+801A8FBC  jal      0x80177e4c
+801A8FC0  ori      $a1, $a1, 0xf0a4
+801A8FC4  lw       $ra, 0x14($sp)
+801A8FC8  addiu    $sp, $sp, 0x18
+801A8FCC  jr       $ra
+801A8FD0  nop      
+
+--- hook words ---
+0x8016B3D4  0x08069D2E
+0x8016B5D8  0x0807F8F1
+0x8016B764  0x0806882C
+0x8011C4AC  0x0C06881D
+0x801A74E4  0x3C09801F
+0x801A74E8  0x3529ECAC

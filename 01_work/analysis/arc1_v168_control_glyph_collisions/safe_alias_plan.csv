@@ -1,0 +1,49 @@
+﻿char,risky_code,safe_code,virtual_slot,allocation,lookup_before,lookup_after,occurrences,raw_safe_code_occurrences_before
+얻,E1 BE,,,unallocated_strict_pool_insufficient,,,31,
+궤,E1 BF,,,unallocated_strict_pool_insufficient,,,31,
+슨,E1 C0,,,unallocated_strict_pool_insufficient,,,31,
+더,E1 C1,,,unallocated_strict_pool_insufficient,,,29,
+개,E1 C2,EA 1A,279,existing_same_glyph_alias,0x0599,0x0599,30,20
+갈,E1 C3,EA 19,278,existing_same_glyph_alias,0x059A,0x059A,29,42
+빌,E1 C4,,,unallocated_strict_pool_insufficient,,,29,
+겐,E1 C5,EA 1C,281,existing_same_glyph_alias,0x059C,0x059C,29,20
+앗,E1 C6,,,unallocated_strict_pool_insufficient,,,29,
+론,E1 C7,,,unallocated_strict_pool_insufficient,,,28,
+맞,E1 C9,,,unallocated_strict_pool_insufficient,,,27,
+돼,E1 CA,,,unallocated_strict_pool_insufficient,,,22,
+른,E1 CB,,,unallocated_strict_pool_insufficient,,,25,
+차,E1 CC,E9 DF,222,existing_same_glyph_alias,0x05A3,0x05A3,23,295
+맡,E1 CD,,,unallocated_strict_pool_insufficient,,,25,
+임,E1 CE,,,unallocated_strict_pool_insufficient,,,24,
+빛,E1 D0,,,unallocated_strict_pool_insufficient,,,25,
+련,E1 D1,,,unallocated_strict_pool_insufficient,,,24,
+함,E1 D2,EA 09,262,existing_same_glyph_alias,0x05A9,0x05A9,21,517
+켜,E1 D3,,,unallocated_strict_pool_insufficient,,,23,
+몰,E1 D4,,,unallocated_strict_pool_insufficient,,,23,
+릴,E1 D5,,,unallocated_strict_pool_insufficient,,,22,
+뿐,E1 D6,,,unallocated_strict_pool_insufficient,,,22,
+린,E1 D7,,,unallocated_strict_pool_insufficient,,,22,
+디,E1 D8,,,unallocated_strict_pool_insufficient,,,21,
+탄,E1 DA,EA 7C,377,existing_same_glyph_alias,0x05B1,0x05B1,22,11
+절,E1 DB,,,unallocated_strict_pool_insufficient,,,22,
+멸,E1 DC,,,unallocated_strict_pool_insufficient,,,20,
+관,E1 DD,,,unallocated_strict_pool_insufficient,,,15,
+떠,E1 DE,,,unallocated_strict_pool_insufficient,,,19,
+집,E1 DF,E9 DD,220,existing_same_glyph_alias,0x05B6,0x05B6,19,83
+능,E1 E0,EA 27,292,existing_same_glyph_alias,0x05B7,0x05B7,19,17
+욕,E1 E1,EA 62,351,existing_same_glyph_alias,0x05B8,0x05B8,20,5
+술,E1 E2,EA 54,337,existing_same_glyph_alias,0x05B9,0x05B9,20,27
+꾸,E1 E3,,,unallocated_strict_pool_insufficient,,,20,
+쳐,E1 E4,,,unallocated_strict_pool_insufficient,,,19,
+셋,E1 E5,,,unallocated_strict_pool_insufficient,,,3,
+항,E1 E6,EA 0B,264,existing_same_glyph_alias,0x05BD,0x05BD,19,53
+겁,E1 E7,,,unallocated_strict_pool_insufficient,,,19,
+케,E1 E8,E9 E9,232,existing_same_glyph_alias,0x05BF,0x05BF,18,24
+뭔,E1 E9,,,unallocated_strict_pool_insufficient,,,18,
+벨,E1 EA,EA 43,320,existing_same_glyph_alias,0x05C1,0x05C1,19,42
+톨,E1 EB,,,unallocated_strict_pool_insufficient,,,19,
+클,E1 EC,EA 7B,376,existing_same_glyph_alias,0x05C3,0x05C3,18,19
+별,E1 ED,,,unallocated_strict_pool_insufficient,,,17,
+됐,E1 EE,,,unallocated_strict_pool_insufficient,,,17,
+넘,E1 EF,,,unallocated_strict_pool_insufficient,,,18,
+커,E1 F0,,,unallocated_strict_pool_insufficient,,,18,

@@ -1,0 +1,14 @@
+DuckStation savestate VRAM-origin verification
+input_states=280
+marker_success=280
+marker_failures=0
+marker_offsets=GPU+689:270 GPU+721:3 GPU+1201:1 GPU+1437:1 GPU+1921:5
+representative_state=HASH-11CEE3D6EFD0E09B_resume.sav
+false_origin_delta=640 bytes
+false_x704_1023_equals_true_x0_319_next_row=511/511
+
+Conclusion:
+- VRAM starts immediately after the GPU-VRAM marker; no fixed GPU+N is universal.
+- COMM.IMG x=320 is 640 bytes after the true row origin.
+- A +640 false origin wraps the true x=0 framebuffer to fake x=704,
+  so a readable right-edge screen is evidence of the shift, not of that origin.

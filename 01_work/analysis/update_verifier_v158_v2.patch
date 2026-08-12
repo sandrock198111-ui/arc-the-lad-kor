@@ -1,0 +1,38 @@
+diff --git a/02_scripts/verify_arc1_v157_dynamic_cache.py b/02_scripts/verify_arc1_v157_dynamic_cache.py
+--- a/02_scripts/verify_arc1_v157_dynamic_cache.py
++++ b/02_scripts/verify_arc1_v157_dynamic_cache.py
+@@ -1,4 +1,4 @@
+-"""Independent static verifier for the v156 on-demand completed-glyph cache."""
++"""Independent static verifier for the v158 on-demand completed-glyph cache."""
+ from __future__ import annotations
+ 
+ import csv
+@@ -16,5 +16,5 @@
+     CACHE, active_slots, bitmap, glyph_index, read_lut, source_ranges, text_units,
+ )
+-from build_arc1_v157_dynamic_cache import (  # noqa: E402
++from build_arc1_v158_dynamic_cache import (  # noqa: E402
+     CACHE_N, CACHE_SLOTS, CELL, COMM, COPY_N, DECODER_ENTRY, FRAME_HOOK,
+     FRAMESWAP, GLYPH_PACKET_HOOK, HEAP_BASE, IPR, LOADIMAGE, LOOKUP_N,
+@@ -27,7 +27,7 @@
+ 
+ BASE = ROOT / "03_output/arc1_v151_free_the_sprite_cell_A4358FEE.zip"
+-BUILD = ROOT / "03_output/arc1_v157_dynamic_cache_26B2B680.zip"
+-BUILD_SHA = "26B2B680F3D071ADF17506A1B15884324A48A68EA63A9F464D502A60F882C299"
++BUILD = ROOT / "03_output/arc1_v158_dynamic_cache_51FDCF67.zip"
++BUILD_SHA = "51FDCF6785E522032F57CB1B043941B6B2F15D575F1FA564BCBE0D92D69ABE75"
+ ORIGINAL = ROOT / "00_original/arc.zip"
+ ASSIGNMENTS = ROOT / "01_work/analysis/dynamic_cache_v153_widthsafe/glyph_assignments.csv"
+-REPORT = ROOT / "01_work/analysis/arc1_v157_dynamic_cache/independent_verification.txt"
++REPORT = ROOT / "01_work/analysis/arc1_v158_dynamic_cache/independent_verification.txt"
+@@ -101,3 +101,3 @@
+ def main() -> None:
+     if sha256(BUILD) != BUILD_SHA:
+-        raise SystemExit("v157 archive hash differs")
++        raise SystemExit("v158 archive hash differs")
+@@ -296,4 +296,4 @@
+ 
+     lines = [
+-        "v157 independent static verification: PASS",
++        "v158 independent static verification: PASS",
+         f"archive={BUILD.name}",

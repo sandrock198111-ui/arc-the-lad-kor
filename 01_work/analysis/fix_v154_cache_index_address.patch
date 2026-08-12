@@ -1,0 +1,26 @@
+diff --git a/02_scripts/build_arc1_v153_dynamic_cache.py b/02_scripts/build_arc1_v153_dynamic_cache.py
+--- a/02_scripts/build_arc1_v153_dynamic_cache.py
++++ b/02_scripts/build_arc1_v153_dynamic_cache.py
+@@ -1,1 +1,1 @@
+-"""v153: replace four fixed VRAM strips with a 20-slot on-demand glyph cache.
++"""v154: replace four fixed VRAM strips with a 20-slot on-demand glyph cache.
+@@ -42,4 +42,4 @@
+ PLANNED_GLYPHS = PLAN / "dynamic_glyph_rows.bin"
+ 
+ OUT_DIR = ROOT / "03_output"
+-OUT_STEM = "arc1_v153_dynamic_cache"
++OUT_STEM = "arc1_v154_dynamic_cache"
+@@ -224,6 +224,6 @@
+ 
+     asm.emit(r_type(ZERO, S1, T0, 1, 0x00))
+-    asm.emit(r_type(S2, T0, T0, 0, 0x21))
+-    asm.emit(i_type(0x25, T0, T1, 0))                    # source id
+-    asm.emit(r_type(S3, T0, T0, 0, 0x21))
+-    asm.emit(i_type(0x25, T0, T2, 0))                    # physical index
++    asm.emit(r_type(S2, T0, T3, 0, 0x21))
++    asm.emit(i_type(0x25, T3, T1, 0))                    # source id
++    asm.emit(r_type(S3, T0, T3, 0, 0x21))
++    asm.emit(i_type(0x25, T3, T2, 0))                    # physical index
+@@ -660,1 +660,1 @@
+-        "v153 on-demand 20-slot completed-glyph cache",
++        "v154 on-demand 20-slot completed-glyph cache",

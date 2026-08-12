@@ -1,0 +1,60 @@
+v165 fail-closed 24-slot completed-glyph cache
+
+base=arc1_v164_predrawot_cache_upload_probe_4E714493.zip
+base_sha256=4E71449316530FF19F44F9C98E9DE62780EBE079548A12E25E7A30F0E80ED33C
+output=arc1_v165c_failclosed_24slot_cache_checkpoint_fix_D1ADC357.zip
+sha256=D1ADC3570E8690CAE66CCDD54ED1686DA081D1E0A908B3E3BB6B7083ECE8F618
+archive_members=164
+changed_members=PSX.EXE COMM.IMG
+changed_other_members=0
+
+restored_complete_COMM_cells=50
+restored_static_Hangul_sources=162
+existing_dynamic_sources=207
+protected_dynamic_sources=1
+dynamic_sources_total=370
+bounded_semantic_tokens_verified=53063
+text_token_width_changes=0
+direct_range_entries=40
+direct_range_indices=162/162 PASS
+protected_virtual_slot_405=source 369 PASS
+Huffman_source_readback=370/370 PASS
+
+cache_slots=24
+cache_cells=6
+cache_VRAM=x961..978,y480..491
+cache_overflow=blank glyph; never overwrite an active slot
+cache_cell_backing=72-byte complete-cell rebuild scratch
+cache_upload_timing=after stock update/display setup, immediately before DrawOT
+
+resident_data_bytes=3792
+resident_code_bytes=1300
+resident_used_bytes=5092
+resident_free_bytes=264
+resident_budget=5356
+heap_boundary=0x801FF8B0 unchanged
+startup_copy=5356 bytes unchanged
+
+decoder=0x801FF294/532 bytes
+decoder_r3000_load_delay=PASS
+decoder_branch_delay=PASS
+huffman=0x801FF4A8/248 bytes
+huffman_r3000_load_delay=PASS
+huffman_branch_delay=PASS
+helper=0x801FF5A0/44 bytes
+helper_r3000_load_delay=PASS
+helper_branch_delay=PASS
+classifier=0x801FF5CC/36 bytes
+classifier_r3000_load_delay=PASS
+classifier_branch_delay=PASS
+frame=0x801FF5F0/440 bytes
+frame_r3000_load_delay=PASS
+frame_branch_delay=PASS
+capstone_disassembly=PASS
+declared_EXE_diff_ranges=PASS
+COMM_diff_within_50_restored_cells=PASS
+archive_roundtrip=PASS
+
+runtime_verification=PENDING user cold boot
+promotion_to_bible=NO until runtime verification
+rollback=v164

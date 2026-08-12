@@ -1,0 +1,16 @@
+v164 pre-DrawOT cache-upload independent verification: PASS
+archive=arc1_v164_predrawot_cache_upload_probe_4E714493.zip
+archive_sha256=4E71449316530FF19F44F9C98E9DE62780EBE079548A12E25E7A30F0E80ED33C
+archive_members=164
+PSX.EXE_bytes=587776
+changed_EXE_bytes=9
+changed_non_EXE_members=0
+expected_write_words=3/3
+delay_slots=3/3
+early_call=stock_frame
+late_call=cache_wrapper
+wrapper_call_order=LoadImage_before_DrawOT
+wrapper_stock_frame_recursion=0
+v163_cache_data_and_classifier=byte_identical
+runtime_verification=PENDING user cold boot
+release_status=DIAGNOSTIC_ONLY

@@ -1,0 +1,45 @@
+diff --git a/02_scripts/audit_dynamic_cache_requirements.py b/02_scripts/audit_dynamic_cache_requirements.py
+--- a/02_scripts/audit_dynamic_cache_requirements.py
++++ b/02_scripts/audit_dynamic_cache_requirements.py
+@@ -108,6 +108,24 @@ def read_lut(exe: bytes) -> tuple[int, ...]:
+     return struct.unpack_from(f"<{LOOKUP_N}H", exe, at)
+ 
+ 
++def original_bitmap(font: bytes, index: int) -> tuple[int, ...] | None:
++    """Read one plane directly; the untouched EXE has no v127 remap table."""
++    row, remainder = divmod(index, IPR)
++    if (row + 1) * CELL > 512:
++        return None
++    column, plane = divmod(remainder, PLANES)
++    bit = 1 << plane
++    result = []
++    for y in range(CELL):
++        for x in range(CELL):
++            pixel_x = column * CELL + x
++            value = font[(row * CELL + y) * 0x380 + pixel_x // 2]
++            nibble = value & 0x0F if pixel_x % 2 == 0 else value >> 4
++            result.append(1 if nibble & bit else 0)
++    return tuple(result)
++
++
+ def main() -> None:
+     actual_sha = sha256(BUILD.read_bytes())
+     if actual_sha != BUILD_SHA:
+@@ -162,7 +180,7 @@ def main() -> None:
+         char = shapes.get(bits, "?") if bits else "?"
+         place = location(index)
+         by_location[place] += 1
+-        original_bits = bitmap(original_exe, original_font, index)
++        original_bits = original_bitmap(original_font, index)
+         originally_blank = original_bits is not None and not any(original_bits)
+         if place == "COMM.IMG" and originally_blank:
+             blank_origin += 1
+@@ -192,7 +210,7 @@ def main() -> None:
+             nonblank = []
+             text_used = []
+             for index in indices:
+-                bits = bitmap(original_exe, original_font, index)
++                bits = original_bitmap(original_font, index)
+                 nonblank.append(bool(bits and any(bits)))
+                 text_used.append(index in original_used)
+             if all(nonblank) and all(text_used):

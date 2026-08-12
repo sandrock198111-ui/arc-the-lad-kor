@@ -1,0 +1,31 @@
+v162 strip-A on-demand completed-glyph cache
+
+base=arc1_v161_bounded_exe_text_B2EA377E.zip
+output=arc1_v162_strip_a_dynamic_cache_1759E571.zip
+sha256=1759E57185F8EF16D8A5421EE122FB14F158939736D2C70AC728A1D8B2EEC056
+PSX.EXE_bytes=587776
+changed_EXE_bytes=427
+all_non_PSX_members=byte_identical_to_v161
+
+runtime evidence from HASH-36A4D7BFEE911E0C slots 1..6:
+  cache RAM shadow and VRAM matched 72/72 bytes in every physical cell
+  owners were slot0=택 and slot1=잎/랜 when visible
+  rendered planes omitted every even pixel because each byte was cleared twice
+  the same low-page physical cell coincided with battle-sprite and cursor damage
+
+cache_slots=20
+cache_cells=5
+cache_indices=3360..3379
+cache_vram=x961..975,y480..491
+cache_U=4..63
+cache_V=224
+cache_upload=on demand only; no fixed A/B/C/D strip upload
+
+reused runtime-proven path:
+  v116 stateless two-pass driver at 0x801A20B0
+  tpage 0x1F and row-40 U+4 geometry
+  v161 decoder, lookup, bounded text, RAM reservation and heap boundary unchanged
+
+static_verification=PENDING separate verifier
+runtime_verification=PENDING user cold boot
+rollback=v161

@@ -1,0 +1,358 @@
+﻿source_file,offset,classification,japanese,canonical_korean,v192_prompt,slot,row_widths_px,e5_positions,e6_positions,marker_geometry_matches_v190
+1/S1023.DAT,0x47952,speaker_prompt_merged,アークの母  / 父さんの置き手紙があるけどよむかい？ / <CTRL:E5:03>ベつにいい。 / <CTRL:E5:03>よむ。,어머니: 아버지가 남긴 편지를 읽을래?|괜찮아|읽는다,어머니: 아버지가 남긴 편지를 읽을래?,0,228|0|48|48,31|42,7|29|40,1
+1/S1023.DAT,0x47AB0,other_choice_unchanged,<CTRL:E5:03>強くなるためには / <CTRL:E5:03>作戦をたてるには / <CTRL:E5:03>敵からダメージを受けないためには1<CTRL:E5:03>次のページ,|강해지려면|작전을 세우려면|적에게 피해를 입지 않으려면|다음 페이지,,,,,,1
+1/S1023.DAT,0x47B30,other_choice_unchanged,<CTRL:E5:03>敵からダメージを受けないためには2<CTRL:E5:03>うまく戦うには / <CTRL:E5:03>よむのやめる。,피해 줄이기 2|전투 요령|그만 읽기,,,,,,1
+21/S2041.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+21/S2041.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2041.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2041.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2041.DAT,0x47EFE,other_choice_unchanged,<CTRL:E5:03>エリアMAPをオープンしますか？ / <CTRL:E5:03>オープンする / <CTRL:E5:03>オープンしない / ,에어리어 맵을 열까요?|연다|열지 않는다,,,,,,1
+21/S2041.DAT,0x48160,other_choice_unchanged,<CTRL:E5:04>もちろん! / <CTRL:E5:04>ちょつと自信がないな・・。 / <CTRL:E5:04>まだ戦い方がわからないや。,물론이야!|조금 자신이 없어...|아직 싸우는 법을 몰라.,,,,,,1
+21/S2041.DAT,0x48488,other_choice_unchanged,<CTRL:E5:04>どうすれば強くなれるの？ / <CTRL:E5:04>何か戦いのコツはあるの？ / <CTRL:E5:04>やつっり、いいや。,강해지는 방법|전투 요령|그만,,,,,,1
+21/S2042.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+21/S2042.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2042.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2042.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2042.DAT,0x47FF0,speaker_prompt_merged,チョピン  / 何か私でお力になれるこはありますか？ / <CTRL:E5:03>ベつにない。 / <CTRL:E5:03>ちょつと教えてほしい。,초핀: 더 도와드릴까요?|괜찮아|하나만 더,초핀: 더 도와드릴까요?,11,144|0|48|66,27|38,5|25|36,1
+21/S2042.DAT,0x4811E,other_choice_unchanged,<CTRL:E5:04>どうすれば強くなれるの？ / <CTRL:E5:04>何か戦いのコツはあるの？ / <CTRL:E5:04>やつっり、いいや。,|강해지는 법|전투 요령|그만,,,,,,1
+21/S2043.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+21/S2043.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2043.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2043.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2044.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+21/S2044.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2044.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2044.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2045.DAT,0x46D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+21/S2045.DAT,0x46DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2045.DAT,0x46E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2045.DAT,0x46E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+21/S2045.DAT,0x4758E,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>いろいろ教えて!,|출발|그만|정보,,,,,,1
+21/S2045.DAT,0x47914,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>いろいろ教えて!,|출발|그만|정보,,,,,,1
+21/S2045.DAT,0x47C32,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>いろいろ教えて! その2,|출발|그만|정보 2,,,,,,1
+21/S2045.DAT,0x47CDA,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>耳よりな話を聞きたい!,|출발|그만|유용한 정보,,,,,,1
+21/S2045.DAT,0x47F1C,other_choice_unchanged,<CTRL:E5:03>アイテム・アクセサリーの効果。 / <CTRL:E5:03>戦闘の方向と反撃。 / <CTRL:E5:03>やつっり、いいや。,|아이템 정보|방향과 반격|그만,,,,,,1
+21/S2045.DAT,0x4834A,other_choice_unchanged,<CTRL:E5:03>バトルの心得 その2 / <CTRL:E5:03>耳よりな話 / <CTRL:E5:03>やつっり、いいや。,|전투 요령 2|유용한 정보|그만,,,,,,1
+21/S2045.DAT,0x483B6,other_choice_unchanged,<CTRL:E5:03>モンスターとの相しょう / <CTRL:E5:03>経験値について / <CTRL:E5:03>成長のアトバイス / <CTRL:E5:03>やつっり、いいや。,|몬스터 상성|경험치|성장 조언|그만,,,,,,1
+21/S2045.DAT,0x48972,other_choice_unchanged,<CTRL:E5:03>アララトスの遺跡ダンジョン / <CTRL:E5:03>ミルマーナのその後 / <CTRL:E5:03>ラマダ寺での修行 / <CTRL:E5:03>やつっり、いいや。,|아라라토스 유적|미르마나의 이후|라마다 수행|그만,,,,,,1
+21/S2045.DAT,0x48F18,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣について / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수에 대해|다음 페이지,,,,,,1
+21/S2045.DAT,0x48F94,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>やつっりいいや。,|포코의 악기|투기장|키토우올|그만,,,,,,1
+21/S2045.DAT,0x49006,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣 / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수|다음 페이지,,,,,,1
+21/S2045.DAT,0x4907E,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>次のページ,|포코의 악기|투기장|키토우올|다음 페이지,,,,,,1
+21/S2045.DAT,0x490F0,other_choice_unchanged,<CTRL:E5:03>ラマダ寺の修行 / <CTRL:E5:03>ロマンシングストーン / <CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89> / <CTRL:E5:03>やつっりいいや。,|라마다사의 수행|로맨싱 스톤|장신구 비단 띠|그만,,,,,,1
+22/S2046.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+22/S2046.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+22/S2046.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+22/S2046.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+22/S2046.DAT,0x49102,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない,|출발|그만,,,,,,1
+22/S2047.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+22/S2047.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+22/S2047.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+22/S2047.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3011.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+31/S3011.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3011.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3011.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3012.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+31/S3012.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3012.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3012.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3012.DAT,0x47FF0,speaker_prompt_merged,チョピン  / 何か私でお力になれるこはありますか？ / <CTRL:E5:03>ベつにない。 / <CTRL:E5:03>ちょつと教えてほしい。,초핀: 제가 도와드릴 일이 있습니까?|없어|좀 물어보고 싶어,초핀: 제가 도와드릴 일이 있습니까?,0,216|0|36|108,27|38,5|25|36,1
+31/S3012.DAT,0x4811E,other_choice_unchanged,<CTRL:E5:04>どうすれば強くなれるの？ / <CTRL:E5:04>何か戦いのコツはあるの？ / <CTRL:E5:04>やつっり、いいや。,|어떻게 하면 강해져?|무슨 싸움 요령이 있어?|그만,,,,,,1
+31/S3013.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+31/S3013.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3013.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3013.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3013.DAT,0x47FF6,other_choice_unchanged,<CTRL:E5:04>もちろん! / <CTRL:E5:04>もうちょつといたいな・・。 / <CTRL:E5:04>いろいろ教えて欲しいんだけど。,|물론이야|조금 더 있을래|더 알려 줘,,,,,,1
+31/S3013.DAT,0x48236,other_choice_unchanged,<CTRL:E5:03>どうすれば強くなれるの？ / <CTRL:E5:03>何か戦いのコツはあるの？ / <CTRL:E5:03>他に何かある？ / <CTRL:E5:03>やつっり、いいや。,|강해지는 법|전투 요령|다른 정보|그만,,,,,,1
+31/S3014.DAT,0x45D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+31/S3014.DAT,0x45DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3014.DAT,0x45E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3014.DAT,0x45E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+31/S3014.DAT,0x4658E,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>いろいろ教えて!,|출발|그만|정보,,,,,,1
+31/S3014.DAT,0x4691A,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>いろいろ教えて!,|출발|그만|정보,,,,,,1
+31/S3014.DAT,0x46C48,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>いろいろ教えて! その2,|출발|그만|정보 2,,,,,,1
+31/S3014.DAT,0x46CF0,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>耳よりな話を聞きたい!,|출발|그만|유용한 정보,,,,,,1
+31/S3014.DAT,0x46F3C,other_choice_unchanged,<CTRL:E5:03>アイテム・アクセサリーの効果。 / <CTRL:E5:03>戦闘の方向と反撃。 / <CTRL:E5:03>やつっり、いいや。,|아이템 정보|방향과 반격|그만,,,,,,1
+31/S3014.DAT,0x4736E,other_choice_unchanged,<CTRL:E5:03>バトルの心得 その2 / <CTRL:E5:03>耳よりな話 / <CTRL:E5:03>やつっり、いいや。,|전투 요령 2|유용한 정보|그만,,,,,,1
+31/S3014.DAT,0x473DA,other_choice_unchanged,<CTRL:E5:03>モンスターとの相しょう / <CTRL:E5:03>経験値について / <CTRL:E5:03>成長のアトバイス / <CTRL:E5:03>やつっり、いいや。,|몬스터 상성|경험치|성장 조언|그만,,,,,,1
+31/S3014.DAT,0x47996,other_choice_unchanged,<CTRL:E5:03>アララトスの遺跡ダンジョン / <CTRL:E5:03>ミルマーナのその後 / <CTRL:E5:03>ラマダ寺での修行 / <CTRL:E5:03>やつっり、いいや。,|아라라토스 유적|미르마나의 이후|라마다 수행|그만,,,,,,1
+31/S3014.DAT,0x47F3C,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣について / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수에 대해|다음 페이지,,,,,,1
+31/S3014.DAT,0x47FB8,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>やつっりいいや。,|포코의 악기|투기장|키토우올|그만,,,,,,1
+31/S3014.DAT,0x4802A,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣 / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수|다음 페이지,,,,,,1
+31/S3014.DAT,0x480A2,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>次のページ,|포코의 악기|투기장|키토우올|다음 페이지,,,,,,1
+31/S3014.DAT,0x48114,other_choice_unchanged,<CTRL:E5:03>ラマダ寺の修行 / <CTRL:E5:03>ロマンシングストーン / <CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89> / <CTRL:E5:03>やつっりいいや。,|라마다사의 수행|로맨싱 스톤|장신구 비단 띠|그만,,,,,,1
+31/S3022.DAT,0x48822,speaker_prompt_merged,兵士  / 出発なさいますか？ / <CTRL:E5:03>出発する / <CTRL:E5:03>やつっりやめる,병사: 출발하시겠습니까?|출발한다|그만둔다,병사: 출발하시겠습니까?,35,150|0|60|60,16|24,3|14|22,1
+31/S3023.DAT,0x4870A,other_choice_unchanged,<CTRL:E5:03>外に出る / <CTRL:E5:03>やつっりやめる,|나간다|그만,,,,,,1
+31/S3024.DAT,0x47802,other_choice_unchanged,<CTRL:E5:03>外に出る / <CTRL:E5:03>やつっりやめるか,|나간다|그만,,,,,,1
+31/S3024.DAT,0x47F68,other_choice_unchanged,攻撃  / <CTRL:E5:03>アーク / <CTRL:E5:03>ククル / <CTRL:E5:03>トッシュ,|아크|쿠쿠루|토슈,,,,,,1
+31/S3024.DAT,0x47FD2,other_choice_unchanged,防ご  / <CTRL:E5:03>がいこつ / <CTRL:E5:03>よつっらい / <CTRL:E5:03>あるまじろ,|망자|갑옷|아르마,,,,,,1
+31/S3024.DAT,0x48052,other_choice_unchanged,どうする？ / <CTRL:E5:03>さいきょうこうげき / <CTRL:E5:03>ふつうこうげき / <CTRL:E5:03>よわいこうげき / ,|강공격|일반|약공격,,,,,,1
+4/S4033.DAT,0x47CDC,sentence_wrap_preserved,<G:90>次の精霊はグレイシーヌに<G:89> / よみますか？ / <CTRL:E5:03>よむ / <CTRL:E5:03>よまない,다음 정령은 그레이시누에 있다. 읽으시겠습니까?|읽는다|읽지 않는다,,,,,,1
+4/S4033.DAT,0x485C8,other_choice_unchanged,<CTRL:E5:03>とうぜんだよ / <CTRL:E5:03>はじめて聞いた,|당연|처음,,,,,,1
+4/S4034.DAT,0x47D30,sentence_wrap_preserved,<G:90>次の精霊はカーデルに<G:89> / よみますか？ / <CTRL:E5:03>よむ / <CTRL:E5:03>よまない,다음 정령은 카데르에게. 읽으시겠습니까?|읽는다|읽지 않는다,,,,,,1
+4/S4035.DAT,0x47D30,sentence_wrap_preserved,<G:90>次の精霊はアリバーシャに<G:89> / よみますか？ / <CTRL:E5:03>よむ / <CTRL:E5:03>よまない,다음 정령은 아리바샤에게. 읽으시겠습니까?|읽는다|읽지 않는다,,,,,,1
+4/S4036.DAT,0x47CDC,sentence_wrap_preserved,<G:90>最後の精霊はスメリアに<G:89> / よみますか？ / <CTRL:E5:03>よむ / <CTRL:E5:03>よまない,마지막 정령은 스메리아에. 읽으시겠습니까?|읽는다|읽지 않는다,,,,,,1
+5/S5011.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+5/S5011.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+5/S5011.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+5/S5011.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+5/S5012.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+5/S5012.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+5/S5012.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+5/S5012.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+5/S5012.DAT,0x4800C,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない,|출발|그만,,,,,,1
+5/S5013.DAT,0x46D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+5/S5013.DAT,0x46DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+5/S5013.DAT,0x46E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+5/S5013.DAT,0x46E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+5/S5013.DAT,0x47580,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>いろいろ教えて!,|출발|그만|정보,,,,,,1
+5/S5013.DAT,0x478FE,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>いろいろ教えて!,|출발|그만|정보,,,,,,1
+5/S5013.DAT,0x47C16,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>いろいろ教えて! その2,|출발|그만|정보 2,,,,,,1
+5/S5013.DAT,0x47CBE,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>耳よりな話を聞きたい!,|출발|그만|유용한 정보,,,,,,1
+5/S5013.DAT,0x47F08,other_choice_unchanged,<CTRL:E5:03>アイテム・アクセサリーの効果。 / <CTRL:E5:03>戦闘の方向と反撃。 / <CTRL:E5:03>やつっり、いいや。,|아이템 정보|방향과 반격|그만,,,,,,1
+5/S5013.DAT,0x48336,other_choice_unchanged,<CTRL:E5:03>バトルの心得 その2 / <CTRL:E5:03>耳よりな話 / <CTRL:E5:03>やつっり、いいや。,|전투 요령 2|유용한 정보|그만,,,,,,1
+5/S5013.DAT,0x483A2,other_choice_unchanged,<CTRL:E5:03>モンスターとの相しょう / <CTRL:E5:03>経験値について / <CTRL:E5:03>成長のアトバイス / <CTRL:E5:03>やつっり、いいや。,|몬스터 상성|경험치|성장 조언|그만,,,,,,1
+5/S5013.DAT,0x4895E,other_choice_unchanged,<CTRL:E5:03>アララトスの遺跡ダンジョン / <CTRL:E5:03>ミルマーナのその後 / <CTRL:E5:03>ラマダ寺での修行 / <CTRL:E5:03>やつっり、いいや。,|아라라토스 유적|미르마나의 이후|라마다 수행|그만,,,,,,1
+5/S5013.DAT,0x48F04,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣について / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수에 대해|다음 페이지,,,,,,1
+5/S5013.DAT,0x48F80,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>やつっりいいや。,|포코의 악기|투기장|키토우올|그만,,,,,,1
+5/S5013.DAT,0x48FF2,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣 / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수|다음 페이지,,,,,,1
+5/S5013.DAT,0x4906A,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>次のページ,|포코의 악기|투기장|키토우올|다음 페이지,,,,,,1
+5/S5013.DAT,0x490DC,other_choice_unchanged,<CTRL:E5:03>ラマダ寺の修行 / <CTRL:E5:03>ロマンシングストーン / <CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89> / <CTRL:E5:03>やつっりいいや。,|라마다사의 수행|로맨싱 스톤|장신구 비단 띠|그만,,,,,,1
+6/S6011.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+6/S6011.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6011.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6011.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6012.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+6/S6012.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6012.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6012.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6013.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+6/S6013.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6013.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6013.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6013.DAT,0x48030,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない,|출발|그만,,,,,,1
+6/S6014.DAT,0x46D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+6/S6014.DAT,0x46DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6014.DAT,0x46E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6014.DAT,0x46E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+6/S6014.DAT,0x47638,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない,|출발|그만,,,,,,1
+6/S6014.DAT,0x4794A,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>いろいろ教えて! その2,|출발|그만|정보 2,,,,,,1
+6/S6014.DAT,0x479F2,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>耳よりな話を聞きたい!,|출발|그만|유용한 정보,,,,,,1
+6/S6014.DAT,0x47EEA,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない,|출발|그만,,,,,,1
+6/S6014.DAT,0x482E2,other_choice_unchanged,<CTRL:E5:03>バトルの心得 その2 / <CTRL:E5:03>耳よりな話 / <CTRL:E5:03>やつっり、いいや。,|전투 요령 2|유용한 정보|그만,,,,,,1
+6/S6014.DAT,0x4834E,other_choice_unchanged,<CTRL:E5:03>モンスターとの相しょう / <CTRL:E5:03>経験値について / <CTRL:E5:03>成長のアトバイス / <CTRL:E5:03>やつっり、いいや。,|몬스터 상성|경험치|성장 조언|그만,,,,,,1
+6/S6014.DAT,0x4890A,other_choice_unchanged,<CTRL:E5:03>アララトスの遺跡ダンジョン / <CTRL:E5:03>ミルマーナのその後 / <CTRL:E5:03>ラマダ寺での修行 / <CTRL:E5:03>やつっり、いいや。,|아라라토스 유적|미르마나의 이후|라마다 수행|그만,,,,,,1
+6/S6014.DAT,0x48EB0,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣について / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수에 대해|다음 페이지,,,,,,1
+6/S6014.DAT,0x48F2C,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>やつっりいいや。,|포코의 악기|투기장|키토우올|그만,,,,,,1
+6/S6014.DAT,0x48F9E,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣 / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수|다음 페이지,,,,,,1
+6/S6014.DAT,0x49016,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>次のページ,|포코의 악기|투기장|키토우올|다음 페이지,,,,,,1
+6/S6014.DAT,0x49088,other_choice_unchanged,<CTRL:E5:03>ラマダ寺の修行 / <CTRL:E5:03>ロマンシングストーン / <CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89> / <CTRL:E5:03>やつっりいいや。,|라마다사의 수행|로맨싱 스톤|장신구 비단 띠|그만,,,,,,1
+6/S6054.DAT,0x45002,other_choice_unchanged,<CTRL:E5:03>チョピン / <CTRL:E5:03>チョビン / <CTRL:E5:03>チョースケ / <CTRL:E5:03>チョンガラ,|초핀|초비|초스케|초카라,,,,,,1
+6/S6054.DAT,0x450F6,other_choice_unchanged,<CTRL:E5:03>ミルマーナ / <CTRL:E5:03>スメリア / <CTRL:E5:03>アララトス / <CTRL:E5:03>カーデル,|밀마|스메|아라라|카델,,,,,,1
+6/S6054.DAT,0x451F4,other_choice_unchanged,<CTRL:E5:03>アーク / <CTRL:E5:03>ククル / <CTRL:E5:03>タイトルロゴ / <CTRL:E5:03>へモジー,|아크|쿠쿠루|다다|헤모,,,,,,1
+6/S6054.DAT,0x452F2,other_choice_unchanged,<CTRL:E5:03>オカモト / <CTRL:E5:03>ヤマモト / <CTRL:E5:03>ヤマオキ / <CTRL:E5:03>ヤマシタ,|오카|야모|야오|시타,,,,,,1
+6/S6054.DAT,0x453E6,other_choice_unchanged,<CTRL:E5:03>でる / <CTRL:E5:03>でるかも / <CTRL:E5:03>でるのでは / <CTRL:E5:03>なやむ,|예|아마|확실|고민,,,,,,1
+6/S6054.DAT,0x454DC,other_choice_unchanged,<CTRL:E5:03>150人 / <CTRL:E5:03>200人 / <CTRL:E5:03>250人 / <CTRL:E5:03>なやむ,|150|200|250|고민,,,,,,1
+6/S6054.DAT,0x455E0,other_choice_unchanged,<CTRL:E5:03>ある / <CTRL:E5:03>ない / <CTRL:E5:03>作りたかつた / <CTRL:E5:03>行きたかつた,|있음|없음|제작|여행,,,,,,1
+6/S6054.DAT,0x456DA,other_choice_unchanged,<CTRL:E5:03>あれ / <CTRL:E5:03>それ / <CTRL:E5:03>どれ / <CTRL:E5:03>ないしょ,|저|그|어|비밀,,,,,,1
+6/S6054.DAT,0x457D4,other_choice_unchanged,<CTRL:E5:03>20人 / <CTRL:E5:03>21人 / <CTRL:E5:03>22人 / <CTRL:E5:03>23人,|20|21|22|23,,,,,,1
+6/S6054.DAT,0x458CE,other_choice_unchanged,<CTRL:E5:03>すごいアイテム / <CTRL:E5:03>こわれたアイテム / <CTRL:E5:03>つぶれたアイテム / <CTRL:E5:03>ねばねば,|대단함|고장|찌그러진|달라붙음,,,,,,1
+6/S6054.DAT,0x459CA,other_choice_unchanged,<CTRL:E5:03>きいろ / <CTRL:E5:03>わけあつてちゃいろ / <CTRL:E5:03>本当はあか / <CTRL:E5:03>それはだれ？,|황금|갈|빨강|누구?,,,,,,1
+7/S7011.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+7/S7011.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+7/S7011.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+7/S7011.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+7/S7011.DAT,0x48036,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない,|출발|그만,,,,,,1
+7/S7012.DAT,0x46D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+7/S7012.DAT,0x46DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+7/S7012.DAT,0x46E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+7/S7012.DAT,0x46E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+7/S7012.DAT,0x47A74,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>いろいろ教えて! その2,|출발|그만|정보 2,,,,,,1
+7/S7012.DAT,0x47B1C,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>耳よりな話を聞きたい!,|출발|그만|유용한 정보,,,,,,1
+7/S7012.DAT,0x47DDA,other_choice_unchanged,<CTRL:E5:03>バトルの心得 その2 / <CTRL:E5:03>耳よりな話 / <CTRL:E5:03>やつっり、いいや。,|전투 요령 2|유용한 정보|그만,,,,,,1
+7/S7012.DAT,0x47E46,other_choice_unchanged,<CTRL:E5:03>モンスターとの相しょう / <CTRL:E5:03>経験値について / <CTRL:E5:03>成長のアトバイス / <CTRL:E5:03>やつっり、いいや。,|몬스터 상성|경험치|성장 조언|그만,,,,,,1
+7/S7012.DAT,0x48402,other_choice_unchanged,<CTRL:E5:03>アララトスの遺跡ダンジョン / <CTRL:E5:03>ミルマーナのその後 / <CTRL:E5:03>ラマダ寺での修行 / <CTRL:E5:03>やつっり、いいや。,|아라라토스 유적|미르마나의 이후|라마다 수행|그만,,,,,,1
+7/S7012.DAT,0x489A8,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣について / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수에 대해|다음 페이지,,,,,,1
+7/S7012.DAT,0x48A24,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>やつっりいいや。,|포코의 악기|투기장|키토우올|그만,,,,,,1
+7/S7012.DAT,0x48A96,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣 / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수|다음 페이지,,,,,,1
+7/S7012.DAT,0x48B0E,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>次のページ,|포코의 악기|투기장|키토우올|다음 페이지,,,,,,1
+7/S7012.DAT,0x48B80,other_choice_unchanged,<CTRL:E5:03>ラマダ寺の修行 / <CTRL:E5:03>ロマンシングストーン / <CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89> / <CTRL:E5:03>やつっりいいや。,|라마다사의 수행|로맨싱 스톤|장신구 비단 띠|그만,,,,,,1
+7/S7021.DAT,0x47D58,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7021.DAT,0x47E66,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7021.DAT,0x47F74,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7021.DAT,0x48082,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7021.DAT,0x48190,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7021.DAT,0x4829E,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7021.DAT,0x483AC,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7021.DAT,0x48D26,speaker_prompt_merged,大会委員  / 参加なさいますか？ / <CTRL:E5:03>参加する / <CTRL:E5:03>参加しない,대회 위원: 출전하시겠습니까?|출전|그만,대회 위원: 출전하시겠습니까?,7,180|0|60|72,19|27,6|17|25,1
+7/S7021.DAT,0x48EA4,other_choice_unchanged,<CTRL:E5:03>アーク / <CTRL:E5:03>ククル / <CTRL:E5:03>トッシュ / <CTRL:E5:03>次のページ / ,|아크|쿠쿠루|토슈|다음 페이지,,,,,,1
+7/S7021.DAT,0x48F16,other_choice_unchanged,<CTRL:E2:01>さんですね。 / <CTRL:E5:03>はい / <CTRL:E5:03>まちがえました / ,맞나?|예|아니오,,,,,,1
+7/S7021.DAT,0x48F82,other_choice_unchanged,<CTRL:E2:02>さんですね。 / <CTRL:E5:03>はい / <CTRL:E5:03>まちがえました / ,맞나?|예|아니오,,,,,,1
+7/S7021.DAT,0x48FEE,other_choice_unchanged,<CTRL:E2:03>さんですね。 / <CTRL:E5:03>おう / <CTRL:E5:03>まちがえたぜ / ,맞나?|예|아니오,,,,,,1
+7/S7021.DAT,0x4908E,other_choice_unchanged,<CTRL:E5:03>ポコ / <CTRL:E5:03>ゴーゲン / <CTRL:E5:03>イーガ / <CTRL:E5:03>次のページ / ,|포코|고겐|이가|다음 페이지,,,,,,1
+7/S7021.DAT,0x49102,other_choice_unchanged,<CTRL:E2:04>さんですね。 / <CTRL:E5:03>うん / <CTRL:E5:03>やつっりやだ / ,맞나?|예|아니오,,,,,,1
+7/S7021.DAT,0x4916C,other_choice_unchanged,<CTRL:E2:05>さんですね。 / <CTRL:E5:03>やる / <CTRL:E5:03>やめるわい / ,맞나?|예|아니오,,,,,,1
+7/S7021.DAT,0x491D0,other_choice_unchanged,<CTRL:E2:06>さんですね。 / <CTRL:E5:03>うむ,맞나?|예,,,,,,1
+7/S7021.DAT,0x4921C,other_choice_unchanged,<CTRL:E5:03>チョンガラ / <CTRL:E5:03>次のページ / <CTRL:E5:03>やつっりやめる / <CTRL:E5:03>外に出る,|촌가라|다음 페이지|그만두기|밖으로 나가기,,,,,,1
+7/S7021.DAT,0x4929E,other_choice_unchanged,<CTRL:E2:08>さんですね。 / <CTRL:E5:03>わしかい / <CTRL:E5:03>いやじゃ / ,맞나?|예|아니오,,,,,,1
+7/S7022.DAT,0x47FCE,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7022.DAT,0x480DC,other_choice_unchanged,こうたいする？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7022.DAT,0x481E8,other_choice_unchanged,おれかい？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7022.DAT,0x482F2,other_choice_unchanged,ぼくかな？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7022.DAT,0x483FC,other_choice_unchanged,わしかね？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7022.DAT,0x48506,other_choice_unchanged,かわるか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7022.DAT,0x48610,other_choice_unchanged,こうたいしようかね？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7022.DAT,0x489B6,speaker_prompt_merged,大会委員  / 1回戦の準備はいいですか？ / <CTRL:E5:03>はい / <CTRL:E5:03>まだです,대회 위원: 1회전 준비됐습니까?|예|아직입니다,대회 위원: 1회전 준비됐습니까?,7,198|0|24|48,24|30,6|22|28,1
+7/S7022.DAT,0x49196,other_choice_unchanged,エントリーをやりなおしますか。 / <CTRL:E5:03>やりなおす / <CTRL:E5:03>つづける,처음부터?|다시|계속,,,,,,1
+7/S7023.DAT,0x47D58,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7023.DAT,0x47E66,other_choice_unchanged,こうたいする？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7023.DAT,0x47F72,other_choice_unchanged,かわつてやろうか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7023.DAT,0x48080,other_choice_unchanged,ぼくとかわる？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7023.DAT,0x4818C,other_choice_unchanged,わしか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7023.DAT,0x48296,other_choice_unchanged,かわるか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7023.DAT,0x483A0,other_choice_unchanged,こうたいするかい？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7023.DAT,0x48A4E,speaker_prompt_merged,大会委員  / 2回戦の準備はいいですか？ / <CTRL:E5:03>はい / <CTRL:E5:03>まだです,대회 위원: 2회전 준비됐습니까?|예|아직입니다,대회 위원: 2회전 준비됐습니까?,7,198|0|24|48,24|30,6|22|28,1
+7/S7023.DAT,0x491C6,other_choice_unchanged,エントリーをやりなおしますか。 / <CTRL:E5:03>やりなおす / <CTRL:E5:03>つづける,처음부터?|다시|계속,,,,,,1
+7/S7023.DAT,0x4922C,other_choice_unchanged,1回戦からやりなおしになります。よろしいですか？ / <CTRL:E5:03>はい / <CTRL:E5:03>とんでもない,1회전부터?|예|아니오,,,,,,1
+7/S7024.DAT,0x47D58,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7024.DAT,0x47E66,other_choice_unchanged,こうたいする？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7024.DAT,0x47F72,other_choice_unchanged,おれかい？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7024.DAT,0x4807C,other_choice_unchanged,ぼくだね？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7024.DAT,0x48186,other_choice_unchanged,こうたいしようかの？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7024.DAT,0x48296,other_choice_unchanged,かわるか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7024.DAT,0x483A0,other_choice_unchanged,こうたいしようかね？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7024.DAT,0x48AAE,speaker_prompt_merged,大会委員  / 準決勝の準備はいいですか？ / <CTRL:E5:03>はい / <CTRL:E5:03>まだです,대회 위원: 준결승 준비됐습니까?|예|아직입니다,대회 위원: 준결승 준비됐습니까?,7,198|0|24|48,25|31,6|23|29,1
+7/S7024.DAT,0x4922A,other_choice_unchanged,エントリーをやりなおしますか。 / <CTRL:E5:03>やりなおす / <CTRL:E5:03>つづける,처음부터?|다시|계속,,,,,,1
+7/S7024.DAT,0x49290,other_choice_unchanged,1回戦からやりなおしになります。よろしいですか？ / <CTRL:E5:03>はい / <CTRL:E5:03>とんでもない,1회전부터?|예|아니오,,,,,,1
+7/S7025.DAT,0x47FDC,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7025.DAT,0x480EA,other_choice_unchanged,かわろうか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7025.DAT,0x481F6,other_choice_unchanged,おれのばんだな？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7025.DAT,0x48304,other_choice_unchanged,ぼく？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7025.DAT,0x4840C,other_choice_unchanged,わしかな、やつっり？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7025.DAT,0x4851C,other_choice_unchanged,む？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7025.DAT,0x48624,other_choice_unchanged,こうたい？こうたい？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7025.DAT,0x48AC2,speaker_prompt_merged,大会委員  / 決勝の準備はいいですか？ / <CTRL:E5:03>はい / <CTRL:E5:03>まだです,대회 위원: 결승 준비됐습니까?|예|아직입니다,대회 위원: 결승 준비됐습니까?,7,186|0|24|48,23|29,6|21|27,1
+7/S7025.DAT,0x4923A,other_choice_unchanged,エントリーをやりなおしますか。 / <CTRL:E5:03>やりなおす / <CTRL:E5:03>つづける,처음부터?|다시|계속,,,,,,1
+7/S7025.DAT,0x492A0,other_choice_unchanged,1回戦からやりなおしになります。よろしいですか？ / <CTRL:E5:03>はい / <CTRL:E5:03>とんでもない,1회전부터?|예|아니오,,,,,,1
+7/S7026.DAT,0x48006,other_choice_unchanged,こうたいか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7026.DAT,0x48112,other_choice_unchanged,かわろうか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7026.DAT,0x4821E,other_choice_unchanged,おれだぜ、やつっり。 / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7026.DAT,0x4832E,other_choice_unchanged,こうたいしようよ。 / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7026.DAT,0x4843C,other_choice_unchanged,こうたいかの？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7026.DAT,0x48548,other_choice_unchanged,うむ？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7026.DAT,0x48650,other_choice_unchanged,こうたいしようかね？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7026.DAT,0x48D28,speaker_prompt_merged,大会委員  / オーフ争奪戦の準備はいいですか？ / <CTRL:E5:03>はい / <CTRL:E5:03>まだです,대회 위원: 오브 쟁탈전 준비됐습니까?|예|아직입니다,대회 위원: 오브 쟁탈전 준비됐습니까?,7,228|0|24|48,29|35,6|27|33,1
+7/S7026.DAT,0x494A6,other_choice_unchanged,エントリーをやりなおしますか。 / <CTRL:E5:03>やりなおす / <CTRL:E5:03>つづける,처음부터?|다시|계속,,,,,,1
+7/S7026.DAT,0x4950C,other_choice_unchanged,1回戦からやりなおしになります。よろしいですか？ / <CTRL:E5:03>はい / <CTRL:E5:03>とんでもない,1회전부터?|예|아니오,,,,,,1
+7/S7028.DAT,0x46D58,other_choice_unchanged,こうたいしようか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7028.DAT,0x46E66,other_choice_unchanged,こうたいする？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7028.DAT,0x46F72,other_choice_unchanged,こうたいか？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7028.DAT,0x4707E,other_choice_unchanged,こうたい？こうたい？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7028.DAT,0x4718E,other_choice_unchanged,こうたいしようかの？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7028.DAT,0x4729E,other_choice_unchanged,む？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7028.DAT,0x473A6,other_choice_unchanged,こうたいかね？ / <CTRL:E5:03>こうたいする / <CTRL:E5:03>こうたいしない,변경?|변경|유지,,,,,,1
+7/S7028.DAT,0x48028,speaker_prompt_merged,大会委員  / 参加なさいますか？ / <CTRL:E5:03>参加する / <CTRL:E5:03>参加しない,대회 위원: 출전하시겠습니까?|출전|그만,대회 위원: 출전하시겠습니까?,14,180|0|60|72,19|27,6|17|25,1
+7/S7028.DAT,0x482EE,other_choice_unchanged,<CTRL:E5:03>アーク / <CTRL:E5:03>ククル / <CTRL:E5:03>トッシュ / <CTRL:E5:03>次のページ / ,|아크|쿠쿠루|토슈|다음 페이지,,,,,,1
+7/S7028.DAT,0x48360,other_choice_unchanged,<CTRL:E2:01>さんですね。 / <CTRL:E5:03>はい / <CTRL:E5:03>まちがえました / ,맞나?|예|아니오,,,,,,1
+7/S7028.DAT,0x483CC,other_choice_unchanged,<CTRL:E2:02>さんですね。 / <CTRL:E5:03>はい / <CTRL:E5:03>まちがえました / ,맞나?|예|아니오,,,,,,1
+7/S7028.DAT,0x48438,other_choice_unchanged,<CTRL:E2:03>さんですね。 / <CTRL:E5:03>おう / <CTRL:E5:03>まちがえたぜ / ,맞나?|예|아니오,,,,,,1
+7/S7028.DAT,0x484D8,other_choice_unchanged,<CTRL:E5:03>ポコ / <CTRL:E5:03>ゴーゲン / <CTRL:E5:03>イーガ / <CTRL:E5:03>次のページ / ,|포코|고겐|이가|다음 페이지,,,,,,1
+7/S7028.DAT,0x4854C,other_choice_unchanged,<CTRL:E2:04>さんですね。 / <CTRL:E5:03>うん / <CTRL:E5:03>やつっりやだ / ,맞나?|예|아니오,,,,,,1
+7/S7028.DAT,0x485B6,other_choice_unchanged,<CTRL:E2:05>さんですね。 / <CTRL:E5:03>やる / <CTRL:E5:03>やめるわい / ,맞나?|예|아니오,,,,,,1
+7/S7028.DAT,0x4861A,other_choice_unchanged,<CTRL:E2:06>さんですね。 / <CTRL:E5:03>うむ,맞나?|예,,,,,,1
+7/S7028.DAT,0x48666,other_choice_unchanged,<CTRL:E5:03>チョンガラ / <CTRL:E5:03>次のページ / <CTRL:E5:03>やつっりやめる / <CTRL:E5:03>外に出る,|촌가라|다음 페이지|그만두기|밖으로 나가기,,,,,,1
+7/S7028.DAT,0x486E8,other_choice_unchanged,<CTRL:E2:08>さんですね。 / <CTRL:E5:03>わしかい / <CTRL:E5:03>いやじゃ / ,맞나?|예|아니오,,,,,,1
+7/S7028.DAT,0x48AB8,other_choice_unchanged,<CTRL:E5:03>参加する / <CTRL:E5:03>参加しない / <CTRL:E5:03>ヤミ闘技場に参加する,|출전|그만|비밀 투기장,,,,,,1
+7/S7028.DAT,0x48B70,speaker_prompt_merged,大会委員  / 本当にいいんですか？ / <CTRL:E5:03>ぜつたい勝てる! / <CTRL:E5:03>まだやり残したことが・,대회 위원: 정말 출전하시겠습니까?|승리|나중에,대회 위원: 정말 출전하시겠습니까?,15,210|0|108|144,21|33,6|19|31,1
+8/S8011.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+8/S8011.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+8/S8011.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+8/S8011.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+8/S8012.DAT,0x47D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+8/S8012.DAT,0x47DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+8/S8012.DAT,0x47E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+8/S8012.DAT,0x47E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+8/S8012.DAT,0x48020,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない,|출발|그만,,,,,,1
+8/S8013.DAT,0x46D5A,other_choice_unchanged,<CTRL:E5:02>値ひれ究投ミ恵<CTRL:E6:00><CTRL:E5:02>場ふ究投ミ恵<CTRL:E6:00><CTRL:E5:02>年 が精ん<CTRL:E6:00><CTRL:E5:02>もー出っん<CTRL:E6:00>,,,,,,,1
+8/S8013.DAT,0x46DD4,other_choice_unchanged,<CTRL:E5:02>じ者ひれ話空<CTRL:E6:00><CTRL:E5:02>運き臣まぼ話空<CTRL:E6:00><CTRL:E5:02>フダレねま負話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+8/S8013.DAT,0x46E2C,other_choice_unchanged,<CTRL:E5:02>れどどめじ話空<CTRL:E6:00><CTRL:E5:02>れひヴまねコ話空<CTRL:E6:00><CTRL:E5:02>必ま直き話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+8/S8013.DAT,0x46E86,other_choice_unchanged,<CTRL:E5:02>はどま受金話空<CTRL:E6:00><CTRL:E5:02>解い装ま火<CTRL:E6:00>,,,,,,,1
+8/S8013.DAT,0x476B6,other_choice_unchanged,<CTRL:E5:03>出発する / <CTRL:E5:03>出発しない / <CTRL:E5:03>耳よりな話を聞きたい!,|출발|그만|유용한 정보,,,,,,1
+8/S8013.DAT,0x47996,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣について / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수에 대해|다음 페이지,,,,,,1
+8/S8013.DAT,0x47A12,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>やつっりいいや。,|포코의 악기|투기장|키토우올|그만,,,,,,1
+8/S8013.DAT,0x47A84,other_choice_unchanged,<CTRL:E5:03>ストーンサークル / <CTRL:E5:03>リングの位置設定 / <CTRL:E5:03>召喚獣 / <CTRL:E5:03>次のページ,|스톤 서클|링 위치 설정|소환수|다음 페이지,,,,,,1
+8/S8013.DAT,0x47AFC,other_choice_unchanged,<CTRL:E5:03>ポコの楽器 / <CTRL:E5:03>闘技場 / <CTRL:E5:03>キートウオール / <CTRL:E5:03>次のページ,|포코의 악기|투기장|키토우올|다음 페이지,,,,,,1
+8/S8013.DAT,0x47B6E,other_choice_unchanged,<CTRL:E5:03>ラマダ寺の修行 / <CTRL:E5:03>ロマンシングストーン / <CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89> / <CTRL:E5:03>やつっりいいや。,|라마다사의 수행|로맨싱 스톤|장신구 비단 띠|그만,,,,,,1
+B/SB071.DAT,0x47EA6,other_choice_unchanged,それでもいいか？ /  / <CTRL:E5:03>もちろん / <CTRL:E5:03>やつっりやめよう。,괜찮을까?|물론|그만,,,,,,1
+C1/SC011.DAT,0x46DE6,other_choice_unchanged,戦闘になるぞ。いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 된다. 괜찮나?|예|그만둔다,,,,,,1
+C1/SC011.DAT,0x46E48,other_choice_unchanged,戦闘になるよ。いいの？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 돼. 괜찮아?|응|그만둘래,,,,,,1
+C1/SC011.DAT,0x46EAA,other_choice_unchanged,やるぜ。もちろんいいよな / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,간다. 물론 괜찮겠지?|물론|역시 그만,,,,,,1
+C1/SC011.DAT,0x46F0E,other_choice_unchanged,戦闘になるけど、いいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,"싸우게 되는데, 괜찮을까?|괜찮아|그만둘래",,,,,,1
+C1/SC011.DAT,0x46F74,other_choice_unchanged,戦闘になるがいいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 되는데 괜찮으려나?|괜찮다|그만두마,,,,,,1
+C1/SC011.DAT,0x46FD8,other_choice_unchanged,いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,괜찮나?|예|그만둔다,,,,,,1
+C1/SC011.DAT,0x47034,other_choice_unchanged,どうしようかね / <CTRL:E5:03>やる / <CTRL:E5:03>やつっりやめる,어떻게 할까?|싸운다|그만둔다,,,,,,1
+C1/SC021.DAT,0x46DE6,other_choice_unchanged,戦闘になるぞ。いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 된다. 괜찮나?|예|그만둔다,,,,,,1
+C1/SC021.DAT,0x46E48,other_choice_unchanged,戦闘になるよ。いいの？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 돼. 괜찮아?|응|그만둘래,,,,,,1
+C1/SC021.DAT,0x46EAA,other_choice_unchanged,やるぜ。もちろんいいよな / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,간다. 물론 괜찮겠지?|물론|역시 그만,,,,,,1
+C1/SC021.DAT,0x46F0E,other_choice_unchanged,戦闘になるけど、いいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,"싸우게 되는데, 괜찮을까?|괜찮아|그만둘래",,,,,,1
+C1/SC021.DAT,0x46F74,other_choice_unchanged,戦闘になるがいいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 되는데 괜찮으려나?|괜찮다|그만두마,,,,,,1
+C1/SC021.DAT,0x46FD8,other_choice_unchanged,いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,괜찮나?|예|그만둔다,,,,,,1
+C1/SC021.DAT,0x47034,other_choice_unchanged,どうしようかね / <CTRL:E5:03>やる / <CTRL:E5:03>やつっりやめる,어떻게 할까?|싸운다|그만둔다,,,,,,1
+C1/SC031.DAT,0x46DE6,other_choice_unchanged,戦闘になるぞ。いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 된다. 괜찮나?|예|그만둔다,,,,,,1
+C1/SC031.DAT,0x46E48,other_choice_unchanged,戦闘になるよ。いいの？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 돼. 괜찮아?|응|그만둘래,,,,,,1
+C1/SC031.DAT,0x46EAA,other_choice_unchanged,やるぜ。もちろんいいよな / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,간다. 물론 괜찮겠지?|물론|역시 그만,,,,,,1
+C1/SC031.DAT,0x46F0E,other_choice_unchanged,戦闘になるけど、いいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,"싸우게 되는데, 괜찮을까?|괜찮아|그만둘래",,,,,,1
+C1/SC031.DAT,0x46F74,other_choice_unchanged,戦闘になるがいいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 되는데 괜찮으려나?|괜찮다|그만두마,,,,,,1
+C1/SC031.DAT,0x46FD8,other_choice_unchanged,いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,괜찮나?|예|그만둔다,,,,,,1
+C1/SC031.DAT,0x47034,other_choice_unchanged,どうしようかね / <CTRL:E5:03>やる / <CTRL:E5:03>やつっりやめる,어떻게 할까?|싸운다|그만둔다,,,,,,1
+C1/SC041.DAT,0x46DE6,other_choice_unchanged,戦闘になるぞ。いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 된다. 괜찮나?|예|그만둔다,,,,,,1
+C1/SC041.DAT,0x46E48,other_choice_unchanged,戦闘になるよ。いいの？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 돼. 괜찮아?|응|그만둘래,,,,,,1
+C1/SC041.DAT,0x46EAA,other_choice_unchanged,やるぜ。もちろんいいよな / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,간다. 물론 괜찮겠지?|물론|역시 그만,,,,,,1
+C1/SC041.DAT,0x46F0E,other_choice_unchanged,戦闘になるけど、いいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,"싸우게 되는데, 괜찮을까?|괜찮아|그만둘래",,,,,,1
+C1/SC041.DAT,0x46F74,other_choice_unchanged,戦闘になるがいいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 되는데 괜찮으려나?|괜찮다|그만두마,,,,,,1
+C1/SC041.DAT,0x46FD8,other_choice_unchanged,いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,괜찮나?|예|그만둔다,,,,,,1
+C1/SC041.DAT,0x47034,other_choice_unchanged,どうしようかね / <CTRL:E5:03>やる / <CTRL:E5:03>やつっりやめる,어떻게 할까?|싸운다|그만둔다,,,,,,1
+C1/SC051.DAT,0x46DE6,other_choice_unchanged,戦闘になるぞ。いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 된다. 괜찮나?|예|그만둔다,,,,,,1
+C1/SC051.DAT,0x46E48,other_choice_unchanged,戦闘になるよ。いいの？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 돼. 괜찮아?|응|그만둘래,,,,,,1
+C1/SC051.DAT,0x46EAA,other_choice_unchanged,やるぜ。もちろんいいよな / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,간다. 물론 괜찮겠지?|물론|역시 그만,,,,,,1
+C1/SC051.DAT,0x46F0E,other_choice_unchanged,戦闘になるけど、いいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,"싸우게 되는데, 괜찮을까?|괜찮아|그만둘래",,,,,,1
+C1/SC051.DAT,0x46F74,other_choice_unchanged,戦闘になるがいいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 되는데 괜찮으려나?|괜찮다|그만두마,,,,,,1
+C1/SC051.DAT,0x46FD8,other_choice_unchanged,いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,괜찮나?|예|그만둔다,,,,,,1
+C1/SC051.DAT,0x47034,other_choice_unchanged,どうしようかね / <CTRL:E5:03>やる / <CTRL:E5:03>やつっりやめる,어떻게 할까?|싸운다|그만둔다,,,,,,1
+C1/SC061.DAT,0x46DE6,other_choice_unchanged,戦闘になるぞ。いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 된다. 괜찮나?|예|그만둔다,,,,,,1
+C1/SC061.DAT,0x46E48,other_choice_unchanged,戦闘になるよ。いいの？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 돼. 괜찮아?|응|그만둘래,,,,,,1
+C1/SC061.DAT,0x46EAA,other_choice_unchanged,やるぜ。もちろんいいよな / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,간다. 물론 괜찮겠지?|물론|역시 그만,,,,,,1
+C1/SC061.DAT,0x46F0E,other_choice_unchanged,戦闘になるけど、いいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,"싸우게 되는데, 괜찮을까?|괜찮아|그만둘래",,,,,,1
+C1/SC061.DAT,0x46F74,other_choice_unchanged,戦闘になるがいいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 되는데 괜찮으려나?|괜찮다|그만두마,,,,,,1
+C1/SC061.DAT,0x46FD8,other_choice_unchanged,いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,괜찮나?|예|그만둔다,,,,,,1
+C1/SC061.DAT,0x47034,other_choice_unchanged,どうしようかね / <CTRL:E5:03>やる / <CTRL:E5:03>やつっりやめる,어떻게 할까?|싸운다|그만둔다,,,,,,1
+C1/SC081.DAT,0x46DE6,other_choice_unchanged,戦闘になるぞ。いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 된다. 괜찮나?|예|그만둔다,,,,,,1
+C1/SC081.DAT,0x46E48,other_choice_unchanged,戦闘になるよ。いいの？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 돼. 괜찮아?|응|그만둘래,,,,,,1
+C1/SC081.DAT,0x46EAA,other_choice_unchanged,んつ、どりゃーーー。 / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,시작할까?|예|그만,,,,,,1
+C1/SC081.DAT,0x46F0C,other_choice_unchanged,ひいのやだな。でもやる？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,아파도 할까?|예|그만,,,,,,1
+C1/SC081.DAT,0x46F70,other_choice_unchanged,戦闘になるがいいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 되는데 괜찮으려나?|괜찮다|그만두마,,,,,,1
+C1/SC081.DAT,0x46FD4,other_choice_unchanged,いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,괜찮나?|예|그만둔다,,,,,,1
+C1/SC081.DAT,0x47030,other_choice_unchanged,いくかね / <CTRL:E5:03>いく / <CTRL:E5:03>やつっりやめる,갈까|간다|그만,,,,,,1
+C1/SC091.DAT,0x46DE6,other_choice_unchanged,いつでもいいぞ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,준비됐나?|예|그만,,,,,,1
+C1/SC091.DAT,0x46E44,other_choice_unchanged,まかせなさい / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,맡겨 두게|예|그만,,,,,,1
+C1/SC091.DAT,0x46EA2,other_choice_unchanged,ぬふりゃーーー。 / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,시작할까?|예|그만,,,,,,1
+C1/SC091.DAT,0x46F04,other_choice_unchanged,やつっりいく？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,전투?|예|그만,,,,,,1
+C1/SC091.DAT,0x46F62,other_choice_unchanged,いいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,전투?|예|그만,,,,,,1
+C1/SC091.DAT,0x46FC0,other_choice_unchanged,いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,괜찮나?|예|그만둔다,,,,,,1
+C1/SC091.DAT,0x4701C,other_choice_unchanged,わしゃイヤだが、やるかね / <CTRL:E5:03>やる / <CTRL:E5:03>やつっりやめる,할까?|한다|그만,,,,,,1
+C2/SC0A1.DAT,0x46DE6,other_choice_unchanged,戦闘になるぞ。いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 된다. 괜찮나?|예|그만둔다,,,,,,1
+C2/SC0A1.DAT,0x46E48,other_choice_unchanged,戦いたい？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,전투?|예|그만,,,,,,1
+C2/SC0A1.DAT,0x46EA4,other_choice_unchanged,やろうぜ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,전투?|예|그만,,,,,,1
+C2/SC0A1.DAT,0x46F00,other_choice_unchanged,戦闘になるけど、いいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,"싸우게 되는데, 괜찮을까?|괜찮아|그만둘래",,,,,,1
+C2/SC0A1.DAT,0x46F66,other_choice_unchanged,戦闘になるがいいのかな？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,싸우게 되는데 괜찮으려나?|괜찮다|그만두마,,,,,,1
+C2/SC0A1.DAT,0x46FCA,other_choice_unchanged,いいか？ / <CTRL:E5:03>はい / <CTRL:E5:03>やつっりやめる,괜찮나?|예|그만둔다,,,,,,1
+C2/SC0A1.DAT,0x47026,other_choice_unchanged,どうしようかね / <CTRL:E5:03>やる / <CTRL:E5:03>やつっりやめる,어떻게 할까?|싸운다|그만둔다,,,,,,1
+C2/SC0B6.DAT,0x464F8,other_choice_unchanged,<CTRL:E5:03><G:90>みなぎる果実<G:89> / <CTRL:E5:03><G:90>大きい爆弾<G:89> / <CTRL:E5:03><G:90>弱りの玉<G:89> / <CTRL:E5:03><G:90>復活の薬<G:89>,|넘치는 과실|큰 폭탄|약화의 구슬|부활의 약,,,,,,1
+C2/SC0B6.DAT,0x46884,other_choice_unchanged,<CTRL:E5:03><G:90>ちからの実<G:89> / <CTRL:E5:03><G:90>パロの実<G:89> / <CTRL:E5:03><G:90>いのちの木の実<G:89> / <CTRL:E5:03><G:90>魔力の泉<G:89>,|힘의 열매|파로의 열매|생명의 나무 열매|마력의 샘,,,,,,1
+C2/SC0B6.DAT,0x46C0A,other_choice_unchanged,<CTRL:E5:03><G:90>氷の守り<G:89> / <CTRL:E5:03><G:90>炎の守り<G:89> / <CTRL:E5:03><G:90>魔法のカート<G:89> / <CTRL:E5:03><G:90>しつぷうのバンダナ<G:89>,|얼음의 수호|불꽃의 수호|마법의 카트|질풍의 반다나,,,,,,1
+C2/SC0B6.DAT,0x46F98,other_choice_unchanged,<CTRL:E5:03><G:90>スリープレスカート<G:89> / <CTRL:E5:03><G:90>アンチへモジー<G:89> / <CTRL:E5:03><G:90>鏡<G:89> / <CTRL:E5:03><G:90>サングラス<G:89>,|슬리플리스 카트|안티헤모지|거울|선글라스,,,,,,1
+C2/SC0B6.DAT,0x4731A,other_choice_unchanged, / <CTRL:E5:03><G:90>ディールの牙<G:89>,|디르의 어금니,,,,,,1
+C2/SC0B6.DAT,0x474B2,other_choice_unchanged,<CTRL:E5:03><G:90>パワーリスト<G:89> / <CTRL:E5:03><G:90>ハイパーフーツ<G:89> / <CTRL:E5:03><G:90>いやしのお守り<G:89> / <CTRL:E5:03><G:90>貝がら<G:89>,|파워 리스트|하이퍼 부츠|치유의 부적|조개껍데기,,,,,,1
+C2/SC0B6.DAT,0x47838,other_choice_unchanged, / <CTRL:E5:03><G:90>幻のこて<G:89>,|환상의 건틀릿,,,,,,1
+C2/SC0B6.DAT,0x479C6,other_choice_unchanged, / <CTRL:E5:03><G:90>闘技場の倉庫の中身<G:89>,|투기장 창고의 내용물,,,,,,1

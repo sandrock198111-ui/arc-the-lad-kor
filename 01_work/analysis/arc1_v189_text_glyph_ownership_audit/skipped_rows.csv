@@ -1,0 +1,196 @@
+﻿owner_type,owner,desired,match_ratio,reason
+story,1/S1023.DAT 0x47AB0,|강해지려면|작전을 세우려면|적에게 피해를 입지 않으려면|다음 페이지,0.5517,current payload is not this translation
+story,21/S2013.DAT 0x47922,...,0.0000,current payload is not this translation
+story,21/S2042.DAT 0x47FB4,...,0.0000,current payload is not this translation
+story,21/S2045.DAT 0x4834A,|전투 요령 2|유용한 정보|그만,0.0833,current payload is not this translation
+story,21/S2045.DAT 0x4876C,...,0.0000,current payload is not this translation
+story,21/S2045.DAT 0x48926,낙오자라니 누구를 말하는 게냐?,0.0000,current payload is not this translation
+story,21/S2045.DAT 0x48972,|아라라토스 유적|미르마나의 이후|라마다 수행|그만,0.0000,current payload is not this translation
+story,21/S2045.DAT 0x48B10,"그래, 너희 힘으로 보물을 척척 손에 넣는 거다!",0.1000,current payload is not this translation
+story,21/S2045.DAT 0x48BC0,맡길 리가 없잖아!,0.1250,current payload is not this translation
+story,21/S2045.DAT 0x48D6E,친절하기도 하군.,0.0000,current payload is not this translation
+story,21/S2045.DAT 0x48EC0,초핀: 어느 것에 관해 말씀드릴까요?,0.0000,current payload is not this translation
+story,21/S2045.DAT 0x48F18,|스톤 서클|링 위치 설정|소환수에 대해|다음 페이지,0.0500,current payload is not this translation
+story,21/S2045.DAT 0x48F94,|포코의 악기|투기장|키토우올|그만,0.0714,current payload is not this translation
+story,21/S2045.DAT 0x49006,|스톤 서클|링 위치 설정|소환수|다음 페이지,0.1765,current payload is not this translation
+story,21/S2045.DAT 0x4907E,|포코의 악기|투기장|키토우올|다음 페이지,0.0588,current payload is not this translation
+story,21/S2045.DAT 0x4916A,초핀: 고겐 님이 동료가 된 뒤에 오르카스 언덕의 스톤 서클에 가 보셨습니까?,0.0625,current payload is not this translation
+story,31/S3014.DAT 0x46FB4,"초핀: 아이템, 장신구, 특수 능력은 커서로 고르고 있을 때 L이나 R 버튼을 누르면 그 효과를 볼 수 있습니다.",0.0652,current payload is not this translation
+story,31/S3014.DAT 0x47108,초핀: 아이템 던지기는 반격당하지 않으므로 강한 적에게도 안전한 공격 수단입니다.,0.0556,current payload is not this translation
+story,31/S3014.DAT 0x47232,초핀: 반대로 자신이 공격받을 때는 되도록 정면을 향하게 하면 적에게 반격하기 쉬워집니다.,0.0256,current payload is not this translation
+story,31/S3014.DAT 0x472A2,초핀: 특수 공격도 아이템을 던지는 것과 마찬가지로 절대로 적의 반격을 받지 않는 공격 수단입니다.,0.0476,current payload is not this translation
+story,31/S3014.DAT 0x47324,초핀: 무엇을 알고 싶으십니까?,0.0714,current payload is not this translation
+story,31/S3014.DAT 0x4736E,|전투 요령 2|유용한 정보|그만,0.0833,current payload is not this translation
+story,31/S3014.DAT 0x4745A,초핀: 이쪽의 공격이 몬스터에게 통하지 않는 것은 레벨 차이 외에 상성이 나쁜 경우가 있기 때문입니다.,0.0000,current payload is not this translation
+story,31/S3014.DAT 0x4752A,초핀: 그 밖에 날아다니는 몬스터에게는 바람 마법이 잘 통하는 경우도 있습니다.,0.0000,current payload is not this translation
+story,31/S3014.DAT 0x4758C,초핀: 싸움은 머리를 쓰지 않으면 안 됩니다. 힘만으로는 안 되는 법입니다.,0.0312,current payload is not this translation
+story,31/S3014.DAT 0x4762E,초핀: 강한 상대와 싸우면 그만큼 많은 경험을 쌓을 수 있습니다.,0.0370,current payload is not this translation
+story,31/S3014.DAT 0x47790,...,0.0000,current payload is not this translation
+story,31/S3014.DAT 0x477D6,초핀: 동료가 늘어나면 전투에서의 역할에 따라 레벨 차이가 더 생기게 됩니다.,0.0303,current payload is not this translation
+story,31/S3014.DAT 0x4788A,초핀: 캐릭터들의 방어력이 비슷한 수치가 되도록 신경 써 보시는 건 어떻겠습니까?,0.0857,current payload is not this translation
+story,31/S3014.DAT 0x4794A,낙오자라니 누구를 말하는 게냐?,0.0000,current payload is not this translation
+story,31/S3014.DAT 0x47996,|아라라토스 유적|미르마나의 이후|라마다 수행|그만,0.0000,current payload is not this translation
+story,31/S3014.DAT 0x47A78,"초핀: 그 안에는 몬스터가 지키고 있는, 그곳에서만 얻을 수 있는 액세서리도 있다고 들었습니다.",0.0488,current payload is not this translation
+story,31/S3014.DAT 0x47ADE,"초핀: 실력도 시험해 볼 겸, 가끔 들러 보는 것도 좋지 않을까요?",0.0741,current payload is not this translation
+story,31/S3014.DAT 0x47CD6,"초핀: 미르마나에는 세 곳의 배틀 에어리어가 있다고 하니, 때로는 가서 이야기를 듣는 것도 좋겠습니다.",0.0682,current payload is not this translation
+story,31/S3014.DAT 0x47D42,초핀: 가면 만능약을 받을 수 있는 것같습니다.,0.0000,current payload is not this translation
+story,31/S3014.DAT 0x47D92,친절하기도 하군.,0.0000,current payload is not this translation
+story,31/S3014.DAT 0x47EE4,초핀: 어느 것에 관해 말씀드릴까요?,0.0000,current payload is not this translation
+story,31/S3014.DAT 0x47F3C,|스톤 서클|링 위치 설정|소환수에 대해|다음 페이지,0.0500,current payload is not this translation
+story,31/S3014.DAT 0x47FB8,|포코의 악기|투기장|키토우올|그만,0.0714,current payload is not this translation
+story,31/S3014.DAT 0x4802A,|스톤 서클|링 위치 설정|소환수|다음 페이지,0.1765,current payload is not this translation
+story,31/S3014.DAT 0x480A2,|포코의 악기|투기장|키토우올|다음 페이지,0.0588,current payload is not this translation
+story,31/S3014.DAT 0x4818E,초핀: 고겐 님이 동료가 된 뒤에 오르카스 언덕의 스톤 서클에 가 보셨습니까?,0.0625,current payload is not this translation
+story,31/S3014.DAT 0x481F2,초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...,0.0857,current payload is not this translation
+story,31/S3014.DAT 0x482B6,초핀: 그때 커서와  로 링 안의 기술을 고르고 아이콘의 위치를 바꾸어 놓을 수 있습니다.,0.0833,current payload is not this translation
+story,31/S3014.DAT 0x48320,초핀: 이것은 한 번 바꾸면 저장되므로 언제나 사용할 수 있습니다.,0.0000,current payload is not this translation
+story,31/S3014.DAT 0x483F8,초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병사가 될 수 있겠군요.,0.0714,current payload is not this translation
+story,31/S3024.DAT 0x47F68,|아크|쿠쿠루|토슈,0.0000,current payload is not this translation
+story,5/S5013.DAT 0x47F80,"초핀: 아이템, 장신구, 특수 능력은 커서로 고르고 있을 때 L이나 R 버튼을 누르면 그 효과를 볼 수 있습니다.",0.0652,current payload is not this translation
+story,5/S5013.DAT 0x48336,|전투 요령 2|유용한 정보|그만,0.0833,current payload is not this translation
+story,5/S5013.DAT 0x48758,...,0.0000,current payload is not this translation
+story,5/S5013.DAT 0x48912,낙오자라니 누구를 말하는 게냐?,0.0000,current payload is not this translation
+story,5/S5013.DAT 0x4895E,|아라라토스 유적|미르마나의 이후|라마다 수행|그만,0.0000,current payload is not this translation
+story,5/S5013.DAT 0x489E2,초핀: 아라라토스의 유적 던전은 층이 상당히 많은것 같습니다.,0.0000,current payload is not this translation
+story,5/S5013.DAT 0x48BAC,맡길 리가 없잖아!,0.1250,current payload is not this translation
+story,5/S5013.DAT 0x48D5A,친절하기도 하군.,0.0000,current payload is not this translation
+story,5/S5013.DAT 0x48EAC,초핀: 어느 것에 관해 말씀드릴까요?,0.0000,current payload is not this translation
+story,5/S5013.DAT 0x48F04,|스톤 서클|링 위치 설정|소환수에 대해|다음 페이지,0.0500,current payload is not this translation
+story,5/S5013.DAT 0x48F80,|포코의 악기|투기장|키토우올|그만,0.0714,current payload is not this translation
+story,5/S5013.DAT 0x48FF2,|스톤 서클|링 위치 설정|소환수|다음 페이지,0.1765,current payload is not this translation
+story,5/S5013.DAT 0x4906A,|포코의 악기|투기장|키토우올|다음 페이지,0.0588,current payload is not this translation
+story,5/S5013.DAT 0x49156,초핀: 고겐 님이 동료가 된 뒤에 오르카스 언덕의 스톤 서클에 가 보셨습니까?,0.0625,current payload is not this translation
+story,6/S6014.DAT 0x482E2,|전투 요령 2|유용한 정보|그만,0.0833,current payload is not this translation
+story,6/S6014.DAT 0x48704,...,0.0000,current payload is not this translation
+story,6/S6014.DAT 0x4890A,|아라라토스 유적|미르마나의 이후|라마다 수행|그만,0.0000,current payload is not this translation
+story,6/S6014.DAT 0x48B58,맡길 리가 없잖아!,0.1250,current payload is not this translation
+story,6/S6014.DAT 0x48D06,친절하기도 하군.,0.0000,current payload is not this translation
+story,6/S6014.DAT 0x48E58,초핀: 어느 것에 관해 말씀드릴까요?,0.0000,current payload is not this translation
+story,6/S6014.DAT 0x48EB0,|스톤 서클|링 위치 설정|소환수에 대해|다음 페이지,0.0500,current payload is not this translation
+story,6/S6014.DAT 0x48F2C,|포코의 악기|투기장|키토우올|그만,0.0714,current payload is not this translation
+story,6/S6014.DAT 0x48F9E,|스톤 서클|링 위치 설정|소환수|다음 페이지,0.1765,current payload is not this translation
+story,6/S6014.DAT 0x49016,|포코의 악기|투기장|키토우올|다음 페이지,0.0588,current payload is not this translation
+story,6/S6014.DAT 0x49102,초핀: 고겐 님이 동료가 된 뒤에 오르카스 언덕의 스톤 서클에 가 보셨습니까?,0.0625,current payload is not this translation
+story,6/S6054.DAT 0x4506E,라마다 승려: 정답!!,0.2000,current payload is not this translation
+story,6/S6054.DAT 0x450AC,라마다 승려: 스파이는 어디에 있었지?,0.0588,current payload is not this translation
+story,6/S6054.DAT 0x45160,라마다 승려: 정답!!,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x4519E,라마다 승려: 세이브 데이터에 표시되는 문양은 무엇인가?,0.0400,current payload is not this translation
+story,6/S6054.DAT 0x451F4,|아크|쿠쿠루|다다|헤모,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x4525C,라마다 승려: 정답!!,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x4529A,라마다 승려: 스메리아의 다운타운에 있는 네 녀석의 이름은?,0.0385,current payload is not this translation
+story,6/S6054.DAT 0x4535A,라마다 승려: 정답!!,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x45398,라마다 승려: 아크 더 래드의 속편은?,0.0625,current payload is not this translation
+story,6/S6054.DAT 0x4544A,라마다 승려: 정답!! 정말이냐?,0.2000,current payload is not this translation
+story,6/S6054.DAT 0x4548E,라마다 승려: 아크 더 래드의 스태프는?,0.0588,current payload is not this translation
+story,6/S6054.DAT 0x45542,라마다 승려: 정답!!,0.2000,current payload is not this translation
+story,6/S6054.DAT 0x45580,라마다 승려: 수도의 군 본부에는 사실 지하 50층 던전이...,0.1111,current payload is not this translation
+story,6/S6054.DAT 0x45648,라마다 승려: 정답!!,0.2000,current payload is not this translation
+story,6/S6054.DAT 0x45686,라마다 승려: 유적 던전의 가장 아래에 있는 것은?,0.0476,current payload is not this translation
+story,6/S6054.DAT 0x4573A,라마다 승려: 정답!!,0.2000,current payload is not this translation
+story,6/S6054.DAT 0x45778,라마다 승려: 라마다 절에서 문이 열렸을 때 안에 보이는 사람의 수는?,0.0345,current payload is not this translation
+story,6/S6054.DAT 0x45836,라마다 승려: 정답!!,0.2000,current payload is not this translation
+story,6/S6054.DAT 0x45874,라마다 승려: 스톤 서클에서 촌가라가 찾은 아이템은?,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x458CE,|대단함|고장|찌그러진|달라붙음,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x45940,라마다 승려: 정답!!,0.2000,current payload is not this translation
+story,6/S6054.DAT 0x4597E,라마다 승려: 초코의 머리카락 빛은?,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x459CA,|황금|갈|빨강|누구?,0.1250,current payload is not this translation
+story,6/S6054.DAT 0x45A38,라마다 승려: 정답!!,0.2000,current payload is not this translation
+story,6/S6054.DAT 0x45A80,라마다 승려: 대정답!!,0.1818,current payload is not this translation
+story,6/S6054.DAT 0x45AC8,라마다 승려: 내 문제를 모두 맞힌 건 네가 처음이다. 상으로 이걸 주마.,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x45B2C,라마다 승려: 내 문제를 모두 맞힌 건 네가 두 번째다. 상으로 이걸 주마.,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x45BF4,그런데 이미 가지고 있지 않느냐? 놀리지 마라.,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x45C42,"이 세계에는 정령의 돌 말고도, 모두 모으면 효과가 나타나는 돌이 하나 더 있다고 들었다.",0.0541,current payload is not this translation
+story,6/S6054.DAT 0x45CA6,그 돌은 모험가들을 위험에서 구해 줄 위대한 힘이 될 것이다.,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x45D02,라마다 승려: 늘 목적을 가지고 행동하는 게 좋다.,0.0476,current payload is not this translation
+story,6/S6054.DAT 0x45D52,"라마다 승려: 그건 틀렸지만, 노력은 인정해 주마.",0.0000,current payload is not this translation
+story,6/S6054.DAT 0x45DA0,라마다 승려: 그러니 이걸 주마.,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x45E2E,라마다 승려: 수행이 부족한 모양이구나. 다시 해 보는 게 좋겠다.,0.0357,current payload is not this translation
+story,6/S6054.DAT 0x45F00,라마다 승려: 정말 잘했습니다. 이것을 드리겠습니다.,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x45FDC,라마다 승려: 이거 이거. 그린 슬라임 버스터 여러분.,0.0435,current payload is not this translation
+story,6/S6054.DAT 0x460DE,라마다 승려: 이거 이거. 자이언트 배트 버스터 여러분.,0.0833,current payload is not this translation
+story,6/S6054.DAT 0x461E2,라마다 승려: 이거 이거. 뱀파이어 배트 버스터 여러분.,0.0833,current payload is not this translation
+story,6/S6054.DAT 0x4623C,라마다 승려: 이거 이거. 데스 플레임 버스터 여러분.,0.0435,current payload is not this translation
+story,6/S6054.DAT 0x462E4,라마다 승려: 이거 이거. 애시드 슬라임 버스터 여러분.,0.0417,current payload is not this translation
+story,6/S6054.DAT 0x46394,라마다 승려: 처음 도전하시는군요. 그러면 우선 몸풀기부터 하도록 하지요.,0.0303,current payload is not this translation
+story,6/S6054.DAT 0x46440,라마다 승려: 두 번째 도전이시군요. 그러면 이 정도는 어떻겠습니까?,0.0333,current payload is not this translation
+story,6/S6054.DAT 0x464EC,라마다 승려: 세 번째 도전이시군요. 그러면 이 정도는 어떻겠습니까?,0.0333,current payload is not this translation
+story,6/S6054.DAT 0x46598,라마다 승려: 네 번째 도전이시군요. 아직은 이 정도겠지요?,0.0385,current payload is not this translation
+story,6/S6054.DAT 0x4663E,라마다 승려: 다섯 번째 도전이시군요. 슬슬 진심으로 싸워 주십시오.,0.0333,current payload is not this translation
+story,6/S6054.DAT 0x466E2,라마다 승려: 여섯 번째 도전이시군요.,0.0588,current payload is not this translation
+story,6/S6054.DAT 0x46778,"라마다 승려: 7번째 도전이시군요. 슬슬 힘들어지셨겠지만, 힘내시는군요.",0.0588,current payload is not this translation
+story,6/S6054.DAT 0x46828,라마다 승려: 8번째 도전이시군요. 그러면 이 정도는 어떻겠습니까?,0.0333,current payload is not this translation
+story,6/S6054.DAT 0x46980,라마다 승려: 열 번째 도전이시군요. 그러면 이 정도는 어떻겠습니까?,0.0333,current payload is not this translation
+story,6/S6054.DAT 0x46A2E,라마다 승려: 열한 번째 도전이시군요. 일단 이것으로 마지막입니다.,0.0000,current payload is not this translation
+story,6/S6054.DAT 0x46AD6,더는 상대할 사람이 없습니다. 모처럼이지만 물러나 주십시오.,0.0370,current payload is not this translation
+story,7/S7012.DAT 0x47DDA,|전투 요령 2|유용한 정보|그만,0.0833,current payload is not this translation
+story,7/S7012.DAT 0x481FC,...,0.0000,current payload is not this translation
+story,7/S7012.DAT 0x48402,|아라라토스 유적|미르마나의 이후|라마다 수행|그만,0.0000,current payload is not this translation
+story,7/S7012.DAT 0x487FE,친절하기도 하군.,0.0000,current payload is not this translation
+story,7/S7012.DAT 0x48950,초핀: 어느 것에 관해 말씀드릴까요?,0.0000,current payload is not this translation
+story,7/S7012.DAT 0x489A8,|스톤 서클|링 위치 설정|소환수에 대해|다음 페이지,0.0500,current payload is not this translation
+story,7/S7012.DAT 0x48A24,|포코의 악기|투기장|키토우올|그만,0.0714,current payload is not this translation
+story,7/S7012.DAT 0x48A96,|스톤 서클|링 위치 설정|소환수|다음 페이지,0.1765,current payload is not this translation
+story,7/S7012.DAT 0x48B0E,|포코의 악기|투기장|키토우올|다음 페이지,0.0588,current payload is not this translation
+story,7/S7012.DAT 0x48BFA,초핀: 고겐 님이 동료가 된 뒤에 오르카스 언덕의 스톤 서클에 가 보셨습니까?,0.0625,current payload is not this translation
+story,7/S7021.DAT 0x48D26,출전할까요?|출전|그만,0.0000,current payload is not this translation
+story,7/S7022.DAT 0x489B6,1회전 준비?|예|아직입니다,0.2500,current payload is not this translation
+story,7/S7023.DAT 0x48A4E,2회전 준비?|예|아직입니다,0.2500,current payload is not this translation
+story,7/S7024.DAT 0x48AAE,준결승 준비?|예|아직입니다,0.1667,current payload is not this translation
+story,7/S7025.DAT 0x48AC2,결승 준비?|예|아직입니다,0.1818,current payload is not this translation
+story,7/S7026.DAT 0x48D28,오브전 준비?|예|아직입니다,0.1667,current payload is not this translation
+story,7/S7028.DAT 0x48028,출전할까요?|출전|그만,0.0000,current payload is not this translation
+story,7/S7028.DAT 0x48B70,정말 할까요?|승리|나중에,0.0909,current payload is not this translation
+story,C2/SC0B6.DAT 0x45CD4,승리 횟수 10회를 달성하신 분께는 조금 기쁜 상품이 있습니다. 힘내 주십시오.,0.0588,current payload is not this translation
+story,C2/SC0B6.DAT 0x463DC,1000회까지 앞으로  회입니다. 포기하지 말고 힘내 주십시오.,0.1786,current payload is not this translation
+story,D/SD031.DAT 0x459BC,"할아버지, 당신은 누구야?",0.0000,current payload is not this translation
+story,D/SD031.DAT 0x45AFE,그럼 당신이...?,0.0000,current payload is not this translation
+story,D/SD031.DAT 0x45B96,후후후후후후후후후후후후후.,0.0000,current payload is not this translation
+story,D/SD031.DAT 0x45CF4,5대 정령?,0.2000,current payload is not this translation
+story,D/SD031.DAT 0x45F8E,그건 어디서 온 것이려나?,0.0000,current payload is not this translation
+story,D/SD031.DAT 0x45FDA,아라라토스에서 왔어!,0.1000,current payload is not this translation
+story,D/SD031.DAT 0x46018,상당히 먼 곳에서 왔구나.,0.0000,current payload is not this translation
+story,D/SD031.DAT 0x46190,이 바보 놈!!,0.3333,current payload is not this translation
+story,D/SD031.DAT 0x46226,그럼 엄청난 마법을 쓸 수 있겠네.,0.0000,current payload is not this translation
+story,D/SD031.DAT 0x462BC,어딘가 믿음직하지 않네...,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x811C0,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81708,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81B5C,이가,0.5000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81B6C,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81B70,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81B74,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81C30,이가,0.5000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81C34,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81C90,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81CB0,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81CB4,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81CB8,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81CBC,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81CC0,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81CC4,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81CC8,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81CCC,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81CD0,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81CD4,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81CD8,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x81E90,사류족 마을,0.6000,current payload is not this translation
+ui,ui_full_v42 pointer=0x82170,,0.0000,current payload is not this translation
+ui,ui_full_v42 pointer=0x821F4,사류족 마을,0.6000,current payload is not this translation
+ui,ui_full_v42 pointer=0x82200,지하 바이오 연구실,0.1250,current payload is not this translation
+ui,ui_runtime_v43 pointer=0x8234C,"공격, 연결 열기",0.5714,current payload is not this translation
+ui,ui_runtime_v43 pointer=0x8235C,{결정버튼}결정 {취소버튼}돌아가기,0.3333,current payload is not this translation
+ui,v171_system pointer=0x823A4,승리!,0.0000,current payload is not this translation
+ui,v171_system pointer=0x82518,LV 상승!!,0.3333,current payload is not this translation
+ui,v171_system pointer=0x82538,상승,0.0000,current payload is not this translation
+ui,v171_system pointer=0x8253C,점프,0.0000,current payload is not this translation
+ui,v171_system pointer=0x82540,던지기,0.0000,current payload is not this translation
+ui,v171_system pointer=0x82548,반격,0.0000,current payload is not this translation
+ui,v171_system pointer=0x8254C,LV 상승,0.0000,current payload is not this translation
+ui,v171_system pointer=0x825E8,사용,0.0000,current payload is not this translation
+ui,v171_system pointer=0x825EC,사용 안 함,0.2500,current payload is not this translation
+ui,ui_runtime_v43 pointer=0x82954,자폭,0.0000,current payload is not this translation
+ui,ui_runtime_v43 pointer=0x82974,부활,0.0000,current payload is not this translation
+ui,v171_system pointer=0x82990,초음파,0.0000,current payload is not this translation
+ui,v171_system pointer=0x829A0,강타,0.0000,current payload is not this translation
+ui,ui_runtime_v43 pointer=0x829C4,헤모지,0.0000,current payload is not this translation
+ui,ui_runtime_v43 pointer=0x82A0C,부활,0.0000,current payload is not this translation
+ui,v171_system pointer=0x82A6C,불러내기,0.0000,current payload is not this translation

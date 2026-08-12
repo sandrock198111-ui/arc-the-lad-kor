@@ -1,0 +1,18 @@
+L no-frame-upload diagnostic
+
+base    DIAG_exe_nohook.zip
+output  DIAG_L_no_frame_upload_AF51D2E7.zip
+sha256  AF51D2E7E827A47329F56D9F6B81D07AA2127FF3E4E8993690A4FB8F5787E5AE
+
+one instruction restored at file 0x1CAC / RAM 0x8011C4AC
+  0C06881D  jal 0x801A2074
+  0C047205  jal 0x8011C814
+changed bytes  3, all inside that complete four-byte instruction
+text renderer  original (inherited from H_nohook)
+startup copy  v151 unchanged
+heap boundary v151 unchanged
+COMM/DAT       supplied by the original control-disc tree
+
+runtime decision
+  clean: fixed per-frame VRAM uploads caused the monster corruption
+  corrupt: startup/reserved-RAM changes remain causal candidates

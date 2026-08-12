@@ -1,0 +1,60 @@
+diff --git a/02_scripts/build_arc1_v153_dynamic_cache.py b/02_scripts/build_arc1_v153_dynamic_cache.py
+--- a/02_scripts/build_arc1_v153_dynamic_cache.py
++++ b/02_scripts/build_arc1_v153_dynamic_cache.py
+@@ -368,6 +368,21 @@ def put_plane(font: bytearray, index: int, bits: tuple[int, ...]) -> None:
+             font[at] = (font[at] & ~(0xF << shift)) | (nibble << shift)
+ 
+ 
++def plain_bitmap(font: bytes | bytearray, index: int) -> tuple[int, ...]:
++    """Read one low-page 12x12 bitplane without any legacy P6 remapping."""
++    row, remainder = divmod(index, IPR)
++    column, plane = divmod(remainder, PLANES)
++    if row >= 21:
++        raise ValueError(f"low-page index outside COMM.IMG grid: {index}")
++    bits = []
++    for y in range(CELL):
++        for x in range(CELL):
++            px, py = column * CELL + x, row * CELL + y
++            at, shift = py * 0x380 + px // 2, (0 if px % 2 == 0 else 4)
++            bits.append(((font[at] >> shift) & 0xF) >> plane & 1)
++    return tuple(bits)
++
++
+ def main() -> None:
+@@ -382,6 +397,7 @@ def main() -> None:
+         infos = archive.infolist()
+         members = {info.filename: archive.read(info.filename) for info in infos}
++    base_members = dict(members)
+     with ZipFile(ORIGINAL) as archive:
+@@ -429,7 +445,7 @@ def main() -> None:
+         raise SystemExit("COMM.IMG changed outside the 21-column font grid")
+     for char, index in static_index.items():
+-        if shapes.get(bitmap(base_exe, bytes(font), index)) != char:
++        if shapes.get(plain_bitmap(font, index)) != char:
+             raise SystemExit(f"static glyph readback failed: {char!r} at {index}")
+@@ -576,7 +592,7 @@ def main() -> None:
+     def new_shape(token: bytes) -> tuple[int, ...] | None:
+         if len(token) == 1:
+             index = token[0] - 1
+-            return bitmap(base_exe, bytes(font), index)
++            return plain_bitmap(font, index)
+@@ -594,9 +610,9 @@ def main() -> None:
+                     for y in range(CELL) for x in range(CELL)
+                 )
+-            return bitmap(base_exe, bytes(font), entry)
++            return plain_bitmap(font, entry)
+         index = glyph_index(token, ())
+-        return bitmap(base_exe, bytes(font), index) if index is not None else None
++        return plain_bitmap(font, index) if index is not None and index < 21 * IPR else None
+@@ -610,7 +626,7 @@ def main() -> None:
+                 bits = new_shape(token)
+                 char = shapes.get(bits) if bits else None
+-                if char and any("媛" <= c <= "?? for c in char):
++                if char and any("\uac00" <= c <= "\ud7a3" for c in char):
+                     verified_tokens += 1
+@@ -638,8 +654,7 @@ def main() -> None:
+ 
+     changed_members = sorted(name for name in members
+-                             if name not in {PSX, COMM} and members[name] !=
+-                             ZipFile(BASE_ZIP).read(name))
++                             if name not in {PSX, COMM} and members[name] != base_members[name])

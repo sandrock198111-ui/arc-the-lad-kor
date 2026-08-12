@@ -1,0 +1,34 @@
+v166 cache capacity and item-description lifetime audit
+patch=arc1_v166_persistent_ot_guard_fullcell_8EB4F3A4.zip
+sha256=8EB4F3A4F9031455D07F285456CF0859B6CD848399FB53E55E10FF9D8E2BD930
+
+v166_lineage=10/10
+owner_shape_matches=234/234
+active_slots_by_state=12,11,2,8,0,0,0,2,4,5
+active_slots_max=12
+captured_full_24_slot_masks=0
+item_scene_stale_object_states=4/6 (slots 5..10)
+
+stock_control_states=133
+stock_states_touching_24_slot_rect=0
+stock_states_touching_28_slot_rect=0
+stock_states_touching_32_slot_rect=0
+
+exact packed-resident projections
+  slots=24 group=4 checkpoints=186B owners=48B free=24B VRAM=x961..978,y480..491
+  slots=28 group=4 checkpoints=186B owners=56B free=16B VRAM=x961..981,y480..491
+  slots=32 group=4 checkpoints=186B owners=64B free=8B VRAM=x961..984,y480..491
+  slots=24 group=8 checkpoints=94B owners=48B free=116B VRAM=x961..978,y480..491
+  slots=28 group=8 checkpoints=94B owners=56B free=108B VRAM=x961..981,y480..491
+  slots=32 group=8 checkpoints=94B owners=64B free=100B VRAM=x961..984,y480..491
+  slots=24 group=16 checkpoints=48B owners=48B free=162B VRAM=x961..978,y480..491
+  slots=28 group=16 checkpoints=48B owners=56B free=154B VRAM=x961..981,y480..491
+  slots=32 group=16 checkpoints=48B owners=64B free=146B VRAM=x961..984,y480..491
+
+measured conclusion
+  A full owner table is history, not simultaneous pressure.
+  None of the ten captures has a full 24-bit active mask; the maximum is 12.
+  The item description object is stale while its cache planes still exactly match
+  their new owners.  This is direct owner-lifetime evidence, not fail-closed evidence.
+  28 and 32 slots fit the current reservation without recompressing data, but merely
+  delay the stale-object reuse and do not prove a fix for the observed defect.

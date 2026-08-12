@@ -1,0 +1,36 @@
+diff --git a/02_scripts/build_arc1_v153_dynamic_cache.py b/02_scripts/build_arc1_v153_dynamic_cache.py
+--- a/02_scripts/build_arc1_v153_dynamic_cache.py
++++ b/02_scripts/build_arc1_v153_dynamic_cache.py
+@@ -593,22 +593,22 @@
+     def new_shape(token: bytes) -> tuple[int, ...] | None:
+         if len(token) == 1:
+             index = token[0] - 1
+-            return bitmap(base_exe, bytes(font), index)
++            return plain_bitmap(font, index)
+         if token[0] in (0xE9, 0xEA):
+             slot = (token[0] - 0xE9) * 254 + token[1] - 1
+             if not 0 <= slot < LOOKUP_N:
+                 return None
+             entry = new_lut[slot]
+             if entry & 0x8000:
+                 source = entry & 0x7FFF
+                 if source not in source_char:
+                     return None
+                 rows = glyph_blob[source * CELL:(source + 1) * CELL]
+                 return tuple(
+                     1 if row_dictionary_values[rows[y]] & (1 << (CELL - 1 - x)) else 0
+                     for y in range(CELL) for x in range(CELL)
+                 )
+-            return bitmap(base_exe, bytes(font), entry)
++            return plain_bitmap(font, entry)
+         index = glyph_index(token, ())
+-        return bitmap(base_exe, bytes(font), index) if index is not None else None
++        return plain_bitmap(font, index) if index is not None and index < 21 * IPR else None
+ 
+@@ -654,5 +654,4 @@
+ 
+     changed_members = sorted(name for name in members
+-                             if name not in {PSX, COMM} and members[name] !=
+-                             ZipFile(BASE_ZIP).read(name))
++                             if name not in {PSX, COMM} and members[name] != base_members[name])
+     ANALYSIS.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,26 @@
+v153 width-safe dynamic-cache assignment
+unique_hangul_shapes=699
+static_shapes=492
+dynamic_shapes=207
+one_byte_shapes=115
+mixed_width_shapes=109
+two_byte_aliases=316
+cache_slots=20
+cache_physical_cells=5
+max_dynamic_in_one_unit=4
+token_rewrites=18145
+protected_nonhangul_indices=621
+protected_nonhangul_virtual_slots=5
+protected_virtual_relocations=5
+safe_direct_pool=532
+row_dictionary_entries=143
+row_dictionary_bytes=286
+runtime_lookup_entries=409
+dynamic_glyph_rows_bytes=2484
+lookup_bytes=818
+resident_data_bytes_before_code=2938
+resident_budget=5356
+resident_bytes_left_for_code=2418
+top_dynamic_working_sets=4:slot:9/S9051.DAT:2, 4:body:F/SF0E1.DAT:0x47A9E, 4:body:8/S8061.DAT:0x47FC8, 4:body:7/S7011.DAT:0x482E4, 4:body:21/S2045.DAT:0x47F94, 3:slot:8/S8021.DAT:5, 3:slot:8/S8013.DAT:20, 3:slot:8/S8013.DAT:16, 3:slot:8/S8013.DAT:12, 3:slot:7/S7012.DAT:35
+
+No game member was modified.

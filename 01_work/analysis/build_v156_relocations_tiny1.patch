@@ -1,0 +1,18 @@
+diff --git a/02_scripts/build_arc1_v155_dynamic_cache.py b/02_scripts/build_arc1_v155_dynamic_cache.py
+--- a/02_scripts/build_arc1_v155_dynamic_cache.py
++++ b/02_scripts/build_arc1_v155_dynamic_cache.py
+@@ -41,5 +41,6 @@
+ PLAN = ROOT / "01_work/analysis/dynamic_cache_v153_widthsafe"
+ ASSIGNMENTS = PLAN / "glyph_assignments.csv"
+ CACHE_SLOTS = PLAN / "cache_slots.csv"
++PROTECTED_RELOCATIONS = PLAN / "protected_virtual_relocations.csv"
+ PLANNED_LOOKUP = PLAN / "lookup_table.bin"
+ PLANNED_DICTIONARY = PLAN / "row_dictionary.bin"
+@@ -47,5 +48,5 @@
+ 
+ OUT_DIR = ROOT / "03_output"
+-OUT_STEM = "arc1_v155_dynamic_cache"
+-ANALYSIS = ROOT / "01_work/analysis/arc1_v155_dynamic_cache"
++OUT_STEM = "arc1_v156_dynamic_cache"
++ANALYSIS = ROOT / "01_work/analysis/arc1_v156_dynamic_cache"
+ REPORT = ANALYSIS / "build_report.txt"

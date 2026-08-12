@@ -1,0 +1,30 @@
+diff --git a/02_scripts/build_arc1_v155_dynamic_cache.py b/02_scripts/build_arc1_v155_dynamic_cache.py
+--- a/02_scripts/build_arc1_v155_dynamic_cache.py
++++ b/02_scripts/build_arc1_v155_dynamic_cache.py
+@@ -1,3 +1,3 @@
+-"""v155: replace four fixed VRAM strips with a 20-slot on-demand glyph cache.
++"""v156: replace four fixed VRAM strips with a 20-slot on-demand glyph cache.
+ 
+ The cache uses exact completed 12x12 bitmaps.  It is not a compositional font.  Every
+@@ -552,4 +552,10 @@
+     lookup_blob = PLANNED_LOOKUP.read_bytes()
+     if len(lookup_blob) != LOOKUP_N * 2:
+         raise SystemExit("planned lookup size differs")
++    planned_lookup = struct.unpack(f"<{LOOKUP_N}H", lookup_blob)
++    for relocation in relocation_rows:
++        slot = int(relocation["virtual_slot"])
++        destination_index = int(relocation["destination_index"])
++        if planned_lookup[slot] != destination_index:
++            raise SystemExit(f"protected lookup relocation differs at slot {slot}")
+     exe[file_at(LOOKUP_RAM):file_at(LOOKUP_RAM) + len(lookup_blob)] = lookup_blob
+@@ -689,4 +695,4 @@
+     lines = [
+-        "v155 on-demand 20-slot completed-glyph cache",
++        "v156 on-demand 20-slot completed-glyph cache",
+         "",
+         f"base    {BASE_ZIP.name}",
+@@ -699,3 +705,4 @@
+         f"static glyphs  {len(static_index)}",
+         f"dynamic glyphs {len(source_char)}",
++        f"protected UI glyph relocations {len(relocation_rows)}",
+         f"cache slots    {CACHE_N} in {len({(int(r['row']), int(r['column'])) for r in cache_rows})} cells",

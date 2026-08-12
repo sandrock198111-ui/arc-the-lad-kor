@@ -1,0 +1,29 @@
+diff --git a/02_scripts/plan_dynamic_cache_v153_widthsafe.py b/02_scripts/plan_dynamic_cache_v153_widthsafe.py
+--- a/02_scripts/plan_dynamic_cache_v153_widthsafe.py
++++ b/02_scripts/plan_dynamic_cache_v153_widthsafe.py
+@@ -166,4 +166,4 @@
+-    # Three live UI glyphs in v151 still point into the removed high-page strips.
+-    # Relocate those exact completed bitmaps to unused low-page planes.  Protected
+-    # entries already in the low page stay byte-identical.
++    # Relocate every protected virtual glyph whose v151 bitmap would be lost when the
++    # COMM.IMG grid is restored. This covers both former high-page glyphs and custom
++    # low-page UI glyphs absent from the untouched disc.
+     free_protected = sorted(
+@@ -173,9 +173,9 @@
+     protected_relocations = []
+     for slot in sorted(protected_virtual):
+         source_index = lut[slot]
+-        if source_index < IPR * (256 // CELL):
+-            continue
+         bits = bitmap(exe, font, source_index)
+         if not bits or not any(bits):
+             raise SystemExit(f"protected slot {slot} has no relocatable bitmap")
++        if bits == original_bitmap(original_font, source_index):
++            continue
+         if not free_protected:
+@@ -311,4 +311,4 @@
+         f"protected_nonhangul_indices={len(protected_indices)}",
+         f"protected_nonhangul_virtual_slots={len(protected_virtual)}",
+-        f"protected_highpage_relocations={len(protected_relocations)}",
++        f"protected_virtual_relocations={len(protected_relocations)}",
+         f"safe_direct_pool={len(safe_pool)}",

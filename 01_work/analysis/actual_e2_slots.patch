@@ -1,0 +1,49 @@
+diff --git a/02_scripts/audit_dynamic_cache_requirements.py b/02_scripts/audit_dynamic_cache_requirements.py
+--- a/02_scripts/audit_dynamic_cache_requirements.py
++++ b/02_scripts/audit_dynamic_cache_requirements.py
+@@ -28,4 +28,3 @@
+ ORIGINAL = ROOT / "00_original/arc.zip"
+ ORIGINAL_CSV = ROOT / "05_docs/script_original_full.csv"
+-INSERTION_MANIFEST = ROOT / "05_docs/bulk_insertion_manifest.csv"
+ OUT = ROOT / "01_work/analysis/dynamic_cache_design"
+@@ -69,12 +68,24 @@
+-def active_slots() -> dict[str, tuple[int, ...]]:
+-    """Return only slots explicitly assigned by the insertion manifest."""
++def slot_from_disk_id(value: int) -> int | None:
++    if 0x81 <= value <= 0xA8:
++        return value - 0x81
++    if 0xAA <= value <= 0xD0:
++        return value - 0x82
++    return None
++
++
++def active_slots(members: dict[str, bytes], ranges: list[tuple[str, int, int]]) -> dict[str, tuple[int, ...]]:
++    """Derive active external slots from the E2 pointers actually present in a build."""
+     by_file: dict[str, set[int]] = defaultdict(set)
+-    with INSERTION_MANIFEST.open(encoding="utf-8-sig", newline="") as handle:
+-        for row in csv.DictReader(handle):
+-            if row["mode"] != "e2":
+-                continue
+-            name, slot = row["file"], int(row["slot"])
+-            if slot in by_file[name]:
+-                raise ValueError(f"duplicate assigned slot: {name}:{slot}")
+-            by_file[name].add(slot)
++    for name, offset, _ in ranges:
++        if name not in members or offset + 2 > len(members[name]):
++            continue
++        data = members[name][offset:offset + 2]
++        if len(data) < 2 or data[0] != 0xE2:
++            continue
++        slot = slot_from_disk_id(data[1])
++        if slot is None:
++            raise ValueError(f"invalid E2 disk id at {name}:0x{offset:X}")
++        if slot in by_file[name]:
++            raise ValueError(f"duplicate active slot: {name}:{slot}")
++        by_file[name].add(slot)
+     return {name: tuple(sorted(slots)) for name, slots in by_file.items()}
+@@ -87,5 +98,5 @@
+             yield f"body:{name}:0x{offset:X}", members[name][offset:offset + size]
+ 
+-    for name, slots in active_slots().items():
++    for name, slots in active_slots(members, ranges).items():
+         if name not in members:

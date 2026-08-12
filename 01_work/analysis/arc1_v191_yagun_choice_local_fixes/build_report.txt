@@ -1,0 +1,34 @@
+v191 local Yagun register and Choppin-choice repair
+base=arc1_v190_dynamic_owner_repair_4AC51D4F.zip
+base_sha256=4AC51D4F38F38B65782DBD5AAE5A7DA03369A57D6E7DBF3F437E4EDB29556619
+output=arc1_v191_yagun_choice_local_fixes_682EC28A.zip
+sha256=682EC28A565FAD7E66C4D70A79D66B6F63C227FA079047C9903CB1B808325690
+Yagun_direct_lines_audited=26
+Yagun_lines_changed=4
+31/S3031.DAT:slot37 -> 야군: 하지만 그건 아이들에게는 무리입니다. 너무 위험합니다.
+31/S3031.DAT:slot40 -> 야군: 최근에는 이 근처에도 몬스터가 나타나고 있습니다.
+31/S3032.DAT:slot7 -> 야군: 다만 저곳은 우리도 애를 먹고 있는 곳입니다.
+31/S3032.DAT:slot6 -> 야군: 만일 무슨 일이 있어도 우리는 책임을 지지 않습니다.
+choice_bodies_checked=357
+choice_bodies_changed=2
+choice_other_bodies_byte_identical=355/355 PASS
+S3012_choice_widths=[216, 36, 108]
+S2042_choice_widths=[144, 48, 66]
+choice_E5_positions=27,38 unchanged
+choice_option_tail_from_+25=byte-identical PASS
+PSX.EXE=v190 byte-identical PASS
+COMM.IMG=v190 byte-identical PASS
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+resident_used=5356/5356
+resident_free=0
+heap_boundary=0x801FF8B0 unchanged
+startup_copy=5356 unchanged
+changed_members=21/S2042.DAT,31/S3012.DAT,31/S3031.DAT,31/S3032.DAT
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+rollback=v190

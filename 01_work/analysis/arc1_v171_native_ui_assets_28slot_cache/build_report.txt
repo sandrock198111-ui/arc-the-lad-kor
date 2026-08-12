@@ -1,0 +1,75 @@
+v171 native UI asset recovery and 28-slot cache
+
+base=arc1_v170_restore_blank_space_filler_F8A67A67.zip
+base_sha256=F8A67A674A8E17F18C50DB7408FB3DCFD494FD9760C665D429CC11D36D9EF81B
+output=arc1_v171_native_ui_assets_28slot_cache_18E5C2DC.zip
+sha256=18E5C2DC2B84ECCD9A91E742983996EAB35E28F20BA86EB2A0124F497424E8AC
+changed_members=PSX.EXE COMM.IMG
+changed_other_members=0
+
+native_UI_complete_cells_restored=26
+v151_button_duplicate_cells_restored=5
+v151_punctuation_planes_restored=4
+v170_blank_0x9C_plane=preserved
+battle_damage_digit_source_V208_V220=untouched-code/original-pixels-restored
+system_fixed_strings_reencoded=123
+system_string_semantics=unchanged Korean manifest text
+external_system_fragments_preserved=16
+embedded_system_pointer_words_preserved=2/2 PASS
+pointer_safe_system_storage_bytes=1208
+
+dynamic_sources=462
+Huffman_readback=462/462 PASS
+direct_dynamic_indices=254/254 PASS
+lookup_readback=409/409 PASS
+cache_slots=28
+cache_cells=7
+cache_VRAM=x961..981,y480..491
+bounded_max_simultaneous_dynamic=26
+cache_fail_closed_at_29th_miss
+seventh_cell_sample=0 nonzero / 206 stock+v163 states
+
+resident_data_bytes=3912
+decoder 0x801FF30C / 568 bytes
+frame routine 0x801FF634 / 636 bytes
+decoder_bytes=568
+huffman_bytes=240
+frame_bytes=636
+resident_used=5356/5356
+resident_free=0
+heap_boundary=0x801FF8B0 unchanged
+startup_copy=5356 unchanged
+parser_helper=0x801A779C/88 bytes
+parser_helper_r3000_load_delay=PASS
+parser_helper_branch_delay=PASS
+lookup_helper=0x801A77F4/80 bytes
+lookup_helper_r3000_load_delay=PASS
+lookup_helper_branch_delay=PASS
+parser_first=0x801A7460/20 bytes
+parser_first_r3000_load_delay=PASS
+parser_first_branch_delay=PASS
+parser_second=0x801A748C/20 bytes
+parser_second_r3000_load_delay=PASS
+parser_second_branch_delay=PASS
+low_helper=0x801A2060/36 bytes
+low_helper_r3000_load_delay=PASS
+low_helper_branch_delay=PASS
+low_classifier=0x801A2084/36 bytes
+low_classifier_r3000_load_delay=PASS
+low_classifier_branch_delay=PASS
+decoder=0x801FF30C/568 bytes
+decoder_r3000_load_delay=PASS
+decoder_branch_delay=PASS
+huffman=0x801FF544/240 bytes
+huffman_r3000_load_delay=PASS
+huffman_branch_delay=PASS
+frame=0x801FF634/636 bytes
+frame_r3000_load_delay=PASS
+frame_branch_delay=PASS
+capstone_disassembly=PASS
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+runtime=PENDING user cold boot and slots 1..9
+promotion_to_bible=NO until runtime verification
+rollback=v170

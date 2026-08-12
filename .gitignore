@@ -89,3 +89,9 @@ Desktop.ini
 # 02_scripts/package_pristine_control.py cannot run without it.
 !01_work/arc1_original_layout.xml
 !01_work/arc1_v104_layout.xml
+
+# Game executables and their backups never belong in the repository, even when
+# an analysis folder is otherwise text-only.
+01_work/analysis/**/*.backup
+01_work/analysis/**/PSX.EXE*
+01_work/analysis/**/COMM.IMG*

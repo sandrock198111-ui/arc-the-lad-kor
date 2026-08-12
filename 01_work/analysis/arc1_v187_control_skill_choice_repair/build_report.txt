@@ -1,0 +1,30 @@
+v187 control, system text and choice repair
+base=arc1_v186_runtime_text_choice_fixes_0D144525.zip
+base_sha256=0D144525001BA1FE6284DE7D823D6C68FEC26AC733B51D69E9AFB9A679B67BB5
+output=arc1_v187_control_skill_choice_repair_292BF4BE.zip
+output_sha256=292BF4BE4283A121A9435D58781F89FB7E6847262A4660F3C8E7424CF4B1ABE8
+
+SD011
+  0x47B60: two text spans; original E4/E6 controls restored
+  0x47D58: 안심해. + second text span; original E4/E6 controls restored
+  0x47D78: 아크... visual bytes retained; final E4 97 restored
+  E2 completion targets=4/4 exact next original controls
+
+PSX.EXE
+  dynamic skill-name table=byte-identical to v186
+  learned-skill closer=closing bracket + existing 를 배웠다.
+  合体 empty pointer=합체
+  live string pool=0x828CC..0x828DC
+
+S1023
+  question=아버지 편지가 있는데 읽어볼래?
+  option 3=피해 줄이기 1 (written in place, padded to original E5)
+  widths={'question': [36, 186, 48, 48], 'help_page_1': [72, 102, 174], 'help_page_2': [204, 66]}
+  choice_marker_geometry=357/357 PASS
+
+decoder 0x801FF30C / 568 bytes
+frame routine 0x801FF634 / 636 bytes
+changed_members=1/S1023.DAT,D/SD011.DAT,PSX.EXE
+member_sizes=unchanged
+cold_boot=NOT RUN (user test required)
+rollback=v186

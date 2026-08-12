@@ -1,0 +1,36 @@
+Fail-closed dynamic-cache budget (analysis only)
+all_hangul_chars=699
+existing_dynamic_chars=207
+sampled_nontext_conflict_cells=82
+static_chars_in_conflict_cells=162
+fixed_code_and_metadata_bytes=1438
+
+[remove_sampled_conflicts]
+dynamic_chars=369
+row_dictionary_entries=162
+row_dictionary_status=PASS
+glyph_row_bytes=4428
+source_bytes=4752
+estimated_resident_bytes=6190
+estimated_game_heap_bytes=1022
+max_simultaneous_dynamic=22
+cache_capacity=20
+cache_capacity_status=FAIL
+top_units=22:slot:7/S7025.DAT:12 | 22:slot:5/S5041.DAT:0 | 22:slot:5/S5021.DAT:0 | 22:body:1/S1071.DAT:0x4798E | 21:slot:8/S8061.DAT:0 | 21:slot:8/S8011.DAT:0 | 21:body:32/S3061.DAT:0x48074 | 20:slot:8/S8041.DAT:0 | 20:slot:8/S8013.DAT:12 | 20:slot:7/S7012.DAT:19
+
+[all_hangul_dynamic]
+dynamic_chars=699
+row_dictionary_entries=182
+row_dictionary_status=PASS
+glyph_row_bytes=8388
+source_bytes=8752
+estimated_resident_bytes=10190
+estimated_game_heap_bytes=-2978
+max_simultaneous_dynamic=39
+cache_capacity=20
+cache_capacity_status=FAIL
+top_units=39:slot:31/S3012.DAT:14 | 39:slot:21/S2042.DAT:2 | 39:slot:21/S2041.DAT:19 | 38:slot:F/SF0E1.DAT:0 | 38:slot:8/S8013.DAT:15 | 38:slot:7/S7012.DAT:25 | 38:slot:6/S6014.DAT:25 | 38:slot:5/S5013.DAT:27 | 38:slot:32/S3065.DAT:0 | 38:slot:21/S2045.DAT:26
+
+These are exact bitmap/row and bounded-text working-set counts.
+The resident estimate keeps v163's fixed code/metadata constant; a future
+builder must recalculate exact addresses and must not reserve from this estimate.

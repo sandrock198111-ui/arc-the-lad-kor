@@ -1,0 +1,27 @@
+v170 restore blank 0x9C space filler
+
+base=arc1_v169_e1_control_glyph_dispatch_218D38D2.zip
+base_sha256=218D38D21FED1D20E79483D657ED2E31D86425DA644F88322461F18BC3C9D4B0
+control=arc1_v151_free_the_sprite_cell_A4358FEE.zip
+control_sha256=A4358FEE5FEA4964C9DD376B630894EB5EC133EFEEDD9E5E85BBC5FDD8CA1A46
+output=arc1_v170_restore_blank_space_filler_F8A67A67.zip
+sha256=F8A67A674A8E17F18C50DB7408FB3DCFD494FD9760C665D429CC11D36D9EF81B
+changed_members=COMM.IMG
+
+space_code=0x9C
+physical_index=155
+cell=row1,column17,plane3
+untouched_and_v169_set_pixels=29
+v151_set_pixels=0
+v170_set_pixels=0
+changed_COMM_bytes=26
+
+PSX.EXE=byte-identical_to_v169
+all_DAT=byte-identical_to_v169
+cache_geometry=byte-identical_to_v169
+all_other_COMM_planes=byte-identical_to_v169
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+runtime=PENDING user cold boot
+rollback=v169

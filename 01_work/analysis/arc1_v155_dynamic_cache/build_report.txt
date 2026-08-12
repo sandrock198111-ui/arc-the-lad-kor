@@ -1,0 +1,33 @@
+v155 on-demand 20-slot completed-glyph cache
+
+base    arc1_v151_free_the_sprite_cell_A4358FEE.zip
+        sha256 A4358FEE5FEA4964C9DD376B630894EB5EC133EFEEDD9E5E85BBC5FDD8CA1A46
+output  arc1_v155_dynamic_cache_5D9760F9.zip
+        sha256 5D9760F939FDB829E941052C3CF9502333E05C0144B6456B5CD3CC21F1BC62A8
+PSX.EXE 587776 bytes, unchanged
+reserved RAM 5356 bytes, unchanged; heap still 0x801FF8B0
+
+static glyphs  491
+dynamic glyphs 209
+cache slots    20 in 5 cells
+row dictionary 144 entries / 288 bytes
+glyph row ids  2508 bytes
+resident used  3864/5356 bytes
+decoder        0x801FEF58 / 320 bytes
+frame routine  0x801FF098 / 580 bytes
+text rewrites  26865
+verified Hangul tokens 22548
+changed DAT members 160
+
+restored
+  stock glyph index return at 0x8016B410
+  stock packet builder at 0x8016B5D8
+  stock single-page renderer at 0x8016B764
+  original COMM.IMG 21-column grid before writing safe static glyph planes
+
+removed
+  fixed per-frame strip A/B/C/D uploads
+  high-page two-pass renderer and strip-D remap
+
+static verification PASS; runtime verification PENDING
+rollback: v151

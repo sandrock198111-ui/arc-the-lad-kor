@@ -1,0 +1,37 @@
+v169 E1 control/glyph parser dispatch
+
+base=arc1_v168_item_description_slot_shift_fix_3B604507.zip
+base_sha256=3B6045078334ABCEC78D07A05F5B39C5368BB76D18A880878646279FF664A751
+output=arc1_v169_e1_control_glyph_dispatch_218D38D2.zip
+sha256=218D38D21FED1D20E79483D657ED2E31D86425DA644F88322461F18BC3C9D4B0
+changed_members=PSX.EXE,4/S4011.DAT
+
+root_cause=E1 BE..F0 Hangul intercepted as native E1 style command
+observed_effect=style byte E5/DF indexed beyond 16-entry CLUT table
+proven_colliding_Hangul=48
+proven_colliding_occurrences=1063
+glyph_interval=E1 BE..F0
+native_command_restored=4/S4011.DAT:0x485F6 E1 01
+
+parser_dispatch_address=0x801FF82C
+parser_dispatch_bytes=120/128
+removed_item_guard_call=0x801FF7DC
+removed_guard_reason=runtime-disproven stale object hypothesis
+main_OT_persistent_guard=v166 unchanged
+cache_slots=24 unchanged
+cache_VRAM=x961..978,y480..491 unchanged
+resident_reservation=5356 unchanged
+heap_boundary=0x801FF8B0 unchanged
+startup_copy=5356 unchanged
+PSX.EXE_size=unchanged
+
+parser_dispatch=0x801FF82C/120 bytes
+parser_dispatch_r3000_load_delay=PASS
+parser_dispatch_branch_delay=PASS
+collision_provenance=1063/1063 PASS
+native_control_restore=1/1 PASS
+closed_interval_dispatch=PASS
+declared_member_diff=PASS
+archive_roundtrip=PASS
+runtime=PENDING user cold boot
+rollback=v168

@@ -1,0 +1,18 @@
+DuckStation VRAM-reader origin audit
+status=PASS
+active_readers=9
+failures=0
+
+PASS  02_scripts/extract_savestate_vram.py  [defines locate_vram]
+PASS  02_scripts/extract_savestate_vram_by_font.py  [imports locate_vram]
+PASS  02_scripts/map_vram_occupancy_all_states.py  [imports locate_vram]
+PASS  02_scripts/identify_vram_occupancy_outliers.py  [uses map.locate -> locate_vram]
+PASS  02_scripts/verify_savestate_vram_origin.py  [imports locate_vram]
+PASS  02_scripts/analyze_arc1_v162_runtime.py  [imports locate_vram]
+PASS  02_scripts/analyze_arc1_v163_runtime.py  [imports locate_vram]
+PASS  02_scripts/verify_arc1_v162_strip_a_dynamic_cache.py  [imports locate_vram]
+PASS  02_scripts/audit_vram_page15_free_space.py  [uses extract_savestate_vram.load]
+
+Historical build scripts are intentionally outside this active-reader list.
+Exact .vram.bin consumers must validate a 1024x512x16-bit input but do not
+locate an origin themselves.

@@ -1,0 +1,46 @@
+diff --git a/02_scripts/verify_arc1_v156_dynamic_cache.py b/02_scripts/verify_arc1_v156_dynamic_cache.py
+--- a/02_scripts/verify_arc1_v156_dynamic_cache.py
++++ b/02_scripts/verify_arc1_v156_dynamic_cache.py
+@@ -15,6 +15,6 @@
+ 
+ from audit_dynamic_cache_requirements import (  # noqa: E402
+-    CACHE, bitmap, glyph_index, read_lut, source_ranges, text_units,
++    CACHE, active_slots, bitmap, glyph_index, read_lut, source_ranges, text_units,
+ )
+-from build_arc1_v156_dynamic_cache import (  # noqa: E402
++from build_arc1_v157_dynamic_cache import (  # noqa: E402
+     CACHE_N, CACHE_SLOTS, CELL, COMM, COPY_N, DECODER_ENTRY, FRAME_HOOK,
+@@ -29,6 +29,6 @@
+ BASE = ROOT / "03_output/arc1_v151_free_the_sprite_cell_A4358FEE.zip"
+-BUILD = ROOT / "03_output/arc1_v156_dynamic_cache_D5FB1ADC.zip"
+-BUILD_SHA = "D5FB1ADC09631E7B939014D1EAF16531D688656368F5C8EBD854A519B4CD3468"
++BUILD = ROOT / "03_output/arc1_v157_dynamic_cache_26B2B680.zip"
++BUILD_SHA = "26B2B680F3D071ADF17506A1B15884324A48A68EA63A9F464D502A60F882C299"
+ ORIGINAL = ROOT / "00_original/arc.zip"
+ ASSIGNMENTS = ROOT / "01_work/analysis/dynamic_cache_v153_widthsafe/glyph_assignments.csv"
+-REPORT = ROOT / "01_work/analysis/arc1_v156_dynamic_cache/independent_verification.txt"
++REPORT = ROOT / "01_work/analysis/arc1_v157_dynamic_cache/independent_verification.txt"
+@@ -54,4 +54,4 @@
+ def main() -> None:
+     if sha256(BUILD) != BUILD_SHA:
+-        raise SystemExit("v156 archive hash differs")
++        raise SystemExit("v157 archive hash differs")
+     base, current, pristine = archive(BASE), archive(BUILD), archive(ORIGINAL)
+@@ -186,9 +186,9 @@
+     names_with_ranges: set[str] = set()
+     for name, offset, size in ranges:
+         names_with_ranges.add(name)
+         allowed_by_file[name].update(range(offset, offset + size))
+-    for name in names_with_ranges:
+-        if name in base and len(base[name]) >= SLOT_BASE + SLOT_COUNT * SLOT_SIZE:
+-            for slot in range(SLOT_COUNT):
++    for name, slots in active_slots(base, ranges).items():
++        if name in base:
++            for slot in slots:
+                 at = SLOT_BASE + slot * SLOT_SIZE
+                 allowed_by_file[name].update(range(at, at + SLOT_SIZE))
+@@ -278,3 +278,3 @@
+     lines = [
+-        "v156 independent static verification: PASS",
++        "v157 independent static verification: PASS",
+         f"archive_sha256={BUILD_SHA}",

@@ -1,0 +1,35 @@
+diff --git a/02_scripts/audit_dynamic_cache_requirements.py b/02_scripts/audit_dynamic_cache_requirements.py
+--- a/02_scripts/audit_dynamic_cache_requirements.py
++++ b/02_scripts/audit_dynamic_cache_requirements.py
+@@ -139,6 +139,7 @@ def main() -> None:
+ 
+     occurrences: Counter[int] = Counter()
+     spellings: dict[int, set[str]] = defaultdict(set)
++    all_current_indices: set[int] = set()
+     unit_sets: list[tuple[int, str]] = []
+     for label, payload in text_units(current, ranges):
+         chars: set[str] = set()
+@@ -146,6 +147,7 @@ def main() -> None:
+             index = glyph_index(token, lut)
+             if index is None:
+                 continue
++            all_current_indices.add(index)
+             bits = bitmap(exe, font, index)
+             char = shapes.get(bits) if bits else None
+             if not char or not any("가" <= c <= "힣" for c in char):
+@@ -201,7 +203,7 @@ def main() -> None:
+     for row in range(256 // CELL):
+         for column in range(21):
+             indices = [row * IPR + column * PLANES + plane for plane in range(PLANES)]
+-            if any(index in current_used for index in indices):
++            if any(index in all_current_indices for index in indices):
+                 continue
+             nonblank = []
+             text_used = []
+@@ -243,6 +245,7 @@ def main() -> None:
+         f"build={BUILD.name}",
+         f"build_sha256={actual_sha}",
+         f"unique_rendered_hangul_indices={len(current_used)}",
++        f"all_current_text_indices={len(all_current_indices)}",
+         f"unique_rendered_hangul_shapes={len({row['char'] for row in inventory})}",
+         *(f"location_{name}={by_location[name]}" for name in sorted(by_location)),

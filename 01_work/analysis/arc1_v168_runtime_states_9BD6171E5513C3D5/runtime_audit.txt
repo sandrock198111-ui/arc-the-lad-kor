@@ -1,0 +1,28 @@
+v168 runtime cache/object audit
+patch=arc1_v168_item_description_slot_shift_fix_3B604507.zip
+sha256=3B6045078334ABCEC78D07A05F5B39C5368BB76D18A880878646279FF664A751
+savestates=HASH-9BD6171E5513C3D5_1..7.sav
+
+v168_lineage=0/7
+owner_shape_matches=162/162
+active_slots_by_state=12,22,8,5,4,2,0
+active_slots_max=22
+captured_full_24_slot_masks=0
+matched_text_objects=4
+stale_text_objects=2
+stale_headers=0x801F031C:2state
+
+state detail
+  slot1: active=12 OT=0x03FE15 item=0x03E014 missing=0x000000 stale_objects=0 stale_packets=0
+  slot2: active=22 OT=0xFE7FFF item=0x3C0000 missing=0x000000 stale_objects=1 stale_packets=4
+  slot3: active=8 OT=0x900FC0 item=0x000480 missing=0x000000 stale_objects=0 stale_packets=0
+  slot4: active=5 OT=0x80000F item=0x800008 missing=0x000000 stale_objects=0 stale_packets=0
+  slot5: active=4 OT=0x000461 item=0x0000E0 missing=0x000080 stale_objects=1 stale_packets=3
+  slot6: active=2 OT=0x000402 item=0x2000CC missing=0x2000CC stale_objects=0 stale_packets=0
+  slot7: active=0 OT=0x000000 item=0x000000 missing=0x000000 stale_objects=0 stale_packets=0
+
+measured boundary
+  lineage, current owner glyph shapes, active pressure, final OT,
+  item-description metadata and all structurally matched text objects were audited.
+  A stale object outside 0x801F031C means the v168 one-object guard is too narrow;
+  it does not mean the 24-slot cache is full.

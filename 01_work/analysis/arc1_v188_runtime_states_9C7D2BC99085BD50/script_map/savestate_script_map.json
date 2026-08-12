@@ -1,0 +1,168 @@
+[
+  {
+    "state": "01_work\\analysis\\arc1_v188_runtime_states_9C7D2BC99085BD50\\HASH-9C7D2BC99085BD50_2.ram.bin",
+    "best_match": null,
+    "top_matches": [],
+    "dialogues": []
+  },
+  {
+    "state": "01_work\\analysis\\arc1_v188_runtime_states_9C7D2BC99085BD50\\HASH-9C7D2BC99085BD50_3.ram.bin",
+    "best_match": null,
+    "top_matches": [],
+    "dialogues": []
+  },
+  {
+    "state": "01_work\\analysis\\arc1_v188_runtime_states_9C7D2BC99085BD50\\HASH-9C7D2BC99085BD50_4.ram.bin",
+    "best_match": null,
+    "top_matches": [],
+    "dialogues": [
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117034",
+        "ram_payload_start": "0x117036",
+        "file_payload_start": "0x47836",
+        "end_exclusive": "0x47869",
+        "length": 51,
+        "prefix_kind": "none",
+        "payload_hex": "e2 92 e6 01 d4 d5 dc 9c 8f 94 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11713E",
+        "ram_payload_start": "0x117142",
+        "file_payload_start": "0x47942",
+        "end_exclusive": "0x4794F",
+        "length": 13,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 b7 3a 2d 24 dd 58 dd 65 3e 32 3d 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1171DA",
+        "ram_payload_start": "0x1171DC",
+        "file_payload_start": "0x479DC",
+        "end_exclusive": "0x479F5",
+        "length": 25,
+        "prefix_kind": "none",
+        "payload_hex": "e2 ab e6 01 d4 d5 dc 9c 8f 94 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11722E",
+        "ram_payload_start": "0x117232",
+        "file_payload_start": "0x47A32",
+        "end_exclusive": "0x47A37",
+        "length": 5,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 97 2c 2c 2c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117356",
+        "ram_payload_start": "0x117358",
+        "file_payload_start": "0x47B58",
+        "end_exclusive": "0x47B68",
+        "length": 16,
+        "prefix_kind": "none",
+        "payload_hex": "e2 b3 e6 01 d4 d5 dc 9c 8f 94 9c 9c 9c 9c 9c 9c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11739C",
+        "ram_payload_start": "0x11739E",
+        "file_payload_start": "0x47B9E",
+        "end_exclusive": "0x47BAD",
+        "length": 15,
+        "prefix_kind": "none",
+        "payload_hex": "e2 ae e6 01 8f 94 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1173E2",
+        "ram_payload_start": "0x1173E4",
+        "file_payload_start": "0x47BE4",
+        "end_exclusive": "0x47BF7",
+        "length": 19,
+        "prefix_kind": "none",
+        "payload_hex": "e2 ad e6 01 d4 d5 dc 9c 8f 94 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      }
+    ]
+  },
+  {
+    "state": "01_work\\analysis\\arc1_v188_runtime_states_9C7D2BC99085BD50\\HASH-9C7D2BC99085BD50_5.ram.bin",
+    "best_match": null,
+    "top_matches": [],
+    "dialogues": [
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117034",
+        "ram_payload_start": "0x117036",
+        "file_payload_start": "0x47836",
+        "end_exclusive": "0x47869",
+        "length": 51,
+        "prefix_kind": "none",
+        "payload_hex": "e2 92 e6 01 d4 d5 dc 9c 8f 94 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11713E",
+        "ram_payload_start": "0x117142",
+        "file_payload_start": "0x47942",
+        "end_exclusive": "0x4794F",
+        "length": 13,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 b7 3a 2d 24 dd 58 dd 65 3e 32 3d 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1171DA",
+        "ram_payload_start": "0x1171DC",
+        "file_payload_start": "0x479DC",
+        "end_exclusive": "0x479F5",
+        "length": 25,
+        "prefix_kind": "none",
+        "payload_hex": "e2 ab e6 01 d4 d5 dc 9c 8f 94 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11722E",
+        "ram_payload_start": "0x117232",
+        "file_payload_start": "0x47A32",
+        "end_exclusive": "0x47A37",
+        "length": 5,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 97 2c 2c 2c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117356",
+        "ram_payload_start": "0x117358",
+        "file_payload_start": "0x47B58",
+        "end_exclusive": "0x47B68",
+        "length": 16,
+        "prefix_kind": "none",
+        "payload_hex": "e2 b3 e6 01 d4 d5 dc 9c 8f 94 9c 9c 9c 9c 9c 9c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11739C",
+        "ram_payload_start": "0x11739E",
+        "file_payload_start": "0x47B9E",
+        "end_exclusive": "0x47BAD",
+        "length": 15,
+        "prefix_kind": "none",
+        "payload_hex": "e2 ae e6 01 8f 94 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1173E2",
+        "ram_payload_start": "0x1173E4",
+        "file_payload_start": "0x47BE4",
+        "end_exclusive": "0x47BF7",
+        "length": 19,
+        "prefix_kind": "none",
+        "payload_hex": "e2 ad e6 01 d4 d5 dc 9c 8f 94 9c 9c 9c 9c 9c 9c 9c 9c 9c"
+      }
+    ]
+  }
+]

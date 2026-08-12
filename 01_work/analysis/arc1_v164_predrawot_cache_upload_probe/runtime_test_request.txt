@@ -1,0 +1,12 @@
+v164 runtime test request
+patch=arc1_v164_predrawot_cache_upload_probe_4E714493.zip
+sha256=4E71449316530FF19F44F9C98E9DE62780EBE079548A12E25E7A30F0E80ED33C
+baseline=v163; only three call words differ
+setup=build a fresh image, cold boot, load the memory-card save
+do_not=load a v163-or-earlier savestate directly
+checks=BIOS/title; Korean text; load cursor/icons; battle monsters; 잎/택/랜; progression
+pass=all checks clean and progression continues
+boot_fail=pre-DrawOT LoadImage timing is unsafe; reject this hook
+hangul_missing=active-mask production precedes/follows a different boundary
+graphics_damage=cache destination or static placement remains in conflict
+status=diagnostic only; even PASS does not approve v163 static cells

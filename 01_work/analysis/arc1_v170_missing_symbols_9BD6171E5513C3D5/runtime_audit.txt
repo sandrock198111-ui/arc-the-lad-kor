@@ -1,0 +1,27 @@
+v170 missing-symbol runtime audit
+patch=arc1_v170_restore_blank_space_filler_F8A67A67.zip
+sha256=F8A67A674A8E17F18C50DB7408FB3DCFD494FD9760C665D429CC11D36D9EF81B
+savestates=HASH-9BD6171E5513C3D5_1..9.sav
+
+v170_lineage=9/9
+sprite_packets=271
+active_packets_lost_from_v151=38
+active_blank_font_packets=93
+distinct_lost_screen_requests=38
+
+state_detail
+  slot1 load menu: missing L: sprites=63 lost=0 blank_font=12
+  slot2 dialogue: missing colon: sprites=38 lost=0 blank_font=10
+  slot3 dialogue: missing question mark: sprites=39 lost=2 blank_font=12
+  slot4 battle dialogue: sprites=27 lost=2 blank_font=9
+  slot5 battle help icons A: sprites=26 lost=1 blank_font=6
+  slot6 battle help icons B: sprites=29 lost=2 blank_font=7
+  slot7 damage overlay A: sprites=0 lost=0 blank_font=0
+  slot8 damage overlay B: sprites=0 lost=0 blank_font=0
+  slot9 battle configuration text: sprites=49 lost=31 blank_font=37
+
+punctuation_inventory
+  : DF 80 index=857: v170=9 v151=9 original=9
+  ? E0 47 index=1055: v170=0 v151=13 original=0
+  . E0 60 index=1080: v170=0 v151=2 original=0
+  , DF E2 index=955: v170=12 v151=2 original=12

@@ -1,0 +1,30 @@
+801FF82C  addiu    $t0, $v0, -0xe1
+801FF830  bnez     $t0, 0x801ff85c
+801FF834  lw       $t0, 0x14($s0)
+801FF838  nop      
+801FF83C  lbu      $t1, 1($t0)
+801FF840  nop      
+801FF844  addiu    $t1, $t1, -0xbe
+801FF848  sltiu    $t0, $t1, 0x33
+801FF84C  bnez     $t0, 0x801ff88c
+801FF850  nop      
+801FF854  b        0x801ff874
+801FF858  nop      
+801FF85C  addiu    $t0, $v0, -0xe9
+801FF860  sltiu    $t0, $t0, 2
+801FF864  bnez     $t0, 0x801ff88c
+801FF868  sltiu    $t0, $v0, 0xe1
+801FF86C  bnez     $t0, 0x801ff88c
+801FF870  nop      
+801FF874  bnez     $t9, 0x801ff884
+801FF878  nop      
+801FF87C  j        0x8016bb54
+801FF880  nop      
+801FF884  j        0x8016bb9c
+801FF888  nop      
+801FF88C  bnez     $t9, 0x801ff89c
+801FF890  nop      
+801FF894  j        0x8016bb6c
+801FF898  nop      
+801FF89C  j        0x8016bb80
+801FF8A0  nop      

@@ -1,0 +1,32 @@
+v169 E1 control/glyph parser dispatch verification
+
+patch=arc1_v169_e1_control_glyph_dispatch_218D38D2.zip
+sha256=218D38D21FED1D20E79483D657ED2E31D86425DA644F88322461F18BC3C9D4B0
+changed_members=PSX.EXE,4/S4011.DAT
+archive_member_order=PASS
+archive_member_lengths=PASS
+declared_byte_isolation=PASS
+
+proven_E1_glyphs=48
+proven_E1_glyph_occurrences=1063
+restored_native_E1_controls=1
+final_bounded_E1_tokens=1064
+final_E1_01_count=1
+final_E1_BE_F0_count=1063
+all_final_E1_positions_have_provenance=PASS
+
+helper_address=0x801FF82C
+helper_bytes=120/128
+helper_closed_interval_BE_F0=PASS
+helper_jump_targets=PASS
+helper_R3000_load_delay=PASS
+helper_branch_delay=PASS
+old_item_guard_call_removed=PASS
+v166_main_OT_guard_preserved=PASS
+runtime_lookup_409=byte-identical
+font_CLUT_table=byte-identical
+COMM.IMG=byte-identical
+RAM_VRAM_heap_geometry=byte-identical_to_v168
+
+result=PASS_STATIC
+runtime=PENDING user cold boot

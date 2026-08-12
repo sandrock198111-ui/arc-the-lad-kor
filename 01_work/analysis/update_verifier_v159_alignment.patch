@@ -1,0 +1,28 @@
+diff --git a/02_scripts/verify_arc1_v159_dynamic_cache.py b/02_scripts/verify_arc1_v159_dynamic_cache.py
+--- a/02_scripts/verify_arc1_v159_dynamic_cache.py
++++ b/02_scripts/verify_arc1_v159_dynamic_cache.py
+@@ -1 +1 @@
+-"""Independent static verifier for the v158 on-demand completed-glyph cache."""
++"""Independent static verifier for the v159 on-demand completed-glyph cache."""
+@@ -19 +19 @@
+-from build_arc1_v158_dynamic_cache import (  # noqa: E402
++from build_arc1_v159_dynamic_cache import (  # noqa: E402
+@@ -30,2 +30,2 @@
+-BUILD = ROOT / "03_output/arc1_v158_dynamic_cache_51FDCF67.zip"
+-BUILD_SHA = "51FDCF6785E522032F57CB1B043941B6B2F15D575F1FA564BCBE0D92D69ABE75"
++BUILD = ROOT / "03_output/arc1_v159_dynamic_cache_4E3F2466.zip"
++BUILD_SHA = "4E3F246614B46139EBD637AA576E19397493C421338B5F257D628BCF0AF7B4D7"
+@@ -34 +34 @@
+-REPORT = ROOT / "01_work/analysis/arc1_v158_dynamic_cache/independent_verification.txt"
++REPORT = ROOT / "01_work/analysis/arc1_v159_dynamic_cache/independent_verification.txt"
+@@ -56 +56 @@
+-        raise SystemExit("v158 archive hash differs")
++        raise SystemExit("v159 archive hash differs")
+@@ -229 +229,3 @@
+-    active = owners + CACHE_N * 2
++    active = (owners + CACHE_N * 2 + 3) & ~3
++    if active & 3:
++        raise SystemExit("active cache mask is not word-aligned")
+@@ -279 +281 @@
+-        "v158 independent static verification: PASS",
++        "v159 independent static verification: PASS",

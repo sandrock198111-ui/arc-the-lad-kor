@@ -1,0 +1,17 @@
+v163 text-CLUT high-page classifier
+
+base=arc1_v162_strip_a_dynamic_cache_1759E571.zip
+output=arc1_v163_text_clut_classifier_773E3B82.zip
+sha256=773E3B82B58FBE9C836C96F34EA03C122847EC8BBD691AE4FDCFBA00D778FE63
+changed_EXE_bytes=19
+changed_non_EXE_members=0
+classifier_runtime=0x801FF410
+classifier_bytes=36
+old_rule=V == 224
+new_rule=V == 224 and 0x7FC0 <= CLUT <= 0x7FCF
+font_CLUT_table_runtime_evidence=7FC0 7FC1 7FC2 7FC3 7FC4 7FC5 7FC6 7FC7 7FC8 7FC9 7FCA 7FCB 7FCC 7FCD 7FCE 7FCF
+font_CLUT_evidence=all six supplied v162 states; table is runtime data, not EXE data
+
+v162 cache decoder, bitmap writer, RAM shadow, upload and geometry unchanged
+runtime_verification=PENDING user cold boot
+rollback=v162

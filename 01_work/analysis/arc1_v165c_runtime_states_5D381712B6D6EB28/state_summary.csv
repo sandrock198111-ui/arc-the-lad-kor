@@ -1,0 +1,9 @@
+﻿slot,savestate,code_ok,code_failures,owners,active_mask,next_slot,active_ot_packets,cache_text_packets,cache_unique_slots,cache_blank_slots,cache_wrong_nonblank_slots,matched_text_objects,stale_packets,cache_nontext_packets,static_nontext_collision_packets
+1,HASH-5D381712B6D6EB28_1.sav,1,,18,0x00000000,18,614,13,12,,,0,0,0,0
+2,HASH-5D381712B6D6EB28_2.sav,1,,24,0x00000000,8,698,2,2,22,,1,4,0,0
+3,HASH-5D381712B6D6EB28_3.sav,1,,24,0x00000000,1,610,6,5,,,0,0,0,0
+4,HASH-5D381712B6D6EB28_4.sav,1,,24,0x00000000,6,721,0,0,,,1,1,0,0
+5,HASH-5D381712B6D6EB28_5.sav,1,,24,0x00000000,8,720,0,0,,,1,3,0,0
+6,HASH-5D381712B6D6EB28_6.sav,1,,24,0x00000000,11,718,0,0,,,0,0,0,0
+7,HASH-5D381712B6D6EB28_7.sav,1,,24,0x00000000,2,716,5,5,16 17,,1,0,0,0
+8,HASH-5D381712B6D6EB28_8.sav,1,,24,0x00000000,10,767,16,11,10 11,,1,3,0,0

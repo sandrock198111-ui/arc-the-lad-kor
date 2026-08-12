@@ -1,0 +1,39 @@
+diff --git a/05_docs/changelog.txt b/05_docs/changelog.txt
+--- a/05_docs/changelog.txt
++++ b/05_docs/changelog.txt
+@@ -1184,0 +1185,9 @@
++
++2026-08-08 - v158 부팅 실패, v159 캐시 상태 정렬 수정
++- v158은 정적 검증을 통과했지만 실기에서 BIOS 뒤 게임 화면까지 가지 못했다. 사용하지 않는다.
++- 원인은 예약 RAM의 활성 캐시 비트마스크가 `0x801FEEE6`에 놓인 것이다. 이 주소는 4바이트 경계가 아닌데 디코더와 프레임 루틴이 `lw/sw` 네 번으로 접근해 R3000 Address Error가 난다.
++- v159는 그 변수만 `0x801FEEE8`로 맞추고 뒤의 1·2바이트 변수도 함께 재배치했다. 디코더와 프레임 코드 주소, 예약 RAM 5,356바이트, 힙 0x801FF8B0, 글리프·대본 배치는 그대로다.
++- 생성 명령에서 비정렬 상수 `0xEEE6`은 0개이고 네 워드 접근은 모두 `0xEEE8`을 사용한다.
++- 독립 정적 검증의 64,866 한글 출현, 4,881 제어 토큰, 5개 보호 UI, 4,140 캐시 조합이 다시 PASS했다. ISO의 데이터 파일 506개 LBA와 패치 멤버 164개도 PASS했다.
++- 패치 ZIP: `03_output/arc1_v159_dynamic_cache_4E3F2466.zip`, SHA-256 `4E3F246614B46139EBD637AA576E19397493C421338B5F257D628BCF0AF7B4D7`.
++- 테스트 디스크: `03_output/ARC1_V159_DYNCACHE.cue`. 실기 검증 PENDING. 되돌리기: v151.
+diff --git a/05_docs/test_log.txt b/05_docs/test_log.txt
+--- a/05_docs/test_log.txt
++++ b/05_docs/test_log.txt
+@@ -1892,0 +1893,10 @@
++
++2026-08-08 | v158 실기, v159 정렬 수정 | 부팅 관찰 + 생성 코드 역어셈블 + 독립 검증 | v158 FAIL, v159 STATIC PASS.
++- v158 실기 증상: BIOS 이후 깨지고 진행한 이전 실패와 달리 이번 판은 게임이 전혀 부팅하지 않았다.
++- `active=0x801FEEE6`, 주소 나머지 2. 디코더 `0x801FF014 lw`/`0x801FF020 sw`, 프레임 `0x801FF0B4 lw`/`0x801FF0BC sw`가 같은 비정렬 워드 주소를 접근했다. R3000 Address Error와 첫 프레임 정지가 일치한다.
++- v159는 `active=(owners+40+3)&~3=0x801FEEE8`로 수정했다. next_slot 0x801FEEEC, RECT 0x801FEEF0, scratch 0x801FEEF8. decoder 0x801FEF40과 frame 0x801FF080은 이동하지 않았다.
++- `build_arc1_v159_dynamic_cache.py`에 halfword/word 상태 주소 정렬 가드를 추가했다. `verify_arc1_v159_dynamic_cache.py`도 같은 배치를 독립 재계산해 검사한다.
++- v159 ZIP SHA-256 4E3F246614B46139EBD637AA576E19397493C421338B5F257D628BCF0AF7B4D7. 독립 정적 검증 전 항목 PASS.
++- `ARC1_V159_DYNCACHE.bin`: 데이터 506개 LBA 유지, COMM.DAT 307, COMM.IMG 667, COMM.SND 891, 패치 164개 내용 일치. RESULT PASS.
++- 에뮬레이터는 실행하지 않았다. v159 실기에서 먼저 콜드 부팅 여부를 확인하고, 통과하면 문제의 두 슬라임과 캐시 글자를 확인한다.
++- v158 ZIP/BIN/CUE는 진단 증거일 뿐이며 실기용으로 다시 사용하지 않는다.
+diff --git a/05_docs/codex_notes.txt b/05_docs/codex_notes.txt
+--- a/05_docs/codex_notes.txt
++++ b/05_docs/codex_notes.txt
+@@ -1307,0 +1308,8 @@
++- 빌더 자체 PASS만으로 배포하지 않는다. 별도 구현의 독립 검증기와 `verify_iso_layout.py`가 함께 PASS한 뒤 실기 테스트로 넘긴다.
++
++R3000의 lw/sw 상태 변수는 4바이트 경계에 둔다 - 2026-08-08
++- v158은 20개 halfword 캐시 소유자 표 바로 뒤에 32비트 active 마스크를 붙여 `0x801FEEE6`이 됐다. 2바이트 정렬은 lhu/sh에는 충분하지만 lw/sw에는 부족하다.
++- 디코더와 프레임 루틴의 lw/sw 네 곳이 첫 프레임에 Address Error를 내어 부팅을 막았다. 정적 의미·픽셀 검사가 모두 PASS해도 CPU 정렬 검사가 없으면 이 결함을 놓친다.
++- active는 `(owner_end + 3) & ~3`으로 올림 정렬한다. v159 주소는 0x801FEEE8이고, 다음 byte/RECT/scratch는 0x801FEEEC/0x801FEEF0/0x801FEEF8이다.
++- 새 MIPS 코드를 만들 때 `lb/lbu/sb`는 자유, `lh/lhu/sh`는 주소 mod 2 = 0, `lw/sw`는 주소 mod 4 = 0인지 생성 후 검사한다.
++- v159은 정적 검증만 통과했다. 실기 부팅 확인 전에는 성공 기준으로 승격하지 않는다.

@@ -1,0 +1,6 @@
+diff --git a/02_scripts/build_arc1_v158_dynamic_cache.py b/02_scripts/build_arc1_v158_dynamic_cache.py
+--- a/02_scripts/build_arc1_v158_dynamic_cache.py
++++ b/02_scripts/build_arc1_v158_dynamic_cache.py
+@@ -1 +1 @@
+-"""v157: replace four fixed VRAM strips with a 20-slot on-demand glyph cache.
++"""v158: replace four fixed VRAM strips with a 20-slot on-demand glyph cache.

@@ -1,0 +1,17 @@
+dynamic-cache candidate tiers
+unique_hangul_shapes=699
+one_byte_required_shapes=115
+tier_1_original_text_confirmed_represented_shapes=266
+tier_1_original_text_confirmed_spare_planes=21
+tier_1_original_text_confirmed_max_static_shapes=287
+tier_1_original_text_confirmed_minimum_dynamic_shapes=412
+tier_1_original_text_confirmed_minimum_dynamic_bytes=7416
+tier_2_original_nonblank_represented_shapes=380
+tier_2_original_nonblank_spare_planes=108
+tier_2_original_nonblank_max_static_shapes=488
+tier_2_original_nonblank_minimum_dynamic_shapes=211
+tier_2_original_nonblank_minimum_dynamic_bytes=3798
+tier_2_candidate_cells=45
+
+Tier 2 reproduces v151's practical destination rule, but still needs runtime proof.
+All counts exclude every bounded current token and exclude E2-leading direct codes.
