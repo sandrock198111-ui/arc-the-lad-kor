@@ -1,8 +1,8 @@
 translation review export
 
-lines exported            2650
-  with a speaker label    1181
-  without                 1469
+lines exported            2664
+  with a speaker label    1191
+  without                 1473
 distinct speakers         63
 speakers mixing register  21   <- worth reading first
 
@@ -11,18 +11,18 @@ a character may change register on purpose, and only a reader can tell that
 from a slip.
 
 speakers whose lines disagree, most lines first:
-  초핀            288 lines   polite 192  plain  96
+  초핀            290 lines   polite 205  plain  85
   은혜의 정령         45 lines   polite  26  plain  19
-  대회 위원          45 lines   polite  37  plain   8
-  대신             40 lines   polite   8  plain  32
-  병사             37 lines   polite  12  plain  25
+  대회 위원          45 lines   polite  36  plain   9
+  대신             42 lines   polite   8  plain  34
+  병사             38 lines   polite  12  plain  26
   아나운서           33 lines   polite  30  plain   3
-  라마다 승려         31 lines   polite  23  plain   8
-  승무원            27 lines   polite  20  plain   7
-  야군             20 lines   polite  11  plain   9
+  승무원            28 lines   polite  20  plain   8
+  야군             23 lines   polite  12  plain  11
+  라마다 승려         19 lines   polite  11  plain   8
   아크             18 lines   polite   7  plain  11
-  어머니            17 lines   polite   5  plain  12
   사류족 남자         17 lines   polite   8  plain   9
+  어머니            16 lines   polite   5  plain  11
   병사1            13 lines   polite   1  plain  12
   산의 정령          11 lines   polite   6  plain   5
   로크톨            10 lines   polite   6  plain   4

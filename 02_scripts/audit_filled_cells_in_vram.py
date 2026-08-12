@@ -1,6 +1,6 @@
 """Which cells this project filled are still our pixels in VRAM during the battle.
 
-COMM.IMG is uploaded whole to VRAM x 0..1791 (4bpp), y 0..511, and the game then
+COMM.IMG is uploaded whole to 16-bit VRAM x 320..767, y 0..511, and the game then
 writes its own graphics over most of that area -- 502 of 512 rows differ from the
 file in a battle save state.  Wherever our pixels survive, they are in VRAM while the
 battle draws, and a sprite whose quad covers them will show them.
@@ -28,6 +28,7 @@ CELL = 12
 IMG_W, IMG_H = 1792, 512
 IMG_ROW = IMG_W // 2
 VRAM_ROW = 1024 * 2
+COMM_VRAM_X_BYTES = 320 * 2
 COLS, ROWS = IMG_W // CELL, IMG_H // CELL
 
 
@@ -39,10 +40,22 @@ def cell_bytes(buf: bytes, row: int, col: int, stride: int) -> bytes:
     return bytes(out)
 
 
+def vram_cell_bytes(vram: bytes, row: int, col: int) -> bytes:
+    """Read one COMM.IMG cell at its real x=320 placement in raw VRAM."""
+    out = bytearray()
+    for dy in range(CELL):
+        at = ((row * CELL + dy) * VRAM_ROW + COMM_VRAM_X_BYTES
+              + (col * CELL) // 2)
+        out += vram[at:at + CELL // 2]
+    return bytes(out)
+
+
 def main() -> None:
     if len(sys.argv) < 2:
         raise SystemExit(__doc__)
     vram = Path(sys.argv[1]).read_bytes()
+    if len(vram) != 1024 * 512 * 2:
+        raise SystemExit("input must be an exact marker-based 1024x512x16-bit VRAM dump")
     with zipfile.ZipFile(ROOT / "00_original/arc.zip") as z:
         original = z.read("COMM.IMG")
     staged = ROOT / "01_work/package_test/files/COMM.IMG"
@@ -62,7 +75,7 @@ def main() -> None:
             changed.append((row, col))
             if not any(orig):
                 blank_before.append((row, col))
-            if cell_bytes(vram, row, col, VRAM_ROW) == mine:
+            if vram_cell_bytes(vram, row, col) == mine:
                 live.append((row, col))
 
     print(f"원본과 다른 칸 {len(changed)}개  (그중 원본이 완전히 비어 있던 칸 {len(blank_before)}개)")

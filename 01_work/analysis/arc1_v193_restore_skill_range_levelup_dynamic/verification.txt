@@ -1,0 +1,12 @@
+v193 independent verification PASS
+output=arc1_v193_restore_skill_range_levelup_dynamic_946B3F5E.zip
+sha256=946B3F5ECB1606425D40E34DCFB2FE89A0A1E366A5E45176979A0A0DB29141D4
+changed_members=COMM.IMG,PSX.EXE
+runtime_decode=레벨 상승!! PASS
+row11_col3=original-exact all four planes PASS
+active_skill_range_source=v182 Hangul absent PASS
+all_DAT_members=byte-identical PASS
+member_order_and_lengths=PASS
+PSX_payload_changed_bytes=6
+COMM_restored_bytes=46
+emulator_run=NO

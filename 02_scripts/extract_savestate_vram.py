@@ -1,21 +1,10 @@
-"""Pull RAM and VRAM out of a DuckStation .sav, and anchor VRAM by an exact match.
+"""Pull RAM and VRAM out of a DuckStation save state without pixel heuristics.
 
-The .sav is a small header followed by a zstd frame at the offset stored at 0xC4.
-Inside is the same sectioned blob the older .state.bin files hold: a u32 length, an
-ASCII section name, then that section's data.
-
-Finding VRAM inside the GPU section is the part worth care.  The section is about
-700 bytes larger than VRAM and nothing says where the pixels start, and an even-byte
-error is a pure horizontal shift of the whole image -- invisible to any test that
-only looks at VRAM's internal structure.  Earlier attempts to score alignment by
-pixel runs or texture-page edges narrowed it to six candidates exactly one texture
-page apart and could not choose between them, which is precisely the ambiguity that
-would put every later measurement on the wrong page.
-
-So the anchor comes from outside: the resident glyph strips.  Strip A lives in
-reserved RAM at a known address and is uploaded every frame to a known VRAM
-rectangle, so its first row must appear at a computable byte offset.  One match
-fixes the base with no ambiguity left, and the second strip then confirms it.
+DuckStation serializes the literal ``GPU-VRAM`` marker immediately before the raw
+1024x512x16-bit VRAM array.  That structural marker is the only origin oracle used
+here.  Font pixels and resident glyph strips may be checked afterwards, but they
+must never choose the origin: either can be blank, patched, or shifted by the
+COMM.IMG x=320 placement and still look plausible.
 """
 from __future__ import annotations
 
@@ -27,6 +16,8 @@ from pathlib import Path
 RAM_BASE, RAM_SIZE = 0x80000000, 2 * 1024 * 1024
 VRAM_W, VRAM_H = 1024, 512
 VRAM_SIZE = VRAM_W * VRAM_H * 2
+GPU_VRAM_MARKER = struct.pack("<I", len("GPU-VRAM")) + b"GPU-VRAM"
+BUS_RAM_PAYLOAD_SKIP = 64
 
 STRIP_A_RAM, STRIP_B_RAM = 0x801FE4D8, 0x801FE880
 STRIP_ROW_BYTES, STRIP_ROWS = 78, 12
@@ -52,33 +43,43 @@ def section(blob: bytes, name: str) -> int:
     return at + len(tag)
 
 
-def locate(blob: bytes) -> tuple[bytes, int]:
-    """Fix the RAM and VRAM bases together, by the one thing that ties them.
+def locate_vram(blob: bytes) -> int:
+    """Return the raw VRAM array offset selected by DuckStation's marker.
 
-    Neither section says where its payload begins, so both are searched at once and
-    only the pair that reproduces the per-frame strip upload is accepted: strip A's
-    bytes in reserved RAM must equal, row for row, the VRAM rectangle they are copied
-    into, and strip B's must too.  That is 936 bytes matching at two computed
-    addresses, which no wrong pair survives.
+    The search is deliberately bounded to the beginning of the GPU section and
+    fails closed if zero or multiple complete arrays are found.
     """
-    bus, gpu = section(blob, "Bus"), section(blob, "GPU")
-    limit = gpu + VRAM_SIZE + 4096
-    for skip in range(0, 256, 4):
-        ram = blob[bus + skip:bus + skip + RAM_SIZE]
-        if len(ram) != RAM_SIZE:
-            continue
-        row = ram[STRIP_A_RAM - RAM_BASE:][:STRIP_ROW_BYTES]
-        if not any(row):
-            continue
-        want = (STRIP_A_XY[1] * VRAM_W + STRIP_A_XY[0]) * 2
-        at = blob.find(row, gpu, limit)
-        while at >= 0:
-            base = at - want
-            if base >= gpu and base + VRAM_SIZE <= len(blob) and verify(blob, ram, base):
-                return ram, base
-            at = blob.find(row, at + 1, limit)
-    raise SystemExit("no RAM/VRAM pair reproduces the strip upload; "
-                     "is this state from a build with resident strips?")
+    gpu = section(blob, "GPU")
+    search_end = min(len(blob), gpu + (1 << 16))
+    matches: list[int] = []
+    cursor = gpu
+    while True:
+        marker = blob.find(GPU_VRAM_MARKER, cursor, search_end)
+        if marker < 0:
+            break
+        base = marker + len(GPU_VRAM_MARKER)
+        if base + VRAM_SIZE <= len(blob):
+            matches.append(base)
+        cursor = marker + 1
+    if len(matches) != 1:
+        raise ValueError(
+            f"expected one complete GPU-VRAM array, found {len(matches)}"
+        )
+    return matches[0]
+
+
+def locate_ram(blob: bytes) -> int:
+    """Return the start of the 2 MiB PS1 RAM payload in the Bus section."""
+    base = section(blob, "Bus") + BUS_RAM_PAYLOAD_SKIP
+    if base + RAM_SIZE > len(blob):
+        raise ValueError("Bus RAM payload is incomplete")
+    return base
+
+
+def locate(blob: bytes) -> tuple[bytes, int]:
+    """Backward-compatible pair: RAM bytes and the structural VRAM offset."""
+    ram_base = locate_ram(blob)
+    return blob[ram_base:ram_base + RAM_SIZE], locate_vram(blob)
 
 
 def verify(blob: bytes, ram: bytes, base: int) -> bool:
@@ -107,7 +108,8 @@ def main() -> None:
         blob = inflate(arg)
         ram, base = locate(blob)
         gpu = section(blob, "GPU")
-        print(f"{arg.name}  VRAM at GPU+{base - gpu}, anchored on both strips")
+        strip_check = "match" if verify(blob, ram, base) else "not-applicable/mismatch"
+        print(f"{arg.name}  VRAM at GPU+{base - gpu}, GPU-VRAM marker; strips={strip_check}")
         if out:
             out.mkdir(parents=True, exist_ok=True)
             (out / f"{arg.stem}.vram.bin").write_bytes(blob[base:base + VRAM_SIZE])

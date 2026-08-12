@@ -55,20 +55,76 @@ REWRITES = [
       "베미의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다."),
      "은혜의 정령: 무엇을 해야 하는지는 당신이 정할 일입니다."),
 
-    # Yagun speaks politely to Arc's party, bluntly to his own soldiers, and in 하오체
-    # when he is being a general at them. The 하오체 lines are the character and stay.
-    # Only the flat 반말 among them is the slip, and it becomes 하오체 to match the
-    # line beside it rather than 합쇼체, which would flatten him the other way.
+    # Yagun uses blunt orders for his own soldiers and monsters, but addresses Arc's
+    # party formally in these two meetings. A previous pass forced three lines into
+    # 하오체; the full 26-line speaker audit showed that they sit among 합쇼체 lines
+    # to Arc's party and were the outliers, not a deliberate character trait.
+    ("31/S3031.DAT", "0x47C40",
+     ("야군: 하지만 그건 아이들에게는 무리입니다. 너무 위험해요.",
+      "야군: 하지만 그건 아이들에게는 무리입니다. 너무 위험합니다."),
+     "야군: 하지만 그건 아이들에게는 무리입니다. 너무 위험합니다."),
     ("31/S3032.DAT", "0x479EE",
      ("야군: 다만 저곳은 우리도 애를 먹고 있는 장소다.",
+      "야군: 다만 저곳은 우리도 애를 먹고 있는 곳이오.",
       "야군: 다만 저곳은 우리도 애를 먹고 있는 곳입니다."),
-     "야군: 다만 저곳은 우리도 애를 먹고 있는 곳이오."),
+     "야군: 다만 저곳은 우리도 애를 먹고 있는 곳입니다."),
     ("31/S3032.DAT", "0x47A40",
-     "야군: 만일 무슨 일이 있어도 우리는 책임지지 않겠습니다.",
-     "야군: 만일 무슨 일이 있어도 우리는 책임을 지지 않겠소."),
+     ("야군: 만일 무슨 일이 있어도 우리는 책임지지 않겠습니다.",
+      "야군: 만일 무슨 일이 있어도 우리는 책임을 지지 않겠소.",
+      "야군: 만일 무슨 일이 있어도 우리는 책임을 지지 않습니다."),
+     "야군: 만일 무슨 일이 있어도 우리는 책임을 지지 않습니다."),
     ("31/S3031.DAT", "0x4810A",
-     "야군: 최근에는 이 근처에도 몬스터가 나타납니다.",
-     "야군: 최근에는 이 근처에도 몬스터가 나타나오."),
+     ("야군: 최근에는 이 근처에도 몬스터가 나타납니다.",
+      "야군: 최근에는 이 근처에도 몬스터가 나타나오.",
+      "야군: 최근에는 이 근처에도 몬스터가 나타나고 있습니다."),
+     "야군: 최근에는 이 근처에도 몬스터가 나타나고 있습니다."),
+
+    # This is the same three-row Choppin menu fixed locally in v191. Keep the
+    # question natural without changing either option or the global choice layout.
+    ("31/S3012.DAT", "0x47FF0",
+     ("초핀: 무언가 제가 도움이 될 일이 있습니까?|없어|좀 물어보고 싶어",
+      "초핀: 제가 도와드릴 일이 있습니까?|없어|좀 물어보고 싶어"),
+     "초핀: 제가 도와드릴 일이 있습니까?|없어|좀 물어보고 싶어"),
+
+    # v192 merges every genuine choice speaker row with its question.  These
+    # corpus entries must match the runtime prompts; options are intentionally
+    # unchanged because cursor/option repair is a separate concern.
+    ("1/S1023.DAT", "0x47952",
+     ("어머니: 아버지가 남긴 편지가 있는데 읽어 볼래?|괜찮아|읽는다",
+      "어머니: 아버지가 남긴 편지를 읽을래?|괜찮아|읽는다"),
+     "어머니: 아버지가 남긴 편지를 읽을래?|괜찮아|읽는다"),
+    ("7/S7021.DAT", "0x48D26",
+     ("출전할까요?|출전|그만",
+      "대회 위원: 출전하시겠습니까?|출전|그만"),
+     "대회 위원: 출전하시겠습니까?|출전|그만"),
+    ("7/S7022.DAT", "0x489B6",
+     ("1회전 준비?|예|아직입니다",
+      "대회 위원: 1회전 준비됐습니까?|예|아직입니다"),
+     "대회 위원: 1회전 준비됐습니까?|예|아직입니다"),
+    ("7/S7023.DAT", "0x48A4E",
+     ("2회전 준비?|예|아직입니다",
+      "대회 위원: 2회전 준비됐습니까?|예|아직입니다"),
+     "대회 위원: 2회전 준비됐습니까?|예|아직입니다"),
+    ("7/S7024.DAT", "0x48AAE",
+     ("준결승 준비?|예|아직입니다",
+      "대회 위원: 준결승 준비됐습니까?|예|아직입니다"),
+     "대회 위원: 준결승 준비됐습니까?|예|아직입니다"),
+    ("7/S7025.DAT", "0x48AC2",
+     ("결승 준비?|예|아직입니다",
+      "대회 위원: 결승 준비됐습니까?|예|아직입니다"),
+     "대회 위원: 결승 준비됐습니까?|예|아직입니다"),
+    ("7/S7026.DAT", "0x48D28",
+     ("오브전 준비?|예|아직입니다",
+      "대회 위원: 오브 쟁탈전 준비됐습니까?|예|아직입니다"),
+     "대회 위원: 오브 쟁탈전 준비됐습니까?|예|아직입니다"),
+    ("7/S7028.DAT", "0x48028",
+     ("출전할까요?|출전|그만",
+      "대회 위원: 출전하시겠습니까?|출전|그만"),
+     "대회 위원: 출전하시겠습니까?|출전|그만"),
+    ("7/S7028.DAT", "0x48B70",
+     ("정말 할까요?|승리|나중에",
+      "대회 위원: 정말 출전하시겠습니까?|승리|나중에"),
+     "대회 위원: 정말 출전하시겠습니까?|승리|나중에"),
 
     # The menu offers 150, 200 and 250 men. The 5 was dropped from two of them.
     ("6/S6054.DAT", "0x454DC", "|10|200|20|고민", "|150|200|250|고민"),

@@ -1,0 +1,31 @@
+v194 remove last ordinary Hangul from an original-blank atlas cell
+base=arc1_v193_restore_skill_range_levelup_dynamic_946B3F5E.zip
+base_sha256=946B3F5ECB1606425D40E34DCFB2FE89A0A1E366A5E45176979A0A0DB29141D4
+output=arc1_v194_remove_last_blank_cell_hangul_63FE7FD6.zip
+sha256=63FE7FD64A1FCCC005139AE6AC71A62D3DE2109D930B40EF43D747269EE9D744
+EA9B=함 preserved through dynamic source 224 PASS
+source224_equals_old_physical1240=12x12 exact PASS
+row14_col16=original-exact transparent PASS
+remaining_original_blank_changed_cells=7 direct punctuation/button assets
+bounded_max_simultaneous_dynamic=26/28
+bounded_max_owner=slot:21/S2041.DAT:19
+bounded_owner_units=4761
+v193_skill_range_restore=preserved PASS
+v193_levelup_레벨_상승=preserved PASS
+all_DAT_members=byte-identical to v193 PASS
+PSX_lookup_changed_bytes=2
+COMM_restored_bytes=32
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+resident_used=5356/5356
+resident_free=0
+heap_boundary=0x801FF8B0 unchanged
+startup_copy=5356 unchanged
+changed_members=COMM.IMG,PSX.EXE
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+rollback=v193; v192 before both repairs

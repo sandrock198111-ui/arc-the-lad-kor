@@ -37,6 +37,7 @@ except Exception:
 
 R2F = 0x8011A800
 COPY_SRC, COPY_DST, COPY_LEN = 0x801A86EC, 0x801FE3C4, 5356
+DECODER_HOOK, DECODER_RETURN = 0x801A74B8, 0x8016B410
 REG = ["zero", "at", "v0", "v1", "a0", "a1", "a2", "a3", "t0", "t1", "t2", "t3",
        "t4", "t5", "t6", "t7", "s0", "s1", "s2", "s3", "s4", "s5", "s6", "s7",
        "t8", "t9", "k0", "k1", "gp", "sp", "fp", "ra"]
@@ -104,25 +105,33 @@ def check(exe: bytes, name: str, ram: int, length: int) -> list[str]:
         else:
             if op in (0x00,) and ((w >> 11) & 31) in known:
                 known.pop((w >> 11) & 31, None)
-            elif op not in (0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x28, 0x29, 0x2B):
+            elif op not in (0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,
+                            0x28, 0x29, 0x2B):
                 known.pop(rt, None)
 
         if w == 0x03E00008:
             has_jr_ra = True
-        if op in (0x04, 0x05, 0x06, 0x07):
+        if op in (0x01, 0x04, 0x05, 0x06, 0x07):
             target = pc + 4 + simm * 4
             if not (ram <= target < ram + length):
                 problems.append(f"분기 목적지가 루틴 밖  {pc:08X} -> 0x{target:08X}")
         if op in (0x02, 0x03):
             target = ((pc & 0xF0000000) | ((w & 0x3FFFFFF) << 2))
             exits.append((pc, "j" if op == 2 else "jal", target))
-        if op in (0x02, 0x03, 0x04, 0x05) and i + 1 < len(words):
+        if op in (0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07) \
+                and i + 1 < len(words):
             nxt = words[i + 1]
             nop_ok = nxt == 0
             if not nop_ok and (nxt >> 26) in (0x02, 0x03, 0x04, 0x05):
                 problems.append(f"지연 슬롯에 분기  {pc + 4:08X}")
 
-    if not has_jr_ra:
+    if name == "decoder":
+        if not any(kind == "j" and target == DECODER_RETURN
+                   for _pc, kind, target in exits):
+            problems.append(
+                f"비연결 J 디코더가 원래 경로 0x{DECODER_RETURN:08X}로 돌아가지 않는다"
+            )
+    elif not has_jr_ra:
         problems.append("jr ra 가 없다 -- jal 로 불리면 못 돌아온다")
     return problems
 
@@ -185,6 +194,15 @@ def main() -> None:
             continue
         for name, ram, length in found:
             problems = check(exe, name, ram, length)
+            if name == "decoder":
+                hook = struct.unpack_from("<I", exe, DECODER_HOOK - R2F)[0]
+                target = ((DECODER_HOOK & 0xF0000000) | ((hook & 0x03FFFFFF) << 2))
+                if hook >> 26 != 0x02 or target != ram:
+                    problems.append(
+                        f"디코더 진입 훅이 비연결 J가 아니다: 0x{hook:08X} -> 0x{target:08X}"
+                    )
+                if struct.unpack_from("<I", exe, DECODER_HOOK - R2F + 4)[0] != 0:
+                    problems.append("디코더 진입 J의 지연 슬롯이 NOP가 아니다")
             print(f"  {name} 0x{ram:08X} / {length}B  ->  "
                   f"{'문제 없음' if not problems else f'{len(problems)}건'}")
             for p in problems:

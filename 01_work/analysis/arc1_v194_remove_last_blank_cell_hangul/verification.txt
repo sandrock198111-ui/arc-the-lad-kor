@@ -1,0 +1,11 @@
+v194 independent verification PASS
+output=arc1_v194_remove_last_blank_cell_hangul_63FE7FD6.zip
+sha256=63FE7FD64A1FCCC005139AE6AC71A62D3DE2109D930B40EF43D747269EE9D744
+EA9B=dynamic source 224=함 PASS
+row14_col16=original-exact PASS
+v193_skill_range_and_levelup=preserved PASS
+all_DAT_members=byte-identical PASS
+member_order_and_lengths=PASS
+PSX_lookup_changed_bytes=2
+COMM_restored_bytes=32
+emulator_run=NO

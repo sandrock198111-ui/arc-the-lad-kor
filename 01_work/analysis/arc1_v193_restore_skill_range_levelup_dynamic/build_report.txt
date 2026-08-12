@@ -1,0 +1,36 @@
+v193 restore skill-range source and keep Korean level-up via existing dynamic cache
+base=arc1_v192_choice_speaker_rows_899DDD9A.zip
+base_sha256=899DDD9A4D22B80AD9229605461C25ABA0FE79FAC6B1533D2A9AE1ABC5B22A35
+output=arc1_v193_restore_skill_range_levelup_dynamic_946B3F5E.zip
+sha256=946B3F5ECB1606425D40E34DCFB2FE89A0A1E366A5E45176979A0A0DB29141D4
+root_cause=v182 wrote LV/상/승 into transparent pixels sampled by cross arms
+restored_cell=row11,col3 all four planes original-exact PASS
+range_source=x0..64,y128..160; v182 Hangul removed PASS
+range_source_remaining_diff=1 inherited v181 pixel at x54,y128
+levelup_payload=레벨 상승!!
+levelup_payload_hex=DF E8 E1 EA 9C CD 8E DF E3 DF E3 00
+levelup_dynamic_sources=상:32,레:144,벨:247
+levelup_static_sources=승 and ! unchanged
+bounded_max_simultaneous_dynamic=26/28
+bounded_max_owner=slot:21/S2041.DAT:19
+bounded_owner_units=4761
+dynamic_cache_layout=byte-identical to v192 PASS
+lookup_table=byte-identical to v192 PASS
+resident_code=byte-identical to v192 PASS
+all_DAT_members=byte-identical to v192 PASS
+PSX_payload_changed_bytes=6
+COMM_restored_bytes=46
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+resident_used=5356/5356
+resident_free=0
+heap_boundary=0x801FF8B0 unchanged
+startup_copy=5356 unchanged
+changed_members=COMM.IMG,PSX.EXE
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+rollback=v192
