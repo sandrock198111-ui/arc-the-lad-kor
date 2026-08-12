@@ -1434,3 +1434,9 @@
 - `02_scripts/build_arc1_v197_prompt_width_off_by_one.py`를 추가했다. `audit_arc1_v194_texture_canaries.py` PASS, 바뀐 멤버는 대상 두 DAT뿐이다.
 - ZIP은 `03_output/arc1_v197_prompt_width_off_by_one.zip`, SHA-256 `E8D9BA745A2F0F1776C0B52A22E05D1D52205D8B274914716187A4E86A4DBE3B`다. 디스크는 `03_output/V197.cue`다. 되돌리기: v196.
 - 남은 일: `build_arc1_v186_runtime_text_choice_fixes`의 폭 검사를 `> ROW_PIXELS`에서 `>= ROW_PIXELS`로 고쳐야 같은 사고가 재발하지 않는다.
+
+2026-08-12 - 배포 준비 정적 전수 검사기 추가
+- 사용자가 전체 플레이 검증을 할 시간이 없고, 미완성 상태를 밝히고 제보를 받는 방식으로 배포하려 한다. 실기 통과 플레이를 대신할 정적 검사가 필요했다.
+- `02_scripts/audit_arc1_release_readiness.py`를 추가했다. 검사 둘이다. 하나는 픽셀이 없고 직접 범위표에도 없는 글리프 번호를 가리키는 참조(`○`, `괜`, `상승`을 사라지게 한 유형), 다른 하나는 원본 대비 표시 줄 수 변화(v197의 커서 밀림 유형)다.
+- v197 결과: 대사 2,847개 중 고아 참조 0건, 원본 최대 줄 수 9를 넘는 대사 0건으로 두 검사 모두 통과다. 선택문 357개도 고아 0건이다.
+- 이 검사기는 앞으로 굽기 전에 `audit_arc1_v194_texture_canaries.py`, `audit_resident_routines.py`와 함께 돌린다.
