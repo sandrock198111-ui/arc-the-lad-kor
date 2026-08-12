@@ -1449,3 +1449,7 @@
 - 검증: 원본에 패치를 적용한 결과가 `03_output/V197.bin`과 SHA-256 `3D9FF565FA0FA93C79037AE5C5EF69587AF8D57EFB83C433593A9CC0F86878AF`로 정확히 일치한다.
 - 배포 꾸러미는 `03_output/ArcTheLad1_Korean_v197_xdelta.zip`, SHA-256 `C9DFB03E59FD6400214E088EF7DC8BEB0FDAD1BF304A7F6C0E9D45F1E71DCD0A`다. 안에 패치, `arc1_kor.cue`, `읽어주세요.md`가 들어 있다. 원본 게임 데이터는 들어 있지 않다.
 - `05_docs/release_notes_v197.md`에 진행 상태, 오류가 날 만한 곳, 제보 방법, 적용 방법과 원본 해시를 적었다.
+- 배포 대상 원본을 확정했다. 프로젝트가 작업해 온 `E:\arc\원본\arc1.bin`은 CRC32 `3235502F`로 `Arc the Lad (Japan) (Rev 1)` 개정판이다. 초판 `Arc the Lad (Japan)`은 CRC32 `F9976430`으로 다르며, 크기는 631,820,112바이트로 둘이 같아 크기로는 구분되지 않는다.
+- 초판 사용자도 받을 수 있도록 초판 기준 패치를 따로 만들었다. xdelta는 목표 파일을 그대로 복원하므로 어느 원본에서 시작하든 결과물은 동일하다. 초판 패치는 344,894바이트이며 적용 결과가 `V197.bin`과 SHA-256까지 일치함을 확인했다.
+- 초판 SHA-1 `08439ECBC6AC70C59DAE637B4E1291DA48729413`, MD5 `13223EBD9B33C48AA0620E5863DE071F`다.
+- 배포 꾸러미를 다시 묶었다. `03_output/ArcTheLad1_Korean_v197_xdelta.zip`, SHA-256 `75ECF85C5FDE2111F4332F58EFD4FED46D73335B6693A08E7683EA845D0FE734`, 624,156바이트다. 패치 둘, `arc1_kor.cue`, `읽어주세요.md`가 들어 있다.
