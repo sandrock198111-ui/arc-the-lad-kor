@@ -69,6 +69,8 @@ class Machine:
                 self.r[rd] = (a + b) & 0xFFFFFFFF
             elif funct == 0x25:
                 self.r[rd] = a | b
+            elif funct == 0x27:
+                self.r[rd] = (~(a | b)) & 0xFFFFFFFF
             else:
                 raise AssertionError(f"unsupported SPECIAL 0x{funct:X} at 0x{self.pc:08X}")
         elif op == 0x09:

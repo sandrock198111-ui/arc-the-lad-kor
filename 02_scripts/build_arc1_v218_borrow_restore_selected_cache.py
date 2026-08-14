@@ -299,7 +299,7 @@ def main() -> None:
         "persistent_marker_policy=any_strict_V255_marker_keeps_all_28_slots_live_next_frame",
         "persistent_RAM_growth=0; resident_growth=0; heap_boundary=unchanged",
         "new_VRAM=0; DAT=unchanged; COMM.IMG=unchanged",
-        "runtime=PENDING; emulator_run=NO",
+        "runtime=FAIL; user cold boot stopped after BIOS before title flow",
         "rollback=v210; v214-v217 are runtime failures",
         "",
     ])

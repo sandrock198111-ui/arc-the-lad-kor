@@ -1507,3 +1507,13 @@
 - ZIP은 `arc1_v218_borrow_restore_selected_cache_TEST_ONLY_87942B4B.zip`, SHA-256 `87942B4B2E493B48911C82139A051F6A5752A974D1ED8C2C0B0E759131FE42CB`이다.
 - 고정 LBA BIN/CUE를 만들고 데이터 파일 506/506 LBA와 패치 멤버 164/164 일치를 확인했다. BIN SHA-256은 `FEC55643D5C37F2D95B454145C56C097F6A05604AFD710FD2D29B615267F93DE`이다.
 - v218은 TEST ONLY이며 사용자 콜드부팅 런타임 검증 전이다. `bible_current.txt`는 갱신하지 않는다.
+
+2026-08-14 - v218 부팅 실패 확정과 v219b fail-closed 보정 후보
+- 사용자 콜드부팅에서 v218은 BIOS 뒤 게임 초기화 단계에서 멈춰 런타임 실패로 확정했다. 실패 상태 `HASH-EB6915FE435E3501_1.sav`의 frame routine 584바이트는 디스크와 같아 자기 코드 덮어쓰기는 발생하지 않았다.
+- v218의 OT 후처리는 노드 종류를 확인하지 않고 `packet+13 == FF`만 표식으로 받아들였다. BIOS의 정상 OT 링크 노드 `0x801AEA44`는 DMA count 0인데도 해당 바이트가 FF여서 활성 마스크가 `FFFFFFFF`로 잘못 남았다.
+- 같은 상태의 소유자 28개는 모두 `FFFF`였다. v218은 이를 `lhu`로 읽고 1을 더해 빈칸을 판정했기 때문에 65535가 0이 되지 않았고, 범위를 벗어난 Huffman 원천 65535를 읽었다.
+- `02_scripts/build_arc1_v219_failclosed_borrow_restore.py`의 수정과 고유 산출물용 `build_arc1_v219b_failclosed_borrow_restore.py`를 적용했다. 엄격 선택기가 쓰는 임시 표식을 `V=255-U`로 바꾸고 프레임은 `DMA words=4`이면서 `U+V=255`인 노드만 받는다. 소유자 번호도 `<466`일 때만 복호화한다.
+- v218의 스택 704바이트는 실패 상태의 `SP=0x801FFF30`에서 상주 코드를 직접 덮지 않았으므로 이번 정지의 직접 원인이 아니다. 다만 안전 여유를 늘리기 위해 버퍼 배치를 다시 짜 624바이트로 줄였고 frame routine의 `k0/k1` 사용은 0개로 만들었다.
+- 452개 상태저장의 OT 노드 310,631개를 종류 구분 없이 검사했다. DMA 4-word 노드는 11,127개였고 새 표식의 기존 충돌은 0개, BIOS 오인 노드의 새 표식 일치는 0개였다.
+- ZIP은 `arc1_v219b_failclosed_borrow_restore_TEST_ONLY_B3595C76.zip`, SHA-256 `B3595C76894E8C6A9179A3E9161B806C9AB618454469823B2488F31601224578`이다. BIN SHA-256은 `CFEC02ED029152DE6559512DBE707F91F6B33C0E4E9AC53ECCD69FFB56B67870`이다.
+- v219b는 TEST ONLY이며 사용자 콜드부팅 검증 전이다. `bible_current.txt`는 갱신하지 않는다.

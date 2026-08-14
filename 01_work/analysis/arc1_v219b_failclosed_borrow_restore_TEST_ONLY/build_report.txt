@@ -1,8 +1,8 @@
-v218 TEST ONLY - one-DrawOT borrow/restore of selected cache rectangle
+v219b TEST ONLY - fail-closed paired-marker borrow/restore
 base=arc1_v210_sd031_slots_controls.zip
 base_sha256=7FB963135C753CBF509F9E722BF826856B04D456D29743A0B1D8CB5A9B34CAF9
-output=arc1_v218_borrow_restore_selected_cache_TEST_ONLY_87942B4B.zip
-sha256=87942B4B2E493B48911C82139A051F6A5752A974D1ED8C2C0B0E759131FE42CB
+output=arc1_v219b_failclosed_borrow_restore_TEST_ONLY_B3595C76.zip
+sha256=B3595C76894E8C6A9179A3E9161B806C9AB618454469823B2488F31601224578
 release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
 canonical_virtual_row=40 unchanged
 destination_A=x961..981,y480..491,V224
@@ -18,7 +18,7 @@ measured_simultaneous_A_B_conflicts=0
 COMM.IMG=byte-identical to v210 PASS
 all_DAT_members=byte-identical to v210 PASS
 changed_members=PSX.EXE
-PSX_changed_bytes=731
+PSX_changed_bytes=733
 resident_growth=0
 resident_used=5356/5356
 resident_free=0
@@ -60,7 +60,7 @@ marker_corpus_active_packets=299742
 marker_corpus_existing_signature=0
 selector_python_model=PASS
 archived_marker_frame_match=PASS
-runtime=FAIL; user cold boot stopped after BIOS before title flow
+runtime=PENDING; emulator_run=NO
 v216_real_packet_layout=PASS (inherits corrected v215 u16 width/height)
 selector_handoff=0x80193A80 inside guarded overlap tail
 selector_finish_fragment=removed
@@ -72,14 +72,15 @@ resident_frame_size=584 unchanged
 resident_growth=0; heap_boundary=0x801FF8B0 unchanged
 runtime=PENDING; emulator_run=NO
 rollback=v210; v214 and v215 are runtime failures
-parent=arc1_v216_relocate_selector_handoff_TEST_ONLY_25090AB2.zip
+parent=arc1_v218_borrow_restore_selected_cache_TEST_ONLY_87942B4B.zip
 resident_frame=0x801FF668 size=584 unchanged
-temporary_backup=stack+0x80 size=504
-borrow_rect=x961,y(selected_384_or_480),w21,h12
-active_call_order=StoreImage -> GPU_sync -> cache_LoadImage(s) -> DrawOT -> GPU_sync -> restore_LoadImage
-inactive_call_order=DrawOT_only
-persistent_marker_policy=any_strict_V255_marker_keeps_all_28_slots_live_next_frame
+marker_signature=DMA_words_4 AND (U+V==255)
+marker_corpus=452 savestates; all OT node kinds included
+strict_selector_marker_V=255-U
+owner_guard=unsigned_source_id<466; FFFF rejected
+stack_frame=0x270 (624) down_from_v218_0x2C0
+kernel_reserved_registers_in_frame=0
 persistent_RAM_growth=0; resident_growth=0; heap_boundary=unchanged
 new_VRAM=0; DAT=unchanged; COMM.IMG=unchanged
 runtime=PENDING; emulator_run=NO
-rollback=v210; v214-v217 are runtime failures
+rollback=v210; v218 runtime FAIL at BIOS/game-init boundary

@@ -1,7 +1,7 @@
-savestates_total=451
-savestates_decoded=451
+savestates_total=452
+savestates_decoded=452
 savestates_failed=0
-ot_nodes_all_kinds=310120
+ot_nodes_all_kinds=310631
 ot_nodes_dma4=11127
 existing_paired_marker_signature=0
 bios_false_node_seen=1

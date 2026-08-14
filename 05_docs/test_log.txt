@@ -2279,3 +2279,20 @@ check_build.py 통과. SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FB
 - BIN SHA-256 `FEC55643D5C37F2D95B454145C56C097F6A05604AFD710FD2D29B615267F93DE`.
 - 메모리카드는 v217 카드에서 v218 이름으로 복사했으며 SHA-256은 `254116939A46340692D4F64C05A3583D000CAE0C961EB2AD378F0DA17947AC68`이다.
 - 에뮬레이터는 실행하지 않았다. 사용자 콜드부팅에서 월드맵 진입·이탈과 이후 대사/UI를 확인해야 한다.
+
+2026-08-14 | v218 콜드부팅 실패 상태 직접 대조 | CPU/상주 RAM/OT/캐시 소유자 분석 | FAIL, 직접 원인 2건 확정.
+- 상태 `HASH-EB6915FE435E3501_1.sav`: PC/EPC `0x80175918`, CAUSE `0x10000400`, RA `0x8018F574`, SP `0x801FFF30`. 주소 예외가 아니라 게임 초기화의 BIOS `TestEvent` 폴링 안에 있었다.
+- resident frame `0x801FF668..0x801FF8AF`는 v218 ZIP과 584/584바이트 일치했다. 704바이트 프레임을 잡아도 최저점은 `0x801FFC70`이므로 상주 끝 `0x801FF8B0`을 직접 덮지 않는다.
+- 활성 OT 511개 중 `0x801AEA44`는 DMA count 0, command 0인 OTHER 링크 노드였으나 raw byte +12/+13은 `FF FF`였다. v218의 V-only 후처리가 이를 캐시 표식으로 오인했다.
+- `active_mask=FFFFFFFF`, owners 28/28=`FFFF`였다. v218의 `lhu owner; addiu +1`은 FFFF를 65535로 읽어 0으로 만들지 못하므로 Huffman 원천 65535로 진입한다.
+
+2026-08-14 | v219b fail-closed 표식·소유자·스택 보정 | 452상태 OT 감사 + 실제 실패 상태 MIPS 재생 + 합성 활성 경로 + 월드맵 회귀 + 고정 LBA ISO | STATIC PASS, RUNTIME PENDING.
+- 새 표식은 엄격 선택기가 `V=255-U`로 기록하고 프레임은 `DMA words=4 AND U+V=255`만 받는다. 452/452 상태 해독 성공, OT 전체 종류 310,631노드, DMA4 11,127노드, 기존 충돌 0건이다. BIOS 노드도 표본에 포함됐으며 새 표식 일치 0건이다.
+- owner는 unsigned source id `<466`을 만족할 때만 Huffman으로 보낸다. FFFF와 다른 범위 밖 값은 모두 건너뛴다.
+- 실제 v218 BIOS 실패 상태를 새 MIPS로 재생했을 때 `0x801AEA44`의 52바이트가 전부 보존됐고, FFFF owner의 Huffman 진입 0회, 다음 active mask 0을 확인했다.
+- 합성 활성 경로는 엄격 표식, B 선택, 유효 owner 28회 복호화, 7셀 업로드, DrawOT, 504바이트 원본 복원을 통과했다. v215 월드맵 563패킷 회귀도 변경 0·B 선택으로 통과했다.
+- frame routine은 `0x801FF668/584B`, resident `5356/5356`, 힙 경계 `0x801FF8B0`을 유지한다. 스택은 704→624바이트, frame 내부 k0/k1 참조는 0개다.
+- `audit_resident_routines.py`: decoder/frame 문제 0, 문자열 풀 RAM 포인터 범위 밖 0. 원본 빈 칸 7개 경고는 v210부터 같은 누적 COMM.IMG 상속 항목이다.
+- `verify_iso_layout.py`: 507파일, 데이터 506/506 LBA 유지, COMM.DAT/IMG/SND 307/667/891 유지, 패치 멤버 164/164 일치, PASS.
+- ZIP SHA-256 `B3595C76894E8C6A9179A3E9161B806C9AB618454469823B2488F31601224578`; BIN SHA-256 `CFEC02ED029152DE6559512DBE707F91F6B33C0E4E9AC53ECCD69FFB56B67870`.
+- 메모리카드는 `V218K_CLAUDE_1.mcd`에서 v219b 이름으로 복사했으며 양쪽 SHA-256 `254116939A46340692D4F64C05A3583D000CAE0C961EB2AD378F0DA17947AC68`가 같다. 에뮬레이터는 실행하지 않았다.

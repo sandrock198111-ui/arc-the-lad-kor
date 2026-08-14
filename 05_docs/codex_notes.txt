@@ -1678,6 +1678,22 @@ Arc the Lad 시험 디스크는 원본에 없는 SYSTEM.CNF를 추가하면 안 
 - v214의 첫 일반 패키징 이미지는 이 검사에서 FAIL하여 사용 금지 처리했고, 고정 LBA로 다시 만든 BIN은 PASS했다.
 - 실제 세계 지도와 지도 모양의 전투 오버레이는 서로 다른 장면이다. 상태저장이나 스크린샷을 분석할 때 둘을 같은 장면으로 부르지 않는다.
 
+v218의 BIOS 뒤 정지는 OT 종료 노드 오인과 FFFF owner 범위 누락이다 - 2026-08-14
+- 실패 상태 `HASH-EB6915FE435E3501_1.sav`의 CPU는 PC/EPC `0x80175918`, RA `0x8018F574`, SP `0x801FFF30`이다. CAUSE `0x10000400`은 정상 인터럽트이며 주소 정렬 예외가 아니다.
+- `0x80175918`은 BIOS B0/0B TestEvent 호출 stub이고 호출자는 `0x8018F564..0x8018F578`에서 이벤트 핸들 `F1000008`을 반복 확인한다. BIOS 그림에서 멈춘 것처럼 보여도 CPU는 이미 게임 실행파일 초기화 코드에 들어갔다.
+- 현재 OT의 `0x801AEA44`는 DMA words 0, command 0인 링크/종료 성격의 OTHER 노드다. raw +12/+13이 `FF FF`라는 이유만으로 캐시 문자가 아니다.
+- v218 frame tail은 종류·DMA 길이 없이 +13의 V 바이트만 255인지 검사했기 때문에 이 노드를 표식으로 오인했다. 기존 V255 감사가 GPU 패킷 중심이어서 OTHER 노드를 안전 근거에 포함하지 못한 것이 검사 누락이다.
+- 같은 상태에서 active mask는 `FFFFFFFF`, owner 28개는 전부 `FFFF`다. `lhu FFFF`는 65535이므로 `addiu +1` 결과가 16비트 0이 아니라 32비트 65536이다. 빈칸 판정에는 signed load에 의존하거나, 더 안전하게 source count 미만인지 unsigned 범위 검사해야 한다.
+- 실패 상태의 resident frame 584바이트는 ZIP과 완전히 같다. SP에서 704바이트를 빼도 `0x801FFC70`이며 resident end `0x801FF8B0`보다 960바이트 높다. 큰 스택은 줄일 가치가 있지만 이번 상태에서 자기 코드를 직접 덮었다는 설명은 성립하지 않는다.
+
+v219b의 fail-closed 전달 규칙 - 2026-08-14
+- 선택기는 기존의 엄격 조건(DMA4, SPRT, 물리 page15/1, font CLUT, 12x12, cache U, A/B V)을 통과한 캐시에만 `marker V=255-U`를 쓴다.
+- frame tail은 노드 종류를 미리 가정하지 않고 `DMA words=4`와 raw `U+V=255`를 모두 만족할 때만 표식으로 받는다. 452상태의 OT 310,631노드를 OTHER 포함 전수 검사한 기존 충돌은 0이다.
+- owner는 `source_id < 466`일 때만 Huffman 복호화한다. FFFF뿐 아니라 모든 범위 밖 손상값이 fail-closed 된다.
+- frame 스택은 decode 72바이트 + VRAM backup 504바이트 + saved A0 4바이트 + 저장 레지스터 36바이트를 겹치지 않게 배치해 624바이트다. resident size와 heap boundary는 바뀌지 않는다.
+- frame routine에서는 예외 처리 전용 k0/k1을 사용하지 않는다. selector 쪽 기존 사용은 v216과 같으며 v217까지 부팅한 경로다.
+- 실제 v218 BIOS 실패 상태 재생은 OTHER 노드 52바이트 보존, FFFF Huffman 진입 0, next active 0을 통과했다. 이 검사는 이후 표식 변경에서 반드시 유지한다.
+
 A/B ?? ??? ??? ??? ??? ??? ?? ???? ???? ?? - 2026-08-14
 - v215? `0x801A2060..0x801A2083`? ???? ??? ??? ???? ?? ?? ?? ????. ?????? `0x801A2074`? `0x24AF0100`?? `0x80168768`? ???? EPC? ? ???? Data Bus Error? ??. ? ??? ?? cave? ?? ???? ???.
 - v216? selector finish? 0???? ??? `0x80193A80`? ??? overlap ???? resident frame?? ?? ????. `0x801A2060..0x801A2083`? v210? ??? ???? ?? ??? 0??? ??.
