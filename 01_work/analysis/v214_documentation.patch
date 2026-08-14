@@ -1,0 +1,65 @@
+diff --git a/05_docs/changelog.txt b/05_docs/changelog.txt
+--- a/05_docs/changelog.txt
++++ b/05_docs/changelog.txt
+@@ -1480,0 +1481,13 @@
++
++2026-08-13 - v214 엄격 표식형 A/B 동적 캐시 선택기 후보
++- v211의 전 화면 글자 깨짐은 동적 캐시 자체의 실패가 아니라, 업로드 위치를 옮기면서 실제 U 보정을 담당하는 `0x8019D074` 경로를 바꾸지 못한 구현 오류로 확정했다. v211이 바꾼 `0x801A2060`은 현재 렌더링에서 호출되지 않는 옛 보조 루틴이었다.
++- 고정 목적지 A(`y480,V224`)는 측정 상태 3개, B(`y384,V128`)는 서로 다른 7개 상태에서 게임 그림과 겹쳤다. 432개 상태에서 A와 B가 동시에 겹친 경우는 0개였으므로 고정 이동을 폐기하고 프레임별 선택으로 전환했다.
++- `02_scripts/audit_arc1_cache_marker_v255.py`를 추가했다. 상태저장 435개를 모두 해독해 활성 패킷 299,742개와 가변 SPRT 10,500개를 검사했으며, 임시 표식 `V=255`와 충돌하는 기존 패킷은 0개였다.
++- `02_scripts/build_arc1_v214_marked_ab_cache_selector.py`를 추가했다. 물리 tpage, DMA 길이, SPRT 명령, 글꼴 CLUT, 12x12 크기, 캐시 U열, 기존 V를 모두 만족하는 캐시 문자에만 `V=255`를 임시로 기록하고, DrawOT 직전에 선택된 A/B의 실제 V로 치환한다.
++- 선택기와 프레임 루틴 사이에 별도 RAM이나 상주 코드 증가를 추가하지 않았다. decoder `0x801FF348/568B`, huffman `0x801FF580/232B`, frame `0x801FF668/584B`, 힙 경계 `0x801FF8B0`은 v210과 같다.
++- 실제 생성 MIPS를 읽어 실행하는 `verify_arc1_v214_selector_execution_corrected.py`에서 A, B, 기존 표식, A 충돌, B 충돌, 동시 충돌, 잘못된 13x12 크기 등 7개 경우를 통과했다.
++- v214는 v210 대비 `PSX.EXE`만 바뀌며 `COMM.IMG`와 모든 DAT는 바이트 단위로 같다. 기존 감사기의 빈 칸 7개 경고는 v210에서 상속된 UI 자산이며 v214 신규 변경이 아니다.
++- ZIP은 `03_output/arc1_v214_marked_ab_cache_selector_TEST_ONLY_613EBE7C.zip`, SHA-256 `613EBE7CF755F07F301A9075E91399A2FC8B67359D823C772C352FA826874440`이다.
++- 고정 LBA 시험 디스크는 같은 이름의 BIN/CUE이며 BIN SHA-256은 `E04FAD466DCE14B3705B5345E1D5646DFF1FBC5935B2115E83AD4593778FD0A0`이다. 506개 데이터 파일 LBA와 COMM.DAT/IMG/SND의 307/667/891이 모두 원본과 일치했다.
++- 에뮬레이터는 실행하지 않았다. v214는 실기 검증 대기 후보이며 `bible_current.txt`의 성공 기준본은 갱신하지 않는다. 되돌리기 기준은 v210이다.
++- `package_patch_to_cue.py`는 원본에 없는 SYSTEM.CNF를 추가해 모든 LBA를 밀었으므로 이 프로젝트의 시험 디스크 제작에 사용하지 않는다. `package_test_iso.py`와 `arc1_v104_layout.xml` 경로만 사용한다.
+diff --git a/05_docs/test_log.txt b/05_docs/test_log.txt
+--- a/05_docs/test_log.txt
++++ b/05_docs/test_log.txt
+@@ -2245,0 +2246,17 @@
++
++2026-08-13 | v214 엄격 표식형 A/B 동적 캐시 선택기 | 435개 상태저장 점유 감사 + 실제 MIPS 미니 실행 + 상주 루틴/포인터 감사 + 고정 LBA ISO 검증 | STATIC PASS, RUNTIME PENDING.
++- 기준 ZIP은 v210 `arc1_v210_sd031_slots_controls.zip`, SHA-256 `7FB963135C753CBF509F9E722BF826856B04D456D29743A0B1D8CB5A9B34CAF9`이다.
++- v211 실패 원인은 새 V/Y와 함께 바뀌어야 할 실제 U 보정 경로를 놓친 것이다. 화면에 보인 첫 지도 모양 장면은 세계 지도가 아니라 전투 오버레이였으며, 실제 세계 지도 화면은 별도 상태로 구분했다.
++- 표식 사전 감사: 상태저장 435/435 해독 성공, 실패 0, 활성 패킷 299,742, 가변 SPRT 10,500, `V=255` 표식 서명 기존 사용 0.
++- 구현: 엄격 판정된 동적 캐시 SPRT만 `V=255`로 표시하고, 게임 그림과 A/B 겹침을 센 뒤 A 충돌만 존재할 때 B를 선택한다. B 충돌·무충돌·동시 충돌은 A를 선택한다. 432개 표본에서 동시 충돌은 0이었다.
++- 실제 MIPS 명령 실행 검증 7/7 PASS: A, B, 기존 marker, A-only 충돌, B-only 충돌, A+B 동시 충돌의 보수적 A 복귀, 13x12 비캐시 패킷 오탐 방지.
++- `audit_resident_routines.py`: RAM 포인터 4,093개 중 범위 밖 0, decoder 문제 0, frame routine 문제 0.
++- v210 대비 변경 멤버는 `PSX.EXE` 하나다. `COMM.IMG`와 모든 DAT는 v210과 동일하다. 상주 코드 크기와 힙 경계도 v210과 동일하다.
++- 첫 패키징은 `package_patch_to_cue.py`가 SYSTEM.CNF를 추가해 506개 LBA를 4섹터씩 밀어 FAIL 처리했으며 해당 이미지는 폐기했다.
++- `package_test_iso.py --name arc1_v214_marked_ab_cache_selector_TEST_ONLY_613EBE7C`로 고정 LBA 이미지를 다시 만들었다.
++- `verify_iso_layout.py` 결과 원본/빌드 507파일, 데이터 파일 506/506 LBA 유지, COMM.DAT/IMG/SND LBA 307/667/891 유지, 패치 멤버 164/164 일치로 `PASS - safe to run`이다.
++- ZIP SHA-256 `613EBE7CF755F07F301A9075E91399A2FC8B67359D823C772C352FA826874440`.
++- BIN SHA-256 `E04FAD466DCE14B3705B5345E1D5646DFF1FBC5935B2115E83AD4593778FD0A0`; CUE SHA-256 `4A6863CD4BD92EC3309A8F29702F14DAD3A52A7C0BB653FAAD7905AB3B9CE0D1`.
++- v210 메모리카드를 v214 이름으로 복사했으며 SHA-256 `254116939A46340692D4F64C05A3583D000CAE0C961EB2AD378F0DA17947AC68`이다.
++- 에뮬레이터 실행은 금지 지침에 따라 하지 않았다. 런타임은 사용자 콜드부팅 검증 대기다.
++- 되돌리기 기준은 v210이다. v211, v212 계열, v213b는 배포·실행 대상이 아닌 실패 또는 내부 진단본이다.
+diff --git a/05_docs/codex_notes.txt b/05_docs/codex_notes.txt
+--- a/05_docs/codex_notes.txt
++++ b/05_docs/codex_notes.txt
+@@ -1656,0 +1657,23 @@
++
++동적 캐시 A/B 선택에는 엄격 판정과 프레임 전달용 표식이 필요하다 - 2026-08-13
++- 실제 U 보정 디스패처는 `0x8019D074`이며 `0x8016B5D8`에서 `j 0x8019D074`로 들어간다. v211이 수정한 `0x801A2060`의 옛 U 보조 루틴은 현재 렌더링 경로에서 호출되지 않는다. 같은 고정 이동을 다시 시도하지 않는다.
++- v210 고정 캐시 A는 VRAM x=961..981, y=480..491, 패킷 V=224다. 후보 B는 같은 x, y=384..395, V=128이다.
++- 깊이·물리 tpage를 추적해 432개 v211 이전 상태를 재측정하면 A 충돌 3개, B 충돌 7개, A+B 동시 충돌 0개다. 따라서 A나 B 한 곳을 영구 안전지대로 선언할 수 없다.
++- v214의 캐시 문자 판정 조건은 `DMA word count=4`, variable SPRT `0x64`, 물리 4bpp tpage x15/y1(ABR 비트 제외), 글꼴 CLUT 16개 범위, 크기 12x12, U=4+12n, V=128/224/255의 전부다.
++- 위 조건을 만족한 캐시 패킷만 DrawOT 전까지 `V=255`로 임시 표시한다. 상주 프레임 루틴은 `V=255`만 찾아 선택된 실제 V=128/224로 바꾸므로 게임 그림은 캐시 글자로 오인되지 않는다.
++- `V=255` 사전 감사 결과는 상태저장 435개, 활성 패킷 299,742개, 가변 SPRT 10,500개, 기존 표식 서명 0개다. 감사 자료는 `01_work/analysis/arc1_cache_marker_v255/`에 있다.
++- 선택기의 게임 그림 겹침 판정은 현재 물리 tpage가 x15/y1일 때 U 직사각형이 4..87과 겹치고, Y 직사각형이 A(224..235) 또는 B(128..139)와 겹치는지를 센다.
++- 선택 규칙은 충돌 플래그가 A-only(1)일 때만 B다. 무충돌(0), B-only(2), 동시(3)는 A다. 동시 충돌은 432개 표본에서 0이지만 미측정 장면에서는 안전을 보장하지 못하므로 런타임 검증이 계속 필요하다.
++- 표식 전달은 추가 RAM과 상주 공간을 쓰지 않는다. selector 조각은 `0x80193A2C/96`, `0x80193B44/128`, `0x8019D0D0/104`, `0x801A2060/36`을 사용하고 resident frame은 기존 584바이트를 유지한다.
++- resident 배치는 decoder `0x801FF348/568`, huffman `0x801FF580/232`, frame `0x801FF668/584`, 끝/힙 경계 `0x801FF8B0`으로 v210과 같다.
++- 생성된 MIPS를 직접 실행하는 검증에서는 캐시 패킷 V가 255로 바뀌고 선택 V와 업로드 RECT y가 A=224/480 또는 B=128/384로 함께 바뀌는 것을 확인했다.
++- 13x12처럼 크기가 틀린 패킷은 캐시로 표시하지 않는다. 그 패킷이 A를 차지하면 게임 그림 독자로 세어 B를 선택하는 것이 올바른 동작이다.
++- `audit_resident_routines.py`의 원본 빈 칸 7개 경고는 v210의 누적 COMM.IMG에 이미 존재한다. v214는 COMM.IMG를 바꾸지 않았으므로 v214 신규 회귀로 해석하지 않는다.
++- v214 ZIP은 v210 대비 PSX.EXE만 바뀐다. 아카이브가 원본 대비 164개 멤버를 담는 것은 누적 한글 패치이기 때문이며 v214가 164개를 새로 바꾼 것이 아니다.
++
++Arc the Lad 시험 디스크는 원본에 없는 SYSTEM.CNF를 추가하면 안 된다 - 2026-08-13
++- `package_patch_to_cue.py`는 SYSTEM.CNF를 새로 넣고 PSX.EXE를 앞에 배치해 원본 507파일을 508파일로 만들며 COMM.DAT/IMG/SND와 나머지 506개 데이터 파일 LBA를 민다. 이 프로젝트에는 사용하지 않는다.
++- 검증된 경로는 `package_test_iso.py`가 `01_work/arc1_v104_layout.xml`을 사용하는 방식이다. PSX.EXE의 원래 284섹터를 dummy로 유지하고 커진 PSX.EXE를 디스크 끝으로 옮겨 데이터 506개의 LBA를 보존한다.
++- 디스크 제작 후에는 반드시 `verify_iso_layout.py <bin> <patch.zip>`을 실행하고 `507 files`, `506 data files kept their sector number`, COMM 307/667/891, 패치 멤버 전부 일치, `RESULT: PASS`를 확인한다.
++- v214의 첫 일반 패키징 이미지는 이 검사에서 FAIL하여 사용 금지 처리했고, 고정 LBA로 다시 만든 BIN은 PASS했다.
++- 실제 세계 지도와 지도 모양의 전투 오버레이는 서로 다른 장면이다. 상태저장이나 스크린샷을 분석할 때 둘을 같은 장면으로 부르지 않는다.

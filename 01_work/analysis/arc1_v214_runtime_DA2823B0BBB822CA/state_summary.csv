@@ -1,0 +1,5 @@
+﻿state,savestate,destination,upload_rect,owners_used,active_count,active_mask,next_slot,owner_shape_selected,owner_shape_A,owner_shape_B,active_ot_cache_count,active_ot_mask,active_ot_missing,matched_objects,stale_packets
+1,HASH-DA2823B0BBB822CA_1.sav,A,"976,480,3,12",28,0,0x00000000,23,28/28,28/28,0/28,7,0x00780440,0x00780440,0,0
+2,HASH-DA2823B0BBB822CA_2.sav,A,"961,480,3,12",28,0,0x00000000,3,28/28,28/28,0/28,20,0x0FF01C57,0x0FF01C57,0,0
+3,HASH-DA2823B0BBB822CA_3.sav,A,"967,480,3,12",28,0,0x00000000,0,28/28,28/28,0/28,8,0x0E000306,0x0E000306,0,0
+4,HASH-DA2823B0BBB822CA_4.sav,A,"976,480,3,12",28,0,0x00000000,21,28/28,28/28,0/28,24,0x021FFFC8,0x021FFFC8,0,0

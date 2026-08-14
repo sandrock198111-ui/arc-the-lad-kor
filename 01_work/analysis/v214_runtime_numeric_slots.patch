@@ -1,0 +1,18 @@
+diff --git a/02_scripts/analyze_arc1_v214_runtime.py b/02_scripts/analyze_arc1_v214_runtime.py
+--- a/02_scripts/analyze_arc1_v214_runtime.py
++++ b/02_scripts/analyze_arc1_v214_runtime.py
+@@ -240,7 +240,13 @@ def main() -> None:
+     parser = argparse.ArgumentParser()
+     parser.add_argument("prefix", nargs="?", default=DEFAULT_PREFIX)
+     args = parser.parse_args()
+-    states = sorted(SAVE_DIR.glob(f"{args.prefix}_*.sav"), key=slot_number)
++    states = sorted(
++        (
++            path for path in SAVE_DIR.glob(f"{args.prefix}_*.sav")
++            if path.stem.rsplit("_", 1)[-1].isdigit()
++        ),
++        key=slot_number,
++    )
+     if not states:
+         raise SystemExit("no matching save states")
+ 

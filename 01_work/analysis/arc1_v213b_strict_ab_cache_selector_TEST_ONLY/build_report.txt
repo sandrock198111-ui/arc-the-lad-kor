@@ -1,0 +1,53 @@
+v213 TEST ONLY - strict per-frame A/B dynamic-cache selector
+base=arc1_v210_sd031_slots_controls.zip
+base_sha256=7FB963135C753CBF509F9E722BF826856B04D456D29743A0B1D8CB5A9B34CAF9
+output=arc1_v213b_strict_ab_cache_selector_TEST_ONLY_E98E4DD6.zip
+sha256=E98E4DD6CD77C2D7421C0011A2DBD5511CE102412C78630B82F9556B295D32BE
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+canonical_virtual_row=40 unchanged
+destination_A=x961..981,y480..491,V224
+destination_B=x961..981,y384..395,V128
+dynamic_identity=DMA4+SPRT+physical_tpage+font_CLUT+12x12+cache_U+V(A/B)
+tpage_ABR_bits=ignored for physical-page identity
+selection=B only for conflict_flags==A_only
+simultaneous_A_B_conflict=fallback_A (unseen in 432 measured states)
+measured_pre_v211_states=432
+measured_A_conflicts=3
+measured_B_conflicts=7
+measured_simultaneous_A_B_conflicts=0
+COMM.IMG=byte-identical to v210 PASS
+all_DAT_members=byte-identical to v210 PASS
+changed_members=PSX.EXE
+PSX_changed_bytes=688
+resident_growth=0
+resident_used=5356/5356
+resident_free=0
+heap_boundary=0x801FF8B0 unchanged
+startup_copy=5356 unchanged
+selector overlap 0x80193A2C / 96 bytes
+selector entry 0x80193B44 / 128 bytes
+selector classify 0x8019D0D0 / 104 bytes
+selector finish 0x801A2060 / 36 bytes
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+live_dispatch=byte-identical PASS
+strict_model_A=PASS
+strict_model_ABR_B=PASS
+strict_model_A_conflict=PASS
+strict_model_B_conflict=PASS
+strict_model_simultaneous=PASS
+selector_0x80193A2C_branches=PASS
+selector_0x80193B44_branches=PASS
+selector_0x8019D0D0_branches=PASS
+selector_0x801A2060_branches=PASS
+frame=0x801FF668/584 bytes
+frame_r3000_load_delay=PASS
+frame_branch_delay=PASS
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+capstone_disassembly=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+rollback=v210; v211 and v212-series are failed/nonpackaged probes

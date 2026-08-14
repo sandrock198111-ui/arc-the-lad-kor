@@ -1,0 +1,51 @@
+v212 TEST ONLY - per-frame A/B dynamic-cache destination selector
+base=arc1_v210_sd031_slots_controls.zip
+base_sha256=7FB963135C753CBF509F9E722BF826856B04D456D29743A0B1D8CB5A9B34CAF9
+output=arc1_v212_ab_cache_selector_TEST_ONLY_067F6FC6.zip
+sha256=067F6FC6B3F9F8F2806A7B9670D215515E5861BDFB8C44D0D019DD1F9ECE623F
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+canonical_virtual_row=40 unchanged
+destination_A=x961..981,y480..491,V=224
+destination_B=x961..981,y384..395,V=128
+selection=A unless a non-font variable SPRT on 4bpp tpage31 overlaps A
+persistent_B_packets=canonicalised_to_V224_before_frame_scan
+measured_pre_v211_states=432
+measured_A_conflicts=3
+measured_B_conflicts=7
+measured_simultaneous_A_B_conflicts=0
+scope_limit=selector guards measured SPRT conflicts; whole-game runtime remains pending
+COMM.IMG=byte-identical to v210 PASS
+all_DAT_members=byte-identical to v210 PASS
+changed_members=PSX.EXE
+PSX_changed_bytes=604
+resident_growth=0
+resident_used=5356/5356
+resident_free=0
+heap_boundary=0x801FF8B0 unchanged
+startup_copy=5356 unchanged
+selector entry 0x80193B44 / 128 bytes
+selector check 0x8019D0D0 / 104 bytes
+selector finish 0x801A2060 / 36 bytes
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+live_dispatch_0x8019D074=byte-identical PASS
+live_dispatch_hook=unchanged PASS
+selector_reference_graph=PASS
+selector_model_A=PASS
+selector_model_persistent_B=PASS
+selector_model_A_conflict=PASS
+selector_model_B_only=PASS
+frame=0x801FF668/584 bytes
+frame_r3000_load_delay=PASS
+frame_branch_delay=PASS
+selector_0x80193B44_branches=PASS
+selector_0x8019D0D0_branches=PASS
+selector_0x801A2060_branches=PASS
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+capstone_disassembly=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+rollback=v210; v211 is a failed fixed-B probe

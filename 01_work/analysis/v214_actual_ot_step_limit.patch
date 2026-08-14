@@ -1,0 +1,15 @@
+diff --git a/02_scripts/verify_arc1_v214_actual_ot_selector.py b/02_scripts/verify_arc1_v214_actual_ot_selector.py
+--- a/02_scripts/verify_arc1_v214_actual_ot_selector.py
++++ b/02_scripts/verify_arc1_v214_actual_ot_selector.py
+@@ -79,7 +79,11 @@ def main() -> None:
+ 
+         machine = Machine(exe, memory)
+         machine.r[v214.build.A0] = a0
+-        machine.run()
++        while machine.pc != 0x801FF668 and machine.steps < 100000:
++            machine.step()
++        if machine.pc != 0x801FF668:
++            raise SystemExit(
++                f"slot{slot_number(state)} selector did not reach frame: 0x{machine.pc:08X}")
+         marked = [address for address in packet_addresses
+                   if machine.load(address + 13, 1) == v214.MARKER_V]

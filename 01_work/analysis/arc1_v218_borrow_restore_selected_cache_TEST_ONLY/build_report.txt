@@ -1,0 +1,85 @@
+v218 TEST ONLY - one-DrawOT borrow/restore of selected cache rectangle
+base=arc1_v210_sd031_slots_controls.zip
+base_sha256=7FB963135C753CBF509F9E722BF826856B04D456D29743A0B1D8CB5A9B34CAF9
+output=arc1_v218_borrow_restore_selected_cache_TEST_ONLY_87942B4B.zip
+sha256=87942B4B2E493B48911C82139A051F6A5752A974D1ED8C2C0B0E759131FE42CB
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+canonical_virtual_row=40 unchanged
+destination_A=x961..981,y480..491,V224
+destination_B=x961..981,y384..395,V128
+dynamic_identity=DMA4+SPRT+physical_tpage+font_CLUT+12x12+cache_U+V(A/B)
+tpage_ABR_bits=ignored for physical-page identity
+selection=B only for conflict_flags==A_only
+simultaneous_A_B_conflict=fallback_A (unseen in 432 measured states)
+measured_pre_v211_states=432
+measured_A_conflicts=3
+measured_B_conflicts=7
+measured_simultaneous_A_B_conflicts=0
+COMM.IMG=byte-identical to v210 PASS
+all_DAT_members=byte-identical to v210 PASS
+changed_members=PSX.EXE
+PSX_changed_bytes=731
+resident_growth=0
+resident_used=5356/5356
+resident_free=0
+heap_boundary=0x801FF8B0 unchanged
+startup_copy=5356 unchanged
+selector overlap 0x80193A2C / 96 bytes
+selector entry 0x80193B44 / 128 bytes
+selector classify 0x8019D0D0 / 104 bytes
+selector finish 0x801A2060 / 0 bytes
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+live_dispatch=byte-identical PASS
+strict_model_A=PASS
+strict_model_ABR_B=PASS
+strict_model_A_conflict=PASS
+strict_model_B_conflict=PASS
+strict_model_simultaneous=PASS
+selector_0x80193A2C_branches=PASS
+selector_0x80193B44_branches=PASS
+selector_0x8019D0D0_branches=PASS
+selector_0x801A2060_branches=PASS
+frame=0x801FF668/584 bytes
+frame_r3000_load_delay=PASS
+frame_branch_delay=PASS
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+capstone_disassembly=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+rollback=v210; v211 and v212-series are failed/nonpackaged probes
+v214_marker_handoff=PASS
+transient_packet_marker_V=255
+strict_selector_writes_marker_only_to=DMA4+SPRT+physical_tpage+font_CLUT+12x12+cache_U+V(A/B/marker)
+resident_frame_accepts_only_marker_V=255 before rewriting selected real V
+marker_corpus_savestates=435
+marker_corpus_active_packets=299742
+marker_corpus_existing_signature=0
+selector_python_model=PASS
+archived_marker_frame_match=PASS
+runtime=PENDING; emulator_run=NO
+v216_real_packet_layout=PASS (inherits corrected v215 u16 width/height)
+selector_handoff=0x80193A80 inside guarded overlap tail
+selector_finish_fragment=removed
+game_owned_0x801A2060_0x801A2083=byte-identical_to_v210 PASS
+direct_references_to_old_finish=0 PASS
+frame_selected_Y=A480_or_B384; packet_V=low_byte_224_or_128
+frame_work_buffer=SP directly; S2 temporary removed
+resident_frame_size=584 unchanged
+resident_growth=0; heap_boundary=0x801FF8B0 unchanged
+runtime=PENDING; emulator_run=NO
+rollback=v210; v214 and v215 are runtime failures
+parent=arc1_v216_relocate_selector_handoff_TEST_ONLY_25090AB2.zip
+resident_frame=0x801FF668 size=584 unchanged
+temporary_backup=stack+0x80 size=504
+borrow_rect=x961,y(selected_384_or_480),w21,h12
+active_call_order=StoreImage -> GPU_sync -> cache_LoadImage(s) -> DrawOT -> GPU_sync -> restore_LoadImage
+inactive_call_order=DrawOT_only
+persistent_marker_policy=any_strict_V255_marker_keeps_all_28_slots_live_next_frame
+persistent_RAM_growth=0; resident_growth=0; heap_boundary=unchanged
+new_VRAM=0; DAT=unchanged; COMM.IMG=unchanged
+runtime=PENDING; emulator_run=NO
+rollback=v210; v214-v217 are runtime failures

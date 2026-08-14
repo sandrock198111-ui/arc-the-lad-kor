@@ -1,0 +1,13 @@
+diff --git a/02_scripts/build_arc1_v215_correct_packet_layout_selector.py b/02_scripts/build_arc1_v215_correct_packet_layout_selector.py
+--- a/02_scripts/build_arc1_v215_correct_packet_layout_selector.py
++++ b/02_scripts/build_arc1_v215_correct_packet_layout_selector.py
+@@ -87,7 +87,8 @@ def selector_blobs(frame: int, rect: int) -> tuple[bytes, bytes, bytes, bytes]:
+         old.move(build.K1, build.V0),
+         branch(0x04, build.K1, build.ZERO, build.CLASSIFY + 13 * 4, dynamic),
+         old.i_type(0x09, build.K1, build.K1, -old.CELL),
+-        branch(0x01, build.K1, 1, build.CLASSIFY + 13 * 4),
++        branch(0x01, build.K1, 1, build.CLASSIFY + 15 * 4,
++               build.CLASSIFY + 13 * 4),
+         build.NOP,
+         branch(0x04, build.ZERO, build.ZERO, build.CLASSIFY + 17 * 4, game),
+         build.NOP,

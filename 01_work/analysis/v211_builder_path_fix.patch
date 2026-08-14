@@ -1,0 +1,6 @@
+diff --git a/02_scripts/build_arc1_v211_cache_row32_worldmap_probe.py b/02_scripts/build_arc1_v211_cache_row32_worldmap_probe.py
+--- a/02_scripts/build_arc1_v211_cache_row32_worldmap_probe.py
++++ b/02_scripts/build_arc1_v211_cache_row32_worldmap_probe.py
+@@ -31,1 +31,1 @@
+-ANALYSIS = ROOT / "01_work/analysis/arc1_v211_cache_row32_worldmap_probe"
++ANALYSIS = ROOT / "01_work/analysis/arc1_v211_cache_row32_worldmap_probe_TEST_ONLY"

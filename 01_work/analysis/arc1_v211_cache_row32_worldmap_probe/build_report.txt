@@ -1,0 +1,37 @@
+v211 TEST ONLY - fixed cache row32 world-map overlap probe
+base=arc1_v210_sd031_slots_controls.zip
+base_sha256=7FB963135C753CBF509F9E722BF826856B04D456D29743A0B1D8CB5A9B34CAF9
+output=arc1_v211_cache_row32_worldmap_probe_TEST_ONLY_54D7B646.zip
+sha256=54D7B646ACB0629BEB84FD9786BC5437B5493A596CDB315070926210FBF12A6A
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+confirmed_v210_collision=world map page15,1 V160..255 contains cache V224
+cache_virtual_row=40->32
+cache_upload_y=480->384
+cache_texture_v=224->128
+cache_x=961 unchanged
+cache_u=4 unchanged
+cache_slots=28 unchanged
+dynamic_sources=unchanged
+lookup_table=unchanged
+COMM.IMG=byte-identical to v210 PASS
+all_DAT_members=byte-identical to v210 PASS
+PSX_changed_bytes=6
+low_helper_patch_file=0x87860
+low_classifier_patch_file=0x8788C
+decoder_patch_file=0x8F088
+frame_patch_file=0x8F324
+upload_rect_file=0x8EE68
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+resident_used=5356/5356
+resident_free=0
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+capstone_disassembly=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+expected=world map clean; Korean text remains visible
+known_risk=y384 is not globally proven free; this build is a probe only
+rollback=v210 for byte comparison; v208/v194 for earlier stable checkpoints

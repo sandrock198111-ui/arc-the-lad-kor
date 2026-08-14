@@ -1,0 +1,32 @@
+80193B44  move     $a3, $zero
+80193B48  lw       $t0, ($a0)
+80193B4C  move     $a2, $zero
+80193B50  sll      $t0, $t0, 8
+80193B54  srl      $t0, $t0, 8
+80193B58  sltiu    $t2, $t0, 1
+80193B5C  srl      $t1, $t0, 0x15
+80193B60  or       $t2, $t2, $t1
+80193B64  bnez     $t2, 0x801a2060
+80193B68  lui      $t2, 0x8000
+80193B6C  or       $t2, $t2, $t0
+80193B70  lw       $t3, ($t2)
+80193B74  lbu      $t5, 7($t2)
+80193B78  lhu      $t4, 4($t2)
+80193B7C  addiu    $t6, $t5, -0xe1
+80193B80  bnez     $t6, 0x80193b90
+80193B84  andi     $t6, $t4, 0x1ff
+80193B88  addiu    $t6, $t6, -0x1f
+80193B8C  sltiu    $a2, $t6, 1
+80193B90  beqz     $a2, 0x8019d124
+80193B94  andi     $t6, $t5, 0xfc
+80193B98  addiu    $t6, $t6, -0x64
+80193B9C  bnez     $t6, 0x8019d124
+80193BA0  lhu      $t6, 0xe($t2)
+80193BA4  lbu      $t7, 0xc($t2)
+80193BA8  lbu      $t9, 0xd($t2)
+80193BAC  addiu    $v0, $t6, -0x7fc0
+80193BB0  sltiu    $v0, $v0, 0x10
+80193BB4  beqz     $v0, 0x8019d0f0
+80193BB8  addiu    $v1, $t9, -0x80
+80193BBC  j        0x8019d0d0
+80193BC0  nop      

@@ -1,0 +1,8 @@
+savestates_total=449
+savestates_decoded=449
+savestates_failed=0
+active_packets=309020
+active_variable_sprts=10930
+existing_marker_signature_V255=0
+existing_loose_V224_cache_signature=993
+loose_V224_non12x12=0

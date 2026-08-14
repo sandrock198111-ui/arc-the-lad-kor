@@ -1,0 +1,35 @@
+v212b TEST ONLY - corrected A/B cache selector entry
+base=arc1_v212_ab_cache_selector_TEST_ONLY_067F6FC6.zip
+base_sha256=067F6FC6B3F9F8F2806A7B9670D215515E5861BDFB8C44D0D019DD1F9ECE623F
+output=arc1_v212b_ab_cache_selector_TEST_ONLY_3002A89C.zip
+sha256=3002A89C48B7F1D321CBE9F945F75B09893A971493C7B8A4A94A9C1C31C8E793
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+v212_failure=font-CLUT path fell through after 0x80193BC0
+v212b_fix=font path jumps to selector_check; non-font path branches to game check
+selector_entry_changed_bytes=58
+selector_check=byte-identical to v212 PASS
+selector_finish=byte-identical to v212 PASS
+frame=byte-identical to v212 PASS
+COMM.IMG=byte-identical to v210 PASS
+all_DAT_members=byte-identical to v210 PASS
+resident_growth=0
+resident_used=5356/5356
+heap_boundary=0x801FF8B0 unchanged
+selector entry 0x80193B44 / 128 bytes
+selector check 0x8019D0D0 / 104 bytes
+selector finish 0x801A2060 / 36 bytes
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+selector_0x80193B44_branches=PASS
+frame=0x801FF668/584 bytes
+frame_r3000_load_delay=PASS
+frame_branch_delay=PASS
+continuation_reference=PASS
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+capstone_disassembly=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+rollback=v210; do not use v211 or v212

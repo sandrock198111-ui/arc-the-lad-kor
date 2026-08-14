@@ -1,0 +1,37 @@
+v212d TEST ONLY - exact-bounded per-frame A/B cache selector
+base=arc1_v212b_ab_cache_selector_TEST_ONLY_3002A89C.zip
+base_sha256=3002A89C48B7F1D321CBE9F945F75B09893A971493C7B8A4A94A9C1C31C8E793
+output=arc1_v212d_ab_cache_selector_exact_bounds_TEST_ONLY_CA6CDDFD.zip
+sha256=CA6CDDFD2E15D8BC718A227E6793BCC47DD21CDF48C429AE8480D2032B0D77D3
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+selector_link_range=1..0x1FFFFF exact
+selector_link_0=STOP PASS
+selector_link_0x1FFFFF=ACCEPT PASS
+selector_link_0x200000=STOP PASS
+selector_link_0xFFFFFF=STOP PASS
+selector_continuation=font and non-font paths both guarded PASS
+selector_check_finish_frame=byte-identical to v212b PASS
+COMM.IMG=byte-identical to v210 PASS
+all_DAT_members=byte-identical to v210 PASS
+selector_entry_changed_bytes=91
+resident_growth=0
+resident_used=5356/5356
+heap_boundary=0x801FF8B0 unchanged
+selector entry 0x80193B44 / 128 bytes
+selector check 0x8019D0D0 / 104 bytes
+selector finish 0x801A2060 / 36 bytes
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+selector_0x80193B44_branches=PASS
+frame=0x801FF668/584 bytes
+frame_r3000_load_delay=PASS
+frame_branch_delay=PASS
+continuation_reference=PASS
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+capstone_disassembly=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+rollback=v210; do not use v211/v212/v212b; v212c produced no output

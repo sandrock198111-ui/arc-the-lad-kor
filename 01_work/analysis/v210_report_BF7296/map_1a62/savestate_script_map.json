@@ -1,0 +1,267 @@
+[
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-BF7296DCC156CC8A_1.sav",
+    "best_match": {
+      "file": "31/S3041.DAT",
+      "equal_bytes": 913,
+      "compared_bytes": 1792,
+      "ratio": 0.5094866071428571
+    },
+    "top_matches": [
+      {
+        "file": "31/S3041.DAT",
+        "equal_bytes": 913,
+        "compared_bytes": 1792,
+        "ratio": 0.5094866071428571
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 913,
+        "compared_bytes": 1792,
+        "ratio": 0.5094866071428571
+      },
+      {
+        "file": "B/SB031.DAT",
+        "equal_bytes": 913,
+        "compared_bytes": 1792,
+        "ratio": 0.5094866071428571
+      },
+      {
+        "file": "B/SB061.DAT",
+        "equal_bytes": 913,
+        "compared_bytes": 1792,
+        "ratio": 0.5094866071428571
+      },
+      {
+        "file": "C1/SC071.DAT",
+        "equal_bytes": 913,
+        "compared_bytes": 1792,
+        "ratio": 0.5094866071428571
+      },
+      {
+        "file": "C1/SC072.DAT",
+        "equal_bytes": 913,
+        "compared_bytes": 1792,
+        "ratio": 0.5094866071428571
+      },
+      {
+        "file": "MAP/SMAP.DAT",
+        "equal_bytes": 913,
+        "compared_bytes": 1792,
+        "ratio": 0.5094866071428571
+      },
+      {
+        "file": "D/SD041.DAT",
+        "equal_bytes": 910,
+        "compared_bytes": 1792,
+        "ratio": 0.5078125
+      },
+      {
+        "file": "D/SD051.DAT",
+        "equal_bytes": 910,
+        "compared_bytes": 1792,
+        "ratio": 0.5078125
+      },
+      {
+        "file": "D/SD061.DAT",
+        "equal_bytes": 910,
+        "compared_bytes": 1792,
+        "ratio": 0.5078125
+      }
+    ],
+    "dialogues": []
+  },
+  {
+    "state": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\savestates\\HASH-BF7296DCC156CC8A_2.sav",
+    "best_match": {
+      "file": "31/S3041.DAT",
+      "equal_bytes": 791,
+      "compared_bytes": 1792,
+      "ratio": 0.44140625
+    },
+    "top_matches": [
+      {
+        "file": "31/S3041.DAT",
+        "equal_bytes": 791,
+        "compared_bytes": 1792,
+        "ratio": 0.44140625
+      },
+      {
+        "file": "6/S6054.DAT",
+        "equal_bytes": 791,
+        "compared_bytes": 1792,
+        "ratio": 0.44140625
+      },
+      {
+        "file": "B/SB031.DAT",
+        "equal_bytes": 791,
+        "compared_bytes": 1792,
+        "ratio": 0.44140625
+      },
+      {
+        "file": "B/SB061.DAT",
+        "equal_bytes": 791,
+        "compared_bytes": 1792,
+        "ratio": 0.44140625
+      },
+      {
+        "file": "C1/SC071.DAT",
+        "equal_bytes": 791,
+        "compared_bytes": 1792,
+        "ratio": 0.44140625
+      },
+      {
+        "file": "C1/SC072.DAT",
+        "equal_bytes": 791,
+        "compared_bytes": 1792,
+        "ratio": 0.44140625
+      },
+      {
+        "file": "MAP/SMAP.DAT",
+        "equal_bytes": 791,
+        "compared_bytes": 1792,
+        "ratio": 0.44140625
+      },
+      {
+        "file": "5/S5051.DAT",
+        "equal_bytes": 788,
+        "compared_bytes": 1792,
+        "ratio": 0.43973214285714285
+      },
+      {
+        "file": "D/SD041.DAT",
+        "equal_bytes": 788,
+        "compared_bytes": 1792,
+        "ratio": 0.43973214285714285
+      },
+      {
+        "file": "D/SD051.DAT",
+        "equal_bytes": 788,
+        "compared_bytes": 1792,
+        "ratio": 0.43973214285714285
+      }
+    ],
+    "dialogues": [
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11701E",
+        "ram_payload_start": "0x117020",
+        "file_payload_start": "0x47820",
+        "end_exclusive": "0x47848",
+        "length": 40,
+        "prefix_kind": "none",
+        "payload_hex": "e2 8b dd d6 24 dd 22 2d 35 38 1c 36 58 20 39 9f 29 21 1b 1f b7 dd d8 20 33 2e 1c 3d 26 1d 87 de 0f 2a de c4 3e 2e 36 30"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1170BA",
+        "ram_payload_start": "0x1170BC",
+        "file_payload_start": "0x478BC",
+        "end_exclusive": "0x478E5",
+        "length": 41,
+        "prefix_kind": "none",
+        "payload_hex": "e2 81 2a 87 de 0f 1d 54 30 28 1d 3e 24 4a 29 3a 1b 23 3b 27 46 2f a9 1c ae 23 1e 21 dd 07 46 24 dd c3 23 74 dc 30 44 32 58"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x117116",
+        "ram_payload_start": "0x117118",
+        "file_payload_start": "0x47918",
+        "end_exclusive": "0x4792E",
+        "length": 22,
+        "prefix_kind": "none",
+        "payload_hex": "e2 8f dd 05 54 2b 58 33 1e 1b 2e 36 35 55 26 24 36 85 28 9f 26 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x11715E",
+        "ram_payload_start": "0x117160",
+        "file_payload_start": "0x47960",
+        "end_exclusive": "0x47982",
+        "length": 34,
+        "prefix_kind": "none",
+        "payload_hex": "e2 82 1e 24 85 23 28 85 1c b6 a9 2a 3f 39 e6 01 2e 32 28 3b ae 23 1f 3e 3a 32 1f dd 37 c9 1d 1c 35 37"
+      },
+      {
+        "marker": "0x19",
+        "ram_marker_offset": "0x1171B2",
+        "ram_payload_start": "0x1171B4",
+        "file_payload_start": "0x479B4",
+        "end_exclusive": "0x479C5",
+        "length": 17,
+        "prefix_kind": "none",
+        "payload_hex": "e2 96 1c 61 30 dd 52 2f 44 39 dd e0 1b 21 3e 32 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x11725A",
+        "ram_payload_start": "0x11725E",
+        "file_payload_start": "0x47A5E",
+        "end_exclusive": "0x47A79",
+        "length": 27,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 85 7a 23 dd b1 22 36 e6 01 dd 6f 7a 23 28 2b 6d 41 26 38 1d 1b df 61 df 61 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1172AA",
+        "ram_payload_start": "0x1172AE",
+        "file_payload_start": "0x47AAE",
+        "end_exclusive": "0x47AC6",
+        "length": 24,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 9a 53 24 d5 d1 e6 01 41 32 30 38 de 2a 1b 21 9a 21 3e 32 22 20 1b 3c"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1173D4",
+        "ram_payload_start": "0x1173D8",
+        "file_payload_start": "0x47BD8",
+        "end_exclusive": "0x47BF6",
+        "length": 30,
+        "prefix_kind": "control_0100",
+        "payload_hex": "e2 87 1f 2a dd b8 dd 36 45 ce 23 91 29 1f 28 89 3d 2e 32 28 85 1c dd 52 30 38 3f 22 1c 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x117426",
+        "ram_payload_start": "0x11742A",
+        "file_payload_start": "0x47C2A",
+        "end_exclusive": "0x47C3F",
+        "length": 21,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 97 3a 2d 2f 3a 2a 2b 1f 51 1c 87 2a 20 39 28 6e 38 1d 1b 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x117470",
+        "ram_payload_start": "0x117474",
+        "file_payload_start": "0x47C74",
+        "end_exclusive": "0x47C97",
+        "length": 35,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 8a b2 20 29 21 22 1c 28 24 e6 01 dd d4 b2 01 dd 08 21 2a 8e 45 23 e6 01 45 1d 2a 29 21 22 2e 36 35 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x1174C8",
+        "ram_payload_start": "0x1174CC",
+        "file_payload_start": "0x47CCC",
+        "end_exclusive": "0x47CE1",
+        "length": 21,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 8d 2d 2f dd 27 4a 21 ae 23 dd bd b5 e6 01 1e 20 1d 1b 1d 37"
+      },
+      {
+        "marker": "0x17",
+        "ram_marker_offset": "0x117568",
+        "ram_payload_start": "0x11756C",
+        "file_payload_start": "0x47D6C",
+        "end_exclusive": "0x47D7A",
+        "length": 14,
+        "prefix_kind": "control_0000",
+        "payload_hex": "e2 a4 dd 56 47 1c de f2 28 2e 29 4b 35 37"
+      }
+    ]
+  }
+]

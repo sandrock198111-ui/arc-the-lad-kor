@@ -1,0 +1,4 @@
+﻿state,savestate,destination,upload_rect,owners_used,active_count,active_mask,next_slot,owner_shape_selected,owner_shape_A,owner_shape_B,active_ot_cache_count,active_ot_mask,active_ot_missing,matched_objects,stale_packets
+1,HASH-61AED07119A5524A_1.sav,B,"976,384,3,12",28,0,0x00000000,24,4/28,0/28,4/28,0,0x00000000,0x00000000,0,0
+2,HASH-61AED07119A5524A_2.sav,A,"961,480,3,12",28,0,0x00000000,4,16/28,16/28,8/28,0,0x00000000,0x00000000,0,0
+3,HASH-61AED07119A5524A_3.sav,A,"979,480,3,12",28,0,0x00000000,27,28/28,28/28,0/28,0,0x00000000,0x00000000,0,0
