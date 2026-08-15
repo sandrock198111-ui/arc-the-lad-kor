@@ -1,0 +1,6 @@
+﻿state,savestate,destination,upload_rect,owners_used,active_count,active_mask,next_slot,owner_shape_selected,owner_shape_A,owner_shape_B,active_ot_cache_count,active_ot_mask,active_ot_missing,matched_objects,stale_packets
+1,HASH-46CF6CB77FE1304F_1.sav,A,"964,480,3,12",28,1,0x00000010,7,4/28,4/28,0/28,0,0x00000000,0x00000000,0,0
+2,HASH-46CF6CB77FE1304F_2.sav,A,"970,480,3,12",28,3,0x00003800,14,20/28,20/28,0/28,0,0x00000000,0x00000000,0,0
+3,HASH-46CF6CB77FE1304F_3.sav,A,"973,480,3,12",28,2,0x00020008,15,24/28,24/28,0/28,0,0x00000000,0x00000000,0,0
+4,HASH-46CF6CB77FE1304F_4.sav,A,"961,480,3,12",28,0,0x00000000,17,24/28,24/28,0/28,0,0x00000000,0x00000000,0,0
+5,HASH-46CF6CB77FE1304F_5.sav,A,"970,480,3,12",28,0,0x00000000,24,24/28,24/28,0/28,0,0x00000000,0x00000000,0,0
