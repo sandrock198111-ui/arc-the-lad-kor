@@ -1,0 +1,9 @@
+base=arc1_v210_sd031_slots_controls.zip sha=7FB963135C753CBF509F9E722BF826856B04D456D29743A0B1D8CB5A9B34CAF9
+glyph_source=arc1_v151_free_the_sprite_cell_A4358FEE.zip
+movers=123 (39 one-byte deferred) replaced_total=6558
+movers_with_zero_direct_refs=0
+unit_cache_pressure_max before=31 after=28
+units_over_7 before=1412 after=967
+exe_diff_bytes=1242 font_diff_bytes=1962
+zip=arc1_v231_static_promotion_restored162_TEST_ONLY_15DDA0E8.zip
+zip_sha256=81030C6BBEE4BBA70008C262017B62EE5699AF1413469FBA2C6957922CE3E3D7
