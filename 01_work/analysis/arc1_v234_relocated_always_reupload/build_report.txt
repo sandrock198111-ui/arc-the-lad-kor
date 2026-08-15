@@ -1,0 +1,6 @@
+base=arc1_v233_cache_relocation_TEST_ONLY_EA0E5B9E.zip
+patched resident copy source: 0x801FF49C beq t7,t4 -> nop (file 0x8EFC4, was 0x11EC0027)
+effect: every active cache slot re-uploads each frame; survives the flight scene's zero-fill over (999,420)
+exe_changed_bytes=3
+zip=arc1_v234_relocated_always_reupload_TEST_ONLY_202F62B7.zip
+zip_sha256=5C3E40646BCD72E4CA25B6DDF19404F2A7FF23321F88DE4A0E14E0D8CD3DAF45
