@@ -1577,3 +1577,8 @@
 - ZIP `03_output/arc1_v231_static_promotion_restored162_TEST_ONLY_15DDA0E8.zip`, SHA-256 `81030C6BBEE4BBA70008C262017B62EE5699AF1413469FBA2C6957922CE3E3D7`.
 - 시험 디스크 `03_output/V231.cue`, BIN SHA-256 `32061750987E6DDA1027B3DA470789011D2123B6D689B6E363227CB783FFFBE2`. verify_iso_layout PASS(506 LBA 유지, 164/164 일치).
 - 이주표는 `01_work/analysis/arc1_v231_static_promotion/promotion_map.csv`(칸 단위 롤백 자료). 월드맵 겹침은 이번 범위가 아니며 실기 검증 대기 TEST ONLY다. 되돌리기: v210.
+
+2026-08-15 - v231 실기 실패(글리프 원천 오류)와 v232 재빌드
+- v231은 콜드부팅에서 이주 글자가 타글자·한자로 렌더돼 실패했다. VRAM은 디스크와 일치했으므로 경로가 아니라 원천이 문제였다. old_physical_index(v163 배치)를 v151 폰트에서 읽은 것이 원인이며 52/123자가 어긋났다.
+- v232는 원천을 v190 Huffman 산출물로 바꾸고 E9/EA 비관여를 명시적으로 보장했다. 그 외 이주표·목적지·치환은 v231과 동일하다. 정적 게이트 전부 통과, 실기 대기.
+- 교훈을 codex_notes에 기록: 색인은 시점 의존이다. 글리프 원천은 반드시 현행 빌드 체인의 검증된 산출물에서 가져온다.
