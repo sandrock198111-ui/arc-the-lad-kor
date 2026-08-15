@@ -1,0 +1,7 @@
+base=arc1_v232_static_promotion_huffman_source_TEST_ONLY_BC602EF6.zip
+cache rect (961,480) -> (999,420); packet U +4 -> +156, V 224 -> 164
+row system kept at 40 (gatekeeper/index base verified untouched)
+strip rows 63/53/52 keep U+4 (model verified)
+exe_changed_bytes=74
+zip=arc1_v233_cache_relocation_TEST_ONLY_EA0E5B9E.zip
+zip_sha256=A8EBDA3BAF68953ED3839F03F0D8E29B9F74133B60BD4542C3EA3B113C0C7D13
