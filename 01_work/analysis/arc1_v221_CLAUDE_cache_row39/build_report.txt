@@ -1,0 +1,39 @@
+v221 CLAUDE TEST ONLY - cache parked on measured-free row 39
+base=arc1_v210_sd031_slots_controls.zip
+base_sha256=7FB963135C753CBF509F9E722BF826856B04D456D29743A0B1D8CB5A9B34CAF9
+output=arc1_v221_CLAUDE_cache_row39_TEST_ONLY_52D9D6FA.zip
+sha256=52D9D6FA48318BDCD418FC691736C76662482562F5FA195523BAC9814EEE1174
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+row39_states_touching=0/280
+row39_raw_vram_nonzero=0/9
+no_AB_selector=collision removed by placement
+cache_virtual_row=40->39
+cache_upload_y=480->468
+cache_texture_v=224->212
+cache_x=961 unchanged
+cache_u=4 unchanged
+cache_slots=28 unchanged
+dynamic_sources=unchanged
+lookup_table=unchanged
+COMM.IMG=byte-identical to v210 PASS
+all_DAT_members=byte-identical to v210 PASS
+PSX_changed_bytes=6
+low_helper_patch_file=0x87860
+low_classifier_patch_file=0x8788C
+decoder_patch_file=0x8F088
+frame_patch_file=0x8F324
+upload_rect_file=0x8EE68
+decoder 0x801FF348 / 568 bytes
+frame routine 0x801FF668 / 584 bytes
+huffman 0x801FF580 / 232 bytes
+resident_used=5356/5356
+resident_free=0
+archive_member_order=PASS
+archive_member_lengths=PASS
+archive_roundtrip=PASS
+capstone_disassembly=PASS
+emulator_run=NO
+runtime=PENDING user cold boot
+expected=world map clean AND cache glyphs intact; no per-frame selector involved
+known_risk=none measured; row39 free in 280/280 states and 9/9 raw VRAM dumps
+rollback=v210 for byte comparison; v208/v194 for earlier stable checkpoints

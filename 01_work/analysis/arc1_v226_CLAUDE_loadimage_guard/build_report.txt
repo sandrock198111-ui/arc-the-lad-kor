@@ -1,0 +1,17 @@
+v226 CLAUDE TEST ONLY - LoadImage marks the cache stale; no VRAM move
+base=arc1_v210_sd031_slots_controls.zip
+output=arc1_v226_CLAUDE_loadimage_guard_TEST_ONLY_94104EFB.zip
+sha256=94104EFBEAE111951B2E66983BF6EE3B799CE3C9D6597CBFDFA0BE909BCB9ACF
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+cache_position=x961..981,y480..491 UNCHANGED (U and V stay correct)
+cache_slots=28->20
+cache_cells=7->5
+owners=56B->40B at 0x801FF2FE (array not moved)
+hook=0x801FF328 16B, inside our resident block
+active_mask=0x801FF338 untouched
+hook_condition=none; every LoadImage clears the mask
+PSX_changed_bytes=30
+COMM.IMG=byte-identical PASS
+all_DAT_members=byte-identical PASS
+runtime=PENDING user cold boot
+expected=world map clean AND glyphs return after the scene loads

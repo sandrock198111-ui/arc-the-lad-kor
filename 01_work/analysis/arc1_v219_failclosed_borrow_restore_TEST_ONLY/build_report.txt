@@ -60,7 +60,7 @@ marker_corpus_active_packets=299742
 marker_corpus_existing_signature=0
 selector_python_model=PASS
 archived_marker_frame_match=PASS
-runtime=PENDING; emulator_run=NO
+runtime=FAIL; byte-identical to v219b, whose cold boot passed but dynamic glyphs corrupted
 v216_real_packet_layout=PASS (inherits corrected v215 u16 width/height)
 selector_handoff=0x80193A80 inside guarded overlap tail
 selector_finish_fragment=removed

@@ -1,0 +1,14 @@
+v227 CLAUDE TEST ONLY - cache hit path disabled; every glyph re-uploaded
+base=arc1_v210_sd031_slots_controls.zip
+output=arc1_v227_CLAUDE_always_reupload_TEST_ONLY_953AB3DE.zip
+sha256=953AB3DE47C69F8FD1602032BD8FA235F49906C45C41511901A76412A6248341
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+patched=0x801FF49C beq t7,t4 -> nop   (file 0x8EFC4, was 0x11EC0027)
+cache_position=x961..981,y480..491 UNCHANGED
+cache_slots=28 UNCHANGED   U/V UNCHANGED   no LoadImage hook
+PSX_changed_bytes=3
+COMM.IMG=byte-identical PASS
+all_DAT_members=byte-identical PASS
+decoder_disassembly=PASS
+runtime=PENDING user cold boot
+expected=glyphs survive a world map; watch for slowdown in long text

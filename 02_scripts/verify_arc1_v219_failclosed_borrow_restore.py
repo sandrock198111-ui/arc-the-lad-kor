@@ -10,6 +10,8 @@ from capstone import Cs, CS_ARCH_MIPS, CS_MODE_LITTLE_ENDIAN, CS_MODE_MIPS32
 
 import build_arc1_v190_dynamic_owner_repair as v190
 import build_arc1_v219_failclosed_borrow_restore as v219
+import analyze_arc1_v214_runtime as ownership
+import analyze_arc1_v165c_runtime as glyph_tools
 import verify_arc1_v165c_failclosed_cache as cpu_tools
 import verify_arc1_v216_runtime_regressions as v216_tests
 from analyze_arc1_v163_runtime import trace_active_text_ot
@@ -173,6 +175,28 @@ def synthetic_active(exe: bytes, ram: bytes,
         raise SystemExit(f"v219 active call order differs: {[hex(x) for x in targets]}")
     if cpu.huffman_entries != 28:
         raise SystemExit(f"v219 valid owner decode count differs: {cpu.huffman_entries}")
+
+    # Call topology alone missed v219's in-place expansion bug: decoded 12-bit
+    # rows and the expanded 4bpp cell shared SP+0, so row 0 overwrote rows 1/2.
+    # Compare every plane of every uploaded cell against the requested source.
+    sources = ownership.runtime_sources(ram, layout)
+    expected = glyph_tools.expected_shape(sources[0])
+    cache_uploads = [
+        call for call in cpu.calls
+        if call.target == v219.old.LOADIMAGE
+        and call.rect is not None and call.rect[2] == 3
+    ]
+    if len(cache_uploads) != v219.v190.CACHE_CELLS:
+        raise SystemExit(f"v219 cache upload count differs: {len(cache_uploads)}")
+    for cell, call in enumerate(cache_uploads):
+        if call.payload is None:
+            raise SystemExit(f"v219 cache cell {cell} has no captured payload")
+        for plane in range(v219.old.PLANES):
+            got = glyph_tools.selected_plane(call.payload, plane)
+            if got != expected:
+                raise SystemExit(
+                    f"v219 cache upload pixels differ: cell={cell} plane={plane}"
+                )
     if memory.load8(addresses[1] + 13) != selected_v:
         raise SystemExit("v219 did not rewrite paired marker to selected V")
     if memory.load32(layout["active_mask"][0]) != 0xFFFFFFFF:

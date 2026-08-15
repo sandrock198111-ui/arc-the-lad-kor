@@ -1,0 +1,23 @@
+v228 CLAUDE TEST ONLY - U and V moved as one halfword in the cache-only block
+base=arc1_v210_sd031_slots_controls.zip
+output=arc1_v228_CLAUDE_uv_pair_move_TEST_ONLY_2B4EDF11.zip
+sha256=2B4EDF11A523D47FDD0A1AB71B7698AA70215085125AD414D45CF09E46A3C018
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+occupancy_sample=467 savestates folded by union
+old_rect=x961..981,y480..491 used=252/252
+new_rect=x999..1019,y420..431 used=0/252
+atlas_row=40 unchanged
+cache_index_base=3360 unchanged
+cache_y=480->420
+cache_v=224->164
+cache_x=961->999
+cache_u=4->156
+cache_slots=28 unchanged
+tpage=page 15,1 unchanged
+no_AB_selector=collision removed by placement, not by per-frame choice
+PSX_changed_bytes=10
+COMM.IMG=byte-identical PASS
+all_DAT_members=byte-identical PASS
+capstone_disassembly=PASS
+runtime=PENDING user cold boot
+expected=world map clean AND cache glyphs render at the new rectangle

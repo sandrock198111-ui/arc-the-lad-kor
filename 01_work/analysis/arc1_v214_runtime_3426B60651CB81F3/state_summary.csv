@@ -1,0 +1,4 @@
+﻿state,savestate,destination,upload_rect,owners_used,active_count,active_mask,next_slot,owner_shape_selected,owner_shape_A,owner_shape_B,active_ot_cache_count,active_ot_mask,active_ot_missing,matched_objects,stale_packets
+1,HASH-3426B60651CB81F3_1.sav,A,"961,480,21,12",9,32,0xFFFFFFFF,9,0/9,0/9,0/9,5,0x00000015,0x00000000,0,0
+2,HASH-3426B60651CB81F3_2.sav,A,"961,480,21,12",14,32,0xFFFFFFFF,14,0/14,0/14,0/14,1,0x00002000,0x00000000,0,0
+3,HASH-3426B60651CB81F3_3.sav,A,"979,480,3,12",17,32,0xFFFFFFFF,17,17/17,17/17,0/17,2,0x00010100,0x00000000,0,0

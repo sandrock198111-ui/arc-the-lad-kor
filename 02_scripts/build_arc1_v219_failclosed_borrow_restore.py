@@ -17,9 +17,11 @@ still writes it only after the complete v215 strict SPRT classifier succeeds.
 Owner values are also range-checked before Huffman decoding, so FFFF and every
 other invalid source id fail closed.
 
-The temporary stack layout is compacted from 0x2C0 to the mathematical 0x270
-minimum for the 504-byte VRAM backup, 72-byte decode buffer, saved A0 and nine
-callee-saved registers.  Kernel-reserved k0/k1 are not used.
+The v219 artifact compacted the temporary stack from 0x2C0 to 0x270, but put
+the 24-byte decoded rows on top of the 72-byte expanded-cell scratch.  It is
+kept reproducible here as a failed diagnostic parent; successors can request a
+separate decoded-row offset through :func:`failclosed_frame`.  Kernel-reserved
+k0/k1 are not used.
 """
 from __future__ import annotations
 
@@ -112,7 +114,12 @@ def signature_selector_blobs(frame: int, rect: int) -> tuple[bytes, bytes, bytes
 
 
 def failclosed_frame(address: int, huffman_address: int,
-                     layout: dict[str, tuple[int, int]]) -> bytes:
+                     layout: dict[str, tuple[int, int]], *,
+                     decoded_at: int = 0x00,
+                     backup_at: int = 0x48,
+                     saved_a0: int = 0x240,
+                     stack_size: int | None = None,
+                     allow_decode_scratch_alias: bool = True) -> bytes:
     owners = layout["owners"][0]
     active = layout["active_mask"][0]
     rect = layout["upload_rect"][0]
@@ -120,14 +127,23 @@ def failclosed_frame(address: int, huffman_address: int,
     if address != FRAME or active - rect != -8 or owners - rect != -66:
         raise SystemExit("v219 resident frame/layout address differs")
 
-    decoded_at = 0x00
-    backup_at = 0x48
-    saved_a0 = 0x240
+    if stack_size is None:
+        stack_size = STACK_SIZE
     save = {
-        RA: 0x264, S0: 0x260, S1: 0x25C, S2: 0x258,
-        S3: 0x254, S4: 0x250, S5: 0x24C, S6: 0x248, S7: 0x244,
+        RA: saved_a0 + 0x24, S0: saved_a0 + 0x20,
+        S1: saved_a0 + 0x1C, S2: saved_a0 + 0x18,
+        S3: saved_a0 + 0x14, S4: saved_a0 + 0x10,
+        S5: saved_a0 + 0x0C, S6: saved_a0 + 0x08,
+        S7: saved_a0 + 0x04,
     }
-    if decoded_at + 72 > backup_at:
+    scratch_at, scratch_n = 0x00, 72
+    decoded_n = 24
+    if not allow_decode_scratch_alias and not (
+        decoded_at + decoded_n <= scratch_at
+        or scratch_at + scratch_n <= decoded_at
+    ):
+        raise SystemExit("decoded rows overlap expanded-cell scratch")
+    if decoded_at + decoded_n > backup_at:
         raise SystemExit("v219 decode buffer overlaps VRAM backup")
     if backup_at + BACKUP_BYTES != saved_a0:
         raise SystemExit("v219 VRAM backup does not end at saved A0")
@@ -135,7 +151,7 @@ def failclosed_frame(address: int, huffman_address: int,
         raise SystemExit("v219 saved registers exceed compact stack frame")
 
     asm = old.Assembler(address)
-    asm.emit(old.i_type(0x09, SP, SP, -STACK_SIZE))
+    asm.emit(old.i_type(0x09, SP, SP, -stack_size))
     for reg, offset in save.items():
         asm.emit(old.i_type(0x2B, SP, reg, offset))
     asm.emit(old.i_type(0x2B, SP, A0, saved_a0))
@@ -290,7 +306,7 @@ def failclosed_frame(address: int, huffman_address: int,
     for reg, offset in save.items():
         asm.emit(old.i_type(0x23, SP, reg, offset))
     asm.emit(JR_RA)
-    asm.emit(old.i_type(0x09, SP, SP, STACK_SIZE))
+    asm.emit(old.i_type(0x09, SP, SP, stack_size))
 
     if len(asm.words) != FRAME_N // 4:
         raise SystemExit(
@@ -365,7 +381,7 @@ def main() -> None:
         "kernel_reserved_registers_in_frame=0",
         "persistent_RAM_growth=0; resident_growth=0; heap_boundary=unchanged",
         "new_VRAM=0; DAT=unchanged; COMM.IMG=unchanged",
-        "runtime=PENDING; emulator_run=NO",
+        "runtime=FAIL; user cold boot succeeded but all dynamic glyphs were corrupted",
         "rollback=v210; v218 runtime FAIL at BIOS/game-init boundary",
         "",
     ])

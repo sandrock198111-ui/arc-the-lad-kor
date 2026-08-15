@@ -1,0 +1,36 @@
+v219b runtime diagnosis - HASH-8FF82AEEED32D27D slots 1..6
+
+observed_runtime=FAIL
+cold_boot=PASS
+dynamic_glyph_rendering=FAIL across all six supplied screenshots
+
+direct_MIPS_reproduction:
+- cache cells uploaded: 7
+- planes per cell: 4
+- exact requested glyph planes: 0/28
+- mismatched glyph planes: 28/28
+
+first_wrong_state:
+- Huffman decoder writes twelve 16-bit source rows at SP+0x00..0x17.
+- The 4bpp cell expander also writes its 72-byte output at SP+0x00..0x47.
+- Expanding row 0 writes six bytes and overwrites decoded rows 1 and 2 before they are read.
+- The corrupted 72-byte cell is then uploaded to the selected cache destination and sampled by otherwise valid text packets.
+
+v219b_stack_layout:
+- expanded cell scratch: SP+0x00..0x47
+- decoded rows: SP+0x00..0x17 (overlap)
+- VRAM backup: SP+0x48..0x23F
+- total frame: 0x270 (624 bytes)
+
+v220_candidate_layout:
+- expanded cell scratch: SP+0x00..0x47
+- decoded rows: SP+0x48..0x5F
+- VRAM backup: SP+0x60..0x257
+- saved A0/registers: SP+0x258..0x27F
+- total frame: 0x280 (640 bytes)
+- overlap: none
+
+classification:
+- v219b made progress only at the boot-failure boundary.
+- As a complete test build it is a runtime regression and must not be distributed.
+- v220 preserves the v219b marker/owner guards and changes only 26 bytes inside the resident frame routine.

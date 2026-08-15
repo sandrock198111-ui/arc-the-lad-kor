@@ -1,8 +1,8 @@
-v219b TEST ONLY - fail-closed paired-marker borrow/restore
+v220 TEST ONLY - separate decode and expanded-cell scratch
 base=arc1_v210_sd031_slots_controls.zip
 base_sha256=7FB963135C753CBF509F9E722BF826856B04D456D29743A0B1D8CB5A9B34CAF9
-output=arc1_v219b_failclosed_borrow_restore_TEST_ONLY_B3595C76.zip
-sha256=B3595C76894E8C6A9179A3E9161B806C9AB618454469823B2488F31601224578
+output=arc1_v220_separate_decode_scratch_TEST_ONLY_CDDF4B3F.zip
+sha256=CDDF4B3FC36EA8A8804FAC38CA5932554EF4E358C526D68D16C94B7E9A28EF74
 release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
 canonical_virtual_row=40 unchanged
 destination_A=x961..981,y480..491,V224
@@ -60,7 +60,7 @@ marker_corpus_active_packets=299742
 marker_corpus_existing_signature=0
 selector_python_model=PASS
 archived_marker_frame_match=PASS
-runtime=FAIL; cold boot passed, but all dynamic glyph uploads were corrupted
+runtime=PENDING; emulator_run=NO
 v216_real_packet_layout=PASS (inherits corrected v215 u16 width/height)
 selector_handoff=0x80193A80 inside guarded overlap tail
 selector_finish_fragment=removed
@@ -78,9 +78,15 @@ marker_signature=DMA_words_4 AND (U+V==255)
 marker_corpus=452 savestates; all OT node kinds included
 strict_selector_marker_V=255-U
 owner_guard=unsigned_source_id<466; FFFF rejected
-stack_frame=0x270 (624) down_from_v218_0x2C0
+stack_frame=0x280 (640) down_from_v218_0x2C0
 kernel_reserved_registers_in_frame=0
 persistent_RAM_growth=0; resident_growth=0; heap_boundary=unchanged
 new_VRAM=0; DAT=unchanged; COMM.IMG=unchanged
 runtime=PENDING; emulator_run=NO
 rollback=v210; v218 runtime FAIL at BIOS/game-init boundary
+expanded_cell_scratch=SP+0x00..0x47 (72 bytes)
+decoded_rows=SP+0x48..0x5F (24 bytes)
+VRAM_backup=SP+0x60..0x257 (504 bytes)
+decode_scratch_overlap=NO
+v219b_runtime=FAIL; all 28 synthetic glyph planes mismatched
+v220_runtime=PENDING; emulator_run=NO

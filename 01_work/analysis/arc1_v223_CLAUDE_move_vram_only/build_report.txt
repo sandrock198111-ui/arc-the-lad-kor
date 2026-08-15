@@ -1,0 +1,23 @@
+v223 CLAUDE TEST ONLY - VRAM rectangle moved, glyph atlas untouched
+base=arc1_v210_sd031_slots_controls.zip
+output=arc1_v223_CLAUDE_move_vram_only_TEST_ONLY_F08840A0.zip
+sha256=F08840A075210D9FDE657F75C59008226010D97DE8F243590AB24F4A7D6067CE
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+occupancy_sample=467 savestates folded by union
+old_rect=x961..981,y480..491 used=252/252
+new_rect=x999..1019,y420..431 used=0/252
+cache_row=40 unchanged
+cache_index_base=3360 unchanged
+cache_y=480->420
+cache_v=224->164
+cache_x=961->999
+cache_u=4->156
+cache_slots=28 unchanged
+tpage=page 15,1 unchanged
+no_AB_selector=collision removed by placement, not by per-frame choice
+PSX_changed_bytes=7
+COMM.IMG=byte-identical PASS
+all_DAT_members=byte-identical PASS
+capstone_disassembly=PASS
+runtime=PENDING user cold boot
+expected=no scenery bleed (as v222) AND cached glyphs actually render

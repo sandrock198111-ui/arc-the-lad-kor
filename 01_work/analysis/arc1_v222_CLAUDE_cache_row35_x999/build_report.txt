@@ -1,0 +1,22 @@
+v222 CLAUDE TEST ONLY - cache moved to the only never-used 21x12 rectangle
+base=arc1_v210_sd031_slots_controls.zip
+output=arc1_v222_CLAUDE_cache_row35_x999_TEST_ONLY_0A344D73.zip
+sha256=0A344D733955A9A9F0956BB11701BCBB9BD158F15680E6BD8226C5C12DF6C1E1
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+occupancy_sample=467 savestates folded by union
+old_rect=x961..981,y480..491 used=252/252
+new_rect=x999..1019,y420..431 used=0/252
+cache_row=40->35
+cache_y=480->420
+cache_v=224->164
+cache_x=961->999
+cache_u=4->156
+cache_slots=28 unchanged
+tpage=page 15,1 unchanged
+no_AB_selector=collision removed by placement, not by per-frame choice
+PSX_changed_bytes=10
+COMM.IMG=byte-identical PASS
+all_DAT_members=byte-identical PASS
+capstone_disassembly=PASS
+runtime=PENDING user cold boot
+expected=world map clean AND cache glyphs survive scene changes

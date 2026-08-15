@@ -1,0 +1,5 @@
+v214 runtime ownership audit
+
+slot1: dest=A shapes=0/9 active=32 OT=5 missing=0x00000000 matched_objects=0 stale_packets=0
+slot2: dest=A shapes=0/14 active=32 OT=1 missing=0x00000000 matched_objects=0 stale_packets=0
+slot3: dest=A shapes=17/17 active=32 OT=2 missing=0x00000000 matched_objects=0 stale_packets=0
