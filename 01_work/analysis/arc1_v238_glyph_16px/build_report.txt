@@ -1,0 +1,16 @@
+v238 TEST ONLY - text renderer glyph cell 12px -> 16px
+base=arc1_v235_cache_row36_TEST_ONLY_1654F31B.zip
+output=arc1_v238_glyph_16px_TEST_ONLY_8816AF49.zip
+sha256=8816AF49683A8529E5C0B29CAF0676A32029DA283613F89605A759A383F8FFE5
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+font=UNCHANGED (still 12x12 completed syllables) -- letters will look wrong
+purpose=verify layout survives a 16px cell before drawing johab pieces
+edits=11 words at 7 sites
+PSX_changed_bytes=21
+untouched=struct address math (5 x12 sites), 0x44 struct walk,
+          11 packet w/h sites that read from data
+COMM.IMG=byte-identical PASS
+all_DAT_members=byte-identical PASS
+runtime=PENDING user cold boot
+expected=boots; glyphs garbled but spaced 16px; check line spacing,
+         cursor position, dialogue overflow, choice alignment
