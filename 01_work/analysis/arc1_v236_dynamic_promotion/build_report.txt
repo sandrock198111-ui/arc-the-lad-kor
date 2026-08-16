@@ -1,0 +1,12 @@
+base=arc1_v235_cache_row36_TEST_ONLY_1654F31B.zip sha=EBFD500237DC1C2827915CF240847FBEC09F50C0998FEF983572C9DF41D4D09E
+glyph_source=v190 Huffman artifacts (manifest source_id, never index)
+movers=85 of 138 destinations available
+skipped_one_byte_referenced=39
+skipped_no_manifest=310
+replaced_total=2248
+unit_cache_pressure_max before=28 after=27
+units_fitting_12_slots after=4529/4674
+exe_diff_bytes=394 font_diff_bytes=1198
+row_system=40 untouched  range_table=untouched  lookup=untouched
+zip=arc1_v236_dynamic_promotion_TEST_ONLY_2AE4EFD5.zip
+zip_sha256=6948E99C983DA24CE005D70EB1AD587CE8DD3B098D4866ABF507BA7AAE498C5D
