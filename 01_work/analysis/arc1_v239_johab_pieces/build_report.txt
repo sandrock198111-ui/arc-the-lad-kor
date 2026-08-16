@@ -1,0 +1,14 @@
+v239 TEST ONLY - 16px johab pieces written into COMM.IMG
+base=arc1_v238_glyph_16px_TEST_ONLY_8816AF49.zip
+output=arc1_v239_johab_pieces_TEST_ONLY_66866152.zip
+sha256=668661521D21BF06FF09D19CAD5DDCD1040A6C2BC4B58B00422C7CFE2CDFD427
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+pieces=360 in 90 cells x 4 planes, 15 cols x 6 rows
+atlas_area=240x96 px  (glyph area is 252x504)
+U=(cell%15)*16 -> 0..224   V=(cell/15)*16 -> 0..80   one texture page
+row_stride=60 (15 cols x 4 planes); renderer still uses 84 -- next build
+COMM_changed_bytes=9497
+PSX.EXE=byte-identical PASS  all_DAT_members=byte-identical PASS
+readback=360/360 pieces verified
+source=Hanme_8x4x4.bdf (iolo/8x4x4-fonts, MIT / OFL-1.1)
+runtime=data only; nothing renders correctly until the composition build
