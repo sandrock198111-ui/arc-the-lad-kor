@@ -1,0 +1,17 @@
+v237 CLAUDE TEST ONLY - 12-slot cache with a LoadImage recovery hook
+base=arc1_v235_cache_row36_TEST_ONLY_1654F31B.zip
+output=arc1_v237_recovery_hook_TEST_ONLY_C0766EAB.zip
+sha256=C0766EABD776C9F4EB6BA1E4BBCC7B54E00197E3A13407514F75F60B6D464300
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+cache_slots=28->12  cells=7->3
+owners=56B->24B at 0x801FF2FE (array not moved)
+hook=0x801FF318 32B, inside the resident block
+invalid_marker=0xF316 (end address low half, outside source ids)
+hit_test=0x801FF49C untouched (v227/v234 failed by disabling it)
+cache_rect=(999,432) unchanged from v235; 12 slots use x999..1007
+line_coverage=4465/4721 (94.6%) fit 12 slots; 256 lines lose a glyph
+PSX_changed_bytes=44
+COMM.IMG=byte-identical PASS
+all_DAT_members=byte-identical PASS
+runtime=PENDING user cold boot
+expected=boots; dialogue normal after a world map for the first time
