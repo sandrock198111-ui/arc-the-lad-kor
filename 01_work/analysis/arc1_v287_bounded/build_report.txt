@@ -1,0 +1,11 @@
+v287 TEST ONLY - 16px, writes bounded to the recorded string length
+base=arc.zip   font=Hanme_8x4x4.ttf at 16px
+output=arc1_v287_bounded_TEST_ONLY_092E7E54.zip
+sha256=092E7E54141AD77F673E469E21B594C3652A54F7AF86F97837B9EDB59D06036D
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+dialogue sites=4,357   translated written=2,679   truncated=2,442
+Japanese glyphs kept=489   Korean glyphs=669   one-byte Korean=12
+atlas=291 cells, 15x20, 240x320 px
+renderer 12px -> 16px (7 sites), row stride 84 -> 60
+only the 2878 verified sites rewritten; control codes preserved
+runtime=PENDING user cold boot

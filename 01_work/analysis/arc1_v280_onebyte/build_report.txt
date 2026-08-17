@@ -1,0 +1,11 @@
+v280 TEST ONLY - 16px, frequent Korean given one-byte codes
+base=arc.zip   font=Hanme_8x4x4.ttf at 16px
+output=arc1_v280_onebyte_TEST_ONLY_C08FF4DA.zip
+sha256=C08FF4DA6A14D2B5AE804ABB4727C2B3510BF9607CAF7D3AAF03BD855585BC01
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+dialogue sites=2,878   translated written=2,679   truncated=2,161
+Japanese glyphs kept=95   Korean glyphs=669   one-byte Korean=142
+atlas=192 cells, 15x13, 240x208 px
+renderer 12px -> 16px (7 sites), row stride 84 -> 60
+only the 2878 verified sites rewritten; control codes preserved
+runtime=PENDING user cold boot

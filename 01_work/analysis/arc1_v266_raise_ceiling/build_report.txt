@@ -1,0 +1,12 @@
+v266 TEST ONLY - static ceiling raised 0x600 -> 0x7FF, cache path unused
+base=arc1_v235_cache_row36_TEST_ONLY_1654F31B.zip   pixels=decoded from the resident Huffman stream
+output=arc1_v266_raise_ceiling_TEST_ONLY_6AF86D6C.zip
+sha256=6AF86D6C69E99D1BE57058801E9802A0AE4EE32D6DA4F555C1565BFF7BB217A9
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+entries that used the cache=309   placed=309   still cached=0   (no decoded pixels: 0)
+table now static=344/413
+free cells below 2047 left=486   reclaimed unreachable=364
+occupancy resolved through 0x801A7520, the table the game reads
+verified: no glyph the script can reach was overwritten
+DAT files byte-identical; script not renumbered
+runtime=PENDING user cold boot

@@ -1,0 +1,11 @@
+v282 TEST ONLY - 16px, plus the recorded UI string tables
+base=arc.zip   font=Hanme_8x4x4.ttf at 16px
+output=arc1_v282_with_ui_TEST_ONLY_5E558CBA.zip
+sha256=5E558CBA35B4A200DE17A77B6786C8F159EFC8E261354D9EA390486A940E8E3C
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+dialogue sites=3,269   translated written=2,679   truncated=2,340
+Japanese glyphs kept=391   Korean glyphs=669   one-byte Korean=30
+atlas=267 cells, 15x18, 240x288 px
+renderer 12px -> 16px (7 sites), row stride 84 -> 60
+only the 2878 verified sites rewritten; control codes preserved
+runtime=PENDING user cold boot

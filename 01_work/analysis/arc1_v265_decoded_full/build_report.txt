@@ -1,0 +1,12 @@
+v265 TEST ONLY - all cached glyphs resident; unreachable cells reclaimed
+base=arc1_v235_cache_row36_TEST_ONLY_1654F31B.zip   pixels=decoded from the resident Huffman stream
+output=arc1_v265_decoded_full_TEST_ONLY_5D89C933.zip
+sha256=5D89C9333D4BD29C4C9F3A3F5883259DB14A72C60DB0D8E1BD1D18B027481AE1
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+entries that used the cache=309   placed=284   still cached=25   (no decoded pixels: 0)
+table now static=388/413
+free cells below 1536 left=0   reclaimed unreachable=44
+occupancy resolved through 0x801A7520, the table the game reads
+verified: no glyph the script can reach was overwritten
+DAT files byte-identical; script not renumbered
+runtime=PENDING user cold boot

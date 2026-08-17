@@ -39,6 +39,7 @@ except Exception:
 
 ORIGINAL_ZIP = ROOT / "00_original/arc.zip"
 REF_XML = ROOT / "01_work/arc1_v104_layout.xml"
+REF_XML_ORIG = ROOT / "01_work/arc1_original_layout.xml"
 MKPSXISO = ROOT / "06_tools/mkpsxiso/mkpsxiso-2.30-win64/mkpsxiso.exe"
 WORK = ROOT / "01_work/package_test"
 FILES = WORK / "files"
@@ -101,8 +102,8 @@ def restore_and_apply(patch_zip: Path) -> tuple[int, int]:
     return restored, len(current)
 
 
-def write_xml(xml_path: Path, binary: Path, cue: Path) -> None:
-    text = REF_XML.read_text(encoding="utf-8")
+def write_xml(xml_path: Path, binary: Path, cue: Path, layout: Path | None = None) -> None:
+    text = (layout or REF_XML).read_text(encoding="utf-8")
     base = FILES.as_posix()
     text = re.sub(r'source="out/([^"]*)"', lambda m: f'source="{base}/{m.group(1)}"', text)
     text = re.sub(r'file="out/([^"]*)"', lambda m: f'file="{base}/{m.group(1)}"', text)
@@ -151,6 +152,8 @@ def carry_memory_card(stem: str) -> str | None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("patch_zip", type=Path)
+    parser.add_argument("--layout", choices=("v104", "original"), default="v104",
+                        help="disc layout: v104 puts PSX.EXE late, original puts it first")
     parser.add_argument("--name", default=None,
                         help="disc file stem, e.g. TEST2. Default: the first free TEST name")
     args = parser.parse_args()
@@ -172,7 +175,8 @@ def main() -> None:
         binary, cue, stem = free_name()
     xml_path = WORK / f"{stem}.xml"
     lba_path = WORK / f"{stem}_lba.txt"
-    write_xml(xml_path, binary, cue)
+    write_xml(xml_path, binary, cue,
+              REF_XML_ORIG if args.layout == 'original' else REF_XML)
     card = carry_memory_card(stem)
 
     subprocess.run(
@@ -187,6 +191,7 @@ def main() -> None:
     print(f"             원본으로 되돌린 파일 {restored}개, 패치 파일 {applied}개")
     print(f"  cue        {cue}")
     print(f"  sha256     {digest(binary)}")
+    print(f"  레이아웃   {args.layout}")
     if card:
         print(f"  메모리카드 {card}")
     print()

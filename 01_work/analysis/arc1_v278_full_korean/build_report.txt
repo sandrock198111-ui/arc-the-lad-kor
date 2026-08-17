@@ -1,0 +1,11 @@
+v278 TEST ONLY - full translated script, original disc, 12px johab
+base=arc.zip   font=Hanme_8x4x4.ttf at 12px
+output=arc1_v278_full_korean_TEST_ONLY_F24B86A7.zip
+sha256=F24B86A7847ED7B8EC264F20A9DB46B5EB02E30D9993F22EA341A33F4BD4879C
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+dialogue sites=2,878   translated=2,679   written=2,679
+Korean glyphs placed=669   no cell=3   truncated lines=2280
+glyphs kept for untranslated lines=232   cells left=333
+PSX.EXE untouched; control codes preserved; only verified sites rewritten
+changed members=161
+runtime=PENDING user cold boot

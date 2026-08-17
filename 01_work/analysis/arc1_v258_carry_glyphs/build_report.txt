@@ -1,0 +1,11 @@
+v258 TEST ONLY - old glyph pictures carried into a compact 16px atlas
+base=arc1_v238_glyph_16px_TEST_ONLY_8816AF49.zip   pictures_from=arc1_v235_cache_row36_TEST_ONLY_1654F31B.zip
+output=arc1_v258_carry_glyphs_TEST_ONLY_DFF09C74.zip
+sha256=DFF09C74149DCB4F6758FAF5397792F4B7594FF2753D99A013B1185E1460E4C0
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+codes in script=1786   drawn=1116  (from picture 1044, composed 72)
+script glyphs covered=127,232/132,112  (96%)
+atlas=281 cells, 15x19, 240x304 px  (limit 252x504)
+one-byte 219   two-byte 897   codes rewritten=132,112
+script text unchanged; only the code numbers were reassigned
+runtime=PENDING user cold boot

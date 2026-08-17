@@ -1,0 +1,12 @@
+v263 TEST ONLY - remaining cached entries pointed at real glyphs
+base=arc1_v262_real_lookup_TEST_ONLY_F36356A3.zip   pictures_from=arc1_v151_free_the_sprite_cell_A4358FEE.zip
+output=arc1_v263_point_existing_TEST_ONLY_C17AD8D3.zip
+sha256=C17AD8D3674CEE41FDF69B2956A33BC69E5A630B0998DF68AA5D7C6E511700D2
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+entries still cached at start=71
+reused a glyph already in the atlas=1   copied from v151=11
+still cached=59
+table now static=354/413
+cells reclaimed from unused pictures=167   free left=156
+DAT files byte-identical; script not renumbered
+runtime=PENDING user cold boot

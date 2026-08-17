@@ -1,0 +1,11 @@
+v279 TEST ONLY - full translated script at 16px, from the original disc
+base=arc.zip   font=Hanme_8x4x4.ttf at 16px
+output=arc1_v279_full_16px_TEST_ONLY_A3FB3254.zip
+sha256=A3FB3254E332CFF3684E81EE032C0E0A4B8FB914A3B9526DADFDA88B42CE963F
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+dialogue sites=2,878   translated written=2,679   truncated=2,556
+Japanese glyphs kept=95   Korean glyphs=669
+atlas=228 cells, 15x16, 240x256 px
+renderer 12px -> 16px (7 sites), row stride 84 -> 60
+only the 2878 verified sites rewritten; control codes preserved
+runtime=PENDING user cold boot

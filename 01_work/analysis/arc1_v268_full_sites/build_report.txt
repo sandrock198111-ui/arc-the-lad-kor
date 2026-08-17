@@ -1,0 +1,12 @@
+v268 TEST ONLY - 16px atlas re-encoded over the full 39,457-site list
+base=arc1_v238_glyph_16px_TEST_ONLY_8816AF49.zip   sites=dialogue_sites_full.csv
+output=arc1_v268_full_sites_TEST_ONLY_3BA98375.zip
+sha256=3BA98375CEF67CD2580C55C7B45D8FCDE55B1F2C64F06529B86E439C1E415D19
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+dialogue sites=39,457   (previous list had 2,878)
+tokens in script=2634   drawn=1392  (atlas 1176, decoded cache 216)
+script glyphs covered=200,456/246,921  (81%)
+atlas=310 cells, 15x21, 240x336 px
+distinct pictures 1233  (one-byte 218, two-byte 1015)   codes rewritten=246,921   overflowed to blank=125
+widths preserved; pointers and file sizes unchanged
+runtime=PENDING user cold boot

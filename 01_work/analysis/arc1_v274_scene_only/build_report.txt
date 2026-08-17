@@ -1,0 +1,12 @@
+v274 TEST ONLY - original disc, 16px, verified dialogue sites only, opening scene in Korean
+base=arc.zip   font=Pilgi_8x4x4.ttf at 16px
+output=arc1_v274_scene_only_TEST_ONLY_7C79C03D.zip
+sha256=7C79C03D2DF1941257FDD7F9A9640088ABCFF447DCF43F0E4E54E1C319818B1A
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+dialogue sites=2,878   tokens=778
+pictures carried=769   scene Korean glyphs=86
+atlas=217 cells, 15x15, 240x240 px
+codes rewritten=66,324   scene lines written=9   truncated=7
+scene=1/S1011.DAT
+renderer 12px -> 16px (7 sites), row stride 84 -> 60
+runtime=PENDING user cold boot

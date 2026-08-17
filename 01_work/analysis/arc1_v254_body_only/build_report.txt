@@ -1,0 +1,13 @@
+v254 TEST ONLY - body lines only; E2 reference lines untouched
+base=arc1_v238_glyph_16px_TEST_ONLY_8816AF49.zip
+output=arc1_v254_body_only_TEST_ONLY_96578344.zip
+sha256=965783445DA8E03ABE97CCBF09B8B829F959B27F43DE0C7752D4B0C11FC00CFB
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+glyphs=665  (one-byte 214, two-byte 451, punct cells reserved 5)
+atlas=168 cells, 15x12, 240x192 px
+lines written=1234   truncated=120   E2 refs left alone=1445
+characters with no glyph=3 (drawn as space)
+row_stride 84 -> 60
+no character table involved; glyphs come straight from the translation
+pieces=Hanme_8x4x4.bdf (iolo/8x4x4-fonts, MIT / OFL-1.1)
+runtime=PENDING user cold boot

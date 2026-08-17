@@ -1,0 +1,12 @@
+v264 TEST ONLY - all cached glyphs made resident from decoded pixels
+base=arc1_v235_cache_row36_TEST_ONLY_1654F31B.zip   pixels=decoded from the resident Huffman stream
+output=arc1_v264_decoded_static_TEST_ONLY_D08D2FD7.zip
+sha256=D08D2FD7904440BB620E595B4F5438D8415C402921CFECF02245F31A054283D6
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+entries that used the cache=309   placed=240   still cached=69   (no decoded pixels: 0)
+table now static=344/413
+free cells below 1536 left=0
+occupancy resolved through 0x801A7520, the table the game reads
+verified: no cell that already held a picture was touched
+DAT files byte-identical; script not renumbered
+runtime=PENDING user cold boot

@@ -1,0 +1,14 @@
+v270 TEST ONLY - Korean drawn from johab pieces at 16px, rest carried
+base=arc1_v238_glyph_16px_TEST_ONLY_8816AF49.zip
+output=arc1_v270_johab_final_TEST_ONLY_C2A8D0BB.zip
+sha256=C2A8D0BB9733594AAFBE9EE6E92C0F8EFF269C72C159B8E5AF343BCE1F8A4AD8
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+sites=39,941  (dialogue 39,457, UI strings 484)
+tokens=2703   johab-composed=631   carried pictures=829
+Korean glyph uses=116,390/249,959  (46%)
+atlas=310 cells, 15x21, 240x336 px
+one-byte 212   two-byte 1015   overflow to blank=173
+codes rewritten=249,948
+UI strings taken from ui_full_v42.csv offsets, not by scanning for nulls
+widths preserved; pointers and file sizes unchanged
+runtime=PENDING user cold boot

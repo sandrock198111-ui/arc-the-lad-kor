@@ -1,0 +1,12 @@
+v269 TEST ONLY - full site list plus the UI strings in PSX.EXE
+base=arc1_v238_glyph_16px_TEST_ONLY_8816AF49.zip   sites=dialogue_sites_full.csv
+output=arc1_v269_with_exe_ui_TEST_ONLY_900CDAB4.zip
+sha256=900CDAB40DF50609900105C831E8C1E4D7598A50DFC398319862BA89F4524EBD
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+dialogue sites=43,613   (previous list had 2,878)
+tokens in script=2920   drawn=1473  (atlas 1203, decoded cache 270)
+script glyphs covered=225,069/275,083  (81%)
+atlas=310 cells, 15x21, 240x336 px
+distinct pictures 1233  (one-byte 218, two-byte 1015)   codes rewritten=275,083   overflowed to blank=205
+widths preserved; pointers and file sizes unchanged
+runtime=PENDING user cold boot

@@ -1,0 +1,13 @@
+v256 TEST ONLY - every line re-encoded in place, control codes kept
+base=arc1_v238_glyph_16px_TEST_ONLY_8816AF49.zip
+output=arc1_v256_all_inplace_TEST_ONLY_68ED0F45.zip
+sha256=68ED0F45E74D9834D77E9F14E8B7C033F73FA5BDA94B3CBF3A4D496E554CA0AE
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+glyphs=665  (one-byte 214, two-byte 451, punct cells reserved 5)
+atlas=168 cells, 15x12, 240x192 px
+lines written=2679   truncated=1473
+characters with no glyph=3 (drawn as space)
+row_stride 84 -> 60
+no character table involved; glyphs come straight from the translation
+pieces=Hanme_8x4x4.bdf (iolo/8x4x4-fonts, MIT / OFL-1.1)
+runtime=PENDING user cold boot

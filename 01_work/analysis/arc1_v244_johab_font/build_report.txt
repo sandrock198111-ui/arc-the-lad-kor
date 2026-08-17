@@ -1,0 +1,15 @@
+v240 TEST ONLY - 16px johab-composed atlas, cache-free
+base=arc1_v238_glyph_16px_TEST_ONLY_8816AF49.zip
+output=arc1_v244_johab_font_TEST_ONLY_EB3E4229.zip
+sha256=EB3E4229E1B5394B7534BFD590C10F716ADCFE63AE924864F2D7204C1EDB601A
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+glyphs=587 cells  (one-byte 136, two-byte 451)
+one_byte=136  two_byte=451  blanks=2
+atlas=169 cells, 15 cols x 12 rows, 240x192 px
+row_stride 84 -> 60 at 0x8016B530
+script codes rewritten=130527
+unknown codes pointed at blank=850
+changed members=162
+widths preserved: one-byte stays one-byte, pointers and sizes unchanged
+pieces=Hanme_8x4x4.bdf (iolo/8x4x4-fonts, MIT / OFL-1.1)
+runtime=PENDING user cold boot

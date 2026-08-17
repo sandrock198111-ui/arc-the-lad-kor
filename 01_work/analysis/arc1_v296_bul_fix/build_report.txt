@@ -1,0 +1,11 @@
+v294 TEST ONLY - 12px johab, verified-safe slots, PSX.EXE untouched
+base=arc.zip   font=Sans_8x4x4.ttf at 12px
+output=arc1_v296_bul_fix_TEST_ONLY_ED7A1926.zip
+sha256=ED7A1926A3F79C307A64860D0F281E99B9DD32B5B6297FBC013678065C636F23
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+dialogue sites=2,878   translated=2,679   written=2,679
+Korean glyphs placed=669   no cell=3   truncated lines=2338
+glyphs kept for untranslated lines=232   cells left=306
+PSX.EXE untouched; control codes preserved; only verified sites rewritten
+changed members=161
+runtime=PENDING user cold boot

@@ -1,0 +1,12 @@
+v261 TEST ONLY - lookup glyphs restored into verified-safe cells
+base=arc1_v235_cache_row36_TEST_ONLY_1654F31B.zip   pictures_from=arc1_v151_free_the_sprite_cell_A4358FEE.zip
+output=arc1_v261_restore_lookup_safe_TEST_ONLY_87196B57.zip
+sha256=87196B57A549698CF84C4C53A9DBBC9EACCB88A53C33DB3F56ADF63DBB7452F7
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+lookup codes used by the script=334
+repointed to a free cell=268   filled in place=3
+script uses covered=2,410
+free cells before=769   after=501
+DAT files byte-identical; only COMM.IMG and the lookup table changed
+cache left in place: this build reduces its load, it does not remove it
+runtime=PENDING user cold boot

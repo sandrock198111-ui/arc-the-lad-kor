@@ -1,0 +1,13 @@
+v253 TEST ONLY - control codes preserved, punctuation cells reserved
+base=arc1_v238_glyph_16px_TEST_ONLY_8816AF49.zip
+output=arc1_v253_punct_cells_TEST_ONLY_5A2FA133.zip
+sha256=5A2FA13340EBECE88AEA4A4FE16D8E296F2E4A8B675A1E0C56B2995911AEA382
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+glyphs=665  (one-byte 214, two-byte 451, punct cells reserved 5)
+atlas=168 cells, 15x12, 240x192 px
+lines written=2679   truncated=120
+characters with no glyph=3 (drawn as space)
+row_stride 84 -> 60
+no character table involved; glyphs come straight from the translation
+pieces=Hanme_8x4x4.bdf (iolo/8x4x4-fonts, MIT / OFL-1.1)
+runtime=PENDING user cold boot

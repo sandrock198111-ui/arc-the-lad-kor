@@ -1,0 +1,11 @@
+v262 TEST ONLY - the table the game actually reads (0x801A7520, 11-bit packed)
+base=arc1_v235_cache_row36_TEST_ONLY_1654F31B.zip   pictures_from=arc1_v151_free_the_sprite_cell_A4358FEE.zip
+output=arc1_v262_real_lookup_TEST_ONLY_F36356A3.zip
+sha256=F36356A3214DF68AE9DBA5B2396A551322088BFC368B343835AA5442A0C7F282
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+table slots=413   were static=104   were cached=309
+made static now=238   still cached=71   (no picture in v151: 57)
+script uses now resident=1,747   still via cache=240
+free cells below 1536 remaining=0
+DAT files byte-identical; script not renumbered
+runtime=PENDING user cold boot

@@ -1,0 +1,13 @@
+v249 TEST ONLY - script re-encoded from the translation source
+base=arc1_v238_glyph_16px_TEST_ONLY_8816AF49.zip
+output=arc1_v249_reencode_TEST_ONLY_40844F0B.zip
+sha256=40844F0BD89F89A058FBCF5458D8F690F3FC29001B2C02565413EDE43352F1DB
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+glyphs=665  (one-byte 219, two-byte 446)
+atlas=167 cells, 15x12, 240x192 px
+lines written=2679   truncated=85
+characters with no glyph=3 (drawn as space)
+row_stride 84 -> 60
+no character table involved; glyphs come straight from the translation
+pieces=Hanme_8x4x4.bdf (iolo/8x4x4-fonts, MIT / OFL-1.1)
+runtime=PENDING user cold boot
