@@ -1,0 +1,15 @@
+V325 TEST ONLY - pointer-proven Hanme16 UI re-encode
+base=arc1_v324_static_ui_cursor_recovery_TEST_ONLY_06F7C289.zip
+output=arc1_v325_ui_reencode_TEST_ONLY_7828AA04.zip
+sha256=7828AA04F6A0684981332924C30B4139ABFCA5065138FA899C4D429E87C74CD1
+delta=arc1_v325_ui_reencode_TEST_ONLY_delta_from_v324_3A531423.zip
+delta_sha256=3A531423DBA076557BA67548E0161813CBA8CB01D253DD70C79F753DC2E3EE7B
+changed_members=COMM.IMG,PSX.EXE
+changed_bytes=PSX.EXE:7284,COMM.IMG:226
+ui_records=666; unique_payloads=561
+pool=5590/6076B; free=486B
+space=A1/physical160 half-width; legacy literal 9C removed at character boundaries
+new_glyphs=%:403,뱀:762,센:819,첩:823,탑:865
+V324 resident lookup/range cursor/HUD binary pointers=byte exact
+all DAT=byte exact
+runtime=PENDING cold boot and UI traversal; TEST_ONLY

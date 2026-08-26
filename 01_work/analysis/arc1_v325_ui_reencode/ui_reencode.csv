@@ -1,0 +1,667 @@
+﻿pointer_offset,categories,selected_category,source_text,korean,string_offset,encoded_bytes,space_count,space_code,encoded_hex
+0x780E8,system,system,처음부터,처음부터,0x8073E,5,0,,DD 8F 8D 6C 02
+0x780EC,system,system,저장 데이터가 없습니다,저장 데이터가 없습니다,0x81F12,13,2,A1,DD 24 56 A1 81 03 02 0C A1 71 2D 07 01
+0x780F0,system,system,메모리 카드에 남은 공간이 없습니다,메모리 카드에 남은 공간이 없습니다,0x80C72,24,4,A1,DD 2C 55 2E A1 DD 38 17 0E A1 DD 3D 26 A1 DD 10 DD 1B 03 A1 71 2D 07 01
+0x780F4,system,system,그대로 계속하기,그대로 계속하기,0x8039D,10,1,A1,15 37 D5 A1 DD 11 DD 5F 19 24
+0x780F8,system,system,데이터가 손상되었습니다,데이터가 손상되었습니다,0x81FDE,12,1,A1,81 03 02 0C A1 85 8B 73 61 2D 07 01
+0x781B8,system,system,불러올 데이터를 선택하세요,불러올 데이터를 선택하세요,0x80E0E,17,2,A1,DD 13 20 99 A1 81 03 02 36 A1 DD 53 DF 9A 19 8C 2C
+0x781BC,system,system,메모리 카드 없이 계속하시겠습니까?,메모리 카드 없이 계속하시겠습니까?,0x81D14,23,3,A1,DD 2C 55 2E A1 DD 38 17 A1 71 03 A1 DD 11 DD 5F 19 29 54 2D 07 3B D1
+0x781C0,system,system,메모리 카드를 넣고 확인 버튼을 누르세요,메모리 카드를 넣고 확인 버튼을 누르세요,0x80BD2,27,5,A1,DD 2C 55 2E A1 DD 38 17 36 A1 6F 1C A1 DE 2B 35 A1 67 DD F7 0D A1 DD 55 70 8C 2C
+0x781C4,system,system,어느 카드를 사용하시겠습니까?,어느 카드를 사용하시겠습니까?,0x80D1C,18,2,A1,14 4D A1 DD 38 17 36 A1 34 DD 1A 19 29 54 2D 07 3B D1
+0x781C8,system,system,메모리 카드를 초기화하시겠습니까?,메모리 카드를 초기화하시겠습니까?,0x81DB2,21,2,A1,DD 2C 55 2E A1 DD 38 17 36 A1 39 24 DD 83 19 29 54 2D 07 3B D1
+0x781CC,system,system,메모리 카드가 가득합니다. 계속하시겠습니까?,메모리 카드가 가득합니다. 계속하시겠습니까?,0x80B94,30,3,A1,DD 2C 55 2E A1 DD 38 17 0C A1 0C DE A9 DD 1D 07 01 21 A1 DD 11 DD 5F 19 29 54 2D 07 3B D1
+0x781D0,system,system,쓰지 않는 데이터를 지우거나 다른 카드를 넣으세요,쓰지 않는 데이터를 지우거나 다른 카드를 넣으세요,0x80BB3,30,6,A1,DD 85 04 A1 78 06 A1 81 03 02 36 A1 04 3D 32 1E A1 01 DD BF A1 DD 38 17 36 A1 6F 4E 8C 2C
+0x78220,system,system,메모리 카드를 확인하고 있습니다,메모리 카드를 확인하고 있습니다,0x81DDD,20,3,A1,DD 2C 55 2E A1 DD 38 17 36 A1 DE 2B 35 19 1C A1 1F 2D 07 01
+0x78224,system,system,메모리 카드를 초기화하고 있습니다,메모리 카드를 초기화하고 있습니다,0x81D9C,21,3,A1,DD 2C 55 2E A1 DD 38 17 36 A1 39 24 DD 83 19 1C A1 1F 2D 07 01
+0x78228,system,system,데이터를 저장하고 있습니다,데이터를 저장하고 있습니다,0x81004,15,2,A1,81 03 02 36 A1 DD 24 56 19 1C A1 1F 2D 07 01
+0x7822C,system,system,데이터를 불러오고 있습니다,데이터를 불러오고 있습니다,0x80FF4,15,2,A1,81 03 02 36 A1 DD 13 20 46 1C A1 1F 2D 07 01
+0x804A4,table,table,불꽃의 수호,불꽃의 수호,0x812E2,8,1,A1,DD 13 DD 8C 0F A1 50 95
+0x804A8,table,table,얼음의 수호,얼음의 수호,0x81635,7,1,A1,DE 93 8D 0F A1 50 95
+0x804AC,table,table,안티 헤모지,안티 헤모지,0x812B5,8,1,A1,94 DF 51 A1 DD C3 55 04
+0x804B0,table,table,치유의 부적,치유의 부적,0x812F4,8,1,A1,DD 1F 8A 0F A1 6C DD 09
+0x804B4,table,table,비단 허리띠,비단 허리띠,0x80416,10,1,A1,DD 06 DD 35 A1 DE 48 2E DE 7A
+0x804B8,table,table,마법 카드,마법 카드,0x814D5,7,1,A1,45 DD 37 A1 DD 38 17
+0x804BC,table,table,수면 방지 카드,수면 방지 카드,0x803EA,10,2,A1,50 3A A1 DD 29 04 A1 DD 38 17
+0x804C0,table,table,파워 암,파워 암,0x815D5,7,1,A1,DD 7B DD 68 A1 DF 6C
+0x804C4,table,table,카이저 글러브,카이저 글러브,0x802E4,11,1,A1,DD 38 03 DD 24 A1 DE 1A 20 DD C8
+0x804C8,table,table,환상의 장갑,환상의 장갑,0x81357,8,1,A1,DD 65 8B 0F A1 56 DE 0C
+0x804CC,table,table,선글라스,선글라스,0x80622,6,0,,DD 53 DE 1A 8F 30
+0x804D0,table,table,명중의 두루마리,명중의 두루마리,0x8201F,12,1,A1,DD 34 DD 73 0F A1 DD 21 DD 42 45 2E
+0x804D4,table,table,투척의 두루마리,투척의 두루마리,0x82039,12,1,A1,DD 39 DF 93 0F A1 DD 21 DD 42 45 2E
+0x804D8,table,table,신의 주먹,신의 주먹,0x816EF,6,1,A1,3E 0F A1 40 DE 66
+0x804DC,table,table,바이올렛 레이저,바이올렛 레이저,0x81FF8,12,1,A1,DD 08 03 99 DF 2C A1 DD 66 03 DD 24
+0x804E0,table,table,목걸이,목걸이,0x8071A,5,0,,DD 33 DD 8E 03
+0x804E4,table,table,염주,염주,0x80887,3,0,,DF 89 40
+0x804E8,table,table,장로의 머리띠,장로의 머리띠,0x81872,9,1,A1,56 D5 0F A1 DD 5D 2E DE 7A
+0x804EC,table,table,질풍의 반다나,질풍의 반다나,0x817F4,10,1,A1,DD AA DE 2E 0F A1 DD 46 01 1E
+0x804F0,table,table,하이퍼 부츠,하이퍼 부츠,0x81A6E,8,1,A1,19 03 DE 78 A1 6C DE CD
+0x804F4,table,table,임시 신발,임시 신발,0x815ED,7,1,A1,DD C2 29 A1 3E DD 0E
+0x804F8,table,table,팔찌 1,팔찌 1,0x80637,6,1,A1,DD 6C DE 56 A1 4A
+0x804FC,table,table,팔찌 2,팔찌 2,0x80630,6,1,A1,DD 6C DE 56 A1 0B
+0x80500,table,table,기술의 팔찌,기술의 팔찌,0x81836,9,1,A1,24 DD E5 0F A1 DD 6C DE 56
+0x80504,table,table,여신의 기도,여신의 기도,0x816B0,6,1,A1,1A 3E 0F A1 24 33
+0x80508,table,table,파워 리스트,파워 리스트,0x8199E,9,1,A1,DD 7B DD 68 A1 2E 30 DD 5B
+0x8050C,table,table,데일의 이빨,데일의 이빨,0x81535,7,1,A1,81 6B 0F A1 03 DE 20
+0x80510,table,table,환수의 이빨,환수의 이빨,0x8134E,8,1,A1,DD 65 50 0F A1 03 DE 20
+0x80514,table,table,바닷바람의 선율,바닷바람의 선율,0x810B1,14,1,A1,DD 08 DF 1F DD 08 DD 22 0F A1 DD 53 DE A6
+0x80518,table,table,조개껍데기,조개껍데기,0x81575,7,0,,90 DD B4 DF 18 81 24
+0x8051C,table,table,유니콘의 뿔,유니콘의 뿔,0x81B34,8,1,A1,8A 07 DE 96 0F A1 DE E1
+0x80520,table,table,비극의 안경,비극의 안경,0x812C7,8,1,A1,DD 06 DF 17 0F A1 94 68
+0x80524,table,table,거울,거울,0x8082B,3,0,,32 DD 92
+0x80528,table,table,고대의 반지,고대의 반지,0x8144D,7,1,A1,1C 37 0F A1 DD 46 04
+0x8052C,table,table,환상의 반지,환상의 반지,0x81360,8,1,A1,DD 65 8B 0F A1 DD 46 04
+0x80530,table,table,마도의 반지,마도의 반지,0x814A5,7,1,A1,45 33 0F A1 DD 46 04
+0x80534,table,table,장난감 반지,장난감 반지,0x8187C,9,1,A1,56 DD 6A DD 77 A1 DD 46 04
+0x80538,table,table,독막이 반지,독막이 반지,0x81A48,9,1,A1,DF 22 DD AB 03 A1 DD 46 04
+0x8053C,table,table,환상의 방패,환상의 방패,0x81958,9,1,A1,DD 65 8B 0F A1 DD 29 DE D7
+0x80540,table,table,전사의 수호,전사의 수호,0x805AB,6,1,A1,4F 34 0F A1 50 95
+0x80544,table,table,장로의 방패,장로의 방패,0x81B07,8,1,A1,56 D5 0F A1 DD 29 DE D7
+0x80548,table,table,강력한 지팡이,강력한 지팡이,0x8044D,10,1,A1,DD 28 DD 2B 53 A1 04 DF 52 03
+0x8054C,table,table,지옥의 스누프,지옥의 스누프,0x8035B,10,1,A1,04 DE 39 0F A1 30 DD 55 DD 9D
+0x80550,table,table,왕의 상,왕의 상,0x8079B,4,1,A1,6A 0F A1 8B
+0x80554,table,table,매의 상,매의 상,0x8074A,5,1,A1,DD C9 0F A1 8B
+0x80558,table,table,가짜 상,가짜 상,0x80696,5,1,A1,0C DE B9 A1 8B
+0x8055C,table,table,단검,단검,0x807D7,4,0,,DD 35 DD A1
+0x80560,table,table,환상의 검,환상의 검,0x815BD,7,1,A1,DD 65 8B 0F A1 DD A1
+0x80564,table,table,리라의 머리장식,리라의 머리장식,0x803C9,10,1,A1,2E 8F 0F A1 DD 5D 2E 56 DD B5
+0x80568,table,table,요동치는 보석,요동치는 보석,0x803BE,10,1,A1,2C DD 32 DD 1F 06 A1 60 DD 8B
+0x8056C,table,table,아머 스톤,아머 스톤,0x81425,7,1,A1,09 DD 5D A1 30 DD 9A
+0x80570,table,table,로맨싱 스톤,로맨싱 스톤,0x818C2,9,1,A1,D5 DE 08 DE 26 A1 30 DD 9A
+0x80574,table,table,로맨싱 스톤,로맨싱 스톤,0x818C2,9,1,A1,D5 DE 08 DE 26 A1 30 DD 9A
+0x80578,table,table,로맨싱 스톤,로맨싱 스톤,0x818C2,9,1,A1,D5 DE 08 DE 26 A1 30 DD 9A
+0x8057C,table,table,로맨싱 스톤,로맨싱 스톤,0x818C2,9,1,A1,D5 DE 08 DE 26 A1 30 DD 9A
+0x80580,table,table,태양의 거울,태양의 거울,0x819DA,9,1,A1,DD D2 DD 82 0F A1 32 DD 92
+0x80584,table,table,압화 책,압화 책,0x8164D,7,1,A1,DF 6D DD 83 A1 DE 43
+0x80588,table,table,클라우스의 책,클라우스의 책,0x819F8,9,1,A1,DE 01 8F 3D 30 0F A1 DE 43
+0x8058C,table,table,음악집,음악집,0x806F6,5,0,,8D DD EB DD E2
+0x80590,table,table,라크의 문장,라크의 문장,0x8156D,7,1,A1,8F 58 0F A1 DD AF 56
+0x80594,table,table,유카리의 문장,유카리의 문장,0x818AE,9,1,A1,8A DD 38 2E 0F A1 DD AF 56
+0x80598,table,table,포니의 문장,포니의 문장,0x81372,8,1,A1,DD 78 07 0F A1 DD AF 56
+0x8059C,table,table,용자의 증표,용자의 증표,0x818F4,9,1,A1,DD 1A 28 0F A1 DE 09 DD 8A
+0x805A0,table,table,?????,?????,0x80708,5,0,,D1 D1 D1 D1 D1
+0x80A94,table,table,화염 공격 피해 감소,화염 공격 피해 감소,0x80DA1,18,3,A1,DD 83 DF 89 A1 DD 10 DD 0A A1 DD 3C 2B A1 DD 77 DD 07
+0x80A98,table,table,냉기 공격 피해 감소,냉기 공격 피해 감소,0x80E68,17,3,A1,DF 1D 24 A1 DD 10 DD 0A A1 DD 3C 2B A1 DD 77 DD 07
+0x80A9C,table,table,헤모지 방지,헤모지 방지,0x813A8,8,1,A1,DD C3 55 04 A1 DD 29 04
+0x80AA0,table,table,회복 효과 증가,회복 효과 증가,0x81FD1,12,2,A1,7A DD 9F A1 DE 24 DD 18 A1 DE 09 0C
+0x80AA4,table,table,획득 경험치 2배,획득 경험치 2배,0x81147,14,2,A1,DE 79 DE A9 A1 68 DD 54 DD 1F A1 0B DD 93
+0x80AA8,table,table,마력 10% 상승,마력 10% 상승,0x80254,11,2,A1,45 DD 2B A1 4A 91 DD B8 A1 8B 69
+0x80AAC,table,table,수면 방지,수면 방지,0x805B9,6,1,A1,50 3A A1 DD 29 04
+0x80AB0,table,table,촌가라 방어력 30% 상승,촌가라 방어력 30% 상승,0x80DEA,17,3,A1,96 0C 8F A1 DD 29 14 DD 2B A1 27 91 DD B8 A1 8B 69
+0x80AB4,table,table,던지기 레벨 +1,던지기 레벨 1,0x802A8,11,2,A1,DD 25 04 24 A1 DD 66 DD EF A1 4A
+0x80AB8,table,table,공격력 50% 상승,공격력 50% 상승,0x810ED,14,2,A1,DD 10 DD 0A DD 2B A1 9E 91 DD B8 A1 8B 69
+0x80ABC,table,table,암흑 방지,암흑 방지,0x81414,8,1,A1,DF 6C DF 59 A1 DD 29 04
+0x80AC0,table,table,명중률 상승,명중률 상승,0x81912,9,1,A1,DD 34 DD 73 DF 5B A1 8B 69
+0x80AC4,table,table,던지기가 강력 투척으로 변화,던지기가 강력 투척으로 변화,0x81D86,21,3,A1,DD 25 04 24 0C A1 DD 28 DD 2B A1 DD 39 DF 93 4E D5 A1 80 DD 83
+0x80AC8,table,table,특정 적에게 추가 피해,특정 적에게 추가 피해,0x80EF1,16,3,A1,DE 3A 31 A1 DD 09 0E 41 A1 DF 95 0C A1 DD 3C 2B
+0x80ACC,table,table,공격이 반드시 명중,공격이 반드시 명중,0x81034,15,2,A1,DD 10 DD 0A 03 A1 DD 46 17 29 A1 DD 34 DD 73
+0x80AD0,table,table,레벨업 시 최대 체력 증가량 상승,레벨업 시 최대 체력 증가량 상승,0x80C3F,25,5,A1,DD 66 DD EF DE 9E A1 29 A1 DE 27 37 A1 DD 90 DD 2B A1 DE 09 0C D2 A1 8B 69
+0x80AD4,table,table,고겐 마력 30% 상승,고겐 마력 30% 상승,0x80FB4,15,3,A1,1C DD A9 A1 45 DD 2B A1 27 91 DD B8 A1 8B 69
+0x80AD8,table,table,명중률 상승,명중률 상승,0x81912,9,1,A1,DD 34 DD 73 DF 5B A1 8B 69
+0x80ADC,table,table,민첩 10% 상승,민첩 10% 상승,0x820A1,12,2,A1,DD EC DF 5E A1 4A 91 DD B8 A1 8B 69
+0x80AE0,table,table,민첩 30% 상승,민첩 30% 상승,0x82094,12,2,A1,DD EC DF 5E A1 27 91 DD B8 A1 8B 69
+0x80AE4,table,table,점프 레벨 +1,점프 레벨 1,0x8032C,11,2,A1,DD D0 DD 9D A1 DD 66 DD EF A1 4A
+0x80AE8,table,table,반격률 상승,반격률 상승,0x8193A,9,1,A1,DD 46 DD 0A DF 5B A1 8B 69
+0x80AEC,table,table,받기 레벨 +1,받기 레벨 1,0x80437,10,2,A1,DD 19 24 A1 DD 66 DD EF A1 4A
+0x80AF0,table,table,받기가 되던지기로 변화,받기가 되던지기로 변화,0x81044,15,2,A1,DD 19 24 0C A1 73 DD 25 04 24 D5 A1 80 DD 83
+0x80AF4,table,table,능력 MP 소비 절반,능력 MP 소비 절반,0x81E1A,19,3,A1,DD ED DD 2B A1 DF 0B DE 07 A1 DD 07 DD 06 A1 DD DA DD 46
+0x80AF8,table,table,공격력 30% 상승,공격력 30% 상승,0x810CF,14,2,A1,DD 10 DD 0A DD 2B A1 27 91 DD B8 A1 8B 69
+0x80AFC,table,table,이가 반격 피해 증가,이가 반격 피해 증가,0x80FA4,15,3,A1,03 0C A1 DD 46 DD 0A A1 DD 3C 2B A1 DE 09 0C
+0x80B00,table,table,효과 불명,효과 불명,0x81A0C,9,1,A1,DE 24 DD 18 A1 DD 13 DD 34
+0x80B04,table,table,쿠쿠루 행동 시 주변 아군 회복,쿠쿠루 행동 시 주변 아군 회복,0x81CFC,23,5,A1,DD 0C DD 0C DD 42 A1 DD 31 DD 32 A1 29 A1 40 80 A1 09 7C A1 7A DD 9F
+0x80B08,table,table,아이템 드롭률 상승,아이템 드롭률 상승,0x81172,13,2,A1,09 03 DD 5E A1 17 DE 94 DF 5B A1 8B 69
+0x80B0C,table,table,적 처치 시 희귀 아이템 획득,적 처치 시 희귀 아이템 획득,0x80C59,24,5,A1,DD 09 A1 DD 8F DD 1F A1 29 A1 DD 43 DE 6C A1 09 03 DD 5E A1 DE 79 DE A9
+0x80B10,table,table,효과 불명,효과 불명,0x81A0C,9,1,A1,DE 24 DD 18 A1 DD 13 DD 34
+0x80B14,table,table,석화 방지,석화 방지,0x81384,8,1,A1,DD 8B DD 83 A1 DD 29 04
+0x80B18,table,table,아크 전용 효과 불명,아크 전용 효과 불명,0x80E7A,16,3,A1,09 58 A1 4F DD 1A A1 DE 24 DD 18 A1 DD 13 DD 34
+0x80B1C,table,table,마력 50% 상승,마력 50% 상승,0x80260,11,2,A1,45 DD 2B A1 9E 91 DD B8 A1 8B 69
+0x80B20,table,table,마력 30% 상승,마력 30% 상승,0x80248,11,2,A1,45 DD 2B A1 27 91 DD B8 A1 8B 69
+0x80B24,table,table,포코의 방향 전환 효과가 전체화,포코의 방향 전환 효과가 전체화,0x80C0A,26,4,A1,DD 78 DD 40 0F A1 DD 29 DD B2 A1 4F DD 65 A1 DE 24 DD 18 0C A1 4F DD 90 DD 83
+0x80B28,table,table,독 방지,독 방지,0x80676,6,1,A1,DF 22 A1 DD 29 04
+0x80B2C,table,table,방어력 50% 상승,방어력 50% 상승,0x81F3C,13,2,A1,DD 29 14 DD 2B A1 9E 91 DD B8 A1 8B 69
+0x80B30,table,table,방어력 30% 상승,방어력 30% 상승,0x81F20,13,2,A1,DD 29 14 DD 2B A1 27 91 DD B8 A1 8B 69
+0x80B34,table,table,방어율 상승,방어율 상승,0x81306,8,1,A1,DD 29 14 DE A6 A1 8B 69
+0x80B38,table,table,고겐 공격력 70% 상승,고겐 공격력 70% 상승,0x80D2F,18,3,A1,1C DD A9 A1 DD 10 DD 0A DD 2B A1 9A 91 DD B8 A1 8B 69
+0x80B3C,table,table,이가 심안법 범위 확장,이가 심안법 범위 확장,0x80F94,15,3,A1,03 0C A1 9D 94 DD 37 A1 DE 63 8E A1 DE 2B 56
+0x80B40,table,table,촌가라가 소환수 경험치 획득,촌가라가 소환수 경험치 획득,0x81D70,21,3,A1,96 0C 8F 0C A1 DD 07 DD 65 50 A1 68 DD 54 DD 1F A1 DE 79 DE A9
+0x80B44,table,table,침묵 방지,침묵 방지,0x813C3,8,1,A1,DE 06 DF 5F A1 DD 29 04
+0x80B48,table,table,회피율 상승,회피율 상승,0x81B19,8,1,A1,7A DD 3C DE A6 A1 8B 69
+0x80B4C,table,table,공격력 10% 상승,공격력 10% 상승,0x810DE,14,2,A1,DD 10 DD 0A DD 2B A1 4A 91 DD B8 A1 8B 69
+0x80B50,table,table,피해 편차 증가,피해 편차 증가,0x82046,12,2,A1,DD 3C 2B A1 DD 79 DD B7 A1 DE 09 0C
+0x80B54,table,table,쿠쿠루 부활 시 최대 체력 회복,쿠쿠루 부활 시 최대 체력 회복,0x80C25,25,5,A1,DD 0C DD 0C DD 42 A1 6C DD E1 A1 29 A1 DE 27 37 A1 DD 90 DD 2B A1 7A DD 9F
+0x80B58,table,table,피해 편차 증가,피해 편차 증가,0x82046,12,2,A1,DD 3C 2B A1 DD 79 DD B7 A1 DE 09 0C
+0x80B5C,table,table,방어력 10% 상승,방어력 10% 상승,0x81F2E,13,2,A1,DD 29 14 DD 2B A1 4A 91 DD B8 A1 8B 69
+0x80B60,table,table,효과 불명,효과 불명,0x81A0C,9,1,A1,DE 24 DD 18 A1 DD 13 DD 34
+0x80B64,table,table,효과 불명,효과 불명,0x81A0C,9,1,A1,DE 24 DD 18 A1 DD 13 DD 34
+0x80B68,table,table,효과 불명,효과 불명,0x81A0C,9,1,A1,DE 24 DD 18 A1 DD 13 DD 34
+0x80B6C,table,table,효과 불명,효과 불명,0x81A0C,9,1,A1,DE 24 DD 18 A1 DD 13 DD 34
+0x80B70,table,table,매 행동 체력 회복,매 행동 체력 회복,0x80EE0,16,3,A1,DD C9 A1 DD 31 DD 32 A1 DD 90 DD 2B A1 7A DD 9F
+0x80B74,table,table,토슈 공격 명중률 상승,토슈 공격 명중률 상승,0x80D55,18,3,A1,83 DD 86 A1 DD 10 DD 0A A1 DD 34 DD 73 DF 5B A1 8B 69
+0x80B78,table,table,모든 상태 이상 방지,모든 상태 이상 방지,0x81093,14,3,A1,55 DD 26 A1 8B DD D2 A1 03 8B A1 DD 29 04
+0x80B7C,table,table,포코 마력 30% 상승,포코 마력 30% 상승,0x80EBE,16,3,A1,DD 78 DD 40 A1 45 DD 2B A1 27 91 DD B8 A1 8B 69
+0x80B80,table,table,마비 방지,마비 방지,0x814BD,7,1,A1,45 DD 06 A1 DD 29 04
+0x80B84,table,table,토슈 앵화뇌폭참에 마비 부여,토슈 앵화뇌폭참에 마비 부여,0x81D2C,22,3,A1,83 DD 86 A1 DF 6E DD 83 DF 1E DD 62 DD 4C 0E A1 45 DD 06 A1 6C 1A
+0x80B88,table,table,특정 적에게 추가 피해,특정 적에게 추가 피해,0x80EF1,16,3,A1,DE 3A 31 A1 DD 09 0E 41 A1 DF 95 0C A1 DD 3C 2B
+0x80B8C,table,table,아크 매 행동 MP 회복,아크 매 행동 MP 회복,0x81DF2,19,4,A1,09 58 A1 DD C9 A1 DD 31 DD 32 A1 DF 0B DE 07 A1 7A DD 9F
+0x80B90,table,table,?????,?????,0x80708,5,0,,D1 D1 D1 D1 D1
+0x80C9C,table,table,끈끈이,끈끈이,0x80750,5,0,,DE 40 DE 40 03
+0x80CA0,table,table,의욕 젤리,의욕 젤리,0x8142D,7,1,A1,0F DD E3 A1 DF 8F 2E
+0x80CA4,table,table,넘치는 열매,넘치는 열매,0x8180A,10,1,A1,DD F4 DD 1F 06 A1 DD 89 DD C9
+0x80CA8,table,table,회복 열매,회복 열매,0x81B22,8,1,A1,7A DD 9F A1 DD 89 DD C9
+0x80CAC,table,table,마비 사과,마비 사과,0x814AD,7,1,A1,45 DD 06 A1 34 DD 18
+0x80CB0,table,table,돌,돌,0x80F12,1,0,,72
+0x80CB4,table,table,레코의 풀,레코의 풀,0x81369,8,1,A1,DD 66 DD 40 0F A1 DE 45
+0x80CB8,table,table,약초,약초,0x80877,3,0,,DD 48 39
+0x80CBC,table,table,독초,독초,0x8087F,3,0,,DF 22 39
+0x80CC0,table,table,루우의 약,루우의 약,0x815A5,7,1,A1,DD 42 3D 0F A1 DD 48
+0x80CC4,table,table,민첩의 약,민첩의 약,0x813B1,8,1,A1,DD EC DF 5E 0F A1 DD 48
+0x80CC8,table,table,작은 폭탄,작은 폭탄,0x81345,8,1,A1,DD 64 26 A1 DD 62 DD D1
+0x80CCC,table,table,큰 폭탄,큰 폭탄,0x805F1,6,1,A1,AA A1 DD 62 DD D1
+0x80CD0,table,table,만능약,만능약,0x806B4,5,0,,38 DD ED DD 48
+0x80CD4,table,table,성수,성수,0x8086B,3,0,,DD 17 50
+0x80CD8,table,table,부활약,부활약,0x806D2,5,0,,6C DD E1 DD 48
+0x80CDC,table,table,공격 항아리,공격 항아리,0x818D6,9,1,A1,DD 10 DD 0A A1 DD F2 09 2E
+0x80CE0,table,table,수면 구슬,수면 구슬,0x805B2,6,1,A1,50 3A A1 87 DD FC
+0x80CE4,table,table,약화 구슬,약화 구슬,0x81321,8,1,A1,DD 48 DD 83 A1 87 DD FC
+0x80CE8,table,table,힘의 열매,힘의 열매,0x8151D,7,1,A1,74 0F A1 DD 89 DD C9
+0x80CEC,table,table,파로의 열매,파로의 열매,0x81994,9,1,A1,DD 7B D5 0F A1 DD 89 DD C9
+0x80CF0,table,table,생명의 열매,생명의 열매,0x80458,10,1,A1,DD 36 DD 34 0F A1 DD 89 DD C9
+0x80CF4,table,table,마력의 잎,마력의 잎,0x814CD,7,1,A1,45 DD 2B 0F A1 DF 8D
+0x80CF8,table,table,마력의 샘,마력의 샘,0x814C5,7,1,A1,45 DD 2B 0F A1 DE CC
+0x80CFC,table,table,눈가림 풀,눈가림 풀,0x813CC,8,1,A1,DE 0D 0C DE 29 A1 DE 45
+0x80D00,table,table,쓴 잎,쓴 잎,0x80756,5,1,A1,DE B1 A1 DF 8D
+0x80D04,table,table,석화 해제침,석화 해제침,0x819B2,9,1,A1,DD 8B DD 83 A1 2B 66 DE 06
+0x80D08,table,table,침묵 해제침,침묵 해제침,0x81A02,9,1,A1,DE 06 DF 5F A1 2B 66 DE 06
+0x80D0C,table,table,소환 항아리,소환 항아리,0x818CC,9,1,A1,DD 07 DD 65 A1 DD F2 09 2E
+0x80D10,table,table,?????,?????,0x80708,5,0,,D1 D1 D1 D1 D1
+0x80D14,table,table,?????,?????,0x80708,5,0,,D1 D1 D1 D1 D1
+0x80D18,table,table,?????,?????,0x80708,5,0,,D1 D1 D1 D1 D1
+0x80F14,table,table,민첩 일시 감소,민첩 일시 감소,0x820AE,12,2,A1,DD EC DF 5E A1 6B 29 A1 DD 77 DD 07
+0x80F18,table,table,헤모지 회복,헤모지 회복,0x8139F,8,1,A1,DD C3 55 04 A1 7A DD 9F
+0x80F1C,table+system,table,레벨 1 상승,레벨 1 상승,0x81962,9,2,A1,DD 66 DD EF A1 4A A1 8B 69
+0x80F20,table,table,체력 60 회복,체력 60 회복,0x80320,11,2,A1,DD 90 DD 2B A1 9F 91 A1 7A DD 9F
+0x80F24,table,table,마비 부여,마비 부여,0x816FD,6,1,A1,45 DD 06 A1 6C 1A
+0x80F28,table,table,던져서 피해,던져서 피해,0x818FE,9,1,A1,DD 25 DD 63 25 A1 DD 3C 2B
+0x80F2C,table,table,방어력 상승,방어력 상승,0x812FD,8,1,A1,DD 29 14 DD 2B A1 8B 69
+0x80F30,table,table,체력 20 회복,체력 20 회복,0x80314,11,2,A1,DD 90 DD 2B A1 0B 91 A1 7A DD 9F
+0x80F34,table,table,독 부여,독 부여,0x80762,5,1,A1,DF 22 A1 6C 1A
+0x80F38,table,table,마비 회복,마비 회복,0x814B5,7,1,A1,45 DD 06 A1 7A DD 9F
+0x80F3C,table,table,민첩 일시 상승,민첩 일시 상승,0x817FF,10,2,A1,DD EC DF 5E A1 6B 29 A1 8B 69
+0x80F40,table,table,폭발 피해,폭발 피해,0x8133C,8,1,A1,DD 62 DD 0E A1 DD 3C 2B
+0x80F44,table,table,큰 폭발 피해,큰 폭발 피해,0x8040B,10,2,A1,AA A1 DD 62 DD 0E A1 DD 3C 2B
+0x80F48,table,table,대부분의 상태 이상 회복,대부분의 상태 이상 회복,0x80FC4,15,3,A1,37 6C 92 0F A1 8B DD D2 A1 03 8B A1 7A DD 9F
+0x80F4C,table,table,독 회복,독 회복,0x8066F,6,1,A1,DF 22 A1 7A DD 9F
+0x80F50,table,table,쓰러진 대상 부활,쓰러진 대상 부활,0x82087,12,2,A1,DD 85 20 DD 3F A1 37 8B A1 6C DD E1
+0x80F54,table,table,공격력 일시 상승,공격력 일시 상승,0x82012,12,2,A1,DD 10 DD 0A DD 2B A1 6B 29 A1 8B 69
+0x80F58,table,table,수면 부여,수면 부여,0x806CC,5,1,A1,50 3A A1 6C 1A
+0x80F5C,table,table,공격 방어 일시 감소,공격 방어 일시 감소,0x80E8B,16,3,A1,DD 10 DD 0A A1 DD 29 14 A1 6B 29 A1 DD 77 DD 07
+0x80F60,table,table,공격력 상승,공격력 상승,0x818E0,9,1,A1,DD 10 DD 0A DD 2B A1 8B 69
+0x80F64,table,table,민첩 상승,민첩 상승,0x81605,7,1,A1,DD EC DF 5E A1 8B 69
+0x80F68,table,table,최대 체력 2 상승,최대 체력 2 상승,0x81F74,13,3,A1,DE 27 37 A1 DD 90 DD 2B A1 0B A1 8B 69
+0x80F6C,table,table,마력 상승,마력 상승,0x805A4,6,1,A1,45 DD 2B A1 8B 69
+0x80F70,table,table,최대 마력 2 상승,최대 마력 2 상승,0x820C8,12,3,A1,DE 27 37 A1 45 DD 2B A1 0B A1 8B 69
+0x80F74,table,table,명중률 감소,명중률 감소,0x802D8,11,1,A1,DD 34 DD 73 DF 5B A1 DD 77 DD 07
+0x80F78,table,table,방어력 일시 상승,방어력 일시 상승,0x802B4,11,2,A1,DD 29 14 DD 2B A1 6B 29 A1 8B 69
+0x80F7C,table,table,석화 회복,석화 회복,0x8137B,8,1,A1,DD 8B DD 83 A1 7A DD 9F
+0x80F80,table,table,침묵 회복,침묵 회복,0x813BA,8,1,A1,DE 06 DF 5F A1 7A DD 9F
+0x80F84,table,table,촌가라의 몬스터 소환,촌가라의 몬스터 소환,0x8118E,13,2,A1,96 0C 8F 0F A1 64 30 02 A1 DD 07 DD 65
+0x80F88,table,table,?????,?????,0x80708,5,0,,D1 D1 D1 D1 D1
+0x80F8C,table,table,?????,?????,0x80708,5,0,,D1 D1 D1 D1 D1
+0x80F90,table,table,?????,?????,0x80708,5,0,,D1 D1 D1 D1 D1
+0x811C0,table,table,,,0x808AD,0,0,,
+0x811C4,table,table,번 그라운드,번 그라운드,0x805EA,6,1,A1,9B A1 15 8F 86 17
+0x811C8,table,table,토탈 힐링,토탈 힐링,0x81B2B,8,1,A1,83 DE 14 A1 DF 5D DE 54
+0x811CC,table,table,게일 플래시,게일 플래시,0x81AD1,8,1,A1,41 6B A1 DE 36 DD 12 29
+0x811D0,table,table,슬로우 에너미,슬로우 에너미,0x819EE,9,1,A1,DD FC D5 3D A1 0E 89 DD 2F
+0x811D4,table,table,메테오 폴,메테오 폴,0x8130F,8,1,A1,DD 2C DD BE 46 A1 DF 56
+0x811D8,table,table,큐어,큐어,0x8088B,3,0,,DF 98 14
+0x811DC,table,table,디포이즌,디포이즌,0x815F5,7,0,,DD CD DD 78 03 DF 90
+0x811E0,table,table,사일런트,사일런트,0x816DA,6,0,,34 6B DD 2A DD 5B
+0x811E4,table,table,리프레시,리프레시,0x816C5,6,0,,2E DD 9D DD 66 29
+0x811E8,table,table,천벌,천벌,0x8080E,4,0,,DD E7 DD E4
+0x811EC,table,table,리저렉션,리저렉션,0x81465,7,0,,2E DD 24 DF 2A DF 67
+0x811F0,table,table,디바이드,디바이드,0x80645,6,0,,DD CD DD 08 03 17
+0x811F4,table,table,앵화뇌폭참,앵화뇌폭참,0x81820,10,0,,DF 6E DD 83 DF 1E DD 62 DD 4C
+0x811F8,table,table,주박검,주박검,0x806BA,5,0,,40 DE 9F DD A1
+0x811FC,table,table,진공참,진공참,0x80614,6,0,,DD 3F DD 10 DD 4C
+0x81200,table,table,호영참,호영참,0x80702,5,0,,95 DD FA DD 4C
+0x81204,table,table,전투의 북,전투의 북,0x814F5,7,1,A1,4F DD 39 0F A1 DE 64
+0x81208,table,table,황사자 북,황사자 북,0x8161D,7,1,A1,DE 3C 34 28 A1 DE 64
+0x8120C,table,table,기합 나팔,기합 나팔,0x81455,7,1,A1,24 DD 1D A1 1E DD 6C
+0x81210,table,table,탈진 나팔,탈진 나팔,0x813D5,8,1,A1,DE 14 DD 3F A1 1E DD 6C
+0x81214,table,table,치유의 하프,치유의 하프,0x812EB,8,1,A1,DD 1F 8A 0F A1 19 DD 9D
+0x81218,table,table,둔화 베이스,둔화 베이스,0x81A52,9,1,A1,DF 23 DD 83 A1 DD FE 03 30
+0x8121C,table,table,위타천 오카리나,위타천 오카리나,0x80278,11,1,A1,8E DD 7F DD E7 A1 46 DD 38 2E 1E
+0x81220,table,table,방향전환 피리,방향전환 피리,0x802C0,11,1,A1,DD 29 DD B2 4F DD 65 A1 DD 3C 2E
+0x81224,table,table,익스플로전,익스플로전,0x8163D,7,0,,DE C0 30 DE 36 D5 4F
+0x81228,table,table,드림 노크,드림 노크,0x81445,7,1,A1,17 DE 29 A1 DD 57 58
+0x8122C,table,table,다이아몬드 더스트,다이아몬드 더스트,0x820E2,11,1,A1,01 03 09 64 17 A1 DD 96 30 DD 5B
+0x81230,table,table,윈드 슬래셔,윈드 슬래셔,0x8182B,10,1,A1,DF 8B 17 A1 DD FC DD 12 DE B3
+0x81234,table,table,히트 월,히트 월,0x815B5,7,1,A1,DD 59 DD 5B A1 DE E5
+0x81238,table,table,썬더 스톰,썬더 스톰,0x8140B,8,1,A1,DF 6A DD 96 A1 30 DF 4F
+0x8123C,table,table,텔레포트,텔레포트,0x813F0,8,0,,DF 4E DD 66 DD 78 DD 5B
+0x81240,table,table,심안법,심안법,0x807B4,4,0,,9D 94 DD 37
+0x81244,table,table,퇴마광탄,퇴마광탄,0x81645,7,0,,DF 50 45 DF 16 DD D1
+0x81248,table,table,선풍격축,선풍격축,0x8132A,8,0,,DD 53 DE 2E DD 0A DE 02
+0x8124C,table,table,유성폭,유성폭,0x806F0,5,0,,8A DD 17 DD 62
+0x81250,table,table,귀신류영파,귀신류영파,0x81A3E,9,0,,DE 6C 3E DD 6E DD FA DD 7B
+0x81254,table,table,멸장열파,멸장열파,0x815FD,7,0,,DD DD 56 DD 89 DD 7B
+0x81258,table,table,케락,케락,0x80813,4,0,,DD F8 DF 27
+0x8125C,table,table,모프리,모프리,0x80791,4,0,,55 DD 9D 2E
+0x81260,table,table,후우진,후우진,0x80738,5,0,,DD 8D 3D DD 3F
+0x81264,table,table,라이진,라이진,0x807AA,4,0,,8F 03 DD 3F
+0x81268,table,table,헤모지,헤모지,0x80804,4,0,,DD C3 55 04
+0x8126C,table,table,오톤,오톤,0x8083F,3,0,,46 DD 9A
+0x81270,table,table,조사,조사,0x808AA,2,0,,90 34
+0x81274,table,table,초코,초코,0x80833,3,0,,39 DD 40
+0x81278,table,table,회복,회복,0x80853,3,0,,7A DD 9F
+0x8127C,table,table,다리 만들기,다리 만들기,0x81655,6,1,A1,01 2E A1 38 0A 24
+0x81280,table,table,풍뢰파,풍뢰파,0x80661,6,0,,DE 2E DF 31 DD 7B
+0x81284,table,table,풍뢰파,풍뢰파,0x80661,6,0,,DE 2E DF 31 DD 7B
+0x81288,table,table,빙의,빙의,0x80883,3,0,,DF 64 0F
+0x8128C,table,table,폭렬 수리검,폭렬 수리검,0x8194E,9,1,A1,DD 62 DF 2E A1 50 2E DD A1
+0x81290,table,table,자폭,자폭,0x80827,3,0,,28 DD 62
+0x81294,table,table,지옥으로 가는 계단,지옥으로 가는 계단,0x81164,13,2,A1,04 DE 39 4E D5 A1 0C 06 A1 DD 11 DD 35
+0x81298,table,table,사방 공격,사방 공격,0x81AAD,8,1,A1,34 DD 29 A1 DD 10 DD 0A
+0x8129C,table,table,염뢰붕,염뢰붕,0x8067D,6,0,,DF 89 DF 31 DE EC
+0x812A0,table,table,더스트 룬,더스트 룬,0x81396,8,1,A1,DD 96 30 DD 5B A1 DF 32
+0x812A4,table,table,요미의 날개,요미의 날개,0x8184A,9,1,A1,2C DD 2F 0F A1 DD 61 DD B4
+0x812A8,table,table,의욕 없음,의욕 없음,0x816A2,6,1,A1,0F DD E3 A1 71 8D
+0x81708,table,table,,,0x808AD,0,0,,
+0x8170C,table,table,용암으로 적에게 피해,용암으로 적에게 피해,0x81054,15,2,A1,DD 1A DF 6C 4E D5 A1 DD 09 0E 41 A1 DD 3C 2B
+0x81710,table,table,상태 이상과 체력 회복,상태 이상과 체력 회복,0x80DD8,17,3,A1,8B DD D2 A1 03 8B DD 18 A1 DD 90 DD 2B A1 7A DD 9F
+0x81714,table,table,이공간 공격으로 피해,이공간 공격으로 피해,0x80C8B,16,2,A1,03 DD 10 DD 1B A1 DD 10 DD 0A 4E D5 A1 DD 3C 2B
+0x81718,table,table,적 민첩 감소,적 민첩 감소,0x82005,12,2,A1,DD 09 A1 DD EC DF 5E A1 DD 77 DD 07
+0x8171C,table,table,운석으로 주변 적 피해,운석으로 주변 적 피해,0x81014,15,3,A1,86 DD 8B 4E D5 A1 40 80 A1 DD 09 A1 DD 3C 2B
+0x81720,table,table,체력 회복,체력 회복,0x8138D,8,1,A1,DD 90 DD 2B A1 7A DD 9F
+0x81724,table,table,독 해제,독 해제,0x8075C,5,1,A1,DF 22 A1 2B 66
+0x81728,table,table,적의 마법 봉인,적의 마법 봉인,0x8029C,11,2,A1,DD 09 0F A1 45 DD 37 A1 DD B6 35
+0x8172C,table,table,상태 이상 회복,상태 이상 회복,0x803F5,10,2,A1,8B DD D2 A1 03 8B A1 7A DD 9F
+0x81730,table,table,천사의 광선 공격,천사의 광선 공격,0x81129,14,2,A1,DD E7 34 0F A1 DF 16 DD 53 A1 DD 10 DD 0A
+0x81734,table,table,쓰러진 아군 부활,쓰러진 아군 부활,0x8207A,12,2,A1,DD 85 20 DD 3F A1 09 7C A1 6C DD E1
+0x81738,table,table,적 체력을 흡수해 아군 회복,적 체력을 흡수해 아군 회복,0x81DC8,20,4,A1,DD 09 A1 DD 90 DD 2B 0D A1 DF 5C 50 2B A1 09 7C A1 7A DD 9F
+0x8173C,table,table,적 하나에 필살검,적 하나에 필살검,0x811AA,13,2,A1,DD 09 A1 19 1E 0E A1 DE 4A DD A2 DD A1
+0x81740,table,table,적에게 마비 부여,적에게 마비 부여,0x80290,11,2,A1,DD 09 0E 41 A1 45 DD 06 A1 6C 1A
+0x81744,table,table,두 칸 앞의 적 공격,두 칸 앞의 적 공격,0x80E32,17,4,A1,DD 21 A1 DF 96 A1 DD BA 0F A1 DD 09 A1 DD 10 DD 0A
+0x81748,table,table,돌진하며 적 공격,돌진하며 적 공격,0x810A2,14,2,A1,72 DD 3F 19 DE 1F A1 DD 09 A1 DD 10 DD 0A
+0x8174C,table,table,아군 공격력 상승,아군 공격력 상승,0x81F90,12,2,A1,09 7C A1 DD 10 DD 0A DD 2B A1 8B 69
+0x81750,table,table,파동 광선 발사,파동 광선 발사,0x81F58,13,2,A1,DD 7B DD 32 A1 DF 16 DD 53 A1 DD 0E 34
+0x81754,table,table,먼 적을 기합으로 공격,먼 적을 기합으로 공격,0x80E56,17,3,A1,DD C1 A1 DD 09 0D A1 24 DD 1D 4E D5 A1 DD 10 DD 0A
+0x81758,table,table,폭탄을 연속 발사,폭탄을 연속 발사,0x8110B,14,2,A1,DD 62 DD D1 0D A1 DD AD DD 5F A1 DD 0E 34
+0x8175C,table,table,아군 체력 회복,아군 체력 회복,0x82106,11,2,A1,09 7C A1 DD 90 DD 2B A1 7A DD 9F
+0x81760,table,table,적 민첩 감소,적 민첩 감소,0x82005,12,2,A1,DD 09 A1 DD EC DF 5E A1 DD 77 DD 07
+0x81764,table,table,아군 민첩 상승,아군 민첩 상승,0x80387,10,2,A1,09 7C A1 DD EC DF 5E A1 8B 69
+0x81768,table,table,전원이 포니 방향으로 전환,전원이 포니 방향으로 전환,0x80D42,18,3,A1,4F 7B 03 A1 DD 78 07 A1 DD 29 DD B2 4E D5 A1 4F DD 65
+0x8176C,table,table,거대한 불꽃으로 피해,거대한 불꽃으로 피해,0x81084,14,2,A1,32 37 53 A1 DD 13 DD 8C 4E D5 A1 DD 3C 2B
+0x81770,table,table,적에게 수면 부여,적에게 수면 부여,0x80421,10,2,A1,DD 09 0E 41 A1 50 3A A1 6C 1A
+0x81774,table,table,눈보라로 적에게 피해,눈보라로 적에게 피해,0x81138,14,2,A1,DE 0D 60 8F D5 A1 DD 09 0E 41 A1 DD 3C 2B
+0x81778,table,table,강풍으로 적에게 피해,강풍으로 적에게 피해,0x81064,15,2,A1,DD 28 DE 2E 4E D5 A1 DD 09 0E 41 A1 DD 3C 2B
+0x8177C,table,table,불꽃 장벽 생성,불꽃 장벽 생성,0x81F04,13,2,A1,DD 13 DD 8C A1 56 DE 92 A1 DD 36 DD 17
+0x81780,table,table,번개로 적에게 피해,번개로 적에게 피해,0x8119C,13,2,A1,9B DD B4 D5 A1 DD 09 0E 41 A1 DD 3C 2B
+0x81784,table,table,주변 아군과 순간이동,주변 아군과 순간이동,0x80FD4,15,2,A1,40 80 A1 09 7C DD 18 A1 DE CE DD 1B 03 DD 32
+0x81788,table,table,적 하나 고정,적 하나 고정,0x812D9,8,2,A1,DD 09 A1 19 1E A1 1C 31
+0x8178C,table,table,고정한 적에게 광탄 발사,고정한 적에게 광탄 발사,0x80DB4,17,3,A1,1C 31 53 A1 DD 09 0E 41 A1 DF 16 DD D1 A1 DD 0E 34
+0x81790,table,table,주변 적 공격,주변 적 공격,0x803DF,10,2,A1,40 80 A1 DD 09 A1 DD 10 DD 0A
+0x81794,table,table,회오리로 띄워 내리찍음,회오리로 띄워 내리찍음,0x80FE4,15,2,A1,7A 46 2E D5 A1 DF 26 DD 68 A1 47 2E DF 91 8D
+0x81798,table,table,잔상을 날려 공격,잔상을 날려 공격,0x81F82,13,2,A1,DF 8E 8B 0D A1 DD 61 3C A1 DD 10 DD 0A
+0x8179C,table,table,약한 적을 소멸,약한 적을 소멸,0x82053,12,2,A1,DD 48 53 A1 DD 09 0D A1 DD 07 DD DD
+0x817A0,table,table,케락 소환,케락 소환,0x819E4,9,1,A1,DD F8 DF 27 A1 DD 07 DD 65
+0x817A4,table,table,모프리 소환,모프리 소환,0x81868,9,1,A1,55 DD 9D 2E A1 DD 07 DD 65
+0x817A8,table,table,후우진 소환,후우진 소환,0x80484,10,1,A1,DD 8D 3D DD 3F A1 DD 07 DD 65
+0x817AC,table,table,라이진 소환,라이진 소환,0x818B8,9,1,A1,8F 03 DD 3F A1 DD 07 DD 65
+0x817B0,table,table,헤모지 소환,헤모지 소환,0x819C6,9,1,A1,DD C3 55 04 A1 DD 07 DD 65
+0x817B4,table,table,오톤 소환,오톤 소환,0x81AE3,8,1,A1,46 DD 9A A1 DD 07 DD 65
+0x817B8,table,table,몬스터 정보 조사,몬스터 정보 조사,0x81886,9,2,A1,64 30 02 A1 31 60 A1 90 34
+0x817BC,table,table,초코 소환,초코 소환,0x81AC8,8,1,A1,39 DD 40 A1 DD 07 DD 65
+0x817C0,table,table,아군 회복,아군 회복,0x8169B,6,1,A1,09 7C A1 7A DD 9F
+0x817C4,table,table,갈 수 없는 곳에 다리 생성,갈 수 없는 곳에 다리 생성,0x81E06,19,5,A1,DD A6 A1 50 A1 71 06 A1 DD 15 0E A1 01 2E A1 DD 36 DD 17
+0x817C8,table,table,라이진과 합체 마법,라이진과 합체 마법,0x81024,15,2,A1,8F 03 DD 3F DD 18 A1 DD 1D DD 90 A1 45 DD 37
+0x817CC,table,table,후우진과 합체 마법,후우진과 합체 마법,0x80ECF,16,2,A1,DD 8D 3D DD 3F DD 18 A1 DD 1D DD 90 A1 45 DD 37
+0x817D0,table,table,적에게 빙의,적에게 빙의,0x812D0,8,1,A1,DD 09 0E 41 A1 DF 64 0F
+0x817D4,table,table,주변에 수리검 난사,주변에 수리검 난사,0x81FC4,12,2,A1,40 80 0E A1 50 2E DD A1 A1 DD 6A 34
+0x817D8,table,table,자폭 공격,자폭 공격,0x81A89,8,1,A1,28 DD 62 A1 DD 10 DD 0A
+0x817DC,table,table,낫 부메랑으로 공격,낫 부메랑으로 공격,0x81074,15,2,A1,DF 1C A1 6C DD 2C DE 74 4E D5 A1 DD 10 DD 0A
+0x817E0,table,table,주변 적에게 피해,주변 적에게 피해,0x8023C,11,2,A1,40 80 A1 DD 09 0E 41 A1 DD 3C 2B
+0x817E4,table,table,주변 적에게 피해,주변 적에게 피해,0x8023C,11,2,A1,40 80 A1 DD 09 0E 41 A1 DD 3C 2B
+0x817E8,table,table,직선상의 적 공격,직선상의 적 공격,0x8111A,14,2,A1,DD 7C DD 53 8B 0F A1 DD 09 A1 DD 10 DD 0A
+0x817EC,table,table,날갯짓으로 바람 피해,날갯짓으로 바람 피해,0x80E44,17,2,A1,DD 61 DF 13 DE 1C 4E D5 A1 DD 08 DD 22 A1 DD 3C 2B
+0x817F0,table,table,적을 헤모지 상태로 만듦,적을 헤모지 상태로 만듦,0x80DFC,17,3,A1,DD 09 0D A1 DD C3 55 04 A1 8B DD D2 D5 A1 38 DF 25
+0x81B4C,table,table,아크,아크,0x80892,2,0,,09 58
+0x81B50,table,table,쿠쿠루,쿠쿠루,0x805F8,6,0,,DD 0C DD 0C DD 42
+0x81B54,table,table,토슈,토슈,0x80857,3,0,,83 DD 86
+0x81B58,table,table,포코,포코,0x807F5,4,0,,DD 78 DD 40
+0x81B5C,table,table,이가,이가,0x8088F,2,0,,03 0C
+0x81B60,table,table,고겐,고겐,0x81704,3,0,,1C DD A9
+0x81B64,table,table,마샬,마샬,0x8083B,3,0,,45 DF 65
+0x81B68,table,table,촌가라,촌가라,0x80867,3,0,,96 0C 8F
+0x81B6C,table,table,,,0x808AD,0,0,,
+0x81B70,table,table,,,0x808AD,0,0,,
+0x81B74,table,table,,,0x808AD,0,0,,
+0x81B78,table,table,스켈레톤,스켈레톤,0x81475,7,0,,30 DE D6 DD 66 DD 9A
+0x81B7C,table,table,고스트,고스트,0x80778,4,0,,1C 30 DD 5B
+0x81B80,table,table,좀비,좀비,0x8081D,4,0,,DE 5E DD 06
+0x81B84,table,table,그린 슬라임,그린 슬라임,0x8212A,9,1,A1,15 DD D4 A1 DD FC 8F DD C2
+0x81B88,table,table,간자,간자,0x80873,3,0,,DD 1B 28
+0x81B8C,table,table,메이지,메이지,0x807D2,4,0,,DD 2C 03 04
+0x81B90,table,table,파이터,파이터,0x807FA,4,0,,DD 7B 03 02
+0x81B94,table,table,파계승,파계승,0x80732,5,0,,DD 7B DD 11 69
+0x81B98,table,table,자이언트 배트,자이언트 배트,0x8211E,11,1,A1,28 03 DD 30 DD 5B A1 DD 93 DD 5B
+0x81B9C,table,table,돌 마스터,돌 마스터,0x806DE,5,1,A1,72 A1 45 30 02
+0x81BA0,table,table,사신,사신,0x8089B,2,0,,34 3E
+0x81BA4,table,table,엘리멘탈,엘리멘탈,0x8162D,7,0,,DE 68 2E DE 8C DE 14
+0x81BA8,table,table,요수,요수,0x80898,2,0,,2C 50
+0x81BAC,table,table,팬텀,팬텀,0x80822,4,0,,DF 53 DF 4C
+0x81BB0,table,table,시드레이크,시드레이크,0x816B7,6,0,,29 17 DD 66 03 58
+0x81BB4,table,table,마이티 플라이,마이티 플라이,0x8185E,9,1,A1,45 03 DF 51 A1 DE 36 8F 03
+0x81BB8,table,table,킬러 도그,킬러 도그,0x80668,6,1,A1,DE 6F 20 A1 33 15
+0x81BBC,table,table,레드 스켈레톤,레드 스켈레톤,0x802FC,11,1,A1,DD 66 17 A1 30 DE D6 DD 66 DD 9A
+0x81BC0,table,table,블랙 스컬,블랙 스컬,0x81402,8,1,A1,DF 63 DF 28 A1 30 DF 97
+0x81BC4,table,table,레이스,레이스,0x807F0,4,0,,DD 66 03 30
+0x81BC8,table,table,구울,구울,0x8085B,3,0,,87 DD 92
+0x81BCC,table,table,프리지,프리지,0x807FF,4,0,,DD 9D 2E 04
+0x81BD0,table,table,애시드 슬라임,애시드 슬라임,0x81815,10,1,A1,DE 0F 29 17 A1 DD FC 8F DD C2
+0x81BD4,table,table,어새신,어새신,0x8076E,4,0,,14 DE 3D 3E
+0x81BD8,table,table,슈퍼 좀비,슈퍼 좀비,0x819A8,9,1,A1,DD 86 DE 78 A1 DE 5E DD 06
+0x81BDC,table,table,위치 크래프트,위치 크래프트,0x8026C,11,1,A1,8E DD 1F A1 58 DD 12 DD 9D DD 5B
+0x81BE0,table,table,소서러,소서러,0x807B9,4,0,,DD 07 25 20
+0x81BE4,table,table,네크로맨서,네크로맨서,0x805CE,6,0,,7E 58 D5 DE 08 25
+0x81BE8,table,table,위저드,위저드,0x807A5,4,0,,8E DD 24 17
+0x81BEC,table,table,암법사,암법사,0x80768,5,0,,DF 6C DD 37 34
+0x81BF0,table,table,수행자,수행자,0x80787,4,0,,50 DD 31 28
+0x81BF4,table,table,하법사,하법사,0x80773,4,0,,19 DD 37 34
+0x81BF8,table,table,네뷰러스,네뷰러스,0x806EA,5,0,,7E DF 62 20 30
+0x81BFC,table,table,광대,광대,0x8087B,3,0,,DF 16 37
+0x81C00,table,table,데스 하운드,데스 하운드,0x805D5,6,1,A1,81 30 A1 19 86 17
+0x81C04,table,table,데스,데스,0x808A4,2,0,,81 30
+0x81C08,table,table,뱀파이어 배트,뱀파이어 배트,0x80344,11,1,A1,DF 21 DD 7B 03 14 A1 DD 93 DD 5B
+0x81C0C,table,table,소드맨,소드맨,0x8070E,5,0,,DD 07 17 DE 08
+0x81C10,table,table,나이트 마스터,나이트 마스터,0x81A80,8,1,A1,1E 03 DD 5B A1 45 30 02
+0x81C14,table,table,그레이트 나이트,그레이트 나이트,0x82112,11,1,A1,15 DD 66 03 DD 5B A1 1E 03 DD 5B
+0x81C18,table,table,포이즌 스모그,포이즌 스모그,0x81980,9,1,A1,DD 78 03 DF 90 A1 30 55 15
+0x81C1C,table,table,메두사 리자드,메두사 리자드,0x81908,9,1,A1,DD 2C DD 21 34 A1 2E 28 17
+0x81C20,table,table,드래곤 플라이,드래곤 플라이,0x803A8,10,1,A1,17 DD 12 DE 9B A1 DE 36 8F 03
+0x81C24,table,table,맨트랩,맨트랩,0x80653,6,0,,DE 08 DD 5B DF 29
+0x81C28,table,table,데스 플레임,데스 플레임,0x8189A,9,1,A1,81 30 A1 DE 36 DD 66 DD C2
+0x81C2C,table,table,엘리멘탈 마스터,엘리멘탈 마스터,0x80338,11,1,A1,DE 68 2E DE 8C DE 14 A1 45 30 02
+0x81C30,table,table,이가,이가,0x8088F,2,0,,03 0C
+0x81C34,table,table,,,0x808AD,0,0,,
+0x81C38,table,table,야생 헤모지,야생 헤모지,0x81AEC,8,1,A1,49 DD 36 A1 DD C3 55 04
+0x81C3C,table,table,레서 데몬,레서 데몬,0x80629,6,1,A1,DD 66 25 A1 81 64
+0x81C40,table,table,그레이터 데몬,그레이터 데몬,0x81A65,8,1,A1,15 DD 66 03 02 A1 81 64
+0x81C44,table,table,스톤 골렘,스톤 골렘,0x81A9B,8,1,A1,30 DD 9A A1 DF 15 DF 2B
+0x81C48,table,table,와이번,와이번,0x8085F,3,0,,88 03 9B
+0x81C4C,table,table,매드 배틀러,매드 배틀러,0x819D0,9,1,A1,DD C9 17 A1 DD 93 DD E0 20
+0x81C50,table,table,아크 데몬,아크 데몬,0x8068A,5,1,A1,09 58 A1 81 64
+0x81C54,table,table,파이어 골렘,파이어 골렘,0x8198A,9,1,A1,DD 7B 03 14 A1 DF 15 DF 2B
+0x81C58,table,table,코퍼 드래곤,코퍼 드래곤,0x80463,10,1,A1,DD 40 DE 78 A1 17 DD 12 DE 9B
+0x81C5C,table,table,그레이트 서펀트,그레이트 서펀트,0x81FAA,12,1,A1,15 DD 66 03 DD 5B A1 25 DF 54 DD 5B
+0x81C60,table,table,수행승,수행승,0x8078C,4,0,,50 DD 31 69
+0x81C64,table,table,라마다 대승정,라마다 대승정,0x81565,7,1,A1,8F 45 01 A1 37 69 31
+0x81C68,table,table,그라 아비스,그라 아비스,0x81435,7,1,A1,15 8F A1 09 DD 06 30
+0x81C6C,table,table,니 아비스,니 아비스,0x8167F,6,1,A1,07 A1 09 DD 06 30
+0x81C70,table,table,라류우키,라류우키,0x805E3,6,0,,8F DD 6E 3D DD B3
+0x81C74,table,table,효엔키,효엔키,0x8065A,6,0,,DE 24 DE 44 DD B3
+0x81C78,table,table,무르 아비스,무르 아비스,0x8150D,7,1,A1,5F 70 A1 09 DD 06 30
+0x81C7C,table,table,라 아비스,라 아비스,0x805DC,6,1,A1,8F A1 09 DD 06 30
+0x81C80,table,table,초코,초코,0x80833,3,0,,39 DD 40
+0x81C84,table,table,보물상자,보물상자,0x80796,4,0,,60 6D 8B 28
+0x81C88,table,table,보물상자,보물상자,0x80796,4,0,,60 6D 8B 28
+0x81C8C,table,table,케락,케락,0x80813,4,0,,DD F8 DF 27
+0x81C90,table,table,,,0x808AD,0,0,,
+0x81C94,table,table,모프리,모프리,0x80791,4,0,,55 DD 9D 2E
+0x81C98,table,table,후우진,후우진,0x80738,5,0,,DD 8D 3D DD 3F
+0x81C9C,table,table,라이진,라이진,0x807AA,4,0,,8F 03 DD 3F
+0x81CA0,table,table,오톤,오톤,0x8083F,3,0,,46 DD 9A
+0x81CA4,table,table,초코,초코,0x80833,3,0,,39 DD 40
+0x81CA8,table,table,헤모지,헤모지,0x80804,4,0,,DD C3 55 04
+0x81CAC,table,table,불꽃,불꽃,0x807BE,4,0,,DD 13 DD 8C
+0x81CB0,table,table,,,0x808AD,0,0,,
+0x81CB4,table,table,,,0x808AD,0,0,,
+0x81CB8,table,table,,,0x808AD,0,0,,
+0x81CBC,table,table,,,0x808AD,0,0,,
+0x81CC0,table,table,,,0x808AD,0,0,,
+0x81CC4,table,table,,,0x808AD,0,0,,
+0x81CC8,table,table,,,0x808AD,0,0,,
+0x81CCC,table,table,,,0x808AD,0,0,,
+0x81CD0,table,table,,,0x808AD,0,0,,
+0x81CD4,table,table,,,0x808AD,0,0,,
+0x81CD8,table,table,,,0x808AD,0,0,,
+0x81CDC,table,table,다크 아크,다크 아크,0x80684,5,1,A1,01 58 A1 09 58
+0x81CE0,table,table,다크 쿠쿠루,다크 쿠쿠루,0x8049A,9,1,A1,01 58 A1 DD 0C DD 0C DD 42
+0x81CE4,table,table,다크 토슈,다크 토슈,0x8166A,6,1,A1,01 58 A1 83 DD 86
+0x81CE8,table,table,다크 포코,다크 포코,0x811B8,7,1,A1,01 58 A1 DD 78 DD 40
+0x81CEC,table,table,다크 이가,다크 이가,0x81B46,5,1,A1,01 58 A1 03 0C
+0x81CF0,table,table,다크 고겐,다크 고겐,0x8165C,6,1,A1,01 58 A1 1C DD A9
+0x81CF4,table,table,다크 마샬,다크 마샬,0x81663,6,1,A1,01 58 A1 45 DF 65
+0x81CF8,table,table,다크 촌가라,다크 촌가라,0x81671,6,1,A1,01 58 A1 96 0C 8F
+0x81E38,table,table,스메리아 공항,스메리아 공항,0x803D4,10,1,A1,30 DD 2C 2E 09 A1 DD 10 DD F2
+0x81E3C,table,table,토우빌,토우빌,0x807A0,4,0,,83 3D DD A7
+0x81E40,table,table,팔렌시아 성,팔렌시아 성,0x81976,9,1,A1,DD 6C DD B0 29 09 A1 DD 17
+0x81E44,table,table,올카스 언덕,올카스 언덕,0x812BE,8,1,A1,99 DD 38 30 A1 DD 30 5A
+0x81E48,table,table,봉인의 폭포,봉인의 폭포,0x819BC,9,1,A1,DD B6 35 0F A1 DD 62 DD 78
+0x81E4C,table,table,니르 평원,니르 평원,0x81678,6,1,A1,07 70 A1 DE 34 7B
+0x81E50,table,table,카라간 평야,카라간 평야,0x8191C,9,1,A1,DD 38 8F DD 1B A1 DE 34 49
+0x81E54,table,table,쿠나 언덕,쿠나 언덕,0x81595,7,1,A1,DD 0C 1E A1 DD 30 5A
+0x81E58,table,table,밀마나 공항,밀마나 공항,0x81A2A,9,1,A1,DE 33 45 1E A1 DD 10 DD F2
+0x81E5C,table,table,수도 군본부,수도 군본부,0x81505,7,1,A1,50 33 A1 7C DD 58 6C
+0x81E60,table,table,토요케 숲,토요케 숲,0x8153D,7,1,A1,83 2C DD F8 A1 DD 97
+0x81E64,table,table,루와지 숲,루와지 숲,0x815AD,7,1,A1,DD 42 88 04 A1 DD 97
+0x81E68,table,table,카카라스 숲,카카라스 숲,0x81926,9,1,A1,DD 38 DD 38 8F 30 A1 DD 97
+0x81E6C,table,table,센바라 늘,센바라 늘,0x813F9,8,1,A1,DF 5A DD 08 8F A1 DD 71
+0x81E70,table,table,그레이시누 공항,그레이시누 공항,0x81F9D,12,1,A1,15 DD 66 03 29 DD 55 A1 DD 10 DD F2
+0x81E74,table,table,라마다사,라마다사,0x807AF,4,0,,8F 45 01 34
+0x81E78,table,table,라마다산,라마다산,0x806FC,5,0,,8F 45 01 DD 45
+0x81E7C,table,table,아라라토스 공항,아라라토스 공항,0x80392,10,1,A1,09 8F 8F 83 30 A1 DD 10 DD F2
+0x81E80,table,table,촌가라의 가게,촌가라의 가게,0x8157D,7,1,A1,96 0C 8F 0F A1 0C 41
+0x81E84,table,table,유적 던전,유적 던전,0x81555,7,1,A1,8A DD 09 A1 DD 25 4F
+0x81E88,table,table,아제다 고지,아제다 고지,0x81694,6,1,A1,09 66 01 A1 1C 04
+0x81E8C,table,table,아리바샤 공항,아리바샤 공항,0x820EE,11,1,A1,09 2E DD 08 DE 5C A1 DD 10 DD F2
+0x81E90,table,table,사류족 마을,사류족 마을,0x81AB6,8,1,A1,34 DD 6E DD 7A A1 45 0D
+0x81E94,table,table,물의 신전,물의 신전,0x806D8,5,1,A1,6D 0F A1 3E 4F
+0x81E98,table,table,리덴 유적,리덴 유적,0x8146D,7,1,A1,2E DF 20 A1 8A DD 09
+0x81E9C,table,table,사라 사막,사라 사막,0x816E1,6,1,A1,34 8F A1 34 DD AB
+0x81EA0,table,table,라슈마 암장,라슈마 암장,0x812AC,8,1,A1,8F DD 86 45 A1 DF 6C 56
+0x81EA4,table,table,카델 공항,카델 공항,0x81930,9,1,A1,DD 38 DD E9 A1 DD 10 DD F2
+0x81EA8,table,table,투기장,투기장,0x807E1,4,0,,DD 39 24 56
+0x81EAC,table,table,클라프섬,클라프섬,0x81615,7,0,,DE 01 8F DD 9D DE 77
+0x81EE8,system+world,system,스메리아,스메리아,0x806A2,5,0,,30 DD 2C 2E 09
+0x81EEC,system+world,system,밀마나,밀마나,0x80818,4,0,,DE 33 45 1E
+0x81EF0,system+world,system,그레이시누,그레이시누,0x8143D,7,0,,15 DD 66 03 29 DD 55
+0x81EF4,system+world,system,아라라토스,아라라토스,0x80690,5,0,,09 8F 8F 83 30
+0x81EF8,world,world,아리바샤,아리바샤,0x81686,6,0,,09 2E DD 08 DE 5C
+0x81EFC,system+world,system,카델,카델,0x807DC,4,0,,DD 38 DD E9
+0x81F00,system+world,system,지크라프섬,지크라프섬,0x8141D,7,0,,04 58 8F DD 9D DE 77
+0x82170,table,table,,,0x808AD,0,0,,
+0x82174,table,table,산정의 사당,산정의 사당,0x81318,8,1,A1,DD 45 31 0F A1 34 DD 1C
+0x82178,table,table,아크의 집,아크의 집,0x8168D,6,1,A1,09 58 0F A1 DD E2
+0x8217C,table,table,정령의 산,정령의 산,0x816D3,6,1,A1,31 51 0F A1 DD 45
+0x82180,table,table,마을 입구,마을 입구,0x806C0,5,1,A1,45 0D A1 7F 87
+0x82184,table,table,정령의 산,정령의 산,0x816D3,6,1,A1,31 51 0F A1 DD 45
+0x82188,table,table,팔렌시아 성,팔렌시아 성,0x81976,9,1,A1,DD 6C DD B0 29 09 A1 DD 17
+0x8218C,table,table,알현실,알현실,0x805FF,6,0,,DD 1E DF 58 DD 27
+0x82190,table,table,스메리아 공항,스메리아 공항,0x803D4,10,1,A1,30 DD 2C 2E 09 A1 DD 10 DD F2
+0x82194,table,table,팔렌시아 전망대,팔렌시아 전망대,0x80308,11,1,A1,DD 6C DD B0 29 09 A1 4F DD 6B 37
+0x82198,table,table,대신의 방,대신의 방,0x816E8,6,1,A1,37 3E 0F A1 DD 29
+0x8219C,table,table,밀마나 공항,밀마나 공항,0x81A2A,9,1,A1,DE 33 45 1E A1 DD 10 DD F2
+0x821A0,table,table,밀마나 군본부,밀마나 군본부,0x81A20,9,1,A1,DE 33 45 1E A1 7C DD 58 6C
+0x821A4,table,table,장군의 방,장군의 방,0x805C0,6,1,A1,56 7C 0F A1 DD 29
+0x821A8,table,table,토요케 숲,토요케 숲,0x8153D,7,1,A1,83 2C DD F8 A1 DD 97
+0x821AC,table,table,팔렌시아 지하창고,팔렌시아 지하창고,0x82060,12,1,A1,DD 6C DD B0 29 09 A1 04 19 DE 87 1C
+0x821B0,table,table,팔렌시아 지하감옥,팔렌시아 지하감옥,0x81F4A,13,1,A1,DD 6C DD B0 29 09 A1 04 19 DD 77 DE 39
+0x821B4,table,table,올카스 언덕,올카스 언덕,0x812BE,8,1,A1,99 DD 38 30 A1 DD 30 5A
+0x821B8,table,table,환계,환계,0x807EB,4,0,,DD 65 DD 11
+0x821BC,table,table,아라라토스 공항,아라라토스 공항,0x80392,10,1,A1,09 8F 8F 83 30 A1 DD 10 DD F2
+0x821C0,table,table,촌가라의 가게,촌가라의 가게,0x8157D,7,1,A1,96 0C 8F 0F A1 0C 41
+0x821C4,table,table,아제다 고지 동굴,아제다 고지 동굴,0x820FA,11,2,A1,09 66 01 A1 1C 04 A1 DD 32 DE 67
+0x821C8,table,table,아제다 고지 외부,아제다 고지 외부,0x8037C,10,2,A1,09 66 01 A1 1C 04 A1 DE 4C 6C
+0x821CC,table,table,유적 던전,유적 던전,0x81555,7,1,A1,8A DD 09 A1 DD 25 4F
+0x821D0,table,table,그레이시누 공항,그레이시누 공항,0x81F9D,12,1,A1,15 DD 66 03 29 DD 55 A1 DD 10 DD F2
+0x821D4,table,table,라마다사 도장,라마다사 도장,0x8155D,7,1,A1,8F 45 01 34 A1 33 56
+0x821D8,table,table,라마다사 승정의 방,라마다사 승정의 방,0x80284,11,2,A1,8F 45 01 34 A1 69 31 0F A1 DD 29
+0x821DC,table,table,라마다산 정상,라마다산 정상,0x81B3D,8,1,A1,8F 45 01 DD 45 A1 31 8B
+0x821E0,table,table,라마다사,라마다사,0x807AF,4,0,,8F 45 01 34
+0x821E4,table,table,카델 공항,카델 공항,0x81930,9,1,A1,DD 38 DD E9 A1 DD 10 DD F2
+0x821E8,table,table,니로시암 대기실,니로시암 대기실,0x80366,10,1,A1,07 D5 29 DF 6C A1 37 24 DD 27
+0x821EC,table,table,니로시암 무대,니로시암 무대,0x81A5C,8,1,A1,07 D5 29 DF 6C A1 5F 37
+0x821F0,table,table,아리바샤 공항,아리바샤 공항,0x820EE,11,1,A1,09 2E DD 08 DE 5C A1 DD 10 DD F2
+0x821F4,table,table,사류족 마을,사류족 마을,0x81AB6,8,1,A1,34 DD 6E DD 7A A1 45 0D
+0x821F8,table,table,물의 신전,물의 신전,0x806D8,5,1,A1,6D 0F A1 3E 4F
+0x821FC,table,table,지하 엘리베이터,지하 엘리베이터,0x80350,10,1,A1,04 19 A1 DE 68 2E DD FE 03 02
+0x82200,table,table,지하 바이오 연구실,지하 바이오 연구실,0x81156,13,2,A1,04 19 A1 DD 08 03 46 A1 DD AD 87 DD 27
+0x82204,table,table,팔렌시아 시가지,팔렌시아 시가지,0x8046E,10,1,A1,DD 6C DD B0 29 09 A1 29 0C 04
+0x82208,table,table,성관 봉인의 폭포 외부,성관 봉인의 폭포 외부,0x80E20,17,3,A1,DD 17 1D A1 DD B6 35 0F A1 DD 62 DD 78 A1 DE 4C 6C
+0x8220C,table,table,성관 봉인의 폭포 내부,성관 봉인의 폭포 내부,0x80E9C,16,3,A1,DD 17 1D A1 DD B6 35 0F A1 DD 62 DD 78 A1 47 6C
+0x82210,table,table,토우빌 암벽,토우빌 암벽,0x818A4,9,1,A1,83 3D DD A7 A1 DF 6C DE 92
+0x82214,table,table,해변의 비행선,해변의 비행선,0x803B3,10,1,A1,2B 80 0F A1 DD 06 DD 31 DD 53
+0x82218,table,table,니르 평원,니르 평원,0x81678,6,1,A1,07 70 A1 DE 34 7B
+0x8221C,table,table,카라간 평야,카라간 평야,0x8191C,9,1,A1,DD 38 8F DD 1B A1 DE 34 49
+0x82220,table,table,쿠나 언덕,쿠나 언덕,0x81595,7,1,A1,DD 0C 1E A1 DD 30 5A
+0x82224,table,table,루와지 숲,루와지 숲,0x815AD,7,1,A1,DD 42 88 04 A1 DD 97
+0x82228,table,table,카카라스 숲,카카라스 숲,0x81926,9,1,A1,DD 38 DD 38 8F 30 A1 DD 97
+0x8222C,table,table,센바라 늘,센바라 늘,0x813F9,8,1,A1,DF 5A DD 08 8F A1 DD 71
+0x82230,table,table,리덴 유적,리덴 유적,0x8146D,7,1,A1,2E DF 20 A1 8A DD 09
+0x82234,table,table,사라 사막,사라 사막,0x816E1,6,1,A1,34 8F A1 34 DD AB
+0x82238,table,table,라슈마 암장,라슈마 암장,0x812AC,8,1,A1,8F DD 86 45 A1 DF 6C 56
+0x8223C,table,table,니로시암 투기장,니로시암 투기장,0x80371,10,1,A1,07 D5 29 DF 6C A1 DD 39 24 56
+0x82240,table,table,라마다사 도장,라마다사 도장,0x8155D,7,1,A1,8F 45 01 34 A1 33 56
+0x82244,table,table,클라프섬 공항,클라프섬 공항,0x820BB,12,1,A1,DE 01 8F DD 9D DE 77 A1 DD 10 DD F2
+0x82248,table,table,클라프탑 최상층,클라프탑 최상층,0x81F66,13,1,A1,DE 01 8F DD 9D DF 88 A1 DE 27 8B DE 50
+0x82348,system,system,대상 변경,대상 변경,0x806A8,5,1,A1,37 8B A1 80 68
+0x8234C,system,system,"공격, 연결 열기","공격, 연결 열기",0x810C0,14,2,A1,DD 10 DD 0A B3 A1 DD AD DD 47 A1 DD 89 24
+0x82350,system,system,"행동 끝, 상태 확인","행동 끝, 상태 확인",0x80EAD,16,3,A1,DD 31 DD 32 A1 DD A3 B3 A1 8B DD D2 A1 DE 2B 35
+0x82354,system,system,스킬을 선택하세요,스킬을 선택하세요,0x81FB7,12,1,A1,30 DE 6F 0D A1 DD 53 DF 9A 19 8C 2C
+0x82358,system,system,돌아갑니다,돌아갑니다,0x805C7,6,0,,72 09 DE 0C 07 01
+0x8235C,system,system,{결정버튼}결정 {취소버튼}돌아가기,{결정버튼}결정 {취소버튼}돌아가기,0x820D5,12,1,A1,E7 02 DD 47 31 A1 E7 03 72 09 0C 24
+0x82360,system,system,다음 대상을 선택합니다,다음 대상을 선택합니다,0x80F02,15,2,A1,01 8D A1 37 8B 0D A1 DD 53 DF 9A DD 1D 07 01
+0x82364,system,system,결정하면 주변에 스킬을 사용합니다,결정하면 주변에 스킬을 사용합니다,0x81D43,22,3,A1,DD 47 31 19 3A A1 40 80 0E A1 30 DE 6F 0D A1 34 DD 1A DD 1D 07 01
+0x82368,system,system,결정하면 보는 방향에 스킬을 사용합니다,결정하면 보는 방향에 스킬을 사용합니다,0x80BEE,27,4,A1,DD 47 31 19 3A A1 60 06 A1 DD 29 DD B2 0E A1 30 DE 6F 0D A1 34 DD 1A DD 1D 07 01
+0x8236C,system,system,비어 있는 곳을 선택하세요,비어 있는 곳을 선택하세요,0x80D68,18,3,A1,DD 06 14 A1 1F 06 A1 DD 15 0D A1 DD 53 DF 9A 19 8C 2C
+0x82370,system,system,결정하면 스킬을 사용합니다,결정하면 스킬을 사용합니다,0x80D7B,18,2,A1,DD 47 31 19 3A A1 30 DE 6F 0D A1 34 DD 1A DD 1D 07 01
+0x82374,system,system,인물을 선택하세요,인물을 선택하세요,0x80224,11,1,A1,35 6D 0D A1 DD 53 DF 9A 19 8C 2C
+0x82378,system,system,결정하면 전투를 시작합니다,결정하면 전투를 시작합니다,0x80D8E,18,2,A1,DD 47 31 19 3A A1 4F DD 39 36 A1 29 DD 64 DD 1D 07 01
+0x823A4,nonstory,nonstory,승리!,승리!,0x80847,3,0,,69 2E A9
+0x823A8,nonstory,nonstory,게임 오버,게임 오버,0x816F6,6,1,A1,41 DD C2 A1 46 67
+0x823D8,nonstory,nonstory,돌 상태,돌 상태,0x806E4,5,1,A1,72 A1 8B DD D2
+0x823DC,nonstory,nonstory,마비,마비,0x80837,3,0,,45 DD 06
+0x823E0,nonstory,nonstory,수면,수면,0x8089E,2,0,,50 3A
+0x82444,nonstory,nonstory,데이터 저장 불러오기,데이터 저장 불러오기,0x81180,13,2,A1,81 03 02 A1 DD 24 56 A1 DD 13 20 46 24
+0x82448,nonstory,nonstory,데이터 저장,데이터 저장,0x8152D,7,1,A1,81 03 02 A1 DD 24 56
+0x8244C,nonstory,nonstory,데이터 불러오기,데이터 불러오기,0x81890,9,1,A1,81 03 02 A1 DD 13 20 46 24
+0x82450,nonstory,nonstory,카드를 선택하세요,카드를 선택하세요,0x8202C,12,1,A1,DD 38 17 36 A1 DD 53 DF 9A 19 8C 2C
+0x82454,nonstory,nonstory,카드 1,카드 1,0x80726,5,1,A1,DD 38 17 A1 4A
+0x82458,nonstory,nonstory,카드 2,카드 2,0x80720,5,1,A1,DD 38 17 A1 0B
+0x8245C,nonstory,nonstory,파일을 선택하세요,파일을 선택하세요,0x8206D,12,1,A1,DD 7B 6B 0D A1 DD 53 DF 9A 19 8C 2C
+0x82460,nonstory,nonstory,메모리 카드가 없습니다,메모리 카드가 없습니다,0x810FC,14,2,A1,DD 2C 55 2E A1 DD 38 17 0C A1 71 2D 07 01
+0x82474,nonstory,nonstory,를 손에 넣었습니다.,를 손에 넣었습니다.,0x80230,11,2,A1,36 A1 85 0E A1 6F 61 2D 07 01 21
+0x82498,nonstory,nonstory,스테이지에서 얻은 경험치,스테이지에서 얻은 경험치,0x80DC6,17,2,A1,30 DD BE 03 04 0E 25 A1 DD 9C 26 A1 68 DD 54 DD 1F
+0x8249C,nonstory,nonstory,격파한 적 수,격파한 적 수,0x8042C,10,2,A1,DD 0A DD 7B 53 A1 DD 09 A1 50
+0x82518,nonstory,nonstory,LV 상승!!,레벨 상승!!,0x8196C,9,1,A1,DD 66 DD EF A1 8B 69 A9 A9
+0x8251C,nonstory,nonstory,최대 체력이,최대 체력이,0x81A16,9,1,A1,DE 27 37 A1 DD 90 DD 2B 03
+0x82520,nonstory,nonstory,최대 마력이,최대 마력이,0x813DE,8,1,A1,DE 27 37 A1 45 DD 2B 03
+0x82524,nonstory,nonstory,공격력이,공격력이,0x8159D,7,0,,DD 10 DD 0A DD 2B 03
+0x82528,nonstory,nonstory,방어력이,방어력이,0x80606,6,0,,DD 29 14 DD 2B 03
+0x8252C,nonstory,nonstory,마력이,마력이,0x80782,4,0,,45 DD 2B 03
+0x82530,nonstory,nonstory,민첩성이,민첩성이,0x8160D,7,0,,DD EC DF 5E DD 17 03
+0x82538,nonstory,nonstory,상승,상승,0x808A7,2,0,,8B 69
+0x8253C,nonstory,nonstory,점프,점프,0x80809,4,0,,DD D0 DD 9D
+0x82540,nonstory,nonstory,던지기,던지기,0x807C8,4,0,,DD 25 04 24
+0x82544,nonstory,nonstory,받기,받기,0x8086F,3,0,,DD 19 24
+0x82548,nonstory,nonstory,반격,반격,0x807E6,4,0,,DD 46 DD 0A
+0x8254C,nonstory,nonstory,LV 상승,레벨 상승,0x815C5,7,1,A1,DD 66 DD EF A1 8B 69
+0x82554,nonstory,nonstory,를 배웠다.,를 배웠다.,0x81ABF,8,1,A1,36 A1 DD 93 DE 15 01 21
+0x825C8,nonstory,nonstory,사운드 출력,사운드 출력,0x81485,7,1,A1,34 86 17 A1 76 DD 2B
+0x825CC,nonstory,nonstory,대각선 입력,대각선 입력,0x81854,9,1,A1,37 DD 6D DD 53 A1 7F DD 2B
+0x825D0,nonstory,nonstory,돌아가기 확인,돌아가기 확인,0x81B10,8,1,A1,72 09 0C 24 A1 DE 2B 35
+0x825D4,nonstory,nonstory,도움말 보기,도움말 보기,0x8147D,7,1,A1,33 DD 70 1B A1 60 24
+0x825D8,nonstory,nonstory,촌가라의 몬스터 도감 열기,몬스터 도감,0x81515,7,1,A1,64 30 02 A1 33 DD 77
+0x825DC,nonstory,nonstory,스테레오,스테레오,0x816CC,6,0,,30 DD BE DD 66 46
+0x825E0,nonstory,nonstory,모노,모노,0x80843,3,0,,55 DD 57
+0x825E4,nonstory,nonstory,일반,일반,0x8084B,3,0,,6B DD 46
+0x825E8,nonstory,nonstory,사용,사용,0x8082F,3,0,,34 DD 1A
+0x825EC,nonstory,nonstory,사용 안 함,사용 안 함,0x81AA4,8,2,A1,34 DD 1A A1 94 A1 DD CF
+0x8262C,nonstory,nonstory,대전 성적,대전 성적,0x81495,7,1,A1,37 4F A1 DD 17 DD 09
+0x82638,nonstory,nonstory,기량,기량,0x80895,2,0,,24 D2
+0x8293C,nonstory,nonstory,마비 공격,마비 공격,0x81ADA,8,1,A1,45 DD 06 A1 DD 10 DD 0A
+0x82940,nonstory,nonstory,머리 던지기,머리 던지기,0x81333,8,1,A1,DD 5D 2E A1 DD 25 04 24
+0x82944,nonstory,nonstory,사일런트,사일런트,0x816DA,6,0,,34 6B DD 2A DD 5B
+0x82948,nonstory,nonstory,해로운 공격,해로운 공격,0x81A92,8,1,A1,2B D5 86 A1 DD 10 DD 0A
+0x8294C,nonstory,nonstory,분열,분열,0x80863,3,0,,92 DD 89
+0x82950,nonstory,nonstory,폭발 수리검,폭발 수리검,0x81944,9,1,A1,DD 62 DD 0E A1 50 2E DD A1
+0x82954,nonstory,nonstory,자폭,자폭,0x80827,3,0,,28 DD 62
+0x82958,nonstory,nonstory,드림 노크,드림 노크,0x81445,7,1,A1,17 DE 29 A1 DD 57 58
+0x8295C,nonstory,nonstory,대폭발,대폭발,0x806AE,5,0,,37 DD 62 DD 0E
+0x82960,nonstory,nonstory,바람 검,바람 검,0x8158D,7,1,A1,DD 08 DD 22 A1 DD A1
+0x82964,nonstory,nonstory,전기 폭풍,전기 폭풍,0x814E5,7,1,A1,4F 24 A1 DD 62 DE 2E
+0x82968,nonstory,nonstory,다이아몬드 더스트,다이아몬드 더스트,0x820E2,11,1,A1,01 03 09 64 17 A1 DD 96 30 DD 5B
+0x8296C,nonstory,nonstory,해로운 기운 제거,해로운 기운 제거,0x81840,9,2,A1,2B D5 86 A1 24 86 A1 66 32
+0x82970,nonstory,nonstory,하늘의 심판,하늘의 심판,0x81A77,8,1,A1,19 DD 71 0F A1 9D DE 7F
+0x82974,nonstory,nonstory,부활,부활,0x8084F,3,0,,6C DD E1
+0x82978,nonstory,nonstory,디바이드,디바이드,0x80645,6,0,,DD CD DD 08 03 17
+0x8297C,nonstory,nonstory,내려치기,내려치기,0x806C6,5,0,,47 3C DD 1F 24
+0x82980,nonstory,nonstory,회복,회복,0x80853,3,0,,7A DD 9F
+0x82984,nonstory,nonstory,감싸기,감싸기,0x8072C,5,0,,DD 77 DD 14 24
+0x82988,nonstory,nonstory,해로운 기운,해로운 기운,0x816BE,6,1,A1,2B D5 86 A1 24 86
+0x8298C,nonstory,nonstory,피 빨기,피 빨기,0x8060D,6,1,A1,DD 3C A1 DE 20 24
+0x82990,nonstory,nonstory,초음파,초음파,0x8077D,4,0,,39 8D DD 7B
+0x82994,nonstory,nonstory,돌 상태,돌 상태,0x806E4,5,1,A1,72 A1 8B DD D2
+0x82998,nonstory,nonstory,주위 공격,주위 공격,0x8149D,7,1,A1,40 8E A1 DD 10 DD 0A
+0x829A0,nonstory,nonstory,강타,강타,0x807CD,4,0,,DD 28 DD 7F
+0x829A4,nonstory,nonstory,꽃가루 공격,꽃가루 공격,0x80479,10,1,A1,DD 8C 0C DD 42 A1 DD 10 DD 0A
+0x829A8,nonstory,nonstory,씨 날리기,씨 날리기,0x815CD,7,1,A1,DD 67 A1 DD 61 2E 24
+0x829AC,nonstory,nonstory,검은 전기,검은 전기,0x8063E,6,1,A1,DD A1 26 A1 4F 24
+0x829B0,nonstory,nonstory,지옥의 계단,지옥의 계단,0x81E2E,9,1,A1,04 DE 39 0F A1 DD 11 DD 35
+0x829B4,nonstory,nonstory,죽음의 문,죽음의 문,0x815DD,7,1,A1,DD 94 8D 0F A1 DD AF
+0x829B8,nonstory,nonstory,합체,합체,0x807C3,4,0,,DD 1D DD 90
+0x829BC,nonstory,nonstory,시야 차단,시야 차단,0x8145D,7,1,A1,29 49 A1 DD B7 DD 35
+0x829C0,nonstory,nonstory,인형 난무,인형 난무,0x8148D,7,1,A1,35 DD 7D A1 DD 6A 5F
+0x829C4,nonstory,nonstory,헤모지,헤모지,0x80804,4,0,,DD C3 55 04
+0x829C8,nonstory,nonstory,전기 파동,전기 파동,0x814ED,7,1,A1,4F 24 A1 DD 7B DD 32
+0x829CC,nonstory,nonstory,불꽃 파동,불꽃 파동,0x818EA,9,1,A1,DD 13 DD 8C A1 DD 7B DD 32
+0x829D0,nonstory,nonstory,황천 비행,황천 비행,0x81A34,9,1,A1,DE 3C DD E7 A1 DD 06 DD 31
+0x829D4,nonstory,nonstory,마법 봉인,마법 봉인,0x814DD,7,1,A1,45 DD 37 A1 DD B6 35
+0x829D8,nonstory,nonstory,죽음 회복,죽음 회복,0x815E5,7,1,A1,DD 94 8D A1 7A DD 9F
+0x829DC,nonstory,nonstory,더스트 문양,더스트 문양,0x8048F,10,1,A1,DD 96 30 DD 5B A1 DD AF DD 82
+0x829E0,nonstory,nonstory,물기,물기,0x808A1,2,0,,6D 24
+0x829E4,nonstory,nonstory,번 그라운드,번 그라운드,0x805EA,6,1,A1,9B A1 15 8F 86 17
+0x829E8,nonstory,nonstory,전체 회복,전체 회복,0x814FD,7,1,A1,4F DD 90 A1 7A DD 9F
+0x829EC,nonstory,nonstory,게일 플래시,게일 플래시,0x81AD1,8,1,A1,41 6B A1 DE 36 DD 12 29
+0x829F0,nonstory,nonstory,슬로우 에너미,슬로우 에너미,0x819EE,9,1,A1,DD FC D5 3D A1 0E 89 DD 2F
+0x829F4,nonstory,nonstory,별 내리기,별 내리기,0x8064C,6,1,A1,DD F3 A1 47 2E 24
+0x829F8,nonstory,nonstory,회복,회복,0x80853,3,0,,7A DD 9F
+0x829FC,nonstory,nonstory,해로운 기운 제거,해로운 기운 제거,0x81840,9,2,A1,2B D5 86 A1 24 86 A1 66 32
+0x82A00,nonstory,nonstory,사일런트,사일런트,0x816DA,6,0,,34 6B DD 2A DD 5B
+0x82A04,nonstory,nonstory,리프레시,리프레시,0x816C5,6,0,,2E DD 9D DD 66 29
+0x82A08,nonstory,nonstory,하늘의 심판,하늘의 심판,0x81A77,8,1,A1,19 DD 71 0F A1 9D DE 7F
+0x82A0C,nonstory,nonstory,부활,부활,0x8084F,3,0,,6C DD E1
+0x82A10,nonstory,nonstory,디바이드,디바이드,0x80645,6,0,,DD CD DD 08 03 17
+0x82A14,nonstory,nonstory,토슈 비기,토슈 비기,0x81545,7,1,A1,83 DD 86 A1 DD 06 24
+0x82A18,nonstory,nonstory,봉인검,봉인검,0x80744,5,0,,DD B6 35 DD A1
+0x82A1C,nonstory,nonstory,진공검,진공검,0x8061B,6,0,,DD 3F DD 10 DD A1
+0x82A20,nonstory,nonstory,그림자검,그림자검,0x816A9,6,0,,15 DE 29 28 DD A1
+0x82A24,nonstory,nonstory,전투 큰 북,전투 큰 북,0x81AFE,8,2,A1,4F DD 39 A1 AA A1 DE 64
+0x82A28,nonstory,nonstory,황사자태고,황사자태고,0x81625,7,0,,DE 3C 34 28 DD D2 1C
+0x82A2C,nonstory,nonstory,기합 나팔,기합 나팔,0x81455,7,1,A1,24 DD 1D A1 1E DD 6C
+0x82A30,nonstory,nonstory,비틀비틀 나팔,비틀비틀 나팔,0x81FEB,12,1,A1,DD 06 DD E0 DD 06 DD E0 A1 1E DD 6C
+0x82A34,nonstory,nonstory,치유의 하프,치유의 하프,0x812EB,8,1,A1,DD 1F 8A 0F A1 19 DD 9D
+0x82A38,nonstory,nonstory,느림의 연주,느림의 연주,0x81AF5,8,1,A1,4D DE 29 0F A1 DD AD 40
+0x82A3C,nonstory,nonstory,위타천 오카리나,위타천 오카리나,0x80278,11,1,A1,8E DD 7F DD E7 A1 46 DD 38 2E 1E
+0x82A40,nonstory,nonstory,방향잡이 피리,방향잡이 피리,0x802CC,11,1,A1,DD 29 DD B2 DE 10 03 A1 DD 3C 2E
+0x82A44,nonstory,nonstory,대폭발,대폭발,0x806AE,5,0,,37 DD 62 DD 0E
+0x82A48,nonstory,nonstory,드림 노크,드림 노크,0x81445,7,1,A1,17 DE 29 A1 DD 57 58
+0x82A4C,nonstory,nonstory,다이아몬드 더스트,다이아몬드 더스트,0x820E2,11,1,A1,01 03 09 64 17 A1 DD 96 30 DD 5B
+0x82A50,nonstory,nonstory,바람 검,바람 검,0x8158D,7,1,A1,DD 08 DD 22 A1 DD A1
+0x82A54,nonstory,nonstory,전기 폭풍,전기 폭풍,0x814E5,7,1,A1,4F 24 A1 DD 62 DE 2E
+0x82A58,nonstory,nonstory,회오리 차기,회오리 차기,0x81525,7,1,A1,7A 46 2E A1 DD B7 24
+0x82A5C,nonstory,nonstory,유성폭,유성폭,0x806F0,5,0,,8A DD 17 DD 62
+0x82A60,nonstory,nonstory,유령 파동,유령 파동,0x8154D,7,1,A1,8A 51 A1 DD 7B DD 32
+0x82A64,nonstory,nonstory,멸장열파,멸장열파,0x815FD,7,0,,DD DD 56 DD 89 DD 7B
+0x82A6C,nonstory,nonstory,불러내기,불러내기,0x80714,5,0,,DD 13 20 47 24
+0x82A70,nonstory,nonstory,조사,조사,0x808AA,2,0,,90 34
+0x82A74,nonstory,nonstory,회복,회복,0x80853,3,0,,7A DD 9F
+0x82A78,nonstory,nonstory,다리 만들기,다리 만들기,0x81655,6,1,A1,01 2E A1 38 0A 24
+0x82A7C,nonstory,nonstory,바람 전기,바람 전기,0x81585,7,1,A1,DD 08 DD 22 A1 4F 24
+0x82A80,nonstory,nonstory,몸 가져오기,몸 가져오기,0x813E7,8,1,A1,DE 2D A1 0C DD 63 46 24
+0x82A84,nonstory,nonstory,기운 없음,기운 없음,0x8069C,5,1,A1,24 86 A1 71 8D
+0x82AC0,system,system,예      아니요,예      아니요,0x80400,10,6,A1,97 A1 A1 A1 A1 A1 A1 09 07 2C
+0x82AC4,system,system,저장하시겠습니까?,저장하시겠습니까?,0x80442,10,0,,DD 24 56 19 29 54 2D 07 3B D1
+0x82AC8,system,system,전투 전 장비를 정비하시겠습니까?,전투 전 장비를 정비하시겠습니까?,0x81D5A,21,3,A1,4F DD 39 A1 4F A1 56 DD 06 36 A1 31 DD 06 19 29 54 2D 07 3B D1
+0x82ACC,system,system,진행하시겠습니까?,진행하시겠습니까?,0x802F0,11,0,,DD 3F DD 31 19 29 54 2D 07 3B D1

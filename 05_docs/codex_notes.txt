@@ -1,6 +1,15 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+V324 런타임 UI와 V325 재인코딩 경계 - 2026-08-26
+- V324 DUCCU 상태 6종은 불러오기 이후 실제 게임, 전투, Yes/No, 장비, 아이템 목록·설명·사용 확인, 기술·범위 화면에 도달했다. 따라서 V324 resident lookup과 16px packet geometry는 해당 경로에서 동작한다. 깨진 UI 글자는 구 V241 문자열 코드가 현행 physical atlas를 가리킨 결과다.
+- 현행 구 UI 503행 중 443행이 구조적으로 잘못됐다. literal `0x9C`는 과거 공백 용도였지만 현행 physical155 `)`를 그리며, direct physical 960 이상은 V324 decoder에서 blank로 fail-close하고, 일부 낮은 direct code도 현행 Hanme 배치에서 다른 글자를 가리킨다. UI 수정은 번역문을 바꾸는 일이 아니라 포인터가 증명된 문자열을 현행 atlas identity로 재인코딩하는 일이다.
+- UI 포인터 원천은 `ui_full_v42.csv` 503행, `ui_system_v39.csv` 40행, `ui_nonstory_system_v39.csv` 128행, `ui_world_name_v39.csv` 7행이다. 합계 678행/671고유 포인터이고 충돌은 `0x80F1C` 하나다. HUD binary 포인터 5개를 제외한 정상 문자열은 666개다.
+- 살아 있는 UI 문자열 풀은 9구간 `0x80224..0x804A4`, `0x805A4..0x80A94`, `0x80B94..0x80C9C`, `0x80D1C..0x80F14`, `0x80F94..0x811C0`, `0x812AC..0x81708`, `0x817F4..0x81B4C`, `0x81CFC..0x81E38`, `0x81F04..0x82134`이며 총 6,076바이트다. V325의 561고유 payload는 종료문자 포함 5,590바이트다.
+- 현행 반각 공백은 `A1 -> physical160 blank`다. UI 문자 경계에서 `0x9C`를 다시 쓰면 안 된다. V325의 실제 공백은 697회다.
+- 신규 physical `403/762/819/823/865`는 각각 `%/뱀/센/첩/탑`이다. 모두 direct 2바이트로 접근되고 509상태 non-text reader가 0이며 재작성 UI 밖 기존 발생이 0이다. physical819는 lookup slot230 값이기도 하지만 `E9 E7` 발생은 8,448 region에서 0회다. lookup 목적지라는 사실만으로 배제하지 말고 실제 lookup token 발생까지 함께 감사해야 한다.
+- V325는 V324의 resident source, packed lookup, 기술 범위 커서 descriptor/UV, 폐기한 V323 cave와 HUD binary 포인터를 byte exact로 보존한다. COMM physical mapping을 다시 바꾸면 V324 lookup 413개와 V325 UI 666포인터를 모두 재생성·재검증해야 한다.
+
 Confirmed baselines
 - The broad active baseline is 03_output/story_progress_bulk3_all_1_gamefiles_only.
 - story_test_18 is stable only for earlier S1011/S1071 work. It is not the full current baseline.

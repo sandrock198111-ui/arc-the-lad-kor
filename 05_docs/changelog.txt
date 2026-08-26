@@ -1,3 +1,11 @@
+2026-08-26 - V325 Hanme16 UI 포인터 전수 재인코딩
+- `02_scripts/build_arc1_v325_ui_reencode.py`와 `verify_arc1_v325_ui_reencode.py`를 추가했다. V324 런타임 상태 6종에서 불러오기 이후 전투·장비·아이템·기술 화면까지 진입하는 것을 확인했고, UI 깨짐은 렌더러가 아니라 V241 계보의 구 코드가 V320계열 16px physical atlas와 맞지 않는 문제로 판정했다.
+- 검증된 UI 원문 4종 678행/671고유 포인터를 합쳤다. HUD binary 포인터 5개는 byte exact로 제외하고, 충돌 포인터 `0x80F1C`는 503행 UI 표를 우선해 정상 문자열 666개를 다시 인코딩했다. 9개 상주 풀은 6,076바이트이며 561고유 payload가 종료문자 포함 5,590바이트를 사용해 486바이트가 남는다.
+- 공백은 literal `0x9C`가 아니라 반각 blank `A1 -> physical160`으로 697회 기록했다. 신규 글리프 `%/뱀/센/첩/탑`은 physical `403/762/819/823/865`에 배치했다. physical819를 가리키는 lookup slot230(`E9 E7`)은 존재하지만 8,448 text region에서 발생 0회이고, 기존 physical819 5회는 모두 재작성 UI 내부의 direct `DF 5A`임을 가드로 고정했다.
+- V324 대비 변경 멤버는 `PSX.EXE`, `COMM.IMG` 두 개뿐이며 변경 바이트는 각각 7,284/226개다. 모든 DAT 162개, V324 resident copy/정적 lookup/기술 범위 커서 descriptor·UV/V323 폐기 cave/HUD binary 포인터는 byte exact다.
+- 두 번 재빌드한 full ZIP은 `arc1_v325_ui_reencode_TEST_ONLY_7828AA04.zip`, SHA-256 `7828AA04F6A0684981332924C30B4139ABFCA5065138FA899C4D429E87C74CD1`; V324 delta는 `arc1_v325_ui_reencode_TEST_ONLY_delta_from_v324_3A531423.zip`, SHA-256 `3A531423DBA076557BA67548E0161813CBA8CB01D253DD70C79F753DC2E3EE7B`다.
+- v104 레이아웃 시험 디스크 `V325.bin/.cue`를 만들었다. BIN SHA-256 `3A3DE2389560B79202749FA789C65F20E5E56F3511043315D0A9C5A273E40493`, CUE SHA-256 `5EBDC8CEF59FA42C1BEB5C330EBC262F3D3453FC7B2315F940C7D6874E0C1670`; 데이터 LBA 506/506, COMM 307/667/891, 패치 멤버 164/164 readback이 PASS했다. 런타임은 PENDING이므로 TEST ONLY이며 `bible_current.txt`의 v197 배포 기준은 변경하지 않았다.
+
 2026-07-06
 - ex/1.zip과 ex/2.zip을 원본 arc.zip과 바이너리 비교했다.
 - ex/1.zip은 COMM.IMG와 S1071.DAT만 변경된 제한 패치임을 확인했다.

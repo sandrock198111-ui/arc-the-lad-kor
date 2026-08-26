@@ -1,3 +1,11 @@
+2026-08-26 | V325 Hanme16 UI 포인터 전수 재인코딩 | py_compile, 2회 재빌드, 독립 문자/비트맵/Expected-Write 검증, V324 check_build 대조, mkpsxiso/LBA | STATIC UI/LAYOUT PASS, INHERITED DAT DEBT FAIL, RUNTIME PENDING.
+- full/delta SHA-256은 `7828AA04F6A0684981332924C30B4139ABFCA5065138FA899C4D429E87C74CD1` / `3A531423DBA076557BA67548E0161813CBA8CB01D253DD70C79F753DC2E3EE7B`로 2회 동일했다. 변경 멤버는 `PSX.EXE`, `COMM.IMG` 두 개, 변경 바이트는 7,284/226개다.
+- 독립 검증기는 666포인터/561고유 payload를 디스크에서 다시 읽고 각 문자 경계의 token을 physical `<960`으로 해석했다. 한글은 공식 Hanme 8x4x4 조합 비트맵, ASCII는 `ascii_16px.pkl`과 전수 일치했다. 공백은 `A1/physical160` 697회이고 문자 경계의 literal `9C`는 0회다. COMM 변경 plane은 `403,762,819,823,865` 정확히 5개다.
+- UI 풀은 5,590/6,076바이트, free 486바이트이며 미사용 바이트는 전부 0이다. 모든 DAT 162개, V324 resident lookup/기술 범위 커서/HUD binary 포인터는 byte exact다.
+- `check_build.py`의 V325 결과는 선택지 폭 75, 선택지 마커 2, 4줄 초과 18건이다. 세 집합은 V324와 동일한 상속 부채이며 V325 신규 DAT 회귀가 아니다. V324에 있던 EXE 포인터 중간 착지 1건은 V325 UI 풀 재배치 후 사라졌다.
+- `V325.bin` SHA-256 `3A3DE2389560B79202749FA789C65F20E5E56F3511043315D0A9C5A273E40493`, CUE `5EBDC8CEF59FA42C1BEB5C330EBC262F3D3453FC7B2315F940C7D6874E0C1670`. 506/506 데이터 LBA, COMM 307/667/891, PSX.EXE LBA 268481, 패치 멤버 164/164가 PASS했다.
+- 실기 확인 항목: 콜드부팅 후 불러오기, Yes/No의 `)` 제거와 반각 공백, 장비·액세서리 이름/설명, 아이템 이름/설명/사용 확인/획득 배너, 기술 이름/설명/전투 프롬프트, 단일·십자·확장 기술 범위 커서. 런타임 승인 전에는 배포하지 않는다.
+
 2026-07-06
 작업: ex/1.zip, ex/2.zip 비교 분석
 결과: ex/1.zip은 S1071 네 블록만 번역되고 나머지 초반 DAT는 원본이었다.

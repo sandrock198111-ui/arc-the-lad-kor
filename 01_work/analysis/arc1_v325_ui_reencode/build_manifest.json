@@ -1,0 +1,84 @@
+{
+  "build": "V325 TEST_ONLY pointer-proven UI re-encode for Hanme16",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v324_static_ui_cursor_recovery_TEST_ONLY_06F7C289.zip",
+    "sha256": "06F7C289B593AB2767BA3D3ABC256ACCFD21781F60DF46A18F1D3FF58D67FD4B"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v325_ui_reencode_TEST_ONLY_7828AA04.zip",
+    "sha256": "7828AA04F6A0684981332924C30B4139ABFCA5065138FA899C4D429E87C74CD1"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v325_ui_reencode_TEST_ONLY_delta_from_v324_3A531423.zip",
+    "sha256": "3A531423DBA076557BA67548E0161813CBA8CB01D253DD70C79F753DC2E3EE7B"
+  },
+  "changed_members": [
+    "COMM.IMG",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 7284,
+    "COMM.IMG": 226
+  },
+  "ui": {
+    "source_rows": 678,
+    "unique_manifest_pointers": 671,
+    "rebuilt_pointers": 666,
+    "hud_binary_pointers_preserved": 5,
+    "unique_payloads": 561,
+    "pool_bytes": 6076,
+    "required_bytes": 5590,
+    "free_bytes": 486,
+    "space": "A1 -> physical160 blank/half-width; legacy literal 9C forbidden",
+    "normalizations": [
+      "LV -> 레벨",
+      "레벨 +1 -> 레벨 1"
+    ]
+  },
+  "glyphs": {
+    "%": {
+      "physical_index": 403,
+      "code_hex": "DD B8",
+      "source": "ascii_16px.pkl"
+    },
+    "뱀": {
+      "physical_index": 762,
+      "code_hex": "DF 21",
+      "source": "official Hanme 8x4x4 composition"
+    },
+    "센": {
+      "physical_index": 819,
+      "code_hex": "DF 5A",
+      "source": "official Hanme 8x4x4 composition"
+    },
+    "첩": {
+      "physical_index": 823,
+      "code_hex": "DF 5E",
+      "source": "official Hanme 8x4x4 composition"
+    },
+    "탑": {
+      "physical_index": 865,
+      "code_hex": "DF 88",
+      "source": "official Hanme 8x4x4 composition"
+    }
+  },
+  "preserved": {
+    "V324_resident_lookup_cursor": {
+      "resident_source": "004675BA0D529464483F00726233DE209F190F8D94364E54A8CAA5B2AC49E0F2",
+      "lookup": "BE01313CBFABD5A1B0600C093E60572BC7CF1799BABC306ED57321741318D4A0",
+      "range_descriptor": "47DF81B0E91A262A8C77EEF9C095A01D7FEF222A1D1BEB249EC92287987623A6",
+      "range_uv": "9F7BC901DE59FE779FE564712785F3E6E39AA8111B71E70C8EB5F975F89312D2",
+      "discarded_v323_cave": "3B449F81C553E3972DD31ACC7DF0CCFA308B1A290A103632C751828372F7BA3E"
+    },
+    "HUD_binary_pointers": [
+      "0x823AC",
+      "0x823B0",
+      "0x823B4",
+      "0x823B8",
+      "0x823BC"
+    ],
+    "all_DAT": "byte exact"
+  },
+  "runtime": "PENDING user cold boot; load/save, equipment, item, skill, battle prompts",
+  "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE"
+}
