@@ -1,0 +1,54 @@
+dialogue hooks:
+8016BB8C  0C063F34  jal 0x8018FCD0
+8016BDA0  0C063F34  jal 0x8018FCD0
+
+wrapper:
+8018FCD0  2482FBEF  addiu   $v0, $a0, -0x411
+8018FCD4  2C43000E  sltiu   $v1, $v0, 0xe
+8018FCD8  14600007  bnez    $v1, 0x8018fcf8
+8018FCDC  00000000  nop     
+8018FCE0  2482FB9B  addiu   $v0, $a0, -0x465
+8018FCE4  2C430011  sltiu   $v1, $v0, 0x11
+8018FCE8  14600007  bnez    $v1, 0x8018fd08
+8018FCEC  00000000  nop     
+8018FCF0  0805AD46  j       0x8016b518
+8018FCF4  00000000  nop     
+8018FCF8  00404021  move    $t0, $v0
+8018FCFC  24090002  addiu   $t1, $zero, 2
+8018FD00  08063F44  j       0x8018fd10
+8018FD04  00000000  nop     
+8018FD08  2448000E  addiu   $t0, $v0, 0xe
+8018FD0C  2409FFF4  addiu   $t1, $zero, -0xc
+8018FD10  27BDFFE8  addiu   $sp, $sp, -0x18
+8018FD14  AFBF0014  sw      $ra, 0x14($sp)
+8018FD18  AFA50010  sw      $a1, 0x10($sp)
+8018FD1C  00084040  sll     $t0, $t0, 1
+8018FD20  3C0A801A  lui     $t2, 0x801a
+8018FD24  01485021  addu    $t2, $t2, $t0
+8018FD28  954B7460  lhu     $t3, 0x7460($t2)
+8018FD2C  AFA90008  sw      $t1, 8($sp)
+8018FD30  AFAB000C  sw      $t3, 0xc($sp)
+8018FD34  0C05AD46  jal     0x8016b518
+8018FD38  00000000  nop     
+8018FD3C  8FAA0010  lw      $t2, 0x10($sp)
+8018FD40  8FAB000C  lw      $t3, 0xc($sp)
+8018FD44  8FA90008  lw      $t1, 8($sp)
+8018FD48  9548000A  lhu     $t0, 0xa($t2)
+8018FD4C  8D470000  lw      $a3, ($t2)
+8018FD50  2508FFFF  addiu   $t0, $t0, -1
+8018FD54  00086140  sll     $t4, $t0, 5
+8018FD58  00081900  sll     $v1, $t0, 4
+8018FD5C  01836021  addu    $t4, $t4, $v1
+8018FD60  00081880  sll     $v1, $t0, 2
+8018FD64  01836021  addu    $t4, $t4, $v1
+8018FD68  01876021  addu    $t4, $t4, $a3
+8018FD6C  A58B0028  sh      $t3, 0x28($t4)
+8018FD70  340B1010  ori     $t3, $zero, 0x1010
+8018FD74  A58B002A  sh      $t3, 0x2a($t4)
+8018FD78  95480006  lhu     $t0, 6($t2)
+8018FD7C  8FBF0014  lw      $ra, 0x14($sp)
+8018FD80  01094021  addu    $t0, $t0, $t1
+8018FD84  A5480006  sh      $t0, 6($t2)
+8018FD88  27BD0018  addiu   $sp, $sp, 0x18
+8018FD8C  03E00008  jr      $ra
+8018FD90  00000000  nop     

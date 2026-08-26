@@ -1,0 +1,36 @@
+Arc the Lad 1 clean Pilgi johab font FLOWFIX - independent static verification
+date=2026-08-21
+result=PASS; RUNTIME PENDING
+
+base=00_original/arc.zip
+base_sha256=AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD
+full_zip=03_output/arc1_johab_font_poc_pilgi_FLOWFIX_TEST_ONLY_4891ECBD.zip
+full_zip_sha256=4891ECBD68C6F1724470729C09BCA775C3119A56AC840936514113A13FFB73BC
+patch_zip=03_output/arc1_johab_font_poc_pilgi_FLOWFIX_TEST_ONLY_patch_566D5F86.zip
+patch_zip_sha256=566D5F8646F387BF7581EF72B76960C753099B26A010AF247E5A05A47BCA12E5
+
+deterministic_rebuilds=2/2 same full and patch hashes
+full_member_order=identical to base
+member_sizes=all unchanged
+changed_members=1/S1071.DAT, COMM.IMG, PSX.EXE
+patch_members=1/S1071.DAT, COMM.IMG, PSX.EXE
+patch_bytes_match_full=3/3
+
+first_build_COMM_equals_FLOWFIX_COMM=true
+first_build_to_FLOWFIX_PSX_diffs=1
+PSX_single_diff=file 0x754D8, 0x10 -> 0x11
+helper_word=2C210011 (sltiu at,at,17)
+hook_bytes=34 3F 06 08 0D 00 C3 90
+
+site_0x478D6=39/39 bytes, internal_zero=0, E601=2, E09D=0, glyph_tokens=19
+site_0x47932=41/41 bytes, internal_zero=0, E601=1, E09D=6, glyph_tokens=21
+site_0x4798E=55/55 bytes, internal_zero=0, E601=2, E09D=9, glyph_tokens=29
+terminators=0x478FD,0x4795B,0x479C5 preserved 3/3
+post_terminator_8_bytes=00 00 00 21 00 05 00 00 preserved 3/3
+
+safe_filler=index 1141 / code E0 9D / original plane blank
+safe_filler_reference_catalog=absent
+safe_filler_cell_audit=text_reads 82, nontext_reads 0, states 509
+COMM_writes=29 component planes only; filler plane untouched
+
+expected_runtime_test=cold boot, natural button progression through all three diagnostics

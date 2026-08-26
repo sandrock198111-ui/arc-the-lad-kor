@@ -1,0 +1,17 @@
+V320B TEST ONLY - V320 mixed EXE pointer-pool restore
+input=arc1_v320_hanme_static_recovery_TEST_ONLY_96626CCB.zip (96626CCB445BD6F1F249FCB21EA15CE2EAD6B94BE95DED3DC366B38BE9D234F3)
+rollback_source=arc1_v319_pilgi16_integration_TEST_ONLY_07418C00.zip (07418C0024C4059C550E1584FC29340C6B97D9CF9B9DE778CA1FE38ACCB74A49)
+output=arc1_v320b_hanme_exe_pointer_restore_TEST_ONLY_2366F366.zip
+sha256=2366F366A12F81DCE689DA10355F04112BECEB24F4895D029896021F1F9FECE6
+delta=arc1_v320b_hanme_exe_pointer_restore_TEST_ONLY_delta_from_v320_DB590052.zip
+delta_sha256=DB5900521649CE0E6037198FF3215F568168E00FF3B69564685E404DCE9B9B4A
+PSX.EXE_sha256=3D477AF6E97860485D89ADA92932FA90FA05B0834B583072E7A0946D2912D291
+changed_members_from_v320=PSX.EXE
+restored_pool=0x78000..0x82FFF
+restored_pool_diff_bytes=17145
+pointer_catalog=4262 rows; V320 broken=3126; V320B changed=0
+aligned_pointer_scan=V320 broken 3993; V320B changed 0
+crash_pointer=0x7E5F8: D30B54F0->801354F0
+V320_changes_preserved_outside_pool=299 bytes
+DAT_and_COMM=byte-identical to V320
+runtime=PENDING user cold boot; V320R is rejected

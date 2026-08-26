@@ -1,0 +1,8 @@
+v306 TEST ONLY - v197 with Hangul glyphs redrawn as johab
+base=arc1_v197_prompt_width_off_by_one.zip   font=Sans_8x4x4.ttf at 12px
+output=arc1_v306_v197_johab_TEST_ONLY_3EB347E8.zip
+sha256=3EB347E8C4EBC0243E7AAFE6E8CF99AF75AF87AE967C3BB847610E29620FED16
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+cells redrawn=183   left as-is=5   (unknown cells keep v197 pictures)
+COMM.IMG only; every DAT and PSX.EXE byte-identical to v197
+runtime=PENDING user cold boot

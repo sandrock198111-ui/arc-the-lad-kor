@@ -1,0 +1,397 @@
+{
+  "status": "TEST_ONLY_STATIC_PASS_RUNTIME_PENDING_16PX_LOWER_ROW",
+  "base": {
+    "path": "E:\\korean\\00_original\\arc.zip",
+    "sha256": "AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD"
+  },
+  "font": {
+    "profile": "pilgi",
+    "zip_path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_df8ab64f-8a3f-4eac-969a-9778b94efbe6\\8x4x4-fonts-all.zip",
+    "zip_sha256": "31084434DC45D383B21A8A3BE10A47869BB31E92D7C2C5AEEF91BD439D956A78",
+    "member": "Pilgi_8x4x4.ttf",
+    "member_sha256": "30EC39649ECBE2DC1E716F0FF7C8793AA364CFB7D5AB37C4401FE0936E1417A9",
+    "pixel_size": 16,
+    "threshold": ">96",
+    "pillow": "12.3.0",
+    "freetype": "2.14.3"
+  },
+  "official_rule": {
+    "source_url": "https://raw.githubusercontent.com/iolo/8x4x4-fonts/main/generate_hangul_syllables.py",
+    "source_sha256": "A498B4F7B7DC840AD637B093711ED6DB650EEEA96DAFA46728B4F30E730B3052",
+    "cho_without_jong": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      3,
+      3,
+      3,
+      1,
+      2,
+      4,
+      4,
+      4,
+      2,
+      1,
+      3,
+      0
+    ],
+    "cho_with_jong": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5
+    ],
+    "jong_by_jung": [
+      0,
+      2,
+      0,
+      2,
+      1,
+      2,
+      1,
+      2,
+      3,
+      0,
+      2,
+      1,
+      3,
+      3,
+      1,
+      2,
+      1,
+      3,
+      3,
+      1,
+      1
+    ]
+  },
+  "renderer": {
+    "mode": "dialogue-only post-build packet override",
+    "stock_renderer_preserved_for_noncustom_codes": true,
+    "custom_packet_width_height": [
+      16,
+      16
+    ],
+    "custom_horizontal_advance": 14,
+    "state_dimensions_unchanged": [
+      12,
+      12
+    ],
+    "state_vertical_spacing": 2,
+    "expected_vertical_pitch": 14,
+    "dialogue_call_hooks": [
+      "0x8016BB8C",
+      "0x8016BDA0"
+    ],
+    "wrapper": "0x801A2074",
+    "wrapper_bytes": 196,
+    "coordinate_table": "0x801A2138",
+    "coordinate_table_bytes": 62
+  },
+  "ranges": {
+    "advancing_cho_and_space": [
+      1041,
+      1054
+    ],
+    "custom_space": 1054,
+    "nonadvancing_jung_jong_and_filler": [
+      1125,
+      1141
+    ],
+    "safe_filler": 1141
+  },
+  "physical_atlas": {
+    "grid_offset": [
+      4,
+      12
+    ],
+    "grid_step": 16,
+    "candidate_rectangles": 20,
+    "candidate_plane_slots": 60,
+    "candidate_plane_counts": {
+      "0": 13,
+      "1": 16,
+      "2": 11,
+      "3": 20
+    },
+    "assigned_slots": 31,
+    "max_u": 164,
+    "max_v": 188,
+    "max_pixel_y": 203,
+    "runtime_audit_states": 509,
+    "requirements": "all overlapped planes blank+unreferenced; all cells text_reads>0 and nontext_reads=0"
+  },
+  "components": {
+    "logical": 32,
+    "unique_cho_shapes": 13,
+    "unique_rest_shapes": 16,
+    "physical_shape_planes": 29,
+    "blank_planes": 2
+  },
+  "bottom_row_proof": {
+    "가": {
+      "row12": "0018",
+      "row13": "0018",
+      "row14": "0018",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "각": {
+      "row12": "0018",
+      "row13": "0018",
+      "row14": "0030",
+      "row15": "0030",
+      "uses_rows_12_15": true,
+      "uses_row_15": true
+    },
+    "객": {
+      "row12": "000C",
+      "row13": "000C",
+      "row14": "0018",
+      "row15": "0018",
+      "uses_rows_12_15": true,
+      "uses_row_15": true
+    },
+    "걱": {
+      "row12": "0018",
+      "row13": "0018",
+      "row14": "0030",
+      "row15": "0030",
+      "uses_rows_12_15": true,
+      "uses_row_15": true
+    },
+    "고": {
+      "row12": "3FFC",
+      "row13": "0000",
+      "row14": "0000",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "곡": {
+      "row12": "0030",
+      "row13": "0060",
+      "row14": "0060",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "과": {
+      "row12": "1E18",
+      "row13": "0018",
+      "row14": "0018",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "구": {
+      "row12": "00C0",
+      "row13": "00C0",
+      "row14": "00C0",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "나": {
+      "row12": "0018",
+      "row13": "0018",
+      "row14": "0018",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "워": {
+      "row12": "030C",
+      "row13": "060C",
+      "row14": "060C",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "줄": {
+      "row12": "01CC",
+      "row13": "0338",
+      "row14": "01E0",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "출": {
+      "row12": "01CC",
+      "row13": "0338",
+      "row14": "01E0",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "하": {
+      "row12": "0018",
+      "row13": "0018",
+      "row14": "0018",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "허": {
+      "row12": "0018",
+      "row13": "0018",
+      "row14": "0018",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "호": {
+      "row12": "3FFC",
+      "row13": "0000",
+      "row14": "0000",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    },
+    "홀": {
+      "row12": "01CC",
+      "row13": "0338",
+      "row14": "01E0",
+      "row15": "0000",
+      "uses_rows_12_15": true,
+      "uses_row_15": false
+    }
+  },
+  "diagnostic_raster_hamming": {
+    "가": 0,
+    "각": 0,
+    "객": 0,
+    "걱": 0,
+    "고": 0,
+    "곡": 0,
+    "과": 0,
+    "구": 14,
+    "나": 13,
+    "워": 0,
+    "줄": 0,
+    "출": 0,
+    "하": 0,
+    "허": 0,
+    "호": 0,
+    "홀": 0
+  },
+  "fixed_length_flow": {
+    "linebreak_counts": [
+      2,
+      1,
+      2
+    ],
+    "original_terminators_preserved": true,
+    "early_zero_bytes": 0,
+    "sites": [
+      {
+        "member": "1/S1071.DAT",
+        "offset": "0x478D6",
+        "capacity": 39,
+        "core_bytes": 39,
+        "filler_tokens": 0,
+        "glyph_packets": 19,
+        "linebreak_tokens": 2,
+        "internal_zero_bytes": 0,
+        "terminator_offset": "0x478FD",
+        "text": "출 홀 줄 하 허 호",
+        "encoded_hex": "DD 0B D4 25 E6 01 01 E0 93 E0 8F E0 42 E0 95 E0 8F E0 41 E0 93 E0 8F E0 45 E6 01 E0 99 E0 3D E0 9A E0 3D E0 91 E0 40"
+      },
+      {
+        "member": "1/S1071.DAT",
+        "offset": "0x47932",
+        "capacity": 41,
+        "core_bytes": 31,
+        "filler_tokens": 5,
+        "glyph_packets": 20,
+        "linebreak_tokens": 1,
+        "internal_zero_bytes": 0,
+        "terminator_offset": "0x4795B",
+        "text": "각 객 걱 곡",
+        "encoded_hex": "01 E0 9B E0 8E E0 3F E0 46 E0 98 E0 8D E0 3F E6 01 E0 9C E0 8E E0 3F E0 46 E0 95 E0 90 E0 43 E0 9D E0 9D E0 9D E0 9D E0 9D"
+      },
+      {
+        "member": "1/S1071.DAT",
+        "offset": "0x4798E",
+        "capacity": 55,
+        "core_bytes": 41,
+        "filler_tokens": 7,
+        "glyph_packets": 27,
+        "linebreak_tokens": 2,
+        "internal_zero_bytes": 0,
+        "terminator_offset": "0x479C5",
+        "text": "가 나 고 구 과 워",
+        "encoded_hex": "DD 0B D4 25 E6 01 01 E0 99 E0 3B E0 46 E0 99 E0 3A E0 46 E0 92 E0 3E E6 01 E0 94 E0 44 E0 46 E0 97 E0 39 E0 46 E0 96 E0 3C E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D"
+      }
+    ]
+  },
+  "reference_catalog": {
+    "dialogue_sites": 39457,
+    "exe_pointer_strings": 1736,
+    "referenced_glyph_indices": 892
+  },
+  "features_absent": [
+    "dynamic cache",
+    "global 15-column atlas",
+    "global code rewrite",
+    "E2 external slots",
+    "UI repack",
+    "expanded EXE",
+    "bulk translation"
+  ],
+  "changed_members": [
+    "1/S1071.DAT",
+    "COMM.IMG",
+    "PSX.EXE"
+  ],
+  "changed_byte_counts": {
+    "1/S1071.DAT": 123,
+    "COMM.IMG": 443,
+    "PSX.EXE": 211
+  },
+  "full_output": {
+    "path": "E:\\korean\\03_output\\arc1_johab_font_16px_relocated_pilgi_TEST_ONLY_79880948.zip",
+    "sha256": "798809489438B0081BA795F83D56322E433ABF40CA8600DD3F38E9FEB8A61064",
+    "size": 292309892
+  },
+  "patch_output": {
+    "path": "E:\\korean\\03_output\\arc1_johab_font_16px_relocated_pilgi_TEST_ONLY_patch_5DD8D608.zip",
+    "sha256": "5DD8D608CD3B79669793250084B2F8CAA5E7CD1AA8F66EF6C22F354B5DD5980D",
+    "size": 429030,
+    "members": [
+      "1/S1071.DAT",
+      "COMM.IMG",
+      "PSX.EXE"
+    ]
+  },
+  "zip_runtime": {
+    "zlib_compile_version": "1.3.1.zlib-ng",
+    "zlib_runtime_version": "1.3.1.zlib-ng",
+    "compresslevel": 1
+  },
+  "runtime": "PENDING_USER_COLD_BOOT_NATURAL_S1071_PROGRESSION"
+}

@@ -1,0 +1,13 @@
+Hanme 16px -> 14px static preview
+game_data_modified=no
+pieces_sha256=409ABA72F4BA2282AA5C4E4982A9EEA16FBD14FB0413A40E151537A6653E2904
+pillow_version=12.3.0
+label_font_sha256=7A183CF1C6C56B9609FCC16EDA8B5229FBC11758A21E669EC00343239B02192F
+preview=04_screenshots/hanme_16_to_14_comparison.png
+preview_sha256=E8E27B999BDCE5110428A9EF767D0E9A7384E00E1DF23DAF1B9955AA000065C9
+metrics=01_work/analysis/hanme_16_to_14_preview/metrics.csv
+current16 mean_density_ratio=1.0000 component_changes=0
+crop14 mean_density_ratio=1.3024 component_changes=0
+nearest14 mean_density_ratio=0.9444 component_changes=3
+area35 mean_density_ratio=1.1498 component_changes=1
+area50 mean_density_ratio=1.0556 component_changes=1

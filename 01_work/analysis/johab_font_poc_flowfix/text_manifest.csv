@@ -1,0 +1,4 @@
+﻿member,offset,capacity,body_bytes,safe_filler_bytes,safe_filler_tokens,glyph_tokens,linebreak_tokens,terminator_offset,internal_zero_bytes,text,encoded_hex
+1/S1071.DAT,0x478D6,39,39,0,0,19,2,0x478FD,0,출 홀 줄 하 허 호,DD 0B D4 25 E6 01 E0 93 E0 8E E0 41 E0 95 E0 8E E0 42 E0 93 E0 8E E0 45 E6 01 E0 9B E0 3E E0 9C E0 3E E0 91 E0 40 01
+1/S1071.DAT,0x47932,41,41,12,6,21,1,0x4795B,0,각 객 걱 곡,E0 99 E0 8F E0 3C 01 E0 98 E0 8D E0 3C E6 01 E0 9A E0 8F E0 3C 01 E0 95 E0 90 E0 44 01 E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D
+1/S1071.DAT,0x4798E,55,55,18,9,29,2,0x479C5,0,가 나 고 구 과 워,DD 0B D4 25 E6 01 E0 9B E0 3B 01 E0 9B E0 39 01 E0 92 E0 3F E6 01 E0 94 E0 43 01 E0 97 E0 3A 01 E0 96 E0 3D 01 E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D

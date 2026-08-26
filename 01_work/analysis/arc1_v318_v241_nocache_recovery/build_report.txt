@@ -1,0 +1,16 @@
+v318 TEST ONLY - broad v241 16px lineage with dynamic-cache paths disabled
+base=arc1_v241_halfwidth_TEST_ONLY_CEC05368.zip
+base_sha256=CEC0536802239A2B54E383D3C53CF9D648703A25D70F633703FF3E1F900113E1
+output=arc1_v318_v241_nocache_recovery_TEST_ONLY_50B30D67.zip
+sha256=50B30D67FC5856B548A986EB17470AF179EC0E3CFAF595F2291C225F1EF8DFBF
+PSX_delta_from_v241=arc1_v318_v241_nocache_recovery_TEST_ONLY_PSX_delta_from_v241_F71EB922.zip
+PSX_delta_sha256=F71EB9224FC515262F9D5CC327680FF71F8A053AD46EAFCC074D417A09BF1B90
+PSX.EXE_sha256=79701FDD5C4D8C16EA5AE6E583F6825D585A559F601277C673C13E6E859DFDFA
+changed_members=['PSX.EXE']
+PSX_changed_bytes=14
+preserved=v241 patch members 164/164; DAT/UI/E2/COMM.IMG and 16px global atlas byte-for-byte
+restored=pre-DrawOT DrawOT call; stock packet W/H tail; stock renderer prologue
+cache_upload_direct_calls_after=0
+runtime=PENDING user cold boot
+primary_gate=world map must not be corrupted; broad dialogue must match v241
+known_risk=unrewritten E9/EA outside v241's declared rewrite ranges may be blank

@@ -1,0 +1,15 @@
+v314 TEST ONLY - per-line placement + bank B
+output=arc1_v314_bankb_TEST_ONLY_75506477.zip
+sha256=755064776F7EFA5FF1F6E4D873BCE64AE1922EFE6C8E973D3D12433391AFE703
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+font=Pilgi_8x4x4.ttf at 12px, beol rule measured against the font own syllables
+pieces placed: cho 109, jung+jong 59, plain 23, total 191
+atlas: 996 original glyph cells untouched (sha c6e90bf76b176d38), 237 blank cells available
+advance bound = index 1179; codes >= bound draw without moving the cursor
+placement is per original line: one E2 per text span, controls stay put
+lines 2878  translated 2679  inline lines 1954  slot lines 3634  cut lines 684
+cut causes: no free slot 630, over one slot 33, span too short for E2 21
+handlers 0x8018FCD0 / 0x8018FD38 / 0x80193B44
+hooks 0x8016BC84 / 0x8016BDC0 / 0x8016B63C
+changed members=162
+runtime=PENDING user cold boot

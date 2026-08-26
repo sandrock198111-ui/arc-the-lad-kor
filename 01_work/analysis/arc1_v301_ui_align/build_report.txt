@@ -1,0 +1,9 @@
+v301 TEST ONLY - UI repack, translations matched to pointer targets
+output=arc1_v301_ui_align_TEST_ONLY_25C86506.zip
+sha256=25C865065D7B2C29EA1BCCC4A7619D61C13EA07F4646DA31009FE85FC97929BC
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+lines=2,878  inline=327  moved to slot=2,011  truncated=341
+Korean glyphs=716  no cell=3
+UI strings applied=372  deferred=167
+handlers at 0x8018FCD0 / 0x8018FD28, hooks 0x8016BC84 / 0x8016BDC0
+runtime=PENDING user cold boot

@@ -1,0 +1,6 @@
+member,region,start,end_exclusive,allowed_bytes,actual_diff_bytes
+PSX.EXE,E2 handlers,0x754D0,0x755C5,245,131
+PSX.EXE,E2 lookup hook,0x51484,0x51488,4,3
+PSX.EXE,E2 completion hook,0x515C0,0x515C4,4,3
+1/S1011.DAT,bank-A slot 0,0x45000,0x45080,128,35
+1/S1011.DAT,inline E2 redirect,0x4799E,0x479A0,2,2

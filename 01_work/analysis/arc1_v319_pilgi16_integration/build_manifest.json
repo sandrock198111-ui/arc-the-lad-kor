@@ -1,0 +1,72 @@
+{
+  "build": "V319 TEST_ONLY broad Pilgi16 integration",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v318_v241_nocache_recovery_TEST_ONLY_50B30D67.zip",
+    "sha256": "50B30D67FC5856B548A986EB17470AF179EC0E3CFAF595F2291C225F1EF8DFBF",
+    "members": 164
+  },
+  "historical_atlas": {
+    "v240_sha256": "1A307BDE5184763122522BEC3C5A57597C3458E8CC5017321E603550F9F43ED2",
+    "v241_sha256": "CEC0536802239A2B54E383D3C53CF9D648703A25D70F633703FF3E1F900113E1"
+  },
+  "font": {
+    "status": "temporary structure-validation face; not final art direction",
+    "archive": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_df8ab64f-8a3f-4eac-969a-9778b94efbe6\\8x4x4-fonts-all.zip",
+    "archive_sha256": "31084434DC45D383B21A8A3BE10A47869BB31E92D7C2C5AEEF91BD439D956A78",
+    "member": "Pilgi_8x4x4.ttf",
+    "member_sha256": "30EC39649ECBE2DC1E716F0FF7C8793AA364CFB7D5AB37C4401FE0936E1417A9",
+    "pillow": "12.3.0",
+    "freetype": "2.14.3",
+    "threshold": ">96"
+  },
+  "atlas": {
+    "indices": 728,
+    "ink": 654,
+    "blank_preserved": 74,
+    "pilgi_resolved": 654,
+    "unresolved": 0,
+    "legacy_identified": 554,
+    "hangul_piece_identified": 632,
+    "legacy_piece_agreement": 532,
+    "piece_recovered": 100,
+    "exhaustive_hangul_shapes": 11172,
+    "unique_pilgi_chars": 626,
+    "comm_changed_bytes": 14395
+  },
+  "geometry": {
+    "packet": [
+      16,
+      16
+    ],
+    "cursor_advance": 14,
+    "wrap_advance": 14,
+    "line_pitch": 16,
+    "half_width_step": 8,
+    "main_state": {
+      "D": 14,
+      "E": 16,
+      "F": 2,
+      "plus_10": 0
+    },
+    "cache_upload_direct_calls": 0
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v319_pilgi16_integration_TEST_ONLY_07418C00.zip",
+    "sha256": "07418C0024C4059C550E1584FC29340C6B97D9CF9B9DE778CA1FE38ACCB74A49",
+    "delta_path": "E:\\korean\\03_output\\arc1_v319_pilgi16_integration_TEST_ONLY_delta_from_v318_5884C48B.zip",
+    "delta_sha256": "5884C48B619C0EAC32FDB9F8CDFD3838E344F0929678BF1B5AB9DC0F17DD3983",
+    "changed_members_from_v318": [
+      "COMM.IMG",
+      "PSX.EXE"
+    ],
+    "psx_changed_bytes": 39
+  },
+  "runtime": "PENDING user cold boot",
+  "known_limits": [
+    "Pilgi is a temporary structure-validation face, not the selected final 16px font",
+    "14px advance overlaps adjacent 16px sprites by 2px and needs font-specific runtime acceptance",
+    "automatic wrapping is not Korean word-boundary aware and can split an eojeol",
+    "this bridge inherits v240's 773 unknown-code-to-blank rewrites",
+    "the final production builder must reconstruct from pristine arc.zip"
+  ]
+}

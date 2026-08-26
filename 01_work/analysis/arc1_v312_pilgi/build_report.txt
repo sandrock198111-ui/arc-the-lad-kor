@@ -1,0 +1,14 @@
+v312 TEST ONLY - 12px johab, Pilgi
+output=arc1_v312_pilgi_TEST_ONLY_646C308C.zip
+sha256=646C308CB69B4829B4DCB938151E60C9AC4072FD9F58ED7ED6872D6DA0D3D0F0
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+font=Pilgi_8x4x4.ttf at 12px, beol rule measured against the font own syllables
+pieces placed: cho 109, jung+jong 59, plain 23, total 191
+atlas: 996 original glyph cells untouched (sha c6e90bf76b176d38), 237 blank cells available
+advance bound = index 1179; codes >= bound draw without moving the cursor
+lines 2878  translated 2679  inline 14  moved to slot 2107 (multi-slot 519)  truncated 558
+truncation causes: no free slot 464, not enough slots 6, no room for E2 88
+handlers 0x8018FCD0 / 0x8018FD28 / 0x8018FD94
+hooks 0x8016BC84 / 0x8016BDC0 / 0x8016B63C
+changed members=162
+runtime=PENDING user cold boot

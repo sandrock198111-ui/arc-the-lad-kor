@@ -1,0 +1,7 @@
+V321 independent static verification: PASS
+build_sha256=1B04A832B33BF061A1AAC8BEE1186B53D6FE977ACA5295C6B5A019CD0759DDFF
+changed_members=1/S1021.DAT,1/S1031.DAT,1/S1072.DAT,21/S2021.DAT,COMM.IMG,D/SD011.DAT,PSX.EXE
+disk_readback=state1:촌장: 이 말괄량이 덕분에 마침내 꺼지는구나. | state2:아버지의 유품인 갑옷과 검을 찾았다. | state3:엄마... | state4:그 불을 줘. / 내가 다시 붙이고 올게. | state5:걱정 마. / 불은 내가 다시 붙이고 올게.
+legacy_mon_psx_bytes=57 (AB->64 only)
+changed_COMM_planes=[170]
+runtime=PENDING user cold boot

@@ -1,0 +1,17 @@
+V323 TEST ONLY - relocate complete skill-range cursor texture
+base=arc1_v322_e2_skip_restore_TEST_ONLY_480924F9.zip
+base_sha256=480924F970C441BA819BC1F2FA003ED430FA76509ED138C8B33F444044057B32
+output=arc1_v323_skill_range_relocation_TEST_ONLY_D57F9AC2.zip
+sha256=D57F9AC21E526304E43CCFAF266A412E1256CFC2C7C7FE8C1EB0AA5F8B8BD338
+delta=arc1_v323_skill_range_relocation_TEST_ONLY_delta_from_v322_8E98C46F.zip
+delta_sha256=8E98C46F619726798EC545AB24897244951655E92EC92EAC8C4737010BEB8399
+changed_members=PSX.EXE only
+PSX_changed_bytes=735
+COMM.IMG/all_DAT=byte-identical to V322 PASS
+cursor_source=original COMM x0..99,y128..160 raw 1650B
+cursor_RLE=652B (94CED131CFC00C7B4A249009DEA5BE2361ABC6DAF6C244EE9B6D134F621C7133)
+helper=0x801A9BD8/324B; cave_used=976/1064B
+upload=page15,1 U0..99,V191..223 via five synchronous LoadImage calls
+range_UV=original + (0,63); CLUT unchanged
+temporary_stack=464B helper + 48B LoadImage; resident/heap unchanged
+runtime=PENDING user cold boot; TEST_ONLY

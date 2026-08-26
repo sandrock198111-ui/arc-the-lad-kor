@@ -1,0 +1,15 @@
+v316 TEST ONLY - one-byte jung/jong
+output=arc1_v316_onebyte_TEST_ONLY_C51D1552.zip
+sha256=C51D1552E6AEA2140AEDE600446C8D98786ADBCD4593D9E6C001A76E9CA3EE09
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+font=Pilgi_8x4x4.ttf at 12px, beol rule measured against the font own syllables
+pieces placed: cho 109, jung+jong 59, plain 23, total 191
+atlas: 891 original glyph cells untouched (sha 7eff468aca049531), 237 blank cells available
+pieces occupy index 103..161 and draw without moving the cursor
+placement is per original line: one E2 per text span, controls stay put
+lines 2878  translated 2679  inline lines 1041  slot lines 4343  cut lines 888
+cut causes: no free slot 833, over one slot 13, span too short for E2 42
+handlers 0x8018FCD0 / 0x8018FD38 / 0x80193B44
+hooks 0x8016BC84 / 0x8016BDC0 / 0x8016B63C
+changed members=162
+runtime=PENDING user cold boot

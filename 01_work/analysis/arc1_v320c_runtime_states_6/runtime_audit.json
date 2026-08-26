@@ -1,0 +1,560 @@
+[
+  {
+    "state": 1,
+    "header": {
+      "file_sha256": "7384A4CE885ECBD9CE63C478AE25128A88446561A554700579A0D417336E6F8F",
+      "file_size": 1527633,
+      "game_id": "V320C",
+      "thumb_offset": 245,
+      "state_offset": 57457,
+      "compressed_size": 1470176,
+      "state_size": 3816838,
+      "zstd_offsets": [
+        245,
+        57457
+      ],
+      "ram_base": 6754,
+      "vram_base": 2104796,
+      "media_paths": []
+    },
+    "text_state": {
+      "header_address": "0x801F9D44",
+      "base_address": "0x801BE9BC",
+      "limit": 64,
+      "count": 25,
+      "x": 136,
+      "y": 52,
+      "style": 0,
+      "D": 14,
+      "E": 16,
+      "F": 2,
+      "line_extra": 0,
+      "source_pointer": "0x80116950"
+    },
+    "dat_top5": [
+      {
+        "name": "1/S1072.DAT",
+        "base": 847872,
+        "equal": 12288,
+        "size": 12288,
+        "ratio": 1.0
+      },
+      {
+        "name": "4/S4062.DAT",
+        "base": 849920,
+        "equal": 11249,
+        "size": 12288,
+        "ratio": 0.9154459635416666
+      },
+      {
+        "name": "1/S1031.DAT",
+        "base": 849920,
+        "equal": 11223,
+        "size": 12288,
+        "ratio": 0.913330078125
+      },
+      {
+        "name": "5/S5026.DAT",
+        "base": 849920,
+        "equal": 11219,
+        "size": 12288,
+        "ratio": 0.9130045572916666
+      },
+      {
+        "name": "21/S2012.DAT",
+        "base": 849920,
+        "equal": 11213,
+        "size": 12288,
+        "ratio": 0.9125162760416666
+      }
+    ],
+    "message": {
+      "file_pointer": 293200,
+      "site": 293170,
+      "payload_start": 293170,
+      "payload_end": 293200,
+      "external_slot": null,
+      "pointer_delta_to_end": 0,
+      "site_candidates": [
+        293170
+      ],
+      "composite_e2": false
+    },
+    "e2_segments": [],
+    "expected_translation": "촌장: 이 말괄량이 덕분에 마침내 꺼지는구나.",
+    "disk_decoded": "촌장: 이 말?량이 덕분에 마침내 꺼지는구나.",
+    "packet_decoded": "촌장: 이 말?량이 덕분에 마침내\n 꺼지는구나.",
+    "token_packet_physical_exact": true
+  },
+  {
+    "state": 2,
+    "header": {
+      "file_sha256": "28EB795BFC8A9819287609A15C7445187A2A778525754152AF430C19D35EEEA9",
+      "file_size": 1560270,
+      "game_id": "V320C",
+      "thumb_offset": 245,
+      "state_offset": 23426,
+      "compressed_size": 1536844,
+      "state_size": 3816838,
+      "zstd_offsets": [
+        245,
+        23426
+      ],
+      "ram_base": 6754,
+      "vram_base": 2104796,
+      "media_paths": []
+    },
+    "text_state": {
+      "header_address": "0x801F9D88",
+      "base_address": "0x801BF6BC",
+      "limit": 64,
+      "count": 20,
+      "x": 74,
+      "y": 182,
+      "style": 0,
+      "D": 14,
+      "E": 16,
+      "F": 2,
+      "line_extra": 0,
+      "source_pointer": "0x80116C4C"
+    },
+    "dat_top5": [
+      {
+        "name": "1/S1021.DAT",
+        "base": 847872,
+        "equal": 12288,
+        "size": 12288,
+        "ratio": 1.0
+      },
+      {
+        "name": "1/S1031.DAT",
+        "base": 847872,
+        "equal": 9583,
+        "size": 12288,
+        "ratio": 0.7798665364583334
+      },
+      {
+        "name": "4/S4062.DAT",
+        "base": 847872,
+        "equal": 9575,
+        "size": 12288,
+        "ratio": 0.7792154947916666
+      },
+      {
+        "name": "21/S2012.DAT",
+        "base": 847872,
+        "equal": 9561,
+        "size": 12288,
+        "ratio": 0.778076171875
+      },
+      {
+        "name": "4/S4061.DAT",
+        "base": 847872,
+        "equal": 9559,
+        "size": 12288,
+        "ratio": 0.7779134114583334
+      }
+    ],
+    "message": {
+      "file_pointer": 293964,
+      "site": 293944,
+      "payload_start": 290048,
+      "payload_end": 290075,
+      "external_slot": 58,
+      "pointer_delta_to_end": 3889,
+      "site_candidates": [
+        293944
+      ],
+      "composite_e2": false
+    },
+    "e2_segments": [],
+    "expected_translation": "아버지의 유품인 갑옷과 검을 찾았다.",
+    "disk_decoded": "아버지의 유정인 갑옷과 검을 찾았다.",
+    "packet_decoded": "아버지의 유정인 갑옷과 검을 찾았\n다.",
+    "token_packet_physical_exact": true
+  },
+  {
+    "state": 3,
+    "header": {
+      "file_sha256": "5510EFE772522DE04B2CD7F46A8565819F8E59DFB9F1AF2F1A6A64A32C145162",
+      "file_size": 1566206,
+      "game_id": "V320C",
+      "thumb_offset": 245,
+      "state_offset": 76553,
+      "compressed_size": 1489653,
+      "state_size": 3816838,
+      "zstd_offsets": [
+        245,
+        76553
+      ],
+      "ram_base": 6754,
+      "vram_base": 2104796,
+      "media_paths": []
+    },
+    "text_state": {
+      "header_address": "0x801F9D44",
+      "base_address": "0x801BE9BC",
+      "limit": 64,
+      "count": 5,
+      "x": 164,
+      "y": 36,
+      "style": 0,
+      "D": 14,
+      "E": 16,
+      "F": 2,
+      "line_extra": 0,
+      "source_pointer": "0x80116883"
+    },
+    "dat_top5": [
+      {
+        "name": "1/S1031.DAT",
+        "base": 847872,
+        "equal": 12288,
+        "size": 12288,
+        "ratio": 1.0
+      },
+      {
+        "name": "4/S4062.DAT",
+        "base": 847872,
+        "equal": 12103,
+        "size": 12288,
+        "ratio": 0.9849446614583334
+      },
+      {
+        "name": "21/S2012.DAT",
+        "base": 847872,
+        "equal": 12078,
+        "size": 12288,
+        "ratio": 0.98291015625
+      },
+      {
+        "name": "5/S5026.DAT",
+        "base": 847872,
+        "equal": 12071,
+        "size": 12288,
+        "ratio": 0.9823404947916666
+      },
+      {
+        "name": "6/S6052.DAT",
+        "base": 847872,
+        "equal": 12054,
+        "size": 12288,
+        "ratio": 0.98095703125
+      }
+    ],
+    "message": {
+      "file_pointer": 292995,
+      "site": 292986,
+      "payload_start": 292986,
+      "payload_end": 292995,
+      "external_slot": null,
+      "pointer_delta_to_end": 0,
+      "site_candidates": [
+        292986
+      ],
+      "composite_e2": true
+    },
+    "e2_segments": [
+      {
+        "command_offset": 292986,
+        "slot": 0,
+        "payload_start": 282624,
+        "payload_end": 282633,
+        "decoded": "<E913><D4><E060><E060><E060>"
+      }
+    ],
+    "expected_translation": "엄마...",
+    "disk_decoded": "<E913><D4><E060><E060><E060>",
+    "packet_decoded": "침<211>러러러",
+    "token_packet_physical_exact": false
+  },
+  {
+    "state": 4,
+    "header": {
+      "file_sha256": "6DC711CD50156B70118425422430DDB8F67757A280EAB91F798B86ED3B27DBD8",
+      "file_size": 1619997,
+      "game_id": "V320C",
+      "thumb_offset": 245,
+      "state_offset": 56779,
+      "compressed_size": 1563218,
+      "state_size": 3833222,
+      "zstd_offsets": [
+        245,
+        56779
+      ],
+      "ram_base": 6754,
+      "vram_base": 2104796,
+      "media_paths": []
+    },
+    "text_state": {
+      "header_address": "0x801F9D44",
+      "base_address": "0x801BE9BC",
+      "limit": 64,
+      "count": 20,
+      "x": 108,
+      "y": 68,
+      "style": 0,
+      "D": 14,
+      "E": 16,
+      "F": 2,
+      "line_extra": 0,
+      "source_pointer": "0x80116B7D"
+    },
+    "dat_top5": [
+      {
+        "name": "D/SD011.DAT",
+        "base": 847872,
+        "equal": 12288,
+        "size": 12288,
+        "ratio": 1.0
+      },
+      {
+        "name": "4/S4062.DAT",
+        "base": 849920,
+        "equal": 10786,
+        "size": 12288,
+        "ratio": 0.8777669270833334
+      },
+      {
+        "name": "5/S5026.DAT",
+        "base": 849920,
+        "equal": 10773,
+        "size": 12288,
+        "ratio": 0.876708984375
+      },
+      {
+        "name": "21/S2012.DAT",
+        "base": 849920,
+        "equal": 10758,
+        "size": 12288,
+        "ratio": 0.87548828125
+      },
+      {
+        "name": "1/S1031.DAT",
+        "base": 849920,
+        "equal": 10742,
+        "size": 12288,
+        "ratio": 0.8741861979166666
+      }
+    ],
+    "message": {
+      "file_pointer": 293757,
+      "site": 293728,
+      "payload_start": 293728,
+      "payload_end": 293757,
+      "external_slot": null,
+      "pointer_delta_to_end": 0,
+      "site_candidates": [
+        293728
+      ],
+      "composite_e2": true
+    },
+    "e2_segments": [
+      {
+        "command_offset": 293728,
+        "slot": 10,
+        "payload_start": 283904,
+        "payload_end": 283914,
+        "decoded": "전)<E00A>로)<DFEF><E060>"
+      },
+      {
+        "command_offset": 293744,
+        "slot": 11,
+        "payload_start": 284032,
+        "payload_end": 284048,
+        "decoded": "안라)않십)론황령)<B8>제<E060>"
+      }
+    ],
+    "expected_translation": "그 불을 줘. 내가 다시 붙이고 올게.",
+    "disk_decoded": "전)<E00A>로)<DFEF><E060>\n안라)않십)론황령)<B8>제<E060>",
+    "packet_decoded": "전)<34>로)아러\n안라)않십)론황령)<183>제\n러",
+    "token_packet_physical_exact": true
+  },
+  {
+    "state": 5,
+    "header": {
+      "file_sha256": "47637F9028FF0ADBE39C595B4BA8C7158DFC8C215648F6FD84AE09046FFBD050",
+      "file_size": 1617095,
+      "game_id": "V320C",
+      "thumb_offset": 245,
+      "state_offset": 55258,
+      "compressed_size": 1561837,
+      "state_size": 3833222,
+      "zstd_offsets": [
+        245,
+        55258
+      ],
+      "ram_base": 6754,
+      "vram_base": 2104796,
+      "media_paths": []
+    },
+    "text_state": {
+      "header_address": "0x801F9D44",
+      "base_address": "0x801BE9BC",
+      "limit": 64,
+      "count": 21,
+      "x": 150,
+      "y": 68,
+      "style": 0,
+      "D": 14,
+      "E": 16,
+      "F": 2,
+      "line_extra": 0,
+      "source_pointer": "0x80116D71"
+    },
+    "dat_top5": [
+      {
+        "name": "D/SD011.DAT",
+        "base": 847872,
+        "equal": 12288,
+        "size": 12288,
+        "ratio": 1.0
+      },
+      {
+        "name": "4/S4062.DAT",
+        "base": 849920,
+        "equal": 10786,
+        "size": 12288,
+        "ratio": 0.8777669270833334
+      },
+      {
+        "name": "5/S5026.DAT",
+        "base": 849920,
+        "equal": 10773,
+        "size": 12288,
+        "ratio": 0.876708984375
+      },
+      {
+        "name": "21/S2012.DAT",
+        "base": 849920,
+        "equal": 10758,
+        "size": 12288,
+        "ratio": 0.87548828125
+      },
+      {
+        "name": "1/S1031.DAT",
+        "base": 849920,
+        "equal": 10742,
+        "size": 12288,
+        "ratio": 0.8741861979166666
+      }
+    ],
+    "message": {
+      "file_pointer": 294257,
+      "site": 294232,
+      "payload_start": 294232,
+      "payload_end": 294257,
+      "external_slot": null,
+      "pointer_delta_to_end": 0,
+      "site_candidates": [
+        294232
+      ],
+      "composite_e2": true
+    },
+    "e2_segments": [
+      {
+        "command_offset": 294232,
+        "slot": 12,
+        "payload_start": 284160,
+        "payload_end": 284167,
+        "decoded": "몇무)<D4><E060>"
+      },
+      {
+        "command_offset": 294242,
+        "slot": 0,
+        "payload_start": 282624,
+        "payload_end": 282644,
+        "decoded": "<E00A>장)안라)않십)론황령)<B8>제<E060>"
+      }
+    ],
+    "expected_translation": "걱정 마. 불은 내가 다시 붙이고 올게.",
+    "disk_decoded": "몇무)<D4><E060>\n<E00A>장)안라)않십)론황령)<B8>제<E060>",
+    "packet_decoded": "몇무)<211>러\n<34>장)안라)않십)론황령\n)<183>제러",
+    "token_packet_physical_exact": true
+  },
+  {
+    "state": 6,
+    "header": {
+      "file_sha256": "80AE8E695AA47A96750BF87CB57F2EB64A1D39D844DFB8BF4C226B7E0AE506CF",
+      "file_size": 1587086,
+      "game_id": "V320C",
+      "thumb_offset": 245,
+      "state_offset": 75974,
+      "compressed_size": 1511112,
+      "state_size": 3816838,
+      "zstd_offsets": [
+        245,
+        75974
+      ],
+      "ram_base": 6754,
+      "vram_base": 2104796,
+      "media_paths": []
+    },
+    "text_state": {
+      "header_address": "0x801F0E18",
+      "base_address": "0x801F0798",
+      "limit": 32,
+      "count": 28,
+      "x": 242,
+      "y": 122,
+      "style": 0,
+      "D": 14,
+      "E": 16,
+      "F": 2,
+      "line_extra": 0,
+      "source_pointer": "0x00000000"
+    },
+    "dat_top5": [
+      {
+        "name": "1/S1051.DAT",
+        "base": 847872,
+        "equal": 12288,
+        "size": 12288,
+        "ratio": 1.0
+      },
+      {
+        "name": "1/S1031.DAT",
+        "base": 847872,
+        "equal": 11282,
+        "size": 12288,
+        "ratio": 0.9181315104166666
+      },
+      {
+        "name": "4/S4062.DAT",
+        "base": 847872,
+        "equal": 11275,
+        "size": 12288,
+        "ratio": 0.9175618489583334
+      },
+      {
+        "name": "21/S2012.DAT",
+        "base": 847872,
+        "equal": 11258,
+        "size": 12288,
+        "ratio": 0.9161783854166666
+      },
+      {
+        "name": "6/S6052.DAT",
+        "base": 847872,
+        "equal": 11253,
+        "size": 12288,
+        "ratio": 0.915771484375
+      }
+    ],
+    "message": {
+      "file_pointer": -847872,
+      "site": null,
+      "payload_start": null,
+      "payload_end": null,
+      "external_slot": null,
+      "pointer_delta_to_end": null,
+      "site_candidates": [],
+      "composite_e2": false
+    },
+    "e2_segments": [],
+    "expected_translation": null,
+    "disk_decoded": "",
+    "packet_decoded": "전라)전)장끼를)정끼하시겠습니까보\n예))))))아니요",
+    "token_packet_physical_exact": false
+  }
+]

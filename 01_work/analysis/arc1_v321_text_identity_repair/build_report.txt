@@ -1,0 +1,12 @@
+V321 TEST ONLY - 16px text identity repair
+base=arc1_v320c_hanme_official_beol_TEST_ONLY_81D215E1.zip
+base_sha256=81D215E1B1138E26707353D8982AE3139AE4F3900F6E832FEC83BB66A43AEA8D
+output=arc1_v321_text_identity_repair_TEST_ONLY_1B04A832.zip
+sha256=1B04A832B33BF061A1AAC8BEE1186B53D6FE977ACA5295C6B5A019CD0759DDFF
+delta=arc1_v321_text_identity_repair_TEST_ONLY_delta_from_v320c_60CD235B.zip
+delta_sha256=60CD235BBE7BD08A1A3FBD5271DB0236A6CC7EBF8458AE2B3083266261BC38E0
+changed_members=1/S1021.DAT,1/S1031.DAT,1/S1072.DAT,21/S2021.DAT,COMM.IMG,D/SD011.DAT,PSX.EXE
+repairs=말괄량이; 유품인; 엄마...; two D/SD011 composite E2 return lines
+new_glyph=괄 code AB physical170 official Hanme beol; prior AB dead-slot token reencoded as 몬(64)
+PSX=57 catalogued legacy 몬 text bytes AB->64 only; executable code/geometry unchanged
+runtime=PENDING user cold boot; TEST_ONLY

@@ -1,0 +1,9 @@
+v304 TEST ONLY - UI repacked at Japanese-confirmed addresses
+output=arc1_v304_ui_repack2_TEST_ONLY_E71D7641.zip
+sha256=E71D7641F14BB8D55AE42C40E33586111FF8ECDCBB7657057E74CD368B417282
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+lines=2,878  inline=327  moved to slot=2,011  truncated=341
+Korean glyphs=716  no cell=3
+UI strings applied=225  deferred=314
+handlers at 0x8018FCD0 / 0x8018FD28, hooks 0x8016BC84 / 0x8016BDC0
+runtime=PENDING user cold boot

@@ -2417,3 +2417,236 @@ check_build.py 통과. SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FB
 - 로드 화면의 줄이 촘촘해 보인다. 줄 간격 코드는 이번 7곳에 없었으므로 조각 적용 후 재확인이 필요하다. 구조체 순회(0x8016B198의 0x44 루프)와 혼동하지 말 것.
 - 편집 7곳 21바이트: U/V의 x12를 sll4로(각 3명령 -> 1명령 + nop 2), 리터럴 12를 16으로 5곳.
 - 건드리지 않은 것: x12 계산 중 구조체 주소 계산 5곳, 0x44 구조체 순회, 데이터에서 값을 읽는 패킷 폭/높이 11곳. 사전 조사로 25곳 중 18곳이 글자 크기와 무관함을 가려냈다.
+
+2026-08-18 | v298 12px 조합형 + E2 다중 슬롯 | 빌더 가드 6종 + MIPS 검산 + 고정 LBA ISO | STATIC PASS, RUNTIME PENDING.
+- 빌더 가드: 원본 글리프 996칸 픽셀 해시 불변(c6e90bf76b176d38), 모든 멤버 크기 불변, cave 245B 영 확인, 0x8016BC84 = jal 0x8015EA44, 0x8016BDC0 = j 0x8016BE44, 지연 슬롯 nop, 0x8016B63C = lbu v1,0xD(a2).
+- MIPS 검산: 커서 전진 helper 12워드를 디스어셈블해 확인했다. sltiu at,a0,1137 / beq 타겟 0x8018FDB4 / lhu a0 뒤 lhu v0로 로드 지연 충족 / jr ra. 초안에서 sltiu 소스가 zero였고 lhu a0 직후 addiu a0가 로드 지연을 위반해 둘 다 고쳤다.
+- 배치: 초성 123 + 중성종성 101 = 224조각, ASCII 재사용 23자, 공백 index 0. 판정 경계 1137.
+- 삽입: 인라인 14, 슬롯 이동 2,107(여러 슬롯 519), 잘림 558. 뒤 제어코드가 남는 대사 629건은 E4/E5/E7 앞에서 멈춰 보존했다.
+- verify_iso_layout: 506/506 LBA 유지, COMM 307/667/891 통과. XA 50 + STR 6 + license_data.dat FAIL은 도구의 Form2 읽기 한계이며 v298 미변경 파일이다.
+- 에뮬레이터는 실행하지 않았다. 사용자 콜드부팅 확인 항목: (1) 부팅과 오프닝 진입, (2) 대사의 한글이 초성·중성·종성이 겹쳐 한 글자로 보이는지, (3) 글자가 옆으로 밀리거나 겹쳐 뭉치지 않는지, (4) 미번역 일본어와 메뉴·숫자·아이콘이 원본 그대로인지.
+
+2026-08-18 | v309 실기 부분 확인 (사용자 스크린샷) | 대사 화면 '자유롭게' | 조합 렌더 PASS, 벌 선택 FAIL.
+- 초성·중성·종성이 한 칸에 겹쳐 그려지고 커서가 음절 단위로 전진했다. 조합 렌더와 커서 전진 helper가 실기에서 작동함을 확인했다.
+- 롭의 초성 ㄹ이 왼쪽 위로 쏠렸다. 받침 있는 가로형 중성에 세로형용 좁은 초성 벌이 배정된 것이며 글꼴 문제가 아니라 벌 규칙 오류다.
+
+2026-08-18 | v310 실측 벌 규칙 | 빌더 가드 6종 + 왕복 검증 + 고정 LBA ISO | STATIC PASS, RUNTIME PENDING.
+- 벌 규칙을 글꼴의 완성형 646음절과 대조해 도출했다. 초성 받침 있음 {A:5,B:6,C:6,D:7}, 중성 받침 유무만 (0/2), 종성 전부 1.
+- 조각 168개(초성 109 + 중성종성 59), ASCII 재사용 23자, 판정 경계 1179. 원본 글리프 996칸 픽셀 해시 불변(c6e90bf76b176d38).
+- 왕복 검증: 조각 168개 픽셀 전수 일치, 음절 646개 조립 전수 일치.
+- 삽입: 인라인 14, 슬롯 이동 2,107, 잘림 558로 v309와 동일.
+- 사용자 콜드부팅 확인 항목: (1) 롭·돌·몸처럼 받침 있는 ㅗ/ㅜ 글자의 초성이 위에 납작하게 깔리는지, (2) 받침 없는 글자가 v309와 같은지, (3) 진행과 메뉴에 회귀가 없는지.
+
+2026-08-18 | v310 실기 부분 확인 (사용자 스크린샷) | 대사 화면 '파렌시아' | 초성 ㅍ 가독 FAIL.
+- 파가 따로 보인다. Sans_8x4x4의 초성 ㅍ이 12px에서 ㄸ와 같은 모양이 되는 글꼴 문제이며 벌 규칙이나 조립 문제가 아니다.
+
+2026-08-18 | v311 초성 ㅍ 조각 교체 | 왕복 검증 + 고정 LBA ISO | STATIC PASS, RUNTIME PENDING.
+- 디스크 조각 168개 전수 일치, ㅍ 조각 중 Sans 모양 잔존 0개.
+- 디스크 픽셀로 조립한 '팔렌시아 평원의 파도 / 표시 프로 필요 파괴 / 따로 또 뜻 딸'에서 파와 따가 구분됨을 확인했다.
+- 사용자 콜드부팅 확인 항목: (1) 파·평·표·프·필 계열이 읽히는지, (2) 따·뜻·딸이 그대로인지, (3) v310 대비 다른 회귀가 없는지.
+
+2026-08-18 | v312 세이브 분석 (HASH-9E6E415F0358AAEF_1/_2) | RAM 상주 코드 + 슬롯 + 화면 | E2 정상, 배치 설계 FAIL.
+- 훅 세 곳(0x8016BC84 jal 0x8018FCD0, 0x8016BDC0 j 0x8018FD28, 0x8016B63C j 0x8018FD94)과 핸들러 코드가 디스크와 일치했고 슬롯 0~6에 우리 텍스트가 들어 있었다. E2 기계는 작동한다.
+- 화면 1: `약속대로 이 마을에서 내보내 / 줄 거지? 정말로 자유롭게 / 해 구`. 슬롯 0의 122바이트 경계에서 끊겼다.
+- 화면 2: `새해가 오면 파렌시아 성에서 / 나를 데리러 와. 그게 우 / 리 일족`. 1/S1011.DAT 0x4799E이며 원문은 2줄, 번역은 19칸 기준 3줄이 필요하다.
+- 두 결함 확정: 다중 슬롯 이어붙이기 미작동, 대사창 줄 수 초과분 소실.
+- 부수 확인: 후보 cave 중 0x80193B44/0x801A2074/0x801A7460은 두 장 모두 0이고 0x801A86E9(28B)와 0x801A7200(23B)은 게임이 쓴다.
+
+2026-08-18 | v314 줄 단위 배치 + 뱅크 B | 핸들러 검산 + 빌더 가드 + 산출물 검증 + 고정 LBA ISO | STATIC PASS, RUNTIME PENDING.
+- 핸들러 검산: 슬롯 107개가 조회·완료에서 동일 주소로 해석, 원본 예약 A9와 이름 조회 대역은 원본 함수로, 겹침 없음, cave 232/245B와 48/128B.
+- 빌더 가드: 원본 글리프 996칸 픽셀 해시 불변, 모든 멤버 크기 불변, 두 cave 영 확인, 훅 세 곳 원본 명령 확인.
+- 산출물: PSX.EXE 201바이트 차이, 훅이 새 주소를 가리킴, 뱅크 B가 13개 파일 285슬롯에 실제 기록됨.
+- 배치: 인라인 1,954줄 / 슬롯 3,634줄 / 잘림 684줄.
+- 사용자 콜드부팅 확인 항목: (1) 부팅, (2) `새해가 오면...규율이야.`가 끝까지 나오는지, (3) `약속대로...해 줄 거지?`가 끝까지 나오는지, (4) 대사가 창을 넘지 않는지, (5) 메뉴·전투·아이콘 회귀 없는지.
+
+2026-08-20 | `02_scripts/build_arc1_johab_font_poc.py` | 원본 기준 Pilgi 조합형 폰트 PoC | STATIC PASS, RUNTIME PENDING.
+- 입력 가드: 원본 `00_original/arc.zip` SHA-256 `AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD`, 업로드 폰트 ZIP `31084434DC45D383B21A8A3BE10A47869BB31E92D7C2C5AEEF91BD439D956A78`, `Pilgi_8x4x4.ttf` `30EC39649ECBE2DC1E716F0FF7C8793AA364CFB7D5AB37C4401FE0936E1417A9` 모두 PASS.
+- 첫 공백 가드: FAIL로 정상 중단. 패치 계보에서만 비워 쓴 `0x9C`를 원본 공백으로 가정한 오류를 검출했다. 원본에서 실제로 빈 byte `0x01`/index 0으로 수정하고 빈 비트플레인 가드를 추가했다.
+- 폰트 규칙: 공식 `generate_hangul_syllables.py` 원문 3,201바이트, SHA-256 `A498B4F7B7DC840AD637B093711ED6DB650EEEA96DAFA46728B4F30E730B3052`의 배열과 코드 상수를 대조했다. Pillow 12.3.0, FreeType 2.14.3 가드 PASS.
+- 아틀라스: 초성 13개/중성·종성 16개 총 29플레인 전부 원본에서 blank, 보수적 참조 892개 밖, 509개 세이브 상태에서 text read > 0 및 non-text read = 0. 이웃 비트플레인 불변, 원본 잉크 996플레인 SHA-256 `C6E90BF76B176D384561248A95D7929F9D26D8B9B985BE04A3BFFBA9B6876D7C` 불변.
+- MIPS: helper 13워드/52바이트를 Capstone과 독립 워드 목록으로 대조했다. `addiu at,a0,-1125` + `sltiu at,at,16`, load delay와 branch delay PASS, `t0` 사용 0건. 원본 EXE 전역 스캔에서 덮은 `0x8016B63C/640`으로의 직접 진입 0건이고, 보존한 `0x8016B660` 조기 반환 진입 1건은 그대로 유지된다.
+- Expected Write: 변경 멤버 정확히 3개, 크기 불변. 실제 차이는 `1/S1071.DAT` 135바이트, `COMM.IMG` 196바이트, `PSX.EXE` 43바이트이며 허용 범위 밖 쓰기 0건. 진단 payload 35/27/29바이트, 독립 파싱에서 공백은 모두 standalone `0x01`, 남는 꼬리는 모두 `0x00`.
+- 재현성: 같은 환경에서 연속 두 빌드가 전체 ZIP `5EE7652BB7A6865436E1A9748379B85AADEC2703CF1801E8E9449A95C20249D7`, 3멤버 패치 ZIP `4701717C17EA834B262FFC3684F46B9B19A95DA15D5AA8FF8232EDDAAF4E4596`으로 일치했다. zlib compile/runtime 1.3.1.zlib-ng, level 1을 매니페스트에 기록했다.
+- 첫 ISO 검증 입력: 508멤버 전체 ZIP을 비교 대상으로 주어 XA/STR Form2와 `license_data.dat`에서 FAIL. LBA 506/506과 COMM 307/667/891은 이미 PASS였으며, 비교 도구에 맞지 않는 입력이 원인이었다. 변경 3멤버만 든 patch-only ZIP으로 다시 패키징·검증했다.
+- 최종 ISO: `arc1_original_layout.xml`, BIN SHA-256 `5B50FD92A4B2462025F0CF2475F6A3DA82109D06C4B5E923956B68AB900357EA`. 506/506 데이터 LBA, COMM.DAT 307, COMM.IMG 667, COMM.SND 891, PSX.EXE LBA 23, 패치 멤버 3/3 디스크 바이트 일치 모두 PASS.
+- 에뮬레이터는 실행하지 않았다. 사용자 콜드부팅 확인 항목: (1) 오프닝과 첫 대화 진입, (2) 세 진단문이 한 음절 한 칸으로 조합되는지, (3) 특히 `출/홀/줄`과 `각/객/걱/곡`의 받침·획이 온전한지, (4) 글자가 옆으로 밀리거나 한 덩어리로 겹치지 않는지, (5) 타이틀·메뉴·전투·세계지도 그래픽 회귀가 없는지. 세이브스테이트를 불러오지 말고 완전 종료 후 CUE를 새로 열어 확인한다.
+
+2026-08-21 | 1차 Pilgi 조합형 PoC 사용자 상태저장 2개 분석 | 마지막 zstd 프레임·PS1 RAM·스크립트·SPRT 메타데이터 직접 대조 | 조합형 렌더러 PASS, 스크립트 흐름 FAIL.
+- 입력: `HASH-5BE24E86615D3D8A_1.sav` SHA-256 `61B556B1369B2CAB729A8C59445C9377E01C80C2B7723E22563A883C74F89384`, `_2.sav` SHA-256 `16D866192EE387A7361DF0937FD0CAF396F08C6833B527E180C6477553EAA653`.
+- 두 상태의 마지막 프레임은 3,816,838바이트이고 구조적으로 확인한 PS1 RAM 시작은 `0x1A62`다. 훅 `0x8016B63C`, helper `0x8018FCD0` 52바이트가 1차 디스크와 일치했다.
+- 상태 1의 `1/S1071.DAT`는 `RAM=file+0xCF000`으로 정확히 적재돼 있었다. `0x801BE9BC`의 52바이트 stride 패킷 20개를 전수 해독한 결과 `출 홀 줄 하 허 호`의 중성→종성→초성이 같은 X에 겹치고 초성과 일반 공백에서만 X가 12씩 증가했다. CLUT plane 0~3, U/V, physical index가 manifest와 모두 일치했다.
+- 상태 1의 인라인 포인터 `0x801F9D58`은 `0x801168F9`, 즉 첫 본문 payload 35바이트 뒤에 빌더가 넣은 첫 조기 `0x00`을 가리켰다. 이는 bible의 확정 실패 방식인 본문 중간 `0x00` 종료를 재도입한 것이다.
+- 상태 2에서는 `0x80116800..0x80117000`이 전부 0이고 장면 DAT가 적재돼 있지 않았다. 텍스트 객체 X/Y/ordinal도 0으로 리셋됐지만 포인터와 패킷은 상태 1 값을 남겼다. 따라서 두 번째 대사 자연 진행 상태가 아니라 강제 전환 뒤 별도 문맥이며, 둘째·셋째 진단문 결과를 증명하지 않는다.
+- 판정: 폰트 조각, 조합 순서, CLUT 평면, X 전진 helper는 실기 통과했다. 1차 ZIP/BIN은 조기 `0x00`으로 흐름에 실패했으므로 기준점으로 채택하지 않는다.
+
+2026-08-21 | Pilgi 조합형 FLOWFIX 2차 빌드·패키징 | 빌더 2회 재실행, 독립 ZIP/바이트/MIPS 대조, mkpsxiso 2.30, verify_iso_layout.py | STATIC PASS, RUNTIME PENDING.
+- 세 본문은 39/41/55바이트 정확히 일치, 내부 `0x00` 0건, 원본 종료·뒤 8바이트 3/3 보존, `E6 01` 개수 2/1/2다. 글리프 패킷은 19/21/29로 객체 한도 64 미만이다. safe filler는 index 1141/code `E0 9D`이며 둘째 6개, 셋째 9개다.
+- 원본 대비 변경 멤버는 `1/S1071.DAT`, `COMM.IMG`, `PSX.EXE` 정확히 3개이고 크기는 모두 불변이다. 1차 빌드와 비교하면 `COMM.IMG`는 완전 동일하고 PSX.EXE는 helper의 `sltiu at,at,16`→`17` 즉 file offset `0x754D8` 한 바이트만 다르다.
+- full ZIP SHA-256 `4891ECBD68C6F1724470729C09BCA775C3119A56AC840936514113A13FFB73BC`, patch-only ZIP SHA-256 `566D5F8646F387BF7581EF72B76960C753099B26A010AF247E5A05A47BCA12E5`. 두 번의 독립 실행에서 동일했다.
+- `JOHAB_PILGI_FLOWFIX_POC.bin` SHA-256 `E48E056FF6DD2FC96006CDD9E4B134992559D25548108F891A1BEDB88A00694F`, CUE SHA-256 `FC77EB9B6DF3C99B0689EBD0120F5E7EE1DFAD88ED506D6261907C43FE1B8D5E`. original 레이아웃에서 507파일, 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 23, 패치 멤버 3/3 PASS.
+- 기존 메모리카드를 `JOHAB_PILGI_FLOWFIX_POC_1.mcd`로 바이트 동일 복사했다. SHA-256 `254116939A46340692D4F64C05A3583D000CAE0C961EB2AD378F0DA17947AC68`.
+- 남은 확인: DuckStation을 완전히 종료하고 새 CUE를 콜드부팅하여 첫 대사에서 버튼으로 자연 진행한다. 이전 상태저장을 불러오면 1차 EXE RAM과 조기 종료 상태까지 복원되므로 검증으로 인정하지 않는다. 세 진단문 표시, 대사 진행, 장면 이탈 없음과 인접 그래픽을 확인한다.
+
+2026-08-21 | Pilgi 16px PoC 1차 래퍼 `A4D91241`/`4CE856CA` | 빌드 후 Codex 수동 MIPS 디스어셈블 | STATIC FAIL, DO NOT USE.
+- 1차 빌더는 ZIP을 만들었지만 래퍼에서 R3000 load 결과를 바로 다음 명령이 읽는 경우가 8곳 있었다. `lhu→sw`, `lw state→lhu`, `lhu ordinal→addiu`, `lw packet base→addu`, `lw descriptor→sh`, `lw flag→branch`, `lhu X→addiu`, `lw ra→jr`다.
+- 에뮬레이터 실행과 BIN/CUE 패키징 전에 발견했다. 두 ZIP은 삭제하지 않고 `arc1_johab_font_16px_poc_pilgi_DO_NOT_USE_LOAD_DELAY_A4D91241.zip`, `...DO_NOT_USE_LOAD_DELAY_patch_4CE856CA.zip`로 이름을 바꿔 오사용을 막았다.
+
+2026-08-21 | Pilgi 16px PoC 2차 래퍼 `88FD99F7`/`8F66E748` | 하위 에이전트 독립 상태 수명 감사 | STATIC FAIL, DO NOT USE.
+- load-delay는 고쳤지만 커스텀 첫 조각에서 상태 `+0x0D/+0x0E`를 14/16으로 바꾼 뒤 복원하지 않았다. 다음 문자열 시작 루틴은 ordinal·X/Y만 초기화하므로 같은 객체의 후속 일본어도 W14/H16/advance14를 상속할 수 있다.
+- BIN/CUE까지 만들었으나 실기 전달 전에 발견했다. ZIP은 `...DO_NOT_USE_STATE_LEAK_88FD99F7.zip`, `...DO_NOT_USE_STATE_LEAK_patch_8F66E748.zip`로 격리했고 BIN은 다음 최종판으로 덮었다.
+
+2026-08-21 | `build_arc1_johab_font_16px_poc.py` 최종 래퍼 | py_compile, 3회 재빌드, Capstone 디스어셈블, 독립 워드 검사 | STATIC PASS, RUNTIME PENDING.
+- 래퍼는 49워드/196바이트다. load 뒤에 독립 명령을 두었고 빌더 자체의 R3000 워드 디코더와 별도 검사 모두 즉시 load-use 0건이다. 분기 타겟 2곳, 비링크 jump 2곳, 원본 렌더러 JAL 1곳, delay slot을 고정 검증했다.
+- 상태 폭·높이는 쓰지 않는다. 원본 렌더러의 +12 뒤 초성·blank는 +2, 나머지는 -12로 보정해 순전진 14/0을 만들고 새 패킷만 W/H16으로 덮는다. 자동 워드 검사와 독립 바이너리 검사에서 상태 `+0x0D/+0x0E` 쓰기 0건이다.
+- 두 외부 호출은 caller RA를 만든 뒤 래퍼로 진입한다. 비진단 코드는 RA를 바꾸지 않고 원본 렌더러로 tail jump한다. 진단 코드는 24바이트 스택 프레임에 caller RA와 상태를 보존하고 원본 렌더러 호출 후 복구한다. 공용 `0x8016B63C` 꼬리는 원본 바이트 그대로다.
+- 최종 full/patch 해시는 각각 `D941D1BE9E24F90DA2527BC7CD5B082B1127FBD8348E065A1F17F5FCEF122D58`, `385726431743BA86EC05538E5EF99C4CC800EE9F2ED132439CA1B531FB772AAE`이며 세 실행에서 동일했다.
+
+2026-08-21 | Pilgi 16px 최종 산출물·디스크 | 독립 ZIP 비교, plane/U/V 대조, 흐름 가드, mkpsxiso 2.30, verify_iso_layout.py | STATIC PASS, RUNTIME PENDING.
+- 원본 507파일과 전체 ZIP을 독립 비교했다. 변경은 `1/S1071.DAT`, `COMM.IMG`, `PSX.EXE` 정확히 3개이고 크기는 모두 불변이며 patch-only ZIP 3멤버와 바이트 단위로 일치한다. ZIP CRC 검사도 2개 모두 PASS다.
+- 실제 차이 바이트는 DAT 123, COMM 443, EXE 211이다. 좌표표 31개는 `U+16/V+16≤256`, `code%4==plane`, 같은 plane 16x16 비겹침을 통과했다. 원본 잉크 996 plane 해시와 이웃 plane은 불변이다.
+- S1071 세 본문은 내부 zero 0건, 종료+뒤 8바이트 3/3 원본 일치, 줄바꿈 2/1/2, 패킷 19/20/27이다. 로컬 16px preview에서 `각/객/걱`의 y=15 픽셀이 존재하고 12px 절단선 아래 4행이 보이는 것을 확인했다. 게임이 H=16 패킷을 실제로 표시하는지는 실기 대기다.
+- `JOHAB16P.bin` SHA-256 `B34236F51E7D5FBA0CAB817A37AEF01EC77DF32784A9629A0BCDDF6138E33644`, CUE SHA-256 `79240A73491C2B16F9D7F741DCD833748E77FE32B0C1DB01A50D6BCAC5F5694A`. original 레이아웃에서 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 23, 패치 3/3 PASS다.
+- 메모리카드는 DuckStation 폴더의 `JOHAB16P_1.mcd`로 복사됐고 SHA-256은 `254116939A46340692D4F64C05A3583D000CAE0C961EB2AD378F0DA17947AC68`다.
+- 실기 절차: 이전 savestate를 불러오지 말고 `JOHAB16P.cue`를 콜드부팅한다. 세 문장을 버튼으로 자연 진행하면서 (1) `출/홀/줄` 꼬리, (2) `각/객/걱` 최하단 2행, (3) 가로 14px 밀도, (4) 원본 줄 pitch 14에서 16px 글자 두 줄의 2px 겹침, (5) 다음 일본어·이름표·UI가 12px로 돌아오는지, (6) 장면 이탈/정지를 확인한다.
+
+2026-08-21 | Pilgi 16px 최종 PoC 사용자 상태저장 3개 | DUCCU 해제, RAM/VRAM·S1071·패킷·두 프레임버퍼 전수 대조 | POC RUNTIME PASS, 생산 통합 PENDING.
+- 입력 SHA-256: `_1` `27182578A49EAF0509C4897D3D509FE9CDC91E3F6A4ABDFECAB85B128B4F98EF`, `_2` `57918A43EFB8036F4FF717250D41AA836ACA7E33E0641FF94F558122AE5AB9D2`, `_3` `EE4C64BD60BCE80256F9D75D7D28DB12DCA823BF9D891677DDCC433B2372108C`.
+- 세 상태는 `JOHAB16P.cue`/BIN `B34236F5...E33644`의 최종 훅·196바이트 래퍼·62바이트 좌표표와 모두 일치했다. 해제 크기 3,816,838, RAM `0x1A62`, VRAM `0x201DDC`다.
+- S1071 진단문 바이트는 3/3 디스크와 일치했고 파서 커서는 각각 원래 종료 `0x478FD`, `0x4795B`, `0x479C5`에 도달했다. 1차 PoC의 조기 `0x00`이나 장면 미적재/낡은 포인터 패턴은 없다.
+- 텍스트 객체 `0x801F9D44`의 ordinal은 19/20/27로 manifest와 일치했다. 논리 코드·U/V·plane은 66/66 일치, 커스텀 57/57은 W/H 16/16, 원본 화자명·leading blank 9/9는 W/H 12/12다. 상태 D/E는 종료 뒤에도 12/12라 2차 폐기 빌드의 상태 누수는 재발하지 않았다.
+- 두 VRAM 프레임버퍼에서 기대 백색 픽셀은 화자명 포함 462/462, 236/236, 426/426이고 시험 bbox의 유령 백색 픽셀은 0이다. `각/객/걱`의 source y=15 픽셀 6개는 양쪽 버퍼에서 6/6 모두 `0x7FFF`였다. H=16 경로와 하단 미절단을 실기로 확인했다.
+- 줄 pitch는 14라 16px bbox가 2px 겹친다. 상태1에서 실제 잉크 2px `(81,64),(82,64)`가 합쳐졌고 상태2/3은 0px였다. 이번 표본은 읽히지만 본 대본 확대 전 해결 또는 수용 판단이 필요하다.
+- 세 장은 모두 진단 site 종료 시점이라 마지막 한글 뒤 일반 일본어 12px 복귀를 한 프레임에서 직접 관찰하지 못했다. 상태3 화자명 12px, 모든 종료 상태 D/E 12/12, 래퍼의 D/E store 0건은 강한 간접 근거다.
+- 상세 재현 기록: `01_work/analysis/johab_font_16px_poc/runtime_savestate_validation.txt`. 이 결과는 대화 전용 PoC의 성공이며 메뉴·전투·세계지도·대량 대본 검증은 아니다. `bible_current.txt`의 v197 배포 기준은 변경하지 않는다.
+
+2026-08-21 | 16px/E2/UI EXE cave 소유권 감사 | DuckStation 657상태 + 알려진 ZIP 391개 영역 해시 대조 | STATIC PASS, OWNERSHIP PROBE REQUIRED.
+- 새 읽기 전용 도구 `02_scripts/audit_arc1_exe_cave_states.py`는 마지막 zstd 상태 프레임의 구조적 Bus RAM을 읽고 D941의 두 대화 훅, 196바이트 래퍼, 62바이트 좌표표가 전부 같은 상태만 `reference_D941`로 분류한다. 657/657 상태를 읽었고 실패는 0, D941 귀속은 4상태다.
+- `0x801A2074..0x801A2304` 후보는 D941 4/4에서 656바이트 전부 reference와 같고 0이었다. 전체 657상태에서는 zero 114, nonzero 543이며 비영 해시 45종 중 37종/449상태가 보관 중인 빌드 PSX와 직접 일치했다. 나머지에는 여러 빌드에서 반복되는 P6 형태 코드가 포함되므로 '런타임이 원본 zero를 덮었다'고 단정하지 않았다.
+- 기존 E2/래퍼 cave `0x8018FCD0..0x8018FDC5`는 D941 래퍼와 E2 핸들러가 동시에 쓸 수 없고, UI/좌표표 cave `0x801A7460..0x801A7860`도 D941 좌표표와 v0.41-v42 UI 코드가 겹친다. 결과 CSV/보고서는 `01_work/analysis/johab16_integration/exe_cave_state_audit.csv`, `exe_cave_build_hashes.csv`, `exe_cave_state_audit.txt`다.
+
+2026-08-21 | Pilgi 16px 래퍼+좌표표 재배치 PoC | 원본 D941 재현, 2회 재빌드, 독립 ZIP/EXE diff, original-layout ISO | STATIC PASS, RUNTIME PENDING.
+- 첫 실행은 검증기의 기존 절대 분기 주소 기대 때문에 출력 전 정상 중단됐다. 기대 주소를 래퍼 기준 상대값으로 바꾼 뒤 원래 빌더를 재실행해 full `D941D1BE...`, patch `38572643...`가 그대로 재현됐다.
+- 새 빌드는 래퍼를 `0x801A2074..0x801A2138`, 좌표표를 `0x801A2138..0x801A2176`에 연속 배치한다. 후보 전체 656바이트에서 보이는 apparent branch 한 건은 `0x8019A978`의 데이터 워드 `0x1E1E1E1E`가 계산한 `0x801A21F4`이며 source/word/target을 모두 고정했다. 다른 incoming edge는 0건이다.
+- D941과 재배치 ZIP을 독립 비교했다. PSX.EXE 밖 532멤버가 동일하고 EXE 차이 414바이트는 기존 래퍼/표, 새 래퍼/표, 두 JAL 워드 범위 안에만 있다. 기존 E2 cave 245B와 UI cave 1,024B는 원본과 완전 동일하다. 새 cave의 사용 끝 `0x801A2176` 뒤 398B도 원본과 동일하다.
+- 두 빌드의 full/patch SHA-256은 `798809489438B0081BA795F83D56322E433ABF40CA8600DD3F38E9FEB8A61064` / `5DD8D608CD3B79669793250084B2F8CAA5E7CD1AA8F66EF6C22F354B5DD5980D`로 반복 일치했다.
+- `J16RELOC.bin` SHA-256 `FC40EF1C5675E191E58F373B0F476BE0808410A4A93EE577857030F1585FEA52`. original 레이아웃에서 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 23, 패치 3/3 PASS다.
+- 실기 게이트: savestate를 불러오지 않고 `J16RELOC.cue` 콜드부팅. 세 S1071 진단문이 D941과 동일하고 자연 진행하는지, 장면 전환 뒤에도 한글이 유지되는지 확인한다. 통과 전에는 이 cave를 E2 결합 기준으로 승격하지 않는다.
+
+2026-08-21 | Pilgi 16px + E2 bank A 단일 스팬 결합 PoC | 빌더 2회, 별도 ZIP/바이트 검사, original-layout ISO | STATIC PASS, RUNTIME PENDING.
+- 사용자는 선행 `J16RELOC` 화면이 D941과 같다고 보고했다. 주소만 옮긴 빌드이므로 시각적으로 같은 것이 기대 결과지만, 별도 상태저장이나 장면 전환 증거가 없어 이 보고만으로 cave 전 수명을 확정하지 않았다.
+- 시험 스팬은 `1/S1011.DAT 0x4799E..0x479A4` 7바이트다. 출력은 `E2 81` 뒤 원본 5바이트를 그대로 보존하고 `0x479A5`의 원본 `E6 01`, `0x479C8`의 종료 `00`을 바꾸지 않는다.
+- bank A slot 0은 `0x45000`이며 payload `가 나 고 구 과 워`는 34바이트/17패킷, 0x22의 종료 `00`, 0x7F의 skip metadata 5다. 11개 전진 패킷 × 14px = 154px로 측정 창 폭 168px 안이다.
+- E2 lookup 84바이트 SHA-256 `A2415869...23351`, completion 108바이트 SHA-256 `D2DEC5B3...2A9CB`를 고정하고 두 핸들러의 R3000 즉시 load-use가 0건인지 검사했다. 훅은 `0x8016BC84 -> 0x8018FCD0`, `0x8016BDC0 -> 0x8018FD28`이다.
+- 빌더와 별도 검사 모두 재배치판 대비 변경 멤버가 `PSX.EXE`, `1/S1011.DAT` 두 개뿐임을 확인했다. 독립 실제 차이는 PSX 137바이트, S1011 37바이트이며 모두 선언한 cave·훅·slot 0·인라인 2바이트 안이다.
+- full/patch SHA-256은 `2C2F4B0FC861FADDEEEA7C04F4BC28442EB549CE077208FEE9979EAA6B5782B8` / `EA7FE646F3C4F091E88F222C285CA1638F23408CDC2BD0420E5E7741AB943072`로 두 번 일치했다.
+- `J16E2A.bin` SHA-256 `2043AF4EFCE12454FE6352EBDBF7A84D92369629884B78701E364577F3E919DA`. `verify_iso_layout.py` 결과 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 23, 패치 4/4 PASS다.
+- 실기 판정: 상태저장을 불러오지 않고 `J16E2A.cue`를 콜드부팅한다. S1011 해당 대사의 첫 줄에 `가 나 고 구 과 워`가 전부 보이고, 원본 일본어 둘째 줄과 다음 대사로 자연 진행하며 멈춤·잔여 일본어 꼬리·그래픽 손상이 없는지 확인한다.
+
+2026-08-21 | v318 v241 광범위 16px 복구판 | 해시 고정 v241 재빌드, 원본 명령 복원, expected-write diff, 2회 재현, mkpsxiso v104 레이아웃, verify_iso_layout | STATIC PASS, RUNTIME PENDING.
+- 입력은 `arc1_v241_halfwidth_TEST_ONLY_CEC05368.zip` SHA-256 `CEC0536802239A2B54E383D3C53CF9D648703A25D70F633703FF3E1F900113E1`이다. 이 164멤버 패치 아카이브의 DAT/UI/E2/COMM.IMG는 전부 그대로 보존했다.
+- `PSX.EXE`에서 세 쌍만 복원했다: `0x8011C860` cache wrapper -> stock DrawOT, `0x8016B5D8` cache-row U helper -> stock packet tail, `0x8016B764` cache high-page renderer -> stock renderer prologue. v241 대비 실제 변경은 14바이트이고 허용 범위 밖 차이는 0건이다.
+- 실행파일 text의 cache-upload JAL `0x0C07FD9A`는 복원 뒤 0건이다. 출력 recovery ZIP SHA-256 `50B30D67FC5856B548A986EB17470AF179EC0E3CFAF595F2291C225F1EF8DFBF`, PSX-only delta `F71EB9224FC515262F9D5CC327680FF71F8A053AD46EAFCC074D417A09BF1B90`, PSX.EXE `79701FDD5C4D8C16EA5AE6E583F6825D585A559F601277C673C13E6E859DFDFA`다. 두 빌드가 동일했다.
+- `V318.bin` SHA-256 `BF20848AE66C50D37716390D3C42F90479A38D608DE20ED8E27F97E5CB78DAF0`, CUE `2020F380AADF20B5B88ACAB2094995D437A78F0E5B5E9E1A5366700348FF46D2`. v104 레이아웃에서 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 164/164 PASS다.
+- 실기 판정은 (1) 첨부 v241 화면처럼 첫 촌장 대사가 전체 한국어 3줄로 나오는지, (2) 다음 대사·선택지·메뉴·전투 UI가 v241보다 후퇴하지 않는지, (3) 세계지도 진입/이탈에서 그래픽과 글자가 손상되지 않는지다. 미재인코딩 E9/EA 경로의 빈 글자는 별도 잔존 위험으로 기록한다.
+
+2026-08-24 | v319 V318 광범위 Pilgi16 통합판 | 11,172음절 전수 역합성, geometry/Expected Write 독립 검사, 2회 재현, mkpsxiso v104 레이아웃, 사용자 화면 | STATIC PASS, PARTIAL RUNTIME OBSERVATION, FULL RUNTIME PENDING.
+- 입력 V318 ZIP SHA-256 `50B30D67FC5856B548A986EB17470AF179EC0E3CFAF595F2291C225F1EF8DFBF`, v240/v241 아틀라스 SHA-256과 업로드 폰트 ZIP/TTF 해시가 모두 가드를 통과했다. `pieces_1bpp.bin`은 11,520바이트(360조각×16행×2바이트), SHA-256 `409ABA72F4BA2282AA5C4E4982A9EEA16FBD14FB0413A40E151537A6653E2904`다.
+- v240 닫힌 벌 규칙으로 U+AC00..U+D7A3 11,172음절을 전수 합성했다. 고유 비트맵 11,172, 모호성 0. 기존 자료 식별 554칸(한글 교집합 532 + 비한글 22), 조각 사전 식별 632칸, 교집합 불일치 0, 신규 복원 100칸으로 최종 아틀라스는 잉크 654/654 식별, 미식별 0이다. `는` index 5, `들` index 9를 포함한 최빈 1바이트 45칸도 복원했다.
+- 독립 COMM 검사 PASS: `atlas_mapping.csv` 728행은 `legacy+piece 532 / piece recovered 100 / legacy non-Hangul 22 / blank 74`; 654개 모든 출력 플레인이 해당 Unicode의 Pilgi 16px raster와 pixel exact다. 선택되지 않은 플레인·아틀라스 오른쪽·y>=208은 V318과 같다.
+- 독립 EXE 검사 PASS: V318 대비 차이는 허용한 16워드 안 실제 39바이트뿐이다. 패킷 블록 `B5CC..B5E0`은 `lbu D / lbu F / lbu E / addu / sb W / sb H`이고 즉시 load-use 0이다. 산술 결과는 W/H 16/16, cursor 14, wrap 14, line 16, half-width 8이다. 편집 블록 중간 분기 진입 0, 캐시 업로드 JAL `0x0C07FD9A` 0건이다.
+- ZIP 격리 PASS: V318의 164멤버 중 `COMM.IMG`, `PSX.EXE`만 바뀌고 162개는 동일하다. 두 번 재빌드한 full/delta SHA-256은 `07418C0024C4059C550E1584FC29340C6B97D9CF9B9DE778CA1FE38ACCB74A49` / `5884C48B619C0EAC32FDB9F8CDFD3838E344F0929678BF1B5AB9DC0F17DD3983`으로 일치했다.
+- 시험 디스크 `V319R.bin` SHA-256 `99FF3CA7DAEF95B6B55F56E8A49D10917515ED4DAAC5A1345897D6B65450C728`, CUE SHA-256 `5365C38C9CD3F742C097DD498EA2116F6E0C504A621713986A0FAC547A4C37E8`. 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 멤버 164/164 PASS. `V319_1.mcd`를 `V319R_1.mcd`로 복사했다.
+- 앞선 중간 V319 화면에서 첫 촌장 대사, 다음 촌장 대사와 S1011 대사가 한글로 진행되는 것은 관찰됐다. 사용자가 지적한 `들/는`은 중간본이 남겨 둔 Hanme 미식별 100칸에 포함됐고 최종 `07418C00`에서는 두 칸 모두 Unicode를 확정해 같은 임시 Pilgi raster로 다시 그렸다. 이것은 코드 정체와 혼합 폰트를 해결한 것이며, Pilgi 완성형 자체의 초성 위치가 마음에 들지 않는 문제까지 해결했다는 뜻은 아니다.
+- 화면 3의 기대 문장은 `촌장: 아아, 물론이지. 하지만 그 전에 시온산 정상에 있는 봉인의 불꽃을...`, 화면 4는 `그런 걸 신경 쓰고 있을 때가 아니야`로 번역 자료와 의미가 일치했다. 이상해 보인 직접 원인은 자동 접기가 `있는→있/는`, `있을→있/을`로 어절을 가른 것이며 번역문 오염으로 판정하지 않았다.
+- 남은 실기 관문: `V319R.cue` 콜드부팅 후 (1) `는/들/을/있` 자형과 전체 폰트 일관성, (2) 인접 글자 2px 겹침, (3) 대사·화자·선택지, (4) 메뉴/불러오기/UI, (5) 전투, (6) 세계지도 진입·이탈을 확인한다. Pilgi는 임시 검증 폰트이고 어절 단위 재조판과 최종 폰트 선택은 별도 후속이다.
+
+2026-08-24 | V319R 사용자 상태저장 5개 오표시 원인 감사 | DUCCU RAM/VRAM·디스크 DAT·상주 디코더·패킷 역해독 | RUNTIME FAIL 원인 확정
+- 입력은 `HASH-8003DE7A93BCB2E9_1..5.sav`이며 5개 모두 V319R 코드/COMM/미디어에 귀속됐다. 자연 진행 중 S1071과 S1011의 다섯 대사로 확인됐다.
+- 디스크와 RAM의 원문 의미는 정상인데 화면 패킷에서 130자 중 한글 9자가 결정적으로 바뀌었다: `마→뜨`, `전→료`, `오→빼` 2회, `령→증`, `경→탈`, `때→웠`, `파→팔`, `데→잡`. `론`은 아틀라스 매핑이 없어 탈락했다. 번역문 오염이나 무작위 VRAM 손상이 아니다.
+- V318은 pre-DrawOT 캐시 업로드 JAL만 끄고 상주 디코더 `0x801FF348`의 48개 범위 분류를 남겼다. direct index 68/78/69/80/103/118/128이 죽은 캐시 슬롯으로 들어가고, 16px/15열 좌표에서 V가 8비트로 감겨 physical 485/492/493/483/494/495/490을 읽는 흐름이 상태 패킷과 정확히 일치했다.
+- Pilgi는 16px 최종 글꼴로 승인되지 않았다. 사용자가 `들/는`의 초성 위치와 전체 외형을 거부했으므로 다음 빌드는 V318 Hanme로 롤백한다.
+
+2026-08-24 | v320 Hanme 정적 복구 통합판 | 2회 결정론 빌드, 바이너리 독립 역검사, 다섯 문장 해독, check_build, mkpsxiso/LBA | STATIC PASS, LAYOUT DEBT FAIL, RUNTIME PENDING
+- 빌더 `02_scripts/build_arc1_v320_hanme_static_recovery.py`는 고정 입력 해시, 8,448 text region fingerprint, 97,080 known 발생, 35,032 unknown 보존, 제어 5,634, 문자/폭 750조합을 검증했다. 같은 실행에서 full/delta ZIP이 각각 `96626CCB445BD6F1F249FCB21EA15CE2EAD6B94BE95DED3DC366B38BE9D234F3` / `C07FBD488CC28D6D94D1FEB9701557132507154B23CEEF0E729B0C958CDD551E`로 두 번 동일했다.
+- 독립 ZIP 검사 PASS: 164개 topology/크기 보존, V319R 대비 변경 162개, 디코더 source word `0x8EE84=1500002F`, `0x8EE8C=0805ACFC`, `0x8EE90=00000000`, 반각 비교 word `0x340900A0`. E9/EA unpacker는 `0x801A780C/7810 = 3C0D801A/35AD7520`으로 `0x801A7520` packed table을 읽는다.
+- Hanme 롤백 검사 PASS: 신규 allocation CSV의 92 plane과 실제 V318 COMM 대비 차이 plane 집합이 정확히 같고, 나머지 저페이지 1,828 plane과 x>=240 영역은 V318과 동일하다. Pilgi plane을 혼합 보존하지 않았다.
+- E9/EA 정적화 검사 PASS: lookup-derived 399 + voted 643의 유효 지도 892, 같은 의미 슬롯 정적 alias 176, 신규 1바이트 plane 7, 신규 2바이트 plane 85. 미해석 direct 34,984발생은 stock decoder를 타며, 미해석 E9/EA 48발생 중 동적 cache target은 0건이다.
+- 최종 ZIP의 실제 멤버에서 다섯 문장을 다시 해독해 모두 PASS: `약속대로 이 마을에서 … 정말로 자유롭게 해 줄 거지?`, `하지만 그 전에 … 봉인의 불꽃을...`, `3천 년이나 계속 타오르는 정령의 산`, `그런 걸 신경 쓰고 있을 때가 아니야!`, `나를 데리러 와. 그게 우리 일족의 규율이야.` 다섯 본문 공백은 모두 code `A1`, physical 160이며 `DE FA` 2바이트 공백은 0건이다.
+- `check_build.py` 결과는 FAIL을 유지한다: 선택지 폭 초과 75곳, S1023 선택지 마커 2곳, 3줄 창을 넘는 본문 18곳. 이는 V320의 캐시 오매핑 수정과 별개의 광범위 16px 재조판 부채이며 배포 가능 판정이 아니다.
+- `V320R.bin` SHA-256 `5F382275807F904039AE0E59EE55721B752725FC4ED6837BB79DB893EB948D7C`, `V320R.cue` SHA-256 `A0BB45416ECC50D30C1B6C7F71372FE265CA40DCF0E7DC7FB9B69324584DD250`. 원본 대비 데이터 LBA 506/506, COMM 307/667/891, V320 ZIP 멤버 164/164가 실제 BIN과 byte exact로 PASS했다.
+- 실기 순서: V320R 콜드부팅 후 위 다섯 장면에서 (1) 오표시 9자와 `론` 복구, (2) Hanme 외형, (3) 공백 6px, (4) W/H 16·advance 14·line 16, (5) 대사 진행을 먼저 본다. 이어 화자/선택지, 메뉴/UI, 전투, 세계지도 진입·이탈을 확인한다. 14/16의 2px 겹침과 자동 접기/재조판은 별도 관찰한다.
+
+2026-08-24 | V320R 검은 화면/부팅 실패 | raw sector·ISO·EXE·DuckStation resume CPU 대조 | RUNTIME FAIL, 원인 확정, DO NOT USE.
+- 사용자 관찰은 BIOS 화면도 나오지 않는 검은 화면이다. 로컬 DuckStation 설정은 `FastForwardBoot=true`, `PatchFastBoot=true`라 BIOS 로고 미표시는 디스크 미인식 증거가 아니다. `playtime.dat`는 V320R hash `HASH-559E21EE41F8CDB3`를 32초 실행으로 기록했고 종료 resume 상태의 헤더 게임 ID도 `V320R`이다.
+- 매체 검사는 PASS다. V319R/V320R의 raw sector 0..16은 byte exact, PS-X EXE 0x800-byte header SHA-256도 동일하고 entry/load/size는 `0x801757BC/0x8011B000/0x8F000`이다. V320R은 ISO 507파일, 데이터 LBA 506/506, COMM 307/667/891, 패치 164/164를 통과했다.
+- CPU 실패 증거: resume 상태 PC/EPC `0xD30B54F0`, Cause `0x00000418`, ExcCode 6(Instruction Bus Error). 같은 32비트 값이 V320 PSX.EXE file `0x7E5F8`에 정확히 1회 있고, V319의 같은 위치는 유효 RAM 포인터 `0x801354F0`이다.
+- 기존 `01_work/analysis/ui_safe_v33/nonstory_psx_pointer_audit.csv`도 file `0x7E5F8`을 `unclassified_pointer`, `confirmed_text_pool=False`로 기록한다. V320의 broad EXE re-encode는 감사표 4,262포인터 중 3,126개를 바꿨고, pool의 4바이트 정렬 plausible pointer 독립 스캔은 3,993개 변경을 찾았다. 단일 포인터 hotfix가 아니라 pool 전체 복구가 필요하다고 판정했다.
+
+2026-08-24 | V320B EXE 포인터 풀 복구판 | Expected Write, 포인터 전수 가드, 2회 재현, py_compile, check_build, mkpsxiso/LBA | STATIC POINTER/LAYOUT PASS, INHERITED LAYOUT DEBT FAIL, RUNTIME PENDING.
+- `build_arc1_v320b_exe_pointer_restore.py`는 V320 대비 `PSX.EXE` 하나만 바꾼다. `0x78000..0x82FFF`에서 V320이 바꾼 17,145바이트를 V319R로 복구하고 나머지 163멤버는 V320과 byte exact다. EXE 풀 밖의 V320 수정은 299바이트(공백 비교 1, packed lookup 291, decoder 7)이며 전부 유지된다.
+- 포인터 가드 PASS: 감사표 4,262/4,262가 V319 값, 변경 0; aligned plausible pointer 후보 변경 0; file `0x7E5F8`는 `0x801354F0`. 출력 PSX.EXE SHA-256은 `3D477AF6E97860485D89ADA92932FA90FA05B0834B583072E7A0946D2912D291`이다.
+- 두 번 재빌드한 full/delta SHA-256은 `2366F366A12F81DCE689DA10355F04112BECEB24F4895D029896021F1F9FECE6` / `DB5900521649CE0E6037198FF3215F568168E00FF3B69564685E404DCE9B9B4A`로 동일했다. `python -m py_compile`도 PASS했다.
+- `check_build.py`는 선택지 폭 75곳, 선택지 마커 2곳, 3줄 창 초과 18곳과 V319 계보의 EXE 중간 포인터 1곳(`0x82A6C -> 0x78AE5`)을 보고해 FAIL이다. V320에서 포인터 1건이 사라졌던 것은 해결이 아니라 포인터 자체가 손상돼 검사 후보에서 탈락했기 때문이다. 이 부채는 부팅 복구와 별개다.
+- `V320B.bin` SHA-256 `E19937E6C39747DBE706F7233BC4974066F12493F4881071C764FF38A459EDED`, CUE `7DD1F82CA306FDFC4367081BAD70DB7197B37399641F04AEC542D5952D975CA0`. ISO 507파일, 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 164/164 byte exact PASS다.
+- 실기 게이트: 상태저장을 불러오지 않고 `V320B.cue`를 콜드부팅한다. 검은 화면/Instruction Bus Error가 사라지고 타이틀과 첫 촌장 대사까지 도달하는지를 먼저 확인한다. 통과하면 V320에서 계획한 다섯 문장·Hanme·반각 공백·진행 검사를 이어간다.
+- 수정된 `verify_iso_layout.py`를 V320B에 다시 실행해 동일한 506/506·164/164 PASS를 확인했고, 최종 문구가 `PASS - disc layout/member integrity only; runtime not established`로 출력됨을 확인했다.
+
+2026-08-25 | V320B 부팅 복구 및 Hanme 벌 선택 보고 4상태 | DUCCU 헤더·썸네일·매체 경로·사용자 육안 확인 | BOOT/PROGRESSION PARTIAL PASS, FONT RULE FAIL.
+- 입력 SHA-256: state1 `D71ED09F0C9D51A66AF164075358BB48096602B9120D3BBF828179E63479E7BA`, state2 `C80C633A8DA1BAF27EE7D43307C353B13F611B19F4DD3715D9A38724CCA7AFC5`, state3 `3A7684A6461519CC4F02DCA895F0E1EC1CD91B04E5F1DC34165EBAD4BB4BED1A`, state4 `87002CA7ABED5599C479F8879093F869A53EADCAB678BD418DD5B6E2EF08B954`.
+- 4/4가 `DUCCU`, 게임 ID `V320B`, 매체 `E:\korean\03_output\V320B.cue`다. 썸네일에는 다리 장면의 촌장/쿠쿠루 대사와 사당 장면의 대사가 표시된다. 따라서 V320R의 부팅 크래시는 복구됐고 상태 1~4 경로의 대사 표시·장면 진행은 성립한다.
+- 사용자 판정은 Hanme 글자체 자체는 만족, 벌 선택은 실패다. 문제 표본은 `촌/들/속/롭/론/온/는/봉/용/꽃/동`이며, 모두 `ㅗ/ㅛ/ㅡ + 받침` 계열이다. 화면의 초성이 왼쪽으로 쏠리고 받침 위치도 잘못됐다.
+
+2026-08-25 | V320C Hanme 공식 벌 배열 교정판 | py_compile, 11,172자 전수 합성, 718 plane Expected Write, 2회 재빌드, ZIP diff, mkpsxiso/LBA, check_build | STATIC FONT/LAYOUT PASS, INHERITED LAYOUT DEBT FAIL, RUNTIME PENDING.
+- V240 규칙과 공식 배열을 전수 비교해 11,172자 중 10,773자의 비트맵 차이를 확인했다. 현재 V320B 매핑 718 plane/685문자 중 496 plane/488문자가 바뀌며 실제 COMM diff는 6,869바이트다. 보고된 11자는 전부 초성 벌 `5→6`, 종성 벌 `1→3`이고 중성도 V240의 역사적 선택에서 공식 선택으로 전환된다.
+- 쓰기 전 V320B 718/718 plane을 V240 조각 합성과 대조했고, 쓰기 뒤 저페이지 960/960 plane을 전수 읽었다. 비대상 plane, 같은 4bpp 셀의 이웃 plane, x>=240, PSX.EXE와 모든 비-COMM 멤버는 byte exact다. 변경 멤버는 `COMM.IMG` 하나다.
+- 빌더를 두 번 실행해 full/delta SHA-256 `81D215E1B1138E26707353D8982AE3139AE4F3900F6E832FEC83BB66A43AEA8D` / `1D57EB258719F4438B4EA8AC435CAFE7F08D33B042EF15E0B53AC54414DC0175`가 반복 일치했다. `python -m py_compile`도 PASS했다.
+- `V320C.bin` SHA-256 `1E7A59264F0B1A42761B76E5E4BA542B24A2AAAC83148476F2EB0C6AAB0EDB7E`, CUE `9DEFA2D58C451F8F3823CFAE900C9D93BACA5B119DA214B071B5FFC55CF63388`. ISO 507파일, 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 164/164 byte exact PASS다.
+- `check_build.py`는 V320B와 같은 EXE 중간 포인터 1곳, 선택지 폭 75곳, 선택지 마커 2곳, 본문 3줄 초과 18곳을 보고한다. 이번 COMM-only 벌 수정이 만든 회귀는 아니며 생산 전 해결할 상속 부채다.
+- 실기 게이트: `V320C.cue`를 열고 기존 V320B 메모리카드로 같은 네 장면을 확인한다. 우선 `촌/들/속/롭/론/온/는/봉/용/꽃/동`의 초성 중심·받침 위치를 보고, 통과하면 다른 받침 음절과 UI/전투/세계지도 회귀를 이어 본다.
+
+2026-08-25 | V320C 추가 상태저장 6개 사용자 보고 | 사용자 육안 보고, 원인 분석 전 | RUNTIME TEXT/FONT FAIL REPORTED, FORENSIC PENDING.
+- 사용자 보고: 상태 1의 `괄` 표시 이상, 상태 2의 `유물인→유정인`, 상태 3의 `엄마` 자형 이상, 상태 4·5의 번역 이상. 업로드 상태 6개는 별도 분석 전이므로 원인과 실제 원문·코드·아틀라스 경계는 아직 확정하지 않는다.
+- 사용자가 먼저 요청한 16px→14px 외형 비교를 우선 수행하고, 상태저장 귀속·스크립트 바이트·런타임 패킷 대조는 다음 진단 단계로 남겼다.
+
+2026-08-25 | Hanme 16px→14px 정적 미리보기 | 입력 해시, py_compile, 27자×5방식 합성, PNG 육안 확인 | STATIC PREVIEW PASS, GAME APPLICATION NOT RUN.
+- 입력 `pieces_1bpp.bin` SHA-256 `409ABA72F4BA2282AA5C4E4982A9EEA16FBD14FB0413A40E151537A6653E2904`를 확인하고 V320C 공식 벌 배열로 합성했다. 표본은 사용자 글자 17자와 전수 밀집/희소 글자 각 5자, 총 27자다.
+- 중앙 크롭은 경계에 닿는 획을 구조적으로 버리고, 최근접은 가장자리를 보존하지만 가늘어졌다. Claude 독립 계산은 area 35~50%만 획소실 0·연결요소 변화 최소 구간으로 판정했다. Codex 출력 지표에서도 평균 정규화 밀도비는 35% `1.1498`, 50% `1.0556`이었다.
+- PNG SHA-256 `E8E27B999BDCE5110428A9EF767D0E9A7384E00E1DF23DAF1B9955AA000065C9`. 게임 데이터 변경 0건이며 사용자의 시각 선택 전에는 빌드를 만들지 않는다.
+
+2026-08-25 | V320C 런타임 상태 6종 포렌식 | DUCCU 구조 재검출, DAT→RAM→packet→VRAM 대조, 두 번째 text object·composite E2 해석 | FONT/GEOMETRY PASS, TEXT IDENTITY FAIL.
+- 6개 입력은 모두 `DUCCU`, 게임 ID `V320C`다. `+0xC4`는 256x192 BGRA 썸네일 zstd, `+0xCC/+0xD0/+0xD4`는 상태 압축 크기/해제 크기/상태 zstd 오프셋이다. RAM은 구조적으로 `0x1A62`, VRAM은 `0x201DDC`에서 6/6 유일하게 검출됐다.
+- 상태 1·2·4·5는 디스크 토큰과 런타임 패킷 physical index가 정확히 일치했고, 6개 상태의 보호된 COMM 16px 아틀라스도 디스크와 byte exact였다. 상태 3은 DAT→RAM이 exact지만 첫 legacy `E9 13`이 cache-source 1809에서 업로드 없는 low-page physical 480으로 alias돼 토큰→패킷 exact는 아니다. 다섯 장면 모두 V320C가 남긴 legacy/오정체 토큰이 출발점이며 공식 벌·COMM 비트맵 문제는 아니다.
+- 상태 1은 `괄`이 아틀라스/할당에 없어 `?`; 상태 2는 정답 `유품인`의 `품`이 `정`으로 재인코딩; 상태 3은 `1/S1031` E2 slot 0이 text-region 목록에서 빠져 legacy 코드 유지; 상태 4·5는 `D/SD011`의 composite E2 slot 10/11 및 12/0이 광역 재인코딩에서 빠져 legacy 코드가 그대로 남았다. E4/E6 inline wrapper는 원본 배열을 유지했다.
+- 상태 6은 source pointer가 0인 별도 조립형 UI 객체이며 Yes/No 확인문이 깨져 있다. 이번 다섯 대사 복구와 분리해 다음 진단 대상으로 남겼다.
+
+2026-08-25 | V321 16px 텍스트 정체 복구판 | py_compile, 2회 재빌드, 독립 readback/Expected-Write, base diff, check_build 비교, mkpsxiso/LBA | STATIC TEXT/FONT/LAYOUT PASS, INHERITED DEBT FAIL, RUNTIME PENDING.
+- full/delta SHA-256은 `1B04A832B33BF061A1AAC8BEE1186B53D6FE977ACA5295C6B5A019CD0759DDFF` / `60CD235BBE7BD08A1A3FBD5271DB0236A6CC7EBF8458AE2B3083266261BC38E0`로 두 번 동일했다. V320C 대비 변경 멤버는 `1/S1021.DAT`, `1/S1031.DAT`, `1/S1072.DAT`, `21/S2021.DAT`, `COMM.IMG`, `D/SD011.DAT`, `PSX.EXE` 정확히 7개다.
+- 독립 검증기는 다섯 문장을 모두 디스크에서 정문으로 읽었고, PSX diff가 catalogued text 57곳의 `AB→64`뿐이며 COMM diff가 공식 Hanme `괄` physical plane 170 하나뿐임을 확인했다. composite E2 inline wrapper 세 범위는 V320C와 byte exact다.
+- `check_build.py` 결과는 V320C와 V321이 완전히 같다: EXE 중간 포인터 1곳, 선택지 폭 75곳, 선택지 마커 2곳, 3줄 창 초과 18곳. V321 신규 회귀는 아니지만 생산 승인 전 반드시 해결할 부채이므로 전체 판정은 FAIL을 유지한다.
+- `V321.bin` SHA-256 `27B4745355716F4EB2BE58D64D475D8368C2D2A82636D4B4AF94C58084B02C9C`, CUE `EDCB0D04B6F838E1992CE14B8CC55F543D1120861218CB68162571B62E7065DB`. ISO 507파일, 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 멤버 164/164 byte exact PASS다.
+- Claude 독립 감사도 base/full/delta 해시, changed set 7개, PSX 57바이트 `AB→64`, COMM plane 170 단독 변경과 이웃 plane 보존, 다섯 문장 readback, dead slot 무호출, 디스크 LBA를 별도 코드로 재현해 BLOCKER/HIGH 0으로 판정했다. 단, 실기 콜드부팅은 수행하지 않았으므로 runtime PENDING은 유지한다.
+- 실기 게이트: V320C 상태저장을 로드하지 말고 `V321.cue`와 복사된 `V321_1.mcd`로 실행한다. 다섯 정문과 `괄` 자형, 진행을 확인한 뒤 새 상태를 저장한다. 런타임 승인 전에는 TEST ONLY다.
+
+2026-08-25 | V321 E2 slot skip 메타데이터 회귀 | DUCCU RAM·packet·VRAM·DAT inline tail 대조 | RUNTIME FAIL, 원인 확정, DO NOT USE.
+- 입력 SHA-256: state1 `E1DF2D3432A71D6408F78EE5C299AF00ED0A82495C0DE3B41C0549494505885B`, state2 `635A46C065D6941C0D5ACC4E918DCE684444E660910C64FE98E52E897615839F`, state3 `CBAEC8E931E86410F011F929289FCDA7CF3E6C6AA968C2DFA683E971562244A7`. 3/3 헤더 게임 ID는 `V321`이다.
+- 고정 대화 객체 `0x801F9D44`, 패킷 base `0x801BE9BC`를 해독했다. 화면 문자열은 `엄마... / 조안)))`, `그 불을 줘.` 뒤 `)` 19개, `걱정 마.` 계열 뒤 `)` 15개다. `)` 37패킷 전부 `U=128,V=32,CLUT=0x7FC3,W/H=16`, physical 155이며 프레임버퍼 예상 잉크 일치율은 3/3 100%다.
+- 런타임 source pointer는 `0x80116883/0x80116B7D/0x80116D71`, DAT file offset으로 `0x47883/0x47B7D/0x47D71`이다. 이는 세 보존 인라인 wrapper의 끝과 정확히 같아, 외부 슬롯 뒤 인라인 꼬리가 실제로 소비됐음을 증명한다.
+- V320C→V321 슬롯 `+0x7F`은 `1/S1031 slot0 7→0`, `D/SD011 slot10/11/12/0 10/9/4/11→0`이다. 각 E2 직후 노출된 span의 `0x9C` 수는 3/10/9/4/11, 장면 합계 3/19/15로 화면 괄호와 정확히 일치한다. `write_slot()`의 전체 zero-fill이 skip 메타데이터까지 덮은 것이 직접 원인이다.
+
+2026-08-25 | V322 E2 skip 복원판 | py_compile, 2회 재빌드, save-state 원인 재현, 독립 Expected-Write, check_build 비교, mkpsxiso/LBA | STATIC PASS, INHERITED DEBT FAIL, RUNTIME PENDING.
+- full/delta SHA-256은 `480924F970C441BA819BC1F2FA003ED430FA76509ED138C8B33F444044057B32` / `6035DC3F744346930EFD2F6D5865CD25FB7ECA952AA27219E1597E9D3F492905`로 두 번 동일했다. V321 대비 변경은 `1/S1031.DAT` 1바이트와 `D/SD011.DAT` 4바이트뿐이다.
+- 독립 검증은 변경 오프셋이 다섯 슬롯의 `+0x7F`과 완전히 같고 값이 `7,10,9,4,11`임을 확인했다. 각 E2에서 `site+2+skip`은 `0x47883/0x47B6C/0x47B7B/0x47D5E/0x47D6F`로 다음 보존 제어 또는 종료에 정확히 착지한다. V320C의 원래 메타데이터와 5/5 일치한다.
+- `check_build.py`는 V321과 같은 EXE 중간 포인터 1곳, 선택지 폭 75곳, 선택지 마커 2곳, 3줄 초과 18곳으로 FAIL이다. V322 신규 회귀가 아니라 상속 부채다.
+- `V322.bin` SHA-256 `095F7C67185D62852A367A9FF9EB8F6073508FD1E6040DAAEC7BD4DDBDDE740A`, CUE `2F95D22196E903BF57AA24083F9C5F29CE26DA4A378423B39B38B74AB37F492C`. ISO 507파일, 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 멤버 164/164 byte exact PASS다.
+- Claude 독립 감사도 V320C→V321→V322 메타데이터 `7/10/9/4/11→0→복원`, 다섯 skip span과 resume target, 상태별 inline `0x9C`와 `)`의 3/19/15 일치, 두 DAT 5바이트 단독 diff, ZIP/BIN/LBA를 별도 코드로 재현해 전 항목 PASS했다. 앞서 제시했던 `PSX.EXE` fill-loop 가설은 인라인 호출부를 빠뜨린 오판이었다고 철회했다.
+- 실기 게이트: V321 `.sav`를 직접 로드하면 RAM에 V321 코드와 이미 적재된 DAT가 남으므로 검증이 아니다. `V322.cue`를 콜드부팅하고 `V322_1.mcd`의 메모리카드 저장에서 시작해 세 장면을 다시 진행한다. 기대값은 `엄마...`, `그 불을 줘. / 내가 다시 붙이고 올게.`, `걱정 마. / 불은 내가 다시 붙이고 올게.` 뒤에 `조안`이나 `)`가 0개인 것이다.
+
+2026-08-25 | V323 기술 범위 커서 VRAM 분리판 | source/consumer 구조 감사, 681-state 물리 VRAM 감사, py_compile, 2회 재빌드, 독립 R3000/RLE/Expected-Write, check_build 기준 비교, mkpsxiso/LBA | STATIC PASS, INHERITED DEBT FAIL, RUNTIME PENDING.
+- 원래 기술 범위 9개 UV의 합집합은 `U=0..96,V=128..160`이고 source는 original COMM 논리 `x=0..99,y=128..160` 1,650바이트(SHA-256 `B0005B318220FC61C11C3290837A7DF245646254FFA5CEBE7EA9A11932C7F421`)다. V322에서는 이 영역이 16px 한글에 사용되므로 원본 복원은 51개 live glyph/555회 대본 참조를 깨뜨린다.
+- 새 목적지 physical halfword `x=[960,985), y=[447,480)`를 DuckStation 상태 681개에서 4/8/16bpp alias까지 검사했다. 681/681 해제 성공. 현재 계보 `JOHAB16P,V319R,V320R,V320C,V321,V322` 25상태에서 reader state 0, nonzero state 0이다. 과거 동적 캐시 실패판의 점유는 build ID별로 분리 기록했다.
+- full/delta SHA-256은 `D57F9AC21E526304E43CCFAF266A412E1256CFC2C7C7FE8C1EB0AA5F8B8BD338` / `8E98C46F619726798EC545AB24897244951655E92EC92EAC8C4737010BEB8399`로 두 번 동일했다. V322 대비 변경 멤버는 `PSX.EXE` 하나, 변경 byte는 735개다.
+- 독립 검증은 helper `0x801A9BD8` 324바이트/81명령, R3000 load-delay 0건, RA 복원, helper 464바이트+LoadImage 48바이트 스택, 652바이트 RLE roundtrip, 다섯 upload rect `(960,447,25,8)/(960,455,25,8)/(960,463,25,8)/(960,471,25,8)/(960,479,25,1)`, TPage `05→1F`, UV V `128/160→191/223`, CLUT 불변을 모두 PASS했다. COMM.IMG와 모든 DAT는 V322와 byte exact다.
+- `check_build.py`는 V322/V323 양쪽 모두 EXE 중간 포인터 1곳, 선택지 폭 75곳, 선택지 마커 2곳, 3줄 초과 18곳으로 같은 FAIL이다. V323 신규 경고는 0이지만 상속 부채 때문에 전체 release gate는 FAIL을 유지한다.
+- 처음 `--layout original`로 잘못 구운 이미지는 확장 PSX.EXE 3섹터 때문에 데이터 506개와 COMM LBA가 모두 +3 밀려 즉시 FAIL했다. 이 이미지는 채택하지 않았다. V320~V322 계보와 같은 `--layout v104`로 다시 구운 최종 `V323.bin`은 507파일, 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, full ZIP 멤버 164/164 byte exact를 PASS했다.
+- 최종 BIN SHA-256 `77DCF9E39D30B027233A0CF1C158FAD0A9DA6C5018BFD0149C1DBB1DEF125BC1`, CUE `C8FD8698FAEA04C230AD5E781AEABC402B5EFACF14FE96C0F6973D794820D54E`, DuckStation `V323_1.mcd` `254116939A46340692D4F64C05A3583D000CAE0C961EB2AD378F0DA17947AC68`다.
+- 실기 게이트: V323.cue 콜드부팅 후 실제 전투에서 단일·십자·확장 범위 기술을 선택해 커서 타일이 한글 조각 없이 원래 모양으로 전부 나오는지 확인한다. 기술명/설명·아이템·대사와 진행도 함께 확인한다. V323 상태를 새로 저장하기 전까지 runtime은 PENDING이다.

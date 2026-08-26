@@ -1,0 +1,97 @@
+{
+  "result": "PASS",
+  "conclusion": "V321 zeroed E2 slot[0x7F], so completion did not skip preserved inline tails; exposed 0x9C renders as ')' at physical index 155.",
+  "states": [
+    {
+      "state": 1,
+      "path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_62b165e2-6abf-4a4c-a0a8-935163a57f2c\\HASH-29AE5BAC4C80EDA8_1.sav",
+      "sha256": "E1DF2D3432A71D6408F78EE5C299AF00ED0A82495C0DE3B41C0549494505885B",
+      "game_id": "V321",
+      "text": "엄마...\n조안)))",
+      "packet_count": 10,
+      "physical155_count": 3,
+      "source_pointer": "0x80116883",
+      "source_file_offset": "0x47883",
+      "framebuffer_best_ratio": 1.0
+    },
+    {
+      "state": 2,
+      "path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_b73a2a3c-52cd-4047-8ae1-86612a3dd061\\HASH-29AE5BAC4C80EDA8_2.sav",
+      "sha256": "635A46C065D6941C0D5ACC4E918DCE684444E660910C64FE98E52E897615839F",
+      "game_id": "V321",
+      "text": "그 불을 줘.)))))))\n)))\n내가 다시 붙이고 올게.)\n))))))))",
+      "packet_count": 39,
+      "physical155_count": 19,
+      "source_pointer": "0x80116B7D",
+      "source_file_offset": "0x47B7D",
+      "framebuffer_best_ratio": 1.0
+    },
+    {
+      "state": 3,
+      "path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_bdbe4f66-3ea3-40be-89df-ae67e50ee92d\\HASH-29AE5BAC4C80EDA8_3.sav",
+      "sha256": "CBAEC8E931E86410F011F929289FCDA7CF3E6C6AA968C2DFA683E971562244A7",
+      "game_id": "V321",
+      "text": "걱정 마.))))\n불은 내가 다시 붙이고 올게\n.)))))))))))",
+      "packet_count": 36,
+      "physical155_count": 15,
+      "source_pointer": "0x80116D71",
+      "source_file_offset": "0x47D71",
+      "framebuffer_best_ratio": 1.0
+    }
+  ],
+  "callers": [
+    {
+      "member": "1/S1031.DAT",
+      "slot": 0,
+      "caller": "0x4787A",
+      "v320c_skip": 7,
+      "v321_skip": 0,
+      "exposed_hex": "E6 01 90 94 9C 9C 9C",
+      "exposed_9c": 3,
+      "resume": "0x47883"
+    },
+    {
+      "member": "D/SD011.DAT",
+      "slot": 10,
+      "caller": "0x47B60",
+      "v320c_skip": 10,
+      "v321_skip": 0,
+      "exposed_hex": "9C 9C 9C 9C 9C 9C 9C 9C 9C 9C",
+      "exposed_9c": 10,
+      "resume": "0x47B6C"
+    },
+    {
+      "member": "D/SD011.DAT",
+      "slot": 11,
+      "caller": "0x47B70",
+      "v320c_skip": 9,
+      "v321_skip": 0,
+      "exposed_hex": "9C 9C 9C 9C 9C 9C 9C 9C 9C",
+      "exposed_9c": 9,
+      "resume": "0x47B7B"
+    },
+    {
+      "member": "D/SD011.DAT",
+      "slot": 12,
+      "caller": "0x47D58",
+      "v320c_skip": 4,
+      "v321_skip": 0,
+      "exposed_hex": "9C 9C 9C 9C",
+      "exposed_9c": 4,
+      "resume": "0x47D5E"
+    },
+    {
+      "member": "D/SD011.DAT",
+      "slot": 0,
+      "caller": "0x47D62",
+      "v320c_skip": 11,
+      "v321_skip": 0,
+      "exposed_hex": "9C 9C 9C 9C 9C 9C 9C 9C 9C 9C 9C",
+      "exposed_9c": 11,
+      "resume": "0x47D6F"
+    }
+  ],
+  "visible_parentheses": 37,
+  "exposed_inline_9c": 37,
+  "rejected_hypothesis": "PSX padding/fill loop; disk inline tails fully explain every packet"
+}

@@ -1,0 +1,26 @@
+Arc the Lad 1 clean Pilgi johab font flow-fix PoC
+status=TEST_ONLY STATIC PASS; runtime=PENDING USER COLD BOOT + NATURAL DIALOGUE PROGRESSION
+base_sha256=AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD
+font_zip_sha256=31084434DC45D383B21A8A3BE10A47869BB31E92D7C2C5AEEF91BD439D956A78
+font_member=Pilgi_8x4x4.ttf sha256=30EC39649ECBE2DC1E716F0FF7C8793AA364CFB7D5AB37C4401FE0936E1417A9
+renderer=Pillow 12.3.0; FreeType 2.14.3; 12px; threshold >96
+rule=official iolo/8x4x4-fonts generate_hangul_syllables.py arrays; source_sha256=A498B4F7B7DC840AD637B093711ED6DB650EEEA96DAFA46728B4F30E730B3052
+zip_runtime=zlib compile 1.3.1.zlib-ng; runtime 1.3.1.zlib-ng; level 1
+components=cho 13 logical/13 bitmaps; jung+jong 19 logical/16 bitmaps; total 29 planes
+atlas=cho 1041..1053; jung+jong 1125..1140
+safe_filler=index 1141 code E0 9D; helper_nonadvance=1125..1141
+safety=blank+unreferenced 30/30; text-read 30/30; nontext-read 0/30 across 509 states
+fixed_length_flow=early_zero 0/3 bodies; original terminators 3/3; linebreak_counts=2/1/2
+conservative_referenced_indices=892
+original_inked_planes=996 sha256=C6E90BF76B176D384561248A95D7929F9D26D8B9B985BE04A3BFFBA9B6876D7C unchanged
+mips=range-aware helper 52B at 0x8018FCD0; hook 0x8016B63C
+features_absent=dynamic cache, E2, external slots, UI repack, bulk translation, expanded EXE
+changed_members=1/S1071.DAT, COMM.IMG, PSX.EXE
+changed_byte_counts=1/S1071.DAT:122, COMM.IMG:196, PSX.EXE:43
+output=arc1_johab_font_poc_pilgi_FLOWFIX_TEST_ONLY_4891ECBD.zip
+output_size=292309548
+output_sha256=4891ECBD68C6F1724470729C09BCA775C3119A56AC840936514113A13FFB73BC
+patch_output=arc1_johab_font_poc_pilgi_FLOWFIX_TEST_ONLY_patch_566D5F86.zip
+patch_output_size=428686
+patch_output_sha256=566D5F8646F387BF7581EF72B76960C753099B26A010AF247E5A05A47BCA12E5
+next=package patch-only ZIP with arc1_original_layout.xml, verify 506/506 LBA, then DuckStation cold boot

@@ -1,0 +1,36 @@
+{
+  "build": "V321 TEST_ONLY 16px text identity repair",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v320c_hanme_official_beol_TEST_ONLY_81D215E1.zip",
+    "sha256": "81D215E1B1138E26707353D8982AE3139AE4F3900F6E832FEC83BB66A43AEA8D"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v321_text_identity_repair_TEST_ONLY_1B04A832.zip",
+    "sha256": "1B04A832B33BF061A1AAC8BEE1186B53D6FE977ACA5295C6B5A019CD0759DDFF"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v321_text_identity_repair_TEST_ONLY_delta_from_v320c_60CD235B.zip",
+    "sha256": "60CD235BBE7BD08A1A3FBD5271DB0236A6CC7EBF8458AE2B3083266261BC38E0"
+  },
+  "changed_members": [
+    "1/S1021.DAT",
+    "1/S1031.DAT",
+    "1/S1072.DAT",
+    "21/S2021.DAT",
+    "COMM.IMG",
+    "D/SD011.DAT",
+    "PSX.EXE"
+  ],
+  "font": {
+    "cell": 16,
+    "new_char": "괄",
+    "code_hex": "AB",
+    "physical_index": 170,
+    "official_beol": true,
+    "pieces_sha256": "409ABA72F4BA2282AA5C4E4982A9EEA16FBD14FB0413A40E151537A6653E2904",
+    "changed_COMM_bytes": 40
+  },
+  "geometry": "V320C code words unchanged: packet16/advance14/line16/space6",
+  "runtime": "PENDING user cold boot",
+  "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE"
+}

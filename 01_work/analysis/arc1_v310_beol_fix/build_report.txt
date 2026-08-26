@@ -1,0 +1,14 @@
+v310 TEST ONLY - 12px johab, measured beol rule
+output=arc1_v310_beol_fix_TEST_ONLY_52D2E89C.zip
+sha256=52D2E89C5F537B12B45F29110AFAEA9F1366A8A35EC7C1853EE54005565C7E59
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+font=Sans_8x4x4.ttf at 12px, beol rule measured against the font own syllables
+pieces placed: cho 109, jung+jong 59, plain 23, total 191
+atlas: 996 original glyph cells untouched (sha c6e90bf76b176d38), 237 blank cells available
+advance bound = index 1179; codes >= bound draw without moving the cursor
+lines 2878  translated 2679  inline 14  moved to slot 2107 (multi-slot 519)  truncated 558
+truncation causes: no free slot 464, not enough slots 6, no room for E2 88
+handlers 0x8018FCD0 / 0x8018FD28 / 0x8018FD94
+hooks 0x8016BC84 / 0x8016BDC0 / 0x8016B63C
+changed members=162
+runtime=PENDING user cold boot

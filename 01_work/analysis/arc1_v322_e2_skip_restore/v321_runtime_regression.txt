@@ -1,0 +1,7 @@
+V321 E2 skip regression runtime analysis: PASS
+visible_parentheses=3,19,15 (total 37)
+inline_exposed_9c=3,19,15 (total 37)
+source_pointer_ends=0x47883,0x47B7D,0x47D71
+physical155=U128,V32,CLUT7FC3,W16,H16,')'
+cause=slot[0x7F] values 7,10,9,4,11 were zeroed by V321
+fix=restore metadata only; do not edit PSX.EXE, COMM.IMG, or inline wrappers

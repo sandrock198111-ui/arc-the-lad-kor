@@ -1,0 +1,60 @@
+Arc the Lad 1 clean Pilgi johab 16px dialogue PoC - runtime savestate validation
+date=2026-08-21
+verdict=POC RUNTIME PASS; PRODUCTION INTEGRATION PENDING
+severity=BLOCKER 0; HIGH 0; MEDIUM 2
+
+build
+- cue=03_output/JOHAB16P.cue
+- bin_sha256=B34236F51E7D5FBA0CAB817A37AEF01EC77DF32784A9629A0BCDDF6138E33644
+- full_zip_sha256=D941D1BE9E24F90DA2527BC7CD5B082B1127FBD8348E065A1F17F5FCEF122D58
+- patch_zip_sha256=385726431743BA86EC05538E5EF99C4CC800EE9F2ED132439CA1B531FB772AAE
+
+input states
+- state1=HASH-90FD70BCCCD1C689_1.sav sha256=27182578A49EAF0509C4897D3D509FE9CDC91E3F6A4ABDFECAB85B128B4F98EF
+- state2=HASH-90FD70BCCCD1C689_2.sav sha256=57918A43EFB8036F4FF717250D41AA836ACA7E33E0641FF94F558122AE5AB9D2
+- state3=HASH-90FD70BCCCD1C689_3.sav sha256=EE4C64BD60BCE80256F9D75D7D28DB12DCA823BF9D891677DDCC433B2372108C
+- format=DUCCU; decompressed state size 3816838; RAM offset 0x1A62; VRAM offset 0x201DDC
+- note=extract_savestate_vram.py currently accepts DUCCT only; these states require the DUCCU data fields at header 0xCC/0xD4 or the last zstd frame reader
+
+build attribution
+- RAM hooks 0x8016BB8C and 0x8016BDA0 match the final disc
+- wrapper 0x8018FCD0, 196 bytes, matches the final disc in all three states
+- coordinate table 0x801A7460, 62 bytes, matches the final disc in all three states
+- coordinate table entries match physical_slots_16px.csv 31/31
+- VRAM COMM glyph columns match the final COMM.IMG 64512/64512 bytes in all three states
+
+script flow
+- loaded 1/S1071.DAT base=0x800CF000; diagnostic site bytes match the disc 3/3
+- state1 parser cursor=0x801168FD (file 0x478FD, site1 original terminator)
+- state2 parser cursor=0x8011695B (file 0x4795B, site2 original terminator)
+- state3 parser cursor=0x801169C5 (file 0x479C5, site3 original terminator)
+- no early 0x00 stop and no unloaded-scene/stale-pointer pattern from the rejected first PoC
+
+text state and packets
+- object=0x801F9D44; packet base=0x801BE9BC; stride=52; capacity=64
+- state1 X=88 Y=64 ordinal=19 D/E/F/+0x10=12/12/0/2
+- state2 X=136 Y=50 ordinal=20 D/E/F/+0x10=12/12/0/2
+- state3 X=116 Y=64 ordinal=27 D/E/F/+0x10=12/12/0/2
+- manifest token/index/U/V/plane match=66/66; mismatches=0
+- custom packets=57/57 at W/H=16/16; stock packets=9/9 at W/H=12/12
+- component order=jung -> jong when present -> cho
+- same syllable components share X; cho and custom space advance 14; jung/jong/filler advance 0
+- text state D/E remains 12/12 after every diagnostic; the rejected state-leak build is not present
+
+framebuffer proof
+- both VRAM framebuffers, origins (0,0) and (0,240), contain the expected rendered pixels with drawing offset Y=-8
+- all expected white pixels, including stock speaker names: state1 462/462, state2 236/236, state3 426/426; unexpected white pixels inside tested glyph boxes=0
+- custom-only unique white pixels: state1 370/370, state2 236/236, state3 334/334 in both buffers
+- Pilgi source row 15 targets in state2 are all visible as 0x7FFF in both buffers:
+  top=(104,57),(105,57),(116,43),(117,43),(145,43),(146,43)
+  bottom=(104,297),(105,297),(116,283),(117,283),(145,283),(146,283)
+- conclusion=packet H=16 consumes and displays the six diagnostic row-15 pixels; 16px bottom is not clipped in this path
+
+remaining medium risks
+- M1: line origins differ by 14 while packets are 16 high. State1 has two actual shared white pixels at packet coordinates (81,64),(82,64); states2/3 have zero collisions. Production dialogue needs an explicit decision on pitch 16 versus accepting the overlap.
+- M2: the three captures end at the three diagnostic sites. A normal Japanese glyph after the final Korean string was not directly captured. Static wrapper inspection, D/E=12/12 after every site, and stock 12px speaker packets strongly support isolation, but one post-diagnostic Japanese sample remains desirable.
+
+proof boundary
+- This validates the three S1071 dialogue sites and the dialogue-only wrapper. It does not validate menus, battles, world map, every safe atlas cell consumer, adjacent Korean syllables without spaces, or bulk-script capacity.
+- bible_current.txt remains unchanged because this is a focused PoC, not a replacement for the v197 release baseline.
+

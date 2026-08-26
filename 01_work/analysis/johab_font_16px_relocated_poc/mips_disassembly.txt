@@ -1,0 +1,54 @@
+dialogue hooks:
+8016BB8C  0C06881D  jal 0x801A2074
+8016BDA0  0C06881D  jal 0x801A2074
+
+wrapper:
+801A2074  2482FBEF  addiu   $v0, $a0, -0x411
+801A2078  2C43000E  sltiu   $v1, $v0, 0xe
+801A207C  14600007  bnez    $v1, 0x801a209c
+801A2080  00000000  nop     
+801A2084  2482FB9B  addiu   $v0, $a0, -0x465
+801A2088  2C430011  sltiu   $v1, $v0, 0x11
+801A208C  14600007  bnez    $v1, 0x801a20ac
+801A2090  00000000  nop     
+801A2094  0805AD46  j       0x8016b518
+801A2098  00000000  nop     
+801A209C  00404021  move    $t0, $v0
+801A20A0  24090002  addiu   $t1, $zero, 2
+801A20A4  0806882D  j       0x801a20b4
+801A20A8  00000000  nop     
+801A20AC  2448000E  addiu   $t0, $v0, 0xe
+801A20B0  2409FFF4  addiu   $t1, $zero, -0xc
+801A20B4  27BDFFE8  addiu   $sp, $sp, -0x18
+801A20B8  AFBF0014  sw      $ra, 0x14($sp)
+801A20BC  AFA50010  sw      $a1, 0x10($sp)
+801A20C0  00084040  sll     $t0, $t0, 1
+801A20C4  3C0A801A  lui     $t2, 0x801a
+801A20C8  01485021  addu    $t2, $t2, $t0
+801A20CC  954B2138  lhu     $t3, 0x2138($t2)
+801A20D0  AFA90008  sw      $t1, 8($sp)
+801A20D4  AFAB000C  sw      $t3, 0xc($sp)
+801A20D8  0C05AD46  jal     0x8016b518
+801A20DC  00000000  nop     
+801A20E0  8FAA0010  lw      $t2, 0x10($sp)
+801A20E4  8FAB000C  lw      $t3, 0xc($sp)
+801A20E8  8FA90008  lw      $t1, 8($sp)
+801A20EC  9548000A  lhu     $t0, 0xa($t2)
+801A20F0  8D470000  lw      $a3, ($t2)
+801A20F4  2508FFFF  addiu   $t0, $t0, -1
+801A20F8  00086140  sll     $t4, $t0, 5
+801A20FC  00081900  sll     $v1, $t0, 4
+801A2100  01836021  addu    $t4, $t4, $v1
+801A2104  00081880  sll     $v1, $t0, 2
+801A2108  01836021  addu    $t4, $t4, $v1
+801A210C  01876021  addu    $t4, $t4, $a3
+801A2110  A58B0028  sh      $t3, 0x28($t4)
+801A2114  340B1010  ori     $t3, $zero, 0x1010
+801A2118  A58B002A  sh      $t3, 0x2a($t4)
+801A211C  95480006  lhu     $t0, 6($t2)
+801A2120  8FBF0014  lw      $ra, 0x14($sp)
+801A2124  01094021  addu    $t0, $t0, $t1
+801A2128  A5480006  sh      $t0, 6($t2)
+801A212C  27BD0018  addiu   $sp, $sp, 0x18
+801A2130  03E00008  jr      $ra
+801A2134  00000000  nop     

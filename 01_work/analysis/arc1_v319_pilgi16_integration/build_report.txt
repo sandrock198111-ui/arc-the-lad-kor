@@ -1,0 +1,24 @@
+V319 TEST ONLY - broad V318 content with Pilgi 16px and separated geometry
+base=arc1_v318_v241_nocache_recovery_TEST_ONLY_50B30D67.zip
+base_sha256=50B30D67FC5856B548A986EB17470AF179EC0E3CFAF595F2291C225F1EF8DFBF
+output=arc1_v319_pilgi16_integration_TEST_ONLY_07418C00.zip
+sha256=07418C0024C4059C550E1584FC29340C6B97D9CF9B9DE778CA1FE38ACCB74A49
+delta_from_v318=arc1_v319_pilgi16_integration_TEST_ONLY_delta_from_v318_5884C48B.zip
+delta_sha256=5884C48B619C0EAC32FDB9F8CDFD3838E344F0929678BF1B5AB9DC0F17DD3983
+preserved_members=162/164 byte-identical
+changed_members=['COMM.IMG', 'PSX.EXE']
+atlas=ink 654; Pilgi resolved 654; unresolved 0; blank 74
+mapping=legacy 554; Hangul pieces 632; agreement 532; recovered 100
+Hangul_exhaustive_shapes=11172; ambiguities=0
+unique_Pilgi_chars=626; COMM_changed_bytes=14395
+geometry=packet 16x16; cursor 14; wrap 14; line pitch 16; half-width 8
+state=main D14/E16/F2/+10=0; explicit 6px and 12px setter paths preserved
+PSX_changed_bytes=39; cache_upload_direct_calls=0
+runtime=PENDING user cold boot
+font_status=TEMPORARY structure-validation face; final 16px font is not selected
+primary_visual_gate=first village dialogue must use one consistent face and keep V318 breadth
+regression_gate=next dialogue/speaker/UI/battle/world-map transition
+known_limit=14px advance overlaps 16px sprites by 2px; inspect right/left edge collisions
+known_limit=automatic wrap can split Korean words; 16px reflow remains required
+known_limit=v240's 773 unknown-code blank rewrites are inherited, not repaired here
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE

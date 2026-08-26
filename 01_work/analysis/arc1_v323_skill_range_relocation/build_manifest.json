@@ -1,0 +1,91 @@
+{
+  "build": "V323 TEST_ONLY skill-range texture relocation",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v322_e2_skip_restore_TEST_ONLY_480924F9.zip",
+    "sha256": "480924F970C441BA819BC1F2FA003ED430FA76509ED138C8B33F444044057B32"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v323_skill_range_relocation_TEST_ONLY_D57F9AC2.zip",
+    "sha256": "D57F9AC21E526304E43CCFAF266A412E1256CFC2C7C7FE8C1EB0AA5F8B8BD338"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v323_skill_range_relocation_TEST_ONLY_delta_from_v322_8E98C46F.zip",
+    "sha256": "8E98C46F619726798EC545AB24897244951655E92EC92EAC8C4737010BEB8399"
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_psx_bytes": 735,
+  "source": {
+    "comm_rect": [
+      0,
+      128,
+      100,
+      33
+    ],
+    "raw_bytes": 1650,
+    "raw_sha256": "B0005B318220FC61C11C3290837A7DF245646254FFA5CEBE7EA9A11932C7F421",
+    "rle_bytes": 652,
+    "rle_sha256": "94CED131CFC00C7B4A249009DEA5BE2361ABC6DAF6C244EE9B6D134F621C7133"
+  },
+  "runtime_upload": {
+    "hook": "0x8011E614",
+    "helper": "0x801A9BD8",
+    "helper_bytes": 324,
+    "data": "0x801A9D1C",
+    "stack_frame_bytes": 464,
+    "rectangles": [
+      [
+        960,
+        447,
+        25,
+        8
+      ],
+      [
+        960,
+        455,
+        25,
+        8
+      ],
+      [
+        960,
+        463,
+        25,
+        8
+      ],
+      [
+        960,
+        471,
+        25,
+        8
+      ],
+      [
+        960,
+        479,
+        25,
+        1
+      ]
+    ]
+  },
+  "texture": {
+    "tpage_xy": [
+      960,
+      256
+    ],
+    "page": [
+      15,
+      1
+    ],
+    "uv_union": [
+      0,
+      191,
+      97,
+      33
+    ],
+    "uv_v_delta": 63,
+    "clut": "unchanged"
+  },
+  "preserved": "COMM.IMG, all DAT, resident 5356-byte block, heap boundary, V322 text/font/E2/UI",
+  "runtime": "PENDING user cold boot and expanded skill-range test",
+  "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE"
+}

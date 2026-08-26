@@ -1,0 +1,31 @@
+Arc the Lad 1 clean Pilgi johab font FLOWFIX - ISO verification
+date=2026-08-21
+status=STATIC PASS; RUNTIME PENDING USER COLD BOOT
+
+layout=01_work/arc1_original_layout.xml
+patch_zip=03_output/arc1_johab_font_poc_pilgi_FLOWFIX_TEST_ONLY_patch_566D5F86.zip
+patch_zip_sha256=566D5F8646F387BF7581EF72B76960C753099B26A010AF247E5A05A47BCA12E5
+patch_members=1/S1071.DAT, COMM.IMG, PSX.EXE
+
+cue=03_output/JOHAB_PILGI_FLOWFIX_POC.cue
+cue_size=89
+cue_sha256=FC77EB9B6DF3C99B0689EBD0120F5E7EE1DFAD88ED506D6261907C43FE1B8D5E
+bin=03_output/JOHAB_PILGI_FLOWFIX_POC.bin
+bin_size=631820112
+bin_sha256=E48E056FF6DD2FC96006CDD9E4B134992559D25548108F891A1BEDB88A00694F
+
+verify_iso_layout=PASS
+disc_files=507
+data_file_lba=506/506 unchanged
+COMM.DAT_LBA=307 PASS
+COMM.IMG_LBA=667 PASS
+COMM.SND_LBA=891 PASS
+PSX.EXE_LBA=23 unchanged
+patched_file_bytes=3/3 match patch ZIP
+
+memory_card=JOHAB_PILGI_FLOWFIX_POC_1.mcd
+memory_card_size=131072
+memory_card_sha256=254116939A46340692D4F64C05A3583D000CAE0C961EB2AD378F0DA17947AC68
+memory_card_source=JOHAB_PILGI_POC_1.mcd byte-identical copy
+
+runtime=Do not load a first-build savestate; cold boot the new CUE and progress naturally.

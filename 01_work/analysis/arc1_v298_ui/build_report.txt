@@ -1,0 +1,9 @@
+v298 TEST ONLY - v297 plus UI / battle / item strings
+output=arc1_v298_ui_TEST_ONLY_CFE4814B.zip
+sha256=CFE4814B3491B1378215A18F83B44CC9E4F8118357F80A7BA44049DB6E532BD0
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+lines=2,878  inline=327  moved to slot=2,011  truncated=341
+Korean glyphs=716  no cell=3
+UI strings applied=173  deferred=528
+handlers at 0x8018FCD0 / 0x8018FD28, hooks 0x8016BC84 / 0x8016BDC0
+runtime=PENDING user cold boot

@@ -1,0 +1,14 @@
+v309 TEST ONLY - 12px johab from the original disc, Sans pieces
+output=arc1_v309_johab12_sans_TEST_ONLY_9666FCB2.zip
+sha256=9666FCB2998501673B229B6D32BA21DDB2D113820EFAA67C9C17ACDA5BE0B85E
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+font=Sans_8x4x4.ttf at 12px, cho 8beol + jung 4beol + jong 2beol
+pieces placed: cho 123, jung+jong 101, plain 23, total 247
+atlas: 996 original glyph cells untouched (sha c6e90bf76b176d38), 237 blank cells available
+advance bound = index 1137; codes >= bound draw without moving the cursor
+lines 2878  translated 2679  inline 14  moved to slot 2107 (multi-slot 519)  truncated 558
+truncation causes: no free slot 464, not enough slots 6, no room for E2 88
+handlers 0x8018FCD0 / 0x8018FD28 / 0x8018FD94
+hooks 0x8016BC84 / 0x8016BDC0 / 0x8016B63C
+changed members=162
+runtime=PENDING user cold boot

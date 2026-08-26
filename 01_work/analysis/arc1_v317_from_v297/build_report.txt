@@ -1,0 +1,8 @@
+v317 TEST ONLY - v297 base, measured beol rule, Pilgi
+output=arc1_v317_from_v297_TEST_ONLY_7B451803.zip
+sha256=7B45180339F39077A2F58E049422B7A1E05E6B2382240233A051744092D43EDA
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+lines=2,878  inline=341  moved to slot=1,996  truncated=342
+Korean glyphs=669  no cell=3
+handlers at 0x8018FCD0 / 0x8018FD28, hooks 0x8016BC84 / 0x8016BDC0
+runtime=PENDING user cold boot

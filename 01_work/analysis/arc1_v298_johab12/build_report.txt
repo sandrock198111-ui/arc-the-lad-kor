@@ -1,0 +1,14 @@
+v298 TEST ONLY - 12px johab from the original disc
+output=arc1_v298_johab12_TEST_ONLY_CFE4CE43.zip
+sha256=CFE4CE432F59E27AA92BEF0BFA5E1E112BF65984980CAE147C0C3A2C6B5809C0
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+font=Dkby_8x4x4.ttf at 12px, cho 8beol + jung 4beol + jong 2beol
+pieces placed: cho 123, jung+jong 101, plain 23, total 247
+atlas: 996 original glyph cells untouched (sha c6e90bf76b176d38), 237 blank cells available
+advance bound = index 1137; codes >= bound draw without moving the cursor
+lines 2878  translated 2679  inline 14  moved to slot 2107 (multi-slot 519)  truncated 558
+truncation causes: no free slot 464, not enough slots 6, no room for E2 88
+handlers 0x8018FCD0 / 0x8018FD28 / 0x8018FD94
+hooks 0x8016BC84 / 0x8016BDC0 / 0x8016B63C
+changed members=162
+runtime=PENDING user cold boot

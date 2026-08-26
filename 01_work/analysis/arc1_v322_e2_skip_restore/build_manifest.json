@@ -1,0 +1,40 @@
+{
+  "build": "V322 TEST_ONLY E2 skip metadata restore",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v321_text_identity_repair_TEST_ONLY_1B04A832.zip",
+    "sha256": "1B04A832B33BF061A1AAC8BEE1186B53D6FE977ACA5295C6B5A019CD0759DDFF"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v322_e2_skip_restore_TEST_ONLY_480924F9.zip",
+    "sha256": "480924F970C441BA819BC1F2FA003ED430FA76509ED138C8B33F444044057B32"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v322_e2_skip_restore_TEST_ONLY_delta_from_v321_6035DC3F.zip",
+    "sha256": "6035DC3F744346930EFD2F6D5865CD25FB7ECA952AA27219E1597E9D3F492905"
+  },
+  "changed_members": [
+    "1/S1031.DAT",
+    "D/SD011.DAT"
+  ],
+  "changed_offsets": {
+    "1/S1031.DAT": [
+      "0x4507F"
+    ],
+    "D/SD011.DAT": [
+      "0x4507F",
+      "0x4557F",
+      "0x455FF",
+      "0x4567F"
+    ]
+  },
+  "restored_skip_values": [
+    7,
+    10,
+    9,
+    4,
+    11
+  ],
+  "inherited": "V321 font, text payloads, PSX.EXE, geometry, UI, and inline wrappers byte-identical",
+  "runtime": "PENDING user cold boot; do not load V321 savestate",
+  "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE"
+}

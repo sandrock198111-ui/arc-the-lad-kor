@@ -1,0 +1,231 @@
+{
+  "status": "TEST_ONLY_STATIC_PASS_RUNTIME_PENDING_FLOWFIX",
+  "base": {
+    "path": "E:\\korean\\00_original\\arc.zip",
+    "sha256": "AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD"
+  },
+  "font": {
+    "profile": "pilgi",
+    "zip_path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_df8ab64f-8a3f-4eac-969a-9778b94efbe6\\8x4x4-fonts-all.zip",
+    "zip_sha256": "31084434DC45D383B21A8A3BE10A47869BB31E92D7C2C5AEEF91BD439D956A78",
+    "member": "Pilgi_8x4x4.ttf",
+    "member_sha256": "30EC39649ECBE2DC1E716F0FF7C8793AA364CFB7D5AB37C4401FE0936E1417A9",
+    "pixel_size": 12,
+    "threshold": ">96",
+    "pillow": "12.3.0",
+    "freetype": "2.14.3"
+  },
+  "official_rule": {
+    "source_url": "https://raw.githubusercontent.com/iolo/8x4x4-fonts/main/generate_hangul_syllables.py",
+    "source_sha256": "A498B4F7B7DC840AD637B093711ED6DB650EEEA96DAFA46728B4F30E730B3052",
+    "source_size": 3201,
+    "cho_without_jong": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      3,
+      3,
+      3,
+      1,
+      2,
+      4,
+      4,
+      4,
+      2,
+      1,
+      3,
+      0
+    ],
+    "cho_with_jong": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5
+    ],
+    "jong_by_jung": [
+      0,
+      2,
+      0,
+      2,
+      1,
+      2,
+      1,
+      2,
+      3,
+      0,
+      2,
+      1,
+      3,
+      3,
+      1,
+      2,
+      1,
+      3,
+      3,
+      1,
+      1
+    ],
+    "jung_rule": "0/2 for choseong indices 0 or 15; otherwise 1/3"
+  },
+  "component_counts": {
+    "logical_cho": 13,
+    "unique_cho_bitmaps": 13,
+    "logical_jung_jong": 19,
+    "unique_jung_jong_bitmaps": 16,
+    "written_planes": 29
+  },
+  "ranges": {
+    "advancing_cho": [
+      1041,
+      1053
+    ],
+    "nonadvancing_jung_jong": [
+      1125,
+      1140
+    ],
+    "nonadvancing_blank_filler": 1141,
+    "nonadvancing_helper": [
+      1125,
+      1141
+    ]
+  },
+  "fixed_length_flow": {
+    "proven_story_test_07_linebreak_counts": [
+      2,
+      1,
+      2
+    ],
+    "safe_filler_index": 1141,
+    "safe_filler_code": "E0 9D",
+    "early_zero_bytes": 0,
+    "original_terminators_preserved": true,
+    "site_rows": [
+      {
+        "member": "1/S1071.DAT",
+        "offset": "0x478D6",
+        "capacity": 39,
+        "body_bytes": 39,
+        "safe_filler_bytes": 0,
+        "safe_filler_tokens": 0,
+        "glyph_tokens": 19,
+        "linebreak_tokens": 2,
+        "terminator_offset": "0x478FD",
+        "internal_zero_bytes": 0,
+        "text": "출 홀 줄 하 허 호",
+        "encoded_hex": "DD 0B D4 25 E6 01 E0 93 E0 8E E0 41 E0 95 E0 8E E0 42 E0 93 E0 8E E0 45 E6 01 E0 9B E0 3E E0 9C E0 3E E0 91 E0 40 01"
+      },
+      {
+        "member": "1/S1071.DAT",
+        "offset": "0x47932",
+        "capacity": 41,
+        "body_bytes": 41,
+        "safe_filler_bytes": 12,
+        "safe_filler_tokens": 6,
+        "glyph_tokens": 21,
+        "linebreak_tokens": 1,
+        "terminator_offset": "0x4795B",
+        "internal_zero_bytes": 0,
+        "text": "각 객 걱 곡",
+        "encoded_hex": "E0 99 E0 8F E0 3C 01 E0 98 E0 8D E0 3C E6 01 E0 9A E0 8F E0 3C 01 E0 95 E0 90 E0 44 01 E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D"
+      },
+      {
+        "member": "1/S1071.DAT",
+        "offset": "0x4798E",
+        "capacity": 55,
+        "body_bytes": 55,
+        "safe_filler_bytes": 18,
+        "safe_filler_tokens": 9,
+        "glyph_tokens": 29,
+        "linebreak_tokens": 2,
+        "terminator_offset": "0x479C5",
+        "internal_zero_bytes": 0,
+        "text": "가 나 고 구 과 워",
+        "encoded_hex": "DD 0B D4 25 E6 01 E0 9B E0 3B 01 E0 9B E0 39 01 E0 92 E0 3F E6 01 E0 94 E0 43 01 E0 97 E0 3A 01 E0 96 E0 3D 01 E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D E0 9D"
+      }
+    ]
+  },
+  "reference_catalog": {
+    "dialogue_sites": 39457,
+    "exe_pointer_strings": 1736,
+    "referenced_glyph_indices": 892,
+    "runtime_audit_states": 509
+  },
+  "mips": {
+    "hook": "0x8016B63C",
+    "helper": "0x8018FCD0",
+    "helper_bytes": 52,
+    "cave_end": "0x8018FDC5"
+  },
+  "diagnostic_raster_hamming": {
+    "가": 2,
+    "각": 13,
+    "객": 21,
+    "걱": 13,
+    "고": 8,
+    "곡": 4,
+    "과": 8,
+    "구": 3,
+    "나": 2,
+    "워": 3,
+    "줄": 6,
+    "출": 9,
+    "하": 1,
+    "허": 1,
+    "호": 7,
+    "홀": 8
+  },
+  "zip_runtime": {
+    "zlib_compile_version": "1.3.1.zlib-ng",
+    "zlib_runtime_version": "1.3.1.zlib-ng",
+    "compresslevel": 1
+  },
+  "changed_members": [
+    "1/S1071.DAT",
+    "COMM.IMG",
+    "PSX.EXE"
+  ],
+  "changed_byte_counts": {
+    "1/S1071.DAT": 122,
+    "COMM.IMG": 196,
+    "PSX.EXE": 43
+  },
+  "full_output": {
+    "path": "E:\\korean\\03_output\\arc1_johab_font_poc_pilgi_FLOWFIX_TEST_ONLY_4891ECBD.zip",
+    "sha256": "4891ECBD68C6F1724470729C09BCA775C3119A56AC840936514113A13FFB73BC",
+    "size": 292309548
+  },
+  "patch_output": {
+    "path": "E:\\korean\\03_output\\arc1_johab_font_poc_pilgi_FLOWFIX_TEST_ONLY_patch_566D5F86.zip",
+    "sha256": "566D5F8646F387BF7581EF72B76960C753099B26A010AF247E5A05A47BCA12E5",
+    "size": 428686,
+    "members": [
+      "1/S1071.DAT",
+      "COMM.IMG",
+      "PSX.EXE"
+    ]
+  },
+  "runtime": "PENDING_USER_COLD_BOOT_NATURAL_DIALOGUE_PROGRESSION"
+}

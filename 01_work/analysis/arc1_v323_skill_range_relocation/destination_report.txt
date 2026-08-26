@@ -1,0 +1,13 @@
+V323 skill-range static destination audit
+original_comm_sha256=6C7565B6C326A99A29266482868F17A144FF7D15B871D7D8F8B852EC41014A26
+v322_comm_sha256=C81F48B805F3FF973C08DE14DE232DD2620612483FC0778A79BA2D2DC26E185B
+states_total=681
+states_read=681
+states_failed=0
+state_formats={'DUCCT': 629, 'DUCCU': 52}
+textured_packets_read=108546
+blank_aligned_candidates=436
+zero_observed_consumer_candidates=16
+selected_runtime_nonzero_states=107
+selected_runtime_nonzero_pixels=42175
+selected=page(10,1) uv(144,160) logical(1424,416)

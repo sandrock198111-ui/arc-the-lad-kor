@@ -1,0 +1,37 @@
+Arc the Lad 1 clean Pilgi johab font PoC - first-build runtime diagnosis
+date=2026-08-21
+decision=RENDERER PASS; INLINE FLOW FAIL; FIRST BUILD REJECTED
+
+state1=HASH-5BE24E86615D3D8A_1.sav
+state1_sha256=61B556B1369B2CAB729A8C59445C9377E01C80C2B7723E22563A883C74F89384
+state2=HASH-5BE24E86615D3D8A_2.sav
+state2_sha256=16D866192EE387A7361DF0937FD0CAF396F08C6833B527E180C6477553EAA653
+last_frame_size=3816838
+ram_offset=0x1A62 (validated from current hook/helper and loaded S1071 bytes)
+
+state1_loaded_member=1/S1071.DAT
+state1_mapping=RAM file+0xCF000
+state1_inline_pointer=0x801168F9
+state1_first_body_start=0x801168D6
+state1_first_payload_bytes=35
+state1_first_early_zero=0x801168F9
+state1_original_terminator=0x801168FD
+
+packet_array=0x801BE9BC
+packet_stride=52
+decoded_packets=20
+renderer_order=jung -> jong(if present) -> cho
+same_syllable_x=PASS
+x_advance=cho and stock blank only, 12 pixels
+clut_planes=0x7FC0..0x7FC3 PASS
+manifest_index_match=20/20
+state1_text_object=X178 Y36 ordinal20
+
+state2_scene_script_0x80116800_0x80117000=all zero
+state2_text_object=X0 Y0 ordinal0
+state2_stale_pointer=0x801168F9
+state2_interpretation=scene unloaded / forced context; not natural second dialogue
+
+root_cause=build_arc1_johab_font_poc.py padded each shortened body with early 0x00
+rejected_hypotheses=font component mapping; CLUT plane; cursor helper; loaded DAT mismatch
+next=preserve exact original terminator boundaries and runtime-proven E6 01 skeleton

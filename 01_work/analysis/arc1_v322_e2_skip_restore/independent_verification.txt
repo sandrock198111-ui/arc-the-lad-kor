@@ -1,0 +1,7 @@
+V322 independent static verification: PASS
+build_sha256=480924F970C441BA819BC1F2FA003ED430FA76509ED138C8B33F444044057B32
+changed_members=1/S1031.DAT,D/SD011.DAT
+changed_bytes=5 (slot +0x7F only)
+skip_values=7,10,9,4,11
+resume_offsets=0x47883,0x47B6C,0x47B7B,0x47D5E,0x47D6F
+runtime=PENDING user cold boot

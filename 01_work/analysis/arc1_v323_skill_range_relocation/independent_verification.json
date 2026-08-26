@@ -1,0 +1,67 @@
+{
+  "result": "PASS",
+  "build": "E:\\korean\\03_output\\arc1_v323_skill_range_relocation_TEST_ONLY_D57F9AC2.zip",
+  "build_sha256": "D57F9AC21E526304E43CCFAF266A412E1256CFC2C7C7FE8C1EB0AA5F8B8BD338",
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_psx_bytes": 735,
+  "comm_v322_byte_identical": true,
+  "all_dat_v322_byte_identical": true,
+  "helper": {
+    "address": "0x801A9BD8",
+    "bytes": 324,
+    "instructions": 81,
+    "jal_targets": [
+      "0x80177E4C"
+    ],
+    "r3000_load_delay": "PASS",
+    "stack_bytes": 464
+  },
+  "source": {
+    "raw_bytes": 1650,
+    "raw_sha256": "B0005B318220FC61C11C3290837A7DF245646254FFA5CEBE7EA9A11932C7F421",
+    "rle_bytes": 652,
+    "rle_sha256": "94CED131CFC00C7B4A249009DEA5BE2361ABC6DAF6C244EE9B6D134F621C7133",
+    "roundtrip": "PASS"
+  },
+  "upload_rectangles": [
+    [
+      960,
+      447,
+      25,
+      8
+    ],
+    [
+      960,
+      455,
+      25,
+      8
+    ],
+    [
+      960,
+      463,
+      25,
+      8
+    ],
+    [
+      960,
+      471,
+      25,
+      8
+    ],
+    [
+      960,
+      479,
+      25,
+      1
+    ]
+  ],
+  "old_tpage": "0x05",
+  "new_tpage": "0x1F",
+  "uv_v_range": [
+    191,
+    223
+  ],
+  "runtime": "PENDING user cold boot and expanded skill-range test"
+}

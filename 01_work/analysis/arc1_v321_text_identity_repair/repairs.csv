@@ -1,0 +1,6 @@
+﻿scene,member,location,before,after,expected
+1,1/S1072.DAT,0x4793B,?,괄,촌장: 이 말괄량이 덕분에 마침내 꺼지는구나.
+2,1/S1021.DAT,slot58+0x06,정,품,아버지의 유품인 갑옷과 검을 찾았다.
+3,1/S1031.DAT,slot0,legacy,current,엄마...
+4,D/SD011.DAT,slot10+slot11,legacy,current,그 불을 줘. 내가 다시 붙이고 올게.
+5,D/SD011.DAT,slot12+slot0,legacy,current,걱정 마. 불은 내가 다시 붙이고 올게.

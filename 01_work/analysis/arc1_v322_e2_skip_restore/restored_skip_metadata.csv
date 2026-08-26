@@ -1,0 +1,6 @@
+﻿member,slot,metadata_offset,v321_value,v322_value,caller_offset,resume_offset,skipped_9c_count,resume_prefix_hex
+1/S1031.DAT,0,0x4507F,0,7,0x4787A,0x47883,3,00 00
+D/SD011.DAT,10,0x4557F,0,10,0x47B60,0x47B6C,10,E4 1F
+D/SD011.DAT,11,0x455FF,0,9,0x47B70,0x47B7B,9,E4 33
+D/SD011.DAT,12,0x4567F,0,4,0x47D58,0x47D5E,4,E6 01
+D/SD011.DAT,0,0x4507F,0,11,0x47D62,0x47D6F,11,E4 79

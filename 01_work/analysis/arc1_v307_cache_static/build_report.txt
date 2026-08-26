@@ -1,0 +1,9 @@
+v307 TEST ONLY - cached glyphs made resident, cache pressure cut
+base=arc1_v306_v197_johab_TEST_ONLY_3EB347E8.zip
+output=arc1_v307_cache_static_TEST_ONLY_38F638C2.zip
+sha256=38F638C21A578921B256492BD5B462AA42FDAA555E07BBD1EB93F2E89453B811
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+cache entries at start=309   moved to atlas=238   still cached=71
+skipped (no pixels or no cell)=71
+cells used were blank in BOTH the original and v197 -- icons untouched
+runtime=PENDING user cold boot

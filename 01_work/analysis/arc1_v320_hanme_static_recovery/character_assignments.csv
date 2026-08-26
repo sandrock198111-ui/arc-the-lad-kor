@@ -1,0 +1,751 @@
+﻿char,unicode,width,occurrences,mode,code_hex,physical_index,virtual_slot,new_physical_plane,target_was_blank_in_v318
+ ,U+0020,1,23295,space,A1,160,,0,1
+!,U+0021,1,825,direct_new,A9,168,,1,1
+(,U+0028,1,56,direct_existing,A0,159,,0,0
+),U+0029,1,80,direct_existing,9C,155,,0,0
+",",U+002C,1,516,direct_new,B3,178,,1,1
+.,U+002E,1,4082,direct_existing,21,32,,0,0
+0,U+0030,1,137,direct_existing,91,144,,0,0
+1,U+0031,1,352,direct_existing,4A,73,,0,0
+2,U+0032,1,963,direct_existing,0B,10,,0,0
+4,U+0034,1,278,direct_existing,57,86,,0,0
+5,U+0035,1,73,direct_existing,9E,157,,0,0
+6,U+0036,1,70,direct_existing,9F,158,,0,0
+7,U+0037,1,114,direct_existing,9A,153,,0,0
+8,U+0038,1,858,direct_existing,10,15,,0,0
+?,U+003F,1,382,direct_new,D1,208,,1,1
+가,U+AC00,1,954,direct_existing,0C,11,,0,0
+거,U+AC70,1,451,direct_existing,32,49,,0,0
+것,U+AC83,1,371,direct_existing,18,23,,0,0
+게,U+AC8C,1,380,direct_existing,41,64,,0,0
+겠,U+ACA0,1,281,direct_existing,54,83,,0,0
+경,U+ACBD,1,213,direct_existing,68,103,,0,0
+고,U+ACE0,1,688,direct_existing,1C,27,,0,0
+구,U+AD6C,1,156,direct_existing,87,134,,0,0
+군,U+AD70,1,174,direct_existing,7C,123,,0,0
+그,U+ADF8,1,738,direct_existing,15,20,,0,0
+기,U+AE30,1,573,direct_existing,24,35,,0,0
+까,U+AE4C,1,406,direct_existing,3B,58,,0,0
+나,U+B098,1,673,direct_existing,1E,29,,0,0
+내,U+B0B4,1,363,direct_existing,47,70,,0,0
+너,U+B108,1,155,direct_existing,89,136,,0,0
+넣,U+B123,1,196,direct_existing,6F,110,,0,0
+네,U+B124,1,168,direct_existing,7E,125,,0,0
+는,U+B294,1,1095,direct_existing,06,5,,0,0
+니,U+B2C8,1,1067,direct_existing,07,6,,0,0
+다,U+B2E4,1,1551,direct_existing,01,0,,0,0
+대,U+B300,1,423,direct_existing,37,54,,0,0
+데,U+B370,1,163,direct_existing,81,128,,0,0
+도,U+B3C4,1,450,direct_existing,33,50,,0,0
+돌,U+B3CC,1,193,direct_existing,72,113,,0,0
+되,U+B418,1,187,direct_existing,73,114,,0,0
+들,U+B4E4,1,975,direct_existing,0A,9,,0,0
+때,U+B54C,1,182,direct_existing,77,118,,0,0
+량,U+B7C9,1,358,direct_new,D2,209,,1,1
+러,U+B7EC,1,180,direct_existing,20,31,,0,0
+려,U+B824,1,225,direct_existing,3C,59,,0,0
+령,U+B839,1,306,direct_existing,51,80,,0,0
+로,U+B85C,1,240,direct_new,D5,212,,1,1
+르,U+B974,1,194,direct_existing,70,111,,0,0
+를,U+B97C,1,433,direct_existing,36,53,,0,0
+리,U+B9AC,1,503,direct_existing,2E,45,,0,0
+마,U+B9C8,1,367,direct_existing,45,68,,0,0
+만,U+B9CC,1,419,direct_existing,38,55,,0,0
+말,U+B9D0,1,230,direct_existing,1B,26,,0,0
+면,U+BA74,1,361,direct_existing,3A,57,,0,0
+모,U+BAA8,1,281,direct_existing,55,84,,0,0
+몬,U+BAAC,1,224,direct_existing,64,99,,0,0
+무,U+BB34,1,242,direct_existing,5F,94,,0,0
+물,U+BB3C,1,199,direct_existing,6D,108,,0,0
+버,U+BC84,1,332,direct_existing,67,102,,0,0
+번,U+BC88,1,112,direct_existing,9B,154,,0,0
+변,U+BCC0,1,165,direct_existing,80,127,,0,0
+병,U+BCD1,1,160,direct_existing,82,129,,0,0
+보,U+BCF4,1,237,direct_existing,60,95,,0,0
+부,U+BD80,1,200,direct_existing,6C,107,,0,0
+분,U+BD84,1,135,direct_existing,92,145,,0,0
+사,U+C0AC,1,441,direct_existing,34,51,,0,0
+상,U+C0C1,1,149,direct_existing,8B,138,,0,0
+서,U+C11C,1,565,direct_existing,25,36,,0,0
+세,U+C138,1,149,direct_existing,8C,139,,0,0
+손,U+C190,1,156,direct_existing,85,132,,0,0
+수,U+C218,1,309,direct_existing,50,79,,0,0
+스,U+C2A4,1,547,direct_existing,30,47,,0,0
+습,U+C2B5,1,504,direct_existing,2D,44,,0,0
+승,U+C2B9,1,211,direct_existing,69,104,,0,0
+시,U+C2DC,1,536,direct_existing,29,40,,0,0
+신,U+C2E0,1,389,direct_existing,3E,61,,0,0
+심,U+C2EC,1,78,direct_existing,9D,156,,0,0
+십,U+C2ED,1,253,direct_existing,5D,92,,0,0
+아,U+C544,1,1285,direct_existing,09,8,,0,0
+안,U+C548,1,131,direct_existing,94,147,,0,0
+않,U+C54A,1,180,direct_existing,78,119,,0,0
+야,U+C57C,1,356,direct_existing,49,72,,0,0
+어,U+C5B4,1,743,direct_existing,14,19,,0,0
+없,U+C5C6,1,194,direct_existing,71,112,,0,0
+었,U+C5C8,1,236,direct_existing,61,96,,0,0
+에,U+C5D0,1,903,direct_existing,0E,13,,0,0
+여,U+C5EC,1,300,direct_existing,1A,25,,0,0
+오,U+C624,1,367,direct_existing,46,69,,0,0
+올,U+C62C,1,114,direct_existing,99,152,,0,0
+와,U+C640,1,156,direct_existing,88,135,,0,0
+왕,U+C655,1,205,direct_existing,6A,105,,0,0
+요,U+C694,1,223,direct_existing,2C,43,,0,0
+우,U+C6B0,1,400,direct_existing,3D,60,,0,0
+운,U+C6B4,1,156,direct_existing,86,133,,0,0
+원,U+C6D0,1,176,direct_existing,7B,122,,0,0
+위,U+C704,1,147,direct_existing,8E,141,,0,0
+유,U+C720,1,152,direct_existing,8A,137,,0,0
+으,U+C73C,1,314,direct_existing,4E,77,,0,0
+은,U+C740,1,555,direct_existing,26,37,,0,0
+을,U+C744,1,932,direct_existing,0D,12,,0,0
+음,U+C74C,1,149,direct_existing,8D,140,,0,0
+의,U+C758,1,896,direct_existing,0F,14,,0,0
+인,U+C778,1,438,direct_existing,35,52,,0,0
+일,U+C77C,1,203,direct_existing,6B,106,,0,0
+입,U+C785,1,167,direct_existing,7F,126,,0,0
+있,U+C788,1,671,direct_existing,1F,30,,0,0
+자,U+C790,1,539,direct_existing,28,39,,0,0
+장,U+C7A5,1,279,direct_existing,56,85,,0,0
+전,U+C804,1,312,direct_existing,4F,78,,0,0
+정,U+C815,1,460,direct_existing,31,48,,0,0
+제,U+C81C,1,222,direct_existing,66,101,,0,0
+조,U+C870,1,142,direct_existing,90,143,,0,0
+주,U+C8FC,1,381,direct_existing,40,63,,0,0
+지,U+C9C0,1,1186,direct_existing,04,3,,0,0
+초,U+CD08,1,571,direct_existing,39,56,,0,0
+촌,U+CD0C,1,124,direct_existing,96,149,,0,0
+출,U+CD9C,1,184,direct_existing,76,117,,0,0
+크,U+D06C,1,275,direct_existing,58,87,,0,0
+큰,U+D070,1,232,direct_new,AA,169,,1,1
+터,U+D130,1,260,direct_existing,02,1,,0,0
+토,U+D1A0,1,160,direct_existing,83,130,,0,0
+페,U+D398,1,4641,direct_new,D3,210,,1,1
+핀,U+D540,1,370,direct_existing,43,66,,0,0
+하,U+D558,1,704,direct_existing,19,24,,0,0
+한,U+D55C,1,281,direct_existing,53,82,,0,0
+할,U+D560,1,169,direct_existing,7D,124,,0,0
+해,U+D574,1,521,direct_existing,2B,42,,0,0
+회,U+D68C,1,177,direct_existing,7A,121,,0,0
+힘,U+D798,1,187,direct_existing,74,115,,0,0
+ ,U+0020,2,156,space,DE FA,724,,0,1
+:,U+003A,2,1149,direct_existing,DD 02,221,,0,0
+?,U+003F,2,520,direct_existing,DD 03,222,,0,0
+M,U+004D,2,9,direct_new,DF 0B,740,,1,1
+P,U+0050,2,17,direct_existing,DE 07,481,,0,0
+R,U+0052,2,6,direct_existing,DE 88,610,,0,0
+|,U+007C,2,26,direct_new,DF 0F,744,,1,1
+…,U+2026,2,11,virtual_static_new,EA 9F,747,412,1,1
+가,U+AC00,2,37,virtual_static_existing,E9 02,11,1,0,0
+각,U+AC01,2,42,direct_existing,DD 6D,328,,0,0
+간,U+AC04,2,83,direct_existing,DD 1B,246,,0,0
+감,U+AC10,2,39,direct_existing,DD 77,338,,0,0
+갑,U+AC11,2,16,direct_existing,DE 0C,486,,0,0
+값,U+AC12,2,2,direct_existing,DE 60,570,,0,0
+강,U+AC15,2,72,direct_existing,DD 28,259,,0,0
+같,U+AC19,2,48,direct_existing,DD 5A,309,,0,0
+갚,U+AC1A,2,6,direct_existing,DE 81,603,,0,0
+개,U+AC1C,2,37,direct_existing,DD B4,399,,0,0
+갯,U+AC2F,2,1,virtual_static_new,EA 1B,748,280,1,1
+거,U+AC70,2,6,virtual_static_existing,E9 0C,49,11,0,0
+걱,U+AC71,2,6,direct_existing,DE 80,602,,0,0
+건,U+AC74,2,88,direct_existing,DD 16,241,,0,0
+걸,U+AC78,2,34,direct_existing,DD 8E,361,,0,0
+검,U+AC80,2,30,direct_existing,DD A1,380,,0,0
+겁,U+AC81,2,19,direct_existing,DD EE,457,,0,0
+것,U+AC83,2,2,virtual_static_existing,E9 14,23,19,0,0
+게,U+AC8C,2,14,virtual_static_existing,E9 0E,64,13,0,0
+겐,U+AC90,2,41,direct_existing,DD A9,388,,0,0
+겠,U+ACA0,2,8,virtual_static_existing,E9 0A,83,9,0,0
+겨,U+ACA8,2,25,direct_existing,DD BD,408,,0,0
+격,U+ACA9,2,110,direct_existing,DD 0A,229,,0,0
+견,U+ACAC,2,17,direct_existing,DE 0A,484,,0,0
+결,U+ACB0,2,54,direct_existing,DD 47,290,,0,0
+겸,U+ACB8,2,7,direct_existing,DE 72,588,,0,0
+겼,U+ACBC,2,3,virtual_static_new,E9 CF,749,206,1,1
+경,U+ACBD,2,14,virtual_static_existing,E9 0D,103,12,0,0
+계,U+ACC4,2,93,direct_existing,DD 11,236,,0,0
+고,U+ACE0,2,20,virtual_static_existing,E9 17,27,22,0,0
+곤,U+ACE4,2,5,direct_existing,DE 9B,629,,0,0
+곧,U+ACE7,2,16,direct_existing,DE 0E,488,,0,0
+골,U+ACE8,2,2,virtual_static_new,EA 1E,750,283,1,1
+곳,U+ACF3,2,89,direct_existing,DD 15,240,,0,0
+공,U+ACF5,2,93,direct_existing,DD 10,235,,0,0
+과,U+ACFC,2,95,direct_existing,DD 18,243,,0,0
+관,U+AD00,2,15,direct_existing,DE 1D,503,,0,0
+광,U+AD11,2,7,virtual_static_new,E9 56,751,85,1,1
+괜,U+AD1C,2,62,direct_existing,DD 3B,278,,0,0
+괴,U+AD34,2,39,direct_existing,DD 75,336,,0,0
+굉,U+AD49,2,10,direct_existing,DE 51,555,,0,0
+교,U+AD50,2,3,direct_existing,DE D1,683,,0,0
+구,U+AD6C,2,13,virtual_static_existing,E9 16,134,21,0,0
+국,U+AD6D,2,100,direct_existing,DD 0B,230,,0,0
+군,U+AD70,2,13,virtual_static_existing,E9 26,123,37,0,0
+굴,U+AD74,2,8,direct_existing,DE 67,577,,0,0
+권,U+AD8C,2,3,direct_existing,DE C8,674,,0,0
+궤,U+ADA4,2,31,direct_existing,DD 9E,377,,0,0
+귀,U+ADC0,2,8,direct_existing,DE 6C,582,,0,0
+그,U+ADF8,2,13,virtual_static_existing,E9 19,20,24,0,0
+극,U+ADF9,2,10,virtual_static_new,EA 20,752,285,1,1
+근,U+ADFC,2,7,direct_existing,DE 73,589,,0,0
+금,U+AE08,2,53,direct_existing,DD 4A,293,,0,0
+급,U+AE09,2,4,direct_existing,DE BE,664,,0,0
+긋,U+AE0B,2,2,direct_existing,DE DC,694,,0,0
+기,U+AE30,2,22,virtual_static_existing,E9 1B,35,26,0,0
+긴,U+AE34,2,18,direct_existing,DD FB,470,,0,0
+길,U+AE38,2,33,direct_existing,DD 95,368,,0,0
+까,U+AE4C,2,8,virtual_static_existing,E9 0F,58,14,0,0
+깐,U+AE50,2,7,direct_existing,DE 71,587,,0,0
+깨,U+AE68,2,10,direct_existing,DE 46,544,,0,0
+꺄,U+AE84,2,2,direct_existing,DE DF,697,,0,0
+꺼,U+AEBC,2,10,direct_existing,DE 47,545,,0,0
+껍,U+AECD,2,1,virtual_static_new,EA 21,753,286,1,1
+껏,U+AECF,2,6,direct_existing,DE 8B,613,,0,0
+께,U+AED8,2,79,direct_existing,DD 20,251,,0,0
+껴,U+AEF4,2,3,direct_existing,DE C6,672,,0,0
+꼭,U+AF2D,2,2,direct_new,DF 19,754,,1,1
+꽃,U+AF43,2,34,direct_existing,DD 8C,359,,0,0
+꾀,U+AF80,2,2,virtual_static_new,E9 49,756,72,1,1
+뀌,U+B00C,2,4,direct_existing,DE AB,645,,0,0
+끈,U+B048,2,11,direct_existing,DE 40,538,,0,0
+끌,U+B04C,2,8,direct_existing,DE 6A,580,,0,0
+끓,U+B053,2,1,direct_existing,DE F7,721,,0,0
+끔,U+B054,2,6,direct_existing,DE 8A,612,,0,0
+끝,U+B05D,2,30,direct_existing,DD A3,382,,0,0
+끼,U+B07C,2,7,direct_existing,DE 7C,598,,0,0
+나,U+B098,2,23,virtual_static_existing,E9 20,29,31,0,0
+낙,U+B099,2,9,direct_existing,DE 5A,564,,0,0
+난,U+B09C,2,43,direct_existing,DD 6A,325,,0,0
+날,U+B0A0,2,45,direct_existing,DD 61,316,,0,0
+남,U+B0A8,2,62,direct_existing,DD 3D,280,,0,0
+낫,U+B0AB,2,1,virtual_static_new,EA 23,757,288,1,1
+났,U+B0AC,2,10,direct_existing,DE 55,559,,0,0
+낳,U+B0B3,2,8,direct_existing,DE 6D,583,,0,0
+내,U+B0B4,2,2,virtual_static_existing,E9 23,70,34,0,0
+낼,U+B0BC,2,13,direct_existing,DE 2C,518,,0,0
+냈,U+B0C8,2,2,direct_existing,DE E8,706,,0,0
+냉,U+B0C9,2,1,virtual_static_new,EA 24,758,289,1,1
+냐,U+B0D0,2,50,direct_existing,DD 51,300,,0,0
+너,U+B108,2,1,virtual_static_existing,E9 24,136,35,0,0
+넘,U+B118,2,18,direct_existing,DD F4,463,,0,0
+넣,U+B123,2,2,virtual_static_existing,E9 27,110,38,0,0
+네,U+B124,2,2,virtual_static_existing,EA 25,125,290,0,0
+녀,U+B140,2,35,direct_existing,DD 87,354,,0,0
+년,U+B144,2,29,direct_existing,DD A5,384,,0,0
+념,U+B150,2,1,direct_existing,DE F6,720,,0,0
+녔,U+B154,2,4,direct_existing,DE B0,650,,0,0
+노,U+B178,2,49,direct_existing,DD 57,306,,0,0
+놀,U+B180,2,6,direct_existing,DE 84,606,,0,0
+놈,U+B188,2,35,direct_existing,DD 84,351,,0,0
+놓,U+B193,2,14,direct_existing,DE 23,509,,0,0
+뇌,U+B1CC,2,2,virtual_static_new,EA 26,759,291,1,1
+누,U+B204,2,49,direct_existing,DD 55,304,,0,0
+눈,U+B208,2,16,direct_existing,DE 0D,487,,0,0
+느,U+B290,2,33,direct_existing,DD 99,372,,0,0
+는,U+B294,2,13,virtual_static_existing,E9 2A,5,41,0,0
+늘,U+B298,2,40,direct_existing,DD 71,332,,0,0
+능,U+B2A5,2,19,direct_existing,DD ED,456,,0,0
+늪,U+B2AA,2,3,direct_existing,DE CF,681,,0,0
+니,U+B2C8,2,40,virtual_static_existing,E9 2C,6,43,0,0
+닌,U+B2CC,2,21,direct_existing,DD DF,442,,0,0
+님,U+B2D8,2,85,direct_existing,DD 2E,265,,0,0
+닙,U+B2D9,2,10,direct_existing,DE 49,547,,0,0
+다,U+B2E4,2,51,virtual_static_existing,E9 2D,0,44,0,0
+단,U+B2E8,2,65,direct_existing,DD 35,272,,0,0
+달,U+B2EC,2,9,direct_existing,DE 5F,569,,0,0
+담,U+B2F4,2,4,direct_existing,DE B8,658,,0,0
+답,U+B2F5,2,5,direct_existing,DE A0,634,,0,0
+닷,U+B2F7,2,1,virtual_static_new,EA 28,760,293,1,1
+당,U+B2F9,2,82,direct_existing,DD 1C,247,,0,0
+대,U+B300,2,149,virtual_static_existing,E9 31,54,48,0,0
+더,U+B354,2,33,direct_existing,DD 96,369,,0,0
+던,U+B358,2,73,direct_existing,DD 25,256,,0,0
+덤,U+B364,2,2,direct_existing,DE E7,705,,0,0
+덮,U+B36E,2,1,direct_existing,DE EE,712,,0,0
+데,U+B370,2,15,virtual_static_existing,E9 07,128,6,0,0
+덴,U+B374,2,2,virtual_static_new,EA 29,761,294,1,1
+델,U+B378,2,19,direct_existing,DD E9,452,,0,0
+도,U+B3C4,2,7,virtual_static_existing,E9 36,50,53,0,0
+독,U+B3C5,2,6,virtual_static_new,EA 2A,763,295,1,1
+돌,U+B3CC,2,5,virtual_static_existing,E9 37,113,54,0,0
+동,U+B3D9,2,68,direct_existing,DD 32,269,,0,0
+돼,U+B3FC,2,22,direct_existing,DD CC,423,,0,0
+됐,U+B410,2,21,direct_existing,DD DC,439,,0,0
+되,U+B418,2,2,virtual_static_existing,E9 39,114,56,0,0
+된,U+B41C,2,24,direct_existing,DD C6,417,,0,0
+될,U+B420,2,22,direct_existing,DD D9,436,,0,0
+됩,U+B429,2,28,direct_existing,DD AE,393,,0,0
+두,U+B450,2,115,direct_existing,DD 21,252,,0,0
+둔,U+B454,2,30,virtual_static_new,EA 2B,764,296,1,1
+둘,U+B458,2,26,direct_existing,DD BB,406,,0,0
+둬,U+B46C,2,2,direct_existing,DE E0,698,,0,0
+뒤,U+B4A4,2,1,virtual_static_existing,E9 22,74,33,0,0
+드,U+B4DC,2,75,direct_existing,DD 23,254,,0,0
+든,U+B4E0,2,73,direct_existing,DD 26,257,,0,0
+듣,U+B4E3,2,15,direct_existing,DE 21,507,,0,0
+들,U+B4E4,2,2,direct_new,DF 24,765,,1,1
+듦,U+B4E6,2,1,virtual_static_new,EA 2D,766,298,1,1
+듯,U+B4EF,2,9,direct_existing,DE 5B,565,,0,0
+등,U+B4F1,2,1,direct_existing,DE F5,719,,0,0
+디,U+B514,2,23,direct_existing,DD CD,424,,0,0
+딘,U+B518,2,6,direct_existing,DE 91,619,,0,0
+따,U+B530,2,26,direct_existing,DD B9,404,,0,0
+딸,U+B538,2,5,direct_existing,DE A5,639,,0,0
+땅,U+B545,2,10,direct_existing,DE 53,557,,0,0
+때,U+B54C,2,3,virtual_static_existing,E9 01,118,0,0,0
+떠,U+B5A0,2,19,direct_existing,DD E8,451,,0,0
+떨,U+B5A8,2,4,direct_existing,DE B5,655,,0,0
+떻,U+B5BB,2,56,direct_existing,DD 44,287,,0,0
+또,U+B610,2,10,direct_existing,DE 4F,553,,0,0
+뛸,U+B6F8,2,1,direct_existing,DE F0,714,,0,0
+뜨,U+B728,2,16,direct_existing,DE 0B,485,,0,0
+띄,U+B744,2,1,virtual_static_new,EA 2E,767,299,1,1
+띠,U+B760,2,7,direct_existing,DE 7A,596,,0,0
+라,U+B77C,2,475,direct_existing,DD 05,224,,0,0
+락,U+B77D,2,7,virtual_static_new,EA 30,768,301,1,1
+란,U+B780,2,11,direct_existing,DE 3E,536,,0,0
+람,U+B78C,2,79,direct_existing,DD 22,253,,0,0
+랑,U+B791,2,7,direct_existing,DE 74,590,,0,0
+래,U+B798,2,92,direct_existing,DD 12,237,,0,0
+랙,U+B799,2,1,virtual_static_new,EA 32,769,303,1,1
+랜,U+B79C,2,2,direct_existing,DE E2,700,,0,0
+랩,U+B7A9,2,1,virtual_static_new,EA 33,770,304,1,1
+러,U+B7EC,2,11,virtual_static_existing,E9 42,31,65,0,0
+런,U+B7F0,2,70,direct_existing,DD 2A,261,,0,0
+럼,U+B7FC,2,53,direct_existing,DD 49,292,,0,0
+럽,U+B7FD,2,3,direct_existing,DE C5,671,,0,0
+렇,U+B807,2,51,direct_existing,DD 4D,296,,0,0
+레,U+B808,2,45,direct_existing,DD 66,321,,0,0
+렉,U+B809,2,1,virtual_static_new,EA 34,771,305,1,1
+렌,U+B80C,2,27,direct_existing,DD B0,395,,0,0
+렘,U+B818,2,2,virtual_static_new,EA 35,772,306,1,1
+렛,U+B81B,2,1,virtual_static_new,EA 36,773,307,1,1
+려,U+B824,2,1,virtual_static_existing,E9 46,59,69,0,0
+력,U+B825,2,70,direct_existing,DD 2B,262,,0,0
+련,U+B828,2,24,direct_existing,DD C5,416,,0,0
+렬,U+B82C,2,1,virtual_static_new,EA 37,775,308,1,1
+렴,U+B834,2,9,direct_existing,DE 58,562,,0,0
+렸,U+B838,2,32,direct_existing,DD 9B,374,,0,0
+령,U+B839,2,1,virtual_static_existing,E9 48,80,71,0,0
+례,U+B840,2,7,virtual_static_new,E9 34,776,51,1,1
+로,U+B85C,2,457,direct_existing,DD 04,223,,0,0
+록,U+B85D,2,40,direct_existing,DD 72,333,,0,0
+론,U+B860,2,28,direct_new,DF 30,777,,1,1
+뢰,U+B8B0,2,2,virtual_static_new,EA 39,778,310,1,1
+료,U+B8CC,2,16,direct_existing,DE 12,492,,0,0
+루,U+B8E8,2,58,direct_existing,DD 42,285,,0,0
+룬,U+B8EC,2,1,virtual_static_new,EA 3A,779,311,1,1
+류,U+B958,2,42,direct_existing,DD 6E,329,,0,0
+률,U+B960,2,5,virtual_static_new,EA 3B,820,312,1,1
+르,U+B974,2,7,virtual_static_existing,E9 4C,111,75,0,0
+른,U+B978,2,25,direct_existing,DD BF,410,,0,0
+를,U+B97C,2,14,virtual_static_existing,E9 4D,53,76,0,0
+름,U+B984,2,11,direct_existing,DE 38,530,,0,0
+리,U+B9AC,2,41,virtual_static_existing,E9 4F,45,78,0,0
+릭,U+B9AD,2,4,direct_existing,DE 70,586,,0,0
+린,U+B9B0,2,22,direct_existing,DD D4,431,,0,0
+릴,U+B9B4,2,23,direct_existing,DD CA,421,,0,0
+립,U+B9BD,2,13,direct_existing,DE 2F,521,,0,0
+링,U+B9C1,2,7,direct_existing,DE 54,558,,0,0
+마,U+B9C8,2,47,virtual_static_existing,E9 52,68,81,0,0
+막,U+B9C9,2,28,direct_existing,DD AB,390,,0,0
+만,U+B9CC,2,6,virtual_static_existing,E9 54,55,83,0,0
+많,U+B9CE,2,28,direct_existing,DD AC,391,,0,0
+말,U+B9D0,2,3,virtual_static_existing,E9 1C,26,27,0,0
+맙,U+B9D9,2,3,direct_existing,DE CA,676,,0,0
+망,U+B9DD,2,43,direct_existing,DD 6B,326,,0,0
+맞,U+B9DE,2,27,direct_existing,DD B1,396,,0,0
+맡,U+B9E1,2,25,direct_existing,DD C0,411,,0,0
+매,U+B9E4,2,24,direct_existing,DD C9,420,,0,0
+맨,U+B9E8,2,17,direct_existing,DE 08,482,,0,0
+맵,U+B9F5,2,2,direct_existing,DE D8,690,,0,0
+머,U+BA38,2,46,direct_existing,DD 5D,312,,0,0
+먹,U+BA39,2,8,direct_existing,DE 66,576,,0,0
+먼,U+BA3C,2,25,direct_existing,DD C1,412,,0,0
+멋,U+BA4B,2,3,direct_existing,DE C4,670,,0,0
+메,U+BA54,2,70,direct_existing,DD 2C,263,,0,0
+멘,U+BA58,2,6,direct_existing,DE 8C,614,,0,0
+며,U+BA70,2,15,direct_existing,DE 1F,505,,0,0
+면,U+BA74,2,12,virtual_static_existing,E9 5C,57,91,0,0
+멸,U+BA78,2,21,direct_existing,DD DD,440,,0,0
+명,U+BA85,2,67,direct_existing,DD 34,271,,0,0
+몇,U+BA87,2,1,direct_existing,DE F4,718,,0,0
+모,U+BAA8,2,39,virtual_static_existing,E9 5F,84,94,0,0
+목,U+BAA9,2,68,direct_existing,DD 33,270,,0,0
+몬,U+BAAC,2,8,virtual_static_existing,E9 61,99,96,0,0
+몰,U+BAB0,2,23,direct_existing,DD CE,425,,0,0
+못,U+BABB,2,39,direct_existing,DD 76,337,,0,0
+무,U+BB34,2,11,virtual_static_existing,E9 64,94,99,0,0
+묵,U+BB35,2,3,virtual_static_new,EA 3F,824,316,1,1
+문,U+BB38,2,28,direct_existing,DD AF,394,,0,0
+물,U+BB3C,2,8,virtual_static_existing,E9 66,108,101,0,0
+뭐,U+BB50,2,46,direct_existing,DD 60,315,,0,0
+뭔,U+BB54,2,18,direct_existing,DD F9,468,,0,0
+뭘,U+BB58,2,6,direct_existing,DE 85,607,,0,0
+므,U+BBC0,2,7,direct_existing,DE 7B,597,,0,0
+미,U+BBF8,2,68,direct_existing,DD 2F,266,,0,0
+민,U+BBFC,2,19,direct_existing,DD EC,455,,0,0
+믿,U+BBFF,2,22,direct_existing,DD DB,438,,0,0
+밀,U+BC00,2,12,direct_existing,DE 33,525,,0,0
+바,U+BC14,2,109,direct_existing,DD 08,227,,0,0
+박,U+BC15,2,5,direct_existing,DE 9F,633,,0,0
+밖,U+BC16,2,22,direct_existing,DD D6,433,,0,0
+반,U+BC18,2,55,direct_existing,DD 46,289,,0,0
+받,U+BC1B,2,86,direct_existing,DD 19,244,,0,0
+발,U+BC1C,2,94,direct_existing,DD 0E,233,,0,0
+밤,U+BC24,2,4,direct_existing,DE AA,644,,0,0
+방,U+BC29,2,71,direct_existing,DD 29,260,,0,0
+배,U+BC30,2,34,direct_existing,DD 93,366,,0,0
+백,U+BC31,2,3,virtual_static_new,E9 87,825,134,1,1
+버,U+BC84,2,2,virtual_static_existing,E9 11,102,16,0,0
+번,U+BC88,2,62,direct_existing,DD 3E,281,,0,0
+벌,U+BC8C,2,20,direct_existing,DD E4,447,,0,0
+범,U+BC94,2,8,direct_existing,DE 63,573,,0,0
+법,U+BC95,2,65,direct_existing,DD 37,274,,0,0
+벗,U+BC97,2,3,virtual_static_new,E9 06,826,5,1,1
+베,U+BCA0,2,18,direct_existing,DD FE,473,,0,0
+벽,U+BCBD,2,6,direct_existing,DE 92,620,,0,0
+변,U+BCC0,2,11,virtual_static_existing,E9 74,127,115,0,0
+별,U+BCC4,2,18,direct_existing,DD F3,462,,0,0
+보,U+BCF4,2,7,virtual_static_existing,E9 77,95,118,0,0
+볼,U+BCFC,2,17,direct_existing,DD 50,299,,0,0
+봉,U+BD09,2,26,direct_existing,DD B6,401,,0,0
+봐,U+BD10,2,21,direct_existing,DD DE,441,,0,0
+봤,U+BD24,2,3,direct_existing,DE C7,673,,0,0
+부,U+BD80,2,22,virtual_static_existing,E9 7B,107,122,0,0
+북,U+BD81,2,8,direct_existing,DE 64,574,,0,0
+분,U+BD84,2,2,virtual_static_existing,E9 7D,145,124,0,0
+불,U+BD88,2,91,direct_existing,DD 13,238,,0,0
+붕,U+BD95,2,2,direct_existing,DE EC,710,,0,0
+붙,U+BD99,2,12,direct_existing,DE 32,524,,0,0
+뷰,U+BDF0,2,1,virtual_static_new,EA 46,827,323,1,1
+브,U+BE0C,2,24,direct_existing,DD C8,419,,0,0
+블,U+BE14,2,1,virtual_static_new,EA 47,828,324,1,1
+비,U+BE44,2,131,direct_existing,DD 06,225,,0,0
+빌,U+BE4C,2,29,direct_existing,DD A7,386,,0,0
+빙,U+BE59,2,2,virtual_static_new,EA 48,829,325,1,1
+빛,U+BE5B,2,25,direct_existing,DD C4,415,,0,0
+빠,U+BE60,2,11,direct_existing,DE 35,527,,0,0
+빨,U+BE68,2,15,direct_existing,DE 20,506,,0,0
+빼,U+BE7C,2,16,direct_existing,DE 13,493,,0,0
+뿐,U+BFD0,2,22,direct_existing,DD D3,430,,0,0
+뿔,U+BFD4,2,2,direct_existing,DE E1,699,,0,0
+쁘,U+C058,2,5,direct_existing,DE A8,642,,0,0
+쁜,U+C05C,2,6,direct_existing,DE 8E,616,,0,0
+사,U+C0AC,2,31,virtual_static_existing,E9 83,51,130,0,0
+산,U+C0B0,2,55,direct_existing,DD 45,288,,0,0
+살,U+C0B4,2,30,direct_existing,DD A2,381,,0,0
+삼,U+C0BC,2,6,direct_existing,DE 7E,600,,0,0
+상,U+C0C1,2,60,virtual_static_existing,E9 85,138,132,0,0
+새,U+C0C8,2,11,direct_existing,DE 3D,535,,0,0
+샘,U+C0D8,2,3,direct_existing,DE CC,678,,0,0
+생,U+C0DD,2,65,direct_existing,DD 36,273,,0,0
+샤,U+C0E4,2,9,direct_existing,DE 5C,566,,0,0
+샬,U+C0EC,2,2,virtual_static_new,EA 4D,830,330,1,1
+서,U+C11C,2,25,virtual_static_existing,E9 88,36,135,0,0
+석,U+C11D,2,35,direct_existing,DD 8B,358,,0,0
+섞,U+C11E,2,1,direct_new,DF 66,831,,1,1
+선,U+C120,2,50,direct_existing,DD 53,302,,0,0
+설,U+C124,2,32,direct_existing,DE 28,514,,0,0
+섯,U+C12F,2,14,direct_existing,DE 25,511,,0,0
+성,U+C131,2,87,direct_existing,DD 17,242,,0,0
+세,U+C138,2,10,virtual_static_existing,E9 1D,139,28,0,0
+셈,U+C148,2,7,direct_existing,DE 76,592,,0,0
+셔,U+C154,2,4,direct_existing,DE B3,653,,0,0
+션,U+C158,2,1,virtual_static_new,EA 51,832,334,1,1
+셨,U+C168,2,22,direct_existing,DD D5,432,,0,0
+소,U+C18C,2,125,direct_existing,DD 07,226,,0,0
+속,U+C18D,2,54,direct_existing,DD 5F,314,,0,0
+손,U+C190,2,1,virtual_static_existing,E9 05,132,4,0,0
+송,U+C1A1,2,13,direct_existing,DE 30,522,,0,0
+쇠,U+C1E0,2,3,direct_existing,DE C2,668,,0,0
+수,U+C218,2,64,virtual_static_existing,E9 8D,79,140,0,0
+순,U+C21C,2,3,direct_existing,DE CE,680,,0,0
+술,U+C220,2,20,direct_existing,DD E5,448,,0,0
+숲,U+C232,2,33,direct_existing,DD 97,370,,0,0
+슈,U+C288,2,35,direct_existing,DD 86,353,,0,0
+스,U+C2A4,2,75,direct_new,DF 68,833,,1,1
+슨,U+C2A8,2,31,direct_existing,DD A0,379,,0,0
+슬,U+C2AC,2,18,direct_existing,DD FC,471,,0,0
+습,U+C2B5,2,18,virtual_static_existing,E9 15,44,20,0,0
+슷,U+C2B7,2,4,direct_existing,DE BD,663,,0,0
+시,U+C2DC,2,39,virtual_static_existing,E9 93,40,146,0,0
+식,U+C2DD,2,27,direct_existing,DD B5,400,,0,0
+신,U+C2E0,2,11,virtual_static_existing,E9 95,61,148,0,0
+실,U+C2E4,2,73,direct_existing,DD 27,258,,0,0
+심,U+C2EC,2,3,virtual_static_existing,E9 97,156,150,0,0
+싱,U+C2F1,2,14,direct_existing,DE 26,512,,0,0
+싶,U+C2F6,2,51,direct_existing,DD 4E,297,,0,0
+싸,U+C2F8,2,90,direct_existing,DD 14,239,,0,0
+써,U+C368,2,24,direct_existing,DD C7,418,,0,0
+썩,U+C369,2,3,virtual_static_new,E9 82,834,129,1,1
+썬,U+C36C,2,1,virtual_static_new,EA 56,835,339,1,1
+쓰,U+C4F0,2,35,direct_existing,DD 85,352,,0,0
+쓴,U+C4F4,2,4,direct_existing,DE B1,651,,0,0
+쓸,U+C4F8,2,9,direct_existing,DE 57,561,,0,0
+씀,U+C500,2,11,direct_existing,DE 3B,533,,0,0
+씩,U+C529,2,5,direct_new,DF 6B,836,,1,1
+아,U+C544,2,47,virtual_static_existing,E9 9A,8,153,0,0
+악,U+C545,2,19,direct_existing,DD EB,454,,0,0
+안,U+C548,2,5,virtual_static_existing,E9 9C,147,155,0,0
+않,U+C54A,2,1,virtual_static_existing,E9 03,119,2,0,0
+알,U+C54C,2,79,direct_existing,DD 1E,249,,0,0
+암,U+C554,2,9,virtual_static_new,EA 58,837,341,1,1
+압,U+C555,2,1,virtual_static_new,EA 59,838,342,1,1
+앗,U+C557,2,30,direct_existing,DD A4,383,,0,0
+았,U+C558,2,69,direct_existing,DD 2D,264,,0,0
+앙,U+C559,2,1,direct_existing,DE F9,723,,0,0
+앞,U+C55E,2,26,direct_existing,DD BA,405,,0,0
+애,U+C560,2,16,direct_existing,DE 0F,489,,0,0
+액,U+C561,2,4,direct_existing,DE BC,662,,0,0
+앵,U+C575,2,2,virtual_static_new,EA 5B,839,344,1,1
+약,U+C57D,2,54,direct_existing,DD 48,291,,0,0
+양,U+C591,2,36,direct_existing,DD 82,349,,0,0
+어,U+C5B4,2,18,virtual_static_existing,E9 A1,19,160,0,0
+억,U+C5B5,2,9,direct_existing,DD 52,301,,0,0
+언,U+C5B8,2,68,direct_existing,DD 30,267,,0,0
+얻,U+C5BB,2,32,direct_existing,DD 9C,375,,0,0
+얼,U+C5BC,2,6,direct_existing,DE 93,621,,0,0
+엄,U+C5C4,2,17,direct_existing,DE 03,477,,0,0
+업,U+C5C5,2,5,direct_existing,DE 9E,632,,0,0
+없,U+C5C6,2,6,virtual_static_existing,E9 A3,112,162,0,0
+엇,U+C5C7,2,29,direct_existing,DD A8,387,,0,0
+었,U+C5C8,2,12,virtual_static_existing,E9 1A,96,25,0,0
+에,U+C5D0,2,25,virtual_static_existing,E9 A4,13,163,0,0
+엑,U+C5D1,2,2,virtual_static_new,E9 73,864,114,1,1
+엔,U+C5D4,2,10,direct_existing,DE 44,542,,0,0
+엘,U+C5D8,2,8,direct_existing,DE 68,578,,0,0
+여,U+C5EC,2,7,virtual_static_existing,E9 A5,25,164,0,0
+역,U+C5ED,2,34,direct_existing,DD 91,364,,0,0
+연,U+C5F0,2,28,direct_existing,DD AD,392,,0,0
+열,U+C5F4,2,35,direct_existing,DD 89,356,,0,0
+염,U+C5FC,2,3,virtual_static_new,EA 60,866,349,1,1
+엽,U+C5FD,2,2,direct_existing,DE DA,692,,0,0
+였,U+C600,2,15,direct_existing,DE 16,496,,0,0
+영,U+C601,2,18,direct_existing,DD FA,469,,0,0
+옆,U+C606,2,4,direct_existing,DE AD,647,,0,0
+예,U+C608,2,2,virtual_static_existing,E9 25,150,36,0,0
+옛,U+C61B,2,10,direct_existing,DE 4E,552,,0,0
+오,U+C624,2,7,virtual_static_existing,E9 A8,69,167,0,0
+옥,U+C625,2,11,direct_existing,DE 39,531,,0,0
+온,U+C628,2,47,direct_existing,DD 5C,311,,0,0
+올,U+C62C,2,3,virtual_static_existing,E9 AA,152,169,0,0
+옮,U+C62E,2,2,direct_existing,DE E4,702,,0,0
+옷,U+C637,2,5,direct_existing,DE 99,627,,0,0
+와,U+C640,2,7,virtual_static_existing,E9 AC,135,171,0,0
+왔,U+C654,2,35,direct_existing,DD 88,355,,0,0
+왕,U+C655,2,6,virtual_static_existing,E9 AD,105,172,0,0
+왠,U+C660,2,1,virtual_static_new,E9 D5,867,212,1,1
+요,U+C694,2,18,virtual_static_existing,E9 AF,43,174,0,0
+욕,U+C695,2,20,direct_existing,DD E3,446,,0,0
+용,U+C6A9,2,84,direct_existing,DD 1A,245,,0,0
+우,U+C6B0,2,12,virtual_static_existing,E9 B1,60,176,0,0
+운,U+C6B4,2,4,virtual_static_existing,E9 B2,133,177,0,0
+울,U+C6B8,2,34,direct_existing,DD 92,365,,0,0
+움,U+C6C0,2,41,direct_existing,DD 70,331,,0,0
+워,U+C6CC,2,44,direct_existing,DD 68,323,,0,0
+원,U+C6D0,2,12,virtual_static_existing,E9 B5,122,180,0,0
+월,U+C6D4,2,2,direct_existing,DE E5,703,,0,0
+위,U+C704,2,6,virtual_static_existing,E9 B6,141,181,0,0
+윈,U+C708,2,1,virtual_static_new,EA 64,868,353,1,1
+유,U+C720,2,10,virtual_static_existing,E9 B7,137,182,0,0
+으,U+C73C,2,13,direct_new,DF 8C,869,,1,1
+은,U+C740,2,7,virtual_static_existing,E9 BA,37,185,0,0
+을,U+C744,2,23,virtual_static_existing,E9 BB,12,186,0,0
+음,U+C74C,2,33,virtual_static_existing,E9 BC,140,187,0,0
+응,U+C751,2,15,direct_existing,DE 17,497,,0,0
+의,U+C758,2,83,virtual_static_existing,E9 BD,14,188,0,0
+이,U+C774,2,1447,direct_existing,DD 01,220,,0,0
+익,U+C775,2,4,direct_existing,DE C0,666,,0,0
+인,U+C778,2,11,virtual_static_existing,E9 BF,52,190,0,0
+일,U+C77C,2,9,virtual_static_existing,E9 C0,106,191,0,0
+읽,U+C77D,2,6,direct_existing,DE 82,604,,0,0
+임,U+C784,2,25,direct_existing,DD C2,413,,0,0
+입,U+C785,2,3,virtual_static_existing,E9 C2,126,193,0,0
+있,U+C788,2,8,virtual_static_existing,E9 04,30,3,0,0
+잊,U+C78A,2,16,direct_existing,DE 11,491,,0,0
+잎,U+C78E,2,10,virtual_static_new,EA 66,870,355,1,1
+자,U+C790,2,11,virtual_static_existing,E9 C3,39,194,0,0
+작,U+C791,2,45,direct_existing,DD 64,319,,0,0
+잔,U+C794,2,3,virtual_static_new,EA 67,871,356,1,1
+잖,U+C796,2,25,direct_existing,DD BC,407,,0,0
+잘,U+C798,2,51,direct_existing,DD 4F,298,,0,0
+잠,U+C7A0,2,17,direct_existing,DE 04,478,,0,0
+잡,U+C7A1,2,16,direct_existing,DE 10,490,,0,0
+장,U+C7A5,2,22,virtual_static_existing,E9 C7,85,198,0,0
+저,U+C800,2,73,direct_existing,DD 24,255,,0,0
+적,U+C801,2,105,direct_existing,DD 09,228,,0,0
+전,U+C804,2,17,virtual_static_existing,E9 CA,78,201,0,0
+절,U+C808,2,22,direct_existing,DD DA,437,,0,0
+점,U+C810,2,23,direct_existing,DD D0,427,,0,0
+정,U+C815,2,52,virtual_static_existing,E9 CD,48,204,0,0
+제,U+C81C,2,6,virtual_static_existing,E9 CE,101,205,0,0
+젤,U+C824,2,1,virtual_static_new,EA 68,872,357,1,1
+져,U+C838,2,45,direct_existing,DD 63,318,,0,0
+졌,U+C84C,2,18,direct_existing,DD FD,472,,0,0
+조,U+C870,2,3,virtual_static_existing,E9 D0,143,207,0,0
+족,U+C871,2,38,direct_existing,DD 7A,341,,0,0
+존,U+C874,2,2,direct_existing,DE EB,709,,0,0
+좋,U+C88B,2,94,direct_existing,DD 0D,232,,0,0
+죄,U+C8C4,2,6,direct_existing,DE 86,608,,0,0
+주,U+C8FC,2,11,virtual_static_existing,E9 D4,63,211,0,0
+죽,U+C8FD,2,33,direct_existing,DD 94,367,,0,0
+준,U+C900,2,41,direct_existing,DD 6F,330,,0,0
+줄,U+C904,2,36,direct_existing,DD 81,348,,0,0
+중,U+C911,2,40,direct_existing,DD 73,334,,0,0
+줘,U+C918,2,19,direct_existing,DD EA,453,,0,0
+줬,U+C92C,2,2,direct_existing,DE D9,691,,0,0
+즉,U+C989,2,3,direct_existing,DE D0,682,,0,0
+즌,U+C98C,2,2,virtual_static_new,EA 69,873,358,1,1
+즘,U+C998,2,4,direct_existing,DE B2,652,,0,0
+증,U+C99D,2,17,direct_existing,DE 09,483,,0,0
+지,U+C9C0,2,70,virtual_static_existing,E9 D9,3,216,0,0
+직,U+C9C1,2,37,direct_existing,DD 7C,343,,0,0
+진,U+C9C4,2,61,direct_existing,DD 3F,282,,0,0
+질,U+C9C8,2,28,direct_existing,DD AA,389,,0,0
+집,U+C9D1,2,20,direct_existing,DD E2,445,,0,0
+짓,U+C9D3,2,15,direct_existing,DE 1C,502,,0,0
+짜,U+C9DC,2,4,direct_existing,DE B9,659,,0,0
+째,U+C9F8,2,36,direct_existing,DD 7E,345,,0,0
+쨌,U+CA0C,2,7,direct_existing,DE 75,591,,0,0
+쩌,U+CA4C,2,5,direct_existing,DE 9D,631,,0,0
+쪽,U+CABD,2,43,direct_existing,DD 69,324,,0,0
+쯤,U+CBE4,2,5,direct_existing,DE 9C,630,,0,0
+찌,U+CC0C,2,10,direct_existing,DE 56,560,,0,0
+찍,U+CC0D,2,1,virtual_static_new,EA 6C,874,361,1,1
+차,U+CC28,2,26,direct_existing,DD B7,402,,0,0
+착,U+CC29,2,10,direct_existing,DE 4B,549,,0,0
+찬,U+CC2C,2,11,direct_existing,DE 18,498,,0,0
+찮,U+CC2E,2,63,direct_existing,DD 3A,277,,0,0
+참,U+CC38,2,52,direct_existing,DD 4C,295,,0,0
+창,U+CC3D,2,6,direct_existing,DE 87,609,,0,0
+찾,U+CC3E,2,49,direct_existing,DD 56,305,,0,0
+책,U+CC45,2,11,direct_existing,DE 43,541,,0,0
+챔,U+CC54,2,2,virtual_static_new,E9 7C,875,123,1,1
+처,U+CC98,2,34,direct_existing,DD 8F,362,,0,0
+척,U+CC99,2,2,virtual_static_new,EA 71,876,366,1,1
+천,U+CC9C,2,19,direct_existing,DD E7,450,,0,0
+철,U+CCA0,2,5,direct_existing,DE A4,638,,0,0
+청,U+CCAD,2,4,direct_existing,DE B4,654,,0,0
+체,U+CCB4,2,34,direct_existing,DD 90,363,,0,0
+쳤,U+CCE4,2,4,virtual_static_new,E9 28,877,39,1,1
+초,U+CD08,2,6,virtual_static_existing,E9 E3,56,226,0,0
+촌,U+CD0C,2,6,virtual_static_existing,E9 E4,149,227,0,0
+최,U+CD5C,2,14,direct_existing,DE 27,513,,0,0
+추,U+CD94,2,1,virtual_static_new,EA 72,878,367,1,1
+축,U+CD95,2,18,direct_existing,DE 02,476,,0,0
+출,U+CD9C,2,1,virtual_static_existing,E9 32,117,49,0,0
+춰,U+CDB0,2,4,direct_existing,DE AC,646,,0,0
+취,U+CDE8,2,4,direct_existing,DE BA,660,,0,0
+츠,U+CE20,2,3,direct_existing,DE CD,679,,0,0
+층,U+CE35,2,10,direct_existing,DE 50,554,,0,0
+치,U+CE58,2,87,direct_existing,DD 1F,250,,0,0
+친,U+CE5C,2,6,direct_existing,DE 89,611,,0,0
+칠,U+CE60,2,8,direct_existing,DE 61,571,,0,0
+침,U+CE68,2,17,direct_existing,DE 06,480,,0,0
+칭,U+CE6D,2,6,direct_existing,DE 97,625,,0,0
+카,U+CE74,2,65,direct_existing,DD 38,275,,0,0
+칸,U+CE78,2,1,virtual_static_new,EA 76,879,371,1,1
+캐,U+CE90,2,6,direct_existing,DE 95,623,,0,0
+커,U+CEE4,2,18,direct_existing,DD F6,465,,0,0
+컬,U+CEEC,2,1,virtual_static_new,EA 77,880,372,1,1
+케,U+CF00,2,18,direct_existing,DD F8,467,,0,0
+켈,U+CF08,2,3,direct_existing,DE D6,688,,0,0
+켜,U+CF1C,2,23,direct_existing,DD CB,422,,0,0
+코,U+CF54,2,59,direct_existing,DD 40,283,,0,0
+콘,U+CF58,2,6,direct_existing,DE 96,624,,0,0
+콜,U+CF5C,2,4,direct_existing,DE AF,649,,0,0
+쿠,U+CFE0,2,99,direct_existing,DD 0C,231,,0,0
+큐,U+D050,2,1,virtual_static_new,EA 9D,881,410,1,1
+크,U+D06C,2,22,virtual_static_existing,E9 EC,87,235,0,0
+큭,U+D06D,2,1,virtual_static_new,E9 47,882,70,1,1
+큰,U+D070,2,33,direct_existing,DD 98,371,,0,0
+큼,U+D07C,2,11,direct_existing,DD F5,464,,0,0
+키,U+D0A4,2,27,direct_existing,DD B3,398,,0,0
+킨,U+D0A8,2,4,direct_existing,DE B7,657,,0,0
+타,U+D0C0,2,36,direct_existing,DD 7F,346,,0,0
+탁,U+D0C1,2,17,direct_existing,DE 05,479,,0,0
+탄,U+D0C4,2,31,direct_existing,DD D1,428,,0,0
+탈,U+D0C8,2,16,direct_existing,DE 14,494,,0,0
+탐,U+D0D0,2,2,direct_existing,DE DD,695,,0,0
+택,U+D0DD,2,8,virtual_static_new,E9 33,883,50,1,1
+탱,U+D0F1,2,2,direct_existing,DE E3,701,,0,0
+터,U+D130,2,40,virtual_static_existing,E9 F3,1,242,0,0
+턴,U+D134,2,11,direct_existing,DE 42,540,,0,0
+털,U+D138,2,2,direct_new,DF 4B,804,,1,0
+텀,U+D140,2,1,virtual_static_new,EA 7E,805,379,1,0
+텅,U+D145,2,2,direct_new,DF 4D,806,,1,0
+테,U+D14C,2,25,direct_existing,DD BE,409,,0,0
+텐,U+D150,2,5,direct_existing,DE 98,626,,0,0
+텔,U+D154,2,1,virtual_static_new,EA 80,807,381,1,0
+템,U+D15C,2,46,direct_existing,DD 5E,313,,0,0
+토,U+D1A0,2,10,virtual_static_existing,E9 F4,130,243,0,0
+톤,U+D1A4,2,32,direct_existing,DD 9A,373,,0,0
+톨,U+D1A8,2,19,direct_existing,DD F0,459,,0,0
+톰,U+D1B0,2,1,virtual_static_new,EA 83,808,384,1,0
+통,U+D1B5,2,12,direct_existing,DD D7,434,,0,0
+퇴,U+D1F4,2,4,virtual_static_new,EA 84,809,385,1,0
+투,U+D22C,2,64,direct_existing,DD 39,276,,0,0
+트,U+D2B8,2,48,direct_existing,DD 5B,310,,0,0
+특,U+D2B9,2,11,direct_existing,DE 3A,532,,0,0
+튼,U+D2BC,2,18,direct_existing,DD F7,466,,0,0
+티,U+D2F0,2,5,virtual_static_new,EA 86,810,387,1,0
+파,U+D30C,2,38,direct_existing,DD 7B,342,,0,0
+팔,U+D314,2,42,direct_existing,DD 6C,327,,0,0
+팡,U+D321,2,1,virtual_static_new,EA 87,811,388,1,0
+패,U+D328,2,3,direct_existing,DE D7,689,,0,0
+팬,U+D32C,2,1,virtual_static_new,EA 89,812,390,1,0
+퍼,U+D37C,2,7,direct_existing,DE 78,594,,0,0
+펀,U+D380,2,1,virtual_static_new,EA 8A,813,391,1,0
+페,U+D398,2,22,virtual_static_new,EA 9E,814,411,1,0
+편,U+D3B8,2,38,direct_existing,DD 79,340,,0,0
+평,U+D3C9,2,12,direct_existing,DE 34,526,,0,0
+포,U+D3EC,2,38,direct_existing,DD 78,339,,0,0
+폭,U+D3ED,2,47,direct_existing,DD 62,317,,0,0
+폴,U+D3F4,2,1,virtual_static_new,EA 8B,815,392,1,0
+표,U+D45C,2,35,direct_existing,DD 8A,357,,0,0
+풀,U+D480,2,10,direct_existing,DE 45,543,,0,0
+풍,U+D48D,2,13,direct_existing,DE 2E,520,,0,0
+프,U+D504,2,32,direct_existing,DD 9D,376,,0,0
+플,U+D50C,2,12,direct_existing,DE 36,528,,0,0
+피,U+D53C,2,62,direct_existing,DD 3C,279,,0,0
+필,U+D544,2,10,direct_existing,DE 4A,548,,0,0
+하,U+D558,2,34,virtual_static_existing,EA 07,24,260,0,0
+한,U+D55C,2,4,virtual_static_existing,EA 08,82,261,0,0
+할,U+D560,2,1,direct_new,DF 57,816,,1,0
+함,U+D568,2,23,direct_existing,DD CF,426,,0,0
+합,U+D569,2,82,direct_existing,DD 1D,248,,0,0
+항,U+D56D,2,1,direct_existing,DD F2,461,,0,0
+해,U+D574,2,26,virtual_static_existing,EA 0C,42,265,0,0
+했,U+D588,2,93,direct_existing,DD 0F,234,,0,0
+행,U+D589,2,68,direct_existing,DD 31,268,,0,0
+햣,U+D5A3,2,8,direct_existing,DE 6B,581,,0,0
+향,U+D5A5,2,27,direct_existing,DD B2,397,,0,0
+허,U+D5C8,2,10,direct_existing,DE 48,546,,0,0
+험,U+D5D8,2,50,direct_existing,DD 54,303,,0,0
+헤,U+D5E4,2,25,direct_existing,DD C3,414,,0,0
+혀,U+D600,2,10,direct_existing,DE 4D,551,,0,0
+현,U+D604,2,1,virtual_static_new,EA 8E,817,395,1,0
+형,U+D615,2,37,direct_existing,DD 7D,344,,0,0
+혜,U+D61C,2,53,direct_existing,DD 4B,294,,0,0
+호,U+D638,2,4,virtual_static_existing,EA 8F,148,396,0,0
+확,U+D655,2,16,direct_existing,DE 2B,517,,0,0
+활,U+D65C,2,23,direct_existing,DD E1,444,,0,0
+황,U+D669,2,11,direct_existing,DE 3C,534,,0,0
+회,U+D68C,2,25,virtual_static_existing,EA 16,121,275,0,0
+획,U+D68D,2,7,direct_existing,DE 79,595,,0,0
+횟,U+D69F,2,8,direct_existing,DE 1B,501,,0,0
+효,U+D6A8,2,14,direct_existing,DE 24,510,,0,0
+후,U+D6C4,2,34,direct_existing,DD 8D,360,,0,0
+훌,U+D6CC,2,6,direct_existing,DD 74,335,,0,0
+훗,U+D6D7,2,11,direct_existing,DE 41,539,,0,0
+휩,U+D729,2,1,direct_existing,DE ED,711,,0,0
+흑,U+D751,2,1,virtual_static_new,EA 93,818,400,1,0
+흘,U+D758,2,2,direct_existing,DE EA,708,,0,0
+흡,U+D761,2,1,virtual_static_new,EA 94,821,401,1,0
+흥,U+D765,2,5,direct_existing,DE 9A,628,,0,0
+희,U+D76C,2,57,direct_existing,DD 43,286,,0,0
+히,U+D788,2,48,direct_existing,DD 59,308,,0,0
+힌,U+D78C,2,4,direct_existing,DE B6,656,,0,0
+힐,U+D790,2,1,virtual_static_new,EA 97,822,404,1,0
+힘,U+D798,2,4,virtual_static_existing,EA 18,115,277,0,0

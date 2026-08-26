@@ -1,0 +1,15 @@
+v313 TEST ONLY - per-line placement
+output=arc1_v313_perline_TEST_ONLY_AC26F366.zip
+sha256=AC26F3666C806AEE51D03FC1EB67CD451B6FF54BD41FAAE9571EC7E7395BB588
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+font=Pilgi_8x4x4.ttf at 12px, beol rule measured against the font own syllables
+pieces placed: cho 109, jung+jong 59, plain 23, total 191
+atlas: 996 original glyph cells untouched (sha c6e90bf76b176d38), 237 blank cells available
+advance bound = index 1179; codes >= bound draw without moving the cursor
+placement is per original line: one E2 per text span, controls stay put
+lines 2878  translated 2679  inline lines 1954  slot lines 3349  cut lines 969
+cut causes: no free slot 918, over one slot 31, span too short for E2 20
+handlers 0x8018FCD0 / 0x8018FD28 / 0x8018FD94
+hooks 0x8016BC84 / 0x8016BDC0 / 0x8016B63C
+changed members=162
+runtime=PENDING user cold boot

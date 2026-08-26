@@ -1,0 +1,28 @@
+Arc the Lad 1 clean Pilgi johab font PoC - ISO verification
+date=2026-08-20
+status=STATIC PASS; RUNTIME PENDING USER COLD BOOT
+
+base=00_original/arc.zip
+base_sha256=AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD
+layout=arc1_original_layout.xml
+
+full_zip=03_output/arc1_johab_font_poc_pilgi_TEST_ONLY_5EE7652B.zip
+full_zip_sha256=5EE7652BB7A6865436E1A9748379B85AADEC2703CF1801E8E9449A95C20249D7
+patch_zip=03_output/arc1_johab_font_poc_pilgi_TEST_ONLY_patch_4701717C.zip
+patch_zip_sha256=4701717C17EA834B262FFC3684F46B9B19A95DA15D5AA8FF8232EDDAAF4E4596
+patch_members=1/S1071.DAT, COMM.IMG, PSX.EXE
+
+cue=03_output/JOHAB_PILGI_POC.cue
+cue_sha256=9D45887E6B33385D16AB0B51BA0653B6441AA5339290366DE993CFAE261FB646
+bin=03_output/JOHAB_PILGI_POC.bin
+bin_sha256=5B50FD92A4B2462025F0CF2475F6A3DA82109D06C4B5E923956B68AB900357EA
+
+verify_iso_layout=PASS
+data_file_lba=506/506 unchanged
+COMM.DAT_LBA=307 PASS
+COMM.IMG_LBA=667 PASS
+COMM.SND_LBA=891 PASS
+patched_file_bytes=3/3 match patch ZIP
+PSX.EXE_LBA=23 unchanged
+
+runtime=Do not accept as a baseline until DuckStation cold-boot verification passes.

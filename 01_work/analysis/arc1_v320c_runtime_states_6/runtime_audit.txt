@@ -1,0 +1,66 @@
+Arc the Lad 1 V320C - six-save runtime forensic audit
+build_sha256=81D215E1B1138E26707353D8982AE3139AE4F3900F6E832FEC83BB66A43AEA8D
+format=DUCCU; frame at +0xC4 is 256x192 BGRA thumbnail; frame at +0xD4 is state
+
+state1 sha256=7384A4CE885ECBD9CE63C478AE25128A88446561A554700579A0D417336E6F8F
+  build=V320C media=
+  DAT=1/S1072.DAT base=0xCF000 match=12288/12288 site=0x47932 payload=0x47932-0x47950
+  expected=촌장: 이 말괄량이 덕분에 마침내 꺼지는구나.
+  disk=촌장: 이 말?량이 덕분에 마침내 꺼지는구나.
+  packet=촌장: 이 말?량이 덕분에 마침내
+ 꺼지는구나.
+  loaded_exact=1 token_packet_exact=1 COMM_full_exact=0 COMM_font_exact=1
+  geometry=[(16, 16)] x_steps=[6, 14] y_steps=[16] D/E/F/extra=14/16/2/0
+
+state2 sha256=28EB795BFC8A9819287609A15C7445187A2A778525754152AF430C19D35EEEA9
+  build=V320C media=
+  DAT=1/S1021.DAT base=0xCF000 match=12288/12288 site=0x47C38 payload=0x46D00-0x46D1B
+  expected=아버지의 유품인 갑옷과 검을 찾았다.
+  disk=아버지의 유정인 갑옷과 검을 찾았다.
+  packet=아버지의 유정인 갑옷과 검을 찾았
+다.
+  loaded_exact=1 token_packet_exact=1 COMM_full_exact=0 COMM_font_exact=1
+  geometry=[(16, 16)] x_steps=[6, 14] y_steps=[16] D/E/F/extra=14/16/2/0
+
+state3 sha256=5510EFE772522DE04B2CD7F46A8565819F8E59DFB9F1AF2F1A6A64A32C145162
+  build=V320C media=
+  DAT=1/S1031.DAT base=0xCF000 match=12288/12288 site=0x4787A payload=0x4787A-0x47883
+  expected=엄마...
+  disk=<E913><D4><E060><E060><E060>
+  packet=침<211>러러러
+  loaded_exact=1 token_packet_exact=0 COMM_full_exact=0 COMM_font_exact=1
+  geometry=[(16, 16)] x_steps=[14] y_steps=[] D/E/F/extra=14/16/2/0
+
+state4 sha256=6DC711CD50156B70118425422430DDB8F67757A280EAB91F798B86ED3B27DBD8
+  build=V320C media=
+  DAT=D/SD011.DAT base=0xCF000 match=12288/12288 site=0x47B60 payload=0x47B60-0x47B7D
+  expected=그 불을 줘. 내가 다시 붙이고 올게.
+  disk=전)<E00A>로)<DFEF><E060>
+안라)않십)론황령)<B8>제<E060>
+  packet=전)<34>로)아러
+안라)않십)론황령)<183>제
+러
+  loaded_exact=1 token_packet_exact=1 COMM_full_exact=0 COMM_font_exact=1
+  geometry=[(16, 16)] x_steps=[14] y_steps=[16, 16] D/E/F/extra=14/16/2/0
+
+state5 sha256=47637F9028FF0ADBE39C595B4BA8C7158DFC8C215648F6FD84AE09046FFBD050
+  build=V320C media=
+  DAT=D/SD011.DAT base=0xCF000 match=12288/12288 site=0x47D58 payload=0x47D58-0x47D71
+  expected=걱정 마. 불은 내가 다시 붙이고 올게.
+  disk=몇무)<D4><E060>
+<E00A>장)안라)않십)론황령)<B8>제<E060>
+  packet=몇무)<211>러
+<34>장)안라)않십)론황령
+)<183>제러
+  loaded_exact=1 token_packet_exact=1 COMM_full_exact=0 COMM_font_exact=1
+  geometry=[(16, 16)] x_steps=[14] y_steps=[16, 16] D/E/F/extra=14/16/2/0
+
+state6 sha256=80AE8E695AA47A96750BF87CB57F2EB64A1D39D844DFB8BF4C226B7E0AE506CF
+  build=V320C media=
+  DAT=1/S1051.DAT base=0xCF000 match=12288/12288 site= payload=
+  expected=
+  disk=
+  packet=전라)전)장끼를)정끼하시겠습니까보
+예))))))아니요
+  loaded_exact=0 token_packet_exact=0 COMM_full_exact=0 COMM_font_exact=1
+  geometry=[(16, 16)] x_steps=[14] y_steps=[18] D/E/F/extra=14/16/2/0

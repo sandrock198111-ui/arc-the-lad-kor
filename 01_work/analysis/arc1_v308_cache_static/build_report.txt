@@ -1,0 +1,9 @@
+v308 TEST ONLY - cached glyphs made resident, cursor rectangle excluded
+base=arc1_v306_v197_johab_TEST_ONLY_3EB347E8.zip
+output=arc1_v308_cache_static_TEST_ONLY_F2A554FD.zip
+sha256=F2A554FDB3BB215946030AD1FD6434A331412C2419E64609391EF8ECFCE14E30
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE
+cache entries at start=309   moved to atlas=230   still cached=79
+skipped (no pixels or no cell)=79
+cells used were blank in BOTH the original and v197 -- icons untouched
+runtime=PENDING user cold boot

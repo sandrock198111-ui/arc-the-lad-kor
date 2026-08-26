@@ -1,0 +1,59 @@
+{
+  "result": "PASS",
+  "build": "E:\\korean\\03_output\\arc1_v322_e2_skip_restore_TEST_ONLY_480924F9.zip",
+  "build_sha256": "480924F970C441BA819BC1F2FA003ED430FA76509ED138C8B33F444044057B32",
+  "changed_members": [
+    "1/S1031.DAT",
+    "D/SD011.DAT"
+  ],
+  "changed_bytes": 5,
+  "cases": [
+    {
+      "member": "1/S1031.DAT",
+      "slot": 0,
+      "skip": 7,
+      "metadata_offset": "0x4507F",
+      "caller": "0x4787A",
+      "resume": "0x47883",
+      "exposed_9c": 3
+    },
+    {
+      "member": "D/SD011.DAT",
+      "slot": 10,
+      "skip": 10,
+      "metadata_offset": "0x4557F",
+      "caller": "0x47B60",
+      "resume": "0x47B6C",
+      "exposed_9c": 10
+    },
+    {
+      "member": "D/SD011.DAT",
+      "slot": 11,
+      "skip": 9,
+      "metadata_offset": "0x455FF",
+      "caller": "0x47B70",
+      "resume": "0x47B7B",
+      "exposed_9c": 9
+    },
+    {
+      "member": "D/SD011.DAT",
+      "slot": 12,
+      "skip": 4,
+      "metadata_offset": "0x4567F",
+      "caller": "0x47D58",
+      "resume": "0x47D5E",
+      "exposed_9c": 4
+    },
+    {
+      "member": "D/SD011.DAT",
+      "slot": 0,
+      "skip": 11,
+      "metadata_offset": "0x4507F",
+      "caller": "0x47D62",
+      "resume": "0x47D6F",
+      "exposed_9c": 11
+    }
+  ],
+  "v321_visible_9c_total": 37,
+  "runtime": "PENDING user cold boot"
+}

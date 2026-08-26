@@ -1,0 +1,24 @@
+Arc the Lad 1 clean Pilgi johab 16px dialogue PoC
+status=TEST_ONLY STATIC PASS; runtime=PENDING cold boot + natural S1071 progression
+base_sha256=AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD
+font=Pilgi_8x4x4.ttf 16px sha256=30EC39649ECBE2DC1E716F0FF7C8793AA364CFB7D5AB37C4401FE0936E1417A9
+renderer=Pillow 12.3.0; FreeType 2.14.3; threshold >96
+mode=stock 12px globally; custom dialogue packets 16x16 only
+v242_density=horizontal advance 14px; packet 16x16; state remains 12x12
+wrapper=196B at 0x8018FCD0; hooks=0x8016BB8C,0x8016BDA0
+uv_table=62B at 0x801A7460
+components=29 shapes + advancing blank + nonadvancing filler
+physical_slots=31/60 guarded candidates; max_V=188; last_pixel_Y=203
+bottom_row=각/걱 use row 15 and match Pilgi completed syllables exactly
+readability=출/홀/줄 official composition matches Pilgi completed syllables exactly
+flow=3/3 original terminators; early 0x00=0; packet counts=19/20/27
+UI isolation=global size literals, U/V arithmetic, cursor tail all byte-identical
+original_inked_planes=996 sha256=C6E90BF76B176D384561248A95D7929F9D26D8B9B985BE04A3BFFBA9B6876D7C unchanged
+features_absent=dynamic cache, global repack, E2, expanded EXE, UI repack, bulk translation
+changed_members=1/S1071.DAT, COMM.IMG, PSX.EXE
+changed_byte_counts=1/S1071.DAT:123, COMM.IMG:443, PSX.EXE:211
+output=arc1_johab_font_16px_poc_pilgi_TEST_ONLY_D941D1BE.zip
+output_sha256=D941D1BE9E24F90DA2527BC7CD5B082B1127FBD8348E065A1F17F5FCEF122D58
+patch_output=arc1_johab_font_16px_poc_pilgi_TEST_ONLY_patch_38572643.zip
+patch_output_sha256=385726431743BA86EC05538E5EF99C4CC800EE9F2ED132439CA1B531FB772AAE
+next=package patch-only ZIP with --layout original; verify 506/506 LBA; cold boot

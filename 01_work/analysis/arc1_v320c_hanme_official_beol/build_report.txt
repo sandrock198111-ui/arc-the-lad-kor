@@ -1,0 +1,19 @@
+V320C TEST ONLY - Hanme official beol correction
+base=arc1_v320b_hanme_exe_pointer_restore_TEST_ONLY_2366F366.zip
+base_sha256=2366F366A12F81DCE689DA10355F04112BECEB24F4895D029896021F1F9FECE6
+output=arc1_v320c_hanme_official_beol_TEST_ONLY_81D215E1.zip
+sha256=81D215E1B1138E26707353D8982AE3139AE4F3900F6E832FEC83BB66A43AEA8D
+delta=arc1_v320c_hanme_official_beol_TEST_ONLY_COMM_delta_from_v320b_1D57EB25.zip
+delta_sha256=1D57EB258719F4438B4EA8AC435CAFE7F08D33B042EF15E0B53AC54414DC0175
+changed_members=COMM.IMG only; PSX/DAT/E2/UI/geometry byte-identical to V320B
+mapped_hangul=718 planes/685 unique chars
+mapped_changed=496 planes/488 unique chars
+all_11172_changed_vs_v240=10773; pixel_hamming=324945
+COMM_changed_bytes=6869
+reported_family=ㅗ/ㅛ/ㅡ+jong: cho beol 5->6; jong beol 1->3
+reported_probes=촌,들,속,롭,론,온,는,봉,용,꽃,동
+rule_source_sha256=A498B4F7B7DC840AD637B093711ED6DB650EEEA96DAFA46728B4F30E730B3052
+pieces_sha256=409ABA72F4BA2282AA5C4E4982A9EEA16FBD14FB0413A40E151537A6653E2904
+PSX_EXE_sha256=3D477AF6E97860485D89ADA92932FA90FA05B0834B583072E7A0946D2912D291 (unchanged)
+runtime=PENDING user cold boot and visual confirmation
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE

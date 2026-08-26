@@ -1,0 +1,21 @@
+V320 TEST ONLY - Hanme rollback and source-aligned static 16px recovery
+base=arc1_v319_pilgi16_integration_TEST_ONLY_07418C00.zip
+base_sha256=07418C0024C4059C550E1584FC29340C6B97D9CF9B9DE778CA1FE38ACCB74A49
+output=arc1_v320_hanme_static_recovery_TEST_ONLY_96626CCB.zip
+sha256=96626CCB445BD6F1F249FCB21EA15CE2EAD6B94BE95DED3DC366B38BE9D234F3
+delta_from_v319=arc1_v320_hanme_static_recovery_TEST_ONLY_delta_from_v319_C07FBD48.zip
+delta_sha256=C07FBD488CC28D6D94D1FEB9701557132507154B23CEEF0E729B0C958CDD551E
+changed_members=162/164
+source_map=voted 643 + lookup-derived 399 -> effective 892
+occurrences=known 97,080; unknown preserved 35,032; controls 5,634
+assignments=750 char/width pairs; direct reuse 555; virtual static 176
+new_physical_planes=one-byte 7; two-byte 85; total 92
+font=V318 historical Hanme 16px (Pilgi removed)
+decoder=direct DD/non-E9EA codes bypass the dynamic range/cache path
+E9_EA=historical same-character slots retained and pointed at static physical glyphs
+space=index160, 6px advance; packet 16x16; glyph advance14; line pitch16
+five_uploaded_state_phrases=STATIC PASS from final disk member bytes
+runtime=PENDING user cold boot
+known_limit=14px advance overlaps 16px glyphs by 2px
+unknown_preserved=direct 34,984; E9/EA 48; dynamic 0
+release_status=DIAGNOSTIC; DO NOT DISTRIBUTE

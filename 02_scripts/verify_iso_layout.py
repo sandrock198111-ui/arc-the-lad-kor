@@ -1,4 +1,4 @@
-"""Check a built image before running it: did every file keep its sector number?
+"""Check disc layout/member integrity; runtime safety is a separate gate.
 
 The game reads its data by sector, so a layout change is silent until the game reads
 something. Comparing the new image against the untouched original catches it in a few
@@ -168,7 +168,12 @@ def main() -> None:
         ok = False
         print("FAIL  no PSX.EXE in the built image")
 
-    print("\nRESULT:", "PASS - safe to run" if ok else "FAIL - do not run this image")
+    print(
+        "\nRESULT:",
+        "PASS - disc layout/member integrity only; runtime not established"
+        if ok
+        else "FAIL - disc layout/member integrity failed; do not run this image",
+    )
     sys.exit(0 if ok else 1)
 
 

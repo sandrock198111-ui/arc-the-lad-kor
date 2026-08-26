@@ -1,0 +1,18 @@
+Arc the Lad 1 Pilgi 16px + E2 bank-A single-span PoC
+status=TEST_ONLY STATIC PASS; runtime=PENDING cold boot S1011
+base=arc1_johab_font_16px_relocated_pilgi_TEST_ONLY_79880948.zip
+base_sha256=798809489438B0081BA795F83D56322E433ABF40CA8600DD3F38E9FEB8A61064
+visible_text=가 나 고 구 과 워
+payload=34B/17 packets; width=154/168px
+site=1/S1011.DAT 0x4799E; original_span=7B; redirect=E2 81
+slot=0x45000; terminator=+0x22; metadata[0x7F]=5
+controls=original E6 01 preserved at 0x479A5
+handlers=0x8018FCD0 (84B), 0x8018FD28 (108B)
+hooks=0x8016BC84, 0x8016BDC0
+changed_from_relocated_base=PSX.EXE,1/S1011.DAT
+changed_from_original=1/S1011.DAT,1/S1071.DAT,COMM.IMG,PSX.EXE
+full_output=arc1_johab_font_16px_e2a_pilgi_TEST_ONLY_2C2F4B0F.zip
+full_sha256=2C2F4B0FC861FADDEEEA7C04F4BC28442EB549CE077208FEE9979EAA6B5782B8
+patch_output=arc1_johab_font_16px_e2a_pilgi_TEST_ONLY_patch_EA7FE646.zip
+patch_sha256=EA7FE646F3C4F091E88F222C285CA1638F23408CDC2BD0420E5E7741AB943072
+next=package with original layout; cold boot; verify visible E2 line and natural next line
