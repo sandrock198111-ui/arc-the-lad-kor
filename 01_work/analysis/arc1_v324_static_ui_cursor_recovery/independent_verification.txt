@@ -1,0 +1,12 @@
+V324 independent static verification: PASS
+build_sha256=06F7C289B593AB2767BA3D3ABC256ACCFD21781F60DF46A18F1D3FF58D67FD4B
+PSX_sha256=DD6EDADA703BAF7294C762ED787978FAA83CAD1B7AA552806265827FD4681900
+changed_members=PSX.EXE only; changed_bytes=1385
+COMM.IMG/all DAT=V322 byte-identical PASS
+lookup=213 safe + 2 invalid + 198 dynamic -> 413/413 safe static PASS
+live dynamic=50 slots/84 occurrences -> 0; four unused missing identities fail-closed
+resident copy=5356B; helper=0x801FF488/324B/81 instructions
+decoder tail routes=0; R3000 load delay/RA/stack=PASS
+cursor raw/RLE=1650/652B roundtrip PASS
+V323 bad cave 0x801A9BD8 remains zero; heap boundary unchanged
+runtime=PENDING user cold boot/load/menu/battle

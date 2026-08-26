@@ -2054,3 +2054,16 @@ E2 외부 슬롯 byte `+0x7F`은 패딩이 아니다 - 2026-08-25
 - EXE tail zero cave file `0x8F3D8`, RAM `0x801A9BD8`는 1,064바이트다. V323은 324바이트 helper와 652바이트 chunk RLE를 넣어 976바이트를 쓰고 88바이트를 남긴다. 초기화의 `0x8011E614` 두 word를 `jal helper / nop`으로 바꾸며 helper가 원래 `s1=0x801F52BC` 설정까지 재현하므로 뒤 명령 주소는 이동하지 않는다.
 - helper는 stack에 25×8 halfword buffer를 만들고 RLE를 8/8/8/8/1행 단위로 해제해 synchronous `LoadImage 0x80177E4C`를 다섯 번 호출한다. helper frame 464바이트와 LoadImage frame 48바이트가 추가되지만 resident RAM/heap 경계는 늘지 않는다. 이 구조는 콜드부팅 후 실제 범위 커서 draw 전까지 업로드가 유지되는지 런타임 검증해야 한다.
 - PSX.EXE가 587,776바이트인 V318 이후 계보는 `arc1_original_layout.xml`로 구우면 뒤 데이터가 3섹터 밀린다. 원래 284섹터 자리를 dummy로 보존하고 확장 EXE를 LBA 268481로 옮기는 `arc1_v104_layout.xml`을 사용해야 데이터 506개와 COMM 307/667/891을 유지할 수 있다.
+
+V323 zero cave 런타임 실패와 V324 resident tail 사용 경계 - 2026-08-26
+- 디스크 `PSX.EXE`에서 0인 영역은 runtime에서도 상주한다는 증거가 아니다. V323이 쓴 file `0x8F3D8`, RAM `0x801A9BD8`는 장면 적재/BSS 과정에서 덮였고, 두 실패 상태가 같은 Reserved Instruction PC/EPC로 멈췄다. zero cave는 반드시 콜드부팅 후 실제 호출 시점의 RAM 보존을 증명하거나 부팅 복사 resident 안에 넣어야 한다.
+- 부팅 복사 source는 RAM `0x801A86EC`, file `0x8DEEC`, destination `0x801FE3C4`, 크기 5,356(`0x14EC`)바이트다. heap 경계는 `0x801FF8B0`이고, 원래 resident block SHA-256은 `685BBEA16C9A51D609641190A699E55B989938944B6A0466EE591721CFABFA0E`다.
+- resident의 확정 미사용 꼬리는 runtime `0x801FF488..0x801FF8B0`, source file `0x8EFB0..0x8F3D8`, 1,064바이트다. V324는 helper `0x801FF488..0x801FF5CC` 324바이트와 RLE `0x801FF5CC..0x801FF858` 652바이트를 써서 976바이트를 사용하고 88바이트를 남긴다. 복사 크기와 heap 경계는 바꾸지 않는다.
+- V324 범위 커서 업로드는 V323과 같은 physical VRAM `x=960..984,y=447..479`, TPage `0x1F`, UV `U=0..99,V=191..223`를 사용한다. 달라진 것은 helper의 상주 위치뿐이며, 원본 raw 1,650바이트와 RLE 652바이트의 SHA-256은 각각 `B0005B318220FC61C11C3290837A7DF245646254FFA5CEBE7EA9A11932C7F421` / `94CED131CFC00C7B4A249009DEA5BE2361ABC6DAF6C244EE9B6D134F621C7133`다.
+
+E9/EA packed lookup의 V324 정적화 경계 - 2026-08-26
+- 8,448 text region에서 E9/EA 토큰은 2,142회, 사용 lookup slot은 234개다. region fingerprint는 `74AB263AD491EF64405E42D1306FBCA062ED016D3505FB491A4F7495413431F5`다.
+- V322 packed lookup 413개는 safe static `<960` 213개, invalid static 2개(slot 77=`1317`, slot 98=`1338`), dynamic `0x600..0x7FE` 198개다. invalid 2개는 발생 0회다. dynamic 가운데 현행 대본 사용은 50슬롯/84회다.
+- dynamic 198개 중 196개 Hangul은 현재 physical plane과 공식 Hanme 조합 비트맵을 유일하게 대조할 수 있다. `똑` slot210/source425, `첩` slot224/source148, `<VIRTUAL:405>` source461, `R` slot409/source462 네 identity는 유일한 현행 low-page plane이 없지만 모두 발생 0회다. 이 네 항목과 invalid 2개만 blank physical 160으로 fail-close하고 나머지는 정적 target으로 바꾸면 413/413이 `<960`이 된다.
+- V324 decoder는 direct-code cache branch와 E9/EA dynamic dispatch를 제거하고 lookup target `<960`만 통과시킨다. 예상 밖 값은 blank 160으로 바꾼 뒤 source pointer를 전진하고 stock renderer `0x8016B410`으로 복귀한다. reclaimed tail을 향하는 decoder control transfer는 없어야 한다.
+- lookup 정적화는 현재 16px Hanme 배치에 결합된다. 앞으로 COMM physical mapping을 다시 배열하면 lookup 413개를 재생성하고 8,448 region census, target 비트맵, 사용 50/84를 다시 검증해야 한다. V324는 콜드부팅 런타임 승인을 받기 전 TEST ONLY다.

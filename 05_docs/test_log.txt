@@ -2650,3 +2650,16 @@ check_build.py 통과. SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FB
 - 처음 `--layout original`로 잘못 구운 이미지는 확장 PSX.EXE 3섹터 때문에 데이터 506개와 COMM LBA가 모두 +3 밀려 즉시 FAIL했다. 이 이미지는 채택하지 않았다. V320~V322 계보와 같은 `--layout v104`로 다시 구운 최종 `V323.bin`은 507파일, 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, full ZIP 멤버 164/164 byte exact를 PASS했다.
 - 최종 BIN SHA-256 `77DCF9E39D30B027233A0CF1C158FAD0A9DA6C5018BFD0149C1DBB1DEF125BC1`, CUE `C8FD8698FAEA04C230AD5E781AEABC402B5EFACF14FE96C0F6973D794820D54E`, DuckStation `V323_1.mcd` `254116939A46340692D4F64C05A3583D000CAE0C961EB2AD378F0DA17947AC68`다.
 - 실기 게이트: V323.cue 콜드부팅 후 실제 전투에서 단일·십자·확장 범위 기술을 선택해 커서 타일이 한글 조각 없이 원래 모양으로 전부 나오는지 확인한다. 기술명/설명·아이템·대사와 진행도 함께 확인한다. V323 상태를 새로 저장하기 전까지 runtime은 PENDING이다.
+
+2026-08-26 | V323 불러오기 이후 검은 화면 | 사용자 상태저장 2개 DUCCU CPU/RAM/VRAM 포렌식 | RUNTIME FAIL, 원인 확정, DO NOT USE.
+- 입력 SHA-256은 state1 `A55A77F2A7740B5C40945063B475C21854CFF3BCD1DB57BF6151A27119A592D5`, state2 `B0F8A4026DC6A8237D81ABE6191491606435FBEBAD65DCFC411E86F28576F9D5`다. 둘 다 V323이며 RAM/VRAM 기준은 `0x1A62/0x201DDC`다.
+- 두 상태 모두 PC `0x801A9CA8`, EPC `0x801A9CAC`, Cause `0x00000428`(ExcCode 10, Reserved Instruction), Status `0x40000404`다. PC의 RAM word는 helper 명령이 아니라 `0x5349423A` 등 데이터/ASCII였고, helper 전체가 디스크 V323 바이트와 불일치했다.
+- 새 커서 목적지 25 halfword×33행은 두 상태 모두 전부 0이며 의도한 원본 커서와 1,650바이트 전부 불일치했다. 따라서 검은 화면은 VRAM 목적지 충돌이 아니라 scene loader/BSS가 `0x801A9BD8` helper를 덮은 뒤 그 주소를 실행한 결과다.
+
+2026-08-26 | V324 상주 lookup/기술 범위 커서 복구판 | py_compile, 2회 재빌드, 독립 lookup/decoder/R3000/RLE/Expected-Write, check_build 기준 비교, mkpsxiso/LBA | STATIC PASS, INHERITED DEBT FAIL, RUNTIME PENDING.
+- full/delta SHA-256은 `06F7C289B593AB2767BA3D3ABC256ACCFD21781F60DF46A18F1D3FF58D67FD4B` / `B00287CE1346913F7468203421AA53E7B4AB9C6277FC2180B9CD26A13DDF6D79`로 두 번 동일했다. V322 대비 변경 멤버는 `PSX.EXE` 하나, 변경 byte는 1,385개이며 final PSX SHA-256은 `DD6EDADA703BAF7294C762ED787978FAA83CAD1B7AA552806265827FD4681900`이다.
+- 독립 검증기는 lookup `213 safe + 2 invalid + 198 dynamic → 413/413 safe static`, 현행 dynamic 사용 `50슬롯/84회 → 0`, decoder tail로 향하는 control transfer 0건을 확인했다. 네 미식별·미사용 항목과 invalid 2개만 blank 160으로 fail-close한다.
+- resident copy 5,356바이트와 heap `0x801FF8B0`은 불변이다. helper는 `0x801FF488` 324바이트/81명령, RLE는 652바이트이며 1,064바이트 꼬리 중 976바이트를 쓴다. R3000 load-delay, RA/stack, 1,650→652→1,650 RLE roundtrip과 다섯 upload rect를 모두 PASS했다. V323 불안정 cave는 전부 0이다.
+- `COMM.IMG`와 모든 DAT는 V322와 byte exact다. `check_build.py` 결과는 V322/V324 양쪽 모두 EXE 중간 포인터 1곳, 선택지 폭 75곳, 선택지 마커 2곳, 3줄 초과 18곳으로 동일해 신규 gate debt는 0이나 전체 release gate는 FAIL을 유지한다.
+- `V324.bin` SHA-256 `A209134CC38C5F27D0E8C5C5BC1444C87464D265D6258E177E07BAFDAFCF7693`, CUE `E92CBBAF043C5D3B3A64023A81C81C1D4F54D5732DEC9BE0BAD546B04FFA0A60`. ISO 507파일, 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, full ZIP 멤버 164/164 byte exact PASS다.
+- 실기 게이트: DuckStation을 완전히 종료한 뒤 `V324.cue`를 콜드부팅하고 `V324_1.mcd`의 메모리카드 저장을 불러온다. 첫 관문은 불러오기 화면 뒤 검은 화면 없이 게임으로 복귀하는 것이다. 이어 저장/불러오기, 메뉴, 아이템명·설명·획득 배너, 기술명·설명, 실제 전투의 단일·십자·확장 범위 커서, 대사 진행을 확인한다. V323 `.sav`를 직접 로드하면 V323 RAM을 복원하므로 V324 검증으로 인정하지 않는다.
