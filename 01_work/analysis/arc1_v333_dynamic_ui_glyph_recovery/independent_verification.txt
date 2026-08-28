@@ -1,0 +1,10 @@
+V333 independent verification
+verdict=STATIC PASS; RUNTIME PENDING
+full_sha256=55D826DC02FE5A7DE5167EBB81623184409FA4F8FC395B2EB04369A17DC2D450
+delta_sha256=69AC3C90278CA30E93E7CC67B43FEAFE0CBA063D04EA6B8A4D6795AA04AA9E86
+changed_members=COMM.IMG,PSX.EXE
+changed_bytes=PSX.EXE 35 / COMM.IMG 44
+load=1/2/3 + L + colon local synthetic routes PASS
+choice=E5 two blank packets / 28px indentation PASS
+battle=L/M/P local routes; compact digit path retained PASS
+global E9/EA lookup, all DAT, V332 skill/config alignment unchanged PASS

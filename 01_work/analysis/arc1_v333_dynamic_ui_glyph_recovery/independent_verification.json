@@ -1,0 +1,33 @@
+{
+  "verdict": "STATIC PASS; RUNTIME PENDING",
+  "hashes": {
+    "full_zip": "55D826DC02FE5A7DE5167EBB81623184409FA4F8FC395B2EB04369A17DC2D450",
+    "delta_zip": "69AC3C90278CA30E93E7CC67B43FEAFE0CBA063D04EA6B8A4D6795AA04AA9E86",
+    "PSX.EXE": "6E7E9E3A0521C502E4672F95C55F73B77C31D9DA3EA3C66A6B8F36FF961A8567",
+    "COMM.IMG": "095885C3EA58F1A886BEE20033EE8313FE07476088AC27FD726F53AE44D8331B"
+  },
+  "archive": {
+    "members": 164,
+    "changed_members": [
+      "COMM.IMG",
+      "PSX.EXE"
+    ]
+  },
+  "changed_bytes": {
+    "PSX.EXE": 35,
+    "COMM.IMG": 44
+  },
+  "checks": {
+    "independent_PSX_rebuild": "PASS",
+    "independent_COMM_plane_rebuild": "PASS",
+    "expected_write_exact": "PASS",
+    "global_lookup_unchanged": "PASS",
+    "all_DAT_unchanged": "PASS",
+    "V332_skill_config_alignment_unchanged": "PASS",
+    "old_compact_strip_0_to_12_unchanged": "PASS",
+    "new_strip_13_to_16_and_neighbors": "PASS",
+    "E5_two_blank_packets_28px": "PASS",
+    "UV_t1_restore_and_page_bounds": "PASS"
+  },
+  "runtime": "PENDING user cold boot"
+}

@@ -1,0 +1,94 @@
+{
+  "build": "V333 TEST_ONLY dynamic UI glyph recovery",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v332_skill_config_bar_alignment_TEST_ONLY_D2951A33.zip",
+    "sha256": "D2951A33C598C04BDDDCDC07678ADADCC18471CE98FE32B904527073445BB5AF"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v333_dynamic_ui_glyph_recovery_TEST_ONLY_55D826DC.zip",
+    "sha256": "55D826DC02FE5A7DE5167EBB81623184409FA4F8FC395B2EB04369A17DC2D450"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v333_dynamic_ui_glyph_recovery_TEST_ONLY_delta_from_v332_69AC3C90.zip",
+    "sha256": "69AC3C90278CA30E93E7CC67B43FEAFE0CBA063D04EA6B8A4D6795AA04AA9E86"
+  },
+  "changed_members": [
+    "COMM.IMG",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 35,
+    "COMM.IMG": 44
+  },
+  "routes": {
+    "strip_rows": [
+      {
+        "slot": 13,
+        "synthetic_index": 973,
+        "semantic": "compact_L",
+        "source_original_index": 825,
+        "plane": 1,
+        "texture_u_d14": 240,
+        "texture_u_d6": 244,
+        "texture_v": 224,
+        "source_sha256": "BC6EEFEBC9B82A4B5AFD5A9E1FE8B340EFAB1C3D58B1E43D007B8C85BCC2BC75"
+      },
+      {
+        "slot": 14,
+        "synthetic_index": 974,
+        "semantic": "hud_M",
+        "source_original_index": 553,
+        "plane": 2,
+        "texture_u_d14": 240,
+        "texture_u_d6": 244,
+        "texture_v": 224,
+        "source_sha256": "A69C229C5D78CD97F22DC4C40A8FFAE0483428A72A6A2084BB17EDB24A162A50"
+      },
+      {
+        "slot": 15,
+        "synthetic_index": 975,
+        "semantic": "hud_P",
+        "source_original_index": 363,
+        "plane": 3,
+        "texture_u_d14": 240,
+        "texture_u_d6": 244,
+        "texture_v": 224,
+        "source_sha256": "A2B66B3A5F7E9BB4C29B8DDD2BC839638C9925E42C2F34907D35A7F07572D13B"
+      },
+      {
+        "slot": 16,
+        "synthetic_index": 976,
+        "semantic": "time_colon",
+        "source_original_index": 36,
+        "plane": 0,
+        "texture_u_d14": 240,
+        "texture_u_d6": 244,
+        "texture_v": 240,
+        "source_sha256": "7BC38DF05F9361340B5E35C09AC363D0B5FC718CCBE1B616D7CE638E44770A4A"
+      }
+    ],
+    "hud_pointers": [
+      "0x8019B1E0",
+      "0x8019B1F8",
+      "0x8019C95C",
+      "0x8019B1E8",
+      "0x8019B1F0"
+    ],
+    "load_slot_indices": [
+      963,
+      964,
+      965
+    ],
+    "load_l_index": 973,
+    "load_colon_index": 976,
+    "e5_placeholder_index": 960
+  },
+  "expected_runtime": {
+    "load": "slot 1/2/3, L, compact level/time digits and colon",
+    "choice": "two invisible 14px placeholders; no visible 다다",
+    "battle_hud": "compact L and digits, blank spacer, M/P, HP orb and counters"
+  },
+  "preserved": "all DAT, V332 skill/config alignment, ordinary Hangul/E9-EA lookup, six-pixel compact digits, icons and every non-PSX/COMM member",
+  "runtime": "PENDING user cold boot",
+  "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE"
+}

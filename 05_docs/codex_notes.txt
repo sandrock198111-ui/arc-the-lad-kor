@@ -2127,3 +2127,11 @@ E9/EA packed lookup의 V324 정적화 경계 - 2026-08-26
 - V324 이후 E7 V hook은 builder 내부에서 두 배가 된 icon id `2/4/8/14`를 판정한다. 이는 텍스트 `E7 02/03/05/08`의 실제 id `1/2/4/7`이며 모두 V=228로 보낸다. U/폭은 `192/12`, `180/12`, `204/12`, `216/20`이다. V327의 네 픽셀 사각형은 V324와 byte exact이고 compact strip은 x=240부터라 START의 x=216..235와 겹치지 않는다.
 - V325의 재인코딩된 상주 UI 666행에는 A1/physical160 공백이 697회 있다. 이 계약 위반은 작은 예외가 아니라 메뉴·설명·대사의 폭과 줄바꿈을 광범위하게 바꾸는 회귀다.
 - V326은 DO NOT USE다. V327은 V326 대비 PSX.EXE 한 워드만 다르고 나머지 compact strip, 설정문, E7 배열, DAT는 byte exact다. 실기 승인 전 TEST ONLY다.
+V333 동적 UI direct-glyph 충돌과 국소 복구 구조 - 2026-08-29
+- 불러오기 목록의 슬롯 번호는 file `0x78090/94/98`의 direct physical 17/18/19, L은 file `0x780FC` 포인터가 가리키는 physical825, 시간 콜론은 file `0x78240`의 physical36이다. 숫자 값 자체는 `%2d/%4d/%02d` 포매터와 원본 6px compact 경로를 사용하므로 작은 크기가 정상이다.
+- E5 handler는 RAM `0x8016BE04`에서 `a0=0`을 만든 뒤 공용 글리프 빌더 `0x8016B518`을 직접 호출한다. `E5 03`이면 physical0 패킷을 두 번 만들며 14px씩 총 28px 들여쓴다. DAT에 `01 01`이 있는 것이 아니다. 16px atlas의 physical0이 `다`라서 `다다`로 보였다.
+- 전투 HUD의 고정 포인터는 file `0x823AC/B0/B4/B8/BC`다. L/M/P 경로가 예전 physical0/553/363을 직접 써 16px atlas 한글과 충돌했다. HP 표시는 별도 붉은 orb/icon과 compact 숫자이며 사용자가 HP 자리로 본 깨진 글자는 실제로 MP/P 라벨 행이었다.
+- V326 synthetic strip은 texture U=240, V=176부터 16px×16px, 4 plane 구조다. V333은 blank였던 slot13=physical973(L, plane1,V224), slot14=974(M,plane2,V224), slot15=975(P,plane3,V224), slot16=976(:,plane0,V240)을 쓴다. slot16도 U+16=256, V+16=256으로 8비트 texture page 마지막 유효 경계다.
+- D==6 경로는 공용 빌더가 U에 +4를 더하고 W=6으로 그리므로 12px 원본 L/:와 숫자의 중앙 6px 부분을 compact하게 표시한다. D14 경로의 E5 blank와 M/P는 U=240, W=16을 쓴다. UV helper 한도만 `sltiu ...,13`에서 17로 넓혔으며 return delay에서 live `$t1=160` 복원은 유지했다.
+- 안전한 수정법은 전역 lookup/physical 재배정이 아니라 각 생산자의 로컬 synthetic token 또는 direct placeholder만 바꾸는 것이다. V333은 모든 DAT와 packed E9/EA lookup을 byte exact로 보존한다.
+- V333 full/delta SHA-256은 `55D826DC02FE5A7DE5167EBB81623184409FA4F8FC395B2EB04369A17DC2D450` / `69AC3C90278CA30E93E7CC67B43FEAFE0CBA063D04EA6B8A4D6795AA04AA9E86`다. 정적 검증과 디스크 readback은 PASS, 런타임은 PENDING이다.

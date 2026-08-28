@@ -50,7 +50,16 @@ RAM_SIZE = 2 * 1024 * 1024
 FIXED_UI_HEADERS = (0x801F9D44, 0x801F9D88)
 COMPACT_STRIP_U = 244
 COMPACT_STRIP_V = 176
-COMPACT_STRIP_LABELS = (" ", "/", *tuple(str(value) for value in range(10)), "<aux127>")
+COMPACT_STRIP_LABELS = (
+    " ",
+    "/",
+    *tuple(str(value) for value in range(10)),
+    "<aux127>",
+    "L",
+    "M",
+    "P",
+    ":",
+)
 
 
 def sha256_file(path: Path) -> str:

@@ -1,0 +1,13 @@
+V333 TEST ONLY - dynamic UI glyph recovery
+base=arc1_v332_skill_config_bar_alignment_TEST_ONLY_D2951A33.zip
+output=arc1_v333_dynamic_ui_glyph_recovery_TEST_ONLY_55D826DC.zip
+sha256=55D826DC02FE5A7DE5167EBB81623184409FA4F8FC395B2EB04369A17DC2D450
+delta=arc1_v333_dynamic_ui_glyph_recovery_TEST_ONLY_delta_from_v332_69AC3C90.zip
+delta_sha256=69AC3C90278CA30E93E7CC67B43FEAFE0CBA063D04EA6B8A4D6795AA04AA9E86
+changed_members=PSX.EXE, COMM.IMG
+changed_bytes=PSX.EXE 35 / COMM.IMG 44
+load=local slot-number/L/colon routes only; compact numeric formatting retained
+choice=E5 physical0 -> synthetic blank960; two-slot 28px indentation retained
+battle_hud=local blank/L/M/P payloads; compact digits and HP orb retained
+ordinary Hangul, global lookup, DAT and V332 alignment=unchanged
+runtime=PENDING; TEST_ONLY

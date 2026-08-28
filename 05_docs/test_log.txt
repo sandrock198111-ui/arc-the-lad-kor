@@ -2722,3 +2722,11 @@ check_build.py 통과. SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FB
 - `COMM.IMG`와 모든 DAT는 V322와 byte exact다. `check_build.py` 결과는 V322/V324 양쪽 모두 EXE 중간 포인터 1곳, 선택지 폭 75곳, 선택지 마커 2곳, 3줄 초과 18곳으로 동일해 신규 gate debt는 0이나 전체 release gate는 FAIL을 유지한다.
 - `V324.bin` SHA-256 `A209134CC38C5F27D0E8C5C5BC1444C87464D265D6258E177E07BAFDAFCF7693`, CUE `E92CBBAF043C5D3B3A64023A81C81C1D4F54D5732DEC9BE0BAD546B04FFA0A60`. ISO 507파일, 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, full ZIP 멤버 164/164 byte exact PASS다.
 - 실기 게이트: DuckStation을 완전히 종료한 뒤 `V324.cue`를 콜드부팅하고 `V324_1.mcd`의 메모리카드 저장을 불러온다. 첫 관문은 불러오기 화면 뒤 검은 화면 없이 게임으로 복귀하는 것이다. 이어 저장/불러오기, 메뉴, 아이템명·설명·획득 배너, 기술명·설명, 실제 전투의 단일·십자·확장 범위 커서, 대사 진행을 확인한다. V323 `.sav`를 직접 로드하면 V323 RAM을 복원하므로 V324 검증으로 인정하지 않는다.
+2026-08-29 | V333 불러오기·선택지·전투 동적 UI 글리프 복구 | V332 DUCCU 3종 원인 추적, py_compile, 2회 결정론 빌드, 독립 PSX/COMM/Expected-Write/MIPS 검증, check_build, mkpsxiso v104/LBA | STATIC PATCH PASS, INHERITED DAT DEBT FAIL, RUNTIME PENDING.
+- 입력은 V332 full ZIP SHA-256 `D2951A33C598C04BDDDCDC07678ADADCC18471CE98FE32B904527073445BB5AF`와 원본 `arc.zip` SHA-256 `AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD`로 고정했다.
+- 분석 결과 불러오기 L/번호/콜론, E5의 `다다`, 전투 L/M/P는 DAT 오역이 아니라 16px atlas에서 예전 direct physical index가 한글과 충돌한 결과였다. 아이템·불러오기·전투의 작은 숫자는 원본 6px compact 경로로 정상이며 의도적으로 유지했다.
+- V333은 기존 synthetic strip slot 0..12를 불변으로 두고 blank였던 13..16에 원본 L/M/P/: 12px 평면을 넣었다. E5는 blank960 두 패킷으로 바꿔 28px 들여쓰기를 보존했고, 불러오기/전투의 해당 포인터만 국소 synthetic token으로 변경했다. 전역 lookup과 모든 DAT는 byte exact다.
+- 빌더 2회 출력 full/delta SHA-256은 매번 `55D826DC02FE5A7DE5167EBB81623184409FA4F8FC395B2EB04369A17DC2D450` / `69AC3C90278CA30E93E7CC67B43FEAFE0CBA063D04EA6B8A4D6795AA04AA9E86`로 동일했다.
+- 독립 검증기는 전체 파일을 별도 재구성해 `PSX.EXE` 35바이트, `COMM.IMG` 44바이트의 Expected-Write와 정확히 일치함을 확인했다. slot 0..12, 미대상 plane, V332 기술명/설정 정렬, E9/EA lookup, `$t1=160` 복원, U/V page 경계가 모두 PASS했다.
+- `check_build.py` 결과 선택지 폭 75곳, 마커 위치 2곳, 3줄 창 초과 18곳이 FAIL했다. V332와 같은 기존 DAT 부채이며 V333은 DAT를 하나도 바꾸지 않았다.
+- `V333.bin` SHA-256 `FAEF4093836C68A3574C6E01849F1F6D9A6CF20E3C1A27FEAB769A971BFDB517`, CUE `448FDA23832F6150E763FEB1B982F0DABF6A255D6046B3A13575117750CCF548`. 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 멤버 164/164 readback PASS. 실기는 사용자 콜드부팅 대기다.

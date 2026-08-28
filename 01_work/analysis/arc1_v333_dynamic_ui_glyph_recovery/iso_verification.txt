@@ -1,0 +1,14 @@
+V333 fixed-LBA disc verification
+disc=03_output/V333.bin
+disc_sha256=FAEF4093836C68A3574C6E01849F1F6D9A6CF20E3C1A27FEAB769A971BFDB517
+cue=03_output/V333.cue
+cue_sha256=448FDA23832F6150E763FEB1B982F0DABF6A255D6046B3A13575117750CCF548
+size=632495136 bytes
+layout=arc1_v104_layout.xml
+data_lba=506/506 PASS
+COMM.DAT_LBA=307 PASS
+COMM.IMG_LBA=667 PASS
+COMM.SND_LBA=891 PASS
+PSX.EXE_LBA=268481 size=587776
+patched_member_readback=164/164 PASS
+scope=disc layout/member integrity only; runtime not established

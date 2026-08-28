@@ -1,0 +1,6 @@
+V333 cold-boot checklist
+1. Load screen: slots 1/2/3, L plus compact level, and H:MM playtime are readable.
+2. Choice screen: no visible '다다'; the original 28px indentation remains.
+3. Battle HUD: L, M, P and compact counters are readable; HP orb/icon remains.
+4. Item/status compact digits remain intentionally six pixels wide.
+5. V332 skill/config alignment and ordinary dialogue remain unchanged.
