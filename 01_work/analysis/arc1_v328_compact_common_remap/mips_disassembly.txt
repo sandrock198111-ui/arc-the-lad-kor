@@ -1,0 +1,27 @@
+8016B518  move   $a2, $a1
+8016B51C  j      0x8019B190
+8016B520  lh     $v0, 4($a2)       ; preserved jump delay slot
+8016B524  ori    $t1, $zero, 0xA0
+8016B528  slt    $v0, $a1, $v0
+
+8019B190  lbu    $t0, 0x0D($a2)
+8019B194  ori    $t1, $zero, 6     ; load-delay filler
+8019B198  bne    $t0, $t1, 0x8019B1D8
+8019B19C  nop
+8019B1A0  beqz   $a0, 0x8019B1C8
+8019B1A4  addiu  $t0, $a0, -15    ; branch delay
+8019B1A8  sltiu  $t1, $t0, 11
+8019B1AC  bnez   $t1, 0x8019B1D4
+8019B1B0  ori    $t1, $zero, 127  ; branch delay
+8019B1B4  bne    $a0, $t1, 0x8019B1D8
+8019B1B8  nop
+8019B1BC  ori    $a0, $zero, 972
+8019B1C0  b      0x8019B1D8
+8019B1C4  nop
+8019B1C8  ori    $a0, $zero, 960
+8019B1CC  b      0x8019B1D8
+8019B1D0  nop
+8019B1D4  addiu  $a0, $t0, 961
+8019B1D8  lh     $a1, 0x0A($a2)   ; recreate overwritten ordinal load
+8019B1DC  j      0x8016B524
+8019B1E0  nop                      ; settle lh before stock slt

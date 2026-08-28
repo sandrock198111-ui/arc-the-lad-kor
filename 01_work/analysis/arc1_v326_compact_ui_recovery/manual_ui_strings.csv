@@ -1,0 +1,6 @@
+﻿pointer,label,semantic,string_offset,encoded_hex
+0x8234C,battle_help_attack_link,공격 / 연결 열기,0x80950,E7 02 DD 10 DD 0A E7 05 DD AD DD 47 A1 DD 89 24
+0x82350,battle_help_end_status,행동 끝 / 상태 확인,0x80961,E7 03 DD 31 DD 32 A1 DD A3 E7 08 8B DD D2 A1 DE 2B 35
+0x825F0,configuration_confirm,확인함,0x80974,DE 2B 35 DD CF
+0x825F4,configuration_view,보기,0x8097A,60 24
+0x825F8,configuration_no_view,안 보기,0x8097D,94 A1 60 24

@@ -1,0 +1,13 @@
+V332 TEST ONLY - skill/configuration bar alignment
+base=arc1_v331_skill_config_alignment_TEST_ONLY_4D5F9D16.zip
+output=arc1_v332_skill_config_bar_alignment_TEST_ONLY_D2951A33.zip
+sha256=D2951A33C598C04BDDDCDC07678ADADCC18471CE98FE32B904527073445BB5AF
+delta=arc1_v332_skill_config_bar_alignment_TEST_ONLY_delta_from_v331_72E259EF.zip
+delta_sha256=72E259EF0F521E917CB014F4DA70DA4CD9BBC0B7D8EBEB5332D5F1A0297921B5
+changed_members=PSX.EXE only
+changed_bytes=2 in two selection-bar X immediates
+skill=inherit V331 dedicated skill-name dx=-4 wrapper
+configuration=text X 162/222; bar X 164/224 -> 160/220; 2px inset retained
+text=inherit V331 사용안함
+DAT/COMM/items/equipment/status/dialogue=unchanged from V331
+runtime=PENDING; TEST_ONLY

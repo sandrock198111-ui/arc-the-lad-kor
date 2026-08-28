@@ -1,0 +1,6 @@
+V327 lineage byte diff
+V325 -> V327: COMM.IMG 99 bytes, PSX.EXE 152 bytes
+V326 -> V327: PSX.EXE 3 bytes in one 32-bit word
+V326 -> V327 changed members: PSX.EXE only
+V326 -> V327 unchanged members: 163/164
+V326 -> V327 all DAT: byte exact

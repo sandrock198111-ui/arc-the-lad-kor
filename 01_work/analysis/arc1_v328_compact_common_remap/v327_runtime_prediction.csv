@@ -1,0 +1,8 @@
+state,header,y,predicted_compact_text,meaning
+1,0x801F9D44,48," 4   030",load_slot_1_level_and_time_digits
+1,0x801F9D44,64,"14   129",load_slot_2_level_and_time_digits
+1,0x801F9D44,80,"18   210",load_slot_3_level_and_time_digits
+7,0x801F1DB4,109," 04",item_quantity
+7,0x801F9D44,63," 48/ 48",battle_HP
+7,0x801F9D44,79," 27/ 27",battle_MP
+8,0x801F9D44,137," <AUX>208027/027",status_compact_fields

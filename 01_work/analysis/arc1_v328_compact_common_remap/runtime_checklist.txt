@@ -1,0 +1,23 @@
+V328 cold-boot runtime checklist
+
+OBSOLETE - DO NOT RUN.  Post-audit found the inherited global raw-code helper.
+Use the V329 checklist instead.
+
+Build identity
+- Boot 03_output/V328.cue from a cold emulator start.
+- Do not resume a V327 or older emulator savestate.
+
+Primary V328 checks
+- Load screen: slot level and play-time digits must be digits, slash and blank, not Hangul fragments.
+- Item list/detail: quantities and the compact suffix after names must be blank/digits, with no previous-glyph-looking Hangul.
+- Battle/status UI: HP, MP, levels, counters and top status numbers must be readable compact digits.
+- The red circle and other E7 controller icons restored in V327 must remain visible.
+- Normal 16px Korean dialogue and names must retain V327 geometry and spacing.
+
+Known separate issue
+- Choice indentation may still show leading "다다".  E5 03 emits two 16px physical-0 placeholder packets per option; V328 intentionally does not remap D14 physical 0.
+- Capture that screen separately; do not treat it as evidence that the D==6 compact remap failed.
+
+Save-state request
+- Save one state at the load screen, one at an item list/detail, and one in battle showing HP/MP and controller icons.
+- The state header must identify V328.

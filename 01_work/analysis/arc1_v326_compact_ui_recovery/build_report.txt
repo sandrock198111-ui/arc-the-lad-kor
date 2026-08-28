@@ -1,0 +1,15 @@
+V326 TEST ONLY - compact UI glyph/control-token recovery
+base=arc1_v325_ui_reencode_TEST_ONLY_7828AA04.zip
+output=arc1_v326_compact_ui_recovery_TEST_ONLY_B1768404.zip
+sha256=B1768404E175886882D49AFD1C34255D532750E3927B8696CD53A1885039D4BE
+delta=arc1_v326_compact_ui_recovery_TEST_ONLY_delta_from_v325_82BEDA2A.zip
+delta_sha256=82BEDA2ADF5069E63187A09CAE4ACF057738740A57DAD9E298269B01F53BBA1F
+changed_members=COMM.IMG,PSX.EXE
+changed_bytes=PSX.EXE:149,COMM.IMG:99
+compact_raw_codes=13; synthetic=960..972
+helpers=direct:92B,uv:52B
+free_pool_remaining=274B
+manual_pointers=0x8234C,0x82350,0x825F0,0x825F4,0x825F8
+V325 Hangul/UI/DAT outside Expected-Write ranges=byte exact
+KNOWN BLOCKERS=UV helper t1 clobber and global raw-code remap of D14/D16 Hangul
+status=STATIC FAIL; DO NOT USE (t1 fixed by V327, raw helper removed by V329)

@@ -1,0 +1,11 @@
+V332 cold-boot runtime checklist
+
+- Boot 03_output/V332.cue from a cold emulator start (do not load an older-build savestate).
+- Confirm both skill-name screens: 번 그라운드 and 슬로우 에너미 begin 4px left of V329.
+- Open configuration and confirm both choice columns and their blue selection bars moved together 4px left.
+- Confirm 사용안함 has no spaces and no overlap with the second choice column.
+- Move the cursor through all four configuration rows; selected/unselected bar positions must stay aligned.
+- Check representative item/equipment/status/dialogue screens for unchanged coordinates and glyphs.
+- Save new DUCCU states/screenshots from V332 for runtime attribution.
+
+Static result: PASS. Runtime result: PENDING user cold boot.

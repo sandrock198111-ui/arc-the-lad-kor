@@ -1,0 +1,14 @@
+V329, V331 and V332 were checked independently with 02_scripts/check_build.py.
+
+All three builds report the same inherited DAT debt:
+- dialogue bodies: 2878
+- choices: 357
+- E2 slots: 1374
+- in-place strings: 1116
+- choice lines over window: 75
+- choice markers moved from original: 2
+- dialogue windows over three lines: 18
+
+V332 changes PSX.EXE only. Every DAT member and COMM.IMG is byte-identical to
+V331, so V332 adds no script/layout debt. check_build exits nonzero only for
+the already-recorded V329 lineage debt above.

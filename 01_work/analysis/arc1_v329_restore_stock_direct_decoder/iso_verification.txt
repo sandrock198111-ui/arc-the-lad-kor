@@ -1,0 +1,19 @@
+V329 fixed-LBA disc verification
+
+full_zip=arc1_v329_restore_stock_direct_decoder_TEST_ONLY_25C7DECF.zip
+full_sha256=25C7DECF7D69B356DCBA2B2CB098D0667EB7CF081CB8A87B4AB64583ABBF8C90
+delta=arc1_v329_restore_stock_direct_decoder_TEST_ONLY_delta_from_v328_6585D27B.zip
+delta_sha256=6585D27B3DA45A9CFDA53E2F590C60AF7DA7DCE658D70D7CB47D0AE5DD95E9E6
+bin=03_output/V329.bin
+bin_size=632495136
+bin_sha256=4763A107E1F7B029D02EEE394286A56CA5C33D82585C2043414F567808A314C9
+cue=03_output/V329.cue
+cue_sha256=C2E3B22EBF651591359CA0C1D7A68835063908BE2B6FD1604C1A9A80D02319A4
+
+verify_iso_layout.py result=PASS
+- all 506 data files kept their sector numbers
+- COMM.DAT/COMM.IMG/COMM.SND LBA=307/667/891
+- PSX.EXE LBA=268481, size=587776
+- all 164 ZIP members read back byte-exact from V329.bin
+
+Runtime is not established by this check.

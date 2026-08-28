@@ -1,0 +1,34 @@
+{
+  "build": "V330 TEST_ONLY skill-name x minus 4",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v329_restore_stock_direct_decoder_TEST_ONLY_25C7DECF.zip",
+    "sha256": "25C7DECF7D69B356DCBA2B2CB098D0667EB7CF081CB8A87B4AB64583ABBF8C90"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v330_skill_name_x_minus4_TEST_ONLY_38FE2472.zip",
+    "sha256": "38FE24725CA82B721A544C4F6A6B787A4028ADA00F4312A2717F746BAF809DF0"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v330_skill_name_x_minus4_TEST_ONLY_delta_from_v329_FB827FE3.zip",
+    "sha256": "FB827FE3E9B21711D2030E6DF7BBBECF96A1E3D28E0860A4095D4C8690DAD504"
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 70
+  },
+  "patch": {
+    "skill_call_file": "0x47880",
+    "skill_call_ram": "0x80162080",
+    "wrapper_file": "0x808B0",
+    "wrapper_ram": "0x8019B0B0",
+    "dx": -4,
+    "state": "0x801F1DB4"
+  },
+  "scope": "shift only rendered skill-name object packets; keep window and all other text objects unchanged",
+  "runtime_evidence": "V329 states 4/5 skill names start at X 198/71; predicted V330 starts 194/67",
+  "known_remaining": "E5 choice-prefix physical-0 packets and inherited V329 MEDIUM items remain separate",
+  "runtime": "PENDING user cold boot and skill/item/status/dialogue comparison",
+  "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE"
+}

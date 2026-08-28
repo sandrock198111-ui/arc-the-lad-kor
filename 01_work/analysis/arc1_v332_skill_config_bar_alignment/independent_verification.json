@@ -1,0 +1,26 @@
+{
+  "result": "PASS",
+  "hashes": {
+    "base": "4D5F9D165B54F8EE740DE313D8524E999DFEC2763BB0E3018F767C499A2E1DD5",
+    "final": "D2951A33C598C04BDDDCDC07678ADADCC18471CE98FE32B904527073445BB5AF",
+    "delta": "72E259EF0F521E917CB014F4DA70DA4CD9BBC0B7D8EBEB5332D5F1A0297921B5",
+    "psx": "394CF9F98A4A4E95B3DD953EA8C72ADADE26B1A404382B8342794213F8178751"
+  },
+  "archive": {
+    "members": 164,
+    "changed_members": [
+      "PSX.EXE"
+    ]
+  },
+  "expected_write": {
+    "changed_bytes": 2,
+    "exact_offsets": [
+      "0x460F4",
+      "0x460F8"
+    ]
+  },
+  "skill": "V331 dedicated 0x80162080 wrapper preserved; table/pointers prove both target names",
+  "configuration": "text 162/222 and 사용안함 preserved; bars 164/224 -> 160/220; inset 2px",
+  "control_flow": "0x801608F4 remains jump delay slot; 0x801608F8 remains branch target",
+  "runtime": "PENDING V332 user cold boot"
+}

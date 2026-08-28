@@ -1,0 +1,5 @@
+state,source_file,source_pointer,choice_y,e5_token,leading_packet_1,leading_packet_2,result
+3,1/S1023.DAT,0x80116981,84,E5 03,physical0@x46,physical0@x60,visible_다다
+3,1/S1023.DAT,0x80116981,100,E5 03,physical0@x46,physical0@x60,visible_다다
+6,C1/SC011.DAT-family,0x80115E02,52,E5 03,physical0@x94,physical0@x108,visible_다다
+6,C1/SC011.DAT-family,0x80115E02,68,E5 03,physical0@x94,physical0@x108,visible_다다

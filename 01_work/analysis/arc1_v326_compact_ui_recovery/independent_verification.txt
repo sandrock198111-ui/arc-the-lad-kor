@@ -1,0 +1,13 @@
+V326 independent verification: OVERALL FAIL (structural checks PASS)
+full_sha256=B1768404E175886882D49AFD1C34255D532750E3927B8696CD53A1885039D4BE
+delta_sha256=82BEDA2ADF5069E63187A09CAE4ACF057738740A57DAD9E298269B01F53BBA1F
+archive=164 members; changed=COMM.IMG,PSX.EXE
+changed_bytes=PSX.EXE:149,COMM.IMG:99
+direct_helper=220 raw bytes executed; targets 13/13, stock tails 207/207
+uv_helper=boundaries + synthetic 960..972 executed; 13/13 coordinates pass
+R3000=J-only hooks, no JAL/RA writes/helper loads; delay slots and inbound targets pass
+compact_pixels=independent original-COMM rebuild and central-six sample pass
+E7 arrays=02/05 and 03/08 pass; configuration strings=3/3 pass
+Expected-Write=exact envelope pass; every DAT and 162 other members byte exact
+BLOCKER=UV helper fails to restore live t1=160; physical blank advance 6px -> 14px
+status=DO NOT USE; fixed by V327

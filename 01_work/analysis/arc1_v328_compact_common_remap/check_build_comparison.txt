@@ -1,0 +1,8 @@
+V327/V328 check_build comparison
+V327_exit=1
+V328_exit=1
+Only the input ZIP name differs in the reports.
+choice_width_failures=75/75 identical
+choice_marker_failures=2/2 identical
+over_three_lines=18/18 identical
+comparison=V328 adds zero DAT/release-gate debt; inherited DAT debt remains.

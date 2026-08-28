@@ -1,0 +1,13 @@
+V326/V327 check_build comparison
+V326_exit=1
+V327_exit=1
+body=2878
+choices=357
+E2=1374
+in_place=1116
+choice_width_failures=75
+choice_marker_failures=2
+window_row_failures=18
+comparison=identical inherited DAT debt; V327 one-word PSX fix adds zero new gate failures
+release_gate=FAIL
+runtime=PENDING

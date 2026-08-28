@@ -1,0 +1,15 @@
+V332 disc layout/member verification: PASS
+
+patch=arc1_v332_skill_config_bar_alignment_TEST_ONLY_D2951A33.zip
+disc=03_output/V332.bin
+cue=03_output/V332.cue
+layout=v104 (expanded PSX.EXE moved after fixed-LBA data)
+bin_sha256=044481E74EFAA3A442F98264FADC339B073064414CC094D7534D4A37E82E592B
+cue_sha256=CBCE74E4FE1241447B79BDF299F3D93E334074A3C946B761466B91272081A921
+data_files=506/506 sector numbers preserved
+COMM.DAT_LBA=307 PASS
+COMM.IMG_LBA=667 PASS
+COMM.SND_LBA=891 PASS
+PSX.EXE_LBA=268481 size=587776
+patch_members=164/164 byte-identical on disc
+runtime=PENDING; this proves layout/member integrity only

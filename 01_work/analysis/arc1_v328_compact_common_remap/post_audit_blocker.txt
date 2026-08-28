@@ -1,0 +1,14 @@
+Post-build Claude audit: BLOCKER
+
+The V328 common-builder helper is correct within its own layer, but V326's
+raw-code helper still runs first.  It remaps raw 01,10..1A,80 without access to
+the text-state width, so D14/D16 Hangul reaches V328 already changed to
+synthetic physical 960..972.  V328's identity branch then preserves the wrong
+value.
+
+Measured exposure:
+- pointer-reachable EXE UI pool: 151 occurrences in 125 strings
+- DAT text regions: 8765 occurrences, 8463 in sentence interiors
+
+V328 is DO NOT USE.  V329 restores the stock one-byte decoder trampoline and
+retains the V328 D==6 common gate.

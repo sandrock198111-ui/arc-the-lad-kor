@@ -1,0 +1,8 @@
+﻿member,offset,before,after,purpose
+PSX.EXE,0x4609C,84,80,config_first_choice_x_166_to_162
+PSX.EXE,0x460BC,C0,BC,config_second_choice_x_226_to_222
+PSX.EXE,0x81AA7,A1,94,사용_안_함_to_사용안함
+PSX.EXE,0x81AA8,94,DD,사용_안_함_to_사용안함
+PSX.EXE,0x81AA9,A1,CF,사용_안_함_to_사용안함
+PSX.EXE,0x81AAA,DD,00,사용_안_함_to_사용안함
+PSX.EXE,0x81AAB,CF,00,사용_안_함_to_사용안함

@@ -1,0 +1,116 @@
+{
+  "build": "V326 TEST_ONLY compact UI glyph and control-token recovery",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v325_ui_reencode_TEST_ONLY_7828AA04.zip",
+    "sha256": "7828AA04F6A0684981332924C30B4139ABFCA5065138FA899C4D429E87C74CD1"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v326_compact_ui_recovery_TEST_ONLY_B1768404.zip",
+    "sha256": "B1768404E175886882D49AFD1C34255D532750E3927B8696CD53A1885039D4BE"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v326_compact_ui_recovery_TEST_ONLY_delta_from_v325_82BEDA2A.zip",
+    "sha256": "82BEDA2ADF5069E63187A09CAE4ACF057738740A57DAD9E298269B01F53BBA1F"
+  },
+  "changed_members": [
+    "COMM.IMG",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 149,
+    "COMM.IMG": 99
+  },
+  "compact_path": {
+    "raw_codes": [
+      "0x01",
+      "0x10",
+      "0x11",
+      "0x12",
+      "0x13",
+      "0x14",
+      "0x15",
+      "0x16",
+      "0x17",
+      "0x18",
+      "0x19",
+      "0x1A",
+      "0x80"
+    ],
+    "synthetic_indices": [
+      960,
+      972
+    ],
+    "texture_strip": {
+      "x": 240,
+      "y": 176,
+      "width": 12,
+      "height": 64
+    },
+    "direct_helper": {
+      "file": "0x808B0",
+      "ram": "0x8019B0B0",
+      "bytes": 92
+    },
+    "uv_helper": {
+      "file": "0x80910",
+      "ram": "0x8019B110",
+      "bytes": 52
+    },
+    "packet": "stock W=6 path retains U += 4; copied 12px glyph central 6px is sampled exactly"
+  },
+  "manual_strings": [
+    {
+      "pointer": "0x8234C",
+      "label": "battle_help_attack_link",
+      "semantic": "공격 / 연결 열기",
+      "offset": "0x80950",
+      "payload": "E7 02 DD 10 DD 0A E7 05 DD AD DD 47 A1 DD 89 24"
+    },
+    {
+      "pointer": "0x82350",
+      "label": "battle_help_end_status",
+      "semantic": "행동 끝 / 상태 확인",
+      "offset": "0x80961",
+      "payload": "E7 03 DD 31 DD 32 A1 DD A3 E7 08 8B DD D2 A1 DE 2B 35"
+    },
+    {
+      "pointer": "0x825F0",
+      "label": "configuration_confirm",
+      "semantic": "확인함",
+      "offset": "0x80974",
+      "payload": "DE 2B 35 DD CF"
+    },
+    {
+      "pointer": "0x825F4",
+      "label": "configuration_view",
+      "semantic": "보기",
+      "offset": "0x8097A",
+      "payload": "60 24"
+    },
+    {
+      "pointer": "0x825F8",
+      "label": "configuration_no_view",
+      "semantic": "안 보기",
+      "offset": "0x8097D",
+      "payload": "94 A1 60 24"
+    }
+  ],
+  "free_pool": {
+    "range": [
+      "0x808AC",
+      "0x80A94"
+    ],
+    "used_end": "0x80982",
+    "remaining_bytes": 274,
+    "empty_string_0x808AD_preserved": true
+  },
+  "preserved": {
+    "V325_Hanme16_atlas_outside_compact_strip": "byte exact",
+    "V325_UI_strings_except_five_manual_pointers": "byte exact",
+    "all_DAT": "byte exact",
+    "member_sizes": "byte exact"
+  },
+  "known_blocker": "DO NOT USE: UV helper clobbers live t1=160 and raw-code helper globally remaps ordinary D14/D16 Hangul",
+  "runtime": "PENDING user cold boot; inspect states 1-10 equivalents",
+  "release_status": "FAILED DIAGNOSTIC; DO NOT USE OR DISTRIBUTE"
+}

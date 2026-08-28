@@ -1,0 +1,4 @@
+﻿member,offset,before,after,purpose
+PSX.EXE,0x80940,00,A0,restore_t1_160_in_uv_return_delay_slot
+PSX.EXE,0x80942,00,09,restore_t1_160_in_uv_return_delay_slot
+PSX.EXE,0x80943,00,34,restore_t1_160_in_uv_return_delay_slot

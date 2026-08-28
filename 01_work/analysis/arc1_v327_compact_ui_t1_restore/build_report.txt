@@ -1,0 +1,12 @@
+V327 TEST ONLY - compact UI live $t1 restore
+base=arc1_v326_compact_ui_recovery_TEST_ONLY_B1768404.zip
+output=arc1_v327_compact_ui_t1_restore_TEST_ONLY_B93E1001.zip
+sha256=B93E100124AA69050DE6F181DB507E43042E20AF52EBEFC0857147D042B117EE
+delta=arc1_v327_compact_ui_t1_restore_TEST_ONLY_delta_from_v326_F4FE1A1F.zip
+delta_sha256=F4FE1A1F3796233062B3B485F64DBFF2C269284E132E3A0EB88E9715F9DDA8EB
+changed_members=PSX.EXE
+changed_bytes=3 in one word at file 0x80940 / RAM 0x8019B140
+patch=nop -> ori t1,zero,160 in UV helper return-jump delay slot
+blank_contract=physical160 advances 6px; all other glyphs keep 14px
+all V326 data outside one word=byte exact
+KNOWN BLOCKER=global raw-code helper remains; V327 DO NOT USE (fixed by V329)

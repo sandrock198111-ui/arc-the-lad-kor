@@ -1,0 +1,11 @@
+V329 independent verification: PASS
+full_sha256=25C7DECF7D69B356DCBA2B2CB098D0667EB7CF081CB8A87B4AB64583ABBF8C90
+delta_sha256=6585D27B3DA45A9CFDA53E2F590C60AF7DA7DCE658D70D7CB47D0AE5DD95E9E6
+archive=164 members; changed=PSX.EXE only; exact one-word overlay
+Expected-Write=3 changed bytes at file 0x8EF44; delay nop preserved
+decoder=V325 stock j 0x8016B3E0 restored; raw helper has no branch/pointer entry
+pipeline=stock raw-1 decode then D6-only common remap
+interpreter=D6/D14/D16 x physical0..1238 and raw01..DC PASS
+D14/D16 Hangul=no synthetic 960..972 remap
+V328 common gate, UV strip and V327 t1 restore=byte exact
+runtime=PENDING V329 cold boot; TEST_ONLY

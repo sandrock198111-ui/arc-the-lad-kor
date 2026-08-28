@@ -1,0 +1,20 @@
+V329 cold-boot runtime checklist
+
+1. Close the running game and boot 03_output/V329.cue.  Do not resume a V327
+   or V328 emulator savestate because it contains the old EXE in RAM.
+2. Load screen: confirm level and play-time rows show compact digits and blanks.
+3. Enter the game and read normal dialogue containing 다/그/하/여/것/변.  These
+   must remain correct Korean; V326-V328 could corrupt these one-byte codes.
+4. Item screen: confirm item names remain Korean, their trailing quantities are
+   compact digits, and no previous-looking Hangul glyph remains in blank space.
+5. Battle/status screens: confirm HP, MP, level, top counters and compact symbols.
+6. Confirm E7 button/orb icons still appear.
+7. Choice rows may still begin with visible "다다".  Disk bytes show E5 03
+   followed directly by option text; the two physical-0 packets are generated
+   by the E5 control path and are intentionally outside V329.
+
+Please capture fresh V329 states from at least:
+- the load screen,
+- an item/quantity screen,
+- a battle or status screen,
+- a normal dialogue and a choice screen if convenient.

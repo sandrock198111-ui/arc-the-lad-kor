@@ -1,0 +1,112 @@
+{
+  "result": "PASS",
+  "hashes": {
+    "base": "B93E100124AA69050DE6F181DB507E43042E20AF52EBEFC0857147D042B117EE",
+    "final": "A71FCF2E2F6C60EBFA554E6D4951FAE25CF7B3DC03CC27C9801EE4993CFC0324",
+    "delta": "04BCF32CA5DEEF71683A08C4112FAEE705E217D9AFEA271C1F847046E25FD80C"
+  },
+  "archive": {
+    "members": 164,
+    "changed_members": [
+      "PSX.EXE"
+    ]
+  },
+  "psx_expected_write": {
+    "changed_bytes": 55,
+    "exact_overlay_match": true
+  },
+  "hook": {
+    "ram": "0x8016B51C",
+    "delay_word": "0x84C20004"
+  },
+  "helper": {
+    "ram": "0x8019B190",
+    "size": 84,
+    "jal_count": 0
+  },
+  "truth_table": {
+    "D6:0": {
+      "mapped": 960,
+      "u_after_halfwidth": 244,
+      "v": 176
+    },
+    "D6:15": {
+      "mapped": 961,
+      "u_after_halfwidth": 244,
+      "v": 176
+    },
+    "D6:16": {
+      "mapped": 962,
+      "u_after_halfwidth": 244,
+      "v": 176
+    },
+    "D6:25": {
+      "mapped": 971,
+      "u_after_halfwidth": 244,
+      "v": 208
+    },
+    "D6:127": {
+      "mapped": 972,
+      "u_after_halfwidth": 244,
+      "v": 224
+    },
+    "D14:0": {
+      "mapped": 0,
+      "u_after_halfwidth": -1,
+      "v": -1
+    },
+    "D14:15": {
+      "mapped": 15,
+      "u_after_halfwidth": -1,
+      "v": -1
+    },
+    "D14:16": {
+      "mapped": 16,
+      "u_after_halfwidth": -1,
+      "v": -1
+    },
+    "D14:25": {
+      "mapped": 25,
+      "u_after_halfwidth": -1,
+      "v": -1
+    },
+    "D14:127": {
+      "mapped": 127,
+      "u_after_halfwidth": -1,
+      "v": -1
+    },
+    "D16:0": {
+      "mapped": 0,
+      "u_after_halfwidth": -1,
+      "v": -1
+    },
+    "D16:15": {
+      "mapped": 15,
+      "u_after_halfwidth": -1,
+      "v": -1
+    },
+    "D16:16": {
+      "mapped": 16,
+      "u_after_halfwidth": -1,
+      "v": -1
+    },
+    "D16:25": {
+      "mapped": 25,
+      "u_after_halfwidth": -1,
+      "v": -1
+    },
+    "D16:127": {
+      "mapped": 127,
+      "u_after_halfwidth": -1,
+      "v": -1
+    }
+  },
+  "exhaustive_interpreter": "D=6/14/16 x physical 0..1238 PASS; RA/v0/a2 preserved; a1 ordinal restored",
+  "V327_runtime_evidence": {
+    "six_pixel_packets": 53,
+    "legacy_packets_fixed_by_V328": 52,
+    "already_synthetic_packets": 1
+  },
+  "inheritance": "V327 anchored; COMM.IMG and all 163 non-PSX members byte exact",
+  "runtime": "PENDING V328 user cold boot"
+}

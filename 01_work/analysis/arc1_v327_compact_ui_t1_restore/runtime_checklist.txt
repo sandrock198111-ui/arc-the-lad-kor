@@ -1,0 +1,31 @@
+V327 cold-boot runtime checklist
+
+OBSOLETE - DO NOT RUN.  Post-audit found the inherited global raw-code helper.
+Use the V329 checklist instead.
+
+PRECONDITION
+- Fully close DuckStation.
+- Boot 03_output/V327.cue; do not load a V325/V326 savestate.
+- Loading V327_1.mcd is allowed after the game reaches its own load screen.
+
+PRIMARY CANARIES
+1. Load/save entry: level (for example L9) and play-time digits/slash are readable.
+2. Blank fields are blank; no Hangul `다` appears in padding.
+3. Ordinary Korean spaces use the compact 6px advance, not V326's 14px gap.
+4. Left status panel labels and numbers are readable.
+5. Item names have no previous-glyph tail after the terminator.
+6. Battle option labels are readable.
+7. HP and magic values are readable.
+8. Top character status values are readable.
+9. E7 controls display ○/□/×/START at the expected actions.
+10. Character orb icons remain present.
+
+SECONDARY REGRESSION CHECK
+- Advance several normal dialogue lines and confirm spacing/wrapping did not widen.
+- Confirm configuration strings: 확인함 / 보기 / 안 보기.
+- Confirm story Hangul, item/skill text and target cursor remain as in V325/V324.
+
+STATUS
+- Static patch and disc layout: PASS.
+- Inherited check_build DAT debt: FAIL (75 choice widths, 2 marker positions, 18 over-row windows).
+- Runtime: PENDING.

@@ -1,0 +1,9 @@
+V329, V330 and V331 were checked with 02_scripts/check_build.py.
+
+All three retain the same inherited DAT debt:
+- choice rows over width: 75
+- choice marker positions differing from the original: 2
+- dialogue bodies over three lines: 18
+
+V330 and V331 change PSX.EXE only.  Their DAT members are byte-identical to
+V329, so neither alignment patch introduces new script-layout debt.

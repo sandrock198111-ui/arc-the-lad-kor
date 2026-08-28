@@ -1,0 +1,17 @@
+V326 TEST_ONLY disc packaging verification
+full_zip=arc1_v326_compact_ui_recovery_TEST_ONLY_B1768404.zip
+full_zip_sha256=B1768404E175886882D49AFD1C34255D532750E3927B8696CD53A1885039D4BE
+layout=01_work/arc1_v104_layout.xml
+cue=03_output/V326.cue
+cue_sha256=5AE10F15EF5165B38085813F114B223E5396F8108BBA7F39968A30E7EA2C59BE
+bin=03_output/V326.bin
+bin_sha256=78A7B7AD30A5201FEFA7A8CA1BECE1ADF8619658E402DE48D523A4973DA7FAC2
+files=507
+data_lba_preserved=506/506
+COMM.DAT_LBA=307
+COMM.IMG_LBA=667
+COMM.SND_LBA=891
+PSX.EXE_LBA=268481
+patched_member_readback=164/164
+verify_iso_layout=PASS (disc layout/member integrity only)
+runtime=PENDING user cold boot

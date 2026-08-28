@@ -1,0 +1,12 @@
+V328 and V329 were checked with 02_scripts/check_build.py.
+
+V328: exit 1
+V329: exit 1
+
+Both builds report the same inherited data debt:
+- choice rows over width: 75
+- choice marker positions differing from the original: 2
+- dialogue bodies over three lines: 18
+
+V329 changes PSX.EXE only, so the two reports are identical apart from the
+input filename.  No new DAT debt was introduced by the decoder restoration.

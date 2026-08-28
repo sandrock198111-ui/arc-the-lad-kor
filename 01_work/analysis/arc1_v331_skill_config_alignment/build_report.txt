@@ -1,0 +1,12 @@
+V331 TEST ONLY - skill and configuration alignment
+base=arc1_v330_skill_name_x_minus4_TEST_ONLY_38FE2472.zip
+output=arc1_v331_skill_config_alignment_TEST_ONLY_4D5F9D16.zip
+sha256=4D5F9D165B54F8EE740DE313D8524E999DFEC2763BB0E3018F767C499A2E1DD5
+delta=arc1_v331_skill_config_alignment_TEST_ONLY_delta_from_v330_1F312682.zip
+delta_sha256=1F312682F7D879AEFFBE71487DB87CA444592BB4430FF8DF8E8D237E024B08ED
+changed_members=PSX.EXE only
+changed_bytes=7 in two configuration X immediates + one owned payload
+skill=inherit V330 skill-name packets dx=-4
+configuration=choice X 166/226 -> 162/222; 사용 안 함 -> 사용안함
+labels/window/items/equipment/status/dialogue=unchanged from V330
+runtime=PENDING; TEST_ONLY

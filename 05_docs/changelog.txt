@@ -1,3 +1,58 @@
+2026-08-28 - V332 스킬명·설정 선택문·선택 바 4px 좌측 정렬
+- V331 후속 Claude 감사에서 설정 선택문 X만 이동하고 선택 바 X는 원래 `164/224`에 남아 상대 정렬이 깨지는 점을 확인했다. 재감사 과정의 부호확장 오류를 정정한 뒤, 기술명 표 RAM `0x8019B9C0` entry1/4가 각각 `번 그라운드`/`슬로우 에너미` 시작 포인터이고 V329 상태의 source end `0x8019ADF0/0x8019C1F7`와 정확히 맞아 V331 전용 호출 `0x80162080`이 두 화면을 모두 커버함을 재확정했다.
+- `02_scripts/build_arc1_v332_skill_config_bar_alignment.py`와 `verify_arc1_v332_skill_config_bar_alignment.py`를 추가했다. V331 기술명 wrapper, 설정 선택문 X `162/222`, `사용안함` payload는 byte exact로 유지하고 선택 바 좌표만 file `0x460F4: 0x82→0x7E`, `0x460F8: 0xBE→0xBA`로 바꿔 X `164/224→160/220`으로 각각 4px 당겼다.
+- 두 워드는 `0x801608F0` jump의 delay slot과 `0x801608E8` branch target이다. opcode·명령 길이·분기 목적지는 보존했고, `0x8016D620`이 `a1`을 bar primitive X 필드에 저장함을 기계어와 Capstone으로 검산했다. 텍스트 X `162/222`와 bar X `160/220`의 시작 여백은 양쪽 모두 기존과 같은 2px다.
+- V331 대비 변경 멤버는 `PSX.EXE` 하나, 실제 변경은 두 바이트뿐이다. full/delta/PSX SHA-256은 `D2951A33C598C04BDDDCDC07678ADADCC18471CE98FE32B904527073445BB5AF` / `72E259EF0F521E917CB014F4DA70DA4CD9BBC0B7D8EBEB5332D5F1A0297921B5` / `394CF9F98A4A4E95B3DD953EA8C72ADADE26B1A404382B8342794213F8178751`다.
+- `V332.bin`/`V332.cue` SHA-256은 `044481E74EFAA3A442F98264FADC339B073064414CC094D7534D4A37E82E592B` / `CBCE74E4FE1241447B79BDF299F3D93E334074A3C946B761466B91272081A921`다. v104 layout에서 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481, 패치 멤버 164/164 readback이 PASS했다.
+- Claude 최종 독립 감사도 실제 두 바이트 diff, 분기/delay 위상, bar X store, 기술명 표·wrapper, payload와 디스크 해시를 별도로 재현해 BLOCKER 0/HIGH 0으로 판정했다. MEDIUM은 −4px가 긴 기술명 전체의 근본 폭 공식 수정은 아니라는 점과 V329부터의 미결 UI 항목이다.
+- V331은 선택 바 정렬 미완료로 실기 인계 전에 V332로 대체했다. V332도 콜드부팅 실기 전 TEST ONLY이며, 상속 DAT 부채(선택지 폭 75·마커 2·3줄 초과 18)는 V329/V331과 동일하다. `bible_current.txt`는 변경하지 않았다.
+
+2026-08-28 - V331 스킬명·설정 선택문 4px 좌측 정렬
+- 사용자가 V329 실기 화면에서 16px 기술명이 오른쪽 경계를 넘고 설정 선택문도 오른쪽으로 몰린 것을 확인했다. V329 상태 5종의 활성 패킷을 다시 해제해 기술명 전용 객체가 `0x801F1DB4`, 전용 호출자가 `0x80162080`, 원 기술명 렌더러가 `0x8016C38C`임을 확정했다.
+- V330에서 기술명 호출자 한 곳만 file `0x47880`에서 wrapper로 우회했다. wrapper는 원 렌더러를 그대로 호출한 뒤 공용 packet offset 함수 `0x8016B440`을 `(dx=-4, dy=0, state=0x801F1DB4)`로 호출한다. 장비명·인물명 등 다른 `0x8016C38C` 호출자는 byte exact로 보존했다.
+- V331은 V330을 기반으로 설정 렌더러 `0x80160810`의 두 선택열 immediate만 file `0x4609C: 0x84→0x80`, `0x460BC: 0xC0→0xBC`로 바꿔 X `166/226→162/222`로 각각 4px 당겼다. 설정 라벨 X=46, 창, 다른 UI는 바꾸지 않았다.
+- sole pointer file `0x825EC`가 가리키는 전용 payload file `0x81AA4`의 `사용 안 함`에서 반각 공백 `A1` 두 개만 제거해 `사용안함`으로 만들고 기존 9바이트 슬롯 크기와 0 종료를 유지했다. 해당 포인터 값은 정렬·비정렬 전수 검색에서 1회뿐이었다.
+- V330 대비 변경 멤버는 `PSX.EXE` 하나, 실제 변경은 두 immediate 2바이트와 payload 5바이트의 정확히 7바이트다. full/delta SHA-256은 `4D5F9D165B54F8EE740DE313D8524E999DFEC2763BB0E3018F767C499A2E1DD5` / `1F312682F7D879AEFFBE71487DB87CA444592BB4430FF8DF8E8D237E024B08ED`다.
+- `V331.bin`/`V331.cue` SHA-256은 `0F26681AFD1F4F099CB9248A0EB48F027C6E8F2AA6A149103358FFE15ED2DC57` / `7C0A92AA1F81D7127EA6C448E1DE4841205C9AAF55EA988030F9DAAA6C9E0398`다. expanded PSX.EXE 때문에 original layout은 데이터 LBA를 3섹터 밀어 실패하므로 검증된 v104 layout을 사용했고, 데이터 LBA 506/506와 164/164 readback이 PASS했다.
+- V331은 콜드부팅 실기 전 TEST ONLY다. 기존 선택지 폭 75·마커 2·3줄 초과 18은 V329와 동일한 상속 DAT 부채이며 이번 PSX 전용 변경이 새로 만든 것이 아니다. `bible_current.txt`는 변경하지 않았다.
+
+2026-08-27 - V329 V326 원시코드 전역 리맵 제거와 stock decoder 복원
+- Claude 독립 감사에서 V328의 새 `D==6` 공통 게이트 자체는 정확하지만, V326이 앞단 one-byte decoder trampoline에 남긴 raw helper가 상태 폭을 보기 전에 `01`, `10..1A`, `80`을 전역 synthetic `960..972`로 바꾸는 상속 BLOCKER를 확인했다. 포인터 도달 UI는 151회, DAT 텍스트는 8,765회(문장 중간 8,463회)가 이 경로에 노출돼 V328의 D14/D16 identity만으로는 본문 손상을 막지 못한다.
+- `02_scripts/build_arc1_v329_restore_stock_direct_decoder.py`와 `verify_arc1_v329_restore_stock_direct_decoder.py`를 추가했다. V328의 file `0x8EF44` 한 점프 워드만 `j 0x8019B0B0`에서 pre-V326 stock `j 0x8016B3E0`로 복원하고 delay `nop`은 보존했다. raw helper 본체는 바이트를 지우지 않았지만 직접 branch/jump와 정렬·비정렬 포인터 진입이 모두 0이라 도달 불가다.
+- stock one-byte decoder의 `addiu $v1,$v1,-1`을 거친 뒤 V328 공통 게이트가 폭 6에서만 physical `0,15..25,127`을 synthetic strip으로 보낸다. 실제 MIPS-I load-delay 인터프리터로 D6/D14/D16 × physical 0..1238 및 raw `01..DC`를 전수 실행해 D6 compact 복원과 D14/D16 한글 identity를 함께 확인했다. V328 common helper, V326 UV strip, V327 `$t1=160`, COMM.IMG와 다른 163멤버는 byte exact다.
+- V328 대비 변경 멤버는 `PSX.EXE` 하나, 한 워드의 실제 3바이트뿐이다. full/delta SHA-256은 `25C7DECF7D69B356DCBA2B2CB098D0667EB7CF081CB8A87B4AB64583ABBF8C90` / `6585D27B3DA45A9CFDA53E2F590C60AF7DA7DCE658D70D7CB47D0AE5DD95E9E6`다.
+- `V329.bin`/`V329.cue` SHA-256은 `4763A107E1F7B029D02EEE394286A56CA5C33D82585C2043414F567808A314C9` / `C2E3B22EBF651591359CA0C1D7A68835063908BE2B6FD1604C1A9A80D02319A4`다. 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 164/164 디스크 readback이 PASS했다.
+- `check_build.py`는 V328/V329 양쪽에서 선택지 폭 75·마커 2·3줄 초과 18로 같아 신규 DAT 부채는 0이다. V326·V327·V328은 원시코드 전역 리맵 BLOCKER 때문에 DO NOT USE로 재분류한다. V329은 콜드부팅 실기 전 TEST ONLY이고 `bible_current.txt`는 변경하지 않았다.
+- 후속 Claude 독립 감사는 해시·164멤버/ISO readback·Expected-Write·실제 MIPS-I 파이프라인·live register·E7/COMM 계승을 별도로 재현해 BLOCKER 0/HIGH 0으로 판정했다. 남은 MEDIUM은 미승인 설정문 3개, 구세대 compact strip 비텍스트 감사, E5가 직접 physical0 두 개를 찍는 선택지 `다다` 세 건이다. 감사 원문 요약은 `01_work/analysis/arc1_v329_restore_stock_direct_decoder/claude_independent_audit.txt`에 고정했다.
+
+2026-08-27 - V328 공통 렌더러의 6px compact 물리 인덱스 복구
+- 사용자가 제공한 V327 DUCCU 상태 8종을 구조적으로 해제해 28개 텍스트 객체와 322개 활성 패킷을 감사했다. V327은 콜드부팅과 장면 진행이 가능하고 E7 아이콘도 다시 보였지만, 불러오기의 레벨·시간, 아이템 수량, 전투 HP/MP·상태 숫자는 여전히 한글 조각으로 보였다.
+- 폭 6 패킷 53개를 역산하면 52개가 구형 compact physical `0, 15..25, 127`이고 1개만 V326 synthetic strip 960을 이미 탔다. 즉 V326 direct decoder helper는 한 파서만 잡았고, 다수 포맷터는 이미 해독된 물리 인덱스를 공통 글리프 빌더로 직접 넘겼다.
+- `02_scripts/build_arc1_v328_compact_common_remap.py`와 `verify_arc1_v328_compact_common_remap.py`를 추가했다. 공통 빌더 `0x8016B51C`를 J-only helper로 우회하되 상태 폭 `+0x0D==6`일 때만 `0→960`, `15..25→961..971`, `127→972`로 바꾼다. 폭 14/16과 그 밖의 글리프는 identity다.
+- helper는 file `0x80990` / RAM `0x8019B190`의 검증된 0 cave 84바이트를 사용한다. 원본 `lh $v0,4($a2)`는 훅 delay slot에 그대로 두고, 덮은 `lh $a1,0x0A($a2)`를 복귀 전에 재현한다. `jal` 없이 RA·`v0/a2`를 보존하며 V326 UV strip과 V327 `$t1=160` 복원을 그대로 계승한다.
+- 독립 인터프리터로 폭 6/14/16 × physical 0..1238 전수를 실행했고, branch re-entry 0, helper inbound/return 각 1, exact overlay, 실제 변경 55바이트를 통과했다. V327 대비 변경 멤버는 `PSX.EXE` 하나이고 다른 163멤버·모든 DAT·COMM.IMG는 byte exact다.
+- full/delta SHA-256은 `A71FCF2E2F6C60EBFA554E6D4951FAE25CF7B3DC03CC27C9801EE4993CFC0324` / `04BCF32CA5DEEF71683A08C4112FAEE705E217D9AFEA271C1F847046E25FD80C`다. `V328.bin`/`V328.cue` SHA-256은 `E125E8E0B11E9D6C5272A4F6D779C69BC1098F6C01B8F47665BD08B6D330434F` / `12F1AE016E358D6F1658FEDA7A9ADC98249C53B923CFB0B0FE3598116AAD9DA8`; 506/506 LBA와 164/164 readback이 통과했다.
+- 선택지 앞의 `다다`는 원문 공백이 아니라 `E5 03` 선택 제어가 행마다 폭 14 physical0 패킷을 두 개 생성한 결과다. 실제 한글 `다`도 physical0이므로 공통 치환에 섞지 않고 E5 전용 후속 대상으로 분리했다.
+- 후속 Claude 감사에서 V326 raw-code helper가 공통 게이트보다 앞에서 D14/D16 본문까지 synthetic으로 바꾸는 BLOCKER를 확인했다. V328은 DO NOT USE이며 V329에서 stock decoder trampoline을 복원했다. `bible_current.txt`는 변경하지 않았다.
+
+2026-08-27 - V327 V326 UV helper의 live `$t1` 복원
+- Claude 독립 감사에서 V326 UV helper가 `$t1`을 synthetic 판정/U 좌표에 사용한 뒤 복원하지 않는 회귀를 적발했다. 공용 글리프 빌더는 진입부 `0x8016B524`에서 `$t1=160`을 만들고 `0x8016B640`에서 physical blank 160의 전진을 6px로 바꾸므로, V326에서는 UI·대사의 공백이 14px로 넓어졌다. V325 상주 UI만 해도 이 공백이 697회다.
+- `02_scripts/build_arc1_v327_compact_ui_t1_restore.py`와 `verify_arc1_v327_compact_ui_t1_restore.py`를 추가했다. V326 UV helper의 복귀 `j 0x8016B5B0` delay slot(RAM `0x8019B140`, file `0x80940`) 한 워드만 `nop`에서 `ori $t1,$zero,160`으로 바꿨다. 두 helper 경로가 모두 이 delay slot을 지나므로 synthetic/stock 어느 쪽도 우회하지 않는다.
+- V326 전체 독립 검증을 먼저 재실행한 뒤 V327 경계값과 960..972를 helper interpreter로 실행했다. 전 경로가 `$t1=160`으로 복귀하고 physical160만 6px, 다른 표본은 14px를 유지했다. V326 대비 변경 멤버는 `PSX.EXE` 하나, 변경은 한 워드의 실제 3바이트뿐이며 나머지 163멤버와 모든 데이터는 byte exact다.
+- E7은 문자열 바이트만 보지 않고 실제 라우팅과 픽셀까지 닫았다. `E7 02/03/05/08`은 id `1/2/4/7`, U `192/180/204/216`, V=228로 가며 네 사각형은 V324 승인 픽셀과 byte exact다. compact strip x=240..251과도 겹치지 않는다.
+- `check_build.py`는 V326/V327 양쪽에서 선택지 폭 75곳, 선택지 마커 2곳, 3줄 초과 18곳으로 완전히 같았다. V327 신규 gate debt는 0이지만 상속 DAT 부채 때문에 전체 release gate는 FAIL을 유지한다.
+- full ZIP SHA-256은 `B93E100124AA69050DE6F181DB507E43042E20AF52EBEFC0857147D042B117EE`, V326 delta는 `F4FE1A1F3796233062B3B485F64DBFF2C269284E132E3A0EB88E9715F9DDA8EB`다. `V327.bin`/`V327.cue` SHA-256은 `BBD9111327D6B6E9E31537C3DAA2866E8DEC73BA0EE44AEC7AA10975992B6063` / `969C4E5F5C9B690710F6F3995C514BB81B7DF6A80CF9315AD9A65B041E81A4ED`; 데이터 LBA 506/506와 164/164 readback이 통과했다.
+- 후속 Claude 재감사에서 V326 raw-code 전역 helper가 그대로 상속된 사실도 확인됐다. V326과 V327 모두 DO NOT USE이며 V329에서 제거했다. `bible_current.txt`는 변경하지 않았다.
+
+2026-08-27 - V326 16px 한글 계보의 반각 숫자·설정·전투 아이콘 복구
+- V325 실기 상태 10종을 `02_scripts/analyze_arc1_v325_ui_states.py`로 재분석했다. 47개 텍스트 객체, 활성 패킷 547개, 꼬리 패킷 681개에서 폭 6 경로가 원본 low code를 V325의 16px physical atlas에 그대로 대입해 숫자·슬래시·빈칸·보조기호가 한글로 보이는 구조를 확정했다.
+- `02_scripts/build_arc1_v326_compact_ui_recovery.py`와 `verify_arc1_v326_compact_ui_recovery.py`를 추가했다. 원본 `COMM.IMG`의 12x12 compact 글리프 13개(빈칸, `/`, 숫자 0~9, index 127)를 V325에서 비어 있고 과거 509상태 감사에서도 nontext read가 0인 x=240..251/y=176..239 영역에 복제했다.
+- raw code `01`, `10..1A`, `80`을 synthetic index 960..972로 보내는 direct helper와, 이 범위만 U=240/V=176+행*16으로 바꾸는 UV helper를 추가했다. stock code는 원래 decoder/UV 경로로 tail-jump하며, 폭 6 경로는 U+4와 W=6을 유지해 원본 12px 글리프 중앙 6열을 읽는다.
+- V325에서 누락된 설정창 문자열 3개(`확인함`, `보기`, `안 보기`)를 확인된 포인터 `0x825F0/0x825F4/0x825F8`에 다시 인코딩했다. 전투 도움말 2개는 E7 아이콘 배열을 복구해 `○ 공격 / □ 연결 열기`, `× 행동 끝 / START 상태 확인` 구조를 유지했다.
+- 독립 검증에서 direct raw code 220개 중 목표 13/13과 stock tail 207/207, UV 경계와 synthetic 13/13 좌표, R3000 delay/RA, compact pixel 중앙 6열, E7 배열, 설정 문자열, Expected-Write를 통과했다. V325 대비 변경 멤버는 `PSX.EXE`, `COMM.IMG`뿐이며 다른 162개 멤버와 모든 DAT는 byte exact다.
+- full ZIP SHA-256은 `B1768404E175886882D49AFD1C34255D532750E3927B8696CD53A1885039D4BE`, V325 delta는 `82BEDA2ADF5069E63187A09CAE4ACF057738740A57DAD9E298269B01F53BBA1F`다. `V326.bin`/`V326.cue` SHA-256은 `78A7B7AD30A5201FEFA7A8CA1BECE1ADF8619658E402DE48D523A4973DA7FAC2` / `5AE10F15EF5165B38085813F114B223E5396F8108BBA7F39968A30E7EA2C59BE`; 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 164/164 readback이 통과했다.
+- 후속 Claude 감사에서 UV helper의 live `$t1=160` 미복원으로 공백 전진이 6px에서 14px로 바뀌는 회귀와, raw helper가 상태 폭 없이 한글 본문까지 전역 synthetic으로 바꾸는 별도 BLOCKER가 확인됐다. V326은 DO NOT USE다. 전자는 V327, 후자는 V329에서 복구했다. `bible_current.txt`의 v197 배포 기준은 변경하지 않았다.
+
 2026-08-26 - V325 Hanme16 UI 포인터 전수 재인코딩
 - `02_scripts/build_arc1_v325_ui_reencode.py`와 `verify_arc1_v325_ui_reencode.py`를 추가했다. V324 런타임 상태 6종에서 불러오기 이후 전투·장비·아이템·기술 화면까지 진입하는 것을 확인했고, UI 깨짐은 렌더러가 아니라 V241 계보의 구 코드가 V320계열 16px physical atlas와 맞지 않는 문제로 판정했다.
 - 검증된 UI 원문 4종 678행/671고유 포인터를 합쳤다. HUD binary 포인터 5개는 byte exact로 제외하고, 충돌 포인터 `0x80F1C`는 503행 UI 표를 우선해 정상 문자열 666개를 다시 인코딩했다. 9개 상주 풀은 6,076바이트이며 561고유 payload가 종료문자 포함 5,590바이트를 사용해 486바이트가 남는다.

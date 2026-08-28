@@ -1,0 +1,12 @@
+V329 TEST ONLY - restore stock direct decoder
+base=arc1_v328_compact_common_remap_TEST_ONLY_A71FCF2E.zip
+output=arc1_v329_restore_stock_direct_decoder_TEST_ONLY_25C7DECF.zip
+sha256=25C7DECF7D69B356DCBA2B2CB098D0667EB7CF081CB8A87B4AB64583ABBF8C90
+delta=arc1_v329_restore_stock_direct_decoder_TEST_ONLY_delta_from_v328_6585D27B.zip
+delta_sha256=6585D27B3DA45A9CFDA53E2F590C60AF7DA7DCE658D70D7CB47D0AE5DD95E9E6
+changed_members=PSX.EXE only
+changed_bytes=3 in one jump word at file 0x8EF44
+patch=j raw-helper -> j stock 0x8016B3E0; delay nop preserved
+D6 compact path=stock decode then V328 960..972 remap
+D14/D16 one-byte Hangul=stock physical indices, no synthetic remap
+runtime=PENDING; TEST_ONLY

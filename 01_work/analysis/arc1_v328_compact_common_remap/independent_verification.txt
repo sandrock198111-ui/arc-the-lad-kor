@@ -1,0 +1,11 @@
+V328 independent verification: PASS
+full_sha256=A71FCF2E2F6C60EBFA554E6D4951FAE25CF7B3DC03CC27C9801EE4993CFC0324
+delta_sha256=04BCF32CA5DEEF71683A08C4112FAEE705E217D9AFEA271C1F847046E25FD80C
+archive=164 members; changed=PSX.EXE only; exact overlay match
+Expected-Write=55 changed bytes within one hook word and 84-byte zero cave
+control flow=one inbound J, one return J, no JAL/RA clobber, hook delay preserved
+interpreter=D6/D14/D16 x physical0..1238 PASS; v0/a2/RA preserved; ordinal restored
+scope=D6 maps 0,15..25,127 to 960..972; D14/D16 are identity
+V327 runtime evidence=53 W6 packets: 52 legacy targets fixed, 1 already synthetic
+V326 UV routing and V327 t1 restore=preserved
+runtime=PENDING V328 cold boot; TEST_ONLY

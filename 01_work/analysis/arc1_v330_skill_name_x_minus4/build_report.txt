@@ -1,0 +1,12 @@
+V330 TEST ONLY - skill-name X minus 4
+base=arc1_v329_restore_stock_direct_decoder_TEST_ONLY_25C7DECF.zip
+output=arc1_v330_skill_name_x_minus4_TEST_ONLY_38FE2472.zip
+sha256=38FE24725CA82B721A544C4F6A6B787A4028ADA00F4312A2717F746BAF809DF0
+delta=arc1_v330_skill_name_x_minus4_TEST_ONLY_delta_from_v329_FB827FE3.zip
+delta_sha256=FB827FE3E9B21711D2030E6DF7BBBECF96A1E3D28E0860A4095D4C8690DAD504
+changed_members=PSX.EXE only
+changed_bytes=70 within skill call + dead-helper wrapper envelope
+skill_call=0x80162080 -> wrapper 0x8019B0B0
+effect=call original renderer, then shift object 0x801F1DB4 packets dx=-4
+window/items/equipment/status/dialogue=unchanged by construction
+runtime=PENDING; TEST_ONLY

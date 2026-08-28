@@ -1,0 +1,3 @@
+﻿member,offset,before,after,purpose
+PSX.EXE,0x460F4,82,7E,config_first_bar_x_164_to_160
+PSX.EXE,0x460F8,BE,BA,config_second_bar_x_224_to_220

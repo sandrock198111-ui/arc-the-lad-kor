@@ -1,0 +1,36 @@
+{
+  "build": "V332 TEST_ONLY skill/config bar alignment",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v331_skill_config_alignment_TEST_ONLY_4D5F9D16.zip",
+    "sha256": "4D5F9D165B54F8EE740DE313D8524E999DFEC2763BB0E3018F767C499A2E1DD5"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v332_skill_config_bar_alignment_TEST_ONLY_D2951A33.zip",
+    "sha256": "D2951A33C598C04BDDDCDC07678ADADCC18471CE98FE32B904527073445BB5AF"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v332_skill_config_bar_alignment_TEST_ONLY_delta_from_v331_72E259EF.zip",
+    "sha256": "72E259EF0F521E917CB014F4DA70DA4CD9BBC0B7D8EBEB5332D5F1A0297921B5"
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 2
+  },
+  "skill": {
+    "route": "inherit V331 dedicated call 0x80162080 and wrapper 0x8019B0B0",
+    "effect": "번 그라운드 and 슬로우 에너미 packets dx=-4",
+    "scope": "skill-name table 0x8019B9C0 only"
+  },
+  "configuration": {
+    "text_x": "inherit V331 162/222",
+    "bar_x": "164/224 -> 160/220",
+    "bar_size": "51x14 unchanged",
+    "text": "inherit V331 사용안함",
+    "inset": "2px preserved for both columns"
+  },
+  "scope": "two bar X immediates only; all DAT, COMM.IMG and other PSX bytes unchanged from V331",
+  "runtime": "PENDING user cold boot and skill/configuration comparison",
+  "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE"
+}

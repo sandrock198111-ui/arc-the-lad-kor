@@ -1,0 +1,9 @@
+V332 configuration selection-bar dispatch
+0x801608E4: 01004230  andi $v0, $v0, 1
+0x801608E8: 03004014  bnez $v0, 0x801608f8
+0x801608EC: 21200002  move $a0, $s0
+0x801608F0: 3F820508  j 0x801608fc
+0x801608F4: 7E006526  addiu $a1, $s3, 0x7e
+0x801608F8: BA006526  addiu $a1, $s3, 0xba
+0x801608FC: 88B5050C  jal 0x8016d620
+0x80160900: 21304002  move $a2, $s2

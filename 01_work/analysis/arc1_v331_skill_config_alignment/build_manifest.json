@@ -1,0 +1,32 @@
+{
+  "build": "V331 TEST_ONLY skill/config alignment",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v330_skill_name_x_minus4_TEST_ONLY_38FE2472.zip",
+    "sha256": "38FE24725CA82B721A544C4F6A6B787A4028ADA00F4312A2717F746BAF809DF0"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v331_skill_config_alignment_TEST_ONLY_4D5F9D16.zip",
+    "sha256": "4D5F9D165B54F8EE740DE313D8524E999DFEC2763BB0E3018F767C499A2E1DD5"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v331_skill_config_alignment_TEST_ONLY_delta_from_v330_1F312682.zip",
+    "sha256": "1F312682F7D879AEFFBE71487DB87CA444592BB4430FF8DF8E8D237E024B08ED"
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 7
+  },
+  "skill": "inherit V330: object 0x801F1DB4 packets dx=-4",
+  "configuration": {
+    "renderer": "0x80160810 loop",
+    "first_choice_x": "166 -> 162",
+    "second_choice_x": "226 -> 222",
+    "pointer": "0x825EC only",
+    "text": "사용 안 함 -> 사용안함"
+  },
+  "scope": "configuration choice columns only; labels/window/other UI byte-identical to V330",
+  "runtime": "PENDING user cold boot and configuration/skill comparison",
+  "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE"
+}

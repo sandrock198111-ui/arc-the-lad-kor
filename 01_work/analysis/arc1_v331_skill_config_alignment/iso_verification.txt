@@ -1,0 +1,15 @@
+V331 disc layout/member verification: PASS
+
+patch=arc1_v331_skill_config_alignment_TEST_ONLY_4D5F9D16.zip
+disc=03_output/V331.bin
+layout=v104 (expanded PSX.EXE moved after fixed-LBA data)
+data_lba=506/506 unchanged
+COMM.DAT_LBA=307 PASS
+COMM.IMG_LBA=667 PASS
+COMM.SND_LBA=891 PASS
+patch_member_readback=164/164 PASS
+PSX.EXE_LBA=268481
+PSX.EXE_size=587776
+BIN_SHA256=0F26681AFD1F4F099CB9248A0EB48F027C6E8F2AA6A149103358FFE15ED2DC57
+CUE_SHA256=7C0A92AA1F81D7127EA6C448E1DE4841205C9AAF55EA988030F9DAAA6C9E0398
+runtime=not established by this static check

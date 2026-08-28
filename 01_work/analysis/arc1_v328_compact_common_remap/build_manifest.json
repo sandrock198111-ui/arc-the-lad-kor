@@ -1,0 +1,36 @@
+{
+  "build": "V328 TEST_ONLY common-builder compact remap",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v327_compact_ui_t1_restore_TEST_ONLY_B93E1001.zip",
+    "sha256": "B93E100124AA69050DE6F181DB507E43042E20AF52EBEFC0857147D042B117EE"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v328_compact_common_remap_TEST_ONLY_A71FCF2E.zip",
+    "sha256": "A71FCF2E2F6C60EBFA554E6D4951FAE25CF7B3DC03CC27C9801EE4993CFC0324"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v328_compact_common_remap_TEST_ONLY_delta_from_v327_04BCF32C.zip",
+    "sha256": "04BCF32CA5DEEF71683A08C4112FAEE705E217D9AFEA271C1F847046E25FD80C"
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 55
+  },
+  "hook": {
+    "ram": "0x8016B51C",
+    "delay_preserved": "0x8016B520"
+  },
+  "helper": {
+    "ram": "0x8019B190",
+    "file": "0x80990",
+    "size": 84
+  },
+  "scope": "state width D==6 only; 0->960, 15..25->961..971, 127->972",
+  "preserved": "V327 COMM.IMG/DAT/UI strings/E7 icons/UV helper/t1 restore and every non-PSX member",
+  "known_remaining": "E5 03 choice control emits two D14 physical-0 placeholder packets ('다') per option; intentionally out of V328 scope",
+  "known_blocker": "V326 raw-code helper runs before this gate and globally remaps D14/D16 Hangul; fixed by V329",
+  "runtime": "Superseded before approval",
+  "release_status": "FAILED DIAGNOSTIC; DO NOT USE OR DISTRIBUTE"
+}

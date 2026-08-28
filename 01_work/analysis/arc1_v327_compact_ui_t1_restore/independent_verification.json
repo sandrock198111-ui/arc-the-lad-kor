@@ -1,0 +1,131 @@
+{
+  "result": "PASS",
+  "hashes": {
+    "base": "B1768404E175886882D49AFD1C34255D532750E3927B8696CD53A1885039D4BE",
+    "final": "B93E100124AA69050DE6F181DB507E43042E20AF52EBEFC0857147D042B117EE",
+    "delta": "F4FE1A1F3796233062B3B485F64DBFF2C269284E132E3A0EB88E9715F9DDA8EB"
+  },
+  "archive": {
+    "members": 164,
+    "changed_members": [
+      "PSX.EXE"
+    ]
+  },
+  "changed_bytes": {
+    "PSX.EXE": 3
+  },
+  "instruction": {
+    "ram": "0x8019B140",
+    "word": "0x340900A0",
+    "decoded": "ori t1,zero,160",
+    "placement": "j 0x8016B5B0 delay slot"
+  },
+  "uv_truth_table": {
+    "0": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "159": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "160": {
+      "t1_after": 160,
+      "advance": 6
+    },
+    "959": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "960": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "961": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "962": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "963": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "964": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "965": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "966": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "967": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "968": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "969": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "970": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "971": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "972": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "973": {
+      "t1_after": 160,
+      "advance": 14
+    },
+    "1238": {
+      "t1_after": 160,
+      "advance": 14
+    }
+  },
+  "stock_blank_contract": "a0==160 -> advance 6; every other tested glyph -> advance 14",
+  "affected_resident_UI_spaces_in_V325": 697,
+  "E7_icons": {
+    "1": {
+      "u": 192,
+      "v": 228,
+      "width": 12,
+      "ink": 100
+    },
+    "2": {
+      "u": 180,
+      "v": 228,
+      "width": 12,
+      "ink": 112
+    },
+    "4": {
+      "u": 204,
+      "v": 228,
+      "width": 12,
+      "ink": 112
+    },
+    "7": {
+      "u": 216,
+      "v": 228,
+      "width": 20,
+      "ink": 240
+    }
+  },
+  "inheritance": "V326 full hash anchored; V327 differs in exactly the three changed bytes of one UV-helper delay-slot word",
+  "runtime": "PENDING user cold boot"
+}

@@ -1,0 +1,12 @@
+V327 independent verification: PASS
+full_sha256=B93E100124AA69050DE6F181DB507E43042E20AF52EBEFC0857147D042B117EE
+delta_sha256=F4FE1A1F3796233062B3B485F64DBFF2C269284E132E3A0EB88E9715F9DDA8EB
+archive=164 members; changed=PSX.EXE only
+Expected-Write=3 changed bytes in one word at file 0x80940
+instruction=ori t1,zero,160 in UV return-jump delay slot
+UV paths=boundaries plus synthetic 960..972 all return with t1=160
+blank contract=physical160 advances 6px; nonblank samples advance 14px
+impact census=V325 resident UI has 697 encoded physical160 spaces
+E7 routing=02/03/05/08 -> ids 1/2/4/7 at V228; four pixel rectangles match V324
+inheritance=V326 hash anchored; every byte except one delay-slot word preserved
+runtime=PENDING cold boot; TEST_ONLY

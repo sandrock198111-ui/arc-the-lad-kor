@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "hashes": {
+    "base": "38FE24725CA82B721A544C4F6A6B787A4028ADA00F4312A2717F746BAF809DF0",
+    "final": "4D5F9D165B54F8EE740DE313D8524E999DFEC2763BB0E3018F767C499A2E1DD5",
+    "delta": "1F312682F7D879AEFFBE71487DB87CA444592BB4430FF8DF8E8D237E024B08ED"
+  },
+  "archive": {
+    "members": 164,
+    "changed_members": [
+      "PSX.EXE"
+    ]
+  },
+  "expected_write": {
+    "changed_bytes": 7,
+    "declared_envelope_only": true
+  },
+  "configuration": "renderer-only columns 166/226 -> 162/222; 0x825EC sole payload 사용 안 함 -> 사용안함",
+  "skill": "V330 call and 92-byte dx=-4 wrapper inherited byte-exact",
+  "runtime_prediction": "configuration labels unchanged; 26 choice packets x-=4; two A1 packets removed; 50 -> 48 packets",
+  "runtime": "PENDING V331 user cold boot"
+}

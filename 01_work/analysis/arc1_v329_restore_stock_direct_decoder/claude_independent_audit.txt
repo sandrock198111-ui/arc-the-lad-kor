@@ -1,0 +1,36 @@
+V329 Claude independent audit
+Date: 2026-08-28
+Method: read-only hash/diff, MIPS-I disassembly and execution, control-flow/pointer scan, ISO parsing
+
+Final verdict
+- BLOCKER: 0
+- HIGH: 0
+- MEDIUM: 3
+- Runtime: PENDING user cold boot; TEST_ONLY
+
+PASS
+- Full ZIP SHA-256: 25C7DECF7D69B356DCBA2B2CB098D0667EB7CF081CB8A87B4AB64583ABBF8C90
+- Delta SHA-256: 6585D27B3DA45A9CFDA53E2F590C60AF7DA7DCE658D70D7CB47D0AE5DD95E9E6
+- V329.bin SHA-256: 4763A107E1F7B029D02EEE394286A56CA5C33D82585C2043414F567808A314C9
+- V329.cue SHA-256: C2E3B22EBF651591359CA0C1D7A68835063908BE2B6FD1604C1A9A80D02319A4
+- 164/164 archive members and ISO readback matched. V328 -> V329 changed only PSX.EXE.
+- Expected-Write was one jump word at file 0x8EF44; three bytes actually changed.
+- The trampoline now jumps to stock one-byte decoder 0x8016B3E0 and preserves its nop delay slot.
+- The former raw helper at 0x8019B0B0..0x8019B10C has no external branch/jump or pointer entry and is unreachable.
+- Actual V329 words were executed through trampoline -> stock decode -> D==6 gate -> UV helper.
+  D==6 maps physical 0,15..25,127 to synthetic 960..972; D==14/D==16 preserve every stock index.
+- The V327 t1=160 restoration, E7 icons, COMM.IMG compact strip, RA/load-delay/live-register contracts were preserved.
+- V327 runtime packets independently demonstrate the bug fixed by V329: raw 0x01 in a D==14 object had been sent to the compact strip by the V326 helper.
+
+Correction to the earlier E5 interpretation
+- 1/S1023.DAT at 0x47952 contains no glyph-token 0x01 0x01 pair. Every 0x01 there is the parameter of E6 01.
+- V327 runtime packets show that E5 directly emits two physical-index-0 packets at each choice-row head.
+- Therefore the visible choice prefix "다다" is an E5 handler/control-output issue, not source text and not the stock decoder path.
+- V329 neither fixes nor regresses this separate issue. Do not globally remap D==14 physical 0 because it is the real Hangul glyph "다".
+
+Remaining MEDIUM items
+1. Pointers 0x825F0/0x825F4/0x825F8 and the inherited translations 확인함/보기/안 보기 still lack consumer-screen proof and user approval.
+2. The compact-strip non-text safety catalog is from the older 12px/509-state generation; current 16px non-text consumers have not been exhaustively re-audited. V325 ten-state evidence found no packet with U>=232.
+3. The E5 choice-prefix "다다" remains unresolved and must be fixed at the E5 handler's placeholder index, not in the decoder or global glyph mapping.
+
+No files were modified by the Claude auditor. Adoption remains the primary Codex/user decision.

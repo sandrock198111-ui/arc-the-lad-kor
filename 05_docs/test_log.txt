@@ -1,3 +1,54 @@
+2026-08-28 | V332 설정 선택 바 동반 좌측 정렬 | V331/V329 정적 표·DUCCU source pointer 교차검증, py_compile·2회 결정적 빌드, 독립 verifier/Capstone/Expected-Write, check_build 3세대 대조, mkpsxiso v104/LBA | STATIC PATCH PASS, INHERITED DAT DEBT FAIL, RUNTIME PENDING.
+- 후속 Claude 감사의 최초 판독은 `addiu` 부호확장을 빠뜨려 기술명 표를 잘못 읽었으나 재검산에서 이를 철회했다. 실제 RAM/file 표는 `0x8019B9C0/0x811C0`이고 entry1 `0x8019ADEA`·entry4 `0x8019C1EE`가 V329 상태4/5의 렌더 종료 포인터 `0x8019ADF0/0x8019C1F7`와 각각 6/9바이트 차이로 맞는다. 따라서 V331 `0x80162080` 전용 wrapper가 `번 그라운드`와 `슬로우 에너미` 두 화면을 모두 잡고 다른 표는 건드리지 않는다.
+- V332는 V331 기술명 wrapper, 설정 텍스트 X `162/222`, `사용안함` payload를 byte exact로 보존했다. 설정 bar X 두 immediate만 file `0x460F4/0x460F8`에서 `0x82/0xBE→0x7E/0xBA`로 바꿔 X `164/224→160/220`으로 이동했다. bar width/height `51x14`, 두 텍스트 열과의 시작 inset 2px는 불변이다.
+- 제어흐름 전수 스캔에서 `0x801608F4`는 `j 0x801608FC`의 delay slot, `0x801608F8`은 `bnez`의 유일한 목적지로 유지됐다. `0x8016D638 sh a1,0(at)`이 실제 bar X 저장임을 확인했고, 실제 diff는 PSX 한 멤버·file `0x460F4/0x460F8` 두 바이트뿐이다.
+- full/delta/PSX SHA-256은 `D2951A33C598C04BDDDCDC07678ADADCC18471CE98FE32B904527073445BB5AF` / `72E259EF0F521E917CB014F4DA70DA4CD9BBC0B7D8EBEB5332D5F1A0297921B5` / `394CF9F98A4A4E95B3DD953EA8C72ADADE26B1A404382B8342794213F8178751`다. 2회 재빌드와 독립 검증 결과가 동일했다.
+- `V332.bin`/CUE SHA-256은 `044481E74EFAA3A442F98264FADC339B073064414CC094D7534D4A37E82E592B` / `CBCE74E4FE1241447B79BDF299F3D93E334074A3C946B761466B91272081A921`. v104 layout의 506/506 데이터 LBA, COMM 307/667/891, PSX.EXE LBA268481, 164/164 readback PASS다.
+- `check_build.py`는 V329/V331/V332 모두 선택지 폭 75, 마커 2, 3줄 초과 18로 같았다. 신규 DAT 부채는 0이며 실기 확인은 두 기술명 좌측 이동, 설정 두 선택문·선택 바 동반 이동, `사용안함`, 다른 UI 좌표 불변이다.
+- Claude 최종 독립 감사 결과는 BLOCKER 0/HIGH 0/MEDIUM 2다. 정적 TEST_ONLY 인계는 가능하지만 −4px는 긴 기술명에 대한 부분 완화이고, V332 귀속 콜드부팅 상태는 아직 없어 런타임 판정은 PENDING이다.
+
+2026-08-28 | V331 기술명·설정 선택문 좌측 정렬 | V329 DUCCU 상태 5종 패킷 분석, V330/V331 py_compile·2회 결정적 빌드, 독립 verifier, Expected-Write, check_build 대조, mkpsxiso v104/LBA | STATIC PATCH PASS, INHERITED DAT DEBT FAIL, RUNTIME PENDING.
+- 기술명 전용 객체 `0x801F1DB4`와 전용 호출자 `0x80162080`을 확인했다. V330 wrapper는 원 기술명 렌더 후 그 객체의 패킷만 X=-4 이동하며 다른 `0x8016C38C` 호출자와 다른 텍스트 객체는 보존한다. 정적 예측은 `번 그라운드` X `198..260→194..256`, `슬로우 에너미` X `71..147→67..143`이다.
+- 설정 렌더러의 선택열 두 위치를 file `0x4609C/0x460BC`에서 X `166/226→162/222`로 바꿨다. `0x825EC` sole pointer의 payload만 `사용 안 함→사용안함`으로 바꿨고 반각 공백 `A1` 두 개가 정확히 제거됐음을 독립 검증했다.
+- V330 skill call/wrapper는 V331에서 byte exact다. V330 대비 V331 변경은 `PSX.EXE` 한 멤버·7바이트뿐이고 모든 DAT와 COMM.IMG는 byte exact다. full/delta SHA-256은 `4D5F9D165B54F8EE740DE313D8524E999DFEC2763BB0E3018F767C499A2E1DD5` / `1F312682F7D879AEFFBE71487DB87CA444592BB4430FF8DF8E8D237E024B08ED`다.
+- 처음 original layout으로 시험 포장했을 때 expanded PSX.EXE가 LBA23에서 데이터 506개를 모두 +3 섹터 이동시켜 즉시 폐기했다. v104 layout으로 다시 포장해 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 멤버 164/164 readback을 통과했다.
+- `V331.bin`/CUE SHA-256은 `0F26681AFD1F4F099CB9248A0EB48F027C6E8F2AA6A149103358FFE15ED2DC57` / `7C0A92AA1F81D7127EA6C448E1DE4841205C9AAF55EA988030F9DAAA6C9E0398`다. 실기 확인 대상은 기술명 좌측 이동, 설정 두 선택열 좌측 이동, `사용안함` 붙임, 다른 UI/창 회귀 없음이다.
+
+2026-08-27 | V329 stock one-byte decoder 복원 | py_compile, 2회 결정적 빌드, V325 trampoline 대조, MIPS-I pipeline 전수 실행, branch/pointer 도달성, Expected-Write, check_build 대조, mkpsxiso/LBA | STATIC PATCH PASS, INHERITED DAT DEBT FAIL, RUNTIME PENDING.
+- Claude 감사에서 V326 raw helper가 decoder 앞단에서 상태 폭과 무관하게 `01`, `10..1A`, `80`을 synthetic으로 바꿔 UI 151회와 DAT 8,765회(문장 중간 8,463회)를 오염시키는 상속 BLOCKER를 확인했다. V328의 D14/D16 identity는 이미 바뀐 physical을 통과시킬 뿐이라 해결이 아니었다.
+- V329은 file `0x8EF44` 점프 한 워드를 `0x08066C2C`(`j 0x8019B0B0`)에서 `0x0805ACF8`(`j 0x8016B3E0`)로 복원했다. delay `nop`과 stock decoder prefix `2463FFFF 24A20001 0805AD04 ACC20000`을 고정했고 raw helper로 들어가는 branch/jump와 포인터가 0임을 확인했다.
+- common helper 실제 워드로 D6/D14/D16 × physical0..1238, stock raw-1 decoder 뒤 raw01..DC를 전수 실행했다. D6 compact만 960..972로 가고 D14/D16은 전부 stock physical을 보존했다. RA·`v0/a2`·ordinal load, UV `$t1=160`, E7/COMM 계승도 통과했다.
+- V328 대비 변경은 `PSX.EXE` 한 멤버·한 워드·실제 3바이트다. full/delta SHA-256은 `25C7DECF7D69B356DCBA2B2CB098D0667EB7CF081CB8A87B4AB64583ABBF8C90` / `6585D27B3DA45A9CFDA53E2F590C60AF7DA7DCE658D70D7CB47D0AE5DD95E9E6`다.
+- `V329.bin`/CUE SHA-256은 `4763A107E1F7B029D02EEE394286A56CA5C33D82585C2043414F567808A314C9` / `C2E3B22EBF651591359CA0C1D7A68835063908BE2B6FD1604C1A9A80D02319A4`. 506/506 데이터 LBA, COMM 307/667/891, PSX.EXE LBA 268481, 164/164 readback PASS다.
+- `check_build.py`는 V328/V329 모두 선택지 폭 75, 마커 2, 3줄 초과 18로 동일해 신규 DAT 부채는 0이다. 선택지 `다다`는 S1023 실제 디스크에서 `E5 03` 뒤 바로 글자이고 raw `01 01`은 없으므로 별도 E5 제어 출력 문제로 유지한다. 런타임은 V329 콜드부팅 대기다.
+- Claude 읽기 전용 최종 감사도 full/delta/BIN/CUE 해시, PSX 단일 멤버·한 워드 봉투, stock decoder와 죽은 raw helper의 도달성, D6/D14/D16 기계어 실행, `$t1=160`, E7/COMM, 164/164 ISO readback을 재현해 BLOCKER 0/HIGH 0으로 판정했다. MEDIUM 3건과 실기 PENDING은 유지한다.
+
+2026-08-27 | V327 상태 8종 분석과 V328 공통 compact remap | DUCCU RAM/VRAM 해제, 패킷 역산, py_compile, 2회 결정적 빌드, MIPS-I load-delay interpreter, Expected-Write, check_build 대조, mkpsxiso/LBA | STATIC PATCH PASS, INHERITED DAT DEBT FAIL, V328 RUNTIME PENDING.
+- V327 상태 8종은 모두 game id `V327`, RAM base `0x1A62`, VRAM base `0x201DDC`였다. 불러오기·필드·대화·전투·아이템 화면까지 자연 진행했고 E7 아이콘은 보였으나 compact 숫자와 수량은 계속 잘못 보였다.
+- 활성 폭 6 패킷은 53개였다. 역산 census는 legacy physical `0:15, 15:3, 16:7, 17:4, 18:7, 19:1, 20:5, 23:4, 24:4, 25:1, 127:1`과 already-synthetic 960 한 개다. V328 대상은 정확히 52/53이다.
+- 공통 빌더 훅은 `0x8016B51C`에 외부 branch/jump 진입이 0건이고 delay `0x8016B520`도 진입 0건이었다. helper는 `D==6`만 remap하고 D14/D16은 0..1238 전수 identity다. 덮은 ordinal load 재현, `v0/a2/RA` 보존, load delay, helper inbound/return, no-JAL을 모두 독립 실행했다.
+- helper cave `0x8019B190..0x8019B1E3`은 V327 8상태 RAM에서 84바이트 전부 0으로 동일했다. 디스크 0만 보고 상주 cave로 오판했던 V323 실패와 달리, 이번 위치는 불러오기·필드·대화·전투·아이템 장면을 가로질러 런타임 미사용도 확인했다.
+- V327 대비 변경은 `PSX.EXE` 55바이트뿐이며 exact overlay와 164멤버 topology가 통과했다. V326 synthetic UV hook와 V327 live `$t1=160` 복원도 정확히 보존됐다.
+- `check_build.py`는 V327/V328 모두 선택지 폭 75건, 선택지 마커 2건, 3줄 초과 18건으로 입력 파일명 외 완전히 같았다. V328 신규 DAT 부채는 0이지만 전체 release gate는 FAIL을 유지한다.
+- full/delta SHA-256은 `A71FCF2E2F6C60EBFA554E6D4951FAE25CF7B3DC03CC27C9801EE4993CFC0324` / `04BCF32CA5DEEF71683A08C4112FAEE705E217D9AFEA271C1F847046E25FD80C`. `V328.bin`/CUE는 `E125E8E0B11E9D6C5272A4F6D779C69BC1098F6C01B8F47665BD08B6D330434F` / `12F1AE016E358D6F1658FEDA7A9ADC98249C53B923CFB0B0FE3598116AAD9DA8`, 데이터 LBA 506/506와 패치 readback 164/164 PASS다.
+- 후속 Claude 감사에서 V326 raw helper의 전역 본문 오염이 상속된 BLOCKER를 확인했다. V328은 DO NOT USE이고 V329에서 앞단 trampoline을 stock으로 복원했다. 선택지 앞 `다다`는 `E5 03`이 선택행마다 생성하는 D14 physical0 두 개로 별도 잔여 항목이다.
+
+2026-08-27 | V327 UV helper live `$t1` 복구 | py_compile, 2회 결정적 빌드, V326 전체 검증 재실행, helper interpreter/Expected-Write, check_build 대조, mkpsxiso/LBA | STATIC PATCH PASS, INHERITED DAT DEBT FAIL, RUNTIME PENDING.
+- V326의 `0x8019B140`은 UV helper 복귀 jump의 delay slot `nop`이었다. 이를 `0x340900A0`(`ori $t1,$zero,160`)으로 바꿨다. 리틀엔디언 워드 가운데 byte +1은 원래와 같은 0이므로 실제 변경은 file `0x80940/0x80942/0x80943`의 3바이트다.
+- UV helper를 stock 경계와 synthetic 960..972 전부 실행해 V store 재현, synthetic U/V 유지, 모든 복귀에서 `$t1=160`, physical160 advance=6, 비공백 표본 advance=14를 확인했다. V325 UI 666행에는 physical160 공백이 697회 있어 이 레지스터 계약은 필수다.
+- E7 table/hook을 별도로 판독해 `02/03/05/08 -> id1/2/4/7 -> U192/180/204/216,V228`을 확인했다. 네 16px 사각형의 nonzero pixel은 100/112/112/240개이고 V324 승인 소스와 전부 일치했다.
+- full/delta SHA-256은 `B93E100124AA69050DE6F181DB507E43042E20AF52EBEFC0857147D042B117EE` / `F4FE1A1F3796233062B3B485F64DBFF2C269284E132E3A0EB88E9715F9DDA8EB`. V326 대비 `PSX.EXE` 한 멤버·한 워드 외 163멤버는 byte exact다.
+- `V327.bin` SHA-256 `BBD9111327D6B6E9E31537C3DAA2866E8DEC73BA0EE44AEC7AA10975992B6063`, CUE `969C4E5F5C9B690710F6F3995C514BB81B7DF6A80CF9315AD9A65B041E81A4ED`. 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 164/164 readback PASS다.
+- `check_build.py`는 V326/V327 모두 선택지 폭 75곳, 선택지 마커 2곳, 3줄 초과 18곳으로 동일했다. 신규 회귀는 0이지만 전체 release gate는 FAIL이다.
+- 후속 Claude 감사에서 V326 raw helper의 전역 본문 오염이 상속됐음을 확인했다. V327은 DO NOT USE이며 V329에서 stock decoder를 복원했다.
+
+2026-08-27 | V326 compact UI 복구 | py_compile, 2회 결정적 빌드, 독립 decoder/UV/pixel/Expected-Write 검증, mkpsxiso/LBA, Claude live-register 감사 | STATIC FAIL (`$t1` clobber), DO NOT USE.
+- V325 세이브 10종을 구조적으로 해제해 47객체/547활성 패킷/681꼬리를 감사했다. 폭 6 객체의 원본 low code `01`, `10..1A`, `80`이 16px atlas physical 0/15/16..25/127을 읽어 빈칸=`다`, 숫자·레벨·시간·HP/MP 깨짐, 아이템명 뒤 잔상으로 보이는 것을 확인했다. 상태9/10의 상단 orb 아이콘은 VRAM에 존재했고, 사라진 것은 V325가 문자열로 치환한 E7 버튼 아이콘이었다.
+- V326 full/delta SHA-256은 `B1768404E175886882D49AFD1C34255D532750E3927B8696CD53A1885039D4BE` / `82BEDA2ADF5069E63187A09CAE4ACF057738740A57DAD9E298269B01F53BBA1F`로 2회 동일했다. V325 대비 변경은 `PSX.EXE` 149바이트, `COMM.IMG` 99바이트뿐이고 다른 162멤버 및 모든 DAT는 byte exact다.
+- 독립 검증기는 raw code 0..219를 실행해 compact 목표 13/13과 stock tail 207/207을 확인했다. UV helper는 synthetic 960..972와 경계값을 실행했고 U/V 13/13, stock 복귀, J-only 훅, delay slot, helper 내부 load 없음과 RA 불변을 통과했다. 원본 compact plane 재구성, 중앙 6열 샘플, 설정문 3개와 E7 배열 2개도 모두 PASS다.
+- `V326.bin` SHA-256 `78A7B7AD30A5201FEFA7A8CA1BECE1ADF8619658E402DE48D523A4973DA7FAC2`, CUE `5AE10F15EF5165B38085813F114B223E5396F8108BBA7F39968A30E7EA2C59BE`. 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 164/164 패치 멤버 readback PASS다.
+- 정적 helper 진리표는 U/V만 확인해, helper 진입 전 `0x8016B524`에서 설정되고 복귀 후 `0x8016B640`에서 소비되는 live `$t1=160`을 검사하지 못했다. 또한 raw helper가 공용 decoder 앞단에서 상태 폭 없이 한글 코드를 synthetic으로 바꾸는 결함도 놓쳤다. V326은 폐기했고 두 결함은 각각 V327/V329에서 복구했다.
+
 2026-08-26 | V325 Hanme16 UI 포인터 전수 재인코딩 | py_compile, 2회 재빌드, 독립 문자/비트맵/Expected-Write 검증, V324 check_build 대조, mkpsxiso/LBA | STATIC UI/LAYOUT PASS, INHERITED DAT DEBT FAIL, RUNTIME PENDING.
 - full/delta SHA-256은 `7828AA04F6A0684981332924C30B4139ABFCA5065138FA899C4D429E87C74CD1` / `3A531423DBA076557BA67548E0161813CBA8CB01D253DD70C79F753DC2E3EE7B`로 2회 동일했다. 변경 멤버는 `PSX.EXE`, `COMM.IMG` 두 개, 변경 바이트는 7,284/226개다.
 - 독립 검증기는 666포인터/561고유 payload를 디스크에서 다시 읽고 각 문자 경계의 token을 physical `<960`으로 해석했다. 한글은 공식 Hanme 8x4x4 조합 비트맵, ASCII는 `ascii_16px.pkl`과 전수 일치했다. 공백은 `A1/physical160` 697회이고 문자 경계의 literal `9C`는 0회다. COMM 변경 plane은 `403,762,819,823,865` 정확히 5개다.

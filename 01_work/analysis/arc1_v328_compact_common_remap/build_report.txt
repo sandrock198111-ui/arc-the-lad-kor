@@ -1,0 +1,12 @@
+V328 TEST ONLY - common-builder compact remap
+base=arc1_v327_compact_ui_t1_restore_TEST_ONLY_B93E1001.zip
+output=arc1_v328_compact_common_remap_TEST_ONLY_A71FCF2E.zip
+sha256=A71FCF2E2F6C60EBFA554E6D4951FAE25CF7B3DC03CC27C9801EE4993CFC0324
+delta=arc1_v328_compact_common_remap_TEST_ONLY_delta_from_v327_04BCF32C.zip
+delta_sha256=04BCF32CA5DEEF71683A08C4112FAEE705E217D9AFEA271C1F847046E25FD80C
+changed_members=PSX.EXE only
+changed_bytes=55; hook=0x8016B51C; helper=0x8019B190/84B
+scope=D==6 only: stock compact physical 0,15..25,127 -> synthetic 960..972
+expected=load level/time, item quantities, HP/MP/status digits use preserved compact strip
+D14/D16 Hangul and choice indentation=unchanged
+KNOWN BLOCKER=earlier raw-code helper bypasses width gate; DO NOT USE (fixed by V329)

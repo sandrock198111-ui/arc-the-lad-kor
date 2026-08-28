@@ -1,0 +1,163 @@
+{
+  "result": "FAIL_KNOWN_LIVE_T1_CLOBBER",
+  "structural_checks": "PASS",
+  "hashes": {
+    "base": "7828AA04F6A0684981332924C30B4139ABFCA5065138FA899C4D429E87C74CD1",
+    "final": "B1768404E175886882D49AFD1C34255D532750E3927B8696CD53A1885039D4BE",
+    "delta": "82BEDA2ADF5069E63187A09CAE4ACF057738740A57DAD9E298269B01F53BBA1F"
+  },
+  "archive": {
+    "members": 164,
+    "changed_members": [
+      "COMM.IMG",
+      "PSX.EXE"
+    ]
+  },
+  "changed_bytes": {
+    "PSX.EXE": 149,
+    "COMM.IMG": 99
+  },
+  "compact": {
+    "raw_truth_table": {
+      "0x01": {
+        "synthetic_index": 960,
+        "return": "0x8016B410"
+      },
+      "0x10": {
+        "synthetic_index": 961,
+        "return": "0x8016B410"
+      },
+      "0x11": {
+        "synthetic_index": 962,
+        "return": "0x8016B410"
+      },
+      "0x12": {
+        "synthetic_index": 963,
+        "return": "0x8016B410"
+      },
+      "0x13": {
+        "synthetic_index": 964,
+        "return": "0x8016B410"
+      },
+      "0x14": {
+        "synthetic_index": 965,
+        "return": "0x8016B410"
+      },
+      "0x15": {
+        "synthetic_index": 966,
+        "return": "0x8016B410"
+      },
+      "0x16": {
+        "synthetic_index": 967,
+        "return": "0x8016B410"
+      },
+      "0x17": {
+        "synthetic_index": 968,
+        "return": "0x8016B410"
+      },
+      "0x18": {
+        "synthetic_index": 969,
+        "return": "0x8016B410"
+      },
+      "0x19": {
+        "synthetic_index": 970,
+        "return": "0x8016B410"
+      },
+      "0x1A": {
+        "synthetic_index": 971,
+        "return": "0x8016B410"
+      },
+      "0x80": {
+        "synthetic_index": 972,
+        "return": "0x8016B410"
+      }
+    },
+    "uv_truth_table": {
+      "960": {
+        "u_before_halfwidth": 240,
+        "v": 176,
+        "plane": 0
+      },
+      "961": {
+        "u_before_halfwidth": 240,
+        "v": 176,
+        "plane": 1
+      },
+      "962": {
+        "u_before_halfwidth": 240,
+        "v": 176,
+        "plane": 2
+      },
+      "963": {
+        "u_before_halfwidth": 240,
+        "v": 176,
+        "plane": 3
+      },
+      "964": {
+        "u_before_halfwidth": 240,
+        "v": 192,
+        "plane": 0
+      },
+      "965": {
+        "u_before_halfwidth": 240,
+        "v": 192,
+        "plane": 1
+      },
+      "966": {
+        "u_before_halfwidth": 240,
+        "v": 192,
+        "plane": 2
+      },
+      "967": {
+        "u_before_halfwidth": 240,
+        "v": 192,
+        "plane": 3
+      },
+      "968": {
+        "u_before_halfwidth": 240,
+        "v": 208,
+        "plane": 0
+      },
+      "969": {
+        "u_before_halfwidth": 240,
+        "v": 208,
+        "plane": 1
+      },
+      "970": {
+        "u_before_halfwidth": 240,
+        "v": 208,
+        "plane": 2
+      },
+      "971": {
+        "u_before_halfwidth": 240,
+        "v": 208,
+        "plane": 3
+      },
+      "972": {
+        "u_before_halfwidth": 240,
+        "v": 224,
+        "plane": 0
+      }
+    },
+    "source": "original COMM.IMG 12x12 planes",
+    "halfwidth_sample": "original x=4..9 reproduced for all 13 glyphs/12 rows"
+  },
+  "mips": {
+    "direct_words": 23,
+    "uv_words": 13,
+    "jal": 0,
+    "ra_writes": 0,
+    "helper_loads": 0,
+    "uv_hook_inbound_middle": 0,
+    "resident_direct_destination": "0x801FF41C"
+  },
+  "manual_strings": {
+    "0x8234C": "E7 02 DD 10 DD 0A E7 05 DD AD DD 47 A1 DD 89 24",
+    "0x82350": "E7 03 DD 31 DD 32 A1 DD A3 E7 08 8B DD D2 A1 DE 2B 35",
+    "0x825F0": "DE 2B 35 DD CF",
+    "0x825F4": "60 24",
+    "0x825F8": "94 A1 60 24"
+  },
+  "known_blocker": "UV helper clobbers caller-live t1=160; physical blank 160 advances 14px instead of stock 6px. Fixed by V327.",
+  "runtime": "PENDING user cold boot"
+}

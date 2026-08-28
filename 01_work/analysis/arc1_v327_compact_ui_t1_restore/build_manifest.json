@@ -1,0 +1,33 @@
+{
+  "build": "V327 TEST_ONLY compact UI t1 live-register restore",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v326_compact_ui_recovery_TEST_ONLY_B1768404.zip",
+    "sha256": "B1768404E175886882D49AFD1C34255D532750E3927B8696CD53A1885039D4BE"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v327_compact_ui_t1_restore_TEST_ONLY_B93E1001.zip",
+    "sha256": "B93E100124AA69050DE6F181DB507E43042E20AF52EBEFC0857147D042B117EE"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v327_compact_ui_t1_restore_TEST_ONLY_delta_from_v326_F4FE1A1F.zip",
+    "sha256": "F4FE1A1F3796233062B3B485F64DBFF2C269284E132E3A0EB88E9715F9DDA8EB"
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 3
+  },
+  "patch": {
+    "file_offset": "0x80940",
+    "ram_address": "0x8019B140",
+    "old_word": "0x00000000",
+    "new_word": "0x340900A0",
+    "instruction": "ori t1,zero,160"
+  },
+  "preserved": "all V326 compact glyphs, UI strings, DAT and every byte outside one PSX word",
+  "V326_status": "DO NOT USE: UV helper clobbers live t1 and expands physical blank 160 from 6px to 14px",
+  "known_blocker": "V326 raw-code helper still remaps ordinary D14/D16 Hangul globally; fixed by V329",
+  "runtime": "Superseded before approval",
+  "release_status": "FAILED DIAGNOSTIC; DO NOT USE OR DISTRIBUTE"
+}

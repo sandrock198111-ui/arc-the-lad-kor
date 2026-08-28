@@ -1,6 +1,39 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+V332 설정 선택 바 좌표와 기술명 경로 재확정 - 2026-08-28
+- 기술명 전용 호출 `0x80162080`은 RAM `0x8019B9C0`/file `0x811C0`의 4바이트 포인터 표를 읽는다. entry1 `0x8019ADEA`의 6바이트 문자열은 V329 상태4 종료 포인터 `0x8019ADF0`, entry4 `0x8019C1EE`의 9바이트 문자열은 상태5 종료 포인터 `0x8019C1F7`과 정확히 맞는다. 이 근거가 있으므로 공통 `0x8016C400`을 훅하지 말고 전용 `0x80162080` wrapper만 사용해야 장비·소모품 등 다른 표를 보존한다.
+- 설정 loop의 `s3=34`에서 `0x801608F4 addiu a1,s3,0x82`는 첫 열 bar X=164, `0x801608F8 addiu a1,s3,0xBE`는 둘째 열 bar X=224를 만든다. `0x801608FC jal 0x8016D620` 뒤 `0x8016D638 sh a1,0(at)`가 실제 primitive X 필드 저장이므로 이 값은 텍스트 X에서 자동 파생되지 않는다.
+- 첫 워드는 `0x801608F0` jump의 delay slot이고 둘째 워드는 `0x801608E8` branch의 목적지다. immediate만 `0x7E/0xBA`로 바꿔 X=160/220으로 만들면 opcode·분기 목적지·delay 구조가 모두 유지된다. V331 텍스트 X=162/222와 양쪽 시작 inset 2px도 보존된다.
+- V331 후속 감사 중 기술명 표를 0으로 본 결과는 `addiu` 부호확장을 빠뜨려 `0x8019____`를 `0x801A____`로 읽은 분석 오류였다. 정정된 표·세이브·디스크 바이트가 일치하므로 그 중간 결론과 공통 `0x8016C400` 훅 권고는 폐기한다.
+- 기술명 −4px는 현재 두 사용자 표본의 경계 완화이며 창 폭 공식 자체를 바꾸지는 않는다. 공통 폭 함수 `0x8016C498`은 여전히 `12N+15`를 사용하므로 실제 14px 전진 기준의 긴 기술명은 최대 9px 넘을 수 있다. 이 문제는 창 폭 공식을 별도 검증하는 후속 작업으로 분리한다.
+
+V331 기술명·설정 선택문 정렬 구조 - 2026-08-28
+- 기술명 표는 RAM `0x8019B9C0`/file `0x811C0`, 전용 텍스트 객체는 `0x801F1DB4`(packet base `0x801F1A74`, limit 16)다. 전용 호출자 `0x80162080`만 원 기술명 렌더러 `0x8016C38C`를 호출한다. 같은 렌더러의 다른 호출자 `0x8016200C`(인물/몬스터), `0x80163CA8`(장비)는 기술명 이동 대상이 아니다.
+- 기술명만 옮길 때 문자열 좌표 상수를 광역 수정하지 않는다. 전용 호출자만 wrapper로 우회해 원 렌더를 완료한 뒤 stock packet-offset 함수 `0x8016B440`을 `(a0=-4,a1=0,a2=0,a3=0x801F1DB4)`로 호출하면 이미 생성된 해당 객체 패킷의 X만 안전하게 이동한다. V330은 도달 불가가 확인된 file `0x808B0`/RAM `0x8019B0B0`의 92바이트 raw-helper 영역을 재사용했다.
+- 설정 렌더 함수는 RAM `0x80160810`, 문자열 포인터 표는 RAM `0x8019CDC8`/file `0x825C8`다. 라벨은 X=46이고, 첫 선택열은 `0x8016089C: addiu a0,s3,0x84`에서 X=166, 둘째 선택열은 `0x801608BC: addiu a0,s3,0xC0`에서 X=226을 만든다. immediate를 각각 `0x80/0xBC`로 바꾸면 선택열만 X=162/222가 되고 라벨·창은 움직이지 않는다.
+- file `0x825EC`의 포인터 값은 `0x8019C2A4`이고 정렬·비정렬 검색에서 sole owner다. 목적지 file `0x81AA4`의 9바이트 슬롯은 `사용 안 함\0`이며 `A1` 반각 공백 두 개를 제거한 `사용안함\0\0\0`으로 같은 크기 안에서 고칠 수 있다. 이 수정은 공유 문자열이나 뒤 payload를 건드리지 않는다.
+- expanded PSX.EXE가 들어간 현 계보는 original layout으로 굽지 않는다. 실제 V330 original-layout 시험은 원래 LBA23의 확장 EXE가 뒤 데이터 506개를 전부 +3 섹터 이동시켰다. v104 layout은 데이터 LBA를 고정하고 PSX.EXE를 LBA268481로 옮겨 506/506와 164/164 readback을 보존한다.
+
+V326 raw helper의 계층 오류와 V329 stock decoder 복원 - 2026-08-27
+- V326 file `0x8EF44`의 resident one-byte trampoline은 stock `j 0x8016B3E0` 대신 raw helper `j 0x8019B0B0`로 바뀌어 있었다. 이 helper는 text state를 받지 않아 폭 6과 폭 14/16을 구분할 수 없다. 따라서 raw `01`, `10..1A`, `80`을 UI·대사 어디서든 synthetic 960..972로 바꾼다.
+- 포인터 도달 UI 564문자열에서는 대상 코드가 151회/125문자열, DAT 4,292 text region에서는 8,765회이며 그중 8,463회가 문장 중간의 실제 한글이다. V327은 `$t1`만 복구했고 V328은 이미 해독된 physical에 D==6 게이트를 추가했으므로, 앞단 raw helper가 바꾼 D14/D16 한글은 두 빌드에서도 그대로 잘못 통과한다.
+- V328 공통 게이트가 raw 경로까지 포섭한다. stock decoder의 첫 워드는 `addiu $v1,$v1,-1`이므로 raw `01`, `10..1A`, `80`은 먼저 physical `0`, `15..25`, `127`이 되고, 폭 6일 때만 뒤의 V328 helper가 synthetic으로 바꿀 수 있다. 앞단 raw helper는 기능적으로 불필요하다.
+- V329은 file `0x8EF44` 한 워드만 pre-V326 값 `0x0805ACF8`로 복원했다. raw helper 본체는 남지만 branch/jump와 정렬·비정렬 포인터 진입이 0이라 도달 불가다. 공통 D6 gate, synthetic UV strip, V327 `$t1=160` 복구는 byte exact로 유지된다.
+- 안전 불변식: compact 코드 복원은 raw decoder에서 하지 않는다. 반드시 stock decode 뒤 text state `+0x0D==6`을 확인한 뒤 physical을 remap한다. D14/D16 physical0은 실제 한글 `다`이므로 전역 blank/compact 취급 금지다.
+- Claude 독립 감사에서 V329 실제 기계어를 trampoline→stock decode→D6 gate→UV까지 실행해 이 불변식을 재확인했다. 최종 정적 판정은 BLOCKER 0/HIGH 0이며, D6만 960..972로 가고 D14/D16은 항등이다.
+- E5 선택행 앞 physical0 두 개는 디스크 raw `01 01`이 아니다. S1023 본문에서 모든 `01`은 `E6 01`의 매개변수이고, V327 런타임에서 raw helper가 활성인데도 E5 출력은 synthetic960이 아닌 physical0이었다. 따라서 E5가 디코더를 우회해 공용 빌더에 placeholder index 0을 직접 공급한다고 확정한다.
+
+V327 런타임에서 확인한 compact UI 우회 경로와 V328 해법 - 2026-08-27
+- V326의 direct raw decoder helper만으로는 compact UI 전체가 복구되지 않는다. V327 8상태의 폭 6 패킷 53개 중 52개는 공통 글리프 빌더 진입 시점에 이미 legacy physical `0,15..25,127`로 해독돼 있었다. 직접 helper를 탄 synthetic 960은 한 개뿐이었다.
+- 해당 physical을 원래 의미로 되돌리면 불러오기 세 줄은 `" 4   030"`, `"14   129"`, `"18   210"`, 아이템 수량은 `" 04"`, 전투 수치는 `" 48/ 48"`, `" 27/ 27"`로 해석된다. 화면에서 보인 무작위 한글 조각과 달리 구조적으로 일관된 레벨·시간·수량·HP/MP다.
+- V319계 16px 좌표에서 폭 6 stock 패킷의 physical은 `row=(V//16)`, `col=((U-4)//16)`, `index=row*60+col*4+plane`으로 역산한다. `U-4`는 stock half-width 보정 때문이다. synthetic strip은 helper가 U=240을 기록한 뒤 같은 보정을 받아 런타임 U=244가 된다.
+- 아이템명 `성수`의 원문은 두 글자 뒤 0x00으로 끝나지만 런타임 객체는 뒤에 폭 6 패킷 `physical 0,16,20`을 붙인다. 이는 stale 글리프가 아니라 별도 수량 포맷터의 `blank,0,4`이며, 현 atlas에서만 `다/한글/한글`로 오표시된 것이다.
+- 공통 글리프 빌더 `0x8016B518`은 대사·불러오기·아이템·HUD 등 5개 호출자가 공유한다. `0x8016B51C`의 `lh a1,0x0A(a2)`는 외부 분기 타겟이 아니고, 다음 `0x8016B520`의 `lh v0,4(a2)`를 J delay로 보존할 수 있다. helper 복귀 전 ordinal load를 다시 실행하고 J+nop 뒤 `0x8016B524`로 돌아가면 R3000 load delay가 닫힌다.
+- V328 helper 목적지 `0x8019B190..0x8019B1E3`은 디스크에서만 0인 것이 아니다. 서로 다른 불러오기·필드·대화·전투·아이템 장면의 V327 상태 8종 RAM에서도 84바이트가 모두 0이고 SHA-256 `4FEA5E6A3EC5F5470D6E98E897262404F7F393451B139DDE08CA801F498CC16C`로 같았다. V323처럼 장면 데이터에 덮이는 tail cave가 아니다.
+- 안전한 조건은 text state `+0x0D==6`이다. 이때만 physical `0→960`, `15..25→961..971`, `127→972`로 remap하면 V326 compact strip을 모든 포맷터가 공유한다. D14/D16은 identity로 두어야 정상 한글 physical0(`다`)를 보존한다.
+- 선택지 앞의 `다다`는 원문 raw blank가 아니다. `1/S1023.DAT`와 `C1/SC011.DAT` 계열에서 각 선택행은 `E5 03`으로 시작하고, 런타임 패킷은 바로 그 행의 선두에 physical0을 정확히 두 개씩 만든다. E5 선택 제어의 placeholder/cursor 출력 문제다. physical0을 전역 blank로 바꾸거나 D14까지 compact remap하면 실제 `다`가 손상되므로 금지하고 E5 handler만 후속 조사한다.
+
 V324 런타임 UI와 V325 재인코딩 경계 - 2026-08-26
 - V324 DUCCU 상태 6종은 불러오기 이후 실제 게임, 전투, Yes/No, 장비, 아이템 목록·설명·사용 확인, 기술·범위 화면에 도달했다. 따라서 V324 resident lookup과 16px packet geometry는 해당 경로에서 동작한다. 깨진 UI 글자는 구 V241 문자열 코드가 현행 physical atlas를 가리킨 결과다.
 - 현행 구 UI 503행 중 443행이 구조적으로 잘못됐다. literal `0x9C`는 과거 공백 용도였지만 현행 physical155 `)`를 그리며, direct physical 960 이상은 V324 decoder에서 blank로 fail-close하고, 일부 낮은 direct code도 현행 Hanme 배치에서 다른 글자를 가리킨다. UI 수정은 번역문을 바꾸는 일이 아니라 포인터가 증명된 문자열을 현행 atlas identity로 재인코딩하는 일이다.
@@ -2076,3 +2109,21 @@ E9/EA packed lookup의 V324 정적화 경계 - 2026-08-26
 - dynamic 198개 중 196개 Hangul은 현재 physical plane과 공식 Hanme 조합 비트맵을 유일하게 대조할 수 있다. `똑` slot210/source425, `첩` slot224/source148, `<VIRTUAL:405>` source461, `R` slot409/source462 네 identity는 유일한 현행 low-page plane이 없지만 모두 발생 0회다. 이 네 항목과 invalid 2개만 blank physical 160으로 fail-close하고 나머지는 정적 target으로 바꾸면 413/413이 `<960`이 된다.
 - V324 decoder는 direct-code cache branch와 E9/EA dynamic dispatch를 제거하고 lookup target `<960`만 통과시킨다. 예상 밖 값은 blank 160으로 바꾼 뒤 source pointer를 전진하고 stock renderer `0x8016B410`으로 복귀한다. reclaimed tail을 향하는 decoder control transfer는 없어야 한다.
 - lookup 정적화는 현재 16px Hanme 배치에 결합된다. 앞으로 COMM physical mapping을 다시 배열하면 lookup 413개를 재생성하고 8,448 region census, target 비트맵, 사용 50/84를 다시 검증해야 한다. V324는 콜드부팅 런타임 승인을 받기 전 TEST ONLY다.
+
+2026-08-27 V325 UI 상태 10종과 V326 compact 경로에서 확인된 사실
+- 공용 글리프 빌더의 폭 6 경로도 16px atlas의 같은 physical index를 사용한다. V325 상태에서 raw code `01`은 old physical 0(빈칸), `10..1A`는 old physical 15(`/`)와 16..25(`0..9`), `80`은 old physical 127을 의도했지만, V325 COMM에는 그 위치가 한글로 재배치돼 있었다. 따라서 빈칸=`다`, 레벨/시간/HP/MP 숫자 깨짐과 아이템명 뒤 글리프는 하나의 atlas namespace 충돌이다.
+- V326 compact plane은 x=240..251, y=176..239의 12x12 영역 네 묶음을 쓴다. 이 영역은 V325에서 0이고, 과거 509상태의 old col20/row14..19 감사에서도 nontext_reads=0이다. 합성 index는 960..972이며 원본 COMM의 blank, slash, 0..9, index127 plane을 byte-for-byte 복제한다.
+- direct source hook은 파일 `0x8EF44`에서 부팅 시 runtime `0x801FF41C`로 복사되는 trampoline을 바꾼다. resident helper는 파일 `0x808B0`/RAM `0x8019B0B0`, 92바이트다. 목표 13코드는 source pointer를 1 증가시키고 `0x8016B410`으로 복귀하며, 나머지 207 raw code는 stock `0x8016B3E0`으로 tail-jump한다. `jal`이나 RA 저장은 없다.
+- UV 훅은 `0x8016B5A8`의 첫 워드만 `j`로 바꾸고 delay slot의 `lbu v1,0x0D(a2)`를 보존한다. helper는 파일 `0x80910`/RAM `0x8019B110`, 52바이트이며 덮인 `sb v0,0x29(a1)`를 재현한다. synthetic 960..972에서만 U=240, V=176+(slot//4)*16을 쓰고 `0x8016B5B0`으로 돌아간다. 이후 stock 반각 분기가 U+4, W=6을 적용해 원본 12px 글리프의 중앙 x=4..9를 표시한다.
+- resident free pool `0x808AC..0x80A94`를 사용하되 기존 empty sentinel `0x808AD`는 0으로 유지한다. V326 사용 끝은 `0x80982`이고 274바이트가 남는다.
+- 설정 화면의 확인된 고정 포인터는 `0x825F0=확인함`, `0x825F4=보기`, `0x825F8=안 보기`다. 전투 도움말의 E7 control 배열은 `E7 02 + 공격 + E7 05 + 연결 열기`, `E7 03 + 행동 끝 + E7 08 + 상태 확인`이며 문자열 대체로 평탄화하면 버튼 아이콘이 사라진다.
+- 상단 캐릭터 orb 아이콘은 V325 상태9/10 VRAM에 실제 존재했다. 사용자가 보고한 아이콘 소실은 이 orb가 아니라 E7 버튼 control의 소거였다.
+- V326은 V325 대비 PSX.EXE/COMM.IMG만 변경하고 모든 DAT를 보존한다. helper-local 정적 검사는 통과했지만 아래 live-register 감사에서 실패했으므로 DO NOT USE다.
+
+2026-08-27 V326 live-register 실패와 V327 복구에서 확인된 사실
+- `0x8016B518` 공용 글리프 빌더의 `$t1`은 임시로 버려도 되는 값이 아니다. `0x8016B524 ori t1,zero,160`에서 정의되고 `0x8016B640 bne a0,t1`에서 physical blank 160을 판정한다. 일치할 때 `0x8016B648 ori v1,zero,6`으로 공백 전진만 6px가 된다.
+- V326 UV helper는 `$t1`을 range boolean과 U=240에 재사용하고 stock 함수로 돌아가면서 복원하지 않았다. helper 내부만 실행해 U/V·메모리를 확인하는 진리표는 이 호출자 생존값 회귀를 잡지 못한다. 함수 중간 훅 검증은 훅 이후 최초 재정의까지 모든 live register 소비를 검사해야 한다.
+- V327은 `0x8019B13C j 0x8016B5B0`의 delay slot `0x8019B140`에 `ori t1,zero,160`을 넣는다. non-synthetic의 early branch도 `0x8019B13C`로 합류하고 synthetic도 같은 jump를 지나므로 모든 복귀 경로에서 복원된다. 별도 분기나 RA 변화는 없다.
+- V324 이후 E7 V hook은 builder 내부에서 두 배가 된 icon id `2/4/8/14`를 판정한다. 이는 텍스트 `E7 02/03/05/08`의 실제 id `1/2/4/7`이며 모두 V=228로 보낸다. U/폭은 `192/12`, `180/12`, `204/12`, `216/20`이다. V327의 네 픽셀 사각형은 V324와 byte exact이고 compact strip은 x=240부터라 START의 x=216..235와 겹치지 않는다.
+- V325의 재인코딩된 상주 UI 666행에는 A1/physical160 공백이 697회 있다. 이 계약 위반은 작은 예외가 아니라 메뉴·설명·대사의 폭과 줄바꿈을 광범위하게 바꾸는 회귀다.
+- V326은 DO NOT USE다. V327은 V326 대비 PSX.EXE 한 워드만 다르고 나머지 compact strip, 설정문, E7 배열, DAT는 byte exact다. 실기 승인 전 TEST ONLY다.

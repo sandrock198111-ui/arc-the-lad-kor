@@ -1,0 +1,49 @@
+﻿source_ordinal,char,y,v329_x,v331_predicted_x,scope
+0,사,98,46,46,label_unchanged
+1,운,98,60,60,label_unchanged
+2,드,98,74,74,label_unchanged
+3, ,98,88,88,label_unchanged
+4,출,98,94,94,label_unchanged
+5,력,98,108,108,label_unchanged
+6,스,98,166,162,choice_column
+7,테,98,180,176,choice_column
+8,레,98,194,190,choice_column
+9,오,98,208,204,choice_column
+10,모,98,226,222,choice_column
+11,노,98,240,236,choice_column
+12,대,114,46,46,label_unchanged
+13,각,114,60,60,label_unchanged
+14,선,114,74,74,label_unchanged
+15, ,114,88,88,label_unchanged
+16,입,114,94,94,label_unchanged
+17,력,114,108,108,label_unchanged
+18,일,114,166,162,choice_column
+19,반,114,180,176,choice_column
+20,사,114,226,222,choice_column
+21,용,114,240,236,choice_column
+22,돌,130,46,46,label_unchanged
+23,아,130,60,60,label_unchanged
+24,가,130,74,74,label_unchanged
+25,기,130,88,88,label_unchanged
+26, ,130,102,102,label_unchanged
+27,확,130,108,108,label_unchanged
+28,인,130,122,122,label_unchanged
+29,사,130,166,162,choice_column
+30,용,130,180,176,choice_column
+32,안,130,200,190,choice_column
+34,함,130,220,204,choice_column
+35,확,130,226,222,choice_column
+36,인,130,240,236,choice_column
+37,함,130,254,250,choice_column
+38,도,146,46,46,label_unchanged
+39,움,146,60,60,label_unchanged
+40,말,146,74,74,label_unchanged
+41, ,146,88,88,label_unchanged
+42,보,146,94,94,label_unchanged
+43,기,146,108,108,label_unchanged
+44,보,146,166,162,choice_column
+45,기,146,180,176,choice_column
+46,안,146,226,222,choice_column
+47, ,146,240,236,choice_column
+48,보,146,246,242,choice_column
+49,기,146,260,256,choice_column

@@ -1,0 +1,80 @@
+{
+  "build": "arc1_v329_restore_stock_direct_decoder_TEST_ONLY_25C7DECF.zip",
+  "build_sha256": "25C7DECF7D69B356DCBA2B2CB098D0667EB7CF081CB8A87B4AB64583ABBF8C90",
+  "states": [
+    {
+      "state": 1,
+      "savestate": "HASH-F8B2133C9AB352FC_1.sav",
+      "sha256": "8330266B666E5224A3AF797679A70551D9729E171A903DAACD2D317BCE4459C2",
+      "game_id": "V329",
+      "file_size": 1599926,
+      "ram_base": "0x1A62",
+      "vram_base": "0x201DDC",
+      "runtime_COMM_exact": 1,
+      "exe_different_words": 1387,
+      "text_objects": 2,
+      "framebuffer_visible_objects": 2,
+      "media_paths": ""
+    },
+    {
+      "state": 2,
+      "savestate": "HASH-F8B2133C9AB352FC_2.sav",
+      "sha256": "9D04DE9DD1F95D6F661A73B3DEADC23A828222853ED5C0BBD27452DA19D8DBB2",
+      "game_id": "V329",
+      "file_size": 1743584,
+      "ram_base": "0x1A62",
+      "vram_base": "0x201DDC",
+      "runtime_COMM_exact": 0,
+      "exe_different_words": 1437,
+      "text_objects": 4,
+      "framebuffer_visible_objects": 1,
+      "media_paths": ""
+    },
+    {
+      "state": 3,
+      "savestate": "HASH-F8B2133C9AB352FC_3.sav",
+      "sha256": "F14D972598A3A586A11E00574266F00EA23C306D8080ED9F904D86BBB264091A",
+      "game_id": "V329",
+      "file_size": 1713259,
+      "ram_base": "0x1A62",
+      "vram_base": "0x201DDC",
+      "runtime_COMM_exact": 0,
+      "exe_different_words": 1437,
+      "text_objects": 5,
+      "framebuffer_visible_objects": 1,
+      "media_paths": ""
+    },
+    {
+      "state": 4,
+      "savestate": "HASH-F8B2133C9AB352FC_4.sav",
+      "sha256": "D6DFD7452FA232F7B3E79702F9C781E6DAE09F8E426E33BCA6BD21CEA9BF875D",
+      "game_id": "V329",
+      "file_size": 1740353,
+      "ram_base": "0x1A62",
+      "vram_base": "0x201DDC",
+      "runtime_COMM_exact": 0,
+      "exe_different_words": 1443,
+      "text_objects": 5,
+      "framebuffer_visible_objects": 4,
+      "media_paths": ""
+    },
+    {
+      "state": 5,
+      "savestate": "HASH-F8B2133C9AB352FC_5.sav",
+      "sha256": "EC2BAED5E1F9B3F3644159D902EE2A1875E2991887F5758AD7F3976ED7AAB466",
+      "game_id": "V329",
+      "file_size": 1737684,
+      "ram_base": "0x1A62",
+      "vram_base": "0x201DDC",
+      "runtime_COMM_exact": 0,
+      "exe_different_words": 1438,
+      "text_objects": 5,
+      "framebuffer_visible_objects": 2,
+      "media_paths": ""
+    }
+  ],
+  "objects": 21,
+  "packets": 272,
+  "tail_packets": 320,
+  "note": "read-only DUCCU audit; visual/root-cause interpretation remains separate"
+}

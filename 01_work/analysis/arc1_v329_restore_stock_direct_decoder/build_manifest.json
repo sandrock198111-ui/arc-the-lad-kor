@@ -1,0 +1,32 @@
+{
+  "build": "V329 TEST_ONLY restore stock direct decoder",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v328_compact_common_remap_TEST_ONLY_A71FCF2E.zip",
+    "sha256": "A71FCF2E2F6C60EBFA554E6D4951FAE25CF7B3DC03CC27C9801EE4993CFC0324"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v329_restore_stock_direct_decoder_TEST_ONLY_25C7DECF.zip",
+    "sha256": "25C7DECF7D69B356DCBA2B2CB098D0667EB7CF081CB8A87B4AB64583ABBF8C90"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v329_restore_stock_direct_decoder_TEST_ONLY_delta_from_v328_6585D27B.zip",
+    "sha256": "6585D27B3DA45A9CFDA53E2F590C60AF7DA7DCE658D70D7CB47D0AE5DD95E9E6"
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 3
+  },
+  "patch": {
+    "file_offset": "0x8EF44",
+    "runtime_source": "0x801A9744",
+    "old_destination": "0x8019B0B0",
+    "new_destination": "0x8016B3E0"
+  },
+  "scope": "restore stock raw decode; retain V328 D==6 physical-index remap",
+  "preserved": "V328 common gate, UV strip, t1 restore, COMM.IMG, DAT and all non-PSX members",
+  "known_remaining": "E5 choice-prefix physical-0 packets require a separate handler/data investigation",
+  "runtime": "PENDING user cold boot and dialogue/load/item/battle traversal",
+  "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE"
+}

@@ -1,0 +1,5 @@
+﻿address,word,meaning
+0x8016B524,0x340900A0,"stock ori t1,zero,160"
+0x8019B140,0x340900A0,V327 restore in jump delay slot
+0x8016B640,0x14890002,"stock bne a0,t1"
+0x8016B648,0x34030006,stock blank advance 6

@@ -1,0 +1,10 @@
+V330 independent verification: PASS
+full_sha256=38FE24725CA82B721A544C4F6A6B787A4028ADA00F4312A2717F746BAF809DF0
+delta_sha256=FB827FE3E9B21711D2030E6DF7BBBECF96A1E3D28E0860A4095D4C8690DAD504
+archive=164 members; changed=PSX.EXE only; exact declared overlay
+Expected-Write=70 changed bytes within call+dead-region envelope
+routing=only skill-name caller 0x80162080 enters wrapper
+wrapper=original C38C args/string preserved; then B440(dx=-4,dy=0,state=0x801F1DB4)
+SP/RA/R3000 load-delay=PASS; other C38C callers unchanged
+runtime prediction=state4 X 198..260 -> 194..256; state5 71..147 -> 67..143
+runtime=PENDING V330 cold boot; TEST_ONLY

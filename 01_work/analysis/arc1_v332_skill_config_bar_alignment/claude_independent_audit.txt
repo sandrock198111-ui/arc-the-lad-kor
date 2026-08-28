@@ -1,0 +1,33 @@
+V332 Claude independent audit - 2026-08-28
+
+Result: BLOCKER 0 / HIGH 0 / MEDIUM 2
+Static disposition: safe to hand off as TEST_ONLY; runtime remains PENDING.
+
+PASS
+- Full/delta hashes match. Archive topology is 164 members and PSX.EXE is the
+  only changed member.
+- The actual V331->V332 diff is exactly two bytes and matches
+  expected_writes.csv: file 0x460F4 82->7E and 0x460F8 BE->BA.
+- Control flow is preserved: 0x801608F4 remains the jump delay slot,
+  0x801608F8 remains the branch target, and 0x801608FC still calls
+  0x8016D620. That routine stores a1/a2 as the bar primitive x/y fields.
+- With s3=34, the bar X values are 160/220. V331 text X values 162/222 retain
+  the original two-pixel inset. Bar size remains 51x14.
+- The V331 skill call at 0x80162080, wrapper at 0x8019B0B0 and skill table at
+  0x8019B9C0 are byte-identical. Entries 1 and 4 cover 번 그라운드 and
+  슬로우 에너미 respectively, with no second/common hook.
+- The 사용안함 payload is byte-identical to V331. COMM.IMG and all DAT files
+  are unchanged.
+- V332.bin/cue hashes match the recorded values. The recorded v104 ISO audit
+  reports 506/506 fixed data LBAs and 164/164 patch-member readback.
+
+MEDIUM
+1. A four-pixel shift is a partial layout mitigation, not a replacement for
+   the inherited 12N+15 window-width formula. Very long skill names can still
+   exceed their old-width window (up to nine pixels in the static census).
+2. The inherited unapproved/unfinished items remain separate: the consumer
+   meaning of 확인함/보기/안 보기 and the E5 choice-prefix 다다 issue.
+
+Runtime checklist: cold boot V332 and verify both skill screens, both config
+bar/text columns, 사용안함/확인함 separation, and unchanged item/status/dialogue/
+equipment screens. Do not update bible_current.txt before that evidence.

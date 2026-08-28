@@ -1,0 +1,10 @@
+V332 independent verification: PASS
+full_sha256=D2951A33C598C04BDDDCDC07678ADADCC18471CE98FE32B904527073445BB5AF
+delta_sha256=72E259EF0F521E917CB014F4DA70DA4CD9BBC0B7D8EBEB5332D5F1A0297921B5
+psx_sha256=394CF9F98A4A4E95B3DD953EA8C72ADADE26B1A404382B8342794213F8178751
+archive=164 members; changed=PSX.EXE only; all DAT/COMM byte-identical
+Expected-Write=2 bytes at file 0x460F4/0x460F8 only
+skill=V331 dedicated two-screen dx=-4 route preserved byte-exact
+configuration=text X=162/222; bar X=160/220; 2px inset preserved; 사용안함 preserved
+R3000=jump delay slot and branch target preserved; a1 X store at 0x8016D638 confirmed
+runtime=PENDING V332 cold boot; TEST_ONLY

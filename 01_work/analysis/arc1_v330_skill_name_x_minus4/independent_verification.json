@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "hashes": {
+    "base": "25C7DECF7D69B356DCBA2B2CB098D0667EB7CF081CB8A87B4AB64583ABBF8C90",
+    "final": "38FE24725CA82B721A544C4F6A6B787A4028ADA00F4312A2717F746BAF809DF0",
+    "delta": "FB827FE3E9B21711D2030E6DF7BBBECF96A1E3D28E0860A4095D4C8690DAD504"
+  },
+  "archive": {
+    "members": 164,
+    "changed_members": [
+      "PSX.EXE"
+    ]
+  },
+  "expected_write": {
+    "changed_bytes": 70,
+    "declared_envelope_only": true
+  },
+  "skill_caller": "only 0x80162080 redirected; skill table base 0x8019B9C0 retained",
+  "wrapper": "original renderer arguments preserved; then dx=-4,dy=0 on state 0x801F1DB4; SP/RA/load-delay PASS",
+  "other_callers": "character and equipment C38C calls at 0x8016200C/0x80163CA8 unchanged; direct item/equipment C400 calls unchanged",
+  "runtime_prediction": "V329 state4 198..260 -> 194..256; state5 71..147 -> 67..143",
+  "runtime": "PENDING V330 user cold boot"
+}

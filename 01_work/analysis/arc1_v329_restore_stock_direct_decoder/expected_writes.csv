@@ -1,0 +1,4 @@
+﻿member,offset,before,after,purpose
+PSX.EXE,0x8EF44,2C,F8,restore_stock_one_byte_decoder_trampoline
+PSX.EXE,0x8EF45,6C,AC,restore_stock_one_byte_decoder_trampoline
+PSX.EXE,0x8EF46,06,05,restore_stock_one_byte_decoder_trampoline

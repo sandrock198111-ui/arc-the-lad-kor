@@ -1,0 +1,12 @@
+V328 -> V329 lineage
+
+Archive topology: 164/164, same order and same member sizes.
+Changed members: PSX.EXE only.
+Changed word: file 0x8EF44.
+Before: 0x08066C2C, j 0x8019B0B0 (V326 raw helper).
+After:  0x0805ACF8, j 0x8016B3E0 (stock one-byte decoder).
+Delay word at file 0x8EF48 remains 0x00000000.
+Actual changed bytes: file 0x8EF44, 0x8EF45, 0x8EF46.
+
+Everything else, including the V328 common D==6 helper, V326 UV strip,
+V327 t1 restore, COMM.IMG, UI strings and all DAT files, is byte exact.

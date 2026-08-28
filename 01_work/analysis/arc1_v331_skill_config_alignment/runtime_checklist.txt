@@ -1,0 +1,24 @@
+V331 cold-boot runtime checklist
+
+Media
+- Boot 03_output/V331.cue from a cold emulator start.
+- Do not load an emulator savestate made by V329/V330; an in-game memory-card save is allowed.
+
+Configuration screen
+- The left labels and the window frame must remain at the V329 positions.
+- Both right-hand choice columns must begin 4px farther left.
+- The third row must read `사용안함` with no half-width gaps.
+- `확인함`, `안 보기`, and the rightmost glyphs must remain inside the frame.
+
+Skill screen
+- Skill names only must begin 4px farther left.
+- Check `번 그라운드` and `슬로우 에너미`; their rightmost pixels must remain inside the name box.
+- Skill description, MP/range values, icons, cursor, and window frame must remain unchanged.
+
+Regression
+- Check load screen numbers/time, item quantities, battle HP/MP, E7 icons, Korean dialogue,
+  item/equipment names, and configuration labels for V329-equivalent output.
+
+Status
+- Static/ISO verification PASS.
+- Runtime approval PENDING user cold boot.

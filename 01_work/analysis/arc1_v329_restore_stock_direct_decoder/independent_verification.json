@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "hashes": {
+    "base": "A71FCF2E2F6C60EBFA554E6D4951FAE25CF7B3DC03CC27C9801EE4993CFC0324",
+    "final": "25C7DECF7D69B356DCBA2B2CB098D0667EB7CF081CB8A87B4AB64583ABBF8C90",
+    "delta": "6585D27B3DA45A9CFDA53E2F590C60AF7DA7DCE658D70D7CB47D0AE5DD95E9E6"
+  },
+  "archive": {
+    "members": 164,
+    "changed_members": [
+      "PSX.EXE"
+    ]
+  },
+  "expected_write": {
+    "changed_bytes": 3,
+    "one_word_exact_overlay": true
+  },
+  "decoder": {
+    "trampoline": "0x801A9744",
+    "stock_destination": "0x8016B3E0",
+    "raw_helper_external_inbound_after": 0,
+    "pointer_hits_into_raw_helper": 0
+  },
+  "pipeline": "stock raw-1 decode then D6-only common remap; D14/D16 raw 01..DC identity",
+  "exhaustive": "D6/D14/D16 x physical0..1238 and raw01..DC PASS with MIPS-I load delays",
+  "runtime_evidence": "V327 53 W6 packets: 52 eligible legacy indices plus one already synthetic",
+  "runtime": "PENDING V329 user cold boot"
+}
