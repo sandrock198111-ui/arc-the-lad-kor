@@ -1,0 +1,27 @@
+V334 사전 Claude Code 독립 감사 - 2026-08-29
+
+판정: V333 BLOCKER 확정 / V334 재배치안 정적 성립
+
+- V332/V333의 0x8019B1DC는 모두 `0805AD49` = `j 0x8016B524`다.
+- 그 다음 0x8019B1E0은 실행되는 MIPS 지연 슬롯이다. V332는 NOP였으나
+  V333은 HUD L 문자열 `DF E7 DF F4`를 써서 명령어 `0xF4DFE7DF`가 됐다.
+- V333 DUCCU 상태 SHA-256
+  `7A1C149997F258CBF5750BDBAF21FC05869085B17EA5838E5DEDE77D741CEF08`의
+  CPU 상태는 current PC `0x8019B1DC`, next PC `0x8016B524`, Cause
+  `0xD0000428`이다. ExcCode 10은 Reserved Instruction이고 BD=1은 예외가
+  분기 지연 슬롯에서 났음을 뜻한다.
+- EXE 전수 스캔에서 0x8019B1E4 이후 payload 구간으로 들어오는 직접
+  J/JAL/branch는 0건이다. 첫 네 바이트를 NOP로 복원하고 데이터를
+  0x8019B1E4 이후로 옮기는 안은 주소 범위와 용량 면에서 성립한다.
+- V333 가드의 결함은 `zero + pointer 없음`만 검사하고 바로 앞 제어전송의
+  지연 슬롯인지 검사하지 않은 것이다. 후속 빌더는 이 경계를 명령어로
+  고정해야 한다.
+
+V334 실제 밀집 배치:
+- hud_l  0x8019B1E4, 5바이트
+- hud_m  0x8019B1E9, 5바이트
+- hud_p  0x8019B1EE, 3바이트
+- load_l 0x8019B1F1, 3바이트
+- empty  0x8019B1F4, 1바이트 NUL
+
+Claude Code는 파일을 수정하지 않았고 읽기 전용 분석만 수행했다.

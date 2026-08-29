@@ -89,6 +89,6 @@
     "battle_hud": "compact L and digits, blank spacer, M/P, HP orb and counters"
   },
   "preserved": "all DAT, V332 skill/config alignment, ordinary Hangul/E9-EA lookup, six-pixel compact digits, icons and every non-PSX/COMM member",
-  "runtime": "PENDING user cold boot",
-  "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE"
+  "runtime": "FAIL: V333 writes 0xF4DFE7DF at live delay slot 0x8019B1E0; state SHA-256 7A1C149997F258CBF5750BDBAF21FC05869085B17EA5838E5DEDE77D741CEF08 captured ExcCode 10 with BD=1",
+  "release_status": "DO NOT USE; superseded by V334 delay-slot repair"
 }

@@ -1,0 +1,17 @@
+V334 cold-boot checklist
+
+IMPORTANT
+- Do not load any V333 emulator savestate. It restores the bad CPU/RAM state.
+- Boot V334.cue from power-off/cold boot.
+- Memory-card saves are allowed; emulator save states are not.
+
+Required checks
+1. BIOS, title, load screen, and field gameplay all appear; no black screen.
+2. Load screen shows slot number, L/level, and play-time digits correctly.
+3. Choice rows have no synthetic `다다` prefix.
+4. Item quantities and battle HUD L/M/P, HP and MP digits are compact and correct.
+5. Battle/field icons remain visible.
+6. Skill names and configuration text/bar retain the V332 left alignment.
+7. Dialogue, item names, speaker labels, and ordinary Hangul remain unchanged.
+
+Until all checks pass, V334 remains TEST_ONLY and bible_current.txt stays unchanged.

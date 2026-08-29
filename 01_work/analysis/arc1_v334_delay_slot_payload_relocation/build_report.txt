@@ -1,0 +1,12 @@
+V334 TEST ONLY - V333 delay-slot payload relocation
+base=arc1_v333_dynamic_ui_glyph_recovery_TEST_ONLY_55D826DC.zip
+output=arc1_v334_delay_slot_payload_relocation_TEST_ONLY_9089151E.zip
+sha256=9089151E90CDC53CDC4187D6DE403E6C8654B2D302E65462A38D2A7AAE1B8CFC
+delta=arc1_v334_delay_slot_payload_relocation_TEST_ONLY_delta_from_v333_CC9178C5.zip
+delta_sha256=CC9178C5C969D2653D87A6FDF1BB863FC0D9CD6A10B48D0D1C3E405717549179
+changed_members=PSX.EXE only
+changed_bytes=25
+failure=V333 wrote 0xF4DFE7DF into live jump delay slot 0x8019B1E0
+repair=restore NOP and move identical local UI payloads to 0x8019B1E4 onward
+COMM.IMG/all DAT/V333 UI routes=unchanged
+runtime=PENDING; TEST_ONLY

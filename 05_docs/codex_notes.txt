@@ -1,6 +1,13 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+V333 지연 슬롯 오판과 V334 안전한 payload 경계 - 2026-08-29
+- file `0x809DC`/RAM `0x8019B1DC`의 `0x0805AD49`는 `j 0x8016B524`이고, 바로 다음 file `0x809E0`/RAM `0x8019B1E0`은 반드시 실행되는 MIPS-I 지연 슬롯이다. V332의 NOP를 V333이 HUD `L` 문자열 `DF E7 DF F4`로 덮어 명령 워드 `0xF4DFE7DF`가 됐다.
+- V333 실패 상태 SHA-256 `7A1C149997F258CBF5750BDBAF21FC05869085B17EA5838E5DEDE77D741CEF08`에서 current PC `0x8019B1DC`, next PC `0x8016B524`, raw Cause `0xD0000428`을 확인했다. ExcCode 10은 Reserved Instruction이고 BD=1은 예외 명령이 분기 지연 슬롯에 있었음을 뜻한다. 이 조합으로 검은 화면의 직접 원인이 확정된다.
+- 디스크와 여러 런타임 상태에서 0인 영역이라도 바로 앞 명령이 branch/jump이면 첫 워드는 free cave가 아니다. cave 가드는 `zero`, 포인터 부재, 직접 분기 타깃 부재뿐 아니라 후보 시작 직전 명령의 branch/jump 여부와 그 delay slot 한 워드를 반드시 제외해야 한다.
+- V334의 안전한 경계는 `0x8019B1E4`부터다. `0x8019B1E0`은 NOP로 고정하고 `hud_l(1E4,5B) / hud_m(1E9,5B) / hud_p(1EE,3B) / load_l(1F1,3B) / empty(1F4,1B)`를 비중첩 배치한다. 이 payload 범위로 직접 들어오는 J/JAL/branch는 0건이며, 지역 UI 포인터 5개만 새 주소를 소유한다.
+- V333은 런타임 FAIL·DO NOT USE다. V334를 검증할 때 V333 세이브스테이트를 로드하면 실패 PC와 결함 RAM까지 복원되므로 반드시 CUE 콜드부팅 후 메모리카드만 사용한다.
+
 V332 설정 선택 바 좌표와 기술명 경로 재확정 - 2026-08-28
 - 기술명 전용 호출 `0x80162080`은 RAM `0x8019B9C0`/file `0x811C0`의 4바이트 포인터 표를 읽는다. entry1 `0x8019ADEA`의 6바이트 문자열은 V329 상태4 종료 포인터 `0x8019ADF0`, entry4 `0x8019C1EE`의 9바이트 문자열은 상태5 종료 포인터 `0x8019C1F7`과 정확히 맞는다. 이 근거가 있으므로 공통 `0x8016C400`을 훅하지 말고 전용 `0x80162080` wrapper만 사용해야 장비·소모품 등 다른 표를 보존한다.
 - 설정 loop의 `s3=34`에서 `0x801608F4 addiu a1,s3,0x82`는 첫 열 bar X=164, `0x801608F8 addiu a1,s3,0xBE`는 둘째 열 bar X=224를 만든다. `0x801608FC jal 0x8016D620` 뒤 `0x8016D638 sh a1,0(at)`가 실제 primitive X 필드 저장이므로 이 값은 텍스트 X에서 자동 파생되지 않는다.

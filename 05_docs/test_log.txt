@@ -1,3 +1,13 @@
+2026-08-29 | V333 검은 화면 원인 확정과 V334 지연 슬롯 payload 재배치 | DUCCU CPU/메모리 해제, Claude Code 독립 감사, py_compile·2회 결정적 빌드, 독립 verifier, Expected-Write, mkpsxiso v104/LBA, check_build 계보 대조 | V333 RUNTIME FAIL / V334 STATIC PASS / INHERITED DAT DEBT FAIL / V334 RUNTIME PENDING.
+- 실패 입력은 `HASH-F87BA1FA9480F471_1.sav`, SHA-256 `7A1C149997F258CBF5750BDBAF21FC05869085B17EA5838E5DEDE77D741CEF08`, game id V333이다. 썸네일은 검은 화면이고 활성 텍스트 패킷은 0이었다.
+- CPU 상태는 current PC `0x8019B1DC`, next PC `0x8016B524`, Status `0x40000404`, raw Cause `0xD0000428`이었다. ExcCode 10=Reserved Instruction, BD=1이며 V333 file `0x809E0`의 `DF E7 DF F4`가 little-endian 명령 `0xF4DFE7DF`로 실행된 것과 정확히 맞는다.
+- V334는 지연 슬롯 file `0x809E0..0x809E3`을 NOP로 복원하고 payload를 `hud_l 0x809E4`, `hud_m 0x809E9`, `hud_p 0x809EE`, `load_l 0x809F1`, `empty 0x809F4`에 배치했다. 해당 RAM 주소는 각각 `0x8019B1E4/1E9/1EE/1F1/1F4`다. payload 범위로 직접 들어오는 J/JAL/branch는 0건이고 포인터 소유권은 5/5다.
+- 로컬 Claude Code `claude.cmd`를 Sonnet/high/plan 읽기 전용으로 실행했다. V333 지연 슬롯 overwrite, Cause/BD, V334의 `0x8019B1E4` 이후 재배치 가능성을 독립적으로 동일 판정했다. Claude는 파일을 수정하지 않았다.
+- `python -m py_compile` 2개 스크립트 PASS, V334 빌더 2회 결과 full/delta 해시 동일, 독립 verifier PASS다. V333 대비 PSX.EXE 25바이트만 바뀌고 COMM.IMG·모든 DAT와 나머지 163멤버는 동일하다.
+- V334 full/delta SHA-256은 `9089151E90CDC53CDC4187D6DE403E6C8654B2D302E65462A38D2A7AAE1B8CFC` / `CC9178C5C969D2653D87A6FDF1BB863FC0D9CD6A10B48D0D1C3E405717549179`. BIN/CUE는 `2EEBA8D7C9101602006EAC40EF2B0E5230CC046D84BF7A1F7DAF46602A0D6198` / `60A52E530873C4AF13654D3AC711BC872E896884184A78D2B4ADC824704B7A7F`다.
+- v104 ISO 검증은 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481·587776B, 패치 멤버 164/164 readback PASS다. `check_build.py`는 V333과 동일하게 선택지 폭 75, 마커 2, 3줄 초과 18로 FAIL했으며 이번 PSX-only 수정의 신규 부채는 아니다.
+- 실기 판정은 PENDING이다. V333 상태를 로드하면 결함이 든 RAM/CPU까지 복원되므로 금지하고, V334 CUE 콜드부팅 후 메모리카드만 로드해 BIOS→타이틀→불러오기→필드 진행을 확인한다.
+
 2026-08-28 | V332 설정 선택 바 동반 좌측 정렬 | V331/V329 정적 표·DUCCU source pointer 교차검증, py_compile·2회 결정적 빌드, 독립 verifier/Capstone/Expected-Write, check_build 3세대 대조, mkpsxiso v104/LBA | STATIC PATCH PASS, INHERITED DAT DEBT FAIL, RUNTIME PENDING.
 - 후속 Claude 감사의 최초 판독은 `addiu` 부호확장을 빠뜨려 기술명 표를 잘못 읽었으나 재검산에서 이를 철회했다. 실제 RAM/file 표는 `0x8019B9C0/0x811C0`이고 entry1 `0x8019ADEA`·entry4 `0x8019C1EE`가 V329 상태4/5의 렌더 종료 포인터 `0x8019ADF0/0x8019C1F7`와 각각 6/9바이트 차이로 맞는다. 따라서 V331 `0x80162080` 전용 wrapper가 `번 그라운드`와 `슬로우 에너미` 두 화면을 모두 잡고 다른 표는 건드리지 않는다.
 - V332는 V331 기술명 wrapper, 설정 텍스트 X `162/222`, `사용안함` payload를 byte exact로 보존했다. 설정 bar X 두 immediate만 file `0x460F4/0x460F8`에서 `0x82/0xBE→0x7E/0xBA`로 바꿔 X `164/224→160/220`으로 이동했다. bar width/height `51x14`, 두 텍스트 열과의 시작 inset 2px는 불변이다.

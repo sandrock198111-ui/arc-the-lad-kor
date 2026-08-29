@@ -1,0 +1,78 @@
+{
+  "verdict": "PASS",
+  "output_sha256": "9089151E90CDC53CDC4187D6DE403E6C8654B2D302E65462A38D2A7AAE1B8CFC",
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": 25,
+  "delay_slot": "0x8019B1E0 NOP",
+  "disassembly": [
+    "8019B1DC j 0x8016b524",
+    "8019B1E0 nop"
+  ],
+  "payload_layout": [
+    {
+      "name": "hud_l",
+      "file": "0x809E4",
+      "ram": "0x8019B1E4",
+      "size": 5
+    },
+    {
+      "name": "hud_m",
+      "file": "0x809E9",
+      "ram": "0x8019B1E9",
+      "size": 5
+    },
+    {
+      "name": "hud_p",
+      "file": "0x809EE",
+      "ram": "0x8019B1EE",
+      "size": 3
+    },
+    {
+      "name": "load_l",
+      "file": "0x809F1",
+      "ram": "0x8019B1F1",
+      "size": 3
+    }
+  ],
+  "pointer_hits": [
+    {
+      "file": "0x780FC",
+      "value": "0x8019B1F1"
+    },
+    {
+      "file": "0x823AC",
+      "value": "0x8019B1E4"
+    },
+    {
+      "file": "0x823B0",
+      "value": "0x8019B1F4"
+    },
+    {
+      "file": "0x823B8",
+      "value": "0x8019B1E9"
+    },
+    {
+      "file": "0x823BC",
+      "value": "0x8019B1EE"
+    }
+  ],
+  "failure_state": {
+    "sha256": "7A1C149997F258CBF5750BDBAF21FC05869085B17EA5838E5DEDE77D741CEF08",
+    "game_id": "V333",
+    "current_pc": "0x8019B1DC",
+    "next_pc": "0x8016B524",
+    "status": "0x40000404",
+    "cause": "0xD0000428",
+    "exception_code": 10,
+    "branch_delay": true
+  },
+  "preserved": {
+    "COMM_IMG": "PASS",
+    "all_DAT_and_other_members": "PASS",
+    "V333_UV_count": "PASS",
+    "V333_E5_blank": "PASS"
+  },
+  "runtime": "PENDING V334 cold boot"
+}

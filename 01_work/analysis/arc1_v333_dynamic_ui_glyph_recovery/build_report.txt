@@ -10,4 +10,4 @@ load=local slot-number/L/colon routes only; compact numeric formatting retained
 choice=E5 physical0 -> synthetic blank960; two-slot 28px indentation retained
 battle_hud=local blank/L/M/P payloads; compact digits and HP orb retained
 ordinary Hangul, global lookup, DAT and V332 alignment=unchanged
-runtime=PENDING; TEST_ONLY
+runtime=FAIL; 0x8019B1E0 live delay-slot overwrite; DO NOT USE

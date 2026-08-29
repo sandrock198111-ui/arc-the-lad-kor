@@ -1,3 +1,11 @@
+2026-08-29 - V333 실행 불가 확정과 V334 MIPS 지연 슬롯 복구
+- 사용자가 제공한 V333 DUCCU 상태(`SHA-256 7A1C149997F258CBF5750BDBAF21FC05869085B17EA5838E5DEDE77D741CEF08`)는 검은 화면에서 current PC `0x8019B1DC`, next PC `0x8016B524`, Cause `0xD0000428`이었다. ExcCode 10과 BD=1로 `j 0x8016B524`의 지연 슬롯 `0x8019B1E0`에서 Reserved Instruction이 발생했음을 확정했다.
+- V333은 HUD `L` 문자열 `DF E7 DF F4`를 file `0x809E0`에 써서 실행 워드 `0xF4DFE7DF`를 만들었다. 따라서 V333은 `DO NOT USE`로 재분류하고 빌더·매니페스트·보고서의 런타임 상태도 FAIL로 고쳤다.
+- `02_scripts/build_arc1_v334_delay_slot_payload_relocation.py`와 `verify_arc1_v334_delay_slot_payload_relocation.py`를 추가했다. V334는 `0x8019B1E0`을 NOP로 복원하고 동일한 지역 UI payload를 `0x8019B1E4..0x8019B1F4`에 비중첩 배치한 뒤 해당 5개 포인터만 갱신한다.
+- V333 대비 변경 멤버는 `PSX.EXE` 하나, 실제 변경은 25바이트다. COMM.IMG·모든 DAT·V333 compact 숫자/아이콘·E5 synthetic blank·V332 기술명/설정 정렬은 byte exact로 보존했다. full/delta SHA-256은 `9089151E90CDC53CDC4187D6DE403E6C8654B2D302E65462A38D2A7AAE1B8CFC` / `CC9178C5C969D2653D87A6FDF1BB863FC0D9CD6A10B48D0D1C3E405717549179`다.
+- `V334.bin`/`V334.cue` SHA-256은 `2EEBA8D7C9101602006EAC40EF2B0E5230CC046D84BF7A1F7DAF46602A0D6198` / `60A52E530873C4AF13654D3AC711BC872E896884184A78D2B4ADC824704B7A7F`다. v104 layout에서 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 멤버 164/164 readback이 PASS했다.
+- 로컬 Claude Code Sonnet을 읽기 전용 plan 모드로 실행해 지연 슬롯·예외 상태·새 payload 도달성을 독립 재현했다. V334는 콜드부팅 전 TEST ONLY이며, V333 세이브스테이트를 불러오지 말고 V334 CUE를 새로 부팅해야 한다. 상속 `check_build.py` 부채(선택지 폭 75·마커 2·3줄 초과 18)는 그대로다. `bible_current.txt`는 실기 성공 전이라 변경하지 않았다.
+
 2026-08-28 - V332 스킬명·설정 선택문·선택 바 4px 좌측 정렬
 - V331 후속 Claude 감사에서 설정 선택문 X만 이동하고 선택 바 X는 원래 `164/224`에 남아 상대 정렬이 깨지는 점을 확인했다. 재감사 과정의 부호확장 오류를 정정한 뒤, 기술명 표 RAM `0x8019B9C0` entry1/4가 각각 `번 그라운드`/`슬로우 에너미` 시작 포인터이고 V329 상태의 source end `0x8019ADF0/0x8019C1F7`와 정확히 맞아 V331 전용 호출 `0x80162080`이 두 화면을 모두 커버함을 재확정했다.
 - `02_scripts/build_arc1_v332_skill_config_bar_alignment.py`와 `verify_arc1_v332_skill_config_bar_alignment.py`를 추가했다. V331 기술명 wrapper, 설정 선택문 X `162/222`, `사용안함` payload는 byte exact로 유지하고 선택 바 좌표만 file `0x460F4: 0x82→0x7E`, `0x460F8: 0xBE→0xBA`로 바꿔 X `164/224→160/220`으로 각각 4px 당겼다.

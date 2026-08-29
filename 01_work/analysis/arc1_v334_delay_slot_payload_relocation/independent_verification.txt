@@ -1,0 +1,10 @@
+V334 independent verification: PASS
+output_sha256=9089151E90CDC53CDC4187D6DE403E6C8654B2D302E65462A38D2A7AAE1B8CFC
+changed_members=PSX.EXE only
+changed_bytes=25; Expected-Write PASS
+0x8019B1DC=j 0x8016B524; 0x8019B1E0=nop PASS
+payload data begins at 0x8019B1E4; inbound control transfers=0 PASS
+payload pointer ownership=5/5 PASS
+COMM.IMG/all DAT/V333 UV+E5/V332 alignment inherited PASS
+V333 failure state: PC 0x8019B1DC -> next 0x8016B524, Cause ExcCode10+BD (Reserved Instruction in delay slot) PASS
+runtime=PENDING V334 user cold boot; TEST_ONLY

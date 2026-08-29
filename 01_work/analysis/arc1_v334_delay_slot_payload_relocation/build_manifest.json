@@ -1,0 +1,60 @@
+{
+  "build": "V334 TEST_ONLY V333 delay-slot payload relocation",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v333_dynamic_ui_glyph_recovery_TEST_ONLY_55D826DC.zip",
+    "sha256": "55D826DC02FE5A7DE5167EBB81623184409FA4F8FC395B2EB04369A17DC2D450"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v334_delay_slot_payload_relocation_TEST_ONLY_9089151E.zip",
+    "sha256": "9089151E90CDC53CDC4187D6DE403E6C8654B2D302E65462A38D2A7AAE1B8CFC"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v334_delay_slot_payload_relocation_TEST_ONLY_delta_from_v333_CC9178C5.zip",
+    "sha256": "CC9178C5C969D2653D87A6FDF1BB863FC0D9CD6A10B48D0D1C3E405717549179"
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 25
+  },
+  "failure": {
+    "branch_pc": "0x8019B1DC",
+    "bad_delay_pc": "0x8019B1E0",
+    "bad_word": "0xF4DFE7DF",
+    "cause": "0xD0000428: ExcCode 10 Reserved Instruction, BD=1"
+  },
+  "layout": {
+    "delay_nop": "0x8019B1E0",
+    "hud_l": "0x8019B1E4",
+    "hud_m": "0x8019B1E9",
+    "hud_p": "0x8019B1EE",
+    "load_l": "0x8019B1F1",
+    "empty": "0x8019B1F4"
+  },
+  "pointer_hits": [
+    {
+      "file_offset": "0x780FC",
+      "value": "0x8019B1F1"
+    },
+    {
+      "file_offset": "0x823AC",
+      "value": "0x8019B1E4"
+    },
+    {
+      "file_offset": "0x823B0",
+      "value": "0x8019B1F4"
+    },
+    {
+      "file_offset": "0x823B8",
+      "value": "0x8019B1E9"
+    },
+    {
+      "file_offset": "0x823BC",
+      "value": "0x8019B1EE"
+    }
+  ],
+  "preserved": "V333 COMM.IMG and synthetic glyphs, all DAT, UV count, E5 blank, V332 skill/config alignment and every non-PSX member",
+  "runtime": "PENDING user cold boot",
+  "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE"
+}

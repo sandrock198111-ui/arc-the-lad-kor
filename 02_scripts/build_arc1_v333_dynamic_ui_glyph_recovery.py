@@ -470,8 +470,11 @@ def main() -> None:
             "all DAT, V332 skill/config alignment, ordinary Hangul/E9-EA lookup, "
             "six-pixel compact digits, icons and every non-PSX/COMM member"
         ),
-        "runtime": "PENDING user cold boot",
-        "release_status": "DIAGNOSTIC; DO NOT DISTRIBUTE",
+        "runtime": (
+            "FAIL: V333 writes 0xF4DFE7DF at live delay slot 0x8019B1E0; "
+            "user state 7A1C1499... captured Reserved Instruction with BD=1"
+        ),
+        "release_status": "DO NOT USE; superseded by V334 delay-slot repair",
     }
     (ANALYSIS / "build_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -489,7 +492,7 @@ def main() -> None:
         "choice=E5 physical0 -> synthetic blank960; two-slot 28px indentation retained",
         "battle_hud=local blank/L/M/P payloads; compact digits and HP orb retained",
         "ordinary Hangul, global lookup, DAT and V332 alignment=unchanged",
-        "runtime=PENDING; TEST_ONLY",
+        "runtime=FAIL; 0x8019B1E0 live delay-slot overwrite; DO NOT USE",
     ]
     (ANALYSIS / "build_report.txt").write_text("\n".join(report) + "\n", encoding="utf-8")
     print("\n".join(report))
