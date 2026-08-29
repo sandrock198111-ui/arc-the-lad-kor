@@ -1,0 +1,46 @@
+{
+  "verdict": "PASS",
+  "output_sha256": "CF4FB2E518ADD6CE6B528C44D2AD4696DCD9DAF2940FE0A105F60B50C76C70D0",
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": 4,
+  "changed_offsets": [
+    "0x418F8",
+    "0x41918",
+    "0x41970",
+    "0x41988"
+  ],
+  "disassembly": [
+    "top_initial: 8015C0F8 ori $a1, $zero, 0x20",
+    "bottom_initial: 8015C118 ori $a1, $zero, 0xa2",
+    "top_reset: 8015C170 ori $a1, $zero, 0x20",
+    "bottom_reset: 8015C188 ori $a1, $zero, 0xa2"
+  ],
+  "rows": {
+    "top": [
+      32,
+      48,
+      64,
+      80
+    ],
+    "top_fourth_glyph_bottom": 95,
+    "bottom": [
+      162,
+      178,
+      194,
+      210
+    ],
+    "bottom_fourth_glyph_bottom": 225,
+    "line_pitch": 16
+  },
+  "preserved": {
+    "choice_option_text": "PASS: E5 and ordinary glyphs share shifted state s0",
+    "choice_triangle_cursor": "code/data byte-identical; final on-screen coordinate PENDING runtime",
+    "dialogue_background": "PASS: no related code/data changed",
+    "COMM_IMG": "PASS",
+    "all_DAT_and_other_members": "PASS",
+    "UI_item_skill_paths": "PASS: exact four-byte PSX diff isolation"
+  },
+  "runtime": "PENDING V335 cold boot"
+}

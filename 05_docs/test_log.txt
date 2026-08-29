@@ -1,3 +1,12 @@
+2026-08-29 | V335 전체 대화 글자 Y −4px | V334 MIPS 호출 흐름, py_compile·2회 결정적 빌드, 독립 verifier/Capstone/Expected-Write, Claude Code Sonnet 읽기 전용 감사, mkpsxiso v104/LBA/직접 섹터 readback, check_build 계보 대조 | STATIC PATCH PASS / INHERITED DAT DEBT FAIL / RUNTIME PENDING.
+- V334를 해시 고정 기준으로 사용했다. PSX.EXE file `0x418F8/0x41918/0x41970/0x41988` 네 즉시값만 각각 `0x24/0xA6/0x24/0xA6→0x20/0xA2/0x20/0xA2`로 바뀌었고 다른 바이트 변화는 0건이다.
+- `0x8016B880`은 a1을 대화 상태 +0x20에 저장하고 `0x8016B418`로 active Y를 설정한다. E6는 H=16과 spacing=0을 더하므로 위쪽 네 줄은 y=32/48/64/80, 아래쪽은 162/178/194/210으로 독립 재계산됐다.
+- E5와 일반 선택지 글리프는 같은 `s0` 대화 상태를 공용 빌더 `0x8016B518`에 전달한다. 선택지 글자는 대화와 함께 올라가며, 삼각 커서 코드·데이터는 diff 밖이다. 다만 최종 커서 화면 좌표는 실기로 확인할 때까지 PENDING이다.
+- py_compile PASS, 두 번의 full/delta 재빌드 해시가 동일했고 독립 verifier PASS다. full/delta SHA-256은 `CF4FB2E518ADD6CE6B528C44D2AD4696DCD9DAF2940FE0A105F60B50C76C70D0` / `02721A137139B359F84AC74BB3F0FC325A9E973EE746C6F94D6E72D36ECB4FA7`이다.
+- `V335.bin`/cue SHA-256은 `4546ED8ED1A01F19FE53FB2D5CE65A4E5EEA0FEDEC28DA053D3A8E46D52B706C` / `5BD41599BAEB9EADBE13BCA7EE755EE52466F99AD554E61D1A4DABFEB51BFB2E`다. v104 레이아웃에서 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 164/164 readback PASS이며 Claude도 PSX/COMM 섹터를 직접 추출해 ZIP과 일치시켰다.
+- `check_build.py`는 V334와 같은 상속 부채(선택지 폭 75, 마커 2, 기존 3줄 제한 초과 18)를 냈다. 이번 PSX 네 바이트 변경으로 생긴 신규 DAT 부채는 아니다.
+- 실기 게이트: V335 CUE 콜드부팅 후 위·아래 대화의 첫 줄과 네 줄 배치, 선택지 글자 상향과 삼각 커서 위치, 진행·선택 입력, UI/아이템/기술/전투 HUD 회귀를 확인한다. 런타임은 PENDING이다.
+
 2026-08-29 | V333 검은 화면 원인 확정과 V334 지연 슬롯 payload 재배치 | DUCCU CPU/메모리 해제, Claude Code 독립 감사, py_compile·2회 결정적 빌드, 독립 verifier, Expected-Write, mkpsxiso v104/LBA, check_build 계보 대조 | V333 RUNTIME FAIL / V334 STATIC PASS / INHERITED DAT DEBT FAIL / V334 RUNTIME PENDING.
 - 실패 입력은 `HASH-F87BA1FA9480F471_1.sav`, SHA-256 `7A1C149997F258CBF5750BDBAF21FC05869085B17EA5838E5DEDE77D741CEF08`, game id V333이다. 썸네일은 검은 화면이고 활성 텍스트 패킷은 0이었다.
 - CPU 상태는 current PC `0x8019B1DC`, next PC `0x8016B524`, Status `0x40000404`, raw Cause `0xD0000428`이었다. ExcCode 10=Reserved Instruction, BD=1이며 V333 file `0x809E0`의 `DF E7 DF F4`가 little-endian 명령 `0xF4DFE7DF`로 실행된 것과 정확히 맞는다.

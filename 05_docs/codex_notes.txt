@@ -1,6 +1,13 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+V335 공통 대화 시작 Y와 선택지 글리프 경로 - 2026-08-29
+- 위·아래 대화 객체는 `0x8015C0F8/0x8015C118`에서 최초 Y를 받고, `0x8015C170/0x8015C188`에서 top/bottom 전환 때 같은 Y를 다시 받는다. 네 곳 모두 `0x8016B880`으로 들어가 a1이 state+0x20에 저장되고 `0x8016B418`에서 active state+0x08 Y가 된다. 전역 이동에는 네 곳을 함께 바꿔야 한다.
+- V334의 시작 Y는 top=36, bottom=166이고 E6 줄 이동은 state H(+0x0E)=16 + spacing(+0x10)=0이다. V335의 top=32, bottom=162이면 네 줄은 top `32/48/64/80`, bottom `162/178/194/210`이며 16px 글리프 하단은 `95/225`다.
+- E5 처리 `0x8016BE04`와 이후 일반 글리프 처리 `0x8016BD94`는 모두 동일한 `s0` 대화 상태를 a1로 `0x8016B518`에 전달한다. 따라서 대화 상태 origin을 바꾸면 선택지 글자도 같이 이동한다.
+- 선택지 삼각 커서는 E5의 synthetic blank 패킷 자체가 아니다. V335는 네 Y 즉시값 외 PSX 바이트를 바꾸지 않아 커서 코드·데이터를 직접 수정하지 않지만, 최종 화면 좌표의 간접 의존 여부는 콜드부팅 실기로 판정한다. 정적 검사에서 커서가 그대로라고 단정하지 않는다.
+- V335는 V334 대비 PSX.EXE 네 바이트만 바꾼 TEST ONLY 후보다. COMM.IMG·DAT·UI/아이템/기술과 배경은 byte exact이며 full ZIP SHA-256은 `CF4FB2E518ADD6CE6B528C44D2AD4696DCD9DAF2940FE0A105F60B50C76C70D0`이다.
+
 V333 지연 슬롯 오판과 V334 안전한 payload 경계 - 2026-08-29
 - file `0x809DC`/RAM `0x8019B1DC`의 `0x0805AD49`는 `j 0x8016B524`이고, 바로 다음 file `0x809E0`/RAM `0x8019B1E0`은 반드시 실행되는 MIPS-I 지연 슬롯이다. V332의 NOP를 V333이 HUD `L` 문자열 `DF E7 DF F4`로 덮어 명령 워드 `0xF4DFE7DF`가 됐다.
 - V333 실패 상태 SHA-256 `7A1C149997F258CBF5750BDBAF21FC05869085B17EA5838E5DEDE77D741CEF08`에서 current PC `0x8019B1DC`, next PC `0x8016B524`, raw Cause `0xD0000428`을 확인했다. ExcCode 10은 Reserved Instruction이고 BD=1은 예외 명령이 분기 지연 슬롯에 있었음을 뜻한다. 이 조합으로 검은 화면의 직접 원인이 확정된다.

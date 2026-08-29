@@ -1,0 +1,32 @@
+V335 Claude Code independent audit - 2026-08-29
+
+tool=Claude Code 2.1.237, model=Sonnet, effort=high, permission-mode=plan
+scope=read-only ZIP/PSX.EXE/MIPS/ISO review; no project files modified by Claude
+
+PASS
+- V334/V335 ZIP comparison independently found PSX.EXE as the only changed
+  member and exactly four changed bytes: 0x418F8, 0x41918, 0x41970, 0x41988.
+- The four words are the declared top/bottom initial/reset Y immediates.
+- The remaining 163 archive members, COMM.IMG and all DAT members are byte-identical.
+- Full/delta archive hashes were independently recalculated and matched.
+- After V335.bin was created, Claude independently extracted PSX.EXE from LBA
+  268481 and COMM.IMG from LBA 667 and matched both to the V335 ZIP.
+
+FIRST-PASS FINDINGS AND RESOLUTION
+- Claude initially marked the claim that option text shares the shifted state as
+  unproven.  The verifier was then extended to anchor both 0x8016BD94 (ordinary
+  glyph path) and 0x8016BE04 (E5 path): both pass the same s0 dialogue state as
+  a1 to the common builder 0x8016B518.  Option text therefore inherits the new
+  dialogue origin.
+- Claude initially noted that V335.bin/cue did not yet exist.  They were created
+  afterward and the v104 layout/readback was verified, including Claude's direct
+  sector extraction described above.
+
+PENDING / MEDIUM
+- Choice-triangle cursor code and data are outside the four-byte diff, but its
+  final on-screen coordinate is intentionally classified as runtime PENDING.
+- Cold-boot behavior and visual placement remain runtime PENDING.  Static PASS
+  must not be treated as runtime approval, especially after the V333 precedent.
+
+verdict=STATIC INTEGRITY PASS; BLOCKER/HIGH 0 in the audited mutation scope;
+runtime=PENDING; final adoption not decided by Claude

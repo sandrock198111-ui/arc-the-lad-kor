@@ -1,0 +1,56 @@
+{
+  "build": "V335 TEST_ONLY global dialogue text Y minus 4",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v334_delay_slot_payload_relocation_TEST_ONLY_9089151E.zip",
+    "sha256": "9089151E90CDC53CDC4187D6DE403E6C8654B2D302E65462A38D2A7AAE1B8CFC"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v335_dialogue_text_y_minus4_TEST_ONLY_CF4FB2E5.zip",
+    "sha256": "CF4FB2E518ADD6CE6B528C44D2AD4696DCD9DAF2940FE0A105F60B50C76C70D0"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v335_dialogue_text_y_minus4_TEST_ONLY_delta_from_v334_02721A13.zip",
+    "sha256": "02721A137139B359F84AC74BB3F0FC325A9E973EE746C6F94D6E72D36ECB4FA7"
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 4
+  },
+  "dialogue_text_origins": {
+    "top_before": [
+      36,
+      52,
+      68,
+      84
+    ],
+    "top_after": [
+      32,
+      48,
+      64,
+      80
+    ],
+    "bottom_before": [
+      166,
+      182,
+      198,
+      214
+    ],
+    "bottom_after": [
+      162,
+      178,
+      194,
+      210
+    ],
+    "line_pitch": 16
+  },
+  "preserved_choice_cursor": {
+    "file_offset": "0x51604",
+    "word": "0x340403C0",
+    "policy": "choice cursor code/data intentionally unchanged; final screen coordinate requires V335 runtime observation"
+  },
+  "preserved": "V334 choice cursor code/data, dialogue backgrounds, COMM.IMG, all DAT, UI/item/skill paths and every non-PSX member",
+  "runtime": "PENDING user cold boot",
+  "release_status": "TEST ONLY; DO NOT DISTRIBUTE"
+}

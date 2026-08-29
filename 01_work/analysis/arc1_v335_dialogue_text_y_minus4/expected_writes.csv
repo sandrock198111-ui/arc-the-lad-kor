@@ -1,0 +1,5 @@
+﻿member,offset,before,after,purpose
+PSX.EXE,0x418F8,24,20,top_object_initial_Y:36->32
+PSX.EXE,0x41918,A6,A2,bottom_object_initial_Y:166->162
+PSX.EXE,0x41970,24,20,top_object_reset_Y:36->32
+PSX.EXE,0x41988,A6,A2,bottom_object_reset_Y:166->162

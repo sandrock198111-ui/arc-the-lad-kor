@@ -1,0 +1,12 @@
+V335 TEST ONLY - global dialogue text Y minus 4
+base=arc1_v334_delay_slot_payload_relocation_TEST_ONLY_9089151E.zip
+output=arc1_v335_dialogue_text_y_minus4_TEST_ONLY_CF4FB2E5.zip
+sha256=CF4FB2E518ADD6CE6B528C44D2AD4696DCD9DAF2940FE0A105F60B50C76C70D0
+delta=arc1_v335_dialogue_text_y_minus4_TEST_ONLY_delta_from_v334_02721A13.zip
+delta_sha256=02721A137139B359F84AC74BB3F0FC325A9E973EE746C6F94D6E72D36ECB4FA7
+changed_members=PSX.EXE only
+changed_bytes=4
+top dialogue rows=36/52/68/84 -> 32/48/64/80
+bottom dialogue rows=166/182/198/214 -> 162/178/194/210
+choice cursor code+data/background/COMM.IMG/all DAT/UI=item=skill unchanged
+runtime=PENDING; TEST_ONLY

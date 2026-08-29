@@ -1,0 +1,15 @@
+V335 independent verification: PASS
+output_sha256=CF4FB2E518ADD6CE6B528C44D2AD4696DCD9DAF2940FE0A105F60B50C76C70D0
+changed_members=PSX.EXE only
+changed_bytes=4; offsets=0x418F8/0x41918/0x41970/0x41988; Expected-Write PASS
+top rows=32/48/64/80; fourth glyph bottom=95 PASS
+bottom rows=162/178/194/210; fourth glyph bottom=225 PASS
+dialogue setter and E6 16px pitch path unchanged PASS
+choice option text shares shifted dialogue state s0 PASS
+choice triangle cursor code/data unchanged; final coordinate runtime PENDING
+background/COMM.IMG/all DAT/UI/item/skill unchanged PASS
+top_initial: 8015C0F8 ori $a1, $zero, 0x20
+bottom_initial: 8015C118 ori $a1, $zero, 0xa2
+top_reset: 8015C170 ori $a1, $zero, 0x20
+bottom_reset: 8015C188 ori $a1, $zero, 0xa2
+runtime=PENDING V335 user cold boot; TEST_ONLY

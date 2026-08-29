@@ -1,0 +1,11 @@
+V335 cold-boot checklist
+
+- Boot V335.cue from power-off/cold boot; do not load a V333 savestate.
+- Confirm normal top dialogue text is exactly 4px higher.
+- Confirm normal bottom dialogue text is exactly 4px higher.
+- Confirm four dialogue rows fit vertically without clipping.
+- Confirm choice text is 4px higher while the triangle cursor remains unchanged.
+- Confirm dialogue backgrounds, portraits, UI, items, skills and battle HUD match V334.
+- Confirm dialogue progression and choices do not freeze.
+
+Until these pass, V335 remains TEST_ONLY and bible_current.txt stays unchanged.

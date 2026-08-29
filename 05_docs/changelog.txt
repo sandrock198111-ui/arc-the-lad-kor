@@ -1,3 +1,11 @@
+2026-08-29 - V335 전체 대화 글자 Y 4px 상향 시험판
+- 사용자 요청에 따라 선택지 삼각 커서는 직접 수정하지 않고, 위·아래 공통 대화 객체의 최초 설정 및 reset Y 네 곳만 수정했다. file `0x418F8/0x41970`은 `36→32`, `0x41918/0x41988`은 `166→162`이며 E6 줄 간격 16px는 유지된다.
+- 네 줄 시작 좌표는 위쪽 `36/52/68/84→32/48/64/80`, 아래쪽 `166/182/198/214→162/178/194/210`이다. 네 번째 16px 글리프의 하단은 각각 y=95/225가 된다.
+- `02_scripts/build_arc1_v335_dialogue_text_y_minus4.py`와 `verify_arc1_v335_dialogue_text_y_minus4.py`를 추가했다. V334 대비 변경 멤버는 `PSX.EXE` 하나, 실제 변경은 네 바이트뿐이며 COMM.IMG·모든 DAT·UI/아이템/기술·배경은 byte exact다.
+- E5 경로 `0x8016BE04`와 일반 선택지 글리프 경로 `0x8016BD94`가 동일한 대화 상태 `s0`를 공용 글리프 빌더에 넘기는 것을 확인했다. 따라서 선택지 글자도 상향되지만 삼각 커서 코드·데이터는 변경하지 않았다. 최종 커서 화면 좌표는 실기 PENDING이다.
+- full/delta SHA-256은 `CF4FB2E518ADD6CE6B528C44D2AD4696DCD9DAF2940FE0A105F60B50C76C70D0` / `02721A137139B359F84AC74BB3F0FC325A9E973EE746C6F94D6E72D36ECB4FA7`이다. `V335.bin`/cue SHA-256은 `4546ED8ED1A01F19FE53FB2D5CE65A4E5EEA0FEDEC28DA053D3A8E46D52B706C` / `5BD41599BAEB9EADBE13BCA7EE755EE52466F99AD554E61D1A4DABFEB51BFB2E`다.
+- Claude Code Sonnet 읽기 전용 독립 감사와 v104 ISO 검증에서 네 바이트 Expected-Write, 데이터 LBA 506/506, COMM 307/667/891, 패치 멤버 164/164 및 ISO 섹터 직접 readback이 통과했다. V335는 콜드부팅 전 TEST ONLY이며 `bible_current.txt`는 변경하지 않았다.
+
 2026-08-29 - V333 실행 불가 확정과 V334 MIPS 지연 슬롯 복구
 - 사용자가 제공한 V333 DUCCU 상태(`SHA-256 7A1C149997F258CBF5750BDBAF21FC05869085B17EA5838E5DEDE77D741CEF08`)는 검은 화면에서 current PC `0x8019B1DC`, next PC `0x8016B524`, Cause `0xD0000428`이었다. ExcCode 10과 BD=1로 `j 0x8016B524`의 지연 슬롯 `0x8019B1E0`에서 Reserved Instruction이 발생했음을 확정했다.
 - V333은 HUD `L` 문자열 `DF E7 DF F4`를 file `0x809E0`에 써서 실행 워드 `0xF4DFE7DF`를 만들었다. 따라서 V333은 `DO NOT USE`로 재분류하고 빌더·매니페스트·보고서의 런타임 상태도 FAIL로 고쳤다.
