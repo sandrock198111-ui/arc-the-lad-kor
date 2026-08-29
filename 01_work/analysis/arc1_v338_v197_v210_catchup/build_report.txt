@@ -1,0 +1,15 @@
+V338 TEST ONLY - V197-V210 catch-up + V337 runtime fixes
+base=arc1_v337_damage_remap_branch_fix_TEST_ONLY_2AB80515.zip
+output=arc1_v338_v197_v210_catchup_TEST_ONLY_29CEF6F5.zip
+sha256=29CEF6F5ADF4461C9263B39586222F7B88EEEE3DF0D6BEDFE5F0C5695509A777
+delta=arc1_v338_v197_v210_catchup_TEST_ONLY_delta_from_v337_DF2B9665.zip
+delta_sha256=DF2B9665D92E37813D5CDD737C0637838449B894024AA369C55ADE79560E94CA
+changed_members=21/S2014.DAT,21/S2022.DAT,4/S4011.DAT,4/S4021.DAT,4/S4022.DAT,4/S4031.DAT,COMM.IMG,PSX.EXE
+changed_bytes={"21/S2014.DAT": 24, "21/S2022.DAT": 8, "4/S4011.DAT": 28, "4/S4021.DAT": 24, "4/S4022.DAT": 46, "4/S4031.DAT": 16, "COMM.IMG": 60, "PSX.EXE": 71}
+soldier_labels=30 fixed length; preexisting 병사 2 preserved; terminators/controls unchanged
+V199_wording=개정비 5 -> 재정비 5 using existing physical556
+S4031=대체 무슨 일이야...?; 17B fixed room and terminator preserved
+quantity_y=+2 -> +1 dedicated path
+question=physical208/222 bitmap right 2px; global advance unchanged
+level_helper=0x801FF858, source file 0x8F380, 86/88B
+runtime=PENDING; TEST_ONLY

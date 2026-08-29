@@ -1,0 +1,13 @@
+﻿version,item,v337_status,v338_action,evidence
+V195-V196,level-up labels/suffix,REGRESSED,V338,remove six trailing 이; blank separator; dedicated digit converter; leading-space 상승
+V197,choice prompt width,PRESERVED,none,V337 bytes/control topology preserved
+V198,relocate overlong inline text to E2 slot,REJECTED,none,historical infinite repeat; V338 never relocates a body
+V199,jail wording and fixed body topology,PARTIAL REGRESSION,V338,five 개정비 spellings restored to approved 재정비 with equal-width DE52
+V200,jail wording,PRESENT/LATER EQUIVALENT,none,approved lines retained; no blind rollback of later wording
+V201,팔렌시아 spelling,PRESENT,none,current corpus uses approved spelling
+V202-V204,warehouse missed line and split,PRESENT,none,"V336 already restored 잠깐, 뭔가 / 이상해 with E6 fixed"
+V203,두목 / 세상의 미래,PRESENT,none,current text readback matches approved semantics
+V205-V206,zeroed structural script bytes,PRESENT,none,"1,539 historical restored offsets audited; V337 has zero regressions at those offsets"
+V207,skill strings moved away from code,PRESENT,none,V337 skill tables/wrappers remain live; forbidden code cave not reused
+V208-V210,"D/SD031 translation, slots, final controls",PRESENT,none,E2 owners and E4 1F/E4 3D/E6 topology retained
+new runtime,4/S4031 missed inline line,MISSING,V338,대체 무슨 일이야...?

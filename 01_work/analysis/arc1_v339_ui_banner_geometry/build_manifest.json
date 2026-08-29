@@ -1,0 +1,66 @@
+{
+  "build": "V339 TEST_ONLY UI/banner geometry",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v338_v197_v210_catchup_TEST_ONLY_29CEF6F5.zip",
+    "sha256": "29CEF6F5ADF4461C9263B39586222F7B88EEEE3DF0D6BEDFE5F0C5695509A777"
+  },
+  "original_art_source": {
+    "path": "E:\\korean\\00_original\\arc.zip",
+    "sha256": "AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v339_ui_banner_geometry_TEST_ONLY_FD442C74.zip",
+    "sha256": "FD442C7492F7BE2FCFAED5B3BE377D67FE9794B6767C356AC275D407F2030C17"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v339_ui_banner_geometry_TEST_ONLY_delta_from_v338_2FC2E472.zip",
+    "sha256": "2FC2E47281593C796CA604722407D03095B2971616946587E6183F6653ED5307"
+  },
+  "changed_members": [
+    "COMM.IMG",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "COMM.IMG": 25,
+    "PSX.EXE": 126
+  },
+  "name_windows": {
+    "entries": 155,
+    "formula_before": "12*N+15",
+    "formula_after": "14*glyphs+6*spaces+15",
+    "delta_min": -2,
+    "delta_max": 10,
+    "name_y": -1,
+    "equipment_quantity_screen_y": 0,
+    "consumable_quantity_screen_y": -1,
+    "consumable_relative_to_name": 1
+  },
+  "vertical": {
+    "skills": -1,
+    "bottom_battle_help": -1,
+    "item_and_skill_acquisition": -1,
+    "level_up_notice": -1
+  },
+  "quotes": {
+    "planes": [
+      738,
+      774
+    ],
+    "tokens": [
+      "DF 09",
+      "DF 2D"
+    ],
+    "art": "original Japanese COMM.IMG physical89/90, padded x+2 y+2",
+    "safety": {
+      "savestates_total": 757,
+      "savestates_read": 629,
+      "savestates_failed": 128,
+      "close_rect": "U64..79,V192..207",
+      "open_rect": "U208..223,V192..207",
+      "nontext_overlaps": 0
+    }
+  },
+  "preserved": "164 member sizes/order; all DAT; renderer advance; dialogue/control topology; protected 0x82938 pointer words; forbidden BSS cave",
+  "runtime": "PENDING user cold boot and eight-screen replay",
+  "release_status": "TEST ONLY; DO NOT DISTRIBUTE"
+}

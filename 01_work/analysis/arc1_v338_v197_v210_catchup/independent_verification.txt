@@ -1,0 +1,7 @@
+V338 independent static verification: PASS
+164 members; 8 changed members; Expected-Write exact
+text regions=8595; only six approved level-stat ends shorten by one byte
+soldier spacing=30; refit wording=5; missed S4031 fixed room=PASS
+quantity Y +1; question planes 208/222 only; sibling planes=PASS
+level helper exact 88B; single inbound JAL; delay slot/forbidden cave=PASS
+runtime=PENDING user cold boot

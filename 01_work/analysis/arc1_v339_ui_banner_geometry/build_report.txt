@@ -1,0 +1,14 @@
+V339 TEST ONLY - UI/banner geometry
+base=arc1_v338_v197_v210_catchup_TEST_ONLY_29CEF6F5.zip
+output=arc1_v339_ui_banner_geometry_TEST_ONLY_FD442C74.zip
+sha256=FD442C7492F7BE2FCFAED5B3BE377D67FE9794B6767C356AC275D407F2030C17
+delta=arc1_v339_ui_banner_geometry_TEST_ONLY_delta_from_v338_2FC2E472.zip
+delta_sha256=2FC2E47281593C796CA604722407D03095B2971616946587E6183F6653ED5307
+changed_members=COMM.IMG,PSX.EXE
+changed_bytes={"COMM.IMG": 25, "PSX.EXE": 126}
+name_width=155 entries, 14px glyph / 6px space / 15px margin
+name_y=-1; equipment quantity unchanged; consumable name+quantity=-1 with +1 relative offset
+bottom_help=-1; acquisition=-1; level_up=-1
+wording=모조상; 아크 매행동 MP회복; 링 열기
+quotes=planes 738/774; 629-state exact-rect nontext overlaps=0
+runtime=PENDING; TEST_ONLY

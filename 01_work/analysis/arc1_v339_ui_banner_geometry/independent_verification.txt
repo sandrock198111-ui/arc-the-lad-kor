@@ -1,0 +1,8 @@
+V339 independent static verification: PASS
+164 members; PSX.EXE+COMM.IMG only; Expected-Write exact
+width helper exact 64B; single external inbound J; 155/155 names independently recalculated
+name=-1; equipment quantity=unchanged; consumable quantity=-1 and remains name+1
+bottom help/acquisition/level-up=-1; E7 icons preserved; wording readback=PASS
+original 12px quote art -> planes 738/774 only; sibling planes=PASS
+exact current-16px nontext audit=629 states, 0 overlaps
+runtime=PENDING user cold boot

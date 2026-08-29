@@ -1,0 +1,38 @@
+{
+  "result": "PASS",
+  "archives": {
+    "arc1_v338_v197_v210_catchup_TEST_ONLY_29CEF6F5.zip": "29CEF6F5ADF4461C9263B39586222F7B88EEEE3DF0D6BEDFE5F0C5695509A777",
+    "arc1_v339_ui_banner_geometry_TEST_ONLY_FD442C74.zip": "FD442C7492F7BE2FCFAED5B3BE377D67FE9794B6767C356AC275D407F2030C17",
+    "arc1_v339_ui_banner_geometry_TEST_ONLY_delta_from_v338_2FC2E472.zip": "2FC2E47281593C796CA604722407D03095B2971616946587E6183F6653ED5307",
+    "arc.zip": "AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD"
+  },
+  "members": 164,
+  "changed_bytes": {
+    "PSX.EXE": 126,
+    "COMM.IMG": 25
+  },
+  "name_width_entries": 155,
+  "name_width_delta": {
+    "min": -2,
+    "max": 10
+  },
+  "geometry": {
+    "name_delta": -1,
+    "equipment_quantity_delta": 0,
+    "consumable_quantity_delta": -1,
+    "consumable_quantity_relative_to_name": 1
+  },
+  "quote_planes": [
+    738,
+    774
+  ],
+  "quote_nontext_audit": {
+    "states_read": 629,
+    "states_failed": 128,
+    "hits": {
+      "close738": 0,
+      "open774": 0
+    }
+  },
+  "runtime": "PENDING user cold boot"
+}

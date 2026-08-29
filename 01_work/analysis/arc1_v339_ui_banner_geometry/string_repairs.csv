@@ -1,0 +1,6 @@
+﻿scope,before,after,note
+equipment_name,가짜 상,모조상,name only moves -1; quantity screen Y preserved
+equipment_description,아크 매 행동 MP 회복,아크 매행동 MP회복,remove two spaces; keep 복 on line one
+battle_help,공격 / 연결 열기,공격 / 링 열기,E7 controller icons preserved
+item_acquisition,unbracketed,｢item｣ suffix,both opening and closing brackets restored
+skill_acquisition,unbracketed,｢skill｣ suffix,both opening and closing brackets restored

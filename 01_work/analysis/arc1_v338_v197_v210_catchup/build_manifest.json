@@ -1,0 +1,71 @@
+{
+  "build": "V338 TEST_ONLY V197-V210 catch-up + V337 runtime fixes",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v337_damage_remap_branch_fix_TEST_ONLY_2AB80515.zip",
+    "sha256": "2AB80515D70E84F34F83A919FC63F16AFDEDA57342FAE4F40180E841DCF3E856"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v338_v197_v210_catchup_TEST_ONLY_29CEF6F5.zip",
+    "sha256": "29CEF6F5ADF4461C9263B39586222F7B88EEEE3DF0D6BEDFE5F0C5695509A777"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v338_v197_v210_catchup_TEST_ONLY_delta_from_v337_DF2B9665.zip",
+    "sha256": "DF2B9665D92E37813D5CDD737C0637838449B894024AA369C55ADE79560E94CA"
+  },
+  "changed_members": [
+    "21/S2014.DAT",
+    "21/S2022.DAT",
+    "4/S4011.DAT",
+    "4/S4021.DAT",
+    "4/S4022.DAT",
+    "4/S4031.DAT",
+    "COMM.IMG",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "21/S2014.DAT": 24,
+    "21/S2022.DAT": 8,
+    "4/S4011.DAT": 28,
+    "4/S4021.DAT": 24,
+    "4/S4022.DAT": 46,
+    "4/S4031.DAT": 16,
+    "COMM.IMG": 60,
+    "PSX.EXE": 71
+  },
+  "soldier_labels": {
+    "repaired": 30,
+    "preexisting_spaced_preserved": 1,
+    "terminators_moved": 0
+  },
+  "wording": {
+    "개정비_to_재정비": 5,
+    "missed_inline": "대체 무슨 일이야...?",
+    "inline_room": 17
+  },
+  "quantity_y": {
+    "v337": 2,
+    "v338": 1,
+    "scope": "dedicated consumable quantity path"
+  },
+  "question": {
+    "planes": [
+      208,
+      222
+    ],
+    "shift_right_px": 2,
+    "advance_changed": false
+  },
+  "level_up": {
+    "particles_removed": 6,
+    "separator": "half-width blank",
+    "suffix": " leading-space 상승",
+    "helper_resident": "0x801FF858",
+    "helper_source_file": "0x8F380",
+    "helper_sha256": "8E4C879B5FB6DD34F4B6A7896E0F689E534113CE34247A0B6625AA9150F2FFCD",
+    "persistent_free_runtime_evidence": "six V337 states: 88B all zero, SHA256 10EEF285...F365",
+    "forbidden_scene_loader_cave": "0x801A9BD8 remains zero and unreachable"
+  },
+  "preserved": "all member sizes; all text region starts/ends and E2/E4/E5/E6 topology; V337 renderer/UI/choice/cursor/item/skill/damage fixes; resident copy size and heap boundary",
+  "runtime": "PENDING user cold boot and six-scene replay",
+  "release_status": "TEST ONLY; DO NOT DISTRIBUTE"
+}

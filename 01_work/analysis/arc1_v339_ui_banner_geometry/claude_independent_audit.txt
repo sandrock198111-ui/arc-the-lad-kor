@@ -1,0 +1,28 @@
+V339 Claude independent read-only audit - 2026-08-29
+
+Result: BLOCKER 0 / HIGH 0 / reproducible mismatches 0
+Runtime: PENDING user cold boot
+Files modified by Claude: none
+
+Method
+- Read AGENTS.md and the four required project documents first.
+- Read the complete V339 builder and verifier.
+- Did not trust or execute either script; independently checked hashes with PowerShell and decoded/recalculated the relevant bytes and MIPS-I words by hand.
+
+PASS
+- V338 full, V339 full/delta, original arc.zip, V339 BIN/CUE SHA-256 values all match the manifest and documentation.
+- All 16 width-helper words decode to 14px per ordinary glyph, 6px for A1 half-width space, and a final 15px margin. Branch delay-slot behavior was included in the calculation.
+- The five acquisition prefix/suffix pointer replacements match their little-endian OLD/NEW addresses and Expected-Write bytes.
+- Name, battle-help, acquisition, and level-notice instructions each implement exactly Y -1px.
+- `가짜 상→모조상`, `아크 매 행동 MP 회복→아크 매행동 MP회복`, and `연결 열기→링 열기` match the encoded tokens. E7 02/E7 05 icons remain unchanged.
+- Sampled name-width census rows independently reproduce both the old 12*N+15 and new 14/6/+15 formulas and their deltas.
+- The forbidden scene-loader/BSS cave and protected pointer word at file 0x82938 are guarded and outside the write envelope.
+
+Limitations
+- Claude's sandbox could not access DuckStation savestates outside E:\korean, so it could not independently rerun the 629-read/128-failed exact-rectangle nontext audit for physical 738/774.
+- Claude's session denied Python/Bash execution, so the audit used source review, PowerShell hashes, and manual byte/MIPS-I recomputation instead of executing the project scripts.
+- The primary Codex verifier independently reran the exact-rectangle audit locally and reported 629 states read, 128 failed, and 0 overlaps for both quote planes.
+
+Conclusion
+- No contradictory evidence was found in every independently reproducible area.
+- V339 remains TEST_ONLY until a cold boot verifies the requested UI geometry and regressions in-game.

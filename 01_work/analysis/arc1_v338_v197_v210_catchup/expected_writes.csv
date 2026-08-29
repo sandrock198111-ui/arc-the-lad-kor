@@ -1,0 +1,278 @@
+﻿member,offset,before,after,purpose
+21/S2014.DAT,0x45002,4A,A1,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45003,DD,4A,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45004,02,DD,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45005,A1,02,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45082,0B,A1,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45083,DD,0B,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45084,02,DD,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45085,A1,02,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45102,4A,A1,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45103,DD,4A,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45104,02,DD,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45105,A1,02,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45123,DD,DE,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45124,B4,52,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45202,0B,A1,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45203,DD,0B,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45204,02,DD,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45205,A1,02,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45607,DD,DE,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x45608,B4,52,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x47E5E,4A,A1,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x47E5F,DD,4A,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x47E60,02,DD,fixed-length soldier/wording catch-up
+21/S2014.DAT,0x47E61,A1,02,fixed-length soldier/wording catch-up
+21/S2022.DAT,0x45202,4A,A1,fixed-length soldier/wording catch-up
+21/S2022.DAT,0x45203,DD,4A,fixed-length soldier/wording catch-up
+21/S2022.DAT,0x45204,02,DD,fixed-length soldier/wording catch-up
+21/S2022.DAT,0x45205,A1,02,fixed-length soldier/wording catch-up
+21/S2022.DAT,0x45402,0B,A1,fixed-length soldier/wording catch-up
+21/S2022.DAT,0x45403,DD,0B,fixed-length soldier/wording catch-up
+21/S2022.DAT,0x45404,02,DD,fixed-length soldier/wording catch-up
+21/S2022.DAT,0x45405,A1,02,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45082,4A,A1,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45083,DD,4A,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45084,02,DD,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45085,A1,02,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45102,27,A1,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45103,DD,27,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45104,02,DD,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45105,A1,02,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45202,0B,A1,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45203,DD,0B,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45204,02,DD,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45205,A1,02,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45302,4A,A1,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45303,DD,4A,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45304,02,DD,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45305,A1,02,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45382,0B,A1,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45383,DD,0B,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45384,02,DD,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45385,A1,02,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45402,4A,A1,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45403,DD,4A,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45404,02,DD,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45405,A1,02,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45602,4A,A1,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45603,DD,4A,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45604,02,DD,fixed-length soldier/wording catch-up
+4/S4011.DAT,0x45605,A1,02,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x45004,DD,DE,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x45005,B4,52,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x45182,4A,A1,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x45183,DD,4A,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x45184,02,DD,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x45185,A1,02,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47994,4A,A1,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47995,DD,4A,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47996,02,DD,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47997,A1,02,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47A74,4A,A1,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47A75,DD,4A,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47A76,02,DD,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47A77,A1,02,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47AFC,0B,A1,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47AFD,DD,0B,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47AFE,02,DD,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47AFF,A1,02,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47B00,DD,DE,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47B01,B4,52,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47B4E,0B,A1,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47B4F,DD,0B,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47B50,02,DD,fixed-length soldier/wording catch-up
+4/S4021.DAT,0x47B51,A1,02,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45082,4A,A1,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45083,DD,4A,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45084,02,DD,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45085,A1,02,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45102,0B,A1,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45103,DD,0B,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45104,02,DD,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45105,A1,02,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45119,DD,DE,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x4511A,B4,52,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45182,4A,A1,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45183,DD,4A,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45184,02,DD,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45185,A1,02,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45202,4A,A1,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45203,DD,4A,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45204,02,DD,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45205,A1,02,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45282,4A,A1,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45283,DD,4A,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45284,02,DD,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45285,A1,02,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45382,4A,A1,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45383,DD,4A,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45384,02,DD,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45385,A1,02,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45402,0B,A1,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45403,DD,0B,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45404,02,DD,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45405,A1,02,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45502,0B,A1,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45503,DD,0B,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45504,02,DD,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x45505,A1,02,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x47988,4A,A1,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x47989,DD,4A,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x4798A,02,DD,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x4798B,A1,02,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x47C4C,4A,A1,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x47C4D,DD,4A,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x47C4E,02,DD,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x47C4F,A1,02,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x47D9C,0B,A1,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x47D9D,DD,0B,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x47D9E,02,DD,fixed-length soldier/wording catch-up
+4/S4022.DAT,0x47D9F,A1,02,fixed-length soldier/wording catch-up
+4/S4031.DAT,0x478EC,8E,37,missed S4031 inline translation
+4/S4031.DAT,0x478EE,2D,90,missed S4031 inline translation
+4/S4031.DAT,0x478EF,54,A1,missed S4031 inline translation
+4/S4031.DAT,0x478F0,26,5F,missed S4031 inline translation
+4/S4031.DAT,0x478F1,1E,DD,missed S4031 inline translation
+4/S4031.DAT,0x478F2,4B,A0,missed S4031 inline translation
+4/S4031.DAT,0x478F3,27,A1,missed S4031 inline translation
+4/S4031.DAT,0x478F4,29,6B,missed S4031 inline translation
+4/S4031.DAT,0x478F5,1F,DD,missed S4031 inline translation
+4/S4031.DAT,0x478F6,2D,01,missed S4031 inline translation
+4/S4031.DAT,0x478F7,35,49,missed S4031 inline translation
+4/S4031.DAT,0x478F8,DF,21,missed S4031 inline translation
+4/S4031.DAT,0x478F9,61,21,missed S4031 inline translation
+4/S4031.DAT,0x478FA,DF,21,missed S4031 inline translation
+4/S4031.DAT,0x478FB,61,D1,missed S4031 inline translation
+4/S4031.DAT,0x478FC,3C,A1,missed S4031 inline translation
+COMM.IMG,0xAF38,10,00,question-mark 2px side bearing
+COMM.IMG,0xAF39,51,50,question-mark 2px side bearing
+COMM.IMG,0xAF3B,62,73,question-mark 2px side bearing
+COMM.IMG,0xAF50,40,00,question-mark 2px side bearing
+COMM.IMG,0xAF51,54,50,question-mark 2px side bearing
+COMM.IMG,0xAF53,10,54,question-mark 2px side bearing
+COMM.IMG,0xB2B8,11,00,question-mark 2px side bearing
+COMM.IMG,0xB2B9,62,73,question-mark 2px side bearing
+COMM.IMG,0xB2BA,36,26,question-mark 2px side bearing
+COMM.IMG,0xB2BB,63,72,question-mark 2px side bearing
+COMM.IMG,0xB2BC,04,05,question-mark 2px side bearing
+COMM.IMG,0xB2D0,44,00,question-mark 2px side bearing
+COMM.IMG,0xB2D1,90,D4,question-mark 2px side bearing
+COMM.IMG,0xB2D2,C9,89,question-mark 2px side bearing
+COMM.IMG,0xB2D3,9C,D8,question-mark 2px side bearing
+COMM.IMG,0xB2D4,89,8D,question-mark 2px side bearing
+COMM.IMG,0xB638,11,00,question-mark 2px side bearing
+COMM.IMG,0xB639,62,73,question-mark 2px side bearing
+COMM.IMG,0xB63A,14,04,question-mark 2px side bearing
+COMM.IMG,0xB63B,41,50,question-mark 2px side bearing
+COMM.IMG,0xB63C,44,45,question-mark 2px side bearing
+COMM.IMG,0xB650,44,00,question-mark 2px side bearing
+COMM.IMG,0xB651,B0,F4,question-mark 2px side bearing
+COMM.IMG,0xB652,4B,0B,question-mark 2px side bearing
+COMM.IMG,0xB653,14,50,question-mark 2px side bearing
+COMM.IMG,0xB654,01,05,question-mark 2px side bearing
+COMM.IMG,0xB9BA,15,04,question-mark 2px side bearing
+COMM.IMG,0xB9BB,40,51,question-mark 2px side bearing
+COMM.IMG,0xB9D2,CF,8B,question-mark 2px side bearing
+COMM.IMG,0xB9D3,98,DC,question-mark 2px side bearing
+COMM.IMG,0xBD39,74,64,question-mark 2px side bearing
+COMM.IMG,0xBD3A,67,76,question-mark 2px side bearing
+COMM.IMG,0xBD3B,66,67,question-mark 2px side bearing
+COMM.IMG,0xBD51,40,00,question-mark 2px side bearing
+COMM.IMG,0xBD52,15,51,question-mark 2px side bearing
+COMM.IMG,0xBD53,11,15,question-mark 2px side bearing
+COMM.IMG,0xC0B9,10,00,question-mark 2px side bearing
+COMM.IMG,0xC0BA,01,10,question-mark 2px side bearing
+COMM.IMG,0xC0BB,00,01,question-mark 2px side bearing
+COMM.IMG,0xC0D1,40,00,question-mark 2px side bearing
+COMM.IMG,0xC0D2,04,40,question-mark 2px side bearing
+COMM.IMG,0xC0D3,88,8C,question-mark 2px side bearing
+COMM.IMG,0xC439,10,00,question-mark 2px side bearing
+COMM.IMG,0xC43A,01,10,question-mark 2px side bearing
+COMM.IMG,0xC43B,00,01,question-mark 2px side bearing
+COMM.IMG,0xC451,40,00,question-mark 2px side bearing
+COMM.IMG,0xC452,04,40,question-mark 2px side bearing
+COMM.IMG,0xC453,80,84,question-mark 2px side bearing
+COMM.IMG,0xCB39,10,00,question-mark 2px side bearing
+COMM.IMG,0xCB3A,01,10,question-mark 2px side bearing
+COMM.IMG,0xCB3B,00,01,question-mark 2px side bearing
+COMM.IMG,0xCB51,E8,A8,question-mark 2px side bearing
+COMM.IMG,0xCB52,8E,CA,question-mark 2px side bearing
+COMM.IMG,0xCB53,88,8C,question-mark 2px side bearing
+COMM.IMG,0xCEB9,10,00,question-mark 2px side bearing
+COMM.IMG,0xCEBA,01,10,question-mark 2px side bearing
+COMM.IMG,0xCEBB,20,21,question-mark 2px side bearing
+COMM.IMG,0xCED1,40,00,question-mark 2px side bearing
+COMM.IMG,0xCED2,04,40,question-mark 2px side bearing
+COMM.IMG,0xCED3,00,04,question-mark 2px side bearing
+PSX.EXE,0x45C64,30,16,level-up chain or consumable quantity Y
+PSX.EXE,0x45C65,79,FE,level-up chain or consumable quantity Y
+PSX.EXE,0x45C66,05,07,level-up chain or consumable quantity Y
+PSX.EXE,0x8060B,03,00,level-up chain or consumable quantity Y
+PSX.EXE,0x80785,03,00,level-up chain or consumable quantity Y
+PSX.EXE,0x80A40,02,01,level-up chain or consumable quantity Y
+PSX.EXE,0x813E5,03,00,level-up chain or consumable quantity Y
+PSX.EXE,0x815A3,03,00,level-up chain or consumable quantity Y
+PSX.EXE,0x81613,03,00,level-up chain or consumable quantity Y
+PSX.EXE,0x81A1E,03,00,level-up chain or consumable quantity Y
+PSX.EXE,0x82538,A7,F0,level-up chain or consumable quantity Y
+PSX.EXE,0x82539,B0,FC,level-up chain or consumable quantity Y
+PSX.EXE,0x854D4,9C,A1,level-up chain or consumable quantity Y
+PSX.EXE,0x854F0,9C,A1,level-up chain or consumable quantity Y
+PSX.EXE,0x854F1,CD,8B,level-up chain or consumable quantity Y
+PSX.EXE,0x854F2,8E,69,level-up chain or consumable quantity Y
+PSX.EXE,0x8F382,00,82,resident level-up digit converter
+PSX.EXE,0x8F383,00,90,resident level-up digit converter
+PSX.EXE,0x8F384,00,20,resident level-up digit converter
+PSX.EXE,0x8F385,00,80,resident level-up digit converter
+PSX.EXE,0x8F386,00,09,resident level-up digit converter
+PSX.EXE,0x8F387,00,3C,resident level-up digit converter
+PSX.EXE,0x8F388,00,0E,resident level-up digit converter
+PSX.EXE,0x8F38A,00,40,resident level-up digit converter
+PSX.EXE,0x8F38B,00,10,resident level-up digit converter
+PSX.EXE,0x8F38C,00,D0,resident level-up digit converter
+PSX.EXE,0x8F38D,00,FF,resident level-up digit converter
+PSX.EXE,0x8F38E,00,43,resident level-up digit converter
+PSX.EXE,0x8F38F,00,24,resident level-up digit converter
+PSX.EXE,0x8F390,00,0A,resident level-up digit converter
+PSX.EXE,0x8F392,00,68,resident level-up digit converter
+PSX.EXE,0x8F393,00,2C,resident level-up digit converter
+PSX.EXE,0x8F394,00,08,resident level-up digit converter
+PSX.EXE,0x8F397,00,11,resident level-up digit converter
+PSX.EXE,0x8F398,00,A4,resident level-up digit converter
+PSX.EXE,0x8F399,00,F8,resident level-up digit converter
+PSX.EXE,0x8F39A,00,29,resident level-up digit converter
+PSX.EXE,0x8F39B,00,25,resident level-up digit converter
+PSX.EXE,0x8F39C,00,21,resident level-up digit converter
+PSX.EXE,0x8F39D,00,48,resident level-up digit converter
+PSX.EXE,0x8F39E,00,23,resident level-up digit converter
+PSX.EXE,0x8F39F,00,01,resident level-up digit converter
+PSX.EXE,0x8F3A2,00,22,resident level-up digit converter
+PSX.EXE,0x8F3A3,00,91,resident level-up digit converter
+PSX.EXE,0x8F3AA,00,82,resident level-up digit converter
+PSX.EXE,0x8F3AB,00,A0,resident level-up digit converter
+PSX.EXE,0x8F3AC,00,01,resident level-up digit converter
+PSX.EXE,0x8F3AE,00,84,resident level-up digit converter
+PSX.EXE,0x8F3AF,00,24,resident level-up digit converter
+PSX.EXE,0x8F3B0,00,F3,resident level-up digit converter
+PSX.EXE,0x8F3B1,00,FF,resident level-up digit converter
+PSX.EXE,0x8F3B3,00,10,resident level-up digit converter
+PSX.EXE,0x8F3B8,00,E1,resident level-up digit converter
+PSX.EXE,0x8F3BA,00,42,resident level-up digit converter
+PSX.EXE,0x8F3BB,00,24,resident level-up digit converter
+PSX.EXE,0x8F3BC,00,FA,resident level-up digit converter
+PSX.EXE,0x8F3BD,00,FF,resident level-up digit converter
+PSX.EXE,0x8F3BF,00,10,resident level-up digit converter
+PSX.EXE,0x8F3C4,00,08,resident level-up digit converter
+PSX.EXE,0x8F3C6,00,E0,resident level-up digit converter
+PSX.EXE,0x8F3C7,00,03,resident level-up digit converter
+PSX.EXE,0x8F3CC,00,91,resident level-up digit converter
+PSX.EXE,0x8F3CD,00,4A,resident level-up digit converter
+PSX.EXE,0x8F3CE,00,0B,resident level-up digit converter
+PSX.EXE,0x8F3CF,00,27,resident level-up digit converter
+PSX.EXE,0x8F3D0,00,57,resident level-up digit converter
+PSX.EXE,0x8F3D1,00,9E,resident level-up digit converter
+PSX.EXE,0x8F3D2,00,9F,resident level-up digit converter
+PSX.EXE,0x8F3D3,00,9A,resident level-up digit converter
+PSX.EXE,0x8F3D4,00,10,resident level-up digit converter
+PSX.EXE,0x8F3D5,00,08,resident level-up digit converter

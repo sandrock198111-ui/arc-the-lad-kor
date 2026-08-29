@@ -1,0 +1,7 @@
+﻿state,observed,v338_fix
+1,병사2 attached,space every remaining soldier label
+2,병사3 attached,space every remaining soldier label
+3,quantity Y +2 looks low,change dedicated helper to +1
+4,최대 체력이)어상승,repair particle/separator/digit/suffix chain
+5,garbled untranslated S4031 line,대체 무슨 일이야...?
+6,question mark too close,shift both live ? bitmaps right 2px

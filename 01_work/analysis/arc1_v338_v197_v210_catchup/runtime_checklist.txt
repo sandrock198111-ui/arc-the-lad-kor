@@ -1,0 +1,10 @@
+V338 cold-boot checklist
+
+- Start V338.cue from power-off; do not load an old emulator save state.
+- Replay the supplied six scenes. Confirm every 병사 1/2/3 label has a gap.
+- Confirm item quantity is one pixel below the V335/V337 baseline, not two.
+- Trigger level-up: expect '최대 체력 3 상승' style output, including multi-digit values.
+- Confirm the missed line reads '대체 무슨 일이야...?'.
+- Confirm every '?' has visible left side bearing and normal following spacing.
+- Recheck choices, warehouse, D/SD031 Gogen scene, skill/item names, icons, damage digits, world map.
+- Report any freeze/repeat immediately; no V338 body or terminator should have moved.

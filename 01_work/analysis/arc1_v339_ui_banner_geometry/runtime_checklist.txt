@@ -1,0 +1,11 @@
+V339 cold-boot checklist
+
+- Start V339.cue from power-off; do not load a V338 state into V339.
+- Equipment: expect 모조상; equipment name 1px up; quantity 01 at its V338 Y.
+- Consumable: name and quantity both 1px up; quantity remains 1px below name.
+- Skill: name 1px up and brown bar sized to actual 14px/6px text width.
+- Confirm long/short item, equipment, and skill bars end with consistent padding.
+- Confirm description reads 아크 매행동 MP회복 with 복 on the first line.
+- Confirm bottom help reads 링 열기 and both controller icons remain visible.
+- Trigger item acquisition, skill acquisition, and level-up: text 1px up and ｢ ｣ visible.
+- Recheck dialogue, choices, status numbers, damage, world map, and loading screens for regression.

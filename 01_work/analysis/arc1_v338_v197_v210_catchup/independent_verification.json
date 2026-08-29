@@ -1,0 +1,37 @@
+{
+  "result": "PASS",
+  "archives": {
+    "arc1_v337_damage_remap_branch_fix_TEST_ONLY_2AB80515.zip": "2AB80515D70E84F34F83A919FC63F16AFDEDA57342FAE4F40180E841DCF3E856",
+    "arc1_v338_v197_v210_catchup_TEST_ONLY_29CEF6F5.zip": "29CEF6F5ADF4461C9263B39586222F7B88EEEE3DF0D6BEDFE5F0C5695509A777",
+    "arc1_v338_v197_v210_catchup_TEST_ONLY_delta_from_v337_DF2B9665.zip": "DF2B9665D92E37813D5CDD737C0637838449B894024AA369C55ADE79560E94CA"
+  },
+  "members": 164,
+  "changed_bytes": {
+    "21/S2014.DAT": 24,
+    "21/S2022.DAT": 8,
+    "4/S4011.DAT": 28,
+    "4/S4021.DAT": 24,
+    "4/S4022.DAT": 46,
+    "4/S4031.DAT": 16,
+    "COMM.IMG": 60,
+    "PSX.EXE": 71
+  },
+  "text_regions": {
+    "v337": "B5738225DEF9DAB650974520C0424E35CCB53FFC59EB403B498FF0F7E30BC764",
+    "v338": "82A58955B8A066A12AE43D4033CB1CEBA12011A2FF55CD3A718080BEAA227BF7",
+    "count": 8595
+  },
+  "soldier_repairs": 30,
+  "refit_repairs": 5,
+  "quantity_y_delta": 1,
+  "question_planes": [
+    208,
+    222
+  ],
+  "level_helper": {
+    "ram": "0x801ff858",
+    "bytes": 88,
+    "inbound": 1
+  },
+  "runtime": "PENDING user cold boot"
+}

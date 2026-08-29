@@ -1,0 +1,152 @@
+﻿member,offset,before,after,purpose
+COMM.IMG,0x2A723,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2A76C,00,44,restore 16px corner-bracket plane
+COMM.IMG,0x2A76D,33,77,restore 16px corner-bracket plane
+COMM.IMG,0x2AAA3,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2AAEC,80,84,restore 16px corner-bracket plane
+COMM.IMG,0x2AE23,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2AE6C,33,37,restore 16px corner-bracket plane
+COMM.IMG,0x2B1A3,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2B1EC,80,84,restore 16px corner-bracket plane
+COMM.IMG,0x2B523,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2B56C,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2B8A3,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2B8EC,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2BC23,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2BC6C,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2BFA3,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2BFEC,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2C323,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2C36C,B9,BD,restore 16px corner-bracket plane
+COMM.IMG,0x2C6A3,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2C6EC,21,25,restore 16px corner-bracket plane
+COMM.IMG,0x2CA21,00,40,restore 16px corner-bracket plane
+COMM.IMG,0x2CA22,00,44,restore 16px corner-bracket plane
+COMM.IMG,0x2CA23,00,04,restore 16px corner-bracket plane
+COMM.IMG,0x2CA6C,AB,AF,restore 16px corner-bracket plane
+PSX.EXE,0x449C8,16,15,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x44F38,1E,1D,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x49888,C9,8E,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x49889,AC,6C,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x4988A,05,06,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x51C68,21,FF,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x51C69,28,FF,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x51C6A,40,45,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x51C6B,00,24,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x51C98,E8,32,tail-jump shared name width to leaf helper
+PSX.EXE,0x51C99,FF,74,tail-jump shared name width to leaf helper
+PSX.EXE,0x51C9A,BD,06,tail-jump shared name width to leaf helper
+PSX.EXE,0x51C9B,27,08,tail-jump shared name width to leaf helper
+PSX.EXE,0x51C9C,10,00,tail-jump shared name width to leaf helper
+PSX.EXE,0x51C9E,BF,00,tail-jump shared name width to leaf helper
+PSX.EXE,0x51C9F,AF,00,tail-jump shared name width to leaf helper
+PSX.EXE,0x51FB0,0C,0B,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x80696,0C,55,equipment name 모조상
+PSX.EXE,0x80697,DE,90,equipment name 모조상
+PSX.EXE,0x80698,B9,8B,equipment name 모조상
+PSX.EXE,0x80699,A1,00,equipment name 모조상
+PSX.EXE,0x8069A,8B,00,equipment name 모조상
+PSX.EXE,0x80958,DD,DE,battle help 링 열기 with E7 tokens preserved
+PSX.EXE,0x80959,AD,54,battle help 링 열기 with E7 tokens preserved
+PSX.EXE,0x8095A,DD,A1,battle help 링 열기 with E7 tokens preserved
+PSX.EXE,0x8095B,47,DD,battle help 링 열기 with E7 tokens preserved
+PSX.EXE,0x8095C,A1,89,battle help 링 열기 with E7 tokens preserved
+PSX.EXE,0x8095D,DD,24,battle help 링 열기 with E7 tokens preserved
+PSX.EXE,0x8095E,89,00,battle help 링 열기 with E7 tokens preserved
+PSX.EXE,0x8095F,24,00,battle help 링 열기 with E7 tokens preserved
+PSX.EXE,0x81DF7,A1,DD,compact description to keep 복 on first line
+PSX.EXE,0x81DF8,DD,31,compact description to keep 복 on first line
+PSX.EXE,0x81DF9,31,DD,compact description to keep 복 on first line
+PSX.EXE,0x81DFA,DD,32,compact description to keep 복 on first line
+PSX.EXE,0x81DFB,32,A1,compact description to keep 복 on first line
+PSX.EXE,0x81DFC,A1,DF,compact description to keep 복 on first line
+PSX.EXE,0x81DFD,DF,0B,compact description to keep 복 on first line
+PSX.EXE,0x81DFE,0B,DE,compact description to keep 복 on first line
+PSX.EXE,0x81DFF,DE,07,compact description to keep 복 on first line
+PSX.EXE,0x81E00,07,7A,compact description to keep 복 on first line
+PSX.EXE,0x81E01,A1,DD,compact description to keep 복 on first line
+PSX.EXE,0x81E02,7A,9F,compact description to keep 복 on first line
+PSX.EXE,0x81E03,DD,00,compact description to keep 복 on first line
+PSX.EXE,0x81E04,9F,00,compact description to keep 복 on first line
+PSX.EXE,0x82470,64,08,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x82471,CC,D1,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x82474,30,0B,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x82475,AA,D1,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x82550,6F,08,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x82551,D0,D1,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x82554,BF,19,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x82555,C2,D1,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x82558,5A,24,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x82559,D0,D1,targeted UI pointer or one-pixel geometry
+PSX.EXE,0x828C8,00,21,real 14px/6px name-width helper
+PSX.EXE,0x828C9,00,18,real 14px/6px name-width helper
+PSX.EXE,0x828CE,00,82,real 14px/6px name-width helper
+PSX.EXE,0x828CF,00,90,real 14px/6px name-width helper
+PSX.EXE,0x828D0,00,01,real 14px/6px name-width helper
+PSX.EXE,0x828D2,00,84,real 14px/6px name-width helper
+PSX.EXE,0x828D3,00,24,real 14px/6px name-width helper
+PSX.EXE,0x828D4,00,0A,real 14px/6px name-width helper
+PSX.EXE,0x828D6,00,40,real 14px/6px name-width helper
+PSX.EXE,0x828D7,00,10,real 14px/6px name-width helper
+PSX.EXE,0x828D8,00,DD,real 14px/6px name-width helper
+PSX.EXE,0x828DA,00,48,real 14px/6px name-width helper
+PSX.EXE,0x828DB,00,2C,real 14px/6px name-width helper
+PSX.EXE,0x828DC,00,01,real 14px/6px name-width helper
+PSX.EXE,0x828DE,00,08,real 14px/6px name-width helper
+PSX.EXE,0x828DF,00,39,real 14px/6px name-width helper
+PSX.EXE,0x828E0,00,21,real 14px/6px name-width helper
+PSX.EXE,0x828E1,00,20,real 14px/6px name-width helper
+PSX.EXE,0x828E2,00,88,real 14px/6px name-width helper
+PSX.EXE,0x828E4,00,5F,real 14px/6px name-width helper
+PSX.EXE,0x828E5,00,FF,real 14px/6px name-width helper
+PSX.EXE,0x828E6,00,48,real 14px/6px name-width helper
+PSX.EXE,0x828E7,00,24,real 14px/6px name-width helper
+PSX.EXE,0x828E8,00,03,real 14px/6px name-width helper
+PSX.EXE,0x828EB,00,11,real 14px/6px name-width helper
+PSX.EXE,0x828EC,00,0E,real 14px/6px name-width helper
+PSX.EXE,0x828EE,00,63,real 14px/6px name-width helper
+PSX.EXE,0x828EF,00,24,real 14px/6px name-width helper
+PSX.EXE,0x828F0,00,F6,real 14px/6px name-width helper
+PSX.EXE,0x828F1,00,FF,real 14px/6px name-width helper
+PSX.EXE,0x828F3,00,10,real 14px/6px name-width helper
+PSX.EXE,0x828F8,00,F4,real 14px/6px name-width helper
+PSX.EXE,0x828F9,00,FF,real 14px/6px name-width helper
+PSX.EXE,0x828FB,00,10,real 14px/6px name-width helper
+PSX.EXE,0x828FC,00,F8,real 14px/6px name-width helper
+PSX.EXE,0x828FD,00,FF,real 14px/6px name-width helper
+PSX.EXE,0x828FE,00,63,real 14px/6px name-width helper
+PSX.EXE,0x828FF,00,24,real 14px/6px name-width helper
+PSX.EXE,0x82900,00,08,real 14px/6px name-width helper
+PSX.EXE,0x82902,00,E0,real 14px/6px name-width helper
+PSX.EXE,0x82903,00,03,real 14px/6px name-width helper
+PSX.EXE,0x82904,00,0F,real 14px/6px name-width helper
+PSX.EXE,0x82906,00,62,real 14px/6px name-width helper
+PSX.EXE,0x82907,00,24,real 14px/6px name-width helper
+PSX.EXE,0x82908,00,DF,bracketed item/skill acquisition strings
+PSX.EXE,0x82909,00,2D,bracketed item/skill acquisition strings
+PSX.EXE,0x8290B,00,DF,bracketed item/skill acquisition strings
+PSX.EXE,0x8290C,00,09,bracketed item/skill acquisition strings
+PSX.EXE,0x8290D,00,36,bracketed item/skill acquisition strings
+PSX.EXE,0x8290E,00,A1,bracketed item/skill acquisition strings
+PSX.EXE,0x8290F,00,85,bracketed item/skill acquisition strings
+PSX.EXE,0x82910,00,0E,bracketed item/skill acquisition strings
+PSX.EXE,0x82911,00,A1,bracketed item/skill acquisition strings
+PSX.EXE,0x82912,00,6F,bracketed item/skill acquisition strings
+PSX.EXE,0x82913,00,61,bracketed item/skill acquisition strings
+PSX.EXE,0x82914,00,2D,bracketed item/skill acquisition strings
+PSX.EXE,0x82915,00,07,bracketed item/skill acquisition strings
+PSX.EXE,0x82916,00,01,bracketed item/skill acquisition strings
+PSX.EXE,0x82917,00,21,bracketed item/skill acquisition strings
+PSX.EXE,0x82919,00,DF,bracketed item/skill acquisition strings
+PSX.EXE,0x8291A,00,09,bracketed item/skill acquisition strings
+PSX.EXE,0x8291B,00,36,bracketed item/skill acquisition strings
+PSX.EXE,0x8291C,00,A1,bracketed item/skill acquisition strings
+PSX.EXE,0x8291D,00,DD,bracketed item/skill acquisition strings
+PSX.EXE,0x8291E,00,93,bracketed item/skill acquisition strings
+PSX.EXE,0x8291F,00,DE,bracketed item/skill acquisition strings
+PSX.EXE,0x82920,00,15,bracketed item/skill acquisition strings
+PSX.EXE,0x82921,00,01,bracketed item/skill acquisition strings
+PSX.EXE,0x82922,00,21,bracketed item/skill acquisition strings
+PSX.EXE,0x82924,00,DF,bracketed item/skill acquisition strings
+PSX.EXE,0x82925,00,09,bracketed item/skill acquisition strings
+PSX.EXE,0x82926,00,4D,bracketed item/skill acquisition strings
