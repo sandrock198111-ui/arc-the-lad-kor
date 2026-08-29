@@ -1,3 +1,14 @@
+2026-08-29 | V336 잔여 UI·선택지·데미지 복구와 V337 분기 범위 수정 | 필수 문서/계보 대조, py_compile·2회 결정적 빌드, 독립 verifier/Expected-Write/130,963 텍스트 비트맵 대조, Claude Code Sonnet 2회 읽기 전용 감사, MIPS 목표 주소·delay slot 시뮬레이션, mkpsxiso v104/LBA/164멤버 readback, check_build 계보 대조 | V336 STATIC FAIL / V337 STATIC PATCH PASS / INHERITED DAT DEBT FAIL / V337 RUNTIME PENDING.
+- V335를 해시 고정 기준으로 사용했다. V336은 `1/S1023.DAT`, `21/S2042.DAT`, `4/S4011.DAT`, `4/S4021.DAT`, `COMM.IMG`, `PSX.EXE` 6멤버만 바꾸어 선택지 마지막 줄, L/R의 L, `병사 2`, v204 승인 창고 대사, 55개 지역명 폭, 장비·소모품명 X−4, 소모품 수량 Y+2, 네이티브 데미지 숫자 오염을 대상으로 삼았다.
+- 선택지 E5 가상 들여쓰기 글리프는 nontext-safe blank physical 746으로 바꿨고 삼각 커서 코드는 유지했다. 슬롯 0/2/3은 `어머니: 아버지 편지 볼래?` / `다음` / `읽는다`이며 +0x7F 메타데이터 5/5/1과 E5/E6 토폴로지를 보존했다. `병사2`는 그 슬롯 하나만 `병사 2`로, 창고 대사는 승인된 `잠깐, 뭔가` / `이상해.`로 고쳤다.
+- 지역명 전용 `0x8016C5A4` 폭 계산만 `12*n→14*n`으로 바꿨다. 장비·소모품명 전용 호출 두 곳만 packet X−4 wrapper로 우회하고, 소모품 수량 호출 하나만 Y+2 후 stock으로 복귀시켰다. 다른 숫자·대사·기술명 호출은 diff 밖이다.
+- COMM의 네이티브 13칸 데미지 숫자 뱅크를 원본과 13/13 복구했다. 텍스트 804..819는 161..176으로 옮기고 기존 168..170은 741..743에 보존했으며, old blank owner는 116으로 보냈다. physical160은 반각 공백 특수 전진 때문에 배제했다. 정적 텍스트 130,963건 중 remap 대상 1,381건의 화면 비트맵이 전부 동일했다.
+- 첫 Claude 감사가 V336 file `0x80A80`/RAM `0x8019B280`의 `beq 0x112040A8`이 16비트 분기 범위를 넘어 실제 `0x801AB524`로 감기는 BLOCKER를 발견했다. 일반 글리프 대부분이 이 경로를 타므로 V336은 `INVALID / DO NOT RUN`으로 재분류했고 검증기도 해당 목표를 계산해 실패하도록 고쳤다.
+- V337은 그 분기만 `0x1120FFFB`로 바꾸어 local `0x8019B270`의 기존 `j 0x8016B524`로 보낸다. V336 대비 변경 멤버는 `PSX.EXE` 하나, 변경 바이트는 file `0x80A80/0x80A81` 2개뿐이다. 비대상은 local jump로, 804..819는 `addiu -643` 뒤 복귀하며 두 delay slot은 NOP임을 독립 시뮬레이션했다.
+- V337 full/delta SHA-256은 `2AB80515D70E84F34F83A919FC63F16AFDEDA57342FAE4F40180E841DCF3E856` / `0CC5D8EA9CF332A6761986E7EBD77FE5EE135693C6C0FD777D55CC87D5A94780`이다. `V337.bin`/cue SHA-256은 `840A7677673D81EC53DBA7BE0B5A9C891CBA5542E63A583E11DCD7DDE21D138B` / `7BBCF374743DEF82286F456A43D0FA8DDE496D73B64FA335A14ECF372292D59E`다.
+- v104 디스크는 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481·587776B, 패치 멤버 164/164 readback PASS다. 두 번째 Claude 감사도 ZIP→BIN의 수정 시퀀스 단일 존재와 V335→V336→V337 해시 체인을 확인해 BLOCKER/HIGH 0으로 판정했다.
+- `check_build.py`는 상속 부채(선택지 폭 75, 마커 위치 2, 기존 3줄 제한 초과 18)를 그대로 냈다. V337은 V336 대비 PSX 2바이트만 바꾸므로 신규 DAT 부채가 아니다. 콜드부팅에서 부팅·일반 글자, 선택지/L/병사/창고/지역명, 아이템 좌표·수량, 데미지 숫자, 다른 UI 회귀를 확인할 때까지 V337은 TEST ONLY이며 런타임 PENDING이다.
+
 2026-08-29 | V335 전체 대화 글자 Y −4px | V334 MIPS 호출 흐름, py_compile·2회 결정적 빌드, 독립 verifier/Capstone/Expected-Write, Claude Code Sonnet 읽기 전용 감사, mkpsxiso v104/LBA/직접 섹터 readback, check_build 계보 대조 | STATIC PATCH PASS / INHERITED DAT DEBT FAIL / RUNTIME PENDING.
 - V334를 해시 고정 기준으로 사용했다. PSX.EXE file `0x418F8/0x41918/0x41970/0x41988` 네 즉시값만 각각 `0x24/0xA6/0x24/0xA6→0x20/0xA2/0x20/0xA2`로 바뀌었고 다른 바이트 변화는 0건이다.
 - `0x8016B880`은 a1을 대화 상태 +0x20에 저장하고 `0x8016B418`로 active Y를 설정한다. E6는 H=16과 spacing=0을 더하므로 위쪽 네 줄은 y=32/48/64/80, 아래쪽은 162/178/194/210으로 독립 재계산됐다.

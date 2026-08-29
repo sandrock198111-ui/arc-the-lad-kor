@@ -1,0 +1,39 @@
+{
+  "build": "V337 TEST_ONLY V336 damage-remap branch-range repair",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v336_ui_text_native_damage_repair_TEST_ONLY_28C9A039.zip",
+    "sha256": "28C9A03986B549DD62B4B1517815327DDC52E776770221630557B360F0B0C0F4",
+    "status": "INVALID historical base; wrapped branch targets 0x801AB524"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v337_damage_remap_branch_fix_TEST_ONLY_2AB80515.zip",
+    "sha256": "2AB80515D70E84F34F83A919FC63F16AFDEDA57342FAE4F40180E841DCF3E856"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v337_damage_remap_branch_fix_TEST_ONLY_delta_from_v336_0CC5D8EA.zip",
+    "sha256": "0CC5D8EA9CF332A6761986E7EBD77FE5EE135693C6C0FD777D55CC87D5A94780"
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 2
+  },
+  "fixed_branch": {
+    "file_offset": "0x80A80",
+    "ram_address": "0x8019B280",
+    "before_word": "0x112040A8",
+    "before_actual_target": "0x801AB524",
+    "after_word": "0x1120FFFB",
+    "after_target": "0x8019B270",
+    "local_jump_target": "0x8016B524"
+  },
+  "control_flow": {
+    "unmapped_glyph": "branch to local return jump, then 0x8016B524",
+    "source_804_819": "fall through, addiu -643, then 0x8016B524",
+    "delay_slots": "conditional and both return jumps remain NOP"
+  },
+  "preserved": "all V336 UI/text/location/item/count/damage payloads, COMM.IMG, all DAT, all non-PSX members, and every PSX byte outside the branch immediate",
+  "runtime": "PENDING user cold boot",
+  "release_status": "TEST ONLY; DO NOT DISTRIBUTE"
+}

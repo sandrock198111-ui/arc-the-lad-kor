@@ -1,0 +1,16 @@
+V336 INVALID - DO NOT RUN - superseded by V337
+fatal_common_gate_branch=0x8019B280 word 0x112040A8 -> actual 0x801AB524 (required 0x8016B524)
+V336 TEST ONLY - UI/text/native damage repair
+base=arc1_v335_dialogue_text_y_minus4_TEST_ONLY_CF4FB2E5.zip
+output=arc1_v336_ui_text_native_damage_repair_TEST_ONLY_28C9A039.zip
+sha256=28C9A03986B549DD62B4B1517815327DDC52E776770221630557B360F0B0C0F4
+delta=arc1_v336_ui_text_native_damage_repair_TEST_ONLY_delta_from_v335_FAF7E785.zip
+delta_sha256=FAF7E7854AEABB7CB04E96B32DFF1226194F0F883ABF324653C3618F39604B7D
+changed_members=1/S1023.DAT,21/S2042.DAT,4/S4011.DAT,4/S4021.DAT,COMM.IMG,PSX.EXE
+changed_bytes=1/S1023.DAT:22,21/S2042.DAT:2,4/S4011.DAT:18,4/S4021.DAT:31,COMM.IMG:792,PSX.EXE:155
+text_bitmap_comparisons=130963 affected=47
+choice=short prompt + 다음 + 읽는다; E5 blank index 746; triangle unchanged
+LR=L restored; 병사2=병사 2; warehouse=v204 approved two lines
+location_width=14*n; item names dx=-4; consumable quantity dy=+2
+native_damage=13/13 cells original; text 804..819->161..176; old 168..170->741..743
+runtime=BLOCKED; DO NOT RUN; use V337

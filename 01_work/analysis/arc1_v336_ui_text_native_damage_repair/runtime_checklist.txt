@@ -1,0 +1,17 @@
+V336 INVALID - DO NOT COLD BOOT - use V337
+
+The common glyph-remap BEQ at 0x8019B280 wraps to unmapped 0x801AB524.
+The former checklist is retained below only as historical context.
+
+V336 cold-boot checklist (superseded)
+
+- Cold boot V336.cue; never load an older-build savestate.
+- S1023: prompt stays on one row, choices show 괜찮아 / 읽는다, blank prefixes are invisible, triangle remains aligned.
+- Help: L/R button label shows both L and R.
+- Dialogue: 병사 2 has a gap; warehouse line is 잠깐, 뭔가 / 이상해.
+- Visit several maps: every full location name appears, not only its final character.
+- Equipment and consumable names are 4px left; consumable count is 2px lower; other battle/UI numbers do not move.
+- Damage values use clean native digits with no Hangul/odd glyphs.
+- Dialogue, skill/config screens, icons, combat progression and loading match V335 otherwise.
+
+Until these pass, V336 remains TEST_ONLY and bible_current.txt stays unchanged.

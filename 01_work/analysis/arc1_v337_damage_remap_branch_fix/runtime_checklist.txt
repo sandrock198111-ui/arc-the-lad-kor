@@ -1,0 +1,9 @@
+V337 cold-boot checklist
+
+- Do not boot V336; start V337.cue from power-off.
+- Confirm BIOS, title, load screen, and gameplay all progress without a black screen.
+- Confirm ordinary dialogue renders (exercises the repaired non-remapped path).
+- Confirm choices, L/R help, 병사 2, warehouse text, and all location names.
+- Confirm equipment/consumable names are 4px left and consumable count is 2px lower.
+- Confirm battle damage digits have no Hangul/odd-glyph contamination.
+- Confirm unrelated dialogue/UI/icons and native numbers match V335/V336 intent.

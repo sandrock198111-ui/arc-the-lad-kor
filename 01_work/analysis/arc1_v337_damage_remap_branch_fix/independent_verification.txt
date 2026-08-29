@@ -1,0 +1,7 @@
+V337 independent verification: PASS
+changed_members=PSX.EXE only
+changed_bytes=2 at 0x80A80/0x80A81
+V336 old actual branch target=0x801AB524 INVALID
+V337 branch target=0x8019B270; local j target=0x8016B524
+all V336 payload/non-PSX bytes preserved
+runtime=PENDING user cold boot

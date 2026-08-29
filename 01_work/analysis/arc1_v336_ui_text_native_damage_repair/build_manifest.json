@@ -1,0 +1,198 @@
+{
+  "build": "V336 INVALID UI/text/native damage repair; superseded by V337",
+  "fatal_defect": {
+    "branch_ram": "0x8019B280",
+    "word": "0x112040A8",
+    "actual_target": "0x801AB524",
+    "required_target": "0x8016B524",
+    "status": "DO NOT RUN; fixed by V337"
+  },
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v335_dialogue_text_y_minus4_TEST_ONLY_CF4FB2E5.zip",
+    "sha256": "CF4FB2E518ADD6CE6B528C44D2AD4696DCD9DAF2940FE0A105F60B50C76C70D0"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v336_ui_text_native_damage_repair_TEST_ONLY_28C9A039.zip",
+    "sha256": "28C9A03986B549DD62B4B1517815327DDC52E776770221630557B360F0B0C0F4"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v336_ui_text_native_damage_repair_TEST_ONLY_delta_from_v335_FAF7E785.zip",
+    "sha256": "FAF7E7854AEABB7CB04E96B32DFF1226194F0F883ABF324653C3618F39604B7D"
+  },
+  "changed_members": [
+    "1/S1023.DAT",
+    "21/S2042.DAT",
+    "4/S4011.DAT",
+    "4/S4021.DAT",
+    "COMM.IMG",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "1/S1023.DAT": 22,
+    "21/S2042.DAT": 2,
+    "4/S4011.DAT": 18,
+    "4/S4021.DAT": 31,
+    "COMM.IMG": 792,
+    "PSX.EXE": 155
+  },
+  "text_bitmap_comparisons": 130963,
+  "damage_overlap_token_occurrences": 47,
+  "damage_source_usage": {
+    "804": 2,
+    "805": 1,
+    "806": 2,
+    "807": 1,
+    "808": 1,
+    "809": 4,
+    "810": 5,
+    "811": 3,
+    "812": 1,
+    "813": 1,
+    "814": 21,
+    "815": 1,
+    "816": 1,
+    "817": 1,
+    "818": 1,
+    "819": 1
+  },
+  "damage_relocation": [
+    {
+      "source": 804,
+      "destination": 161
+    },
+    {
+      "source": 805,
+      "destination": 162
+    },
+    {
+      "source": 806,
+      "destination": 163
+    },
+    {
+      "source": 807,
+      "destination": 164
+    },
+    {
+      "source": 808,
+      "destination": 165
+    },
+    {
+      "source": 809,
+      "destination": 166
+    },
+    {
+      "source": 810,
+      "destination": 167
+    },
+    {
+      "source": 811,
+      "destination": 168
+    },
+    {
+      "source": 812,
+      "destination": 169
+    },
+    {
+      "source": 813,
+      "destination": 170
+    },
+    {
+      "source": 814,
+      "destination": 171
+    },
+    {
+      "source": 815,
+      "destination": 172
+    },
+    {
+      "source": 816,
+      "destination": 173
+    },
+    {
+      "source": 817,
+      "destination": 174
+    },
+    {
+      "source": 818,
+      "destination": 175
+    },
+    {
+      "source": 819,
+      "destination": 176
+    }
+  ],
+  "damage_displaced_backup": [
+    {
+      "source": 168,
+      "destination": 741
+    },
+    {
+      "source": 169,
+      "destination": 742
+    },
+    {
+      "source": 170,
+      "destination": 743
+    }
+  ],
+  "e5_blank_index": 746,
+  "item_geometry": {
+    "equipment_name_dx": -4,
+    "consumable_name_dx": -4,
+    "consumable_quantity_dy": 2
+  },
+  "location_width": "12*n -> 14*n; 55-entry dedicated location-name table",
+  "text_repairs": [
+    {
+      "member": "1/S1023.DAT",
+      "kind": "slot",
+      "location": 0,
+      "before_hex": "14 DD 5D 07 DD 02 A1 09 67 04 0C A1 DD 3D DD FB A1 DD 79 04 A1 DD 50 DD 12 DD 03",
+      "after": "어머니: 아버지 편지 볼래?",
+      "metadata": 5
+    },
+    {
+      "member": "1/S1023.DAT",
+      "kind": "slot",
+      "location": 2,
+      "before_hex": "78 C6",
+      "after": "다음",
+      "metadata": 5
+    },
+    {
+      "member": "1/S1023.DAT",
+      "kind": "slot",
+      "location": 3,
+      "before_hex": "DF 16 84 78",
+      "after": "읽는다",
+      "metadata": 1
+    },
+    {
+      "member": "21/S2042.DAT",
+      "kind": "slot_token",
+      "location": 1,
+      "before_hex": "EA 9E",
+      "after": "L",
+      "metadata": 45
+    },
+    {
+      "member": "4/S4021.DAT",
+      "kind": "slot_prefix",
+      "location": 4,
+      "before_hex": "82 34 0B",
+      "after": "병사 2",
+      "metadata": 29
+    },
+    {
+      "member": "4/S4011.DAT",
+      "kind": "inline_two_line",
+      "location": "0x485A2",
+      "before_hex": "DE D4 E9 35 0D 9C E1 E9 8F 9C E6 01 DE 3C CD 74 0F 9C 9C 9C 9C",
+      "after": "잠깐, 뭔가 / 이상해.",
+      "metadata": "E6 01 preserved"
+    }
+  ],
+  "preserved": "V335 dialogue Y shift and triangle cursor; V332 skill/config alignment; all undeclared DAT; E2 +0x7F metadata; member sizes and archive order",
+  "runtime": "BLOCKED; DO NOT RUN; superseded by V337",
+  "release_status": "INVALID; DO NOT RUN OR DISTRIBUTE"
+}

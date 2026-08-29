@@ -1,0 +1,15 @@
+V337 generic check_build result: INHERITED DAT DEBT FAIL
+
+body=2878
+choices=357
+E2=1374
+in_place=1116
+
+choice_rows_over_window=75
+choice_marker_positions_differ_from_original=2
+body_over_three_line_limit=18
+
+The counts are inherited from the V197-lineage data used by V335/V336.
+V337 changes PSX.EXE only relative to V336, so this branch repair cannot have
+created or removed these DAT findings.  They remain a separate follow-up and
+do not establish runtime failure of the V337 branch repair itself.

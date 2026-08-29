@@ -1,6 +1,16 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+V336/V337 잔여 UI 복구 구조와 MIPS 원거리 분기 금지 - 2026-08-29
+- MIPS-I `beq/bne`는 PC+4 기준 signed 16-bit word displacement만 갖는다. file `0x80A80`/RAM `0x8019B280`에서 `0x8016B524`로 직접 만든 V336 워드 `0x112040A8`은 즉치값이 wrap되어 실제 `0x801AB524`를 가리킨다. 주소 계산 없이 `& 0xFFFF`로 분기 즉치값을 자르는 빌더와 생성 바이트를 그대로 골든값으로 삼는 검증은 금지한다.
+- V337의 같은 워드는 `0x1120FFFB`다. 분기 목표는 5워드 전 local `0x8019B270`이고, 그곳의 `0x0805AD49`가 `0x8016B524`로 복귀한다. 비대상 글리프는 branch delay NOP→local jump→jump delay NOP, source 804..819는 fallthrough NOP→`addiu a0,a0,-643`→동일 복귀다.
+- 지역명은 55개 전용 함수 `0x8016C5A4`를 사용한다. V336/V337은 file `0x51DBC/0x51DC0/0x51DC8`의 폭 산술만 `12*n`에서 `14*n`으로 바꿔 전체 이름을 담고 창 중심을 유지한다. 54개 비공백 지역명의 최대 길이는 12자이며 새 폭에 들어간다.
+- 장비명 caller file `0x494A8`, 소모품명 caller `0x4A32C`만 전용 wrapper로 우회해 객체 `0x801F1DB4`의 패킷 X를 −4 한다. 소모품 수량 caller `0x4A35C`만 상태 Y를 +2 한 뒤 stock `0x8016B324`로 tail-jump한다. 기술명·대사·전투 일반 숫자는 이 호출 범위 밖이다.
+- 네이티브 데미지 숫자는 COMM U=0..155/V=208..219의 13개 12px 셀을 코드 없이 직접 쓴다. 텍스트 plane 804..819가 이 영역을 덮었으므로 V336/V337은 원본 데미지 셀 13/13을 복원하고 텍스트를 161..176으로 재배치한다. 기존 168..170은 nontext-safe 741..743에 보존하고 나머지 old blank owner는 canonical blank116으로 보낸다. physical160은 반각 공백 6px 특수 전진 때문에 목적지로 쓰면 안 된다.
+- 선택지 E5 가상 들여쓰기 physical746은 blank이며 pinned 509-state audit에서 nontext_reads=0이다. `1/S1023.DAT` 슬롯 0/2/3의 +0x7F skip 메타데이터는 5/5/1, E5/E6 토폴로지는 유지된다. 삼각 커서는 별도 코드라 V336/V337이 직접 이동시키지 않는다.
+- `21/S2042.DAT`의 잘못된 `EA 9E` 한 건만 같은 폭의 `DD D8` physical435 `L`로 바꿨다. `4/S4021.DAT` 슬롯4의 prefix만 `병사2→병사 2`로 늘렸고 +0x7F=29를 보존했다. `4/S4011.DAT:0x485A2`는 v204에서 승인된 `잠깐, 뭔가` / `이상해.` 두 줄과 `E6 01` 위치를 복원했다.
+- V336은 UI payload 자체의 정적 대조는 통과했지만 공통 게이트 분기 결함 때문에 `DO NOT RUN`이다. 해당 payload를 그대로 보존하고 분기 2바이트만 고친 V337이 유일한 다음 실기 후보이며, 콜드부팅 통과 전까지 runtime PENDING이다.
+
 V335 공통 대화 시작 Y와 선택지 글리프 경로 - 2026-08-29
 - 위·아래 대화 객체는 `0x8015C0F8/0x8015C118`에서 최초 Y를 받고, `0x8015C170/0x8015C188`에서 top/bottom 전환 때 같은 Y를 다시 받는다. 네 곳 모두 `0x8016B880`으로 들어가 a1이 state+0x20에 저장되고 `0x8016B418`에서 active state+0x08 Y가 된다. 전역 이동에는 네 곳을 함께 바꿔야 한다.
 - V334의 시작 Y는 top=36, bottom=166이고 E6 줄 이동은 state H(+0x0E)=16 + spacing(+0x10)=0이다. V335의 top=32, bottom=162이면 네 줄은 top `32/48/64/80`, bottom `162/178/194/210`이며 16px 글리프 하단은 `95/225`다.

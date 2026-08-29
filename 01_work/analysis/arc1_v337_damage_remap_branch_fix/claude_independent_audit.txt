@@ -1,0 +1,21 @@
+V337 Claude Code Sonnet independent read-only audit
+Date: 2026-08-29
+
+Verdict: BLOCKER 0 / HIGH 0 / runtime PENDING
+
+- Reproduced the V336 defect: file 0x80A80 / RAM 0x8019B280 word
+  0x112040A8 branches to 0x801AB524, not 0x8016B524.
+- Re-ran the corrected V336 verifier and confirmed it now fails with the
+  wrapped target and marks V336 DO NOT RUN.
+- Re-ran the V337 verifier and confirmed PASS.
+- Independently confirmed that V337 changes PSX.EXE only and exactly two
+  bytes at 0x80A80/0x80A81.
+- Decoded the V337 branch target as local 0x8019B270, whose existing
+  unconditional jump targets 0x8016B524.  Delay slots remain NOP.
+- Confirmed COMM.IMG, all DAT, and all other V336 payload bytes are unchanged.
+- Found the corrected 40-byte branch neighborhood exactly once in V337.bin,
+  confirming ZIP-to-disc packaging retained the repair.
+- Confirmed the pinned V335 -> V336 -> V337 SHA-256 base chain.
+
+No project files were modified by Claude Code.  Cold-boot runtime proof is
+still required before promotion.

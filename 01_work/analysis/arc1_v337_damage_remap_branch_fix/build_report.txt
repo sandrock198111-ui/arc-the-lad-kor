@@ -1,0 +1,13 @@
+V337 TEST ONLY - V336 damage-remap branch-range repair
+base=arc1_v336_ui_text_native_damage_repair_TEST_ONLY_28C9A039.zip
+output=arc1_v337_damage_remap_branch_fix_TEST_ONLY_2AB80515.zip
+sha256=2AB80515D70E84F34F83A919FC63F16AFDEDA57342FAE4F40180E841DCF3E856
+delta=arc1_v337_damage_remap_branch_fix_TEST_ONLY_delta_from_v336_0CC5D8EA.zip
+delta_sha256=0CC5D8EA9CF332A6761986E7EBD77FE5EE135693C6C0FD777D55CC87D5A94780
+changed_members=PSX.EXE only
+changed_bytes=2
+branch=0x8019B280: 0x112040A8 -> 0x1120FFFB
+old_actual_target=0x801AB524 INVALID
+new_target=0x8019B270 local j -> 0x8016B524
+V336 payload/COMM.IMG/all DAT preserved byte-exact
+runtime=PENDING; TEST_ONLY

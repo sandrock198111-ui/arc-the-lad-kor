@@ -1,0 +1,52 @@
+{
+  "verdict": "FAIL_STATIC_BRANCH_WRAP",
+  "output_sha256": "28C9A03986B549DD62B4B1517815327DDC52E776770221630557B360F0B0C0F4",
+  "changed_members": [
+    "1/S1023.DAT",
+    "21/S2042.DAT",
+    "4/S4011.DAT",
+    "4/S4021.DAT",
+    "COMM.IMG",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "21/S2042.DAT": 2,
+    "PSX.EXE": 155,
+    "4/S4011.DAT": 18,
+    "1/S1023.DAT": 22,
+    "COMM.IMG": 792,
+    "4/S4021.DAT": 31
+  },
+  "text_bitmap_comparisons": 130963,
+  "remapped_or_preserved_occurrences": 1381,
+  "native_damage_cells": 13,
+  "damage_text_relocation": [
+    "804->161",
+    "805->162",
+    "806->163",
+    "807->164",
+    "808->165",
+    "809->166",
+    "810->167",
+    "811->168",
+    "812->169",
+    "813->170",
+    "814->171",
+    "815->172",
+    "816->173",
+    "817->174",
+    "818->175",
+    "819->176"
+  ],
+  "displaced_backup": [
+    "168->741",
+    "169->742",
+    "170->743"
+  ],
+  "common_gate_branch": {
+    "word": "0x112040A8",
+    "actual_target": "0x801AB524",
+    "required_target": "0x8016B524"
+  },
+  "runtime": "DO NOT RUN; superseded by V337"
+}

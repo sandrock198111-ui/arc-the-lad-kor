@@ -1,0 +1,10 @@
+V336 independent verification: FAIL (out-of-range branch wrapped)
+archive=28C9A03986B549DD62B4B1517815327DDC52E776770221630557B360F0B0C0F4
+changed_members=1/S1023.DAT,21/S2042.DAT,4/S4011.DAT,4/S4021.DAT,COMM.IMG,PSX.EXE
+changed_bytes={'21/S2042.DAT': 2, 'PSX.EXE': 155, '4/S4011.DAT': 18, '1/S1023.DAT': 22, 'COMM.IMG': 792, '4/S4021.DAT': 31}
+text_bitmap_comparisons=130963
+remapped_or_preserved_occurrences=1381
+choice/L/병사 2/warehouse/location/item/quantity=PASS
+native_damage=13/13 original cells; text relocation and backups=PASS
+common_gate_branch=0x112040A8 -> 0x801AB524 (required 0x8016B524)
+runtime=DO NOT RUN; superseded by V337

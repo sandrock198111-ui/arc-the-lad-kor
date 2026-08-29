@@ -1,0 +1,7 @@
+﻿member,kind,location,before_hex,after,metadata
+1/S1023.DAT,slot,0,14 DD 5D 07 DD 02 A1 09 67 04 0C A1 DD 3D DD FB A1 DD 79 04 A1 DD 50 DD 12 DD 03,어머니: 아버지 편지 볼래?,5
+1/S1023.DAT,slot,2,78 C6,다음,5
+1/S1023.DAT,slot,3,DF 16 84 78,읽는다,1
+21/S2042.DAT,slot_token,1,EA 9E,L,45
+4/S4021.DAT,slot_prefix,4,82 34 0B,병사 2,29
+4/S4011.DAT,inline_two_line,0x485A2,DE D4 E9 35 0D 9C E1 E9 8F 9C E6 01 DE 3C CD 74 0F 9C 9C 9C 9C,"잠깐, 뭔가 / 이상해.",E6 01 preserved

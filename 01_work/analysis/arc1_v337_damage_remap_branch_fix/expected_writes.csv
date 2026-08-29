@@ -1,0 +1,3 @@
+﻿member,offset,before,after,purpose
+PSX.EXE,0x80A80,A8,FB,repair out-of-range beq via local return jump
+PSX.EXE,0x80A81,40,FF,repair out-of-range beq via local return jump
