@@ -1,0 +1,74 @@
+{
+  "version": "V345",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "base": {
+    "file": "arc1_v344_location_name_vertical_center_TEST_ONLY_69B3EC07.zip",
+    "sha256": "69B3EC07D300C28EF6C7F42588E6B392025F0392AE1207A586562B0D23001886",
+    "runtime": "PASS_GAMEPLAY"
+  },
+  "output": {
+    "file": "arc1_v345_story_timing_cursor_recovery_TEST_ONLY_AB9A8E99.zip",
+    "sha256": "AB9A8E99707D4E11EF0878E65451AA0DAD441328C6EDE9277E6142A9164BC54D"
+  },
+  "delta": {
+    "file": "arc1_v345_story_timing_cursor_recovery_TEST_ONLY_delta_from_v344_E0C7A923.zip",
+    "sha256": "E0C7A92394014ED2C53CE38CB8DDB25829716C5FC89A05A5F2FD0238C6EBBC7F"
+  },
+  "changed_members_vs_v344": [
+    "4/S4031.DAT",
+    "4/S4041.DAT",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "4/S4031.DAT": 42,
+    "4/S4041.DAT": 85,
+    "PSX.EXE": 64
+  },
+  "story": {
+    "S4031": [
+      "앞으로 네 여행에 도움이 될 고대의 기록은 토우빌 안쪽,",
+      "오르카스 언덕의 스톤 서클에 남겨져 있다.",
+      "좋아! 고대의 기록을 찾자."
+    ],
+    "S4041": {
+      "slot": 4,
+      "payload_bytes": 41,
+      "completion": 35,
+      "resume_relative": 37,
+      "restored_controls": "E4 79 E4 3D E4 3D"
+    }
+  },
+  "range_cursor": {
+    "source": "arc1_v341_runtime_ui_recovery_TEST_ONLY_FCAF5CFB.zip",
+    "ranges": [
+      {
+        "purpose": "frame_predrawot_gate",
+        "offset": "0x2060",
+        "size": 4
+      },
+      {
+        "purpose": "restore_stock_range_initializer",
+        "offset": "0x3E14",
+        "size": 8
+      },
+      {
+        "purpose": "active_owner_cursor_gate",
+        "offset": "0x75590",
+        "size": 52
+      },
+      {
+        "purpose": "uploader_drawot_epilogue",
+        "offset": "0x8F0D0",
+        "size": 36
+      }
+    ],
+    "V343_RA_safe_hook_preserved": true
+  },
+  "regression_guards": {
+    "V199_fixed_bodies": 8,
+    "V210_SD031": "member and known controls byte exact",
+    "COMM_IMG": "byte exact",
+    "all_member_sizes": "byte exact"
+  },
+  "runtime": "PENDING user cold boot; TEST_ONLY"
+}

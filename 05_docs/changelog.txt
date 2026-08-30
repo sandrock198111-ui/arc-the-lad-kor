@@ -1995,3 +1995,11 @@
 - `check_build.py`의 기존 부채(선택지 폭 75, 마커 2, 본문 4줄 초과 18)는 V343과 항목·주소까지 동일하다. V344가 새로 만든 회귀는 아니지만 미해결 부채로 유지한다.
 - full/delta SHA-256은 `69B3EC07D300C28EF6C7F42588E6B392025F0392AE1207A586562B0D23001886` / `9C81B28C1CA59ADB9E1FE1F84E3A9C44144B9C1319415C00EC52B5BC1DC383C6`이다. `V344.bin`/cue SHA-256은 `5FA3B185C0AEA480F420A46A943EC0C0B5AEA21791DDF3E33798719C9C3A0FA6` / `0276A6AA2DCD58F1DF431F9F2D65458884DB6D106C08EAB86208C3E4F6A3785A`이며 v104 디스크 LBA 506/506, COMM 307/667/891, 164/164 readback이 PASS했다.
 - DuckStation이 종료된 상태에서 `V343_1.mcd`를 `V344_1.mcd`로 복사했고 양쪽 SHA-256은 `0799B4608325CDA7ABA0F30C5D3C4E1F06276D8960592EAAE55E2A8849B0A440`로 같다. Claude Code 독립 감사 호출은 세션 제한(11:30 reset)으로 실행되지 않았으며 PASS로 간주하지 않았다.
+2026-08-30 - V345 스톤 대사 제어·용어·아이템/스킬 범위 커서 복구
+- 런타임 진행이 확인된 V344를 기준으로 `02_scripts/build_arc1_v345_story_timing_cursor_recovery.py`와 독립 검증기를 추가했다. 변경 멤버는 `4/S4031.DAT`, `4/S4041.DAT`, `PSX.EXE` 세 개이며 모든 멤버 크기는 유지된다.
+- `4/S4031.DAT`는 본문 `0x47F7A`와 `0x48516`을 같은 바이트 공간 안에서 각각 `앞으로 네 여행에 도움이 될 고대의 기록은 토우빌 안쪽,`, `좋아! 고대의 기록을 찾자.`로 통일했다. slot34 `+0x10`의 잘못된 두 바이트 토큰 `E9 88`은 동일 폭 `DE 01`(physical 475 `클`)로 바꿔 `스톤 서서`를 `스톤 서클`로 복구했다. slot34 소유자 `0x47FD4`와 completion 24는 그대로다.
+- `4/S4041.DAT:0x47AA4`의 입력 대기 없이 지나가던 돌 메시지는 미사용 slot4에 기존 한국어 41바이트를 보관하고 `E2 85`로 호출하게 했다. slot4 completion을 35로 두어 body relative 37의 원본 `E4 79 E4 3D E4 3D`로 복귀한다. 이는 V189/V209에서 검증된 `외부 슬롯 + 원본 body tail + 정확한 completion` 구조이며, V198의 tail 미복원 무한반복 방식은 사용하지 않았다.
+- 아이템/스킬 범위 커서는 V341의 네 실행파일 구간(file `0x2060+4`, `0x3E14+8`, `0x75590+0x34`, `0x8F0D0+36`)만 정확히 복원했다. V343에서 고친 RA-safe non-linking W16 훅(file `0x50DF4`, `0x82840`)과 V344 지형명 Y(file `0x51DE8`)는 byte exact로 보존했다.
+- V199 전투 후 대화 안전 본문 8곳과 V210 `D/SD031.DAT` 제어코드/멤버를 가드하고 byte exact로 보존했다. `COMM.IMG`도 V344와 동일하다.
+- full/delta SHA-256은 `AB9A8E99707D4E11EF0878E65451AA0DAD441328C6EDE9277E6142A9164BC54D` / `E0C7A92394014ED2C53CE38CB8DDB25829716C5FC89A05A5F2FD0238C6EBBC7F`이다. `V345.bin`/cue SHA-256은 `1B9E24298C841B9EB47D4CB3FE4D7577425DACCDB73B131463082F596DF7BD5C` / `3A35FA223DFBA3A899FFCFB88AE1CE70DEBD02A4CC73AE43142FB28FC81D4098`이다. v104 LBA 506/506와 164/164 디스크 readback이 PASS했다.
+- DuckStation 메모리카드 `V345_1.mcd`를 V342 카드에서 byte exact 복제했다(SHA-256 `0799B4608325CDA7ABA0F30C5D3C4E1F06276D8960592EAAE55E2A8849B0A440`). V345는 아직 `TEST_ONLY / RUNTIME PENDING`이며 `bible_current.txt`의 성공 기준은 V344로 유지한다.

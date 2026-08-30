@@ -1,0 +1,17 @@
+check_build.py comparison
+
+V344 (runtime-working base)
+- bodies=2878 choices=357 E2=1374 inline=1116
+- choice overflow=75
+- choice marker drift=2
+- 4/3-line overflow=18
+
+V345
+- bodies=2878 choices=357 E2=1375 inline=1115
+- choice overflow=75
+- choice marker drift=2
+- 4/3-line overflow=18
+
+Conclusion: V345 adds one intentional S4041 external-slot caller. All three
+reported global debt counts are identical to V344, so the build adds no new
+check_build width/marker/line-count regression.

@@ -1,0 +1,11 @@
+V345 independent static verification: PASS
+full=arc1_v345_story_timing_cursor_recovery_TEST_ONLY_AB9A8E99.zip sha256=AB9A8E99707D4E11EF0878E65451AA0DAD441328C6EDE9277E6142A9164BC54D
+delta=arc1_v345_story_timing_cursor_recovery_TEST_ONLY_delta_from_v344_E0C7A923.zip sha256=E0C7A92394014ED2C53CE38CB8DDB25829716C5FC89A05A5F2FD0238C6EBBC7F
+PSX.EXE sha256=C4572A888018DC24325E30E6250B60513058C24D74DBF0E1CA95EA2DA1E82AD3
+archive=164 members; changed=S4031,S4041,PSX only; sizes unchanged
+Expected-Write=191/191 exact (42+85+64)
+S4031=same-size terminology + physical-475 서클; owner/meta preserved
+S4041=slot4 completion35 -> resume rel37 -> E4 79/E4 3D/E4 3D
+cursor=V341 four ranges exact; V343 RA-safe hook and V344 location Y preserved
+regression=V199 body topology + V210 SD031 controls + COMM.IMG byte exact
+runtime=PENDING user cold boot; TEST_ONLY

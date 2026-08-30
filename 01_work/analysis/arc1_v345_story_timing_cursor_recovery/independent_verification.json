@@ -1,0 +1,25 @@
+{
+  "result": "STATIC_PASS_RUNTIME_PENDING",
+  "archives": {
+    "arc1_v344_location_name_vertical_center_TEST_ONLY_69B3EC07.zip": "69B3EC07D300C28EF6C7F42588E6B392025F0392AE1207A586562B0D23001886",
+    "arc1_v340_battle_choice_ui_geometry_TEST_ONLY_3F63BFD1.zip": "3F63BFD149A100152DE8B1B3223136CC501AF5AC19E19F443D4519142F9C783E",
+    "arc1_v341_runtime_ui_recovery_TEST_ONLY_FCAF5CFB.zip": "FCAF5CFB8BAC230A041DC68E9B23B0F6916112D8F5406B2312DD19CE2A4E33D2",
+    "arc1_v345_story_timing_cursor_recovery_TEST_ONLY_AB9A8E99.zip": "AB9A8E99707D4E11EF0878E65451AA0DAD441328C6EDE9277E6142A9164BC54D",
+    "arc1_v345_story_timing_cursor_recovery_TEST_ONLY_delta_from_v344_E0C7A923.zip": "E0C7A92394014ED2C53CE38CB8DDB25829716C5FC89A05A5F2FD0238C6EBBC7F"
+  },
+  "changed_members": [
+    "4/S4031.DAT",
+    "4/S4041.DAT",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "4/S4031.DAT": 42,
+    "4/S4041.DAT": 85,
+    "PSX.EXE": 64
+  },
+  "S4031": "same-size wording + DE01 physical-475 서클; slot34/meta24 preserved",
+  "S4041": "slot4/meta35; E2 85; resume rel37; E4 79/E4 3D/E4 3D restored",
+  "range_cursor": "four V341 ranges exact; active owner 0x801F52BC; frame gate and DrawOT epilogue restored",
+  "preserved": "V343 RA-safe jump, V344 location Y, V199 bodies, V210 SD031, COMM.IMG",
+  "runtime": "PENDING user cold boot; TEST_ONLY"
+}

@@ -1,0 +1,6 @@
+Claude audit status
+requested=2026-08-30
+mcp_agent=UNAVAILABLE (mcp__claude__Agent returned "Available agents: none")
+cli=LIMITED (claude.cmd returned "You've hit your session limit · resets 11:30am (Asia/Seoul)")
+verdict=NOT RUN; do not count as PASS
+next_action=retry read-only Claude audit after the stated reset

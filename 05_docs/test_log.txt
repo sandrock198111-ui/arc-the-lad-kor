@@ -2817,3 +2817,15 @@ check_build.py 통과. SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FB
 - full/delta/PSX SHA-256은 `69B3EC07D300C28EF6C7F42588E6B392025F0392AE1207A586562B0D23001886` / `9C81B28C1CA59ADB9E1FE1F84E3A9C44144B9C1319415C00EC52B5BC1DC383C6` / `0CB561EC6B79BCF06F45D5F1D9E62DE7ABB7F545A4099127AAC2EA7D5165DF70`이다.
 - `V344.bin`/cue SHA-256은 `5FA3B185C0AEA480F420A46A943EC0C0B5AEA21791DDF3E33798719C9C3A0FA6` / `0276A6AA2DCD58F1DF431F9F2D65458884DB6D106C08EAB86208C3E4F6A3785A`다. 데이터 LBA 506/506, COMM 307/667/891, 패치 멤버 164/164가 PASS했다.
 - `V344_1.mcd`는 V343 카드와 byte exact이며 SHA-256 `0799B4608325CDA7ABA0F30C5D3C4E1F06276D8960592EAAE55E2A8849B0A440`다.
+2026-08-30 - V345 스톤 대사/범위 커서 복구 정적·디스크 검사
+- 수정 파일: `02_scripts/build_arc1_v345_story_timing_cursor_recovery.py`, `02_scripts/verify_arc1_v345_story_timing_cursor_recovery.py`; 산출 변경 멤버 `4/S4031.DAT`, `4/S4041.DAT`, `PSX.EXE`.
+- 입력 기준: V344 full SHA-256 `69B3EC07D300C28EF6C7F42588E6B392025F0392AE1207A586562B0D23001886`; V340/V341 커서 소스도 전체 ZIP과 PSX 해시로 고정했다.
+- 빌더를 두 번 실행해 full `AB9A8E99...`, delta `E0C7A923...`, PSX `C4572A88...`가 결정적으로 재현됐다. 변경 멤버 3개, 실제 변경 바이트 `42+85+64=191`이며 `expected_writes.csv` 191/191과 완전히 일치했다. 허용 범위 밖 쓰기는 0건이다.
+- 독립 검증: S4031 두 본문은 같은 종료 위치와 패딩을 유지했고 slot34 owner/meta24도 유지했다. S4041은 slot4 payload41/meta35, 유일 caller `0x47AA4`, `2+35=37`, resume tail `E4 79 E4 3D E4 3D`를 확인했다.
+- 커서 검증: 최종 네 범위가 V341과 byte exact이고 V344의 해당 네 범위는 V340 rollback과 byte exact임을 확인했다. owner `0x801F52BC`, active gate, pre-DrawOT gate, uploader DrawOT epilogue를 기계어 워드로 확인했다. V343 RA-safe 훅/continuation/delay와 V344 지형명 Y는 모두 불변이다.
+- 회귀 검증: V199 보호 본문 8곳의 길이/E2/E6 topology, V210 `D/SD031.DAT`의 알려진 E6/E4 제어, `COMM.IMG`, 나머지 161멤버가 V344와 동일하다.
+- `verify_iso_layout.py`: 데이터 LBA 506/506, COMM.DAT/IMG/SND 307/667/891, PSX.EXE LBA 268481, 패치 멤버 164/164 디스크 readback PASS.
+- `check_build.py`: V345는 선택지 폭 75, 마커 2, 4/3줄 초과 18을 보고했다. V344도 같은 75/2/18이므로 신규 회귀 0이며 상속 부채로 분리한다. S4041을 한 곳 외부 슬롯화해 census만 E2 1374→1375, 제자리 1116→1115로 변했다.
+- 메모리카드: `V342_1.mcd -> V345_1.mcd`, 131072바이트, 양쪽 SHA-256 `0799B460...A440` 일치.
+- Claude 감사: MCP Agent는 연결됐지만 등록 agent가 없어 실행 불가했고, CLI는 `session limit · resets 11:30am`을 반환했다. 이를 PASS로 간주하지 않으며 제한 해제 후 재시도한다.
+- 결과: STATIC/DISC PASS, RUNTIME PENDING. 콜드부팅에서 스톤 서클/고대의 기록, 아이템·스킬 범위 커서, 돌 메시지 대기와 이후 무한반복 부재를 반드시 확인한다.

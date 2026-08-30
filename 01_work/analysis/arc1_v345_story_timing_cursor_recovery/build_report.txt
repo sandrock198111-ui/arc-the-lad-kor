@@ -1,0 +1,12 @@
+V345 story timing + range cursor recovery
+base=arc1_v344_location_name_vertical_center_TEST_ONLY_69B3EC07.zip sha256=69B3EC07D300C28EF6C7F42588E6B392025F0392AE1207A586562B0D23001886
+output=arc1_v345_story_timing_cursor_recovery_TEST_ONLY_AB9A8E99.zip sha256=AB9A8E99707D4E11EF0878E65451AA0DAD441328C6EDE9277E6142A9164BC54D
+delta=arc1_v345_story_timing_cursor_recovery_TEST_ONLY_delta_from_v344_E0C7A923.zip sha256=E0C7A92394014ED2C53CE38CB8DDB25829716C5FC89A05A5F2FD0238C6EBBC7F
+PSX.EXE sha256=C4572A888018DC24325E30E6250B60513058C24D74DBF0E1CA95EA2DA1E82AD3
+changed_members=4/S4031.DAT,4/S4041.DAT,PSX.EXE
+changed_bytes={"4/S4031.DAT": 42, "4/S4041.DAT": 85, "PSX.EXE": 64}
+S4031=in-place ancient-record terminology + equal-width 서클 fix; body topology unchanged
+S4041=free slot4 + completion35 -> pristine E4 79/E4 3D/E4 3D
+cursor=V341 four exact ranges restored on V344; V343 RA-safe W16 hook preserved
+V199 safe-body topology and V210 SD031 controls guarded byte exact
+runtime=PENDING user cold boot; TEST_ONLY
