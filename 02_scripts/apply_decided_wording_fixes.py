@@ -165,6 +165,31 @@ REWRITES = [
      ("병사: 이봐! 그만두, 그만두지 못해!!",
       "병사: 이봐! 그만두, 그만두지 못해！！"),
      "병사: 이봐! 그만둬, 그만두지 못하겠나!!"),
+
+    # 2026-08-30 runtime screenshot review: remove literal-Japanese phrasing in
+    # four Grayshine lines.  The selected revisions intentionally stay within
+    # V349's proven 16px Hanme glyph inventory.  The initial variants needed
+    # 휴/눠/좇/얘; the only static zero-use direct-code candidates found for four
+    # extra glyphs were 741..743/746, but those planes are runtime-owned, so the
+    # variants were revised instead of repurposing those slots.
+    ("5/S5024.DAT", "0x478E8",
+     ("무슨 말을 하는 거야. 이야기가 진행되지 않잖아.",
+      "뭔 소리야? 이래선 말이 안 되잖아."),
+     "뭔 소리야? 이래선 말이 안 되잖아."),
+    ("5/S5052.DAT", "0x47A90",
+     ("아니, 살았다 살았어. 고맙다고 하겠어.",
+      "아니, 살았다 살았어. 고마워하겠어.",
+      "이야, 덕분에 살았군. 고맙다."),
+     "이야, 덕분에 살았군. 고맙다."),
+    ("5/S5052.DAT", "0x47ADA",
+     ("고맙다는 말은 하겠지만 보물은 나누지 않을 거야. 말만 하는 건 공짜니까.",
+      "고맙다는 말은 하겠지만 보물은 나누지 않을 거야. 말만 하는 건 돈이 안 드니까.",
+      "고맙다고는 해 주지. 하지만 보물은 나누지 않을 거야. 말이야 공짜니까."),
+     "고맙다고는 해 주지. 하지만 보물은 나누지 않을 거야. 말이야 공짜니까."),
+    ("5/S5052.DAT", "0x47B28",
+     ("요슈아: 사람은 욕망을 위해서만 사는 것이 아니다.",
+      "요슈아: 사람은 욕망만 따라 사는 게 아니다."),
+     "요슈아: 사람은 욕망만 따라 사는 게 아니다."),
 ]
 
 # (japanese must contain, japanese must NOT contain, before, after)

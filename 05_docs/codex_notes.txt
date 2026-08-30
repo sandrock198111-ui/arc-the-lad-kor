@@ -1,6 +1,15 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+V350 대사 자연화와 16px 글리프 경계 - 2026-08-30
+- V349 런타임 화면에서 번역투가 확인된 source key는 `5/S5024.DAT:0x478E8`, `5/S5052.DAT:0x47A90/0x47ADA/0x47B28` 네 개다. 앞으로 화면 문구 수정은 display string 검색보다 `(member, body offset)` source key와 실제 E2 slot owner를 같이 기록한다.
+- 일본어 `話が進まねえ`를 메타적인 `이야기가 진행되지 않는다`로 옮기지 않는다. 이 장면에서는 대화/논의가 진전되지 않는다는 뜻이며 V350은 `뭔 소리야? 이래선 말이 안 되잖아.`로 처리한다. `助かった`도 `살았다 살았어` 직역보다 `덕분에 살았군`이 자연스럽고, `言うだけならただ`의 탐욕스러운 농담은 `말이야 공짜니까`로 살린다.
+- 현행 16px Hanme에 글리프가 없다는 이유로 정적 미사용 물리칸을 즉시 재활용하지 않는다. `휴/눠/좇/얘`를 넣기 위한 zero-use 후보가 741/742/743/746 네 곳으로 좁혀졌지만, 741..743은 V336이 네이티브 데미지 셀을 피하며 옮긴 기존 owner, 746은 E5 선택 들여쓰기 blank다. 이들은 텍스트 census 0이어도 런타임 의미가 있다. 신규 glyph 후보는 역사적 owner와 special-use까지 검사한다.
+- 번역 후처리 `apply_reduction_batch.py`의 전역 phrase 치환은 source context를 모른다. `고맙다고 하겠어→고마워하겠어`, `말만 하는 건 공짜니까→돈이 안 드니까`처럼 문맥을 악화시키는 규칙은 제거했다. 자연화/말투 수정은 `apply_decided_wording_fixes.py`의 source-keyed rewrite를 우선한다.
+- `apply_decided_wording_fixes.py`는 source-keyed REWRITES 뒤에도 global SUBSTITUTIONS를 수행한다. 전체 스크립트를 재실행하면 이번 대상 외 기존 행이 함께 바뀔 수 있다. V350 작업에서 실제로 7행 중 3행의 `형님→형` 추가 변경을 잡아 원복했다. 국소 hotfix에서 canonical CSV를 갱신할 때는 전체 실행 diff를 반드시 검토하거나 exact source-key patch를 사용한다.
+- V350은 V349 코드/폰트 구조를 전혀 바꾸지 않는다. S5024 slot0, S5052 slot6/0/4 payload만 수정하고 body E2 caller와 `+0x7F` metadata 19/19/25/27을 고정한다. PSX.EXE/COMM.IMG가 V349와 byte exact라는 것이 이 버전의 핵심 회귀 경계다.
+- Chat On Steroids worker spawn은 현재 prime 식별 `UNIDENTIFIED_CALLER` 때문에 실행되지 않았다. Core의 read/edit/exec/Git 정상 여부와 worker 기능은 별개다. worker 결과가 실제 도착하지 않았으면 문서에 subagent/Claude audit PASS를 쓰지 않는다.
+
 Codex/Paseo 대화 기록의 재현 가능한 내보내기 - 2026-08-30
 - 현재 루트 대화의 정식 원본은 Codex rollout JSONL `rollout-2026-08-20T22-11-32-01a01f4c-5976-7920-8e93-83fa8f6edfdb.jsonl`이다. Paseo의 agent metadata JSON은 세션 ID와 런타임 정보만 가지며 전체 대화 원문은 담지 않는다.
 - 화면 대화는 `response_item` 중 payload type `message`, role `user|assistant`, content type `input_text|output_text`만 추리면 재현된다. `<paseo-system>`으로 전달된 하위 에이전트 결과는 user role이므로 별도 라벨로 보존한다.

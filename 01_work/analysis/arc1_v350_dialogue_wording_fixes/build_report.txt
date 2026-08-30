@@ -1,0 +1,9 @@
+V350 runtime-reviewed dialogue wording fixes
+base=arc1_v349_floor_resident_helper_reuse_TEST_ONLY_EC5724F9.zip sha256=EC5724F91C6251C76D349AAB135BC411010CE7E4BBBDBCF0D4EFFEFE1488D481
+output=arc1_v350_dialogue_wording_fixes_TEST_ONLY_2B760572.zip sha256=2B76057250E02F29D6EAA55A8882B04A420F3C232715409938DAF2070AD4041E
+delta=arc1_v350_dialogue_wording_fixes_TEST_ONLY_delta_from_v349_69FA6A34.zip sha256=69FA6A34956506EC9209144A1E37981224ED01534B876DD42A03D125FB7B7C9D
+changed_members=5/S5024.DAT,5/S5052.DAT
+changed_bytes={'5/S5024.DAT': 31, '5/S5052.DAT': 79}
+PSX.EXE/COMM.IMG/all other members=byte exact V349
+E2 callers and +0x7F slot metadata=byte exact V349
+runtime=PENDING user cold boot/dialogue review; TEST_ONLY
