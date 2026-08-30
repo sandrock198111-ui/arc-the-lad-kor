@@ -1,0 +1,32 @@
+{
+  "verdict": "PASS",
+  "archive": {
+    "members": 164,
+    "changed": [
+      "4/S4031.DAT",
+      "PSX.EXE"
+    ],
+    "changed_bytes": {
+      "4/S4031.DAT": 3,
+      "PSX.EXE": 60
+    },
+    "full_sha256": "30A40DD7560CAEC5F9C464BC0166EDC00FADAB9F95823748B44AF260334890B8",
+    "delta_sha256": "DDC32CABE4903B01A61C67F559AF9CB564ED88FF66F2F0999E588DAA3CC90B11"
+  },
+  "v321_census": {
+    "total": 57,
+    "restored_nontext": 34,
+    "preserved_real_mon": 2,
+    "preserved_later_pointers": 21
+  },
+  "freeze": {
+    "index": 391,
+    "entry_file": "0x7C004",
+    "before": "0x8014643C",
+    "after": "0x8014AB3C",
+    "target_file": "0x3033C"
+  },
+  "texts": "PASS",
+  "COMM_IMG": "byte exact",
+  "runtime": "PENDING user cold boot"
+}

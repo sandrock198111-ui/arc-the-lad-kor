@@ -1,0 +1,9 @@
+V346 independent verification PASS
+archives=30A40DD7560CAEC5F9C464BC0166EDC00FADAB9F95823748B44AF260334890B8 delta=DDC32CABE4903B01A61C67F559AF9CB564ED88FF66F2F0999E588DAA3CC90B11
+members=164 changed=4/S4031.DAT,PSX.EXE bytes=4/S4031.DAT:3,PSX.EXE:60
+V321=57 total / 34 nontext restored / 2 real 몬 preserved / 21 later pointers preserved
+freeze=dispatcher[391] 0x8014643C -> 0x8014AB3C; target body matches V320C
+numeric tables and 30 stride-0x3A fields restored
+texts=안쪽에; 좋아! ... 찾자.; 레벨 상승; 미르마나 three strings PASS
+COMM.IMG and all undeclared bytes byte exact
+runtime=PENDING user cold boot; TEST_ONLY

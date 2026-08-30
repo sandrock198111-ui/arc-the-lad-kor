@@ -1,0 +1,53 @@
+{
+  "version": "V346",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "base": {
+    "file": "arc1_v345_story_timing_cursor_recovery_TEST_ONLY_AB9A8E99.zip",
+    "sha256": "AB9A8E99707D4E11EF0878E65451AA0DAD441328C6EDE9277E6142A9164BC54D",
+    "runtime": "PASS_EXCEPT_SKILL_USE_FREEZE"
+  },
+  "output": {
+    "file": "arc1_v346_v321_structural_text_repair_TEST_ONLY_30A40DD7.zip",
+    "sha256": "30A40DD7560CAEC5F9C464BC0166EDC00FADAB9F95823748B44AF260334890B8"
+  },
+  "delta": {
+    "file": "arc1_v346_v321_structural_text_repair_TEST_ONLY_delta_from_v345_DDC32CAB.zip",
+    "sha256": "DDC32CABE4903B01A61C67F559AF9CB564ED88FF66F2F0999E588DAA3CC90B11"
+  },
+  "changed_members_vs_v345": [
+    "4/S4031.DAT",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "4/S4031.DAT": 3,
+    "PSX.EXE": 60
+  },
+  "v321_census": {
+    "total_AB_to_64": 57,
+    "restore_nontext": 34,
+    "preserve_real_mon_text": 2,
+    "later_rebuilt_pointers": 21
+  },
+  "freeze": {
+    "dispatcher_index": 391,
+    "entry_file": "0x7C004",
+    "before": "0x8014643C",
+    "after": "0x8014AB3C"
+  },
+  "texts": [
+    "앞으로 네 여행에 도움이 될 고대의 기록은 토우빌 안쪽에",
+    "좋아! 고대의 기록을 찾자.",
+    "｢기술명｣ 레벨 상승",
+    "미르마나 / 미르마나 공항 / 미르마나 군본부"
+  ],
+  "regression_guards": {
+    "COMM_IMG": "byte exact",
+    "real_mon_tokens": [
+      "0x82382",
+      "0x82407"
+    ],
+    "cursor_timing": "V345 byte exact outside declared writes",
+    "all_member_sizes": "byte exact"
+  },
+  "runtime": "PENDING user cold boot; TEST_ONLY"
+}

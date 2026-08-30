@@ -1,0 +1,13 @@
+V346 V321 structural + text repair
+base=arc1_v345_story_timing_cursor_recovery_TEST_ONLY_AB9A8E99.zip sha256=AB9A8E99707D4E11EF0878E65451AA0DAD441328C6EDE9277E6142A9164BC54D
+output=arc1_v346_v321_structural_text_repair_TEST_ONLY_30A40DD7.zip sha256=30A40DD7560CAEC5F9C464BC0166EDC00FADAB9F95823748B44AF260334890B8
+delta=arc1_v346_v321_structural_text_repair_TEST_ONLY_delta_from_v345_DDC32CAB.zip sha256=DDC32CABE4903B01A61C67F559AF9CB564ED88FF66F2F0999E588DAA3CC90B11
+PSX.EXE sha256=11D8B8B737FA34BED7C05F5005AF32398AB8C838E7537A7D274DF19B65E50F1A
+changed_members=4/S4031.DAT,PSX.EXE
+changed_bytes={"4/S4031.DAT": 3, "PSX.EXE": 60}
+V321 census=57 total: 34 nontext restored, 2 real 몬 preserved, 21 later pointers preserved
+freeze=dispatcher[391] 0x8014643C -> 0x8014AB3C
+story=안쪽에; 좋아! 고대의 기록을 찾자.
+UI=느레벨 -> 레벨; 밀마나 -> 미르마나 three live strings
+COMM.IMG and all cursor/timing ranges unchanged
+runtime=PENDING user cold boot; TEST_ONLY

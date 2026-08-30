@@ -1,0 +1,17 @@
+V346 ISO verification
+Date: 2026-08-30
+
+Tool: 02_scripts/verify_iso_layout.py (read-only)
+Layout: v104
+
+- ISO9660 files: 507
+- Original data LBAs preserved: 506/506
+- COMM.DAT / COMM.IMG / COMM.SND LBA: 307 / 667 / 891
+- PSX.EXE LBA: 268481
+- PSX.EXE size: 587776 bytes
+- Patched archive members matching disc readback: 164/164
+- V346 ZIP and V346.bin PSX.EXE / 4/S4031.DAT hashes: exact match
+- Claude independent sector-level comparison: only PSX.EXE and 4/S4031.DAT differ from V345.bin
+
+Result: DISC INTEGRITY PASS
+Runtime behavior: PENDING

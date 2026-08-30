@@ -1,3 +1,16 @@
+2026-08-30 | V345 슬롯 5 스킬 사용 프리징 관찰 및 V346 구조 복원 | 사용자 V345 세이브/증상, V320C→V321→V345 EXE 전수 diff, dispatcher 포인터 추적, py_compile, 결정적 2회 빌드, 독립 verifier, check_build V345/V346 대조, v104 ISO readback, Claude CLI 읽기 전용 감사 | V345 RUNTIME FAIL (SKILL USE FREEZE); V346 STATIC PATCH PASS / DISC INTEGRITY PASS / CLAUDE AUDIT COMPLETE / RUNTIME PENDING.
+- 사용자 실기에서 슬롯 5가 스킬 사용 단계에서 정지했다. 상태 PC/레지스터와 객체 디스패처를 추적해 index 391의 엔트리가 0x8014643C로 자기 루프 쪽을 가리키는 것을 확인했다. 정상 V320C 엔트리는 0x8014AB3C이며 대상 함수 본체는 V345에도 보존돼 있었다.
+- V321의 전역 AB→64 변경 57개를 독립 전수 조사했다. 34개는 숫자 테이블 3바이트, dispatcher 포인터 1바이트, stride 0x3A 구조체 필드 30바이트로 확인돼 복원했다. 진짜 '몬' 2개와 후속 버전 포인터 재작성 21개는 건드리지 않았다.
+- 02_scripts/build_arc1_v346_v321_structural_text_repair.py를 두 번 실행해 full/delta 해시가 동일함을 확인했다. 변경 멤버는 4/S4031.DAT과 PSX.EXE 두 개, 실제 변경은 3/60바이트였다.
+- 02_scripts/verify_arc1_v346_v321_structural_text_repair.py가 164멤버·Expected-Write·34/2/21 분류·dispatcher target·수치표·30필드·문구·미르마나 3문자열/4포인터·COMM/비대상 보존을 독립 재현해 PASS했다.
+- 4/S4031.DAT는 안쪽에, 좋아! ... 찾자.로 디코드됐고 PSX.EXE는 레벨 상승, 미르마나/미르마나 공항/미르마나 군본부를 확인했다.
+- check_build.py의 선택지 75, marker 2, 본문 3줄 초과 18 경고는 V345와 V346의 개수·위치가 완전히 같아 이번 변경의 신규 회귀가 아닌 계승 부채로 분류했다.
+- package_test_iso.py --layout v104로 V346.bin/cue를 만들었다. verify_iso_layout.py 결과 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481, ZIP 멤버 164/164 readback PASS였다.
+- Claude CLI 독립 감사가 실제 V346.bin의 507개 파일을 V345.bin과 비교했다. PSX.EXE와 4/S4031.DAT만 달랐고 ZIP readback, dispatcher, 57개 계보 분류, 문구 및 포인터를 재확인해 정적 결함 0건으로 판정했다.
+- DuckStation용 V346_1.mcd는 V345_1.mcd에서 복사됐고 SHA-256은 3D7196523EEEB8AB9D58A37D6AC249D8BD312516A5BF10349EC2D09561D47D70이다.
+- 런타임 확인 순서: 슬롯 5 스킬 사용 프리징 해소를 최우선 확인한 뒤 아이템 사용 커서, 안쪽에/좋아!/찾자./레벨/미르마나 표기, 기존 대사·UI·커서 회귀를 확인한다.
+- V346 실기 결과가 없으므로 프리징 해소를 런타임 PASS로 간주하지 않는다. TEST_ONLY 유지.
+
 2026-08-30 | V342 반복 검은 화면 원인 확정 및 V343 RA-safe W16 훅 | V341/V342 DUCCU CPU·GPU·VRAM 재해제, 공용 글리프 빌더와 helper MIPS 제어흐름 전수 추적, py_compile·결정적 2회 빌드, 독립 verifier·Expected-Write·멤버 보존, v104 LBA/164멤버 readback, V342 check_build 계보 대조, Claude Code CLI 감사 시도 | V341/V342 RUNTIME FAIL / DO NOT RUN; V343 STATIC PATCH PASS / DISC INTEGRITY PASS / CLAUDE AUDIT NOT RUN (SESSION LIMIT) / RUNTIME PENDING.
 - 두 실패 상태 SHA-256은 V341 `7A20C1DF468575C5760A5F32E13BC1D8AA11AE9AF9B48E860C364F9E688C7C9D`, V342 `AED47AEC0064110A415F4FD715A0479FAF4FB86EB30AFEB54A540A3A72CF2836`이다. 두 상태 모두 ExcCode=0이며 CPU `$ra=0x8016B5FC`; V341 PC는 `0x8016B64C`, V342 PC는 `0x8016B60C`다. GPU display는 활성이고 CRTC는 320x224지만 표시 VRAM 사각형이 전부 0이었다.
 - 공용 글리프 빌더 `0x8016B518`은 원래 leaf이고 마지막 `0x8016B660 jr $ra`로 호출자에게 돌아간다. V341/V342가 내부 `0x8016B5F4`에 넣은 `jal 0x8019D024`가 `$ra`를 `0x8016B5FC`로 덮었다. helper의 `jr $ra`는 B5FC로 돌아오지만 이후 원 함수의 마지막 `jr $ra`도 다시 B5FC로 가므로 무한 재진입한다. V342의 범위 커서 네 구간 롤백은 이 JAL을 남겼기 때문에 실패가 반복됐다.

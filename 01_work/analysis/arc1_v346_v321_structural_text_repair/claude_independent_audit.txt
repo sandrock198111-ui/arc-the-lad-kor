@@ -1,0 +1,20 @@
+V346 CLAUDE INDEPENDENT AUDIT
+Date: 2026-08-30
+Method: claude CLI, read-only, fresh no-persistence session
+
+Result: STATIC/DISC PASS, RUNTIME PENDING
+
+- Read AGENTS.md and the four mandatory project documents before auditing.
+- Recomputed SHA-256 for V345 base, V346 full, and V346 delta archives: all matched the manifest.
+- Confirmed 164 members in identical order. Only PSX.EXE and 4/S4031.DAT changed; COMM.IMG is byte-exact.
+- Parsed V346.bin and compared all 507 ISO files against V345.bin. Only PSX.EXE and 4/S4031.DAT differ; LBA and sizes are unchanged.
+- Confirmed ISO readback of PSX.EXE and 4/S4031.DAT matches the V346 ZIP exactly.
+- Confirmed dispatcher[391] changes from 0x8014643C to 0x8014AB3C.
+- Independently reconstructed the V321 AB->64 census: 57 total = 34 structural restores + 2 genuine '몬' bytes retained + 21 later-rebuilt pointer bytes retained.
+- Confirmed the three story-byte fixes, the level-up suffix fix, all three 미르마나 payloads, four pointers, and the 군본부 boundary.
+- No static binary defect was found.
+
+Audit gate noted before documentation update:
+- V346 and the V345 skill-use freeze observation were not yet present in the four mandatory documents.
+- This file and the V346 documentation update close that documentation gap.
+- Cold-boot runtime verification is still required; this audit does not claim the freeze is fixed at runtime.
