@@ -181,3 +181,45 @@ commit/push 후에는 커밋 해시, 변경 파일, 남은 문제를 사용자�
 6. 다음 작업 후보 제안
 
 이 과정을 생략한 채 작업을 종료하지 않는다.
+
+---
+
+# Claude 협업 규칙
+
+Codex는 필요할 때 Claude를 호출할 수 있다. 2026-08-29 설정 완료.
+
+## 호출 방법 두 가지
+
+### 1. 작업 위임 (권장)
+
+셸에서 직접 실행한다. Claude가 스스로 판단하고 도구를 써서 결과를 돌려준다.
+
+    claude -p "지시 내용"
+
+설정 변경이나 재시작이 필요 없다. 검증 완료.
+
+### 2. MCP 도구로 사용
+
+`~/.codex/config.toml` 의 `[mcp_servers.claude]` 에 등록되어 있다.
+Codex 재시작 후 Read/Edit/Bash/Glob/Grep/Skill/Agent 등 28개 도구를 쓸 수 있다.
+
+이 경로는 도구만 빌려오는 것이라 판단은 Codex가 한다.
+Claude에게 생각을 시키려면 1번을 쓴다.
+
+## 확인된 실패 원인 (다시 시도하지 말 것)
+
+- **Paseo의 MCP 주입은 Codex에서 동작하지 않는다.**
+  `~/.paseo/config.json` 의 `injectIntoAgents` 가 켜져 있어도 소용없다.
+  Codex가 요구하는 MCP 프로토콜 `2026-07-28` 을 Paseo 0.6.1의 번들 SDK가
+    모른다(최대 `2025-11-25`). `~/.paseo/daemon.log` 에
+  `Unsupported protocol version` 으로 누적된다.
+  Claude Code는 구버전으로 협상해 정상 동작하므로, 한쪽만 되는 비대칭이 생긴다.
+  0.6.1이 최신 릴리스라 업데이트로 해결할 수 없다. Paseo 신버전을 기다린다.
+
+- **claude-cowork 플러그인 / external_agent import는 호출 수단이 아니다.**
+  끝난 Claude 세션 로그를 복사해 오는 기능이며, 전제가 되는
+  `AppData\Roaming\Claude\`(데스크톱 앱)가 설치되어 있지 않다.
+
+- **Windows에서 `claude` 또는 `claude.cmd` 를 MCP command로 주면 실패한다.**
+  전자는 sh 스크립트, 후자는 배치 파일이라 spawn이 깨진다.
+  반드시 `claude.exe` 전체 경로를 준다.

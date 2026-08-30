@@ -1,0 +1,20 @@
+V342 RUNTIME RESULT: FAIL / DO NOT RUN
+
+Input savestate:
+  HASH-28A054D86C3420E1_1.sav
+  SHA-256 AED47AEC0064110A415F4FD715A0479FAF4FB86EB30AFEB54A540A3A72CF2836
+
+Observed:
+  CPU PC       0x8016B60C
+  CPU r31/RA   0x8016B5FC
+  ExcCode      0
+  GPU display  enabled, 320x224
+  visible VRAM all zero
+
+Confirmed cause:
+  0x8016B5F4 used JAL inside the originally leaf common glyph builder.
+  JAL replaced the caller return address with 0x8016B5FC.
+  The helper returned there, then the original function's final JR RA returned
+  to 0x8016B5FC again. V342 retained this hook, so the V341 failure persisted.
+
+Superseded by V343 RA-safe non-link jump/tail-jump design.

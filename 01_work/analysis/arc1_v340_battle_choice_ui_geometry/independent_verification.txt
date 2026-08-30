@@ -1,0 +1,10 @@
+V340 independent static verification: PASS
+full_sha256=3F63BFD149A100152DE8B1B3223136CC501AF5AC19E19F443D4519142F9C783E
+delta_sha256=A58CA81C5C49D849BA6ED8B7788F0FB28FF4E48ED2F147E55F4C34AE3FF734B0
+psx_sha256=9EE5CD445BA98B2B2BFB92C11772AB2A1DDCA656BE0926FC9D95E611176F6180
+archive=164 members; changed=C1/SC011.DAT,C1/SC021.DAT,C1/SC031.DAT,C1/SC041.DAT,C1/SC051.DAT,C1/SC061.DAT,C1/SC081.DAT,C2/SC0A1.DAT,PSX.EXE; Expected-Write exact
+battle_choices=V339 29 mismatches -> V340 0; 63/63 approved bitmap; E5/E6 byte offsets unchanged
+E7=old/new V truth table 512/512; helper remains inside original 72B; external edges pinned
+bottom_help=V339 states2-4 all y214; predicted V340 W16 y213, E7 W12/W20 y214
+configuration=V339 state6 bars 51x14; predicted V340 62x16
+runtime=PENDING V340 cold boot; TEST_ONLY

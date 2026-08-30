@@ -1,0 +1,19 @@
+V343 v104 disc verification: PASS (layout/member integrity only)
+
+V343.bin
+  size    632495136
+  sha256  DABBA2169A170A8F3533ABB825107A5637E20E7C9F5B3787FE7AE3AB14AC5DF1
+
+V343.cue
+  sha256  326511DD0A139BCDE3BF68CB542FBB745D0973195AACA8F1840FE40623448CA5
+
+verify_iso_layout.py:
+  files                    507
+  data LBAs preserved      506/506
+  COMM.DAT LBA             307 PASS
+  COMM.IMG LBA             667 PASS
+  COMM.SND LBA             891 PASS
+  PSX.EXE                   LBA 268481, 587776 bytes
+  patched member readback  164/164 PASS
+
+Runtime is not established. V343 remains TEST_ONLY / RUNTIME PENDING.

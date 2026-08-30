@@ -1,0 +1,6 @@
+﻿member,offset,before,after,reason
+PSX.EXE,0x50DF7,0C,08,leaf_hook_jal_to_j_preserve_ra
+PSX.EXE,0x82840,08,7F,helper_fixed_continuation_jump
+PSX.EXE,0x82841,00,AD,helper_fixed_continuation_jump
+PSX.EXE,0x82842,E0,05,helper_fixed_continuation_jump
+PSX.EXE,0x82843,03,08,helper_fixed_continuation_jump

@@ -1,0 +1,49 @@
+{
+  "version": "V343",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "base": {
+    "file": "arc1_v342_boot_recovery_TEST_ONLY_9EAEC08A.zip",
+    "sha256": "9EAEC08A3D94120C712D72321AC28D26272EF771D53CC465542090AC78D24E1C",
+    "runtime": "FAIL_BLACK_SCREEN"
+  },
+  "output": {
+    "file": "arc1_v343_ra_safe_w16_hook_TEST_ONLY_CA08BDEB.zip",
+    "sha256": "CA08BDEB840C5BCC1D76D33D1D48F98EDAD6D764D3DFD48A70E186CBF35099D4"
+  },
+  "delta": {
+    "file": "arc1_v343_ra_safe_w16_hook_TEST_ONLY_delta_from_v342_49A8C6F8.zip",
+    "sha256": "49A8C6F8F9D67208267D9B78CE8A071D143D33F4E7715F987EE3FB22D2EDA192"
+  },
+  "changed_members_vs_v342": [
+    "PSX.EXE"
+  ],
+  "changed_psx_bytes": 5,
+  "control_flow": {
+    "hook": {
+      "ram": "0x8016B5F4",
+      "before": "0x0C067409",
+      "after": "0x08067409"
+    },
+    "helper_tail": {
+      "ram": "0x8019D040",
+      "before": "0x03E00008",
+      "after": "0x0805AD7F"
+    },
+    "continuation": "0x8016B5FC",
+    "delay_slot_preserved": "0xA4A2002E"
+  },
+  "preserved": [
+    "all V342 non-PSX members byte exact",
+    "V342 cursor-control rollback",
+    "V341 choice completion DAT metadata",
+    "V341 bottom-help W16 conditional Y behavior",
+    "V341 Orkas region/location label"
+  ],
+  "runtime_evidence": {
+    "v341_v342_ra": "0x8016B5FC",
+    "v341_pc": "0x8016B64C",
+    "v342_pc": "0x8016B60C",
+    "exception_code": 0,
+    "display_rectangle": "320x224 valid but all-zero VRAM"
+  }
+}

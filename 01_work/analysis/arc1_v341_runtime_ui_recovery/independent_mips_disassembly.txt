@@ -1,0 +1,138 @@
+[w16_hook]
+0x8016B5F0: lhu $v0, 8($a2)
+0x8016B5F4: jal 0x8019d024
+0x8016B5F8: nop
+0x8016B5FC: lbu $v0, 0xc($a2)
+[e7_hook]
+0x8016B6F8: lhu $v0, 8($s1)
+0x8016B6FC: ori $a1, $zero, 0x1eb
+0x8016B700: ori $a0, $zero, 0x10
+0x8016B704: jal 0x80178e64
+0x8016B708: sh $v0, 0x2e($s0)
+[e7_w16_helper]
+0x8019D000: sltiu $t0, $v1, 0xf
+0x8019D004: ori $v0, $zero, 0x4114
+0x8019D008: srlv $v0, $v0, $v1
+0x8019D00C: and $t0, $t0, $v0
+0x8019D010: beqz $t0, 0x8019d01c
+0x8019D014: ori $v0, $zero, 0x82
+0x8019D018: ori $v0, $zero, 0xe4
+0x8019D01C: j 0x8016b6d0
+0x8019D020: sb $v0, 0x29($s0)
+0x8019D024: lui $t0, 0x801f
+0x8019D028: addiu $t0, $t0, 0xe18
+0x8019D02C: bne $a2, $t0, 0x8019d040
+0x8019D030: ori $t0, $zero, 0xd6
+0x8019D034: bne $v0, $t0, 0x8019d040
+0x8019D038: nop
+0x8019D03C: addiu $v0, $v0, -1
+0x8019D040: jr $ra
+0x8019D044: sh $v0, 0x2e($a1)
+[frame_hook]
+0x8011C858: jal 0x80176e74
+0x8011C85C: move $a0, $s0
+0x8011C860: jal 0x8018fd90
+0x8011C864: addiu $a0, $s0, 0x70
+0x8011C868: lw $ra, 0x14($sp)
+0x8011C86C: lw $s0, 0x10($sp)
+[cursor_gate]
+0x8018FD90: lui $t0, 0x801f
+0x8018FD94: lw $t1, -0x1fa8($t0)
+0x8018FD98: lhu $t2, -0x1fdc($t0)
+0x8018FD9C: lui $t3, 0x801f
+0x8018FDA0: addiu $t3, $t3, 0x52bc
+0x8018FDA4: bne $t1, $t3, 0x8018fdbc
+0x8018FDA8: nop
+0x8018FDAC: bnez $t2, 0x8018fdbc
+0x8018FDB0: sw $a0, -0x18($sp)
+0x8018FDB4: j 0x801ff488
+0x8018FDB8: nop
+0x8018FDBC: j 0x80176e1c
+0x8018FDC0: nop
+[resident_cursor_uploader_full_81_words]
+0x801FF488: addiu $sp, $sp, -0x1d0
+0x801FF48C: sw $ra, 0x1cc($sp)
+0x801FF490: sw $s0, 0x1c8($sp)
+0x801FF494: sw $s2, 0x1c4($sp)
+0x801FF498: sw $s3, 0x1c0($sp)
+0x801FF49C: sw $s4, 0x1bc($sp)
+0x801FF4A0: lui $s0, 0x801f
+0x801FF4A4: ori $s0, $s0, 0xf5cc
+0x801FF4A8: ori $s2, $zero, 0x21
+0x801FF4AC: ori $s3, $zero, 0x1bf
+0x801FF4B0: ori $t0, $zero, 0x3c0
+0x801FF4B4: sh $t0, ($sp)
+0x801FF4B8: ori $t0, $zero, 0x19
+0x801FF4BC: sh $t0, 4($sp)
+0x801FF4C0: sltiu $t0, $s2, 9
+0x801FF4C4: bnez $t0, 0x801ff4d0
+0x801FF4C8: move $s4, $s2
+0x801FF4CC: ori $s4, $zero, 8
+0x801FF4D0: sh $s3, 2($sp)
+0x801FF4D4: sh $s4, 6($sp)
+0x801FF4D8: addiu $t0, $sp, 8
+0x801FF4DC: sll $t2, $s4, 5
+0x801FF4E0: sll $t3, $s4, 4
+0x801FF4E4: addu $t2, $t2, $t3
+0x801FF4E8: sll $t3, $s4, 1
+0x801FF4EC: addu $t2, $t2, $t3
+0x801FF4F0: addu $t1, $t0, $t2
+0x801FF4F4: lbu $t2, ($s0)
+0x801FF4F8: addiu $s0, $s0, 1
+0x801FF4FC: andi $t4, $t2, 0x3f
+0x801FF500: andi $t3, $t2, 0x80
+0x801FF504: beqz $t3, 0x801ff55c
+0x801FF508: addiu $t4, $t4, 1
+0x801FF50C: andi $t3, $t2, 0x40
+0x801FF510: bnez $t3, 0x801ff530
+0x801FF514: nop
+0x801FF518: sh $zero, ($t0)
+0x801FF51C: addiu $t4, $t4, -1
+0x801FF520: bnez $t4, 0x801ff518
+0x801FF524: addiu $t0, $t0, 2
+0x801FF528: b 0x801ff580
+0x801FF52C: nop
+0x801FF530: lbu $t5, ($s0)
+0x801FF534: lbu $t6, 1($s0)
+0x801FF538: addiu $s0, $s0, 2
+0x801FF53C: sll $t6, $t6, 8
+0x801FF540: or $t5, $t5, $t6
+0x801FF544: sh $t5, ($t0)
+0x801FF548: addiu $t4, $t4, -1
+0x801FF54C: bnez $t4, 0x801ff544
+0x801FF550: addiu $t0, $t0, 2
+0x801FF554: b 0x801ff580
+0x801FF558: nop
+0x801FF55C: lbu $t5, ($s0)
+0x801FF560: lbu $t6, 1($s0)
+0x801FF564: addiu $s0, $s0, 2
+0x801FF568: sll $t6, $t6, 8
+0x801FF56C: or $t5, $t5, $t6
+0x801FF570: sh $t5, ($t0)
+0x801FF574: addiu $t4, $t4, -1
+0x801FF578: bnez $t4, 0x801ff55c
+0x801FF57C: addiu $t0, $t0, 2
+0x801FF580: bne $t0, $t1, 0x801ff4f4
+0x801FF584: nop
+0x801FF588: sh $zero, ($t1)
+0x801FF58C: move $a0, $sp
+0x801FF590: jal 0x80177e4c
+0x801FF594: addiu $a1, $sp, 8
+0x801FF598: addu $s3, $s3, $s4
+0x801FF59C: subu $s2, $s2, $s4
+0x801FF5A0: bnez $s2, 0x801ff4c0
+0x801FF5A4: nop
+0x801FF5A8: lw $a0, 0x1b8($sp)
+0x801FF5AC: lw $s4, 0x1bc($sp)
+0x801FF5B0: jal 0x80176e1c
+0x801FF5B4: lw $s3, 0x1c0($sp)
+0x801FF5B8: lw $ra, 0x1cc($sp)
+0x801FF5BC: lw $s2, 0x1c4($sp)
+0x801FF5C0: lw $s0, 0x1c8($sp)
+0x801FF5C4: jr $ra
+0x801FF5C8: addiu $sp, $sp, 0x1d0
+[cursor_uploader_static_summary]
+sha256=D27FAD41247937C9B80E1F5125850F10803FBBD9B9BA71A058D5308198F8B217
+stack_frame=0x1D0 fixed; branches remain inside helper
+calls=0x801FF590->LoadImage,0x801FF5B0->DrawOT
+upload_chunks=8,8,8,8,1 rows; destination=(960,447), width=25, total_height=33

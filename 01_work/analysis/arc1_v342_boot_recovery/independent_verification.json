@@ -1,0 +1,20 @@
+{
+  "result": "STATIC_PASS_RUNTIME_PENDING",
+  "changed_members_vs_v341": [
+    "PSX.EXE"
+  ],
+  "actual_changed_psx_bytes": 64,
+  "cursor_control": "four ranges V340 byte exact",
+  "preserved": "all V341 non-cursor bytes and all DAT/COMM members byte exact",
+  "failure_evidence": {
+    "sha256": "7A20C1DF468575C5760A5F32E13BC1D8AA11AE9AF9B48E860C364F9E688C7C9D",
+    "game_id": "V341",
+    "thumbnail_rgb_nonzero_bytes": 0,
+    "current_pc": "0x8016B64C",
+    "next_pc": "0x8016B64C",
+    "cause": "0x10000400",
+    "exception_code": 0,
+    "interpretation": "CPU is alive in normal text rendering; display/frame regression, not exception crash"
+  },
+  "runtime": "V342 cold boot PENDING"
+}

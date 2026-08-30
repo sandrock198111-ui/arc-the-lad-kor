@@ -1,0 +1,11 @@
+V342 boot/display recovery build
+base=arc1_v341_runtime_ui_recovery_TEST_ONLY_FCAF5CFB.zip sha256=FCAF5CFB8BAC230A041DC68E9B23B0F6916112D8F5406B2312DD19CE2A4E33D2
+output=arc1_v342_boot_recovery_TEST_ONLY_9EAEC08A.zip sha256=9EAEC08A3D94120C712D72321AC28D26272EF771D53CC465542090AC78D24E1C
+delta=arc1_v342_boot_recovery_TEST_ONLY_delta_from_v341_9BAF1A54.zip sha256=9BAF1A5477B71C501C8B46EE286A667B82B5E296A2E839DBF0D3FC1BE27584EB
+PSX.EXE sha256=C1A4FC63449A58939295849F033679A1EC52B6EC587A52736BF476C6CA77144D
+changed_members_vs_v341=PSX.EXE
+changed_PSX_bytes=64; Expected-Write exact
+cursor_control=V340 byte exact at frame hook, initializer, gate, uploader epilogue
+preserved=choice alignment,bottom-help W16 Y,오르카스 언덕
+range_cursor=OPEN (V340 behavior restored)
+runtime=PENDING cold boot; TEST_ONLY

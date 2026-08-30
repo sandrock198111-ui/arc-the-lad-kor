@@ -1,0 +1,10 @@
+V343 independent static verification: PASS
+full=arc1_v343_ra_safe_w16_hook_TEST_ONLY_CA08BDEB.zip sha256=CA08BDEB840C5BCC1D76D33D1D48F98EDAD6D764D3DFD48A70E186CBF35099D4
+delta=arc1_v343_ra_safe_w16_hook_TEST_ONLY_delta_from_v342_49A8C6F8.zip sha256=49A8C6F8F9D67208267D9B78CE8A071D143D33F4E7715F987EE3FB22D2EDA192
+PSX.EXE sha256=0CC93BE511AEA6074662728BE59838696BB418EFBE8C9641A669DFF629AFE8DE
+archive=164 members; changed_vs_V342=PSX.EXE only; changed_bytes=5
+control_flow=J(non-link) helper entry; two branches converge; J fixed continuation; r31 untouched
+delay_slots=hook NOP and packet-Y store preserved
+preserved=all other V342 bytes; every DAT/COMM member byte exact
+V342_failure=RA 0x8016B5FC, PC 0x8016B60C, ExcCode0, visible VRAM all zero
+runtime=V343 cold boot PENDING; TEST_ONLY

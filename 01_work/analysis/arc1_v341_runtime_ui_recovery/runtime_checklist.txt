@@ -1,0 +1,12 @@
+V341 cold-boot runtime checklist
+
+- Cold boot V341; do not resume a pre-patch save state.
+- Revisit the screenshot-1 battle choice: first row must align with the unchanged triangle; second row must follow at +16px.
+- Check bottom help: Korean W16 text is 1px higher, while O/□/×/START icons remain at the V339/V340-correct Y.
+- Check both dialogue/map labels read 오르카스 언덕.
+- Enter item and skill targeting on the reported battle maps: range tiles/cursor must be visible and controls usable.
+- Watch for frame-rate stalls while the item/skill range object is active.
+- Recheck configuration bars, dialogue, item/equipment/skill names, acquisition/level-up banners and world-map transition.
+- Save fresh DUCCU states for V341 attribution.
+
+Static result: PASS in builder. Runtime result: PENDING.

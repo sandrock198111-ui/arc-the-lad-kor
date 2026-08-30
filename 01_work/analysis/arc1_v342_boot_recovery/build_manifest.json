@@ -1,0 +1,54 @@
+{
+  "version": "V342",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "base": {
+    "file": "arc1_v341_runtime_ui_recovery_TEST_ONLY_FCAF5CFB.zip",
+    "sha256": "FCAF5CFB8BAC230A041DC68E9B23B0F6916112D8F5406B2312DD19CE2A4E33D2"
+  },
+  "rollback_source": {
+    "file": "arc1_v340_battle_choice_ui_geometry_TEST_ONLY_3F63BFD1.zip",
+    "sha256": "3F63BFD149A100152DE8B1B3223136CC501AF5AC19E19F443D4519142F9C783E"
+  },
+  "output": {
+    "file": "arc1_v342_boot_recovery_TEST_ONLY_9EAEC08A.zip",
+    "sha256": "9EAEC08A3D94120C712D72321AC28D26272EF771D53CC465542090AC78D24E1C"
+  },
+  "delta": {
+    "file": "arc1_v342_boot_recovery_TEST_ONLY_delta_from_v341_9BAF1A54.zip",
+    "sha256": "9BAF1A5477B71C501C8B46EE286A667B82B5E296A2E839DBF0D3FC1BE27584EB"
+  },
+  "changed_members_vs_v341": [
+    "PSX.EXE"
+  ],
+  "rollback_ranges": [
+    {
+      "offset": "0x2060",
+      "size": 4,
+      "label": "frame_DrawOT_call"
+    },
+    {
+      "offset": "0x3E14",
+      "size": 8,
+      "label": "range_initializer"
+    },
+    {
+      "offset": "0x75590",
+      "size": 52,
+      "label": "pre_DrawOT_cursor_gate"
+    },
+    {
+      "offset": "0x8F0D0",
+      "size": 36,
+      "label": "resident_uploader_epilogue"
+    }
+  ],
+  "preserved_v341_repairs": [
+    "15 battle choice completion metadata fixes",
+    "bottom-help W16-only Y-1 with E7 icons fixed",
+    "오르카스 언덕 region/location label"
+  ],
+  "known_open": [
+    "item/skill range cursor remains V340-invisible"
+  ],
+  "v341_failure": "black thumbnail; CPU ExcCode=0 at normal text-render code; frame/display regression"
+}

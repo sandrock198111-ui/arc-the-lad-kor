@@ -1,0 +1,26 @@
+{
+  "result": "STATIC_PASS_RUNTIME_PENDING",
+  "changed_members_vs_v342": [
+    "PSX.EXE"
+  ],
+  "actual_changed_psx_bytes": 5,
+  "control_flow": "non-link hook -> helper -> fixed continuation; r31 untouched",
+  "delay_slots": "hook NOP and packet-Y store preserved",
+  "preserved": "all other V342 bytes, including every DAT and COMM member, byte exact",
+  "v342_failure_evidence": {
+    "sha256": "AED47AEC0064110A415F4FD715A0479FAF4FB86EB30AFEB54A540A3A72CF2836",
+    "game_id": "V342",
+    "ra": "0x8016B5FC",
+    "current_pc": "0x8016B60C",
+    "cause": "0x00000400",
+    "visible_vram": [
+      0,
+      248,
+      320,
+      224
+    ],
+    "visible_nonzero_words": 0,
+    "thumbnail_rgb_nonzero_bytes": 0
+  },
+  "runtime": "V343 cold boot PENDING"
+}

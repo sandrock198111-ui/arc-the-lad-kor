@@ -1,0 +1,16 @@
+Claude Code audit status: NOT COMPLETED (SESSION LIMIT)
+
+2026-08-30:
+- `claude -p` short connectivity check returned OK.
+- Read-only file/ZIP audit request produced no output for about two minutes and
+  was terminated so the build workflow would not stall.
+- A second compact evidence-based audit request likewise produced no output
+  and was terminated.
+- One multiline invocation returned that evidence was absent, indicating the
+  Windows .cmd argument path did not preserve that request as intended.
+- A final ASCII-only direct-file audit request returned:
+  `You've hit your session limit · resets 11:30am (Asia/Seoul)`.
+
+Do not cite this as a Claude PASS. V343 currently relies on the local independent
+verifier, deterministic rebuild, Expected-Write checks, full member comparison,
+and v104 disc readback. Runtime remains PENDING.

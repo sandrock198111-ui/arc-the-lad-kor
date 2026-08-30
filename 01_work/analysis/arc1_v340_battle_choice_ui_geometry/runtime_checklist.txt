@@ -1,0 +1,11 @@
+V340 cold-boot runtime checklist
+
+- Boot the newly packaged V340 cue from a cold emulator start.
+- Revisit the screenshot-1 battle question and confirm first answer is 괜찮아, not 4 호.
+- Sample the nine battle-question families; especially 물론/괜찮다/싸운다/간다 answers.
+- In bottom battle help, confirm ordinary Korean text moved up 1px while ○/□/×/START stayed put.
+- Open configuration: every blue bar must be 62px wide and 16px high; 안/함 bottom pixels must stay inside.
+- Confirm dialogue, item/equipment/skill names, acquisition/level-up banners and icons match V339.
+- Save fresh DUCCU states for runtime attribution.
+
+Static result: PASS in builder. Runtime result: PENDING.

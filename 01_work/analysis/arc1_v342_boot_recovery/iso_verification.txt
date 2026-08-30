@@ -1,0 +1,20 @@
+V342 v104 disc layout verification
+date=2026-08-30
+runtime_status=PENDING user cold boot
+
+patch=03_output/arc1_v342_boot_recovery_TEST_ONLY_9EAEC08A.zip
+patch_sha256=9EAEC08A3D94120C712D72321AC28D26272EF771D53CC465542090AC78D24E1C
+bin=03_output/V342.bin
+bin_size=632495136
+bin_sha256=16B8F3B0FBE0F2A5F84452F42407AC363AE8FF29C3485E381174797D3485767E
+cue=03_output/V342.cue
+cue_sha256=21297C4D921B58BE07662B2F6A811D6311CE5DB0CEC352D5F843B85DF3842137
+layout=01_work/arc1_v104_layout.xml
+
+PASS built image contains 507 files.
+PASS all 506 non-EXE data files kept their original sector numbers.
+PASS COMM.DAT LBA 307, COMM.IMG LBA 667, COMM.SND LBA 891.
+PASS PSX.EXE is at LBA 268481, size 587776 bytes.
+PASS all 164 patched members read back byte-exact from the disc image.
+
+Scope: disc layout/member integrity only. V342 runtime behavior is not established.

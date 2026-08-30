@@ -1,0 +1,23 @@
+{
+  "result": "STATIC_PASS_RUNTIME_PENDING",
+  "archives": {
+    "members": 164,
+    "changed": [
+      "C1/SC011.DAT",
+      "C1/SC021.DAT",
+      "C1/SC031.DAT",
+      "C1/SC041.DAT",
+      "C1/SC051.DAT",
+      "C1/SC061.DAT",
+      "C1/SC081.DAT",
+      "C2/SC0A1.DAT",
+      "PSX.EXE"
+    ]
+  },
+  "expected_write": "exact",
+  "choices": "15 metadata-only completions; 63/63 E5/E6 topology unchanged",
+  "help": "W16 exact object+Y scope; E7 icons unchanged",
+  "map": "two pointers only -> 오르카스 언덕",
+  "cursor": "exact owner/active pre-DrawOT gate; RLE/descriptor/UV preserved",
+  "runtime": "V340 failure evidence reproduced; V341 cold boot PENDING"
+}

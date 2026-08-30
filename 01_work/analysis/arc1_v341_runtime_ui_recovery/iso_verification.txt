@@ -1,0 +1,25 @@
+V341 v104 disc layout verification
+date=2026-08-30
+runtime_status=PENDING user cold boot
+
+patch=03_output/arc1_v341_runtime_ui_recovery_TEST_ONLY_FCAF5CFB.zip
+patch_sha256=FCAF5CFB8BAC230A041DC68E9B23B0F6916112D8F5406B2312DD19CE2A4E33D2
+bin=03_output/V341.bin
+bin_size=632495136
+bin_sha256=4B59859E37E6FBE98D67BA8DD5926F88A08FF245F213BB171F2CE4E7A90FBA41
+cue=03_output/V341.cue
+cue_sha256=05EB1C2F7EE07DE0EFAAFD2236251A10FDF12E03C55AD9D15D48E2B5E7507D22
+layout=01_work/arc1_v104_layout.xml
+
+PASS built image contains 507 files, matching the reference file count.
+PASS all 506 non-EXE data files kept their original sector numbers.
+PASS COMM.DAT LBA 307, COMM.IMG LBA 667, COMM.SND LBA 891.
+PASS PSX.EXE is the final file at LBA 268481, size 587776 bytes.
+PASS all 164 patched members read back byte-exact from the disc image.
+
+Rejected first packaging attempt:
+- 02_scripts/package_patch_to_cue.py inserted SYSTEM.CNF and shifted all 506 data files by four sectors.
+- That image failed verification and was overwritten; it is not a valid V341 artifact.
+- The final image above was rebuilt with 02_scripts/package_test_iso.py --layout v104.
+
+Scope: disc layout/member integrity only. Runtime behavior is not established.

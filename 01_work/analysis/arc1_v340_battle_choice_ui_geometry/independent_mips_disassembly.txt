@@ -1,0 +1,38 @@
+E7 V + bottom-help Y helpers
+0x8019D000: 0F00682C  sltiu $t0, $v1, 0xf
+0x8019D004: 07000011  beqz $t0, 0x8019d024
+0x8019D008: 82000234  ori $v0, $zero, 0x82
+0x8019D00C: 14410834  ori $t0, $zero, 0x4114
+0x8019D010: 06406800  srlv $t0, $t0, $v1
+0x8019D014: 01000831  andi $t0, $t0, 1
+0x8019D018: 02000011  beqz $t0, 0x8019d024
+0x8019D01C: 00000000  nop
+0x8019D020: E4000234  ori $v0, $zero, 0xe4
+0x8019D024: B4AD0508  j 0x8016b6d0
+0x8019D028: 290002A2  sb $v0, 0x29($s0)
+0x8019D02C: 1F80083C  lui $t0, 0x801f
+0x8019D030: 180E0825  addiu $t0, $t0, 0xe18
+0x8019D034: 02002816  bne $s1, $t0, 0x8019d040
+0x8019D038: 00000000  nop
+0x8019D03C: 01004224  addiu $v0, $v0, 1
+0x8019D040: 0800E003  jr $ra
+0x8019D044: EB010534  ori $a1, $zero, 0x1eb
+
+E7 Y hook and CLUT call
+0x8016B6F8: 08002296  lhu $v0, 8($s1)
+0x8016B6FC: 0B74060C  jal 0x8019d02c
+0x8016B700: 10000434  ori $a0, $zero, 0x10
+0x8016B704: 99E3050C  jal 0x80178e64
+0x8016B708: 2E0002A6  sh $v0, 0x2e($s0)
+
+bottom-help producer
+0x8016C7AC: 30010534  ori $a1, $zero, 0x130
+0x8016C7B0: 0A000634  ori $a2, $zero, 0xa
+0x8016C7B4: F3B1050C  jal 0x8016c7cc
+0x8016C7B8: 08000734  ori $a3, $zero, 8
+
+configuration bar producer
+0x801607A4: 21200002  move $a0, $s0
+0x801607A8: 3E000534  ori $a1, $zero, 0x3e
+0x801607AC: 7BB5050C  jal 0x8016d5ec
+0x801607B0: 10000634  ori $a2, $zero, 0x10

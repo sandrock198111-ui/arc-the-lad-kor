@@ -1,0 +1,63 @@
+{
+  "build": "V340 TEST_ONLY battle choice and battle UI geometry",
+  "base": {
+    "path": "E:\\korean\\03_output\\arc1_v339_ui_banner_geometry_TEST_ONLY_FD442C74.zip",
+    "sha256": "FD442C7492F7BE2FCFAED5B3BE377D67FE9794B6767C356AC275D407F2030C17"
+  },
+  "output": {
+    "path": "E:\\korean\\03_output\\arc1_v340_battle_choice_ui_geometry_TEST_ONLY_3F63BFD1.zip",
+    "sha256": "3F63BFD149A100152DE8B1B3223136CC501AF5AC19E19F443D4519142F9C783E"
+  },
+  "delta": {
+    "path": "E:\\korean\\03_output\\arc1_v340_battle_choice_ui_geometry_TEST_ONLY_delta_from_v339_A58CA81C.zip",
+    "sha256": "A58CA81C5C49D849BA6ED8B7788F0FB28FF4E48ED2F147E55F4C34AE3FF734B0"
+  },
+  "changed_members": [
+    "C1/SC011.DAT",
+    "C1/SC021.DAT",
+    "C1/SC031.DAT",
+    "C1/SC041.DAT",
+    "C1/SC051.DAT",
+    "C1/SC061.DAT",
+    "C1/SC081.DAT",
+    "C2/SC0A1.DAT",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "C1/SC011.DAT": 17,
+    "C1/SC021.DAT": 17,
+    "C1/SC031.DAT": 17,
+    "C1/SC041.DAT": 24,
+    "C1/SC051.DAT": 17,
+    "C1/SC061.DAT": 17,
+    "C1/SC081.DAT": 8,
+    "C2/SC0A1.DAT": 14,
+    "PSX.EXE": 66
+  },
+  "battle_choices": {
+    "families": 9,
+    "bodies": 63,
+    "v339_bitmap_mismatches": 29,
+    "v340_bitmap_mismatches": 0,
+    "repaired_answers": {
+      "물론": 6,
+      "괜찮아": 7,
+      "괜찮다": 8,
+      "싸운다": 7,
+      "간다": 1
+    },
+    "e5_e6_offsets": "63/63 unchanged"
+  },
+  "bottom_help": {
+    "object": "0x801F0E18",
+    "ordinary_W16": "predicted y 214 -> 213",
+    "E7_W12_W20": "predicted y 214 -> 214",
+    "implementation": "base y -1 plus object-scoped E7 +1 at existing 72-byte helper"
+  },
+  "configuration": {
+    "bar": "51x14 -> 62x16",
+    "text_and_bar_x": "unchanged from V339"
+  },
+  "runtime": "PENDING user cold boot",
+  "release_status": "TEST_ONLY; DO NOT DISTRIBUTE"
+}

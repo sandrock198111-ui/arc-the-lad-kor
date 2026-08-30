@@ -1,0 +1,17 @@
+V340 v104 disc layout verification
+
+package=arc1_v340_battle_choice_ui_geometry_TEST_ONLY_3F63BFD1.zip
+bin=V340.bin
+bin_sha256=FC8C72253153CCDACFD35767A048B58947C5692C9874897F29880C5306AEF4DE
+cue=V340.cue
+cue_sha256=443E9D895978BF077ACFCECBC75BC82119651A07DDD054F595F1AFE4B30301B8
+
+PASS data file sector numbers: 506/506 unchanged
+PASS COMM.DAT LBA 307
+PASS COMM.IMG LBA 667
+PASS COMM.SND LBA 891
+PASS patched member readback: 164/164 byte exact
+PASS PSX.EXE LBA 268481, size 587776 bytes
+
+Scope: disc layout and member integrity only.
+Runtime: PENDING V340 cold boot; TEST_ONLY.

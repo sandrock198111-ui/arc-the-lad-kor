@@ -1,0 +1,9 @@
+V341 independent static verification: PASS
+full=arc1_v341_runtime_ui_recovery_TEST_ONLY_FCAF5CFB.zip sha256=FCAF5CFB8BAC230A041DC68E9B23B0F6916112D8F5406B2312DD19CE2A4E33D2
+delta=arc1_v341_runtime_ui_recovery_TEST_ONLY_delta_from_v340_7A776491.zip sha256=7A77649153E705CC5F19C1617F651EBB4952799558209E1EFB1F49008CC0AB09
+archive=164 members; changed=C1/SC011.DAT,C1/SC021.DAT,C1/SC031.DAT,C1/SC041.DAT,C1/SC051.DAT,C1/SC061.DAT,C1/SC081.DAT,C2/SC0A1.DAT,PSX.EXE; Expected-Write exact
+choice_alignment=15 metadata bytes only; body bytes/E5/E6 unchanged; SC041 full-file caller census PASS
+bottom_help=W16 only when object=0x801F0E18 and original Y=214; E7 0..511 truth table PASS
+map=region/location pointers only -> 오르카스 언덕
+cursor=owner/active gate truth table + stack algebra + RLE decode + MIPS inbound PASS
+runtime=V340 active states5/6 destination zero reproduced; V341 cold boot PENDING

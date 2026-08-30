@@ -1,0 +1,12 @@
+V341 TEST ONLY - runtime battle UI recovery
+base=arc1_v340_battle_choice_ui_geometry_TEST_ONLY_3F63BFD1.zip
+output=arc1_v341_runtime_ui_recovery_TEST_ONLY_FCAF5CFB.zip
+sha256=FCAF5CFB8BAC230A041DC68E9B23B0F6916112D8F5406B2312DD19CE2A4E33D2
+delta=arc1_v341_runtime_ui_recovery_TEST_ONLY_delta_from_v340_7A776491.zip
+delta_sha256=7A77649153E705CC5F19C1617F651EBB4952799558209E1EFB1F49008CC0AB09
+changed_members=C1/SC011.DAT,C1/SC021.DAT,C1/SC031.DAT,C1/SC041.DAT,C1/SC051.DAT,C1/SC061.DAT,C1/SC081.DAT,C2/SC0A1.DAT,PSX.EXE
+choice_alignment=15 metadata-only completions; first E5 rows align with preserved triangle
+bottom_help=ordinary W16 exact object+Y -1; E7 icons unchanged
+map_label=오르카스 언덕 shared by region/location pointers
+range_cursor=active-only pre-DrawOT refresh; descriptor/UV/RLE unchanged
+runtime=PENDING user cold boot; TEST_ONLY

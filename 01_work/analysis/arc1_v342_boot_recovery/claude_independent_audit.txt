@@ -1,0 +1,32 @@
+V342 Claude Code CLI 독립 감사 - 2026-08-30
+
+판정
+- BLOCKER: 0 (V342 정적 롤백 자체)
+- HIGH: 0 (검증 가능한 범위)
+- MEDIUM: 1 (Claude 샌드박스가 E:\korean 밖의 업로드 .sav를 직접 읽지 못함)
+- PASS: V340/V341/V342 원시 BIN과 해시를 이용한 네 구간 롤백·64바이트 Expected-Write 독립 재현
+
+독립 확인
+- V340.bin SHA-256 `FC8C72253153CCDACFD35767A048B58947C5692C9874897F29880C5306AEF4DE`
+- V341.bin SHA-256 `4B59859E37E6FBE98D67BA8DD5926F88A08FF245F213BB171F2CE4E7A90FBA41`
+- V342.bin SHA-256 `16B8F3B0FBE0F2A5F84452F42407AC363AE8FF29C3485E381174797D3485767E`
+- V342 full/delta ZIP과 cue 해시가 빌드 보고와 일치했다.
+- CD-ROM MODE2/2352, PSX.EXE LBA 268481을 기준으로 raw ISO에서 직접 읽었다.
+- `frame_DrawOT_call` file `0x2060`, `range_initializer` `0x3E14`, `pre_DrawOT_cursor_gate` `0x75590`, `resident_uploader_epilogue` `0x8F0D0` 네 구간은 V342가 V340과 완전 일치한다.
+- 네 구간의 경계 밖은 V342가 V341과 완전 일치한다.
+- V340↔V341 실제 차이를 구간별로 3+8+38+15=64바이트로 독립 재현했고 `expected_writes.csv`의 before/after와 일치했다.
+- COMM.IMG LBA 667과 PSX.EXE file `0x50000` 스팟체크는 V341/V342가 동일했다.
+- `bible_current.txt`는 V342 기준으로 승격되지 않았다.
+
+Claude가 확인하지 못한 범위
+- 업로드 상태 `C:\Users\Administrator\.paseo\uploads\upload_7ca9a425-522f-4d15-9991-fe61f8a81e9f\HASH-C7AAD85F7B2F0472_1.sav`는 Claude 샌드박스 밖이라 직접 열지 못했다.
+- 따라서 game ID V341, 완전 검정 썸네일, PC `0x8016B64C`, ExcCode 0은 Claude PASS가 아니라 로컬 Codex 파서의 독립 진단으로 구분한다.
+- V340의 63/63 전투 답변과 29개 stale payload는 이번 V342 최소 롤백 감사 범위 밖이다.
+
+새 발견
+- `03_output/LATEST.txt`가 v151을 ship 대상으로 가리켜 현재 계보와 심하게 낡아 있었다. V341 오선택 위험을 막기 위해 TEST_ONLY 경고형 포인터로 갱신할 필요가 있다.
+
+최종 범위
+- V341: 로컬 런타임 증거상 DO NOT RUN.
+- V342: 정적·디스크 롤백 PASS, 콜드부팅 PENDING.
+- V342의 범위 커서는 의도적으로 V340 상태로 되돌렸으므로 여전히 미해결이다.

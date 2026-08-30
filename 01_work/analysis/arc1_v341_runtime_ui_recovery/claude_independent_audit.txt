@@ -1,0 +1,37 @@
+V341 Claude Code independent audit
+date=2026-08-30
+invocation=Claude Code CLI (`claude -p`), read-only prompts, no Claude file edits
+runtime_status=PENDING user cold boot
+
+Audit pass 1: archive/document-state review
+- Recomputed the V340/V341 full and delta hashes independently and found them equal to the recorded values.
+- Found no contradiction between the builder and independent verifier constants for the 15 choice completions and the principal MIPS/file offsets.
+- HIGH: V341 had not yet been recorded in changelog.txt, test_log.txt, or codex_notes.txt. This audit ran before the required end-of-task documentation step; the three documents were updated afterward.
+- HIGH: independent_verification.json exposed a top-level result of `PASS` although the runtime checklist remained PENDING. The verifier was changed to emit `STATIC_PASS_RUNTIME_PENDING`, then recompiled and rerun.
+- Correctly agreed that V340 DUCCU states are pre-patch failure evidence only, not V341 runtime proof.
+
+Audit pass 2: bottom-help and range-cursor code review
+- Bottom help: decoded the W16 helper words and found no defect. Only object 0x801F0E18 at original Y=214 becomes Y=213; the separate E7 selector block remains independent.
+- Range cursor: decoded the gate and replacement epilogue and found their stack algebra internally consistent. It did not label this runtime PASS.
+- MEDIUM: the first audit artifact only exposed the 36-byte epilogue, not the complete 324-byte resident RLE/LoadImage uploader. Claude therefore could not independently close the stack/control-flow/timing question and required cold-boot observation for frame rate and VRAM corruption.
+- Tool limitation disclosed by Claude: its second read-only session could not execute a fresh binary extraction/diff and could not open the uploaded V340 states outside the project tree. Its conclusion was therefore limited to recorded words and project artifacts.
+
+Codex follow-up to the audit finding
+- The independent verifier now extracts and disassembles all 81 words at 0x801FF488..0x801FF5C8 from the actual V341 PSX.EXE into independent_mips_disassembly.txt.
+- Full helper SHA-256: D27FAD41247937C9B80E1F5125850F10803FBBD9B9BA71A058D5308198F8B217.
+- Inherited 288-byte decoder/LoadImage prefix SHA-256: D3D0324B84865EA32F814916295856FF4242C5B843C5DBC4EE52E5256D848DE1.
+- Automated checks require: fixed 0x1D0 stack frame, 81 instructions, R3000 load-delay safety, every local branch staying inside the helper, exactly two external calls (LoadImage at 0x801FF590 and DrawOT at 0x801FF5B0), and a deterministic 8+8+8+8+1 row upload sequence covering 25x33 pixels at VRAM (960,447).
+- The strengthened verifier passes. This closes the missing static transparency, but cannot prove frame-time behavior or visible cursor output.
+
+Final audit classification
+- BLOCKER: 0 found statically.
+- HIGH: 0 remaining after documentation/result-label correction.
+- MEDIUM: repeated synchronous upload cost and final VRAM/display behavior require V341 cold boot; V340 states are diagnostic evidence only.
+- PASS: archive hashes, bottom-help scope, helper/gate/epilogue static control flow, and strengthened full-uploader disassembly.
+
+Mandatory runtime checks
+1. Cold boot V341.cue; do not load a V340 savestate as proof.
+2. Open item and skill targeting in the reported battle maps; confirm the cursor is visible, moves, and selection completes.
+3. Watch frame rate while the target cursor is active and check for any corruption near the lower-right VRAM-backed graphics.
+4. Confirm ordinary bottom-help text moved up 1px while O/Square/X/START icons did not move.
+5. Confirm battle answer rows align with the triangle and both region/location labels read `오르카스 언덕`.

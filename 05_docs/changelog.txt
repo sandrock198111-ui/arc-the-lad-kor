@@ -1,3 +1,38 @@
+2026-08-30 - V343 공용 글리프 빌더 RA-safe 훅 복구
+- 사용자 제공 V342 DUCCU 상태도 V341과 동일하게 검은 화면이었다. V342 상태의 SHA-256은 `AED47AEC0064110A415F4FD715A0479FAF4FB86EB30AFEB54A540A3A72CF2836`, ExcCode는 0, PC는 `0x8016B60C`, `$ra`는 `0x8016B5FC`였고 표시 VRAM 320x224가 전부 0이었다. 따라서 V342도 `RUNTIME FAIL / DO NOT RUN`으로 강등했다.
+- 실제 원인은 범위 커서가 아니라 V341에서 추가한 W16 하단 도움말 Y helper 호출이었다. 원래 leaf인 공용 빌더 `0x8016B518` 내부의 `jal 0x8019D024`가 호출자 `$ra`를 `0x8016B5FC`로 덮어, helper 복귀 뒤 원 함수의 마지막 `jr $ra`가 다시 B5FC로 돌아가는 무한루프를 만들었다. V342는 이 훅을 보존했기 때문에 같은 실패가 반복됐다.
+- `02_scripts/build_arc1_v343_ra_safe_w16_hook.py`와 독립 검증기를 추가했다. V343은 file `0x50DF4`의 `jal 0x8019D024`를 non-link `j 0x8019D024`로, file `0x82840`의 helper `jr $ra`를 고정 continuation `j 0x8016B5FC`로 바꾼다. 두 delay slot과 helper 두 분기의 공통 tail은 보존하며 helper에는 JAL/JALR·r31 접근이 없다.
+- V342 대비 변경 멤버는 `PSX.EXE` 하나, 실제 변경은 5바이트다. full/delta SHA-256은 `CA08BDEB840C5BCC1D76D33D1D48F98EDAD6D764D3DFD48A70E186CBF35099D4` / `49A8C6F8F9D67208267D9B78CE8A071D143D33F4E7715F987EE3FB22D2EDA192`다. 결정적 2회 빌드, Expected-Write exact, 전 EXE inbound 제어흐름, R3000 delay slot, 163개 비대상 멤버 보존을 통과했다.
+- `V343.bin`/cue SHA-256은 `DABBA2169A170A8F3533ABB825107A5637E20E7C9F5B3787FE7AE3AB14AC5DF1` / `326511DD0A139BCDE3BF68CB542FBB745D0973195AACA8F1840FE40623448CA5`다. v104 디스크에서 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481, 164/164 readback이 PASS했다. V343는 콜드부팅 전까지 TEST ONLY이며 `bible_current.txt`는 변경하지 않았다.
+- Claude Code CLI 직접 감사는 짧은 연결 확인만 성공했고 실제 감사 요청은 무출력 정지했다. ASCII 지시로 재시도하자 `session limit · resets 11:30am (Asia/Seoul)`이 확인됐다. 이를 감사 PASS로 간주하지 않고 `CLAUDE AUDIT NOT RUN (SESSION LIMIT)`로 기록했다.
+
+2026-08-30 - V341 검은 화면 확정 및 V342 부팅 복구
+- 사용자가 제공한 V341 DUCCU 상태 `HASH-C7AAD85F7B2F0472_1.sav`를 해제했다. game ID는 `V341`, 썸네일 RGB는 전 픽셀 0(완전 검정), CPU current/next PC는 모두 정상 글리프 렌더러 `0x8016B64C`, Cause의 ExcCode는 0이었다. 따라서 V341은 CPU 예외가 아니라 새 pre-DrawOT 범위 커서 업로드/프레임 제출 경로가 화면 표시를 막은 런타임 실패로 판정하며 `DO NOT RUN`이다.
+- `02_scripts/build_arc1_v342_boot_recovery.py`와 독립 검증기를 추가했다. V342는 V341의 `PSX.EXE`에서 범위 커서 제어 네 구간(file `0x2060+4`, `0x3E14+8`, `0x75590+0x34`, `0x8F0D0+0x24`)만 V340 바이트로 되돌렸다. V341의 전투 선택지 completion, 하단 도움말 W16 전용 Y 보정, `오르카스 언덕` 수정과 모든 DAT/COMM은 그대로 보존했다.
+- V341 대비 변경 멤버는 `PSX.EXE` 하나, 실제 변경은 64바이트이며 Expected-Write 집합과 정확히 일치한다. 네 롤백 구간 밖은 V341과 byte exact이고, 네 구간은 V340과 byte exact다. 결정적 재빌드와 독립 overlay 재구성이 통과했다.
+- Claude Code CLI 읽기 전용 감사도 세 BIN의 MODE2 원시 섹터에서 네 구간을 별도로 읽어 3+8+38+15=64바이트를 재현했다. Claude 샌드박스가 업로드 `.sav`에는 접근하지 못했으므로 상태파일 진단은 Claude PASS와 섞지 않고 로컬 진단으로 분리했다. 함께 발견된 낡은 `03_output/LATEST.txt`는 V342 TEST_ONLY·V341 DO NOT RUN 경고형 포인터로 갱신했다.
+- full/delta SHA-256은 `9EAEC08A3D94120C712D72321AC28D26272EF771D53CC465542090AC78D24E1C` / `9BAF1A5477B71C501C8B46EE286A667B82B5E296A2E839DBF0D3FC1BE27584EB`이다. `V342.bin`/cue SHA-256은 `16B8F3B0FBE0F2A5F84452F42407AC363AE8FF29C3485E381174797D3485767E` / `21297C4D921B58BE07662B2F6A811D6311CE5DB0CEC352D5F843B85DF3842137`이다.
+- v104 디스크에서 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 멤버 164/164 readback이 PASS했다. V342는 부팅/화면 복구 우선 후보이므로 범위 커서는 V340처럼 여전히 미표시 상태이며, 콜드부팅 전까지 TEST ONLY다. `bible_current.txt`는 변경하지 않았다.
+
+2026-08-30 - V341 전투 선택지 정렬·하단 도움말·오르카스·범위 커서 런타임 복구
+- `02_scripts/build_arc1_v341_runtime_ui_recovery.py`와 독립 검증기를 추가했다. V340의 승인 답변 payload와 설정 bar는 보존하고, 전투 질문 15곳의 외부 슬롯 +0x7F completion 값만 `12/10→14/12`로 바꿔 자동 줄바꿈 뒤 남던 중복 `E6 01`을 건너뛰게 했다. 답변 본문·E5/E6 바이트·삼각 커서는 불변이며 SC041을 포함한 각 E2 caller는 전체 파일에서 정확히 1개다.
+- 하단 도움말 producer Y를 V339의 11로 복원하고 E7 아이콘 경로도 원래 Y로 복원했다. 대신 일반 W16 패킷 저장 직전에 `object==0x801F0E18 && original_y==214`일 때만 y를 213으로 바꾸는 leaf를 넣었다. 따라서 일반 글자만 1px 올라가고 O/□/X/START E7 아이콘과 다른 텍스트 객체는 움직이지 않는다.
+- 지역/장소 공유 라벨을 `오르카스 언덕`으로 고치고 포인터는 region/location 표의 `0x81E44`, `0x821B4` 두 곳만 새 payload `0x8019D128`로 보냈다. 기존 packed 문자열과 다른 포인터는 보존했다.
+- V340 상태5/6에서 범위 오브젝트는 초기화·활성인데 목적 VRAM `(960..984,447..479)`이 전부 0인 것을 재현했다. V341은 range initializer를 `0x801F52BC`로 복원하고, 프레임 DrawOT 직전에 exact owner+active gate를 거쳐 기존 resident RLE uploader로 25x33을 5청크(8+8+8+8+1행) 재업로드한 뒤 DrawOT를 호출한다. COMM.IMG·descriptor·UV·RLE는 byte exact다.
+- Claude Code CLI 읽기 전용 감사 2회를 실행했다. 첫 감사 지적에 따라 독립 검증 JSON 최상위 결과를 `STATIC_PASS_RUNTIME_PENDING`으로 명확히 했고, 두 번째 감사가 요구한 전체 uploader 81워드 디스어셈블·고정 0x1D0 stack·load-delay·내부 branch·LoadImage/DrawOT call 검증을 추가했다. BLOCKER/HIGH는 남지 않았지만 매 프레임 동기 업로드의 프레임 저하와 실제 표시 여부는 콜드부팅 PENDING이다.
+- V340 대비 변경 멤버는 `C1/SC011/021/031/041/051/061/081.DAT`, `C2/SC0A1.DAT`, `PSX.EXE` 9개다. full/delta SHA-256은 `FCAF5CFB8BAC230A041DC68E9B23B0F6916112D8F5406B2312DD19CE2A4E33D2` / `7A77649153E705CC5F19C1617F651EBB4952799558209E1EFB1F49008CC0AB09`다. 결정적 재빌드, Expected-Write exact, 강화 독립 verifier가 통과했다.
+- 최종 `V341.bin`/cue SHA-256은 `4B59859E37E6FBE98D67BA8DD5926F88A08FF245F213BB171F2CE4E7A90FBA41` / `05EB1C2F7EE07DE0EFAAFD2236251A10FDF12E03C55AD9D15D48E2B5E7507D22`다. 첫 범용 패키징 이미지는 SYSTEM.CNF를 추가해 506개 LBA를 +4 밀어 즉시 폐기·덮어썼고, 최종본은 v104 고정 레이아웃으로 데이터 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 164/164 readback을 통과했다.
+- `check_build.py`는 V340/V341 모두 선택지 폭 75, marker 2, 3줄 초과 18로 동일해 신규 부채는 0이나 상속 부채는 남아 있다. 이후 사용자 제공 V341 상태에서 완전 검은 화면이 확인되어 V341은 `RUNTIME FAIL / DO NOT RUN`으로 강등했다. 복구 기준은 V342이며 `bible_current.txt`는 변경하지 않았다.
+
+2026-08-30 - V340 전투 선택 답변·하단 도움말·설정 선택 바 보정
+- `02_scripts/build_arc1_v340_battle_choice_ui_geometry.py`와 독립 검증기를 추가했다. V339의 9개 전투 질문 계열 63개 body를 승인 번역·현행 16px 글리프와 다시 대조해, 화면에서 `4 호`처럼 보이던 답변을 포함한 stale 시각 payload 29곳을 복구했다. 답변별 복구 수는 `물론` 6, `괜찮아` 7, `괜찮다` 8, `싸운다` 7, `간다` 1이며 V340은 63/63 bitmap match다.
+- 변경 DAT는 `C1/SC011/021/031/041/051/061/081.DAT`와 `C2/SC0A1.DAT` 8개다. E5/E6 marker 위치는 63/63 불변이고, 외부 슬롯 +0x7F skip 메타데이터와 파일 크기를 보존했다. SC041은 확인된 미사용 슬롯 35/38/41/46을 재사용해 네 인라인 답변만 같은 길이의 E2 호출로 바꿨다.
+- 전투 하단 도움말은 공통 시작 Y를 1px 올리고, 기존 72바이트 E7 helper 안에 하단 도움말 객체 전용 +1px 보정을 넣었다. 따라서 일반 W16 글자는 y `214→213`, E7 ○/□/×/START W12/W20 아이콘은 y `214→214`로 예측된다. E7 V routing은 512/512 진리표와 MIPS-I delay slot·inbound 제어흐름을 검증했다.
+- 설정 선택 바 크기는 `51x14→62x16`으로 늘렸다. V339의 텍스트·바 X 정렬은 건드리지 않았고, 다른 설정 primitive와 문자열 payload도 불변이다.
+- V339 대비 변경 멤버는 DAT 8개와 `PSX.EXE` 하나다. full/delta/PSX SHA-256은 `3F63BFD149A100152DE8B1B3223136CC501AF5AC19E19F443D4519142F9C783E` / `A58CA81C5C49D849BA6ED8B7788F0FB28FF4E48ED2F147E55F4C34AE3FF734B0` / `9EE5CD445BA98B2B2BFB92C11772AB2A1DDCA656BE0926FC9D95E611176F6180`다. 결정적 재빌드와 Expected-Write exact 대조가 통과했다.
+- `V340.bin`/cue SHA-256은 `FC8C72253153CCDACFD35767A048B58947C5692C9874897F29880C5306AEF4DE` / `443E9D895978BF077ACFCECBC75BC82119651A07DDD054F595F1AFE4B30301B8`다. v104 레이아웃에서 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA 268481, 패치 멤버 164/164 readback이 PASS했다. V339/V340의 상속 `check_build.py` 부채는 75/2/18로 동일하다.
+- Paseo Claude Sonnet 5 공개 감사 카드를 생성했으나 Claude 계정 세션 한도(`resets 2:10am`)로 실행되지 않았다. 이는 감사 PASS가 아니며 별도 미실행으로 기록한다. V340은 콜드부팅 전 TEST ONLY이고 `bible_current.txt`는 변경하지 않았다.
+
 2026-08-29 - V338 V197~V210 보정 계승과 V339 UI 이름창·배너 정렬
 - `02_scripts/build_arc1_v338_v197_v210_catchup.py`와 독립 검증기를 추가했다. V337 실기 화면과 V197~V210 변경 이력을 대조해 병사 번호 30곳의 반각 공백, `재정비 5`, 누락 대사 `대체 무슨 일이야...?`, 레벨업 조사 6곳, 아이템 수량 Y `+2→+1`, 물음표 우측 여백, 레벨업 보조 루틴을 복구했다.
 - V338 full/delta SHA-256은 `29CEF6F5ADF4461C9263B39586222F7B88EEEE3DF0D6BEDFE5F0C5695509A777` / `DF2B9665D92E37813D5CDD737C0637838449B894024AA369C55ADE79560E94CA`다. `V338.bin`/cue는 `9EC010866F2A7FE5AA15EEC0D1C0B2EA4CDE13E464D438FE0D2ED8185744C060` / `C9D47FCFA77D62B022E883124CAE21BD2EF1555D6C14BFDDD6D4B106865903F9`다. 사용자가 제공한 V338 상태 8종은 실제 UI·전투·획득 화면까지 진행된 근거로 V339의 기준이 됐다.

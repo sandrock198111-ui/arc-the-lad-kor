@@ -1,0 +1,8 @@
+V342 independent static verification: PASS
+full=arc1_v342_boot_recovery_TEST_ONLY_9EAEC08A.zip sha256=9EAEC08A3D94120C712D72321AC28D26272EF771D53CC465542090AC78D24E1C
+delta=arc1_v342_boot_recovery_TEST_ONLY_delta_from_v341_9BAF1A54.zip sha256=9BAF1A5477B71C501C8B46EE286A667B82B5E296A2E839DBF0D3FC1BE27584EB
+archive=164 members; changed_vs_V341=PSX.EXE only; Expected-Write exact
+cursor_control=frame hook, initializer, gate, epilogue all V340 byte exact
+preserved=V341 choice alignment, bottom-help W16 Y, Orkas label; every DAT/COMM byte exact
+V341_failure=black thumbnail, ExcCode0, PC 0x8016B64C normal text renderer
+runtime=V342 cold boot PENDING; range cursor remains open
