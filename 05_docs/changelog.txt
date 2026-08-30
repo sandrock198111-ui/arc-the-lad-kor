@@ -1,3 +1,12 @@
+2026-08-30 - V352 쉼표/느낌표 현행 16px 코드 복구
+- 사용자 V351 콜드부팅 화면에서 `이야, 덕분에 살았군. 고맙다.`의 쉼표가 한글 글리프로 보이는 런타임 회귀를 확인했다. 원인은 V351의 마침표 문제와 같은 계열이다. V345 legacy `character_codes()`는 `,=0x0D`, `!=0x02`를 강제로 후보에 넣지만 현행 `character_assignments.csv`의 확정 코드는 `,=0xB3`(physical178/U+002C), `.=0x21`(physical32/U+002E), `!=0xA9`(physical168/U+0021), `?=0xD1`(physical208/U+003F)이다.
+- 최근 빌드 계보와 실제 문장 토큰을 대조해 현재 V351에 남은 확정 오염을 4바이트로 좁혔다. V347 상인 대사 `5/S5011.DAT:0x4510B` 쉼표 `0D→B3`, `0x45113/0x45121` 느낌표 `02→A9`, V350/V351 자연화 대사 `5/S5052.DAT:0x45302`의 `이야,` 쉼표 `0D→B3`이다. 바이트값만으로는 한글 음절과 겹치므로 전역 치환은 하지 않았다.
+- `02_scripts/build_arc1_v352_punctuation_code_repair.py`와 독립 `verify_arc1_v352_punctuation_code_repair.py`를 추가했다. 두 스크립트 모두 현행 문장부호 맵 `,=B3 .=21 !=A9 ?=D1`을 assignment manifest의 code/physical/Unicode 삼중 조건으로 강제하며, V351 베이스 SHA와 두 대상 멤버/PSX/COMM 해시, 네 source offset, E2 caller, completion metadata를 고정한다.
+- 2회 결정적 빌드와 독립 verifier가 PASS했다. V351 대비 변경 멤버는 `5/S5011.DAT`, `5/S5052.DAT` 두 개, 실제 변경은 정확히 4바이트이며 모두 위 네 문장부호 수리뿐이다. PSX.EXE, COMM.IMG, E2 caller/completion, 파일 크기와 나머지 162멤버는 byte exact다.
+- V352 full/delta SHA-256은 `D4E8D2E24238123065DE0D3AF1F3FF4F7E82CCB9CB17ACEC5241AB3C2E6DDE3D` / `E36C29D626A0BEE98BABCDD6024917C65E58C77EC4F43561077FDCFB72E966E0`다. V351/V352 `check_build.py`는 둘 다 기존 상속 경고로 exit 1이지만 22줄 중 파일명 첫 줄을 제외해 완전히 동일하다.
+- `V352.bin`/cue SHA-256은 `1044836B651723B87904745A388746B899412D2A5624EE5E32FB58F7A528A76F` / `C022B148DA93D3F3293CE3DB52EC4BDF0C4F19EB9651000C9DE9F1D342006CF9`다. v104 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481, 164/164 patched-member readback PASS. `V352_1.mcd`는 V351과 byte exact, 131072B, SHA-256 `25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`다.
+- V351은 쉼표/느낌표 런타임 회귀 때문에 `RUNTIME FAIL / DO NOT RUN`으로 강등한다. V352는 자연화 대사 문장부호, V347 상인 대사 문장부호, V349 던전 진입/층수의 콜드부팅 실기 전까지 TEST_ONLY다. `bible_current.txt`는 갱신하지 않는다.
+
 2026-08-30 - V351 현행 16px 마침표 코드 복구
 - 사용자 V350 실기 화면에서 자연화한 대사 끝마다 이상 글리프가 보이는 런타임 실패를 확인했다. 원인은 E2 resume/종결자가 아니라 문장부호 인코딩이었다. 현행 atlas는 physical 14가 U+C758, physical 32가 U+002E `.`인데, V345의 legacy `character_codes()`가 `.`를 raw `0x0F`로 강제해 최근 슬롯 재작성에서 잘못된 physical 14를 선택했다. V349의 같은 대사 슬롯은 정상 마침표 raw `0x21`을 사용했다.
 - V350은 `RUNTIME FAIL / DO NOT RUN`으로 강등한다. V350 아카이브를 계보 비교해 최근 빌드가 새로 만든 잘못된 마침표는 정확히 10바이트였다: V347 상인 대사 계보 `5/S5011.DAT` 1개 + `5/S5021.DAT` 2개, V350 자연화 `5/S5024.DAT` 1개 + `5/S5052.DAT` 6개. V345 `4/S4031.DAT`의 같은 유형은 V346에서 이미 `0x21`로 복구돼 현재 계보에는 남아 있지 않다.
@@ -5,7 +14,7 @@
 - 독립 `verify_arc1_v351_period_code_repair.py`는 atlas index 14=U+C758, index 32=U+002E, 10개 source offset, E2 caller, slot `+0x7F` completion, 멤버 크기, Expected-Write를 별도로 고정한다. 2회 결정적 빌드와 verifier가 PASS했고 V350 대비 변경 멤버는 `5/S5011.DAT`, `5/S5021.DAT`, `5/S5024.DAT`, `5/S5052.DAT` 네 개, 실제 변경은 정확히 10바이트 모두 `0F→21`이다. PSX.EXE/COMM.IMG와 나머지 160멤버는 byte exact다.
 - V351 full/delta SHA-256은 `76DFD702BBDD9D11A9CEE2B6B9DF795F90B2F4D6744DB474209E92F4825CA50D` / `71830EC8C438869D0A82EBFE85F763E9152C80A4487B99413F719B82645A0264`다. V350/V351 `check_build.py`는 파일명 줄을 제외해 완전히 동일해 신규 부채 0이다.
 - `V351.bin`/cue SHA-256은 `A86D63739492618E55850A721CF6F65DFB5975A31E8A8B2EBFA2CFA07BC3C9A0` / `B99D5C8D6CFB3A30A06FCE38186E7415BCE7FF268AA27570C6997404A65ED50F`다. v104 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481, 패치 멤버 164/164 readback PASS다. DuckStation `V351_1.mcd`는 V350 카드와 byte exact, 131072B, SHA-256 `25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`다.
-- V351은 화면의 모든 마침표와 V347 상인 대사 3곳, 그리고 V349에서 상속한 던전 진입/층수의 콜드부팅 실기 확인 전까지 TEST_ONLY다. `bible_current.txt`는 갱신하지 않는다.
+- 사후 V351 실기에서 `이야,`의 쉼표가 legacy raw `0x0D`로 남아 한글 글리프로 보이는 회귀가 확인됐다. V347 상인 대사의 쉼표/느낌표도 같은 legacy helper 계열임을 추적해 V351은 `RUNTIME FAIL / DO NOT RUN`으로 강등하고 V352에서 수리한다. `bible_current.txt`는 갱신하지 않는다.
 
 2026-08-30 - V350 런타임 화면 기준 대사 4건 자연스러운 한국어 보정
 - 사용자가 V349 DuckStation 상태저장 4개에서 지적한 `5/S5024.DAT:0x478E8`, `5/S5052.DAT:0x47A90/0x47ADA/0x47B28`을 일본어 원문과 주변 대사까지 다시 대조했다. 직역투 `이야기가 진행되지 않잖아`, `살았다 살았어`, `고마워하겠어`, `욕망을 위해서만 사는 것이 아니다`를 각각 `뭔 소리야? 이래선 말이 안 되잖아.`, `이야, 덕분에 살았군. 고맙다.`, `고맙다고는 해 주지. 하지만 보물은 나누지 않을 거야. 말이야 공짜니까.`, `요슈아: 사람은 욕망만 따라 사는 게 아니다.`로 고쳤다.

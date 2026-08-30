@@ -1,6 +1,14 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+V352 현행 punctuation source-of-truth - 2026-08-30
+- 새 텍스트를 인코딩할 때 V345 `character_codes()`의 수동 punctuation 상수를 재사용하지 않는다. 현행 `character_assignments.csv`에서 검증된 1바이트 문장부호는 `,=B3 (physical178/U+002C)`, `.=21 (physical32/U+002E)`, `!=A9 (physical168/U+0021)`, `?=D1 (physical208/U+003F)`다.
+- V351 실기의 `이야을`은 한국어 문구가 `이야을`로 바뀐 것이 아니다. 소스 문구는 계속 `이야,`이고, 쉼표 raw `0x0D`가 현행 physical12 한글 글리프로 렌더된 것이다. 화면상 이상 문자가 보이면 먼저 문자열/종결자를 의심하기보다 해당 raw code가 현재 atlas의 어느 physical glyph를 가리키는지 확인한다.
+- legacy raw는 한글 코드와 값이 겹치므로 `0D→B3`, `02→A9`를 전체 파일에 적용하면 안 된다. 반드시 recent-build provenance + 문장 내 punctuation 위치 + E2 slot owner를 동시에 만족하는 위치만 수정한다.
+- V352의 증거 범위는 네 바이트뿐이다: S5011 `0x4510B/0x45113/0x45121`, S5052 `0x45302`. 앞으로 punctuation regression verifier는 expected payload hex뿐 아니라 assignment manifest의 `char/code/physical/unicode`를 독립 가드한다.
+- historical builder는 과거 해시 재현 때문에 소급 수정하지 않는다. 후속 빌드는 현행 punctuation map을 명시적으로 고정한다.
+- V351은 런타임 실패판 `DO NOT RUN`; V352 full SHA-256은 `D4E8D2E24238123065DE0D3AF1F3FF4F7E82CCB9CB17ACEC5241AB3C2E6DDE3D`, 정적/디스크 PASS, 런타임 PENDING이다.
+
 V351 마침표 raw-code 회귀와 검증 교훈 - 2026-08-30
 - 현행 16px atlas에서 punctuation은 legacy `character_codes()` 상수보다 실제 physical mapping을 우선해야 한다. 현재 `atlas_mapping.csv`의 physical14는 U+C758, physical32는 U+002E `.`이며 direct raw는 각각 `0x0F`, `0x21`이다. 따라서 V345 helper의 `candidates["."].append(0x0F)`를 새 텍스트 인코딩의 진실로 재사용하면 안 된다.
 - V350 화면의 문장 끝 이상 글자는 NUL/slot completion/resume 문제가 아니었다. V349 기존 슬롯이 `...21`로 끝나는 반면 V350 새 payload가 `...0F`로 끝났고, 중간 마침표도 같은 `0F`였다. 런타임 그림과 atlas를 연결해 `.` 자체가 잘못된 glyph로 인코딩됐음을 확정했다.

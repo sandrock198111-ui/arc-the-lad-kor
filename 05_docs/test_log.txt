@@ -1,3 +1,12 @@
+2026-08-30 | V352 V351/V347 쉼표·느낌표 코드 복구 | 사용자 V351 런타임 화면, current character_assignments punctuation map, V344→345/V346→347/V349→350 계보 diff, 실제 문장 토큰 대조, py_compile, 2회 결정적 빌드, 독립 verifier, V351/V352 check_build 비교, v104 ISO 164/164 readback, MCD byte 대조 | V351 RUNTIME FAIL / DO NOT RUN; V352 STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING.
+- V351 화면의 `이야을 덕분에...` 형태는 문자열 내용 문제가 아니라 쉼표 `,`가 legacy raw `0x0D`로 인코딩된 결과다. 현행 assignment의 punctuation은 `,=B3`, `.=21`, `!=A9`, `?=D1`이며 각각 physical 178/32/168/208과 U+002C/U+002E/U+0021/U+003F로 확인했다.
+- 계보 diff의 단일 바이트 hits는 한글 음절 바이트와 겹치므로 그대로 치환하지 않고, 실제 편집 문장과 offset을 대조했다. 최종 확정 위치는 `5/S5011.DAT:0x4510B 0D→B3`, `0x45113/0x45121 02→A9`, `5/S5052.DAT:0x45302 0D→B3` 네 곳이다. V345의 `좋아! ... 찾자.`는 V346에서 이미 `A9/21`로 정상화돼 추가 수정하지 않았다.
+- V352는 V351 full `76DFD702...CA50D`를 베이스로 위 4바이트만 바꾼다. 변경 멤버는 S5011/S5052 두 개뿐이며 PSX.EXE/COMM.IMG, E2 caller, completion metadata, 파일 크기, 다른 162멤버는 byte exact다.
+- full/delta SHA-256은 `D4E8D2E24238123065DE0D3AF1F3FF4F7E82CCB9CB17ACEC5241AB3C2E6DDE3D` / `E36C29D626A0BEE98BABCDD6024917C65E58C77EC4F43561077FDCFB72E966E0`로 2회 동일했다. 독립 verifier는 빌더를 import하지 않고 punctuation assignment, 네 offset, exact pair, E2 caller/completion, Expected-Write를 재확인해 PASS했다.
+- V351/V352 check_build는 모두 22줄·기존 상속 경고로 exit 1이며 파일명 줄을 제외한 출력이 완전히 동일하다. 신규 경고 0.
+- `V352.bin`/cue SHA-256은 `1044836B651723B87904745A388746B899412D2A5624EE5E32FB58F7A528A76F` / `C022B148DA93D3F3293CE3DB52EC4BDF0C4F19EB9651000C9DE9F1D342006CF9`. 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481, 164/164 readback PASS. `V352_1.mcd`는 V351과 131072B/SHA-256 `25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`로 byte exact다.
+- 런타임 게이트는 `이야, 덕분에 살았군. 고맙다.`의 쉼표/마침표, V347 상인 대사의 `장사야, 이 자식아! ... 싶냐!`, 나머지 자연화 대사, V349 던전 진입/지하 층수다.
+
 2026-08-30 | V351 V350/V347 마침표 코드 복구 | 사용자 V350 런타임 화면, V349/V350 slot payload 비교, 현행 atlas index 14/32 대조, V346→V347·V349→V350 신규 0x0F 계보 diff, py_compile, 2회 결정적 빌드, 독립 verifier, V350/V351 check_build 비교, v104 ISO 164/164 readback, MCD byte 대조 | V350 RUNTIME FAIL / DO NOT RUN; V351 STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING.
 - V350 화면에서 문장 끝의 이상 글자는 E2 뒤 쓰레기 문자가 아니라 `.` 자체의 오인코딩이었다. 현행 atlas에서 raw `0x0F`가 가리키는 physical14는 U+C758이고, full stop `.`는 physical32/raw `0x21`이다. V349의 해당 네 슬롯도 정상적으로 `0x21` 마침표를 사용한다.
 - 현재 V350과 계보를 직접 diff해 최근 빌드가 새로 만든 잘못된 마침표를 정확히 10개로 고정했다. V347: `5/S5011.DAT:0x45212`, `5/S5021.DAT:0x45A1B/0x45B1A` 3개. V350: `5/S5024.DAT:0x45018`, `5/S5052.DAT:0x4500B/0x4501F/0x4502B/0x4521E/0x4530D/0x45313` 7개. V345의 같은 문제는 V346에서 이미 정상화돼 현행 계보에 남지 않는다.
@@ -5,7 +14,7 @@
 - 2회 빌드 full/delta SHA-256은 `76DFD702...CA50D` / `71830EC8...A0264`로 동일했다. 독립 verifier는 빌더를 import하지 않고 atlas Unicode, 10개 위치, 0F→21 pair, E2 caller/completion, Expected-Write를 재검증해 PASS했다.
 - V350/V351 `check_build.py`는 둘 다 기존 선택지 폭/marker/3줄 초과 부채로 exit 1이지만 파일명 첫 줄을 제외한 출력이 완전히 동일하다. 신규 경고 증가는 0이다.
 - `package_test_iso.py --layout v104 --name V351`과 `verify_iso_layout.py` 결과 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481·587776B, ZIP 멤버 164/164 readback PASS. BIN/CUE SHA-256은 `A86D63739492618E55850A721CF6F65DFB5975A31E8A8B2EBFA2CFA07BC3C9A0` / `B99D5C8D6CFB3A30A06FCE38186E7415BCE7FF268AA27570C6997404A65ED50F`다.
-- `V351_1.mcd`는 V350 카드와 131072B/`25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`로 byte exact다. 런타임 게이트는 V350에서 깨졌던 네 자연화 대사 마침표, V347 상인 대사 3곳, V349 던전 진입/지하 층수다.
+- `V351_1.mcd`는 V350 카드와 131072B/`25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`로 byte exact다. 사후 실기에서 `이야,`의 쉼표 및 V347 상인 문장부호가 legacy code로 남아 있는 것이 확인돼 V351은 `RUNTIME FAIL / DO NOT RUN`, 후속 V352가 현재 후보이다.
 
 2026-08-30 | V350 V349 화면 대사 4건 자연화 | JP/주변 문맥 대조, V349 Hanme 코드표·신규 글리프 후보/런타임 소유권 감사, source-keyed/reduction 정합, py_compile, 결정적 2회 빌드, 독립 E2 slot verifier, V349/V350 check_build 비교, v104 ISO 164/164 readback, MCD byte 대조, Chat On Steroids worker 호출 시도 | STATIC PATCH PASS / DISC INTEGRITY PASS / SUBAGENT AUDIT NOT RUN (`UNIDENTIFIED_CALLER`) / RUNTIME PENDING.
 - 최종 문구는 `뭔 소리야? 이래선 말이 안 되잖아.`, `이야, 덕분에 살았군. 고맙다.`, `고맙다고는 해 주지. 하지만 보물은 나누지 않을 거야. 말이야 공짜니까.`, `요슈아: 사람은 욕망만 따라 사는 게 아니다.` 네 건이다. V349 `character_codes()`로 각각 25/20/44/31바이트이며 미등록 글리프 0이다.

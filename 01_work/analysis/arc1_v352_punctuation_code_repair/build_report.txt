@@ -1,0 +1,9 @@
+V352 punctuation-code repair
+base=arc1_v351_period_code_repair_TEST_ONLY_76DFD702.zip sha256=76DFD702BBDD9D11A9CEE2B6B9DF795F90B2F4D6744DB474209E92F4825CA50D
+output=arc1_v352_punctuation_code_repair_TEST_ONLY_D4E8D2E2.zip sha256=D4E8D2E24238123065DE0D3AF1F3FF4F7E82CCB9CB17ACEC5241AB3C2E6DDE3D
+delta=arc1_v352_punctuation_code_repair_TEST_ONLY_delta_from_v351_E36C29D6.zip sha256=E36C29D626A0BEE98BABCDD6024917C65E58C77EC4F43561077FDCFB72E966E0
+changed_members=5/S5011.DAT,5/S5052.DAT
+changed_bytes=4 exact: comma 0D->B3 x2, exclamation 02->A9 x2
+current punctuation guard: ,=B3 .=21 !=A9 ?=D1
+PSX.EXE/COMM.IMG/E2 callers/completion metadata/all other bytes=byte exact V351
+runtime=PENDING user cold boot/dialogue review; TEST_ONLY
