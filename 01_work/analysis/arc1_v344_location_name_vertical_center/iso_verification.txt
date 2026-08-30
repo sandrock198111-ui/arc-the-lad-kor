@@ -1,0 +1,20 @@
+V344 v104 disc verification: PASS (layout/member integrity only)
+
+V344.bin
+  size    632495136
+  sha256  5FA3B185C0AEA480F420A46A943EC0C0B5AEA21791DDF3E33798719C9C3A0FA6
+
+V344.cue
+  sha256  0276A6AA2DCD58F1DF431F9F2D65458884DB6D106C08EAB86208C3E4F6A3785A
+
+verify_iso_layout.py:
+  files                    507
+  data LBAs preserved      506/506
+  COMM.DAT LBA             307 PASS
+  COMM.IMG LBA             667 PASS
+  COMM.SND LBA             891 PASS
+  PSX.EXE                   LBA 268481, 587776 bytes
+  patched member readback  164/164 PASS
+
+V343 gameplay is established by the pinned V343 DUCCU state.
+V344's two-pixel location-name alignment remains runtime PENDING.

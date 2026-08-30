@@ -1,0 +1,5 @@
+V344 cold-boot checklist
+1. Enter a scene that displays a location banner (for example 정령의 산).
+2. Confirm the location glyph cell moved from Y=122 to Y=120 while the banner stayed at Y=116.
+3. Confirm the banner has equal 4px top/bottom cell margins.
+4. Confirm dialogue, item/skill names, battle help, and icons match V343.

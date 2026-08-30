@@ -1,0 +1,50 @@
+{
+  "version": "V344",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "base": {
+    "file": "arc1_v343_ra_safe_w16_hook_TEST_ONLY_CA08BDEB.zip",
+    "sha256": "CA08BDEB840C5BCC1D76D33D1D48F98EDAD6D764D3DFD48A70E186CBF35099D4",
+    "runtime": "PASS_GAMEPLAY"
+  },
+  "output": {
+    "file": "arc1_v344_location_name_vertical_center_TEST_ONLY_69B3EC07.zip",
+    "sha256": "69B3EC07D300C28EF6C7F42588E6B392025F0392AE1207A586562B0D23001886"
+  },
+  "delta": {
+    "file": "arc1_v344_location_name_vertical_center_TEST_ONLY_delta_from_v343_9C81B28C.zip",
+    "sha256": "9C81B28C1CA59ADB9E1FE1F84E3A9C44144B9C1319415C00EC52B5BC1DC383C6"
+  },
+  "changed_members_vs_v343": [
+    "PSX.EXE"
+  ],
+  "changed_psx_bytes": 1,
+  "location_renderer": {
+    "ram": "0x8016C5A4",
+    "text_y_word_ram": "0x8016C5E8",
+    "before_inset": 6,
+    "after_inset": 4,
+    "banner_height": 24,
+    "glyph_height": 16,
+    "resulting_margins": [
+      4,
+      4
+    ],
+    "location_entries": 55,
+    "nonempty_entries": 54,
+    "max_tokens": 12
+  },
+  "runtime_evidence": {
+    "state": "HASH-367FC88B8ECDBD3B_1.sav",
+    "sha256": "430000D1C22F996AB68B7D73B7F4AF2C32DA2C37ED0C575E8DFABFA17F99CCCB",
+    "game_id": "V343",
+    "visible_text": "정령의 산",
+    "packet_y": 122,
+    "banner_y": 116
+  },
+  "preserved": [
+    "V343 RA-safe W16 control flow byte exact",
+    "all DAT and COMM members byte exact",
+    "banner rectangle and every icon path byte exact",
+    "dialogue/item/skill/battle UI geometry byte exact"
+  ]
+}

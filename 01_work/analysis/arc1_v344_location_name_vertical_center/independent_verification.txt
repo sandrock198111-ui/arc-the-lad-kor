@@ -1,0 +1,9 @@
+V344 independent static verification: PASS
+full=arc1_v344_location_name_vertical_center_TEST_ONLY_69B3EC07.zip sha256=69B3EC07D300C28EF6C7F42588E6B392025F0392AE1207A586562B0D23001886
+delta=arc1_v344_location_name_vertical_center_TEST_ONLY_delta_from_v343_9C81B28C.zip sha256=9C81B28C1CA59ADB9E1FE1F84E3A9C44144B9C1319415C00EC52B5BC1DC383C6
+PSX.EXE sha256=0CB561EC6B79BCF06F45D5F1D9E62DE7ABB7F545A4099127AAC2EA7D5165DF70
+archive=164 members; changed_vs_V343=PSX.EXE only; changed_bytes=1
+runtime evidence=V343 정령의 산 packets Y122/H16 in banner Y116/H24
+patch=inset 6->4; expected packet Y120; margins 4px/4px
+scope=dedicated 55-entry location renderer; two callers; other UI/icons byte exact
+runtime=V344 alignment PENDING; TEST_ONLY

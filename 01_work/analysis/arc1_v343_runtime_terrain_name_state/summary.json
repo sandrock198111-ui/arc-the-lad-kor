@@ -1,0 +1,24 @@
+{
+  "build": "arc1_v343_ra_safe_w16_hook_TEST_ONLY_CA08BDEB.zip",
+  "build_sha256": "CA08BDEB840C5BCC1D76D33D1D48F98EDAD6D764D3DFD48A70E186CBF35099D4",
+  "states": [
+    {
+      "state": 1,
+      "savestate": "HASH-367FC88B8ECDBD3B_1.sav",
+      "sha256": "430000D1C22F996AB68B7D73B7F4AF2C32DA2C37ED0C575E8DFABFA17F99CCCB",
+      "game_id": "V343",
+      "file_size": 1461579,
+      "ram_base": "0x1A62",
+      "vram_base": "0x201DDC",
+      "runtime_COMM_exact": 0,
+      "exe_different_words": 1439,
+      "text_objects": 3,
+      "framebuffer_visible_objects": 1,
+      "media_paths": ""
+    }
+  ],
+  "objects": 3,
+  "packets": 5,
+  "tail_packets": 48,
+  "note": "read-only DUCCU audit; visual/root-cause interpretation remains separate"
+}

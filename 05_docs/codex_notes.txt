@@ -2204,3 +2204,9 @@ V333 동적 UI direct-glyph 충돌과 국소 복구 구조 - 2026-08-29
 - D==6 경로는 공용 빌더가 U에 +4를 더하고 W=6으로 그리므로 12px 원본 L/:와 숫자의 중앙 6px 부분을 compact하게 표시한다. D14 경로의 E5 blank와 M/P는 U=240, W=16을 쓴다. UV helper 한도만 `sltiu ...,13`에서 17로 넓혔으며 return delay에서 live `$t1=160` 복원은 유지했다.
 - 안전한 수정법은 전역 lookup/physical 재배정이 아니라 각 생산자의 로컬 synthetic token 또는 direct placeholder만 바꾸는 것이다. V333은 모든 DAT와 packed E9/EA lookup을 byte exact로 보존한다.
 - V333 full/delta SHA-256은 `55D826DC02FE5A7DE5167EBB81623184409FA4F8FC395B2EB04369A17DC2D450` / `69AC3C90278CA30E93E7CC67B43FEAFE0CBA063D04EA6B8A4D6795AA04AA9E86`다. 정적 검증과 디스크 readback은 PASS, 런타임은 PENDING이다.
+V344 지형명 세로 배치 구조 - 2026-08-30
+- 지형명 55개 전용 함수는 RAM `0x8016C5A4`/file `0x51DA4`이고 직접 호출자는 `0x801697BC`, `0x80169B00` 두 곳이다. region/location 문자열 표나 대사 렌더러와 별개인 전용 그리기 경로다.
+- 함수는 배경창을 `Y=0x74(116)`, `H=0x18(24)`로 만들고, file `0x51DE8`의 `ori v0,zero,6`을 stack fifth argument로 넘겨 텍스트 객체 Y를 창 Y+6으로 만든다. 다음 stack argument는 객체 index 0이다.
+- V343 상태에서 `정령의 산` 글리프 다섯 개가 모두 Y122/H16이므로 정적 계산 `116+6=122`가 런타임과 일치한다. 12px 시절에는 6/6px 중앙이었지만 16px에서는 6/2px로 아래에 치우친다. inset을 4로 바꾸면 Y120과 4/4px 여백이 된다.
+- 이 보정은 file `0x51DE8` 한 바이트만 바꾸며 배경창, 아이콘, 다른 텍스트 객체에는 영향을 주지 않는다. 전체 지형명 55개가 동일하게 2px 올라간다.
+- V343 DUCCU 상태 SHA-256 `430000D1C22F996AB68B7D73B7F4AF2C32DA2C37ED0C575E8DFABFA17F99CCCB`는 game ID V343과 실제 게임 화면을 포함하므로 V343 RA-safe 복구의 런타임 성공 증거다.

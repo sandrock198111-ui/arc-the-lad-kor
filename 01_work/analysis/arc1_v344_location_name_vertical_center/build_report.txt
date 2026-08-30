@@ -1,0 +1,12 @@
+V344 location-name vertical-center build
+base=arc1_v343_ra_safe_w16_hook_TEST_ONLY_CA08BDEB.zip sha256=CA08BDEB840C5BCC1D76D33D1D48F98EDAD6D764D3DFD48A70E186CBF35099D4
+output=arc1_v344_location_name_vertical_center_TEST_ONLY_69B3EC07.zip sha256=69B3EC07D300C28EF6C7F42588E6B392025F0392AE1207A586562B0D23001886
+delta=arc1_v344_location_name_vertical_center_TEST_ONLY_delta_from_v343_9C81B28C.zip sha256=9C81B28C1CA59ADB9E1FE1F84E3A9C44144B9C1319415C00EC52B5BC1DC383C6
+PSX.EXE sha256=0CB561EC6B79BCF06F45D5F1D9E62DE7ABB7F545A4099127AAC2EA7D5165DF70
+changed_members_vs_v343=PSX.EXE
+changed_PSX_bytes=1; Expected-Write exact
+location banner=24px; glyph=16px; text inset 6->4; margins 4px/4px
+55 location entries (54 nonempty) share the dedicated renderer
+all DAT/COMM, banner geometry, dialogue, icons, and other V343 bytes preserved
+check_build inherited debt is byte-identical to V343: choice overflow 75, marker drift 2, dialogue overflow 18
+runtime=V343 gameplay PASS; V344 alignment PENDING cold boot; TEST_ONLY

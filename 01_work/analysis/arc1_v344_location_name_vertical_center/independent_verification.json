@@ -1,0 +1,41 @@
+{
+  "result": "STATIC_PASS_RUNTIME_PENDING",
+  "changed_members_vs_v343": [
+    "PSX.EXE"
+  ],
+  "actual_changed_psx_bytes": 1,
+  "location_table": {
+    "entries": 55,
+    "nonempty": 54
+  },
+  "location_renderer_callers": [
+    "0x801697BC",
+    "0x80169B00"
+  ],
+  "geometry": {
+    "banner_y": 116,
+    "banner_height": 24,
+    "v343_text_y": 122,
+    "v343_margins": [
+      6,
+      2
+    ],
+    "v344_expected_text_y": 120,
+    "v344_expected_margins": [
+      4,
+      4
+    ]
+  },
+  "v343_runtime_evidence": {
+    "sha256": "430000D1C22F996AB68B7D73B7F4AF2C32DA2C37ED0C575E8DFABFA17F99CCCB",
+    "game_id": "V343",
+    "text": "정령의 산",
+    "packet_base": "0x801EFC9C",
+    "count": 5,
+    "packet_y": 122,
+    "packet_height": 16,
+    "source_pointer_after_render": "0x8019BED9"
+  },
+  "preserved": "all other V343 bytes; every DAT/COMM member and icon path byte exact",
+  "runtime": "V344 location alignment cold boot PENDING"
+}
