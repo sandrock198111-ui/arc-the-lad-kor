@@ -1,3 +1,40 @@
+2026-08-30 | V348 던전 진입 크래시 진단 및 V349 상주 숫자 helper 재사용 | 업로드 DUCCU CPU/RAM 해제, V348 디스크-런타임 helper 대조, 기존 상주 helper 상태 RAM 보존 확인, py_compile, 결정적 2회 빌드, 독립 verifier/Capstone/Expected-Write/1~50층 변환, V348/V349 check_build 비교, v104 ISO 164/164 readback, MCD byte 대조, Claude CLI 제한 해제 후 읽기 전용 감사 | V348 RUNTIME FAIL / DO NOT RUN; V349 STATIC PATCH PASS / DISC INTEGRITY PASS / CLAUDE LIMITED AUDIT COMPLETE / RUNTIME PENDING.
+- 입력 상태는 `HASH-A3EBEB7B22E9D2C7_1.sav`, SHA-256 `BD9F3A94EC276AB67894CD981585601AD2859FE29564B728B574B392343F26B5`, game ID `V348`이다. CPU current/next PC `0x801A9CA8/0x801A9CAC`, Status `0x40000404`, Cause `0x00000428`로 ExcCode 10 Reserved Instruction이며 branch delay 밖 예외다.
+- RAM의 floor hook `0x80169774` 8바이트는 V348 디스크와 일치했지만, V348 helper `0x801A9C00..0x801A9C7F`는 디스크와 불일치하고 PC의 런타임 워드도 helper 명령이 아닌 장면 데이터였다. 반면 기존 상주 숫자 변환기 `0x801FF858..0x801FF8AF`는 실패 상태에서도 디스크와 88/88바이트 일치했다.
+- V349은 새 helper를 만들지 않고 floor formatter의 file `0x4EF74`를 기존 `jal 0x801FF858`로 바꾼다. delay slot `0x02002021(move a0,s0)`는 불변이다. V348 위험 helper/LUT file `0x8F400..0x8F46D`는 0으로 복원했고 전체 `0x8F400..0x8F47F`가 0이다.
+- 동일 입력 2회 빌드의 full/delta 해시는 각각 `EC5724F9...D481` / `E22EE42D...8A06`으로 동일했다. 164개 멤버 순서·크기 동일, 변경 멤버 `PSX.EXE` 하나, exact diff 80바이트가 Expected-Write CSV와 일치했다. 모든 DAT·COMM.IMG·나머지 멤버는 byte exact다.
+- 독립 verifier는 V349 빌더를 import하지 않고 고정된 상주 helper 88바이트를 Capstone으로 19개 MIPS-I 명령으로 해석했다. 두 lbu load-use 간격, leaf `jr ra`, 내부 분기, digit LUT를 확인하고 호출자 집합을 `0x80160464/0x80169774` 두 JAL로 고정했다. 위험 주소 `0x801A9C00`의 직접 J/JAL과 포인터는 0이다.
+- 1~50층을 전수 변환해 현행 숫자 raw `91 4A 0B 27 57 9E 9F 9A 10 08`과 50/50 일치했고 `지하 `+최대 두 자리+`층`+NUL은 최대 8바이트다.
+- `check_build.py`의 본문2878/선택지357/E2 1377/제자리1113, 선택지 폭75/marker2/3줄 초과18은 V348과 V349가 동일하다. 신규 경고 증가는 0이며 기존 상속 부채다.
+- `V349.bin`/cue SHA-256은 `0257A3760278B5B39B964A5F395259A50D3695161F431583CBF4D9E69386236B` / `EDDA93106AC9B77160A633B4A19B570EAFB1BEF0F1FD1F4BF014EB44311FCFF3`다. 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481·587776B, 164/164 patched-member readback PASS다.
+- DuckStation `V348_1.mcd→V349_1.mcd`, 131072바이트, SHA-256 `25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`, byte exact PASS.
+- Claude Code CLI는 17:20 제한 해제 뒤 감사를 완료했다. 해시 5종, hook JAL 수기 인코딩, delay slot, helper load-delay/leaf 구조, LUT 1~50층을 PASS했다. 다만 권한상 E: 밖 실패 `.sav` 원본과 ZIP 내부 전수 추출은 독립 재현하지 못해 명시적으로 미확인 처리했다.
+- Claude가 지적한 V338 금지 cave 전체 가드 부족을 반영해 빌더와 verifier가 file `0x8F3D8..0x8F7FF`/RAM `0x801A9BD8..0x801A9FFF` 0x428바이트 전부 zero, J/JAL 대상 0, 포인터 0을 확인하도록 강화했다. V348 cave의 비영 바이트 77개는 전부 V348 payload 내부였고 V349은 1064/1064바이트 zero다. 강화 후 full/delta/BIN 해시는 불변이고 독립 verifier가 재통과했다.
+- 런타임 게이트는 V349.cue 콜드부팅→메모리카드 로드→던전 진입→지하 1/2/3층 표기이며, 통과 전까지 TEST_ONLY다.
+
+2026-08-30 | V347 `지하 층` 숫자 소실 원인 재현 및 V348 로컬 숫자 리맵 | V346/V347 runtime 패킷·formatter 역추적, ASCII 변환기·현행 atlas 대조, py_compile, 결정적 2회 빌드, Capstone MIPS 디스어셈블, 별도 tiny-MIPS 1~50층 전수 실행, Expected-Write exact, V347/V348 check_build 비교, v104 ISO 164/164 readback, MCD byte 대조, Claude CLI 감사 시도 | V347 FLOOR RUNTIME FAIL; V348 STATIC PATCH PASS / DISC INTEGRITY PASS / CLAUDE AUDIT NOT RUN (SESSION LIMIT) / RUNTIME PENDING.
+- 수정 파일은 `PSX.EXE` 하나다. V347 full ZIP을 강한 해시로 잠근 뒤 file `0x4EF74` JAL 1워드와 file `0x8F400..0x8F46D` helper/LUT만 변경했다. 모든 DAT와 COMM.IMG는 V347과 byte exact다.
+- V346 runtime 층 상태에서 floor1/3/4가 각각 숫자 없음/`어`/`그`로 나타난 패킷과 기존 변환기의 `ASCII+0xE1` 출력을 대조했다. `0→0x11`, `1→0x12`, ..., `9→0x1A`가 현행 atlas의 숫자 위치가 아닌 것이 일치했다.
+- 같은 V347 입력에서 빌더를 두 번 실행해 full `9256295B...716C`, delta `B4EF2635...9F96`가 변하지 않았다. 164개 멤버 순서·크기 동일, 변경 멤버 `PSX.EXE` 1개, 실제 변경 80바이트가 Expected-Write CSV와 정확히 일치했다.
+- V348 빌더를 import하지 않는 독립 verifier가 helper 25명령을 Capstone MIPS32 little-endian으로 재해석했다. JAL/J/branch 표적, delay slot, load-use 간격, RA/SP/S0 보존을 확인하고 별도 tiny-MIPS 실행기로 1~50층을 전수 실행했다. 50/50 정확한 현행 digit raw 코드와 최대 8바이트 버퍼를 PASS했다.
+- `check_build.py` 결과 V347/V348 모두 본문2878/선택지357/E2 1377/제자리1113, 선택지 폭75/marker2/3줄 초과18로 동일했다. 이 부채는 상속 상태이며 V348 신규 증가는 0이다. V347 두 코드 포인터와 다섯 대사, prefix/suffix, 비-PSX 163멤버는 byte exact다.
+- `V348.bin`/cue SHA-256은 `C55590FE...2493` / `F5EFBC65...B64A`다. 데이터 506/506 LBA, COMM 307/667/891, PSX.EXE LBA268481·587776B, 패치 멤버 164/164 readback PASS.
+- DuckStation `V347_1.mcd→V348_1.mcd`, 131072바이트, SHA-256 `25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`, byte exact PASS.
+- Claude Code CLI 읽기 전용 감사 요청은 `You've hit your session limit · resets 5:20pm (Asia/Seoul)`로 실행되지 않았다. 감사 PASS로 간주하지 않는다.
+- 판정은 `STATIC/DISC PASS`, `RUNTIME PENDING`이다. 실기에서 지하 1/2/3층과 두 자리 층, V347 기술 사용·대사 회귀를 확인하기 전까지 TEST_ONLY다. `bible_current.txt`는 변경하지 않았다.
+
+2026-08-30 | V346 슬롯 10 기술 사용 프리징·층수·상인 대사 조사 및 V347 복구 | 사용자 DUCCU 상태 CPU/객체 callback 추적, 원본 PSX.EXE+전 DAT 정렬 코드 포인터 전수 census, 층수 formatter/pool 추적, JP/KR 대사 및 E2 shared-tail 대조, py_compile, 결정적 2회 빌드, 독립 verifier, V346/V347 check_build 비교, v104 ISO readback, Claude CLI 감사 시도 | V346 RUNTIME FAIL (SKILL USE FREEZE); V347 STATIC PATCH PASS / DISC INTEGRITY PASS / CLAUDE AUDIT NOT RUN (SESSION LIMIT) / RUNTIME PENDING.
+- V346 슬롯 10 상태는 PC/nextPC `0x80120520`, Cause `0x400`, RA `0x80121870`이었다. 객체 callback file `0x8D788`/VA `0x801A7F88`가 `0x801204E0`을 가리켰고 원본 정상값은 `0x8012E2E0`이었다. 잘못 호출된 memcpy 계열 함수가 callback 데이터를 덮어 진행이 멈췄다.
+- 원본의 4바이트 정렬 코드 포인터를 PSX.EXE와 모든 DAT에서 전수 스캔해 5,311개 후보를 얻었다. V346 불일치는 `0x8D788=0x801204E0`과 `0x7EF3C=0x80168DE1` 두 개뿐이었고 V347에서 원본 `0x8012E2E0`/`0x80162CE0`으로 복원한 뒤 불일치 0개를 독립 재현했다.
+- 층수는 formatter VA `0x8016974C`가 prefix+숫자+suffix를 조합하고 폭에 따라 중앙 정렬한다. V347은 빈 prefix pool을 `지하 `, 기존 깨진 suffix를 `층`으로 바꿨지만 사후 실기에서 숫자가 보이지 않았다. 기존 ASCII 숫자 변환 raw와 현행 16px atlas의 불일치는 V348에서 복구했다.
+- 5/S5011 slot2/4와 5/S5021 slot20/21/22의 다섯 payload, completion 메타데이터 35/13/22/18/43, E2 caller 소유권과 공유 tail resume를 검증했다. S5021 body `0x47B0E`와 `0x47B70`은 첫 2바이트만 각각 `E2 97`, `E2 95`로 복원했다.
+- `기다렸지, 기다렸지`는 일본어 원문 `おまたせ、おまたせ`와 일치하므로 보존했다. 선택지 커서/COMM.IMG는 이번 변경에서 byte exact이며 커서 한 칸 이동 폭은 두 번째 선택 상태 확보 뒤 조사한다.
+- V346/V347 check_build는 선택지 폭 75, marker 2, 본문 3줄 초과 18의 위치와 개수가 동일했다. E2/inline 수만 1375/1115에서 1377/1113으로 바뀌어 의도한 두 E2 복원과 일치한다. 기존 경고는 신규 회귀가 아닌 계승 부채다.
+- full/delta 해시는 `028303F6...` / `13E496A0...`; 변경 멤버는 `5/S5011.DAT`, `5/S5021.DAT`, `PSX.EXE`이며 실제 변경은 58/118/8바이트다. 독립 verifier 재실행 PASS, COMM.IMG와 비대상 멤버 보존 PASS다.
+- `package_test_iso.py --layout v104`로 V347.bin/cue를 만들었다. BIN/CUE 해시는 `85D55B7E...` / `E7FF6079...`; 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481, ZIP 멤버 164/164 readback PASS다.
+- DuckStation `V347_1.mcd`는 131,072바이트이며 SHA-256 `25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`다.
+- Claude Code CLI 직접 감사는 `You've hit your session limit - resets 5:20pm (Asia/Seoul)`로 종료됐다. Claude PASS로 기록하지 않는다. 콜드부팅 후 슬롯 10 기술 사용, 다른 기술/아이템 각 1회, 지하 n층, 다섯 대사, 반복문과 기존 UI 보존을 확인해야 한다.
+
 2026-08-30 | V345 슬롯 5 스킬 사용 프리징 관찰 및 V346 구조 복원 | 사용자 V345 세이브/증상, V320C→V321→V345 EXE 전수 diff, dispatcher 포인터 추적, py_compile, 결정적 2회 빌드, 독립 verifier, check_build V345/V346 대조, v104 ISO readback, Claude CLI 읽기 전용 감사 | V345 RUNTIME FAIL (SKILL USE FREEZE); V346 STATIC PATCH PASS / DISC INTEGRITY PASS / CLAUDE AUDIT COMPLETE / RUNTIME PENDING.
 - 사용자 실기에서 슬롯 5가 스킬 사용 단계에서 정지했다. 상태 PC/레지스터와 객체 디스패처를 추적해 index 391의 엔트리가 0x8014643C로 자기 루프 쪽을 가리키는 것을 확인했다. 정상 V320C 엔트리는 0x8014AB3C이며 대상 함수 본체는 V345에도 보존돼 있었다.
 - V321의 전역 AB→64 변경 57개를 독립 전수 조사했다. 34개는 숫자 테이블 3바이트, dispatcher 포인터 1바이트, stride 0x3A 구조체 필드 30바이트로 확인돼 복원했다. 진짜 '몬' 2개와 후속 버전 포인터 재작성 21개는 건드리지 않았다.

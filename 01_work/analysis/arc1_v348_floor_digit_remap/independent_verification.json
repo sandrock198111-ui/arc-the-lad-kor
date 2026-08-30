@@ -1,0 +1,24 @@
+{
+  "verdict": "PASS",
+  "archives": {
+    "full": "9256295B8834D0A181850FF5C5DDE4CDA7FBF2C7424B75867C3CDDB1C746716C",
+    "delta": "B4EF2635FD37732ABA20A92559AF5436D3C9F85EDCCA1D4DD0BC5F7E20619F96",
+    "members": 164
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": 80,
+  "machine_code": {
+    "instructions": 25,
+    "load_delays": "PASS",
+    "ra_sp_s0": "PASS"
+  },
+  "floors": {
+    "range": "1..50",
+    "passed": 50,
+    "maximum_buffer": 8
+  },
+  "preservation": "all non-PSX members, COMM.IMG, V347 pointers/dialogues byte exact",
+  "runtime": "PENDING user cold boot; TEST_ONLY"
+}

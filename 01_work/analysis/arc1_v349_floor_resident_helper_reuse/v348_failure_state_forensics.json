@@ -1,0 +1,15 @@
+{
+  "file_sha256": "BD9F3A94EC276AB67894CD981585601AD2859FE29564B728B574B392343F26B5",
+  "game_id": "V348",
+  "current_pc": "0x801A9CA8",
+  "next_pc": "0x801A9CAC",
+  "status": "0x40000404",
+  "cause": "0x00000428",
+  "exception_code": 10,
+  "branch_delay": false,
+  "pc_word": "0x5349423A",
+  "hook_matches_v348_disk": true,
+  "unsafe_runtime_matches_disk": false,
+  "unsafe_mismatch_bytes": 77,
+  "resident_runtime_matches_disk": true
+}

@@ -1,0 +1,39 @@
+V349 Claude Code independent read-only audit - 2026-08-30
+
+Scope limitation
+- Claude could read E:\korean but its sandbox could not open the failure state under
+  C:\Users\Administrator\.paseo\uploads, and archive extraction/script execution
+  required permissions unavailable to that session. Those items are explicitly not
+  counted as Claude-independent PASS; the local verifier covers them separately.
+
+BLOCKER
+- None in the V349 repair itself. V348 remains RUNTIME FAIL / DO NOT RUN.
+
+HIGH
+- Failure-state PC/Cause and runtime RAM comparison could not be independently
+  re-extracted by Claude because the source .sav was outside E:\korean.
+
+MEDIUM
+- The first audit found that V349 guarded only the V348 payload vicinity rather than
+  the full V323/V338 forbidden cave 0x801A9BD8..0x801A9FFF.
+- Claude could not independently re-extract PSX.EXE from the archives, so the local
+  verifier's exhaustive 80-byte diff remained outside Claude's tool scope.
+
+PASS independently checked by Claude
+- SHA-256 chain for V348 full, V349 full/delta, V349 BIN/CUE.
+- MIPS JAL retarget arithmetic: 0x801A9C00 -> 0x801FF858.
+- Preserved delay slot 0x02002021 = move a0,s0.
+- Resident helper begins lbu/lui/beqz with a safe R3000 load-use gap and is leaf.
+- Digit LUT and floor 1..50 outputs; maximum final floor buffer is eight bytes.
+- The resident block ends exactly where the historical forbidden cave begins,
+  confirming that V348 had placed new code inside a known scene-loader/BSS region.
+
+Action taken after audit
+- Builder and independent verifier now guard the entire 0x428-byte forbidden cave:
+  file 0x8F3D8..0x8F7FF / RAM 0x801A9BD8..0x801A9FFF.
+- V348 has exactly 77 nonzero bytes in that cave and all belong to its unsafe payload.
+- V349 has 1064/1064 zero bytes, no direct J/JAL target, and no pointer hit in the cave.
+- Rebuild hashes remain EC5724F9...D481 / E22EE42D...8A06 and the verifier passes.
+
+Final scope
+- STATIC/DISC PASS; runtime cold boot remains PENDING. TEST_ONLY.

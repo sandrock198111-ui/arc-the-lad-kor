@@ -1,0 +1,11 @@
+V348 floor digit remap
+base=arc1_v347_freeze_floor_dialogue_repair_TEST_ONLY_028303F6.zip sha256=028303F62EFA7D1362DAA6AA57B2224B39A8692CD2D8CA0073980DA1DAF73302
+output=arc1_v348_floor_digit_remap_TEST_ONLY_9256295B.zip sha256=9256295B8834D0A181850FF5C5DDE4CDA7FBF2C7424B75867C3CDDB1C746716C
+delta=arc1_v348_floor_digit_remap_TEST_ONLY_delta_from_v347_B4EF2635.zip sha256=B4EF2635FD37732ABA20A92559AF5436D3C9F85EDCCA1D4DD0BC5F7E20619F96
+changed_members=PSX.EXE
+changed_bytes=80
+hook=0x4EF74 jal 0x801A9C00; delay slot preserved
+helper=0x8F400+0x64; lut=0x8F464+0xA
+floors=1..50 exact mapped digits; final buffer <=8 bytes including NUL
+DAT/COMM.IMG/V347 pointer and dialogue fixes=byte exact
+runtime=PENDING user cold boot; TEST_ONLY

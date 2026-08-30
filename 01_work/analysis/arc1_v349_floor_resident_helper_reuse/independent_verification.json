@@ -1,0 +1,51 @@
+{
+  "verdict": "STATIC_PASS_RUNTIME_PENDING",
+  "archives": {
+    "full": "EC5724F91C6251C76D349AAB135BC411010CE7E4BBBDBCF0D4EFFEFE1488D481",
+    "delta": "E22EE42DE8D4A2F4168F4720FFFF7E8D825191AA82063B6ECBCF332C40638A06",
+    "members": 164
+  },
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "exact_diff_bytes": 80,
+  "resident_helper": {
+    "sha256": "8E4C879B5FB6DD34F4B6A7896E0F689E534113CE34247A0B6625AA9150F2FFCD",
+    "instructions": 19,
+    "unchanged_from_v348": true,
+    "callers": [
+      "0x80160464",
+      "0x80169774"
+    ],
+    "load_delays": "PASS"
+  },
+  "forbidden_cave": {
+    "range": "0x801A9BD8..0x801A9FFF",
+    "bytes": 1064,
+    "all_zero": true,
+    "control_targets": 0,
+    "pointer_hits": 0
+  },
+  "floors": {
+    "range": "1..50",
+    "passed": 50,
+    "maximum_buffer": 8
+  },
+  "failure_state": {
+    "file_sha256": "BD9F3A94EC276AB67894CD981585601AD2859FE29564B728B574B392343F26B5",
+    "game_id": "V348",
+    "current_pc": "0x801A9CA8",
+    "next_pc": "0x801A9CAC",
+    "status": "0x40000404",
+    "cause": "0x00000428",
+    "exception_code": 10,
+    "branch_delay": false,
+    "pc_word": "0x5349423A",
+    "hook_matches_v348_disk": true,
+    "unsafe_runtime_matches_disk": false,
+    "unsafe_mismatch_bytes": 77,
+    "resident_runtime_matches_disk": true
+  },
+  "preservation": "all DAT, COMM.IMG, and all non-PSX members byte exact",
+  "runtime": "PENDING user cold boot; TEST_ONLY"
+}

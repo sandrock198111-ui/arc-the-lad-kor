@@ -1,6 +1,39 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+V348 층수 숫자 변환 경계와 16px atlas 충돌 - 2026-08-30
+- 유적 층 formatter는 RAM `0x801696E8..0x801697B0`에 있다. file `0x4EF50`에서 prefix 포인터를 읽어 `sp+0x10`에 복사하고, `sp+0x18`에 `%d`로 층수를 만든 뒤 `0x8015E4C0` 변환기, strcat numeric, suffix strcat, 중앙 정렬 render 순으로 처리한다. 동적 층 값이나 포인터가 사라진 구조가 아니다.
+- `0x8015E4C0`은 ASCII 각 바이트에 `0xE1`을 더한다. 따라서 숫자 0..9는 raw `0x11..0x1A`가 된다. 이 대응은 구 12px atlas에서는 숫자였지만 현행 16px atlas에서는 physical16..25의 기호/blank/`어`/`그`/기타 한글을 가리킨다. V347 실기의 `지하 층`은 층 값 소실이 아니라 digit glyph namespace 충돌이다.
+- 현행 full-size 숫자의 direct raw는 `0=91, 1=4A, 2=0B, 3=27, 4=57, 5=9E, 6=9F, 7=9A, 8=10, 9=08`이다. 이 매핑을 전역 decoder에 적용하면 같은 raw를 쓰는 정상 한글을 손상하므로 금지한다. 층수 scratch에만 적용해야 한다.
+- V348은 floor converter call file `0x4EF74`/RAM `0x80169774`만 `jal 0x801A9C00`으로 바꾼다. delay slot `move a0,s0`는 유지한다. helper는 원 변환기를 호출한 뒤 NUL까지 순회하며 `0x11..0x1A`만 file `0x8F464` LUT로 바꾸고 RA/SP/S0를 복원한다.
+- helper file `0x8F400`/RAM `0x801A9C00`은 V347에서 0인 resident tail이고 EXE load range `0x8011B000..0x801AA000` 안에 있다. 사전 aligned data pointer와 direct J/JAL 진입은 0건이다. helper는 25워드, LUT 포함 끝은 `0x801A9C6E`다.
+- R3000 load delay는 `lbu t1→nop→beq`, `lbu t5→nop→sb`, `lw ra→lw s0→jr`로 닫힌다. helper 안의 JAL은 stack에 저장한 caller RA를 끝에서 복원하며 s0와 sp도 원상 복구한다.
+- 최종 floor buffer는 `지하 ` 3 + 최대 2자리 2 + `층` 2 + NUL 1 = 최대 8바이트다. 원 destination `sp+0x10`부터 numeric scratch `sp+0x18` 전까지 정확히 8바이트라 1..50 범위에서 넘치지 않는다.
+- V347 verifier의 `prefix/suffix와 formatter가 있으므로 지하 n층` 판정은 숫자 변환 뒤의 실제 atlas 소비를 검증하지 않은 정적 오판이었다. 앞으로 포맷 문자열 검증은 동적 값 생성뿐 아니라 최종 raw 코드→현행 physical glyph까지 연결해야 한다.
+
+V346 잔존 코드 포인터 손상과 V347 전수 복원 - 2026-08-30
+- V346 슬롯 10 기술 사용 프리징은 객체 callback pointer file `0x8D788`/VA `0x801A7F88`가 정상 `0x8012E2E0` 대신 `0x801204E0`을 가리킨 것이 원인이다. 잘못된 대상은 callback이 아니라 memcpy 계열 utility라 호출 중 객체 데이터를 덮는다.
+- 특정 바이트 값만 되돌리는 방식으로는 이런 손상을 놓칠 수 있다. 원본 PSX.EXE와 모든 DAT에서 `0x8011B000..0x801927FF` 실행 범위를 가리키는 4바이트 정렬 워드를 수집하고 현행 계보와 대조하면 5,311개 코드 포인터 후보가 나온다.
+- V346에서 원본과 다른 후보는 정확히 두 개다. file `0x8D788`의 `0x801204E0→0x8012E2E0`은 실기 프리징 원인이고, file `0x7EF3C`의 `0x80168DE1→0x80162CE0`은 홀수·함수 중간 주소를 가리키던 잠재 간접 호출 결함이다. V347 복원 후 후보 불일치는 0개다.
+- 이후 구조 복구는 알려진 오염 바이트 목록뿐 아니라 원본 정렬 코드 포인터 census도 회귀 가드로 사용한다. 단 원본과 의도적으로 달라진 새 hook/dispatcher는 별도 허용 목록이 필요하다.
+
+V348 던전 진입 실패와 V349 상주 helper 재사용 불변식 - 2026-08-30
+- V348 실패 상태 SHA-256 `BD9F3A94EC276AB67894CD981585601AD2859FE29564B728B574B392343F26B5`는 game ID `V348`, current/next PC `0x801A9CA8/0x801A9CAC`, Status `0x40000404`, Cause `0x00000428`이다. ExcCode 10 Reserved Instruction이고 BD=0이다.
+- 실패 시 RAM의 floor hook `0x80169774`는 디스크 V348과 일치하므로 훅 소실이 아니다. file `0x8F400`/RAM `0x801A9C00`에 둔 V348 helper가 장면 적재 데이터로 덮였고 실행이 그 데이터로 흘러간 것이 직접 원인이다. 이 영역은 V323에서 이미 실패가 증명된 file `0x8F3D8` 이후 scene-loader/BSS tail과 같은 금지 범위다.
+- 디스크 zero cave는 상주 코드 영역 증거가 아니다. `0x801A9BD8` 이후에는 새로운 helper, LUT, trampoline을 두지 않는다. 이미 문서화된 실패 범위를 후속 빌더가 다시 쓰지 않도록 주소 중복 가드를 둔다.
+- V338의 ASCII 숫자 변환기는 file `0x8F380`에서 부팅 시 RAM `0x801FF858`로 복사되는 88바이트 resident block이다. SHA-256은 `8E4C879B5FB6DD34F4B6A7896E0F689E534113CE34247A0B6625AA9150F2FFCD`이며 code 76B + digit LUT 10B + zero 2B다. V348 실패 상태에서도 RAM 88/88바이트가 보존됐다.
+- resident helper는 NUL 종료 버퍼를 제자리 변환한다. ASCII `0..9`는 LUT `91 4A 0B 27 57 9E 9F 9A 10 08`, 그 밖의 바이트는 기존 `+0xE1` 규칙을 쓴다. leaf이며 JAL/JALR·stack·saved-register를 쓰지 않고, 두 lbu는 소비 전 한 명령 간격을 갖는다.
+- V349은 floor formatter file `0x4EF74`/RAM `0x80169774`의 JAL만 resident `0x801FF858`로 보낸다. delay slot `move a0,s0`는 그대로다. resident helper의 직접 호출자는 레벨업 `0x80160464`와 층수 `0x80169774` 정확히 두 곳이어야 한다.
+- V349은 V348 위험 payload `0x8F400..0x8F46D`를 0으로 되돌린다. 회귀 가드는 좁은 payload만이 아니라 V323/V338에서 확정한 전체 금지 cave file `0x8F3D8..0x8F7FF`/RAM `0x801A9BD8..0x801A9FFF` 0x428바이트를 0으로 고정하고 J/JAL 대상·포인터 참조도 0이어야 한다. 새 resident RAM 점유는 0바이트다. 같은 기능의 코드를 복제하지 말고 이미 부팅 복사·런타임 보존이 확인된 resident helper를 재사용한다.
+- V349 full/delta SHA-256은 `EC5724F91C6251C76D349AAB135BC411010CE7E4BBBDBCF0D4EFFEFE1488D481` / `E22EE42DE8D4A2F4168F4720FFFF7E8D825191AA82063B6ECBCF332C40638A06`다. 정적·디스크 PASS, 런타임 PENDING이다.
+
+V347 층수 formatter와 E2 shared-tail 대사 복원 - 2026-08-30
+- 유적 층수는 VA `0x8016974C` formatter가 prefix 문자열, 동적 숫자, suffix 문자열을 이어 붙이고 최종 폭으로 중앙 정렬한다. prefix pointer file `0x823B0`은 payload file `0x809F4`, suffix pointer file `0x823B4`는 payload file `0x8215C`를 가리킨다. V347에서 payload만 `지하 `와 `층`으로 바꿨으나, 사후 실기에서 숫자 변환 raw가 현행 atlas와 충돌해 숫자가 보이지 않았다. 자동 표시된다는 이전 정적 결론은 폐기하고 V348 로컬 remap을 기준으로 한다.
+- S5021의 장사 관련 두 본문은 승인된 외부 슬롯과 completion 메타데이터가 살아 있는데 body만 inline으로 평탄화돼 있었다. body `0x47B0E` 첫 2바이트를 `E2 97`(slot22, completion43), body `0x47B70`을 `E2 95`(slot20, completion22)로 복원하면 기존 shared tail과 terminator를 그대로 재사용한다.
+- E2 복원 시 슬롯 payload만 맞추면 안 된다. body의 이전 길이, resume target, slot+0x7F completion, 같은 tail을 쓰는 다른 caller, 전체 파일의 E2 caller 개수를 함께 고정해야 한다.
+- `기다렸지, 기다렸지`는 일본어 원문도 `おまたせ、おまたせ`로 반복하므로 번역 오류가 아니라 화자 말버릇이다. 반복을 임의로 제거하지 않는다.
+- 선택지 커서의 행 간격은 현행 코드상 16px지만 사용자가 원하는 실제 한 칸 이동 폭/정렬은 두 번째 선택 상태가 없어서 확정하지 않았다. V347은 관련 코드와 COMM.IMG를 byte exact 보존한다.
+
 V321의 0xAB 전역 문자 치환이 구조 바이트를 파괴한 계보와 V346 복원 - 2026-08-30
 - V321 빌더는 PSX.EXE의 text_regions 판정에 따라 0xAB 57개를 모두 구 문자 '몬'으로 보고 0x64로 바꿨다. 그러나 바이트 값만으로 문자 여부를 판정하면 데이터 테이블과 포인터 하위 바이트가 함께 잡힌다.
 - V320C→V321의 57개 AB→64 전이를 현재 계보와 대조하면 정확히 34 구조 바이트 + 2 실제 '몬' + 21 후속 재작성 포인터로 분류된다. 이 57개 경계는 V346 회귀 가드로 고정했다.

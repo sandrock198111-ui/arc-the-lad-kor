@@ -1,0 +1,14 @@
+V347 freeze + floor + dialogue repair
+base=arc1_v346_v321_structural_text_repair_TEST_ONLY_30A40DD7.zip sha256=30A40DD7560CAEC5F9C464BC0166EDC00FADAB9F95823748B44AF260334890B8
+output=arc1_v347_freeze_floor_dialogue_repair_TEST_ONLY_028303F6.zip sha256=028303F62EFA7D1362DAA6AA57B2224B39A8692CD2D8CA0073980DA1DAF73302
+delta=arc1_v347_freeze_floor_dialogue_repair_TEST_ONLY_delta_from_v346_13E496A0.zip sha256=13E496A0ED28B0FA41113F8C5DC5EBDBF7402872F805AF2C792F3658F71A99CE
+changed_members=5/S5011.DAT,5/S5021.DAT,PSX.EXE
+changed_bytes={"5/S5011.DAT": 58, "5/S5021.DAT": 118, "PSX.EXE": 8}
+code pointers=5311 original aligned candidates / V346 mismatches 2 / V347 mismatches 0
+freeze=0x8D788 0x801204E0 -> 0x8012E2E0
+latent=0x7EF3C 0x80168DE1 -> 0x80162CE0
+floor=existing formatter now emits 지하 n층 and centres dynamically
+dialogue=5 approved revisions in slots 2,4,20,21,22
+repetition=source-authentic 기다렸지, 기다렸지 preserved
+choice cursor=unchanged/deferred; COMM.IMG=byte exact
+runtime=PENDING user cold boot; TEST_ONLY

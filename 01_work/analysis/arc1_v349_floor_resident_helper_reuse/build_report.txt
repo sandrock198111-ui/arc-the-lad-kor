@@ -1,0 +1,11 @@
+V349 floor resident-helper reuse
+base=arc1_v348_floor_digit_remap_TEST_ONLY_9256295B.zip sha256=9256295B8834D0A181850FF5C5DDE4CDA7FBF2C7424B75867C3CDDB1C746716C
+output=arc1_v349_floor_resident_helper_reuse_TEST_ONLY_EC5724F9.zip sha256=EC5724F91C6251C76D349AAB135BC411010CE7E4BBBDBCF0D4EFFEFE1488D481
+delta=arc1_v349_floor_resident_helper_reuse_TEST_ONLY_delta_from_v348_E22EE42D.zip sha256=E22EE42DE8D4A2F4168F4720FFFF7E8D825191AA82063B6ECBCF332C40638A06
+changed_members=PSX.EXE changed_bytes=80
+floor hook=0x4EF74 jal 0x801FF858; delay preserved
+forbidden cave 0x801A9BD8..0x801A9FFF=1064/1064 zero; inbound/pointer refs=0
+resident helper=existing V338 code, 88/88 bytes unchanged; callers=level+floor
+floors 1..50 exact current digit codes; max final buffer=8 bytes
+DAT/COMM.IMG/all non-PSX members=byte exact
+runtime=PENDING user cold boot; TEST_ONLY

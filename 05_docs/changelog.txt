@@ -1,3 +1,32 @@
+2026-08-30 - V349 V348 던전 진입 Reserved Instruction 복구
+- 사용자가 제공한 V348 실패 상태(`BD9F3A94EC276AB67894CD981585601AD2859FE29564B728B574B392343F26B5`)를 해제했다. game ID는 `V348`, current/next PC는 `0x801A9CA8/0x801A9CAC`, Cause는 `0x00000428`(ExcCode 10 Reserved Instruction, BD=0)이었다. floor hook은 디스크와 같은 상태였지만 V348이 file `0x8F400`/RAM `0x801A9C00`에 둔 helper는 장면 적재 데이터로 덮였다. 따라서 V348은 `RUNTIME FAIL / DO NOT RUN`이다.
+- `02_scripts/build_arc1_v349_floor_resident_helper_reuse.py`를 추가했다. V338부터 부팅 복사 상주 블록에 존재하고 실패 상태 RAM에서도 88/88바이트 보존된 ASCII 숫자 변환기 `0x801FF858`을 층 formatter도 재사용한다. floor hook file `0x4EF74`만 `jal 0x801FF858`로 바꾸고 delay slot `move a0,s0`는 유지했다.
+- V348의 위험한 helper/LUT file `0x8F400..0x8F46D`를 0으로 복원했다. V349에서 `0x801A9C00..0x801A9C7F` 직접 제어흐름·포인터 참조는 0이고, 상주 helper 호출자는 기존 레벨업 `0x80160464`와 층수 `0x80169774` 두 곳뿐이다. 새 런타임 RAM 점유는 0바이트다.
+- 빌더와 분리된 `02_scripts/verify_arc1_v349_floor_resident_helper_reuse.py`가 상주 helper 19명령, R3000 load delay, JAL 대상·delay slot, 호출자 집합, 실패 상태의 덮어쓰기와 상주 코드 보존, 지하 1~50층 변환 및 최대 8바이트 버퍼를 독립 검증했다.
+- V348 대비 변경 멤버는 `PSX.EXE` 하나, 실제 diff는 80바이트이며 Expected-Write와 정확히 일치한다. 모든 DAT·COMM.IMG·나머지 163멤버는 byte exact다. full/delta SHA-256은 `EC5724F91C6251C76D349AAB135BC411010CE7E4BBBDBCF0D4EFFEFE1488D481` / `E22EE42DE8D4A2F4168F4720FFFF7E8D825191AA82063B6ECBCF332C40638A06`다.
+- `V349.bin`/cue SHA-256은 `0257A3760278B5B39B964A5F395259A50D3695161F431583CBF4D9E69386236B` / `EDDA93106AC9B77160A633B4A19B570EAFB1BEF0F1FD1F4BF014EB44311FCFF3`다. v104 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481, 패치 멤버 164/164 readback이 PASS했다. `V349_1.mcd`는 V348 카드와 byte exact다.
+- 17:20 제한 해제 후 Claude Code CLI 읽기 전용 감사를 완료했다. 아카이브/BIN/CUE 해시, JAL 인코딩, delay slot, resident helper 앞부분과 층수 LUT는 독립 PASS했다. Claude 세션은 E: 밖 실패 `.sav`와 ZIP 추출 도구가 차단돼 그 두 항목을 미확인으로 분리했고, 금지 cave 전체 가드 부족을 MEDIUM으로 지적했다. 이에 빌더/검증기를 강화해 `0x801A9BD8..0x801A9FFF` 0x428바이트 전체 zero·제어흐름·포인터 불변식을 추가했고 결과 ZIP 해시는 변하지 않았다.
+- 콜드부팅 실기는 PENDING이므로 V349는 TEST_ONLY이며 `bible_current.txt`는 갱신하지 않았다.
+
+2026-08-30 - V348 유적 층수 숫자 로컬 리맵
+- V347 실기에서 유적 층 표기가 `지하 층`으로 나오고 숫자만 사라지는 현상을 확인했다. V347의 prefix/suffix와 동적 층 값은 정상이나, 기존 ASCII 변환기 `0x8015E4C0`이 숫자 `0..9`를 구 12px raw `0x11..0x1A`로 바꾸는 것이 원인이었다. 현행 16px atlas에서 이 범위는 빈칸·한글·기호이므로 숫자로 표시되지 않는다.
+- `02_scripts/build_arc1_v348_floor_digit_remap.py`를 추가했다. 층 formatter의 변환 호출 file `0x4EF74` 한 곳만 resident helper RAM `0x801A9C00`으로 우회한다. helper는 원 변환기를 호출한 뒤 층수 scratch 안의 `0x11..0x1A`만 현행 숫자 raw `91 4A 0B 27 57 9E 9F 9A 10 08`로 바꾼다. 일반 대화·UI decoder와 전역 문자 매핑은 건드리지 않는다.
+- helper는 file `0x8F400`의 확인된 zero cave에 25워드/100바이트, LUT는 `0x8F464`에 10바이트를 쓴다. 훅 delay slot `move a0,s0`, R3000 load delay, RA/SP/S0 보존, 분기·복귀 표적과 PS-X EXE 적재 범위를 독립 검증했다.
+- 실제 기계어를 별도 MIPS 실행 모델로 돌려 지하 1~50층의 숫자를 전수 확인했다. `지하 ` 3바이트 + 최대 두 자리 2바이트 + `층` 2바이트 + NUL 1바이트로 기존 8바이트 버퍼에 정확히 들어간다.
+- V347 대비 변경 멤버는 `PSX.EXE` 하나이고 실제 diff는 80바이트다. 모든 DAT, COMM.IMG, V347의 두 코드 포인터 복구와 다섯 대사는 byte exact다. full/delta SHA-256은 `9256295B8834D0A181850FF5C5DDE4CDA7FBF2C7424B75867C3CDDB1C746716C` / `B4EF2635FD37732ABA20A92559AF5436D3C9F85EDCCA1D4DD0BC5F7E20619F96`다.
+- `V348.bin`/cue SHA-256은 `C55590FE45C4852B737E49079A2BC9872AB48FB478D93C0CA656173A67FF2493` / `F5EFBC65AC469FE81CEA348E268D7A19D8ADF66EC5EEA566BDA79A73FD7BB64A`다. v104 LBA 506/506와 164/164 디스크 readback이 PASS했고 `V348_1.mcd`는 V347 카드와 byte exact다.
+- Claude Code CLI 감사는 계정 세션 제한(`17:20` 리셋)으로 실행되지 않았으며 PASS로 기록하지 않는다. 콜드부팅 실기는 PENDING이므로 TEST_ONLY이고 bible_current.txt는 갱신하지 않았다.
+
+2026-08-30 - V347 스킬 사용 프리징·층수 표기·상인 대사 복구
+- 사용자 V346 슬롯 10 상태에서 기술 사용 시 PC가 `0x80120520`에 멈추는 현상을 재현했다. 객체 callback file `0x8D788`이 정상 `0x8012E2E0` 대신 memcpy 계열 `0x801204E0`을 가리켜 callback 실행 중 자기 데이터를 덮는 것이 직접 원인이었다.
+- 원본 PSX.EXE와 모든 DAT에서 실행 범위 `0x8011B000..0x801927FF`를 가리키는 4바이트 정렬 코드 포인터 5,311개를 전수 대조했다. V346 불일치는 callback `0x8D788`과 잠재 간접 호출 포인터 `0x7EF3C` 두 개뿐이었고, 각각 `0x8012E2E0`, `0x80162CE0`으로 복원해 V347 불일치를 0개로 만들었다.
+- 기존 층수 formatter와 중앙 정렬 코드는 바꾸지 않고 prefix pool file `0x809F4`를 `지하 `로, suffix pool file `0x8215C`를 `층`으로 바꿨다. 정적 분석에서는 동적 숫자가 유지된다고 판단했으나, 사후 실기에서 기존 숫자 변환 코드가 현행 16px atlas와 충돌해 `지하 층`만 표시되는 것이 확인됐다. 층수 표기는 V348에서 별도로 복구한다.
+- `5/S5011.DAT`과 `5/S5021.DAT`의 상인 관련 다섯 문장을 문맥에 맞게 고쳤다. S5021의 두 문장은 공유 tail을 보존하기 위해 body 첫 2바이트만 원래 E2 호출로 복원했으며 slot completion 메타데이터 22/43과 resume 위치를 유지했다.
+- 일본어 원문도 두 번 반복하는 `기다렸지, 기다렸지`는 캐릭터 말버릇으로 확인해 byte exact 보존했다. 선택지 커서 이동 폭은 두 번째 선택 상태 증거가 없어 이번 빌드에서 변경하지 않았다.
+- V346 대비 변경 멤버는 `5/S5011.DAT`, `5/S5021.DAT`, `PSX.EXE` 세 개이고 실제 변경은 각각 58/118/8바이트다. COMM.IMG와 커서 관련 범위는 byte exact다.
+- full/delta SHA-256은 `028303F62EFA7D1362DAA6AA57B2224B39A8692CD2D8CA0073980DA1DAF73302` / `13E496A0ED28B0FA41113F8C5DC5EBDBF7402872F805AF2C792F3658F71A99CE`다. V347.bin/cue SHA-256은 `85D55B7EB3AF29B436D4742B6696A24C458EE463182D3A1C698B9658D04DAA2B` / `E7FF6079D38C0F09543001A09C7FBEC6EC1ECCEE60D1A38E082EE07B1D1B2F90`다.
+- 결정적 2회 빌드, 독립 verifier, 포인터 전수 census, Expected-Write, v104 LBA 506/506와 164/164 디스크 readback은 PASS했다. Claude CLI 최종 감사는 세션 제한(17:20 리셋)으로 완료되지 않았으며 PASS로 기록하지 않는다. 런타임은 PENDING이므로 TEST_ONLY이고 bible_current.txt는 갱신하지 않았다.
+
 2026-08-30 - V346 V321 구조 바이트 오분류 복원 및 문구 수정
 - V345 실기에서 슬롯 5의 스킬 사용 시 프리징이 확인됐다. 조사 결과 V321 빌더가 PSX.EXE의 0xAB 바이트 57개를 모두 구 문자 '몬'으로 오분류해 0x64로 바꾼 것이 계보 원인이었다.
 - 57개를 전수 분류해 실제 문자 '몬' 2개와 이후 재작성된 포인터 바이트 21개는 유지하고, 숫자/구조체/디스패처에 속한 34개만 V320C 값 0xAB로 복원했다.

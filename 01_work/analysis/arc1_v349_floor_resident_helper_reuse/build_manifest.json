@@ -1,0 +1,37 @@
+{
+  "version": "V349",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "base": {
+    "file": "arc1_v348_floor_digit_remap_TEST_ONLY_9256295B.zip",
+    "sha256": "9256295B8834D0A181850FF5C5DDE4CDA7FBF2C7424B75867C3CDDB1C746716C"
+  },
+  "output": {
+    "file": "arc1_v349_floor_resident_helper_reuse_TEST_ONLY_EC5724F9.zip",
+    "sha256": "EC5724F91C6251C76D349AAB135BC411010CE7E4BBBDBCF0D4EFFEFE1488D481"
+  },
+  "delta": {
+    "file": "arc1_v349_floor_resident_helper_reuse_TEST_ONLY_delta_from_v348_E22EE42D.zip",
+    "sha256": "E22EE42DE8D4A2F4168F4720FFFF7E8D825191AA82063B6ECBCF332C40638A06"
+  },
+  "changed_members_vs_v348": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 80
+  },
+  "failure_evidence": {
+    "state_sha256": "BD9F3A94EC276AB67894CD981585601AD2859FE29564B728B574B392343F26B5",
+    "pc": "0x801A9CA8",
+    "cause": "0x00000428",
+    "exception": "Reserved Instruction; V348 helper overwritten during scene load"
+  },
+  "repair": {
+    "floor_hook_file": "0x4EF74",
+    "resident_helper_ram": "0x801FF858",
+    "new_resident_bytes": 0,
+    "unsafe_tail_restored": "0x8F400..0x8F46D",
+    "verified_floors": "1..50"
+  },
+  "preserved": "all DAT, COMM.IMG, V347/V348 non-floor content byte exact",
+  "runtime": "PENDING user cold boot; TEST_ONLY"
+}

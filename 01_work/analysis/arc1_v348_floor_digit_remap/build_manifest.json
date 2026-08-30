@@ -1,0 +1,38 @@
+{
+  "version": "V348",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "base": {
+    "file": "arc1_v347_freeze_floor_dialogue_repair_TEST_ONLY_028303F6.zip",
+    "sha256": "028303F62EFA7D1362DAA6AA57B2224B39A8692CD2D8CA0073980DA1DAF73302"
+  },
+  "output": {
+    "file": "arc1_v348_floor_digit_remap_TEST_ONLY_9256295B.zip",
+    "sha256": "9256295B8834D0A181850FF5C5DDE4CDA7FBF2C7424B75867C3CDDB1C746716C"
+  },
+  "delta": {
+    "file": "arc1_v348_floor_digit_remap_TEST_ONLY_delta_from_v347_B4EF2635.zip",
+    "sha256": "B4EF2635FD37732ABA20A92559AF5436D3C9F85EDCCA1D4DD0BC5F7E20619F96"
+  },
+  "changed_members_vs_v347": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "PSX.EXE": 80
+  },
+  "floor_digit_fix": {
+    "hook_file": "0x4EF74",
+    "hook_ram": "0x80169774",
+    "helper_file": "0x8F400",
+    "helper_ram": "0x801A9C00",
+    "lut": "91 4A 0B 27 57 9E 9F 9A 10 08",
+    "verified_levels": "1..50",
+    "max_buffer_bytes_including_nul": 8
+  },
+  "preserved": {
+    "DAT_members": "byte exact",
+    "COMM_IMG": "byte exact",
+    "V347_code_pointer_repairs": "byte exact",
+    "V347_dialogue_repairs": "byte exact"
+  },
+  "runtime": "PENDING user cold boot; TEST_ONLY"
+}

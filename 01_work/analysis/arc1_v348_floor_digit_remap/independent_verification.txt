@@ -1,0 +1,8 @@
+V348 independent verification PASS
+full=9256295B8834D0A181850FF5C5DDE4CDA7FBF2C7424B75867C3CDDB1C746716C
+delta=B4EF2635FD37732ABA20A92559AF5436D3C9F85EDCCA1D4DD0BC5F7E20619F96
+members=164 changed=PSX.EXE only exact_diff_bytes=80
+helper=25 MIPS-I instructions; targets/delay slots/load delays/RA-SP-S0 PASS
+machine execution=floors 1..50 exact current digit codes; max buffer 8 bytes
+DAT/COMM.IMG/V347 pointers and dialogue fixes=byte exact
+runtime=PENDING user cold boot; TEST_ONLY

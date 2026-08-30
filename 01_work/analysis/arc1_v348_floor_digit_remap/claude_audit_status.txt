@@ -1,0 +1,4 @@
+Claude Code CLI audit NOT RUN
+attempted=2026-08-30 16:42 Asia/Seoul
+result=You've hit your session limit · resets 5:20pm (Asia/Seoul)
+This is not an audit PASS. Local builder-independent verification remains separate.

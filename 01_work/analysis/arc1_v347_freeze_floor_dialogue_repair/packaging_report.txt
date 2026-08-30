@@ -1,0 +1,27 @@
+V347 packaging report
+date=2026-08-30
+layout=v104
+
+full_zip=03_output/arc1_v347_freeze_floor_dialogue_repair_TEST_ONLY_028303F6.zip
+full_zip_size=14779867
+full_zip_sha256=028303F62EFA7D1362DAA6AA57B2224B39A8692CD2D8CA0073980DA1DAF73302
+
+delta_zip=03_output/arc1_v347_freeze_floor_dialogue_repair_TEST_ONLY_delta_from_v346_13E496A0.zip
+delta_zip_size=363699
+delta_zip_sha256=13E496A0ED28B0FA41113F8C5DC5EBDBF7402872F805AF2C792F3658F71A99CE
+
+bin=03_output/V347.bin
+bin_size=632495136
+bin_sha256=85D55B7EB3AF29B436D4742B6696A24C458EE463182D3A1C698B9658D04DAA2B
+
+cue=03_output/V347.cue
+cue_size=70
+cue_sha256=E7FF6079D38C0F09543001A09C7FBEC6EC1ECCEE60D1A38E082EE07B1D1B2F90
+
+memory_card=C:/Users/Administrator/AppData/Local/DuckStation/memcards/V347_1.mcd
+memory_card_size=131072
+memory_card_sha256=25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3
+
+disc_verification=PASS (506/506 data LBAs, COMM 307/667/891, 164/164 member readback)
+runtime=PENDING user cold boot
+status=TEST_ONLY

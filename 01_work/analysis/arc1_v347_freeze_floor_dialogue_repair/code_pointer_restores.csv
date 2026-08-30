@@ -1,0 +1,3 @@
+﻿member,file_offset,v346,pristine_v347,purpose
+PSX.EXE,0x7EF3C,0x80168DE1,0x80162CE0,restore_latent_indirect_dispatch_id2
+PSX.EXE,0x8D788,0x801204E0,0x8012E2E0,restore_skill_use_action_callback
