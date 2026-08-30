@@ -1,6 +1,14 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+V351 마침표 raw-code 회귀와 검증 교훈 - 2026-08-30
+- 현행 16px atlas에서 punctuation은 legacy `character_codes()` 상수보다 실제 physical mapping을 우선해야 한다. 현재 `atlas_mapping.csv`의 physical14는 U+C758, physical32는 U+002E `.`이며 direct raw는 각각 `0x0F`, `0x21`이다. 따라서 V345 helper의 `candidates["."].append(0x0F)`를 새 텍스트 인코딩의 진실로 재사용하면 안 된다.
+- V350 화면의 문장 끝 이상 글자는 NUL/slot completion/resume 문제가 아니었다. V349 기존 슬롯이 `...21`로 끝나는 반면 V350 새 payload가 `...0F`로 끝났고, 중간 마침표도 같은 `0F`였다. 런타임 그림과 atlas를 연결해 `.` 자체가 잘못된 glyph로 인코딩됐음을 확정했다.
+- recent-build provenance로 안전하게 고칠 수 있는 현행 오염은 10바이트다: V347에서 3개, V350에서 7개. V345의 `4/S4031` 문제는 V346가 이미 `0x21`로 고쳤다. `0x0F` 전역 검색 결과는 훨씬 많지만 오래된 raw의 의미가 혼재하므로 전역 `0F→21`은 금지한다.
+- V350 verifier는 잘못된 `0x0F` payload hex 자체를 expected로 고정했기 때문에 구조적으로는 PASS하면서 의미 오류를 놓쳤다. 앞으로 text verifier는 expected bytes만 고정하지 말고, punctuation/숫자처럼 atlas 의미가 바뀐 namespace는 `raw -> physical index -> Unicode/glyph`까지 독립 확인한다.
+- V351은 V350을 베이스로 10개 source offset만 `0F→21`로 바꾼다. historical builder의 재현성을 깨지 않기 위해 V345의 legacy helper를 소급 변경하지 않고, 후속 빌더는 현행 atlas에서 punctuation을 명시적으로 고정해야 한다.
+- V350은 런타임 실패판이며 `DO NOT RUN`; V351 full SHA-256은 `76DFD702BBDD9D11A9CEE2B6B9DF795F90B2F4D6744DB474209E92F4825CA50D`, 정적/디스크 PASS, 런타임 PENDING이다.
+
 V350 대사 자연화와 16px 글리프 경계 - 2026-08-30
 - V349 런타임 화면에서 번역투가 확인된 source key는 `5/S5024.DAT:0x478E8`, `5/S5052.DAT:0x47A90/0x47ADA/0x47B28` 네 개다. 앞으로 화면 문구 수정은 display string 검색보다 `(member, body offset)` source key와 실제 E2 slot owner를 같이 기록한다.
 - 일본어 `話が進まねえ`를 메타적인 `이야기가 진행되지 않는다`로 옮기지 않는다. 이 장면에서는 대화/논의가 진전되지 않는다는 뜻이며 V350은 `뭔 소리야? 이래선 말이 안 되잖아.`로 처리한다. `助かった`도 `살았다 살았어` 직역보다 `덕분에 살았군`이 자연스럽고, `言うだけならただ`의 탐욕스러운 농담은 `말이야 공짜니까`로 살린다.

@@ -1,0 +1,11 @@
+﻿member,slot,caller,offset,before,after,meaning
+5/S5011.DAT,4,0x4810A,0x45212,0F,21,Korean full stop '.'
+5/S5021.DAT,20,0x47B70,0x45A1B,0F,21,Korean full stop '.'
+5/S5021.DAT,22,0x47B0E,0x45B1A,0F,21,Korean full stop '.'
+5/S5024.DAT,0,0x478E8,0x45018,0F,21,Korean full stop '.'
+5/S5052.DAT,0,0x47ADA,0x4500B,0F,21,Korean full stop '.'
+5/S5052.DAT,0,0x47ADA,0x4501F,0F,21,Korean full stop '.'
+5/S5052.DAT,0,0x47ADA,0x4502B,0F,21,Korean full stop '.'
+5/S5052.DAT,4,0x47B28,0x4521E,0F,21,Korean full stop '.'
+5/S5052.DAT,6,0x47A90,0x4530D,0F,21,Korean full stop '.'
+5/S5052.DAT,6,0x47A90,0x45313,0F,21,Korean full stop '.'

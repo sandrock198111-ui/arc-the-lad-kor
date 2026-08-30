@@ -1,0 +1,9 @@
+V351 period-code repair
+base=arc1_v350_dialogue_wording_fixes_TEST_ONLY_2B760572.zip sha256=2B76057250E02F29D6EAA55A8882B04A420F3C232715409938DAF2070AD4041E
+output=arc1_v351_period_code_repair_TEST_ONLY_76DFD702.zip sha256=76DFD702BBDD9D11A9CEE2B6B9DF795F90B2F4D6744DB474209E92F4825CA50D
+delta=arc1_v351_period_code_repair_TEST_ONLY_delta_from_v350_71830EC8.zip sha256=71830EC8C438869D0A82EBFE85F763E9152C80A4487B99413F719B82645A0264
+changed_members=5/S5011.DAT,5/S5021.DAT,5/S5024.DAT,5/S5052.DAT
+changed_bytes=10 exact 0F->21
+atlas guard: raw 0F=physical14 U+C758; raw 21=physical32='.' (U+002E)
+PSX.EXE/COMM.IMG/E2 callers/completion metadata/all other members=byte exact V350
+runtime=PENDING user cold boot/dialogue review; TEST_ONLY

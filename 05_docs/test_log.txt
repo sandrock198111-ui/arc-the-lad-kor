@@ -1,3 +1,12 @@
+2026-08-30 | V351 V350/V347 마침표 코드 복구 | 사용자 V350 런타임 화면, V349/V350 slot payload 비교, 현행 atlas index 14/32 대조, V346→V347·V349→V350 신규 0x0F 계보 diff, py_compile, 2회 결정적 빌드, 독립 verifier, V350/V351 check_build 비교, v104 ISO 164/164 readback, MCD byte 대조 | V350 RUNTIME FAIL / DO NOT RUN; V351 STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING.
+- V350 화면에서 문장 끝의 이상 글자는 E2 뒤 쓰레기 문자가 아니라 `.` 자체의 오인코딩이었다. 현행 atlas에서 raw `0x0F`가 가리키는 physical14는 U+C758이고, full stop `.`는 physical32/raw `0x21`이다. V349의 해당 네 슬롯도 정상적으로 `0x21` 마침표를 사용한다.
+- 현재 V350과 계보를 직접 diff해 최근 빌드가 새로 만든 잘못된 마침표를 정확히 10개로 고정했다. V347: `5/S5011.DAT:0x45212`, `5/S5021.DAT:0x45A1B/0x45B1A` 3개. V350: `5/S5024.DAT:0x45018`, `5/S5052.DAT:0x4500B/0x4501F/0x4502B/0x4521E/0x4530D/0x45313` 7개. V345의 같은 문제는 V346에서 이미 정상화돼 현행 계보에 남지 않는다.
+- V351은 이 10바이트만 exact `0F→21`로 바꾼다. 변경 멤버는 S5011/S5021/S5024/S5052 네 개뿐이며 PSX.EXE, COMM.IMG, E2 caller, `+0x7F` completion, 파일 크기, 다른 160멤버는 V350과 byte exact다. 전역 0x0F 치환은 하지 않았다.
+- 2회 빌드 full/delta SHA-256은 `76DFD702...CA50D` / `71830EC8...A0264`로 동일했다. 독립 verifier는 빌더를 import하지 않고 atlas Unicode, 10개 위치, 0F→21 pair, E2 caller/completion, Expected-Write를 재검증해 PASS했다.
+- V350/V351 `check_build.py`는 둘 다 기존 선택지 폭/marker/3줄 초과 부채로 exit 1이지만 파일명 첫 줄을 제외한 출력이 완전히 동일하다. 신규 경고 증가는 0이다.
+- `package_test_iso.py --layout v104 --name V351`과 `verify_iso_layout.py` 결과 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481·587776B, ZIP 멤버 164/164 readback PASS. BIN/CUE SHA-256은 `A86D63739492618E55850A721CF6F65DFB5975A31E8A8B2EBFA2CFA07BC3C9A0` / `B99D5C8D6CFB3A30A06FCE38186E7415BCE7FF268AA27570C6997404A65ED50F`다.
+- `V351_1.mcd`는 V350 카드와 131072B/`25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`로 byte exact다. 런타임 게이트는 V350에서 깨졌던 네 자연화 대사 마침표, V347 상인 대사 3곳, V349 던전 진입/지하 층수다.
+
 2026-08-30 | V350 V349 화면 대사 4건 자연화 | JP/주변 문맥 대조, V349 Hanme 코드표·신규 글리프 후보/런타임 소유권 감사, source-keyed/reduction 정합, py_compile, 결정적 2회 빌드, 독립 E2 slot verifier, V349/V350 check_build 비교, v104 ISO 164/164 readback, MCD byte 대조, Chat On Steroids worker 호출 시도 | STATIC PATCH PASS / DISC INTEGRITY PASS / SUBAGENT AUDIT NOT RUN (`UNIDENTIFIED_CALLER`) / RUNTIME PENDING.
 - 최종 문구는 `뭔 소리야? 이래선 말이 안 되잖아.`, `이야, 덕분에 살았군. 고맙다.`, `고맙다고는 해 주지. 하지만 보물은 나누지 않을 거야. 말이야 공짜니까.`, `요슈아: 사람은 욕망만 따라 사는 게 아니다.` 네 건이다. V349 `character_codes()`로 각각 25/20/44/31바이트이며 미등록 글리프 0이다.
 - 초기 후보는 각 한 글자 `휴/눠/좇/얘`가 미등록이었다. V349 COMM 전수 비트맵에서 동일 glyph는 0개였고, 텍스트 사용 0·nontext_reads 0·direct-code 조건까지 남은 physical은 741/742/743/746 네 칸뿐이었다. 문서/계보 대조에서 741..743은 V336의 기존 168..170 보존칸, 746은 E5 들여쓰기 blank임을 확인해 신규 글리프 덮어쓰기를 중단했다.
@@ -7,7 +16,7 @@
 - `check_build.py`는 V349와 V350 모두 본문2878/선택지357/E2 1377/제자리1113, 선택지 폭75/marker2/3줄 초과18로 동일하다. 신규 경고 증가는 0이며 기존 상속 부채다.
 - `package_test_iso.py --layout v104 --name V350`과 `verify_iso_layout.py V350.bin <정확한 V350 full ZIP>` 결과 데이터 506/506 LBA, COMM 307/667/891, PSX.EXE LBA268481·587776B, 164/164 member readback PASS다. BIN/CUE SHA-256은 `136C8E6F...BC048` / `3494E30E...C1437`다.
 - DuckStation `V349_1.mcd→V350_1.mcd`는 131072B, 양쪽 SHA-256 `25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`, byte exact다.
-- Chat On Steroids Core의 파일/터미널/Git은 정상이나 worker spawn은 두 번 모두 prime 식별 `UNIDENTIFIED_CALLER`로 거부됐다. 서브에이전트 독립 감사를 실행한 것으로 간주하지 않는다. 런타임 게이트는 네 대사 화면 확인 + V349에서 미확정인 던전 진입/층수 표시이며 통과 전 TEST_ONLY다.
+- Chat On Steroids Core의 파일/터미널/Git은 정상이나 worker spawn은 두 번 모두 prime 식별 `UNIDENTIFIED_CALLER`로 거부됐다. 서브에이전트 독립 감사를 실행한 것으로 간주하지 않는다. 이후 사용자 런타임 화면에서 4개 자연화 대사의 마침표가 현행 atlas와 맞지 않는 raw `0x0F`로 출력되는 회귀가 확인됐으므로 V350은 `RUNTIME FAIL / DO NOT RUN`이며 V351이 후속 후보이다.
 
 2026-08-30 | Codex/Paseo 전체 대화 TXT 내보내기 | 원본 rollout JSONL cutoff 추출, 사용자/Codex/Paseo 역할 분류, UTF-8·첫/마지막 메시지·메시지 수·민감정보 패턴 검사, 결정적 2회 생성, SHA-256 대조 | PASS.
 - 원본은 `rollout-2026-08-20T22-11-32-01a01f4c-5976-7920-8e93-83fa8f6edfdb.jsonl`, cutoff는 `2026-08-30T08:57:40.076Z`다. cutoff 구간 SHA-256은 `8DB55EC7395A044920224D9057B28AE4EA6D41B6A271978A239027CC3965E434`다.

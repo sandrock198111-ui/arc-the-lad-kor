@@ -1,3 +1,12 @@
+2026-08-30 - V351 현행 16px 마침표 코드 복구
+- 사용자 V350 실기 화면에서 자연화한 대사 끝마다 이상 글리프가 보이는 런타임 실패를 확인했다. 원인은 E2 resume/종결자가 아니라 문장부호 인코딩이었다. 현행 atlas는 physical 14가 U+C758, physical 32가 U+002E `.`인데, V345의 legacy `character_codes()`가 `.`를 raw `0x0F`로 강제해 최근 슬롯 재작성에서 잘못된 physical 14를 선택했다. V349의 같은 대사 슬롯은 정상 마침표 raw `0x21`을 사용했다.
+- V350은 `RUNTIME FAIL / DO NOT RUN`으로 강등한다. V350 아카이브를 계보 비교해 최근 빌드가 새로 만든 잘못된 마침표는 정확히 10바이트였다: V347 상인 대사 계보 `5/S5011.DAT` 1개 + `5/S5021.DAT` 2개, V350 자연화 `5/S5024.DAT` 1개 + `5/S5052.DAT` 6개. V345 `4/S4031.DAT`의 같은 유형은 V346에서 이미 `0x21`로 복구돼 현재 계보에는 남아 있지 않다.
+- `02_scripts/build_arc1_v351_period_code_repair.py`는 V350 full SHA-256 `2B760572...4041E`와 대상 4멤버/PSX/COMM 해시를 고정하고 위 10개 위치만 `0x0F→0x21`로 바꾼다. 전역 `0x0F` 치환은 금지한다. 오래된 텍스트에는 historical provenance가 섞인 `0x0F`가 다수 있으므로 이번 증거 범위 밖은 건드리지 않는다.
+- 독립 `verify_arc1_v351_period_code_repair.py`는 atlas index 14=U+C758, index 32=U+002E, 10개 source offset, E2 caller, slot `+0x7F` completion, 멤버 크기, Expected-Write를 별도로 고정한다. 2회 결정적 빌드와 verifier가 PASS했고 V350 대비 변경 멤버는 `5/S5011.DAT`, `5/S5021.DAT`, `5/S5024.DAT`, `5/S5052.DAT` 네 개, 실제 변경은 정확히 10바이트 모두 `0F→21`이다. PSX.EXE/COMM.IMG와 나머지 160멤버는 byte exact다.
+- V351 full/delta SHA-256은 `76DFD702BBDD9D11A9CEE2B6B9DF795F90B2F4D6744DB474209E92F4825CA50D` / `71830EC8C438869D0A82EBFE85F763E9152C80A4487B99413F719B82645A0264`다. V350/V351 `check_build.py`는 파일명 줄을 제외해 완전히 동일해 신규 부채 0이다.
+- `V351.bin`/cue SHA-256은 `A86D63739492618E55850A721CF6F65DFB5975A31E8A8B2EBFA2CFA07BC3C9A0` / `B99D5C8D6CFB3A30A06FCE38186E7415BCE7FF268AA27570C6997404A65ED50F`다. v104 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481, 패치 멤버 164/164 readback PASS다. DuckStation `V351_1.mcd`는 V350 카드와 byte exact, 131072B, SHA-256 `25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`다.
+- V351은 화면의 모든 마침표와 V347 상인 대사 3곳, 그리고 V349에서 상속한 던전 진입/층수의 콜드부팅 실기 확인 전까지 TEST_ONLY다. `bible_current.txt`는 갱신하지 않는다.
+
 2026-08-30 - V350 런타임 화면 기준 대사 4건 자연스러운 한국어 보정
 - 사용자가 V349 DuckStation 상태저장 4개에서 지적한 `5/S5024.DAT:0x478E8`, `5/S5052.DAT:0x47A90/0x47ADA/0x47B28`을 일본어 원문과 주변 대사까지 다시 대조했다. 직역투 `이야기가 진행되지 않잖아`, `살았다 살았어`, `고마워하겠어`, `욕망을 위해서만 사는 것이 아니다`를 각각 `뭔 소리야? 이래선 말이 안 되잖아.`, `이야, 덕분에 살았군. 고맙다.`, `고맙다고는 해 주지. 하지만 보물은 나누지 않을 거야. 말이야 공짜니까.`, `요슈아: 사람은 욕망만 따라 사는 게 아니다.`로 고쳤다.
 - 최초 자연화 후보의 `휴/눠/좇/얘`는 V349 16px Hanme 코드표에 없었다. 새 글리프 4개를 추가하려고 전체 텍스트 참조·509-state nontext audit·direct-code를 대조했으나, 남은 네 후보 physical 741/742/743/746은 각각 V336에서 이주한 기존 글리프 3칸과 E5 선택지 들여쓰기 blank로 런타임 소유권이 있다. 정적 참조 0만 보고 덮지 않고 문구를 현행 글리프 안에서 다시 선택했다.
@@ -5,7 +14,7 @@
 - `02_scripts/build_arc1_v350_dialogue_wording_fixes.py`는 V349 full ZIP SHA-256 `EC5724F9...D481`을 고정하고 네 E2 외부 슬롯 payload만 교체한다. V349 대비 변경 멤버는 `5/S5024.DAT`, `5/S5052.DAT` 정확히 두 개이며 실제 diff는 31/79바이트다. E2 body caller, slot `+0x7F` completion 메타데이터, 파일 크기, PSX.EXE, COMM.IMG, 나머지 162멤버는 byte exact다.
 - 독립 `verify_arc1_v350_dialogue_wording_fixes.py`, py_compile, 2회 결정적 재빌드를 통과했다. full/delta SHA-256은 `2B76057250E02F29D6EAA55A8882B04A420F3C232715409938DAF2070AD4041E` / `69FA6A34956506EC9209144A1E37981224ED01534B876DD42A03D125FB7B7C9D`다. `check_build.py`의 선택지 폭 75/marker 2/3줄 초과 18은 V349와 V350이 동일해 신규 부채 0이다.
 - `V350.bin`/cue SHA-256은 `136C8E6F42DE99815F225A1E37944171908D9E311C12A487409D18050F7BC048` / `3494E30E25418568927B6B25B188D9C7B76A801CDA41385DDDE06EF5A99C1437`다. v104 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481, 패치 멤버 164/164 readback이 PASS했다. DuckStation `V350_1.mcd`는 V349 카드와 byte exact, 131072B, SHA-256 `25A59436...D1C3`다.
-- Chat On Steroids worker 3종(일본어 정확성/한국어 현지화/회귀 감사) 호출을 두 번 시도했으나 prime 식별 `UNIDENTIFIED_CALLER`로 생성되지 않았다. 이를 감사 PASS로 기록하지 않고 메인에서 원문·글리프·E2·독립 verifier를 별도로 교차검증했다. V350은 대사 4건과 V349 던전 진입/층수 게이트의 콜드부팅 실기 전까지 TEST_ONLY이며 `bible_current.txt`는 갱신하지 않았다.
+- Chat On Steroids worker 3종(일본어 정확성/한국어 현지화/회귀 감사) 호출을 두 번 시도했으나 prime 식별 `UNIDENTIFIED_CALLER`로 생성되지 않았다. 이를 감사 PASS로 기록하지 않고 메인에서 원문·글리프·E2·독립 verifier를 별도로 교차검증했다. 사후 V350 실기에서 마침표 raw `0x0F`가 현행 atlas의 U+C758 글리프로 출력되는 회귀가 확인되어 V350은 `RUNTIME FAIL / DO NOT RUN`으로 강등했고 V351에서 수정한다. `bible_current.txt`는 갱신하지 않았다.
 
 2026-08-30 - Codex/Paseo 전체 대화 기록 보존
 - 현재 루트 세션 `01a01f4c-5976-7920-8e93-83fa8f6edfdb`의 화면 대화를 `05_docs/conversation_full_20260820_20260830.txt`로 내보냈다. 기록 범위는 2026-08-20 22:11:34 KST부터 사용자의 내보내기 요청 시각인 2026-08-30 17:57:40 KST까지다.
