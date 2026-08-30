@@ -1,3 +1,10 @@
+2026-08-30 | Codex/Paseo 전체 대화 TXT 내보내기 | 원본 rollout JSONL cutoff 추출, 사용자/Codex/Paseo 역할 분류, UTF-8·첫/마지막 메시지·메시지 수·민감정보 패턴 검사, 결정적 2회 생성, SHA-256 대조 | PASS.
+- 원본은 `rollout-2026-08-20T22-11-32-01a01f4c-5976-7920-8e93-83fa8f6edfdb.jsonl`, cutoff는 `2026-08-30T08:57:40.076Z`다. cutoff 구간 SHA-256은 `8DB55EC7395A044920224D9057B28AE4EA6D41B6A271978A239027CC3965E434`다.
+- 출력 `05_docs/conversation_full_20260820_20260830.txt`는 1,092메시지(사용자 131/Codex 900/Paseo·에이전트 61), 10,797줄이다. 첫 메시지는 프로젝트 총괄 오케스트레이터 지시이고 마지막 메시지는 `커밋 푸시하고 현재까지 모든 대화내용 txt파일로 작성해줘`로 확인했다.
+- 동일 명령을 2회 실행해 출력 SHA-256 `1E3DFBFFAD460404A14E6F6649F851B4B477193DB9626CBE84B40762E609EC1F`가 동일함을 확인했다.
+- `Authorization:`, `Bearer `, `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `sk-...`, `api_key=` 패턴은 0건이다. 시스템·개발자·reasoning·tool payload는 exporter의 허용 목록 밖이라 출력되지 않는다.
+- 업로드 경로와 화면 텍스트는 보존하되 이미지 base64 12개는 설명 표식으로 대체했다. 게임 바이너리·원본·03_output은 테스트 대상 및 커밋 대상이 아니다.
+
 2026-08-30 | V348 던전 진입 크래시 진단 및 V349 상주 숫자 helper 재사용 | 업로드 DUCCU CPU/RAM 해제, V348 디스크-런타임 helper 대조, 기존 상주 helper 상태 RAM 보존 확인, py_compile, 결정적 2회 빌드, 독립 verifier/Capstone/Expected-Write/1~50층 변환, V348/V349 check_build 비교, v104 ISO 164/164 readback, MCD byte 대조, Claude CLI 제한 해제 후 읽기 전용 감사 | V348 RUNTIME FAIL / DO NOT RUN; V349 STATIC PATCH PASS / DISC INTEGRITY PASS / CLAUDE LIMITED AUDIT COMPLETE / RUNTIME PENDING.
 - 입력 상태는 `HASH-A3EBEB7B22E9D2C7_1.sav`, SHA-256 `BD9F3A94EC276AB67894CD981585601AD2859FE29564B728B574B392343F26B5`, game ID `V348`이다. CPU current/next PC `0x801A9CA8/0x801A9CAC`, Status `0x40000404`, Cause `0x00000428`로 ExcCode 10 Reserved Instruction이며 branch delay 밖 예외다.
 - RAM의 floor hook `0x80169774` 8바이트는 V348 디스크와 일치했지만, V348 helper `0x801A9C00..0x801A9C7F`는 디스크와 불일치하고 PC의 런타임 워드도 helper 명령이 아닌 장면 데이터였다. 반면 기존 상주 숫자 변환기 `0x801FF858..0x801FF8AF`는 실패 상태에서도 디스크와 88/88바이트 일치했다.

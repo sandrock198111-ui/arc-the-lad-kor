@@ -1,6 +1,13 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+Codex/Paseo 대화 기록의 재현 가능한 내보내기 - 2026-08-30
+- 현재 루트 대화의 정식 원본은 Codex rollout JSONL `rollout-2026-08-20T22-11-32-01a01f4c-5976-7920-8e93-83fa8f6edfdb.jsonl`이다. Paseo의 agent metadata JSON은 세션 ID와 런타임 정보만 가지며 전체 대화 원문은 담지 않는다.
+- 화면 대화는 `response_item` 중 payload type `message`, role `user|assistant`, content type `input_text|output_text`만 추리면 재현된다. `<paseo-system>`으로 전달된 하위 에이전트 결과는 user role이므로 별도 라벨로 보존한다.
+- `<recommended_plugins>`로 시작하는 user role 레코드는 플랫폼이 주입한 컨텍스트이고 실제 사용자 대화가 아니므로 제외한다. developer/system 메시지, reasoning, tool call/output, embedded base64는 대화 TXT에 넣지 않는다.
+- `02_scripts/export_codex_conversation.py`는 UTC cutoff 이하의 원시 JSONL 줄만 SHA-256에 포함한다. 로그 파일이 계속 추가돼도 같은 cutoff에서는 원본 구간 해시와 출력 TXT가 안정적이다.
+- 2026-08-30 요청 시점 cutoff의 결과는 총 1,092메시지이며 TXT SHA-256은 `1E3DFBFFAD460404A14E6F6649F851B4B477193DB9626CBE84B40762E609EC1F`다. 이 기록은 화면 대화 보존용이며 숨겨진 추론이나 업로드 바이너리의 복제본이 아니다.
+
 V348 층수 숫자 변환 경계와 16px atlas 충돌 - 2026-08-30
 - 유적 층 formatter는 RAM `0x801696E8..0x801697B0`에 있다. file `0x4EF50`에서 prefix 포인터를 읽어 `sp+0x10`에 복사하고, `sp+0x18`에 `%d`로 층수를 만든 뒤 `0x8015E4C0` 변환기, strcat numeric, suffix strcat, 중앙 정렬 render 순으로 처리한다. 동적 층 값이나 포인터가 사라진 구조가 아니다.
 - `0x8015E4C0`은 ASCII 각 바이트에 `0xE1`을 더한다. 따라서 숫자 0..9는 raw `0x11..0x1A`가 된다. 이 대응은 구 12px atlas에서는 숫자였지만 현행 16px atlas에서는 physical16..25의 기호/blank/`어`/`그`/기타 한글을 가리킨다. V347 실기의 `지하 층`은 층 값 소실이 아니라 digit glyph namespace 충돌이다.

@@ -1,3 +1,10 @@
+2026-08-30 - Codex/Paseo 전체 대화 기록 보존
+- 현재 루트 세션 `01a01f4c-5976-7920-8e93-83fa8f6edfdb`의 화면 대화를 `05_docs/conversation_full_20260820_20260830.txt`로 내보냈다. 기록 범위는 2026-08-20 22:11:34 KST부터 사용자의 내보내기 요청 시각인 2026-08-30 17:57:40 KST까지다.
+- 사용자 131개, Codex 900개, 화면에 전달된 Paseo/하위 에이전트 알림 61개로 총 1,092개 메시지를 시간순으로 보존했다. 플랫폼 컨텍스트 7개, 시스템·개발자 지침, 숨겨진 추론, 도구 원시 호출, 인증정보는 제외했다.
+- 첨부 파일의 표시 경로·설명은 대화 본문대로 남기고 이미지 base64 12개와 업로드 바이너리 자체는 포함하지 않았다. TXT SHA-256은 `1E3DFBFFAD460404A14E6F6649F851B4B477193DB9626CBE84B40762E609EC1F`다.
+- 동일 cutoff에서 재현할 수 있도록 `02_scripts/export_codex_conversation.py`를 추가했다. 원본 로그가 이후 계속 늘어나도 cutoff 구간만 해시하므로 같은 입력에서는 byte-identical TXT가 생성된다.
+- 게임 데이터·03_output 산출물·기존 미추적 V346 런타임 분석 폴더는 변경하거나 커밋하지 않았다. 게임 기준점 변경이 아니므로 `bible_current.txt`는 갱신하지 않았다.
+
 2026-08-30 - V349 V348 던전 진입 Reserved Instruction 복구
 - 사용자가 제공한 V348 실패 상태(`BD9F3A94EC276AB67894CD981585601AD2859FE29564B728B574B392343F26B5`)를 해제했다. game ID는 `V348`, current/next PC는 `0x801A9CA8/0x801A9CAC`, Cause는 `0x00000428`(ExcCode 10 Reserved Instruction, BD=0)이었다. floor hook은 디스크와 같은 상태였지만 V348이 file `0x8F400`/RAM `0x801A9C00`에 둔 helper는 장면 적재 데이터로 덮였다. 따라서 V348은 `RUNTIME FAIL / DO NOT RUN`이다.
 - `02_scripts/build_arc1_v349_floor_resident_helper_reuse.py`를 추가했다. V338부터 부팅 복사 상주 블록에 존재하고 실패 상태 RAM에서도 88/88바이트 보존된 ASCII 숫자 변환기 `0x801FF858`을 층 formatter도 재사용한다. floor hook file `0x4EF74`만 `jal 0x801FF858`로 바꾸고 delay slot `move a0,s0`는 유지했다.
