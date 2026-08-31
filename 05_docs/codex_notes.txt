@@ -1,6 +1,16 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+V354 전체 대화 편집기 제약 source-of-truth - 2026-08-31
+- 현행 편집기의 기준 ZIP은 자동 최신판이 아니라 `arc1_v354_dialogue_identity_wording_repair_TEST_ONLY_2AA6C42A.zip` SHA-256 `2AA6C42A...C194`로 고정한다. delta ZIP이나 후속 빌드를 이름순/mtime순으로 고르면 화면 문장과 코드맵을 잘못 비교할 수 있다.
+- `plan_bulk_insertion.build_encoder`는 12px `IPR=84/CELL=12`, 구 lookup 위치와 bitmap strip을 전제로 하므로 V354에서 `IndexError`가 난다. 현행 대화 편집·신규 인코딩의 글리프 판정에 재사용하지 않는다.
+- V354 편집용 확정 치수는 일반 전진 14px, physical160 공백 raw `A1` 전진 6px, 배타적 228px wrap edge, V335 이후 최소 4 visible rows다. 228px와 같아도 다음 행을 소비한다. 외부 E2 슬롯은 파일마다 79개, 128바이트 stride, payload 최대 126바이트다.
+- 현행 정적 문자 source는 V320 `character_assignments.csv` + V319 16px `atlas_mapping.csv`의 direct cells다. 여기에 후기 확정 mapping `괄=AB/physical170`, `%/뱀/센/첩/탑=physical403/762/819/823/865`, `」=DF09/physical738`, `「=DF2D/physical774`를 더한다. V336 logical remap 때문에 COMM의 물리 복사 위치만 보고 code ownership을 바꾸지 않는다.
+- 현재 canonical 2,878행의 미지원 문자는 8종 `릿/웬/푼/뇨/돕/쭐/꿔/잇`이다. 이 수치는 문장을 수정하면 실시간으로 달라지는 편집 현황이지 새 glyph plane 8개를 즉시 할당해도 된다는 뜻이 아니다.
+- `script_translated_full.csv`에는 provenance가 `new/existing/blank`가 아닌 확정 이상 3행이 있다: `7/S7026.DAT:0x489AC` 뒤쪽 `이 멍청아.`, `B/SB041.DAT:0x47AAA` 뒤쪽 `각자의 역할을 다하는 것이다.`, `B/SB071.DAT:0x47F0E` 뒤쪽 `부탁해.`. 쉼표/수동 편집으로 한국어와 provenance 열이 갈린 상태이며 자동 결합하지 말고 사람이 문맥을 보고 고친다.
+- 노랑/보라 검토 표시는 번역 오류 확정이 아니다. known regression/문장 형태 휴리스틱과 과거 `review_translation_by_story.csv`의 MIXED 표시는 검색 우선순위만 제공한다. 편집기는 자동으로 한국어를 치환하지 않는다.
+- 선택지 body는 E5/E6 사이의 원문 run과 편집용 `|` 문구가 1:1 대응하지 않을 수 있다. E2 외부 슬롯과 제어 전용 padding run이 있기 때문이다. 편집기에서 원문 run byte 수만으로 `선택지초과`를 확정하지 말고, 수정안 각 칸의 바이트·픽셀은 참고로만 표시한다. 최종 marker 위치·공유 행 폭·E2 slot 유효성은 실제 삽입 결과를 읽는 `check_build.py`의 `drawn_rows()`로 검증한다.
+
 V352 현행 punctuation source-of-truth - 2026-08-30
 - 새 텍스트를 인코딩할 때 V345 `character_codes()`의 수동 punctuation 상수를 재사용하지 않는다. 현행 `character_assignments.csv`에서 검증된 1바이트 문장부호는 `,=B3 (physical178/U+002C)`, `.=21 (physical32/U+002E)`, `!=A9 (physical168/U+0021)`, `?=D1 (physical208/U+003F)`다.
 - V351 실기의 `이야을`은 한국어 문구가 `이야을`로 바뀐 것이 아니다. 소스 문구는 계속 `이야,`이고, 쉼표 raw `0x0D`가 현행 physical12 한글 글리프로 렌더된 것이다. 화면상 이상 문자가 보이면 먼저 문자열/종결자를 의심하기보다 해당 raw code가 현재 atlas의 어느 physical glyph를 가리키는지 확인한다.

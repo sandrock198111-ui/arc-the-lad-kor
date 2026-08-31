@@ -1,3 +1,10 @@
+2026-08-31 | V354 전체 대화 편집기/현행 16px codec | V354 full/member 및 assignment/atlas SHA 고정, E9/EA 176 lookup 대조, py_compile, codec/editor self-test, 숨김 Tk 2,878행 생성, 검토필터 4종, 메모리 CSV round-trip | PASS; GAME DATA UNCHANGED.
+- 구 `review_editor.py`는 `arc1_v1*.zip`만 찾고 12px bitmap encoder를 호출해 V354에서 `IndexError`가 났다. 공백 `0x9C`·일반 12px·최소 3행 전제도 현행 `A1`·14px·4행과 맞지 않아 그대로 사용하지 않았다.
+- 새 codec은 V354 SHA-256 `2AA6C42AC1F62B5D1C7121F27B77807610C9E05D423C548429CB38653DF9C194`, PSX `7866E637...B7FD`, COMM `A6681F13...405`, assignment/atlas 고정 해시를 통과했다. 필수 코드 `A1/B3/21/A9/D1`, `괄=AB`, `재=DE52`, `품=DD80`, `「=DF2D`, `」=DF09`를 확인했다.
+- self-test 결과 rows=2878, encodable=720, missing_unique=8, review_candidates=860, csv_field_issues=3. 정확히 228px인 공백 38개가 2행으로 넘어가고 일반 14px 글리프 16개=1행/17개=2행임을 경계값으로 검증했다.
+- Tk 창은 숨김 상태에서 전체 2,878행을 생성했고 `검토후보=860`, `문체혼합=841`, `CSV열오류=3`, `글자없음=10` 필터가 각각 기대 수와 일치했다. `csv.DictWriter` 메모리 왕복 후 2,878 source file/offset 순서가 byte-level key 기준으로 보존됐다. 실제 canonical 저장 버튼은 테스트에서 누르지 않았고 게임 산출물도 생성하지 않았다.
+- 선택지 초과를 편집 단계에서 확정하던 실험은 원문 제어 패딩 run과 `|` 문구가 1:1이 아니어서 정상 행까지 오판함을 확인하고 제거했다. 수정안 선택지별 바이트·픽셀만 실시간 표시하며 E5/E6 marker/공유 행/E2 slot의 최종 판정은 검증된 `check_build.py`에 맡긴다. 무수정 CSV 직렬화는 2,878 key/값이 전부 동일하고 D/SD031 한 행의 선택적 따옴표 2바이트만 정규화됨을 확인했다.
+
 2026-08-30 | V352 V351/V347 쉼표·느낌표 코드 복구 | 사용자 V351 런타임 화면, current character_assignments punctuation map, V344→345/V346→347/V349→350 계보 diff, 실제 문장 토큰 대조, py_compile, 2회 결정적 빌드, 독립 verifier, V351/V352 check_build 비교, v104 ISO 164/164 readback, MCD byte 대조 | V351 RUNTIME FAIL / DO NOT RUN; V352 STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING.
 - V351 화면의 `이야을 덕분에...` 형태는 문자열 내용 문제가 아니라 쉼표 `,`가 legacy raw `0x0D`로 인코딩된 결과다. 현행 assignment의 punctuation은 `,=B3`, `.=21`, `!=A9`, `?=D1`이며 각각 physical 178/32/168/208과 U+002C/U+002E/U+0021/U+003F로 확인했다.
 - 계보 diff의 단일 바이트 hits는 한글 음절 바이트와 겹치므로 그대로 치환하지 않고, 실제 편집 문장과 offset을 대조했다. 최종 확정 위치는 `5/S5011.DAT:0x4510B 0D→B3`, `0x45113/0x45121 02→A9`, `5/S5052.DAT:0x45302 0D→B3` 네 곳이다. V345의 `좋아! ... 찾자.`는 V346에서 이미 `A9/21`로 정상화돼 추가 수정하지 않았다.

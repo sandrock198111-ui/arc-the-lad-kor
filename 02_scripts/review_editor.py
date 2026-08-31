@@ -1,42 +1,33 @@
-"""A desktop editor for the translation, with the budgets that actually break the game.
+"""V354 desktop dialogue editor with live, game-accurate constraints.
 
 The browser tool is replaced because it could not be worked in; this is a plain Tk
 window, no server and no browser. Run it with:
 
     python 02_scripts/review_editor.py
 
-Four columns, as asked: line number, the Japanese, the Korean the disc currently holds,
-and an editable proposal. Everything else on screen exists to answer one question --
-will this line fit -- and there are three ways for it not to.
+The list shows every canonical dialogue row, the Japanese, the Korean V354 actually
+draws, an editable proposal, and a non-authoritative review flag.  Everything else on
+screen exists to answer one question -- will this line fit -- and there are three ways
+for it not to.
 
-  row budget    The one that froze save state 6. A row holds 228 pixels: a Korean glyph
-                advances 12 and a space 6, measured off the framebuffer of two save
-                states -- the wrap in `21/S2041.DAT` breaks after 진행되 at exactly 228
-                and would need 240 for the next glyph. The window is at least three rows
-                and never fewer than the original Japanese needed, so the budget is
-                `max(original rows, 3)`. Past that the renderer fills the window and
-                stops, and the game does not come back. E6 is drawn rather than obeyed
-                inside an external slot, so line breaks cannot buy a row back; only
-                shortening works.
-
-                The three-row floor is inferred, not read out of the code: it is the
-                narrowest rule that fits every line observed in game, including one the
-                user confirmed renders correctly on a two-row original. Nine lines in
-                the current build exceed it.
+  row budget    V354 uses 16px sprites, 14px normal advance, 6px physical-160 space,
+                and an exclusive 228px wrap edge.  V335 moved dialogue text upward so a
+                normal window has four visible rows.  E6 is drawn rather than obeyed
+                inside an external slot, so shortening remains the safe way to fit.
 
   byte budget   A line is written into the bytes the Japanese occupied. If it no longer
                 fits it must take an external slot, and a slot holds 126 bytes of text
                 -- 128 less the terminator and the completion metadata.
 
-  the alphabet  Not every character has a glyph, and a glyph the classifier cannot
-                reach is worse than none: it draws twelve rows of some other cell. The
-                encoder is read out of the built archive, so what it says is what the
-                disc can do.
+  the alphabet  Not every character has a glyph.  The encoder is reconstructed from the
+                hash-pinned V354 16px assignment/atlas data plus the audited V321/V325/
+                V339 additions, and its live E9/EA lookup destinations are verified.
 
 The proposal column starts as a copy of the Korean. Where a line is over the row budget
 the tool offers a mechanical suggestion -- the same words with the spaces the renderer
 does not need -- which is a starting point, not an answer; read it before taking it.
-Saving writes only the Korean column, and keeps the previous file as `.editor.bak`.
+Yellow/lavender rows are only review candidates, never automatic corrections. Saving
+writes only the Korean column, and keeps the previous file as `.editor.bak`.
 """
 from __future__ import annotations
 
@@ -46,7 +37,6 @@ import shutil
 import sys
 import tkinter as tk
 import zipfile
-from collections import Counter, defaultdict
 from pathlib import Path
 from tkinter import font as tkfont, messagebox, ttk
 
@@ -54,23 +44,50 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "02_scripts"))
 sys.path.insert(0, str(ROOT / "06_tools" / "python_packages"))
 
-from plan_bulk_insertion import (  # noqa: E402
-    CHOICE, LOOKUP_SRC, RAM_TO_FILE, SLOT_BASE, SLOT_COUNT, SLOT_SIZE, SLOT_TEXT_MAX,
-    bitmap, build_encoder, drawable, encode, has_marker, tokens,
+from v354_dialogue_codec import (  # noqa: E402
+    BUILD, BUILD_SHA256, CHOICE, LINEBREAK, SLOT_BASE, SLOT_COUNT, SLOT_SIZE,
+    SLOT_TEXT_MAX, SPACE_CODE, encode, has_marker, load_v354, tokens,
 )
 
 TRANSLATED = ROOT / "05_docs/script_translated_full.csv"
 ORIGINAL = ROOT / "05_docs/script_original_full.csv"
 PRISTINE = ROOT / "00_original/arc.zip"
 EXPORT = ROOT / "05_docs/dialogue_all.csv"
-ROW_PIXELS = 228           # measured off the framebuffer, not assumed
-SPACE = 0x9C
-MIN_WINDOW_ROWS = 3
+ROW_PIXELS = 228           # exclusive wrap edge, measured from runtime packets
+NORMAL_ADVANCE = 14
+SPACE_ADVANCE = 6
+MIN_WINDOW_ROWS = 4        # V335 top/bottom dialogue Y supports four 16px rows
+REGISTER_REVIEW = ROOT / "05_docs/review_translation_by_story.csv"
+PROVENANCE = "source of the translation (existing / new)"
+VALID_PROVENANCE = {"", "existing", "new"}
 
 
 # A character with no code is not one problem but four, and they need different answers.
 SUBSTITUTES = {"‘": "'", "’": "'", "“": '"', "”": '"', "–": "-", "—": "-"}
 OVERWRITTEN = {"R": "DF 03"}    # the original drew it at index 732; a Korean syllable sits there now
+
+# These are known regression spellings or phrases the user has already called out.
+# They are review signals only: the editor never rewrites them automatically.
+KNOWN_REVIEW_PATTERNS = {
+    "존개": "존재 오인코딩 흔적",
+    "개미있": "재미있 오인코딩 흔적",
+    "느레벨": "레벨업 접두 글리프 흔적",
+    "밀마나": "미르마나 명칭 확인",
+    "올카스": "오르카스 명칭 확인",
+    "스톤 서서": "스톤 서클 오기 가능성",
+    "찾자의": "문장/포인터 결합 확인",
+    "좋아터": "문장/포인터 결합 확인",
+    "일단이 있": "一団을 '일단'으로 옮긴 오역 가능성",
+    "수상한 일행": "一団/일행 문맥 재검토",
+    "해왔는지에.": "조사로 끝나는 문장",
+    "4 호": "전투 질문 슬롯 오표시 흔적",
+}
+
+JAPANESE_RE = re.compile(r"[ぁ-ゖァ-ヺ一-龯]")
+REPEATED_WORD_RE = re.compile(r"(?:^|\s)([가-힣]{2,})(?:\s+\1)(?:\s|[.!?,]|$)")
+DANGLING_END_RE = re.compile(
+    r"(?:에서|에게|으로|부터|까지|처럼|보다|하고|인지에|것을|것이|것은|다는)[.!?]?$"
+)
 
 
 def explain_missing(chars: list[str], text: str) -> list[str]:
@@ -95,30 +112,26 @@ def explain_missing(chars: list[str], text: str) -> list[str]:
 
 def advance(token: bytes) -> int:
     """How far the renderer moves after drawing this token."""
-    return 6 if len(token) == 1 and token[0] == SPACE else 12
+    return SPACE_ADVANCE if token == SPACE_CODE else NORMAL_ADVANCE
 
 
 def wrapped_rows(payload: bytes) -> int:
     rows, x = 1, 0
     for token in tokens(payload):
-        if x + advance(token) > ROW_PIXELS:
+        # Runtime wrap is exclusive: a run that reaches exactly 228px already
+        # consumes the next row (the V191/V192 choice-cursor regression).
+        if x + advance(token) >= ROW_PIXELS:
             rows, x = rows + 1, 0
         x += advance(token)
     return rows
 
 
-def newest_build() -> Path:
-    found = sorted((ROOT / "03_output").glob("arc1_v1*.zip"), key=lambda p: p.stat().st_mtime)
-    if not found:
-        raise SystemExit("no arc1_v1*.zip in 03_output to read the alphabet from")
-    return found[-1]
-
-
 class Line:
     __slots__ = ("n", "file", "offset", "japanese", "korean", "proposal", "disc",
-                 "capacity", "rows", "is_choice", "raw", "redirected")
+                 "capacity", "rows", "is_choice", "raw", "redirected",
+                 "provenance", "csv_issue", "mixed_register")
 
-    def __init__(self, n, row, raw, rows, disc=""):
+    def __init__(self, n, row, raw, rows, disc="", mixed_register=False):
         self.n = n
         self.file = row["source file"]
         self.offset = row["offset"]
@@ -131,12 +144,15 @@ class Line:
         self.rows = rows
         self.is_choice = bool(raw) and has_marker(raw, CHOICE)
         self.redirected = False     # the disc body already points at an external slot
+        self.provenance = (row.get(PROVENANCE) or "").strip()
+        self.csv_issue = "" if self.provenance in VALID_PROVENANCE else self.provenance
+        self.mixed_register = mixed_register
 
 
 class Editor:
     def __init__(self, master: tk.Tk) -> None:
         self.master = master
-        master.title("Arc the Lad 1 - 번역 편집기")
+        master.title("Arc the Lad 1 - V354 전체 대화 편집기")
         master.geometry("1500x880")
 
         self.load()
@@ -144,22 +160,17 @@ class Editor:
         self.current: Line | None = None
         self._build_widgets()
         self.refresh()
+        master.protocol("WM_DELETE_WINDOW", self.close)
 
     def load(self) -> None:
-        """Read the CSV and the newest build. Called again by 다시 읽기."""
-        build = newest_build()
-        with zipfile.ZipFile(build) as archive:
-            exe, font = archive.read("PSX.EXE"), archive.read("COMM.IMG")
-            self.exe = exe
-            self.table = build_encoder(exe, font)
+        """Read the canonical CSV and the exact, hash-pinned V354 build."""
+        exe, _font, self.table, self.back = load_v354()
+        self.exe = exe
+        with zipfile.ZipFile(BUILD) as archive:
             blobs = {n: archive.read(n) for n in archive.namelist() if n.upper().endswith(".DAT")}
         with zipfile.ZipFile(PRISTINE) as pristine:
             originals = {n: pristine.read(n) for n in pristine.namelist() if n in blobs}
-        self.build_name = build.name
-        # the encoder read backwards, so the disc column and the edit box speak the
-        # same language: whatever the builder can write, this can read
-        self.back = {code: char for char, code in self.table.items()}
-        self.back[bytes((0x9C,))] = " "
+        self.build_name = BUILD.name
 
         # how much room each file has left, so "needs a slot" can be told apart from
         # "needs a slot and there is none" -- the first is a build away, the second
@@ -174,70 +185,19 @@ class Editor:
                 if not any(blob[SLOT_BASE + s * SLOT_SIZE:SLOT_BASE + (s + 1) * SLOT_SIZE]))
 
         raws: dict[tuple[str, str], bytes] = {}
-        seen: dict[bytes, Counter] = defaultdict(Counter)
         with ORIGINAL.open(encoding="utf-8-sig", newline="") as handle:
             reader = csv.DictReader(handle)
             key = "offset" if "offset" in (reader.fieldnames or []) else "byte offset"
             for row in reader:
                 raw = bytes.fromhex(row["raw bytes as hex"].replace(" ", ""))
                 raws[(row["source file"], str(int(row[key], 0)))] = raw
-                # Learn what the untranslatable codes draw by aligning the original
-                # script's bytes against its own decoded text. Punctuation and kana are
-                # not in the Hangul table, so without this the disc column is littered
-                # with <E060> where the game simply draws a dot.
-                text = row["decoded Japanese"] or ""
-                if "<" in text:
-                    continue
-                i, pairs, ok = 0, [], True
-                for token in tokens(raw):
-                    if token == bytes((0xE6, 0x01)):
-                        if i < len(text) and text[i] == chr(10):
-                            i += 1
-                            continue
-                        ok = False
-                        break
-                    if len(token) == 1 and token[0] == 0:
-                        break
-                    if i >= len(text):
-                        ok = False
-                        break
-                    pairs.append((token, text[i]))
-                    i += 1
-                if ok and i == len(text):
-                    for token, char in pairs:
-                        seen[token][char] += 1
-        for token, counter in seen.items():
-            self.back.setdefault(token, counter.most_common(1)[0][0])
 
-        # The same glyph often sits in several cells, and the encoder only ever hands
-        # out one of them. A code pointing at a duplicate has no name and used to show
-        # as <E060> -- which is the full stop the builder itself writes. Resolve those
-        # by picture: if an unnamed code draws exactly what a named one draws, it is
-        # that character.
-        by_picture = {}
-        for char, code in self.table.items():
-            index = self.index_of(code)
-            if index is None:
-                continue
-            bits = bitmap(exe, font, index)
-            if bits and any(bits):
-                by_picture.setdefault(bits, char)
-        # Two punctuation cells the game draws centred rather than left-aligned, so
-        # they are not the same picture as the encoder's own . and ! and cannot be
-        # matched that way. Earlier builds wrote text with them, which is why the disc
-        # column showed <E060> where the screen simply shows a full stop.
-        self.back.setdefault(bytes((0xE0, 0x60)), ".")
-        self.back.setdefault(bytes((0xDF, 0xE3)), "!")
-
-        for code in list(self.codes()):
-            if code in self.back:
-                continue
-            index = self.index_of(code)
-            if index is None or not drawable(exe, index):
-                continue
-            bits = bitmap(exe, font, index)
-            if bits and (char := by_picture.get(bits)):
-                self.back[code] = char
+        mixed: set[tuple[str, int, str]] = set()
+        if REGISTER_REVIEW.exists():
+            with REGISTER_REVIEW.open(encoding="utf-8-sig", newline="") as handle:
+                for row in csv.DictReader(handle):
+                    if (row.get("mixed_register") or "").strip() == "MIXED":
+                        mixed.add((row["file"], int(row["offset"], 0), (row.get("korean") or "").strip()))
 
         self.loaded_at = TRANSLATED.stat().st_mtime_ns
         with TRANSLATED.open(encoding="utf-8-sig", newline="") as handle:
@@ -247,38 +207,16 @@ class Editor:
         for n, row in enumerate(self.rows, start=1):
             name = row["source file"]
             raw = raws.get((name, str(int(row["offset"], 0))), b"")
-            rows_ = sum(1 for t in tokens(raw) if t == b"\xE6\x01") + 1 if raw else 1
+            rows_ = sum(1 for t in tokens(raw) if len(t) == 2 and t[0] == 0xE6) + 1 if raw else 1
             disc, redirected = "", False
             if raw and name in blobs and name in originals:
                 offset = int(row["offset"], 0)
                 disc = self.read_disc(blobs[name], originals[name], offset, raw)
                 redirected = blobs[name][offset] == 0xE2
-            line = Line(n, row, raw, rows_, disc)
+            key_ = (name, int(row["offset"], 0), (row.get("korean") or "").strip())
+            line = Line(n, row, raw, rows_, disc, key_ in mixed)
             line.redirected = redirected
             self.lines.append(line)
-
-    def codes(self):
-        for c in range(0x01, 0xDD):
-            yield bytes((c,))
-        for lead in range(0xDD, 0xE9):
-            for trail in range(0x01, 0xFF):
-                yield bytes((lead, trail))
-        for slot in range(508):
-            yield bytes((0xE9 + slot // 254, slot % 254 + 1))
-
-    def index_of(self, code: bytes):
-        """The font index a code resolves to, by the decoder's own arithmetic."""
-        if len(code) == 1:
-            return code[0] - 1
-        if code[0] in (0xE9, 0xEA):
-            slot = 254 * (code[0] - 0xE9) + code[1] - 1
-            if not 0 <= slot < 508:
-                return None
-            at = LOOKUP_SRC - RAM_TO_FILE + slot * 2
-            return int.from_bytes(self.exe[at:at + 2], "little")
-        if 0xDD <= code[0] <= 0xE8:
-            return (code[0] - 0xDD) * 255 + code[1] + 0xDB
-        return None
 
     def reload(self) -> None:
         edited = [l for l in self.lines if l.proposal != l.korean]
@@ -291,8 +229,9 @@ class Editor:
         self.current = None
         self.file_box.configure(values=["(전체)"] + sorted({l.file for l in self.lines}))
         self.refresh()
-        self.status.configure(text=f"다시 읽음 — {self.build_name}   "
-                                   f"한 줄 {ROW_PIXELS}px, 창 높이 max(원문 줄 수, {MIN_WINDOW_ROWS})")
+        self.status.configure(text=f"다시 읽음 — V354 {BUILD_SHA256[:8]}   "
+                                   f"코드맵 {len(self.table)}자, 한 줄 < {ROW_PIXELS}px, "
+                                   f"창 높이 max(원문 줄 수, {MIN_WINDOW_ROWS})")
 
     # ---------------------------------------------------------------- measuring
 
@@ -301,8 +240,13 @@ class Editor:
         for token in tokens(payload):
             if len(token) == 1 and token[0] == 0:
                 break
-            if token[0] == CHOICE or token == bytes((0xE6, 0x01)):
+            if len(token) == 2 and token[0] in (CHOICE, 0xE6):
                 out.append("|")
+                continue
+            if len(token) == 2 and token[0] == 0xE7:
+                out.append("[아이콘]")
+                continue
+            if len(token) == 2 and (token[0] in (0xE2, 0xE3, 0xE4, 0xE8) or token[0] >= 0xEB):
                 continue
             out.append(self.back.get(token, f"<{token.hex().upper()}>"))
         return re.sub(r"\|+", "|", "".join(out)).strip().strip("|")
@@ -332,7 +276,7 @@ class Editor:
                 for token in tokens(body):
                     if len(token) == 1 and token[0] == 0:
                         break
-                    if token[0] == CHOICE or token == bytes((0xE6, 0x01)):
+                    if len(token) == 2 and token[0] in (CHOICE, 0xE6):
                         flush(); run.clear(); continue
                     run.append(token)
                 flush()
@@ -345,35 +289,24 @@ class Editor:
         return self.decode(seg[:seg.index(0)] if 0 in seg[:SLOT_SIZE - 1] else seg[:SLOT_SIZE - 1])
 
     def choice_fit(self, line: Line, text: str) -> list[str]:
-        """For a choice body, how each phrase measures against its own run.
+        """Show useful choice measurements without pretending to rebuild the body.
 
-        A choice body is written where it stands -- the E5 and E6 bytes must not move
-        or the menu cursor drifts off the option it points at -- so each phrase has to
-        fit the bytes the Japanese phrase occupied. There is no slot to escape to and
-        no room to grow, which is why these need shortening rather than rewording.
+        Choice bodies can contain external E2 slots and control-only padding runs, so
+        the number of E5/E6-separated byte runs is not a reliable one-to-one map to the
+        editable ``|`` phrases.  The editor therefore reports each proposed phrase's
+        encoded size and width, but leaves marker-position and row-sharing validation
+        to ``check_build.py`` after reinsertion.  A false green/red light here is worse
+        than an explicit build-time check.
         """
-        runs, position, start, length = [], 0, 0, 0
-        for token in tokens(line.raw):
-            if len(token) == 1 and token[0] == 0:
-                break
-            if token[0] == CHOICE or token == bytes((0xE6, 0x01)):
-                if length:
-                    runs.append(length)
-                position += len(token)
-                start, length = position, 0
-                continue
-            position += len(token)
-            length += len(token)
-        if length:
-            runs.append(length)
         parts = [p.strip() for p in text.split("|")]
-        out = [f"선택지 {len(runs)}칸 / 수정안 {len(parts)}칸"
-               + ("" if len(parts) == len(runs) else "   <-- | 개수를 맞추세요")]
-        for i, room in enumerate(runs):
-            phrase = parts[i] if i < len(parts) else ""
+        out = [f"수정안 선택지 {len(parts)}칸 (E5/E6 위치는 빌드 때 원판과 대조)"]
+        for i, phrase in enumerate(parts, 1):
             payload, missing = encode(phrase, self.table, keep_breaks=False)
-            mark = "X" if (missing or len(payload) > room) else "o"
-            out.append(f"  {mark} {len(payload):>3}/{room:<3} {phrase[:20]}")
+            pixels = sum(advance(token) for token in tokens(payload))
+            mark = "!" if missing or pixels >= ROW_PIXELS else "o"
+            out.append(
+                f"  {mark} {i:>2}번  {len(payload):>3}B  {pixels:>3}/227px  {phrase[:20]}"
+            )
         return out
 
     def measure(self, line: Line, text: str) -> dict:
@@ -395,6 +328,39 @@ class Editor:
             "over_slot": (not fits_inline) and len(payload) > SLOT_TEXT_MAX,
             "over_rows": need > window,
         }
+
+    def review_reasons(self, line: Line, text: str) -> list[str]:
+        """Return non-authoritative language-review hints for a row."""
+        reasons: list[str] = []
+        if line.csv_issue:
+            reasons.append(f"CSV 열 분리 의심: 뒤쪽 값={line.csv_issue!r}")
+        if line.mixed_register and text == line.korean:
+            reasons.append("기존 화자 분석에서 존댓말/반말 혼합")
+        if JAPANESE_RE.search(text):
+            reasons.append("한국어 열에 일본어/한자가 남음")
+        if "???" in text or "�" in text:
+            reasons.append("미확정/깨진 문자 표시")
+        if "<CTRL" in text or re.search(r"<[A-Z]+:[^>]+>", text):
+            reasons.append("편집 문장에 제어 마커가 남음")
+        for pattern, reason in KNOWN_REVIEW_PATTERNS.items():
+            if pattern in text:
+                reasons.append(reason)
+        if REPEATED_WORD_RE.search(text):
+            reasons.append("같은 단어가 연속 반복됨")
+        if DANGLING_END_RE.search(text):
+            reasons.append("조사/연결어미로 문장이 끝남")
+        # Stable order, no duplicate labels when two heuristics describe one symptom.
+        return list(dict.fromkeys(reasons))
+
+    def review_kind(self, line: Line, text: str) -> str:
+        reasons = self.review_reasons(line, text)
+        if not reasons:
+            return ""
+        if line.csv_issue:
+            return "CSV"
+        if line.mixed_register and len(reasons) == 1:
+            return "문체"
+        return "표현"
 
     def state_of(self, line: Line) -> str:
         """What stands between this line and the game, and what to do about it.
@@ -455,7 +421,8 @@ class Editor:
         ttk.Label(top, text="상태").pack(side="left")
         self.state_var = tk.StringVar(value="(전체)")
         states = ["(전체)", "빌드대기", "슬롯부족", "줄넘침", "슬롯초과", "글자없음",
-                  "선택지", "미번역", "적용됨", "수정됨", "게임에 일본어"]
+                  "선택지", "미번역", "적용됨", "수정됨", "게임에 일본어",
+                  "검토후보", "문체혼합", "CSV열오류"]
         box = ttk.Combobox(top, textvariable=self.state_var, values=states,
                            width=10, state="readonly")
         box.pack(side="left", padx=(4, 14))
@@ -478,11 +445,12 @@ class Editor:
         panes.pack(fill="both", expand=True, padx=6, pady=(0, 6))
 
         holder = ttk.Frame(panes)
-        cols = ("n", "file", "japanese", "disc", "proposal", "state")
+        cols = ("n", "file", "japanese", "disc", "proposal", "review", "state")
         self.tree = ttk.Treeview(holder, columns=cols, show="headings", selectmode="browse")
         for key, title, width in (("n", "행번호", 70), ("file", "파일", 110),
-                                  ("japanese", "원문", 360), ("disc", "디스크 (지금 게임)", 400),
-                                  ("proposal", "수정제안", 400), ("state", "상태", 80)):
+                                  ("japanese", "원문", 320), ("disc", "V354 화면", 350),
+                                  ("proposal", "내 수정안", 350), ("review", "검토", 70),
+                                  ("state", "제약", 80)):
             self.tree.heading(key, text=title)
             self.tree.column(key, width=width, anchor="w",
                              stretch=(key in ("japanese", "disc", "proposal")))
@@ -492,10 +460,13 @@ class Editor:
         bar.pack(side="right", fill="y")
         self.tree.bind("<<TreeviewSelect>>", self.on_select)
         for tag, colour in (("줄넘침", "#ffd6d6"), ("슬롯초과", "#ffe8cc"),
-                            ("글자없음", "#ffe8cc"), ("수정됨", "#d8f0d8"),
+                            ("글자없음", "#ffe8cc"),
+                            ("수정됨", "#d8f0d8"),
                             ("선택지", "#ececec"), ("미번역", "#f0f0f0"),
-                            ("빌드대기", "#d8ecff"), ("슬롯부족", "#ffe0e0"),
-                            ("적용됨", "#ffffff"), ("일본어", "#ffd0d0")):
+                             ("빌드대기", "#d8ecff"), ("슬롯부족", "#ffe0e0"),
+                             ("적용됨", "#ffffff"), ("일본어", "#ffd0d0"),
+                             ("검토후보", "#fff3b8"), ("문체혼합", "#eee4ff"),
+                             ("CSV열오류", "#ffcfdf")):
             self.tree.tag_configure(tag, background=colour)
         panes.add(holder, weight=3)
 
@@ -518,7 +489,7 @@ class Editor:
 
         right = ttk.Frame(lower, padding=(12, 0, 0, 0))
         right.pack(side="right", fill="y")
-        self.budget = tk.Text(right, width=44, height=13, font=mono,
+        self.budget = tk.Text(right, width=50, height=20, font=mono,
                               background="#fbfbfb", state="disabled")
         self.budget.pack()
         row = ttk.Frame(right)
@@ -532,9 +503,19 @@ class Editor:
 
         self.status = ttk.Label(self.master, anchor="w", padding=(8, 2))
         self.status.pack(fill="x")
-        self.status.configure(text=f"알파벳 출처: {self.build_name}   한 줄 {ROW_PIXELS}px (한글 12px, 공백 6px)   창 높이 = max(원문 줄 수, {MIN_WINDOW_ROWS})")
+        self.status.configure(
+            text=f"기준: V354 {BUILD_SHA256[:8]}   코드맵 {len(self.table)}자   "
+                 f"한 줄 < {ROW_PIXELS}px (일반 {NORMAL_ADVANCE}px, 공백 {SPACE_ADVANCE}px)   "
+                 f"창 높이 = max(원문 줄 수, {MIN_WINDOW_ROWS})   "
+                 "색: 노랑=표현 / 보라=문체 / 분홍=CSV 열 / 빨강·주황=제약")
 
     # ---------------------------------------------------------------- behaviour
+
+    def capture_current(self) -> None:
+        """Keep text typed in the edit box when the user changes rows or filters."""
+        if self.current is None or not hasattr(self, "edit"):
+            return
+        self.current.proposal = self.edit.get("1.0", "end-1c").strip()
 
     def matches(self, line: Line) -> bool:
         if self.file_var.get() != "(전체)" and line.file != self.file_var.get():
@@ -547,15 +528,26 @@ class Editor:
             elif want == "게임에 일본어":
                 if line.disc != "(일본어 그대로)":
                     return False
+            elif want == "검토후보":
+                if not self.review_reasons(line, line.proposal):
+                    return False
+            elif want == "문체혼합":
+                if not line.mixed_register:
+                    return False
+            elif want == "CSV열오류":
+                if not line.csv_issue:
+                    return False
             elif self.state_of(line) != want:
                 return False
         needle = self.search_var.get().strip()
         if needle and needle not in line.japanese and needle not in line.korean \
-                and needle not in line.proposal:
+                and needle not in line.proposal and needle not in line.disc \
+                and needle not in " ".join(self.review_reasons(line, line.proposal)):
             return False
         return True
 
     def refresh(self) -> None:
+        self.capture_current()
         keep = self.current.n if self.current else None
         self.tree.delete(*self.tree.get_children())
         self.view = [l for l in self.lines if self.matches(l)]
@@ -564,17 +556,32 @@ class Editor:
             # a line the game still draws in Japanese gets its own colour whatever its
             # state is: on screen it looks like Korean, because the kana cells now hold
             # Korean glyphs, and that has fooled us more than once
+            review = self.review_kind(line, line.proposal)
+            hard = state in {
+                "줄넘침", "슬롯초과", "글자없음", "슬롯부족", "미번역"
+            }
             tag = ("일본어" if line.disc == "(일본어 그대로)" else
-                   "수정됨" if line.proposal != line.korean else state)
+                   "수정됨" if line.proposal != line.korean else
+                   state if hard else
+                   "CSV열오류" if review == "CSV" else
+                   "문체혼합" if review == "문체" else
+                   "검토후보" if review else state)
             self.tree.insert("", "end", iid=str(line.n), tags=(tag,), values=(
                 line.n, line.file,
                 line.japanese.replace("\n", " ⏎ ")[:110],
-                line.disc[:110], line.proposal[:110], state))
+                line.disc[:110], line.proposal[:110], review, state))
         edited = sum(1 for l in self.lines if l.proposal != l.korean)
         notin = sum(1 for l in self.lines if self.state_of(l) in ("빌드대기", "슬롯부족"))
+        review_count = sum(bool(self.review_reasons(l, l.proposal)) for l in self.lines)
+        missing_chars = sorted({
+            char
+            for line in self.lines
+            for char in self.measure(line, line.proposal)["missing"]
+        })
         self.count_label.configure(
             text=f"보이는 줄 {len(self.view)} / 전체 {len(self.lines)}   "
-                 f"수정 {edited}   아직 게임에 안 들어간 줄 {notin}")
+                 f"수정 {edited}   검토 후보 {review_count}   "
+                 f"미지원 글자 {len(missing_chars)}종   게임 미반영 {notin}")
         if keep is not None and str(keep) in self.tree.get_children():
             self.tree.selection_set(str(keep))
 
@@ -585,6 +592,8 @@ class Editor:
         line = next((l for l in self.lines if l.n == int(picked[0])), None)
         if line is None:
             return
+        if self.current is not None and self.current is not line:
+            self.capture_current()
         self.current = line
         for widget, text in ((self.jp, line.japanese), (self.kr, line.disc)):
             widget.configure(state="normal")
@@ -604,16 +613,17 @@ class Editor:
         report = [
             f"행번호      {line.n}",
             f"파일        {line.file} {line.offset}",
+            f"V354 빈 슬롯 {self.free_slots.get(line.file, 0)} / {SLOT_COUNT}",
             "",
             f"{mark(m['over_rows'])} 줄       {m['need_rows']} / {m['window']} 줄"
-            f"   (폭 {m['width']}px, 한 줄 {ROW_PIXELS}px)",
+            f"   (총 전진 {m['width']}px, 한 줄 < {ROW_PIXELS}px)",
             f"{mark(m['over_slot'])} 슬롯     {m['bytes']:>3} / {SLOT_TEXT_MAX:>3} 바이트",
             # o only when this line has somewhere to go: it fits where the Japanese
             # sat, or the file still has a slot to send it to. A line that fits
             # neither is stuck, and marking it o was hiding exactly that.
-            f"{mark(not m['fits_inline'] and self.free_slots.get(line.file, 0) == 0)}"
+            f"{mark(not m['fits_inline'] and not line.redirected and self.free_slots.get(line.file, 0) == 0)}"
             f" 제자리   {m['inline']:>3} / {line.capacity:>3} 바이트"
-            f"   {'들어감' if m['fits_inline'] else '→ 슬롯 사용'}",
+            f"   {'들어감' if m['fits_inline'] else '→ 기존/새 슬롯'}",
             f"{mark(bool(m['missing']))} 글자     "
             f"{'없는 글자: ' + ' '.join(m['missing']) if m['missing'] else '모두 있음'}",
             "",
@@ -624,7 +634,10 @@ class Editor:
         room = self.free_slots.get(line.file, 0)
         if not m["fits_inline"]:
             short = m["inline"] - line.capacity
-            if room > 0:
+            if line.redirected:
+                report.append("이 줄은 V354에서 이미 외부 슬롯을 사용합니다.")
+                report.append(f"기존 슬롯 안에서는 최대 {SLOT_TEXT_MAX}바이트입니다.")
+            elif room > 0:
                 report.append(f"슬롯을 씁니다 (이 파일 빈 슬롯 {room}개).")
                 report.append(f"제자리에 넣으려면 {short}바이트 더 줄이면 됩니다.")
             else:
@@ -640,9 +653,16 @@ class Editor:
         if line.is_choice:
             report.append("")
             report.extend(self.choice_fit(line, text))
+            report.append("선택지는 E5/E6 위치를 고정해야 하므로 빌드 검사가 필수입니다.")
         if m["over_rows"]:
             report.append("창을 넘칩니다. 이 상태로 넣으면")
             report.append("그리다 멈춥니다. 줄이세요.")
+        reasons = self.review_reasons(line, text)
+        if reasons:
+            report.append("")
+            report.append("△ 자동 검토 후보 (정답 판정 아님)")
+            for reason in reasons:
+                report.extend(self.wrap_note("- " + reason))
         self.budget.configure(state="normal")
         self.budget.delete("1.0", "end")
         self.budget.insert("1.0", "\n".join(report))
@@ -675,13 +695,17 @@ class Editor:
 
     def export(self) -> None:
         """Every line in scene order, with what the game draws beside what the CSV says."""
-        fields = ["행번호", "파일", "오프셋", "상태", "원문", "디스크 (지금 게임)", "수정제안"]
+        self.capture_current()
+        fields = ["행번호", "파일", "오프셋", "상태", "검토", "원문",
+                  "디스크 (지금 게임)", "수정제안"]
         with EXPORT.open("w", encoding="utf-8-sig", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=fields)
             writer.writeheader()
             for line in self.lines:
                 writer.writerow({"행번호": line.n, "파일": line.file, "오프셋": line.offset,
-                                 "상태": self.state_of(line), "원문": line.japanese,
+                                 "상태": self.state_of(line),
+                                 "검토": " / ".join(self.review_reasons(line, line.proposal)),
+                                 "원문": line.japanese,
                                  "디스크 (지금 게임)": line.disc, "수정제안": line.proposal})
         messagebox.showinfo("내보내기", f"{len(self.lines)}줄을 {EXPORT.name} 에 썼습니다.")
 
@@ -709,6 +733,9 @@ class Editor:
         self.update_budget()
 
     def save(self) -> None:
+        # 저장 버튼은 현재 편집 상자의 글도 자동으로 적용한다. 별도의 '적용'
+        # 버튼을 깜빡했다고 마지막 문장이 사라져서는 안 된다.
+        self.capture_current()
         changed = [l for l in self.lines if l.proposal != l.korean]
         # Both editors rewrite this file whole, from what they read at startup. If the
         # other one saved in the meantime, writing now would silently drop its work, so
@@ -723,25 +750,78 @@ class Editor:
         if not changed:
             messagebox.showinfo("저장", "바뀐 줄이 없습니다.")
             return
-        broken = [l for l in changed if self.state_of(l) == "줄넘침"]
-        if broken and not messagebox.askyesno(
-                "저장", f"{len(broken)}줄이 아직 창을 넘칩니다. 그대로 저장할까요?"):
+        problems = {
+            state: [line for line in changed if self.state_of(line) == state]
+            for state in ("글자없음", "줄넘침", "슬롯초과", "슬롯부족")
+        }
+        problems = {state: rows for state, rows in problems.items() if rows}
+        if problems and not messagebox.askyesno(
+                "제약이 남은 초안 저장",
+                " / ".join(f"{state} {len(rows)}줄" for state, rows in problems.items())
+                + "\n\n게임에 바로 넣을 수 없는 초안이 포함됩니다. CSV에는 저장할까요?"):
             return
         backup = TRANSLATED.with_suffix(".csv.editor.bak")
         shutil.copy2(TRANSLATED, backup)
         for line, row in zip(self.lines, self.rows):
             row["korean"] = line.proposal
+        temporary = TRANSLATED.with_suffix(".csv.editor.tmp")
+        try:
+            with temporary.open("w", encoding="utf-8-sig", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=self.fieldnames)
+                writer.writeheader()
+                writer.writerows(self.rows)
+            temporary.replace(TRANSLATED)
+        finally:
+            if temporary.exists():
+                temporary.unlink()
+        for line in self.lines:
             line.korean = line.proposal
-        with TRANSLATED.open("w", encoding="utf-8-sig", newline="") as handle:
-            writer = csv.DictWriter(handle, fieldnames=self.fieldnames)
-            writer.writeheader()
-            writer.writerows(self.rows)
         self.loaded_at = TRANSLATED.stat().st_mtime_ns
         self.refresh()
-        messagebox.showinfo("저장", f"{len(changed)}줄 저장했습니다.\n이전 파일: {backup.name}")
+        messagebox.showinfo(
+            "저장",
+            f"{len(changed)}줄을 원본 번역 CSV의 한국어 열에 저장했습니다.\n"
+            f"이전 파일: {backup.name}\n\n게임 반영은 다음 빌드에서 별도로 진행됩니다.")
+
+    def close(self) -> None:
+        self.capture_current()
+        changed = sum(line.proposal != line.korean for line in self.lines)
+        if changed and not messagebox.askyesno(
+                "저장하지 않은 수정",
+                f"저장하지 않은 수정이 {changed}줄 있습니다. 버리고 닫을까요?"):
+            return
+        self.master.destroy()
+
+
+def self_test() -> None:
+    editor = Editor.__new__(Editor)
+    editor.load()
+    assert len(editor.lines) == 2878
+    assert editor.table[" "] == SPACE_CODE
+    assert editor.table["."] == bytes((0x21,))
+    assert editor.table["재"] == bytes.fromhex("DE 52")
+    assert editor.table["괄"] == bytes((0xAB,))
+    assert wrapped_rows(SPACE_CODE * 38) == 2       # exactly 228px is already a wrap
+    assert wrapped_rows(editor.table["가"] * 16) == 1
+    assert wrapped_rows(editor.table["가"] * 17) == 2
+    missing = sorted({
+        char
+        for line in editor.lines
+        for char in editor.measure(line, line.proposal)["missing"]
+    })
+    reviews = sum(bool(editor.review_reasons(line, line.proposal)) for line in editor.lines)
+    csv_issues = sum(bool(line.csv_issue) for line in editor.lines)
+    print(
+        f"V354 dialogue editor PASS: rows={len(editor.lines)}, "
+        f"encodable={len(editor.table)}, missing_unique={len(missing)}, "
+        f"review_candidates={reviews}, csv_field_issues={csv_issues}"
+    )
 
 
 if __name__ == "__main__":
-    root = tk.Tk()
-    Editor(root)
-    root.mainloop()
+    if "--self-test" in sys.argv:
+        self_test()
+    else:
+        root = tk.Tk()
+        Editor(root)
+        root.mainloop()
