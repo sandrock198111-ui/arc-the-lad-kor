@@ -1,0 +1,44 @@
+{
+  "version": "V354",
+  "result": "PASS_STATIC_RUNTIME_PENDING",
+  "output": {
+    "file": "arc1_v354_dialogue_identity_wording_repair_TEST_ONLY_2AA6C42A.zip",
+    "sha256": "2AA6C42AC1F62B5D1C7121F27B77807610C9E05D423C548429CB38653DF9C194"
+  },
+  "delta": {
+    "file": "arc1_v354_dialogue_identity_wording_repair_TEST_ONLY_delta_from_v353_6E4A79CA.zip",
+    "sha256": "6E4A79CA67039176591CC7EC1E77177F92574760C967FC23463CE026556A7D1B"
+  },
+  "checks": {
+    "archive_topology_order": "PASS 164/164",
+    "changed_members": [
+      "4/S4031.DAT",
+      "5/S5041.DAT",
+      "8/S8051.DAT",
+      "E5/SE05A.DAT"
+    ],
+    "expected_write": {
+      "4/S4031.DAT": 2,
+      "5/S5041.DAT": 50,
+      "8/S8051.DAT": 2,
+      "E5/SE05A.DAT": 4
+    },
+    "glyph_identity": "DD B4=399=개; DE 52=556=재; COMM plane556 nonblank",
+    "dialogue_decode": [
+      "빛의 정령: 인간들이 무슨 짓을 해 왔는지 말이야.",
+      "그건 신하의 공적을 빼앗을 수 있는 왕의 상 아닌가!"
+    ],
+    "identity_census": {
+      "bad_exists": 0,
+      "good_exists": 2,
+      "bad_fun": 0,
+      "good_fun": 3,
+      "good_reorganize": 5,
+      "bad_reorganize": 0
+    },
+    "e2_callers_metadata": "PASS",
+    "psx_comm_v353_action_record": "PASS byte exact",
+    "delta_readback": "PASS"
+  },
+  "runtime": "PENDING user cold boot and scene review"
+}

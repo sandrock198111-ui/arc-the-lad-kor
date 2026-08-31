@@ -1,0 +1,3 @@
+﻿member,body_offset,slot,metadata,old_text,new_text,new_hex
+5/S5041.DAT,0x47BEA,8,22,빛의 정령: 인간들이 무엇을 해 왔는지에.,빛의 정령: 인간들이 무슨 짓을 해 왔는지 말이야.,DD C4 0F A1 31 51 DD 02 A1 35 DD 1B 0A 03 A1 5F DD A0 A1 DE 1C 0D A1 2B A1 DD 88 06 04 A1 1B 03 49 21
+5/S5041.DAT,0x47E0C,3,35,그건 부하의 공을 자기 것으로 만들 수 있다는 왕의 상 아닌가.,그건 신하의 공적을 빼앗을 수 있는 왕의 상 아닌가!,15 DD 16 A1 3E 19 0F A1 DD 10 DD 09 0D A1 DE 13 DD A4 0D A1 50 A1 1F 06 A1 6A 0F A1 8B A1 09 DD DF 0C A9

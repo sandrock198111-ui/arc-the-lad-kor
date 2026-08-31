@@ -1,0 +1,33 @@
+{
+  "version": "V354",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "base": {
+    "file": "arc1_v353_summon_skill_action_record_repair_TEST_ONLY_83AB9F25.zip",
+    "sha256": "83AB9F2580478826D4B37F9B8147A6594646E3995C9B8211645C59AC7458AE91",
+    "runtime": "V353 user-confirmed summon skill fix"
+  },
+  "output": {
+    "file": "arc1_v354_dialogue_identity_wording_repair_TEST_ONLY_2AA6C42A.zip",
+    "sha256": "2AA6C42AC1F62B5D1C7121F27B77807610C9E05D423C548429CB38653DF9C194"
+  },
+  "delta": {
+    "file": "arc1_v354_dialogue_identity_wording_repair_TEST_ONLY_delta_from_v353_6E4A79CA.zip",
+    "sha256": "6E4A79CA67039176591CC7EC1E77177F92574760C967FC23463CE026556A7D1B"
+  },
+  "changed_members_vs_v353": [
+    "4/S4031.DAT",
+    "5/S5041.DAT",
+    "8/S8051.DAT",
+    "E5/SE05A.DAT"
+  ],
+  "changed_bytes": {
+    "4/S4031.DAT": 2,
+    "5/S5041.DAT": 50,
+    "8/S8051.DAT": 2,
+    "E5/SE05A.DAT": 4
+  },
+  "identity_repairs": 5,
+  "dialogue_repairs": 2,
+  "preserved": "PSX.EXE, COMM.IMG, V353 action record, E2 callers, slot +0x7F metadata, sizes/order, all other members",
+  "runtime": "PENDING user cold boot and scene review; TEST_ONLY"
+}

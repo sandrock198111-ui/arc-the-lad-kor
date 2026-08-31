@@ -2927,3 +2927,13 @@ check_build.py 통과. SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FB
 - `check_build.py`는 V352/V353 모두 기존 선택지 폭 75·마커 2·3줄 초과 18로 exit 1이고 파일명 외 출력이 동일하다. release-readiness 383건/508회 및 resident audit 128칸/범위 밖 포인터 0도 V352와 동일한 상속 부채다.
 - `V353.bin`/cue SHA-256은 `21463AAC39FC6A0709D808918AA969A32F96A6748EBD439E1DC99A86B0F49AFC` / `1D37F90E2578E5B1DD2757957A7D8028EE4F246B6E998277B505F93EA4AF7781`. 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481·587776B, ZIP 멤버 164/164 디스크 readback PASS다.
 - 실제 V353 콜드부팅은 아직 하지 않았다. V353 세이브스테이트 직접 로드가 아니라 cue 콜드부팅 후 케라크 회복의 연출, MP 비용, 만피 대상 실행, 행동 종료 위치를 확인해야 한다.
+
+2026-08-31 | V353 소환 회복 런타임 확인 및 V354 대사 정체·문장 교정 | 사용자 실기 확인, py_compile, 결정적 2회 in-memory 빌드, 독립 ZIP/코드맵/글리프/E2/Expected-Write 검증, mkpsxiso 2.30, verify_iso_layout.py | V353 RUNTIME PASS; V354 STATIC/DISC PASS, RUNTIME PENDING
+- 사용자가 V353 소환 회복 스킬 수정이 정상 작동한다고 확인했다. V353의 행동 레코드 복구는 정적 추론을 넘어 런타임 성공으로 판정한다.
+- V354 빌더는 V353 full ZIP SHA-256을 고정하고 네 DAT 외 변경을 거부한다. 두 번의 in-memory 결과가 같았고 full/delta ZIP은 `2AA6C42A...` / `6E4A79CA...`로 결정적 생성됐다.
+- 독립 verifier는 builder를 import하지 않고 164멤버 순서·크기, 네 멤버의 exact diff, `DD B4→399=개`, `DE 52→556=재`, COMM plane 556 nonblank, 새 두 payload의 완전 디코드, E2 호출부, metadata 22/35, delta readback을 검사했다.
+- 전수 exact census는 `존개 2→0`, `존재 0→2`, `개미 3→0`, `재미 0→3`, `재정비 5→5`, `개정비 0→0`이다. 전역 `DD B4` 치환은 하지 않았다.
+- 실제 changed byte 수는 `4/S4031.DAT=2`, `5/S5041.DAT=50`, `8/S8051.DAT=2`, `E5/SE05A.DAT=4`, 합계 58이다. `PSX.EXE`, `COMM.IMG`, V353 12바이트 소환 행동 레코드는 byte exact다.
+- `V354.bin`은 632,495,136바이트이며 SHA-256 `C864CA8421069D60A38F8502D33D99589A39DC1C94B72635C4A9C44FB711382D`다. 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481·587776B, ZIP 멤버 164/164 디스크 readback PASS다.
+- V354의 두 교정 문장과 다섯 `재` 표시는 사용자 콜드부팅 장면 확인 전이므로 TEST_ONLY/RUNTIME PENDING이다. 회귀 체크로 V353 소환 회복과 MP 차감도 다시 확인한다.
+- `check_build.py`를 V353과 V354에 각각 실행했다. 둘 다 선택지 폭 75·마커 2·3줄 초과 18로 exit 1이며 검사 대상 파일명 줄을 제외한 출력은 byte-equivalent다. 이는 기존 상속 부채이고 V354 신규 회귀는 0이다.
