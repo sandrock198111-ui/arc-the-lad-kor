@@ -1,0 +1,4 @@
+﻿member,offset,before,after,reason
+PSX.EXE,0x78AE5,E0,00,restore high byte of live 32-bit summon action ID 0x00000026
+PSX.EXE,0x78AE6,52,00,restore high byte of live 32-bit summon action ID 0x00000026
+PSX.EXE,0x78AE7,A3,00,restore high byte of live 32-bit summon action ID 0x00000026

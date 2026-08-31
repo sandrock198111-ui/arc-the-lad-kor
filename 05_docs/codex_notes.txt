@@ -2297,3 +2297,12 @@ V345 스톤 메시지와 범위 커서 복구 구조 - 2026-08-30
 - V341 범위 커서 변경은 네 PSX 구간이다: pre-DrawOT gate `0x2060+4`, stock owner initializer `0x3E14+8`, owner/active gate `0x75590+0x34`, uploader DrawOT epilogue `0x8F0D0+36`. V342가 이를 V340으로 되돌렸지만 이후 검은 화면의 실제 원인은 별도 W16 leaf의 `jal` RA 파괴로 V343에서 확정됐다. V345는 네 구간만 V341에서 가져오고 V343 file `0x50DF4=08067409`, `0x82840=0805AD7F`, `0x82844=A4A2002E`를 보존한다.
 - V345의 범용 `check_build.py` 부채 75/2/18은 V344와 완전히 동일하다. 새 S4041 외부 슬롯 하나 때문에 E2/제자리 census만 1374/1116에서 1375/1115로 바뀌었다. 이는 신규 폭/행 회귀가 아니다.
 - V345 정적 산출물은 full `AB9A8E99...`, delta `E0C7A923...`, PSX `C4572A88...`; BIN `1B9E2429...`, CUE `3A35FA22...`; 카드 `0799B460...`이다. 런타임 승인 전까지 TEST_ONLY이며 bible 기준은 V344를 유지한다.
+
+V353 소환 행동 레코드와 zero-run 안전 규칙 - 2026-08-31
+- PSX.EXE RAM `0x801932DC`(file `0x78ADC`)는 12바이트 행동 레코드다. 첫 두 word는 `0x80123858`, `0x80123B6C`, 세 번째 word는 소환 회복 행동 ID `0x00000026`이다. 그 상위 3바이트가 0이라는 사실은 free space의 증거가 아니다.
+- V207 `build_arc1_v207_move_stub_strings.py`는 긴 0 run을 고를 때 문자열 포인터와 code cave만 피했지만, 구조체/테이블의 살아 있는 0 필드를 소유권으로 제외하지 않았다. 선택한 `0x801932E5`는 action word `0x801932E4`의 byte1이므로 문자열 쓰기가 행동 ID를 `0xA30AE026`으로 오염시켰다. 후속 문자열 내용 변경으로 V352에서는 `0xA352E026`이다.
+- 레코드 베이스를 가리키는 PSX file `0x78B48`, `0x78B58`은 둘 다 `0x801932DC`다. 과거 문자열 포인터 `0x801932E5`는 현행 `0x82A6C`에서 이미 `0x8019AF14`로 옮겨졌고, 전체 164멤버에서 `0x801932E5..0x801932EA` exact pointer는 0건이다. 따라서 레코드 뒤 문자열 잔재를 지울 필요는 없고 V353은 action high3만 복구한다.
+- 런타임 `0x80123778`은 global command low16을 actor `+0xA8`에 복사한다. `0x80121934`는 이를 signed `lh`로 읽고 16배해 action table을 조회한다. `0xE026`은 -8154라 테이블 앞을 조회해 callback/animation/MP 차감이 시작되지 않고, `0x0026`은 정상 entry 38이다.
+- RAM 한정 개입에서 action/global을 `0x26`으로 복구하면 D0 `0x801A8078`, D4 `0x8012EED4`가 설정되고 MP 56→44, 이후 원본 callback 단계 `0x80122620`에 도달했다. 실제 V353 콜드부팅은 별도 런타임 게이트다.
+- 앞으로 zero-run/cave allocator는 단순 0 연속 길이와 포인터 부재만으로 쓰기 가능 판정을 내리면 안 된다. 최소한 알려진 구조체·테이블 레코드 경계, 코드 delay slot, relocation/reference ownership을 제외하고, donor/original의 typed field와 전후 레코드 전체를 Expected-Write 가드에 고정한다.
+- V353 full SHA-256은 `83AB9F2580478826D4B37F9B8147A6594646E3995C9B8211645C59AC7458AE91`, 정적/디스크 PASS, 런타임 PENDING이다.

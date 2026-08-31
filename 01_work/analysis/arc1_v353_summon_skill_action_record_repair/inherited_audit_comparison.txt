@@ -1,0 +1,20 @@
+V352 versus V353 inherited audit comparison
+
+check_build.py
+- V352 exit=1; V353 exit=1.
+- Output differs only in the first target-filename line.
+- Both: body 2878, choices 357, E2 1377, in-place 1113.
+- Both: choice width debt 75, choice marker debt 2, window overflow debt 18.
+- New debt: 0.
+
+audit_arc1_release_readiness.py
+- V352 and V353 both inspect 2847 dialogue entries.
+- Both report inherited orphan-glyph debt 383 entries / 508 references.
+- Both report line-count increase 978 and decrease 391; no entry exceeds original maximum 9 lines.
+- New debt: 0.
+
+audit_resident_routines.py
+- V352 and V353 both report 128 refilled original-empty cells.
+- Both report 4093 RAM pointers with 0 outside RAM.
+- build_report address extraction is unavailable for these archive reports in both versions.
+- New debt: 0.

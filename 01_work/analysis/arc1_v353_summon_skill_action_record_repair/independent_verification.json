@@ -1,0 +1,31 @@
+{
+  "version": "V353",
+  "result": "PASS_STATIC_RUNTIME_PENDING",
+  "output": {
+    "file": "arc1_v353_summon_skill_action_record_repair_TEST_ONLY_83AB9F25.zip",
+    "sha256": "83AB9F2580478826D4B37F9B8147A6594646E3995C9B8211645C59AC7458AE91"
+  },
+  "delta": {
+    "file": "arc1_v353_summon_skill_action_record_repair_TEST_ONLY_delta_from_v352_71D46665.zip",
+    "sha256": "71D4666580A70CAFBA2364D13ADC50286FEDD31DC4FBCD6586EE191DAFE3CC9A"
+  },
+  "checks": {
+    "archive_topology_order": "PASS 164/164",
+    "changed_members": [
+      "PSX.EXE"
+    ],
+    "expected_write": "PASS 3 bytes at 0x78AE5..0x78AE7",
+    "action_record_original_match": "PASS 12/12 bytes",
+    "action_transition": "0xA352E026 -> 0x00000026",
+    "signed_low16": "-8154 -> 38",
+    "record_references": [
+      "0x78B48",
+      "0x78B58"
+    ],
+    "stale_pointer_hits": 0,
+    "comm_and_dat_preservation": "PASS",
+    "delta_readback": "PASS",
+    "live_zero_field_guard": "PASS"
+  },
+  "runtime": "PENDING user cold boot; static verification cannot prove real execution"
+}

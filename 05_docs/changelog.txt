@@ -2078,3 +2078,13 @@
 - V199 전투 후 대화 안전 본문 8곳과 V210 `D/SD031.DAT` 제어코드/멤버를 가드하고 byte exact로 보존했다. `COMM.IMG`도 V344와 동일하다.
 - full/delta SHA-256은 `AB9A8E99707D4E11EF0878E65451AA0DAD441328C6EDE9277E6142A9164BC54D` / `E0C7A92394014ED2C53CE38CB8DDB25829716C5FC89A05A5F2FD0238C6EBBC7F`이다. `V345.bin`/cue SHA-256은 `1B9E24298C841B9EB47D4CB3FE4D7577425DACCDB73B131463082F596DF7BD5C` / `3A35FA223DFBA3A899FFCFB88AE1CE70DEBD02A4CC73AE43142FB28FC81D4098`이다. v104 LBA 506/506와 164/164 디스크 readback이 PASS했다.
 - DuckStation 메모리카드 `V345_1.mcd`를 V342 카드에서 byte exact 복제했다(SHA-256 `0799B4608325CDA7ABA0F30C5D3C4E1F06276D8960592EAAE55E2A8849B0A440`). V345는 아직 `TEST_ONLY / RUNTIME PENDING`이며 `bible_current.txt`의 성공 기준은 V344로 유지한다.
+
+2026-08-31 - V353 소환 회복 스킬 행동 레코드 복구
+- 사용자 V351/V352 계보 런타임에서 케라크의 회복 스킬이 범위 확정 뒤 연출·회복·MP 소비 없이 이동 상태로 복귀하는 문제를 조사했다. 대상 HP가 가득 차도 원본에서는 스킬이 정상 발동한다는 사용자 원본 실기 대조를 반영했다.
+- 원인은 V207 `build_arc1_v207_move_stub_strings.py`의 빈 0영역 선택이다. 문자열 목적지 `0x801932E5`는 실제 빈 공간이 아니라 RAM `0x801932E4`의 32비트 소환 행동 ID `0x00000026` 중 두 번째 바이트였다. V207에서 처음 `0xA30AE026`으로 오염됐고 후속 문자열 변경을 거쳐 V352의 `0xA352E026`으로 계승됐다.
+- 런타임에서 `0x80123778`이 low16 `0xE026`을 actor `+0xA8`로 복사하고 `0x80121934`가 signed `lh` 후 16배 인덱싱해 행동 테이블 앞쪽을 조회한다. 그 결과 callback/animation/MP 차감이 시작되지 않았다. RAM에서 행동 ID를 `0x0026`으로 한정 복구한 진단에서는 callback `0x8012EED4`와 원본 단계 `0x80122620`을 통과하고 MP가 56→44로 감소했다.
+- `02_scripts/build_arc1_v353_summon_skill_action_record_repair.py`와 독립 `verify_arc1_v353_summon_skill_action_record_repair.py`를 추가했다. V352 `PSX.EXE:0x78AE5..0x78AE7`의 `E0 52 A3` 세 바이트만 `00 00 00`으로 복구해 전체 12바이트 행동 레코드를 원본/V206과 일치시켰다. 레코드 이후 고아 문자열 잔재는 증거 범위 밖이라 보존했다.
+- 2회 결정적 빌드와 독립 verifier가 PASS했다. V352 대비 변경 멤버는 `PSX.EXE` 하나, 실제 diff는 정확히 3바이트다. COMM.IMG, 모든 DAT, 나머지 PSX.EXE 바이트, 164멤버 순서·크기는 byte exact다. `0x801932E5..0x801932EA`로 향하는 32비트 포인터는 전체 아카이브에서 0건이다.
+- V353 full/delta SHA-256은 `83AB9F2580478826D4B37F9B8147A6594646E3995C9B8211645C59AC7458AE91` / `71D4666580A70CAFBA2364D13ADC50286FEDD31DC4FBCD6586EE191DAFE3CC9A`다.
+- `V353.bin`/cue SHA-256은 `21463AAC39FC6A0709D808918AA969A32F96A6748EBD439E1DC99A86B0F49AFC` / `1D37F90E2578E5B1DD2757957A7D8028EE4F246B6E998277B505F93EA4AF7781`다. v104 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481, 164/164 디스크 readback PASS. `V353_1.mcd`는 131072B, SHA-256 `25A5943632BF52DECC3F70440A496AC0ADC7B117FEFD565D05E7273FC364D1C3`다.
+- V352와 `check_build.py` 출력은 파일명 외 완전히 동일하며 신규 부채 0이다. V353은 실제 콜드부팅에서 회복 연출·MP 차감·이동 복귀를 확인하기 전까지 `TEST_ONLY / RUNTIME PENDING`이다. 따라서 `bible_current.txt`는 갱신하지 않았다.

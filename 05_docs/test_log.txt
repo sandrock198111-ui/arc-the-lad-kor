@@ -2915,3 +2915,15 @@ check_build.py 통과. SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FB
 - 메모리카드: `V342_1.mcd -> V345_1.mcd`, 131072바이트, 양쪽 SHA-256 `0799B460...A440` 일치.
 - Claude 감사: MCP Agent는 연결됐지만 등록 agent가 없어 실행 불가했고, CLI는 `session limit · resets 11:30am`을 반환했다. 이를 PASS로 간주하지 않으며 제한 해제 후 재시도한다.
 - 결과: STATIC/DISC PASS, RUNTIME PENDING. 콜드부팅에서 스톤 서클/고대의 기록, 아이템·스킬 범위 커서, 돌 메시지 대기와 이후 무한반복 부재를 반드시 확인한다.
+
+2026-08-31 | V353 케라크 소환 회복 스킬 행동 ID 복구 | 사용자 V352 상태 5~8·원본 성공 상태 대조, V197~V352 PSX 계보 diff, V207 빌더 감사, DuckStation GDB 실행 추적·RAM 한정 개입, py_compile, 2회 결정적 빌드, 독립 verifier, check_build/릴리스 감사 비교, v104 ISO 164/164 readback | STATIC PATCH PASS / DISC INTEGRITY PASS / RAM INTERVENTION PASS / V353 RUNTIME PENDING.
+- V352 세이브에서 범위 선택은 정상이나 확정 직후 소환수가 다른 유닛 위치로 겹치고 자유 이동으로 복귀했으며 회복·연출·MP 차감이 없었다. 원본 `SCPS-91302_1.sav`에서는 대상 HP가 가득 차도 action `0x26`, callback, MP 소비가 정상임을 대조했다.
+- PSX.EXE RAM `0x801932DC`/file `0x78ADC`의 12바이트 레코드는 원본과 V206에서 `58 38 12 80 6C 3B 12 80 26 00 00 00`, V207에서 처음 `...26 E0 0A A3`, V352에서 `...26 E0 52 A3`였다. V207 문자열 이동기가 살아 있는 32비트 필드의 0인 상위 바이트를 free zero run으로 오판한 것이 최초 원인이다.
+- V352 런타임 global command `0x801AE1C0`과 actor `+0xA8`은 `0xE026`이었다. `0x80123778`의 halfword 복사와 `0x80121934`의 signed `lh`/×16 테이블 인덱스를 확인했다. `0xE026`은 signed -8154라 잘못된 테이블 영역을 가리킨다.
+- 상태6에 RAM 한정으로 레코드 high3와 이미 계산된 global command를 `0x0026`으로 복구한 뒤 확정 경로를 재실행했다. actor action `0x26`, D0 `0x801A8078`, D4 `0x8012EED4`가 설정됐고 callback hit, MP 56→44 watchpoint, 이후 원본 단계 callback `0x80122620` hit를 확인했다. 이 개입은 프로젝트 파일을 수정하지 않은 원인 검증이다.
+- V353은 V352 full `D4E8D2E2...DDE3D`를 베이스로 PSX.EXE `0x78AE5 E0→00`, `0x78AE6 52→00`, `0x78AE7 A3→00`만 변경한다. 행동 word는 `0xA352E026→0x00000026`, signed low16은 `-8154→38`이다.
+- 독립 verifier는 builder를 import하지 않고 원본/V206/V207 계보, 164멤버 topology/order, exact 3-byte Expected-Write, 레코드 참조 `0x78B48/0x78B58`, 현행 문자열 포인터 `0x82A6C→0x8019AF14`, stale pointer 0건, PS-X EXE header, delta PSX readback, COMM/DAT 보존을 PASS했다.
+- full/delta SHA-256은 `83AB9F2580478826D4B37F9B8147A6594646E3995C9B8211645C59AC7458AE91` / `71D4666580A70CAFBA2364D13ADC50286FEDD31DC4FBCD6586EE191DAFE3CC9A`다. 두 번째 빌드도 byte-identical했다.
+- `check_build.py`는 V352/V353 모두 기존 선택지 폭 75·마커 2·3줄 초과 18로 exit 1이고 파일명 외 출력이 동일하다. release-readiness 383건/508회 및 resident audit 128칸/범위 밖 포인터 0도 V352와 동일한 상속 부채다.
+- `V353.bin`/cue SHA-256은 `21463AAC39FC6A0709D808918AA969A32F96A6748EBD439E1DC99A86B0F49AFC` / `1D37F90E2578E5B1DD2757957A7D8028EE4F246B6E998277B505F93EA4AF7781`. 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481·587776B, ZIP 멤버 164/164 디스크 readback PASS다.
+- 실제 V353 콜드부팅은 아직 하지 않았다. V353 세이브스테이트 직접 로드가 아니라 cue 콜드부팅 후 케라크 회복의 연출, MP 비용, 만피 대상 실행, 행동 종료 위치를 확인해야 한다.

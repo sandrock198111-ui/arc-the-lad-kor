@@ -1,0 +1,54 @@
+{
+  "version": "V353",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "base": {
+    "file": "arc1_v352_punctuation_code_repair_TEST_ONLY_D4E8D2E2.zip",
+    "sha256": "D4E8D2E24238123065DE0D3AF1F3FF4F7E82CCB9CB17ACEC5241AB3C2E6DDE3D"
+  },
+  "output": {
+    "file": "arc1_v353_summon_skill_action_record_repair_TEST_ONLY_83AB9F25.zip",
+    "sha256": "83AB9F2580478826D4B37F9B8147A6594646E3995C9B8211645C59AC7458AE91"
+  },
+  "delta": {
+    "file": "arc1_v353_summon_skill_action_record_repair_TEST_ONLY_delta_from_v352_71D46665.zip",
+    "sha256": "71D4666580A70CAFBA2364D13ADC50286FEDD31DC4FBCD6586EE191DAFE3CC9A"
+  },
+  "changed_members_vs_v352": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": 3,
+  "expected_writes": [
+    {
+      "member": "PSX.EXE",
+      "offset": "0x78AE5",
+      "before": "E0",
+      "after": "00",
+      "reason": "restore high byte of live 32-bit summon action ID 0x00000026"
+    },
+    {
+      "member": "PSX.EXE",
+      "offset": "0x78AE6",
+      "before": "52",
+      "after": "00",
+      "reason": "restore high byte of live 32-bit summon action ID 0x00000026"
+    },
+    {
+      "member": "PSX.EXE",
+      "offset": "0x78AE7",
+      "before": "A3",
+      "after": "00",
+      "reason": "restore high byte of live 32-bit summon action ID 0x00000026"
+    }
+  ],
+  "action_record": {
+    "ram": "0x801932DC",
+    "file": "0x78ADC",
+    "before": "58 38 12 80 6C 3B 12 80 26 E0 52 A3",
+    "after": "58 38 12 80 6C 3B 12 80 26 00 00 00",
+    "before_action_word": "0xA352E026",
+    "after_action_word": "0x00000026"
+  },
+  "root_cause": "V207 zero-run string relocation began at byte 1 of a live 32-bit action ID",
+  "preserved": "COMM.IMG, every DAT, all other PSX.EXE bytes, archive topology/order and member sizes byte exact V352",
+  "runtime": "PENDING user cold boot; RAM-only intervention already reproduced callback and MP 56->44"
+}
