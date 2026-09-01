@@ -1,3 +1,8 @@
+2026-09-01 | V354 대화 편집기 동적 슬롯 계획/실행기 복구 | 원본-안전 79-slot census, current E2 owner 분석, 전체 수정안 수요 재계산, py_compile, editor self-test, 숨김 Tk 타이핑 preview, 한글/영문 CMD `--self-test` | PASS; TRANSLATION CSV/GAME DATA UNCHANGED.
+- `5/S5013.DAT`에서 원본-안전 슬롯 48개, 현재 최종 계획 수요 36개, 여유 12개를 재현했다. 현재 슬롯을 쓰는 유효 문장을 한 글자 제자리 문장으로 가상 변경하면 balance가 12→13으로 정확히 +1 되는 것을 self-test와 숨김 Tk 양쪽에서 확인했다.
+- 전체 2,878행 재계산 결과 `슬롯부족=69`: `31/S3014.DAT=16`(안전 용량16/수요32), `6/S6054.DAT=40`(안전 용량0/수요40), `C2/SC0B6.DAT=13`(안전 용량0/수요13). 종전 8파일 100줄 중 `5/S5013`, `21/S2045`, `6/S6014`, `D/SD031`, `7/S7012`의 거짓 부족은 해소됐다.
+- `py -3 -m py_compile`, 직접 `--self-test`, 한글·영문 CMD의 절대/상대 경로 `--self-test`가 모두 PASS했다. editor 결과는 rows=2878, encodable=720, missing_unique=8, review_candidates=857, csv_field_issues=3이다. 실제 저장 버튼은 누르지 않았고 사용자의 `script_translated_full.csv` 수정은 byte 단위로 보존했다.
+
 2026-08-31 | V354 전체 대화 편집기/현행 16px codec | V354 full/member 및 assignment/atlas SHA 고정, E9/EA 176 lookup 대조, py_compile, codec/editor self-test, 숨김 Tk 2,878행 생성, 검토필터 4종, 메모리 CSV round-trip | PASS; GAME DATA UNCHANGED.
 - 구 `review_editor.py`는 `arc1_v1*.zip`만 찾고 12px bitmap encoder를 호출해 V354에서 `IndexError`가 났다. 공백 `0x9C`·일반 12px·최소 3행 전제도 현행 `A1`·14px·4행과 맞지 않아 그대로 사용하지 않았다.
 - 새 codec은 V354 SHA-256 `2AA6C42AC1F62B5D1C7121F27B77807610C9E05D423C548429CB38653DF9C194`, PSX `7866E637...B7FD`, COMM `A6681F13...405`, assignment/atlas 고정 해시를 통과했다. 필수 코드 `A1/B3/21/A9/D1`, `괄=AB`, `재=DE52`, `품=DD80`, `「=DF2D`, `」=DF09`를 확인했다.

@@ -37,6 +37,7 @@ import shutil
 import sys
 import tkinter as tk
 import zipfile
+from collections import defaultdict
 from pathlib import Path
 from tkinter import font as tkfont, messagebox, ttk
 
@@ -126,10 +127,40 @@ def wrapped_rows(payload: bytes) -> int:
     return rows
 
 
+def slot_of_disk(disk_id: int) -> int | None:
+    """Convert the E2 disk id to a standard 0..78 slot, rejecting reserved A9."""
+    if 0x81 <= disk_id <= 0xA8:
+        return disk_id - 0x81
+    if 0xAA <= disk_id <= 0xD0:
+        return disk_id - 0x82
+    return None
+
+
+def active_slot_refs(body: bytes) -> set[int]:
+    """Return standard E2 slots reached by one current dialogue body.
+
+    A leading E2 redirects the whole body, so its old tail is skipped and must not be
+    scanned as live text.  Inline choice bodies can contain E2 after an E5/E6 marker;
+    those references are conservatively retained as fixed owners.
+    """
+    if len(body) >= 2 and body[0] == 0xE2:
+        slot = slot_of_disk(body[1])
+        return {slot} if slot is not None else set()
+    refs: set[int] = set()
+    for token in tokens(body):
+        if len(token) == 1 and token[0] == 0:
+            break
+        if len(token) == 2 and token[0] == 0xE2:
+            slot = slot_of_disk(token[1])
+            if slot is not None:
+                refs.add(slot)
+    return refs
+
+
 class Line:
     __slots__ = ("n", "file", "offset", "japanese", "korean", "proposal", "disc",
                  "capacity", "rows", "is_choice", "raw", "redirected",
-                 "provenance", "csv_issue", "mixed_register")
+                 "current_slot", "provenance", "csv_issue", "mixed_register")
 
     def __init__(self, n, row, raw, rows, disc="", mixed_register=False):
         self.n = n
@@ -144,6 +175,7 @@ class Line:
         self.rows = rows
         self.is_choice = bool(raw) and has_marker(raw, CHOICE)
         self.redirected = False     # the disc body already points at an external slot
+        self.current_slot: int | None = None
         self.provenance = (row.get(PROVENANCE) or "").strip()
         self.csv_issue = "" if self.provenance in VALID_PROVENANCE else self.provenance
         self.mixed_register = mixed_register
@@ -170,19 +202,25 @@ class Editor:
             blobs = {n: archive.read(n) for n in archive.namelist() if n.upper().endswith(".DAT")}
         with zipfile.ZipFile(PRISTINE) as pristine:
             originals = {n: pristine.read(n) for n in pristine.namelist() if n in blobs}
+        self.blobs = blobs
+        self.originals = originals
         self.build_name = BUILD.name
 
-        # how much room each file has left, so "needs a slot" can be told apart from
-        # "needs a slot and there is none" -- the first is a build away, the second
-        # is editing work in that file
-        self.free_slots: dict[str, int] = {}
-        for name, blob in blobs.items():
-            if len(blob) < SLOT_BASE + SLOT_COUNT * SLOT_SIZE:
-                self.free_slots[name] = 0
+        # Only slots that were blank on the pristine disc belong to the translation.
+        # Current zero-filled blocks are not the capacity: a prior build can leave dead
+        # text in a now-unreferenced safe slot, and an edit that moves a line inline can
+        # release its current slot.  The live proposal plan below accounts for both.
+        self.safe_slots: dict[str, set[int]] = {}
+        for name, original in originals.items():
+            if len(original) < SLOT_BASE + SLOT_COUNT * SLOT_SIZE:
+                self.safe_slots[name] = set()
                 continue
-            self.free_slots[name] = sum(
-                1 for s in range(SLOT_COUNT)
-                if not any(blob[SLOT_BASE + s * SLOT_SIZE:SLOT_BASE + (s + 1) * SLOT_SIZE]))
+            self.safe_slots[name] = {
+                slot for slot in range(SLOT_COUNT)
+                if not any(original[
+                    SLOT_BASE + slot * SLOT_SIZE:SLOT_BASE + (slot + 1) * SLOT_SIZE
+                ])
+            }
 
         raws: dict[tuple[str, str], bytes] = {}
         with ORIGINAL.open(encoding="utf-8-sig", newline="") as handle:
@@ -212,11 +250,37 @@ class Editor:
             if raw and name in blobs and name in originals:
                 offset = int(row["offset"], 0)
                 disc = self.read_disc(blobs[name], originals[name], offset, raw)
-                redirected = blobs[name][offset] == 0xE2
+                if offset + 1 < len(blobs[name]) and blobs[name][offset] == 0xE2:
+                    current_slot = slot_of_disk(blobs[name][offset + 1])
+                else:
+                    current_slot = None
+                redirected = current_slot is not None
+            else:
+                current_slot = None
             key_ = (name, int(row["offset"], 0), (row.get("korean") or "").strip())
             line = Line(n, row, raw, rows_, disc, key_ in mixed)
             line.redirected = redirected
+            line.current_slot = current_slot
             self.lines.append(line)
+
+        self.lines_by_file: dict[str, list[Line]] = defaultdict(list)
+        for line in self.lines:
+            self.lines_by_file[line.file].append(line)
+
+        # Choice/special E2 owners cannot be released by ordinary prose edits.  Reserve
+        # only owners that consume pristine-blank translation slots; original game slots
+        # are already outside safe capacity.
+        fixed: dict[str, set[int]] = defaultdict(set)
+        for line in self.lines:
+            if not line.raw or line.file not in blobs:
+                continue
+            offset = int(line.offset, 0)
+            body = blobs[line.file][offset:offset + len(line.raw)]
+            refs = active_slot_refs(body)
+            if line.is_choice or line.current_slot is None:
+                fixed[line.file].update(refs & self.safe_slots.get(line.file, set()))
+        self.fixed_slot_refs = {name: set(fixed.get(name, set())) for name in blobs}
+        self.recalculate_slot_plan()
 
     def reload(self) -> None:
         edited = [l for l in self.lines if l.proposal != l.korean]
@@ -329,6 +393,87 @@ class Editor:
             "over_rows": need > window,
         }
 
+    def slot_plan_for_file(self, name: str,
+                           overrides: dict[int, str] | None = None) -> dict:
+        """Plan the standard external slots from every proposal in one DAT.
+
+        This is deliberately a final-plan calculation, not a count of zero blocks in
+        V354.  A valid proposal that now fits inline releases its current safe slot;
+        every other valid long proposal consumes one.  Choice/special owners and a
+        current slot whose proposal is not buildable remain reserved.
+        """
+        overrides = overrides or {}
+        safe = set(self.safe_slots.get(name, set()))
+        fixed = set(self.fixed_slot_refs.get(name, set()))
+        retained: set[int] = set()
+        held_safe: list[Line] = []
+        held_legacy: list[Line] = []
+        new_demand: list[Line] = []
+
+        for line in self.lines_by_file.get(name, []):
+            if line.is_choice:
+                continue
+            text = overrides.get(line.n, line.proposal).strip()
+            measured = self.measure(line, text)
+            buildable = (
+                bool(text)
+                and any("가" <= char <= "힣" for char in text)
+                and not measured["missing"]
+                and not measured["over_rows"]
+                and not measured["over_slot"]
+            )
+            if not buildable:
+                if line.current_slot in safe:
+                    retained.add(line.current_slot)
+                continue
+            if measured["fits_inline"]:
+                continue
+            if line.current_slot is not None:
+                if line.current_slot in safe:
+                    held_safe.append(line)
+                else:
+                    # One audited V354 line preserves a legacy original-owned slot.
+                    # It remains usable in place but is not part of translation capacity.
+                    held_legacy.append(line)
+            else:
+                new_demand.append(line)
+
+        held_slots = {line.current_slot for line in held_safe}
+        occupied = fixed | retained | held_slots
+        free_for_new = len(safe - occupied)
+
+        # Match the reinserter's stable file/offset order after preserving existing
+        # assignments.  This makes the exact lines labelled shortage deterministic.
+        new_demand.sort(key=lambda line: int(line.offset, 0))
+        newly_assigned = new_demand[:free_for_new]
+        shortage = new_demand[free_for_new:]
+        assigned = {
+            line.n for line in held_safe + held_legacy + newly_assigned
+        }
+        return {
+            "capacity": len(safe),
+            "fixed": len(fixed),
+            "retained": len(retained - fixed),
+            "ordinary_demand": len(held_safe) + len(new_demand),
+            "legacy_held": len(held_legacy),
+            "balance": free_for_new - len(new_demand),
+            "assigned": assigned,
+            "shortage": {line.n for line in shortage},
+        }
+
+    def recalculate_slot_plan(self) -> None:
+        """Refresh cached slot states after any proposal changes."""
+        self.slot_assigned: set[int] = set()
+        self.slot_shortage: set[int] = set()
+        self.slot_stats: dict[str, dict] = {}
+        self.slot_balance: dict[str, int] = {}
+        for name in self.lines_by_file:
+            plan = self.slot_plan_for_file(name)
+            self.slot_stats[name] = plan
+            self.slot_balance[name] = plan["balance"]
+            self.slot_assigned.update(plan["assigned"])
+            self.slot_shortage.update(plan["shortage"])
+
     def review_reasons(self, line: Line, text: str) -> list[str]:
         """Return non-authoritative language-review hints for a row."""
         reasons: list[str] = []
@@ -383,7 +528,7 @@ class Editor:
             return "적용됨"
         if line.is_choice:
             return "선택지"
-        if m["fits_inline"] or line.redirected or self.free_slots.get(line.file, 0) > 0:
+        if m["fits_inline"] or line.n in self.slot_assigned:
             return "빌드대기"
         return "슬롯부족"
 
@@ -548,6 +693,7 @@ class Editor:
 
     def refresh(self) -> None:
         self.capture_current()
+        self.recalculate_slot_plan()
         keep = self.current.n if self.current else None
         self.tree.delete(*self.tree.get_children())
         self.view = [l for l in self.lines if self.matches(l)]
@@ -581,7 +727,8 @@ class Editor:
         self.count_label.configure(
             text=f"보이는 줄 {len(self.view)} / 전체 {len(self.lines)}   "
                  f"수정 {edited}   검토 후보 {review_count}   "
-                 f"미지원 글자 {len(missing_chars)}종   게임 미반영 {notin}")
+                 f"미지원 글자 {len(missing_chars)}종   "
+                 f"슬롯 부족 {len(self.slot_shortage)}   게임 미반영 {notin}")
         if keep is not None and str(keep) in self.tree.get_children():
             self.tree.selection_set(str(keep))
 
@@ -594,6 +741,7 @@ class Editor:
             return
         if self.current is not None and self.current is not line:
             self.capture_current()
+            self.recalculate_slot_plan()
         self.current = line
         for widget, text in ((self.jp, line.japanese), (self.kr, line.disc)):
             widget.configure(state="normal")
@@ -609,42 +757,55 @@ class Editor:
             return
         line, text = self.current, self.edit.get("1.0", "end-1c").strip()
         m = self.measure(line, text)
+        plan = self.slot_plan_for_file(line.file, {line.n: text})
+        balance = plan["balance"]
+        baseline_balance = self.slot_balance.get(line.file, balance)
+        balance_text = (f"{balance}개 남음" if balance >= 0
+                        else f"{-balance}개 부족")
+        slot_blocked = line.n in plan["shortage"]
         mark = lambda bad: "X" if bad else "o"
         report = [
             f"행번호      {line.n}",
             f"파일        {line.file} {line.offset}",
-            f"V354 빈 슬롯 {self.free_slots.get(line.file, 0)} / {SLOT_COUNT}",
+            f"안전 슬롯   수정안 후 {balance_text}",
+            f"            용량 {plan['capacity']} / 물리 {SLOT_COUNT}",
+            f"            고정 {plan['fixed']} + 보류 {plan['retained']}"
+            f" + 일반 수요 {plan['ordinary_demand']}",
             "",
             f"{mark(m['over_rows'])} 줄       {m['need_rows']} / {m['window']} 줄"
             f"   (총 전진 {m['width']}px, 한 줄 < {ROW_PIXELS}px)",
             f"{mark(m['over_slot'])} 슬롯     {m['bytes']:>3} / {SLOT_TEXT_MAX:>3} 바이트",
-            # o only when this line has somewhere to go: it fits where the Japanese
-            # sat, or the file still has a slot to send it to. A line that fits
-            # neither is stuck, and marking it o was hiding exactly that.
-            f"{mark(not m['fits_inline'] and not line.redirected and self.free_slots.get(line.file, 0) == 0)}"
+            f"{mark(not m['fits_inline'] and slot_blocked)}"
             f" 제자리   {m['inline']:>3} / {line.capacity:>3} 바이트"
             f"   {'들어감' if m['fits_inline'] else '→ 기존/새 슬롯'}",
             f"{mark(bool(m['missing']))} 글자     "
             f"{'없는 글자: ' + ' '.join(m['missing']) if m['missing'] else '모두 있음'}",
             "",
         ]
-        # The number that actually decides the line's fate: how much has to go before it
-        # fits where the Japanese sat. A line that needs a slot in a file with none is
-        # stuck until this reaches zero, and until now the reader had to subtract by hand.
-        room = self.free_slots.get(line.file, 0)
         if not m["fits_inline"]:
             short = m["inline"] - line.capacity
-            if line.redirected:
-                report.append("이 줄은 V354에서 이미 외부 슬롯을 사용합니다.")
+            if (not any("가" <= char <= "힣" for char in text)
+                    or m["missing"] or m["over_rows"] or m["over_slot"]):
+                report.append("글자/줄/126바이트 제약을 먼저 해결해야 슬롯에 배정됩니다.")
+            elif line.current_slot is not None and line.n in plan["assigned"]:
+                report.append(f"이 줄은 현재 슬롯 {line.current_slot}을 유지합니다.")
                 report.append(f"기존 슬롯 안에서는 최대 {SLOT_TEXT_MAX}바이트입니다.")
-            elif room > 0:
-                report.append(f"슬롯을 씁니다 (이 파일 빈 슬롯 {room}개).")
+            elif line.n in plan["assigned"]:
+                report.append("전체 수정안 기준으로 새 슬롯을 배정할 수 있습니다.")
                 report.append(f"제자리에 넣으려면 {short}바이트 더 줄이면 됩니다.")
             else:
-                report.append(f"이 파일에 빈 슬롯이 없습니다.")
+                report.append(f"전체 수정안 기준으로 슬롯이 {-balance}개 부족합니다.")
                 report.append(f"→ {short}바이트만 줄이면 제자리에 들어갑니다.")
         elif m["fits_inline"]:
             report.append(f"제자리에 들어갑니다 (여유 {line.capacity - m['inline']}바이트).")
+            if line.current_slot in self.safe_slots.get(line.file, set()):
+                report.append("→ 현재 사용 중인 안전 슬롯 1개를 회수합니다.")
+        delta = balance - baseline_balance
+        if delta:
+            report.append(
+                f"실시간 변화: 이 입력으로 슬롯 {abs(delta)}개를 "
+                f"{'회수' if delta > 0 else '추가 사용'}합니다."
+            )
         report += [
             "",
         ]
@@ -696,6 +857,7 @@ class Editor:
     def export(self) -> None:
         """Every line in scene order, with what the game draws beside what the CSV says."""
         self.capture_current()
+        self.recalculate_slot_plan()
         fields = ["행번호", "파일", "오프셋", "상태", "검토", "원문",
                   "디스크 (지금 게임)", "수정제안"]
         with EXPORT.open("w", encoding="utf-8-sig", newline="") as handle:
@@ -736,6 +898,7 @@ class Editor:
         # 저장 버튼은 현재 편집 상자의 글도 자동으로 적용한다. 별도의 '적용'
         # 버튼을 깜빡했다고 마지막 문장이 사라져서는 안 된다.
         self.capture_current()
+        self.recalculate_slot_plan()
         changed = [l for l in self.lines if l.proposal != l.korean]
         # Both editors rewrite this file whole, from what they read at startup. If the
         # other one saved in the meantime, writing now would silently drop its work, so
@@ -811,10 +974,27 @@ def self_test() -> None:
     })
     reviews = sum(bool(editor.review_reasons(line, line.proposal)) for line in editor.lines)
     csv_issues = sum(bool(line.csv_issue) for line in editor.lines)
+    # 5/S5013 is the user-reported false 0/79 case.  The pristine disc has 48
+    # translation-safe slots there.  Moving one currently slotted, buildable line back
+    # inline must increase the live final-plan balance by exactly one.
+    sample_file = "5/S5013.DAT"
+    assert editor.slot_stats[sample_file]["capacity"] == 48
+    sample = next(
+        line for line in editor.lines_by_file[sample_file]
+        if line.current_slot in editor.safe_slots[sample_file]
+        and not editor.measure(line, line.proposal)["fits_inline"]
+        and not editor.measure(line, line.proposal)["over_rows"]
+        and not editor.measure(line, line.proposal)["over_slot"]
+    )
+    before = editor.slot_stats[sample_file]["balance"]
+    after = editor.slot_plan_for_file(sample_file, {sample.n: "가"})["balance"]
+    assert after == before + 1
     print(
         f"V354 dialogue editor PASS: rows={len(editor.lines)}, "
         f"encodable={len(editor.table)}, missing_unique={len(missing)}, "
-        f"review_candidates={reviews}, csv_field_issues={csv_issues}"
+        f"review_candidates={reviews}, csv_field_issues={csv_issues}, "
+        f"slot_shortage={len(editor.slot_shortage)}, "
+        f"{sample_file}_balance={before}/48"
     )
 
 
