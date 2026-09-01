@@ -1,0 +1,11 @@
+V355 E2 Bank-B runtime acceptance
+date=2026-09-01
+build=V355.cue
+full_zip_sha256=F8F2E26253BA05D72CD1C667A0F2047ABF189873FE65DC2433D42364CD93E032
+result=PASS
+evidence=user cold-boot runtime report and supplied screenshot
+observed_text=3천 년이나 계속 타오르는 정령의 산, 시온의 불꽃.
+visual_text_match=PASS
+bank_b_nonzero_payload_render=PASS
+additional_vram_bytes=0
+conclusion=Bank-B D1..EC architecture is approved for editor/reinsertion integration; V355 remains a probe rather than the user's edited-dialogue build.

@@ -7,7 +7,7 @@ V355 E2 Bank-B runtime probe의 정적 확정 사실 - 2026-09-01
 - 최적화한 E2 handler는 RAM `0x8018FCD0..0x8018FD8F`, PSX.EXE file `0x754D0..0x7558F`의 기존 192바이트 봉투에 정확히 들어간다. 완료 복귀는 `0x8018FD88: j 0x8016BE44`, delay slot은 `0x8018FD8C: lui t0,0x801F`이고, 바로 다음 `0x8018FD90` range-cursor gate는 별도 소유자로 보존한다. 외부 인바운드는 `0x8016BC84→FCD0`, `0x8016BDC0→FD28`, cursor gate `0x8011C860→FD90`뿐이다.
 - 실제 candidate word를 load-delay까지 포함해 시뮬레이션한 결과 lookup과 completion은 각각 256/256 일치하고 hazard는 0이다. 경계값은 80 fallback, 81→80114000, A8→80115380, A9 fallback, AA→80115400, D0→80116700, D1→800D3200, EC→800D3F80, ED fallback이다.
 - 사용자 CSV의 현재 슬롯 부족은 47줄/3파일이다: `31/S3014.DAT` 16, `6/S6054.DAT` 18, `C2/SC0B6.DAT` 13. Bank-B 28칸을 파일별로 사용할 경우 각각 +12/+10/+15의 여유가 남으며, 47줄 모두 original span≥2, payload≤126, 미등록 글리프 0, 4행/228px 제약 통과, completion metadata u8 범위다. 이 수치는 V355 probe에 실제 문장을 넣었다는 뜻이 아니며, runtime probe 승인 뒤에만 편집기 용량으로 승격한다.
-- V355 probe는 `1/S1011.DAT:0x478AA` 호출을 `E2 8F→E2 D1`로 바꾸고 표준 slot14 전체 128바이트를 Bank-B slot0로 복사한다. 추가 VRAM은 0바이트이며 COMM.IMG는 V354와 byte exact이다. 정적·디스크 검증은 PASS지만 비제로 적재와 다음 대사 진행은 RUNTIME PENDING이다.
+- V355 probe는 `1/S1011.DAT:0x478AA` 호출을 `E2 8F→E2 D1`로 바꾸고 표준 slot14 전체 128바이트를 Bank-B slot0로 복사한다. 추가 VRAM은 0바이트이며 COMM.IMG는 V354와 byte exact이다. 2026-09-01 사용자 콜드부팅 화면에서 해당 비제로 문장이 정확히 출력돼 Bank-B 적재·주소 계산·파서 참조가 RUNTIME PASS로 확정됐다. 이 승인으로 D1..EC 28칸을 편집기·재삽입기 용량에 통합할 수 있지만, V355 자체에는 사용자 CSV의 47개 문장을 넣지 않았다.
 
 V354 대화 편집기의 슬롯 용량은 zero-block 수가 아니라 최종 계획으로 계산 - 2026-09-01
 - 파일당 물리 슬롯은 79개지만 번역이 소유할 수 있는 용량은 원본 디스크의 해당 128바이트 블록이 전부 0이었던 슬롯뿐이다. 원본 데이터가 있던 슬롯을 `빈칸처럼 보인다`는 이유로 덮어쓰지 않는다.
