@@ -1,0 +1,95 @@
+﻿row_number,source file,offset,japanese,pre_v356_korean,draft_korean,protected_template,previous_constraint,bank_b_slot,bank_b_id,review_status,approved_korean,review_note
+787,31/S3014.DAT,0x4762E,"チョピン
+強い相手を選んで戦うと、それだけ多くの経験をつめます。",초핀: 강한 상대와 싸우면 그만큼 많은 경험을 쌓을 수 있습니다.,초핀: 강한 상대와 싸울수록 더 많은 경험을 쌓을 수 있습니다.,초핀: 강한 상대와 싸울수록 더 많은 경험을 쌓을 수 있습니다.,V354_SLOT_SHORTAGE,0,D1,needs_human_review,,Codex draft; compare Japanese/context before approval
+792,31/S3014.DAT,0x477D6,"チョピン
+仲聞がふえてくると、戦闘での役わりに
+よりレベルにさが出てきます。",초핀: 동료가 늘어나면 전투에서의 역할에 따라 레벨 차이가 더 생기게 됩니다.,초핀: 동료가 늘어나면 전투에서 맡은 역할에 따라 레벨 차이도 커집니다.,초핀: 동료가 늘어나면 전투에서 맡은 역할에 따라 레벨 차이도 커집니다.,V354_SLOT_SHORTAGE,1,D2,needs_human_review,,Codex draft; compare Japanese/context before approval
+794,31/S3014.DAT,0x4788A,"チョピン
+キャラクターの防ご値が近い値になるように気をつけてみてはどうでしょう？",초핀: 캐릭터들의 방어력이 비슷한 수치가 되도록 신경 써 보시는 건 어떻겠습니까?,초핀: 캐릭터들의 방어력이 비슷해지도록 맞춰 보는 건 어떨까요?,초핀: 캐릭터들의 방어력이 비슷해지도록 맞춰 보는 건 어떨까요?,V354_SLOT_SHORTAGE,2,D3,needs_human_review,,Codex draft; compare Japanese/context before approval
+796,31/S3014.DAT,0x4794A,落ちこぼれとは誰のことじゃ？,낙오자라니 누구를 말하는 게냐?,"낙오자라니, 누구를 말하는 게냐?","낙오자라니, 누구를 말하는 게냐?",V354_SLOT_SHORTAGE,3,D4,needs_human_review,,Codex draft; compare Japanese/context before approval
+799,31/S3014.DAT,0x47A78,"チョピン
+なかには、モンスターに守られた、
+あそこにしかないアクセサリーもあると
+聞きます。","초핀: 그 안에는 몬스터가 지키고 있는, 그곳에서만 얻을 수 있는 액세서리도 있다고 들었습니다.",초핀: 그곳에서만 얻을 수 있고 몬스터가 지키는 장신구도 있다고 들었습니다.,초핀: 그곳에서만 얻을 수 있고 몬스터가 지키는 장신구도 있다고 들었습니다.,V354_SLOT_SHORTAGE,4,D5,needs_human_review,,Codex draft; compare Japanese/context before approval
+800,31/S3014.DAT,0x47ADE,"チョピン
+力試しもかねて、時には行つてみるのも
+よいのでは？","초핀: 실력도 시험해 볼 겸, 가끔 들러 보는 것도 좋지 않을까요?",초핀: 실력도 시험할 겸 가끔 가 보는 건 어떨까요?,초핀: 실력도 시험할 겸 가끔 가 보는 건 어떨까요?,V354_SLOT_SHORTAGE,5,D6,needs_human_review,,Codex draft; compare Japanese/context before approval
+806,31/S3014.DAT,0x47CD6,"チョピン
+ミルマーナには、3カ所バトルエリアが
+あるこですし、時には行つて、
+話を聞くのもよいでしょう。","초핀: 미르마나에는 세 곳의 배틀 에어리어가 있다고 하니, 때로는 가서 이야기를 듣는 것도 좋겠습니다.",초핀: 미르마나에는 배틀 에어리어가 세 곳 있습니다. 가끔 찾아가 이야기를 들어 보세요.,초핀: 미르마나에는 배틀 에어리어가 세 곳 있습니다. 가끔 찾아가 이야기를 들어 보세요.,V354_SLOT_SHORTAGE,6,D7,needs_human_review,,Codex draft; compare Japanese/context before approval
+807,31/S3014.DAT,0x47D42,"チョピン
+行くと万能薬をもらえるようですよ。",초핀: 가면 만능약을 받을 수 있는 것같습니다.,초핀: 찾아가면 만능약을 받을 수 있다고 합니다.,초핀: 찾아가면 만능약을 받을 수 있다고 합니다.,V354_SLOT_SHORTAGE,7,D8,needs_human_review,,Codex draft; compare Japanese/context before approval
+808,31/S3014.DAT,0x47D92,やさしいのう。,친절하기도 하군.,참 친절하구나.,참 친절하구나.,V354_SLOT_SHORTAGE,8,D9,needs_human_review,,Codex draft; compare Japanese/context before approval
+812,31/S3014.DAT,0x47EE4,"チョピン
+どれについてお話ししましょう？",초핀: 어느 것에 관해 말씀드릴까요?,초핀: 어느 것에 관해 말씀드릴까요?,초핀: 어느 것에 관해 말씀드릴까요?,V354_SLOT_SHORTAGE,9,DA,needs_human_review,,Codex draft; compare Japanese/context before approval
+818,31/S3014.DAT,0x4818E,"チョピン
+ゴーゲンさんが仲聞になつた後にオルカスの丘のストーンサークルへ行きましたか？",초핀: 고겐 님이 동료가 된 뒤에 오르카스 언덕의 스톤 서클에 가 보셨습니까?,초핀: 고겐 님이 동료가 된 뒤에 오르카스 언덕의 스톤 서클에 가 보셨습니까?,초핀: 고겐 님이 동료가 된 뒤에 오르카스 언덕의 스톤 서클에 가 보셨습니까?,V354_SLOT_SHORTAGE,10,DB,needs_human_review,,Codex draft; compare Japanese/context before approval
+819,31/S3014.DAT,0x481F2,"チョピン
+ここでは、あるアイテムが手に入ります。ストーンサークルだけに・・。",초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...,초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클이니까요...,초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클이니까요...,V354_SLOT_SHORTAGE,11,DC,needs_human_review,,Codex draft; compare Japanese/context before approval
+821,31/S3014.DAT,0x482B6,"チョピン
+その時に、カーソルと<CTRL:E7:02>でリングの中の技を選んでアイコンの位置を変えられるんです。",초핀: 그때 커서와  로 링 안의 기술을 고르고 아이콘의 위치를 바꾸어 놓을 수 있습니다.,초핀: 그때 커서와 버튼으로 링 안의 기술을 고른 뒤 아이콘 위치를 변경할 수 있습니다.,초핀: 그때 커서와 {E7:02}버튼으로 링 안의 기술을 고른 뒤 아이콘 위치를 변경할 수 있습니다.,V354_SLOT_SHORTAGE,12,DD,needs_human_review,,Codex draft; compare Japanese/context before approval
+822,31/S3014.DAT,0x48320,"チョピン
+これは、一度変えるとセーフされるので
+すつと使えますよ。",초핀: 이것은 한 번 바꾸면 저장되므로 언제나 사용할 수 있습니다.,초핀: 한 번 바꾸면 저장되므로 계속 사용할 수 있습니다.,초핀: 한 번 바꾸면 저장되므로 계속 사용할 수 있습니다.,V354_SLOT_SHORTAGE,13,DE,needs_human_review,,Codex draft; compare Japanese/context before approval
+824,31/S3014.DAT,0x483F8,"チョピン
+ポコ様の楽器は、全部で8つになると聞いております。全部見つかると、かなり強い兵隊になれそうですね。",초핀: 포코 님의 악기는 전부 8개라고 들었습니다. 모두 찾으면 상당히 강한 병사가 될 수 있겠군요.,초핀: 포코 님의 악기는 모두 8개라고 들었습니다. 전부 찾으면 상당히 강해질 겁니다.,초핀: 포코 님의 악기는 모두 8개라고 들었습니다. 전부 찾으면 상당히 강해질 겁니다.,V354_SLOT_SHORTAGE,14,DF,needs_human_review,,Codex draft; compare Japanese/context before approval
+833,31/S3014.DAT,0x487A8,"チョピン
+戦闘での経験値が倍なるアクセサリーがあるようです。名前は<G:90>きぬのおび<G:89>。
+誰でも使えるようですね。",초핀: 전투 경험치를 두 배로 늘려 주는 장신구가 있다고 합니다. 이름은 「비단 띠」. 누구나 착용할 수 있습니다.,초핀: 전투 경험치를 두 배로 늘리는 장신구가 있다고 합니다. 이름은 「비단 띠」이며 누구나 착용할 수 있습니다.,초핀: 전투 경험치를 두 배로 늘리는 장신구가 있다고 합니다. 이름은 「비단 띠」이며 누구나 착용할 수 있습니다.,V354_SLOT_SHORTAGE,15,E0,needs_human_review,,Codex draft; compare Japanese/context before approval
+1705,6/S6054.DAT,0x450AC,"ラマダ僧
+スパイはどこにいた？",라마다승려: 스파이는 어디에 있었지?,라마다 승려: 스파이는 어디에 있었지?,라마다 승려: 스파이는 어디에 있었지?,V354_SLOT_SHORTAGE,0,D1,needs_human_review,,Codex draft; compare Japanese/context before approval
+1708,6/S6054.DAT,0x4519E,"ラマダ僧
+セーフデータのシンボルになつているのは？",라마다 승려: 세이브 데이터에 표시되는 문양은 무엇인가?,라마다 승려: 세이브 데이터의 문양은 무엇인가?,라마다 승려: 세이브 데이터의 문양은 무엇인가?,V354_SLOT_SHORTAGE,1,D2,needs_human_review,,Codex draft; compare Japanese/context before approval
+1711,6/S6054.DAT,0x4529A,"ラマダ僧
+スメリアのダウンタウンにいるよつっらいの名前は？",라마다 승려: 스메리아의 다운타운에 있는 네 녀석의 이름은?,라마다 승려: 스메리아 다운타운에 있는 술 취한 사람의 이름은?,라마다 승려: 스메리아 다운타운에 있는 술 취한 사람의 이름은?,V354_SLOT_SHORTAGE,2,D3,needs_human_review,,Codex draft; compare Japanese/context before approval
+1720,6/S6054.DAT,0x45580,"ラマダ僧
+首都の軍オフィスには、実は地下50階のダンジョンが・・",라마다 승려: 수도의 군 본부에는 사실 지하 50층 던전이...,라마다 승려: 수도의 군 본부에는 사실 지하 50층짜리 던전이...,라마다 승려: 수도의 군 본부에는 사실 지하 50층짜리 던전이...,V354_SLOT_SHORTAGE,3,D4,needs_human_review,,Codex draft; compare Japanese/context before approval
+1723,6/S6054.DAT,0x45686,"ラマダ僧
+遺跡ダンジョンの一番下にいるものは？",라마다 승려: 유적 던전의 가장 아래에 있는 것은?,라마다 승려: 유적 던전의 최하층에 있는 것은?,라마다 승려: 유적 던전의 최하층에 있는 것은?,V354_SLOT_SHORTAGE,4,D5,needs_human_review,,Codex draft; compare Japanese/context before approval
+1726,6/S6054.DAT,0x45778,"ラマダ僧
+ラマダ寺でとびらが開いたときに中に見える人の数は？",라마다 승려: 라마다 절에서 문이 열렸을 때 안에 보이는 사람의 수는?,라마다 승려: 라마다 사원의 문이 열렸을 때 안에 보이는 사람은 몇 명인가?,라마다 승려: 라마다 사원의 문이 열렸을 때 안에 보이는 사람은 몇 명인가?,V354_SLOT_SHORTAGE,5,D6,needs_human_review,,Codex draft; compare Japanese/context before approval
+1737,6/S6054.DAT,0x45B2C,"ラマダ僧
+私のもんだいに全て正解したのはおまえが2人めだ。ほうびにこれをやろう。",라마다승려: 문제를 모두 맞힌 건 네가 두 번째다. 상으로 이걸 주마.,라마다 승려: 내 문제를 모두 맞힌 사람은 네가 두 번째다. 상으로 이걸 주마.,라마다 승려: 내 문제를 모두 맞힌 사람은 네가 두 번째다. 상으로 이걸 주마.,V354_SLOT_SHORTAGE,6,D7,needs_human_review,,Codex draft; compare Japanese/context before approval
+1742,6/S6054.DAT,0x45D02,"ラマダ僧
+常に目的を持つて行動するがよい。",라마다 승려: 늘 목적을 가지고 행동하는 게 좋다.,라마다 승려: 항상 목적을 가지고 행동하도록 하거라.,라마다 승려: 항상 목적을 가지고 행동하도록 하거라.,V354_SLOT_SHORTAGE,7,D8,needs_human_review,,Codex draft; compare Japanese/context before approval
+1743,6/S6054.DAT,0x45D52,"ラマダ僧
+それはまちがいだが、がんばりはみとめよう。","라마다 승려: 그건 틀렸지만, 노력은 인정해 주마.","라마다 승려: 그건 틀렸지만, 노력은 인정해 주마.","라마다 승려: 그건 틀렸지만, 노력은 인정해 주마.",V354_SLOT_SHORTAGE,8,D9,needs_human_review,,Codex draft; compare Japanese/context before approval
+1744,6/S6054.DAT,0x45DA0,"ラマダ僧
+よつて、これをあげよう。",라마다 승려: 그러니 이걸 주마.,라마다 승려: 그러니 이것을 주마.,라마다 승려: 그러니 이것을 주마.,V354_SLOT_SHORTAGE,9,DA,needs_human_review,,Codex draft; compare Japanese/context before approval
+1746,6/S6054.DAT,0x45E2E,"ラマダ僧
+修行が足りないようだ。
+出直してくるがよい。",라마다 승려: 수행이 부족한 모양이구나. 다시 해 보는 게 좋겠다.,라마다 승려: 수행이 부족한 듯하구나. 다시 도전하도록 해라.,라마다 승려: 수행이 부족한 듯하구나. 다시 도전하도록 해라.,V354_SLOT_SHORTAGE,10,DB,needs_human_review,,Codex draft; compare Japanese/context before approval
+1747,6/S6054.DAT,0x45F00,"ラマダ僧
+よくがんばりましたね。これをさし上げましょう。",라마다 승려: 정말 잘했습니다. 이것을 드리겠습니다.,라마다 승려: 정말 잘하셨습니다. 이것을 드리겠습니다.,라마다 승려: 정말 잘하셨습니다. 이것을 드리겠습니다.,V354_SLOT_SHORTAGE,11,DC,needs_human_review,,Codex draft; compare Japanese/context before approval
+1752,6/S6054.DAT,0x460DE,"ラマダ僧
+これはこれは。
+ジャイアントバットバスターのかたがた。",라마다 승려: 이거 이거. 자이언트 배트 버스터 여러분.,"라마다 승려: 이런, 자이언트 배트 버스터 여러분이군요.","라마다 승려: 이런, 자이언트 배트 버스터 여러분이군요.",V354_SLOT_SHORTAGE,12,DD,needs_human_review,,Codex draft; compare Japanese/context before approval
+1756,6/S6054.DAT,0x4623C,"ラマダ僧
+これはこれは。
+デスフレイムバスターのかたがた。",라마다 승려: 이거 이거. 데스 플레임 버스터 여러분.,"라마다 승려: 이런, 데스 플레임 버스터 여러분이군요.","라마다 승려: 이런, 데스 플레임 버스터 여러분이군요.",V354_SLOT_SHORTAGE,13,DE,needs_human_review,,Codex draft; compare Japanese/context before approval
+1758,6/S6054.DAT,0x462E4,"ラマダ僧
+これはこれは。
+アシットスライムバスターのかたがた。",라마다 승려: 이거 이거. 애시드 슬라임 버스터 여러분.,"라마다 승려: 이런, 애시드 슬라임 버스터 여러분이군요.","라마다 승려: 이런, 애시드 슬라임 버스터 여러분이군요.",V354_SLOT_SHORTAGE,14,DF,needs_human_review,,Codex draft; compare Japanese/context before approval
+1760,6/S6054.DAT,0x46394,"ラマダ僧
+初めての挑戦ですね。それでは、ますは小手調ベということで。",라마다 승려: 처음 도전하시는군요. 그러면 우선 몸풀기부터 하도록 하지요.,라마다 승려: 처음 도전하시는군요. 우선 몸풀기부터 시작하지요.,라마다 승려: 처음 도전하시는군요. 우선 몸풀기부터 시작하지요.,V354_SLOT_SHORTAGE,15,E0,needs_human_review,,Codex draft; compare Japanese/context before approval
+1768,6/S6054.DAT,0x4663E,"ラマダ僧
+5度目の挑戦ですね。そろそろ、本気で闘つて下さい。",라마다 승려: 다섯 번째 도전이시군요. 슬슬 진심으로 싸워 주십시오.,라마다 승려: 다섯 번째 도전이시군요. 이제 진심으로 싸워 주십시오.,라마다 승려: 다섯 번째 도전이시군요. 이제 진심으로 싸워 주십시오.,V354_SLOT_SHORTAGE,16,E1,needs_human_review,,Codex draft; compare Japanese/context before approval
+1770,6/S6054.DAT,0x466E2,"ラマダ僧
+6度目の挑戦ですね。",라마다 승려: 여섯 번째 도전이시군요.,라마다 승려: 여섯 번째 도전이시군요.,라마다 승려: 여섯 번째 도전이시군요.,V354_SLOT_SHORTAGE,17,E2,needs_human_review,,Codex draft; compare Japanese/context before approval
+2480,C2/SC0B6.DAT,0x45CD4,"勝利回数10回の方には、
+ちょつとうれしい賞品がございます。
+がんばつて下さい。",승리 횟수 10회를 달성하신 분께는 조금 기쁜 상품이 있습니다. 힘내 주십시오.,승리 10회를 달성하신 분께는 특별한 상품을 드립니다. 힘내 주십시오.,승리 10회를 달성하신 분께는 특별한 상품을 드립니다. 힘내 주십시오.,V354_SLOT_SHORTAGE,0,D1,needs_human_review,,Codex draft; compare Japanese/context before approval
+2501,C2/SC0B6.DAT,0x463DC,"1000回までのこり<CTRL:E8:21>回です。
+あきらめないで、がんばつて下さい。",1000회까지 앞으로  회입니다. 포기하지 말고 힘내 주십시오.,1000회까지 앞으로 회입니다. 포기하지 말고 힘내 주십시오.,1000회까지 앞으로 {E8:21}회입니다. 포기하지 말고 힘내 주십시오.,V354_SLOT_SHORTAGE,1,D2,needs_human_review,,Codex draft; compare Japanese/context before approval
+2509,C2/SC0B6.DAT,0x466A0,<G:90>弱りの玉<G:89>を手にいれた。,약화의 구슬을 손에 넣었다.,약화의 구슬을 손에 넣었다.,약화의 구슬을 손에 넣었다.,V354_SLOT_SHORTAGE,2,D3,needs_human_review,,Codex draft; compare Japanese/context before approval
+2518,C2/SC0B6.DAT,0x46990,<G:90>パロの実<G:89>を手にいれた。,파로의 열매를 손에 넣었다.,파로의 열매를 손에 넣었다.,파로의 열매를 손에 넣었다.,V354_SLOT_SHORTAGE,3,D4,needs_human_review,,Codex draft; compare Japanese/context before approval
+2520,C2/SC0B6.DAT,0x46A24,<G:90>いのちの木の実<G:89>を手にいれた。,생명의 나무 열매를 손에 넣었다.,생명의 나무 열매를 손에 넣었다.,생명의 나무 열매를 손에 넣었다.,V354_SLOT_SHORTAGE,4,D5,needs_human_review,,Codex draft; compare Japanese/context before approval
+2529,C2/SC0B6.DAT,0x46D1A,<G:90>炎の守り<G:89>を手にいれた。,불꽃의 수호를 손에 넣었다.,불꽃의 수호를 손에 넣었다.,불꽃의 수호를 손에 넣었다.,V354_SLOT_SHORTAGE,5,D6,needs_human_review,,Codex draft; compare Japanese/context before approval
+2560,C2/SC0B6.DAT,0x476F0,<G:90>貝がら<G:89>を手にいれた。,조개껍데기를 손에 넣었다.,조개껍데기를 손에 넣었다.,조개껍데기를 손에 넣었다.,V354_SLOT_SHORTAGE,6,D7,needs_human_review,,Codex draft; compare Japanese/context before approval
+2572,C2/SC0B6.DAT,0x47AA0,<G:90>弱りの玉<G:89>を手にいれた。,약화의 구슬을 손에 넣었다.,약화의 구슬을 손에 넣었다.,약화의 구슬을 손에 넣었다.,V354_SLOT_SHORTAGE,7,D8,needs_human_review,,Codex draft; compare Japanese/context before approval
+2575,C2/SC0B6.DAT,0x47B72,<G:90>パロの実<G:89>を手にいれた。,파로의 열매를 손에 넣었다.,파로의 열매를 손에 넣었다.,파로의 열매를 손에 넣었다.,V354_SLOT_SHORTAGE,8,D9,needs_human_review,,Codex draft; compare Japanese/context before approval
+2576,C2/SC0B6.DAT,0x47BB6,<G:90>いのちの木の実<G:89>を手にいれた。,생명의 나무 열매를 손에 넣었다.,생명의 나무 열매를 손에 넣었다.,생명의 나무 열매를 손에 넣었다.,V354_SLOT_SHORTAGE,9,DA,needs_human_review,,Codex draft; compare Japanese/context before approval
+2579,C2/SC0B6.DAT,0x47C8A,<G:90>炎の守り<G:89>を手にいれた。,불꽃의 수호를 손에 넣었다.,불꽃의 수호를 손에 넣었다.,불꽃의 수호를 손에 넣었다.,V354_SLOT_SHORTAGE,10,DB,needs_human_review,,Codex draft; compare Japanese/context before approval
+2589,C2/SC0B6.DAT,0x47F4E,<G:90>貝がら<G:89>を手にいれた。,조개껍데기를 손에 넣었다.,조개껍데기를 손에 넣었다.,조개껍데기를 손에 넣었다.,V354_SLOT_SHORTAGE,11,DC,needs_human_review,,Codex draft; compare Japanese/context before approval
+2591,C2/SC0B6.DAT,0x47FD6,<G:90>バイオレットレーサー<G:89>を手にいれた。,바이올렛 레이서를 손에 넣었다.,바이올렛 레이서를 손에 넣었다.,바이올렛 레이서를 손에 넣었다.,V354_SLOT_SHORTAGE,12,DD,needs_human_review,,Codex draft; compare Japanese/context before approval

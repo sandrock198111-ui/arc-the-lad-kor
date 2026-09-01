@@ -1,0 +1,16 @@
+Arc the Lad 1 V356 legacy check_build lineage comparison
+base: arc1_v354_dialogue_identity_wording_repair_TEST_ONLY_2AA6C42A.zip
+final: arc1_v356_full_dialogue_bankb_REVIEW_ONLY_TEST_ONLY_17DC9646.zip
+
+choice marker warnings: V354 2, V356 2
+new marker warnings in V356: 0
+removed marker warnings in V356: 0
+
+choice width warnings: V354 71, V356 69
+new width warnings in V356: 0
+removed width warnings in V356:
+- 31/S3012.DAT 0x47FF0 row0 248px
+- 7/S7028.DAT 0x48B70 row0 242px
+
+The remaining 2 marker and 69 width warnings are inherited from V354. This file
+records set comparison only; it does not waive or reinterpret those inherited debts.

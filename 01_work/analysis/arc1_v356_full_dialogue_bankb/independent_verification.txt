@@ -1,0 +1,12 @@
+Arc the Lad 1 V356 independent static verification
+STATIC PASS / REVIEW_ONLY / RUNTIME PENDING / TEST_ONLY
+visible targets: 343/343
+choices: 134/134
+protected control tokens: 959
+already current in V354: 5
+non-text protected: 199/199
+changed members: 66/66
+Expected-Write bytes: 14976
+COMM.IMG: byte-identical; added VRAM: 0
+release blocker: 47 newly drafted Korean rows still require user review
+runtime: PENDING cold boot and representative traversal

@@ -1,3 +1,11 @@
+2026-09-02 - V356 전체 대화 Bank-B 실사용 REVIEW_ONLY 빌드
+- V354의 대화/UI/폰트 내용 기준선과 V355에서 사용자 콜드부팅으로 승인된 E2 Bank-B D1..EC handler를 결합했다. 실제 화면 대사로 확인된 343행/65 DAT를 재삽입했고 Bank-A 237슬롯, Bank-B 54슬롯을 사용했다. COMM.IMG는 byte exact이며 추가 VRAM 사용은 0바이트다.
+- `review_editor.py`가 199개 바이너리·외부표 거짓 양성을 읽기 전용 `비텍스트보호`로 고정하고 슬롯 계획에서 제외하도록 했다. canonical 2,878행은 미번역 0, 미지원 글리프 0, 슬롯 부족 0이다. 신규 초안 47행은 `B검수필요`와 `v356_bankb_review.csv`로 분리해 사용자 승인 전 배포할 수 없게 했다.
+- `generate_arc1_v356_full_targets.py`와 해시 고정 target/nontext/review ledger, `build_arc1_v356_full_dialogue_bankb.py`, 빌더를 import하지 않는 `verify_arc1_v356_full_dialogue_bankb.py`를 추가했다. 독립 검증은 화면 문장 343/343, 선택지 134/134, 구조 제어토큰 959개, Expected-Write 14,976바이트, 변경 멤버 66개를 확인했다.
+- 구 `check_build.py`가 신규 E2 D1..EC를 범위 밖으로 오인하던 문제를 수정했다. Bank-A의 A9 예약은 계속 거부하고 Bank-B는 승인 범위 D1..EC와 DAT `0x4200..0x4FFF`만 허용한다. V354/V356 경고 집합 전수 대조에서 신규 경고 0, 선택지 폭 경고 2개 개선을 확인했다.
+- full/delta SHA-256은 `17DC9646D172E38DF6EB49055C92B994293DE70AF7129CF155AD7067BF6DDF85` / `EC79FA53DEED117EC86B76C43FE518E4443FDA3DFE62C1AE9C92D1D12B507380`이다. `V356.bin`/cue SHA-256은 `5BBD9903874C5814B31275B6465B9717F8603CD6E6061AE141FFA5CE063EFB90` / `A98E43440BFE037187116977AD2304B096E2ADE5F27205E0AA220E47F0DD26C1`이고 v104 LBA 506/506·164/164 readback이 PASS했다.
+- 판정은 `STATIC PATCH PASS / DISC INTEGRITY PASS / REVIEW_ONLY / RUNTIME PENDING / TEST_ONLY`다. `bible_current.txt`의 승인 기준점은 V354 내용+V355 Bank-B에 유지하며, 47행 검수와 콜드부팅 대표 순회 뒤에만 V356 승격을 검토한다.
+
 2026-09-01 - V355 E2 Bank-B 비제로 적재 런타임 PoC 및 승인
 - V354 full ZIP, `02_scripts/review_editor.py`, 사용자가 편집 중인 `05_docs/script_translated_full.csv`를 고정하고 그대로 보존했다. V355는 편집 CSV의 47개 부족 문장을 삽입하는 실사용 빌드가 아니라, 새 Bank-B의 비제로 128바이트 payload가 장면 로딩 뒤 실제 파서까지 도달하는지만 확인하는 최소 TEST_ONLY 빌드다.
 - 표준 E2 Bank-A(81..A8, AA..D0)는 그대로 두고 신규 ID D1..EC를 DAT `0x4200..0x4FFF`의 28개×128바이트 Bank-B, RAM `0x800D3200..0x800D3FFF`에 대응시켰다. E2 handler는 기존 192바이트 봉투 `PSX.EXE file 0x754D0..0x7558F` 안에서만 교체했고, 바로 뒤 range-cursor gate `0x8018FD90`는 보존했다. COMM.IMG는 byte exact이므로 추가 VRAM 사용은 0바이트다.

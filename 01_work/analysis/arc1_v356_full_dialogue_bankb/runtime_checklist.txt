@@ -1,0 +1,7 @@
+V356 REVIEW_ONLY TEST_ONLY runtime checklist
+1. Cold boot V356; do not resume a pre-V356 RAM snapshot directly.
+2. Verify the first dialogue and advance to the next dialogue.
+3. Exercise tutorial/help choices, battle-entry choices, tournament choices, and prize choices.
+4. Verify E7 button and E8 dynamic-count lines still show their icon/number.
+5. Review the 47 rows marked B검수필요 in the editor; this build is not distributable before approval.
+6. Save states for any visual, timing, cursor, freeze, or wording defect.

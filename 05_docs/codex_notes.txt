@@ -1,6 +1,14 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 Date: 2026-07-09
 
+V356 전체 대화 Bank-B 재삽입 source-of-truth - 2026-09-02
+- canonical 2,878행 중 V354 화면과 다른 실제 대화 대상은 최종 343행/65 DAT다. 분류는 일반 `빌드대기` 162, `선택지` 134, 사용자 문장 검수가 필요한 `B검수필요` 47이다. 미번역과 미지원 글리프, 최종 슬롯 부족은 모두 0이다.
+- 종전의 미번역처럼 보이던 199행은 대화가 아니라 바이너리/외부표 거짓 양성이다. `v356_nontext_exclusions.csv`가 원본 해시·분류 이유를 고정하며 편집기는 이 행을 표시하되 수정·저장·슬롯 배치하지 않는다. 이 중 31행은 패치 ZIP의 164멤버 밖이므로 pristine `arc.zip`에서 byte exact를 확인한다.
+- V356은 V354 내용 기준선과 V355 런타임 승인 handler만 결합한다. E2 Bank-A는 81..A8, AA..D0(A9 예약), Bank-B는 D1..EC/DAT 0x4200..0x4FFF만 유효하다. 최종 참조는 A 237슬롯/B 54슬롯이고 COMM.IMG 및 VRAM 배치는 바꾸지 않는다.
+- target ledger는 canonical prose와 original raw hash만 보관한다. 빌더는 원본 구조 제어(E4/E5/E6/E7/E8)를 복원한 뒤 각 visible span만 쓰며, 선택지 제어 위치를 임의 재설계하지 않는다. 독립 verifier는 빌더를 import하지 않고 E2를 실제 슬롯에서 확장해 343개 화면 문장과 959개 구조 제어토큰을 되읽는다.
+- `check_build.py`의 과거 `slot_of()`는 D1..EC를 범위 밖으로 오인하고 A9도 Bank-A slot39로 잘못 허용했다. 확정 resolver는 81..A8/AA..D0/D1..EC 세 구간만 받고 A9 및 EC 초과를 거부한다. V354 경고 집합 대비 V356 신규 경고는 0이며 기존 선택지 폭 경고 71개 중 2개가 사라졌다.
+- V356 full ZIP SHA-256은 `17DC9646D172E38DF6EB49055C92B994293DE70AF7129CF155AD7067BF6DDF85`; 47개 초안 문장 검수와 콜드부팅 대표 순회 전에는 `REVIEW_ONLY / TEST_ONLY / RUNTIME PENDING`이다. 현재 승인 기준점은 계속 V354 내용+V355 Bank-B다.
+
 V355 E2 Bank-B runtime probe의 정적 확정 사실 - 2026-09-01
 - DAT `0x4200..0x4FFF`는 단순한 전역 빈 RAM이 아니라 현재 장면 DAT가 RAM `0x800D3200..0x800D3FFF`에 소유하는 조건부 영역이다. 151개 세이브 중 V354 critical-code 서명 일치 132개를 교차 조사했을 때 124개는 전부 0, 8개는 비제로였지만 비제로 상태에서 active DAT parser pointer가 살아 있는 사례는 0개였다. 따라서 충돌 없음은 강한 정적 근거이나, 비제로 Bank-B payload의 실제 적재 성공은 런타임 probe로만 확정한다.
 - Bank-B는 logical slot -2076..-2049, disk ID D1..EC, 28개×128바이트이며 주소는 `0x800D3200 + (id-D1)*0x80`이다. 기존 Bank-A의 81..A8 및 AA..D0 동작과 A9 예약은 그대로 유지한다. V354 active body와 중첩 payload의 D1..EC 실사용 충돌은 parser-aware 전수 검사에서 0개였다.

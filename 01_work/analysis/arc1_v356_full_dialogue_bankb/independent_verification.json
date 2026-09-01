@@ -1,0 +1,21 @@
+{
+  "verdict": "STATIC PASS / REVIEW_ONLY / RUNTIME PENDING / TEST_ONLY",
+  "full_sha256": "17DC9646D172E38DF6EB49055C92B994293DE70AF7129CF155AD7067BF6DDF85",
+  "delta_sha256": "EC79FA53DEED117EC86B76C43FE518E4443FDA3DFE62C1AE9C92D1D12B507380",
+  "archive_members": 164,
+  "changed_members": 66,
+  "target_rows": 343,
+  "target_files": 65,
+  "visible_text_matches": 343,
+  "choice_rows": 134,
+  "protected_control_tokens": 959,
+  "already_current_rows": 5,
+  "referenced_bank_a_slots": 237,
+  "referenced_bank_b_slots": 54,
+  "nontext_protected": 199,
+  "nontext_outside_patch_archive": 31,
+  "expected_writes": 14976,
+  "comm_byte_identical": true,
+  "additional_vram_bytes": 0,
+  "review_pending": 47
+}

@@ -1,0 +1,15 @@
+Arc the Lad 1 V356 full dialogue Bank-B review build
+status: STATIC CANDIDATE / REVIEW_ONLY / RUNTIME PENDING / TEST_ONLY
+base: arc1_v354_dialogue_identity_wording_repair_TEST_ONLY_2AA6C42A.zip
+full: arc1_v356_full_dialogue_bankb_REVIEW_ONLY_TEST_ONLY_17DC9646.zip
+full sha256: 17DC9646D172E38DF6EB49055C92B994293DE70AF7129CF155AD7067BF6DDF85
+delta: arc1_v356_full_dialogue_bankb_REVIEW_ONLY_TEST_ONLY_delta_from_v354_EC79FA53.zip
+delta sha256: EC79FA53DEED117EC86B76C43FE518E4443FDA3DFE62C1AE9C92D1D12B507380
+targets: 343 rows in 65 DAT files
+classification: {'빌드대기': 162, '선택지': 134, 'B검수필요': 47}
+non-text protected: 199 rows byte-identical
+slot allocations: Bank-A 237, Bank-B 54
+choice/control policy: original E5/E6/E4/E7/E8 offsets byte-identical
+additional VRAM: 0 bytes; COMM.IMG byte-identical
+release blocker: 47 draft translations require user review
+runtime: PENDING cold boot and representative dialogue/choice traversal

@@ -1,4 +1,4 @@
-"""V354 desktop dialogue editor with live, game-accurate constraints.
+"""V356 Bank-B review editor with live, game-accurate constraints.
 
 The browser tool is replaced because it could not be worked in; this is a plain Tk
 window, no server and no browser. Run it with:
@@ -32,6 +32,7 @@ writes only the Korean column, and keeps the previous file as `.editor.bak`.
 from __future__ import annotations
 
 import csv
+import hashlib
 import re
 import shutil
 import sys
@@ -51,6 +52,8 @@ from v354_dialogue_codec import (  # noqa: E402
 )
 
 TRANSLATED = ROOT / "05_docs/script_translated_full.csv"
+BANK_B_REVIEW = ROOT / "05_docs/v356_bankb_review.csv"
+NON_TEXT_EXCLUSIONS = ROOT / "05_docs/v356_nontext_exclusions.csv"
 ORIGINAL = ROOT / "05_docs/script_original_full.csv"
 PRISTINE = ROOT / "00_original/arc.zip"
 EXPORT = ROOT / "05_docs/dialogue_all.csv"
@@ -61,6 +64,19 @@ MIN_WINDOW_ROWS = 4        # V335 top/bottom dialogue Y supports four 16px rows
 REGISTER_REVIEW = ROOT / "05_docs/review_translation_by_story.csv"
 PROVENANCE = "source of the translation (existing / new)"
 VALID_PROVENANCE = {"", "existing", "new"}
+BANK_B_BASE = 0x4200
+BANK_B_COUNT = 28
+BANK_B_FIRST_ID = 0xD1
+BANK_REVIEW_FIELDS = (
+    "row_number", "source file", "offset", "japanese", "pre_v356_korean",
+    "draft_korean", "protected_template", "previous_constraint", "bank_b_slot",
+    "bank_b_id", "review_status", "approved_korean", "review_note",
+)
+NON_TEXT_FIELDS = (
+    "row_number", "source file", "offset", "length", "raw_sha256", "raw_hex",
+    "classification", "evidence", "write_policy",
+)
+NON_TEXT_COUNT = 199
 
 
 # A character with no code is not one problem but four, and they need different answers.
@@ -160,7 +176,10 @@ def active_slot_refs(body: bytes) -> set[int]:
 class Line:
     __slots__ = ("n", "file", "offset", "japanese", "korean", "proposal", "disc",
                  "capacity", "rows", "is_choice", "raw", "redirected",
-                 "current_slot", "provenance", "csv_issue", "mixed_register")
+                 "current_slot", "provenance", "csv_issue", "mixed_register",
+                 "bank_review", "bank_status", "bank_slot", "bank_id",
+                 "bank_template", "approved_korean", "bank_note",
+                 "nontext_protected", "nontext_classification")
 
     def __init__(self, n, row, raw, rows, disc="", mixed_register=False):
         self.n = n
@@ -179,12 +198,21 @@ class Line:
         self.provenance = (row.get(PROVENANCE) or "").strip()
         self.csv_issue = "" if self.provenance in VALID_PROVENANCE else self.provenance
         self.mixed_register = mixed_register
+        self.bank_review = False
+        self.bank_status = ""
+        self.bank_slot: int | None = None
+        self.bank_id: int | None = None
+        self.bank_template = ""
+        self.approved_korean = ""
+        self.bank_note = ""
+        self.nontext_protected = False
+        self.nontext_classification = ""
 
 
 class Editor:
     def __init__(self, master: tk.Tk) -> None:
         self.master = master
-        master.title("Arc the Lad 1 - V354 전체 대화 편집기")
+        master.title("Arc the Lad 1 - V356 Bank-B 전체 대화 검수 편집기")
         master.geometry("1500x880")
 
         self.load()
@@ -241,6 +269,48 @@ class Editor:
         with TRANSLATED.open(encoding="utf-8-sig", newline="") as handle:
             self.fieldnames = (reader := csv.DictReader(handle)).fieldnames
             self.rows = list(reader)
+
+        self.bank_review_rows: list[dict[str, str]] = []
+        self.bank_review_by_key: dict[tuple[str, str], dict[str, str]] = {}
+        self.bank_review_loaded_at: int | None = None
+        if BANK_B_REVIEW.exists():
+            self.bank_review_loaded_at = BANK_B_REVIEW.stat().st_mtime_ns
+            with BANK_B_REVIEW.open(encoding="utf-8-sig", newline="") as handle:
+                bank_reader = csv.DictReader(handle)
+                if tuple(bank_reader.fieldnames or ()) != BANK_REVIEW_FIELDS:
+                    raise RuntimeError("V356 Bank-B 검수 원장 열 구성이 달라졌습니다")
+                self.bank_review_rows = list(bank_reader)
+            for review_row in self.bank_review_rows:
+                key_ = (review_row["source file"], review_row["offset"])
+                if key_ in self.bank_review_by_key:
+                    raise RuntimeError(f"Bank-B 검수 원장 중복: {key_}")
+                self.bank_review_by_key[key_] = review_row
+            if len(self.bank_review_rows) != 47:
+                raise RuntimeError(
+                    f"Bank-B 검수 원장은 47줄이어야 합니다: {len(self.bank_review_rows)}"
+                )
+
+        if not NON_TEXT_EXCLUSIONS.exists():
+            raise RuntimeError(
+                "V356 비텍스트 보호 원장이 없습니다. "
+                "generate_arc1_v356_nontext_exclusions.py를 먼저 실행하세요"
+            )
+        with NON_TEXT_EXCLUSIONS.open(encoding="utf-8-sig", newline="") as handle:
+            nontext_reader = csv.DictReader(handle)
+            if tuple(nontext_reader.fieldnames or ()) != NON_TEXT_FIELDS:
+                raise RuntimeError("V356 비텍스트 보호 원장 열 구성이 달라졌습니다")
+            self.nontext_rows = list(nontext_reader)
+        if len(self.nontext_rows) != NON_TEXT_COUNT:
+            raise RuntimeError(
+                f"V356 비텍스트 보호 원장은 {NON_TEXT_COUNT}줄이어야 합니다: "
+                f"{len(self.nontext_rows)}"
+            )
+        self.nontext_by_key: dict[tuple[str, str], dict[str, str]] = {}
+        for protected in self.nontext_rows:
+            key_ = (protected["source file"], protected["offset"])
+            if key_ in self.nontext_by_key:
+                raise RuntimeError(f"비텍스트 보호 원장 중복: {key_}")
+            self.nontext_by_key[key_] = protected
         self.lines = []
         for n, row in enumerate(self.rows, start=1):
             name = row["source file"]
@@ -261,7 +331,38 @@ class Editor:
             line = Line(n, row, raw, rows_, disc, key_ in mixed)
             line.redirected = redirected
             line.current_slot = current_slot
+            review_row = self.bank_review_by_key.get((name, row["offset"]))
+            if review_row is not None:
+                line.bank_review = True
+                line.bank_status = review_row["review_status"]
+                line.bank_slot = int(review_row["bank_b_slot"])
+                line.bank_id = int(review_row["bank_b_id"], 16)
+                line.bank_template = review_row["protected_template"]
+                line.approved_korean = review_row["approved_korean"]
+                line.bank_note = review_row["review_note"]
+            protected = self.nontext_by_key.get((name, row["offset"]))
+            if protected is not None:
+                expected_raw = bytes.fromhex(protected["raw_hex"].replace(" ", ""))
+                if raw != expected_raw:
+                    raise RuntimeError(f"비텍스트 보호 raw 불일치: {name} {row['offset']}")
+                if hashlib.sha256(raw).hexdigest().upper() != protected["raw_sha256"]:
+                    raise RuntimeError(f"비텍스트 보호 해시 불일치: {name} {row['offset']}")
+                if line.korean:
+                    raise RuntimeError(f"비텍스트 보호 행에 번역문이 들어갔습니다: {name} {row['offset']}")
+                line.nontext_protected = True
+                line.nontext_classification = protected["classification"]
             self.lines.append(line)
+
+        missing_review = set(self.bank_review_by_key) - {
+            (line.file, line.offset) for line in self.lines
+        }
+        if missing_review:
+            raise RuntimeError(f"Bank-B 검수 원장이 가리키는 대화가 없습니다: {sorted(missing_review)}")
+        missing_nontext = set(self.nontext_by_key) - {
+            (line.file, line.offset) for line in self.lines if line.nontext_protected
+        }
+        if missing_nontext:
+            raise RuntimeError(f"비텍스트 보호 원장이 가리키는 행이 없습니다: {sorted(missing_nontext)}")
 
         self.lines_by_file: dict[str, list[Line]] = defaultdict(list)
         for line in self.lines:
@@ -272,6 +373,8 @@ class Editor:
         # are already outside safe capacity.
         fixed: dict[str, set[int]] = defaultdict(set)
         for line in self.lines:
+            if line.nontext_protected:
+                continue
             if not line.raw or line.file not in blobs:
                 continue
             offset = int(line.offset, 0)
@@ -293,7 +396,7 @@ class Editor:
         self.current = None
         self.file_box.configure(values=["(전체)"] + sorted({l.file for l in self.lines}))
         self.refresh()
-        self.status.configure(text=f"다시 읽음 — V354 {BUILD_SHA256[:8]}   "
+        self.status.configure(text=f"다시 읽음 — V354 화면 + V355 Bank-B   {BUILD_SHA256[:8]}   "
                                    f"코드맵 {len(self.table)}자, 한 줄 < {ROW_PIXELS}px, "
                                    f"창 높이 max(원문 줄 수, {MIN_WINDOW_ROWS})")
 
@@ -395,7 +498,7 @@ class Editor:
 
     def slot_plan_for_file(self, name: str,
                            overrides: dict[int, str] | None = None) -> dict:
-        """Plan the standard external slots from every proposal in one DAT.
+        """Plan standard Bank-A plus the runtime-approved Bank-B for one DAT.
 
         This is deliberately a final-plan calculation, not a count of zero blocks in
         V354.  A valid proposal that now fits inline releases its current safe slot;
@@ -405,12 +508,17 @@ class Editor:
         overrides = overrides or {}
         safe = set(self.safe_slots.get(name, set()))
         fixed = set(self.fixed_slot_refs.get(name, set()))
+        bank_b_capacity = BANK_B_COUNT if any(
+            line.bank_review for line in self.lines_by_file.get(name, [])
+        ) else 0
         retained: set[int] = set()
         held_safe: list[Line] = []
         held_legacy: list[Line] = []
         new_demand: list[Line] = []
 
         for line in self.lines_by_file.get(name, []):
+            if line.nontext_protected:
+                continue
             if line.is_choice:
                 continue
             text = overrides.get(line.n, line.proposal).strip()
@@ -440,30 +548,43 @@ class Editor:
 
         held_slots = {line.current_slot for line in held_safe}
         occupied = fixed | retained | held_slots
-        free_for_new = len(safe - occupied)
+        free_standard = sorted(safe - occupied)
 
         # Match the reinserter's stable file/offset order after preserving existing
         # assignments.  This makes the exact lines labelled shortage deterministic.
         new_demand.sort(key=lambda line: int(line.offset, 0))
-        newly_assigned = new_demand[:free_for_new]
-        shortage = new_demand[free_for_new:]
-        assigned = {
-            line.n for line in held_safe + held_legacy + newly_assigned
-        }
+        newly_standard = new_demand[:len(free_standard)]
+        remaining = new_demand[len(free_standard):]
+        newly_bank_b = remaining[:bank_b_capacity]
+        shortage = remaining[bank_b_capacity:]
+        assignment: dict[int, tuple[str, int, int]] = {}
+        for line in held_safe + held_legacy:
+            slot = int(line.current_slot)
+            disk = slot + (0x81 if slot < 40 else 0x82)
+            assignment[line.n] = ("A", slot, disk)
+        for line, slot in zip(newly_standard, free_standard):
+            disk = slot + (0x81 if slot < 40 else 0x82)
+            assignment[line.n] = ("A", slot, disk)
+        for slot, line in enumerate(newly_bank_b):
+            assignment[line.n] = ("B", slot, BANK_B_FIRST_ID + slot)
         return {
-            "capacity": len(safe),
+            "capacity": len(safe) + bank_b_capacity,
+            "standard_capacity": len(safe),
+            "bank_b_capacity": bank_b_capacity,
             "fixed": len(fixed),
             "retained": len(retained - fixed),
             "ordinary_demand": len(held_safe) + len(new_demand),
             "legacy_held": len(held_legacy),
-            "balance": free_for_new - len(new_demand),
-            "assigned": assigned,
+            "balance": len(free_standard) + bank_b_capacity - len(new_demand),
+            "assigned": set(assignment),
+            "assignment": assignment,
             "shortage": {line.n for line in shortage},
         }
 
     def recalculate_slot_plan(self) -> None:
         """Refresh cached slot states after any proposal changes."""
         self.slot_assigned: set[int] = set()
+        self.slot_assignment: dict[int, tuple[str, int, int]] = {}
         self.slot_shortage: set[int] = set()
         self.slot_stats: dict[str, dict] = {}
         self.slot_balance: dict[str, int] = {}
@@ -472,11 +593,15 @@ class Editor:
             self.slot_stats[name] = plan
             self.slot_balance[name] = plan["balance"]
             self.slot_assigned.update(plan["assigned"])
+            self.slot_assignment.update(plan["assignment"])
             self.slot_shortage.update(plan["shortage"])
 
     def review_reasons(self, line: Line, text: str) -> list[str]:
         """Return non-authoritative language-review hints for a row."""
         reasons: list[str] = []
+        if line.bank_review and not (
+                line.bank_status == "approved" and line.approved_korean == text):
+            reasons.append("V354 슬롯 부족 이력: V356 Bank-B 초안, 사용자 검수 필요")
         if line.csv_issue:
             reasons.append(f"CSV 열 분리 의심: 뒤쪽 값={line.csv_issue!r}")
         if line.mixed_register and text == line.korean:
@@ -507,6 +632,13 @@ class Editor:
             return "문체"
         return "표현"
 
+    @staticmethod
+    def bank_review_needed(line: Line, text: str | None = None) -> bool:
+        if not line.bank_review:
+            return False
+        value = line.proposal if text is None else text
+        return line.bank_status != "approved" or line.approved_korean != value
+
     def state_of(self, line: Line) -> str:
         """What stands between this line and the game, and what to do about it.
 
@@ -515,6 +647,8 @@ class Editor:
         line the game still draws in Japanese. They are separated here, because the
         first needs a build and the second needs room in its file.
         """
+        if line.nontext_protected:
+            return "비텍스트보호"
         if not line.korean:
             return "미번역"
         m = self.measure(line, line.proposal)
@@ -524,6 +658,8 @@ class Editor:
             return "줄넘침"
         if m["over_slot"]:
             return "슬롯초과"
+        if self.bank_review_needed(line):
+            return "B검수필요"
         if re.sub(r"[|\s]+", "", line.disc) == re.sub(r"[|\s]+", "", line.proposal):
             return "적용됨"
         if line.is_choice:
@@ -565,8 +701,8 @@ class Editor:
 
         ttk.Label(top, text="상태").pack(side="left")
         self.state_var = tk.StringVar(value="(전체)")
-        states = ["(전체)", "빌드대기", "슬롯부족", "줄넘침", "슬롯초과", "글자없음",
-                  "선택지", "미번역", "적용됨", "수정됨", "게임에 일본어",
+        states = ["(전체)", "B검수필요", "빌드대기", "슬롯부족", "줄넘침", "슬롯초과", "글자없음",
+                  "선택지", "미번역", "비텍스트보호", "적용됨", "수정됨", "게임에 일본어",
                   "검토후보", "문체혼합", "CSV열오류"]
         box = ttk.Combobox(top, textvariable=self.state_var, values=states,
                            width=10, state="readonly")
@@ -593,7 +729,7 @@ class Editor:
         cols = ("n", "file", "japanese", "disc", "proposal", "review", "state")
         self.tree = ttk.Treeview(holder, columns=cols, show="headings", selectmode="browse")
         for key, title, width in (("n", "행번호", 70), ("file", "파일", 110),
-                                  ("japanese", "원문", 320), ("disc", "V354 화면", 350),
+                                  ("japanese", "원문", 320), ("disc", "V354 현재 화면", 350),
                                   ("proposal", "내 수정안", 350), ("review", "검토", 70),
                                   ("state", "제약", 80)):
             self.tree.heading(key, text=title)
@@ -608,6 +744,8 @@ class Editor:
                             ("글자없음", "#ffe8cc"),
                             ("수정됨", "#d8f0d8"),
                             ("선택지", "#ececec"), ("미번역", "#f0f0f0"),
+                            ("비텍스트보호", "#d8d8d8"),
+                             ("B검수필요", "#c9f3ff"),
                              ("빌드대기", "#d8ecff"), ("슬롯부족", "#ffe0e0"),
                              ("적용됨", "#ffffff"), ("일본어", "#ffd0d0"),
                              ("검토후보", "#fff3b8"), ("문체혼합", "#eee4ff"),
@@ -644,21 +782,30 @@ class Editor:
         self.suggest_button = ttk.Button(row, text="공백 줄여 맞추기", command=self.take_suggestion)
         self.suggest_button.pack(side="left")
         ttk.Button(row, text="정리", command=self.tidy).pack(side="left", padx=6)
+        self.bank_approve_button = ttk.Button(
+            row, text="Bank-B 검수 승인", command=self.approve_bank_review
+        )
+        self.bank_approve_button.pack(side="left", padx=(6, 0))
+        self.bank_revoke_button = ttk.Button(
+            row, text="승인 취소", command=self.revoke_bank_review
+        )
+        self.bank_revoke_button.pack(side="left", padx=(6, 0))
         panes.add(lower, weight=1)
 
         self.status = ttk.Label(self.master, anchor="w", padding=(8, 2))
         self.status.pack(fill="x")
         self.status.configure(
-            text=f"기준: V354 {BUILD_SHA256[:8]}   코드맵 {len(self.table)}자   "
+            text=f"기준: V354 화면 {BUILD_SHA256[:8]} + V355 Bank-B 승인 구조   코드맵 {len(self.table)}자   "
                  f"한 줄 < {ROW_PIXELS}px (일반 {NORMAL_ADVANCE}px, 공백 {SPACE_ADVANCE}px)   "
                  f"창 높이 = max(원문 줄 수, {MIN_WINDOW_ROWS})   "
-                 "색: 노랑=표현 / 보라=문체 / 분홍=CSV 열 / 빨강·주황=제약")
+                 "색: 하늘=Bank-B 검수 / 노랑=표현 / 보라=문체 / 분홍=CSV 열 / 빨강·주황=제약")
 
     # ---------------------------------------------------------------- behaviour
 
     def capture_current(self) -> None:
         """Keep text typed in the edit box when the user changes rows or filters."""
-        if self.current is None or not hasattr(self, "edit"):
+        if self.current is None or not hasattr(self, "edit") \
+                or self.current.nontext_protected:
             return
         self.current.proposal = self.edit.get("1.0", "end-1c").strip()
 
@@ -706,7 +853,9 @@ class Editor:
             hard = state in {
                 "줄넘침", "슬롯초과", "글자없음", "슬롯부족", "미번역"
             }
-            tag = ("일본어" if line.disc == "(일본어 그대로)" else
+            tag = ("비텍스트보호" if state == "비텍스트보호" else
+                   "B검수필요" if state == "B검수필요" else
+                   "일본어" if line.disc == "(일본어 그대로)" else
                    "수정됨" if line.proposal != line.korean else
                    state if hard else
                    "CSV열오류" if review == "CSV" else
@@ -717,7 +866,10 @@ class Editor:
                 line.japanese.replace("\n", " ⏎ ")[:110],
                 line.disc[:110], line.proposal[:110], review, state))
         edited = sum(1 for l in self.lines if l.proposal != l.korean)
-        notin = sum(1 for l in self.lines if self.state_of(l) in ("빌드대기", "슬롯부족"))
+        notin = sum(1 for l in self.lines if self.state_of(l) in (
+            "B검수필요", "빌드대기", "슬롯부족"
+        ))
+        bank_pending = sum(self.bank_review_needed(line) for line in self.lines)
         review_count = sum(bool(self.review_reasons(l, l.proposal)) for l in self.lines)
         missing_chars = sorted({
             char
@@ -728,7 +880,7 @@ class Editor:
             text=f"보이는 줄 {len(self.view)} / 전체 {len(self.lines)}   "
                  f"수정 {edited}   검토 후보 {review_count}   "
                  f"미지원 글자 {len(missing_chars)}종   "
-                 f"슬롯 부족 {len(self.slot_shortage)}   게임 미반영 {notin}")
+                 f"B검수 {bank_pending}/47   슬롯 부족 {len(self.slot_shortage)}   게임 미반영 {notin}")
         if keep is not None and str(keep) in self.tree.get_children():
             self.tree.selection_set(str(keep))
 
@@ -748,8 +900,11 @@ class Editor:
             widget.delete("1.0", "end")
             widget.insert("1.0", text)
             widget.configure(state="disabled")
+        self.edit.configure(state="normal")
         self.edit.delete("1.0", "end")
         self.edit.insert("1.0", line.proposal)
+        if line.nontext_protected:
+            self.edit.configure(state="disabled")
         self.update_budget()
 
     def update_budget(self) -> None:
@@ -763,12 +918,14 @@ class Editor:
         balance_text = (f"{balance}개 남음" if balance >= 0
                         else f"{-balance}개 부족")
         slot_blocked = line.n in plan["shortage"]
+        assignment = plan["assignment"].get(line.n)
         mark = lambda bad: "X" if bad else "o"
         report = [
             f"행번호      {line.n}",
             f"파일        {line.file} {line.offset}",
             f"안전 슬롯   수정안 후 {balance_text}",
-            f"            용량 {plan['capacity']} / 물리 {SLOT_COUNT}",
+            f"            용량 {plan['capacity']}"
+            f" (Bank-A {plan['standard_capacity']} + Bank-B {plan['bank_b_capacity']})",
             f"            고정 {plan['fixed']} + 보류 {plan['retained']}"
             f" + 일반 수요 {plan['ordinary_demand']}",
             "",
@@ -782,6 +939,24 @@ class Editor:
             f"{'없는 글자: ' + ' '.join(m['missing']) if m['missing'] else '모두 있음'}",
             "",
         ]
+        if line.nontext_protected:
+            report += [
+                "비텍스트 보호: 번역 대상 아님",
+                f"분류: {line.nontext_classification}",
+                "정책: 원본 바이트 그대로 보존, 빌더 쓰기 금지",
+                "근거: test_log.txt:2025 / codex_notes.txt:1376-1378",
+                "",
+            ]
+        if line.bank_review:
+            report += [
+                "V354 슬롯 부족 이력: 있음",
+                f"Bank-B 검수: {line.bank_status or 'needs_human_review'}",
+                (f"실제 배정안: Bank-{assignment[0]} slot {assignment[1]} / "
+                 f"E2 {assignment[2]:02X}" if assignment else
+                 "실제 배정안: 제자리 또는 Bank-A; Bank-B 불필요"),
+                "승인된 문장과 현재 문장이 다르면 자동으로 재검수 대상입니다.",
+                "",
+            ]
         if not m["fits_inline"]:
             short = m["inline"] - line.capacity
             if (not any("가" <= char <= "힣" for char in text)
@@ -829,6 +1004,15 @@ class Editor:
         self.budget.insert("1.0", "\n".join(report))
         self.budget.configure(state="disabled")
         self.suggest_button.configure(state="normal" if m["over_rows"] else "disabled")
+        can_approve = (
+            line.bank_review and line.proposal == line.korean
+            and not m["missing"] and not m["over_rows"] and not m["over_slot"]
+            and (m["fits_inline"] or line.n in plan["assigned"])
+        )
+        self.bank_approve_button.configure(state="normal" if can_approve else "disabled")
+        self.bank_revoke_button.configure(
+            state="normal" if line.bank_review and line.bank_status == "approved" else "disabled"
+        )
 
     @staticmethod
     def wrap_note(note: str, width: int = 42) -> list[str]:
@@ -843,6 +1027,8 @@ class Editor:
 
     def tidy(self) -> None:
         """Take out what is not text: stray markers, control characters, smart quotes."""
+        if self.current is None or self.current.nontext_protected:
+            return
         text = self.edit.get("1.0", "end-1c")
 
         text = re.sub(r"<CTRL:?[^>]*>", "", text)
@@ -858,7 +1044,7 @@ class Editor:
         """Every line in scene order, with what the game draws beside what the CSV says."""
         self.capture_current()
         self.recalculate_slot_plan()
-        fields = ["행번호", "파일", "오프셋", "상태", "검토", "원문",
+        fields = ["행번호", "파일", "오프셋", "상태", "Bank-B 검수", "검토", "원문",
                   "디스크 (지금 게임)", "수정제안"]
         with EXPORT.open("w", encoding="utf-8-sig", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=fields)
@@ -866,20 +1052,21 @@ class Editor:
             for line in self.lines:
                 writer.writerow({"행번호": line.n, "파일": line.file, "오프셋": line.offset,
                                  "상태": self.state_of(line),
+                                 "Bank-B 검수": line.bank_status if line.bank_review else "",
                                  "검토": " / ".join(self.review_reasons(line, line.proposal)),
                                  "원문": line.japanese,
                                  "디스크 (지금 게임)": line.disc, "수정제안": line.proposal})
         messagebox.showinfo("내보내기", f"{len(self.lines)}줄을 {EXPORT.name} 에 썼습니다.")
 
     def apply(self) -> None:
-        if self.current is None:
+        if self.current is None or self.current.nontext_protected:
             return
         self.current.proposal = self.edit.get("1.0", "end-1c").strip()
         self.refresh()
         self.update_budget()
 
     def revert(self) -> None:
-        if self.current is None:
+        if self.current is None or self.current.nontext_protected:
             return
         self.current.proposal = self.current.korean
         self.edit.delete("1.0", "end")
@@ -888,10 +1075,103 @@ class Editor:
         self.update_budget()
 
     def take_suggestion(self) -> None:
-        if self.current is None:
+        if self.current is None or self.current.nontext_protected:
             return
         self.edit.delete("1.0", "end")
         self.edit.insert("1.0", self.suggest(self.current))
+        self.update_budget()
+
+    @staticmethod
+    def protected_template_for(line: Line, text: str) -> str:
+        """Reinsert the two protected runtime tokens without exposing bytes to prose."""
+        if "{E7:02}" in line.bank_template:
+            if "버튼" not in text:
+                raise ValueError("E7 아이콘 기준어 '버튼'이 없습니다")
+            return text.replace("버튼", "{E7:02}버튼", 1)
+        if "{E8:21}" in line.bank_template:
+            if "회입니다" not in text:
+                raise ValueError("E8 동적 숫자 기준어 '회입니다'가 없습니다")
+            return text.replace("회입니다", "{E8:21}회입니다", 1)
+        return text
+
+    def _write_bank_ledger(self) -> None:
+        if self.bank_review_loaded_at is None:
+            raise RuntimeError("Bank-B 검수 원장을 불러오지 못했습니다")
+        if BANK_B_REVIEW.stat().st_mtime_ns != self.bank_review_loaded_at:
+            raise RuntimeError("다른 곳에서 Bank-B 검수 원장이 바뀌었습니다")
+        backup = BANK_B_REVIEW.with_suffix(".csv.editor.bak")
+        shutil.copy2(BANK_B_REVIEW, backup)
+        temporary = BANK_B_REVIEW.with_suffix(".csv.editor.tmp")
+        try:
+            with temporary.open("w", encoding="utf-8-sig", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=BANK_REVIEW_FIELDS)
+                writer.writeheader()
+                writer.writerows(self.bank_review_rows)
+            temporary.replace(BANK_B_REVIEW)
+        finally:
+            if temporary.exists():
+                temporary.unlink()
+        self.bank_review_loaded_at = BANK_B_REVIEW.stat().st_mtime_ns
+
+    def approve_bank_review(self) -> None:
+        self.capture_current()
+        line = self.current
+        if line is None or not line.bank_review:
+            return
+        if line.proposal != line.korean:
+            messagebox.showerror("승인 중단", "먼저 저장한 뒤 Bank-B 검수를 승인해 주세요.")
+            return
+        measured = self.measure(line, line.proposal)
+        plan = self.slot_plan_for_file(line.file)
+        if measured["missing"] or measured["over_rows"] or measured["over_slot"] \
+                or (not measured["fits_inline"] and line.n not in plan["assigned"]):
+            messagebox.showerror("승인 중단", "글자·행·슬롯 제약을 먼저 해결해 주세요.")
+            return
+        try:
+            protected = self.protected_template_for(line, line.proposal)
+        except ValueError as error:
+            messagebox.showerror("승인 중단", str(error))
+            return
+        if not messagebox.askyesno(
+                "Bank-B 번역 승인",
+                "이 문장을 일본어 원문과 문맥까지 검수한 것으로 표시할까요?\n\n"
+                + line.proposal):
+            return
+        row = self.bank_review_by_key[(line.file, line.offset)]
+        row["draft_korean"] = line.proposal
+        row["protected_template"] = protected
+        row["review_status"] = "approved"
+        row["approved_korean"] = line.proposal
+        row["review_note"] = "human-approved in V356 review editor"
+        line.bank_template = protected
+        line.bank_status = "approved"
+        line.approved_korean = line.proposal
+        line.bank_note = row["review_note"]
+        try:
+            self._write_bank_ledger()
+        except RuntimeError as error:
+            messagebox.showerror("승인 저장 실패", str(error))
+            return
+        self.refresh()
+        self.update_budget()
+
+    def revoke_bank_review(self) -> None:
+        line = self.current
+        if line is None or not line.bank_review:
+            return
+        row = self.bank_review_by_key[(line.file, line.offset)]
+        row["review_status"] = "needs_human_review"
+        row["approved_korean"] = ""
+        row["review_note"] = "approval revoked in V356 review editor"
+        line.bank_status = row["review_status"]
+        line.approved_korean = ""
+        line.bank_note = row["review_note"]
+        try:
+            self._write_bank_ledger()
+        except RuntimeError as error:
+            messagebox.showerror("승인 취소 실패", str(error))
+            return
+        self.refresh()
         self.update_budget()
 
     def save(self) -> None:
@@ -900,6 +1180,13 @@ class Editor:
         self.capture_current()
         self.recalculate_slot_plan()
         changed = [l for l in self.lines if l.proposal != l.korean]
+        protected_changes = [line for line in changed if line.nontext_protected]
+        if protected_changes:
+            messagebox.showerror(
+                "저장 중단",
+                f"비텍스트 보호 행 {len(protected_changes)}개가 바뀌었습니다. "
+                "이 행은 번역하거나 게임에 쓸 수 없습니다.")
+            return
         # Both editors rewrite this file whole, from what they read at startup. If the
         # other one saved in the meantime, writing now would silently drop its work, so
         # refuse and say so rather than take the newer file's word for it.
@@ -913,6 +1200,13 @@ class Editor:
         if not changed:
             messagebox.showinfo("저장", "바뀐 줄이 없습니다.")
             return
+        if self.bank_review_loaded_at is not None \
+                and BANK_B_REVIEW.stat().st_mtime_ns != self.bank_review_loaded_at:
+            messagebox.showerror(
+                "저장 중단",
+                "이 편집기를 연 뒤에 Bank-B 검수 원장이 바뀌었습니다. "
+                "이 창을 닫고 다시 열어 주세요.")
+            return
         problems = {
             state: [line for line in changed if self.state_of(line) == state]
             for state in ("글자없음", "줄넘침", "슬롯초과", "슬롯부족")
@@ -923,6 +1217,30 @@ class Editor:
                 " / ".join(f"{state} {len(rows)}줄" for state, rows in problems.items())
                 + "\n\n게임에 바로 넣을 수 없는 초안이 포함됩니다. CSV에는 저장할까요?"):
             return
+
+        # Any prose edit invalidates its previous human approval.  Protected E7/E8
+        # controls are reconstructed from a named Korean anchor and never typed as raw
+        # bytes in the canonical CSV.
+        changed_bank = [line for line in changed if line.bank_review]
+        try:
+            protected = {
+                line.n: self.protected_template_for(line, line.proposal)
+                for line in changed_bank
+            }
+        except ValueError as error:
+            messagebox.showerror("저장 중단", f"Bank-B 제어 토큰 위치를 보존할 수 없습니다: {error}")
+            return
+        for line in changed_bank:
+            row = self.bank_review_by_key[(line.file, line.offset)]
+            row["draft_korean"] = line.proposal
+            row["protected_template"] = protected[line.n]
+            row["review_status"] = "needs_human_review"
+            row["approved_korean"] = ""
+            row["review_note"] = "edited after draft; human re-review required"
+            line.bank_template = row["protected_template"]
+            line.bank_status = row["review_status"]
+            line.approved_korean = ""
+            line.bank_note = row["review_note"]
         backup = TRANSLATED.with_suffix(".csv.editor.bak")
         shutil.copy2(TRANSLATED, backup)
         for line, row in zip(self.lines, self.rows):
@@ -939,6 +1257,14 @@ class Editor:
                 temporary.unlink()
         for line in self.lines:
             line.korean = line.proposal
+        if changed_bank:
+            try:
+                self._write_bank_ledger()
+            except RuntimeError as error:
+                messagebox.showerror(
+                    "Bank-B 원장 저장 실패",
+                    f"번역 CSV는 저장됐지만 검수 원장을 저장하지 못했습니다: {error}")
+                return
         self.loaded_at = TRANSLATED.stat().st_mtime_ns
         self.refresh()
         messagebox.showinfo(
@@ -967,6 +1293,10 @@ def self_test() -> None:
     assert wrapped_rows(SPACE_CODE * 38) == 2       # exactly 228px is already a wrap
     assert wrapped_rows(editor.table["가"] * 16) == 1
     assert wrapped_rows(editor.table["가"] * 17) == 2
+    states = [editor.state_of(line) for line in editor.lines]
+    assert states.count("비텍스트보호") == NON_TEXT_COUNT
+    assert states.count("미번역") == 0
+    assert all(not line.proposal for line in editor.lines if line.nontext_protected)
     missing = sorted({
         char
         for line in editor.lines
@@ -990,8 +1320,9 @@ def self_test() -> None:
     after = editor.slot_plan_for_file(sample_file, {sample.n: "가"})["balance"]
     assert after == before + 1
     print(
-        f"V354 dialogue editor PASS: rows={len(editor.lines)}, "
+        f"V356 dialogue editor PASS: rows={len(editor.lines)}, "
         f"encodable={len(editor.table)}, missing_unique={len(missing)}, "
+        f"nontext_protected={states.count('비텍스트보호')}, untranslated=0, "
         f"review_candidates={reviews}, csv_field_issues={csv_issues}, "
         f"slot_shortage={len(editor.slot_shortage)}, "
         f"{sample_file}_balance={before}/48"
