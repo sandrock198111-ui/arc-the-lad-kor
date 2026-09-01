@@ -1,0 +1,176 @@
+﻿member,file_offset,before,after,reason
+1/S1011.DAT,0x4200,00,27,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4201,00,DD,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4202,00,E7,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4203,00,A1,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4204,00,DD,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4205,00,A5,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4206,00,DD,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4207,00,01,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4208,00,1E,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4209,00,A1,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x420A,00,DD,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x420B,00,11,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x420C,00,DD,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x420D,00,5F,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x420E,00,A1,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x420F,00,DD,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4210,00,7F,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4211,00,46,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4212,00,70,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4213,00,06,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4214,00,A1,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4215,00,31,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4216,00,51,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4217,00,0F,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4218,00,A1,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4219,00,DD,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x421A,00,45,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x421B,00,B3,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x421C,00,A1,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x421D,00,29,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x421E,00,DD,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x421F,00,5C,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4220,00,0F,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4221,00,A1,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4222,00,DD,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4223,00,13,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4224,00,DD,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4225,00,8C,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x4226,00,21,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x427F,00,21,copy existing slot 14 to Bank-B D1 and redirect one caller
+1/S1011.DAT,0x478AB,8F,D1,copy existing slot 14 to Bank-B D1 and redirect one caller
+PSX.EXE,0x754D5,00,FF,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754D6,09,0A,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754D7,2D,25,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754D8,10,6C,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754DA,20,49,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754DB,15,2D,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754DC,A8,0F,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754DE,09,20,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754DF,2D,11,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754E0,07,58,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754E1,00,FF,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754E2,20,0B,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754E3,15,25,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754E4,58,0D,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754E5,FF,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754E6,0A,60,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754E7,25,11,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754E8,0C,A8,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754EA,40,09,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754EB,11,2D,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754EC,D0,04,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754EE,09,20,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754EF,2D,15,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754F0,0A,D0,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754F2,20,09,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754F3,11,2D,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754F4,7F,02,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754F5,FF,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754F6,08,20,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754F7,25,15,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754F8,02,FF,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754F9,00,FF,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754FA,00,4A,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754FB,10,25,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754FC,00,95,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754FD,00,F7,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754FE,00,4A,E2 Bank-B lookup/completion handler
+PSX.EXE,0x754FF,00,25,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75500,80,C0,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75501,FF,11,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75502,08,0A,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75503,25,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75504,C0,11,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75505,11,80,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75506,08,09,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75507,00,3C,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75508,11,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75509,80,40,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7550A,09,29,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7550B,3C,25,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7550C,00,08,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7550D,40,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7550E,29,E0,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7550F,25,03,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75514,08,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75516,E0,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75517,03,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7552C,00,01,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7552E,00,02,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7552F,00,34,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75534,00,11,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75535,00,80,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75536,00,0B,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75537,00,3C,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75538,81,7F,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75539,00,FF,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7553B,2D,25,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7553C,12,28,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7553E,40,4C,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7553F,15,2D,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75540,A9,09,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75542,2A,80,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75543,2D,15,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75544,07,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75546,40,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75547,15,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75548,57,56,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7554A,2B,2A,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7554C,0E,27,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7554E,60,4C,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7554F,11,2D,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75550,D1,05,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75552,2A,80,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75553,2D,15,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75554,0C,28,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75556,40,4A,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75557,11,25,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75558,7E,2F,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7555A,29,2A,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7555C,02,1C,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7555E,00,4C,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7555F,10,2D,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75560,00,09,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75562,00,80,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75563,00,11,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75564,7F,13,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75565,FF,F7,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75566,29,2A,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75569,49,51,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7556A,09,0A,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7556C,11,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7556D,80,40,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7556E,0A,6B,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7556F,3C,25,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75570,00,21,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75571,40,50,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75572,4A,4B,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75573,25,01,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75574,21,7F,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75575,48,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75576,2A,4B,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75577,01,91,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75578,7F,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7557A,2A,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7557B,91,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7557C,00,21,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7557D,00,40,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7557E,00,0B,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7557F,00,01,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75580,21,14,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75581,40,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75582,0A,08,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75583,01,AE,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75584,14,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75586,08,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75587,AE,00,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75588,01,91,E2 Bank-B lookup/completion handler
+PSX.EXE,0x75589,00,AF,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7558A,02,05,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7558B,34,08,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7558C,91,1F,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7558D,AF,80,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7558E,05,08,E2 Bank-B lookup/completion handler
+PSX.EXE,0x7558F,08,3C,E2 Bank-B lookup/completion handler

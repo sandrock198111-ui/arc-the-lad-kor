@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "runtime": "PENDING",
+  "full_sha256": "F8F2E26253BA05D72CD1C667A0F2047ABF189873FE65DC2433D42364CD93E032",
+  "changed_members": [
+    "1/S1011.DAT",
+    "PSX.EXE"
+  ],
+  "actual_changed_bytes": {
+    "1/S1011.DAT": 41,
+    "PSX.EXE": 134
+  },
+  "lookup_truth_table": "256/256",
+  "completion_truth_table": "256/256",
+  "load_delay_hazards": 0,
+  "base_live_bank_b_conflicts": 0,
+  "v355_live_bank_b_refs": 1,
+  "additional_vram_bytes": 0,
+  "runtime_acceptance": "cold boot, first dialogue identical, following dialogue proceeds"
+}

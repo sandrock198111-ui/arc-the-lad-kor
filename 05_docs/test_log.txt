@@ -1,3 +1,10 @@
+2026-09-01 | V355 E2 Bank-B 비제로 적재 런타임 probe | V354/편집기/사용자 CSV 해시 고정, D1..EC parser-aware 충돌 census, 192B E2 handler MIPS truth-table·load-delay·외부분기 검증, probe DAT slot/caller·Expected-Write·164 member diff, 결정적 2회 빌드, v104 ISO LBA 506/506·164/164 readback, codec/editor self-test | STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING / TEST_ONLY.
+- V354 active body의 D1..EC 참조는 0개였고 V355에서는 의도한 `1/S1011.DAT:0x478AA E2 D1` 한 곳뿐이다. lookup/completion truth table은 각각 256/256 일치, load-delay hazard 0, range-cursor gate `0x8018FD90`와 외부 인바운드 분기는 보존됐다.
+- `1/S1011.DAT` 표준 slot14의 128바이트와 Bank-B slot0가 byte exact이며 slot SHA-256은 `B9BCB916B04B1CD3A2679B907251A1B6DB4C7ECE4659736E06FD5B6FC4814A7A`, completion metadata는 `0x21`이다. full ZIP 2회 빌드 SHA-256은 모두 `F8F2E262...E032`, delta는 `C639036D...35A`였다.
+- 실제 변경은 `1/S1011.DAT` 41바이트와 `PSX.EXE` 134바이트뿐이며 COMM.IMG와 나머지 162멤버는 V354와 byte exact, 추가 VRAM은 0바이트다. `V355.bin`/cue는 `DDBE60C4...D5E` / `34453A7A...A35`, PSX.EXE LBA 268481·size 587776을 재현했다.
+- `v354_dialogue_codec.py`, `review_editor.py --self-test`가 PASS했고 현재 사용자 CSV 기준 editor 수치는 rows=2878, encodable=720, missing_unique=10, review_candidates=836, csv_field_issues=3, slot_shortage=47이다. 편집기와 사용자 CSV는 저장/변경하지 않았다.
+- 런타임 승인 조건은 완전 종료 뒤 `V355.cue` 콜드부팅, 새 게임 첫 `1/S1011` 문장이 기존과 시각적으로 같음, 다음 대사까지 정상 진행함이다. 이 두 조건 전에는 V355를 승격하지 않는다.
+
 2026-09-01 | V354 대화 편집기 동적 슬롯 계획/실행기 복구 | 원본-안전 79-slot census, current E2 owner 분석, 전체 수정안 수요 재계산, py_compile, editor self-test, 숨김 Tk 타이핑 preview, 한글/영문 CMD `--self-test` | PASS; TRANSLATION CSV/GAME DATA UNCHANGED.
 - `5/S5013.DAT`에서 원본-안전 슬롯 48개, 현재 최종 계획 수요 36개, 여유 12개를 재현했다. 현재 슬롯을 쓰는 유효 문장을 한 글자 제자리 문장으로 가상 변경하면 balance가 12→13으로 정확히 +1 되는 것을 self-test와 숨김 Tk 양쪽에서 확인했다.
 - 전체 2,878행 재계산 결과 `슬롯부족=69`: `31/S3014.DAT=16`(안전 용량16/수요32), `6/S6054.DAT=40`(안전 용량0/수요40), `C2/SC0B6.DAT=13`(안전 용량0/수요13). 종전 8파일 100줄 중 `5/S5013`, `21/S2045`, `6/S6014`, `D/SD031`, `7/S7012`의 거짓 부족은 해소됐다.

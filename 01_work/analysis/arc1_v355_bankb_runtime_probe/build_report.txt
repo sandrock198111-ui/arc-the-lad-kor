@@ -1,0 +1,12 @@
+Arc the Lad 1 V355 E2 Bank-B runtime probe
+status: STATIC CANDIDATE / RUNTIME PENDING / TEST_ONLY
+base: arc1_v354_dialogue_identity_wording_repair_TEST_ONLY_2AA6C42A.zip
+full: arc1_v355_bankb_runtime_probe_TEST_ONLY_F8F2E262.zip
+full sha256: F8F2E26253BA05D72CD1C667A0F2047ABF189873FE65DC2433D42364CD93E032
+delta: arc1_v355_bankb_runtime_probe_TEST_ONLY_delta_from_v354_C639036D.zip
+delta sha256: C639036DE29D467A81724CF4D728465A11EDABA40879C6F0C2388C26A8F1C35A
+changed members: 1/S1011.DAT, PSX.EXE
+actual changed bytes: PSX.EXE=134, 1/S1011.DAT=41
+additional VRAM: 0 bytes (COMM.IMG byte-identical)
+probe: 1/S1011.DAT 0x478AA E2 8F -> E2 D1; slot 14 copied byte-exact
+runtime acceptance: first new-game dialogue is visually identical and the next dialogue proceeds

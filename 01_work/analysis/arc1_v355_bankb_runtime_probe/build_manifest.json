@@ -1,0 +1,43 @@
+{
+  "version": "V355",
+  "status": "STATIC CANDIDATE / RUNTIME PENDING / TEST_ONLY",
+  "base": "03_output/arc1_v354_dialogue_identity_wording_repair_TEST_ONLY_2AA6C42A.zip",
+  "base_sha256": "2AA6C42AC1F62B5D1C7121F27B77807610C9E05D423C548429CB38653DF9C194",
+  "full_zip": "03_output/arc1_v355_bankb_runtime_probe_TEST_ONLY_F8F2E262.zip",
+  "full_sha256": "F8F2E26253BA05D72CD1C667A0F2047ABF189873FE65DC2433D42364CD93E032",
+  "delta_zip": "03_output/arc1_v355_bankb_runtime_probe_TEST_ONLY_delta_from_v354_C639036D.zip",
+  "delta_sha256": "C639036DE29D467A81724CF4D728465A11EDABA40879C6F0C2388C26A8F1C35A",
+  "changed_members": [
+    "1/S1011.DAT",
+    "PSX.EXE"
+  ],
+  "member_sha256": {
+    "1/S1011.DAT": "3D05B14E15D775E0F05D8F13B732BE3A542C24CDFE2484114692AF86D4B0A1C8",
+    "PSX.EXE": "18B6A3599A165A211AF9886213D2C62FE993CB96E531DAE1A6EAD6D8B28B588A"
+  },
+  "actual_changed_bytes": {
+    "1/S1011.DAT": 41,
+    "PSX.EXE": 134
+  },
+  "additional_vram_bytes": 0,
+  "handler": {
+    "ram_range": "0x8018FCD0..0x8018FD8F",
+    "file_range": "0x754D0..0x7558F",
+    "size": 192,
+    "sha256": "BD8FEE05BE81BACBE0207A94D4414B516052A728E8F53996CEBA1F76FADB8DFB",
+    "bank_b_ids": "D1..EC",
+    "bank_b_ram": "0x800D3200..0x800D3FFF",
+    "cursor_gate_first_address": "0x8018FD90 (unchanged)"
+  },
+  "probe": {
+    "member": "1/S1011.DAT",
+    "body_offset": "0x478AA",
+    "old_e2": "E2 8F",
+    "new_e2": "E2 D1",
+    "source_slot": 14,
+    "source_offset": "0x45700",
+    "bank_b_offset": "0x4200",
+    "payload_and_metadata_byte_exact": true,
+    "expected_visible_text": "3천 년이나 계속 타오르는 정령의 산, 시온의 불꽃."
+  }
+}

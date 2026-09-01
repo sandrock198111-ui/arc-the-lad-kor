@@ -1,3 +1,11 @@
+2026-09-01 - V355 E2 Bank-B 비제로 적재 런타임 PoC
+- V354 full ZIP, `02_scripts/review_editor.py`, 사용자가 편집 중인 `05_docs/script_translated_full.csv`를 고정하고 그대로 보존했다. V355는 편집 CSV의 47개 부족 문장을 삽입하는 실사용 빌드가 아니라, 새 Bank-B의 비제로 128바이트 payload가 장면 로딩 뒤 실제 파서까지 도달하는지만 확인하는 최소 TEST_ONLY 빌드다.
+- 표준 E2 Bank-A(81..A8, AA..D0)는 그대로 두고 신규 ID D1..EC를 DAT `0x4200..0x4FFF`의 28개×128바이트 Bank-B, RAM `0x800D3200..0x800D3FFF`에 대응시켰다. E2 handler는 기존 192바이트 봉투 `PSX.EXE file 0x754D0..0x7558F` 안에서만 교체했고, 바로 뒤 range-cursor gate `0x8018FD90`는 보존했다. COMM.IMG는 byte exact이므로 추가 VRAM 사용은 0바이트다.
+- 런타임 probe는 `1/S1011.DAT:0x478AA`의 `E2 8F`를 `E2 D1`로 바꾸고 기존 표준 slot14 전체 128바이트를 Bank-B 첫 슬롯으로 byte exact 복사했다. 화면 기대 문장은 `3천 년이나 계속 타오르는 정령의 산, 시온의 불꽃.`이며, 다음 대사로 정상 진행해야 승인된다.
+- 독립 verifier는 빌더를 import하지 않고 ZIP 변경 멤버/Expected-Write, 256개 ID lookup·completion truth table, MIPS load-delay, 외부 분기, D1..EC parser-aware census를 다시 계산해 PASS했다. 변경 멤버는 `1/S1011.DAT`(41바이트)와 `PSX.EXE`(134바이트)뿐이다.
+- full/delta SHA-256은 `F8F2E26253BA05D72CD1C667A0F2047ABF189873FE65DC2433D42364CD93E032` / `C639036DE29D467A81724CF4D728465A11EDABA40879C6F0C2388C26A8F1C35A`다. `V355.bin`/cue SHA-256은 `DDBE60C4E9933D38724AD735429C32ADDA67F466BF9D5520B2FC475686E11D5E` / `34453A7AD37458984B29019172858B71577029FE3395DFA3EABC6E4297A18A35`이고, v104 LBA 506/506 및 164/164 member readback이 PASS했다.
+- 판정은 `STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING / TEST_ONLY`다. 비제로 Bank-B의 실제 장면 적재는 정적으로 확정할 수 없으므로 `bible_current.txt`는 갱신하지 않는다.
+
 2026-09-01 - V354 대화 편집기 슬롯 여유 실시간 재계산
 - `02_scripts/review_editor.py`의 슬롯 판정을 현재 ZIP에서 0인 블록 수가 아니라, 원본 디스크에서 비어 있던 안전 슬롯·현재 E2 소유자·전체 수정안의 제자리/외부 슬롯 수요를 합산하는 최종 계획 방식으로 교체했다. 현재 슬롯 문장을 제자리로 줄이면 즉시 +1, 제자리 문장을 슬롯 길이로 늘리면 즉시 -1이 우측 예산 창에 반영된다.
 - 선택지와 특수 E2 소유자는 고정 예약하고, 글자없음·줄넘침·126바이트 초과 등 아직 빌드할 수 없는 현재 슬롯은 `보류`로 유지한다. 기존 슬롯은 우선 유지하며 새 슬롯은 파일/오프셋 순서로 안정적으로 배정해 실제 재삽입 계획과 같은 행을 `슬롯부족`으로 표시한다.

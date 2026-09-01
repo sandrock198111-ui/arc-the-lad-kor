@@ -1,0 +1,8 @@
+V355 TEST_ONLY runtime checklist
+1. Cold boot V355; do not resume a V354 RAM snapshot directly.
+2. Start a new game and reach the first 1/S1011 dialogue.
+3. Confirm the line is exactly:
+   3천 년이나 계속 타오르는 정령의 산, 시온의 불꽃.
+4. Advance and confirm the next dialogue appears normally.
+5. Save a state while the probe line is visible and another after advancing.
+6. Until both checks pass, keep V355 TEST_ONLY and do not promote it.
