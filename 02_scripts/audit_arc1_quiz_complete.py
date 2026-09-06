@@ -5,7 +5,7 @@ Writes only analysis JSON/Markdown. No translation or game changes.
 """
 from pathlib import Path
 from zipfile import ZipFile
-import csv,struct,json,hashlib,sys
+import csv,struct,json,hashlib,sys,io
 from extract_story_corpus import token_end
 from v354_dialogue_codec import tokens,load_v354
 from audit_arc1_v363_speaker_cursor import expand
@@ -17,7 +17,9 @@ PIN='2443DCCA0451372D4D7A6ACD8B593696EC52734FC467B42C2284EFD14995FEBF'
 sys.path.insert(0,str(ROOT/'01_work/tools/cursor_verify'))
 import unicorn as uc
 from unicorn import mips_const as m
-def main():
+def main(candidate_bytes=None, output_dir=None):
+    global AN
+    if output_dir is not None:AN=Path(output_dir)
     assert hashlib.sha256(BASE.read_bytes()).hexdigest().upper()==PIN
     with ZipFile(BASE) as z:d=z.read('6/S6054.DAT');exe=z.read('PSX.EXE')
     with ZipFile(ROOT/'00_original/arc.zip') as z:o=z.read('6/S6054.DAT')
@@ -39,6 +41,16 @@ def main():
         ptr=struct.unpack_from('<I',ram,0x1f9d58)[0]
         states.append(dict(slot=n,sha256=hashlib.sha256(p.read_bytes()).hexdigest(),title=p.read_bytes()[8:128].split(b'\0')[0].decode(),source_file_offset=hex((ptr&0x1fffff)-0xcf000)))
     captured=ram;entries=[];previous_end=0
+    if candidate_bytes is not None:
+        with ZipFile(io.BytesIO(candidate_bytes)) as z:
+            target=z.read('6/S6054.DAT')
+            assert z.read('PSX.EXE')==exe and len(target)==len(d)
+        patched=bytearray(captured)
+        for i,(a,b) in enumerate(zip(d,target)):
+            if a!=b:
+                assert 0x4395a<=i<0x45e50,(hex(i),'outside captured quiz text')
+                patched[0xcf000+i]=b
+        captured=bytes(patched);d=target
     for marker in range(0x43958,0x45e50,2):
         if marker<previous_end or o[marker:marker+2]!=b'\x19\0':continue
         at=marker+2;end=token_end(o,at)
@@ -89,6 +101,13 @@ def main():
                     if t==b'\xe5\x03':starts.append(pi+2);pi+=2
                     elif t!=b'\xe6\x01':pi+=1
                 if at==0x43b4e:starts=[1,4,7,10]
+                elif entry['choice_count']==4 and not starts:
+                    # Inline four-option layout without E5 indentation.
+                    starts=[0];pi=0
+                    for t in finalts:
+                        if t==b'\xe6\x01':starts.append(pi)
+                        else:pi+=1
+                    assert len(starts)==4
                 positions=[]
                 for selected in range(count):
                     run(0x8015a6e0,0x8015a728,s1=0x801f9d44,a0=selected)
@@ -130,9 +149,10 @@ def main():
         additional_same_header_four_choice_bodies=extra_four)
     result=dict(baseline_sha256=PIN,states=states,scope='S6054 event text 4395A..45E4F; 29-header + token boundaries + same consumer CPU. Full gameplay branch reachability not proven.',
                 counts=counts,questions=questions,entries=entries)
+    if candidate_bytes is not None:result['candidate_sha256']=hashlib.sha256(candidate_bytes).hexdigest().upper()
     AN.mkdir(parents=True,exist_ok=True);(AN/'audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
-    lines=['# 라마다사 퀴즈 V366 전수 목록 조사','',str(counts),'',
-        '원문 미변환 여부와 현재 CPU 배치를 대조한 조사이며 수정·빌드하지 않았다. 일본어 미리보기 표는 기존 글리프 매핑의 빈칸/오독을 포함하므로 번역 원문 확정으로 사용하지 않는다.',
+    lines=['# 라마다사 퀴즈 '+('후보 전체 CPU 검사' if candidate_bytes is not None else 'V366 전수 목록 조사'),'',str(counts),'',
+        '실제 CPU 출력 검사이며 전체 플레이 검증은 아니다. 일본어 미리보기 표는 기존 글리프 매핑의 빈칸/오독을 포함하므로 번역 원문 확정으로 사용하지 않는다.',
         '', '|번호|질문 주소|선택지 주소|질문 원문잔존|선택 원문잔존|후속 원문잔존|선택 커서 정렬|', '|---:|---|---|---|---|---|---|']
     for q in questions:lines.append(f"|{q['number']}|{q['question']}|{q['choices']}|{q['question_original']}|{q['choices_original']}|{q['followup_original']}|{q['choice_aligned']}|")
     lines+=['','## 전체 대사 주소와 배치','', '|주소|기존표 포함|원문동일|출력 행 Y|출력수|CPU 오류|','|---|---|---|---|---|---|']
