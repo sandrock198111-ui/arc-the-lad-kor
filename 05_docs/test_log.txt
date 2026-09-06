@@ -1,3 +1,8 @@
+2026-09-06 | V365_COMPACT_CHOICE_TEST | 정적/E2·이벤트·좌표CPU/디스크 PASS, GPU PENDING
+- 변경1DAT, 허용3쓰기/보호주소/글리프/ZIP재생성검사 PASS. State7/8 RAM복사본의 실제 E2슬롯조회/복귀, 이벤트4인자 읽기 및 양선택좌표4조건 PASS. 질문/선택지 모델3행, cursor top(60,50)/(60,66). 전체 텍스트GPU·입력·재진입은 미검증.
+- 빌더 첫실행 encode tuple 취급 오류로 출력전 실패 후 수정. CPU stop PC의 캐시블록 경계 문제는 도달주소 hook으로 검증기만 수정. 최종 legacy 실패 증가0. 원본새staging506LBA/164readback/507extent 동일, raw29변경/58 EDC·ECC PASS.
+- 01_work/analysis/v365_compact_choice/README.md에 재현/한계기록. bible_current 갱신 필요성 검토 후 기존 성공점 유지; changelog/확정사실 갱신. 원본/이전빌드/사용자세이브 미수정.
+
 2026-09-06 | V364_CURSOR_SPEAKER_TEST | 정적/좌표CPU/디스크 PASS, GPU PENDING
 - 빌더 고정7명령 기대값/양방향검산 및ZIP재생성exact. 독립전역diff/문구보존/변경118스트림64한도/29보류/COMM동일검사 PASS. 별도낮은주소 질문은2행 모델보존; GPU확인필요.
 - 두캡처×상하단×4기준행×4선택×3열 좌표CPU192 PASS. 실제첫둘째(60,66)/(60,82)예상. 입력 이동한도/취소/확정은 수정없으나 런타임재검증아님.
