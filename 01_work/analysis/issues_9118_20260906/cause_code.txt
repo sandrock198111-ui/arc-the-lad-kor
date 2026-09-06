@@ -1,0 +1,42 @@
+8016C530 addiu $sp, $sp, -0x20
+8016C534 sw $ra, 0x18($sp)
+8016C538 sw $zero, 0x10($sp)
+8016C53C ori $a0, $zero, 0x50
+8016C540 ori $a1, $zero, 0x6e
+8016C544 ori $a2, $zero, 0xa0
+8016C548 jal 0x8016c61c
+8016C54C ori $a3, $zero, 0x26
+8016C550 lw $ra, 0x18($sp)
+8016C554 nop 
+8016C760 addiu $sp, $sp, -0x20
+8016C764 sw $ra, 0x18($sp)
+8016C768 ori $v0, $zero, 6
+8016C76C sw $v0, 0x10($sp)
+8016C770 sw $zero, 0x14($sp)
+8016C774 ori $a1, $zero, 0x90
+8016C778 ori $a2, $zero, 0x1c
+8016C77C jal 0x8016c7cc
+8016C780 ori $a3, $zero, 8
+8016C784 lw $ra, 0x18($sp)
+8016C788 nop 
+8016C78C jr $ra
+8016C790 addiu $sp, $sp, 0x20
+80161A64 sw $zero, 0x10($sp)
+80161A68 ori $a0, $zero, 0x50
+80161A6C ori $a1, $zero, 0x67
+80161A70 ori $a2, $zero, 0xa0
+80161A74 jal 0x8016c61c
+80161A78 ori $a3, $zero, 0x34
+8018FD90 lui $t0, 0x801f
+8018FD94 lw $t1, -0x1fa8($t0)
+8018FD98 lhu $t2, -0x1fdc($t0)
+8018FD9C lui $t3, 0x801f
+8018FDA0 addiu $t3, $t3, 0x52bc
+8018FDA4 bne $t1, $t3, 0x8018fdbc
+8018FDA8 nop 
+8018FDAC bnez $t2, 0x8018fdbc
+8018FDB0 sw $a0, -0x18($sp)
+8018FDB4 j 0x801ff488
+8018FDB8 nop 
+8018FDBC j 0x80176e1c
+8018FDC0 nop 

@@ -1,0 +1,6693 @@
+{
+  "status": "STATIC PASS / RUNTIME PENDING / TEST_ONLY",
+  "zip": "E:\\korean\\03_output\\arc1_v359_review_all_final_TEST_ONLY.zip",
+  "sha256": "0C8482782890EB5A83C6D9A40A788177602E70A1D15C26AF49B7A4D9DA5A7D06",
+  "built": 208,
+  "held": 7,
+  "rows": [
+    {
+      "row": 67,
+      "file": "1/S1021.DAT",
+      "offset": "0x48CF8",
+      "before": "말을 걸거나 물면건을 찾을 때는 가까이 다가가 결정 버튼을 누르 돼.",
+      "target": "말을 걸거나 물건을 찾을 때는 가까이 다가가 버튼을 누르면 돼.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283008,
+          "before": "00000000000000000000000000",
+          "after": "67ddf70da1dd55703aa1ddcc21"
+        },
+        {
+          "at": 283135,
+          "before": "00",
+          "after": "04"
+        },
+        {
+          "at": 298232,
+          "before": "e2b6e60190671947",
+          "after": "1b0da1dd8e321ea1"
+        },
+        {
+          "at": 298241,
+          "before": "a1a1a1a1a1a1",
+          "after": "e6016ddd160d"
+        },
+        {
+          "at": 298248,
+          "before": "a1a1a1",
+          "after": "dd560d"
+        },
+        {
+          "at": 298252,
+          "before": "a1a1",
+          "after": "7706"
+        },
+        {
+          "at": 298255,
+          "before": "a1a1a1a1a1",
+          "after": "e6010c3b03"
+        },
+        {
+          "at": 298261,
+          "before": "a1a1a1",
+          "after": "010c0c"
+        },
+        {
+          "at": 298265,
+          "before": "a1a1a1a1",
+          "after": "e702e284"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601",
+        "e601",
+        "e702"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 140,
+      "file": "1/S1041.DAT",
+      "offset": "0x48378",
+      "before": "산의 정령: 약속에 따라 몬스터와 싸울 힘을 당신에게 드리겠습니다.",
+      "target": "산의 정령: 약속에 따라 몬스터와 싸울 힘을 당신에게 드리겠습니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 286737,
+          "before": "dd05a1643002dd18a1",
+          "after": "8fa164300288a1dd14"
+        },
+        {
+          "at": 286747,
+          "before": "14dd92a1740da1dd1c3e0e41a1dd232e542d070121",
+          "after": "92a1740da1dd1c3e0e41a1172e542d070121000000"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 208,
+      "file": "21/S2013.DAT",
+      "offset": "0x47E08",
+      "before": "듣기 좋구먼. 잠이 확 깨버렸어.",
+      "target": "이야, 술이 확 깨는구먼.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 294408,
+          "before": "e28902defae601",
+          "after": "0349b3a1dde503"
+        },
+        {
+          "at": 294416,
+          "before": "0520",
+          "after": "de2b"
+        },
+        {
+          "at": 294419,
+          "before": "1ca117a11aa105",
+          "after": "de460687ddc121"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 270,
+      "file": "21/S2034.DAT",
+      "offset": "0x47994",
+      "before": "대신: 흥! 계획은 조금 틀어졌지만, 너희들 덕분에 수고를 던 셈이군.",
+      "target": "대신: 흥! 계획은 조금 틀어졌지만, 너희들 덕분에 수고를 줄였군.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282794,
+          "before": "25a1de76dd017c21",
+          "after": "81de167c21000000"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 312,
+      "file": "21/S2042.DAT",
+      "offset": "0x48194",
+      "before": "초핀: 어느 나라든 언제든 몬스터와 싸울 수 있는 장소가 있습니다.",
+      "target": "초핀: 어느 나라든 언제든 몬스터와 싸울 수 있는 장소가 있습니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283014,
+          "before": "dd99a11e",
+          "after": "4da11e8f"
+        },
+        {
+          "at": 283019,
+          "before": "05dd26a1dd3066dd26a1643002",
+          "after": "26a1dd3066dd26a164300288a1"
+        },
+        {
+          "at": 283033,
+          "before": "18a1dd14dd92a150",
+          "after": "14dd92a150a11f06"
+        },
+        {
+          "at": 283042,
+          "before": "1f06a156dd070ca11f2d070121",
+          "after": "56dd070ca11f2d070121000000"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 339,
+      "file": "21/S2044.DAT",
+      "offset": "0x4821E",
+      "before": "당신, 지난번 그...",
+      "target": "당신, 지난번 그...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284677,
+          "before": "dd01a1dd930f",
+          "after": "04dd6a9ba115"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 341,
+      "file": "21/S2044.DAT",
+      "offset": "0x482BC",
+      "before": "지난번 같은 힘을 낼 수 있다면 발목을 잡지는 않을 거다.",
+      "target": "지난번 같은 힘을 낼 수 있다면 발목을 잡지는 않을 거다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283264,
+          "before": "dd01a1dd930fa174dd01a11f4e3a",
+          "after": "04dd6a9ba1dd5a26a1740da1de2c"
+        },
+        {
+          "at": 283279,
+          "before": "dd0edd330d",
+          "after": "50a11f013a"
+        },
+        {
+          "at": 283285,
+          "before": "de100406a1780da1320121000000000000",
+          "after": "dd0edd330da1de100406a1780da1320121"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 342,
+      "file": "21/S2044.DAT",
+      "offset": "0x4831A",
+      "before": "왔구나 왔어, 기다리고 있었지. 자네가 없으면 앞으로 힘들 테니 말이야.",
+      "target": "왔구나 왔어, 기다리고 있었지. 자네가 없으면 앞으로 힘들 테니 말이야.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 295706,
+          "before": "e28212681a12e60155",
+          "after": "dd88871ea1dd8814b3"
+        },
+        {
+          "at": 295716,
+          "before": "1d3fa11a3421e6013fdefa1b2005a105a13c23123adefae601073a05123a02defa",
+          "after": "24012e1ca11f610421a1287e0ca1714e3aa1ddba4ed5a1740aa1ddbe07a11b0349"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 347,
+      "file": "21/S2044.DAT",
+      "offset": "0x484C8",
+      "before": "그래. 내가 오래전 부터운명으로 이어진 영혼이지.",
+      "target": "그래. 먼 옛날의 여행 때부터 운명으로 이어진 영혼이지.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283525,
+          "before": "470c",
+          "after": "ddc1"
+        },
+        {
+          "at": 283528,
+          "before": "46dd124fa16c0286dd344edd04",
+          "after": "de4edd610fa11add31a1776c02"
+        },
+        {
+          "at": 283542,
+          "before": "dd0114dd3f",
+          "after": "86dd344ed5"
+        },
+        {
+          "at": 283548,
+          "before": "ddfade37dd01042100000000",
+          "after": "0314dd3fa1ddfade37030421"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 402,
+      "file": "21/S2045.DAT",
+      "offset": "0x48972",
+      "before": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "target": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 297368,
+          "before": "a150dd31a1",
+          "after": "34a150dd31"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 422,
+      "file": "21/S2045.DAT",
+      "offset": "0x490F0",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "target": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 299254,
+          "before": "7ba150dd31",
+          "after": "a150dd31a1"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 424,
+      "file": "21/S2045.DAT",
+      "offset": "0x491CE",
+      "before": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클이니까요...",
+      "target": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클이니까요...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 286882,
+          "before": "0e2538a11b03042c212121",
+          "after": "03073b2c21212100000000"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 428,
+      "file": "21/S2045.DAT",
+      "offset": "0x4935A",
+      "before": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "target": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 299880,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 434,
+      "file": "21/S2045.DAT",
+      "offset": "0x495D4",
+      "before": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "target": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284293,
+          "before": "dd054501a1347b0e2506a1dd35dd11ddf3",
+          "after": "8f4501340e2506a1dd35dd11ddf3d5a150"
+        },
+        {
+          "at": 284311,
+          "before": "04a150",
+          "after": "c50da1"
+        },
+        {
+          "at": 284315,
+          "before": "c50da1dd3fdd31190681b3",
+          "after": "3fdd31190681b3a155dd26"
+        },
+        {
+          "at": 284327,
+          "before": "55dd26a1dd18310da145",
+          "after": "dd18310da145dd1f3aa1"
+        },
+        {
+          "at": 284338,
+          "before": "1f3a",
+          "after": "9c0d"
+        },
+        {
+          "at": 284341,
+          "before": "dd9c0da150a11f06a1563e870c",
+          "after": "50a11f06a1563e870ca11f011c"
+        },
+        {
+          "at": 284355,
+          "before": "1f011ca1dd1d070121",
+          "after": "dd1d07012100000000"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 435,
+      "file": "21/S2045.DAT",
+      "offset": "0x4964A",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "target": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 300623,
+          "before": "dd054501a1347b0e25a1dd7cde2a",
+          "after": "8f4501340e25a1dd7cde2aa14006"
+        },
+        {
+          "at": 300638,
+          "before": "4006",
+          "after": "1826"
+        },
+        {
+          "at": 300641,
+          "before": "1826a109dddfa1de5b190438ea9f",
+          "after": "09dddfa1de5b190438ea9fa1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 436,
+      "file": "21/S2045.DAT",
+      "offset": "0x496A6",
+      "before": "초핀: 로맨싱 스톤의 위치를 알아냈습니다. 토우빌, 유적 던전, 고겐 님, 마지막은 아크 님 부친께 있던 듯합니다.",
+      "target": "초핀: 로맨싱 스톤의 위치를 알아냈습니다. 토우빌, 유적 던전, 고겐 님, 마지막은 아크 님 부친께 있던 듯합니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 300715,
+          "before": "dd04de08de26a130dd9a0da1",
+          "after": "d5de08de26a130dd9a0fa18e"
+        },
+        {
+          "at": 300728,
+          "before": "56dd2d2d070121a1833ddda7b3a18a",
+          "after": "1f36a1dd1e09dee82d070121a1833d"
+        },
+        {
+          "at": 300744,
+          "before": "09a1dd254fb3",
+          "after": "a7b3a18add09"
+        },
+        {
+          "at": 300751,
+          "before": "1cdda9a1dd2eb3a14504ddab26a10958a1dd2ea16cde89dd20a11fdd25a1de5b",
+          "after": "dd254fb3a11cdda9a1dd2eb3a14504ddab26a10958a1dd2ea16cde89dd20a11f"
+        },
+        {
+          "at": 300784,
+          "before": "1d070121a1a1a1a1a1",
+          "after": "25a1de5bdd1d070121"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 463,
+      "file": "22/S2046.DAT",
+      "offset": "0x485F4",
+      "before": "뭐, 무슨 무례한 짓을! 이분이 누군 아느냐.",
+      "target": "뭐, 무슨 무례한 짓을! 이분이 누군지 아느냐.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 286080,
+          "before": "e0e0e0e00d9ce0bd9cdf83e901e0a69ce0fde09fe0149ce04be0ace907e0a60f",
+          "after": "dd60b3a15fdda0a15fe93453a1de1c0da9000000000000000000000000000000"
+        },
+        {
+          "at": 286207,
+          "before": "16",
+          "after": "08"
+        },
+        {
+          "at": 296437,
+          "before": "9339",
+          "after": "9ca1"
+        },
+        {
+          "at": 296440,
+          "before": "defadefa",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 296445,
+          "before": "a9",
+          "after": "a1"
+        },
+        {
+          "at": 296448,
+          "before": "3ca13a0254a14da11aa1defadefa",
+          "after": "039203a1dd557c04a1094ddd5121"
+        },
+        {
+          "at": 296463,
+          "before": "21",
+          "after": "a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [
+        "e601",
+        "e43d",
+        "e43d"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 545,
+      "file": "22/S2052.DAT",
+      "offset": "0x47C8C",
+      "before": "아크: 하지만 그곳의 몬스터는 끝없이 나타나고 있습니다.",
+      "target": "아크: 하지만 그곳의 몬스터는 끝없이 나타나고 있습니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 285585,
+          "before": "26",
+          "after": "06"
+        },
+        {
+          "at": 285590,
+          "before": "dd01a11edd7f1e1ca11f2d070121",
+          "after": "03a11edd7f1e1ca11f2d07012100"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 562,
+      "file": "22/S2053.DAT",
+      "offset": "0x47B0E",
+      "before": "국왕: 그럼, 지난번에 꺼냈던 성궤 이야기를 마저 하자. 네가 찾아 주었으면 하는데...",
+      "target": "국왕: 그럼, 지난번에 꺼냈던 성궤 이야기를 마저 하자. 네가 찾아 주었으면 하는데...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282624,
+          "before": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "after": "dd0b6add02a115dd49b3a104dd6a9b0ea1de47dee8dd25a1dd17dd9ea103492436a145dd24a1192821a17e0ca1dd5609a140614e3aa1190681212121"
+        },
+        {
+          "at": 282751,
+          "before": "00",
+          "after": "37"
+        },
+        {
+          "at": 293646,
+          "before": "dd0b6add02",
+          "after": "e281a1a1a1"
+        },
+        {
+          "at": 293652,
+          "before": "15dd49b3",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 293657,
+          "before": "dd29dd4a",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 293662,
+          "before": "1b53",
+          "after": "a1a1"
+        },
+        {
+          "at": 293665,
+          "before": "dd17dd9e36",
+          "after": "a1a1a1a1a1"
+        },
+        {
+          "at": 293671,
+          "before": "7e0c",
+          "after": "a1a1"
+        },
+        {
+          "at": 293674,
+          "before": "dd5609",
+          "after": "a1a1a1"
+        },
+        {
+          "at": 293678,
+          "before": "40614e3a",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 293683,
+          "before": "190681212121",
+          "after": "a1a1a1a1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 574,
+      "file": "22/S2055.DAT",
+      "offset": "0x47A38",
+      "before": "국왕: 찬탈이라니. 이런 아이가 그런 말을...",
+      "target": "국왕: 찬탈이라니. 이런 아이가 그런 짓을...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 285568,
+          "before": "0000000000",
+          "after": "dd0b6add02"
+        },
+        {
+          "at": 285695,
+          "before": "00000000000000000000000000000000000000",
+          "after": "0103dd2aa109030ca115dd2aa1de1c0d212121"
+        },
+        {
+          "at": 285823,
+          "before": "00",
+          "after": "0f"
+        },
+        {
+          "at": 293433,
+          "before": "9516",
+          "after": "98a1"
+        },
+        {
+          "at": 293438,
+          "before": "faa1e9d909a1a121",
+          "after": "18de14038f0721a1"
+        },
+        {
+          "at": 293450,
+          "before": "3c02",
+          "after": "e299"
+        },
+        {
+          "at": 293453,
+          "before": "2c",
+          "after": "a1"
+        },
+        {
+          "at": 293455,
+          "before": "5fdefa205902",
+          "after": "a1a1a1a1a1a1"
+        },
+        {
+          "at": 293462,
+          "before": "2c",
+          "after": "a1"
+        },
+        {
+          "at": 293464,
+          "before": "defa21",
+          "after": "a1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e43d",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 594,
+      "file": "22/S2055.DAT",
+      "offset": "0x481EC",
+      "before": "병사: 예!",
+      "target": "병사: 예!",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 295409,
+          "before": "dda4a9",
+          "after": "97a9a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 601,
+      "file": "22/S2056.DAT",
+      "offset": "0x47AE6",
+      "before": "네. 아버지의 편지로 옛일을 쓴 전기가 있다는 것을 알게 되었습니다.",
+      "target": "네. 아버지의 편지로 옛일을 적은 고대의 기록이 있다는 것을 알게 되었습니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293617,
+          "before": "dd04a1de4e6b0da1deb1",
+          "after": "d5a1de4e6b0da1dd0926"
+        },
+        {
+          "at": 293628,
+          "before": "4f240c",
+          "after": "1c370f"
+        },
+        {
+          "at": 293632,
+          "before": "1f0106a1180da1dd1e41a173612d070121a1a1a1a1a1",
+          "after": "24dd7203a11f0106a1180da1dd1e41a173612d070121"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 640,
+      "file": "22/S205C.DAT",
+      "offset": "0x47DCC",
+      "before": "스메리아 왕: 대신 안델에게 속아 넘어간 것은 나였다.",
+      "target": "스메리아 왕: 대신 안델의 말에 넘어간 바로 나였다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282752,
+          "before": "e039e08fe098e09c9ce065df809ce029df4de03be0bf9ce05ae028e0ab9ce03ce098e07f9ce0cae0c10f9ce05ae028e09b9ce08ee0a39ce097e016e0cfe0a0e057e0c29ce0e99cdf45e0c10f",
+          "after": "30dd2c2e09a16add0200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 282879,
+          "before": "36",
+          "after": "04"
+        },
+        {
+          "at": 283264,
+          "before": "e039e08fe098e09c9ce065df809cdfd99ce09cdfbbe0a29ce066dedde09ce0ab9ce050e046e09ee099e0d69ce093df979cdf969ce013e0bf",
+          "after": "94dde90fa11b0e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283391,
+          "before": "29",
+          "after": "03"
+        },
+        {
+          "at": 283520,
+          "before": "e039e08fe098e09c9ce065df809ce029df4de0bf9ce0d6e09ee098e09ce9019ce093df97e0639ce0e0df1be0c10f0f0f",
+          "after": "dd08d5a11ede160121000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283647,
+          "before": "24",
+          "after": "04"
+        },
+        {
+          "at": 294348,
+          "before": "30dd2c2e09",
+          "after": "e282a1a1a1"
+        },
+        {
+          "at": 294354,
+          "before": "6add02a1373ea194dde90e41a1dd5f09a1ddf414dd1b",
+          "after": "e601373ea1e41fe286a1a1a1e41fe601ddf414dd1ba1"
+        },
+        {
+          "at": 294377,
+          "before": "1826a11ede160121",
+          "after": "e41fe288a1a1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e41f",
+        "e41f",
+        "e601",
+        "e41f"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 719,
+      "file": "31/S3012.DAT",
+      "offset": "0x48194",
+      "before": "초핀: 어느 나라든 언제든 몬스터와 싸울 수 있는 장소가 있습니다.",
+      "target": "초핀: 어느 나라든 언제든 몬스터와 싸울 수 있는 장소가 있습니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284550,
+          "before": "dd99a11e",
+          "after": "4da11e8f"
+        },
+        {
+          "at": 284555,
+          "before": "05dd26a1dd3066dd26a1643002",
+          "after": "26a1dd3066dd26a164300288a1"
+        },
+        {
+          "at": 284569,
+          "before": "18a1dd14dd92a150",
+          "after": "14dd92a150a11f06"
+        },
+        {
+          "at": 284578,
+          "before": "1f06a156dd070ca11f2d070121",
+          "after": "56dd070ca11f2d070121000000"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 721,
+      "file": "31/S3012.DAT",
+      "offset": "0x4823C",
+      "before": "초핀: 그곳의 몬스터는 이야기가 진행되어도 강해지지 않으니, 수련할 사람의 수준에 맞춰 장소를 고르세요.",
+      "target": "초핀: 그곳의 몬스터는 이야기가 진행되어도 강해지지 않으니, 수련할 사람의 수준에 맞춰 장소를 고르세요.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284429,
+          "before": "26",
+          "after": "06"
+        },
+        {
+          "at": 284431,
+          "before": "dd0149240ca1dd3fdd31731433a1dd282b",
+          "after": "0349240ca1dd3fdd31731433a1dd282b04"
+        },
+        {
+          "at": 284449,
+          "before": "04a1784e07b3a150ddc57da134dd220fa150dd6f0ea1ddb1deaca156dd0736a11c708c2c21",
+          "after": "a1784e07b3a150ddc57da134dd220fa150dd6f0ea1ddb1deaca156dd0736a11c708c2c2100"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 743,
+      "file": "31/S3013.DAT",
+      "offset": "0x48430",
+      "before": "승무원: 요도 증식하면 HP가 절반으로 줄지만, 처치했을 때 얻는 경험치는 그대로입니다",
+      "target": "승무원: 요수도 증식하면 HP가 절반으로 줄지만, 처치했을 때 얻는 경험치는 그대로입니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282631,
+          "before": "33a1de09ddb5193aa1de62de070ca1dddadd464edd04",
+          "after": "5033a1de09ddb5193aa1de62de070ca1dddadd464ed5"
+        },
+        {
+          "at": 282683,
+          "before": "dd047f0701",
+          "after": "d57f070121"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 797,
+      "file": "31/S3014.DAT",
+      "offset": "0x47996",
+      "before": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "target": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293308,
+          "before": "a150dd31a1",
+          "after": "34a150dd31"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 817,
+      "file": "31/S3014.DAT",
+      "offset": "0x48114",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "target": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 295194,
+          "before": "7ba150dd31",
+          "after": "a150dd31a1"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 823,
+      "file": "31/S3014.DAT",
+      "offset": "0x4837E",
+      "before": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "target": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 295820,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 829,
+      "file": "31/S3014.DAT",
+      "offset": "0x485F8",
+      "before": "초핀: 라마다사에서는 단계별 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "target": "초핀: 라마다사에서는 단계별 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284293,
+          "before": "dd054501a1347b0e2506a1dd35dd11ddf3a150ddc50da1dd3fdd31190681b3a155",
+          "after": "8f4501340e2506a1dd35dd11ddf3a150ddc50da1dd3fdd31190681b3a155dd26a1"
+        },
+        {
+          "at": 284327,
+          "before": "26a1dd18310da145dd1f3aa1dd9c0da150",
+          "after": "18310da145dd1f3aa1dd9c0da150a11f06"
+        },
+        {
+          "at": 284345,
+          "before": "1f06a1563e870ca11f011ca1dd1d070121",
+          "after": "563e870ca11f011ca1dd1d070121000000"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 830,
+      "file": "31/S3014.DAT",
+      "offset": "0x4866E",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "target": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 296563,
+          "before": "dd054501a1347b0e25a1dd7cde2a",
+          "after": "8f4501340e25a1dd7cde2aa14006"
+        },
+        {
+          "at": 296578,
+          "before": "4006",
+          "after": "1826"
+        },
+        {
+          "at": 296581,
+          "before": "1826a109dddfa1de5b190438ea9f",
+          "after": "09dddfa1de5b190438ea9fa1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 831,
+      "file": "31/S3014.DAT",
+      "offset": "0x486CA",
+      "before": "초핀: 로맨싱 스톤의 위치를 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "target": "초핀: 로맨싱 스톤의 위치를 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 296655,
+          "before": "dd04de08de26a130dd9a0da1",
+          "after": "d5de08de26a130dd9a0fa18e"
+        },
+        {
+          "at": 296668,
+          "before": "56dd2d2d070121a1833ddda7dd18a109dd05dd058330a18add09a1",
+          "after": "1f36a1dd1e09dee82d070121a1833ddda7dd18a1098f8f8330a18a"
+        },
+        {
+          "at": 296696,
+          "before": "254f0ea1191edf6bb3a1a1a1",
+          "after": "09a1dd254f0ea1191edf6bb3"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 848,
+      "file": "31/S3022.DAT",
+      "offset": "0x481CC",
+      "before": "아이: 할아버지, 나도 이야기하게 해 줘.",
+      "target": "아이: 할아버지, 나도 이야기하게 해 줘.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 295372,
+          "before": "e2bab316e6013fa105a1",
+          "after": "0903dd02a17d096704b3"
+        },
+        {
+          "at": 295383,
+          "before": "a121",
+          "after": "1e33"
+        },
+        {
+          "at": 295386,
+          "before": "1a1b18a13f13a11ba1251d",
+          "after": "0349241941a12ba1ddea21"
+        },
+        {
+          "at": 295398,
+          "before": "21",
+          "after": "a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 891,
+      "file": "31/S3023.DAT",
+      "offset": "0x483BC",
+      "before": "남자: 토요케의 숲은 예전에는 은혜의 숲이라 불렸고, 국민의 신앙 대상이었습니다만...",
+      "target": "남자: 토요케의 숲은 예전에는 은혜의 숲이라 불렸고, 국민의 신앙 대상이었습니다만...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282773,
+          "before": "ddfedd2f0fa1dd97dd01",
+          "after": "26dd4b0fa1dd97038fa1"
+        },
+        {
+          "at": 282784,
+          "before": "05a1dd13dd9b1cb3a1dd0bddecdd01",
+          "after": "13dd9b1cb3a1dd0bddec0fa13edef9"
+        },
+        {
+          "at": 282800,
+          "before": "dddb06a1378bdd01612d070138212121",
+          "after": "378b03612d0701382121210000000000"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 908,
+      "file": "31/S3024.DAT",
+      "offset": "0x46096",
+      "before": "병사|이 나라는 20년 전에|스메리아와 전쟁했지.",
+      "target": "병사|이 나라는 20년 전에|스메리아와 전쟁했지.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282752,
+          "before": "e00ee0a59ce0bddfac9ce03be0a0e0429ce06b9ce0f1e0d90f",
+          "after": "8234a103a11e8f06a10b91dda5a14f0e000000000000000000"
+        },
+        {
+          "at": 282879,
+          "before": "13",
+          "after": "00"
+        },
+        {
+          "at": 286870,
+          "before": "8234",
+          "after": "e282"
+        },
+        {
+          "at": 286874,
+          "before": "0b91dda5a14f",
+          "after": "30dd2c2e0988"
+        },
+        {
+          "at": 286882,
+          "before": "30dd2c2e0988a14fde31",
+          "after": "4fde31dd0f0421a1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 913,
+      "file": "31/S3024.DAT",
+      "offset": "0x46262",
+      "before": "노인|괴물이 나타난 뒤론|군에서 식량을 사야 해.",
+      "target": "노인|괴물이 나타난 뒤론|군에서 식량을 사야 해.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282880,
+          "before": "e00ee0a59ce0cbe0419ce0d6e09ee098e09c9cdfa9e07fe0bb0f9ce907e02a9cdfd59ce0cee0bf9ce0b2e096e9019ce0cae099e047",
+          "after": "dd5735a1dd756d03a11edd7fdd6a000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283007,
+          "before": "32",
+          "after": "01"
+        },
+        {
+          "at": 287330,
+          "before": "dd5735",
+          "after": "e283a1"
+        },
+        {
+          "at": 287335,
+          "before": "dd756d",
+          "after": "4bdf30"
+        },
+        {
+          "at": 287339,
+          "before": "4bdf30",
+          "after": "7c0e25"
+        },
+        {
+          "at": 287344,
+          "before": "7ca1ddb5d20da13449a12b21",
+          "after": "ddb5d20da13449a12b21a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 955,
+      "file": "31/S3024.DAT",
+      "offset": "0x46FFA",
+      "before": "남자: 토요케의 숲은 예전에는 은혜의 숲이라 불렸고, 국민의 신앙 대상이었습니다만...",
+      "target": "남자: 토요케의 숲은 예전에는 은혜의 숲이라 불렸고, 국민의 신앙 대상이었습니다만...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283008,
+          "before": "e00ee0a59ce0d6e09ee098e09c9ce0ede0a6e0479ce057dfa69cdfa4e0369ce0f2e026e0bde0da0f00000000000000000000000000000000000000",
+          "after": "dd3d28dd02a1832cddf80fa1dd9726a1974f0e06a126dd4b0fa1dd97038fa1dd13dd9b1cb3a1dd0bddec0fa13edef9a1378b03612d070138212121"
+        },
+        {
+          "at": 283135,
+          "before": "24",
+          "after": "35"
+        },
+        {
+          "at": 290811,
+          "before": "86e60130defa30defa02df68132112071d13663b02df68",
+          "after": "84a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+        },
+        {
+          "at": 290837,
+          "before": "232133defa02defa3c2c02defa1b042c",
+          "after": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+        },
+        {
+          "at": 290855,
+          "before": "1a02112a20defadefa21",
+          "after": "a1a1a1a1a1a1a1a1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1006,
+      "file": "32/S3051.DAT",
+      "offset": "0x48E70",
+      "before": "이 근처에서 사라졌는데 말이야...",
+      "target": "이 근처에서 사라졌는데 말이야...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 298608,
+          "before": "dd01",
+          "after": "03a1"
+        },
+        {
+          "at": 298616,
+          "before": "34dd05",
+          "after": "a1348f"
+        },
+        {
+          "at": 298625,
+          "before": "dd0149",
+          "after": "034921"
+        },
+        {
+          "at": 298630,
+          "before": "21",
+          "after": "a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1028,
+      "file": "32/S3061.DAT",
+      "offset": "0x480EC",
+      "before": "은혜의 정령: 인간의 미래를 지키기 위해서요.",
+      "target": "은혜의 정령: 인간의 미래를 지키기 위해서요.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284053,
+          "before": "71de0f04",
+          "after": "04ddb324"
+        },
+        {
+          "at": 284058,
+          "before": "7824a18e2b252c21",
+          "after": "8e2b252c21000000"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1036,
+      "file": "32/S3061.DAT",
+      "offset": "0x48396",
+      "before": "은혜의 정령: 당신의 아버지가 나아갈 길을 알려 줄 겁니다.",
+      "target": "은혜의 정령: 당신의 아버지가 나아갈 길을 알려 줄 겁니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284416,
+          "before": "e0bfeacce09b9ce0ebe0eedf809ce029e098e07f9ce029e0d69ce06ae0889ce0bd9ce05be09ae9",
+          "after": "26dd4b0fa13151dd02a1dd1c3e0fa10967040ca11e09dda6a1dd950da1dd1e3ca1dd81a1ddee07"
+        },
+        {
+          "at": 284456,
+          "before": "9cdfa0e0c8e02fe0a09ce901e0c29ce013e09f9ce0e6e04ae0c4e07f9ce0cadffde0a2e0660f",
+          "after": "2100000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 284543,
+          "before": "37",
+          "after": "25"
+        },
+        {
+          "at": 295830,
+          "before": "26dd4b0f",
+          "after": "e28fa1a1"
+        },
+        {
+          "at": 295835,
+          "before": "3151dd02",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 295840,
+          "before": "dd1c3e0f",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 295845,
+          "before": "0967040c",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 295850,
+          "before": "dd95de10dd0136",
+          "after": "a1a1a1a1a1a1a1"
+        },
+        {
+          "at": 295858,
+          "before": "601a",
+          "after": "a1a1"
+        },
+        {
+          "at": 295861,
+          "before": "dd81",
+          "after": "a1a1"
+        },
+        {
+          "at": 295864,
+          "before": "ddee070121",
+          "after": "a1a1a1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1048,
+      "file": "32/S3063.DAT",
+      "offset": "0x47D88",
+      "before": "은혜의 정령: 그는 그곳에서 너희의 역사를 계속 지켜보고 있었단다.",
+      "target": "은혜의 정령: 그는 그곳에서 당신들의 역사를 계속 지켜보고 있었어요.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283149,
+          "before": "dd350121",
+          "after": "142c2100"
+        },
+        {
+          "at": 294297,
+          "before": "89dd430fa1dd913436a1",
+          "after": "dd1c3e0a0fa1dd913436"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1054,
+      "file": "32/S3064.DAT",
+      "offset": "0x47D7E",
+      "before": "은혜의 정령: 결국 서로 빼앗으려는 싸움을 낳습니다.",
+      "target": "은혜의 정령: 결국 서로 빼앗으려는 싸움을 낳습니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282634,
+          "before": "45de0647",
+          "after": "dd47dd0b"
+        },
+        {
+          "at": 282639,
+          "before": "dd14dd704e",
+          "after": "25d5a1de13"
+        },
+        {
+          "at": 282645,
+          "before": "04a13553",
+          "after": "a44e3c06"
+        },
+        {
+          "at": 282650,
+          "before": "de13",
+          "after": "dd14"
+        },
+        {
+          "at": 282653,
+          "before": "a48d0da1de6d2d070121",
+          "after": "700da1de6d2d07012100"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1075,
+      "file": "32/S3068.DAT",
+      "offset": "0x47F86",
+      "before": "은혜의 정령: 몸소 몸으로 알게 된 경험을 살려 올바른 길을 찾아 나아가세요.",
+      "target": "은혜의 정령: 직접 얻은 경험을 살려 올바른 길을 찾아 나아가세요.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282634,
+          "before": "de2ddd07",
+          "after": "dd7cde2a"
+        },
+        {
+          "at": 282639,
+          "before": "de2d4edd04a1dd1e41a1ddc6",
+          "after": "dd9c26a168dd540da1dda23c"
+        },
+        {
+          "at": 282652,
+          "before": "68",
+          "after": "99"
+        },
+        {
+          "at": 282654,
+          "before": "540da1dda23ca199",
+          "after": "08ddbfa1dd950da1"
+        },
+        {
+          "at": 282663,
+          "before": "08ddbfa1dd950da1dd5609a11e090c8c2c21",
+          "after": "5609a11e090c8c2c21000000000000000000"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1084,
+      "file": "4/S4011.DAT",
+      "offset": "0x4879C",
+      "before": "병사1: 어떻게 나온 거지, 죽다 만 놈이.",
+      "target": "병사1: 어떻게 나온 거지, 죽다 만 놈이.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283394,
+          "before": "a14add02",
+          "after": "4add02a1"
+        },
+        {
+          "at": 283413,
+          "before": "0d",
+          "after": "01"
+        },
+        {
+          "at": 283415,
+          "before": "dd150da1dd56dd2d7c21",
+          "after": "38a1dd84032100000000"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1089,
+      "file": "4/S4011.DAT",
+      "offset": "0x48936",
+      "before": "병사1: 좋다! 인간의 저력을 분명히 보여 주마.",
+      "target": "병사1: 좋다! 인간이 얼마나 약한지 알려 주마.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283650,
+          "before": "a14add02",
+          "after": "4add02a1"
+        },
+        {
+          "at": 283662,
+          "before": "0f",
+          "after": "03"
+        },
+        {
+          "at": 283664,
+          "before": "dd24dd2b0da192dd34dd59a1601aa1404521",
+          "after": "de93451ea1dd485304a1dd1e3ca140452100"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1101,
+      "file": "4/S4011.DAT",
+      "offset": "0x48E64",
+      "before": "몬스터가 성의 병사로까지 위장해 있다니...",
+      "target": "몬스터가 성의 병사로까지 위장해 있다니...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 298596,
+          "before": "dd170fa182340a3b04a1643002dd04a1ea",
+          "after": "6430020ca1dd170fa18234d53b04a18e56"
+        },
+        {
+          "at": 298614,
+          "before": "de0c190107",
+          "after": "a11f010721"
+        },
+        {
+          "at": 298621,
+          "before": "21",
+          "after": "a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1104,
+      "file": "4/S4011.DAT",
+      "offset": "0x48F6C",
+      "before": "나는 변하지 않는 편이 좋아.",
+      "target": "나한테는 신경 쓰지 않는 게 좋아.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283905,
+          "before": "06a1801904a17806a1dd79dd01a1dd0d0921000000",
+          "after": "53ddbe06a13e68a1dd8504a17806a141a1dd0d0921"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1122,
+      "file": "4/S4022.DAT",
+      "offset": "0x47AFA",
+      "before": "두목과 부하들을 살려 준다기에 이렇게 잡혀 있는 거다.",
+      "target": "두목과 부하들을 살려 준다기에 이렇게 잡혀 있는 거다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283393,
+          "before": "33de220da1deb860d5a1",
+          "after": "a23ca1dd6f01240ea103"
+        },
+        {
+          "at": 283404,
+          "before": "6aa10300000000",
+          "after": "4d41a1de10de4d"
+        },
+        {
+          "at": 293636,
+          "before": "0f",
+          "after": "0d"
+        },
+        {
+          "at": 293649,
+          "before": "6b0d",
+          "after": "1f06"
+        },
+        {
+          "at": 293652,
+          "before": "1906a1324921",
+          "after": "320121a1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1125,
+      "file": "4/S4022.DAT",
+      "offset": "0x47BF6",
+      "before": "병사2: 그런데 정말 잘 타는군.",
+      "target": "병사2: 그런데 정말 잘 타더군.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283661,
+          "before": "067c2100",
+          "after": "dd967c21"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1131,
+      "file": "4/S4022.DAT",
+      "offset": "0x47E1E",
+      "before": "두목님... 동생분들...",
+      "target": "두목님... 아우들...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 294444,
+          "before": "dd32dd36920a212121",
+          "after": "093d0a212121a1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [
+        "e41f",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1139,
+      "file": "4/S4031.DAT",
+      "offset": "0x47C0A",
+      "before": "아버지가 보내셨어...",
+      "target": "아버지가 보내셨어...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284800,
+          "before": "e0bd9ce05be09ae0ab9ce0bde044e0c29ce0dce0259ce0ebe0eee03be09b9ce0bde088e0ab9ce0b1e0a29cdfb2e0dfe04c9ce0e99cdf45e0c10f",
+          "after": "0967040ca16047ddd514212121000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 284927,
+          "before": "27",
+          "after": "09"
+        },
+        {
+          "at": 293898,
+          "before": "096704dd046c0249212121",
+          "after": "e292a1a1a1a1a1a1a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1141,
+      "file": "4/S4031.DAT",
+      "offset": "0x47C86",
+      "before": "네 소문이 내게 들려왔다. 그로부터 벌써 10년, 세월이 빠르구나.",
+      "target": "네 소문이 내게 들려왔다. 그로부터 벌써 10년, 세월이 빠르구나.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284294,
+          "before": "dd01a14741a10a3cdd880121a115dd046c0233a1dde4ddc7a14a91dda5b3a1de3570871e210000",
+          "after": "03a14741a10a3cdd880121a115d56c02a1dde4ddc7a14a91dda5b3a18cdee503a1de3570871e21"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1175,
+      "file": "4/S4032.DAT",
+      "offset": "0x483B0",
+      "before": "다른 곳에 가고 싶을 때는 다리를 건너 오른쪽으로 나가면 돼.",
+      "target": "다른 곳에 가고 싶을 때는 다리를 건너 오른쪽으로 나가면 돼.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282898,
+          "before": "ddf30d",
+          "after": "012e36"
+        },
+        {
+          "at": 282911,
+          "before": "dd01",
+          "after": "4ed5"
+        },
+        {
+          "at": 282914,
+          "before": "60dd0141a1193aa1ddcc21",
+          "after": "1e0c3aa1ddcc2100000000"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1176,
+      "file": "4/S4032.DAT",
+      "offset": "0x4840E",
+      "before": "그러려나.",
+      "target": "나이 때문인가...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283392,
+          "before": "e029e025e015e0990f0000",
+          "after": "1e03a177ddaf350c212121"
+        },
+        {
+          "at": 295950,
+          "before": "15203c1e21",
+          "after": "e287a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1177,
+      "file": "4/S4032.DAT",
+      "offset": "0x4844E",
+      "before": "아니잖아.",
+      "target": "나이 때문이 아니잖아.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283520,
+          "before": "e029e017e0c1dfd90f0000000000",
+          "after": "1e03a177ddaf03a10907ddbc0921"
+        },
+        {
+          "at": 283647,
+          "before": "04",
+          "after": "06"
+        },
+        {
+          "at": 296014,
+          "before": "0907ddbc0921",
+          "after": "e288a1a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1179,
+      "file": "4/S4032.DAT",
+      "offset": "0x484CE",
+      "before": "그렇다네.",
+      "target": "나이 때문이지.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283648,
+          "before": "e09ce035dff5e09c0f",
+          "after": "1e03a177ddaf030421"
+        },
+        {
+          "at": 283775,
+          "before": "06",
+          "after": "04"
+        },
+        {
+          "at": 296142,
+          "before": "15dd4d017e21",
+          "after": "e289a1a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1181,
+      "file": "4/S4033.DAT",
+      "offset": "0x47CDC",
+      "before": "다음 정령은 그레이시누에 있다. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "target": "다음 정령은 그레이시느에 있다. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 294120,
+          "before": "dd550e",
+          "after": "4d0ea1"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1203,
+      "file": "4/S4033.DAT",
+      "offset": "0x4848C",
+      "before": "아니잖아.",
+      "target": "나이 때문이 아니잖아.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 285184,
+          "before": "df979ce0a4e0a5e0c29ce0a7df17e0bd9ce02fe0a20f9cdf92e0d69ce0faeaa0e0849cdf37e039dfe8e0c29ce02fe0a7dd8d9ce0a4e0a5e0c4e0a7dd8d9ce0c4e0140f",
+          "after": "1e03a177ddaf03a10907ddbc09210000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 285311,
+          "before": "32",
+          "after": "06"
+        },
+        {
+          "at": 296076,
+          "before": "0907ddbc0921",
+          "after": "e295a1a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1205,
+      "file": "4/S4033.DAT",
+      "offset": "0x4850C",
+      "before": "내 도감은 도움이 되지. 새로 발견한 몬스터는 되도록 조사하도록 하게.",
+      "target": "내 도감은 도움이 되지. 새로 발견한 몬스터는 되도록 조사하도록 하게.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 296206,
+          "before": "903406a133dd70dd01",
+          "after": "33dd7726a133dd7003"
+        },
+        {
+          "at": 296222,
+          "before": "dd04a1dd0ede0a53a164300206a17333dd72a190341933dd72a1194121",
+          "after": "d5a1dd0ede0a53a164300206a17333dd72a190341933dd72a1194121a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1211,
+      "file": "4/S4033.DAT",
+      "offset": "0x48712",
+      "before": "내가 알 게 뭐냐. 전부 조사하면 뭔가 좋은 일이 있을지도 모르지.",
+      "target": "내가 알 게 뭐냐. 전부 조사하면 뭔가 좋은 일이 있을지도 모르지.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284160,
+          "before": "15dd2a0c21",
+          "after": "470ca1dd1e"
+        },
+        {
+          "at": 284166,
+          "before": "4f6ca19034193a",
+          "after": "41a1dd60dd5121"
+        },
+        {
+          "at": 284174,
+          "before": "ddf90ca1dd0d26",
+          "after": "4f6ca19034193a"
+        },
+        {
+          "at": 284182,
+          "before": "6bdd01",
+          "after": "ddf90c"
+        },
+        {
+          "at": 284186,
+          "before": "1f",
+          "after": "dd"
+        },
+        {
+          "at": 284188,
+          "before": "0433a15570042100000000000000",
+          "after": "26a16b03a11f0d0433a155700421"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1215,
+      "file": "4/S4034.DAT",
+      "offset": "0x47D30",
+      "before": "다음 정령은 카데르에게. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "target": "다음 정령은 카델에. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 294201,
+          "before": "8170",
+          "after": "dde9"
+        },
+        {
+          "at": 294204,
+          "before": "4121",
+          "after": "21a1"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1245,
+      "file": "4/S4035.DAT",
+      "offset": "0x47D30",
+      "before": "다음 정령은 아리바샤에게. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "target": "다음 정령은 아리바샤에. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282624,
+          "before": "092edd08de5c0e4121a1de824e29542d073bd1",
+          "after": "de824e29542d073bd100000000000000000000"
+        },
+        {
+          "at": 294199,
+          "before": "a1a1a1a1a1a1a1a1",
+          "after": "092edd08de5c0e21"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1279,
+      "file": "4/S4036.DAT",
+      "offset": "0x48010",
+      "before": "그런 것에 자세한 동료가 있으면 좋았을 텐데.",
+      "target": "그런 걸 잘 아는 동료가 있으면 좋았을 텐데.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283524,
+          "before": "180e",
+          "after": "dd8e"
+        },
+        {
+          "at": 283527,
+          "before": "288c53a1dd32de120ca11f4e3aa1dd0d",
+          "after": "dd4fa10906a1dd32de120ca11f4e3aa1"
+        },
+        {
+          "at": 283544,
+          "before": "2d0da1de9881210000",
+          "after": "0ddd2d0da1de988121"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1292,
+      "file": "4/S4036.DAT",
+      "offset": "0x483DA",
+      "before": "(별로 말을 안 하네.)",
+      "target": "(별로 말을 안 하네.)",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 285056,
+          "before": "e304e09b9ce0ebe0ee9ce0bde0dae0ac9ce0bee06ae0310f0f0f",
+          "after": "a0ddf3d5a11b0da194a1197e219c000000000000000000000000"
+        },
+        {
+          "at": 285183,
+          "before": "12",
+          "after": "0b"
+        },
+        {
+          "at": 295898,
+          "before": "a0895f",
+          "after": "e294a1"
+        },
+        {
+          "at": 295902,
+          "before": "dde80a04",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 295907,
+          "before": "45219c",
+          "after": "a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1313,
+      "file": "5/S5011.DAT",
+      "offset": "0x4815A",
+      "before": "장사가 뭐냐고, 이 자식아! 한 대 맞아 볼래, 이 자식아!",
+      "target": "장사라니, 이 자식아! 혼 좀 나고 싶냐!",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 295258,
+          "before": "e283a1a1a1",
+          "after": "56348f07b3"
+        },
+        {
+          "at": 295264,
+          "before": "a1",
+          "after": "03"
+        },
+        {
+          "at": 295266,
+          "before": "a1a1a1a1a1",
+          "after": "28ddb509a9"
+        },
+        {
+          "at": 295279,
+          "before": "e285",
+          "after": "de37"
+        },
+        {
+          "at": 295282,
+          "before": "a1a1",
+          "after": "de5e"
+        },
+        {
+          "at": 295285,
+          "before": "a1a1",
+          "after": "1e1c"
+        },
+        {
+          "at": 295288,
+          "before": "a1a1a1a1a1",
+          "after": "dd4edd51a9"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [
+        "e601",
+        "e43d",
+        "e43d",
+        "e43d",
+        "e43d"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1336,
+      "file": "5/S5012.DAT",
+      "offset": "0x4842E",
+      "before": "그러고 보니 그레이시느의 라마다에는 신기한 힘을 지닌 집단이 있다는 이야기가 있어.",
+      "target": "그러고 보니 그레이시느의 라마다에는 신기한 힘을 지닌 집단이 있다는 이야기가 있어.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282634,
+          "before": "dd0129dd990fa1dd0545010e06a13e2453",
+          "after": "03294d0fa18f45010e06a13e2453a1740d"
+        },
+        {
+          "at": 282652,
+          "before": "740da104",
+          "after": "04dddfa1"
+        },
+        {
+          "at": 282657,
+          "before": "dfa16bdd35dd",
+          "after": "e2dd3503a11f"
+        },
+        {
+          "at": 282664,
+          "before": "a11f0106a1dd0149240ca11f1421",
+          "after": "06a10349240ca11f142100000000"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1387,
+      "file": "5/S5013.DAT",
+      "offset": "0x4895E",
+      "before": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "target": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 297348,
+          "before": "a150dd31a1",
+          "after": "34a150dd31"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1407,
+      "file": "5/S5013.DAT",
+      "offset": "0x490DC",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "target": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 299234,
+          "before": "7ba150dd31",
+          "after": "a150dd31a1"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1409,
+      "file": "5/S5013.DAT",
+      "offset": "0x491BA",
+      "before": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "target": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클인 만큼 말이지요...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284834,
+          "before": "0e25",
+          "after": "35a1"
+        },
+        {
+          "at": 284837,
+          "before": "a11b03042c2121",
+          "after": "ddf5a11b03042c"
+        },
+        {
+          "at": 284845,
+          "before": "0000",
+          "after": "2121"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1413,
+      "file": "5/S5013.DAT",
+      "offset": "0x49346",
+      "before": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "target": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 299860,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1419,
+      "file": "5/S5013.DAT",
+      "offset": "0x495C0",
+      "before": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "target": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284293,
+          "before": "dd054501a1347b0e2506a1dd35dd11ddf3",
+          "after": "8f4501340e2506a1dd35dd11ddf3d5a150"
+        },
+        {
+          "at": 284311,
+          "before": "04a150",
+          "after": "c50da1"
+        },
+        {
+          "at": 284315,
+          "before": "c50da1dd3fdd31190681b3",
+          "after": "3fdd31190681b3a155dd26"
+        },
+        {
+          "at": 284327,
+          "before": "55dd26a1dd18310da145",
+          "after": "dd18310da145dd1f3aa1"
+        },
+        {
+          "at": 284338,
+          "before": "1f3a",
+          "after": "9c0d"
+        },
+        {
+          "at": 284341,
+          "before": "dd9c0da150a11f06a1563e870c",
+          "after": "50a11f06a1563e870ca11f011c"
+        },
+        {
+          "at": 284355,
+          "before": "1f011ca1dd1d070121",
+          "after": "dd1d07012100000000"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1420,
+      "file": "5/S5013.DAT",
+      "offset": "0x49636",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "target": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 300603,
+          "before": "dd054501a1347b0e25a1dd7cde2a",
+          "after": "8f4501340e25a1dd7cde2aa14006"
+        },
+        {
+          "at": 300618,
+          "before": "4006",
+          "after": "1826"
+        },
+        {
+          "at": 300621,
+          "before": "1826a109dddfa1de5b190438ea9f",
+          "after": "09dddfa1de5b190438ea9fa1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1421,
+      "file": "5/S5013.DAT",
+      "offset": "0x49692",
+      "before": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "target": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 300695,
+          "before": "dd04de08de26a130dd9a0da1dd56",
+          "after": "d5de08de26a130dd9a03a11f06a1"
+        },
+        {
+          "at": 300710,
+          "before": "2d2d070121a1833ddda7dd18",
+          "after": "150da1dd1e09dee82d070121"
+        },
+        {
+          "at": 300723,
+          "before": "09dd05dd058330a18add09a1dd254f0e",
+          "after": "833ddda7dd18a1098f8f8330a18add09"
+        },
+        {
+          "at": 300740,
+          "before": "191edf6bb3a1a1a1a1a1",
+          "after": "dd254f0ea1191edf6bb3"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1427,
+      "file": "5/S5021.DAT",
+      "offset": "0x47A04",
+      "before": "여기는 3천 년 전 대붕괴 뒤 인간이 처음 세운 마을이 커져서 생긴 곳이야.",
+      "target": "여기는 3천 년 전 대붕괴 뒤 인간이 처음 세운 마을이 커져서 생긴 곳이야.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293380,
+          "before": "e28313279191918678e601aadefa",
+          "after": "1a2406a127dde7a1dda5a14fa137"
+        },
+        {
+          "at": 293395,
+          "before": "faa0a105defa2c12059c0285e6011e20defadefa18defaa1defa09e601592320aa5a4ca109115a1a",
+          "after": "ecdd75a14ba135dd1b03a1dd8f8da18c86a1450d03a1ddf6dd6325a1dd36ddfba1dd15034921a1a1"
+        },
+        {
+          "at": 293436,
+          "before": "3c9321",
+          "after": "a1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1467,
+      "file": "5/S5023.DAT",
+      "offset": "0x47A96",
+      "before": "값이 될 만한 이야기인가?",
+      "target": "뭔가 수입이 될 만한 이야기인가?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283264,
+          "before": "de60dd01a1ddd9",
+          "after": "ddf90ca1507f03"
+        },
+        {
+          "at": 283272,
+          "before": "3853",
+          "after": "ddd9"
+        },
+        {
+          "at": 283275,
+          "before": "dd014924350cdd0300",
+          "after": "3853a1034924350cd1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1473,
+      "file": "5/S5024.DAT",
+      "offset": "0x478E8",
+      "before": "무슨 소리야. 이래서야 이야기가 진전이 없잖아.",
+      "target": "무슨 소리야. 이래서야 이야기가 진전이 없잖아.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282624,
+          "before": "ddf9a1dd072e49d1a103dd12dd53a11b",
+          "after": "5fdda0a1dd072e4921a103dd122549a1"
+        },
+        {
+          "at": 282641,
+          "before": "a194a173",
+          "after": "49240ca1"
+        },
+        {
+          "at": 282646,
+          "before": "bc0921000000000000",
+          "after": "3f4f03a171ddbc0921"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1481,
+      "file": "5/S5025.DAT",
+      "offset": "0x47CE0",
+      "before": "너, 아버지잖아!!",
+      "target": "원본/명칭 확인 후 후보: 너, 오톤이구나!!",
+      "status": "HELD",
+      "reason": "원본은 オドン으로 확인됨. 오돈의 돈 글리프가 없으며 고유명사를 다른 뜻으로 대체하지 않음.",
+      "writes": []
+    },
+    {
+      "row": 1482,
+      "file": "5/S5025.DAT",
+      "offset": "0x47D46",
+      "before": "내 집에 아버지가 머물러 있다니...",
+      "target": "원본/명칭 확인 후 후보: 내 집에 오톤이 눌러살고 있었다니...",
+      "status": "HELD",
+      "reason": "원본은 オドン으로 확인됨. 오돈의 돈 글리프가 없어 인명 두 행을 함께 보류.",
+      "writes": []
+    },
+    {
+      "row": 1521,
+      "file": "6/S6011.DAT",
+      "offset": "0x47FFC",
+      "before": "촌가라, 그 수상한 일행에 관해서 가르쳐 줄 수 없나?",
+      "target": "촌가라, 그 신기한 집단에 관해서 가르쳐 줄 수 없나?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 294908,
+          "before": "e28122defa8f21defa02defa74defaa169defa18defa1b1ddefa0e1d4c23",
+          "after": "960c8fb3a115a13e2453a1dde2dd350ea11d2b25a10c70ddf1a1dd81a150"
+        },
+        {
+          "at": 294939,
+          "before": "0512",
+          "after": "711e"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1551,
+      "file": "6/S6013.DAT",
+      "offset": "0x48290",
+      "before": "대지의 돌... 서방의 카데르 땅에 봉인된 바람의 힘.",
+      "target": "대지의 돌... 서방의 카델 땅에 봉인된 바람의 힘.",
+      "status": "HELD",
+      "reason": "카델 용어 통일안이나 27개 연출/줄바꿈 제어 위치의 템플릿 미검증. 현행 카데르 유지.",
+      "writes": []
+    },
+    {
+      "row": 1552,
+      "file": "6/S6013.DAT",
+      "offset": "0x4834E",
+      "before": "카데르라면 해마다 무투 대회가 있고, 그 상품이 바람의 오브라는 것이었던 걸로 기억하는데?",
+      "target": "카델이라면 해마다 무투 대회가 있고, 그 상품이 바람의 오브라는 것이었던 걸로 기억하는데?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 295760,
+          "before": "81708f3aa12b4501a15fdd39a1377a0ca1",
+          "after": "dde9038f3aa12b4501a15fdd39a1377a0c"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1597,
+      "file": "6/S6014.DAT",
+      "offset": "0x4890A",
+      "before": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "target": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 297264,
+          "before": "a150dd31a1",
+          "after": "34a150dd31"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1617,
+      "file": "6/S6014.DAT",
+      "offset": "0x49088",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "target": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 299150,
+          "before": "7ba150dd31",
+          "after": "a150dd31a1"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1619,
+      "file": "6/S6014.DAT",
+      "offset": "0x49166",
+      "before": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "target": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클인 만큼 말이지요...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 285218,
+          "before": "0e25",
+          "after": "35a1"
+        },
+        {
+          "at": 285221,
+          "before": "a11b03042c2121",
+          "after": "ddf5a11b03042c"
+        },
+        {
+          "at": 285229,
+          "before": "0000",
+          "after": "2121"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1623,
+      "file": "6/S6014.DAT",
+      "offset": "0x492F2",
+      "before": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "target": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 299776,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1629,
+      "file": "6/S6014.DAT",
+      "offset": "0x4956C",
+      "before": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "target": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284293,
+          "before": "dd054501a1347b0e2506a1dd35dd11ddf3",
+          "after": "8f4501340e2506a1dd35dd11ddf3d5a150"
+        },
+        {
+          "at": 284311,
+          "before": "04a150",
+          "after": "c50da1"
+        },
+        {
+          "at": 284315,
+          "before": "c50da1dd3fdd31190681b3",
+          "after": "3fdd31190681b3a155dd26"
+        },
+        {
+          "at": 284327,
+          "before": "55dd26a1dd18310da145",
+          "after": "dd18310da145dd1f3aa1"
+        },
+        {
+          "at": 284338,
+          "before": "1f3a",
+          "after": "9c0d"
+        },
+        {
+          "at": 284341,
+          "before": "dd9c0da150a11f06a1563e870c",
+          "after": "50a11f06a1563e870ca11f011c"
+        },
+        {
+          "at": 284355,
+          "before": "1f011ca1dd1d070121",
+          "after": "dd1d07012100000000"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1630,
+      "file": "6/S6014.DAT",
+      "offset": "0x495E2",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "target": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 300519,
+          "before": "dd054501a1347b0e25a1dd7cde2a",
+          "after": "8f4501340e25a1dd7cde2aa14006"
+        },
+        {
+          "at": 300534,
+          "before": "4006",
+          "after": "1826"
+        },
+        {
+          "at": 300537,
+          "before": "1826a109dddfa1de5b190438ea9f",
+          "after": "09dddfa1de5b190438ea9fa1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1631,
+      "file": "6/S6014.DAT",
+      "offset": "0x4963E",
+      "before": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "target": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 300611,
+          "before": "dd04de08de26a130dd9a0da1dd56",
+          "after": "d5de08de26a130dd9a03a11f06a1"
+        },
+        {
+          "at": 300626,
+          "before": "2d2d070121a1833ddda7dd18",
+          "after": "150da1dd1e09dee82d070121"
+        },
+        {
+          "at": 300639,
+          "before": "09dd05dd058330a18add09a1dd254f0e",
+          "after": "833ddda7dd18a1098f8f8330a18add09"
+        },
+        {
+          "at": 300656,
+          "before": "191edf6bb3a1a1a1a1a1",
+          "after": "dd254f0ea1191edf6bb3"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1640,
+      "file": "6/S6022.DAT",
+      "offset": "0x47A9C",
+      "before": "동료에게 피해를줄 수 있는 모양이야.",
+      "target": "떨어진 상대에게 피해를 줄 수 있다고 하네.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283392,
+          "before": "00000000000000000000000000000000000000000000000000000000",
+          "after": "deb514dd3fa18b370e41a1dd3c2b36a1dd81a150a11f011ca1197e21"
+        },
+        {
+          "at": 283519,
+          "before": "00",
+          "after": "19"
+        },
+        {
+          "at": 293532,
+          "before": "dd32de120e41",
+          "after": "e287a1a1a1a1"
+        },
+        {
+          "at": 293539,
+          "before": "dd3c2b36dd81",
+          "after": "a1a1a1a1a1a1"
+        },
+        {
+          "at": 293546,
+          "before": "50",
+          "after": "a1"
+        },
+        {
+          "at": 293548,
+          "before": "1f06",
+          "after": "a1a1"
+        },
+        {
+          "at": 293551,
+          "before": "55dd82dd014921",
+          "after": "a1a1a1a1a1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1650,
+      "file": "6/S6031.DAT",
+      "offset": "0x47BE6",
+      "before": "우리조차 돌아온 적 없는 라마다 산에 들어가려 하다니.",
+      "target": "우리조차 올라간 적 없는 라마다산에 들어가려 하다니.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283014,
+          "before": "7209",
+          "after": "998f"
+        },
+        {
+          "at": 283017,
+          "before": "5c",
+          "after": "1b"
+        },
+        {
+          "at": 283025,
+          "before": "dd054501a1dd450ea10a140c3ca119010721",
+          "after": "8f4501dd450ea10a140c3ca1190107210000"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1658,
+      "file": "6/S6032.DAT",
+      "offset": "0x47AF8",
+      "before": "아무것도 보이지 않는다고 생각하는 거야? 더러운 짓은 그만두세요.",
+      "target": "아무것도 모르는 줄 알아? 못난 짓은 그만둬.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293624,
+          "before": "e2833b0e1da105a174a11d05a102d13b",
+          "after": "095f1833a1557006a1dd81a1dd1e09d1"
+        },
+        {
+          "at": 293641,
+          "before": "a1a1a105175e13e6013fa11ba1a10521",
+          "after": "dd76dd6aa1de1c26a11538dee021a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1676,
+      "file": "6/S6051.DAT",
+      "offset": "0x47AB4",
+      "before": "여기가 라마다사인가...",
+      "target": "여기가 라마다사인가...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293564,
+          "before": "7b350c",
+          "after": "350c21"
+        },
+        {
+          "at": 293569,
+          "before": "21",
+          "after": "a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1698,
+      "file": "6/S6053.DAT",
+      "offset": "0x47D2E",
+      "before": "제자: 스승님은 저희에게 자신의 잘못을 바로잡는 것을 두려워하지 않는 용기를 가르쳐 주셨습니다.",
+      "target": "제자: 스승님은 저희에게 자신의 잘못을 바로잡는 것을 두려워하지 않는 용기를 가르쳐 주셨습니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282629,
+          "before": "dd1c3e26a13d2e0e41a1283e0fa1dd4fdd760da1dd08dd04de1006a1180da1dd213cdd681904a17806a1dd1a2436a10c70ddf1a140ddd52d0701210000",
+          "after": "3069dd2e26a1dd24dd430e41a1283e0fa1dd4fdd760da1dd08d5de1006a1180da1dd213cdd681904a17806a1dd1a2436a10c70ddf1a140ddd52d070121"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1703,
+      "file": "6/S6054.DAT",
+      "offset": "0x45002",
+      "before": "|초핀|초비|초스케|초카라",
+      "target": "|초핀|초빈|초스케|촌가라",
+      "status": "HELD",
+      "reason": "인명 구별 퀴즈: 초빈의 빈 글리프가 없어 정답/오답 구별을 보존한 대체 불가.",
+      "writes": []
+    },
+    {
+      "row": 1706,
+      "file": "6/S6054.DAT",
+      "offset": "0x450F6",
+      "before": "|밀마|스메|아라라|카델",
+      "target": "|미르마나|스메리아|아라라토스|카델",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 19712,
+          "before": "0000000000",
+          "after": "30dd2c2e09"
+        },
+        {
+          "at": 19839,
+          "before": "00",
+          "after": "02"
+        },
+        {
+          "at": 282872,
+          "before": "de3345a1a1",
+          "after": "dd2f70451e"
+        },
+        {
+          "at": 282882,
+          "before": "30dd2c",
+          "after": "e2e7a1"
+        },
+        {
+          "at": 282891,
+          "before": "dd05dd05",
+          "after": "8f8f8330"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1709,
+      "file": "6/S6054.DAT",
+      "offset": "0x451F4",
+      "before": "|아크|쿠쿠루|다다|헤모",
+      "target": "|아크|쿠쿠루|타이틀 로고|헤모지",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 19968,
+          "before": "0000000000000000",
+          "after": "dd7f03dde0a1d51c"
+        },
+        {
+          "at": 20095,
+          "before": "00",
+          "after": "05"
+        },
+        {
+          "at": 283140,
+          "before": "0101",
+          "after": "e2e9"
+        },
+        {
+          "at": 283154,
+          "before": "a1",
+          "after": "04"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1712,
+      "file": "6/S6054.DAT",
+      "offset": "0x452F2",
+      "before": "|오카|야모|야오|시타",
+      "target": "|오카모토|야마모토|야마오키|야마시타",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 20096,
+          "before": "0000000000",
+          "after": "46dd385583"
+        },
+        {
+          "at": 20223,
+          "before": "000000000000",
+          "after": "02494529dd7f"
+        },
+        {
+          "at": 20351,
+          "before": "00",
+          "after": "02"
+        },
+        {
+          "at": 283380,
+          "before": "46dd38",
+          "after": "e2eaa1"
+        },
+        {
+          "at": 283389,
+          "before": "55a1a1",
+          "after": "455583"
+        },
+        {
+          "at": 283397,
+          "before": "46a1a1a1",
+          "after": "4546ddb3"
+        },
+        {
+          "at": 283405,
+          "before": "29dd7f",
+          "after": "e2eba1"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1715,
+      "file": "6/S6054.DAT",
+      "offset": "0x453E6",
+      "before": "|예|아마|확실|고민",
+      "target": "|나온다|나올지도|나오겠지|고민",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 20352,
+          "before": "00000000",
+          "after": "1edd5c01"
+        },
+        {
+          "at": 283624,
+          "before": "97a1",
+          "after": "e2ec"
+        },
+        {
+          "at": 283630,
+          "before": "0945a1a1",
+          "after": "1e990433"
+        },
+        {
+          "at": 283638,
+          "before": "de2bdd27",
+          "after": "1e465404"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1721,
+      "file": "6/S6054.DAT",
+      "offset": "0x455E0",
+      "before": "|있음|없음|제작|여행",
+      "target": "|있다|없다|만들려 했다|가려 했다",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284131,
+          "before": "8d",
+          "after": "01"
+        },
+        {
+          "at": 284137,
+          "before": "8d",
+          "after": "01"
+        },
+        {
+          "at": 284142,
+          "before": "66dd64",
+          "after": "380a3c"
+        },
+        {
+          "at": 284146,
+          "before": "a1a1a1",
+          "after": "dd0f01"
+        },
+        {
+          "at": 284153,
+          "before": "1add31a1a1a1",
+          "after": "0c3ca1dd0f01"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1724,
+      "file": "6/S6054.DAT",
+      "offset": "0x456DA",
+      "before": "|저|그|어|비밀",
+      "target": "|저거|그거|어느 거|비밀",
+      "status": "HELD",
+      "reason": "no E2 slot remains in 6/S6054.DAT for row 1724",
+      "writes": []
+    },
+    {
+      "row": 1726,
+      "file": "6/S6054.DAT",
+      "offset": "0x45778",
+      "before": "라마다 승려: 라마다사의 문이 열렸을 때 안에 보이는 사람은 몇 명인가?",
+      "target": "라마다 승려: 라마다사의 문이 열렸을 때 안에 보이는 사람은 몇 명인가?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 17923,
+          "before": "a1347b0fa1ddaf03a1",
+          "after": "340fa1ddaf03a1dd89"
+        },
+        {
+          "at": 17933,
+          "before": "89dd9b0d",
+          "after": "9b0da177"
+        },
+        {
+          "at": 17938,
+          "before": "77a1940ea1600306a134dd2226a1def4a1dd34350cd1",
+          "after": "940ea1600306a134dd2226a1def4a1dd34350cd10000"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1733,
+      "file": "6/S6054.DAT",
+      "offset": "0x459CA",
+      "before": "|황금|갈|빨강|누구?",
+      "target": "|노랑|사정상 갈빛|실은 빨강|누구?",
+      "status": "HELD",
+      "reason": "no E2 slot remains in 6/S6054.DAT for row 1733",
+      "writes": []
+    },
+    {
+      "row": 1748,
+      "file": "6/S6054.DAT",
+      "offset": "0x45F6E",
+      "before": "환수의어금니를받았습니다.",
+      "target": "환수의 어금니를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 286578,
+          "before": "14dd4a0736dd19",
+          "after": "a114dd4a0736a1"
+        },
+        {
+          "at": 286586,
+          "before": "2d2d070121",
+          "after": "9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1776,
+      "file": "6/S6054.DAT",
+      "offset": "0x468D4",
+      "before": "라마다 승려: 9번째 도전이시군요. 그러면 이 정도는 어떻겠습니까?",
+      "target": "라마다 승려: 9번째 도전이시군요. 그러면 이 정도는 어떻겠습니까?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 288980,
+          "before": "dd054501",
+          "after": "8f4501a1"
+        },
+        {
+          "at": 288990,
+          "before": "dd3edd7ea1334fdd017c2c21a115dd49",
+          "after": "9b11a1334f03297c2c21a115203aa103"
+        },
+        {
+          "at": 289007,
+          "before": "dd01de9c0e25a114dde85d073bdd03",
+          "after": "313306a114dd44542d073bd1a1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1832,
+      "file": "7/S7012.DAT",
+      "offset": "0x48402",
+      "before": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "target": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 295976,
+          "before": "a150dd31a1",
+          "after": "34a150dd31"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1852,
+      "file": "7/S7012.DAT",
+      "offset": "0x48B80",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "target": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 297862,
+          "before": "7ba150dd31",
+          "after": "a150dd31a1"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1854,
+      "file": "7/S7012.DAT",
+      "offset": "0x48C5E",
+      "before": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "target": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클인 만큼 말이지요...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283810,
+          "before": "0e25",
+          "after": "35a1"
+        },
+        {
+          "at": 283813,
+          "before": "a11b03042c2121",
+          "after": "ddf5a11b03042c"
+        },
+        {
+          "at": 283821,
+          "before": "0000",
+          "after": "2121"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1858,
+      "file": "7/S7012.DAT",
+      "offset": "0x48DEA",
+      "before": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "target": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 298488,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1864,
+      "file": "7/S7012.DAT",
+      "offset": "0x49064",
+      "before": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "target": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284293,
+          "before": "dd054501a1347b0e2506a1dd35dd11ddf3",
+          "after": "8f4501340e2506a1dd35dd11ddf3d5a150"
+        },
+        {
+          "at": 284311,
+          "before": "04a150",
+          "after": "c50da1"
+        },
+        {
+          "at": 284315,
+          "before": "c50da1dd3fdd31190681b3",
+          "after": "3fdd31190681b3a155dd26"
+        },
+        {
+          "at": 284327,
+          "before": "55dd26a1dd18310da145",
+          "after": "dd18310da145dd1f3aa1"
+        },
+        {
+          "at": 284338,
+          "before": "1f3a",
+          "after": "9c0d"
+        },
+        {
+          "at": 284341,
+          "before": "dd9c0da150a11f06a1563e870c",
+          "after": "50a11f06a1563e870ca11f011c"
+        },
+        {
+          "at": 284355,
+          "before": "1f011ca1dd1d070121",
+          "after": "dd1d07012100000000"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1865,
+      "file": "7/S7012.DAT",
+      "offset": "0x490DA",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "target": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 299231,
+          "before": "dd054501a1347b0e25a1dd7cde2a",
+          "after": "8f4501340e25a1dd7cde2aa14006"
+        },
+        {
+          "at": 299246,
+          "before": "4006",
+          "after": "1826"
+        },
+        {
+          "at": 299249,
+          "before": "1826a109dddfa1de5b190438ea9f",
+          "after": "09dddfa1de5b190438ea9fa1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1866,
+      "file": "7/S7012.DAT",
+      "offset": "0x49136",
+      "before": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "target": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 299323,
+          "before": "dd04de08de26a130dd9a0da1dd56",
+          "after": "d5de08de26a130dd9a03a11f06a1"
+        },
+        {
+          "at": 299338,
+          "before": "2d2d070121a1833ddda7dd18",
+          "after": "150da1dd1e09dee82d070121"
+        },
+        {
+          "at": 299351,
+          "before": "09dd05dd058330a18add09a1dd254f0e",
+          "after": "833ddda7dd18a1098f8f8330a18add09"
+        },
+        {
+          "at": 299368,
+          "before": "191edf6bb3a1a1a1a1a1",
+          "after": "dd254f0ea1191edf6bb3"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 1921,
+      "file": "7/S7022.DAT",
+      "offset": "0x488F0",
+      "before": "출전자: 라마다사에서 수행하면 버스터 칭호를 받을 수 있나 봐.",
+      "target": "출전자: 라마다사에서 수행하면 버스터 칭호를 받을 수 있나 봐.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 297209,
+          "before": "a1347b0e25a150dd31193aa1673002a1de979536a1dd190d50a11f1e",
+          "after": "340e25a150dd31193aa1673002a1de979536a1dd190da150a11f1ea1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2103,
+      "file": "7/S7028.DAT",
+      "offset": "0x47544",
+      "before": "보물찾기라도 할까.",
+      "target": "보물찾기라도 할까.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 292164,
+          "before": "e2aadefa1b11a12aa1125e21",
+          "after": "606ddd56248f33a17d3b21a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2111,
+      "file": "7/S7028.DAT",
+      "offset": "0x47790",
+      "before": "남의 손에 넘어갔으면 곤란했을 거야.",
+      "target": "남의 손에 넘어갔으면 곤란했을 거야.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 286730,
+          "before": "0c3aa192dd0f0da1ddbe073b21000000",
+          "after": "de594e3aa1de9bde3edd0f0da1324921"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2115,
+      "file": "7/S7028.DAT",
+      "offset": "0x478D6",
+      "before": "아직도 모르네.",
+      "target": "아직도 모르네.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283520,
+          "before": "df347ade709c528f69",
+          "after": "09dd7c33a155707e21"
+        },
+        {
+          "at": 283647,
+          "before": "03",
+          "after": "06"
+        },
+        {
+          "at": 293078,
+          "before": "557054068121",
+          "after": "e288a1a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2116,
+      "file": "7/S7028.DAT",
+      "offset": "0x47912",
+      "before": "아직도 모르냐.",
+      "target": "아직도 모르냐.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283648,
+          "before": "00000000000000000000",
+          "after": "09dd7c33a15570dd5121"
+        },
+        {
+          "at": 283775,
+          "before": "00",
+          "after": "06"
+        },
+        {
+          "at": 293138,
+          "before": "5570541421",
+          "after": "e289a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2117,
+      "file": "7/S7028.DAT",
+      "offset": "0x4794E",
+      "before": "아직도 모르는구먼.",
+      "target": "아직도 모르는구먼.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283776,
+          "before": "000000000000000000000000",
+          "after": "09dd7c33a155700687ddc121"
+        },
+        {
+          "at": 283903,
+          "before": "00",
+          "after": "05"
+        },
+        {
+          "at": 293198,
+          "before": "557054dd0721",
+          "after": "e28aa1a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2118,
+      "file": "7/S7028.DAT",
+      "offset": "0x4798A",
+      "before": "아직도 모르냐아!",
+      "target": "아직도 모르냐아!",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283904,
+          "before": "0000000000000000000000",
+          "after": "09dd7c33a15570dd5109a9"
+        },
+        {
+          "at": 284031,
+          "before": "00",
+          "after": "07"
+        },
+        {
+          "at": 293258,
+          "before": "5570541414a9",
+          "after": "e28ba1a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2138,
+      "file": "7/S7028.DAT",
+      "offset": "0x489F6",
+      "before": "안내: 곧 참가자 접수를 마감합니다. 서둘러 주십시오.",
+      "target": "안내: 곧 참가자 접수를 마감합니다. 서둘러 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 297462,
+          "before": "e29643227516e6013da1a14c6a6d3a02dd21defaa11b1cdefa09172a213fdefadd1f3ba10521",
+          "after": "9447dd02a1de0ea1dd4c0c28a1de2a5036a145dd77dd1d070121a125ddbb20a1405d294621a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2142,
+      "file": "7/S7028.DAT",
+      "offset": "0x48B70",
+      "before": "대회 위원: 정말 출전하시겠습니까?|승리|나중에",
+      "target": "대회 위원: 정말 출전하시겠습니까?|꼭 이긴다!|아직 할 일이…",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 297863,
+          "before": "692e",
+          "after": "df19"
+        },
+        {
+          "at": 297866,
+          "before": "a1a1a1a1a1",
+          "after": "03ddfb01a9"
+        },
+        {
+          "at": 297875,
+          "before": "1e",
+          "after": "09"
+        },
+        {
+          "at": 297877,
+          "before": "730ea1",
+          "after": "7ca17d"
+        },
+        {
+          "at": 297881,
+          "before": "a1a1a1a1",
+          "after": "6b03ea9f"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2151,
+      "file": "7/S7032.DAT",
+      "offset": "0x479EC",
+      "before": "로크톨: 왕가가 멸망한 뒤에도 권력자와 부호 사이에서 그 탐욕과 두려움으로 전해 내려온 물건입니다.",
+      "target": "로크톨: 왕가가 멸망한 뒤에도 권력자와 부호 사이에서 선망과 두려움의 대상으로 전해 내려온 물건입니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282880,
+          "before": "e0d6e09deaa5df809ce0cc9ce036dec79ceae2df82e0ae9ce07ee046e03c9ce0319ce08adfa3e0ab9ce002e025e027e015e0dae0499ce0c4e0c29ce013e0c9e035e0c10f",
+          "after": "6a0c0ca1dddddd6b53a14b0e3300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283007,
+          "before": "33dd0458ddf0dd02a1dd01a15fdd39a1377a0fa18be9cd26a1dd24a1dd08dd220fa146ddc87f070121",
+          "after": "07dec8dd2b288800000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283135,
+          "before": "25e0d6e09deaa5df809ce062e0bbe0cc9ce0a9df489ce065e026e09fe0579ce049e03be0a0dff1e07f0d",
+          "after": "03dd213cdd700fa1378b4ed5000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283263,
+          "before": "1d",
+          "after": "03"
+        },
+        {
+          "at": 293356,
+          "before": "dd0458ddf0dd02a16a0c0c",
+          "after": "d558ddf0dd02e601e283a1"
+        },
+        {
+          "at": 293368,
+          "before": "dddddd6b53a14b0e33",
+          "after": "a1a1a1a1a1e43de284"
+        },
+        {
+          "at": 293378,
+          "before": "dec8dd2b2888",
+          "after": "a1a1e41f6c95"
+        },
+        {
+          "at": 293385,
+          "before": "6c95a134dd010e25",
+          "after": "34030e25a1a1a1a1"
+        },
+        {
+          "at": 293394,
+          "before": "15a1dedd",
+          "after": "e43ddd53"
+        },
+        {
+          "at": 293399,
+          "before": "e3",
+          "after": "6b"
+        },
+        {
+          "at": 293403,
+          "before": "dd213cdd704edd04a1",
+          "after": "e429e285a1a1a1e43d"
+        },
+        {
+          "at": 293415,
+          "before": "473cdd5ca16ddd167f070121a1a1a1a1a1a1",
+          "after": "e41f473cdd5ca1e43d6ddd167f070121e43d"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601",
+        "e43d",
+        "e41f",
+        "e43d",
+        "e429",
+        "e43d",
+        "e41f",
+        "e43d",
+        "e43d"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2152,
+      "file": "7/S7032.DAT",
+      "offset": "0x47A72",
+      "before": "로크톨: 그야말로 이 피로 피를 다투는 무투 대회의 승자에게 어 울 리 는 물 건 이 아 니 겠 습 니 까?",
+      "target": "로크톨: 그야말로 이 피비린내 나는 무투 대회의 승자에게 어 울 리 는 물 건 이 아 니 겠 습 니 까 ?",
+      "status": "HELD",
+      "reason": "span too short for E2 in row 2152: 1",
+      "writes": []
+    },
+    {
+      "row": 2201,
+      "file": "8/S8013.DAT",
+      "offset": "0x47B6E",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "target": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293748,
+          "before": "7ba150dd31",
+          "after": "a150dd31a1"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2203,
+      "file": "8/S8013.DAT",
+      "offset": "0x47C4C",
+      "before": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "target": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클인 만큼 말이지요...",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282914,
+          "before": "0e25",
+          "after": "35a1"
+        },
+        {
+          "at": 282917,
+          "before": "a11b03042c2121",
+          "after": "ddf5a11b03042c"
+        },
+        {
+          "at": 282925,
+          "before": "0000",
+          "after": "2121"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2207,
+      "file": "8/S8013.DAT",
+      "offset": "0x47DD8",
+      "before": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아보십시오.",
+      "target": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아보십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 294374,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        },
+        {
+          "at": 294422,
+          "before": "a1605d294621",
+          "after": "605d294621a1"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2213,
+      "file": "8/S8013.DAT",
+      "offset": "0x48052",
+      "before": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "target": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283909,
+          "before": "dd054501a1347b0e2506a1dd35dd11ddf3",
+          "after": "8f4501340e2506a1dd35dd11ddf3d5a150"
+        },
+        {
+          "at": 283927,
+          "before": "04a150",
+          "after": "c50da1"
+        },
+        {
+          "at": 283931,
+          "before": "c50da1dd3fdd31190681b3",
+          "after": "3fdd31190681b3a155dd26"
+        },
+        {
+          "at": 283943,
+          "before": "55dd26a1dd18310da145",
+          "after": "dd18310da145dd1f3aa1"
+        },
+        {
+          "at": 283954,
+          "before": "1f3a",
+          "after": "9c0d"
+        },
+        {
+          "at": 283957,
+          "before": "dd9c0da150a11f06a1563e870c",
+          "after": "50a11f06a1563e870ca11f011c"
+        },
+        {
+          "at": 283971,
+          "before": "1f011ca1dd1d070121",
+          "after": "dd1d07012100000000"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2214,
+      "file": "8/S8013.DAT",
+      "offset": "0x480C8",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "target": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 295117,
+          "before": "dd054501a1347b0e25a1dd7cde2a",
+          "after": "8f4501340e25a1dd7cde2aa14006"
+        },
+        {
+          "at": 295132,
+          "before": "4006",
+          "after": "1826"
+        },
+        {
+          "at": 295135,
+          "before": "1826a109dddfa1de5b190438ea9f",
+          "after": "09dddfa1de5b190438ea9fa1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2215,
+      "file": "8/S8013.DAT",
+      "offset": "0x48124",
+      "before": "초핀: 로맨싱 스톤의 위치를 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "target": "초핀: 로맨싱 스톤의 위치를 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 295209,
+          "before": "dd04de08de26a130dd9a0da1",
+          "after": "d5de08de26a130dd9a0fa18e"
+        },
+        {
+          "at": 295222,
+          "before": "56dd2d2d070121a1833ddda7dd18a109dd05dd058330a18add09a1",
+          "after": "1f36a1dd1e09dee82d070121a1833ddda7dd18a1098f8f8330a18a"
+        },
+        {
+          "at": 295250,
+          "before": "254f0ea1191edf6bb3a1a1a1",
+          "after": "09a1dd254f0ea1191edf6bb3"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2242,
+      "file": "8/S8031.DAT",
+      "offset": "0x486E8",
+      "before": "매트 버틀러: 물의 신전의 벽은 손에 넣었나?",
+      "target": "매트 버틀러: 물의 신전 열쇠는 손에 넣었나?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283904,
+          "before": "e067e057e0b59cdfb79ce0f1e0a00200000000000000000000000000000000",
+          "after": "ddc9dd5ba167dde020dd02a16d0fa13e4fa1dd89dec206a1850ea16f611ed1"
+        },
+        {
+          "at": 284031,
+          "before": "0b",
+          "after": "1a"
+        },
+        {
+          "at": 296681,
+          "before": "820932308f3016e6019902defadefa0277defa1340183e",
+          "after": "8ba1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+        },
+        {
+          "at": 296705,
+          "before": "1a12d1",
+          "after": "a1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2255,
+      "file": "8/S8041.DAT",
+      "offset": "0x47B5A",
+      "before": "카사토르: 이용할 수 있는 것은 철저히 이용하고, 살 가치도 없는 어린것들을 없애는 게 뭐가 나쁘지?",
+      "target": "카사토르: 이용할 수 있는 것은 철저히 이용하고, 살 가치도 없는 쓰레기들을 없애는 게 뭐가 나쁘지?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282632,
+          "before": "dd01dd1a7da150a11f06a11826a1dea4dd24dd59a1",
+          "after": "03dd1a7da150a11f06a11826a1dea4dd24dd59a103"
+        },
+        {
+          "at": 282654,
+          "before": "01dd1a191cb3a1dda2a10cdd1f33a17106a114ddd4180a0da171de0f06a141a1dd600ca11edea804dd03",
+          "after": "1a191cb3a1dda2a10cdd1f33a17106a1dd85dd66240a0da171de0f06a141a1dd600ca11edea804d10000"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2261,
+      "file": "8/S8051.DAT",
+      "offset": "0x48732",
+      "before": "카사토르: 좋아, 신전의 벽이 필요했을 뿐이다.",
+      "target": "카사토르: 좋아, 신전 열쇠가 필요했을 뿐이다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 296754,
+          "before": "e28c09301f16e60117a1050521e601defadefa0277defa20defa1b12",
+          "after": "dd38348370dd02a1dd0d09b3a13e4fa1dd89dec20ca1de4a2cdd0f0d"
+        },
+        {
+          "at": 296783,
+          "before": "1a0211a1",
+          "after": "ddd30301"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2263,
+      "file": "8/S8051.DAT",
+      "offset": "0x487D4",
+      "before": "카사토르: 어린것들을 죽이는 데 그 이상의 이유 따위는 없다.",
+      "target": "카사토르: 쓰레기들을 죽이는 데 그 이상의 이유 따위는 없다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283656,
+          "before": "14ddd4180a0da1dd94dd01",
+          "after": "dd85dd66240a0da1dd9403"
+        },
+        {
+          "at": 283673,
+          "before": "dd018b0fa1dd018aa1ddb98e06a1710121",
+          "after": "038b0fa1038aa1ddb98e06a17101210000"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2268,
+      "file": "8/S8061.DAT",
+      "offset": "0x47A4A",
+      "before": "물의 은혜가 몸에 전해져 오는 것 같아.",
+      "target": "물의 은혜가 몸에 전해져 오는 것 같아.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283907,
+          "before": "ddfedd2f0ca1de2d0ea14f2bdd63a14606a118a1dd5a0921",
+          "after": "26dd4b0ca1de2d0ea14f2bdd63a14606a118a1dd5a092100"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2271,
+      "file": "8/S8061.DAT",
+      "offset": "0x47B6C",
+      "before": "물의 정령: 그렇단다. 물의 은혜를 관장하고 있지.",
+      "target": "물의 정령: 그렇단다. 물의 은혜를 관장하고 있지.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283027,
+          "before": "ddfedd2f36a1de1d56191ca11f0421",
+          "after": "26dd4b36a11d56191ca11f04210000"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2272,
+      "file": "8/S8061.DAT",
+      "offset": "0x47BB6",
+      "before": "물의 정령: 그런데 이런 지하 아래쪽에 혼자 숨어 누구에게도 고마움 받지 못하고 있구나.",
+      "target": "물의 정령: 그런데 이런 지하 저 아래서 조용히 지내며 누구에게도 고맙다는 말을 못 듣고 있구나.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282637,
+          "before": "dd01dd2aa10419a109dd12",
+          "after": "03dd2aa10419a1dd24a109"
+        },
+        {
+          "at": 282649,
+          "before": "690e",
+          "after": "1225"
+        },
+        {
+          "at": 282652,
+          "before": "de3728a1de2214a1dd55870e4133a11c45dd70a1dd1904",
+          "after": "90dd1add59a10447de1fa1dd55870e4133a11cdeca0106"
+        },
+        {
+          "at": 282676,
+          "before": "dd76191ca11f871e210000000000",
+          "after": "1b0da1dd76a1de211ca11f871e21"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2273,
+      "file": "8/S8061.DAT",
+      "offset": "0x47C22",
+      "before": "물의 정령: 우습게 보지 마라. 이 나라는 원래 풍요로운 나라였단다.",
+      "target": "물의 정령: 참 우습지 않니? 이 나라는 원래 풍요로운 나라였단다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293922,
+          "before": "e2870f1516e601",
+          "after": "6d0fa13151dd02"
+        },
+        {
+          "at": 293930,
+          "before": "3aa1",
+          "after": "dd4c"
+        },
+        {
+          "at": 293933,
+          "before": "a12ca1",
+          "after": "3d2d04"
+        },
+        {
+          "at": 293937,
+          "before": "a1050221e6013c023313a1a1a1",
+          "after": "7807d1a103a11e8f06a17bdd12"
+        },
+        {
+          "at": 293951,
+          "before": "e601e91a1a12a133a1a11aa1a1a121",
+          "after": "de2e2cd586a11e8fde16dd350121a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2300,
+      "file": "9/S9012.DAT",
+      "offset": "0x47AE6",
+      "before": "데스: 엘리베이터의 줄을 끊고 한꺼번에 작동시켜 주마.",
+      "target": "데스: 엘리베이터 줄을 끊어 한꺼번에 끝장내 주마.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293606,
+          "before": "e28116e601",
+          "after": "8130dd02a1"
+        },
+        {
+          "at": 293612,
+          "before": "fa30defa3067027f30defaa1defa",
+          "after": "682eddfe0302a1dd810da1dec314"
+        },
+        {
+          "at": 293627,
+          "before": "1de60117a11c1ddefadefa1b1dd2",
+          "after": "53de479b0ea1dda35647a1404521"
+        },
+        {
+          "at": 293642,
+          "before": "21",
+          "after": "a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2318,
+      "file": "9/S9051.DAT",
+      "offset": "0x479B4",
+      "before": "아나운서: 매우 서러운 소식을 전해 드려야 합니다.",
+      "target": "아나운서: 매우 안타까운 소식을 전해 드려야 합니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283008,
+          "before": "e09ce099dffae057df809ce0a7dff2e0bf9ce07ee068e0549ce09ee0a39ce0fce0c3e06a9ce09ce09d9ce09fe0c19ce098dfa3e046e034e0ab9ce0cfe011e0e0e0d69ce0c4e0c29c18e04ee0dfe0d60d",
+          "after": "091e8625dd02a1ddc93da194dd7f3b86a1dd07ddb50da14f2ba1173c49a1dd1d070121000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283135,
+          "before": "35",
+          "after": "20"
+        },
+        {
+          "at": 293300,
+          "before": "091e8625dd02",
+          "after": "e284a1a1a1a1"
+        },
+        {
+          "at": 293307,
+          "before": "ddc93d",
+          "after": "a1a1a1"
+        },
+        {
+          "at": 293311,
+          "before": "252086",
+          "after": "a1a1a1"
+        },
+        {
+          "at": 293315,
+          "before": "dd07ddb50d",
+          "after": "a1a1a1a1a1"
+        },
+        {
+          "at": 293321,
+          "before": "4f2b",
+          "after": "a1a1"
+        },
+        {
+          "at": 293324,
+          "before": "dd233c49",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 293329,
+          "before": "dd1d070121",
+          "after": "a1a1a1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2352,
+      "file": "B/SB022.DAT",
+      "offset": "0x47C36",
+      "before": "하늘의 목소리: 그리고 쿠쿠루여, 너는 이제부터 세계에서 닫히는 토우빌에 남아",
+      "target": "하늘의 목소리: 그리고 쿠쿠루여, 너는 이제 세상과 단절될 토우빌에 남아",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284317,
+          "before": "dd01666c02a18cdd110e25a1de83dd5906a1833ddda70ea1dd3d09",
+          "after": "0366a18c8bdd18a1dd35dddaddd9a1833ddda70ea1dd3d09000000"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2405,
+      "file": "B/SB072.DAT",
+      "offset": "0x480F6",
+      "before": "병사: 찾았습니다.",
+      "target": "병사: 찾았습니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283392,
+          "before": "e00ee0a5df809ce0cadffde05fe035e0c10f",
+          "after": "8234dd02a1dd56dd2d2d0701210000000000"
+        },
+        {
+          "at": 295158,
+          "before": "8234dd02",
+          "after": "e287a1a1"
+        },
+        {
+          "at": 295163,
+          "before": "1f612d070121",
+          "after": "a1a1a1a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2409,
+      "file": "B/SB072.DAT",
+      "offset": "0x48268",
+      "before": "대신: 그게 좋을 거다. 토우빌 마을 사람들의 목숨은 우리 손에 달려 있으니 말이다.",
+      "target": "대신: 그게 좋을 거다. 토우빌 마을 사람들의 목숨은 우리 손에 달려 있으니 말이다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282640,
+          "before": "3d2e06a1833ddda7a1450da134dd220a0fa1dd33de220da114dd4441dd26a17da150a11f4e07a11bdd010121",
+          "after": "833ddda7a1450da134dd220a0fa1dd33de2226a13d2ea1850ea1de5f3ca11f4e07a11b030121000000000000"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2460,
+      "file": "C1/SC081.DAT",
+      "offset": "0x46F0C",
+      "before": "아파도 할까?|예|그만",
+      "target": "아프기는 싫지만, 그래도 할까?|예|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284928,
+          "before": "0000000000000000000000000000000000000000",
+          "after": "09dd9d2406a1de7d0438b3a115dd1233a17d3bd1"
+        },
+        {
+          "at": 285055,
+          "before": "00",
+          "after": "0b"
+        },
+        {
+          "at": 290572,
+          "before": "09dd7b33",
+          "after": "e293a1a1"
+        },
+        {
+          "at": 290577,
+          "before": "7d3bdd03",
+          "after": "a1a1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2464,
+      "file": "C1/SC091.DAT",
+      "offset": "0x46DE6",
+      "before": "난 언제든 좋아.|예|그만",
+      "target": "난 언제든 좋아.|예|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 282753,
+          "before": "6fdd06dddc1ed10000000000",
+          "after": "6aa1dd3066dd26a1dd0d0921"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2470,
+      "file": "C1/SC091.DAT",
+      "offset": "0x4701C",
+      "before": "난 싫다만, 하겠나?|한다|그만",
+      "target": "난 싫다만, 하겠나?|한다|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283137,
+          "before": "c0ddbda1dd21410000000000",
+          "after": "6aa1de7d0138b3a119541ed1"
+        },
+        {
+          "at": 283263,
+          "before": "04",
+          "after": "0a"
+        },
+        {
+          "at": 290844,
+          "before": "7d3bdd03",
+          "after": "e285a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2472,
+      "file": "C2/SC0A1.DAT",
+      "offset": "0x46E48",
+      "before": "싸우고 싶어?|예|그만",
+      "target": "싸우고 싶어?|예|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283904,
+          "before": "e03fdfede099e04700",
+          "after": "dd143d1ca1dd4e14d1"
+        },
+        {
+          "at": 284031,
+          "before": "02",
+          "after": "03"
+        },
+        {
+          "at": 290376,
+          "before": "4fdd39dd03",
+          "after": "e28ba1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2473,
+      "file": "C2/SC0A1.DAT",
+      "offset": "0x46EA4",
+      "before": "해 보자고.|예|그만",
+      "target": "해 보자고.|예|그만",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284032,
+          "before": "dd3bdd3a0100",
+          "after": "2ba160281c21"
+        },
+        {
+          "at": 284159,
+          "before": "00",
+          "after": "02"
+        },
+        {
+          "at": 290468,
+          "before": "4fdd39d1",
+          "after": "e28ca1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e503",
+        "e601",
+        "e503"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2483,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x45DE8",
+      "before": "20회까지 앞으로 회입니다.힘내 주십시오.",
+      "target": "20회까지 앞으로 회입니다. 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 19072,
+          "before": "0000000000000000000000",
+          "after": "0b917a3b04a1ddba4ed5a1"
+        },
+        {
+          "at": 19199,
+          "before": "00",
+          "after": "06"
+        },
+        {
+          "at": 286184,
+          "before": "0b917a3b04",
+          "after": "e2e2a1a1a1"
+        },
+        {
+          "at": 286190,
+          "before": "ddba4edd04a17a7f07",
+          "after": "a1a1e821e2d3a1a1e6"
+        },
+        {
+          "at": 286200,
+          "before": "217447a1405d294621",
+          "after": "7447a1405d294621a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e821",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2486,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x45EE6",
+      "before": "40회까지 앞으로 회입니다.힘내 주십시오.",
+      "target": "40회까지 앞으로 회입니다. 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 19200,
+          "before": "0000000000000000000000",
+          "after": "57917a3b04a1ddba4ed5a1"
+        },
+        {
+          "at": 19327,
+          "before": "00",
+          "after": "06"
+        },
+        {
+          "at": 286438,
+          "before": "57917a3b04",
+          "after": "e2e3a1a1a1"
+        },
+        {
+          "at": 286444,
+          "before": "ddba4edd04a17a7f07",
+          "after": "a1a1e821e2d3a1a1e6"
+        },
+        {
+          "at": 286454,
+          "before": "217447a1405d294621",
+          "after": "7447a1405d294621a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e821",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2489,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x45FE4",
+      "before": "80회까지 앞으로 회입니다.힘내 주십시오.",
+      "target": "80회까지 앞으로 회입니다. 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 19328,
+          "before": "0000000000000000000000",
+          "after": "10917a3b04a1ddba4ed5a1"
+        },
+        {
+          "at": 19455,
+          "before": "00",
+          "after": "06"
+        },
+        {
+          "at": 286692,
+          "before": "10917a3b04",
+          "after": "e2e4a1a1a1"
+        },
+        {
+          "at": 286698,
+          "before": "ddba4edd04a17a7f07",
+          "after": "a1a1e821e2d3a1a1e6"
+        },
+        {
+          "at": 286708,
+          "before": "217447a1405d294621",
+          "after": "7447a1405d294621a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e821",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2492,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x460E2",
+      "before": "120회까지 앞으로 회입니다.힘내 주십시오.",
+      "target": "120회까지 앞으로 회입니다. 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 19456,
+          "before": "000000000000000000000000",
+          "after": "4a0b917a3b04a1ddba4ed5a1"
+        },
+        {
+          "at": 19583,
+          "before": "00",
+          "after": "07"
+        },
+        {
+          "at": 286946,
+          "before": "4a0b917a3b04",
+          "after": "e2e5a1a1a1a1"
+        },
+        {
+          "at": 286953,
+          "before": "ddba4edd04a17a7f07",
+          "after": "a1a1e821e2d3a1a1e6"
+        },
+        {
+          "at": 286963,
+          "before": "217447a1405d294621",
+          "after": "7447a1405d294621a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e821",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2495,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x461E0",
+      "before": "160회까지 앞으로 회입니다.힘내 주십시오.",
+      "target": "160회까지 앞으로 회입니다. 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 19584,
+          "before": "000000000000000000000000",
+          "after": "4a9f917a3b04a1ddba4ed5a1"
+        },
+        {
+          "at": 19711,
+          "before": "00",
+          "after": "07"
+        },
+        {
+          "at": 287200,
+          "before": "4a9f917a3b04",
+          "after": "e2e6a1a1a1a1"
+        },
+        {
+          "at": 287207,
+          "before": "ddba4edd04a17a7f07",
+          "after": "a1a1e821e2d3a1a1e6"
+        },
+        {
+          "at": 287217,
+          "before": "217447a1405d294621",
+          "after": "7447a1405d294621a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e821",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2498,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x462DE",
+      "before": "200회까지 앞으로 회입니다.힘내 주십시오.",
+      "target": "200회까지 앞으로 회입니다. 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 19712,
+          "before": "000000000000000000000000",
+          "after": "0b91917a3b04a1ddba4ed5a1"
+        },
+        {
+          "at": 19839,
+          "before": "00",
+          "after": "07"
+        },
+        {
+          "at": 287454,
+          "before": "0b91917a3b04",
+          "after": "e2e7a1a1a1a1"
+        },
+        {
+          "at": 287461,
+          "before": "ddba4edd04a17a7f07",
+          "after": "a1a1e821e2d3a1a1e6"
+        },
+        {
+          "at": 287471,
+          "before": "217447a1405d294621",
+          "after": "7447a1405d294621a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e821",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2505,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46572",
+      "before": "넘치는 과실을 손에넣었다.",
+      "target": "넘치는 과실을 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 288126,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2506,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x465B6",
+      "before": "20번째 승리를 목표로 힘내 주십시오.",
+      "target": "20번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 288184,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 288194,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2508,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4664C",
+      "before": "20번째 승리를 목표로 힘내 주십시오.",
+      "target": "20번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 288334,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 288344,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2510,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x466E2",
+      "before": "20번째 승리를 목표로 힘내 주십시오.",
+      "target": "20번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 288484,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 288494,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2512,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46778",
+      "before": "20번째 승리를 목표로 힘내 주십시오.",
+      "target": "20번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 288634,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 288644,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2516,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x468FA",
+      "before": "힘의 열매를 손에넣었다.",
+      "target": "힘의 열매를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 289027,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2517,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4693C",
+      "before": "40번째 승리를 목표로 힘내 주십시오.",
+      "target": "40번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 289086,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 289096,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2519,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x469D0",
+      "before": "40번째 승리를 목표로 힘내 주십시오.",
+      "target": "40번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 289234,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 289244,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2521,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46A68",
+      "before": "40번째 승리를 목표로 힘내 주십시오.",
+      "target": "40번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 289386,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 289396,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2522,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46ABC",
+      "before": "마력의 샘을 손에넣었다.",
+      "target": "마력의 샘을 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 289477,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2523,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46AFE",
+      "before": "40번째 승리를 목표로 힘내 주십시오.",
+      "target": "40번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 289536,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 289546,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2527,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46C84",
+      "before": "얼음의 수호를 손에넣었다.",
+      "target": "얼음의 수호를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 289933,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2528,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46CC6",
+      "before": "80번째 승리를 목표로 힘내 주십시오.",
+      "target": "80번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 289992,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 290002,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2530,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46D5A",
+      "before": "80번째 승리를 목표로 힘내 주십시오.",
+      "target": "80번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 290140,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 290150,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2531,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46DAE",
+      "before": "마법의 카트를 손에넣었다.",
+      "target": "마법의 카트를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 290233,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2532,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46DF2",
+      "before": "80번째 승리를 목표로 힘내 주십시오.",
+      "target": "80번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 290292,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 290302,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2534,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46E8C",
+      "before": "80번째 승리를 목표로 힘내 주십시오.",
+      "target": "80번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 290446,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 290456,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2538,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4700E",
+      "before": "슬리플리스 카트를손에넣었다.",
+      "target": "슬리플리스 카트를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 290843,
+          "before": "850e6f",
+          "after": "a1dd9c"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2539,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47054",
+      "before": "120번째 승리를 목표로 힘내 주십시오.",
+      "target": "120번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 290903,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 290913,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2541,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x470EC",
+      "before": "120번째 승리를 목표로 힘내 주십시오.",
+      "target": "120번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 291055,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 291065,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2542,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47140",
+      "before": "거울을 손에넣었다.",
+      "target": "거울을 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 291141,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2543,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4717E",
+      "before": "120번째 승리를 목표로 힘내 주십시오.",
+      "target": "120번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 291201,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 291211,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2544,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x471D2",
+      "before": "선글라스를손에넣었다.",
+      "target": "선글라스를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 291286,
+          "before": "dd053036850e6f610121",
+          "after": "8f3036a1dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2545,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47212",
+      "before": "120번째 승리를 목표로 힘내 주십시오.",
+      "target": "120번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 291349,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 291359,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2549,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47360",
+      "before": "디르의 어금니를 손에넣었다.",
+      "target": "디르의 어금니를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 291691,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2550,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x473A4",
+      "before": "160번째 승리를 목표로 힘내 주십시오.",
+      "target": "160번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 291751,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 291761,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2554,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4752A",
+      "before": "파워리스트를 손에넣었다.",
+      "target": "파워리스트를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 292148,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2555,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4756C",
+      "before": "200번째 승리를 목표로 힘내 주십시오.",
+      "target": "200번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 292207,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 292217,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2557,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47604",
+      "before": "200번째 승리를 목표로 힘내 주십시오.",
+      "target": "200번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 292359,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 292369,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2559,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4769C",
+      "before": "200번째 승리를 목표로 힘내 주십시오.",
+      "target": "200번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 292511,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 292521,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2561,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47730",
+      "before": "200번째 승리를 목표로 힘내 주십시오.",
+      "target": "200번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 292659,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 292669,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2566,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x478BC",
+      "before": "1000번째 승리를 목표로 힘내 주십시오.",
+      "target": "1000번째 승리를 목표로 힘내 주십시오.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293056,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 293066,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2570,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47A12",
+      "before": "넘치는 과실을 손에넣었다.",
+      "target": "넘치는 과실을 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293406,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2577,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47BFE",
+      "before": "마력의 샘을 손에넣었다.",
+      "target": "마력의 샘을 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293895,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2578,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47C44",
+      "before": "얼음의 수호를 손에넣었다.",
+      "target": "얼음의 수호를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 293965,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2580,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47CCE",
+      "before": "마법의 카트를 손에넣었다.",
+      "target": "마법의 카트를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 294105,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2582,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47D60",
+      "before": "슬리플리스 카트를손에넣었다.",
+      "target": "슬리플리스 카트를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 294253,
+          "before": "850e6f",
+          "after": "a1dd9c"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2584,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47DF2",
+      "before": "거울을 손에넣었다.",
+      "target": "거울을 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 294391,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2585,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47E34",
+      "before": "선글라스를손에넣었다.",
+      "target": "선글라스를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 294456,
+          "before": "dd053036850e6f610121",
+          "after": "8f3036a1dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2586,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47E78",
+      "before": "파워리스트를 손에넣었다.",
+      "target": "파워리스트를 얻었다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 294530,
+          "before": "850e6f610121",
+          "after": "dd9c610121a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2594,
+      "file": "C2/SC0C1.DAT",
+      "offset": "0x489BC",
+      "before": "오오, 이런 곳에 순수한 헤모지가 있구먼.",
+      "target": "오오, 이런 곳에 진짜 헤모지가 있구먼.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 297408,
+          "before": "dd01dd2aa1dd150ea1dece5053a1ddc355040ca11f87ddc121",
+          "after": "03dd2aa1dd150ea1dd3fdeb9a1ddc355040ca11f87ddc121a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2659,
+      "file": "D/SD031.DAT",
+      "offset": "0x4596E",
+      "before": "아까 그 몬스터에게 붙잡혀있던 할아버지다.",
+      "target": "아까 그 몬스터에게 붙잡혀있던 할아버지다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284032,
+          "before": "df979ce0bddee6e0bf9ce07fe12f0f9ce032dfe59cde6be0bae036e0d69c14df8c9cdfd8e09b9ce061e0f7e0a39ce097e0a09ce0c1e0619ce099e07ddf51e0a20f",
+          "after": "093ba115a16430020e41a1de32de10de4d1fdd25a17d09670401210000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 284159,
+          "before": "31",
+          "after": "18"
+        },
+        {
+          "at": 285038,
+          "before": "093b15",
+          "after": "e28ca1"
+        },
+        {
+          "at": 285042,
+          "before": "6430020e41",
+          "after": "a1a1a1a1a1"
+        },
+        {
+          "at": 285048,
+          "before": "de32de10de4d1fdd25",
+          "after": "a1a1a1a1a1a1a1a1a1"
+        },
+        {
+          "at": 285058,
+          "before": "7d0967040121",
+          "after": "a1a1a1a1a1a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2661,
+      "file": "D/SD031.DAT",
+      "offset": "0x459FE",
+      "before": "내 이름은 고겐. 너희 바람대로 3천 년의 시간을 넘어 다시 나타났지.",
+      "target": "내 이름은 고겐. 너희 바람대로 3천 년의 시간을 넘어 다시 나타났지.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 285183,
+          "before": "dd01",
+          "after": "a103"
+        },
+        {
+          "at": 285203,
+          "before": "dd04a127dde7a1dda50fa129dd1b0da1ddf414a10129a11edd7fde550421",
+          "after": "d5a127dde7a1dda50fa129dd1b0da1ddf414a10129a11edd7fde550421a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2671,
+      "file": "D/SD031.DAT",
+      "offset": "0x45D2E",
+      "before": "그렇지. 이 세계를 만들고 움직이는 모든 정령들의 대표",
+      "target": "그렇지. 이 세계를 만들고 움직이는 모든 정령들의 대표",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 286004,
+          "before": "dd01",
+          "after": "03a1"
+        },
+        {
+          "at": 286019,
+          "before": "dd0106a155dd26a131510a0fa137dd8a",
+          "after": "0306a155dd26a131510a0fa137dd8aa1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2674,
+      "file": "D/SD031.DAT",
+      "offset": "0x45E42",
+      "before": "그 돌 다섯 개를 모아 시온산의 봉인을 풀어야 하네.",
+      "target": "그 돌 다섯 개를 모아 시온산의 봉인을 풀어야 하네.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283163,
+          "before": "2b661906",
+          "after": "de451449"
+        },
+        {
+          "at": 283168,
+          "before": "3249",
+          "after": "197e"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2675,
+      "file": "D/SD031.DAT",
+      "offset": "0x45E92",
+      "before": "그럼 어떻게 그 정령들을 찾아내지?",
+      "target": "그럼 어떻게 그 정령들을 찾아내지?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 286362,
+          "before": "15a131510a0da1dd56094704dd03",
+          "after": "a115a131510a0da1dd56094704d1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2681,
+      "file": "D/SD031.DAT",
+      "offset": "0x4605A",
+      "before": "비행선이 필요하겠군",
+      "target": "비행선이 필요하겠군",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 286816,
+          "before": "dd01",
+          "after": "03a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2686,
+      "file": "D/SD031.DAT",
+      "offset": "0x461D2",
+      "before": "고대의 대마도사 고겐님이 힘이 되어 주겠다고 하는데.",
+      "target": "고대의 대마도사 고겐님이 힘이 되어 주겠다고 하는데.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 287200,
+          "before": "dd01a174dd017314a14054011ca119068121",
+          "after": "03a17403a17314a14054011ca119068121a1"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2688,
+      "file": "D/SD031.DAT",
+      "offset": "0x46276",
+      "before": "그렇다, 그러할 터인데...?",
+      "target": "그렇다, 그러할 터인데...?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 287355,
+          "before": "15207da102358121",
+          "after": "a115207da1023581"
+        },
+        {
+          "at": 287365,
+          "before": "dd03",
+          "after": "21d1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2695,
+      "file": "D/SD031.DAT",
+      "offset": "0x465EE",
+      "before": "굉장한 아이템을 손에넣었다!",
+      "target": "굉장한 아이템을 손에 넣었다!",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284160,
+          "before": "e0ebe0eee03be0bf9ce032e0ab9ce06ae0ebe0c4e04c9ce0d50d9cdf5c9ce09be0a2e0ab9ce032e09fe0149ce04be02ae0c10f",
+          "after": "de515653a10903dd5e0da1850ea16f6101a9000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 284287,
+          "before": "23",
+          "after": "0e"
+        },
+        {
+          "at": 288238,
+          "before": "de515653",
+          "after": "e28da1a1"
+        },
+        {
+          "at": 288243,
+          "before": "09dd01dd5e0d",
+          "after": "a1a1a1a1a1a1"
+        },
+        {
+          "at": 288250,
+          "before": "850e6f6101a9",
+          "after": "a1a1a1a1e41f"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [
+        "e41f"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2696,
+      "file": "D/SD031.DAT",
+      "offset": "0x4672A",
+      "before": "촌가라의굉장한 아이템을빼앗았다!",
+      "target": "촌가라의 굉장한 아이템을 빼앗았다!",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 16896,
+          "before": "000000000000000000000000000000000000000000000000",
+          "after": "960c8f0fa1de515653a10903dd5e0da1de13dda4dd2d01a9"
+        },
+        {
+          "at": 17023,
+          "before": "00",
+          "after": "14"
+        },
+        {
+          "at": 288554,
+          "before": "960cdd050fde515653",
+          "after": "e2d1a1a1a1a1a1a1a1"
+        },
+        {
+          "at": 288564,
+          "before": "09dd01dd5e0dde13dda4dd2d01a9",
+          "after": "a1a1a1a1a1a1a1a1a1a1a1a1e43d"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [
+        "e43d"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2698,
+      "file": "D/SD031.DAT",
+      "offset": "0x4699E",
+      "before": "굉장한 아이템을 빼앗아 들었다!",
+      "target": "굉장한 아이템을 빼앗았다!",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 17152,
+          "before": "00000000000000000000000000000000000000",
+          "after": "de515653a10903dd5e0da1de13dda4dd2d01a9"
+        },
+        {
+          "at": 17279,
+          "before": "00",
+          "after": "0e"
+        },
+        {
+          "at": 289183,
+          "before": "8749056e3689",
+          "after": "d3a1a1a1a1a1"
+        },
+        {
+          "at": 289193,
+          "before": "09",
+          "after": "a1"
+        },
+        {
+          "at": 289196,
+          "before": "1aa9",
+          "after": "a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [
+        "e41f"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2701,
+      "file": "D/SD031.DAT",
+      "offset": "0x48A5A",
+      "before": "돌을 손에 넣었다!",
+      "target": "돌을 손에 넣었다!",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283392,
+          "before": "de515653a109dd01dd5e0da1de13dda409a10a6101a9e41f",
+          "after": "720da1850ea16f6101a90000000000000000000000000000"
+        },
+        {
+          "at": 283519,
+          "before": "10",
+          "after": "06"
+        },
+        {
+          "at": 297562,
+          "before": "720d850e6f6101a9",
+          "after": "e287a1a1a1a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2702,
+      "file": "D/SD031.DAT",
+      "offset": "0x48AA4",
+      "before": "돌을 손에 넣었다!",
+      "target": "돌을 손에 넣었다!",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 297636,
+          "before": "720d850e6f6101a9",
+          "after": "e287a1a1a1a1a1a1"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2711,
+      "file": "E5/SE05A.DAT",
+      "offset": "0x48772",
+      "before": "후후후후... 하고, 아무도 없잖아!?",
+      "target": "후후후후 . . . 아니, 아무도 없잖아!?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283264,
+          "before": "e0c4e0a2e049029ce0c7df1c9ce0bd9ce099e0ab9ce002e025e027e0ec9cdfb79ce0cae0a3df59",
+          "after": "dd8ddd8ddd8ddd8d00000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283391,
+          "before": "1be099e0c29ce05be09a9ce0aae06be09b9ce036e09ee0b3e0a59cdfebdfa30f9cdfad9ce00bdf09e0880f",
+          "after": "020907b3000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283519,
+          "before": "1f",
+          "after": "00"
+        },
+        {
+          "at": 296818,
+          "before": "dd8ddd8ddd8ddd8d21",
+          "after": "e286a1a1e43d21e43d"
+        },
+        {
+          "at": 296828,
+          "before": "21a1191cb3a1095f33a171ddbc09a9dd03a1",
+          "after": "e43d21e43de43de43de287e601e43d095f33"
+        },
+        {
+          "at": 296847,
+          "before": "a1a1a1a1a1a1",
+          "after": "71ddbc09a9d1"
+        },
+        {
+          "at": 296855,
+          "before": "a1a1a1a1",
+          "after": "e43de43d"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [
+        "e43d",
+        "e43d",
+        "e43d",
+        "e43d",
+        "e43d",
+        "e43d",
+        "e601",
+        "e43d",
+        "e43d",
+        "e43d"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2734,
+      "file": "E5/SE05A.DAT",
+      "offset": "0x49012",
+      "before": "자, 다 같이 놀아요!",
+      "target": "자, 다 같이 출까요?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 299033,
+          "before": "dd01a1de84092ca9a1a1",
+          "after": "03a1763b2cd1a1a1e43d"
+        }
+      ],
+      "visible_rows": 1,
+      "control_sequence": [
+        "e43d"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2740,
+      "file": "F/SF021.DAT",
+      "offset": "0x47E36",
+      "before": "아아, 대체 이 오브와 정령에게 무슨 관계가 있는 걸까?",
+      "target": "아아, 대체 이 오브와 정령은 무슨 관계가 있는 걸까?",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283392,
+          "before": "de6be0bae09b9ce0ebe0eedf809cde6be0bae0a39ce09edff8e036e0d69ce00be098e0159ce0849ce056e06ae0bd9cdf37e039dfe8e0649ce907e0bbe0c4e0dc9ce099e0ab9cdf93e06ae0889ce0f8dffde0a20f",
+          "after": "0909b3000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283519,
+          "before": "38",
+          "after": "00"
+        },
+        {
+          "at": 284544,
+          "before": "e0a0e0",
+          "after": "5fdda0"
+        },
+        {
+          "at": 284548,
+          "before": "0d9ce099e09fe014e0a79ce093e0dc9ce0cfe0a29cdfb2e0a8e0990f",
+          "after": "1ddd110ca11f06a1dd8e3bd100000000000000000000000000000000"
+        },
+        {
+          "at": 284671,
+          "before": "16",
+          "after": "0a"
+        },
+        {
+          "at": 294455,
+          "before": "8b",
+          "after": "87"
+        },
+        {
+          "at": 294460,
+          "before": "69defa3c020c3096a10f15184da1",
+          "after": "37dd90a103a146ddc888a1315126"
+        },
+        {
+          "at": 294477,
+          "before": "defadefa20",
+          "after": "e290a1a1a1"
+        },
+        {
+          "at": 294486,
+          "before": "932cd1",
+          "after": "a1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e43d",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2751,
+      "file": "F/SF021.DAT",
+      "offset": "0x48212",
+      "before": "인간의 무지는 때때로 많은 불행을 낳는다. 하지만 인간은 배우고 알 수 있어.",
+      "target": "인간의 무지는 때때로 많은 비극을 낳는다. 하지만 인간은 배우고 깨달을 수 있다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283019,
+          "before": "dd04a1ddac26a1dd13dd310da1de6d060121a1190438a135dd1b26a1dd933d1ca1dd1ea150",
+          "after": "d5a1ddac26a1dd06ea200da1de6d060121a1190438a135dd1b26a1dd933d1ca1de46de5f0d"
+        },
+        {
+          "at": 283057,
+          "before": "1f14210000",
+          "after": "50a11f0121"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2767,
+      "file": "F/SF041.DAT",
+      "offset": "0x47AAC",
+      "before": "불꽃의 정령: 그래, 이 연구소는 새로운 에릴베 연구를 하고 있다. 즉 생명력 에릴베다.",
+      "target": "불꽃의 정령: 그래, 이 연구소는 새로운 에너지를 연구하고 있다 . 바로 생명력 에너지다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 283264,
+          "before": "e00adf99e09b9ce0ebe0eedf809ce09fe0ecea42e0c29ce057e0d69ce099e034e0a09ce0cfdfbf9cded9e0159ce901e0c29ce013e0bde0a29ce056e036e09fe014e0579ce0dbe0a2e0d69ce009ea9ce0c29ce013e0bd9ce09ce035e0c10f",
+          "after": "dd13dd8c0fa13151dd02000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283391,
+          "before": "43",
+          "after": "03"
+        },
+        {
+          "at": 284416,
+          "before": "eae4e09d9ce05ce09b9ce013df809ce099e0c29ce00adf99e09b9ce0ebe0ee0f9ce0bd9cdf1ce024e0d9e09f9cdf30dff4eab19cdfaadf5c9ce08ee0a39cdf2fe098e07f9ce0cadffde0c10f",
+          "after": "15dd12b3a103a1ddad87dd0706000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 284543,
+          "before": "39",
+          "after": "09"
+        },
+        {
+          "at": 293548,
+          "before": "dd13dd8c0fa13151dd02",
+          "after": "e286a1a1a1e601e28fa1"
+        },
+        {
+          "at": 293559,
+          "before": "15dd12b3",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 293564,
+          "before": "dd01a1ddad87dd0706a1de3ddd0486a10eddcaddfea1ddad8736",
+          "after": "a1a1e415de3dd586a1e40be6010e890436a1ddad87191ca1a1a1"
+        },
+        {
+          "at": 293591,
+          "before": "191ca11f0121a1ded0a1dd36dd34dd2ba10eddcaddfe0121a1a1a1",
+          "after": "e4151f01a1a1e43d21e601dd08d5a1dd36dd34dd2ba10e89040121"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601",
+        "e415",
+        "e40b",
+        "e601",
+        "e415",
+        "e43d",
+        "e601"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2768,
+      "file": "F/SF041.DAT",
+      "offset": "0x47B26",
+      "before": "불꽃의 정령: 불꽃의 정령인 나를 붙잡아 에릴베를 계속 빼앗아 왔다.",
+      "target": "불꽃의 정령: 불꽃의 정령인 나를 붙잡아 에너지를 계속 빼앗아 왔다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284544,
+          "before": "e00adf99e09b9ce0ebe0eedf809ce00bdf09e084e0c10d9ce0a7e064e0c1e0620f9ce0bd9ceae4e09de0ab9ce00bdfb7e0a09ce0c1e0620f",
+          "after": "dd13dd8c0fa13151350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 284671,
+          "before": "25",
+          "after": "05"
+        },
+        {
+          "at": 285056,
+          "before": "e00adf99e09b9ce0ebe0eedf809ce029e0bb0d9ce0bd9cdf1ce024e0d9e0c29cdf92e0d6dffa9ce09fe0ecea429cdf1ce024e0ab9ce0c4e07f9ce0cae0c10f9cead79ce004e04ee08c9ce09fe0ecea42e0c10f",
+          "after": "1e36a1de32de1009000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 285183,
+          "before": "45",
+          "after": "04"
+        },
+        {
+          "at": 286336,
+          "before": "0f0f0fe091e04e9ce06ae0f7e03be09b9cea62e04ae0bf9cdd2ce0bf9ce053e102e0a39ce09ae05c9ceab3e07f9ce0cae0c10f",
+          "after": "dd11dd5fa1de13dda409a1dd880121000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 286463,
+          "before": "2b",
+          "after": "07"
+        },
+        {
+          "at": 293671,
+          "before": "8d0f1516",
+          "after": "86a1a1a1"
+        },
+        {
+          "at": 293677,
+          "before": "92020f1511",
+          "after": "e290a1a1a1"
+        },
+        {
+          "at": 293686,
+          "before": "53a1defa3a0e",
+          "after": "e294a1a1a1a1"
+        },
+        {
+          "at": 293696,
+          "before": "defadefa1fdefa30",
+          "after": "0e890436a1a1a1a1"
+        },
+        {
+          "at": 293707,
+          "before": "a109dd5f",
+          "after": "e29ea1a1"
+        },
+        {
+          "at": 293712,
+          "before": "1d5a1a21",
+          "after": "a1a1a1a1"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [
+        "e601",
+        "e415",
+        "e40b",
+        "e601",
+        "e415"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2770,
+      "file": "F/SF041.DAT",
+      "offset": "0x47BE0",
+      "before": "불꽃의 정령: 에릴베는 서로 나누어 주며 올려 가는 것이지 상대에게서 억지로 빼앗는 것이 아니다.",
+      "target": "불꽃의 정령: 에너지는 서로 나누며 키워 가는 것이지 억지로 빼앗는 게 아니다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284161,
+          "before": "13",
+          "after": "b3"
+        },
+        {
+          "at": 284163,
+          "before": "8c0fa13151dd02a1dd13dd8c0fa1315135a11e36a1de32de1009a10eddcaddfe36a1dd11dd5fa1de13dda409a1dd880121",
+          "after": "68a10c06a11803040000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 284287,
+          "before": "2c",
+          "after": "08"
+        },
+        {
+          "at": 293856,
+          "before": "dd13dd8c0fa13151dd02a10eddcaddfe06a1",
+          "after": "e286a1a1a1e6010e890406a1a1a1a1a1e415"
+        },
+        {
+          "at": 293875,
+          "before": "dd04a11edd5514",
+          "after": "d5a11edd55de1f"
+        },
+        {
+          "at": 293883,
+          "before": "40de1fa1993c",
+          "after": "e601e415e28d"
+        },
+        {
+          "at": 293890,
+          "before": "0c06",
+          "after": "a1a1"
+        },
+        {
+          "at": 293893,
+          "before": "18dd0104a18b370e4125a1dd5204dd04",
+          "after": "a1a1a1a1e41fe601dd5204d5a1a1a1a1"
+        },
+        {
+          "at": 293910,
+          "before": "de13dda406a118dd01a109070121a1",
+          "after": "a1e415de13dda406a141a109070121"
+        }
+      ],
+      "visible_rows": 4,
+      "control_sequence": [
+        "e601",
+        "e415",
+        "e601",
+        "e415",
+        "e41f",
+        "e601",
+        "e415"
+      ],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2777,
+      "file": "F/SF041.DAT",
+      "offset": "0x47EE4",
+      "before": "불의 정령: 생물이 가진 생명을 에릴베로 바꾸는 일을 생각하기 시작했다.",
+      "target": "불의 정령: 생물이 가진 생명을 에너지로 바꾸는 일을 생각하기 시작했다.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 284044,
+          "before": "dd01a10cdd3fa1dd36dd340da10eddcaddfedd04a1dd08dde606a16b0da1dd36dd6d1924a129dd64dd0f0121",
+          "after": "03a10cdd3fa1dd36dd340da10e8904d5a1dd08dde606a16b0da1dd36dd6d1924a129dd64dd0f012100000000"
+        }
+      ],
+      "visible_rows": 3,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    },
+    {
+      "row": 2789,
+      "file": "F/SF041.DAT",
+      "offset": "0x48344",
+      "before": "나는 그대에게 져 보고 싶구먼.",
+      "target": "나는 그쪽에 기대를 걸어 보고 싶구먼.",
+      "status": "BUILT",
+      "reason": "",
+      "writes": [
+        {
+          "at": 295752,
+          "before": "370e41",
+          "after": "dd690e"
+        },
+        {
+          "at": 295756,
+          "before": "dd63a1601ca1dd4e87ddc121a1a1a1a1a1",
+          "after": "243736a1dd8e14a1601ca1dd4e87ddc121"
+        }
+      ],
+      "visible_rows": 2,
+      "control_sequence": [],
+      "readback": "PASS",
+      "final_readback": "PASS"
+    }
+  ]
+}

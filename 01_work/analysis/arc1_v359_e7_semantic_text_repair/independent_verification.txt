@@ -1,0 +1,11 @@
+Arc the Lad 1 V359 independent static verification
+STATIC PASS / RUNTIME PENDING / TEST_ONLY
+archive topology/order: PASS 164/164
+changed members: 21/S2045.DAT,31/S3013.DAT,4/S4033.DAT,5/S5013.DAT,6/S6014.DAT,7/S7012.DAT,8/S8013.DAT
+Expected-Write: PASS 331 bytes in seven DAT members
+semantic decode: PASS 8/8; glyph missing 0; every target <=3 rows
+existing slots: PASS 7/7 caller/body/metadata preserved
+new slot: PASS 4/S4033 Bank-A slot33 zero premise and sole E2:A2 script caller
+L/R map: PASS DD D8 / DE 88; no COMM.IMG allocation
+PSX.EXE/COMM.IMG/non-target members/delta: PASS
+runtime: PENDING user cold boot

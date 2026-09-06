@@ -1,0 +1,9 @@
+{
+  "bin": "E:\\korean\\03_output\\V359_CURSOR_LINES_TEST.bin",
+  "cue": "E:\\korean\\03_output\\V359_CURSOR_LINES_TEST.cue",
+  "bin_sha256": "B4C44205AFCABC5219588BC6C6C26A6C7F618AE3209ED2E277B1A0593248C511",
+  "cue_sha256": "71F0E58AE35C96508109B0FA233081A28DE39B2E586835D84492D9A7667F554E",
+  "archive_sha256": "84844764CE39B8B378496BAAB024A967AD9FAD3EE6FE17AABC871A59E49132C2",
+  "verification": "patch    arc1_v359_cursor_lines_TEST_ONLY.zip\n\noriginal E:\\arc\\����\\arc1.bin   507 files\nbuilt    E:\\korean\\03_output\\V359_CURSOR_LINES_TEST.bin   507 files\n\npass  all 506 data files kept their sector number\npass  COMM.DAT   LBA 307  (executable expects 307)\npass  COMM.IMG   LBA 667  (executable expects 667)\npass  COMM.SND   LBA 891  (executable expects 891)\n\n  comparing 164 patched files against the image\npass  all 164 patched files on the disc match arc1_v359_cursor_lines_TEST_ONLY.zip\n\n  PSX.EXE at LBA 268481 (was 23), 587776 bytes\n\nRESULT: PASS - disc layout/member integrity only; runtime not established\n",
+  "runtime_verified": false
+}

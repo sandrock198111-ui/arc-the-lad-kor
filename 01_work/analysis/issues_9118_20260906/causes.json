@@ -1,0 +1,318 @@
+{
+  "source_sha256": "b0005b318220fc61c11c3290837a7df245646254ffa5cebe7ea9a11932c7f421",
+  "source_bytes": 1650,
+  "states": [
+    {
+      "slot": 1,
+      "ram_base": "0x1a62",
+      "vram_base": "0x201ddc",
+      "ot_context": "0x801ae1e4",
+      "parity": 0,
+      "ot_packets": 725,
+      "ot_terminated": true,
+      "cursor_pixels_exact": true,
+      "cursor_owner": "0x801f52bc",
+      "cursor_active_flag": 0,
+      "panel_xywh": [
+        80,
+        103,
+        160,
+        52
+      ],
+      "slime_position_readers": [
+        {
+          "packet": "0x801dce54",
+          "order": 553,
+          "xy": [
+            [
+              224,
+              87
+            ],
+            [
+              255,
+              87
+            ],
+            [
+              224,
+              118
+            ],
+            [
+              255,
+              118
+            ]
+          ],
+          "uv": [
+            [
+              0,
+              224
+            ],
+            [
+              31,
+              224
+            ],
+            [
+              0,
+              255
+            ],
+            [
+              31,
+              255
+            ]
+          ],
+          "clut": "0x7dcc",
+          "tpage": "0xf",
+          "physical_halfwords": [
+            960,
+            224,
+            968,
+            256
+          ],
+          "overlap_cursor": false
+        },
+        {
+          "packet": "0x801dce04",
+          "order": 555,
+          "xy": [
+            [
+              224,
+              87
+            ],
+            [
+              255,
+              87
+            ],
+            [
+              224,
+              118
+            ],
+            [
+              255,
+              118
+            ]
+          ],
+          "uv": [
+            [
+              0,
+              224
+            ],
+            [
+              31,
+              224
+            ],
+            [
+              0,
+              255
+            ],
+            [
+              31,
+              255
+            ]
+          ],
+          "clut": "0x7dcc",
+          "tpage": "0xf",
+          "physical_halfwords": [
+            960,
+            224,
+            968,
+            256
+          ],
+          "overlap_cursor": false
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "ram_base": "0x1a62",
+      "vram_base": "0x201ddc",
+      "ot_context": "0x801ae1e4",
+      "parity": 0,
+      "ot_packets": 694,
+      "ot_terminated": true,
+      "cursor_pixels_exact": false,
+      "cursor_owner": "0x0",
+      "cursor_active_flag": 0,
+      "panel_xywh": [
+        130,
+        110,
+        160,
+        38
+      ],
+      "slime_position_readers": []
+    },
+    {
+      "slot": 4,
+      "ram_base": "0x1a62",
+      "vram_base": "0x201ddc",
+      "ot_context": "0x801aeba8",
+      "parity": 1,
+      "ot_packets": 695,
+      "ot_terminated": true,
+      "cursor_pixels_exact": false,
+      "cursor_owner": "0x0",
+      "cursor_active_flag": 0,
+      "panel_xywh": [
+        130,
+        110,
+        160,
+        38
+      ],
+      "slime_position_readers": []
+    },
+    {
+      "slot": 6,
+      "ram_base": "0x1a62",
+      "vram_base": "0x201ddc",
+      "ot_context": "0x801ae1e4",
+      "parity": 0,
+      "ot_packets": 794,
+      "ot_terminated": true,
+      "cursor_pixels_exact": true,
+      "cursor_owner": "0x801f52bc",
+      "cursor_active_flag": 1,
+      "panel_xywh": [
+        80,
+        103,
+        160,
+        52
+      ],
+      "slime_position_readers": []
+    },
+    {
+      "slot": 8,
+      "ram_base": "0x1a62",
+      "vram_base": "0x201ddc",
+      "ot_context": "0x801ae1e4",
+      "parity": 0,
+      "ot_packets": 725,
+      "ot_terminated": true,
+      "cursor_pixels_exact": true,
+      "cursor_owner": "0x801f52bc",
+      "cursor_active_flag": 0,
+      "panel_xywh": [
+        80,
+        103,
+        160,
+        52
+      ],
+      "slime_position_readers": [
+        {
+          "packet": "0x801dce54",
+          "order": 553,
+          "xy": [
+            [
+              224,
+              87
+            ],
+            [
+              255,
+              87
+            ],
+            [
+              224,
+              118
+            ],
+            [
+              255,
+              118
+            ]
+          ],
+          "uv": [
+            [
+              32,
+              192
+            ],
+            [
+              63,
+              192
+            ],
+            [
+              32,
+              223
+            ],
+            [
+              63,
+              223
+            ]
+          ],
+          "clut": "0x7dcc",
+          "tpage": "0x1f",
+          "physical_halfwords": [
+            968,
+            448,
+            976,
+            480
+          ],
+          "overlap_cursor": true
+        },
+        {
+          "packet": "0x801dce04",
+          "order": 555,
+          "xy": [
+            [
+              224,
+              87
+            ],
+            [
+              255,
+              87
+            ],
+            [
+              224,
+              118
+            ],
+            [
+              255,
+              118
+            ]
+          ],
+          "uv": [
+            [
+              32,
+              192
+            ],
+            [
+              63,
+              192
+            ],
+            [
+              32,
+              223
+            ],
+            [
+              63,
+              223
+            ]
+          ],
+          "clut": "0x7dcc",
+          "tpage": "0x1f",
+          "physical_halfwords": [
+            968,
+            448,
+            976,
+            480
+          ],
+          "overlap_cursor": true
+        }
+      ]
+    }
+  ],
+  "item_geometry": {
+    "background_height": 38,
+    "text_room_height": 28,
+    "original_constants_retained": true,
+    "packet_rows_y": [
+      116,
+      132
+    ],
+    "packet_height": 16,
+    "background_y": 110,
+    "background_end_exclusive": 148,
+    "text_end_exclusive": 148
+  },
+  "lr": {
+    "pointer_file": "0x82360",
+    "text_file": "0x80f02",
+    "payload_hex": "018da1378b0da1dd53df9add1d0701",
+    "prior_lr_fix": "4/S4033.DAT:0x48102, separate dialogue consumer"
+  }
+}

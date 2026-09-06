@@ -1,0 +1,66 @@
+[
+  {
+    "slot": 8,
+    "path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_0e9fd30e-1ee3-4d6e-b098-6c41deec8ca4\\HASH-9118D5AA9448C036_8.sav",
+    "sha256": "c35b720de9d6118ab7f8d07de9cb8df5f9cbbf7e208d450bc7d92640fee54d2f",
+    "format": "DUCCV",
+    "title": "V359_REVIEW_UPDATE2",
+    "thumbnail_bytes": 196608
+  },
+  {
+    "slot": 5,
+    "path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_1f78b8d8-d8eb-4398-9cd5-a2e85e396d19\\HASH-9118D5AA9448C036_5.sav",
+    "sha256": "497b685556e02c2ce0de27392c6568ee4bf0cc99b58ea097481476f39fbd52ba",
+    "format": "DUCCV",
+    "title": "V359_REVIEW_UPDATE2",
+    "thumbnail_bytes": 196608
+  },
+  {
+    "slot": 6,
+    "path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_40b85c23-0914-42da-b909-bbefe8ed8a72\\HASH-9118D5AA9448C036_6.sav",
+    "sha256": "8698ec465b62b2fa0dd84e47e837eecd7e282f3514892a42b2cb168b3a743da5",
+    "format": "DUCCV",
+    "title": "V359_REVIEW_UPDATE2",
+    "thumbnail_bytes": 196608
+  },
+  {
+    "slot": 7,
+    "path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_7fd57bc4-0287-475d-82f3-304fe45068ac\\HASH-9118D5AA9448C036_7.sav",
+    "sha256": "7cf415e565865a7dae523de398720620b376cc59d0e25908aaa5c6b65816a45f",
+    "format": "DUCCV",
+    "title": "V359_REVIEW_UPDATE2",
+    "thumbnail_bytes": 196608
+  },
+  {
+    "slot": 3,
+    "path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_8e920db0-5a3a-4056-927d-0b419c5a0416\\HASH-9118D5AA9448C036_3.sav",
+    "sha256": "5bfd04580d5fab59b2376290b8d5123346d46fa848b4a73833b767129a16b1f7",
+    "format": "DUCCV",
+    "title": "V359_REVIEW_UPDATE2",
+    "thumbnail_bytes": 196608
+  },
+  {
+    "slot": 4,
+    "path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_ead116f5-a7b7-48bd-971a-23f73d08337c\\HASH-9118D5AA9448C036_4.sav",
+    "sha256": "84c8fdd9ca964cd5fc3eb68b4216587b27abd015c12533d078fb4fcefd1160b2",
+    "format": "DUCCV",
+    "title": "V359_REVIEW_UPDATE2",
+    "thumbnail_bytes": 196608
+  },
+  {
+    "slot": 1,
+    "path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_f741fcc8-0895-4e31-bbc2-90247fd73239\\HASH-9118D5AA9448C036_1.sav",
+    "sha256": "64f2bea06a57d9caf93fff8a730cb8a9e240dd5b3ff0cc9f162cd18f32b3bcd8",
+    "format": "DUCCV",
+    "title": "V359_REVIEW_UPDATE2",
+    "thumbnail_bytes": 196608
+  },
+  {
+    "slot": 2,
+    "path": "C:\\Users\\Administrator\\.paseo\\uploads\\upload_f9dfadf4-ac77-452f-b561-1f95e1d02d80\\HASH-9118D5AA9448C036_2.sav",
+    "sha256": "84b0435012fd1ec24c5898b4e0325daa07895ab5219aa15b1cdba93c03b7143f",
+    "format": "DUCCV",
+    "title": "V359_REVIEW_UPDATE2",
+    "thumbnail_bytes": 196608
+  }
+]

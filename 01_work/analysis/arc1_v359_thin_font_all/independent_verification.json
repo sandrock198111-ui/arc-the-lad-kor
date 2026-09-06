@@ -1,0 +1,28 @@
+{
+  "identity": "V359 full Thin font candidate (build number unchanged)",
+  "result": "PASS_STATIC_RUNTIME_PENDING_TEST_ONLY",
+  "full": {
+    "file": "arc1_v359_thin_font_all_TEST_ONLY_D38CAB43.zip",
+    "sha256": "D38CAB437797F649819E4D777C0C6344C67351D5EB5BFFAB812F22C4F71B821A"
+  },
+  "delta": {
+    "file": "arc1_v359_thin_font_all_TEST_ONLY_COMM_delta_from_v359_40E86013.zip",
+    "sha256": "40E860132A39D9FA24323B6345368C2CB30129B276CFC598AADC97952FEABAE5"
+  },
+  "checks": {
+    "archive_topology_order": "PASS 164/164",
+    "changed_members": [
+      "COMM.IMG"
+    ],
+    "expected_writes": "PASS 9324 COMM bytes",
+    "font_raster_control": "PASS exact Hanme and Thin component hashes",
+    "target_planes": "PASS 723/723 Thin readback",
+    "non_target_planes": "PASS 1197/1197 byte-semantic plane preservation",
+    "mapped_collisions": 0,
+    "full_hangul_collision_extras": 19,
+    "ieung_e_correction": "PASS U+C5D0/U+C5D1/U+C5D4/U+C5D8 only",
+    "protected_assets": "PASS native damage, quotes, compact digits/icons, E7/high page",
+    "psx_dat": "PASS byte exact V359"
+  },
+  "runtime": "opening scene visually approved except corrected ㅇ+ㅔ join; global PENDING"
+}

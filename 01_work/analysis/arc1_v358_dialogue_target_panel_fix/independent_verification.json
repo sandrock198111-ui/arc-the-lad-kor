@@ -1,0 +1,29 @@
+{
+  "version": "V358",
+  "result": "PASS_STATIC_RUNTIME_PENDING",
+  "full": {
+    "file": "arc1_v358_dialogue_target_panel_fix_TEST_ONLY_D499D9D4.zip",
+    "sha256": "D499D9D463A66B343A9D794A49753454788B3F18C6DC38B7CDE7A77304838061"
+  },
+  "delta": {
+    "file": "arc1_v358_dialogue_target_panel_fix_TEST_ONLY_delta_from_v357_AB190119.zip",
+    "sha256": "AB190119680DC4A0F5A46E619D01EF9AAD6F690ED3378B1B01CFB8A5C8E9164A"
+  },
+  "checks": {
+    "archive_topology_order": "PASS 164/164",
+    "changed_members": [
+      "F/SF0F1.DAT",
+      "PSX.EXE"
+    ],
+    "expected_writes": "PASS 62 bytes total (PSX 3, DAT 59)",
+    "dialogue_decode": "알겠느냐? 우리에게 봉인의 기술 따위는 필요 없다. 산으로 돌아가는 건 다른 볼일이 있어서다.",
+    "slot_capacity": "62/127 bytes",
+    "e2_caller_metadata": "PASS caller 0x47910, metadata 0x2D",
+    "panel_geometry": "PASS box 74,111,198,40; rows 115/131; margins 8/8/4/4",
+    "panel_caller": "PASS sole caller 0x80166898",
+    "patched_word_inbound_edges": 0,
+    "comm_and_non_target_preservation": "PASS",
+    "delta_readback": "PASS"
+  },
+  "runtime": "PENDING user cold boot and representative UI/dialogue review"
+}

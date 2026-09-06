@@ -1,0 +1,85 @@
+{
+  "version": "V358",
+  "status": "STATIC_BUILD_COMPLETE_RUNTIME_PENDING_TEST_ONLY",
+  "base": {
+    "file": "arc1_v357_user_reviewed_full_dialogue_bankb_TEST_ONLY_34854022.zip",
+    "sha256": "34854022BB0CA1C17BF4D798B8405009F8CC04914253E1D48476B2A2DBC3397A"
+  },
+  "output": {
+    "file": "arc1_v358_dialogue_target_panel_fix_TEST_ONLY_D499D9D4.zip",
+    "sha256": "D499D9D463A66B343A9D794A49753454788B3F18C6DC38B7CDE7A77304838061"
+  },
+  "delta": {
+    "file": "arc1_v358_dialogue_target_panel_fix_TEST_ONLY_delta_from_v357_AB190119.zip",
+    "sha256": "AB190119680DC4A0F5A46E619D01EF9AAD6F690ED3378B1B01CFB8A5C8E9164A"
+  },
+  "changed_members_vs_v357": [
+    "F/SF0F1.DAT",
+    "PSX.EXE"
+  ],
+  "changed_bytes": {
+    "F/SF0F1.DAT": 59,
+    "PSX.EXE": 3
+  },
+  "translation": {
+    "member": "F/SF0F1.DAT",
+    "caller": "0x47910",
+    "slot": 0,
+    "metadata": "0x2D",
+    "japanese": "わかつたか、この我々に封印の技など必要ではない。\n山に帰るのは別の用じゃ。",
+    "before": "알겠느냐, 우리에게 봉인의 기술 따위는 필요 없다. 산으로 돌아가는 데에는 다른 용무가 있다.",
+    "after": "알겠느냐? 우리에게 봉인의 기술 따위는 필요 없다. 산으로 돌아가는 건 다른 볼일이 있어서다.",
+    "encoded_bytes": 62,
+    "slot_capacity": 127
+  },
+  "target_panel": {
+    "function_ram": "0x80166AC4",
+    "sole_caller_ram": "0x80166898",
+    "box": {
+      "before": [
+        74,
+        111,
+        172,
+        34
+      ],
+      "after": [
+        74,
+        111,
+        198,
+        40
+      ]
+    },
+    "text_rows_y": {
+      "before": [
+        115,
+        129
+      ],
+      "after": [
+        115,
+        131
+      ]
+    },
+    "patches": [
+      {
+        "file_offset": "0x4C2EC",
+        "before_word": "0x340600AC",
+        "after_word": "0x340600C6",
+        "reason": "target panel width 172 -> 198"
+      },
+      {
+        "file_offset": "0x4C2F4",
+        "before_word": "0x34070022",
+        "after_word": "0x34070028",
+        "reason": "target panel height 34 -> 40"
+      },
+      {
+        "file_offset": "0x4C334",
+        "before_word": "0x34050081",
+        "after_word": "0x34050083",
+        "reason": "target panel second row y 129 -> 131"
+      }
+    ]
+  },
+  "preserved": "V357 Bank-B handler, COMM.IMG, all other dialogue/DAT, E2 caller, slot +0x7F metadata, E7 icons, cursors, bottom-help paths, member sizes/order",
+  "runtime": "PENDING user cold boot and target-panel/dialogue regression review"
+}

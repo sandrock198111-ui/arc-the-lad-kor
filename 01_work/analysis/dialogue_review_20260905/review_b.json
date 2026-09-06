@@ -1,0 +1,1579 @@
+{
+  "review_id": "dialogue_review_b_20260905",
+  "source": "05_docs/script_translated_full.csv",
+  "assigned_range": {
+    "first_data_row": 961,
+    "last_data_row": 1920,
+    "row_numbering": "1-based data rows excluding header"
+  },
+  "coverage": {
+    "rows_read": 960,
+    "excluded_rows": 55,
+    "eligible_rows_reviewed": 905,
+    "all_assigned_rows_read": true,
+    "method": "LLM read every Japanese/current Korean row, with neighboring storage context. 1067..1068 and 1328..1339 reread after truncated initial output. No regex-only language verdicts.",
+    "scene_runtime_verified": false,
+    "limitations": "Storage adjacency is not proven game consumption order. Corrupt-looking Japanese extraction and unresolved speaker/scene links explicitly remain context_uncertain. Current feasibility and control-token reconstruction were not run."
+  },
+  "exclusions": {
+    "source": "05_docs/v356_nontext_exclusions.csv",
+    "row_numbers": [
+      1302,
+      1303,
+      1304,
+      1305,
+      1306,
+      1307,
+      1319,
+      1320,
+      1321,
+      1322,
+      1323,
+      1324,
+      1339,
+      1340,
+      1341,
+      1342,
+      1343,
+      1344,
+      1515,
+      1516,
+      1517,
+      1518,
+      1519,
+      1520,
+      1523,
+      1524,
+      1525,
+      1526,
+      1527,
+      1528,
+      1537,
+      1538,
+      1539,
+      1540,
+      1541,
+      1542,
+      1558,
+      1559,
+      1560,
+      1561,
+      1562,
+      1563,
+      1783,
+      1784,
+      1785,
+      1786,
+      1787,
+      1788,
+      1800,
+      1801,
+      1802,
+      1803,
+      1804,
+      1805,
+      1883
+    ],
+    "policy": "Excluded by existing keyed ledger, not empty-Korean heuristic."
+  },
+  "historical_bank_b": {
+    "source": "05_docs/v356_bankb_review.csv",
+    "rows_in_assigned_range": [
+      1705,
+      1708,
+      1711,
+      1720,
+      1723,
+      1726,
+      1737,
+      1742,
+      1743,
+      1744,
+      1746,
+      1747,
+      1752,
+      1756,
+      1758,
+      1760,
+      1768,
+      1770
+    ],
+    "observation": "All 18 keyed records inspected. Current CSV substantially matches their draft text. Do not automatically re-flag already restored lines just because historical V354_SLOT_SHORTAGE exists."
+  },
+  "issues": [
+    {
+      "row_number": 1006,
+      "file": "32/S3051.DAT",
+      "offset": "0x48E70",
+      "japanese": "このあたりで\r\n消えたんだけどなっ・・。",
+      "current": "이근처에서사라졌는데 말이야...",
+      "category": "띄어쓰기",
+      "severity": "LOW",
+      "suggestion": "이 근처에서 사라졌는데 말이야...",
+      "reason": "'이 근처에서 사라졌는데'가 붙어 읽기 어렵다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1028,
+      "file": "32/S3061.DAT",
+      "offset": "0x480EC",
+      "japanese": "恵みの精霊 \r\n人の未来を無くさないための。",
+      "current": "은혜의 정령: 인간의 미래를 없애지 않기 위해서요.",
+      "category": "직역",
+      "severity": "MEDIUM",
+      "suggestion": "은혜의 정령: 인간의 미래를 지키기 위해서요.",
+      "reason": "인간의 미래를 없애지 않는다는 부자연스러운 목적 표현.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1036,
+      "file": "32/S3061.DAT",
+      "offset": "0x48396",
+      "japanese": "恵みの精霊 \r\nあなたのお父さんが、道標(みちしるベ)を示すでしょう。",
+      "current": "은혜의 정령: 당신의 아버지가 길잡이를 보여 줄 겁니다.",
+      "category": "직역",
+      "severity": "MEDIUM",
+      "suggestion": "은혜의 정령: 당신의 아버지가 나아갈 길을 알려 줄 겁니다.",
+      "reason": "'길잡이를 보여 주다'는 표지/방향을 가리킨다는 뜻이 불분명하다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1048,
+      "file": "32/S3063.DAT",
+      "offset": "0x47D88",
+      "japanese": "恵みの精霊 \r\n彼は、あそこで、あなたがたの歴史を\r\n見続けていたのです。",
+      "current": "은혜의 정령: 그는 그곳에서 너희의 역사를 계속 지켜보고 있었단다.",
+      "category": "말투",
+      "severity": "MEDIUM",
+      "suggestion": "은혜의 정령: 그는 그곳에서 당신들의 역사를 계속 지켜보고 있었어요.",
+      "reason": "같은 정령의 연속 존댓말 중 갑자기 너희/있었단다로 전환된다.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1054,
+      "file": "32/S3064.DAT",
+      "offset": "0x47D7E",
+      "japanese": "恵みの精霊 \r\n遂には争いによる奪いあいを生みます。",
+      "current": "은혜의 정령: 마침내 싸움으로 인한 빼앗음을 낳습니다.",
+      "category": "직역",
+      "severity": "MEDIUM",
+      "suggestion": "은혜의 정령: 결국 서로 빼앗으려는 싸움을 낳습니다.",
+      "reason": "1053에 이어지는 '싸움으로 인한 빼앗음'은 명사화가 부자연스럽다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1075,
+      "file": "32/S3068.DAT",
+      "offset": "0x47F86",
+      "japanese": "恵みの精霊 \r\n身を持つて知つた経験を生かして\r\n正しい道をみつけて進みなさい。",
+      "current": "은혜의 정령: 몸소 몸으로 알게 된 경험을 살려 올바른 길을 찾아 나아가세요.",
+      "category": "중복",
+      "severity": "MEDIUM",
+      "suggestion": "은혜의 정령: 몸소 겪은 경험을 살려 올바른 길을 찾아 나아가세요.",
+      "reason": "몸소 몸으로가 뜻을 중복한다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1084,
+      "file": "4/S4011.DAT",
+      "offset": "0x4879C",
+      "japanese": "兵士1 \r\nどうやつて出て来た、死にぞこないが。",
+      "current": "병사1: 어떻게 나온 거지, 죽을 곳을 찾았군.",
+      "category": "오역",
+      "severity": "HIGH",
+      "suggestion": "병사1: 어떻게 나온 거지, 죽다 만 놈이.",
+      "reason": "死にぞこない는 죽을 뻔하고 살아남은 자를 욕하는 말. 죽을 곳을 찾았다는 뜻이 아니다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1089,
+      "file": "4/S4011.DAT",
+      "offset": "0x48936",
+      "japanese": "兵士1 \r\nよかろう!人聞の底力さを\r\n思い知らせてやろう。",
+      "current": "병사1: 좋다! 인간의 저력을 분명히 보여 주마.",
+      "category": "원문재확인",
+      "severity": "HIGH",
+      "suggestion": "원본 확인 후 후보: 병사1: 좋다! 인간의 어리석음을 똑똑히 알려 주마.",
+      "reason": "몬스터 병사가 인간에게 하는 위협인데 한국어는 인간의 저력을 보여 준다고 한다. 추출 底力さ 자체도 비정상적이므로 원본 확인이 먼저다.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1101,
+      "file": "4/S4011.DAT",
+      "offset": "0x48E64",
+      "japanese": "城の兵隊にまでモンスターが\r\n化けてるなんて・・。",
+      "current": "성의 병사들까지 몬스터로 둔갑하다니...",
+      "category": "오역",
+      "severity": "HIGH",
+      "suggestion": "성의 병사로까지 몬스터가 둔갑해 있다니...",
+      "reason": "몬스터가 병사로 위장한 사건인데 현재 번역은 병사가 몬스터로 변했다는 반대 관계.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1104,
+      "file": "4/S4011.DAT",
+      "offset": "0x48F6C",
+      "japanese": "俺にはかわらない方がいい。",
+      "current": "나는 변하지 않는 편이 좋아.",
+      "category": "원문재확인",
+      "severity": "HIGH",
+      "suggestion": "원본 확인 후 후보: 나와는 엮이지 않는 게 좋아.",
+      "reason": "앞의 '너희와는 관계없어', 뒤의 감사 대사상 경고로 읽힌다. 추출 俺にはかわらない는 関わらない 누락 가능성이 있어 확정 불가.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1122,
+      "file": "4/S4022.DAT",
+      "offset": "0x47AFA",
+      "japanese": "親分と弟分どもの命と\r\n引き替えに\r\n俺はこうしてるんだ。",
+      "current": "두목과 부하들의 목숨을 담보로 난 이 일을 하는 거야.",
+      "category": "의미불명확",
+      "severity": "HIGH",
+      "suggestion": "두목과 부하들을 살려 준다기에 이렇게 잡혀 있는 거다.",
+      "reason": "1117..1124 감옥/사형/인질 약속 맥락에서 '이 일을 하는 거야'는 협력 업무로 오해될 수 있다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1125,
+      "file": "4/S4022.DAT",
+      "offset": "0x47BF6",
+      "japanese": "兵士2 \r\nしかし、よく燃えたなっ。",
+      "current": "병사2: 그런데 정말 잘 타는군.",
+      "category": "오역",
+      "severity": "MEDIUM",
+      "suggestion": "병사2: 그런데 정말 잘 탔지.",
+      "reason": "죽은 동료를 말하는 직전 대사와 원문 燃えた의 과거 회상인데 현재형이다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1131,
+      "file": "4/S4022.DAT",
+      "offset": "0x47E1E",
+      "japanese": "親分・・・。\f\r\n弟分たち・・・。",
+      "current": "두목님... 동생분들...",
+      "category": "오역",
+      "severity": "HIGH",
+      "suggestion": "두목님... 아우들...",
+      "reason": "弟分은 조직의 의형제/부하. 동생분들이라는 높임은 여기서 부자연스럽다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1139,
+      "file": "4/S4031.DAT",
+      "offset": "0x47C0A",
+      "japanese": "父さんからだ・・。",
+      "current": "아버지로부터야...",
+      "category": "직역",
+      "severity": "LOW",
+      "suggestion": "아버지가 보내셨어...",
+      "reason": "편지를 발견한 말로 '아버지로부터야'가 번역투다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1141,
+      "file": "4/S4031.DAT",
+      "offset": "0x47C86",
+      "japanese": "おまえのうわさが私のもとにとどいた。\r\nあれからもう10年、早いものだ。",
+      "current": "네 소문이 내게 들려왔다. 그로부터도 벌써 10년, 빠르구나.",
+      "category": "문법",
+      "severity": "LOW",
+      "suggestion": "네 소문이 내게 들려왔다. 그로부터 벌써 10년, 세월이 빠르구나.",
+      "reason": "그로부터도 벌써의 조사 연결이 어색하다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1175,
+      "file": "4/S4032.DAT",
+      "offset": "0x483B0",
+      "japanese": "別のところへ行きたいときは、はしをわたつてみぎがわからでるんだよ。",
+      "current": "다른 곳에 가고 싶을 때는 별을 건너 오른쪽이 보이게 하면 돼.",
+      "category": "진행힌트오역",
+      "severity": "HIGH",
+      "suggestion": "다른 곳에 가고 싶을 때는 다리를 건너 오른쪽으로 나가면 돼.",
+      "reason": "はしをわたって みぎがわからでる: 다리를 건너 오른쪽에서 나가는 안내. 별/보이게는 오역.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1176,
+      "file": "4/S4032.DAT",
+      "offset": "0x4840E",
+      "japanese": "としかのお。",
+      "current": "그러려나.",
+      "category": "의미누락",
+      "severity": "MEDIUM",
+      "suggestion": "나이 탓인가...",
+      "reason": "としかのお는 뒤 반복 1200 '요즘 잘 잊는다'와 같은 나이 농담. '그러려나'는 대상을 지운다.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1177,
+      "file": "4/S4032.DAT",
+      "offset": "0x4844E",
+      "japanese": "としじゃねえよ。",
+      "current": "아니잖아.",
+      "category": "의미누락",
+      "severity": "MEDIUM",
+      "suggestion": "나이 탓이 아니잖아.",
+      "reason": "としじゃねえよ에서 나이 논박이 빠졌다. 1176과 소비 연결 확인 필요.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1179,
+      "file": "4/S4032.DAT",
+      "offset": "0x484CE",
+      "japanese": "としじゃよ。",
+      "current": "그렇다네.",
+      "category": "의미누락",
+      "severity": "MEDIUM",
+      "suggestion": "나이 탓이지.",
+      "reason": "としじゃよ의 나이 의미가 빠짐. 1176..1179 소비 대화 분기 확인 필요.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1181,
+      "file": "4/S4033.DAT",
+      "offset": "0x47CDC",
+      "japanese": "<G:90>次の精霊はグレイシーヌに<G:89>\r\nよみますか？\r\n<CTRL:E5:03>よむ\r\n<CTRL:E5:03>よまない",
+      "current": "다음 정령은 그레이시누에 있다. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "category": "표기불일치",
+      "severity": "MEDIUM",
+      "suggestion": "다음 정령은 그레이시느에 있다. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "reason": "같은 편지 본문 1186은 그레이시느, 제목만 그레이시누.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1203,
+      "file": "4/S4033.DAT",
+      "offset": "0x4848C",
+      "japanese": "としじゃねえよ。",
+      "current": "아니잖아.",
+      "category": "의미누락",
+      "severity": "MEDIUM",
+      "suggestion": "나이 탓이 아니잖아.",
+      "reason": "1200의 나이/기억력 농담에 대한 답인데 주제가 없어졌다.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1205,
+      "file": "4/S4033.DAT",
+      "offset": "0x4850C",
+      "japanese": "わしのすかんは役に立つぞ。\r\nあたらしく見つけたモンスターはできるだけ<G:90>調ベる<G:89>ようにするこつた。",
+      "current": "내 조사는 도움이 되지. 새로 발견한 몬스터는 되도록 조사하도록 하게.",
+      "category": "오역",
+      "severity": "HIGH",
+      "suggestion": "내 도감은 도움이 되지. 새로 발견한 몬스터는 되도록 조사하도록 하게.",
+      "reason": "わしのすかん은 도감(ずかん)으로 읽히며 1238도 같은 기능을 도감이라 한다. 현재 조사는 사물명 소실.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1211,
+      "file": "4/S4033.DAT",
+      "offset": "0x48712",
+      "japanese": "しつたことか。\r\nぜんぶしらベたら何かいいことがあるかもしれんぞ。",
+      "current": "그런가. 전부 조사하면 뭔가 좋은 일이 있을지도 모르지.",
+      "category": "오역",
+      "severity": "MEDIUM",
+      "suggestion": "내가 알 게 뭐냐. 전부 조사하면 뭔가 좋은 일이 있을지도 모르지.",
+      "reason": "しったことか는 '알 바 아니다'라는 퉁명스런 답. '그런가'는 의미가 다르다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1215,
+      "file": "4/S4034.DAT",
+      "offset": "0x47D30",
+      "japanese": "<G:90>次の精霊はカーデルに<G:89>\r\nよみますか？\r\n<CTRL:E5:03>よむ\r\n<CTRL:E5:03>よまない",
+      "current": "다음 정령은 카데르에게. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "category": "지명조사",
+      "severity": "HIGH",
+      "suggestion": "다음 정령은 카델에. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "reason": "국가 위치 안내인데 사람에게 쓰는 '에게'가 붙었다. 인접 1217은 카델.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1245,
+      "file": "4/S4035.DAT",
+      "offset": "0x47D30",
+      "japanese": "<G:90>次の精霊はアリバーシャに<G:89>\r\nよみますか？\r\n<CTRL:E5:03>よむ\r\n<CTRL:E5:03>よまない",
+      "current": "다음 정령은 아리바샤에게. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "category": "지명조사",
+      "severity": "HIGH",
+      "suggestion": "다음 정령은 아리바샤에. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "reason": "1249가 명시하는 국가 위치인데 사람에게 쓰는 '에게'가 붙었다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1279,
+      "file": "4/S4036.DAT",
+      "offset": "0x48010",
+      "japanese": "そういうのに詳しい仲聞がいればよかつたのに。",
+      "current": "그런 것에 자세한 동료가 있으면 좋았을 텐데.",
+      "category": "어휘",
+      "severity": "MEDIUM",
+      "suggestion": "그런 것에 밝은 동료가 있으면 좋았을 텐데.",
+      "reason": "사람을 '그런 것에 자세한'이라고 수식하는 것은 어색하다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1292,
+      "file": "4/S4036.DAT",
+      "offset": "0x483DA",
+      "japanese": "(あまりしゃベらないな)",
+      "current": "(너무 떠들지 마.)",
+      "category": "오역",
+      "severity": "HIGH",
+      "suggestion": "(별로 말을 안 하네.)",
+      "reason": "あまりしゃべらないな는 과묵함을 관찰하는 독백. 현재는 말을 줄이라는 명령으로 반대 의미.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1313,
+      "file": "5/S5011.DAT",
+      "offset": "0x4815A",
+      "japanese": "商売とは何だ、てめえ!\r\n<CTRL:E4:3D><CTRL:E4:3D><CTRL:E4:3D>ひい目あいてえか、こらっ!<CTRL:E4:3D>",
+      "current": "장사가 뭐냐고, 이 자식아! 한 대 맞아 볼래, 이 자식아!",
+      "category": "어색한대사",
+      "severity": "MEDIUM",
+      "suggestion": "장사라니, 이 자식아! 혼 좀 나고 싶냐!",
+      "reason": "'장사가 뭐냐고'는 장사의 정의를 묻는 듯하다. 위협 끝의 이 자식아 중복도 불필요.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1336,
+      "file": "5/S5012.DAT",
+      "offset": "0x4842E",
+      "japanese": "そういえば\r\nグレイシーヌのラマダには\r\n不思議な力を持つ一団が\r\nいると言う話だ。",
+      "current": "그러고 보니 그레이시느의 라마다에는 신기한 힘을 지닌 일단이 있다는 이야기가 있어.",
+      "category": "어휘",
+      "severity": "MEDIUM",
+      "suggestion": "그러고 보니 그레이시느의 라마다에는 신기한 힘을 지닌 집단이 있다는 이야기가 있어.",
+      "reason": "일단은 이 문맥에서 부사로 먼저 읽혀 집단의 의미가 잘 드러나지 않는다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1387,
+      "file": "5/S5013.DAT",
+      "offset": "0x4895E",
+      "japanese": "<CTRL:E5:03>アララトスの遺跡ダンジョン\r\n<CTRL:E5:03>ミルマーナのその後\r\n<CTRL:E5:03>ラマダ寺での修行\r\n<CTRL:E5:03>やつっり、いいや。",
+      "current": "|아라라토스 유적|미르마나의 이후|라마다 수행|그만",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "reason": "사용자 지정 사찰 표기 라마다사 적용 후보. 원문은 ラマダ寺.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1407,
+      "file": "5/S5013.DAT",
+      "offset": "0x490DC",
+      "japanese": "<CTRL:E5:03>ラマダ寺の修行\r\n<CTRL:E5:03>ロマンシングストーン\r\n<CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89>\r\n<CTRL:E5:03>やつっりいいや。",
+      "current": "|라마다사원 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "reason": "라마다사원 대신 사용자 지정 라마다사.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1409,
+      "file": "5/S5013.DAT",
+      "offset": "0x491BA",
+      "japanese": "チョピン \r\nここでは、あるアイテムが手に入ります。ストーンサークルだけに・・。",
+      "current": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "category": "말장난재검토",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클인 만큼 말이지요...",
+      "reason": "だけに는 스톤(돌) 아이템을 암시하는 말장난으로 읽힌다. '스톤 서클에서만'은 독점 획득장소 주장으로 바뀐다.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1413,
+      "file": "5/S5013.DAT",
+      "offset": "0x49346",
+      "japanese": "チョピン \r\n召喚獣は全部で6までなると聞いております。中には見つかりにくいものもいるようなのであちこち探してみて下さい。",
+      "current": "초핀: 소환수는 전부 여섯까지라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "category": "어색한수량",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "reason": "전부 여섯까지라는 수량 표현이 덜 자연스럽다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1419,
+      "file": "5/S5013.DAT",
+      "offset": "0x495C0",
+      "japanese": "チョピン \r\nラマダ寺では、ランクを設けて修行を行つているようですが、その全てを終えると手に入るアクセサリーがあるようです。",
+      "current": "초핀: 라마다 사원에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "reason": "사용자 지정 사찰 표기.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1420,
+      "file": "5/S5013.DAT",
+      "offset": "0x49636",
+      "japanese": "チョピン \r\nただ、ラマダ寺でもらえるわけではないようですが・・・。",
+      "current": "초핀: 라마다 사원에서 직접 주는 것은 아닌 듯하지만…",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "reason": "사용자 지정 사찰 표기.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1421,
+      "file": "5/S5013.DAT",
+      "offset": "0x49692",
+      "japanese": "チョピン \r\nロマンシングストーンのある場所がわかりました。1つはスメリアのトウヴィル\r\n1つはアララトスの遺跡ダンジョン、",
+      "current": "초핀: 로맨싱 스톤을 찾았습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "category": "의미불명확",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "reason": "있는 장소를 파악했다는 말인데 아이템 자체를 찾았다고 읽힐 수 있다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1427,
+      "file": "5/S5021.DAT",
+      "offset": "0x47A04",
+      "japanese": "ここは3000年前\r\n大崩壊(だいほうかい)の後\r\n人が最初に街を作り\r\nそれが大きくなりできたところ。",
+      "current": "여기는 3천 년 전 대붕괴 뒤에 사람이 처음으로 거리를 만들고, 그것이 크게 발전한 곳이야.",
+      "category": "오역",
+      "severity": "MEDIUM",
+      "suggestion": "여기는 3천 년 전 대붕괴 뒤 인간이 처음 세운 마을이 커져서 생긴 곳이야.",
+      "reason": "街는 이 국가의 기원이 된 도시/마을인데 거리(도로)로 옮겨 의미가 달라진다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1467,
+      "file": "5/S5023.DAT",
+      "offset": "0x47A96",
+      "japanese": "何か金になる話か？",
+      "current": "값이 될 만한 이야기인가?",
+      "category": "어휘",
+      "severity": "MEDIUM",
+      "suggestion": "뭔가 돈이 될 만한 이야기인가?",
+      "reason": "金になる는 돈벌이가 된다는 뜻. 값이 될 만하다는 어색하다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1473,
+      "file": "5/S5024.DAT",
+      "offset": "0x478E8",
+      "japanese": "何言つてんだ。\r\n話が進まねえだろう。",
+      "current": "뭔 소리야? 이래선 말이 안 되잖아.",
+      "category": "오역",
+      "severity": "MEDIUM",
+      "suggestion": "무슨 소리야. 이래서야 이야기가 진전이 없잖아.",
+      "reason": "話が進まない는 이야기가 앞으로 진행되지 않는다는 뜻. 말이 안 된다는 비논리성 지적과 다르다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1481,
+      "file": "5/S5025.DAT",
+      "offset": "0x47CE0",
+      "japanese": "おまえ、オトンじゃな!!",
+      "current": "너, 아버지잖아!!",
+      "category": "고유명사재확인",
+      "severity": "HIGH",
+      "suggestion": "원본/명칭 확인 후 후보: 너, 오톤이구나!!",
+      "reason": "곧 수집품이 늘었다고 하고 촌가라 복제 모습이 나타나는 1478..1483 맥락. オトン을 실제 부친 '아버지'로 옮겼는지 소환수명 확인 필요.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1482,
+      "file": "5/S5025.DAT",
+      "offset": "0x47D46",
+      "japanese": "わしの家にオトンが住み着いとるとは・・・。",
+      "current": "내 집에 아버지가 머물러 있다니...",
+      "category": "고유명사재확인",
+      "severity": "HIGH",
+      "suggestion": "원본/명칭 확인 후 후보: 내 집에 오톤이 눌러살고 있었다니...",
+      "reason": "1481과 같은 대상. 아버지라고 확정하기 어려운 몬스터 수집 문맥.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1521,
+      "file": "6/S6011.DAT",
+      "offset": "0x47FFC",
+      "japanese": "チョンガラ、例の不思議な一団にかして教えてくれないか？",
+      "current": "촌가라, 그 수상한 일행에 관해서 가르쳐 줄 수 없나?",
+      "category": "의미뉘앙스",
+      "severity": "MEDIUM",
+      "suggestion": "촌가라, 그 신기한 집단에 관해서 가르쳐 줄 수 없나?",
+      "reason": "1336의 신기한 힘을 가진 일단을 이어 가리키는데 '수상한 일행'은 의심받는 여행객으로 의미가 바뀐다.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1551,
+      "file": "6/S6013.DAT",
+      "offset": "0x48290",
+      "japanese": "地の石 \r\n<CTRL:E4:3D>\f・\f・\f・\f西<CTRL:E4:15>方<CTRL:E4:15>の<CTRL:E4:3D>・\fカー<CTRL:E4:15>デ<CTRL:E4:15>ルの<CTRL:E4:3D>・\f地に\r\n<CTRL:E4:3D>・\f封<CTRL:E4:15>じ<CTRL:E4:3D>込<CTRL:E4:15>め<CTRL:E4:15>ら<CTRL:E4:15>れ<CTRL:E4:15>し<CTRL:E4:3D>・<CTRL:E4:15>風の<CTRL:E4:3D>力<CTRL:E4:3D>。",
+      "current": "대지의 돌... 서방의 카데르 땅에 봉인된 바람의 힘.",
+      "category": "표기불일치",
+      "severity": "MEDIUM",
+      "suggestion": "대지의 돌... 서방의 카델 땅에 봉인된 바람의 힘.",
+      "reason": "1217 등 カーデル의 카델과 이 행 카데르 불일치. 승인 기준 최종 대조 필요.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1552,
+      "file": "6/S6013.DAT",
+      "offset": "0x4834E",
+      "japanese": "カーデルなら、毎年武闘大会があつて、そこの賞品が\r\n<G:90>風のオーフ<G:89>というものだつたように記憶しておるが？",
+      "current": "카데르라면 해마다 무투 대회가 있고, 그 상품이 바람의 오브라는 것이었던 걸로 기억하는데?",
+      "category": "표기불일치",
+      "severity": "MEDIUM",
+      "suggestion": "카델이라면 해마다 무투 대회가 있고, 그 상품이 바람의 오브라는 것이었던 걸로 기억하는데?",
+      "reason": "1217 카델과 카데르 불일치. 승인 기준 최종 대조 필요.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1597,
+      "file": "6/S6014.DAT",
+      "offset": "0x4890A",
+      "japanese": "<CTRL:E5:03>アララトスの遺跡ダンジョン\r\n<CTRL:E5:03>ミルマーナのその後\r\n<CTRL:E5:03>ラマダ寺での修行\r\n<CTRL:E5:03>やつっり、いいや。",
+      "current": "|아라라토스 유적|미르마나의 이후|라마다 수행|그만",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "reason": "사용자 지정 사찰 표기.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1617,
+      "file": "6/S6014.DAT",
+      "offset": "0x49088",
+      "japanese": "<CTRL:E5:03>ラマダ寺の修行\r\n<CTRL:E5:03>ロマンシングストーン\r\n<CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89>\r\n<CTRL:E5:03>やつっりいいや。",
+      "current": "|라마다사원 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "reason": "사용자 지정 사찰 표기.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1619,
+      "file": "6/S6014.DAT",
+      "offset": "0x49166",
+      "japanese": "チョピン \r\nここでは、あるアイテムが手に入ります。ストーンサークルだけに・・。",
+      "current": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "category": "말장난재검토",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클인 만큼 말이지요...",
+      "reason": "1409와 같은 원문. 스톤 말장난을 독점 장소로 옮긴 후보.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1623,
+      "file": "6/S6014.DAT",
+      "offset": "0x492F2",
+      "japanese": "チョピン \r\n召喚獣は全部で6までなると聞いております。中には見つかりにくいものもいるようなのであちこち探してみて下さい。",
+      "current": "초핀: 소환수는 전부 여섯까지라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "category": "어색한수량",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "reason": "전부 여섯까지 수량 표현.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1629,
+      "file": "6/S6014.DAT",
+      "offset": "0x4956C",
+      "japanese": "チョピン \r\nラマダ寺では、ランクを設けて修行を行つているようですが、その全てを終えると手に入るアクセサリーがあるようです。",
+      "current": "초핀: 라마다 사원에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "reason": "사용자 지정 사찰 표기.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1630,
+      "file": "6/S6014.DAT",
+      "offset": "0x495E2",
+      "japanese": "チョピン \r\nただ、ラマダ寺でもらえるわけではないようですが・・・。",
+      "current": "초핀: 라마다 사원에서 직접 주는 것은 아닌 듯하지만…",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "reason": "사용자 지정 사찰 표기.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1631,
+      "file": "6/S6014.DAT",
+      "offset": "0x4963E",
+      "japanese": "チョピン \r\nロマンシングストーンのある場所がわかりました。1つはスメリアのトウヴィル\r\n1つはアララトスの遺跡ダンジョン、",
+      "current": "초핀: 로맨싱 스톤을 찾았습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "category": "의미불명확",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "reason": "1421 반복. 아이템 획득과 위치 파악의 구분.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1640,
+      "file": "6/S6022.DAT",
+      "offset": "0x47A9C",
+      "japanese": "連れた者にダメージを\r\n与えることができるらしい。",
+      "current": "동료에게 피해를줄 수 있는 모양이야.",
+      "category": "원문재확인",
+      "severity": "HIGH",
+      "suggestion": "원본 확인 후 후보: 멀리 떨어진 상대에게도 피해를 줄 수 있다고 하네.",
+      "reason": "기가 원거리 공격인 설명과 이어진다. 추출 連れた는 離れた 오독 의심. 동료 공격 설명으로 확정하면 안 된다.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1650,
+      "file": "6/S6031.DAT",
+      "offset": "0x47BE6",
+      "japanese": "我々でさえ帰つたことのない\r\nラマダ山に入ろうとは。",
+      "current": "우리조차 돌아온 적 없는 라마다 산에 들어가려 하다니.",
+      "category": "원문재확인",
+      "severity": "HIGH",
+      "suggestion": "원본 확인 후 후보: 우리조차 가 본 적 없는 라마다 산에 들어가려 하다니.",
+      "reason": "추출 帰ったことのない와 현재 '돌아온 적 없는'은 살아 있는 화자의 산 경험 설명으로 이상하다. 登った 등 추출오류 가능성 확인 필요.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1658,
+      "file": "6/S6032.DAT",
+      "offset": "0x47AF8",
+      "japanese": "何もみえてないと思つているの？みつともないまねは\r\nおよしなさい。",
+      "current": "아무것도 보이지 않는다고 생각하는 거야? 더러운 짓은 그만두세요.",
+      "category": "문체혼합",
+      "severity": "MEDIUM",
+      "suggestion": "우리가 아무것도 모르는 줄 알아? 꼴사나운 짓은 그만둬.",
+      "reason": "한 문장에서 생각하는 거야/그만두세요가 섞임. 거울로 정체를 폭로하는 다음 대사와 연결.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1676,
+      "file": "6/S6051.DAT",
+      "offset": "0x47AB4",
+      "japanese": "これがラマダ寺か・・。",
+      "current": "여기가 라마다사원인가...",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "여기가 라마다사인가...",
+      "reason": "사용자 지정 사찰 표기.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1698,
+      "file": "6/S6053.DAT",
+      "offset": "0x47D2E",
+      "japanese": "弟子 \r\nあなたは我らに\r\n自分の聞違いを正すこを恐れない\r\n勇気を教えてくれました。",
+      "current": "제자: 당신은 우리에게 자신의 잘못을 바로잡는 것을 두려워하지 않는 용기를 가르쳐 주셨습니다.",
+      "category": "호칭",
+      "severity": "MEDIUM",
+      "suggestion": "제자: 스승님은 저희에게 자신의 잘못을 바로잡는 것을 두려워하지 않는 용기를 가르쳐 주셨습니다.",
+      "reason": "1697 사범님/1699 스승님에 이어 제자가 스승을 '당신'이라 부르는 한국어가 어색하다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1703,
+      "file": "6/S6054.DAT",
+      "offset": "0x45002",
+      "japanese": "<CTRL:E5:03>チョピン\r\n<CTRL:E5:03>チョビン\r\n<CTRL:E5:03>チョースケ\r\n<CTRL:E5:03>チョンガラ",
+      "current": "|초핀|초비|초스케|초카라",
+      "category": "축약복원검토",
+      "severity": "MEDIUM",
+      "suggestion": "|초핀|초빈|초스케|촌가라",
+      "reason": "정답/오답 인명 구별 퀴즈인데 초비/초카라는 원래 명칭을 흐린다. 이전 축약 원인 미확인, 선택지 길이 검증 전 적용 불가.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1706,
+      "file": "6/S6054.DAT",
+      "offset": "0x450F6",
+      "japanese": "<CTRL:E5:03>ミルマーナ\r\n<CTRL:E5:03>スメリア\r\n<CTRL:E5:03>アララトス\r\n<CTRL:E5:03>カーデル",
+      "current": "|밀마|스메|아라라|카델",
+      "category": "축약복원검토",
+      "severity": "MEDIUM",
+      "suggestion": "|미르마나|스메리아|아라라토스|카델",
+      "reason": "국가를 묻는 퀴즈에서 밀마/스메/아라라가 정식 명칭과 멀어진 축약. 슬롯 원인/여유 미검증.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1709,
+      "file": "6/S6054.DAT",
+      "offset": "0x451F4",
+      "japanese": "<CTRL:E5:03>アーク\r\n<CTRL:E5:03>ククル\r\n<CTRL:E5:03>タイトルロゴ\r\n<CTRL:E5:03>へモジー",
+      "current": "|아크|쿠쿠루|다다|헤모",
+      "category": "선택지의미",
+      "severity": "HIGH",
+      "suggestion": "|아크|쿠쿠루|타이틀 로고|헤모지",
+      "reason": "원문 タイトルロゴ가 '다다'여서 답 의미를 알아볼 수 없다. E5 화면 글리프 문제와 CSV 내용은 구분 필요.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1712,
+      "file": "6/S6054.DAT",
+      "offset": "0x452F2",
+      "japanese": "<CTRL:E5:03>オカモト\r\n<CTRL:E5:03>ヤマモト\r\n<CTRL:E5:03>ヤマオキ\r\n<CTRL:E5:03>ヤマシタ",
+      "current": "|오카|야모|야오|시타",
+      "category": "축약복원검토",
+      "severity": "MEDIUM",
+      "suggestion": "|오카모토|야마모토|야마오키|야마시타",
+      "reason": "인명을 구별하는 문제인데 원문의 공통 야마/모토 구조를 서로 다르게 잘라 단서가 소실됨.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1715,
+      "file": "6/S6054.DAT",
+      "offset": "0x453E6",
+      "japanese": "<CTRL:E5:03>でる\r\n<CTRL:E5:03>でるかも\r\n<CTRL:E5:03>でるのでは\r\n<CTRL:E5:03>なやむ",
+      "current": "|예|아마|확실|고민",
+      "category": "선택지의미",
+      "severity": "MEDIUM",
+      "suggestion": "|나온다|나올지도|나오겠지|고민",
+      "reason": "でるのでは를 확실로 옮겨 추측을 확정으로 바꿨다. 선택지 장문 복원은 제약 확인 필요.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1721,
+      "file": "6/S6054.DAT",
+      "offset": "0x455E0",
+      "japanese": "<CTRL:E5:03>ある\r\n<CTRL:E5:03>ない\r\n<CTRL:E5:03>作りたかつた\r\n<CTRL:E5:03>行きたかつた",
+      "current": "|있음|없음|제작|여행",
+      "category": "축약복원검토",
+      "severity": "MEDIUM",
+      "suggestion": "|있다|없다|만들고 싶었다|가고 싶었다",
+      "reason": "만들고/가고 싶었다는 개발자 농담이 제작/여행으로 축소되어 뜻이 흐리다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1724,
+      "file": "6/S6054.DAT",
+      "offset": "0x456DA",
+      "japanese": "<CTRL:E5:03>あれ\r\n<CTRL:E5:03>それ\r\n<CTRL:E5:03>どれ\r\n<CTRL:E5:03>ないしょ",
+      "current": "|저|그|어|비밀",
+      "category": "축약복원검토",
+      "severity": "MEDIUM",
+      "suggestion": "|저거|그거|어느 거|비밀",
+      "reason": "대명사를 단음절 저/그/어로 줄여 답이 부자연스럽다. 슬롯 원인 입증 전에는 단순 오류로 단정하지 않는다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1726,
+      "file": "6/S6054.DAT",
+      "offset": "0x45778",
+      "japanese": "ラマダ僧 \r\nラマダ寺でとびらが開いたときに中に見える人の数は？",
+      "current": "라마다 승려: 라마다 사원의 문이 열렸을 때 안에 보이는 사람은 몇 명인가?",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "라마다 승려: 라마다사의 문이 열렸을 때 안에 보이는 사람은 몇 명인가?",
+      "reason": "사용자 지정 사찰 표기. 이 행의 v356 Bank-B 이력 있음.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "HISTORICAL_SLOT_SHORTAGE_CONFIRMED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "previous_constraint": "V354_SLOT_SHORTAGE",
+        "note": "Current wording is already v356 draft; this is a temple spelling proposal, not proof current wording needs length restoration."
+      }
+    },
+    {
+      "row_number": 1733,
+      "file": "6/S6054.DAT",
+      "offset": "0x459CA",
+      "japanese": "<CTRL:E5:03>きいろ\r\n<CTRL:E5:03>わけあつてちゃいろ\r\n<CTRL:E5:03>本当はあか\r\n<CTRL:E5:03>それはだれ？",
+      "current": "|황금|갈|빨강|누구?",
+      "category": "축약복원검토",
+      "severity": "MEDIUM",
+      "suggestion": "|노랑|사정상 갈색|실은 빨강|그게 누구?",
+      "reason": "갈은 색명으로 불완전하며 원문의 사정상/실은 농담이 사라짐. 선택지 제약 원인은 미확인.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1748,
+      "file": "6/S6054.DAT",
+      "offset": "0x45F6E",
+      "japanese": "<G:90>幻獣の牙<G:89>をもらいました。",
+      "current": "환수의어금니를받았습니다.",
+      "category": "띄어쓰기",
+      "severity": "LOW",
+      "suggestion": "환수의 어금니를 받았습니다.",
+      "reason": "획득 메시지가 모두 붙어 있다. 아이템명 자체 변경은 제안하지 않음.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1776,
+      "file": "6/S6054.DAT",
+      "offset": "0x468D4",
+      "japanese": "ラマダ僧 \r\n9度目の挑戦ですね。それでは、これくらいのところでどうでしょうか？",
+      "current": "라마다승려: 9번째 도전이군요. 그럼 이쯤에서 어떠십니까?",
+      "category": "의미불명확",
+      "severity": "MEDIUM",
+      "suggestion": "라마다 승려: 9번째 도전이시군요. 그러면 이 정도는 어떻겠습니까?",
+      "reason": "이어지는 도전 난도를 제시하는데 '이쯤에서 어떠십니까'는 중단/장소 질문처럼 들린다.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1832,
+      "file": "7/S7012.DAT",
+      "offset": "0x48402",
+      "japanese": "<CTRL:E5:03>アララトスの遺跡ダンジョン\r\n<CTRL:E5:03>ミルマーナのその後\r\n<CTRL:E5:03>ラマダ寺での修行\r\n<CTRL:E5:03>やつっり、いいや。",
+      "current": "|아라라토스 유적|미르마나의 이후|라마다 수행|그만",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "reason": "사용자 지정 사찰 표기.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1852,
+      "file": "7/S7012.DAT",
+      "offset": "0x48B80",
+      "japanese": "<CTRL:E5:03>ラマダ寺の修行\r\n<CTRL:E5:03>ロマンシングストーン\r\n<CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89>\r\n<CTRL:E5:03>やつっりいいや。",
+      "current": "|라마다사원 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "reason": "사용자 지정 사찰 표기.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1854,
+      "file": "7/S7012.DAT",
+      "offset": "0x48C5E",
+      "japanese": "チョピン \r\nここでは、あるアイテムが手に入ります。ストーンサークルだけに・・。",
+      "current": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "category": "말장난재검토",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클인 만큼 말이지요...",
+      "reason": "1409 반복. 독점 장소 의미로 단정하지 않도록 독립 검토.",
+      "context_uncertain": true,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1858,
+      "file": "7/S7012.DAT",
+      "offset": "0x48DEA",
+      "japanese": "チョピン \r\n召喚獣は全部で6までなると聞いております。中には見つかりにくいものもいるようなのであちこち探してみて下さい。",
+      "current": "초핀: 소환수는 전부 여섯까지라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "category": "어색한수량",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "reason": "전부 여섯까지 수량 표현.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1864,
+      "file": "7/S7012.DAT",
+      "offset": "0x49064",
+      "japanese": "チョピン \r\nラマダ寺では、ランクを設けて修行を行つているようですが、その全てを終えると手に入るアクセサリーがあるようです。",
+      "current": "초핀: 라마다 사원에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "reason": "사용자 지정 사찰 표기.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1865,
+      "file": "7/S7012.DAT",
+      "offset": "0x490DA",
+      "japanese": "チョピン \r\nただ、ラマダ寺でもらえるわけではないようですが・・・。",
+      "current": "초핀: 라마다 사원에서 직접 주는 것은 아닌 듯하지만…",
+      "category": "사찰표기",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "reason": "사용자 지정 사찰 표기.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    },
+    {
+      "row_number": 1866,
+      "file": "7/S7012.DAT",
+      "offset": "0x49136",
+      "japanese": "チョピン \r\nロマンシングストーンのある場所がわかりました。1つはスメリアのトウヴィル\r\n1つはアララトスの遺跡ダンジョン、",
+      "current": "초핀: 로맨싱 스톤을 찾았습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "category": "의미불명확",
+      "severity": "MEDIUM",
+      "suggestion": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "reason": "1421 반복. 아이템 획득과 위치 파악 구분.",
+      "context_uncertain": false,
+      "suggestion_status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED",
+      "forced_shortening_evidence": {
+        "status": "NOT_ESTABLISHED",
+        "source": "05_docs/v356_bankb_review.csv",
+        "note": "No keyed V356 historical entry found for this row. Short wording alone is not evidence of slot-forced shortening."
+      }
+    }
+  ],
+  "deferred_technical_checks": [
+    {
+      "row_numbers": [
+        1900,
+        1901,
+        1902,
+        1903,
+        1904,
+        1905,
+        1906
+      ],
+      "concern": "Current text contains blank actor name before 씨입니다; Japanese has E2 actor tokens. Must inspect builder/protected-template reinsertion before calling this a visible missing-name defect.",
+      "status": "NOT_CHECKED"
+    }
+  ],
+  "residual_minor_spacing_groups": [
+    {
+      "row_numbers": [
+        1347,
+        1357,
+        1388,
+        1399,
+        1598,
+        1609,
+        1638,
+        1704,
+        1707,
+        1710,
+        1713,
+        1714,
+        1716,
+        1719,
+        1722,
+        1725,
+        1728,
+        1731,
+        1734,
+        1735,
+        1736,
+        1741,
+        1750,
+        1751,
+        1753,
+        1754,
+        1759,
+        1761,
+        1763,
+        1765,
+        1767,
+        1769,
+        1771,
+        1773,
+        1775,
+        1777,
+        1779,
+        1781,
+        1778,
+        1780,
+        1833,
+        1844
+      ],
+      "concern": "Individually read; glued speaker labels/space after colon and words such as 많은것, 개방한것, 될것, 열번째 remain. Low-impact spacing restoration only; cause of spacing removal and current encoded fit not checked.",
+      "status": "UNAPPROVED",
+      "feasibility": "NOT_CHECKED"
+    }
+  ],
+  "preservation": "Only this analysis JSON created. Canonical CSV/editor/game/binary/docs unchanged. All wording proposals unapproved and not build eligible."
+}

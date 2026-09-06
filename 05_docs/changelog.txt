@@ -1,3 +1,86 @@
+2026-09-06 - GitHub 누락 작업 복구 및 사용자 확인 기준점 기록
+- V356 이후 로컬에 남은 V357~V359 코드·번역·검증 기록을 원격 저장소 동기화 대상으로 정리했다. 원본/빌드 이미지/세이브/추출 그림/재구성용 전체 바이너리 JSON/비활성화 바이너리/대화 로그는 제외한다. 사용자 편집 CSV는 덮어쓰지 않는다.
+- 사용자가 확인한 V359_CURSOR_LINES_TEST의 슬라임/커서 증상 해결만 bible_current 최신 기준점에 기록했다. V360 분석 코드와 번역 후보는 작업 중 상태이며 빌드 완료로 기록하지 않는다.
+
+2026-09-06 - V359 커서/슬라임 충돌 비텍스처 분리 시험판 (작성 당시 실기 미검증, 이후 위 사용자 확인 참조)
+- 사용자 해결 승인에 따라 범위 커서 업로드를 중지하고 전용 FT4 출력만 흰색1px polyline9유형으로 변경. 좌표/범위/외곽 점멸 계산은 유지. 글꼴·CSV·DAT·기존 빌드는 보존. 추가 텍스처 VRAM0, 상주 RAM 예약0, 기존 uploader 앞328B만 재사용하고 V338/V349의 뒤쪽 숫자 변환 UI helper는 보존했다.
+- 별도 V359_CURSOR_LINES_TEST.cue/bin, ZIP arc1_v359_cursor_lines_TEST_ONLY.zip. 최종 BIN SHA256 B4C44205AFCABC5219588BC6C6C26A6C7F618AE3209ED2E277B1A0593248C511, ZIP 84844764CE39B8B378496BAAB024A967AD9FAD3EE6FE17AABC871A59E49132C2.
+- CPU1152회/명령 왕복/허용 변경범위/디스크 readback PASS이나 실제 슬라임·커서 확인 전 TEST_ONLY. 원본 그라데이션 외형은 보존되지 않는다. 기존 강제 세이브에는 옛 코드와 오염 VRAM이 남으므로 콜드부팅 시험 필수. 분석 README와 report/package.json 참조. 다른 설명창/LR/대사 문제는 이번 시험판 범위 밖.
+
+2026-09-06 - V359 남은 이름 3행 반영 시험판 (번호 유지)
+- 사용자 승인에 따라 원본 비트맵에서 オドン으로 확인된 1481/1482행을 `너, 오톤이구나!!`와 `내 집에 오톤이 눌러살고 있다니...`로 교정했다. 오톤은 돈 글리프 추가 없이 고유명사 정체를 보존하기 위한 승인 근사 표기다. 보호된 일본어 추출 열의 과거 オトン 표기는 수정하지 않았다.
+- 1703 인명 퀴즈는 `|초핀|초비|초스케|촌가라`로 교정했다. 실제 인물의 チョピン→초핀 326회와 오답 チョビン 1회를 같은 초핀으로 합치지 않아 1·2번 선택지의 구별과 정답 판정을 보존했다.
+- 세 행은 각각 11/12B, 24/27B, 선택지 2/4·3/5·4/6·3/6B로 제자리에 들어간다. 추가 E2 슬롯·신규 글리프·VRAM·EXE·COMM 변경은 0이다. 변경 멤버는 5/S5025.DAT와 6/S6054.DAT 둘뿐이고 그 파일의 다른 대사 88행은 최종 E2 확장 토큰이 이전판과 같다.
+- 정식 CSV에는 승인한 한국어 3셀만 추가 동기화했다. canonical SHA256 B3F5BA97EAC7C2D20500AE8498B982F128B35D15A8151F378131F5084B99E760. 이로써 이번 검수 목록 215건은 215건 모두 반영됐지만 전체 게임 번역·회귀 검사가 완료됐다는 뜻은 아니다.
+- 최신 산출물은 03_output/V359_REVIEW_UPDATE2.cue/bin 및 arc1_v359_review_215_TEST_ONLY.zip. ZIP SHA256 A66F88444716E9993C0C4BBC2EC58A4965B3359D55278DC193A183A621BE4E1B, BIN SHA256 790683AAD90D3968092CE12E46C305120BA3BFC6816E7B828C83FB65348BA19E. 기존 산출물·메모리카드는 덮어쓰지 않았다.
+- 이름/선택지/디스크 정적 검사 PASS. 기존 전체 검사 마커2/폭69 실패는 항목 목록까지 이전판과 동일하고 RUNTIME PENDING/TEST_ONLY이므로 bible_current 성공 기준은 갱신하지 않았다.
+
+2026-09-06 - V359 슬롯 회수·연출 제어 복원 시험판 (번호 유지)
+- 사용자 승인한 슬롯 회수 1717/1720/1743행을 제자리로 되돌려 6/S6054.DAT Bank-B 5/6/14번을 회수했다. 각 E2 호출이 전체 DAT에 정확히 1곳이고 제거 뒤 0곳임을 검사한 후 같은 파일의 선택지 1724/1733에 재사용했다. 파일 간 슬롯 차용, 신규 VRAM, 글리프·엔진 확장 없음.
+- 1724는 |저거|그거|어느 거|비밀, 1733은 |노랑|사정상 갈빛|실은 빨강|누구?로 복원했다. 7/S7032.DAT 2152행은 ‘승자를 위한 것이 아니겠습니까?’로 줄여 원본 1바이트 연출 구간에 넣고 제어코드 23개를 원위치 보존했다. 6/S6013.DAT 1551행 카델 대사는 제어코드 27개를 보존한 3줄 템플릿으로 교정했다.
+- 최신 산출물은 03_output/V359_REVIEW_UPDATE.cue/bin 및 arc1_v359_slot_recovery2_TEST_ONLY.zip. ZIP SHA256 517ABAFD7486091977DBED1F0A548E61A2D12BA933B0E78FDBC61D2B735A04A5, BIN SHA256 353E79875603BC1FAC2B4C503B827CB80CC7DB4F18477CA4140584E95F445FBE. 변경은 DAT 3개뿐이며 이전 EXE/COMM/UI/Thin/MP 회복 수정은 byte exact다. 이전 이미지와 메모리카드는 보존했다.
+- 위 7행만 정식 CSV에 동기화했다. canonical SHA256 3D95CCB869E9A42AFD2967C4A2302DD67A108EB667A5DD2BD0603CFFD529956F. 일본어·주소·출처·나머지 한국어는 보존했다. 최신 결과는 dialogue_review_20260905/slot_recovery/최종결과.md에 정리했다.
+- 검수 215건 중 반영212/보류3이며 별도 슬롯 회수 3행을 포함해 이번 단계는 7행 변경이다. 1481/1482의 오돈(돈),1703의 초빈(빈)은 글리프가 없어 미해결이며 기존 아버지 오역/초비·초카라를 유지했다. 전부 해결 또는 배포완료로 보고하지 않는다.
+- 회수/제어/디스크 검사 PASS, 기존 전체 검사 마커2/폭69 실패 목록 전체 동일, RUNTIME PENDING/TEST_ONLY. bible_current 성공 기준은 승격하지 않았다.
+
+2026-09-05 - V359 전체 검수안 통합 시험판 (번호 유지)
+- 사용자 재작성/전체 빌드 승인에 따라 없는 글자를 기존 글자로 자연스럽게 재작성하고, 원본 DAT/COMM 글리프 17행을 직접 대조하여 非力/関わる/離れる/登る/カギ/クズ/始末/エネルギー/賭ける 등의 추출 오독을 확인했다. 원문 추출 CSV는 보존하고 확인 근거 PNG/MD를 별도 보관했다.
+- 검수 215항목 중 208항목을 출력에서 확인(기존 용어 반영20 포함), 7항목은 이전 문장을 유지했다. 총 새 번역188행이며 앞서 적용99행에 추가89행을 정식표에 반영했다. 새 canonical SHA256 26EC84DC29CC75E8D088314607C33DA85F8F3F39E8503F4516AB2C3721F0FFFF.
+- 변경 DAT69개. 기존 V359 UI bundle의 EXE/Thin COMM/도움말/UI폭/소환동작 보존. 기존 검증 Bank-B의 개별 미사용 슬롯만 pristine/current zero와 caller 부재를 대조해 사용; 신규 VRAM/글리프/엔진 훅 추가 없음. 슬롯 공유는 payload+복귀 skip exact 일치 조건이며 재사용 슬롯을 free pool에서 제외한다.
+- 실제 산출물 03_output/V359_REVIEW_ALL.cue/bin 및 arc1_v359_review_all_final_TEST_ONLY.zip. ZIP SHA 0C8482782890EB5A83C6D9A40A788177602E70A1D15C26AF49B7A4D9DA5A7D06, BIN SHA 18093DECD06EC78136B65BAD444D068A0AC3E20DE652062976F88EFF4B4F4BE2. 기존 모든 시험판/메모리카드/사용자 편집기 내보내기 보존.
+- 미적용7: 1481/1482 오돈의 돈 글리프,1703 초빈의 빈 글리프,1551 연출 템플릿,1724/1733 선택지 슬롯,2152 1바이트 연출 구간. 빌드적용내역/미적용과이유 HTML은 dialogue_review_20260905/build_all에 보관. 문구 자체가 불가능하다는 일반화는 하지 않는다.
+- STATIC/DISC PASS, RUNTIME PENDING/TEST_ONLY. 상속 선택지 검사 마커2/폭69 경고가 남아 배포완료 판정은 하지 않으며 bible_current 성공 기준은 유지한다.
+
+2026-09-05 - V359 UI 공백·머리 위 이름표 묶음 수정 후보
+- 사용자 일괄 수정 승인: 행동 끝/START 상태 확인 사이 공백2개, 결정/돌아가기 사이 기존1→2개. 공격/링 두 칸과 예 glyph150 보정 및 정비 도움말 복구 유지.
+- 공간 부족은 확인된 live 문자열 두 범위0x80944..0x80979 및0x820D5..0x820E1 내부 재배치로 해결. 미르마나와0x825F0 문구는 바이트 그대로 이동, 해당5포인터만 갱신. 새로운 zero cave/VRAM 사용 없음.
+- 머리 위 이름표 전용0x8015F130 산술4워드만 12*n+16→14*n+18 변경. 중앙 위치는 같은 새 폭으로 산출. 아크40→46px, 셀 기준 좌우8px. 다른 아이템/스킬 폭함수·폰트·DAT 보존. EXE74B만 변경.
+- V359_UI_BUNDLE.cue/bin 별도 출력. STATIC/DISC PASS; 이름표 화면가장자리·시각·입력 전이 RUNTIME PENDING. 원본/기존 시험판/사용자 저장 미변경.
+
+2026-09-05 - V359 Thin 항목 사이 공백 및 예 글리프 국소 보정
+- 승인 범위만 적용: PSX.EXE file0x80950의 ○공격/✕링 열기 사이 A1 공백2개 삽입(기존17B 범위 유지), COMM.IMG physical150 예의 ㅇ 오른쪽 획 x8→7로 이동하여 ㅖ와 x8 한 열 분리. EXE10B/COMM6B 변경, 전진폭/기계어/포인터/모든 DAT 유지.
+- 다른 1,919평면 byte/bit 보존. 기존 에/엑/엔/엘 보정과 정비 도움말 버튼 복구 계승. 다른 글자는 변경되지 않지만 예는 게임 전체에서 같은 새 모양으로 표시된다.
+- V359_THIN_SPACING_YE.cue/bin 별도 출력. 기존 파일/상태저장/편집 CSV 미변경. STATIC/DISC PASS, 최종 시각 검증 PENDING.
+
+2026-09-05 - V359 Thin 전투 진입 전 정비 도움말 버튼 복구 시험판
+- 사용자 조건부 복구 승인에 따라 PSX.EXE의 기존 두 문자열 범위(0x80224..0x8022F, 0x80D8E..0x80DA0)를 서로 교환 사용하고 테이블 0x82374/0x82378을 갱신했다. 실제 변경 32바이트, 크기 동일. 새 빈공간/글리프/VRAM/기계어 변경 없음.
+- 표시: [□][✕] 인물을 선택하세요 / [START] 전투 시작. 첫 줄 기존 한글 바이트 유지, 둘째 줄은 원본 버튼 의미에 맞는 간결한 안내로 복구했다. COMM.IMG, 모든 DAT, 기존 창/전투 처리 보존.
+- 산출물: 03_output/V359_THIN_PREP_ICONS.cue 및 .bin. 이전 V359_THIN 파일 보존. STATIC/DISC PASS, 실제 색상·정렬·선택/START 전이 확인 PENDING. 배포 완료 판정 아님.
+
+2026-09-04 - V359 Thin 16px 전체 적용 후보 및 ㅇ+ㅔ 접합 보정(빌드 번호 유지)
+- 사용자가 초반 Thin 화면의 두께와 인상을 승인해, 앞선 비교판과 같은 V359 기반에서 현재 매핑된 한글 723평면 전체를 Thin으로 유지하는 시험판을 만들었다. 빌드 번호와 PSX.EXE는 V359 그대로다.
+- Thin 원본 합성에서 초성 ㅇ의 오른쪽 획과 중성 ㅔ의 가로획이 한 픽셀 겹치는 구조를 확인했다. 현재 매핑에 존재하는 같은 계열 `에/엑/엔/엘` 4자의 완성 비트맵만 국소 보정해 두 요소 사이에 빈 열을 만들었고, 셀 16x16·기준선·게임 전진폭은 바꾸지 않았다.
+- V359 대비 변경 멤버는 `COMM.IMG` 하나이며 723평면/9,324바이트가 바뀐다. PSX.EXE·모든 DAT·나머지 1,197평면·native damage 804..819·홑낫표 738/774·compact 숫자/아이콘·E7/high-page 자산은 byte/plane exact다. 현재 매핑 충돌 0, 전체 11,172자 희귀 중복 extra 19는 유지된다.
+- full/delta SHA-256은 `D38CAB437797F649819E4D777C0C6344C67351D5EB5BFFAB812F22C4F71B821A` / `40E860132A39D9FA24323B6345368C2CB30129B276CFC598AADC97952FEABAE5`다. `V359_THIN.bin`/cue SHA-256은 `BC77A540BC6CE558B789C5B2DA60F782B24C7BB865E7510B1C858B70C689910E` / `5DC55F3D994816B95C4DAAC73DF4CF3DD61B9347BA004540A77A51C18BA9C863`; v104 LBA 506/506와 164/164 readback PASS다. 전체 게임 소비 경로는 RUNTIME PENDING / TEST_ONLY이며 bible 기준은 바꾸지 않는다.
+
+2026-09-04 - V359 Thin 16px 글꼴 비교판(빌드 번호 유지)
+- 사용자 요청대로 번호를 올리지 않고 V359 full ZIP을 기준으로 `V359_THIN_PREVIEW` TEST_ONLY 비교판을 만들었다. 8x4x4-fonts-all.zip과 Thin/Hanme TTF를 SHA-256으로 고정하고, 같은 Pillow 16px·threshold 96 경로가 기존 Hanme 360조각 SHA `409ABA72...`를 정확히 재현할 때만 Thin 조각 SHA `F6CC99A2...`를 사용하도록 했다.
+- V336/V337의 논리 physical `804..819 -> 161..176`, `168..170 -> 741..743` 런타임 이동을 반영해 실제 한글 평면 723개(고유 690자)만 Thin으로 교체했다. 현행 V359의 723개가 전부 공식 Hanme 벌 조합과 일치함을 입력 가드로 확인했으며, 현재 매핑 글자끼리 Thin 비트맵 충돌은 0이다. 전체 11,172자는 희귀 중복 19건이 남아 있어 배포 승격 전 별도 고려가 필요하다.
+- 변경 멤버는 `COMM.IMG` 하나, 변경 평면/바이트는 723/9,320이다. PSX.EXE·모든 DAT·나머지 1,197개 평면, native damage 804..819, 홑낫표 738/774, compact 숫자·아이콘·E7/high-page 자산은 V359와 byte/plane exact다.
+- full/delta SHA-256은 `F91B3F0BE26EDC107ABAC502D99194BB26764BF997AD0210948B2A9828735DB9` / `E024601C116F08E554A41B2862F926495EBE24D469893BE9A39239F99E48E285`다. `V359_THIN_PREVIEW.bin`/cue는 `D0EAD1FFC4775A4C645651CE7BE57393BCBA469793913F418B9D1B8754AE5F24` / `0B37D9DFDE2EB872522461C14EAC1B2F71D1B628EE551EAAF9A40F7498303D6D`; v104 LBA 506/506와 164/164 readback PASS다. 초반 화면 육안 확인 전까지 RUNTIME PENDING / TEST_ONLY이며 bible 기준은 바꾸지 않는다.
+
+2026-09-04 - V359 누락된 E7 버튼 의미의 문자 대체 복구
+- V358의 16px 아틀라스에서 원본 다색 E7 버튼 아이콘을 되살리려면 추가 글리프 평면이 필요하므로, 사용자가 포기한 원형 아이콘 복원 대신 기존 글리프만으로 빈칸의 의미를 되살렸다. 5개 초핀 도움말은 `결정 버튼`, 승무원 도움말 1개는 `결정 버튼`, 4/S4033의 전투 도움말은 `L과 R` 및 `취소 버튼`으로 교정했다.
+- 기존 E2 소유 슬롯 7개는 caller와 `slot+0x7F` metadata를 보존한 채 payload만 다시 썼다. 유일한 32바이트 제자리 문장 `4/S4033.DAT:0x48102`은 원본·V358 모두 0인 Bank-A slot33(`0x46080`, disk id `A2`)을 새로 사용하고, caller를 `E2 A2`+30바이트 공백으로 바꾸며 metadata 30을 기록했다. live script의 `E2 A2` caller는 이 한 곳뿐이다.
+- `script_translated_full.csv`와 `dialogue_all.csv`의 동일 8행을 동기화하고 해시를 각각 `2AE70EB0C8A627686B714884469DD883683BE2B79FB5A5E7D793E0F73D911980` / `CEBB7E2C575F3669873693B2C6BC03AA239DAF801474DC3A326F31A58383EEC5`로 고정했다. L/R은 기존 코드 `DD D8`/`DE 88`(physical 435/610)을 사용하므로 COMM.IMG·추가 VRAM 변경은 0이다.
+- 새 빌더 `build_arc1_v359_e7_semantic_text_repair.py`와 빌더를 import하지 않는 독립 verifier를 추가했다. V358 대비 변경 멤버는 7개 DAT뿐이고 Expected-Write는 331바이트다. PSX.EXE, COMM.IMG, 나머지 157멤버는 byte exact이며 8/8 문장 디코드·미지원 글리프 0·3행 이하를 확인했다.
+- full/delta SHA-256은 `7D6B0F1B6A3C5A35B0EF61DF358278E46B261A496C57F1027D03D836AA9D6EC0` / `46F9CDB15F8C57C6F394F14BD67B41089C64156A7DFF72DD859F4C5C92DDFCD0`다. `V359.bin`/cue SHA-256은 `EA475EFC1D8F3826C14E3773B4F3ABC98DA482BE597A50CE2E6AEA37AF62AA19` / `3C6FB7FB2521F4BE5848167498F37AB7D855CAC8E89BD2B030AE76AF006F9C7F`이고 v104 데이터 LBA 506/506·164/164 readback이 PASS했다.
+- `check_build.py`는 V358과 같은 상속 경고(선택지 마커 2·폭 69)만 냈다. E2 1431→1432·제자리 1059→1058은 LR 문장 한 곳을 안전 슬롯으로 외부화한 의도한 변화다. 판정은 `STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING / TEST_ONLY`이며 콜드부팅 전에는 승인 기준점이나 배포판으로 승격하지 않는다.
+
+2026-09-04 - V358 봉인 대사 교정 및 2행 대상 선택창 전용 보정
+- V357을 해시 고정 입력으로 사용해 `F/SF0F1.DAT` E2 slot0의 문장을 `알겠느냐? 우리에게 봉인의 기술 따위는 필요 없다. 산으로 돌아가는 건 다른 볼일이 있어서다.`로 교정했다. 원문 `山に帰るのは別の用じゃ`의 의미에 따라 `들어가다`가 아니라 `산으로 돌아가다`를 유지했고, caller `0x47910`, `slot+0x7F=0x2D`, 종료자와 0패딩은 보존했다.
+- 대상 선택 2행 창 전용 함수 `0x80166AC4`에서 창 크기를 `172x34 -> 198x40`, 두 번째 행 Y를 `129 -> 131`로 조정했다. 첫 행 Y=115와 창 x/y=74/111은 유지되어 최종 좌우/상하 여백이 8/8/4/4px가 된다. 이 함수의 호출자는 `0x80166898` 하나이며 E7 아이콘, 삼각 커서, 하단 도움말 생산자는 변경하지 않았다.
+- 새 빌더 `build_arc1_v358_dialogue_target_panel_fix.py`와 빌더를 import하지 않는 독립 verifier `verify_arc1_v358_dialogue_target_panel_fix.py`를 추가했다. 변경 멤버는 `F/SF0F1.DAT`, `PSX.EXE`뿐이고 실제 diff는 각각 59/3바이트, 총 62바이트다. COMM.IMG와 나머지 162멤버는 V357과 byte exact다.
+- full/delta SHA-256은 `D499D9D463A66B343A9D794A49753454788B3F18C6DC38B7CDE7A77304838061` / `AB190119680DC4A0F5A46E619D01EF9AAD6F690ED3378B1B01CFB8A5C8E9164A`다. `V358.bin`/cue SHA-256은 `AEBB983309544875EB9E2561DF71237B5E6DC1BD4E6DC660BB4394917657AEA3` / `DFA00826BDDAED6262E85678E9D510C60FA75B5212BBC101C37DBFAF8ECECF27`이고 v104 데이터 LBA 506/506·164/164 readback이 PASS했다.
+- 공통 `check_build.py`의 V357/V358 출력은 대상 파일명 외에는 동일하다(상속 선택지 마커 2·폭 69 경고). 판정은 `STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING / TEST_ONLY`이며 콜드부팅 전에는 승인 기준점이나 배포판으로 승격하지 않는다.
+
+2026-09-03 - V357 사용자 검수 전체 대화 Bank-B 통합 빌드
+- `dialogue_all.csv` 내보내기에서 복구한 사용자 검수본을 정식 입력으로 고정하고 `7/S7022.DAT:0x488F0`의 중복 화자 `출전자: 출전자:`를 `출전자:` 한 번으로 교정했다. CSV 열 복구 과정에서 잘못 합쳐졌던 `21/S2041.DAT:0x483D4`도 기존 승인 문장 `승무원: 아니요, 아무것도 아닙니다.`로 복구했다. canonical SHA-256은 `F751A145C08423067CED1D5AF288590E3F1E2E38514103D43EF531681FA2E274`다.
+- `generate_arc1_v357_full_targets.py`, 해시 고정 `v357_full_dialogue_targets.csv`, `build_arc1_v357_user_reviewed_dialogue_bankb.py`, 빌더를 import하지 않는 `verify_arc1_v357_user_reviewed_dialogue_bankb.py`를 추가했다. V354 내용 기준선과 V355에서 런타임 승인된 Bank-B handler를 불변 입력에서 다시 결합했다.
+- 최종 대상은 353행/72 DAT(`빌드대기` 172, `선택지` 134, 사용자 승인 Bank-B 47)다. Bank-A 251슬롯, Bank-B 54슬롯을 사용했고 최종 화면 문장 353/353, 선택지 134/134, 원본 E4/E5/E6/E7/E8 제어토큰 973개, E2 종료자·0패딩·`slot+0x7F` skip, 비텍스트 보호 199행, Expected-Write 15,729바이트를 독립 검증했다. COMM.IMG는 byte exact이며 추가 VRAM은 0바이트다.
+- full/delta SHA-256은 `34854022BB0CA1C17BF4D798B8405009F8CC04914253E1D48476B2A2DBC3397A` / `5A285CFDCFD686E114B2B3D814C6FB1079FF0B49DAFE2A8EB7C3604BF2152783`이다. `V357.bin`/cue SHA-256은 `4F32BD87007EB3A101786BCA10D392AA98EA45F40AED990FC0EC81E880F43E42` / `0C7113777366A7D2FEF773D6FE07E4FE9F469B71FDCC7479F679EB06855633F4`이고 v104 데이터 LBA 506/506·164/164 readback이 PASS했다.
+- `check_build.py`의 V356/V357 결과는 파일명 줄을 제외하고 byte-equivalent다(상속 선택지 마커 2·폭 69 경고). 신규 구조 경고는 0이다. 판정은 `STATIC PATCH PASS / DISC INTEGRITY PASS / USER-REVIEWED / RUNTIME PENDING / TEST_ONLY`이며 콜드부팅 대표 순회 전에는 배포판으로 승격하지 않는다.
+
 2026-09-02 - V356 전체 대화 Bank-B 실사용 REVIEW_ONLY 빌드
 - V354의 대화/UI/폰트 내용 기준선과 V355에서 사용자 콜드부팅으로 승인된 E2 Bank-B D1..EC handler를 결합했다. 실제 화면 대사로 확인된 343행/65 DAT를 재삽입했고 Bank-A 237슬롯, Bank-B 54슬롯을 사용했다. COMM.IMG는 byte exact이며 추가 VRAM 사용은 0바이트다.
 - `review_editor.py`가 199개 바이너리·외부표 거짓 양성을 읽기 전용 `비텍스트보호`로 고정하고 슬롯 계획에서 제외하도록 했다. canonical 2,878행은 미번역 0, 미지원 글리프 0, 슬롯 부족 0이다. 신규 초안 47행은 `B검수필요`와 `v356_bankb_review.csv`로 분리해 사용자 승인 전 배포할 수 없게 했다.
@@ -2126,3 +2209,22 @@
 - V354는 `4/S4031.DAT`, `5/S5041.DAT`, `8/S8051.DAT`, `E5/SE05A.DAT` 네 멤버의 58바이트만 달라진다. full/delta SHA-256은 `2AA6C42AC1F62B5D1C7121F27B77807610C9E05D423C548429CB38653DF9C194` / `6E4A79CA67039176591CC7EC1E77177F92574760C967FC23463CE026556A7D1B`다.
 - `V354.bin`/cue SHA-256은 `C864CA8421069D60A38F8502D33D99589A39DC1C94B72635C4A9C44FB711382D` / `7E762640C121B06C831EC8309C966CF6248B7553C46B277DDA1CD04B3E49597A`다. v104 데이터 LBA 506/506, COMM 307/667/891, 패치 멤버 164/164 디스크 readback PASS다. V354 자체 장면 확인은 `RUNTIME PENDING / TEST_ONLY`다.
 - `check_build.py`는 V353/V354 모두 기존 선택지 폭 75·마커 2·3줄 초과 18로 exit 1이며 첫 파일명 줄을 제외한 출력이 완전히 동일하다. 신규 구조 부채는 0이다.
+
+2026-09-03 - V356 대화 편집기 내보내기 복구 반영
+- 저장 버튼 대신 `dialogue_all.csv`로 내보낸 사용자 검수본(SHA-256 `21AC3E53075A4951A7953928D1AABC13D9DA03CD640125B6B4EFF43B8AC473F1`)을 키 `(source file, offset)`로 `script_translated_full.csv`에 대조했다. 양쪽은 2,878행이고 키 차이는 0이었다.
+- 내보낸 수정 45건 중 사용자가 철회한 `인간→인류` 계열 22건은 반영하지 않고 기존 `인간` 문장으로 유지했다. 나머지 23건을 반영하고, 별도로 `1/S1011.DAT:0x4799E`의 유일한 `파렌시아`를 `팔렌시아`로 고쳐 번역문 변경은 총 24행이다.
+- 과거 쉼표 비인용으로 열이 갈라졌던 `21/S2041.DAT:0x483D4`, `7/S7026.DAT:0x489AC`, `B/SB071.DAT:0x47F0E`과 잘못된 출처 꼬리가 남았던 `B/SB041.DAT:0x47AAA`를 정상 5열 CSV로 복구했다. 전체 2,878행의 열 수와 출처 값(`existing/new/blank`)을 다시 검증했다.
+- 변경 전 정식표는 `99_backup/script_translated_full_pre_export_import_20260903_192008_6AB19301.csv`에 원본 SHA-256 `6AB19301CF92F51DCCAC5ADC7F4251F43A7032A0FDC8D7271BB5C75F2D856EBE` 그대로 보관했다. 변경 후 SHA-256은 `E9E452ED0AB3CC7132B56C7BF44A12D849C6F95623E5E5997523A74934E90A68`이다.
+- 이번 작업은 정식 번역 CSV만 갱신했다. 새 ZIP/BIN 또는 게임 빌드는 만들지 않았고 `bible_current.txt`의 현재 성공 기준도 변경하지 않았다.
+
+2026-09-05 - 사용자 승인 검수안 조건부 적용
+- 215개 검수 항목을 현행 V359 UI bundle 바이트에 대조하여 정식 번역표 99행을 수정했다. 사원 표기 등 기존 일치 20행은 그대로 두고 96행은 보류했다. 1101행은 후속 대화의 '몬스터가 성의 병사로까지 위장해 있다니...'를 채택했다.
+- 최신 바이트에 누적 재삽입을 메모리상 시뮬레이션했다. 기존 E2 복귀 skip으로 사장된 call-site 바이트를 건너뛰며 파싱하고, 보호 E5/E6 위치, 글리프, 줄 수, 슬롯 용량, expected-before 변경 범위, 수정문 재해독을 검사했다. 특수 제어코드 템플릿/원문 해석 미확정 항목은 보류했다.
+- 적용내역.html, 보류목록.html, application_plan.json 및 변경 전 canonical_before.csv는 01_work/analysis/dialogue_review_20260905/application/에 보관했다. 기존 dialogue_all.csv 내보내기·편집기 소스·게임 ZIP/BIN은 변경하지 않았다.
+- 이 결과는 정식 번역표 적용과 정적 재삽입 계획이며 원본부터 새로 만든 통합 게임 빌드/런타임 성공이 아니다. bible_current는 변경하지 않는다.
+
+2026-09-05 - 사원 명칭 통일 및 전체 대사 1차 검수
+- 사용자 승인에 따라 script_translated_full.csv의 라마다 사원/라마다사원 21행만 라마다사로 통일했다. 라마다산/라마다 승려 등은 변경하지 않았다. 게임 빌드는 하지 않았다.
+- 2,878행을 세 구간으로 전량 읽고 비대사 보호 199행을 제외한 2,679행의 검토 후보를 별도 분석 JSON/HTML로 작성했다. 후보 215건 중 승인 용어 반영과 정확히 일치하는 20건을 완료로 구분하고 195건은 미승인으로 유지했다. 남은 한 용어 행은 띄어쓰기 제안도 포함하므로 미승인이다.
+- 축약/띄어쓰기 복원 후보 71건은 별도 HTML로 분리했다. 기존 편집기 추정 59건 통과, 선택지 12건은 템플릿 검증 필요. 최신 빌드 안전성 판정이나 강제 축약 이력 확정으로 오해하지 않도록 한계를 명시했다.
+- 분석 제안을 정식 번역표/편집기 저장본/빌드대기에 자동 적용하지 않았다. bible_current 성공 기준은 유지한다.

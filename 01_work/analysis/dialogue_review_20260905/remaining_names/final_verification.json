@@ -1,0 +1,141 @@
+{
+  "status": "NAME/DISC CHECKS PASS; LEGACY GATE FAILS; RUNTIME PENDING",
+  "release_ready": false,
+  "review_total": 215,
+  "review_resolved": 215,
+  "review_held": 0,
+  "zip_sha256": "A66F88444716E9993C0C4BBC2EC58A4965B3359D55278DC193A183A621BE4E1B",
+  "bin_sha256": "790683AAD90D3968092CE12E46C305120BA3BFC6816E7B828C83FB65348BA19E",
+  "canonical_sha256": "B3F5BA97EAC7C2D20500AE8498B982F128B35D15A8151F378131F5084B99E760",
+  "changed_files": [
+    "5/S5025.DAT",
+    "6/S6054.DAT"
+  ],
+  "changed_rows": [
+    1481,
+    1482,
+    1703
+  ],
+  "additional_slots": 0,
+  "font_or_vram_changes": 0,
+  "legacy_failures_exact": true,
+  "legacy_failure_counts": {
+    "선택지 마커가 원판과 다른 위치": 2,
+    "선택지 줄이 창을 넘음 (커서·다음 칸과 겹침)": 69
+  },
+  "disk_verification": "patch    arc1_v359_review_215_TEST_ONLY.zip\n\noriginal E:\\arc\\����\\arc1.bin   507 files\nbuilt    E:\\korean\\03_output\\V359_REVIEW_UPDATE2.bin   507 files\n\npass  all 506 data files kept their sector number\npass  COMM.DAT   LBA 307  (executable expects 307)\npass  COMM.IMG   LBA 667  (executable expects 667)\npass  COMM.SND   LBA 891  (executable expects 891)\n\n  comparing 164 patched files against the image\npass  all 164 patched files on the disc match arc1_v359_review_215_TEST_ONLY.zip\n\n  PSX.EXE at LBA 268481 (was 23), 587776 bytes\n\nRESULT: PASS - disc layout/member integrity only; runtime not established\n",
+  "build": {
+    "status": "NAME ROW CHECKS PASS / RUNTIME PENDING / TEST_ONLY",
+    "base": "E:\\korean\\03_output\\arc1_v359_slot_recovery2_TEST_ONLY.zip",
+    "base_sha256": "517ABAFD7486091977DBED1F0A548E61A2D12BA933B0E78FDBC61D2B735A04A5",
+    "zip": "E:\\korean\\03_output\\arc1_v359_review_215_TEST_ONLY.zip",
+    "zip_sha256": "A66F88444716E9993C0C4BBC2EC58A4965B3359D55278DC193A183A621BE4E1B",
+    "changed_files": [
+      "5/S5025.DAT",
+      "6/S6054.DAT"
+    ],
+    "untouched_neighbor_rows": 88,
+    "review_total": 215,
+    "review_resolved": 215,
+    "review_held": 0,
+    "rows": [
+      {
+        "row": 1481,
+        "file": "5/S5025.DAT",
+        "offset": "0x47CE0",
+        "before": "너, 아버지잖아!!",
+        "target": "너, 오톤이구나!!",
+        "capacity_bytes": [
+          12
+        ],
+        "encoded_bytes": [
+          11
+        ],
+        "visible_rows": [
+          1
+        ],
+        "control_count": 0,
+        "e2_slots_added": 0,
+        "writes": [
+          {
+            "at": 294115,
+            "before": "096704ddbc09",
+            "after": "46dd9a03871e"
+          }
+        ],
+        "readback": "PASS"
+      },
+      {
+        "row": 1482,
+        "file": "5/S5025.DAT",
+        "offset": "0x47D46",
+        "before": "내 집에 아버지가 머물러 있다니...",
+        "target": "내 집에 오톤이 눌러살고 있다니...",
+        "capacity_bytes": [
+          27
+        ],
+        "encoded_bytes": [
+          24
+        ],
+        "visible_rows": [
+          2
+        ],
+        "control_count": 0,
+        "e2_slots_added": 0,
+        "writes": [
+          {
+            "at": 294220,
+            "before": "0967040c",
+            "after": "46dd9a03"
+          },
+          {
+            "at": 294225,
+            "before": "dd5d6d20a11f01072121",
+            "after": "ded320dda21ca11f0107"
+          },
+          {
+            "at": 294236,
+            "before": "a1a1",
+            "after": "2121"
+          }
+        ],
+        "readback": "PASS"
+      },
+      {
+        "row": 1703,
+        "file": "6/S6054.DAT",
+        "offset": "0x45002",
+        "before": "|초핀|초비|초스케|초카라",
+        "target": "|초핀|초비|초스케|촌가라",
+        "capacity_bytes": [
+          4,
+          5,
+          6,
+          6
+        ],
+        "encoded_bytes": [
+          2,
+          3,
+          4,
+          3
+        ],
+        "visible_rows": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "control_count": 7,
+        "e2_slots_added": 0,
+        "writes": [
+          {
+            "at": 282655,
+            "before": "39dd38dd05",
+            "after": "960c8fa1a1"
+          }
+        ],
+        "readback": "PASS"
+      }
+    ]
+  }
+}

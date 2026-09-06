@@ -1,0 +1,9 @@
+﻿member,source_offset,bank,slot,disk_id,slot_offset,metadata,allocation,caller_count
+21/S2045.DAT,0x49292,A,28,0x9D,0x45E00,53,existing-owned,1
+31/S3013.DAT,0x4855E,A,3,0x84,0x45180,40,existing-owned,1
+4/S4033.DAT,0x48156,A,14,0x8F,0x45700,24,existing-owned,1
+5/S5013.DAT,0x4927E,A,29,0x9E,0x45E80,53,existing-owned,1
+6/S6014.DAT,0x4922A,A,27,0x9C,0x45D80,53,existing-owned,1
+7/S7012.DAT,0x48D22,A,27,0x9C,0x45D80,53,existing-owned,1
+8/S8013.DAT,0x47D10,A,16,0x91,0x45800,53,existing-owned,1
+4/S4033.DAT,0x48102,A,33,0xA2,0x46080,30,new-pristine-zero-unreferenced,1

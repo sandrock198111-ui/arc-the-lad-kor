@@ -1,0 +1,11 @@
+Arc the Lad 1 V359 full Thin font candidate disc verification
+RESULT=PASS (layout/member integrity only; global runtime pending)
+image=V359_THIN.bin
+image_sha256=BC77A540BC6CE558B789C5B2DA60F782B24C7BB865E7510B1C858B70C689910E
+cue=V359_THIN.cue
+cue_sha256=5DC55F3D994816B95C4DAAC73DF4CF3DD61B9347BA004540A77A51C18BA9C863
+layout=v104
+data_file_lba=PASS 506/506 unchanged
+COMM.DAT/COMM.IMG/COMM.SND=PASS LBA 307/667/891
+patched_member_readback=PASS 164/164
+PSX.EXE=LBA 268481 size 587776

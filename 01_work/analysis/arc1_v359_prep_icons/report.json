@@ -1,0 +1,33 @@
+{
+  "status": "STATIC CANDIDATE / RUNTIME PENDING",
+  "base_sha256": "D38CAB437797F649819E4D777C0C6344C67351D5EB5BFFAB812F22C4F71B821A",
+  "output_sha256": "281D3CA41C0D32E7FD6E5E04FDBF0EF0B6F349189D6C342B57744CCA04EDF408",
+  "exe_sha256": "4E52FA3A60BF3E6049C2AEA573B03DC250A344FAE2A80435517350D5E7E07CAA",
+  "changed_member": "PSX.EXE",
+  "changed_bytes": 32,
+  "ranges": [
+    {
+      "offset": "0x80224",
+      "size": 12
+    },
+    {
+      "offset": "0x80d8e",
+      "size": 19
+    },
+    {
+      "offset": "0x82374",
+      "size": 4
+    },
+    {
+      "offset": "0x82378",
+      "size": 4
+    }
+  ],
+  "new_glyphs": 0,
+  "new_vram": 0,
+  "code_changes": 0,
+  "rows": [
+    "□ ✕ 인물을 선택하세요",
+    "START 전투 시작"
+  ]
+}

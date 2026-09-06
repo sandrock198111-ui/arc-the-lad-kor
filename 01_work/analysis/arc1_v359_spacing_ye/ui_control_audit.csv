@@ -1,0 +1,667 @@
+﻿pointer,japanese,current,original_hex,current_hex,missing_controls,empty_after
+0x780e8,,처음부터,28 4a 51 20 33,dd 8f 8d 6c 02,,False
+0x780ec,,저장 데이터가 없습니다,dd 60 31 c9 3a 32 21 1b 27 59 2d,dd 24 56 a1 81 03 02 0c a1 71 2d 07 01,,False
+0x780f0,,메모리 카드에 남은 공간이 없습니다,bc 31 95 23 3f 44 2a 3f 39 27 59 2d,dd 2c 55 2e a1 dd 38 17 0e a1 dd 3d 26 a1 dd 10 dd 1b 03 a1 71 2d 07 01,,False
+0x780f4,,그대로 계속하기,2e 1c 27 27 45 dd f9 49 22,15 37 d5 a1 dd 11 dd 5f 19 24,,False
+0x780f8,,데이터가 손상되었습니다,81 31 62 2a 2e 43 32 21 1b 27 2b,81 03 02 0c a1 85 8b 73 61 2d 07 01,,False
+0x781b8,,불러올 데이터를 선택하세요,81 31 62 2f 46 33 2d 30 3e 35 3a 1b,dd 13 20 99 a1 81 03 02 36 a1 dd 53 df 9a 19 8c 2c,,False
+0x781bc,,메모리 카드 없이 계속하시겠습니까?,78 5f 6b 31 bc 31 95 2f 45 20 43 8c 23 dd 4d 31 d8 2f 45 dd f9 49 27 2b 20 3c,dd 2c 55 2e a1 dd 38 17 a1 71 03 a1 dd 11 dd 5f 19 29 54 2d 07 3b d1,,False
+0x781c0,,메모리 카드를 넣고 확인 버튼을 누르세요,78 5f 6b 31 bc 31 95 2f dd 60 82 5c 1e 21 e7 02 dd a1 62 34 2f 3b 1e 21 3e 35 3a 1b,dd 2c 55 2e a1 dd 38 17 36 a1 6f 1c a1 de 2b 35 a1 67 dd f7 0d a1 dd 55 70 8c 2c,e7 02,False
+0x781c4,,어느 카드를 사용하시겠습니까?,54 4b 33 1c bc 31 95 2f 45 20 1b 27 2b 20 3c,14 4d a1 dd 38 17 36 a1 34 dd 1a 19 29 54 2d 07 3b d1,,False
+0x781c8,,메모리 카드를 초기화하시겠습니까?,78 5f 6b 31 bc 31 95 2f a6 de b4 31 64 82 5c 1e 27 2b 20 3c,dd 2c 55 2e a1 dd 38 17 36 a1 39 24 dd 83 19 29 54 2d 07 3b d1,,False
+0x781cc,,메모리 카드가 가득합니다. 계속하시겠습니까?,78 5f 6b 31 bc 31 95 2a 1b 29 75 1b 30 2b 2a dd 4d 31 d8 2f 45 dd f9 49 27 2b 20 3c,dd 2c 55 2e a1 dd 38 17 0c a1 0c de a9 dd 1d 07 01 21 a1 dd 11 dd 5f 19 29 54 2d 07 3b d1,,False
+0x781d0,,쓰지 않는 데이터를 지우거나 다른 카드를 넣으세요,1b 33 1d 1b a6 de 4e 65 53 2f 49 2b 20 24 dd 35 45 1c bc 31 95 2f dd 60 82 5c 1e 21 3e 35 3a 1b,dd 85 04 a1 78 06 a1 81 03 02 36 a1 04 3d 32 1e a1 01 dd bf a1 dd 38 17 36 a1 6f 4e 8c 2c,,False
+0x78220,,메모리 카드를 확인하고 있습니다,78 5f 6b 31 bc 31 95 2f 6c df 5d 82 4e 1e 21 1b 27 2b,dd 2c 55 2e a1 dd 38 17 36 a1 de 2b 35 19 1c a1 1f 2d 07 01,,False
+0x78224,,메모리 카드를 초기화하고 있습니다,78 5f 6b 31 bc 31 95 2f a6 de b4 31 64 82 5c 1e 21 1b 27 2b,dd 2c 55 2e a1 dd 38 17 36 a1 39 24 dd 83 19 1c a1 1f 2d 07 01,,False
+0x78228,,데이터를 저장하고 있습니다,81 31 62 2f dd 60 31 c9 1e 21 1b 27 2b,81 03 02 36 a1 dd 24 56 19 1c a1 1f 2d 07 01,,False
+0x7822c,,데이터를 불러오고 있습니다,81 31 62 2f a2 31 95 1e 21 1b 27 2b,81 03 02 36 a1 dd 13 20 46 1c a1 1f 2d 07 01,,False
+0x804a4,炎の守り,불꽃의 수호,bf 1c dd 1e 39,dd 13 dd 8c 0f a1 50 95,,False
+0x804a8,氷の守り,얼음의 수호,df 14 1c dd 1e 39,de 93 8d 0f a1 50 95,,False
+0x804ac,アンチへモジー,안티 헤모지,42 34 6c dd 3b 5f 7f 31,94 df 51 a1 dd c3 55 04,,False
+0x804b0,いやしのお守り,치유의 부적,1b 40 1e 1c 3b dd 1e 39,dd 1f 8a 0f a1 6c dd 09,,False
+0x804b4,きぬのおび,비단 허리띠,44 dd 4f 1c 3b 99,dd 06 dd 35 a1 de 48 2e de 7a,,False
+0x804b8,魔法のカート,마법 카드,dd 1b dd 51 1c bc 31 95,45 dd 37 a1 dd 38 17,,False
+0x804bc,スリー<N:フ:11><N:リ:12>スカート,수면 방지 카드,47 6b 31 dd 55 6f 47 bc 31 95,50 3a a1 dd 29 04 a1 dd 38 17,,False
+0x804c0,パワーアーム,파워 암,a3 dd a0 31 42 31 d8,dd 7b dd 68 a1 df 6c,,False
+0x804c4,カ<N:｣:11><N:ザ:8>ー<N:ク:12>ローフ,카이저 글러브,bc 65 dd c8 31 80 a2 31 c9,dd 38 03 dd 24 a1 de 1a 20 dd c8,,False
+0x804c8,幻のこて,환상의 장갑,dd f2 1c 2e 21,dd 65 8b 0f a1 56 de 0c,,False
+0x804cc,サン<N:ク:12>ラス,선글라스,77 34 80 57 47,dd 53 de 1a 8f 30,,False
+0x804d0,当て方の絵巻,명중의 두루마리,dd 42 21 c4 1c de f7 de f6,dd 34 dd 73 0f a1 dd 21 dd 42 45 2e,,False
+0x804d4,ぶん投げの絵巻,투척의 두루마리,ca 2d de 04 9c 1c de f7 de f6,dd 39 df 93 0f a1 dd 21 dd 42 45 2e,,False
+0x804d8,神のこぶし,신의 주먹,dd 2f 1c 2e ca 1e,3e 0f a1 40 de 66,,False
+0x804dc,バ<N:｣:11>オ<N:リ:12>ット<N:リ:12>ーサー,바이올렛 레이저,af 65 8f 6f 82 5c 6f 31 77 31,dd 08 03 99 df 2c a1 dd 66 03 dd 24,,False
+0x804e0,<N:ネ:13>ック<N:リ:12>ス,목걸이,dd c6 82 4e 6f 47,dd 33 dd 8e 03,,False
+0x804e4,じ<N:ぃ:20>す,염주,4a de 20 8c,df 89 40,,False
+0x804e8,長老のはちまき,장로의 머리띠,d4 a8 1c 28 4b 27 44,56 d5 0f a1 dd 5d 2e de 7a,,False
+0x804ec,しつ<N:ぷ:23>うのバンダナ,질풍의 반다나,1e 29 de b5 26 1c af 34 67 7c,dd aa de 2e 0f a1 dd 46 01 1e,,False
+0x804f0,<N:ハ:12><N:｣:11>パーフーツ,하이퍼 부츠,dd a2 65 a3 31 c9 31 df 01,19 03 de 78 a1 6c de cd,,False
+0x804f4,まにあわせのくつ,임시 신발,27 23 3f 43 59 1c 3e 45,dd c2 29 a1 3e dd 0e,,False
+0x804f8,フ<N:リ:12>ス<N:リ:12>ット,팔찌 1,c9 6f 47 6f 82 5c,dd 6c de 56 a1 4a,,False
+0x804fc,フ<N:リ:12>ス<N:リ:12>ット,팔찌 2,c9 6f 47 6f 82 5c,dd 6c de 56 a1 0b,,False
+0x80500,技のフ<N:リ:12>ス<N:リ:12>ット,기술의 팔찌,dd 4c 1c c9 6f 47 6f 82 5c,24 dd e5 0f a1 dd 6c de 56,,False
+0x80504,女神のいのり,여신의 기도,de 6b dd 2f 1c 1b 1c 39,1a 3e 0f a1 24 33,,False
+0x80508,パワーリスト,파워 리스트,a3 dd a0 31 6b 47 5c,dd 7b dd 68 a1 2e 30 dd 5b,,False
+0x8050c,デ<N:ｲ:6>ールの<N:牙:4>,데일의 이빨,81 dd 03 31 53 1c de b0,81 6b 0f a1 03 de 20,,False
+0x80510,幻獣の<N:牙:4>,환수의 이빨,dd f2 de 6e 1c de b0,dd 65 50 0f a1 03 de 20,,False
+0x80514,しおかぜの調ベ,바닷바람의 선율,1e 3b 20 a7 1c dd 86 dd 35,dd 08 df 1f dd 08 dd 22 0f a1 dd 53 de a6,,False
+0x80518,<N:貝:2>がら,조개껍데기,df 50 2a 33,90 dd b4 df 18 81 24,,False
+0x8051c,一角獣の角,유니콘의 뿔,8e de 7c de 6e 1c de 7c,8a 07 de 96 0f a1 de e1,,False
+0x80520,<N:悲:5>劇のめがね,비극의 안경,dd ba de 15 1c 51 2a 4c,dd 06 df 17 0f a1 94 68,,False
+0x80524,鏡,거울,dd ae,32 dd 92,,False
+0x80528,古代の<N:ｴ:24>びわ,고대의 반지,dd 69 dd a8 1c dd 04 99 43,1c 37 0f a1 dd 46 04,,False
+0x8052c,幻の<N:ｴ:24>びわ,환상의 반지,dd f2 1c dd 04 99 43,dd 65 8b 0f a1 dd 46 04,,False
+0x80530,魔導の<N:ｴ:24>びわ,마도의 반지,dd 1b de 03 1c dd 04 99 43,45 33 0f a1 dd 46 04,,False
+0x80534,おもちゃの<N:ｴ:24>びわ,장난감 반지,3b 38 4b 48 1c dd 04 99 43,56 dd 6a dd 77 a1 dd 46 04,,False
+0x80538,<N:毒:1>よけの<N:ｴ:24>びわ,독막이 반지,dd cf 3d 49 1c dd 04 99 43,df 22 dd ab 03 a1 dd 46 04,,False
+0x8053c,幻の盾,환상의 방패,dd f2 1c de db,dd 65 8b 0f a1 dd 29 de d7,,False
+0x80540,戦士の守り,전사의 수호,63 68 1c dd 1e 39,4f 34 0f a1 50 95,,False
+0x80544,長老の盾,장로의 방패,d4 a8 1c de db,56 d5 0f a1 dd 29 de d7,,False
+0x80548,強力な<N:杖:1>,강력한 지팡이,dd 19 61 1d df 32,dd 28 dd 2b 53 a1 04 df 52 03,,False
+0x8054c,じごくのスニー<N:フ:11>,지옥의 스누프,4a 79 3e 1c 47 d1 31 dd 55,04 de 39 0f a1 30 dd 55 dd 9d,,False
+0x80550,王様の像,왕의 상,5d cb 1c de 64,6a 0f a1 8b,,False
+0x80554,たかの像,매의 상,1f 20 1c de 64,dd c9 0f a1 8b,,False
+0x80558,まがいの像,모조상,27 2a 1b 1c de 64,55 90 8b,,False
+0x8055c,たん剣,단검,1f 2d dd 8d,dd 35 dd a1,,False
+0x80560,幻の剣,환상의 검,dd f2 1c dd 8d,dd 65 8b 0f a1 dd a1,,False
+0x80564,<N:リ:12><N:｣:11>ラのかみか<N:ざ:2>り,리라의 머리장식,6f 65 57 1c 20 6d 20 dd 3d 39,2e 8f 0f a1 dd 5d 2e 56 dd b5,,False
+0x80568,乱れる宝石,요동치는 보석,de 54 32 22 dd c9 94,2c dd 32 dd 1f 06 a1 60 dd 8b,,False
+0x8056c,アーマーストーン,아머 스톤,42 31 64 31 47 5c 31 34,09 dd 5d a1 30 dd 9a,,False
+0x80570,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,a2 64 34 60 34 80 47 5c 31 34,d5 de 08 de 26 a1 30 dd 9a,,False
+0x80574,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,a2 64 34 60 34 80 47 5c 31 34,d5 de 08 de 26 a1 30 dd 9a,,False
+0x80578,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,a2 64 34 60 34 80 47 5c 31 34,d5 de 08 de 26 a1 30 dd 9a,,False
+0x8057c,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,a2 64 34 60 34 80 47 5c 31 34,d5 de 08 de 26 a1 30 dd 9a,,False
+0x80580,太陽の<N:げ:26>うし,태양의 거울,dd a9 df 07 1c d2 26 1e,dd d2 dd 82 0f a1 32 dd 92,,False
+0x80584,おし花の本,압화 책,3b 1e de 1b 1c 92,df 6d dd 83 a1 de 43,,False
+0x80588,クラウ<N:ｲ:6>スの本,클라우스의 책,4e 57 dd 39 dd 03 47 1c 92,de 01 8f 3d 30 0f a1 de 43,,False
+0x8058c,音楽集,음악집,de f9 dd df dd 5a,8d dd eb dd e2,,False
+0x80590,ラークの紋章,라크의 문장,57 31 4e 1c de 56 de 34,8f 58 0f a1 dd af 56,,False
+0x80594,<N:ｴ:24>かりの紋章,유카리의 문장,dd 04 20 39 1c de 56 de 34,8a dd 38 2e 0f a1 dd af 56,,False
+0x80598,フ<N:リ:12><N:｣:11>の紋章,포니의 문장,a6 6f 65 1c de 56 de 34,dd 78 07 0f a1 dd af 56,,False
+0x8059c,勇者の証,용자의 증표,dd 47 7e 1c de 0c,dd 1a 28 0f a1 de 09 dd 8a,,False
+0x805a0,？？？？？,?????,3c 3c 3c 3c 3c,d1 d1 d1 d1 d1,,False
+0x80a94,炎系の攻撃に強くなります,화염 공격 피해 감소,bf de ed 1c d0 b1 23 dd 19 3e 1d 39 27 2b,dd 83 df 89 a1 dd 10 dd 0a a1 dd 3c 2b a1 dd 77 dd 07,,False
+0x80a98,水系の攻撃に強くなります,냉기 공격 피해 감소,b8 de ed 1c d0 b1 23 dd 19 3e 1d 39 27 2b,df 1d 24 a1 dd 10 dd 0a a1 dd 3c 2b a1 dd 77 dd 07,,False
+0x80a9c,<N:ｌ:5>へモジーへを回避します,헤모지 방지,5b dd 3b 5f 7f 31 5a 2f 9e dd 96 1e 27 2b,dd c3 55 04 a1 dd 29 04,,False
+0x80aa0,自分の<N:Π:10><N:Ｐ:10>の回復量が大きくなります,회복 효과 증가,a4 b2 1c dd fa dd 90 1c 9e dd 2c dd 46 2a 50 44 3e 1d 39 27 2b,7a dd 9f a1 de 24 dd 18 a1 de 09 0c,,False
+0x80aa4,戦闘で入る経験値が2倍になります,획득 경험치 2배,63 93 30 86 22 dd de de 75 dd d2 2a 13 df 17 23 1d 39 27 2b,de 79 de a9 a1 68 dd 54 dd 1f a1 0b dd 93,,False
+0x80aa8,魔力が10<N:X:20>上昇します,마력 10% 상승,dd 1b 61 2a 12 11 06 b9 dd 59 1e 27 2b,45 dd 2b a1 4a 91 dd b8 a1 8b 69,,False
+0x80aac,<N:ｌ:5><N:眠:5>りへを回避します,수면 방지,5b dd b9 39 5a 2f 9e dd 96 1e 27 2b,50 3a a1 dd 29 04,,False
+0x80ab0,防御力が30<N:X:20>上昇します（チョン<N:力:5>ラ）,촌가라 방어력 30% 상승,dd a6 dd ad 61 2a 14 11 06 b9 dd 59 1e 27 2b 09 6c 69 34 dd 02 57 0a,96 0c 8f a1 dd 29 14 dd 2b a1 27 91 dd b8 a1 8b 69,,False
+0x80ab4,<N:ｌ:5>投げるへが<N:リ:12>ベル1になります,던지기 레벨 1,5b de 04 9c 22 5a 2a 6f dd b4 53 12 23 1d 39 27 2b,dd 25 04 24 a1 dd 66 dd ef a1 4a,,False
+0x80ab8,攻撃力が<N:ｃ:12>0<N:X:20>上昇します,공격력 50% 상승,d0 b1 61 2a 16 11 06 b9 dd 59 1e 27 2b,dd 10 dd 0a dd 2b a1 9e 91 dd b8 a1 8b 69,,False
+0x80abc,<N:ｌ:5>暗闇へを回避します,암흑 방지,5b de b3 de b2 5a 2f 9e dd 96 1e 27 2b,df 6c df 59 a1 dd 29 04,,False
+0x80ac0,攻撃が<N:非:1>常に当たりやすくなります,명중률 상승,d0 b1 2a de 5a de 68 23 dd 42 1f 39 40 2b 3e 1d 39 27 2b,dd 34 dd 73 df 5b a1 8b 69,,False
+0x80ac4,<N:ｌ:5>投げるへが<N:ｌ:5>ぶん投げるへになります,던지기가 강력 투척으로 변화,5b de 04 9c 22 5a 2a 5b ca 2d de 04 9c 22 5a 23 1d 39 27 2b,dd 25 04 24 0c a1 dd 28 dd 2b a1 dd 39 df 93 4e d5 a1 80 dd 83,,False
+0x80ac8,攻撃が特定の敵に強くなります,특정 적에게 추가 피해,d0 b1 2a de 96 dd 97 1c bd 23 dd 19 3e 1d 39 27 2b,de 3a 31 a1 dd 09 0e 41 a1 df 95 0c a1 dd 3c 2b,,False
+0x80acc,攻撃が必す当たるようになります,공격이 반드시 명중,d0 b1 2a dd cc 8c dd 42 1f 22 3d 26 23 1d 39 27 2b,dd 10 dd 0a 03 a1 dd 46 17 29 a1 dd 34 dd 73,,False
+0x80ad0,<N:リ:12>ベルアッ<N:フ:11>時に<N:Π:10><N:Ｐ:10>の伸びが大きくなります,레벨업 시 최대 체력 증가량 상승,6f dd b4 53 42 82 dd 55 cf 23 dd fa dd 90 1c df 31 99 2a 50 44 3e 1d 39 27 2b,dd 66 dd ef de 9e a1 29 a1 de 27 37 a1 dd 90 dd 2b a1 de 09 0c d2 a1 8b 69,,False
+0x80ad4,魔力が30<N:X:20>上昇します （<N:ニ:13>ーゲン）,고겐 마력 30% 상승,dd 1b 61 2a 14 11 06 b9 dd 59 1e 27 2b 01 09 dd 3c 31 dd 4d 34 0a,1c dd a9 a1 45 dd 2b a1 27 91 dd b8 a1 8b 69,,False
+0x80ad8,攻撃が当たりやすくなります,명중률 상승,d0 b1 2a dd 42 1f 39 40 2b 3e 1d 39 27 2b,dd 34 dd 73 df 5b a1 8b 69,,False
+0x80adc,すばやさが10<N:X:20>上昇します,민첩 10% 상승,2b 58 40 3a 2a 12 11 06 b9 dd 59 1e 27 2b,dd ec df 5e a1 4a 91 dd b8 a1 8b 69,,False
+0x80ae0,すばやさが30<N:X:20>上昇します,민첩 30% 상승,2b 58 40 3a 2a 14 11 06 b9 dd 59 1e 27 2b,dd ec df 5e a1 27 91 dd b8 a1 8b 69,,False
+0x80ae4,<N:ｌ:5>ジャン<N:フ:11>へが<N:リ:12>ベル1になります,점프 레벨 1,5b 7f d6 34 dd 55 5a 2a 6f dd b4 53 12 23 1d 39 27 2b,dd d0 dd 9d a1 dd 66 dd ef a1 4a,,False
+0x80ae8,反撃しやすくなります,반격률 상승,de 02 b1 1e 40 2b 3e 1d 39 27 2b,dd 46 dd 0a df 5b a1 8b 69,,False
+0x80aec,<N:ｌ:5>受け取るへが<N:リ:12>ベル1になります,받기 레벨 1,5b dd 68 49 dd 29 22 5a 2a 6f dd b4 53 12 23 1d 39 27 2b,dd 19 24 a1 dd 66 dd ef a1 4a,,False
+0x80af0,<N:ｌ:5>受け取るへが<N:ｌ:5>投げ返すへになります,받기가 되던지기로 변화,5b dd 68 49 dd 29 22 5a 2a 5b de 04 9c de 57 2b 5a 23 1d 39 27 2b,dd 19 24 0c a1 73 dd 25 04 24 d5 a1 80 dd 83,,False
+0x80af4,半分の<N:∪:20><N:Ｐ:10>で能力を使用できます,능력 MP 소비 절반,df 16 b2 1c de 4f dd 90 30 dd 80 61 2f dd 33 dd 3e 30 44 27 2b,dd ed dd 2b a1 df 0b de 07 a1 dd 07 dd 06 a1 dd da dd 46,,False
+0x80af8,攻撃力が30<N:X:20>上昇します,공격력 30% 상승,d0 b1 61 2a 14 11 06 b9 dd 59 1e 27 2b,dd 10 dd 0a dd 2b a1 27 91 dd b8 a1 8b 69,,False
+0x80afc,反撃ダメージが大きくなります（<N:｣:11>ー<N:力:5>）,이가 반격 피해 증가,de 02 b1 67 78 31 7f 2a 50 44 3e 1d 39 27 2b 09 65 31 dd 02 0a,03 0c a1 dd 46 dd 0a a1 dd 3c 2b a1 de 09 0c,,False
+0x80b00,効果はわかつていません,효과 불명,dd c1 dd 1f 28 43 20 29 21 1b 27 59 2d,de 24 dd 18 a1 dd 13 dd 34,,False
+0x80b04,行動する度まわりの<N:午:15>ャラを回復します（ククル）,쿠쿠루 행동 시 주변 아군 회복,74 dc 2b 22 dd 20 27 43 39 1c dd 4e d6 57 2f 9e dd 2c 1e 27 2b 09 4e 4e 53 0a,dd 0c dd 0c dd 42 a1 dd 31 dd 32 a1 29 a1 40 80 a1 09 7c a1 7a dd 9f,,False
+0x80b08,敵がア<N:｣:11>テムを落としやすくなります,아이템 드롭률 상승,bd 2a 42 65 db d8 2f dd a4 36 1e 40 2b 3e 1d 39 27 2b,09 03 dd 5e a1 17 de 94 df 5b a1 8b 69,,False
+0x80b0c,敵を倒すとほ<N:げ:26>ア<N:｣:11>テムが出ます,적 처치 시 희귀 아이템 획득,bd 2f dd 83 2b 36 dd 05 d2 42 65 db d8 2a 56 27 2b,dd 09 a1 dd 8f dd 1f a1 29 a1 dd 43 de 6c a1 09 03 dd 5e a1 de 79 de a9,,False
+0x80b10,効果はわかつていません,효과 불명,dd c1 dd 1f 28 43 20 29 21 1b 27 59 2d,de 24 dd 18 a1 dd 13 dd 34,,False
+0x80b14,<N:ｌ:5>石化へを回避します,석화 방지,5b 94 dd 7c 5a 2f 9e dd 96 1e 27 2b,dd 8b dd 83 a1 dd 29 04,,False
+0x80b18,効果はわかつていません （アーク）,아크 전용 효과 불명,dd c1 dd 1f 28 43 20 29 21 1b 27 59 2d 01 09 42 31 4e 0a,09 58 a1 4f dd 1a a1 de 24 dd 18 a1 dd 13 dd 34,,False
+0x80b1c,魔力が<N:ｃ:12>0<N:X:20>上昇します,마력 50% 상승,dd 1b 61 2a 16 11 06 b9 dd 59 1e 27 2b,45 dd 2b a1 9e 91 dd b8 a1 8b 69,,False
+0x80b20,魔力が30<N:X:20>上昇します,마력 30% 상승,dd 1b 61 2a 14 11 06 b9 dd 59 1e 27 2b,45 dd 2b a1 27 91 dd b8 a1 8b 69,,False
+0x80b24,<N:ｌ:5>向き直りの笛への効果が<N:∪:20><N:∧:11><N:Ｐ:10>全体（ポニ）,포코의 방향 전환 효과가 전체화,5b dd 01 44 dd 85 39 1c de 2f 5a 1c dd c1 dd 1f 2a de 4f de 83 dd 90 dd 08 dd 2d 09 d7 d1 0a,dd 78 dd 40 0f a1 dd 29 dd b2 a1 4f dd 65 a1 de 24 dd 18 0c a1 4f dd 90 dd 83,,False
+0x80b28,<N:ｌ:5><N:毒:1>へを回避します,독 방지,5b dd cf 5a 2f 9e dd 96 1e 27 2b,df 22 a1 dd 29 04,,False
+0x80b2c,防御力が<N:ｃ:12>0<N:X:20>上昇します,방어력 50% 상승,dd a6 dd ad 61 2a 16 11 06 b9 dd 59 1e 27 2b,dd 29 14 dd 2b a1 9e 91 dd b8 a1 8b 69,,False
+0x80b30,防御力が30<N:X:20>上昇します,방어력 30% 상승,dd a6 dd ad 61 2a 14 11 06 b9 dd 59 1e 27 2b,dd 29 14 dd 2b a1 27 91 dd b8 a1 8b 69,,False
+0x80b34,防御しやすくなります,방어율 상승,dd a6 dd ad 1e 40 2b 3e 1d 39 27 2b,dd 29 14 de a6 a1 8b 69,,False
+0x80b38,攻撃力が<N:７:11>0<N:X:20>上昇します（<N:ニ:13>ーゲン）,고겐 공격력 70% 상승,d0 b1 61 2a 18 11 06 b9 dd 59 1e 27 2b 09 dd 3c 31 dd 4d 34 0a,1c dd a9 a1 dd 10 dd 0a dd 2b a1 9a 91 dd b8 a1 8b 69,,False
+0x80b3c,<N:ｌ:5>心<N:眼:3>法への<N:乾:16>囲が広くなります（<N:｣:11>ー<N:力:5>）,이가 심안법 범위 확장,5b dd 11 de 7b dd 51 5a 1c de 93 df 5b 2a df 43 3e 1d 39 27 2b 09 65 31 dd 02 0a,03 0c a1 9d 94 dd 37 a1 de 63 8e a1 de 2b 56,,False
+0x80b40,召喚<N:午:15>ャラの経験値が自分に入ります（チョン<N:力:5>ラ）,촌가라가 소환수 경험치 획득,dd 78 dd 7b dd 4e d6 57 1c dd de de 75 dd d2 2a a4 b2 23 86 39 27 2b 09 6c 69 34 dd 02 57 0a,96 0c 8f 0c a1 dd 07 dd 65 50 a1 68 dd 54 dd 1f a1 de 79 de a9,,False
+0x80b44,<N:ｌ:5>沈黙へを回避します,침묵 방지,5b df 1e de 8b 5a 2f 9e dd 96 1e 27 2b,de 06 df 5f a1 dd 29 04,,False
+0x80b48,攻撃を避けやすくなります,회피율 상승,d0 b1 2f dd 96 49 40 2b 3e 1d 39 27 2b,7a dd 3c de a6 a1 8b 69,,False
+0x80b4c,攻撃力が10<N:X:20>上昇します,공격력 10% 상승,d0 b1 61 2a 12 11 06 b9 dd 59 1e 27 2b,dd 10 dd 0a dd 2b a1 4a 91 dd b8 a1 8b 69,,False
+0x80b50,<N:与:3>えるダメージの当たりはすれが大きくなります,피해 편차 증가,dd 3f 46 22 67 78 31 7f 1c dd 42 1f 39 28 8c 32 2a 50 44 3e 1d 39 27 2b,dd 3c 2b a1 dd 79 dd b7 a1 de 09 0c,,False
+0x80b54,復活魔法で<N:Π:10><N:Ｐ:10>最大で復活します（ククル）,쿠쿠루 부활 시 최대 체력 회복,dd 2c de 49 dd 1b dd 51 30 dd fa dd 90 dd 2b 50 30 dd 2c de 49 1e 27 2b 09 4e 4e 53 0a,dd 0c dd 0c dd 42 a1 6c dd e1 a1 29 a1 de 27 37 a1 dd 90 dd 2b a1 7a dd 9f,,False
+0x80b58,当たりはすれが大きくなります,피해 편차 증가,dd 42 1f 39 28 8c 32 2a 50 44 3e 1d 39 27 2b,dd 3c 2b a1 dd 79 dd b7 a1 de 09 0c,,False
+0x80b5c,防御力が10<N:X:20>上昇します,방어력 10% 상승,dd a6 dd ad 61 2a 12 11 06 b9 dd 59 1e 27 2b,dd 29 14 dd 2b a1 4a 91 dd b8 a1 8b 69,,False
+0x80b60,効果はわかつていません,효과 불명,dd c1 dd 1f 28 43 20 29 21 1b 27 59 2d,de 24 dd 18 a1 dd 13 dd 34,,False
+0x80b64,効果はわかつていません,효과 불명,dd c1 dd 1f 28 43 20 29 21 1b 27 59 2d,de 24 dd 18 a1 dd 13 dd 34,,False
+0x80b68,効果はわかつていません,효과 불명,dd c1 dd 1f 28 43 20 29 21 1b 27 59 2d,de 24 dd 18 a1 dd 13 dd 34,,False
+0x80b6c,効果はわかつていません,효과 불명,dd c1 dd 1f 28 43 20 29 21 1b 27 59 2d,de 24 dd 18 a1 dd 13 dd 34,,False
+0x80b70,行動するたびに<N:Π:10><N:Ｐ:10>が回復します,매 행동 체력 회복,74 dc 2b 22 1f 99 23 dd fa dd 90 2a 9e dd 2c 1e 27 2b,dd c9 a1 dd 31 dd 32 a1 dd 90 dd 2b a1 7a dd 9f,,False
+0x80b74,攻撃が<N:非:1>常に当たりやすくなります（トッシュ）,토슈 공격 명중률 상승,d0 b1 2a de 5a de 68 23 dd 42 1f 39 40 2b 3e 1d 39 27 2b 09 5c 82 60 ab 0a,83 dd 86 a1 dd 10 dd 0a a1 dd 34 dd 73 df 5b a1 8b 69,,False
+0x80b78,全ステータスしょう害を回避します,모든 상태 이상 방지,dd 08 47 db 31 62 47 1e 73 26 de 7e 2f 9e dd 96 1e 27 2b,55 dd 26 a1 8b dd d2 a1 03 8b a1 dd 29 04,,False
+0x80b7c,魔力が30<N:X:20>上昇します （ポニ）,포코 마력 30% 상승,dd 1b 61 2a 14 11 06 b9 dd 59 1e 27 2b 01 09 d7 d1 0a,dd 78 dd 40 a1 45 dd 2b a1 27 91 dd b8 a1 8b 69,,False
+0x80b80,<N:ｌ:5>マ<N:ヒ:5>へを回避します,마비 방지,5b 64 dd b5 5a 2f 9e dd 96 1e 27 2b,45 dd 06 a1 dd 29 04,,False
+0x80b84,桜花雷爆斬でマ<N:ヒ:5>させることができます（トッシュ）,토슈 앵화뇌폭참에 마비 부여,de 3c de 1b dd a5 dd 41 dd 5c 30 64 dd b5 3a 59 22 2e 36 2a 30 44 27 2b 09 5c 82 60 ab 0a,83 dd 86 a1 df 6e dd 83 df 1e dd 62 dd 4c 0e a1 45 dd 06 a1 6c 1a,,False
+0x80b88,攻撃が特定の敵に強くなります,특정 적에게 추가 피해,d0 b1 2a de 96 dd 97 1c bd 23 dd 19 3e 1d 39 27 2b,de 3a 31 a1 dd 09 0e 41 a1 df 95 0c a1 dd 3c 2b,,False
+0x80b8c,行動するごとに<N:∪:20><N:Ｐ:10>が回復します（アーク）,아크 매행동 MP회복,74 dc 2b 22 79 36 23 de 4f dd 90 2a 9e dd 2c 1e 27 2b 09 42 31 4e 0a,09 58 a1 dd c9 dd 31 dd 32 a1 df 0b de 07 7a dd 9f,,False
+0x80b90,？？？？？,?????,3c 3c 3c 3c 3c,d1 d1 d1 d1 d1,,False
+0x80c9c,ねばねば,끈끈이,4c 58 4c 58,de 40 de 40 03,,False
+0x80ca0,やる気<N:г:23>リー,의욕 젤리,40 22 a9 dd f8 6b 31,0f dd e3 a1 df 8f 2e,,False
+0x80ca4,みなぎる果実,넘치는 열매,6d 1d dd 7d 22 dd 1f de 37,dd f4 dd 1f 06 a1 dd 89 dd c9,,False
+0x80ca8,回復果物,회복 열매,9e dd 2c dd 1f dd 49,7a dd 9f a1 dd 89 dd c9,,False
+0x80cac,しびれるりんご,마비 사과,1e 99 32 22 39 2d 79,45 dd 06 a1 34 dd 18,,False
+0x80cb0,石,돌,94,72,,False
+0x80cb4,<N:リ:12>ニの草,레코의 풀,6f d1 1c dd 65,dd 66 dd 40 0f a1 de 45,,False
+0x80cb8,薬草,약초,dd 58 dd 65,dd 48 39,,False
+0x80cbc,<N:毒:1>薬,독초,dd cf dd 58,df 22 39,,False
+0x80cc0,ルウの薬,루우의 약,53 71 1c dd 58,dd 42 3d 0f a1 dd 48,,False
+0x80cc4,すばやさの薬,민첩의 약,2b 58 40 3a 1c dd 58,dd ec df 5e 0f a1 dd 48,,False
+0x80cc8,小さい爆弾,작은 폭탄,dd 88 3a 1b dd 41 de 06,dd 64 26 a1 dd 62 dd d1,,False
+0x80ccc,大きい爆弾,큰 폭탄,50 44 1b dd 41 de 06,aa a1 dd 62 dd d1,,False
+0x80cd0,万能薬,만능약,df 0b dd 80 dd 58,38 dd ed dd 48,,False
+0x80cd4,聖水,성수,cd b8,dd 17 50,,False
+0x80cd8,復活の薬,부활약,dd 2c de 49 1c dd 58,6c dd e1 dd 48,,False
+0x80cdc,攻撃瓶,공격 항아리,d0 b1 de c0,dd 10 dd 0a a1 dd f2 09 2e,,False
+0x80ce0,<N:眠:5>り玉,수면 구슬,dd b9 39 de ef,50 3a a1 87 dd fc,,False
+0x80ce4,弱りの玉,약화 구슬,dd ed 39 1c de ef,dd 48 dd 83 a1 87 dd fc,,False
+0x80ce8,ちからの実,힘의 열매,4b 20 33 1c de 37,74 0f a1 dd 89 dd c9,,False
+0x80cec,パロの実,파로의 열매,a3 a2 1c de 37,dd 7b d5 0f a1 dd 89 dd c9,,False
+0x80cf0,いのちの木の実,생명의 열매,1b 1c 4b 1c df 0a 1c de 37,dd 36 dd 34 0f a1 dd 89 dd c9,,False
+0x80cf4,魔力の葉,마력의 잎,dd 1b 61 1c dd 61,45 dd 2b 0f a1 df 8d,,False
+0x80cf8,魔力の泉,마력의 샘,dd 1b 61 1c df 2b,45 dd 2b 0f a1 de cc,,False
+0x80cfc,目つぶしの草,눈가림 풀,ac 45 ca 1e 1c dd 65,de 0d 0c de 29 a1 de 45,,False
+0x80d00,苦い葉,쓴 잎,dd f3 1b dd 61,de b1 a1 df 8d,,False
+0x80d04,石解け<N:ハ:12>リ,석화 해제침,94 dd 34 49 dd a2 6b,dd 8b dd 83 a1 2b 66 de 06,,False
+0x80d08,痛烈な<N:ハ:12>リ,침묵 해제침,de 30 de 85 1d dd a2 6b,de 06 df 5f a1 2b 66 de 06,,False
+0x80d0c,召喚のつ<N:げ:26>,소환 항아리,dd 78 dd 7b 1c 45 d2,dd 07 dd 65 a1 dd f2 09 2e,,False
+0x80d10,？？？？？,?????,3c 3c 3c 3c 3c,d1 d1 d1 d1 d1,,False
+0x80d14,？？？？？,?????,3c 3c 3c 3c 3c,d1 d1 d1 d1 d1,,False
+0x80d18,？？？？？,?????,3c 3c 3c 3c 3c,d1 d1 d1 d1 d1,,False
+0x80f14,一時的にすばやさを下げます,민첩 일시 감소,8e cf dd 53 23 2b 58 40 3a 2f 70 9c 27 2b,dd ec df 5e a1 6b 29 a1 dd 77 dd 07,,False
+0x80f18,<N:ｌ:5>へモジーへを元に戻します,헤모지 회복,5b dd 3b 5f 7f 31 5a 2f de 74 23 d9 1e 27 2b,dd c3 55 04 a1 7a dd 9f,,False
+0x80f1c,,레벨 1 상승,6f dd b4 53 42 82 dd 55 1e 27 2b,dd 66 dd ef a1 4a a1 8b 69,,False
+0x80f20,<N:Π:10><N:Ｐ:10>が<N:ｃ:9>0ポ<N:｣:11>ント回復します,체력 60 회복,dd fa dd 90 2a 17 11 d7 65 34 5c 9e dd 2c 1e 27 2b,dd 90 dd 2b a1 9f 91 a1 7a dd 9f,,False
+0x80f24,しびれて動けなくなります,마비 부여,1e 99 32 21 dc 49 1d 3e 1d 39 27 2b,45 dd 06 a1 6c 1a,,False
+0x80f28,ぶつけてダメージを<N:与:3>えます,던져서 피해,ca 45 49 21 67 78 31 7f 2f dd 3f 46 27 2b,dd 25 dd 63 25 a1 dd 3c 2b,,False
+0x80f2c,防御力が上がります,방어력 상승,dd a6 dd ad 61 2a b9 2a 39 27 2b,dd 29 14 dd 2b a1 8b 69,,False
+0x80f30,<N:Π:10><N:Ｐ:10>が20ポ<N:｣:11>ント回復します,체력 20 회복,dd fa dd 90 2a 13 11 d7 65 34 5c 9e dd 2c 1e 27 2b,dd 90 dd 2b a1 0b 91 a1 7a dd 9f,,False
+0x80f34,<N:毒:1>を<N:振:2>りまきます,독 부여,dd cf 2f de d9 39 27 44 27 2b,df 22 a1 6c 1a,,False
+0x80f38,しびれを取りのぞきます,마비 회복,1e 99 32 2f dd 29 39 1c 6a 44 27 2b,45 dd 06 a1 7a dd 9f,,False
+0x80f3c,一時的にすばやさを上げます,민첩 일시 상승,8e cf dd 53 23 2b 58 40 3a 2f b9 9c 27 2b,dd ec df 5e a1 6b 29 a1 8b 69,,False
+0x80f40,爆発します,폭발 피해,dd 41 76 1e 27 2b,dd 62 dd 0e a1 dd 3c 2b,,False
+0x80f44,爆発します,큰 폭발 피해,dd 41 76 1e 27 2b,aa a1 dd 62 dd 0e a1 dd 3c 2b,,False
+0x80f48,ほとんどのステータス傷害を回復します,대부분의 상태 이상 회복,dd 05 36 2d 54 1c 47 db 31 62 47 de 6a de 7e 2f 9e dd 2c 1e 27 2b,37 6c 92 0f a1 8b dd d2 a1 03 8b a1 7a dd 9f,,False
+0x80f4c,<N:毒:1>を取りのぞきます,독 회복,dd cf 2f dd 29 39 1c 6a 44 27 2b,df 22 a1 7a dd 9f,,False
+0x80f50,戦闘不能<N:午:15>ャラクタを復活させます,쓰러진 대상 부활,63 93 dd 71 dd 80 dd 4e d6 57 4e 62 2f dd 2c de 49 3a 59 27 2b,dd 85 20 dd 3f a1 37 8b a1 6c dd e1,,False
+0x80f54,一時的に攻撃力を上げます,공격력 일시 상승,8e cf dd 53 23 d0 b1 61 2f b9 9c 27 2b,dd 10 dd 0a dd 2b a1 6b 29 a1 8b 69,,False
+0x80f58,<N:眠:5>らせます,수면 부여,dd b9 33 59 27 2b,50 3a a1 6c 1a,,False
+0x80f5c,一時的に攻撃力・防御力を下げます,공격 방어 일시 감소,8e cf dd 53 23 d0 b1 61 2c dd a6 dd ad 61 2f 70 9c 27 2b,dd 10 dd 0a a1 dd 29 14 a1 6b 29 a1 dd 77 dd 07,,False
+0x80f60,攻撃力が上がります,공격력 상승,d0 b1 61 2a b9 2a 39 27 2b,dd 10 dd 0a dd 2b a1 8b 69,,False
+0x80f64,すばやさが上がります,민첩 상승,2b 58 40 3a 2a b9 2a 39 27 2b,dd ec df 5e a1 8b 69,,False
+0x80f68,<N:Π:10><N:Ｐ:10>の最大値が2ポ<N:｣:11>ント上がります,최대 체력 2 상승,dd fa dd 90 1c dd 2b 50 dd d2 2a 13 d7 65 34 5c b9 2a 39 27 2b,de 27 37 a1 dd 90 dd 2b a1 0b a1 8b 69,,False
+0x80f6c,魔力が上がります,마력 상승,dd 1b 61 2a b9 2a 39 27 2b,45 dd 2b a1 8b 69,,False
+0x80f70,<N:∪:20><N:Ｐ:10>の最大値が2ポ<N:｣:11>ント上がります,최대 마력 2 상승,de 4f dd 90 1c dd 2b 50 dd d2 2a 13 d7 65 34 5c b9 2a 39 27 2b,de 27 37 a1 45 dd 2b a1 0b a1 8b 69,,False
+0x80f74,<N:振:2>りまくと、目が見えなくなります,명중률 감소,de d9 39 27 3e 36 24 ac 2a a0 46 1d 3e 1d 39 27 2b,dd 34 dd 73 df 5b a1 dd 77 dd 07,,False
+0x80f78,一時的に防御力を上げます,방어력 일시 상승,8e cf dd 53 23 dd a6 dd ad 61 2f b9 9c 27 2b,dd 29 14 dd 2b a1 6b 29 a1 8b 69,,False
+0x80f7c,石化から元に戻ります,석화 회복,94 dd 7c 20 33 de 74 23 d9 39 27 2b,dd 8b dd 83 a1 7a dd 9f,,False
+0x80f80,封じられた魔法が使えるようになります,침묵 회복,dd 0f 4a 33 32 1f dd 1b dd 51 2a dd 33 46 22 3d 26 23 1d 39 27 2b,de 06 df 5f a1 7a dd 9f,,False
+0x80f84,チョン<N:力:5>ラがモンスターを召喚するのに使います,촌가라의 몬스터 소환,6c 69 34 dd 02 57 2a 5f 34 47 62 31 2f dd 78 dd 7b 2b 22 1c 23 dd 33 1b 27 2b,96 0c 8f 0f a1 64 30 02 a1 dd 07 dd 65,,False
+0x80f88,？？？？？,?????,3c 3c 3c 3c 3c,d1 d1 d1 d1 d1,,False
+0x80f8c,？？？？？,?????,3c 3c 3c 3c 3c,d1 d1 d1 d1 d1,,False
+0x80f90,？？？？？,?????,3c 3c 3c 3c 3c,d1 d1 d1 d1 d1,,False
+0x811c0,,,,,,False
+0x811c4,バーン<N:ク:12>ラウント,번 그라운드,af 31 34 80 57 71 34 95,9b a1 15 8f 86 17,,False
+0x811c8,トータル<N:ヒ:5>ーリン<N:ク:12>,토탈 힐링,5c 31 62 53 dd b5 31 6b 34 80,83 de 14 a1 df 5d de 54,,False
+0x811cc,ゲ<N:｣:11>ルフラッシュ,게일 플래시,dd 4d 65 53 a6 57 82 60 ab,41 6b a1 de 36 dd 12 29,,False
+0x811d0,スロウエ<N:ネ:13>ミー,슬로우 에너미,47 a2 71 dd 23 dd c6 dd 3a 31,dd fc d5 3d a1 0e 89 dd 2f,,False
+0x811d4,メテオフ<N:｣:13>ール,메테오 폴,78 db 8f a6 de b4 31 53,dd 2c dd be 46 a1 df 56,,False
+0x811d8,<N:午:15>ュア,큐어,dd 4e ab 42,df 98 14,,False
+0x811dc,デポ<N:｣:11><N:ス:15>ン,디포이즌,81 d7 65 de 1f 34,dd cd dd 78 03 df 90,,False
+0x811e0,サ<N:｣:11><N:リ:12>ント,사일런트,77 65 6f 34 5c,34 6b dd 2a dd 5b,,False
+0x811e4,リフ<N:リ:12>ッシュ,리프레시,6b a6 6f 82 60 ab,2e dd 9d dd 66 29,,False
+0x811e8,天のさばき,천벌,dd 26 1c 3a 58 44,dd e7 dd e4,,False
+0x811ec,リ<N:ザ:8><N:リ:12>クション,리저렉션,6b dd c8 6f 4e 60 69 34,2e dd 24 df 2a df 67,,False
+0x811f0,デ<N:ｲ:6>バ<N:｣:11>ト,디바이드,81 dd 03 af 65 95,dd cd dd 08 03 17,,False
+0x811f4,桜花雷爆斬,앵화뇌폭참,de 3c de 1b dd a5 dd 41 dd 5c,df 6e dd 83 df 1e dd 62 dd 4c,,False
+0x811f8,呪縛剣,주박검,de 35 de 94 dd 8d,40 de 9f dd a1,,False
+0x811fc,<N:真:2><N:空:2>斬,진공참,de 9f dd 18 dd 5c,dd 3f dd 10 dd 4c,,False
+0x81200,<N:虎:5><N:影:1>斬,호영참,de e9 de 81 dd 5c,95 dd fa dd 4c,,False
+0x81204,戦の小太鼓,전투의 북,63 1c dd 88 dd a9 dd f1,4f dd 39 0f a1 de 64,,False
+0x81208,荒獅子太鼓,황사자 북,dd c0 de a7 96 dd a9 dd f1,de 3c 34 28 a1 de 64,,False
+0x8120c,気合いラッパ,기합 나팔,a9 dd ac 1b 57 82 a3,24 dd 1d a1 1e dd 6c,,False
+0x81210,へろへろラッパ,탈진 나팔,8a 55 8a 55 57 82 a3,de 14 dd 3f a1 1e dd 6c,,False
+0x81214,いやしのたてごと,치유의 하프,1b 40 1e 1c 1f 21 79 36,dd 1f 8a 0f a1 19 dd 9d,,False
+0x81218,のろまのベース,둔화 베이스,1c 55 27 1c dd b4 31 47,df 23 dd 83 a1 dd fe 03 30,,False
+0x8121c,い<N:駄:2>天のオカリナ,위타천 오카리나,1b de cd dd 26 1c 8f bc 6b 7c,8e dd 7f dd e7 a1 46 dd 38 2e 1e,,False
+0x81220,向き直りの笛,방향전환 피리,dd 01 44 dd 85 39 1c de 2f,dd 29 dd b2 4f dd 65 a1 dd 3c 2e,,False
+0x81224,エクス<N:フ:11>ロージョン,익스플로전,dd 23 4e 47 dd 55 a2 31 7f 69 34,de c0 30 de 36 d5 4f,,False
+0x81228,トリーム<N:メ:6>ック,드림 노크,95 6b 31 d8 dd 5f 82 4e,17 de 29 a1 dd 57 58,,False
+0x8122c,ダ<N:｣:11>ヤモントダスト,다이아몬드 더스트,67 65 bb 5f 34 95 67 47 5c,01 03 09 64 17 a1 dd 96 30 dd 5b,,False
+0x81230,ウ<N:｣:11>ントスラッシャー,윈드 슬래셔,71 65 34 95 47 57 82 60 d6 31,df 8b 17 a1 dd fc dd 12 de b3,,False
+0x81234,<N:ヒ:5>ートウ<N:｣:13>ール,히트 월,dd b5 31 5c 71 de b4 31 53,dd 59 dd 5b a1 de e5,,False
+0x81238,サンダーストーム,썬더 스톰,77 34 67 31 47 5c 31 d8,df 6a dd 96 a1 30 df 4f,,False
+0x8123c,テ<N:リ:12>ポート,텔레포트,db 6f d7 31 5c,df 4e dd 66 dd 78 dd 5b,,False
+0x81240,心<N:眼:3>法,심안법,dd 11 de 7b dd 51,9d 94 dd 37,,False
+0x81244,<N:退:3>魔光弾,퇴마광탄,de 63 dd 1b dd 0c de 06,df 50 45 df 16 dd d1,,False
+0x81248,旋風撃蹴,선풍격축,de 9c c1 b1 de a3,dd 53 de 2e dd 0a de 02,,False
+0x8124c,流星爆,유성폭,de 24 de d6 dd 41,8a dd 17 dd 62,,False
+0x81250,鬼神流<N:影:1><N:波:1>,귀신류영파,de f4 dd 2f de 24 de 81 de 5b,de 6c 3e dd 6e dd fa dd 7b,,False
+0x81254,滅掌烈破,멸장열파,dd 40 de da de 85 dd 62,dd dd 56 dd 89 dd 7b,,False
+0x81258,<N:ゲ:16>ラック,케락,dd 6d 57 82 4e,dd f8 df 27,,False
+0x8125c,モフリー,모프리,5f a6 6b 31,55 dd 9d 2e,,False
+0x81260,フウジン,후우진,a6 71 7f 34,dd 8d 3d dd 3f,,False
+0x81264,ラ<N:｣:11>ジン,라이진,57 65 7f 34,8f 03 dd 3f,,False
+0x81268,へモジー,헤모지,dd 3b 5f 7f 31,dd c3 55 04,,False
+0x8126c,オトン,오톤,8f 95 34,46 dd 9a,,False
+0x81270,調ベる,조사,dd 86 dd 35 22,90 34,,False
+0x81274,ちょこ,초코,4b 73 2e,39 dd 40,,False
+0x81278,回復,회복,9e dd 2c,7a dd 9f,,False
+0x8127c,<N:ｴ:24>か造り,다리 만들기,dd 04 20 dd d5 39,01 2e a1 38 0a 24,,False
+0x81280,風雷破,풍뢰파,c1 dd a5 dd 62,de 2e df 31 dd 7b,,False
+0x81284,風雷破,풍뢰파,c1 dd a5 dd 62,de 2e df 31 dd 7b,,False
+0x81288,乗り移り,빙의,dd 43 39 de fc 39,df 64 0f,,False
+0x8128c,バク<N:リ:12>ツ手裏剣,폭렬 수리검,af 4e 6f df 01 87 dd fe dd 8d,dd 62 df 2e a1 50 2e dd a1,,False
+0x81290,自爆,자폭,a4 dd 41,28 dd 62,,False
+0x81294,ジ<N:ニ:13>クへの階段,지옥으로 가는 계단,7f dd 3c 4e 8a 1c dd b2 de 61,04 de 39 4e d5 a1 0c 06 a1 dd 11 dd 35,,False
+0x81298,4方向,사방 공격,15 c4 dd 01,34 dd 29 a1 dd 10 dd 0a,,False
+0x8129c,炎雷崩,염뢰붕,bf dd a5 de 90,df 89 df 31 de ec,,False
+0x812a0,ダスト・ルー<N:｣:11>ン,더스트 룬,67 47 5c 2c 53 31 65 34,dd 96 30 dd 5b a1 df 32,,False
+0x812a4,ヨミのつばさ,요미의 날개,dd 14 dd 3a 1c 45 58 3a,2c dd 2f 0f a1 dd 61 dd b4,,False
+0x812a8,やる気なし,의욕 없음,40 22 a9 1d 1e,0f dd e3 a1 71 8d,,False
+0x81708,,,,,,False
+0x8170c,ようがんを発生させ敵にダメージを<N:与:3>えます,용암으로 적에게 피해,3d 26 2a 2d 2f 76 dd 1c 3a 59 bd 23 67 78 31 7f 2f dd 3f 46 27 2b,dd 1a df 6c 4e d5 a1 dd 09 0e 41 a1 dd 3c 2b,,False
+0x81710,ステ<N:｣:11>タス傷害と体力を回復します,상태 이상과 체력 회복,47 db 65 62 47 de 6a de 7e 36 dd 2d 61 2f 9e dd 2c 1e 27 2b,8b dd d2 a1 03 8b dd 18 a1 dd 90 dd 2b a1 7a dd 9f,,False
+0x81714,いくうかんからの攻撃で敵にダメージを<N:与:3>えます,이공간 공격으로 피해,1b 3e 26 20 2d 20 33 1c d0 b1 30 bd 23 67 78 31 7f 2f dd 3f 46 27 2b,03 dd 10 dd 1b a1 dd 10 dd 0a 4e d5 a1 dd 3c 2b,,False
+0x81718,敵の素早さを下げます,적 민첩 감소,bd 1c de d3 dd 21 3a 2f 70 9c 27 2b,dd 09 a1 dd ec df 5e a1 dd 77 dd 07,,False
+0x8171c,いんせきが落下しまわりの敵にダメージを<N:与:3>えます,운석으로 주변 적 피해,1b 2d 59 44 2a dd a4 70 1e 27 43 39 1c bd 23 67 78 31 7f 2f dd 3f 46 27 2b,86 dd 8b 4e d5 a1 40 80 a1 dd 09 a1 dd 3c 2b,,False
+0x81720,体力を回復します,체력 회복,dd 2d 61 2f 9e dd 2c 1e 27 2b,dd 90 dd 2b a1 7a dd 9f,,False
+0x81724,<N:毒:1>を消しさります,독 해제,dd cf 2f dd 28 1e 3a 39 27 2b,df 22 a1 2b 66,,False
+0x81728,敵の魔法を封じ込めます,적의 마법 봉인,bd 1c dd 1b dd 51 2f dd 0f 4a dd 5d 51 27 2b,dd 09 0f a1 45 dd 37 a1 dd b6 35,,False
+0x8172c,ステ<N:｣:11>タス傷害を回復します,상태 이상 회복,47 db 65 62 47 de 6a de 7e 2f 9e dd 2c 1e 27 2b,8b dd d2 a1 03 8b a1 7a dd 9f,,False
+0x81730,天使が画面外に飛んでいき<N:リ:12>ー<N:ザ:8>ーで攻撃します,천사의 광선 공격,dd 26 dd 33 2a de 7f de 8c dd 6b 23 dd 72 2d 30 1b 44 6f 31 dd c8 31 30 d0 b1 1e 27 2b,dd e7 34 0f a1 df 16 dd 53 a1 dd 10 dd 0a,,False
+0x81734,戦闘不能になつた味方を呼び戻せます,쓰러진 아군 부활,63 93 dd 71 dd 80 23 1d 29 1f dd 94 c4 2f dd c2 99 d9 59 27 2b,dd 85 20 dd 3f a1 09 7c a1 6c dd e1,,False
+0x81738,敵の体力をすいとり味方に分け<N:与:3>えます,적 체력을 흡수해 아군 회복,bd 1c dd 2d 61 2f 2b 1b 36 39 dd 94 c4 23 b2 49 dd 3f 46 27 2b,dd 09 a1 dd 90 dd 2b 0d a1 df 5c 50 2b a1 09 7c a1 7a dd 9f,,False
+0x8173c,敵一体に必殺の剣で斬りつけます,적 하나에 필살검,bd 8e dd 2d 23 dd cc dd 7a 1c dd 8d 30 dd 5c 39 45 49 27 2b,dd 09 a1 19 1e 0e a1 de 4a dd a2 dd a1,,False
+0x81740,敵をマ<N:ヒ:5>させます,적에게 마비 부여,bd 2f 64 dd b5 3a 59 27 2b,dd 09 0e 41 a1 45 dd 06 a1 6c 1a,,False
+0x81744,2ます先の敵を斬りつけます,두 칸 앞의 적 공격,13 27 2b dd 66 1c bd 2f dd 5c 39 45 49 27 2b,dd 21 a1 df 96 a1 dd ba 0f a1 dd 09 a1 dd 10 dd 0a,,False
+0x81748,敵に向かつて走り込んで斬りつけます,돌진하며 적 공격,bd 23 dd 01 20 29 21 de 66 39 dd 5d 2d 30 dd 5c 39 45 49 27 2b,72 dd 3f 19 de 1f a1 dd 09 a1 dd 10 dd 0a,,False
+0x8174c,味方の攻撃力を上げます,아군 공격력 상승,dd 94 c4 1c d0 b1 61 2f b9 9c 27 2b,09 7c a1 dd 10 dd 0a dd 2b a1 8b 69,,False
+0x81750,<N:波:1>動<N:リ:12>ー<N:ザ:8>ー弾を撃ちます,파동 광선 발사,de 5b dc 6f 31 dd c8 31 de 06 2f b1 4b 27 2b,dd 7b dd 32 a1 df 16 dd 53 a1 dd 0e 34,,False
+0x81754,<N:遠:1>くの敵を気合で攻撃します,먼 적을 기합으로 공격,de 4c 3e 1c bd 2f a9 dd ac 30 d0 b1 1e 27 2b,dd c1 a1 dd 09 0d a1 24 dd 1d 4e d5 a1 dd 10 dd 0a,,False
+0x81758,一度にたくさんの爆弾を撃ちます,폭탄을 연속 발사,8e dd 20 23 1f 3e 3a 2d 1c dd 41 de 06 2f b1 4b 27 2b,dd 62 dd d1 0d a1 dd ad dd 5f a1 dd 0e 34,,False
+0x8175c,味方の体力を回復します,아군 체력 회복,dd 94 c4 1c dd 2d 61 2f 9e dd 2c 1e 27 2b,09 7c a1 dd 90 dd 2b a1 7a dd 9f,,False
+0x81760,敵のすばやさを下げます,적 민첩 감소,bd 1c 2b 58 40 3a 2f 70 9c 27 2b,dd 09 a1 dd ec df 5e a1 dd 77 dd 07,,False
+0x81764,味方のすばやさを上げます,아군 민첩 상승,dd 94 c4 1c 2b 58 40 3a 2f b9 9c 27 2b,09 7c a1 dd ec df 5e a1 8b 69,,False
+0x81768,全員がポニと同じ方向に向きを変えます,전원이 포니 방향으로 전환,dd 08 8d 2a d7 d1 36 dd 82 4a c4 dd 01 23 dd 01 44 2f dd 15 46 27 2b,4f 7b 03 a1 dd 78 07 a1 dd 29 dd b2 4e d5 a1 4f dd 65,,False
+0x8176c,すごい炎で敵をつつみこみダメージを<N:与:3>えます,거대한 불꽃으로 피해,2b 79 1b bf 30 bd 2f 45 45 6d 2e 6d 67 78 31 7f 2f dd 3f 46 27 2b,32 37 53 a1 dd 13 dd 8c 4e d5 a1 dd 3c 2b,,False
+0x81770,敵を<N:眠:5>らせます,적에게 수면 부여,bd 2f dd b9 33 59 27 2b,dd 09 0e 41 a1 50 3a a1 6c 1a,,False
+0x81774,すごいふぶきを起こして敵にダメージを<N:与:3>えます,눈보라로 적에게 피해,2b 79 1b 97 ca 44 2f dd c4 2e 1e 21 bd 23 67 78 31 7f 2f dd 3f 46 27 2b,de 0d 60 8f d5 a1 dd 09 0e 41 a1 dd 3c 2b,,False
+0x81778,すごい風を起こして敵にダメージを<N:与:3>えます,강풍으로 적에게 피해,2b 79 1b c1 2f dd c4 2e 1e 21 bd 23 67 78 31 7f 2f dd 3f 46 27 2b,dd 28 de 2e 4e d5 a1 dd 09 0e 41 a1 dd 3c 2b,,False
+0x8177c,炎のかたまりを作りだします,불꽃 장벽 생성,bf 1c 20 1f 27 39 2f dd ef 39 35 1e 27 2b,dd 13 dd 8c a1 56 de 92 a1 dd 36 dd 17,,False
+0x81780,すごい雷を落として敵にダメージを<N:与:3>えます,번개로 적에게 피해,2b 79 1b dd a5 2f dd a4 36 1e 21 bd 23 67 78 31 7f 2f dd 3f 46 27 2b,9b dd b4 d5 a1 dd 09 0e 41 a1 dd 3c 2b,,False
+0x81784,まわりの味方を連れてテ<N:リ:12>ポートします,주변 아군과 순간이동,27 43 39 1c dd 94 c4 2f dd e4 32 21 db 6f d7 31 5c 1e 27 2b,40 80 a1 09 7c dd 18 a1 de ce dd 1b 03 dd 32,,False
+0x81788,敵<N:午:15>ャラクタをロックします,적 하나 고정,bd dd 4e d6 57 4e 62 2f a2 82 4e 1e 27 2b,dd 09 a1 19 1e a1 1c 31,,False
+0x8178c,心<N:眼:3>法でロックした敵に対して光弾を撃ち込みます,고정한 적에게 광탄 발사,dd 11 de 7b dd 51 30 a2 82 4e 1e 1f bd 23 dd 9a 1e 21 dd 0c de 06 2f b1 4b dd 5d 6d 27 2b,1c 31 53 a1 dd 09 0e 41 a1 df 16 dd d1 a1 dd 0e 34,,False
+0x81790,自分のまわりにいる敵<N:午:15>ャラクタを攻撃します,주변 적 공격,a4 b2 1c 27 43 39 23 1b 22 bd dd 4e d6 57 4e 62 2f d0 b1 1e 27 2b,40 80 a1 dd 09 a1 dd 10 dd 0a,,False
+0x81794,たつまきで敵をすいあげて地上にたたき落とします,회오리로 띄워 내리찍음,1f 45 27 44 30 bd 2f 2b 1b 3f 9c 21 90 b9 23 1f 1f 44 dd a4 36 1e 27 2b,7a 46 2e d5 a1 df 26 dd 68 a1 47 2e df 91 8d,,False
+0x81798,自分の残像を敵に向かつてぶつけます,잔상을 날려 공격,a4 b2 1c dd ab de 64 2f bd 23 dd 01 20 29 21 ca 45 49 27 2b,df 8e 8b 0d a1 dd 61 3c a1 dd 10 dd 0a,,False
+0x8179c,自分よりある程度弱い敵を消し去ります,약한 적을 소멸,a4 b2 3d 39 3f 22 df 1d dd 20 dd ed 1b bd 2f dd 28 1e de 45 39 27 2b,dd 48 53 a1 dd 09 0d a1 dd 07 dd dd,,False
+0x817a0,<N:ｌ:5><N:ゲ:16>ラックへを召喚します,케락 소환,5b dd 6d 57 82 4e 5a 2f dd 78 dd 7b 1e 27 2b,dd f8 df 27 a1 dd 07 dd 65,,False
+0x817a4,<N:ｌ:5>モフリーへを召喚します,모프리 소환,5b 5f a6 6b 31 5a 2f dd 78 dd 7b 1e 27 2b,55 dd 9d 2e a1 dd 07 dd 65,,False
+0x817a8,<N:ｌ:5>フウジンへを召喚します,후우진 소환,5b a6 71 7f 34 5a 2f dd 78 dd 7b 1e 27 2b,dd 8d 3d dd 3f a1 dd 07 dd 65,,False
+0x817ac,<N:ｌ:5>ラ<N:｣:11>ジンへを召喚します,라이진 소환,5b 57 65 7f 34 5a 2f dd 78 dd 7b 1e 27 2b,8f 03 dd 3f a1 dd 07 dd 65,,False
+0x817b0,<N:ｌ:5>へモジーへを召喚します,헤모지 소환,5b dd 3b 5f 7f 31 5a 2f dd 78 dd 7b 1e 27 2b,dd c3 55 04 a1 dd 07 dd 65,,False
+0x817b4,<N:ｌ:5>オトンへを召喚します,오톤 소환,5b 8f 95 34 5a 2f dd 78 dd 7b 1e 27 2b,46 dd 9a a1 dd 07 dd 65,,False
+0x817b8,モンスターを調ベます,몬스터 정보 조사,5f 34 47 62 31 2f dd 86 dd 35 27 2b,64 30 02 a1 31 60 a1 90 34,,False
+0x817bc,<N:ｌ:5>ちょこへを召喚します,초코 소환,5b 4b 73 2e 5a 2f dd 78 dd 7b 1e 27 2b,39 dd 40 a1 dd 07 dd 65,,False
+0x817c0,味方を回復します,아군 회복,dd 94 c4 2f 9e dd 2c 1e 27 2b,09 7c a1 7a dd 9f,,False
+0x817c4,行けないところに<N:ｴ:24>かを造ります,갈 수 없는 곳에 다리 생성,74 49 1d 1b 36 2e 55 23 dd 04 20 2f dd d5 39 27 2b,dd a6 a1 50 a1 71 06 a1 dd 15 0e a1 01 2e a1 dd 36 dd 17,,False
+0x817c8,ラ<N:｣:11>ジンとの合体魔法,라이진과 합체 마법,57 65 7f 34 36 1c dd ac dd 2d dd 1b dd 51,8f 03 dd 3f dd 18 a1 dd 1d dd 90 a1 45 dd 37,,False
+0x817cc,フウジンとの合体魔法,후우진과 합체 마법,a6 71 7f 34 36 1c dd ac dd 2d dd 1b dd 51,dd 8d 3d dd 3f dd 18 a1 dd 1d dd 90 a1 45 dd 37,,False
+0x817d0,敵に乗り移れます,적에게 빙의,bd 23 dd 43 39 de fc 32 27 2b,dd 09 0e 41 a1 df 64 0f,,False
+0x817d4,まわりに手裏剣をばらまきます,주변에 수리검 난사,27 43 39 23 87 dd fe dd 8d 2f 58 33 27 44 27 2b,40 80 0e a1 50 2e dd a1 a1 dd 6a 34,,False
+0x817d8,自爆します,자폭 공격,a4 dd 41 1e 27 2b,28 dd 62 a1 dd 10 dd 0a,,False
+0x817dc,かまフーメランで敵を攻撃します,낫 부메랑으로 공격,20 27 c9 31 78 57 34 30 bd 2f d0 b1 1e 27 2b,df 1c a1 6c dd 2c de 74 4e d5 a1 dd 10 dd 0a,,False
+0x817e0,まわりの敵にダメージを<N:与:3>えます,주변 적에게 피해,27 43 39 1c bd 23 67 78 31 7f 2f dd 3f 46 27 2b,40 80 a1 dd 09 0e 41 a1 dd 3c 2b,,False
+0x817e4,まわりの敵にダメージを<N:与:3>えます,주변 적에게 피해,27 43 39 1c bd 23 67 78 31 7f 2f dd 3f 46 27 2b,40 80 a1 dd 09 0e 41 a1 dd 3c 2b,,False
+0x817e8,直せん上の敵をなぎはらいます,직선상의 적 공격,dd 85 59 2d b9 1c bd 2f 1d dd 7d 28 33 1b 27 2b,dd 7c dd 53 8b 0f a1 dd 09 a1 dd 10 dd 0a,,False
+0x817ec,つばさをはためかせ風でダメージを<N:与:3>えます,날갯짓으로 바람 피해,45 58 3a 2f 28 1f 51 20 59 c1 30 67 78 31 7f 2f dd 3f 46 27 2b,dd 61 df 13 de 1c 4e d5 a1 dd 08 dd 22 a1 dd 3c 2b,,False
+0x817f0,敵をへモジーにします,적을 헤모지 상태로 만듦,bd 2f dd 3b 5f 7f 31 23 1e 27 2b,dd 09 0d a1 dd c3 55 04 a1 8b dd d2 d5 a1 38 df 25,,False
+0x81b4c,アーク,아크,42 31 4e,09 58,,False
+0x81b50,ククル,쿠쿠루,4e 4e 53,dd 0c dd 0c dd 42,,False
+0x81b54,トッシュ,토슈,5c 82 60 ab,83 dd 86,,False
+0x81b58,ポニ,포코,d7 d1,dd 78 dd 40,,False
+0x81b5c,<N:ニ:13>ーゲン,이가,dd 3c 31 dd 4d 34,03 0c,,False
+0x81b60,<N:｣:11>ー<N:力:5>,고겐,65 31 dd 02,1c dd a9,,False
+0x81b64,マーシャル,마샬,64 31 60 d6 53,45 df 65,,False
+0x81b68,チョン<N:力:5>ラ,촌가라,6c 69 34 dd 02 57,96 0c 8f,,False
+0x81b6c,,,,,,False
+0x81b70,,,,,,False
+0x81b74,,,,,,False
+0x81b78,ス<N:ゲ:16>ルトン,스켈레톤,47 dd 6d 53 5c 34,30 de d6 dd 66 dd 9a,,False
+0x81b7c,<N:ニ:13>ースト,고스트,dd 3c 31 47 5c,1c 30 dd 5b,,False
+0x81b80,<N:ゾ:12>ン<N:ビ:5>,좀비,df 02 34 de 1e,de 5e dd 06,,False
+0x81b84,<N:ク:12>リーンスラ<N:｣:11>ム,그린 슬라임,80 6b 31 34 47 57 65 d8,15 dd d4 a1 dd fc 8f dd c2,,False
+0x81b88,カンジャ,간자,dd 56 34 7f d6,dd 1b 28,,False
+0x81b8c,メ<N:｣:11>ジ,메이지,78 65 7f,dd 2c 03 04,,False
+0x81b90,フ<N:=:12><N:｣:11>ター,파이터,a6 de 4e 65 62 31,dd 7b 03 02,,False
+0x81b94,破戒僧,파계승,dd 62 df 52 84,dd 7b dd 11 69,,False
+0x81b98,ジャ<N:｣:11>アントバット,자이언트 배트,7f d6 65 42 34 5c af 82 5c,28 03 dd 30 dd 5b a1 dd 93 dd 5b,,False
+0x81b9c,トールマスター,돌 마스터,95 31 53 64 47 62 31,72 a1 45 30 02,,False
+0x81ba0,死神,사신,dd 22 dd 2f,34 3e,,False
+0x81ba4,エ<N:リ:12>メンタル,엘리멘탈,dd 23 6f 78 34 62 53,de 68 2e de 8c de 14,,False
+0x81ba8,妖樹,요수,df 08 df 37,2c 50,,False
+0x81bac,フ<N:=:12>ンタ<N:ス:15>ム,팬텀,a6 de 4e 34 62 de 1f d8,df 53 df 4c,,False
+0x81bb0,シート<N:リ:12><N:｣:11>ク,시드레이크,60 31 95 6f 65 4e,29 17 dd 66 03 58,,False
+0x81bb4,マ<N:｣:11>テ<N:ｲ:6>フラ<N:｣:11>,마이티 플라이,64 65 db dd 03 a6 57 65,45 03 df 51 a1 de 36 8f 03,,False
+0x81bb8,<N:午:15>ラートッ<N:ク:12>,킬러 도그,dd 4e 57 31 95 82 80,de 6f 20 a1 33 15,,False
+0x81bbc,<N:リ:12>ットス<N:ゲ:16>ルトン,레드 스켈레톤,6f 82 95 47 dd 6d 53 5c 34,dd 66 17 a1 30 de d6 dd 66 dd 9a,,False
+0x81bc0,フラックスカル,블랙 스컬,c9 57 82 4e 47 bc 53,df 63 df 28 a1 30 df 97,,False
+0x81bc4,<N:リ:12><N:｣:11>ス,레이스,6f 65 47,dd 66 03 30,,False
+0x81bc8,<N:ク:12>ール,구울,80 31 53,87 dd 92,,False
+0x81bcc,フリージー,프리지,a6 6b 31 7f 31,dd 9d 2e 04,,False
+0x81bd0,アシットスラ<N:｣:11>ム,애시드 슬라임,42 60 82 95 47 57 65 d8,de 0f 29 17 a1 dd fc 8f dd c2,,False
+0x81bd4,アサッシン,어새신,42 77 82 60 34,14 de 3d 3e,,False
+0x81bd8,スーパーシ<N:メ:6><N:ビ:5>,슈퍼 좀비,47 31 a3 31 60 dd 5f de 1e,dd 86 de 78 a1 de 5e dd 06,,False
+0x81bdc,ウ<N:｣:11>ッチクラフト,위치 크래프트,71 65 82 6c 4e 57 a6 5c,8e dd 1f a1 58 dd 12 dd 9d dd 5b,,False
+0x81be0,ソーサラー,소서러,de 4d 31 77 57 31,dd 07 25 20,,False
+0x81be4,<N:ネ:13>クロマンサー,네크로맨서,dd c6 4e a2 64 34 77 31,7e 58 d5 de 08 25,,False
+0x81be8,ウ<N:ｲ:6><N:ザ:8>ート,위저드,71 dd 03 dd c8 31 95,8e dd 24 17,,False
+0x81bec,闇法師,암법사,de b2 dd 51 de 11,df 6c dd 37 34,,False
+0x81bf0,修験者,수행자,dd bf de 75 7e,50 dd 31 28,,False
+0x81bf4,下法師,하법사,70 dd 51 de 11,19 dd 37 34,,False
+0x81bf8,<N:ネ:13><N:ビ:5>ュラス,네뷰러스,dd c6 de 1e ab 57 47,7e df 62 20 30,,False
+0x81bfc,道化師,광대,dd 52 dd 7c de 11,df 16 37,,False
+0x81c00,デス<N:ハ:12>ウント,데스 하운드,81 47 dd a2 71 34 95,81 30 a1 19 86 17,,False
+0x81c04,デス,데스,81 47,81 30,,False
+0x81c08,ウ<N:=:12>ンパ<N:｣:11>アバット,뱀파이어 배트,dd 39 de 4e 34 a3 65 42 af 82 5c,df 21 dd 7b 03 14 a1 dd 93 dd 5b,,False
+0x81c0c,ソートマン,소드맨,de 4d 31 95 64 34,dd 07 17 de 08,,False
+0x81c10,ナ<N:｣:11>トマスター,나이트 마스터,7c 65 5c 64 47 62 31,1e 03 dd 5b a1 45 30 02,,False
+0x81c14,<N:ク:12><N:リ:12>ートナ<N:｣:11>ト,그레이트 나이트,80 6f 31 5c 7c 65 5c,15 dd 66 03 dd 5b a1 1e 03 dd 5b,,False
+0x81c18,ポ<N:｣:11><N:ス:15>ンスモッ<N:ク:12>,포이즌 스모그,d7 65 de 1f 34 47 5f 82 80,dd 78 03 df 90 a1 30 55 15,,False
+0x81c1c,メデューサリ<N:ザ:8>ート,메두사 리자드,78 81 ab 31 77 6b dd c8 31 95,dd 2c dd 21 34 a1 2e 28 17,,False
+0x81c20,トラ<N:ニ:13>ンフラ<N:｣:11>,드래곤 플라이,95 57 dd 3c 34 a6 57 65,17 dd 12 de 9b a1 de 36 8f 03,,False
+0x81c24,マントラッ<N:フ:11>,맨트랩,64 34 5c 57 82 dd 55,de 08 dd 5b df 29,,False
+0x81c28,デスフ<N:リ:12><N:｣:11>ム,데스 플레임,81 47 a6 6f 65 d8,81 30 a1 de 36 dd 66 dd c2,,False
+0x81c2c,エ<N:リ:12>メンタルマスター,엘리멘탈 마스터,dd 23 6f 78 34 62 53 64 47 62 31,de 68 2e de 8c de 14 a1 45 30 02,,False
+0x81c30,<N:｣:11>ー<N:力:5>,이가,65 31 dd 02,03 0c,,False
+0x81c34,,,,,,False
+0x81c38,野生へモジー,야생 헤모지,dd e7 dd 1c dd 3b 5f 7f 31,49 dd 36 a1 dd c3 55 04,,False
+0x81c3c,<N:リ:12>ッサーデーモン,레서 데몬,6f 82 77 31 81 31 5f 34,dd 66 25 a1 81 64,,False
+0x81c40,<N:ク:12><N:リ:12>ーターデーモン,그레이터 데몬,80 6f 31 62 31 81 31 5f 34,15 dd 66 03 02 a1 81 64,,False
+0x81c44,スタン<N:ニ:13>ー<N:リ:12>ム,스톤 골렘,47 62 34 dd 3c 31 6f d8,30 dd 9a a1 df 15 df 2b,,False
+0x81c48,ワ<N:｣:11>バーン,와이번,dd a0 65 af 31 34,88 03 9b,,False
+0x81c4c,マットバトラー,매드 배틀러,64 82 95 af 5c 57 31,dd c9 17 a1 dd 93 dd e0 20,,False
+0x81c50,アークデーモン,아크 데몬,42 31 4e 81 31 5f 34,09 58 a1 81 64,,False
+0x81c54,フ<N:=:12><N:｣:11>ア<N:ニ:13>ー<N:リ:12>ム,파이어 골렘,a6 de 4e 65 42 dd 3c 31 6f d8,dd 7b 03 14 a1 df 15 df 2b,,False
+0x81c58,カッパートラ<N:ニ:13>ン,코퍼 드래곤,bc 82 a3 31 95 57 dd 3c 34,dd 40 de 78 a1 17 dd 12 de 9b,,False
+0x81c5c,<N:ク:12><N:リ:12>ートサー<N:へ:4>ント,그레이트 서펀트,80 6f 31 5c 77 31 dd f7 34 5c,15 dd 66 03 dd 5b a1 25 df 54 dd 5b,,False
+0x81c60,修行僧,수행승,dd bf 74 84,50 dd 31 69,,False
+0x81c64,ラマダ大僧正,라마다 대승정,57 64 67 50 84 c7,8f 45 01 a1 37 69 31,,False
+0x81c68,<N:ク:12>ラ・アピス,그라 아비스,80 57 2c 42 72 47,15 8f a1 09 dd 06 30,,False
+0x81c6c,ニ・アピス,니 아비스,d1 2c 42 72 47,07 a1 09 dd 06 30,,False
+0x81c70,ラリュウ<N:午:15>,라류우키,57 6b ab 71 dd 4e,8f dd 6e 3d dd b3,,False
+0x81c74,<N:ヒ:5>ョウエン<N:午:15>,효엔키,dd b5 69 71 dd 23 34 dd 4e,de 24 de 44 dd b3,,False
+0x81c78,ムル・アピス,무르 아비스,d8 53 2c 42 72 47,5f 70 a1 09 dd 06 30,,False
+0x81c7c,ラ・アピス,라 아비스,57 2c 42 72 47,8f a1 09 dd 06 30,,False
+0x81c80,ちょこ,초코,4b 73 2e,39 dd 40,,False
+0x81c84,たからばこ,보물상자,1f 20 33 58 2e,60 6d 8b 28,,False
+0x81c88,たからばこ,보물상자,1f 20 33 58 2e,60 6d 8b 28,,False
+0x81c8c,<N:ゲ:16>ラック,케락,dd 6d 57 82 4e,dd f8 df 27,,False
+0x81c90,,,,,,False
+0x81c94,モフリー,모프리,5f a6 6b 31,55 dd 9d 2e,,False
+0x81c98,フウジン,후우진,a6 71 7f 34,dd 8d 3d dd 3f,,False
+0x81c9c,ラ<N:｣:11>ジン,라이진,57 65 7f 34,8f 03 dd 3f,,False
+0x81ca0,オトン,오톤,8f 95 34,46 dd 9a,,False
+0x81ca4,ちょこ,초코,4b 73 2e,39 dd 40,,False
+0x81ca8,へモジー,헤모지,dd 3b 5f 7f 31,dd c3 55 04,,False
+0x81cac,炎,불꽃,bf,dd 13 dd 8c,,False
+0x81cb0,,,,,,False
+0x81cb4,,,,,,False
+0x81cb8,,,,,,False
+0x81cbc,,,,,,False
+0x81cc0,,,,,,False
+0x81cc4,,,,,,False
+0x81cc8,,,,,,False
+0x81ccc,,,,,,False
+0x81cd0,,,,,,False
+0x81cd4,,,,,,False
+0x81cd8,,,,,,False
+0x81cdc,ダークアーク,다크 아크,67 31 4e 42 31 4e,01 58 a1 09 58,,False
+0x81ce0,ダークククル,다크 쿠쿠루,67 31 4e 4e 4e 53,01 58 a1 dd 0c dd 0c dd 42,,False
+0x81ce4,ダークトッシュ,다크 토슈,67 31 4e 5c 82 60 ab,01 58 a1 83 dd 86,,False
+0x81ce8,ダークポニ,다크 포코,67 31 4e d7 d1,01 58 a1 dd 78 dd 40,,False
+0x81cec,ダーク<N:ニ:13>ーゲン,다크 이가,67 31 4e dd 3c 31 dd 4d 34,01 58 a1 03 0c,,False
+0x81cf0,ダーク<N:｣:11>ー<N:力:5>,다크 고겐,67 31 4e 65 31 dd 02,01 58 a1 1c dd a9,,False
+0x81cf4,ダークマーシャル,다크 마샬,67 31 4e 64 31 60 d6 53,01 58 a1 45 df 65,,False
+0x81cf8,ダークチョン<N:力:5>ラ,다크 촌가라,67 31 4e 6c 69 34 dd 02 57,01 58 a1 96 0c 8f,,False
+0x81e38,スメリア<N:空:2>港,스메리아 공항,47 78 6b 42 dd 18 dd 4a,30 dd 2c 2e 09 a1 dd 10 dd f2,,False
+0x81e3c,トウウ<N:ｲ:6>ル,토우빌,5c 71 dd 39 dd 03 53,83 3d dd a7,,False
+0x81e40,パ<N:リ:12>ンシア城,팔렌시아 성,a3 6f 34 60 42 dd 17,dd 6c dd b0 29 09 a1 dd 17,,False
+0x81e44,オルカスの丘,오르카스 언덕,8f 53 dd 56 47 1c de f2,46 70 dd 38 30 a1 dd 30 5a,,False
+0x81e48,封印の滝,봉인의 폭포,dd 0f dd 44 1c de 31,dd b6 35 0f a1 dd 62 dd 78,,False
+0x81e4c,ニル<N:卞:16>平原,니르 평원,d1 53 dd a1 de be de eb,07 70 a1 de 34 7b,,False
+0x81e50,カラ<N:力:5>ン平野,카라간 평야,bc 57 dd 02 34 de be dd e7,dd 38 8f dd 1b a1 de 34 49,,False
+0x81e54,ク<N:｣:11>ナの丘,쿠나 언덕,4e 65 7c 1c de f2,dd 0c 1e a1 dd 30 5a,,False
+0x81e58,ミルマーナ<N:空:2>港,미르마나 공항,dd 3a 53 64 31 7c dd 18 dd 4a,dd 2f 70 45 1e a1 dd 10 dd f2,,False
+0x81e5c,首都の軍本部,수도 군본부,de dd de 98 1c ba 92 dd 25,50 33 a1 7c dd 58 6c,,False
+0x81e60,トヨー<N:ゲ:16>の森,토요케 숲,5c dd 14 31 dd 6d 1c dd 10,83 2c dd f8 a1 dd 97,,False
+0x81e64,ルワジの森,루와지 숲,53 dd a0 7f 1c dd 10,dd 42 88 04 a1 dd 97,,False
+0x81e68,カカラスの森,카카라스 숲,dd 56 bc 57 47 1c dd 10,dd 38 dd 38 8f 30 a1 dd 97,,False
+0x81e6c,センバラの沼,센바라 늘,dd 60 34 af 57 1c df 34,df 5a dd 08 8f a1 dd 71,,False
+0x81e70,<N:ク:12><N:リ:12><N:｣:11>シーヌ<N:空:2>港,그레이시누 공항,80 6f 65 60 31 dd c7 dd 18 dd 4a,15 dd 66 03 29 dd 55 a1 dd 10 dd f2,,False
+0x81e74,ラマダ寺,라마다사,57 64 67 dd 9e,8f 45 01 34,,False
+0x81e78,ラマダ山,라마다산,57 64 67 9b,8f 45 01 dd 45,,False
+0x81e7c,アララトス<N:空:2>港,아라라토스 공항,42 57 57 5c 47 dd 18 dd 4a,09 8f 8f 83 30 a1 dd 10 dd f2,,False
+0x81e80,チョン<N:力:5>ラの店,촌가라의 가게,6c 69 34 dd 02 57 1c de 5f,96 0c 8f 0f a1 0c 41,,False
+0x81e84,遺跡ダンジョン,유적 던전,dd 8f dd 9d 67 34 7f 69 34,8a dd 09 a1 dd 25 4f,,False
+0x81e88,ア<N:г:23>ンダ高地,아제다 고지,42 dd f8 34 67 dd dd 90,09 66 01 a1 1c 04,,False
+0x81e8c,アリバーシャ<N:空:2>港,아리바샤 공항,42 6b af 31 60 d6 dd 18 dd 4a,09 2e dd 08 de 5c a1 dd 10 dd f2,,False
+0x81e90,サリュ族の村,사류족 마을,77 6b ab dd 9c 1c dd 0b,34 dd 6e dd 7a a1 45 0d,,False
+0x81e94,水の神殿,물의 신전,b8 1c dd 2f dd 84,6d 0f a1 3e 4f,,False
+0x81e98,<N:リ:12><N:｣:11>デン遺跡,리덴 유적,6f 65 81 34 dd 8f dd 9d,2e df 20 a1 8a dd 09,,False
+0x81e9c,サラ砂漠,사라 사막,77 57 de 3d de 2d,34 8f a1 34 dd ab,,False
+0x81ea0,<N:｣:11>シュマのいわ場,라슈마 암장,65 60 ab 64 1c 1b 43 89,8f dd 86 45 a1 df 6c 56,,False
+0x81ea4,カーデル<N:空:2>港,카델 공항,dd 56 31 81 53 dd 18 dd 4a,dd 38 dd e9 a1 dd 10 dd f2,,False
+0x81ea8,闘技場,투기장,93 dd 4c 89,dd 39 24 56,,False
+0x81eac,クラフ島,클라프섬,4e 57 a6 de 05,de 01 8f dd 9d de 77,,False
+0x81ee8,スメリア,스메리아,47 78 6b 42,30 dd 2c 2e 09,,False
+0x81eec,ミルマーナ,미르마나,dd 3a 53 64 31 7c,dd 2f 70 45 1e,,False
+0x81ef0,グレイシーヌ,그레이시누,80 6f 65 60 31 dd c7,15 dd 66 03 29 dd 55,,False
+0x81ef4,アララトス,아라라토스,42 57 57 5c 47,09 8f 8f 83 30,,False
+0x81ef8,アリバーシャ,아리바샤,42 6b af 31 60 d6,09 2e dd 08 de 5c,,False
+0x81efc,カーデル,카델,dd 56 31 81 53,dd 38 dd e9,,False
+0x81f00,ジークラフ島,지크라프섬,7f 31 4e 57 a6 de 05,04 58 8f dd 9d de 77,,False
+0x82170,,,,,,False
+0x82174,山頂の社,산정의 사당,9b dd ea 1c de a5,dd 45 31 0f a1 34 dd 1c,,False
+0x82178,アークの家,아크의 집,42 31 4e 1c dd 5e,09 58 0f a1 dd e2,,False
+0x8217c,精霊の山,정령의 산,4d 4f 1c 9b,31 51 0f a1 dd 45,,False
+0x82180,村の門,마을 입구,dd 0b 1c dd ff,45 0d a1 7f 87,,False
+0x82184,精霊の山,정령의 산,4d 4f 1c 9b,31 51 0f a1 dd 45,,False
+0x82188,パ<N:リ:12>ンシア城,팔렌시아 성,a3 6f 34 60 42 dd 17,dd 6c dd b0 29 09 a1 dd 17,,False
+0x8218c,謁見の聞,알현실,df 54 a0 1c 88,dd 1e df 58 dd 27,,False
+0x82190,スメリア<N:空:2>港,스메리아 공항,47 78 6b 42 dd 18 dd 4a,30 dd 2c 2e 09 a1 dd 10 dd f2,,False
+0x82194,パ<N:リ:12>ンシアを見おろす丘,팔렌시아 전망대,a3 6f 34 60 42 2f a0 3b 55 2b de f2,dd 6c dd b0 29 09 a1 4f dd 6b 37,,False
+0x82198,大臣の部屋,대신의 방,50 8b 1c dd 25 de 1c,37 3e 0f a1 dd 29,,False
+0x8219c,ミルマーナ<N:空:2>港,미르마나 공항,dd 3a 53 64 31 7c dd 18 dd 4a,dd 2f 70 45 1e a1 dd 10 dd f2,,False
+0x821a0,ミルマーナ軍本部,미르마나 군본부,dd 3a 53 64 31 7c ba 92 dd 25,dd 2f 70 45 1e a1 7c dd 58 6c,,False
+0x821a4,将軍の部屋,장군의 방,dd 89 ba 1c dd 25 de 1c,56 7c 0f a1 dd 29,,False
+0x821a8,トヨー<N:ゲ:16>の森,토요케 숲,5c dd 14 31 dd 6d 1c dd 10,83 2c dd f8 a1 dd 97,,False
+0x821ac,パ<N:リ:12>ンシア城地下倉庫,팔렌시아 지하창고,a3 6f 34 60 42 dd 17 90 70 de 32 de 3f,dd 6c dd b0 29 09 a1 04 19 de 87 1c,,False
+0x821b0,パ<N:リ:12>ンシア城地下<N:牢:2>,팔렌시아 지하감옥,a3 6f 34 60 42 dd 17 90 70 de 21,dd 6c dd b0 29 09 a1 04 19 dd 77 de 39,,False
+0x821b4,オルカスの丘,오르카스 언덕,8f 53 dd 56 47 1c de f2,46 70 dd 38 30 a1 dd 30 5a,,False
+0x821b8,幻界,환계,dd f2 dd 12,dd 65 dd 11,,False
+0x821bc,アララトス<N:空:2>港,아라라토스 공항,42 57 57 5c 47 dd 18 dd 4a,09 8f 8f 83 30 a1 dd 10 dd f2,,False
+0x821c0,チョン<N:力:5>ラの店,촌가라의 가게,6c 69 34 dd 02 57 1c de 5f,96 0c 8f 0f a1 0c 41,,False
+0x821c4,ア<N:г:23>ンダ高地洞<N:窟:10>,아제다 고지 동굴,42 dd f8 34 67 dd dd 90 df 1a df 48,09 66 01 a1 1c 04 a1 dd 32 de 67,,False
+0x821c8,ア<N:г:23>ンダ高地外,아제다 고지 외부,42 dd f8 34 67 dd dd 90 dd 6b,09 66 01 a1 1c 04 a1 de 4c 6c,,False
+0x821cc,遺跡ダンジョン,유적 던전,dd 8f dd 9d 67 34 7f 69 34,8a dd 09 a1 dd 25 4f,,False
+0x821d0,<N:ク:12><N:リ:12><N:｣:11>シーヌ<N:空:2>港,그레이시누 공항,80 6f 65 60 31 dd c7 dd 18 dd 4a,15 dd 66 03 29 dd 55 a1 dd 10 dd f2,,False
+0x821d4,ラマダ寺道場,라마다사 도장,57 64 67 dd 9e dd 52 89,8f 45 01 34 a1 33 56,,False
+0x821d8,ラマダ寺僧正の部屋,라마다사 승정의 방,57 64 67 dd 9e 84 c7 1c dd 25 de 1c,8f 45 01 34 a1 69 31 0f a1 dd 29,,False
+0x821dc,ラマダ山頂,라마다산 정상,57 64 67 9b dd ea,8f 45 01 dd 45 a1 31 8b,,False
+0x821e0,ラマダ寺,라마다사,57 64 67 dd 9e,8f 45 01 34,,False
+0x821e4,カーデル<N:空:2>港,카델 공항,dd 56 31 81 53 dd 18 dd 4a,dd 38 dd e9 a1 dd 10 dd f2,,False
+0x821e8,ニロシアムひかえ室,니로시암 대기실,d1 a2 60 42 d8 7d 20 46 de df,07 d5 29 df 6c a1 37 24 dd 27,,False
+0x821ec,ニロシアムぶたい,니로시암 무대,d1 a2 60 42 d8 ca 1f 1b,07 d5 29 df 6c a1 5f 37,,False
+0x821f0,アリバーシャ<N:空:2>港,아리바샤 공항,42 6b af 31 60 d6 dd 18 dd 4a,09 2e dd 08 de 5c a1 dd 10 dd f2,,False
+0x821f4,サリュ族の村,사류족 마을,77 6b ab dd 9c 1c dd 0b,34 dd 6e dd 7a a1 45 0d,,False
+0x821f8,水の神殿,물의 신전,b8 1c dd 2f dd 84,6d 0f a1 3e 4f,,False
+0x821fc,地下エ<N:リ:12>ベータ,지하 엘리베이터,90 70 dd 23 6f dd b4 31 62,04 19 a1 de 68 2e dd fe 03 02,,False
+0x82200,地下バ<N:｣:11>オ<N:研:23><N:究:1>室,지하 바이오 연구실,90 70 af 65 8f de 41 de 46 de df,04 19 a1 dd 08 03 46 a1 dd ad 87 dd 27,,False
+0x82204,パ<N:リ:12>ンシア<N:街:4>頭,팔렌시아 시가지,a3 6f 34 60 42 de 7d de 5c,dd 6c dd b0 29 09 a1 29 0c 04,,False
+0x82208,聖柩封印の滝外,성관 봉인의 폭포 외부,cd dd 1a dd 0f dd 44 1c de 31 dd 6b,dd 17 1d a1 dd b6 35 0f a1 dd 62 dd 78 a1 de 4c 6c,,False
+0x8220c,聖柩封印の滝内,성관 봉인의 폭포 내부,cd dd 1a dd 0f dd 44 1c de 31 dd 81,dd 17 1d a1 dd b6 35 0f a1 dd 62 dd 78 a1 47 6c,,False
+0x82210,トウウ<N:ｲ:6>ルがん<N:ヘ:5>き,토우빌 암벽,5c 71 dd 39 dd 03 53 2a 2d df 5f 44,83 3d dd a7 a1 df 6c de 92,,False
+0x82214,うみベの飛<N:空:2>挺,해변의 비행선,26 6d dd 35 1c dd 72 dd 18 de c8,2b 80 0f a1 dd 06 dd 31 dd 53,,False
+0x82218,ニル<N:卞:16>平原,니르 평원,d1 53 dd a1 de be de eb,07 70 a1 de 34 7b,,False
+0x8221c,カラ<N:力:5>ン平野,카라간 평야,bc 57 dd 02 34 de be dd e7,dd 38 8f dd 1b a1 de 34 49,,False
+0x82220,ク<N:｣:11>ナの丘,쿠나 언덕,4e 65 7c 1c de f2,dd 0c 1e a1 dd 30 5a,,False
+0x82224,ルワジの森,루와지 숲,53 dd a0 7f 1c dd 10,dd 42 88 04 a1 dd 97,,False
+0x82228,カカラスの森,카카라스 숲,dd 56 bc 57 47 1c dd 10,dd 38 dd 38 8f 30 a1 dd 97,,False
+0x8222c,センバラの沼,센바라 늘,dd 60 34 af 57 1c df 34,df 5a dd 08 8f a1 dd 71,,False
+0x82230,<N:リ:12><N:｣:11>デン遺跡,리덴 유적,6f 65 81 34 dd 8f dd 9d,2e df 20 a1 8a dd 09,,False
+0x82234,サラ砂漠,사라 사막,77 57 de 3d de 2d,34 8f a1 34 dd ab,,False
+0x82238,<N:｣:11>シュマのいわ場,라슈마 암장,65 60 ab 64 1c 1b 43 89,8f dd 86 45 a1 df 6c 56,,False
+0x8223c,ニロシアム闘技場,니로시암 투기장,d1 a2 60 42 d8 93 dd 4c 89,07 d5 29 df 6c a1 dd 39 24 56,,False
+0x82240,ラマダ寺道場,라마다사 도장,57 64 67 dd 9e dd 52 89,8f 45 01 34 a1 33 56,,False
+0x82244,クラーフ島<N:空:2>港,클라프섬 공항,4e 57 31 a6 de 05 dd 18 dd 4a,de 01 8f dd 9d de 77 a1 dd 10 dd f2,,False
+0x82248,クラーフとう最上階,클라프탑 최상층,4e 57 31 a6 36 26 dd 2b b9 dd b2,de 01 8f dd 9d df 88 a1 de 27 8b de 50,,False
+0x82348,,대상 변경,e7 07 e7 06 30 ac de 92 2f 20 46 33 32 27 2b,37 8b a1 80 68,e7 07;e7 06,False
+0x8234c,,<E7 02>공격  <E7 05>링 열기,e7 02 30 d0 b1 24 e7 05 30 6b 34 80 2f dd e0 44 27 2b,e7 02 dd 10 dd 0a a1 a1 e7 05 de 54 a1 dd 89 24,,False
+0x82350,,<E7 03>행동 끝<E7 08>상태 확인,e7 03 30 74 dc dd 79 de b8 24 e7 08 30 47 db 65 62 47 2f de 59 de 6f 1e 27 2b,e7 03 dd 31 dd 32 a1 dd a3 e7 08 8b dd d2 a1 de 2b 35,,False
+0x82354,,스킬을 선택하세요,e7 01 30 dd 80 61 2f de 0a 2d 30 70 3a 1b,30 de 6f 0d a1 dd 53 df 9a 19 8c 2c,e7 01,False
+0x82358,,돌아갑니다,e7 03 30 dd 4e d6 34 dd 60 53 1e 27 2b,72 09 de 0c 07 01,e7 03,False
+0x8235c,,<E7 02>결정 <E7 03>돌아가기,e7 02 30 9d dd 97 24 e7 03 30 dd 4e d6 34 dd 60 53 1e 27 2b,e7 02 dd 47 31 a1 e7 03 72 09 0c 24,,False
+0x82360,,다음 대상을 선택합니다,dd 2a 28 ac de 92 2f de 0a 99 27 2b,01 8d a1 37 8b 0d a1 dd 53 df 9a dd 1d 07 01,,False
+0x82364,,결정하면 주변에 스킬을 사용합니다,9d dd 97 2b 22 36 27 43 39 23 dd 80 61 2f dd 33 1b 27 2b,dd 47 31 19 3a a1 40 80 0e a1 30 de 6f 0d a1 34 dd 1a dd 1d 07 01,,False
+0x82368,,결정하면 보는 방향에 스킬을 사용합니다,9d dd 97 2b 22 36 dd 01 1b 21 1b 22 c4 dd 01 23 dd 80 61 2f dd 33 1b 27 2b,dd 47 31 19 3a a1 60 06 a1 dd 29 dd b2 0e a1 30 de 6f 0d a1 34 dd 1a dd 1d 07 01,,False
+0x8236c,,비어 있는 곳을 선택하세요,dd 18 1b 21 1b 22 89 c2 2f e7 01 30 de 0a 2d 30 70 3a 1b,dd 06 14 a1 1f 06 a1 dd 15 0d a1 dd 53 df 9a 19 8c 2c,e7 01,False
+0x82370,,결정하면 스킬을 사용합니다,9d dd 97 2b 22 36 dd 80 61 2f dd 33 1b 27 2b,dd 47 31 19 3a a1 30 de 6f 0d a1 34 dd 1a dd 1d 07 01,,False
+0x82374,,<E7 03><E7 05> 인물을 선택하세요,e7 03 e7 05 30 dd 4e d6 57 2f de 0a 2d 30 70 3a 1b,e7 03 e7 05 a1 35 6d 0d a1 dd 53 df 9a 19 8c 2c,,False
+0x82378,,<E7 08> 전투 시작,01 e7 08 30 63 93 23 86 39 27 2b,e7 08 a1 4f dd 39 a1 29 dd 64,,False
+0x823a4,ステージクリア,승리!,47 db 31 7f 4e 6b 42,69 2e a9,,False
+0x823a8,ゲームオーバー,게임 오버,dd 4d 31 d8 8f 31 af 31,41 dd c2 a1 46 67,,False
+0x823d8,<N:ｌ:5>石化へ,돌 상태,5b 94 dd 7c 5a,72 a1 8b dd d2,,False
+0x823dc,<N:ｌ:5>マ<N:ヒ:5>へ,마비,5b 64 dd b5 5a,45 dd 06,,False
+0x823e0,<N:ｌ:5><N:眠:5>りへ,수면,5b dd b9 39 5a,50 3a,,False
+0x82444,データのセーフ・ロート,데이터 저장 불러오기,81 31 62 1c dd 60 31 c9 2c a2 31 95,81 03 02 a1 dd 24 56 a1 dd 13 20 46 24,,False
+0x82448,データのセーフ,데이터 저장,81 31 62 1c dd 60 31 c9,81 03 02 a1 dd 24 56,,False
+0x8244c,データのロート,데이터 불러오기,81 31 62 1c a2 31 95,81 03 02 a1 dd 13 20 46 24,,False
+0x82450,カートを選んで下さい,카드를 선택하세요,bc 31 95 2f de 0a 2d 30 70 3a 1b,dd 38 17 36 a1 dd 53 df 9a 19 8c 2c,,False
+0x82454,カート1,카드 1,bc 31 95 12,dd 38 17 a1 4a,,False
+0x82458,カート2,카드 2,bc 31 95 13,dd 38 17 a1 0b,,False
+0x8245c,フ<N:=:12><N:｣:11>ルを選んで下さい,파일을 선택하세요,a6 de 4e 65 53 2f de 0a 2d 30 70 3a 1b,dd 7b 6b 0d a1 dd 53 df 9a 19 8c 2c,,False
+0x82460,メモリーカートがありません,메모리 카드가 없습니다,78 5f 6b 31 bc 31 95 2a 3f 39 27 59 2d,dd 2c 55 2e a1 dd 38 17 0c a1 71 2d 07 01,,False
+0x82474,へを手に入れた,」를 손에 넣었습니다.,5a 2f 87 23 86 32 1f,df 09 36 a1 85 0e a1 6f 61 2d 07 01 21,,False
+0x82498,ステージ内で得た経験値,스테이지에서 얻은 경험치,47 db 31 7f dd 81 30 dd a7 1f dd de de 75 dd d2,30 dd be 03 04 0e 25 a1 dd 9c 26 a1 68 dd 54 dd 1f,,False
+0x8249c,倒した敵の数,격파한 적 수,dd 83 1e 1f bd 1c de d7,dd 0a dd 7b 53 a1 dd 09 a1 50,,False
+0x82518,<N:リ:12>ベルアッ<N:フ:11>！！,레벨 상승!!,6f dd b4 53 42 82 dd 55 02 02,dd 66 dd ef a1 8b 69 a9 a9,,False
+0x8251c,最大<N:ヒ:5>ットポ<N:｣:11>ント,최대 체력,dd 2b 50 dd b5 82 5c d7 65 34 5c,de 27 37 a1 dd 90 dd 2b,,False
+0x82520,最大マジックポ<N:｣:11>ント,최대 마력,dd 2b 50 64 7f 82 4e d7 65 34 5c,de 27 37 a1 45 dd 2b,,False
+0x82524,攻撃力,공격력,d0 b1 61,dd 10 dd 0a dd 2b,,False
+0x82528,防御力,방어력,dd a6 dd ad 61,dd 29 14 dd 2b,,False
+0x8252c,魔力,마력,dd 1b 61,45 dd 2b,,False
+0x82530,すばやさ,민첩성,2b 58 40 3a,dd ec df 5e dd 17,,False
+0x82538,上がつた, 상승,b9 2a 29 1f,a1 8b 69,,False
+0x8253c,ジャン<N:フ:11>,점프,7f d6 34 dd 55,dd d0 dd 9d,,False
+0x82540,投げ,던지기,de 04 9c,dd 25 04 24,,False
+0x82544,受け,받기,dd 68 49,dd 19 24,,False
+0x82548,反撃,반격,de 02 b1,dd 46 dd 0a,,False
+0x8254c,<N:リ:12>ベルが上がつた,레벨 상승,6f dd b4 53 2a b9 2a 29 1f,dd 66 dd ef a1 8b 69,,False
+0x82554,へをお<N:げ:26>えた,」를 배웠다.,5a 2f 3b d2 46 1f,df 09 36 a1 dd 93 de 15 01 21,,False
+0x825c8,サウント出力,사운드 출력,77 71 34 95 56 61,34 86 17 a1 76 dd 2b,,False
+0x825cc,パットななめ入力,대각선 입력,a3 82 95 1d 1d 51 86 61,37 dd 6d dd 53 a1 7f dd 2b,,False
+0x825d0,<N:午:15>ャンセルかくにん,돌아가기 확인,dd 4e d6 34 dd 60 53 20 3e 23 2d,72 09 0c 24 a1 de 2b 35,,False
+0x825d4,へル<N:フ:11>ウ<N:｣:11>ントウ,도움말 보기,dd 3b 53 dd 55 71 65 34 95 71,33 dd 70 1b a1 60 24,,False
+0x825d8,チョン<N:力:5>ラのモンスターすかんを<N:閂:11>く,몬스터 도감,6c 69 34 dd 02 57 1c 5f 34 47 62 31 8c 20 2d 2f dd e0 3e,64 30 02 a1 33 dd 77,,False
+0x825dc,ステ<N:リ:12>オ,스테레오,47 db 6f 8f,30 dd be dd 66 46,,False
+0x825e0,モ<N:メ:6>ラル,모노,5f dd 5f 57 53,55 dd 57,,False
+0x825e4,ふつう,일반,97 45 26,6b dd 46,,False
+0x825e8,よくする,사용,3d 3e 2b 22,34 dd 1a,,False
+0x825ec,しない,사용안함,1e 1d 1b,34 dd 1a 94 dd cf,,False
+0x8262c,対戦せいせき,대전 성적,dd 9a 63 59 1b 59 44,37 4f a1 dd 17 dd 09,,False
+0x82638,能力,기량,dd 80 61,24 d2,,False
+0x8293c,マ<N:ヒ:5>攻撃,마비 공격,64 dd b5 d0 b1,45 dd 06 a1 dd 10 dd 0a,,False
+0x82940,頭なげ,머리 던지기,de 5c 1d 9c,dd 5d 2e a1 dd 25 04 24,,False
+0x82944,サ<N:｣:11><N:リ:12>ント,사일런트,77 65 6f 34 5c,34 6b dd 2a dd 5b,,False
+0x82948,<N:毒:1>攻撃,해로운 공격,dd cf d0 b1,2b d5 86 a1 dd 10 dd 0a,,False
+0x8294c,ぶんれつ,분열,ca 2d 32 45,92 dd 89,,False
+0x82950,ばくれつ手裏剣,폭발 수리검,58 3e 32 45 87 dd fe dd 8d,dd 62 dd 0e a1 50 2e dd a1,,False
+0x82954,自爆,자폭,a4 dd 41,28 dd 62,,False
+0x82958,トリーム<N:メ:6>ック,드림 노크,95 6b 31 d8 dd 5f 82 4e,17 de 29 a1 dd 57 58,,False
+0x8295c,エクス<N:フ:11>ロージョン,대폭발,dd 23 4e 47 dd 55 a2 31 7f 69 34,37 dd 62 dd 0e,,False
+0x82960,ウ<N:｣:11>ントスラッシャー,바람 검,71 65 34 95 47 57 82 60 d6 31,dd 08 dd 22 a1 dd a1,,False
+0x82964,サンダーストーム,전기 폭풍,77 34 67 31 47 5c 31 d8,4f 24 a1 dd 62 de 2e,,False
+0x82968,ダ<N:｣:11>アモントダスト,다이아몬드 더스트,67 65 42 5f 34 95 67 47 5c,01 03 09 64 17 a1 dd 96 30 dd 5b,,False
+0x8296c,デポ<N:｣:11><N:ス:15>ン,해로운 기운 제거,81 d7 65 de 1f 34,2b d5 86 a1 24 86 a1 66 32,,False
+0x82970,天のさばき,하늘의 심판,dd 26 1c 3a 58 44,19 dd 71 0f a1 9d de 7f,,False
+0x82974,リ<N:ザ:8><N:リ:12>クション,부활,6b dd c8 6f 4e 60 69 34,6c dd e1,,False
+0x82978,デ<N:ｲ:6>バ<N:｣:11>ト,디바이드,81 dd 03 af 65 95,dd cd dd 08 03 17,,False
+0x8297c,<N:振:2>りおろし,내려치기,de d9 39 3b 55 1e,47 3c dd 1f 24,,False
+0x82980,<N:午:15>ュア,회복,dd 4e ab 42,7a dd 9f,,False
+0x82984,つつみこみ,감싸기,45 45 6d 2e 6d,dd 77 dd 14 24,,False
+0x82988,<N:毒:1>のきり,해로운 기운,dd cf 1c 44 39,2b d5 86 a1 24 86,,False
+0x8298c,き<N:ぃ:20>うけつ,피 빨기,44 de 20 26 49 45,dd 3c a1 de 20 24,,False
+0x82990,ちょうおんっ,초음파,4b 73 26 3b 2d 75,39 8d dd 7b,,False
+0x82994,石化,돌 상태,94 dd 7c,72 a1 8b dd d2,,False
+0x82998,し<N:ぃ:20>うい攻撃,주위 공격,1e de 20 26 1b d0 b1,40 8e a1 dd 10 dd 0a,,False
+0x829a0,たたきつけ,강타,1f 1f 44 45 49,dd 28 dd 7f,,False
+0x829a4,かふん攻撃,꽃가루 공격,20 97 2d d0 b1,dd 8c 0c dd 42 a1 dd 10 dd 0a,,False
+0x829a8,たねとばし,씨 날리기,1f 4c 36 58 1e,dd 67 a1 dd 61 2e 24,,False
+0x829ac,くろの雷,검은 전기,3e 55 1c dd a5,dd a1 26 a1 4f 24,,False
+0x829b0,じごくへの階段,지옥의 계단,4a 79 3e 8a 1c dd b2 de 61,04 de 39 0f a1 dd 11 dd 35,,False
+0x829b4,死のふち,죽음의 문,dd 22 1c 97 4b,dd 94 8d 0f a1 dd af,,False
+0x829b8,合体,합체,dd ac dd 2d,dd 1d dd 90,,False
+0x829bc,暗闇,시야 차단,de b3 de b2,29 49 a1 dd b7 dd 35,,False
+0x829c0,人形らんぶ,인형 난무,52 de 42 33 2d ca,35 dd 7d a1 dd 6a 5f,,False
+0x829c4,へモジー,헤모지,dd 3b 5f 7f 31,dd c3 55 04,,False
+0x829c8,雷しんは,전기 파동,dd a5 1e 2d 28,4f 24 a1 dd 7b dd 32,,False
+0x829cc,炎しんは,불꽃 파동,bf 1e 2d 28,dd 13 dd 8c a1 dd 7b dd 32,,False
+0x829d0,よみのつばさ,황천 비행,3d 6d 1c 45 58 3a,de 3c dd e7 a1 dd 06 dd 31,,False
+0x829d4,<N:波:1>黙,마법 봉인,de 5b de 8b,45 dd 37 a1 dd b6 35,,False
+0x829d8,デス<N:卞:16>ール,죽음 회복,81 47 dd a1 31 53,dd 94 8d a1 7a dd 9f,,False
+0x829dc,ダストルー<N:｣:11>ン,더스트 문양,67 47 5c 53 31 65 34,dd 96 30 dd 5b a1 dd af dd 82,,False
+0x829e0,かみつき,물기,20 6d 45 44,6d 24,,False
+0x829e4,バーン<N:ク:12>ラウント,번 그라운드,af 31 34 80 57 71 34 95,9b a1 15 8f 86 17,,False
+0x829e8,トータル<N:ヒ:5>ーリン<N:ク:12>,전체 회복,5c 31 62 53 dd b5 31 6b 34 80,4f dd 90 a1 7a dd 9f,,False
+0x829ec,ゲ<N:｣:11>ルフラッシュ,게일 플래시,dd 4d 65 53 a6 57 82 60 ab,41 6b a1 de 36 dd 12 29,,False
+0x829f0,スロウエ<N:ネ:13>ミー,슬로우 에너미,47 a2 71 dd 23 dd c6 dd 3a 31,dd fc d5 3d a1 0e 89 dd 2f,,False
+0x829f4,メテオフ<N:｣:13>ール,별 내리기,78 db 8f a6 de b4 31 53,dd f3 a1 47 2e 24,,False
+0x829f8,<N:午:15>ュア,회복,dd 4e ab 42,7a dd 9f,,False
+0x829fc,デポ<N:｣:11><N:ス:15>ン,해로운 기운 제거,81 d7 65 de 1f 34,2b d5 86 a1 24 86 a1 66 32,,False
+0x82a00,サ<N:｣:11><N:リ:12>ント,사일런트,77 65 6f 34 5c,34 6b dd 2a dd 5b,,False
+0x82a04,リフ<N:リ:12>ッシュ,리프레시,6b a6 6f 82 60 ab,2e dd 9d dd 66 29,,False
+0x82a08,天のさばき,하늘의 심판,dd 26 1c 3a 58 44,19 dd 71 0f a1 9d de 7f,,False
+0x82a0c,リ<N:ザ:8><N:リ:12>クション,부활,6b dd c8 6f 4e 60 69 34,6c dd e1,,False
+0x82a10,デ<N:ｲ:6>バ<N:｣:11>ト,디바이드,81 dd 03 af 65 95,dd cd dd 08 03 17,,False
+0x82a14,桜花雷爆斬,토슈 비기,de 3c de 1b dd a5 dd 41 dd 5c,83 dd 86 a1 dd 06 24,,False
+0x82a18,呪縛剣,봉인검,de 35 de 94 dd 8d,dd b6 35 dd a1,,False
+0x82a1c,<N:真:2><N:空:2>斬,진공검,de 9f dd 18 dd 5c,dd 3f dd 10 dd a1,,False
+0x82a20,<N:虎:5><N:影:1>斬,그림자검,de e9 de 81 dd 5c,15 de 29 28 dd a1,,False
+0x82a24,戦の小太鼓,전투 큰 북,63 1c dd 88 dd a9 dd f1,4f dd 39 a1 aa a1 de 64,,False
+0x82a28,荒獅子太鼓,황사자태고,dd c0 de a7 96 dd a9 dd f1,de 3c 34 28 dd d2 1c,,False
+0x82a2c,気合いラッパ,기합 나팔,a9 dd ac 1b 57 82 a3,24 dd 1d a1 1e dd 6c,,False
+0x82a30,へろへろラッパ,비틀비틀 나팔,8a 55 8a 55 57 82 a3,dd 06 dd e0 dd 06 dd e0 a1 1e dd 6c,,False
+0x82a34,いやしのたてごと,치유의 하프,1b 40 1e 1c 1f 21 79 36,dd 1f 8a 0f a1 19 dd 9d,,False
+0x82a38,のろまのベース,느림의 연주,1c 55 27 1c dd b4 31 47,4d de 29 0f a1 dd ad 40,,False
+0x82a3c,い<N:駄:2>天のオカリナ,위타천 오카리나,1b de cd dd 26 1c 8f bc 6b 7c,8e dd 7f dd e7 a1 46 dd 38 2e 1e,,False
+0x82a40,向き直りの笛,방향잡이 피리,dd 01 44 dd 85 39 1c de 2f,dd 29 dd b2 de 10 03 a1 dd 3c 2e,,False
+0x82a44,エクス<N:フ:11>ロージョン,대폭발,dd 23 4e 47 dd 55 a2 31 7f 69 34,37 dd 62 dd 0e,,False
+0x82a48,トリーム<N:メ:6>ック,드림 노크,95 6b 31 d8 dd 5f 82 4e,17 de 29 a1 dd 57 58,,False
+0x82a4c,ダ<N:｣:11>ヤモントダスト,다이아몬드 더스트,67 65 bb 5f 34 95 67 47 5c,01 03 09 64 17 a1 dd 96 30 dd 5b,,False
+0x82a50,ウ<N:｣:11>ントスラッシャー,바람 검,71 65 34 95 47 57 82 60 d6 31,dd 08 dd 22 a1 dd a1,,False
+0x82a54,サンダーストーム,전기 폭풍,77 34 67 31 47 5c 31 d8,4f 24 a1 dd 62 de 2e,,False
+0x82a58,旋風撃蹴,회오리 차기,de 9c c1 b1 de a3,7a 46 2e a1 dd b7 24,,False
+0x82a5c,流星爆,유성폭,de 24 de d6 dd 41,8a dd 17 dd 62,,False
+0x82a60,鬼神流<N:影:1><N:波:1>,유령 파동,de f4 dd 2f de 24 de 81 de 5b,8a 51 a1 dd 7b dd 32,,False
+0x82a64,滅掌烈破,멸장열파,dd 40 de da de 85 dd 62,dd dd 56 dd 89 dd 7b,,False
+0x82a6c,召喚,불러내기,dd 78 dd 7b,dd 13 20 47 24,,False
+0x82a70,調ベる,조사,dd 86 dd 35 22,90 34,,False
+0x82a74,回復,회복,9e dd 2c,7a dd 9f,,False
+0x82a78,<N:ｴ:24>か造り,다리 만들기,dd 04 20 dd d5 39,01 2e a1 38 0a 24,,False
+0x82a7c,風雷破,바람 전기,c1 dd a5 dd 62,dd 08 dd 22 a1 4f 24,,False
+0x82a80,乗り移り,몸 가져오기,dd 43 39 de fc 39,de 2d a1 0c dd 63 46 24,,False
+0x82a84,やる気なし,기운 없음,40 22 a9 1d 1e,24 86 a1 71 8d,,False
+0x82ac0,,예      아니요,28 1b 01 01 1b 1b 46,97 a1 a1 a1 a1 a1 a1 09 07 2c,,False
+0x82ac4,,저장하시겠습니까?,01 01 dd 60 31 c9 1e 27 2b 20 3c 01 01,dd 24 56 19 29 54 2d 07 3b d1,,False
+0x82ac8,,전투 전 장비를 정비하시겠습니까?,01 df 27 c5 2f 36 36 1c 46 27 2b 20 3c 01,4f dd 39 a1 4f a1 56 dd 06 36 a1 31 dd 06 19 29 54 2d 07 3b d1,,False
+0x82acc,,진행하시겠습니까?,01 01 3d 55 1e 1b 30 2b 20 3c 01 01,dd 3f dd 31 19 29 54 2d 07 3b d1,,False

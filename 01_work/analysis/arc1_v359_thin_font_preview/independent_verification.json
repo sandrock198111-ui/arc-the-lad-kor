@@ -1,0 +1,27 @@
+{
+  "identity": "V359 Thin font preview (build number unchanged)",
+  "result": "PASS_STATIC_RUNTIME_PENDING_TEST_ONLY",
+  "full": {
+    "file": "arc1_v359_thin_font_preview_TEST_ONLY_F91B3F0B.zip",
+    "sha256": "F91B3F0BE26EDC107ABAC502D99194BB26764BF997AD0210948B2A9828735DB9"
+  },
+  "delta": {
+    "file": "arc1_v359_thin_font_preview_TEST_ONLY_COMM_delta_from_v359_E024601C.zip",
+    "sha256": "E024601C116F08E554A41B2862F926495EBE24D469893BE9A39239F99E48E285"
+  },
+  "checks": {
+    "archive_topology_order": "PASS 164/164",
+    "changed_members": [
+      "COMM.IMG"
+    ],
+    "expected_writes": "PASS 9320 COMM bytes",
+    "font_raster_control": "PASS exact Hanme and Thin component hashes",
+    "target_planes": "PASS 723/723 Thin readback",
+    "non_target_planes": "PASS 1197/1197 byte-semantic plane preservation",
+    "mapped_collisions": 0,
+    "full_hangul_collision_extras": 19,
+    "protected_assets": "PASS native damage, quotes, compact digits/icons, E7/high page",
+    "psx_dat": "PASS byte exact V359"
+  },
+  "runtime": "PENDING; opening-scene visual review only"
+}

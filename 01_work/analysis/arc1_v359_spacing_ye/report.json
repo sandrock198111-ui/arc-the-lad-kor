@@ -1,0 +1,16 @@
+{
+  "output_sha256": "76A031522C046E54673A56EBAE304D53411F0A4C161A30D4E0750A8661D0C993",
+  "changed_bytes": {
+    "COMM.IMG": 6,
+    "PSX.EXE": 10
+  },
+  "changed_planes": [
+    150
+  ],
+  "ui_pointer_census": 671,
+  "audited": 666,
+  "binary_excluded": 5,
+  "empty_after": 0,
+  "control_difference_candidates": 5,
+  "status": "STATIC PASS / RUNTIME PENDING; UI audit not whole-game completeness"
+}

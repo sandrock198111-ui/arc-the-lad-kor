@@ -1,0 +1,11 @@
+Arc the Lad 1 V358 independent static verification
+STATIC PASS / RUNTIME PENDING / TEST_ONLY
+archive topology/order: PASS 164/164
+changed members: F/SF0F1.DAT,PSX.EXE
+Expected-Write: PASS 62 bytes total (PSX.EXE 3, F/SF0F1.DAT 59)
+dialogue: PASS 알겠느냐? 우리에게 봉인의 기술 따위는 필요 없다. 산으로 돌아가는 건 다른 볼일이 있어서다.
+slot: PASS 62/127 bytes; caller 0x47910; metadata 0x2D
+panel: PASS box 74,111,198,40; rows 115/131; margins 8/8/4/4
+panel isolation: PASS sole caller 0x80166898; patched-word inbound edges 0
+COMM.IMG/all non-target members/header/delta: PASS
+runtime: PENDING user cold boot

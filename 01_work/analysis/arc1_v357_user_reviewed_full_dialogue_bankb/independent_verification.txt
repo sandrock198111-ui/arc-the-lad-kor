@@ -1,0 +1,12 @@
+Arc the Lad 1 V357 independent static verification
+STATIC PASS / USER-REVIEWED / RUNTIME PENDING / TEST_ONLY
+visible targets: 353/353
+choices: 134/134
+protected control tokens: 973
+already current in V354: 5
+non-text protected: 199/199
+changed members: 73/73
+Expected-Write bytes: 15729
+COMM.IMG: byte-identical; added VRAM: 0
+user review: 47 former Bank-B draft rows approved in the 2026-09-03 export
+runtime: PENDING cold boot and representative traversal

@@ -1,0 +1,4267 @@
+{
+  "base_sha256": "7536D17369B8591DFC8D84D78A5C783A4268099006D8203EB274EE82C88FD4F2",
+  "canonical_before_sha256": "BA06F604CBF631D624FFEEBC3A5708E8D7D848FC2EDFF276E28DA3E8A6FC4B7A",
+  "status": "CANONICAL_APPLICATION_PLAN / NO GAME BUILD / RUNTIME PENDING",
+  "counts": {
+    "HELD": 96,
+    "QUALIFIED_CANONICAL_ONLY": 99,
+    "ALREADY_APPLIED": 20
+  },
+  "rows": [
+    {
+      "row": 67,
+      "file": "1/S1021.DAT",
+      "offset": "0x48CF8",
+      "before": "말을 걸거나 물면건을 찾을 때는 가까이 다가가 결정 버튼을 누르 돼.",
+      "proposed": "말을 걸거나 물건을 찾을 때는 가까이 다가가 결정 버튼을 누르면 돼.",
+      "japanese": "話しかけるときも、\r\nアイテムをさがすときも、\r\n近づいてから<CTRL:E7:02>をおすんだ。",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 140,
+      "file": "1/S1041.DAT",
+      "offset": "0x48378",
+      "before": "산의 정령: 약속에 따라 몬스터과 싸울 힘을 당신에게 드리겠습니다.",
+      "proposed": "산의 정령: 약속에 따라 몬스터와 싸울 힘을 당신에게 드리겠습니다.",
+      "japanese": "山の精霊 \r\n約束に従い、モンスターと戦う力を\r\nあなたに与えます。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 286737,
+          "before": "dd05a1643002dd18a1",
+          "after": "8fa164300288a1dd14"
+        },
+        {
+          "at": 286747,
+          "before": "14dd92a1740da1dd1c3e0e41a1dd232e542d070121",
+          "after": "92a1740da1dd1c3e0e41a1172e542d070121000000"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 208,
+      "file": "21/S2013.DAT",
+      "offset": "0x47E08",
+      "before": "듣기 좋구먼. 잠이 확 깨버렸어.",
+      "proposed": "어우, 세구먼. 술이 확 깨 버렸어.",
+      "japanese": "きくのふ\r\nよいがさめちまつたわい",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 203–211행은 술 취한 사람이 충격 뒤 정신을 차리는 흐름. よいがさめる는 취기가 깨다이며 잠이 깨다가 아니다. きく는 타격이 먹힌다는 뜻으로 보이나 동작 확인 필요."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 270,
+      "file": "21/S2034.DAT",
+      "offset": "0x47994",
+      "before": "대신: 흥! 계획은 조금 틀어졌지만, 너희들 덕분에 수고를 던 셈이군.",
+      "proposed": "대신: 흥! 계획은 조금 틀어졌지만, 너희들 덕분에 수고를 덜었군.",
+      "japanese": "大臣 \r\nフンッ\r\n少し計画はくるつたが、\r\nおまえらのおかげで手聞がはぶけたわ。",
+      "reasons": [
+        "missing glyphs ['덜']: 대신: 흥! 계획은 조금 틀어졌지만, 너희들 덕분에 수고를 덜었군."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 312,
+      "file": "21/S2042.DAT",
+      "offset": "0x48194",
+      "before": "초핀: 어느 나라든 언제든 몬스터과 싸울 수 있는 장소가 있습니다.",
+      "proposed": "초핀: 어느 나라든 언제든 몬스터와 싸울 수 있는 장소가 있습니다.",
+      "japanese": "チョピン \r\nどこの国にも、いつ行つてもモンスターのいる場所があります。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283014,
+          "before": "dd99a11e",
+          "after": "4da11e8f"
+        },
+        {
+          "at": 283019,
+          "before": "05dd26a1dd3066dd26a1643002",
+          "after": "26a1dd3066dd26a164300288a1"
+        },
+        {
+          "at": 283033,
+          "before": "18a1dd14dd92a150",
+          "after": "14dd92a150a11f06"
+        },
+        {
+          "at": 283042,
+          "before": "1f06a156dd070ca11f2d070121",
+          "after": "56dd070ca11f2d070121000000"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 339,
+      "file": "21/S2044.DAT",
+      "offset": "0x4821E",
+      "before": "당신, 이 배의...",
+      "proposed": "당신, 지난번 그...",
+      "japanese": "あなた、この聞の・・。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 284677,
+          "before": "dd01a1dd930f",
+          "after": "04dd6a9ba115"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 341,
+      "file": "21/S2044.DAT",
+      "offset": "0x482BC",
+      "before": "이 배의 힘이 있으면 발목을 잡지는 않을 거다.",
+      "proposed": "지난번 같은 힘을 낼 수 있다면 발목을 잡지는 않을 거다.",
+      "japanese": "この聞の力があれば\r\n足手まといにはならないはすだ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283264,
+          "before": "dd01a1dd930fa174dd01a11f4e3a",
+          "after": "04dd6a9ba1dd5a26a1740da1de2c"
+        },
+        {
+          "at": 283279,
+          "before": "dd0edd330d",
+          "after": "50a11f013a"
+        },
+        {
+          "at": 283285,
+          "before": "de100406a1780da1320121000000000000",
+          "after": "dd0edd330da1de100406a1780da1320121"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 342,
+      "file": "21/S2044.DAT",
+      "offset": "0x4831A",
+      "before": "왔구나 왔어, 기다리고 있었. 자네가 없으면 앞으로 힘들 테니 말이야.",
+      "proposed": "왔구나 왔어, 기다리고 있었지. 자네가 없으면 앞으로 힘들 테니 말이야.",
+      "japanese": "来たか来たか\r\n待つておつたぞ。\r\nおぬしがいないとこれから先\r\nつらいからのう。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 295706,
+          "before": "e28212681a12e60155",
+          "after": "dd88871ea1dd8814b3"
+        },
+        {
+          "at": 295716,
+          "before": "1d3fa11a3421e6013fdefa1b2005a105a13c23123adefae601073a05123a02defa",
+          "after": "24012e1ca11f610421a1287e0ca1714e3aa1ddba4ed5a1740aa1ddbe07a11b0349"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 347,
+      "file": "21/S2044.DAT",
+      "offset": "0x484C8",
+      "before": "그래. 내가 오래전 부터운명으로 이어진 영혼이지.",
+      "proposed": "그래. 내가 오래전 여행할 때부터 함께할 운명이 정해진 영혼이지.",
+      "japanese": "そうじゃ、わしの古の旅から\r\n定められた魂じゃ。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 내가 오래전 부터운명으로는 문장이 성립하지 않는다. 348–349행의 과거 동행 및 영혼 순환 설명과 연결해야 한다."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 402,
+      "file": "21/S2045.DAT",
+      "offset": "0x48972",
+      "before": "|아라라토스 유적|미르마나의 이후|라마다 수행|그만",
+      "proposed": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "japanese": "<CTRL:E5:03>アララトスの遺跡ダンジョン\r\n<CTRL:E5:03>ミルマーナのその後\r\n<CTRL:E5:03>ラマダ寺での修行\r\n<CTRL:E5:03>やつっり、いいや。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 297368,
+          "before": "a150dd31a1",
+          "after": "34a150dd31"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 422,
+      "file": "21/S2045.DAT",
+      "offset": "0x490F0",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "proposed": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "japanese": "<CTRL:E5:03>ラマダ寺の修行\r\n<CTRL:E5:03>ロマンシングストーン\r\n<CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89>\r\n<CTRL:E5:03>やつっりいいや。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 424,
+      "file": "21/S2045.DAT",
+      "offset": "0x491CE",
+      "before": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "proposed": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클이니까요...",
+      "japanese": "チョピン \r\nここでは、あるアイテムが手に入ります。ストーンサークルだけに・・。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 286882,
+          "before": "0e2538a11b03042c212121",
+          "after": "03073b2c21212100000000"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 428,
+      "file": "21/S2045.DAT",
+      "offset": "0x4935A",
+      "before": "초핀: 소환수는 전부 여섯까지라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "proposed": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "japanese": "チョピン \r\n召喚獣は全部で6までなると聞いております。中には見つかりにくいものもいるようなのであちこち探してみて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 299880,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 434,
+      "file": "21/S2045.DAT",
+      "offset": "0x495D4",
+      "before": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "proposed": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "japanese": "チョピン \r\nラマダ寺では、ランクを設けて修行を行つているようですが、その全てを終えると手に入るアクセサリーがあるようです。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 435,
+      "file": "21/S2045.DAT",
+      "offset": "0x4964A",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "proposed": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "japanese": "チョピン \r\nただ、ラマダ寺でもらえるわけではないようですが・・・。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 436,
+      "file": "21/S2045.DAT",
+      "offset": "0x496A6",
+      "before": "초핀: 로맨싱 스톤을 찾았습니다. 토우빌, 유적 던전, 고겐 님, 마지막은 아크 님 부친께 있던 듯합니다.",
+      "proposed": "초핀: 로맨싱 스톤의 위치를 알아냈습니다. 토우빌, 유적 던전, 고겐 님, 마지막은 아크 님 부친께 있던 듯합니다.",
+      "japanese": "チョピン \r\nロマンシングストーンのある場所がわかりました。1つはスメリアのトウヴィル・1つは遺跡ダンジョン、1つはゴーゲン様が、最後の1つはアークさんの父上が持つてらつしゃつたみたいですね。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 300715,
+          "before": "dd04de08de26a130dd9a0da1",
+          "after": "d5de08de26a130dd9a0fa18e"
+        },
+        {
+          "at": 300728,
+          "before": "56dd2d2d070121a1833ddda7b3a18a",
+          "after": "1f36a1dd1e09dee82d070121a1833d"
+        },
+        {
+          "at": 300744,
+          "before": "09a1dd254fb3",
+          "after": "a7b3a18add09"
+        },
+        {
+          "at": 300751,
+          "before": "1cdda9a1dd2eb3a14504ddab26a10958a1dd2ea16cde89dd20a11fdd25a1de5b",
+          "after": "dd254fb3a11cdda9a1dd2eb3a14504ddab26a10958a1dd2ea16cde89dd20a11f"
+        },
+        {
+          "at": 300784,
+          "before": "1d070121a1a1a1a1a1",
+          "after": "25a1de5bdd1d070121"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 463,
+      "file": "22/S2046.DAT",
+      "offset": "0x485F4",
+      "before": "뭐, 무슨 무례한 짓을! 이분이 누군 아느냐.",
+      "proposed": "뭐, 무슨 무례한 짓을! 이분이 누군지 아느냐.",
+      "japanese": "な、何と無礼な!\r\nこちらの方をどなたと心得る。<CTRL:E4:3D><CTRL:E4:3D>",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 545,
+      "file": "22/S2052.DAT",
+      "offset": "0x47C8C",
+      "before": "아크: 하지만 그곳의 몬스터은 끝없이 나타나고 있습니다.",
+      "proposed": "아크: 하지만 그곳의 몬스터는 끝없이 나타나고 있습니다.",
+      "japanese": "ただ、あそこのモンスターは\r\nいくらでも出てきてますよ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 285585,
+          "before": "26",
+          "after": "06"
+        },
+        {
+          "at": 285590,
+          "before": "dd01a11edd7f1e1ca11f2d070121",
+          "after": "03a11edd7f1e1ca11f2d07012100"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 562,
+      "file": "22/S2053.DAT",
+      "offset": "0x47B0E",
+      "before": "국왕: 그럼, 방금 말한 성궤를 네가 찾아 주었으면 하는데...",
+      "proposed": "국왕: 그럼, 지난번에 꺼냈던 성궤 이야기를 마저 하자. 네가 찾아 주었으면 하는데...",
+      "japanese": "国王 \r\nでは、この聞話しかけた\r\n<G:90>聖柩<G:89>(せいひつ)を、おまえに\r\nさがしてもらおうと思うのじゃが・・。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 282624,
+          "before": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "after": "dd0b6add02a115dd49b3a104dd6a9b0ea1de47dee8dd25a1dd17dd9ea103492436a145dd24a1192821a17e0ca1dd5609a140614e3aa1190681212121"
+        },
+        {
+          "at": 282751,
+          "before": "00",
+          "after": "37"
+        },
+        {
+          "at": 293646,
+          "before": "dd0b6add02",
+          "after": "e281a1a1a1"
+        },
+        {
+          "at": 293652,
+          "before": "15dd49b3",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 293657,
+          "before": "dd29dd4a",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 293662,
+          "before": "1b53",
+          "after": "a1a1"
+        },
+        {
+          "at": 293665,
+          "before": "dd17dd9e36",
+          "after": "a1a1a1a1a1"
+        },
+        {
+          "at": 293671,
+          "before": "7e0c",
+          "after": "a1a1"
+        },
+        {
+          "at": 293674,
+          "before": "dd5609",
+          "after": "a1a1a1"
+        },
+        {
+          "at": 293678,
+          "before": "40614e3a",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 293683,
+          "before": "190681212121",
+          "after": "a1a1a1a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 0
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 574,
+      "file": "22/S2055.DAT",
+      "offset": "0x47A38",
+      "before": "국왕: 찬탈이라니. 이런 아이가 그런 말을...",
+      "proposed": "국왕: 찬탈이라니. 이런 아이가 그런 짓을...",
+      "japanese": "国王 \r\n乗つ取りとな。<CTRL:E4:3D>\r\nこのような子供がそのような・。",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 594,
+      "file": "22/S2055.DAT",
+      "offset": "0x481EC",
+      "before": "병사: 앗!",
+      "proposed": "병사: 예!",
+      "japanese": "兵士 \r\nはつ!",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 295409,
+          "before": "dda4a9",
+          "after": "97a9a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 601,
+      "file": "22/S2056.DAT",
+      "offset": "0x47AE6",
+      "before": "네. 아버지의 편지로 옛일을 쓴 전기가 있다는 것을 알게 되었습니다.",
+      "proposed": "네. 아버지의 편지로 옛일을 적은 고대의 기록이 있다는 것을 알게 되었습니다.",
+      "japanese": "はい\r\n父さんからの手紙で\r\n古(いにしえ)のこを書いた\r\n伝記があるこがわかりました",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 전기는 인물 생애 기록으로 읽힌다. 프로젝트 V345에서 대응 자료의 용어를 고대의 기록으로 확정한 사실이 있어 동일 대상인지 확인 후 정합화."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 640,
+      "file": "22/S205C.DAT",
+      "offset": "0x47DCC",
+      "before": "스메리아 왕: 대신 안델에게 속아 넘어간 것은 나였다.",
+      "proposed": "스메리아 왕: 대신 안델의 꾐에 넘어간 바로 나였다.",
+      "japanese": "スメリア王 \r\n大臣の\fアンデルに\f\r\nそそのかされた\fわしなのだ。",
+      "reasons": [
+        "missing glyphs ['꾐']: 스메리아 왕: 대신 안델의 꾐에 넘어간 바로 나였다.",
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 719,
+      "file": "31/S3012.DAT",
+      "offset": "0x48194",
+      "before": "초핀: 어느 나라든 언제든 몬스터과 싸울 수 있는 장소가 있습니다.",
+      "proposed": "초핀: 어느 나라든 언제든 몬스터와 싸울 수 있는 장소가 있습니다.",
+      "japanese": "チョピン \r\nどこの国にも、いつ行つてもモンスターのいる場所があります。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 284550,
+          "before": "dd99a11e",
+          "after": "4da11e8f"
+        },
+        {
+          "at": 284555,
+          "before": "05dd26a1dd3066dd26a1643002",
+          "after": "26a1dd3066dd26a164300288a1"
+        },
+        {
+          "at": 284569,
+          "before": "18a1dd14dd92a150",
+          "after": "14dd92a150a11f06"
+        },
+        {
+          "at": 284578,
+          "before": "1f06a156dd070ca11f2d070121",
+          "after": "56dd070ca11f2d070121000000"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 721,
+      "file": "31/S3012.DAT",
+      "offset": "0x4823C",
+      "before": "초핀: 그곳의 몬스터은 이야기가 진행되어도 강해지지 않으니, 수련할 사람의 수준에 맞춰 장소를 고르세요.",
+      "proposed": "초핀: 그곳의 몬스터는 이야기가 진행되어도 강해지지 않으니, 수련할 사람의 수준에 맞춰 장소를 고르세요.",
+      "japanese": "チョピン \r\nこの場所のモンスターはゲームが進んでも変わらないので、鍛えたい人のレベルに\r\n合わせて場所を選ベます。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 284429,
+          "before": "26",
+          "after": "06"
+        },
+        {
+          "at": 284431,
+          "before": "dd0149240ca1dd3fdd31731433a1dd282b",
+          "after": "0349240ca1dd3fdd31731433a1dd282b04"
+        },
+        {
+          "at": 284449,
+          "before": "04a1784e07b3a150ddc57da134dd220fa150dd6f0ea1ddb1deaca156dd0736a11c708c2c21",
+          "after": "a1784e07b3a150ddc57da134dd220fa150dd6f0ea1ddb1deaca156dd0736a11c708c2c2100"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 743,
+      "file": "31/S3013.DAT",
+      "offset": "0x48430",
+      "before": "승무원: 요도 증식하면 HP가 절반으로 줄지만, 처치했을 때 얻는 경험치는 그대로입니다",
+      "proposed": "승무원: 요수도 증식하면 HP가 절반으로 줄지만, 처치했을 때 얻는 경험치는 그대로입니다.",
+      "japanese": "乗員 \r\n妖樹も、ふえる時にHPが半分に\r\nなりますが、倒した時にもらえる\r\n経験値は変わりませんよ。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 妖樹(요수)에서 수가 빠져 요도로 변했다. 정식 몬스터명 표기 확인 후 반영."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 797,
+      "file": "31/S3014.DAT",
+      "offset": "0x47996",
+      "before": "|아라라토스 유적|미르마나의 이후|라마다 수행|그만",
+      "proposed": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "japanese": "<CTRL:E5:03>アララトスの遺跡ダンジョン\r\n<CTRL:E5:03>ミルマーナのその後\r\n<CTRL:E5:03>ラマダ寺での修行\r\n<CTRL:E5:03>やつっり、いいや。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 293308,
+          "before": "a150dd31a1",
+          "after": "34a150dd31"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 817,
+      "file": "31/S3014.DAT",
+      "offset": "0x48114",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "proposed": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "japanese": "<CTRL:E5:03>ラマダ寺の修行\r\n<CTRL:E5:03>ロマンシングストーン\r\n<CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89>\r\n<CTRL:E5:03>やつっりいいや。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 823,
+      "file": "31/S3014.DAT",
+      "offset": "0x4837E",
+      "before": "초핀: 소환수는 전부 여섯까지라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "proposed": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "japanese": "チョピン \r\n召喚獣は全部で6までなると聞いております。中には見つかりにくいものもいるようなのであちこち探してみて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 295820,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 829,
+      "file": "31/S3014.DAT",
+      "offset": "0x485F8",
+      "before": "초핀: 라마다사에서는 단계별 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "proposed": "초핀: 라마다사에서는 단계별 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "japanese": "チョピン \r\nラマダ寺では、ランクを設けて修行を行つているようですが、その全てを終えると手に入るアクセサリーがあるようです。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 830,
+      "file": "31/S3014.DAT",
+      "offset": "0x4866E",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "proposed": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "japanese": "チョピン \r\nただ、ラマダ寺でもらえるわけではないようですが・・・。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 831,
+      "file": "31/S3014.DAT",
+      "offset": "0x486CA",
+      "before": "초핀: 로맨싱 스톤을 찾았습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "proposed": "초핀: 로맨싱 스톤의 위치를 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "japanese": "チョピン \r\nロマンシングストーンのある場所がわかりました。1つはスメリアのトウヴィル\r\n1つはアララトスの遺跡ダンジョン、",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 296655,
+          "before": "dd04de08de26a130dd9a0da1",
+          "after": "d5de08de26a130dd9a0fa18e"
+        },
+        {
+          "at": 296668,
+          "before": "56dd2d2d070121a1833ddda7dd18a109dd05dd058330a18add09a1",
+          "after": "1f36a1dd1e09dee82d070121a1833ddda7dd18a1098f8f8330a18a"
+        },
+        {
+          "at": 296696,
+          "before": "254f0ea1191edf6bb3a1a1a1",
+          "after": "09a1dd254f0ea1191edf6bb3"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 848,
+      "file": "31/S3022.DAT",
+      "offset": "0x481CC",
+      "before": "아이: 아저씨, 저에게도 이야기하게 해 줘.",
+      "proposed": "아이: 할아버지, 나도 이야기하게 해 줘.",
+      "japanese": "子供 \r\nおじいちゃん、わたしにもおはなしさせてよ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 295372,
+          "before": "e2bab316e6013fa105a1",
+          "after": "0903dd02a17d096704b3"
+        },
+        {
+          "at": 295383,
+          "before": "a121",
+          "after": "1e33"
+        },
+        {
+          "at": 295386,
+          "before": "1a1b18a13f13a11ba1251d",
+          "after": "0349241941a12ba1ddea21"
+        },
+        {
+          "at": 295398,
+          "before": "21",
+          "after": "a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 891,
+      "file": "31/S3023.DAT",
+      "offset": "0x483BC",
+      "before": "남자: 토요케의 숲은 예전에는 베미의 숲이라 불렸고, 국민이 믿는 대상이었습니다만...",
+      "proposed": "남자: 토요케의 숲은 예전에는 은혜의 숲이라 불렸고, 국민의 신앙 대상이었습니다만...",
+      "japanese": "男 \r\nトヨーケの森は、かつては恵みの森とよばれ、国民の信こうの対しょうだつたのですが・・、",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 282773,
+          "before": "ddfedd2f0fa1dd97dd01",
+          "after": "26dd4b0fa1dd97038fa1"
+        },
+        {
+          "at": 282784,
+          "before": "05a1dd13dd9b1cb3a1dd0bddecdd01",
+          "after": "13dd9b1cb3a1dd0bddec0fa13edef9"
+        },
+        {
+          "at": 282800,
+          "before": "dddb06a1378bdd01612d070138212121",
+          "after": "378b03612d0701382121210000000000"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 908,
+      "file": "31/S3024.DAT",
+      "offset": "0x46096",
+      "before": "병사|20년 전|스메리아와 전쟁",
+      "proposed": "병사|이 나라는 20년 전에|스메리아와 전쟁했지.",
+      "japanese": "兵士 \r\nこの国は20年前、スメリアと戦争してたんだ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 282752,
+          "before": "e00ee0a59ce0bddfac9ce03be0a0e0429ce06b9ce0f1e0d90f",
+          "after": "8234a103a11e8f06a10b91dda5a14f0e000000000000000000"
+        },
+        {
+          "at": 282879,
+          "before": "13",
+          "after": "00"
+        },
+        {
+          "at": 286870,
+          "before": "8234",
+          "after": "e282"
+        },
+        {
+          "at": 286874,
+          "before": "0b91dda5a14f",
+          "after": "30dd2c2e0988"
+        },
+        {
+          "at": 286882,
+          "before": "30dd2c2e0988a14fde31",
+          "after": "4fde31dd0f0421a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 1
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 913,
+      "file": "31/S3024.DAT",
+      "offset": "0x46262",
+      "before": "노인|괴물 뒤론|군 식량을 사야 해.",
+      "proposed": "노인|괴물이 나타난 뒤론|군에서 식량을 사야 해.",
+      "japanese": "老人 \r\nモンスターが出てから、\r\n食ベ物は軍からかわなきゃならん。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 282880,
+          "before": "e00ee0a59ce0cbe0419ce0d6e09ee098e09c9cdfa9e07fe0bb0f9ce907e02a9cdfd59ce0cee0bf9ce0b2e096e9019ce0cae099e047",
+          "after": "dd5735a1dd756d03a11edd7fdd6a000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283007,
+          "before": "32",
+          "after": "01"
+        },
+        {
+          "at": 287330,
+          "before": "dd5735",
+          "after": "e283a1"
+        },
+        {
+          "at": 287335,
+          "before": "dd756d",
+          "after": "4bdf30"
+        },
+        {
+          "at": 287339,
+          "before": "4bdf30",
+          "after": "7c0e25"
+        },
+        {
+          "at": 287344,
+          "before": "7ca1ddb5d20da13449a12b21",
+          "after": "ddb5d20da13449a12b21a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 2
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 955,
+      "file": "31/S3024.DAT",
+      "offset": "0x46FFA",
+      "before": "남자: 토요케의 숲은 예전에는 베미의 숲이라 불렸고, 국민이 믿는 대상이었습니다만...",
+      "proposed": "남자: 토요케의 숲은 예전에는 은혜의 숲이라 불렸고, 국민의 신앙 대상이었습니다만...",
+      "japanese": "男 \r\nトヨーケの森は、かつては恵みの森とよばれ、国民の信こうの対しょうだつたのですが・・、",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283008,
+          "before": "e00ee0a59ce0d6e09ee098e09c9ce0ede0a6e0479ce057dfa69cdfa4e0369ce0f2e026e0bde0da0f00000000000000000000000000000000000000",
+          "after": "dd3d28dd02a1832cddf80fa1dd9726a1974f0e06a126dd4b0fa1dd97038fa1dd13dd9b1cb3a1dd0bddec0fa13edef9a1378b03612d070138212121"
+        },
+        {
+          "at": 283135,
+          "before": "24",
+          "after": "35"
+        },
+        {
+          "at": 290811,
+          "before": "86e60130defa30defa02df68132112071d13663b02df68",
+          "after": "84a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+        },
+        {
+          "at": 290837,
+          "before": "232133defa02defa3c2c02defa1b042c",
+          "after": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+        },
+        {
+          "at": 290855,
+          "before": "1a02112a20defadefa21",
+          "after": "a1a1a1a1a1a1a1a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 3
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1006,
+      "file": "32/S3051.DAT",
+      "offset": "0x48E70",
+      "before": "이근처에서사라졌는데 말이야...",
+      "proposed": "이 근처에서 사라졌는데 말이야...",
+      "japanese": "このあたりで\r\n消えたんだけどなっ・・。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 298608,
+          "before": "dd01",
+          "after": "03a1"
+        },
+        {
+          "at": 298616,
+          "before": "34dd05",
+          "after": "a1348f"
+        },
+        {
+          "at": 298625,
+          "before": "dd0149",
+          "after": "034921"
+        },
+        {
+          "at": 298630,
+          "before": "21",
+          "after": "a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1028,
+      "file": "32/S3061.DAT",
+      "offset": "0x480EC",
+      "before": "은혜의 정령: 인간의 미래를 없애지 않기 위해서요.",
+      "proposed": "은혜의 정령: 인간의 미래를 지키기 위해서요.",
+      "japanese": "恵みの精霊 \r\n人の未来を無くさないための。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 284053,
+          "before": "71de0f04",
+          "after": "04ddb324"
+        },
+        {
+          "at": 284058,
+          "before": "7824a18e2b252c21",
+          "after": "8e2b252c21000000"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1036,
+      "file": "32/S3061.DAT",
+      "offset": "0x48396",
+      "before": "은혜의 정령: 당신의 아버지가 길잡이를 보여 줄 겁니다.",
+      "proposed": "은혜의 정령: 당신의 아버지가 나아갈 길을 알려 줄 겁니다.",
+      "japanese": "恵みの精霊 \r\nあなたのお父さんが、道標(みちしるベ)を示すでしょう。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 284416,
+          "before": "e0bfeacce09b9ce0ebe0eedf809ce029e098e07f9ce029e0d69ce06ae0889ce0bd9ce05be09ae9",
+          "after": "26dd4b0fa13151dd02a1dd1c3e0fa10967040ca11e09dda6a1dd950da1dd1e3ca1dd81a1ddee07"
+        },
+        {
+          "at": 284456,
+          "before": "9cdfa0e0c8e02fe0a09ce901e0c29ce013e09f9ce0e6e04ae0c4e07f9ce0cadffde0a2e0660f",
+          "after": "2100000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 284543,
+          "before": "37",
+          "after": "25"
+        },
+        {
+          "at": 295830,
+          "before": "26dd4b0f",
+          "after": "e28fa1a1"
+        },
+        {
+          "at": 295835,
+          "before": "3151dd02",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 295840,
+          "before": "dd1c3e0f",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 295845,
+          "before": "0967040c",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 295850,
+          "before": "dd95de10dd0136",
+          "after": "a1a1a1a1a1a1a1"
+        },
+        {
+          "at": 295858,
+          "before": "601a",
+          "after": "a1a1"
+        },
+        {
+          "at": 295861,
+          "before": "dd81",
+          "after": "a1a1"
+        },
+        {
+          "at": 295864,
+          "before": "ddee070121",
+          "after": "a1a1a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 14
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1048,
+      "file": "32/S3063.DAT",
+      "offset": "0x47D88",
+      "before": "은혜의 정령: 그는 그곳에서 너희의 역사를 계속 지켜보고 있었단다.",
+      "proposed": "은혜의 정령: 그는 그곳에서 당신들의 역사를 계속 지켜보고 있었어요.",
+      "japanese": "恵みの精霊 \r\n彼は、あそこで、あなたがたの歴史を\r\n見続けていたのです。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 같은 정령의 연속 존댓말 중 갑자기 너희/있었단다로 전환된다."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1054,
+      "file": "32/S3064.DAT",
+      "offset": "0x47D7E",
+      "before": "은혜의 정령: 마침내 싸움으로 인한 빼앗음을 낳습니다.",
+      "proposed": "은혜의 정령: 결국 서로 빼앗으려는 싸움을 낳습니다.",
+      "japanese": "恵みの精霊 \r\n遂には争いによる奪いあいを生みます。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 282634,
+          "before": "45de0647",
+          "after": "dd47dd0b"
+        },
+        {
+          "at": 282639,
+          "before": "dd14dd704e",
+          "after": "25d5a1de13"
+        },
+        {
+          "at": 282645,
+          "before": "04a13553",
+          "after": "a44e3c06"
+        },
+        {
+          "at": 282650,
+          "before": "de13",
+          "after": "dd14"
+        },
+        {
+          "at": 282653,
+          "before": "a48d0da1de6d2d070121",
+          "after": "700da1de6d2d07012100"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1075,
+      "file": "32/S3068.DAT",
+      "offset": "0x47F86",
+      "before": "은혜의 정령: 몸소 몸으로 알게 된 경험을 살려 올바른 길을 찾아 나아가세요.",
+      "proposed": "은혜의 정령: 몸소 겪은 경험을 살려 올바른 길을 찾아 나아가세요.",
+      "japanese": "恵みの精霊 \r\n身を持つて知つた経験を生かして\r\n正しい道をみつけて進みなさい。",
+      "reasons": [
+        "missing glyphs ['겪']: 은혜의 정령: 몸소 겪은 경험을 살려 올바른 길을 찾아 나아가세요."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1084,
+      "file": "4/S4011.DAT",
+      "offset": "0x4879C",
+      "before": "병사1: 어떻게 나온 거지, 죽을 곳을 찾았군.",
+      "proposed": "병사1: 어떻게 나온 거지, 죽다 만 놈이.",
+      "japanese": "兵士1 \r\nどうやつて出て来た、死にぞこないが。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283394,
+          "before": "a14add02",
+          "after": "4add02a1"
+        },
+        {
+          "at": 283413,
+          "before": "0d",
+          "after": "01"
+        },
+        {
+          "at": 283415,
+          "before": "dd150da1dd56dd2d7c21",
+          "after": "38a1dd84032100000000"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1089,
+      "file": "4/S4011.DAT",
+      "offset": "0x48936",
+      "before": "병사1: 좋다! 인간의 저력을 분명히 보여 주마.",
+      "proposed": "원본 확인 후 후보: 병사1: 좋다! 인간의 어리석음을 똑똑히 알려 주마.",
+      "japanese": "兵士1 \r\nよかろう!人聞の底力さを\r\n思い知らせてやろう。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 몬스터 병사가 인간에게 하는 위협인데 한국어는 인간의 저력을 보여 준다고 한다. 추출 底力さ 자체도 비정상적이므로 원본 확인이 먼저다.",
+        "missing glyphs ['똑']: 원본 확인 후 후보: 병사1: 좋다! 인간의 어리석음을 똑똑히 알려 주마."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1101,
+      "file": "4/S4011.DAT",
+      "offset": "0x48E64",
+      "before": "성의 병사들까지 몬스터로 둔갑하다니...",
+      "proposed": "몬스터가 성의 병사로까지 위장해 있다니...",
+      "japanese": "城の兵隊にまでモンスターが\r\n化けてるなんて・・。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 298596,
+          "before": "dd170fa182340a3b04a1643002dd04a1ea",
+          "after": "6430020ca1dd170fa18234d53b04a18e56"
+        },
+        {
+          "at": 298614,
+          "before": "de0c190107",
+          "after": "a11f010721"
+        },
+        {
+          "at": 298621,
+          "before": "21",
+          "after": "a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1104,
+      "file": "4/S4011.DAT",
+      "offset": "0x48F6C",
+      "before": "나는 변하지 않는 편이 좋아.",
+      "proposed": "원본 확인 후 후보: 나와는 엮이지 않는 게 좋아.",
+      "japanese": "俺にはかわらない方がいい。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 앞의 '너희와는 관계없어', 뒤의 감사 대사상 경고로 읽힌다. 추출 俺にはかわらない는 関わらない 누락 가능성이 있어 확정 불가.",
+        "missing glyphs ['엮']: 원본 확인 후 후보: 나와는 엮이지 않는 게 좋아."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1122,
+      "file": "4/S4022.DAT",
+      "offset": "0x47AFA",
+      "before": "두목과 부하들의 목숨을 담보로 난 이 일을 하는 거야.",
+      "proposed": "두목과 부하들을 살려 준다기에 이렇게 잡혀 있는 거다.",
+      "japanese": "親分と弟分どもの命と\r\n引き替えに\r\n俺はこうしてるんだ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283393,
+          "before": "33de220da1deb860d5a1",
+          "after": "a23ca1dd6f01240ea103"
+        },
+        {
+          "at": 283404,
+          "before": "6aa10300000000",
+          "after": "4d41a1de10de4d"
+        },
+        {
+          "at": 293636,
+          "before": "0f",
+          "after": "0d"
+        },
+        {
+          "at": 293649,
+          "before": "6b0d",
+          "after": "1f06"
+        },
+        {
+          "at": 293652,
+          "before": "1906a1324921",
+          "after": "320121a1a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1125,
+      "file": "4/S4022.DAT",
+      "offset": "0x47BF6",
+      "before": "병사2: 그런데 정말 잘 타는군.",
+      "proposed": "병사2: 그런데 정말 잘 탔지.",
+      "japanese": "兵士2 \r\nしかし、よく燃えたなっ。",
+      "reasons": [
+        "missing glyphs ['탔']: 병사2: 그런데 정말 잘 탔지."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1131,
+      "file": "4/S4022.DAT",
+      "offset": "0x47E1E",
+      "before": "두목님... 동생분들...",
+      "proposed": "두목님... 아우들...",
+      "japanese": "親分・・・。\f\r\n弟分たち・・・。",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1139,
+      "file": "4/S4031.DAT",
+      "offset": "0x47C0A",
+      "before": "아버지로부터야...",
+      "proposed": "아버지가 보내셨어...",
+      "japanese": "父さんからだ・・。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 284800,
+          "before": "e0bd9ce05be09ae0ab9ce0bde044e0c29ce0dce0259ce0ebe0eee03be09b9ce0bde088e0ab9ce0b1e0a29cdfb2e0dfe04c9ce0e99cdf45e0c10f",
+          "after": "0967040ca16047ddd514212121000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 284927,
+          "before": "27",
+          "after": "09"
+        },
+        {
+          "at": 293898,
+          "before": "096704dd046c0249212121",
+          "after": "e292a1a1a1a1a1a1a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 17
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1141,
+      "file": "4/S4031.DAT",
+      "offset": "0x47C86",
+      "before": "네 소문이 내게 들려왔다. 그로부터도 벌써 10년, 빠르구나.",
+      "proposed": "네 소문이 내게 들려왔다. 그로부터 벌써 10년, 세월이 빠르구나.",
+      "japanese": "おまえのうわさが私のもとにとどいた。\r\nあれからもう10年、早いものだ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 284294,
+          "before": "dd01a14741a10a3cdd880121a115dd046c0233a1dde4ddc7a14a91dda5b3a1de3570871e210000",
+          "after": "03a14741a10a3cdd880121a115d56c02a1dde4ddc7a14a91dda5b3a18cdee503a1de3570871e21"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1175,
+      "file": "4/S4032.DAT",
+      "offset": "0x483B0",
+      "before": "다른 곳에 가고 싶을 때는 별을 건너 오른쪽이 보이게 하면 돼.",
+      "proposed": "다른 곳에 가고 싶을 때는 다리를 건너 오른쪽으로 나가면 돼.",
+      "japanese": "別のところへ行きたいときは、はしをわたつてみぎがわからでるんだよ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 282898,
+          "before": "ddf30d",
+          "after": "012e36"
+        },
+        {
+          "at": 282911,
+          "before": "dd01",
+          "after": "4ed5"
+        },
+        {
+          "at": 282914,
+          "before": "60dd0141a1193aa1ddcc21",
+          "after": "1e0c3aa1ddcc2100000000"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1176,
+      "file": "4/S4032.DAT",
+      "offset": "0x4840E",
+      "before": "그러려나.",
+      "proposed": "나이 탓인가...",
+      "japanese": "としかのお。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: としかのお는 뒤 반복 1200 '요즘 잘 잊는다'와 같은 나이 농담. '그러려나'는 대상을 지운다.",
+        "missing glyphs ['탓']: 나이 탓인가..."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1177,
+      "file": "4/S4032.DAT",
+      "offset": "0x4844E",
+      "before": "아니잖아.",
+      "proposed": "나이 탓이 아니잖아.",
+      "japanese": "としじゃねえよ。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: としじゃねえよ에서 나이 논박이 빠졌다. 1176과 소비 연결 확인 필요.",
+        "missing glyphs ['탓']: 나이 탓이 아니잖아."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1179,
+      "file": "4/S4032.DAT",
+      "offset": "0x484CE",
+      "before": "그렇다네.",
+      "proposed": "나이 탓이지.",
+      "japanese": "としじゃよ。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: としじゃよ의 나이 의미가 빠짐. 1176..1179 소비 대화 분기 확인 필요.",
+        "missing glyphs ['탓']: 나이 탓이지."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1181,
+      "file": "4/S4033.DAT",
+      "offset": "0x47CDC",
+      "before": "다음 정령은 그레이시누에 있다. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "proposed": "다음 정령은 그레이시느에 있다. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "japanese": "<G:90>次の精霊はグレイシーヌに<G:89>\r\nよみますか？\r\n<CTRL:E5:03>よむ\r\n<CTRL:E5:03>よまない",
+      "reasons": [
+        "선택지 항목/현재 문자열 영역 대응 검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1203,
+      "file": "4/S4033.DAT",
+      "offset": "0x4848C",
+      "before": "아니잖아.",
+      "proposed": "나이 탓이 아니잖아.",
+      "japanese": "としじゃねえよ。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 1200의 나이/기억력 농담에 대한 답인데 주제가 없어졌다.",
+        "missing glyphs ['탓']: 나이 탓이 아니잖아."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1205,
+      "file": "4/S4033.DAT",
+      "offset": "0x4850C",
+      "before": "내 조사는 도움이 되지. 새로 발견한 몬스터는 되도록 조사하도록 하게.",
+      "proposed": "내 도감은 도움이 되지. 새로 발견한 몬스터는 되도록 조사하도록 하게.",
+      "japanese": "わしのすかんは役に立つぞ。\r\nあたらしく見つけたモンスターはできるだけ<G:90>調ベる<G:89>ようにするこつた。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 296206,
+          "before": "903406a133dd70dd01",
+          "after": "33dd7726a133dd7003"
+        },
+        {
+          "at": 296222,
+          "before": "dd04a1dd0ede0a53a164300206a17333dd72a190341933dd72a1194121",
+          "after": "d5a1dd0ede0a53a164300206a17333dd72a190341933dd72a1194121a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1211,
+      "file": "4/S4033.DAT",
+      "offset": "0x48712",
+      "before": "그런가. 전부 조사하면 뭔가 좋은 일이 있을지도 모르지.",
+      "proposed": "내가 알 게 뭐냐. 전부 조사하면 뭔가 좋은 일이 있을지도 모르지.",
+      "japanese": "しつたことか。\r\nぜんぶしらベたら何かいいことがあるかもしれんぞ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 284160,
+          "before": "15dd2a0c21",
+          "after": "470ca1dd1e"
+        },
+        {
+          "at": 284166,
+          "before": "4f6ca19034193a",
+          "after": "41a1dd60dd5121"
+        },
+        {
+          "at": 284174,
+          "before": "ddf90ca1dd0d26",
+          "after": "4f6ca19034193a"
+        },
+        {
+          "at": 284182,
+          "before": "6bdd01",
+          "after": "ddf90c"
+        },
+        {
+          "at": 284186,
+          "before": "1f",
+          "after": "dd"
+        },
+        {
+          "at": 284188,
+          "before": "0433a15570042100000000000000",
+          "after": "26a16b03a11f0d0433a155700421"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1215,
+      "file": "4/S4034.DAT",
+      "offset": "0x47D30",
+      "before": "다음 정령은 카데르에게. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "proposed": "다음 정령은 카델에. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "japanese": "<G:90>次の精霊はカーデルに<G:89>\r\nよみますか？\r\n<CTRL:E5:03>よむ\r\n<CTRL:E5:03>よまない",
+      "reasons": [
+        "선택지 항목/현재 문자열 영역 대응 검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1245,
+      "file": "4/S4035.DAT",
+      "offset": "0x47D30",
+      "before": "다음 정령은 아리바샤에게. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "proposed": "다음 정령은 아리바샤에. 읽으시겠습니까?|읽는다|읽지 않는다",
+      "japanese": "<G:90>次の精霊はアリバーシャに<G:89>\r\nよみますか？\r\n<CTRL:E5:03>よむ\r\n<CTRL:E5:03>よまない",
+      "reasons": [
+        "선택지 항목/현재 문자열 영역 대응 검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1279,
+      "file": "4/S4036.DAT",
+      "offset": "0x48010",
+      "before": "그런 것에 자세한 동료가 있으면 좋았을 텐데.",
+      "proposed": "그런 것에 밝은 동료가 있으면 좋았을 텐데.",
+      "japanese": "そういうのに詳しい仲聞がいればよかつたのに。",
+      "reasons": [
+        "missing glyphs ['밝']: 그런 것에 밝은 동료가 있으면 좋았을 텐데."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1292,
+      "file": "4/S4036.DAT",
+      "offset": "0x483DA",
+      "before": "(너무 떠들지 마.)",
+      "proposed": "(별로 말을 안 하네.)",
+      "japanese": "(あまりしゃベらないな)",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 285056,
+          "before": "e304e09b9ce0ebe0ee9ce0bde0dae0ac9ce0bee06ae0310f0f0f",
+          "after": "a0ddf3d5a11b0da194a1197e219c000000000000000000000000"
+        },
+        {
+          "at": 285183,
+          "before": "12",
+          "after": "0b"
+        },
+        {
+          "at": 295898,
+          "before": "a0895f",
+          "after": "e294a1"
+        },
+        {
+          "at": 295902,
+          "before": "dde80a04",
+          "after": "a1a1a1a1"
+        },
+        {
+          "at": 295907,
+          "before": "45219c",
+          "after": "a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 19
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1313,
+      "file": "5/S5011.DAT",
+      "offset": "0x4815A",
+      "before": "장사가 뭐냐고, 이 자식아! 한 대 맞아 볼래, 이 자식아!",
+      "proposed": "장사라니, 이 자식아! 혼 좀 나고 싶냐!",
+      "japanese": "商売とは何だ、てめえ!\r\n<CTRL:E4:3D><CTRL:E4:3D><CTRL:E4:3D>ひい目あいてえか、こらっ!<CTRL:E4:3D>",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: '장사가 뭐냐고'는 장사의 정의를 묻는 듯하다. 위협 끝의 이 자식아 중복도 불필요.",
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1336,
+      "file": "5/S5012.DAT",
+      "offset": "0x4842E",
+      "before": "그러고 보니 그레이시느의 라마다에는 신기한 힘을 지닌 일단이 있다는 이야기가 있어.",
+      "proposed": "그러고 보니 그레이시느의 라마다에는 신기한 힘을 지닌 집단이 있다는 이야기가 있어.",
+      "japanese": "そういえば\r\nグレイシーヌのラマダには\r\n不思議な力を持つ一団が\r\nいると言う話だ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 282634,
+          "before": "dd0129dd990fa1dd0545010e06a13e2453",
+          "after": "03294d0fa18f45010e06a13e2453a1740d"
+        },
+        {
+          "at": 282652,
+          "before": "740da104",
+          "after": "04dddfa1"
+        },
+        {
+          "at": 282657,
+          "before": "dfa16bdd35dd",
+          "after": "e2dd3503a11f"
+        },
+        {
+          "at": 282664,
+          "before": "a11f0106a1dd0149240ca11f1421",
+          "after": "06a10349240ca11f142100000000"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1387,
+      "file": "5/S5013.DAT",
+      "offset": "0x4895E",
+      "before": "|아라라토스 유적|미르마나의 이후|라마다 수행|그만",
+      "proposed": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "japanese": "<CTRL:E5:03>アララトスの遺跡ダンジョン\r\n<CTRL:E5:03>ミルマーナのその後\r\n<CTRL:E5:03>ラマダ寺での修行\r\n<CTRL:E5:03>やつっり、いいや。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 297348,
+          "before": "a150dd31a1",
+          "after": "34a150dd31"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1407,
+      "file": "5/S5013.DAT",
+      "offset": "0x490DC",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "proposed": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "japanese": "<CTRL:E5:03>ラマダ寺の修行\r\n<CTRL:E5:03>ロマンシングストーン\r\n<CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89>\r\n<CTRL:E5:03>やつっりいいや。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 1409,
+      "file": "5/S5013.DAT",
+      "offset": "0x491BA",
+      "before": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "proposed": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클인 만큼 말이지요...",
+      "japanese": "チョピン \r\nここでは、あるアイテムが手に入ります。ストーンサークルだけに・・。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: だけに는 스톤(돌) 아이템을 암시하는 말장난으로 읽힌다. '스톤 서클에서만'은 독점 획득장소 주장으로 바뀐다."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1413,
+      "file": "5/S5013.DAT",
+      "offset": "0x49346",
+      "before": "초핀: 소환수는 전부 여섯까지라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "proposed": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "japanese": "チョピン \r\n召喚獣は全部で6までなると聞いております。中には見つかりにくいものもいるようなのであちこち探してみて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 299860,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1419,
+      "file": "5/S5013.DAT",
+      "offset": "0x495C0",
+      "before": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "proposed": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "japanese": "チョピン \r\nラマダ寺では、ランクを設けて修行を行つているようですが、その全てを終えると手に入るアクセサリーがあるようです。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 1420,
+      "file": "5/S5013.DAT",
+      "offset": "0x49636",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "proposed": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "japanese": "チョピン \r\nただ、ラマダ寺でもらえるわけではないようですが・・・。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 1421,
+      "file": "5/S5013.DAT",
+      "offset": "0x49692",
+      "before": "초핀: 로맨싱 스톤을 찾았습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "proposed": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "japanese": "チョピン \r\nロマンシングストーンのある場所がわかりました。1つはスメリアのトウヴィル\r\n1つはアララトスの遺跡ダンジョン、",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 300695,
+          "before": "dd04de08de26a130dd9a0da1dd56",
+          "after": "d5de08de26a130dd9a03a11f06a1"
+        },
+        {
+          "at": 300710,
+          "before": "2d2d070121a1833ddda7dd18",
+          "after": "150da1dd1e09dee82d070121"
+        },
+        {
+          "at": 300723,
+          "before": "09dd05dd058330a18add09a1dd254f0e",
+          "after": "833ddda7dd18a1098f8f8330a18add09"
+        },
+        {
+          "at": 300740,
+          "before": "191edf6bb3a1a1a1a1a1",
+          "after": "dd254f0ea1191edf6bb3"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1427,
+      "file": "5/S5021.DAT",
+      "offset": "0x47A04",
+      "before": "여기는 3천 년 전 대붕괴 뒤에 사람이 처음으로 거리를 만들고, 그것이 크게 발전한 곳이야.",
+      "proposed": "여기는 3천 년 전 대붕괴 뒤 인간이 처음 세운 마을이 커져서 생긴 곳이야.",
+      "japanese": "ここは3000年前\r\n大崩壊(だいほうかい)の後\r\n人が最初に街を作り\r\nそれが大きくなりできたところ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 293380,
+          "before": "e28313279191918678e601aadefa",
+          "after": "1a2406a127dde7a1dda5a14fa137"
+        },
+        {
+          "at": 293395,
+          "before": "faa0a105defa2c12059c0285e6011e20defadefa18defaa1defa09e601592320aa5a4ca109115a1a",
+          "after": "ecdd75a14ba135dd1b03a1dd8f8da18c86a1450d03a1ddf6dd6325a1dd36ddfba1dd15034921a1a1"
+        },
+        {
+          "at": 293436,
+          "before": "3c9321",
+          "after": "a1a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1467,
+      "file": "5/S5023.DAT",
+      "offset": "0x47A96",
+      "before": "값이 될 만한 이야기인가?",
+      "proposed": "뭔가 돈이 될 만한 이야기인가?",
+      "japanese": "何か金になる話か？",
+      "reasons": [
+        "missing glyphs ['돈']: 뭔가 돈이 될 만한 이야기인가?"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1473,
+      "file": "5/S5024.DAT",
+      "offset": "0x478E8",
+      "before": "뭔 소리야? 이래선 말이 안 되잖아.",
+      "proposed": "무슨 소리야. 이래서야 이야기가 진전이 없잖아.",
+      "japanese": "何言つてんだ。\r\n話が進まねえだろう。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 282624,
+          "before": "ddf9a1dd072e49d1a103dd12dd53a11b",
+          "after": "5fdda0a1dd072e4921a103dd122549a1"
+        },
+        {
+          "at": 282641,
+          "before": "a194a173",
+          "after": "49240ca1"
+        },
+        {
+          "at": 282646,
+          "before": "bc0921000000000000",
+          "after": "3f4f03a171ddbc0921"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1481,
+      "file": "5/S5025.DAT",
+      "offset": "0x47CE0",
+      "before": "너, 아버지잖아!!",
+      "proposed": "원본/명칭 확인 후 후보: 너, 오톤이구나!!",
+      "japanese": "おまえ、オトンじゃな!!",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 곧 수집품이 늘었다고 하고 촌가라 복제 모습이 나타나는 1478..1483 맥락. オトン을 실제 부친 '아버지'로 옮겼는지 소환수명 확인 필요.",
+        "missing glyphs ['/']: 원본/명칭 확인 후 후보: 너, 오톤이구나!!"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1482,
+      "file": "5/S5025.DAT",
+      "offset": "0x47D46",
+      "before": "내 집에 아버지가 머물러 있다니...",
+      "proposed": "원본/명칭 확인 후 후보: 내 집에 오톤이 눌러살고 있었다니...",
+      "japanese": "わしの家にオトンが住み着いとるとは・・・。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 1481과 같은 대상. 아버지라고 확정하기 어려운 몬스터 수집 문맥.",
+        "missing glyphs ['/']: 원본/명칭 확인 후 후보: 내 집에 오톤이 눌러살고 있었다니..."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1521,
+      "file": "6/S6011.DAT",
+      "offset": "0x47FFC",
+      "before": "촌가라, 그 수상한 일행에 관해서 가르쳐 줄 수 없나?",
+      "proposed": "촌가라, 그 신기한 집단에 관해서 가르쳐 줄 수 없나?",
+      "japanese": "チョンガラ、例の不思議な一団にかして教えてくれないか？",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 1336의 신기한 힘을 가진 일단을 이어 가리키는데 '수상한 일행'은 의심받는 여행객으로 의미가 바뀐다."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1551,
+      "file": "6/S6013.DAT",
+      "offset": "0x48290",
+      "before": "대지의 돌... 서방의 카데르 땅에 봉인된 바람의 힘.",
+      "proposed": "대지의 돌... 서방의 카델 땅에 봉인된 바람의 힘.",
+      "japanese": "地の石 \r\n<CTRL:E4:3D>\f・\f・\f・\f西<CTRL:E4:15>方<CTRL:E4:15>の<CTRL:E4:3D>・\fカー<CTRL:E4:15>デ<CTRL:E4:15>ルの<CTRL:E4:3D>・\f地に\r\n<CTRL:E4:3D>・\f封<CTRL:E4:15>じ<CTRL:E4:3D>込<CTRL:E4:15>め<CTRL:E4:15>ら<CTRL:E4:15>れ<CTRL:E4:15>し<CTRL:E4:3D>・<CTRL:E4:15>風の<CTRL:E4:3D>力<CTRL:E4:3D>。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 1217 등 カーデル의 카델과 이 행 카데르 불일치. 승인 기준 최종 대조 필요.",
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1552,
+      "file": "6/S6013.DAT",
+      "offset": "0x4834E",
+      "before": "카데르라면 해마다 무투 대회가 있고, 그 상품이 바람의 오브라는 것이었던 걸로 기억하는데?",
+      "proposed": "카델이라면 해마다 무투 대회가 있고, 그 상품이 바람의 오브라는 것이었던 걸로 기억하는데?",
+      "japanese": "カーデルなら、毎年武闘大会があつて、そこの賞品が\r\n<G:90>風のオーフ<G:89>というものだつたように記憶しておるが？",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 1217 카델과 카데르 불일치. 승인 기준 최종 대조 필요."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1597,
+      "file": "6/S6014.DAT",
+      "offset": "0x4890A",
+      "before": "|아라라토스 유적|미르마나의 이후|라마다 수행|그만",
+      "proposed": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "japanese": "<CTRL:E5:03>アララトスの遺跡ダンジョン\r\n<CTRL:E5:03>ミルマーナのその後\r\n<CTRL:E5:03>ラマダ寺での修行\r\n<CTRL:E5:03>やつっり、いいや。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 297264,
+          "before": "a150dd31a1",
+          "after": "34a150dd31"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1617,
+      "file": "6/S6014.DAT",
+      "offset": "0x49088",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "proposed": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "japanese": "<CTRL:E5:03>ラマダ寺の修行\r\n<CTRL:E5:03>ロマンシングストーン\r\n<CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89>\r\n<CTRL:E5:03>やつっりいいや。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 1619,
+      "file": "6/S6014.DAT",
+      "offset": "0x49166",
+      "before": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "proposed": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클인 만큼 말이지요...",
+      "japanese": "チョピン \r\nここでは、あるアイテムが手に入ります。ストーンサークルだけに・・。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 1409와 같은 원문. 스톤 말장난을 독점 장소로 옮긴 후보."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1623,
+      "file": "6/S6014.DAT",
+      "offset": "0x492F2",
+      "before": "초핀: 소환수는 전부 여섯까지라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "proposed": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "japanese": "チョピン \r\n召喚獣は全部で6までなると聞いております。中には見つかりにくいものもいるようなのであちこち探してみて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 299776,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1629,
+      "file": "6/S6014.DAT",
+      "offset": "0x4956C",
+      "before": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "proposed": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "japanese": "チョピン \r\nラマダ寺では、ランクを設けて修行を行つているようですが、その全てを終えると手に入るアクセサリーがあるようです。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 1630,
+      "file": "6/S6014.DAT",
+      "offset": "0x495E2",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "proposed": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "japanese": "チョピン \r\nただ、ラマダ寺でもらえるわけではないようですが・・・。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 1631,
+      "file": "6/S6014.DAT",
+      "offset": "0x4963E",
+      "before": "초핀: 로맨싱 스톤을 찾았습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "proposed": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "japanese": "チョピン \r\nロマンシングストーンのある場所がわかりました。1つはスメリアのトウヴィル\r\n1つはアララトスの遺跡ダンジョン、",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 300611,
+          "before": "dd04de08de26a130dd9a0da1dd56",
+          "after": "d5de08de26a130dd9a03a11f06a1"
+        },
+        {
+          "at": 300626,
+          "before": "2d2d070121a1833ddda7dd18",
+          "after": "150da1dd1e09dee82d070121"
+        },
+        {
+          "at": 300639,
+          "before": "09dd05dd058330a18add09a1dd254f0e",
+          "after": "833ddda7dd18a1098f8f8330a18add09"
+        },
+        {
+          "at": 300656,
+          "before": "191edf6bb3a1a1a1a1a1",
+          "after": "dd254f0ea1191edf6bb3"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1640,
+      "file": "6/S6022.DAT",
+      "offset": "0x47A9C",
+      "before": "동료에게 피해를줄 수 있는 모양이야.",
+      "proposed": "원본 확인 후 후보: 멀리 떨어진 상대에게도 피해를 줄 수 있다고 하네.",
+      "japanese": "連れた者にダメージを\r\n与えることができるらしい。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 기가 원거리 공격인 설명과 이어진다. 추출 連れた는 離れた 오독 의심. 동료 공격 설명으로 확정하면 안 된다.",
+        "missing glyphs ['멀']: 원본 확인 후 후보: 멀리 떨어진 상대에게도 피해를 줄 수 있다고 하네."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1650,
+      "file": "6/S6031.DAT",
+      "offset": "0x47BE6",
+      "before": "우리조차 돌아온 적 없는 라마다 산에 들어가려 하다니.",
+      "proposed": "원본 확인 후 후보: 우리조차 가 본 적 없는 라마다 산에 들어가려 하다니.",
+      "japanese": "我々でさえ帰つたことのない\r\nラマダ山に入ろうとは。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 추출 帰ったことのない와 현재 '돌아온 적 없는'은 살아 있는 화자의 산 경험 설명으로 이상하다. 登った 등 추출오류 가능성 확인 필요."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1658,
+      "file": "6/S6032.DAT",
+      "offset": "0x47AF8",
+      "before": "아무것도 보이지 않는다고 생각하는 거야? 더러운 짓은 그만두세요.",
+      "proposed": "우리가 아무것도 모르는 줄 알아? 꼴사나운 짓은 그만둬.",
+      "japanese": "何もみえてないと思つているの？みつともないまねは\r\nおよしなさい。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 한 문장에서 생각하는 거야/그만두세요가 섞임. 거울로 정체를 폭로하는 다음 대사와 연결.",
+        "missing glyphs ['꼴']: 우리가 아무것도 모르는 줄 알아? 꼴사나운 짓은 그만둬."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1676,
+      "file": "6/S6051.DAT",
+      "offset": "0x47AB4",
+      "before": "여기가 라마다사인가...",
+      "proposed": "여기가 라마다사인가...",
+      "japanese": "これがラマダ寺か・・。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 1698,
+      "file": "6/S6053.DAT",
+      "offset": "0x47D2E",
+      "before": "제자: 당신은 우리에게 자신의 잘못을 바로잡는 것을 두려워하지 않는 용기를 가르쳐 주셨습니다.",
+      "proposed": "제자: 스승님은 저희에게 자신의 잘못을 바로잡는 것을 두려워하지 않는 용기를 가르쳐 주셨습니다.",
+      "japanese": "弟子 \r\nあなたは我らに\r\n自分の聞違いを正すこを恐れない\r\n勇気を教えてくれました。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 282629,
+          "before": "dd1c3e26a13d2e0e41a1283e0fa1dd4fdd760da1dd08dd04de1006a1180da1dd213cdd681904a17806a1dd1a2436a10c70ddf1a140ddd52d0701210000",
+          "after": "3069dd2e26a1dd24dd430e41a1283e0fa1dd4fdd760da1dd08d5de1006a1180da1dd213cdd681904a17806a1dd1a2436a10c70ddf1a140ddd52d070121"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1703,
+      "file": "6/S6054.DAT",
+      "offset": "0x45002",
+      "before": "|초핀|초비|초스케|초카라",
+      "proposed": "|초핀|초빈|초스케|촌가라",
+      "japanese": "<CTRL:E5:03>チョピン\r\n<CTRL:E5:03>チョビン\r\n<CTRL:E5:03>チョースケ\r\n<CTRL:E5:03>チョンガラ",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 정답/오답 인명 구별 퀴즈인데 초비/초카라는 원래 명칭을 흐린다. 이전 축약 원인 미확인, 선택지 길이 검증 전 적용 불가.",
+        "missing glyphs ['빈']: |초핀|초빈|초스케|촌가라"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1706,
+      "file": "6/S6054.DAT",
+      "offset": "0x450F6",
+      "before": "|밀마|스메|아라라|카델",
+      "proposed": "|미르마나|스메리아|아라라토스|카델",
+      "japanese": "<CTRL:E5:03>ミルマーナ\r\n<CTRL:E5:03>スメリア\r\n<CTRL:E5:03>アララトス\r\n<CTRL:E5:03>カーデル",
+      "reasons": [
+        "no E2 slot remains in 6/S6054.DAT for row 1706"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1709,
+      "file": "6/S6054.DAT",
+      "offset": "0x451F4",
+      "before": "|아크|쿠쿠루|다다|헤모",
+      "proposed": "|아크|쿠쿠루|타이틀 로고|헤모지",
+      "japanese": "<CTRL:E5:03>アーク\r\n<CTRL:E5:03>ククル\r\n<CTRL:E5:03>タイトルロゴ\r\n<CTRL:E5:03>へモジー",
+      "reasons": [
+        "no E2 slot remains in 6/S6054.DAT for row 1709"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1712,
+      "file": "6/S6054.DAT",
+      "offset": "0x452F2",
+      "before": "|오카|야모|야오|시타",
+      "proposed": "|오카모토|야마모토|야마오키|야마시타",
+      "japanese": "<CTRL:E5:03>オカモト\r\n<CTRL:E5:03>ヤマモト\r\n<CTRL:E5:03>ヤマオキ\r\n<CTRL:E5:03>ヤマシタ",
+      "reasons": [
+        "no E2 slot remains in 6/S6054.DAT for row 1712"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1715,
+      "file": "6/S6054.DAT",
+      "offset": "0x453E6",
+      "before": "|예|아마|확실|고민",
+      "proposed": "|나온다|나올지도|나오겠지|고민",
+      "japanese": "<CTRL:E5:03>でる\r\n<CTRL:E5:03>でるかも\r\n<CTRL:E5:03>でるのでは\r\n<CTRL:E5:03>なやむ",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: でるのでは를 확실로 옮겨 추측을 확정으로 바꿨다. 선택지 장문 복원은 제약 확인 필요."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1721,
+      "file": "6/S6054.DAT",
+      "offset": "0x455E0",
+      "before": "|있음|없음|제작|여행",
+      "proposed": "|있다|없다|만들고 싶었다|가고 싶었다",
+      "japanese": "<CTRL:E5:03>ある\r\n<CTRL:E5:03>ない\r\n<CTRL:E5:03>作りたかつた\r\n<CTRL:E5:03>行きたかつた",
+      "reasons": [
+        "no E2 slot remains in 6/S6054.DAT for row 1721"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1724,
+      "file": "6/S6054.DAT",
+      "offset": "0x456DA",
+      "before": "|저|그|어|비밀",
+      "proposed": "|저거|그거|어느 거|비밀",
+      "japanese": "<CTRL:E5:03>あれ\r\n<CTRL:E5:03>それ\r\n<CTRL:E5:03>どれ\r\n<CTRL:E5:03>ないしょ",
+      "reasons": [
+        "no E2 slot remains in 6/S6054.DAT for row 1724"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1726,
+      "file": "6/S6054.DAT",
+      "offset": "0x45778",
+      "before": "라마다 승려: 라마다사의 문이 열렸을 때 안에 보이는 사람은 몇 명인가?",
+      "proposed": "라마다 승려: 라마다사의 문이 열렸을 때 안에 보이는 사람은 몇 명인가?",
+      "japanese": "ラマダ僧 \r\nラマダ寺でとびらが開いたときに中に見える人の数は？",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 1733,
+      "file": "6/S6054.DAT",
+      "offset": "0x459CA",
+      "before": "|황금|갈|빨강|누구?",
+      "proposed": "|노랑|사정상 갈색|실은 빨강|그게 누구?",
+      "japanese": "<CTRL:E5:03>きいろ\r\n<CTRL:E5:03>わけあつてちゃいろ\r\n<CTRL:E5:03>本当はあか\r\n<CTRL:E5:03>それはだれ？",
+      "reasons": [
+        "missing glyphs ['색']: |노랑|사정상 갈색|실은 빨강|그게 누구?"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1748,
+      "file": "6/S6054.DAT",
+      "offset": "0x45F6E",
+      "before": "환수의어금니를받았습니다.",
+      "proposed": "환수의 어금니를 받았습니다.",
+      "japanese": "<G:90>幻獣の牙<G:89>をもらいました。",
+      "reasons": [
+        "no E2 slot remains in 6/S6054.DAT for row 1748"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1776,
+      "file": "6/S6054.DAT",
+      "offset": "0x468D4",
+      "before": "라마다승려: 9번째 도전이군요. 그럼 이쯤에서 어떠십니까?",
+      "proposed": "라마다 승려: 9번째 도전이시군요. 그러면 이 정도는 어떻겠습니까?",
+      "japanese": "ラマダ僧 \r\n9度目の挑戦ですね。それでは、これくらいのところでどうでしょうか？",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 288980,
+          "before": "dd054501",
+          "after": "8f4501a1"
+        },
+        {
+          "at": 288990,
+          "before": "dd3edd7ea1334fdd017c2c21a115dd49",
+          "after": "9b11a1334f03297c2c21a115203aa103"
+        },
+        {
+          "at": 289007,
+          "before": "dd01de9c0e25a114dde85d073bdd03",
+          "after": "313306a114dd44542d073bd1a1a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1832,
+      "file": "7/S7012.DAT",
+      "offset": "0x48402",
+      "before": "|아라라토스 유적|미르마나의 이후|라마다 수행|그만",
+      "proposed": "|아라라토스 유적|미르마나의 이후|라마다사 수행|그만",
+      "japanese": "<CTRL:E5:03>アララトスの遺跡ダンジョン\r\n<CTRL:E5:03>ミルマーナのその後\r\n<CTRL:E5:03>ラマダ寺での修行\r\n<CTRL:E5:03>やつっり、いいや。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 295976,
+          "before": "a150dd31a1",
+          "after": "34a150dd31"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1852,
+      "file": "7/S7012.DAT",
+      "offset": "0x48B80",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "proposed": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "japanese": "<CTRL:E5:03>ラマダ寺の修行\r\n<CTRL:E5:03>ロマンシングストーン\r\n<CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89>\r\n<CTRL:E5:03>やつっりいいや。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 1854,
+      "file": "7/S7012.DAT",
+      "offset": "0x48C5E",
+      "before": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "proposed": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클인 만큼 말이지요...",
+      "japanese": "チョピン \r\nここでは、あるアイテムが手に入ります。ストーンサークルだけに・・。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 1409 반복. 독점 장소 의미로 단정하지 않도록 독립 검토."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 1858,
+      "file": "7/S7012.DAT",
+      "offset": "0x48DEA",
+      "before": "초핀: 소환수는 전부 여섯까지라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "proposed": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "japanese": "チョピン \r\n召喚獣は全部で6までなると聞いております。中には見つかりにくいものもいるようなのであちこち探してみて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 298488,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1864,
+      "file": "7/S7012.DAT",
+      "offset": "0x49064",
+      "before": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "proposed": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "japanese": "チョピン \r\nラマダ寺では、ランクを設けて修行を行つているようですが、その全てを終えると手に入るアクセサリーがあるようです。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 1865,
+      "file": "7/S7012.DAT",
+      "offset": "0x490DA",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "proposed": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "japanese": "チョピン \r\nただ、ラマダ寺でもらえるわけではないようですが・・・。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 1866,
+      "file": "7/S7012.DAT",
+      "offset": "0x49136",
+      "before": "초핀: 로맨싱 스톤을 찾았습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "proposed": "초핀: 로맨싱 스톤이 있는 곳을 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "japanese": "チョピン \r\nロマンシングストーンのある場所がわかりました。1つはスメリアのトウヴィル\r\n1つはアララトスの遺跡ダンジョン、",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 299323,
+          "before": "dd04de08de26a130dd9a0da1dd56",
+          "after": "d5de08de26a130dd9a03a11f06a1"
+        },
+        {
+          "at": 299338,
+          "before": "2d2d070121a1833ddda7dd18",
+          "after": "150da1dd1e09dee82d070121"
+        },
+        {
+          "at": 299351,
+          "before": "09dd05dd058330a18add09a1dd254f0e",
+          "after": "833ddda7dd18a1098f8f8330a18add09"
+        },
+        {
+          "at": 299368,
+          "before": "191edf6bb3a1a1a1a1a1",
+          "after": "dd254f0ea1191edf6bb3"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 1921,
+      "file": "7/S7022.DAT",
+      "offset": "0x488F0",
+      "before": "출전자: 라마다사에서 수행하면 버스터 칭호를 받을수 있나봐.",
+      "proposed": "출전자: 라마다사에서 수행하면 버스터 칭호를 받을 수 있나 봐.",
+      "japanese": "出場者 \r\nラマダ寺で修行すると、なんとかばすたーとかいうしょうごうがもらえるらしいぞ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 297209,
+          "before": "a1347b0e25a150dd31193aa1673002a1de979536a1dd190d50a11f1e",
+          "after": "340e25a150dd31193aa1673002a1de979536a1dd190da150a11f1ea1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2103,
+      "file": "7/S7028.DAT",
+      "offset": "0x47544",
+      "before": "보물찾이라도 할까.",
+      "proposed": "보물찾기라도 할까.",
+      "japanese": "宝探しでもするかね。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 292164,
+          "before": "e2aadefa1b11a12aa1125e21",
+          "after": "606ddd56248f33a17d3b21a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2111,
+      "file": "7/S7028.DAT",
+      "offset": "0x47790",
+      "before": "남의 손에 넘어가면 분했을 테니까.",
+      "proposed": "남의 손에 넘어갔으면 곤란했을 거야.",
+      "japanese": "他人の手に渡つたらやつかいだつたよ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 286730,
+          "before": "0c3aa192dd0f0da1ddbe073b21000000",
+          "after": "de594e3aa1de9bde3edd0f0da1324921"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2115,
+      "file": "7/S7028.DAT",
+      "offset": "0x478D6",
+      "before": "모르겠는데.",
+      "proposed": "아직도 모르네.",
+      "japanese": "わかつてないな。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283520,
+          "before": "df347ade709c528f69",
+          "after": "09dd7c33a155707e21"
+        },
+        {
+          "at": 283647,
+          "before": "03",
+          "after": "06"
+        },
+        {
+          "at": 293078,
+          "before": "557054068121",
+          "after": "e288a1a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 7
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2116,
+      "file": "7/S7028.DAT",
+      "offset": "0x47912",
+      "before": "모르겠어.",
+      "proposed": "아직도 모르냐.",
+      "japanese": "わかつてねえな。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283648,
+          "before": "00000000000000000000",
+          "after": "09dd7c33a15570dd5121"
+        },
+        {
+          "at": 283775,
+          "before": "00",
+          "after": "06"
+        },
+        {
+          "at": 293138,
+          "before": "5570541421",
+          "after": "e289a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 8
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2117,
+      "file": "7/S7028.DAT",
+      "offset": "0x4794E",
+      "before": "모르겠소.",
+      "proposed": "아직도 모르는구먼.",
+      "japanese": "わかつとらん。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283776,
+          "before": "000000000000000000000000",
+          "after": "09dd7c33a155700687ddc121"
+        },
+        {
+          "at": 283903,
+          "before": "00",
+          "after": "05"
+        },
+        {
+          "at": 293198,
+          "before": "557054dd0721",
+          "after": "e28aa1a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 9
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2118,
+      "file": "7/S7028.DAT",
+      "offset": "0x4798A",
+      "before": "모르겠어어!",
+      "proposed": "아직도 모르냐아!",
+      "japanese": "わかつとらあーん!",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283904,
+          "before": "0000000000000000000000",
+          "after": "09dd7c33a15570dd5109a9"
+        },
+        {
+          "at": 284031,
+          "before": "00",
+          "after": "07"
+        },
+        {
+          "at": 293258,
+          "before": "5570541414a9",
+          "after": "e28ba1a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 10
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2138,
+      "file": "7/S7028.DAT",
+      "offset": "0x489F6",
+      "before": "안내: 예고 없이 참가자 접수를 마감합니다. 서둘러 주십시오.",
+      "proposed": "안내: 곧 참가자 접수를 마감합니다. 서둘러 주십시오.",
+      "japanese": "アナウンス \r\n聞もなく参加者の受付をしめ切ります。お急ぎ下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 297462,
+          "before": "e29643227516e6013da1a14c6a6d3a02dd21defaa11b1cdefa09172a213fdefadd1f3ba10521",
+          "after": "9447dd02a1de0ea1dd4c0c28a1de2a5036a145dd77dd1d070121a125ddbb20a1405d294621a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2142,
+      "file": "7/S7028.DAT",
+      "offset": "0x48B70",
+      "before": "대회 위원: 정말 출전하시겠습니까?|승리|나중에",
+      "proposed": "대회 위원: 정말 출전하시겠습니까?|꼭 이긴다!|아직 할 일이…",
+      "japanese": "大会委員 \r\n本当にいいんですか？\r\n<CTRL:E5:03>ぜつたい勝てる!\r\n<CTRL:E5:03>まだやり残したことが・",
+      "reasons": [
+        "선택지 항목/현재 문자열 영역 대응 검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2151,
+      "file": "7/S7032.DAT",
+      "offset": "0x479EC",
+      "before": "로크톨: 왕가가 멸망한 뒤에도 권력자와 부호 사이에서 그 탐욕과 두려움으로 전해 내려온 물건입니다.",
+      "proposed": "로크톨: 왕가가 멸망한 뒤에도 권력자와 부호 사이에서 선망과 두려움의 대상으로 전해 내려온 물건입니다.",
+      "japanese": "ロクトール \r\n王家滅亡後も<CTRL:E4:3D>権力者や\f富豪(ふごう)の聞に<CTRL:E4:3D>その欲しさと<CTRL:E4:29>恐怖で<CTRL:E4:3D>かたり\f継がれて<CTRL:E4:3D>きたものです。<CTRL:E4:3D>",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2152,
+      "file": "7/S7032.DAT",
+      "offset": "0x47A72",
+      "before": "로크톨: 그야말로 이 피로 피를 다투는 무투 대회의 승자에게 어 울 리 는 물 건 이 아 니 겠 습 니 까?",
+      "proposed": "로크톨: 그야말로 이 피비린내 나는 무투 대회의 승자에게 어 울 리 는 물 건 이 아 니 겠 습 니 까?",
+      "japanese": "ロクトール \r\nまさに、<CTRL:E4:3D>この\f血で血を争う\r\n武闘大会の勝者に\fふ<CTRL:E4:0B>さ<CTRL:E4:0B>わ<CTRL:E4:0B>し<CTRL:E4:0B>い\r\n<CTRL:E4:0B>も<CTRL:E4:0B>の<CTRL:E4:0B>で<CTRL:E4:0B>は<CTRL:E4:07>な<CTRL:E4:07>い<CTRL:E4:07>で<CTRL:E4:07>し<CTRL:E4:07>ょ<CTRL:E4:07>う<CTRL:E4:07>か<CTRL:E4:07>？<CTRL:E4:3D>",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2201,
+      "file": "8/S8013.DAT",
+      "offset": "0x47B6E",
+      "before": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "proposed": "|라마다사 수행|로맨싱 스톤|장신구 비단 띠|그만",
+      "japanese": "<CTRL:E5:03>ラマダ寺の修行\r\n<CTRL:E5:03>ロマンシングストーン\r\n<CTRL:E5:03>アクセサリー<G:90>きぬのおび<G:89>\r\n<CTRL:E5:03>やつっりいいや。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 2203,
+      "file": "8/S8013.DAT",
+      "offset": "0x47C4C",
+      "before": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클에서만 말이지요...",
+      "proposed": "초핀: 여기서는 어떤 아이템을 얻을 수 있습니다. 스톤 서클인 만큼 말이지요...",
+      "japanese": "チョピン \r\nここでは、あるアイテムが手に入ります。ストーンサークルだけに・・。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: だけに는 그 이름에 걸맞게라는 말장난일 가능성. 에서만은 독점 입수처 단정이므로 아이템/장면 확인 후 판단."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2207,
+      "file": "8/S8013.DAT",
+      "offset": "0x47DD8",
+      "before": "초핀: 소환수는 전부 여섯까지라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아 보십시오.",
+      "proposed": "초핀: 소환수는 모두 여섯이라고 들었습니다. 그중엔 찾기 어려운 것도 있으니 여기저기 찾아보십시오.",
+      "japanese": "チョピン \r\n召喚獣は全部で6までなると聞いております。中には見つかりにくいものもいるようなのであちこち探してみて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 294374,
+          "before": "4f6ca11ade253b04",
+          "after": "55dd21a11ade2503"
+        },
+        {
+          "at": 294422,
+          "before": "a1605d294621",
+          "after": "605d294621a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2213,
+      "file": "8/S8013.DAT",
+      "offset": "0x48052",
+      "before": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "proposed": "초핀: 라마다사에서는 단계별로 수련을 진행하는데, 모든 과정을 마치면 얻을 수 있는 장신구가 있다고 합니다.",
+      "japanese": "チョピン \r\nラマダ寺では、ランクを設けて修行を行つているようですが、その全てを終えると手に入るアクセサリーがあるようです。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 2214,
+      "file": "8/S8013.DAT",
+      "offset": "0x480C8",
+      "before": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "proposed": "초핀: 라마다사에서 직접 주는 것은 아닌 듯하지만…",
+      "japanese": "チョピン \r\nただ、ラマダ寺でもらえるわけではないようですが・・・。",
+      "reasons": [],
+      "writes": [],
+      "status": "ALREADY_APPLIED"
+    },
+    {
+      "row": 2215,
+      "file": "8/S8013.DAT",
+      "offset": "0x48124",
+      "before": "초핀: 로맨싱 스톤을 찾았습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "proposed": "초핀: 로맨싱 스톤의 위치를 알아냈습니다. 토우빌과 아라라토스 유적 던전에 하나씩,",
+      "japanese": "チョピン \r\nロマンシングストーンのある場所がわかりました。1つはスメリアのトウヴィル\r\n1つはアララトスの遺跡ダンジョン、",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 295209,
+          "before": "dd04de08de26a130dd9a0da1",
+          "after": "d5de08de26a130dd9a0fa18e"
+        },
+        {
+          "at": 295222,
+          "before": "56dd2d2d070121a1833ddda7dd18a109dd05dd058330a18add09a1",
+          "after": "1f36a1dd1e09dee82d070121a1833ddda7dd18a1098f8f8330a18a"
+        },
+        {
+          "at": 295250,
+          "before": "254f0ea1191edf6bb3a1a1a1",
+          "after": "09a1dd254f0ea1191edf6bb3"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2242,
+      "file": "8/S8031.DAT",
+      "offset": "0x486E8",
+      "before": "매트 버틀러: 물의 신전의 벽은 손에 넣었나?",
+      "proposed": "원문 글리프 확인 후: 매트 버틀러: 물의 신전 열쇠는 손에 넣었나?",
+      "japanese": "マットバトラー \r\n水の神殿のカベは手に入つたか？",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: カベ=벽이 매우 이상하며 뒤 신전 침입과 2261 연결. 鍵 오독 가능성 있으나 현재 추출/장면만으로 확정 금지."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2255,
+      "file": "8/S8041.DAT",
+      "offset": "0x47B5A",
+      "before": "카사토르: 이용할 수 있는 것은 철저히 이용하고, 살 가치도 없는 어린것들을 없애는 게 뭐가 나쁘지?",
+      "proposed": "원문 확인 후 살 가치도 없는 놈들 등으로 재검토. 어린것들 확정 유지 금지.",
+      "japanese": "カサトール \r\n利用できるものをとことん利用し\r\n生きる価値もないようなク供を\r\n消し去つて何が悪い？",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: ク供가 정상 일본어 어형이 아니며 아이/屑共 등 추출 오류 가능. 마을 학살 대상을 어린이로 한정한 해석에 영향."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2261,
+      "file": "8/S8051.DAT",
+      "offset": "0x48732",
+      "before": "카사토르: 좋아, 신전의 벽이 필요했을 뿐이다.",
+      "proposed": "원문 글리프 확인 후: 카사토르: 좋아, 신전 열쇠가 필요했을 뿐이다.",
+      "japanese": "カサトール \r\nまあいい、\r\n神殿のカベが欲しかつたのでな。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 2242와 같은 カベ→벽. 실제 열쇠인지 원본 글리프 확인이 필요."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2263,
+      "file": "8/S8051.DAT",
+      "offset": "0x487D4",
+      "before": "카사토르: 어린것들을 죽이는 데 그 이상의 이유 따위는 없다.",
+      "proposed": "원문 확인 후 놈들을 죽이는 데 등으로 재검토.",
+      "japanese": "カサトール \r\nク供どもを殺すのに、\r\nそれ以上の理由などない。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 2255와 같은 ク供; 어린것들로 대상을 좁힌 근거가 미확정."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2268,
+      "file": "8/S8061.DAT",
+      "offset": "0x47A4A",
+      "before": "물의 베미가 몸에 전해져 오는 것 같아.",
+      "proposed": "물의 은혜가 몸에 전해져 오는 것 같아.",
+      "japanese": "水の恵みが体に伝わつてくるようだわ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283907,
+          "before": "ddfedd2f0ca1de2d0ea14f2bdd63a14606a118a1dd5a0921",
+          "after": "26dd4b0ca1de2d0ea14f2bdd63a14606a118a1dd5a092100"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2271,
+      "file": "8/S8061.DAT",
+      "offset": "0x47B6C",
+      "before": "물의 정령: 그렇단다. 물의 베미를 관장하고 있지.",
+      "proposed": "물의 정령: 그렇단다. 물의 은혜를 관장하고 있지.",
+      "japanese": "水の精霊 \r\nそうとも、水の恵みをつかさどるね。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283027,
+          "before": "ddfedd2f36a1de1d56191ca11f0421",
+          "after": "26dd4b36a11d56191ca11f04210000"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2272,
+      "file": "8/S8061.DAT",
+      "offset": "0x47BB6",
+      "before": "물의 정령: 그런데 이런 지하 아래쪽에 혼자 숨어 누구에게도 고마움 받지 못하고 있구나.",
+      "proposed": "물의 정령: 그런데 이런 지하 깊은 곳에서 홀로 지내며 누구에게도 고맙다는 말 한마디 못 듣고 있구나.",
+      "japanese": "水の精霊 \r\nそれが、こんな地下深くでひつそりと\r\n誰にもありがたがられすにねえ。",
+      "reasons": [
+        "missing glyphs ['깊', '홀']: 물의 정령: 그런데 이런 지하 깊은 곳에서 홀로 지내며 누구에게도 고맙다는 말 한마디 못 듣고 있구나."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2273,
+      "file": "8/S8061.DAT",
+      "offset": "0x47C22",
+      "before": "물의 정령: 우습게 보지 마라. 이 나라는 원래 풍요로운 나라였단다.",
+      "proposed": "물의 정령: 웃기지도 않는구나. 이 나라는 원래 풍요로운 나라였단다.",
+      "japanese": "水の精霊 \r\nわらつちゃうじゃないの。\r\nこの国はもともと\r\nゆたかな国だつたんだよ。",
+      "reasons": [
+        "missing glyphs ['웃']: 물의 정령: 웃기지도 않는구나. 이 나라는 원래 풍요로운 나라였단다."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2300,
+      "file": "9/S9012.DAT",
+      "offset": "0x47AE6",
+      "before": "데스: 엘리베이터의 줄을 끊고 한꺼번에 작동시켜 주마.",
+      "proposed": "데스: 엘리베이터 줄을 끊어 한꺼번에 끝장내 주마.",
+      "japanese": "デス \r\nエレベータのロープを切つて\r\nまとめて始動してやる。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 로프를 끊는 위협인데 한꺼번에 작동시킨다는 목적어 없는 기계 표현. 始動의 추출 원문 자체 및 전투 직전 번역 기록을 재확인해야 함."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2318,
+      "file": "9/S9051.DAT",
+      "offset": "0x479B4",
+      "before": "아나운서: 매우 서러운 소식을 전해 드려야 합니다.",
+      "proposed": "아나운서: 매우 슬픈 소식을 전해 드려야 합니다.",
+      "japanese": "アナウンサー \r\n大変悲しいお知らせをしなくては\r\nなりません。",
+      "reasons": [
+        "missing glyphs ['픈']: 아나운서: 매우 슬픈 소식을 전해 드려야 합니다."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2352,
+      "file": "B/SB022.DAT",
+      "offset": "0x47C36",
+      "before": "하늘의 목소리: 그리고 쿠쿠루여, 너는 이제부터 세계에서 닫히는 토우빌에 남아",
+      "proposed": "하늘의 목소리: 그리고 쿠쿠루여, 너는 이제 세상과 단절될 토우빌에 남아",
+      "japanese": "天の声 \r\nそしてククルよ\r\nおまえはこれより、世界からとじる\r\nトウヴィルに残り",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 세계에서 닫히는은 뜻을 파악하기 어려운 직역. 토우빌 봉쇄/단절 장면의 구체 연출을 확인해야 정확한 동사를 선택할 수 있음."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2405,
+      "file": "B/SB072.DAT",
+      "offset": "0x480F6",
+      "before": "병사: 있었습니다.",
+      "proposed": "병사: 찾았습니다.",
+      "japanese": "兵士 \r\nありました。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283392,
+          "before": "e00ee0a5df809ce0cadffde05fe035e0c10f",
+          "after": "8234dd02a1dd56dd2d2d0701210000000000"
+        },
+        {
+          "at": 295158,
+          "before": "8234dd02",
+          "after": "e287a1a1"
+        },
+        {
+          "at": 295163,
+          "before": "1f612d070121",
+          "after": "a1a1a1a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 6
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2409,
+      "file": "B/SB072.DAT",
+      "offset": "0x48268",
+      "before": "대신: 그게 좋을 거다. 우리는 토우빌 마을 사람들의 목숨을 어떻게든 할 수 있으니 말이다.",
+      "proposed": "대신: 그게 좋을 거다. 토우빌 마을 사람들의 목숨은 우리 손에 달려 있으니 말이다.",
+      "japanese": "大臣 \r\nそれがよかろう。\r\nわれらはトウヴィルの村人の命を\r\nどうにでもできるのだからな。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 282640,
+          "before": "3d2e06a1833ddda7a1450da134dd220a0fa1dd33de220da114dd4441dd26a17da150a11f4e07a11bdd010121",
+          "after": "833ddda7a1450da134dd220a0fa1dd33de2226a13d2ea1850ea1de5f3ca11f4e07a11b030121000000000000"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2460,
+      "file": "C1/SC081.DAT",
+      "offset": "0x46F0C",
+      "before": "아파도 할까?|예|그만",
+      "proposed": "아픈 건 싫지만, 그래도 할까?|예|그만",
+      "japanese": "ひいのやだな。でもやる？\r\n<CTRL:E5:03>はい\r\n<CTRL:E5:03>やつっりやめる",
+      "reasons": [
+        "missing glyphs ['픈']: 아픈 건 싫지만, 그래도 할까?|예|그만"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2464,
+      "file": "C1/SC091.DAT",
+      "offset": "0x46DE6",
+      "before": "준비됐나?|예|그만",
+      "proposed": "난 언제든 좋아.|예|그만",
+      "japanese": "いつでもいいぞ\r\n<CTRL:E5:03>はい\r\n<CTRL:E5:03>やつっりやめる",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 282753,
+          "before": "6fdd06dddc1ed10000000000",
+          "after": "6aa1dd3066dd26a1dd0d0921"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2470,
+      "file": "C1/SC091.DAT",
+      "offset": "0x4701C",
+      "before": "할까?|한다|그만",
+      "proposed": "난 싫다만, 하겠나?|한다|그만",
+      "japanese": "わしゃイヤだが、やるかね\r\n<CTRL:E5:03>やる\r\n<CTRL:E5:03>やつっりやめる",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283137,
+          "before": "c0ddbda1dd21410000000000",
+          "after": "6aa1de7d0138b3a119541ed1"
+        },
+        {
+          "at": 283263,
+          "before": "04",
+          "after": "0a"
+        },
+        {
+          "at": 290844,
+          "before": "7d3bdd03",
+          "after": "e285a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 4
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2472,
+      "file": "C2/SC0A1.DAT",
+      "offset": "0x46E48",
+      "before": "전투?|예|그만",
+      "proposed": "싸우고 싶어?|예|그만",
+      "japanese": "戦いたい？\r\n<CTRL:E5:03>はい\r\n<CTRL:E5:03>やつっりやめる",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283904,
+          "before": "e03fdfede099e04700",
+          "after": "dd143d1ca1dd4e14d1"
+        },
+        {
+          "at": 284031,
+          "before": "02",
+          "after": "03"
+        },
+        {
+          "at": 290376,
+          "before": "4fdd39dd03",
+          "after": "e28ba1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 10
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2473,
+      "file": "C2/SC0A1.DAT",
+      "offset": "0x46EA4",
+      "before": "전투?|예|그만",
+      "proposed": "해 보자고.|예|그만",
+      "japanese": "やろうぜ\r\n<CTRL:E5:03>はい\r\n<CTRL:E5:03>やつっりやめる",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 284032,
+          "before": "dd3bdd3a0100",
+          "after": "2ba160281c21"
+        },
+        {
+          "at": 284159,
+          "before": "00",
+          "after": "02"
+        },
+        {
+          "at": 290468,
+          "before": "4fdd39d1",
+          "after": "e28ca1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 11
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2483,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x45DE8",
+      "before": "20회까지 앞으로 회입니다.힘내 주십시오.",
+      "proposed": "20회까지 앞으로 회입니다. 힘내 주십시오.",
+      "japanese": "20回までのこり<CTRL:E8:21>回です。\r\nがんばつて下さい。",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2486,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x45EE6",
+      "before": "40회까지 앞으로 회입니다.힘내 주십시오.",
+      "proposed": "40회까지 앞으로 회입니다. 힘내 주십시오.",
+      "japanese": "40回までのこり<CTRL:E8:21>回です。\r\nがんばつて下さい。",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2489,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x45FE4",
+      "before": "80회까지 앞으로 회입니다.힘내 주십시오.",
+      "proposed": "80회까지 앞으로 회입니다. 힘내 주십시오.",
+      "japanese": "80回までのこり<CTRL:E8:21>回です。\r\nがんばつて下さい。",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2492,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x460E2",
+      "before": "120회까지 앞으로 회입니다.힘내 주십시오.",
+      "proposed": "120회까지 앞으로 회입니다. 힘내 주십시오.",
+      "japanese": "120回までのこり<CTRL:E8:21>回です。\r\nがんばつて下さい。",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2495,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x461E0",
+      "before": "160회까지 앞으로 회입니다.힘내 주십시오.",
+      "proposed": "160회까지 앞으로 회입니다. 힘내 주십시오.",
+      "japanese": "160回までのこり<CTRL:E8:21>回です。\r\nがんばつて下さい。",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2498,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x462DE",
+      "before": "200회까지 앞으로 회입니다.힘내 주십시오.",
+      "proposed": "200회까지 앞으로 회입니다. 힘내 주십시오.",
+      "japanese": "200回までのこり<CTRL:E8:21>回です。\r\nがんばつて下さい。",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2505,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46572",
+      "before": "넘치는 과실을 손에넣었다.",
+      "proposed": "넘치는 과실을 손에 넣었다.",
+      "japanese": "<G:90>みなぎる果実<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2505"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2506,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x465B6",
+      "before": "20번째 승리를 목표로힘내 주십시오.",
+      "proposed": "20번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "20回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 288184,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 288194,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2508,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4664C",
+      "before": "20번째 승리를 목표로힘내 주십시오.",
+      "proposed": "20번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "20回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 288334,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 288344,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2510,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x466E2",
+      "before": "20번째 승리를 목표로힘내 주십시오.",
+      "proposed": "20번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "20回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 288484,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 288494,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2512,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46778",
+      "before": "20번째 승리를 목표로힘내 주십시오.",
+      "proposed": "20번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "20回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 288634,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 288644,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2516,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x468FA",
+      "before": "힘의 열매를 손에넣었다.",
+      "proposed": "힘의 열매를 손에 넣었다.",
+      "japanese": "<G:90>ちからの実<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2516"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2517,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4693C",
+      "before": "40번째 승리를 목표로힘내 주십시오.",
+      "proposed": "40번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "40回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 289086,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 289096,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2519,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x469D0",
+      "before": "40번째 승리를 목표로힘내 주십시오.",
+      "proposed": "40번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "40回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 289234,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 289244,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2521,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46A68",
+      "before": "40번째 승리를 목표로힘내 주십시오.",
+      "proposed": "40번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "40回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 289386,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 289396,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2522,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46ABC",
+      "before": "마력의 샘을 손에넣었다.",
+      "proposed": "마력의 샘을 손에 넣었다.",
+      "japanese": "<G:90>魔力の泉<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2522"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2523,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46AFE",
+      "before": "40번째 승리를 목표로힘내 주십시오.",
+      "proposed": "40번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "40回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 289536,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 289546,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2527,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46C84",
+      "before": "얼음의 수호를 손에넣었다.",
+      "proposed": "얼음의 수호를 손에 넣었다.",
+      "japanese": "<G:90>氷の守り<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2527"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2528,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46CC6",
+      "before": "80번째 승리를 목표로힘내 주십시오.",
+      "proposed": "80번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "80回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 289992,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 290002,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2530,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46D5A",
+      "before": "80번째 승리를 목표로힘내 주십시오.",
+      "proposed": "80번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "80回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 290140,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 290150,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2531,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46DAE",
+      "before": "마법의 카트를 손에넣었다.",
+      "proposed": "마법의 카트를 손에 넣었다.",
+      "japanese": "<G:90>魔法のカート<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2531"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2532,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46DF2",
+      "before": "80번째 승리를 목표로힘내 주십시오.",
+      "proposed": "80번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "80回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 290292,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 290302,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2534,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x46E8C",
+      "before": "80번째 승리를 목표로힘내 주십시오.",
+      "proposed": "80번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "80回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 290446,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 290456,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2538,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4700E",
+      "before": "슬리플리스 카트를손에넣었다.",
+      "proposed": "슬리플리스 카트를 손에 넣었다.",
+      "japanese": "<G:90>スリープレスカート<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2538"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2539,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47054",
+      "before": "120번째 승리를 목표로힘내 주십시오.",
+      "proposed": "120번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "120回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 290903,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 290913,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2541,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x470EC",
+      "before": "120번째 승리를 목표로힘내 주십시오.",
+      "proposed": "120번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "120回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 291055,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 291065,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2542,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47140",
+      "before": "거울을 손에넣었다.",
+      "proposed": "거울을 손에 넣었다.",
+      "japanese": "<G:90>鏡<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2542"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2543,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4717E",
+      "before": "120번째 승리를 목표로힘내 주십시오.",
+      "proposed": "120번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "120回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 291201,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 291211,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2544,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x471D2",
+      "before": "선글라스를손에넣었다.",
+      "proposed": "선글라스를 손에 넣었다.",
+      "japanese": "<G:90>サングラス<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2544"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2545,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47212",
+      "before": "120번째 승리를 목표로힘내 주십시오.",
+      "proposed": "120번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "120回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 291349,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 291359,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2549,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47360",
+      "before": "디르의 어금니를 손에넣었다.",
+      "proposed": "디르의 어금니를 손에 넣었다.",
+      "japanese": "<G:90>ディールの牙<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2549"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2550,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x473A4",
+      "before": "160번째 승리를 목표로힘내 주십시오.",
+      "proposed": "160번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "160回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 291751,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 291761,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2554,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4752A",
+      "before": "파워리스트를 손에넣었다.",
+      "proposed": "파워리스트를 손에 넣었다.",
+      "japanese": "<G:90>パワーリスト<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2554"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2555,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4756C",
+      "before": "200번째 승리를 목표로힘내 주십시오.",
+      "proposed": "200번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "200回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 292207,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 292217,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2557,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47604",
+      "before": "200번째 승리를 목표로힘내 주십시오.",
+      "proposed": "200번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "200回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 292359,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 292369,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2559,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x4769C",
+      "before": "200번째 승리를 목표로힘내 주십시오.",
+      "proposed": "200번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "200回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 292511,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 292521,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2561,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47730",
+      "before": "200번째 승리를 목표로힘내 주십시오.",
+      "proposed": "200번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "200回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 292659,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 292669,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2566,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x478BC",
+      "before": "1000번째 승리를 목표로힘내 주십시오.",
+      "proposed": "1000번째 승리를 목표로 힘내 주십시오.",
+      "japanese": "1000回目の勝利を目指して\r\nがんばつて下さい。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 293056,
+          "before": "dd3edd7ea1692e36a1",
+          "after": "9b11a1692e36a1dd33"
+        },
+        {
+          "at": 293066,
+          "before": "33dd8add047447a1405d294621",
+          "after": "8ad5a17447a1405d294621a1a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2570,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47A12",
+      "before": "넘치는 과실을 손에넣었다.",
+      "proposed": "넘치는 과실을 손에 넣었다.",
+      "japanese": "<G:90>みなぎる果実<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2570"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2577,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47BFE",
+      "before": "마력의 샘을 손에넣었다.",
+      "proposed": "마력의 샘을 손에 넣었다.",
+      "japanese": "<G:90>魔力の泉<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2577"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2578,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47C44",
+      "before": "얼음의 수호를 손에넣었다.",
+      "proposed": "얼음의 수호를 손에 넣었다.",
+      "japanese": "<G:90>氷の守り<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2578"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2580,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47CCE",
+      "before": "마법의 카트를 손에넣었다.",
+      "proposed": "마법의 카트를 손에 넣었다.",
+      "japanese": "<G:90>魔法のカート<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2580"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2582,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47D60",
+      "before": "슬리플리스 카트를손에넣었다.",
+      "proposed": "슬리플리스 카트를 손에 넣었다.",
+      "japanese": "<G:90>スリープレスカート<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2582"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2584,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47DF2",
+      "before": "거울을 손에넣었다.",
+      "proposed": "거울을 손에 넣었다.",
+      "japanese": "<G:90>鏡<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2584"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2585,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47E34",
+      "before": "선글라스를손에넣었다.",
+      "proposed": "선글라스를 손에 넣었다.",
+      "japanese": "<G:90>サングラス<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2585"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2586,
+      "file": "C2/SC0B6.DAT",
+      "offset": "0x47E78",
+      "before": "파워리스트를 손에넣었다.",
+      "proposed": "파워리스트를 손에 넣었다.",
+      "japanese": "<G:90>パワーリスト<G:89>を手にいれた。",
+      "reasons": [
+        "no E2 slot remains in C2/SC0B6.DAT for row 2586"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2594,
+      "file": "C2/SC0C1.DAT",
+      "offset": "0x489BC",
+      "before": "오오, 이런 곳에 순수한 헤모지가 있구먼.",
+      "proposed": "오오, 이런 곳에 순종 헤모지가 있구먼.",
+      "japanese": "おー\r\nこんな所に\r\nじゅんせい<G:90>へモジー<G:89>が\r\nいたわい。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: じゅんせい는 종류/출신의 순수성이지 도덕적으로 순수한 성격이라는 뜻이 아님. 헤모지 변신과 수집 맥락.",
+        "missing glyphs ['종']: 오오, 이런 곳에 순종 헤모지가 있구먼."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2659,
+      "file": "D/SD031.DAT",
+      "offset": "0x4596E",
+      "before": "아까그 몬스터에게 붙잡혀있던 할아버지다.",
+      "proposed": "아까 그 몬스터에게 붙잡혀있던 할아버지다.",
+      "japanese": "さつきのモンスターに捕らえられていたおじいさんだ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 284032,
+          "before": "df979ce0bddee6e0bf9ce07fe12f0f9ce032dfe59cde6be0bae036e0d69c14df8c9cdfd8e09b9ce061e0f7e0a39ce097e0a09ce0c1e0619ce099e07ddf51e0a20f",
+          "after": "093ba115a16430020e41a1de32de10de4d1fdd25a17d09670401210000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 284159,
+          "before": "31",
+          "after": "18"
+        },
+        {
+          "at": 285038,
+          "before": "093b15",
+          "after": "e28ca1"
+        },
+        {
+          "at": 285042,
+          "before": "6430020e41",
+          "after": "a1a1a1a1a1"
+        },
+        {
+          "at": 285048,
+          "before": "de32de10de4d1fdd25",
+          "after": "a1a1a1a1a1a1a1a1a1"
+        },
+        {
+          "at": 285058,
+          "before": "7d0967040121",
+          "after": "a1a1a1a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 11
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2661,
+      "file": "D/SD031.DAT",
+      "offset": "0x459FE",
+      "before": "내이름은 고겐. 너희 바람대로 3천 년의 시간을 넘어 다시 나타났지.",
+      "proposed": "내 이름은 고겐. 너희 바람대로 3천 년의 시간을 넘어 다시 나타났지.",
+      "japanese": "わしの名はゴーゲン。\r\nおまえらの望み通り\r\n3000年の時をこえて再び現れてやつたぞ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 285183,
+          "before": "dd01",
+          "after": "a103"
+        },
+        {
+          "at": 285203,
+          "before": "dd04a127dde7a1dda50fa129dd1b0da1ddf414a10129a11edd7fde550421",
+          "after": "d5a127dde7a1dda50fa129dd1b0da1ddf414a10129a11edd7fde550421a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2671,
+      "file": "D/SD031.DAT",
+      "offset": "0x45D2E",
+      "before": "그렇지. 이세계를 만들고 움직이는 모든 정령들의 대표",
+      "proposed": "그렇지. 이 세계를 만들고 움직이는 모든 정령들의 대표",
+      "japanese": "そうじゃ。\r\nこの世界を形作り、動かしている全ての精霊達の代表",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 286004,
+          "before": "dd01",
+          "after": "03a1"
+        },
+        {
+          "at": 286019,
+          "before": "dd0106a155dd26a131510a0fa137dd8a",
+          "after": "0306a155dd26a131510a0fa137dd8aa1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2674,
+      "file": "D/SD031.DAT",
+      "offset": "0x45E42",
+      "before": "그 돌 다섯 개를 모아 시온산의 봉인을 해제하는 거야.",
+      "proposed": "그 돌 다섯 개를 모아 시온산의 봉인을 풀어야 하네.",
+      "japanese": "その石を5つ集め、シオン山の\r\n封印を解くのだ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 283163,
+          "before": "2b661906",
+          "after": "de451449"
+        },
+        {
+          "at": 283168,
+          "before": "3249",
+          "after": "197e"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2675,
+      "file": "D/SD031.DAT",
+      "offset": "0x45E92",
+      "before": "그럼 어떻게그 정령들을 찾아내지?",
+      "proposed": "그럼 어떻게 그 정령들을 찾아내지?",
+      "japanese": "じゃあ、どうやつてその精霊達をさがしだすの？",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 286362,
+          "before": "15a131510a0da1dd56094704dd03",
+          "after": "a115a131510a0da1dd56094704d1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2681,
+      "file": "D/SD031.DAT",
+      "offset": "0x4605A",
+      "before": "비행선이필요하겠군",
+      "proposed": "비행선이 필요하겠군",
+      "japanese": "飛行船が必要だなっ。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 286816,
+          "before": "dd01",
+          "after": "03a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2686,
+      "file": "D/SD031.DAT",
+      "offset": "0x461D2",
+      "before": "고대의 대마도사 고겐님이 힘이되어 주겠다고 하는데.",
+      "proposed": "고대의 대마도사 고겐님이 힘이 되어 주겠다고 하는데.",
+      "japanese": "古の大魔導師ゴーゲン様が、力になつてやろうというに。",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 287200,
+          "before": "dd01a174dd017314a14054011ca119068121",
+          "after": "03a17403a17314a14054011ca119068121a1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2688,
+      "file": "D/SD031.DAT",
+      "offset": "0x46276",
+      "before": "그렇다,그러할 터인데...?",
+      "proposed": "그렇다, 그러할 터인데...?",
+      "japanese": "いかにも、そのはすじゃが・・？",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 287355,
+          "before": "15207da102358121",
+          "after": "a115207da1023581"
+        },
+        {
+          "at": 287365,
+          "before": "dd03",
+          "after": "21d1"
+        }
+      ],
+      "new_allocations": [],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2695,
+      "file": "D/SD031.DAT",
+      "offset": "0x465EE",
+      "before": "굉장한 아이템을 손에넣었다!",
+      "proposed": "굉장한 아이템을 손에 넣었다!",
+      "japanese": "<G:90>すごいアイテム<G:89>を手に入れた!\f",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2696,
+      "file": "D/SD031.DAT",
+      "offset": "0x4672A",
+      "before": "촌가라의굉장한 아이템을빼앗았다!",
+      "proposed": "촌가라의 굉장한 아이템을 빼앗았다!",
+      "japanese": "チョンガラの<G:90>すごいアイテム<G:89>をうばつた!<CTRL:E4:3D>",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2698,
+      "file": "D/SD031.DAT",
+      "offset": "0x4699E",
+      "before": "굉장한 아이템을 빼앗아 들었다!",
+      "proposed": "굉장한 아이템을 빼앗았다!",
+      "japanese": "<G:90>すごいアイテム<G:89>をとりあげた!\f",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2701,
+      "file": "D/SD031.DAT",
+      "offset": "0x48A5A",
+      "before": "돌을손에넣었다!",
+      "proposed": "돌을 손에 넣었다!",
+      "japanese": "石を手に入れた!",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 284160,
+          "before": "e0ebe0eee03be0bf9ce032e0ab9ce06ae0ebe0c4e04c9ce0d50d9cdf5c9ce09be0a2e0ab9ce032e09fe0149ce04be02ae0c10f",
+          "after": "720da1850ea16f6101a90000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 284287,
+          "before": "23",
+          "after": "06"
+        },
+        {
+          "at": 297562,
+          "before": "720d850e6f6101a9",
+          "after": "e28da1a1a1a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "A",
+          "slot": 12
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2702,
+      "file": "D/SD031.DAT",
+      "offset": "0x48AA4",
+      "before": "돌을손에넣었다!",
+      "proposed": "돌을 손에 넣었다!",
+      "japanese": "石を手に入れた!",
+      "reasons": [],
+      "writes": [
+        {
+          "at": 16896,
+          "before": "00000000000000000000",
+          "after": "720da1850ea16f6101a9"
+        },
+        {
+          "at": 17023,
+          "before": "00",
+          "after": "06"
+        },
+        {
+          "at": 297636,
+          "before": "720d850e6f6101a9",
+          "after": "e2d1a1a1a1a1a1a1"
+        }
+      ],
+      "new_allocations": [
+        {
+          "bank": "B",
+          "slot": 0
+        }
+      ],
+      "status": "QUALIFIED_CANONICAL_ONLY",
+      "readback": "PASS"
+    },
+    {
+      "row": 2711,
+      "file": "E5/SE05A.DAT",
+      "offset": "0x48772",
+      "before": "후후후후... 하고, 아무도 없잖아!?",
+      "proposed": "후후후후... 아니, 아무도 없잖아!?",
+      "japanese": "ふふふふ<CTRL:E4:3D>・<CTRL:E4:3D>・<CTRL:E4:3D>・<CTRL:E4:3D><CTRL:E4:3D><CTRL:E4:3D>て、\r\n<CTRL:E4:3D>だれもいないじゃない!？<CTRL:E4:3D><CTRL:E4:3D>",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2734,
+      "file": "E5/SE05A.DAT",
+      "offset": "0x49012",
+      "before": "자, 다 같이 놀아요!",
+      "proposed": "자, 다 같이 춤춰요!",
+      "japanese": "さあ、みんなでおどりましょう!<CTRL:E4:3D>",
+      "reasons": [
+        "missing glyphs ['춤']: 자, 다 같이 춤춰요!",
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2740,
+      "file": "F/SF021.DAT",
+      "offset": "0x47E36",
+      "before": "아아, 대체 이 오브와 정령에게 무슨 관계가 있는 걸까?",
+      "proposed": "아아, 대체 이 오브와 정령은 무슨 관계가 있는 걸까?",
+      "japanese": "ああ\r\n<CTRL:E4:3D>一体このオーフと精霊にどんな\r\nか係があるんだろう？",
+      "reasons": [
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2751,
+      "file": "F/SF021.DAT",
+      "offset": "0x48212",
+      "before": "인간의 무지는 때때로 많은 불행을 낳는다. 하지만 인간은 배우고 알 수 있어.",
+      "proposed": "인간의 무지는 때때로 많은 비극을 낳는다. 하지만 인간은 배우고 깨달을 수 있다.",
+      "japanese": "人の無知は時として多くの悲劇を生む。しかし、人は学び知るこができる。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 같은 화자의 한 문장에서 낳는다/알 수 있어 종결 혼재. 다음 2752 아닐까와 노인 화자의 논증 어조를 확인한 뒤 통일."
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2767,
+      "file": "F/SF041.DAT",
+      "offset": "0x47AAC",
+      "before": "불꽃의 정령: 그래, 이 연구소는 새로운 에릴베 연구를 하고 있다. 즉 생명력 에릴베다.",
+      "proposed": "원문 글리프 확인 후: 불꽃의 정령: 그래, 이 연구소는 새로운 에너지를 연구하고 있다. 바로 생명력 에너지다.",
+      "japanese": "炎の精霊 \r\nそう、この研究所は<CTRL:E4:15>あたらしい<CTRL:E4:0B>\r\nエリルベーの研究を<CTRL:E4:15>している<CTRL:E4:3D>。\r\nつまり生命力エリルベーだ。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: エリルベー는 エネルギー 오독 의심. 뒤 생명을 바꾸는 자원 설명에서 에릴베라는 고유 자원명을 쓰는 것이 맞는지 원문 글리프 검증 필요.",
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2768,
+      "file": "F/SF041.DAT",
+      "offset": "0x47B26",
+      "before": "불꽃의 정령: 불꽃의 정령인 나를 붙잡아 에릴베를 계속 빼앗아 왔다.",
+      "proposed": "원문 글리프 확인 후 에릴베를 → 에너지를",
+      "japanese": "炎の精霊 \r\n炎の精霊である<CTRL:E4:15>私を捕らえ<CTRL:E4:0B>\r\nエリルベーを<CTRL:E4:15>とり続けてきた。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 2767과 같은 반복 용어. 문맥 추측만으로 에너지 확정 금지.",
+        "missing glyphs ['→']: 원문 글리프 확인 후 에릴베를 → 에너지를",
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2770,
+      "file": "F/SF041.DAT",
+      "offset": "0x47BE0",
+      "before": "불꽃의 정령: 에릴베는 서로 나누어 주며 올려 가는 것이지 상대에게서 억지로 빼앗는 것이 아니다.",
+      "proposed": "원문 글리프 확인 후: 불꽃의 정령: 에너지는 서로 나누며 키워 가는 것이지 상대에게서 억지로 빼앗는 것이 아니다.",
+      "japanese": "炎の精霊 \r\nエリルベーは<CTRL:E4:15>たがいに分け与え\r\n<CTRL:E4:15>高めてゆくもので\f\r\n相手から無理に<CTRL:E4:15>奪いとるものではない。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 2767과 같은 반복 용어이며 올려 가는 것의 목적어 결합도 부자연스러움.",
+        "연출/버튼/변수 제어코드: 수정문에 맞춘 보호 템플릿 재검증 필요"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2777,
+      "file": "F/SF041.DAT",
+      "offset": "0x47EE4",
+      "before": "불의 정령: 생물이 가진 생명을 에릴베로 바꾸는 일을 생각하기 시작했다.",
+      "proposed": "원문 글리프 확인 후 에릴베로 → 에너지로",
+      "japanese": "火の精霊 \r\n生き物の持つている生命をエリルベーに\r\nかえることを考えはじめた。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 2767과 같은 반복 용어. 생명→자원 변환 설정 의미에 영향.",
+        "missing glyphs ['→']: 원문 글리프 확인 후 에릴베로 → 에너지로"
+      ],
+      "writes": [],
+      "status": "HELD"
+    },
+    {
+      "row": 2789,
+      "file": "F/SF041.DAT",
+      "offset": "0x48344",
+      "before": "나는 그대에게 져 보고 싶구먼.",
+      "proposed": "나는 그쪽에 기대를 걸어 보고 싶구먼.",
+      "japanese": "わしはそのほうに\r\n負けてみたいと思うがのう。",
+      "reasons": [
+        "원문 추출/문맥/명칭 해석이 미확정: 2788의 모든 것을 무로 돌리는 것 이외 해결 방법을 받아주는 의미의 そのほう. 그대(불의 정령)에게 지겠다는 말로 번역하면 논증 방향이 뒤집힐 수 있음. 일본어 負け 원본도 확인 필요."
+      ],
+      "writes": [],
+      "status": "HELD"
+    }
+  ]
+}

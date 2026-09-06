@@ -1,0 +1,16 @@
+patch    arc1_v358_dialogue_target_panel_fix_TEST_ONLY_D499D9D4.zip
+
+original E:\arc\원본\arc1.bin   507 files
+built    03_output\V358.bin   507 files
+
+pass  all 506 data files kept their sector number
+pass  COMM.DAT   LBA 307  (executable expects 307)
+pass  COMM.IMG   LBA 667  (executable expects 667)
+pass  COMM.SND   LBA 891  (executable expects 891)
+
+  comparing 164 patched files against the image
+pass  all 164 patched files on the disc match arc1_v358_dialogue_target_panel_fix_TEST_ONLY_D499D9D4.zip
+
+  PSX.EXE at LBA 268481 (was 23), 587776 bytes
+
+RESULT: PASS - disc layout/member integrity only; runtime not established

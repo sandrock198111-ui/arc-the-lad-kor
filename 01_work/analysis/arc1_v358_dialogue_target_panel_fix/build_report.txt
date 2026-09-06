@@ -1,0 +1,12 @@
+Arc the Lad 1 V358 dialogue + target-panel fix
+status=STATIC BUILD COMPLETE / RUNTIME PENDING / TEST_ONLY
+base=arc1_v357_user_reviewed_full_dialogue_bankb_TEST_ONLY_34854022.zip sha256=34854022BB0CA1C17BF4D798B8405009F8CC04914253E1D48476B2A2DBC3397A
+full=arc1_v358_dialogue_target_panel_fix_TEST_ONLY_D499D9D4.zip sha256=D499D9D463A66B343A9D794A49753454788B3F18C6DC38B7CDE7A77304838061
+delta=arc1_v358_dialogue_target_panel_fix_TEST_ONLY_delta_from_v357_AB190119.zip sha256=AB190119680DC4A0F5A46E619D01EF9AAD6F690ED3378B1B01CFB8A5C8E9164A
+changed_members=F/SF0F1.DAT,PSX.EXE
+changed_bytes={'F/SF0F1.DAT': 59, 'PSX.EXE': 3} total=62
+dialogue=F/SF0F1.DAT slot0 63B -> 62B; caller 0x47910/metadata 0x2D preserved
+panel=box 74,111,172,34 -> 74,111,198,40; rows 115/129 -> 115/131
+PSX.EXE=3 changed bytes only at 0x4C2EC,0x4C2F4,0x4C334
+COMM.IMG/all other DAT/E7/icons/cursors/bottom-help=byte exact V357
+runtime=PENDING user cold boot; TEST_ONLY

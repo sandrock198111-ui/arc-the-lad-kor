@@ -1,0 +1,11 @@
+Arc the Lad 1 V359 E7 semantic-text repair
+status=STATIC BUILD COMPLETE / RUNTIME PENDING / TEST_ONLY
+base=arc1_v358_dialogue_target_panel_fix_TEST_ONLY_D499D9D4.zip sha256=D499D9D463A66B343A9D794A49753454788B3F18C6DC38B7CDE7A77304838061
+full=arc1_v359_e7_semantic_text_repair_TEST_ONLY_7D6B0F1B.zip sha256=7D6B0F1B6A3C5A35B0EF61DF358278E46B261A496C57F1027D03D836AA9D6EC0
+delta=arc1_v359_e7_semantic_text_repair_TEST_ONLY_delta_from_v358_46F9CDB1.zip sha256=46F9CDB15F8C57C6F394F14BD67B41089C64156A7DFF72DD859F4C5C92DDFCD0
+changed_members=21/S2045.DAT,31/S3013.DAT,4/S4033.DAT,5/S5013.DAT,6/S6014.DAT,7/S7012.DAT,8/S8013.DAT
+changed_bytes={'21/S2045.DAT': 44, '31/S3013.DAT': 24, '4/S4033.DAT': 87, '5/S5013.DAT': 44, '6/S6014.DAT': 44, '7/S7012.DAT': 44, '8/S8013.DAT': 44} total=331
+targets=8 missing E7 meanings restored as text; 5 Choppin + 1 crew + LR + cancel
+slots=7 existing owned slots rewritten; 4/S4033 Bank-A slot33 newly allocated
+PSX.EXE/COMM.IMG/non-target members=byte exact V358
+runtime=PENDING user cold boot; TEST_ONLY

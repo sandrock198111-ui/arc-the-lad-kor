@@ -1,0 +1,428 @@
+{
+  "status": "RECOVERY CHECKS PASS / RUNTIME PENDING / TEST_ONLY",
+  "zip": "E:\\korean\\03_output\\arc1_v359_slot_recovery2_TEST_ONLY.zip",
+  "zip_sha256": "517ABAFD7486091977DBED1F0A548E61A2D12BA933B0E78FDBC61D2B735A04A5",
+  "base_sha256": "0C8482782890EB5A83C6D9A40A788177602E70A1D15C26AF49B7A4D9DA5A7D06",
+  "untouched_neighbor_rows": 103,
+  "rows": [
+    {
+      "row": 1717,
+      "file": "6/S6054.DAT",
+      "before": "라마다 승려: 아크 더 래드 제작진은?",
+      "target": "라마다 승려: 아크더래드 제작진은?",
+      "reclaimed_slot": 5,
+      "writes": [
+        {
+          "at": 17536,
+          "before": "0958a1dd96a1dd1217a166dd64dd3f26d1",
+          "after": "0000000000000000000000000000000000"
+        },
+        {
+          "at": 17663,
+          "before": "0d",
+          "after": "00"
+        },
+        {
+          "at": 283797,
+          "before": "e2d6a1a1a1a1a1",
+          "after": "0958dd96dd1217"
+        },
+        {
+          "at": 283805,
+          "before": "a1a1a1a1a1a1a1",
+          "after": "66dd64dd3f26d1"
+        }
+      ],
+      "readback": "PASS",
+      "offset": "0x4548E",
+      "control_count": 1,
+      "visible_rows": 2
+    },
+    {
+      "row": 1720,
+      "file": "6/S6054.DAT",
+      "before": "라마다 승려: 수도의 군 본부에는 사실 지하 50층짜리 던전이...",
+      "target": "라마다 승려: 수도의 군 본부에는 사실 지하 50층 던전이...",
+      "reclaimed_slot": 6,
+      "writes": [
+        {
+          "at": 17664,
+          "before": "50330fa17ca1dd586c0e06a134dd27a10419a19e91de50deb92ea1dd254f03212121",
+          "after": "00000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 17791,
+          "before": "1e",
+          "after": "00"
+        },
+        {
+          "at": 284039,
+          "before": "e2d7a1",
+          "after": "50330f"
+        },
+        {
+          "at": 284043,
+          "before": "a1",
+          "after": "7c"
+        },
+        {
+          "at": 284045,
+          "before": "a1a1a1a1a1",
+          "after": "dd586c0e06"
+        },
+        {
+          "at": 284051,
+          "before": "a1a1a1",
+          "after": "34dd27"
+        },
+        {
+          "at": 284055,
+          "before": "a1a1",
+          "after": "0419"
+        },
+        {
+          "at": 284058,
+          "before": "a1a1a1a1",
+          "after": "9e91de50"
+        },
+        {
+          "at": 284063,
+          "before": "a1a1a1a1a1a1a1",
+          "after": "dd254f03212121"
+        }
+      ],
+      "readback": "PASS",
+      "offset": "0x45580",
+      "control_count": 1,
+      "visible_rows": 3
+    },
+    {
+      "row": 1743,
+      "file": "6/S6054.DAT",
+      "before": "라마다 승려: 그건 틀렸지만, 노력은 인정해 주마.",
+      "target": "라마다 승려: 틀렸지만, 노력은 인정하마.",
+      "reclaimed_slot": 14,
+      "writes": [
+        {
+          "at": 18688,
+          "before": "15dd16a1dde0dd9b0438b3a1dd57dd2b26a135312ba1404521",
+          "after": "00000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 18815,
+          "before": "13",
+          "after": "00"
+        },
+        {
+          "at": 286041,
+          "before": "e2dfa1a1a1a1a1",
+          "after": "dde0dd9b0438b3"
+        },
+        {
+          "at": 286049,
+          "before": "a1a1a1a1a1",
+          "after": "dd57dd2b26"
+        },
+        {
+          "at": 286055,
+          "before": "a1a1a1a1a1",
+          "after": "3531194521"
+        }
+      ],
+      "readback": "PASS",
+      "offset": "0x45D52",
+      "control_count": 1,
+      "visible_rows": 2
+    },
+    {
+      "row": 1724,
+      "file": "6/S6054.DAT",
+      "before": "|저|그|어|비밀",
+      "target": "|저거|그거|어느 거|비밀",
+      "writes": [
+        {
+          "at": 17536,
+          "before": "000000",
+          "after": "dd2432"
+        },
+        {
+          "at": 17664,
+          "before": "00000000",
+          "after": "144da132"
+        },
+        {
+          "at": 284380,
+          "before": "dd24",
+          "after": "e2d6"
+        },
+        {
+          "at": 284387,
+          "before": "a1",
+          "after": "32"
+        },
+        {
+          "at": 284392,
+          "before": "14a1",
+          "after": "e2d7"
+        }
+      ],
+      "readback": "PASS",
+      "offset": "0x456DA",
+      "control_count": 7
+    },
+    {
+      "row": 1733,
+      "file": "6/S6054.DAT",
+      "before": "|황금|갈|빨강|누구?",
+      "target": "|노랑|사정상 갈빛|실은 빨강|누구?",
+      "writes": [
+        {
+          "at": 18304,
+          "before": "de3cdd4a",
+          "after": "dd57de74"
+        },
+        {
+          "at": 18688,
+          "before": "0000000000000000",
+          "after": "dd2726a1de20dd28"
+        },
+        {
+          "at": 18815,
+          "before": "00",
+          "after": "04"
+        },
+        {
+          "at": 285139,
+          "before": "dda6a1",
+          "after": "34318b"
+        },
+        {
+          "at": 285143,
+          "before": "a1a1a1a1",
+          "after": "dda6ddc4"
+        },
+        {
+          "at": 285152,
+          "before": "de20dd28",
+          "after": "e2dfa1a1"
+        }
+      ],
+      "readback": "PASS",
+      "offset": "0x459CA",
+      "control_count": 7
+    },
+    {
+      "row": 2152,
+      "file": "7/S7032.DAT",
+      "before": "로크톨: 그야말로 이 피로 피를 다투는 무투 대회의 승자에게 어 울 리 는 물 건 이 아 니 겠 습 니 까?",
+      "target": "로크톨: 그야말로 이 피비린내 나는 무투 대회의 승자를 위한 것이 아니겠습니까?",
+      "writes": [
+        {
+          "at": 283264,
+          "before": "e0d6e09deaa5df809ce0299ce0f99ce065e069e0ab9ce0bde0a09ce0299ce0cfe06ae0bd9ce02fe0c29ce0e0e0c29ce08adf41e0619ce053ea6de0c4e0149cdf13dffde0dfdfbf0d",
+          "after": "dd3cdd06ddd447a11e060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283391,
+          "before": "40",
+          "after": "07"
+        },
+        {
+          "at": 293490,
+          "before": "dd0458ddf0dd02a1",
+          "after": "d558ddf0dd02e601"
+        },
+        {
+          "at": 293501,
+          "before": "dd04a1dd01a1dd3cdd04",
+          "after": "d5e43d03a1e41fe286a1"
+        },
+        {
+          "at": 293512,
+          "before": "dd3c36",
+          "after": "a1a1a1"
+        },
+        {
+          "at": 293516,
+          "before": "01dd3906a15fdd39a1377a0fa169280e41a114a1dd92a12ea106a16da1dd16a1dd01a109a107a154a12da107a13bdd03a1a1a1a1a1a1a1a1a1a1",
+          "after": "a1e6015fdd39a1377a0fa1a1e41f69e40b28e40b36e40b8ee40b53e601e40b18e40b03e40b09e40b07e40754e4072de40707e4073be407d1e407"
+        },
+        {
+          "at": 293575,
+          "before": "a1a1",
+          "after": "e407"
+        },
+        {
+          "at": 293578,
+          "before": "a1a1",
+          "after": "e407"
+        },
+        {
+          "at": 293581,
+          "before": "a1a1",
+          "after": "e43d"
+        }
+      ],
+      "readback": "PASS",
+      "offset": "0x47A72",
+      "control_count": 23,
+      "visible_rows": 4
+    },
+    {
+      "row": 1551,
+      "file": "6/S6013.DAT",
+      "before": "대지의 돌... 서방의 카데르 땅에 봉인된 바람의 힘.",
+      "target": "대지의 돌: ...서방의 카델 땅에 봉인된 바람의 힘.",
+      "writes": [
+        {
+          "at": 283008,
+          "before": "e0a6e09ee0c19ce192e015df809ce0acdec7e9019ce0cae0dfe061e04c9cdef19ce03be0259ce0cfdfb4e061e0620f",
+          "after": "37040fa172dd0200000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283135,
+          "before": "1e",
+          "after": "02"
+        },
+        {
+          "at": 283520,
+          "before": "de6be0bae09b9ce062dee1e0479cdeb9e013e0bf9ce09ce035e0d6e0c50f0f0f9ce03be0a09ce0529cdff2e0bd9ce0f1e0c10f",
+          "after": "25dd29000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283647,
+          "before": "27dfebde85df809ce0fce0fae0c4e061e0a8e05fe035df59e047",
+          "after": "00dd38dde9000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283775,
+          "before": "0e",
+          "after": "01"
+        },
+        {
+          "at": 283904,
+          "before": "e07fe12f0d9ce0c1dff89cdd26dff2e0a2e0c2e047",
+          "after": "de530e000000000000000000000000000000000000"
+        },
+        {
+          "at": 284031,
+          "before": "0edfebde85df809ce0e00d9ce07ddfb4e061e0620f",
+          "after": "00ddb635ddc6000000000000000000000000000000"
+        },
+        {
+          "at": 284159,
+          "before": "10",
+          "after": "00"
+        },
+        {
+          "at": 284288,
+          "before": "0000000000",
+          "after": "dd08dd220f"
+        },
+        {
+          "at": 295568,
+          "before": "37040f",
+          "after": "e284a1"
+        },
+        {
+          "at": 295572,
+          "before": "72212121a125dd290fa1dd388170a1de530ea1ddb635ddc6a1dd08dd220f",
+          "after": "e601e43de41f21e41f21e41f21e41fe288e4150fe415a1e43da1e41fe289"
+        },
+        {
+          "at": 295603,
+          "before": "7421",
+          "after": "e415"
+        },
+        {
+          "at": 295606,
+          "before": "a1a1a1a1a1a1",
+          "after": "e415e28be43d"
+        },
+        {
+          "at": 295613,
+          "before": "a1a1",
+          "after": "e41f"
+        },
+        {
+          "at": 295617,
+          "before": "a1a1a1a1",
+          "after": "e601e43d"
+        },
+        {
+          "at": 295622,
+          "before": "a1a1a1a1a1a1",
+          "after": "e41fe28ce415"
+        },
+        {
+          "at": 295629,
+          "before": "a1a1a1a1a1a1",
+          "after": "e43de28ee415"
+        },
+        {
+          "at": 295636,
+          "before": "a1a1",
+          "after": "e415"
+        },
+        {
+          "at": 295639,
+          "before": "a1a1",
+          "after": "e415"
+        },
+        {
+          "at": 295642,
+          "before": "a1a1",
+          "after": "e415"
+        },
+        {
+          "at": 295645,
+          "before": "a1a1",
+          "after": "e43d"
+        },
+        {
+          "at": 295648,
+          "before": "a1a1a1",
+          "after": "e41574"
+        },
+        {
+          "at": 295652,
+          "before": "a1a1",
+          "after": "e43d"
+        },
+        {
+          "at": 295655,
+          "before": "a1a1a1",
+          "after": "e43d21"
+        }
+      ],
+      "readback": "PASS",
+      "offset": "0x48290",
+      "control_count": 27,
+      "visible_rows": 3
+    }
+  ],
+  "review_total": 215,
+  "review_applied": 212,
+  "review_held": 3,
+  "unresolved": [
+    {
+      "rows": [
+        1481,
+        1482
+      ],
+      "file": "5/S5025.DAT",
+      "required_name": "오돈",
+      "missing_glyph": "돈",
+      "reason": "확인된 고유명사; 임의 개명 금지. 기존 아버지 오역 미해결."
+    },
+    {
+      "rows": [
+        1703
+      ],
+      "file": "6/S6054.DAT",
+      "required_name": "초빈",
+      "missing_glyph": "빈",
+      "reason": "인명 구별 선택지. 원문과 다른 초비/초카라는 이번에 변경하지 않음."
+    }
+  ]
+}

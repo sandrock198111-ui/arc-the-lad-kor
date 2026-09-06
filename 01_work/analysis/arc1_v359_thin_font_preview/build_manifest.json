@@ -1,0 +1,54 @@
+{
+  "identity": "V359 Thin font preview (build number intentionally unchanged)",
+  "status": "STATIC_BUILD_COMPLETE_RUNTIME_PENDING_TEST_ONLY",
+  "base": {
+    "file": "arc1_v359_e7_semantic_text_repair_TEST_ONLY_7D6B0F1B.zip",
+    "sha256": "7D6B0F1B6A3C5A35B0EF61DF358278E46B261A496C57F1027D03D836AA9D6EC0"
+  },
+  "font_input": {
+    "archive": "8x4x4-fonts-all.zip",
+    "archive_sha256": "31084434DC45D383B21A8A3BE10A47869BB31E92D7C2C5AEEF91BD439D956A78",
+    "thin_member": "Thin_8x4x4.ttf",
+    "thin_ttf_sha256": "0B8DEBDD6FDEFACCD68FE1BC077D113ABF04F22644B68A807BF50B4ECE813B8C",
+    "thin_pieces_sha256": "F6CC99A24127C98D935DD73B32A20D1AF51CBD2485A6B9B0D4DE6335E258D956",
+    "hanme_control_member": "Hanme_8x4x4.ttf",
+    "hanme_control_pieces_sha256": "409ABA72F4BA2282AA5C4E4982A9EEA16FBD14FB0413A40E151537A6653E2904",
+    "pillow_version": "12.3.0",
+    "size": 16,
+    "threshold": 96
+  },
+  "output": {
+    "file": "arc1_v359_thin_font_preview_TEST_ONLY_F91B3F0B.zip",
+    "sha256": "F91B3F0BE26EDC107ABAC502D99194BB26764BF997AD0210948B2A9828735DB9"
+  },
+  "delta": {
+    "file": "arc1_v359_thin_font_preview_TEST_ONLY_COMM_delta_from_v359_E024601C.zip",
+    "sha256": "E024601C116F08E554A41B2862F926495EBE24D469893BE9A39239F99E48E285"
+  },
+  "disc": {
+    "bin": "V359_THIN_PREVIEW.bin",
+    "bin_sha256": "D0EAD1FFC4775A4C645651CE7BE57393BCBA469793913F418B9D1B8754AE5F24",
+    "cue": "V359_THIN_PREVIEW.cue",
+    "cue_sha256": "0B37D9DFDE2EB872522461C14EAC1B2F71D1B628EE551EAAF9A40F7498303D6D",
+    "layout": "v104",
+    "verification": "PASS 506/506 data LBA and 164/164 patched-member readback"
+  },
+  "changed_members_vs_v359": [
+    "COMM.IMG"
+  ],
+  "changed_bytes": {
+    "COMM.IMG": 9320
+  },
+  "glyph_scope": {
+    "logical_physical_targets": 723,
+    "runtime_physical_targets": 723,
+    "unique_hangul": 690,
+    "changed_planes": 723,
+    "mapped_thin_collisions": 0,
+    "full_11172_collision_extras": 19,
+    "mean_ink_hanme": 63.92807745504841,
+    "mean_ink_thin": 44.477178423236516
+  },
+  "preserved": "PSX.EXE, all 163 non-COMM members, all non-target COMM planes including native damage bank 804..819, quotes 738/774, compact digits/icons, E7 assets",
+  "runtime": "PENDING; intended for opening-scene visual review only"
+}

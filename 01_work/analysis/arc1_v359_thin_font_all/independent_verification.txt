@@ -1,0 +1,12 @@
+Arc the Lad 1 V359 full Thin font independent verification
+STATIC PASS / RUNTIME PENDING / TEST_ONLY; build number unchanged
+archive topology/order: PASS 164/164
+changed members: COMM.IMG only; Expected-Write PASS 9324 bytes
+font render controls: PASS exact Hanme/Thin component hashes
+Thin readback: PASS 723/723 runtime Hangul planes
+non-target preservation: PASS 1197/1197 planes
+mapped collision: 0; full 11172 collision extras: 19
+ㅇ+ㅔ local separation: PASS U+C5D0/U+C5D1/U+C5D4/U+C5D8 only
+native damage/quotes/compact digits/icons/E7/high-page assets: PASS preserved
+PSX.EXE/all DAT: PASS byte exact V359
+runtime: opening scene visually approved except corrected ㅇ+ㅔ join; global PENDING

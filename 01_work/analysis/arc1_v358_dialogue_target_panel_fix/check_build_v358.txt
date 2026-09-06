@@ -1,0 +1,15 @@
+검사 대상: arc1_v358_dialogue_target_panel_fix_TEST_ONLY_D499D9D4.zip
+  본문 2878 / 선택지 357 / E2 1431 / 제자리 1059
+
+FAIL  선택지 마커가 원판과 다른 위치: 2곳
+        1/S1023.DAT 0x47AB0
+        1/S1023.DAT 0x47B30
+FAIL  선택지 줄이 창을 넘음 (커서·다음 칸과 겹침): 69곳
+        21/S2041.DAT 0x47D5A 줄0 410px
+        21/S2041.DAT 0x47DD4 줄0 468px
+        21/S2041.DAT 0x47E2C 줄0 468px
+        21/S2042.DAT 0x47D5A 줄0 410px
+        21/S2042.DAT 0x47DD4 줄0 468px
+        21/S2042.DAT 0x47E2C 줄0 468px
+        ... 63곳 더
+exit_code=1

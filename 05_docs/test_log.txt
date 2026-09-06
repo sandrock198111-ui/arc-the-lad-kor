@@ -1,3 +1,103 @@
+2026-09-06 | V359_CURSOR_LINES_TEST | EXE 전용 범위커서 비텍스처화 | 정적/CPU PASS, 게임 실행 PENDING
+- 수정/검사 스크립트: build_arc1_v359_cursor_lines.py, verify_arc1_v359_cursor_lines.py, package_arc1_v359_cursor_lines.py. 최종 코드156B+padding+9방향table72B=328B. 기존40B packet 내부 최대32B로 변환, 1152회 CPU 반복에서 ABI/복귀/좌표/DMA/쓰기범위 통과. Capstone↔Keystone 최종 명령 전체 왕복 통과. 모든 DAT/COMM/CSV 불변, 기존 REVIEW_UPDATE2 BIN SHA 재확인. legacy 마커2/폭69 목록 동일.
+- 디스크506 data file LBA 보존, 패치164멤버 readback PASS. 최종 BIN B4C44205AFCABC5219588BC6C6C26A6C7F618AE3209ED2E277B1A0593248C511. 실제 슬라임 복구·9유형 외형·화면경계·다음 프레임 GPU 상태·PSP는 미검증. bible_current 성공 상태 유지.
+- 실패: 첫 중간 빌드는 옛 resident tail1064B 전체를 비워 후대 UI helper801FF858까지 지웠다. 추가 직접 호출 검사에서 발견하여 불합격으로 격리(REJECTED_full_tail.*, CUE DISABLED). 최종본은328B만 수정하고 이후 영역 byte-exact 보존. 최초 CPU PASS만으로 전체 안전 판정하지 않는다.
+- 도구 검증 실패: Keystone KSEG 숫자 branch 재조립은 라벨 재구성으로 해결; move alias는 canonical OR로 통일. Unicorn 독립 호출 반복의 branch-delay 내부상태 잔류는 CPU context 초기화/RAM 유지로 분리하여 최종1152회 재검사했다.
+
+2026-09-06 | HASH-9118 해결안 검토 | 원본 커서 위치 가상 복원/codec plane 대조/커서 전용 draw/활성OT/GP0 명세 | 검토만, 게임 변경 없음
+- 원위치 복원은 현재56plane 그림 및 decoder55문자/선택encoder54항목에 영향. 1/8 활성OT에는 전용 커서 FT4도 존재하므로 단순 비활성시 복원으로 동시독자 충돌을 해결할 수 없다. 비텍스처 커서가 우선 PoC 후보이나 외형 동일성/9유형/DMA/clip/GPU상태/실기 검증 미완료. solution_review.md 참조. bible_current/changelog 유지.
+
+2026-09-06 | HASH-9118 원인 추적 | RAM 6앵커/구조 VRAM/활성 OT/원본 코드/커서1650B 비교 | 설명창·LR 누락·VRAM 충돌 확인, 수정 없음
+- 3/4 배경130/110/160/38, glyph y116/y132·H16이 아래끝148까지 차지한다. 원본38px 배경 및28px 텍스트 공간 상수 유지, 6번은 별도52px 경로. LR은 DAT 프리커서 설명만 복원했으며 EXE0x82360 안내는 옛 무LR 번역 유지.
+- 1/8 활성OT725개 종료 검증. 두 활성FT4가 1번 page0F/UV0,224에서 8번 page1F/UV32,192로 달라진다. 8번 읽기 x968..975/y448..479는 범위 커서 업로드 안이며 전체1650B 원본커서 exact. 과거 목적지 안전 판정 반증. 새 빌드·CSV·세이브 수정 없이 findings.md/causes.json/cause_code.txt로 기록.
+- runtime 분석 최초 numpy 미설치 실패는 array/PIL로 바꾸어 통과. bible_current/changelog는 실제 적용/실기 성공 변경이 없어 유지. 수정 검증은 하지 않았다.
+
+2026-09-06 | HASH-9118 8개 세이브 1차 조사 | 헤더/썸네일/최신 EXE 문자열/1634 원본 glyph 대조 | 일부 확인, 원인 조사 미완료
+- audit_arc1_9118_states.py: 구 DUCCU 파서는 DUCCV를 거부했다. 강제 파싱 없이 독립 thumbnail 추출로 전환, 8개 196608B 확인. 최신 V359_REVIEW_UPDATE2 제목, 6번 LR 누락, 7번 원본 みてみて 확인. 3/4 창 소비자 및 8번 배경 원인은 미확정. 상세 issues_9118_20260906/findings.md. 게임/CSV/세이브 변경 없음. bible_current/changelog 갱신 불필요.
+
+2026-09-06 | 산으로 돌아가는 후속 대사 조사 | 원본 ZIP/DAT 바이트 일치 및 COMM 글리프 렌더 | 원문 판독 확인
+- 2873 F/SF0F1.DAT:0x47910의 원본은 山に登るのは別の用じゃ。이다. CSV의 帰る는 판독 오류다. source_check/render_source.py를 메모리상에서 대상2873으로 실행해 row_2873.png를 생성하고 확인했다. 게임/번역 CSV/빌드는 아직 변경하지 않았다. bible_current/changelog 갱신 불필요(조사만 수행).
+
+2026-09-06 | V359 남은 이름 3행 반영 | 원문 출현수/codec/제자리 용량/선택지 제어/expected-write/이웃88행/CSV3셀/전체 legacy fail/ISO readback | NAME/DISC PASS, LEGACY FAIL 유지, RUNTIME PENDING
+- 원문 조사: 실제 인물명 チョピン은 325행/326회이며 정식 한국어도 전부 초핀 326회다. チョビン은 1703 퀴즈 오답 한 곳뿐이다. 따라서 초핀/초핀으로 병합하지 않고 기존 글리프만 쓰는 초핀/초비/초스케/촌가라를 승인값으로 사용했다.
+- build_arc1_v359_remaining_names.py는 recovery2 SHA517ABAFD...와 canonical-before SHA3D95CCB8...을 고정한다. 1481 `너, 오톤이구나!!` 11/12B·1줄,1482 `내 집에 오톤이 눌러살고 있다니...` 24/27B·2줄,1703 각2/4·3/5·4/6·3/6B·각1줄. 누락글리프0,E2추가0,선택제어7개 원위치,최종재해독PASS.
+- 변경멤버는 5/S5025.DAT 22바이트와 6/S6054.DAT 5바이트뿐이다. expected-before hunk replay 및 멤버크기 불변, 같은 두 DAT의 나머지 대사88행 E2확장 토큰 불변, PSX.EXE/COMM.IMG exact를 확인했다. Bank-B 영역은 두 파일 모두 불변이다.
+- verify_arc1_v359_remaining_names.py 첫 실행은 1703 원문 자체가 0x45002의 Bank-A 주소대에 있다는 사실을 신규 슬롯 변경으로 오인해 중단했다. 승인된 1703 hunk 5바이트만 예외로 하고 같은 범위의 나머지 바이트를 전수 비교하도록 수정한 뒤 PASS했다. 이 실패는 출력 결함이 아니라 검증기 범위 오류이며 기록을 삭제하지 않는다.
+- 정식 CSV2878행을 snapshot과 대조해 승인3행의 korean 셀 외 전 필드·행이 동일함을 확인했다. 최종SHA B3F5BA97... . 사용자 dialogue_all.csv, 원문CSV, 기존BIN/CUE, 메모리카드는 수정하지 않았다.
+- check_build 전체 fail 목록은 recovery2와 최종판이 exact다: 선택지마커2,선택지폭69, 양쪽exit1; E2 1452/제자리1038/선택지357도 동일하다. 기존 부채를 해소 또는 신규 회귀로 보고하지 않는다.
+- V359_REVIEW_UPDATE2.bin SHA790683AA...: 데이터506파일 LBA불변,COMM307/667/891,PSX.EXE268481/587776B,패치164/164 disk readback PASS. ZIP SHA A66F8844... . py_compile 및 기존ZIP 재실행 byte-exact PASS. 실제 세 이름/퀴즈 정답 판정은 콜드부팅 런타임 확인 필요. bible_current 갱신 검토: 미갱신.
+
+2026-09-06 | V359_REVIEW_UPDATE 슬롯 회수·제어 복원 | 고정 SHA/expected-write replay/원본 제어 위치/최종 재해독/이웃103행/CSV 차분/전체 legacy fail 대조/mkpsxiso 및 ISO readback | 회수·디스크 검사 PASS, LEGACY FAIL 유지, RUNTIME PENDING
+- build_arc1_v359_slot_recovery.py: 해시 고정 review_all_final을 기준으로 donor3/선택지2/연출2를 적용했다. 각 donor E2 pair 전체DAT raw 참조1→0, 128B 해제 뒤 같은 파일의 선택지에서만 재사용. 전체 멤버 길이 및 expected-before hunk replay, 변경멤버 정확히3DAT, EXE/COMM byte exact를 확인했다.
+- 원본 raw와 제어 위치·순서를 확인했다. 1551은27개/가시3줄,2152는23개/가시4줄,선택지1724/1733은각7개/각항목1줄,donor는각1개다. 변경3DAT의 나머지103행은 E2 확장 토큰이 기준본과 완전히 같으며 파싱 실패0이다. 이전에 승인된208행도 이번7행을 제외하고 재대조했다.
+- 독립 source_glyph_check 에이전트도 원본 arc.zip raw 및 독립 A/B 파서로7행과이웃103행을 검사하여 차단결함0/파싱오류0을 보고했다. 2152 ‘걸맞은→위한’은 평가 뉘앙스를 조금 완화한 축약이며 런타임 연출 정상 여부를 보증하지 않는다.
+- verify_arc1_v359_slot_recovery.py는 check_build.main의 전체 fail 목록을 수집해 이전/신규71항목 exact 일치를 확인한다(마커2,폭69; 양쪽exit1). 앞6개 출력 예시와 개수만 비교한 결과가 아니다. E2는1451→1452,제자리1039→1038이다. 기존 실패를 통과로 숨기지 않는다.
+- 정식 CSV 2878행 중7개한국어셀만변경, 일본어/주소/출처/다른한국어는 LF/CRLF 정규화 후동일. snapshot은 slot_recovery/canonical_before.csv로보존하며해시26EC84DC...고정. 수정후SHA3D95CCB8... . 원문CSV/사용자dialogue_all.csv/메모리카드 미수정.
+- 전용 staging package_v359_review_update에서 mkpsxiso v104로 생성. 데이터506파일 LBA 불변,COMM307/667/891,PSX.EXE268481/587776B,패치164/164 디스크readback PASS. BIN353E79875603BC1FAC2B4C503B827CB80CC7DB4F18477CA4140584E95F445FBE,ZIP517ABAFD7486091977DBED1F0A548E61A2D12BA933B0E78FDBC61D2B735A04A5. 빌더 재실행 시 기존ZIP과 byte exact이며 덮어쓰기하지 않는다. py_compile PASS.
+- 빌드 산출물 회수1차6행(SLOT_RECOVERY) 및 2차7행(REVIEW_UPDATE)은 별도 파일로보존했다. 최종 결과/미해결3행/실기시험목록은 slot_recovery/최종결과.md 및 final_verification.json. 콜드부팅·메모리카드로 퀴즈선택/판정,카델/로크톨연출,대사종료후진행을 확인해야 한다. bible_current 갱신 검토: 실기성공미확인으로유지.
+
+2026-09-05 | UI 간격/머리 위 이름표 묶음 수정 | 입력SHA·live pointer 내부참조 가드, 독립 expected-write/문자열 readback/Capstone/산술257입력/branch target/108이름, py_compile, mkpsxiso v104/ISO readback | STATIC/DISC PASS; RUNTIME PENDING.
+- ZIP 7536D17369B8591DFC8D84D78A5C783A4268099006D8203EB274EE82C88FD4F2; BIN 9800A396FD3C36E9D6133DBA006CAFD994FD1E2AAA24029E37A5298413BC687E; EXE CDBA2C59E8CE9530D6989CF4E5D10781B0E18C03E37064B19B6C192BD84C413D.
+- 164멤버 topology/크기 유지, EXE74B 밖 모든멤버 exact. 문자열2범위와5포인터/산술4워드 밖 diff0. 이전 공격/예/정비 도움말 및 미르마나/이동된 다른문구 exact. 데이터LBA506/506 및 patched member164/164 readback PASS.
+- verifier 최초 이름표 주소0x8134C 산술 오기→실제 lui/addiu로0x81B4C 재산출; ID256을 모두 표로 오인한 검사→매니페스트 실제등록108항목으로 분모 수정. 빌더/게임산출물에는 두 verifier 수정의 영향 없음. 108항목 최대8글자(새폭130px), 모든 토큰 경계/제어코드 부재 확인. 빈 이름과 미등록ID는 지원 정상 이름으로 주장하지 않음.
+- 4개 산술명령 완전 decode 및 별도 interpreter에서 n0..256 전257건14*n+18 검산, 정적 직접 branch/jump 별도 진입0. 기존 중심정렬과 프레임 저장/그리기경로 유지. 화면 가장자리 자동clamp를 새로 구현한 것이 아니므로 경계 캐릭터 위치·반복 표시/해제는 사용자 실행 확인 필요.
+- bible_current 갱신 검토: 실행 승인 전 시험판이므로 기준선 유지. 추가 원본 E7 누락4곳은 이번 승인범위 공백/이름표와 별개로 미수정 유지.
+
+2026-09-05 | 벽돌 이름표 재조사 | 업로드 HASH-BF9F48BD1A470929_1 Zstd/RAM/active OT readback, V339→V359 helper/155이름 동일성, MIPS 디스어셈블 | READ-ONLY 원인 경로 확인, 수정/빌드 미실시.
+- 장비64/소모품32/기술59 전155항목 포인터·문자열은 V339와 동일, 폭helper64B 동일, 상태 RAM에도 해당 hook/helper 동일. 이전 전수검사에서 변경한 경로가 후속 빌드에서 되돌아간 증거 없음.
+- 현재 화면은 머리 위 아크 이름표: 테두리40x24, 좌우 여백8/2px(16px glyph cell 기준). 별도0x8015F130 경로의 12*n+16 계산과 일치. 공통 name-window helper를 고쳐도 이 경로에 적용되지 않음.
+- 추출 thumbnail은 01_work/analysis/arc1_v359_spacing_ye/current_name_state.png. 실제 영상 전체 프레임과 동일한 고해상도 스크린샷은 아니며 기하 수치는 active GPU packet 좌표에서 취득.
+- 공백 보완 작업은 사용자 '대기' 요청 이후 미적용으로 유지. bible/changelog 갱신 검토: 분석만 했으므로 승인 상태/실제 변경 기록 유지. 다음 후보는 머리 위 이름표 소비자 범위와 화면 가장자리 보정 조사.
+
+2026-09-05 | 공백/예 승인 수정 및 원본 UI 누락 조사 | frozen baseline, 독립 raw-bit oracle/expected write, 1920-plane diff, py_compile, mkpsxiso v104/readback, 원본 UI pointer census | STATIC/DISC PASS; RUNTIME PENDING.
+- ZIP SHA256 76A031522C046E54673A56EBAE304D53411F0A4C161A30D4E0750A8661D0C993. BIN SHA256 85CE6D58FEFA68445EDBBF4221E2E0A2A738455D4C5768A82321AE8513E518FF. 변경 EXE10B/COMM6B, 162멤버 및 모든 크기 보존. 506 데이터 LBA/164 patch member readback PASS.
+- 초기 audit decode bytearray key TypeError 후 bytes 반환 수정, 재실행 PASS. 게임 산출물 수정 규칙에는 영향 없음. 예의 x8 분리/타 평면 보존은 빌더를 import하지 않는 독립 packed-bit verifier로 검증.
+- 누락 조사 분모: 기존 4종 매니페스트 671고유 포인터 중 binary HUD5 제외, 일반 문자열666개. 원본 비어 있지 않은 문자열이 현재 빈 문자열이 된 사례0. 제어토큰 multiset 감소 후보5: 0x781C0 E7 02(확인 버튼 문구로 대체), 0x82348 E7 07/06(대상 변경), 0x82354 E7 01(스킬 선택), 0x82358 E7 03(돌아가기), 0x8236C E7 01(빈 곳 선택). 추가 후보는 미수정.
+- 이 조사는 알려진 EXE UI 문자열의 내용/제어토큰 경계이며 창 호출 제거, 동적 생성 UI, 전체 스토리/영상/그래픽 누락의 전수 검증은 아니다. 증거 01_work/analysis/arc1_v359_spacing_ye/ui_control_audit.csv.
+- 사용자 예 시각 확인, 공격/링 간격, 정상 입력/전환 PENDING. bible_current 갱신 검토: runtime 승인 미확인으로 기준선 유지.
+
+2026-09-05 | 공격/링 안내 공백 및 Thin 예 획 접합 read-only 조사 | 사용자 DUCCV HASH-94C3799AC130466A 상태1/2 Zstd 해제/RAM pointer readback, 현행 COMM glyph150 조회 | 원인 데이터 확인 / 수정 미적용.
+- 두 상태의 0x8234C 대응 RAM 포인터는 0x8019B150, payload E7 02 DD 10 DD 0A E7 05 DE 54 A1 DD 89 24. ○공격과 ✕링 열기 사이 A1 공백 없음. EXE file 0x80950 문자열은 종료 포함 15B, 다음 참조 문자열은 0x80961. 기존 종료 뒤 zero 2B를 포함한 17B 범위에서 항목 사이 A1 2개 추가 후보를 수용할 수 있다. 실제 변경 전 후속 경계와 허용 쓰기를 가드해야 한다.
+- 예(code97, physical150)는 현행 723 Hangul target 중 단일 소유 glyph. 16x16 bitmap에서 ㅇ/ㅖ 접합 확인. 기존 thin_rows 보정은 ㅇ+ㅔ(jung5)에만 적용되어 ㅇ+ㅖ(jung7)는 제외됨. 예 완성 bitmap 국소 보정 후보는 공용 자모/폰트 폭 변경 불필요; 같은 예의 모든 출현에 적용되며 다른 glyph 보존은 구현 후 전수 diff로 검증할 것.
+- 원본/빌드/사용자 편집기 및 상태저장 변경 없음. bible/changelog 갱신 불필요(읽기 전용 조사). 후보 구현과 실제 화면 확인은 미실시.
+
+2026-09-05 | V359 Thin 정비 화면 □/✕/START 복구 | pinned input, 기존 문자열 소유 경계/포인터 조사, 독립 decode/Expected-Write, mkpsxiso v104, ISO readback | STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING.
+- 변경 32바이트 / PSX.EXE만 변경 / 허용 범위 39바이트 밖 차이 0. 164멤버 이름·크기 유지 및 163멤버 byte exact. 첫/둘째 문자열은 종료자 포함 17/11바이트로 기존 19/12바이트 범위 안에 수용. 보수적 아이콘 24px 적용 시 가로폭 174/94px <= 내부 182px. 문자열 비공백 토큰 10/5개.
+- 초기 빌더 출력만 cp949에서 ✕ 인쇄 오류: stdout UTF-8 지정 후 동일 산출물 재검증. 초기 독립 decode DF 9A 미등재: physical 883의 택 alias 동등성을 검증한 후 재실행 PASS. 바이너리 자동 대체는 하지 않음.
+- ZIP SHA256 281D3CA41C0D32E7FD6E5E04FDBF0EF0B6F349189D6C342B57744CCA04EDF408. BIN SHA256 98271F161E9C8CB3F6F3167C71C871D2B20E37507722D2917067F0C5B48943E9.
+- 디스크 506/506 데이터 LBA 보존, COMM 307/667/891 보존, 164/164 패치 멤버 readback PASS. 실제 아이콘 팔레트/세로 정렬/선택/START/이탈·재진입 PENDING. 사용자 상태저장/메모리카드는 수정하지 않았다.
+- bible_current.txt 갱신 검토: 실제 실행 성공 미확인 시험판이므로 승인 기준선은 변경하지 않음.
+
+2026-09-04 | V359 Thin 16px 전체 적용 후보 + ㅇ/ㅔ 분리 보정(번호 유지) | Thin/Hanme 고정 TTF 재렌더, 723개 현행 한글 소유권 확인, 에/엑/엔/엘 국소 비트맵 보정, 독립 verifier, 1,920평면 전수 대조, Expected-Write, mkpsxiso v104 및 ISO 164멤버 readback | STATIC PATCH PASS / DISC INTEGRITY PASS / GLOBAL RUNTIME PENDING / TEST_ONLY.
+- 사용자 초반 화면 확인에서 Thin 자체는 승인됐고 `에` 내부의 ㅇ/ㅔ 접합만 지적됐다. 원본 Thin 비트맵에서 두 요소의 1픽셀 교집합을 재현했으며 같은 구조의 현행 매핑 글자는 U+C5D0/U+C5D1/U+C5D4/U+C5D8 네 자뿐이다. 네 자만 교집합을 제거하고 1px 빈 열을 두었으며 mapped collision은 0이다.
+- 변경 멤버는 COMM.IMG 하나, Expected-Write 9,324바이트다. Thin readback 723/723, 비대상 평면 1,197/1,197, PSX.EXE/모든 DAT/native damage/홑낫표/compact 숫자·아이콘/E7 보존 PASS다.
+- full/delta는 `D38CAB43...21A` / `40E86013...AE5`; `V359_THIN.bin`/cue는 `BC77A540...910E` / `5DC55F3D...C863`. 데이터 LBA 506/506, COMM 307/667/891, 패치 멤버 164/164 readback PASS. 메뉴·전투·후반 장면의 Thin 가독성과 네 보정 글자의 실화면은 PENDING이다.
+
+2026-09-04 | V359 Thin 16px 글꼴 초반 비교판(번호 유지) | 업로드 글꼴 ZIP/TTF SHA 고정, Hanme 360조각 재렌더 control, V359 723개 한글 plane 소유권 역검증, V336/V337 런타임 remap 반영, Thin 충돌 전수조사, 독립 verifier, mkpsxiso v104 LBA·164멤버 readback | STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING / TEST_ONLY.
+- V359 현행 한글 723평면(고유 690자)은 공식 Hanme 합성과 723/723 일치했고 Thin 교체 후에도 723/723 readback PASS다. 현재 매핑 내 동일 비트맵 충돌 0, 전체 11,172자에서는 중복 extra 19건이다. 평균 잉크는 63.928→44.477px로 약 30.4% 감소했다.
+- 변경은 COMM.IMG 9,320바이트뿐이다. 비대상 평면 1,197/1,197, PSX.EXE, 모든 DAT, 데미지 숫자 bank 804..819, 홑낫표 738/774, compact 숫자·아이콘·E7/high-page를 보존했다.
+- full/delta는 `F91B3F0B...5DB9` / `E024601C...E285`; `V359_THIN_PREVIEW.bin`/cue는 `D0EAD1FF...5F24` / `0B37D9DF...3D6D`다. 디스크 데이터 LBA 506/506, COMM 307/667/891, 164/164 멤버 readback PASS. 초반 화면 가독성·획 소실 여부는 사용자 런타임 확인 PENDING이다.
+
+2026-09-04 | V359 누락 E7 버튼 의미 문자 복구 | V358·canonical·editor ledger 해시 고정, 8개 원문 E7 의미와 현행 빈칸 대조, 기존 E2 7슬롯 caller/body/metadata 역검증, 4/S4033 Bank-A slot33 원본/V358 zero·live caller census, L/R 코드맵·wrap 검사, Expected-Write·멤버 보존 독립 검증, V358 공통 경고집합 비교, mkpsxiso v104 LBA·164멤버 readback | STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING / TEST_ONLY.
+- 최종 화면 문장은 초핀 5곳 `...커서와 결정 버튼으로...`, 승무원 1곳 `...여기저기서 결정 버튼을...`, 4/S4033 2곳 `전투 때는 L과 R을...` / `...취소 버튼을...`이며 8/8 독립 디코드가 일치했다. 미지원 글리프 0, 모든 대상 3행 이하, L=`DD D8`, R=`DE 88`이다.
+- 기존 슬롯 7개는 source caller·body filler·metadata가 V358과 동일하고 payload만 바뀐다. 새 slot33은 V358 128바이트 전부 0, 원본-안전 전제 PASS, 최종 live script `E2 A2` caller는 `0x48102` 한 곳뿐이며 metadata 30·종료자·0패딩이 정상이다.
+- 독립 verifier는 변경 멤버 7개, Expected-Write 331바이트, 164/164 아카이브 순서, delta readback, PSX.EXE/COMM.IMG/비대상 157멤버 byte exact를 PASS했다. full/delta ZIP SHA-256은 `7D6B0F1B...6EC0` / `46F9CDB1...CD0`다.
+- `check_build.py`의 V358/V359 경고 집합은 동일하다(선택지 마커 2, 폭 69). 통계만 E2 1431→1432·제자리 1059→1058로 바뀌며 새 LR 슬롯 외부화 한 건과 정확히 대응한다. 신규 경고 0이다.
+- `V359.bin`/cue는 `EA475EFC...AA19` / `3C6FB7FB...9C7F`; 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481·587776B, 패치 멤버 164/164 readback PASS다. 런타임은 사용자 콜드부팅 전이라 PENDING이다.
+
+2026-09-04 | V358 봉인 대사·2행 대상 선택창 전용 보정 | V357 해시 고정, E2 slot/caller/metadata 역검증, UI 함수 caller·분기 인바운드 조사, 문자열 픽셀 폭과 창 여백 계산, Expected-Write·멤버 보존 독립 검증, 결정적 2회 빌드, V357 공통 경고집합 비교, mkpsxiso v104 LBA·164멤버 readback | STATIC PATCH PASS / DISC INTEGRITY PASS / RUNTIME PENDING / TEST_ONLY.
+- `F/SF0F1.DAT` slot0은 63B에서 62B로 바뀌었고 `알겠느냐? 우리에게 봉인의 기술 따위는 필요 없다. 산으로 돌아가는 건 다른 볼일이 있어서다.`로 디코드된다. 마침표는 0x21 두 개, 물음표는 D1 한 개이며 E2 caller `0x47910`, metadata `0x2D`, 종료자·패딩은 유지됐다.
+- PSX.EXE는 file `0x4C2EC`(폭 172→198), `0x4C2F4`(높이 34→40), `0x4C334`(둘째 행 Y 129→131)의 3바이트만 달라진다. 전용 함수 RAM `0x80166AC4`의 호출자는 `0x80166898` 하나이고 패치 워드로 향하는 추가 분기·점프는 0건이다. 최종 창은 `(74,111,198,40)`, 행 Y는 115/131, 여백은 8/8/4/4px다.
+- 독립 verifier는 164/164 순서·크기, 변경 멤버 2개, Expected-Write 총 62바이트, COMM.IMG와 모든 비대상 멤버, delta readback을 다시 읽어 PASS했다. full/delta ZIP SHA-256은 `D499D9D4...8061` / `AB190119...164A`다.
+- `check_build.py`는 V357/V358 모두 본문 2878·선택지 357·E2 1431·제자리 1059, 상속 마커 2·폭 69 경고로 exit 1이며 파일명 줄 외 출력 차이는 없다. `V358.bin`/cue는 `AEBB9833...AEA3` / `DFA00826...CF27`; 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481·587776B, 패치 멤버 164/164 readback PASS다. 런타임은 사용자 콜드부팅 전이라 PENDING이다.
+
+2026-09-03 | V357 사용자 검수 전체 대화 Bank-B 통합 | canonical/export 키 대조 후 중복 화자·CSV 복구 오류 교정, 2,878행 codec/editor self-test, 353행 재삽입, 973개 제어토큰·E2 슬롯 독립 역검증, 결정적 2회 빌드, V356 경고집합 비교, mkpsxiso v104 LBA·164멤버 readback | STATIC PATCH PASS / DISC INTEGRITY PASS / USER-REVIEWED / RUNTIME PENDING / TEST_ONLY.
+- canonical은 미지원 글리프 0, 미번역 0, CSV 열 이상 0, 슬롯 부족 0을 통과했다. 최종 SHA-256은 `F751A145C08423067CED1D5AF288590E3F1E2E38514103D43EF531681FA2E274`; target ledger는 353개 고유행/72 DAT, SHA-256 `0DC7ADA11DE5F1A99D64BC5B845E802F38AA7CC1F1DA14873D05BA3C476462F8`이다.
+- 빌더는 `7/S7022.DAT:0x488F0`을 `출전자: 라마다 사원에서 수행하면 버스터 칭호를 받을수 있나봐.`로 한 번만 출력한다. `21/S2041.DAT:0x483D4`의 E6 1개+E4 3개와 `32/S3061.DAT:0x47BB4`의 E6 3개+E4:29 1개를 포함해 원본 E4/E5/E6/E7/E8 973개를 같은 오프셋·바이트로 보존했다.
+- 독립 verifier는 빌더/placement audit를 import하지 않고 최종 DAT의 E2를 다시 펼쳐 화면 문장 353/353, 선택지 134/134를 canonical target과 일치시켰다. 참조 슬롯은 Bank-A 251/Bank-B 54이며 종료자, 0패딩, `slot+0x7F` skip을 전수 확인했다. 비텍스트 199행(아카이브 밖 31행 포함)과 COMM.IMG는 byte exact, Expected-Write는 15,729바이트다.
+- 같은 입력으로 두 번 빌드한 full/delta SHA-256은 매번 `34854022BB0CA1C17BF4D798B8405009F8CC04914253E1D48476B2A2DBC3397A` / `5A285CFDCFD686E114B2B3D814C6FB1079FF0B49DAFE2A8EB7C3604BF2152783`이었다. 변경 멤버는 72 DAT+PSX.EXE=73개, 나머지 91개 멤버는 V354와 동일하다.
+- `check_build.py`는 V356과 V357 모두 상속 선택지 마커 2·폭 69로 exit 1이지만 파일명 줄을 제외한 출력 차이는 0이다. `V357.bin`/cue는 `4F32BD87007EB3A101786BCA10D392AA98EA45F40AED990FC0EC81E880F43E42` / `0C7113777366A7D2FEF773D6FE07E4FE9F469B71FDCC7479F679EB06855633F4`; 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481·587776B, 패치 멤버 164/164 readback PASS다. 런타임은 사용자 콜드부팅 전이라 PENDING이다.
+
 2026-09-02 | V356 전체 대화 Bank-B 실사용 검토판 | 비텍스트 거짓 양성 199행 원본 고정, canonical 2,878행/글리프/슬롯 동적 검사, 343행·65 DAT 재삽입, Bank-A/B 배치, 제어토큰·Expected-Write 독립 검증, V354 회귀경고 집합 비교, 결정적 재빌드, v104 ISO LBA 506/506·164/164 readback | STATIC PATCH PASS / DISC INTEGRITY PASS / REVIEW_ONLY / RUNTIME PENDING / TEST_ONLY.
 - 실제 대화가 아닌 바이너리·외부표 199행을 `v356_nontext_exclusions.csv`로 고정했다. 31행은 164멤버 패치 아카이브 밖에 있어 원본 ZIP에서 직접 확인했고, 199/199 모두 byte exact다. 편집기 self-test는 rows=2878, missing_unique=0, untranslated=0, slot_shortage=0을 재현했다.
 - 최종 대상은 343행/65 DAT(`빌드대기` 162, `선택지` 134, `B검수필요` 47)이다. `1/S1023.DAT:0x47AB0`은 V354에 이미 표시되던 `피해 줄이기 1|다음`과 canonical을 일치시켜 불필요한 재삽입을 제거했다. 새로 초안 번역한 47행은 `v356_bankb_review.csv`에 별도 표시했고 사용자 승인 전 배포 금지다.
@@ -2964,3 +3064,50 @@ check_build.py 통과. SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FB
 - `V354.bin`은 632,495,136바이트이며 SHA-256 `C864CA8421069D60A38F8502D33D99589A39DC1C94B72635C4A9C44FB711382D`다. 데이터 LBA 506/506, COMM 307/667/891, PSX.EXE LBA268481·587776B, ZIP 멤버 164/164 디스크 readback PASS다.
 - V354의 두 교정 문장과 다섯 `재` 표시는 사용자 콜드부팅 장면 확인 전이므로 TEST_ONLY/RUNTIME PENDING이다. 회귀 체크로 V353 소환 회복과 MP 차감도 다시 확인한다.
 - `check_build.py`를 V353과 V354에 각각 실행했다. 둘 다 선택지 폭 75·마커 2·3줄 초과 18로 exit 1이며 검사 대상 파일명 줄을 제외한 출력은 byte-equivalent다. 이는 기존 상속 부채이고 V354 신규 회귀는 0이다.
+
+2026-09-03 | V356 편집기 내보내기 → 정식 번역표 복구 | SHA 고정 키 대조, 원자적 반영, CSV 전수 파싱, `review_editor.py --self-test`, `v354_dialogue_codec.py`, 변경 24행 개별 슬롯 계획 검사, `git diff --check` | PASS (게임 빌드 미실행)
+- 입력 내보내기/정식표 SHA-256은 각각 `21AC3E53075A4951A7953928D1AABC13D9DA03CD640125B6B4EFF43B8AC473F1` / `6AB19301CF92F51DCCAC5ADC7F4251F43A7032A0FDC8D7271BB5C75F2D856EBE`였다. 2,878행, 키 대칭차 0, 내보낸 제안 차이 45건을 확인했다.
+- 제안 45건 중 `인류`가 들어간 22건은 사용자 지시에 따라 기존 `인간` 문장으로 되돌렸고, 제안 23건과 `파렌시아→팔렌시아` 1건을 반영했다. 최종 정식표 SHA-256은 `E9E452ED0AB3CC7132B56C7BF44A12D849C6F95623E5E5997523A74934E90A68`이다.
+- 전체 CSV는 2,878/2,878행 모두 정확히 5열이고 출처 값도 전부 `existing/new/blank`다. 편집기 self-test는 `missing_unique=0`, `untranslated=0`, `csv_field_issues=0`, `slot_shortage=0`, `5/S5013.DAT_balance=14/48`로 PASS했다.
+- 변경 번역 24행은 inline 13행, 기존 Bank-A 슬롯 11행, Bank-B 0행으로 배정 가능했고 미지원 글리프·4줄 초과·126바이트 초과·미배정 슬롯이 모두 0이었다. 새 게임 바이너리는 생성하지 않았으므로 런타임 판정은 하지 않았다.
+
+2026-09-05 | 슬롯 회수 후보 read-only | 최신 ZIP 단독 E2참조/skip/원문span/후보encoding | 후보 길이PASS, 실제 적용 미실행
+- 6/S6054 1720 B6 34→31/32B,1717 B5 17→15/15B,1743 B14 25→19/21B. 예비1726 B8 38→28/29B. 후보 누락glyph0,해당 E2쌍 전체DAT 각1회. 상위3개는서로다른slot이므로3개회수가능.
+- 보류1724 신규2slot,1733 신규1slot 필요(노랑은기존B11유지). 상세 slot_recovery_candidates.md. 다른보류파일의 글리프/1B span 문제를슬롯부족으로간주하지않음. 정식CSV/게임미변경,bible/changelog성공상태갱신없음.
+
+2026-09-05 | V359_REVIEW_ALL 통합 시험판 | 누적 삽입, 독립 코드검토, 최종208행 재해독/control 비교, mkpsxiso 및 디스크 readback | STATIC/DISC PASS, RUNTIME PENDING
+- 원본 ZIP 해시와 고정 UI_BUNDLE 해시를 검사하고 원본 멤버+고정 baseline 차분을 재구성했다. 후속 승인 변경은 expected-before hunks로 replay, 행간 중복write0(독립검토), 멤버 크기/EXE/COMM/포함된 비대사 보호영역 동일성 확인. 개별 삽입뿐 아니라 최종 current에 대해208행을 다시 해독하고 제어코드 순서를 전부 비교했다.
+- 독립 검토에서 공유 payload 재사용 시 free pool 잔존 위험을 지적하여 재사용 slot을 free_a/free_b에서 제거하도록 수정했다. 현재 계획에서 기존 발현은 없었으며 수정 전후 산출물 ZIP 해시 동일. 재실행 byte-exact 통과.
+- check_build.py는 이전/신규 모두 마커2,폭69 경고(exit1). E2 1432→1451/제자리1058→1039. 출력된 경고 항목/개수의 신규 증가 없음. 기존 경고는 해소됐다고 보고하지 않는다.
+- 원본507파일 대비 데이터506개 LBA 불변, COMM DAT307/IMG667/SND891 유지, PSX.EXE268481/587776B, 패치164/164 멤버 disk readback PASS. mkpsxiso는 새 전용 staging을 사용했으며 기존 TEST이미지/메모리카드에 쓰지 않았다.
+- 최종 canonical 추가89셀 수정 확인. 전후2878행, 한국어 이외 보호 열 동일(LF/CRLF 정규화), 보류7행 불변. 원문17개 행은 pristine bytes match 및 글리프 PNG로 직접 검증.
+- 初回 dry-run 비대사 보호 목록 중 baseline ZIP에 없는 9/S9041.DAT 조회로 KeyError: 출력 전 실패. baseline 포함 멤버만 비교하고 비포함 원본은 disc stage pristine 그대로 유지하도록 조건 수정 후 통과.
+- bible_current 갱신 검토: 최종 실행 성공 미확인으로 변경하지 않음. 실제 일반대화/연출/선택지/보상 변수와 기존 회복·MP 동작 런타임 회귀는 남아 있음.
+
+2026-09-05 | 검수안 승인 조건부 적용 | 메모리 누적 배치/정확한 변경 범위 replay/수정문 재해독/CSV 셀 비교 | STATIC PASS, 게임 빌드·런타임 미실행
+- qualify_dialogue_review_20260905.py: 215건 중 99건 통과, 20건 현행 일치, 96건 보류. 파일별 순차 누적 배치에서 새 슬롯 할당 18개. PSX.EXE/COMM.IMG 불변, 모든 멤버 크기 불변, expected-before patch replay 결과와 placement 결과 일치, 수정 99문장 재해독 일치.
+- snapshot 대비 정식표 99개 한국어 셀만 변경, 나머지 2,779행 보존, 일본어/키/출처 보호 열 동일(LF/CRLF 정규화 비교). 비대사 보호 입력은 변경하지 않았다.
+- 첫 두 apply_patch 시도는 hunk 형식 및 원문 form-feed를 splitlines가 분리하는 문제로 검증 실패했고 쓰기를 하지 않았다. LF만으로 hunk를 구성한 세 번째 적용 성공 후 위 셀 비교를 통과했다.
+- 보류 96건은 제약 실패와 추가 검증 필요를 함께 포함하며 영구 불가능 판정이 아니다. 게임 결과물은 만들지 않았고 편집기 내보내기 사용자 원본도 변경하지 않았다.
+
+2026-09-05 | 로맨싱 스톤 위치 문장 위험 조회 | V359_UI_BUNDLE read-only 및 codec 측정 | 제자리 길이 PASS, 적용/런타임 미실행
+- 436행 21/S2045.DAT:0x496A6의 원문 영역 104B, 현재 inline 번역 77B이며 나머지는 A1 패딩이다. 제안 '초핀: 로맨싱 스톤의 위치를 알아냈습니다. 토우빌, 유적 던전, 고겐 님, 마지막은 아크 님 부친께 있던 듯합니다.'는 83B, 미지원 글자 0, 기존 228px exclusive 계산 4/4줄이다. 새 E2 슬롯 없이 21B 패딩을 남길 수 있다.
+- 현재 inline 본문에 E2/E4..E8 토큰 없음. 원문 E6 줄 구분은 현행에서도 이미 재흐름된 상태다. 현행 영역 내 치환만 검토했으며 원본 구조 재삽입이나 전역 제어코드 삭제를 승인하지 않는다. 비슷한 다른 행은 두 대사로 분리된 구조이므로 긴 문장 일괄 치환 대상이 아니다.
+- 번역표/게임 미변경. 4줄 실제 표시와 넘침은 변경 빌드 후 확인 필요. bible_current/changelog 성공 기준 변경 없음.
+
+2026-09-05 | 라마다 수행 선택지 5곳 조회 | V359_UI_BUNDLE ZIP read-only, 원문 span/현재 바이트/인코딩 비교 | 제자리 길이 PASS, 적용/런타임 미실행
+- 402/797/1387/1597/1832행(21/S2045,31/S3014,5/S5013,6/S6014,7/S7012)의 선택지 본문 58바이트가 현재 모두 동일하다. 세 번째 항목 span [35,45)는 10바이트이며 현재 라마다 수행 7바이트+A1 3바이트다.
+- 라마다사 수행은 기존 인코더 8바이트, 미지원 글자 0, 한 줄이다. 해당 5곳은 이 문구 변경에 E2 추가 슬롯이 필요 없고 2바이트 패딩을 유지할 수 있다. 다른 세 항목과 E5/E6 위치 변경이 필요 없다. 정식표/게임 파일은 변경하지 않았다.
+
+2026-09-05 | 대사 전수 1차 검수/사원 표기 | CSV 파싱, 후보 행키 대조, 편집기 headless 측정, 보고서 재생성, py_compile | PASS (빌드/런타임 미검증)
+- 정식표 2,878행 모두 5열. 라마다 사원/라마다사원 잔존 0. 사용자 지시 용어 21행 외 번역 변경 없음.
+- review_a/b/c 독해 범위 1..960 / 961..1920 / 1921..2878, 보호 제외 68+55+76=199행. 후보 37+74+104=215건.
+- report_dialogue_review_20260905.py 실행 및 py_compile PASS. 모든 후보 파일/오프셋을 정식표 행키와 assert 대조했다.
+- 복원 71건 중 59건은 기존 V354-origin+Bank-B 편집기 개별 변경 추정 통과, 12건 선택지 템플릿 검증 보류. 최신 V359 삽입/제어코드/누적 슬롯 배치 검증은 수행하지 않았다. 복원 가능 확정 건수로 보고하지 않는다.
+2026-09-06 | GitHub 복구 사전 검사 | git status/diff, origin fetch, 양측 이력 비교, 바이너리/대화 로그 제외 범위 확인 | 원격 분기 충돌 0, 커밋/푸시 수행 후 별도 결과 확인
+- 검사 당시 HEAD와 origin/main의 양측 전용 커밋 수는 0/0, 마지막 기록은 V356의 1583991이었다. 로컬 미커밋 결과물은 보존한 채 안전한 텍스트 코드/번역/검증 자료만 선택한다.
+- 사용자가 V359_CURSOR_LINES_TEST 슬라임/커서 증상 해결을 확인했다. 광범위 런타임 회귀 테스트의 대체 근거로 사용하지 않는다. V360 빌드/런타임 검증은 아직 미수행이다.
+- 커밋 후보 143개 텍스트 파일의 크기/문자 인코딩/금지 경로/대표 인증키 패턴을 검사했다. 신규 Python 35개 AST 구문 검사 PASS. 정식표 2878행×5열, 편집 내보내기 2878행×9열, V357 대상 353행×9열 파싱 PASS. HEAD 대비 정식표 파일/주소/일본어 열 변경 0, 한국어 241셀 차이, 이전 CSV 열 분리 오류 4행의 출처값은 new로 복구된 상태다.
+- verify_arc1_v359_cursor_lines.py 재실행: 9유형×128프레임=1152 CPU 사례 PASS, 보존 레지스터/스택/출력 범위 PASS. GPU 런타임 검증을 새로 수행한 것은 아니다.
+- 코드/.gitignore/주요 문서의 staged diff --check PASS. CSV의 원문 화자 끝 공백과 생성 HTML의 기존 줄끝 형식 경고는 남겼으며, 이를 없애려고 사용자 번역/원문 데이터를 일괄 정리하지 않았다. UTF-16 BOM 테스트 로그 3개는 텍스트임을 확인했다.
+- 첫 파일 목록 검사는 Windows 기본 cp949 디코딩으로 실패해 쓰기 전에 중단했다. UTF-8 명시 및 UTF-16 BOM 판별 후 통과했다. 출력 한 번도 cp949 콘솔 변환에 실패했으나 스테이징 결과/파일 내용에는 영향이 없었다.

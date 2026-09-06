@@ -1,0 +1,14 @@
+V358/V359 check_build comparison
+
+V358: body=2878 choices=357 E2=1431 inline=1059
+V359: body=2878 choices=357 E2=1432 inline=1058
+
+Inherited warning set, identical in both builds:
+- choice marker position differs from original: 2
+  - 1/S1023.DAT 0x47AB0
+  - 1/S1023.DAT 0x47B30
+- choice line exceeds window: 69
+
+Interpretation:
+- No new warning was introduced by V359.
+- E2 +1 and inline -1 exactly match externalizing the 4/S4033 LR help sentence to verified-free Bank-A slot33.

@@ -1,0 +1,2 @@
+﻿screen,function_ram,sole_caller_ram,box_x,box_y,box_width_before,box_width_after,box_height_before,box_height_after,line1_y,line2_y_before,line2_y_after,expected_margin
+two-line target selection,0x80166AC4,0x80166898,74,111,172,198,34,40,115,129,131,8px left/right; 4px top/bottom; no 16px row overlap

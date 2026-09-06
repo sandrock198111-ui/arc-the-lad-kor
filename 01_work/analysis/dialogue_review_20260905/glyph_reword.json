@@ -1,0 +1,25 @@
+{
+  "status": "DRAFT_ALTERNATIVES / INDEPENDENT_REVIEW_REQUIRED / NO_CANONICAL_OR_GAME_CHANGE",
+  "missing_field": "Missing glyphs in previous proposal; every non-null text below has zero missing glyphs with review_editor V354 codec.",
+  "rows": [
+    {"row":270,"text":"대신: 흥! 계획은 조금 틀어졌지만, 너희들 덕분에 수고를 줄였군.","reason":"手間が省けた의 수고가 줄었다는 뜻과 앞뒤 대신 대사의 거만한 말투를 보존한다.","missing":["덜"],"context_uncertain":false},
+    {"row":640,"text":"스메리아 왕: 대신 안델의 말에 넘어간 바로 나였다.","reason":"639행의 요슈아를 보낸 것은에 이어지는 주어가 바로 나였다는 구조를 살리고 そそのかされた를 말에 넘어가다로 표현한다. 연출 제어 템플릿은 별도 검증 필요.","missing":["꾐"],"context_uncertain":false},
+    {"row":1075,"text":"은혜의 정령: 직접 얻은 경험을 살려 올바른 길을 찾아 나아가세요.","reason":"身を持って知った経験을 직접 얻은 경험으로 자연스럽게 표현하고 정령의 권유를 보존한다.","missing":["겪"],"context_uncertain":false},
+    {"row":1125,"text":"병사2: 그런데 정말 잘 타더군.","reason":"앞 행의 저승 언급과 燃えた의 회상을 따라 이미 불탄 일을 돌아보는 과거 표현을 쓴다.","missing":["탔"],"context_uncertain":false},
+    {"row":1176,"text":"나이 때문인가...","reason":"としかのお의 나이 원인 추측을 보존하는 대안. 기존 분기 소비 맥락 보류는 해제하지 않는다.","missing":["탓"],"context_uncertain":true},
+    {"row":1177,"text":"나이 때문이 아니잖아.","reason":"としじゃねえよ의 나이 원인 부정을 보존하는 대안. 기존 분기 소비 맥락 보류는 해제하지 않는다.","missing":["탓"],"context_uncertain":true},
+    {"row":1179,"text":"나이 때문이지.","reason":"としじゃよ의 나이 원인 단정을 보존하는 대안. 기존 분기 소비 맥락 보류는 해제하지 않는다.","missing":["탓"],"context_uncertain":true},
+    {"row":1203,"text":"나이 때문이 아니잖아.","reason":"としじゃねえよ의 나이 원인 부정을 보존하는 대안. 1200행과 연결되는 나이 농담의 소비 맥락 보류는 해제하지 않는다.","missing":["탓"],"context_uncertain":true},
+    {"row":1279,"text":"그런 걸 잘 아는 동료가 있으면 좋았을 텐데.","reason":"앞 행의 아이템 효과 조사와 이어지는 고겐 언급을 따라 詳しい를 잘 아는으로 표현한다.","missing":["밝"],"context_uncertain":false},
+    {"row":1467,"text":"뭔가 수입이 될 만한 이야기인가?","reason":"金になる의 금전적 이익 질문을 수입이 되다로 보존한다. 가치 일반을 뜻하는 기존 값이 되다는 피한다.","missing":["돈"],"context_uncertain":false},
+    {"row":1658,"text":"아무것도 모르는 줄 알아? 못난 짓은 그만둬.","reason":"뒤 행의 거울에 드러난 몬스터 정체 폭로에 맞춰 모른다고 생각하느냐는 질책과 みっともない의 수치스러운 행동 비난을 보존한다. 화자 및 시각적 의미의 기존 불확실성은 독립 리뷰 대상으로 유지한다.","missing":["꼴"],"context_uncertain":true},
+    {"row":1703,"text":null,"reason":"HELD: チョビン은 인명 구별 퀴즈의 선택지이므로 빈을 다른 글자나 동의어로 대체할 수 없다.","missing":["빈"],"context_uncertain":true},
+    {"row":1733,"text":null,"reason":"HELD: 초코 머리빛 퀴즈의 ちゃいろ를 정확히 전달할 자연스러운 기존 글자 대안을 확보하지 못했다. 갈 또는 다른 색으로 바꾸지 않는다.","missing":["색"],"context_uncertain":false},
+    {"row":2272,"text":"물의 정령: 그런데 이런 지하 저 아래서 조용히 지내며 누구에게도 고맙다는 말을 못 듣고 있구나.","reason":"地下深く를 지하 저 아래, ひっそりと를 조용히 지내다로 표현하여 깊이와 고요한 처지를 살린다. 감사받지 못하는 서운함도 보존한다.","missing":["깊","홀"],"context_uncertain":false},
+    {"row":2273,"text":"물의 정령: 참 우습지 않니? 이 나라는 원래 풍요로운 나라였단다.","reason":"앞 행에서 감사받지 못하는 처지를 말한 뒤 わらっちゃうじゃないの로 자조하는 의미를 살린다. 플레이어에게 얕보지 말라고 명령하지 않는다.","missing":["웃"],"context_uncertain":false},
+    {"row":2318,"text":"아나운서: 매우 안타까운 소식을 전해 드려야 합니다.","reason":"悲しいお知らせ의 슬픔을 전하는 뉴스 예고로 자연스러운 안타까운 소식을 쓴다. 기존 서러운의 억울함 의미를 없앤다.","missing":["픈"],"context_uncertain":false},
+    {"row":2460,"text":"아프기는 싫지만, 그래도 할까?|예|그만","reason":"고통은 싫으나 할지 묻는 기존 리뷰 해석을 아프기는 싫지만으로 보존한다. 선택지 예/그만 및 순서를 유지한다. 추출 원문 첫 구절 ひいの의 손상 해석은 독립 검토 필요.","missing":["픈"],"context_uncertain":true},
+    {"row":2594,"text":"오오, 이런 곳에 진짜 헤모지가 있구먼.","reason":"じゅんせい의 도덕적 순수함 오해를 피하는 진짜 대안. 순종과 진짜 사이의 종류/변신 구별 의미는 기존 원문 해석 보류를 유지하여 독립 리뷰한다.","missing":["종"],"context_uncertain":true},
+    {"row":2734,"text":null,"reason":"HELD: おどりましょう의 춤 제안을 정확하고 자연스럽게 보존하는 기존 글자 표현을 확보하지 못했다. 댄스도 댄 누락. 놀아요는 춤 의미를 지우므로 대안으로 채택하지 않는다.","missing":["춤"],"context_uncertain":false}
+  ]
+}

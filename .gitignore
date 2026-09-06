@@ -95,3 +95,11 @@ Desktop.ini
 01_work/analysis/**/*.backup
 01_work/analysis/**/PSX.EXE*
 01_work/analysis/**/COMM.IMG*
+
+# Local reconstruction payloads and rejected binary prototypes are not reports.
+01_work/analysis/**/baseline_composition.json
+01_work/analysis/**/expected_writes.csv
+01_work/analysis/**/*.DISABLED
+
+# Conversation exports are local working context, not project deliverables.
+05_docs/conversation_continuation_*.txt

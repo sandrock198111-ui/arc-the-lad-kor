@@ -1,0 +1,113 @@
+{
+  "version": "V359",
+  "result": "PASS_STATIC_RUNTIME_PENDING",
+  "full": {
+    "file": "arc1_v359_e7_semantic_text_repair_TEST_ONLY_7D6B0F1B.zip",
+    "sha256": "7D6B0F1B6A3C5A35B0EF61DF358278E46B261A496C57F1027D03D836AA9D6EC0"
+  },
+  "delta": {
+    "file": "arc1_v359_e7_semantic_text_repair_TEST_ONLY_delta_from_v358_46F9CDB1.zip",
+    "sha256": "46F9CDB15F8C57C6F394F14BD67B41089C64156A7DFF72DD859F4C5C92DDFCD0"
+  },
+  "checks": {
+    "archive_topology_order": "PASS 164/164",
+    "changed_members": [
+      "21/S2045.DAT",
+      "31/S3013.DAT",
+      "4/S4033.DAT",
+      "5/S5013.DAT",
+      "6/S6014.DAT",
+      "7/S7012.DAT",
+      "8/S8013.DAT"
+    ],
+    "expected_writes": "PASS 331 bytes in seven DAT members",
+    "semantic_decode": [
+      {
+        "member": "21/S2045.DAT",
+        "source": "0x49292",
+        "disk_id": "0x9D",
+        "slot": "0x45E00",
+        "metadata": 53,
+        "text": "초핀: 그때 커서와 결정 버튼으로 링 안의 기술을 골라 아이콘 위치를 변경할 수 있습니다.",
+        "encoded_bytes": 59,
+        "rows": 3
+      },
+      {
+        "member": "31/S3013.DAT",
+        "source": "0x4855E",
+        "disk_id": "0x84",
+        "slot": "0x45180",
+        "metadata": 40,
+        "text": "승무원: 또 자유롭게 돌아다닐 수 있는 곳에서는 여기저기서 결정 버튼을 눌러 보십시오.",
+        "encoded_bytes": 57,
+        "rows": 3
+      },
+      {
+        "member": "4/S4033.DAT",
+        "source": "0x48156",
+        "disk_id": "0x8F",
+        "slot": "0x45700",
+        "metadata": 24,
+        "text": "프리 커서일 때는 취소 버튼을 누르면 원래대로 돌아와.",
+        "encoded_bytes": 37,
+        "rows": 2
+      },
+      {
+        "member": "5/S5013.DAT",
+        "source": "0x4927E",
+        "disk_id": "0x9E",
+        "slot": "0x45E80",
+        "metadata": 53,
+        "text": "초핀: 그때 커서와 결정 버튼으로 링 안의 기술을 골라 아이콘 위치를 변경할 수 있습니다.",
+        "encoded_bytes": 59,
+        "rows": 3
+      },
+      {
+        "member": "6/S6014.DAT",
+        "source": "0x4922A",
+        "disk_id": "0x9C",
+        "slot": "0x45D80",
+        "metadata": 53,
+        "text": "초핀: 그때 커서와 결정 버튼으로 링 안의 기술을 골라 아이콘 위치를 변경할 수 있습니다.",
+        "encoded_bytes": 59,
+        "rows": 3
+      },
+      {
+        "member": "7/S7012.DAT",
+        "source": "0x48D22",
+        "disk_id": "0x9C",
+        "slot": "0x45D80",
+        "metadata": 53,
+        "text": "초핀: 그때 커서와 결정 버튼으로 링 안의 기술을 골라 아이콘 위치를 변경할 수 있습니다.",
+        "encoded_bytes": 59,
+        "rows": 3
+      },
+      {
+        "member": "8/S8013.DAT",
+        "source": "0x47D10",
+        "disk_id": "0x91",
+        "slot": "0x45800",
+        "metadata": 53,
+        "text": "초핀: 그때 커서와 결정 버튼으로 링 안의 기술을 골라 아이콘 위치를 변경할 수 있습니다.",
+        "encoded_bytes": 59,
+        "rows": 3
+      },
+      {
+        "member": "4/S4033.DAT",
+        "source": "0x48102",
+        "disk_id": "0xA2",
+        "slot": "0x46080",
+        "metadata": 30,
+        "text": "전투 때는 L과 R을 함께 누르면 프리 커서가 돼.",
+        "encoded_bytes": 38,
+        "rows": 2
+      }
+    ],
+    "existing_slots": "PASS seven callers/bodies/metadata preserved",
+    "new_slot": "PASS 4/S4033 Bank-A slot33 was zero/unreferenced; E2:A2 sole script caller",
+    "lr_codes": "PASS L=DD D8 (physical 435), R=DE 88 (physical 610)",
+    "psx_comm_non_targets": "PASS byte exact V358",
+    "delta_readback": "PASS"
+  },
+  "runtime": "PENDING user cold boot and eight help-line review"
+}
