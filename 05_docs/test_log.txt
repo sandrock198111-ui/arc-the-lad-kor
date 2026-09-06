@@ -1,3 +1,15 @@
+2026-09-06 | V363_DIALOGUE_TRIAL_TEST | DAT/디스크 정적 PASS / 새 대사·커서 런타임 PENDING
+- 동일입력 ZIP재생성 exact. 독립 쓰기범위/길이/슬롯종료·completion/글리프 인코딩 및 선택 E5/E6 위치검사 PASS. 기존 legacy 실패 목록/건수 동일. 별칭 인코딩으로 최초 oldtext 재인코딩 exact 검사가 실패해, 고정ZIP해시+기존문자 디코딩으로 기대값을 검증했다. 검증기 괄호 문법 오류 수정 후 통과.
+- 원본 새staging에서 V363 생성, 506data LBA/164readback PASS. 30변경raw sector+이전30 EDC/ECC60 PASS, 507extent/size동일, 허용DAT/ISO timestamp외 변화0.
+- 사용자세이브/메모리카드/이전디스크 미수정. 실제커서 양쪽선택/끝이동/분기 및 새대사 GPU는 미검증. bible_current 성공점 유지, changelog 실제변경 기록, codex_notes 확인사실 추가.
+
+2026-09-06 | DC429 상태 6개 후속 조사 | ANALYSIS ONLY / 수정빌드 없음
+- audit_arc1_dc429_followup.py로 6개 상태의 고정 대사 객체/VRAM을 읽었다. 첫 실행의 object_at tuple 취급 오류를 수정한 뒤 재실행 PASS. 입력 상태/원본/빌드에는 쓰지 않았다.
+- #1666의 66토큰과 runtime count/limit64 및 마지막 지. 누락, #1697 자동/강제 개행 중복, #1697~1699 스승/사범 혼용을 확인했다.
+- 6/S6054.DAT:0x4395A의 원문/현행 바이트 동일성과 기존 CSV 누락을 확인하고 원본 COMM로 직접 글자를 렌더했다. 선택지 이동 테스트는 수행하지 않았으며 기존 커서 수정 보존이 필수다.
+- 2878행 실제 E2 확장 검사에서 단순 스트림2427/64초과 후보8. 나머지451과 자동개행 전수조사는 미완료. 첫 전체 검사에서 full ZIP에 없는 DAT를 찾는 오류 후 원본 fallback으로 수정하고 재실행했다. 후보를 전부 확정 결함으로 세지 않는다.
+- 보고서: 01_work/analysis/dc429_followup/README.md. bible_current 성공 기준 유지, 게임 변경 없어 changelog 추가 불필요.
+
 2026-09-06 | V362_KOREAN_TITLE_TEST | COMM 타이틀 부제/칼날 보존 | STATIC/CPU/DISC PASS, COLD-BOOT GPU PENDING
 - audit_arc1_title_state.py: 원본/V361/사용자DC429 VRAM의 타이틀176128B 전체동일, COMM전체229376word 무수정RGB왕복/STP보존 PASS. 실제FT4 tpage106/10A의256×256+88×256 소비와 별도PUSH START26/96×16 확인. 기존상태를새빌드실행증거로취급하지않는다.
 - build_arc1_v362_korean_title.py: 원본/V361/이미지/CSV SHA고정, same-inputZIP두번byte-exact, 허용ROI와칼날214픽셀보호. 첫preview는5개검정shadow의RGB555zero검출로출력전중단. 투명구멍대신0x0421인코딩수정후PASS. 첫preview주변사각색경계는배경margincoverage로보완후native그림재검토. 최종변경4719pixel/8911B, 새투명픽셀0, 전체STP동일.
