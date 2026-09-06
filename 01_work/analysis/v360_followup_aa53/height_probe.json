@@ -1,0 +1,85 @@
+{
+  "scope": "RAM-copy-only call of existing geometry updater; not a patched build or dynamic row selector",
+  "results": [
+    {
+      "slot": 1,
+      "requested_height": 28,
+      "polygon_y_extent": [
+        110,
+        138
+      ],
+      "changed_bytes": 25,
+      "writes_confined_to_panel": true
+    },
+    {
+      "slot": 1,
+      "requested_height": 46,
+      "polygon_y_extent": [
+        110,
+        156
+      ],
+      "changed_bytes": 0,
+      "writes_confined_to_panel": true
+    },
+    {
+      "slot": 2,
+      "requested_height": 28,
+      "polygon_y_extent": [
+        110,
+        138
+      ],
+      "changed_bytes": 25,
+      "writes_confined_to_panel": true
+    },
+    {
+      "slot": 2,
+      "requested_height": 46,
+      "polygon_y_extent": [
+        110,
+        156
+      ],
+      "changed_bytes": 0,
+      "writes_confined_to_panel": true
+    },
+    {
+      "slot": 3,
+      "requested_height": 28,
+      "polygon_y_extent": [
+        103,
+        131
+      ],
+      "changed_bytes": 25,
+      "writes_confined_to_panel": true
+    },
+    {
+      "slot": 3,
+      "requested_height": 46,
+      "polygon_y_extent": [
+        103,
+        149
+      ],
+      "changed_bytes": 0,
+      "writes_confined_to_panel": true
+    },
+    {
+      "slot": 4,
+      "requested_height": 28,
+      "polygon_y_extent": [
+        110,
+        138
+      ],
+      "changed_bytes": 25,
+      "writes_confined_to_panel": true
+    },
+    {
+      "slot": 4,
+      "requested_height": 46,
+      "polygon_y_extent": [
+        110,
+        156
+      ],
+      "changed_bytes": 0,
+      "writes_confined_to_panel": true
+    }
+  ]
+}
