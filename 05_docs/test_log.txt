@@ -1,3 +1,13 @@
+2026-09-06 | V364_CURSOR_SPEAKER_TEST | 정적/좌표CPU/디스크 PASS, GPU PENDING
+- 빌더 고정7명령 기대값/양방향검산 및ZIP재생성exact. 독립전역diff/문구보존/변경118스트림64한도/29보류/COMM동일검사 PASS. 별도낮은주소 질문은2행 모델보존; GPU확인필요.
+- 두캡처×상하단×4기준행×4선택×3열 좌표CPU192 PASS. 실제첫둘째(60,66)/(60,82)예상. 입력 이동한도/취소/확정은 수정없으나 런타임재검증아님.
+- 새원본staging의506LBA/164readback/507extent동일 PASS. 변경69raw+이전69 EDC/ECC138 PASS. 기존legacy실패증가0. 원본/옛디스크/세이브/메모리카드미수정. bible_current 기존사용자성공점유지, 실제변경/확정사실문서화.
+
+2026-09-06 | V363 사용자 후속 상태7/8/9 | 원인 조사 / 게임 변경 없음
+- 사용자 대사 표시 확인. 상태7/8 같은본문·서로다른 선택 상태에서 활성OT triangle/본문 sprite 좌표를 비교해 커서14px vs본문16px 재현. 코드8015A6E0..A728 RAM-copy CPU와최종-1계산은두캡처좌표와일치 PASS. 가로/다항목/입력끝범위는미검증.
+- audit_arc1_v363_speaker_cursor.py: 기존2878행의 실제 E2 payload/skip 반영 콜론후개행 후보147건,라마다44건,도전차수11중10건 개행. 상태9는#1749. 새빌드/수정없음, changelog 추가불필요; bible_current 사용자부분확인/codex_notes의과거16px오판정정.
+- 상세01_work/analysis/dc429_789/README.md. 전체화자판단/비CSV영역/개행수정 완료를 주장하지 않는다.
+
 2026-09-06 | V363_DIALOGUE_TRIAL_TEST | DAT/디스크 정적 PASS / 새 대사·커서 런타임 PENDING
 - 동일입력 ZIP재생성 exact. 독립 쓰기범위/길이/슬롯종료·completion/글리프 인코딩 및 선택 E5/E6 위치검사 PASS. 기존 legacy 실패 목록/건수 동일. 별칭 인코딩으로 최초 oldtext 재인코딩 exact 검사가 실패해, 고정ZIP해시+기존문자 디코딩으로 기대값을 검증했다. 검증기 괄호 문법 오류 수정 후 통과.
 - 원본 새staging에서 V363 생성, 506data LBA/164readback PASS. 30변경raw sector+이전30 EDC/ECC60 PASS, 507extent/size동일, 허용DAT/ISO timestamp외 변화0.
