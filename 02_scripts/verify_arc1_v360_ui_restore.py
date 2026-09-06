@@ -14,7 +14,7 @@ import build_arc1_v324_static_ui_cursor_recovery as resident
 from audit_arc1_9118_runtime import load
 from analyze_arc1_v320c_savestates import object_at
 
-def verify_panels(exe):
+def verify_panels(exe, skill_height=46, mp_y=133):
     import build_arc1_v360_ui_restore as b
     with ZipFile(b.BASE) as z:base=z.read('PSX.EXE')
     catalog=list(csv.DictReader((ROOT/'05_docs/ui_full_v42.csv').open(encoding='utf-8-sig')))
@@ -63,7 +63,7 @@ def verify_panels(exe):
             else:run(0x8016C530)
             assert bytes(vm.mem_read(0x1f0798,0xaf4))==group1_before_constructor,'constructor touched other help group'
             xywh=struct.unpack('<4i',vm.mem_read(0x1f0780,16))
-            assert xywh==((60,103,200,46) if skill else (60,110,200,46)),xywh
+            assert xywh==((60,103,200,skill_height) if skill else (60,110,200,46)),xywh
             # Inventory relocation has independent guarded anchor immediates.
             # Set the captured panel x for each legal menu position and exercise
             # the shared renderer, which must read that position dynamically.
@@ -88,7 +88,7 @@ def verify_panels(exe):
                 # RAM; numeric formatting/blue orb remain runtime checklist.
                 run(0x801620B0,0x8016212C,abi=False,s2=0)
                 mpstate,mppackets=object_at(bytes(vm.mem_read(0,0x200000)),0x1f9d44,{'physical_chars':{}})
-                assert mppackets and all(64<=p['x'] and p['x']+p['w']<=256 and 133<=p['y'] and p['y']+p['h']<=145 for p in mppackets),(mpstate,mppackets)
+                assert mppackets and all(64<=p['x'] and p['x']+p['w']<=256 and mp_y<=p['y'] and p['y']+p['h']<=mp_y+12 for p in mppackets),(mpstate,mppackets)
                 mp_cases.append({'coverage':'MP prefix setup/label only; BIOS formatting and orb not executed','state':mpstate,'packets':mppackets})
             results.append({'table':row['table_key'],'index':int(row['index']),'anchor':anchor,'rows_y':ys,'packets':len(packets),'max_right':max(p['x']+p['w'] for p in packets),'max_bottom':max(p['y']+p['h'] for p in packets)})
     assert len(results)==96*3+58

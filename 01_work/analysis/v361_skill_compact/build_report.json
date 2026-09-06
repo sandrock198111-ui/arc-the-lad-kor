@@ -1,0 +1,53 @@
+{
+  "baseline_zip_sha256": "9235BCB75903A00477E69BC47713D200E8BAE4C37AFDDDA83EF1878D07441731",
+  "zip_sha256": "B0AA760222B6F9AE3CB063FC49531DB5E9A735BD4EDDA56759F5CAD7CE2426C8",
+  "exe_sha256": "5C46A42D9BD521E7830A1D3EC4B53A7E16B746252B08B53C38FF645211C38365",
+  "changed_members": [
+    "PSX.EXE"
+  ],
+  "changed_bytes": 3,
+  "writes": [
+    {
+      "address": "0x80161a78",
+      "offset": 291448,
+      "before": "2e000734",
+      "after": "2a000734",
+      "disassembly": "ori $a3, $zero, 0x2a",
+      "reason": "skill height 46 -> 42"
+    },
+    {
+      "address": "0x801620d0",
+      "offset": 293072,
+      "before": "85000534",
+      "after": "7f000534",
+      "disassembly": "ori $a1, $zero, 0x7f",
+      "reason": "MP baseline 133 -> 127"
+    },
+    {
+      "address": "0x801621fc",
+      "offset": 293372,
+      "before": "fdffc624",
+      "after": "ffffc624",
+      "disassembly": "addiu $a2, $a2, -1",
+      "reason": "orb offset -3 -> -1"
+    }
+  ],
+  "unchanged_members": 163,
+  "csv_sha256": {
+    "script_translated_full.csv": "90DB5C0E984C6EED14BD747736F023053DC87E7A09D0BFDE2681003EB40F6E51",
+    "dialogue_all.csv": "CEBB7E2C575F3669873693B2C6BC03AA239DAF801474DC3A326F31A58383EEC5"
+  },
+  "runtime_verified": false,
+  "geometry": {
+    "skill": [
+      60,
+      103,
+      200,
+      42
+    ],
+    "description_y": 109,
+    "mp_y": 127,
+    "orb_y": 126
+  },
+  "build_dependency": "Pinned V360 legacy archive; original-disc packaging; not full historical source replay"
+}

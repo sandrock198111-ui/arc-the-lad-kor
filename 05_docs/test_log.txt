@@ -1,3 +1,10 @@
+2026-09-06 | V361_SKILL_COMPACT_TEST | 스킬창 높이/MP/구슬 좌표 3바이트 | 정적·CPU·디스크 PASS, GPU/콜드부팅 PENDING
+- build_arc1_v361_skill_compact.py: 원본arc.zip/V360 ZIP/정식CSV/사용자CSV SHA 고정 확인, 세 명령의 기대값 검사 및 Keystone→Capstone→Keystone 왕복, 전체 EXE 차이 정확히3바이트, 두 번 생성 ZIP byte-exact PASS. 기존 이미지/세이브/원본 수정 없음.
+- verify_arc1_v361_skill_compact.py: 장비/아이템96×3위치+스킬58=346본문/634ABI, 스킬42px 및 MP접두Y127 검사 PASS. 공통 도움말 다른그룹과 resident 불변. 커서 기존1152조건 PASS. AA53 사용자4상태×버퍼2의 실제8016A4F0 실행/12FT4 좌표 검사8건 PASS; 쓰기는 배경 packet 범위 내부. 스킬 생성기는60,103,200,42를 만들고 나머지3창은 기존46px 보존.
+- MP접두부 생성코드와 구슬 위치설정 호출621E0..62200을 CPU로 실행해 Y127/126 확인. 구슬 호출의 X는 캡처된 실제 위치에서 역산 입력했다. BIOS sprintf 전체 경로는 실행하지 않았다. 캡처 MP숫자/접두 sprite의 Y-6 투영 및 실제16×16 구슬 Y126 경계는 설명 sprite 끝125와 겹치지 않고 창 아래145 안에 들어간다(최소2px). 이 투영은 GPU 실행 증거가 아니다.
+- legacy_gate 전체 실패목록/건수는 V360과 동일(마커2/폭69). 모든163 비EXE 멤버 동일. package_arc1_v361_skill_compact.py 원본 별도스테이징→mkpsxiso→verify_iso_layout: 506data LBA 보존/164패치멤버 readback PASS. EXE LBA268481은 기존 패키징 관례이며 원본23과 같다고 주장하지 않는다.
+- 결과 BIN SHA256 3BC1E6B99238B02174BD2009491DF3ED7ACA697523C4DD993F44E62CC2057BB8. 시험 중 코드/레이아웃 검증 실패 없음. 남은 확인: 새CUE 콜드부팅→메모리카드 로드→스킬 이동/열기·닫기 및 MP숫자·구슬·테두리 잔상. 이전 강제 세이브에는 옛 코드가 남으므로 새 빌드 검증에 그대로 쓰지 않는다. bible_current 성공 기준 유지.
+
 2026-09-06 | V359_CURSOR_LINES_TEST | EXE 전용 범위커서 비텍스처화 | 정적/CPU PASS, 게임 실행 PENDING
 - 수정/검사 스크립트: build_arc1_v359_cursor_lines.py, verify_arc1_v359_cursor_lines.py, package_arc1_v359_cursor_lines.py. 최종 코드156B+padding+9방향table72B=328B. 기존40B packet 내부 최대32B로 변환, 1152회 CPU 반복에서 ABI/복귀/좌표/DMA/쓰기범위 통과. Capstone↔Keystone 최종 명령 전체 왕복 통과. 모든 DAT/COMM/CSV 불변, 기존 REVIEW_UPDATE2 BIN SHA 재확인. legacy 마커2/폭69 목록 동일.
 - 디스크506 data file LBA 보존, 패치164멤버 readback PASS. 최종 BIN B4C44205AFCABC5219588BC6C6C26A6C7F618AE3209ED2E277B1A0593248C511. 실제 슬라임 복구·9유형 외형·화면경계·다음 프레임 GPU 상태·PSP는 미검증. bible_current 성공 상태 유지.
