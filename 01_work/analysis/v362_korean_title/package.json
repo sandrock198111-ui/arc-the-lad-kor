@@ -1,0 +1,9 @@
+{
+  "bin": "E:\\korean\\03_output\\V362_KOREAN_TITLE_TEST.bin",
+  "cue": "E:\\korean\\03_output\\V362_KOREAN_TITLE_TEST.cue",
+  "bin_sha256": "0812F4E7858109A332EAABF87356CBD63897E6C5953E4E0A593453F2AEB244E5",
+  "cue_sha256": "38FCE85D0DDEE0D906059E7C7084F319D24C764568D535CED1B7E67699A6F6E3",
+  "archive_sha256": "593E867DCB599C563B52C6F44A6864990B7157FA5B42B9F8C8D2337DEF6EA152",
+  "verification": "patch    arc1_v362_korean_title_TEST_ONLY.zip\n\noriginal E:\\arc\\����\\arc1.bin   507 files\nbuilt    E:\\korean\\03_output\\V362_KOREAN_TITLE_TEST.bin   507 files\n\npass  all 506 data files kept their sector number\npass  COMM.DAT   LBA 307  (executable expects 307)\npass  COMM.IMG   LBA 667  (executable expects 667)\npass  COMM.SND   LBA 891  (executable expects 891)\n\n  comparing 164 patched files against the image\npass  all 164 patched files on the disc match arc1_v362_korean_title_TEST_ONLY.zip\n\n  PSX.EXE at LBA 268481 (was 23), 587776 bytes\n\nRESULT: PASS - disc layout/member integrity only; runtime not established\n",
+  "runtime_verified": false
+}

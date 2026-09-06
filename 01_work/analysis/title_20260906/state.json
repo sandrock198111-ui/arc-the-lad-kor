@@ -1,0 +1,114 @@
+{
+  "state_sha256": "53c837a5265b2519ba3ce8f44bce4ebf7b01a74fc96db7d25f25ea12b285724c",
+  "title": "V361_SKILL_COMPACT_TEST",
+  "ram_offset": 6754,
+  "vram_offset": 2104796,
+  "exe_anchors": 6,
+  "asset_location_confirmed": true,
+  "game_modified": false,
+  "native_asset": "COMM.IMG",
+  "comm_stride_bytes": 896,
+  "comm_title_rectangle": [
+    64,
+    0,
+    344,
+    256
+  ],
+  "vram_title_rectangle": [
+    384,
+    0,
+    344,
+    256
+  ],
+  "full_title_equal_bytes": 176128,
+  "original_title_sha256": "37927c8a644ac50e6a3bd81e052ba239b12edc51f3139d6df4b1858f9a9df020",
+  "original_comm_word_roundtrip": 229376,
+  "original_high_bits_preserved": true,
+  "active_context": "0x801aeba8",
+  "parity": 1,
+  "active_ot_rows": 515,
+  "ft4_packets": [
+    {
+      "address": 2149339892,
+      "command": 44,
+      "tpage": 266,
+      "u": 0,
+      "v": 0,
+      "width": 88,
+      "height": 256,
+      "xy": [
+        [
+          252,
+          2
+        ],
+        [
+          339,
+          2
+        ],
+        [
+          252,
+          257
+        ],
+        [
+          339,
+          257
+        ]
+      ]
+    },
+    {
+      "address": 2149339852,
+      "command": 44,
+      "tpage": 262,
+      "u": 0,
+      "v": 0,
+      "width": 256,
+      "height": 256,
+      "xy": [
+        [
+          -3,
+          2
+        ],
+        [
+          252,
+          2
+        ],
+        [
+          -3,
+          257
+        ],
+        [
+          252,
+          257
+        ]
+      ]
+    },
+    {
+      "address": 2149339812,
+      "command": 44,
+      "tpage": 26,
+      "u": 0,
+      "v": 0,
+      "width": 96,
+      "height": 16,
+      "xy": [
+        [
+          111,
+          199
+        ],
+        [
+          206,
+          199
+        ],
+        [
+          111,
+          214
+        ],
+        [
+          206,
+          214
+        ]
+      ]
+    }
+  ],
+  "evidence_scope": "Captured V361 original title upload/consumer; not execution of V362 artwork"
+}

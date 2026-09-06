@@ -1,0 +1,14 @@
+Mode: built-in image_gen / text-localization edit. No CLI fallback.
+Final selected output: exec-f440f91f-2988-46bb-8d45-8ffa92fd4b5c.png
+Project input: 01_work/assets/v362_title/localized_source.png
+SHA256: 278BDDB4BF1397078D5D5E415272A988748E4FFABED7EC829F596EB4A755B1B5
+Original output: C:/Users/Administrator/.codex/generated_images/01a01f4c-5976-7920-8e93-83fa8f6edfdb/exec-f440f91f-2988-46bb-8d45-8ffa92fd4b5c.png
+
+Input 1 (edit target): 01_work/analysis/title_20260906/title_texture_original.png
+Input 2 (approved visual reference): C:/Users/Administrator/.codex/generated_images/01a01f4c-5976-7920-8e93-83fa8f6edfdb/exec-20c0d725-82ea-4c1e-a476-9e50638148f8.png
+
+Final prompt (verbatim):
+Precise text-localization edit. Image 1, a 344x256 original PlayStation title texture with black top/left/right/bottom margins, is the edit target and exact composition. Image 2 is a style reference ONLY for the Korean subtitle typography. Return the entire image 1 with absolutely identical framing and black margins, but replace ONLY the tiny Japanese subtitle under the English Arc The Lad logo with '아크더래드'. This is a small local inpaint, not a redesign. Match the already approved five Korean syllables and muted copper/cream 3D metal face style of image 2, smoothly shaded and softly antialiased like the original image 1. Position the Korean subtitle at the exact original Japanese subtitle location (in image 1's 344x256 coordinates: bounding box x99..219, y153..180 approximately). Most important: the ORIGINAL central sword blade, at x158..166, must remain fully visible from top to tip IN FRONT OF and OCCLUDING the middle Korean subtitle; the middle part of the third syllable '더' must visibly disappear behind the sword, not cover the blade. Preserve the original full sword unchanged. The black margins, silver English logo, arcs, blue-gray background, ornamental border, original shadows, TM, copyright, all remain image 1, NOT image 2. NO PUSH START button (it is absent in this texture), no extra words or features. Retain original soft 1995 rendered-image quality without artificial coarse pixel texture or oversharpening. Keep exact framing and relative proportions; do not crop, zoom, move or enlarge the title.
+
+Integration note: The generation did NOT preserve the sword/English/background pixel-exactly and cannot be used as a whole-screen replacement. Only the scoped Korean subtitle raster is imported. The native packer preserves the original blade and all pixels outside the declared ROI and boundary coverage. Final GPU-format source of truth is COMM.IMG in the V362 ZIP, not the high-resolution generated image.
+Rejected intermediate: exec-d3f54b3d-770e-4dbb-8f78-b9720c06df11.png (cropped generation changed composition; not packaged).

@@ -1,3 +1,10 @@
+2026-09-06 - V362 원본 칼날 앞/한글 부제 뒤 타이틀 시험판
+- 사용자의 시안 방향 및 즉시 빌드 승인에 따라 COMM.IMG의 실제 타이틀 부제만 아크더래드로 교체했다. 원본 중앙 칼날214픽셀을 보존해 한글보다 앞에 놓고, 타이틀 밖/영문/장식/저작권/별도PUSH START는 유지했다. 새 글리프·RAM·VRAM·엔진 훅은 없다.
+- V361 대비 COMM의4719픽셀/8911바이트만 변경. 공용1920plane/compact16plane, 다른163멤버/EXE/DAT/CSV 동일. 내장image_gen 입력은 해시 고정해 로컬 보관하고 생성본 전체를 게임에 넣지 않았다.
+- V362_KOREAN_TITLE_TEST.cue/bin 및 arc1_v362_korean_title_TEST_ONLY.zip을 원본별도staging에서 생성했다. BIN SHA256 0812F4E7858109A332EAABF87356CBD63897E6C5953E4E0A593453F2AEB244E5; ZIP SHA256 593E867DCB599C563B52C6F44A6864990B7157FA5B42B9F8C8D2337DEF6EA152.
+- native독립해독/폰트전수/UI346/커서1152/디스크506LBA·164readback PASS. raw차이는타이틀19sector+ISO기록시각27sector뿐이며 해당46개와이전대응46개의EDC/ECC PASS. 기존71실패목록 동일. 사용자콜드부팅/GPU/전환확인 전이므로 TEST_ONLY이며 bible_current 성공점은 유지한다.
+- 재현·출처·작업파일·프롬프트·남은확인: 01_work/analysis/v362_korean_title/README.md. 원본/기존빌드/세이브/메모리카드 미수정.
+
 2026-09-06 - V361 스킬 설명창만 축소 시험판
 - 사용자가 스킬창만 낮추기로 범위를 좁힌 뒤 빌드를 승인했다. V360을 보존하고 V361_SKILL_COMPACT_TEST.cue/bin 및 arc1_v361_skill_compact_TEST_ONLY.zip을 별도로 생성했다.
 - PSX.EXE의 스킬 전용 즉시값 3바이트만 변경: 높이46→42(80161A78), MP줄Y133→127(801620D0), 구슬Y오프셋-3→-1(801621FC; 최종Y126). 설명Y109/폭200/아이템·장비 창/번역·폰트·VRAM·커서 코드는 그대로다. 그 외163멤버와 사용자CSV는 byte-exact 보존했다.

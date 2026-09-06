@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><title>타이틀 부제 실제 크기 비교</title>
+<style>
+body{margin:24px;background:#efefef;color:#222;font:15px/1.5 'Malgun Gothic',sans-serif}
+h1{font-size:20px;margin:0 0 16px}h2{font-size:15px;margin:10px 0 6px}
+.pair{display:flex;gap:30px;flex-wrap:wrap}.unit{width:300px}
+canvas{display:block}.enlarged{width:512px;height:160px;image-rendering:pixelated;margin-bottom:12px}
+.note{font-size:13px;color:#555;margin:4px 0 16px}
+</style>
+<h1>같은 부제 폭 120px 기준 비교</h1>
+<div class="pair">
+ <section class="unit"><h2>원본 · 1배</h2><canvas id="original" width="128" height="40" aria-label="원본 부제 실제 크기"></canvas></section>
+ <section class="unit"><h2>한글 시안 · 1배</h2><canvas id="candidate" width="128" height="40" aria-label="한글 시안 폭120픽셀 축소"></canvas></section>
+</div>
+<h2>원본 · 같은 픽셀을 4배 확대</h2><canvas id="original-large" class="enlarged" width="128" height="40"></canvas>
+<h2>한글 시안 · 같은 픽셀을 4배 확대</h2><canvas id="candidate-large" class="enlarged" width="128" height="40"></canvas>
+<p class="note">디자인 크기 비교만 · 색상 제한 미적용 · 체크무늬는 시안에 포함된 배경 · 게임 미적용</p>
+<script>
+const original=new Image(),candidate=new Image();
+original.src='title_frame_320x240.png';
+candidate.src='file:///C:/Users/Administrator/.codex/generated_images/01a01f4c-5976-7920-8e93-83fa8f6edfdb/exec-ae5d0f0e-99c2-4f6f-a84f-9a89d5bf127c.png';
+Promise.all([original.decode(),candidate.decode()]).then(()=>{
+ const o=document.getElementById('original'),c=document.getElementById('candidate');
+ o.getContext('2d').drawImage(original,94,142,128,40,0,0,128,40);
+ const ctx=c.getContext('2d');ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';
+ ctx.drawImage(candidate,82,224,1806,413,4,6,120,413*120/1806);
+ document.getElementById('original-large').getContext('2d').drawImage(o,0,0);
+ document.getElementById('candidate-large').getContext('2d').drawImage(c,0,0);
+ document.documentElement.dataset.ready='true';
+}).catch(e=>{document.body.append(String(e));document.documentElement.dataset.ready='error';});
+</script></html>

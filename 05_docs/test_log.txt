@@ -1,3 +1,27 @@
+2026-09-06 | V362_KOREAN_TITLE_TEST | COMM 타이틀 부제/칼날 보존 | STATIC/CPU/DISC PASS, COLD-BOOT GPU PENDING
+- audit_arc1_title_state.py: 원본/V361/사용자DC429 VRAM의 타이틀176128B 전체동일, COMM전체229376word 무수정RGB왕복/STP보존 PASS. 실제FT4 tpage106/10A의256×256+88×256 소비와 별도PUSH START26/96×16 확인. 기존상태를새빌드실행증거로취급하지않는다.
+- build_arc1_v362_korean_title.py: 원본/V361/이미지/CSV SHA고정, same-inputZIP두번byte-exact, 허용ROI와칼날214픽셀보호. 첫preview는5개검정shadow의RGB555zero검출로출력전중단. 투명구멍대신0x0421인코딩수정후PASS. 첫preview주변사각색경계는배경margincoverage로보완후native그림재검토. 최종변경4719pixel/8911B, 새투명픽셀0, 전체STP동일.
+- 독립verify_arc1_v362_korean_title.py: builder미import, 모든변경범위/보호칼날/1920공용plane/16compact plane/163멤버/EXE동일검사와nativePNG재해독일치 PASS. 기존본문346조건/커서1152조건CPU PASS, legacy마커2·폭69전목록/건수동일. 데이터·코드전부무결점이라는의미가아니다.
+- package_arc1_v362_korean_title.py: 새원본staging, 기존BIN미입력/미덮어쓰기, 506data LBA/164patch readback PASS. BIN0812F4E7858109A332EAABF87356CBD63897E6C5953E4E0A593453F2AEB244E5. EXE이동LBA268481은기존계보유지.
+- verify_arc1_v362_disc_delta.py: V361대비268918raw sector중46변경. COMM타이틀19(LBA732..750)+실제ISO디렉터리record의시간필드27만payload차이. 나머지raw sector exact, 507파일extent/size동일, 변경46+기준46의Mode2Form1 EDC/P/Q계산PASS. 디스크를수정하는검사가아니다.
+- bible_current/changelog/codex_notes갱신여부검토: 성공점은사용자시각승인전유지, 실제변경과새확정사실만기록. 다음확인: 새CUE콜드부팅→타이틀/START/페이드/시작·불러오기전환. 기존강제세이브의옛VRAM으로새타이틀을검증하지않는다. PSP·실GPU·전체게임무회귀 미검증. README/개별JSON참조.
+
+2026-09-06 | 타이틀 부제 실제크기 비교 | 브라우저 축소 표시/1배·4배 검토 | 디자인만, 게임 미적용
+- 생성시안 exec-ae5d0f0e-99c2-4f6f-a84f-9a89d5bf127c.png는1919×820 RGB이며 alpha가 없다. 체크무늬는 실제 이미지에 포함돼 있으므로 투명자산으로 취급하면 안 된다.
+- title_20260906/size-comparison.html에서 원본320×240 framebuffer의(94,142,128,40) 영역과 시안의(82,224,1806,413) 디자인 영역을 비교했다. 시안은 폭120px/비율유지로 브라우저 canvas에 표시하고 동일 저해상도 표면을4배 확대했다. 소스 이미지를 수정하거나 다시 생성하지 않았다. size-comparison.png는 Edge headless 표시 캡처다.
+- 시각확인: 앞선 큰도트 시안과 달리 축소 후 미세한 경계로 표시되나 한글은 원본보다 밝은 면과 반듯한 획이 두드러진다. 배경이 다르므로 최종 색감/합성의 동일성 판정은 불가. 실제 게임팔레트와 저장자산 제약은 미검증이며 빌드완료가 아니다. bible_current/changelog 갱신 불필요. 다음은 시안 승인/배경분리 및 저장자산 연결 확인.
+
+2026-09-06 | 타이틀 상태 추출 및 절제된 한글 시안 | 분석/이미지 생성 | 디자인 검토용, 게임 미적용
+- audit_arc1_title_state.py로 사용자 HASH-DC42934B1AA4449B_1.sav를 읽었다. SHA256 53C837A5265B2519BA3CE8F44BCE4EBF7B01A74FC96DB7D25F25EA12B285724C, 제목V361_SKILL_COMPACT_TEST, RAM6754/VRAM2104796, EXE앵커6곳 일치. 썸네일/VRAM/첫320×240 framebuffer를 title_20260906에 분석용으로 추출했고 입력은 수정하지 않았다.
+- 원본 프레임에는 영문 로고 아래 일본어 부제가 있다. 사용자의 당시 정식판 같은 절제된 방향에 따라 내장 image_gen으로 아크더래드 부제 시각시안1개 생성. 생성본은 320×240에 재인코딩한 게임텍스처가 아니고 원본 비대상 픽셀 동일성도 보장하지 않으므로 그대로 재삽입하지 않는다. 실제크기/팔레트/보호영역 검증 전이다.
+- 미리보기 경로 C:/Users/Administrator/.codex/generated_images/01a01f4c-5976-7920-8e93-83fa8f6edfdb/exec-cf166bbc-44f9-4f6c-bbdc-99ecd1dd7630.png. 원본영문/검/배경 유지, 좁은 부제 영역, 절제된 아이보리와 청동회색 그림자, 과도한 금속광택 제외를 요청했다. 게임빌드/번역 변경 없음; bible_current/changelog 적용기록 갱신 불필요. 다음: 사용자 시안검토 및 원본 저장자산 위치 확정.
+
+2026-09-06 | 타이틀 한글화 재개 조사 | 기존 시안/작업파일/기준 자산 확인 | 조사만, 적용 안 함
+- 4대 문서의 현재상태와 타이틀 관련 이력, E:/korean 작업·스크립트·출력·스크린샷(ignored 포함) 및 E:/arc의 title/logo/타이틀/로고 이름 파일을 검색했다. 타이틀 전용 재삽입 스크립트/완료 기록은 이 검색 범위에서 발견하지 못했다. 파일명 검색으로 작업물이 전혀 없다고 단정하지 않는다.
+- 과거 첨부66e1916ace6f5d2d7102b292c9c29b5c3a7d9f0a8d8c734047e41e142b28dd3c.png는 로컬에 존재하고 시각 확인했다. 영문 Arc The Lad 아래 금색 아크더래드가 있는 합성 화면이며 게임 원본 텍스처로 확정하지 않았다.
+- V361 ZIP에는 S000.DAT/S000.IMG 멤버가 없고 원본 패키징 경로에서 그대로 공급된다. S000.IMG의 pBAV 헤더는 기존 오디오 분류와 일치한다. 확장자 IMG만 보고 타이틀 그림으로 편집하지 않는다. 타이틀 저장자산/팔레트/실제 화면 소비 연결은 미확정이다.
+- 다음 확인: 이전 별도 작업 폴더 유무 및 실제 타이틀 상태의 RAM/VRAM과 원본 저장자산 대응. 게임·시안·CSV·빌드 수정은 없고 bible_current/changelog 적용내용 갱신은 불필요하다.
+
 2026-09-06 | V361_SKILL_COMPACT_TEST | 스킬창 높이/MP/구슬 좌표 3바이트 | 정적·CPU·디스크 PASS, GPU/콜드부팅 PENDING
 - build_arc1_v361_skill_compact.py: 원본arc.zip/V360 ZIP/정식CSV/사용자CSV SHA 고정 확인, 세 명령의 기대값 검사 및 Keystone→Capstone→Keystone 왕복, 전체 EXE 차이 정확히3바이트, 두 번 생성 ZIP byte-exact PASS. 기존 이미지/세이브/원본 수정 없음.
 - verify_arc1_v361_skill_compact.py: 장비/아이템96×3위치+스킬58=346본문/634ABI, 스킬42px 및 MP접두Y127 검사 PASS. 공통 도움말 다른그룹과 resident 불변. 커서 기존1152조건 PASS. AA53 사용자4상태×버퍼2의 실제8016A4F0 실행/12FT4 좌표 검사8건 PASS; 쓰기는 배경 packet 범위 내부. 스킬 생성기는60,103,200,42를 만들고 나머지3창은 기존46px 보존.

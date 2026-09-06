@@ -20,6 +20,7 @@ ex/
 01_work/analysis/**/*.bgra
 01_work/analysis/**/*.raw
 01_work/analysis/**/*.sav
+01_work/analysis/**/edge_preview_profile/
 
 # Scanned pages of a commercial game magazine. Never publish these.
 # The extracted terminology lives in 05_docs/terminology_decisions.csv instead.

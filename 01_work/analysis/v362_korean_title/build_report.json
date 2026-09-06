@@ -1,0 +1,88 @@
+{
+  "baseline_zip_sha256": "B0AA760222B6F9AE3CB063FC49531DB5E9A735BD4EDDA56759F5CAD7CE2426C8",
+  "original_zip_sha256": "AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD",
+  "zip_sha256": "593E867DCB599C563B52C6F44A6864990B7157FA5B42B9F8C8D2337DEF6EA152",
+  "comm_sha256": "BD831E19FB86B7EDFF6DEF07C2D241B09251243AA4B4DDC2A74A83A5D8092B82",
+  "artwork_sha256": "278BDDB4BF1397078D5D5E415272A988748E4FFABED7EC829F596EB4A755B1B5",
+  "artwork_path": "01_work\\assets\\v362_title\\localized_source.png",
+  "format": "uncompressed little-endian RGB555+STP, 448x512 words",
+  "native_title_rectangle": [
+    64,
+    0,
+    344,
+    256
+  ],
+  "texture_local_roi": [
+    90,
+    149,
+    234,
+    192
+  ],
+  "source_frame": [
+    46,
+    81,
+    1410,
+    1069
+  ],
+  "native_frame": [
+    12,
+    24,
+    309,
+    232
+  ],
+  "original_blade_spans": [
+    [
+      144,
+      165,
+      158,
+      165
+    ],
+    [
+      165,
+      174,
+      159,
+      164
+    ],
+    [
+      174,
+      182,
+      159,
+      163
+    ],
+    [
+      182,
+      187,
+      160,
+      163
+    ],
+    [
+      187,
+      192,
+      160,
+      162
+    ]
+  ],
+  "protected_blade_pixels_in_roi": 214,
+  "changed_members": [
+    "COMM.IMG"
+  ],
+  "unchanged_members": 163,
+  "comm_changed_bytes": 8911,
+  "comm_changed_pixels": 4719,
+  "outside_roi_and_sword_byte_exact": true,
+  "stp_bits_unchanged": true,
+  "opaque_black_substitutions": 5,
+  "import_coverage_margin_lrtb": [
+    10,
+    10,
+    2,
+    8
+  ],
+  "csv_sha256": {
+    "script_translated_full.csv": "90DB5C0E984C6EED14BD747736F023053DC87E7A09D0BFDE2681003EB40F6E51",
+    "dialogue_all.csv": "CEBB7E2C575F3669873693B2C6BC03AA239DAF801474DC3A326F31A58383EEC5"
+  },
+  "engine_font_dialogue_unchanged": true,
+  "runtime_verified": false,
+  "build_dependency": "Pinned V361 legacy archive + frozen image_gen artwork; original-disc staging; not full historical source replay"
+}

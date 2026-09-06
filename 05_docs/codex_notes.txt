@@ -1,5 +1,15 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 
+2026-09-06 V362 타이틀 저장·소비 확정 / 원본 칼날 국소 보존
+- COMM.IMG 458752B를448×512 little-endian RGB555/STP로해독하면 타이틀은word x64..407/y0..255의344×256이다. 사용자DC429(V361)의VRAM x384..727/y0..255, 원본ZIP, V361의해당176128B가전체일치했다. 활성FT4 tpage106(256×256)/10A(88×256)가이를읽고 PUSH START는tpage1A의별도96×16이다. S000.IMG를확장자만보고타이틀로취급하면안된다.
+- 전체COMM229376word의무수정색변환왕복과bit15보존을검증했다. V362는타이틀로컬x90..233/y149..191 안에서4719pixel만교체하고 원본칼날214pixel/경계/바깥은보존한다. 공용1920font plane+compact16plane과EXE/DAT/CSV가동일하므로이변경에글리프슬롯/새VRAM이필요하지않다.
+- 이미지생성본은요청해도전체프레임/칼날의동일성을보장하지않았다. 전체생성본을교체용으로쓰지않고원본크기로가져올부제와보호영역을구분했다. 생성체크무늬가있는RGB그림은alpha자산이아니다. RGB555의검정0은투명texel이므로shadow5개는0x0421로예약인코딩; 전체STP는미변경.
+- 새원본staging의파일기록시간차이가ISO디렉터리27sector를바꿨다. 독립record파싱에서payload차이가timestamp7B필드안임을확인했고 실제타이틀19sector외모든raw sector는V361동일. 변경46sector와기준대응46개모두Mode2Form1 EDC/ECC P/Q일치. 저장위치변경/게임추가패치가아니다.
+- 증거·입력SHA·프롬프트·재현:01_work/analysis/v362_korean_title/README.md 및 ../title_20260906/state.json. 새CUE콜드부팅/GPU/전환은미검증이다. 기존강제세이브는옛VRAM을포함하므로그것만로드해새부제미반영을판정하지않는다.
+
+2026-09-06 타이틀 재개 기준 자산 확인
+- V361 ZIP에는 S000.DAT와 S000.IMG가 포함되지 않는다. 원본arc.zip의 SHA256은 각각41725386BA1D2E085F709F2027471075CA44117A9EE088724F68B0F55141C839 및 B73C7D555EE10FE4FCF98EB24EDF90DC84CCB01480541CA5596E5D415BE6BF2D다. S000.IMG 첫4바이트는pBAV이며 타이틀 텍스처라는 근거가 아니다. 타이틀 자산의 저장/VRAM 위치는 이번 조사에서 확정하지 않았다.
+
 2026-09-06 V361 스킬 설명창 국소 좌표
 - V360 기준80161A78=3407002E는 스킬창 constructor의 a3높이46,801620D0=34050085는 MP접두 위치 a1Y133,801621FC=24C6FFFD는 구슬 호출 delay slot의 Y-3다. V361은 각각42/127/-1이며 전EXE의 실제차이는 각 명령 하위1바이트씩 총3B다.
 - 구슬 위치 setter8016C030은 객체801F30A4+56*index의+2E/+30에 XY halfword를 저장한다. MP접두 Y127 및 실제 호출621E0..62200을 RAM복사본 CPU로 실행하면 구슬Y126이 저장된다. 전체 BIOS 포맷 경로 실행과 구별한다.
