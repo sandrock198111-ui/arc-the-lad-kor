@@ -1,3 +1,15 @@
+2026-09-06 | V366_FOLLOWUPS_TEST | 실제렌더CPU/디스크PASS, GPU PENDING
+- 실제B880/B8C8렌더CPU5상태 count33/33/21/12/34, 행4/2/2/4/3, 동일NUL복귀PASS. 이벤트4인자/커서6좌표 및패드상하12조건(끝순환포함)PASS. 하드웨어입력/확정취소/정답분기는검증아님.
+- 첫E2선택지슬롯안은15패킷1행으로실패하여디스크패키징전격리. inline선택지+국소열좌표로재설계, donor/slot24원상보존. 최종9쓰기/1DAT/인코딩/재생성/legacy증가0PASS. 506LBA/164readback/507extent/30raw변경60EDC·ECC PASS.
+- 세부01_work/analysis/v366_followups/README.md. bible 기존성공점유지, changelog실제변경/codex_notes실패원인기록. 이전출력/원본/세이브미수정.
+
+2026-09-06 | V365 추가 상태2~5 | 읽기전용 대조
+- 상태2/3/4는 S6054:43A94/43AFA/43B4E 원본동일 미변환 본문에 실제도달. 상태5는 기존#1746/45E2E의 반말 번역(듯하구나/해라)이며 일본어 자체도명령조. #1743/1744반말, #1747존댓말 확인. 동일화자표시만으로 동일인/역할 확정하지 않음. 수정문 미적용, 글리프/슬롯검증 미실시.
+
+2026-09-06 | V365 거절 후 대화 제보 | 읽기전용 원인 확인
+- HASH-477B29575D051C04_1.sav는 V365. 객체801F9D44/count39/limit64/source80112A56 확인. S6054:43A28의46B+NUL은 원본동일이며 검수CSV에 없음. Bank-B 캡처=V365. 미변환 원문을 교체폰트로 출력한 누락이며 첫질문4395A와 별개다.
+- 낮은영역43000..44FFF의 유사 E6/선택지 후보 다수 확인. 후보 전부를 확정 대사로 계산하지 않음. 상세 v365_compact_choice/refusal_diagnosis.md. 게임/CSV 수정 및 새빌드 없음. bible 성공점 유지/changelog 실제게임변경 없어 추가불필요/codex_notes 사실기록.
+
 2026-09-06 | V365_COMPACT_CHOICE_TEST | 정적/E2·이벤트·좌표CPU/디스크 PASS, GPU PENDING
 - 변경1DAT, 허용3쓰기/보호주소/글리프/ZIP재생성검사 PASS. State7/8 RAM복사본의 실제 E2슬롯조회/복귀, 이벤트4인자 읽기 및 양선택좌표4조건 PASS. 질문/선택지 모델3행, cursor top(60,50)/(60,66). 전체 텍스트GPU·입력·재진입은 미검증.
 - 빌더 첫실행 encode tuple 취급 오류로 출력전 실패 후 수정. CPU stop PC의 캐시블록 경계 문제는 도달주소 hook으로 검증기만 수정. 최종 legacy 실패 증가0. 원본새staging506LBA/164readback/507extent 동일, raw29변경/58 EDC·ECC PASS.
