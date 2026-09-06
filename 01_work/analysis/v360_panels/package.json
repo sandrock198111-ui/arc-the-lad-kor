@@ -1,0 +1,9 @@
+{
+  "bin": "E:\\korean\\03_output\\V360_UI_RESTORE_TEST.bin",
+  "cue": "E:\\korean\\03_output\\V360_UI_RESTORE_TEST.cue",
+  "bin_sha256": "258203E47E57D04DD2ECE5285BC547B3D9CB3AA893519A8AE11C9BF513F680C7",
+  "cue_sha256": "9EDE8EC6DDF4FC2056979CD9C7F55FF32C78389C1C893D4BAA4DFAF800753017",
+  "archive_sha256": "9235BCB75903A00477E69BC47713D200E8BAE4C37AFDDDA83EF1878D07441731",
+  "verification": "patch    arc1_v360_ui_restore_TEST_ONLY.zip\n\noriginal E:\\arc\\����\\arc1.bin   507 files\nbuilt    E:\\korean\\03_output\\V360_UI_RESTORE_TEST.bin   507 files\n\npass  all 506 data files kept their sector number\npass  COMM.DAT   LBA 307  (executable expects 307)\npass  COMM.IMG   LBA 667  (executable expects 667)\npass  COMM.SND   LBA 891  (executable expects 891)\n\n  comparing 164 patched files against the image\npass  all 164 patched files on the disc match arc1_v360_ui_restore_TEST_ONLY.zip\n\n  PSX.EXE at LBA 268481 (was 23), 587776 bytes\n\nRESULT: PASS - disc layout/member integrity only; runtime not established\n",
+  "runtime_verified": false
+}

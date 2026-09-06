@@ -32,3 +32,20 @@ for page in range((len(keys)+7)//8):
 for num in (1634,2873):
     r=list(csv.DictReader((ROOT/'05_docs/script_translated_full.csv').open(encoding='utf-8-sig')))[num-1]
     print(num,{k:v for k,v in r.items() if k!='raw bytes as hex'})
+    source=list(csv.DictReader((ROOT/'05_docs/script_original_full.csv').open(encoding='utf-8-sig')))[num-1]
+    raw=bytes.fromhex(source['raw bytes as hex']);offset=int(source['byte offset'],16)
+    assert z.read(source['source file'])[offset:offset+len(raw)]==raw
+    im=Image.new('RGB',(1100,350),'white');x=8;y=8;pos=0
+    while pos<len(raw):
+        lead=raw[pos];pos+=1
+        if lead in (0xe4,0xe6):pos+=1;x=8;y+=42;continue
+        if lead>=0xdd:index=(lead-0xdd)*255+raw[pos]+0xdb;pos+=1
+        else:index=lead-1
+        if x+36>1100:x=8;y+=42
+        bits=bitmap_key_from_comm(comm,index);g=Image.new('RGB',(12,12),'white')
+        for gy in range(12):
+            v=int.from_bytes(bits[gy*2:gy*2+2],'little')
+            for gx in range(12):
+                if v>>gx&1:g.putpixel((gx,gy),(0,0,0))
+        im.paste(g.resize((36,36),Image.Resampling.NEAREST),(x,y));x+=37
+    im.crop((0,0,1100,y+42)).save(AN/f'original_row_{num}.png')

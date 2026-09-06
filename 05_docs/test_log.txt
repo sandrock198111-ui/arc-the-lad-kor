@@ -3111,3 +3111,14 @@ check_build.py 통과. SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FB
 - verify_arc1_v359_cursor_lines.py 재실행: 9유형×128프레임=1152 CPU 사례 PASS, 보존 레지스터/스택/출력 범위 PASS. GPU 런타임 검증을 새로 수행한 것은 아니다.
 - 코드/.gitignore/주요 문서의 staged diff --check PASS. CSV의 원문 화자 끝 공백과 생성 HTML의 기존 줄끝 형식 경고는 남겼으며, 이를 없애려고 사용자 번역/원문 데이터를 일괄 정리하지 않았다. UTF-16 BOM 테스트 로그 3개는 텍스트임을 확인했다.
 - 첫 파일 목록 검사는 Windows 기본 cp949 디코딩으로 실패해 쓰기 전에 중단했다. UTF-8 명시 및 UTF-16 BOM 판별 후 통과했다. 출력 한 번도 cp949 콘솔 변환에 실패했으나 스테이징 결과/파일 내용에는 영향이 없었다.
+- 복구 커밋 6d38d46354f07dcf7ad1b444d6c9103a1c53b81d 생성/push 성공. git ls-remote origin refs/heads/main과 로컬 HEAD 전체 해시가 동일하며 그 시점 작업트리는 깨끗했다.
+
+2026-09-06 | V360 설명창·설명 복원·LR·대사 후속 수정 | 원본 비트맵/독립 번역 검토, 예상 opcode/쓰기범위 검증, 실제 R3000 함수 CPU 실행, 대사 E2 확장 및 제어 토큰 비교, 결정적 빌드/ISO readback | STATIC/CPU/DISC PASS, TEST_ONLY/RUNTIME PENDING
+- 수정 전 두 상태 파일의 제목 V359_CURSOR_LINES_TEST와 상주 커서 코드156B를 기준EXE와 대조했다. 입력 세이브/원본/기존 빌드는 수정하지 않았다. 분석·원문 렌더는 v360_panels에 로컬 보관.
+- 본문 CPU346조건 = 아이템96×3위치 + 스킬58. 표의 빈 스킬0은 출력 대상이 아니므로 명시 제외했다. 모든 예상 문자 packet 수와 실제 출력 count 일치,32개 한도,16px 높이·18px 행 전진·사각형 외곽 여백 PASS. 생성자와 본문 출력 모두 다른 도움말 group 메모리 불변,634회 함수 ABI/스택 보존 PASS. MP prefix2글자는 (66,133)/(72,133), 높이12로 출력; BIOS 숫자·구슬 부분은 이 harness로 검증하지 않았다.
+- 기존 커서 CPU1152조건 PASS. 신규 helper28B는 전체 명령 역조립/재조립 일치. 주소/명령/복사 길이/힙 경계 보호 assert와 허용 쓰기범위 대조 PASS. 이전 커서328B 및 보호 숫자helper88B는 byte exact, 폰트와 다른161멤버는 그대로다.
+- 원본의 줄 제어를 유지한1634의 E2 83 caller는 전후1/1, 새 E2 84는0/1이며 second span20B/skip18이다. 기존 slot2를 짧게 바꾸고 안전 슬롯3을 사용했다. 2873의 caller47B와 slot0 skip45는 그대로이며 전후 활성 제어0개인 V358 구조를 유지한다. 두 파일의 다른 모든 대사 확장 토큰 동일.
+- canonical 백업 후1634/2873 한국어2셀만 변경. 전후2878행과 다른 열 모두 동일. 사용자 dialogue_all.csv SHA256 CEBB7E2C575F3669873693B2C6BC03AA239DAF801474DC3A326F31A58383EEC5 그대로. 관련 Python6개 AST PASS. 최종 canonical SHA256 90DB5C0E984C6EED14BD747736F023053DC87E7A09D0BFDE2681003EB40F6E51.
+- 반복 빌드 ZIP SHA256 9235BCB75903A00477E69BC47713D200E8BAE4C37AFDDDA83EF1878D07441731 동일. V360 BIN SHA256 258203E47E57D04DD2ECE5285BC547B3D9CB3AA893519A8AE11C9BF513F680C7. 데이터506/506 LBA와 패치164/164멤버 readback PASS, EXE587776B/LBA268481 유지. 기존 전체 검사 마커2/폭69 실패는 목록까지 동일.
+- 초기 우측 여백8px 단정은 기존 장비설명30의 sprite 전진폭 차이2px를 반영하지 않아 실패했다. 본문 전진폭이 아닌 실제16px sprite 사각형과 창200px 외곽을 대조해 최소6px 여백으로 확인했다. 빈 skill0 직접 출력과 BIOS MP 포맷 호출도 harness 범위 밖이어서 제외를 명시했고, 이를 실제 설명/숫자 출력 성공으로 세지 않았다. 이 실패들은 출력 ZIP 생성 전 발생했다.
+- bible_current 갱신 검토: V359 증상 해결은 사용자 확인으로 기록했지만 V360은 실제 테두리/MP/이름표/인벤토리 전이와 콜드부팅 회귀가 남아 성공 기준으로 승격하지 않는다. 상세 README의 사용자 검수 순서를 따른다.

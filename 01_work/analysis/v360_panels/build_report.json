@@ -1,0 +1,4779 @@
+{
+  "status": "STATIC CANDIDATE / RUNTIME PENDING / TEST_ONLY",
+  "base_sha256": "84844764CE39B8B378496BAAB024A967AD9FAD3EE6FE17AABC871A59E49132C2",
+  "changed_members": [
+    "6/S6021.DAT",
+    "F/SF0F1.DAT",
+    "PSX.EXE"
+  ],
+  "new_vram_bytes": 0,
+  "new_reserved_ram_bytes": 0,
+  "new_glyphs": 0,
+  "resident_reused_bytes": 590,
+  "resident_capacity": 648,
+  "protected_numeric_helper": "0x801ff858",
+  "ui_items_reviewed": 96,
+  "ui_descriptions_changed": 23,
+  "other_catalog_entries_preserved": 480,
+  "panel_dimensions": [
+    200,
+    46
+  ],
+  "description_dimensions": [
+    184,
+    34
+  ],
+  "description_row_pitch": 18,
+  "lr_text": "L과 R로 다음 대상을 선택합니다.",
+  "ui_rows": [
+    {
+      "table": "equipment_description",
+      "index": 0,
+      "source_extracted": "炎系の攻撃に強くなります",
+      "before": "화<df89> 공격 피해 감소",
+      "target": "불 계열 공격에 강함",
+      "pointer_cell": 526996,
+      "old_pointer": 2149168545,
+      "new_pointer": 2149578220,
+      "encoded_bytes": 18,
+      "rows": 1,
+      "advance_widths": [
+        130
+      ],
+      "glyphs": 8
+    },
+    {
+      "table": "equipment_description",
+      "index": 1,
+      "source_extracted": "水系の攻撃に強くなります",
+      "before": "<df1d>기 공격 피해 감소",
+      "target": "물 계열 공격에 강함",
+      "pointer_cell": 527000,
+      "old_pointer": 2149168744,
+      "new_pointer": 2149578239,
+      "encoded_bytes": 17,
+      "rows": 1,
+      "advance_widths": [
+        130
+      ],
+      "glyphs": 8
+    },
+    {
+      "table": "equipment_description",
+      "index": 3,
+      "source_extracted": "自分の<N:Π:10><N:Ｐ:10>の回復量が大きくなります",
+      "before": "회복 효과 증가",
+      "target": "자신의 체력 회복량 증가",
+      "pointer_cell": 527008,
+      "old_pointer": 2149173201,
+      "new_pointer": 2149578257,
+      "encoded_bytes": 17,
+      "rows": 1,
+      "advance_widths": [
+        158
+      ],
+      "glyphs": 10
+    },
+    {
+      "table": "equipment_description",
+      "index": 7,
+      "source_extracted": "防御力が30<N:X:20>上昇します（チョン<N:力:5>ラ）",
+      "before": "촌가라 방어력 30% 상승",
+      "target": "촌가라의 방어력|30% 상승",
+      "pointer_cell": 527024,
+      "old_pointer": 2149168618,
+      "new_pointer": 2149578275,
+      "encoded_bytes": 19,
+      "rows": 2,
+      "advance_widths": [
+        104,
+        76
+      ],
+      "glyphs": 12
+    },
+    {
+      "table": "equipment_description",
+      "index": 11,
+      "source_extracted": "攻撃が<N:非:1>常に当たりやすくなります",
+      "before": "명중<df5b> 상승",
+      "target": "공격이 매우 잘 명중함",
+      "pointer_cell": 527040,
+      "old_pointer": 2149171474,
+      "new_pointer": 2149578295,
+      "encoded_bytes": 19,
+      "rows": 1,
+      "advance_widths": [
+        144
+      ],
+      "glyphs": 9
+    },
+    {
+      "table": "equipment_description",
+      "index": 17,
+      "source_extracted": "攻撃が当たりやすくなります",
+      "before": "명중<df5b> 상승",
+      "target": "공격이 잘 명중함",
+      "pointer_cell": 527064,
+      "old_pointer": 2149171474,
+      "new_pointer": 2149578315,
+      "encoded_bytes": 15,
+      "rows": 1,
+      "advance_widths": [
+        110
+      ],
+      "glyphs": 7
+    },
+    {
+      "table": "equipment_description",
+      "index": 24,
+      "source_extracted": "半分の<N:∪:20><N:Ｐ:10>で能力を使用できます",
+      "before": "능력 MP 소비 절반",
+      "target": "특수 능력의 MP 소비량|절반으로 감소",
+      "pointer_cell": 527092,
+      "old_pointer": 2149172762,
+      "new_pointer": 2149578331,
+      "encoded_bytes": 33,
+      "rows": 2,
+      "advance_widths": [
+        158,
+        90
+      ],
+      "glyphs": 16
+    },
+    {
+      "table": "equipment_description",
+      "index": 28,
+      "source_extracted": "行動する度まわりの<N:午:15>ャラを回復します（ククル）",
+      "before": "쿠쿠루 행동 시 주변 아군 회복",
+      "target": "쿠쿠루가 행동할 때마다|주변 인물 회복",
+      "pointer_cell": 527108,
+      "old_pointer": 2149172476,
+      "new_pointer": 2149578365,
+      "encoded_bytes": 28,
+      "rows": 2,
+      "advance_widths": [
+        152,
+        96
+      ],
+      "glyphs": 16
+    },
+    {
+      "table": "equipment_description",
+      "index": 36,
+      "source_extracted": "<N:ｌ:5>向き直りの笛への効果が<N:∪:20><N:∧:11><N:Ｐ:10>全体（ポニ）",
+      "before": "포코의 방향 전환 효과가 전체화",
+      "target": "방향전환 피리 효과가|전장 전체로 확대(포코)",
+      "pointer_cell": 527140,
+      "old_pointer": 2149168138,
+      "new_pointer": 2149578394,
+      "encoded_bytes": 36,
+      "rows": 2,
+      "advance_widths": [
+        138,
+        166
+      ],
+      "glyphs": 20
+    },
+    {
+      "table": "equipment_description",
+      "index": 43,
+      "source_extracted": "召喚<N:午:15>ャラの経験値が自分に入ります（チョン<N:力:5>ラ）",
+      "before": "촌가라가 소환수 경험치 획득",
+      "target": "소환수가 얻은 경험치를|촌가라가 받음",
+      "pointer_cell": 527168,
+      "old_pointer": 2149172592,
+      "new_pointer": 2149578431,
+      "encoded_bytes": 27,
+      "rows": 2,
+      "advance_widths": [
+        152,
+        90
+      ],
+      "glyphs": 16
+    },
+    {
+      "table": "equipment_description",
+      "index": 47,
+      "source_extracted": "<N:与:3>えるダメージの当たりはすれが大きくなります",
+      "before": "피해 편차 증가",
+      "target": "주는 피해량의|차이가 커진다",
+      "pointer_cell": 527184,
+      "old_pointer": 2149173318,
+      "new_pointer": 2149578459,
+      "encoded_bytes": 20,
+      "rows": 2,
+      "advance_widths": [
+        90,
+        90
+      ],
+      "glyphs": 12
+    },
+    {
+      "table": "equipment_description",
+      "index": 48,
+      "source_extracted": "復活魔法で<N:Π:10><N:Ｐ:10>最大で復活します（ククル）",
+      "before": "쿠쿠루 부활 시 최대 체력 회복",
+      "target": "부활 마법을 받으면|체력 전부 회복(쿠쿠루)",
+      "pointer_cell": 527188,
+      "old_pointer": 2149168165,
+      "new_pointer": 2149578480,
+      "encoded_bytes": 34,
+      "rows": 2,
+      "advance_widths": [
+        124,
+        166
+      ],
+      "glyphs": 19
+    },
+    {
+      "table": "equipment_description",
+      "index": 55,
+      "source_extracted": "行動するたびに<N:Π:10><N:Ｐ:10>が回復します",
+      "before": "매 행동 체력 회복",
+      "target": "행동할 때마다 체력 회복",
+      "pointer_cell": 527216,
+      "old_pointer": 2149168864,
+      "new_pointer": 2149578515,
+      "encoded_bytes": 18,
+      "rows": 1,
+      "advance_widths": [
+        158
+      ],
+      "glyphs": 10
+    },
+    {
+      "table": "equipment_description",
+      "index": 56,
+      "source_extracted": "攻撃が<N:非:1>常に当たりやすくなります（トッシュ）",
+      "before": "토슈 공격 명중<df5b> 상승",
+      "target": "토슈의 공격이|매우 잘 명중함",
+      "pointer_cell": 527220,
+      "old_pointer": 2149168469,
+      "new_pointer": 2149578534,
+      "encoded_bytes": 25,
+      "rows": 2,
+      "advance_widths": [
+        90,
+        96
+      ],
+      "glyphs": 12
+    },
+    {
+      "table": "equipment_description",
+      "index": 60,
+      "source_extracted": "桜花雷爆斬でマ<N:ヒ:5>させることができます（トッシュ）",
+      "before": "토슈 <df6e>화<df1e>폭참에 마비 부여",
+      "target": "토슈의 앵화뇌폭참에|마비 효과 추가",
+      "pointer_cell": 527236,
+      "old_pointer": 2149172524,
+      "new_pointer": 2149578560,
+      "encoded_bytes": 30,
+      "rows": 2,
+      "advance_widths": [
+        132,
+        96
+      ],
+      "glyphs": 15
+    },
+    {
+      "table": "equipment_description",
+      "index": 62,
+      "source_extracted": "行動するごとに<N:∪:20><N:Ｐ:10>が回復します（アーク）",
+      "before": "아크 매행동 MP회복",
+      "target": "아크가 행동할 때마다|MP 회복",
+      "pointer_cell": 527244,
+      "old_pointer": 2149172722,
+      "new_pointer": 2149578591,
+      "encoded_bytes": 23,
+      "rows": 2,
+      "advance_widths": [
+        138,
+        62
+      ],
+      "glyphs": 13
+    },
+    {
+      "table": "consumable_description",
+      "index": 4,
+      "source_extracted": "しびれて動けなくなります",
+      "before": "마비 부여",
+      "target": "마비로 움직일 수 없음",
+      "pointer_cell": 528164,
+      "old_pointer": 2149170941,
+      "new_pointer": 2149578615,
+      "encoded_bytes": 15,
+      "rows": 1,
+      "advance_widths": [
+        144
+      ],
+      "glyphs": 9
+    },
+    {
+      "table": "consumable_description",
+      "index": 8,
+      "source_extracted": "<N:毒:1>を<N:振:2>りまきます",
+      "before": "<df22> 부여",
+      "target": "독을 퍼지게 함",
+      "pointer_cell": 528180,
+      "old_pointer": 2149166946,
+      "new_pointer": 2149578631,
+      "encoded_bytes": 11,
+      "rows": 1,
+      "advance_widths": [
+        96
+      ],
+      "glyphs": 6
+    },
+    {
+      "table": "consumable_description",
+      "index": 18,
+      "source_extracted": "一時的に攻撃力・防御力を下げます",
+      "before": "공격 방어 일시 감소",
+      "target": "공격력과 방어력이|일시적으로 감소",
+      "pointer_cell": 528220,
+      "old_pointer": 2149168779,
+      "new_pointer": 2149578643,
+      "encoded_bytes": 28,
+      "rows": 2,
+      "advance_widths": [
+        118,
+        104
+      ],
+      "glyphs": 15
+    },
+    {
+      "table": "consumable_description",
+      "index": 23,
+      "source_extracted": "<N:∪:20><N:Ｐ:10>の最大値が2ポ<N:｣:11>ント上がります",
+      "before": "최대 마력 2 상승",
+      "target": "최대 MP 2 상승",
+      "pointer_cell": 528240,
+      "old_pointer": 2149173448,
+      "new_pointer": 2149578672,
+      "encoded_bytes": 13,
+      "rows": 1,
+      "advance_widths": [
+        116
+      ],
+      "glyphs": 7
+    },
+    {
+      "table": "consumable_description",
+      "index": 24,
+      "source_extracted": "<N:振:2>りまくと、目が見えなくなります",
+      "before": "명중<df5b> 감소",
+      "target": "사용하면 눈이|보이지 않게 함",
+      "pointer_cell": 528244,
+      "old_pointer": 2149165784,
+      "new_pointer": 2149578686,
+      "encoded_bytes": 20,
+      "rows": 2,
+      "advance_widths": [
+        90,
+        96
+      ],
+      "glyphs": 12
+    },
+    {
+      "table": "consumable_description",
+      "index": 27,
+      "source_extracted": "封じられた魔法が使えるようになります",
+      "before": "침<df5f> 회복",
+      "target": "봉인된 마법을|다시 쓸 수 있게 함",
+      "pointer_cell": 528256,
+      "old_pointer": 2149170106,
+      "new_pointer": 2149578707,
+      "encoded_bytes": 25,
+      "rows": 2,
+      "advance_widths": [
+        90,
+        122
+      ],
+      "glyphs": 13
+    },
+    {
+      "table": "consumable_description",
+      "index": 28,
+      "source_extracted": "チョン<N:力:5>ラがモンスターを召喚するのに使います",
+      "before": "촌가라의 몬스터 소환",
+      "target": "촌가라가 몬스터를|소환할 때 사용",
+      "pointer_cell": 528260,
+      "old_pointer": 2149169550,
+      "new_pointer": 2149578733,
+      "encoded_bytes": 22,
+      "rows": 2,
+      "advance_widths": [
+        118,
+        96
+      ],
+      "glyphs": 14
+    }
+  ],
+  "dialogue_rows": [
+    {
+      "row": 2873,
+      "file": "F/SF0F1.DAT",
+      "target": "알겠느냐? 우리에게 봉인의 기술 따위는 필요 없다. 산에 오르는 건 다른 볼일이 있어서다.",
+      "readback": "알겠느냐? 우리에게 봉인의 기술 따위는 필요 없다. 산에 오르는 건 다른 볼일이 있어서다.",
+      "active_control_count": 0,
+      "writes": [
+        {
+          "at": 282661,
+          "before": "4ed5a172090c06a1dd16a101ddbfa1dd506b03a11f14250121",
+          "after": "0ea1467006a1dd16a101ddbfa1dd506b03a11f142501210000"
+        }
+      ]
+    },
+    {
+      "row": 1634,
+      "file": "6/S6021.DAT",
+      "target": "이것 봐! 「방향전환 피리」를 얻었어!",
+      "readback": "이것 봐!「방향전환 피리」를 얻었어!",
+      "active_control_count": 1,
+      "writes": [
+        {
+          "at": 282880,
+          "before": "ddde",
+          "after": "0318"
+        },
+        {
+          "at": 282885,
+          "before": "b3a1dd29ddb2a14fdd650f",
+          "after": "a900000000000000000000"
+        },
+        {
+          "at": 283008,
+          "before": "e0bde0bc9ce0c8e04fe09fe0149ce09edff8e036e0d69ce0bde067df47e0c4e07f9ce0cadffde0c1e0350f0f0f",
+          "after": "df2ddd29ddb24fdd65a1dd3c2edf0936a1dd9c6114a90000000000000000000000000000000000000000000000"
+        },
+        {
+          "at": 283135,
+          "before": "21",
+          "after": "12"
+        },
+        {
+          "at": 296094,
+          "before": "dd3c2e36",
+          "after": "e284a1a1"
+        },
+        {
+          "at": 296099,
+          "before": "850e",
+          "after": "a1a1"
+        },
+        {
+          "at": 296102,
+          "before": "6f611421",
+          "after": "a1a1a1a1"
+        }
+      ]
+    }
+  ],
+  "writes": [
+    {
+      "name": "item_default_x",
+      "offset": 335164,
+      "size": 4,
+      "before": "50000434",
+      "after": "3c000434"
+    },
+    {
+      "name": "item_width",
+      "offset": 335172,
+      "size": 4,
+      "before": "a0000634",
+      "after": "c8000634"
+    },
+    {
+      "name": "item_height",
+      "offset": 335180,
+      "size": 4,
+      "before": "26000734",
+      "after": "2e000734"
+    },
+    {
+      "name": "skill_x",
+      "offset": 291432,
+      "size": 4,
+      "before": "50000434",
+      "after": "3c000434"
+    },
+    {
+      "name": "skill_width",
+      "offset": 291440,
+      "size": 4,
+      "before": "a0000634",
+      "after": "c8000634"
+    },
+    {
+      "name": "skill_height",
+      "offset": 291448,
+      "size": 4,
+      "before": "34000734",
+      "after": "2e000734"
+    },
+    {
+      "name": "description_width",
+      "offset": 335732,
+      "size": 4,
+      "before": "90000534",
+      "after": "b8000534"
+    },
+    {
+      "name": "description_height",
+      "offset": 335736,
+      "size": 4,
+      "before": "1c000634",
+      "after": "22000634"
+    },
+    {
+      "name": "skill_mp_x",
+      "offset": 293068,
+      "size": 4,
+      "before": "56000434",
+      "after": "42000434"
+    },
+    {
+      "name": "skill_mp_y",
+      "offset": 293072,
+      "size": 4,
+      "before": "89000534",
+      "after": "85000534"
+    },
+    {
+      "name": "equipment_anchor_offset",
+      "offset": 301244,
+      "size": 4,
+      "before": "14008424",
+      "after": "00008424"
+    },
+    {
+      "name": "consumable_right_x",
+      "offset": 303984,
+      "size": 4,
+      "before": "82000434",
+      "after": "6e000434"
+    },
+    {
+      "name": "consumable_left_x",
+      "offset": 303988,
+      "size": 4,
+      "before": "1e000434",
+      "after": "0a000434"
+    },
+    {
+      "name": "description_line_extra_entry",
+      "offset": 335712,
+      "size": 8,
+      "before": "e0ffbd271800bfaf",
+      "after": "74fd070800000000"
+    },
+    {
+      "name": "equipment_description_0",
+      "offset": 526996,
+      "size": 4,
+      "before": "a1b51980",
+      "after": "ecf51f80"
+    },
+    {
+      "name": "equipment_description_1",
+      "offset": 527000,
+      "size": 4,
+      "before": "68b61980",
+      "after": "fff51f80"
+    },
+    {
+      "name": "equipment_description_3",
+      "offset": 527008,
+      "size": 4,
+      "before": "d1c71980",
+      "after": "11f61f80"
+    },
+    {
+      "name": "equipment_description_7",
+      "offset": 527024,
+      "size": 4,
+      "before": "eab51980",
+      "after": "23f61f80"
+    },
+    {
+      "name": "equipment_description_11",
+      "offset": 527040,
+      "size": 4,
+      "before": "12c11980",
+      "after": "37f61f80"
+    },
+    {
+      "name": "equipment_description_17",
+      "offset": 527064,
+      "size": 4,
+      "before": "12c11980",
+      "after": "4bf61f80"
+    },
+    {
+      "name": "equipment_description_24",
+      "offset": 527092,
+      "size": 4,
+      "before": "1ac61980",
+      "after": "5bf61f80"
+    },
+    {
+      "name": "equipment_description_28",
+      "offset": 527108,
+      "size": 4,
+      "before": "fcc41980",
+      "after": "7df61f80"
+    },
+    {
+      "name": "equipment_description_36",
+      "offset": 527140,
+      "size": 4,
+      "before": "0ab41980",
+      "after": "9af61f80"
+    },
+    {
+      "name": "equipment_description_43",
+      "offset": 527168,
+      "size": 4,
+      "before": "70c51980",
+      "after": "bff61f80"
+    },
+    {
+      "name": "equipment_description_47",
+      "offset": 527184,
+      "size": 4,
+      "before": "46c81980",
+      "after": "dbf61f80"
+    },
+    {
+      "name": "equipment_description_48",
+      "offset": 527188,
+      "size": 4,
+      "before": "25b41980",
+      "after": "f0f61f80"
+    },
+    {
+      "name": "equipment_description_55",
+      "offset": 527216,
+      "size": 4,
+      "before": "e0b61980",
+      "after": "13f71f80"
+    },
+    {
+      "name": "equipment_description_56",
+      "offset": 527220,
+      "size": 4,
+      "before": "55b51980",
+      "after": "26f71f80"
+    },
+    {
+      "name": "equipment_description_60",
+      "offset": 527236,
+      "size": 4,
+      "before": "2cc51980",
+      "after": "40f71f80"
+    },
+    {
+      "name": "equipment_description_62",
+      "offset": 527244,
+      "size": 4,
+      "before": "f2c51980",
+      "after": "5ff71f80"
+    },
+    {
+      "name": "consumable_description_4",
+      "offset": 528164,
+      "size": 4,
+      "before": "fdbe1980",
+      "after": "77f71f80"
+    },
+    {
+      "name": "consumable_description_8",
+      "offset": 528180,
+      "size": 4,
+      "before": "62af1980",
+      "after": "87f71f80"
+    },
+    {
+      "name": "consumable_description_18",
+      "offset": 528220,
+      "size": 4,
+      "before": "8bb61980",
+      "after": "93f71f80"
+    },
+    {
+      "name": "consumable_description_23",
+      "offset": 528240,
+      "size": 4,
+      "before": "c8c81980",
+      "after": "b0f71f80"
+    },
+    {
+      "name": "consumable_description_24",
+      "offset": 528244,
+      "size": 4,
+      "before": "d8aa1980",
+      "after": "bef71f80"
+    },
+    {
+      "name": "consumable_description_27",
+      "offset": 528256,
+      "size": 4,
+      "before": "babb1980",
+      "after": "d3f71f80"
+    },
+    {
+      "name": "consumable_description_28",
+      "offset": 528260,
+      "size": 4,
+      "before": "8eb91980",
+      "after": "edf71f80"
+    },
+    {
+      "name": "target_help_lr_pointer",
+      "offset": 533344,
+      "size": 4,
+      "before": "02b71980",
+      "after": "04f81f80"
+    },
+    {
+      "name": "retired_cursor_rle_reuse",
+      "offset": 585976,
+      "size": 590,
+      "before": "88887777676666555545444404b0bbbbbbabaaaaaa9999998988888808f0ffffefeeeeddddcdccccbbbbabaa0a80179a9989888877776766665555454444ffccbbbbbbabaaaaaa9999998988888877f0ffffefeeeeddddcdccccbbbbabaa998000aa09850100ffcc0c85007077860290990066aa00850100ffcc0085000077860200990066aa00850100ffcc0085000077860200990055bb00850100ffcc0085000077860200880066bb00850100ffcc0085000077860200880026bb00850100eecc008500007786010088002600bb00850100eecc0085000067860200880026bb00850100eedd0085000066860200880016cc00850100eedd0085000066860200770066cc00850100eedd0085000066860200770055cc00850100dddd0085000066860200770066cc00850100dddd0085000066860200770066cc00850100dddd0085000066860000778000cc00850100dddd0085000056860000668000dd00850100ddee0085000055860000668000dd00850100ddee0085000055860000668000dd00850100ccee0085000055860000668000dd00850100ccee0085000055860000668000dd00850100ccee0085000055860000558000ee00850100ccee0085000055860000558000ee00850100ccee0085000045860000558000ee00850100bbff0085000044860000558000ee00850100bbff0085000044860000558000ee00850100bbff0085000044860000448000ff00850100bbff0085000044860000448000ff00850100bbff0085000044860000448000ff00850100aaff0085000044860000448000ff00850190aa",
+      "after": "1f80013c020008342c0328a0e0ffbd271800bfafdab1050800000000dd13a1dd11dd89a1dd10dd0a0ea1dd28ddcf006da1dd11dd89a1dd10dd0a0ea1dd28ddcf00283e0fa1dd90dd2ba17add9fd2a1de090c00960c8f0fa1dd2914dd2be6012791ddb8a18b6900dd10dd0a03a1ddc93da1dd4fa1dd34dd73ddcf00dd10dd0a03a1dd4fa1dd34dd73ddcf00de3a50a1ddeddd2b0fa1df0bde07a1dd07dd06d2e601dddadd464ed5a1dd77dd0700dd0cdd0cdd420ca1dd31dd327da1774501e6014080a1356da17add9f00dd29ddb24fdd65a1dd3c2ea1de24dd180ce6014f56a14fdd90d5a1de2b37a0dd78dd409c00dd07dd65500ca1dd9c26a168dd54dd1f36e601960c8f0ca1dd198d004006a1dd3c2bd20fe601ddb7030ca1ddf6dd3f01006cdde1a145dd370da1dd194e3ae601dd90dd2ba14f6ca17add9fa0dd0cdd0cdd429c00dd31dd327da1774501a1dd90dd2ba17add9f0083dd860fa1dd10dd0a03e601ddc93da1dd4fa1dd34dd73ddcf0083dd860fa1ea5bdd83ea26dd62dd4c0ee60145dd06a1de24dd18a1ea720c0009580ca1dd31dd327da1774501e601df0bde07a17add9f0045dd06d5a1dd70dd7c6ba150a1718d00ea2a0da1de780441a1ddcf00dd10dd0add2bdd18a1dd2914dd2b03e6016b29dd094ed5a1dd77dd0700de2737a1df0bde07a10ba18b690034dd1a193aa1de0d03e601600304a17841a1ddcf00ddb635ddc6a145dd370de6010129a1de57a150a11f41a1ddcf00960c8f0ca164300236e601dd07dd657da177a134dd1a00ddd8dd18a1de88d5a1018da1378b0da1dd53e933dd1d07012100"
+    }
+  ],
+  "held": [
+    "Equipment description 49: source does not explicitly identify damage; existing wording retained, effect needs gameplay confirmation."
+  ],
+  "helper_assembly": ".set noreorder\n        lui $at, 0x801f\n        ori $t0, $zero, 2\n        sb $t0, 0x032c($at)\n        addiu $sp, $sp, -32\n        sw $ra, 24($sp)\n        j 0x8016c768\n        nop\n    ",
+  "risks": [
+    "Requires cold boot; old save states contain old executable and resident payload.",
+    "CPU/static checks do not replace real GPU clipping, inventory navigation and skill MP checks.",
+    "Original gradient cursor appearance remains intentionally replaced by white lines."
+  ],
+  "cursor_cpu": {
+    "cases": 1152,
+    "modes": 9,
+    "repeat_frames_per_mode": 128,
+    "preserved_abi": true,
+    "writes_confined_to_packet_ot_stack": true,
+    "write_events": 14592,
+    "packet_max_bytes": 32,
+    "gpu_runtime_verified": false
+  },
+  "panel_cpu": {
+    "cases": 346,
+    "description_rows": 154,
+    "empty_placeholders_not_rendered": [
+      [
+        "skill_description",
+        0
+      ]
+    ],
+    "item_anchors": [
+      10,
+      60,
+      110
+    ],
+    "abi_calls": 634,
+    "packets_fit": true,
+    "other_help_group_preserved": true,
+    "resident_code_preserved": true,
+    "gpu_runtime_verified": false,
+    "mp_cases": [
+      {
+        "coverage": "MP prefix setup/label only; BIOS formatting and orb not executed",
+        "state": {
+          "header_address": "0x801F9D44",
+          "base_address": "0x801BE9BC",
+          "limit": 128,
+          "count": 2,
+          "x": 81,
+          "y": 133,
+          "style": 0,
+          "D": 12,
+          "E": 12,
+          "F": 0,
+          "line_extra": 2,
+          "source_pointer": "0x00000000"
+        },
+        "packets": [
+          {
+            "ordinal": 0,
+            "packet_address": "0x801BE9BC",
+            "x": 66,
+            "y": 133,
+            "u": 244,
+            "v": 176,
+            "w": 6,
+            "h": 12,
+            "clut": "0x7FC0",
+            "plane": 0,
+            "physical_index": null,
+            "char": "<None>"
+          },
+          {
+            "ordinal": 1,
+            "packet_address": "0x801BE9F0",
+            "x": 72,
+            "y": 133,
+            "u": 244,
+            "v": 224,
+            "w": 6,
+            "h": 12,
+            "clut": "0x7FC1",
+            "plane": 1,
+            "physical_index": null,
+            "char": "<None>"
+          }
+        ]
+      }
+    ],
+    "cases_detail": [
+      {
+        "table": "equipment_description",
+        "index": 0,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 150,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 0,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 200,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 0,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 250,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 1,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 150,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 1,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 200,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 1,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 250,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 2,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 96,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 2,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 2,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 196,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 3,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 178,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 3,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 228,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 3,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 278,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 4,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 130,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 4,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 4,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 230,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 5,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 130,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 5,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 5,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 230,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 6,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 6,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 6,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 7,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 14,
+        "max_right": 124,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 7,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 14,
+        "max_right": 174,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 7,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 14,
+        "max_right": 224,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 8,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 116,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 8,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 8,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 216,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 9,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 144,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 9,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 9,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 244,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 10,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 10,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 10,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 11,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 164,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 11,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 214,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 11,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 264,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 12,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 15,
+        "max_right": 192,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 12,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 15,
+        "max_right": 242,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 12,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 15,
+        "max_right": 292,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 13,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 164,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 13,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 214,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 13,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 264,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 14,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 144,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 14,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 14,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 244,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 15,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 18,
+        "max_right": 198,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 15,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 18,
+        "max_right": 248,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 15,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 18,
+        "max_right": 298,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 16,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 164,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 16,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 214,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 16,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 264,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 17,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 130,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 17,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 17,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 230,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 18,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 130,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 18,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 18,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 230,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 19,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 130,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 19,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 19,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 230,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 20,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 102,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 20,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 152,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 20,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 202,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 21,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 96,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 21,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 21,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 196,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 22,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 102,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 22,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 152,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 22,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 202,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 23,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 172,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 23,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 222,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 23,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 272,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 24,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 20,
+        "max_right": 178,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 24,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 20,
+        "max_right": 228,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 24,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 20,
+        "max_right": 278,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 25,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 144,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 25,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 25,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 244,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 26,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 150,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 26,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 200,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 26,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 250,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 27,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 27,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 27,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 28,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 20,
+        "max_right": 172,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 28,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 20,
+        "max_right": 222,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 28,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 20,
+        "max_right": 272,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 29,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 144,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 29,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 29,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 244,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 30,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 16,
+        "max_right": 204,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 30,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 16,
+        "max_right": 254,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 30,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 16,
+        "max_right": 304,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 31,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 31,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 31,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 32,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 32,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 32,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 33,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 150,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 33,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 200,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 33,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 250,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 34,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 130,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 34,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 34,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 230,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 35,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 130,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 35,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 35,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 230,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 36,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 24,
+        "max_right": 186,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 36,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 24,
+        "max_right": 236,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 36,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 24,
+        "max_right": 286,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 37,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 4,
+        "max_right": 68,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 37,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 4,
+        "max_right": 118,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 37,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 4,
+        "max_right": 168,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 38,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 144,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 38,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 38,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 244,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 39,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 144,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 39,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 39,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 244,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 40,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 96,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 40,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 40,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 196,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 41,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 178,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 41,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 228,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 41,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 278,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 42,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 164,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 42,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 214,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 42,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 264,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 43,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 19,
+        "max_right": 172,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 43,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 19,
+        "max_right": 222,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 43,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 19,
+        "max_right": 272,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 44,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 44,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 44,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 45,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 96,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 45,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 45,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 196,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 46,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 144,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 46,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 46,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 244,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 47,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 14,
+        "max_right": 110,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 47,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 14,
+        "max_right": 160,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 47,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 14,
+        "max_right": 210,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 48,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 23,
+        "max_right": 186,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 48,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 23,
+        "max_right": 236,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 48,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 23,
+        "max_right": 286,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 49,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 116,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 49,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 49,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 216,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 50,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 144,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 50,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 50,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 244,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 51,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 51,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 51,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 52,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 52,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 52,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 53,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 53,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 53,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 54,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 54,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 54,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 55,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 178,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 55,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 228,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 55,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 278,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 56,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 15,
+        "max_right": 116,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 56,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 15,
+        "max_right": 166,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 56,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 15,
+        "max_right": 216,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 57,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 150,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 57,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 200,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 57,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 11,
+        "max_right": 250,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 58,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 164,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 58,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 214,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 58,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 264,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 59,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 59,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 59,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 60,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 18,
+        "max_right": 152,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 60,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 18,
+        "max_right": 202,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 60,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 18,
+        "max_right": 252,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 61,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 164,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 61,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 214,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 61,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 264,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 62,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 16,
+        "max_right": 158,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 62,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 16,
+        "max_right": 208,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 62,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 16,
+        "max_right": 258,
+        "max_bottom": 150
+      },
+      {
+        "table": "equipment_description",
+        "index": 63,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 90,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 63,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 140,
+        "max_bottom": 132
+      },
+      {
+        "table": "equipment_description",
+        "index": 63,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 190,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 0,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 116,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 0,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 0,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 216,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 1,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 96,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 1,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 1,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 196,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 2,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 102,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 2,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 152,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 2,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 202,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 3,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 116,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 3,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 3,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 216,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 4,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 164,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 4,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 214,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 4,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 12,
+        "max_right": 264,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 5,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 96,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 5,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 5,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 196,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 6,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 96,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 6,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 6,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 196,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 7,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 116,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 7,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 7,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 216,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 8,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 116,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 8,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 8,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 216,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 9,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 9,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 9,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 10,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 116,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 10,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 10,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 8,
+        "max_right": 216,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 11,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 11,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 11,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 12,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 102,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 12,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 152,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 12,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 7,
+        "max_right": 202,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 13,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 178,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 13,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 228,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 13,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 13,
+        "max_right": 278,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 14,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 4,
+        "max_right": 68,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 14,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 4,
+        "max_right": 118,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 14,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 4,
+        "max_right": 168,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 15,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 130,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 15,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 15,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 230,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 16,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 130,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 16,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 16,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 230,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 17,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 17,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 17,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 18,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 17,
+        "max_right": 138,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 18,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 17,
+        "max_right": 188,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 18,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 17,
+        "max_right": 238,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 19,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 96,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 19,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 19,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 6,
+        "max_right": 196,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 20,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 20,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 20,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 21,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 136,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 21,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 186,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 21,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 236,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 22,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 22,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 22,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 23,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 136,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 23,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 186,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 23,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 10,
+        "max_right": 236,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 24,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 15,
+        "max_right": 116,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 24,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 15,
+        "max_right": 166,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 24,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 15,
+        "max_right": 216,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 25,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 130,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 25,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 25,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 9,
+        "max_right": 230,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 26,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 82,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 26,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 26,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 182,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 27,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 18,
+        "max_right": 142,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 27,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 18,
+        "max_right": 192,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 27,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 18,
+        "max_right": 242,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 28,
+        "anchor": 10,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 17,
+        "max_right": 138,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 28,
+        "anchor": 60,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 17,
+        "max_right": 188,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 28,
+        "anchor": 110,
+        "rows_y": [
+          116,
+          134
+        ],
+        "packets": 17,
+        "max_right": 238,
+        "max_bottom": 150
+      },
+      {
+        "table": "consumable_description",
+        "index": 29,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 90,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 29,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 140,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 29,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 190,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 30,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 90,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 30,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 140,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 30,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 190,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 31,
+        "anchor": 10,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 90,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 31,
+        "anchor": 60,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 140,
+        "max_bottom": 132
+      },
+      {
+        "table": "consumable_description",
+        "index": 31,
+        "anchor": 110,
+        "rows_y": [
+          116
+        ],
+        "packets": 5,
+        "max_right": 190,
+        "max_bottom": 132
+      },
+      {
+        "table": "skill_description",
+        "index": 1,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 11,
+        "max_right": 208,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 2,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 12,
+        "max_right": 214,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 3,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 11,
+        "max_right": 208,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 4,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 7,
+        "max_right": 152,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 5,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 12,
+        "max_right": 214,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 6,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 7,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 4,
+        "max_right": 118,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 8,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 9,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 10,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 11,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 12,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 15,
+        "max_right": 248,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 13,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 14,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 15,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 11,
+        "max_right": 192,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 16,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 17,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 18,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 19,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 12,
+        "max_right": 214,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 20,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 21,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 22,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 7,
+        "max_right": 152,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 23,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 24,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 14,
+        "max_right": 242,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 25,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 11,
+        "max_right": 208,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 26,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 27,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 11,
+        "max_right": 208,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 28,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 11,
+        "max_right": 208,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 29,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 30,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 31,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 11,
+        "max_right": 208,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 32,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 7,
+        "max_right": 152,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 33,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 13,
+        "max_right": 228,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 34,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 7,
+        "max_right": 152,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 35,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 12,
+        "max_right": 222,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 36,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 37,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 8,
+        "max_right": 166,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 38,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 39,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 40,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 41,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 42,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 43,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 44,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 45,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 46,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 47,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 15,
+        "max_right": 240,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 48,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 49,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 50,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 6,
+        "max_right": 146,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 51,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 52,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 5,
+        "max_right": 132,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 53,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 10,
+        "max_right": 194,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 54,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 55,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 56,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 9,
+        "max_right": 180,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 57,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 11,
+        "max_right": 208,
+        "max_bottom": 125
+      },
+      {
+        "table": "skill_description",
+        "index": 58,
+        "anchor": 60,
+        "rows_y": [
+          109
+        ],
+        "packets": 13,
+        "max_right": 228,
+        "max_bottom": 125
+      }
+    ]
+  },
+  "zip_sha256": "9235BCB75903A00477E69BC47713D200E8BAE4C37AFDDDA83EF1878D07441731",
+  "legacy_fail": {
+    "선택지 마커가 원판과 다른 위치": [
+      "1/S1023.DAT 0x47AB0",
+      "1/S1023.DAT 0x47B30"
+    ],
+    "선택지 줄이 창을 넘음 (커서·다음 칸과 겹침)": [
+      "21/S2041.DAT 0x47D5A 줄0 410px",
+      "21/S2041.DAT 0x47DD4 줄0 468px",
+      "21/S2041.DAT 0x47E2C 줄0 468px",
+      "21/S2042.DAT 0x47D5A 줄0 410px",
+      "21/S2042.DAT 0x47DD4 줄0 468px",
+      "21/S2042.DAT 0x47E2C 줄0 468px",
+      "21/S2043.DAT 0x47D5A 줄0 410px",
+      "21/S2043.DAT 0x47DD4 줄0 468px",
+      "21/S2043.DAT 0x47E2C 줄0 468px",
+      "21/S2044.DAT 0x47D5A 줄0 410px",
+      "21/S2044.DAT 0x47DD4 줄0 468px",
+      "21/S2044.DAT 0x47E2C 줄0 468px",
+      "21/S2045.DAT 0x46D5A 줄0 410px",
+      "21/S2045.DAT 0x46DD4 줄0 468px",
+      "21/S2045.DAT 0x46E2C 줄0 468px",
+      "22/S2046.DAT 0x47D5A 줄0 410px",
+      "22/S2046.DAT 0x47DD4 줄0 468px",
+      "22/S2046.DAT 0x47E2C 줄0 468px",
+      "22/S2047.DAT 0x47D5A 줄0 410px",
+      "22/S2047.DAT 0x47DD4 줄0 468px",
+      "22/S2047.DAT 0x47E2C 줄0 468px",
+      "31/S3011.DAT 0x47D5A 줄0 410px",
+      "31/S3011.DAT 0x47DD4 줄0 468px",
+      "31/S3011.DAT 0x47E2C 줄0 468px",
+      "31/S3012.DAT 0x47D5A 줄0 410px",
+      "31/S3012.DAT 0x47DD4 줄0 468px",
+      "31/S3012.DAT 0x47E2C 줄0 468px",
+      "31/S3013.DAT 0x47D5A 줄0 410px",
+      "31/S3013.DAT 0x47DD4 줄0 468px",
+      "31/S3013.DAT 0x47E2C 줄0 468px",
+      "31/S3014.DAT 0x45D5A 줄0 410px",
+      "31/S3014.DAT 0x45DD4 줄0 468px",
+      "31/S3014.DAT 0x45E2C 줄0 468px",
+      "5/S5011.DAT 0x47D5A 줄0 410px",
+      "5/S5011.DAT 0x47DD4 줄0 468px",
+      "5/S5011.DAT 0x47E2C 줄0 468px",
+      "5/S5012.DAT 0x47D5A 줄0 410px",
+      "5/S5012.DAT 0x47DD4 줄0 468px",
+      "5/S5012.DAT 0x47E2C 줄0 468px",
+      "5/S5013.DAT 0x46D5A 줄0 410px",
+      "5/S5013.DAT 0x46DD4 줄0 468px",
+      "5/S5013.DAT 0x46E2C 줄0 468px",
+      "6/S6011.DAT 0x47D5A 줄0 410px",
+      "6/S6011.DAT 0x47DD4 줄0 468px",
+      "6/S6011.DAT 0x47E2C 줄0 468px",
+      "6/S6012.DAT 0x47D5A 줄0 410px",
+      "6/S6012.DAT 0x47DD4 줄0 468px",
+      "6/S6012.DAT 0x47E2C 줄0 468px",
+      "6/S6013.DAT 0x47D5A 줄0 410px",
+      "6/S6013.DAT 0x47DD4 줄0 468px",
+      "6/S6013.DAT 0x47E2C 줄0 468px",
+      "6/S6014.DAT 0x46D5A 줄0 410px",
+      "6/S6014.DAT 0x46DD4 줄0 468px",
+      "6/S6014.DAT 0x46E2C 줄0 468px",
+      "7/S7011.DAT 0x47D5A 줄0 410px",
+      "7/S7011.DAT 0x47DD4 줄0 468px",
+      "7/S7011.DAT 0x47E2C 줄0 468px",
+      "7/S7012.DAT 0x46D5A 줄0 410px",
+      "7/S7012.DAT 0x46DD4 줄0 468px",
+      "7/S7012.DAT 0x46E2C 줄0 468px",
+      "8/S8011.DAT 0x47D5A 줄0 410px",
+      "8/S8011.DAT 0x47DD4 줄0 468px",
+      "8/S8011.DAT 0x47E2C 줄0 468px",
+      "8/S8012.DAT 0x47D5A 줄0 410px",
+      "8/S8012.DAT 0x47DD4 줄0 468px",
+      "8/S8012.DAT 0x47E2C 줄0 468px",
+      "8/S8013.DAT 0x46D5A 줄0 410px",
+      "8/S8013.DAT 0x46DD4 줄0 468px",
+      "8/S8013.DAT 0x46E2C 줄0 468px"
+    ]
+  },
+  "legacy_counts_before": {
+    "E2 참조": 1452,
+    "제자리": 1038,
+    "선택지": 357
+  },
+  "legacy_counts_after": {
+    "E2 참조": 1452,
+    "제자리": 1038,
+    "선택지": 357
+  }
+}
