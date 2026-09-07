@@ -1,3 +1,7 @@
+2026-09-07 | V368_SANS_FONT_TEST | 글꼴 비교판 정적/디스크 PASS
+- 기존 Thin 소유권 723개(예 보정 포함) 확인, 동일 입력 재현, 독립 1920 plane/모든 비대상 bit 보존, 690종 동일 비트맵 충돌0/빈글자0. 원본 새 staging 506LBA/164readback/507extent 및 변경132sector·264EDC/ECC PASS.
+- V368 BIN 해시 불변. 실제 GPU/시각 가독성 미검증; 기존 상태저장에는 Thin VRAM이 남으므로 콜드부팅 비교 필요. bible 성공점 유지 여부 확인, changelog/codex 갱신. 상세 v368_sans_font/README.md.
+
 2026-09-07 | V368_LINEBREAKS_TEST | 줄바꿈2건 CPU/디스크 PASS
 - 두수정본문 실제행별문구exact/Y32·48,빈행·고립‘는’해소. 107본문 중간빈행0,31선택창/240상하검사V367결과동일. 커서·다른163멤버·본문밖DAT·CSV불변.
 - 506LBA/164readback/507extent동일,29raw변경58EDC·ECC PASS. 상속legacy실패목록2+69동일. 실제GPU·전체플레이 PENDING. bible기존점유지/changelog·codex갱신. 상세v368_linebreaks/README.md.
