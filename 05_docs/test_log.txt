@@ -1,3 +1,7 @@
+2026-09-07 | V369_OVERFLOW_TEST | 제보1 CPU/디스크 PASS, 제보2 OPEN
+- #1552 캡처와 CPU 59패킷5행 재현. 공백만 제거한 첫 후보도5행으로 실패; 강제E6도 공백으로 합친 최종50패킷4행/원래NUL80117389 복귀 PASS. 초기 Bank-A 위치CF000 가정은 assert 실패; 고정 payload 검색/캡처포인터로114000 확인 후 재검증.
+- 1DAT/7B 허용변경, 163멤버 보존/ZIP재현/506LBA·164readback·507extent·29sector·58EDC/ECC PASS. 실제GPU/게임플레이 미검증. 제보2는 단일캡처/전후경로 미확정이라 수정없음. bible 기준유지, changelog/codex 확인사실 기록. 상세 v369_overflow/README.md.
+
 2026-09-07 | V368_SANS_FONT_TEST | 글꼴 비교판 정적/디스크 PASS
 - 기존 Thin 소유권 723개(예 보정 포함) 확인, 동일 입력 재현, 독립 1920 plane/모든 비대상 bit 보존, 690종 동일 비트맵 충돌0/빈글자0. 원본 새 staging 506LBA/164readback/507extent 및 변경132sector·264EDC/ECC PASS.
 - V368 BIN 해시 불변. 실제 GPU/시각 가독성 미검증; 기존 상태저장에는 Thin VRAM이 남으므로 콜드부팅 비교 필요. bible 성공점 유지 여부 확인, changelog/codex 갱신. 상세 v368_sans_font/README.md.

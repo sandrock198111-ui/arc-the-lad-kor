@@ -1,3 +1,7 @@
+2026-09-07 - V369 제보1 대사 5행 이탈 국소 수정
+- V368 Sans 기반 #1552(S6013:4834E)의 공백/강제개행 정리 및 단독 E281 completion26→37. 1DAT/7B만 변경, 문구·종료·후속이벤트·글꼴·커서 불변. 실제 렌더5→4행 검증.
+- V369_OVERFLOW_TEST.cue/bin, ZIP58692673A78F425A206814B7C7193A69E7FAD41CD2A755E9AF5F13BB429EF69F. 제보2 검은 전환화면/반복 의심은 원인 미확정·미수정. 상세 v369_overflow/README.md.
+
 2026-09-07 - V368 고정 / 별도 Sans 글꼴 비교판
 - V368_SANS_FONT_TEST.cue/bin 생성. 기존 V368/Thin 보존, 번호 증가 없음. COMM 한글 723 plane/690종만 Sans 16px로 교체, 17149B. 대사·커서·간격·타이틀·아이콘 불변.
 - ZIP B2B37F0FB06A5E63BA221A0F2BCE0E9E8B5D341932B9CDA7CDE7FFEF987E1DC6. 정적/디스크 PASS, 실기 가독성 PENDING인 로컬 TEST_ONLY. 상세 01_work/analysis/v368_sans_font/README.md.
