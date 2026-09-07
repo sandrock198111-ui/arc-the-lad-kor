@@ -84,6 +84,16 @@ def main(candidate_bytes=None, output_dir=None):
                 max_right=max((p['x']+p['w'] for p in ps),default=0),
                 max_bottom=max((p['y']+p['h'] for p in ps),default=0),
                 over_four_rows=len(ys)>4,packet_count_matches=s['count']==expected)
+            display=[]
+            for t in finalts:
+                if t==b'\xe6\x01':continue
+                if t==b'\xe5\x03':display.extend([' ',' '])
+                else:display.append(dec.get(t,'<'+t.hex()+'>'))
+            if len(display)==len(ps):
+                row_text={}
+                for char,p in zip(display,ps):row_text[p['y']]=row_text.get(p['y'],'')+char
+                entry['renderer']['row_text']=row_text
+                entry['renderer']['interior_empty_rows']=any(b-a>16 for a,b in zip(ys,ys[1:]))
             if entry['choice_count']:
                 # String termination occupies a zero halfword after rounding
                 # an odd-byte body up; do not stop at the padding zero word.
