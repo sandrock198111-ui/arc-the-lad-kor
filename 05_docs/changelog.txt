@@ -1,3 +1,7 @@
+2026-09-08 - V371 xdelta 로컬 패키징
+- Rev0/Rev1 두 원본용 차분 생성 및 같은 V371 BIN 복원 검증. 게임 변경/번호 증가 없음. 03_output/arc1_v371_xdelta_TEST_ONLY.zip (1,330,801B), SHA256 BE5289D0C90F7763D0813056672BC819F0268EE424F79257E53B197E2E56A046.
+- Sans 재배포 조건/미검수·실기 잔여로 공개 배포 승격은 보류. 원본이미지/실행파일 미포함, 외부업로드 없음. 상세 v371_speaker_fixes/xdelta.md.
+
 2026-09-08 - V371 승인된 화자/말투 4건 수정
 - S7032 #2148/#2151/#2152 화자 연결 및 어절 개행, S6054 #1742 '항상 목적을 가지고 행동하십시오.' 적용. 2DAT/8쓰기/133B, E4 순서·인자/최종NUL 보존. 단독 E283/E286 completion7→5, E2DE17→3. 커서/글꼴/타이틀 불변.
 - V371_SPEAKER_FIXES_TEST.cue/bin. ZIP2308DAAA0F4E8AFD4B16E03DABD4402E596E1BB6CA0D404F6A3352DF4BCE6021. CPU/디스크 PASS, 실제 GPU·진행 PENDING. 잔여26개행/65콜론후보/전체말투 미완료. 상세 v371_speaker_fixes/README.md.
