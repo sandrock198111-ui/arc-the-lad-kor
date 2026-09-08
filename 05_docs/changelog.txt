@@ -1,3 +1,7 @@
+2026-09-08 - V371 승인된 화자/말투 4건 수정
+- S7032 #2148/#2151/#2152 화자 연결 및 어절 개행, S6054 #1742 '항상 목적을 가지고 행동하십시오.' 적용. 2DAT/8쓰기/133B, E4 순서·인자/최종NUL 보존. 단독 E283/E286 completion7→5, E2DE17→3. 커서/글꼴/타이틀 불변.
+- V371_SPEAKER_FIXES_TEST.cue/bin. ZIP2308DAAA0F4E8AFD4B16E03DABD4402E596E1BB6CA0D404F6A3352DF4BCE6021. CPU/디스크 PASS, 실제 GPU·진행 PENDING. 잔여26개행/65콜론후보/전체말투 미완료. 상세 v371_speaker_fixes/README.md.
+
 2026-09-08 - V370 투기장 이벤트 명령 복구
 - 대사로 오인된 FDFF0E의 패딩이 다음 VM opcode0E를A1로 덮은 오류. S7021/22/23/24/25/26/28의 해당1B씩, 총7B만 원본복구. 잘못된명령의 dispatcher중단 재현 및 복구후원본분기동등 CPU PASS. V369 줄바꿈/Sans/커서 유지.
 - V370_EVENT_RESTORE_TEST.cue/bin. ZIP8FE8CF805C571C40E7215CF71CBFEB559F639DB71CF0AF48C40AEF691D7BB404. 실제전체진행/GPU PENDING. 상세 v370_event_abort/README.md.
