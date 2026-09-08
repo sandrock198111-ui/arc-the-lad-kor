@@ -1,3 +1,7 @@
+2026-09-08 - V370 투기장 이벤트 명령 복구
+- 대사로 오인된 FDFF0E의 패딩이 다음 VM opcode0E를A1로 덮은 오류. S7021/22/23/24/25/26/28의 해당1B씩, 총7B만 원본복구. 잘못된명령의 dispatcher중단 재현 및 복구후원본분기동등 CPU PASS. V369 줄바꿈/Sans/커서 유지.
+- V370_EVENT_RESTORE_TEST.cue/bin. ZIP8FE8CF805C571C40E7215CF71CBFEB559F639DB71CF0AF48C40AEF691D7BB404. 실제전체진행/GPU PENDING. 상세 v370_event_abort/README.md.
+
 2026-09-07 - V369 제보1 대사 5행 이탈 국소 수정
 - V368 Sans 기반 #1552(S6013:4834E)의 공백/강제개행 정리 및 단독 E281 completion26→37. 1DAT/7B만 변경, 문구·종료·후속이벤트·글꼴·커서 불변. 실제 렌더5→4행 검증.
 - V369_OVERFLOW_TEST.cue/bin, ZIP58692673A78F425A206814B7C7193A69E7FAD41CD2A755E9AF5F13BB429EF69F. 제보2 검은 전환화면/반복 의심은 원인 미확정·미수정. 상세 v369_overflow/README.md.
