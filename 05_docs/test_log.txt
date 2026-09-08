@@ -1,3 +1,7 @@
+2026-09-08 | V370 사용자 상태2~5 | 화자/말투 읽기 전용 재검사
+- 네 캡처 RAM 본문과 현재 DAT 대조: S7032 #2148/#2151/#2152 화자 뒤 개행, S6054 #1742 반말 확인. 현재 콜론+개행29건은 V364 보류집합과 exact 동일. 2878 추출행의 별도 화자연계 검사에서 콜론 없는 후보65건 추가(확정 오류 수 아님).
+- #1742 제안 '항상 목적을 가지고 행동하십시오.' 독립 언어 검토/인코딩23B/누락글자0. 게임 삽입/CPU 수정 재현/GPU 검증 없음. 전 게임 말투 전수 검수 완료 아님. bible/changelog 유지, codex 확인 사실 기록. 상세 v370_speaker_reports/README.md.
+
 2026-09-08 | V370_EVENT_RESTORE_TEST | opcode 중단 원인재현/복구 CPU PASS
 - 7파일 각각 prefix0B의2인자소비, A1 opcode dispatcher return0, 복구0E와원본의다음index/continue동등 확인. S7021 오류후index7C7이캡처주스레드와일치. 전역scratch는보조스레드였으므로기존분석정정.
 - 독립최종ZIP7B만원본복구/나머지exact, 새원본staging506LBA/164readback/507extent/34sector·68EDC/ECC PASS. GPU/콜드부팅전체진행 미검증. bible기존성공점유지, changelog/codex 갱신. 상세 v370_event_abort/README.md.
