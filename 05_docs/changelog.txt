@@ -1,3 +1,7 @@
+2026-09-09 - V373 V371 기반 두 제보 수정
+- V372 조판방향은사용자폐기. V371에서 S7031#2143 화자뒤개행만제거(5→4행), S7021#1889 맞나→맞습니까 적용. 2DAT/실제6B, 다른162멤버/커서/글꼴/정상자동줄바꿈/S1011불변. 동일확인문다른13건/이름복원은미포함.
+- V373_TWO_REPORTS_TEST.cue/bin, ZIP B311537600B18C8D67D6E9D2C107F65121977741CE3FD82F74B517A31764330A. CPU/디스크PASS, 실제GPU·진행PENDING. 상세v373_two_reports/README.md.
+
 2026-09-09 - V372 csv:4 한 건4줄 조판 시험판
 - 사용자 승인된 S1011:4799E만4줄 조판. E28A 단독슬롯 head/inline3줄,completion40→2. 1DAT/75B, 글자코드·종료·이벤트·커서·글꼴 불변. V371 보존.
 - V372_WORDWRAP_ONE_TEST.cue/bin, ZIP E8EEAF5774B239DB5B98D9A437C1C734F569D6328DB0263E16D770F17A95917E. CPU180/228px4행 및 디스크PASS, 실제GPU/진행PENDING. 상세 v372_wordwrap_one/README.md.

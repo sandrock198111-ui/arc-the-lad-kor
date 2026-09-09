@@ -1,5 +1,8 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 
+2026-09-09 S7031 화자 단독행과 확인문 중복
+- S7031#2143의화자뒤E601을A1A1로바꾸면동일228px캡처조건에서5→4행이며본문/E43D/끝801168EB보존. S7021#1889는질문8B내맞습니까6B+공백2B로선택XY/끝80117F32가보존된다. 본문이중복되므로로드위치는이벤트문맥을포함해확인한다. 상세v373_two_reports/README.md.
+
 2026-09-09 S1011 csv:4 승인4줄 국소 조판
 - E28A 파일내단독호출4799E, Bank-A9 45480의head14B만슬롯에두고completion40→2로inline E6/나머지3줄을소비시켜기존42B와NUL479C8을보존할수있다. 기존DD01글자alias까지동일. CPU180/228px4행/38패킷/원래끝복귀 확인; 다른ID나창에일반화하지않는다. 상세 v372_wordwrap_one/README.md.
 

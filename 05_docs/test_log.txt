@@ -1,3 +1,7 @@
+2026-09-09 | V373_TWO_REPORTS_TEST | 두 캡처재현/국소수정 PASS
+- 수정전문자XY전체캡처일치. #2143 5→4행/원래끝복귀,#1889 맞습니까/선택행문구·XY·끝포인터보존. 중복본문RAM검색은주변이벤트문맥으로고유성확인, 선택객체끝비글리프패킷은별도확인. ZIP반복exact/2DAT6B/506LBA164readback507extent/29섹터58EDC·ECC PASS.
+- V372미상속,bible폐기정책/changelog/codex기록. GPU·실제선택/상품수여이후진행PENDING. 상세v373_two_reports/README.md.
+
 2026-09-09 | V372_WORDWRAP_ONE_TEST | 승인4줄 CPU/디스크 PASS
 - E2실제처리/복귀포함180·228px 모두 Y32/48/64/80/38패킷/원래NUL복귀. CSV해독변경4번만/다른163멤버불변, ZIP반복생성exact. 원본staging506LBA/164readback/507extent 및29변경sector·58EDC/ECC PASS. GPU/실제장면진행PENDING.
 - bible성공점유지,changelog/codex기록. 기존V371/원본/세이브/CSV 미수정. 상세 v372_wordwrap_one/README.md.
