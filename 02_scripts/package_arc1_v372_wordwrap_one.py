@@ -1,4 +1,4 @@
-"""DRAFT packaging; blocked by the csv:4 three-row CPU check upstream."""
+"""Fresh-original packaging for the approved csv:4 four-row trial."""
 import json,subprocess,sys
 import package_test_iso as p
 import build_arc1_v372_wordwrap_one as b

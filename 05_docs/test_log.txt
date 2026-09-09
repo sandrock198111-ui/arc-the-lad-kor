@@ -1,3 +1,7 @@
+2026-09-09 | V372_WORDWRAP_ONE_TEST | 승인4줄 CPU/디스크 PASS
+- E2실제처리/복귀포함180·228px 모두 Y32/48/64/80/38패킷/원래NUL복귀. CSV해독변경4번만/다른163멤버불변, ZIP반복생성exact. 원본staging506LBA/164readback/507extent 및29변경sector·58EDC/ECC PASS. GPU/실제장면진행PENDING.
+- bible성공점유지,changelog/codex기록. 기존V371/원본/세이브/CSV 미수정. 상세 v372_wordwrap_one/README.md.
+
 2026-09-09 | csv:4 단독 3줄 시험 | 출력 전 차단
 - S1011 E28A 단독슬롯을 head/inline tail로 분할한 메모리 초안의180px CPU에서 마침표가4행으로 분리돼3행 assertion 실패. ZIP/BIN/CUE 생성없음. 원래 어절 도구 JSON도 동일4행이어서 “3줄 유지/실제슬롯과미리보기차이” 설명 정정. 사용자에게4줄 후보 제시 후 대기. 상세 v372_wordwrap_one/README.md.
 

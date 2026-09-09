@@ -1,8 +1,4 @@
-"""BLOCKED experimental csv:4 layout: requested three rows fail at 180px.
-
-The assertion intentionally prevents output until the user selects a revised
-layout. No E6 inside secondary slots. Not an approved or completed V372 build.
-"""
+"""User-approved csv:4 four-row trial. No E6 inside secondary slots."""
 import csv,io,json,struct
 from zipfile import ZipFile
 import build_arc1_v371_speaker_fixes as previous
@@ -15,7 +11,7 @@ PIN='2308DAAA0F4E8AFD4B16E03DABD4402E596E1BB6CA0D404F6A3352DF4BCE6021'
 OUT=ROOT/'03_output/arc1_v372_wordwrap_one_TEST_ONLY.zip'
 AN=ROOT/'01_work/analysis/v372_wordwrap_one'
 FN='1/S1011.DAT';START=0x4799e;END=0x479c8;SLOT=0x45480
-LINES=['새해가 오면 팔렌시아','성에서 나를 데리러 와.','그게 우리 일족의 규율이야.']
+LINES=['새해가 오면 팔렌시아','성에서 나를 데리러 와.','그게 우리 일족의','규율이야.']
 
 def prepare():
     assert digest(BASE.read_bytes())==PIN and previous.prepare()[0]==BASE.read_bytes()
@@ -30,13 +26,15 @@ def prepare():
     # Preserve original glyph aliases, not a fresh encode of the same text.
     head,middle,tail=before[:14],before[15:29],before[30:49]
     dec=load_v354()[3]
-    assert [''.join(dec[t] for t in tokens(p)) for p in (head,middle,tail)]==LINES
-    suffix=b'\xe6\x01'+middle+b'\xe6\x01'+tail
-    skip=(END-START)-2-len(suffix);assert skip==3
+    assert tail[10:11]==b'\xa1'
+    parts=(head,middle,tail[:10],tail[11:])
+    assert [''.join(dec[t] for t in tokens(p)) for p in parts]==LINES
+    suffix=b'\xe6\x01'+b'\xe6\x01'.join(parts[1:])
+    skip=(END-START)-2-len(suffix);assert skip==2
     slot=head+b'\0'*(127-len(head))+bytes([skip])
     inline=b'\xe2\x8a'+b'\xa1'*skip+suffix
-    writes=[dict(file=FN,offset=SLOT,before=before.hex(),after=slot.hex(),reason='Unique A9 head only, completion40 to3'),
-            dict(file=FN,offset=START,before=d[START:END].hex(),after=inline.hex(),reason='Inline word-boundary E6 and two remaining lines')]
+    writes=[dict(file=FN,offset=SLOT,before=before.hex(),after=slot.hex(),reason='Unique A9 head only, completion40 to2'),
+            dict(file=FN,offset=START,before=d[START:END].hex(),after=inline.hex(),reason='Inline word-boundary E6 and three remaining lines')]
     allowed=set()
     for w in writes:
         a=w['offset'];v=bytes.fromhex(w['after']);prior=bytes.fromhex(w['before'])

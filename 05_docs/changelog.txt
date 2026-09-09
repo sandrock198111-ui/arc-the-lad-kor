@@ -1,3 +1,7 @@
+2026-09-09 - V372 csv:4 한 건4줄 조판 시험판
+- 사용자 승인된 S1011:4799E만4줄 조판. E28A 단독슬롯 head/inline3줄,completion40→2. 1DAT/75B, 글자코드·종료·이벤트·커서·글꼴 불변. V371 보존.
+- V372_WORDWRAP_ONE_TEST.cue/bin, ZIP E8EEAF5774B239DB5B98D9A437C1C734F569D6328DB0263E16D770F17A95917E. CPU180/228px4행 및 디스크PASS, 실제GPU/진행PENDING. 상세 v372_wordwrap_one/README.md.
+
 2026-09-08 - V371 xdelta 로컬 패키징
 - Rev0/Rev1 두 원본용 차분 생성 및 같은 V371 BIN 복원 검증. 게임 변경/번호 증가 없음. 03_output/arc1_v371_xdelta_TEST_ONLY.zip (1,330,801B), SHA256 BE5289D0C90F7763D0813056672BC819F0268EE424F79257E53B197E2E56A046.
 - Sans 재배포 조건/미검수·실기 잔여로 공개 배포 승격은 보류. 원본이미지/실행파일 미포함, 외부업로드 없음. 상세 v371_speaker_fixes/xdelta.md.

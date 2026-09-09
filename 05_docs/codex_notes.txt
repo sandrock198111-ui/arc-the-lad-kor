@@ -1,5 +1,8 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 
+2026-09-09 S1011 csv:4 승인4줄 국소 조판
+- E28A 파일내단독호출4799E, Bank-A9 45480의head14B만슬롯에두고completion40→2로inline E6/나머지3줄을소비시켜기존42B와NUL479C8을보존할수있다. 기존DD01글자alias까지동일. CPU180/228px4행/38패킷/원래끝복귀 확인; 다른ID나창에일반화하지않는다. 상세 v372_wordwrap_one/README.md.
+
 2026-09-09 어절 후보의 문장부호 고립 누락
 - csv:4의180px 조판 후보는 마지막 마침표만4행이다. 기존 자동 검사의 alphanumeric 분리 조건과4행 허용은 문장부호 고립을 배제하지 않는다. V371 원래 trial JSON과 실제 E2 경로 초안 모두 같은 관측이며3행 보장이 아니다. 상세 v372_wordwrap_one/README.md.
 
