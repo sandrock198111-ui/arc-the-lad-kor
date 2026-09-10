@@ -1,3 +1,6 @@
+2026-09-10 | V375 Rev1 xdelta/v0.9.1 | 적용/재생성 PASS
+- 원본Rev1 CRC323235502F/MD5219F45A30345D4A7370303576E312D8C 확인. 복원BIN의크기/SHA256/SHA1/CRC32/MD5가V375와동일. 재인코딩byte-exact, ZIP멤버재읽기동일. 패치725121B, 묶음666009B. 게임및원본/사용자카드변경없음. 상세v375_next_choice/xdelta.md.
+
 2026-09-10 | V375 다음 선택문 | CPU PASS
 - 디스크V375_NEXT_CHOICE_TEST: 506LBA/164readback/507extent/28섹터56EDC·ECC검사 PASS, 미설명payload차이0. BIN E732E26BEEBEAA3B6926125837DA2A348BEB885741AB4EA5949AD7E8B031B95F.
 - V374 상태1 SC021 연결, 27패킷 수정전 캡처재현/수정후선택13패킷만Y-16/끝80115F91동일. 커서108,50 및108,66 확인. 새ZIP에서V374 이전선택 및카드라벨 회귀PASS. GPU·실제입력 PENDING. 상태2 정보2는 원문その2 확인. 상세v375_next_choice/README.md.

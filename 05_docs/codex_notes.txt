@@ -1,5 +1,8 @@
 Arc the Lad 1 Korean patch - confirmed Codex notes
 
+2026-09-10 V375 패치 적용 해시
+- Rev1원본용 v0.9.1 xdelta 적용 결과 CRC32 6444902C/MD5 AAE9F3DB5BE7907E0F2A85933713D1F6이며 V375 BIN SHA256 E732E26BEEBEAA3B6926125837DA2A348BEB885741AB4EA5949AD7E8B031B95F와 일치한다. 기존패치BIN에덧씌우는차분이아니다. 상세v375_next_choice/xdelta.md.
+
 2026-09-10 SC021 다음 확인문 E289 / 정보2
 - #2426의180px 질문도 끝자동개행+E601 중복이다. 단독E289 completion10→12로 선택Y64/80→48/64, 끝80115F91 및 기존커서 설정 유지 확인. 상태2 S2045#369 원문은 いろいろ教えて! その2이며 현행정보2의 숫자는원문구분에해당한다. 상세v375_next_choice/README.md.
 
