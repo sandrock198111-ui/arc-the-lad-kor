@@ -1,0 +1,289 @@
+[
+  {
+    "file": "7/S7021.DAT",
+    "offset": "0x4878c",
+    "prefix": {
+      "index": 1990,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 1900,
+      "opcodes": [
+        11
+      ]
+    },
+    "bad": {
+      "index": 1991,
+      "dispatch_continue": 0,
+      "status": 0,
+      "return_value": 644,
+      "opcodes": [
+        161
+      ]
+    },
+    "bad_dispatcher_return": 0,
+    "repaired": {
+      "index": 1993,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    },
+    "original": {
+      "index": 1993,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    }
+  },
+  {
+    "file": "7/S7022.DAT",
+    "offset": "0x48c26",
+    "prefix": {
+      "index": 2579,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 1900,
+      "opcodes": [
+        11
+      ]
+    },
+    "bad": {
+      "index": 2580,
+      "dispatch_continue": 0,
+      "status": 0,
+      "return_value": 644,
+      "opcodes": [
+        161
+      ]
+    },
+    "bad_dispatcher_return": 0,
+    "repaired": {
+      "index": 2582,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    },
+    "original": {
+      "index": 2582,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    }
+  },
+  {
+    "file": "7/S7023.DAT",
+    "offset": "0x48c56",
+    "prefix": {
+      "index": 2603,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 1900,
+      "opcodes": [
+        11
+      ]
+    },
+    "bad": {
+      "index": 2604,
+      "dispatch_continue": 0,
+      "status": 0,
+      "return_value": 644,
+      "opcodes": [
+        161
+      ]
+    },
+    "bad_dispatcher_return": 0,
+    "repaired": {
+      "index": 2606,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    },
+    "original": {
+      "index": 2606,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    }
+  },
+  {
+    "file": "7/S7024.DAT",
+    "offset": "0x48cba",
+    "prefix": {
+      "index": 2653,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 1900,
+      "opcodes": [
+        11
+      ]
+    },
+    "bad": {
+      "index": 2654,
+      "dispatch_continue": 0,
+      "status": 0,
+      "return_value": 644,
+      "opcodes": [
+        161
+      ]
+    },
+    "bad_dispatcher_return": 0,
+    "repaired": {
+      "index": 2656,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    },
+    "original": {
+      "index": 2656,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    }
+  },
+  {
+    "file": "7/S7025.DAT",
+    "offset": "0x48cca",
+    "prefix": {
+      "index": 2661,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 1900,
+      "opcodes": [
+        11
+      ]
+    },
+    "bad": {
+      "index": 2662,
+      "dispatch_continue": 0,
+      "status": 0,
+      "return_value": 644,
+      "opcodes": [
+        161
+      ]
+    },
+    "bad_dispatcher_return": 0,
+    "repaired": {
+      "index": 2664,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    },
+    "original": {
+      "index": 2664,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    }
+  },
+  {
+    "file": "7/S7026.DAT",
+    "offset": "0x48f36",
+    "prefix": {
+      "index": 2971,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 1900,
+      "opcodes": [
+        11
+      ]
+    },
+    "bad": {
+      "index": 2972,
+      "dispatch_continue": 0,
+      "status": 0,
+      "return_value": 644,
+      "opcodes": [
+        161
+      ]
+    },
+    "bad_dispatcher_return": 0,
+    "repaired": {
+      "index": 2974,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    },
+    "original": {
+      "index": 2974,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    }
+  },
+  {
+    "file": "7/S7028.DAT",
+    "offset": "0x47aca",
+    "prefix": {
+      "index": 2405,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 1900,
+      "opcodes": [
+        11
+      ]
+    },
+    "bad": {
+      "index": 2406,
+      "dispatch_continue": 0,
+      "status": 0,
+      "return_value": 644,
+      "opcodes": [
+        161
+      ]
+    },
+    "bad_dispatcher_return": 0,
+    "repaired": {
+      "index": 2408,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    },
+    "original": {
+      "index": 2408,
+      "dispatch_continue": 1,
+      "status": 1,
+      "return_value": 0,
+      "opcodes": [
+        14
+      ]
+    }
+  }
+]

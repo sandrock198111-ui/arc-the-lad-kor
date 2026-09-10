@@ -1,0 +1,37 @@
+{
+  "zip_sha256": "28EEE68677DB124D91550CF89B2EF437B1CE728686011CA79B419FA1DAB27764",
+  "baseline_sha256": "A4C43D7BE52CDEE4182ADF7580604BC86A7D4D883C7D6D85CD6E0DD60C31C122",
+  "writes": [
+    {
+      "file": "6/S6054.DAT",
+      "offset": 19840,
+      "before": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "after": "693cdd02a150dd311920a146ddd52d073bd10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016",
+      "reason": "owned Bank-B 23, one-space prompt, completion resumes original E6"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 276826,
+      "before": "693c",
+      "after": "e2e8",
+      "reason": "E2 caller consumes original prompt span without rendering filler"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 276886,
+      "before": "0200",
+      "after": "0100",
+      "reason": "event 21/type6 arg4 baseRow 2 -> 1; count/index/column unchanged"
+    }
+  ],
+  "changed_members": [
+    "6/S6054.DAT"
+  ],
+  "prompt": "승려: 수행하러 오셨습니까?",
+  "choice_rows": [
+    2,
+    3
+  ],
+  "runtime_verified": false,
+  "policy": "TEST_ONLY; this prompt only; other V364 speaker spacing not changed; CSV preserved"
+}

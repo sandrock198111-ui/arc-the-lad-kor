@@ -1,0 +1,24 @@
+{
+  "zip_sha256": "00A55D88117F614FD2CC30BED097AD27DD93D84A59F87C698043A93DF5431416",
+  "baseline_sha256": "34E00DB8BC2EF5E8929E5EC770D6CB61C02FB9DBCEE899D51411B6CDE03044B4",
+  "writes": [
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278076,
+      "before": "ddaf66dd02a1dd7bddb02909a1dd170fa16a0da1552906e601373e0fa103de3826d1a1a1",
+      "after": "ddaf66dd02a1dd7bddb02909a1dd170fe6016a0da1552906a1373e0fa103de3826d1a1a1",
+      "reason": "문제: 파렌시아 성의|왕을 모시는 대신의 이름은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279198,
+      "before": "ddaf66dd02a101ddbfa1dd10dd1b0e25a1dd090da1dd10dd0a1906e60109580fa124dde526d1",
+      "after": "ddaf66dd02a101ddbfa1dd10dd1b0e25e601dd090da1dd10dd0a1906a109580fa124dde526d1",
+      "reason": "문제: 다른 공간에서|적을 공격하는 아크의 기술은?"
+    }
+  ],
+  "changed_members": [
+    "6/S6054.DAT"
+  ],
+  "policy": "TEST_ONLY; two line-break relocations; wording/EXE/COMM/all choices and cursor fields unchanged"
+}

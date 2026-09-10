@@ -1,0 +1,67 @@
+{
+  "zip_sha256": "8FE8CF805C571C40E7215CF71CBFEB559F639DB71CF0AF48C40AEF691D7BB404",
+  "baseline_sha256": "58692673A78F425A206814B7C7193A69E7FAD41CD2A755E9AF5F13BB429EF69F",
+  "writes": [
+    {
+      "file": "7/S7021.DAT",
+      "offset": 296844,
+      "before": "a1",
+      "after": "0e",
+      "reason": "Restore VM opcode, not dialogue"
+    },
+    {
+      "file": "7/S7022.DAT",
+      "offset": 298022,
+      "before": "a1",
+      "after": "0e",
+      "reason": "Restore VM opcode, not dialogue"
+    },
+    {
+      "file": "7/S7023.DAT",
+      "offset": 298070,
+      "before": "a1",
+      "after": "0e",
+      "reason": "Restore VM opcode, not dialogue"
+    },
+    {
+      "file": "7/S7024.DAT",
+      "offset": 298170,
+      "before": "a1",
+      "after": "0e",
+      "reason": "Restore VM opcode, not dialogue"
+    },
+    {
+      "file": "7/S7025.DAT",
+      "offset": 298186,
+      "before": "a1",
+      "after": "0e",
+      "reason": "Restore VM opcode, not dialogue"
+    },
+    {
+      "file": "7/S7026.DAT",
+      "offset": 298806,
+      "before": "a1",
+      "after": "0e",
+      "reason": "Restore VM opcode, not dialogue"
+    },
+    {
+      "file": "7/S7028.DAT",
+      "offset": 293578,
+      "before": "a1",
+      "after": "0e",
+      "reason": "Restore VM opcode, not dialogue"
+    }
+  ],
+  "changed_members": [
+    "7/S7021.DAT",
+    "7/S7022.DAT",
+    "7/S7023.DAT",
+    "7/S7024.DAT",
+    "7/S7025.DAT",
+    "7/S7026.DAT",
+    "7/S7028.DAT"
+  ],
+  "static_pass": true,
+  "runtime_verified": false,
+  "scope": "VM dispatcher failure reproduced and seven opcodes restored. GPU/full progression pending; V369 overflow fix and Sans preserved."
+}

@@ -1,0 +1,76 @@
+{
+  "zip_sha256": "E8EEAF5774B239DB5B98D9A437C1C734F569D6328DB0263E16D770F17A95917E",
+  "baseline_sha256": "2308DAAA0F4E8AFD4B16E03DABD4402E596E1BB6CA0D404F6A3352DF4BCE6021",
+  "writes": [
+    {
+      "file": "1/S1011.DAT",
+      "offset": 283776,
+      "before": "de3d2b0ca1463aa1dd6cddb02909a1dd170e25a11e36a1812e20a18821a11541a13d2ea16bdd7a0fa1deefdea6dd01492100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000028",
+      "after": "de3d2b0ca1463aa1dd6cddb02909000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002",
+      "reason": "Unique A9 head only, completion40 to2"
+    },
+    {
+      "file": "1/S1011.DAT",
+      "offset": 293278,
+      "before": "e28aea0cde44a1dd6cddb0e993e99aa1dd17e9a4e988e601dd61a1e907e94fe942a1e9acdd41dd41dd41",
+      "after": "e28aa1a1e601dd170e25a11e36a1812e20a18821e6011541a13d2ea16bdd7a0fe601deefdea6dd014921",
+      "reason": "Inline word-boundary E6 and three remaining lines"
+    }
+  ],
+  "changed_members": [
+    "1/S1011.DAT"
+  ],
+  "changed_rows": [
+    4
+  ],
+  "changed_bytes": 75,
+  "static_pass": true,
+  "runtime_verified": false,
+  "scope": "Only csv:4 layout; actual scene GPU/cold boot pending",
+  "cpu": [
+    {
+      "width": 180,
+      "before": {
+        "rows": {
+          "32": "새해가 오면 팔렌시아 성에",
+          "48": "서 나를 데리러 와. 그게 ",
+          "64": "우리 일족의 규율이야."
+        },
+        "count": 41,
+        "source_pointer": "0x8007002A"
+      },
+      "after": {
+        "rows": {
+          "32": "새해가 오면 팔렌시아",
+          "48": "성에서 나를 데리러 와.",
+          "64": "그게 우리 일족의",
+          "80": "규율이야."
+        },
+        "count": 38,
+        "source_pointer": "0x8007002A"
+      }
+    },
+    {
+      "width": 228,
+      "before": {
+        "rows": {
+          "32": "새해가 오면 팔렌시아 성에서 나를",
+          "48": " 데리러 와. 그게 우리 일족의 규",
+          "64": "율이야."
+        },
+        "count": 41,
+        "source_pointer": "0x8007002A"
+      },
+      "after": {
+        "rows": {
+          "32": "새해가 오면 팔렌시아",
+          "48": "성에서 나를 데리러 와.",
+          "64": "그게 우리 일족의",
+          "80": "규율이야."
+        },
+        "count": 38,
+        "source_pointer": "0x8007002A"
+      }
+    }
+  ]
+}

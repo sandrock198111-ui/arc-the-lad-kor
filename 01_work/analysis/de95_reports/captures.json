@@ -1,0 +1,89 @@
+[
+  {
+    "name": "HASH-DE95EE0ADEFCF889_1.sav",
+    "sha256": "8ecafdb7c7f9256b00f07d7e59e71d031825456f7a4ecd886dd6212bf73f404b",
+    "title": "V374_CARD_CHOICE_TEST",
+    "objects": [
+      {
+        "state": {
+          "header_address": "0x801F9D44",
+          "base_address": "0x801BE9BC",
+          "limit": 64,
+          "count": 27,
+          "x": 190,
+          "y": 80,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x80115F91"
+        },
+        "ys": [
+          32,
+          64,
+          80
+        ],
+        "matches": [
+          {
+            "row": 2426,
+            "file": "C1/SC021.DAT",
+            "offset": 290676,
+            "end": 290705,
+            "japanese": "戦闘になるがいいのかな？\n<CTRL:E5:03>はい\n<CTRL:E5:03>やつっりやめる",
+            "current": "싸우게 되는데 괜찮으려나?|<e503>괜찮다|<e503>그만두마  ",
+            "raw": "e289a1a1a1a1a1a1a1a1a1a1e601e503e28ae601e5031538dd2145a1a1"
+          },
+          {
+            "row": 2433,
+            "file": "C1/SC031.DAT",
+            "offset": 290676,
+            "end": 290705,
+            "japanese": "戦闘になるがいいのかな？\n<CTRL:E5:03>はい\n<CTRL:E5:03>やつっりやめる",
+            "current": "싸우게 되는데 괜찮으려나?|<e503>괜찮다|<e503>그만두마  ",
+            "raw": "e289a1a1a1a1a1a1a1a1a1a1e601e503e28ae601e5031538dd2145a1a1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HASH-DE95EE0ADEFCF889_2.sav",
+    "sha256": "3d6cedee16156fc5892213f65466304a2e6832a7de86ded5189b6efc1620da1e",
+    "title": "V374_CARD_CHOICE_TEST",
+    "objects": [
+      {
+        "state": {
+          "header_address": "0x801F9D44",
+          "base_address": "0x801BE9BC",
+          "limit": 64,
+          "count": 27,
+          "x": 176,
+          "y": 64,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x80116C52"
+        },
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "matches": [
+          {
+            "row": 369,
+            "file": "21/S2045.DAT",
+            "offset": 293938,
+            "end": 293970,
+            "japanese": "<CTRL:E5:03>出発する\n<CTRL:E5:03>出発しない\n<CTRL:E5:03>いろいろ教えて! その2",
+            "current": "<e503>출발 |<e503>그만   |<e503>정보 2         ",
+            "raw": "e50376dd0ea1e601e5031538a1a1a1e601e5033160a10ba1a1a1a1a1a1a1a1a1"
+          }
+        ]
+      }
+    ]
+  }
+]

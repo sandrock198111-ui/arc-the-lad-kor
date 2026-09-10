@@ -1,0 +1,11 @@
+{
+  "zip_sha256": "B2B37F0FB06A5E63BA221A0F2BCE0E9E8B5D341932B9CDA7CDE7FFEF987E1DC6",
+  "static_pass": true,
+  "planes_checked": 1920,
+  "replaced_planes": 723,
+  "unique_hangul": 690,
+  "mapped_collisions": 0,
+  "nonfont_members_preserved": 163,
+  "all_other_comm_bits_preserved": true,
+  "runtime_verified": false
+}

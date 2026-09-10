@@ -1,0 +1,83 @@
+[
+  {
+    "name": "HASH-477B29575D051C04_1.sav",
+    "sha256": "84ad4e8bbc78a0c4933a26ec115cfa7b54f6abfc92b4c5c620f922064b56624f",
+    "title": "Arc the Lad (Japan) (Rev 1)-patched (1)",
+    "objects": [
+      {
+        "state": {
+          "header_address": "0x801F9D44",
+          "base_address": "0x801BE9BC",
+          "limit": 64,
+          "count": 45,
+          "x": 74,
+          "y": 96,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x801168EB"
+        },
+        "ys": [
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "matches": [
+          {
+            "row": 2143,
+            "file": "7/S7031.DAT",
+            "offset": 293048,
+            "end": 293099,
+            "japanese": "ロクトール \nおめでとう、あなたが真の勇者だ。\n<CTRL:E4:3D>さあ、賞品の<G:90>風のオーフ<G:89>を渡そう。",
+            "current": "로크톨:|축하합니다, 당신이 진정한 용사입니다.|<e43d>자, 상품인 바람의 오브를 드리지요.",
+            "raw": "d558ddf0dd02e601e281a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1e601e43de283a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HASH-477B29575D051C04_2.sav",
+    "sha256": "eda104706fcb415abe64d8915a63b99068df0d22be5c9c17e9f93f11b0b9f438",
+    "title": "V371_SPEAKER_FIXES_TEST",
+    "objects": [
+      {
+        "state": {
+          "header_address": "0x801F9D44",
+          "base_address": "0x801BE9BC",
+          "limit": 64,
+          "count": 20,
+          "x": 60,
+          "y": 80,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x80117F32"
+        },
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "matches": [
+          {
+            "row": 1889,
+            "file": "7/S7021.DAT",
+            "offset": 298774,
+            "end": 298801,
+            "japanese": "<CTRL:E2:01>さんですね。\n<CTRL:E5:03>はい\n<CTRL:E5:03>まちがえました\n",
+            "current": "맞나?   |<e503>예 |<e503>아니오    |",
+            "raw": "ddb11edd03a1a1a1e601e50397a1e601e503090746a1a1a1a1e601"
+          }
+        ]
+      }
+    ]
+  }
+]

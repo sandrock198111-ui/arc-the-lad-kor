@@ -1,0 +1,9 @@
+{
+  "bin": "E:\\korean\\03_output\\V363_DIALOGUE_TRIAL_TEST.bin",
+  "cue": "E:\\korean\\03_output\\V363_DIALOGUE_TRIAL_TEST.cue",
+  "bin_sha256": "A37A16619F1DF6456DE32A42A57E1BB6909C7C63B8BE7412EE1F19ADC786DE14",
+  "cue_sha256": "EDB88DBDBC46832B0E0A06E4285DA43CFB14EE07FB347208C318622F9B6AAB44",
+  "archive_sha256": "3AA4546914715171B40E617FD6944E9DF0C375EE0909E1CCE3340A86D51A58BC",
+  "verification": "patch    arc1_v363_dialogue_trial_TEST_ONLY.zip\n\noriginal E:\\arc\\원본\\arc1.bin   507 files\nbuilt    E:\\korean\\03_output\\V363_DIALOGUE_TRIAL_TEST.bin   507 files\n\npass  all 506 data files kept their sector number\npass  COMM.DAT   LBA 307  (executable expects 307)\npass  COMM.IMG   LBA 667  (executable expects 667)\npass  COMM.SND   LBA 891  (executable expects 891)\n\n  comparing 164 patched files against the image\npass  all 164 patched files on the disc match arc1_v363_dialogue_trial_TEST_ONLY.zip\n\n  PSX.EXE at LBA 268481 (was 23), 587776 bytes\n\nRESULT: PASS - disc layout/member integrity only; runtime not established\n",
+  "runtime_verified": false
+}

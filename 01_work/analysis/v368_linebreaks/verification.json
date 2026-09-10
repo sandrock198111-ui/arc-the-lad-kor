@@ -1,0 +1,39 @@
+{
+  "zip_sha256": "00A55D88117F614FD2CC30BED097AD27DD93D84A59F87C698043A93DF5431416",
+  "static_pass": true,
+  "checked": [
+    {
+      "offset": "0x43e3c",
+      "rows": [
+        "문제: 파렌시아 성의",
+        "왕을 모시는 대신의 이름은?"
+      ]
+    },
+    {
+      "offset": "0x4429e",
+      "rows": [
+        "문제: 다른 공간에서",
+        "적을 공격하는 아크의 기술은?"
+      ]
+    }
+  ],
+  "counts": {
+    "entries": 107,
+    "questions": 29,
+    "four_choice_items": 116,
+    "outside_old_csv": 63,
+    "original_identical": 0,
+    "question_original": 0,
+    "choices_original": 0,
+    "followup_original": 0,
+    "cpu_errors": 0,
+    "over_four_rows": 0,
+    "choice_windows": 31,
+    "misaligned_windows": 0,
+    "navigation_cases": 240,
+    "additional_same_header_four_choice_bodies": []
+  },
+  "cursor_windows_unchanged": 31,
+  "runtime_verified": false,
+  "limitation": "Actual CPU renderer/coordinates/decoded-pad bounds; final GPU/user playback pending."
+}

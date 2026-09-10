@@ -1,0 +1,1925 @@
+{
+  "zip_sha256": "A4C43D7BE52CDEE4182ADF7580604BC86A7D4D883C7D6D85CD6E0DD60C31C122",
+  "baseline_sha256": "3AA4546914715171B40E617FD6944E9DF0C375EE0909E1CCE3340A86D51A58BC",
+  "runtime_verified": false,
+  "writes": [
+    {
+      "file": "PSX.EXE",
+      "offset": 261856,
+      "before": "c0180400",
+      "after": "00190400",
+      "reason": "choice-specific X+14, Y center+2, vertical pitch16"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 261860,
+      "before": "23186400",
+      "after": "00000000",
+      "reason": "choice-specific X+14, Y center+2, vertical pitch16"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 261864,
+      "before": "40180300",
+      "after": "00000000",
+      "reason": "choice-specific X+14, Y center+2, vertical pitch16"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 261896,
+      "before": "c0100500",
+      "after": "00110500",
+      "reason": "choice-specific X+14, Y center+2, vertical pitch16"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 261900,
+      "before": "23104500",
+      "after": "00000000",
+      "reason": "choice-specific X+14, Y center+2, vertical pitch16"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 261916,
+      "before": "40100200",
+      "after": "0e008424",
+      "reason": "choice-specific X+14, Y center+2, vertical pitch16"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 261932,
+      "before": "ffffa524",
+      "after": "0200a524",
+      "reason": "choice-specific X+14, Y center+2, vertical pitch16"
+    },
+    {
+      "file": "1/S1041.DAT",
+      "offset": 293470,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "21/S2041.DAT",
+      "offset": 296584,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "21/S2044.DAT",
+      "offset": 294927,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "21/S2045.DAT",
+      "offset": 294809,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "21/S2045.DAT",
+      "offset": 298693,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "21/S2045.DAT",
+      "offset": 299375,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "21/S2045.DAT",
+      "offset": 299475,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "21/S2045.DAT",
+      "offset": 299871,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "21/S2045.DAT",
+      "offset": 300873,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "22/S2046.DAT",
+      "offset": 296755,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "22/S2046.DAT",
+      "offset": 296899,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "23/S2082.DAT",
+      "offset": 293161,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3011.DAT",
+      "offset": 294897,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3012.DAT",
+      "offset": 295713,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3013.DAT",
+      "offset": 295882,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 290745,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 291085,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 291383,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 291495,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 291625,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 292143,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 292241,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 292403,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 292827,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 293007,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 293501,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 293603,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 294107,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 294215,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 294633,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 295315,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 295415,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 295717,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 295811,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 295933,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3014.DAT",
+      "offset": 296877,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3031.DAT",
+      "offset": 293956,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "31/S3032.DAT",
+      "offset": 293272,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "32/S3061.DAT",
+      "offset": 294070,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "32/S3061.DAT",
+      "offset": 295228,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "32/S3061.DAT",
+      "offset": 295754,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "32/S3063.DAT",
+      "offset": 294286,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "4/S4022.DAT",
+      "offset": 293392,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "4/S4022.DAT",
+      "offset": 293882,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "5/S5013.DAT",
+      "offset": 292615,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "5/S5013.DAT",
+      "offset": 293513,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "5/S5013.DAT",
+      "offset": 294179,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "5/S5013.DAT",
+      "offset": 294483,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "5/S5013.DAT",
+      "offset": 294789,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "5/S5013.DAT",
+      "offset": 297447,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "5/S5013.DAT",
+      "offset": 298673,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "5/S5013.DAT",
+      "offset": 299355,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "5/S5013.DAT",
+      "offset": 299455,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "5/S5013.DAT",
+      "offset": 299851,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "5/S5013.DAT",
+      "offset": 300917,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6014.DAT",
+      "offset": 298589,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6014.DAT",
+      "offset": 299271,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6014.DAT",
+      "offset": 299371,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6014.DAT",
+      "offset": 299767,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6014.DAT",
+      "offset": 300833,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6053.DAT",
+      "offset": 294080,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282739,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282801,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282981,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 283043,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 283233,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 283295,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 283487,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 283549,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 283727,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 283795,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 283975,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 284037,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 284237,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 284299,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 284479,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 284541,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 284731,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 284793,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 284997,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 285059,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 285245,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 285317,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 285389,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 285489,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 285959,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 286039,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 286117,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 286259,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 286469,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 286689,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 286947,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 287207,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 287297,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 287465,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 287641,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 287813,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 287985,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 288157,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 288323,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 288487,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 288637,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 288813,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 289157,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 289331,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "7/S7012.DAT",
+      "offset": 297301,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "7/S7012.DAT",
+      "offset": 297983,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "7/S7012.DAT",
+      "offset": 298083,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "7/S7012.DAT",
+      "offset": 298479,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "7/S7012.DAT",
+      "offset": 299545,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "7/S7022.DAT",
+      "offset": 297204,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "8/S8013.DAT",
+      "offset": 293869,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "8/S8013.DAT",
+      "offset": 293969,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "8/S8013.DAT",
+      "offset": 294365,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "8/S8013.DAT",
+      "offset": 295431,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "8/S8021.DAT",
+      "offset": 294678,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "F/SF081.DAT",
+      "offset": 293360,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "F/SF0B1.DAT",
+      "offset": 293161,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "same-size speaker break to blank join"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 276831,
+      "before": "e601",
+      "after": "a1a1",
+      "reason": "speaker joined; same two prompt rows, choice E5/E6 positions retained"
+    }
+  ],
+  "applied": [
+    {
+      "row": 116,
+      "file": "1/S1041.DAT",
+      "offset": "0x47A56",
+      "packets": 45,
+      "rows": 4
+    },
+    {
+      "row": 295,
+      "file": "21/S2041.DAT",
+      "offset": "0x48684",
+      "packets": 41,
+      "rows": 3
+    },
+    {
+      "row": 334,
+      "file": "21/S2044.DAT",
+      "offset": "0x4800A",
+      "packets": 33,
+      "rows": 3
+    },
+    {
+      "row": 376,
+      "file": "21/S2045.DAT",
+      "offset": "0x47F94",
+      "packets": 60,
+      "rows": 4
+    },
+    {
+      "row": 417,
+      "file": "21/S2045.DAT",
+      "offset": "0x48EC0",
+      "packets": 22,
+      "rows": 2
+    },
+    {
+      "row": 423,
+      "file": "21/S2045.DAT",
+      "offset": "0x4916A",
+      "packets": 45,
+      "rows": 3
+    },
+    {
+      "row": 424,
+      "file": "21/S2045.DAT",
+      "offset": "0x491CE",
+      "packets": 42,
+      "rows": 3
+    },
+    {
+      "row": 428,
+      "file": "21/S2045.DAT",
+      "offset": "0x4935A",
+      "packets": 58,
+      "rows": 4
+    },
+    {
+      "row": 437,
+      "file": "21/S2045.DAT",
+      "offset": "0x49744",
+      "packets": 52,
+      "rows": 3
+    },
+    {
+      "row": 467,
+      "file": "22/S2046.DAT",
+      "offset": "0x48730",
+      "packets": 21,
+      "rows": 2
+    },
+    {
+      "row": 469,
+      "file": "22/S2046.DAT",
+      "offset": "0x487C0",
+      "packets": 37,
+      "rows": 3
+    },
+    {
+      "row": 693,
+      "file": "23/S2082.DAT",
+      "offset": "0x47926",
+      "packets": 29,
+      "rows": 2
+    },
+    {
+      "row": 706,
+      "file": "31/S3011.DAT",
+      "offset": "0x47FEE",
+      "packets": 41,
+      "rows": 3
+    },
+    {
+      "row": 723,
+      "file": "31/S3012.DAT",
+      "offset": "0x4831C",
+      "packets": 41,
+      "rows": 3
+    },
+    {
+      "row": 742,
+      "file": "31/S3013.DAT",
+      "offset": "0x483C6",
+      "packets": 53,
+      "rows": 4
+    },
+    {
+      "row": 771,
+      "file": "31/S3014.DAT",
+      "offset": "0x46FB4",
+      "packets": 61,
+      "rows": 4
+    },
+    {
+      "row": 774,
+      "file": "31/S3014.DAT",
+      "offset": "0x47108",
+      "packets": 49,
+      "rows": 3
+    },
+    {
+      "row": 777,
+      "file": "31/S3014.DAT",
+      "offset": "0x47232",
+      "packets": 51,
+      "rows": 4
+    },
+    {
+      "row": 778,
+      "file": "31/S3014.DAT",
+      "offset": "0x472A2",
+      "packets": 57,
+      "rows": 4
+    },
+    {
+      "row": 779,
+      "file": "31/S3014.DAT",
+      "offset": "0x47324",
+      "packets": 19,
+      "rows": 2
+    },
+    {
+      "row": 784,
+      "file": "31/S3014.DAT",
+      "offset": "0x4752A",
+      "packets": 45,
+      "rows": 4
+    },
+    {
+      "row": 785,
+      "file": "31/S3014.DAT",
+      "offset": "0x4758C",
+      "packets": 43,
+      "rows": 4
+    },
+    {
+      "row": 787,
+      "file": "31/S3014.DAT",
+      "offset": "0x4762E",
+      "packets": 37,
+      "rows": 3
+    },
+    {
+      "row": 792,
+      "file": "31/S3014.DAT",
+      "offset": "0x477D6",
+      "packets": 43,
+      "rows": 4
+    },
+    {
+      "row": 794,
+      "file": "31/S3014.DAT",
+      "offset": "0x4788A",
+      "packets": 37,
+      "rows": 3
+    },
+    {
+      "row": 799,
+      "file": "31/S3014.DAT",
+      "offset": "0x47A78",
+      "packets": 49,
+      "rows": 4
+    },
+    {
+      "row": 800,
+      "file": "31/S3014.DAT",
+      "offset": "0x47ADE",
+      "packets": 32,
+      "rows": 3
+    },
+    {
+      "row": 806,
+      "file": "31/S3014.DAT",
+      "offset": "0x47CD6",
+      "packets": 52,
+      "rows": 4
+    },
+    {
+      "row": 807,
+      "file": "31/S3014.DAT",
+      "offset": "0x47D42",
+      "packets": 29,
+      "rows": 2
+    },
+    {
+      "row": 812,
+      "file": "31/S3014.DAT",
+      "offset": "0x47EE4",
+      "packets": 22,
+      "rows": 2
+    },
+    {
+      "row": 818,
+      "file": "31/S3014.DAT",
+      "offset": "0x4818E",
+      "packets": 45,
+      "rows": 3
+    },
+    {
+      "row": 819,
+      "file": "31/S3014.DAT",
+      "offset": "0x481F2",
+      "packets": 42,
+      "rows": 3
+    },
+    {
+      "row": 822,
+      "file": "31/S3014.DAT",
+      "offset": "0x48320",
+      "packets": 37,
+      "rows": 3
+    },
+    {
+      "row": 823,
+      "file": "31/S3014.DAT",
+      "offset": "0x4837E",
+      "packets": 58,
+      "rows": 4
+    },
+    {
+      "row": 824,
+      "file": "31/S3014.DAT",
+      "offset": "0x483F8",
+      "packets": 51,
+      "rows": 3
+    },
+    {
+      "row": 833,
+      "file": "31/S3014.DAT",
+      "offset": "0x487A8",
+      "packets": 51,
+      "rows": 3
+    },
+    {
+      "row": 969,
+      "file": "31/S3031.DAT",
+      "offset": "0x47C40",
+      "packets": 41,
+      "rows": 3
+    },
+    {
+      "row": 993,
+      "file": "31/S3032.DAT",
+      "offset": "0x47994",
+      "packets": 39,
+      "rows": 4
+    },
+    {
+      "row": 1017,
+      "file": "32/S3061.DAT",
+      "offset": "0x47CB0",
+      "packets": 54,
+      "rows": 4
+    },
+    {
+      "row": 1029,
+      "file": "32/S3061.DAT",
+      "offset": "0x48136",
+      "packets": 40,
+      "rows": 3
+    },
+    {
+      "row": 1035,
+      "file": "32/S3061.DAT",
+      "offset": "0x48344",
+      "packets": 29,
+      "rows": 2
+    },
+    {
+      "row": 1048,
+      "file": "32/S3063.DAT",
+      "offset": "0x47D88",
+      "packets": 39,
+      "rows": 3
+    },
+    {
+      "row": 1119,
+      "file": "4/S4022.DAT",
+      "offset": "0x47A0C",
+      "packets": 38,
+      "rows": 3
+    },
+    {
+      "row": 1125,
+      "file": "4/S4022.DAT",
+      "offset": "0x47BF6",
+      "packets": 19,
+      "rows": 2
+    },
+    {
+      "row": 1348,
+      "file": "5/S5013.DAT",
+      "offset": "0x47702",
+      "packets": 24,
+      "rows": 2
+    },
+    {
+      "row": 1352,
+      "file": "5/S5013.DAT",
+      "offset": "0x47A84",
+      "packets": 24,
+      "rows": 2
+    },
+    {
+      "row": 1357,
+      "file": "5/S5013.DAT",
+      "offset": "0x47D1E",
+      "packets": 13,
+      "rows": 1
+    },
+    {
+      "row": 1358,
+      "file": "5/S5013.DAT",
+      "offset": "0x47E4E",
+      "packets": 24,
+      "rows": 2
+    },
+    {
+      "row": 1361,
+      "file": "5/S5013.DAT",
+      "offset": "0x47F80",
+      "packets": 61,
+      "rows": 4
+    },
+    {
+      "row": 1388,
+      "file": "5/S5013.DAT",
+      "offset": "0x489E2",
+      "packets": 36,
+      "rows": 3
+    },
+    {
+      "row": 1402,
+      "file": "5/S5013.DAT",
+      "offset": "0x48EAC",
+      "packets": 22,
+      "rows": 2
+    },
+    {
+      "row": 1408,
+      "file": "5/S5013.DAT",
+      "offset": "0x49156",
+      "packets": 45,
+      "rows": 3
+    },
+    {
+      "row": 1409,
+      "file": "5/S5013.DAT",
+      "offset": "0x491BA",
+      "packets": 47,
+      "rows": 3
+    },
+    {
+      "row": 1413,
+      "file": "5/S5013.DAT",
+      "offset": "0x49346",
+      "packets": 58,
+      "rows": 4
+    },
+    {
+      "row": 1423,
+      "file": "5/S5013.DAT",
+      "offset": "0x49770",
+      "packets": 51,
+      "rows": 3
+    },
+    {
+      "row": 1612,
+      "file": "6/S6014.DAT",
+      "offset": "0x48E58",
+      "packets": 22,
+      "rows": 2
+    },
+    {
+      "row": 1618,
+      "file": "6/S6014.DAT",
+      "offset": "0x49102",
+      "packets": 45,
+      "rows": 3
+    },
+    {
+      "row": 1619,
+      "file": "6/S6014.DAT",
+      "offset": "0x49166",
+      "packets": 47,
+      "rows": 3
+    },
+    {
+      "row": 1623,
+      "file": "6/S6014.DAT",
+      "offset": "0x492F2",
+      "packets": 58,
+      "rows": 4
+    },
+    {
+      "row": 1633,
+      "file": "6/S6014.DAT",
+      "offset": "0x4971C",
+      "packets": 52,
+      "rows": 3
+    },
+    {
+      "row": 1697,
+      "file": "6/S6053.DAT",
+      "offset": "0x47CBC",
+      "packets": 46,
+      "rows": 4
+    },
+    {
+      "row": 1704,
+      "file": "6/S6054.DAT",
+      "offset": "0x4506E",
+      "packets": 12,
+      "rows": 1
+    },
+    {
+      "row": 1705,
+      "file": "6/S6054.DAT",
+      "offset": "0x450AC",
+      "packets": 22,
+      "rows": 2
+    },
+    {
+      "row": 1707,
+      "file": "6/S6054.DAT",
+      "offset": "0x45160",
+      "packets": 12,
+      "rows": 1
+    },
+    {
+      "row": 1708,
+      "file": "6/S6054.DAT",
+      "offset": "0x4519E",
+      "packets": 27,
+      "rows": 2
+    },
+    {
+      "row": 1710,
+      "file": "6/S6054.DAT",
+      "offset": "0x4525C",
+      "packets": 12,
+      "rows": 1
+    },
+    {
+      "row": 1711,
+      "file": "6/S6054.DAT",
+      "offset": "0x4529A",
+      "packets": 36,
+      "rows": 3
+    },
+    {
+      "row": 1713,
+      "file": "6/S6054.DAT",
+      "offset": "0x4535A",
+      "packets": 12,
+      "rows": 1
+    },
+    {
+      "row": 1714,
+      "file": "6/S6054.DAT",
+      "offset": "0x45398",
+      "packets": 19,
+      "rows": 2
+    },
+    {
+      "row": 1716,
+      "file": "6/S6054.DAT",
+      "offset": "0x4544A",
+      "packets": 17,
+      "rows": 1
+    },
+    {
+      "row": 1717,
+      "file": "6/S6054.DAT",
+      "offset": "0x4548E",
+      "packets": 20,
+      "rows": 2
+    },
+    {
+      "row": 1719,
+      "file": "6/S6054.DAT",
+      "offset": "0x45542",
+      "packets": 12,
+      "rows": 1
+    },
+    {
+      "row": 1720,
+      "file": "6/S6054.DAT",
+      "offset": "0x45580",
+      "packets": 37,
+      "rows": 3
+    },
+    {
+      "row": 1722,
+      "file": "6/S6054.DAT",
+      "offset": "0x45648",
+      "packets": 12,
+      "rows": 1
+    },
+    {
+      "row": 1723,
+      "file": "6/S6054.DAT",
+      "offset": "0x45686",
+      "packets": 27,
+      "rows": 2
+    },
+    {
+      "row": 1725,
+      "file": "6/S6054.DAT",
+      "offset": "0x4573A",
+      "packets": 12,
+      "rows": 1
+    },
+    {
+      "row": 1726,
+      "file": "6/S6054.DAT",
+      "offset": "0x45778",
+      "packets": 41,
+      "rows": 3
+    },
+    {
+      "row": 1728,
+      "file": "6/S6054.DAT",
+      "offset": "0x45836",
+      "packets": 12,
+      "rows": 1
+    },
+    {
+      "row": 1729,
+      "file": "6/S6054.DAT",
+      "offset": "0x45874",
+      "packets": 31,
+      "rows": 2
+    },
+    {
+      "row": 1731,
+      "file": "6/S6054.DAT",
+      "offset": "0x45940",
+      "packets": 12,
+      "rows": 1
+    },
+    {
+      "row": 1732,
+      "file": "6/S6054.DAT",
+      "offset": "0x4597E",
+      "packets": 23,
+      "rows": 2
+    },
+    {
+      "row": 1734,
+      "file": "6/S6054.DAT",
+      "offset": "0x45A38",
+      "packets": 12,
+      "rows": 1
+    },
+    {
+      "row": 1735,
+      "file": "6/S6054.DAT",
+      "offset": "0x45A80",
+      "packets": 13,
+      "rows": 1
+    },
+    {
+      "row": 1736,
+      "file": "6/S6054.DAT",
+      "offset": "0x45AC8",
+      "packets": 40,
+      "rows": 3
+    },
+    {
+      "row": 1737,
+      "file": "6/S6054.DAT",
+      "offset": "0x45B2C",
+      "packets": 45,
+      "rows": 3
+    },
+    {
+      "row": 1742,
+      "file": "6/S6054.DAT",
+      "offset": "0x45D02",
+      "packets": 30,
+      "rows": 2
+    },
+    {
+      "row": 1743,
+      "file": "6/S6054.DAT",
+      "offset": "0x45D52",
+      "packets": 26,
+      "rows": 2
+    },
+    {
+      "row": 1744,
+      "file": "6/S6054.DAT",
+      "offset": "0x45DA0",
+      "packets": 21,
+      "rows": 2
+    },
+    {
+      "row": 1746,
+      "file": "6/S6054.DAT",
+      "offset": "0x45E2E",
+      "packets": 35,
+      "rows": 3
+    },
+    {
+      "row": 1747,
+      "file": "6/S6054.DAT",
+      "offset": "0x45F00",
+      "packets": 31,
+      "rows": 2
+    },
+    {
+      "row": 1749,
+      "file": "6/S6054.DAT",
+      "offset": "0x45FDC",
+      "packets": 31,
+      "rows": 2
+    },
+    {
+      "row": 1752,
+      "file": "6/S6054.DAT",
+      "offset": "0x460DE",
+      "packets": 39,
+      "rows": 3
+    },
+    {
+      "row": 1755,
+      "file": "6/S6054.DAT",
+      "offset": "0x461E2",
+      "packets": 33,
+      "rows": 2
+    },
+    {
+      "row": 1756,
+      "file": "6/S6054.DAT",
+      "offset": "0x4623C",
+      "packets": 35,
+      "rows": 3
+    },
+    {
+      "row": 1758,
+      "file": "6/S6054.DAT",
+      "offset": "0x462E4",
+      "packets": 38,
+      "rows": 3
+    },
+    {
+      "row": 1760,
+      "file": "6/S6054.DAT",
+      "offset": "0x46394",
+      "packets": 38,
+      "rows": 3
+    },
+    {
+      "row": 1762,
+      "file": "6/S6054.DAT",
+      "offset": "0x46440",
+      "packets": 42,
+      "rows": 3
+    },
+    {
+      "row": 1764,
+      "file": "6/S6054.DAT",
+      "offset": "0x464EC",
+      "packets": 43,
+      "rows": 3
+    },
+    {
+      "row": 1766,
+      "file": "6/S6054.DAT",
+      "offset": "0x46598",
+      "packets": 37,
+      "rows": 3
+    },
+    {
+      "row": 1768,
+      "file": "6/S6054.DAT",
+      "offset": "0x4663E",
+      "packets": 39,
+      "rows": 3
+    },
+    {
+      "row": 1770,
+      "file": "6/S6054.DAT",
+      "offset": "0x466E2",
+      "packets": 22,
+      "rows": 2
+    },
+    {
+      "row": 1772,
+      "file": "6/S6054.DAT",
+      "offset": "0x46778",
+      "packets": 44,
+      "rows": 3
+    },
+    {
+      "row": 1774,
+      "file": "6/S6054.DAT",
+      "offset": "0x46828",
+      "packets": 43,
+      "rows": 3
+    },
+    {
+      "row": 1778,
+      "file": "6/S6054.DAT",
+      "offset": "0x46980",
+      "packets": 43,
+      "rows": 3
+    },
+    {
+      "row": 1780,
+      "file": "6/S6054.DAT",
+      "offset": "0x46A2E",
+      "packets": 37,
+      "rows": 3
+    },
+    {
+      "row": 1847,
+      "file": "7/S7012.DAT",
+      "offset": "0x48950",
+      "packets": 22,
+      "rows": 2
+    },
+    {
+      "row": 1853,
+      "file": "7/S7012.DAT",
+      "offset": "0x48BFA",
+      "packets": 45,
+      "rows": 3
+    },
+    {
+      "row": 1854,
+      "file": "7/S7012.DAT",
+      "offset": "0x48C5E",
+      "packets": 47,
+      "rows": 3
+    },
+    {
+      "row": 1858,
+      "file": "7/S7012.DAT",
+      "offset": "0x48DEA",
+      "packets": 58,
+      "rows": 4
+    },
+    {
+      "row": 1868,
+      "file": "7/S7012.DAT",
+      "offset": "0x49214",
+      "packets": 52,
+      "rows": 3
+    },
+    {
+      "row": 1921,
+      "file": "7/S7022.DAT",
+      "offset": "0x488F0",
+      "packets": 42,
+      "rows": 3
+    },
+    {
+      "row": 2202,
+      "file": "8/S8013.DAT",
+      "offset": "0x47BE8",
+      "packets": 45,
+      "rows": 3
+    },
+    {
+      "row": 2203,
+      "file": "8/S8013.DAT",
+      "offset": "0x47C4C",
+      "packets": 47,
+      "rows": 3
+    },
+    {
+      "row": 2207,
+      "file": "8/S8013.DAT",
+      "offset": "0x47DD8",
+      "packets": 58,
+      "rows": 4
+    },
+    {
+      "row": 2217,
+      "file": "8/S8013.DAT",
+      "offset": "0x48202",
+      "packets": 52,
+      "rows": 3
+    },
+    {
+      "row": 2230,
+      "file": "8/S8021.DAT",
+      "offset": "0x47F0E",
+      "packets": 34,
+      "rows": 3
+    },
+    {
+      "row": 2817,
+      "file": "F/SF081.DAT",
+      "offset": "0x479EC",
+      "packets": 29,
+      "rows": 2
+    },
+    {
+      "row": 2834,
+      "file": "F/SF0B1.DAT",
+      "offset": "0x47926",
+      "packets": 24,
+      "rows": 2
+    }
+  ],
+  "deferred": [
+    {
+      "row": 83,
+      "file": "1/S1023.DAT",
+      "offset": "0x47952",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 288,
+      "file": "21/S2041.DAT",
+      "offset": "0x483D4",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 308,
+      "file": "21/S2042.DAT",
+      "offset": "0x47FF0",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 574,
+      "file": "22/S2055.DAT",
+      "offset": "0x47A38",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 640,
+      "file": "22/S205C.DAT",
+      "offset": "0x47DCC",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 715,
+      "file": "31/S3012.DAT",
+      "offset": "0x47FF0",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 782,
+      "file": "31/S3014.DAT",
+      "offset": "0x4745A",
+      "reason": "64-packet or conservative 4-row bound",
+      "packets": 79,
+      "rows": 5
+    },
+    {
+      "row": 821,
+      "file": "31/S3014.DAT",
+      "offset": "0x482B6",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 862,
+      "file": "31/S3022.DAT",
+      "offset": "0x48822",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 1014,
+      "file": "32/S3061.DAT",
+      "offset": "0x47BB4",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 1113,
+      "file": "4/S4021.DAT",
+      "offset": "0x47AFA",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 1551,
+      "file": "6/S6013.DAT",
+      "offset": "0x48290",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 1884,
+      "file": "7/S7021.DAT",
+      "offset": "0x48D26",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 1923,
+      "file": "7/S7022.DAT",
+      "offset": "0x489B6",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 1953,
+      "file": "7/S7023.DAT",
+      "offset": "0x48A4E",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 1985,
+      "file": "7/S7024.DAT",
+      "offset": "0x48AAE",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2018,
+      "file": "7/S7025.DAT",
+      "offset": "0x48AC2",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2045,
+      "file": "7/S7026.DAT",
+      "offset": "0x488BC",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2059,
+      "file": "7/S7026.DAT",
+      "offset": "0x48D28",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2120,
+      "file": "7/S7028.DAT",
+      "offset": "0x48028",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2142,
+      "file": "7/S7028.DAT",
+      "offset": "0x48B70",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2143,
+      "file": "7/S7031.DAT",
+      "offset": "0x478B8",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2148,
+      "file": "7/S7032.DAT",
+      "offset": "0x478BA",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2151,
+      "file": "7/S7032.DAT",
+      "offset": "0x479EC",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2152,
+      "file": "7/S7032.DAT",
+      "offset": "0x47A72",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2767,
+      "file": "F/SF041.DAT",
+      "offset": "0x47AAC",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2768,
+      "file": "F/SF041.DAT",
+      "offset": "0x47B26",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2770,
+      "file": "F/SF041.DAT",
+      "offset": "0x47BE0",
+      "reason": "special controls/choice require separate layout validation"
+    },
+    {
+      "row": 2859,
+      "file": "F/SF0E1.DAT",
+      "offset": "0x47B56",
+      "reason": "special controls/choice require separate layout validation"
+    }
+  ],
+  "extra_low_address_join": true,
+  "changed_members": [
+    "1/S1041.DAT",
+    "21/S2041.DAT",
+    "21/S2044.DAT",
+    "21/S2045.DAT",
+    "22/S2046.DAT",
+    "23/S2082.DAT",
+    "31/S3011.DAT",
+    "31/S3012.DAT",
+    "31/S3013.DAT",
+    "31/S3014.DAT",
+    "31/S3031.DAT",
+    "31/S3032.DAT",
+    "32/S3061.DAT",
+    "32/S3063.DAT",
+    "4/S4022.DAT",
+    "5/S5013.DAT",
+    "6/S6014.DAT",
+    "6/S6053.DAT",
+    "6/S6054.DAT",
+    "7/S7012.DAT",
+    "7/S7022.DAT",
+    "8/S8013.DAT",
+    "8/S8021.DAT",
+    "F/SF081.DAT",
+    "F/SF0B1.DAT",
+    "PSX.EXE"
+  ],
+  "policy": "TEST_ONLY; spacing/layout only, canonical/export CSV preserved; inherited V363 legacy dependency"
+}

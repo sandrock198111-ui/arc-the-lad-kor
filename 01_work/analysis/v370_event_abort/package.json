@@ -1,0 +1,8 @@
+{
+  "bin": "E:\\korean\\03_output\\V370_EVENT_RESTORE_TEST.bin",
+  "cue": "E:\\korean\\03_output\\V370_EVENT_RESTORE_TEST.cue",
+  "bin_sha256": "5E7FF5D2D1FBFD61354F7C2A1E4297506C88EED4673791E09CCF448CD3F93007",
+  "archive_sha256": "8FE8CF805C571C40E7215CF71CBFEB559F639DB71CF0AF48C40AEF691D7BB404",
+  "verification": "patch    arc1_v370_event_restore_TEST_ONLY.zip\n\noriginal E:\\arc\\원본\\arc1.bin   507 files\nbuilt    E:\\korean\\03_output\\V370_EVENT_RESTORE_TEST.bin   507 files\n\npass  all 506 data files kept their sector number\npass  COMM.DAT   LBA 307  (executable expects 307)\npass  COMM.IMG   LBA 667  (executable expects 667)\npass  COMM.SND   LBA 891  (executable expects 891)\n\n  comparing 164 patched files against the image\npass  all 164 patched files on the disc match arc1_v370_event_restore_TEST_ONLY.zip\n\n  PSX.EXE at LBA 268481 (was 23), 587776 bytes\n\nRESULT: PASS - disc layout/member integrity only; runtime not established\n",
+  "runtime_verified": false
+}

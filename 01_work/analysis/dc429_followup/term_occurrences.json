@@ -1,0 +1,26 @@
+[
+  {
+    "row": 1697,
+    "source file": "6/S6053.DAT",
+    "offset": "0x47CBC",
+    "japanese": "弟子 \nイーガ師匠(しはん)。\n我らの中にあるのは邪悪な教えだけではありません。",
+    "korean": "제자: 이가 사범님. 저희가 스승님께 배운 것이 모두 잘못된 것은 아닙니다.",
+    "source of the translation (existing / new)": "new"
+  },
+  {
+    "row": 1698,
+    "source file": "6/S6053.DAT",
+    "offset": "0x47D2E",
+    "japanese": "弟子 \nあなたは我らに\n自分の聞違いを正すこを恐れない\n勇気を教えてくれました。",
+    "korean": "제자: 스승님은 저희에게 자신의 잘못을 바로잡는 것을 두려워하지 않는 용기를 가르쳐 주셨습니다.",
+    "source of the translation (existing / new)": "new"
+  },
+  {
+    "row": 1699,
+    "source file": "6/S6053.DAT",
+    "offset": "0x47D9E",
+    "japanese": "弟子 \n師匠がお戻りになるまで\nこの寺は我らが守つております。",
+    "korean": "제자: 스승님이 돌아오실 때까지 이 절은 우리가 지키겠습니다.",
+    "source of the translation (existing / new)": "new"
+  }
+]

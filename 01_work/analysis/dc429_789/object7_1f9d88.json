@@ -1,0 +1,17 @@
+{
+  "state": {
+    "header_address": "0x801F9D88",
+    "base_address": "0x801BF6BC",
+    "limit": 64,
+    "count": 0,
+    "x": 46,
+    "y": 162,
+    "style": 0,
+    "D": 14,
+    "E": 16,
+    "F": 2,
+    "line_extra": 0,
+    "source_pointer": "0x00000000"
+  },
+  "packets": []
+}

@@ -1,0 +1,54 @@
+{
+  "zip_sha256": "58692673A78F425A206814B7C7193A69E7FAD41CD2A755E9AF5F13BB429EF69F",
+  "baseline_sha256": "B2B37F0FB06A5E63BA221A0F2BCE0E9E8B5D341932B9CDA7CDE7FFEF987E1DC6",
+  "writes": [
+    {
+      "file": "6/S6013.DAT",
+      "offset": 282751,
+      "before": "1a",
+      "after": "25"
+    },
+    {
+      "file": "6/S6013.DAT",
+      "offset": 295778,
+      "before": "a1",
+      "after": "e2"
+    },
+    {
+      "file": "6/S6013.DAT",
+      "offset": 295779,
+      "before": "a1",
+      "after": "81"
+    },
+    {
+      "file": "6/S6013.DAT",
+      "offset": 295787,
+      "before": "e6",
+      "after": "a1"
+    },
+    {
+      "file": "6/S6013.DAT",
+      "offset": 295788,
+      "before": "01",
+      "after": "a1"
+    },
+    {
+      "file": "6/S6013.DAT",
+      "offset": 295789,
+      "before": "e2",
+      "after": "a1"
+    },
+    {
+      "file": "6/S6013.DAT",
+      "offset": 295790,
+      "before": "81",
+      "after": "a1"
+    }
+  ],
+  "changed_members": [
+    "6/S6013.DAT"
+  ],
+  "static_pass": true,
+  "runtime_verified": false,
+  "scope": "Slot1 overflow only, Sans retained. Slot2 reported stall NOT fixed or disproved."
+}

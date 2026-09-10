@@ -1,0 +1,74 @@
+{
+  "zip_sha256": "2443DCCA0451372D4D7A6ACD8B593696EC52734FC467B42C2284EFD14995FEBF",
+  "baseline_sha256": "28EEE68677DB124D91550CF89B2EF437B1CE728686011CA79B419FA1DAB27764",
+  "writes": [
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277032,
+      "before": "5764678425e60141323028247d40201e23271b33321f1c203c",
+      "after": "693cdd02a115dd49a156dd6ade7e09e60146ddd52d073bd1a1",
+      "reason": "승려: 그럼 장난삼아|오셨습니까?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277061,
+      "before": "411cdd753937",
+      "after": "ddb12d070121",
+      "reason": "맞습니다."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277071,
+      "before": "362d30381d1b37",
+      "after": "09de49070121a1",
+      "reason": "아닙니다."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277140,
+      "before": "5764678425e6014132302824dd2a1c382d351b23dd08212e1f4633321f33241b1b2e362fdd6a463d2637",
+      "after": "693cdd02a1018da1ddaf6636a101a1ddb1dd59293ae601dd0d26a1dd8ea1dd1e3ca1172e542d070121a1",
+      "reason": "승려: 다음 문제를 다 맞히시면|좋은 걸 알려 드리겠습니다."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277242,
+      "before": "382d351b25e601c824a331dbdd031cdd998828dd08dd25306e52353c",
+      "after": "ddaf66dd02a104dd4aa16bdd3126a155dd21a1def4a1dd347f073bd1",
+      "reason": "문제: 지금 일행은 모두 몇 명입니까?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277326,
+      "before": "e5031652e601e5031752e601e5031852e601e5031952",
+      "after": "a19edd34e601a19fdd34e601a19add34e601a110dd34",
+      "reason": "four inline choices, original E6/NUL addresses retained; indent8px"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277360,
+      "before": "0000",
+      "after": "feff",
+      "reason": "signed local column -2 gives cursor x=origin-10, before text origin+8"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 18816,
+      "before": "50dd3103a16cdd7a53a1de5b19871e21a101290000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b",
+      "after": "50dd3103a16cdd7a53a118a1dd5a2d070121000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b",
+      "reason": "polite refusal; existing metadata unchanged"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 286276,
+      "before": "334f1933dd72a12b8f21a1",
+      "after": "0129a1dd5609465d294621",
+      "reason": "다시 찾아오십시오."
+    }
+  ],
+  "changed_members": [
+    "6/S6054.DAT"
+  ],
+  "runtime_verified": false,
+  "policy": "TEST_ONLY; five reported states; local four-choice indent/column only; other low-address candidates pending; canonical CSV unchanged"
+}

@@ -1,0 +1,4932 @@
+{
+  "baseline_sha256": "2443DCCA0451372D4D7A6ACD8B593696EC52734FC467B42C2284EFD14995FEBF",
+  "states": [
+    {
+      "slot": 5,
+      "sha256": "404d25bdca98a30481b3b3e156a9b4264b6b545992aaaeae710caa2954fb8652",
+      "title": "V366_FOLLOWUPS_TEST",
+      "source_file_offset": "0x43bce"
+    },
+    {
+      "slot": 6,
+      "sha256": "1c37692582306008bc2515a06a16a65c35d7fe1cfc6b6aef60aa3a3de87954a7",
+      "title": "V366_FOLLOWUPS_TEST",
+      "source_file_offset": "0x43c7a"
+    }
+  ],
+  "scope": "S6054 event text 4395A..45E4F; 29-header + token boundaries + same consumer CPU. Full gameplay branch reachability not proven.",
+  "counts": {
+    "entries": 107,
+    "questions": 29,
+    "four_choice_items": 116,
+    "outside_old_csv": 63,
+    "original_identical": 58,
+    "question_original": 18,
+    "choices_original": 17,
+    "followup_original": 18,
+    "cpu_errors": 0,
+    "over_four_rows": 0,
+    "choice_windows": 31,
+    "misaligned_windows": 0,
+    "navigation_cases": 240,
+    "additional_same_header_four_choice_bodies": []
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question": "0x43afa",
+      "choices": "0x43b4e",
+      "followup": "0x43bbc",
+      "question_original": false,
+      "choices_original": false,
+      "followup_original": true,
+      "question_preview": "もんだい：|今、パーテ□の仲聞は全部で何人だ？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 2,
+      "question": "0x43c00",
+      "choices": "0x43c58",
+      "followup": "0x43cd2",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|アーク、ククル、ポニの次に仲聞になつたのは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 3,
+      "question": "0x43d16",
+      "choices": "0x43d72",
+      "followup": "0x43df8",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|トッシュの能力で、単体最強の攻撃力を持つのは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 4,
+      "question": "0x43e3c",
+      "choices": "0x43e98",
+      "followup": "0x43f12",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|パ□ンシア城にいる王に仕える大臣の名前は何だつたか？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 5,
+      "question": "0x43f56",
+      "choices": "0x43fb0",
+      "followup": "0x4402c",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|トヨー□の森で出会つた、きれいな精霊の名前は？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 6,
+      "question": "0x44070",
+      "choices": "0x440ca",
+      "followup": "0x4414c",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|スメリア王から授かつた、|飛行□の名前は？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 7,
+      "question": "0x44190",
+      "choices": "0x441e4",
+      "followup": "0x4425a",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|次の内、ポニの楽器にないものは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 8,
+      "question": "0x4429e",
+      "choices": "0x442fc",
+      "followup": "0x44386",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|異□聞からの攻撃で敵にダメージを□えるアークの能力は？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 9,
+      "question": "0x443ca",
+      "choices": "0x44428",
+      "followup": "0x444b4",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|そこに行けば、運命づけられた仲聞と出会うという場所は？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 10,
+      "question": "0x446ca",
+      "choices": "0x4473c",
+      "followup": "0x4479e",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|スメリア□ジョンで指名手配のカュースが流れているが、しゃ□がこう□されていないのは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 11,
+      "question": "0x447dc",
+      "choices": "0x44830",
+      "followup": "0x44890",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|ミルマーナのヤ□ン将軍の□ットは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 12,
+      "question": "0x448ce",
+      "choices": "0x4491a",
+      "followup": "0x4499a",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|アークのフル□ームは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 13,
+      "question": "0x449d8",
+      "choices": "0x44a30",
+      "followup": "0x44a9e",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "もんだい：|□ーゲンを□らえているモンスターの名前は？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 14,
+      "question": "0x44adc",
+      "choices": "0x44b28",
+      "followup": "0x44b92",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "ラマダ僧：|へモジーの国はどこか？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 15,
+      "question": "0x44bd0",
+      "choices": "0x44c1a",
+      "followup": "0x44c88",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "ラマダ僧：|アークの父の名前は？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 16,
+      "question": "0x44cc6",
+      "choices": "0x44d12",
+      "followup": "0x44d76",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "ラマダ僧：|アークの母の名前は？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 17,
+      "question": "0x44db4",
+      "choices": "0x44e0a",
+      "followup": "0x44e74",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "ラマダ僧：|アークたちが3番目に出会う精霊の名前は？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 18,
+      "question": "0x44eb2",
+      "choices": "0x44f00",
+      "followup": "0x44f6a",
+      "question_original": true,
+      "choices_original": true,
+      "followup_original": true,
+      "question_preview": "ラマダ僧：|ポニが下にはいているものは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 19,
+      "question": "0x44fa8",
+      "choices": "0x45002",
+      "followup": "0x4506e",
+      "question_original": true,
+      "choices_original": false,
+      "followup_original": false,
+      "question_preview": "ラマダ僧：|シルバー□アの乗員で、バッチの相棒といえば？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 20,
+      "question": "0x450ac",
+      "choices": "0x450f6",
+      "followup": "0x45160",
+      "question_original": false,
+      "choices_original": false,
+      "followup_original": false,
+      "question_preview": "ラマダ僧：|スパ□はどこにいた？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 21,
+      "question": "0x4519e",
+      "choices": "0x451f4",
+      "followup": "0x4525c",
+      "question_original": false,
+      "choices_original": false,
+      "followup_original": false,
+      "question_preview": "ラマダ僧：|セーフデータのシン□ルになつているのは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 22,
+      "question": "0x4529a",
+      "choices": "0x452f2",
+      "followup": "0x4535a",
+      "question_original": false,
+      "choices_original": false,
+      "followup_original": false,
+      "question_preview": "ラマダ僧：|スメリアのダウンタウンにいるよつっらいの名前は？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 23,
+      "question": "0x45398",
+      "choices": "0x453e6",
+      "followup": "0x4544a",
+      "question_original": false,
+      "choices_original": false,
+      "followup_original": false,
+      "question_preview": "ラマダ僧：|アーク□ラットのぞくへんは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 24,
+      "question": "0x4548e",
+      "choices": "0x454dc",
+      "followup": "0x45542",
+      "question_original": false,
+      "choices_original": false,
+      "followup_original": false,
+      "question_preview": "ラマダ僧：|アーク□ラットのスタッフは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 25,
+      "question": "0x45580",
+      "choices": "0x455e0",
+      "followup": "0x45648",
+      "question_original": false,
+      "choices_original": false,
+      "followup_original": false,
+      "question_preview": "ラマダ僧：|首都の軍オフ□スには、実は地下50階のダンジョンが・・",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 26,
+      "question": "0x45686",
+      "choices": "0x456da",
+      "followup": "0x4573a",
+      "question_original": false,
+      "choices_original": false,
+      "followup_original": false,
+      "question_preview": "ラマダ僧：|遺跡ダンジョンの一番下にいるものは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 27,
+      "question": "0x45778",
+      "choices": "0x457d4",
+      "followup": "0x45836",
+      "question_original": false,
+      "choices_original": false,
+      "followup_original": false,
+      "question_preview": "ラマダ僧：|ラマダ寺でとびらが□いたときに中に見える人の数は？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 28,
+      "question": "0x45874",
+      "choices": "0x458ce",
+      "followup": "0x45940",
+      "question_original": false,
+      "choices_original": false,
+      "followup_original": false,
+      "question_preview": "ラマダ僧：|ストーンサークルでチョン□ラが見つけたア□テムは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    },
+    {
+      "number": 29,
+      "question": "0x4597e",
+      "choices": "0x459ca",
+      "followup": "0x45a38",
+      "question_original": false,
+      "choices_original": false,
+      "followup_original": false,
+      "question_preview": "ラマダ僧：|ちょこのかみのけのいろは？",
+      "choice_aligned": true,
+      "rows": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "error": null
+    }
+  ],
+  "entries": [
+    {
+      "offset": "0x4395a",
+      "end": "0x43987",
+      "bytes": 45,
+      "csv_present": false,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|修行をつみにまいられたのですか？|[선택]その通り。|[선택]とんでもない。",
+      "current_decode": "승려: 수행하러 오셨습니까?|[선택]맞습니다.|[선택]아닙니다. ",
+      "choice_count": 2,
+      "renderer": {
+        "count": 30,
+        "expected_tokens": 30,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 242,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x4398a",
+        "fields": [
+          5,
+          2,
+          0,
+          1
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 4
+      }
+    },
+    {
+      "offset": "0x43a28",
+      "end": "0x43a56",
+      "bytes": 46,
+      "csv_present": false,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|それでは、ひやかしにまいられたのか？|[선택]その通り。|[선택]とんでもない。",
+      "current_decode": "승려: 그럼 장난삼아|오셨습니까? |[선택]맞습니다.|[선택]아닙니다. ",
+      "choice_count": 2,
+      "renderer": {
+        "count": 33,
+        "expected_tokens": 33,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 186,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x43a58",
+        "fields": [
+          5,
+          2,
+          0,
+          2
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 4
+      }
+    },
+    {
+      "offset": "0x43a94",
+      "end": "0x43abe",
+      "bytes": 42,
+      "csv_present": false,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|それでは、次のもんだいに全てこたえられたら、いいことを教えよう。",
+      "current_decode": "승려: 다음 문제를 다 맞히시면|좋은 걸 알려 드리겠습니다. ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 33,
+        "expected_tokens": 33,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 254,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x43afa",
+      "end": "0x43b16",
+      "bytes": 28,
+      "csv_present": false,
+      "original_identical": false,
+      "japanese_map_preview": "もんだい：|今、パーテ□の仲聞は全部で何人だ？",
+      "current_decode": "문제: 지금 일행은 모두 몇 명입니까?",
+      "choice_count": 0,
+      "renderer": {
+        "count": 21,
+        "expected_tokens": 21,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x43b4e",
+      "end": "0x43b64",
+      "bytes": 22,
+      "csv_present": false,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]5人|[선택]6人|[선택]7人|[선택]8人",
+      "current_decode": " 5명| 6명| 7명| 8명",
+      "choice_count": 4,
+      "renderer": {
+        "count": 12,
+        "expected_tokens": 12,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 82,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x43b66",
+        "fields": [
+          5,
+          4,
+          -2,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              36,
+              34
+            ],
+            "text": [
+              52,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              36,
+              50
+            ],
+            "text": [
+              52,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              36,
+              66
+            ],
+            "text": [
+              52,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              36,
+              82
+            ],
+            "text": [
+              52,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x43bbc",
+      "end": "0x43bce",
+      "bytes": 18,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|うつ、正解だ、、、。",
+      "current_decode": "4몬버초서|은시기 명인기기기대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 15,
+        "expected_tokens": 15,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x43c00",
+      "end": "0x43c1f",
+      "bytes": 31,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|アーク、ククル、ポニの次に仲聞になつたのは？",
+      "current_decode": "만습인말서|것정으기으으한기 ?고런 느와 관시있고자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 27,
+        "expected_tokens": 27,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x43c58",
+      "end": "0x43c7a",
+      "bytes": 34,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]トッシュ|[선택]□ーゲン|[선택]チョン□ラ|[선택]□ー□",
+      "current_decode": "[선택]마병보괄|[선택]피정렇사|[선택]부승사:4|[선택]요정:",
+      "choice_count": 4,
+      "renderer": {
+        "count": 24,
+        "expected_tokens": 24,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 146,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x43c7c",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x43cd2",
+      "end": "0x43ce4",
+      "bytes": 18,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|うつ、正解だ、、、。",
+      "current_decode": "4몬버초서|은시기 명인기기기대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 15,
+        "expected_tokens": 15,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x43d16",
+      "end": "0x43d3a",
+      "bytes": 36,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|トッシュの能力で、単体最強の攻撃力を持つのは？",
+      "current_decode": "만습인말서|마병보괄고품었스기뱀았력받고  었 적마고자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 28,
+        "expected_tokens": 28,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x43d72",
+      "end": "0x43da0",
+      "bytes": 46,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]呪縛剣|[선택]旋風撃蹴|[선택]桜花□爆斬|[선택]桜花雷爆斬",
+      "current_decode": "[선택]빠롭후|[선택]쯤  솟|[선택]황횟<df1c>.온|[선택]황횟년.온",
+      "choice_count": 4,
+      "renderer": {
+        "count": 25,
+        "expected_tokens": 25,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 146,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x43da2",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x43df8",
+      "end": "0x43e0a",
+      "bytes": 18,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|うつ、正解だ、、、。",
+      "current_decode": "4몬버초서|은시기 명인기기기대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 15,
+        "expected_tokens": 15,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x43e3c",
+      "end": "0x43e60",
+      "bytes": 36,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|パ□ンシア城にいる王に仕える大臣の名前は何だつたか？",
+      "current_decode": "만습인말서| 넣사보것성 말 십 <df3c>오 수상고싱 자자인시있러려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 31,
+        "expected_tokens": 31,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x43e98",
+      "end": "0x43eba",
+      "bytes": 34,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]カ□□ル|[선택]アンデル|[선택]□ー□ル|[선택]□□ーテル",
+      "current_decode": "[선택] 요케한|[선택]것사데한|[선택]검정케한|[선택]변넣정 한",
+      "choice_count": 4,
+      "renderer": {
+        "count": 25,
+        "expected_tokens": 25,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 146,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x43ebc",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x43f12",
+      "end": "0x43f24",
+      "bytes": 18,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|うつ、正解だ、、、。",
+      "current_decode": "4몬버초서|은시기 명인기기기대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 15,
+        "expected_tokens": 15,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x43f56",
+      "end": "0x43f78",
+      "bytes": 34,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|トヨー□の森で出会つた、きれいな精霊の名前は？",
+      "current_decode": "만습인말서|마싸정각고공스장원시있기스거말관느전고싱 자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 28,
+        "expected_tokens": 28,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x43fb0",
+      "end": "0x43fd4",
+      "bytes": 36,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]かがやきの精霊|[선택]つきの精霊|[선택]ベみの精霊|[선택]にじの精霊",
+      "current_decode": "[선택]러 주스고느전|[선택]마스고느전|[선택] 물고느전|[선택] 1고느전",
+      "choice_count": 4,
+      "renderer": {
+        "count": 30,
+        "expected_tokens": 30,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 174,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x43fd6",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x4402c",
+      "end": "0x4403e",
+      "bytes": 18,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|うつ、正解だ、、、。",
+      "current_decode": "4몬버초서|은시기 명인기기기대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 15,
+        "expected_tokens": 15,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44070",
+      "end": "0x44091",
+      "bytes": 33,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|スメリア王から授かつた、|飛行□の名前は？",
+      "current_decode": "만습인말서|내않일것십러도<df38>러시있기|록힘뜨고싱 자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 25,
+        "expected_tokens": 25,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 216,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x440ca",
+      "end": "0x440f3",
+      "bytes": 41,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]シルバートア|[선택]シルバー□ア|[선택]シルバーモア|[선택]シルバー□ーク",
+      "current_decode": "[선택]보한 정호것|[선택]보한 정속것|[선택]보한 정무것|[선택]보한 정<deff>정으",
+      "choice_count": 4,
+      "renderer": {
+        "count": 33,
+        "expected_tokens": 33,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 174,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x440f6",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x4414c",
+      "end": "0x4415e",
+      "bytes": 18,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|うつ、正解だ、、、。",
+      "current_decode": "4몬버초서|은시기 명인기기기대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 15,
+        "expected_tokens": 15,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44190",
+      "end": "0x441ab",
+      "bytes": 27,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|次の内、ポニの楽器にないものは？",
+      "current_decode": "만습인말서|런고줄기 ?고닌띠 관말만고자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 21,
+        "expected_tokens": 21,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x441e4",
+      "end": "0x44201",
+      "bytes": 29,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]らつっ|[선택]こだいこ|[선택]オカリナ|[선택]ピア□",
+      "current_decode": "[선택]도시 |[선택]리인말리|[선택]라 일군|[선택]돌것속",
+      "choice_count": 4,
+      "renderer": {
+        "count": 22,
+        "expected_tokens": 22,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 132,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x44204",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x4425a",
+      "end": "0x4426c",
+      "bytes": 18,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|うつ、正解だ、、、。",
+      "current_decode": "4몬버초서|은시기 명인기기기대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 15,
+        "expected_tokens": 15,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x4429e",
+      "end": "0x442c4",
+      "bytes": 38,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|異□聞からの攻撃で敵にダメージを□えるアークの能力は？",
+      "current_decode": "만습인말서| 과와러도고  스  버않정입 진오 것정으고품었자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 32,
+        "expected_tokens": 32,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x442fc",
+      "end": "0x4432d",
+      "bytes": 49,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]□□ルフラッシュ|[선택]ゲ□ルフラッシュ|[선택]□□ルフラッシュ|[선택]オ□ルフラッシュ",
+      "current_decode": "[선택]검요한 4병보괄|[선택]렇요한 4병보괄|[선택]:요한 4병보괄|[선택]라요한 4병보괄",
+      "choice_count": 4,
+      "renderer": {
+        "count": 40,
+        "expected_tokens": 40,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x44330",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x44386",
+      "end": "0x44398",
+      "bytes": 18,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|うつ、正解だ、、、。",
+      "current_decode": "4몬버초서|은시기 명인기기기대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 15,
+        "expected_tokens": 15,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x443ca",
+      "end": "0x443ef",
+      "bytes": 37,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|そこに行けば、運命づけられた仲聞と出会うという場所は？",
+      "current_decode": "만습인말서|게리 힘야크기법 뭔야도거있느와를장원은를말은너 자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 32,
+        "expected_tokens": 32,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44428",
+      "end": "0x44456",
+      "bytes": 46,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]トヨー□の森|[선택]スメリア□港|[선택]出会いのはし|[선택]パ□ンシア城門",
+      "current_decode": "[선택]마싸정각고공|[선택]내않일것과금|[선택]장원말고자나|[선택] 넣사보것성<ddff>",
+      "choice_count": 4,
+      "renderer": {
+        "count": 33,
+        "expected_tokens": 33,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 174,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x44458",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x444b4",
+      "end": "0x444c6",
+      "bytes": 18,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|うつ、正解だ、、、。",
+      "current_decode": "4몬버초서|은시기 명인기기기대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 15,
+        "expected_tokens": 15,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x444f8",
+      "end": "0x44526",
+      "bytes": 46,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|私のもんだいに全て正解したのはおまえが初めてだ。ほうびにこれをやろう。",
+      "current_decode": "4몬버초서|손고만습인말 바. 명나있고자까3오 귀령.인대라은올 리거 주모은대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 40,
+        "expected_tokens": 40,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44576",
+      "end": "0x44588",
+      "bytes": 18,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "□ラークの紋章へをもらいました。",
+      "current_decode": "터4정으고찌평덕 만도말3나있대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 16,
+        "expected_tokens": 16,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x445be",
+      "end": "0x445da",
+      "bytes": 28,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "と思つたが、もう持つているではないか？ひやかすでない。",
+      "current_decode": "를6시있 기만은적시.말 스자관말러려할주러해스관말대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 27,
+        "expected_tokens": 27,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x4460c",
+      "end": "0x4463c",
+      "bytes": 48,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "この世界には、精霊の石ともう一つ、全て集めることによつて効果が現れる石があると聞く。",
+      "current_decode": "리고 래 자기느전고안를만은위마기바.같령 리를 우시.먼치 꽃거 안 해 를페신대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 42,
+        "expected_tokens": 42,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x4466e",
+      "end": "0x44694",
+      "bytes": 38,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "その石は、冒険者たちを危険から救う、|大いなる力となるであろう。",
+      "current_decode": "게고안자기<df0d>끈네있뒤 찬끈러도였은기|수말관 었를관 스해모은대",
+      "choice_count": 0,
+      "renderer": {
+        "count": 31,
+        "expected_tokens": 31,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x446ca",
+      "end": "0x44703",
+      "bytes": 57,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|スメリア□ジョンで指名手配のカュースが流れているが、しゃ□がこう□されていないのは？",
+      "current_decode": "만습인말서|내않일것떤입승사스깐싱구타고찾괄정내 효거.말  기나면박 리은틀면거.말관말고자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 47,
+        "expected_tokens": 47,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x4473c",
+      "end": "0x44756",
+      "bytes": 26,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]アーク|[선택]トッシュ|[선택]ポニ|[선택]ククル",
+      "current_decode": "[선택]것정으|[선택]마병보괄|[선택] ?|[선택]으으한",
+      "choice_count": 4,
+      "renderer": {
+        "count": 20,
+        "expected_tokens": 20,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 132,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x44758",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x4479e",
+      "end": "0x447aa",
+      "bytes": 12,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "4몬버초서| 명터터",
+      "choice_count": 0,
+      "renderer": {
+        "count": 9,
+        "expected_tokens": 9,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 118,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x447dc",
+      "end": "0x447f7",
+      "bytes": 27,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|ミルマーナのヤ□ン将軍の□ットは？",
+      "current_decode": "만습인말서|찮한몬정군고 변사열 고튼병마자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 22,
+        "expected_tokens": 22,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44830",
+      "end": "0x44848",
+      "bytes": 24,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]サル|[선택]□ヌ|[선택]□ジ|[선택]トラ",
+      "current_decode": "[선택]때한|[선택]요써|[선택]싶입|[선택]마4",
+      "choice_count": 4,
+      "renderer": {
+        "count": 16,
+        "expected_tokens": 16,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 104,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x4484a",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x44890",
+      "end": "0x4489c",
+      "bytes": 12,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "4몬버초서| 명터터",
+      "choice_count": 0,
+      "renderer": {
+        "count": 9,
+        "expected_tokens": 9,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 118,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x448ce",
+      "end": "0x448e1",
+      "bytes": 19,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|アークのフル□ームは？",
+      "current_decode": "만습인말서|것정으고 한된정 자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 16,
+        "expected_tokens": 16,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 202,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x4491a",
+      "end": "0x44951",
+      "bytes": 55,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]アーク・□・ラット|[선택]アーク・□・フラット|[선택]アーク・エダ・リニルヌ|[선택]アーク・ポルタ",
+      "current_decode": "[선택]것정으요브요4병호|[선택]것정으요브요 4병호|[선택]것정으요드버요일?한써|[선택]것정으요 한말",
+      "choice_count": 4,
+      "renderer": {
+        "count": 45,
+        "expected_tokens": 45,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 230,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x44954",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x4499a",
+      "end": "0x449a6",
+      "bytes": 12,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "4몬버초서| 명터터",
+      "choice_count": 0,
+      "renderer": {
+        "count": 9,
+        "expected_tokens": 9,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 118,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x449d8",
+      "end": "0x449f8",
+      "bytes": 32,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "もんだい：|□ーゲンを□らえているモンスターの名前は？",
+      "current_decode": "만습인말서|피정렇사 딘도오.말 무사내말정고싱 자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 26,
+        "expected_tokens": 26,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44a30",
+      "end": "0x44a56",
+      "bytes": 38,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]ラリュウ□|[선택]□リュウ□|[선택]やす□き|[선택]ヤシロア□",
+      "current_decode": "[선택]4일괄없싶|[선택]:일괄없싶|[선택]주해로스|[선택] 보 것싶",
+      "choice_count": 4,
+      "renderer": {
+        "count": 27,
+        "expected_tokens": 27,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 146,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x44a58",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x44a9e",
+      "end": "0x44aaa",
+      "bytes": 12,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "4몬버초서| 명터터",
+      "choice_count": 0,
+      "renderer": {
+        "count": 9,
+        "expected_tokens": 9,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 118,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44adc",
+      "end": "0x44aef",
+      "bytes": 19,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|へモジーの国はどこか？",
+      "current_decode": "4몬버초서|괜무입정고도자겠리러려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 16,
+        "expected_tokens": 16,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 202,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44b28",
+      "end": "0x44b49",
+      "bytes": 33,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]クラーフ島|[선택]ラマダ山|[선택]ラクダ山|[선택]ラマダ寺",
+      "current_decode": "[선택]으4정 탁|[선택]4몬버번|[선택]4으버번|[선택]4몬버궤",
+      "choice_count": 4,
+      "renderer": {
+        "count": 25,
+        "expected_tokens": 25,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 146,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x44b4c",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x44b92",
+      "end": "0x44b9e",
+      "bytes": 12,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "4몬버초서| 명터터",
+      "choice_count": 0,
+      "renderer": {
+        "count": 9,
+        "expected_tokens": 9,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 118,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44bd0",
+      "end": "0x44be2",
+      "bytes": 18,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|アークの父の名前は？",
+      "current_decode": "4몬버초서|것정으고 고싱 자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 15,
+        "expected_tokens": 15,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44c1a",
+      "end": "0x44c3f",
+      "bytes": 37,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]ヨッシャ|[선택]ヨシュア|[선택]シュワッチ|[선택]シュワルツ",
+      "current_decode": "[선택]싸병보 |[선택]싸보괄것|[선택]보괄슨병부|[선택]보괄슨한<df01>",
+      "choice_count": 4,
+      "renderer": {
+        "count": 26,
+        "expected_tokens": 26,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 146,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x44c42",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x44c88",
+      "end": "0x44c94",
+      "bytes": 12,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "4몬버초서| 명터터",
+      "choice_count": 0,
+      "renderer": {
+        "count": 9,
+        "expected_tokens": 9,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 118,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44cc6",
+      "end": "0x44cd9",
+      "bytes": 19,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|アークの母の名前は？",
+      "current_decode": "4몬버초서|것정으고발고싱 자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 15,
+        "expected_tokens": 15,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 188,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44d12",
+      "end": "0x44d2e",
+      "bytes": 28,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]ポルタ|[선택]□□タ|[선택]ママス|[선택]メ□ミ",
+      "current_decode": "[선택] 한말|[선택]누넣말|[선택]몬몬내|[선택]않변찮",
+      "choice_count": 4,
+      "renderer": {
+        "count": 20,
+        "expected_tokens": 20,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 118,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x44d30",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x44d76",
+      "end": "0x44d82",
+      "bytes": 12,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "4몬버초서| 명터터",
+      "choice_count": 0,
+      "renderer": {
+        "count": 9,
+        "expected_tokens": 9,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 118,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44db4",
+      "end": "0x44dd1",
+      "bytes": 29,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|アークたちが3番目に出会う精霊の名前は？",
+      "current_decode": "4몬버초서|것정으있뒤 어낼  장원은느전고싱 자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 25,
+        "expected_tokens": 25,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44e0a",
+      "end": "0x44e2c",
+      "bytes": 34,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]山の精霊|[선택]ベみの精霊|[선택]かたなの精霊|[선택]光の精霊",
+      "current_decode": "[선택]번고느전|[선택] 물고느전|[선택]러있관고느전|[선택]쿠고느전",
+      "choice_count": 4,
+      "renderer": {
+        "count": 27,
+        "expected_tokens": 27,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 160,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x44e2e",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x44e74",
+      "end": "0x44e80",
+      "bytes": 12,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "4몬버초서| 명터터",
+      "choice_count": 0,
+      "renderer": {
+        "count": 9,
+        "expected_tokens": 9,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 118,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44eb2",
+      "end": "0x44ec7",
+      "bytes": 21,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|ポニが下にはいているものは？",
+      "current_decode": "4몬버초서| ? 르 자말.말 만고자려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 19,
+        "expected_tokens": 19,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 244,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44f00",
+      "end": "0x44f21",
+      "bytes": 33,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "[선택]タ□ツ|[선택]スパッツ|[선택]ジャージ|[선택]はいていない",
+      "current_decode": "[선택]말요<df01>|[선택]내 병<df01>|[선택]입 정입|[선택]자말.말관말",
+      "choice_count": 4,
+      "renderer": {
+        "count": 25,
+        "expected_tokens": 25,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 160,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x44f24",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x44f6a",
+      "end": "0x44f76",
+      "bytes": 12,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "4몬버초서| 명터터",
+      "choice_count": 0,
+      "renderer": {
+        "count": 9,
+        "expected_tokens": 9,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 118,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x44fa8",
+      "end": "0x44fc9",
+      "bytes": 33,
+      "csv_present": false,
+      "original_identical": true,
+      "japanese_map_preview": "ラマダ僧：|シルバー□アの乗員で、バッチの相棒といえば？",
+      "current_decode": "4몬버초서|보한 정속것고희음스기 병부고증<df0e>를말오크려",
+      "choice_count": 0,
+      "renderer": {
+        "count": 27,
+        "expected_tokens": 27,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 272,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45002",
+      "end": "0x45025",
+      "bytes": 35,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]チョピン|[선택]チョ□ン|[선택]チョース□|[선택]チョン□ラ",
+      "current_decode": "[선택]초핀  |[선택]초비  |[선택]초스케  |[선택]촌가라   ",
+      "choice_count": 4,
+      "renderer": {
+        "count": 27,
+        "expected_tokens": 27,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 144,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x45028",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x4506e",
+      "end": "0x4507a",
+      "bytes": 12,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "라마다승려:  정답! ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 12,
+        "expected_tokens": 12,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 200,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x450ac",
+      "end": "0x450bd",
+      "bytes": 17,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|スパ□はどこにいた？",
+      "current_decode": "라마다 승려:  스파이는 어디에 있었지?",
+      "choice_count": 0,
+      "renderer": {
+        "count": 22,
+        "expected_tokens": 22,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x450f6",
+      "end": "0x45118",
+      "bytes": 34,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]ミルマーナ|[선택]スメリア|[선택]アララトス|[선택]カーデル",
+      "current_decode": "[선택]미르마나 |[선택]스메리아|[선택]아라라토스|[선택]카델 ",
+      "choice_count": 4,
+      "renderer": {
+        "count": 25,
+        "expected_tokens": 25,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 146,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x4511a",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x45160",
+      "end": "0x4516c",
+      "bytes": 12,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "라마다승려:  정답! ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 12,
+        "expected_tokens": 12,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 200,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x4519e",
+      "end": "0x451bb",
+      "bytes": 29,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|セーフデータのシン□ルになつているのは？",
+      "current_decode": "라마다 승려:  세이브 데이터의 문양은 무엇인가?",
+      "choice_count": 0,
+      "renderer": {
+        "count": 27,
+        "expected_tokens": 27,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x451f4",
+      "end": "0x45214",
+      "bytes": 32,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]アーク|[선택]ククル|[선택]タ□トルロ□|[선택]へモジー",
+      "current_decode": "[선택]아크 |[선택]쿠쿠루|[선택]타이틀 로고|[선택]헤모지 ",
+      "choice_count": 4,
+      "renderer": {
+        "count": 24,
+        "expected_tokens": 24,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 152,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x45216",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x4525c",
+      "end": "0x45268",
+      "bytes": 12,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "라마다승려:  정답! ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 12,
+        "expected_tokens": 12,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 200,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x4529a",
+      "end": "0x452ba",
+      "bytes": 32,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|スメリアのダウンタウンにいるよつっらいの名前は？",
+      "current_decode": "라마다 승려:  스메리아 다운타운에 있는 술 취한 사람의 이름은?",
+      "choice_count": 0,
+      "renderer": {
+        "count": 36,
+        "expected_tokens": 36,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 268,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x452f2",
+      "end": "0x45311",
+      "bytes": 31,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]オカモト|[선택]ヤマモト|[선택]ヤマオ□|[선택]ヤマシタ",
+      "current_decode": "[선택]오카모토|[선택]야마모토|[선택]야마오키|[선택]야마시타",
+      "choice_count": 4,
+      "renderer": {
+        "count": 24,
+        "expected_tokens": 24,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 132,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x45314",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x4535a",
+      "end": "0x45366",
+      "bytes": 12,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "라마다승려:  정답! ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 12,
+        "expected_tokens": 12,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 200,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45398",
+      "end": "0x453ae",
+      "bytes": 22,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|アーク□ラットのぞくへんは？",
+      "current_decode": "라마다승려:  아크더래드 속편은? ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 19,
+        "expected_tokens": 19,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 276,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x453e6",
+      "end": "0x45402",
+      "bytes": 28,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]でる|[선택]でるかも|[선택]でるのでは|[선택]なやむ",
+      "current_decode": "[선택]나온다|[선택]나올지도|[선택]나오겠지 |[선택]고민",
+      "choice_count": 4,
+      "renderer": {
+        "count": 22,
+        "expected_tokens": 22,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 146,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x45404",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x4544a",
+      "end": "0x4545c",
+      "bytes": 18,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|正解！！本当だな？",
+      "current_decode": "라마다승려:  정답!정말이냐? ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 17,
+        "expected_tokens": 17,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 270,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x4548e",
+      "end": "0x454a4",
+      "bytes": 22,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|アーク□ラットのスタッフは？",
+      "current_decode": "라마다 승려:  아크더래드 제작진은?",
+      "choice_count": 0,
+      "renderer": {
+        "count": 20,
+        "expected_tokens": 20,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 268,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x454dc",
+      "end": "0x454f9",
+      "bytes": 29,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]150人|[선택]200人|[선택]250人|[선택]なやむ",
+      "current_decode": "[선택]150 |[선택]200 |[선택]250 |[선택]고민",
+      "choice_count": 4,
+      "renderer": {
+        "count": 22,
+        "expected_tokens": 22,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 132,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x454fc",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x45542",
+      "end": "0x4554e",
+      "bytes": 12,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "라마다승려:  정답! ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 12,
+        "expected_tokens": 12,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 200,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45580",
+      "end": "0x455a7",
+      "bytes": 39,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|首都の軍オフ□スには、実は地下50階のダンジョンが・・",
+      "current_decode": "라마다 승려:  수도의 군 본부에는 사실 지하 50층 던전이... ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 37,
+        "expected_tokens": 37,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x455e0",
+      "end": "0x455ff",
+      "bytes": 31,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]ある|[선택]ない|[선택]作りたかつた|[선택]行きたかつた",
+      "current_decode": "[선택]있다|[선택]없다|[선택]만들려 했다|[선택]가려 했다",
+      "choice_count": 4,
+      "renderer": {
+        "count": 23,
+        "expected_tokens": 23,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 152,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x45602",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x45648",
+      "end": "0x45654",
+      "bytes": 12,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "라마다승려:  정답! ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 12,
+        "expected_tokens": 12,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 200,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45686",
+      "end": "0x456a2",
+      "bytes": 28,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|遺跡ダンジョンの一番下にいるものは？",
+      "current_decode": "라마다 승려:  유적 던전의 최하층에 있는 것은?",
+      "choice_count": 0,
+      "renderer": {
+        "count": 27,
+        "expected_tokens": 27,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x456da",
+      "end": "0x456f2",
+      "bytes": 24,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]あれ|[선택]それ|[선택]どれ|[선택]ないしょ",
+      "current_decode": "[선택]저거|[선택]그거|[선택]어느 거|[선택]비밀",
+      "choice_count": 4,
+      "renderer": {
+        "count": 18,
+        "expected_tokens": 18,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 124,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x456f4",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x4573a",
+      "end": "0x45746",
+      "bytes": 12,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "라마다승려:  정답! ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 12,
+        "expected_tokens": 12,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 200,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45778",
+      "end": "0x4579c",
+      "bytes": 36,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|ラマダ寺でとびらが□いたときに中に見える人の数は？",
+      "current_decode": "라마다 승려:  라마다사의 문이 열렸을 때 안에 보이는 사람은 몇 명인가?",
+      "choice_count": 0,
+      "renderer": {
+        "count": 41,
+        "expected_tokens": 41,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x457d4",
+      "end": "0x457ee",
+      "bytes": 26,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]20人|[선택]21人|[선택]22人|[선택]23人",
+      "current_decode": "[선택]20 |[선택]21 |[선택]22 |[선택]23 ",
+      "choice_count": 4,
+      "renderer": {
+        "count": 20,
+        "expected_tokens": 20,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 118,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x457f0",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x45836",
+      "end": "0x45842",
+      "bytes": 12,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "라마다승려:  정답! ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 12,
+        "expected_tokens": 12,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 200,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45874",
+      "end": "0x45895",
+      "bytes": 33,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|ストーンサークルでチョン□ラが見つけたア□テムは？",
+      "current_decode": "라마다 승려:  스톤서클에서 촌가라가 찾은 아이템은?  ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 31,
+        "expected_tokens": 31,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 268,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x458ce",
+      "end": "0x458f7",
+      "bytes": 41,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]すごいア□テム|[선택]こわれたア□テム|[선택]つぶれたア□テム|[선택]ねばねば",
+      "current_decode": "[선택]대단함  |[선택]고장      |[선택]찌그러진  |[선택]달라붙음",
+      "choice_count": 4,
+      "renderer": {
+        "count": 31,
+        "expected_tokens": 31,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 152,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x458fa",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x45940",
+      "end": "0x4594c",
+      "bytes": 12,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "라마다승려:  정답! ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 12,
+        "expected_tokens": 12,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 200,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x4597e",
+      "end": "0x45992",
+      "bytes": 20,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|ちょこのかみのけのいろは？",
+      "current_decode": "라마다 승려:  초코의 머리빛은 무엇인가?",
+      "choice_count": 0,
+      "renderer": {
+        "count": 23,
+        "expected_tokens": 23,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x459ca",
+      "end": "0x459f0",
+      "bytes": 38,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "[선택]きいろ|[선택]わけあつてちゃいろ|[선택]本当はあか|[선택]それはだれ？",
+      "current_decode": "[선택]노랑|[선택]사정상 갈빛 |[선택]실은 빨강|[선택]누구?  ",
+      "choice_count": 4,
+      "renderer": {
+        "count": 27,
+        "expected_tokens": 27,
+        "ys": [
+          32,
+          48,
+          64,
+          80
+        ],
+        "source_end_matches": true,
+        "max_right": 166,
+        "max_bottom": 96,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      },
+      "choice": {
+        "event": "0x459f2",
+        "fields": [
+          5,
+          4,
+          0,
+          0
+        ],
+        "positions": [
+          {
+            "index": 0,
+            "cursor": [
+              60,
+              34
+            ],
+            "text": [
+              74,
+              32
+            ],
+            "aligned": true
+          },
+          {
+            "index": 1,
+            "cursor": [
+              60,
+              50
+            ],
+            "text": [
+              74,
+              48
+            ],
+            "aligned": true
+          },
+          {
+            "index": 2,
+            "cursor": [
+              60,
+              66
+            ],
+            "text": [
+              74,
+              64
+            ],
+            "aligned": true
+          },
+          {
+            "index": 3,
+            "cursor": [
+              60,
+              82
+            ],
+            "text": [
+              74,
+              80
+            ],
+            "aligned": true
+          }
+        ],
+        "all_aligned": true,
+        "navigation_cases": 8
+      }
+    },
+    {
+      "offset": "0x45a38",
+      "end": "0x45a44",
+      "bytes": 12,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|正解！！",
+      "current_decode": "라마다승려:  정답! ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 12,
+        "expected_tokens": 12,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 200,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45a80",
+      "end": "0x45a8d",
+      "bytes": 13,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|大正解！！",
+      "current_decode": "라마다승려:  정답!! ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 13,
+        "expected_tokens": 13,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 214,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45ac8",
+      "end": "0x45af6",
+      "bytes": 46,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|私のもんだいに全て正解したのはおまえが初めてだ。ほうびにこれをやろう。",
+      "current_decode": "라마다승려:  문제를 모두 맞힌 건 네가 처음이다. 상으로 이걸 주마. ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 40,
+        "expected_tokens": 40,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45b2c",
+      "end": "0x45b59",
+      "bytes": 45,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|私のもんだいに全て正解したのはおまえが2人めだ。ほうびにこれをやろう。",
+      "current_decode": "라마다 승려:  내 문제를 모두 맞힌 사람은 네가 두 번째다. 상으로 이걸 주마.",
+      "choice_count": 0,
+      "renderer": {
+        "count": 45,
+        "expected_tokens": 45,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45baa",
+      "end": "0x45bbd",
+      "bytes": 19,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "□古代の□びわへをもらいました。",
+      "current_decode": "고대의 반지를 받았습니다.  ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 16,
+        "expected_tokens": 16,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 248,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45bf4",
+      "end": "0x45c10",
+      "bytes": 28,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "と思つたが、もう持つているではないか？ひやかすでない。",
+      "current_decode": "이미 가지고 있지 않느냐? 놀리지 마라.   ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 25,
+        "expected_tokens": 25,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 268,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45c42",
+      "end": "0x45c73",
+      "bytes": 49,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "この世界には、精霊の石ともう一つ、全て集めることによつて効果があらわれる石があると聞く。",
+      "current_decode": "세계에는 정령의 돌 말고 모두 모으면 효과가 나타나는 돌이 또 있다고 들었다.",
+      "choice_count": 0,
+      "renderer": {
+        "count": 43,
+        "expected_tokens": 43,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45ca6",
+      "end": "0x45ccb",
+      "bytes": 37,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "その石は、□うけんしゃたちを危険からすくう、大いなる力となるであろう。",
+      "current_decode": "그 돌은 모험가들을 위험에서 구해 줄 위대한 힘이 될것이다.",
+      "choice_count": 0,
+      "renderer": {
+        "count": 33,
+        "expected_tokens": 33,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 268,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45d02",
+      "end": "0x45d1c",
+      "bytes": 26,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|常に目的を持つて行動するがよい。",
+      "current_decode": "라마다 승려:  항상 목적을 가지고 행동하도록 하거라.",
+      "choice_count": 0,
+      "renderer": {
+        "count": 30,
+        "expected_tokens": 30,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45d52",
+      "end": "0x45d6e",
+      "bytes": 28,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|それはまちがいだが、がんばりはみとめよう。",
+      "current_decode": "라마다 승려:  틀렸지만, 노력은 인정하마.  ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 26,
+        "expected_tokens": 26,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 268,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45da0",
+      "end": "0x45db3",
+      "bytes": 19,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|よつて、これをあげよう。",
+      "current_decode": "라마다 승려:  그러니 이것을 주마. ",
+      "choice_count": 0,
+      "renderer": {
+        "count": 21,
+        "expected_tokens": 21,
+        "ys": [
+          32,
+          48
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 64,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45dea",
+      "end": "0x45df5",
+      "bytes": 11,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "□石へをもらいました。",
+      "current_decode": "돌을 받았습니다.",
+      "choice_count": 0,
+      "renderer": {
+        "count": 9,
+        "expected_tokens": 9,
+        "ys": [
+          32
+        ],
+        "source_end_matches": true,
+        "max_right": 166,
+        "max_bottom": 48,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    },
+    {
+      "offset": "0x45e2e",
+      "end": "0x45e4f",
+      "bytes": 33,
+      "csv_present": true,
+      "original_identical": false,
+      "japanese_map_preview": "ラマダ僧：|修行が足りないようだ。|出直してくるがよい。",
+      "current_decode": "라마다 승려:  수행이 부족한 것 같습니다.|다시 찾아오십시오.",
+      "choice_count": 0,
+      "renderer": {
+        "count": 34,
+        "expected_tokens": 34,
+        "ys": [
+          32,
+          48,
+          64
+        ],
+        "source_end_matches": true,
+        "max_right": 274,
+        "max_bottom": 80,
+        "over_four_rows": false,
+        "packet_count_matches": true
+      }
+    }
+  ]
+}

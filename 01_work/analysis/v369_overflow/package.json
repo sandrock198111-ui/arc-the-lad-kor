@@ -1,0 +1,8 @@
+{
+  "bin": "E:\\korean\\03_output\\V369_OVERFLOW_TEST.bin",
+  "cue": "E:\\korean\\03_output\\V369_OVERFLOW_TEST.cue",
+  "bin_sha256": "7D33BF57E5B10D6353D05721D9FA23FEBD1262C97FEA6A50903DCD37032A855D",
+  "archive_sha256": "58692673A78F425A206814B7C7193A69E7FAD41CD2A755E9AF5F13BB429EF69F",
+  "verification": "patch    arc1_v369_overflow_TEST_ONLY.zip\n\noriginal E:\\arc\\원본\\arc1.bin   507 files\nbuilt    E:\\korean\\03_output\\V369_OVERFLOW_TEST.bin   507 files\n\npass  all 506 data files kept their sector number\npass  COMM.DAT   LBA 307  (executable expects 307)\npass  COMM.IMG   LBA 667  (executable expects 667)\npass  COMM.SND   LBA 891  (executable expects 891)\n\n  comparing 164 patched files against the image\npass  all 164 patched files on the disc match arc1_v369_overflow_TEST_ONLY.zip\n\n  PSX.EXE at LBA 268481 (was 23), 587776 bytes\n\nRESULT: PASS - disc layout/member integrity only; runtime not established\n",
+  "runtime_verified": false
+}

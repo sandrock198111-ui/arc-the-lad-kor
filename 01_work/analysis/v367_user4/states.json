@@ -1,0 +1,2029 @@
+[
+  {
+    "slot": 1,
+    "sha256": "1efe297fe9f77de420ec1d3a3a9e2dacc72a75f65362869629d0d69a3a4c600c",
+    "title": "V367_QUIZ_TEST",
+    "state": {
+      "header_address": "0x801F9D44",
+      "base_address": "0x801BE9BC",
+      "limit": 64,
+      "count": 26,
+      "x": 98,
+      "y": 80,
+      "style": 0,
+      "D": 14,
+      "E": 16,
+      "F": 2,
+      "line_extra": 0,
+      "source_pointer": "0x80112C7A"
+    },
+    "packets": [
+      {
+        "ordinal": 0,
+        "packet_address": "0x801BE9BC",
+        "x": 46,
+        "y": 32,
+        "u": 32,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 130,
+        "char": "<130>"
+      },
+      {
+        "ordinal": 1,
+        "packet_address": "0x801BE9F0",
+        "x": 60,
+        "y": 32,
+        "u": 208,
+        "v": 80,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 353,
+        "char": "<353>"
+      },
+      {
+        "ordinal": 2,
+        "packet_address": "0x801BEA24",
+        "x": 74,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 3,
+        "packet_address": "0x801BEA58",
+        "x": 80,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 4,
+        "packet_address": "0x801BEA8C",
+        "x": 86,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 5,
+        "packet_address": "0x801BEAC0",
+        "x": 92,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 6,
+        "packet_address": "0x801BEAF4",
+        "x": 98,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 7,
+        "packet_address": "0x801BEB28",
+        "x": 46,
+        "y": 48,
+        "u": 96,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC3",
+        "plane": 3,
+        "physical_index": 27,
+        "char": "<27>"
+      },
+      {
+        "ordinal": 8,
+        "packet_address": "0x801BEB5C",
+        "x": 60,
+        "y": 48,
+        "u": 112,
+        "v": 96,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 388,
+        "char": "<388>"
+      },
+      {
+        "ordinal": 9,
+        "packet_address": "0x801BEB90",
+        "x": 74,
+        "y": 48,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 10,
+        "packet_address": "0x801BEBC4",
+        "x": 80,
+        "y": 48,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 11,
+        "packet_address": "0x801BEBF8",
+        "x": 86,
+        "y": 48,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 12,
+        "packet_address": "0x801BEC2C",
+        "x": 92,
+        "y": 48,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 13,
+        "packet_address": "0x801BEC60",
+        "x": 46,
+        "y": 64,
+        "u": 112,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 149,
+        "char": "<149>"
+      },
+      {
+        "ordinal": 14,
+        "packet_address": "0x801BEC94",
+        "x": 60,
+        "y": 64,
+        "u": 32,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC3",
+        "plane": 3,
+        "physical_index": 11,
+        "char": "<11>"
+      },
+      {
+        "ordinal": 15,
+        "packet_address": "0x801BECC8",
+        "x": 74,
+        "y": 64,
+        "u": 80,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 142,
+        "char": "<142>"
+      },
+      {
+        "ordinal": 16,
+        "packet_address": "0x801BECFC",
+        "x": 88,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 17,
+        "packet_address": "0x801BED30",
+        "x": 94,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 18,
+        "packet_address": "0x801BED64",
+        "x": 100,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 19,
+        "packet_address": "0x801BED98",
+        "x": 106,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 20,
+        "packet_address": "0x801BEDCC",
+        "x": 46,
+        "y": 80,
+        "u": 0,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 2,
+        "char": "<2>"
+      },
+      {
+        "ordinal": 21,
+        "packet_address": "0x801BEE00",
+        "x": 60,
+        "y": 80,
+        "u": 32,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC3",
+        "plane": 3,
+        "physical_index": 11,
+        "char": "<11>"
+      },
+      {
+        "ordinal": 22,
+        "packet_address": "0x801BEE34",
+        "x": 74,
+        "y": 80,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 23,
+        "packet_address": "0x801BEE68",
+        "x": 80,
+        "y": 80,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 24,
+        "packet_address": "0x801BEE9C",
+        "x": 86,
+        "y": 80,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 25,
+        "packet_address": "0x801BEED0",
+        "x": 92,
+        "y": 80,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      }
+    ],
+    "source": "0x43c7a",
+    "matches": [
+      {
+        "offset": "0x43c58",
+        "end": "0x43c7a",
+        "bytes": 34,
+        "csv_present": false,
+        "original_identical": false,
+        "japanese_map_preview": "[선택]トッシュ|[선택]□ーゲン|[선택]チョン□ラ|[선택]□ー□",
+        "current_decode": "토슈     |고겐    |촌가라    |이가    ",
+        "choice_count": 4,
+        "renderer": {
+          "count": 26,
+          "expected_tokens": 26,
+          "ys": [
+            32,
+            48,
+            64,
+            80
+          ],
+          "source_end_matches": true,
+          "max_right": 122,
+          "max_bottom": 96,
+          "over_four_rows": false,
+          "packet_count_matches": true
+        },
+        "choice": {
+          "event": "0x43c7c",
+          "fields": [
+            5,
+            4,
+            -2,
+            0
+          ],
+          "positions": [
+            {
+              "index": 0,
+              "cursor": [
+                36,
+                34
+              ],
+              "text": [
+                46,
+                32
+              ],
+              "aligned": true
+            },
+            {
+              "index": 1,
+              "cursor": [
+                36,
+                50
+              ],
+              "text": [
+                46,
+                48
+              ],
+              "aligned": true
+            },
+            {
+              "index": 2,
+              "cursor": [
+                36,
+                66
+              ],
+              "text": [
+                46,
+                64
+              ],
+              "aligned": true
+            },
+            {
+              "index": 3,
+              "cursor": [
+                36,
+                82
+              ],
+              "text": [
+                46,
+                80
+              ],
+              "aligned": true
+            }
+          ],
+          "all_aligned": true,
+          "navigation_cases": 8
+        }
+      }
+    ],
+    "quiz_ram_matches": true,
+    "choice_fields": [
+      5,
+      4,
+      -2,
+      0
+    ],
+    "triangles": [
+      {
+        "address": "0x801f2fe8",
+        "xy": [
+          [
+            36,
+            50
+          ],
+          [
+            43,
+            56
+          ],
+          [
+            36,
+            62
+          ]
+        ]
+      }
+    ],
+    "cursor_global": [
+      36,
+      50
+    ],
+    "row_ys": [
+      32,
+      48,
+      64,
+      80
+    ],
+    "visible_rows": {
+      "32": "토슈     ",
+      "48": "고겐    ",
+      "64": "촌가라    ",
+      "80": "이가    "
+    },
+    "ink": [
+      {
+        "index": 130,
+        "packet_y": 32,
+        "ink_top": 33,
+        "ink_bottom": 42
+      },
+      {
+        "index": 353,
+        "packet_y": 32,
+        "ink_top": 33,
+        "ink_bottom": 46
+      },
+      {
+        "index": 27,
+        "packet_y": 48,
+        "ink_top": 49,
+        "ink_bottom": 58
+      },
+      {
+        "index": 388,
+        "packet_y": 48,
+        "ink_top": 49,
+        "ink_bottom": 62
+      }
+    ]
+  },
+  {
+    "slot": 2,
+    "sha256": "d45f035c1d29146917a3e4d896ead1244eac01b043623695461d3d2db2e35141",
+    "title": "V367_QUIZ_TEST",
+    "state": {
+      "header_address": "0x801F9D44",
+      "base_address": "0x801BE9BC",
+      "limit": 64,
+      "count": 26,
+      "x": 98,
+      "y": 80,
+      "style": 0,
+      "D": 14,
+      "E": 16,
+      "F": 2,
+      "line_extra": 0,
+      "source_pointer": "0x80112C7A"
+    },
+    "packets": [
+      {
+        "ordinal": 0,
+        "packet_address": "0x801BE9BC",
+        "x": 46,
+        "y": 32,
+        "u": 32,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 130,
+        "char": "<130>"
+      },
+      {
+        "ordinal": 1,
+        "packet_address": "0x801BE9F0",
+        "x": 60,
+        "y": 32,
+        "u": 208,
+        "v": 80,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 353,
+        "char": "<353>"
+      },
+      {
+        "ordinal": 2,
+        "packet_address": "0x801BEA24",
+        "x": 74,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 3,
+        "packet_address": "0x801BEA58",
+        "x": 80,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 4,
+        "packet_address": "0x801BEA8C",
+        "x": 86,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 5,
+        "packet_address": "0x801BEAC0",
+        "x": 92,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 6,
+        "packet_address": "0x801BEAF4",
+        "x": 98,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 7,
+        "packet_address": "0x801BEB28",
+        "x": 46,
+        "y": 48,
+        "u": 96,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC3",
+        "plane": 3,
+        "physical_index": 27,
+        "char": "<27>"
+      },
+      {
+        "ordinal": 8,
+        "packet_address": "0x801BEB5C",
+        "x": 60,
+        "y": 48,
+        "u": 112,
+        "v": 96,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 388,
+        "char": "<388>"
+      },
+      {
+        "ordinal": 9,
+        "packet_address": "0x801BEB90",
+        "x": 74,
+        "y": 48,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 10,
+        "packet_address": "0x801BEBC4",
+        "x": 80,
+        "y": 48,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 11,
+        "packet_address": "0x801BEBF8",
+        "x": 86,
+        "y": 48,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 12,
+        "packet_address": "0x801BEC2C",
+        "x": 92,
+        "y": 48,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 13,
+        "packet_address": "0x801BEC60",
+        "x": 46,
+        "y": 64,
+        "u": 112,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 149,
+        "char": "<149>"
+      },
+      {
+        "ordinal": 14,
+        "packet_address": "0x801BEC94",
+        "x": 60,
+        "y": 64,
+        "u": 32,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC3",
+        "plane": 3,
+        "physical_index": 11,
+        "char": "<11>"
+      },
+      {
+        "ordinal": 15,
+        "packet_address": "0x801BECC8",
+        "x": 74,
+        "y": 64,
+        "u": 80,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 142,
+        "char": "<142>"
+      },
+      {
+        "ordinal": 16,
+        "packet_address": "0x801BECFC",
+        "x": 88,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 17,
+        "packet_address": "0x801BED30",
+        "x": 94,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 18,
+        "packet_address": "0x801BED64",
+        "x": 100,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 19,
+        "packet_address": "0x801BED98",
+        "x": 106,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 20,
+        "packet_address": "0x801BEDCC",
+        "x": 46,
+        "y": 80,
+        "u": 0,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 2,
+        "char": "<2>"
+      },
+      {
+        "ordinal": 21,
+        "packet_address": "0x801BEE00",
+        "x": 60,
+        "y": 80,
+        "u": 32,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC3",
+        "plane": 3,
+        "physical_index": 11,
+        "char": "<11>"
+      },
+      {
+        "ordinal": 22,
+        "packet_address": "0x801BEE34",
+        "x": 74,
+        "y": 80,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 23,
+        "packet_address": "0x801BEE68",
+        "x": 80,
+        "y": 80,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 24,
+        "packet_address": "0x801BEE9C",
+        "x": 86,
+        "y": 80,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 25,
+        "packet_address": "0x801BEED0",
+        "x": 92,
+        "y": 80,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      }
+    ],
+    "source": "0x43c7a",
+    "matches": [
+      {
+        "offset": "0x43c58",
+        "end": "0x43c7a",
+        "bytes": 34,
+        "csv_present": false,
+        "original_identical": false,
+        "japanese_map_preview": "[선택]トッシュ|[선택]□ーゲン|[선택]チョン□ラ|[선택]□ー□",
+        "current_decode": "토슈     |고겐    |촌가라    |이가    ",
+        "choice_count": 4,
+        "renderer": {
+          "count": 26,
+          "expected_tokens": 26,
+          "ys": [
+            32,
+            48,
+            64,
+            80
+          ],
+          "source_end_matches": true,
+          "max_right": 122,
+          "max_bottom": 96,
+          "over_four_rows": false,
+          "packet_count_matches": true
+        },
+        "choice": {
+          "event": "0x43c7c",
+          "fields": [
+            5,
+            4,
+            -2,
+            0
+          ],
+          "positions": [
+            {
+              "index": 0,
+              "cursor": [
+                36,
+                34
+              ],
+              "text": [
+                46,
+                32
+              ],
+              "aligned": true
+            },
+            {
+              "index": 1,
+              "cursor": [
+                36,
+                50
+              ],
+              "text": [
+                46,
+                48
+              ],
+              "aligned": true
+            },
+            {
+              "index": 2,
+              "cursor": [
+                36,
+                66
+              ],
+              "text": [
+                46,
+                64
+              ],
+              "aligned": true
+            },
+            {
+              "index": 3,
+              "cursor": [
+                36,
+                82
+              ],
+              "text": [
+                46,
+                80
+              ],
+              "aligned": true
+            }
+          ],
+          "all_aligned": true,
+          "navigation_cases": 8
+        }
+      }
+    ],
+    "quiz_ram_matches": true,
+    "choice_fields": [
+      5,
+      4,
+      -2,
+      0
+    ],
+    "triangles": [
+      {
+        "address": "0x801f2fe8",
+        "xy": [
+          [
+            36,
+            34
+          ],
+          [
+            43,
+            40
+          ],
+          [
+            36,
+            46
+          ]
+        ]
+      }
+    ],
+    "cursor_global": [
+      36,
+      34
+    ],
+    "row_ys": [
+      32,
+      48,
+      64,
+      80
+    ],
+    "visible_rows": {
+      "32": "토슈     ",
+      "48": "고겐    ",
+      "64": "촌가라    ",
+      "80": "이가    "
+    },
+    "ink": [
+      {
+        "index": 130,
+        "packet_y": 32,
+        "ink_top": 33,
+        "ink_bottom": 42
+      },
+      {
+        "index": 353,
+        "packet_y": 32,
+        "ink_top": 33,
+        "ink_bottom": 46
+      },
+      {
+        "index": 27,
+        "packet_y": 48,
+        "ink_top": 49,
+        "ink_bottom": 58
+      },
+      {
+        "index": 388,
+        "packet_y": 48,
+        "ink_top": 49,
+        "ink_bottom": 62
+      }
+    ]
+  },
+  {
+    "slot": 3,
+    "sha256": "24e19ac3356525431bbc56386559e02a02ffb922bbe8f78568b9ea9dbd7822a4",
+    "title": "V367_QUIZ_TEST",
+    "state": {
+      "header_address": "0x801F9D44",
+      "base_address": "0x801BE9BC",
+      "limit": 64,
+      "count": 28,
+      "x": 162,
+      "y": 64,
+      "style": 0,
+      "D": 14,
+      "E": 16,
+      "F": 2,
+      "line_extra": 0,
+      "source_pointer": "0x80112E60"
+    },
+    "packets": [
+      {
+        "ordinal": 0,
+        "packet_address": "0x801BE9BC",
+        "x": 46,
+        "y": 32,
+        "u": 128,
+        "v": 96,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 394,
+        "char": "<394>"
+      },
+      {
+        "ordinal": 1,
+        "packet_address": "0x801BE9F0",
+        "x": 60,
+        "y": 32,
+        "u": 160,
+        "v": 16,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 101,
+        "char": "<101>"
+      },
+      {
+        "ordinal": 2,
+        "packet_address": "0x801BEA24",
+        "x": 74,
+        "y": 32,
+        "u": 160,
+        "v": 48,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 221,
+        "char": "<221>"
+      },
+      {
+        "ordinal": 3,
+        "packet_address": "0x801BEA58",
+        "x": 88,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 4,
+        "packet_address": "0x801BEA8C",
+        "x": 94,
+        "y": 32,
+        "u": 160,
+        "v": 80,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 342,
+        "char": "<342>"
+      },
+      {
+        "ordinal": 5,
+        "packet_address": "0x801BEAC0",
+        "x": 108,
+        "y": 32,
+        "u": 128,
+        "v": 96,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC3",
+        "plane": 3,
+        "physical_index": 395,
+        "char": "<395>"
+      },
+      {
+        "ordinal": 6,
+        "packet_address": "0x801BEAF4",
+        "x": 122,
+        "y": 32,
+        "u": 160,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 40,
+        "char": "<40>"
+      },
+      {
+        "ordinal": 7,
+        "packet_address": "0x801BEB28",
+        "x": 136,
+        "y": 32,
+        "u": 32,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 8,
+        "char": "<8>"
+      },
+      {
+        "ordinal": 8,
+        "packet_address": "0x801BEB5C",
+        "x": 150,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 9,
+        "packet_address": "0x801BEB90",
+        "x": 156,
+        "y": 32,
+        "u": 0,
+        "v": 64,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 242,
+        "char": "<242>"
+      },
+      {
+        "ordinal": 10,
+        "packet_address": "0x801BEBC4",
+        "x": 170,
+        "y": 32,
+        "u": 48,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 14,
+        "char": "<14>"
+      },
+      {
+        "ordinal": 11,
+        "packet_address": "0x801BEBF8",
+        "x": 184,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 12,
+        "packet_address": "0x801BEC2C",
+        "x": 190,
+        "y": 32,
+        "u": 176,
+        "v": 16,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 105,
+        "char": "<105>"
+      },
+      {
+        "ordinal": 13,
+        "packet_address": "0x801BEC60",
+        "x": 204,
+        "y": 32,
+        "u": 48,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 12,
+        "char": "<12>"
+      },
+      {
+        "ordinal": 14,
+        "packet_address": "0x801BEC94",
+        "x": 218,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 15,
+        "packet_address": "0x801BECC8",
+        "x": 224,
+        "y": 32,
+        "u": 96,
+        "v": 16,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 84,
+        "char": "<84>"
+      },
+      {
+        "ordinal": 16,
+        "packet_address": "0x801BECFC",
+        "x": 238,
+        "y": 32,
+        "u": 160,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 40,
+        "char": "<40>"
+      },
+      {
+        "ordinal": 17,
+        "packet_address": "0x801BED30",
+        "x": 252,
+        "y": 32,
+        "u": 16,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 5,
+        "char": "<5>"
+      },
+      {
+        "ordinal": 18,
+        "packet_address": "0x801BED64",
+        "x": 46,
+        "y": 64,
+        "u": 208,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 54,
+        "char": "<54>"
+      },
+      {
+        "ordinal": 19,
+        "packet_address": "0x801BED98",
+        "x": 60,
+        "y": 64,
+        "u": 0,
+        "v": 16,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 61,
+        "char": "<61>"
+      },
+      {
+        "ordinal": 20,
+        "packet_address": "0x801BEDCC",
+        "x": 74,
+        "y": 64,
+        "u": 48,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 14,
+        "char": "<14>"
+      },
+      {
+        "ordinal": 21,
+        "packet_address": "0x801BEE00",
+        "x": 88,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 22,
+        "packet_address": "0x801BEE34",
+        "x": 94,
+        "y": 64,
+        "u": 0,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 2,
+        "char": "<2>"
+      },
+      {
+        "ordinal": 23,
+        "packet_address": "0x801BEE68",
+        "x": 108,
+        "y": 64,
+        "u": 192,
+        "v": 128,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 530,
+        "char": "<530>"
+      },
+      {
+        "ordinal": 24,
+        "packet_address": "0x801BEE9C",
+        "x": 122,
+        "y": 64,
+        "u": 144,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 37,
+        "char": "<37>"
+      },
+      {
+        "ordinal": 25,
+        "packet_address": "0x801BEED0",
+        "x": 136,
+        "y": 64,
+        "u": 112,
+        "v": 48,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 208,
+        "char": "<208>"
+      },
+      {
+        "ordinal": 26,
+        "packet_address": "0x801BEF04",
+        "x": 150,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 27,
+        "packet_address": "0x801BEF38",
+        "x": 156,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      }
+    ],
+    "source": "0x43e60",
+    "matches": [
+      {
+        "offset": "0x43e3c",
+        "end": "0x43e60",
+        "bytes": 36,
+        "csv_present": false,
+        "original_identical": false,
+        "japanese_map_preview": "もんだい：|パ□ンシア城にいる王に仕える大臣の名前は何だつたか？",
+        "current_decode": "문제: 파렌시아 성의 왕을 모시는|대신의 이름은?  ",
+        "choice_count": 0,
+        "renderer": {
+          "count": 28,
+          "expected_tokens": 28,
+          "ys": [
+            32,
+            64
+          ],
+          "source_end_matches": true,
+          "max_right": 268,
+          "max_bottom": 80,
+          "over_four_rows": false,
+          "packet_count_matches": true
+        }
+      }
+    ],
+    "quiz_ram_matches": true,
+    "choice_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "triangles": [
+      {
+        "address": "0x801f2fe8",
+        "xy": [
+          [
+            163,
+            77
+          ],
+          [
+            168,
+            77
+          ],
+          [
+            165,
+            80
+          ]
+        ]
+      }
+    ],
+    "cursor_global": [
+      163,
+      77
+    ],
+    "row_ys": [
+      32,
+      64
+    ],
+    "visible_rows": {
+      "32": "문제: 파렌시아 성의 왕을 모시는",
+      "64": "대신의 이름은?  "
+    }
+  },
+  {
+    "slot": 4,
+    "sha256": "023675c88bff928e528680d6c822414d8fc47eac1bbb181d18d43343116327d6",
+    "title": "V367_QUIZ_TEST",
+    "state": {
+      "header_address": "0x801F9D44",
+      "base_address": "0x801BE9BC",
+      "limit": 64,
+      "count": 27,
+      "x": 150,
+      "y": 64,
+      "style": 0,
+      "D": 14,
+      "E": 16,
+      "F": 2,
+      "line_extra": 0,
+      "source_pointer": "0x801132C4"
+    },
+    "packets": [
+      {
+        "ordinal": 0,
+        "packet_address": "0x801BE9BC",
+        "x": 46,
+        "y": 32,
+        "u": 128,
+        "v": 96,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 394,
+        "char": "<394>"
+      },
+      {
+        "ordinal": 1,
+        "packet_address": "0x801BE9F0",
+        "x": 60,
+        "y": 32,
+        "u": 160,
+        "v": 16,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 101,
+        "char": "<101>"
+      },
+      {
+        "ordinal": 2,
+        "packet_address": "0x801BEA24",
+        "x": 74,
+        "y": 32,
+        "u": 160,
+        "v": 48,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 221,
+        "char": "<221>"
+      },
+      {
+        "ordinal": 3,
+        "packet_address": "0x801BEA58",
+        "x": 88,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 4,
+        "packet_address": "0x801BEA8C",
+        "x": 94,
+        "y": 32,
+        "u": 0,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 0,
+        "char": "<0>"
+      },
+      {
+        "ordinal": 5,
+        "packet_address": "0x801BEAC0",
+        "x": 108,
+        "y": 32,
+        "u": 192,
+        "v": 96,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 410,
+        "char": "<410>"
+      },
+      {
+        "ordinal": 6,
+        "packet_address": "0x801BEAF4",
+        "x": 122,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 7,
+        "packet_address": "0x801BEB28",
+        "x": 128,
+        "y": 32,
+        "u": 208,
+        "v": 48,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC3",
+        "plane": 3,
+        "physical_index": 235,
+        "char": "<235>"
+      },
+      {
+        "ordinal": 8,
+        "packet_address": "0x801BEB5C",
+        "x": 142,
+        "y": 32,
+        "u": 16,
+        "v": 64,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 246,
+        "char": "<246>"
+      },
+      {
+        "ordinal": 9,
+        "packet_address": "0x801BEB90",
+        "x": 156,
+        "y": 32,
+        "u": 48,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 13,
+        "char": "<13>"
+      },
+      {
+        "ordinal": 10,
+        "packet_address": "0x801BEBC4",
+        "x": 170,
+        "y": 32,
+        "u": 144,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 36,
+        "char": "<36>"
+      },
+      {
+        "ordinal": 11,
+        "packet_address": "0x801BEBF8",
+        "x": 184,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 12,
+        "packet_address": "0x801BEC2C",
+        "x": 190,
+        "y": 32,
+        "u": 192,
+        "v": 48,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 228,
+        "char": "<228>"
+      },
+      {
+        "ordinal": 13,
+        "packet_address": "0x801BEC60",
+        "x": 204,
+        "y": 32,
+        "u": 48,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 12,
+        "char": "<12>"
+      },
+      {
+        "ordinal": 14,
+        "packet_address": "0x801BEC94",
+        "x": 218,
+        "y": 32,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 15,
+        "packet_address": "0x801BECC8",
+        "x": 224,
+        "y": 32,
+        "u": 208,
+        "v": 48,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC3",
+        "plane": 3,
+        "physical_index": 235,
+        "char": "<235>"
+      },
+      {
+        "ordinal": 16,
+        "packet_address": "0x801BECFC",
+        "x": 238,
+        "y": 32,
+        "u": 192,
+        "v": 48,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 229,
+        "char": "<229>"
+      },
+      {
+        "ordinal": 17,
+        "packet_address": "0x801BED30",
+        "x": 252,
+        "y": 32,
+        "u": 96,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 24,
+        "char": "<24>"
+      },
+      {
+        "ordinal": 18,
+        "packet_address": "0x801BED64",
+        "x": 46,
+        "y": 48,
+        "u": 16,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 5,
+        "char": "<5>"
+      },
+      {
+        "ordinal": 19,
+        "packet_address": "0x801BED98",
+        "x": 46,
+        "y": 64,
+        "u": 32,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 8,
+        "char": "<8>"
+      },
+      {
+        "ordinal": 20,
+        "packet_address": "0x801BEDCC",
+        "x": 60,
+        "y": 64,
+        "u": 96,
+        "v": 16,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC3",
+        "plane": 3,
+        "physical_index": 87,
+        "char": "<87>"
+      },
+      {
+        "ordinal": 21,
+        "packet_address": "0x801BEE00",
+        "x": 74,
+        "y": 64,
+        "u": 48,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC2",
+        "plane": 2,
+        "physical_index": 14,
+        "char": "<14>"
+      },
+      {
+        "ordinal": 22,
+        "packet_address": "0x801BEE34",
+        "x": 88,
+        "y": 64,
+        "u": 160,
+        "v": 32,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 160,
+        "char": "<160>"
+      },
+      {
+        "ordinal": 23,
+        "packet_address": "0x801BEE68",
+        "x": 94,
+        "y": 64,
+        "u": 128,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC3",
+        "plane": 3,
+        "physical_index": 35,
+        "char": "<35>"
+      },
+      {
+        "ordinal": 24,
+        "packet_address": "0x801BEE9C",
+        "x": 108,
+        "y": 64,
+        "u": 112,
+        "v": 112,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 448,
+        "char": "<448>"
+      },
+      {
+        "ordinal": 25,
+        "packet_address": "0x801BEED0",
+        "x": 122,
+        "y": 64,
+        "u": 144,
+        "v": 0,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC1",
+        "plane": 1,
+        "physical_index": 37,
+        "char": "<37>"
+      },
+      {
+        "ordinal": 26,
+        "packet_address": "0x801BEF04",
+        "x": 136,
+        "y": 64,
+        "u": 112,
+        "v": 48,
+        "w": 16,
+        "h": 16,
+        "clut": "0x7FC0",
+        "plane": 0,
+        "physical_index": 208,
+        "char": "<208>"
+      }
+    ],
+    "source": "0x442c4",
+    "matches": [
+      {
+        "offset": "0x4429e",
+        "end": "0x442c4",
+        "bytes": 38,
+        "csv_present": false,
+        "original_identical": false,
+        "japanese_map_preview": "もんだい：|異□聞からの攻撃で敵にダメージを□えるアークの能力は？",
+        "current_decode": "문제: 다른 공간에서 적을 공격하는|아크의 기술은?",
+        "choice_count": 0,
+        "renderer": {
+          "count": 27,
+          "expected_tokens": 27,
+          "ys": [
+            32,
+            48,
+            64
+          ],
+          "source_end_matches": true,
+          "max_right": 268,
+          "max_bottom": 80,
+          "over_four_rows": false,
+          "packet_count_matches": true
+        }
+      }
+    ],
+    "quiz_ram_matches": true,
+    "choice_fields": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "triangles": [
+      {
+        "address": "0x801f2fd4",
+        "xy": [
+          [
+            151,
+            77
+          ],
+          [
+            156,
+            77
+          ],
+          [
+            153,
+            80
+          ]
+        ]
+      }
+    ],
+    "cursor_global": [
+      151,
+      77
+    ],
+    "row_ys": [
+      32,
+      48,
+      64
+    ],
+    "visible_rows": {
+      "32": "문제: 다른 공간에서 적을 공격하",
+      "48": "는",
+      "64": "아크의 기술은?"
+    }
+  }
+]

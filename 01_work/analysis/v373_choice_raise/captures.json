@@ -1,0 +1,50 @@
+[
+  {
+    "name": "HASH-477B29575D051C04_1.sav",
+    "sha256": "0c1bc09f1e858efd0e4c9540329b93d99f9452f37ebc08e71d346d3df6f79be2",
+    "title": "V373_TWO_REPORTS_TEST",
+    "objects": [
+      {
+        "state": {
+          "header_address": "0x801F9D44",
+          "base_address": "0x801BE9BC",
+          "limit": 64,
+          "count": 26,
+          "x": 184,
+          "y": 80,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x80115F2D"
+        },
+        "ys": [
+          32,
+          64,
+          80
+        ],
+        "matches": [
+          {
+            "row": 2425,
+            "file": "C1/SC021.DAT",
+            "offset": 290574,
+            "end": 290605,
+            "japanese": "戦闘になるけど、いいのかな？\n<CTRL:E5:03>はい\n<CTRL:E5:03>やつっりやめる",
+            "current": "싸우게 되는데, 괜찮을까?|<e503>괜찮아|<e503>그만둘래 ",
+            "raw": "e286a1a1a1a1a1a1a1a1a1a1a1a1e601e503e287e601e5031538ddbbdd12a1"
+          },
+          {
+            "row": 2432,
+            "file": "C1/SC031.DAT",
+            "offset": 290574,
+            "end": 290605,
+            "japanese": "戦闘になるけど、いいのかな？\n<CTRL:E5:03>はい\n<CTRL:E5:03>やつっりやめる",
+            "current": "싸우게 되는데, 괜찮을까?|<e503>괜찮아|<e503>그만둘래 ",
+            "raw": "e286a1a1a1a1a1a1a1a1a1a1a1a1e601e503e287e601e5031538ddbbdd12a1"
+          }
+        ]
+      }
+    ]
+  }
+]

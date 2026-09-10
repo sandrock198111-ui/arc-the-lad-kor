@@ -1,0 +1,26 @@
+{
+  "zip_sha256": "34E00DB8BC2EF5E8929E5EC770D6CB61C02FB9DBCEE899D51411B6CDE03044B4",
+  "static_pass": true,
+  "counts": {
+    "entries": 107,
+    "questions": 29,
+    "four_choice_items": 116,
+    "outside_old_csv": 63,
+    "original_identical": 0,
+    "question_original": 0,
+    "choices_original": 0,
+    "followup_original": 0,
+    "cpu_errors": 0,
+    "over_four_rows": 0,
+    "choice_windows": 31,
+    "misaligned_windows": 0,
+    "navigation_cases": 240,
+    "additional_same_header_four_choice_bodies": []
+  },
+  "inherited_failure_counts": {
+    "선택지 마커가 원판과 다른 위치": 2,
+    "선택지 줄이 창을 넘음 (커서·다음 칸과 겹침)": 69
+  },
+  "runtime_verified": false,
+  "limitation": "Actual renderer/event/coordinate/decoded-pad CPU on captured RAM copy. GPU/physical input/branch outcome and human translation review pending."
+}

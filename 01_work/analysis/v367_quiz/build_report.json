@@ -1,0 +1,971 @@
+{
+  "zip_sha256": "34E00DB8BC2EF5E8929E5EC770D6CB61C02FB9DBCEE899D51411B6CDE03044B4",
+  "baseline_sha256": "2443DCCA0451372D4D7A6ACD8B593696EC52734FC467B42C2284EFD14995FEBF",
+  "writes": [
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277436,
+      "before": "5764678425e601262924c7dd343524242437",
+      "after": "693cdd02a14eb3a131dea07f0701212121a1",
+      "reason": "승려: 으, 정답입니다..."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277504,
+      "before": "382d351b25e60142314e244e4e5324d7d11cdd2a23dd9988231d291f1c283c",
+      "after": "ddaf66dd02a10958b3dd0cdd0cdd42b3dd78dd40a1018de601dd32de1206d1",
+      "reason": "문제: 아크,쿠쿠루,포코 다음|동료는?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277638,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277592,
+      "before": "e5035c8260abe601e503dd3c31dd4d34e601e5036c6934dd0257e601e5036531dd02",
+      "after": "83dd86a1a1a1a1a1e6011cdda9a1a1a1a1e601960c8fa1a1a1a1e601030ca1a1a1a1",
+      "reason": "토슈 | 고겐 | 촌가라 | 이가"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277714,
+      "before": "5764678425e601262924c7dd343524242437",
+      "after": "693cdd02a14eb3a131dea07f0701212121a1",
+      "reason": "승려: 으, 정답입니다..."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277782,
+      "before": "382d351b25e6015c8260ab1cdd80613024df21dd2ddd2bdd191cd0b1612fdd09451c283c",
+      "after": "ddaf66dd02a183dd860fa1dd356ba1dd10dd0aa1dd73e6010c56a1dd2853a124dde526d1",
+      "reason": "문제: 토슈의 단일 공격 중|가장 강한 기술은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277932,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 277874,
+      "before": "e503de35de94dd8de601e503de9cc1b1dea3e601e503de3cde1bdf1cdd41dd5ce601e503de3cde1bdda5dd41dd5c",
+      "after": "40de9fdda1a1a1e601dd53de2edd0ade02a1a1e601ea5bdd834fdd62dd4ca1a1e601ea5bdd83ea26dd62dd4ca1a1",
+      "reason": "주박검 | 선풍격축 | 앵화전폭참 | 앵화뇌폭참"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278008,
+      "before": "5764678425e601262924c7dd343524242437",
+      "after": "693cdd02a14eb3a131dea07f0701212121a1",
+      "reason": "승려: 으, 정답입니다..."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278076,
+      "before": "382d351b25e601a36f346042dd17231b225d23df3c4622508b1cde26ae286e35291f203c",
+      "after": "ddaf66dd02a1dd7bddb02909a1dd170fa16a0da1552906e601373e0fa103de3826d1a1a1",
+      "reason": "문제: 파렌시아 성의 왕을 모시는|대신의 이름은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278214,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278168,
+      "before": "e503bc65ddf853e601e50342348153e601e503dda131ddf853e601e503806f31db53",
+      "after": "dd3803ea68a1a1a1e60194dde9a1a1a1e60160ea68a1a1a1e60115dd66ea80a1a1a1",
+      "reason": "카이젤 | 안델 | 보젤 | 그레텔"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278290,
+      "before": "5764678425e601262924c7dd343524242437",
+      "after": "693cdd02a14eb3a131dea07f0701212121a1",
+      "reason": "승려: 으, 정답입니다..."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278358,
+      "before": "382d351b25e6015cdd1431dd6d1cdd1030567b291f2444321b1d4d4f1cde26ae283c",
+      "after": "ddaf66dd02a1832cddf8a1dd970fa109de380186e60131510fa103de3826d1a1a1a1",
+      "reason": "문제: 토요케 숲의 아름다운|정령의 이름은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278496,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278448,
+      "before": "e503202a40441c4d4fe601e50345441c4d4fe601e503b46d1c4d4fe601e503234a1c4d4f",
+      "after": "ddc41e06a13151a1e601de5f0fa13151a1e60126dd4b0fa13151e6015f04ddb40fa13151",
+      "reason": "빛나는 정령 | 달의 정령 | 은혜의 정령 | 무지개의 정령"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278572,
+      "before": "5764678425e601262924c7dd343524242437",
+      "after": "693cdd02a14eb3a131dea07f0701212121a1",
+      "reason": "승려: 으, 정답입니다..."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278640,
+      "before": "382d351b25e60147786b425d2033df3820291f24e601dd7274de0b1cde26ae283c",
+      "after": "ddaf66dd02a130dd2c2e09a16a03a1dd6fe601dd06dd31dd530fa103de3826d1a1",
+      "reason": "문제: 스메리아 왕이 준|비행선의 이름은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278784,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278730,
+      "before": "e5036053af319542e601e5036053af31dd5f42e601e5036053af315f42e601e5036053af31deff314e",
+      "after": "dd27673309a1a1a1a1e601dd2767dd5709a1a1a1a1e601dd27675509a1a1a1e601dd27679558a1a1a1",
+      "reason": "실버도아 | 실버노아 | 실버모아 | 실버호크"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278860,
+      "before": "5764678425e601262924c7dd343524242437",
+      "after": "693cdd02a14eb3a131dea07f0701212121a1",
+      "reason": "승려: 으, 정답입니다..."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 278928,
+      "before": "382d351b25e601dd2a1cdd8124d7d11cdddfde7a231d1b381c283c",
+      "after": "ddaf66dd02a1dd78dd400fa1ddeb240ca109dddfa11826d1a1a1a1",
+      "reason": "문제: 포코의 악기가 아닌 것은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279054,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279012,
+      "before": "e503332975e601e5032e351b2ee601e5038fbc6b7ce601e5037242dd5f",
+      "after": "1edd6ca1a1e601dd6426de64a1e60146dd382e1ea1e601dd3c09dd57a1",
+      "reason": "나팔 | 작은북 | 오카리나 | 피아노"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279130,
+      "before": "5764678425e601262924c7dd343524242437",
+      "after": "693cdd02a14eb3a131dea07f0701212121a1",
+      "reason": "승려: 으, 정답입니다..."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279198,
+      "before": "382d351b25e601defddd188820331cd0b130bd236778317f2fdd3f462242314e1cdd8061283c",
+      "after": "ddaf66dd02a101ddbfa1dd10dd1b0e25a1dd090da1dd10dd0a1906e60109580fa124dde526d1",
+      "reason": "문제: 다른 공간에서 적을 공격하는|아크의 기술은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279354,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279292,
+      "before": "e503dda16553a6578260abe601e503dd4d6553a6578260abe601e503dd026553a6578260abe601e5038f6553a6578260ab",
+      "after": "606ba1de36dd1229a1a1a1e601416ba1de36dd1229a1a1a1e6010c6ba1de36dd1229a1a1a1e601466ba1de36dd1229a1a1",
+      "reason": "보일 플래시 | 게일 플래시 | 가일 플래시 | 오일 플래시"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279430,
+      "before": "5764678425e601262924c7dd343524242437",
+      "after": "693cdd02a14eb3a131dea07f0701212121a1",
+      "reason": "승려: 으, 정답입니다..."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279498,
+      "before": "382d351b25e601412e2374495824dd37ccddf94933321fdd998836567b26361b2689c2283c",
+      "after": "ddaf66dd02a186dd340fa1dd32de1288a138dd6a0106e60156dd0706a114ddcd7f073bd1a1",
+      "reason": "문제: 운명의 동료와 만난다는|장소는 어디입니까?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279650,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279592,
+      "before": "e5035cdd1431dd6d1cdd10e601e50347786b42dd18dd4ae601e503567b1b1c281ee601e503a36f346042dd17ddff",
+      "after": "832cddf8a1dd97a1a1e60130dd2c2e09a1dd10ddf2a1e60138dd3d0fa1012ea1e601dd7bddb02909a1dd17ddafa1",
+      "reason": "토요케 숲 | 스메리아 공항 | 만남의 다리 | 파렌시아 성문"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279732,
+      "before": "5764678425e601262924c7dd343524242437",
+      "after": "693cdd02a14eb3a131dea07f0701212121a1",
+      "reason": "승려: 으, 정답입니다..."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279800,
+      "before": "5764678425e601851c382d351b23dd0821c7dd341e1f1c283b27462ade6c51213537dd052699232e322f40552637",
+      "after": "693cdd02a166a1ddaf6636a101a1ddb1deb6a19226e601dd8f8d7f070121a18b4ed5a103dd8ee60117de2f070121",
+      "reason": "승려: 제 문제를 다 맞힌 분은|처음입니다. 상으로 이걸|드립니다."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279926,
+      "before": "5b57314e1cde56de345a2f38331b271e1f37",
+      "after": "df2d8f580fddaf56df090ddd9c612d070121",
+      "reason": "「라크의문장」을얻었습니다."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 279998,
+      "before": "369f291f2a243826dd0929211b2230281d1b203c7d40202b301d1b37",
+      "after": "03dd2fa10c041ca1dd11297c2cd1e60156dd6aa11538dd215d294621",
+      "reason": "이미 가지고 계시군요?|장난 그만두십시오."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280076,
+      "before": "2e1ccedd122328244d4f1c943638268e4524dd0821dd5a51222e36233d2921ddc1dd1f2add8c3222942a3f2236d33e37",
+      "after": "31510fa172a11b1c33a155dd21a1554e3ae601de24dd180ca11edd7f1e06a17203e6011f011ca1dd1d070121a1a1a1a1",
+      "reason": "정령의 돌 말고도 모두 모으면|효과가 나타나는 돌이|있다고 합니다."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280174,
+      "before": "411c942824df0dde407e1f4b2fde18de402033de162624e601501b1d2261361d22303f552637",
+      "after": "15a17226a155dd540c0a0da18edd540e25e601872ba1dd81a1aaa17403a1ddd9a1187f070121",
+      "reason": "그 돌은 모험가들을 위험에서|구해 줄 큰 힘이 될 것입니다."
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280266,
+      "before": "382d351b25e60147786b42de1e7f693430de71de2687dd7f1cdd56ab31472ade2432211b222a241e48de9f2a2e26dde03a32211b1d1b1c283c",
+      "after": "ddaf66dd02a130dd2c2e09a1dd064f0fa150dd93a1dd07ddb50ee60134dd3f03a1dd10ddb47304a17826a134dd2226d1a1a1a1a1a1a1a1a1a1",
+      "reason": "문제: 스메리아 비전의 수배 소식에|사진이 공개되지 않은 사람은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280418,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280380,
+      "before": "e50342314ee601e5035c8260abe601e503d7d1e601e5034e4e53",
+      "after": "0958a1a1e60183dd86a1e601dd78dd40a1e601dd0cdd0cdd42a1",
+      "reason": "아크 | 토슈 | 포코 | 쿠쿠루"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280478,
+      "before": "5764678425e601c7dd340202",
+      "after": "693cdd02a131dea07f0701a9",
+      "reason": "승려: 정답입니다!"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280540,
+      "before": "382d351b25e601dd3a5364317c1cbb8034dd89ba1cddf7825c283c",
+      "after": "ddaf66dd02dd2f70451ea1497ca1567c0fe601dd463cdd326d26d1",
+      "reason": "문제:미르마나 야군 장군의|반려동물은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280660,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280624,
+      "before": "e5037753e601e50365ddc7e601e503dd4e7fe601e5035c57",
+      "after": "ea671edd06a1e601ddb4a1e601dd45dd11a1e60195de7403",
+      "reason": "잔나비 | 개 | 산계 | 호랑이"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280720,
+      "before": "5764678425e601c7dd340202",
+      "after": "693cdd02a131dea07f0701a9",
+      "reason": "승려: 정답입니다!"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280782,
+      "before": "382d351b25e60142314e1ca653ddc631d8283c",
+      "after": "ddaf66dd02a109580fa14fdd90a103de3826d1",
+      "reason": "문제: 아크의 전체 이름은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280926,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280858,
+      "before": "e50342314e2cddc82c578295e601e50342314e2cddc82cc9578295e601e50342314e2cdd23672c6bd153ddc7e601e50342314e2cd75362",
+      "after": "0958a1dd96a1dd1217a1a1a1e6010958a1dd96a1ea472017a1a1a1e6010958a10e01a12edd4070dd55a1a1a1e6010958a1ea8bdd7fa1a1",
+      "reason": "아크 더 래드 | 아크 더 블러드 | 아크 에다 리코르누 | 아크 폴타"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 280986,
+      "before": "5764678425e601c7dd340202",
+      "after": "693cdd02a131dea07f0701a9",
+      "reason": "승려: 정답입니다!"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281048,
+      "before": "382d351b25e601dd3c31dd4d342fde913346211b225f344762311cde26ae283c",
+      "after": "ddaf66dd02a11cdda90da1de101ca11f06e6016430020fa103de3826d1a1a1a1",
+      "reason": "문제: 고겐을 잡고 있는|몬스터의 이름은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281186,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281136,
+      "before": "e503576bab71dd4ee601e503dd026bab71dd4ee601e503402bdd0444e601e503bb60a242dd4e",
+      "after": "8fdd6eddb3a1a1a1e6010cdd6eddb3a1a1a1e60149308addb3a1a1a1e6014929d509ddb3a1a1",
+      "reason": "라류키 | 가류키 | 야스유키 | 야시로아키"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281246,
+      "before": "5764678425e601c7dd340202",
+      "after": "693cdd02a131dea07f0701a9",
+      "reason": "승려: 정답입니다!"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281308,
+      "before": "5764678425e601dd3b5f7f311c5e28542e203c",
+      "after": "693cdd02a1ddc355040fa11e8f06d1a1a1a1a1",
+      "reason": "승려: 헤모지의 나라는?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281430,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281384,
+      "before": "e5034e5731a6de05e601e5035764679be601e503574e679be601e503576467dd9e",
+      "after": "de018fdd9da1de77a1e6018f4501a1dd45a1e6018fdd0c01a1dd45e6018f450134",
+      "reason": "클라프 섬 | 라마다 산 | 라쿠다 산 | 라마다사"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281490,
+      "before": "5764678425e601c7dd340202",
+      "after": "693cdd02a131dea07f0701a9",
+      "reason": "승려: 정답입니다!"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281552,
+      "before": "5764678425e60142314e1cb71cde26ae283c",
+      "after": "693cdd02a109580fa1096704a103de3826d1",
+      "reason": "승려: 아크의 아버지 이름은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281676,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281626,
+      "before": "e503dd148260d6e601e503dd1460ab42e601e50360abdda0826ce601e50360abdda053df01",
+      "after": "2cde5ca1a1a1e6012cdd8609a1a1a1e601dd8688dd1fa1a1a1e601dd86dd0870decda1a1a1",
+      "reason": "요샤 | 요슈아 | 슈와치 | 슈바르츠"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281736,
+      "before": "5764678425e601c7dd340202",
+      "after": "693cdd02a131dea07f0701a9",
+      "reason": "승려: 정답입니다!"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281798,
+      "before": "5764678425e60142314e1cdd0e1cde26ae283c",
+      "after": "693cdd02a109580fa114dd5d07a103de3826d1",
+      "reason": "승려: 아크의 어머니 이름은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281914,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281874,
+      "before": "e503d75362e601e503dd556f62e601e503646447e601e5037880dd3a",
+      "after": "ea8bdd7fa1e601ddc8dd66dd7fa1e601454530a1e601dd2c87dd2fa1",
+      "reason": "폴타 | 브레타 | 마마스 | 메구미"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 281974,
+      "before": "5764678425e601c7dd340202",
+      "after": "693cdd02a131dea07f0701a9",
+      "reason": "승려: 정답입니다!"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282036,
+      "before": "5764678425e60142314e1f4b2a14de2cac23567b264d4f1cde26ae283c",
+      "after": "693cdd02a10958a16bdd3103a18ca19b11d5e601381e06a1315126d1a1",
+      "reason": "승려: 아크 일행이 세 번째로|만나는 정령은?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282168,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282122,
+      "before": "e5039b1c4d4fe601e503b46d1c4d4fe601e503201f1d1c4d4fe601e503dd0c1c4d4f",
+      "after": "dd450fa13151a1e60126dd4b0fa13151a1e601dda10fa13151a1e601ddc40fa13151",
+      "reason": "산의 정령 | 은혜의 정령 | 검의 정령 | 빛의 정령"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282228,
+      "before": "5764678425e601c7dd340202",
+      "after": "693cdd02a131dea07f0701a9",
+      "reason": "승려: 정답입니다!"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282290,
+      "before": "5764678425e601d7d12a7023281b211b22381c283c",
+      "after": "693cdd02a1dd78dd400ca17f26a1190f06d1a1a1a1",
+      "reason": "승려: 포코가 입은 하의는?"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282414,
+      "before": "0000",
+      "after": "feff",
+      "reason": "local column -2: text x46, cursor x36; count/baseRow/branches preserved"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282368,
+      "before": "e5036265df01e601e50347a382df01e601e5037fd6317fe601e503281b211b1d1b",
+      "after": "dd7f03decda1e60130ded7decda1e60186dd32dd9fa1e601095f1833a194a17f8d",
+      "reason": "타이츠 | 스패츠 | 운동복 | 아무것도 안 입음"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282474,
+      "before": "5764678425e601c7dd340202",
+      "after": "693cdd02a131dea07f0701a9",
+      "reason": "승려: 정답입니다!"
+    },
+    {
+      "file": "6/S6054.DAT",
+      "offset": 282536,
+      "before": "5764678425e6016053af31dd5f421cdd438d3024af826c1cde09df0e361b46583c",
+      "after": "693cdd02a1dd2767dd5709a1695f7ba1dd73e601dd08dd1f0fa1dd32de1206d1a1",
+      "reason": "승려: 실버노아 승무원 중|바치의 동료는?"
+    }
+  ],
+  "changed_members": [
+    "6/S6054.DAT"
+  ],
+  "entries": [
+    {
+      "offset": 277436,
+      "end": 277454,
+      "text": "승려: 으, 정답입니다...",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 277504,
+      "end": 277535,
+      "text": "문제: 아크,쿠쿠루,포코 다음|동료는?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 277592,
+      "end": 277626,
+      "text": "토슈 | 고겐 | 촌가라 | 이가",
+      "option_packet_starts": [
+        0,
+        7,
+        13,
+        20
+      ]
+    },
+    {
+      "offset": 277714,
+      "end": 277732,
+      "text": "승려: 으, 정답입니다...",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 277782,
+      "end": 277818,
+      "text": "문제: 토슈의 단일 공격 중|가장 강한 기술은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 277874,
+      "end": 277920,
+      "text": "주박검 | 선풍격축 | 앵화전폭참 | 앵화뇌폭참",
+      "option_packet_starts": [
+        0,
+        5,
+        11,
+        18
+      ]
+    },
+    {
+      "offset": 278008,
+      "end": 278026,
+      "text": "승려: 으, 정답입니다...",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 278076,
+      "end": 278112,
+      "text": "문제: 파렌시아 성의 왕을 모시는|대신의 이름은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 278168,
+      "end": 278202,
+      "text": "카이젤 | 안델 | 보젤 | 그레텔",
+      "option_packet_starts": [
+        0,
+        6,
+        11,
+        16
+      ]
+    },
+    {
+      "offset": 278290,
+      "end": 278308,
+      "text": "승려: 으, 정답입니다...",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 278358,
+      "end": 278392,
+      "text": "문제: 토요케 숲의 아름다운|정령의 이름은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 278448,
+      "end": 278484,
+      "text": "빛나는 정령 | 달의 정령 | 은혜의 정령 | 무지개의 정령",
+      "option_packet_starts": [
+        0,
+        7,
+        13,
+        19
+      ]
+    },
+    {
+      "offset": 278572,
+      "end": 278590,
+      "text": "승려: 으, 정답입니다...",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 278640,
+      "end": 278673,
+      "text": "문제: 스메리아 왕이 준|비행선의 이름은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 278730,
+      "end": 278771,
+      "text": "실버도아 | 실버노아 | 실버모아 | 실버호크",
+      "option_packet_starts": [
+        0,
+        8,
+        16,
+        23
+      ]
+    },
+    {
+      "offset": 278860,
+      "end": 278878,
+      "text": "승려: 으, 정답입니다...",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 278928,
+      "end": 278955,
+      "text": "문제: 포코의 악기가 아닌 것은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 279012,
+      "end": 279041,
+      "text": "나팔 | 작은북 | 오카리나 | 피아노",
+      "option_packet_starts": [
+        0,
+        4,
+        8,
+        13
+      ]
+    },
+    {
+      "offset": 279130,
+      "end": 279148,
+      "text": "승려: 으, 정답입니다...",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 279198,
+      "end": 279236,
+      "text": "문제: 다른 공간에서 적을 공격하는|아크의 기술은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 279292,
+      "end": 279341,
+      "text": "보일 플래시 | 게일 플래시 | 가일 플래시 | 오일 플래시",
+      "option_packet_starts": [
+        0,
+        9,
+        18,
+        27
+      ]
+    },
+    {
+      "offset": 279430,
+      "end": 279448,
+      "text": "승려: 으, 정답입니다...",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 279498,
+      "end": 279535,
+      "text": "문제: 운명의 동료와 만난다는|장소는 어디입니까?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 279592,
+      "end": 279638,
+      "text": "토요케 숲 | 스메리아 공항 | 만남의 다리 | 파렌시아 성문",
+      "option_packet_starts": [
+        0,
+        7,
+        15,
+        22
+      ]
+    },
+    {
+      "offset": 279732,
+      "end": 279750,
+      "text": "승려: 으, 정답입니다...",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 279800,
+      "end": 279846,
+      "text": "승려: 제 문제를 다 맞힌 분은|처음입니다. 상으로 이걸|드립니다.",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 279926,
+      "end": 279944,
+      "text": "「라크의문장」을얻었습니다.",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 279998,
+      "end": 280026,
+      "text": "이미 가지고 계시군요?|장난 그만두십시오.",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 280076,
+      "end": 280124,
+      "text": "정령의 돌 말고도 모두 모으면|효과가 나타나는 돌이|있다고 합니다.",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 280174,
+      "end": 280212,
+      "text": "그 돌은 모험가들을 위험에서|구해 줄 큰 힘이 될 것입니다.",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 280266,
+      "end": 280323,
+      "text": "문제: 스메리아 비전의 수배 소식에|사진이 공개되지 않은 사람은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 280380,
+      "end": 280406,
+      "text": "아크 | 토슈 | 포코 | 쿠쿠루",
+      "option_packet_starts": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "offset": 280478,
+      "end": 280490,
+      "text": "승려: 정답입니다!",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 280540,
+      "end": 280567,
+      "text": "문제:미르마나 야군 장군의|반려동물은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 280624,
+      "end": 280648,
+      "text": "잔나비 | 개 | 산계 | 호랑이",
+      "option_packet_starts": [
+        0,
+        4,
+        6,
+        9
+      ]
+    },
+    {
+      "offset": 280720,
+      "end": 280732,
+      "text": "승려: 정답입니다!",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 280782,
+      "end": 280801,
+      "text": "문제: 아크의 전체 이름은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 280858,
+      "end": 280913,
+      "text": "아크 더 래드 | 아크 더 블러드 | 아크 에다 리코르누 | 아크 폴타",
+      "option_packet_starts": [
+        0,
+        10,
+        21,
+        34
+      ]
+    },
+    {
+      "offset": 280986,
+      "end": 280998,
+      "text": "승려: 정답입니다!",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 281048,
+      "end": 281080,
+      "text": "문제: 고겐을 잡고 있는|몬스터의 이름은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 281136,
+      "end": 281174,
+      "text": "라류키 | 가류키 | 야스유키 | 야시로아키",
+      "option_packet_starts": [
+        0,
+        6,
+        12,
+        19
+      ]
+    },
+    {
+      "offset": 281246,
+      "end": 281258,
+      "text": "승려: 정답입니다!",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 281308,
+      "end": 281327,
+      "text": "승려: 헤모지의 나라는?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 281384,
+      "end": 281417,
+      "text": "클라프 섬 | 라마다 산 | 라쿠다 산 | 라마다사",
+      "option_packet_starts": [
+        0,
+        6,
+        12,
+        17
+      ]
+    },
+    {
+      "offset": 281490,
+      "end": 281502,
+      "text": "승려: 정답입니다!",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 281552,
+      "end": 281570,
+      "text": "승려: 아크의 아버지 이름은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 281626,
+      "end": 281663,
+      "text": "요샤 | 요슈아 | 슈와치 | 슈바르츠",
+      "option_packet_starts": [
+        0,
+        5,
+        11,
+        17
+      ]
+    },
+    {
+      "offset": 281736,
+      "end": 281748,
+      "text": "승려: 정답입니다!",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 281798,
+      "end": 281817,
+      "text": "승려: 아크의 어머니 이름은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 281874,
+      "end": 281902,
+      "text": "폴타 | 브레타 | 마마스 | 메구미",
+      "option_packet_starts": [
+        0,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "offset": 281974,
+      "end": 281986,
+      "text": "승려: 정답입니다!",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 282036,
+      "end": 282065,
+      "text": "승려: 아크 일행이 세 번째로|만나는 정령은?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 282122,
+      "end": 282156,
+      "text": "산의 정령 | 은혜의 정령 | 검의 정령 | 빛의 정령",
+      "option_packet_starts": [
+        0,
+        6,
+        13,
+        19
+      ]
+    },
+    {
+      "offset": 282228,
+      "end": 282240,
+      "text": "승려: 정답입니다!",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 282290,
+      "end": 282311,
+      "text": "승려: 포코가 입은 하의는?",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 282368,
+      "end": 282401,
+      "text": "타이츠 | 스패츠 | 운동복 | 아무것도 안 입음",
+      "option_packet_starts": [
+        0,
+        4,
+        8,
+        12
+      ]
+    },
+    {
+      "offset": 282474,
+      "end": 282486,
+      "text": "승려: 정답입니다!",
+      "option_packet_starts": null
+    },
+    {
+      "offset": 282536,
+      "end": 282569,
+      "text": "승려: 실버노아 승무원 중|바치의 동료는?",
+      "option_packet_starts": null
+    }
+  ],
+  "missing_bodies_repaired": 58,
+  "policy": "TEST_ONLY nonrelease; all 58 missing quiz bodies; translation human review pending; no font/code/E2 slot changes; canonical CSV unchanged"
+}

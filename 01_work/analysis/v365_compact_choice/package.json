@@ -1,0 +1,8 @@
+{
+  "bin": "E:\\korean\\03_output\\V365_COMPACT_CHOICE_TEST.bin",
+  "cue": "E:\\korean\\03_output\\V365_COMPACT_CHOICE_TEST.cue",
+  "bin_sha256": "9BBD07FA34F6B644E4A685A0DA70ADD2F20B5B125B5DB43777423A4B8270987D",
+  "archive_sha256": "28EEE68677DB124D91550CF89B2EF437B1CE728686011CA79B419FA1DAB27764",
+  "verification": "patch    arc1_v365_compact_choice_TEST_ONLY.zip\n\noriginal E:\\arc\\원본\\arc1.bin   507 files\nbuilt    E:\\korean\\03_output\\V365_COMPACT_CHOICE_TEST.bin   507 files\n\npass  all 506 data files kept their sector number\npass  COMM.DAT   LBA 307  (executable expects 307)\npass  COMM.IMG   LBA 667  (executable expects 667)\npass  COMM.SND   LBA 891  (executable expects 891)\n\n  comparing 164 patched files against the image\npass  all 164 patched files on the disc match arc1_v365_compact_choice_TEST_ONLY.zip\n\n  PSX.EXE at LBA 268481 (was 23), 587776 bytes\n\nRESULT: PASS - disc layout/member integrity only; runtime not established\n",
+  "runtime_verified": false
+}

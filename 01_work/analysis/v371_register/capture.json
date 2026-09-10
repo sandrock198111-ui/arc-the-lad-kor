@@ -1,0 +1,235 @@
+{
+  "title": "V371_SPEAKER_FIXES_TEST",
+  "sha256": "eda104706fcb415abe64d8915a63b99068df0d22be5c9c17e9f93f11b0b9f438",
+  "matches": [
+    {
+      "file": "7/S7021.DAT",
+      "dat_pointer": 298802,
+      "state": {
+        "header_address": "0x801F9D44",
+        "base_address": "0x801BE9BC",
+        "limit": 64,
+        "count": 20,
+        "x": 60,
+        "y": 80,
+        "style": 0,
+        "D": 14,
+        "E": 16,
+        "F": 2,
+        "line_extra": 0,
+        "source_pointer": "0x80117F32"
+      },
+      "entries": [
+        {
+          "row": 1889,
+          "file": "7/S7021.DAT",
+          "offset": 298774,
+          "end": 298801,
+          "japanese": "<CTRL:E2:01>さんですね。\n<CTRL:E5:03>はい\n<CTRL:E5:03>まちがえました\n",
+          "current": "맞나?   |<e503>예 |<e503>아니오    |",
+          "original_raw": "e2013a2d302b4c37e601e503281be601e503274b2a46271e1fe601"
+        }
+      ]
+    }
+  ],
+  "groups": {
+    "early": 1252,
+    "arena": 373,
+    "other": 1253
+  },
+  "exact_matna": [
+    {
+      "row": 1889,
+      "file": "7/S7021.DAT",
+      "offset": 298774,
+      "end": 298801,
+      "japanese": "<CTRL:E2:01>さんですね。\n<CTRL:E5:03>はい\n<CTRL:E5:03>まちがえました\n",
+      "current": "맞나?   |<e503>예 |<e503>아니오    |",
+      "original_raw": "e2013a2d302b4c37e601e503281be601e503274b2a46271e1fe601"
+    },
+    {
+      "row": 1890,
+      "file": "7/S7021.DAT",
+      "offset": 298882,
+      "end": 298909,
+      "japanese": "<CTRL:E2:02>さんですね。\n<CTRL:E5:03>はい\n<CTRL:E5:03>まちがえました\n",
+      "current": "맞나?   |<e503>예 |<e503>아니오    |",
+      "original_raw": "e2023a2d302b4c37e601e503281be601e503274b2a46271e1fe601"
+    },
+    {
+      "row": 1891,
+      "file": "7/S7021.DAT",
+      "offset": 298990,
+      "end": 299016,
+      "japanese": "<CTRL:E2:03>さんですね。\n<CTRL:E5:03>おう\n<CTRL:E5:03>まちがえたぜ\n",
+      "current": "맞나?   |<e503>예 |<e503>아니오   |",
+      "original_raw": "e2033a2d302b4c37e601e5033b26e601e503274b2a461fa7e601"
+    },
+    {
+      "row": 1893,
+      "file": "7/S7021.DAT",
+      "offset": 299266,
+      "end": 299292,
+      "japanese": "<CTRL:E2:04>さんですね。\n<CTRL:E5:03>うん\n<CTRL:E5:03>やつっりやだ\n",
+      "current": "맞나?   |<e503>예 |<e503>아니오   |",
+      "original_raw": "e2043a2d302b4c37e601e503262de601e503402975394035e601"
+    },
+    {
+      "row": 1894,
+      "file": "7/S7021.DAT",
+      "offset": 299372,
+      "end": 299397,
+      "japanese": "<CTRL:E2:05>さんですね。\n<CTRL:E5:03>やる\n<CTRL:E5:03>やめるわい\n",
+      "current": "맞나?   |<e503>예 |<e503>아니오  |",
+      "original_raw": "e2053a2d302b4c37e601e5034022e601e503405122431be601"
+    },
+    {
+      "row": 1895,
+      "file": "7/S7021.DAT",
+      "offset": 299472,
+      "end": 299486,
+      "japanese": "<CTRL:E2:06>さんですね。\n<CTRL:E5:03>うむ",
+      "current": "맞나?   |<e503>예 ",
+      "original_raw": "e2063a2d302b4c37e601e50326b5"
+    },
+    {
+      "row": 1897,
+      "file": "7/S7021.DAT",
+      "offset": 299678,
+      "end": 299704,
+      "japanese": "<CTRL:E2:08>さんですね。\n<CTRL:E5:03>わしかい\n<CTRL:E5:03>いやじゃ\n",
+      "current": "맞나?   |<e503>예   |<e503>아니오 |",
+      "original_raw": "e2083a2d302b4c37e601e503431e201be601e5031b404a48e601"
+    },
+    {
+      "row": 2128,
+      "file": "7/S7028.DAT",
+      "offset": 295776,
+      "end": 295803,
+      "japanese": "<CTRL:E2:01>さんですね。\n<CTRL:E5:03>はい\n<CTRL:E5:03>まちがえました\n",
+      "current": "맞나?   |<e503>예 |<e503>아니오    |",
+      "original_raw": "e2013a2d302b4c37e601e503281be601e503274b2a46271e1fe601"
+    },
+    {
+      "row": 2129,
+      "file": "7/S7028.DAT",
+      "offset": 295884,
+      "end": 295911,
+      "japanese": "<CTRL:E2:02>さんですね。\n<CTRL:E5:03>はい\n<CTRL:E5:03>まちがえました\n",
+      "current": "맞나?   |<e503>예 |<e503>아니오    |",
+      "original_raw": "e2023a2d302b4c37e601e503281be601e503274b2a46271e1fe601"
+    },
+    {
+      "row": 2130,
+      "file": "7/S7028.DAT",
+      "offset": 295992,
+      "end": 296018,
+      "japanese": "<CTRL:E2:03>さんですね。\n<CTRL:E5:03>おう\n<CTRL:E5:03>まちがえたぜ\n",
+      "current": "맞나?   |<e503>예 |<e503>아니오   |",
+      "original_raw": "e2033a2d302b4c37e601e5033b26e601e503274b2a461fa7e601"
+    },
+    {
+      "row": 2132,
+      "file": "7/S7028.DAT",
+      "offset": 296268,
+      "end": 296294,
+      "japanese": "<CTRL:E2:04>さんですね。\n<CTRL:E5:03>うん\n<CTRL:E5:03>やつっりやだ\n",
+      "current": "맞나?   |<e503>예 |<e503>아니오   |",
+      "original_raw": "e2043a2d302b4c37e601e503262de601e503402975394035e601"
+    },
+    {
+      "row": 2133,
+      "file": "7/S7028.DAT",
+      "offset": 296374,
+      "end": 296399,
+      "japanese": "<CTRL:E2:05>さんですね。\n<CTRL:E5:03>やる\n<CTRL:E5:03>やめるわい\n",
+      "current": "맞나?   |<e503>예 |<e503>아니오  |",
+      "original_raw": "e2053a2d302b4c37e601e5034022e601e503405122431be601"
+    },
+    {
+      "row": 2134,
+      "file": "7/S7028.DAT",
+      "offset": 296474,
+      "end": 296488,
+      "japanese": "<CTRL:E2:06>さんですね。\n<CTRL:E5:03>うむ",
+      "current": "맞나?   |<e503>예 ",
+      "original_raw": "e2063a2d302b4c37e601e50326b5"
+    },
+    {
+      "row": 2136,
+      "file": "7/S7028.DAT",
+      "offset": 296680,
+      "end": 296706,
+      "japanese": "<CTRL:E2:08>さんですね。\n<CTRL:E5:03>わしかい\n<CTRL:E5:03>いやじゃ\n",
+      "current": "맞나?   |<e503>예   |<e503>아니오 |",
+      "original_raw": "e2083a2d302b4c37e601e503431e201be601e5031b404a48e601"
+    }
+  ],
+  "limits": "Historical CSV records include false extractions and omit some low-address bodies. Linguistic review separate from enumeration.",
+  "raw_matna_census": [
+    {
+      "file": "7/S7021.DAT",
+      "offset": 298774
+    },
+    {
+      "file": "7/S7021.DAT",
+      "offset": 298882
+    },
+    {
+      "file": "7/S7021.DAT",
+      "offset": 298990
+    },
+    {
+      "file": "7/S7021.DAT",
+      "offset": 299266
+    },
+    {
+      "file": "7/S7021.DAT",
+      "offset": 299372
+    },
+    {
+      "file": "7/S7021.DAT",
+      "offset": 299472
+    },
+    {
+      "file": "7/S7021.DAT",
+      "offset": 299678
+    },
+    {
+      "file": "7/S7028.DAT",
+      "offset": 295776
+    },
+    {
+      "file": "7/S7028.DAT",
+      "offset": 295884
+    },
+    {
+      "file": "7/S7028.DAT",
+      "offset": 295992
+    },
+    {
+      "file": "7/S7028.DAT",
+      "offset": 296268
+    },
+    {
+      "file": "7/S7028.DAT",
+      "offset": 296374
+    },
+    {
+      "file": "7/S7028.DAT",
+      "offset": 296474
+    },
+    {
+      "file": "7/S7028.DAT",
+      "offset": 296680
+    }
+  ],
+  "minimal_polite_candidate": {
+    "text": "맞습니까?",
+    "encoded_bytes": 6,
+    "missing": [],
+    "current_prompt_bytes": 8,
+    "statically_fits_all_14": true,
+    "limit": "Does not restore omitted names; no insertion or renderer test performed."
+  }
+}

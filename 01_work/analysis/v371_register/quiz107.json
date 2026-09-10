@@ -1,0 +1,858 @@
+[
+  {
+    "file": "6/S6054.DAT",
+    "offset": 276826,
+    "end": 276871,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|修行をつみにまいられたのですか？|[선택]その通り。|[선택]とんでもない。",
+    "current": "승려: 수행하러 오셨습니까?|<e503>맞습니다.|<e503>아닙니다. "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 277032,
+    "end": 277078,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|それでは、ひやかしにまいられたのか？|[선택]その通り。|[선택]とんでもない。",
+    "current": "승려: 그럼 장난삼아|오셨습니까? |<e503>맞습니다.|<e503>아닙니다. "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 277140,
+    "end": 277182,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|それでは、次のもんだいに全てこたえられたら、いいことを教えよう。",
+    "current": "승려: 다음 문제를 다 맞히시면|좋은 걸 알려 드리겠습니다. "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 277242,
+    "end": 277270,
+    "csv_present": false,
+    "japanese": "もんだい：|今、パーテ□の仲聞は全部で何人だ？",
+    "current": "문제: 지금 일행은 모두 몇 명입니까?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 277326,
+    "end": 277348,
+    "csv_present": false,
+    "japanese": "[선택]5人|[선택]6人|[선택]7人|[선택]8人",
+    "current": " 5명| 6명| 7명| 8명"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 277436,
+    "end": 277454,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|うつ、正解だ、、、。",
+    "current": "승려: 으, 정답입니다... "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 277504,
+    "end": 277535,
+    "csv_present": false,
+    "japanese": "もんだい：|アーク、ククル、ポニの次に仲聞になつたのは？",
+    "current": "문제: 아크,쿠쿠루,포코 다음|동료는?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 277592,
+    "end": 277626,
+    "csv_present": false,
+    "japanese": "[선택]トッシュ|[선택]□ーゲン|[선택]チョン□ラ|[선택]□ー□",
+    "current": "토슈     |고겐    |촌가라    |이가    "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 277714,
+    "end": 277732,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|うつ、正解だ、、、。",
+    "current": "승려: 으, 정답입니다... "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 277782,
+    "end": 277818,
+    "csv_present": false,
+    "japanese": "もんだい：|トッシュの能力で、単体最強の攻撃力を持つのは？",
+    "current": "문제: 토슈의 단일 공격 중|가장 강한 기술은?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 277874,
+    "end": 277920,
+    "csv_present": false,
+    "japanese": "[선택]呪縛剣|[선택]旋風撃蹴|[선택]桜花□爆斬|[선택]桜花雷爆斬",
+    "current": "주박검  |선풍격축  |앵화전폭참  |앵화뇌폭참  "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 278008,
+    "end": 278026,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|うつ、正解だ、、、。",
+    "current": "승려: 으, 정답입니다... "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 278076,
+    "end": 278112,
+    "csv_present": false,
+    "japanese": "もんだい：|パ□ンシア城にいる王に仕える大臣の名前は何だつたか？",
+    "current": "문제: 파렌시아 성의|왕을 모시는 대신의 이름은?  "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 278168,
+    "end": 278202,
+    "csv_present": false,
+    "japanese": "[선택]カ□□ル|[선택]アンデル|[선택]□ー□ル|[선택]□□ーテル",
+    "current": "카이젤   |안델   |보젤   |그레텔   "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 278290,
+    "end": 278308,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|うつ、正解だ、、、。",
+    "current": "승려: 으, 정답입니다... "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 278358,
+    "end": 278392,
+    "csv_present": false,
+    "japanese": "もんだい：|トヨー□の森で出会つた、きれいな精霊の名前は？",
+    "current": "문제: 토요케 숲의 아름다운|정령의 이름은?   "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 278448,
+    "end": 278484,
+    "csv_present": false,
+    "japanese": "[선택]かがやきの精霊|[선택]つきの精霊|[선택]ベみの精霊|[선택]にじの精霊",
+    "current": "빛나는 정령 |달의 정령 |은혜의 정령|무지개의 정령"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 278572,
+    "end": 278590,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|うつ、正解だ、、、。",
+    "current": "승려: 으, 정답입니다... "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 278640,
+    "end": 278673,
+    "csv_present": false,
+    "japanese": "もんだい：|スメリア王から授かつた、|飛行□の名前は？",
+    "current": "문제: 스메리아 왕이 준|비행선의 이름은? "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 278730,
+    "end": 278771,
+    "csv_present": false,
+    "japanese": "[선택]シルバートア|[선택]シルバー□ア|[선택]シルバーモア|[선택]シルバー□ーク",
+    "current": "실버도아    |실버노아    |실버모아   |실버호크   "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 278860,
+    "end": 278878,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|うつ、正解だ、、、。",
+    "current": "승려: 으, 정답입니다... "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 278928,
+    "end": 278955,
+    "csv_present": false,
+    "japanese": "もんだい：|次の内、ポニの楽器にないものは？",
+    "current": "문제: 포코의 악기가 아닌 것은?   "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 279012,
+    "end": 279041,
+    "csv_present": false,
+    "japanese": "[선택]らつっ|[선택]こだいこ|[선택]オカリナ|[선택]ピア□",
+    "current": "나팔  |작은북 |오카리나 |피아노 "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 279130,
+    "end": 279148,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|うつ、正解だ、、、。",
+    "current": "승려: 으, 정답입니다... "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 279198,
+    "end": 279236,
+    "csv_present": false,
+    "japanese": "もんだい：|異□聞からの攻撃で敵にダメージを□えるアークの能力は？",
+    "current": "문제: 다른 공간에서|적을 공격하는 아크의 기술은?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 279292,
+    "end": 279341,
+    "csv_present": false,
+    "japanese": "[선택]□□ルフラッシュ|[선택]ゲ□ルフラッシュ|[선택]□□ルフラッシュ|[선택]オ□ルフラッシュ",
+    "current": "보일 플래시   |게일 플래시   |가일 플래시   |오일 플래시  "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 279430,
+    "end": 279448,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|うつ、正解だ、、、。",
+    "current": "승려: 으, 정답입니다... "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 279498,
+    "end": 279535,
+    "csv_present": false,
+    "japanese": "もんだい：|そこに行けば、運命づけられた仲聞と出会うという場所は？",
+    "current": "문제: 운명의 동료와 만난다는|장소는 어디입니까? "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 279592,
+    "end": 279638,
+    "csv_present": false,
+    "japanese": "[선택]トヨー□の森|[선택]スメリア□港|[선택]出会いのはし|[선택]パ□ンシア城門",
+    "current": "토요케 숲  |스메리아 공항 |만남의 다리 |파렌시아 성문 "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 279732,
+    "end": 279750,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|うつ、正解だ、、、。",
+    "current": "승려: 으, 정답입니다... "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 279800,
+    "end": 279846,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|私のもんだいに全て正解したのはおまえが初めてだ。ほうびにこれをやろう。",
+    "current": "승려: 제 문제를 다 맞힌 분은|처음입니다. 상으로 이걸|드립니다."
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 279926,
+    "end": 279944,
+    "csv_present": false,
+    "japanese": "□ラークの紋章へをもらいました。",
+    "current": "「라크의문장」을얻었습니다."
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 279998,
+    "end": 280026,
+    "csv_present": false,
+    "japanese": "と思つたが、もう持つているではないか？ひやかすでない。",
+    "current": "이미 가지고 계시군요?|장난 그만두십시오."
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 280076,
+    "end": 280124,
+    "csv_present": false,
+    "japanese": "この世界には、精霊の石ともう一つ、全て集めることによつて効果が現れる石があると聞く。",
+    "current": "정령의 돌 말고도 모두 모으면|효과가 나타나는 돌이|있다고 합니다.    "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 280174,
+    "end": 280212,
+    "csv_present": false,
+    "japanese": "その石は、冒険者たちを危険から救う、|大いなる力となるであろう。",
+    "current": "그 돌은 모험가들을 위험에서|구해 줄 큰 힘이 될 것입니다."
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 280266,
+    "end": 280323,
+    "csv_present": false,
+    "japanese": "もんだい：|スメリア□ジョンで指名手配のカュースが流れているが、しゃ□がこう□されていないのは？",
+    "current": "문제: 스메리아 비전의 수배 소식에|사진이 공개되지 않은 사람은?         "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 280380,
+    "end": 280406,
+    "csv_present": false,
+    "japanese": "[선택]アーク|[선택]トッシュ|[선택]ポニ|[선택]ククル",
+    "current": "아크  |토슈 |포코 |쿠쿠루 "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 280478,
+    "end": 280490,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "승려: 정답입니다!"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 280540,
+    "end": 280567,
+    "csv_present": false,
+    "japanese": "もんだい：|ミルマーナのヤ□ン将軍の□ットは？",
+    "current": "문제:미르마나 야군 장군의|반려동물은?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 280624,
+    "end": 280648,
+    "csv_present": false,
+    "japanese": "[선택]サル|[선택]□ヌ|[선택]□ジ|[선택]トラ",
+    "current": "잔나비 |개 |산계 |호랑이"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 280720,
+    "end": 280732,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "승려: 정답입니다!"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 280782,
+    "end": 280801,
+    "csv_present": false,
+    "japanese": "もんだい：|アークのフル□ームは？",
+    "current": "문제: 아크의 전체 이름은?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 280858,
+    "end": 280913,
+    "csv_present": false,
+    "japanese": "[선택]アーク・□・ラット|[선택]アーク・□・フラット|[선택]アーク・エダ・リニルヌ|[선택]アーク・ポルタ",
+    "current": "아크 더 래드   |아크 더 블러드   |아크 에다 리코르누   |아크 폴타  "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 280986,
+    "end": 280998,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "승려: 정답입니다!"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281048,
+    "end": 281080,
+    "csv_present": false,
+    "japanese": "もんだい：|□ーゲンを□らえているモンスターの名前は？",
+    "current": "문제: 고겐을 잡고 있는|몬스터의 이름은?   "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281136,
+    "end": 281174,
+    "csv_present": false,
+    "japanese": "[선택]ラリュウ□|[선택]□リュウ□|[선택]やす□き|[선택]ヤシロア□",
+    "current": "라류키   |가류키   |야스유키   |야시로아키  "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281246,
+    "end": 281258,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "승려: 정답입니다!"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281308,
+    "end": 281327,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|へモジーの国はどこか？",
+    "current": "승려: 헤모지의 나라는?    "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281384,
+    "end": 281417,
+    "csv_present": false,
+    "japanese": "[선택]クラーフ島|[선택]ラマダ山|[선택]ラクダ山|[선택]ラマダ寺",
+    "current": "클라프 섬 |라마다 산 |라쿠다 산|라마다사"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281490,
+    "end": 281502,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "승려: 정답입니다!"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281552,
+    "end": 281570,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|アークの父の名前は？",
+    "current": "승려: 아크의 아버지 이름은?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281626,
+    "end": 281663,
+    "csv_present": false,
+    "japanese": "[선택]ヨッシャ|[선택]ヨシュア|[선택]シュワッチ|[선택]シュワルツ",
+    "current": "요샤   |요슈아   |슈와치   |슈바르츠   "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281736,
+    "end": 281748,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "승려: 정답입니다!"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281798,
+    "end": 281817,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|アークの母の名前は？",
+    "current": "승려: 아크의 어머니 이름은?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281874,
+    "end": 281902,
+    "csv_present": false,
+    "japanese": "[선택]ポルタ|[선택]□□タ|[선택]ママス|[선택]メ□ミ",
+    "current": "폴타 |브레타 |마마스 |메구미 "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 281974,
+    "end": 281986,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "승려: 정답입니다!"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282036,
+    "end": 282065,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|アークたちが3番目に出会う精霊の名前は？",
+    "current": "승려: 아크 일행이 세 번째로|만나는 정령은? "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282122,
+    "end": 282156,
+    "csv_present": false,
+    "japanese": "[선택]山の精霊|[선택]ベみの精霊|[선택]かたなの精霊|[선택]光の精霊",
+    "current": "산의 정령 |은혜의 정령 |검의 정령 |빛의 정령"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282228,
+    "end": 282240,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "승려: 정답입니다!"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282290,
+    "end": 282311,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|ポニが下にはいているものは？",
+    "current": "승려: 포코가 입은 하의는?   "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282368,
+    "end": 282401,
+    "csv_present": false,
+    "japanese": "[선택]タ□ツ|[선택]スパッツ|[선택]ジャージ|[선택]はいていない",
+    "current": "타이츠 |스패츠 |운동복 |아무것도 안 입음"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282474,
+    "end": 282486,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "승려: 정답입니다!"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282536,
+    "end": 282569,
+    "csv_present": false,
+    "japanese": "ラマダ僧：|シルバー□アの乗員で、バッチの相棒といえば？",
+    "current": "승려: 실버노아 승무원 중|바치의 동료는? "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282626,
+    "end": 282661,
+    "csv_present": true,
+    "japanese": "[선택]チョピン|[선택]チョ□ン|[선택]チョース□|[선택]チョン□ラ",
+    "current": "<e503>초핀  |<e503>초비  |<e503>초스케  |<e503>촌가라   "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282734,
+    "end": 282746,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "라마다승려:  정답! "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282796,
+    "end": 282813,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|スパ□はどこにいた？",
+    "current": "라마다 승려:  스파이는 어디에 있었지?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282870,
+    "end": 282904,
+    "csv_present": true,
+    "japanese": "[선택]ミルマーナ|[선택]スメリア|[선택]アララトス|[선택]カーデル",
+    "current": "<e503>미르마나 |<e503>스메리아|<e503>아라라토스|<e503>카델 "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 282976,
+    "end": 282988,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "라마다승려:  정답! "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283038,
+    "end": 283067,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|セーフデータのシン□ルになつているのは？",
+    "current": "라마다 승려:  세이브 데이터의 문양은 무엇인가?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283124,
+    "end": 283156,
+    "csv_present": true,
+    "japanese": "[선택]アーク|[선택]ククル|[선택]タ□トルロ□|[선택]へモジー",
+    "current": "<e503>아크 |<e503>쿠쿠루|<e503>타이틀 로고|<e503>헤모지 "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283228,
+    "end": 283240,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "라마다승려:  정답! "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283290,
+    "end": 283322,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|スメリアのダウンタウンにいるよつっらいの名前は？",
+    "current": "라마다 승려:  스메리아 다운타운에 있는 술 취한 사람의 이름은?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283378,
+    "end": 283409,
+    "csv_present": true,
+    "japanese": "[선택]オカモト|[선택]ヤマモト|[선택]ヤマオ□|[선택]ヤマシタ",
+    "current": "<e503>오카모토|<e503>야마모토|<e503>야마오키|<e503>야마시타"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283482,
+    "end": 283494,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "라마다승려:  정답! "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283544,
+    "end": 283566,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|アーク□ラットのぞくへんは？",
+    "current": "라마다승려:  아크더래드 속편은? "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283622,
+    "end": 283650,
+    "csv_present": true,
+    "japanese": "[선택]でる|[선택]でるかも|[선택]でるのでは|[선택]なやむ",
+    "current": "<e503>나온다|<e503>나올지도|<e503>나오겠지 |<e503>고민"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283722,
+    "end": 283740,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|正解！！本当だな？",
+    "current": "라마다승려:  정답!정말이냐? "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283790,
+    "end": 283812,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|アーク□ラットのスタッフは？",
+    "current": "라마다 승려:  아크더래드 제작진은?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283868,
+    "end": 283897,
+    "csv_present": true,
+    "japanese": "[선택]150人|[선택]200人|[선택]250人|[선택]なやむ",
+    "current": "<e503>150 |<e503>200 |<e503>250 |<e503>고민"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 283970,
+    "end": 283982,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "라마다승려:  정답! "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284032,
+    "end": 284071,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|首都の軍オフ□スには、実は地下50階のダンジョンが・・",
+    "current": "라마다 승려:  수도의 군 본부에는 사실 지하 50층 던전이... "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284128,
+    "end": 284159,
+    "csv_present": true,
+    "japanese": "[선택]ある|[선택]ない|[선택]作りたかつた|[선택]行きたかつた",
+    "current": "<e503>있다|<e503>없다|<e503>만들려 했다|<e503>가려 했다"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284232,
+    "end": 284244,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "라마다승려:  정답! "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284294,
+    "end": 284322,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|遺跡ダンジョンの一番下にいるものは？",
+    "current": "라마다 승려:  유적 던전의 최하층에 있는 것은?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284378,
+    "end": 284402,
+    "csv_present": true,
+    "japanese": "[선택]あれ|[선택]それ|[선택]どれ|[선택]ないしょ",
+    "current": "<e503>저거|<e503>그거|<e503>어느 거|<e503>비밀"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284474,
+    "end": 284486,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "라마다승려:  정답! "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284536,
+    "end": 284572,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|ラマダ寺でとびらが□いたときに中に見える人の数は？",
+    "current": "라마다 승려:  라마다사의 문이 열렸을 때 안에 보이는 사람은 몇 명인가?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284628,
+    "end": 284654,
+    "csv_present": true,
+    "japanese": "[선택]20人|[선택]21人|[선택]22人|[선택]23人",
+    "current": "<e503>20 |<e503>21 |<e503>22 |<e503>23 "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284726,
+    "end": 284738,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "라마다승려:  정답! "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284788,
+    "end": 284821,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|ストーンサークルでチョン□ラが見つけたア□テムは？",
+    "current": "라마다 승려:  스톤서클에서 촌가라가 찾은 아이템은?  "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284878,
+    "end": 284919,
+    "csv_present": true,
+    "japanese": "[선택]すごいア□テム|[선택]こわれたア□テム|[선택]つぶれたア□テム|[선택]ねばねば",
+    "current": "<e503>대단함  |<e503>고장      |<e503>찌그러진  |<e503>달라붙음"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 284992,
+    "end": 285004,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "라마다승려:  정답! "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 285054,
+    "end": 285074,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|ちょこのかみのけのいろは？",
+    "current": "라마다 승려:  초코의 머리빛은 무엇인가?"
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 285130,
+    "end": 285168,
+    "csv_present": true,
+    "japanese": "[선택]きいろ|[선택]わけあつてちゃいろ|[선택]本当はあか|[선택]それはだれ？",
+    "current": "<e503>노랑|<e503>사정상 갈빛 |<e503>실은 빨강|<e503>누구?  "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 285240,
+    "end": 285252,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|正解！！",
+    "current": "라마다승려:  정답! "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 285312,
+    "end": 285325,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|大正解！！",
+    "current": "라마다승려:  정답!! "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 285384,
+    "end": 285430,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|私のもんだいに全て正解したのはおまえが初めてだ。ほうびにこれをやろう。",
+    "current": "라마다승려:  문제를 모두 맞힌 건 네가 처음이다. 상으로 이걸 주마. "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 285484,
+    "end": 285529,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|私のもんだいに全て正解したのはおまえが2人めだ。ほうびにこれをやろう。",
+    "current": "라마다 승려:  내 문제를 모두 맞힌 사람은 네가 두 번째다. 상으로 이걸 주마."
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 285610,
+    "end": 285629,
+    "csv_present": true,
+    "japanese": "□古代の□びわへをもらいました。",
+    "current": "고대의 반지를 받았습니다.  "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 285684,
+    "end": 285712,
+    "csv_present": true,
+    "japanese": "と思つたが、もう持つているではないか？ひやかすでない。",
+    "current": "이미 가지고 있지 않느냐? 놀리지 마라.   "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 285762,
+    "end": 285811,
+    "csv_present": true,
+    "japanese": "この世界には、精霊の石ともう一つ、全て集めることによつて効果があらわれる石があると聞く。",
+    "current": "세계에는 정령의 돌 말고 모두 모으면 효과가 나타나는 돌이 또 있다고 들었다."
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 285862,
+    "end": 285899,
+    "csv_present": true,
+    "japanese": "その石は、□うけんしゃたちを危険からすくう、大いなる力となるであろう。",
+    "current": "그 돌은 모험가들을 위험에서 구해 줄 위대한 힘이 될것이다."
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 285954,
+    "end": 285980,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|常に目的を持つて行動するがよい。",
+    "current": "라마다 승려: 항상 목적을|가지고 행동하십시오."
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 286034,
+    "end": 286062,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|それはまちがいだが、がんばりはみとめよう。",
+    "current": "라마다 승려:  틀렸지만, 노력은 인정하마.  "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 286112,
+    "end": 286131,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|よつて、これをあげよう。",
+    "current": "라마다 승려:  그러니 이것을 주마. "
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 286186,
+    "end": 286197,
+    "csv_present": true,
+    "japanese": "□石へをもらいました。",
+    "current": "돌을 받았습니다."
+  },
+  {
+    "file": "6/S6054.DAT",
+    "offset": 286254,
+    "end": 286287,
+    "csv_present": true,
+    "japanese": "ラマダ僧：|修行が足りないようだ。|出直してくるがよい。",
+    "current": "라마다 승려:  수행이 부족한 것 같습니다.|다시 찾아오십시오."
+  }
+]
