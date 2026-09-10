@@ -1,3 +1,9 @@
+2026-09-10 | V374 카드 라벨/선택지 | CPU 및 디스크 PASS
+- SC021 캡처180px 전26패킷/끝 재현, 후 선택지만16px 상승/끝 보존. 커서 두 위치108,50 및108,66 확인. 카드 1/2 각4글자·숫자 다른 글리프 출력. 506LBA/164readback/507extent/29섹터58EDC·ECC PASS. GPU·카드 I/O/실제 진행 PENDING. 초기228px 가정/CPU 종료PC 검사는 전용 실제조건/명시hook으로 수정. 상세 v374_card_choice/README.md.
+
+2026-09-10 | V371 카드 선택 / V373 추가 선택문 | 읽기 전용 조사
+- 원본/V371 카드 라벨 호출 CPU 재현: 같은 원문 2항목을 Y48/64로 출력 함수에 전달. 함수 인자만 검증했고 카드 감지·GPU·저장/불러오기는 미재현. 초기 unicorn import 실패는 기존 도구 경로로 해결. 추가 상태는 SC021 전체 문맥으로 식별, 문자 Y32/64/80 및 baseRow=1 확인. 게임 미수정. 상세 v371_card_labels/README.md.
+
 2026-09-09 | V373_TWO_REPORTS_TEST | 두 캡처재현/국소수정 PASS
 - 수정전문자XY전체캡처일치. #2143 5→4행/원래끝복귀,#1889 맞습니까/선택행문구·XY·끝포인터보존. 중복본문RAM검색은주변이벤트문맥으로고유성확인, 선택객체끝비글리프패킷은별도확인. ZIP반복exact/2DAT6B/506LBA164readback507extent/29섹터58EDC·ECC PASS.
 - V372미상속,bible폐기정책/changelog/codex기록. GPU·실제선택/상품수여이후진행PENDING. 상세v373_two_reports/README.md.
