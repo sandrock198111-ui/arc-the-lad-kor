@@ -1,0 +1,648 @@
+{
+  "cases": [
+    {
+      "row": 631,
+      "original": {
+        "events": [
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 11
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 54
+          }
+        ],
+        "frames": 94,
+        "end": "0x80116af8"
+      },
+      "before": {
+        "events": [],
+        "frames": 27,
+        "end": "0x80116af8"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 15
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 57
+          }
+        ],
+        "frames": 97,
+        "end": "0x80116af8"
+      },
+      "lines": {
+        "162": "스메리아 왕: 대신에게... 안델",
+        "178": "에게 당했다..."
+      }
+    },
+    {
+      "row": 632,
+      "original": {
+        "events": [
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 9
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 66
+          }
+        ],
+        "frames": 126,
+        "end": "0x80116b50"
+      },
+      "before": {
+        "events": [],
+        "frames": 32,
+        "end": "0x80116b50"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 11
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 68
+          }
+        ],
+        "frames": 128,
+        "end": "0x80116b50"
+      },
+      "lines": {
+        "162": "스메리아 왕: 그놈은 로마리아가 ",
+        "178": "보내온 자였다..."
+      }
+    },
+    {
+      "row": 633,
+      "original": {
+        "events": [
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 10
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 66
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 121
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 183
+          }
+        ],
+        "frames": 233,
+        "end": "0x80116bb3"
+      },
+      "before": {
+        "events": [],
+        "frames": 39,
+        "end": "0x80116bb3"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 13
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 68
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 123
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 189
+          }
+        ],
+        "frames": 239,
+        "end": "0x80116bb3"
+      },
+      "lines": {
+        "162": "스메리아 왕: 이 나라에 몬스터를",
+        "178": " 불러들여 나라를 혼란에 빠뜨린 것",
+        "194": "도,"
+      }
+    },
+    {
+      "row": 634,
+      "original": {
+        "events": [
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 11
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 76
+          }
+        ],
+        "frames": 126,
+        "end": "0x80116c0d"
+      },
+      "before": {
+        "events": [],
+        "frames": 33,
+        "end": "0x80116c0d"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 13
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 79
+          }
+        ],
+        "frames": 129,
+        "end": "0x80116c0d"
+      },
+      "lines": {
+        "162": "스메리아 왕: 로마리아의 세계 지",
+        "178": "배를 위해서였다..."
+      }
+    },
+    {
+      "row": 636,
+      "original": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 10
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 88
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 135
+          }
+        ],
+        "frames": 203,
+        "end": "0x80116c94"
+      },
+      "before": {
+        "events": [],
+        "frames": 45,
+        "end": "0x80116c94"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 12
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 84
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 131
+          }
+        ],
+        "frames": 204,
+        "end": "0x80116c94"
+      },
+      "lines": {
+        "162": "스메리아 왕: 그놈들은 성궤를 노",
+        "178": "리고 있다. 성궤의 힘을 넘겨주어",
+        "194": "서는 안 된다."
+      }
+    },
+    {
+      "row": 638,
+      "original": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 10
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 74
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 126
+          }
+        ],
+        "frames": 185,
+        "end": "0x80116d3c"
+      },
+      "before": {
+        "events": [],
+        "frames": 40,
+        "end": "0x80116d3c"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 11
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 75
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 129
+          }
+        ],
+        "frames": 186,
+        "end": "0x80116d3c"
+      },
+      "lines": {
+        "162": "스메리아 왕: 아크, 너에게 마지",
+        "178": "막으로 해 두어야 할 말이 있다."
+      }
+    },
+    {
+      "row": 639,
+      "original": {
+        "events": [
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 11
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 66
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 129
+          }
+        ],
+        "frames": 189,
+        "end": "0x80116d99"
+      },
+      "before": {
+        "events": [],
+        "frames": 37,
+        "end": "0x80116d99"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 13
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 68
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 132
+          }
+        ],
+        "frames": 192,
+        "end": "0x80116d99"
+      },
+      "lines": {
+        "162": "스메리아 왕: 네 아버지 요슈아를",
+        "178": " 미르마나로 보내 둔 것은"
+      }
+    },
+    {
+      "row": 642,
+      "original": {
+        "events": [
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 9
+          },
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 63
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 96
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 156
+          }
+        ],
+        "frames": 224,
+        "end": "0x80116ea0"
+      },
+      "before": {
+        "events": [],
+        "frames": 44,
+        "end": "0x80116ea0"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 10
+          },
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 64
+          },
+          {
+            "parameter": 51,
+            "ticks": 50,
+            "start_frame": 98
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 162
+          }
+        ],
+        "frames": 231,
+        "end": "0x80116ea0"
+      },
+      "lines": {
+        "162": "스메리아 왕: 인망 두터운 형님만",
+        "178": " 없으면 하는 생각에... 그런 짓",
+        "194": "을..."
+      }
+    },
+    {
+      "row": 643,
+      "original": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 10
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 80
+          },
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 142
+          }
+        ],
+        "frames": 182,
+        "end": "0x80116f00"
+      },
+      "before": {
+        "events": [],
+        "frames": 37,
+        "end": "0x80116f00"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 10
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 86
+          },
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 149
+          }
+        ],
+        "frames": 187,
+        "end": "0x80116f00"
+      },
+      "lines": {
+        "162": "스메리아 왕: 허나 세상을 근심하",
+        "178": "던 형님이야말로 왕에 어울렸다..",
+        "194": "."
+      }
+    },
+    {
+      "row": 650,
+      "original": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 20
+          },
+          {
+            "parameter": 121,
+            "ticks": 120,
+            "start_frame": 89
+          }
+        ],
+        "frames": 209,
+        "end": "0x801172cd"
+      },
+      "before": {
+        "events": [],
+        "frames": 34,
+        "end": "0x801172cd"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 23
+          },
+          {
+            "parameter": 121,
+            "ticks": 120,
+            "start_frame": 93
+          }
+        ],
+        "frames": 213,
+        "end": "0x801172cd"
+      },
+      "lines": {
+        "162": "초핀: 옥상에 비행선이 기다리고 ",
+        "178": "있습니다. 자, 어서 위로!"
+      }
+    }
+  ],
+  "scene_census": [
+    {
+      "row": 631,
+      "pauses": [
+        "e41f",
+        "e429"
+      ]
+    },
+    {
+      "row": 632,
+      "pauses": [
+        "e429",
+        "e43d"
+      ]
+    },
+    {
+      "row": 633,
+      "pauses": [
+        "e433",
+        "e433",
+        "e433",
+        "e433"
+      ]
+    },
+    {
+      "row": 634,
+      "pauses": [
+        "e433",
+        "e433"
+      ]
+    },
+    {
+      "row": 636,
+      "pauses": [
+        "e43d",
+        "e429",
+        "e43d"
+      ]
+    },
+    {
+      "row": 638,
+      "pauses": [
+        "e43d",
+        "e429",
+        "e433"
+      ]
+    },
+    {
+      "row": 639,
+      "pauses": [
+        "e433",
+        "e433",
+        "e43d"
+      ]
+    },
+    {
+      "row": 640,
+      "pauses": [
+        "e41f",
+        "e41f",
+        "e41f"
+      ]
+    },
+    {
+      "row": 642,
+      "pauses": [
+        "e433",
+        "e41f",
+        "e433",
+        "e43d"
+      ]
+    },
+    {
+      "row": 643,
+      "pauses": [
+        "e43d",
+        "e43d",
+        "e41f"
+      ]
+    },
+    {
+      "row": 644,
+      "pauses": [
+        "e43d",
+        "e429",
+        "e43d",
+        "e43d",
+        "e429",
+        "e41f",
+        "e429",
+        "e429",
+        "e429",
+        "e429",
+        "e429"
+      ]
+    },
+    {
+      "row": 648,
+      "pauses": [
+        "e479",
+        "e4f1"
+      ]
+    },
+    {
+      "row": 649,
+      "pauses": [
+        "e43d",
+        "e4f1"
+      ]
+    },
+    {
+      "row": 650,
+      "pauses": [
+        "e43d",
+        "e479"
+      ]
+    }
+  ],
+  "runtime_verified": false,
+  "scope": "Ten synthetic scene dialogue loads into captured native renderer; all scene E4 sequences checked; actual frame-step counter comparisons, GPU/input pending."
+}

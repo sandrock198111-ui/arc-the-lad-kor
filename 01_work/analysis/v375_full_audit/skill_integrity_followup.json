@@ -1,0 +1,3195 @@
+{
+  "spans": [
+    {
+      "name": "actor_records",
+      "start": "0x83a34",
+      "end_exclusive": "0x85adc",
+      "count": 110,
+      "bytes": 8360,
+      "different_bytes": 61,
+      "diff_offsets": [
+        "0x85490",
+        "0x85491",
+        "0x85492",
+        "0x85493",
+        "0x85494",
+        "0x85495",
+        "0x85498",
+        "0x85499",
+        "0x8549a",
+        "0x8549c",
+        "0x8549d",
+        "0x8549e",
+        "0x854a0",
+        "0x854a1",
+        "0x854a2",
+        "0x854a3",
+        "0x854a8",
+        "0x854a9",
+        "0x854aa",
+        "0x854ab",
+        "0x854ac",
+        "0x854ad",
+        "0x854b0",
+        "0x854b1",
+        "0x854b2",
+        "0x854b3",
+        "0x854b4",
+        "0x854b8",
+        "0x854b9",
+        "0x854bc",
+        "0x854bd",
+        "0x854be",
+        "0x854bf",
+        "0x854c8",
+        "0x854c9",
+        "0x854ca",
+        "0x854cb",
+        "0x854cc",
+        "0x854cd",
+        "0x854ce",
+        "0x854cf",
+        "0x854d0",
+        "0x854d1",
+        "0x854d2",
+        "0x854d4",
+        "0x854f0",
+        "0x854f1",
+        "0x854f2",
+        "0x854f8",
+        "0x854f9",
+        "0x854fa",
+        "0x854fb",
+        "0x854fc",
+        "0x854fd",
+        "0x854fe",
+        "0x854ff",
+        "0x85500",
+        "0x85501",
+        "0x85502",
+        "0x85503",
+        "0x85504"
+      ]
+    },
+    {
+      "name": "action_records",
+      "start": "0x85adc",
+      "end_exclusive": "0x872f4",
+      "count": 257,
+      "bytes": 6168,
+      "different_bytes": 0,
+      "diff_offsets": []
+    },
+    {
+      "name": "selector_pointers",
+      "start": "0x83664",
+      "end_exclusive": "0x8381c",
+      "count": 110,
+      "bytes": 440,
+      "different_bytes": 0,
+      "diff_offsets": []
+    },
+    {
+      "name": "selector_storage",
+      "start": "0x83404",
+      "end_exclusive": "0x83664",
+      "count": null,
+      "bytes": 608,
+      "different_bytes": 0,
+      "diff_offsets": []
+    }
+  ],
+  "changed_actors": [
+    {
+      "actor_id": 88,
+      "file_offset": "0x85454",
+      "different_bytes": 12,
+      "relative_offsets": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        68,
+        69,
+        70,
+        72,
+        73,
+        74
+      ],
+      "descriptor_pointer": "0x801a7da0"
+    },
+    {
+      "actor_id": 89,
+      "file_offset": "0x854a0",
+      "different_bytes": 33,
+      "relative_offsets": [
+        0,
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        19,
+        20,
+        24,
+        25,
+        28,
+        29,
+        30,
+        31,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52
+      ],
+      "descriptor_pointer": "0x0"
+    },
+    {
+      "actor_id": 90,
+      "file_offset": "0x854ec",
+      "different_bytes": 16,
+      "relative_offsets": [
+        4,
+        5,
+        6,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "descriptor_pointer": "0x0"
+    }
+  ],
+  "base_rank_domain": [
+    {
+      "actor_record_id": 0,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 1,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 2,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 3,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 4,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 5,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 6,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 7,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 8,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 9,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 10,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 11,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 12,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        91,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        2
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 13,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 14,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        206,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 15,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        207,
+        208,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 16,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        147,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 17,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        89,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 18,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        90,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 19,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 20,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 21,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        209,
+        255,
+        255,
+        255,
+        255,
+        158,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        5
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 22,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        210,
+        211,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 23,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        216,
+        217,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 24,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 25,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        218,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 26,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 27,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 28,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 29,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 30,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        91,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        2
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 31,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 32,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        206,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 33,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        206,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 34,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        207,
+        208,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 35,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        207,
+        208,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 36,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        153,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 37,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        163,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        3
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 38,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        165,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        5
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 39,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        162,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        2
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 40,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        98,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        2
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 41,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        100,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        4
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 42,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        107,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        4
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 43,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        109,
+        255
+      ],
+      "non_ff_slots": [
+        6
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 44,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 45,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 46,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        209,
+        165,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 47,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 48,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        89,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 49,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        96,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 50,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        103,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 51,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 52,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        218,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 53,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 54,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        216,
+        217,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 55,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        210,
+        211,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 56,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        211,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 57,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 58,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 59,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 60,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 61,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        219,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 62,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        212,
+        213,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 63,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        220,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 64,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 65,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        219,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 66,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        214,
+        215,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 67,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        220,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 68,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        220,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 69,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 70,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        221,
+        222,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 71,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        223,
+        224,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 72,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 73,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 74,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 75,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        223,
+        224,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 76,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 77,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 78,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 79,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 80,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        193,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 81,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 82,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        194,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 83,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        195,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 84,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        196,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 85,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        198,
+        207,
+        211,
+        209,
+        218,
+        213,
+        219,
+        220
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 86,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 87,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        197,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 88,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 89,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 90,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 91,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 92,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 93,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 94,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 95,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 96,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 97,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 98,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 99,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 100,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        84,
+        85,
+        86,
+        87,
+        88,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 101,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        103,
+        104,
+        105,
+        106,
+        107,
+        255,
+        109,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 102,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        118,
+        119,
+        120,
+        121,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 103,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 104,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        160,
+        161,
+        162,
+        163,
+        255,
+        165,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 105,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        181,
+        182,
+        183,
+        184,
+        255,
+        255
+      ],
+      "non_ff_slots": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 106,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 107,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 108,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    },
+    {
+      "actor_record_id": 109,
+      "initial_rank": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_base_selectors": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "non_ff_slots": [],
+      "warning": "Main0..7 unused slots require learned-slot/name boundaries; non-FF alone is not runtime availability"
+    }
+  ],
+  "flame": {
+    "original": {
+      "copied_status": 0,
+      "refreshed_status": 0,
+      "dispatch": {
+        "address": "0x80121a6c",
+        "a1": 2149120458
+      }
+    },
+    "v375": {
+      "copied_status": 138,
+      "refreshed_status": 138,
+      "dispatch": {
+        "address": "0x8012196c",
+        "a1": 30
+      }
+    }
+  },
+  "lock_on": {
+    "initial": [
+      3,
+      32
+    ],
+    "final": [
+      32771,
+      32800
+    ],
+    "scope": "Real original marking loop only, two synthetic target-list entries, no helper stubs"
+  },
+  "scope": "Static all allocated records; bounded CPU copy-refresh-dispatch and lock-marking tests. Full gameplay not emulated."
+}

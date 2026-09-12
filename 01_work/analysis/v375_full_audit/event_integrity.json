@@ -1,0 +1,1570 @@
+{
+  "source_rows": 2878,
+  "changed_rows": 2840,
+  "confirmed_opcode_changes": 24,
+  "files": 9,
+  "also_changed_preceding_operand": 6,
+  "zip_sha256": "AD9ED2B9E898F05C2EC5C78ABBA4253CE052B7B4836DEE31D84108AD4256CFBB",
+  "fixture_current_vm_bytes_equal": true,
+  "original_current_vm_deltas": [
+    "0x8015c0f8",
+    "0x8015c118",
+    "0x8015c170",
+    "0x8015c188"
+  ],
+  "vm_delta_meaning": "Four UI box Y coordinates only; opcode handlers/readers unchanged.",
+  "water_from_preceding_commands": {
+    "original": {
+      "index": 151,
+      "dispatch_continue": 0,
+      "status": 0,
+      "return_value": 1,
+      "opcodes": [
+        11,
+        11,
+        20,
+        33
+      ]
+    },
+    "current": {
+      "index": 154,
+      "dispatch_continue": 0,
+      "status": 0,
+      "return_value": 0,
+      "opcodes": [
+        11,
+        11,
+        39,
+        0,
+        652
+      ]
+    },
+    "memory_only_restored": {
+      "index": 151,
+      "dispatch_continue": 0,
+      "status": 0,
+      "return_value": 1,
+      "opcodes": [
+        11,
+        11,
+        20,
+        33
+      ]
+    }
+  },
+  "proofs": [
+    {
+      "file": "22/S205C.DAT",
+      "row": 646,
+      "offset": "0x48024",
+      "source_offset": "0x48022",
+      "original_opcode": 33,
+      "current_opcode": 29,
+      "prefixes": [
+        {
+          "start": "0x4801e",
+          "opcode": 7,
+          "original": {
+            "index": 18,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              7
+            ]
+          },
+          "current": {
+            "index": 18,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              7
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "91 06 21",
+      "current_source_hex": "61 a1 1d",
+      "preceding_operand_changed": true,
+      "original_file_sha256": "CF3EA77CAFE03A8A8F3A37020C99066656EE615D7ACEA77248383AA9E4A583D6",
+      "current_file_sha256": "5645EEA827E92447103C3CF2232213430BBCF7CDA4F0DF2B400CE84B75C9730E",
+      "original_single_dispatch": {
+        "index": 22,
+        "dispatch_continue": 0,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          33
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 19,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 2148904632,
+        "opcodes": [
+          29
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 22,
+        "dispatch_continue": 0,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          33
+        ]
+      }
+    },
+    {
+      "file": "22/S205C.DAT",
+      "row": 647,
+      "offset": "0x48032",
+      "source_offset": "0x48030",
+      "original_opcode": 33,
+      "current_opcode": 29,
+      "prefixes": [
+        {
+          "start": "0x4802c",
+          "opcode": 7,
+          "original": {
+            "index": 25,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              7
+            ]
+          },
+          "current": {
+            "index": 25,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              7
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "a0 06 21",
+      "current_source_hex": "58 a1 1d",
+      "preceding_operand_changed": true,
+      "original_file_sha256": "CF3EA77CAFE03A8A8F3A37020C99066656EE615D7ACEA77248383AA9E4A583D6",
+      "current_file_sha256": "5645EEA827E92447103C3CF2232213430BBCF7CDA4F0DF2B400CE84B75C9730E",
+      "original_single_dispatch": {
+        "index": 29,
+        "dispatch_continue": 0,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          33
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 26,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 2148904632,
+        "opcodes": [
+          29
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 29,
+        "dispatch_continue": 0,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          33
+        ]
+      }
+    },
+    {
+      "file": "8/S8021.DAT",
+      "row": 2218,
+      "offset": "0x47a3e",
+      "source_offset": "0x47a3c",
+      "original_opcode": 33,
+      "current_opcode": 29,
+      "prefixes": [
+        {
+          "start": "0x47a38",
+          "opcode": 7,
+          "original": {
+            "index": 287,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              7
+            ]
+          },
+          "current": {
+            "index": 287,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              7
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "f6 05 21",
+      "current_source_hex": "f6 05 1d",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "B35AB9A0CDBCC6C55C11D7BE014B9F3D5E2A06AE8F0187684DFB608C75D2B928",
+      "current_file_sha256": "49EEA319252305F2AA26FB25F08A475DFF49401317E411A14B536B008BF7BBDA",
+      "original_single_dispatch": {
+        "index": 291,
+        "dispatch_continue": 0,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          33
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 288,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 2148904632,
+        "opcodes": [
+          29
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 291,
+        "dispatch_continue": 0,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          33
+        ]
+      }
+    },
+    {
+      "file": "8/S8041.DAT",
+      "row": 2250,
+      "offset": "0x47924",
+      "source_offset": "0x47922",
+      "original_opcode": 20,
+      "current_opcode": 39,
+      "prefixes": [
+        {
+          "start": "0x4791a",
+          "opcode": 11,
+          "original": {
+            "index": 146,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1572864,
+            "opcodes": [
+              11
+            ]
+          },
+          "current": {
+            "index": 146,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1572864,
+            "opcodes": [
+              11
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fd ff 14",
+      "current_source_hex": "fd ff 27",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "BEF2721C585A486BF4353771BF476DFF36389D3B7D508785F928F3596302A2F9",
+      "current_file_sha256": "2C1990D66877722C72B26A8DDDDE9E0F98758F257C7098049ABC28C661C10D77",
+      "original_single_dispatch": {
+        "index": 148,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 2149495980,
+        "opcodes": [
+          20
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 150,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 150,
+        "opcodes": [
+          39
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 148,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 2149495980,
+        "opcodes": [
+          20
+        ]
+      }
+    },
+    {
+      "file": "B/SB022.DAT",
+      "row": 2361,
+      "offset": "0x4809e",
+      "source_offset": "0x4809c",
+      "original_opcode": 33,
+      "current_opcode": 29,
+      "prefixes": [
+        {
+          "start": "0x48098",
+          "opcode": 11,
+          "original": {
+            "index": 79,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              11
+            ]
+          },
+          "current": {
+            "index": 79,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              11
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "f7 ff 21",
+      "current_source_hex": "f7 ff 1d",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "FEBCD28AEE66DAC4C634443B3BCBCB36D1CA7FAE1958E3B17400503C7EA68E33",
+      "current_file_sha256": "57F9D6BC207C47E166D82ED029A643FF400610255C5A6412BB198DE9462212BC",
+      "original_single_dispatch": {
+        "index": 83,
+        "dispatch_continue": 0,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          33
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 80,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 2148904632,
+        "opcodes": [
+          29
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 83,
+        "dispatch_continue": 0,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          33
+        ]
+      }
+    },
+    {
+      "file": "B/SB071.DAT",
+      "row": 2398,
+      "offset": "0x487ba",
+      "source_offset": "0x487b8",
+      "original_opcode": 41,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x487b4",
+          "opcode": 7,
+          "original": {
+            "index": 989,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              7
+            ]
+          },
+          "current": {
+            "index": 989,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              7
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "a4 04 29",
+      "current_source_hex": "90 a1 a1",
+      "preceding_operand_changed": true,
+      "original_file_sha256": "5AE5EBFB0BEB81B9DC6A5FD847E4662600695C1DFFE419030175D55B16977100",
+      "current_file_sha256": "490ADB714453EF122DC33548C822D8023BBCEE5C60DF204C6008608FB55C051E",
+      "original_single_dispatch": {
+        "index": 992,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 2,
+        "opcodes": [
+          41
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 990,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 992,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 2,
+        "opcodes": [
+          41
+        ]
+      }
+    },
+    {
+      "file": "B/SB072.DAT",
+      "row": 2399,
+      "offset": "0x47dd0",
+      "source_offset": "0x47dce",
+      "original_opcode": 4,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47dca",
+          "opcode": 17,
+          "original": {
+            "index": 744,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 0,
+            "opcodes": [
+              17
+            ]
+          },
+          "current": {
+            "index": 744,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 0,
+            "opcodes": [
+              17
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "c0 ff 04",
+      "current_source_hex": "14 a1 a1",
+      "preceding_operand_changed": true,
+      "original_file_sha256": "82BD55661481814DE7C024F601F6003ED001522F0711EEA6120A115012412611",
+      "current_file_sha256": "0BE50F2A35A9665AE2D2D6C70E8754C7758DB06D4A09F7FEA76B4B6564A9ED56",
+      "original_single_dispatch": {
+        "unresolved": "Invalid memory fetch (UC_ERR_FETCH_UNMAPPED)"
+      },
+      "current_single_dispatch": {
+        "index": 745,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "unresolved": "Invalid memory fetch (UC_ERR_FETCH_UNMAPPED)"
+      }
+    },
+    {
+      "file": "B/SB072.DAT",
+      "row": 2412,
+      "offset": "0x48442",
+      "source_offset": "0x48440",
+      "original_opcode": 42,
+      "current_opcode": 32,
+      "prefixes": [
+        {
+          "start": "0x4843c",
+          "opcode": 11,
+          "original": {
+            "index": 545,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              11
+            ]
+          },
+          "current": {
+            "index": 545,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              11
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fd ff 2a",
+      "current_source_hex": "fd ff 20",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "82BD55661481814DE7C024F601F6003ED001522F0711EEA6120A115012412611",
+      "current_file_sha256": "0BE50F2A35A9665AE2D2D6C70E8754C7758DB06D4A09F7FEA76B4B6564A9ED56",
+      "original_single_dispatch": {
+        "index": 549,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 1,
+        "opcodes": [
+          42
+        ]
+      },
+      "current_single_dispatch": {
+        "unresolved": "Invalid memory fetch (UC_ERR_FETCH_UNMAPPED)"
+      },
+      "memory_only_restored_dispatch": {
+        "index": 549,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 1,
+        "opcodes": [
+          42
+        ]
+      }
+    },
+    {
+      "file": "B/SB072.DAT",
+      "row": 2413,
+      "offset": "0x486a6",
+      "source_offset": "0x486a4",
+      "original_opcode": 42,
+      "current_opcode": 32,
+      "prefixes": [
+        {
+          "start": "0x486a0",
+          "opcode": 11,
+          "original": {
+            "index": 851,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              11
+            ]
+          },
+          "current": {
+            "index": 851,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              11
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fd ff 2a",
+      "current_source_hex": "fd ff 20",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "82BD55661481814DE7C024F601F6003ED001522F0711EEA6120A115012412611",
+      "current_file_sha256": "0BE50F2A35A9665AE2D2D6C70E8754C7758DB06D4A09F7FEA76B4B6564A9ED56",
+      "original_single_dispatch": {
+        "index": 855,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 1,
+        "opcodes": [
+          42
+        ]
+      },
+      "current_single_dispatch": {
+        "unresolved": "Invalid memory fetch (UC_ERR_FETCH_UNMAPPED)"
+      },
+      "memory_only_restored_dispatch": {
+        "index": 855,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 1,
+        "opcodes": [
+          42
+        ]
+      }
+    },
+    {
+      "file": "D/SD011.DAT",
+      "row": 2616,
+      "offset": "0x47f3a",
+      "source_offset": "0x47f38",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47f34",
+          "opcode": 3,
+          "original": {
+            "index": 925,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 925,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "BF9F9E84DF144470CD11EB7DDB3CB296F6A005CA1AE09CB1918663A5F992CEA1",
+      "current_file_sha256": "C144ECE27844E6FDF14413717AFBACFCCABD60B2D652F39A5AA713669CF66B7E",
+      "original_single_dispatch": {
+        "index": 928,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 117440512,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 926,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 928,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 117440512,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "D/SD011.DAT",
+      "row": 2617,
+      "offset": "0x47f56",
+      "source_offset": "0x47f54",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47f50",
+          "opcode": 3,
+          "original": {
+            "index": 939,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 939,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "BF9F9E84DF144470CD11EB7DDB3CB296F6A005CA1AE09CB1918663A5F992CEA1",
+      "current_file_sha256": "C144ECE27844E6FDF14413717AFBACFCCABD60B2D652F39A5AA713669CF66B7E",
+      "original_single_dispatch": {
+        "index": 942,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 100663296,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 940,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 942,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 100663296,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "D/SD011.DAT",
+      "row": 2618,
+      "offset": "0x47f72",
+      "source_offset": "0x47f70",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47f6c",
+          "opcode": 3,
+          "original": {
+            "index": 953,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 953,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "BF9F9E84DF144470CD11EB7DDB3CB296F6A005CA1AE09CB1918663A5F992CEA1",
+      "current_file_sha256": "C144ECE27844E6FDF14413717AFBACFCCABD60B2D652F39A5AA713669CF66B7E",
+      "original_single_dispatch": {
+        "index": 956,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 83886080,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 954,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 956,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 83886080,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "D/SD011.DAT",
+      "row": 2619,
+      "offset": "0x47f8e",
+      "source_offset": "0x47f8c",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47f88",
+          "opcode": 3,
+          "original": {
+            "index": 967,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 967,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "BF9F9E84DF144470CD11EB7DDB3CB296F6A005CA1AE09CB1918663A5F992CEA1",
+      "current_file_sha256": "C144ECE27844E6FDF14413717AFBACFCCABD60B2D652F39A5AA713669CF66B7E",
+      "original_single_dispatch": {
+        "index": 970,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 67108864,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 968,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 970,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 67108864,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "D/SD014.DAT",
+      "row": 2635,
+      "offset": "0x47db6",
+      "source_offset": "0x47db4",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47db0",
+          "opcode": 3,
+          "original": {
+            "index": 731,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 731,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "310DE9CA33132565FD9039BE9031C7BE5C469A27236EFCFB6D1326ECA2E67E2B",
+      "current_file_sha256": "7A4A47419B4B80EF7BAD1C01102DFDD83125B11AAA466F587EC69D46958CB332",
+      "original_single_dispatch": {
+        "index": 734,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 134217728,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 732,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 734,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 134217728,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "D/SD014.DAT",
+      "row": 2636,
+      "offset": "0x47dda",
+      "source_offset": "0x47dd8",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47dd4",
+          "opcode": 3,
+          "original": {
+            "index": 749,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 749,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "310DE9CA33132565FD9039BE9031C7BE5C469A27236EFCFB6D1326ECA2E67E2B",
+      "current_file_sha256": "7A4A47419B4B80EF7BAD1C01102DFDD83125B11AAA466F587EC69D46958CB332",
+      "original_single_dispatch": {
+        "index": 752,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 117440512,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 750,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 752,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 117440512,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "D/SD014.DAT",
+      "row": 2637,
+      "offset": "0x47dfe",
+      "source_offset": "0x47dfc",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47df8",
+          "opcode": 3,
+          "original": {
+            "index": 767,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 767,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "310DE9CA33132565FD9039BE9031C7BE5C469A27236EFCFB6D1326ECA2E67E2B",
+      "current_file_sha256": "7A4A47419B4B80EF7BAD1C01102DFDD83125B11AAA466F587EC69D46958CB332",
+      "original_single_dispatch": {
+        "index": 770,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 100663296,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 768,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 770,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 100663296,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "D/SD014.DAT",
+      "row": 2638,
+      "offset": "0x47e22",
+      "source_offset": "0x47e20",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47e1c",
+          "opcode": 3,
+          "original": {
+            "index": 785,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 785,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "310DE9CA33132565FD9039BE9031C7BE5C469A27236EFCFB6D1326ECA2E67E2B",
+      "current_file_sha256": "7A4A47419B4B80EF7BAD1C01102DFDD83125B11AAA466F587EC69D46958CB332",
+      "original_single_dispatch": {
+        "index": 788,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 83886080,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 786,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 788,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 83886080,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "D/SD014.DAT",
+      "row": 2639,
+      "offset": "0x47ee8",
+      "source_offset": "0x47ee6",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47ee2",
+          "opcode": 3,
+          "original": {
+            "index": 884,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 884,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "310DE9CA33132565FD9039BE9031C7BE5C469A27236EFCFB6D1326ECA2E67E2B",
+      "current_file_sha256": "7A4A47419B4B80EF7BAD1C01102DFDD83125B11AAA466F587EC69D46958CB332",
+      "original_single_dispatch": {
+        "index": 887,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 134217728,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 885,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 887,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 134217728,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "D/SD014.DAT",
+      "row": 2640,
+      "offset": "0x47f0c",
+      "source_offset": "0x47f0a",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47f06",
+          "opcode": 3,
+          "original": {
+            "index": 902,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 902,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "310DE9CA33132565FD9039BE9031C7BE5C469A27236EFCFB6D1326ECA2E67E2B",
+      "current_file_sha256": "7A4A47419B4B80EF7BAD1C01102DFDD83125B11AAA466F587EC69D46958CB332",
+      "original_single_dispatch": {
+        "index": 905,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 117440512,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 903,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 905,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 117440512,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "D/SD014.DAT",
+      "row": 2641,
+      "offset": "0x47f30",
+      "source_offset": "0x47f2e",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47f2a",
+          "opcode": 3,
+          "original": {
+            "index": 920,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 920,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "310DE9CA33132565FD9039BE9031C7BE5C469A27236EFCFB6D1326ECA2E67E2B",
+      "current_file_sha256": "7A4A47419B4B80EF7BAD1C01102DFDD83125B11AAA466F587EC69D46958CB332",
+      "original_single_dispatch": {
+        "index": 923,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 100663296,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 921,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 923,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 100663296,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "D/SD014.DAT",
+      "row": 2642,
+      "offset": "0x47f54",
+      "source_offset": "0x47f52",
+      "original_opcode": 16,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x47f4e",
+          "opcode": 3,
+          "original": {
+            "index": 938,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          },
+          "current": {
+            "index": 938,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1900,
+            "opcodes": [
+              3
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fe ff 10",
+      "current_source_hex": "fe ff a1",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "310DE9CA33132565FD9039BE9031C7BE5C469A27236EFCFB6D1326ECA2E67E2B",
+      "current_file_sha256": "7A4A47419B4B80EF7BAD1C01102DFDD83125B11AAA466F587EC69D46958CB332",
+      "original_single_dispatch": {
+        "index": 941,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 83886080,
+        "opcodes": [
+          16
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 939,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 941,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 83886080,
+        "opcodes": [
+          16
+        ]
+      }
+    },
+    {
+      "file": "F/SF041.DAT",
+      "row": 2763,
+      "offset": "0x47970",
+      "source_offset": "0x4796e",
+      "original_opcode": 20,
+      "current_opcode": 39,
+      "prefixes": [
+        {
+          "start": "0x4796a",
+          "opcode": 11,
+          "original": {
+            "index": 184,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              11
+            ]
+          },
+          "current": {
+            "index": 184,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              11
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "fd ff 14",
+      "current_source_hex": "fd ff 27",
+      "preceding_operand_changed": false,
+      "original_file_sha256": "474D8934A708291796C2A2E3B76B85F649C98FDFD110FBE797CFFCF2BD4BD2C5",
+      "current_file_sha256": "1BE00579E7BADE01029C734F65F6DE08646CAB67C6DD4EECA40437535D6AEA08",
+      "original_single_dispatch": {
+        "index": 186,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 2149495980,
+        "opcodes": [
+          20
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 188,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 188,
+        "opcodes": [
+          39
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 186,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 2149495980,
+        "opcodes": [
+          20
+        ]
+      }
+    },
+    {
+      "file": "F/SF041.DAT",
+      "row": 2794,
+      "offset": "0x48522",
+      "source_offset": "0x48520",
+      "original_opcode": 33,
+      "current_opcode": 29,
+      "prefixes": [
+        {
+          "start": "0x4851c",
+          "opcode": 7,
+          "original": {
+            "index": 657,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              7
+            ]
+          },
+          "current": {
+            "index": 657,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              7
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "49 09 21",
+      "current_source_hex": "a1 a0 1d",
+      "preceding_operand_changed": true,
+      "original_file_sha256": "474D8934A708291796C2A2E3B76B85F649C98FDFD110FBE797CFFCF2BD4BD2C5",
+      "current_file_sha256": "1BE00579E7BADE01029C734F65F6DE08646CAB67C6DD4EECA40437535D6AEA08",
+      "original_single_dispatch": {
+        "index": 661,
+        "dispatch_continue": 0,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          33
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 658,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 2148904632,
+        "opcodes": [
+          29
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 661,
+        "dispatch_continue": 0,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          33
+        ]
+      }
+    },
+    {
+      "file": "F/SF041.DAT",
+      "row": 2799,
+      "offset": "0x486f4",
+      "source_offset": "0x486f2",
+      "original_opcode": 7,
+      "current_opcode": 161,
+      "prefixes": [
+        {
+          "start": "0x486ee",
+          "opcode": 7,
+          "original": {
+            "index": 890,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              7
+            ]
+          },
+          "current": {
+            "index": 890,
+            "dispatch_continue": 1,
+            "status": 1,
+            "return_value": 1748,
+            "opcodes": [
+              7
+            ]
+          }
+        }
+      ],
+      "original_source_hex": "4c 09 07",
+      "current_source_hex": "5e a0 a1",
+      "preceding_operand_changed": true,
+      "original_file_sha256": "474D8934A708291796C2A2E3B76B85F649C98FDFD110FBE797CFFCF2BD4BD2C5",
+      "current_file_sha256": "1BE00579E7BADE01029C734F65F6DE08646CAB67C6DD4EECA40437535D6AEA08",
+      "original_single_dispatch": {
+        "index": 893,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          7
+        ]
+      },
+      "current_single_dispatch": {
+        "index": 891,
+        "dispatch_continue": 0,
+        "status": 0,
+        "return_value": 644,
+        "opcodes": [
+          161
+        ]
+      },
+      "memory_only_restored_dispatch": {
+        "index": 893,
+        "dispatch_continue": 1,
+        "status": 1,
+        "return_value": 0,
+        "opcodes": [
+          7
+        ]
+      }
+    }
+  ],
+  "limitation": "Isolated captured-RAM CPU tests. Scene entry/reachability and reporter screen not reproduced. All 2878 source rows enumerated; candidate predicate is NOT an exhaustive bytecode grammar. Other rows are NOT marked PASS."
+}

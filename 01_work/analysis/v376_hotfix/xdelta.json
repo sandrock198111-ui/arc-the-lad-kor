@@ -1,0 +1,46 @@
+{
+  "bundle": "E:\\korean\\03_output\\arc1_kor_v0.9.2_rev1.zip",
+  "bundle_hashes": {
+    "size": 666238,
+    "sha256": "AC297301D28E20A6785C1A43223EE2748DA3601222A9A046FBD453D9DC49A727",
+    "sha1": "F5BED7347508F82B803452413A29C22F663F098D",
+    "crc32": "77EBB0B2",
+    "md5": "E59186EF1B2BB26CC50AA68BD70A57CD"
+  },
+  "version": "v0.9.2",
+  "internal_build": 376,
+  "source": {
+    "size": 631820112,
+    "sha256": "16C62B4485BF29B97BC6090C58490CEE718647624C3F4687B0AA4CDEBAE97C1A",
+    "sha1": "67E6B53D3C7D229FBAAFB23E75DCD91520AE35A4",
+    "crc32": "3235502F",
+    "md5": "219F45A30345D4A7370303576E312D8C"
+  },
+  "target": {
+    "size": 632495136,
+    "sha256": "171ABEF06E3689250934416EBA0DCB40016FE8D3A3680173B69A92708C3DBA3D",
+    "sha1": "24D49C6FD1FD545FC68E11D23CAAFCABD1DD1E4B",
+    "crc32": "67490C63",
+    "md5": "83FC33FA07894A2967502DC63E1F8154"
+  },
+  "patch": {
+    "size": 724832,
+    "sha256": "A35685920CF2E6527C8BC863A70B2A8F1F901B469745AD94A12A62A1853E9D43",
+    "sha1": "EB88D65FA4C7A17A5E3C13DDC127F6103FB39FBF",
+    "crc32": "88DF5C04",
+    "md5": "7A91A441CBA1C93CB33B13FA6F284EB3"
+  },
+  "roundtrip_exact": true,
+  "reencode_exact": true,
+  "unexplained_payload_changes": 0,
+  "ui_defects_fixed": 102,
+  "dat_bodies_fixed": 70,
+  "event_rows_restored": 24,
+  "runtime_verified": false,
+  "remaining": [
+    "29 quiz speech-style rows held: owned storage exhausted",
+    "6 UI and 94 DAT source-confirmation rows remain",
+    "DuckStation 0.1-7126 full gameplay/cold-boot verification pending",
+    "Inherited Sans redistribution terms remain unverified"
+  ]
+}

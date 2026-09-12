@@ -1,0 +1,23 @@
+{
+  "before_sha256": "09C1574F6A40526FA7F7D388E1835425C1B748BBB774166640903A5FC7B7CD87",
+  "after_sha256": "81FB640865A0CCCC4131449DB6AD3E6F43660F15E699DBD0756E658F4F7D4590",
+  "changes": [
+    {
+      "row": 635,
+      "before": "왕님, 정신 차리십시오.",
+      "after": "전하, 정신 차리십시오."
+    },
+    {
+      "row": 2323,
+      "before": "아나운서: 도적은 토우빌 마을 출신인 아크 에다 리코르누를 주모자로 하는 7명으로,",
+      "after": "아나운서: 범인은 토우빌 마을 출신 아크 에다 리코르누를 우두머리로 한 일당 7명으로,"
+    },
+    {
+      "row": 644,
+      "before": "스메리아 왕: 형에게... 한마디 사과하고 싶었다....",
+      "after": "스메리아 왕: 형에게... 사과 한마디라도 하고 싶었다...."
+    }
+  ],
+  "other_cells_unchanged": true,
+  "backup": "E:\\korean\\99_backup\\v381_script_translated_full.csv"
+}

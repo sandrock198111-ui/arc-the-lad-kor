@@ -1,0 +1,674 @@
+﻿id,group,index,historical_korean,pointer_offset,original_pointer,current_pointer,japanese,current_korean,unknown_codes,original_hex,current_hex,storage_class,empty_original,empty_current,review_status
+card_label:1,card_label,1,,0x78088,0x80192878,0x80192878,カート1,카드 1,,BC 31 95 12,DD 38 17 A1 4A,text,False,False,PENDING
+card_label:2,card_label,2,,0x7808C,0x80192880,0x80192880,カート2,카드 2,,BC 31 95 13,DD 38 17 A1 0B,text,False,False,PENDING
+ui_pointer:780E8,ui_system_v39,,처음부터,0x780E8,0x8019289C,0x8019AF3E,はじめから,처음부터,,28 4A 51 20 33,DD 8F 8D 6C 02,text,False,False,PENDING
+ui_pointer:780EC,ui_system_v39,,저장 데이터가 없습니다,0x780EC,0x801928A4,0x8019C712,セーフされていません,저장 데이터가 없습니다,,DD 60 31 C9 3A 32 21 1B 27 59 2D,DD 24 56 A1 81 03 02 0C A1 71 2D 07 01,text,False,False,PENDING
+ui_pointer:780F0,ui_system_v39,,메모리 카드에 남은 공간이 없습니다,0x780F0,0x801928B0,0x8019B472,カートにあきがありません,메모리 카드에 남은 공간이 없습니다,,BC 31 95 23 3F 44 2A 3F 39 27 59 2D,DD 2C 55 2E A1 DD 38 17 0E A1 DD 3D 26 A1 DD 10 DD 1B 03 A1 71 2D 07 01,text,False,False,PENDING
+ui_pointer:780F4,ui_system_v39,,그대로 계속하기,0x780F4,0x801928C0,0x8019AB9D,このままつづける,그대로 계속하기,,2E 1C 27 27 45 DD F9 49 22,15 37 D5 A1 DD 11 DD 5F 19 24,text,False,False,PENDING
+ui_pointer:780F8,ui_system_v39,,데이터가 손상되었습니다,0x780F8,0x801928CC,0x8019C7DE,データがこわれています,데이터가 손상되었습니다,,81 31 62 2A 2E 43 32 21 1B 27 2B,81 03 02 0C A1 85 8B 73 61 2D 07 01,text,False,False,PENDING
+ui_pointer:781B8,ui_system_v39,,불러올 데이터를 선택하세요,0x781B8,0x80192900,0x8019B60E,データをえらんでください,불러올 데이터를 선택하세요,,81 31 62 2F 46 33 2D 30 3E 35 3A 1B,DD 13 20 99 A1 81 03 02 36 A1 DD 53 DF 9A 19 8C 2C,text,False,False,PENDING
+ui_pointer:781BC,ui_system_v39,,메모리 카드 없이 계속하시겠습니까?,0x781BC,0x80192910,0x8019C514,メモリーカートをつかわすにゲームをつづけますか？,메모리 카드 없이 계속하시겠습니까?,,78 5F 6B 31 BC 31 95 2F 45 20 43 8C 23 DD 4D 31 D8 2F 45 DD F9 49 27 2B 20 3C,DD 2C 55 2E A1 DD 38 17 A1 71 03 A1 DD 11 DD 5F 19 29 54 2D 07 3B D1,text,False,False,PENDING
+ui_pointer:781C0,ui_system_v39,,메모리 카드를 넣고 확인 버튼을 누르세요,0x781C0,0x8019292C,0x8019B3D2,メモリーカートをセットして<CTRL:E7>！<N:卞:16>タンをおしてください,메모리 카드를 넣고 확인 버튼을 누르세요,,78 5F 6B 31 BC 31 95 2F DD 60 82 5C 1E 21 E7 02 DD A1 62 34 2F 3B 1E 21 3E 35 3A 1B,DD 2C 55 2E A1 DD 38 17 36 A1 6F 1C A1 DE 2B 35 A1 67 DD F7 0D A1 DD 55 70 8C 2C,text,False,False,PENDING
+ui_pointer:781C4,ui_system_v39,,어느 카드를 사용하시겠습니까?,0x781C4,0x8019294C,0x8019B51C,どちらのカートをつかいますか？,어느 카드를 사용하시겠습니까?,,54 4B 33 1C BC 31 95 2F 45 20 1B 27 2B 20 3C,14 4D A1 DD 38 17 36 A1 34 DD 1A 19 29 54 2D 07 3B D1,text,False,False,PENDING
+ui_pointer:781C8,ui_system_v39,,메모리 카드를 초기화하시겠습니까?,0x781C8,0x8019295C,0x8019C5B2,メモリーカートをフ<N:｣:13>ーマットしますか？,메모리 카드를 초기화하시겠습니까?,,78 5F 6B 31 BC 31 95 2F A6 DE B4 31 64 82 5C 1E 27 2B 20 3C,DD 2C 55 2E A1 DD 38 17 36 A1 39 24 DD 83 19 29 54 2D 07 3B D1,text,False,False,PENDING
+ui_pointer:781CC,ui_system_v39,,메모리 카드가 가득합니다. 계속하시겠습니까?,0x781CC,0x80192974,0x8019B394,メモリーカートがいつっいですがゲームをつづけますか？,메모리 카드가 가득합니다. 계속하시겠습니까?,,78 5F 6B 31 BC 31 95 2A 1B 29 75 1B 30 2B 2A DD 4D 31 D8 2F 45 DD F9 49 27 2B 20 3C,DD 2C 55 2E A1 DD 38 17 0C A1 0C DE A9 DD 1D 07 01 21 A1 DD 11 DD 5F 19 29 54 2D 07 3B D1,text,False,False,PENDING
+ui_pointer:781D0,ui_system_v39,,쓰지 않는 데이터를 지우거나 다른 카드를 넣으세요,0x781D0,0x80192994,0x8019B3B3,いらないフ<N:=:12><N:｣:11>ルをけすか、ベつのカートをセットしてください,쓰지 않는 데이터를 지우거나 다른 카드를 넣으세요,,1B 33 1D 1B A6 DE 4E 65 53 2F 49 2B 20 24 DD 35 45 1C BC 31 95 2F DD 60 82 5C 1E 21 3E 35 3A 1B,DD 85 04 A1 78 06 A1 81 03 02 36 A1 04 3D 32 1E A1 01 DD BF A1 DD 38 17 36 A1 6F 4E 8C 2C,text,False,False,PENDING
+ui_pointer:78220,ui_system_v39,,메모리 카드를 확인하고 있습니다,0x78220,0x801929D4,0x8019C5DD,メモリーカートをチ<N:±:6>ックしています,메모리 카드를 확인하고 있습니다,,78 5F 6B 31 BC 31 95 2F 6C DF 5D 82 4E 1E 21 1B 27 2B,DD 2C 55 2E A1 DD 38 17 36 A1 DE 2B 35 19 1C A1 1F 2D 07 01,text,False,False,PENDING
+ui_pointer:78224,ui_system_v39,,메모리 카드를 초기화하고 있습니다,0x78224,0x801929E8,0x8019C59C,メモリーカートをフ<N:｣:13>ーマットしています,메모리 카드를 초기화하고 있습니다,,78 5F 6B 31 BC 31 95 2F A6 DE B4 31 64 82 5C 1E 21 1B 27 2B,DD 2C 55 2E A1 DD 38 17 36 A1 39 24 DD 83 19 1C A1 1F 2D 07 01,text,False,False,PENDING
+ui_pointer:78228,ui_system_v39,,데이터를 저장하고 있습니다,0x78228,0x80192A00,0x8019B804,データをセーフしています,데이터를 저장하고 있습니다,,81 31 62 2F DD 60 31 C9 1E 21 1B 27 2B,81 03 02 36 A1 DD 24 56 19 1C A1 1F 2D 07 01,text,False,False,PENDING
+ui_pointer:7822C,ui_system_v39,,데이터를 불러오고 있습니다,0x7822C,0x80192A10,0x8019B7F4,データをロートしています,데이터를 불러오고 있습니다,,81 31 62 2F A2 31 95 1E 21 1B 27 2B,81 03 02 36 A1 DD 13 20 46 1C A1 1F 2D 07 01,text,False,False,PENDING
+equipment_name:0,equipment_name,0,불꽃의 수호,0x804A4,0x8019AA24,0x8019BAE2,炎の守り,불꽃의 수호,,BF 1C DD 1E 39,DD 13 DD 8C 0F A1 50 95,text,False,False,PENDING
+equipment_name:1,equipment_name,1,얼음의 수호,0x804A8,0x8019AA2C,0x8019BE35,氷の守り,얼음의 수호,,DF 14 1C DD 1E 39,DE 93 8D 0F A1 50 95,text,False,False,PENDING
+equipment_name:2,equipment_name,2,안티 헤모지,0x804AC,0x8019AA34,0x8019BAB5,アンチへモジー,안티 헤모지,,42 34 6C DD 3B 5F 7F 31,94 DF 51 A1 DD C3 55 04,text,False,False,PENDING
+equipment_name:3,equipment_name,3,치유의 부적,0x804B0,0x8019AA40,0x8019BAF4,いやしのお守り,치유의 부적,,1B 40 1E 1C 3B DD 1E 39,DD 1F 8A 0F A1 6C DD 09,text,False,False,PENDING
+equipment_name:4,equipment_name,4,비단 허리띠,0x804B4,0x8019AA4C,0x8019AC16,きぬのおび,비단 허리띠,,44 DD 4F 1C 3B 99,DD 06 DD 35 A1 DE 48 2E DE 7A,text,False,False,PENDING
+equipment_name:5,equipment_name,5,마법 카드,0x804B8,0x8019AA54,0x8019BCD5,魔法のカート,마법 카드,,DD 1B DD 51 1C BC 31 95,45 DD 37 A1 DD 38 17,text,False,False,PENDING
+equipment_name:6,equipment_name,6,수면 방지 카드,0x804BC,0x8019AA60,0x8019ABEA,スリー<N:フ:11><N:リ:12>スカート,수면 방지 카드,,47 6B 31 DD 55 6F 47 BC 31 95,50 3A A1 DD 29 04 A1 DD 38 17,text,False,False,PENDING
+equipment_name:7,equipment_name,7,파워 암,0x804C0,0x8019AA6C,0x8019BDD5,パワーアーム,파워 암,,A3 DD A0 31 42 31 D8,DD 7B DD 68 A1 DF 6C,text,False,False,PENDING
+equipment_name:8,equipment_name,8,카이저 글러브,0x804C4,0x8019AA74,0x8019AAE4,カ<N:｣:11><N:ザ:8>ー<N:ク:12>ローフ,카이저 글러브,,BC 65 DD C8 31 80 A2 31 C9,DD 38 03 DD 24 A1 DE 1A 20 DD C8,text,False,False,PENDING
+equipment_name:9,equipment_name,9,환상의 장갑,0x804C8,0x8019AA80,0x8019BB57,幻のこて,환상의 장갑,,DD F2 1C 2E 21,DD 65 8B 0F A1 56 DE 0C,text,False,False,PENDING
+equipment_name:10,equipment_name,10,선글라스,0x804CC,0x8019AA88,0x8019AE22,サン<N:ク:12>ラス,선글라스,,77 34 80 57 47,DD 53 DE 1A 8F 30,text,False,False,PENDING
+equipment_name:11,equipment_name,11,명중의 두루마리,0x804D0,0x8019AA90,0x8019C81F,当て方の絵巻,명중의 두루마리,,DD 42 21 C4 1C DE F7 DE F6,DD 34 DD 73 0F A1 DD 21 DD 42 45 2E,text,False,False,PENDING
+equipment_name:12,equipment_name,12,투척의 두루마리,0x804D4,0x8019AA9C,0x8019C839,ぶん投げの絵巻,투척의 두루마리,,CA 2D DE 04 9C 1C DE F7 DE F6,DD 39 DF 93 0F A1 DD 21 DD 42 45 2E,text,False,False,PENDING
+equipment_name:13,equipment_name,13,신의 주먹,0x804D8,0x8019AAA8,0x8019BEEF,神のこぶし,신의 주먹,,DD 2F 1C 2E CA 1E,3E 0F A1 40 DE 66,text,False,False,PENDING
+equipment_name:14,equipment_name,14,바이올렛 레이저,0x804DC,0x8019AAB0,0x8019C7F8,バ<N:｣:11>オ<N:リ:12>ット<N:リ:12>ーサー,바이올렛 레이저,,AF 65 8F 6F 82 5C 6F 31 77 31,DD 08 03 99 DF 2C A1 DD 66 03 DD 24,text,False,False,PENDING
+equipment_name:15,equipment_name,15,목걸이,0x804E0,0x8019AABC,0x8019AF1A,<N:ネ:13>ック<N:リ:12>ス,목걸이,,DD C6 82 4E 6F 47,DD 33 DD 8E 03,text,False,False,PENDING
+equipment_name:16,equipment_name,16,염주,0x804E4,0x8019AAC4,0x8019B087,じ<N:ぃ:20>す,염주,,4A DE 20 8C,DF 89 40,text,False,False,PENDING
+equipment_name:17,equipment_name,17,장로의 머리띠,0x804E8,0x8019AACC,0x8019C072,長老のはちまき,장로의 머리띠,,D4 A8 1C 28 4B 27 44,56 D5 0F A1 DD 5D 2E DE 7A,text,False,False,PENDING
+equipment_name:18,equipment_name,18,질풍의 반다나,0x804EC,0x8019AAD4,0x8019BFF4,しつ<N:ぷ:23>うのバンダナ,질풍의 반다나,,1E 29 DE B5 26 1C AF 34 67 7C,DD AA DE 2E 0F A1 DD 46 01 1E,text,False,False,PENDING
+equipment_name:19,equipment_name,19,하이퍼 부츠,0x804F0,0x8019AAE0,0x8019C26E,<N:ハ:12><N:｣:11>パーフーツ,하이퍼 부츠,,DD A2 65 A3 31 C9 31 DF 01,19 03 DE 78 A1 6C DE CD,text,False,False,PENDING
+equipment_name:20,equipment_name,20,임시 신발,0x804F4,0x8019AAEC,0x8019BDED,まにあわせのくつ,임시 신발,,27 23 3F 43 59 1C 3E 45,DD C2 29 A1 3E DD 0E,text,False,False,PENDING
+equipment_name:21,equipment_name,21,팔찌 1,0x804F8,0x8019AAF8,0x8019AE37,フ<N:リ:12>ス<N:リ:12>ット,팔찌 1,,C9 6F 47 6F 82 5C,DD 6C DE 56 A1 4A,text,False,False,PENDING
+equipment_name:22,equipment_name,22,팔찌 2,0x804FC,0x8019AB00,0x8019AE30,フ<N:リ:12>ス<N:リ:12>ット,팔찌 2,,C9 6F 47 6F 82 5C,DD 6C DE 56 A1 0B,text,False,False,PENDING
+equipment_name:23,equipment_name,23,기술의 팔찌,0x80500,0x8019AB08,0x8019C036,技のフ<N:リ:12>ス<N:リ:12>ット,기술의 팔찌,,DD 4C 1C C9 6F 47 6F 82 5C,24 DD E5 0F A1 DD 6C DE 56,text,False,False,PENDING
+equipment_name:24,equipment_name,24,여신의 기도,0x80504,0x8019AB14,0x8019BEB0,女神のいのり,여신의 기도,,DE 6B DD 2F 1C 1B 1C 39,1A 3E 0F A1 24 33,text,False,False,PENDING
+equipment_name:25,equipment_name,25,파워 리스트,0x80508,0x8019AB20,0x8019C19E,パワーリスト,파워 리스트,,A3 DD A0 31 6B 47 5C,DD 7B DD 68 A1 2E 30 DD 5B,text,False,False,PENDING
+equipment_name:26,equipment_name,26,데일의 이빨,0x8050C,0x8019AB28,0x8019BD35,デ<N:ｲ:6>ールの<N:牙:4>,데일의 이빨,,81 DD 03 31 53 1C DE B0,81 6B 0F A1 03 DE 20,text,False,False,PENDING
+equipment_name:27,equipment_name,27,환수의 이빨,0x80510,0x8019AB34,0x8019BB4E,幻獣の<N:牙:4>,환수의 이빨,,DD F2 DE 6E 1C DE B0,DD 65 50 0F A1 03 DE 20,text,False,False,PENDING
+equipment_name:28,equipment_name,28,바닷바람의 선율,0x80514,0x8019AB3C,0x8019B8B1,しおかぜの調ベ,바닷바람의 선율,,1E 3B 20 A7 1C DD 86 DD 35,DD 08 DF 1F DD 08 DD 22 0F A1 DD 53 DE A6,text,False,False,PENDING
+equipment_name:29,equipment_name,29,조개껍데기,0x80518,0x8019AB48,0x8019BD75,<N:貝:2>がら,조개껍데기,,DF 50 2A 33,90 DD B4 DF 18 81 24,text,False,False,PENDING
+equipment_name:30,equipment_name,30,유니콘의 뿔,0x8051C,0x8019AB50,0x8019C334,一角獣の角,유니콘의 뿔,,8E DE 7C DE 6E 1C DE 7C,8A 07 DE 96 0F A1 DE E1,text,False,False,PENDING
+equipment_name:31,equipment_name,31,비극의 안경,0x80520,0x8019AB5C,0x8019BAC7,<N:悲:5>劇のめがね,비극의 안경,,DD BA DE 15 1C 51 2A 4C,DD 06 DF 17 0F A1 94 68,text,False,False,PENDING
+equipment_name:32,equipment_name,32,거울,0x80524,0x8019AB68,0x8019B02B,鏡,거울,,DD AE,32 DD 92,text,False,False,PENDING
+equipment_name:33,equipment_name,33,고대의 반지,0x80528,0x8019AB6C,0x8019BC4D,古代の<N:ｴ:24>びわ,고대의 반지,,DD 69 DD A8 1C DD 04 99 43,1C 37 0F A1 DD 46 04,text,False,False,PENDING
+equipment_name:34,equipment_name,34,환상의 반지,0x8052C,0x8019AB78,0x8019BB60,幻の<N:ｴ:24>びわ,환상의 반지,,DD F2 1C DD 04 99 43,DD 65 8B 0F A1 DD 46 04,text,False,False,PENDING
+equipment_name:35,equipment_name,35,마도의 반지,0x80530,0x8019AB80,0x8019BCA5,魔導の<N:ｴ:24>びわ,마도의 반지,,DD 1B DE 03 1C DD 04 99 43,45 33 0F A1 DD 46 04,text,False,False,PENDING
+equipment_name:36,equipment_name,36,장난감 반지,0x80534,0x8019AB8C,0x8019C07C,おもちゃの<N:ｴ:24>びわ,장난감 반지,,3B 38 4B 48 1C DD 04 99 43,56 DD 6A DD 77 A1 DD 46 04,text,False,False,PENDING
+equipment_name:37,equipment_name,37,독막이 반지,0x80538,0x8019AB98,0x8019C248,<N:毒:1>よけの<N:ｴ:24>びわ,독막이 반지,,DD CF 3D 49 1C DD 04 99 43,DF 22 DD AB 03 A1 DD 46 04,text,False,False,PENDING
+equipment_name:38,equipment_name,38,환상의 방패,0x8053C,0x8019ABA4,0x8019C158,幻の盾,환상의 방패,,DD F2 1C DE DB,DD 65 8B 0F A1 DD 29 DE D7,text,False,False,PENDING
+equipment_name:39,equipment_name,39,전사의 수호,0x80540,0x8019ABAC,0x8019ADAB,戦士の守り,전사의 수호,,63 68 1C DD 1E 39,4F 34 0F A1 50 95,text,False,False,PENDING
+equipment_name:40,equipment_name,40,장로의 방패,0x80544,0x8019ABB4,0x8019C307,長老の盾,장로의 방패,,D4 A8 1C DE DB,56 D5 0F A1 DD 29 DE D7,text,False,False,PENDING
+equipment_name:41,equipment_name,41,강력한 지팡이,0x80548,0x8019ABBC,0x8019AC4D,強力な<N:杖:1>,강력한 지팡이,,DD 19 61 1D DF 32,DD 28 DD 2B 53 A1 04 DF 52 03,text,False,False,PENDING
+equipment_name:42,equipment_name,42,지옥의 스누프,0x8054C,0x8019ABC4,0x8019AB5B,じごくのスニー<N:フ:11>,지옥의 스누프,,4A 79 3E 1C 47 D1 31 DD 55,04 DE 39 0F A1 30 DD 55 DD 9D,text,False,False,PENDING
+equipment_name:43,equipment_name,43,왕의 상,0x80550,0x8019ABD0,0x8019AF9B,王様の像,왕의 상,,5D CB 1C DE 64,6A 0F A1 8B,text,False,False,PENDING
+equipment_name:44,equipment_name,44,매의 상,0x80554,0x8019ABD8,0x8019AF4A,たかの像,매의 상,,1F 20 1C DE 64,DD C9 0F A1 8B,text,False,False,PENDING
+equipment_name:45,equipment_name,45,가짜 상,0x80558,0x8019ABE0,0x8019AE96,まがいの像,모조상,,27 2A 1B 1C DE 64,55 90 8B,text,False,False,PENDING
+equipment_name:46,equipment_name,46,단검,0x8055C,0x8019ABE8,0x8019AFD7,たん剣,단검,,1F 2D DD 8D,DD 35 DD A1,text,False,False,PENDING
+equipment_name:47,equipment_name,47,환상의 검,0x80560,0x8019ABF0,0x8019BDBD,幻の剣,환상의 검,,DD F2 1C DD 8D,DD 65 8B 0F A1 DD A1,text,False,False,PENDING
+equipment_name:48,equipment_name,48,리라의 머리장식,0x80564,0x8019ABF8,0x8019ABC9,<N:リ:12><N:｣:11>ラのかみか<N:ざ:2>り,리라의 머리장식,,6F 65 57 1C 20 6D 20 DD 3D 39,2E 8F 0F A1 DD 5D 2E 56 DD B5,text,False,False,PENDING
+equipment_name:49,equipment_name,49,요동치는 보석,0x80568,0x8019AC04,0x8019ABBE,乱れる宝石,요동치는 보석,,DE 54 32 22 DD C9 94,2C DD 32 DD 1F 06 A1 60 DD 8B,text,False,False,PENDING
+equipment_name:50,equipment_name,50,아머 스톤,0x8056C,0x8019AC0C,0x8019BC25,アーマーストーン,아머 스톤,,42 31 64 31 47 5C 31 34,09 DD 5D A1 30 DD 9A,text,False,False,PENDING
+equipment_name:51,equipment_name,51,로맨싱 스톤,0x80570,0x8019AC18,0x8019C0C2,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,,A2 64 34 60 34 80 47 5C 31 34,D5 DE 08 DE 26 A1 30 DD 9A,text,False,False,PENDING
+equipment_name:52,equipment_name,52,로맨싱 스톤,0x80574,0x8019AC24,0x8019C0C2,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,,A2 64 34 60 34 80 47 5C 31 34,D5 DE 08 DE 26 A1 30 DD 9A,text,False,False,PENDING
+equipment_name:53,equipment_name,53,로맨싱 스톤,0x80578,0x8019AC30,0x8019C0C2,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,,A2 64 34 60 34 80 47 5C 31 34,D5 DE 08 DE 26 A1 30 DD 9A,text,False,False,PENDING
+equipment_name:54,equipment_name,54,로맨싱 스톤,0x8057C,0x8019AC3C,0x8019C0C2,ロマンシン<N:ク:12>ストーン,로맨싱 스톤,,A2 64 34 60 34 80 47 5C 31 34,D5 DE 08 DE 26 A1 30 DD 9A,text,False,False,PENDING
+equipment_name:55,equipment_name,55,태양의 거울,0x80580,0x8019AC48,0x8019C1DA,太陽の<N:げ:26>うし,태양의 거울,,DD A9 DF 07 1C D2 26 1E,DD D2 DD 82 0F A1 32 DD 92,text,False,False,PENDING
+equipment_name:56,equipment_name,56,압화 책,0x80584,0x8019AC54,0x8019BE4D,おし花の本,압화 책,,3B 1E DE 1B 1C 92,DF 6D DD 83 A1 DE 43,text,False,False,PENDING
+equipment_name:57,equipment_name,57,클라우스의 책,0x80588,0x8019AC5C,0x8019C1F8,クラウ<N:ｲ:6>スの本,클라우스의 책,,4E 57 DD 39 DD 03 47 1C 92,DE 01 8F 3D 30 0F A1 DE 43,text,False,False,PENDING
+equipment_name:58,equipment_name,58,음악집,0x8058C,0x8019AC68,0x8019AEF6,音楽集,음악집,,DE F9 DD DF DD 5A,8D DD EB DD E2,text,False,False,PENDING
+equipment_name:59,equipment_name,59,라크의 문장,0x80590,0x8019AC70,0x8019BD6D,ラークの紋章,라크의 문장,,57 31 4E 1C DE 56 DE 34,8F 58 0F A1 DD AF 56,text,False,False,PENDING
+equipment_name:60,equipment_name,60,유카리의 문장,0x80594,0x8019AC7C,0x8019C0AE,<N:ｴ:24>かりの紋章,유카리의 문장,,DD 04 20 39 1C DE 56 DE 34,8A DD 38 2E 0F A1 DD AF 56,text,False,False,PENDING
+equipment_name:61,equipment_name,61,포니의 문장,0x80598,0x8019AC88,0x8019BB72,フ<N:リ:12><N:｣:11>の紋章,포니의 문장,,A6 6F 65 1C DE 56 DE 34,DD 78 07 0F A1 DD AF 56,text,False,False,PENDING
+equipment_name:62,equipment_name,62,용자의 증표,0x8059C,0x8019AC94,0x8019C0F4,勇者の証,용자의 증표,,DD 47 7E 1C DE 0C,DD 1A 28 0F A1 DE 09 DD 8A,text,False,False,PENDING
+equipment_name:63,equipment_name,63,?????,0x805A0,0x8019AC9C,0x8019AF08,？？？？？,?????,,3C 3C 3C 3C 3C,D1 D1 D1 D1 D1,text,False,False,PENDING
+equipment_description:0,equipment_description,0,화염 공격 피해 감소,0x80A94,0x8019ADA4,0x801FF5EC,炎系の攻撃に強くなります,불 계열 공격에 강함,,BF DE ED 1C D0 B1 23 DD 19 3E 1D 39 27 2B,DD 13 A1 DD 11 DD 89 A1 DD 10 DD 0A 0E A1 DD 28 DD CF,text,False,False,PENDING
+equipment_description:1,equipment_description,1,냉기 공격 피해 감소,0x80A98,0x8019ADB4,0x801FF5FF,水系の攻撃に強くなります,물 계열 공격에 강함,,B8 DE ED 1C D0 B1 23 DD 19 3E 1D 39 27 2B,6D A1 DD 11 DD 89 A1 DD 10 DD 0A 0E A1 DD 28 DD CF,text,False,False,PENDING
+equipment_description:2,equipment_description,2,헤모지 방지,0x80A9C,0x8019ADC4,0x8019BBA8,<N:ｌ:5>へモジーへを回避します,헤모지 방지,,5B DD 3B 5F 7F 31 5A 2F 9E DD 96 1E 27 2B,DD C3 55 04 A1 DD 29 04,text,False,False,PENDING
+equipment_description:3,equipment_description,3,회복 효과 증가,0x80AA0,0x8019ADD4,0x801FF611,自分の<N:Π:10><N:Ｐ:10>の回復量が大きくなります,자신의 체력 회복량 증가,,A4 B2 1C DD FA DD 90 1C 9E DD 2C DD 46 2A 50 44 3E 1D 39 27 2B,28 3E 0F A1 DD 90 DD 2B A1 7A DD 9F D2 A1 DE 09 0C,text,False,False,PENDING
+equipment_description:4,equipment_description,4,획득 경험치 2배,0x80AA4,0x8019ADEC,0x8019B947,戦闘で入る経験値が2倍になります,획득 경험치 2배,,63 93 30 86 22 DD DE DE 75 DD D2 2A 13 DF 17 23 1D 39 27 2B,DE 79 DE A9 A1 68 DD 54 DD 1F A1 0B DD 93,text,False,False,PENDING
+equipment_description:5,equipment_description,5,마력 10% 상승,0x80AA8,0x8019AE04,0x8019AA54,魔力が10<N:X:20>上昇します,마력 10% 상승,,DD 1B 61 2A 12 11 06 B9 DD 59 1E 27 2B,45 DD 2B A1 4A 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:6,equipment_description,6,수면 방지,0x80AAC,0x8019AE14,0x8019ADB9,<N:ｌ:5><N:眠:5>りへを回避します,수면 방지,,5B DD B9 39 5A 2F 9E DD 96 1E 27 2B,50 3A A1 DD 29 04,text,False,False,PENDING
+equipment_description:7,equipment_description,7,촌가라 방어력 30% 상승,0x80AB0,0x8019AE24,0x801FF623,防御力が30<N:X:20>上昇します（チョン<N:力:5>ラ）,촌가라의 방어력|30% 상승,,DD A6 DD AD 61 2A 14 11 06 B9 DD 59 1E 27 2B 09 6C 69 34 DD 02 57 0A,96 0C 8F 0F A1 DD 29 14 DD 2B E6 01 27 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:8,equipment_description,8,던지기 레벨 +1,0x80AB4,0x8019AE3C,0x8019AAA8,<N:ｌ:5>投げるへが<N:リ:12>ベル1になります,던지기 레벨 1,,5B DE 04 9C 22 5A 2A 6F DD B4 53 12 23 1D 39 27 2B,DD 25 04 24 A1 DD 66 DD EF A1 4A,text,False,False,PENDING
+equipment_description:9,equipment_description,9,공격력 50% 상승,0x80AB8,0x8019AE50,0x8019B8ED,攻撃力が<N:ｃ:12>0<N:X:20>上昇します,공격력 50% 상승,,D0 B1 61 2A 16 11 06 B9 DD 59 1E 27 2B,DD 10 DD 0A DD 2B A1 9E 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:10,equipment_description,10,암흑 방지,0x80ABC,0x8019AE60,0x8019BC14,<N:ｌ:5>暗闇へを回避します,암흑 방지,,5B DE B3 DE B2 5A 2F 9E DD 96 1E 27 2B,DF 6C DF 59 A1 DD 29 04,text,False,False,PENDING
+equipment_description:11,equipment_description,11,명중률 상승,0x80AC0,0x8019AE70,0x801FF637,攻撃が<N:非:1>常に当たりやすくなります,공격이 매우 잘 명중함,,D0 B1 2A DE 5A DE 68 23 DD 42 1F 39 40 2B 3E 1D 39 27 2B,DD 10 DD 0A 03 A1 DD C9 3D A1 DD 4F A1 DD 34 DD 73 DD CF,text,False,False,PENDING
+equipment_description:12,equipment_description,12,던지기가 강력 투척으로 변화,0x80AC4,0x8019AE84,0x8019C586,<N:ｌ:5>投げるへが<N:ｌ:5>ぶん投げるへになります,던지기가 강력 투척으로 변화,,5B DE 04 9C 22 5A 2A 5B CA 2D DE 04 9C 22 5A 23 1D 39 27 2B,DD 25 04 24 0C A1 DD 28 DD 2B A1 DD 39 DF 93 4E D5 A1 80 DD 83,text,False,False,PENDING
+equipment_description:13,equipment_description,13,특정 적에게 추가 피해,0x80AC8,0x8019AE9C,0x8019B6F1,攻撃が特定の敵に強くなります,특정 적에게 추가 피해,,D0 B1 2A DE 96 DD 97 1C BD 23 DD 19 3E 1D 39 27 2B,DE 3A 31 A1 DD 09 0E 41 A1 DF 95 0C A1 DD 3C 2B,text,False,False,PENDING
+equipment_description:14,equipment_description,14,공격이 반드시 명중,0x80ACC,0x8019AEB0,0x8019B834,攻撃が必す当たるようになります,공격이 반드시 명중,,D0 B1 2A DD CC 8C DD 42 1F 22 3D 26 23 1D 39 27 2B,DD 10 DD 0A 03 A1 DD 46 17 29 A1 DD 34 DD 73,text,False,False,PENDING
+equipment_description:15,equipment_description,15,레벨업 시 최대 체력 증가량 상승,0x80AD0,0x8019AEC4,0x8019B43F,<N:リ:12>ベルアッ<N:フ:11>時に<N:Π:10><N:Ｐ:10>の伸びが大きくなります,레벨업 시 최대 체력 증가량 상승,,6F DD B4 53 42 82 DD 55 CF 23 DD FA DD 90 1C DF 31 99 2A 50 44 3E 1D 39 27 2B,DD 66 DD EF DE 9E A1 29 A1 DE 27 37 A1 DD 90 DD 2B A1 DE 09 0C D2 A1 8B 69,text,False,False,PENDING
+equipment_description:16,equipment_description,16,고겐 마력 30% 상승,0x80AD4,0x8019AEE0,0x8019B7B4,魔力が30<N:X:20>上昇します （<N:ニ:13>ーゲン）,고겐 마력 30% 상승,,DD 1B 61 2A 14 11 06 B9 DD 59 1E 27 2B 01 09 DD 3C 31 DD 4D 34 0A,1C DD A9 A1 45 DD 2B A1 27 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:17,equipment_description,17,명중률 상승,0x80AD8,0x8019AEF8,0x801FF64B,攻撃が当たりやすくなります,공격이 잘 명중함,,D0 B1 2A DD 42 1F 39 40 2B 3E 1D 39 27 2B,DD 10 DD 0A 03 A1 DD 4F A1 DD 34 DD 73 DD CF,text,False,False,PENDING
+equipment_description:18,equipment_description,18,민첩 10% 상승,0x80ADC,0x8019AF08,0x8019C8A1,すばやさが10<N:X:20>上昇します,민첩 10% 상승,,2B 58 40 3A 2A 12 11 06 B9 DD 59 1E 27 2B,DD EC DF 5E A1 4A 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:19,equipment_description,19,민첩 30% 상승,0x80AE0,0x8019AF18,0x8019C894,すばやさが30<N:X:20>上昇します,민첩 30% 상승,,2B 58 40 3A 2A 14 11 06 B9 DD 59 1E 27 2B,DD EC DF 5E A1 27 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:20,equipment_description,20,점프 레벨 +1,0x80AE4,0x8019AF28,0x8019AB2C,<N:ｌ:5>ジャン<N:フ:11>へが<N:リ:12>ベル1になります,점프 레벨 1,,5B 7F D6 34 DD 55 5A 2A 6F DD B4 53 12 23 1D 39 27 2B,DD D0 DD 9D A1 DD 66 DD EF A1 4A,text,False,False,PENDING
+equipment_description:21,equipment_description,21,반격률 상승,0x80AE8,0x8019AF3C,0x8019C13A,反撃しやすくなります,반격률 상승,,DE 02 B1 1E 40 2B 3E 1D 39 27 2B,DD 46 DD 0A DF 5B A1 8B 69,text,False,False,PENDING
+equipment_description:22,equipment_description,22,받기 레벨 +1,0x80AEC,0x8019AF48,0x8019AC37,<N:ｌ:5>受け取るへが<N:リ:12>ベル1になります,받기 레벨 1,,5B DD 68 49 DD 29 22 5A 2A 6F DD B4 53 12 23 1D 39 27 2B,DD 19 24 A1 DD 66 DD EF A1 4A,text,False,False,PENDING
+equipment_description:23,equipment_description,23,받기가 되던지기로 변화,0x80AF0,0x8019AF5C,0x8019B844,<N:ｌ:5>受け取るへが<N:ｌ:5>投げ返すへになります,받기가 되던지기로 변화,,5B DD 68 49 DD 29 22 5A 2A 5B DE 04 9C DE 57 2B 5A 23 1D 39 27 2B,DD 19 24 0C A1 73 DD 25 04 24 D5 A1 80 DD 83,text,False,False,PENDING
+equipment_description:24,equipment_description,24,능력 MP 소비 절반,0x80AF4,0x8019AF74,0x801FF65B,半分の<N:∪:20><N:Ｐ:10>で能力を使用できます,특수 능력의 MP 소비량|절반으로 감소,,DF 16 B2 1C DE 4F DD 90 30 DD 80 61 2F DD 33 DD 3E 30 44 27 2B,DE 3A 50 A1 DD ED DD 2B 0F A1 DF 0B DE 07 A1 DD 07 DD 06 D2 E6 01 DD DA DD 46 4E D5 A1 DD 77 DD 07,text,False,False,PENDING
+equipment_description:25,equipment_description,25,공격력 30% 상승,0x80AF8,0x8019AF8C,0x8019B8CF,攻撃力が30<N:X:20>上昇します,공격력 30% 상승,,D0 B1 61 2A 14 11 06 B9 DD 59 1E 27 2B,DD 10 DD 0A DD 2B A1 27 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:26,equipment_description,26,이가 반격 피해 증가,0x80AFC,0x8019AF9C,0x8019B7A4,反撃ダメージが大きくなります（<N:｣:11>ー<N:力:5>）,이가 반격 피해 증가,,DE 02 B1 67 78 31 7F 2A 50 44 3E 1D 39 27 2B 09 65 31 DD 02 0A,03 0C A1 DD 46 DD 0A A1 DD 3C 2B A1 DE 09 0C,text,False,False,PENDING
+equipment_description:27,equipment_description,27,효과 불명,0x80B00,0x8019AFB4,0x8019C20C,効果はわかつていません,효과 불명,,DD C1 DD 1F 28 43 20 29 21 1B 27 59 2D,DE 24 DD 18 A1 DD 13 DD 34,text,False,False,PENDING
+equipment_description:28,equipment_description,28,쿠쿠루 행동 시 주변 아군 회복,0x80B04,0x8019AFC4,0x801FF67D,行動する度まわりの<N:午:15>ャラを回復します（ククル）,쿠쿠루가 행동할 때마다|주변 인물 회복,,74 DC 2B 22 DD 20 27 43 39 1C DD 4E D6 57 2F 9E DD 2C 1E 27 2B 09 4E 4E 53 0A,DD 0C DD 0C DD 42 0C A1 DD 31 DD 32 7D A1 77 45 01 E6 01 40 80 A1 35 6D A1 7A DD 9F,text,False,False,PENDING
+equipment_description:29,equipment_description,29,아이템 드롭률 상승,0x80B08,0x8019AFE0,0x8019B972,敵がア<N:｣:11>テムを落としやすくなります,아이템 드롭률 상승,,BD 2A 42 65 DB D8 2F DD A4 36 1E 40 2B 3E 1D 39 27 2B,09 03 DD 5E A1 17 DE 94 DF 5B A1 8B 69,text,False,False,PENDING
+equipment_description:30,equipment_description,30,적 처치 시 희귀 아이템 획득,0x80B0C,0x8019AFF4,0x8019B459,敵を倒すとほ<N:げ:26>ア<N:｣:11>テムが出ます,적 처치 시 희귀 아이템 획득,,BD 2F DD 83 2B 36 DD 05 D2 42 65 DB D8 2A 56 27 2B,DD 09 A1 DD 8F DD 1F A1 29 A1 DD 43 DE 6C A1 09 03 DD 5E A1 DE 79 DE A9,text,False,False,PENDING
+equipment_description:31,equipment_description,31,효과 불명,0x80B10,0x8019B008,0x8019C20C,効果はわかつていません,효과 불명,,DD C1 DD 1F 28 43 20 29 21 1B 27 59 2D,DE 24 DD 18 A1 DD 13 DD 34,text,False,False,PENDING
+equipment_description:32,equipment_description,32,석화 방지,0x80B14,0x8019B018,0x8019BB84,<N:ｌ:5>石化へを回避します,석화 방지,,5B 94 DD 7C 5A 2F 9E DD 96 1E 27 2B,DD 8B DD 83 A1 DD 29 04,text,False,False,PENDING
+equipment_description:33,equipment_description,33,아크 전용 효과 불명,0x80B18,0x8019B028,0x8019B67A,効果はわかつていません （アーク）,아크 전용 효과 불명,,DD C1 DD 1F 28 43 20 29 21 1B 27 59 2D 01 09 42 31 4E 0A,09 58 A1 4F DD 1A A1 DE 24 DD 18 A1 DD 13 DD 34,text,False,False,PENDING
+equipment_description:34,equipment_description,34,마력 50% 상승,0x80B1C,0x8019B03C,0x8019AA60,魔力が<N:ｃ:12>0<N:X:20>上昇します,마력 50% 상승,,DD 1B 61 2A 16 11 06 B9 DD 59 1E 27 2B,45 DD 2B A1 9E 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:35,equipment_description,35,마력 30% 상승,0x80B20,0x8019B04C,0x8019AA48,魔力が30<N:X:20>上昇します,마력 30% 상승,,DD 1B 61 2A 14 11 06 B9 DD 59 1E 27 2B,45 DD 2B A1 27 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:36,equipment_description,36,포코의 방향 전환 효과가 전체화,0x80B24,0x8019B05C,0x801FF69A,<N:ｌ:5>向き直りの笛への効果が<N:∪:20><N:∧:11><N:Ｐ:10>全体（ポニ）,방향전환 피리 효과가|전장 전체로 확대(포코),,5B DD 01 44 DD 85 39 1C DE 2F 5A 1C DD C1 DD 1F 2A DE 4F DE 83 DD 90 DD 08 DD 2D 09 D7 D1 0A,DD 29 DD B2 4F DD 65 A1 DD 3C 2E A1 DE 24 DD 18 0C E6 01 4F 56 A1 4F DD 90 D5 A1 DE 2B 37 A0 DD 78 DD 40 9C,text,False,False,PENDING
+equipment_description:37,equipment_description,37,독 방지,0x80B28,0x8019B07C,0x8019AE76,<N:ｌ:5><N:毒:1>へを回避します,독 방지,,5B DD CF 5A 2F 9E DD 96 1E 27 2B,DF 22 A1 DD 29 04,text,False,False,PENDING
+equipment_description:38,equipment_description,38,방어력 50% 상승,0x80B2C,0x8019B088,0x8019C73C,防御力が<N:ｃ:12>0<N:X:20>上昇します,방어력 50% 상승,,DD A6 DD AD 61 2A 16 11 06 B9 DD 59 1E 27 2B,DD 29 14 DD 2B A1 9E 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:39,equipment_description,39,방어력 30% 상승,0x80B30,0x8019B098,0x8019C720,防御力が30<N:X:20>上昇します,방어력 30% 상승,,DD A6 DD AD 61 2A 14 11 06 B9 DD 59 1E 27 2B,DD 29 14 DD 2B A1 27 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:40,equipment_description,40,방어율 상승,0x80B34,0x8019B0A8,0x8019BB06,防御しやすくなります,방어율 상승,,DD A6 DD AD 1E 40 2B 3E 1D 39 27 2B,DD 29 14 DE A6 A1 8B 69,text,False,False,PENDING
+equipment_description:41,equipment_description,41,고겐 공격력 70% 상승,0x80B38,0x8019B0B8,0x8019B52F,攻撃力が<N:７:11>0<N:X:20>上昇します（<N:ニ:13>ーゲン）,고겐 공격력 70% 상승,,D0 B1 61 2A 18 11 06 B9 DD 59 1E 27 2B 09 DD 3C 31 DD 4D 34 0A,1C DD A9 A1 DD 10 DD 0A DD 2B A1 9A 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:42,equipment_description,42,이가 심안법 범위 확장,0x80B3C,0x8019B0D0,0x8019B794,<N:ｌ:5>心<N:眼:3>法への<N:乾:16>囲が広くなります（<N:｣:11>ー<N:力:5>）,이가 심안법 범위 확장,,5B DD 11 DE 7B DD 51 5A 1C DE 93 DF 5B 2A DF 43 3E 1D 39 27 2B 09 65 31 DD 02 0A,03 0C A1 9D 94 DD 37 A1 DE 63 8E A1 DE 2B 56,text,False,False,PENDING
+equipment_description:43,equipment_description,43,촌가라가 소환수 경험치 획득,0x80B40,0x8019B0EC,0x801FF6BF,召喚<N:午:15>ャラの経験値が自分に入ります（チョン<N:力:5>ラ）,소환수가 얻은 경험치를|촌가라가 받음,,DD 78 DD 7B DD 4E D6 57 1C DD DE DE 75 DD D2 2A A4 B2 23 86 39 27 2B 09 6C 69 34 DD 02 57 0A,DD 07 DD 65 50 0C A1 DD 9C 26 A1 68 DD 54 DD 1F 36 E6 01 96 0C 8F 0C A1 DD 19 8D,text,False,False,PENDING
+equipment_description:44,equipment_description,44,침묵 방지,0x80B44,0x8019B10C,0x8019BBC3,<N:ｌ:5>沈黙へを回避します,침묵 방지,,5B DF 1E DE 8B 5A 2F 9E DD 96 1E 27 2B,DE 06 DF 5F A1 DD 29 04,text,False,False,PENDING
+equipment_description:45,equipment_description,45,회피율 상승,0x80B48,0x8019B11C,0x8019C319,攻撃を避けやすくなります,회피율 상승,,D0 B1 2F DD 96 49 40 2B 3E 1D 39 27 2B,7A DD 3C DE A6 A1 8B 69,text,False,False,PENDING
+equipment_description:46,equipment_description,46,공격력 10% 상승,0x80B4C,0x8019B12C,0x8019B8DE,攻撃力が10<N:X:20>上昇します,공격력 10% 상승,,D0 B1 61 2A 12 11 06 B9 DD 59 1E 27 2B,DD 10 DD 0A DD 2B A1 4A 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:47,equipment_description,47,피해 편차 증가,0x80B50,0x8019B13C,0x801FF6DB,<N:与:3>えるダメージの当たりはすれが大きくなります,주는 피해량의|차이가 커진다,,DD 3F 46 22 67 78 31 7F 1C DD 42 1F 39 28 8C 32 2A 50 44 3E 1D 39 27 2B,40 06 A1 DD 3C 2B D2 0F E6 01 DD B7 03 0C A1 DD F6 DD 3F 01,text,False,False,PENDING
+equipment_description:48,equipment_description,48,쿠쿠루 부활 시 최대 체력 회복,0x80B54,0x8019B158,0x801FF6F0,復活魔法で<N:Π:10><N:Ｐ:10>最大で復活します（ククル）,부활 마법을 받으면|체력 전부 회복(쿠쿠루),,DD 2C DE 49 DD 1B DD 51 30 DD FA DD 90 DD 2B 50 30 DD 2C DE 49 1E 27 2B 09 4E 4E 53 0A,6C DD E1 A1 45 DD 37 0D A1 DD 19 4E 3A E6 01 DD 90 DD 2B A1 4F 6C A1 7A DD 9F A0 DD 0C DD 0C DD 42 9C,text,False,False,PENDING
+equipment_description:49,equipment_description,49,피해 편차 증가,0x80B58,0x8019B178,0x8019C846,当たりはすれが大きくなります,피해 편차 증가,,DD 42 1F 39 28 8C 32 2A 50 44 3E 1D 39 27 2B,DD 3C 2B A1 DD 79 DD B7 A1 DE 09 0C,text,False,False,PENDING
+equipment_description:50,equipment_description,50,방어력 10% 상승,0x80B5C,0x8019B188,0x8019C72E,防御力が10<N:X:20>上昇します,방어력 10% 상승,,DD A6 DD AD 61 2A 12 11 06 B9 DD 59 1E 27 2B,DD 29 14 DD 2B A1 4A 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:51,equipment_description,51,효과 불명,0x80B60,0x8019B198,0x8019C20C,効果はわかつていません,효과 불명,,DD C1 DD 1F 28 43 20 29 21 1B 27 59 2D,DE 24 DD 18 A1 DD 13 DD 34,text,False,False,PENDING
+equipment_description:52,equipment_description,52,효과 불명,0x80B64,0x8019B1A8,0x8019C20C,効果はわかつていません,효과 불명,,DD C1 DD 1F 28 43 20 29 21 1B 27 59 2D,DE 24 DD 18 A1 DD 13 DD 34,text,False,False,PENDING
+equipment_description:53,equipment_description,53,효과 불명,0x80B68,0x8019B1B8,0x8019C20C,効果はわかつていません,효과 불명,,DD C1 DD 1F 28 43 20 29 21 1B 27 59 2D,DE 24 DD 18 A1 DD 13 DD 34,text,False,False,PENDING
+equipment_description:54,equipment_description,54,효과 불명,0x80B6C,0x8019B1C8,0x8019C20C,効果はわかつていません,효과 불명,,DD C1 DD 1F 28 43 20 29 21 1B 27 59 2D,DE 24 DD 18 A1 DD 13 DD 34,text,False,False,PENDING
+equipment_description:55,equipment_description,55,매 행동 체력 회복,0x80B70,0x8019B1D8,0x801FF713,行動するたびに<N:Π:10><N:Ｐ:10>が回復します,행동할 때마다 체력 회복,,74 DC 2B 22 1F 99 23 DD FA DD 90 2A 9E DD 2C 1E 27 2B,DD 31 DD 32 7D A1 77 45 01 A1 DD 90 DD 2B A1 7A DD 9F,text,False,False,PENDING
+equipment_description:56,equipment_description,56,토슈 공격 명중률 상승,0x80B74,0x8019B1EC,0x801FF726,攻撃が<N:非:1>常に当たりやすくなります（トッシュ）,토슈의 공격이|매우 잘 명중함,,D0 B1 2A DE 5A DE 68 23 DD 42 1F 39 40 2B 3E 1D 39 27 2B 09 5C 82 60 AB 0A,83 DD 86 0F A1 DD 10 DD 0A 03 E6 01 DD C9 3D A1 DD 4F A1 DD 34 DD 73 DD CF,text,False,False,PENDING
+equipment_description:57,equipment_description,57,모든 상태 이상 방지,0x80B78,0x8019B208,0x8019B893,全ステータスしょう害を回避します,모든 상태 이상 방지,,DD 08 47 DB 31 62 47 1E 73 26 DE 7E 2F 9E DD 96 1E 27 2B,55 DD 26 A1 8B DD D2 A1 03 8B A1 DD 29 04,text,False,False,PENDING
+equipment_description:58,equipment_description,58,포코 마력 30% 상승,0x80B7C,0x8019B21C,0x8019B6BE,魔力が30<N:X:20>上昇します （ポニ）,포코 마력 30% 상승,,DD 1B 61 2A 14 11 06 B9 DD 59 1E 27 2B 01 09 D7 D1 0A,DD 78 DD 40 A1 45 DD 2B A1 27 91 DD B8 A1 8B 69,text,False,False,PENDING
+equipment_description:59,equipment_description,59,마비 방지,0x80B80,0x8019B230,0x8019BCBD,<N:ｌ:5>マ<N:ヒ:5>へを回避します,마비 방지,,5B 64 DD B5 5A 2F 9E DD 96 1E 27 2B,45 DD 06 A1 DD 29 04,text,False,False,PENDING
+equipment_description:60,equipment_description,60,토슈 앵화뇌폭참에 마비 부여,0x80B84,0x8019B240,0x801FF740,桜花雷爆斬でマ<N:ヒ:5>させることができます（トッシュ）,토슈의 앵화뇌폭참에|마비 효과 추가,,DE 3C DE 1B DD A5 DD 41 DD 5C 30 64 DD B5 3A 59 22 2E 36 2A 30 44 27 2B 09 5C 82 60 AB 0A,83 DD 86 0F A1 EA 5B DD 83 EA 26 DD 62 DD 4C 0E E6 01 45 DD 06 A1 DE 24 DD 18 A1 EA 72 0C,text,False,False,PENDING
+equipment_description:61,equipment_description,61,특정 적에게 추가 피해,0x80B88,0x8019B260,0x8019B6F1,攻撃が特定の敵に強くなります,특정 적에게 추가 피해,,D0 B1 2A DE 96 DD 97 1C BD 23 DD 19 3E 1D 39 27 2B,DE 3A 31 A1 DD 09 0E 41 A1 DF 95 0C A1 DD 3C 2B,text,False,False,PENDING
+equipment_description:62,equipment_description,62,아크 매 행동 MP 회복,0x80B8C,0x8019B274,0x801FF75F,行動するごとに<N:∪:20><N:Ｐ:10>が回復します（アーク）,아크가 행동할 때마다|MP 회복,,74 DC 2B 22 79 36 23 DE 4F DD 90 2A 9E DD 2C 1E 27 2B 09 42 31 4E 0A,09 58 0C A1 DD 31 DD 32 7D A1 77 45 01 E6 01 DF 0B DE 07 A1 7A DD 9F,text,False,False,PENDING
+equipment_description:63,equipment_description,63,?????,0x80B90,0x8019B28C,0x8019AF08,？？？？？,?????,,3C 3C 3C 3C 3C,D1 D1 D1 D1 D1,text,False,False,PENDING
+consumable_name:0,consumable_name,0,끈끈이,0x80C9C,0x8019B394,0x8019AF50,ねばねば,끈끈이,,4C 58 4C 58,DE 40 DE 40 03,text,False,False,PENDING
+consumable_name:1,consumable_name,1,의욕 젤리,0x80CA0,0x8019B39C,0x8019BC2D,やる気<N:г:23>リー,의욕 젤리,,40 22 A9 DD F8 6B 31,0F DD E3 A1 DF 8F 2E,text,False,False,PENDING
+consumable_name:2,consumable_name,2,넘치는 열매,0x80CA4,0x8019B3A4,0x8019C00A,みなぎる果実,넘치는 열매,,6D 1D DD 7D 22 DD 1F DE 37,DD F4 DD 1F 06 A1 DD 89 DD C9,text,False,False,PENDING
+consumable_name:3,consumable_name,3,회복 열매,0x80CA8,0x8019B3B0,0x8019C322,回復果物,회복 열매,,9E DD 2C DD 1F DD 49,7A DD 9F A1 DD 89 DD C9,text,False,False,PENDING
+consumable_name:4,consumable_name,4,마비 사과,0x80CAC,0x8019B3B8,0x8019BCAD,しびれるりんご,마비 사과,,1E 99 32 22 39 2D 79,45 DD 06 A1 34 DD 18,text,False,False,PENDING
+consumable_name:5,consumable_name,5,돌,0x80CB0,0x8019B3C0,0x8019B712,石,돌,,94,72,text,False,False,PENDING
+consumable_name:6,consumable_name,6,레코의 풀,0x80CB4,0x8019B3C4,0x8019BB69,<N:リ:12>ニの草,레코의 풀,,6F D1 1C DD 65,DD 66 DD 40 0F A1 DE 45,text,False,False,PENDING
+consumable_name:7,consumable_name,7,약초,0x80CB8,0x8019B3CC,0x8019B077,薬草,약초,,DD 58 DD 65,DD 48 39,text,False,False,PENDING
+consumable_name:8,consumable_name,8,독초,0x80CBC,0x8019B3D4,0x8019B07F,<N:毒:1>薬,독초,,DD CF DD 58,DF 22 39,text,False,False,PENDING
+consumable_name:9,consumable_name,9,루우의 약,0x80CC0,0x8019B3DC,0x8019BDA5,ルウの薬,루우의 약,,53 71 1C DD 58,DD 42 3D 0F A1 DD 48,text,False,False,PENDING
+consumable_name:10,consumable_name,10,민첩의 약,0x80CC4,0x8019B3E4,0x8019BBB1,すばやさの薬,민첩의 약,,2B 58 40 3A 1C DD 58,DD EC DF 5E 0F A1 DD 48,text,False,False,PENDING
+consumable_name:11,consumable_name,11,작은 폭탄,0x80CC8,0x8019B3EC,0x8019BB45,小さい爆弾,작은 폭탄,,DD 88 3A 1B DD 41 DE 06,DD 64 26 A1 DD 62 DD D1,text,False,False,PENDING
+consumable_name:12,consumable_name,12,큰 폭탄,0x80CCC,0x8019B3F8,0x8019ADF1,大きい爆弾,큰 폭탄,,50 44 1B DD 41 DE 06,AA A1 DD 62 DD D1,text,False,False,PENDING
+consumable_name:13,consumable_name,13,만능약,0x80CD0,0x8019B400,0x8019AEB4,万能薬,만능약,,DF 0B DD 80 DD 58,38 DD ED DD 48,text,False,False,PENDING
+consumable_name:14,consumable_name,14,성수,0x80CD4,0x8019B408,0x8019B06B,聖水,성수,,CD B8,DD 17 50,text,False,False,PENDING
+consumable_name:15,consumable_name,15,부활약,0x80CD8,0x8019B40C,0x8019AED2,復活の薬,부활약,,DD 2C DE 49 1C DD 58,6C DD E1 DD 48,text,False,False,PENDING
+consumable_name:16,consumable_name,16,공격 항아리,0x80CDC,0x8019B414,0x8019C0D6,攻撃瓶,공격 항아리,,D0 B1 DE C0,DD 10 DD 0A A1 DD F2 09 2E,text,False,False,PENDING
+consumable_name:17,consumable_name,17,수면 구슬,0x80CE0,0x8019B41C,0x8019ADB2,<N:眠:5>り玉,수면 구슬,,DD B9 39 DE EF,50 3A A1 87 DD FC,text,False,False,PENDING
+consumable_name:18,consumable_name,18,약화 구슬,0x80CE4,0x8019B424,0x8019BB21,弱りの玉,약화 구슬,,DD ED 39 1C DE EF,DD 48 DD 83 A1 87 DD FC,text,False,False,PENDING
+consumable_name:19,consumable_name,19,힘의 열매,0x80CE8,0x8019B42C,0x8019BD1D,ちからの実,힘의 열매,,4B 20 33 1C DE 37,74 0F A1 DD 89 DD C9,text,False,False,PENDING
+consumable_name:20,consumable_name,20,파로의 열매,0x80CEC,0x8019B434,0x8019C194,パロの実,파로의 열매,,A3 A2 1C DE 37,DD 7B D5 0F A1 DD 89 DD C9,text,False,False,PENDING
+consumable_name:21,consumable_name,21,생명의 열매,0x80CF0,0x8019B43C,0x8019AC58,いのちの木の実,생명의 열매,,1B 1C 4B 1C DF 0A 1C DE 37,DD 36 DD 34 0F A1 DD 89 DD C9,text,False,False,PENDING
+consumable_name:22,consumable_name,22,마력의 잎,0x80CF4,0x8019B448,0x8019BCCD,魔力の葉,마력의 잎,,DD 1B 61 1C DD 61,45 DD 2B 0F A1 DF 8D,text,False,False,PENDING
+consumable_name:23,consumable_name,23,마력의 샘,0x80CF8,0x8019B450,0x8019BCC5,魔力の泉,마력의 샘,,DD 1B 61 1C DF 2B,45 DD 2B 0F A1 DE CC,text,False,False,PENDING
+consumable_name:24,consumable_name,24,눈가림 풀,0x80CFC,0x8019B458,0x8019BBCC,目つぶしの草,눈가림 풀,,AC 45 CA 1E 1C DD 65,DE 0D 0C DE 29 A1 DE 45,text,False,False,PENDING
+consumable_name:25,consumable_name,25,쓴 잎,0x80D00,0x8019B460,0x8019AF56,苦い葉,쓴 잎,,DD F3 1B DD 61,DE B1 A1 DF 8D,text,False,False,PENDING
+consumable_name:26,consumable_name,26,석화 해제침,0x80D04,0x8019B468,0x8019C1B2,石解け<N:ハ:12>リ,석화 해제침,,94 DD 34 49 DD A2 6B,DD 8B DD 83 A1 2B 66 DE 06,text,False,False,PENDING
+consumable_name:27,consumable_name,27,침묵 해제침,0x80D08,0x8019B470,0x8019C202,痛烈な<N:ハ:12>リ,침묵 해제침,,DE 30 DE 85 1D DD A2 6B,DE 06 DF 5F A1 2B 66 DE 06,text,False,False,PENDING
+consumable_name:28,consumable_name,28,소환 항아리,0x80D0C,0x8019B47C,0x8019C0CC,召喚のつ<N:げ:26>,소환 항아리,,DD 78 DD 7B 1C 45 D2,DD 07 DD 65 A1 DD F2 09 2E,text,False,False,PENDING
+consumable_name:29,consumable_name,29,?????,0x80D10,0x8019B484,0x8019AF08,？？？？？,?????,,3C 3C 3C 3C 3C,D1 D1 D1 D1 D1,text,False,False,PENDING
+consumable_name:30,consumable_name,30,?????,0x80D14,0x8019B48C,0x8019AF08,？？？？？,?????,,3C 3C 3C 3C 3C,D1 D1 D1 D1 D1,text,False,False,PENDING
+consumable_name:31,consumable_name,31,?????,0x80D18,0x8019B494,0x8019AF08,？？？？？,?????,,3C 3C 3C 3C 3C,D1 D1 D1 D1 D1,text,False,False,PENDING
+consumable_description:0,consumable_description,0,민첩 일시 감소,0x80F14,0x8019B51C,0x8019C8AE,一時的にすばやさを下げます,민첩 일시 감소,,8E CF DD 53 23 2B 58 40 3A 2F 70 9C 27 2B,DD EC DF 5E A1 6B 29 A1 DD 77 DD 07,text,False,False,PENDING
+consumable_description:1,consumable_description,1,헤모지 회복,0x80F18,0x8019B52C,0x8019BB9F,<N:ｌ:5>へモジーへを元に戻します,헤모지 회복,,5B DD 3B 5F 7F 31 5A 2F DE 74 23 D9 1E 27 2B,DD C3 55 04 A1 7A DD 9F,text,False,False,PENDING
+consumable_description:2,consumable_description,2,LV 1 상승,0x80F1C,0x8019B53C,0x8019C162,<N:リ:12>ベルアッ<N:フ:11>します,레벨 1 상승,,6F DD B4 53 42 82 DD 55 1E 27 2B,DD 66 DD EF A1 4A A1 8B 69,text,False,False,PENDING
+consumable_description:3,consumable_description,3,체력 60 회복,0x80F20,0x8019B548,0x8019AB20,<N:Π:10><N:Ｐ:10>が<N:ｃ:9>0ポ<N:｣:11>ント回復します,체력 60 회복,,DD FA DD 90 2A 17 11 D7 65 34 5C 9E DD 2C 1E 27 2B,DD 90 DD 2B A1 9F 91 A1 7A DD 9F,text,False,False,PENDING
+consumable_description:4,consumable_description,4,마비 부여,0x80F24,0x8019B55C,0x801FF777,しびれて動けなくなります,마비로 움직일 수 없음,,1E 99 32 21 DC 49 1D 3E 1D 39 27 2B,45 DD 06 D5 A1 DD 70 DD 7C 6B A1 50 A1 71 8D,text,False,False,PENDING
+consumable_description:5,consumable_description,5,던져서 피해,0x80F28,0x8019B56C,0x8019C0FE,ぶつけてダメージを<N:与:3>えます,던져서 피해,,CA 45 49 21 67 78 31 7F 2F DD 3F 46 27 2B,DD 25 DD 63 25 A1 DD 3C 2B,text,False,False,PENDING
+consumable_description:6,consumable_description,6,방어력 상승,0x80F2C,0x8019B57C,0x8019BAFD,防御力が上がります,방어력 상승,,DD A6 DD AD 61 2A B9 2A 39 27 2B,DD 29 14 DD 2B A1 8B 69,text,False,False,PENDING
+consumable_description:7,consumable_description,7,체력 20 회복,0x80F30,0x8019B588,0x8019AB14,<N:Π:10><N:Ｐ:10>が20ポ<N:｣:11>ント回復します,체력 20 회복,,DD FA DD 90 2A 13 11 D7 65 34 5C 9E DD 2C 1E 27 2B,DD 90 DD 2B A1 0B 91 A1 7A DD 9F,text,False,False,PENDING
+consumable_description:8,consumable_description,8,독 부여,0x80F34,0x8019B59C,0x801FF787,<N:毒:1>を<N:振:2>りまきます,독을 퍼지게 함,,DD CF 2F DE D9 39 27 44 27 2B,EA 2A 0D A1 DE 78 04 41 A1 DD CF,text,False,False,PENDING
+consumable_description:9,consumable_description,9,마비 회복,0x80F38,0x8019B5A8,0x8019BCB5,しびれを取りのぞきます,마비 회복,,1E 99 32 2F DD 29 39 1C 6A 44 27 2B,45 DD 06 A1 7A DD 9F,text,False,False,PENDING
+consumable_description:10,consumable_description,10,민첩 일시 상승,0x80F3C,0x8019B5B8,0x8019BFFF,一時的にすばやさを上げます,민첩 일시 상승,,8E CF DD 53 23 2B 58 40 3A 2F B9 9C 27 2B,DD EC DF 5E A1 6B 29 A1 8B 69,text,False,False,PENDING
+consumable_description:11,consumable_description,11,폭발 피해,0x80F40,0x8019B5C8,0x8019BB3C,爆発します,폭발 피해,,DD 41 76 1E 27 2B,DD 62 DD 0E A1 DD 3C 2B,text,False,False,PENDING
+consumable_description:12,consumable_description,12,큰 폭발 피해,0x80F44,0x8019B5D0,0x8019AC0B,爆発します,큰 폭발 피해,,DD 41 76 1E 27 2B,AA A1 DD 62 DD 0E A1 DD 3C 2B,text,False,False,PENDING
+consumable_description:13,consumable_description,13,대부분의 상태 이상 회복,0x80F48,0x8019B5D8,0x8019B7C4,ほとんどのステータス傷害を回復します,대부분의 상태 이상 회복,,DD 05 36 2D 54 1C 47 DB 31 62 47 DE 6A DE 7E 2F 9E DD 2C 1E 27 2B,37 6C 92 0F A1 8B DD D2 A1 03 8B A1 7A DD 9F,text,False,False,PENDING
+consumable_description:14,consumable_description,14,독 회복,0x80F4C,0x8019B5F0,0x8019AE6F,<N:毒:1>を取りのぞきます,독 회복,,DD CF 2F DD 29 39 1C 6A 44 27 2B,DF 22 A1 7A DD 9F,text,False,False,PENDING
+consumable_description:15,consumable_description,15,쓰러진 대상 부활,0x80F50,0x8019B5FC,0x8019C887,戦闘不能<N:午:15>ャラクタを復活させます,쓰러진 대상 부활,,63 93 DD 71 DD 80 DD 4E D6 57 4E 62 2F DD 2C DE 49 3A 59 27 2B,DD 85 20 DD 3F A1 37 8B A1 6C DD E1,text,False,False,PENDING
+consumable_description:16,consumable_description,16,공격력 일시 상승,0x80F54,0x8019B614,0x8019C812,一時的に攻撃力を上げます,공격력 일시 상승,,8E CF DD 53 23 D0 B1 61 2F B9 9C 27 2B,DD 10 DD 0A DD 2B A1 6B 29 A1 8B 69,text,False,False,PENDING
+consumable_description:17,consumable_description,17,수면 부여,0x80F58,0x8019B624,0x8019AECC,<N:眠:5>らせます,수면 부여,,DD B9 33 59 27 2B,50 3A A1 6C 1A,text,False,False,PENDING
+consumable_description:18,consumable_description,18,공격 방어 일시 감소,0x80F5C,0x8019B62C,0x801FF793,一時的に攻撃力・防御力を下げます,공격력과 방어력이|일시적으로 감소,,8E CF DD 53 23 D0 B1 61 2C DD A6 DD AD 61 2F 70 9C 27 2B,DD 10 DD 0A DD 2B DD 18 A1 DD 29 14 DD 2B 03 E6 01 6B 29 DD 09 4E D5 A1 DD 77 DD 07,text,False,False,PENDING
+consumable_description:19,consumable_description,19,공격력 상승,0x80F60,0x8019B640,0x8019C0E0,攻撃力が上がります,공격력 상승,,D0 B1 61 2A B9 2A 39 27 2B,DD 10 DD 0A DD 2B A1 8B 69,text,False,False,PENDING
+consumable_description:20,consumable_description,20,민첩 상승,0x80F64,0x8019B64C,0x8019BE05,すばやさが上がります,민첩 상승,,2B 58 40 3A 2A B9 2A 39 27 2B,DD EC DF 5E A1 8B 69,text,False,False,PENDING
+consumable_description:21,consumable_description,21,최대 체력 2 상승,0x80F68,0x8019B658,0x8019C774,<N:Π:10><N:Ｐ:10>の最大値が2ポ<N:｣:11>ント上がります,최대 체력 2 상승,,DD FA DD 90 1C DD 2B 50 DD D2 2A 13 D7 65 34 5C B9 2A 39 27 2B,DE 27 37 A1 DD 90 DD 2B A1 0B A1 8B 69,text,False,False,PENDING
+consumable_description:22,consumable_description,22,마력 상승,0x80F6C,0x8019B670,0x8019ADA4,魔力が上がります,마력 상승,,DD 1B 61 2A B9 2A 39 27 2B,45 DD 2B A1 8B 69,text,False,False,PENDING
+consumable_description:23,consumable_description,23,최대 마력 2 상승,0x80F70,0x8019B67C,0x801FF7B0,<N:∪:20><N:Ｐ:10>の最大値が2ポ<N:｣:11>ント上がります,최대 MP 2 상승,,DE 4F DD 90 1C DD 2B 50 DD D2 2A 13 D7 65 34 5C B9 2A 39 27 2B,DE 27 37 A1 DF 0B DE 07 A1 0B A1 8B 69,text,False,False,PENDING
+consumable_description:24,consumable_description,24,명중률 감소,0x80F74,0x8019B694,0x801FF7BE,<N:振:2>りまくと、目が見えなくなります,사용하면 눈이|보이지 않게 함,,DE D9 39 27 3E 36 24 AC 2A A0 46 1D 3E 1D 39 27 2B,34 DD 1A 19 3A A1 DE 0D 03 E6 01 60 03 04 A1 78 41 A1 DD CF,text,False,False,PENDING
+consumable_description:25,consumable_description,25,방어력 일시 상승,0x80F78,0x8019B6A8,0x8019AAB4,一時的に防御力を上げます,방어력 일시 상승,,8E CF DD 53 23 DD A6 DD AD 61 2F B9 9C 27 2B,DD 29 14 DD 2B A1 6B 29 A1 8B 69,text,False,False,PENDING
+consumable_description:26,consumable_description,26,석화 회복,0x80F7C,0x8019B6B8,0x8019BB7B,石化から元に戻ります,석화 회복,,94 DD 7C 20 33 DE 74 23 D9 39 27 2B,DD 8B DD 83 A1 7A DD 9F,text,False,False,PENDING
+consumable_description:27,consumable_description,27,침묵 회복,0x80F80,0x8019B6C8,0x801FF7D3,封じられた魔法が使えるようになります,봉인된 마법을|다시 쓸 수 있게 함,,DD 0F 4A 33 32 1F DD 1B DD 51 2A DD 33 46 22 3D 26 23 1D 39 27 2B,DD B6 35 DD C6 A1 45 DD 37 0D E6 01 01 29 A1 DE 57 A1 50 A1 1F 41 A1 DD CF,text,False,False,PENDING
+consumable_description:28,consumable_description,28,촌가라의 몬스터 소환,0x80F84,0x8019B6E0,0x801FF7ED,チョン<N:力:5>ラがモンスターを召喚するのに使います,촌가라가 몬스터를|소환할 때 사용,,6C 69 34 DD 02 57 2A 5F 34 47 62 31 2F DD 78 DD 7B 2B 22 1C 23 DD 33 1B 27 2B,96 0C 8F 0C A1 64 30 02 36 E6 01 DD 07 DD 65 7D A1 77 A1 34 DD 1A,text,False,False,PENDING
+consumable_description:29,consumable_description,29,?????,0x80F88,0x8019B6FC,0x8019AF08,？？？？？,?????,,3C 3C 3C 3C 3C,D1 D1 D1 D1 D1,text,False,False,PENDING
+consumable_description:30,consumable_description,30,?????,0x80F8C,0x8019B704,0x8019AF08,？？？？？,?????,,3C 3C 3C 3C 3C,D1 D1 D1 D1 D1,text,False,False,PENDING
+consumable_description:31,consumable_description,31,?????,0x80F90,0x8019B70C,0x8019AF08,？？？？？,?????,,3C 3C 3C 3C 3C,D1 D1 D1 D1 D1,text,False,False,PENDING
+skill_name:0,skill_name,0,,0x811C0,0x8019B794,0x8019B0AD,,,,,,text,True,True,PENDING
+skill_name:1,skill_name,1,번 그라운드,0x811C4,0x8019B798,0x8019ADEA,バーン<N:ク:12>ラウント,번 그라운드,,AF 31 34 80 57 71 34 95,9B A1 15 8F 86 17,text,False,False,PENDING
+skill_name:2,skill_name,2,토탈 힐링,0x811C8,0x8019B7A4,0x8019C32B,トータル<N:ヒ:5>ーリン<N:ク:12>,토탈 힐링,,5C 31 62 53 DD B5 31 6B 34 80,83 DE 14 A1 DF 5D DE 54,text,False,False,PENDING
+skill_name:3,skill_name,3,게일 플래시,0x811CC,0x8019B7B0,0x8019C2D1,ゲ<N:｣:11>ルフラッシュ,게일 플래시,,DD 4D 65 53 A6 57 82 60 AB,41 6B A1 DE 36 DD 12 29,text,False,False,PENDING
+skill_name:4,skill_name,4,슬로우 에너미,0x811D0,0x8019B7BC,0x8019C1EE,スロウエ<N:ネ:13>ミー,슬로우 에너미,,47 A2 71 DD 23 DD C6 DD 3A 31,DD FC D5 3D A1 0E 89 DD 2F,text,False,False,PENDING
+skill_name:5,skill_name,5,메테오 폴,0x811D4,0x8019B7C8,0x8019BB0F,メテオフ<N:｣:13>ール,메테오 폴,,78 DB 8F A6 DE B4 31 53,DD 2C DD BE 46 A1 DF 56,text,False,False,PENDING
+skill_name:6,skill_name,6,큐어,0x811D8,0x8019B7D4,0x8019B08B,<N:午:15>ュア,큐어,,DD 4E AB 42,DF 98 14,text,False,False,PENDING
+skill_name:7,skill_name,7,디포이즌,0x811DC,0x8019B7DC,0x8019BDF5,デポ<N:｣:11><N:ス:15>ン,디포이즌,,81 D7 65 DE 1F 34,DD CD DD 78 03 DF 90,text,False,False,PENDING
+skill_name:8,skill_name,8,사일런트,0x811E0,0x8019B7E4,0x8019BEDA,サ<N:｣:11><N:リ:12>ント,사일런트,,77 65 6F 34 5C,34 6B DD 2A DD 5B,text,False,False,PENDING
+skill_name:9,skill_name,9,리프레시,0x811E4,0x8019B7EC,0x8019BEC5,リフ<N:リ:12>ッシュ,리프레시,,6B A6 6F 82 60 AB,2E DD 9D DD 66 29,text,False,False,PENDING
+skill_name:10,skill_name,10,천벌,0x811E8,0x8019B7F4,0x8019B00E,天のさばき,천벌,,DD 26 1C 3A 58 44,DD E7 DD E4,text,False,False,PENDING
+skill_name:11,skill_name,11,리저렉션,0x811EC,0x8019B7FC,0x8019BC65,リ<N:ザ:8><N:リ:12>クション,리저렉션,,6B DD C8 6F 4E 60 69 34,2E DD 24 DF 2A DF 67,text,False,False,PENDING
+skill_name:12,skill_name,12,디바이드,0x811F0,0x8019B808,0x8019AE45,デ<N:ｲ:6>バ<N:｣:11>ト,디바이드,,81 DD 03 AF 65 95,DD CD DD 08 03 17,text,False,False,PENDING
+skill_name:13,skill_name,13,앵화뇌폭참,0x811F4,0x8019B810,0x8019C020,桜花雷爆斬,앵화뇌폭참,,DE 3C DE 1B DD A5 DD 41 DD 5C,DF 6E DD 83 DF 1E DD 62 DD 4C,text,False,False,PENDING
+skill_name:14,skill_name,14,주박검,0x811F8,0x8019B81C,0x8019AEBA,呪縛剣,주박검,,DE 35 DE 94 DD 8D,40 DE 9F DD A1,text,False,False,PENDING
+skill_name:15,skill_name,15,진공참,0x811FC,0x8019B824,0x8019AE14,<N:真:2><N:空:2>斬,진공참,,DE 9F DD 18 DD 5C,DD 3F DD 10 DD 4C,text,False,False,PENDING
+skill_name:16,skill_name,16,호영참,0x81200,0x8019B82C,0x8019AF02,<N:虎:5><N:影:1>斬,호영참,,DE E9 DE 81 DD 5C,95 DD FA DD 4C,text,False,False,PENDING
+skill_name:17,skill_name,17,전투의 북,0x81204,0x8019B834,0x8019BCF5,戦の小太鼓,전투의 북,,63 1C DD 88 DD A9 DD F1,4F DD 39 0F A1 DE 64,text,False,False,PENDING
+skill_name:18,skill_name,18,황사자 북,0x81208,0x8019B840,0x8019BE1D,荒獅子太鼓,황사자 북,,DD C0 DE A7 96 DD A9 DD F1,DE 3C 34 28 A1 DE 64,text,False,False,PENDING
+skill_name:19,skill_name,19,기합 나팔,0x8120C,0x8019B84C,0x8019BC55,気合いラッパ,기합 나팔,,A9 DD AC 1B 57 82 A3,24 DD 1D A1 1E DD 6C,text,False,False,PENDING
+skill_name:20,skill_name,20,탈진 나팔,0x81210,0x8019B854,0x8019BBD5,へろへろラッパ,탈진 나팔,,8A 55 8A 55 57 82 A3,DE 14 DD 3F A1 1E DD 6C,text,False,False,PENDING
+skill_name:21,skill_name,21,치유의 하프,0x81214,0x8019B85C,0x8019BAEB,いやしのたてごと,치유의 하프,,1B 40 1E 1C 1F 21 79 36,DD 1F 8A 0F A1 19 DD 9D,text,False,False,PENDING
+skill_name:22,skill_name,22,둔화 베이스,0x81218,0x8019B868,0x8019C252,のろまのベース,둔화 베이스,,1C 55 27 1C DD B4 31 47,DF 23 DD 83 A1 DD FE 03 30,text,False,False,PENDING
+skill_name:23,skill_name,23,위타천 오카리나,0x8121C,0x8019B874,0x8019AA78,い<N:駄:2>天のオカリナ,위타천 오카리나,,1B DE CD DD 26 1C 8F BC 6B 7C,8E DD 7F DD E7 A1 46 DD 38 2E 1E,text,False,False,PENDING
+skill_name:24,skill_name,24,방향전환 피리,0x81220,0x8019B880,0x8019AAC0,向き直りの笛,방향전환 피리,,DD 01 44 DD 85 39 1C DE 2F,DD 29 DD B2 4F DD 65 A1 DD 3C 2E,text,False,False,PENDING
+skill_name:25,skill_name,25,익스플로전,0x81224,0x8019B88C,0x8019BE3D,エクス<N:フ:11>ロージョン,익스플로전,,DD 23 4E 47 DD 55 A2 31 7F 69 34,DE C0 30 DE 36 D5 4F,text,False,False,PENDING
+skill_name:26,skill_name,26,드림 노크,0x81228,0x8019B898,0x8019BC45,トリーム<N:メ:6>ック,드림 노크,,95 6B 31 D8 DD 5F 82 4E,17 DE 29 A1 DD 57 58,text,False,False,PENDING
+skill_name:27,skill_name,27,다이아몬드 더스트,0x8122C,0x8019B8A4,0x8019C8E2,ダ<N:｣:11>ヤモントダスト,다이아몬드 더스트,,67 65 BB 5F 34 95 67 47 5C,01 03 09 64 17 A1 DD 96 30 DD 5B,text,False,False,PENDING
+skill_name:28,skill_name,28,윈드 슬래셔,0x81230,0x8019B8B0,0x8019C02B,ウ<N:｣:11>ントスラッシャー,윈드 슬래셔,,71 65 34 95 47 57 82 60 D6 31,DF 8B 17 A1 DD FC DD 12 DE B3,text,False,False,PENDING
+skill_name:29,skill_name,29,히트 월,0x81234,0x8019B8BC,0x8019BDB5,<N:ヒ:5>ートウ<N:｣:13>ール,히트 월,,DD B5 31 5C 71 DE B4 31 53,DD 59 DD 5B A1 DE E5,text,False,False,PENDING
+skill_name:30,skill_name,30,썬더 스톰,0x81238,0x8019B8C8,0x8019BC0B,サンダーストーム,썬더 스톰,,77 34 67 31 47 5C 31 D8,DF 6A DD 96 A1 30 DF 4F,text,False,False,PENDING
+skill_name:31,skill_name,31,텔레포트,0x8123C,0x8019B8D4,0x8019BBF0,テ<N:リ:12>ポート,텔레포트,,DB 6F D7 31 5C,DF 4E DD 66 DD 78 DD 5B,text,False,False,PENDING
+skill_name:32,skill_name,32,심안법,0x81240,0x8019B8DC,0x8019AFB4,心<N:眼:3>法,심안법,,DD 11 DE 7B DD 51,9D 94 DD 37,text,False,False,PENDING
+skill_name:33,skill_name,33,퇴마광탄,0x81244,0x8019B8E4,0x8019BE45,<N:退:3>魔光弾,퇴마광탄,,DE 63 DD 1B DD 0C DE 06,DF 50 45 DF 16 DD D1,text,False,False,PENDING
+skill_name:34,skill_name,34,선풍격축,0x81248,0x8019B8F0,0x8019BB2A,旋風撃蹴,선풍격축,,DE 9C C1 B1 DE A3,DD 53 DE 2E DD 0A DE 02,text,False,False,PENDING
+skill_name:35,skill_name,35,유성폭,0x8124C,0x8019B8F8,0x8019AEF0,流星爆,유성폭,,DE 24 DE D6 DD 41,8A DD 17 DD 62,text,False,False,PENDING
+skill_name:36,skill_name,36,귀신류영파,0x81250,0x8019B900,0x8019C23E,鬼神流<N:影:1><N:波:1>,귀신류영파,,DE F4 DD 2F DE 24 DE 81 DE 5B,DE 6C 3E DD 6E DD FA DD 7B,text,False,False,PENDING
+skill_name:37,skill_name,37,멸장열파,0x81254,0x8019B90C,0x8019BDFD,滅掌烈破,멸장열파,,DD 40 DE DA DE 85 DD 62,DD DD 56 DD 89 DD 7B,text,False,False,PENDING
+skill_name:38,skill_name,38,케락,0x81258,0x8019B918,0x8019B013,<N:ゲ:16>ラック,케락,,DD 6D 57 82 4E,DD F8 DF 27,text,False,False,PENDING
+skill_name:39,skill_name,39,모프리,0x8125C,0x8019B920,0x8019AF91,モフリー,모프리,,5F A6 6B 31,55 DD 9D 2E,text,False,False,PENDING
+skill_name:40,skill_name,40,후우진,0x81260,0x8019B928,0x8019AF38,フウジン,후우진,,A6 71 7F 34,DD 8D 3D DD 3F,text,False,False,PENDING
+skill_name:41,skill_name,41,라이진,0x81264,0x8019B930,0x8019AFAA,ラ<N:｣:11>ジン,라이진,,57 65 7F 34,8F 03 DD 3F,text,False,False,PENDING
+skill_name:42,skill_name,42,헤모지,0x81268,0x8019B938,0x8019B004,へモジー,헤모지,,DD 3B 5F 7F 31,DD C3 55 04,text,False,False,PENDING
+skill_name:43,skill_name,43,오톤,0x8126C,0x8019B940,0x8019B03F,オトン,오톤,,8F 95 34,46 DD 9A,text,False,False,PENDING
+skill_name:44,skill_name,44,조사,0x81270,0x8019B944,0x8019B0AA,調ベる,조사,,DD 86 DD 35 22,90 34,text,False,False,PENDING
+skill_name:45,skill_name,45,초코,0x81274,0x8019B94C,0x8019B033,ちょこ,초코,,4B 73 2E,39 DD 40,text,False,False,PENDING
+skill_name:46,skill_name,46,회복,0x81278,0x8019B950,0x8019B053,回復,회복,,9E DD 2C,7A DD 9F,text,False,False,PENDING
+skill_name:47,skill_name,47,다리 만들기,0x8127C,0x8019B954,0x8019BE55,<N:ｴ:24>か造り,다리 만들기,,DD 04 20 DD D5 39,01 2E A1 38 0A 24,text,False,False,PENDING
+skill_name:48,skill_name,48,풍뢰파,0x81280,0x8019B95C,0x8019AE61,風雷破,풍뢰파,,C1 DD A5 DD 62,DE 2E DF 31 DD 7B,text,False,False,PENDING
+skill_name:49,skill_name,49,풍뢰파,0x81284,0x8019B964,0x8019AE61,風雷破,풍뢰파,,C1 DD A5 DD 62,DE 2E DF 31 DD 7B,text,False,False,PENDING
+skill_name:50,skill_name,50,빙의,0x81288,0x8019B96C,0x8019B083,乗り移り,빙의,,DD 43 39 DE FC 39,DF 64 0F,text,False,False,PENDING
+skill_name:51,skill_name,51,폭렬 수리검,0x8128C,0x8019B974,0x8019C14E,バク<N:リ:12>ツ手裏剣,폭렬 수리검,,AF 4E 6F DF 01 87 DD FE DD 8D,DD 62 DF 2E A1 50 2E DD A1,text,False,False,PENDING
+skill_name:52,skill_name,52,자폭,0x81290,0x8019B980,0x8019B027,自爆,자폭,,A4 DD 41,28 DD 62,text,False,False,PENDING
+skill_name:53,skill_name,53,지옥으로 가는 계단,0x81294,0x8019B984,0x8019B964,ジ<N:ニ:13>クへの階段,지옥으로 가는 계단,,7F DD 3C 4E 8A 1C DD B2 DE 61,04 DE 39 4E D5 A1 0C 06 A1 DD 11 DD 35,text,False,False,PENDING
+skill_name:54,skill_name,54,사방 공격,0x81298,0x8019B990,0x8019C2AD,4方向,사방 공격,,15 C4 DD 01,34 DD 29 A1 DD 10 DD 0A,text,False,False,PENDING
+skill_name:55,skill_name,55,염뢰붕,0x8129C,0x8019B998,0x8019AE7D,炎雷崩,염뢰붕,,BF DD A5 DE 90,DF 89 DF 31 DE EC,text,False,False,PENDING
+skill_name:56,skill_name,56,더스트 룬,0x812A0,0x8019B9A0,0x8019BB96,ダスト・ルー<N:｣:11>ン,더스트 룬,,67 47 5C 2C 53 31 65 34,DD 96 30 DD 5B A1 DF 32,text,False,False,PENDING
+skill_name:57,skill_name,57,요미의 날개,0x812A4,0x8019B9AC,0x8019C04A,ヨミのつばさ,요미의 날개,,DD 14 DD 3A 1C 45 58 3A,2C DD 2F 0F A1 DD 61 DD B4,text,False,False,PENDING
+skill_name:58,skill_name,58,의욕 없음,0x812A8,0x8019B9B8,0x8019BEA2,やる気なし,의욕 없음,,40 22 A9 1D 1E,0F DD E3 A1 71 8D,text,False,False,PENDING
+skill_description:0,skill_description,0,,0x81708,0x8019BAAC,0x8019B0AD,,,,,,text,True,True,PENDING
+skill_description:1,skill_description,1,용암으로 적에게 피해,0x8170C,0x8019BAB0,0x8019B854,ようがんを発生させ敵にダメージを<N:与:3>えます,용암으로 적에게 피해,,3D 26 2A 2D 2F 76 DD 1C 3A 59 BD 23 67 78 31 7F 2F DD 3F 46 27 2B,DD 1A DF 6C 4E D5 A1 DD 09 0E 41 A1 DD 3C 2B,text,False,False,PENDING
+skill_description:2,skill_description,2,상태 이상과 체력 회복,0x81710,0x8019BAC8,0x8019B5D8,ステ<N:｣:11>タス傷害と体力を回復します,상태 이상과 체력 회복,,47 DB 65 62 47 DE 6A DE 7E 36 DD 2D 61 2F 9E DD 2C 1E 27 2B,8B DD D2 A1 03 8B DD 18 A1 DD 90 DD 2B A1 7A DD 9F,text,False,False,PENDING
+skill_description:3,skill_description,3,이공간 공격으로 피해,0x81714,0x8019BAE0,0x8019B48B,いくうかんからの攻撃で敵にダメージを<N:与:3>えます,이공간 공격으로 피해,,1B 3E 26 20 2D 20 33 1C D0 B1 30 BD 23 67 78 31 7F 2F DD 3F 46 27 2B,03 DD 10 DD 1B A1 DD 10 DD 0A 4E D5 A1 DD 3C 2B,text,False,False,PENDING
+skill_description:4,skill_description,4,적 민첩 감소,0x81718,0x8019BAF8,0x8019C805,敵の素早さを下げます,적 민첩 감소,,BD 1C DE D3 DD 21 3A 2F 70 9C 27 2B,DD 09 A1 DD EC DF 5E A1 DD 77 DD 07,text,False,False,PENDING
+skill_description:5,skill_description,5,운석으로 주변 적 피해,0x8171C,0x8019BB08,0x8019B814,いんせきが落下しまわりの敵にダメージを<N:与:3>えます,운석으로 주변 적 피해,,1B 2D 59 44 2A DD A4 70 1E 27 43 39 1C BD 23 67 78 31 7F 2F DD 3F 46 27 2B,86 DD 8B 4E D5 A1 40 80 A1 DD 09 A1 DD 3C 2B,text,False,False,PENDING
+skill_description:6,skill_description,6,체력 회복,0x81720,0x8019BB24,0x8019BB8D,体力を回復します,체력 회복,,DD 2D 61 2F 9E DD 2C 1E 27 2B,DD 90 DD 2B A1 7A DD 9F,text,False,False,PENDING
+skill_description:7,skill_description,7,독 해제,0x81724,0x8019BB30,0x8019AF5C,<N:毒:1>を消しさります,독 해제,,DD CF 2F DD 28 1E 3A 39 27 2B,DF 22 A1 2B 66,text,False,False,PENDING
+skill_description:8,skill_description,8,적의 마법 봉인,0x81728,0x8019BB3C,0x8019AA9C,敵の魔法を封じ込めます,적의 마법 봉인,,BD 1C DD 1B DD 51 2F DD 0F 4A DD 5D 51 27 2B,DD 09 0F A1 45 DD 37 A1 DD B6 35,text,False,False,PENDING
+skill_description:9,skill_description,9,상태 이상 회복,0x8172C,0x8019BB4C,0x8019ABF5,ステ<N:｣:11>タス傷害を回復します,상태 이상 회복,,47 DB 65 62 47 DE 6A DE 7E 2F 9E DD 2C 1E 27 2B,8B DD D2 A1 03 8B A1 7A DD 9F,text,False,False,PENDING
+skill_description:10,skill_description,10,천사의 광선 공격,0x81730,0x8019BB60,0x8019B929,天使が画面外に飛んでいき<N:リ:12>ー<N:ザ:8>ーで攻撃します,천사의 광선 공격,,DD 26 DD 33 2A DE 7F DE 8C DD 6B 23 DD 72 2D 30 1B 44 6F 31 DD C8 31 30 D0 B1 1E 27 2B,DD E7 34 0F A1 DF 16 DD 53 A1 DD 10 DD 0A,text,False,False,PENDING
+skill_description:11,skill_description,11,쓰러진 아군 부활,0x81734,0x8019BB80,0x8019C87A,戦闘不能になつた味方を呼び戻せます,쓰러진 아군 부활,,63 93 DD 71 DD 80 23 1D 29 1F DD 94 C4 2F DD C2 99 D9 59 27 2B,DD 85 20 DD 3F A1 09 7C A1 6C DD E1,text,False,False,PENDING
+skill_description:12,skill_description,12,적 체력을 흡수해 아군 회복,0x81738,0x8019BB98,0x8019C5C8,敵の体力をすいとり味方に分け<N:与:3>えます,적 체력을 흡수해 아군 회복,,BD 1C DD 2D 61 2F 2B 1B 36 39 DD 94 C4 23 B2 49 DD 3F 46 27 2B,DD 09 A1 DD 90 DD 2B 0D A1 DF 5C 50 2B A1 09 7C A1 7A DD 9F,text,False,False,PENDING
+skill_description:13,skill_description,13,적 하나에 필살검,0x8173C,0x8019BBB0,0x8019B9AA,敵一体に必殺の剣で斬りつけます,적 하나에 필살검,,BD 8E DD 2D 23 DD CC DD 7A 1C DD 8D 30 DD 5C 39 45 49 27 2B,DD 09 A1 19 1E 0E A1 DE 4A DD A2 DD A1,text,False,False,PENDING
+skill_description:14,skill_description,14,적에게 마비 부여,0x81740,0x8019BBC8,0x8019AA90,敵をマ<N:ヒ:5>させます,적에게 마비 부여,,BD 2F 64 DD B5 3A 59 27 2B,DD 09 0E 41 A1 45 DD 06 A1 6C 1A,text,False,False,PENDING
+skill_description:15,skill_description,15,두 칸 앞의 적 공격,0x81744,0x8019BBD4,0x8019B632,2ます先の敵を斬りつけます,두 칸 앞의 적 공격,,13 27 2B DD 66 1C BD 2F DD 5C 39 45 49 27 2B,DD 21 A1 DF 96 A1 DD BA 0F A1 DD 09 A1 DD 10 DD 0A,text,False,False,PENDING
+skill_description:16,skill_description,16,돌진하며 적 공격,0x81748,0x8019BBE4,0x8019B8A2,敵に向かつて走り込んで斬りつけます,돌진하며 적 공격,,BD 23 DD 01 20 29 21 DE 66 39 DD 5D 2D 30 DD 5C 39 45 49 27 2B,72 DD 3F 19 DE 1F A1 DD 09 A1 DD 10 DD 0A,text,False,False,PENDING
+skill_description:17,skill_description,17,아군 공격력 상승,0x8174C,0x8019BBFC,0x8019C790,味方の攻撃力を上げます,아군 공격력 상승,,DD 94 C4 1C D0 B1 61 2F B9 9C 27 2B,09 7C A1 DD 10 DD 0A DD 2B A1 8B 69,text,False,False,PENDING
+skill_description:18,skill_description,18,파동 광선 발사,0x81750,0x8019BC0C,0x8019C758,<N:波:1>動<N:リ:12>ー<N:ザ:8>ー弾を撃ちます,파동 광선 발사,,DE 5B DC 6F 31 DD C8 31 DE 06 2F B1 4B 27 2B,DD 7B DD 32 A1 DF 16 DD 53 A1 DD 0E 34,text,False,False,PENDING
+skill_description:19,skill_description,19,먼 적을 기합으로 공격,0x81754,0x8019BC1C,0x8019B656,<N:遠:1>くの敵を気合で攻撃します,먼 적을 기합으로 공격,,DE 4C 3E 1C BD 2F A9 DD AC 30 D0 B1 1E 27 2B,DD C1 A1 DD 09 0D A1 24 DD 1D 4E D5 A1 DD 10 DD 0A,text,False,False,PENDING
+skill_description:20,skill_description,20,폭탄을 연속 발사,0x81758,0x8019BC2C,0x8019B90B,一度にたくさんの爆弾を撃ちます,폭탄을 연속 발사,,8E DD 20 23 1F 3E 3A 2D 1C DD 41 DE 06 2F B1 4B 27 2B,DD 62 DD D1 0D A1 DD AD DD 5F A1 DD 0E 34,text,False,False,PENDING
+skill_description:21,skill_description,21,아군 체력 회복,0x8175C,0x8019BC40,0x8019C906,味方の体力を回復します,아군 체력 회복,,DD 94 C4 1C DD 2D 61 2F 9E DD 2C 1E 27 2B,09 7C A1 DD 90 DD 2B A1 7A DD 9F,text,False,False,PENDING
+skill_description:22,skill_description,22,적 민첩 감소,0x81760,0x8019BC50,0x8019C805,敵のすばやさを下げます,적 민첩 감소,,BD 1C 2B 58 40 3A 2F 70 9C 27 2B,DD 09 A1 DD EC DF 5E A1 DD 77 DD 07,text,False,False,PENDING
+skill_description:23,skill_description,23,아군 민첩 상승,0x81764,0x8019BC5C,0x8019AB87,味方のすばやさを上げます,아군 민첩 상승,,DD 94 C4 1C 2B 58 40 3A 2F B9 9C 27 2B,09 7C A1 DD EC DF 5E A1 8B 69,text,False,False,PENDING
+skill_description:24,skill_description,24,전원이 포니 방향으로 전환,0x81768,0x8019BC6C,0x8019B542,全員がポニと同じ方向に向きを変えます,전원이 포니 방향으로 전환,,DD 08 8D 2A D7 D1 36 DD 82 4A C4 DD 01 23 DD 01 44 2F DD 15 46 27 2B,4F 7B 03 A1 DD 78 07 A1 DD 29 DD B2 4E D5 A1 4F DD 65,text,False,False,PENDING
+skill_description:25,skill_description,25,거대한 불꽃으로 피해,0x8176C,0x8019BC84,0x8019B884,すごい炎で敵をつつみこみダメージを<N:与:3>えます,거대한 불꽃으로 피해,,2B 79 1B BF 30 BD 2F 45 45 6D 2E 6D 67 78 31 7F 2F DD 3F 46 27 2B,32 37 53 A1 DD 13 DD 8C 4E D5 A1 DD 3C 2B,text,False,False,PENDING
+skill_description:26,skill_description,26,적에게 수면 부여,0x81770,0x8019BC9C,0x8019AC21,敵を<N:眠:5>らせます,적에게 수면 부여,,BD 2F DD B9 33 59 27 2B,DD 09 0E 41 A1 50 3A A1 6C 1A,text,False,False,PENDING
+skill_description:27,skill_description,27,눈보라로 적에게 피해,0x81774,0x8019BCA8,0x8019B938,すごいふぶきを起こして敵にダメージを<N:与:3>えます,눈보라로 적에게 피해,,2B 79 1B 97 CA 44 2F DD C4 2E 1E 21 BD 23 67 78 31 7F 2F DD 3F 46 27 2B,DE 0D 60 8F D5 A1 DD 09 0E 41 A1 DD 3C 2B,text,False,False,PENDING
+skill_description:28,skill_description,28,강풍으로 적에게 피해,0x81778,0x8019BCC4,0x8019B864,すごい風を起こして敵にダメージを<N:与:3>えます,강풍으로 적에게 피해,,2B 79 1B C1 2F DD C4 2E 1E 21 BD 23 67 78 31 7F 2F DD 3F 46 27 2B,DD 28 DE 2E 4E D5 A1 DD 09 0E 41 A1 DD 3C 2B,text,False,False,PENDING
+skill_description:29,skill_description,29,불꽃 장벽 생성,0x8177C,0x8019BCDC,0x8019C704,炎のかたまりを作りだします,불꽃 장벽 생성,,BF 1C 20 1F 27 39 2F DD EF 39 35 1E 27 2B,DD 13 DD 8C A1 56 DE 92 A1 DD 36 DD 17,text,False,False,PENDING
+skill_description:30,skill_description,30,번개로 적에게 피해,0x81780,0x8019BCEC,0x8019B99C,すごい雷を落として敵にダメージを<N:与:3>えます,번개로 적에게 피해,,2B 79 1B DD A5 2F DD A4 36 1E 21 BD 23 67 78 31 7F 2F DD 3F 46 27 2B,9B DD B4 D5 A1 DD 09 0E 41 A1 DD 3C 2B,text,False,False,PENDING
+skill_description:31,skill_description,31,주변 아군과 순간이동,0x81784,0x8019BD04,0x8019B7D4,まわりの味方を連れてテ<N:リ:12>ポートします,주변 아군과 순간이동,,27 43 39 1C DD 94 C4 2F DD E4 32 21 DB 6F D7 31 5C 1E 27 2B,40 80 A1 09 7C DD 18 A1 DE CE DD 1B 03 DD 32,text,False,False,PENDING
+skill_description:32,skill_description,32,적 하나 고정,0x81788,0x8019BD1C,0x8019BAD9,敵<N:午:15>ャラクタをロックします,적 하나 고정,,BD DD 4E D6 57 4E 62 2F A2 82 4E 1E 27 2B,DD 09 A1 19 1E A1 1C 31,text,False,False,PENDING
+skill_description:33,skill_description,33,고정한 적에게 광탄 발사,0x8178C,0x8019BD2C,0x8019B5B4,心<N:眼:3>法でロックした敵に対して光弾を撃ち込みます,고정한 적에게 광탄 발사,,DD 11 DE 7B DD 51 30 A2 82 4E 1E 1F BD 23 DD 9A 1E 21 DD 0C DE 06 2F B1 4B DD 5D 6D 27 2B,1C 31 53 A1 DD 09 0E 41 A1 DF 16 DD D1 A1 DD 0E 34,text,False,False,PENDING
+skill_description:34,skill_description,34,주변 적 공격,0x81790,0x8019BD4C,0x8019ABDF,自分のまわりにいる敵<N:午:15>ャラクタを攻撃します,주변 적 공격,,A4 B2 1C 27 43 39 23 1B 22 BD DD 4E D6 57 4E 62 2F D0 B1 1E 27 2B,40 80 A1 DD 09 A1 DD 10 DD 0A,text,False,False,PENDING
+skill_description:35,skill_description,35,회오리로 띄워 내리찍음,0x81794,0x8019BD64,0x8019B7E4,たつまきで敵をすいあげて地上にたたき落とします,회오리로 띄워 내리찍음,,1F 45 27 44 30 BD 2F 2B 1B 3F 9C 21 90 B9 23 1F 1F 44 DD A4 36 1E 27 2B,7A 46 2E D5 A1 DF 26 DD 68 A1 47 2E DF 91 8D,text,False,False,PENDING
+skill_description:36,skill_description,36,잔상을 날려 공격,0x81798,0x8019BD80,0x8019C782,自分の残像を敵に向かつてぶつけます,잔상을 날려 공격,,A4 B2 1C DD AB DE 64 2F BD 23 DD 01 20 29 21 CA 45 49 27 2B,DF 8E 8B 0D A1 DD 61 3C A1 DD 10 DD 0A,text,False,False,PENDING
+skill_description:37,skill_description,37,약한 적을 소멸,0x8179C,0x8019BD98,0x8019C853,自分よりある程度弱い敵を消し去ります,약한 적을 소멸,,A4 B2 3D 39 3F 22 DF 1D DD 20 DD ED 1B BD 2F DD 28 1E DE 45 39 27 2B,DD 48 53 A1 DD 09 0D A1 DD 07 DD DD,text,False,False,PENDING
+skill_description:38,skill_description,38,케락 소환,0x817A0,0x8019BDB0,0x8019C1E4,<N:ｌ:5><N:ゲ:16>ラックへを召喚します,케락 소환,,5B DD 6D 57 82 4E 5A 2F DD 78 DD 7B 1E 27 2B,DD F8 DF 27 A1 DD 07 DD 65,text,False,False,PENDING
+skill_description:39,skill_description,39,모프리 소환,0x817A4,0x8019BDC0,0x8019C068,<N:ｌ:5>モフリーへを召喚します,모프리 소환,,5B 5F A6 6B 31 5A 2F DD 78 DD 7B 1E 27 2B,55 DD 9D 2E A1 DD 07 DD 65,text,False,False,PENDING
+skill_description:40,skill_description,40,후우진 소환,0x817A8,0x8019BDD0,0x8019AC84,<N:ｌ:5>フウジンへを召喚します,후우진 소환,,5B A6 71 7F 34 5A 2F DD 78 DD 7B 1E 27 2B,DD 8D 3D DD 3F A1 DD 07 DD 65,text,False,False,PENDING
+skill_description:41,skill_description,41,라이진 소환,0x817AC,0x8019BDE0,0x8019C0B8,<N:ｌ:5>ラ<N:｣:11>ジンへを召喚します,라이진 소환,,5B 57 65 7F 34 5A 2F DD 78 DD 7B 1E 27 2B,8F 03 DD 3F A1 DD 07 DD 65,text,False,False,PENDING
+skill_description:42,skill_description,42,헤모지 소환,0x817B0,0x8019BDF0,0x8019C1C6,<N:ｌ:5>へモジーへを召喚します,헤모지 소환,,5B DD 3B 5F 7F 31 5A 2F DD 78 DD 7B 1E 27 2B,DD C3 55 04 A1 DD 07 DD 65,text,False,False,PENDING
+skill_description:43,skill_description,43,오톤 소환,0x817B4,0x8019BE00,0x8019C2E3,<N:ｌ:5>オトンへを召喚します,오톤 소환,,5B 8F 95 34 5A 2F DD 78 DD 7B 1E 27 2B,46 DD 9A A1 DD 07 DD 65,text,False,False,PENDING
+skill_description:44,skill_description,44,몬스터 정보 조사,0x817B8,0x8019BE10,0x8019C086,モンスターを調ベます,몬스터 정보 조사,,5F 34 47 62 31 2F DD 86 DD 35 27 2B,64 30 02 A1 31 60 A1 90 34,text,False,False,PENDING
+skill_description:45,skill_description,45,초코 소환,0x817BC,0x8019BE20,0x8019C2C8,<N:ｌ:5>ちょこへを召喚します,초코 소환,,5B 4B 73 2E 5A 2F DD 78 DD 7B 1E 27 2B,39 DD 40 A1 DD 07 DD 65,text,False,False,PENDING
+skill_description:46,skill_description,46,아군 회복,0x817C0,0x8019BE30,0x8019BE9B,味方を回復します,아군 회복,,DD 94 C4 2F 9E DD 2C 1E 27 2B,09 7C A1 7A DD 9F,text,False,False,PENDING
+skill_description:47,skill_description,47,갈 수 없는 곳에 다리 생성,0x817C4,0x8019BE3C,0x8019C606,行けないところに<N:ｴ:24>かを造ります,갈 수 없는 곳에 다리 생성,,74 49 1D 1B 36 2E 55 23 DD 04 20 2F DD D5 39 27 2B,DD A6 A1 50 A1 71 06 A1 DD 15 0E A1 01 2E A1 DD 36 DD 17,text,False,False,PENDING
+skill_description:48,skill_description,48,라이진과 합체 마법,0x817C8,0x8019BE50,0x8019B824,ラ<N:｣:11>ジンとの合体魔法,라이진과 합체 마법,,57 65 7F 34 36 1C DD AC DD 2D DD 1B DD 51,8F 03 DD 3F DD 18 A1 DD 1D DD 90 A1 45 DD 37,text,False,False,PENDING
+skill_description:49,skill_description,49,후우진과 합체 마법,0x817CC,0x8019BE60,0x8019B6CF,フウジンとの合体魔法,후우진과 합체 마법,,A6 71 7F 34 36 1C DD AC DD 2D DD 1B DD 51,DD 8D 3D DD 3F DD 18 A1 DD 1D DD 90 A1 45 DD 37,text,False,False,PENDING
+skill_description:50,skill_description,50,적에게 빙의,0x817D0,0x8019BE70,0x8019BAD0,敵に乗り移れます,적에게 빙의,,BD 23 DD 43 39 DE FC 32 27 2B,DD 09 0E 41 A1 DF 64 0F,text,False,False,PENDING
+skill_description:51,skill_description,51,주변에 수리검 난사,0x817D4,0x8019BE7C,0x8019C7C4,まわりに手裏剣をばらまきます,주변에 수리검 난사,,27 43 39 23 87 DD FE DD 8D 2F 58 33 27 44 27 2B,40 80 0E A1 50 2E DD A1 A1 DD 6A 34,text,False,False,PENDING
+skill_description:52,skill_description,52,자폭 공격,0x817D8,0x8019BE90,0x8019C289,自爆します,자폭 공격,,A4 DD 41 1E 27 2B,28 DD 62 A1 DD 10 DD 0A,text,False,False,PENDING
+skill_description:53,skill_description,53,낫 부메랑으로 공격,0x817DC,0x8019BE98,0x8019B874,かまフーメランで敵を攻撃します,낫 부메랑으로 공격,,20 27 C9 31 78 57 34 30 BD 2F D0 B1 1E 27 2B,DF 1C A1 6C DD 2C DE 74 4E D5 A1 DD 10 DD 0A,text,False,False,PENDING
+skill_description:54,skill_description,54,주변 적에게 피해,0x817E0,0x8019BEA8,0x8019AA3C,まわりの敵にダメージを<N:与:3>えます,주변 적에게 피해,,27 43 39 1C BD 23 67 78 31 7F 2F DD 3F 46 27 2B,40 80 A1 DD 09 0E 41 A1 DD 3C 2B,text,False,False,PENDING
+skill_description:55,skill_description,55,주변 적에게 피해,0x817E4,0x8019BEBC,0x8019AA3C,まわりの敵にダメージを<N:与:3>えます,주변 적에게 피해,,27 43 39 1C BD 23 67 78 31 7F 2F DD 3F 46 27 2B,40 80 A1 DD 09 0E 41 A1 DD 3C 2B,text,False,False,PENDING
+skill_description:56,skill_description,56,직선상의 적 공격,0x817E8,0x8019BED0,0x8019B91A,直せん上の敵をなぎはらいます,직선상의 적 공격,,DD 85 59 2D B9 1C BD 2F 1D DD 7D 28 33 1B 27 2B,DD 7C DD 53 8B 0F A1 DD 09 A1 DD 10 DD 0A,text,False,False,PENDING
+skill_description:57,skill_description,57,날갯짓으로 바람 피해,0x817EC,0x8019BEE4,0x8019B644,つばさをはためかせ風でダメージを<N:与:3>えます,날갯짓으로 바람 피해,,45 58 3A 2F 28 1F 51 20 59 C1 30 67 78 31 7F 2F DD 3F 46 27 2B,DD 61 DF 13 DE 1C 4E D5 A1 DD 08 DD 22 A1 DD 3C 2B,text,False,False,PENDING
+skill_description:58,skill_description,58,적을 헤모지 상태로 만듦,0x817F0,0x8019BEFC,0x8019B5FC,敵をへモジーにします,적을 헤모지 상태로 만듦,,BD 2F DD 3B 5F 7F 31 23 1E 27 2B,DD 09 0D A1 DD C3 55 04 A1 8B DD D2 D5 A1 38 DF 25,text,False,False,PENDING
+character_name:0,character_name,0,아크,0x81B4C,0x8019BFF4,0x8019B092,アーク,아크,,42 31 4E,09 58,text,False,False,PENDING
+character_name:1,character_name,1,쿠쿠루,0x81B50,0x8019BFF8,0x8019ADF8,ククル,쿠쿠루,,4E 4E 53,DD 0C DD 0C DD 42,text,False,False,PENDING
+character_name:2,character_name,2,토슈,0x81B54,0x8019BFFC,0x8019B057,トッシュ,토슈,,5C 82 60 AB,83 DD 86,text,False,False,PENDING
+character_name:3,character_name,3,포코,0x81B58,0x8019C004,0x8019AFF5,ポニ,포코,,D7 D1,DD 78 DD 40,text,False,False,PENDING
+character_name:4,character_name,4,이가,0x81B5C,0x8019C008,0x8019B08F,<N:ニ:13>ーゲン,이가,,DD 3C 31 DD 4D 34,03 0C,text,False,False,PENDING
+character_name:5,character_name,5,고겐,0x81B60,0x8019C010,0x8019BF04,<N:｣:11>ー<N:力:5>,고겐,,65 31 DD 02,1C DD A9,text,False,False,PENDING
+character_name:6,character_name,6,마샬,0x81B64,0x8019C018,0x8019B03B,マーシャル,마샬,,64 31 60 D6 53,45 DF 65,text,False,False,PENDING
+character_name:7,character_name,7,촌가라,0x81B68,0x8019C020,0x8019B067,チョン<N:力:5>ラ,촌가라,,6C 69 34 DD 02 57,96 0C 8F,text,False,False,PENDING
+character_name:8,character_name,8,,0x81B6C,0x8019C028,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:9,character_name,9,,0x81B70,0x8019C02C,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:10,character_name,10,,0x81B74,0x8019C030,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:11,character_name,11,스켈레톤,0x81B78,0x8019C034,0x8019BC75,ス<N:ゲ:16>ルトン,스켈레톤,,47 DD 6D 53 5C 34,30 DE D6 DD 66 DD 9A,text,False,False,PENDING
+character_name:12,character_name,12,고스트,0x81B7C,0x8019C03C,0x8019AF78,<N:ニ:13>ースト,고스트,,DD 3C 31 47 5C,1C 30 DD 5B,text,False,False,PENDING
+character_name:13,character_name,13,좀비,0x81B80,0x8019C044,0x8019B01D,<N:ゾ:12>ン<N:ビ:5>,좀비,,DF 02 34 DE 1E,DE 5E DD 06,text,False,False,PENDING
+character_name:14,character_name,14,그린 슬라임,0x81B84,0x8019C04C,0x8019C92A,<N:ク:12>リーンスラ<N:｣:11>ム,그린 슬라임,,80 6B 31 34 47 57 65 D8,15 DD D4 A1 DD FC 8F DD C2,text,False,False,PENDING
+character_name:15,character_name,15,간자,0x81B88,0x8019C058,0x8019B073,カンジャ,간자,,DD 56 34 7F D6,DD 1B 28,text,False,False,PENDING
+character_name:16,character_name,16,메이지,0x81B8C,0x8019C060,0x8019AFD2,メ<N:｣:11>ジ,메이지,,78 65 7F,DD 2C 03 04,text,False,False,PENDING
+character_name:17,character_name,17,파이터,0x81B90,0x8019C064,0x8019AFFA,フ<N:=:12><N:｣:11>ター,파이터,,A6 DE 4E 65 62 31,DD 7B 03 02,text,False,False,PENDING
+character_name:18,character_name,18,파계승,0x81B94,0x8019C06C,0x8019AF32,破戒僧,파계승,,DD 62 DF 52 84,DD 7B DD 11 69,text,False,False,PENDING
+character_name:19,character_name,19,자이언트 배트,0x81B98,0x8019C074,0x8019C91E,ジャ<N:｣:11>アントバット,자이언트 배트,,7F D6 65 42 34 5C AF 82 5C,28 03 DD 30 DD 5B A1 DD 93 DD 5B,text,False,False,PENDING
+character_name:20,character_name,20,돌 마스터,0x81B9C,0x8019C080,0x8019AEDE,トールマスター,돌 마스터,,95 31 53 64 47 62 31,72 A1 45 30 02,text,False,False,PENDING
+character_name:21,character_name,21,사신,0x81BA0,0x8019C088,0x8019B09B,死神,사신,,DD 22 DD 2F,34 3E,text,False,False,PENDING
+character_name:22,character_name,22,엘리멘탈,0x81BA4,0x8019C090,0x8019BE2D,エ<N:リ:12>メンタル,엘리멘탈,,DD 23 6F 78 34 62 53,DE 68 2E DE 8C DE 14,text,False,False,PENDING
+character_name:23,character_name,23,요수,0x81BA8,0x8019C098,0x8019B098,妖樹,요수,,DF 08 DF 37,2C 50,text,False,False,PENDING
+character_name:24,character_name,24,팬텀,0x81BAC,0x8019C0A0,0x8019B022,フ<N:=:12>ンタ<N:ス:15>ム,팬텀,,A6 DE 4E 34 62 DE 1F D8,DF 53 DF 4C,text,False,False,PENDING
+character_name:25,character_name,25,시드레이크,0x81BB0,0x8019C0AC,0x8019BEB7,シート<N:リ:12><N:｣:11>ク,시드레이크,,60 31 95 6F 65 4E,29 17 DD 66 03 58,text,False,False,PENDING
+character_name:26,character_name,26,마이티 플라이,0x81BB4,0x8019C0B4,0x8019C05E,マ<N:｣:11>テ<N:ｲ:6>フラ<N:｣:11>,마이티 플라이,,64 65 DB DD 03 A6 57 65,45 03 DF 51 A1 DE 36 8F 03,text,False,False,PENDING
+character_name:27,character_name,27,킬러 도그,0x81BB8,0x8019C0C0,0x8019AE68,<N:午:15>ラートッ<N:ク:12>,킬러 도그,,DD 4E 57 31 95 82 80,DE 6F 20 A1 33 15,text,False,False,PENDING
+character_name:28,character_name,28,레드 스켈레톤,0x81BBC,0x8019C0C8,0x8019AAFC,<N:リ:12>ットス<N:ゲ:16>ルトン,레드 스켈레톤,,6F 82 95 47 DD 6D 53 5C 34,DD 66 17 A1 30 DE D6 DD 66 DD 9A,text,False,False,PENDING
+character_name:29,character_name,29,블랙 스컬,0x81BC0,0x8019C0D4,0x8019BC02,フラックスカル,블랙 스컬,,C9 57 82 4E 47 BC 53,DF 63 DF 28 A1 30 DF 97,text,False,False,PENDING
+character_name:30,character_name,30,레이스,0x81BC4,0x8019C0DC,0x8019AFF0,<N:リ:12><N:｣:11>ス,레이스,,6F 65 47,DD 66 03 30,text,False,False,PENDING
+character_name:31,character_name,31,구울,0x81BC8,0x8019C0E0,0x8019B05B,<N:ク:12>ール,구울,,80 31 53,87 DD 92,text,False,False,PENDING
+character_name:32,character_name,32,프리지,0x81BCC,0x8019C0E4,0x8019AFFF,フリージー,프리지,,A6 6B 31 7F 31,DD 9D 2E 04,text,False,False,PENDING
+character_name:33,character_name,33,애시드 슬라임,0x81BD0,0x8019C0EC,0x8019C015,アシットスラ<N:｣:11>ム,애시드 슬라임,,42 60 82 95 47 57 65 D8,DE 0F 29 17 A1 DD FC 8F DD C2,text,False,False,PENDING
+character_name:34,character_name,34,어새신,0x81BD4,0x8019C0F8,0x8019AF6E,アサッシン,어새신,,42 77 82 60 34,14 DE 3D 3E,text,False,False,PENDING
+character_name:35,character_name,35,슈퍼 좀비,0x81BD8,0x8019C100,0x8019C1A8,スーパーシ<N:メ:6><N:ビ:5>,슈퍼 좀비,,47 31 A3 31 60 DD 5F DE 1E,DD 86 DE 78 A1 DE 5E DD 06,text,False,False,PENDING
+character_name:36,character_name,36,위치 크래프트,0x81BDC,0x8019C10C,0x8019AA6C,ウ<N:｣:11>ッチクラフト,위치 크래프트,,71 65 82 6C 4E 57 A6 5C,8E DD 1F A1 58 DD 12 DD 9D DD 5B,text,False,False,PENDING
+character_name:37,character_name,37,소서러,0x81BE0,0x8019C118,0x8019AFB9,ソーサラー,소서러,,DE 4D 31 77 57 31,DD 07 25 20,text,False,False,PENDING
+character_name:38,character_name,38,네크로맨서,0x81BE4,0x8019C120,0x8019ADCE,<N:ネ:13>クロマンサー,네크로맨서,,DD C6 4E A2 64 34 77 31,7E 58 D5 DE 08 25,text,False,False,PENDING
+character_name:39,character_name,39,위저드,0x81BE8,0x8019C12C,0x8019AFA5,ウ<N:ｲ:6><N:ザ:8>ート,위저드,,71 DD 03 DD C8 31 95,8E DD 24 17,text,False,False,PENDING
+character_name:40,character_name,40,암법사,0x81BEC,0x8019C134,0x8019AF68,闇法師,암법사,,DE B2 DD 51 DE 11,DF 6C DD 37 34,text,False,False,PENDING
+character_name:41,character_name,41,수행자,0x81BF0,0x8019C13C,0x8019AF87,修験者,수행자,,DD BF DE 75 7E,50 DD 31 28,text,False,False,PENDING
+character_name:42,character_name,42,하법사,0x81BF4,0x8019C144,0x8019AF73,下法師,하법사,,70 DD 51 DE 11,19 DD 37 34,text,False,False,PENDING
+character_name:43,character_name,43,네뷰러스,0x81BF8,0x8019C14C,0x8019AEEA,<N:ネ:13><N:ビ:5>ュラス,네뷰러스,,DD C6 DE 1E AB 57 47,7E DF 62 20 30,text,False,False,PENDING
+character_name:44,character_name,44,광대,0x81BFC,0x8019C154,0x8019B07B,道化師,광대,,DD 52 DD 7C DE 11,DF 16 37,text,False,False,PENDING
+character_name:45,character_name,45,데스 하운드,0x81C00,0x8019C15C,0x8019ADD5,デス<N:ハ:12>ウント,데스 하운드,,81 47 DD A2 71 34 95,81 30 A1 19 86 17,text,False,False,PENDING
+character_name:46,character_name,46,데스,0x81C04,0x8019C164,0x8019B0A4,デス,데스,,81 47,81 30,text,False,False,PENDING
+character_name:47,character_name,47,뱀파이어 배트,0x81C08,0x8019C168,0x8019AB44,ウ<N:=:12>ンパ<N:｣:11>アバット,뱀파이어 배트,,DD 39 DE 4E 34 A3 65 42 AF 82 5C,DF 21 DD 7B 03 14 A1 DD 93 DD 5B,text,False,False,PENDING
+character_name:48,character_name,48,소드맨,0x81C0C,0x8019C174,0x8019AF0E,ソートマン,소드맨,,DE 4D 31 95 64 34,DD 07 17 DE 08,text,False,False,PENDING
+character_name:49,character_name,49,나이트 마스터,0x81C10,0x8019C17C,0x8019C280,ナ<N:｣:11>トマスター,나이트 마스터,,7C 65 5C 64 47 62 31,1E 03 DD 5B A1 45 30 02,text,False,False,PENDING
+character_name:50,character_name,50,그레이트 나이트,0x81C14,0x8019C184,0x8019C912,<N:ク:12><N:リ:12>ートナ<N:｣:11>ト,그레이트 나이트,,80 6F 31 5C 7C 65 5C,15 DD 66 03 DD 5B A1 1E 03 DD 5B,text,False,False,PENDING
+character_name:51,character_name,51,포이즌 스모그,0x81C18,0x8019C18C,0x8019C180,ポ<N:｣:11><N:ス:15>ンスモッ<N:ク:12>,포이즌 스모그,,D7 65 DE 1F 34 47 5F 82 80,DD 78 03 DF 90 A1 30 55 15,text,False,False,PENDING
+character_name:52,character_name,52,메두사 리자드,0x81C1C,0x8019C198,0x8019C108,メデューサリ<N:ザ:8>ート,메두사 리자드,,78 81 AB 31 77 6B DD C8 31 95,DD 2C DD 21 34 A1 2E 28 17,text,False,False,PENDING
+character_name:53,character_name,53,드래곤 플라이,0x81C20,0x8019C1A4,0x8019ABA8,トラ<N:ニ:13>ンフラ<N:｣:11>,드래곤 플라이,,95 57 DD 3C 34 A6 57 65,17 DD 12 DE 9B A1 DE 36 8F 03,text,False,False,PENDING
+character_name:54,character_name,54,맨트랩,0x81C24,0x8019C1B0,0x8019AE53,マントラッ<N:フ:11>,맨트랩,,64 34 5C 57 82 DD 55,DE 08 DD 5B DF 29,text,False,False,PENDING
+character_name:55,character_name,55,데스 플레임,0x81C28,0x8019C1B8,0x8019C09A,デスフ<N:リ:12><N:｣:11>ム,데스 플레임,,81 47 A6 6F 65 D8,81 30 A1 DE 36 DD 66 DD C2,text,False,False,PENDING
+character_name:56,character_name,56,엘리멘탈 마스터,0x81C2C,0x8019C1C0,0x8019AB38,エ<N:リ:12>メンタルマスター,엘리멘탈 마스터,,DD 23 6F 78 34 62 53 64 47 62 31,DE 68 2E DE 8C DE 14 A1 45 30 02,text,False,False,PENDING
+character_name:57,character_name,57,이가,0x81C30,0x8019C1CC,0x8019B08F,<N:｣:11>ー<N:力:5>,이가,,65 31 DD 02,03 0C,text,False,False,PENDING
+character_name:58,character_name,58,,0x81C34,0x8019C1D4,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:59,character_name,59,야생 헤모지,0x81C38,0x8019C1D8,0x8019C2EC,野生へモジー,야생 헤모지,,DD E7 DD 1C DD 3B 5F 7F 31,49 DD 36 A1 DD C3 55 04,text,False,False,PENDING
+character_name:60,character_name,60,레서 데몬,0x81C3C,0x8019C1E4,0x8019AE29,<N:リ:12>ッサーデーモン,레서 데몬,,6F 82 77 31 81 31 5F 34,DD 66 25 A1 81 64,text,False,False,PENDING
+character_name:61,character_name,61,그레이터 데몬,0x81C40,0x8019C1F0,0x8019C265,<N:ク:12><N:リ:12>ーターデーモン,그레이터 데몬,,80 6F 31 62 31 81 31 5F 34,15 DD 66 03 02 A1 81 64,text,False,False,PENDING
+character_name:62,character_name,62,스톤 골렘,0x81C44,0x8019C1FC,0x8019C29B,スタン<N:ニ:13>ー<N:リ:12>ム,스톤 골렘,,47 62 34 DD 3C 31 6F D8,30 DD 9A A1 DF 15 DF 2B,text,False,False,PENDING
+character_name:63,character_name,63,와이번,0x81C48,0x8019C208,0x8019B05F,ワ<N:｣:11>バーン,와이번,,DD A0 65 AF 31 34,88 03 9B,text,False,False,PENDING
+character_name:64,character_name,64,매드 배틀러,0x81C4C,0x8019C210,0x8019C1D0,マットバトラー,매드 배틀러,,64 82 95 AF 5C 57 31,DD C9 17 A1 DD 93 DD E0 20,text,False,False,PENDING
+character_name:65,character_name,65,아크 데몬,0x81C50,0x8019C218,0x8019AE8A,アークデーモン,아크 데몬,,42 31 4E 81 31 5F 34,09 58 A1 81 64,text,False,False,PENDING
+character_name:66,character_name,66,파이어 골렘,0x81C54,0x8019C220,0x8019C18A,フ<N:=:12><N:｣:11>ア<N:ニ:13>ー<N:リ:12>ム,파이어 골렘,,A6 DE 4E 65 42 DD 3C 31 6F D8,DD 7B 03 14 A1 DF 15 DF 2B,text,False,False,PENDING
+character_name:67,character_name,67,코퍼 드래곤,0x81C58,0x8019C22C,0x8019AC63,カッパートラ<N:ニ:13>ン,코퍼 드래곤,,BC 82 A3 31 95 57 DD 3C 34,DD 40 DE 78 A1 17 DD 12 DE 9B,text,False,False,PENDING
+character_name:68,character_name,68,그레이트 서펀트,0x81C5C,0x8019C238,0x8019C7AA,<N:ク:12><N:リ:12>ートサー<N:へ:4>ント,그레이트 서펀트,,80 6F 31 5C 77 31 DD F7 34 5C,15 DD 66 03 DD 5B A1 25 DF 54 DD 5B,text,False,False,PENDING
+character_name:69,character_name,69,수행승,0x81C60,0x8019C244,0x8019AF8C,修行僧,수행승,,DD BF 74 84,50 DD 31 69,text,False,False,PENDING
+character_name:70,character_name,70,라마다 대승정,0x81C64,0x8019C24C,0x8019BD65,ラマダ大僧正,라마다 대승정,,57 64 67 50 84 C7,8F 45 01 A1 37 69 31,text,False,False,PENDING
+character_name:71,character_name,71,그라 아비스,0x81C68,0x8019C254,0x8019BC35,<N:ク:12>ラ・アピス,그라 아비스,,80 57 2C 42 72 47,15 8F A1 09 DD 06 30,text,False,False,PENDING
+character_name:72,character_name,72,니 아비스,0x81C6C,0x8019C25C,0x8019BE7F,ニ・アピス,니 아비스,,D1 2C 42 72 47,07 A1 09 DD 06 30,text,False,False,PENDING
+character_name:73,character_name,73,라류우키,0x81C70,0x8019C264,0x8019ADE3,ラリュウ<N:午:15>,라류우키,,57 6B AB 71 DD 4E,8F DD 6E 3D DD B3,text,False,False,PENDING
+character_name:74,character_name,74,효엔키,0x81C74,0x8019C26C,0x8019AE5A,<N:ヒ:5>ョウエン<N:午:15>,효엔키,,DD B5 69 71 DD 23 34 DD 4E,DE 24 DE 44 DD B3,text,False,False,PENDING
+character_name:75,character_name,75,무르 아비스,0x81C78,0x8019C278,0x8019BD0D,ムル・アピス,무르 아비스,,D8 53 2C 42 72 47,5F 70 A1 09 DD 06 30,text,False,False,PENDING
+character_name:76,character_name,76,라 아비스,0x81C7C,0x8019C280,0x8019ADDC,ラ・アピス,라 아비스,,57 2C 42 72 47,8F A1 09 DD 06 30,text,False,False,PENDING
+character_name:77,character_name,77,초코,0x81C80,0x8019C288,0x8019B033,ちょこ,초코,,4B 73 2E,39 DD 40,text,False,False,PENDING
+character_name:78,character_name,78,보물상자,0x81C84,0x8019C28C,0x8019AF96,たからばこ,보물상자,,1F 20 33 58 2E,60 6D 8B 28,text,False,False,PENDING
+character_name:79,character_name,79,보물상자,0x81C88,0x8019C294,0x8019AF96,たからばこ,보물상자,,1F 20 33 58 2E,60 6D 8B 28,text,False,False,PENDING
+character_name:80,character_name,80,케락,0x81C8C,0x8019C29C,0x8019B013,<N:ゲ:16>ラック,케락,,DD 6D 57 82 4E,DD F8 DF 27,text,False,False,PENDING
+character_name:81,character_name,81,,0x81C90,0x8019C2A4,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:82,character_name,82,모프리,0x81C94,0x8019C2A8,0x8019AF91,モフリー,모프리,,5F A6 6B 31,55 DD 9D 2E,text,False,False,PENDING
+character_name:83,character_name,83,후우진,0x81C98,0x8019C2B0,0x8019AF38,フウジン,후우진,,A6 71 7F 34,DD 8D 3D DD 3F,text,False,False,PENDING
+character_name:84,character_name,84,라이진,0x81C9C,0x8019C2B8,0x8019AFAA,ラ<N:｣:11>ジン,라이진,,57 65 7F 34,8F 03 DD 3F,text,False,False,PENDING
+character_name:85,character_name,85,오톤,0x81CA0,0x8019C2C0,0x8019B03F,オトン,오톤,,8F 95 34,46 DD 9A,text,False,False,PENDING
+character_name:86,character_name,86,초코,0x81CA4,0x8019C2C4,0x8019B033,ちょこ,초코,,4B 73 2E,39 DD 40,text,False,False,PENDING
+character_name:87,character_name,87,헤모지,0x81CA8,0x8019C2C8,0x8019B004,へモジー,헤모지,,DD 3B 5F 7F 31,DD C3 55 04,text,False,False,PENDING
+character_name:88,character_name,88,불꽃,0x81CAC,0x8019C2D0,0x8019AFBE,炎,불꽃,,BF,DD 13 DD 8C,text,False,False,PENDING
+character_name:89,character_name,89,,0x81CB0,0x8019C2D4,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:90,character_name,90,,0x81CB4,0x8019C2D8,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:91,character_name,91,,0x81CB8,0x8019C2DC,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:92,character_name,92,,0x81CBC,0x8019C2E0,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:93,character_name,93,,0x81CC0,0x8019C2E4,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:94,character_name,94,,0x81CC4,0x8019C2E8,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:95,character_name,95,,0x81CC8,0x8019C2EC,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:96,character_name,96,,0x81CCC,0x8019C2F0,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:97,character_name,97,,0x81CD0,0x8019C2F4,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:98,character_name,98,,0x81CD4,0x8019C2F8,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:99,character_name,99,,0x81CD8,0x8019C2FC,0x8019B0AD,,,,,,text,True,True,PENDING
+character_name:100,character_name,100,다크 아크,0x81CDC,0x8019C300,0x8019AE84,ダークアーク,다크 아크,,67 31 4E 42 31 4E,01 58 A1 09 58,text,False,False,PENDING
+character_name:101,character_name,101,다크 쿠쿠루,0x81CE0,0x8019C308,0x8019AC9A,ダークククル,다크 쿠쿠루,,67 31 4E 4E 4E 53,01 58 A1 DD 0C DD 0C DD 42,text,False,False,PENDING
+character_name:102,character_name,102,다크 토슈,0x81CE4,0x8019C310,0x8019BE6A,ダークトッシュ,다크 토슈,,67 31 4E 5C 82 60 AB,01 58 A1 83 DD 86,text,False,False,PENDING
+character_name:103,character_name,103,다크 포코,0x81CE8,0x8019C318,0x8019B9B8,ダークポニ,다크 포코,,67 31 4E D7 D1,01 58 A1 DD 78 DD 40,text,False,False,PENDING
+character_name:104,character_name,104,다크 이가,0x81CEC,0x8019C320,0x8019C346,ダーク<N:ニ:13>ーゲン,다크 이가,,67 31 4E DD 3C 31 DD 4D 34,01 58 A1 03 0C,text,False,False,PENDING
+character_name:105,character_name,105,다크 고겐,0x81CF0,0x8019C32C,0x8019BE5C,ダーク<N:｣:11>ー<N:力:5>,다크 고겐,,67 31 4E 65 31 DD 02,01 58 A1 1C DD A9,text,False,False,PENDING
+character_name:106,character_name,106,다크 마샬,0x81CF4,0x8019C334,0x8019BE63,ダークマーシャル,다크 마샬,,67 31 4E 64 31 60 D6 53,01 58 A1 45 DF 65,text,False,False,PENDING
+character_name:107,character_name,107,다크 촌가라,0x81CF8,0x8019C340,0x8019BE71,ダークチョン<N:力:5>ラ,다크 촌가라,,67 31 4E 6C 69 34 DD 02 57,01 58 A1 96 0C 8F,text,False,False,PENDING
+region_name:0,region_name,0,스메리아 공항,0x81E38,0x8019C4FC,0x8019ABD4,スメリア<N:空:2>港,스메리아 공항,,47 78 6B 42 DD 18 DD 4A,30 DD 2C 2E 09 A1 DD 10 DD F2,text,False,False,PENDING
+region_name:1,region_name,1,토우빌,0x81E3C,0x8019C508,0x8019AFA0,トウウ<N:ｲ:6>ル,토우빌,,5C 71 DD 39 DD 03 53,83 3D DD A7,text,False,False,PENDING
+region_name:2,region_name,2,팔렌시아 성,0x81E40,0x8019C510,0x8019C176,パ<N:リ:12>ンシア城,팔렌시아 성,,A3 6F 34 60 42 DD 17,DD 6C DD B0 29 09 A1 DD 17,text,False,False,PENDING
+region_name:3,region_name,3,올카스 언덕,0x81E44,0x8019C518,0x8019D128,オルカスの丘,오르카스 언덕,,8F 53 DD 56 47 1C DE F2,46 70 DD 38 30 A1 DD 30 5A,text,False,False,PENDING
+region_name:4,region_name,4,봉인의 폭포,0x81E48,0x8019C524,0x8019C1BC,封印の滝,봉인의 폭포,,DD 0F DD 44 1C DE 31,DD B6 35 0F A1 DD 62 DD 78,text,False,False,PENDING
+region_name:5,region_name,5,니르 평원,0x81E4C,0x8019C52C,0x8019BE78,ニル<N:卞:16>平原,니르 평원,,D1 53 DD A1 DE BE DE EB,07 70 A1 DE 34 7B,text,False,False,PENDING
+region_name:6,region_name,6,카라간 평야,0x81E50,0x8019C538,0x8019C11C,カラ<N:力:5>ン平野,카라간 평야,,BC 57 DD 02 34 DE BE DD E7,DD 38 8F DD 1B A1 DE 34 49,text,False,False,PENDING
+region_name:7,region_name,7,쿠나 언덕,0x81E54,0x8019C544,0x8019BD95,ク<N:｣:11>ナの丘,쿠나 언덕,,4E 65 7C 1C DE F2,DD 0C 1E A1 DD 30 5A,text,False,False,PENDING
+region_name:8,region_name,8,밀마나 공항,0x81E58,0x8019C54C,0x8019B182,ミルマーナ<N:空:2>港,미르마나 공항,,DD 3A 53 64 31 7C DD 18 DD 4A,DD 2F 70 45 1E A1 DD 10 DD F2,text,False,False,PENDING
+region_name:9,region_name,9,수도 군본부,0x81E5C,0x8019C558,0x8019BD05,首都の軍本部,수도 군본부,,DE DD DE 98 1C BA 92 DD 25,50 33 A1 7C DD 58 6C,text,False,False,PENDING
+region_name:10,region_name,10,토요케 숲,0x81E60,0x8019C564,0x8019BD3D,トヨー<N:ゲ:16>の森,토요케 숲,,5C DD 14 31 DD 6D 1C DD 10,83 2C DD F8 A1 DD 97,text,False,False,PENDING
+region_name:11,region_name,11,루와지 숲,0x81E64,0x8019C570,0x8019BDAD,ルワジの森,루와지 숲,,53 DD A0 7F 1C DD 10,DD 42 88 04 A1 DD 97,text,False,False,PENDING
+region_name:12,region_name,12,카카라스 숲,0x81E68,0x8019C578,0x8019C126,カカラスの森,카카라스 숲,,DD 56 BC 57 47 1C DD 10,DD 38 DD 38 8F 30 A1 DD 97,text,False,False,PENDING
+region_name:13,region_name,13,센바라 늘,0x81E6C,0x8019C584,0x8019BBF9,センバラの沼,센바라 늘,,DD 60 34 AF 57 1C DF 34,DF 5A DD 08 8F A1 DD 71,text,False,False,PENDING
+region_name:14,region_name,14,그레이시누 공항,0x81E70,0x8019C590,0x8019C79D,<N:ク:12><N:リ:12><N:｣:11>シーヌ<N:空:2>港,그레이시누 공항,,80 6F 65 60 31 DD C7 DD 18 DD 4A,15 DD 66 03 29 DD 55 A1 DD 10 DD F2,text,False,False,PENDING
+region_name:15,region_name,15,라마다사,0x81E74,0x8019C59C,0x8019AFAF,ラマダ寺,라마다사,,57 64 67 DD 9E,8F 45 01 34,text,False,False,PENDING
+region_name:16,region_name,16,라마다산,0x81E78,0x8019C5A4,0x8019AEFC,ラマダ山,라마다산,,57 64 67 9B,8F 45 01 DD 45,text,False,False,PENDING
+region_name:17,region_name,17,아라라토스 공항,0x81E7C,0x8019C5AC,0x8019AB92,アララトス<N:空:2>港,아라라토스 공항,,42 57 57 5C 47 DD 18 DD 4A,09 8F 8F 83 30 A1 DD 10 DD F2,text,False,False,PENDING
+region_name:18,region_name,18,촌가라의 가게,0x81E80,0x8019C5B8,0x8019BD7D,チョン<N:力:5>ラの店,촌가라의 가게,,6C 69 34 DD 02 57 1C DE 5F,96 0C 8F 0F A1 0C 41,text,False,False,PENDING
+region_name:19,region_name,19,유적 던전,0x81E84,0x8019C5C4,0x8019BD55,遺跡ダンジョン,유적 던전,,DD 8F DD 9D 67 34 7F 69 34,8A DD 09 A1 DD 25 4F,text,False,False,PENDING
+region_name:20,region_name,20,아제다 고지,0x81E88,0x8019C5D0,0x8019BE94,ア<N:г:23>ンダ高地,아제다 고지,,42 DD F8 34 67 DD DD 90,09 66 01 A1 1C 04,text,False,False,PENDING
+region_name:21,region_name,21,아리바샤 공항,0x81E8C,0x8019C5DC,0x8019C8EE,アリバーシャ<N:空:2>港,아리바샤 공항,,42 6B AF 31 60 D6 DD 18 DD 4A,09 2E DD 08 DE 5C A1 DD 10 DD F2,text,False,False,PENDING
+region_name:22,region_name,22,사류족 마을,0x81E90,0x8019C5E8,0x8019C2B6,サリュ族の村,사류족 마을,,77 6B AB DD 9C 1C DD 0B,34 DD 6E DD 7A A1 45 0D,text,False,False,PENDING
+region_name:23,region_name,23,물의 신전,0x81E94,0x8019C5F4,0x8019AED8,水の神殿,물의 신전,,B8 1C DD 2F DD 84,6D 0F A1 3E 4F,text,False,False,PENDING
+region_name:24,region_name,24,리덴 유적,0x81E98,0x8019C5FC,0x8019BC6D,<N:リ:12><N:｣:11>デン遺跡,리덴 유적,,6F 65 81 34 DD 8F DD 9D,2E DF 20 A1 8A DD 09,text,False,False,PENDING
+region_name:25,region_name,25,사라 사막,0x81E9C,0x8019C608,0x8019BEE1,サラ砂漠,사라 사막,,77 57 DE 3D DE 2D,34 8F A1 34 DD AB,text,False,False,PENDING
+region_name:26,region_name,26,라슈마 암장,0x81EA0,0x8019C610,0x8019BAAC,<N:｣:11>シュマのいわ場,라슈마 암장,,65 60 AB 64 1C 1B 43 89,8F DD 86 45 A1 DF 6C 56,text,False,False,PENDING
+region_name:27,region_name,27,카델 공항,0x81EA4,0x8019C61C,0x8019C130,カーデル<N:空:2>港,카델 공항,,DD 56 31 81 53 DD 18 DD 4A,DD 38 DD E9 A1 DD 10 DD F2,text,False,False,PENDING
+region_name:28,region_name,28,투기장,0x81EA8,0x8019C628,0x8019AFE1,闘技場,투기장,,93 DD 4C 89,DD 39 24 56,text,False,False,PENDING
+region_name:29,region_name,29,클라프섬,0x81EAC,0x8019C630,0x8019BE15,クラフ島,클라프섬,,4E 57 A6 DE 05,DE 01 8F DD 9D DE 77,text,False,False,PENDING
+ui_pointer:81EE8,ui_system_v39,,스메리아,0x81EE8,0x8019C6B0,0x8019AEA2,スメリア,스메리아,,47 78 6B 42,30 DD 2C 2E 09,text,False,False,PENDING
+ui_pointer:81EEC,ui_system_v39,,밀마나,0x81EEC,0x8019C6B8,0x8019C8D5,ミルマーナ,미르마나,,DD 3A 53 64 31 7C,DD 2F 70 45 1E,text,False,False,PENDING
+ui_pointer:81EF0,ui_system_v39,,그레이시누,0x81EF0,0x8019C6C0,0x8019BC3D,<N:ク:12><N:リ:12><N:｣:11>シーヌ,그레이시누,,80 6F 65 60 31 DD C7,15 DD 66 03 29 DD 55,text,False,False,PENDING
+ui_pointer:81EF4,ui_system_v39,,아라라토스,0x81EF4,0x8019C6C8,0x8019AE90,アララトス,아라라토스,,42 57 57 5C 47,09 8F 8F 83 30,text,False,False,PENDING
+ui_pointer:81EF8,ui_world_name_v39,,아리바샤,0x81EF8,0x8019C6D0,0x8019BE86,アリバーシャ,아리바샤,,42 6B AF 31 60 D6,09 2E DD 08 DE 5C,text,False,False,PENDING
+ui_pointer:81EFC,ui_system_v39,,카델,0x81EFC,0x8019C6D8,0x8019AFDC,カーデル,카델,,DD 56 31 81 53,DD 38 DD E9,text,False,False,PENDING
+ui_pointer:81F00,ui_system_v39,,지크라프섬,0x81F00,0x8019C6E0,0x8019BC1D,ジークラフ島,지크라프섬,,7F 31 4E 57 A6 DE 05,04 58 8F DD 9D DE 77,text,False,False,PENDING
+location_name:0,location_name,0,,0x82170,0x8019C704,0x8019B0AD,,,,,,text,True,True,PENDING
+location_name:1,location_name,1,산정의 사당,0x82174,0x8019C708,0x8019BB18,山頂の社,산정의 사당,,9B DD EA 1C DE A5,DD 45 31 0F A1 34 DD 1C,text,False,False,PENDING
+location_name:2,location_name,2,아크의 집,0x82178,0x8019C710,0x8019BE8D,アークの家,아크의 집,,42 31 4E 1C DD 5E,09 58 0F A1 DD E2,text,False,False,PENDING
+location_name:3,location_name,3,정령의 산,0x8217C,0x8019C718,0x8019BED3,精霊の山,정령의 산,,4D 4F 1C 9B,31 51 0F A1 DD 45,text,False,False,PENDING
+location_name:4,location_name,4,마을 입구,0x82180,0x8019C720,0x8019AEC0,村の門,마을 입구,,DD 0B 1C DD FF,45 0D A1 7F 87,text,False,False,PENDING
+location_name:5,location_name,5,정령의 산,0x82184,0x8019C728,0x8019BED3,精霊の山,정령의 산,,4D 4F 1C 9B,31 51 0F A1 DD 45,text,False,False,PENDING
+location_name:6,location_name,6,팔렌시아 성,0x82188,0x8019C730,0x8019C176,パ<N:リ:12>ンシア城,팔렌시아 성,,A3 6F 34 60 42 DD 17,DD 6C DD B0 29 09 A1 DD 17,text,False,False,PENDING
+location_name:7,location_name,7,알현실,0x8218C,0x8019C738,0x8019ADFF,謁見の聞,알현실,,DF 54 A0 1C 88,DD 1E DF 58 DD 27,text,False,False,PENDING
+location_name:8,location_name,8,스메리아 공항,0x82190,0x8019C740,0x8019ABD4,スメリア<N:空:2>港,스메리아 공항,,47 78 6B 42 DD 18 DD 4A,30 DD 2C 2E 09 A1 DD 10 DD F2,text,False,False,PENDING
+location_name:9,location_name,9,팔렌시아 전망대,0x82194,0x8019C74C,0x8019AB08,パ<N:リ:12>ンシアを見おろす丘,팔렌시아 전망대,,A3 6F 34 60 42 2F A0 3B 55 2B DE F2,DD 6C DD B0 29 09 A1 4F DD 6B 37,text,False,False,PENDING
+location_name:10,location_name,10,대신의 방,0x82198,0x8019C75C,0x8019BEE8,大臣の部屋,대신의 방,,50 8B 1C DD 25 DE 1C,37 3E 0F A1 DD 29,text,False,False,PENDING
+location_name:11,location_name,11,밀마나 공항,0x8219C,0x8019C764,0x8019B182,ミルマーナ<N:空:2>港,미르마나 공항,,DD 3A 53 64 31 7C DD 18 DD 4A,DD 2F 70 45 1E A1 DD 10 DD F2,text,False,False,PENDING
+location_name:12,location_name,12,밀마나 군본부,0x821A0,0x8019C770,0x8019C21F,ミルマーナ軍本部,미르마나 군본부,,DD 3A 53 64 31 7C BA 92 DD 25,DD 2F 70 45 1E A1 7C DD 58 6C,text,False,False,PENDING
+location_name:13,location_name,13,장군의 방,0x821A4,0x8019C77C,0x8019ADC0,将軍の部屋,장군의 방,,DD 89 BA 1C DD 25 DE 1C,56 7C 0F A1 DD 29,text,False,False,PENDING
+location_name:14,location_name,14,토요케 숲,0x821A8,0x8019C788,0x8019BD3D,トヨー<N:ゲ:16>の森,토요케 숲,,5C DD 14 31 DD 6D 1C DD 10,83 2C DD F8 A1 DD 97,text,False,False,PENDING
+location_name:15,location_name,15,팔렌시아 지하창고,0x821AC,0x8019C794,0x8019C860,パ<N:リ:12>ンシア城地下倉庫,팔렌시아 지하창고,,A3 6F 34 60 42 DD 17 90 70 DE 32 DE 3F,DD 6C DD B0 29 09 A1 04 19 DE 87 1C,text,False,False,PENDING
+location_name:16,location_name,16,팔렌시아 지하감옥,0x821B0,0x8019C7A4,0x8019C74A,パ<N:リ:12>ンシア城地下<N:牢:2>,팔렌시아 지하감옥,,A3 6F 34 60 42 DD 17 90 70 DE 21,DD 6C DD B0 29 09 A1 04 19 DD 77 DE 39,text,False,False,PENDING
+location_name:17,location_name,17,올카스 언덕,0x821B4,0x8019C7B0,0x8019D128,オルカスの丘,오르카스 언덕,,8F 53 DD 56 47 1C DE F2,46 70 DD 38 30 A1 DD 30 5A,text,False,False,PENDING
+location_name:18,location_name,18,환계,0x821B8,0x8019C7BC,0x8019AFEB,幻界,환계,,DD F2 DD 12,DD 65 DD 11,text,False,False,PENDING
+location_name:19,location_name,19,아라라토스 공항,0x821BC,0x8019C7C4,0x8019AB92,アララトス<N:空:2>港,아라라토스 공항,,42 57 57 5C 47 DD 18 DD 4A,09 8F 8F 83 30 A1 DD 10 DD F2,text,False,False,PENDING
+location_name:20,location_name,20,촌가라의 가게,0x821C0,0x8019C7D0,0x8019BD7D,チョン<N:力:5>ラの店,촌가라의 가게,,6C 69 34 DD 02 57 1C DE 5F,96 0C 8F 0F A1 0C 41,text,False,False,PENDING
+location_name:21,location_name,21,아제다 고지 동굴,0x821C4,0x8019C7DC,0x8019C8FA,ア<N:г:23>ンダ高地洞<N:窟:10>,아제다 고지 동굴,,42 DD F8 34 67 DD DD 90 DF 1A DF 48,09 66 01 A1 1C 04 A1 DD 32 DE 67,text,False,False,PENDING
+location_name:22,location_name,22,아제다 고지 외부,0x821C8,0x8019C7EC,0x8019AB7C,ア<N:г:23>ンダ高地外,아제다 고지 외부,,42 DD F8 34 67 DD DD 90 DD 6B,09 66 01 A1 1C 04 A1 DE 4C 6C,text,False,False,PENDING
+location_name:23,location_name,23,유적 던전,0x821CC,0x8019C7F8,0x8019BD55,遺跡ダンジョン,유적 던전,,DD 8F DD 9D 67 34 7F 69 34,8A DD 09 A1 DD 25 4F,text,False,False,PENDING
+location_name:24,location_name,24,그레이시누 공항,0x821D0,0x8019C804,0x8019C79D,<N:ク:12><N:リ:12><N:｣:11>シーヌ<N:空:2>港,그레이시누 공항,,80 6F 65 60 31 DD C7 DD 18 DD 4A,15 DD 66 03 29 DD 55 A1 DD 10 DD F2,text,False,False,PENDING
+location_name:25,location_name,25,라마다사 도장,0x821D4,0x8019C810,0x8019BD5D,ラマダ寺道場,라마다사 도장,,57 64 67 DD 9E DD 52 89,8F 45 01 34 A1 33 56,text,False,False,PENDING
+location_name:26,location_name,26,라마다사 승정의 방,0x821D8,0x8019C81C,0x8019AA84,ラマダ寺僧正の部屋,라마다사 승정의 방,,57 64 67 DD 9E 84 C7 1C DD 25 DE 1C,8F 45 01 34 A1 69 31 0F A1 DD 29,text,False,False,PENDING
+location_name:27,location_name,27,라마다산 정상,0x821DC,0x8019C82C,0x8019C33D,ラマダ山頂,라마다산 정상,,57 64 67 9B DD EA,8F 45 01 DD 45 A1 31 8B,text,False,False,PENDING
+location_name:28,location_name,28,라마다사,0x821E0,0x8019C834,0x8019AFAF,ラマダ寺,라마다사,,57 64 67 DD 9E,8F 45 01 34,text,False,False,PENDING
+location_name:29,location_name,29,카델 공항,0x821E4,0x8019C83C,0x8019C130,カーデル<N:空:2>港,카델 공항,,DD 56 31 81 53 DD 18 DD 4A,DD 38 DD E9 A1 DD 10 DD F2,text,False,False,PENDING
+location_name:30,location_name,30,니로시암 대기실,0x821E8,0x8019C848,0x8019AB66,ニロシアムひかえ室,니로시암 대기실,,D1 A2 60 42 D8 7D 20 46 DE DF,07 D5 29 DF 6C A1 37 24 DD 27,text,False,False,PENDING
+location_name:31,location_name,31,니로시암 무대,0x821EC,0x8019C854,0x8019C25C,ニロシアムぶたい,니로시암 무대,,D1 A2 60 42 D8 CA 1F 1B,07 D5 29 DF 6C A1 5F 37,text,False,False,PENDING
+location_name:32,location_name,32,아리바샤 공항,0x821F0,0x8019C860,0x8019C8EE,アリバーシャ<N:空:2>港,아리바샤 공항,,42 6B AF 31 60 D6 DD 18 DD 4A,09 2E DD 08 DE 5C A1 DD 10 DD F2,text,False,False,PENDING
+location_name:33,location_name,33,사류족 마을,0x821F4,0x8019C86C,0x8019C2B6,サリュ族の村,사류족 마을,,77 6B AB DD 9C 1C DD 0B,34 DD 6E DD 7A A1 45 0D,text,False,False,PENDING
+location_name:34,location_name,34,물의 신전,0x821F8,0x8019C878,0x8019AED8,水の神殿,물의 신전,,B8 1C DD 2F DD 84,6D 0F A1 3E 4F,text,False,False,PENDING
+location_name:35,location_name,35,지하 엘리베이터,0x821FC,0x8019C880,0x8019AB50,地下エ<N:リ:12>ベータ,지하 엘리베이터,,90 70 DD 23 6F DD B4 31 62,04 19 A1 DE 68 2E DD FE 03 02,text,False,False,PENDING
+location_name:36,location_name,36,지하 바이오 연구실,0x82200,0x8019C88C,0x8019B956,地下バ<N:｣:11>オ<N:研:23><N:究:1>室,지하 바이오 연구실,,90 70 AF 65 8F DE 41 DE 46 DE DF,04 19 A1 DD 08 03 46 A1 DD AD 87 DD 27,text,False,False,PENDING
+location_name:37,location_name,37,팔렌시아 시가지,0x82204,0x8019C898,0x8019AC6E,パ<N:リ:12>ンシア<N:街:4>頭,팔렌시아 시가지,,A3 6F 34 60 42 DE 7D DE 5C,DD 6C DD B0 29 09 A1 29 0C 04,text,False,False,PENDING
+location_name:38,location_name,38,성관 봉인의 폭포 외부,0x82208,0x8019C8A4,0x8019B620,聖柩封印の滝外,성관 봉인의 폭포 외부,,CD DD 1A DD 0F DD 44 1C DE 31 DD 6B,DD 17 1D A1 DD B6 35 0F A1 DD 62 DD 78 A1 DE 4C 6C,text,False,False,PENDING
+location_name:39,location_name,39,성관 봉인의 폭포 내부,0x8220C,0x8019C8B4,0x8019B69C,聖柩封印の滝内,성관 봉인의 폭포 내부,,CD DD 1A DD 0F DD 44 1C DE 31 DD 81,DD 17 1D A1 DD B6 35 0F A1 DD 62 DD 78 A1 47 6C,text,False,False,PENDING
+location_name:40,location_name,40,토우빌 암벽,0x82210,0x8019C8C4,0x8019C0A4,トウウ<N:ｲ:6>ルがん<N:ヘ:5>き,토우빌 암벽,,5C 71 DD 39 DD 03 53 2A 2D DF 5F 44,83 3D DD A7 A1 DF 6C DE 92,text,False,False,PENDING
+location_name:41,location_name,41,해변의 비행선,0x82214,0x8019C8D4,0x8019ABB3,うみベの飛<N:空:2>挺,해변의 비행선,,26 6D DD 35 1C DD 72 DD 18 DE C8,2B 80 0F A1 DD 06 DD 31 DD 53,text,False,False,PENDING
+location_name:42,location_name,42,니르 평원,0x82218,0x8019C8E0,0x8019BE78,ニル<N:卞:16>平原,니르 평원,,D1 53 DD A1 DE BE DE EB,07 70 A1 DE 34 7B,text,False,False,PENDING
+location_name:43,location_name,43,카라간 평야,0x8221C,0x8019C8EC,0x8019C11C,カラ<N:力:5>ン平野,카라간 평야,,BC 57 DD 02 34 DE BE DD E7,DD 38 8F DD 1B A1 DE 34 49,text,False,False,PENDING
+location_name:44,location_name,44,쿠나 언덕,0x82220,0x8019C8F8,0x8019BD95,ク<N:｣:11>ナの丘,쿠나 언덕,,4E 65 7C 1C DE F2,DD 0C 1E A1 DD 30 5A,text,False,False,PENDING
+location_name:45,location_name,45,루와지 숲,0x82224,0x8019C900,0x8019BDAD,ルワジの森,루와지 숲,,53 DD A0 7F 1C DD 10,DD 42 88 04 A1 DD 97,text,False,False,PENDING
+location_name:46,location_name,46,카카라스 숲,0x82228,0x8019C908,0x8019C126,カカラスの森,카카라스 숲,,DD 56 BC 57 47 1C DD 10,DD 38 DD 38 8F 30 A1 DD 97,text,False,False,PENDING
+location_name:47,location_name,47,센바라 늘,0x8222C,0x8019C914,0x8019BBF9,センバラの沼,센바라 늘,,DD 60 34 AF 57 1C DF 34,DF 5A DD 08 8F A1 DD 71,text,False,False,PENDING
+location_name:48,location_name,48,리덴 유적,0x82230,0x8019C920,0x8019BC6D,<N:リ:12><N:｣:11>デン遺跡,리덴 유적,,6F 65 81 34 DD 8F DD 9D,2E DF 20 A1 8A DD 09,text,False,False,PENDING
+location_name:49,location_name,49,사라 사막,0x82234,0x8019C92C,0x8019BEE1,サラ砂漠,사라 사막,,77 57 DE 3D DE 2D,34 8F A1 34 DD AB,text,False,False,PENDING
+location_name:50,location_name,50,라슈마 암장,0x82238,0x8019C934,0x8019BAAC,<N:｣:11>シュマのいわ場,라슈마 암장,,65 60 AB 64 1C 1B 43 89,8F DD 86 45 A1 DF 6C 56,text,False,False,PENDING
+location_name:51,location_name,51,니로시암 투기장,0x8223C,0x8019C940,0x8019AB71,ニロシアム闘技場,니로시암 투기장,,D1 A2 60 42 D8 93 DD 4C 89,07 D5 29 DF 6C A1 DD 39 24 56,text,False,False,PENDING
+location_name:52,location_name,52,라마다사 도장,0x82240,0x8019C94C,0x8019BD5D,ラマダ寺道場,라마다사 도장,,57 64 67 DD 9E DD 52 89,8F 45 01 34 A1 33 56,text,False,False,PENDING
+location_name:53,location_name,53,클라프섬 공항,0x82244,0x8019C958,0x8019C8BB,クラーフ島<N:空:2>港,클라프섬 공항,,4E 57 31 A6 DE 05 DD 18 DD 4A,DE 01 8F DD 9D DE 77 A1 DD 10 DD F2,text,False,False,PENDING
+location_name:54,location_name,54,클라프탑 최상층,0x82248,0x8019C964,0x8019C766,クラーフとう最上階,클라프탑 최상층,,4E 57 31 A6 36 26 DD 2B B9 DD B2,DE 01 8F DD 9D DF 88 A1 DE 27 8B DE 50,text,False,False,PENDING
+ui_pointer:82348,ui_system_v39,,대상 변경,0x82348,0x8019CA4C,0x8019AEA8,<CTRL:E7><N:＆:4><CTRL:E7><N:X:20>で目標をかえられます,대상 변경,,E7 07 E7 06 30 AC DE 92 2F 20 46 33 32 27 2B,37 8B A1 80 68,text,False,False,PENDING
+ui_pointer:8234C,ui_system_v39,,"공격, 연결 열기",0x8234C,0x8019CA5C,0x8019B144,<CTRL:E7>！で攻撃、<CTRL:E7><N:＄:1>でリン<N:ク:12>を<N:閂:11>きます,<CTRL:E702>공격  <CTRL:E705>링 열기,,E7 02 30 D0 B1 24 E7 05 30 6B 34 80 2F DD E0 44 27 2B,E7 02 DD 10 DD 0A A1 A1 E7 05 DE 54 A1 DD 89 24,text,False,False,PENDING
+ui_pointer:82350,ui_system_v39,,"행동 끝, 상태 확인",0x82350,0x8019CA70,0x8019B155,<CTRL:E7>”で行動終了、<CTRL:E7>’でステ<N:｣:11>タスを<N:表:12><N:示:2>します,<CTRL:E703>행동 끝  <CTRL:E708>상태 확인,,E7 03 30 74 DC DD 79 DE B8 24 E7 08 30 47 DB 65 62 47 2F DE 59 DE 6F 1E 27 2B,E7 03 DD 31 DD 32 A1 DD A3 A1 A1 E7 08 8B DD D2 A1 DE 2B 35,text,False,False,PENDING
+ui_pointer:82354,ui_system_v39,,스킬을 선택하세요,0x82354,0x8019CA8C,0x8019C7B7,<CTRL:E7> で能力を選んで下さい,스킬을 선택하세요,,E7 01 30 DD 80 61 2F DE 0A 2D 30 70 3A 1B,30 DE 6F 0D A1 DD 53 DF 9A 19 8C 2C,text,False,False,PENDING
+ui_pointer:82358,ui_system_v39,,돌아갑니다,0x82358,0x8019CA9C,0x8019ADC7,<CTRL:E7>”で<N:午:15>ャンセルします,돌아갑니다,,E7 03 30 DD 4E D6 34 DD 60 53 1E 27 2B,72 09 DE 0C 07 01,text,False,False,PENDING
+ui_pointer:8235C,ui_system_v39,,{결정버튼}결정 {취소버튼}돌아가기,0x8235C,0x8019CAAC,0x8019B16A,<CTRL:E7>！で決定、<CTRL:E7>”で<N:午:15>ャンセルします,<CTRL:E702>결정  <CTRL:E703>돌아가기,,E7 02 30 9D DD 97 24 E7 03 30 DD 4E D6 34 DD 60 53 1E 27 2B,E7 02 DD 47 31 A1 A1 E7 03 72 09 0C 24,text,False,False,PENDING
+ui_pointer:82360,ui_system_v39,,다음 대상을 선택합니다,0x82360,0x8019CAC4,0x801FF804,次は目標を選びます,L과 R로 다음 대상을 선택합니다.,,DD 2A 28 AC DE 92 2F DE 0A 99 27 2B,DD D8 DD 18 A1 DE 88 D5 A1 01 8D A1 37 8B 0D A1 DD 53 E9 33 DD 1D 07 01 21,text,False,False,PENDING
+ui_pointer:82364,ui_system_v39,,결정하면 주변에 스킬을 사용합니다,0x82364,0x8019CAD4,0x8019C543,決定するとまわりに能力を使います,결정하면 주변에 스킬을 사용합니다,,9D DD 97 2B 22 36 27 43 39 23 DD 80 61 2F DD 33 1B 27 2B,DD 47 31 19 3A A1 40 80 0E A1 30 DE 6F 0D A1 34 DD 1A DD 1D 07 01,text,False,False,PENDING
+ui_pointer:82368,ui_system_v39,,결정하면 보는 방향에 스킬을 사용합니다,0x82368,0x8019CAE8,0x8019B3EE,決定すると向いている方向に能力を使います,결정하면 보는 방향에 스킬을 사용합니다,,9D DD 97 2B 22 36 DD 01 1B 21 1B 22 C4 DD 01 23 DD 80 61 2F DD 33 1B 27 2B,DD 47 31 19 3A A1 60 06 A1 DD 29 DD B2 0E A1 30 DE 6F 0D A1 34 DD 1A DD 1D 07 01,text,False,False,PENDING
+ui_pointer:8236C,ui_system_v39,,비어 있는 곳을 선택하세요,0x8236C,0x8019CB04,0x8019B568,<N:空:2>いている場所を<CTRL:E7> で選んで下さい,비어 있는 곳을 선택하세요,,DD 18 1B 21 1B 22 89 C2 2F E7 01 30 DE 0A 2D 30 70 3A 1B,DD 06 14 A1 1F 06 A1 DD 15 0D A1 DD 53 DF 9A 19 8C 2C,text,False,False,PENDING
+ui_pointer:82370,ui_system_v39,,결정하면 스킬을 사용합니다,0x82370,0x8019CB18,0x8019B57B,決定すると能力を使います,결정하면 스킬을 사용합니다,,9D DD 97 2B 22 36 DD 80 61 2F DD 33 1B 27 2B,DD 47 31 19 3A A1 30 DE 6F 0D A1 34 DD 1A DD 1D 07 01,text,False,False,PENDING
+ui_pointer:82374,ui_system_v39,,인물을 선택하세요,0x82374,0x8019CB28,0x8019B58E,<CTRL:E7>”<CTRL:E7><N:＄:1>で<N:午:15>ャラを選んで下さい,<CTRL:E703><CTRL:E705> 인물을 선택하세요,,E7 03 E7 05 30 DD 4E D6 57 2F DE 0A 2D 30 70 3A 1B,E7 03 E7 05 A1 35 6D 0D A1 DD 53 DF 9A 19 8C 2C,text,False,False,PENDING
+ui_pointer:82378,ui_system_v39,,결정하면 전투를 시작합니다,0x82378,0x8019CB3C,0x8019AA24, <CTRL:E7>’で戦闘に入ります,<CTRL:E708> 전투 시작,,01 E7 08 30 63 93 23 86 39 27 2B,E7 08 A1 4F DD 39 A1 29 DD 64,text,False,False,PENDING
+ui_pointer:823A4,ui_nonstory_system_v39,,승리!,0x823A4,0x8019CB7C,0x8019B047,ステージクリア,승리!,,47 DB 31 7F 4E 6B 42,69 2E A9,text,False,False,PENDING
+ui_pointer:823A8,ui_nonstory_system_v39,,게임 오버,0x823A8,0x8019CB84,0x8019BEF6,ゲームオーバー,게임 오버,,DD 4D 31 D8 8F 31 AF 31,41 DD C2 A1 46 67,text,False,False,PENDING
+ui_pointer:823AC,ui_nonstory_system_v39,,LV,0x823AC,0x8019CB90,0x8019B1E4, <N:t:5>,<CODE:DFE7><CODE:DFF4>,"DFE7,DFF4",01 DF 60,DF E7 DF F4,HUD_BINARY,False,False,PENDING
+ui_pointer:823B0,ui_nonstory_system_v39,,empty V tail,0x823B0,0x8019CB94,0x8019B1F4,地下,지하 ,,90 70,04 19 A1,HUD_BINARY,False,False,PENDING
+ui_pointer:823B4,ui_nonstory_system_v39,,original auxiliary,0x823B4,0x8019CB98,0x8019C95C,階,층,,DD B2,DE 50,HUD_BINARY,False,False,PENDING
+ui_pointer:823B8,ui_nonstory_system_v39,,M,0x823B8,0x8019CB9C,0x8019B1E9, <N:∪:20>,<CODE:DFE7><CODE:DFF5>,"DFE7,DFF5",01 DE 4F,DF E7 DF F5,HUD_BINARY,False,False,PENDING
+ui_pointer:823BC,ui_nonstory_system_v39,,P,0x823BC,0x8019CBA0,0x8019B1EE,<N:Ｐ:10>,<CODE:DFF6>,DFF6,DD 90,DF F6,HUD_BINARY,False,False,PENDING
+ui_pointer:823D8,ui_nonstory_system_v39,,돌 상태,0x823D8,0x8019CBC0,0x8019AEE4,<N:ｌ:5>石化へ,돌 상태,,5B 94 DD 7C 5A,72 A1 8B DD D2,text,False,False,PENDING
+ui_pointer:823DC,ui_nonstory_system_v39,,마비,0x823DC,0x8019CBC8,0x8019B037,<N:ｌ:5>マ<N:ヒ:5>へ,마비,,5B 64 DD B5 5A,45 DD 06,text,False,False,PENDING
+ui_pointer:823E0,ui_nonstory_system_v39,,수면,0x823E0,0x8019CBD0,0x8019B09E,<N:ｌ:5><N:眠:5>りへ,수면,,5B DD B9 39 5A,50 3A,text,False,False,PENDING
+ui_pointer:82444,ui_nonstory_system_v39,,데이터 저장 불러오기,0x82444,0x8019CBE4,0x8019B980,データのセーフ・ロート,데이터 저장 불러오기,,81 31 62 1C DD 60 31 C9 2C A2 31 95,81 03 02 A1 DD 24 56 A1 DD 13 20 46 24,text,False,False,PENDING
+ui_pointer:82448,ui_nonstory_system_v39,,데이터 저장,0x82448,0x8019CBF4,0x8019BD2D,データのセーフ,데이터 저장,,81 31 62 1C DD 60 31 C9,81 03 02 A1 DD 24 56,text,False,False,PENDING
+ui_pointer:8244C,ui_nonstory_system_v39,,데이터 불러오기,0x8244C,0x8019CC00,0x8019C090,データのロート,데이터 불러오기,,81 31 62 1C A2 31 95,81 03 02 A1 DD 13 20 46 24,text,False,False,PENDING
+ui_pointer:82450,ui_nonstory_system_v39,,카드를 선택하세요,0x82450,0x8019CC08,0x8019C82C,カートを選んで下さい,카드를 선택하세요,,BC 31 95 2F DE 0A 2D 30 70 3A 1B,DD 38 17 36 A1 DD 53 DF 9A 19 8C 2C,text,False,False,PENDING
+ui_pointer:82454,ui_nonstory_system_v39,,카드 1,0x82454,0x8019CC14,0x8019AF26,カート1,카드 1,,BC 31 95 12,DD 38 17 A1 4A,text,False,False,PENDING
+ui_pointer:82458,ui_nonstory_system_v39,,카드 2,0x82458,0x8019CC1C,0x8019AF20,カート2,카드 2,,BC 31 95 13,DD 38 17 A1 0B,text,False,False,PENDING
+ui_pointer:8245C,ui_nonstory_system_v39,,파일을 선택하세요,0x8245C,0x8019CC24,0x8019C86D,フ<N:=:12><N:｣:11>ルを選んで下さい,파일을 선택하세요,,A6 DE 4E 65 53 2F DE 0A 2D 30 70 3A 1B,DD 7B 6B 0D A1 DD 53 DF 9A 19 8C 2C,text,False,False,PENDING
+ui_pointer:82460,ui_nonstory_system_v39,,메모리 카드가 없습니다,0x82460,0x8019CC34,0x8019B8FC,メモリーカートがありません,메모리 카드가 없습니다,,78 5F 6B 31 BC 31 95 2A 3F 39 27 59 2D,DD 2C 55 2E A1 DD 38 17 0C A1 71 2D 07 01,text,False,False,PENDING
+ui_pointer:82474,ui_nonstory_system_v39,,를 손에 넣었습니다.,0x82474,0x8019CC68,0x8019D10B,へを手に入れた,」를 손에 넣었습니다.,,5A 2F 87 23 86 32 1F,DF 09 36 A1 85 0E A1 6F 61 2D 07 01 21,text,False,False,PENDING
+ui_pointer:82498,ui_nonstory_system_v39,,스테이지에서 얻은 경험치,0x82498,0x8019CC78,0x8019B5C6,ステージ内で得た経験値,스테이지에서 얻은 경험치,,47 DB 31 7F DD 81 30 DD A7 1F DD DE DE 75 DD D2,30 DD BE 03 04 0E 25 A1 DD 9C 26 A1 68 DD 54 DD 1F,text,False,False,PENDING
+ui_pointer:8249C,ui_nonstory_system_v39,,격파한 적 수,0x8249C,0x8019CC8C,0x8019AC2C,倒した敵の数,격파한 적 수,,DD 83 1E 1F BD 1C DE D7,DD 0A DD 7B 53 A1 DD 09 A1 50,text,False,False,PENDING
+ui_pointer:82518,ui_nonstory_system_v39,,LV 상승!!,0x82518,0x8019CCA0,0x8019C16C,<N:リ:12>ベルアッ<N:フ:11>！！,레벨 상승!!,,6F DD B4 53 42 82 DD 55 02 02,DD 66 DD EF A1 8B 69 A9 A9,text,False,False,PENDING
+ui_pointer:8251C,ui_nonstory_system_v39,,최대 체력이,0x8251C,0x8019CCAC,0x8019C216,最大<N:ヒ:5>ットポ<N:｣:11>ント,최대 체력,,DD 2B 50 DD B5 82 5C D7 65 34 5C,DE 27 37 A1 DD 90 DD 2B,text,False,False,PENDING
+ui_pointer:82520,ui_nonstory_system_v39,,최대 마력이,0x82520,0x8019CCB8,0x8019BBDE,最大マジックポ<N:｣:11>ント,최대 마력,,DD 2B 50 64 7F 82 4E D7 65 34 5C,DE 27 37 A1 45 DD 2B,text,False,False,PENDING
+ui_pointer:82524,ui_nonstory_system_v39,,공격력이,0x82524,0x8019CCC4,0x8019BD9D,攻撃力,공격력,,D0 B1 61,DD 10 DD 0A DD 2B,text,False,False,PENDING
+ui_pointer:82528,ui_nonstory_system_v39,,방어력이,0x82528,0x8019CCC8,0x8019AE06,防御力,방어력,,DD A6 DD AD 61,DD 29 14 DD 2B,text,False,False,PENDING
+ui_pointer:8252C,ui_nonstory_system_v39,,마력이,0x8252C,0x8019CCD0,0x8019AF82,魔力,마력,,DD 1B 61,45 DD 2B,text,False,False,PENDING
+ui_pointer:82530,ui_nonstory_system_v39,,민첩성이,0x82530,0x8019CCD4,0x8019BE0D,すばやさ,민첩성,,2B 58 40 3A,DD EC DF 5E DD 17,text,False,False,PENDING
+ui_pointer:82538,ui_nonstory_system_v39,,상승,0x82538,0x8019CCE0,0x8019FCF0,上がつた, 상승,,B9 2A 29 1F,A1 8B 69,text,False,False,PENDING
+ui_pointer:8253C,ui_nonstory_system_v39,,점프,0x8253C,0x8019CCE8,0x8019B009,ジャン<N:フ:11>,점프,,7F D6 34 DD 55,DD D0 DD 9D,text,False,False,PENDING
+ui_pointer:82540,ui_nonstory_system_v39,,던지기,0x82540,0x8019CCF0,0x8019AFC8,投げ,던지기,,DE 04 9C,DD 25 04 24,text,False,False,PENDING
+ui_pointer:82544,ui_nonstory_system_v39,,받기,0x82544,0x8019CCF4,0x8019B06F,受け,받기,,DD 68 49,DD 19 24,text,False,False,PENDING
+ui_pointer:82548,ui_nonstory_system_v39,,반격,0x82548,0x8019CCF8,0x8019AFE6,反撃,반격,,DE 02 B1,DD 46 DD 0A,text,False,False,PENDING
+ui_pointer:8254C,ui_nonstory_system_v39,,LV 상승,0x8254C,0x8019CCFC,0x8019BDC5,<N:リ:12>ベルが上がつた,레벨 상승,,6F DD B4 53 2A B9 2A 29 1F,DD 66 DD EF A1 8B 69,text,False,False,PENDING
+ui_pointer:82554,ui_nonstory_system_v39,,를 배웠다.,0x82554,0x8019CD0C,0x8019D119,へをお<N:げ:26>えた,」를 배웠다.,,5A 2F 3B D2 46 1F,DF 09 36 A1 DD 93 DE 15 01 21,text,False,False,PENDING
+ui_pointer:825C8,ui_nonstory_system_v39,,사운드 출력,0x825C8,0x8019CD5C,0x8019BC85,サウント出力,사운드 출력,,77 71 34 95 56 61,34 86 17 A1 76 DD 2B,text,False,False,PENDING
+ui_pointer:825CC,ui_nonstory_system_v39,,대각선 입력,0x825CC,0x8019CD64,0x8019C054,パットななめ入力,대각선 입력,,A3 82 95 1D 1D 51 86 61,37 DD 6D DD 53 A1 7F DD 2B,text,False,False,PENDING
+ui_pointer:825D0,ui_nonstory_system_v39,,돌아가기 확인,0x825D0,0x8019CD70,0x8019C310,<N:午:15>ャンセルかくにん,돌아가기 확인,,DD 4E D6 34 DD 60 53 20 3E 23 2D,72 09 0C 24 A1 DE 2B 35,text,False,False,PENDING
+ui_pointer:825D4,ui_nonstory_system_v39,,도움말 보기,0x825D4,0x8019CD7C,0x8019BC7D,へル<N:フ:11>ウ<N:｣:11>ントウ,도움말 보기,,DD 3B 53 DD 55 71 65 34 95 71,33 DD 70 1B A1 60 24,text,False,False,PENDING
+ui_pointer:825D8,ui_nonstory_system_v39,,촌가라의 몬스터 도감 열기,0x825D8,0x8019CD88,0x8019BD15,チョン<N:力:5>ラのモンスターすかんを<N:閂:11>く,몬스터 도감,,6C 69 34 DD 02 57 1C 5F 34 47 62 31 8C 20 2D 2F DD E0 3E,64 30 02 A1 33 DD 77,text,False,False,PENDING
+ui_pointer:825DC,ui_nonstory_system_v39,,스테레오,0x825DC,0x8019CD9C,0x8019BECC,ステ<N:リ:12>オ,스테레오,,47 DB 6F 8F,30 DD BE DD 66 46,text,False,False,PENDING
+ui_pointer:825E0,ui_nonstory_system_v39,,모노,0x825E0,0x8019CDA4,0x8019B043,モ<N:メ:6>ラル,모노,,5F DD 5F 57 53,55 DD 57,text,False,False,PENDING
+ui_pointer:825E4,ui_nonstory_system_v39,,일반,0x825E4,0x8019CDAC,0x8019B04B,ふつう,일반,,97 45 26,6B DD 46,text,False,False,PENDING
+ui_pointer:825E8,ui_nonstory_system_v39,,사용,0x825E8,0x8019CDB0,0x8019B02F,よくする,사용,,3D 3E 2B 22,34 DD 1A,text,False,False,PENDING
+ui_pointer:825EC,ui_nonstory_system_v39,,사용 안 함,0x825EC,0x8019CDB8,0x8019C2A4,しない,사용안함,,1E 1D 1B,34 DD 1A 94 DD CF,text,False,False,PENDING
+ui_pointer:8262C,ui_nonstory_system_v39,,대전 성적,0x8262C,0x8019CE18,0x8019BC95,対戦せいせき,대전 성적,,DD 9A 63 59 1B 59 44,37 4F A1 DD 17 DD 09,text,False,False,PENDING
+ui_pointer:82638,ui_nonstory_system_v39,,기량,0x82638,0x8019CE28,0x8019B095,能力,기량,,DD 80 61,24 D2,text,False,False,PENDING
+ui_pointer:8293C,ui_nonstory_system_v39,,마비 공격,0x8293C,0x8019CE40,0x8019C2DA,マ<N:ヒ:5>攻撃,마비 공격,,64 DD B5 D0 B1,45 DD 06 A1 DD 10 DD 0A,text,False,False,PENDING
+ui_pointer:82940,ui_nonstory_system_v39,,머리 던지기,0x82940,0x8019CE48,0x8019BB33,頭なげ,머리 던지기,,DE 5C 1D 9C,DD 5D 2E A1 DD 25 04 24,text,False,False,PENDING
+ui_pointer:82944,ui_nonstory_system_v39,,사일런트,0x82944,0x8019CE50,0x8019BEDA,サ<N:｣:11><N:リ:12>ント,사일런트,,77 65 6F 34 5C,34 6B DD 2A DD 5B,text,False,False,PENDING
+ui_pointer:82948,ui_nonstory_system_v39,,해로운 공격,0x82948,0x8019CE58,0x8019C292,<N:毒:1>攻撃,해로운 공격,,DD CF D0 B1,2B D5 86 A1 DD 10 DD 0A,text,False,False,PENDING
+ui_pointer:8294C,ui_nonstory_system_v39,,분열,0x8294C,0x8019CE60,0x8019B063,ぶんれつ,분열,,CA 2D 32 45,92 DD 89,text,False,False,PENDING
+ui_pointer:82950,ui_nonstory_system_v39,,폭발 수리검,0x82950,0x8019CE68,0x8019C144,ばくれつ手裏剣,폭발 수리검,,58 3E 32 45 87 DD FE DD 8D,DD 62 DD 0E A1 50 2E DD A1,text,False,False,PENDING
+ui_pointer:82954,ui_nonstory_system_v39,,자폭,0x82954,0x8019CE74,0x8019B027,自爆,자폭,,A4 DD 41,28 DD 62,text,False,False,PENDING
+ui_pointer:82958,ui_nonstory_system_v39,,드림 노크,0x82958,0x8019CE78,0x8019BC45,トリーム<N:メ:6>ック,드림 노크,,95 6B 31 D8 DD 5F 82 4E,17 DE 29 A1 DD 57 58,text,False,False,PENDING
+ui_pointer:8295C,ui_nonstory_system_v39,,대폭발,0x8295C,0x8019CE84,0x8019AEAE,エクス<N:フ:11>ロージョン,대폭발,,DD 23 4E 47 DD 55 A2 31 7F 69 34,37 DD 62 DD 0E,text,False,False,PENDING
+ui_pointer:82960,ui_nonstory_system_v39,,바람 검,0x82960,0x8019CE90,0x8019BD8D,ウ<N:｣:11>ントスラッシャー,바람 검,,71 65 34 95 47 57 82 60 D6 31,DD 08 DD 22 A1 DD A1,text,False,False,PENDING
+ui_pointer:82964,ui_nonstory_system_v39,,전기 폭풍,0x82964,0x8019CE9C,0x8019BCE5,サンダーストーム,전기 폭풍,,77 34 67 31 47 5C 31 D8,4F 24 A1 DD 62 DE 2E,text,False,False,PENDING
+ui_pointer:82968,ui_nonstory_system_v39,,다이아몬드 더스트,0x82968,0x8019CEA8,0x8019C8E2,ダ<N:｣:11>アモントダスト,다이아몬드 더스트,,67 65 42 5F 34 95 67 47 5C,01 03 09 64 17 A1 DD 96 30 DD 5B,text,False,False,PENDING
+ui_pointer:8296C,ui_nonstory_system_v39,,해로운 기운 제거,0x8296C,0x8019CEB4,0x8019C040,デポ<N:｣:11><N:ス:15>ン,해로운 기운 제거,,81 D7 65 DE 1F 34,2B D5 86 A1 24 86 A1 66 32,text,False,False,PENDING
+ui_pointer:82970,ui_nonstory_system_v39,,하늘의 심판,0x82970,0x8019CEBC,0x8019C277,天のさばき,하늘의 심판,,DD 26 1C 3A 58 44,19 DD 71 0F A1 9D DE 7F,text,False,False,PENDING
+ui_pointer:82974,ui_nonstory_system_v39,,부활,0x82974,0x8019CEC4,0x8019B04F,リ<N:ザ:8><N:リ:12>クション,부활,,6B DD C8 6F 4E 60 69 34,6C DD E1,text,False,False,PENDING
+ui_pointer:82978,ui_nonstory_system_v39,,디바이드,0x82978,0x8019CED0,0x8019AE45,デ<N:ｲ:6>バ<N:｣:11>ト,디바이드,,81 DD 03 AF 65 95,DD CD DD 08 03 17,text,False,False,PENDING
+ui_pointer:8297C,ui_nonstory_system_v39,,내려치기,0x8297C,0x8019CED8,0x8019AEC6,<N:振:2>りおろし,내려치기,,DE D9 39 3B 55 1E,47 3C DD 1F 24,text,False,False,PENDING
+ui_pointer:82980,ui_nonstory_system_v39,,회복,0x82980,0x8019CEE0,0x8019B053,<N:午:15>ュア,회복,,DD 4E AB 42,7A DD 9F,text,False,False,PENDING
+ui_pointer:82984,ui_nonstory_system_v39,,감싸기,0x82984,0x8019CEE8,0x8019AF2C,つつみこみ,감싸기,,45 45 6D 2E 6D,DD 77 DD 14 24,text,False,False,PENDING
+ui_pointer:82988,ui_nonstory_system_v39,,해로운 기운,0x82988,0x8019CEF0,0x8019BEBE,<N:毒:1>のきり,해로운 기운,,DD CF 1C 44 39,2B D5 86 A1 24 86,text,False,False,PENDING
+ui_pointer:8298C,ui_nonstory_system_v39,,피 빨기,0x8298C,0x8019CEF8,0x8019AE0D,き<N:ぃ:20>うけつ,피 빨기,,44 DE 20 26 49 45,DD 3C A1 DE 20 24,text,False,False,PENDING
+ui_pointer:82990,ui_nonstory_system_v39,,초음파,0x82990,0x8019CF00,0x8019AF7D,ちょうおんっ,초음파,,4B 73 26 3B 2D 75,39 8D DD 7B,text,False,False,PENDING
+ui_pointer:82994,ui_nonstory_system_v39,,돌 상태,0x82994,0x8019CF08,0x8019AEE4,石化,돌 상태,,94 DD 7C,72 A1 8B DD D2,text,False,False,PENDING
+ui_pointer:82998,ui_nonstory_system_v39,,주위 공격,0x82998,0x8019CF0C,0x8019BC9D,し<N:ぃ:20>うい攻撃,주위 공격,,1E DE 20 26 1B D0 B1,40 8E A1 DD 10 DD 0A,text,False,False,PENDING
+ui_pointer:829A0,ui_nonstory_system_v39,,강타,0x829A0,0x8019CF18,0x8019AFCD,たたきつけ,강타,,1F 1F 44 45 49,DD 28 DD 7F,text,False,False,PENDING
+ui_pointer:829A4,ui_nonstory_system_v39,,꽃가루 공격,0x829A4,0x8019CF20,0x8019AC79,かふん攻撃,꽃가루 공격,,20 97 2D D0 B1,DD 8C 0C DD 42 A1 DD 10 DD 0A,text,False,False,PENDING
+ui_pointer:829A8,ui_nonstory_system_v39,,씨 날리기,0x829A8,0x8019CF28,0x8019BDCD,たねとばし,씨 날리기,,1F 4C 36 58 1E,DD 67 A1 DD 61 2E 24,text,False,False,PENDING
+ui_pointer:829AC,ui_nonstory_system_v39,,검은 전기,0x829AC,0x8019CF30,0x8019AE3E,くろの雷,검은 전기,,3E 55 1C DD A5,DD A1 26 A1 4F 24,text,False,False,PENDING
+ui_pointer:829B0,ui_nonstory_system_v39,,지옥의 계단,0x829B0,0x8019CF38,0x8019C62E,じごくへの階段,지옥의 계단,,4A 79 3E 8A 1C DD B2 DE 61,04 DE 39 0F A1 DD 11 DD 35,text,False,False,PENDING
+ui_pointer:829B4,ui_nonstory_system_v39,,죽음의 문,0x829B4,0x8019CF44,0x8019BDDD,死のふち,죽음의 문,,DD 22 1C 97 4B,DD 94 8D 0F A1 DD AF,text,False,False,PENDING
+ui_pointer:829B8,ui_nonstory_system_v39,,합체,0x829B8,0x8019CF4C,0x8019AFC3,合体,합체,,DD AC DD 2D,DD 1D DD 90,text,False,False,PENDING
+ui_pointer:829BC,ui_nonstory_system_v39,,시야 차단,0x829BC,0x8019CF54,0x8019BC5D,暗闇,시야 차단,,DE B3 DE B2,29 49 A1 DD B7 DD 35,text,False,False,PENDING
+ui_pointer:829C0,ui_nonstory_system_v39,,인형 난무,0x829C0,0x8019CF5C,0x8019BC8D,人形らんぶ,인형 난무,,52 DE 42 33 2D CA,35 DD 7D A1 DD 6A 5F,text,False,False,PENDING
+ui_pointer:829C4,ui_nonstory_system_v39,,헤모지,0x829C4,0x8019CF64,0x8019B004,へモジー,헤모지,,DD 3B 5F 7F 31,DD C3 55 04,text,False,False,PENDING
+ui_pointer:829C8,ui_nonstory_system_v39,,전기 파동,0x829C8,0x8019CF6C,0x8019BCED,雷しんは,전기 파동,,DD A5 1E 2D 28,4F 24 A1 DD 7B DD 32,text,False,False,PENDING
+ui_pointer:829CC,ui_nonstory_system_v39,,불꽃 파동,0x829CC,0x8019CF74,0x8019C0EA,炎しんは,불꽃 파동,,BF 1E 2D 28,DD 13 DD 8C A1 DD 7B DD 32,text,False,False,PENDING
+ui_pointer:829D0,ui_nonstory_system_v39,,황천 비행,0x829D0,0x8019CF7C,0x8019C234,よみのつばさ,황천 비행,,3D 6D 1C 45 58 3A,DE 3C DD E7 A1 DD 06 DD 31,text,False,False,PENDING
+ui_pointer:829D4,ui_nonstory_system_v39,,마법 봉인,0x829D4,0x8019CF84,0x8019BCDD,<N:波:1>黙,마법 봉인,,DE 5B DE 8B,45 DD 37 A1 DD B6 35,text,False,False,PENDING
+ui_pointer:829D8,ui_nonstory_system_v39,,죽음 회복,0x829D8,0x8019CF8C,0x8019BDE5,デス<N:卞:16>ール,죽음 회복,,81 47 DD A1 31 53,DD 94 8D A1 7A DD 9F,text,False,False,PENDING
+ui_pointer:829DC,ui_nonstory_system_v39,,더스트 문양,0x829DC,0x8019CF94,0x8019AC8F,ダストルー<N:｣:11>ン,더스트 문양,,67 47 5C 53 31 65 34,DD 96 30 DD 5B A1 DD AF DD 82,text,False,False,PENDING
+ui_pointer:829E0,ui_nonstory_system_v39,,물기,0x829E0,0x8019CF9C,0x8019B0A1,かみつき,물기,,20 6D 45 44,6D 24,text,False,False,PENDING
+ui_pointer:829E4,ui_nonstory_system_v39,,번 그라운드,0x829E4,0x8019CFA4,0x8019ADEA,バーン<N:ク:12>ラウント,번 그라운드,,AF 31 34 80 57 71 34 95,9B A1 15 8F 86 17,text,False,False,PENDING
+ui_pointer:829E8,ui_nonstory_system_v39,,전체 회복,0x829E8,0x8019CFB0,0x8019BCFD,トータル<N:ヒ:5>ーリン<N:ク:12>,전체 회복,,5C 31 62 53 DD B5 31 6B 34 80,4F DD 90 A1 7A DD 9F,text,False,False,PENDING
+ui_pointer:829EC,ui_nonstory_system_v39,,게일 플래시,0x829EC,0x8019CFBC,0x8019C2D1,ゲ<N:｣:11>ルフラッシュ,게일 플래시,,DD 4D 65 53 A6 57 82 60 AB,41 6B A1 DE 36 DD 12 29,text,False,False,PENDING
+ui_pointer:829F0,ui_nonstory_system_v39,,슬로우 에너미,0x829F0,0x8019CFC8,0x8019C1EE,スロウエ<N:ネ:13>ミー,슬로우 에너미,,47 A2 71 DD 23 DD C6 DD 3A 31,DD FC D5 3D A1 0E 89 DD 2F,text,False,False,PENDING
+ui_pointer:829F4,ui_nonstory_system_v39,,별 내리기,0x829F4,0x8019CFD4,0x8019AE4C,メテオフ<N:｣:13>ール,별 내리기,,78 DB 8F A6 DE B4 31 53,DD F3 A1 47 2E 24,text,False,False,PENDING
+ui_pointer:829F8,ui_nonstory_system_v39,,회복,0x829F8,0x8019CFE0,0x8019B053,<N:午:15>ュア,회복,,DD 4E AB 42,7A DD 9F,text,False,False,PENDING
+ui_pointer:829FC,ui_nonstory_system_v39,,해로운 기운 제거,0x829FC,0x8019CFE8,0x8019C040,デポ<N:｣:11><N:ス:15>ン,해로운 기운 제거,,81 D7 65 DE 1F 34,2B D5 86 A1 24 86 A1 66 32,text,False,False,PENDING
+ui_pointer:82A00,ui_nonstory_system_v39,,사일런트,0x82A00,0x8019CFF0,0x8019BEDA,サ<N:｣:11><N:リ:12>ント,사일런트,,77 65 6F 34 5C,34 6B DD 2A DD 5B,text,False,False,PENDING
+ui_pointer:82A04,ui_nonstory_system_v39,,리프레시,0x82A04,0x8019CFF8,0x8019BEC5,リフ<N:リ:12>ッシュ,리프레시,,6B A6 6F 82 60 AB,2E DD 9D DD 66 29,text,False,False,PENDING
+ui_pointer:82A08,ui_nonstory_system_v39,,하늘의 심판,0x82A08,0x8019D000,0x8019C277,天のさばき,하늘의 심판,,DD 26 1C 3A 58 44,19 DD 71 0F A1 9D DE 7F,text,False,False,PENDING
+ui_pointer:82A0C,ui_nonstory_system_v39,,부활,0x82A0C,0x8019D008,0x8019B04F,リ<N:ザ:8><N:リ:12>クション,부활,,6B DD C8 6F 4E 60 69 34,6C DD E1,text,False,False,PENDING
+ui_pointer:82A10,ui_nonstory_system_v39,,디바이드,0x82A10,0x8019D014,0x8019AE45,デ<N:ｲ:6>バ<N:｣:11>ト,디바이드,,81 DD 03 AF 65 95,DD CD DD 08 03 17,text,False,False,PENDING
+ui_pointer:82A14,ui_nonstory_system_v39,,토슈 비기,0x82A14,0x8019D01C,0x8019BD45,桜花雷爆斬,토슈 비기,,DE 3C DE 1B DD A5 DD 41 DD 5C,83 DD 86 A1 DD 06 24,text,False,False,PENDING
+ui_pointer:82A18,ui_nonstory_system_v39,,봉인검,0x82A18,0x8019D028,0x8019AF44,呪縛剣,봉인검,,DE 35 DE 94 DD 8D,DD B6 35 DD A1,text,False,False,PENDING
+ui_pointer:82A1C,ui_nonstory_system_v39,,진공검,0x82A1C,0x8019D030,0x8019AE1B,<N:真:2><N:空:2>斬,진공검,,DE 9F DD 18 DD 5C,DD 3F DD 10 DD A1,text,False,False,PENDING
+ui_pointer:82A20,ui_nonstory_system_v39,,그림자검,0x82A20,0x8019D038,0x8019BEA9,<N:虎:5><N:影:1>斬,그림자검,,DE E9 DE 81 DD 5C,15 DE 29 28 DD A1,text,False,False,PENDING
+ui_pointer:82A24,ui_nonstory_system_v39,,전투 큰 북,0x82A24,0x8019D040,0x8019C2FE,戦の小太鼓,전투 큰 북,,63 1C DD 88 DD A9 DD F1,4F DD 39 A1 AA A1 DE 64,text,False,False,PENDING
+ui_pointer:82A28,ui_nonstory_system_v39,,황사자태고,0x82A28,0x8019D04C,0x8019BE25,荒獅子太鼓,황사자태고,,DD C0 DE A7 96 DD A9 DD F1,DE 3C 34 28 DD D2 1C,text,False,False,PENDING
+ui_pointer:82A2C,ui_nonstory_system_v39,,기합 나팔,0x82A2C,0x8019D058,0x8019BC55,気合いラッパ,기합 나팔,,A9 DD AC 1B 57 82 A3,24 DD 1D A1 1E DD 6C,text,False,False,PENDING
+ui_pointer:82A30,ui_nonstory_system_v39,,비틀비틀 나팔,0x82A30,0x8019D060,0x8019C7EB,へろへろラッパ,비틀비틀 나팔,,8A 55 8A 55 57 82 A3,DD 06 DD E0 DD 06 DD E0 A1 1E DD 6C,text,False,False,PENDING
+ui_pointer:82A34,ui_nonstory_system_v39,,치유의 하프,0x82A34,0x8019D068,0x8019BAEB,いやしのたてごと,치유의 하프,,1B 40 1E 1C 1F 21 79 36,DD 1F 8A 0F A1 19 DD 9D,text,False,False,PENDING
+ui_pointer:82A38,ui_nonstory_system_v39,,느림의 연주,0x82A38,0x8019D074,0x8019C2F5,のろまのベース,느림의 연주,,1C 55 27 1C DD B4 31 47,4D DE 29 0F A1 DD AD 40,text,False,False,PENDING
+ui_pointer:82A3C,ui_nonstory_system_v39,,위타천 오카리나,0x82A3C,0x8019D080,0x8019AA78,い<N:駄:2>天のオカリナ,위타천 오카리나,,1B DE CD DD 26 1C 8F BC 6B 7C,8E DD 7F DD E7 A1 46 DD 38 2E 1E,text,False,False,PENDING
+ui_pointer:82A40,ui_nonstory_system_v39,,방향잡이 피리,0x82A40,0x8019D08C,0x8019AACC,向き直りの笛,방향잡이 피리,,DD 01 44 DD 85 39 1C DE 2F,DD 29 DD B2 DE 10 03 A1 DD 3C 2E,text,False,False,PENDING
+ui_pointer:82A44,ui_nonstory_system_v39,,대폭발,0x82A44,0x8019D098,0x8019AEAE,エクス<N:フ:11>ロージョン,대폭발,,DD 23 4E 47 DD 55 A2 31 7F 69 34,37 DD 62 DD 0E,text,False,False,PENDING
+ui_pointer:82A48,ui_nonstory_system_v39,,드림 노크,0x82A48,0x8019D0A4,0x8019BC45,トリーム<N:メ:6>ック,드림 노크,,95 6B 31 D8 DD 5F 82 4E,17 DE 29 A1 DD 57 58,text,False,False,PENDING
+ui_pointer:82A4C,ui_nonstory_system_v39,,다이아몬드 더스트,0x82A4C,0x8019D0B0,0x8019C8E2,ダ<N:｣:11>ヤモントダスト,다이아몬드 더스트,,67 65 BB 5F 34 95 67 47 5C,01 03 09 64 17 A1 DD 96 30 DD 5B,text,False,False,PENDING
+ui_pointer:82A50,ui_nonstory_system_v39,,바람 검,0x82A50,0x8019D0BC,0x8019BD8D,ウ<N:｣:11>ントスラッシャー,바람 검,,71 65 34 95 47 57 82 60 D6 31,DD 08 DD 22 A1 DD A1,text,False,False,PENDING
+ui_pointer:82A54,ui_nonstory_system_v39,,전기 폭풍,0x82A54,0x8019D0C8,0x8019BCE5,サンダーストーム,전기 폭풍,,77 34 67 31 47 5C 31 D8,4F 24 A1 DD 62 DE 2E,text,False,False,PENDING
+ui_pointer:82A58,ui_nonstory_system_v39,,회오리 차기,0x82A58,0x8019D0D4,0x8019BD25,旋風撃蹴,회오리 차기,,DE 9C C1 B1 DE A3,7A 46 2E A1 DD B7 24,text,False,False,PENDING
+ui_pointer:82A5C,ui_nonstory_system_v39,,유성폭,0x82A5C,0x8019D0DC,0x8019AEF0,流星爆,유성폭,,DE 24 DE D6 DD 41,8A DD 17 DD 62,text,False,False,PENDING
+ui_pointer:82A60,ui_nonstory_system_v39,,유령 파동,0x82A60,0x8019D0E4,0x8019BD4D,鬼神流<N:影:1><N:波:1>,유령 파동,,DE F4 DD 2F DE 24 DE 81 DE 5B,8A 51 A1 DD 7B DD 32,text,False,False,PENDING
+ui_pointer:82A64,ui_nonstory_system_v39,,멸장열파,0x82A64,0x8019D0F0,0x8019BDFD,滅掌烈破,멸장열파,,DD 40 DE DA DE 85 DD 62,DD DD 56 DD 89 DD 7B,text,False,False,PENDING
+ui_pointer:82A6C,ui_nonstory_system_v39,,불러내기,0x82A6C,0x8019D104,0x8019AF14,召喚,불러내기,,DD 78 DD 7B,DD 13 20 47 24,text,False,False,PENDING
+ui_pointer:82A70,ui_nonstory_system_v39,,조사,0x82A70,0x8019D10C,0x8019B0AA,調ベる,조사,,DD 86 DD 35 22,90 34,text,False,False,PENDING
+ui_pointer:82A74,ui_nonstory_system_v39,,회복,0x82A74,0x8019D114,0x8019B053,回復,회복,,9E DD 2C,7A DD 9F,text,False,False,PENDING
+ui_pointer:82A78,ui_nonstory_system_v39,,다리 만들기,0x82A78,0x8019D118,0x8019BE55,<N:ｴ:24>か造り,다리 만들기,,DD 04 20 DD D5 39,01 2E A1 38 0A 24,text,False,False,PENDING
+ui_pointer:82A7C,ui_nonstory_system_v39,,바람 전기,0x82A7C,0x8019D120,0x8019BD85,風雷破,바람 전기,,C1 DD A5 DD 62,DD 08 DD 22 A1 4F 24,text,False,False,PENDING
+ui_pointer:82A80,ui_nonstory_system_v39,,몸 가져오기,0x82A80,0x8019D128,0x8019BBE7,乗り移り,몸 가져오기,,DD 43 39 DE FC 39,DE 2D A1 0C DD 63 46 24,text,False,False,PENDING
+ui_pointer:82A84,ui_nonstory_system_v39,,기운 없음,0x82A84,0x8019D130,0x8019AE9C,やる気なし,기운 없음,,40 22 A9 1D 1E,24 86 A1 71 8D,text,False,False,PENDING
+ui_pointer:82AC0,ui_system_v39,,예      아니요,0x82AC0,0x8019D288,0x8019AC00,はい  いいえ,예      아니요,,28 1B 01 01 1B 1B 46,97 A1 A1 A1 A1 A1 A1 09 07 2C,text,False,False,PENDING
+ui_pointer:82AC4,ui_system_v39,,저장하시겠습니까?,0x82AC4,0x8019D290,0x8019AC42,  セーフしますか？  ,저장하시겠습니까?,,01 01 DD 60 31 C9 1E 27 2B 20 3C 01 01,DD 24 56 19 29 54 2D 07 3B D1,text,False,False,PENDING
+ui_pointer:82AC8,ui_system_v39,,전투 전 장비를 정비하시겠습니까?,0x82AC8,0x8019D2A0,0x8019C55A, 装備をととのえますか？ ,전투 전 장비를 정비하시겠습니까?,,01 DF 27 C5 2F 36 36 1C 46 27 2B 20 3C 01,4F DD 39 A1 4F A1 56 DD 06 36 A1 31 DD 06 19 29 54 2D 07 3B D1,text,False,False,PENDING
+ui_pointer:82ACC,ui_system_v39,,진행하시겠습니까?,0x82ACC,0x8019D2B0,0x8019AAF0,  よろしいですか？  ,진행하시겠습니까?,,01 01 3D 55 1E 1B 30 2B 20 3C 01 01,DD 3F DD 31 19 29 54 2D 07 3B D1,text,False,False,PENDING

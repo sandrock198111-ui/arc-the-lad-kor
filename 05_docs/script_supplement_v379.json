@@ -1,0 +1,122 @@
+[
+  {
+    "row": null,
+    "file": "22/S2056.DAT",
+    "offset": 293872,
+    "length": 2,
+    "before": "자말",
+    "target": "네.",
+    "original_japanese": "はい",
+    "original_hex": "281b"
+  },
+  {
+    "row": null,
+    "file": "22/S205C.DAT",
+    "offset": 295416,
+    "length": 6,
+    "before": "신게시터<CTRL:E479>",
+    "target": "젠장!<CTRL:E479>",
+    "original_japanese": "くそつ！<CTRL:E4:79>",
+    "original_hex": "3e412902e479"
+  },
+  {
+    "row": null,
+    "file": "22/S205C.DAT",
+    "offset": 295656,
+    "length": 9,
+    "before": "물습관걸)터<CTRL:E479>",
+    "target": "모두 서둘러!<CTRL:E479>",
+    "original_japanese": "みんな急げ！<CTRL:E4:79>",
+    "original_hex": "6d2d1ddd8e9c02e479"
+  },
+  {
+    "row": null,
+    "file": "23/S2061.DAT",
+    "offset": 296412,
+    "length": 1,
+    "before": "터",
+    "target": "!",
+    "original_japanese": "！",
+    "original_hex": "02"
+  },
+  {
+    "row": null,
+    "file": "32/S3061.DAT",
+    "offset": 295954,
+    "length": 34,
+    "before": "버시.신거우대|3인페스있말회 |있신면습해 고 벗벗대<CTRL:E45B>",
+    "target": "잠깐만 기다려 줘.|아직 물어볼 게|많이 남았는데...<CTRL:E45B>",
+    "original_japanese": "待つてくれよ。\nまだ聞きたいこが\nたくさんあるのに・・。<CTRL:E4:5B>",
+    "original_hex": "9829213e323d37e6012735d3441f1b7a2ae6011f3e3a2d3f221c23df61df6137e45b"
+  },
+  {
+    "row": null,
+    "file": "7/S7026.DAT",
+    "offset": 297516,
+    "length": 1,
+    "before": "려",
+    "target": "?",
+    "original_japanese": "？",
+    "original_hex": "3c"
+  },
+  {
+    "row": null,
+    "file": "8/S8031.DAT",
+    "offset": 296478,
+    "length": 19,
+    "before": "겠은나.리습관리를 벗벗<CTRL:E43D><CTRL:E43D>대",
+    "target": "어쩌다 이런 일이...<CTRL:E43D><CTRL:E43D>.",
+    "original_japanese": "どうしてこんなことに・・<CTRL:E4:3D><CTRL:E4:3D>。",
+    "original_hex": "54261e212e2d1d2e3623df61df61e43de43d37"
+  },
+  {
+    "row": null,
+    "file": "9/S9021.DAT",
+    "offset": 296610,
+    "length": 10,
+    "before": "나마리말주마도인 터",
+    "target": "끈질긴 녀석들이군!",
+    "original_japanese": "しつこいやつらだぜ！",
+    "original_hex": "1e452e1b40453335a702"
+  },
+  {
+    "row": null,
+    "file": "B/SB041.DAT",
+    "offset": 293490,
+    "length": 4,
+    "before": "으으한터",
+    "target": "쿠쿠루!",
+    "original_japanese": "ククル！",
+    "original_hex": "4e4e5302"
+  },
+  {
+    "row": null,
+    "file": "B/SB041.DAT",
+    "offset": 293878,
+    "length": 10,
+    "before": "으으한정정정정정정터",
+    "target": "쿠쿠루우우우우우우!",
+    "original_japanese": "ククルーーーーーー！",
+    "original_hex": "4e4e5331313131313102"
+  },
+  {
+    "row": null,
+    "file": "B/SB071.DAT",
+    "offset": 295168,
+    "length": 13,
+    "before": "게거1면기말시있습  왕대",
+    "target": "그럼 일단 돌아가자.",
+    "original_japanese": "それじゃ、いつたん戻るぞ。",
+    "original_hex": "41324a48241b291f2dd9226a37"
+  },
+  {
+    "row": null,
+    "file": "B/SB072.DAT",
+    "offset": 294612,
+    "length": 4,
+    "before": "벗벗",
+    "target": "...",
+    "original_japanese": "・・",
+    "original_hex": "df61df61"
+  }
+]

@@ -1,0 +1,7185 @@
+{
+  "zip_sha256": "03178BD70420DE88929ADE9DF2CB5A0E580540EF5A0937782892F89A6B2C3936",
+  "base_sha256": "AD9ED2B9E898F05C2EC5C78ABBA4253CE052B7B4836DEE31D84108AD4256CFBB",
+  "static_pass": true,
+  "writes": [
+    {
+      "file": "22/S205C.DAT",
+      "offset": 294946,
+      "before": "61a11d",
+      "after": "910621"
+    },
+    {
+      "file": "22/S205C.DAT",
+      "offset": 294960,
+      "before": "58a11d",
+      "after": "a00621"
+    },
+    {
+      "file": "8/S8021.DAT",
+      "offset": 293438,
+      "before": "1d",
+      "after": "21"
+    },
+    {
+      "file": "8/S8041.DAT",
+      "offset": 293156,
+      "before": "27",
+      "after": "14"
+    },
+    {
+      "file": "B/SB022.DAT",
+      "offset": 295070,
+      "before": "1d",
+      "after": "21"
+    },
+    {
+      "file": "B/SB071.DAT",
+      "offset": 296888,
+      "before": "90a1a1",
+      "after": "a40429"
+    },
+    {
+      "file": "B/SB072.DAT",
+      "offset": 294350,
+      "before": "14a1a1",
+      "after": "c0ff04"
+    },
+    {
+      "file": "B/SB072.DAT",
+      "offset": 296002,
+      "before": "20",
+      "after": "2a"
+    },
+    {
+      "file": "B/SB072.DAT",
+      "offset": 296614,
+      "before": "20",
+      "after": "2a"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 177499,
+      "before": "0800",
+      "after": "2802"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 180186,
+      "before": "66366766ee",
+      "after": "44144544cc"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 181081,
+      "before": "11",
+      "after": "33"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 181086,
+      "before": "ee",
+      "after": "cc"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 181978,
+      "before": "66266622ee",
+      "after": "44044400cc"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 186441,
+      "before": "101111",
+      "after": "000000"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 187336,
+      "before": "00416587",
+      "after": "10517597"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 187342,
+      "before": "00",
+      "after": "11"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 188233,
+      "before": "5411911a",
+      "after": "4500800a"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 188238,
+      "before": "00",
+      "after": "11"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 189130,
+      "before": "01a11b",
+      "after": "00a00a"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 189134,
+      "before": "00",
+      "after": "11"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 190025,
+      "before": "7601b11c",
+      "after": "6700a00c"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 190030,
+      "before": "00",
+      "after": "11"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 190922,
+      "before": "11c11c",
+      "after": "00c00c"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 190926,
+      "before": "00",
+      "after": "11"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 191816,
+      "before": "0091badc1d",
+      "after": "1081aacc0c"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 191822,
+      "before": "00",
+      "after": "11"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 192712,
+      "before": "00",
+      "after": "10"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 192715,
+      "before": "e11e",
+      "after": "f10f"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 192718,
+      "before": "00",
+      "after": "11"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 193608,
+      "before": "10ba01f11e",
+      "after": "00aa00e00e"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 194504,
+      "before": "10cb",
+      "after": "00db"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 194507,
+      "before": "e1",
+      "after": "f1"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 194509,
+      "before": "0000",
+      "after": "1111"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 195401,
+      "before": "c1ffde01",
+      "after": "c0eece00"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 195406,
+      "before": "00",
+      "after": "11"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 196297,
+      "before": "10",
+      "after": "11"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 196300,
+      "before": "000000",
+      "after": "111111"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 197193,
+      "before": "00",
+      "after": "11"
+    },
+    {
+      "file": "COMM.IMG",
+      "offset": 198089,
+      "before": "000000000000",
+      "after": "111111111111"
+    },
+    {
+      "file": "D/SD011.DAT",
+      "offset": 294714,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "D/SD011.DAT",
+      "offset": 294742,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "D/SD011.DAT",
+      "offset": 294770,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "D/SD011.DAT",
+      "offset": 294798,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294326,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294362,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294398,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294434,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294632,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294668,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294704,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294740,
+      "before": "a1",
+      "after": "10"
+    },
+    {
+      "file": "F/SF041.DAT",
+      "offset": 293232,
+      "before": "27",
+      "after": "14"
+    },
+    {
+      "file": "F/SF041.DAT",
+      "offset": 296224,
+      "before": "a1a01d",
+      "after": "490921"
+    },
+    {
+      "file": "F/SF041.DAT",
+      "offset": 296690,
+      "before": "5ea0a1",
+      "after": "4c0907"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 494363,
+      "before": "e0ac",
+      "after": "de60"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 496145,
+      "before": "e7",
+      "after": "80"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 508352,
+      "before": "e19c",
+      "after": "e001"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 516304,
+      "before": "e19c",
+      "after": "e001"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 518140,
+      "before": "e1d2",
+      "after": "e030"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525004,
+      "before": "dd29ddb2de1003",
+      "after": "09de5d01a11c04"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525012,
+      "before": "dd3c2e",
+      "after": "de4c6c"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525147,
+      "before": "04de390fa130dd55dd9d0007d529df6ca13724dd270007d529df6ca1dd39245600096601a11c04a1de4c6c",
+      "after": "dd0903a1320fa1dd461729e6010903dd5e0da1deb514de0bde2900dd66038f0fa1dd5d2e56ddb50004dd91"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525257,
+      "before": "2e8f0fa1dd5d2e56",
+      "after": "04de390fa130dd40"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525266,
+      "before": "b5",
+      "after": "9d"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525456,
+      "before": "9630dd5ba1",
+      "after": "86de78a129"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525462,
+      "before": "af",
+      "after": "57"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525464,
+      "before": "82",
+      "after": "06"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525532,
+      "before": "f8c7",
+      "after": "a8ae"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525580,
+      "before": "35",
+      "after": "e5"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525644,
+      "before": "5b",
+      "after": "c9"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525668,
+      "before": "c9",
+      "after": "76"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525696,
+      "before": "da",
+      "after": "f8"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525704,
+      "before": "f8",
+      "after": "26"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525720,
+      "before": "72bb",
+      "after": "f5c2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525767,
+      "before": "7209de0c0701",
+      "after": "de2eea39dd7b"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525851,
+      "before": "dd3fdd10",
+      "after": "ea2aa194"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525856,
+      "before": "a1",
+      "after": "b4"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525900,
+      "before": "ddf3a1472e24",
+      "after": "ea9d1400ded7"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525980,
+      "before": "2486",
+      "after": "8130"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525983,
+      "before": "718d",
+      "after": "dd50"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 525992,
+      "before": "378ba180680037",
+      "after": "dd080399ea36a1"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 526000,
+      "before": "62dd0e",
+      "after": "660325"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 526149,
+      "before": "b635dda1",
+      "after": "3fdd3100"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 526301,
+      "before": "38dde9",
+      "after": "32de12"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 526399,
+      "before": "46",
+      "after": "07"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 526401,
+      "before": "9a",
+      "after": "e9"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 526415,
+      "before": "6cdde1",
+      "after": "46df24"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 526451,
+      "before": "dd1b28",
+      "after": "8cdd11"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 526463,
+      "before": "df2239",
+      "after": "a18b69"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527116,
+      "before": "59b4",
+      "after": "5bab"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527192,
+      "before": "46c8",
+      "after": "68b5"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527449,
+      "before": "dd09",
+      "after": "e701"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527453,
+      "before": "8fdd1fa129",
+      "after": "0614a11f06"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527460,
+      "before": "43de6ca10903dd5ea1de79",
+      "after": "150da1dd53e933198c2c00"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527548,
+      "before": "7fb0",
+      "after": "9ec2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527580,
+      "before": "d6c0",
+      "after": "fdbc"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527682,
+      "before": "4f7b03",
+      "after": "55dd21"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527688,
+      "before": "07a1dd29",
+      "after": "dd4088a1"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527693,
+      "before": "b24ed5a14f",
+      "after": "5a26a1dd29"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527699,
+      "before": "65",
+      "after": "b2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527721,
+      "before": "0614a11f06a1dd150da1dd53df9a198c2c",
+      "after": "3c2b88a17add9fd2a1dd79ddb7a1de090c"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527796,
+      "before": "1c3153a1dd090e41",
+      "after": "1a20a1dd62ddd10d"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 527805,
+      "before": "df16ddd1",
+      "after": "dd32290e"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 528651,
+      "before": "dd62ddd10da1ddaddd5fa1dd0e34",
+      "after": "de638ea1940fa1dd090a0da11c31"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529004,
+      "before": "3f",
+      "after": "4f"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529056,
+      "before": "96bb",
+      "after": "d6c0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529068,
+      "before": "8f",
+      "after": "03"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529073,
+      "before": "df6c",
+      "after": "ea58"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529113,
+      "before": "dd09a1191e",
+      "after": "07dd388f30"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529119,
+      "before": "1c31",
+      "after": "dd97"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529266,
+      "before": "dd78070fa1ddaf56",
+      "after": "07dde9a1dd10ddf2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529302,
+      "before": "dd9630dd5ba1df32",
+      "after": "30de42a1ea1eea35"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529383,
+      "before": "de2da10cdd634624",
+      "after": "46700730a1dd305a"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529401,
+      "before": "df5add088fa1",
+      "after": "46df24a1dd07"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529408,
+      "before": "71",
+      "after": "65"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529565,
+      "before": "408ea1dd10dd0a",
+      "after": "09de5d01a11c04"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529637,
+      "before": "4f24a1dd62de2e",
+      "after": "2edd24ea34ea51"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529661,
+      "before": "4fdd90a17add9f",
+      "after": "dd10dd0a0fa182"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529701,
+      "before": "7a462ea1",
+      "after": "dd40a109"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529706,
+      "before": "b724",
+      "after": "0630"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529717,
+      "before": "816b0fa1",
+      "after": "ddcddd78"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529722,
+      "before": "de20",
+      "after": "ea69"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529733,
+      "before": "83dd86a1dd0624008a51a1dd7bdd32",
+      "after": "e701a130de6f0da1dd53e933198c2c"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529797,
+      "before": "dd08dd22",
+      "after": "283e6001"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529802,
+      "before": "4f2400dd08",
+      "after": "decbdee9a1"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529808,
+      "before": "22a1dda100dd0c1ea1",
+      "after": "4853a1dd09a1dd07dd"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529818,
+      "before": "305a",
+      "after": "0056"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529893,
+      "before": "dd948d",
+      "after": "df570f"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529897,
+      "before": "7add9f",
+      "after": "03de20"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 529957,
+      "before": "de3c3428ddd21c",
+      "after": "ea2aa1dd10dd0a"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530040,
+      "before": "0770a1de347b0007",
+      "after": "9d94dd37a1378b0e"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530049,
+      "before": "09dd0630",
+      "after": "e956ddd1"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530264,
+      "before": "0bb9",
+      "after": "b4b5"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530312,
+      "before": "d9ba",
+      "after": "0bb9"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530316,
+      "before": "b4b5",
+      "after": "78be"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530332,
+      "before": "53c8",
+      "after": "85bd"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530356,
+      "before": "e3c2",
+      "after": "f9bb"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530496,
+      "before": "2bd586a12486a16632",
+      "after": "dd62ea37a1502edda1"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530647,
+      "before": "10dd0aa1ddf2092e",
+      "after": "9630dd5ba1dd4235"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530726,
+      "before": "dd38dd388f",
+      "after": "de018fdd06"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530732,
+      "before": "a1dd9700dd38dde9",
+      "after": "0fa1de430083de14"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530741,
+      "before": "dd10ddf2",
+      "after": "ea97de54"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530756,
+      "before": "dd62dd0ea1502edda1",
+      "after": "deafd58cdd70a15f37"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530856,
+      "before": "dd86de78a1",
+      "after": "e703a17209"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530862,
+      "before": "5edd06",
+      "after": "0c0701"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530906,
+      "before": "ddd2",
+      "after": "ea2b"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530909,
+      "before": "820fa132dd92",
+      "after": "83a1ddfe0330"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530936,
+      "before": "de018f3d300fa1de43",
+      "after": "ddd2dd820fa1552800"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530996,
+      "before": "de3c",
+      "after": "df5a"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 530999,
+      "before": "e7a1dd06dd31",
+      "after": "088fa1decf00"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531036,
+      "before": "07d529df6ca15f37",
+      "after": "dd0c031ea1dd305a"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531063,
+      "before": "19dd710fa19dde7f",
+      "after": "dd2cddbe46a1ea8b"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531090,
+      "before": "2bd586a1",
+      "after": "deafd58c"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531095,
+      "before": "10dd0a0030dd9aa1df15df2b",
+      "after": "70a1dd39245600ea2add4800"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531171,
+      "before": "46dd9aa1dd07dd65",
+      "after": "dd407060a1de347b"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531189,
+      "before": "4dde290fa1ddad40004fdd",
+      "after": "dd9ddd66030fa1ddaf5600"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531292,
+      "before": "8fb0",
+      "after": "04bf"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531296,
+      "before": "04bf",
+      "after": "8fb0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531336,
+      "before": "73b0",
+      "after": "01c8"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531416,
+      "before": "a8c1",
+      "after": "8fac"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531524,
+      "before": "9bc2",
+      "after": "96bb"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531564,
+      "before": "7fbe",
+      "after": "25bd"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531616,
+      "before": "3f",
+      "after": "4f"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531692,
+      "before": "46c3",
+      "after": "5cbe"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 531696,
+      "before": "5cbe",
+      "after": "46c3"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532014,
+      "before": "04de390f",
+      "after": "ea56dd96"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532019,
+      "before": "dd11dd35",
+      "after": "30ea8300"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532036,
+      "before": "28d1",
+      "after": "e7bb"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532044,
+      "before": "78be",
+      "after": "e3c2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532052,
+      "before": "95bd",
+      "after": "5cc2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532072,
+      "before": "26c1",
+      "after": "d9ba"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532076,
+      "before": "f9bb",
+      "after": "34c2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532104,
+      "before": "94be",
+      "after": "9dbc"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532132,
+      "before": "30c1",
+      "after": "72bb"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532220,
+      "before": "dcaf",
+      "after": "3fb0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532407,
+      "before": "30",
+      "after": "09"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532409,
+      "before": "6f0d",
+      "after": "5d01"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532412,
+      "before": "dd53df9a198c2c",
+      "after": "1c04a1dd32de67"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532459,
+      "before": "dd06dde0dd06dde0a11edd6c00",
+      "after": "e707e706a1378ba1806800ea5b"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532473,
+      "before": "080399df2ca1dd6603dd24",
+      "after": "83ea26dd62dd4c00dddf28"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532550,
+      "before": "dd3c2b",
+      "after": "ea6417"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532555,
+      "before": "79",
+      "after": "fc"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532557,
+      "before": "b7a1de09",
+      "after": "12deb300"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532730,
+      "before": "096601a11c04",
+      "after": "deafd58cdd70"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532737,
+      "before": "dd32de67",
+      "after": "3724dd27"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532916,
+      "before": "28d1",
+      "after": "e7bb"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532932,
+      "before": "fac8",
+      "after": "b7c7"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532936,
+      "before": "7cab",
+      "after": "ccaa"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532964,
+      "before": "30c1",
+      "after": "72bb"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532968,
+      "before": "66ab",
+      "after": "fac8"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 532972,
+      "before": "5cc2",
+      "after": "44c1"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 533016,
+      "before": "78be",
+      "after": "e3c2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 533024,
+      "before": "95bd",
+      "after": "5cc2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 533032,
+      "before": "26c1",
+      "after": "d9ba"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 533036,
+      "before": "f9bb",
+      "after": "34c2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 533052,
+      "before": "71ab",
+      "after": "92c2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 533320,
+      "before": "a8ae",
+      "after": "ebc7"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 533332,
+      "before": "b7c7",
+      "after": "45bd"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 533336,
+      "before": "c7ad",
+      "after": "a8c1"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 533356,
+      "before": "68b5",
+      "after": "59b4"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 533812,
+      "before": "d4fc",
+      "after": "71d0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 533816,
+      "before": "f0fc",
+      "after": "7fb0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534064,
+      "before": "71d0",
+      "after": "f4cf"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534068,
+      "before": "f0cf",
+      "after": "50ae"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534512,
+      "before": "d5dc92e0ed",
+      "after": "ea480f0069"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534641,
+      "before": "8e",
+      "after": "a1"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534856,
+      "before": "92c2",
+      "after": "25be"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534864,
+      "before": "44c1",
+      "after": "40c0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534876,
+      "before": "aeae",
+      "after": "3dbe"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534880,
+      "before": "8dbd",
+      "after": "46c8"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534884,
+      "before": "e5bc",
+      "after": "2ec6"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534892,
+      "before": "40c0",
+      "after": "35bd"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534896,
+      "before": "77c2",
+      "after": "0eb0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534900,
+      "before": "4fb0",
+      "after": "e5bc"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534912,
+      "before": "53b0",
+      "after": "4cae"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534920,
+      "before": "bebe",
+      "after": "1bae"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534936,
+      "before": "9dbc",
+      "after": "adc2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534940,
+      "before": "1b33",
+      "after": "beaf"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534960,
+      "before": "2ec6",
+      "after": "64b9"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 534992,
+      "before": "34c2",
+      "after": "4ac0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535000,
+      "before": "e5bd",
+      "after": "9cae"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535004,
+      "before": "8fac",
+      "after": "d6c0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535016,
+      "before": "fdbc",
+      "after": "31c1"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535028,
+      "before": "4cae",
+      "after": "77c2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535032,
+      "before": "53b0",
+      "after": "4cae"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535036,
+      "before": "40c0",
+      "after": "35bd"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535048,
+      "before": "77c2",
+      "after": "0eb0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535052,
+      "before": "4fb0",
+      "after": "e5bc"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535060,
+      "before": "45bd",
+      "after": "f6c7"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535064,
+      "before": "44af",
+      "after": "baae"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535068,
+      "before": "1b",
+      "after": "14"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535072,
+      "before": "a9be",
+      "after": "02af"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535076,
+      "before": "fec2",
+      "after": "f5bc"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535080,
+      "before": "25",
+      "after": "1d"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535088,
+      "before": "ebc7",
+      "after": "d5bb"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535096,
+      "before": "f5c2",
+      "after": "dac1"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535104,
+      "before": "cc",
+      "after": "c0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535108,
+      "before": "aeae",
+      "after": "3dbe"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535120,
+      "before": "8dbd",
+      "after": "46c8"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535124,
+      "before": "e5bc",
+      "after": "2ec6"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535128,
+      "before": "25bd",
+      "after": "2abb"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535136,
+      "before": "4dbd",
+      "after": "3ec2"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535144,
+      "before": "2bce",
+      "after": "08af"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535164,
+      "before": "85bd",
+      "after": "c7ad"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535168,
+      "before": "e7bb",
+      "after": "f0cf"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535172,
+      "before": "9cae",
+      "after": "a2be"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535272,
+      "before": "d0d2",
+      "after": "44af"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535276,
+      "before": "d4d2",
+      "after": "dcaf"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535280,
+      "before": "d8d2",
+      "after": "9bbd"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535284,
+      "before": "dcd2",
+      "after": "73b0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535288,
+      "before": "e0d2",
+      "after": "83ab"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 535292,
+      "before": "e4d2",
+      "after": "1b33"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 545936,
+      "before": "6fdf07dfe875",
+      "after": "000000000000"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 545944,
+      "before": "98dfcb",
+      "after": "000000"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 545948,
+      "before": "9de08a",
+      "after": "000000"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 545952,
+      "before": "df5fdefe",
+      "after": "00000000"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 545960,
+      "before": "dec883d9ea9b",
+      "after": "000000000000"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 545968,
+      "before": "dec883ea9b",
+      "after": "0000000000"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 545976,
+      "before": "8a69",
+      "after": "0000"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 545980,
+      "before": "d99c8a69",
+      "after": "00000000"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 545992,
+      "before": "dfe8e1ea9ccd8edfe3dfe3",
+      "after": "0000000000000000000000"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 546004,
+      "before": "a1",
+      "after": "00"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 546032,
+      "before": "a18b69",
+      "after": "000000"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 546040,
+      "before": "5a659cc3469cc891614578e060",
+      "after": "00000000000000000000000000"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 586267,
+      "before": "a145dd370da1dd194e3ae601dd90dd2b",
+      "after": "29deb7a1097c0fe601dd90dd2ba14f6c"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 586284,
+      "before": "4f6ca17a",
+      "after": "7add9fa0"
+    },
+    {
+      "file": "PSX.EXE",
+      "offset": 586289,
+      "before": "9fa0dd0cdd0cdd",
+      "after": "0cdd0cdd429c00"
+    }
+  ],
+  "changed_members": [
+    "22/S205C.DAT",
+    "8/S8021.DAT",
+    "8/S8041.DAT",
+    "B/SB022.DAT",
+    "B/SB071.DAT",
+    "B/SB072.DAT",
+    "COMM.IMG",
+    "D/SD011.DAT",
+    "D/SD014.DAT",
+    "F/SF041.DAT",
+    "PSX.EXE"
+  ],
+  "changed_bytes": 918,
+  "ui": [
+    {
+      "id": "equipment_name:14",
+      "pointer": "0x804dc",
+      "before_pointer": "0x8019c7f8",
+      "after_pointer": "0x8019aea8",
+      "before_hex": "dd080399df2ca1dd6603dd24",
+      "after_hex": "dd080399ea36a1dd660325",
+      "target": "바이올렛 레이서"
+    },
+    {
+      "id": "equipment_name:26",
+      "pointer": "0x8050c",
+      "before_pointer": "0x8019bd35",
+      "after_pointer": "0x8019bde5",
+      "before_hex": "816b0fa103de20",
+      "after_hex": "df570fa103de20",
+      "target": "딜의 이빨"
+    },
+    {
+      "id": "equipment_name:42",
+      "pointer": "0x8054c",
+      "before_pointer": "0x8019ab5b",
+      "after_pointer": "0x8019abc9",
+      "before_hex": "04de390fa130dd55dd9d",
+      "after_hex": "04de390fa130dd40dd9d",
+      "target": "지옥의 스코프"
+    },
+    {
+      "id": "equipment_name:48",
+      "pointer": "0x80564",
+      "before_pointer": "0x8019abc9",
+      "after_pointer": "0x8019ab76",
+      "before_hex": "2e8f0fa1dd5d2e56ddb5",
+      "after_hex": "dd66038f0fa1dd5d2e56ddb5",
+      "target": "레이라의 머리장식"
+    },
+    {
+      "id": "equipment_name:55",
+      "pointer": "0x80580",
+      "before_pointer": "0x8019c1da",
+      "after_pointer": "0x8019c1f8",
+      "before_hex": "ddd2dd820fa132dd92",
+      "after_hex": "ddd2dd820fa15528",
+      "target": "태양의 모자"
+    },
+    {
+      "id": "equipment_name:57",
+      "pointer": "0x80588",
+      "before_pointer": "0x8019c1f8",
+      "after_pointer": "0x8019c126",
+      "before_hex": "de018f3d300fa1de43",
+      "after_hex": "de018fdd06300fa1de43",
+      "target": "클라비스의 책"
+    },
+    {
+      "id": "equipment_name:61",
+      "pointer": "0x80598",
+      "before_pointer": "0x8019bb72",
+      "after_pointer": "0x8019c2f5",
+      "before_hex": "dd78070fa1ddaf56",
+      "after_hex": "dd9ddd66030fa1ddaf56",
+      "target": "프레이의 문장"
+    },
+    {
+      "id": "equipment_description:30",
+      "pointer": "0x80b0c",
+      "before_pointer": "0x8019b459",
+      "after_pointer": "0x8019ab5b",
+      "before_hex": "dd09a1dd8fdd1fa129a1dd43de6ca10903dd5ea1de79dea9",
+      "after_hex": "dd0903a1320fa1dd461729e6010903dd5e0da1deb514de0bde29",
+      "target": "적이 거의 반드시|아이템을 떨어뜨림"
+    },
+    {
+      "id": "equipment_description:48",
+      "pointer": "0x80b54",
+      "before_pointer": "0x801ff6f0",
+      "after_pointer": "0x801ff6f0",
+      "before_hex": "6cdde1a145dd370da1dd194e3ae601dd90dd2ba14f6ca17add9fa0dd0cdd0cdd429c",
+      "after_hex": "6cdde129deb7a1097c0fe601dd90dd2ba14f6ca17add9fa0dd0cdd0cdd429c",
+      "target": "부활시킨 아군의|체력 전부 회복(쿠쿠루)"
+    },
+    {
+      "id": "equipment_description:49",
+      "pointer": "0x80b58",
+      "before_pointer": "0x8019c846",
+      "after_pointer": "0x8019b568",
+      "before_hex": "dd3c2ba1dd79ddb7a1de090c",
+      "after_hex": "dd3c2b88a17add9fd2a1dd79ddb7a1de090c",
+      "target": "피해와 회복량 편차 증가"
+    },
+    {
+      "id": "consumable_name:8",
+      "pointer": "0x80cbc",
+      "before_pointer": "0x8019b07f",
+      "after_pointer": "0x8019c29e",
+      "before_hex": "df2239",
+      "after_hex": "ea2add48",
+      "target": "독약"
+    },
+    {
+      "id": "consumable_name:16",
+      "pointer": "0x80cdc",
+      "before_pointer": "0x8019c0d6",
+      "after_pointer": "0x8019bcfd",
+      "before_hex": "dd10dd0aa1ddf2092e",
+      "after_hex": "dd10dd0a0fa182",
+      "target": "공격의 병"
+    },
+    {
+      "id": "skill_name:43",
+      "pointer": "0x8126c",
+      "before_pointer": "0x8019b03f",
+      "after_pointer": "0x8019b04f",
+      "before_hex": "46dd9a",
+      "after_hex": "46df24",
+      "target": "오돈"
+    },
+    {
+      "id": "skill_name:56",
+      "pointer": "0x812a0",
+      "before_pointer": "0x8019bb96",
+      "after_pointer": "0x8019c0d6",
+      "before_hex": "dd9630dd5ba1df32",
+      "after_hex": "dd9630dd5ba1dd4235",
+      "target": "더스트 루인"
+    },
+    {
+      "id": "skill_description:20",
+      "pointer": "0x81758",
+      "before_pointer": "0x8019b90b",
+      "after_pointer": "0x8019b5b4",
+      "before_hex": "dd62ddd10da1ddaddd5fa1dd0e34",
+      "after_hex": "1a20a1dd62ddd10da1dd32290ea1dd0e34",
+      "target": "여러 폭탄을 동시에 발사"
+    },
+    {
+      "id": "skill_description:24",
+      "pointer": "0x81768",
+      "before_pointer": "0x8019b542",
+      "after_pointer": "0x8019b542",
+      "before_hex": "4f7b03a1dd7807a1dd29ddb24ed5a14fdd65",
+      "after_hex": "55dd21a1dd78dd4088a1dd5a26a1dd29ddb2",
+      "target": "모두 포코와 같은 방향"
+    },
+    {
+      "id": "skill_description:32",
+      "pointer": "0x81788",
+      "before_pointer": "0x8019bad9",
+      "after_pointer": "0x8019b90b",
+      "before_hex": "dd09a1191ea11c31",
+      "after_hex": "de638ea1940fa1dd090a0da11c31",
+      "target": "범위 안의 적들을 고정"
+    },
+    {
+      "id": "skill_description:33",
+      "pointer": "0x8178c",
+      "before_pointer": "0x8019b5b4",
+      "after_pointer": "0x8019be78",
+      "before_hex": "1c3153a1dd090e41a1df16ddd1a1dd0e34",
+      "after_hex": "9d94dd37a1378b0ea1e956ddd1",
+      "target": "심안법 대상에 광탄"
+    },
+    {
+      "id": "skill_description:37",
+      "pointer": "0x8179c",
+      "before_pointer": "0x8019c853",
+      "after_pointer": "0x8019bd85",
+      "before_hex": "dd4853a1dd090da1dd07dddd",
+      "after_hex": "283e6001a1decbdee9a1dd4853a1dd09a1dd07dddd",
+      "target": "자신보다 훨씬 약한 적 소멸"
+    },
+    {
+      "id": "skill_description:43",
+      "pointer": "0x817b4",
+      "before_pointer": "0x8019c2e3",
+      "after_pointer": "0x8019bbf9",
+      "before_hex": "46dd9aa1dd07dd65",
+      "after_hex": "46df24a1dd07dd65",
+      "target": "오돈 소환"
+    },
+    {
+      "id": "character_name:4",
+      "pointer": "0x81b5c",
+      "before_pointer": "0x8019b08f",
+      "after_pointer": "0x8019bf04",
+      "before_hex": "030c",
+      "after_hex": "1cdda9",
+      "target": "고겐"
+    },
+    {
+      "id": "character_name:5",
+      "pointer": "0x81b60",
+      "before_pointer": "0x8019bf04",
+      "after_pointer": "0x8019b08f",
+      "before_hex": "1cdda9",
+      "after_hex": "030c",
+      "target": "이가"
+    },
+    {
+      "id": "character_name:15",
+      "pointer": "0x81b88",
+      "before_pointer": "0x8019b073",
+      "after_pointer": "0x8019c801",
+      "before_hex": "dd1b28",
+      "after_hex": "dddf28",
+      "target": "닌자"
+    },
+    {
+      "id": "character_name:35",
+      "pointer": "0x81bd8",
+      "before_pointer": "0x8019c1a8",
+      "after_pointer": "0x8019ac8f",
+      "before_hex": "dd86de78a1de5edd06",
+      "after_hex": "dd86de78a129dd57dd06",
+      "target": "슈퍼 시노비"
+    },
+    {
+      "id": "character_name:62",
+      "pointer": "0x81c44",
+      "before_pointer": "0x8019c29b",
+      "after_pointer": "0x8019bb96",
+      "before_hex": "30dd9aa1df15df2b",
+      "after_hex": "30de42a1ea1eea35",
+      "target": "스턴 골렘"
+    },
+    {
+      "id": "character_name:72",
+      "pointer": "0x81c6c",
+      "before_pointer": "0x8019be7f",
+      "after_pointer": "0x8019bd25",
+      "before_hex": "07a109dd0630",
+      "after_hex": "dd40a109dd0630",
+      "target": "코 아비스"
+    },
+    {
+      "id": "character_name:85",
+      "pointer": "0x81ca0",
+      "before_pointer": "0x8019b03f",
+      "after_pointer": "0x8019b04f",
+      "before_hex": "46dd9a",
+      "after_hex": "46df24",
+      "target": "오돈"
+    },
+    {
+      "id": "character_name:104",
+      "pointer": "0x81cec",
+      "before_pointer": "0x8019c346",
+      "after_pointer": "0x8019be5c",
+      "before_hex": "0158a1030c",
+      "after_hex": "0158a11cdda9",
+      "target": "다크 고겐"
+    },
+    {
+      "id": "character_name:105",
+      "pointer": "0x81cf0",
+      "before_pointer": "0x8019be5c",
+      "after_pointer": "0x8019c346",
+      "before_hex": "0158a11cdda9",
+      "after_hex": "0158a1030c",
+      "target": "다크 이가"
+    },
+    {
+      "id": "region_name:3",
+      "pointer": "0x81e44",
+      "before_pointer": "0x8019d128",
+      "after_pointer": "0x8019bbe7",
+      "before_hex": "4670dd3830a1dd305a",
+      "after_hex": "46700730a1dd305a",
+      "target": "오르니스 언덕"
+    },
+    {
+      "id": "region_name:5",
+      "pointer": "0x81e4c",
+      "before_pointer": "0x8019be78",
+      "after_pointer": "0x8019c2e3",
+      "before_hex": "0770a1de347b",
+      "after_hex": "dd407060a1de347b",
+      "target": "코르보 평원"
+    },
+    {
+      "id": "region_name:7",
+      "pointer": "0x81e54",
+      "before_pointer": "0x8019bd95",
+      "after_pointer": "0x8019c25c",
+      "before_hex": "dd0c1ea1dd305a",
+      "after_hex": "dd0c031ea1dd305a",
+      "target": "쿠이나 언덕"
+    },
+    {
+      "id": "region_name:12",
+      "pointer": "0x81e68",
+      "before_pointer": "0x8019c126",
+      "after_pointer": "0x8019bad9",
+      "before_hex": "dd38dd388f30a1dd97",
+      "after_hex": "07dd388f30a1dd97",
+      "target": "니카라스 숲"
+    },
+    {
+      "id": "region_name:13",
+      "pointer": "0x81e6c",
+      "before_pointer": "0x8019bbf9",
+      "after_pointer": "0x8019c234",
+      "before_hex": "df5add088fa1dd71",
+      "after_hex": "df5add088fa1decf",
+      "target": "센바라 늪"
+    },
+    {
+      "id": "region_name:20",
+      "pointer": "0x81e88",
+      "before_pointer": "0x8019be94",
+      "after_pointer": "0x8019bc9d",
+      "before_hex": "096601a11c04",
+      "after_hex": "09de5d01a11c04",
+      "target": "아젠다 고지"
+    },
+    {
+      "id": "region_name:26",
+      "pointer": "0x81ea0",
+      "before_pointer": "0x8019baac",
+      "after_pointer": "0x8019baac",
+      "before_hex": "8fdd8645a1df6c56",
+      "after_hex": "03dd8645a1ea5856",
+      "target": "이슈마 암장"
+    },
+    {
+      "id": "region_name:27",
+      "pointer": "0x81ea4",
+      "before_pointer": "0x8019c130",
+      "after_pointer": "0x8019bb72",
+      "before_hex": "dd38dde9a1dd10ddf2",
+      "after_hex": "07dde9a1dd10ddf2",
+      "target": "니델 공항"
+    },
+    {
+      "id": "ui_pointer:81EFC",
+      "pointer": "0x81efc",
+      "before_pointer": "0x8019afdc",
+      "after_pointer": "0x8019b03f",
+      "before_hex": "dd38dde9",
+      "after_hex": "07dde9",
+      "target": "니델"
+    },
+    {
+      "id": "location_name:17",
+      "pointer": "0x821b4",
+      "before_pointer": "0x8019d128",
+      "after_pointer": "0x8019bbe7",
+      "before_hex": "4670dd3830a1dd305a",
+      "after_hex": "46700730a1dd305a",
+      "target": "오르니스 언덕"
+    },
+    {
+      "id": "location_name:21",
+      "pointer": "0x821c4",
+      "before_pointer": "0x8019c8fa",
+      "after_pointer": "0x8019c7b7",
+      "before_hex": "096601a11c04a1dd32de67",
+      "after_hex": "09de5d01a11c04a1dd32de67",
+      "target": "아젠다 고지 동굴"
+    },
+    {
+      "id": "location_name:22",
+      "pointer": "0x821c8",
+      "before_pointer": "0x8019ab7c",
+      "after_pointer": "0x8019aacc",
+      "before_hex": "096601a11c04a1de4c6c",
+      "after_hex": "09de5d01a11c04a1de4c6c",
+      "target": "아젠다 고지 외부"
+    },
+    {
+      "id": "location_name:29",
+      "pointer": "0x821e4",
+      "before_pointer": "0x8019c130",
+      "after_pointer": "0x8019bb72",
+      "before_hex": "dd38dde9a1dd10ddf2",
+      "after_hex": "07dde9a1dd10ddf2",
+      "target": "니델 공항"
+    },
+    {
+      "id": "location_name:30",
+      "pointer": "0x821e8",
+      "before_pointer": "0x8019ab66",
+      "after_pointer": "0x8019c8fa",
+      "before_hex": "07d529df6ca13724dd27",
+      "after_hex": "deafd58cdd70a13724dd27",
+      "target": "콜로세움 대기실"
+    },
+    {
+      "id": "location_name:31",
+      "pointer": "0x821ec",
+      "before_pointer": "0x8019c25c",
+      "after_pointer": "0x8019c144",
+      "before_hex": "07d529df6ca15f37",
+      "after_hex": "deafd58cdd70a15f37",
+      "target": "콜로세움 무대"
+    },
+    {
+      "id": "location_name:42",
+      "pointer": "0x82218",
+      "before_pointer": "0x8019be78",
+      "after_pointer": "0x8019c2e3",
+      "before_hex": "0770a1de347b",
+      "after_hex": "dd407060a1de347b",
+      "target": "코르보 평원"
+    },
+    {
+      "id": "location_name:44",
+      "pointer": "0x82220",
+      "before_pointer": "0x8019bd95",
+      "after_pointer": "0x8019c25c",
+      "before_hex": "dd0c1ea1dd305a",
+      "after_hex": "dd0c031ea1dd305a",
+      "target": "쿠이나 언덕"
+    },
+    {
+      "id": "location_name:46",
+      "pointer": "0x82228",
+      "before_pointer": "0x8019c126",
+      "after_pointer": "0x8019bad9",
+      "before_hex": "dd38dd388f30a1dd97",
+      "after_hex": "07dd388f30a1dd97",
+      "target": "니카라스 숲"
+    },
+    {
+      "id": "location_name:47",
+      "pointer": "0x8222c",
+      "before_pointer": "0x8019bbf9",
+      "after_pointer": "0x8019c234",
+      "before_hex": "df5add088fa1dd71",
+      "after_hex": "df5add088fa1decf",
+      "target": "센바라 늪"
+    },
+    {
+      "id": "location_name:50",
+      "pointer": "0x82238",
+      "before_pointer": "0x8019baac",
+      "after_pointer": "0x8019baac",
+      "before_hex": "8fdd8645a1df6c56",
+      "after_hex": "03dd8645a1ea5856",
+      "target": "이슈마 암장"
+    },
+    {
+      "id": "location_name:51",
+      "pointer": "0x8223c",
+      "before_pointer": "0x8019ab71",
+      "after_pointer": "0x8019c292",
+      "before_hex": "07d529df6ca1dd392456",
+      "after_hex": "deafd58cdd70a1dd392456",
+      "target": "콜로세움 투기장"
+    },
+    {
+      "id": "ui_pointer:82348",
+      "pointer": "0x82348",
+      "before_pointer": "0x8019aea8",
+      "after_pointer": "0x8019c7eb",
+      "before_hex": "378ba18068",
+      "after_hex": "e707e706a1378ba18068",
+      "target": "{E7:07}{E7:06} 대상 변경"
+    },
+    {
+      "id": "ui_pointer:82354",
+      "pointer": "0x82354",
+      "before_pointer": "0x8019c7b7",
+      "after_pointer": "0x8019bd45",
+      "before_hex": "30de6f0da1dd53df9a198c2c",
+      "after_hex": "e701a130de6f0da1dd53e933198c2c",
+      "target": "{E7:01} 스킬을 선택하세요"
+    },
+    {
+      "id": "ui_pointer:82358",
+      "pointer": "0x82358",
+      "before_pointer": "0x8019adc7",
+      "after_pointer": "0x8019c1a8",
+      "before_hex": "7209de0c0701",
+      "after_hex": "e703a17209de0c0701",
+      "target": "{E7:03} 돌아갑니다"
+    },
+    {
+      "id": "ui_pointer:8236C",
+      "pointer": "0x8236c",
+      "before_pointer": "0x8019b568",
+      "after_pointer": "0x8019b459",
+      "before_hex": "dd0614a11f06a1dd150da1dd53df9a198c2c",
+      "after_hex": "e701a1dd0614a11f06a1dd150da1dd53e933198c2c",
+      "target": "{E7:01} 비어 있는 곳을 선택하세요"
+    },
+    {
+      "id": "ui_pointer:82948",
+      "pointer": "0x82948",
+      "before_pointer": "0x8019c292",
+      "after_pointer": "0x8019be25",
+      "before_hex": "2bd586a1dd10dd0a",
+      "after_hex": "ea2aa1dd10dd0a",
+      "target": "독 공격"
+    },
+    {
+      "id": "ui_pointer:82988",
+      "pointer": "0x82988",
+      "before_pointer": "0x8019bebe",
+      "after_pointer": "0x8019ae1b",
+      "before_hex": "2bd586a12486",
+      "after_hex": "ea2aa194ddb4",
+      "target": "독 안개"
+    },
+    {
+      "id": "ui_pointer:829D8",
+      "pointer": "0x829d8",
+      "before_pointer": "0x8019bde5",
+      "after_pointer": "0x8019ae9c",
+      "before_hex": "dd948da17add9f",
+      "after_hex": "8130a1dd50",
+      "target": "데스 볼"
+    },
+    {
+      "id": "ui_pointer:829DC",
+      "pointer": "0x829dc",
+      "before_pointer": "0x8019ac8f",
+      "after_pointer": "0x8019c0d6",
+      "before_hex": "dd9630dd5ba1ddafdd82",
+      "after_hex": "dd9630dd5ba1dd4235",
+      "target": "더스트 루인"
+    },
+    {
+      "id": "extra_ui:82630",
+      "pointer": "0x82630",
+      "before_pointer": "0x8019d071",
+      "after_pointer": "0x8019cff4",
+      "before_hex": "8e",
+      "after_hex": "69",
+      "target": "승"
+    },
+    {
+      "id": "extra_ui:82634",
+      "pointer": "0x82634",
+      "before_pointer": "0x8019cff0",
+      "after_pointer": "0x8019ae50",
+      "before_hex": "d5dc92e0ed",
+      "after_hex": "ded7",
+      "target": "패"
+    },
+    {
+      "id": "extra_ui:8299C",
+      "pointer": "0x8299c",
+      "before_pointer": "0x8019331b",
+      "after_pointer": "0x8019afbe",
+      "before_hex": "e0ac",
+      "after_hex": "dd13dd8c",
+      "target": "불꽃"
+    },
+    {
+      "id": "extra_ui:82A68",
+      "pointer": "0x82a68",
+      "before_pointer": "0x8019ce2b",
+      "after_pointer": "0x8019af08",
+      "before_hex": "",
+      "after_hex": "d1d1d1d1d1",
+      "target": "?????"
+    },
+    {
+      "id": "extra_ui:82AE8",
+      "pointer": "0x82ae8",
+      "before_pointer": "0x8019d2d0",
+      "after_pointer": "0x8019af44",
+      "before_hex": "ddbd",
+      "after_hex": "dd3fdd31",
+      "target": "진행"
+    },
+    {
+      "id": "extra_ui:82AEC",
+      "pointer": "0x82aec",
+      "before_pointer": "0x8019d2d4",
+      "after_pointer": "0x8019afdc",
+      "before_hex": "dd99",
+      "after_hex": "dd32de12",
+      "target": "동료"
+    },
+    {
+      "id": "extra_ui:82AF0",
+      "pointer": "0x82af0",
+      "before_pointer": "0x8019d2d8",
+      "after_pointer": "0x8019bd9b",
+      "before_hex": "de34",
+      "after_hex": "56",
+      "target": "장"
+    },
+    {
+      "id": "extra_ui:82AF4",
+      "pointer": "0x82af4",
+      "before_pointer": "0x8019d2dc",
+      "after_pointer": "0x8019b073",
+      "before_hex": "ce",
+      "after_hex": "8cdd11",
+      "target": "세계"
+    },
+    {
+      "id": "extra_ui:82AF8",
+      "pointer": "0x82af8",
+      "before_pointer": "0x8019d2e0",
+      "after_pointer": "0x8019ab83",
+      "before_hex": "90",
+      "after_hex": "04dd91",
+      "target": "지역"
+    },
+    {
+      "id": "extra_ui:82AFC",
+      "pointer": "0x82afc",
+      "before_pointer": "0x8019d2e4",
+      "after_pointer": "0x8019331b",
+      "before_hex": "ddd2",
+      "after_hex": "de60",
+      "target": "값"
+    },
+    {
+      "id": "ui_pointer:82950",
+      "pointer": "0x82950",
+      "before_pointer": "0x8019c144",
+      "after_pointer": "0x8019c040",
+      "before_hex": "dd62dd0ea1502edda1",
+      "after_hex": "dd62ea37a1502edda1",
+      "target": "폭렬 수리검"
+    },
+    {
+      "id": "ui_pointer:8295C",
+      "pointer": "0x8295c",
+      "before_pointer": "0x8019aeae",
+      "after_pointer": "0x8019be3d",
+      "before_hex": "37dd62dd0e",
+      "after_hex": "dec030de36d54f",
+      "target": "익스플로전"
+    },
+    {
+      "id": "ui_pointer:82960",
+      "pointer": "0x82960",
+      "before_pointer": "0x8019bd8d",
+      "after_pointer": "0x8019c846",
+      "before_hex": "dd08dd22a1dda1",
+      "after_hex": "ea6417a1ddfcdd12deb3",
+      "target": "윈드 슬래셔"
+    },
+    {
+      "id": "ui_pointer:82964",
+      "pointer": "0x82964",
+      "before_pointer": "0x8019bce5",
+      "after_pointer": "0x8019c62e",
+      "before_hex": "4f24a1dd62de2e",
+      "after_hex": "ea56dd96a130ea83",
+      "target": "썬더 스톰"
+    },
+    {
+      "id": "ui_pointer:8296C",
+      "pointer": "0x8296c",
+      "before_pointer": "0x8019c040",
+      "after_pointer": "0x8019bd35",
+      "before_hex": "2bd586a12486a16632",
+      "after_hex": "ddcddd7803ea69",
+      "target": "디포이즌"
+    },
+    {
+      "id": "ui_pointer:82970",
+      "pointer": "0x82970",
+      "before_pointer": "0x8019c277",
+      "after_pointer": "0x8019b00e",
+      "before_hex": "19dd710fa19dde7f",
+      "after_hex": "dde7dde4",
+      "target": "천벌"
+    },
+    {
+      "id": "ui_pointer:82974",
+      "pointer": "0x82974",
+      "before_pointer": "0x8019b04f",
+      "after_pointer": "0x8019bce5",
+      "before_hex": "6cdde1",
+      "after_hex": "2edd24ea34ea51",
+      "target": "리저렉션"
+    },
+    {
+      "id": "ui_pointer:82980",
+      "pointer": "0x82980",
+      "before_pointer": "0x8019b053",
+      "after_pointer": "0x8019ae4c",
+      "before_hex": "7add9f",
+      "after_hex": "ea9d14",
+      "target": "큐어"
+    },
+    {
+      "id": "ui_pointer:82998",
+      "pointer": "0x82998",
+      "before_pointer": "0x8019bc9d",
+      "after_pointer": "0x8019c2ad",
+      "before_hex": "408ea1dd10dd0a",
+      "after_hex": "34dd29a1dd10dd0a",
+      "target": "사방 공격"
+    },
+    {
+      "id": "ui_pointer:829B0",
+      "pointer": "0x829b0",
+      "before_pointer": "0x8019c62e",
+      "after_pointer": "0x8019b964",
+      "before_hex": "04de390fa1dd11dd35",
+      "after_hex": "04de394ed5a10c06a1dd11dd35",
+      "target": "지옥으로 가는 계단"
+    },
+    {
+      "id": "ui_pointer:829D0",
+      "pointer": "0x829d0",
+      "before_pointer": "0x8019c234",
+      "after_pointer": "0x8019c04a",
+      "before_hex": "de3cdde7a1dd06dd31",
+      "after_hex": "2cdd2f0fa1dd61ddb4",
+      "target": "요미의 날개"
+    },
+    {
+      "id": "ui_pointer:829E8",
+      "pointer": "0x829e8",
+      "before_pointer": "0x8019bcfd",
+      "after_pointer": "0x8019c131",
+      "before_hex": "4fdd90a17add9f",
+      "after_hex": "83de14a1ea97de54",
+      "target": "토탈 힐링"
+    },
+    {
+      "id": "ui_pointer:829F4",
+      "pointer": "0x829f4",
+      "before_pointer": "0x8019ae4c",
+      "after_pointer": "0x8019c277",
+      "before_hex": "ddf3a1472e24",
+      "after_hex": "dd2cddbe46a1ea8b",
+      "target": "메테오 폴"
+    },
+    {
+      "id": "ui_pointer:829F8",
+      "pointer": "0x829f8",
+      "before_pointer": "0x8019b053",
+      "after_pointer": "0x8019ae4c",
+      "before_hex": "7add9f",
+      "after_hex": "ea9d14",
+      "target": "큐어"
+    },
+    {
+      "id": "ui_pointer:829FC",
+      "pointer": "0x829fc",
+      "before_pointer": "0x8019c040",
+      "after_pointer": "0x8019bd35",
+      "before_hex": "2bd586a12486a16632",
+      "after_hex": "ddcddd7803ea69",
+      "target": "디포이즌"
+    },
+    {
+      "id": "ui_pointer:82A08",
+      "pointer": "0x82a08",
+      "before_pointer": "0x8019c277",
+      "after_pointer": "0x8019b00e",
+      "before_hex": "19dd710fa19dde7f",
+      "after_hex": "dde7dde4",
+      "target": "천벌"
+    },
+    {
+      "id": "ui_pointer:82A0C",
+      "pointer": "0x82a0c",
+      "before_pointer": "0x8019b04f",
+      "after_pointer": "0x8019bce5",
+      "before_hex": "6cdde1",
+      "after_hex": "2edd24ea34ea51",
+      "target": "리저렉션"
+    },
+    {
+      "id": "ui_pointer:82A14",
+      "pointer": "0x82a14",
+      "before_pointer": "0x8019bd45",
+      "after_pointer": "0x8019c7f6",
+      "before_hex": "83dd86a1dd0624",
+      "after_hex": "ea5bdd83ea26dd62dd4c",
+      "target": "앵화뇌폭참"
+    },
+    {
+      "id": "ui_pointer:82A18",
+      "pointer": "0x82a18",
+      "before_pointer": "0x8019af44",
+      "after_pointer": "0x8019aeba",
+      "before_hex": "ddb635dda1",
+      "after_hex": "40de9fdda1",
+      "target": "주박검"
+    },
+    {
+      "id": "ui_pointer:82A1C",
+      "pointer": "0x82a1c",
+      "before_pointer": "0x8019ae1b",
+      "after_pointer": "0x8019ae14",
+      "before_hex": "dd3fdd10dda1",
+      "after_hex": "dd3fdd10dd4c",
+      "target": "진공참"
+    },
+    {
+      "id": "ui_pointer:82A20",
+      "pointer": "0x82a20",
+      "before_pointer": "0x8019bea9",
+      "after_pointer": "0x8019af02",
+      "before_hex": "15de2928dda1",
+      "after_hex": "95ddfadd4c",
+      "target": "호영참"
+    },
+    {
+      "id": "ui_pointer:82A24",
+      "pointer": "0x82a24",
+      "before_pointer": "0x8019c2fe",
+      "after_pointer": "0x8019bcf5",
+      "before_hex": "4fdd39a1aaa1de64",
+      "after_hex": "4fdd390fa1de64",
+      "target": "전투의 북"
+    },
+    {
+      "id": "ui_pointer:82A28",
+      "pointer": "0x82a28",
+      "before_pointer": "0x8019be25",
+      "after_pointer": "0x8019be1d",
+      "before_hex": "de3c3428ddd21c",
+      "after_hex": "de3c3428a1de64",
+      "target": "황사자 북"
+    },
+    {
+      "id": "ui_pointer:82A30",
+      "pointer": "0x82a30",
+      "before_pointer": "0x8019c7eb",
+      "after_pointer": "0x8019bbd5",
+      "before_hex": "dd06dde0dd06dde0a11edd6c",
+      "after_hex": "de14dd3fa11edd6c",
+      "target": "탈진 나팔"
+    },
+    {
+      "id": "ui_pointer:82A38",
+      "pointer": "0x82a38",
+      "before_pointer": "0x8019c2f5",
+      "after_pointer": "0x8019c1da",
+      "before_hex": "4dde290fa1ddad40",
+      "after_hex": "ea2bdd83a1ddfe0330",
+      "target": "둔화 베이스"
+    },
+    {
+      "id": "ui_pointer:82A40",
+      "pointer": "0x82a40",
+      "before_pointer": "0x8019aacc",
+      "after_pointer": "0x8019aac0",
+      "before_hex": "dd29ddb2de1003a1dd3c2e",
+      "after_hex": "dd29ddb24fdd65a1dd3c2e",
+      "target": "방향전환 피리"
+    },
+    {
+      "id": "ui_pointer:82A44",
+      "pointer": "0x82a44",
+      "before_pointer": "0x8019aeae",
+      "after_pointer": "0x8019be3d",
+      "before_hex": "37dd62dd0e",
+      "after_hex": "dec030de36d54f",
+      "target": "익스플로전"
+    },
+    {
+      "id": "ui_pointer:82A50",
+      "pointer": "0x82a50",
+      "before_pointer": "0x8019bd8d",
+      "after_pointer": "0x8019c846",
+      "before_hex": "dd08dd22a1dda1",
+      "after_hex": "ea6417a1ddfcdd12deb3",
+      "target": "윈드 슬래셔"
+    },
+    {
+      "id": "ui_pointer:82A54",
+      "pointer": "0x82a54",
+      "before_pointer": "0x8019bce5",
+      "after_pointer": "0x8019c62e",
+      "before_hex": "4f24a1dd62de2e",
+      "after_hex": "ea56dd96a130ea83",
+      "target": "썬더 스톰"
+    },
+    {
+      "id": "ui_pointer:82A58",
+      "pointer": "0x82a58",
+      "before_pointer": "0x8019bd25",
+      "after_pointer": "0x8019bb2a",
+      "before_hex": "7a462ea1ddb724",
+      "after_hex": "dd53de2edd0ade02",
+      "target": "선풍격축"
+    },
+    {
+      "id": "ui_pointer:82A60",
+      "pointer": "0x82a60",
+      "before_pointer": "0x8019bd4d",
+      "after_pointer": "0x8019c23e",
+      "before_hex": "8a51a1dd7bdd32",
+      "after_hex": "de6c3edd6eddfadd7b",
+      "target": "귀신류영파"
+    },
+    {
+      "id": "ui_pointer:82A7C",
+      "pointer": "0x82a7c",
+      "before_pointer": "0x8019bd85",
+      "after_pointer": "0x8019adc7",
+      "before_hex": "dd08dd22a14f24",
+      "after_hex": "de2eea39dd7b",
+      "target": "풍뢰파"
+    },
+    {
+      "id": "ui_pointer:82A80",
+      "pointer": "0x82a80",
+      "before_pointer": "0x8019bbe7",
+      "after_pointer": "0x8019cff0",
+      "before_hex": "de2da10cdd634624",
+      "after_hex": "ea480f",
+      "target": "빙의"
+    },
+    {
+      "id": "ui_pointer:82A84",
+      "pointer": "0x82a84",
+      "before_pointer": "0x8019ae9c",
+      "after_pointer": "0x8019bea2",
+      "before_hex": "2486a1718d",
+      "after_hex": "0fdde3a1718d",
+      "target": "의욕 없음"
+    },
+    {
+      "id": "preserve:82534",
+      "pointer": "0x82534",
+      "before_pointer": "0x8019fcd4",
+      "after_pointer": "0x8019d071",
+      "before_hex": "a1",
+      "after_hex": "a1",
+      "target": " "
+    },
+    {
+      "id": "preserve:82538",
+      "pointer": "0x82538",
+      "before_pointer": "0x8019fcf0",
+      "after_pointer": "0x8019b07f",
+      "before_hex": "a18b69",
+      "after_hex": "a18b69",
+      "target": " 상승"
+    }
+  ],
+  "allocation": {
+    "allocations": [
+      {
+        "address": "0x801ff6f0",
+        "file_offset": 586264,
+        "length": 32,
+        "payload": "6cdde129deb7a1097c0fe601dd90dd2ba14f6ca17add9fa0dd0cdd0cdd429c"
+      },
+      {
+        "address": "0x8019ab5b",
+        "file_offset": 525147,
+        "length": 27,
+        "payload": "dd0903a1320fa1dd461729e6010903dd5e0da1deb514de0bde29"
+      },
+      {
+        "address": "0x8019bd85",
+        "file_offset": 529797,
+        "length": 22,
+        "payload": "283e6001a1decbdee9a1dd4853a1dd09a1dd07dddd"
+      },
+      {
+        "address": "0x8019b459",
+        "file_offset": 527449,
+        "length": 22,
+        "payload": "e701a1dd0614a11f06a1dd150da1dd53e933198c2c"
+      },
+      {
+        "address": "0x8019b542",
+        "file_offset": 527682,
+        "length": 19,
+        "payload": "55dd21a1dd78dd4088a1dd5a26a1dd29ddb2"
+      },
+      {
+        "address": "0x8019b568",
+        "file_offset": 527720,
+        "length": 19,
+        "payload": "dd3c2b88a17add9fd2a1dd79ddb7a1de090c"
+      },
+      {
+        "address": "0x8019b5b4",
+        "file_offset": 527796,
+        "length": 18,
+        "payload": "1a20a1dd62ddd10da1dd32290ea1dd0e34"
+      },
+      {
+        "address": "0x8019bd45",
+        "file_offset": 529733,
+        "length": 16,
+        "payload": "e701a130de6f0da1dd53e933198c2c"
+      },
+      {
+        "address": "0x8019b90b",
+        "file_offset": 528651,
+        "length": 15,
+        "payload": "de638ea1940fa1dd090a0da11c31"
+      },
+      {
+        "address": "0x8019be78",
+        "file_offset": 530040,
+        "length": 14,
+        "payload": "9d94dd37a1378b0ea1e956ddd1"
+      },
+      {
+        "address": "0x8019c7b7",
+        "file_offset": 532407,
+        "length": 13,
+        "payload": "09de5d01a11c04a1dd32de67"
+      },
+      {
+        "address": "0x8019ab76",
+        "file_offset": 525174,
+        "length": 13,
+        "payload": "dd66038f0fa1dd5d2e56ddb5"
+      },
+      {
+        "address": "0x8019aacc",
+        "file_offset": 525004,
+        "length": 12,
+        "payload": "09de5d01a11c04a1de4c6c"
+      },
+      {
+        "address": "0x8019aea8",
+        "file_offset": 525992,
+        "length": 12,
+        "payload": "dd080399ea36a1dd660325"
+      },
+      {
+        "address": "0x8019c8fa",
+        "file_offset": 532730,
+        "length": 12,
+        "payload": "deafd58cdd70a13724dd27"
+      },
+      {
+        "address": "0x8019c292",
+        "file_offset": 531090,
+        "length": 12,
+        "payload": "deafd58cdd70a1dd392456"
+      },
+      {
+        "address": "0x8019abc9",
+        "file_offset": 525257,
+        "length": 11,
+        "payload": "04de390fa130dd40dd9d"
+      },
+      {
+        "address": "0x8019ac8f",
+        "file_offset": 525455,
+        "length": 11,
+        "payload": "dd86de78a129dd57dd06"
+      },
+      {
+        "address": "0x8019c2f5",
+        "file_offset": 531189,
+        "length": 11,
+        "payload": "dd9ddd66030fa1ddaf56"
+      },
+      {
+        "address": "0x8019c126",
+        "file_offset": 530726,
+        "length": 11,
+        "payload": "de018fdd06300fa1de43"
+      },
+      {
+        "address": "0x8019c7eb",
+        "file_offset": 532459,
+        "length": 11,
+        "payload": "e707e706a1378ba18068"
+      },
+      {
+        "address": "0x8019c7f6",
+        "file_offset": 532470,
+        "length": 11,
+        "payload": "ea5bdd83ea26dd62dd4c"
+      },
+      {
+        "address": "0x8019c846",
+        "file_offset": 532550,
+        "length": 11,
+        "payload": "ea6417a1ddfcdd12deb3"
+      },
+      {
+        "address": "0x8019c040",
+        "file_offset": 530496,
+        "length": 10,
+        "payload": "dd62ea37a1502edda1"
+      },
+      {
+        "address": "0x8019c0d6",
+        "file_offset": 530646,
+        "length": 10,
+        "payload": "dd9630dd5ba1dd4235"
+      },
+      {
+        "address": "0x8019c144",
+        "file_offset": 530756,
+        "length": 10,
+        "payload": "deafd58cdd70a15f37"
+      },
+      {
+        "address": "0x8019c1a8",
+        "file_offset": 530856,
+        "length": 10,
+        "payload": "e703a17209de0c0701"
+      },
+      {
+        "address": "0x8019c1da",
+        "file_offset": 530906,
+        "length": 10,
+        "payload": "ea2bdd83a1ddfe0330"
+      },
+      {
+        "address": "0x8019baac",
+        "file_offset": 529068,
+        "length": 9,
+        "payload": "03dd8645a1ea5856"
+      },
+      {
+        "address": "0x8019bad9",
+        "file_offset": 529113,
+        "length": 9,
+        "payload": "07dd388f30a1dd97"
+      },
+      {
+        "address": "0x8019bb72",
+        "file_offset": 529266,
+        "length": 9,
+        "payload": "07dde9a1dd10ddf2"
+      },
+      {
+        "address": "0x8019bb96",
+        "file_offset": 529302,
+        "length": 9,
+        "payload": "30de42a1ea1eea35"
+      },
+      {
+        "address": "0x8019bbe7",
+        "file_offset": 529383,
+        "length": 9,
+        "payload": "46700730a1dd305a"
+      },
+      {
+        "address": "0x8019bbf9",
+        "file_offset": 529401,
+        "length": 9,
+        "payload": "46df24a1dd07dd65"
+      },
+      {
+        "address": "0x8019c131",
+        "file_offset": 530737,
+        "length": 9,
+        "payload": "83de14a1ea97de54"
+      },
+      {
+        "address": "0x8019c25c",
+        "file_offset": 531036,
+        "length": 9,
+        "payload": "dd0c031ea1dd305a"
+      },
+      {
+        "address": "0x8019c277",
+        "file_offset": 531063,
+        "length": 9,
+        "payload": "dd2cddbe46a1ea8b"
+      },
+      {
+        "address": "0x8019c2e3",
+        "file_offset": 531171,
+        "length": 9,
+        "payload": "dd407060a1de347b"
+      },
+      {
+        "address": "0x8019c1f8",
+        "file_offset": 530936,
+        "length": 9,
+        "payload": "ddd2dd820fa15528"
+      },
+      {
+        "address": "0x8019c234",
+        "file_offset": 530996,
+        "length": 9,
+        "payload": "df5add088fa1decf"
+      },
+      {
+        "address": "0x8019c62e",
+        "file_offset": 532014,
+        "length": 9,
+        "payload": "ea56dd96a130ea83"
+      },
+      {
+        "address": "0x8019bc9d",
+        "file_offset": 529565,
+        "length": 8,
+        "payload": "09de5d01a11c04"
+      },
+      {
+        "address": "0x8019bce5",
+        "file_offset": 529637,
+        "length": 8,
+        "payload": "2edd24ea34ea51"
+      },
+      {
+        "address": "0x8019bcfd",
+        "file_offset": 529661,
+        "length": 8,
+        "payload": "dd10dd0a0fa182"
+      },
+      {
+        "address": "0x8019bd25",
+        "file_offset": 529701,
+        "length": 8,
+        "payload": "dd40a109dd0630"
+      },
+      {
+        "address": "0x8019bd35",
+        "file_offset": 529717,
+        "length": 8,
+        "payload": "ddcddd7803ea69"
+      },
+      {
+        "address": "0x8019bde5",
+        "file_offset": 529893,
+        "length": 8,
+        "payload": "df570fa103de20"
+      },
+      {
+        "address": "0x8019be25",
+        "file_offset": 529957,
+        "length": 8,
+        "payload": "ea2aa1dd10dd0a"
+      },
+      {
+        "address": "0x8019adc7",
+        "file_offset": 525767,
+        "length": 7,
+        "payload": "de2eea39dd7b"
+      },
+      {
+        "address": "0x8019ae1b",
+        "file_offset": 525851,
+        "length": 7,
+        "payload": "ea2aa194ddb4"
+      },
+      {
+        "address": "0x8019ae9c",
+        "file_offset": 525980,
+        "length": 6,
+        "payload": "8130a1dd50"
+      },
+      {
+        "address": "0x8019afdc",
+        "file_offset": 526300,
+        "length": 5,
+        "payload": "dd32de12"
+      },
+      {
+        "address": "0x8019af44",
+        "file_offset": 526148,
+        "length": 5,
+        "payload": "dd3fdd31"
+      },
+      {
+        "address": "0x8019c29e",
+        "file_offset": 531102,
+        "length": 5,
+        "payload": "ea2add48"
+      },
+      {
+        "address": "0x8019ab83",
+        "file_offset": 525187,
+        "length": 4,
+        "payload": "04dd91"
+      },
+      {
+        "address": "0x8019b03f",
+        "file_offset": 526399,
+        "length": 4,
+        "payload": "07dde9"
+      },
+      {
+        "address": "0x8019b04f",
+        "file_offset": 526415,
+        "length": 4,
+        "payload": "46df24"
+      },
+      {
+        "address": "0x8019b073",
+        "file_offset": 526451,
+        "length": 4,
+        "payload": "8cdd11"
+      },
+      {
+        "address": "0x8019b07f",
+        "file_offset": 526463,
+        "length": 4,
+        "payload": "a18b69"
+      },
+      {
+        "address": "0x8019c801",
+        "file_offset": 532481,
+        "length": 4,
+        "payload": "dddf28"
+      },
+      {
+        "address": "0x8019cff0",
+        "file_offset": 534512,
+        "length": 4,
+        "payload": "ea480f"
+      },
+      {
+        "address": "0x8019ae4c",
+        "file_offset": 525900,
+        "length": 4,
+        "payload": "ea9d14"
+      },
+      {
+        "address": "0x8019331b",
+        "file_offset": 494363,
+        "length": 3,
+        "payload": "de60"
+      },
+      {
+        "address": "0x8019ae50",
+        "file_offset": 525904,
+        "length": 3,
+        "payload": "ded7"
+      },
+      {
+        "address": "0x8019bd9b",
+        "file_offset": 529819,
+        "length": 2,
+        "payload": "56"
+      },
+      {
+        "address": "0x8019cff4",
+        "file_offset": 534516,
+        "length": 2,
+        "payload": "69"
+      },
+      {
+        "address": "0x8019d071",
+        "file_offset": 534641,
+        "length": 2,
+        "payload": "a1"
+      }
+    ],
+    "remaining_owned_bytes": 80,
+    "excluded": [
+      {
+        "pointer": "0x82980",
+        "address": "0x8019b053",
+        "external": [
+          [
+            2149167187,
+            [
+              529016,
+              534912,
+              535032,
+              535156
+            ]
+          ]
+        ],
+        "direct": []
+      },
+      {
+        "pointer": "0x829f8",
+        "address": "0x8019b053",
+        "external": [
+          [
+            2149167187,
+            [
+              529016,
+              534912,
+              535032,
+              535156
+            ]
+          ]
+        ],
+        "direct": []
+      }
+    ]
+  },
+  "glyphs": [
+    {
+      "char": "돈",
+      "physical": 765,
+      "code": "df24",
+      "previous_uses": 0,
+      "nontext_safe": true,
+      "lookup_references": 0,
+      "old_rows": [
+        0,
+        16380,
+        12288,
+        12288,
+        12288,
+        16380,
+        0,
+        32766,
+        0,
+        16380,
+        12,
+        16380,
+        12288,
+        16380,
+        0,
+        0
+      ],
+      "new_rows": [
+        0,
+        16380,
+        12288,
+        12288,
+        12288,
+        16380,
+        384,
+        32766,
+        0,
+        12288,
+        12288,
+        12288,
+        12288,
+        16380,
+        0,
+        0
+      ]
+    },
+    {
+      "char": "딜",
+      "physical": 816,
+      "code": "df57",
+      "previous_uses": 0,
+      "nontext_safe": true,
+      "lookup_references": 0,
+      "old_rows": [
+        7936,
+        10880,
+        24384,
+        27328,
+        23360,
+        28224,
+        13760,
+        15936,
+        23360,
+        28352,
+        11648,
+        7936,
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_rows": [
+        0,
+        32652,
+        24588,
+        24588,
+        24588,
+        24588,
+        24588,
+        32652,
+        0,
+        16380,
+        12,
+        16380,
+        12288,
+        16380,
+        0,
+        0
+      ]
+    }
+  ],
+  "event_repairs": [
+    {
+      "file": "22/S205C.DAT",
+      "offset": 294946,
+      "before": "61a11d",
+      "after": "910621"
+    },
+    {
+      "file": "22/S205C.DAT",
+      "offset": 294960,
+      "before": "58a11d",
+      "after": "a00621"
+    },
+    {
+      "file": "8/S8021.DAT",
+      "offset": 293436,
+      "before": "f6051d",
+      "after": "f60521"
+    },
+    {
+      "file": "8/S8041.DAT",
+      "offset": 293154,
+      "before": "fdff27",
+      "after": "fdff14"
+    },
+    {
+      "file": "B/SB022.DAT",
+      "offset": 295068,
+      "before": "f7ff1d",
+      "after": "f7ff21"
+    },
+    {
+      "file": "B/SB071.DAT",
+      "offset": 296888,
+      "before": "90a1a1",
+      "after": "a40429"
+    },
+    {
+      "file": "B/SB072.DAT",
+      "offset": 294350,
+      "before": "14a1a1",
+      "after": "c0ff04"
+    },
+    {
+      "file": "B/SB072.DAT",
+      "offset": 296000,
+      "before": "fdff20",
+      "after": "fdff2a"
+    },
+    {
+      "file": "B/SB072.DAT",
+      "offset": 296612,
+      "before": "fdff20",
+      "after": "fdff2a"
+    },
+    {
+      "file": "D/SD011.DAT",
+      "offset": 294712,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "D/SD011.DAT",
+      "offset": 294740,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "D/SD011.DAT",
+      "offset": 294768,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "D/SD011.DAT",
+      "offset": 294796,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294324,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294360,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294396,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294432,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294630,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294666,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294702,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 294738,
+      "before": "feffa1",
+      "after": "feff10"
+    },
+    {
+      "file": "F/SF041.DAT",
+      "offset": 293230,
+      "before": "fdff27",
+      "after": "fdff14"
+    },
+    {
+      "file": "F/SF041.DAT",
+      "offset": 296224,
+      "before": "a1a01d",
+      "after": "490921"
+    },
+    {
+      "file": "F/SF041.DAT",
+      "offset": 296690,
+      "before": "5ea0a1",
+      "after": "4c0907"
+    }
+  ],
+  "runtime_verified": false,
+  "cpu": {
+    "panels": {
+      "cases": 346,
+      "description_rows": 154,
+      "empty_placeholders_not_rendered": [
+        [
+          "skill_description",
+          0
+        ]
+      ],
+      "item_anchors": [
+        10,
+        60,
+        110
+      ],
+      "abi_calls": 634,
+      "packets_fit": true,
+      "other_help_group_preserved": true,
+      "resident_code_preserved": true,
+      "gpu_runtime_verified": false,
+      "mp_cases": [
+        {
+          "coverage": "MP prefix setup/label only; BIOS formatting and orb not executed",
+          "state": {
+            "header_address": "0x801F9D44",
+            "base_address": "0x801BE9BC",
+            "limit": 128,
+            "count": 2,
+            "x": 81,
+            "y": 127,
+            "style": 0,
+            "D": 12,
+            "E": 12,
+            "F": 0,
+            "line_extra": 2,
+            "source_pointer": "0x00000000"
+          },
+          "packets": [
+            {
+              "ordinal": 0,
+              "packet_address": "0x801BE9BC",
+              "x": 66,
+              "y": 127,
+              "u": 244,
+              "v": 176,
+              "w": 6,
+              "h": 12,
+              "clut": "0x7FC0",
+              "plane": 0,
+              "physical_index": null,
+              "char": "<None>"
+            },
+            {
+              "ordinal": 1,
+              "packet_address": "0x801BE9F0",
+              "x": 72,
+              "y": 127,
+              "u": 244,
+              "v": 224,
+              "w": 6,
+              "h": 12,
+              "clut": "0x7FC1",
+              "plane": 1,
+              "physical_index": null,
+              "char": "<None>"
+            }
+          ]
+        }
+      ],
+      "cases_detail": [
+        {
+          "table": "equipment_description",
+          "index": 0,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 150,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 0,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 200,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 0,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 250,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 1,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 150,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 1,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 200,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 1,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 250,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 2,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 96,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 2,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 2,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 196,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 3,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 178,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 3,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 228,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 3,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 278,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 4,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 130,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 4,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 4,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 230,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 5,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 130,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 5,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 5,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 230,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 6,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 6,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 6,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 7,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 14,
+          "max_right": 124,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 7,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 14,
+          "max_right": 174,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 7,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 14,
+          "max_right": 224,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 8,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 116,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 8,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 8,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 216,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 9,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 144,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 9,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 9,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 244,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 10,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 10,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 10,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 11,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 164,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 11,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 11,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 264,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 12,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 15,
+          "max_right": 192,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 12,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 15,
+          "max_right": 242,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 12,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 15,
+          "max_right": 292,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 13,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 164,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 13,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 13,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 264,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 14,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 144,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 14,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 14,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 244,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 15,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 198,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 15,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 248,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 15,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 298,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 16,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 164,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 16,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 16,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 264,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 17,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 130,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 17,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 17,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 230,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 18,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 130,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 18,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 18,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 230,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 19,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 130,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 19,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 19,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 230,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 20,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 102,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 20,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 152,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 20,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 202,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 21,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 96,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 21,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 21,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 196,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 22,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 102,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 22,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 152,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 22,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 202,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 23,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 172,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 23,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 222,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 23,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 272,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 24,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 20,
+          "max_right": 178,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 24,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 20,
+          "max_right": 228,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 24,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 20,
+          "max_right": 278,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 25,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 144,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 25,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 25,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 244,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 26,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 150,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 26,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 200,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 26,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 250,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 27,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 27,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 27,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 28,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 20,
+          "max_right": 172,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 28,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 20,
+          "max_right": 222,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 28,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 20,
+          "max_right": 272,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 29,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 144,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 29,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 29,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 244,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 30,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 138,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 30,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 188,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 30,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 238,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 31,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 31,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 31,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 32,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 32,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 32,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 33,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 150,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 33,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 200,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 33,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 250,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 34,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 130,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 34,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 34,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 230,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 35,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 130,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 35,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 35,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 230,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 36,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 24,
+          "max_right": 186,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 36,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 24,
+          "max_right": 236,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 36,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 24,
+          "max_right": 286,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 37,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 4,
+          "max_right": 68,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 37,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 4,
+          "max_right": 118,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 37,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 4,
+          "max_right": 168,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 38,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 144,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 38,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 38,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 244,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 39,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 144,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 39,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 39,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 244,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 40,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 96,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 40,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 40,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 196,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 41,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 178,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 41,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 228,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 41,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 278,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 42,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 164,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 42,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 42,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 264,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 43,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 19,
+          "max_right": 172,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 43,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 19,
+          "max_right": 222,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 43,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 19,
+          "max_right": 272,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 44,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 44,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 44,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 45,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 96,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 45,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 45,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 196,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 46,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 144,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 46,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 46,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 244,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 47,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 14,
+          "max_right": 110,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 47,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 14,
+          "max_right": 160,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 47,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 14,
+          "max_right": 210,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 48,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 21,
+          "max_right": 186,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 48,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 21,
+          "max_right": 236,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 48,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 21,
+          "max_right": 286,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 49,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 178,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 49,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 228,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 49,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 278,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 50,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 144,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 50,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 50,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 244,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 51,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 51,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 51,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 52,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 52,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 52,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 53,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 53,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 53,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 54,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 54,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 54,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 55,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 178,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 55,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 228,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 55,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 278,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 56,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 15,
+          "max_right": 116,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 56,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 15,
+          "max_right": 166,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 56,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 15,
+          "max_right": 216,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 57,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 150,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 57,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 200,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 57,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 11,
+          "max_right": 250,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 58,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 164,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 58,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 58,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 264,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 59,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 59,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 59,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 60,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 152,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 60,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 202,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 60,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 252,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 61,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 164,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 61,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 61,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 264,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 62,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 16,
+          "max_right": 158,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 62,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 16,
+          "max_right": 208,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 62,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 16,
+          "max_right": 258,
+          "max_bottom": 150
+        },
+        {
+          "table": "equipment_description",
+          "index": 63,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 90,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 63,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 140,
+          "max_bottom": 132
+        },
+        {
+          "table": "equipment_description",
+          "index": 63,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 190,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 0,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 116,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 0,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 0,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 216,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 1,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 96,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 1,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 1,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 196,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 2,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 102,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 2,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 152,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 2,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 202,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 3,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 116,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 3,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 3,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 216,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 4,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 164,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 4,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 4,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 12,
+          "max_right": 264,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 5,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 96,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 5,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 5,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 196,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 6,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 96,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 6,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 6,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 196,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 7,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 116,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 7,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 7,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 216,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 8,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 116,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 8,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 8,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 216,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 9,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 9,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 9,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 10,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 116,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 10,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 10,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 8,
+          "max_right": 216,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 11,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 11,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 11,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 12,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 102,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 12,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 152,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 12,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 7,
+          "max_right": 202,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 13,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 178,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 13,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 228,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 13,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 13,
+          "max_right": 278,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 14,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 4,
+          "max_right": 68,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 14,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 4,
+          "max_right": 118,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 14,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 4,
+          "max_right": 168,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 15,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 130,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 15,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 15,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 230,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 16,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 130,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 16,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 16,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 230,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 17,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 17,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 17,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 18,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 17,
+          "max_right": 138,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 18,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 17,
+          "max_right": 188,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 18,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 17,
+          "max_right": 238,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 19,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 96,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 19,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 19,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 6,
+          "max_right": 196,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 20,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 20,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 20,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 21,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 136,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 21,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 186,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 21,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 236,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 22,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 22,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 22,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 23,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 136,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 23,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 186,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 23,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 10,
+          "max_right": 236,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 24,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 15,
+          "max_right": 116,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 24,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 15,
+          "max_right": 166,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 24,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 15,
+          "max_right": 216,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 25,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 130,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 25,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 25,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 9,
+          "max_right": 230,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 26,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 82,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 26,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 26,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 182,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 27,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 142,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 27,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 192,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 27,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 18,
+          "max_right": 242,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 28,
+          "anchor": 10,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 17,
+          "max_right": 138,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 28,
+          "anchor": 60,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 17,
+          "max_right": 188,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 28,
+          "anchor": 110,
+          "rows_y": [
+            116,
+            134
+          ],
+          "packets": 17,
+          "max_right": 238,
+          "max_bottom": 150
+        },
+        {
+          "table": "consumable_description",
+          "index": 29,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 90,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 29,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 140,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 29,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 190,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 30,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 90,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 30,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 140,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 30,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 190,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 31,
+          "anchor": 10,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 90,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 31,
+          "anchor": 60,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 140,
+          "max_bottom": 132
+        },
+        {
+          "table": "consumable_description",
+          "index": 31,
+          "anchor": 110,
+          "rows_y": [
+            116
+          ],
+          "packets": 5,
+          "max_right": 190,
+          "max_bottom": 132
+        },
+        {
+          "table": "skill_description",
+          "index": 1,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 11,
+          "max_right": 208,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 2,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 3,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 11,
+          "max_right": 208,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 4,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 7,
+          "max_right": 152,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 5,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 6,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 7,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 4,
+          "max_right": 118,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 8,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 9,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 10,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 11,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 12,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 15,
+          "max_right": 248,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 13,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 14,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 15,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 11,
+          "max_right": 192,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 16,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 17,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 18,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 19,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 20,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 13,
+          "max_right": 228,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 21,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 22,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 7,
+          "max_right": 152,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 23,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 24,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 25,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 11,
+          "max_right": 208,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 26,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 27,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 11,
+          "max_right": 208,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 28,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 11,
+          "max_right": 208,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 29,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 8,
+          "max_right": 166,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 30,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 31,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 11,
+          "max_right": 208,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 32,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 12,
+          "max_right": 214,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 33,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 34,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 7,
+          "max_right": 152,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 35,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 12,
+          "max_right": 222,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 36,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 37,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 15,
+          "max_right": 248,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 38,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 39,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 40,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 41,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 42,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 43,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 44,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 45,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 46,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 47,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 15,
+          "max_right": 240,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 48,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 49,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 50,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 6,
+          "max_right": 146,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 51,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 52,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 5,
+          "max_right": 132,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 53,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 10,
+          "max_right": 194,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 54,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 55,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 56,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 9,
+          "max_right": 180,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 57,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 11,
+          "max_right": 208,
+          "max_bottom": 125
+        },
+        {
+          "table": "skill_description",
+          "index": 58,
+          "anchor": 60,
+          "rows_y": [
+            109
+          ],
+          "packets": 13,
+          "max_right": 228,
+          "max_bottom": 125
+        }
+      ]
+    },
+    "cursor": {
+      "cases": 1152,
+      "modes": 9,
+      "repeat_frames_per_mode": 128,
+      "preserved_abi": true,
+      "writes_confined_to_packet_ot_stack": true,
+      "write_events": 14592,
+      "packet_max_bytes": 32,
+      "gpu_runtime_verified": false
+    }
+  }
+}

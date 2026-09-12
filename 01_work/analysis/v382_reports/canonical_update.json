@@ -1,0 +1,23 @@
+{
+  "before_sha256": "81FB640865A0CCCC4131449DB6AD3E6F43660F15E699DBD0756E658F4F7D4590",
+  "after_sha256": "C61FDA019B02ABAE78AB3CA6359AAC9E4592271E76CD50B3EDD9CD1A997ABA35",
+  "changes": [
+    {
+      "row": 2395,
+      "before": "앞으로 나아가면 이제 돌아올 수 없게 될지도 모른다.",
+      "after": "앞으로 나아가면 이제 돌아올 수 없게 될지도 몰라."
+    },
+    {
+      "row": 2807,
+      "before": "토벌병: 아크와 그 일당은 그 뒤 수사에도 불구하고 행방을 알 수 없습니다.",
+      "after": "토벌병: 아크와 그 일당은 계속 수색하고 있으나 행방을 알 수 없습니다."
+    },
+    {
+      "row": 2809,
+      "before": "안델: 알겠다. 수사를 중단하도록 지시를 내려라.",
+      "after": "안델: 알겠다. 수색을 중단하도록 지시를 내려라."
+    }
+  ],
+  "other_cells_unchanged": true,
+  "backup": "E:\\korean\\99_backup\\v382_script_translated_full.csv"
+}

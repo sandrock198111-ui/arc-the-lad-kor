@@ -1,0 +1,1568 @@
+{
+  "scope": "Every differing byte in original EXE file78000..82FFF, original/current catalog footprint masks; masks are triage, not proof of text semantics.",
+  "original_exe_sha256": "947EBF893F2D46207EC7E32CA514E4EA670E0BED34EF2144B5F7FB0FDD15BC67",
+  "current_exe_sha256": "57AC9833007E92B0A4E6730A11B44DE1958C6E7BBBA3BBA2C4C69B3F980D3782",
+  "changed_byte_count": 9054,
+  "structural_changed_bytes": 7,
+  "defects": [
+    {
+      "id": "nontext:79210",
+      "start": 496144,
+      "end": 496148,
+      "status": "CONFIRMED_DEFECT",
+      "finding": "Action-handler table pointer 801A80E0 -> 801AE7E0; only byte79211 changed. Original destination is an 8-byte handler record whose first word is function8012F2F8. Current destination is outside the loaded EXE payload.",
+      "evidence": "Outer table8018FB6C actor85 ->801A7D88 ->801A80F8; initializer8012176C..217A4 reads descriptor+4 ->80193974 into actor+C0; command0x27 ->80193A10/file79210. 80121934..21960 dereferences selected handler record into actor+D4;8012198C executes it. Original handler8012F2F8 is replaced with whatever word is in BSS801AE7E0. Actor85 is Odon according to the sibling actor/skill census; actual game trigger pending.",
+      "original_hex": "e0 80 1a 80",
+      "current_hex": "e0 e7 1a 80",
+      "changed_offsets": [
+        "0x79211"
+      ]
+    },
+    {
+      "id": "nontext:7C1C0",
+      "start": 508352,
+      "end": 508354,
+      "status": "CONFIRMED_DEFECT",
+      "finding": "Sprite descriptor texture/page field changed 01E0 ->9CE1. It is not a text glyph.",
+      "evidence": "8014C840 passes descriptor801969B8 to80132204; 8013225C reads descriptor+8; low6bits changes0x20->0x21; 80132268 shifts2 and stores object+2C. 80132328 also reads this field for texture setup. Exact on-screen effect remains untested.",
+      "original_hex": "e0 01",
+      "current_hex": "e1 9c",
+      "changed_offsets": [
+        "0x7c1c0",
+        "0x7c1c1"
+      ]
+    },
+    {
+      "id": "nontext:7E0D0",
+      "start": 516304,
+      "end": 516306,
+      "status": "CONFIRMED_DEFECT",
+      "finding": "Sound/voice ID480 becomes signed -25375 and is rejected by the range guard, suppressing that sound entry.",
+      "evidence": "8015572C maps char index3, action state0x42 to table80198888+2*(3*10+6)=801988D0. 8015579C loads signed halfword; 801557C0 calls801298D0; 80129880 sltiu ID<0x232 rejects0xFFFF9CE1. No out-of-bounds sound lookup occurs because guard returns0.",
+      "original_hex": "e0 01",
+      "current_hex": "e1 9c",
+      "changed_offsets": [
+        "0x7e0d0",
+        "0x7e0d1"
+      ]
+    },
+    {
+      "id": "nontext:7E7FC",
+      "start": 518140,
+      "end": 518142,
+      "status": "CONFIRMED_DEFECT",
+      "finding": "Color-animation first RGB key changes (224,48,48) to(225,210,48), corrupting the red transition color.",
+      "evidence": "8015BEBC uses pointer bank801990B0, index7 ->pointer801990CC/file7E8CC ->80198FFC/file7E7FC; 80152C40 stores keyframe pointer object+58; 80152D24 uses stride8; +4 duration60,+6 flags3; 80152E18 interpolates RGB; 80152E34/38/3C and80152F14/18/1C consume RGB. Actual story trigger of bank index7 not traced.",
+      "original_hex": "e0 30",
+      "current_hex": "e1 d2",
+      "changed_offsets": [
+        "0x7e7fc",
+        "0x7e7fd"
+      ]
+    }
+  ],
+  "code_evidence": [
+    {
+      "start": "0x8012176c",
+      "end_exclusive": "0x801217a8",
+      "byte_exact": true,
+      "original_sha256": "DAF3BAC8677776D7639FB8D59F46A5E6A0B411475DED2A494BEB182010E5A192",
+      "current_sha256": "DAF3BAC8677776D7639FB8D59F46A5E6A0B411475DED2A494BEB182010E5A192",
+      "original_disassembly": [
+        "8012176C lui $at, 0x8019",
+        "80121770 addiu $at, $at, -0x494",
+        "80121774 addu $at, $at, $s0",
+        "80121778 lw $v1, ($at)",
+        "8012177C nop ",
+        "80121780 lw $v0, ($v1)",
+        "80121784 nop ",
+        "80121788 sw $v0, 0xbc($s2)",
+        "8012178C lw $v0, ($v1)",
+        "80121790 lw $s1, 0xd8($s2)",
+        "80121794 lw $v0, 4($v0)",
+        "80121798 addiu $a1, $a1, 1",
+        "8012179C lui $at, 0x801b",
+        "801217A0 sh $a1, -0x7918($at)",
+        "801217A4 sw $v0, 0xc0($s2)"
+      ]
+    },
+    {
+      "start": "0x80121934",
+      "end_exclusive": "0x801219a4",
+      "byte_exact": true,
+      "original_sha256": "1960FA605A590355B0EB72F6DC61B24BCE9672FC079B140919458075116E12D8",
+      "current_sha256": "1960FA605A590355B0EB72F6DC61B24BCE9672FC079B140919458075116E12D8",
+      "original_disassembly": [
+        "80121934 lh $v0, 0xa8($a0)",
+        "80121938 lw $v1, 0xc0($a0)",
+        "8012193C sll $v0, $v0, 2",
+        "80121940 addu $v0, $v0, $v1",
+        "80121944 lw $v0, ($v0)",
+        "80121948 nop ",
+        "8012194C beqz $v0, 0x80121964",
+        "80121950 nop ",
+        "80121954 sw $v0, 0xd0($a0)",
+        "80121958 lw $v0, ($v0)",
+        "8012195C nop ",
+        "80121960 sw $v0, 0xd4($a0)",
+        "80121964 jr $ra",
+        "80121968 nop ",
+        "8012196C addiu $sp, $sp, -0x18",
+        "80121970 sw $ra, 0x14($sp)",
+        "80121974 sw $s0, 0x10($sp)",
+        "80121978 move $s0, $a0",
+        "8012197C jal 0x80121934",
+        "80121980 sh $a1, 0xa8($s0)",
+        "80121984 lw $v0, 0xd4($s0)",
+        "80121988 nop ",
+        "8012198C jalr $v0",
+        "80121990 move $a0, $s0",
+        "80121994 lw $ra, 0x14($sp)",
+        "80121998 lw $s0, 0x10($sp)",
+        "8012199C jr $ra",
+        "801219A0 addiu $sp, $sp, 0x18"
+      ]
+    },
+    {
+      "start": "0x8014c838",
+      "end_exclusive": "0x8014c894",
+      "byte_exact": true,
+      "original_sha256": "EA218FCA05EA582483485C266930F420C9B47A11CCCD0450CA52DDBC7835D32A",
+      "current_sha256": "EA218FCA05EA582483485C266930F420C9B47A11CCCD0450CA52DDBC7835D32A",
+      "original_disassembly": [
+        "8014C838 move $s1, $a0",
+        "8014C83C lui $a0, 0x8019",
+        "8014C840 addiu $a0, $a0, 0x69b8",
+        "8014C844 jal 0x80132204",
+        "8014C848 sw $s0, 0x10($sp)",
+        "8014C84C move $s0, $v0",
+        "8014C850 beqz $s0, 0x8014c894",
+        "8014C854 move $a0, $s0",
+        "8014C858 jal 0x80144ce8",
+        "8014C85C move $a1, $s1",
+        "8014C860 lui $v0, 0x8015",
+        "8014C864 addiu $v0, $v0, -0x3814",
+        "8014C868 sw $v0, 8($s0)",
+        "8014C86C sw $s1, 0x68($s0)",
+        "8014C870 ori $v0, $zero, 0x20",
+        "8014C874 sh $v0, 0x50($s0)",
+        "8014C878 lhu $v0, 0xa0($s1)",
+        "8014C87C nop ",
+        "8014C880 sh $v0, 0xa0($s0)",
+        "8014C884 lhu $v0, 0x74($s1)",
+        "8014C888 nop ",
+        "8014C88C addiu $v0, $v0, 1",
+        "8014C890 sh $v0, 0x74($s1)"
+      ]
+    },
+    {
+      "start": "0x80132204",
+      "end_exclusive": "0x8013236c",
+      "byte_exact": true,
+      "original_sha256": "CBC29FECFD9C93424963D84B9DE0674C1452E430F7B4C5DD7D0CFF0C3CC630E9",
+      "current_sha256": "CBC29FECFD9C93424963D84B9DE0674C1452E430F7B4C5DD7D0CFF0C3CC630E9",
+      "original_disassembly": [
+        "80132204 addiu $sp, $sp, -0x28",
+        "80132208 sw $ra, 0x24($sp)",
+        "8013220C sw $s4, 0x20($sp)",
+        "80132210 sw $s3, 0x1c($sp)",
+        "80132214 sw $s2, 0x18($sp)",
+        "80132218 sw $s1, 0x14($sp)",
+        "8013221C sw $s0, 0x10($sp)",
+        "80132220 jal 0x80130b04",
+        "80132224 move $s2, $a0",
+        "80132228 move $s1, $v0",
+        "8013222C beqz $s1, 0x8013236c",
+        "80132230 move $v0, $s1",
+        "80132234 jal 0x801317a0",
+        "80132238 nop ",
+        "8013223C move $s0, $v0",
+        "80132240 sll $v0, $s0, 0x10",
+        "80132244 sra $s4, $v0, 0x10",
+        "80132248 bltz $s4, 0x8013236c",
+        "8013224C move $v0, $zero",
+        "80132250 jal 0x801312a8",
+        "80132254 move $a0, $s1",
+        "80132258 sh $s0, 0x42($s1)",
+        "8013225C lhu $v0, 8($s2)",
+        "80132260 nop ",
+        "80132264 andi $v0, $v0, 0x3f",
+        "80132268 sll $v0, $v0, 2",
+        "8013226C sh $v0, 0x2c($s1)",
+        "80132270 lbu $v0, 0xa($s2)",
+        "80132274 nop ",
+        "80132278 sh $v0, 0x2e($s1)",
+        "8013227C lhu $v0, 0xc($s2)",
+        "80132280 nop ",
+        "80132284 sh $v0, 0x30($s1)",
+        "80132288 lhu $v0, 0xe($s2)",
+        "8013228C nop ",
+        "80132290 sh $v0, 0x32($s1)",
+        "80132294 lh $v0, 4($s2)",
+        "80132298 nop ",
+        "8013229C sll $v0, $v0, 0x10",
+        "801322A0 sw $v0, 0x14($s1)",
+        "801322A4 lh $v1, 6($s2)",
+        "801322A8 sw $zero, 0x1c($s1)",
+        "801322AC ori $v0, $zero, 1",
+        "801322B0 sh $v0, 0xc($s1)",
+        "801322B4 sll $v1, $v1, 0x10",
+        "801322B8 sw $v1, 0x18($s1)",
+        "801322BC lw $v0, ($s2)",
+        "801322C0 sh $zero, 0x50($s1)",
+        "801322C4 sh $zero, 0x4e($s1)",
+        "801322C8 sw $v0, 8($s1)",
+        "801322CC lhu $v0, 0x12($s2)",
+        "801322D0 nop ",
+        "801322D4 sh $v0, 0x40($s1)",
+        "801322D8 lhu $v0, 0x10($s2)",
+        "801322DC move $a0, $s1",
+        "801322E0 move $s3, $zero",
+        "801322E4 sh $zero, 0x12($s1)",
+        "801322E8 sh $zero, 0x4c($s1)",
+        "801322EC jal 0x80132c3c",
+        "801322F0 sh $v0, 0x10($s1)",
+        "801322F4 sll $v0, $s4, 2",
+        "801322F8 addu $v0, $v0, $s4",
+        "801322FC sll $v0, $v0, 3",
+        "80132300 lui $v1, 0x801c",
+        "80132304 addiu $v1, $v1, 0x52a4",
+        "80132308 addu $s0, $v0, $v1",
+        "8013230C move $a0, $s0",
+        "80132310 jal 0x80179038",
+        "80132314 ori $a1, $zero, 1",
+        "80132318 move $a0, $s0",
+        "8013231C jal 0x80179060",
+        "80132320 move $a1, $zero",
+        "80132324 lh $a0, 0x10($s2)",
+        "80132328 lh $a2, 8($s2)",
+        "8013232C lh $a3, 0xa($s2)",
+        "80132330 move $a1, $zero",
+        "80132334 jal 0x80178dd0",
+        "80132338 addiu $s3, $s3, 1",
+        "8013233C sh $v0, 0x16($s0)",
+        "80132340 ori $v0, $zero, 0x80",
+        "80132344 sb $v0, 4($s0)",
+        "80132348 sb $v0, 5($s0)",
+        "8013234C sb $v0, 6($s0)",
+        "80132350 lui $v0, 1",
+        "80132354 ori $v0, $v0, 0x28e0",
+        "80132358 addu $s0, $s0, $v0",
+        "8013235C slti $v0, $s3, 2",
+        "80132360 bnez $v0, 0x80132310",
+        "80132364 move $a0, $s0",
+        "80132368 move $v0, $s1"
+      ]
+    },
+    {
+      "start": "0x8015572c",
+      "end_exclusive": "0x801557d4",
+      "byte_exact": true,
+      "original_sha256": "F69A628D8200AA1E49E819BFE2CACAE30AB7BC991E71A9FCFBF6174D9EE16E05",
+      "current_sha256": "F69A628D8200AA1E49E819BFE2CACAE30AB7BC991E71A9FCFBF6174D9EE16E05",
+      "original_disassembly": [
+        "8015572C addiu $sp, $sp, -0x18",
+        "80155730 sw $ra, 0x10($sp)",
+        "80155734 lhu $v1, 0x4a($a0)",
+        "80155738 nop ",
+        "8015573C addiu $v0, $v1, -0x3c",
+        "80155740 sltiu $v0, $v0, 0xa",
+        "80155744 beqz $v0, 0x801557c8",
+        "80155748 nop ",
+        "8015574C lbu $a0, 0x9c($a0)",
+        "80155750 nop ",
+        "80155754 slti $v0, $a0, 0x96",
+        "80155758 bnez $v0, 0x80155764",
+        "8015575C ori $a1, $zero, 6",
+        "80155760 addiu $a0, $a0, -0x96",
+        "80155764 slti $v0, $a0, 8",
+        "80155768 beqz $v0, 0x80155774",
+        "8015576C sll $v1, $v1, 0x10",
+        "80155770 move $a1, $a0",
+        "80155774 sll $v0, $a1, 2",
+        "80155778 addu $v0, $v0, $a1",
+        "8015577C sra $v1, $v1, 0x10",
+        "80155780 addiu $v1, $v1, -0x3c",
+        "80155784 sll $v0, $v0, 1",
+        "80155788 addu $v0, $v0, $v1",
+        "8015578C sll $v0, $v0, 1",
+        "80155790 lui $at, 0x801a",
+        "80155794 addiu $at, $at, -0x7778",
+        "80155798 addu $at, $at, $v0",
+        "8015579C lh $a0, ($at)",
+        "801557A0 addiu $v0, $zero, -1",
+        "801557A4 beq $a0, $v0, 0x801557c8",
+        "801557A8 nop ",
+        "801557AC lui $v0, 0x8020",
+        "801557B0 lw $v0, -0x20cc($v0)",
+        "801557B4 nop ",
+        "801557B8 bnez $v0, 0x801557c8",
+        "801557BC nop ",
+        "801557C0 jal 0x801298d0",
+        "801557C4 nop ",
+        "801557C8 lw $ra, 0x10($sp)",
+        "801557CC nop ",
+        "801557D0 jr $ra"
+      ]
+    },
+    {
+      "start": "0x80129880",
+      "end_exclusive": "0x80129904",
+      "byte_exact": true,
+      "original_sha256": "49438BB2A20481BB39AFBAB9612B5AC5A81E568D7A9C5B4EA24704187AFDE5B0",
+      "current_sha256": "49438BB2A20481BB39AFBAB9612B5AC5A81E568D7A9C5B4EA24704187AFDE5B0",
+      "original_disassembly": [
+        "80129880 addiu $sp, $sp, -0x30",
+        "80129884 sltiu $v0, $a0, 0x232",
+        "80129888 beqz $v0, 0x801298bc",
+        "8012988C sw $ra, 0x28($sp)",
+        "80129890 sll $v0, $a0, 3",
+        "80129894 lui $at, 0x8019",
+        "80129898 addiu $at, $at, -0x40",
+        "8012989C addu $at, $at, $v0",
+        "801298A0 lw $a0, ($at)",
+        "801298A4 lui $a1, 0x801b",
+        "801298A8 addiu $a1, $a1, 0x17b4",
+        "801298AC jal 0x8017f0e4",
+        "801298B0 nop ",
+        "801298B4 j 0x801298c0",
+        "801298B8 ori $v0, $zero, 1",
+        "801298BC move $v0, $zero",
+        "801298C0 lw $ra, 0x28($sp)",
+        "801298C4 nop ",
+        "801298C8 jr $ra",
+        "801298CC addiu $sp, $sp, 0x30",
+        "801298D0 addiu $sp, $sp, -0x18",
+        "801298D4 sw $ra, 0x14($sp)",
+        "801298D8 sw $s0, 0x10($sp)",
+        "801298DC jal 0x80129880",
+        "801298E0 move $s0, $a0",
+        "801298E4 beqz $v0, 0x8012999c",
+        "801298E8 ori $a0, $zero, 0x1b",
+        "801298EC lui $a1, 0x801b",
+        "801298F0 addiu $a1, $a1, 0x17b4",
+        "801298F4 jal 0x8017eec8",
+        "801298F8 move $a2, $zero",
+        "801298FC beqz $v0, 0x8012999c",
+        "80129900 ori $v0, $zero, 0xc9"
+      ]
+    },
+    {
+      "start": "0x8015be98",
+      "end_exclusive": "0x8015bee8",
+      "byte_exact": true,
+      "original_sha256": "68E11424C4D557FD8016DF37758E9B5D689E7612CA17492430516B3527BA8BFB",
+      "current_sha256": "68E11424C4D557FD8016DF37758E9B5D689E7612CA17492430516B3527BA8BFB",
+      "original_disassembly": [
+        "8015BE98 addiu $sp, $sp, -0x18",
+        "8015BE9C sw $ra, 0x14($sp)",
+        "8015BEA0 jal 0x8015d7d0",
+        "8015BEA4 sw $s0, 0x10($sp)",
+        "8015BEA8 sll $s0, $v0, 0x10",
+        "8015BEAC jal 0x8015315c",
+        "8015BEB0 sra $s0, $s0, 0x10",
+        "8015BEB4 sll $s0, $s0, 2",
+        "8015BEB8 lui $at, 0x801a",
+        "8015BEBC addiu $at, $at, -0x6f50",
+        "8015BEC0 addu $at, $at, $s0",
+        "8015BEC4 lw $a0, ($at)",
+        "8015BEC8 jal 0x80152c40",
+        "8015BECC nop ",
+        "8015BED0 lui $at, 0x801b",
+        "8015BED4 sw $v0, 0x1b5c($at)",
+        "8015BED8 lw $ra, 0x14($sp)",
+        "8015BEDC lw $s0, 0x10($sp)",
+        "8015BEE0 jr $ra",
+        "8015BEE4 addiu $sp, $sp, 0x18"
+      ]
+    },
+    {
+      "start": "0x80152c40",
+      "end_exclusive": "0x80152f44",
+      "byte_exact": true,
+      "original_sha256": "3B6504342147115C34A07FA1FF590E523B7A1638AEEA9217B4B44A897142CF71",
+      "current_sha256": "3B6504342147115C34A07FA1FF590E523B7A1638AEEA9217B4B44A897142CF71",
+      "original_disassembly": [
+        "80152C40 addiu $sp, $sp, -0x20",
+        "80152C44 sw $ra, 0x18($sp)",
+        "80152C48 sw $s1, 0x14($sp)",
+        "80152C4C sw $s0, 0x10($sp)",
+        "80152C50 jal 0x80130b3c",
+        "80152C54 move $s1, $a0",
+        "80152C58 move $s0, $v0",
+        "80152C5C beqz $s0, 0x80152cc4",
+        "80152C60 move $v0, $zero",
+        "80152C64 jal 0x80131758",
+        "80152C68 nop ",
+        "80152C6C move $v1, $v0",
+        "80152C70 sll $v0, $v0, 0x10",
+        "80152C74 bgez $v0, 0x80152c84",
+        "80152C78 ori $v0, $zero, 4",
+        "80152C7C j 0x80152cc4",
+        "80152C80 move $v0, $zero",
+        "80152C84 sh $v1, 0x42($s0)",
+        "80152C88 sh $v0, 0xc($s0)",
+        "80152C8C jal 0x801312d4",
+        "80152C90 move $a0, $s0",
+        "80152C94 lui $v0, 0x8015",
+        "80152C98 addiu $v0, $v0, 0x2cd8",
+        "80152C9C sw $v0, 8($s0)",
+        "80152CA0 sw $zero, 0x14($s0)",
+        "80152CA4 sw $zero, 0x18($s0)",
+        "80152CA8 sw $s1, 0x58($s0)",
+        "80152CAC sh $zero, 0x6c($s0)",
+        "80152CB0 sh $zero, 0x6e($s0)",
+        "80152CB4 ori $v0, $zero, 1",
+        "80152CB8 sh $v0, 0x50($s0)",
+        "80152CBC sh $zero, 0x10($s0)",
+        "80152CC0 move $v0, $s0",
+        "80152CC4 lw $ra, 0x18($sp)",
+        "80152CC8 lw $s1, 0x14($sp)",
+        "80152CCC lw $s0, 0x10($sp)",
+        "80152CD0 jr $ra",
+        "80152CD4 addiu $sp, $sp, 0x20",
+        "80152CD8 addiu $sp, $sp, -0x38",
+        "80152CDC sw $ra, 0x34($sp)",
+        "80152CE0 sw $s4, 0x30($sp)",
+        "80152CE4 sw $s3, 0x2c($sp)",
+        "80152CE8 sw $s2, 0x28($sp)",
+        "80152CEC sw $s1, 0x24($sp)",
+        "80152CF0 sw $s0, 0x20($sp)",
+        "80152CF4 move $s1, $a0",
+        "80152CF8 lhu $v0, 0x10($s1)",
+        "80152CFC move $s4, $zero",
+        "80152D00 andi $v0, $v0, 2",
+        "80152D04 beqz $v0, 0x80152d1c",
+        "80152D08 move $s2, $s1",
+        "80152D0C jal 0x80132a64",
+        "80152D10 nop ",
+        "80152D14 j 0x8015313c",
+        "80152D18 nop ",
+        "80152D1C lh $v0, 0x6c($s1)",
+        "80152D20 lw $a0, 0x58($s1)",
+        "80152D24 sll $v0, $v0, 3",
+        "80152D28 addu $s3, $a0, $v0",
+        "80152D2C lh $v1, 4($s3)",
+        "80152D30 addiu $v0, $zero, -3",
+        "80152D34 beq $v1, $v0, 0x80152e20",
+        "80152D38 nop ",
+        "80152D3C lhu $v0, 0x6e($s1)",
+        "80152D40 nop ",
+        "80152D44 addiu $v0, $v0, 1",
+        "80152D48 sh $v0, 0x6e($s1)",
+        "80152D4C lh $v1, 4($s3)",
+        "80152D50 sll $v0, $v0, 0x10",
+        "80152D54 sra $v0, $v0, 0x10",
+        "80152D58 slt $v1, $v1, $v0",
+        "80152D5C beqz $v1, 0x80152d74",
+        "80152D60 nop ",
+        "80152D64 lhu $v0, 0x6c($s1)",
+        "80152D68 sh $zero, 0x6e($s1)",
+        "80152D6C addiu $v0, $v0, 1",
+        "80152D70 sh $v0, 0x6c($s1)",
+        "80152D74 lh $v0, 0x6c($s1)",
+        "80152D78 nop ",
+        "80152D7C sll $v0, $v0, 3",
+        "80152D80 addu $s3, $a0, $v0",
+        "80152D84 lh $v1, 4($s3)",
+        "80152D88 addiu $v0, $zero, -1",
+        "80152D8C bne $v1, $v0, 0x80152dc0",
+        "80152D90 addiu $v0, $zero, -2",
+        "80152D94 lhu $v0, 0x10($s1)",
+        "80152D98 nop ",
+        "80152D9C ori $v0, $v0, 2",
+        "80152DA0 sh $v0, 0x10($s1)",
+        "80152DA4 lwl $v0, 3($s3)",
+        "80152DA8 lwr $v0, ($s3)",
+        "80152DAC nop ",
+        "80152DB0 swl $v0, 0x75($s1)",
+        "80152DB4 swr $v0, 0x72($s1)",
+        "80152DB8 j 0x80152e20",
+        "80152DBC nop ",
+        "80152DC0 bne $v1, $v0, 0x80152dd0",
+        "80152DC4 nop ",
+        "80152DC8 sh $zero, 0x6c($s1)",
+        "80152DCC lw $s3, 0x58($s1)",
+        "80152DD0 nop ",
+        "80152DD4 lh $a3, 4($s3)",
+        "80152DD8 addiu $v0, $zero, -4",
+        "80152DDC bne $a3, $v0, 0x80152e0c",
+        "80152DE0 addiu $a0, $s3, 8",
+        "80152DE4 lwl $v0, 0xb($s3)",
+        "80152DE8 lwr $v0, 8($s3)",
+        "80152DEC nop ",
+        "80152DF0 swl $v0, 0x75($s1)",
+        "80152DF4 swr $v0, 0x72($s1)",
+        "80152DF8 lhu $v0, 0x6c($s1)",
+        "80152DFC sh $zero, 0x6e($s1)",
+        "80152E00 addiu $v0, $v0, 1",
+        "80152E04 j 0x80152e20",
+        "80152E08 sh $v0, 0x6c($s1)",
+        "80152E0C lh $v0, 0x6e($s1)",
+        "80152E10 move $a1, $s3",
+        "80152E14 addiu $a2, $s1, 0x72",
+        "80152E18 jal 0x8015366c",
+        "80152E1C sw $v0, 0x10($sp)",
+        "80152E20 lh $s0, 6($s3)",
+        "80152E24 nop ",
+        "80152E28 andi $v0, $s0, 1",
+        "80152E2C beqz $v0, 0x80152ef0",
+        "80152E30 andi $v0, $s0, 2",
+        "80152E34 lbu $a0, 0x72($s2)",
+        "80152E38 lbu $a1, 0x73($s2)",
+        "80152E3C lbu $a2, 0x74($s2)",
+        "80152E40 jal 0x80133278",
+        "80152E44 nop ",
+        "80152E48 lbu $v0, 0x72($s2)",
+        "80152E4C lbu $a0, 0x73($s2)",
+        "80152E50 lbu $v1, 0x74($s2)",
+        "80152E54 or $v0, $v0, $a0",
+        "80152E58 or $v1, $v1, $v0",
+        "80152E5C sltiu $v1, $v1, 2",
+        "80152E60 bnez $v1, 0x80152e78",
+        "80152E64 ori $v0, $zero, 1",
+        "80152E68 lui $at, 0x801b",
+        "80152E6C sh $v0, -0x1e5e($at)",
+        "80152E70 j 0x80152e80",
+        "80152E74 nop ",
+        "80152E78 lui $at, 0x801b",
+        "80152E7C sh $zero, -0x1e5e($at)",
+        "80152E80 lh $v0, 0x10($s1)",
+        "80152E84 nop ",
+        "80152E88 bnez $v0, 0x80152ed0",
+        "80152E8C nop ",
+        "80152E90 lbu $v0, ($s3)",
+        "80152E94 lbu $a0, 1($s3)",
+        "80152E98 lbu $v1, 2($s3)",
+        "80152E9C or $v0, $v0, $a0",
+        "80152EA0 or $v1, $v1, $v0",
+        "80152EA4 bnez $v1, 0x80152eb4",
+        "80152EA8 ori $s4, $s4, 1",
+        "80152EAC lui $at, 0x801b",
+        "80152EB0 sh $zero, -0x1e5e($at)",
+        "80152EB4 lbu $a0, 0x72($s2)",
+        "80152EB8 lbu $a1, 0x73($s2)",
+        "80152EBC lbu $a2, 0x74($s2)",
+        "80152EC0 jal 0x80153c10",
+        "80152EC4 nop ",
+        "80152EC8 j 0x80152ef0",
+        "80152ECC andi $v0, $s0, 2",
+        "80152ED0 lbu $a0, 0x72($s2)",
+        "80152ED4 lbu $a1, 0x73($s2)",
+        "80152ED8 lbu $a2, 0x74($s2)",
+        "80152EDC lui $a3, 0x801b",
+        "80152EE0 lh $a3, 0x1964($a3)",
+        "80152EE4 jal 0x80153a44",
+        "80152EE8 nop ",
+        "80152EEC andi $v0, $s0, 2",
+        "80152EF0 beqz $v0, 0x80152f44",
+        "80152EF4 andi $v0, $s0, 8",
+        "80152EF8 lh $v0, 0x10($s1)",
+        "80152EFC nop ",
+        "80152F00 beqz $v0, 0x80152f14",
+        "80152F04 move $v1, $v0",
+        "80152F08 andi $v0, $v1, 2",
+        "80152F0C beqz $v0, 0x80152f2c",
+        "80152F10 nop ",
+        "80152F14 lbu $a0, 0x72($s2)",
+        "80152F18 lbu $a1, 0x73($s2)",
+        "80152F1C lbu $a2, 0x74($s2)",
+        "80152F20 ori $s4, $s4, 1",
+        "80152F24 jal 0x801537a8",
+        "80152F28 ori $a3, $zero, 1",
+        "80152F2C lbu $a0, 0x72($s2)",
+        "80152F30 lbu $a1, 0x73($s2)",
+        "80152F34 lbu $a2, 0x74($s2)",
+        "80152F38 jal 0x801537a8",
+        "80152F3C move $a3, $zero",
+        "80152F40 andi $v0, $s0, 8"
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "group": "equipment",
+      "index": 0,
+      "offset": "0x87568",
+      "original_hex": "00 04 00 00 00 00",
+      "current_hex": "00 04 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 1,
+      "offset": "0x8756e",
+      "original_hex": "00 04 00 00 00 00",
+      "current_hex": "00 04 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 2,
+      "offset": "0x87574",
+      "original_hex": "00 03 23 00 c8 00",
+      "current_hex": "00 03 23 00 c8 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 3,
+      "offset": "0x8757a",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 4,
+      "offset": "0x87580",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 5,
+      "offset": "0x87586",
+      "original_hex": "00 01 11 00 0a 00",
+      "current_hex": "00 01 11 00 0a 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 6,
+      "offset": "0x8758c",
+      "original_hex": "00 03 28 00 c8 00",
+      "current_hex": "00 03 28 00 c8 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 7,
+      "offset": "0x87592",
+      "original_hex": "08 01 12 00 1e 00",
+      "current_hex": "08 01 12 00 1e 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 8,
+      "offset": "0x87598",
+      "original_hex": "00 03 1c 00 01 00",
+      "current_hex": "00 03 1c 00 01 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 9,
+      "offset": "0x8759e",
+      "original_hex": "00 01 10 00 32 00",
+      "current_hex": "00 01 10 00 32 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 10,
+      "offset": "0x875a4",
+      "original_hex": "00 03 29 00 c8 00",
+      "current_hex": "00 03 29 00 c8 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 11,
+      "offset": "0x875aa",
+      "original_hex": "00 01 14 00 14 00",
+      "current_hex": "00 01 14 00 14 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 12,
+      "offset": "0x875b0",
+      "original_hex": "00 04 00 00 00 00",
+      "current_hex": "00 04 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 13,
+      "offset": "0x875b6",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 14,
+      "offset": "0x875bc",
+      "original_hex": "00 03 14 00 c8 00",
+      "current_hex": "00 03 14 00 c8 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 15,
+      "offset": "0x875c2",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 16,
+      "offset": "0x875c8",
+      "original_hex": "05 01 11 00 1e 00",
+      "current_hex": "05 01 11 00 1e 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 17,
+      "offset": "0x875ce",
+      "original_hex": "00 01 14 00 0a 00",
+      "current_hex": "00 01 14 00 0a 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 18,
+      "offset": "0x875d4",
+      "original_hex": "00 01 13 00 0a 00",
+      "current_hex": "00 01 13 00 0a 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 19,
+      "offset": "0x875da",
+      "original_hex": "00 01 13 00 1e 00",
+      "current_hex": "00 01 13 00 1e 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 20,
+      "offset": "0x875e0",
+      "original_hex": "00 03 1b 00 01 00",
+      "current_hex": "00 03 1b 00 01 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 21,
+      "offset": "0x875e6",
+      "original_hex": "00 03 1e 00 01 00",
+      "current_hex": "00 03 1e 00 01 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 22,
+      "offset": "0x875ec",
+      "original_hex": "00 03 1d 00 01 00",
+      "current_hex": "00 03 1d 00 01 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 23,
+      "offset": "0x875f2",
+      "original_hex": "00 04 00 00 00 00",
+      "current_hex": "00 04 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 24,
+      "offset": "0x875f8",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 25,
+      "offset": "0x875fe",
+      "original_hex": "00 01 10 00 1e 00",
+      "current_hex": "00 01 10 00 1e 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 26,
+      "offset": "0x87604",
+      "original_hex": "06 00 00 00 00 00",
+      "current_hex": "06 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 27,
+      "offset": "0x8760a",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 28,
+      "offset": "0x87610",
+      "original_hex": "02 00 00 00 00 00",
+      "current_hex": "02 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 29,
+      "offset": "0x87616",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 30,
+      "offset": "0x8761c",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 31,
+      "offset": "0x87622",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 32,
+      "offset": "0x87628",
+      "original_hex": "00 03 24 00 c8 00",
+      "current_hex": "00 03 24 00 c8 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 33,
+      "offset": "0x8762e",
+      "original_hex": "01 00 00 00 00 00",
+      "current_hex": "01 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 34,
+      "offset": "0x87634",
+      "original_hex": "00 01 11 00 32 00",
+      "current_hex": "00 01 11 00 32 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 35,
+      "offset": "0x8763a",
+      "original_hex": "00 01 11 00 1e 00",
+      "current_hex": "00 01 11 00 1e 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 36,
+      "offset": "0x87640",
+      "original_hex": "04 00 00 00 00 00",
+      "current_hex": "04 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 37,
+      "offset": "0x87646",
+      "original_hex": "00 03 26 00 c8 00",
+      "current_hex": "00 03 26 00 c8 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 38,
+      "offset": "0x8764c",
+      "original_hex": "00 01 12 00 32 00",
+      "current_hex": "00 01 12 00 32 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 39,
+      "offset": "0x87652",
+      "original_hex": "00 01 12 00 1e 00",
+      "current_hex": "00 01 12 00 1e 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 40,
+      "offset": "0x87658",
+      "original_hex": "00 01 16 00 0a 00",
+      "current_hex": "00 01 16 00 0a 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 41,
+      "offset": "0x8765e",
+      "original_hex": "05 01 10 00 46 00",
+      "current_hex": "05 01 10 00 46 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 42,
+      "offset": "0x87664",
+      "original_hex": "06 00 00 00 00 00",
+      "current_hex": "06 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 43,
+      "offset": "0x8766a",
+      "original_hex": "08 00 00 00 00 00",
+      "current_hex": "08 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 44,
+      "offset": "0x87670",
+      "original_hex": "00 03 2a 00 c8 00",
+      "current_hex": "00 03 2a 00 c8 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 45,
+      "offset": "0x87676",
+      "original_hex": "00 01 15 00 0a 00",
+      "current_hex": "00 01 15 00 0a 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 46,
+      "offset": "0x8767c",
+      "original_hex": "00 01 10 00 0a 00",
+      "current_hex": "00 01 10 00 0a 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 47,
+      "offset": "0x87682",
+      "original_hex": "00 01 1a 00 c8 00",
+      "current_hex": "00 01 1a 00 c8 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 48,
+      "offset": "0x87688",
+      "original_hex": "02 00 00 00 00 00",
+      "current_hex": "02 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 49,
+      "offset": "0x8768e",
+      "original_hex": "00 01 1a 00 64 00",
+      "current_hex": "00 01 1a 00 64 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 50,
+      "offset": "0x87694",
+      "original_hex": "00 01 12 00 0a 00",
+      "current_hex": "00 01 12 00 0a 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 51,
+      "offset": "0x8769a",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 52,
+      "offset": "0x876a0",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 53,
+      "offset": "0x876a6",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 54,
+      "offset": "0x876ac",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 55,
+      "offset": "0x876b2",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 56,
+      "offset": "0x876b8",
+      "original_hex": "03 01 14 00 32 00",
+      "current_hex": "03 01 14 00 32 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 57,
+      "offset": "0x876be",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 58,
+      "offset": "0x876c4",
+      "original_hex": "04 01 11 00 1e 00",
+      "current_hex": "04 01 11 00 1e 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 59,
+      "offset": "0x876ca",
+      "original_hex": "00 03 25 00 c8 00",
+      "current_hex": "00 03 25 00 c8 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 60,
+      "offset": "0x876d0",
+      "original_hex": "03 00 00 00 00 00",
+      "current_hex": "03 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 61,
+      "offset": "0x876d6",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 62,
+      "offset": "0x876dc",
+      "original_hex": "01 00 00 00 00 00",
+      "current_hex": "01 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "equipment",
+      "index": 63,
+      "offset": "0x876e2",
+      "original_hex": "00 00 00 00 00 00",
+      "current_hex": "00 00 00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 0,
+      "offset": "0x874e8",
+      "original_hex": "02 0e 03 75",
+      "current_hex": "02 0e 03 75",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 1,
+      "offset": "0x874ec",
+      "original_hex": "03 01 00 23",
+      "current_hex": "03 01 00 23",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 2,
+      "offset": "0x874f0",
+      "original_hex": "05 00 00 00",
+      "current_hex": "05 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 3,
+      "offset": "0x874f4",
+      "original_hex": "06 3c 00 26",
+      "current_hex": "06 3c 00 26",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 4,
+      "offset": "0x874f8",
+      "original_hex": "02 03 02 1e",
+      "current_hex": "02 03 02 1e",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 5,
+      "offset": "0x874fc",
+      "original_hex": "04 08 00 1e",
+      "current_hex": "04 08 00 1e",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 6,
+      "offset": "0x87500",
+      "original_hex": "01 12 01 72",
+      "current_hex": "01 12 01 72",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 7,
+      "offset": "0x87504",
+      "original_hex": "06 14 00 26",
+      "current_hex": "06 14 00 26",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 8,
+      "offset": "0x87508",
+      "original_hex": "02 04 02 1e",
+      "current_hex": "02 04 02 1e",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 9,
+      "offset": "0x8750c",
+      "original_hex": "03 03 00 23",
+      "current_hex": "03 03 00 23",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 10,
+      "offset": "0x87510",
+      "original_hex": "02 0d 02 74",
+      "current_hex": "02 0d 02 74",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 11,
+      "offset": "0x87514",
+      "original_hex": "04 10 00 1e",
+      "current_hex": "04 10 00 1e",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 12,
+      "offset": "0x87518",
+      "original_hex": "04 28 00 1e",
+      "current_hex": "04 28 00 1e",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 13,
+      "offset": "0x8751c",
+      "original_hex": "05 00 00 23",
+      "current_hex": "05 00 00 23",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 14,
+      "offset": "0x87520",
+      "original_hex": "03 04 00 23",
+      "current_hex": "03 04 00 23",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 15,
+      "offset": "0x87524",
+      "original_hex": "00 00 00 00",
+      "current_hex": "00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 16,
+      "offset": "0x87528",
+      "original_hex": "02 09 02 70",
+      "current_hex": "02 09 02 70",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 17,
+      "offset": "0x8752c",
+      "original_hex": "02 06 02 1e",
+      "current_hex": "02 06 02 1e",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 18,
+      "offset": "0x87530",
+      "original_hex": "05 00 00 71",
+      "current_hex": "05 00 00 71",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 19,
+      "offset": "0x87534",
+      "original_hex": "01 10 01 70",
+      "current_hex": "01 10 01 70",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 20,
+      "offset": "0x87538",
+      "original_hex": "01 13 01 74",
+      "current_hex": "01 13 01 74",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 21,
+      "offset": "0x8753c",
+      "original_hex": "01 0c 02 00",
+      "current_hex": "01 0c 02 00",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 22,
+      "offset": "0x87540",
+      "original_hex": "01 11 02 00",
+      "current_hex": "01 11 02 00",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 23,
+      "offset": "0x87544",
+      "original_hex": "01 0e 02 00",
+      "current_hex": "01 0e 02 00",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 24,
+      "offset": "0x87548",
+      "original_hex": "02 07 02 1e",
+      "current_hex": "02 07 02 1e",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 25,
+      "offset": "0x8754c",
+      "original_hex": "02 0b 02 72",
+      "current_hex": "02 0b 02 72",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 26,
+      "offset": "0x87550",
+      "original_hex": "03 02 00 23",
+      "current_hex": "03 02 00 23",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 27,
+      "offset": "0x87554",
+      "original_hex": "03 08 00 23",
+      "current_hex": "03 08 00 23",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 28,
+      "offset": "0x87558",
+      "original_hex": "00 00 00 00",
+      "current_hex": "00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 29,
+      "offset": "0x8755c",
+      "original_hex": "00 00 00 00",
+      "current_hex": "00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 30,
+      "offset": "0x87560",
+      "original_hex": "00 00 00 00",
+      "current_hex": "00 00 00 00",
+      "byte_exact": true
+    },
+    {
+      "group": "consumable",
+      "index": 31,
+      "offset": "0x87564",
+      "original_hex": "00 00 00 00",
+      "current_hex": "00 00 00 00",
+      "byte_exact": true
+    }
+  ],
+  "lineage": [
+    {
+      "build": 151,
+      "filename": "arc1_v151_free_the_sprite_cell_A4358FEE.zip",
+      "exe_sha256": "C6E55F55FAE80DB11FFF35DCB6F35612A431CEF100CE7A082DFB7A1F57E74294",
+      "values": {
+        "nontext:79210": "e0 80 1a 80",
+        "nontext:7C1C0": "e0 01",
+        "nontext:7E0D0": "e0 01",
+        "nontext:7E7FC": "e0 30"
+      }
+    },
+    {
+      "build": 159,
+      "filename": "arc1_v159_dynamic_cache_4E3F2466.zip",
+      "exe_sha256": "9A3D91E5567C2CC69D1770D16C83EB9CB8A93370A942ECD670941677110FA45F",
+      "values": {
+        "nontext:79210": "e0 80 1a 7d",
+        "nontext:7C1C0": "e0 01",
+        "nontext:7E0D0": "e0 01",
+        "nontext:7E7FC": "e1 ca"
+      }
+    },
+    {
+      "build": 161,
+      "filename": "arc1_v161_bounded_exe_text_B2EA377E.zip",
+      "exe_sha256": "B083A46FF14E34CCB78DC2A3C03B9DEEB8861CDDA5DD1EC8DBE347C354FD792D",
+      "values": {
+        "nontext:79210": "e0 80 1a 80",
+        "nontext:7C1C0": "e0 01",
+        "nontext:7E0D0": "e0 01",
+        "nontext:7E7FC": "e0 30"
+      }
+    },
+    {
+      "build": 168,
+      "filename": "arc1_v168_item_description_slot_shift_fix_3B604507.zip",
+      "exe_sha256": "4259BBC4F463E6DF89EBBE8FB06D6F08ED3FF7BBFAE397D4F5014D5CE75ADC67",
+      "values": {
+        "nontext:79210": "e0 80 1a 80",
+        "nontext:7C1C0": "e0 01",
+        "nontext:7E0D0": "e0 01",
+        "nontext:7E7FC": "e0 30"
+      }
+    },
+    {
+      "build": 177,
+      "filename": "arc1_v177_restore_circle_icon.zip",
+      "exe_sha256": "9B251925C5571A4B9380B6C439481F77099B844C2659CD0E3D029E1D0A21A0F1",
+      "values": {
+        "nontext:79210": "e0 80 1a 80",
+        "nontext:7C1C0": "e0 01",
+        "nontext:7E0D0": "e0 01",
+        "nontext:7E7FC": "e0 30"
+      }
+    },
+    {
+      "build": 178,
+      "filename": "arc1_v178_repoint_orphaned_glyphs.zip",
+      "exe_sha256": "CBAD80C7766536FDC2733D505152F0BD25C6132C586BBD4D43C0D2CDF7B1BE5D",
+      "values": {
+        "nontext:79210": "e0 80 1a 80",
+        "nontext:7C1C0": "e0 01",
+        "nontext:7E0D0": "e0 01",
+        "nontext:7E7FC": "e1 d2"
+      }
+    },
+    {
+      "build": 220,
+      "filename": "arc1_v220_separate_decode_scratch_TEST_ONLY_CDDF4B3F.zip",
+      "exe_sha256": "50E73E5AD38623D0DAFBF082735E7B69FD7B946498BF347EFF4CA50D8CCF5B83",
+      "values": {
+        "nontext:79210": "e0 80 1a 80",
+        "nontext:7C1C0": "e0 01",
+        "nontext:7E0D0": "e0 01",
+        "nontext:7E7FC": "e1 d2"
+      }
+    },
+    {
+      "build": 229,
+      "filename": "arc1_v229_CLAUDE_uv_pair_low_helper_TEST_ONLY_F16649A2.zip",
+      "exe_sha256": "4C931F2A841D11172AD7240AF98D67C847167A8C7E88C801F7EF15F76D80369F",
+      "values": {
+        "nontext:79210": "e0 80 1a 80",
+        "nontext:7C1C0": "e0 01",
+        "nontext:7E0D0": "e0 01",
+        "nontext:7E7FC": "e1 d2"
+      }
+    },
+    {
+      "build": 231,
+      "filename": "arc1_v231_static_promotion_restored162_TEST_ONLY_15DDA0E8.zip",
+      "exe_sha256": "C74F0C920317B508A4EFE5393E1306908EA4BB735736012CEB7FC2C9F537B643",
+      "values": {
+        "nontext:79210": "e0 e7 1a 80",
+        "nontext:7C1C0": "e1 9c",
+        "nontext:7E0D0": "e1 9c",
+        "nontext:7E7FC": "e1 d2"
+      }
+    },
+    {
+      "build": 240,
+      "filename": "arc1_v240_johab_font_TEST_ONLY_1A307BDE.zip",
+      "exe_sha256": "61D3E26E01354F39C25C1B6098AA8CA266F6FC9C2289853B5C663781E5959B29",
+      "values": {
+        "nontext:79210": "e0 e7 1a 80",
+        "nontext:7C1C0": "e1 9c",
+        "nontext:7E0D0": "e1 9c",
+        "nontext:7E7FC": "e1 d2"
+      }
+    },
+    {
+      "build": 269,
+      "filename": "arc1_v269_with_exe_ui_TEST_ONLY_900CDAB4.zip",
+      "exe_sha256": "65E959A0F965E72E20E2EC171259AC84AA1D5A7DBD2B7245F0CD79792255E9DD",
+      "values": {
+        "nontext:79210": "dd c2 1c 01",
+        "nontext:7C1C0": "de 04",
+        "nontext:7E0D0": "de 04",
+        "nontext:7E7FC": "de 70"
+      }
+    },
+    {
+      "build": 320,
+      "filename": "arc1_v320_hanme_static_recovery_TEST_ONLY_96626CCB.zip",
+      "exe_sha256": "FDF9C1E517BDA9FE69214727D54B2BD603EB7586AB192EDB3639A35298FF2BE7",
+      "values": {
+        "nontext:79210": "dd e1 1a d3",
+        "nontext:7C1C0": "dd 77",
+        "nontext:7E0D0": "dd 77",
+        "nontext:7E7FC": "dd cf"
+      }
+    },
+    {
+      "build": 320,
+      "filename": "arc1_v320b_hanme_exe_pointer_restore_TEST_ONLY_2366F366.zip",
+      "exe_sha256": "3D477AF6E97860485D89ADA92932FA90FA05B0834B583072E7A0946D2912D291",
+      "values": {
+        "nontext:79210": "e0 e7 1a 80",
+        "nontext:7C1C0": "e1 9c",
+        "nontext:7E0D0": "e1 9c",
+        "nontext:7E7FC": "e1 d2"
+      }
+    },
+    {
+      "build": 320,
+      "filename": "arc1_v320c_hanme_official_beol_TEST_ONLY_81D215E1.zip",
+      "exe_sha256": "3D477AF6E97860485D89ADA92932FA90FA05B0834B583072E7A0946D2912D291",
+      "values": {
+        "nontext:79210": "e0 e7 1a 80",
+        "nontext:7C1C0": "e1 9c",
+        "nontext:7E0D0": "e1 9c",
+        "nontext:7E7FC": "e1 d2"
+      }
+    },
+    {
+      "build": 321,
+      "filename": "arc1_v321_text_identity_repair_TEST_ONLY_1B04A832.zip",
+      "exe_sha256": "8E295D22D60C2427F4702618108E9836F7615A5D4BF384CB84FD2F10F9A6218E",
+      "values": {
+        "nontext:79210": "e0 e7 1a 80",
+        "nontext:7C1C0": "e1 9c",
+        "nontext:7E0D0": "e1 9c",
+        "nontext:7E7FC": "e1 d2"
+      }
+    },
+    {
+      "build": 325,
+      "filename": "arc1_v325_ui_reencode_TEST_ONLY_7828AA04.zip",
+      "exe_sha256": "5596B543172B8A682F9507072E1CD84C49C15FFCFE0E51410B2707F7BD1D3105",
+      "values": {
+        "nontext:79210": "e0 e7 1a 80",
+        "nontext:7C1C0": "e1 9c",
+        "nontext:7E0D0": "e1 9c",
+        "nontext:7E7FC": "e1 d2"
+      }
+    },
+    {
+      "build": 336,
+      "filename": "arc1_v336_ui_text_native_damage_repair_TEST_ONLY_28C9A039.zip",
+      "exe_sha256": "3A6991E99492979552007C6705E8E635E279BBABE6E3F11F719767ED295A11DC",
+      "values": {
+        "nontext:79210": "e0 e7 1a 80",
+        "nontext:7C1C0": "e1 9c",
+        "nontext:7E0D0": "e1 9c",
+        "nontext:7E7FC": "e1 d2"
+      }
+    },
+    {
+      "build": 346,
+      "filename": "arc1_v346_v321_structural_text_repair_TEST_ONLY_30A40DD7.zip",
+      "exe_sha256": "11D8B8B737FA34BED7C05F5005AF32398AB8C838E7537A7D274DF19B65E50F1A",
+      "values": {
+        "nontext:79210": "e0 e7 1a 80",
+        "nontext:7C1C0": "e1 9c",
+        "nontext:7E0D0": "e1 9c",
+        "nontext:7E7FC": "e1 d2"
+      }
+    },
+    {
+      "build": 375,
+      "filename": "arc1_v375_next_choice_TEST_ONLY.zip",
+      "exe_sha256": "57AC9833007E92B0A4E6730A11B44DE1958C6E7BBBA3BBA2C4C69B3F980D3782",
+      "values": {
+        "nontext:79210": "e0 e7 1a 80",
+        "nontext:7C1C0": "e1 9c",
+        "nontext:7E0D0": "e1 9c",
+        "nontext:7E7FC": "e1 d2"
+      }
+    }
+  ],
+  "exclusions": [
+    "80210..80221 is intentional icon UV table; see build_ui_safe_v38/v39 and build_arc1_v177_restore_circle_icon.py.",
+    "Catalog/current-text masks include rounded alignment bytes and are only triage; all other residuals are explicit in CSV.",
+    "Extra short UI, native HUD, reused text pools and injected helper code are reviewed separately by parent; their changed bytes are not assumed corrupt."
+  ]
+}

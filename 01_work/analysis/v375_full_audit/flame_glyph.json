@@ -1,0 +1,120 @@
+{
+  "id": "extra_ui:8299C",
+  "status": "CONFIRMED_DEFECT",
+  "severity": "MEDIUM",
+  "original_label": "炎",
+  "current_bytes": "E0 AC",
+  "zip_sha256": "AD9ED2B9E898F05C2EC5C78ABBA4253CE052B7B4836DEE31D84108AD4256CFBB",
+  "cases": [
+    {
+      "width": 14,
+      "height": 16,
+      "state": {
+        "header_address": "0x80010000",
+        "base_address": "0x80020000",
+        "limit": 128,
+        "count": 1,
+        "x": 34,
+        "y": 20,
+        "style": 0,
+        "D": 14,
+        "E": 16,
+        "F": 0,
+        "line_extra": 2,
+        "source_pointer": "0x00000000"
+      },
+      "packets": [
+        {
+          "ordinal": 0,
+          "packet_address": "0x80020000",
+          "x": 20,
+          "y": 20,
+          "u": 64,
+          "v": 48,
+          "w": 14,
+          "h": 16,
+          "clut": "0x7FC0",
+          "plane": 0,
+          "physical_index": 196,
+          "char": "<196>"
+        }
+      ],
+      "font_cell": 196,
+      "ink_pixels": 0
+    },
+    {
+      "width": 12,
+      "height": 12,
+      "state": {
+        "header_address": "0x80010000",
+        "base_address": "0x80020000",
+        "limit": 128,
+        "count": 1,
+        "x": 32,
+        "y": 20,
+        "style": 0,
+        "D": 12,
+        "E": 12,
+        "F": 0,
+        "line_extra": 2,
+        "source_pointer": "0x00000000"
+      },
+      "packets": [
+        {
+          "ordinal": 0,
+          "packet_address": "0x80020000",
+          "x": 20,
+          "y": 20,
+          "u": 64,
+          "v": 48,
+          "w": 12,
+          "h": 12,
+          "clut": "0x7FC0",
+          "plane": 0,
+          "physical_index": 196,
+          "char": "<196>"
+        }
+      ],
+      "font_cell": 196,
+      "ink_pixels": 0
+    },
+    {
+      "width": 6,
+      "height": 12,
+      "state": {
+        "header_address": "0x80010000",
+        "base_address": "0x80020000",
+        "limit": 128,
+        "count": 1,
+        "x": 26,
+        "y": 20,
+        "style": 0,
+        "D": 6,
+        "E": 12,
+        "F": 0,
+        "line_extra": 2,
+        "source_pointer": "0x00000000"
+      },
+      "packets": [
+        {
+          "ordinal": 0,
+          "packet_address": "0x80020000",
+          "x": 20,
+          "y": 20,
+          "u": 68,
+          "v": 48,
+          "w": 6,
+          "h": 12,
+          "clut": "0x7FC0",
+          "plane": 0,
+          "physical_index": null,
+          "char": "<None>"
+        }
+      ],
+      "font_cell": 196,
+      "ink_pixels": 0
+    }
+  ],
+  "finding": "Original flame label selects an empty font cell through the current native text renderer.",
+  "limitation": "Real CPU renderer with captured initialized globals and synthetic destination object. Current COMM pixels checked; original monster-menu scene and live GPU were not replayed."
+}

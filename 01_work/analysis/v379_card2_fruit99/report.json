@@ -1,0 +1,25 @@
+{
+  "source": "C:\\Users\\Administrator\\AppData\\Local\\DuckStation\\memcards\\shared_card_2.mcd",
+  "source_sha256": "09EFB5FC77E38026CA4206D81334B6803A29BEF941F01E8E3F25A1A8C6FFE74E",
+  "backup": "E:\\korean\\99_backup\\shared_card_2_before_fruit99_09EFB5FC77E38026.mcd",
+  "output": "E:\\korean\\03_output\\V379_CARD2_FRUIT99.mcd",
+  "output_sha256": "75CCAE529556EE81A8874D4E710D8AA8D3B04D9C500391A0C52EEDBE9E1F5A61",
+  "slot": 3,
+  "item": "넘치는 열매",
+  "item_index": 2,
+  "before": 5,
+  "after": 99,
+  "changed_offsets": [
+    "0x6112",
+    "0x6a79"
+  ],
+  "checks": [
+    "three original checksums",
+    "only quantity and checksum changed",
+    "native V379 checksum writer",
+    "native load-copy",
+    "native inventory consumer reads 99",
+    "source and slots 1/2 preserved"
+  ],
+  "limitation": "Actual DuckStation gameplay not run; load this card via in-game Load, not savestate."
+}

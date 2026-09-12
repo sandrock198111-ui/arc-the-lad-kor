@@ -1,0 +1,27 @@
+{
+  "baseline_zip_sha256": "AD9ED2B9E898F05C2EC5C78ABBA4253CE052B7B4836DEE31D84108AD4256CFBB",
+  "exe_ui_rows": 723,
+  "exe_ui_status": {
+    "PASS_SEMANTIC": 456,
+    "ACCEPTABLE_ABBREVIATION": 129,
+    "CONFIRMED_DEFECT": 102,
+    "EMPTY_PLACEHOLDER": 20,
+    "NEEDS_SOURCE_CONFIRMATION": 6,
+    "HUD_BINARY": 10
+  },
+  "dat_ui_bodies": 868,
+  "dat_ui_status": {
+    "PASS_SEMANTIC": 487,
+    "ACCEPTABLE_ABBREVIATION": 188,
+    "NEEDS_SOURCE_CONFIRMATION": 94,
+    "CONFIRMED_DEFECT": 99
+  },
+  "source_script_rows": 2878,
+  "confirmed_opcode_changes": 24,
+  "affected_dat_files": 9,
+  "also_changed_preceding_operands": 6,
+  "count_unit": "Affected rows/bodies. Repeated defects are NOT distinct root causes.",
+  "complete_game_population_proven": false,
+  "all_scene_runtime_verified": false,
+  "game_bytes_modified": false
+}

@@ -1,0 +1,7 @@
+{
+  "original_aligned_words": 145408,
+  "ui_boundary_refs": 668,
+  "cataloged": 668,
+  "extra_candidates": 0,
+  "scope": "Every aligned original EXE word targeting a known UI token boundary; inline literals and previously unknown strings require separate audit"
+}

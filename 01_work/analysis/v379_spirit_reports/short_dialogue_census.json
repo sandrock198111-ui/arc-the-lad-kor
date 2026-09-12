@@ -1,0 +1,98 @@
+{
+  "dat_files": 162,
+  "fixed": [
+    {
+      "file": "22/S2056.DAT",
+      "offset": 293872,
+      "length": 2
+    },
+    {
+      "file": "22/S205C.DAT",
+      "offset": 295416,
+      "length": 6
+    },
+    {
+      "file": "22/S205C.DAT",
+      "offset": 295656,
+      "length": 9
+    },
+    {
+      "file": "23/S2061.DAT",
+      "offset": 296412,
+      "length": 1
+    },
+    {
+      "file": "32/S3061.DAT",
+      "offset": 295954,
+      "length": 34
+    },
+    {
+      "file": "7/S7026.DAT",
+      "offset": 297516,
+      "length": 1
+    },
+    {
+      "file": "8/S8031.DAT",
+      "offset": 296478,
+      "length": 19
+    },
+    {
+      "file": "9/S9021.DAT",
+      "offset": 296610,
+      "length": 10
+    },
+    {
+      "file": "B/SB041.DAT",
+      "offset": 293490,
+      "length": 4
+    },
+    {
+      "file": "B/SB041.DAT",
+      "offset": 293878,
+      "length": 10
+    },
+    {
+      "file": "B/SB071.DAT",
+      "offset": 295168,
+      "length": 13
+    },
+    {
+      "file": "B/SB072.DAT",
+      "offset": 294612,
+      "length": 4
+    }
+  ],
+  "nontext_candidates_preserved": [
+    {
+      "file": "9/S9031.DAT",
+      "offset": 301516,
+      "length": 2
+    },
+    {
+      "file": "D/SD011.DAT",
+      "offset": 301613,
+      "length": 1
+    },
+    {
+      "file": "D/SD012.DAT",
+      "offset": 301613,
+      "length": 1
+    },
+    {
+      "file": "D/SD013.DAT",
+      "offset": 301613,
+      "length": 1
+    },
+    {
+      "file": "D/SD014.DAT",
+      "offset": 301613,
+      "length": 1
+    },
+    {
+      "file": "D/SD015.DAT",
+      "offset": 301613,
+      "length": 1
+    }
+  ],
+  "scope": "Argument0 family only; not proof that every other opcode/text family has no omission."
+}

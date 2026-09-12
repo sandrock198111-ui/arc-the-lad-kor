@@ -1,3 +1,43 @@
+2026-09-11 - V382 배포 README 기준 정정
+- 사용자 확인: V376 이후 첫 배포이므로 V377~V382 누적 패치항목으로 README 원고/동봉문서 재작성. 대사·고유명사·정렬·UI·대기 복원으로 정리. 기존 ZIP 백업후 README만 교체, xdelta/CUE/verification.json 불변. 상세 v382_reports/readme_update.json 및 최신 ZIP해시는 xdelta.json 참조.
+
+2026-09-11 - V382 / v0.9.7 V381 누적 새 상태10개 제보 수정
+- SB071 귀환 경고 모른다→몰라, 선택문/커서 한줄 상승. 환상의 검 설명 '피해량의|변동 폭 증가'. SF0517행 대기25개 복원 및 앞뒤 수사→수색. 색 글리프DF68/833 추가. 게임4멤버707B; 기존 패치 보존.
+- build/audit/verify/package/sync V382 스크립트와 보고서/배포설명 추가. 원장3한국어셀 백업후 동기화; 선택문 원장은 이미 맞아 유지. 하늘의 목소리 SB022는 원본 자동 진행 확인 후 유지. 전체실기 검수 승격 없음.
+
+2026-09-11 - V379 검수용 카드2 파일3 넘치는 열매 99개
+- 별도 03_output/V379_CARD2_FRUIT99.mcd 생성. shared_card_2.mcd 원본 및 백업 보존. 파일3 넘치는 열매5→99, 체크섬 갱신; 변경은0x6112/0x6A79 두 바이트. 파일1·2와 게임 빌드 불변. 재현 스크립트 edit_arc1_card2_fruit99.py 및 분석 report.json 추가.
+
+2026-09-11 - V381 / v0.9.6 V379 누적 왕·탈출 대기 및 버튼 안내 수정
+- V380은 제보6개를 우선 수정한 내부 중간 빌드로 보존. S205C의 주변 대기 누락10행까지 추가한 V381을 최종으로 생성. V379 대비2DAT+EXE1156B, 글꼴/기계어 불변.
+- 왕님→전하, 사과 한마디라도 하고 싶었다, 수배 방송의 범인/일당 표현 수정. 아크 에다 리코르누 및 총7명은 원문대로 유지. 원장3한국어셀 백업 후 갱신.
+- S205C13행의 누락 E4 43개 복원. 정상 #640까지 이 장면14행46개 E4 순서/값 원문 일치. 실제 점진출력 카운터로 원본/기존/수정 비교. 깨진 E707/E706 L/R 그림을 'L R 대상변경' 일반 글리프로 수정.
+- 새 build/verify V380·V381, 최종 package/sync V381, README 및 분석 JSON 추가. arc1_kor_v0.9.6_rev1.zip SHA256 91BA6AD1D1458FF6686F0789159BFCE48ED48D5EEE81B02930900C5B425D9B33. 중간 V380 패키저는 실행 차단. 외부 업로드 없음. bible_current 사용자 실화면 기준 유지.
+
+2026-09-11 - V379 / v0.9.5 V378 누적 정령·짧은 대사 수정
+- V377 BF3604F4 상태1~10은 증거로만 사용하고 고정 V378에 누적. 기존 대사18곳/보완12곳, 15DAT1346바이트 변경. EXE/COMM.IMG는 V378과 동일.
+- 귀환 표현, 병사 존댓말, 왕/불꽃의 정령 대기 구간 조판4곳, 아크 낳고 있어, 만들다/낳다 문맥과 믿어 보겠다 수정. 은혜의 정령 돌아가세요/그레이시누/에너지3곳/불꽃의 정령 명칭 수정.
+- 원장 한국어16셀을 백업 후 갱신, 다른 셀 동일. 추출 누락12곳은 script_supplement_v379.json에 추가. 9정령 명시화자135행 및 현재패치162DAT 누락조건 전체 조사 기록.
+- 새 build/verify/package/sync/audit 스크립트5개와 v379_spirit_reports 보고서 추가. arc1_kor_v0.9.5_rev1.zip SHA256 74E097CBF6CC4F06C85DFE16E4A1E9011E21B2C6DE3F02EB9D7C883799A88273. 외부 업로드 없음. bible_current 실화면 기준 승격 없음.
+
+2026-09-11 - V378 / v0.9.4 V377 누적 후속(새 상태7~10)
+- 기준은 V377 ZIP 16FE8214E4E96EA80B12445A8819A0460B881A1F52B6E9DDFCE268CA59CCA6EC. V376 상태는 증상증거로만 사용. SC091 쿠쿠루 질문 및 두 확인창 선택지, 여섯 맵 비단 허리띠 개행, SC081 국소 커서baseRow1→2 적용. 8DAT286바이트, EXE/폰트 V377과 동일.
+- 정식대사437/833/1423/1633/1868/2217/2464/2465 한국어8셀 백업 후 갱신. 신규 build_arc1_v378_followup.py/verify_arc1_v378_followup.py/package_arc1_v378_xdelta.py와 분석보고서 추가.
+- arc1_kor_v0.9.4_rev1.zip 생성, SHA256 B11F6108D3446C793A5E8B6D37585AE4EFFE4C7D161C9CE1FE90FEA3A9749C53. 외부 업로드 없음. 전체 결과01_work/analysis/v378_followup/README.md. bible_current 실화면 성공 기준은 유지.
+
+2026-09-11 - V377 / v0.9.3 상태저장 69D03814 제보 반영
+- UI4문자열: 거의 반드시→거의 확실히, 목걸이 증가량 앞 개행, 두 도움말의 깨진E701 제거. S8061 두 대사: 본인들이/후우진. 게임2멤버133바이트, 글꼴/기계어 불변. 정식 대사원고2275/2279 한국어2셀 백업 후 수정 및 재발검사 추가.
+- 새 빌더/캡처CPU검증/Rev1패키저 추가. arc1_kor_v0.9.3_rev1.zip SHA256 A4A0B128BCF4FD5B11F34D2BF434C1FD01A518B3FABD978EDE8D8C9C3A66AD71. 외부 업로드 없음. 상세01_work/analysis/v377_user_reports/README.md. bible_current 실화면 성공 기준은 유지.
+
+2026-09-10 - 사용자 승인에 따른 V376 / v0.9.2 긴급 수정 빌드 및 패치 생성
+- 새 빌더 build_arc1_v376_hotfix.py와 UI/DAT 수정 명세 추가. 원본 보존, 고정 V375 차분에서 UI102곳/DAT70본문/이벤트24행 및 EXE 비문자 구조·배우 기록 복구 적용. 30멤버2374바이트 변경. 기존 UI 중간 빌드도 별도 보존.
+- package_arc1_v376_xdelta.py로 일본판 Rev1 원본용 arc1_kor_v0.9.2_rev1.zip 생성. BIN SHA256 171ABEF06E3689250934416EBA0DCB40016FE8D3A3680173B69A92708C3DBA3D. 패치 묶음 SHA256 AC297301D28E20A6785C1A43223EE2748DA3601222A9A046FBD453D9DC49A727. 외부 업로드는 하지 않았다.
+- 전체 변경/검증/보류 내역: 01_work/analysis/v376_hotfix/README.md, build_report.json, package.json, xdelta.json. 퀴즈 말투29행과 미확정 UI6/DAT94행은 남음. 실제 DuckStation 0.1-7126 플레이 검증 전이므로 bible_current 성공 기준은 승격하지 않았다.
+
+2026-09-10 - V375 전행 UI 목록·구조 조사 산출물 추가 (게임 수정 없음)
+- 아이템/스킬/캐릭터/지명/짧은UI/포맷723행, DAT선택지·튜토리얼868본문의 원문·실제현행 판정 및 미확정 목록 저장. 원본2878행과 EXE지정영역 전량 차분 목록, 명령/배우/핸들러/글리프 CPU 증거, 재현 스크립트 추가. ASCII후보79개/직접출력호출95곳 목록도 저장.
+- 결과 및 검사범위는 01_work/analysis/v375_full_audit/README.md와 summary.json. 결함 수정·새빌드·배포·전체게임 실기 완료 기록이 아니다. 정식번역/게임파일 변경없음.
+
 2026-09-10 - v0.9.1 (V375) Rev1 xdelta 패키징
 - 사용자 이전배포명v0.9에 이어 v0.9.1로 표기. Rev1원본→V375차분/동봉CUE/안내문/검증JSON 생성. 게임변경없음. ZIP D419479B941A77ADBB5CDAEEC489F49B23575FA9C737DD9DCE0552C446A43421. 적용/재인코딩 PASS, 공개준비완료판정 아님. 상세v375_next_choice/xdelta.md.
 
@@ -2317,3 +2357,7 @@
 - 2,878행을 세 구간으로 전량 읽고 비대사 보호 199행을 제외한 2,679행의 검토 후보를 별도 분석 JSON/HTML로 작성했다. 후보 215건 중 승인 용어 반영과 정확히 일치하는 20건을 완료로 구분하고 195건은 미승인으로 유지했다. 남은 한 용어 행은 띄어쓰기 제안도 포함하므로 미승인이다.
 - 축약/띄어쓰기 복원 후보 71건은 별도 HTML로 분리했다. 기존 편집기 추정 59건 통과, 선택지 12건은 템플릿 검증 필요. 최신 빌드 안전성 판정이나 강제 축약 이력 확정으로 오해하지 않도록 한계를 명시했다.
 - 분석 제안을 정식 번역표/편집기 저장본/빌드대기에 자동 적용하지 않았다. bible_current 성공 기준은 유지한다.
+
+2026-09-11 카드2 직접 적용: 사용자 후속 요청에 따라 실제 memcards/shared_card_2.mcd에 검증된99개 카드 설치. 기존 백업 보존. 실행중 DuckStation11268 종료 후 캐시 저장에 대비한 일회성 finish_arc1_card2_fruit99.ps1 실행; 당시 카드 백업 후 파일3 수량/체크섬만 보정.
+
+2026-09-11 V382 final xdelta PASS: bundle arc1_kor_v0.9.7_rev1.zip 666650B SHA256 F95C88AE14E72B6B388BCFE6E5E29A6078D04CBB8E7E5E80198287A726D41AD5. Original Rev1 decode exactly equals V382 BIN; repeat encode byte exact. Five scripts AST and post-canonical prepare reproducibility PASS.

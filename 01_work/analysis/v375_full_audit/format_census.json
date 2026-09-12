@@ -1,0 +1,23 @@
+{
+  "format_candidates": 79,
+  "format_regions": {
+    "SDK_OR_CONSOLE_CANDIDATE": 49,
+    "UI_NUMERIC_FORMAT": 27,
+    "CODE_BYTE_FALSE_POSITIVE": 3
+  },
+  "additional_ui_numeric_formats": 12,
+  "all_candidate_bytes_preserved": true,
+  "direct_calls": 95,
+  "call_kinds": {
+    "native_xy": 33,
+    "sprintf": 20,
+    "ascii_xy": 7,
+    "numeric_ui_wrapper": 16,
+    "native_append": 5,
+    "description": 4,
+    "ascii_append": 7,
+    "bounded_pair_wrapper": 2,
+    "bounded_number_wrapper": 1
+  },
+  "limits": "ASCII regex is a candidate census, not whole-game text completeness. Console candidates and code false positives not merged into semantic UI711. Direct call-word changes can be intentional hooks, not automatically defects."
+}

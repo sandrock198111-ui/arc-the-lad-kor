@@ -1,0 +1,296 @@
+{
+  "captures": [
+    {
+      "slot": 1,
+      "before": {
+        "162": "왕님, 정신 차리십시오."
+      },
+      "after": {
+        "162": "전하, 정신 차리십시오."
+      },
+      "capture_exact": true,
+      "source_end": "0x80116C3A"
+    },
+    {
+      "slot": 2,
+      "before": {
+        "162": "스메리아 왕: 형에게... 한마디",
+        "178": " 사과하고 싶었다....         ",
+        "194": "    "
+      },
+      "after": {
+        "162": "스메리아 왕: 형에게... 사과 ",
+        "178": "한마디라도 하고 싶었다...."
+      },
+      "capture_exact": true,
+      "source_end": "0x80116F64"
+    },
+    {
+      "slot": 3,
+      "before": {
+        "162": "서두르지 못하겠<?>냐! <?>런",
+        "178": " 곳에서 죽는 건 싫다고!"
+      },
+      "after": {
+        "162": "서두르지 못하겠느냐! 이런",
+        "178": " 곳에서 죽는 건 싫다고!"
+      },
+      "capture_exact": true,
+      "source_end": "0x80117161"
+    },
+    {
+      "slot": 4,
+      "before": {
+        "162": "안 돼! 아래 계단<?> 무너져",
+        "178": " 버렸어!"
+      },
+      "after": {
+        "162": "안 돼! 아래 계단이 무너져",
+        "178": " 버렸어!"
+      },
+      "capture_exact": true,
+      "source_end": "0x801171DD"
+    },
+    {
+      "slot": 5,
+      "before": {
+        "32": "아나운서: 도적은 토우빌 마을 출",
+        "48": "신인 아크 에다 리코르누를 주모자",
+        "64": "<?> 하는 7명으<?>, "
+      },
+      "after": {
+        "32": "아나운서: 범인은 토우빌 마을 출",
+        "48": "신 아크 에다 리코르누를 우두머리",
+        "64": "로 한 일당 7명으로,"
+      },
+      "capture_exact": true,
+      "source_end": "0x80116BA9"
+    },
+    {
+      "slot": 6,
+      "before": {
+        "214": "<?><?>",
+        "213": " 대상 변경"
+      },
+      "after": {
+        "213": "L R 대상변경"
+      },
+      "capture_exact": true,
+      "source_end": "0x8019C7F5"
+    }
+  ],
+  "waits": [
+    {
+      "row": 644,
+      "before": {
+        "events": [],
+        "frames": 44,
+        "end": "0x80116f64"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 11
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 72
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 114
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 177
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 243
+          },
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 286
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 318
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 359
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 400
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 441
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 482
+          }
+        ],
+        "frames": 524,
+        "end": "0x80116f64"
+      },
+      "original": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 8
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 69
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 110
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 172
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 237
+          },
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 278
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 309
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 350
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 391
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 432
+          },
+          {
+            "parameter": 41,
+            "ticks": 40,
+            "start_frame": 473
+          }
+        ],
+        "frames": 515,
+        "end": "0x80116f64"
+      }
+    },
+    {
+      "row": 648,
+      "before": {
+        "events": [],
+        "frames": 28,
+        "end": "0x80117161"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 121,
+            "ticks": 120,
+            "start_frame": 11
+          },
+          {
+            "parameter": 241,
+            "ticks": 240,
+            "start_frame": 148
+          }
+        ],
+        "frames": 388,
+        "end": "0x80117161"
+      },
+      "original": {
+        "events": [
+          {
+            "parameter": 121,
+            "ticks": 120,
+            "start_frame": 8
+          },
+          {
+            "parameter": 241,
+            "ticks": 240,
+            "start_frame": 144
+          }
+        ],
+        "frames": 384,
+        "end": "0x80117161"
+      }
+    },
+    {
+      "row": 649,
+      "before": {
+        "events": [],
+        "frames": 20,
+        "end": "0x801171dd"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 4
+          },
+          {
+            "parameter": 241,
+            "ticks": 240,
+            "start_frame": 80
+          }
+        ],
+        "frames": 320,
+        "end": "0x801171dd"
+      },
+      "original": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 4
+          },
+          {
+            "parameter": 241,
+            "ticks": 240,
+            "start_frame": 77
+          }
+        ],
+        "frames": 317,
+        "end": "0x801171dd"
+      }
+    }
+  ],
+  "runtime_verified": false,
+  "scope": "Six captured renderer replays; genuine BB10 frame-step E4 counters on original/current/fixed dialogue. GPU/input pending."
+}

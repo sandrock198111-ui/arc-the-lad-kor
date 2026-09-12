@@ -1,0 +1,669 @@
+﻿pointer,original_target,known,original_links,current_pointer,current_text,unknown,error,status
+0x78088,0x78078,True,"[[""card_label:1"", 0]]",0x80192878,카드 1,,,CATALOGED
+0x7808C,0x78080,True,"[[""card_label:2"", 0]]",0x80192880,카드 2,,,CATALOGED
+0x780E8,0x7809C,True,"[[""ui_pointer:780E8"", 0]]",0x8019AF3E,처음부터,,,CATALOGED
+0x780EC,0x780A4,True,"[[""ui_pointer:780EC"", 0]]",0x8019C712,저장 데이터가 없습니다,,,CATALOGED
+0x780F0,0x780B0,True,"[[""ui_pointer:780F0"", 0]]",0x8019B472,메모리 카드에 남은 공간이 없습니다,,,CATALOGED
+0x780F4,0x780C0,True,"[[""ui_pointer:780F4"", 0]]",0x8019AB9D,그대로 계속하기,,,CATALOGED
+0x780F8,0x780CC,True,"[[""ui_pointer:780F8"", 0]]",0x8019C7DE,데이터가 손상되었습니다,,,CATALOGED
+0x781B8,0x78100,True,"[[""ui_pointer:781B8"", 0]]",0x8019B60E,불러올 데이터를 선택하세요,,,CATALOGED
+0x781BC,0x78110,True,"[[""ui_pointer:781BC"", 0]]",0x8019C514,메모리 카드 없이 계속하시겠습니까?,,,CATALOGED
+0x781C0,0x7812C,True,"[[""ui_pointer:781C0"", 0]]",0x8019B3D2,메모리 카드를 넣고 확인 버튼을 누르세요,,,CATALOGED
+0x781C4,0x7814C,True,"[[""ui_pointer:781C4"", 0]]",0x8019B51C,어느 카드를 사용하시겠습니까?,,,CATALOGED
+0x781C8,0x7815C,True,"[[""ui_pointer:781C8"", 0]]",0x8019C5B2,메모리 카드를 초기화하시겠습니까?,,,CATALOGED
+0x781CC,0x78174,True,"[[""ui_pointer:781CC"", 0]]",0x8019B394,메모리 카드가 가득합니다. 계속하시겠습니까?,,,CATALOGED
+0x781D0,0x78194,True,"[[""ui_pointer:781D0"", 0]]",0x8019B3B3,쓰지 않는 데이터를 지우거나 다른 카드를 넣으세요,,,CATALOGED
+0x78220,0x781D4,True,"[[""ui_pointer:78220"", 0]]",0x8019C5DD,메모리 카드를 확인하고 있습니다,,,CATALOGED
+0x78224,0x781E8,True,"[[""ui_pointer:78224"", 0]]",0x8019C59C,메모리 카드를 초기화하고 있습니다,,,CATALOGED
+0x78228,0x78200,True,"[[""ui_pointer:78228"", 0]]",0x8019B804,데이터를 저장하고 있습니다,,,CATALOGED
+0x7822C,0x78210,True,"[[""ui_pointer:7822C"", 0]]",0x8019B7F4,데이터를 불러오고 있습니다,,,CATALOGED
+0x804A4,0x80224,True,"[[""equipment_name:0"", 0]]",0x8019BAE2,불꽃의 수호,,,CATALOGED
+0x804A8,0x8022C,True,"[[""equipment_name:1"", 0]]",0x8019BE35,얼음의 수호,,,CATALOGED
+0x804AC,0x80234,True,"[[""equipment_name:2"", 0]]",0x8019BAB5,안티 헤모지,,,CATALOGED
+0x804B0,0x80240,True,"[[""equipment_name:3"", 0]]",0x8019BAF4,치유의 부적,,,CATALOGED
+0x804B4,0x8024C,True,"[[""equipment_name:4"", 0]]",0x8019AC16,비단 허리띠,,,CATALOGED
+0x804B8,0x80254,True,"[[""equipment_name:5"", 0]]",0x8019BCD5,마법 카드,,,CATALOGED
+0x804BC,0x80260,True,"[[""equipment_name:6"", 0]]",0x8019ABEA,수면 방지 카드,,,CATALOGED
+0x804C0,0x8026C,True,"[[""equipment_name:7"", 0]]",0x8019BDD5,파워 암,,,CATALOGED
+0x804C4,0x80274,True,"[[""equipment_name:8"", 0]]",0x8019AAE4,카이저 글러브,,,CATALOGED
+0x804C8,0x80280,True,"[[""equipment_name:9"", 0]]",0x8019BB57,환상의 장갑,,,CATALOGED
+0x804CC,0x80288,True,"[[""equipment_name:10"", 0]]",0x8019AE22,선글라스,,,CATALOGED
+0x804D0,0x80290,True,"[[""equipment_name:11"", 0]]",0x8019C81F,명중의 두루마리,,,CATALOGED
+0x804D4,0x8029C,True,"[[""equipment_name:12"", 0]]",0x8019C839,투척의 두루마리,,,CATALOGED
+0x804D8,0x802A8,True,"[[""equipment_name:13"", 0]]",0x8019BEEF,신의 주먹,,,CATALOGED
+0x804DC,0x802B0,True,"[[""equipment_name:14"", 0]]",0x8019C7F8,바이올렛 레이저,,,CATALOGED
+0x804E0,0x802BC,True,"[[""equipment_name:15"", 0]]",0x8019AF1A,목걸이,,,CATALOGED
+0x804E4,0x802C4,True,"[[""equipment_name:16"", 0]]",0x8019B087,염주,,,CATALOGED
+0x804E8,0x802CC,True,"[[""equipment_name:17"", 0]]",0x8019C072,장로의 머리띠,,,CATALOGED
+0x804EC,0x802D4,True,"[[""equipment_name:18"", 0]]",0x8019BFF4,질풍의 반다나,,,CATALOGED
+0x804F0,0x802E0,True,"[[""equipment_name:19"", 0]]",0x8019C26E,하이퍼 부츠,,,CATALOGED
+0x804F4,0x802EC,True,"[[""equipment_name:20"", 0]]",0x8019BDED,임시 신발,,,CATALOGED
+0x804F8,0x802F8,True,"[[""equipment_name:21"", 0]]",0x8019AE37,팔찌 1,,,CATALOGED
+0x804FC,0x80300,True,"[[""equipment_name:22"", 0]]",0x8019AE30,팔찌 2,,,CATALOGED
+0x80500,0x80308,True,"[[""equipment_name:23"", 0]]",0x8019C036,기술의 팔찌,,,CATALOGED
+0x80504,0x80314,True,"[[""equipment_name:24"", 0]]",0x8019BEB0,여신의 기도,,,CATALOGED
+0x80508,0x80320,True,"[[""equipment_name:25"", 0]]",0x8019C19E,파워 리스트,,,CATALOGED
+0x8050C,0x80328,True,"[[""equipment_name:26"", 0]]",0x8019BD35,데일의 이빨,,,CATALOGED
+0x80510,0x80334,True,"[[""equipment_name:27"", 0]]",0x8019BB4E,환수의 이빨,,,CATALOGED
+0x80514,0x8033C,True,"[[""equipment_name:28"", 0]]",0x8019B8B1,바닷바람의 선율,,,CATALOGED
+0x80518,0x80348,True,"[[""equipment_name:29"", 0]]",0x8019BD75,조개껍데기,,,CATALOGED
+0x8051C,0x80350,True,"[[""equipment_name:30"", 0]]",0x8019C334,유니콘의 뿔,,,CATALOGED
+0x80520,0x8035C,True,"[[""equipment_name:31"", 0]]",0x8019BAC7,비극의 안경,,,CATALOGED
+0x80524,0x80368,True,"[[""equipment_name:32"", 0]]",0x8019B02B,거울,,,CATALOGED
+0x80528,0x8036C,True,"[[""equipment_name:33"", 0]]",0x8019BC4D,고대의 반지,,,CATALOGED
+0x8052C,0x80378,True,"[[""equipment_name:34"", 0]]",0x8019BB60,환상의 반지,,,CATALOGED
+0x80530,0x80380,True,"[[""equipment_name:35"", 0]]",0x8019BCA5,마도의 반지,,,CATALOGED
+0x80534,0x8038C,True,"[[""equipment_name:36"", 0]]",0x8019C07C,장난감 반지,,,CATALOGED
+0x80538,0x80398,True,"[[""equipment_name:37"", 0]]",0x8019C248,독막이 반지,,,CATALOGED
+0x8053C,0x803A4,True,"[[""equipment_name:38"", 0]]",0x8019C158,환상의 방패,,,CATALOGED
+0x80540,0x803AC,True,"[[""equipment_name:39"", 0]]",0x8019ADAB,전사의 수호,,,CATALOGED
+0x80544,0x803B4,True,"[[""equipment_name:40"", 0]]",0x8019C307,장로의 방패,,,CATALOGED
+0x80548,0x803BC,True,"[[""equipment_name:41"", 0]]",0x8019AC4D,강력한 지팡이,,,CATALOGED
+0x8054C,0x803C4,True,"[[""equipment_name:42"", 0]]",0x8019AB5B,지옥의 스누프,,,CATALOGED
+0x80550,0x803D0,True,"[[""equipment_name:43"", 0]]",0x8019AF9B,왕의 상,,,CATALOGED
+0x80554,0x803D8,True,"[[""equipment_name:44"", 0]]",0x8019AF4A,매의 상,,,CATALOGED
+0x80558,0x803E0,True,"[[""equipment_name:45"", 0]]",0x8019AE96,모조상,,,CATALOGED
+0x8055C,0x803E8,True,"[[""equipment_name:46"", 0]]",0x8019AFD7,단검,,,CATALOGED
+0x80560,0x803F0,True,"[[""equipment_name:47"", 0]]",0x8019BDBD,환상의 검,,,CATALOGED
+0x80564,0x803F8,True,"[[""equipment_name:48"", 0]]",0x8019ABC9,리라의 머리장식,,,CATALOGED
+0x80568,0x80404,True,"[[""equipment_name:49"", 0]]",0x8019ABBE,요동치는 보석,,,CATALOGED
+0x8056C,0x8040C,True,"[[""equipment_name:50"", 0]]",0x8019BC25,아머 스톤,,,CATALOGED
+0x80570,0x80418,True,"[[""equipment_name:51"", 0]]",0x8019C0C2,로맨싱 스톤,,,CATALOGED
+0x80574,0x80424,True,"[[""equipment_name:52"", 0]]",0x8019C0C2,로맨싱 스톤,,,CATALOGED
+0x80578,0x80430,True,"[[""equipment_name:53"", 0]]",0x8019C0C2,로맨싱 스톤,,,CATALOGED
+0x8057C,0x8043C,True,"[[""equipment_name:54"", 0]]",0x8019C0C2,로맨싱 스톤,,,CATALOGED
+0x80580,0x80448,True,"[[""equipment_name:55"", 0]]",0x8019C1DA,태양의 거울,,,CATALOGED
+0x80584,0x80454,True,"[[""equipment_name:56"", 0]]",0x8019BE4D,압화 책,,,CATALOGED
+0x80588,0x8045C,True,"[[""equipment_name:57"", 0]]",0x8019C1F8,클라우스의 책,,,CATALOGED
+0x8058C,0x80468,True,"[[""equipment_name:58"", 0]]",0x8019AEF6,음악집,,,CATALOGED
+0x80590,0x80470,True,"[[""equipment_name:59"", 0]]",0x8019BD6D,라크의 문장,,,CATALOGED
+0x80594,0x8047C,True,"[[""equipment_name:60"", 0]]",0x8019C0AE,유카리의 문장,,,CATALOGED
+0x80598,0x80488,True,"[[""equipment_name:61"", 0]]",0x8019BB72,포니의 문장,,,CATALOGED
+0x8059C,0x80494,True,"[[""equipment_name:62"", 0]]",0x8019C0F4,용자의 증표,,,CATALOGED
+0x805A0,0x8049C,True,"[[""equipment_name:63"", 0]]",0x8019AF08,?????,,,CATALOGED
+0x80A94,0x805A4,True,"[[""equipment_description:0"", 0]]",0x801FF5EC,불 계열 공격에 강함,,,CATALOGED
+0x80A98,0x805B4,True,"[[""equipment_description:1"", 0]]",0x801FF5FF,물 계열 공격에 강함,,,CATALOGED
+0x80A9C,0x805C4,True,"[[""equipment_description:2"", 0]]",0x8019BBA8,헤모지 방지,,,CATALOGED
+0x80AA0,0x805D4,True,"[[""equipment_description:3"", 0]]",0x801FF611,자신의 체력 회복량 증가,,,CATALOGED
+0x80AA4,0x805EC,True,"[[""equipment_description:4"", 0]]",0x8019B947,획득 경험치 2배,,,CATALOGED
+0x80AA8,0x80604,True,"[[""equipment_description:5"", 0]]",0x8019AA54,마력 10% 상승,,,CATALOGED
+0x80AAC,0x80614,True,"[[""equipment_description:6"", 0]]",0x8019ADB9,수면 방지,,,CATALOGED
+0x80AB0,0x80624,True,"[[""equipment_description:7"", 0]]",0x801FF623,촌가라의 방어력|30% 상승,,,CATALOGED
+0x80AB4,0x8063C,True,"[[""equipment_description:8"", 0]]",0x8019AAA8,던지기 레벨 1,,,CATALOGED
+0x80AB8,0x80650,True,"[[""equipment_description:9"", 0]]",0x8019B8ED,공격력 50% 상승,,,CATALOGED
+0x80ABC,0x80660,True,"[[""equipment_description:10"", 0]]",0x8019BC14,암흑 방지,,,CATALOGED
+0x80AC0,0x80670,True,"[[""equipment_description:11"", 0]]",0x801FF637,공격이 매우 잘 명중함,,,CATALOGED
+0x80AC4,0x80684,True,"[[""equipment_description:12"", 0]]",0x8019C586,던지기가 강력 투척으로 변화,,,CATALOGED
+0x80AC8,0x8069C,True,"[[""equipment_description:13"", 0]]",0x8019B6F1,특정 적에게 추가 피해,,,CATALOGED
+0x80ACC,0x806B0,True,"[[""equipment_description:14"", 0]]",0x8019B834,공격이 반드시 명중,,,CATALOGED
+0x80AD0,0x806C4,True,"[[""equipment_description:15"", 0]]",0x8019B43F,레벨업 시 최대 체력 증가량 상승,,,CATALOGED
+0x80AD4,0x806E0,True,"[[""equipment_description:16"", 0]]",0x8019B7B4,고겐 마력 30% 상승,,,CATALOGED
+0x80AD8,0x806F8,True,"[[""equipment_description:17"", 0]]",0x801FF64B,공격이 잘 명중함,,,CATALOGED
+0x80ADC,0x80708,True,"[[""equipment_description:18"", 0]]",0x8019C8A1,민첩 10% 상승,,,CATALOGED
+0x80AE0,0x80718,True,"[[""equipment_description:19"", 0]]",0x8019C894,민첩 30% 상승,,,CATALOGED
+0x80AE4,0x80728,True,"[[""equipment_description:20"", 0]]",0x8019AB2C,점프 레벨 1,,,CATALOGED
+0x80AE8,0x8073C,True,"[[""equipment_description:21"", 0]]",0x8019C13A,반격률 상승,,,CATALOGED
+0x80AEC,0x80748,True,"[[""equipment_description:22"", 0]]",0x8019AC37,받기 레벨 1,,,CATALOGED
+0x80AF0,0x8075C,True,"[[""equipment_description:23"", 0]]",0x8019B844,받기가 되던지기로 변화,,,CATALOGED
+0x80AF4,0x80774,True,"[[""equipment_description:24"", 0]]",0x801FF65B,특수 능력의 MP 소비량|절반으로 감소,,,CATALOGED
+0x80AF8,0x8078C,True,"[[""equipment_description:25"", 0]]",0x8019B8CF,공격력 30% 상승,,,CATALOGED
+0x80AFC,0x8079C,True,"[[""equipment_description:26"", 0]]",0x8019B7A4,이가 반격 피해 증가,,,CATALOGED
+0x80B00,0x807B4,True,"[[""equipment_description:27"", 0]]",0x8019C20C,효과 불명,,,CATALOGED
+0x80B04,0x807C4,True,"[[""equipment_description:28"", 0]]",0x801FF67D,쿠쿠루가 행동할 때마다|주변 인물 회복,,,CATALOGED
+0x80B08,0x807E0,True,"[[""equipment_description:29"", 0]]",0x8019B972,아이템 드롭률 상승,,,CATALOGED
+0x80B0C,0x807F4,True,"[[""equipment_description:30"", 0]]",0x8019B459,적 처치 시 희귀 아이템 획득,,,CATALOGED
+0x80B10,0x80808,True,"[[""equipment_description:31"", 0]]",0x8019C20C,효과 불명,,,CATALOGED
+0x80B14,0x80818,True,"[[""equipment_description:32"", 0]]",0x8019BB84,석화 방지,,,CATALOGED
+0x80B18,0x80828,True,"[[""equipment_description:33"", 0]]",0x8019B67A,아크 전용 효과 불명,,,CATALOGED
+0x80B1C,0x8083C,True,"[[""equipment_description:34"", 0]]",0x8019AA60,마력 50% 상승,,,CATALOGED
+0x80B20,0x8084C,True,"[[""equipment_description:35"", 0]]",0x8019AA48,마력 30% 상승,,,CATALOGED
+0x80B24,0x8085C,True,"[[""equipment_description:36"", 0]]",0x801FF69A,방향전환 피리 효과가|전장 전체로 확대(포코),,,CATALOGED
+0x80B28,0x8087C,True,"[[""equipment_description:37"", 0]]",0x8019AE76,독 방지,,,CATALOGED
+0x80B2C,0x80888,True,"[[""equipment_description:38"", 0]]",0x8019C73C,방어력 50% 상승,,,CATALOGED
+0x80B30,0x80898,True,"[[""equipment_description:39"", 0]]",0x8019C720,방어력 30% 상승,,,CATALOGED
+0x80B34,0x808A8,True,"[[""equipment_description:40"", 0]]",0x8019BB06,방어율 상승,,,CATALOGED
+0x80B38,0x808B8,True,"[[""equipment_description:41"", 0]]",0x8019B52F,고겐 공격력 70% 상승,,,CATALOGED
+0x80B3C,0x808D0,True,"[[""equipment_description:42"", 0]]",0x8019B794,이가 심안법 범위 확장,,,CATALOGED
+0x80B40,0x808EC,True,"[[""equipment_description:43"", 0]]",0x801FF6BF,소환수가 얻은 경험치를|촌가라가 받음,,,CATALOGED
+0x80B44,0x8090C,True,"[[""equipment_description:44"", 0]]",0x8019BBC3,침묵 방지,,,CATALOGED
+0x80B48,0x8091C,True,"[[""equipment_description:45"", 0]]",0x8019C319,회피율 상승,,,CATALOGED
+0x80B4C,0x8092C,True,"[[""equipment_description:46"", 0]]",0x8019B8DE,공격력 10% 상승,,,CATALOGED
+0x80B50,0x8093C,True,"[[""equipment_description:47"", 0]]",0x801FF6DB,주는 피해량의|차이가 커진다,,,CATALOGED
+0x80B54,0x80958,True,"[[""equipment_description:48"", 0]]",0x801FF6F0,부활 마법을 받으면|체력 전부 회복(쿠쿠루),,,CATALOGED
+0x80B58,0x80978,True,"[[""equipment_description:49"", 0]]",0x8019C846,피해 편차 증가,,,CATALOGED
+0x80B5C,0x80988,True,"[[""equipment_description:50"", 0]]",0x8019C72E,방어력 10% 상승,,,CATALOGED
+0x80B60,0x80998,True,"[[""equipment_description:51"", 0]]",0x8019C20C,효과 불명,,,CATALOGED
+0x80B64,0x809A8,True,"[[""equipment_description:52"", 0]]",0x8019C20C,효과 불명,,,CATALOGED
+0x80B68,0x809B8,True,"[[""equipment_description:53"", 0]]",0x8019C20C,효과 불명,,,CATALOGED
+0x80B6C,0x809C8,True,"[[""equipment_description:54"", 0]]",0x8019C20C,효과 불명,,,CATALOGED
+0x80B70,0x809D8,True,"[[""equipment_description:55"", 0]]",0x801FF713,행동할 때마다 체력 회복,,,CATALOGED
+0x80B74,0x809EC,True,"[[""equipment_description:56"", 0]]",0x801FF726,토슈의 공격이|매우 잘 명중함,,,CATALOGED
+0x80B78,0x80A08,True,"[[""equipment_description:57"", 0]]",0x8019B893,모든 상태 이상 방지,,,CATALOGED
+0x80B7C,0x80A1C,True,"[[""equipment_description:58"", 0]]",0x8019B6BE,포코 마력 30% 상승,,,CATALOGED
+0x80B80,0x80A30,True,"[[""equipment_description:59"", 0]]",0x8019BCBD,마비 방지,,,CATALOGED
+0x80B84,0x80A40,True,"[[""equipment_description:60"", 0]]",0x801FF740,토슈의 앵화뇌폭참에|마비 효과 추가,,,CATALOGED
+0x80B88,0x80A60,True,"[[""equipment_description:61"", 0]]",0x8019B6F1,특정 적에게 추가 피해,,,CATALOGED
+0x80B8C,0x80A74,True,"[[""equipment_description:62"", 0]]",0x801FF75F,아크가 행동할 때마다|MP 회복,,,CATALOGED
+0x80B90,0x80A8C,True,"[[""equipment_description:63"", 0]]",0x8019AF08,?????,,,CATALOGED
+0x80C9C,0x80B94,True,"[[""consumable_name:0"", 0]]",0x8019AF50,끈끈이,,,CATALOGED
+0x80CA0,0x80B9C,True,"[[""consumable_name:1"", 0]]",0x8019BC2D,의욕 젤리,,,CATALOGED
+0x80CA4,0x80BA4,True,"[[""consumable_name:2"", 0]]",0x8019C00A,넘치는 열매,,,CATALOGED
+0x80CA8,0x80BB0,True,"[[""consumable_name:3"", 0]]",0x8019C322,회복 열매,,,CATALOGED
+0x80CAC,0x80BB8,True,"[[""consumable_name:4"", 0]]",0x8019BCAD,마비 사과,,,CATALOGED
+0x80CB0,0x80BC0,True,"[[""consumable_name:5"", 0]]",0x8019B712,돌,,,CATALOGED
+0x80CB4,0x80BC4,True,"[[""consumable_name:6"", 0]]",0x8019BB69,레코의 풀,,,CATALOGED
+0x80CB8,0x80BCC,True,"[[""consumable_name:7"", 0]]",0x8019B077,약초,,,CATALOGED
+0x80CBC,0x80BD4,True,"[[""consumable_name:8"", 0]]",0x8019B07F,독초,,,CATALOGED
+0x80CC0,0x80BDC,True,"[[""consumable_name:9"", 0]]",0x8019BDA5,루우의 약,,,CATALOGED
+0x80CC4,0x80BE4,True,"[[""consumable_name:10"", 0]]",0x8019BBB1,민첩의 약,,,CATALOGED
+0x80CC8,0x80BEC,True,"[[""consumable_name:11"", 0]]",0x8019BB45,작은 폭탄,,,CATALOGED
+0x80CCC,0x80BF8,True,"[[""consumable_name:12"", 0]]",0x8019ADF1,큰 폭탄,,,CATALOGED
+0x80CD0,0x80C00,True,"[[""consumable_name:13"", 0]]",0x8019AEB4,만능약,,,CATALOGED
+0x80CD4,0x80C08,True,"[[""consumable_name:14"", 0]]",0x8019B06B,성수,,,CATALOGED
+0x80CD8,0x80C0C,True,"[[""consumable_name:15"", 0]]",0x8019AED2,부활약,,,CATALOGED
+0x80CDC,0x80C14,True,"[[""consumable_name:16"", 0]]",0x8019C0D6,공격 항아리,,,CATALOGED
+0x80CE0,0x80C1C,True,"[[""consumable_name:17"", 0]]",0x8019ADB2,수면 구슬,,,CATALOGED
+0x80CE4,0x80C24,True,"[[""consumable_name:18"", 0]]",0x8019BB21,약화 구슬,,,CATALOGED
+0x80CE8,0x80C2C,True,"[[""consumable_name:19"", 0]]",0x8019BD1D,힘의 열매,,,CATALOGED
+0x80CEC,0x80C34,True,"[[""consumable_name:20"", 0]]",0x8019C194,파로의 열매,,,CATALOGED
+0x80CF0,0x80C3C,True,"[[""consumable_name:21"", 0]]",0x8019AC58,생명의 열매,,,CATALOGED
+0x80CF4,0x80C48,True,"[[""consumable_name:22"", 0]]",0x8019BCCD,마력의 잎,,,CATALOGED
+0x80CF8,0x80C50,True,"[[""consumable_name:23"", 0]]",0x8019BCC5,마력의 샘,,,CATALOGED
+0x80CFC,0x80C58,True,"[[""consumable_name:24"", 0]]",0x8019BBCC,눈가림 풀,,,CATALOGED
+0x80D00,0x80C60,True,"[[""consumable_name:25"", 0]]",0x8019AF56,쓴 잎,,,CATALOGED
+0x80D04,0x80C68,True,"[[""consumable_name:26"", 0]]",0x8019C1B2,석화 해제침,,,CATALOGED
+0x80D08,0x80C70,True,"[[""consumable_name:27"", 0]]",0x8019C202,침묵 해제침,,,CATALOGED
+0x80D0C,0x80C7C,True,"[[""consumable_name:28"", 0]]",0x8019C0CC,소환 항아리,,,CATALOGED
+0x80D10,0x80C84,True,"[[""consumable_name:29"", 0]]",0x8019AF08,?????,,,CATALOGED
+0x80D14,0x80C8C,True,"[[""consumable_name:30"", 0]]",0x8019AF08,?????,,,CATALOGED
+0x80D18,0x80C94,True,"[[""consumable_name:31"", 0]]",0x8019AF08,?????,,,CATALOGED
+0x80F14,0x80D1C,True,"[[""consumable_description:0"", 0]]",0x8019C8AE,민첩 일시 감소,,,CATALOGED
+0x80F18,0x80D2C,True,"[[""consumable_description:1"", 0]]",0x8019BB9F,헤모지 회복,,,CATALOGED
+0x80F1C,0x80D3C,True,"[[""consumable_description:2"", 0]]",0x8019C162,레벨 1 상승,,,CATALOGED
+0x80F20,0x80D48,True,"[[""consumable_description:3"", 0]]",0x8019AB20,체력 60 회복,,,CATALOGED
+0x80F24,0x80D5C,True,"[[""consumable_description:4"", 0]]",0x801FF777,마비로 움직일 수 없음,,,CATALOGED
+0x80F28,0x80D6C,True,"[[""consumable_description:5"", 0]]",0x8019C0FE,던져서 피해,,,CATALOGED
+0x80F2C,0x80D7C,True,"[[""consumable_description:6"", 0]]",0x8019BAFD,방어력 상승,,,CATALOGED
+0x80F30,0x80D88,True,"[[""consumable_description:7"", 0]]",0x8019AB14,체력 20 회복,,,CATALOGED
+0x80F34,0x80D9C,True,"[[""consumable_description:8"", 0]]",0x801FF787,독을 퍼지게 함,,,CATALOGED
+0x80F38,0x80DA8,True,"[[""consumable_description:9"", 0]]",0x8019BCB5,마비 회복,,,CATALOGED
+0x80F3C,0x80DB8,True,"[[""consumable_description:10"", 0]]",0x8019BFFF,민첩 일시 상승,,,CATALOGED
+0x80F40,0x80DC8,True,"[[""consumable_description:11"", 0]]",0x8019BB3C,폭발 피해,,,CATALOGED
+0x80F44,0x80DD0,True,"[[""consumable_description:12"", 0]]",0x8019AC0B,큰 폭발 피해,,,CATALOGED
+0x80F48,0x80DD8,True,"[[""consumable_description:13"", 0]]",0x8019B7C4,대부분의 상태 이상 회복,,,CATALOGED
+0x80F4C,0x80DF0,True,"[[""consumable_description:14"", 0]]",0x8019AE6F,독 회복,,,CATALOGED
+0x80F50,0x80DFC,True,"[[""consumable_description:15"", 0]]",0x8019C887,쓰러진 대상 부활,,,CATALOGED
+0x80F54,0x80E14,True,"[[""consumable_description:16"", 0]]",0x8019C812,공격력 일시 상승,,,CATALOGED
+0x80F58,0x80E24,True,"[[""consumable_description:17"", 0]]",0x8019AECC,수면 부여,,,CATALOGED
+0x80F5C,0x80E2C,True,"[[""consumable_description:18"", 0]]",0x801FF793,공격력과 방어력이|일시적으로 감소,,,CATALOGED
+0x80F60,0x80E40,True,"[[""consumable_description:19"", 0]]",0x8019C0E0,공격력 상승,,,CATALOGED
+0x80F64,0x80E4C,True,"[[""consumable_description:20"", 0]]",0x8019BE05,민첩 상승,,,CATALOGED
+0x80F68,0x80E58,True,"[[""consumable_description:21"", 0]]",0x8019C774,최대 체력 2 상승,,,CATALOGED
+0x80F6C,0x80E70,True,"[[""consumable_description:22"", 0]]",0x8019ADA4,마력 상승,,,CATALOGED
+0x80F70,0x80E7C,True,"[[""consumable_description:23"", 0]]",0x801FF7B0,최대 MP 2 상승,,,CATALOGED
+0x80F74,0x80E94,True,"[[""consumable_description:24"", 0]]",0x801FF7BE,사용하면 눈이|보이지 않게 함,,,CATALOGED
+0x80F78,0x80EA8,True,"[[""consumable_description:25"", 0]]",0x8019AAB4,방어력 일시 상승,,,CATALOGED
+0x80F7C,0x80EB8,True,"[[""consumable_description:26"", 0]]",0x8019BB7B,석화 회복,,,CATALOGED
+0x80F80,0x80EC8,True,"[[""consumable_description:27"", 0]]",0x801FF7D3,봉인된 마법을|다시 쓸 수 있게 함,,,CATALOGED
+0x80F84,0x80EE0,True,"[[""consumable_description:28"", 0]]",0x801FF7ED,촌가라가 몬스터를|소환할 때 사용,,,CATALOGED
+0x80F88,0x80EFC,True,"[[""consumable_description:29"", 0]]",0x8019AF08,?????,,,CATALOGED
+0x80F8C,0x80F04,True,"[[""consumable_description:30"", 0]]",0x8019AF08,?????,,,CATALOGED
+0x80F90,0x80F0C,True,"[[""consumable_description:31"", 0]]",0x8019AF08,?????,,,CATALOGED
+0x811C0,0x80F94,True,"[[""skill_name:0"", 0]]",0x8019B0AD,,,,CATALOGED
+0x811C4,0x80F98,True,"[[""skill_name:1"", 0]]",0x8019ADEA,번 그라운드,,,CATALOGED
+0x811C8,0x80FA4,True,"[[""skill_name:2"", 0]]",0x8019C32B,토탈 힐링,,,CATALOGED
+0x811CC,0x80FB0,True,"[[""skill_name:3"", 0]]",0x8019C2D1,게일 플래시,,,CATALOGED
+0x811D0,0x80FBC,True,"[[""skill_name:4"", 0]]",0x8019C1EE,슬로우 에너미,,,CATALOGED
+0x811D4,0x80FC8,True,"[[""skill_name:5"", 0]]",0x8019BB0F,메테오 폴,,,CATALOGED
+0x811D8,0x80FD4,True,"[[""skill_name:6"", 0]]",0x8019B08B,큐어,,,CATALOGED
+0x811DC,0x80FDC,True,"[[""skill_name:7"", 0]]",0x8019BDF5,디포이즌,,,CATALOGED
+0x811E0,0x80FE4,True,"[[""skill_name:8"", 0]]",0x8019BEDA,사일런트,,,CATALOGED
+0x811E4,0x80FEC,True,"[[""skill_name:9"", 0]]",0x8019BEC5,리프레시,,,CATALOGED
+0x811E8,0x80FF4,True,"[[""skill_name:10"", 0]]",0x8019B00E,천벌,,,CATALOGED
+0x811EC,0x80FFC,True,"[[""skill_name:11"", 0]]",0x8019BC65,리저렉션,,,CATALOGED
+0x811F0,0x81008,True,"[[""skill_name:12"", 0]]",0x8019AE45,디바이드,,,CATALOGED
+0x811F4,0x81010,True,"[[""skill_name:13"", 0]]",0x8019C020,앵화뇌폭참,,,CATALOGED
+0x811F8,0x8101C,True,"[[""skill_name:14"", 0]]",0x8019AEBA,주박검,,,CATALOGED
+0x811FC,0x81024,True,"[[""skill_name:15"", 0]]",0x8019AE14,진공참,,,CATALOGED
+0x81200,0x8102C,True,"[[""skill_name:16"", 0]]",0x8019AF02,호영참,,,CATALOGED
+0x81204,0x81034,True,"[[""skill_name:17"", 0]]",0x8019BCF5,전투의 북,,,CATALOGED
+0x81208,0x81040,True,"[[""skill_name:18"", 0]]",0x8019BE1D,황사자 북,,,CATALOGED
+0x8120C,0x8104C,True,"[[""skill_name:19"", 0]]",0x8019BC55,기합 나팔,,,CATALOGED
+0x81210,0x81054,True,"[[""skill_name:20"", 0]]",0x8019BBD5,탈진 나팔,,,CATALOGED
+0x81214,0x8105C,True,"[[""skill_name:21"", 0]]",0x8019BAEB,치유의 하프,,,CATALOGED
+0x81218,0x81068,True,"[[""skill_name:22"", 0]]",0x8019C252,둔화 베이스,,,CATALOGED
+0x8121C,0x81074,True,"[[""skill_name:23"", 0]]",0x8019AA78,위타천 오카리나,,,CATALOGED
+0x81220,0x81080,True,"[[""skill_name:24"", 0]]",0x8019AAC0,방향전환 피리,,,CATALOGED
+0x81224,0x8108C,True,"[[""skill_name:25"", 0]]",0x8019BE3D,익스플로전,,,CATALOGED
+0x81228,0x81098,True,"[[""skill_name:26"", 0]]",0x8019BC45,드림 노크,,,CATALOGED
+0x8122C,0x810A4,True,"[[""skill_name:27"", 0]]",0x8019C8E2,다이아몬드 더스트,,,CATALOGED
+0x81230,0x810B0,True,"[[""skill_name:28"", 0]]",0x8019C02B,윈드 슬래셔,,,CATALOGED
+0x81234,0x810BC,True,"[[""skill_name:29"", 0]]",0x8019BDB5,히트 월,,,CATALOGED
+0x81238,0x810C8,True,"[[""skill_name:30"", 0]]",0x8019BC0B,썬더 스톰,,,CATALOGED
+0x8123C,0x810D4,True,"[[""skill_name:31"", 0]]",0x8019BBF0,텔레포트,,,CATALOGED
+0x81240,0x810DC,True,"[[""skill_name:32"", 0]]",0x8019AFB4,심안법,,,CATALOGED
+0x81244,0x810E4,True,"[[""skill_name:33"", 0]]",0x8019BE45,퇴마광탄,,,CATALOGED
+0x81248,0x810F0,True,"[[""skill_name:34"", 0]]",0x8019BB2A,선풍격축,,,CATALOGED
+0x8124C,0x810F8,True,"[[""skill_name:35"", 0]]",0x8019AEF0,유성폭,,,CATALOGED
+0x81250,0x81100,True,"[[""skill_name:36"", 0]]",0x8019C23E,귀신류영파,,,CATALOGED
+0x81254,0x8110C,True,"[[""skill_name:37"", 0]]",0x8019BDFD,멸장열파,,,CATALOGED
+0x81258,0x81118,True,"[[""skill_name:38"", 0]]",0x8019B013,케락,,,CATALOGED
+0x8125C,0x81120,True,"[[""skill_name:39"", 0]]",0x8019AF91,모프리,,,CATALOGED
+0x81260,0x81128,True,"[[""skill_name:40"", 0]]",0x8019AF38,후우진,,,CATALOGED
+0x81264,0x81130,True,"[[""skill_name:41"", 0]]",0x8019AFAA,라이진,,,CATALOGED
+0x81268,0x81138,True,"[[""skill_name:42"", 0]]",0x8019B004,헤모지,,,CATALOGED
+0x8126C,0x81140,True,"[[""skill_name:43"", 0]]",0x8019B03F,오톤,,,CATALOGED
+0x81270,0x81144,True,"[[""skill_name:44"", 0]]",0x8019B0AA,조사,,,CATALOGED
+0x81274,0x8114C,True,"[[""skill_name:45"", 0]]",0x8019B033,초코,,,CATALOGED
+0x81278,0x81150,True,"[[""skill_name:46"", 0]]",0x8019B053,회복,,,CATALOGED
+0x8127C,0x81154,True,"[[""skill_name:47"", 0]]",0x8019BE55,다리 만들기,,,CATALOGED
+0x81280,0x8115C,True,"[[""skill_name:48"", 0]]",0x8019AE61,풍뢰파,,,CATALOGED
+0x81284,0x81164,True,"[[""skill_name:49"", 0]]",0x8019AE61,풍뢰파,,,CATALOGED
+0x81288,0x8116C,True,"[[""skill_name:50"", 0]]",0x8019B083,빙의,,,CATALOGED
+0x8128C,0x81174,True,"[[""skill_name:51"", 0]]",0x8019C14E,폭렬 수리검,,,CATALOGED
+0x81290,0x81180,True,"[[""skill_name:52"", 0]]",0x8019B027,자폭,,,CATALOGED
+0x81294,0x81184,True,"[[""skill_name:53"", 0]]",0x8019B964,지옥으로 가는 계단,,,CATALOGED
+0x81298,0x81190,True,"[[""skill_name:54"", 0]]",0x8019C2AD,사방 공격,,,CATALOGED
+0x8129C,0x81198,True,"[[""skill_name:55"", 0]]",0x8019AE7D,염뢰붕,,,CATALOGED
+0x812A0,0x811A0,True,"[[""skill_name:56"", 0]]",0x8019BB96,더스트 룬,,,CATALOGED
+0x812A4,0x811AC,True,"[[""skill_name:57"", 0]]",0x8019C04A,요미의 날개,,,CATALOGED
+0x812A8,0x811B8,True,"[[""skill_name:58"", 0]]",0x8019BEA2,의욕 없음,,,CATALOGED
+0x81708,0x812AC,True,"[[""skill_description:0"", 0]]",0x8019B0AD,,,,CATALOGED
+0x8170C,0x812B0,True,"[[""skill_description:1"", 0]]",0x8019B854,용암으로 적에게 피해,,,CATALOGED
+0x81710,0x812C8,True,"[[""skill_description:2"", 0]]",0x8019B5D8,상태 이상과 체력 회복,,,CATALOGED
+0x81714,0x812E0,True,"[[""skill_description:3"", 0]]",0x8019B48B,이공간 공격으로 피해,,,CATALOGED
+0x81718,0x812F8,True,"[[""skill_description:4"", 0]]",0x8019C805,적 민첩 감소,,,CATALOGED
+0x8171C,0x81308,True,"[[""skill_description:5"", 0]]",0x8019B814,운석으로 주변 적 피해,,,CATALOGED
+0x81720,0x81324,True,"[[""skill_description:6"", 0]]",0x8019BB8D,체력 회복,,,CATALOGED
+0x81724,0x81330,True,"[[""skill_description:7"", 0]]",0x8019AF5C,독 해제,,,CATALOGED
+0x81728,0x8133C,True,"[[""skill_description:8"", 0]]",0x8019AA9C,적의 마법 봉인,,,CATALOGED
+0x8172C,0x8134C,True,"[[""skill_description:9"", 0]]",0x8019ABF5,상태 이상 회복,,,CATALOGED
+0x81730,0x81360,True,"[[""skill_description:10"", 0]]",0x8019B929,천사의 광선 공격,,,CATALOGED
+0x81734,0x81380,True,"[[""skill_description:11"", 0]]",0x8019C87A,쓰러진 아군 부활,,,CATALOGED
+0x81738,0x81398,True,"[[""skill_description:12"", 0]]",0x8019C5C8,적 체력을 흡수해 아군 회복,,,CATALOGED
+0x8173C,0x813B0,True,"[[""skill_description:13"", 0]]",0x8019B9AA,적 하나에 필살검,,,CATALOGED
+0x81740,0x813C8,True,"[[""skill_description:14"", 0]]",0x8019AA90,적에게 마비 부여,,,CATALOGED
+0x81744,0x813D4,True,"[[""skill_description:15"", 0]]",0x8019B632,두 칸 앞의 적 공격,,,CATALOGED
+0x81748,0x813E4,True,"[[""skill_description:16"", 0]]",0x8019B8A2,돌진하며 적 공격,,,CATALOGED
+0x8174C,0x813FC,True,"[[""skill_description:17"", 0]]",0x8019C790,아군 공격력 상승,,,CATALOGED
+0x81750,0x8140C,True,"[[""skill_description:18"", 0]]",0x8019C758,파동 광선 발사,,,CATALOGED
+0x81754,0x8141C,True,"[[""skill_description:19"", 0]]",0x8019B656,먼 적을 기합으로 공격,,,CATALOGED
+0x81758,0x8142C,True,"[[""skill_description:20"", 0]]",0x8019B90B,폭탄을 연속 발사,,,CATALOGED
+0x8175C,0x81440,True,"[[""skill_description:21"", 0]]",0x8019C906,아군 체력 회복,,,CATALOGED
+0x81760,0x81450,True,"[[""skill_description:22"", 0]]",0x8019C805,적 민첩 감소,,,CATALOGED
+0x81764,0x8145C,True,"[[""skill_description:23"", 0]]",0x8019AB87,아군 민첩 상승,,,CATALOGED
+0x81768,0x8146C,True,"[[""skill_description:24"", 0]]",0x8019B542,전원이 포니 방향으로 전환,,,CATALOGED
+0x8176C,0x81484,True,"[[""skill_description:25"", 0]]",0x8019B884,거대한 불꽃으로 피해,,,CATALOGED
+0x81770,0x8149C,True,"[[""skill_description:26"", 0]]",0x8019AC21,적에게 수면 부여,,,CATALOGED
+0x81774,0x814A8,True,"[[""skill_description:27"", 0]]",0x8019B938,눈보라로 적에게 피해,,,CATALOGED
+0x81778,0x814C4,True,"[[""skill_description:28"", 0]]",0x8019B864,강풍으로 적에게 피해,,,CATALOGED
+0x8177C,0x814DC,True,"[[""skill_description:29"", 0]]",0x8019C704,불꽃 장벽 생성,,,CATALOGED
+0x81780,0x814EC,True,"[[""skill_description:30"", 0]]",0x8019B99C,번개로 적에게 피해,,,CATALOGED
+0x81784,0x81504,True,"[[""skill_description:31"", 0]]",0x8019B7D4,주변 아군과 순간이동,,,CATALOGED
+0x81788,0x8151C,True,"[[""skill_description:32"", 0]]",0x8019BAD9,적 하나 고정,,,CATALOGED
+0x8178C,0x8152C,True,"[[""skill_description:33"", 0]]",0x8019B5B4,고정한 적에게 광탄 발사,,,CATALOGED
+0x81790,0x8154C,True,"[[""skill_description:34"", 0]]",0x8019ABDF,주변 적 공격,,,CATALOGED
+0x81794,0x81564,True,"[[""skill_description:35"", 0]]",0x8019B7E4,회오리로 띄워 내리찍음,,,CATALOGED
+0x81798,0x81580,True,"[[""skill_description:36"", 0]]",0x8019C782,잔상을 날려 공격,,,CATALOGED
+0x8179C,0x81598,True,"[[""skill_description:37"", 0]]",0x8019C853,약한 적을 소멸,,,CATALOGED
+0x817A0,0x815B0,True,"[[""skill_description:38"", 0]]",0x8019C1E4,케락 소환,,,CATALOGED
+0x817A4,0x815C0,True,"[[""skill_description:39"", 0]]",0x8019C068,모프리 소환,,,CATALOGED
+0x817A8,0x815D0,True,"[[""skill_description:40"", 0]]",0x8019AC84,후우진 소환,,,CATALOGED
+0x817AC,0x815E0,True,"[[""skill_description:41"", 0]]",0x8019C0B8,라이진 소환,,,CATALOGED
+0x817B0,0x815F0,True,"[[""skill_description:42"", 0]]",0x8019C1C6,헤모지 소환,,,CATALOGED
+0x817B4,0x81600,True,"[[""skill_description:43"", 0]]",0x8019C2E3,오톤 소환,,,CATALOGED
+0x817B8,0x81610,True,"[[""skill_description:44"", 0]]",0x8019C086,몬스터 정보 조사,,,CATALOGED
+0x817BC,0x81620,True,"[[""skill_description:45"", 0]]",0x8019C2C8,초코 소환,,,CATALOGED
+0x817C0,0x81630,True,"[[""skill_description:46"", 0]]",0x8019BE9B,아군 회복,,,CATALOGED
+0x817C4,0x8163C,True,"[[""skill_description:47"", 0]]",0x8019C606,갈 수 없는 곳에 다리 생성,,,CATALOGED
+0x817C8,0x81650,True,"[[""skill_description:48"", 0]]",0x8019B824,라이진과 합체 마법,,,CATALOGED
+0x817CC,0x81660,True,"[[""skill_description:49"", 0]]",0x8019B6CF,후우진과 합체 마법,,,CATALOGED
+0x817D0,0x81670,True,"[[""skill_description:50"", 0]]",0x8019BAD0,적에게 빙의,,,CATALOGED
+0x817D4,0x8167C,True,"[[""skill_description:51"", 0]]",0x8019C7C4,주변에 수리검 난사,,,CATALOGED
+0x817D8,0x81690,True,"[[""skill_description:52"", 0]]",0x8019C289,자폭 공격,,,CATALOGED
+0x817DC,0x81698,True,"[[""skill_description:53"", 0]]",0x8019B874,낫 부메랑으로 공격,,,CATALOGED
+0x817E0,0x816A8,True,"[[""skill_description:54"", 0]]",0x8019AA3C,주변 적에게 피해,,,CATALOGED
+0x817E4,0x816BC,True,"[[""skill_description:55"", 0]]",0x8019AA3C,주변 적에게 피해,,,CATALOGED
+0x817E8,0x816D0,True,"[[""skill_description:56"", 0]]",0x8019B91A,직선상의 적 공격,,,CATALOGED
+0x817EC,0x816E4,True,"[[""skill_description:57"", 0]]",0x8019B644,날갯짓으로 바람 피해,,,CATALOGED
+0x817F0,0x816FC,True,"[[""skill_description:58"", 0]]",0x8019B5FC,적을 헤모지 상태로 만듦,,,CATALOGED
+0x81B4C,0x817F4,True,"[[""character_name:0"", 0]]",0x8019B092,아크,,,CATALOGED
+0x81B50,0x817F8,True,"[[""character_name:1"", 0]]",0x8019ADF8,쿠쿠루,,,CATALOGED
+0x81B54,0x817FC,True,"[[""character_name:2"", 0]]",0x8019B057,토슈,,,CATALOGED
+0x81B58,0x81804,True,"[[""character_name:3"", 0]]",0x8019AFF5,포코,,,CATALOGED
+0x81B5C,0x81808,True,"[[""character_name:4"", 0]]",0x8019B08F,이가,,,CATALOGED
+0x81B60,0x81810,True,"[[""character_name:5"", 0]]",0x8019BF04,고겐,,,CATALOGED
+0x81B64,0x81818,True,"[[""character_name:6"", 0]]",0x8019B03B,마샬,,,CATALOGED
+0x81B68,0x81820,True,"[[""character_name:7"", 0]]",0x8019B067,촌가라,,,CATALOGED
+0x81B6C,0x81828,True,"[[""character_name:8"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81B70,0x8182C,True,"[[""character_name:9"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81B74,0x81830,True,"[[""character_name:10"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81B78,0x81834,True,"[[""character_name:11"", 0]]",0x8019BC75,스켈레톤,,,CATALOGED
+0x81B7C,0x8183C,True,"[[""character_name:12"", 0]]",0x8019AF78,고스트,,,CATALOGED
+0x81B80,0x81844,True,"[[""character_name:13"", 0]]",0x8019B01D,좀비,,,CATALOGED
+0x81B84,0x8184C,True,"[[""character_name:14"", 0]]",0x8019C92A,그린 슬라임,,,CATALOGED
+0x81B88,0x81858,True,"[[""character_name:15"", 0]]",0x8019B073,간자,,,CATALOGED
+0x81B8C,0x81860,True,"[[""character_name:16"", 0]]",0x8019AFD2,메이지,,,CATALOGED
+0x81B90,0x81864,True,"[[""character_name:17"", 0]]",0x8019AFFA,파이터,,,CATALOGED
+0x81B94,0x8186C,True,"[[""character_name:18"", 0]]",0x8019AF32,파계승,,,CATALOGED
+0x81B98,0x81874,True,"[[""character_name:19"", 0]]",0x8019C91E,자이언트 배트,,,CATALOGED
+0x81B9C,0x81880,True,"[[""character_name:20"", 0]]",0x8019AEDE,돌 마스터,,,CATALOGED
+0x81BA0,0x81888,True,"[[""character_name:21"", 0]]",0x8019B09B,사신,,,CATALOGED
+0x81BA4,0x81890,True,"[[""character_name:22"", 0]]",0x8019BE2D,엘리멘탈,,,CATALOGED
+0x81BA8,0x81898,True,"[[""character_name:23"", 0]]",0x8019B098,요수,,,CATALOGED
+0x81BAC,0x818A0,True,"[[""character_name:24"", 0]]",0x8019B022,팬텀,,,CATALOGED
+0x81BB0,0x818AC,True,"[[""character_name:25"", 0]]",0x8019BEB7,시드레이크,,,CATALOGED
+0x81BB4,0x818B4,True,"[[""character_name:26"", 0]]",0x8019C05E,마이티 플라이,,,CATALOGED
+0x81BB8,0x818C0,True,"[[""character_name:27"", 0]]",0x8019AE68,킬러 도그,,,CATALOGED
+0x81BBC,0x818C8,True,"[[""character_name:28"", 0]]",0x8019AAFC,레드 스켈레톤,,,CATALOGED
+0x81BC0,0x818D4,True,"[[""character_name:29"", 0]]",0x8019BC02,블랙 스컬,,,CATALOGED
+0x81BC4,0x818DC,True,"[[""character_name:30"", 0]]",0x8019AFF0,레이스,,,CATALOGED
+0x81BC8,0x818E0,True,"[[""character_name:31"", 0]]",0x8019B05B,구울,,,CATALOGED
+0x81BCC,0x818E4,True,"[[""character_name:32"", 0]]",0x8019AFFF,프리지,,,CATALOGED
+0x81BD0,0x818EC,True,"[[""character_name:33"", 0]]",0x8019C015,애시드 슬라임,,,CATALOGED
+0x81BD4,0x818F8,True,"[[""character_name:34"", 0]]",0x8019AF6E,어새신,,,CATALOGED
+0x81BD8,0x81900,True,"[[""character_name:35"", 0]]",0x8019C1A8,슈퍼 좀비,,,CATALOGED
+0x81BDC,0x8190C,True,"[[""character_name:36"", 0]]",0x8019AA6C,위치 크래프트,,,CATALOGED
+0x81BE0,0x81918,True,"[[""character_name:37"", 0]]",0x8019AFB9,소서러,,,CATALOGED
+0x81BE4,0x81920,True,"[[""character_name:38"", 0]]",0x8019ADCE,네크로맨서,,,CATALOGED
+0x81BE8,0x8192C,True,"[[""character_name:39"", 0]]",0x8019AFA5,위저드,,,CATALOGED
+0x81BEC,0x81934,True,"[[""character_name:40"", 0]]",0x8019AF68,암법사,,,CATALOGED
+0x81BF0,0x8193C,True,"[[""character_name:41"", 0]]",0x8019AF87,수행자,,,CATALOGED
+0x81BF4,0x81944,True,"[[""character_name:42"", 0]]",0x8019AF73,하법사,,,CATALOGED
+0x81BF8,0x8194C,True,"[[""character_name:43"", 0]]",0x8019AEEA,네뷰러스,,,CATALOGED
+0x81BFC,0x81954,True,"[[""character_name:44"", 0]]",0x8019B07B,광대,,,CATALOGED
+0x81C00,0x8195C,True,"[[""character_name:45"", 0]]",0x8019ADD5,데스 하운드,,,CATALOGED
+0x81C04,0x81964,True,"[[""character_name:46"", 0]]",0x8019B0A4,데스,,,CATALOGED
+0x81C08,0x81968,True,"[[""character_name:47"", 0]]",0x8019AB44,뱀파이어 배트,,,CATALOGED
+0x81C0C,0x81974,True,"[[""character_name:48"", 0]]",0x8019AF0E,소드맨,,,CATALOGED
+0x81C10,0x8197C,True,"[[""character_name:49"", 0]]",0x8019C280,나이트 마스터,,,CATALOGED
+0x81C14,0x81984,True,"[[""character_name:50"", 0]]",0x8019C912,그레이트 나이트,,,CATALOGED
+0x81C18,0x8198C,True,"[[""character_name:51"", 0]]",0x8019C180,포이즌 스모그,,,CATALOGED
+0x81C1C,0x81998,True,"[[""character_name:52"", 0]]",0x8019C108,메두사 리자드,,,CATALOGED
+0x81C20,0x819A4,True,"[[""character_name:53"", 0]]",0x8019ABA8,드래곤 플라이,,,CATALOGED
+0x81C24,0x819B0,True,"[[""character_name:54"", 0]]",0x8019AE53,맨트랩,,,CATALOGED
+0x81C28,0x819B8,True,"[[""character_name:55"", 0]]",0x8019C09A,데스 플레임,,,CATALOGED
+0x81C2C,0x819C0,True,"[[""character_name:56"", 0]]",0x8019AB38,엘리멘탈 마스터,,,CATALOGED
+0x81C30,0x819CC,True,"[[""character_name:57"", 0]]",0x8019B08F,이가,,,CATALOGED
+0x81C34,0x819D4,True,"[[""character_name:58"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81C38,0x819D8,True,"[[""character_name:59"", 0]]",0x8019C2EC,야생 헤모지,,,CATALOGED
+0x81C3C,0x819E4,True,"[[""character_name:60"", 0]]",0x8019AE29,레서 데몬,,,CATALOGED
+0x81C40,0x819F0,True,"[[""character_name:61"", 0]]",0x8019C265,그레이터 데몬,,,CATALOGED
+0x81C44,0x819FC,True,"[[""character_name:62"", 0]]",0x8019C29B,스톤 골렘,,,CATALOGED
+0x81C48,0x81A08,True,"[[""character_name:63"", 0]]",0x8019B05F,와이번,,,CATALOGED
+0x81C4C,0x81A10,True,"[[""character_name:64"", 0]]",0x8019C1D0,매드 배틀러,,,CATALOGED
+0x81C50,0x81A18,True,"[[""character_name:65"", 0]]",0x8019AE8A,아크 데몬,,,CATALOGED
+0x81C54,0x81A20,True,"[[""character_name:66"", 0]]",0x8019C18A,파이어 골렘,,,CATALOGED
+0x81C58,0x81A2C,True,"[[""character_name:67"", 0]]",0x8019AC63,코퍼 드래곤,,,CATALOGED
+0x81C5C,0x81A38,True,"[[""character_name:68"", 0]]",0x8019C7AA,그레이트 서펀트,,,CATALOGED
+0x81C60,0x81A44,True,"[[""character_name:69"", 0]]",0x8019AF8C,수행승,,,CATALOGED
+0x81C64,0x81A4C,True,"[[""character_name:70"", 0]]",0x8019BD65,라마다 대승정,,,CATALOGED
+0x81C68,0x81A54,True,"[[""character_name:71"", 0]]",0x8019BC35,그라 아비스,,,CATALOGED
+0x81C6C,0x81A5C,True,"[[""character_name:72"", 0]]",0x8019BE7F,니 아비스,,,CATALOGED
+0x81C70,0x81A64,True,"[[""character_name:73"", 0]]",0x8019ADE3,라류우키,,,CATALOGED
+0x81C74,0x81A6C,True,"[[""character_name:74"", 0]]",0x8019AE5A,효엔키,,,CATALOGED
+0x81C78,0x81A78,True,"[[""character_name:75"", 0]]",0x8019BD0D,무르 아비스,,,CATALOGED
+0x81C7C,0x81A80,True,"[[""character_name:76"", 0]]",0x8019ADDC,라 아비스,,,CATALOGED
+0x81C80,0x81A88,True,"[[""character_name:77"", 0]]",0x8019B033,초코,,,CATALOGED
+0x81C84,0x81A8C,True,"[[""character_name:78"", 0]]",0x8019AF96,보물상자,,,CATALOGED
+0x81C88,0x81A94,True,"[[""character_name:79"", 0]]",0x8019AF96,보물상자,,,CATALOGED
+0x81C8C,0x81A9C,True,"[[""character_name:80"", 0]]",0x8019B013,케락,,,CATALOGED
+0x81C90,0x81AA4,True,"[[""character_name:81"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81C94,0x81AA8,True,"[[""character_name:82"", 0]]",0x8019AF91,모프리,,,CATALOGED
+0x81C98,0x81AB0,True,"[[""character_name:83"", 0]]",0x8019AF38,후우진,,,CATALOGED
+0x81C9C,0x81AB8,True,"[[""character_name:84"", 0]]",0x8019AFAA,라이진,,,CATALOGED
+0x81CA0,0x81AC0,True,"[[""character_name:85"", 0]]",0x8019B03F,오톤,,,CATALOGED
+0x81CA4,0x81AC4,True,"[[""character_name:86"", 0]]",0x8019B033,초코,,,CATALOGED
+0x81CA8,0x81AC8,True,"[[""character_name:87"", 0]]",0x8019B004,헤모지,,,CATALOGED
+0x81CAC,0x81AD0,True,"[[""character_name:88"", 0]]",0x8019AFBE,불꽃,,,CATALOGED
+0x81CB0,0x81AD4,True,"[[""character_name:89"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81CB4,0x81AD8,True,"[[""character_name:90"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81CB8,0x81ADC,True,"[[""character_name:91"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81CBC,0x81AE0,True,"[[""character_name:92"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81CC0,0x81AE4,True,"[[""character_name:93"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81CC4,0x81AE8,True,"[[""character_name:94"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81CC8,0x81AEC,True,"[[""character_name:95"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81CCC,0x81AF0,True,"[[""character_name:96"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81CD0,0x81AF4,True,"[[""character_name:97"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81CD4,0x81AF8,True,"[[""character_name:98"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81CD8,0x81AFC,True,"[[""character_name:99"", 0]]",0x8019B0AD,,,,CATALOGED
+0x81CDC,0x81B00,True,"[[""character_name:100"", 0]]",0x8019AE84,다크 아크,,,CATALOGED
+0x81CE0,0x81B08,True,"[[""character_name:101"", 0]]",0x8019AC9A,다크 쿠쿠루,,,CATALOGED
+0x81CE4,0x81B10,True,"[[""character_name:102"", 0]]",0x8019BE6A,다크 토슈,,,CATALOGED
+0x81CE8,0x81B18,True,"[[""character_name:103"", 0]]",0x8019B9B8,다크 포코,,,CATALOGED
+0x81CEC,0x81B20,True,"[[""character_name:104"", 0]]",0x8019C346,다크 이가,,,CATALOGED
+0x81CF0,0x81B2C,True,"[[""character_name:105"", 0]]",0x8019BE5C,다크 고겐,,,CATALOGED
+0x81CF4,0x81B34,True,"[[""character_name:106"", 0]]",0x8019BE63,다크 마샬,,,CATALOGED
+0x81CF8,0x81B40,True,"[[""character_name:107"", 0]]",0x8019BE71,다크 촌가라,,,CATALOGED
+0x81E38,0x81CFC,True,"[[""region_name:0"", 0]]",0x8019ABD4,스메리아 공항,,,CATALOGED
+0x81E3C,0x81D08,True,"[[""region_name:1"", 0]]",0x8019AFA0,토우빌,,,CATALOGED
+0x81E40,0x81D10,True,"[[""region_name:2"", 0]]",0x8019C176,팔렌시아 성,,,CATALOGED
+0x81E44,0x81D18,True,"[[""region_name:3"", 0]]",0x8019D128,오르카스 언덕,,,CATALOGED
+0x81E48,0x81D24,True,"[[""region_name:4"", 0]]",0x8019C1BC,봉인의 폭포,,,CATALOGED
+0x81E4C,0x81D2C,True,"[[""region_name:5"", 0]]",0x8019BE78,니르 평원,,,CATALOGED
+0x81E50,0x81D38,True,"[[""region_name:6"", 0]]",0x8019C11C,카라간 평야,,,CATALOGED
+0x81E54,0x81D44,True,"[[""region_name:7"", 0]]",0x8019BD95,쿠나 언덕,,,CATALOGED
+0x81E58,0x81D4C,True,"[[""region_name:8"", 0]]",0x8019B182,미르마나 공항,,,CATALOGED
+0x81E5C,0x81D58,True,"[[""region_name:9"", 0]]",0x8019BD05,수도 군본부,,,CATALOGED
+0x81E60,0x81D64,True,"[[""region_name:10"", 0]]",0x8019BD3D,토요케 숲,,,CATALOGED
+0x81E64,0x81D70,True,"[[""region_name:11"", 0]]",0x8019BDAD,루와지 숲,,,CATALOGED
+0x81E68,0x81D78,True,"[[""region_name:12"", 0]]",0x8019C126,카카라스 숲,,,CATALOGED
+0x81E6C,0x81D84,True,"[[""region_name:13"", 0]]",0x8019BBF9,센바라 늘,,,CATALOGED
+0x81E70,0x81D90,True,"[[""region_name:14"", 0]]",0x8019C79D,그레이시누 공항,,,CATALOGED
+0x81E74,0x81D9C,True,"[[""region_name:15"", 0]]",0x8019AFAF,라마다사,,,CATALOGED
+0x81E78,0x81DA4,True,"[[""region_name:16"", 0]]",0x8019AEFC,라마다산,,,CATALOGED
+0x81E7C,0x81DAC,True,"[[""region_name:17"", 0]]",0x8019AB92,아라라토스 공항,,,CATALOGED
+0x81E80,0x81DB8,True,"[[""region_name:18"", 0]]",0x8019BD7D,촌가라의 가게,,,CATALOGED
+0x81E84,0x81DC4,True,"[[""region_name:19"", 0]]",0x8019BD55,유적 던전,,,CATALOGED
+0x81E88,0x81DD0,True,"[[""region_name:20"", 0]]",0x8019BE94,아제다 고지,,,CATALOGED
+0x81E8C,0x81DDC,True,"[[""region_name:21"", 0]]",0x8019C8EE,아리바샤 공항,,,CATALOGED
+0x81E90,0x81DE8,True,"[[""region_name:22"", 0]]",0x8019C2B6,사류족 마을,,,CATALOGED
+0x81E94,0x81DF4,True,"[[""region_name:23"", 0]]",0x8019AED8,물의 신전,,,CATALOGED
+0x81E98,0x81DFC,True,"[[""region_name:24"", 0]]",0x8019BC6D,리덴 유적,,,CATALOGED
+0x81E9C,0x81E08,True,"[[""region_name:25"", 0]]",0x8019BEE1,사라 사막,,,CATALOGED
+0x81EA0,0x81E10,True,"[[""region_name:26"", 0]]",0x8019BAAC,라슈마 암장,,,CATALOGED
+0x81EA4,0x81E1C,True,"[[""region_name:27"", 0]]",0x8019C130,카델 공항,,,CATALOGED
+0x81EA8,0x81E28,True,"[[""region_name:28"", 0]]",0x8019AFE1,투기장,,,CATALOGED
+0x81EAC,0x81E30,True,"[[""region_name:29"", 0]]",0x8019BE15,클라프섬,,,CATALOGED
+0x81EE8,0x81EB0,True,"[[""ui_pointer:81EE8"", 0]]",0x8019AEA2,스메리아,,,CATALOGED
+0x81EEC,0x81EB8,True,"[[""ui_pointer:81EEC"", 0]]",0x8019C8D5,미르마나,,,CATALOGED
+0x81EF0,0x81EC0,True,"[[""ui_pointer:81EF0"", 0]]",0x8019BC3D,그레이시누,,,CATALOGED
+0x81EF4,0x81EC8,True,"[[""ui_pointer:81EF4"", 0]]",0x8019AE90,아라라토스,,,CATALOGED
+0x81EF8,0x81ED0,True,"[[""ui_pointer:81EF8"", 0]]",0x8019BE86,아리바샤,,,CATALOGED
+0x81EFC,0x81ED8,True,"[[""ui_pointer:81EFC"", 0]]",0x8019AFDC,카델,,,CATALOGED
+0x81F00,0x81EE0,True,"[[""ui_pointer:81F00"", 0]]",0x8019BC1D,지크라프섬,,,CATALOGED
+0x82170,0x81F04,True,"[[""location_name:0"", 0]]",0x8019B0AD,,,,CATALOGED
+0x82174,0x81F08,True,"[[""location_name:1"", 0]]",0x8019BB18,산정의 사당,,,CATALOGED
+0x82178,0x81F10,True,"[[""location_name:2"", 0]]",0x8019BE8D,아크의 집,,,CATALOGED
+0x8217C,0x81F18,True,"[[""location_name:3"", 0]]",0x8019BED3,정령의 산,,,CATALOGED
+0x82180,0x81F20,True,"[[""location_name:4"", 0]]",0x8019AEC0,마을 입구,,,CATALOGED
+0x82184,0x81F28,True,"[[""location_name:5"", 0]]",0x8019BED3,정령의 산,,,CATALOGED
+0x82188,0x81F30,True,"[[""location_name:6"", 0]]",0x8019C176,팔렌시아 성,,,CATALOGED
+0x8218C,0x81F38,True,"[[""location_name:7"", 0]]",0x8019ADFF,알현실,,,CATALOGED
+0x82190,0x81F40,True,"[[""location_name:8"", 0]]",0x8019ABD4,스메리아 공항,,,CATALOGED
+0x82194,0x81F4C,True,"[[""location_name:9"", 0]]",0x8019AB08,팔렌시아 전망대,,,CATALOGED
+0x82198,0x81F5C,True,"[[""location_name:10"", 0]]",0x8019BEE8,대신의 방,,,CATALOGED
+0x8219C,0x81F64,True,"[[""location_name:11"", 0]]",0x8019B182,미르마나 공항,,,CATALOGED
+0x821A0,0x81F70,True,"[[""location_name:12"", 0]]",0x8019C21F,미르마나 군본부,,,CATALOGED
+0x821A4,0x81F7C,True,"[[""location_name:13"", 0]]",0x8019ADC0,장군의 방,,,CATALOGED
+0x821A8,0x81F88,True,"[[""location_name:14"", 0]]",0x8019BD3D,토요케 숲,,,CATALOGED
+0x821AC,0x81F94,True,"[[""location_name:15"", 0]]",0x8019C860,팔렌시아 지하창고,,,CATALOGED
+0x821B0,0x81FA4,True,"[[""location_name:16"", 0]]",0x8019C74A,팔렌시아 지하감옥,,,CATALOGED
+0x821B4,0x81FB0,True,"[[""location_name:17"", 0]]",0x8019D128,오르카스 언덕,,,CATALOGED
+0x821B8,0x81FBC,True,"[[""location_name:18"", 0]]",0x8019AFEB,환계,,,CATALOGED
+0x821BC,0x81FC4,True,"[[""location_name:19"", 0]]",0x8019AB92,아라라토스 공항,,,CATALOGED
+0x821C0,0x81FD0,True,"[[""location_name:20"", 0]]",0x8019BD7D,촌가라의 가게,,,CATALOGED
+0x821C4,0x81FDC,True,"[[""location_name:21"", 0]]",0x8019C8FA,아제다 고지 동굴,,,CATALOGED
+0x821C8,0x81FEC,True,"[[""location_name:22"", 0]]",0x8019AB7C,아제다 고지 외부,,,CATALOGED
+0x821CC,0x81FF8,True,"[[""location_name:23"", 0]]",0x8019BD55,유적 던전,,,CATALOGED
+0x821D0,0x82004,True,"[[""location_name:24"", 0]]",0x8019C79D,그레이시누 공항,,,CATALOGED
+0x821D4,0x82010,True,"[[""location_name:25"", 0]]",0x8019BD5D,라마다사 도장,,,CATALOGED
+0x821D8,0x8201C,True,"[[""location_name:26"", 0]]",0x8019AA84,라마다사 승정의 방,,,CATALOGED
+0x821DC,0x8202C,True,"[[""location_name:27"", 0]]",0x8019C33D,라마다산 정상,,,CATALOGED
+0x821E0,0x82034,True,"[[""location_name:28"", 0]]",0x8019AFAF,라마다사,,,CATALOGED
+0x821E4,0x8203C,True,"[[""location_name:29"", 0]]",0x8019C130,카델 공항,,,CATALOGED
+0x821E8,0x82048,True,"[[""location_name:30"", 0]]",0x8019AB66,니로시암 대기실,,,CATALOGED
+0x821EC,0x82054,True,"[[""location_name:31"", 0]]",0x8019C25C,니로시암 무대,,,CATALOGED
+0x821F0,0x82060,True,"[[""location_name:32"", 0]]",0x8019C8EE,아리바샤 공항,,,CATALOGED
+0x821F4,0x8206C,True,"[[""location_name:33"", 0]]",0x8019C2B6,사류족 마을,,,CATALOGED
+0x821F8,0x82078,True,"[[""location_name:34"", 0]]",0x8019AED8,물의 신전,,,CATALOGED
+0x821FC,0x82080,True,"[[""location_name:35"", 0]]",0x8019AB50,지하 엘리베이터,,,CATALOGED
+0x82200,0x8208C,True,"[[""location_name:36"", 0]]",0x8019B956,지하 바이오 연구실,,,CATALOGED
+0x82204,0x82098,True,"[[""location_name:37"", 0]]",0x8019AC6E,팔렌시아 시가지,,,CATALOGED
+0x82208,0x820A4,True,"[[""location_name:38"", 0]]",0x8019B620,성관 봉인의 폭포 외부,,,CATALOGED
+0x8220C,0x820B4,True,"[[""location_name:39"", 0]]",0x8019B69C,성관 봉인의 폭포 내부,,,CATALOGED
+0x82210,0x820C4,True,"[[""location_name:40"", 0]]",0x8019C0A4,토우빌 암벽,,,CATALOGED
+0x82214,0x820D4,True,"[[""location_name:41"", 0]]",0x8019ABB3,해변의 비행선,,,CATALOGED
+0x82218,0x820E0,True,"[[""location_name:42"", 0]]",0x8019BE78,니르 평원,,,CATALOGED
+0x8221C,0x820EC,True,"[[""location_name:43"", 0]]",0x8019C11C,카라간 평야,,,CATALOGED
+0x82220,0x820F8,True,"[[""location_name:44"", 0]]",0x8019BD95,쿠나 언덕,,,CATALOGED
+0x82224,0x82100,True,"[[""location_name:45"", 0]]",0x8019BDAD,루와지 숲,,,CATALOGED
+0x82228,0x82108,True,"[[""location_name:46"", 0]]",0x8019C126,카카라스 숲,,,CATALOGED
+0x8222C,0x82114,True,"[[""location_name:47"", 0]]",0x8019BBF9,센바라 늘,,,CATALOGED
+0x82230,0x82120,True,"[[""location_name:48"", 0]]",0x8019BC6D,리덴 유적,,,CATALOGED
+0x82234,0x8212C,True,"[[""location_name:49"", 0]]",0x8019BEE1,사라 사막,,,CATALOGED
+0x82238,0x82134,True,"[[""location_name:50"", 0]]",0x8019BAAC,라슈마 암장,,,CATALOGED
+0x8223C,0x82140,True,"[[""location_name:51"", 0]]",0x8019AB71,니로시암 투기장,,,CATALOGED
+0x82240,0x8214C,True,"[[""location_name:52"", 0]]",0x8019BD5D,라마다사 도장,,,CATALOGED
+0x82244,0x82158,True,"[[""location_name:53"", 0]]",0x8019C8BB,클라프섬 공항,,,CATALOGED
+0x82248,0x82164,True,"[[""location_name:54"", 0]]",0x8019C766,클라프탑 최상층,,,CATALOGED
+0x82348,0x8224C,True,"[[""ui_pointer:82348"", 0]]",0x8019AEA8,대상 변경,,,CATALOGED
+0x8234C,0x8225C,True,"[[""ui_pointer:8234C"", 0]]",0x8019B144,<CTRL:E702>공격  <CTRL:E705>링 열기,,,CATALOGED
+0x82350,0x82270,True,"[[""ui_pointer:82350"", 0]]",0x8019B155,<CTRL:E703>행동 끝  <CTRL:E708>상태 확인,,,CATALOGED
+0x82354,0x8228C,True,"[[""ui_pointer:82354"", 0]]",0x8019C7B7,스킬을 선택하세요,,,CATALOGED
+0x82358,0x8229C,True,"[[""ui_pointer:82358"", 0]]",0x8019ADC7,돌아갑니다,,,CATALOGED
+0x8235C,0x822AC,True,"[[""ui_pointer:8235C"", 0]]",0x8019B16A,<CTRL:E702>결정  <CTRL:E703>돌아가기,,,CATALOGED
+0x82360,0x822C4,True,"[[""ui_pointer:82360"", 0]]",0x801FF804,L과 R로 다음 대상을 선택합니다.,,,CATALOGED
+0x82364,0x822D4,True,"[[""ui_pointer:82364"", 0]]",0x8019C543,결정하면 주변에 스킬을 사용합니다,,,CATALOGED
+0x82368,0x822E8,True,"[[""ui_pointer:82368"", 0]]",0x8019B3EE,결정하면 보는 방향에 스킬을 사용합니다,,,CATALOGED
+0x8236C,0x82304,True,"[[""ui_pointer:8236C"", 0]]",0x8019B568,비어 있는 곳을 선택하세요,,,CATALOGED
+0x82370,0x82318,True,"[[""ui_pointer:82370"", 0]]",0x8019B57B,결정하면 스킬을 사용합니다,,,CATALOGED
+0x82374,0x82328,True,"[[""ui_pointer:82374"", 0]]",0x8019B58E,<CTRL:E703><CTRL:E705> 인물을 선택하세요,,,CATALOGED
+0x82378,0x8233C,True,"[[""ui_pointer:82378"", 0]]",0x8019AA24,<CTRL:E708> 전투 시작,,,CATALOGED
+0x823A4,0x8237C,True,"[[""ui_pointer:823A4"", 0]]",0x8019B047,승리!,,,CATALOGED
+0x823A8,0x82384,True,"[[""ui_pointer:823A8"", 0]]",0x8019BEF6,게임 오버,,,CATALOGED
+0x823D8,0x823C0,True,"[[""ui_pointer:823D8"", 0]]",0x8019AEE4,돌 상태,,,CATALOGED
+0x823DC,0x823C8,True,"[[""ui_pointer:823DC"", 0]]",0x8019B037,마비,,,CATALOGED
+0x823E0,0x823D0,True,"[[""ui_pointer:823E0"", 0]]",0x8019B09E,수면,,,CATALOGED
+0x82444,0x823E4,True,"[[""ui_pointer:82444"", 0]]",0x8019B980,데이터 저장 불러오기,,,CATALOGED
+0x82448,0x823F4,True,"[[""ui_pointer:82448"", 0]]",0x8019BD2D,데이터 저장,,,CATALOGED
+0x8244C,0x82400,True,"[[""ui_pointer:8244C"", 0]]",0x8019C090,데이터 불러오기,,,CATALOGED
+0x82450,0x82408,True,"[[""ui_pointer:82450"", 0]]",0x8019C82C,카드를 선택하세요,,,CATALOGED
+0x82454,0x82414,True,"[[""ui_pointer:82454"", 0]]",0x8019AF26,카드 1,,,CATALOGED
+0x82458,0x8241C,True,"[[""ui_pointer:82458"", 0]]",0x8019AF20,카드 2,,,CATALOGED
+0x8245C,0x82424,True,"[[""ui_pointer:8245C"", 0]]",0x8019C86D,파일을 선택하세요,,,CATALOGED
+0x82460,0x82434,True,"[[""ui_pointer:82460"", 0]]",0x8019B8FC,메모리 카드가 없습니다,,,CATALOGED
+0x82474,0x82468,True,"[[""ui_pointer:82474"", 0]]",0x8019D10B,」를 손에 넣었습니다.,,,CATALOGED
+0x82498,0x82478,True,"[[""ui_pointer:82498"", 0]]",0x8019B5C6,스테이지에서 얻은 경험치,,,CATALOGED
+0x8249C,0x8248C,True,"[[""ui_pointer:8249C"", 0]]",0x8019AC2C,격파한 적 수,,,CATALOGED
+0x82518,0x824A0,True,"[[""ui_pointer:82518"", 0]]",0x8019C16C,레벨 상승!!,,,CATALOGED
+0x8251C,0x824AC,True,"[[""ui_pointer:8251C"", 0]]",0x8019C216,최대 체력,,,CATALOGED
+0x82520,0x824B8,True,"[[""ui_pointer:82520"", 0]]",0x8019BBDE,최대 마력,,,CATALOGED
+0x82524,0x824C4,True,"[[""ui_pointer:82524"", 0]]",0x8019BD9D,공격력,,,CATALOGED
+0x82528,0x824C8,True,"[[""ui_pointer:82528"", 0]]",0x8019AE06,방어력,,,CATALOGED
+0x8252C,0x824D0,True,"[[""ui_pointer:8252C"", 0]]",0x8019AF82,마력,,,CATALOGED
+0x82530,0x824D4,True,"[[""ui_pointer:82530"", 0]]",0x8019BE0D,민첩성,,,CATALOGED
+0x82538,0x824E0,True,"[[""ui_pointer:82538"", 0]]",0x8019FCF0, 상승,,,CATALOGED
+0x8253C,0x824E8,True,"[[""ui_pointer:8253C"", 0]]",0x8019B009,점프,,,CATALOGED
+0x82540,0x824F0,True,"[[""ui_pointer:82540"", 0]]",0x8019AFC8,던지기,,,CATALOGED
+0x82544,0x824F4,True,"[[""ui_pointer:82544"", 0]]",0x8019B06F,받기,,,CATALOGED
+0x82548,0x824F8,True,"[[""ui_pointer:82548"", 0]]",0x8019AFE6,반격,,,CATALOGED
+0x8254C,0x824FC,True,"[[""ui_pointer:8254C"", 0]]",0x8019BDC5,레벨 상승,,,CATALOGED
+0x82554,0x8250C,True,"[[""ui_pointer:82554"", 0]]",0x8019D119,」를 배웠다.,,,CATALOGED
+0x825C8,0x8255C,True,"[[""ui_pointer:825C8"", 0]]",0x8019BC85,사운드 출력,,,CATALOGED
+0x825CC,0x82564,True,"[[""ui_pointer:825CC"", 0]]",0x8019C054,대각선 입력,,,CATALOGED
+0x825D0,0x82570,True,"[[""ui_pointer:825D0"", 0]]",0x8019C310,돌아가기 확인,,,CATALOGED
+0x825D4,0x8257C,True,"[[""ui_pointer:825D4"", 0]]",0x8019BC7D,도움말 보기,,,CATALOGED
+0x825D8,0x82588,True,"[[""ui_pointer:825D8"", 0]]",0x8019BD15,몬스터 도감,,,CATALOGED
+0x825DC,0x8259C,True,"[[""ui_pointer:825DC"", 0]]",0x8019BECC,스테레오,,,CATALOGED
+0x825E0,0x825A4,True,"[[""ui_pointer:825E0"", 0]]",0x8019B043,모노,,,CATALOGED
+0x825E4,0x825AC,True,"[[""ui_pointer:825E4"", 0]]",0x8019B04B,일반,,,CATALOGED
+0x825E8,0x825B0,True,"[[""ui_pointer:825E8"", 0]]",0x8019B02F,사용,,,CATALOGED
+0x825EC,0x825B8,True,"[[""ui_pointer:825EC"", 0]]",0x8019C2A4,사용안함,,,CATALOGED
+0x8262C,0x82618,True,"[[""ui_pointer:8262C"", 0]]",0x8019BC95,대전 성적,,,CATALOGED
+0x82638,0x82628,True,"[[""ui_pointer:82638"", 0]]",0x8019B095,기량,,,CATALOGED
+0x8293C,0x82640,True,"[[""ui_pointer:8293C"", 0]]",0x8019C2DA,마비 공격,,,CATALOGED
+0x82940,0x82648,True,"[[""ui_pointer:82940"", 0]]",0x8019BB33,머리 던지기,,,CATALOGED
+0x82944,0x82650,True,"[[""ui_pointer:82944"", 0]]",0x8019BEDA,사일런트,,,CATALOGED
+0x82948,0x82658,True,"[[""ui_pointer:82948"", 0]]",0x8019C292,해로운 공격,,,CATALOGED
+0x8294C,0x82660,True,"[[""ui_pointer:8294C"", 0]]",0x8019B063,분열,,,CATALOGED
+0x82950,0x82668,True,"[[""ui_pointer:82950"", 0]]",0x8019C144,폭발 수리검,,,CATALOGED
+0x82954,0x82674,True,"[[""ui_pointer:82954"", 0]]",0x8019B027,자폭,,,CATALOGED
+0x82958,0x82678,True,"[[""ui_pointer:82958"", 0]]",0x8019BC45,드림 노크,,,CATALOGED
+0x8295C,0x82684,True,"[[""ui_pointer:8295C"", 0]]",0x8019AEAE,대폭발,,,CATALOGED
+0x82960,0x82690,True,"[[""ui_pointer:82960"", 0]]",0x8019BD8D,바람 검,,,CATALOGED
+0x82964,0x8269C,True,"[[""ui_pointer:82964"", 0]]",0x8019BCE5,전기 폭풍,,,CATALOGED
+0x82968,0x826A8,True,"[[""ui_pointer:82968"", 0]]",0x8019C8E2,다이아몬드 더스트,,,CATALOGED
+0x8296C,0x826B4,True,"[[""ui_pointer:8296C"", 0]]",0x8019C040,해로운 기운 제거,,,CATALOGED
+0x82970,0x826BC,True,"[[""ui_pointer:82970"", 0]]",0x8019C277,하늘의 심판,,,CATALOGED
+0x82974,0x826C4,True,"[[""ui_pointer:82974"", 0]]",0x8019B04F,부활,,,CATALOGED
+0x82978,0x826D0,True,"[[""ui_pointer:82978"", 0]]",0x8019AE45,디바이드,,,CATALOGED
+0x8297C,0x826D8,True,"[[""ui_pointer:8297C"", 0]]",0x8019AEC6,내려치기,,,CATALOGED
+0x82980,0x826E0,True,"[[""ui_pointer:82980"", 0]]",0x8019B053,회복,,,CATALOGED
+0x82984,0x826E8,True,"[[""ui_pointer:82984"", 0]]",0x8019AF2C,감싸기,,,CATALOGED
+0x82988,0x826F0,True,"[[""ui_pointer:82988"", 0]]",0x8019BEBE,해로운 기운,,,CATALOGED
+0x8298C,0x826F8,True,"[[""ui_pointer:8298C"", 0]]",0x8019AE0D,피 빨기,,,CATALOGED
+0x82990,0x82700,True,"[[""ui_pointer:82990"", 0]]",0x8019AF7D,초음파,,,CATALOGED
+0x82994,0x82708,True,"[[""ui_pointer:82994"", 0]]",0x8019AEE4,돌 상태,,,CATALOGED
+0x82998,0x8270C,True,"[[""ui_pointer:82998"", 0]]",0x8019BC9D,주위 공격,,,CATALOGED
+0x829A0,0x82718,True,"[[""ui_pointer:829A0"", 0]]",0x8019AFCD,강타,,,CATALOGED
+0x829A4,0x82720,True,"[[""ui_pointer:829A4"", 0]]",0x8019AC79,꽃가루 공격,,,CATALOGED
+0x829A8,0x82728,True,"[[""ui_pointer:829A8"", 0]]",0x8019BDCD,씨 날리기,,,CATALOGED
+0x829AC,0x82730,True,"[[""ui_pointer:829AC"", 0]]",0x8019AE3E,검은 전기,,,CATALOGED
+0x829B0,0x82738,True,"[[""ui_pointer:829B0"", 0]]",0x8019C62E,지옥의 계단,,,CATALOGED
+0x829B4,0x82744,True,"[[""ui_pointer:829B4"", 0]]",0x8019BDDD,죽음의 문,,,CATALOGED
+0x829B8,0x8274C,True,"[[""ui_pointer:829B8"", 0]]",0x8019AFC3,합체,,,CATALOGED
+0x829BC,0x82754,True,"[[""ui_pointer:829BC"", 0]]",0x8019BC5D,시야 차단,,,CATALOGED
+0x829C0,0x8275C,True,"[[""ui_pointer:829C0"", 0]]",0x8019BC8D,인형 난무,,,CATALOGED
+0x829C4,0x82764,True,"[[""ui_pointer:829C4"", 0]]",0x8019B004,헤모지,,,CATALOGED
+0x829C8,0x8276C,True,"[[""ui_pointer:829C8"", 0]]",0x8019BCED,전기 파동,,,CATALOGED
+0x829CC,0x82774,True,"[[""ui_pointer:829CC"", 0]]",0x8019C0EA,불꽃 파동,,,CATALOGED
+0x829D0,0x8277C,True,"[[""ui_pointer:829D0"", 0]]",0x8019C234,황천 비행,,,CATALOGED
+0x829D4,0x82784,True,"[[""ui_pointer:829D4"", 0]]",0x8019BCDD,마법 봉인,,,CATALOGED
+0x829D8,0x8278C,True,"[[""ui_pointer:829D8"", 0]]",0x8019BDE5,죽음 회복,,,CATALOGED
+0x829DC,0x82794,True,"[[""ui_pointer:829DC"", 0]]",0x8019AC8F,더스트 문양,,,CATALOGED
+0x829E0,0x8279C,True,"[[""ui_pointer:829E0"", 0]]",0x8019B0A1,물기,,,CATALOGED
+0x829E4,0x827A4,True,"[[""ui_pointer:829E4"", 0]]",0x8019ADEA,번 그라운드,,,CATALOGED
+0x829E8,0x827B0,True,"[[""ui_pointer:829E8"", 0]]",0x8019BCFD,전체 회복,,,CATALOGED
+0x829EC,0x827BC,True,"[[""ui_pointer:829EC"", 0]]",0x8019C2D1,게일 플래시,,,CATALOGED
+0x829F0,0x827C8,True,"[[""ui_pointer:829F0"", 0]]",0x8019C1EE,슬로우 에너미,,,CATALOGED
+0x829F4,0x827D4,True,"[[""ui_pointer:829F4"", 0]]",0x8019AE4C,별 내리기,,,CATALOGED
+0x829F8,0x827E0,True,"[[""ui_pointer:829F8"", 0]]",0x8019B053,회복,,,CATALOGED
+0x829FC,0x827E8,True,"[[""ui_pointer:829FC"", 0]]",0x8019C040,해로운 기운 제거,,,CATALOGED
+0x82A00,0x827F0,True,"[[""ui_pointer:82A00"", 0]]",0x8019BEDA,사일런트,,,CATALOGED
+0x82A04,0x827F8,True,"[[""ui_pointer:82A04"", 0]]",0x8019BEC5,리프레시,,,CATALOGED
+0x82A08,0x82800,True,"[[""ui_pointer:82A08"", 0]]",0x8019C277,하늘의 심판,,,CATALOGED
+0x82A0C,0x82808,True,"[[""ui_pointer:82A0C"", 0]]",0x8019B04F,부활,,,CATALOGED
+0x82A10,0x82814,True,"[[""ui_pointer:82A10"", 0]]",0x8019AE45,디바이드,,,CATALOGED
+0x82A14,0x8281C,True,"[[""ui_pointer:82A14"", 0]]",0x8019BD45,토슈 비기,,,CATALOGED
+0x82A18,0x82828,True,"[[""ui_pointer:82A18"", 0]]",0x8019AF44,봉인검,,,CATALOGED
+0x82A1C,0x82830,True,"[[""ui_pointer:82A1C"", 0]]",0x8019AE1B,진공검,,,CATALOGED
+0x82A20,0x82838,True,"[[""ui_pointer:82A20"", 0]]",0x8019BEA9,그림자검,,,CATALOGED
+0x82A24,0x82840,True,"[[""ui_pointer:82A24"", 0]]",0x8019C2FE,전투 큰 북,,,CATALOGED
+0x82A28,0x8284C,True,"[[""ui_pointer:82A28"", 0]]",0x8019BE25,황사자태고,,,CATALOGED
+0x82A2C,0x82858,True,"[[""ui_pointer:82A2C"", 0]]",0x8019BC55,기합 나팔,,,CATALOGED
+0x82A30,0x82860,True,"[[""ui_pointer:82A30"", 0]]",0x8019C7EB,비틀비틀 나팔,,,CATALOGED
+0x82A34,0x82868,True,"[[""ui_pointer:82A34"", 0]]",0x8019BAEB,치유의 하프,,,CATALOGED
+0x82A38,0x82874,True,"[[""ui_pointer:82A38"", 0]]",0x8019C2F5,느림의 연주,,,CATALOGED
+0x82A3C,0x82880,True,"[[""ui_pointer:82A3C"", 0]]",0x8019AA78,위타천 오카리나,,,CATALOGED
+0x82A40,0x8288C,True,"[[""ui_pointer:82A40"", 0]]",0x8019AACC,방향잡이 피리,,,CATALOGED
+0x82A44,0x82898,True,"[[""ui_pointer:82A44"", 0]]",0x8019AEAE,대폭발,,,CATALOGED
+0x82A48,0x828A4,True,"[[""ui_pointer:82A48"", 0]]",0x8019BC45,드림 노크,,,CATALOGED
+0x82A4C,0x828B0,True,"[[""ui_pointer:82A4C"", 0]]",0x8019C8E2,다이아몬드 더스트,,,CATALOGED
+0x82A50,0x828BC,True,"[[""ui_pointer:82A50"", 0]]",0x8019BD8D,바람 검,,,CATALOGED
+0x82A54,0x828C8,True,"[[""ui_pointer:82A54"", 0]]",0x8019BCE5,전기 폭풍,,,CATALOGED
+0x82A58,0x828D4,True,"[[""ui_pointer:82A58"", 0]]",0x8019BD25,회오리 차기,,,CATALOGED
+0x82A5C,0x828DC,True,"[[""ui_pointer:82A5C"", 0]]",0x8019AEF0,유성폭,,,CATALOGED
+0x82A60,0x828E4,True,"[[""ui_pointer:82A60"", 0]]",0x8019BD4D,유령 파동,,,CATALOGED
+0x82A64,0x828F0,True,"[[""ui_pointer:82A64"", 0]]",0x8019BDFD,멸장열파,,,CATALOGED
+0x82A6C,0x82904,True,"[[""ui_pointer:82A6C"", 0]]",0x8019AF14,불러내기,,,CATALOGED
+0x82A70,0x8290C,True,"[[""ui_pointer:82A70"", 0]]",0x8019B0AA,조사,,,CATALOGED
+0x82A74,0x82914,True,"[[""ui_pointer:82A74"", 0]]",0x8019B053,회복,,,CATALOGED
+0x82A78,0x82918,True,"[[""ui_pointer:82A78"", 0]]",0x8019BE55,다리 만들기,,,CATALOGED
+0x82A7C,0x82920,True,"[[""ui_pointer:82A7C"", 0]]",0x8019BD85,바람 전기,,,CATALOGED
+0x82A80,0x82928,True,"[[""ui_pointer:82A80"", 0]]",0x8019BBE7,몸 가져오기,,,CATALOGED
+0x82A84,0x82930,True,"[[""ui_pointer:82A84"", 0]]",0x8019AE9C,기운 없음,,,CATALOGED
+0x82AC0,0x82A88,True,"[[""ui_pointer:82AC0"", 0]]",0x8019AC00,예      아니요,,,CATALOGED
+0x82AC4,0x82A90,True,"[[""ui_pointer:82AC4"", 0]]",0x8019AC42,저장하시겠습니까?,,,CATALOGED
+0x82AC8,0x82AA0,True,"[[""ui_pointer:82AC8"", 0]]",0x8019C55A,전투 전 장비를 정비하시겠습니까?,,,CATALOGED
+0x82ACC,0x82AB0,True,"[[""ui_pointer:82ACC"", 0]]",0x8019AAF0,진행하시겠습니까?,,,CATALOGED

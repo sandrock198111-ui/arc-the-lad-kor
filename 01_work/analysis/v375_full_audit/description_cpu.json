@@ -1,0 +1,3927 @@
+{
+  "cases": 346,
+  "description_rows": 154,
+  "empty_placeholders_not_rendered": [
+    [
+      "skill_description",
+      0
+    ]
+  ],
+  "item_anchors": [
+    10,
+    60,
+    110
+  ],
+  "abi_calls": 634,
+  "packets_fit": true,
+  "other_help_group_preserved": true,
+  "resident_code_preserved": true,
+  "gpu_runtime_verified": false,
+  "mp_cases": [
+    {
+      "coverage": "MP prefix setup/label only; BIOS formatting and orb not executed",
+      "state": {
+        "header_address": "0x801F9D44",
+        "base_address": "0x801BE9BC",
+        "limit": 128,
+        "count": 2,
+        "x": 81,
+        "y": 127,
+        "style": 0,
+        "D": 12,
+        "E": 12,
+        "F": 0,
+        "line_extra": 2,
+        "source_pointer": "0x00000000"
+      },
+      "packets": [
+        {
+          "ordinal": 0,
+          "packet_address": "0x801BE9BC",
+          "x": 66,
+          "y": 127,
+          "u": 244,
+          "v": 176,
+          "w": 6,
+          "h": 12,
+          "clut": "0x7FC0",
+          "plane": 0,
+          "physical_index": null,
+          "char": "<None>"
+        },
+        {
+          "ordinal": 1,
+          "packet_address": "0x801BE9F0",
+          "x": 72,
+          "y": 127,
+          "u": 244,
+          "v": 224,
+          "w": 6,
+          "h": 12,
+          "clut": "0x7FC1",
+          "plane": 1,
+          "physical_index": null,
+          "char": "<None>"
+        }
+      ]
+    }
+  ],
+  "cases_detail": [
+    {
+      "table": "equipment_description",
+      "index": 0,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 150,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 0,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 200,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 0,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 250,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 1,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 150,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 1,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 200,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 1,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 250,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 2,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 96,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 2,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 2,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 196,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 3,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 178,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 3,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 228,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 3,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 278,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 4,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 130,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 4,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 4,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 230,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 5,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 130,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 5,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 5,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 230,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 6,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 6,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 6,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 7,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 14,
+      "max_right": 124,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 7,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 14,
+      "max_right": 174,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 7,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 14,
+      "max_right": 224,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 8,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 116,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 8,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 8,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 216,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 9,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 144,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 9,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 9,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 244,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 10,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 10,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 10,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 11,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 164,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 11,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 214,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 11,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 264,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 12,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 15,
+      "max_right": 192,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 12,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 15,
+      "max_right": 242,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 12,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 15,
+      "max_right": 292,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 13,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 164,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 13,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 214,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 13,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 264,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 14,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 144,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 14,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 14,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 244,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 15,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 18,
+      "max_right": 198,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 15,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 18,
+      "max_right": 248,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 15,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 18,
+      "max_right": 298,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 16,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 164,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 16,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 214,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 16,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 264,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 17,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 130,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 17,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 17,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 230,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 18,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 130,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 18,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 18,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 230,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 19,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 130,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 19,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 19,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 230,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 20,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 102,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 20,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 152,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 20,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 202,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 21,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 96,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 21,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 21,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 196,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 22,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 102,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 22,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 152,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 22,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 202,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 23,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 172,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 23,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 222,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 23,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 272,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 24,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 20,
+      "max_right": 178,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 24,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 20,
+      "max_right": 228,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 24,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 20,
+      "max_right": 278,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 25,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 144,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 25,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 25,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 244,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 26,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 150,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 26,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 200,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 26,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 250,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 27,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 27,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 27,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 28,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 20,
+      "max_right": 172,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 28,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 20,
+      "max_right": 222,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 28,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 20,
+      "max_right": 272,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 29,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 144,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 29,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 29,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 244,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 30,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 16,
+      "max_right": 204,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 30,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 16,
+      "max_right": 254,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 30,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 16,
+      "max_right": 304,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 31,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 31,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 31,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 32,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 32,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 32,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 33,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 150,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 33,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 200,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 33,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 250,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 34,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 130,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 34,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 34,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 230,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 35,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 130,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 35,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 35,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 230,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 36,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 24,
+      "max_right": 186,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 36,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 24,
+      "max_right": 236,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 36,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 24,
+      "max_right": 286,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 37,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 4,
+      "max_right": 68,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 37,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 4,
+      "max_right": 118,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 37,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 4,
+      "max_right": 168,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 38,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 144,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 38,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 38,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 244,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 39,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 144,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 39,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 39,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 244,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 40,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 96,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 40,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 40,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 196,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 41,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 178,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 41,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 228,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 41,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 278,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 42,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 164,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 42,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 214,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 42,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 264,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 43,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 19,
+      "max_right": 172,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 43,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 19,
+      "max_right": 222,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 43,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 19,
+      "max_right": 272,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 44,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 44,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 44,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 45,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 96,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 45,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 45,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 196,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 46,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 144,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 46,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 46,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 244,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 47,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 14,
+      "max_right": 110,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 47,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 14,
+      "max_right": 160,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 47,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 14,
+      "max_right": 210,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 48,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 23,
+      "max_right": 186,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 48,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 23,
+      "max_right": 236,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 48,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 23,
+      "max_right": 286,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 49,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 116,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 49,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 49,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 216,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 50,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 144,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 50,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 50,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 244,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 51,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 51,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 51,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 52,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 52,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 52,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 53,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 53,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 53,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 54,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 54,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 54,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 55,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 178,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 55,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 228,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 55,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 278,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 56,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 15,
+      "max_right": 116,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 56,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 15,
+      "max_right": 166,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 56,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 15,
+      "max_right": 216,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 57,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 150,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 57,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 200,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 57,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 11,
+      "max_right": 250,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 58,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 164,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 58,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 214,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 58,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 264,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 59,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 59,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 59,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 60,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 18,
+      "max_right": 152,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 60,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 18,
+      "max_right": 202,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 60,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 18,
+      "max_right": 252,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 61,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 164,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 61,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 214,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 61,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 264,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 62,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 16,
+      "max_right": 158,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 62,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 16,
+      "max_right": 208,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 62,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 16,
+      "max_right": 258,
+      "max_bottom": 150
+    },
+    {
+      "table": "equipment_description",
+      "index": 63,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 90,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 63,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 140,
+      "max_bottom": 132
+    },
+    {
+      "table": "equipment_description",
+      "index": 63,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 190,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 0,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 116,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 0,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 0,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 216,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 1,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 96,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 1,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 1,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 196,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 2,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 102,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 2,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 152,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 2,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 202,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 3,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 116,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 3,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 3,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 216,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 4,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 164,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 4,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 214,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 4,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 12,
+      "max_right": 264,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 5,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 96,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 5,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 5,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 196,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 6,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 96,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 6,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 6,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 196,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 7,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 116,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 7,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 7,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 216,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 8,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 116,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 8,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 8,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 216,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 9,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 9,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 9,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 10,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 116,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 10,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 10,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 8,
+      "max_right": 216,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 11,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 11,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 11,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 12,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 102,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 12,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 152,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 12,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 7,
+      "max_right": 202,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 13,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 178,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 13,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 228,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 13,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 13,
+      "max_right": 278,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 14,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 4,
+      "max_right": 68,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 14,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 4,
+      "max_right": 118,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 14,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 4,
+      "max_right": 168,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 15,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 130,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 15,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 15,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 230,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 16,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 130,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 16,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 16,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 230,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 17,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 17,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 17,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 18,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 17,
+      "max_right": 138,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 18,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 17,
+      "max_right": 188,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 18,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 17,
+      "max_right": 238,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 19,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 96,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 19,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 19,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 6,
+      "max_right": 196,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 20,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 20,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 20,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 21,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 136,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 21,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 186,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 21,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 236,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 22,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 22,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 22,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 23,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 136,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 23,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 186,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 23,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 10,
+      "max_right": 236,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 24,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 15,
+      "max_right": 116,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 24,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 15,
+      "max_right": 166,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 24,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 15,
+      "max_right": 216,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 25,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 130,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 25,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 25,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 9,
+      "max_right": 230,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 26,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 82,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 26,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 26,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 182,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 27,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 18,
+      "max_right": 142,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 27,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 18,
+      "max_right": 192,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 27,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 18,
+      "max_right": 242,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 28,
+      "anchor": 10,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 17,
+      "max_right": 138,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 28,
+      "anchor": 60,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 17,
+      "max_right": 188,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 28,
+      "anchor": 110,
+      "rows_y": [
+        116,
+        134
+      ],
+      "packets": 17,
+      "max_right": 238,
+      "max_bottom": 150
+    },
+    {
+      "table": "consumable_description",
+      "index": 29,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 90,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 29,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 140,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 29,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 190,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 30,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 90,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 30,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 140,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 30,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 190,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 31,
+      "anchor": 10,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 90,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 31,
+      "anchor": 60,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 140,
+      "max_bottom": 132
+    },
+    {
+      "table": "consumable_description",
+      "index": 31,
+      "anchor": 110,
+      "rows_y": [
+        116
+      ],
+      "packets": 5,
+      "max_right": 190,
+      "max_bottom": 132
+    },
+    {
+      "table": "skill_description",
+      "index": 1,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 11,
+      "max_right": 208,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 2,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 12,
+      "max_right": 214,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 3,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 11,
+      "max_right": 208,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 4,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 7,
+      "max_right": 152,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 5,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 12,
+      "max_right": 214,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 6,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 7,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 4,
+      "max_right": 118,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 8,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 9,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 10,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 11,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 12,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 15,
+      "max_right": 248,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 13,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 14,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 15,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 11,
+      "max_right": 192,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 16,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 17,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 18,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 19,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 12,
+      "max_right": 214,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 20,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 21,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 22,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 7,
+      "max_right": 152,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 23,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 24,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 14,
+      "max_right": 242,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 25,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 11,
+      "max_right": 208,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 26,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 27,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 11,
+      "max_right": 208,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 28,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 11,
+      "max_right": 208,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 29,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 30,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 31,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 11,
+      "max_right": 208,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 32,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 7,
+      "max_right": 152,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 33,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 13,
+      "max_right": 228,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 34,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 7,
+      "max_right": 152,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 35,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 12,
+      "max_right": 222,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 36,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 37,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 8,
+      "max_right": 166,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 38,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 39,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 40,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 41,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 42,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 43,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 44,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 45,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 46,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 47,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 15,
+      "max_right": 240,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 48,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 49,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 50,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 6,
+      "max_right": 146,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 51,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 52,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 5,
+      "max_right": 132,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 53,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 10,
+      "max_right": 194,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 54,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 55,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 56,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 9,
+      "max_right": 180,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 57,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 11,
+      "max_right": 208,
+      "max_bottom": 125
+    },
+    {
+      "table": "skill_description",
+      "index": 58,
+      "anchor": 60,
+      "rows_y": [
+        109
+      ],
+      "packets": 13,
+      "max_right": 228,
+      "max_bottom": 125
+    }
+  ],
+  "build_sha256": "AD9ED2B9E898F05C2EC5C78ABBA4253CE052B7B4836DEE31D84108AD4256CFBB",
+  "exe_sha256": "57AC9833007E92B0A4E6730A11B44DE1958C6E7BBBA3BBA2C4C69B3F980D3782"
+}

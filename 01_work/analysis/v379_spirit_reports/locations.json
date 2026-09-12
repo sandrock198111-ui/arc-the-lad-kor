@@ -1,0 +1,356 @@
+[
+  {
+    "slot": 1,
+    "objects": [
+      {
+        "header": 2071876,
+        "state": {
+          "header_address": "0x801F9D44",
+          "base_address": "0x801BE9BC",
+          "limit": 64,
+          "count": 48,
+          "x": 170,
+          "y": 80,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x8011706E"
+        },
+        "hits": [
+          {
+            "file": "22/S2047.DAT",
+            "position": 295022,
+            "rows": [
+              {
+                "row": 505,
+                "start": 294978,
+                "length": 44,
+                "ko": "우리는 지금부터 팔렌시아 성으로 돌아가지만, 이제 여기에 다시 돌아오지 못할지도 몰라.",
+                "jp": "俺達は今から\nパレンシア城に戻るけど\nもうここに戻つてこられないかもしれないんだ。"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slot": 2,
+    "objects": [
+      {
+        "header": 2071944,
+        "state": {
+          "header_address": "0x801F9D88",
+          "base_address": "0x801BF6BC",
+          "limit": 64,
+          "count": 4,
+          "x": 150,
+          "y": 162,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x801171FE"
+        },
+        "hits": [
+          {
+            "file": "22/S205C.DAT",
+            "position": 295422,
+            "rows": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slot": 3,
+    "objects": [
+      {
+        "header": 2071944,
+        "state": {
+          "header_address": "0x801F9D88",
+          "base_address": "0x801BF6BC",
+          "limit": 64,
+          "count": 28,
+          "x": 178,
+          "y": 178,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x80116C57"
+        },
+        "hits": [
+          {
+            "file": "21/S2022.DAT",
+            "position": 293975,
+            "rows": [
+              {
+                "row": 251,
+                "start": 293948,
+                "length": 27,
+                "ko": "병사 1:아크 님이신가. 왕의 임무는 끝내셨습니까?",
+                "jp": "兵士1 \nアーク殿か。\n王の任を終えたのか？"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slot": 4,
+    "objects": [
+      {
+        "header": 2071944,
+        "state": {
+          "header_address": "0x801F9D88",
+          "base_address": "0x801BF6BC",
+          "limit": 64,
+          "count": 52,
+          "x": 204,
+          "y": 210,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x80116AF3"
+        },
+        "hits": [
+          {
+            "file": "F/SF041.DAT",
+            "position": 293619,
+            "rows": [
+              {
+                "row": 2767,
+                "start": 293548,
+                "length": 71,
+                "ko": "불꽃의 정령:|그래, 이 연구소는<CTRL:E415>새로운 <CTRL:E40B>|에너지를 연구하고    <CTRL:E415>있다  <CTRL:E43D>.|바로 생명력 에너지다. ",
+                "jp": "炎の精霊 \nそう、この研究所は<CTRL:E4:15>あたらしい<CTRL:E4:0B>\nエリルベーの研究を<CTRL:E4:15>している<CTRL:E4:3D>。\nつまり生命力エリルベーだ。"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slot": 5,
+    "objects": [
+      {
+        "header": 2071944,
+        "state": {
+          "header_address": "0x801F9D88",
+          "base_address": "0x801BF6BC",
+          "limit": 64,
+          "count": 39,
+          "x": 256,
+          "y": 194,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x80116B54"
+        },
+        "hits": [
+          {
+            "file": "F/SF041.DAT",
+            "position": 293716,
+            "rows": [
+              {
+                "row": 2768,
+                "start": 293670,
+                "length": 46,
+                "ko": "불꽃의 정령:|불꽃의 정령인<CTRL:E415>나를 붙잡아<CTRL:E40B>|에너지를     <CTRL:E415>계속 빼앗아 왔다.",
+                "jp": "炎の精霊 \n炎の精霊である<CTRL:E4:15>私を捕らえ<CTRL:E4:0B>\nエリルベーを<CTRL:E4:15>とり続けてきた。"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slot": 6,
+    "objects": [
+      {
+        "header": 2071944,
+        "state": {
+          "header_address": "0x801F9D88",
+          "base_address": "0x801BF6BC",
+          "limit": 64,
+          "count": 10,
+          "x": 234,
+          "y": 162,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x801176AC"
+        },
+        "hits": [
+          {
+            "file": "9/S9021.DAT",
+            "position": 296620,
+            "rows": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slot": 7,
+    "objects": [
+      {
+        "header": 2071944,
+        "state": {
+          "header_address": "0x801F9D88",
+          "base_address": "0x801BF6BC",
+          "limit": 64,
+          "count": 35,
+          "x": 146,
+          "y": 194,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x801170BD"
+        },
+        "hits": [
+          {
+            "file": "F/SF041.DAT",
+            "position": 295101,
+            "rows": [
+              {
+                "row": 2781,
+                "start": 295056,
+                "length": 45,
+                "ko": "...분명 인간들의 욕망은 많은 비극을 계속 낳고 있다.    ",
+                "jp": "・・確かに人聞達の欲望は\n多くの悲劇(ひげき)を\n生み続けている。"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slot": 8,
+    "objects": [
+      {
+        "header": 2071944,
+        "state": {
+          "header_address": "0x801F9D88",
+          "base_address": "0x801BF6BC",
+          "limit": 64,
+          "count": 28,
+          "x": 190,
+          "y": 194,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x80116DF1"
+        },
+        "hits": [
+          {
+            "file": "22/S205C.DAT",
+            "position": 294385,
+            "rows": [
+              {
+                "row": 640,
+                "start": 294348,
+                "length": 37,
+                "ko": "스메리아 왕:|대신 <CTRL:E41F>안델의 말에<CTRL:E41F>|넘어간  <CTRL:E41F>바로 나였다.",
+                "jp": "スメリア王 \n大臣の\fアンデルに\f\nそそのかされた\fわしなのだ。"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slot": 9,
+    "objects": [
+      {
+        "header": 2071944,
+        "state": {
+          "header_address": "0x801F9D88",
+          "base_address": "0x801BF6BC",
+          "limit": 64,
+          "count": 20,
+          "x": 156,
+          "y": 178,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x801171C9"
+        },
+        "hits": [
+          {
+            "file": "F/SF041.DAT",
+            "position": 295369,
+            "rows": [
+              {
+                "row": 2784,
+                "start": 295350,
+                "length": 19,
+                "ko": "단 하나 낳아낼 수 있는 것이 있다.",
+                "jp": "ひとつだけ\n産み出せるものがある。"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slot": 10,
+    "objects": [
+      {
+        "header": 2071944,
+        "state": {
+          "header_address": "0x801F9D88",
+          "base_address": "0x801BF6BC",
+          "limit": 64,
+          "count": 18,
+          "x": 266,
+          "y": 162,
+          "style": 0,
+          "D": 14,
+          "E": 16,
+          "F": 2,
+          "line_extra": 0,
+          "source_pointer": "0x801174AF"
+        },
+        "hits": [
+          {
+            "file": "F/SF041.DAT",
+            "position": 296111,
+            "rows": [
+              {
+                "row": 2792,
+                "start": 296090,
+                "length": 21,
+                "ko": "불의 정령: 너희에게 져 주겠다!",
+                "jp": "火の精霊 \nお主達に負けてみよう!"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

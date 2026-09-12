@@ -1,0 +1,4223 @@
+{
+  "original_exe_sha256": "947EBF893F2D46207EC7E32CA514E4EA670E0BED34EF2144B5F7FB0FDD15BC67",
+  "current_exe_sha256": "57AC9833007E92B0A4E6730A11B44DE1958C6E7BBBA3BBA2C4C69B3F980D3782",
+  "method": "Original PSX.EXE disassembly/data, byte-exact V375 comparison; arithmetic model only, no emulator execution",
+  "compared_spans": [
+    {
+      "label": "resurrection_actor",
+      "start": "0x8012e388",
+      "end_exclusive": "0x8012e4c4",
+      "file_offset": "0x13b88",
+      "length": 316,
+      "byte_exact": true,
+      "original_sha256": "B06FFC9F867B0538486E71FF686358AB030F3F030EE13DF9639D3C9EDC259BAB",
+      "current_sha256": "B06FFC9F867B0538486E71FF686358AB030F3F030EE13DF9639D3C9EDC259BAB",
+      "original_disassembly": [
+        "8012E388 addiu $sp, $sp, -0x20",
+        "8012E38C sw $ra, 0x1c($sp)",
+        "8012E390 sw $s0, 0x18($sp)",
+        "8012E394 move $s0, $a0",
+        "8012E398 jal 0x80124e6c",
+        "8012E39C addiu $a0, $sp, 0x10",
+        "8012E3A0 lw $v0, 0x10($sp)",
+        "8012E3A4 nop ",
+        "8012E3A8 bgtz $v0, 0x8012e3b8",
+        "8012E3AC move $a0, $s0",
+        "8012E3B0 j 0x8012e4b4",
+        "8012E3B4 move $v0, $zero",
+        "8012E3B8 jal 0x80164478",
+        "8012E3BC ori $a1, $zero, 0x31",
+        "8012E3C0 lh $a1, 0xac($s0)",
+        "8012E3C4 lui $v1, 0x801b",
+        "8012E3C8 lhu $v1, -0x1e70($v1)",
+        "8012E3CC nop ",
+        "8012E3D0 div $zero, $a1, $v1",
+        "8012E3D4 bnez $v1, 0x8012e3e0",
+        "8012E3D8 nop ",
+        "8012E3DC break 7",
+        "8012E3E0 addiu $at, $zero, -1",
+        "8012E3E4 bne $v1, $at, 0x8012e3f8",
+        "8012E3E8 lui $at, 0x8000",
+        "8012E3EC bne $a1, $at, 0x8012e3f8",
+        "8012E3F0 nop ",
+        "8012E3F4 break 6",
+        "8012E3F8 mflo $a1",
+        "8012E3FC lh $a2, 0xae($s0)",
+        "8012E400 lui $v1, 0x801b",
+        "8012E404 lhu $v1, -0x1e6e($v1)",
+        "8012E408 nop ",
+        "8012E40C div $zero, $a2, $v1",
+        "8012E410 bnez $v1, 0x8012e41c",
+        "8012E414 nop ",
+        "8012E418 break 7",
+        "8012E41C addiu $at, $zero, -1",
+        "8012E420 bne $v1, $at, 0x8012e434",
+        "8012E424 lui $at, 0x8000",
+        "8012E428 bne $a2, $at, 0x8012e434",
+        "8012E42C nop ",
+        "8012E430 break 6",
+        "8012E434 mflo $a2",
+        "8012E438 lh $a0, 0xaa($s0)",
+        "8012E43C jal 0x80128d78",
+        "8012E440 move $a3, $v0",
+        "8012E444 sw $s0, 0x68($v0)",
+        "8012E448 lui $v1, 0x801b",
+        "8012E44C addiu $v1, $v1, -0x7810",
+        "8012E450 sw $v0, ($v1)",
+        "8012E454 lui $at, 0x801b",
+        "8012E458 sw $zero, -0x780c($at)",
+        "8012E45C lh $a1, 0xa8($s0)",
+        "8012E460 lui $v0, 0x801a",
+        "8012E464 addiu $v0, $v0, 0x7f98",
+        "8012E468 sw $v0, 0xd0($s0)",
+        "8012E46C sw $v1, 0x68($s0)",
+        "8012E470 move $a0, $s0",
+        "8012E474 jal 0x801749a4",
+        "8012E478 addiu $a1, $a1, -0x26",
+        "8012E47C lhu $a1, 0x12($v0)",
+        "8012E480 jal 0x801746d0",
+        "8012E484 move $a0, $s0",
+        "8012E488 move $a0, $s0",
+        "8012E48C jal 0x801401ac",
+        "8012E490 ori $a1, $zero, 0x41",
+        "8012E494 lhu $v0, 0xb2($s0)",
+        "8012E498 move $a0, $s0",
+        "8012E49C ori $v0, $v0, 3",
+        "8012E4A0 jal 0x80122620",
+        "8012E4A4 sh $v0, 0xb2($s0)",
+        "8012E4A8 lui $v0, 0x8013",
+        "8012E4AC addiu $v0, $v0, -0x1b3c",
+        "8012E4B0 sw $v0, 0xd4($s0)",
+        "8012E4B4 lw $ra, 0x1c($sp)",
+        "8012E4B8 lw $s0, 0x18($sp)",
+        "8012E4BC jr $ra",
+        "8012E4C0 addiu $sp, $sp, 0x20"
+      ]
+    },
+    {
+      "label": "resurrection_recipient",
+      "start": "0x80128d78",
+      "end_exclusive": "0x80128df4",
+      "file_offset": "0xe578",
+      "length": 124,
+      "byte_exact": true,
+      "original_sha256": "F1D2137DED742D336FB8CD50A89029DEAC173AAC39E644F167C4034D3116FC84",
+      "current_sha256": "F1D2137DED742D336FB8CD50A89029DEAC173AAC39E644F167C4034D3116FC84",
+      "original_disassembly": [
+        "80128D78 addiu $sp, $sp, -0x20",
+        "80128D7C sw $ra, 0x18($sp)",
+        "80128D80 sw $s1, 0x14($sp)",
+        "80128D84 sw $s0, 0x10($sp)",
+        "80128D88 move $s0, $a0",
+        "80128D8C move $s1, $a3",
+        "80128D90 jal 0x80120ef4",
+        "80128D94 addiu $a3, $zero, -1",
+        "80128D98 move $a0, $s0",
+        "80128D9C jal 0x80124e28",
+        "80128DA0 move $s0, $v0",
+        "80128DA4 bnez $s1, 0x80128dd0",
+        "80128DA8 ori $v0, $zero, 0x1c",
+        "80128DAC lw $v0, 0xd8($s0)",
+        "80128DB0 nop ",
+        "80128DB4 lh $a1, 0x14($v0)",
+        "80128DB8 move $a0, $s0",
+        "80128DBC srl $v0, $a1, 0x1f",
+        "80128DC0 addu $a1, $a1, $v0",
+        "80128DC4 jal 0x801745b8",
+        "80128DC8 sra $a1, $a1, 1",
+        "80128DCC ori $v0, $zero, 0x1c",
+        "80128DD0 sh $v0, 0xa8($s0)",
+        "80128DD4 jal 0x80121934",
+        "80128DD8 move $a0, $s0",
+        "80128DDC move $v0, $s0",
+        "80128DE0 lw $ra, 0x18($sp)",
+        "80128DE4 lw $s1, 0x14($sp)",
+        "80128DE8 lw $s0, 0x10($sp)",
+        "80128DEC jr $ra",
+        "80128DF0 addiu $sp, $sp, 0x20"
+      ]
+    },
+    {
+      "label": "equipped_id_check",
+      "start": "0x80164478",
+      "end_exclusive": "0x801644bc",
+      "file_offset": "0x49c78",
+      "length": 68,
+      "byte_exact": true,
+      "original_sha256": "0A99D0DB240CE9912FF25DA4A1EE5CF26FADC97AB4B898905E43F6BF5DC30AA9",
+      "current_sha256": "0A99D0DB240CE9912FF25DA4A1EE5CF26FADC97AB4B898905E43F6BF5DC30AA9",
+      "original_disassembly": [
+        "80164478 move $a2, $zero",
+        "8016447C lw $a0, 0xd8($a0)",
+        "80164480 move $v1, $zero",
+        "80164484 andi $a1, $a1, 0xff",
+        "80164488 addu $v0, $a0, $v1",
+        "8016448C lbu $v0, 0x5c($v0)",
+        "80164490 nop ",
+        "80164494 bne $v0, $a1, 0x801644a4",
+        "80164498 nop ",
+        "8016449C j 0x801644b4",
+        "801644A0 ori $a2, $zero, 1",
+        "801644A4 addiu $v1, $v1, 1",
+        "801644A8 slti $v0, $v1, 4",
+        "801644AC bnez $v0, 0x80164488",
+        "801644B0 nop ",
+        "801644B4 jr $ra",
+        "801644B8 move $v0, $a2"
+      ]
+    },
+    {
+      "label": "equipment_stat_application",
+      "start": "0x80174c88",
+      "end_exclusive": "0x80174ec4",
+      "file_offset": "0x5a488",
+      "length": 572,
+      "byte_exact": true,
+      "original_sha256": "A56CF040815681DBFCBAB5FF80C95391E4D8D7BFFB7917DC82F5203FE20D4739",
+      "current_sha256": "A56CF040815681DBFCBAB5FF80C95391E4D8D7BFFB7917DC82F5203FE20D4739",
+      "original_disassembly": [
+        "80174C88 addiu $sp, $sp, -0x40",
+        "80174C8C sw $ra, 0x38($sp)",
+        "80174C90 sw $s7, 0x34($sp)",
+        "80174C94 sw $s6, 0x30($sp)",
+        "80174C98 sw $s5, 0x2c($sp)",
+        "80174C9C sw $s4, 0x28($sp)",
+        "80174CA0 sw $s3, 0x24($sp)",
+        "80174CA4 sw $s2, 0x20($sp)",
+        "80174CA8 sw $s1, 0x1c($sp)",
+        "80174CAC sw $s0, 0x18($sp)",
+        "80174CB0 move $s3, $zero",
+        "80174CB4 addiu $v1, $sp, 0x10",
+        "80174CB8 lw $s7, 0xdc($a0)",
+        "80174CBC lw $s4, 0xd8($a0)",
+        "80174CC0 nop ",
+        "80174CC4 addu $v0, $s4, $s3",
+        "80174CC8 lbu $v0, 0x5c($v0)",
+        "80174CCC addiu $s3, $s3, 1",
+        "80174CD0 sb $v0, ($v1)",
+        "80174CD4 slti $v0, $s3, 4",
+        "80174CD8 bnez $v0, 0x80174cc0",
+        "80174CDC addiu $v1, $v1, 1",
+        "80174CE0 move $s3, $zero",
+        "80174CE4 addiu $s5, $sp, 0x10",
+        "80174CE8 addiu $s6, $sp, 0x11",
+        "80174CEC move $s1, $zero",
+        "80174CF0 move $s2, $s6",
+        "80174CF4 move $s0, $s5",
+        "80174CF8 lbu $v1, ($s0)",
+        "80174CFC lbu $v0, ($s2)",
+        "80174D00 nop ",
+        "80174D04 sltu $v0, $v0, $v1",
+        "80174D08 beqz $v0, 0x80174d20",
+        "80174D0C addiu $s2, $s2, 1",
+        "80174D10 move $a0, $s0",
+        "80174D14 addiu $a1, $s1, 1",
+        "80174D18 jal 0x8015e0a0",
+        "80174D1C addu $a1, $s5, $a1",
+        "80174D20 addiu $s1, $s1, 1",
+        "80174D24 slti $v0, $s1, 3",
+        "80174D28 bnez $v0, 0x80174cf8",
+        "80174D2C addiu $s0, $s0, 1",
+        "80174D30 addiu $s3, $s3, 1",
+        "80174D34 slti $v0, $s3, 3",
+        "80174D38 bnez $v0, 0x80174cec",
+        "80174D3C nop ",
+        "80174D40 move $s3, $zero",
+        "80174D44 addu $v0, $sp, $s3",
+        "80174D48 lbu $a1, 0x10($v0)",
+        "80174D4C nop ",
+        "80174D50 beqz $a1, 0x80174e64",
+        "80174D54 sll $v0, $a1, 1",
+        "80174D58 addu $v0, $v0, $a1",
+        "80174D5C sll $v0, $v0, 1",
+        "80174D60 lui $v1, 0x801a",
+        "80174D64 addiu $v1, $v1, 0x1d62",
+        "80174D68 addu $s1, $v0, $v1",
+        "80174D6C lbu $v1, 1($s1)",
+        "80174D70 ori $v0, $zero, 2",
+        "80174D74 beq $v1, $v0, 0x80174e00",
+        "80174D78 slti $v0, $v1, 3",
+        "80174D7C beqz $v0, 0x80174d94",
+        "80174D80 ori $v0, $zero, 1",
+        "80174D84 beq $v1, $v0, 0x80174db0",
+        "80174D88 nop ",
+        "80174D8C j 0x80174e68",
+        "80174D90 addiu $s3, $s3, 1",
+        "80174D94 ori $v0, $zero, 3",
+        "80174D98 beq $v1, $v0, 0x80174e28",
+        "80174D9C ori $v0, $zero, 4",
+        "80174DA0 beq $v1, $v0, 0x80174e5c",
+        "80174DA4 nop ",
+        "80174DA8 j 0x80174e68",
+        "80174DAC addiu $s3, $s3, 1",
+        "80174DB0 lbu $a1, 2($s1)",
+        "80174DB4 jal 0x80175250",
+        "80174DB8 move $a0, $s7",
+        "80174DBC lh $v1, 4($s1)",
+        "80174DC0 move $s0, $v0",
+        "80174DC4 mult $s0, $v1",
+        "80174DC8 mflo $v1",
+        "80174DCC nop ",
+        "80174DD0 ori $v0, $zero, 0x64",
+        "80174DD4 divu $zero, $v1, $v0",
+        "80174DD8 bnez $v0, 0x80174de4",
+        "80174DDC nop ",
+        "80174DE0 break 7",
+        "80174DE4 mflo $v1",
+        "80174DE8 lbu $a1, 2($s1)",
+        "80174DEC move $a0, $s4",
+        "80174DF0 jal 0x80175250",
+        "80174DF4 addu $s0, $s0, $v1",
+        "80174DF8 j 0x80174e3c",
+        "80174DFC sltu $v0, $v0, $s0",
+        "80174E00 lbu $a1, 2($s1)",
+        "80174E04 jal 0x80175250",
+        "80174E08 move $a0, $s7",
+        "80174E0C lh $v1, 4($s1)",
+        "80174E10 lbu $a1, 2($s1)",
+        "80174E14 move $a0, $s4",
+        "80174E18 jal 0x80175250",
+        "80174E1C addu $s0, $v0, $v1",
+        "80174E20 j 0x80174e3c",
+        "80174E24 sltu $v0, $v0, $s0",
+        "80174E28 lh $s0, 4($s1)",
+        "80174E2C lbu $a1, 2($s1)",
+        "80174E30 jal 0x80175250",
+        "80174E34 move $a0, $s4",
+        "80174E38 sltu $v0, $v0, $s0",
+        "80174E3C beqz $v0, 0x80174e64",
+        "80174E40 nop ",
+        "80174E44 lbu $a1, 2($s1)",
+        "80174E48 move $a0, $s4",
+        "80174E4C jal 0x80175058",
+        "80174E50 move $a2, $s0",
+        "80174E54 j 0x80174e68",
+        "80174E58 addiu $s3, $s3, 1",
+        "80174E5C jal 0x80175498",
+        "80174E60 move $a0, $s4",
+        "80174E64 addiu $s3, $s3, 1",
+        "80174E68 slti $v0, $s3, 4",
+        "80174E6C bnez $v0, 0x80174d48",
+        "80174E70 addu $v0, $sp, $s3",
+        "80174E74 move $a0, $s4",
+        "80174E78 jal 0x80175250",
+        "80174E7C ori $a1, $zero, 0x13",
+        "80174E80 sltiu $v0, $v0, 0x65",
+        "80174E84 bnez $v0, 0x80174e98",
+        "80174E88 move $a0, $s4",
+        "80174E8C ori $a1, $zero, 0x13",
+        "80174E90 jal 0x80175058",
+        "80174E94 ori $a2, $zero, 0x64",
+        "80174E98 lw $ra, 0x38($sp)",
+        "80174E9C lw $s7, 0x34($sp)",
+        "80174EA0 lw $s6, 0x30($sp)",
+        "80174EA4 lw $s5, 0x2c($sp)",
+        "80174EA8 lw $s4, 0x28($sp)",
+        "80174EAC lw $s3, 0x24($sp)",
+        "80174EB0 lw $s2, 0x20($sp)",
+        "80174EB4 lw $s1, 0x1c($sp)",
+        "80174EB8 lw $s0, 0x18($sp)",
+        "80174EBC jr $ra",
+        "80174EC0 addiu $sp, $sp, 0x40"
+      ]
+    },
+    {
+      "label": "stat_read",
+      "start": "0x80175250",
+      "end_exclusive": "0x801753f4",
+      "file_offset": "0x5aa50",
+      "length": 420,
+      "byte_exact": true,
+      "original_sha256": "B9F1DFA478934898B2B4C7A0D492EF696E3D46E1CBBE7FAB33CA4A122A33242C",
+      "current_sha256": "B9F1DFA478934898B2B4C7A0D492EF696E3D46E1CBBE7FAB33CA4A122A33242C",
+      "original_disassembly": [
+        "80175250 ori $v0, $zero, 0x42",
+        "80175254 sltu $v0, $v0, $a1",
+        "80175258 bnez $v0, 0x801753ec",
+        "8017525C move $v0, $zero",
+        "80175260 sll $v0, $a1, 2",
+        "80175264 lui $at, 0x8012",
+        "80175268 addiu $at, $at, -0x4824",
+        "8017526C addu $at, $at, $v0",
+        "80175270 lw $v0, ($at)",
+        "80175274 nop ",
+        "80175278 jr $v0",
+        "8017527C nop ",
+        "80175280 lhu $v0, ($a0)",
+        "80175284 j 0x801753ec",
+        "80175288 nop ",
+        "8017528C lhu $v0, 2($a0)",
+        "80175290 j 0x801753ec",
+        "80175294 nop ",
+        "80175298 lhu $v0, 4($a0)",
+        "8017529C j 0x801753ec",
+        "801752A0 nop ",
+        "801752A4 lw $v0, 8($a0)",
+        "801752A8 j 0x801753ec",
+        "801752AC nop ",
+        "801752B0 addu $v0, $a0, $a1",
+        "801752B4 lbu $v0, 8($v0)",
+        "801752B8 j 0x801753ec",
+        "801752BC nop ",
+        "801752C0 lh $v0, 0x14($a0)",
+        "801752C4 j 0x801753ec",
+        "801752C8 nop ",
+        "801752CC lh $v0, 0x16($a0)",
+        "801752D0 j 0x801753ec",
+        "801752D4 nop ",
+        "801752D8 lh $v0, 0x18($a0)",
+        "801752DC j 0x801753ec",
+        "801752E0 nop ",
+        "801752E4 lh $v0, 0x1a($a0)",
+        "801752E8 j 0x801753ec",
+        "801752EC nop ",
+        "801752F0 lh $v0, 0x1c($a0)",
+        "801752F4 j 0x801753ec",
+        "801752F8 nop ",
+        "801752FC lh $v0, 0x1e($a0)",
+        "80175300 j 0x801753ec",
+        "80175304 nop ",
+        "80175308 lh $v0, 0x20($a0)",
+        "8017530C j 0x801753ec",
+        "80175310 nop ",
+        "80175314 lh $v0, 0x22($a0)",
+        "80175318 j 0x801753ec",
+        "8017531C nop ",
+        "80175320 lh $v0, 0x24($a0)",
+        "80175324 j 0x801753ec",
+        "80175328 nop ",
+        "8017532C lh $v0, 0x26($a0)",
+        "80175330 j 0x801753ec",
+        "80175334 nop ",
+        "80175338 lh $v0, 0x28($a0)",
+        "8017533C j 0x801753ec",
+        "80175340 nop ",
+        "80175344 lbu $v0, 0x2a($a0)",
+        "80175348 j 0x801753ec",
+        "8017534C nop ",
+        "80175350 lhu $v0, 0x2c($a0)",
+        "80175354 j 0x801753ec",
+        "80175358 nop ",
+        "8017535C lhu $v0, 0x2e($a0)",
+        "80175360 j 0x801753ec",
+        "80175364 nop ",
+        "80175368 lhu $v0, 0x30($a0)",
+        "8017536C j 0x801753ec",
+        "80175370 nop ",
+        "80175374 lbu $v0, 0x32($a0)",
+        "80175378 j 0x801753ec",
+        "8017537C nop ",
+        "80175380 lbu $v0, 0x33($a0)",
+        "80175384 j 0x801753ec",
+        "80175388 nop ",
+        "8017538C lbu $v0, 0x34($a0)",
+        "80175390 j 0x801753ec",
+        "80175394 nop ",
+        "80175398 lbu $v0, 0x35($a0)",
+        "8017539C j 0x801753ec",
+        "801753A0 nop ",
+        "801753A4 lbu $v0, 0x36($a0)",
+        "801753A8 j 0x801753ec",
+        "801753AC nop ",
+        "801753B0 lbu $v0, 0x37($a0)",
+        "801753B4 j 0x801753ec",
+        "801753B8 nop ",
+        "801753BC lhu $v0, 0x38($a0)",
+        "801753C0 j 0x801753ec",
+        "801753C4 nop ",
+        "801753C8 addu $v0, $a0, $a1",
+        "801753CC lbu $v0, 0x18($v0)",
+        "801753D0 j 0x801753ec",
+        "801753D4 nop ",
+        "801753D8 lhu $v0, 0x4a($a0)",
+        "801753DC j 0x801753ec",
+        "801753E0 nop ",
+        "801753E4 addu $v0, $a0, $a1",
+        "801753E8 lb $v0, 0x19($v0)",
+        "801753EC jr $ra",
+        "801753F0 nop "
+      ]
+    },
+    {
+      "label": "random_and_variation",
+      "start": "0x80174478",
+      "end_exclusive": "0x8017455c",
+      "file_offset": "0x59c78",
+      "length": 228,
+      "byte_exact": true,
+      "original_sha256": "8952FD04F62B1B2D7C1EAC49E0B6E55EBAB073CC278B9C4839DACE2F83B958EB",
+      "current_sha256": "8952FD04F62B1B2D7C1EAC49E0B6E55EBAB073CC278B9C4839DACE2F83B958EB",
+      "original_disassembly": [
+        "80174478 addiu $sp, $sp, -0x18",
+        "8017447C sw $ra, 0x14($sp)",
+        "80174480 sw $s0, 0x10($sp)",
+        "80174484 move $s0, $a0",
+        "80174488 beqz $s0, 0x801744cc",
+        "8017448C move $a0, $zero",
+        "80174490 jal 0x80176768",
+        "80174494 nop ",
+        "80174498 div $zero, $v0, $s0",
+        "8017449C bnez $s0, 0x801744a8",
+        "801744A0 nop ",
+        "801744A4 break 7",
+        "801744A8 addiu $at, $zero, -1",
+        "801744AC bne $s0, $at, 0x801744c0",
+        "801744B0 lui $at, 0x8000",
+        "801744B4 bne $v0, $at, 0x801744c0",
+        "801744B8 nop ",
+        "801744BC break 6",
+        "801744C0 mfhi $a0",
+        "801744C4 j 0x801744d0",
+        "801744C8 move $v0, $a0",
+        "801744CC move $v0, $a0",
+        "801744D0 lw $ra, 0x14($sp)",
+        "801744D4 lw $s0, 0x10($sp)",
+        "801744D8 jr $ra",
+        "801744DC addiu $sp, $sp, 0x18",
+        "801744E0 addiu $sp, $sp, -0x20",
+        "801744E4 sw $ra, 0x18($sp)",
+        "801744E8 sw $s1, 0x14($sp)",
+        "801744EC sw $s0, 0x10($sp)",
+        "801744F0 move $s0, $a0",
+        "801744F4 move $s1, $a1",
+        "801744F8 jal 0x80174478",
+        "801744FC sll $a0, $s1, 1",
+        "80174500 subu $v0, $v0, $s1",
+        "80174504 mult $s0, $v0",
+        "80174508 mflo $v0",
+        "8017450C nop ",
+        "80174510 ori $v1, $zero, 0x64",
+        "80174514 div $zero, $v0, $v1",
+        "80174518 bnez $v1, 0x80174524",
+        "8017451C nop ",
+        "80174520 break 7",
+        "80174524 addiu $at, $zero, -1",
+        "80174528 bne $v1, $at, 0x8017453c",
+        "8017452C lui $at, 0x8000",
+        "80174530 bne $v0, $at, 0x8017453c",
+        "80174534 nop ",
+        "80174538 break 6",
+        "8017453C mflo $v0",
+        "80174540 nop ",
+        "80174544 addu $v0, $s0, $v0",
+        "80174548 lw $ra, 0x18($sp)",
+        "8017454C lw $s1, 0x14($sp)",
+        "80174550 lw $s0, 0x10($sp)",
+        "80174554 jr $ra",
+        "80174558 addiu $sp, $sp, 0x20"
+      ]
+    },
+    {
+      "label": "damage_item_healing",
+      "start": "0x80172f3c",
+      "end_exclusive": "0x801735c4",
+      "file_offset": "0x5873c",
+      "length": 1672,
+      "byte_exact": true,
+      "original_sha256": "81B277D0A858CE339C8969F68B586F8350628165AFD337972588CD63363A0227",
+      "current_sha256": "81B277D0A858CE339C8969F68B586F8350628165AFD337972588CD63363A0227",
+      "original_disassembly": [
+        "80172F3C addiu $sp, $sp, -0x38",
+        "80172F40 sw $ra, 0x30($sp)",
+        "80172F44 sw $s7, 0x2c($sp)",
+        "80172F48 sw $s6, 0x28($sp)",
+        "80172F4C sw $s5, 0x24($sp)",
+        "80172F50 sw $s4, 0x20($sp)",
+        "80172F54 sw $s3, 0x1c($sp)",
+        "80172F58 sw $s2, 0x18($sp)",
+        "80172F5C sw $s1, 0x14($sp)",
+        "80172F60 sw $s0, 0x10($sp)",
+        "80172F64 move $s5, $a0",
+        "80172F68 move $s3, $a1",
+        "80172F6C move $s4, $a2",
+        "80172F70 move $s1, $a3",
+        "80172F74 lw $s0, 0xd8($s5)",
+        "80172F78 lw $s7, 0xd8($s3)",
+        "80172F7C jal 0x801733bc",
+        "80172F80 ori $a3, $zero, 1",
+        "80172F84 sll $v1, $s4, 1",
+        "80172F88 addu $v1, $v1, $s4",
+        "80172F8C sll $s6, $v1, 3",
+        "80172F90 lui $at, 0x801a",
+        "80172F94 addiu $at, $at, 0x2e1",
+        "80172F98 addu $at, $at, $s6",
+        "80172F9C lb $v1, ($at)",
+        "80172FA0 lh $a0, 0x1c($s0)",
+        "80172FA4 nop ",
+        "80172FA8 mult $a0, $v1",
+        "80172FAC mflo $v1",
+        "80172FB0 nop ",
+        "80172FB4 ori $s2, $zero, 0x64",
+        "80172FB8 div $zero, $v1, $s2",
+        "80172FBC bnez $s2, 0x80172fc8",
+        "80172FC0 nop ",
+        "80172FC4 break 7",
+        "80172FC8 addiu $at, $zero, -1",
+        "80172FCC bne $s2, $at, 0x80172fe0",
+        "80172FD0 lui $at, 0x8000",
+        "80172FD4 bne $v1, $at, 0x80172fe0",
+        "80172FD8 nop ",
+        "80172FDC break 6",
+        "80172FE0 mflo $v1",
+        "80172FE4 lh $a1, 0x20($s7)",
+        "80172FE8 addu $a0, $a0, $v1",
+        "80172FEC subu $a0, $a0, $a1",
+        "80172FF0 mult $a0, $v0",
+        "80172FF4 mflo $a0",
+        "80172FF8 nop ",
+        "80172FFC nop ",
+        "80173000 div $zero, $a0, $s2",
+        "80173004 bnez $s2, 0x80173010",
+        "80173008 nop ",
+        "8017300C break 7",
+        "80173010 addiu $at, $zero, -1",
+        "80173014 bne $s2, $at, 0x80173028",
+        "80173018 lui $at, 0x8000",
+        "8017301C bne $a0, $at, 0x80173028",
+        "80173020 nop ",
+        "80173024 break 6",
+        "80173028 mflo $a0",
+        "8017302C jal 0x80172ea4",
+        "80173030 move $a1, $s3",
+        "80173034 lhu $a1, 0x30($s0)",
+        "80173038 jal 0x801744e0",
+        "8017303C move $a0, $v0",
+        "80173040 beqz $s1, 0x8017308c",
+        "80173044 move $s0, $v0",
+        "80173048 lhu $v0, 0x2c($s7)",
+        "8017304C nop ",
+        "80173050 mult $s0, $v0",
+        "80173054 mflo $v0",
+        "80173058 nop ",
+        "8017305C nop ",
+        "80173060 div $zero, $v0, $s2",
+        "80173064 bnez $s2, 0x80173070",
+        "80173068 nop ",
+        "8017306C break 7",
+        "80173070 addiu $at, $zero, -1",
+        "80173074 bne $s2, $at, 0x80173088",
+        "80173078 lui $at, 0x8000",
+        "8017307C bne $v0, $at, 0x80173088",
+        "80173080 nop ",
+        "80173084 break 6",
+        "80173088 mflo $s0",
+        "8017308C lui $at, 0x801a",
+        "80173090 addiu $at, $at, 0x2e4",
+        "80173094 addu $at, $at, $s6",
+        "80173098 lhu $v0, ($at)",
+        "8017309C nop ",
+        "801730A0 beqz $v0, 0x801730b4",
+        "801730A4 move $a0, $s5",
+        "801730A8 move $a1, $s3",
+        "801730AC jal 0x801735c4",
+        "801730B0 move $a2, $s4",
+        "801730B4 move $v0, $s0",
+        "801730B8 lw $ra, 0x30($sp)",
+        "801730BC lw $s7, 0x2c($sp)",
+        "801730C0 lw $s6, 0x28($sp)",
+        "801730C4 lw $s5, 0x24($sp)",
+        "801730C8 lw $s4, 0x20($sp)",
+        "801730CC lw $s3, 0x1c($sp)",
+        "801730D0 lw $s2, 0x18($sp)",
+        "801730D4 lw $s1, 0x14($sp)",
+        "801730D8 lw $s0, 0x10($sp)",
+        "801730DC jr $ra",
+        "801730E0 addiu $sp, $sp, 0x38",
+        "801730E4 addiu $sp, $sp, -0x30",
+        "801730E8 sw $ra, 0x2c($sp)",
+        "801730EC sw $s6, 0x28($sp)",
+        "801730F0 sw $s5, 0x24($sp)",
+        "801730F4 sw $s4, 0x20($sp)",
+        "801730F8 sw $s3, 0x1c($sp)",
+        "801730FC sw $s2, 0x18($sp)",
+        "80173100 sw $s1, 0x14($sp)",
+        "80173104 sw $s0, 0x10($sp)",
+        "80173108 move $s5, $a0",
+        "8017310C move $s3, $a1",
+        "80173110 move $s4, $a2",
+        "80173114 move $s2, $a3",
+        "80173118 lw $s1, 0xd8($s5)",
+        "8017311C lw $s0, 0xd8($s3)",
+        "80173120 jal 0x801733bc",
+        "80173124 move $a3, $zero",
+        "80173128 sll $v1, $s4, 1",
+        "8017312C addu $v1, $v1, $s4",
+        "80173130 sll $s6, $v1, 3",
+        "80173134 lui $at, 0x801a",
+        "80173138 addiu $at, $at, 0x2e1",
+        "8017313C addu $at, $at, $s6",
+        "80173140 lb $v1, ($at)",
+        "80173144 lh $a0, 0x1e($s1)",
+        "80173148 nop ",
+        "8017314C mult $a0, $v1",
+        "80173150 mflo $v1",
+        "80173154 nop ",
+        "80173158 ori $a1, $zero, 0x64",
+        "8017315C div $zero, $v1, $a1",
+        "80173160 bnez $a1, 0x8017316c",
+        "80173164 nop ",
+        "80173168 break 7",
+        "8017316C addiu $at, $zero, -1",
+        "80173170 bne $a1, $at, 0x80173184",
+        "80173174 lui $at, 0x8000",
+        "80173178 bne $v1, $at, 0x80173184",
+        "8017317C nop ",
+        "80173180 break 6",
+        "80173184 mflo $v1",
+        "80173188 lh $a2, 0x1e($s0)",
+        "8017318C addu $a0, $a0, $v1",
+        "80173190 subu $a0, $a0, $a2",
+        "80173194 mult $a0, $v0",
+        "80173198 mflo $a0",
+        "8017319C nop ",
+        "801731A0 nop ",
+        "801731A4 div $zero, $a0, $a1",
+        "801731A8 bnez $a1, 0x801731b4",
+        "801731AC nop ",
+        "801731B0 break 7",
+        "801731B4 addiu $at, $zero, -1",
+        "801731B8 bne $a1, $at, 0x801731cc",
+        "801731BC lui $at, 0x8000",
+        "801731C0 bne $a0, $at, 0x801731cc",
+        "801731C4 nop ",
+        "801731C8 break 6",
+        "801731CC mflo $a0",
+        "801731D0 jal 0x80172ea4",
+        "801731D4 move $a1, $s3",
+        "801731D8 lhu $a1, 0x30($s1)",
+        "801731DC jal 0x801744e0",
+        "801731E0 move $a0, $v0",
+        "801731E4 beqz $s2, 0x8017321c",
+        "801731E8 move $s0, $v0",
+        "801731EC ori $v0, $zero, 0xa",
+        "801731F0 div $zero, $s0, $v0",
+        "801731F4 bnez $v0, 0x80173200",
+        "801731F8 nop ",
+        "801731FC break 7",
+        "80173200 addiu $at, $zero, -1",
+        "80173204 bne $v0, $at, 0x80173218",
+        "80173208 lui $at, 0x8000",
+        "8017320C bne $s0, $at, 0x80173218",
+        "80173210 nop ",
+        "80173214 break 6",
+        "80173218 mflo $s0",
+        "8017321C lui $at, 0x801a",
+        "80173220 addiu $at, $at, 0x2e4",
+        "80173224 addu $at, $at, $s6",
+        "80173228 lhu $v0, ($at)",
+        "8017322C nop ",
+        "80173230 beqz $v0, 0x80173244",
+        "80173234 move $a0, $s5",
+        "80173238 move $a1, $s3",
+        "8017323C jal 0x801735c4",
+        "80173240 move $a2, $s4",
+        "80173244 move $v0, $s0",
+        "80173248 lw $ra, 0x2c($sp)",
+        "8017324C lw $s6, 0x28($sp)",
+        "80173250 lw $s5, 0x24($sp)",
+        "80173254 lw $s4, 0x20($sp)",
+        "80173258 lw $s3, 0x1c($sp)",
+        "8017325C lw $s2, 0x18($sp)",
+        "80173260 lw $s1, 0x14($sp)",
+        "80173264 lw $s0, 0x10($sp)",
+        "80173268 jr $ra",
+        "8017326C addiu $sp, $sp, 0x30",
+        "80173270 addiu $sp, $sp, -0x30",
+        "80173274 sw $ra, 0x28($sp)",
+        "80173278 sw $s5, 0x24($sp)",
+        "8017327C sw $s4, 0x20($sp)",
+        "80173280 sw $s3, 0x1c($sp)",
+        "80173284 sw $s2, 0x18($sp)",
+        "80173288 sw $s1, 0x14($sp)",
+        "8017328C sw $s0, 0x10($sp)",
+        "80173290 move $s2, $a1",
+        "80173294 move $s4, $a2",
+        "80173298 lw $s1, 0xd8($a0)",
+        "8017329C sll $v1, $s4, 2",
+        "801732A0 lw $s3, 0xd8($s2)",
+        "801732A4 lui $at, 0x801a",
+        "801732A8 addiu $at, $at, 0x1ce8",
+        "801732AC addu $at, $at, $v1",
+        "801732B0 lbu $a0, ($at)",
+        "801732B4 ori $v0, $zero, 4",
+        "801732B8 beq $a0, $v0, 0x801732d4",
+        "801732BC move $s5, $a3",
+        "801732C0 ori $v0, $zero, 6",
+        "801732C4 beq $a0, $v0, 0x80173318",
+        "801732C8 nop ",
+        "801732CC j 0x80173330",
+        "801732D0 move $s0, $zero",
+        "801732D4 lui $at, 0x801a",
+        "801732D8 addiu $at, $at, 0x1ce9",
+        "801732DC addu $at, $at, $v1",
+        "801732E0 lbu $a2, ($at)",
+        "801732E4 lbu $v1, 0x33($s1)",
+        "801732E8 ori $v0, $zero, 2",
+        "801732EC bne $v1, $v0, 0x801732fc",
+        "801732F0 move $a1, $s2",
+        "801732F4 srl $v0, $a2, 1",
+        "801732F8 addu $a2, $a2, $v0",
+        "801732FC lh $a0, 0x1c($s1)",
+        "80173300 lh $v0, 0x20($s3)",
+        "80173304 addu $a0, $a0, $a2",
+        "80173308 jal 0x80172ea4",
+        "8017330C subu $a0, $a0, $v0",
+        "80173310 j 0x80173330",
+        "80173314 move $s0, $v0",
+        "80173318 lui $at, 0x801a",
+        "8017331C addiu $at, $at, 0x1ce9",
+        "80173320 addu $at, $at, $v1",
+        "80173324 lbu $s0, ($at)",
+        "80173328 nop ",
+        "8017332C negu $s0, $s0",
+        "80173330 lhu $a1, 0x30($s1)",
+        "80173334 jal 0x801744e0",
+        "80173338 move $a0, $s0",
+        "8017333C beqz $s5, 0x80173388",
+        "80173340 move $s0, $v0",
+        "80173344 lhu $v0, 0x2c($s3)",
+        "80173348 nop ",
+        "8017334C mult $s0, $v0",
+        "80173350 mflo $v1",
+        "80173354 nop ",
+        "80173358 ori $v0, $zero, 0x64",
+        "8017335C div $zero, $v1, $v0",
+        "80173360 bnez $v0, 0x8017336c",
+        "80173364 nop ",
+        "80173368 break 7",
+        "8017336C addiu $at, $zero, -1",
+        "80173370 bne $v0, $at, 0x80173384",
+        "80173374 lui $at, 0x8000",
+        "80173378 bne $v1, $at, 0x80173384",
+        "8017337C nop ",
+        "80173380 break 6",
+        "80173384 mflo $s0",
+        "80173388 move $a0, $s2",
+        "8017338C jal 0x80164eb8",
+        "80173390 move $a1, $s4",
+        "80173394 move $v0, $s0",
+        "80173398 lw $ra, 0x28($sp)",
+        "8017339C lw $s5, 0x24($sp)",
+        "801733A0 lw $s4, 0x20($sp)",
+        "801733A4 lw $s3, 0x1c($sp)",
+        "801733A8 lw $s2, 0x18($sp)",
+        "801733AC lw $s1, 0x14($sp)",
+        "801733B0 lw $s0, 0x10($sp)",
+        "801733B4 jr $ra",
+        "801733B8 addiu $sp, $sp, 0x30",
+        "801733BC addiu $sp, $sp, -0x28",
+        "801733C0 sw $ra, 0x24($sp)",
+        "801733C4 sw $s2, 0x20($sp)",
+        "801733C8 sw $s1, 0x1c($sp)",
+        "801733CC sw $s0, 0x18($sp)",
+        "801733D0 lw $s2, 0xd8($a1)",
+        "801733D4 move $s0, $a0",
+        "801733D8 beqz $a3, 0x801733f4",
+        "801733DC move $s1, $a2",
+        "801733E0 jal 0x80164478",
+        "801733E4 ori $a1, $zero, 0xe",
+        "801733E8 move $a0, $s0",
+        "801733EC jal 0x80164478",
+        "801733F0 ori $a1, $zero, 0x3e",
+        "801733F4 move $a1, $zero",
+        "801733F8 move $a0, $zero",
+        "801733FC ori $a3, $zero, 1",
+        "80173400 ori $a2, $zero, 3",
+        "80173404 sll $v0, $s1, 1",
+        "80173408 addu $v0, $v0, $s1",
+        "8017340C sll $v0, $v0, 3",
+        "80173410 lui $at, 0x801a",
+        "80173414 addiu $at, $at, 0x2de",
+        "80173418 addu $at, $at, $v0",
+        "8017341C lhu $t0, ($at)",
+        "80173420 nop ",
+        "80173424 and $v0, $a3, $t0",
+        "80173428 beqz $v0, 0x8017345c",
+        "8017342C sll $v1, $a0, 1",
+        "80173430 lhu $v0, 0x38($s2)",
+        "80173434 nop ",
+        "80173438 and $v0, $a2, $v0",
+        "8017343C srav $v1, $v0, $v1",
+        "80173440 andi $v0, $v1, 1",
+        "80173444 beqz $v0, 0x80173450",
+        "80173448 andi $v0, $v1, 2",
+        "8017344C addiu $a1, $a1, 1",
+        "80173450 beqz $v0, 0x8017345c",
+        "80173454 nop ",
+        "80173458 addiu $a1, $a1, -1",
+        "8017345C addiu $a0, $a0, 1",
+        "80173460 sll $a3, $a3, 1",
+        "80173464 slti $v0, $a0, 0xc",
+        "80173468 bnez $v0, 0x80173420",
+        "8017346C sll $a2, $a2, 2",
+        "80173470 beqz $a1, 0x801734f0",
+        "80173474 ori $v1, $zero, 0x64",
+        "80173478 blez $a1, 0x801734d8",
+        "8017347C nop ",
+        "80173480 blez $a1, 0x801734f0",
+        "80173484 move $a0, $zero",
+        "80173488 ori $a2, $zero, 0xa",
+        "8017348C sll $v0, $v1, 3",
+        "80173490 subu $v0, $v0, $v1",
+        "80173494 div $zero, $v0, $a2",
+        "80173498 bnez $a2, 0x801734a4",
+        "8017349C nop ",
+        "801734A0 break 7",
+        "801734A4 addiu $at, $zero, -1",
+        "801734A8 bne $a2, $at, 0x801734bc",
+        "801734AC lui $at, 0x8000",
+        "801734B0 bne $v0, $at, 0x801734bc",
+        "801734B4 nop ",
+        "801734B8 break 6",
+        "801734BC mflo $v1",
+        "801734C0 addiu $a0, $a0, 1",
+        "801734C4 slt $v0, $a0, $a1",
+        "801734C8 bnez $v0, 0x80173490",
+        "801734CC sll $v0, $v1, 3",
+        "801734D0 j 0x801734f4",
+        "801734D4 move $v0, $v1",
+        "801734D8 bgez $a1, 0x801734f0",
+        "801734DC move $a0, $zero",
+        "801734E0 addiu $a0, $a0, -1",
+        "801734E4 slt $v0, $a1, $a0",
+        "801734E8 bnez $v0, 0x801734e0",
+        "801734EC addiu $v1, $v1, 0x1e",
+        "801734F0 move $v0, $v1",
+        "801734F4 lw $ra, 0x24($sp)",
+        "801734F8 lw $s2, 0x20($sp)",
+        "801734FC lw $s1, 0x1c($sp)",
+        "80173500 lw $s0, 0x18($sp)",
+        "80173504 jr $ra",
+        "80173508 addiu $sp, $sp, 0x28",
+        "8017350C addiu $sp, $sp, -0x20",
+        "80173510 sw $ra, 0x1c($sp)",
+        "80173514 sw $s2, 0x18($sp)",
+        "80173518 sw $s1, 0x14($sp)",
+        "8017351C sw $s0, 0x10($sp)",
+        "80173520 move $s1, $a1",
+        "80173524 sll $v0, $a2, 1",
+        "80173528 addu $v0, $v0, $a2",
+        "8017352C sll $v0, $v0, 3",
+        "80173530 lw $a1, 0xd8($a0)",
+        "80173534 lw $v1, 0xd8($s1)",
+        "80173538 lui $at, 0x801a",
+        "8017353C addiu $at, $at, 0x2e1",
+        "80173540 addu $at, $at, $v0",
+        "80173544 lb $a2, ($at)",
+        "80173548 lh $t0, 0x1e($a1)",
+        "8017354C lhu $a3, 0x30($a1)",
+        "80173550 move $a0, $s1",
+        "80173554 lhu $v0, 0x30($v1)",
+        "80173558 ori $a1, $zero, 4",
+        "8017355C addu $s0, $t0, $a2",
+        "80173560 jal 0x80164478",
+        "80173564 addu $s2, $a3, $v0",
+        "80173568 beqz $v0, 0x8017357c",
+        "8017356C srl $v0, $s0, 0x1f",
+        "80173570 addu $v0, $s0, $v0",
+        "80173574 sra $v0, $v0, 1",
+        "80173578 addu $s0, $s0, $v0",
+        "8017357C move $a0, $s0",
+        "80173580 jal 0x801744e0",
+        "80173584 move $a1, $s2",
+        "80173588 lw $v1, 0xd8($s1)",
+        "8017358C nop ",
+        "80173590 lhu $v1, 2($v1)",
+        "80173594 nop ",
+        "80173598 andi $v1, $v1, 0x800",
+        "8017359C beqz $v1, 0x801735a8",
+        "801735A0 move $s0, $v0",
+        "801735A4 negu $s0, $s0",
+        "801735A8 nor $v0, $zero, $s0",
+        "801735AC lw $ra, 0x1c($sp)",
+        "801735B0 lw $s2, 0x18($sp)",
+        "801735B4 lw $s1, 0x14($sp)",
+        "801735B8 lw $s0, 0x10($sp)",
+        "801735BC jr $ra",
+        "801735C0 addiu $sp, $sp, 0x20"
+      ]
+    },
+    {
+      "label": "consumable_dispatch",
+      "start": "0x80164eb8",
+      "end_exclusive": "0x80165084",
+      "file_offset": "0x4a6b8",
+      "length": 460,
+      "byte_exact": true,
+      "original_sha256": "12C15F4BC0AB083A9E726CA8094DF6DD99236A407624729B5A84DD1E5C0CC539",
+      "current_sha256": "12C15F4BC0AB083A9E726CA8094DF6DD99236A407624729B5A84DD1E5C0CC539",
+      "original_disassembly": [
+        "80164EB8 addiu $sp, $sp, -0x18",
+        "80164EBC sw $ra, 0x10($sp)",
+        "80164EC0 sll $v1, $a1, 2",
+        "80164EC4 lui $v0, 0x801a",
+        "80164EC8 addiu $v0, $v0, 0x1ce8",
+        "80164ECC addu $v1, $v1, $v0",
+        "80164ED0 lbu $v0, ($v1)",
+        "80164ED4 nop ",
+        "80164ED8 addiu $a2, $v0, -1",
+        "80164EDC ori $v0, $zero, 5",
+        "80164EE0 sltu $v0, $v0, $a2",
+        "80164EE4 bnez $v0, 0x80164f54",
+        "80164EE8 sll $v0, $a2, 2",
+        "80164EEC lui $at, 0x8012",
+        "80164EF0 addiu $at, $at, -0x49f0",
+        "80164EF4 addu $at, $at, $v0",
+        "80164EF8 lw $v0, ($at)",
+        "80164EFC nop ",
+        "80164F00 jr $v0",
+        "80164F04 nop ",
+        "80164F08 lbu $a1, 1($v1)",
+        "80164F0C lbu $a2, 2($v1)",
+        "80164F10 jal 0x80175448",
+        "80164F14 nop ",
+        "80164F18 j 0x80164f54",
+        "80164F1C nop ",
+        "80164F20 lbu $a1, 1($v1)",
+        "80164F24 lbu $a2, 2($v1)",
+        "80164F28 jal 0x801736d0",
+        "80164F2C nop ",
+        "80164F30 j 0x80164f54",
+        "80164F34 nop ",
+        "80164F38 lbu $a1, 1($v1)",
+        "80164F3C jal 0x8017394c",
+        "80164F40 nop ",
+        "80164F44 j 0x80164f54",
+        "80164F48 nop ",
+        "80164F4C jal 0x80164f64",
+        "80164F50 nop ",
+        "80164F54 lw $ra, 0x10($sp)",
+        "80164F58 nop ",
+        "80164F5C jr $ra",
+        "80164F60 addiu $sp, $sp, 0x18",
+        "80164F64 addiu $sp, $sp, -0x18",
+        "80164F68 sw $ra, 0x14($sp)",
+        "80164F6C sw $s0, 0x10($sp)",
+        "80164F70 ori $v0, $zero, 0xd",
+        "80164F74 beq $a1, $v0, 0x80164fec",
+        "80164F78 move $s0, $a0",
+        "80164F7C slti $v0, $a1, 0xe",
+        "80164F80 beqz $v0, 0x80164f98",
+        "80164F84 ori $v0, $zero, 2",
+        "80164F88 beq $a1, $v0, 0x80164fac",
+        "80164F8C nop ",
+        "80164F90 j 0x80165074",
+        "80164F94 nop ",
+        "80164F98 ori $v0, $zero, 0x12",
+        "80164F9C beq $a1, $v0, 0x80165060",
+        "80164FA0 move $a0, $s0",
+        "80164FA4 j 0x80165074",
+        "80164FA8 nop ",
+        "80164FAC lw $v0, 0xd8($s0)",
+        "80164FB0 nop ",
+        "80164FB4 lhu $v0, ($v0)",
+        "80164FB8 nop ",
+        "80164FBC sltiu $v0, $v0, 0x3c",
+        "80164FC0 beqz $v0, 0x80165074",
+        "80164FC4 nop ",
+        "80164FC8 jal 0x80173da8",
+        "80164FCC move $a0, $s0",
+        "80164FD0 lw $v1, 0xd8($s0)",
+        "80164FD4 move $a0, $s0",
+        "80164FD8 jal 0x80173da8",
+        "80164FDC sw $v0, 8($v1)",
+        "80164FE0 lw $v1, 0xdc($s0)",
+        "80164FE4 j 0x80165074",
+        "80164FE8 sw $v0, 8($v1)",
+        "80164FEC move $a0, $s0",
+        "80164FF0 jal 0x8017394c",
+        "80164FF4 ori $a1, $zero, 1",
+        "80164FF8 move $a0, $s0",
+        "80164FFC jal 0x8017394c",
+        "80165000 ori $a1, $zero, 3",
+        "80165004 move $a0, $s0",
+        "80165008 jal 0x8017394c",
+        "8016500C ori $a1, $zero, 4",
+        "80165010 move $a0, $s0",
+        "80165014 jal 0x8017394c",
+        "80165018 ori $a1, $zero, 6",
+        "8016501C move $a0, $s0",
+        "80165020 jal 0x8017394c",
+        "80165024 ori $a1, $zero, 7",
+        "80165028 move $a0, $s0",
+        "8016502C jal 0x8017394c",
+        "80165030 ori $a1, $zero, 8",
+        "80165034 move $a0, $s0",
+        "80165038 jal 0x8017394c",
+        "8016503C ori $a1, $zero, 0xa",
+        "80165040 move $a0, $s0",
+        "80165044 jal 0x8017394c",
+        "80165048 ori $a1, $zero, 0xc",
+        "8016504C move $a0, $s0",
+        "80165050 jal 0x8017394c",
+        "80165054 ori $a1, $zero, 0xe",
+        "80165058 j 0x80165074",
+        "8016505C nop ",
+        "80165060 jal 0x80173774",
+        "80165064 ori $a1, $zero, 0xa",
+        "80165068 move $a0, $s0",
+        "8016506C jal 0x80173774",
+        "80165070 ori $a1, $zero, 0xc",
+        "80165074 lw $ra, 0x14($sp)",
+        "80165078 lw $s0, 0x10($sp)",
+        "8016507C jr $ra",
+        "80165080 addiu $sp, $sp, 0x18"
+      ]
+    },
+    {
+      "label": "level_check",
+      "start": "0x80173a38",
+      "end_exclusive": "0x80173c14",
+      "file_offset": "0x59238",
+      "length": 476,
+      "byte_exact": true,
+      "original_sha256": "83A7FD91D31C66D7759B4DED91D96FFDC0D88DC1AED73321F761C11C00E1A8B3",
+      "current_sha256": "83A7FD91D31C66D7759B4DED91D96FFDC0D88DC1AED73321F761C11C00E1A8B3",
+      "original_disassembly": [
+        "80173A38 addiu $sp, $sp, -0x30",
+        "80173A3C sw $ra, 0x2c($sp)",
+        "80173A40 sw $s2, 0x28($sp)",
+        "80173A44 sw $s1, 0x24($sp)",
+        "80173A48 sw $s0, 0x20($sp)",
+        "80173A4C move $s0, $a0",
+        "80173A50 lw $s1, 0xd8($s0)",
+        "80173A54 nop ",
+        "80173A58 lw $v0, 8($s1)",
+        "80173A5C lui $v1, 1",
+        "80173A60 ori $v1, $v1, 0x869f",
+        "80173A64 sltu $v0, $v1, $v0",
+        "80173A68 beqz $v0, 0x80173a80",
+        "80173A6C move $s2, $zero",
+        "80173A70 sw $v1, 8($s1)",
+        "80173A74 lw $v0, 0xdc($s0)",
+        "80173A78 nop ",
+        "80173A7C sw $v1, 8($v0)",
+        "80173A80 lui $a0, 0x801b",
+        "80173A84 addiu $a0, $a0, 0x18cc",
+        "80173A88 move $a1, $zero",
+        "80173A8C jal 0x80175968",
+        "80173A90 ori $a2, $zero, 0x24",
+        "80173A94 lw $v0, 0xd8($s0)",
+        "80173A98 nop ",
+        "80173A9C lhu $v0, 0x14($v0)",
+        "80173AA0 nop ",
+        "80173AA4 sh $v0, 0x10($sp)",
+        "80173AA8 lw $v0, 0xd8($s0)",
+        "80173AAC nop ",
+        "80173AB0 lhu $v0, 0x18($v0)",
+        "80173AB4 nop ",
+        "80173AB8 sh $v0, 0x12($sp)",
+        "80173ABC lw $v0, 0xd8($s0)",
+        "80173AC0 nop ",
+        "80173AC4 lh $v0, 0x1c($v0)",
+        "80173AC8 ori $v1, $zero, 5",
+        "80173ACC div $zero, $v0, $v1",
+        "80173AD0 bnez $v1, 0x80173adc",
+        "80173AD4 nop ",
+        "80173AD8 break 7",
+        "80173ADC addiu $at, $zero, -1",
+        "80173AE0 bne $v1, $at, 0x80173af4",
+        "80173AE4 lui $at, 0x8000",
+        "80173AE8 bne $v0, $at, 0x80173af4",
+        "80173AEC nop ",
+        "80173AF0 break 6",
+        "80173AF4 mflo $v0",
+        "80173AF8 nop ",
+        "80173AFC sh $v0, 0x14($sp)",
+        "80173B00 lw $v0, 0xd8($s0)",
+        "80173B04 nop ",
+        "80173B08 lh $v0, 0x20($v0)",
+        "80173B0C nop ",
+        "80173B10 div $zero, $v0, $v1",
+        "80173B14 bnez $v1, 0x80173b20",
+        "80173B18 nop ",
+        "80173B1C break 7",
+        "80173B20 addiu $at, $zero, -1",
+        "80173B24 bne $v1, $at, 0x80173b38",
+        "80173B28 lui $at, 0x8000",
+        "80173B2C bne $v0, $at, 0x80173b38",
+        "80173B30 nop ",
+        "80173B34 break 6",
+        "80173B38 mflo $v0",
+        "80173B3C nop ",
+        "80173B40 sh $v0, 0x16($sp)",
+        "80173B44 lw $v0, 0xd8($s0)",
+        "80173B48 nop ",
+        "80173B4C lh $v0, 0x1e($v0)",
+        "80173B50 nop ",
+        "80173B54 div $zero, $v0, $v1",
+        "80173B58 bnez $v1, 0x80173b64",
+        "80173B5C nop ",
+        "80173B60 break 7",
+        "80173B64 addiu $at, $zero, -1",
+        "80173B68 bne $v1, $at, 0x80173b7c",
+        "80173B6C lui $at, 0x8000",
+        "80173B70 bne $v0, $at, 0x80173b7c",
+        "80173B74 nop ",
+        "80173B78 break 6",
+        "80173B7C mflo $v0",
+        "80173B80 nop ",
+        "80173B84 sh $v0, 0x18($sp)",
+        "80173B88 lw $v0, 0xd8($s0)",
+        "80173B8C nop ",
+        "80173B90 lh $v0, 0x22($v0)",
+        "80173B94 nop ",
+        "80173B98 div $zero, $v0, $v1",
+        "80173B9C bnez $v1, 0x80173ba8",
+        "80173BA0 nop ",
+        "80173BA4 break 7",
+        "80173BA8 addiu $at, $zero, -1",
+        "80173BAC bne $v1, $at, 0x80173bc0",
+        "80173BB0 lui $at, 0x8000",
+        "80173BB4 bne $v0, $at, 0x80173bc0",
+        "80173BB8 nop ",
+        "80173BBC break 6",
+        "80173BC0 mflo $v0",
+        "80173BC4 nop ",
+        "80173BC8 sh $v0, 0x1a($sp)",
+        "80173BCC jal 0x80173da8",
+        "80173BD0 move $a0, $s0",
+        "80173BD4 lw $v1, 8($s1)",
+        "80173BD8 nop ",
+        "80173BDC sltu $v1, $v1, $v0",
+        "80173BE0 bnez $v1, 0x80173c0c",
+        "80173BE4 ori $v0, $zero, 1",
+        "80173BE8 lhu $v0, ($s1)",
+        "80173BEC nop ",
+        "80173BF0 sltiu $v0, $v0, 0x3c",
+        "80173BF4 beqz $v0, 0x80173c0c",
+        "80173BF8 ori $v0, $zero, 1",
+        "80173BFC jal 0x80173e10",
+        "80173C00 move $a0, $s0",
+        "80173C04 j 0x80173bcc",
+        "80173C08 ori $s2, $zero, 1",
+        "80173C0C bne $s2, $v0, 0x80173d90",
+        "80173C10 move $v0, $s2"
+      ]
+    },
+    {
+      "label": "level_threshold_and_increment",
+      "start": "0x80173da8",
+      "end_exclusive": "0x80173eb4",
+      "file_offset": "0x595a8",
+      "length": 268,
+      "byte_exact": true,
+      "original_sha256": "D406932BFB5ADD18CF2009E8E21C54BBAA0AACA5602EDF033E1C5A986EAF7854",
+      "current_sha256": "D406932BFB5ADD18CF2009E8E21C54BBAA0AACA5602EDF033E1C5A986EAF7854",
+      "original_disassembly": [
+        "80173DA8 lw $v0, 0xdc($a0)",
+        "80173DAC nop ",
+        "80173DB0 lhu $a1, ($v0)",
+        "80173DB4 nop ",
+        "80173DB8 slti $v0, $a1, 0x3c",
+        "80173DBC beqz $v0, 0x80173e04",
+        "80173DC0 lui $v0, 1",
+        "80173DC4 lbu $a0, 0x9c($a0)",
+        "80173DC8 lui $v1, 0x801a",
+        "80173DCC addiu $v1, $v1, -0x2bdc",
+        "80173DD0 sltiu $v0, $a0, 0x96",
+        "80173DD4 bnez $v0, 0x80173de4",
+        "80173DD8 addiu $v0, $v1, -0x32",
+        "80173DDC j 0x80173de8",
+        "80173DE0 addu $v0, $a0, $v0",
+        "80173DE4 addu $v0, $a0, $v1",
+        "80173DE8 lbu $v0, ($v0)",
+        "80173DEC nop ",
+        "80173DF0 mult $a1, $v0",
+        "80173DF4 mflo $v0",
+        "80173DF8 nop ",
+        "80173DFC j 0x80173e08",
+        "80173E00 nop ",
+        "80173E04 ori $v0, $v0, 0x869f",
+        "80173E08 jr $ra",
+        "80173E0C nop ",
+        "80173E10 addiu $sp, $sp, -0x40",
+        "80173E14 sw $ra, 0x3c($sp)",
+        "80173E18 sw $s6, 0x38($sp)",
+        "80173E1C sw $s5, 0x34($sp)",
+        "80173E20 sw $s4, 0x30($sp)",
+        "80173E24 sw $s3, 0x2c($sp)",
+        "80173E28 sw $s2, 0x28($sp)",
+        "80173E2C sw $s1, 0x24($sp)",
+        "80173E30 sw $s0, 0x20($sp)",
+        "80173E34 move $s3, $a0",
+        "80173E38 lbu $s4, 0x9c($s3)",
+        "80173E3C jal 0x80173da8",
+        "80173E40 move $s1, $zero",
+        "80173E44 lw $a1, 0xd8($s3)",
+        "80173E48 nop ",
+        "80173E4C lw $v1, 8($a1)",
+        "80173E50 move $a0, $s3",
+        "80173E54 subu $v1, $v1, $v0",
+        "80173E58 jal 0x80173da8",
+        "80173E5C sw $v1, 8($a1)",
+        "80173E60 lw $a0, 0xdc($s3)",
+        "80173E64 nop ",
+        "80173E68 lw $v1, 8($a0)",
+        "80173E6C nop ",
+        "80173E70 subu $v1, $v1, $v0",
+        "80173E74 sw $v1, 8($a0)",
+        "80173E78 lw $v1, 0xd8($s3)",
+        "80173E7C nop ",
+        "80173E80 lhu $v0, ($v1)",
+        "80173E84 nop ",
+        "80173E88 addiu $v0, $v0, 1",
+        "80173E8C sh $v0, ($v1)",
+        "80173E90 lw $v1, 0xdc($s3)",
+        "80173E94 nop ",
+        "80173E98 lhu $v0, ($v1)",
+        "80173E9C nop ",
+        "80173EA0 addiu $v0, $v0, 1",
+        "80173EA4 sh $v0, ($v1)",
+        "80173EA8 lw $v0, 0xd8($s3)",
+        "80173EAC addiu $s0, $sp, 0x10",
+        "80173EB0 lhu $s6, ($v0)"
+      ]
+    },
+    {
+      "label": "consumable_attributes",
+      "start": "0x801a1ce8",
+      "end_exclusive": "0x801a1d68",
+      "file_offset": "0x874e8",
+      "length": 128,
+      "byte_exact": true,
+      "original_sha256": "A7C044546D982099A30C80DBEAB3C51A50E56A010F93C7D6C99EABEC05023626",
+      "current_sha256": "A7C044546D982099A30C80DBEAB3C51A50E56A010F93C7D6C99EABEC05023626",
+      "original_hex": "02 0e 03 75 03 01 00 23 05 00 00 00 06 3c 00 26 02 03 02 1e 04 08 00 1e 01 12 01 72 06 14 00 26 02 04 02 1e 03 03 00 23 02 0d 02 74 04 10 00 1e 04 28 00 1e 05 00 00 23 03 04 00 23 00 00 00 00 02 09 02 70 02 06 02 1e 05 00 00 71 01 10 01 70 01 13 01 74 01 0c 02 00 01 11 02 00 01 0e 02 00 02 07 02 1e 02 0b 02 72 03 02 00 23 03 08 00 23 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "label": "equipment_attributes",
+      "start": "0x801a1d68",
+      "end_exclusive": "0x801a1ee8",
+      "file_offset": "0x87568",
+      "length": 384,
+      "byte_exact": true,
+      "original_sha256": "A5DA69802A6AD52374B35AA2CB14A11993CAB797355775CD56B94EFBB2D1E55E",
+      "current_sha256": "A5DA69802A6AD52374B35AA2CB14A11993CAB797355775CD56B94EFBB2D1E55E",
+      "original_hex": "00 04 00 00 00 00 00 04 00 00 00 00 00 03 23 00 c8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 11 00 0a 00 00 03 28 00 c8 00 08 01 12 00 1e 00 00 03 1c 00 01 00 00 01 10 00 32 00 00 03 29 00 c8 00 00 01 14 00 14 00 00 04 00 00 00 00 00 00 00 00 00 00 00 03 14 00 c8 00 00 00 00 00 00 00 05 01 11 00 1e 00 00 01 14 00 0a 00 00 01 13 00 0a 00 00 01 13 00 1e 00 00 03 1b 00 01 00 00 03 1e 00 01 00 00 03 1d 00 01 00 00 04 00 00 00 00 00 00 00 00 00 00 00 01 10 00 1e 00 06 00 00 00 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 24 00 c8 00 01 00 00 00 00 00 00 01 11 00 32 00 00 01 11 00 1e 00 04 00 00 00 00 00 00 03 26 00 c8 00 00 01 12 00 32 00 00 01 12 00 1e 00 00 01 16 00 0a 00 05 01 10 00 46 00 06 00 00 00 00 00 08 00 00 00 00 00 00 03 2a 00 c8 00 00 01 15 00 0a 00 00 01 10 00 0a 00 00 01 1a 00 c8 00 02 00 00 00 00 00 00 01 1a 00 64 00 00 01 12 00 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 14 00 32 00 00 00 00 00 00 00 04 01 11 00 1e 00 00 03 25 00 c8 00 03 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "label": "stat_get_jump_table",
+      "start": "0x8011b7dc",
+      "end_exclusive": "0x8011b8e8",
+      "file_offset": "0xfdc",
+      "length": 268,
+      "byte_exact": true,
+      "original_sha256": "19114FF1380171B94448B93C1BE19FF5C29DBD8D5B4237B840781BF153F3C969",
+      "current_sha256": "19114FF1380171B94448B93C1BE19FF5C29DBD8D5B4237B840781BF153F3C969",
+      "original_hex": "80 52 17 80 8c 52 17 80 98 52 17 80 a4 52 17 80 b0 52 17 80 b0 52 17 80 b0 52 17 80 b0 52 17 80 b0 52 17 80 b0 52 17 80 b0 52 17 80 b0 52 17 80 c0 52 17 80 cc 52 17 80 d8 52 17 80 e4 52 17 80 f0 52 17 80 fc 52 17 80 08 53 17 80 14 53 17 80 20 53 17 80 2c 53 17 80 38 53 17 80 44 53 17 80 50 53 17 80 5c 53 17 80 68 53 17 80 74 53 17 80 80 53 17 80 8c 53 17 80 98 53 17 80 a4 53 17 80 b0 53 17 80 bc 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 c8 53 17 80 d8 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80 e4 53 17 80"
+    },
+    {
+      "label": "consumable_effect_jump_table",
+      "start": "0x8011b610",
+      "end_exclusive": "0x8011b628",
+      "file_offset": "0xe10",
+      "length": 24,
+      "byte_exact": true,
+      "original_sha256": "B98E03E3A4C5E9C436DFC743B11223CFCE1DA0FB7379DC0AB57A420BBE23CFAC",
+      "current_sha256": "B98E03E3A4C5E9C436DFC743B11223CFCE1DA0FB7379DC0AB57A420BBE23CFAC",
+      "original_hex": "08 4f 16 80 20 4f 16 80 38 4f 16 80 54 4f 16 80 4c 4f 16 80 54 4f 16 80"
+    },
+    {
+      "label": "party_level_coefficients",
+      "start": "0x8019d424",
+      "end_exclusive": "0x8019d42c",
+      "file_offset": "0x82c24",
+      "length": 8,
+      "byte_exact": true,
+      "original_sha256": "92E808C602B6592817572205EA93835E43B7C256202CBED6BDB94904E63B4A73",
+      "current_sha256": "92E808C602B6592817572205EA93835E43B7C256202CBED6BDB94904E63B4A73",
+      "original_hex": "32 32 32 32 32 32 64 32"
+    }
+  ],
+  "conclusions": [
+    {
+      "id": "equipment_description:48",
+      "status": "CONFIRMED_DEFECT",
+      "severity": "high",
+      "finding": "현재 문구는 쿠쿠루가 부활 마법을 받으면 만HP가 된다고 한다. 실제 장비 검사는 부활 시전자의 장비이며 그 시전자가 되살리는 대상의 HP를 만HP로 유지한다.",
+      "proposed_meaning": "쿠쿠루의 부활 마법으로 대상을 최대 체력으로 부활시킴",
+      "evidence": [
+        "8012E394 s0=a0 actor; 8012E3B8 equipped(actor,0x31)",
+        "8012E438 target_id=actor+AA; 8012E43C call 80128D78 with a3=equipment result",
+        "80128D8C saves equipment flag; 80128DA4 skips half-HP removal when flag nonzero",
+        "80128DAC..28DC8 reads newly created recipient maximum HP at +14 and removes half only without equipment",
+        "8012E474..2E484 subsequently charges MP to same actor, separating actor from new recipient"
+      ]
+    },
+    {
+      "id": "equipment_description:49",
+      "status": "CONFIRMED_DEFECT",
+      "severity": "medium",
+      "finding": "피해 편차 증가는 사실이나 회복량 변동에도 영향을 준다. 원본의 일반적인 편차 설명을 피해만으로 좁혀 회복 효과 범위를 누락했다.",
+      "proposed_meaning": "공격·회복 효과량의 편차 증가",
+      "evidence": [
+        "equipment49 raw 00 01 1A 00 64 00: percentage increase 100 to stat 0x1A",
+        "80174D50..74DF4 reads original stat and computes original + original*100/100",
+        "getter table 8011B844 -> 80175368 reads stat +30",
+        "801744E0..74544 applies base + trunc(base*(rand(2*spread)-spread)/100)",
+        "80173038 physical, 801731D8 magic, 80173330 item use spread",
+        "8017354C,80173554 sum caster/recipient spread; 80173580 applies same variation to healing"
+      ]
+    },
+    {
+      "id": "consumable_description:2",
+      "status": "ACCEPTABLE_ABBREVIATION",
+      "severity": "none",
+      "finding": "레벨 1 상승은 실제 효과와 일치한다. 레벨 60 상한에서 변화하지 않는 예외는 원본 설명 역시 생략한다.",
+      "evidence": [
+        "consumable table row2 801A1CF0 = 05 00 00 00",
+        "80164ED8 dispatch type5 -> 80164F4C -> 80164F64; item index2 -> 80164FAC",
+        "80164FBC guards level<60; 80164FC8/64FD8 threshold function to both stats+8",
+        "80173DA8 threshold = current level * character coefficient",
+        "80173BCC checks exp >= threshold; 80173E54/73E70 subtract threshold; 80173E88/73EA0 increment level once",
+        "Decoded arithmetic verified for 8 party IDs x levels1..59 =472 cases; no CPU harness claimed"
+      ]
+    }
+  ],
+  "level_coefficients": [
+    50,
+    50,
+    50,
+    50,
+    50,
+    50,
+    100,
+    50
+  ],
+  "level_arithmetic_cases": [
+    {
+      "character_id": 0,
+      "before": 1,
+      "after": 2,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 2,
+      "after": 3,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 3,
+      "after": 4,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 4,
+      "after": 5,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 5,
+      "after": 6,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 6,
+      "after": 7,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 7,
+      "after": 8,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 8,
+      "after": 9,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 9,
+      "after": 10,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 10,
+      "after": 11,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 11,
+      "after": 12,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 12,
+      "after": 13,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 13,
+      "after": 14,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 14,
+      "after": 15,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 15,
+      "after": 16,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 16,
+      "after": 17,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 17,
+      "after": 18,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 18,
+      "after": 19,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 19,
+      "after": 20,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 20,
+      "after": 21,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 21,
+      "after": 22,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 22,
+      "after": 23,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 23,
+      "after": 24,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 24,
+      "after": 25,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 25,
+      "after": 26,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 26,
+      "after": 27,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 27,
+      "after": 28,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 28,
+      "after": 29,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 29,
+      "after": 30,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 30,
+      "after": 31,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 31,
+      "after": 32,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 32,
+      "after": 33,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 33,
+      "after": 34,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 34,
+      "after": 35,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 35,
+      "after": 36,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 36,
+      "after": 37,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 37,
+      "after": 38,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 38,
+      "after": 39,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 39,
+      "after": 40,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 40,
+      "after": 41,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 41,
+      "after": 42,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 42,
+      "after": 43,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 43,
+      "after": 44,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 44,
+      "after": 45,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 45,
+      "after": 46,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 46,
+      "after": 47,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 47,
+      "after": 48,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 48,
+      "after": 49,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 49,
+      "after": 50,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 50,
+      "after": 51,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 51,
+      "after": 52,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 52,
+      "after": 53,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 53,
+      "after": 54,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 54,
+      "after": 55,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 55,
+      "after": 56,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 56,
+      "after": 57,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 57,
+      "after": 58,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 58,
+      "after": 59,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 0,
+      "before": 59,
+      "after": 60,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 1,
+      "after": 2,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 2,
+      "after": 3,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 3,
+      "after": 4,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 4,
+      "after": 5,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 5,
+      "after": 6,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 6,
+      "after": 7,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 7,
+      "after": 8,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 8,
+      "after": 9,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 9,
+      "after": 10,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 10,
+      "after": 11,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 11,
+      "after": 12,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 12,
+      "after": 13,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 13,
+      "after": 14,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 14,
+      "after": 15,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 15,
+      "after": 16,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 16,
+      "after": 17,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 17,
+      "after": 18,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 18,
+      "after": 19,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 19,
+      "after": 20,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 20,
+      "after": 21,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 21,
+      "after": 22,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 22,
+      "after": 23,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 23,
+      "after": 24,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 24,
+      "after": 25,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 25,
+      "after": 26,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 26,
+      "after": 27,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 27,
+      "after": 28,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 28,
+      "after": 29,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 29,
+      "after": 30,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 30,
+      "after": 31,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 31,
+      "after": 32,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 32,
+      "after": 33,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 33,
+      "after": 34,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 34,
+      "after": 35,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 35,
+      "after": 36,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 36,
+      "after": 37,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 37,
+      "after": 38,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 38,
+      "after": 39,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 39,
+      "after": 40,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 40,
+      "after": 41,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 41,
+      "after": 42,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 42,
+      "after": 43,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 43,
+      "after": 44,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 44,
+      "after": 45,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 45,
+      "after": 46,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 46,
+      "after": 47,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 47,
+      "after": 48,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 48,
+      "after": 49,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 49,
+      "after": 50,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 50,
+      "after": 51,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 51,
+      "after": 52,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 52,
+      "after": 53,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 53,
+      "after": 54,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 54,
+      "after": 55,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 55,
+      "after": 56,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 56,
+      "after": 57,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 57,
+      "after": 58,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 58,
+      "after": 59,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 1,
+      "before": 59,
+      "after": 60,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 1,
+      "after": 2,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 2,
+      "after": 3,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 3,
+      "after": 4,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 4,
+      "after": 5,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 5,
+      "after": 6,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 6,
+      "after": 7,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 7,
+      "after": 8,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 8,
+      "after": 9,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 9,
+      "after": 10,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 10,
+      "after": 11,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 11,
+      "after": 12,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 12,
+      "after": 13,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 13,
+      "after": 14,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 14,
+      "after": 15,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 15,
+      "after": 16,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 16,
+      "after": 17,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 17,
+      "after": 18,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 18,
+      "after": 19,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 19,
+      "after": 20,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 20,
+      "after": 21,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 21,
+      "after": 22,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 22,
+      "after": 23,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 23,
+      "after": 24,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 24,
+      "after": 25,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 25,
+      "after": 26,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 26,
+      "after": 27,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 27,
+      "after": 28,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 28,
+      "after": 29,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 29,
+      "after": 30,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 30,
+      "after": 31,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 31,
+      "after": 32,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 32,
+      "after": 33,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 33,
+      "after": 34,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 34,
+      "after": 35,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 35,
+      "after": 36,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 36,
+      "after": 37,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 37,
+      "after": 38,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 38,
+      "after": 39,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 39,
+      "after": 40,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 40,
+      "after": 41,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 41,
+      "after": 42,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 42,
+      "after": 43,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 43,
+      "after": 44,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 44,
+      "after": 45,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 45,
+      "after": 46,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 46,
+      "after": 47,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 47,
+      "after": 48,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 48,
+      "after": 49,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 49,
+      "after": 50,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 50,
+      "after": 51,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 51,
+      "after": 52,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 52,
+      "after": 53,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 53,
+      "after": 54,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 54,
+      "after": 55,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 55,
+      "after": 56,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 56,
+      "after": 57,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 57,
+      "after": 58,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 58,
+      "after": 59,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 2,
+      "before": 59,
+      "after": 60,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 1,
+      "after": 2,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 2,
+      "after": 3,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 3,
+      "after": 4,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 4,
+      "after": 5,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 5,
+      "after": 6,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 6,
+      "after": 7,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 7,
+      "after": 8,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 8,
+      "after": 9,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 9,
+      "after": 10,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 10,
+      "after": 11,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 11,
+      "after": 12,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 12,
+      "after": 13,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 13,
+      "after": 14,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 14,
+      "after": 15,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 15,
+      "after": 16,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 16,
+      "after": 17,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 17,
+      "after": 18,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 18,
+      "after": 19,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 19,
+      "after": 20,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 20,
+      "after": 21,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 21,
+      "after": 22,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 22,
+      "after": 23,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 23,
+      "after": 24,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 24,
+      "after": 25,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 25,
+      "after": 26,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 26,
+      "after": 27,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 27,
+      "after": 28,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 28,
+      "after": 29,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 29,
+      "after": 30,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 30,
+      "after": 31,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 31,
+      "after": 32,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 32,
+      "after": 33,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 33,
+      "after": 34,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 34,
+      "after": 35,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 35,
+      "after": 36,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 36,
+      "after": 37,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 37,
+      "after": 38,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 38,
+      "after": 39,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 39,
+      "after": 40,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 40,
+      "after": 41,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 41,
+      "after": 42,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 42,
+      "after": 43,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 43,
+      "after": 44,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 44,
+      "after": 45,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 45,
+      "after": 46,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 46,
+      "after": 47,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 47,
+      "after": 48,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 48,
+      "after": 49,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 49,
+      "after": 50,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 50,
+      "after": 51,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 51,
+      "after": 52,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 52,
+      "after": 53,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 53,
+      "after": 54,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 54,
+      "after": 55,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 55,
+      "after": 56,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 56,
+      "after": 57,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 57,
+      "after": 58,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 58,
+      "after": 59,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 3,
+      "before": 59,
+      "after": 60,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 1,
+      "after": 2,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 2,
+      "after": 3,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 3,
+      "after": 4,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 4,
+      "after": 5,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 5,
+      "after": 6,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 6,
+      "after": 7,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 7,
+      "after": 8,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 8,
+      "after": 9,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 9,
+      "after": 10,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 10,
+      "after": 11,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 11,
+      "after": 12,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 12,
+      "after": 13,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 13,
+      "after": 14,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 14,
+      "after": 15,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 15,
+      "after": 16,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 16,
+      "after": 17,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 17,
+      "after": 18,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 18,
+      "after": 19,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 19,
+      "after": 20,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 20,
+      "after": 21,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 21,
+      "after": 22,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 22,
+      "after": 23,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 23,
+      "after": 24,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 24,
+      "after": 25,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 25,
+      "after": 26,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 26,
+      "after": 27,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 27,
+      "after": 28,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 28,
+      "after": 29,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 29,
+      "after": 30,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 30,
+      "after": 31,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 31,
+      "after": 32,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 32,
+      "after": 33,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 33,
+      "after": 34,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 34,
+      "after": 35,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 35,
+      "after": 36,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 36,
+      "after": 37,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 37,
+      "after": 38,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 38,
+      "after": 39,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 39,
+      "after": 40,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 40,
+      "after": 41,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 41,
+      "after": 42,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 42,
+      "after": 43,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 43,
+      "after": 44,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 44,
+      "after": 45,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 45,
+      "after": 46,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 46,
+      "after": 47,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 47,
+      "after": 48,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 48,
+      "after": 49,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 49,
+      "after": 50,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 50,
+      "after": 51,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 51,
+      "after": 52,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 52,
+      "after": 53,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 53,
+      "after": 54,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 54,
+      "after": 55,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 55,
+      "after": 56,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 56,
+      "after": 57,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 57,
+      "after": 58,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 58,
+      "after": 59,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 4,
+      "before": 59,
+      "after": 60,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 1,
+      "after": 2,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 2,
+      "after": 3,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 3,
+      "after": 4,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 4,
+      "after": 5,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 5,
+      "after": 6,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 6,
+      "after": 7,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 7,
+      "after": 8,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 8,
+      "after": 9,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 9,
+      "after": 10,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 10,
+      "after": 11,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 11,
+      "after": 12,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 12,
+      "after": 13,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 13,
+      "after": 14,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 14,
+      "after": 15,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 15,
+      "after": 16,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 16,
+      "after": 17,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 17,
+      "after": 18,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 18,
+      "after": 19,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 19,
+      "after": 20,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 20,
+      "after": 21,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 21,
+      "after": 22,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 22,
+      "after": 23,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 23,
+      "after": 24,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 24,
+      "after": 25,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 25,
+      "after": 26,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 26,
+      "after": 27,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 27,
+      "after": 28,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 28,
+      "after": 29,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 29,
+      "after": 30,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 30,
+      "after": 31,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 31,
+      "after": 32,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 32,
+      "after": 33,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 33,
+      "after": 34,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 34,
+      "after": 35,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 35,
+      "after": 36,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 36,
+      "after": 37,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 37,
+      "after": 38,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 38,
+      "after": 39,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 39,
+      "after": 40,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 40,
+      "after": 41,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 41,
+      "after": 42,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 42,
+      "after": 43,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 43,
+      "after": 44,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 44,
+      "after": 45,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 45,
+      "after": 46,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 46,
+      "after": 47,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 47,
+      "after": 48,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 48,
+      "after": 49,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 49,
+      "after": 50,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 50,
+      "after": 51,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 51,
+      "after": 52,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 52,
+      "after": 53,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 53,
+      "after": 54,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 54,
+      "after": 55,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 55,
+      "after": 56,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 56,
+      "after": 57,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 57,
+      "after": 58,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 58,
+      "after": 59,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 5,
+      "before": 59,
+      "after": 60,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 1,
+      "after": 2,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 2,
+      "after": 3,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 3,
+      "after": 4,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 4,
+      "after": 5,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 5,
+      "after": 6,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 6,
+      "after": 7,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 7,
+      "after": 8,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 8,
+      "after": 9,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 9,
+      "after": 10,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 10,
+      "after": 11,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 11,
+      "after": 12,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 12,
+      "after": 13,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 13,
+      "after": 14,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 14,
+      "after": 15,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 15,
+      "after": 16,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 16,
+      "after": 17,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 17,
+      "after": 18,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 18,
+      "after": 19,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 19,
+      "after": 20,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 20,
+      "after": 21,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 21,
+      "after": 22,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 22,
+      "after": 23,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 23,
+      "after": 24,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 24,
+      "after": 25,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 25,
+      "after": 26,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 26,
+      "after": 27,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 27,
+      "after": 28,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 28,
+      "after": 29,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 29,
+      "after": 30,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 30,
+      "after": 31,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 31,
+      "after": 32,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 32,
+      "after": 33,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 33,
+      "after": 34,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 34,
+      "after": 35,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 35,
+      "after": 36,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 36,
+      "after": 37,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 37,
+      "after": 38,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 38,
+      "after": 39,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 39,
+      "after": 40,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 40,
+      "after": 41,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 41,
+      "after": 42,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 42,
+      "after": 43,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 43,
+      "after": 44,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 44,
+      "after": 45,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 45,
+      "after": 46,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 46,
+      "after": 47,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 47,
+      "after": 48,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 48,
+      "after": 49,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 49,
+      "after": 50,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 50,
+      "after": 51,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 51,
+      "after": 52,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 52,
+      "after": 53,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 53,
+      "after": 54,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 54,
+      "after": 55,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 55,
+      "after": 56,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 56,
+      "after": 57,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 57,
+      "after": 58,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 58,
+      "after": 59,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 6,
+      "before": 59,
+      "after": 60,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 1,
+      "after": 2,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 2,
+      "after": 3,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 3,
+      "after": 4,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 4,
+      "after": 5,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 5,
+      "after": 6,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 6,
+      "after": 7,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 7,
+      "after": 8,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 8,
+      "after": 9,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 9,
+      "after": 10,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 10,
+      "after": 11,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 11,
+      "after": 12,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 12,
+      "after": 13,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 13,
+      "after": 14,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 14,
+      "after": 15,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 15,
+      "after": 16,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 16,
+      "after": 17,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 17,
+      "after": 18,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 18,
+      "after": 19,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 19,
+      "after": 20,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 20,
+      "after": 21,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 21,
+      "after": 22,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 22,
+      "after": 23,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 23,
+      "after": 24,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 24,
+      "after": 25,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 25,
+      "after": 26,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 26,
+      "after": 27,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 27,
+      "after": 28,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 28,
+      "after": 29,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 29,
+      "after": 30,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 30,
+      "after": 31,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 31,
+      "after": 32,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 32,
+      "after": 33,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 33,
+      "after": 34,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 34,
+      "after": 35,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 35,
+      "after": 36,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 36,
+      "after": 37,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 37,
+      "after": 38,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 38,
+      "after": 39,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 39,
+      "after": 40,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 40,
+      "after": 41,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 41,
+      "after": 42,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 42,
+      "after": 43,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 43,
+      "after": 44,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 44,
+      "after": 45,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 45,
+      "after": 46,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 46,
+      "after": 47,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 47,
+      "after": 48,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 48,
+      "after": 49,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 49,
+      "after": 50,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 50,
+      "after": 51,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 51,
+      "after": 52,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 52,
+      "after": 53,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 53,
+      "after": 54,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 54,
+      "after": 55,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 55,
+      "after": 56,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 56,
+      "after": 57,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 57,
+      "after": 58,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 58,
+      "after": 59,
+      "remaining_exp": 0
+    },
+    {
+      "character_id": 7,
+      "before": 59,
+      "after": 60,
+      "remaining_exp": 0
+    }
+  ],
+  "game_files_modified": false
+}

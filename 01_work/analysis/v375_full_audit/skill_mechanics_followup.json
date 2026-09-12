@@ -1,0 +1,1932 @@
+{
+  "original_exe_sha256": "947ebf893f2d46207ec7e32ca514e4ea670e0bed34ef2144b5f7fb0fdd15bc67",
+  "scope": "Main0..7 static matrix119 retained; superseded by expanded allocated-table and CPU evidence in skill_integrity_followup.json/.py. No whole-gameplay pass.",
+  "matrix_count": 119,
+  "main_slot_counts": [
+    5,
+    7,
+    4,
+    8,
+    7,
+    6,
+    0,
+    8
+  ],
+  "matrix": [
+    {
+      "character_id": 0,
+      "slot": 0,
+      "skill_text_id": 1,
+      "rank_index": 0,
+      "action_id": 74,
+      "mp": 4,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        2,
+        12,
+        22,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 0,
+      "skill_text_id": 1,
+      "rank_index": 1,
+      "action_id": 79,
+      "mp": 8,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        2,
+        12,
+        22,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 0,
+      "skill_text_id": 1,
+      "rank_index": 2,
+      "action_id": 84,
+      "mp": 16,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        2,
+        12,
+        22,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 1,
+      "skill_text_id": 2,
+      "rank_index": 0,
+      "action_id": 75,
+      "mp": 7,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        17,
+        27,
+        37,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 1,
+      "skill_text_id": 2,
+      "rank_index": 1,
+      "action_id": 80,
+      "mp": 10,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        17,
+        27,
+        37,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 1,
+      "skill_text_id": 2,
+      "rank_index": 2,
+      "action_id": 85,
+      "mp": 15,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        17,
+        27,
+        37,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 2,
+      "skill_text_id": 3,
+      "rank_index": 0,
+      "action_id": 76,
+      "mp": 12,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        21,
+        31,
+        41,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 2,
+      "skill_text_id": 3,
+      "rank_index": 1,
+      "action_id": 81,
+      "mp": 16,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        21,
+        31,
+        41,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 2,
+      "skill_text_id": 3,
+      "rank_index": 2,
+      "action_id": 86,
+      "mp": 24,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        21,
+        31,
+        41,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 3,
+      "skill_text_id": 4,
+      "rank_index": 0,
+      "action_id": 77,
+      "mp": 6,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        6,
+        16,
+        26,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 3,
+      "skill_text_id": 4,
+      "rank_index": 1,
+      "action_id": 82,
+      "mp": 9,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        6,
+        16,
+        26,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 3,
+      "skill_text_id": 4,
+      "rank_index": 2,
+      "action_id": 87,
+      "mp": 14,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        6,
+        16,
+        26,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 4,
+      "skill_text_id": 5,
+      "rank_index": 0,
+      "action_id": 78,
+      "mp": 9,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        10,
+        20,
+        30,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 4,
+      "skill_text_id": 5,
+      "rank_index": 1,
+      "action_id": 83,
+      "mp": 14,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        10,
+        20,
+        30,
+        0
+      ]
+    },
+    {
+      "character_id": 0,
+      "slot": 4,
+      "skill_text_id": 5,
+      "rank_index": 2,
+      "action_id": 88,
+      "mp": 21,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        10,
+        20,
+        30,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 0,
+      "skill_text_id": 6,
+      "rank_index": 0,
+      "action_id": 89,
+      "mp": 4,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        3,
+        13,
+        23,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 0,
+      "skill_text_id": 6,
+      "rank_index": 1,
+      "action_id": 96,
+      "mp": 8,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        3,
+        13,
+        23,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 0,
+      "skill_text_id": 6,
+      "rank_index": 2,
+      "action_id": 103,
+      "mp": 12,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        3,
+        13,
+        23,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 1,
+      "skill_text_id": 7,
+      "rank_index": 0,
+      "action_id": 90,
+      "mp": 3,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        5,
+        15,
+        25,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 1,
+      "skill_text_id": 7,
+      "rank_index": 1,
+      "action_id": 97,
+      "mp": 5,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        5,
+        15,
+        25,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 1,
+      "skill_text_id": 7,
+      "rank_index": 2,
+      "action_id": 104,
+      "mp": 8,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        5,
+        15,
+        25,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 2,
+      "skill_text_id": 8,
+      "rank_index": 0,
+      "action_id": 91,
+      "mp": 6,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        7,
+        17,
+        27,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 2,
+      "skill_text_id": 8,
+      "rank_index": 1,
+      "action_id": 98,
+      "mp": 9,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        7,
+        17,
+        27,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 2,
+      "skill_text_id": 8,
+      "rank_index": 2,
+      "action_id": 105,
+      "mp": 14,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        7,
+        17,
+        27,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 3,
+      "skill_text_id": 9,
+      "rank_index": 0,
+      "action_id": 92,
+      "mp": 8,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        12,
+        22,
+        32,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 3,
+      "skill_text_id": 9,
+      "rank_index": 1,
+      "action_id": 99,
+      "mp": 12,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        12,
+        22,
+        32,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 3,
+      "skill_text_id": 9,
+      "rank_index": 2,
+      "action_id": 106,
+      "mp": 18,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        12,
+        22,
+        32,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 4,
+      "skill_text_id": 10,
+      "rank_index": 0,
+      "action_id": 93,
+      "mp": 9,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        14,
+        24,
+        34,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 4,
+      "skill_text_id": 10,
+      "rank_index": 1,
+      "action_id": 100,
+      "mp": 14,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        14,
+        24,
+        34,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 4,
+      "skill_text_id": 10,
+      "rank_index": 2,
+      "action_id": 107,
+      "mp": 21,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        14,
+        24,
+        34,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 5,
+      "skill_text_id": 11,
+      "rank_index": 0,
+      "action_id": 94,
+      "mp": 12,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        20,
+        30,
+        40,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 5,
+      "skill_text_id": 11,
+      "rank_index": 1,
+      "action_id": 101,
+      "mp": 18,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        20,
+        30,
+        40,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 5,
+      "skill_text_id": 11,
+      "rank_index": 2,
+      "action_id": 108,
+      "mp": 27,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        20,
+        30,
+        40,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 6,
+      "skill_text_id": 12,
+      "rank_index": 0,
+      "action_id": 95,
+      "mp": 14,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        26,
+        36,
+        46,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 6,
+      "skill_text_id": 12,
+      "rank_index": 1,
+      "action_id": 102,
+      "mp": 21,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        26,
+        36,
+        46,
+        0
+      ]
+    },
+    {
+      "character_id": 1,
+      "slot": 6,
+      "skill_text_id": 12,
+      "rank_index": 2,
+      "action_id": 109,
+      "mp": 32,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        26,
+        36,
+        46,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 0,
+      "skill_text_id": 13,
+      "rank_index": 0,
+      "action_id": 110,
+      "mp": 24,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        28,
+        38,
+        48,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 0,
+      "skill_text_id": 13,
+      "rank_index": 1,
+      "action_id": 114,
+      "mp": 32,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        28,
+        38,
+        48,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 0,
+      "skill_text_id": 13,
+      "rank_index": 2,
+      "action_id": 118,
+      "mp": 40,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        28,
+        38,
+        48,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 1,
+      "skill_text_id": 14,
+      "rank_index": 0,
+      "action_id": 111,
+      "mp": 5,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        17,
+        27,
+        37,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 1,
+      "skill_text_id": 14,
+      "rank_index": 1,
+      "action_id": 115,
+      "mp": 8,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        17,
+        27,
+        37,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 1,
+      "skill_text_id": 14,
+      "rank_index": 2,
+      "action_id": 119,
+      "mp": 12,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        17,
+        27,
+        37,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 2,
+      "skill_text_id": 15,
+      "rank_index": 0,
+      "action_id": 112,
+      "mp": 16,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        20,
+        30,
+        40,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 2,
+      "skill_text_id": 15,
+      "rank_index": 1,
+      "action_id": 116,
+      "mp": 18,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        20,
+        30,
+        40,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 2,
+      "skill_text_id": 15,
+      "rank_index": 2,
+      "action_id": 120,
+      "mp": 20,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        20,
+        30,
+        40,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 3,
+      "skill_text_id": 16,
+      "rank_index": 0,
+      "action_id": 113,
+      "mp": 20,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        25,
+        35,
+        45,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 3,
+      "skill_text_id": 16,
+      "rank_index": 1,
+      "action_id": 117,
+      "mp": 24,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        25,
+        35,
+        45,
+        0
+      ]
+    },
+    {
+      "character_id": 2,
+      "slot": 3,
+      "skill_text_id": 16,
+      "rank_index": 2,
+      "action_id": 121,
+      "mp": 28,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        25,
+        35,
+        45,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 0,
+      "skill_text_id": 17,
+      "rank_index": 0,
+      "action_id": 122,
+      "mp": 3,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        13,
+        23,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 0,
+      "skill_text_id": 17,
+      "rank_index": 1,
+      "action_id": 130,
+      "mp": 5,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        13,
+        23,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 0,
+      "skill_text_id": 17,
+      "rank_index": 2,
+      "action_id": 138,
+      "mp": 8,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        13,
+        23,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 1,
+      "skill_text_id": 18,
+      "rank_index": 0,
+      "action_id": 123,
+      "mp": 8,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        18,
+        28,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 1,
+      "skill_text_id": 18,
+      "rank_index": 1,
+      "action_id": 131,
+      "mp": 12,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        18,
+        28,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 1,
+      "skill_text_id": 18,
+      "rank_index": 2,
+      "action_id": 139,
+      "mp": 16,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        18,
+        28,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 2,
+      "skill_text_id": 19,
+      "rank_index": 0,
+      "action_id": 124,
+      "mp": 8,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        19,
+        29,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 2,
+      "skill_text_id": 19,
+      "rank_index": 1,
+      "action_id": 132,
+      "mp": 12,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        19,
+        29,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 2,
+      "skill_text_id": 19,
+      "rank_index": 2,
+      "action_id": 140,
+      "mp": 18,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        19,
+        29,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 3,
+      "skill_text_id": 20,
+      "rank_index": 0,
+      "action_id": 125,
+      "mp": 12,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        20,
+        30,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 3,
+      "skill_text_id": 20,
+      "rank_index": 1,
+      "action_id": 133,
+      "mp": 16,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        20,
+        30,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 3,
+      "skill_text_id": 20,
+      "rank_index": 2,
+      "action_id": 141,
+      "mp": 24,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        20,
+        30,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 4,
+      "skill_text_id": 21,
+      "rank_index": 0,
+      "action_id": 126,
+      "mp": 3,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        14,
+        24,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 4,
+      "skill_text_id": 21,
+      "rank_index": 1,
+      "action_id": 134,
+      "mp": 5,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        14,
+        24,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 4,
+      "skill_text_id": 21,
+      "rank_index": 2,
+      "action_id": 142,
+      "mp": 8,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        14,
+        24,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 5,
+      "skill_text_id": 22,
+      "rank_index": 0,
+      "action_id": 127,
+      "mp": 7,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        15,
+        25,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 5,
+      "skill_text_id": 22,
+      "rank_index": 1,
+      "action_id": 135,
+      "mp": 11,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        15,
+        25,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 5,
+      "skill_text_id": 22,
+      "rank_index": 2,
+      "action_id": 143,
+      "mp": 17,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        15,
+        25,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 6,
+      "skill_text_id": 23,
+      "rank_index": 0,
+      "action_id": 128,
+      "mp": 4,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        16,
+        26,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 6,
+      "skill_text_id": 23,
+      "rank_index": 1,
+      "action_id": 136,
+      "mp": 6,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        16,
+        26,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 6,
+      "skill_text_id": 23,
+      "rank_index": 2,
+      "action_id": 144,
+      "mp": 9,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        16,
+        26,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 7,
+      "skill_text_id": 24,
+      "rank_index": 0,
+      "action_id": 129,
+      "mp": 10,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        21,
+        31,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 7,
+      "skill_text_id": 24,
+      "rank_index": 1,
+      "action_id": 137,
+      "mp": 14,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        21,
+        31,
+        0
+      ]
+    },
+    {
+      "character_id": 3,
+      "slot": 7,
+      "skill_text_id": 24,
+      "rank_index": 2,
+      "action_id": 145,
+      "mp": 18,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        21,
+        31,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 0,
+      "skill_text_id": 25,
+      "rank_index": 0,
+      "action_id": 146,
+      "mp": 10,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        16,
+        26,
+        36,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 0,
+      "skill_text_id": 25,
+      "rank_index": 1,
+      "action_id": 153,
+      "mp": 16,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        16,
+        26,
+        36,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 0,
+      "skill_text_id": 25,
+      "rank_index": 2,
+      "action_id": 160,
+      "mp": 22,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        16,
+        26,
+        36,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 1,
+      "skill_text_id": 26,
+      "rank_index": 0,
+      "action_id": 147,
+      "mp": 6,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        17,
+        27,
+        37,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 1,
+      "skill_text_id": 26,
+      "rank_index": 1,
+      "action_id": 154,
+      "mp": 10,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        17,
+        27,
+        37,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 1,
+      "skill_text_id": 26,
+      "rank_index": 2,
+      "action_id": 161,
+      "mp": 6,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        17,
+        27,
+        37,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 2,
+      "skill_text_id": 27,
+      "rank_index": 0,
+      "action_id": 148,
+      "mp": 14,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        18,
+        28,
+        38,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 2,
+      "skill_text_id": 27,
+      "rank_index": 1,
+      "action_id": 155,
+      "mp": 20,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        18,
+        28,
+        38,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 2,
+      "skill_text_id": 27,
+      "rank_index": 2,
+      "action_id": 162,
+      "mp": 26,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        18,
+        28,
+        38,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 3,
+      "skill_text_id": 28,
+      "rank_index": 0,
+      "action_id": 149,
+      "mp": 16,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        19,
+        29,
+        39,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 3,
+      "skill_text_id": 28,
+      "rank_index": 1,
+      "action_id": 156,
+      "mp": 24,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        19,
+        29,
+        39,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 3,
+      "skill_text_id": 28,
+      "rank_index": 2,
+      "action_id": 163,
+      "mp": 32,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        19,
+        29,
+        39,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 4,
+      "skill_text_id": 29,
+      "rank_index": 0,
+      "action_id": 150,
+      "mp": 13,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        20,
+        30,
+        40,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 4,
+      "skill_text_id": 29,
+      "rank_index": 1,
+      "action_id": 157,
+      "mp": 20,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        20,
+        30,
+        40,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 4,
+      "skill_text_id": 29,
+      "rank_index": 2,
+      "action_id": 164,
+      "mp": 30,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        20,
+        30,
+        40,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 5,
+      "skill_text_id": 30,
+      "rank_index": 0,
+      "action_id": 151,
+      "mp": 18,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        21,
+        31,
+        41,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 5,
+      "skill_text_id": 30,
+      "rank_index": 1,
+      "action_id": 158,
+      "mp": 28,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        21,
+        31,
+        41,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 5,
+      "skill_text_id": 30,
+      "rank_index": 2,
+      "action_id": 165,
+      "mp": 38,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        21,
+        31,
+        41,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 6,
+      "skill_text_id": 31,
+      "rank_index": 0,
+      "action_id": 152,
+      "mp": 10,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        22,
+        32,
+        42,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 6,
+      "skill_text_id": 31,
+      "rank_index": 1,
+      "action_id": 159,
+      "mp": 15,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        22,
+        32,
+        42,
+        0
+      ]
+    },
+    {
+      "character_id": 4,
+      "slot": 6,
+      "skill_text_id": 31,
+      "rank_index": 2,
+      "action_id": 166,
+      "mp": 23,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        22,
+        32,
+        42,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 0,
+      "skill_text_id": 32,
+      "rank_index": 0,
+      "action_id": 167,
+      "mp": 2,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        21,
+        31,
+        41,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 0,
+      "skill_text_id": 32,
+      "rank_index": 1,
+      "action_id": 173,
+      "mp": 4,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        21,
+        31,
+        41,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 0,
+      "skill_text_id": 32,
+      "rank_index": 2,
+      "action_id": 179,
+      "mp": 6,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        21,
+        31,
+        41,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 1,
+      "skill_text_id": 33,
+      "rank_index": 0,
+      "action_id": 168,
+      "mp": 6,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        22,
+        32,
+        42,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 1,
+      "skill_text_id": 33,
+      "rank_index": 1,
+      "action_id": 174,
+      "mp": 9,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        22,
+        32,
+        42,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 1,
+      "skill_text_id": 33,
+      "rank_index": 2,
+      "action_id": 180,
+      "mp": 14,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        22,
+        32,
+        42,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 2,
+      "skill_text_id": 34,
+      "rank_index": 0,
+      "action_id": 169,
+      "mp": 8,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        25,
+        35,
+        45,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 2,
+      "skill_text_id": 34,
+      "rank_index": 1,
+      "action_id": 175,
+      "mp": 12,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        25,
+        35,
+        45,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 2,
+      "skill_text_id": 34,
+      "rank_index": 2,
+      "action_id": 181,
+      "mp": 18,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        25,
+        35,
+        45,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 3,
+      "skill_text_id": 35,
+      "rank_index": 0,
+      "action_id": 170,
+      "mp": 9,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        27,
+        37,
+        47,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 3,
+      "skill_text_id": 35,
+      "rank_index": 1,
+      "action_id": 176,
+      "mp": 14,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        27,
+        37,
+        47,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 3,
+      "skill_text_id": 35,
+      "rank_index": 2,
+      "action_id": 182,
+      "mp": 21,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        27,
+        37,
+        47,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 4,
+      "skill_text_id": 36,
+      "rank_index": 0,
+      "action_id": 171,
+      "mp": 11,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        29,
+        39,
+        49,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 4,
+      "skill_text_id": 36,
+      "rank_index": 1,
+      "action_id": 177,
+      "mp": 17,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        29,
+        39,
+        49,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 4,
+      "skill_text_id": 36,
+      "rank_index": 2,
+      "action_id": 183,
+      "mp": 26,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        29,
+        39,
+        49,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 5,
+      "skill_text_id": 37,
+      "rank_index": 0,
+      "action_id": 172,
+      "mp": 13,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        30,
+        40,
+        50,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 5,
+      "skill_text_id": 37,
+      "rank_index": 1,
+      "action_id": 178,
+      "mp": 20,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        30,
+        40,
+        50,
+        0
+      ]
+    },
+    {
+      "character_id": 5,
+      "slot": 5,
+      "skill_text_id": 37,
+      "rank_index": 2,
+      "action_id": 184,
+      "mp": 30,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        30,
+        40,
+        50,
+        0
+      ]
+    },
+    {
+      "character_id": 7,
+      "slot": 0,
+      "skill_text_id": 38,
+      "rank_index": 0,
+      "action_id": 185,
+      "mp": 4,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "character_id": 7,
+      "slot": 1,
+      "skill_text_id": 39,
+      "rank_index": 0,
+      "action_id": 186,
+      "mp": 8,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "character_id": 7,
+      "slot": 2,
+      "skill_text_id": 40,
+      "rank_index": 0,
+      "action_id": 187,
+      "mp": 12,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "character_id": 7,
+      "slot": 3,
+      "skill_text_id": 41,
+      "rank_index": 0,
+      "action_id": 188,
+      "mp": 22,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "character_id": 7,
+      "slot": 4,
+      "skill_text_id": 42,
+      "rank_index": 0,
+      "action_id": 189,
+      "mp": 14,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "character_id": 7,
+      "slot": 5,
+      "skill_text_id": 43,
+      "rank_index": 0,
+      "action_id": 190,
+      "mp": 18,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "character_id": 7,
+      "slot": 6,
+      "skill_text_id": 44,
+      "rank_index": 0,
+      "action_id": 191,
+      "mp": 1,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "character_id": 7,
+      "slot": 7,
+      "skill_text_id": 45,
+      "rank_index": 0,
+      "action_id": 192,
+      "mp": 1,
+      "selector_matches_v375": true,
+      "action_record_matches_v375": true,
+      "rank_thresholds": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "unresolved": [
+    "skill_description29 barrier wording: flame actor88 spawn proven, visual/collision semantics still require judgment",
+    "skill_name47 and skill_description47 bridge wording: terrain tile03FF write proven, rendered structure/placement semantics still require judgment",
+    "All actual save/scene reachability of allocated actor records not enumerated; 89/90 NULL descriptors especially unproven"
+  ],
+  "sources": [
+    "https://chokota.com/complete/atl1/special.htm",
+    "https://gcgx.games/arc1/iga.html",
+    "https://chokota.com/complete/atl1/c1.htm"
+  ],
+  "resolved_mind_eye": "CONFIRMED_DEFECT: original all-target collector and two-target marking CPU loop disprove one enemy"
+}

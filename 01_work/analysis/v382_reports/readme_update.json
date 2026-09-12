@@ -1,0 +1,8 @@
+{
+  "before_sha256": "F95C88AE14E72B6B388BCFE6E5E29A6078D04CBB8E7E5E80198287A726D41AD5",
+  "after_sha256": "3A887FC5535B2E97E3DCC7C13667A683FB9B84B0D880F956546F1E8D6C4DC68B",
+  "backup": "E:\\korean\\99_backup\\arc1_v382_before_v376_readme.zip",
+  "only_changed_member": "README.txt",
+  "xdelta_unchanged": true,
+  "release_baseline": 376
+}

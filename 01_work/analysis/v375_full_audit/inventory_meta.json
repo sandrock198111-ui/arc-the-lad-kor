@@ -1,0 +1,25 @@
+{
+  "original_sha256": "AE9F4366A1E7DA3805BB3BED3DDA9567E4CD4E669AF890E4E2A620D7861F11DD",
+  "build_sha256": "AD9ED2B9E898F05C2EC5C78ABBA4253CE052B7B4836DEE31D84108AD4256CFBB",
+  "original_exe_sha256": "947EBF893F2D46207EC7E32CA514E4EA670E0BED34EF2144B5F7FB0FDD15BC67",
+  "build_exe_sha256": "57AC9833007E92B0A4E6730A11B44DE1958C6E7BBBA3BBA2C4C69B3F980D3782",
+  "inventory_count": 673,
+  "groups": {
+    "card_label": 2,
+    "ui_system_v39": 39,
+    "equipment_name": 64,
+    "equipment_description": 64,
+    "consumable_name": 32,
+    "consumable_description": 32,
+    "skill_name": 59,
+    "skill_description": 59,
+    "character_name": 108,
+    "region_name": 30,
+    "ui_world_name_v39": 1,
+    "location_name": 55,
+    "ui_nonstory_system_v39": 128
+  },
+  "unknown_code_rows": 3,
+  "enumeration_scope": "671 historical pointer records + 2 memory-card label records; additional reference/inline census remains required",
+  "complete": false
+}

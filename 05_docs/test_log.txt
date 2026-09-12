@@ -1,3 +1,66 @@
+2026-09-11 | V382 배포 README 누적 기준 | PACKAGE-CONTENT PASS
+- 이전 배포 V376 대비 V377~V382 변경기록과 README 항목 대조. 원고/출력 README/ZIP 동봉문서 갱신. ZIP CRC검사 및 전후 멤버 비교에서 README.txt만 변경, xdelta 해시 기존동일. 게임변경없어 CPU/디스크 재검사 생략. 이전 ZIP은99_backup 보존. bible_current 검토: 실기성공 기준변경없어 유지. 다음 후보는 사용자 배포문구 최종 검토.
+
+2026-09-11 | V382 새 상태10개 누적수정 | STATIC/CAPTURE-CPU/TIMER/CURSOR/REGRESSION/DISC PASS
+- 대상4멤버707B, 반복 prepare byte exact. 업로드10개 해시 검증. 8대사 캡처 접두부 XY/UV와 설명1캡처 재현; 상태10은 소스RAM이 해제되어 상태9 문맥+잔존패킷 비교로 한정. #2811 중간웃음 합성검사 별도. glyph833 신규 외1919plane 불변. 원장3셀외 동일, SHA C61FDA019B02ABAE78AB3CA6359AAC9E4592271E76CD50B3EDD9CD1A997ABA35.
+- SF0517행 원본 E4 25개(60회21개/30회4개) 순서/매개변수/감소회수/끝주소 일치. 선택Y48/64 및 type6(5,2,0,1)와커서top108,50/108,66 확인. 하늘의 목소리21h type0/count1 및 실제8015A420 타이머240/300/360/420회 후 입력없이 해제 확인. SB022 변경0.
+- 기존 V376~V381 물의신전/패널/배우/선택/정령/대기 CPU 회귀 PASS. 새원본 디스크164멤버readback/506LBA/38섹터76EDC-ECC/미설명payload0. BIN2179645D69313AFF8FEEFB06E38AA51CBD994B35CAE1633DF52E84D4AA8A129E.
+- 후보의 색/짐 미등록 및 UI25B초과를 인코더가 차단. 기존사용 glyph후보7개 거부,833통과. UI resident mapping 수정 후 actual helper새문구 확인. 상세 v382_reports/README.md. 실제 새부팅/GPU/전체플레이 미실행; bible_current 갱신검토 후 사용자확인 기준 유지. 다음 확인: 환상의 검 설명/선택2항목/안델 자동대사.
+
+2026-09-11 | V379 카드2 파일3 넘치는 열매99 | STATIC/NATIVE-CPU PASS
+- edit_arc1_card2_fruit99.py 실행: 기존3파일 체크섬 일치, 수정2바이트 한정, 원본·파일1/2 보존. V379 실제 checksum writer8012B5F0 및 load-copy8012B0EC 실행 후 UI 소비 코드8016475C가 아이템2 수량99를 읽음. 출력 SHA256 75CCAE529556EE81A8874D4E710D8AA8D3B04D9C500391A0C52EEDBE9E1F5A61.
+- 실제 DuckStation UI 미실행. 카드2에 별도 수정본 연결 후 게임 내 불러오기로 파일3 로드 필요. 상태저장 로드는 별도 RAM 수량을 복원함. bible_current 검토, 게임패치 성공기준 변경 없어 갱신하지 않음. 다음 확인: 실제 아이템 메뉴99개 및 사용 후98개.
+
+2026-09-11 | V381 (V380 포함) V379 누적 제보 | STATIC/CAPTURE/TIMING-CPU/REGRESSION/DISC/XDELTA PASS
+- 새 BF3604F4 상태1~6 전체경로/해시 고정. 사용자 상태와 원본 불변. V380 먼저 생성 후 인접10행 누락을 발견해 V381에 누적; 중간본 보존. 각각 반복 빌드와 선행 재구성 일치. 최종 V379 대비 대사15곳+UI1곳/3멤버1156B, 실행코드/글꼴 불변.
+- 6캡처 원래 XY/UV/CLUT/끝주소 재현 후 새 출력 검사. 원본 L/R 그림은 COMM.IMG의194/178,130 위치로 확인. 새 안내는 실제8016C794에서 일반 글리프만 출력.
+- #644/648/649 및 인접10행 원본/기존/수정 본문을 실제8016BB10으로 반복 출력. E4진입8016BBE4 및 감소8016BDE0 관찰. 기존0회, 수정후 원본과 같은11+2+2+28개 대기. E479=120회/E4F1=240회/E43D=60회. 모든 끝주소 동일. 인접10행은 캡처환경의 합성본문 적재 검사로 실제 전체 이벤트 실행과 구별. S205C 전체 E4보유14행46토큰 일치.
+- 초기 검사 도구가 KSEG 주소를 Unicorn mem_read에 그대로 줘 실패: 물리 마스크로 교정. 일반 슬래시는 글리프 없음, 'L, R 대상 변경'은12B로 기존10B 초과하여 'L R 대상변경'으로 기능 안내 보존. 중간 조판의 잔여 filler 출력/빈 줄은 마지막 평문 E2 skip으로 소비하도록 수정 후 통과. 후보 실패를 배포 결과로 기록하지 않음.
+- 최종에서 기존 V376~V379 및 V380 CPU 회귀 PASS. 원장3셀 외 동일, 변경후 SHA256 81FB640865A0CCCC4131449DB6AD3E6F43660F15E699DBD0756E658F4F7D4590. AST7스크립트/입력 해시 확인.
+- V381 ZIP 9D9A2244729A765A0E98784D22A4DC8AC54F70C10E321D7462604F33774429CD. BIN 0E9D39C915D1943493014417B9AF47C7FE30DD4DC89A579078D9FA2FC9D104C5. 164readback/506LBA/중간V380대비34섹터68EDC-ECC/미설명payload0. xdelta decode 목표완전일치 및 reencode byte exact. 묶음666810B SHA256 91BA6AD1D1458FF6686F0789159BFCE48ED48D5EEE81B02930900C5B425D9B33.
+- 실제 DuckStation 새부팅/GPU/입력전이/전체플레이 미실행. bible_current 확인 후 승격하지 않음. 다음 확인은 왕의 마지막 대사~탈출과 대기 중 입력, 전투 대상변경. 상세 v381_scene_pauses/README.md, build_report/package/xdelta/canonical_update.json.
+
+2026-09-11 | V379 V378 누적 정령/누락대사 | STATIC/CAPTURE-CPU/REGRESSION/DISC/XDELTA PASS
+- 수정: V379 build/verify/package/sync/audit 스크립트, 15DAT1346B, 원고16한국어셀 및 보완12대사. 고정V378 재구성/신규ZIP 2회 동일, 비대상2860대사 토큰 동일, EXE/폰트 동일, 원본과 업로드 상태 불변.
+- 새 캡처10개 원래 패킷 좌표/글리프/끝주소 정확히 재현 후 수정 검증. 주header801F9D44/보조801F9D88 구분. 상태6은 직전 대사 캐시 증거. 수정30곳 합성 글자출력/4행 이내/글리프/끝주소 검사. 기존 물의신전/UI/배우/카드/선택커서 CPU 회귀 PASS. E4 위치/값 보존, 네 대사 E6 조판 제거.
+- 162DAT argument0 조건 재검색: 보완12곳 잔존0, 비텍스트후보6곳 보존. 9정령 명시화자135행 비교. 에너지/불꽃 명칭은 원본 글꼴 재구성으로 직접 확인.
+- 초기 후보의 낸/묻/하이픈은 글리프 검사에서 거부되어 만든/물어볼/늘인 외침으로 조정. 초기 합성검사가 이름표 창을180px로 잘못 설정해5행 판정: 실제228px 및 캡처별 크기로 교정. 첫 조판안의 단어 붙음/떨어진 마침표를 대기 구간 템플릿으로 정리 후 재검증. 실패본은 배포물로 만들지 않음.
+- ZIP B1B3BC98BB886B666759D8806F26650BE73D4D39C4C8C74B93611D02CC06921F. BIN 868DFDDCA813EE0C95E11DCE459C767696E34F7CF362FE26CCCEABC452620399. 164readback/506LBA/52섹터104EDC-ECC/미설명payload0 PASS. xdelta decode 목표완전일치/reencode byte exact. 묶음666301B SHA256 74E097CBF6CC4F06C85DFE16E4A1E9011E21B2C6DE3F02EB9D7C883799A88273.
+- 원장16셀 변경 후 SHA256 09C1574F6A40526FA7F7D388E1835425C1B748BBB774166640903A5FC7B7CD87. DuckStation 새부팅/입력/전체플레이 미실행. bible_current 확인 후 승격하지 않음. 상세 v379_spirit_reports/README.md 및 검증 JSON.
+
+2026-09-11 | V378 V377 누적 후속 | STATIC/CAPTURE-CPU/REGRESSION/DISC/XDELTA PASS
+- 입력: 새업로드7/8/9/10 전체경로/해시고정, 모두V376_HOTFIX. 수정기준V377 고정해시/재생성일치 확인. 같은이름 이전세이브와 구분. 원본/기존산출물/사용자상태 불변. 원문7은いつでもいいぞ로짧음,8은まかせなさい. 질문7유지,8나한테맡겨!/두선택지좋아·역시그만둘래,허리띠6본문개행,커서1바이트 적용.
+- 기존4화면 전체XY/글리프/끝포인터 캡처일치. 실제렌더러수정후7/8선택Y48/64,9괄호Y48첫글자/세줄,10문자전체동일. 실제type6인자reader로(5,2,0,1)/(5,2,0,2)와다음인덱스보존확인. 커서6좌표/해독패드상하경계12조건통과,10번top108,66/108,82.
+- V377제보CPU/V376물의신전·배우상태·설명154행346조건·커서1152조건·카드/선택지회귀PASS. 다른2870대사확장동일,EXE/COMM.IMG V377 byte exact. 정식원고8한국어셀외동일,전후해시및백업저장. 변경게임8DAT286B.
+- 빌드ZIP C23A2F7E10F044F6C6E897CECE8F6D3DCFDC64D1BA2C54EE303E6DFA969112D7 반복동일. BIN B07D4EEC5506B59CDB7C45301DFC17B146F814EC7AD3B4312E4C03E3BBCADD11. 164멤버readback/506LBA/36변경섹터72EDC-ECC/미설명payload0. xdelta decode목표완전일치/reencode byte exact. 묶음666808B SHA256 B11F6108D3446C793A5E8B6D37585AE4EFFE4C7D161C9CE1FE90FEA3A9749C53.
+- 초기캡처검사실패는 E503 들여쓰기plane746, 느낌표168→741의기존V336이동, 괄호전각/반각별칭을디코더가구분하지않은검사오류였다. 기존폰트의blank조건/실제runtime mapping/동일글리프alias를반영해통과. 이에맞추려고게임폰트/기계어를변경하지않았다.
+- AST3스크립트/git diff --check PASS. bible_current 갱신여부검토: 실화면성공기준유지. V378 새부팅/물리입력/선택후분기진행 검수는남음. 다음검수는메모리카드로드후네제보화면및선택실행. 상세v378_followup/README.md/build_report.json/package.json/xdelta.json.
+
+2026-09-11 | V377 69D03814 제보 | STATIC/CAPTURE-CPU/REGRESSION/DISC/XDELTA PASS
+- 상태8개 V376_HOTFIX 확인, 원본 입력 해시/VRAM 화면 기록. 변경: 신규 build_arc1_v377_user_reports.py, verify_arc1_v377_reports.py, package_arc1_v377_xdelta.py, 정식 script_translated_full.csv 한국어2셀, 분석/문서. 원본·기존배포·사용자상태 불변.
+- 1/3/5/6 UI 및7대사 기존XY·글리프·끝포인터 캡처일치; 수정된4UI/2대사를 실제출력기CPU로 검증. 5번 둘째줄 시작증가량,6번 비한글기호0. 본인들이/후우진 기존물리글리프 비공백 및 예상출력 확인. 2279는 상태7 문맥의 격리실행으로 캡처직접재현과 구분.
+- 기존 V376 물의신전반환1/배우상태0/설명154행346조건/커서1152조건/카드·선택지 회귀 PASS. 다른2876대사 토큰 동일,673UI 비대상 문자열 보존, 전체대사/UI 후진0. 정식원고 두 행 한국어 외 모든 셀 동일.
+- 반복ZIP 16FE8214E4E96EA80B12445A8819A0460B881A1F52B6E9DDFCE268CA59CCA6EC. BIN F03CB94D395CB9E25502DB494644F0359F6BAAFD8EC578EB795FCA570939697E. 164readback/506LBA/32섹터64EDC-ECC/미설명payload0 PASS. xdelta decode 목표완전일치/reencode byte exact, 묶음666495바이트.
+- 초기 검증기의 '?' 검사는 대사의 정상 물음표까지 오류로 잡았다. 문자 자체 금지가 아니라 실제 출력 패킷의 글리프 매핑 존재 검사로 수정 후 통과. 게임 변경 원인은 아님. DuckStation 새부팅/입력전이/전체플레이 검증은 미실행. bible_current 승격 없음. 남은 검수와 상세증거는 v377_user_reports/README.md.
+
+2026-09-10 | V376 긴급 수정 / v0.9.2 패키징 | STATIC/CPU/DISC/XDELTA PASS; 실제 플레이 미검증
+- 수정 파일: build_arc1_v376_hotfix.py, v376_ui_targets.py, v376_dat_targets.py, package_arc1_v376_xdelta.py 및 분석 보고서. 원본 ZIP/V375 ZIP 해시 고정, 두 번 생성 결과 동일. UI102+보존문자열2포인터, 이벤트24행(각 원본3바이트), 구조4군/배우88~90 복구, 안전 글꼴2plane, DAT70본문 반영. 다른1918plane byte exact.
+- 실제 게임 코드 CPU: 물의 신전 opcode0B,0B,14,21 및 반환1이 원본과 일치. 배우88 복사/refresh 상태0 및 정상 분기 일치. 설명창154행/346조건, 커서1152조건, 기존 V374/V375 카드/선택지 회귀 PASS. 수정 범위 밖3490본문 확장 토큰 동일; 원문 미확정 DAT의 원시 바이트 보존도 검사.
+- 원본 기반 새 디스크 readback: 패치164/164멤버 일치, 데이터506개 LBA 유지. V375 대비101변경섹터의 양쪽 EDC/ECC 검사202회 PASS, 미설명 payload 변경0. BIN SHA256 171ABEF06E3689250934416EBA0DCB40016FE8D3A3680173B69A92708C3DBA3D.
+- xdelta decode 후 원본에서 목표 BIN 해시 전체 일치; 재encode patch byte exact. 묶음666238바이트, SHA256 AC297301D28E20A6785C1A43223EE2748DA3601222A9A046FBD453D9DC49A727. ZIP 멤버는 patch/CUE/README/verification만 포함.
+- 준비 단계 실패: 취객의 객 글리프 부재로 술 취한 사람으로 표현 조정. 퀴즈 첫 말투 수정은 6/S6054의 안전 E2 공간 고갈로 실패; 전체 말투29행 보류, 게임 바이너리 쓰기 전 중단. 미변경 문자열을 재인코딩해 비교하면 기존 별칭 코드가 달라지는 검증 오류는 기존 토큰 그대로 비교하도록 수정. E600 미확정93계열 등에 일반 본문 expander를 적용하는 검사 오류는 미확정 원시 보존과 확장 검사 범위를 분리해 수정. 이 실패를 게임 성공/새 결함으로 기록하지 않는다.
+- bible_current 갱신 여부 확인: 현재 실화면 성공 기준 유지. 새 부팅/메모리카드 로드/물의 신전/장비 UI의 DuckStation 0.1-7126 확인 및 퀴즈29행 안전 저장 설계가 다음 검수 과제다. 옛 상태저장은 수정 확인용으로 사용하지 않는다.
+
+2026-09-10 | V375 아이템·스킬·UI 전행 목록 조사 | 결함 발견 / 게임 수정 없음
+- 기준 ZIP AD9ED2B9E898F05C2EC5C78ABBA4253CE052B7B4836DEE31D84108AD4256CFBB. 기존673+추가50=723행 전행 판정: 의미일치456/축약129/결함102/빈슬롯20/HUD10/미확정6. DAT 선택지·퀴즈454+튜토리얼414=868본문: 일치487/축약188/결함99/미확정94. 행 수는 독립 버그 수가 아니다. 전체게임 모집단 및 전맵 실기 완결로 판정하지 않음.
+- 원본 추출2878행 비교, 9DAT의24명령 변조 소비경계 확인(6곳 앞 인수도 변조). 물의신전 S8041 47910부터 실제CPU: 원본0B,0B,14,21/반환1; 현행0B,0B,27,00,028C/반환0; RAM복사본47924=14 복원은 원본과 동일. 제보자 화면/덕스테이션 버전별 재현 아님.
+- EXE78000..82FFF 변경9054바이트 전량목록. 비문자 구조4군7바이트 손상, 별도 배우88/89/90 데이터61바이트 변경. 불꽃88 실제 복사/갱신/분기 CPU에서 상태0000→008A, 정상경로→명령30 경로. 89/90 일반생성 미확정.
+- 장비64/소모품32 속성96레코드, 행동구간6168바이트, 선택포인터110개/선택데이터608바이트 원본동일. 주요인물119슬롯·랭크 대응 보존. 심안법 원본 대상목록 순회 CPU가 두 대상 모두 고정함을 확인.
+- 설명154행 CPU346시나리오/ABI634호출/패킷범위 PASS. 炎 라벨 E0AC 실제CPU 출력3폭에서 빈폰트셀196 선택 확인. GPU·BIOS숫자포맷·전체게임 장면검증 아님.
+- 실패/제한: Claude OAuth만료 및 후속 보조조사 크레딧오류로 해당 경로 중단, 로컬 분석 계속. 초기 분석CSV 문자 인코딩 손상은 산출물에서 복구. BIOS의존 초기 CPU 시도는 성공으로 세지 않고 최종 독립구간만 반환주소 검사. 과거12px 게이트 통과를 현행 전체 의미/안전 승인으로 재사용하지 않음.
+- 추가검사: EXE전체 ASCII포맷후보79개 원본동일(UI27/콘솔SDK후보49/코드오검출3), 지정출력함수직접호출95곳 목록화. 기존목록외 UI포맷12개 최종723행에 포함. 분석스크립트 구문컴파일/JSON파싱/CSV모집단검사/원본과V375 ZIP해시불변/git diff --check PASS.
+- 변경: 02_scripts/audit_arc1_v375_*.py, consolidate_arc1_v375_full_audit.py 및 01_work/analysis/v375_full_audit 분석 산출물/문서. 원본/게임/정식번역/세이브 변경없음. bible_current는 성공본 승격 없이 유지. 상세 01_work/analysis/v375_full_audit/README.md, summary.json.
+
 2026-09-10 | V375 Rev1 xdelta/v0.9.1 | 적용/재생성 PASS
 - 원본Rev1 CRC323235502F/MD5219F45A30345D4A7370303576E312D8C 확인. 복원BIN의크기/SHA256/SHA1/CRC32/MD5가V375와동일. 재인코딩byte-exact, ZIP멤버재읽기동일. 패치725121B, 묶음666009B. 게임및원본/사용자카드변경없음. 상세v375_next_choice/xdelta.md.
 
@@ -3274,3 +3337,11 @@ check_build.py 통과. SHA-256 85E0E4638E38E538AEFDDF64E44AA3E6A2B93EB21BA8B61FB
 - 둘째 줄 시작좌표는 동일: 상태1 x68/68, 상태2 x118/118. VRAM·CLUT의 실제 획은 아의 왼쪽3px/M0px, 촌2px/숫자3의0px로 각각3/2px 차이. 출력명령 좌표 이동이 아니라 글자 내부 여백 차이임을 현재 두 예에서 확인했다.
 - RAM 복사본의0x801F078C 높이28/46만 바꾸고 기존0x8016A4F0을 호출한8조건에서 요청한 배경 꼭짓점 높이와 제한된 쓰기범위를 확인했다. 실제 한 줄 자동판정·MP 재배치·새 게임 실행 검증은 아니다. 게임/원본/CSV/사용자 세이브는 모두 미변경.
 - 사용자가 후속으로 스킬창만 낮추는 방향을 선택했다. 아이템/장비 자동높이 확대는 보류하고 스킬창+MP/구슬 세로배치 국소 수정의 확인을 받을 단계다. bible_current/changelog 성공·적용 상태는 갱신하지 않는다. 세부 근거: v360_followup_aa53/README.md, states.json, height_probe.json.
+
+2026-09-11 카드2 직접 설치 PASS: 적용 전 원본/백업 SHA 일치, 적용 후75CCAE529556EE81A8874D4E710D8AA8D3B04D9C500391A0C52EEDBE9E1F5A61 확인. UI 연결은 native pipe unavailable로 실패. 실행중 RAM은 미변경, 재시작 후 게임 내 파일3 불러오기 필요. 종료후 보정기는 대기중이며 완료증거 installed_after_exit.txt로 별도 확인. bible_current 승격 없음.
+
+2026-09-11 V382 final xdelta PASS: bundle arc1_kor_v0.9.7_rev1.zip 666650B SHA256 F95C88AE14E72B6B388BCFE6E5E29A6078D04CBB8E7E5E80198287A726D41AD5. Original Rev1 decode exactly equals V382 BIN; repeat encode byte exact. Five scripts AST and post-canonical prepare reproducibility PASS.
+
+2026-09-12 라마다 퀴즈 전 질문 원문대조 PASS: 6/S6054.DAT 4395A/43A28/43A94의 기존 추출hex와00_original/arc.zip 실제바이트 일치 확인. 수행 질문→ひやかし 질문→문제 전부 정답이면 정보 제공하는 주변 대사 확인. 게임/번역 수정 없음. bible_current/changelog 갱신 불필요 검토.
+
+2026-09-12 README 해시 재검산 PASS: 실제 Rev1원본 BIN CRC32/MD5 스트리밍 재계산3235502F/219F45A30345D4A7370303576E312D8C, 실제 V382_REPORTS.bin SHA256 재계산2179645D69313AFF8FEEFB06E38AA51CBD994B35CAE1633DF52E84D4AA8A129E. 최신배포 ZIP동봉README와모두일치. 문서/게임 수정없음; bible/changelog/codex_notes 새구조사실없어 유지.

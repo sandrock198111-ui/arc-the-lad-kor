@@ -1,0 +1,128 @@
+[
+  {
+    "file": "22/S2056.DAT",
+    "offset": 293872,
+    "length": 2,
+    "raw": "281b",
+    "jp": "はい"
+  },
+  {
+    "file": "22/S205C.DAT",
+    "offset": 295416,
+    "length": 6,
+    "raw": "3e412902e479",
+    "jp": "くそつ！<CTRL:E4:79>"
+  },
+  {
+    "file": "22/S205C.DAT",
+    "offset": 295656,
+    "length": 9,
+    "raw": "6d2d1ddd8e9c02e479",
+    "jp": "みんな急げ！<CTRL:E4:79>"
+  },
+  {
+    "file": "23/S2061.DAT",
+    "offset": 296412,
+    "length": 1,
+    "raw": "02",
+    "jp": "！"
+  },
+  {
+    "file": "32/S3061.DAT",
+    "offset": 295954,
+    "length": 34,
+    "raw": "9829213e323d37e6012735d3441f1b7a2ae6011f3e3a2d3f221c23df61df6137e45b",
+    "jp": "待つてくれよ。\nまだ聞きたいこが\nたくさんあるのに・・。<CTRL:E4:5B>"
+  },
+  {
+    "file": "7/S7026.DAT",
+    "offset": 297516,
+    "length": 1,
+    "raw": "3c",
+    "jp": "？"
+  },
+  {
+    "file": "8/S8031.DAT",
+    "offset": 296478,
+    "length": 19,
+    "raw": "54261e212e2d1d2e3623df61df61e43de43d37",
+    "jp": "どうしてこんなことに・・<CTRL:E4:3D><CTRL:E4:3D>。"
+  },
+  {
+    "file": "9/S9021.DAT",
+    "offset": 296610,
+    "length": 10,
+    "raw": "1e452e1b40453335a702",
+    "jp": "しつこいやつらだぜ！"
+  },
+  {
+    "file": "9/S9031.DAT",
+    "offset": 301516,
+    "length": 2,
+    "raw": "ffff",
+    "jp": "<CTRL:FF:FF>"
+  },
+  {
+    "file": "B/SB041.DAT",
+    "offset": 293490,
+    "length": 4,
+    "raw": "4e4e5302",
+    "jp": "ククル！"
+  },
+  {
+    "file": "B/SB041.DAT",
+    "offset": 293878,
+    "length": 10,
+    "raw": "4e4e5331313131313102",
+    "jp": "ククルーーーーーー！"
+  },
+  {
+    "file": "B/SB071.DAT",
+    "offset": 295168,
+    "length": 13,
+    "raw": "41324a48241b291f2dd9226a37",
+    "jp": "それじゃ、いつたん戻るぞ。"
+  },
+  {
+    "file": "B/SB072.DAT",
+    "offset": 294612,
+    "length": 4,
+    "raw": "df61df61",
+    "jp": "・・"
+  },
+  {
+    "file": "D/SD011.DAT",
+    "offset": 301613,
+    "length": 1,
+    "raw": "01",
+    "jp": " "
+  },
+  {
+    "file": "D/SD012.DAT",
+    "offset": 301613,
+    "length": 1,
+    "raw": "01",
+    "jp": " "
+  },
+  {
+    "file": "D/SD013.DAT",
+    "offset": 301613,
+    "length": 1,
+    "raw": "01",
+    "jp": " "
+  },
+  {
+    "file": "D/SD014.DAT",
+    "offset": 301613,
+    "length": 1,
+    "raw": "01",
+    "jp": " "
+  },
+  {
+    "file": "D/SD015.DAT",
+    "offset": 301613,
+    "length": 1,
+    "raw": "01",
+    "jp": " "
+  }
+]

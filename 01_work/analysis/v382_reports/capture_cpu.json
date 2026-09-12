@@ -1,0 +1,725 @@
+{
+  "captures": [
+    {
+      "slot": 1,
+      "row": 2395,
+      "before": {
+        "32": "앞으로 나아가면 이제 돌아",
+        "48": "올 수 없게 될지도 모른다."
+      },
+      "after": {
+        "32": "앞으로 나아가면 이제 돌아",
+        "48": "올 수 없게 될지도 몰라."
+      },
+      "captured_prefix_exact": true,
+      "fixture": "own capture",
+      "end": "0x80116E6C"
+    },
+    {
+      "slot": 2,
+      "row": 2396,
+      "before": {
+        "32": "괜찮을까?",
+        "64": "  물론 ",
+        "80": "  그만       "
+      },
+      "after": {
+        "32": "괜찮을까?",
+        "48": "  물론 ",
+        "64": "  그만         "
+      },
+      "captured_prefix_exact": true,
+      "fixture": "own capture",
+      "end": "0x80116EC5"
+    },
+    {
+      "slot": 5,
+      "row": 2806,
+      "before": {
+        "32": "토벌병: 보고드립니다.      "
+      },
+      "after": {
+        "32": "토벌병: 보고드립니다."
+      },
+      "captured_prefix_exact": true,
+      "fixture": "own capture",
+      "end": "0x8011689C"
+    },
+    {
+      "slot": 6,
+      "row": 2807,
+      "before": {
+        "32": "토벌병: 아크와 그 일당은 그 뒤 ",
+        "48": "수사에도 불구하고 행방을 알 수 없",
+        "64": "습니다.  "
+      },
+      "after": {
+        "32": "토벌병: 아크와 그 일당은 계속 수",
+        "48": "색하고 있으나 행방을 알 수 없습니",
+        "64": "다."
+      },
+      "captured_prefix_exact": true,
+      "fixture": "own capture",
+      "end": "0x801168D3"
+    },
+    {
+      "slot": 7,
+      "row": 2808,
+      "before": {
+        "32": "토벌병: 아무래도 지형이 크게 바",
+        "48": "뀌어 버려서...        "
+      },
+      "after": {
+        "32": "토벌병: 아무래도 지형이 크게 바",
+        "48": "뀌어 버려서..."
+      },
+      "captured_prefix_exact": true,
+      "fixture": "own capture",
+      "end": "0x80116902"
+    },
+    {
+      "slot": 8,
+      "row": 2809,
+      "before": {
+        "32": "안델: 알겠다. 수사를 중단하도록",
+        "48": " 지시를 내려라.        "
+      },
+      "after": {
+        "32": "안델: 알겠다. 수색을 중단하도록",
+        "48": " 지시를 내려라."
+      },
+      "captured_prefix_exact": true,
+      "fixture": "own capture",
+      "end": "0x80116944"
+    },
+    {
+      "slot": 9,
+      "row": 2810,
+      "before": {
+        "32": "안델: ...뭐 좋다. 어차피 이",
+        "48": " 나라에 이제 그놈들이 있을 곳 따",
+        "64": "위는 없으니 말이다.   "
+      },
+      "after": {
+        "32": "안델:... 뭐 좋다. 어차피 이",
+        "48": " 나라에 이제 그놈들이 있을 곳 따",
+        "64": "위는 없으니 말이다."
+      },
+      "captured_prefix_exact": true,
+      "fixture": "own capture",
+      "end": "0x801169AB"
+    },
+    {
+      "slot": 10,
+      "row": 2812,
+      "before": {
+        "32": "안델: 와하하하하하하하!!     ",
+        "48": "                "
+      },
+      "after": {
+        "32": "안델: 와하하하하하하하!!"
+      },
+      "captured_prefix_exact": true,
+      "fixture": "state9 with state10 retained sprites",
+      "end": "0x80116A03"
+    }
+  ],
+  "item": {
+    "before": {
+      "116": "주는 피해량의",
+      "134": "차이가 커진다"
+    },
+    "after": {
+      "116": "피해량의",
+      "134": "변동 폭 증가"
+    },
+    "capture_exact": true
+  },
+  "cursor": {
+    "params": [
+      5,
+      2,
+      0,
+      1
+    ],
+    "tops": [
+      [
+        108,
+        50
+      ],
+      [
+        108,
+        66
+      ]
+    ]
+  },
+  "waits": [
+    {
+      "row": 2806,
+      "original": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 12
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 72
+          }
+        ],
+        "frames": 132,
+        "end": "0x8011689c"
+      },
+      "before": {
+        "events": [],
+        "frames": 18,
+        "end": "0x8011689c"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 12
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 72
+          }
+        ],
+        "frames": 132,
+        "end": "0x8011689c"
+      }
+    },
+    {
+      "row": 2807,
+      "original": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 36
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 96
+          }
+        ],
+        "frames": 156,
+        "end": "0x801168d3"
+      },
+      "before": {
+        "events": [],
+        "frames": 44,
+        "end": "0x801168d3"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 40
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 100
+          }
+        ],
+        "frames": 160,
+        "end": "0x801168d3"
+      }
+    },
+    {
+      "row": 2808,
+      "original": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 28
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 88
+          }
+        ],
+        "frames": 148,
+        "end": "0x80116902"
+      },
+      "before": {
+        "events": [],
+        "frames": 35,
+        "end": "0x80116902"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 27
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 87
+          }
+        ],
+        "frames": 147,
+        "end": "0x80116902"
+      }
+    },
+    {
+      "row": 2809,
+      "original": {
+        "events": [
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 10
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 56
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 116
+          }
+        ],
+        "frames": 176,
+        "end": "0x80116944"
+      },
+      "before": {
+        "events": [],
+        "frames": 35,
+        "end": "0x80116944"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 8
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 57
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 117
+          }
+        ],
+        "frames": 177,
+        "end": "0x80116944"
+      }
+    },
+    {
+      "row": 2810,
+      "original": {
+        "events": [
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 5
+          },
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 36
+          },
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 67
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 98
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 162
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 251
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 311
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 371
+          }
+        ],
+        "frames": 431,
+        "end": "0x801169ab"
+      },
+      "before": {
+        "events": [],
+        "frames": 51,
+        "end": "0x801169ab"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 3
+          },
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 34
+          },
+          {
+            "parameter": 31,
+            "ticks": 30,
+            "start_frame": 65
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 96
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 162
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 258
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 318
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 378
+          }
+        ],
+        "frames": 438,
+        "end": "0x801169ab"
+      }
+    },
+    {
+      "row": 2812,
+      "original": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 15
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 75
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 135
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 195
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 255
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 315
+          }
+        ],
+        "frames": 375,
+        "end": "0x80116a03"
+      },
+      "before": {
+        "events": [],
+        "frames": 35,
+        "end": "0x80116a03"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 14
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 74
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 134
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 194
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 254
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 314
+          }
+        ],
+        "frames": 374,
+        "end": "0x80116a03"
+      }
+    },
+    {
+      "row": 2811,
+      "original": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 10
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 70
+          }
+        ],
+        "frames": 130,
+        "end": "0x801169da"
+      },
+      "before": {
+        "events": [],
+        "frames": 10,
+        "end": "0x801169da"
+      },
+      "after": {
+        "events": [
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 9
+          },
+          {
+            "parameter": 61,
+            "ticks": 60,
+            "start_frame": 69
+          }
+        ],
+        "frames": 129,
+        "end": "0x801169da"
+      },
+      "synthetic": true
+    }
+  ],
+  "scene_census": [
+    {
+      "row": 2806,
+      "pauses": [
+        "e43d",
+        "e43d"
+      ]
+    },
+    {
+      "row": 2807,
+      "pauses": [
+        "e43d",
+        "e43d"
+      ]
+    },
+    {
+      "row": 2808,
+      "pauses": [
+        "e43d",
+        "e43d"
+      ]
+    },
+    {
+      "row": 2809,
+      "pauses": [
+        "e41f",
+        "e43d",
+        "e43d"
+      ]
+    },
+    {
+      "row": 2810,
+      "pauses": [
+        "e41f",
+        "e41f",
+        "e41f",
+        "e43d",
+        "e43d",
+        "e43d",
+        "e43d",
+        "e43d"
+      ]
+    },
+    {
+      "row": 2811,
+      "pauses": [
+        "e43d",
+        "e43d"
+      ]
+    },
+    {
+      "row": 2812,
+      "pauses": [
+        "e43d",
+        "e43d",
+        "e43d",
+        "e43d",
+        "e43d",
+        "e43d"
+      ]
+    }
+  ],
+  "voice_scene_original_timers": [
+    {
+      "row": 2339,
+      "event": "0x47986",
+      "delay": 420
+    },
+    {
+      "row": 2340,
+      "event": "0x479b8",
+      "delay": 420
+    },
+    {
+      "row": 2341,
+      "event": "0x479fa",
+      "delay": 420
+    },
+    {
+      "row": 2342,
+      "event": "0x47a32",
+      "delay": 420
+    },
+    {
+      "row": 2343,
+      "event": "0x47a6a",
+      "delay": 420
+    },
+    {
+      "row": 2344,
+      "event": "0x47a9a",
+      "delay": 420
+    },
+    {
+      "row": 2345,
+      "event": "0x47ae0",
+      "delay": 300
+    },
+    {
+      "row": 2346,
+      "event": "0x47b20",
+      "delay": 240
+    },
+    {
+      "row": 2347,
+      "event": "0x47b3e",
+      "delay": 240
+    },
+    {
+      "row": 2348,
+      "event": "0x47b78",
+      "delay": 420
+    },
+    {
+      "row": 2349,
+      "event": "0x47bb0",
+      "delay": 420
+    },
+    {
+      "row": 2350,
+      "event": "0x47bea",
+      "delay": 420
+    },
+    {
+      "row": 2351,
+      "event": "0x47c2c",
+      "delay": 420
+    },
+    {
+      "row": 2352,
+      "event": "0x47c68",
+      "delay": 420
+    },
+    {
+      "row": 2353,
+      "event": "0x47c9a",
+      "delay": 420
+    },
+    {
+      "row": 2354,
+      "event": "0x47d86",
+      "delay": 420
+    },
+    {
+      "row": 2355,
+      "event": "0x47dc6",
+      "delay": 420
+    },
+    {
+      "row": 2356,
+      "event": "0x47e1a",
+      "delay": 420
+    },
+    {
+      "row": 2357,
+      "event": "0x47e6c",
+      "delay": 420
+    },
+    {
+      "row": 2358,
+      "event": "0x47ebc",
+      "delay": 420
+    },
+    {
+      "row": 2359,
+      "event": "0x47ef6",
+      "delay": 420
+    },
+    {
+      "row": 2360,
+      "event": "0x47f28",
+      "delay": 360
+    }
+  ],
+  "runtime_verified": false,
+  "scope": "Native CPU text/cursor/frame-step checks; no whole-scene GPU/input playback."
+}
